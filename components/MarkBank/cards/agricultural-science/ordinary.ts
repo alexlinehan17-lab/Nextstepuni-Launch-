@@ -32796,4 +32796,1614 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q1", topicId: "agsci-4-2", conceptId: "breed-descriptions",
+    section: "A", questionRef: "2014 OL Q1",
+    questionText: "A list of common animal breeds is given below. Place these in Column A to match a description of each breed in Column B. The first one is completed as an example. List: Charolais; Landrace; Scottish blackface; Friesian; Hereford; Texel. Example: Charolais — Continental beef breed. Column B: Lowland sheep breed; Pig breed; Dual-purpose breed; Mountain sheep breed; British beef breed.",
+    tariffModel: {"kind":"fixed","notation":"5 × 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lowland sheep breed — Texel", marks: 4, contextNote: "One breed for each description, 4 marks each (5 × 4m)." },
+    { id: "r-2", kind: "point", verbatim: "Pig breed — Landrace", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Dual-purpose breed — Friesian", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Mountain sheep breed — Scottish blackface", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "British beef breed — Hereford", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-3","agricultural-science-2-5"]), kind: "diagram",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q2", topicId: "agsci-3-3-1", conceptId: "cereal-equipment-and-order",
+    section: "A", questionRef: "2014 OL Q2",
+    questionText: "All the equipment shown below is used in cereal production. In the table below: (a) Write the names of the pieces of equipment to match the letters under the photographs. (b) Number the pieces of equipment (1 – 5) in the order in which they are normally used in cereal production. (Used first = 1; Used last = 5). Letters A, B, C, D, E.",
+    tariffModel: {"kind":"fixed","notation":"5 × (2m + 2m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A Roller 3 [Accept 2] / B Combine (harvester) 5 / C Harrow / grubber 1 / D Seed drill / one pass 2 [Accept 3] / E Sprayer 4", marks: 20, contextNote: "5 × (2m + 2m): for each letter, (a) the equipment name 2 and (b) its order of use 2 (the number after the name).", group: {"claimMax":5,"perOption":4,"options":["A Roller 3 [Accept 2]","B Combine (harvester) 5","C Harrow / grubber 1","D Seed drill / one pass 2 [Accept 3]","E Sprayer 4"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-cereal-equipment",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cereal-equipment.png",
+          "srcHash": "4fac913810b88a40634cdf2416772bdb",
+          "alt": "Original Question 2 photographs lettered A to E: A a heavy ribbed cylinder on a towing frame, B a self-propelled harvester with a cutting header, C a frame of curved spring tines, D a tractor-drawn machine with a hopper over rows of coulters, E a self-propelled machine with folded spray booms.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Roller","askedInThisQuestion":true},{"letter":"B","meaning":"Combine (harvester)","askedInThisQuestion":true},{"letter":"C","meaning":"Harrow / grubber","askedInThisQuestion":true},{"letter":"D","meaning":"Seed drill / one pass","askedInThisQuestion":true},{"letter":"E","meaning":"Sprayer","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q3", topicId: "agsci-4-3-3", conceptId: "common-animal-diseases",
+    section: "A", questionRef: "2014 OL Q3",
+    questionText: "Give a brief account of each of the following common animal diseases, stating the type of animal affected and a symptom: (a) Red water fever (b) Orf (c) Anaemia (d) Viral pneumonia (e) Grass tetany.",
+    tariffModel: {"kind":"fixed","notation":"5 × (2m + 2m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Red water fever: Type of animal affected: Cattle Symptom: Red coloured urine / diarrhoea / increased pulse rate / Orf: Type of animal affected: Sheep / human Symptom: Lesions or sores or spots on mouth (or udder or genitals) / Anaemia: Type of animal affected: Pigs Symptom: Pale skin / weight loss / rapid breathing / weakness / scour / Viral pneumonia: Type of animal affected: Cattle / sheep / pigs Symptom: (Severe) coughing / rapid breathing / weight loss / discharge from eyes or nose / high temperature / fever / Grass tetany: Type of animal affected: Cattle / sheep Symptom: Staggering / muscle twitching or tremors / falling down / coma / frothing at mouth / (sudden) death", marks: 20, contextNote: "5 × (2m + 2m): for each disease, the type of animal affected 2 and one symptom (any one) 2.", group: {"claimMax":5,"perOption":4,"options":["Red water fever: Type of animal affected: Cattle Symptom: Red coloured urine / diarrhoea / increased pulse rate","Orf: Type of animal affected: Sheep / human Symptom: Lesions or sores or spots on mouth (or udder or genitals)","Anaemia: Type of animal affected: Pigs Symptom: Pale skin / weight loss / rapid breathing / weakness / scour","Viral pneumonia: Type of animal affected: Cattle / sheep / pigs Symptom: (Severe) coughing / rapid breathing / weight loss / discharge from eyes or nose / high temperature / fever","Grass tetany: Type of animal affected: Cattle / sheep Symptom: Staggering / muscle twitching or tremors / falling down / coma / frothing at mouth / (sudden) death"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q3",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-4","agricultural-science-3-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q4", topicId: "agsci-3-3-2", conceptId: "cranefly-life-cycle",
+    section: "A", questionRef: "2014 OL Q4",
+    questionText: "The adult and the larva of a common crop pest are shown below. (a) Name the adult insect shown. (b) State the common name for the larva shown. (c) (i) Name the other two stages in the life cycle of this insect. (ii) What name is given to the type of insect life cycle, such as the one above, that has four different stages? (iii) Name another insect that has a similar type of life cycle. (d) Name a crop that is attacked by the pest shown in the diagram above.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3 + 2 + 2 + 4 + 3 + 3"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Adult — Cranefly or daddy-long-legs", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "(b) Larva — Leatherjacket", marks: 3 },
+    { id: "r-3", kind: "anyN", verbatim: "1. Egg / 2. Pupa / cocoon", marks: 4, contextNote: "(c)(i) The other two stages, 2m each.", group: {"claimMax":2,"perOption":2,"options":["1. Egg","2. Pupa / cocoon"]} },
+    { id: "r-4", kind: "point", verbatim: "(c)(ii) Life cycle — Complete metamorphosis", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "(c)(iii) Another insect — Butterfly / click beetle / fly / bee", marks: 3 },
+    { id: "r-6", kind: "point", verbatim: "(d) Crop attacked — Grass / cereals or named cereal / potatoes", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q4",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-cranefly",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cranefly.png",
+          "srcHash": "8ccfba21f6223ea0cfdae3d6b5a0db3c",
+          "alt": "Original Question 4 drawings of a crop pest: a long-legged winged adult insect, labelled Adult, and its legless segmented larva, labelled Larva.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0","agricultural-science-2-1","agricultural-science-2-4","agricultural-science-2-6","agricultural-science-3-5","agricultural-science-0-1","agricultural-science-1-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q5", topicId: "agsci-4-1", conceptId: "true-or-false-farm-science",
+    section: "A", questionRef: "2014 OL Q5",
+    questionText: "Indicate if the following statements are true (T) or false (F) by placing a circle around the correct answer in each case. An example is shown. Example: Rice is a cereal crop grown in Ireland — F. (a) Ewes are in lamb for 283 days. (b) Buttercup is a member of the family Compositae (Asteraceae). (c) A bullock is another name for a steer. (d) Lodging means the collapse of a crop. (e) In set stocking land is divided into small areas for grazing. (f) Tuberculosis (TB) is a notifiable disease. (g) A line transect is used in ecology. (h) Silage effluent is a serious cause of water pollution. (i) Ground rock phosphate is used as a fertiliser in forestry production. (j) The potato plant stores food in rhizomes.",
+    tariffModel: {"kind":"fixed","notation":"10 × 2m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) F / (b) F / (c) T / (d) T / (e) F / (f) T / (g) T / (h) T / (i) T / (j) F", marks: 20, contextNote: "All ten statements, 2 marks each (10 × 2m). T = true, F = false; the scheme gives each letter with T or F.", group: {"claimMax":10,"perOption":2,"options":["(a) F","(b) F","(c) T","(d) T","(e) F","(f) T","(g) T","(h) T","(i) T","(j) F"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q5",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q6", topicId: "agsci-4-1", conceptId: "sheep-skull-and-dentition",
+    section: "A", questionRef: "2014 OL Q6",
+    questionText: "The photograph shows the skull of a sheep, which is a herbivore. (a) Explain the term herbivore. (b) Name any three types of tooth that can be seen in the photograph. (c) Complete the following table to show the dental formula of the sheep (incisors, canines, pre-molars, molars). (d) Describe one way in which the dental arrangement of a sheep is different to that of a pig.",
+    tariffModel: {"kind":"fixed","notation":"2 + 3 × 2m + 4 × 2m + 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Herbivore: An animal that feeds on plants (only)", marks: 2 },
+    { id: "r-2", kind: "anyN", verbatim: "Incisors / premolars / molars / canines", marks: 6, contextNote: "(b) Any three, 2 marks each (3 × 2m).", group: {"claimMax":3,"perOption":2,"options":["Incisors","premolars","molars","canines"]} },
+    { id: "r-3", kind: "anyN", verbatim: "0 0 3 3 3 1 3 3 / 0 0 3 3 4 0 3 3", marks: 8, contextNote: "(c) The dental formula, upper jaw over lower jaw for incisors, canines, pre-molars and molars: 4 × 2m, one per tooth type. The scheme accepts either table.", group: {"claimMax":1,"perOption":8,"options":["0 0 3 3 3 1 3 3","0 0 3 3 4 0 3 3"]} },
+    { id: "r-4", kind: "point", verbatim: "(d) Sheep dentition: absence of canines / lack of canines on upper jaw / lack of incisors on upper jaw / number of teeth (32 v 44) / dental pad (at front) on upper jaw", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-sheep-skull",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-sheep-skull.png",
+          "srcHash": "d9596156a4b1e2e099d7f38aa8710146",
+          "alt": "Original Question 6 photograph of a sheep skull seen from the side, with the teeth of the lower jaw and the back of the upper jaw visible.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-4","agricultural-science-3-4","agricultural-science-1-2","agricultural-science-1-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q7", topicId: "agsci-2-3", conceptId: "reasons-for-farm-practices",
+    section: "A", questionRef: "2014 OL Q7",
+    questionText: "Give a scientific reason in each case why the following practices are carried out on Irish farms. (a) Selective herbicide is sprayed on cereal crops. (b) Beet tops are left to wilt before feeding to animals. (c) Tail paint is applied to cows. (d) Lime is regularly spread on soil. (e) Farm hedges are trimmed only after the first of September.",
+    tariffModel: {"kind":"fixed","notation":"5 × 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Selective herbicide — Eliminates or kills (broad leaved) weeds / kills weeds but does not damage crop plants / makes harvesting easier", marks: 4, contextNote: "One reason for each practice, 4 marks each (5 × 4m)." },
+    { id: "r-2", kind: "point", verbatim: "(b) Wilting beet tops — Prevents scour in animals / prevents digestive problems / reduces oxalic acid", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(c) Tail paint — To indicate when the cow is on heat / heat detection / records attempted mating", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "(d) Spreading lime — Increases pH / reduces acidity / improves soil structure / supplies calcium / improves drainage / improves aeration / promotes flocculation / increases availability of nutrients / increases CEC", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "(e) Trimming hedges after September — Prevents harm to wildlife or nesting birds / legal requirement / increases biodiversity", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q7",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4","agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8a", topicId: "agsci-4-3-2", conceptId: "successful-calving-steps",
+    section: "B", questionRef: "2014 OL Q8(a)",
+    questionText: "Calving is a very important event on the dairy farm. List four steps the farmer can take to help successful calving.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sire selection / record date of insemination / steaming up / cow at correct BCS (3 – 3.5) / reduce meal intake in final week / isolate cow before calving / clean calving box / adequate supervision / assist if necessary / call vet / proper equipment / farmer hygiene / clear airways or make sure calf breathing / make sure cow licks calf / iodine on navel / colostrum", marks: 16, contextNote: "Any four, 4 marks each (4 × 4m).", group: {"claimMax":4,"perOption":4,"options":["Sire selection","record date of insemination","steaming up","cow at correct BCS (3 – 3.5)","reduce meal intake in final week","isolate cow before calving","clean calving box","adequate supervision","assist if necessary","call vet","proper equipment","farmer hygiene","clear airways or make sure calf breathing","make sure cow licks calf","iodine on navel","colostrum"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(a)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8b", topicId: "agsci-4-3-2", conceptId: "colostrum-versus-milk",
+    section: "B", questionRef: "2014 OL Q8(b)",
+    questionText: "Colostrum is produced by the cow immediately after calving. Give two differences between colostrum and milk.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rich in antibodies / provides immunity / rich in nutrients or named nutrient / laxative effect / thicker / yellow in colour / higher in solids or lower water content", marks: 8, contextNote: "Colostrum: any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Rich in antibodies","provides immunity","rich in nutrients or named nutrient","laxative effect","thicker","yellow in colour","higher in solids or lower water content"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(b)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8ci", topicId: "agsci-4-3-3", conceptId: "calf-rearing-hygiene",
+    section: "B", questionRef: "2014 OL Q8(c)(i)",
+    questionText: "Good hygiene is essential for calf health. Describe three ways in which the farmer ensures good hygiene in calf-rearing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clean housing or named example (e.g. wash floors or lime on floors) / fresh straw / remove mucus / clean buckets / separation from cow after birth / iodine on navel / clean water supply / disease control / isolation of cow prior to calving", marks: 12, contextNote: "Any three, 4 marks each (3 × 4m).", group: {"claimMax":3,"perOption":4,"options":["Clean housing or named example (e.g. wash floors or lime on floors)","fresh straw","remove mucus","clean buckets","separation from cow after birth","iodine on navel","clean water supply","disease control","isolation of cow prior to calving"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(c)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8cii", topicId: "agsci-4-3-3", conceptId: "calf-diseases",
+    section: "B", questionRef: "2014 OL Q8(c)(ii)",
+    questionText: "Name two common diseases of calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Scour / joint-ill / navel ill / (viral) pneumonia / ringworm / lungworm / stomach worm / lice or any one named ectoparasite", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Scour","joint-ill","navel ill","(viral) pneumonia","ringworm","lungworm","stomach worm","lice or any one named ectoparasite"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(c)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8di", topicId: "agsci-4-1", conceptId: "rumen-function",
+    section: "B", questionRef: "2014 OL Q8(d)(i)",
+    stem: "The rumen is one of the calf’s stomach chambers.",
+    questionText: "What is the main function of the rumen?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Digestion of cellulose / contains bacteria / digestion of roughage or named roughage / stores food / makes vitamins / makes protein", marks: 3, contextNote: "Any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Digestion of cellulose","contains bacteria","digestion of roughage or named roughage","stores food","makes vitamins","makes protein"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(d)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0","agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8dii", topicId: "agsci-4-1", conceptId: "rumen-development",
+    section: "B", questionRef: "2014 OL Q8(d)(ii)",
+    stem: "The rumen is one of the calf’s stomach chambers.",
+    questionText: "How can the rumen be helped to develop in the young calf?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Feeding of hay or straw / scratch factor / feeding of concentrates / creep feeding", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Feeding of hay or straw","scratch factor","feeding of concentrates","creep feeding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(d)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q8diii", topicId: "agsci-4-1", conceptId: "other-stomach-chambers",
+    section: "B", questionRef: "2014 OL Q8(d)(iii)",
+    stem: "The rumen is one of the calf’s stomach chambers.",
+    questionText: "Name the three other chambers in the stomach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Reticulum / omasum / abomasum", marks: 9, contextNote: "All three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Reticulum","omasum","abomasum"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q8(d)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9ai", topicId: "agsci-3-3-1", conceptId: "common-grass-species",
+    section: "B", questionRef: "2014 OL Q9(a)(i)",
+    questionText: "Name two species of grass commonly sown on Irish farms.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Perennial ryegrass or PRG / Italian ryegrass or IRG / Timothy / Cocksfoot / Meadow fescue / Meadow foxtail", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Perennial ryegrass or PRG","Italian ryegrass or IRG","Timothy","Cocksfoot","Meadow fescue","Meadow foxtail"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9aii", topicId: "agsci-3-3-1", conceptId: "clover-benefits",
+    section: "B", questionRef: "2014 OL Q9(a)(ii)",
+    questionText: "Clover is used in grass seed mixtures. Give two benefits of clover.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Nitrogen fixation / protein source / palatable / digestible / good ground cover / weed control / rich in minerals / less N required / saves money / improved productivity of grassland / improved silage if red clover stated", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Nitrogen fixation","protein source","palatable","digestible","good ground cover","weed control","rich in minerals","less N required","saves money","improved productivity of grassland","improved silage if red clover stated"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9bi", topicId: "agsci-3-3-2", conceptId: "paddock-system-diagram",
+    section: "B", questionRef: "2014 OL Q9(b)(i)",
+    stem: "Paddock grazing is widely used on dairy farms.",
+    questionText: "Draw a labelled diagram to show a paddock grazing system.",
+    tariffModel: {"kind":"questionTotal","notation":"4m, 2m, 0m + 2 × 3m"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram", marks: null, contextNote: "Diagram: 4m, 2m, 0m. The scheme prints no model drawing." },
+    { id: "r-2", kind: "criterion", verbatim: "Any two labels", marks: null, contextNote: "Labels: any two, 3 marks each (2 × 3m). The scheme does not list the labels." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9bii", topicId: "agsci-3-3-2", conceptId: "paddock-advantages",
+    section: "B", questionRef: "2014 OL Q9(b)(ii)",
+    stem: "Paddock grazing is widely used on dairy farms.",
+    questionText: "Give two advantages of paddock grazing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Better grass utilisation or less wastage or less trampling / more efficient / time for grass re-growth / easy herd movement / disease prevention / paddocks easily closed off for silage / less stemmy grass or more leafy grass / higher milk yield (in cows) or higher weight gain (in cattle) / less labour", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Better grass utilisation or less wastage or less trampling","more efficient","time for grass re-growth","easy herd movement","disease prevention","paddocks easily closed off for silage","less stemmy grass or more leafy grass","higher milk yield (in cows) or higher weight gain (in cattle)","less labour"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9c", topicId: "agsci-3-3-2", conceptId: "mixed-grazing-benefits",
+    section: "B", questionRef: "2014 OL Q9(c)",
+    questionText: "Give two benefits of mixed grazing of cattle and sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increased growth rates in cattle and sheep / increased tillering / nutrient recycling / parasite control / prevents clumps of grass / less wastage of grass / easier management", marks: 8, contextNote: "Any two, 4 marks each (2 x 4m).", group: {"claimMax":2,"perOption":4,"options":["Increased growth rates in cattle and sheep","increased tillering","nutrient recycling","parasite control","prevents clumps of grass","less wastage of grass","easier management"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(c)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9di", topicId: "agsci-2-3", conceptId: "nutrient-in-can",
+    section: "B", questionRef: "2014 OL Q9(d)(i)",
+    stem: "Calcium ammonium nitrate (CAN) is the most widely used fertiliser on Irish farms.",
+    questionText: "What is the main plant nutrient found in CAN?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nitrogen", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(d)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-6","agricultural-science-2-6","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q9dii", topicId: "agsci-2-3", conceptId: "can-and-grass-growth",
+    section: "B", questionRef: "2014 OL Q9(d)(ii)",
+    stem: "Calcium ammonium nitrate (CAN) is the most widely used fertiliser on Irish farms.",
+    questionText: "Describe an experiment to show the effect of CAN on grass growth.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One (or two) plots / suitable plot size e.g. 1m² / fence off / cut grass / apply CAN to one / suitable control / suitable time period / measure grass growth / cut grass / weigh grass / conclusion", marks: 16, contextNote: "Any four, 4 marks each (4 × 4m).", group: {"claimMax":4,"perOption":4,"options":["One (or two) plots","suitable plot size e.g. 1m²","fence off","cut grass","apply CAN to one","suitable control","suitable time period","measure grass growth","cut grass","weigh grass","conclusion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q9(d)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10a", topicId: "agsci-4-3-2", conceptId: "breeding-ewe-selection",
+    section: "B", questionRef: "2014 OL Q10(a)",
+    questionText: "List the bodily characteristics to be considered in the selection of breeding ewes in a lowland sheep enterprise.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sound feet or legs / healthy udder (no mastitis) / few, or no, missing teeth / no mouth defects / good body conformation or described / suitable body condition / healthy or free from diseases / no history of prolapse", marks: 12, contextNote: "Any three, 4 marks each (3 × 4m).", group: {"claimMax":3,"perOption":4,"options":["Sound feet or legs","healthy udder (no mastitis)","few, or no, missing teeth","no mouth defects","good body conformation or described","suitable body condition","healthy or free from diseases","no history of prolapse"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(a)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10bi", topicId: "agsci-4-3-2", conceptId: "flushing",
+    section: "B", questionRef: "2014 OL Q10(b)(i)",
+    stem: "Explain the following practices commonly used in sheep breeding:",
+    questionText: "Explain the following practice commonly used in sheep breeding: Flushing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ewes on bare pasture / high stocking rate / ewes moved to good pasture (one month) before mating / reduced stocking rate / kept on good pasture (until 3 weeks) after mating / increased number of eggs released / more twins / higher conception rates / more regular heat periods / fewer barren ewes / safer implantation of embryo(s)", marks: 8, contextNote: "Flushing: any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Ewes on bare pasture","high stocking rate","ewes moved to good pasture (one month) before mating","reduced stocking rate","kept on good pasture (until 3 weeks) after mating","increased number of eggs released","more twins","higher conception rates","more regular heat periods","fewer barren ewes","safer implantation of embryo(s)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10bii", topicId: "agsci-4-3-2", conceptId: "sponging",
+    section: "B", questionRef: "2014 OL Q10(b)(ii)",
+    stem: "Explain the following practices commonly used in sheep breeding:",
+    questionText: "Explain the following practice commonly used in sheep breeding: Sponging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sponge containing hormone or named hormone / ewe’s vagina / removed after 12 - 14 days / PMSG injection / ewes come into heat at same time / compact lambing season / early lamb production / easier management on mixed farm / reduced labour costs / reduced ram:ewe ratio or 1 ram:10 ewes", marks: 8, contextNote: "Sponging: any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Sponge containing hormone or named hormone","ewe’s vagina","removed after 12 - 14 days","PMSG injection","ewes come into heat at same time","compact lambing season","early lamb production","easier management on mixed farm","reduced labour costs","reduced ram:ewe ratio or 1 ram:10 ewes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10c", topicId: "agsci-4-3-2", conceptId: "lamb-diet-changes",
+    section: "B", questionRef: "2014 OL Q10(c)",
+    questionText: "Describe the changes in the diet of lambs from birth to slaughter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Colostrum / ewe’s milk / hay / silage / grass / (creep) meal or concentrate feeding", marks: 12, contextNote: "Any three, 4 marks each (3 × 4m).", group: {"claimMax":3,"perOption":4,"options":["Colostrum","ewe’s milk","hay","silage","grass","(creep) meal or concentrate feeding"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(c)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10di", topicId: "agsci-4-3-3", conceptId: "fluke-larval-stage",
+    section: "B", questionRef: "2014 OL Q10(d)(i)",
+    stem: "The photograph below shows an adult liver fluke (Fasciola hepatica), which is a common parasite of sheep.",
+    questionText: "Name one larval stage in the life-cycle of the liver fluke.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Miracidium / redia / sporocyst / cercarium", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Miracidium","redia","sporocyst","cercarium"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(d)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-liver-fluke",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+          "srcHash": "ac07aa7f6e23c492213f2554161e5879",
+          "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10dii", topicId: "agsci-4-3-3", conceptId: "fluke-secondary-host",
+    section: "B", questionRef: "2014 OL Q10(d)(ii)",
+    stem: "The photograph below shows an adult liver fluke (Fasciola hepatica), which is a common parasite of sheep.",
+    questionText: "Name the secondary host of the liver fluke.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mud snail / freshwater snail", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(d)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-liver-fluke",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+          "srcHash": "ac07aa7f6e23c492213f2554161e5879",
+          "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10diii", topicId: "agsci-4-3-3", conceptId: "fluke-symptom",
+    section: "B", questionRef: "2014 OL Q10(d)(iii)",
+    stem: "The photograph below shows an adult liver fluke (Fasciola hepatica), which is a common parasite of sheep.",
+    questionText: "Describe one symptom of liver fluke infestation in sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Loss in weight / failure to thrive / wool loss / anaemia / lump under jaw / diarrhoea / death", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Loss in weight","failure to thrive","wool loss","anaemia","lump under jaw","diarrhoea","death"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(d)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-liver-fluke",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+          "srcHash": "ac07aa7f6e23c492213f2554161e5879",
+          "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-5"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q10div", topicId: "agsci-4-3-3", conceptId: "fluke-control",
+    section: "B", questionRef: "2014 OL Q10(d)(iv)",
+    stem: "The photograph below shows an adult liver fluke (Fasciola hepatica), which is a common parasite of sheep.",
+    questionText: "Give two methods of control of liver fluke.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Drainage / fence off wet land or remove from risky areas / liming (to kill eggs) / dosing or injection / biological control / molluscicides / pour on", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Drainage","fence off wet land or remove from risky areas","liming (to kill eggs)","dosing or injection","biological control","molluscicides","pour on"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q10(d)(iv)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-liver-fluke",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+          "srcHash": "ac07aa7f6e23c492213f2554161e5879",
+          "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11a", topicId: "agsci-2-1", conceptId: "podzol-paragraph",
+    section: "B", questionRef: "2014 OL Q11(a)",
+    questionText: "Read the following paragraph about the formation and development of podzol soils and match the words from the list below with the numbered spaces. List: Iron pan; Leaching; Forestry; Iron; B horizon; Lime. Podzols are poor soils with high __1__ and fertiliser requirements. They are formed as a result of __2__. Aluminium and __3__ are moved from the A horizon to the __4__. Podzols show a distinct red layer called the __5__. Podzols are widely used for __6__.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "poor soils with high lime / result of leaching / Aluminium and iron / to the B horizon / called the iron pan / widely used for forestry", marks: 12, contextNote: "All six spaces, 2 marks each (6 × 2m), in order 1 to 6: lime, leaching, iron, B horizon, iron pan, forestry.", group: {"claimMax":6,"perOption":2,"options":["poor soils with high lime","result of leaching","Aluminium and iron","to the B horizon","called the iron pan","widely used for forestry"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(a)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11bi", topicId: "agsci-2-2-3", conceptId: "humus-benefits",
+    section: "B", questionRef: "2014 OL Q11(b)(i)",
+    stem: "Humus is a very important soil component.",
+    questionText: "Describe three benefits of humus in the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rich in nutrients or plant food / improves soil structure / dark colour absorbs heat / improves CEC / source of food for soil organisms or increases soil organism population / improves water holding capacity of soil", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Rich in nutrients or plant food","improves soil structure","dark colour absorbs heat","improves CEC","source of food for soil organisms or increases soil organism population","improves water holding capacity of soil"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11bii", topicId: "agsci-2-2-3", conceptId: "increasing-humus",
+    section: "B", questionRef: "2014 OL Q11(b)(ii)",
+    stem: "Humus is a very important soil component.",
+    questionText: "Give two methods of increasing soil humus content.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Add FYM / add slurry / add seaweed / add sewage sludge / green manure / add earthworms / plough in organic matter or named example / crop rotation", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Add FYM","add slurry","add seaweed","add sewage sludge","green manure","add earthworms","plough in organic matter or named example","crop rotation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11biii", topicId: "agsci-2-2-3", conceptId: "organic-matter-experiment",
+    section: "B", questionRef: "2014 OL Q11(b)(iii)",
+    stem: "Humus is a very important soil component.",
+    questionText: "Describe an experiment to estimate the percentage (%) organic matter in a soil sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(Empty) crucible or dish / weigh crucible / dry soil sample / place in crucible / mass of dry soil / Bunsen burner / pipe-clay triangle / heat strongly / stir / humus burns red / red colour is gone or smoke stops / re-weigh / loss in mass / calculation", marks: 16, contextNote: "Any four, 4 marks each (4 × 4m).", group: {"claimMax":4,"perOption":4,"options":["(Empty) crucible or dish","weigh crucible","dry soil sample","place in crucible","mass of dry soil","Bunsen burner","pipe-clay triangle","heat strongly","stir","humus burns red","red colour is gone or smoke stops","re-weigh","loss in mass","calculation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(b)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-3"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11ci", topicId: "agsci-2-2-2", conceptId: "soil-texture",
+    section: "B", questionRef: "2014 OL Q11(c)(i)",
+    stem: "Soil texture influences the crops grown on a farm.",
+    questionText: "Explain what is meant by the term soil texture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "% sand, silt and clay in a soil / relative proportions of sand, silt and clay in a soil / how the soil “feels” or described", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(c)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-3"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q11cii", topicId: "agsci-2-2-2", conceptId: "sandy-versus-clay",
+    section: "B", questionRef: "2014 OL Q11(c)(ii)",
+    stem: "Soil texture influences the crops grown on a farm.",
+    questionText: "Compare sandy soils and clay soils under the following headings: 1. Drainage. 2. Fertility. 3. Ease of tilling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good drainage / Poor drainage", marks: 4, contextNote: "1. Drainage: sandy soils, then clay soils, 2 × 2m.", group: {"claimMax":2,"perOption":2,"options":["Good drainage","Poor drainage"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Less natural fertility / Very fertile", marks: 4, contextNote: "2. Fertility: sandy soils, then clay soils, 2 × 2m.", group: {"claimMax":2,"perOption":2,"options":["Less natural fertility","Very fertile"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Easily tilled / Difficult to till", marks: 4, contextNote: "3. Ease of tilling: sandy soils, then clay soils, 2 × 2m.", group: {"claimMax":2,"perOption":2,"options":["Easily tilled","Difficult to till"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q11(c)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12ai", topicId: "agsci-4-1", conceptId: "mitosis-stages",
+    section: "B", questionRef: "2014 OL Q12(a)(i)",
+    stem: "Mitosis is one type of cell division.",
+    questionText: "List the four stages of mitosis in the correct sequence.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Prophase 2. Metaphase 3. Anaphase 4. Telophase", marks: 8, contextNote: "4 × 2m. [Award maximum of 6 marks if not in correct sequence]" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(a)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12aii", topicId: "agsci-4-1", conceptId: "mitosis-stage-shown",
+    section: "B", questionRef: "2014 OL Q12(a)(ii)",
+    stem: "Mitosis is one type of cell division.",
+    questionText: "Which stage of mitosis is shown in the diagram below?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Metaphase", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(a)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-mitosis",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-mitosis.png",
+          "srcHash": "b339aaf3e42c087daca0f45b3bd4e1d5",
+          "alt": "Original Question 12(a) diagram of a dividing cell: chromosomes lined up across the middle of the cell, with spindle fibres running to each pole.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12aiii", topicId: "agsci-4-1", conceptId: "metaphase-events",
+    section: "B", questionRef: "2014 OL Q12(a)(iii)",
+    stem: "Mitosis is one type of cell division.",
+    questionText: "Explain what is happening in the stage of mitosis shown below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Chromosomes in centre of cell / attached to (spindle) fibres", marks: 3, contextNote: "Any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Chromosomes in centre of cell","attached to (spindle) fibres"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(a)(iii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2014-ol-paper-mitosis",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-mitosis.png",
+          "srcHash": "b339aaf3e42c087daca0f45b3bd4e1d5",
+          "alt": "Original Question 12(a) diagram of a dividing cell: chromosomes lined up across the middle of the cell, with spindle fibres running to each pole.",
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12aiv", topicId: "agsci-4-1", conceptId: "other-cell-division",
+    section: "B", questionRef: "2014 OL Q12(a)(iv)",
+    stem: "Mitosis is one type of cell division.",
+    questionText: "Name the other type of cell division.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Meiosis", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(a)(iv)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12bi", topicId: "agsci-4-3-2", conceptId: "ai-meaning",
+    section: "B", questionRef: "2014 OL Q12(b)(i)",
+    stem: "The use of A.I. is very common on Irish farms.",
+    questionText: "What do the letters A.I. stand for?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Artificial insemination", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(b)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4","agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12bii", topicId: "agsci-4-3-2", conceptId: "ai-advantage-disadvantage",
+    section: "B", questionRef: "2014 OL Q12(b)(ii)",
+    stem: "The use of A.I. is very common on Irish farms.",
+    questionText: "State one advantage and one disadvantage of A.I. in cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Choice /superior bulls / lower cost / safer / prevents disease / higher conception rates / less physical damage / sexed semen", marks: 3, contextNote: "Advantage: any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Choice /superior bulls","lower cost","safer","prevents disease","higher conception rates","less physical damage","sexed semen"]} },
+    { id: "r-2", kind: "anyN", verbatim: "More labour / difficulty with heat detection", marks: 3, contextNote: "Disadvantage: any one, 3m. [Accept “more expensive” if “lower cost” not given as an advantage]", group: {"claimMax":1,"perOption":3,"options":["More labour","difficulty with heat detection"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(b)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12ci", topicId: "agsci-4-1", conceptId: "pea-gametes",
+    section: "B", questionRef: "2014 OL Q12(c)(i)",
+    stem: "In pea plants the gene for yellow seed (Y) is dominant over the gene for green seed (y). A pea plant homozygous for yellow colour (YY) was crossed with a pea plant homozygous for green colour (yy). Copy the following into your answer book and complete the spaces (genotypes in brackets, phenotypes on lines). Genotypes of original parents (YY) × (yy).",
+    questionText: "Complete: (i) Possible gametes ( ) × ( )",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible gametes: (Y) (y)", marks: 8, contextNote: "2 × 4m." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(c)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12cii", topicId: "agsci-4-1", conceptId: "pea-f1-genotype",
+    section: "B", questionRef: "2014 OL Q12(c)(ii)",
+    stem: "In pea plants the gene for yellow seed (Y) is dominant over the gene for green seed (y). A pea plant homozygous for yellow colour (YY) was crossed with a pea plant homozygous for green colour (yy). Copy the following into your answer book and complete the spaces (genotypes in brackets, phenotypes on lines). Genotypes of original parents (YY) × (yy).",
+    questionText: "Complete: (ii) F1 genotype ( )",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 genotype: (Yy)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(c)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12ciii", topicId: "agsci-4-1", conceptId: "pea-f1-phenotype",
+    section: "B", questionRef: "2014 OL Q12(c)(iii)",
+    stem: "In pea plants the gene for yellow seed (Y) is dominant over the gene for green seed (y). A pea plant homozygous for yellow colour (YY) was crossed with a pea plant homozygous for green colour (yy). Copy the following into your answer book and complete the spaces (genotypes in brackets, phenotypes on lines). Genotypes of original parents (YY) × (yy).",
+    questionText: "Complete: (iii) F1 phenotype ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 phenotype: Yellow", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(c)(iii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q12d", topicId: "agsci-4-1", conceptId: "pea-test-cross",
+    section: "B", questionRef: "2014 OL Q12(d)",
+    stem: "In pea plants the gene for yellow seed (Y) is dominant over the gene for green seed (y). A pea plant homozygous for yellow colour (YY) was crossed with a pea plant homozygous for green colour (yy).",
+    questionText: "In your answerbook show a cross between a homozygous recessive plant and an F1 plant from the above cross. Show the following in your cross: (i) Genotypes of parents ( ) × ( ) (ii) Possible gametes ( ) × ( ) ( ) (iii) Genotypes of offspring ( ) ( ) (iv) Phenotypes of offspring ___ ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Genotypes of parents: (yy) × (Yy)", marks: 4, contextNote: "2 × 2m." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Possible gametes: (y) × (Y) (y)", marks: 6, contextNote: "3 × 2m." },
+    { id: "r-3", kind: "point", verbatim: "(iii) Genotypes of offspring: (Yy) (yy)", marks: 4, contextNote: "2 × 2m." },
+    { id: "r-4", kind: "point", verbatim: "(iv) Phenotypes of offspring: Yellow Green", marks: 4, contextNote: "2 × 2m." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q12(d)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13ai", topicId: "agsci-3-3-3", conceptId: "anaerobic",
+    section: "B", questionRef: "2014 OL Q13(a)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Silage making involves the activity of anaerobic bacteria.",
+    questionText: "Explain the term anaerobic.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Without oxygen (air)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(a)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13aii", topicId: "agsci-3-3-3", conceptId: "silage-bacteria",
+    section: "B", questionRef: "2014 OL Q13(a)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Silage making involves the activity of anaerobic bacteria.",
+    questionText: "Name two species of bacteria that may be involved in silage making.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Lactobacillus / Streptococcus / Clostridium", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Lactobacillus","Streptococcus","Clostridium"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(a)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13aiii", topicId: "agsci-3-3-3", conceptId: "anaerobic-silage-pit",
+    section: "B", questionRef: "2014 OL Q13(a)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Silage making involves the activity of anaerobic bacteria.",
+    questionText: "Describe two ways of ensuring anaerobic conditions in the silage pit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rolling / quick filling / avoid air pockets / cover / tyres on top / re-seal", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Rolling","quick filling","avoid air pockets","cover","tyres on top","re-seal"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(a)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-6","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13aiv", topicId: "agsci-3-3-3", conceptId: "bacteria-in-silage",
+    section: "B", questionRef: "2014 OL Q13(a)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Silage making involves the activity of anaerobic bacteria.",
+    questionText: "Describe an experiment to show the presence of bacteria in a sample of silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two sterile agar plates / inoculating loop / flame loop / transfer silage onto one plate / control / seal / place in oven / 20 - 30°C / 2 - 3 days / upside down / examine / bacteria appear as shiny spots / absence of spots in control", marks: 12, contextNote: "Any four, 3 marks each (4 × 3m).", group: {"claimMax":4,"perOption":3,"options":["Two sterile agar plates","inoculating loop","flame loop","transfer silage onto one plate","control","seal","place in oven","20 - 30°C","2 - 3 days","upside down","examine","bacteria appear as shiny spots","absence of spots in control"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(a)(iv)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13bi", topicId: "agsci-3-1", conceptId: "germination",
+    section: "B", questionRef: "2014 OL Q13(b)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). A number of factors are needed for seeds to germinate.",
+    questionText: "Explain the term germination.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Growth of a new plant (from a seed) / re-growth of an embryo after dormancy / seed begins to grow / seed sprouts", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(b)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-0"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13bii", topicId: "agsci-3-1", conceptId: "germination-factors",
+    section: "B", questionRef: "2014 OL Q13(b)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). A number of factors are needed for seeds to germinate.",
+    questionText: "List three factors needed for germination to take place.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Warmth or suitable temperature / moisture or water / oxygen or air", marks: 9, contextNote: "All three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Warmth or suitable temperature","moisture or water","oxygen or air"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(b)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-3"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13biii", topicId: "agsci-3-3-1", conceptId: "maize-under-plastic",
+    section: "B", questionRef: "2014 OL Q13(b)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). A number of factors are needed for seeds to germinate.",
+    questionText: "Give two reasons why maize is commonly sown under plastic.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Keeps soil temperature higher / better germination / weed control / microclimate / earlier germination / longer growing season / higher yield / higher starch content / pest control or named example", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Keeps soil temperature higher","better germination","weed control","microclimate","earlier germination","longer growing season","higher yield","higher starch content","pest control or named example"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(b)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-2-0","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13biv", topicId: "agsci-3-1", conceptId: "percentage-germination",
+    section: "B", questionRef: "2014 OL Q13(b)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). A number of factors are needed for seeds to germinate.",
+    questionText: "Describe an experiment to investigate the percentage (%) germination in a sample of seeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Seeds / count / soak seeds (for 24 hours) / seed tray or suitable container / cotton wool or suitable growing medium / warm place / regular watering / leave for suitable time / count sprouted seed / repeat / average / control / calculate % germination", marks: 12, contextNote: "Any four, 3 marks each (4 × 3m). [Award maximum of 9 marks if candidate omits reference to calculation of % germination]", group: {"claimMax":4,"perOption":3,"options":["Seeds","count","soak seeds (for 24 hours)","seed tray or suitable container","cotton wool or suitable growing medium","warm place","regular watering","leave for suitable time","count sprouted seed","repeat","average","control","calculate % germination"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(b)(iv)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4","agricultural-science-3-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13ci", topicId: "agsci-2-2-3", conceptId: "earthworm-phylum",
+    section: "B", questionRef: "2014 OL Q13(c)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Earthworms are very important in the soil.",
+    questionText: "Name the phylum to which earthworms belong.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Annelida", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(c)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13cii", topicId: "agsci-2-2-3", conceptId: "earthworm-benefits",
+    section: "B", questionRef: "2014 OL Q13(c)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Earthworms are very important in the soil.",
+    questionText: "List three ways in which earthworms benefit the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Improve aeration / improve drainage / mix soil (layers) / increase humus content / decompose organic matter / deepen topsoil / (excretory products) add nutrients to soil or improve soil fertility / dead earthworms improve organic matter content of soil / improve soil structure", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Improve aeration","improve drainage","mix soil (layers)","increase humus content","decompose organic matter","deepen topsoil","(excretory products) add nutrients to soil or improve soil fertility","dead earthworms improve organic matter content of soil","improve soil structure"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(c)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13ciii", topicId: "agsci-2-2-3", conceptId: "increasing-earthworms",
+    section: "B", questionRef: "2014 OL Q13(c)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Earthworms are very important in the soil.",
+    questionText: "Outline two ways by which the farmer can increase earthworm numbers in the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Add lime or maintain correct pH / drain soil / add organic matter / aerate soil", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Add lime or maintain correct pH","drain soil","add organic matter","aerate soil"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(c)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-1-4","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13civ", topicId: "agsci-2-2-3", conceptId: "earthworm-activity-experiment",
+    section: "B", questionRef: "2014 OL Q13(c)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Earthworms are very important in the soil.",
+    questionText: "Describe an experiment to show the activity of earthworms in the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wormery or suitable container described / layers of materials / leaves / add earthworms / cover / leave for suitable time / control / below 10 °C / observe changes in layers / leaves eaten / conclusion", marks: 12, contextNote: "Any four, 3 marks each (4 × 3m).", group: {"claimMax":4,"perOption":3,"options":["Wormery or suitable container described","layers of materials","leaves","add earthworms","cover","leave for suitable time","control","below 10 °C","observe changes in layers","leaves eaten","conclusion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(c)(iv)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13di", topicId: "agsci-4-3-2", conceptId: "concentrate-nutrients",
+    section: "B", questionRef: "2014 OL Q13(d)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Concentrates are commonly fed to farm animals.",
+    questionText: "Name two food nutrients found in concentrates.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Carbohydates / lipids or fats / protein / vitamins / minerals", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m). [Accept named examples]", group: {"claimMax":2,"perOption":3,"options":["Carbohydates","lipids or fats","protein","vitamins","minerals"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(d)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-0","agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13dii", topicId: "agsci-4-3-2", conceptId: "nutrient-functions",
+    section: "B", questionRef: "2014 OL Q13(d)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Concentrates are commonly fed to farm animals. (i) Name two food nutrients found in concentrates.",
+    questionText: "Describe the function of each of the nutrients referred to in (i).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Carbohydrate: Energy / Lipids: Energy / insulation / protection / Protein: Growth / repair / Vitamins: Prevents deficiency diseases or named deficiency disease / metabolism / Minerals: Prevent deficiency diseases or named deficiency disease", marks: 8, contextNote: "Any two, 4 marks each (2× 4m): the functions of your two nutrients.", group: {"claimMax":2,"perOption":4,"options":["Carbohydrate: Energy","Lipids: Energy / insulation / protection","Protein: Growth / repair","Vitamins: Prevents deficiency diseases or named deficiency disease / metabolism","Minerals: Prevent deficiency diseases or named deficiency disease"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(d)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13diii", topicId: "agsci-4-3-2", conceptId: "dry-matter",
+    section: "B", questionRef: "2014 OL Q13(d)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Concentrates are commonly fed to farm animals.",
+    questionText: "Explain the term dry matter (DM) in relation to animal feed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The part of the food that contains nutrients / the part of the food that remains after water has been removed", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(d)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2014, ["agricultural-science-3-4","agricultural-science-0-1"]), kind: "question",
+    year: 2014, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2014 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2014-ol-q13div", topicId: "agsci-4-3-2", conceptId: "feed-dry-matter-experiment",
+    section: "B", questionRef: "2014 OL Q13(d)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). Concentrates are commonly fed to farm animals.",
+    questionText: "Describe an experiment to measure the dry matter content of a named animal feed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Named foodstuff / suitable container / mass of container / mass of food stuff / dry in oven / suitable time / new mass / loss in mass / calculation", marks: 12, contextNote: "Any four, 3 marks each (4 × 3m). [Award maximum of 9 marks if candidate omits named foodstuff]", group: {"claimMax":4,"perOption":3,"options":["Named foodstuff","suitable container","mass of container","mass of food stuff","dry in oven","suitable time","new mass","loss in mass","calculation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2014 Ordinary — Q13(d)(iv)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
 ];

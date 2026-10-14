@@ -1477,5 +1477,90 @@
       0.342
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-cereal-equipment": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cereal-equipment.png",
+    "md5": "4fac913810b88a40634cdf2416772bdb",
+    "alt": "Original Question 2 photographs lettered A to E: A a heavy ribbed cylinder on a towing frame, B a self-propelled harvester with a cutting header, C a frame of curved spring tines, D a tractor-drawn machine with a hopper over rows of coulters, E a self-propelled machine with folded spray booms.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 3,
+    "cropRect": [
+      0.08,
+      0.1855,
+      0.92,
+      0.75
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-cranefly": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-cranefly.png",
+    "md5": "8ccfba21f6223ea0cfdae3d6b5a0db3c",
+    "alt": "Original Question 4 drawings of a crop pest: a long-legged winged adult insect, labelled Adult, and its legless segmented larva, labelled Larva.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 5,
+    "cropRect": [
+      0.3,
+      0.1,
+      0.7,
+      0.38
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-sheep-skull": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-sheep-skull.png",
+    "md5": "d9596156a4b1e2e099d7f38aa8710146",
+    "alt": "Original Question 6 photograph of a sheep skull seen from the side, with the teeth of the lower jaw and the back of the upper jaw visible.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 6,
+    "cropRect": [
+      0.62,
+      0.47,
+      0.97,
+      0.64
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-liver-fluke": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-liver-fluke.png",
+    "md5": "ac07aa7f6e23c492213f2554161e5879",
+    "alt": "Original Question 10(d) photograph of an adult liver fluke: a flat leaf-shaped body with branching internal markings.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 9,
+    "cropRect": [
+      0.29,
+      0.235,
+      0.66,
+      0.38
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-ol-paper-mitosis.png",
+    "md5": "b339aaf3e42c087daca0f45b3bd4e1d5",
+    "alt": "Original Question 12(a) diagram of a dividing cell: chromosomes lined up across the middle of the cell, with spindle fibres running to each pole.",
+    "attribution": "SEC Agricultural Science 2014 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024GLP000EV.pdf",
+    "sourceSha256": "9b45f4d47b5ce5deb0c1d70a46aea8093f17b3bd9460f05b9a2e04f6a6529958",
+    "pdfPage": 10,
+    "cropRect": [
+      0.13,
+      0.13,
+      0.4,
+      0.3
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

@@ -47,6 +47,7 @@ from agricultural_science_2016_ol import reviewed_tasks as reviewed_2016_ol, pap
 from agricultural_science_2015_hl import reviewed_tasks as reviewed_2015_hl, paper_review as higher_2015_review
 from agricultural_science_2015_ol import reviewed_tasks as reviewed_2015_ol, paper_review as ordinary_2015_review
 from agricultural_science_2014_hl import reviewed_tasks as reviewed_2014_hl, paper_review as higher_2014_review
+from agricultural_science_2014_ol import reviewed_tasks as reviewed_2014_ol, paper_review as ordinary_2014_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -224,7 +225,8 @@ def reviewed_tasks():
                                                (reviewed_2016_ol, ordinary_2016_review, '2026-10-14'),
                                                (reviewed_2015_hl, higher_2015_review, '2026-10-14'),
                                                (reviewed_2015_ol, ordinary_2015_review, '2026-10-14'),
-                                               (reviewed_2014_hl, higher_2014_review, '2026-10-14')]:
+                                               (reviewed_2014_hl, higher_2014_review, '2026-10-14'),
+                                               (reviewed_2014_ol, ordinary_2014_review, '2026-10-14')]:
         new_cards, new_tasks = legacy()
         legacy_cards += new_cards
         legacy_dates.update({id(card): reviewed_on for card in new_cards})

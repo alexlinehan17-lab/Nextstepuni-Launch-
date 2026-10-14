@@ -1263,44 +1263,49 @@
         "sha256": "19a6b5e1223a5cbd18178276d5c8a02ef7147cb85c419a61c081158d7823617a",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 61,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "ba59808665c9a3f1",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. ______________________________________________________________________________ Question 1. A list of common animal bre",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "31d5766099026bef",
           "page": 6,
           "cue": "any three",
           "context": "_________________________________ ______________________________________________ (b) Name any three types of tooth that can be seen in the photograph. 1. ______________________ 2. ________________________ 3. ________________________ (c) Complete the following table to show the dental formula of the sheep. (d) Describe one way i",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(b): any three types of tooth from the scheme's four; a marking menu."
         },
         {
           "id": "1e8340f70da27719",
           "page": 8,
           "cue": "Answer three",
           "context": "___________________ Instructions Write your answers to Section Two into your answer book. Answer three questions. Each question carries 60 marks. ______________________________________________________________________________________ Question 8. (a) Calving is a very important event on the dairy farm. List four steps the farmer can",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "6eedd04e4a43a9d9",
           "page": 8,
           "cue": "one of",
           "context": "s good hygiene in calf-rearing. (ii) Name two common diseases of calves. (d) The rumen is one of the calf’s stomach chambers. (i) What is the main function of the rumen? (ii) How can the rumen be helped to develop in the young calf? (iii) Name the three other chambers in the stomach. (60 marks) Question 9. (a) (i) Name two s",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"The rumen is one of the calf’s stomach chambers\" is the lead-in to Q8(d), not a choice."
         },
         {
           "id": "907570a8c348a827",
           "page": 11,
           "cue": "any two",
           "context": "Page 11 of 12 Question 13. Answer any two of the parts (a), (b), (c), (d). (30, 30) (a) Silage making involves the activity of anaerobic bacteria. (i) Explain the term anaerobic. (ii) Name two species of bacteria that may be involved in silage making. (iii) Describe two ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         }
       ]
     },
@@ -1319,7 +1324,7 @@
         "sha256": "600291205bf38af32949532932b474feab56e87d671d2d60cfec80c4d81947af",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 61,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [
