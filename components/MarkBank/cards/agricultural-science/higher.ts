@@ -30403,6 +30403,1596 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1a", topicId: "agsci-3-2", conceptId: "clover-phylum-features",
+    section: "A", questionRef: "2016 HL Q1(a)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "(i) Clover is a member of which plant phylum? (ii) Mention three features of plants belonging to this phylum.",
+    tariffModel: {"kind":"orderedSplit","notation":"(2 × 4m) + (2 × 1m)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Phylum — Spermatophyta or Angiospermae or Leguminosae or Papilionaceae or Fabaceae", marks: null, contextNote: "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next ((2 × 4m) + (2 × 1m)). Four answers: the phylum and three features." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Features — Flowering plants/ reproduce by seeds/ seeds in a fruit/ roots or stems or leaves/ gametophyte dominant over sporophyte/ nitrogen-fixing/ seed pods/ root nodules/ flower parts in 5s/ high in protein", marks: null, contextNote: "Any three." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(a)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1bi", topicId: "agsci-2-3", conceptId: "biological-oxygen-demand",
+    section: "A", questionRef: "2016 HL Q1(b)(i)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Explain the term biological oxygen demand (BOD).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The amount of dissolved oxygen needed to break down organic matter in (a litre) water sample or the amount of dissolved oxygen used by (a litre) sample of water at 20° C in darkness for five days", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(b)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1bii", topicId: "agsci-2-3", conceptId: "keeping-bod-low",
+    section: "A", questionRef: "2016 HL Q1(b)(ii)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Outline three farming practices that would help maintain a low BOD.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Slurry application at correct time or away from waterways or in suitable weather conditions / use of slurry tanks / collect dairy washings / avoid milk spills / silage effluent tanks / correct fertiliser applications / safe disposal of dead animals or FYM or sheep dip or pesticides", marks: 6, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (3 + 2 + 1).", group: {"claimMax":3,"perOption":3,"options":["Slurry application at correct time or away from waterways or in suitable weather conditions","use of slurry tanks","collect dairy washings","avoid milk spills","silage effluent tanks","correct fertiliser applications","safe disposal of dead animals or FYM or sheep dip or pesticides"],"perOptionSteps":[3,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(b)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1c", topicId: "agsci-3-2", conceptId: "rhizopus-diagram",
+    section: "A", questionRef: "2016 HL Q1(c)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Draw a labelled diagram of the fungus Rhizopus (bread mould).",
+    tariffModel: {"kind":"questionTotal","notation":"4, 2, 0 + 3 + 2 + 1"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram", marks: null, contextNote: "Diagram: 4, 2, 0. The scheme prints no model drawing." },
+    { id: "r-2", kind: "point", verbatim: "Spores/ sporangium/ columella/ sporangiophore/ stolon/ rhizoid/ hyphae", marks: null, contextNote: "Labels: any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (3 + 2 + 1)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(c)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1di", topicId: "agsci-4-3-3", conceptId: "notifiable-diseases",
+    section: "A", questionRef: "2016 HL Q1(d)(i)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "What are notifiable diseases?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A disease of national importance / must notify authorities / highly contagious / risk to humans / quarantine / animals slaughtered or depopulated", marks: 4, contextNote: "Any two points, 2 + 2.", group: {"claimMax":2,"perOption":2,"options":["A disease of national importance","must notify authorities","highly contagious","risk to humans","quarantine","animals slaughtered or depopulated"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(d)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1dii", topicId: "agsci-4-3-3", conceptId: "notifiable-disease-examples",
+    section: "A", questionRef: "2016 HL Q1(d)(ii)",
+    stem: "Answer any six of the parts (a) to (j). (i) What are notifiable diseases?",
+    questionText: "Give three examples of such diseases.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Scrapie / Aujeszky disease / sheep scab / swine fever / rabies / Newcastle disease / anthrax / brucellosis / foot and mouth / BSE / TB / BVD / bluetongue / avian ‘flu / Johne’s disease / contagious bovine pleural pneumonia", marks: 6, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (3 + 2 + 1).", group: {"claimMax":3,"perOption":3,"options":["Scrapie","Aujeszky disease","sheep scab","swine fever","rabies","Newcastle disease","anthrax","brucellosis","foot and mouth","BSE","TB","BVD","bluetongue","avian ‘flu","Johne’s disease","contagious bovine pleural pneumonia"],"perOptionSteps":[3,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(d)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1e", topicId: "agsci-3-3-2", conceptId: "scutch-grass-control",
+    section: "A", questionRef: "2016 HL Q1(e)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Why is scutch grass (Agropyrens repens) such a difficult weed to eradicate in a cereal crop?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rhizomes / cultivation spreads it / same family as cereals / spreads from or to headlands / needs specific weed-killers / not controlled by rotation", marks: 10, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).", group: {"claimMax":3,"perOption":6,"options":["Rhizomes","cultivation spreads it","same family as cereals","spreads from or to headlands","needs specific weed-killers","not controlled by rotation"],"perOptionSteps":[6,3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(e)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-0"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1f", topicId: "agsci-4-1", conceptId: "villi-nephrons-cervix",
+    section: "A", questionRef: "2016 HL Q1(f)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "State the location and function of the following structures in mammals: (i) Villi. (ii) Nephrons. (iii) Cervix.",
+    tariffModel: {"kind":"orderedSplit","notation":"(4 × 2m) + (2 × 1m)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Villi — Small intestine or duodenum or ileum (absorption of nutrients)", marks: null, contextNote: "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next ((4 × 2m) + (2 × 1m)). Six answers: the location of each structure and its function (in brackets)." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Nephrons — Kidney (produce urine/ filter blood/ absorb/ reabsorb/ osmoregulation)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) Cervix — Neck of uterus or top of vagina (seals womb/ dilates or role at birth/ allows sperm into uterus/ allows fluids to exit uterus)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(f)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-2","agricultural-science-1-3"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1g", topicId: "agsci-2-2-1", conceptId: "humus-versus-clay",
+    section: "A", questionRef: "2016 HL Q1(g)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Give three reasons why a high humus content is more beneficial than a high clay content, in a soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Humus more fertile (clay less fertile) / holds more water (clay holds less water) / higher CEC (clay has lower CEC) / higher soil temperature (clay lower soil temperature) / increases earthworm activity (no effect on earthworms) / more beneficial for soil structure or more negative charges (less beneficial or fewer negative charges)", marks: 10, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).", group: {"claimMax":3,"perOption":6,"options":["Humus more fertile (clay less fertile)","holds more water (clay holds less water)","higher CEC (clay has lower CEC)","higher soil temperature (clay lower soil temperature)","increases earthworm activity (no effect on earthworms)","more beneficial for soil structure or more negative charges (less beneficial or fewer negative charges)"],"perOptionSteps":[6,3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(g)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1hi", topicId: "agsci-3-3-2", conceptId: "catch-crops",
+    section: "A", questionRef: "2016 HL Q1(h)(i)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "What are catch crops?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A crop grown between two main crops", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(h)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1hii", topicId: "agsci-3-3-2", conceptId: "catch-crop-advantages",
+    section: "A", questionRef: "2016 HL Q1(h)(ii)",
+    stem: "Answer any six of the parts (a) to (j). (i) What are catch crops?",
+    questionText: "Give three advantages of their use on a mixed farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Provides fodder / good crop rotation / break between grass and cereals / prevents nitrogen leaching / early bite in spring / prevents soil erosion or makes use of idle land / high protein content / high yield / fast growing / can be grazed in situ or strip grazed (outwintering) / utilisation of nutrients", marks: 6, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (3 + 2 + 1).", group: {"claimMax":3,"perOption":3,"options":["Provides fodder","good crop rotation","break between grass and cereals","prevents nitrogen leaching","early bite in spring","prevents soil erosion or makes use of idle land","high protein content","high yield","fast growing","can be grazed in situ or strip grazed (outwintering)","utilisation of nutrients"],"perOptionSteps":[3,2,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(h)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-0"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1i", topicId: "agsci-3-1", conceptId: "respiration-in-germination",
+    section: "A", questionRef: "2016 HL Q1(i)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "Explain why respiration is important in the germination of seeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Oxygen needed or aerobic respiration / food reserves made soluble or useable / provide energy for digestion / named digestive product / energy for growth", marks: 10, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).", group: {"claimMax":3,"perOption":6,"options":["Oxygen needed or aerobic respiration","food reserves made soluble or useable","provide energy for digestion","named digestive product","energy for growth"],"perOptionSteps":[6,3,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q1j", topicId: "agsci-4-3-3", conceptId: "pig-bacterial-diseases",
+    section: "A", questionRef: "2016 HL Q1(j)",
+    stem: "Answer any six of the parts (a) to (j).",
+    questionText: "(i) Name two bacterial diseases of pigs. (ii) Give one symptom of each disease.",
+    tariffModel: {"kind":"orderedSplit","notation":"(2 × 4m) + (2 × 1m)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Bacterial diseases — E. coli scour/ Erysipelas/ leptospirosis/ atrophic rhinitis/ farrowing fever/ mastitis/ navel ill", marks: null, contextNote: "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next ((2 × 4m) + (2 × 1m)). Four answers: two diseases and one symptom of each. Any two diseases." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Symptom — E. coli: dehydration/ diarrhoea/ weight loss/ loss of condition", marks: null, contextNote: "One symptom for each of your two diseases." },
+    { id: "r-3", kind: "point", verbatim: "(ii) Symptom — Erysipelas: fever/ abortion/ mummification/ red lumps on skin", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(ii) Symptom — Leptospirosis: low conception rate/ abortion/ stillborn", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(ii) Symptom — Atrophic rhinitis: sneezing and sniffling/ distorted snout/ low growth rate", marks: null },
+    { id: "r-6", kind: "point", verbatim: "(ii) Symptom — Farrowing fever: fever/ lack of milk", marks: null },
+    { id: "r-7", kind: "point", verbatim: "(ii) Symptom — Mastitis: swollen or red udder/ fever/ clotted or reduced milk", marks: null },
+    { id: "r-8", kind: "point", verbatim: "(ii) Symptom — Navel ill: swollen navel/ stiffness/ fever", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q1(j)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-0"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q2a", topicId: "agsci-2-1", conceptId: "podzol-versus-brown-earth",
+    section: "B", questionRef: "2016 HL Q2(a)",
+    questionText: "Compare a podzol soil with a brown earth soil under the following headings: (i) Drainage. (ii) Fertility. (iii) pH.",
+    tariffModel: {"kind":"orderedSplit","notation":"(3×4m) + (3×2m)"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Drainage — waterlogged or bad (free-draining or good)", marks: null, contextNote: "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next ((3×4m) + (3×2m)). Podzol (Brown Earth): six answers, the podzol and the brown earth (in brackets) under each heading." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Fertility — leached or poor fertility (fertile)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) pH — acidic (basic or slightly acidic)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q2(a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-3"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q2b", topicId: "agsci-2-2-2", conceptId: "soil-structure-factors",
+    section: "B", questionRef: "2016 HL Q2(b)",
+    questionText: "Identify and explain any four factors that affect the development of a soil structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wetting and drying (breaks up soil or aggregates soil) / freezing and thawing (breaks up soil or aggregates soil) / root activity (small roots bind or large roots crack) / earthworms or soil invertebrates (break up soil or aggregate soil) / tillage (breaks up soil or aggregates soil) / activity of livestock or machinery (compaction) / parent material (limestone for aggregation) / adding lime or organic matter (aggregation)", marks: 12, contextNote: "Any four: (4×2m) + (4×1m), each factor 2 and its effect (in brackets) 1. [Cause (and effect) required]", group: {"claimMax":4,"perOption":3,"options":["Wetting and drying (breaks up soil or aggregates soil)","freezing and thawing (breaks up soil or aggregates soil)","root activity (small roots bind or large roots crack)","earthworms or soil invertebrates (break up soil or aggregate soil)","tillage (breaks up soil or aggregates soil)","activity of livestock or machinery (compaction)","parent material (limestone for aggregation)","adding lime or organic matter (aggregation)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q2(b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-3","agricultural-science-0-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q2ci", topicId: "agsci-2-2-2", conceptId: "soil-texture-by-sieving",
+    section: "B", questionRef: "2016 HL Q2(c)(i)",
+    stem: "An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15%",
+    questionText: "Describe how this experiment was carried out.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dry soil sample / crush aggregates / weigh / sieve / with largest mesh on top / weigh amount in each sieve / method of calculation / soil texture triangle", marks: 12, contextNote: "Any three, 4 marks each (3×4m).", group: {"claimMax":3,"perOption":4,"options":["Dry soil sample","crush aggregates","weigh","sieve","with largest mesh on top","weigh amount in each sieve","method of calculation","soil texture triangle"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q2(c)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-3"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q2cii", topicId: "agsci-2-2-2", conceptId: "sandy-loam-enterprise",
+    section: "B", questionRef: "2016 HL Q2(c)(ii)",
+    stem: "An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15%",
+    questionText: "To which type of farm enterprise is this soil best suited?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tillage crops or named tillage crop", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q2(c)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-1-3"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q2ciii", topicId: "agsci-2-2-2", conceptId: "sandy-loam-enterprise-reasons",
+    section: "B", questionRef: "2016 HL Q2(c)(iii)",
+    stem: "An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15% (ii) To which type of farm enterprise is this soil best suited?",
+    questionText: "Suggest three reasons for your choice.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Early growth or heats up faster or higher temperature / easily tilled / good drainage / good aeration / not subject to drought / retains nutrients or high in nutrients", marks: 3, contextNote: "Any three, 1 mark each (3×1m).", group: {"claimMax":3,"perOption":1,"options":["Early growth or heats up faster or higher temperature","easily tilled","good drainage","good aeration","not subject to drought","retains nutrients or high in nutrients"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q2(c)(iii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o1a", topicId: "agsci-4-3-2", conceptId: "lambing-mortality-management",
+    section: "B", questionRef: "2016 HL Q3 Option One (a)",
+    questionText: "Discuss the management practices which contribute to low levels of ewe and lamb mortality at lambing time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Housing / hygiene specified / avoiding predators / correct feeding programme or steaming up or scanning / supervision or vet / individual pens (bonding) / fostering / prevent chill / colostrum / disease prevention / removing mucus from mouth or nose", marks: 16, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 6 + 4).", group: {"claimMax":3,"perOption":6,"options":["Housing","hygiene specified","avoiding predators","correct feeding programme or steaming up or scanning","supervision or vet","individual pens (bonding)","fostering","prevent chill","colostrum","disease prevention","removing mucus from mouth or nose"],"perOptionSteps":[6,6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option One (a)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-3"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o1b", topicId: "agsci-4-3-1", conceptId: "lowland-versus-hill-sheep",
+    section: "B", questionRef: "2016 HL Q3 Option One (b)",
+    questionText: "Compare a lowland sheep production system with a hill sheep production system under the following headings: (i) Choice of breed. (ii) Stocking rate. (iii) Management practices. (iv) Lambing percentage.",
+    tariffModel: {"kind":"orderedSplit","notation":"(4×3m) + (4×1m)"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Choice of breed — Named breed/ terminal sires/ crossbred ewes/ meat-producing/ twins (pure-breeding/named breed/single lambs/hardiness)/ poorer mothering ability (better mothering ability)", marks: null, contextNote: "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next ((4×3m) + (4×1m)). Lowland (Hill): the lowland system and the hill system (in brackets) under each of the four headings." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Stocking rate — 10-15 per ha. or high (2-7 per ha. or low)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) Management practices — Housing/ creep feeding/ flushing/ sponging/ grazing system or named, any one (reference to the opposite of each of these points must be stated for hill sheep)", marks: null, contextNote: "[Breed and mortality not accepted]" },
+    { id: "r-4", kind: "point", verbatim: "(iv) Lambing percentage — 120-180% or more twins (70-100% or mostly singles) or correct ratios", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option One (b)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o1c", topicId: "agsci-3-3-1", conceptId: "grazing-grass-variety-selection",
+    section: "B", questionRef: "2016 HL Q3 Option One (c)",
+    questionText: "Describe the main characteristics to be considered when selecting a grass variety for grazing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Productivity: yield of grass / Aggressive: competes well / Persistent: keeps growing every year / Digestible: easily digested by the animal or high DMD / Nutritious: provides a well-balanced diet / Palatability: taste or animals are likely to eat it", marks: 16, contextNote: "Any four: (4×3m) + (4×1m), each characteristic 3 and its explanation 1.", group: {"claimMax":4,"perOption":4,"options":["Productivity: yield of grass","Aggressive: competes well","Persistent: keeps growing every year","Digestible: easily digested by the animal or high DMD","Nutritious: provides a well-balanced diet","Palatability: taste or animals are likely to eat it"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option One (c)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o2a", topicId: "agsci-4-3-2", conceptId: "housed-weanling-management",
+    section: "B", questionRef: "2016 HL Q3 Option Two (a)",
+    questionText: "Describe the management practices necessary to maximise the growth of housed weanlings during their first winter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Housing time or type / parasite or disease control / 1.4 m2 floor space / 7 m3 air space / good ventilation / clean water / monitor for illness or poor thrift / group similar size together / feed silage / supplement with meals", marks: 16, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 6 + 4).", group: {"claimMax":3,"perOption":6,"options":["Housing time or type","parasite or disease control","1.4 m2 floor space","7 m3 air space","good ventilation","clean water","monitor for illness or poor thrift","group similar size together","feed silage","supplement with meals"],"perOptionSteps":[6,6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option Two (a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-3","agricultural-science-2-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o2b", topicId: "agsci-4-3-1", conceptId: "beef-grazing-system",
+    section: "B", questionRef: "2016 HL Q3 Option Two (b)",
+    questionText: "Describe a suitable grazing system which might be used in a beef enterprise to achieve optimum production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rotational grazing system (example strip or paddock) / two points of operation (accept diagram) / leader-follower system / best leafy grass / fewer parasites", marks: 16, contextNote: "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 6 + 4).", group: {"claimMax":3,"perOption":6,"options":["Rotational grazing system (example strip or paddock)","two points of operation (accept diagram)","leader-follower system","best leafy grass","fewer parasites"],"perOptionSteps":[6,6,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option Two (b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o2ci", topicId: "agsci-4-3-2", conceptId: "eu-carcase-classification",
+    section: "B", questionRef: "2016 HL Q3 Option Two (c)(i)",
+    stem: "Beef is classified using the EU beef carcase classification system.",
+    questionText: "Outline the main features of this system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Is a grading system / used in factories / to grade carcases for fat / conformation / 1-5 and E-P", marks: 6, contextNote: "Any three, 2 marks each (3×2m).", group: {"claimMax":3,"perOption":2,"options":["Is a grading system","used in factories","to grade carcases for fat","conformation","1-5 and E-P"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option Two (c)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o2cii", topicId: "agsci-4-3-2", conceptId: "carcase-scores",
+    section: "B", questionRef: "2016 HL Q3 Option Two (c)(ii)",
+    stem: "Beef is classified using the EU beef carcase classification system.",
+    questionText: "Using this system, indicate a suitable score for a highly productive Continental beef animal and a British crossbred beef animal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Highly productive: E1 or E2 or U1 or U2", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "British crossbred: R4 or R5 or O4 or O5", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option Two (c)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4","agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q3o2ciii", topicId: "agsci-4-3-2", conceptId: "improving-carcase-classification",
+    section: "B", questionRef: "2016 HL Q3 Option Two (c)(iii)",
+    stem: "Beef is classified using the EU beef carcase classification system.",
+    questionText: "Describe a suitable strategy which could be used to improve the classification of Irish beef cattle in the future.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cross breeding / using high quality beef bulls / continental bulls / named breed / slaughter at correct age or at maturity / animal finished on grass", marks: 6, contextNote: "Any two points, 3 marks each (3 + 3m).", group: {"claimMax":2,"perOption":3,"options":["Cross breeding","using high quality beef bulls","continental bulls","named breed","slaughter at correct age or at maturity","animal finished on grass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q3 Option Two (c)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-0","agricultural-science-0-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q4a", topicId: "agsci-3-1", conceptId: "magnesium-deficiency",
+    section: "B", questionRef: "2016 HL Q4(a)",
+    stem: "In the case of any two of the following describe a laboratory or field method:",
+    questionText: "Describe a laboratory or field method to show the effect of magnesium deficiency on the growth of a plant.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Seeds or seedlings / nutrient tablet (Sach’s) or control or soil containing all nutrients / without Mg or soil deficient in Mg / aerate / tinfoil / correct time / compare growth / (Mg) chlorosis or (Mg) yellowing of leaves / same conditions with one named", marks: 24, contextNote: "Any six, 4 marks each (6×4m).", group: {"claimMax":6,"perOption":4,"options":["Seeds or seedlings","nutrient tablet (Sach’s) or control or soil containing all nutrients","without Mg or soil deficient in Mg","aerate","tinfoil","correct time","compare growth","(Mg) chlorosis or (Mg) yellowing of leaves","same conditions with one named"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q4(a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-5","agricultural-science-0-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q4b", topicId: "agsci-3-3-3", conceptId: "root-crop-yield",
+    section: "B", questionRef: "2016 HL Q4(b)",
+    stem: "In the case of any two of the following describe a laboratory or field method:",
+    questionText: "Describe a laboratory or field method to estimate the yield of a named root crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named crop", marks: 4, contextNote: "6×4m: the named crop is a compulsory point [*Compulsory point], then any five more." },
+    { id: "r-2", kind: "anyN", verbatim: "quadrat 1m2 plot or measured area / place at random / dig crop / wash or remove foliage / weigh / repeat no. of times / average / ×10000 for ha. or correct calculation or correct result", marks: 20, contextNote: "Any five more, 4 marks each.", group: {"claimMax":5,"perOption":4,"options":["quadrat 1m2 plot or measured area","place at random","dig crop","wash or remove foliage","weigh","repeat no. of times","average","×10000 for ha. or correct calculation or correct result"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q4(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4","agricultural-science-0-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q4c", topicId: "agsci-4-3-2", conceptId: "foodstuff-energy-value",
+    section: "B", questionRef: "2016 HL Q4(c)",
+    stem: "In the case of any two of the following describe a laboratory or field method:",
+    questionText: "Describe a laboratory or field method to measure the energy value of an animal foodstuff.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dry sample of feed / weigh sample / 100 g or 100 cm3 or known volume of water in test tube or calorimeter / initial temp. / burn feed under test tube or in calorimeter / reweigh or burn to completion / record new temp. / note temperature change / calculation or ∆H = mc∆t", marks: 24, contextNote: "Any six, 4 marks each (6×4m).", group: {"claimMax":6,"perOption":4,"options":["Dry sample of feed","weigh sample","100 g or 100 cm3 or known volume of water in test tube or calorimeter","initial temp.","burn feed under test tube or in calorimeter","reweigh or burn to completion","record new temp.","note temperature change","calculation or ∆H = mc∆t"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q4(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-6","agricultural-science-0-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q4d", topicId: "agsci-3-3-2", conceptId: "shading-botanical-composition",
+    section: "B", questionRef: "2016 HL Q4(d)",
+    stem: "In the case of any two of the following describe a laboratory or field method:",
+    questionText: "Describe a laboratory or field method to determine the effect of shading on the botanical composition of a pasture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Quadrat or line transect or belt transect / ×10 times or stations / light meter / shaded area / record composition / repeat in unshaded area / record composition / compare / correct conclusion", marks: 24, contextNote: "Any six, 4 marks each (6×4m).", group: {"claimMax":6,"perOption":4,"options":["Quadrat or line transect or belt transect","×10 times or stations","light meter","shaded area","record composition","repeat in unshaded area","record composition","compare","correct conclusion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q4(d)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q5ai", topicId: "agsci-4-2", conceptId: "dairy-breeds-from-milk",
+    section: "B", questionRef: "2016 HL Q5(a)(i)",
+    stem: "The average lactation yield and the fat and protein composition of milk for three dairy breeds are shown in the table below:",
+    questionText: "Which breeds are represented by A, B, and C?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A. Jersey", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B. Holstein or Holstein cross or Montbéliarde", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C. Friesian or Friesian cross or Jersey cross or Norwegian Red", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q5(a)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2016-hl-paper-milk-table",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2016-hl-paper-milk-table.png",
+          "srcHash": "5504cfb625382e9cfb0cf790614061a4",
+          "alt": "Original Question 5(a) table of three dairy breeds: Breed, Milk Yield (kg), Fat (%) and Protein (%); A 4350, 5.3, 4.1; B 6450, 4.1, 3.5; C 5240, 4.8, 3.9.",
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q5aii", topicId: "agsci-4-2", conceptId: "dairy-breed-reasons",
+    section: "B", questionRef: "2016 HL Q5(a)(ii)",
+    stem: "The average lactation yield and the fat and protein composition of milk for three dairy breeds are shown in the table below: (i) Which breeds are represented by A, B, and C?",
+    questionText: "Give a reason for your choice in each case.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Lower yield/ higher solids", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B: Higher yield/ lower solids", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C: Intermediate yield/ intermediate solids", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q5(a)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2016-hl-paper-milk-table",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2016-hl-paper-milk-table.png",
+          "srcHash": "5504cfb625382e9cfb0cf790614061a4",
+          "alt": "Original Question 5(a) table of three dairy breeds: Breed, Milk Yield (kg), Fat (%) and Protein (%); A 4350, 5.3, 4.1; B 6450, 4.1, 3.5; C 5240, 4.8, 3.9.",
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q5aiii", topicId: "agsci-4-3-2", conceptId: "colostrum-fat-protein",
+    section: "B", questionRef: "2016 HL Q5(a)(iii)",
+    questionText: "State the percentage (%) value of fat and protein in colostrum.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fat: 4 - 7%", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Protein: 14 - 16%", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q5(a)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q5b", topicId: "agsci-4-3-2", conceptId: "milk-fat-factors",
+    section: "B", questionRef: "2016 HL Q5(b)",
+    stem: "The fat content of the milk of individual cows can be affected by many factors.",
+    questionText: "List and explain any four of these factors, other than breed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Age of cow (decreases with age) / stage of lactation (lower during early or higher at end) / stage of milking (increases with milking) / feed (high quality feed or fibre increases) / health (mastitis reduces) / milking interval (lower with long interval)", marks: 24, contextNote: "Any four: 4×(5+1m), each factor 5 and its effect (in brackets) 1. [Cause (effect)]", group: {"claimMax":4,"perOption":6,"options":["Age of cow (decreases with age)","stage of lactation (lower during early or higher at end)","stage of milking (increases with milking)","feed (high quality feed or fibre increases)","health (mastitis reduces)","milking interval (lower with long interval)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q5(b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q5c", topicId: "agsci-4-3-2", conceptId: "heifer-first-calving",
+    section: "B", questionRef: "2016 HL Q5(c)",
+    questionText: "Discuss how the age and condition of breeding heifers in a dairy herd may influence the date of first calving.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Age: 15 months / 280-320 kg at mating / target weight 500-580 kg at calving / 24-month calving / Condition: 2.8-3.2 for heat / 3.2-3.4 at calving / poor condition causes irregular heat / calving difficulties or should not be put in calf", marks: 8, contextNote: "Any four, 2 marks each (4×2m). [*At least one point from each] of age and condition.", group: {"claimMax":4,"perOption":2,"options":["Age: 15 months","280-320 kg at mating","target weight 500-580 kg at calving","24-month calving","Condition: 2.8-3.2 for heat","3.2-3.4 at calving","poor condition causes irregular heat","calving difficulties or should not be put in calf"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q5(c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q6ai", topicId: "agsci-3-3-2", conceptId: "indirect-control",
+    section: "B", questionRef: "2016 HL Q6(a)(i)",
+    stem: "Weeds, pests and diseases in crops may be controlled by direct and indirect methods.",
+    questionText: "What is meant by indirect control?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any method of control that is effective despite not being targeted at the affected species", marks: 2, contextNote: "[Accept ‘a method that does not use chemicals’]" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q6(a)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q6aii", topicId: "agsci-3-3-2", conceptId: "indirect-control-methods",
+    section: "B", questionRef: "2016 HL Q6(a)(ii)",
+    stem: "Weeds, pests and diseases in crops may be controlled by direct and indirect methods.",
+    questionText: "Describe three methods of indirect control commonly used in Irish agriculture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Stubble cleaning (uproots weed seedlings) / crop rotation (interrupts life cycle) / growth encouragement (gives crop growth advantage) / early harvest (less chance of attack on crop) / resistant varieties (less susceptible to attack) / eliminate host plants (interrupts life cycle) / biological control (explained example within definition) / drainage (affects habitat of pest) / liming (affects the life-cycle of liver fluke)", marks: 12, contextNote: "Any three: (3×3m) + (3×1m), each method 3 and its effect (in brackets) 1.", group: {"claimMax":3,"perOption":4,"options":["Stubble cleaning (uproots weed seedlings)","crop rotation (interrupts life cycle)","growth encouragement (gives crop growth advantage)","early harvest (less chance of attack on crop)","resistant varieties (less susceptible to attack)","eliminate host plants (interrupts life cycle)","biological control (explained example within definition)","drainage (affects habitat of pest)","liming (affects the life-cycle of liver fluke)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q6(a)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-3","agricultural-science-1-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q6b", topicId: "agsci-3-3-1", conceptId: "root-crop-soil-suitability",
+    section: "B", questionRef: "2016 HL Q6(b)",
+    questionText: "Explain four characteristics that would determine the suitability of a soil for root crops.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "texture / pH / organic matter / structure / clay content or CEC / drainage / depth / colour / fertility", marks: 16, contextNote: "Any four: (4×3m) + (4×1m), each characteristic 3 and its effect 1. [One correct effect required per characteristic].", group: {"claimMax":4,"perOption":4,"options":["texture","pH","organic matter","structure","clay content or CEC","drainage","depth","colour","fertility"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q6(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q6ci", topicId: "agsci-3-3-2", conceptId: "cereal-lodging-causes",
+    section: "B", questionRef: "2016 HL Q6(c)(i)",
+    questionText: "Give four possible causes of lodging in cereal crops.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wind / rain / excessive N / tall varieties / disease / pest attack / Ca, P, or K deficiency / weakness of straw / sowing too early or late harvesting", marks: 10, contextNote: "Any four. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (5 + 3 + 1 + 1).", group: {"claimMax":4,"perOption":5,"options":["Wind","rain","excessive N","tall varieties","disease","pest attack","Ca, P, or K deficiency","weakness of straw","sowing too early or late harvesting"],"perOptionSteps":[5,3,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q6(c)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q6cii", topicId: "agsci-3-3-3", conceptId: "stored-potato-damage",
+    section: "B", questionRef: "2016 HL Q6(c)(ii)",
+    questionText: "Describe two sources of damage to potato tubers during storage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Frost (soggy or rot) / water (mould or rot) / sprouting (shrivel) / rodents (eaten) / bruised (rot) / light (greening) / high humidity (mould) / heat (sprouting)", marks: 8, contextNote: "Any two: (2×3m) + (2×1m), each source 3 and its effect (in brackets) 1. [Cause (effect)]", group: {"claimMax":2,"perOption":4,"options":["Frost (soggy or rot)","water (mould or rot)","sprouting (shrivel)","rodents (eaten)","bruised (rot)","light (greening)","high humidity (mould)","heat (sprouting)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q6(c)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7ai", topicId: "agsci-4-1", conceptId: "f1-hybrids",
+    section: "B", questionRef: "2016 HL Q7(a)(i)",
+    stem: "Explain each of the following terms:",
+    questionText: "Explain the term: F1 hybrids.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "progeny of two purebred parents / parents are genetically different / progeny are heterozygous / inbred parents", marks: 4, contextNote: "Any two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["progeny of two purebred parents","parents are genetically different","progeny are heterozygous","inbred parents"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(a)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7aii", topicId: "agsci-4-1", conceptId: "continuous-variation",
+    section: "B", questionRef: "2016 HL Q7(a)(ii)",
+    stem: "Explain each of the following terms:",
+    questionText: "Explain the term: Continuous variation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Characteristic controlled by a number of genes / genes interact / gives a range of phenotypes", marks: 4, contextNote: "Any two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["Characteristic controlled by a number of genes","genes interact","gives a range of phenotypes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(a)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7aiii", topicId: "agsci-4-1", conceptId: "back-cross",
+    section: "B", questionRef: "2016 HL Q7(a)(iii)",
+    stem: "Explain each of the following terms:",
+    questionText: "Explain the term: Back cross.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Breeding a cross-breed offspring / with a pure-breeding recessive (plant or animal) / used to identify the genotype of the parent", marks: 4, contextNote: "Any two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["Breeding a cross-breed offspring","with a pure-breeding recessive (plant or animal)","used to identify the genotype of the parent"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(a)(iii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7aiv", topicId: "agsci-4-1", conceptId: "incomplete-dominance",
+    section: "B", questionRef: "2016 HL Q7(a)(iv)",
+    stem: "Explain each of the following terms:",
+    questionText: "Explain the term: Incomplete dominance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Neither allele dominant (co-dominant or of equal dominance) / both expressed in phenotype / results in intermediate trait", marks: 4, contextNote: "Any two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["Neither allele dominant (co-dominant or of equal dominance)","both expressed in phenotype","results in intermediate trait"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(a)(iv)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7bi", topicId: "agsci-4-1", conceptId: "bull-genotype",
+    section: "B", questionRef: "2016 HL Q7(b)(i)",
+    stem: "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow.",
+    questionText: "Give the genotype of the bull used in this cross.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BbPp", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(b)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7bii", topicId: "agsci-4-1", conceptId: "cross-genotypes",
+    section: "B", questionRef: "2016 HL Q7(b)(ii)",
+    stem: "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow.",
+    questionText: "List the possible genotypes resulting from this cross.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "BbPp", marks: 2, contextNote: "4×2m." },
+    { id: "r-2", kind: "point", verbatim: "Bbpp", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "bbPp", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "bbpp", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(b)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7biii", topicId: "agsci-4-1", conceptId: "white-horned-probability",
+    section: "B", questionRef: "2016 HL Q7(b)(iii)",
+    stem: "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow.",
+    questionText: "What is the probability that a calf from this cross would be white and horned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "25%", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(b)(iii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7biv", topicId: "agsci-4-1", conceptId: "horned-probability",
+    section: "B", questionRef: "2016 HL Q7(b)(iv)",
+    stem: "In cattle, the allele for black coat (B) is dominant to the allele for white coat (b), and the allele for the polled condition (P) is dominant to the allele for horned (p). A bull, heterozygous for both traits, is mated with a horned, white cow.",
+    questionText: "What is the probability that a calf from this cross would be horned? Explain your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "50% chance", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Half of the offspring have genotype pp or two recessive genes (for horns)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(b)(iv)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7bv", topicId: "agsci-4-1", conceptId: "law-of-segregation",
+    section: "B", questionRef: "2016 HL Q7(b)(v)",
+    questionText: "State Mendel’s Law of Segregation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Law of Segregation: when gametes are formed only one allele from a pair (of alleles) is carried in the gamete", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(b)(v)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6","agricultural-science-3-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q7c", topicId: "agsci-4-3-2", conceptId: "ebi-sub-indices",
+    section: "B", questionRef: "2016 HL Q7(c)",
+    stem: "The Economic Breeding Index (EBI) is widely used in dairying to identify genetically superior animals to improve dairy production in Ireland.",
+    questionText: "(i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Production index: fat/ protein/ yield of milk / Fertility index: calving interval/ survival / Calving index: calving difficulties/ mortality/ gestation / Maintenance index: cull cow weight / Management index: milking time/ temperament / Health index: lameness/ SCC mastitis/ health / Beef index: carcase weight/ conformation/ carcase fat", marks: 8, contextNote: "Any two: 2×(2+2m), each sub-index 2 and its factors 2.", group: {"claimMax":2,"perOption":4,"options":["Production index: fat/ protein/ yield of milk","Fertility index: calving interval/ survival","Calving index: calving difficulties/ mortality/ gestation","Maintenance index: cull cow weight","Management index: milking time/ temperament","Health index: lameness/ SCC mastitis/ health","Beef index: carcase weight/ conformation/ carcase fat"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q7(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8ai", topicId: "agsci-3-3-2", conceptId: "leatherjacket-wireworm-adults",
+    section: "B", questionRef: "2016 HL Q8(a)(i)",
+    stem: "Answer any two of the parts (a), (b), (c). The leatherjacket and the wireworm are the larval stages of two important crop pests.",
+    questionText: "Name the adult stages of 1. the leatherjacket, 2. the wireworm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Cranefly or daddy longlegs", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "2. Clickbeetle", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8aii", topicId: "agsci-3-3-2", conceptId: "leatherjacket-wireworm-damage",
+    section: "B", questionRef: "2016 HL Q8(a)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c). The leatherjacket and the wireworm are the larval stages of two important crop pests.",
+    questionText: "Describe the damage caused by each of these pests.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Leatherjacket: underground stem/ soil level/ roots", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Wireworm: base of stem/ seeds/ tubers/ roots", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8aiii", topicId: "agsci-4-2", conceptId: "pest-phylum",
+    section: "B", questionRef: "2016 HL Q8(a)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c). The leatherjacket and the wireworm are the larval stages of two important crop pests.",
+    questionText: "Name the phylum to which they belong.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Arthropoda", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(a)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8aiv", topicId: "agsci-4-2", conceptId: "arthropod-features",
+    section: "B", questionRef: "2016 HL Q8(a)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c). The leatherjacket and the wireworm are the larval stages of two important crop pests. (iii) Name the phylum to which they belong.",
+    questionText: "Describe three structural features of members of this phylum.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Jointed limbs / exoskeleton / chitin / triploblastic coelomate / bilateral symmetry / segmented body", marks: 6, contextNote: "Any three, 2 marks each (3×2m).", group: {"claimMax":3,"perOption":2,"options":["Jointed limbs","exoskeleton","chitin","triploblastic coelomate","bilateral symmetry","segmented body"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(a)(iv)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4","agricultural-science-3-1"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8av", topicId: "agsci-3-3-2", conceptId: "complete-incomplete-metamorphosis",
+    section: "B", questionRef: "2016 HL Q8(a)(v)",
+    stem: "Answer any two of the parts (a), (b), (c).",
+    questionText: "Distinguish fully between complete and incomplete metamorphosis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Complete (incomplete): larva (nymph)", marks: 4, contextNote: "2×(2+2m): each distinction 2 for complete and 2 for incomplete (in brackets)." },
+    { id: "r-2", kind: "point", verbatim: "pupa (no pupa or nymph continues to grow or (nymphal) instars or regular ecdyses)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(a)(v)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-4","agricultural-science-1-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8b", topicId: "agsci-3-3-2", conceptId: "nitrogen-benefits-and-excess",
+    section: "B", questionRef: "2016 HL Q8(b)",
+    stem: "Answer any two of the parts (a), (b), (c).",
+    questionText: "The correct amount of nitrogen fertiliser is of great benefit to crop growth, but excessive nitrogen can have negative effects. Discuss this statement.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Benefits of nitrogen: stimulates growth of leaf and stem / increases tillering / improves establishment / photosynthesis or chlorophyll / protein synthesis / cell division / yield increase / Negative effects: increased lodging / delayed ripening / increased disease susceptibility / reduced quality potatoes / lowers malting quality / inhibits clover / affects silage preservation / water pollution or eutrophication or leaching / more frost-prone / burning", marks: 24, contextNote: "Any four, 6 marks each (4×6m). *[At least one point from each] of benefits and negative effects.", group: {"claimMax":4,"perOption":6,"options":["Benefits of nitrogen: stimulates growth of leaf and stem","increases tillering","improves establishment","photosynthesis or chlorophyll","protein synthesis","cell division","yield increase","Negative effects: increased lodging","delayed ripening","increased disease susceptibility","reduced quality potatoes","lowers malting quality","inhibits clover","affects silage preservation","water pollution or eutrophication or leaching","more frost-prone","burning"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-6","agricultural-science-3-0","agricultural-science-2-0","agricultural-science-1-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q8c", topicId: "agsci-4-1", conceptId: "distinguishing-paired-terms",
+    section: "B", questionRef: "2016 HL Q8(c)",
+    stem: "Answer any two of the parts (a), (b), (c).",
+    questionText: "Distinguish clearly between the members of any three of the following pairs of terms: (i) Crossbreeding and crossing-over. (ii) Active transport and active immunity. (iii) Transpiration and translocation. (iv) Nitrification and denitrification.",
+    tariffModel: {"kind":"bestNofParts","answer":6,"ofParts":8,"perPart":4}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "mating of animals of different breeds / to get the best characteristics of both in the offspring or hybrid vigour or heterosis / F1 seed varieties", marks: 4, contextNote: "(i) Cross breeding: two points, 2 + 2m. Two points per term for any three pairs.", group: {"claimMax":2,"perOption":2,"options":["mating of animals of different breeds","to get the best characteristics of both in the offspring or hybrid vigour or heterosis","F1 seed varieties"]} },
+    { id: "r-2", kind: "anyN", verbatim: "process in which (homologous) chromosomes exchange genetic material / occurs during meiosis / results in genetic variation or mutation", marks: 4, contextNote: "(i) Crossing over: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["process in which (homologous) chromosomes exchange genetic material","occurs during meiosis","results in genetic variation or mutation"]} },
+    { id: "r-3", kind: "anyN", verbatim: "movement of a substance from area of low concentration / to an area of high concentration / requires energy", marks: 4, contextNote: "(ii) Active transport: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["movement of a substance from area of low concentration","to an area of high concentration","requires energy"]} },
+    { id: "r-4", kind: "anyN", verbatim: "animal creates antibodies / exposure to antigen or to disease / vaccination", marks: 4, contextNote: "(ii) Active immunity: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["animal creates antibodies","exposure to antigen or to disease","vaccination"]} },
+    { id: "r-5", kind: "anyN", verbatim: "loss of water vapour from leaves / through stomata", marks: 4, contextNote: "(iii) Transpiration: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["loss of water vapour from leaves","through stomata"]} },
+    { id: "r-6", kind: "anyN", verbatim: "movement of products of photosynthesis / through phloem / to storage organs or named", marks: 4, contextNote: "(iii) Translocation: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["movement of products of photosynthesis","through phloem","to storage organs or named"]} },
+    { id: "r-7", kind: "anyN", verbatim: "conversion of ammonium (ions) or urea / into nitrite and-or nitrate (ions) / by Nitrobacter (spp.) or Nitrosomonas (spp.)", marks: 4, contextNote: "(iv) Nitrification: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["conversion of ammonium (ions) or urea","into nitrite and-or nitrate (ions)","by Nitrobacter (spp.) or Nitrosomonas (spp.)"]} },
+    { id: "r-8", kind: "anyN", verbatim: "loss of nitrogen from soil / nitrates converted / to nitrogen gas / by Thiobacillus (spp.)", marks: 4, contextNote: "(iv) Denitrification: two points, 2 + 2m.", group: {"claimMax":2,"perOption":2,"options":["loss of nitrogen from soil","nitrates converted","to nitrogen gas","by Thiobacillus (spp.)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q8(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-5"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q9a", topicId: "agsci-4-3-3", conceptId: "liver-fluke-drained-pasture",
+    section: "B", questionRef: "2016 HL Q9(a)",
+    stem: "Give scientific explanations for any four of the following:",
+    questionText: "Give a scientific explanation for: The reduced incidence of liver fluke (Fasciola hepatica) infestation in cattle grazed on well-drained pasture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Absence of snail / Lymnaea or Galba or mud snail or water snail / secondary host / larval stages need water / named larval stages (miracidium or cercarium)", marks: 12, contextNote: "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).", group: {"claimMax":3,"perOption":7,"options":["Absence of snail","Lymnaea or Galba or mud snail or water snail","secondary host","larval stages need water","named larval stages (miracidium or cercarium)"],"perOptionSteps":[7,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q9(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-0"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q9b", topicId: "agsci-3-1", conceptId: "water-through-plant",
+    section: "B", questionRef: "2016 HL Q9(b)",
+    stem: "Give scientific explanations for any four of the following:",
+    questionText: "Give a scientific explanation for: The movement of water from the soil through a plant and into the atmosphere.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Root hairs / root xylem (tissue) / osmosis or diffusion / root pressure / adhesion or cohesion or capillarity / transpiration stream / evaporation / exits stomata", marks: 12, contextNote: "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).", group: {"claimMax":3,"perOption":7,"options":["Root hairs","root xylem (tissue)","osmosis or diffusion","root pressure","adhesion or cohesion or capillarity","transpiration stream","evaporation","exits stomata"],"perOptionSteps":[7,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q9(b)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-3-3","agricultural-science-3-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q9c", topicId: "agsci-4-3-1", conceptId: "crossbred-sows",
+    section: "B", questionRef: "2016 HL Q9(c)",
+    stem: "Give scientific explanations for any four of the following:",
+    questionText: "Give a scientific explanation for: The use of cross-breed sows in pig production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cross / between two named breeds / best qualities of both or hybrid vigour / good FCR / fast growth rate / good meat quality / good conformation / prolific", marks: 12, contextNote: "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).", group: {"claimMax":3,"perOption":7,"options":["Cross","between two named breeds","best qualities of both or hybrid vigour","good FCR","fast growth rate","good meat quality","good conformation","prolific"],"perOptionSteps":[7,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q9(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-6"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q9d", topicId: "agsci-3-3-3", conceptId: "silage-acid-additive",
+    section: "B", questionRef: "2016 HL Q9(d)",
+    stem: "Give scientific explanations for any four of the following:",
+    questionText: "Give a scientific explanation for: The use of acid as an additive in silage making.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sulphuric acid or formic acid or propionic acid or acetic acid / lowers pH / inhibits fermentation / prevents bacterial activity / preservative / used for poor-quality grass or low sugar levels or wet conditions", marks: 12, contextNote: "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).", group: {"claimMax":3,"perOption":7,"options":["Sulphuric acid or formic acid or propionic acid or acetic acid","lowers pH","inhibits fermentation","prevents bacterial activity","preservative","used for poor-quality grass or low sugar levels or wet conditions"],"perOptionSteps":[7,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q9(d)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2016, ["agricultural-science-2-0"]), kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2016 Higher Level — © State Examinations Commission.",
+    id: "agsci-2016-hl-q9e", topicId: "agsci-3-1", conceptId: "greenhouse-carbon-dioxide",
+    section: "B", questionRef: "2016 HL Q9(e)",
+    stem: "Give scientific explanations for any four of the following:",
+    questionText: "Give a scientific explanation for: An increase in the yield of crops exposed to higher levels of carbon dioxide in a greenhouse.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "CO2 needed for photosynthesis / higher levels of CO2 increase rate of photosynthesis / converted to glucose / glucose converted to starch / more CO2 means more starch", marks: 12, contextNote: "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).", group: {"claimMax":3,"perOption":7,"options":["CO2 needed for photosynthesis","higher levels of CO2 increase rate of photosynthesis","converted to glucose","glucose converted to starch","more CO2 means more starch"],"perOptionSteps":[7,3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2016 Higher — Q9(e)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2016 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",

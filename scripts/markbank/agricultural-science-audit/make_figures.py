@@ -77,6 +77,10 @@ FIGS = {
   'agsci-2022-hl-scheme-calf-shed-airflow': dict(kind='markingschemes', year=2022, fileid='LC024ALP000EV.pdf', page=26, rect=[0.08,0.430,0.95,0.672], solution=True,
       alt='Official marking-scheme answer for Question 14(c)(ii): the shed cross-section with arrows coming in at each side under the eaves, rising diagonally towards the centre and going out through the open ridge in the roof; "Correct indication of arrows coming in at side / going out through roof", 4 + 1.',
       attribution='SEC Agricultural Science 2022 Higher Level marking scheme, PDF page 26 — © State Examinations Commission.'),
+  # 2016
+  'agsci-2016-hl-paper-milk-table': dict(kind='exampapers', year=2016, fileid='LC024ALP000EV.pdf', page=4, rect=[0.16, 0.630, 0.92, 0.718], solution=False,
+      alt='Original Question 5(a) table of three dairy breeds: Breed, Milk Yield (kg), Fat (%) and Protein (%); A 4350, 5.3, 4.1; B 6450, 4.1, 3.5; C 5240, 4.8, 3.9.',
+      attribution='SEC Agricultural Science 2016 Higher Level examination paper, PDF page 4 — © State Examinations Commission.'),
   # 2017
   'agsci-2017-ol-paper-burning-soil': dict(kind='exampapers', year=2017, fileid='LC024GLP000EV.pdf', page=3, rect=[0.32, 0.315, 0.7, 0.52], solution=False,
       alt='Original Question 1(a) diagram: a crucible holding a dry soil sample on a tripod over a Bunsen burner.',

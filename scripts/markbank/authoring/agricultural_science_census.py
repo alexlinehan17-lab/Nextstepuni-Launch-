@@ -2245,9 +2245,78 @@ Q13(d)(iv)|3|13|14|Turnout target weight: 270-320 kg
 Q13(d)(v)|6|13|14|Compensatory growth:
 '''
 POOLS_2017_ORDINARY = {'Q11(c)': (1, ['Universal indicator', 'pH meter'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY}
+# 2016 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
+HIGHER_2016 = '''
+Q1(a)|10|2|5|Spermatophyta or Angiospermae
+Q1(b)(i)|4|2|5|The amount of dissolved oxygen needed
+Q1(b)(ii)|6|2|5|Slurry application at correct time
+Q1(c)|10|2|5|Spores/sporangium/columella
+Q1(d)(i)|4|2|5|A disease of national importance
+Q1(d)(ii)|6|2|5|Scrapie/ Aujeszky disease
+Q1(e)|10|2|5|Rhizomes/ cultivation spreads it
+Q1(f)|10|2|5|Small intestine or duodenum or ileum
+Q1(g)|10|2|5|Humus more fertile
+Q1(h)(i)|4|2|5|A crop grown between two main crops.
+Q1(h)(ii)|6|2|5|Provides fodder/ good crop rotation
+Q1(i)|10|2|5|Oxygen needed or aerobic respiration
+Q1(j)|10|2|5|E. coli scour/ Erysipelas
+Q2(a)|18|3|6|Drainage: waterlogged or bad
+Q2(b)|12|3|6|Wetting and drying
+Q2(c)(i)|12|3|6|Dry soil sample/ crush aggregates
+Q2(c)(ii)|3|3|6|Tillage crops or named tillage crop.
+Q2(c)(iii)|3|3|6|Early growth or heats up faster
+Q3 Option One (a)|16|3|6|Housing/ hygiene specified
+Q3 Option One (b)|16|3|6|Named breed/ terminal sires
+Q3 Option One (c)|16|3|6|Productivity: yield of grass.
+Q3 Option Two (a)|16|4|7|Housing time or type
+Q3 Option Two (b)|16|4|7|Rotational grazing system (example strip or paddock)
+Q3 Option Two (c)(i)|6|4|7|Is a grading system
+Q3 Option Two (c)(ii)|4|4|7|Highly productive: E1 or E2
+Q3 Option Two (c)(iii)|6|4|7|Cross breeding/ using high quality beef bulls
+Q4(a)|24|4|7|without Mg or soil deficient in Mg
+Q4(b)|24|4|7|Named crop*/quadrat
+Q4(c)|24|4|7|Dry sample of feed/ weigh sample
+Q4(d)|24|4|7|Quadrat or line transect
+Q5(a)(i)|6|4|8|A. Jersey.
+Q5(a)(ii)|6|4|8|A: Lower yield/ higher solids.
+Q5(a)(iii)|4|4|8|Fat: 4 - 7%.
+Q5(b)|24|4|8|Age of cow (decreases with age)
+Q5(c)|8|4|8|Condition: 2.8-3.2 for heat
+Q6(a)(i)|2|5|8|Any method of control that is effective
+Q6(a)(ii)|12|5|8|Stubble cleaning (uproots weed seedlings)
+Q6(b)|16|5|8|Characteristics: texture/ pH
+Q6(c)(i)|10|5|8|Wind/ rain/ excessive N
+Q6(c)(ii)|8|5|8|Frost (soggy or rot)
+Q7(a)(i)|4|5|9|F1 hybrids: progeny of two purebred parents
+Q7(a)(ii)|4|5|9|Continuous variation: Characteristic controlled
+Q7(a)(iii)|4|5|9|Back cross: Breeding a cross-breed offspring
+Q7(a)(iv)|4|5|9|Incomplete dominance: Neither allele dominant
+Q7(b)(i)|4|5|9|(i) BbPp.
+Q7(b)(ii)|8|5|9|BbPp, Bbpp, bbPp, bbpp.
+Q7(b)(iii)|4|5|9|(iii) 25%
+Q7(b)(iv)|4|5|9|50% chance.
+Q7(b)(v)|4|5|9|Law of Segregation:
+Q7(c)|8|5|9|Production index: fat/ protein/ yield of milk.
+Q8(a)(i)|4|6|10|Cranefly or daddy longlegs
+Q8(a)(ii)|4|6|10|Leatherjacket: underground stem
+Q8(a)(iii)|2|6|10|(iii) Arthropoda.
+Q8(a)(iv)|6|6|10|Jointed limbs/ exoskeleton
+Q8(a)(v)|8|6|10|Complete (incomplete): larva (nymph)
+Q8(b)|24|6|10|Benefits of nitrogen:
+Q8(c)|24|6|10|Crossing over: process in which
+Q9(a)|12|6|11|Absence of snail/ Lymnaea
+Q9(b)|12|6|11|Root hairs/ root xylem
+Q9(c)|12|6|11|Cross/ between two named breeds
+Q9(d)|12|6|11|Sulphuric acid or formic acid
+Q9(e)|12|6|11|CO2 needed for photosynthesis
+'''
+POOLS_2016_HIGHER = {}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY, (2016,'higher'):POOLS_2016_HIGHER}
 
 SOURCES = [
+    (2016, 'higher', 'A', HIGHER_2016,
+     '0d0d58001042c543419ee3edc4acb58c9179f901acee5f8573ae9ae4949b12cd',
+     '38b7cf5f6e4504c17f6dd8b6f70dbad197a3c4fe7079e848221750f51eb34502'),
     (2017, 'ordinary', 'G', ORDINARY_2017,
      'ae9d18e016bfddf1e6b24436b60061e647eff4cf954d1e6c63d8a3c236315310',
      '14128fb6c59bd93ed27f29e4ca4f92bddc94ac805206c25eeeaf45c4e58bc443'),
@@ -2364,7 +2433,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71,(2016,'higher'):62}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2509,7 +2578,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71; 2016 Higher 62. Remaining editions stay open.')
 
 
 if __name__=='__main__':

@@ -4,6 +4,1081 @@
   "method": "Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.",
   "papers": [
     {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "0d0d58001042c543419ee3edc4acb58c9179f901acee5f8573ae9ae4949b12cd",
+        "markingschemes": "38b7cf5f6e4504c17f6dd8b6f70dbad197a3c4fe7079e848221750f51eb34502"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2016 HL Q1(a)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Spermatophyta or Angiospermae"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "The amount of dissolved oxygen needed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(b)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Slurry application at correct time"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(c)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Spores/sporangium/columella"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(d)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "A disease of national importance"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(d)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(d)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Scrapie/ Aujeszky disease"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(e)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Rhizomes/ cultivation spreads it"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(e)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(f)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Small intestine or duodenum or ileum"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(f)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(g)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Humus more fertile"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(g)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(h)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "A crop grown between two main crops."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(h)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(h)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Provides fodder/ good crop rotation"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(h)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(i)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Oxygen needed or aerobic respiration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q1(j)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "E. coli scour/ Erysipelas"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q1(j)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q2(a)",
+          "marksPerResponse": 18,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Drainage: waterlogged or bad"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q2(a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q2(b)",
+          "marksPerResponse": 12,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Wetting and drying"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q2(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q2(c)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Dry soil sample/ crush aggregates"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q2(c)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q2(c)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Tillage crops or named tillage crop."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q2(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q2(c)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Early growth or heats up faster"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q2(c)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option One (a)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Housing/ hygiene specified"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option One (a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option One (b)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Named breed/ terminal sires"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option One (b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option One (c)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Productivity: yield of grass."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option One (c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option Two (a)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Housing time or type"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option Two (a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option Two (b)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Rotational grazing system (example strip or paddock)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option Two (b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option Two (c)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Is a grading system"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option Two (c)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option Two (c)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Highly productive: E1 or E2"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option Two (c)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q3 Option Two (c)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Cross breeding/ using high quality beef bulls"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q3 Option Two (c)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q4(a)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "without Mg or soil deficient in Mg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q4(a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q4(b)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Named crop*/quadrat"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q4(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q4(c)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Dry sample of feed/ weigh sample"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q4(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q4(d)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Quadrat or line transect"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q4(d)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q5(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "A. Jersey."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q5(a)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q5(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "A: Lower yield/ higher solids."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q5(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q5(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Fat: 4 - 7%."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q5(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q5(b)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Age of cow (decreases with age)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q5(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q5(c)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Condition: 2.8-3.2 for heat"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q5(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q6(a)(i)",
+          "marksPerResponse": 2,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Any method of control that is effective"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q6(a)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q6(a)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Stubble cleaning (uproots weed seedlings)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q6(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q6(b)",
+          "marksPerResponse": 16,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Characteristics: texture/ pH"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q6(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q6(c)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Wind/ rain/ excessive N"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q6(c)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q6(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Frost (soggy or rot)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q6(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "F1 hybrids: progeny of two purebred parents"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(a)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Continuous variation: Characteristic controlled"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Back cross: Breeding a cross-breed offspring"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(a)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Incomplete dominance: Neither allele dominant"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "(i) BbPp."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(b)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "BbPp, Bbpp, bbPp, bbpp."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "(iii) 25%"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(b)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "50% chance."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(b)(v)",
+          "marksPerResponse": 4,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Law of Segregation:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(b)(v)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q7(c)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Production index: fat/ protein/ yield of milk."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q7(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Cranefly or daddy longlegs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Leatherjacket: underground stem"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(a)(iii)",
+          "marksPerResponse": 2,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "(iii) Arthropoda."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(a)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Jointed limbs/ exoskeleton"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(a)(v)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Complete (incomplete): larva (nymph)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(a)(v)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(b)",
+          "marksPerResponse": 24,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Benefits of nitrogen:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q8(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q8(c)",
+          "marksPerResponse": 24,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Crossing over: process in which"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 3,
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2016 HL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q9(a)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Absence of snail/ Lymnaea"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q9(a)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q9(b)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Root hairs/ root xylem"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q9(c)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cross/ between two named breeds"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q9(c)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q9(d)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Sulphuric acid or formic acid"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q9(d)"
+          ]
+        },
+        {
+          "ref": "2016 HL Q9(e)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "CO2 needed for photosynthesis"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2016 HL Q9(e)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2017,
       "level": "ordinary",
       "lang": "ev",
@@ -35312,7 +36387,7 @@
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2016,
@@ -35617,6 +36692,174 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 10,
+        "(b)": 10,
+        "(c)": 10,
+        "(d)": 10,
+        "(e)": 10,
+        "(f)": 10,
+        "(g)": 10,
+        "(h)": 10,
+        "(i)": 10,
+        "(j)": 10
+      },
+      "choose": 6,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option One",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option Two",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24,
+        "(d)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 12,
+        "(b)": 12,
+        "(c)": 12,
+        "(d)": 12,
+        "(e)": 12
+      },
+      "choose": 4,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
     {
       "year": 2017,
       "level": "ordinary",

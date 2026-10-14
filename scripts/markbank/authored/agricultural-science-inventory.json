@@ -1673,72 +1673,81 @@
         "sha256": "38b7cf5f6e4504c17f6dd8b6f70dbad197a3c4fe7079e848221750f51eb34502",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 62,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "b3044c5c9df9cf82",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 23 JUNE – MORNING, 9:30 – 12:00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER]",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "9644cd1a62d82c59",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) to (j). (a) (i) Clover is a member of which plant phylum? (ii) Mention three features of plants belonging to this phylum. (b) (i) Explain the term biological oxygen demand (BOD). (ii) Outline three farming practi",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "49c25de9562952d7",
           "page": 3,
           "cue": "any four",
           "context": " the following headings: (i) Drainage. (ii) Fertility. (iii) pH. (b) Identify and explain any four factors that affect the development of a soil structure. (c) An experiment to determine soil texture by sieving was carried out, and the results were as follows: Sand: 60% Silt: 25% Clay: 15% (i) Describe how this experiment was ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(b): any four factors with their effects; the scheme lists eight (a marking menu)."
         },
         {
           "id": "b2f3bbb6393a5602",
           "page": 4,
           "cue": "any two",
           "context": "improve the classification of Irish beef cattle in the future. 48 marks 4. In the case of any two of the following describe a laboratory or field method: (a) To show the effect of magnesium deficiency on the growth of a plant. (b) To estimate the yield of a named root crop. (c) To measure the energy value of an animal foodstu",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "0812381668948852",
           "page": 4,
           "cue": "any four",
           "context": " content of the milk of individual cows can be affected by many factors. List and explain any four of these factors, other than breed. (c) Discuss how the age and condition of breeding heifers in a dairy herd may influence the date of first calving. 48 marks",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q5(b): any four factors other than breed; the scheme lists six (a marking menu)."
         },
         {
           "id": "f041fb5aa02f9e66",
           "page": 5,
           "cue": "any two",
           "context": "to identify genetically superior animals to improve dairy production in Ireland. (i) List any two sub-indices of the EBI. (ii) Outline the factors that determine each sub-index listed. 48 marks [OVER]",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q7(c)(i): any two EBI sub-indices with their factors; the scheme lists seven (a marking menu)."
         },
         {
           "id": "c47ef3d01563b6f7",
           "page": 6,
           "cue": "any two",
           "context": "Page 6 of 8 8. Answer any two of the parts (a), (b), (c). (a) The leatherjacket and the wireworm are the larval stages of two important crop pests. (i) Name the adult stages of 1. the leatherjacket, 2. the wireworm. (ii) Describe the damage caused by each of ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "b773c9f67647789e",
           "page": 6,
           "cue": "any three",
           "context": " negative effects. Discuss this statement. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Crossbreeding and crossing-over. (ii) Active transport and active immunity. (iii) Transpiration and translocation. (iv) Nitrification and denitrification. 48 marks 9. Give scientific explanati",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "75c1b37a9a05f77d",
           "page": 6,
           "cue": "any four",
           "context": "ion. (iv) Nitrification and denitrification. 48 marks 9. Give scientific explanations for any four of the following: (a) The reduced incidence of liver fluke (Fasciola hepatica) infestation in cattle grazed on well-drained pasture. (b) The movement of water from the soil through a plant and into the atmosphere. (c) The use of ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -1757,7 +1766,7 @@
         "sha256": "8be4a27d23db91bd9c601db8762265ac1aca3f033ab7ac7620139882749fbf1f",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 62,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

@@ -1222,5 +1222,22 @@
       0.365
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-hl-paper-milk-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-hl-paper-milk-table.png",
+    "md5": "5504cfb625382e9cfb0cf790614061a4",
+    "alt": "Original Question 5(a) table of three dairy breeds: Breed, Milk Yield (kg), Fat (%) and Protein (%); A 4350, 5.3, 4.1; B 6450, 4.1, 3.5; C 5240, 4.8, 3.9.",
+    "attribution": "SEC Agricultural Science 2016 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024ALP000EV.pdf",
+    "sourceSha256": "0d0d58001042c543419ee3edc4acb58c9179f901acee5f8573ae9ae4949b12cd",
+    "pdfPage": 4,
+    "cropRect": [
+      0.16,
+      0.63,
+      0.92,
+      0.718
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }
