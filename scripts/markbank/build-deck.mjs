@@ -19,7 +19,7 @@
  *   node scripts/markbank/build-deck.mjs <cards.json>
  */
 
-import { readFileSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, writeFileSync, mkdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { resolve, dirname } from 'node:path';
@@ -30,6 +30,7 @@ import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
+import { assertEconomicsReviewCoverage, bindEconomicsEditions } from './economicsEditions.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -851,6 +852,14 @@ if (subjectIds.length !== 1) {
 }
 const SUBJECT_ID = subjectIds[0];
 const SUBJECT = SUBJECTS[SUBJECT_ID];
+if (SUBJECT_ID === 'economics') {
+  // During the corpus audit, unreviewed papers remain explicitly pending.
+  // Reviewed papers are a hard gate: changed sources, stale review keys and
+  // new unclassified selection directives must stop generation.
+  process.stdout.write(execFileSync('python3', [
+    resolve(ROOT, 'scripts/markbank/authoring/econ_review.py'), '--allow-pending',
+  ], { cwd: ROOT, encoding: 'utf8' }));
+}
 if (!SUBJECT) {
   console.error(`unknown subject "${SUBJECT_ID}" — add it to SUBJECTS in this script`);
   process.exit(1);
@@ -1014,6 +1023,14 @@ for (const raw of rawCards) {
   }
   cards.push(card);
   if (correction) appliedCorrections.push(`${raw.id}: ${correction.reason}`);
+}
+
+let economicsReviews = [];
+if (SUBJECT_ID === 'economics') {
+  const directory = resolve(ROOT, 'scripts/markbank/authoring/reviews');
+  economicsReviews = readdirSync(directory).filter(name => /^economics-.*\.json$/.test(name))
+    .map(name => JSON.parse(readFileSync(resolve(directory, name), 'utf8')));
+  bindEconomicsEditions(cards, economicsReviews);
 }
 
 /**
@@ -1528,6 +1545,9 @@ ${rows}
   } as SecCard,` });
 }
 
+// A later provenance, glyph or figure rejection must not silently remove a
+// task that the independent physical-paper census requires. Fail before writes.
+if (SUBJECT_ID === 'economics') assertEconomicsReviewCoverage(seenId, economicsReviews);
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
 /* Every build ends with the paper-anchored ledger, so nobody can ship a deck
  * without the coverage number in front of them — the class of failure where
@@ -1596,6 +1616,12 @@ if (businessRubrics.length) {
   }
 }
 
+// Subject-specific imports for the generated module. A subject with none gets
+// no line for them, so its module stays byte-identical to the one it had
+// before French and Applied Maths added theirs.
+const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+  : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
+    : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
 const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1615,9 +1641,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';" : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
-  : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : ''}
-${cards.length ? `
+${moduleImports ? `${moduleImports}\n` : ''}${cards.length ? `
 const base = {
   source: 'sec' as const,
   subjectId: ${q(SUBJECT_ID)},

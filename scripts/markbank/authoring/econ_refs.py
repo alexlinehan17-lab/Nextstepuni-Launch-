@@ -26,7 +26,7 @@ CORRECTIONS = {
     # 2021 Higher — the air-passenger part is on page 35, under Question 16.
     'econ-2021-hl-q15-b-iii': '2021 HL Q16(a)(iii)',
     # 2021 Ordinary — questions 14 and 16 each absorbed the one after them.
-    'econ-2021-ol-q13-c-ii': '2021 OL Q14(b)(ii)',
+    'econ-2021-ol-q13-c-ii': '2021 OL Q14(b)(ii) — care for the environment',
     'econ-2021-ol-q13-c-iii': '2021 OL Q14(c)(iii)',
     'econ-2021-ol-q14-a-i': '2021 OL Q16(b)(i)',
     'econ-2021-ol-q15-a-i': '2021 OL Q16(c)(i)',
@@ -96,21 +96,32 @@ HAND_CHECKED = {
     'econ-2021-hl-q12-a-ii-pos',      # paper asks for both sides in one sentence
     'econ-2021-hl-q12-a-ii-neg',
     'econ-2021-hl-q13-c-ii',          # paper: "Based on the figure you have calculated"
+    'econ-2021-hl-q11-c-i',           # 2021 HL p18: "(i) Define Internal Economies of Scale." (five words)
     'econ-2021-ol-q11-b-iii',         # paper writes "MNCs", the card writes it out
     'econ-2021-ol-q11-b-i-neg',       # paper offers advantage OR disadvantage
     'econ-2021-ol-q11-b-i-pos',
+    'econ-2021-ol-q11-c-i',           # 2021 OL p12: "Explain the term economic growth." (five words)
+    'econ-2021-ol-q14-b-i',           # 2021 OL p20: "(i) Define the term mixed economy." (five words)
+    'econ-2021-ol-q15-c-i',           # 2021 OL p24: "Explain the concept of scarcity." (five words)
     'econ-2022-hl-q13-c-i',           # paper names the OECD in full over two lines
+    'econ-2022-hl-q12-a-iii',         # 2022 HL p19: "(iii) Explain the term privatisation." (four words)
+    'econ-2022-hl-q11-c-i',           # 2022 HL p16: "(i) Explain the term opportunity cost." (five words)
+    'econ-2022-ol-sa-q1-ii',          # 2022 OL p3: "(ii) Explain the term economic growth." (five words)
+    'econ-2022-ol-sa-q7-a-i',         # 2022 OL p7: "(i) Explain the term fixed costs." (five words)
+    'econ-2022-ol-sa-q10-b',          # 2022 OL p9: "(b) Explain the term National Debt." (five words)
+    'econ-2022-ol-q12-c-i',           # 2022 OL p15: "(i) Explain the term sustainability." (four words)
+    'econ-2022-ol-q16-b-i',           # 2022 OL p26: "(i) Explain the term price inflation." (five words)
     'econ-2023-hl-q11-b-ii',          # paper: "influence geographical mobility"
     'econ-2023-hl-q16-b-ii',          # paper: "challenges the economy will face"
     'econ-2023-hl-q16-b-iii',         # paper: "Describe initiatives the Irish government"
     'econ-2023-ol-q16-a-i',           # paper: "Explain any two of the above terms"
     'econ-2025-ol-q15-a-i',           # paper: "the Irish government and citizens in Ireland"
-    # The card asks a narrower question than the part it comes from: the paper
-    # asks the student to explain price discrimination AND give an example, and
-    # this card is the example alone, because the explanation is printed as the
-    # question head and there is nothing left of it to mark against. Read
-    # against the 2024 Higher paper: question 8(a).
-    'econ-2024-hl-sa-q8-a',
+    'econ-2025-ol-q15-a-i-entrepreneur',  # 2025 OL p23: "Explain the term entrepreneur." (four words)
+    'econ-2025-ol-q15-b-ii',          # 2025 OL p24: "(ii) Explain your answer." (three words)
+    'econ-2024-hl-sa-q5-b',           # 2024 HL p7: "(b) Explain your diagram above." (four words)
+    'econ-2024-hl-q13-b-i',           # 2024 HL p22: "(i) Explain the term globalisation." (four words)
+    'econ-2024-ol-q15-b-ii',          # 2024 OL p23: "(ii) Explain your answer." (three words)
+    'econ-2023-hl-q15-b-i',           # 2023 HL p30: "(i) Explain the term monetary policy." (five words)
 }
 
 

@@ -1,0 +1,1326 @@
+{
+  "subjectId": "economics",
+  "year": 2026,
+  "level": "higher",
+  "lang": "ev",
+  "fileid": "LC034ALP000EV",
+  "status": "independent-census-before-authoring",
+  "completeSubject": false,
+  "reviewedAt": "2026-10-11",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "paperSha256": "4a0fa7325192bf9bf70f4972b2826b554138cd0b520b9ae691f978a2597e6ab9",
+  "schemeSha256": "4cb9c83eebeae537d128b1733fcdae101febeb5c526f6f160b5c537824bd5d68",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q1-a",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q1-b",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "a 2@3 two benefits of specialisation from seven open examples. b one 6 cell: one 1950s characteristic compared with one present-day characteristic; six headed pairs are open examples, both periods required, no published split between the periods.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-4-2"
+      ],
+      "topicReason": "NCCA 1.2 names the principle of specialisation and how firms use it to increase efficiency, so Q1(a) is Scarcity & Choice. Comparing Irish trade then and now is NCCA 5.3 patterns in Irish trade over time."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        7,
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a/events",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q2-a-events",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "a/streaming",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q2-a-streaming",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q2-b",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q2-c",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "boundaryReason": "a 6: printed two-box choice; scheme ticks music events and separately credits a streaming answer, so both stances are routes (6 each, counted once). Answer either b 2@3 OR c 6: both alternatives carded.",
+      "canonicalNodeIds": [
+        "economics-1-4",
+        "economics-1-5"
+      ],
+      "topicReason": "PED comparison is NCCA 2.2 elasticity (deck 2.5). Objectives other than profit maximisation and near-zero marginal cost are firm cost/revenue topics (NCCA 2.3, deck 2.6)."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5,
+        6
+      ],
+      "schemePages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "tasks": [
+        {
+          "key": "a/agree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q3-a-agree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/disagree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q3-a-disagree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q3-b",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q3-c",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "a single 6 cell with AGREE and DISAGREE lists: two stance routes, counted once. Answer either b 6 (one reason) OR c 2@3: both carded.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-2-2",
+        "economics-0-2"
+      ],
+      "topicReason": "A public-transport subsidy is government intervention (NCCA 2.4). Noise externality is market failure (NCCA 3.3). Reducing urban-rural inequality is social sustainability/inequality (NCCA 1.3)."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6,
+        7
+      ],
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q4-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q4-b",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q4-c",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "a 6 one reason from seven. Answer either b 2@3 OR c 2@3: both carded. Open example pools, no finite selection.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-1-3",
+        "economics-1-1"
+      ],
+      "topicReason": "Lower LDC wages are wage differentials (NCCA 3.2). Measures to raise demand are government intervention (NCCA 2.4). App benefits for consumers are consumer outcomes (NCCA 2.2)."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        15,
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a/rational",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q5-a-rational",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "a/irrational",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q5-a-irrational",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q5-b",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "a single 6 cell, scheme gives Rational and Irrational justification lists: two stance routes counted once. b 2@3 two other assumptions from three open headings.",
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "topicReason": "Rational behaviour and consumer assumptions are NCCA 2.2 (critique the rationality assumption)."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        17,
+        18,
+        19
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q6-a",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q6-b",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "a two separately priced asks in one lettered part: explain globalisation 3 + one benefit to a company 3, kept as one card with fixed 3+3 rows. b 2@3 benefits of theme parks within a country.",
+      "canonicalNodeIds": [
+        "economics-4-1",
+        "economics-3-5"
+      ],
+      "topicReason": "Globalisation and investing abroad is NCCA 5.2. Benefits of theme parks to a country (employment, invisible exports, multiplier, regional development) are growth outcomes (deck 4.6)."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        10
+      ],
+      "schemePages": [
+        20,
+        21,
+        22
+      ],
+      "tasks": [
+        {
+          "key": "a/subsidy",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q7-a-subsidy",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/tax",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q7-a-tax",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/yes",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q7-b-yes",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b/no",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q7-b-no",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "a printed subsidy/tax tick boxes, scheme justifies both: two routes 6 each (not caught by the directive scan; recorded here). b EKC Yes (relevant)/No (not relevant): two routes 6 each.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-0-2"
+      ],
+      "topicReason": "Fiscal tools to change packaging behaviour are government intervention (NCCA 2.4). The EKC growth-environment relationship is sustainability (NCCA 1.3)."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        11
+      ],
+      "schemePages": [
+        23,
+        24
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q8-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q8-b",
+          "topicId": "economics-1-0"
+        }
+      ],
+      "boundaryReason": "a 2@3 two discouraging factors from eleven open examples. b 2@3 two effects on other local businesses from six.",
+      "canonicalNodeIds": [
+        "economics-2-1",
+        "economics-1-0"
+      ],
+      "topicReason": "Factors affecting entry to farming work are labour supply (NCCA 3.2). Input-cost effects passing through local markets are market economy effects (NCCA 2.1)."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        12
+      ],
+      "schemePages": [
+        25,
+        26
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q9-a",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q9-b",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "a one 6 cell for calculation and comment together (97.3%), no published split. b 2@3 two concerns from seven.",
+      "canonicalNodeIds": [
+        "economics-3-5"
+      ],
+      "topicReason": "Comparing GDP growth between regions and its concerns is economic growth (deck 4.6, NCCA 4.1 data patterns)."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        13
+      ],
+      "schemePages": [
+        26,
+        27,
+        28
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q10-a",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-sa-q10-b",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "a 2@3 effects of higher prices from thirteen. b 2@3 unequal effects of food price rises from eight.",
+      "canonicalNodeIds": [
+        "economics-3-3"
+      ],
+      "topicReason": "Consequences of a higher price level are NCCA 4.4 (consequences of changes in the price level)."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "schemePages": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q11-a-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q11-a-ii",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "b/i/diagram",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q11-b-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i/explanation",
+          "marks": 9,
+          "cardId": "econ-2026-hl-q11-b-i-explanation",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q11-b-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i/calculation",
+          "marks": 7,
+          "cardId": "econ-2026-hl-q11-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/i/meaning",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q11-c-i-meaning",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii/agree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q11-c-ii-agree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii/disagree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q11-c-ii-disagree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q11-c-iii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Ten tasks; 75 with one stance. a(i) 6 one measure; a(ii) 2@6. b(i) diagram 12 (eleven labels, no per-label tariff) and explanation 9 are separately priced, split as in 2024 Q14(b)(i). b(ii) required headings Choice of gyms 4 + Cost of membership 4. c(i) workings 7 (+1.8) and explanation 5 separately priced, split. c(ii) AGREE 6 OR DISAGREE 6 stance routes. c(iii) one 10 cell for PED meaning and measure, no published split.",
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-2-2",
+        "economics-2-0",
+        "economics-1-4"
+      ],
+      "topicReason": "Measures to raise participation and society-wide benefits are intervention and positive externalities (NCCA 2.4, 3.3). Monopolistic competition and oligopoly comparisons are NCCA 3.1. YED and PED are NCCA 2.2 (deck 2.5). Tax relief to change a market outcome is NCCA 2.4."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "schemePages": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "tasks": [
+        {
+          "key": "a/i/imports",
+          "marks": 4,
+          "cardId": "econ-2026-hl-q12-a-i-imports",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/i/exports",
+          "marks": 4,
+          "cardId": "econ-2026-hl-q12-a-i-exports",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii/benefit",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q12-a-ii-benefit",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/ii/challenge",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q12-a-ii-challenge",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q12-a-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q12-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q12-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q12-b-iii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/i/calculation",
+          "marks": 7,
+          "cardId": "econ-2026-hl-q12-c-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i/influence",
+          "marks": 4,
+          "cardId": "econ-2026-hl-q12-c-i-influence",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/ii/option-a",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q12-c-ii-option-a",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/ii/option-b",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q12-c-ii-option-b",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q12-c-iii",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Thirteen routes; 75 with one route per choice. a(i) imports OR exports trend 4 each (both scheme trends printed). a(ii) benefit or challenge stance 8 each (one 8 cell, two lists). a(iii) dumping 6; b(i) tariff 6; b(ii) 2@6; b(iii) required benefit 6 + challenge 6. c(i) workings 7 (42.7%) and influence 4 separately priced, split. c(ii) Option A 6 OR Option B 6 (not caught by the directive scan; recorded here). c(iii) required employment 5 + prices 5.",
+      "canonicalNodeIds": [
+        "economics-4-2",
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "topicReason": "Trade values, dumping, tariffs and protectionism are NCCA 5.3. Top-three concentration and price influence are NCCA 3.1 (concentration of market power). Carbon tax versus subsidies are government intervention (NCCA 2.4). Ending ESB Networks monopoly is market structure/competition (NCCA 3.1)."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "schemePages": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q13-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q13-a-ii",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q13-b-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii",
+          "marks": 16,
+          "cardId": "econ-2026-hl-q13-b-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/iii",
+          "marks": 4,
+          "cardId": "econ-2026-hl-q13-b-iii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q13-c-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q13-c-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/iii/agree",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q13-c-iii-agree",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/iii/disagree",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q13-c-iii-disagree",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "boundaryReason": "Nine routes; 75 with one stance. a(i) 6; a(ii) 2@6. b(i) 2@6: fixed costs (meaning+example) 6 and variable costs (meaning+example) 6, both required; no published meaning/example split. b(ii) one 16 cell for the TFC/TVC/TC diagram. b(iii) 4 = EUR25. c(i) required benefit 5 + challenge 5. c(ii) 2@5. c(iii) Agree 5 OR Disagree 5.",
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-3-4",
+        "economics-1-5",
+        "economics-0-1",
+        "economics-2-1",
+        "economics-1-3"
+      ],
+      "topicReason": "ECB rate decisions are NCCA 4.4; demand for credit is NCCA 4.5. Fixed/variable/total cost curves and price for target profit are NCCA 2.3 (deck 2.6). Benefit/challenge evaluation of town-centre revitalisation is a cost-benefit judgement (NCCA 1.2). EU free movement and construction labour supply is NCCA 3.2. Compulsory purchase is government intervention (NCCA 2.4)."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "schemePages": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q14-a-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q14-a-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 10,
+          "cardId": "econ-2026-hl-q14-a-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q14-b-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q14-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii/agree",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q14-b-iii-agree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii/disagree",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q14-b-iii-disagree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q14-c-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q14-c-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2026-hl-q14-c-iii",
+          "topicId": "economics-1-0"
+        }
+      ],
+      "boundaryReason": "Ten routes; 75 with one stance. a(i) 6 NFIA = -46.4bn; a(ii) 2@5; a(iii) required economic 5 + social 5. b(i) one 8 cell for four circular-flow terms, no per-term split. b(ii) imports meaning 4 + 2@4 factors in one card. b(iii) Agree 5 OR Disagree 5. c(i)-(iii) one 8 cell each for diagram and explanation together, so each event is one complete card.",
+      "canonicalNodeIds": [
+        "economics-3-0",
+        "economics-4-2",
+        "economics-3-1",
+        "economics-1-0"
+      ],
+      "topicReason": "NFIA, GDP limitations, hidden economy and circular flow are NCCA 4.1. Factors influencing imports are NCCA 5.3. Paying household arrears from public funds is fiscal (NCCA 4.2). Equilibrium changes from demand/supply shifts are NCCA 2.1."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "schemePages": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q15-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q15-b-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii/agree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-b-iii-agree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/iii/disagree",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-b-iii-disagree",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 9,
+          "cardId": "econ-2026-hl-q15-c-i",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c/ii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q15-c-ii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c/iii/narrow",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-c-iii-narrow",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c/iii/widen",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q15-c-iii-widen",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "boundaryReason": "Eleven routes; 75 with one route per choice. a(i) 2@6 current (meaning+example) and capital (meaning+example), both required, no meaning/example split. a(ii) 6; a(iii) 6; b(i) 6; b(ii) 2@6; b(iii) Agree 6 OR Disagree 6. c(i) labour productivity 5 + foreign example 2 + domestic example 2. c(ii) required reason 6 + strategy 6. c(iii) narrow/widen routes 6 each.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-5"
+      ],
+      "topicReason": "Current/capital spending, targeted supports, tax base and VAT are NCCA 4.2. Labour productivity and AI effects on productivity gaps are growth determinants (deck 4.6, NCCA 5.1)."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        34,
+        35,
+        36,
+        37
+      ],
+      "schemePages": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 4,
+          "cardId": "econ-2026-hl-q16-a-i",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 7,
+          "cardId": "econ-2026-hl-q16-a-ii",
+          "topicId": "economics-1-0"
+        },
+        {
+          "key": "a/iii",
+          "marks": 14,
+          "cardId": "econ-2026-hl-q16-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 5,
+          "cardId": "econ-2026-hl-q16-b-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/ii",
+          "marks": 7,
+          "cardId": "econ-2026-hl-q16-b-ii",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "b/iii",
+          "marks": 14,
+          "cardId": "econ-2026-hl-q16-b-iii",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q16-c-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 6,
+          "cardId": "econ-2026-hl-q16-c-ii",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "c/iii",
+          "marks": 12,
+          "cardId": "econ-2026-hl-q16-c-iii",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "boundaryReason": "Nine tasks totalling 75. a(i) diagram 4; a(ii) 7; a(iii) 2@7. b(i) 5 France share; b(ii) 7; b(iii) 2@7. c(i) 6; c(ii) 6 PPF inward shift with explanation; c(iii) required economic 6 + social 6.",
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-3-1",
+        "economics-4-2",
+        "economics-3-5",
+        "economics-0-1",
+        "economics-4-0"
+      ],
+      "topicReason": "Hotel-room equilibrium with fixed short-run supply is NCCA 2.1. Tourist-tax revenue use is fiscal (NCCA 4.2). Visitor shares and exchange-rate effects are NCCA 5.3. Airports and balanced regional development are growth (deck 4.6). PPF is scarcity and choice (NCCA 1.2). Effects of aid cuts on an LDC are NCCA 5.1."
+    }
+  ],
+  "selections": [
+    {
+      "page": 2,
+      "text": "Answer 4 out of 6 questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Answer 8 out of 10 questions from this section.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Questions 2, 3 and 4 contain an internal choice.",
+      "classification": "finite-route",
+      "reason": "Q2, Q3 and Q4 each offer (b) OR (c); every alternative is its own carded task."
+    },
+    {
+      "page": 2,
+      "text": "Write your answers in blue or black pen.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction."
+    },
+    {
+      "page": 2,
+      "text": "end of the booklet. Label any such extra work clearly with the question number and part.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instruction about extra pages."
+    },
+    {
+      "page": 3,
+      "text": "Answer 8 out of 10 questions.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 4,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 4,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 4,
+      "text": "demand? Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q2(a) two boxes; the scheme ticks music events but separately credits a streaming answer, so both are routes."
+    },
+    {
+      "page": 5,
+      "text": "(b) Irish Rail has imposed €100 fines for passengers who play videos or music without",
+      "classification": "not-a-task-selection",
+      "reason": "Stem wording (\"or\"), not a selection."
+    },
+    {
+      "page": 5,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 5,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 5,
+      "text": "Do you agree or disagree with this proposal?",
+      "classification": "finite-route",
+      "reason": "Printed agree/disagree stance; both sides are carded routes."
+    },
+    {
+      "page": 6,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 7,
+      "text": "Answer either (b) or (c)",
+      "classification": "finite-route",
+      "reason": "Printed alternative pair; (b) and (c) are separate carded tasks, counted once in the question total."
+    },
+    {
+      "page": 7,
+      "text": "OR",
+      "classification": "finite-route",
+      "reason": "Separator between the printed (b)/(c) alternatives."
+    },
+    {
+      "page": 8,
+      "text": "FIND THE ITEMS YOU SELECT KLARNA PAY IN 30 DAYS",
+      "classification": "not-a-task-selection",
+      "reason": "Text inside the Klarna graphic."
+    },
+    {
+      "page": 8,
+      "text": "LIKE, ADD THEM PAYMENT METHOD OR 3 INTEREST",
+      "classification": "not-a-task-selection",
+      "reason": "Text inside the Klarna graphic."
+    },
+    {
+      "page": 8,
+      "text": "online purchases in Ireland. These agreements allow consumers to either pay upfront or to spread",
+      "classification": "not-a-task-selection",
+      "reason": "Stem description of BNPL, not a selection."
+    },
+    {
+      "page": 8,
+      "text": "or irrational consumer behaviour?",
+      "classification": "finite-route",
+      "reason": "Q5(a) rational/irrational stance; the scheme justifies both, two routes."
+    },
+    {
+      "page": 10,
+      "text": "Ireland generates more plastic packaging waste per person than any other EU country.",
+      "classification": "not-a-task-selection",
+      "reason": "Stem statistic (\"any other\"), not a selection."
+    },
+    {
+      "page": 10,
+      "text": "Yes (relevant) No (not relevant)",
+      "classification": "finite-route",
+      "reason": "Q7(b) printed Yes/No; scheme justifies both, two routes."
+    },
+    {
+      "page": 11,
+      "text": "(a) Farming may be seen as an unattractive career choice for many younger people in Ireland",
+      "classification": "not-a-task-selection",
+      "reason": "Stem wording (\"choice\"), not a selection."
+    },
+    {
+      "page": 14,
+      "text": "Answer 4 out of 6 questions",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all independently practicable tasks remain in census."
+    },
+    {
+      "page": 16,
+      "text": "Choice of gyms:",
+      "classification": "required-headings",
+      "reason": "Q11(b)(ii) answer box heading; both printed headings are required in one response."
+    },
+    {
+      "page": 16,
+      "text": " Choice of gyms",
+      "classification": "required-headings",
+      "reason": "Q11(b)(ii) bullet heading; both printed headings are required in one response."
+    },
+    {
+      "page": 17,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 17,
+      "text": "Do you agree or disagree, that gym memberships should receive tax relief?",
+      "classification": "finite-route",
+      "reason": "Q11(c)(ii) agree/disagree routes."
+    },
+    {
+      "page": 17,
+      "text": "Indicate your opinion below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q11(c)(ii) stance tick boxes."
+    },
+    {
+      "page": 18,
+      "text": "(i) Outline the overall trend in the value of Ireland’s total goods imports or total goods",
+      "classification": "finite-route",
+      "reason": "Q12(a)(i) imports OR exports trend; both printed in the scheme, two routes."
+    },
+    {
+      "page": 18,
+      "text": "(ii) In your opinion, do the changes, shown in the chart above, bring benefits or",
+      "classification": "finite-route",
+      "reason": "Q12(a)(ii) benefit or challenge stance; scheme lists both, two routes."
+    },
+    {
+      "page": 25,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 25,
+      "text": "Do you agree or disagree with local authorities being allowed to compulsorily buy derelict",
+      "classification": "finite-route",
+      "reason": "Q13(c)(iii) agree/disagree routes."
+    },
+    {
+      "page": 28,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 28,
+      "text": "Do you agree or disagree with this proposal?",
+      "classification": "finite-route",
+      "reason": "Q14(b)(iii) agree/disagree routes."
+    },
+    {
+      "page": 31,
+      "text": "Agree Disagree",
+      "classification": "finite-route",
+      "reason": "Printed two-box stance; the scheme lists both sides, so each stance is its own route at the full tariff."
+    },
+    {
+      "page": 31,
+      "text": "Do you agree or disagree with this VAT reduction for some of the hospitality sector?",
+      "classification": "finite-route",
+      "reason": "Q15(b)(iii) agree/disagree routes."
+    },
+    {
+      "page": 33,
+      "text": "In your opinion, will AI narrow or widen the productivity gap between the domestic",
+      "classification": "finite-route",
+      "reason": "Q15(c)(iii) narrow/widen routes; the scheme lists both."
+    },
+    {
+      "page": 33,
+      "text": "Indicate your choice below by ticking () the relevant box and justify your choice.",
+      "classification": "finite-route",
+      "reason": "Q15(c)(iii) stance tick boxes."
+    },
+    {
+      "page": 37,
+      "text": "Clearly label any changes you make. Explain your answer.",
+      "classification": "not-a-task-selection",
+      "reason": "Drawing instruction (\"any changes\"), not a selection."
+    },
+    {
+      "page": 40,
+      "text": "Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "The Commission does not accept liability for any infringement of third-party rights arising from unauthorised",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "This examination paper may contain text or images for which the State Examinations Commission is not the",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    },
+    {
+      "page": 40,
+      "text": "distribution or use of this examination paper.",
+      "classification": "not-a-task-selection",
+      "reason": "Copyright notice on the back cover."
+    }
+  ],
+  "reviewNote": "Census drafted from the paired visual sweep before any 2026 card existed: all 40 paper and 88 scheme pages viewed. 90 routes (28 Section A + 62 Section B), 44 raw directive lines classified. Scheme PDF pp83-86 research rubric/brief, p87 blank, p88 back cover: no written-paper asks.",
+  "externalClarifications": [],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf"
+}

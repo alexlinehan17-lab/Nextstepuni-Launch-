@@ -516,7 +516,8 @@ const MarkRowView: React.FC<{
   onPick: (id: string, optionIndex: number) => void;
   /** Options already claimed in a SIBLING menu on this card. */
   takenElsewhere?: ReadonlySet<string>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere }) => {
+  wholeResponse?: boolean;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
@@ -701,10 +702,15 @@ const MarkRowView: React.FC<{
         </MotionSpan>
 
         <span>
+          {wholeResponse && row.contextNote && (
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+              {row.contextNote}
+            </span>
+          )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2 }}>
-            {row.verbatim}
+          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+            {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
@@ -713,7 +719,7 @@ const MarkRowView: React.FC<{
               </span>
             ) : null}
           </span>
-          {row.contextNote && (
+          {!wholeResponse && row.contextNote && (
             <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
               {row.contextNote}
             </span>
@@ -2283,6 +2289,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     );
     return selected ? { ...baseAssessmentCard, rows: selected.rows } : baseAssessmentCard;
   }, [answerVariantId, baseAssessmentCard]);
+  const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
+    && assessmentCard.tariffModel.kind === 'questionTotal');
   useEffect(() => {
     setAnswerVariantId(null);
   }, [baseAssessmentCard?.id]);
@@ -2988,7 +2996,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3006,10 +3014,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     <>
                       <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
                         <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
-                          Select the points you actually got.
+                          {wholeResponseAssessment
+                            ? 'Check your complete response.' : 'Select the points you actually got.'}
                         </p>
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-                          Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.
+                          {wholeResponseAssessment
+                            ? 'Compare your answer with the guidance and examples below. Tick each part you completed, then choose your grade for the full response.'
+                            : 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'}
                         </p>
                       </div>
 
@@ -3019,6 +3030,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                           <MarkRowView
                             key={id}
                             row={row} id={id} index={i}
+                            wholeResponse={wholeResponseAssessment}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
                             blocked={
@@ -3047,9 +3059,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       )}
                       {assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          The paper prices this question at {assessmentCard.totalMarks} marks in total,
-                          but the scheme does not divide those marks between its parts — so no invented
-                          per-point values are shown.
+                          Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
+                          Check the required parts above, then choose how securely you answered.
                         </p>
                       )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
@@ -3164,6 +3175,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
+                // Whole-response criteria can be paragraphs long. This is a
+                // summary; the full wording remains in the scheme above.
+                display: '-webkit-box', WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: 3, overflow: 'hidden',
               }}>
                 {left === 0 ? (
                   <span style={{
