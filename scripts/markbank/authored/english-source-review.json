@@ -4725,6 +4725,28 @@
       "attribution": "And Yet the Books — Czesław Miłosz, as reproduced in the SEC 2016 paper.",
       "questionSha256": "b9cb2097728a71a5e0c73cb10a33a2d39fdc86dc75e2f65ab72d55e7aba61765",
       "reason": "Paper PDF6 prints the instruction (“Read the following poem by Czesław Miłosz and answer either Question 1 or Question 2”), the title, the whole 16-line poem and the byline above the questions; visually verified."
+    },
+    "english-2016-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Mother, Washing Dishes",
+      "pages": [
+        10
+      ],
+      "attribution": "Mother, Washing Dishes — Susan Meyers, as reproduced in the SEC 2016 paper.",
+      "questionSha256": "16b76698a0d1c4b549f4deaff3c2c022eeb73a29ea688c0a5a7c8b32485601aa",
+      "reason": "Paper PDF10 prints the introduction (Susan Meyers remembers her mother’s willingness to wash dishes), the instruction, the title, both stanzas and the byline above both questions; visually verified. PDF11 begins Prescribed Poem A and is excluded."
+    },
+    "english-2016-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Mother, Washing Dishes",
+      "pages": [
+        10
+      ],
+      "attribution": "Mother, Washing Dishes — Susan Meyers, as reproduced in the SEC 2016 paper.",
+      "questionSha256": "58ad53d4d4590cb249594f8794ced4974af0e41d742357a3c7c1ef9491c50b33",
+      "reason": "Paper PDF10 prints the introduction (Susan Meyers remembers her mother’s willingness to wash dishes), the instruction, the title, both stanzas and the byline above both questions; visually verified. PDF11 begins Prescribed Poem A and is excluded."
     }
   }
 }

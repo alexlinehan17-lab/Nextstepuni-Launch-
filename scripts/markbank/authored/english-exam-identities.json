@@ -1471,7 +1471,10 @@
       "observedHeading": "Poetry A · Filling Station",
       "paperPage": 11,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
-      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "sourcePages": [
+        11
+      ]
     },
     "english-2016-ol-p2-prescribed-b": {
       "topicId": "english-11-2",
@@ -1481,7 +1484,10 @@
       "paperPage": 13,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
       "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
-      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        13
+      ]
     },
     "english-2016-ol-p2-prescribed-c": {
       "topicId": "english-11-61",
@@ -1491,7 +1497,10 @@
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
       "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
-      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        14
+      ]
     },
     "english-2016-ol-p2-prescribed-d": {
       "topicId": "english-11-42",
@@ -1500,7 +1509,10 @@
       "observedHeading": "Poetry D · Ozymandias",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
-      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2"
+      "sourceSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2017-hl-p2-single-a": {
       "topicId": "english-12-43",

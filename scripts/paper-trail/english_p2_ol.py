@@ -261,8 +261,10 @@ def locate_scheme_cards(cards, paper, scheme, year):
         2012: {"Comparative A": (29, 0.5922), "Comparative B": (31, 0.418)},
         2014: {"Single Text D": (17, 0.086), "Comparative A": (29, 0.7079)},
         # 2016: "A RELATIONSHIPS" sits at y 0.332 on PDF37; matching began at
-        # the (a)(ii) award and dropped (a)(i) (viewed 2026-10-11).
-        2016: {"Comparative A": (36, 0.332)},
+        # the (a)(ii) award and dropped (a)(i) (viewed 2026-10-11). "B SOCIAL
+        # SETTING" sits at y 0.1754 on PDF39; matching began B above A's own
+        # Q2(b) "Discrete Criteria ex 40" box (viewed 2026-10-14).
+        2016: {"Comparative A": (36, 0.332), "Comparative B": (38, 0.1754)},
         # 2018: the centred "B SOCIAL SETTING" heading sits mid-page on PDF40,
         # so the detector started Comparative B at its Q1(b) on PDF41 and
         # Comparative A's crop swallowed B's Q1(a)(i)/(ii) (viewed 2026-10-11).

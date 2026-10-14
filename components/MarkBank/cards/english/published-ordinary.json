@@ -169,6 +169,17 @@
    "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b"
   },
   {
+   "paperId": "english-2016-ol-p2",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 92,
+   "cards": 92,
+   "printedDuplicates": 0,
+   "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+   "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b"
+  },
+  {
    "paperId": "english-2015-ol-p1",
    "year": 2015,
    "level": "ordinary",
@@ -2108,7 +2119,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1527,
+ "cardCount": 1619,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -34244,6 +34255,3336 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q1",
+   "questionText": "Give two pieces of evidence from the novel to show that life is sometimes difficult for Eve Malone.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q2(a)",
+   "questionText": "Do you think that Simon Westward has a mainly positive or a mainly negative impact on Nan Mahon? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q2(b)",
+   "questionText": "Name a character from the novel that you think would disapprove if he or she knew about Nan and Simon’s secret relationship. Explain why you think this character would disapprove of this relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q3(i)",
+   "questionText": "‘Family is important in the novel Circle of Friends.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q3(ii)",
+   "questionText": "You have been asked to recommend a novel to your school Book Club. Explain why you would or would not recommend Circle of Friends to the Book Club readers. Your recommendation should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-a-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text A Q3(iii)",
+   "questionText": "Imagine that you are Mother Frances. Write two diary entries: one dealing with Eve Malone’s arrival in the convent as a child, and another about your hopes for Eve’s future after she moves to Dublin. Your diary entries should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q1",
+   "questionText": "Give two pieces of evidence from the novel to show that life is sometimes difficult for Hareton Earnshaw.",
+   "totalMarks": 10,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q2(a)",
+   "questionText": "Do you think that Catherine Earnshaw has a mainly positive or a mainly negative impact on Heathcliff? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q2(b)",
+   "questionText": "Name a character from the novel that disapproves of the relationship between Heathcliff and Catherine Earnshaw. Explain why this character disapproves of this relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q3(i)",
+   "questionText": "‘Social class is important in the novel Wuthering Heights.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    17,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q3(ii)",
+   "questionText": "You have been asked to recommend a novel to your school Book Club. Explain why you would or would not recommend Wuthering Heights to the Book Club readers. Your recommendation should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-b-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text B Q3(iii)",
+   "questionText": "Imagine that you are Edgar Linton. Write two diary entries: one dealing with your wedding to Catherine Earnshaw and another giving your reaction to Heathcliff’s return. Your diary entries should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q1",
+   "questionText": "Give two pieces of evidence from the novel to show that life is sometimes difficult for Jay Gatsby.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q2(a)",
+   "questionText": "Do you think that Tom Buchanan has a mainly positive or a mainly negative impact on Myrtle Wilson? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q2(b)",
+   "questionText": "Name a character from the novel that you think would disapprove if he or she knew about Tom and Myrtle’s relationship. Explain why you think this character would disapprove of this relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q3(i)",
+   "questionText": "‘Loyalty is important in the novel The Great Gatsby.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q3(ii)",
+   "questionText": "You have been asked to recommend a novel to your school Book Club. Explain why you would or would not recommend The Great Gatsby to the Book Club readers. Your recommendation should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-c-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text C Q3(iii)",
+   "questionText": "Imagine that you are Nick Carraway. Write two diary entries: one giving the impression you form when you first meet Jay Gatsby and another about Gatsby’s death. Your diary entries should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    20,
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q1",
+   "questionText": "Give two pieces of evidence from the play to show that life is sometimes difficult for Manus O’Donnell.",
+   "totalMarks": 10,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q2(a)",
+   "questionText": "Do you think that Lieutenant Yolland has a mainly positive or a mainly negative effect on Maire? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q2(b)",
+   "questionText": "Name a character from Translations that you think would disapprove of the relationship between Maire and Yolland. Explain why you think he or she would disapprove of this relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q3(i)",
+   "questionText": "‘Language is important in the play Translations.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q3(ii)",
+   "questionText": "You have been asked to recommend a play to be performed by the Transition Year class in your school. Explain why you would or would not recommend Translations for this purpose. Your recommendation should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    22,
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-d-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text D Q3(iii)",
+   "questionText": "Imagine that you are Captain Lancey. Write two diary entries: one giving your first impressions on arriving in Ireland and another about Lieutenant Yolland’s disappearance and your reaction to this event. Your diary entries should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-50",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Translations (Brian Friel)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q1",
+   "questionText": "Give two pieces of evidence from the play to show that life is sometimes difficult for Gert Polpin.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q2(a)",
+   "questionText": "Do you think that Maggie Polpin has a mainly positive or a mainly negative impact on her son, Maurice? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q2(b)",
+   "questionText": "Name a character from the play who you think disapproves of Maggie’s behaviour towards Maurice. Explain why you think this character disapproves of Maggie’s behaviour.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q3(i)",
+   "questionText": "‘Family is important in the play Big Maggie.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    24,
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q3(ii)",
+   "questionText": "You have been asked to recommend a play to be performed by the Transition Year class in your school. Explain why you would or would not recommend Big Maggie for this purpose. Your recommendation should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-e-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text E Q3(iii)",
+   "questionText": "Imagine that you are Mary Madden. Write two diary entries: one dealing with your encounter with Maggie Polpin in her shop and another about your wedding to Maurice Polpin. Your diary entries should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q1",
+   "questionText": "Give two pieces of evidence from the text to show that life is sometimes difficult for Jack Keyes Byrne.",
+   "totalMarks": 10,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q2(a)",
+   "questionText": "Do you think that Mr Drumm has a mainly positive or a mainly negative impact on Jack Keyes Byrne? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q2(b)",
+   "questionText": "Name a character from Home Before Night that you find amusing. Explain why you find this character amusing.",
+   "totalMarks": 10,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    26,
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q3(i)",
+   "questionText": "‘Relationships are important in the book Home Before Night.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q3(ii)",
+   "questionText": "You have been asked to recommend a book to your school Book Club. Explain why you would or would not recommend Home Before Night to the Book Club readers. Your recommendation should demonstrate your knowledge of the book.",
+   "totalMarks": 30,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-f-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text F Q3(iii)",
+   "questionText": "Imagine that you are Jack’s adoptive father. Write two diary entries: one dealing with the problems caused by the family’s dog, and another about your meeting with Sister Ita at the Loreto Convent. Your diary entries should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-49",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Home Before Night (Hugh Leonard)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q1",
+   "questionText": "Give two pieces of evidence from the novel to show that life is sometimes difficult for Billy Winters.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q2(a)",
+   "questionText": "Do you think that Liam Ward has a mainly positive or a mainly negative impact on Beth Winters? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    28,
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q2(b)",
+   "questionText": "Name a character from the novel that you think would disapprove if he or she knew about the relationship between Beth and Liam. Explain why you think this character would disapprove of this relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q3(i)",
+   "questionText": "‘Loyalty is important in the novel Death and Nightingales.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q3(ii)",
+   "questionText": "You have been asked to recommend a novel to your school Book Club. Explain why you would or would not recommend Death and Nightingales to the Book Club readers. Your recommendation should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-g-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text G Q3(iii)",
+   "questionText": "Imagine that you are Mercy Boyle. Write two diary entries: one about your day-to-day life in the Winters’ household and another giving your reaction when Billy Winters tells you to leave his house. Your diary entries should demonstrate your knowledge of the novel, Death and Nightingales.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q1",
+   "questionText": "Give two pieces of evidence from the play to show that life is sometimes difficult for Nora Clitheroe.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q2(a)",
+   "questionText": "Do you think that his involvement with the Irish Citizen Army has a mainly positive or a mainly negative impact on Jack Clitheroe? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q2(b)",
+   "questionText": "Name a character from The Plough and the Stars that you think disapproves of the actions of the Irish Citizen Army in the play. Explain why you think he or she disapproves.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q3(i)",
+   "questionText": "‘Loyalty is important in the play The Plough and the Stars.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q3(ii)",
+   "questionText": "You have been asked to recommend a play to be performed by the Transition Year class in your school. Explain why you would or would not recommend The Plough and the Stars for this purpose. Your recommendation should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-h-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text H Q3(iii)",
+   "questionText": "Imagine that you are Mrs Gogan. Write two diary entries: one dealing with the death of your daughter, Mollser, and another giving your reaction to the 1916 Rising. Your diary entries should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q1",
+   "questionText": "Give two pieces of evidence from the play to show that life is sometimes difficult for Gloucester.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q2-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q2(a)",
+   "questionText": "Do you think that Lear has a mainly positive or a mainly negative impact on his daughter, Cordelia? Give one reason for your answer.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q2(b)",
+   "questionText": "Name a character from the play that disapproves of Lear’s behaviour towards Cordelia. Explain why this character disapproves of Lear’s behaviour.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q3-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q3(i)",
+   "questionText": "‘Loyalty is important in the play King Lear.’ Do you agree or disagree with the above statement? Give reasons for your answer, demonstrating your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q3-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q3(ii)",
+   "questionText": "You have been asked to recommend a play to be performed by the Transition Year class in your school. Explain why you would or would not recommend King Lear for this purpose. Your recommendation should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-single-i-q3-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Single Text I Q3(iii)",
+   "questionText": "Imagine that you are Cordelia’s husband, the King of France. Write two diary entries: one dealing with your marriage to Cordelia, and another giving your reaction to her death. Your diary entries should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q1-a-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Identify a relationship in one of the three texts on your comparative course and explain how one significant event in the text affected this relationship. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q1-a-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "In the case of at least one other text on your comparative course, identify a relationship and explain how one significant event in the text(s) affected your chosen relationship(s). Support your answer with reference to the text(s).",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare how successful you find the relationships you discussed in at least two of the texts you referred to in part 1.(a) above. Support your answer with reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    37,
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q2-a-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Identify a relationship in one of the three texts on your comparative course, and describe at least one way in which you think the characters in that relationship are similar to or different from each other. Use one or more key moments from the text to support your answer.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q2-a-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Identify a relationship, from at least one other text on your comparative course, and describe at least one way in which you think the characters in the relationship(s) are similar to or different from each other. Use one or more key moments from the text(s) to support your answer.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-a-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative A Q2(b)",
+   "questionText": "Compare how successful you find the relationships you discussed in at least two of the texts you referred to in part 2.(a) above. Support your answer with reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    38,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q1-a-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Inequality or injustice can often feature in the social settings of texts. Write about at least one example of inequality or injustice from one of the texts on your comparative course. Use one or more key moments from the text to support your answer.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q1-a-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Write about at least one example of inequality or injustice from at least one other text you have studied for your comparative course. Use one or more key moments from the text(s) to support your answer.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Compare how attractive you find the social settings you encounter in at least two of the texts you referred to in part 1.(a) above. Support your answer with reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q2-a-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Describe at least one way in which you find the social setting in one of the three texts you have studied for your comparative course similar to or different from the world in which you live. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q2-a-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Describe at least one way in which you find the social setting(s) in at least one other text you have studied for your comparative course similar to or different from the world in which you live. Support your answer with reference to the text(s).",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-comparative-b-q2-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Comparative B Q2(b)",
+   "questionText": "Compare how attractive you find the social settings you encounter in at least two of the texts you referred to in part 2.(a) above. Support your answer with reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-unseen-q1",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "From your reading of stanza one, do you think that the words used by the poet make the task of washing dishes seem attractive or unattractive? Refer to the first stanza in support of your answer.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Mother, Washing Dishes",
+    "pages": [
+     10
+    ],
+    "attribution": "Mother, Washing Dishes — Susan Meyers, as reproduced in the SEC 2016 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-unseen-q2",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Based on your reading of stanza two, do you think that the mother in the poem enjoyed the time she spent washing dishes? Explain your answer with reference to the second stanza.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Mother, Washing Dishes",
+    "pages": [
+     10
+    ],
+    "attribution": "Mother, Washing Dishes — Susan Meyers, as reproduced in the SEC 2016 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q1-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Describe, in your own words, the scene at the filling station created by the poet in this poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "Identify a line or phrase from this poem that you enjoy and explain why you enjoy it.",
+   "totalMarks": 10,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q1-c",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q1(c)",
+   "questionText": "In your opinion, is Bishop mainly positive or mainly negative about what she sees at the filling station? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q2-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "Do you like or dislike this poem? In your response identify at least two aspects of the poem that influence your view. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q2-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Imagine that you are one of the sons in the poem. Write a letter to Elizabeth Bishop in which you respond to what she wrote about your home and your family in the poem, “Filling Station”. Refer to the poem in your answer.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-a-q2-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Write a piece about the language in this poem, beginning with one of the following phrases: – I find the language in this poem interesting and easy to understand … – I find the language in this poem challenging and unusual …",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Filling Station — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Filling Station",
+    "pages": [
+     11
+    ],
+    "attribution": "Filling Station — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43,
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q1-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Describe, in your own words, the funeral scene created by the poet in this poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "Select a line or phrase from the poem that made an impact on you and explain why it made an impact on you.",
+   "totalMarks": 10,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q1-c",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q1(c)",
+   "questionText": "In your opinion, is the poet mainly optimistic or mainly pessimistic in this poem? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q2-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "Do you like or dislike this poem? In your response identify at least two aspects of the poem that influence your view. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q2-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "You have been asked to organise a performance of this poem by one or more performers. Describe the set you would create, the costume(s), the make-up, the music you would use and any sound or special effects you think would enhance the performance. Support your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-b-q2-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Write a piece about the language in this poem, beginning with one of the following phrases: – I find the language in this poem interesting and unusual … – I find the language in this poem challenging and complicated …",
+   "totalMarks": 20,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "I Felt a Funeral in My Brain — Emily Dickinson",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "I Felt a Funeral in My Brain",
+    "pages": [
+     13
+    ],
+    "attribution": "I Felt a Funeral in My Brain — Emily Dickinson.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q1-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Describe, in your own words, the bowling match that appears in the painting mentioned by the poet in the first stanza of this poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "Select a line or phrase from the poem that you enjoy and explain why you enjoy it.",
+   "totalMarks": 10,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q1-c",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q1(c)",
+   "questionText": "In your opinion, is the poet mainly optimistic or mainly pessimistic in this poem? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q2-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "Do you like or dislike this poem? In your response identify at least two aspects of the poem that influence your view. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q2-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Based on what you have read about the sport of road bowling in the above poem, would you like to learn more about this sport? Explain your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-c-q2-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Write a piece about the language in this poem, beginning with one of the following phrases: – I find the language in this poem interesting and exciting … – I find the language in this poem complicated and unusual …",
+   "totalMarks": 20,
+   "topicId": "english-11-61",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "After Viewing the Bowling Match at Castlemary, Cloyne (1847)",
+    "pages": [
+     14
+    ],
+    "attribution": "After Viewing the Bowling Match at Castlemary, Cloyne (1847) — Greg Delanty.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    47,
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q1-a",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Describe, in your own words, what the traveller reports in stanza one of this poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q1-b",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "Identify a line or phrase from the poem that made an impact on you and explain why it made an impact on you.",
+   "totalMarks": 10,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q1-c",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q1(c)",
+   "questionText": "Based on your reading of the poem, do you think the poet conveys a mainly positive or a mainly negative view of Ozymandias? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q2-i",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "Do you like or dislike this poem? In your response identify at least two aspects of the poem that influence your view. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q2-ii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Imagine you are the traveller from Shelley’s poem. Write a letter to a friend in which you remember your experiences in the desert and explain how you were affected by what you saw. Your letter should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2016-ol-p2-prescribed-d-q2-iii",
+   "year": 2016,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2016 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Write a piece about the language in this poem, beginning with one of the following phrases: – I find the language in this poem interesting and unusual … – I find the language in this poem complicated and challenging …",
+   "totalMarks": 20,
+   "topicId": "english-11-42",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Ozymandias — Percy Bysshe Shelley",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Ozymandias",
+    "pages": [
+     16
+    ],
+    "attribution": "Ozymandias — Percy Bysshe Shelley.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2016-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
    }
   },
   {

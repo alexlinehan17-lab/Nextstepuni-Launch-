@@ -841,14 +841,22 @@
       "schemePages": [
         39
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2016-ol-p2-comparative-b-q1-a-ii": {
       "taskSha256": "9eb2b149a96a0cd4ae8a99e635b08c6f1672357fecf5383e956bd47a6445db79",
@@ -858,14 +866,22 @@
       "schemePages": [
         39
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2016-ol-p2-comparative-b-q1-b": {
       "taskSha256": "c744604a766c6e1ff8db8052ece26d0151d047e524ac69201d0867460942c700",
@@ -875,6 +891,13 @@
       "schemePages": [
         39
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "discrete",
         "allocation": {
@@ -882,9 +905,10 @@
           "C": 12,
           "L": 12,
           "M": 4
-        }
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2016-ol-p2-comparative-b-q2-a-i": {
       "taskSha256": "b68f3baaae3e395908e6516a7add0800aa06a229e4d745e124b14ed2e1f29dbb",
@@ -894,14 +918,22 @@
       "schemePages": [
         40
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2016-ol-p2-comparative-b-q2-a-ii": {
       "taskSha256": "15200da6030e4e3489c014e46d63863520c5d32622b103470556629a0e80c670",
@@ -911,14 +943,22 @@
       "schemePages": [
         40
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2016-ol-p2-comparative-b-q2-b": {
       "taskSha256": "1d4e91eec2da6ecdff2b65ee0ec3ee91231750752dfcaf02f803d645a49b5152",
@@ -928,6 +968,13 @@
       "schemePages": [
         40
       ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
       "criteria": {
         "mode": "discrete",
         "allocation": {
@@ -935,9 +982,10 @@
           "C": 12,
           "L": 12,
           "M": 4
-        }
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     },
     "english-2017-ol-p2-comparative-b-q2-a-i": {
       "taskSha256": "e1c7db7379fcbee3afc7419a00df7eddc4808a2f3ba43b7ebd69303c13d503fc",
@@ -52663,6 +52711,2225 @@
         "notes": "2016 HL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A+–E- grid printed with the task and on PDF40, not modern H/O bands."
       },
       "reason": "All 8 paper pages visually inspected one by one. Exact task and award verified against the cited scheme pages, all viewed. Single Text 60 discrete 18/18/18/6; Comparative Q1 70 discrete 21/21/21/7, Q2(a) 30 and Q2(b) 40 “Mark ex 30/40 by reference to the criteria for assessment” with one combined A+–E- row; Unseen 10/10/20 combined; Prescribed 50 discrete 15/15/15/5. Grids printed with each task and on Appendix 2 PDF40."
+    },
+    "english-2016-ol-p2-single-a-q1": {
+      "taskSha256": "fa129c825fe162178c41649d4cd4072816a02b28db17b33f1c6bef4f0ec4e590",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-a-q2-a": {
+      "taskSha256": "692eb65e295b51f2f6a6abf634558e756660585dbbfe3da546deab0046453d11",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-a-q2-b": {
+      "taskSha256": "448234301f14c7e8000c2df8f33d520df1ad510a9561ed9dd35c895a299d4d2a",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-a-q3-i": {
+      "taskSha256": "fd19bcf69f419a59993f2a90e5676c2ee2dd8d08073ab5292fc27c1373ab7f08",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-a-q3-ii": {
+      "taskSha256": "babb809225b678f68bdeb91c430b98c77e9fa9eb138c2281b93dadc0143095e6",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        15,
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-a-q3-iii": {
+      "taskSha256": "6648eeefe9e8ca29db1c4a100c60e185af31f3576870d115c1be0626ed0fd947",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q1": {
+      "taskSha256": "de3923eb4b91076d574aed9a1447125e7bb6c0baf5b265f0fdfaf9c5e6ac3921",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q2-a": {
+      "taskSha256": "ce894b71b4337f0ad4a5ea08cd713f602de6b95cb326e9b7673ef4579fd0209d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q2-b": {
+      "taskSha256": "fe8a51cf38c340d1da7efd4acfe5ffadeaabac88b55680f8eb340e6af1e3844f",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q3-i": {
+      "taskSha256": "ba590948ac4ec431ea9d0fa519be1bc8a676d54b7bca442732bd67c4e14ecf87",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        17,
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q3-ii": {
+      "taskSha256": "4cbc292ea5b88f26f80d396e1839c3e9cdde45e8ab674befaf6710788d014cd1",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-b-q3-iii": {
+      "taskSha256": "ff3d18f7212b067fe069865bd1d13832a589cec74a52163eed8a4d5019b0b82e",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q1": {
+      "taskSha256": "2643936952e75f7d34709fbf9991fa5308733c39157a564a87da6318da94a5c2",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q2-a": {
+      "taskSha256": "9a25c3139395954d05e1deee42d214a23ab8838c6679bac165fdcc11804d0e5e",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q2-b": {
+      "taskSha256": "a0e8157587989f980996fb1be12e64a86c895e8f0788c4f38f92aff91d0c33c6",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q3-i": {
+      "taskSha256": "8b11a4c327e6d5c352a6d7aecbb42ee007c5c44e2d48e0b5fa16bf9ab054343d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q3-ii": {
+      "taskSha256": "e2a93d74b0beb6d6429cb26b171dd5ba84baa63c5edb90c1901eaa72d104b583",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-c-q3-iii": {
+      "taskSha256": "4c77b556d8ce014bc6d50fadb1813dc55ee63ec8cd9e665c593ef393d40a4fda",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        20,
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q1": {
+      "taskSha256": "f5360a4bb10acd225a5b5daeb9ab0db5f789c534acd0ffad714d39286e672fc9",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q2-a": {
+      "taskSha256": "1ccf4e7c64ac1390f3d549f01ddb03f6b24bb06a3cfd54152a8184a08a72b09e",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q2-b": {
+      "taskSha256": "cf4ab8b09fa74121bac0f8a52ac860fe9f906d2aafabffff27fe4b6b79346924",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q3-i": {
+      "taskSha256": "64b48bba4e75f6f81a9eeba8a4b8a6887a7bc4a6298f9c6dc9373d052ba35dfa",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q3-ii": {
+      "taskSha256": "d8f7270b610a7cbbb6bfeb6aff142724665ec2a0b9a220c71f90cf227b527a34",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        22,
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-d-q3-iii": {
+      "taskSha256": "df009cfdfb523cf5abda0d9ec910a24989e448812e008c5f91522bec92f0cfff",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q1": {
+      "taskSha256": "8b949f3b209fc36d8c2d53176e31125caebe916737f1d0b374be3241bac619ca",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q2-a": {
+      "taskSha256": "aae6ea3ad84b6172bc0baf9b28f66c978d7d51867ad3a84df66a9ac2d4280c93",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q2-b": {
+      "taskSha256": "051787122ffe7a4dcd0038433f6682990f0b14e4754d8a3cdf44885cb45f7dd1",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q3-i": {
+      "taskSha256": "3f91867bc2c9ebc6471138ed00cb619b6ffef4c8c026807d5f954a133007f7ff",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        24,
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q3-ii": {
+      "taskSha256": "b746bb296236bb3eddd7637de07a357e4c7e7457ee0baccb1eef4aade795de12",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-e-q3-iii": {
+      "taskSha256": "8e342b54512a1675921e33ae836d637e18fb21d411e382cee571241f3f1049ea",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q1": {
+      "taskSha256": "0fab9ef0909a1f887d1836a91f052ebb00d849c622710e27ef78d65efdedd717",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q2-a": {
+      "taskSha256": "7c585e0da059b46ce6feafc77b8a8f1493ac3b78be62b941265f9e53d323e01a",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q2-b": {
+      "taskSha256": "930b520933ee508482fcdd769aaad04f587296c755539d0b5907d98ed5598d22",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        26,
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q3-i": {
+      "taskSha256": "f35bdf568ecb7e972285a784dc4f7361e182a68dbf295f5383f7981140f35167",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q3-ii": {
+      "taskSha256": "07843f2fc5e839fea1868e311b0655fcfebe6e1e37d1fd754e43608641bd076f",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-f-q3-iii": {
+      "taskSha256": "bf728cf8011b4eaf0e5d95315ffcc583582295b230f26518110d80555a795360",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q1": {
+      "taskSha256": "4f871e27b46f419f57e5ad35043aa5006c7a5328bbcbac5cfec572c9be149428",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q2-a": {
+      "taskSha256": "2509d4938d6f749f5ebe4f7d9f742da6604c7ca196979e400af643f5ecc519d4",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        28,
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q2-b": {
+      "taskSha256": "c6943b9148c5364fdbb1981e69eaab1b7b70cffbd3dd31744046e3624d03e8a3",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q3-i": {
+      "taskSha256": "b34b94ba7b5d123a553866974c468bf142ae094fbbb07f39ee8ba5f06bc40f05",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q3-ii": {
+      "taskSha256": "dfa28e489b856c982fe8fe97b9e79c13c36ec2fe7efc39f072f69650b7f7ad8b",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-g-q3-iii": {
+      "taskSha256": "0075866a2dee26890b036832294a96f53e41f1185e45b028473e8ae3f529de06",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q1": {
+      "taskSha256": "4d2c159024663032b21d2031e25d6354c47fadd6af5e5332c408bbdd7ec57bcc",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q2-a": {
+      "taskSha256": "b21f0f6c8a53d0bf94528cd8ff405697fff24de4530d555df84c6cdad2188e9d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q2-b": {
+      "taskSha256": "2ff2d92e3160b9e4a6a01d6da3317f91413bbc0f3fd2950561ceaa10777ceeda",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q3-i": {
+      "taskSha256": "8c93b617fe6e39f1be40a286ab51776edc37be45d81f7186c6ac52eb3e6485d0",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        31
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q3-ii": {
+      "taskSha256": "c3f168b0e42d631f477ed796f897e32b857917ea89383b6c043aee2d2bab935f",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-h-q3-iii": {
+      "taskSha256": "a04b82ea445645706ee129f74d231af78b8af759e5bed5e7ce5dfd217f72af69",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q1": {
+      "taskSha256": "2bf53ed062aaa4faf1468b1f736fa66a82ec74d5a9cb7dc3086386ee49af5d55",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q2-a": {
+      "taskSha256": "b5935a10b67b07b20fc40db9d4ef07286d494f96fc17d3a57276e76a20c309b8",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q2-b": {
+      "taskSha256": "356c174f0b2e4f6160fee063144e6472130887e39477115e27a84d23fc99486d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q3-i": {
+      "taskSha256": "1230a74a14be036703ea7441564ef78349c353e292ce2af737f87f1929269369",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q3-ii": {
+      "taskSha256": "e88cf28dca3642278a306c446f92dcee51a188363b1d9103608ae62914677285",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-single-i-q3-iii": {
+      "taskSha256": "e44a9325005fc7b3a4d5ded12449542eb9287c487ea8a749953e7aa5404417ff",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 30,
+      "schemePages": [
+        35
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q1-a-i": {
+      "taskSha256": "ff39032eec62ed4968dd5c9a2bd20306aa9265d8eee31edfc0ee898732d5f272",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 15,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q1-a-ii": {
+      "taskSha256": "77f06b1dcfae33603fa42e9ee41663005f1c5572de1ccdc5558f495876ba016e",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 15,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q1-b": {
+      "taskSha256": "a554baf59d84d6ac1a1c9fc903d460b4e087d3d68c48f55be001e0770f8948de",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 40,
+      "schemePages": [
+        37,
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q2-a-i": {
+      "taskSha256": "e10627ee35affdc2e6a6973ff144da4f72af08a1161cc1617419874552d3dfcb",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 15,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q2-a-ii": {
+      "taskSha256": "707bfe736172ba625d0edfae9b9f66464baafb11b8102ed665294c5a43c45f32",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 15,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "Combined criteria give one global mark ex 15 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-comparative-a-q2-b": {
+      "taskSha256": "ae3360b02313f7c1e6f7ecab06f079c23dea10ee1c73705e5cf2a1f691eaa996",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 40,
+      "schemePages": [
+        38,
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2016 OL PDF3: marks for Coherence or Language cannot exceed Purpose; Mechanics is awarded on its own merits. Use the historical A–N/G grid PDF52, not modern H/O bands; print its bands exactly."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-unseen-q1": {
+      "taskSha256": "0b545f8a518d0d4e70bcea90bd6ef633fb45ff085761f6257e5d828fad62f7a4",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-unseen-q2": {
+      "taskSha256": "72f9b461f1646d10c9c17b20c2c233259d7b23a75d147afbaee4821e5ff05937",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q1-a": {
+      "taskSha256": "558bbe4d5250464c09261cd63dc92b13414100eeaf307e528aa4e92a71466bf5",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q1-b": {
+      "taskSha256": "578a6b2301d14025581c4cb9af97c5950d0cbeb7ea9a6a26d3ee088b7bd7d99d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q1-c": {
+      "taskSha256": "7f1178dd60fe82245b89c67adecd8bebe1e9bf9815f82f7b67ec103f23efe08d",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q2-i": {
+      "taskSha256": "ee09d5d12a1fe853354d43b5bdc226a498cf5507c7b7c22ce2ebe1fac3ee2e88",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q2-ii": {
+      "taskSha256": "0b1aabe91d96f9ee1509fd9def6d17a42394ae08c02c688383c1de8415acb50f",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-a-q2-iii": {
+      "taskSha256": "842ba2d04fc43c87fec9d57ed68fb08dc8de0cd0edfd1b5110f4860fd2060934",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        43,
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q1-a": {
+      "taskSha256": "d95c832fe64147034a99944c3740164a6f60b75a299b8b32c2bd59e663899af9",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q1-b": {
+      "taskSha256": "04bd7296e3098faa6577fdd0a640d0137b0e876b44edc2a13bed10b265046e22",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q1-c": {
+      "taskSha256": "52d5c68e04d565904778fa726ceac2ed342c3ceccffb0d3dfe96a10cfdd6ebcc",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q2-i": {
+      "taskSha256": "84167595e836f6206a6b3312c19845477c640c96b1c00a4e9d6bed37ec64d436",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q2-ii": {
+      "taskSha256": "d321f408ea90303e7bb510219aaf9eb9017dc8d14e0d162f4cfe4fd770d85358",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-b-q2-iii": {
+      "taskSha256": "00fc843abdfe3acff1bf5ec9f03bf28ea1122580f0184d7c839625823fd7925a",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        45
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q1-a": {
+      "taskSha256": "b70a7ed0a876f481f1597519e47c0edfdc9435637c13192d0effe57fa08068cd",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q1-b": {
+      "taskSha256": "a3e54364905a8d923fe27b5da5abdf196e11c4536641bc5eedf77ba5582f1b3c",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q1-c": {
+      "taskSha256": "adfa6981c6d556d84788c249116746dcb8ad805801602cd1030eec5a0975c8a0",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        46
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q2-i": {
+      "taskSha256": "5f1312efb58a8f1b2b7ac867fb067c1cdd5cb117c02e6a005424d68f05d42b8a",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q2-ii": {
+      "taskSha256": "1b746c1d49fa4f8d2e810e6735db777bdba55159a25ae53a874dab5527a87e44",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        47
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-c-q2-iii": {
+      "taskSha256": "3b07f7df9291844cf7dbcbf277fad248adce662b5cf6017e3536c3873433b704",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        47,
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q1-a": {
+      "taskSha256": "fb11e369adcfdd501d79d0b6fa1adf22be957d267de9e0ec24ea8627de69fdd8",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q1-b": {
+      "taskSha256": "71985979f035c332ad1205d88edb9cc4d1142b781210cff47a2f5e480b914170",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q1-c": {
+      "taskSha256": "c1e8905ca21d3811a6f7065e151a7686590bb2d03191d107dde66bafbfd03589",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 10,
+      "schemePages": [
+        48
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "Combined criteria give one global mark ex 10 from the historical A–F/NG grid PDF52. Transcribe the printed 10-mark bands exactly (A 8–10, B 7–8, C 5–6, D 4–5, E 2–3, F/NG 1): adjacent bands overlap; do not normalise them."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q2-i": {
+      "taskSha256": "e66069e57adf59a41cb2a68bea189428a5d59f1731fa92b8471202de0f9519fa",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q2-ii": {
+      "taskSha256": "6f490d644d8c867862feceafd88f502592547d654ca4f14c97248729cca4f715",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        49
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
+    },
+    "english-2016-ol-p2-prescribed-d-q2-iii": {
+      "taskSha256": "0d943156055e81c475c9bec4b9aad838ac343e20c534114bc53ba6b822c8cea1",
+      "paperSha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "totalMarks": 20,
+      "schemePages": [
+        50
+      ],
+      "generalCriteriaPages": [
+        3,
+        13,
+        36,
+        41,
+        52
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "Combined criteria give one global mark ex 20 from the historical A–F/NG grid PDF52."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF17–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1, Q2(a)(b) “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 (a)(b)(c) 10 combined 6/4, Q2 (i)(ii)(iii) “Combined Criteria ex 20” 12/8. Historical A–N/G grid PDF52."
     }
   }
 }

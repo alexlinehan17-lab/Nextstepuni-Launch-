@@ -403,7 +403,7 @@ const decks = [
    * existed only on the English branch, never on main. These two counts and
    * hashes are refreshed by tmp/english-audit/refresh-pins.py per paper. */
   ['english:higher', ENGLISH_HIGHER, 612, '4d0b03d15beef3af82d3f6f4e2544f0d161e7055320ee538d6a4e4f709fb24c1'],
-  ['english:ordinary', ENGLISH_ORDINARY, 1527, 'd4a1f5c20e688993f377d69bc27adfbd8b940017a84432ba215c23d5bf9eae2e'],
+  ['english:ordinary', ENGLISH_ORDINARY, 1619, 'e268c2c812e14b71be3bd46544fea0f8a50f4db506d99ad6cc8e83836ce95b93'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
    * listening audio and the real PDF pages for passages and printed poems. */
@@ -447,7 +447,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(11_984);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_076);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -461,13 +461,13 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_341);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_433);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(2_139);
+    expect(published.size).toBe(2_231);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy

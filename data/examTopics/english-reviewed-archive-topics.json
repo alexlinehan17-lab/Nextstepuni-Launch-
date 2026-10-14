@@ -871,6 +871,36 @@
     "english-6-0",
     "english-12-54"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-delanty-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-delanty",
+   "label": "Poetry - Delanty",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-61"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-death-and-nightingales-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-death-and-nightingales",
+   "label": "Text - Death and Nightingales",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-54"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-big-maggie-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-big-maggie",
+   "label": "Text - Big Maggie",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-55"
+   ]
   }
  ]
 }
