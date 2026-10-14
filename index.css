@@ -1837,3 +1837,16 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --surface-paper: #202020;
   --surface-soft: #282828;
 }
+
+/* Select menus from approved-ui-runtime portal into a position:relative
+   wrapper appended to <body>. Until the menu is positioned it sits at the
+   bottom of the page, and Base UI focuses the selected option without
+   preventScroll, so opening a long list (Mark Bank's subject picker) scrolled
+   the whole page to the bottom (2026-10-14). Pinning the wrapper to the
+   viewport keeps that first frame on screen; the menu still positions against
+   its trigger. Move this into the private SelectContent source (wrapper
+   position, or positionMethod="fixed") at the next runtime rebuild. */
+.nsu-kobra:has(> .nsu-floating-layer > [data-slot="select-content"]) {
+  position: fixed !important;
+  inset: 0 auto auto 0;
+}
