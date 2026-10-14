@@ -47,7 +47,18 @@ export const DURATION_PRESETS = [
 
 export const STUDY_SESSION_POINTS = {
   PER_10_MINUTES: 10,
+  /** Once per session, for finishing the extra time the student chose to add
+   *  ("Keep going"). The same size as a quick debrief; the added minutes also
+   *  earn the normal per-10-minute rate. Ending the added time early keeps the
+   *  minutes but forfeits this bonus. */
+  EXTENSION_COMPLETED: 10,
 } as const;
+
+/** "Keep going" choices offered when a countdown ends. */
+export const SESSION_EXTENSION_MINUTES = [5, 10, 15] as const;
+
+/** An open-ended (stopwatch) session completes itself after this long. */
+export const OPEN_ENDED_CAP_MINUTES = 240;
 
 // ── Subject Colors ──
 
