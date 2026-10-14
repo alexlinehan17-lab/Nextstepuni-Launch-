@@ -1808,58 +1808,65 @@
         "sha256": "2490229e979602112b9af92d4f48677e28ab1c4b7f794ee5e730bc5cb6068473",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 69,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "0e97cd518756c458",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. ______________________________________________________________________________ Question 1. (a) Name two sedimentary ro",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "b4ea10786cd5231a",
           "page": 2,
           "cue": "One of",
           "context": "sk B sterilised? ___________________________________________________________________ (iv) One of the flasks was used as a control. What is meant by this? ___________________________________________________________________ (20 marks) Limewater Limewater",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"One of the flasks was used as a control\" is Q1(b)(iv)'s lead-in, not a choice."
         },
         {
           "id": "3febd40a7e3c11ee",
           "page": 9,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. _______________________________________________________________________________________ Question 8. (a) (i) Name one grass and one other plant species suitable for best quality grazing f",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "62bc3a27901d580d",
           "page": 9,
           "cue": "any two",
           "context": "wo advantages of baled silage. (ii) State two disadvantages of baled silage. (c) Describe any two tests that a farmer can undertake to assess the quality of pit silage. (60 marks) [OVER]",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(c): any two of the scheme's four silage tests; a marking menu, four points from each test chosen."
         },
         {
           "id": "0c0455d0ba96aac8",
           "page": 13,
           "cue": "any two",
           "context": "Page 13 of 16 Question 13. Answer any two of (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) Name two of the most common lowland breeds of sheep farmed in Ireland. (ii) In the case of one of these breeds state two characteristics of the breed. (iii) Describe the managem",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         },
         {
           "id": "0a7417c4e3e78d6c",
           "page": 13,
           "cue": "two of",
           "context": "f 16 Question 13. Answer any two of (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) Name two of the most common lowland breeds of sheep farmed in Ireland. (ii) In the case of one of these breeds state two characteristics of the breed. (iii) Describe the management of lambs from birth to weaning. (iv) Distinguish between flu",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(a)(i): any two of the scheme's five lowland breeds; a marking menu."
         },
         {
           "id": "325750fecd3e4a87",
           "page": 13,
           "cue": "one of",
           "context": "ame two of the most common lowland breeds of sheep farmed in Ireland. (ii) In the case of one of these breeds state two characteristics of the breed. (iii) Describe the management of lambs from birth to weaning. (iv) Distinguish between flushing and steaming-up in lowland sheep production. (b) (i) Name two breeds of pig used",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(a)(ii): characteristics of one of the breeds named, kept as five answer routes on one card."
         }
       ]
     },
@@ -1878,7 +1885,7 @@
         "sha256": "c7b1f596f5919261abc33cc361febfbab569a35255e675e7d4f6846336f03c7e",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 69,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

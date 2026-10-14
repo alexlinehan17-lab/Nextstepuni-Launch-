@@ -1859,7 +1859,7 @@ POOLS_2020_ORDINARY = {
     'Q13(b)': (1, ['Winter barley', 'Spring barley']),
 }
 # The Ordinary question whose lettered parts are a printed any-two choice.
-OL_PART_CHOICE = {2017: 'Q13', 2018: 'Q13', 2019: 'Q13', 2020: 'Q13'}
+OL_PART_CHOICE = {2016: 'Q13', 2017: 'Q13', 2018: 'Q13', 2019: 'Q13', 2020: 'Q13'}
 # 2019 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
 HIGHER_2019 = '''
 Q1(a)|10|2|5|Target yields in tonnes per hectare of
@@ -2311,9 +2311,85 @@ Q9(d)|12|6|11|Sulphuric acid or formic acid
 Q9(e)|12|6|11|CO2 needed for photosynthesis
 '''
 POOLS_2016_HIGHER = {}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY, (2016,'higher'):POOLS_2016_HIGHER}
+# 2016 Ordinary (legacy syllabus), transcribed from the SEC paper and scheme.
+ORDINARY_2016 = '''
+Q1|20|2|5|Two sedimentary rocks
+Q2|20|3|5|Question 2. (10
+Q3|20|4|5|High milk yields or good quality milk
+Q4|20|5|6|Soil sieves D
+Q5|20|6|6|A = Petal
+Q6|20|7|6|A = (Liver)fluke
+Q7|20|8|7|Animal feed or meal or concentrate
+Q8(a)(i)|6|9|8|Grass: Perennial ryegrass
+Q8(a)(ii)|6|9|8|Any one reason for the use of either
+Q8(a)(iii)|14|9|8|Named method
+Q8(b)(i)|6|9|9|Easier to make in small fields
+Q8(b)(ii)|6|9|9|More expensive to make
+Q8(c)|22|9|9|Examine the colour of the silage
+Q9(a)(i)|9|10|10|A = Trachea or windpipe
+Q9(a)(ii)|3|10|10|Gaseous exchange or described
+Q9(a)(iii)|9|10|10|Good ventilation/ no draughts
+Q9(a)(iv)|12|10|10|Adult (female) worm
+Q9(a)(v)|3|10|10|Vaccination or dosing or leader-follower
+Q9(b)(i)|3|10|10|Excretion/ getting rid of wastes
+Q9(b)(ii)|9|10|10|X = Ureter
+Q9(b)(iii)|3|10|10|Urine or salt or urea or water
+Q9(c)|9|10|10|Rough grazing or long grass
+Q10(a)(i)|3|11|11|Damages leaves or damage described
+Q10(a)(ii)|6|11|11|Black or brown spots on leaves
+Q10(a)(iii)|6|11|11|Certified seed/ resistant varieties
+Q10(b)(i)|9|11|11|(Medium) loam or good texture
+Q10(b)(ii)|6|11|11|Potato planter/ seed planted in ridges
+Q10(b)(iii)|6|11|11|Spray/ herbicide/ earthing up
+Q10(b)(iv)|6|11|11|Elevator digger/ collected by hand
+Q10(c)|18|11|11|Wash (soil from) potatoes
+Q11(a)(i)|4|11|12|Drainage Well drained
+Q11(a)(ii)|4|11|12|Fertility Low fertility
+Q11(a)(iii)|4|11|12|Organic matter content Low
+Q11(a)(iv)|4|11|12|Soil temperature High
+Q11(b)(i)|6|11|12|Add organic matter or named example
+Q11(b)(ii)|6|11|12|Create channels or holes
+Q11(b)(iii)|3|11|12|Annelida
+Q11(b)(iv)|11|11|12|cylindrical shape and segmented body
+Q11(c)(i)|3|11|12|Green colour or chlorophyll formation
+Q11(c)(ii)|6|11|12|Urea/ C.A.N./ ammonium sulphate
+Q11(c)(iii)|6|11|12|Pollution/ eutrophication/ algal bloom
+Q11(c)(iv)|3|11|12|Nitrogen fixation or explained
+Q12(a)(i)|4|12|13|Nucleus
+Q12(a)(ii)|4|12|13|Carry genes
+Q12(a)(iii)|4|12|13|(iii) 27
+Q12(b)(i)|8|12|13|Gametes (P)
+Q12(b)(ii)|4|12|13|Genotype of calf (Pp)
+Q12(b)(iii)|4|12|13|Polled (or hornless)
+Q12(c)(i)|4|12|13|Genotypes of parents (Pp)
+Q12(c)(ii)|8|12|13|Possible gametes (P) (p)
+Q12(c)(iii)|6|12|13|(PP) (Pp) (pp)
+Q12(c)(iv)|4|12|13|Polled Horned
+Q12(d)(i)|4|12|13|Crossing two different breeds
+Q12(d)(ii)|6|12|13|Ewes are better mothers
+Q13(a)(i)|6|13|14|Suffolk/ Texel/ Border Leicester
+Q13(a)(ii)|6|13|14|Terminal sire/ excellent conformation
+Q13(a)(iii)|12|13|14|Clear mucus/ navel dip
+Q13(a)(iv)|6|13|14|Flushing: Process of moving ewes
+Q13(b)(i)|6|13|14|Large white/ Landrace
+Q13(b)(ii)|12|13|14|Dry sow house
+Q13(b)(iii)|6|13|14|Cause of anaemia
+Q13(b)(iv)|6|13|14|Good conformation/ Good feet and legs
+Q13(c)(i)|9|13|15|Good hygiene/ adequate supervision
+Q13(c)(ii)|6|13|15|Rich in antibodies
+Q13(c)(iii)|6|13|15|Clean holding area
+Q13(c)(iv)|9|13|15|Old age/ grading up
+Q13(d)(i)|3|13|15|To produce glucose or sugar
+Q13(d)(ii)|3|13|15|Chlorophyll
+Q13(d)(iii)|24|13|15|Method A
+'''
+POOLS_2016_ORDINARY = {'Q8(a)(iii)': (1, ['Direct sowing', 'Undersowing', 'Direct drilling (or direct seeding)', 'Stitching-in']), 'Q13(a)(ii)': (1, ['Suffolk', 'Texel', 'Border Leicester', 'Bluefaced Leicester', 'Galway']), 'Q13(d)(iii)': (1, ['Method A', 'Method B'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY, (2016,'higher'):POOLS_2016_HIGHER, (2016,'ordinary'):POOLS_2016_ORDINARY}
 
 SOURCES = [
+    (2016, 'ordinary', 'G', ORDINARY_2016,
+     '688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38',
+     '2490229e979602112b9af92d4f48677e28ab1c4b7f794ee5e730bc5cb6068473'),
     (2016, 'higher', 'A', HIGHER_2016,
      '0d0d58001042c543419ee3edc4acb58c9179f901acee5f8573ae9ae4949b12cd',
      '38b7cf5f6e4504c17f6dd8b6f70dbad197a3c4fe7079e848221750f51eb34502'),
@@ -2433,7 +2509,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71,(2016,'higher'):62}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71,(2016,'higher'):62,(2016,'ordinary'):69}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2578,7 +2654,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71; 2016 Higher 62. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71; 2016 Higher 62; 2016 Ordinary 69. Remaining editions stay open.')
 
 
 if __name__=='__main__':

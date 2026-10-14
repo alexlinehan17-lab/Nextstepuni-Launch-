@@ -443,7 +443,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(additions.size).toBe(1122);
+    expect(additions.size).toBe(1191);
     const live = decks.flatMap(([, cards]) => cards);
     expect(live.filter(card => additions.has(card.id)).map(card => card.id).sort()).toEqual([...additions].sort());
     expect(baselineCards(live).length + withdrawnFor(live).length).toBe(10_495);

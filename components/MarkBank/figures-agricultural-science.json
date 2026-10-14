@@ -1239,5 +1239,124 @@
       0.718
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-soil-flasks": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-soil-flasks.png",
+    "md5": "482ae8b8505420597e32be515d029415",
+    "alt": "Original Question 1(b) apparatus: two conical flasks, A with fresh soil in a muslin bag and B with sterile soil in a muslin bag, each hanging above limewater in a stoppered flask.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 2,
+    "cropRect": [
+      0.16,
+      0.4735,
+      0.92,
+      0.665
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-lab-equipment": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-lab-equipment.png",
+    "md5": "d9b5b714cc7352aabc378aa820762df5",
+    "alt": "Original Question 4 photographs lettered A to E: A a long thin wire loop on a handle, B a small clear jar with two tubes through its lid, C a hand-held optical instrument with an eyepiece and a hinged prism cover, D a stack of metal sieves marked by mesh size with a lid and base, E a leafy shoot sealed into apparatus with a long horizontal capillary tube dipping into a beaker.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 5,
+    "cropRect": [
+      0.085,
+      0.138,
+      0.8,
+      0.675
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-flower-strawberry": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-flower-strawberry.png",
+    "md5": "b83ff9c5d1ccc5271c9085be34906418",
+    "alt": "Original Question 5 diagrams: a half-flower with leader lines A and B to the outer parts and C and D to the centre and base, the part (a) questions, then a strawberry plant with a long trailing growth marked X that carries small new plants along it.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 6,
+    "cropRect": [
+      0.08,
+      0.0848,
+      0.93,
+      0.655
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-invertebrates": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-invertebrates.png",
+    "md5": "9750b1fc6827066096d2ef6a26ecd1a3",
+    "alt": "Original Question 6 photographs: A a flat leaf-shaped dark invertebrate, B a slender long-legged winged insect, C a rounded eight-legged dark invertebrate.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 7 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 7,
+    "cropRect": [
+      0.11,
+      0.095,
+      0.92,
+      0.335
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-barley-tramlines": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-barley-tramlines.png",
+    "md5": "a3d7d6a757826061f4f718ac1fef8d4a",
+    "alt": "Original Question 7 photographs: ears of barley close up, and a field of barley crossed by parallel tramlines.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 8,
+    "cropRect": [
+      0.13,
+      0.1,
+      0.82,
+      0.262
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-respiratory-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-respiratory-system.png",
+    "md5": "552d3b7adbda03869721456534256651",
+    "alt": "Original Question 9(a) diagram of the lungs of a farm animal: A points to the central tube at the top, B to where it branches into the lungs, C to the curved sheet beneath the lungs, and D to a small cluster at the end of the finest branches.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 10,
+    "cropRect": [
+      0.21,
+      0.1,
+      0.79,
+      0.3515
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2016-ol-paper-urinary-system": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2016-ol-paper-urinary-system.png",
+    "md5": "b5e541944e6e09e7885b462c0c3c8982",
+    "alt": "Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.",
+    "attribution": "SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2016/LC024GLP000EV.pdf",
+    "sourceSha256": "688b5ed62a73c3b3d1bd877428c18f4843cb071a8b99d1580bd493f101901b38",
+    "pdfPage": 10,
+    "cropRect": [
+      0.28,
+      0.5235,
+      0.79,
+      0.742
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

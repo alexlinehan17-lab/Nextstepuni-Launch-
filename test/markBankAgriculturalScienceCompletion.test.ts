@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(41);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(40);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(30);
+    expect(review.paperReviews).toHaveLength(31);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -1192,6 +1192,34 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
   });
 
+  it('authors every 2016 Ordinary task from the paper and scheme', () => {
+    const year = ordinary.filter(card => card.year === 2016);
+    expect(year).toHaveLength(69);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2016 OL'));
+    expect(tasks).toHaveLength(69);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    // Section One: a scale across several parts is one orderedSplit card; parts priced on their own carry their marks.
+    for (const [key, notation] of [['q5', '(4 × 3m) + (4 × 2m)'], ['q6', '(6 x 3m) + 2m'], ['q7', '(4 × 3m) + (4 × 2m)']] as const)
+      expect(get(`agsci-2016-ol-${key}`).tariffModel, key).toEqual({ kind: 'orderedSplit', notation });
+    expect(get('agsci-2016-ol-q2').rows[0].group?.options.map(option => option.slice(-1)).join('')).toBe('FTFTTFFFTT');
+    // The four Q11(a) headings carry 4 marks each.
+    expect(review.tasks.filter(task => task.questionRef.startsWith('2016 OL Q11(a)'))).toHaveLength(4);
+    expect(get('agsci-2016-ol-q8aiii').answerVariants).toHaveLength(4);
+    expect(get('agsci-2016-ol-q13aii').answerVariants).toHaveLength(5);
+    expect(new Set(get('agsci-2016-ol-q13diii').rows.map(row => row.route))).toEqual(new Set(['method-a', 'method-b']));
+    for (const [key, letters] of [['q4', 'ABCDE'], ['q5', 'ABCDX'], ['q6', 'ABC'], ['q9ai', 'ABC'], ['q9bii', 'XYZ']] as const)
+      expect((get(`agsci-2016-ol-${key}`) as { labelKey?: Array<{ letter: string }> }).labelKey?.map(label => label.letter).join(''), key).toBe(letters);
+    const units = census.questionMarkChecks.filter(check => check.year === 2016 && check.level === 'ordinary');
+    expect(units).toHaveLength(13);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 7 ? 20 : 60]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1277,19 +1305,28 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1982);
+    expect(atlas.markBankCards).toHaveLength(2051);
+    // Indexed once: the join list grows by a paper's worth of cards at a time, and a
+    // per-card scan of every task, sibling list and answer map made this test quadratic.
+    const taskFor = new Map<string, (typeof review.tasks)[number]>();
+    for (const task of review.tasks) for (const id of task.cardIds) taskFor.set(id, task);
+    const siblingKeys = new Map<string, Set<string>>();
+    const answerMaps = new Map<string, ReturnType<typeof JSON.parse>>();
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
-      const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;
+      const task = taskFor.get(join.cardId)!;
       const ids = examTopicIdsForQuestion('agricultural-science', card.level, card.year, 'main', join.n, 'single', 'ev', join.fileid);
       expect(ids).toEqual(task.examTopicIds);
       for (const topic of ids) {
-        expect(siblingsFor('agricultural-science', topic).some(sibling =>
-          sibling.year === join.year && sibling.fileid === join.fileid && sibling.n === join.n)).toBe(true);
+        if (!siblingKeys.has(topic)) {
+          siblingKeys.set(topic, new Set(siblingsFor('agricultural-science', topic).map(sibling => `${sibling.year}|${sibling.fileid}|${sibling.n}`)));
+        }
+        expect(siblingKeys.get(topic)!.has(`${join.year}|${join.fileid}|${join.n}`)).toBe(true);
       }
       const path = `/paper-answers/${join.year}/${join.fileid}.json`;
       expect(preferredAnswersUrl('agricultural-science', join.year, join.fileid, 'stale-storage')).toBe(path);
-      const map = JSON.parse(readFileSync(resolve(__dirname, `../public${path}`), 'utf8'));
+      if (!answerMaps.has(path)) answerMaps.set(path, JSON.parse(readFileSync(resolve(__dirname, `../public${path}`), 'utf8')));
+      const map = answerMaps.get(path);
       const anchor = map.q.find((q: { n: string }) => q.n === join.n);
       expect(anchor.paperRegion[0].p).toBe(task.paperPage);
       expect(anchor.region[0].p).toBe(task.schemePage);
