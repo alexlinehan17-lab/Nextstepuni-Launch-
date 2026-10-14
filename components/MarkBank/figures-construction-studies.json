@@ -6389,5 +6389,222 @@
     "alt": "SEC 2012 Ordinary marking scheme notes and sketches on varnish, lacquer, wax and oil finishes.",
     "attribution": "SEC Leaving Certificate Construction Studies 2012 Ordinary Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2011-HL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q1-original.png",
+    "md5": "9c377c407c6d41c40ace0d0d0a40884e",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 1: the printed question with a sketch of a person at the main doorway.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q2-original.png",
+    "md5": "2888e3f174f53795eadd43ffe8fdf0c5",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 2: the printed question on roof requirements and pitched roof structures.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q3-original.png",
+    "md5": "f624327bf686b35fe1d3698036b95ff9",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 3: the printed question with the elevation and plan of the thirty-year-old house, wall A-A marked.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q4-original.png",
+    "md5": "8accadad13fd039df1430579c68bde79",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 4: the printed question with a sketch of the two semi-detached houses.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q5-original.png",
+    "md5": "e4942dbfb157ee5b3f52751c804df5ef",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 5: the printed question with a sketch of the hollow block wall and all the thermal data.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q6-original.png",
+    "md5": "3f3ce17d459f9077689aa689fff1fe78",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 6: the printed question with the elevation and ground floor plan of the block and cedar-clad house.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q7-original.png",
+    "md5": "ab21ddd54f8bf2e1349148db1266f061",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 7: the printed question with a sketch of the rendered chimney stack on the slated roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q8-original.png",
+    "md5": "88ecb0c7bef5a971023a75c278da1aec",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 8: the printed question with sketches of the wood burning stove and the solar collector.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q9-original.png",
+    "md5": "a44d7dc94752f48b0ee540393df5afb6",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 9: the printed question with an outline section of the single storey house, four junctions circled.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q10-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q10-original.png",
+    "md5": "d3c68b00a26baab083731a046e9b7ab0",
+    "alt": "Original SEC 2011 Higher Construction Studies Question 10: the printed question with a sketch of an MHRV system in a Passive House.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q10-alt-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q10-alt-original.png",
+    "md5": "633ec8c33ec18b6cebab9fbda8f8ca30",
+    "alt": "Original SEC 2011 Higher Construction Studies alternative Question 10: the printed quotation from the Urban Design Manual on good neighbourhoods, and the task.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2011-HL-q1-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q1-section.png",
+    "md5": "34a8bfcf5b26fbc9773f77868e6f7d3b",
+    "alt": "SEC model sections through the accessible door threshold, sill and lintel in the cavity wall (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q2-requirements": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q2-requirements.png",
+    "md5": "50fd040dfd5a3a6c9c74e44c95a7db2d",
+    "alt": "SEC 2011 Higher marking scheme notes on the functional requirements of a roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q2-roofs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q2-roofs.png",
+    "md5": "bb57be50f5a703a3d789b5fb4487210a",
+    "alt": "SEC 2011 Higher marking scheme sketches and typical sizes of a traditional cut purlin roof and a prefabricated W truss, with notes on their stability (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q2-recommendation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q2-recommendation.png",
+    "md5": "c17f8d6d2e17e519de81c4a6bc48295b",
+    "alt": "SEC 2011 Higher marking scheme notes on the merits of cut and trussed roofs.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q3-design": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q3-design.png",
+    "md5": "a37bbba30b66a0396c36a82f500187f2",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches on redesigning the envelope — windows, walls, roof and floor — and the layout (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q3-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q3-reasons.png",
+    "md5": "cd8b3f592c7367a3e199393d1d811924",
+    "alt": "SEC 2011 Higher marking scheme notes on the reasons for the window, wall and roof changes (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q4-principles": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q4-principles.png",
+    "md5": "e816b105927cfd2977af110a6e02416d",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches on mass, completeness and isolation (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q4-party-wall": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q4-party-wall.png",
+    "md5": "a39ad5c27047d9883ab31de7078a0aa0",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches on sound through the party wall and its revised detailing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q4-partition": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q4-partition.png",
+    "md5": "bdc15da9d21fc480d3451b3e96876202",
+    "alt": "SEC 2011 Higher marking scheme table and sketches of a double stud partition with notes on mass, isolation and completeness.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q5-calculation": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q5-calculation.png",
+    "md5": "09ee85cea088b7fb420bb53383b6b3fd",
+    "alt": "SEC worked solution: the U-value table giving a total resistance of 0.63955 and U = 1.563599 W/m²K, and the 113 mm of expanded polystyrene needed for 0.27 W/m²K.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q5-walls": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q5-walls.png",
+    "md5": "c9de7de687bd58d022215073839d1f5c",
+    "alt": "SEC 2011 Higher marking scheme notes on the disadvantages of hollow block walls and four recommended external wall types with sketches (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q6-features": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q6-features.png",
+    "md5": "638fa82bf0d528fe2997276ec05fa0ca",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches on the low environmental impact features of the design (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q6-importance": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q6-importance.png",
+    "md5": "4a19933192a947937c3db11ea19b1061",
+    "alt": "SEC 2011 Higher marking scheme notes on the form of the house, materials and labour, and design for lifetime use (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q7-section": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q7-section.png",
+    "md5": "78d00edd5d908d1f3c38b3e16dadcd81",
+    "alt": "SEC model section through the chimney stack and slated roof, with flashings and dimensions.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q8-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q8-system.png",
+    "md5": "ee5da5c9d019dd57e14085a6fe35c1b8",
+    "alt": "SEC single-line diagram of the zoned stove heating system, with notes on control valves, pipe sizes and the solar modifications.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q8-siting": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q8-siting.png",
+    "md5": "b7f26782c176d5ead98f1011b4d73623",
+    "alt": "SEC 2011 Higher marking scheme notes and sketch on the orientation and inclination of solar panels.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q9-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q9-scheme.png",
+    "md5": "50bb60b052d99c7403617442123a8dc5",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches for all the circled junctions — the cill, the window head, the eaves and the floor (Figs 9.1–9.5) — and the advantages (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q10-principles": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q10-principles.png",
+    "md5": "412ed2ce5ee779d3eb3bb1e07b30a55d",
+    "alt": "SEC 2011 Higher marking scheme notes and sketches for all three items — passive foundations, the airtight envelope, and windows and glazing (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q10-mhrv": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q10-mhrv.png",
+    "md5": "ba6260d39349d9ac7a18fd2f4978d69c",
+    "alt": "SEC 2011 Higher marking scheme notes and sketch on how an MHRV system works.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2011-HL-q10-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2011-HL-q10-advantages.png",
+    "md5": "d0930e565ff72b7ca2ec31e78b0815e6",
+    "alt": "SEC 2011 Higher marking scheme notes on the advantages and disadvantages of MHRV (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2011 Higher Level — © State Examinations Commission.",
+    "solution": true
   }
 }
