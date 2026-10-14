@@ -1791,13 +1791,14 @@
 }
 .journey-paper .island-tile-edit:hover {
   stroke: #f8762890;
-  fill: #f876280f;
 }
 .journey-paper .island-tile-edit:focus-visible,
 .journey-paper .island-tile-edit.selected {
   stroke: #f87628;
   stroke-width: 5;
-  fill: #f8762833;
+}
+.journey-paper .island-tile-edit-wash {
+  fill: #f8762840;
 }
 .journey-paper .tile-editor .placement-title {
   align-items: center;

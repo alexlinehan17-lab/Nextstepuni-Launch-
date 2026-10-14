@@ -243,6 +243,12 @@ export function IslandMap({
           <g pointerEvents="none">
             <PaperGround cells={world.placed} />
             {ghost && <PaperGround cells={[ghost]} opacity={0.66} />}
+            {/* The selected tile's wash sits on the ground, under the scenery,
+                so it never tints a neighbour's tall art; the outline stays on top. */}
+            {building && selectedTile && (() => {
+              const cell = world.placed.find(c => c.key === selectedTile);
+              return cell ? <polygon className="island-tile-edit-wash" points={points(cell.x, cell.y)} /> : null;
+            })()}
           </g>
           {[...world.placed, ...(ghost ? [ghost] : [])]
             .sort((a, b) => a.y - b.y || a.x - b.x)
