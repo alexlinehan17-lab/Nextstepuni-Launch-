@@ -60,6 +60,7 @@ import geography_review_2019_hl as REVIEW_2019_HL
 import geography_review_2019_ol as REVIEW_2019_OL
 import geography_review_2018_hl as REVIEW_2018_HL
 import geography_review_2018_ol as REVIEW_2018_OL
+import geography_review_2017_hl as REVIEW_2017_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -104,6 +105,7 @@ REVIEWED = {
     (2019, 'ordinary'): REVIEW_2019_OL,
     (2018, 'higher'): REVIEW_2018_HL,
     (2018, 'ordinary'): REVIEW_2018_OL,
+    (2017, 'higher'): REVIEW_2017_HL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -964,6 +966,9 @@ COMPANIONS: dict[int, dict[str, str]] = {
     # 2018's map and legend are published only as JPEGs; Paper Trail files its
     # aerial photograph as the one-page PDF.
     2018: {'place': 'Sligo', 'map': 'LC005CLP003EV.jpg', 'legend': 'LC005CLPC00EV.jpg',
+           'aerial': 'LC005CLP004EV'},
+    # 2017's map extract is a one-page PDF holding a 1136 x 784 pixel image.
+    2017: {'place': 'Macroom', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV'},
 }
 

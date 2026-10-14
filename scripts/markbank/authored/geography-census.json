@@ -1,6 +1,7 @@
 {
   "subjectId": "geography",
   "years": [
+    2017,
     2018,
     2019,
     2020,
@@ -15,11 +16,1001 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 2163,
-  "includedBaseTasks": 2162,
+  "paperBaseTasks": 2273,
+  "includedBaseTasks": 2272,
   "excludedBaseTasks": 1,
-  "authoredCards": 2314,
+  "authoredCards": 2439,
   "baseTasks": [
+    {
+      "id": "geography-2017-hl-p1-q1",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q1(i)",
+      "title": "Folding",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q1-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q1(ii)",
+      "title": "Folding",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q2",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q2(i)",
+      "title": "The Physical Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q2-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q2(ii)",
+      "title": "The Physical Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q3",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q3(i)",
+      "title": "Coastal Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q3-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q3(ii)",
+      "title": "Coastal Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q3-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q3(iii)",
+      "title": "Coastal Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q4",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q4(i)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q4-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q4(ii)",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q5",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q5",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q6",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q6(i)",
+      "title": "Landscape Identification",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q6-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q6(ii)",
+      "title": "Landscape Identification",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q6-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q6(iii)",
+      "title": "Landscape Identification",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q7",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q7(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q7-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q7(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q7-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q7(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q7-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q7(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(i)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(ii)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(iii)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(iv)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-v",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(v)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-vi",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(vi)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-vii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(vii)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q8-viii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q8(viii)",
+      "title": "Elevation profile",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q9",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q9",
+      "title": "Aerial Photograph – Location",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q10",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q10(i)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q10-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q10(ii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q10-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q10(iii)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q10-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q10(iv)",
+      "title": "Weather",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q11",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q11(i)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q11-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q11(ii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q11-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q11(iii)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q11-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q11(iv)",
+      "title": "Statistical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q12",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q12(i)",
+      "title": "Housing Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q12-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q12(ii)",
+      "title": "Housing Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q12-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q12(iii)",
+      "title": "Housing Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p1-q12-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2017 HL Part 1 Q12(iv)",
+      "title": "Housing Statistics – Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q1a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q1A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q1b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q1B",
+      "title": "Volcanic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q1c-the-impact-of-flood-control-measur",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q1C",
+      "title": "Human Interaction with Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2A(i)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2A(ii)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2A(iii)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2A(iv)",
+      "title": "Adjustment to Base Level",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2b-the-surface-karst-landscape",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2B",
+      "title": "Chemical Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q2c-volcanoes",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q2C",
+      "title": "The Tectonic Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3A(i)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3A(ii)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3A(iii)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3A(iv)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3a-v-thermal-metamorphism",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3A(v)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3b-route-i-fluvial-landform",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3B",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q3c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q3C",
+      "title": "Seismic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q4a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q4b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q4B",
+      "title": "Tertiary Economic Activity – European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q4c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q4C",
+      "title": "Primary Economic Activity – Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5A(i)",
+      "title": "Overseas Travel",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5A(ii)",
+      "title": "Overseas Travel",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5A(iii)",
+      "title": "Overseas Travel",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5A(iv)",
+      "title": "Overseas Travel",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5B",
+      "title": "Population Distribution – Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q5c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q5C",
+      "title": "The European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6A(i)",
+      "title": "European Union Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6A(ii)",
+      "title": "European Union Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6A(iii)",
+      "title": "European Union Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6A(iv)",
+      "title": "European Union Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6B",
+      "title": "Secondary Economic Activity – Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q6c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q6C",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q7a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q7A(i)",
+      "title": "Energy Production",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q7a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q7A(ii)",
+      "title": "Energy Production",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q7b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q7B",
+      "title": "Location of Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q7c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q7C",
+      "title": "Colonialism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q8a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q8A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q8b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q8B",
+      "title": "Multinational Company and Globalisation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q8c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q8C",
+      "title": "Economic Activity – Environmental Impact",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9A(i)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9A(ii)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9A(iii)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9A(iv)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9a-v",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9A(v)",
+      "title": "International Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9b-footloose-industries",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9B",
+      "title": "Economic Activity in a Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q9c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q9C",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q10a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q10b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q10B",
+      "title": "Dynamics of Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q10c",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q10C",
+      "title": "Urban Issues",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(i)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(ii)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a-iii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(iii)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a-iv",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(iv)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a-v",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(v)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11a-vi",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11A(vi)",
+      "title": "Irish Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11B",
+      "title": "Urban Land Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q11c-development-of-resources",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q11C",
+      "title": "Dynamics of Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q12a",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q12A(i)",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q12a-ii",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q12A(ii)",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q12b",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q12B",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q12c-aerial-photograph",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q12C",
+      "title": "Urban settlement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q13",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q13",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q14",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q14",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q15",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q15",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q16",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q16",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q17",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q17",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q18",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q18",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q19",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q19",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q20",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q20",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q21",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q21",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q22",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q22",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q23",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q23",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2017-hl-p2-q24",
+      "year": 2017,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2017 HL Part 2 Q24",
+      "title": "The Atmosphere – Ocean Environment",
+      "status": "authored"
+    },
     {
       "id": "geography-2018-hl-p1-q1",
       "year": 2018,
@@ -19490,6 +20481,15 @@
   ],
   "sittings": [
     {
+      "year": 2017,
+      "level": "higher",
+      "paperBaseTasks": 110,
+      "includedBaseTasks": 110,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 125,
+      "reviewed": true
+    },
+    {
       "year": 2018,
       "level": "higher",
       "paperBaseTasks": 122,
@@ -19653,6 +20653,106 @@
     }
   ],
   "selectionAudit": [
+    {
+      "questionRef": "2017 HL Part 2 Q1C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q2C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q3A(v)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q3B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q6B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q9B",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q10C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q11C",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q12C",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q13",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
+    },
+    {
+      "questionRef": "2017 HL Part 2 Q16",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
+    },
     {
       "questionRef": "2018 HL Part 2 Q1B",
       "classification": "finite-expanded",
