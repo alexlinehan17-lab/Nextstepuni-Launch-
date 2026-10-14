@@ -781,6 +781,36 @@
     "english-6-0",
     "english-12-9"
    ]
+  },
+  {
+   "id": "english-higher-text-days-without-end-reviewed-archive",
+   "level": "higher",
+   "slug": "text-days-without-end",
+   "label": "Text - Days Without End",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-10"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-handmaid-s-tale-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-handmaid-s-tale",
+   "label": "Text - The Handmaid's Tale",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-23"
+   ]
+  },
+  {
+   "id": "english-higher-text-the-tempest-reviewed-archive",
+   "level": "higher",
+   "slug": "text-the-tempest",
+   "label": "Text - The Tempest",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-4"
+   ]
   }
  ]
 }

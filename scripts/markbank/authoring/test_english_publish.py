@@ -284,7 +284,7 @@ class EnglishLegacyBridgeTest(unittest.TestCase):
         self.assertEqual({modes[f'english-2024-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})
         rows_2023 = self.bridge['papers']['english-2023-hl-p2']['legacyCards']['english-2023-hl-p2-comparative-c-q1']['correction']['rows']
         self.assertEqual([(row['schemePage'], row['schemeRow'][24:31]) for row in rows_2023], [(39, '30 - 27'), (40, '40 - 36')])
-        for year in (2022, 2023):
+        for year in (2021, 2022, 2023):
             modes_year = {c['id']: c['assessment']['mode'] for c in manifest['cards']
                           if c['id'].startswith(f'english-{year}-hl-p2-comparative-')}
             self.assertEqual({modes_year[f'english-{year}-hl-p2-comparative-{m}-q1-{p}'] for m in 'abc' for p in 'ab'}, {'combined'})

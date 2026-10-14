@@ -4484,6 +4484,39 @@
       "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
       "questionSha256": "38afff40de8a7ad5ed0eb53b6bc8ad4e6be13f4a66aad3f99efe5bca7e85d159",
       "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "How to Construct an Albatross",
+      "pages": [
+        6
+      ],
+      "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+      "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
+      "reason": "Paper PDF6 prints the introduction (Louise Greig issues instructions for the construction of an albatross), the instruction to answer either Question 1 or Question 2, the title, the whole 17-line poem and the byline; visually verified."
+    },
+    "english-2021-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "How to Construct an Albatross",
+      "pages": [
+        6
+      ],
+      "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+      "questionSha256": "b4be1aff96504d2e04d949f7195d24619f518ffb10168b32d246bff9f534ba35",
+      "reason": "Paper PDF6 prints the introduction (Louise Greig issues instructions for the construction of an albatross), the instruction to answer either Question 1 or Question 2, the title, the whole 17-line poem and the byline; visually verified."
+    },
+    "english-2021-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "How to Construct an Albatross",
+      "pages": [
+        6
+      ],
+      "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+      "questionSha256": "c29532c5ac2fdc05c351763b271f79b7ba617e891ff40993aafb64734dcd9d5d",
+      "reason": "Paper PDF6 prints the introduction (Louise Greig issues instructions for the construction of an albatross), the instruction to answer either Question 1 or Question 2, the title, the whole 17-line poem and the byline; visually verified."
     }
   }
 }

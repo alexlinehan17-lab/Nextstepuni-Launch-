@@ -8392,53 +8392,53 @@
     },
     "english-2021-hl-p2-single-a-i": {
       "questionSha256": "1c1d5092db0a3206a550170b88f0d1b1a918d063e352e3dcebdb20b8fe4074a8",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF22: how knowledge of Offred’s life before Gilead and the insights from her memories and private thoughts influenced the candidate’s response to the character. One 70-mark response."
     },
     "english-2021-hl-p2-single-a-ii": {
       "questionSha256": "93b26cabfe67f4ad6436a2251e829a5f06fc39e0602d5d8c08240f7960c7f6dd",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF23: the reasons why the dystopian aspects “increase or diminish” the narrative power — one graded judgement (code N “increase and/or diminish”), not routes. One 70-mark response."
     },
     "english-2021-hl-p2-single-b-i": {
       "questionSha256": "10f7fc25ee616464a8db3781b604dbf6edbcdafc54914067cfe16a5d61d08525",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF24: how knowledge of Thomas McNulty’s challenges before he met John Cole and his relationship with Winona influenced the candidate’s response to the character. One 70-mark response."
     },
     "english-2021-hl-p2-single-b-ii": {
       "questionSha256": "48db4487f408ccc9015e29d90c975bf99a0af2448b0950b6b42c3c0c01538625",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF25: the reasons why the historical aspects “increase or diminish” the narrative power — one graded judgement (code N “increase and/or diminish”), not routes. One 70-mark response."
     },
     "english-2021-hl-p2-single-c-i": {
       "questionSha256": "0069af7b99dad78d31f0737925c04ef5aa819c721efaef2a6bb6a0e0abe74311",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF26: how knowledge of Heathcliff’s childhood difficulties and his obsessive behaviour influenced the candidate’s response to the character. One 70-mark response."
     },
     "english-2021-hl-p2-single-c-ii": {
       "questionSha256": "d3808c084005ddeb71f6d4c5e90a24abda5ef5928bed255ad060b004a4c73b19",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF27: the reasons why the gothic aspects “increase or diminish” the narrative power — one graded judgement (code N “increase and/or diminish”), not routes. One 70-mark response."
     },
     "english-2021-hl-p2-single-d-i": {
       "questionSha256": "fd5d9dbfebaa27a7002f91ead5c1717240a2e1dd2bf8ac66311b92e823507e7c",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF28: how effectively chaos and confusion are used; “may be treated separately or together”. One 70-mark response."
     },
     "english-2021-hl-p2-single-d-ii": {
       "questionSha256": "211166d64b82ad2bf9400e962f402939d9618de20e8068169c37c62a6b2889da",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "required",
+      "reason": "Scheme PDF29: why the removal of Kent and the Fool “would or would not diminish” the play; “Expect treatment of both characters, although not necessarily equally”. One 70-mark response."
     },
     "english-2021-hl-p2-single-e-i": {
       "questionSha256": "8bb775d2455775acec1be6a2629d343e34241d7e925f3624f6b83400710b0c81",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF30: how effectively chaos and confusion are used; “may be treated separately or together”. One 70-mark response."
     },
     "english-2021-hl-p2-single-e-ii": {
       "questionSha256": "6e67034b394e1755d94234c86592310d77d956b2e37443cfb5c6319689468474",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "required",
+      "reason": "Scheme PDF31: why the removal of Caliban and Miranda “would or would not diminish” the play; “Expect treatment of both characters, although not necessarily equally”. One 70-mark response."
     },
     "english-2021-ol-p2-single-a-q1-a": {
       "questionSha256": "6d655ccf55fb6e72eae9fba0e99f06a27a1875995afdfdb46e2b39b0f35ee1bc",
@@ -11855,12 +11855,12 @@
     "english-2021-hl-p2-prescribed-2": {
       "questionSha256": "d2fe3114de663e08709e94082563f5e106b566f26e09c1beb298878d9f7ab8ac",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF43, 45: freedom of choice of poems studied; the extent of agreement with the statement or question. One 50-mark response."
     },
     "english-2021-hl-p2-prescribed-5": {
       "questionSha256": "e23e21344d0d64a74b44df1fc2bcc956d50fd96f6aa117f36fe9cdf83aeac524",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF43, 48: freedom of choice of poems studied; the extent of agreement with the statement or question. One 50-mark response."
     },
     "english-2021-ol-p2-prescribed-a-q1-a": {
       "questionSha256": "0204092fbd270ead3f52115e6e3745e3fc3dd3a1d4cbb2bb0a14b12eed27eb2f",
@@ -12598,9 +12598,9 @@
       "questionSha256": "97270e918281a07c9ff9453383d4e4580e36dff4e51a9fa3f98dad49a2f554a1"
     },
     "english-2021-hl-p2-unseen-q2": {
-      "kind": "open",
-      "reason": "Images, lines, emotions and examples are freely identified within the poem, without a fixed printed option list. Ordinary literary judgements allow qualified answers; grammatical or, which and his/her do not create closed task routes.",
-      "questionSha256": "c29532c5ac2fdc05c351763b271f79b7ba617e891ff40993aafb64734dcd9d5d"
+      "questionSha256": "c29532c5ac2fdc05c351763b271f79b7ba617e891ff40993aafb64734dcd9d5d",
+      "kind": "flexible",
+      "reason": "Scheme PDF42: “at least two reasons” why the poem is “serious or amusing or both”, with reference to language and subject matter. One 20-mark response."
     },
     "english-2022-hl-p2-unseen-q2": {
       "questionSha256": "5792ccb4aba8674c35d4047bcbe82def9f04919fd95af0757eb3b2153f97f517",
@@ -13466,48 +13466,48 @@
     },
     "english-2021-hl-p2-comparative-a-q1-a": {
       "questionSha256": "950d8c5388e65783789547bcbfa57637a6ae87f769b78a37f859ca8a67a336d2",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Scheme PDF33: a theme or issue of the candidate’s own and “at least two reasons” why its exploration was or was not emotionally engaging in one text. One 30-mark response."
     },
     "english-2021-hl-p2-comparative-a-q1-b": {
       "questionSha256": "ffb6b432ad3e07f796eabf9a3722b058fa953f8e2756f31d157c76b9d50d795d",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "open",
+      "reason": "Scheme PDF34: why the same theme was more, less or equally engaging in each of two other texts, compared — a graded comparison. One 40-mark response."
     },
     "english-2021-hl-p2-comparative-a-q2": {
       "questionSha256": "6fd525dfe5ad4cf9fa2b5349989cc1a1930fc937b76e771a897bd64bf560c53d",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Paper PDF4 and scheme PDF35: at least two texts; insights from what motivates one central character in “one or more key decisions” — “may be similar or different”. One 70-mark comparison."
     },
     "english-2021-hl-p2-comparative-b-q1-a": {
       "questionSha256": "f08fe47c2c4c48119d553174da7b4cb8bb69990d16aea834aba3506333735694",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF36: the extent to which a significant relationship was influenced by “at least one aspect” of the cultural context in one text. One 30-mark response."
     },
     "english-2021-hl-p2-comparative-b-q1-b": {
       "questionSha256": "55355a6797b50a443afedf6392779901465ced9f18d683989bf07b892767700c",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF37: “any aspect or aspects” of the cultural context in each of two other texts, compared; links with part (a) not required. One 40-mark response."
     },
     "english-2021-hl-p2-comparative-b-q2": {
       "questionSha256": "845afad88acca3b65a6ab8d7b533d40484612b380371aff5b173019fa650a5a5",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF38: “at least two reasons” why significant social change does or does not occur, in at least two texts — one comparison. One 70-mark response."
     },
     "english-2021-hl-p2-comparative-c-q1-a": {
       "questionSha256": "b49feed96e3174eda24263fb7fe093a704233b5127d6ce73afb4f5c9082d99f4",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF39: the extent to which an inspiring character influenced the sense of the general vision and viewpoint of one text. One 30-mark response."
     },
     "english-2021-hl-p2-comparative-c-q1-b": {
       "questionSha256": "bf069404c444dad3e88ddc33f470efec2a49b8d7217c22ece2582be44f4d2fc0",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF40: the same question compared in two other texts; links with part (a) not required. One 40-mark response."
     },
     "english-2021-hl-p2-comparative-c-q2": {
       "questionSha256": "000a0954f6b737d6c99e3ea3978cea1ff47f80321b96ff33c1f3b6e87f448f37",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF41: at least two texts; the extent to which “an aspect or aspects” found unsettling or disturbing influenced the general vision and viewpoint. One 70-mark comparison."
     },
     "english-2021-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "7c7dee5fa90e588ed4242cf8f6524a67c7063a010b778850bde3b24fab4529ad",
@@ -17238,6 +17238,31 @@
       "questionSha256": "38afff40de8a7ad5ed0eb53b6bc8ad4e6be13f4a66aad3f99efe5bca7e85d159",
       "kind": "open",
       "reason": "Scheme PDF11: four features of the language of persuasion chosen freely from the text, discussed for how effectively they craft an emotional and inspiring speech. One 20-mark response."
+    },
+    "english-2021-hl-p2-unseen-q1-a": {
+      "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
+      "kind": "open",
+      "reason": "Scheme PDF42: “whether or not they find the language used by the poet appealing” — one explained judgement. One 10-mark response."
+    },
+    "english-2021-hl-p2-unseen-q1-b": {
+      "questionSha256": "b4be1aff96504d2e04d949f7195d24619f518ffb10168b32d246bff9f534ba35",
+      "kind": "open",
+      "reason": "Scheme PDF42: the effect, in the candidate’s opinion, of the missing final punctuation mark. One 10-mark response."
+    },
+    "english-2021-hl-p2-prescribed-1": {
+      "questionSha256": "171e89461088d708d26f1d0eb4b18842b53fd58a852385b9bb4f7d663b2135b8",
+      "kind": "open",
+      "reason": "Scheme PDF43, 44: freedom of choice of poems studied; the extent of agreement with the statement or question. One 50-mark response."
+    },
+    "english-2021-hl-p2-prescribed-3": {
+      "questionSha256": "ec85397954a8f32d744f818799b3f8e8382b5f3d63a5d001985d41b34ce0c6c7",
+      "kind": "open",
+      "reason": "Scheme PDF43, 46: freedom of choice of poems studied; the extent of agreement with the statement or question. One 50-mark response."
+    },
+    "english-2021-hl-p2-prescribed-4": {
+      "questionSha256": "1da82a63a982d2ea23a6fc5b51b4c56be4fc54385ac2e4ccc92be25fe219215a",
+      "kind": "open",
+      "reason": "Scheme PDF43, 47: freedom of choice of poems studied; the extent of agreement with the statement or question. One 50-mark response."
     }
   }
 }

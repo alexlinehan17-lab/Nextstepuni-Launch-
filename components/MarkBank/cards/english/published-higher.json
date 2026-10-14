@@ -125,6 +125,17 @@
    "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa"
   },
   {
+   "paperId": "english-2021-hl-p2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 27,
+   "cards": 27,
+   "printedDuplicates": 0,
+   "paperSha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2",
+   "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -1033,6 +1044,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2021-hl-p1",
+  "english-2021-hl-p2",
   "english-2022-hl-p1",
   "english-2022-hl-p2",
   "english-2023-hl-p1",
@@ -1062,6 +1074,29 @@
   "english-2021-hl-p1-t3-a-ii",
   "english-2021-hl-p1-t3-a-iii",
   "english-2021-hl-p1-t3-b",
+  "english-2021-hl-p2-comparative-a-q1",
+  "english-2021-hl-p2-comparative-a-q2",
+  "english-2021-hl-p2-comparative-b-q1",
+  "english-2021-hl-p2-comparative-b-q2",
+  "english-2021-hl-p2-comparative-c-q1",
+  "english-2021-hl-p2-comparative-c-q2",
+  "english-2021-hl-p2-prescribed-1",
+  "english-2021-hl-p2-prescribed-2",
+  "english-2021-hl-p2-prescribed-3",
+  "english-2021-hl-p2-prescribed-4",
+  "english-2021-hl-p2-prescribed-5",
+  "english-2021-hl-p2-single-a-i",
+  "english-2021-hl-p2-single-a-ii",
+  "english-2021-hl-p2-single-b-i",
+  "english-2021-hl-p2-single-b-ii",
+  "english-2021-hl-p2-single-c-i",
+  "english-2021-hl-p2-single-c-ii",
+  "english-2021-hl-p2-single-d-i",
+  "english-2021-hl-p2-single-d-ii",
+  "english-2021-hl-p2-single-e-i",
+  "english-2021-hl-p2-single-e-ii",
+  "english-2021-hl-p2-unseen-q1",
+  "english-2021-hl-p2-unseen-q2",
   "english-2022-hl-p1-composing-1",
   "english-2022-hl-p1-composing-2",
   "english-2022-hl-p1-composing-3",
@@ -1232,6 +1267,10 @@
   "english-2025-hl-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2021-hl-p2-comparative-a-q1": "english-2021-hl-p2-comparative-a-q1-a",
+  "english-2021-hl-p2-comparative-b-q1": "english-2021-hl-p2-comparative-b-q1-a",
+  "english-2021-hl-p2-comparative-c-q1": "english-2021-hl-p2-comparative-c-q1-a",
+  "english-2021-hl-p2-unseen-q1": "english-2021-hl-p2-unseen-q1-a",
   "english-2022-hl-p2-comparative-a-q1": "english-2022-hl-p2-comparative-a-q1-a",
   "english-2022-hl-p2-comparative-b-q1": "english-2022-hl-p2-comparative-b-q1-a",
   "english-2022-hl-p2-comparative-c-q1": "english-2022-hl-p2-comparative-c-q1-a",
@@ -1249,7 +1288,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 562,
+ "cardCount": 589,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -10138,6 +10177,911 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-a-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text A(i)",
+   "questionText": "Discuss how your knowledge of Offred’s life before Gilead, and the insights you gained from her memories and private thoughts, influenced your response to her character. Develop your answer with reference to Margaret Atwood’s novel, The Handmaid’s Tale.",
+   "totalMarks": 70,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-a-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text A(ii)",
+   "questionText": "Discuss the reasons why, in your opinion, the dystopian aspects of the novel increase or diminish the narrative power of Margaret Atwood’s novel, The Handmaid’s Tale. Develop your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-b-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text B(i)",
+   "questionText": "Discuss how your knowledge of the challenges Thomas McNulty faced before he met John Cole, and the insights you gained from his relationship with Winona, influenced your response to his character. Develop your answer with reference to Sebastian Barry’s novel, Days Without End.",
+   "totalMarks": 70,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-b-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text B(ii)",
+   "questionText": "Discuss the reasons why, in your opinion, the historical aspects of the novel increase or diminish the narrative power of Sebastian Barry’s novel, Days Without End. Develop your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-c-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text C(i)",
+   "questionText": "Discuss how your knowledge of the difficulties Heathcliff experienced as a child, and the insights you gained from his obsessive behaviour throughout the novel, influenced your response to his character. Develop your answer with reference to Emily Brontë’s novel, Wuthering Heights.",
+   "totalMarks": 70,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-c-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text C(ii)",
+   "questionText": "Discuss the reasons why, in your opinion, the gothic aspects of the novel increase or diminish the narrative power of Emily Brontë’s novel, Wuthering Heights. Develop your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-d-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text D(i)",
+   "questionText": "“Chaos and confusion are used to great effect throughout Shakespeare’s play, King Lear.” Discuss the above statement, developing your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-d-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text D(ii)",
+   "questionText": "A production of Shakespeare’s play, King Lear, in which the characters of Kent and the Fool do not appear has been proposed. Discuss the reasons why, in your opinion, the removal of each of these characters would or would not diminish Shakespeare’s play, King Lear. Develop your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-e-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text E(i)",
+   "questionText": "“Chaos and confusion are used to great effect throughout Shakespeare’s play, The Tempest.” Discuss the above statement, developing your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-single-e-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Single Text E(ii)",
+   "questionText": "A production of Shakespeare’s play, The Tempest, in which the characters of Caliban and Miranda do not appear has been proposed. Discuss the reasons why, in your opinion, the removal of each of these characters would or would not diminish Shakespeare’s play, The Tempest. Develop your response with reference to the text.",
+   "totalMarks": 70,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-a-q1-a",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "Identify a theme or issue you studied on your comparative course. Discuss the various reasons why you did or did not find the exploration of this theme or issue emotionally engaging in one text on your comparative course. Support your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-a-q1-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare the reasons why you found the exploration of the same theme or issue discussed above, more, less or equally emotionally engaging in each of two other texts you studied on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-a-q2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative A Q2",
+   "questionText": "Compare the insights you gained into the same theme or issue through understanding what influences or motivates one central character, from each of at least two texts on your comparative course, when making one or more key decisions. Develop your response with reference to your chosen texts. The insight or insights you gain into the same theme or issue from different texts may be similar or different.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Theme or Issue · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-b-q1-a",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "Discuss the extent to which a significant relationship was influenced by at least one aspect of the cultural context in one text on your comparative course. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-b-q1-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "Compare the extent to which one significant relationship was influenced by any aspect or aspects of the cultural context in each of two other texts on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-b-q2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative B Q2",
+   "questionText": "Compare the reasons why significant social change does or does not occur within the cultural context established in each of at least two texts on your comparative course. Develop your response with reference to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Cultural Context · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-c-q1-a",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative C Q1(a)",
+   "questionText": "Discuss the extent to which a character that you found inspiring in one text on your comparative course influenced your sense of the general vision and viewpoint of this text. Develop your response with reference to your chosen text.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-c-q1-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative C Q1(b)",
+   "questionText": "In relation to two other texts on your comparative course, compare the extent to which a character that you found inspiring influenced your sense of the general vision and viewpoint of each of these texts. Develop your response with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-comparative-c-q2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Comparative C Q2",
+   "questionText": "“The aspects of a text that we find unsettling or disturbing often influence our sense of the general vision and viewpoint.” In relation to at least two texts on your comparative course, compare the extent to which an aspect or aspects of your chosen texts, that you found unsettling or disturbing, influenced your sense of the general vision and viewpoint of these texts. Develop your response with refence to your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · General Vision and Viewpoint · Q2",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-unseen-q1-a",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "Do you find the language used by the poet in the above poem appealing? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "How to Construct an Albatross",
+    "pages": [
+     6
+    ],
+    "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-unseen-q1-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "The poet has not placed a punctuation mark at the end of the above poem. In your opinion, what is the effect of this decision on the poem? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "How to Construct an Albatross",
+    "pages": [
+     6
+    ],
+    "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-unseen-q2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "Based on your reading of the above poem, explain the reasons why you find it to be serious or amusing or both. Support your response with reference to the poet’s use of language and the subject matter of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "How to Construct an Albatross",
+    "pages": [
+     6
+    ],
+    "attribution": "How to Construct an Albatross — Louise Greig, as reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "21"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-prescribed-1",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "Eavan Boland Discuss how successfully, in your opinion, Eavan Boland employs a range of narrative elements in her poetry to communicate a variety of thematic concerns. Develop your response with reference to the poems by Eavan Boland on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Eavan Boland",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "22"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-prescribed-2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "John Keats “Our enjoyment of the sensuous beauty of the poetry of John Keats may be diminished by our awareness of the fear or melancholy often evident in his work.” Based on your experience of the poetry by John Keats you have studied for your Leaving Certificate, to what extent do you agree or disagree with the above statement? Develop your response with reference to the poems by John Keats on the Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-11",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "John Keats",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "23"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-prescribed-3",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "Seamus Heaney “Seamus Heaney transforms the familiar and the mundane through his powerful use of language, thereby enabling us to learn a range of profound lessons from his poetry.” Discuss the above statement, developing your response with reference to your experience of the poems by Seamus Heaney on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Seamus Heaney",
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-prescribed-4",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "Sylvia Plath Discuss how successfully, in your opinion, Sylvia Plath uses stylistic features in an innovative way to convey both overwhelming wonder and unsettling menace in her work. Develop your response with reference to the poems by Sylvia Plath on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sylvia Plath",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-hl-p2-prescribed-5",
+   "year": 2021,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2021 HL Paper 2 Prescribed Poetry Q5",
+   "questionText": "Paul Durcan “Durcan makes effective use of tone or mood to express his emotions, thereby amplifying his various thematic concerns.” Discuss the above statement, developing your response with reference to your experience of the poetry by Paul Durcan on your Leaving Certificate English course.",
+   "totalMarks": 50,
+   "topicId": "english-11-4",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Paul Durcan",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
    }
   },
   {
