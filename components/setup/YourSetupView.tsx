@@ -139,9 +139,9 @@ export default function YourSetupView({
                   </table>
                   {setup.points && (
                     <dl className="ys-points" aria-label="CAO points from your grades">
-                      <div><dt>Points now</dt><dd>{setup.points.current}</dd></div>
+                      <div><dt>Your grades now</dt><dd>{setup.points.current}</dd></div>
                       <div className="ys-points-goal"><dt>Your goal</dt><dd>{setup.points.target}</dd></div>
-                      <p>Best six subjects{setup.points.counted < 6 ? ` (${setup.points.counted} graded)` : ''}, including the maths bonus.</p>
+                      <p>From the grades on this page{setup.points.counted < 6 ? ` (${setup.points.counted} graded)` : ''}: best six subjects, including the maths bonus.</p>
                     </dl>
                   )}
                 </>
