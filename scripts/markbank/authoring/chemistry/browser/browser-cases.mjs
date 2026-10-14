@@ -16,6 +16,8 @@ const browser = await chromium.launch({
   headless: true,
 });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+// Every other wait gets a bound too, so nothing in this file can hang.
+page.setDefaultTimeout(30000);
 await page.emulateMedia({ reducedMotion: 'reduce' });
 const errors = [];
 page.on('pageerror', e => errors.push(e.message));
@@ -23,10 +25,12 @@ page.on('response', r => { if (r.status() >= 400) errors.push(`${r.status()} ${n
 const results = [];
 try {
   for (const c of cases) {
-    // The first page compiles the session screen and its dependencies.
+    // The first page compiles the session screen and its dependencies; after
+    // that a page that takes a minute is stuck, not slow.
+    const wait = results.length ? 60000 : 180000;
     await page.goto(`http://127.0.0.1:5706/scripts/markbank/authoring/chemistry/browser/review.html?card=${c.id}`,
-      { timeout: 240000 });
-    await page.getByRole('button', { name: /Reveal the marking scheme/ }).waitFor({ timeout: 240000 });
+      { timeout: wait });
+    await page.getByRole('button', { name: /Reveal the marking scheme/ }).waitFor({ timeout: wait });
     if (!(await page.getByText(c.ask, { exact: false }).count())) throw new Error(`${c.id}: ask not shown`);
     if (await page.locator('img[src*="-scheme-"]').count()) throw new Error(`${c.id}: solution shown before the reveal`);
     if (await page.getByText(c.answer, { exact: false }).count()) throw new Error(`${c.id}: answer shown before the reveal`);
