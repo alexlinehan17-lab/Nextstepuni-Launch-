@@ -1,6 +1,6 @@
 """Crop a Mathematics part's whole printed scheme row -- model solution AND marking notes.
 
-    python3 scripts/markbank/authoring/maths/scheme_row_figures.py <year> <hl|ol> [--write | --publish]
+    python3 scripts/markbank/authoring/maths/scheme_row_figures.py <year> <hl|ol> [--write | --publish [p1|p2]]
 
 Why: the 2019 Ordinary Level scheme's text layer cannot carry everything it
 prints. Its subscripts and superscripts extract as unrelated ASCII (z2 reads as
@@ -119,11 +119,37 @@ AFFECTED = {
         'maths-2017-hl-p2-q8-a-ii', 'maths-2017-hl-p2-q8-a-iii', 'maths-2017-hl-p2-q8-b-i', 'maths-2017-hl-p2-q8-b-ii', 'maths-2017-hl-p2-q8-b-iii',
         'maths-2017-hl-p2-q9-a', 'maths-2017-hl-p2-q9-b', 'maths-2017-hl-p2-q9-c', 'maths-2017-hl-p2-q9-e', 'maths-2017-hl-p2-q9-f',
     ],
+    # 2016 Higher: model solutions printed as images or layouts the text layer
+    # cannot carry (graphs, tables, a construction, the long division, the
+    # first-principles and sum-to-product working) and bands that cannot be
+    # quoted (P1 Q4(b)(ii)'s log_a a). P1 Q1(c), P2 Q3(b) and P2 Q9(a)(iii)
+    # continue onto the next page in an unlabelled row.
+    (2016, 'hl'): [
+        'maths-2016-hl-p1-q1-c', 'maths-2016-hl-p1-q2-a', 'maths-2016-hl-p1-q3-a-i', 'maths-2016-hl-p1-q3-a-ii', 'maths-2016-hl-p1-q3-a-iii',
+        'maths-2016-hl-p1-q4-b-ii', 'maths-2016-hl-p1-q6-a', 'maths-2016-hl-p1-q6-b-i', 'maths-2016-hl-p1-q7-b-ii', 'maths-2016-hl-p1-q8-a-iv',
+        'maths-2016-hl-p1-q9-a-i', 'maths-2016-hl-p1-q9-a-ii', 'maths-2016-hl-p1-q9-a-iii', 'maths-2016-hl-p1-q9-b-iii',
+        'maths-2016-hl-p2-q3-a', 'maths-2016-hl-p2-q3-b', 'maths-2016-hl-p2-q4-a-ii', 'maths-2016-hl-p2-q4-b', 'maths-2016-hl-p2-q5-a-i',
+        'maths-2016-hl-p2-q6-b', 'maths-2016-hl-p2-q8-d-i', 'maths-2016-hl-p2-q8-d-ii', 'maths-2016-hl-p2-q9-a-iii',
+    ],
 }
 # Labels the scheme prints differently from the paper's part label.
 PRINTED_LABEL = {
     'maths-2017-hl-p1-q1-c-ii': 'c(ii)',  # printed without the brackets round c
     'maths-2017-hl-p1-q8-b-v': '(v)',     # printed without its (b)
+}
+# The same label on two rows of one page (2016 Higher P1 page 19 prints (ii)
+# under (a) and again under (b)): (label, which occurrence).
+PRINTED_LABEL.update({
+    'maths-2016-hl-p1-q3-a-i': '(i)', 'maths-2016-hl-p1-q3-a-ii': '(ii)', 'maths-2016-hl-p1-q3-a-iii': '(iii)',
+    'maths-2016-hl-p1-q4-b-ii': '(ii)', 'maths-2016-hl-p1-q8-a-iv': '(iv)', 'maths-2016-hl-p1-q7-b-ii': ('(ii)', 2),
+})
+# Rows the label search cannot place, given as visually verified (page, top,
+# bottom) table rules: 2016 Higher P1 Q9(a)(iii) prints its change-in-x/y
+# table above its labelled row, and P2 Q8(d)(i) sets its model-solution table
+# in a box of its own above an unlabelled marking-notes row.
+ROW_SPAN = {
+    'maths-2016-hl-p1-q9-a-iii': (24, 99.0, 442.6),
+    'maths-2016-hl-p2-q8-d-i': (42, 56.9, 322.0),
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
          'Zero Credit', 'No Credit', 'Note', 'Special Case', 'Misreading']
@@ -197,7 +223,15 @@ def rules(page):
     # which is what keeps a table drawn inside a model solution out.
     edges = vertical_xs(page)
     ends = lambda x: on(x) or any(abs(x - e) < 3 for e in edges)
-    return sorted({y for y, a, b in segs if on(a) and ends(b) and b - a > 150})
+    # The header rule's label-column piece is narrower than hsegments' 60pt
+    # floor, so in the 2016 Higher scheme the header's first boundary reads as
+    # 86, not the table's left border at 57, and a full-width rule drawn as one
+    # piece from that border (Q1(c)'s, under its (b)) was dropped. A rule may
+    # also start on the table's own left border; a table inside a model
+    # solution never reaches it.
+    left = min(edges) if edges else None
+    starts = lambda x: on(x) or (left is not None and abs(x - left) < 3)
+    return sorted({y for y, a, b in segs if starts(a) and ends(b) and b - a > 150})
 
 
 def table_x(page):
@@ -232,6 +266,9 @@ def find_row(page, label, alt=None):
     nothing or the same label belong to the part; the span stops at the first row
     labelled with anything else.
     """
+    nth = None
+    if isinstance(label, tuple):
+        label, nth = label
     want = norm_label(label)
     wants = {want, norm_label(alt)} if alt else {want}
     xs = vertical_xs(page)
@@ -247,12 +284,41 @@ def find_row(page, label, alt=None):
     hits = [i for i, r in enumerate(rows) if r[2] in wants]
     if not hits:
         raise SystemExit(f'label {label!r}: no ruled row reads that label on page {page.number + 1}')
+    if nth is not None:
+        # Only rows labelled exactly this, counted down the page.
+        hits = [h for h in hits if rows[h][2] == want][nth - 1:]
     i = j = hits[0]
     while j + 1 < len(rows) and (rows[j + 1][2] == '' or rows[j + 1][2] in wants) and abs(rows[j + 1][0] - rows[j][1]) <= 2:
         j += 1
     if any(h > j for h in hits):
         raise SystemExit(f'label {label!r}: {len(hits)} separate ruled rows read that label on page {page.number + 1}')
     return rows[i][0], rows[j][1]
+
+
+def continuation_rows(page):
+    """The rows at the top of a page that carry on the previous page's part.
+
+    2016 Higher Paper 1 Q1(c) prints its root-formula and sum-of-roots methods
+    on one page and three more methods on the next, in a row whose label column
+    is empty. The continuation runs from the page's first rule through every
+    unlabelled row that follows without a gap, and stops at the first label.
+    """
+    xs = vertical_xs(page)
+    label_right = xs[1] + 1
+    words = [w for w in page.get_text('words') if w[2] <= label_right]
+    rs = rules(page)
+    rows = []
+    for top, bottom in zip(rs, rs[1:]):
+        if bottom - top < 15:
+            continue
+        got = norm_label(''.join(w[4] for w in sorted(words, key=lambda w: (round(w[1]), w[0])) if top <= w[1] < bottom))
+        rows.append((top, bottom, got))
+    if not rows or rows[0][2] != '':
+        raise SystemExit(f'page {page.number + 1}: no unlabelled continuation row at the top')
+    j = 0
+    while j + 1 < len(rows) and rows[j + 1][2] == '' and abs(rows[j + 1][0] - rows[j][1]) <= 2:
+        j += 1
+    return rows[0][0], rows[j][1]
 
 
 def main():
@@ -272,16 +338,29 @@ def main():
     entries, binding = [], {}
     for cid in ids:
         task = tasks[cid]
-        assert len(task['schemePages']) == 1, (cid, task['schemePages'])
+        # A part runs over at most one page break, onto the very next page.
+        assert len(task['schemePages']) == 1 or (len(task['schemePages']) == 2 and
+                                                 task['schemePages'][1] == task['schemePages'][0] + 1), (cid, task['schemePages'])
         pno = task['schemePages'][0]
         page = doc[pno - 1]
         label = PRINTED_LABEL.get(cid) or part_label(task['printedParts'])
-        top, bottom = find_row(page, label, part_label_long(task['printedParts']))
+        if cid in ROW_SPAN:
+            assert ROW_SPAN[cid][0] == pno, (cid, pno)
+            top, bottom = ROW_SPAN[cid][1:]
+        else:
+            top, bottom = find_row(page, label, part_label_long(task['printedParts']))
         x0, x1 = table_x(page)
         clip = pymupdf.Rect(x0 - 2, top - 2, x1 + 2, bottom + 2)
         n = per_page.get(pno, 0); per_page[pno] = n + 1
         name = f'maths-{year}-{lv.upper()}-scheme-p{pno:03d}-i{n}'
         text = ' '.join(page.get_text('text', clip=clip).split())
+        more = None
+        if len(task['schemePages']) == 2:
+            page2 = doc[task['schemePages'][1] - 1]
+            top2, bottom2 = continuation_rows(page2)
+            a2, b2 = table_x(page2)
+            more = (page2, pymupdf.Rect(a2 - 2, top2 - 2, b2 + 2, bottom2 + 2))
+            text += ' ' + ' '.join(page2.get_text('text', clip=more[1]).split())
         scale = re.search(r'Scale ?\d+[A-E] ?\([\d, ]+\)', text)
         bands = [b for b in BANDS if re.search(r'\b' + b + r'\b', text) and not (b == 'Partial Credit' and re.search(r'(Low|Mid|High) Partial Credit', text) and not re.search(r'(?<!Low )(?<!Mid )(?<!High )Partial Credit', text))]
         paper_no = cid.split('-')[3][1]
@@ -292,9 +371,20 @@ def main():
         entries.append({'file': name + '.png', 'kind': 'figure', 'truncated': False, 'description': desc, 'solution': True,
                         'questionRef': f"{year} {lv.upper()} Paper {paper_no} {', '.join(task['printedParts'])}"})
         binding[cid] = name
-        print(f'{cid:32} p{pno} rows {top:.0f}-{bottom:.0f} {name}')
-        if write:
+        print(f'{cid:32} p{pno} rows {top:.0f}-{bottom:.0f} {name}' + (f' + p{pno + 1} rows {more[1].y0 + 2:.0f}-{more[1].y1 - 2:.0f}' if more else ''))
+        if write and more is None:
             page.get_pixmap(clip=clip, dpi=DPI).save(os.path.join(out_dir, name + '.png'))
+        elif write:
+            # The two pages' rows, one above the other, as the part reads.
+            from PIL import Image
+            import io
+            parts = [Image.open(io.BytesIO(pg.get_pixmap(clip=c, dpi=DPI).tobytes('png'))).convert('RGB')
+                     for pg, c in ((page, clip), more)]
+            out = Image.new('RGB', (max(im.width for im in parts), sum(im.height for im in parts)), 'white')
+            y = 0
+            for im in parts:
+                out.paste(im, (0, y)); y += im.height
+            out.save(os.path.join(out_dir, name + '.png'))
     if write:
         cat = json.load(open(CATALOGUE)) if os.path.exists(CATALOGUE) else []
         keep = [e for e in cat if not e['file'].startswith(f'maths-{year}-{lv.upper()}-scheme-')]
@@ -303,12 +393,13 @@ def main():
     return binding
 
 
-def publish(year, lv):
+def publish(year, lv, paper=None):
     manifest_path = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
     raw = open(manifest_path, encoding='utf-8').read()
     manifest = json.loads(raw)
     by_md5 = {v['md5']: k for k, v in manifest.items()}
-    cat = [e for e in json.load(open(CATALOGUE)) if e['file'].startswith(f'maths-{year}-{lv.upper()}-scheme-')]
+    cat = [e for e in json.load(open(CATALOGUE)) if e['file'].startswith(f'maths-{year}-{lv.upper()}-scheme-')
+           and (paper is None or f' Paper {paper[1]} ' in e['questionRef'])]
     dest = os.path.join(ROOT, 'public', 'exam-figures', 'maths', 'markbank')
     added = []
     for e in cat:
@@ -341,6 +432,7 @@ def publish(year, lv):
 
 if __name__ == '__main__':
     if '--publish' in sys.argv:
-        publish(int(sys.argv[1]), sys.argv[2])
+        rest = sys.argv[sys.argv.index('--publish') + 1:]
+        publish(int(sys.argv[1]), sys.argv[2], rest[0] if rest else None)
     else:
         main()

@@ -10162,5 +10162,250 @@
   "truncated": false,
   "questionRef": "2017 OL Paper 2 Q9(c)(iii)",
   "description": "The question as printed on the paper \u2014 In June 2016 the UK held a referendum on its membership of the EU. Table 1 below summarises the results. Table 1 United Kingdom EU Membership Referendum 2016 Votes Leave the EU 17 410 742 Remain a member of the EU 16 141 241 Valid votes 33 551 983 Invalid or blank votes Total votes 33 577 342 Source: The UK Electoral Commission In the days following the UK referendum, a survey was conducted in Ireland on attitudes towards a British exit from the European Union. 1200 people were surveyed. Find the margin of error of this survey. Write your answer as a percentage. Give your answer correct to the nearest percent. In the Irish survey 578 of the 1200 surveyed agreed that a UK exit would have a negative effect on the Irish economy. Use your answer to part c(i) above to create a 95% confidence interval for the proportion of the Irish population who agreed that a UK exit would have a negative effect on the Irish economy. After the survey, a political party claimed that 53% of the Irish population believed that the decision of the UK to leave the EU would have a negative effect on the Irish economy. Use your answer to part c(ii) above to conduct a hypothesis test, at the 5% level of significance, to test the party\u2019s claim. Give your conclusion in the context of the question."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q1-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q1(a)",
+  "description": "The question as printed on the paper \u2014 (\u22124 + 3i) is one root of the equation az\u00b2 + bz + c = 0, where a, b, c \u2208 \u211d, andi\u00b2 = \u22121. Write the other root."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q1-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q1(b)",
+  "description": "The question as printed on the paper \u2014 Use De Moivre\u2019s Theorem to express (1 + i)\u2078 in its simplest form."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q1-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q1(c)",
+  "description": "The question as printed on the paper \u2014 (1 + i) is a root of the equation z\u00b2 + (\u22122 + i)z + 3 \u2212i = 0. Find its other root in the form m + ni, where m, n \u2208 \u211d, andi\u00b2 = \u22121."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q2(a)",
+  "description": "The question as printed on the paper \u2014 Find the range of values of x for which |x\u22124| \u2265 2, where x \u2208 \u211d."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q2(b)",
+  "description": "The question as printed on the paper \u2014 Solve the simultaneous equations: x\u00b2 + xy + 2y\u00b2 = 4 2x + 3y = \u22121."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q3-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q3(a)(i)",
+  "description": "The question as printed on the paper \u2014 f(x) = 2/e^x and g(x) = e^x \u2212 1, where x \u2208 \u211d. Complete the table below. Write your values correct to two decimal places where necessary. x: 0, 0\u00b75, 1, ln(4). f(x) = 2/e^x: _, _, _, _. g(x) = e^x \u2212 1: _, _, _, _."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q3-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q3(a)(ii)",
+  "description": "The question as printed on the paper \u2014 f(x) = 2/e^x and g(x) = e^x \u2212 1, where x \u2208 \u211d. Part (a)(i): Complete the table below. Write your values correct to two decimal places where necessary. x: 0, 0\u00b75, 1, ln(4). f(x) = 2/e^x: _, _, _, _. g(x) = e^x \u2212 1: _, _, _, _. In the grid on the right, use the table to draw the graphs of f(x) and g(x) in the domain 0 \u2264 x \u2264 ln(4). Label each graph clearly."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q3-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q3(a)(iii)",
+  "description": "The question as printed on the paper \u2014 2 f(x) = (a) (iii) Use your graphs to estimate the value of x for which f(x) = g(x)."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q3-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q3(b)",
+  "description": "The question as printed on the paper \u2014 ex and g(x) = ex\u22121, where x\u2208\u211d. Solve f(x) = g(x) using algebra."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q4-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q4(a)",
+  "description": "The question as printed on the paper \u2014 Prove by induction that 8\u207f\u22121 is divisible by 7 for all n\u2208\u2115."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q4-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q4(b)(i)",
+  "description": "The question as printed on the paper \u2014 Given log\u20902 = p and log\u20903 = q, where a > 0, write each of the following in terms of p and q: (i) log\u2090 8/3 loga (i) 3 9a2"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q4-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q4(b)(ii)",
+  "description": "The question as printed on the paper \u2014 Given log\u20902 = p and log\u20903 = q, where a > 0, write each of the following in terms of p and q: (i) log\u2090 8/3 loga (ii) 16 ."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q5-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q5(a)(i)",
+  "description": "The question as printed on the paper \u2014 The lengths of the sides of 4x a right-angled triangle are given x \u22121 by the expressions x \u2212 1, 4x, and 5x \u2212 9, as shown in the diagram. Find the value of x. 5x \u22129"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q5-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q5(a)(ii)",
+  "description": "The question as printed on the paper \u2014 (ii) Verify, with this value of x, that the lengths of the sides of the triangle above form a pythagorean triple."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q5-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q5(b)(i)",
+  "description": "The question as printed on the paper \u2014 Show that f(x) = 3x\u22122, where x\u2208\u211d, is an injective function."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q5-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q5(b)(ii)",
+  "description": "The question as printed on the paper \u2014 Given that f(x) = 3x\u22122, where x\u2208\u211d, find a formula for f^(\u22121), the inverse function of f. Show your work."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q6-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q6(a)",
+  "description": "The question as printed on the paper \u2014 Differentiate the function (2x + 4)\u00b2 from first principles, with respect to x. (a) x ), find dy 1"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q6-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q6(b)(i), (b)(ii)",
+  "description": "The question as printed on the paper \u2014 If y = xsin ( (b) (i) dx. 1 4 Find the slope of the tangent to the curve y = xsin ( x ), when x = (ii) \ud835\udf0b. Give your answer correct to two decimal places."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q7-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q7(a)(i)",
+  "description": "The question as printed on the paper \u2014 Air is pumped into a spherical exercise ball at the rate of 250 cm\u00b3 per second. Find the rate at which the radius is increasing when the radius of the ball is 20 cm. Give your answer in terms of \ud835\udf0b."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q7-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q7(a)(ii)",
+  "description": "The question as printed on the paper \u2014 Find the rate at which the surface area of the ball is increasing when the radius of the ball is 20 cm."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q7-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q7(b)(i)",
+  "description": "The question as printed on the paper \u2014 The inflated ball is kicked into the air from a point O on the ground. Taking O as the origin, (x, f(x)) approximately describes the path followed by the ball in the air, where f(x) = \u2212x\u00b2 + 10x and both x and f(x) are measured in metres. Find the values of x when the ball is on the ground."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q7-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q7(b)(ii)",
+  "description": "The question as printed on the paper \u2014 The inflated ball is kicked into the air from a point O on the ground. Taking O as the origin, (x, f(x)) approximately describes the path followed by the ball in the air, where f(x) = \u2212x\u00b2 + 10x and both x and f(x) are measured in metres. Find the average height of the ball above the ground, during the interval from when it is kicked until it hits the ground again."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(a)(i)",
+  "description": "The question as printed on the paper \u2014 y (a) The diagram shows Sarah\u2019s first throw at the basket in a f(x) 4 basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane 3 with A(\u2012 0\u00b75, 2\u00b7565) and B(4\u00b75, 3\u00b705), the equation of B A the path of the centre of the ball is 2 f(x) = \u22120\u00b7274x\u00b2 + 1\u00b7193x + 3\u00b723, where both x and f(x) are measured in metres. 1 x (i) Find the maximum height reached by the centre of the ball, correct to three decimal places. 1 2 3 4"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(a)(ii)",
+  "description": "The question as printed on the paper \u2014 y (a) The diagram shows Sarah\u2019s first throw at the basket in a f(x) 4 basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane 3 with A(\u2012 0\u00b75, 2\u00b7565) and B(4\u00b75, 3\u00b705), the equation of B A the path of the centre of the ball is 2 f(x) = \u22120\u00b7274x\u00b2 + 1\u00b7193x + 3\u00b723, where both x and f(x) are measured in metres. 1 x 1 2 3 4 Find the acute angle to the horizontal at which the ball entered the basket. Give your answer correct to the nearest degree."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(a)(iii)",
+  "description": "The question as printed on the paper \u2014 y (a) The diagram shows Sarah\u2019s first throw at the basket in a f(x) 4 basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane 3 with A(\u2012 0\u00b75, 2\u00b7565) and B(4\u00b75, 3\u00b705), the equation of B A the path of the centre of the ball is 2 f(x) = \u22120\u00b7274x\u00b2 + 1\u00b7193x + 3\u00b723, where both x and f(x) are measured in metres. 1 x (i) Find the maximum height reached by the centre of the ball, correct to three decimal places. 1 2 3 4 (iii) Sarah took a second throw. This throw followed the f(x) y path of the parabola g(x) as shown. 4 The ball left Sarah\u2019s hands at the point C(0, 2). The graph y = g(x) is the image of the graph g(x) 3 y = f(x) under the translation which maps A onto C. Using your result from part a(i), show that the centre of 2 this ball reached its maximum height at the point (2\u00b7677, 3\u00b7964), correct to three decimal places. 1 x 1 2 3 4"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(a)(iv)",
+  "description": "The question as printed on the paper \u2014 y (a) The diagram shows Sarah\u2019s first throw at the basket in a f(x) 4 basketball game. The ball left her hands at A and entered the basket at B. Using the co-ordinate plane 3 with A(\u2012 0\u00b75, 2\u00b7565) and B(4\u00b75, 3\u00b705), the equation of B A the path of the centre of the ball is 2 f(x) = \u22120\u00b7274x\u00b2 + 1\u00b7193x + 3\u00b723, where both x and f(x) are measured in metres. 1 x 1 2 3 4 (iii) Sarah took a second throw. This throw followed the f(x) y path of the parabola g(x) as shown. 4 The ball left Sarah\u2019s hands at the point C(0, 2). The graph y = g(x) is the image of the graph g(x) 3 y = f(x) under the translation which maps A onto C. Using your result from part a(i), show that the centre of 2 this ball reached its maximum height at the point (2\u00b7677, 3\u00b7964), correct to three decimal places. 1 x 1 2 3 4 (iv) Hence, or otherwise, find the equation of the parabolag(x)."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(b)(i)",
+  "description": "The question as printed on the paper \u2014 (b) The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin.The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Event x Formula a b c y = a(b\u2212x)c 200 m race Time (s) 4\u00b799087 42\u00b75 1\u00b781 y= a(x\u2212b)c Javelin Distance (m) 15\u00b79803 3\u00b78 1\u00b704 In the heptathlon, Jessica ran 200 m in 23\u00b78 s and threw the javelin 58\u00b72 m. Use the formulas in the table to find the number of points she scored in each of these events, correct to the nearest point."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(b)(ii)",
+  "description": "The question as printed on the paper \u2014 (b) The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin.The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Event x Formula a b c y = a(b\u2212x)c 200 m race Time (s) 4\u00b799087 42\u00b75 1\u00b781 y= a(x\u2212b)c Javelin Distance (m) 15\u00b79803 3\u00b78 1\u00b704 The world record distance for the javelin, in the heptathlon, would merit a score of 1295 points. Find the world record distance for the javelin, in the heptathlon, correct to two decimal places."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q8-b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q8(b)(iii)",
+  "description": "The question as printed on the paper \u2014 (b) The heptathlon is an Olympic competition. It consists of seven events including the 200 m race and the javelin.The scoring system uses formulas to calculate a score for each event. The table below shows the formulas for two of the events and the values of constants used in these formulas, where x is the time taken (in seconds) or distance achieved (in metres) by the competitor and y is the number of points scored in the event. Event x Formula a b c y = a(b\u2212x)c 200 m race Time (s) 4\u00b799087 42\u00b75 1\u00b781 y= a(x\u2212b)c Javelin Distance (m) 15\u00b79803 3\u00b78 1\u00b704 (iii) The formula used to calculate the points for the 800 m race, in the heptathlon, is the same formula used for the 200 m race but with different constants. Jessica ran the 800 m race in 2 minutes and 1\u00b784 seconds which merited 1087 points. If a = 0\u221911193 and b = 254 for the 800 m race, find the value of c for this event, correct to two decimal places."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(a)(i)",
+  "description": "The question as printed on the paper \u2014 At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown. y 2 x 4 How many stages has the point completed when the total distance it has travelled, along its path, is 7\u00b79375 units?"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(a)(ii)",
+  "description": "The question as printed on the paper \u2014 At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown. y 2 x 4 Find the maximum distance the point can move, along its path, if it continues in this pattern indefinitely."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(a)(iii)",
+  "description": "The question as printed on the paper \u2014 At the first stage of a pattern, a point moves 4 units from the origin in the positive direction along the x-axis. For the second stage, it turns left and moves 2 units parallel to the y-axis. For the third stage, it turns left and moves 1 unit parallel to the x-axis. At each stage, after the first one, the point turns left and moves half the distance of the previous stage, as shown. y 2 x 4 How many stages has the point completed when the total distance it has travelled, along its path, is 7\u00b79375 units? Find the maximum distance the point can move, along its path, if it continues in this pattern indefinitely. (iii) Complete the second row of the table below showing the changes to the x co-ordinate, the first nine times the point moves to a new position. Hence, or otherwise, find the x co-ordinate and the y co-ordinate of the final position that the point is approaching, if it continues indefinitely in this pattern. 1st 2nd 3rd 4th 5th 6th 7th 8th 9th Stage Change + 4 0 \u20121 in x Change in y"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(b)(i)",
+  "description": "The question as printed on the paper \u2014 A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent.A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent. The following diagram shows the ancestors of a certain male bee. We identify his generation as G\u2081 and our diagram goes back to G\u2084. Continue the diagram to G\u2085. G\u2081 G\u2082 G\u2083 G\u2084 G\u2085 Female Female Female Male Male Male Female"
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(b)(ii)",
+  "description": "The question as printed on the paper \u2014 A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent.A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent. The number of ancestors of this bee in each generation can be calculated by the formula Gn + 2 = Gn + 1 + Gn, where G\u2081 = 1 and G\u2082 = 1, as in the diagram. Use this formula to calculate the number of ancestors in G\u2086 and in G\u2087."
+ },
+ {
+  "file": "maths-2016-HL-ask-p1-q9-b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 1 Q9(b)(iii)",
+  "description": "The question as printed on the paper \u2014 A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent.A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent. (iii) The number of ancestors in each generation can also be calculated by using the formula Gn= (1 + \u221a5)n\u2212(1 \u2212\u221a5)n . 2n\u221a5 Use this formula to verify the number of ancestors in G\u2083."
  }
 ]

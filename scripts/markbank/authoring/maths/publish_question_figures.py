@@ -1,6 +1,7 @@
 """Publish inspected printed-question crops for whole Mathematics sittings.
 
     python3 scripts/markbank/authoring/maths/publish_question_figures.py 2020 2019 2018 2017
+    python3 scripts/markbank/authoring/maths/publish_question_figures.py 2016-hl-p1      (one paper)
 
 maths_question_figures.py writes each crop to exam-papers/maths/figures/<year>-<lv>/
 and records it in scripts/markbank/authored/maths-question-figures-catalogue.json.
@@ -36,8 +37,9 @@ def main(years):
     added, kept = [], 0
     for e in json.load(open(CATALOGUE)):
         name = e['file'][:-4]
-        parts = name.split('-')            # maths-<year>-<LV>-ask-...
-        if parts[3] != 'ask' or parts[1] not in years:
+        parts = name.split('-')            # maths-<year>-<LV>-ask-p<N>-...
+        paper = f'{parts[1]}-{parts[2].lower()}-{parts[4]}'
+        if parts[3] != 'ask' or not (parts[1] in years or paper in years):
             continue
         year, lv = parts[1], parts[2].lower()
         assert e['kind'] == 'figure' and not e['truncated'], name
