@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T22:46:33.874Z",
+  "generatedAt": "2026-10-11T17:45:32.573Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,12 +11,12 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27247,
+    "matched": 27229,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 2,
+    "referenceAnomaly": 20,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
-    "topicsWithGaps": 1340
+    "topicsWithGaps": 1343
   },
   "subjects": [
     {
@@ -2385,12 +2385,12 @@
       "totals": {
         "referenceTopics": 33,
         "referenceOfficialAssociations": 369,
-        "matched": 277,
+        "matched": 271,
         "sourceBlocked": 92,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 6,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 21
+        "topicsWithGaps": 22
       },
       "topics": [
         {
@@ -2628,9 +2628,9 @@
           "label": "Networks and Graphs",
           "sourcePath": "/leaving-certificate/applied-maths/higher/networks-and-graphs",
           "referenceOfficialAssociations": 14,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2648,6 +2648,14 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 2",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9 - (i)",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 9 - (ii)-(v)",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -2748,9 +2756,9 @@
           "label": "Uniform Accelerated Motion",
           "sourcePath": "/leaving-certificate/applied-maths/higher/uniform-accelerated-motion",
           "referenceOfficialAssociations": 29,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 8,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2784,6 +2792,10 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 3 - Part b",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2024 - Question 4 - (iv)",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -2969,9 +2981,9 @@
           "label": "Networks & Graphs",
           "sourcePath": "/leaving-certificate/applied-maths/ordinary/networks-graphs",
           "referenceOfficialAssociations": 15,
-          "matched": 11,
+          "matched": 9,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -2989,6 +3001,14 @@
             {
               "heading": "2023 - Sample Paper - Section 1 - Question 7 - Part c",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section 1 - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2024 - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3123,11 +3143,16 @@
           "label": "Vectors",
           "sourcePath": "/leaving-certificate/applied-maths/ordinary/vectors",
           "referenceOfficialAssociations": 5,
-          "matched": 5,
+          "matched": 4,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2023 - Paper - Section 1 - Question 2 - Part b",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "applied-mathematics-ordinary-work-energy-power-momentum",
@@ -48992,12 +49017,12 @@
       "totals": {
         "referenceTopics": 88,
         "referenceOfficialAssociations": 1265,
-        "matched": 963,
+        "matched": 951,
         "sourceBlocked": 302,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 12,
         "unreviewed": 0,
         "sourceUnavailableTopics": 2,
-        "topicsWithGaps": 75
+        "topicsWithGaps": 77
       },
       "topics": [
         {
@@ -49025,9 +49050,9 @@
           "label": "1. Learning and Improving Skill & Technique: Biomechanics",
           "sourcePath": "/leaving-certificate/physical-education/higher/1-learning-and-improving-skill-technique-biomechanics",
           "referenceOfficialAssociations": 23,
-          "matched": 19,
+          "matched": 18,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49045,6 +49070,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section C - Question 18 - Part (c),(d)",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2025 - Section A - Question 2",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49285,9 +49314,9 @@
           "label": "7. Physical Activity & Inclusion",
           "sourcePath": "/leaving-certificate/physical-education/higher/7-physical-activity-inclusion",
           "referenceOfficialAssociations": 15,
-          "matched": 13,
+          "matched": 12,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49297,6 +49326,10 @@
             {
               "heading": "2020 - Sample Paper - Section B - Question 11 - Part d",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2023 - Paper - Section A - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49341,9 +49374,9 @@
           "label": "Business & Enterprise in Physical Activity & Sport",
           "sourcePath": "/leaving-certificate/physical-education/higher/business-enterprise-in-physical-activity-sport",
           "referenceOfficialAssociations": 17,
-          "matched": 13,
+          "matched": 12,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49361,6 +49394,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section C - Question 15 - Part (b),(c),(d)",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 9",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49369,9 +49406,9 @@
           "label": "1. Learning and Improving Skill & Technique",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/1-learning-and-improving-skill-technique",
           "referenceOfficialAssociations": 17,
-          "matched": 15,
+          "matched": 12,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49381,6 +49418,18 @@
             {
               "heading": "2020 - Section C - Question 12",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 5",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 10",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section A - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49389,9 +49438,9 @@
           "label": "2. Physical & Psychological Demands of Performance",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/2-physical-psychological-demands-of-performance",
           "referenceOfficialAssociations": 33,
-          "matched": 28,
+          "matched": 27,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49413,6 +49462,10 @@
             {
               "heading": "2020 - Section C - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49445,20 +49498,29 @@
           "label": "4. Planning for Optimum Performance",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/4-planning-for-optimum-performance",
           "referenceOfficialAssociations": 15,
-          "matched": 15,
+          "matched": 13,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2021 - Section A - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2023 - Section A - Question 3",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "physical-education-ordinary-5-promoting-physical-activity",
           "label": "5. Promoting Physical Activity",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/5-promoting-physical-activity",
           "referenceOfficialAssociations": 21,
-          "matched": 18,
+          "matched": 17,
           "sourceBlocked": 3,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -49472,6 +49534,10 @@
             {
               "heading": "2020 - Section C - Question 16",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2022 - Section A - Question 1",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49504,14 +49570,18 @@
           "label": "7. Physical Activity & Inclusion",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/7-physical-activity-inclusion",
           "referenceOfficialAssociations": 8,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2020 - Section C - Question 14 - Part b-d",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2021 - Section A - Question 4",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -49551,11 +49621,16 @@
           "label": "Business & Enterprise in Physical Activity & Sport",
           "sourcePath": "/leaving-certificate/physical-education/ordinary/business-enterprise-in-physical-activity-sport",
           "referenceOfficialAssociations": 9,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2022 - Section A - Question 4",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "physical-education-higher-new-course-11-describe-the-stages-of-skill-learning",

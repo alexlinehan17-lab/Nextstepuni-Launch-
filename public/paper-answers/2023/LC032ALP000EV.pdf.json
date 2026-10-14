@@ -1,0 +1,2610 @@
+{
+  "band": [
+    1,
+    37
+  ],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC032ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.1489,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 3,
+          "r": [
+            0.0,
+            0.0909,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1011
+          ]
+        }
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "2",
+      "pP": 6,
+      "pY": [
+        0.0682,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0891,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0978
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "3",
+      "pP": 7,
+      "pY": [
+        0.0682,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0858,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.896
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "4",
+      "pP": 8,
+      "pY": [
+        0.0618,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.884,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1204
+          ]
+        }
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "schemeRegion": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "practiceTask": {
+        "prompt": "Record on a tabular statement the effect each of the above transactions had on the relevant asset and liability and ascertain the total assets and liabilities on 31/12/2022.",
+        "focus": null,
+        "marks": 60
+      }
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "5",
+      "pP": 10,
+      "pY": [
+        0.1239,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.1084,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0978
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "6",
+      "pP": 12,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0.0,
+            0.0858,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 20,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1012
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "7",
+      "pP": 14,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 23,
+          "r": [
+            0.0,
+            0.0892,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 27,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0977
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "8",
+      "pP": 16,
+      "pY": [
+        0.1428,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 27,
+          "r": [
+            0.0,
+            0.0857,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 28,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 29,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.8522
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "9",
+      "pP": 18,
+      "pY": [
+        0.0702,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 30,
+          "r": [
+            0.0,
+            0.8402,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 31,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 32,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 34,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 35,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 36,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "n": "1A(a)",
+      "label": "Question 1A(a) · Sole trader: trading and profit and loss account",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a trading and profit and loss account for the year ended 31/12/2022.",
+        "focus": null,
+        "marks": 75
+      }
+    },
+    {
+      "n": "1A(b)",
+      "label": "Question 1A(b) · Sole trader: balance sheet",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a balance sheet as at 31/12/2022.",
+        "focus": null,
+        "marks": 45
+      }
+    },
+    {
+      "n": "1B(a)",
+      "label": "Question 1B(a) · Company: trading and profit and loss account",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a trading and profit and loss account for the year ended 31/12/2022.",
+        "focus": null,
+        "marks": 75
+      }
+    },
+    {
+      "n": "1B(b)",
+      "label": "Question 1B(b) · Company: balance sheet",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a balance sheet as at 31/12/2022.",
+        "focus": null,
+        "marks": 45
+      }
+    },
+    {
+      "n": "2(a)",
+      "label": "Question 2(a) · Incomplete records: trading and profit and loss account",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the trading and profit and loss account for Shepard, for the year ended 31/12/2022. (Show your workings).",
+        "focus": null,
+        "marks": 52
+      }
+    },
+    {
+      "n": "2(b)",
+      "label": "Question 2(b) · Double entry and record keeping",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "What additional information would be available to Shepard if he used the double entry system to record financial transactions?\nWhat advice would you give Shepard in relation to record keeping?",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "3(a)",
+      "label": "Question 3(a) · Adjusted creditors control account",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the adjusted creditors ledger control account.",
+        "focus": null,
+        "marks": 24
+      }
+    },
+    {
+      "n": "3(b)",
+      "label": "Question 3(b) · Adjusted schedule of creditors",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the adjusted schedule (list) of creditors showing the original balance.",
+        "focus": null,
+        "marks": 28
+      }
+    },
+    {
+      "n": "3(c)",
+      "label": "Question 3(c) · Control-account purpose and restocking charges",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain why creditors control accounts are prepared.\nExplain the term restocking charge and outline how it might arise.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "5(a)(i)",
+      "label": "Question 5(a)(i) · Opening stock from stock turnover",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2022:\n(where appropriate calculations should be made to two decimal places).\nThe opening stock if the rate of stock turnover is 14 based on average stock",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(ii)",
+      "label": "Question 5(a)(ii) · Return on capital employed",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2022:\n(where appropriate calculations should be made to two decimal places).\nReturn on capital employed",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(iii)",
+      "label": "Question 5(a)(iii) · Price earnings ratio",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2022:\n(where appropriate calculations should be made to two decimal places).\nPrice earnings ratio",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(iv)",
+      "label": "Question 5(a)(iv) · Dividend cover",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2022:\n(where appropriate calculations should be made to two decimal places).\nDividend cover",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(v)",
+      "label": "Question 5(a)(v) · Dividend yield",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate the following for 2022:\n(where appropriate calculations should be made to two decimal places).\nDividend yield.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(b)",
+      "label": "Question 5(b) · Debenture-holder assessment of O’Malley Ltd",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Indicate whether the debenture holders would be satisfied with the performance, state of affairs and prospects of the company. Use relevant ratios and other information to support your answer.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "5(c)",
+      "label": "Question 5(c) · Liquidity, solvency and prudent management",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Distinguish between the terms liquidity and solvency when used in ratio analysis.\nA rising liquidity ratio is a sign of prudent management. Briefly discuss.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "6(a)-profit-loss",
+      "label": "Question 6(a)-profit-loss · Published profit and loss account",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the published profit and loss account of Goodwin plc for the year ended 31/12/2022, and the balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:\nAccounting policy note for tangible fixed assets and stock.\nOperating profit.\nTangible fixed assets.\nDividends.\nContingent Liability.",
+        "focus": "Prepare the published profit and loss account.",
+        "marks": 40
+      }
+    },
+    {
+      "n": "6(a)-balance-sheet",
+      "label": "Question 6(a)-balance-sheet · Published balance sheet",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the published profit and loss account of Goodwin plc for the year ended 31/12/2022, and the balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:\nAccounting policy note for tangible fixed assets and stock.\nOperating profit.\nTangible fixed assets.\nDividends.\nContingent Liability.",
+        "focus": "Prepare the published balance sheet.",
+        "marks": 26
+      }
+    },
+    {
+      "n": "6(a)-notes",
+      "label": "Question 6(a)-notes · Notes to the published accounts",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the published profit and loss account of Goodwin plc for the year ended 31/12/2022, and the balance sheet as at that date in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:\nAccounting policy note for tangible fixed assets and stock.\nOperating profit.\nTangible fixed assets.\nDividends.\nContingent Liability.",
+        "focus": "Prepare all five required notes accompanying the accounts.",
+        "marks": 24
+      }
+    },
+    {
+      "n": "6(b)",
+      "label": "Question 6(b) · Audit and the auditor’s opinion",
+      "pP": 12,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 22,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain what is meant by an audit.\nOutline the factors that an auditor will take into consideration when forming their opinion in order to prepare their report.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(a)",
+      "label": "Question 7(a) · Service firm: opening reserves",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a statement of the company’s reserves (profit and loss balance) on 01/01/2022.",
+        "focus": null,
+        "marks": 18
+      }
+    },
+    {
+      "n": "7(b)",
+      "label": "Question 7(b) · Service firm: shop profit",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the profit/loss from the shop for the year ended 31/12/2022.\n(Show workings.)",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "7(c)",
+      "label": "Question 7(c) · Service firm: profit and loss account",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a profit and loss account for the year ended 31/12/2022.",
+        "focus": null,
+        "marks": 38
+      }
+    },
+    {
+      "n": "7(d)",
+      "label": "Question 7(d) · Service firm: balance sheet",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a balance sheet on 31/12/2022.",
+        "focus": null,
+        "marks": 24
+      }
+    },
+    {
+      "n": "7(e)",
+      "label": "Question 7(e) · Service firm: fee increase advice",
+      "pP": 14,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 26,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 25,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "All Whites Ltd is considering increasing fees for its private patients by 10% due to increased running costs. Explain with reference to the accounts the advice you would give to the management of All Whites Ltd in relation to this proposed increase in fees.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "8(a)(i)",
+      "label": "Question 8(a)(i) · High-low cost separation",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the variable and fixed elements of factory overheads using the high/low method. (Show your workings).",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "8(a)(ii)(a)",
+      "label": "Question 8(a)(ii)(a) · Breakeven point and margin of safety",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the company’s break–even point and margin of safety.",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "8(a)(ii)(b)",
+      "label": "Question 8(a)(ii)(b) · Interpret the margin of safety",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain what is meant by the term margin of safety. Reference the figures you have calculated in part (ii)(a) in your answer.",
+        "focus": null,
+        "marks": 4
+      }
+    },
+    {
+      "n": "8(a)(iii)",
+      "label": "Question 8(a)(iii) · Sales volume for a target profit",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the number of units that must be sold at €30 per unit to provide a profit of 10% of the sales revenue earned from these same units.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "8(a)(iv)",
+      "label": "Question 8(a)(iv) · Selling price after cost changes",
+      "pP": 16,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 28,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 27,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the selling price the company must charge per unit in 2023, if\nsales commission is increased to 6% of sales and\nfixed costs increase by 10%\nThe volume of sales and the profit earned are to remain the same.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "8(b)(i)",
+      "label": "Question 8(b)(i) · Marginal and absorption profit statements",
+      "pP": 17,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare profit and loss statements under marginal costing and absorption costing principles for Sky Ltd.",
+        "focus": null,
+        "marks": 18
+      }
+    },
+    {
+      "n": "8(b)(ii)",
+      "label": "Question 8(b)(ii) · Benefits of absorption costing",
+      "pP": 17,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 29,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Outline the benefits of absorption costing.",
+        "focus": null,
+        "marks": 6
+      }
+    },
+    {
+      "n": "9(a)",
+      "label": "Question 9(a) · Six-month cash budget",
+      "pP": 18,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a cash budget for Lupin Ltd for each of the six months January to June 2024.",
+        "focus": null,
+        "marks": 58
+      }
+    },
+    {
+      "n": "9(b)",
+      "label": "Question 9(b) · Budgeted trading and profit and loss account",
+      "pP": 18,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 31,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a budgeted trading and profit and loss account for Lupin Ltd for the six months ending 30/06/2024.",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "9(c)",
+      "label": "Question 9(c) · Sales forecasting and cash-budget advice",
+      "pP": 18,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 32,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 30,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 33,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "What factors should be taken into consideration by Lupin Ltd in arriving at the expected sales figures for the first six months of 2024?\nOn the basis of the cash budget you have prepared in (a) above, what advice would you give to the management of Lupin Ltd?",
+        "focus": null,
+        "marks": 6
+      }
+    }
+  ],
+  "schemeFileid": "LC032ALP000EV.pdf",
+  "v": 1,
+  "maxCropPages": 4
+}
