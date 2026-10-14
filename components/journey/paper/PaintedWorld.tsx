@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import type { StudioPiece } from "./studioModel";
 import { centre } from "./geometry";
 import { coastalMap } from "./collection";
@@ -6,12 +6,17 @@ import { exploredCells } from "./model";
 import { paintedById, type PaintedStyle } from "./paintedDirections";
 
 const images = new Map<string, Promise<HTMLImageElement>>();
+/** Decoded images, so a repaint after a drag can draw in the same frame. */
+const loaded = new Map<string, HTMLImageElement>();
 function loadImage(src: string) {
   let result = images.get(src);
   if (!result) {
     result = new Promise<HTMLImageElement>((resolve, reject) => {
       const img = new Image();
-      img.onload = () => resolve(img);
+      img.onload = () => {
+        loaded.set(src, img);
+        resolve(img);
+      };
       img.onerror = () => {
         images.delete(src);
         reject(new Error(`Could not load ${src}`));
@@ -85,13 +90,13 @@ function tilePaper(
 
 /** A raster alpha field joins explored cells into a single irregular reveal. */
 function clearingMask(
+  mask: HTMLCanvasElement,
   width: number,
   height: number,
   view: View,
   cells: Cell[],
   feather: number,
 ) {
-  const mask = document.createElement("canvas");
   mask.width = Math.max(1, Math.ceil(width / 2));
   mask.height = Math.max(1, Math.ceil(height / 2));
   const ctx = mask.getContext("2d")!,
@@ -137,7 +142,10 @@ export function PaintedWorld({
 }) {
   const ref = useRef<HTMLCanvasElement>(null),
     [size, setSize] = useState({ width: 0, height: 0 }),
-    [failure, setFailure] = useState(false);
+    [failure, setFailure] = useState(false),
+    // Working canvases are reused across repaints; allocating four full-size
+    // canvases per repaint was most of the cost of moving the map.
+    scratch = useRef<Record<"sea" | "cover" | "veil" | "mask" | "oldMask", HTMLCanvasElement> | null>(null);
   const previous = useRef<Cell[]>([]),
     cells = useMemo(
       () =>
@@ -163,9 +171,17 @@ export function PaintedWorld({
       observer.disconnect();
     };
   }, []);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const canvas = ref.current;
     if (!canvas || !size.width || !size.height) return;
+    scratch.current ??= {
+      sea: document.createElement("canvas"),
+      cover: document.createElement("canvas"),
+      veil: document.createElement("canvas"),
+      mask: document.createElement("canvas"),
+      oldMask: document.createElement("canvas"),
+    };
+    const { sea, cover, veil } = scratch.current;
     let disposed = false,
       animation = 0;
     const before = previous.current,
@@ -174,8 +190,8 @@ export function PaintedWorld({
     const ratio = Math.min(window.devicePixelRatio || 1, 1.5),
       w = Math.round(size.width * ratio),
       h = Math.round(size.height * ratio);
-    canvas.width = w;
-    canvas.height = h;
+    if (canvas.width !== w) canvas.width = w;
+    if (canvas.height !== h) canvas.height = h;
     const zoom = Math.max(w / view.width, h / view.height),
       visible = {
         x: view.x + (view.width - w / zoom) / 2,
@@ -184,15 +200,14 @@ export function PaintedWorld({
         height: h / zoom,
       };
     const ctx = canvas.getContext("2d")!;
+    ctx.globalAlpha = 1;
     ctx.fillStyle = treatment.base;
     ctx.fillRect(0, 0, w, h);
-    const mask = clearingMask(w, h, visible, cells, treatment.feather);
+    const mask = clearingMask(scratch.current.mask, w, h, visible, cells, treatment.feather);
     const oldMask = added
-      ? clearingMask(w, h, visible, before, treatment.feather)
+      ? clearingMask(scratch.current.oldMask, w, h, visible, before, treatment.feather)
       : null;
-    const sea = document.createElement("canvas"),
-      cover = document.createElement("canvas"),
-      veil = document.createElement("canvas");
+    // Assigning a size also resets each context's transform and compositing.
     for (const c of [sea, cover, veil]) {
       c.width = w;
       c.height = h;
@@ -209,64 +224,69 @@ export function PaintedWorld({
         -visible.x * zoom,
         -visible.y * zoom,
       );
-    Promise.all([loadImage(coastalMap), loadImage(treatment.src)])
-      .then(([water, art]) => {
-        if (disposed) return;
-        setFailure(false);
-        worldTransform(seaCtx);
-        const step = 950;
+    const paint = ([water, art]: HTMLImageElement[]) => {
+      if (disposed) return;
+      setFailure(false);
+      worldTransform(seaCtx);
+      const step = 950;
+      for (
+        let y = Math.floor(visible.y / step) * step;
+        y < visible.y + visible.height;
+        y += step
+      )
         for (
-          let y = Math.floor(visible.y / step) * step;
-          y < visible.y + visible.height;
-          y += step
+          let x = Math.floor(visible.x / step) * step;
+          x < visible.x + visible.width;
+          x += step
         )
-          for (
-            let x = Math.floor(visible.x / step) * step;
-            x < visible.x + visible.width;
-            x += step
-          )
-            seaCtx.drawImage(water, 500, 230, 510, 510, x, y, step, step);
-        if ("paperRepeat" in treatment) {
-          seaCtx.fillStyle = "#cee5e9";
-          seaCtx.globalAlpha = 0.25;
-          seaCtx.fillRect(visible.x, visible.y, visible.width, visible.height);
-          seaCtx.globalAlpha = 1;
-        }
-        worldTransform(coverCtx);
-        tilePaper(coverCtx, art, visible, treatment.base, paperWidth);
-        const duration =
-            added && !matchMedia("(prefers-reduced-motion: reduce)").matches
-              ? 700
-              : 0,
-          start = performance.now();
-        const draw = (now: number) => {
-          if (disposed) return;
-          const progress = duration ? Math.min(1, (now - start) / duration) : 1;
+          seaCtx.drawImage(water, 500, 230, 510, 510, x, y, step, step);
+      if ("paperRepeat" in treatment) {
+        seaCtx.fillStyle = "#cee5e9";
+        seaCtx.globalAlpha = 0.25;
+        seaCtx.fillRect(visible.x, visible.y, visible.width, visible.height);
+        seaCtx.globalAlpha = 1;
+      }
+      worldTransform(coverCtx);
+      tilePaper(coverCtx, art, visible, treatment.base, paperWidth);
+      const duration =
+          added && !matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? 700
+            : 0,
+        start = performance.now();
+      const draw = (now: number) => {
+        if (disposed) return;
+        const progress = duration ? Math.min(1, (now - start) / duration) : 1;
+        veilCtx.globalCompositeOperation = "source-over";
+        veilCtx.clearRect(0, 0, w, h);
+        veilCtx.drawImage(cover, 0, 0);
+        veilCtx.globalCompositeOperation = "destination-in";
+        veilCtx.drawImage(mask, 0, 0, w, h);
+        ctx.globalAlpha = 1;
+        ctx.drawImage(sea, 0, 0);
+        ctx.drawImage(veil, 0, 0);
+        if (oldMask && progress < 1) {
           veilCtx.globalCompositeOperation = "source-over";
           veilCtx.clearRect(0, 0, w, h);
           veilCtx.drawImage(cover, 0, 0);
           veilCtx.globalCompositeOperation = "destination-in";
-          veilCtx.drawImage(mask, 0, 0, w, h);
-          ctx.globalAlpha = 1;
-          ctx.drawImage(sea, 0, 0);
+          veilCtx.drawImage(oldMask, 0, 0, w, h);
+          ctx.globalAlpha = 1 - progress * progress * (3 - 2 * progress);
           ctx.drawImage(veil, 0, 0);
-          if (oldMask && progress < 1) {
-            veilCtx.globalCompositeOperation = "source-over";
-            veilCtx.clearRect(0, 0, w, h);
-            veilCtx.drawImage(cover, 0, 0);
-            veilCtx.globalCompositeOperation = "destination-in";
-            veilCtx.drawImage(oldMask, 0, 0, w, h);
-            ctx.globalAlpha = 1 - progress * progress * (3 - 2 * progress);
-            ctx.drawImage(veil, 0, 0);
-            ctx.globalAlpha = 1;
-            animation = requestAnimationFrame(draw);
-          }
-        };
-        draw(performance.now());
-      })
-      .catch(() => {
-        if (!disposed) setFailure(true);
-      });
+          ctx.globalAlpha = 1;
+          animation = requestAnimationFrame(draw);
+        }
+      };
+      draw(performance.now());
+    };
+    const water = loaded.get(coastalMap),
+      art = loaded.get(treatment.src);
+    if (water && art) paint([water, art]);
+    else
+      Promise.all([loadImage(coastalMap), loadImage(treatment.src)])
+        .then(paint)
+        .catch(() => {
+          if (!disposed) setFailure(true);
+        });
     return () => {
       disposed = true;
       cancelAnimationFrame(animation);
