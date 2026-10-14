@@ -58,6 +58,90 @@
           "text": "Discuss two advantages of designing a space that links with the rear garden."
         }
       ]
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "kind": "unnumbered-question",
+      "questionNumber": 5,
+      "source": {
+        "file": "paper-trail-corpus/exampapers/2014/LC029ALP000EV.pdf",
+        "page": 3,
+        "sha256": "fa69de01573c5b7504ed8b2cc76ae930be5d815c85febcb1a7c2e7d03d68e2d1",
+        "textSha256": "e05822955c36b17bc3250fa8cef7010ad904be56b9455aa1745e7d10fdb22720"
+      },
+      "reason": "Question 5 is printed as \"5\" without a full stop, so the generic parser read its parts (a)–(c) as further parts of Question 4: Q5(a) and Q5(b) collided with Q4(a) and Q4(b) and Q5(c) became a false Q4(c). Re-key Q4(a)–(b) and Q5(a)–(c) from the printed page.",
+      "prior": [
+        {
+          "key": [
+            4,
+            "a",
+            null
+          ],
+          "text": "Discuss two advantages and two disadvantages of adopting a step-by-step approach to the refurbishment of the house. Using the following data, calculate the U-value of the insulated concrete ground floor: Concrete floor slab thickness 125 mm Extruded polystyrene insulation thickness 200 mm Damp proof membrane (DPM) thickness 0.30 mm Sand blinding thickness 30 mm Hardcore thickness 225 mm Thermal data of floor: Resistance of top surface of floor (R) 0.104 m2 °C/W Conductivity of concrete (k) 0.160 W/m °C Conductivity of polystyrene insulation (k) 0.031 W/m °C Conductivity of damp proof membrane (DPM) (k) 0.450 W/m °C Conductivity of sand blinding (k) 0.160 W/m °C Conductivity of hardcore (k) 1.260 W/m °C",
+          "sha256": "a2b3b2f53da195f5e47f921af17d7d7b1c319ed89af591d7506c60fa711dbb29"
+        },
+        {
+          "key": [
+            4,
+            "b",
+            null
+          ],
+          "text": "A survey of the house reveals: • external random rubble stone walls, 450 mm in thickness, with an internal and external lime render • traditional cut roof with natural slates • suspended timber ground floor. Select any two of the above areas and, using notes and freehand sketches, describe the steps involved in upgrading each area selected. Using the U-value of the concrete ground floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the concrete ground floor: Dimensions of floor 13.0 metres × 7.0 metres Average internal temperature 21°C Average external temperature 7°C Heating period 12 hours per day for 39 weeks per annum Cost of oil 95 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second",
+          "sha256": "33aaf29cd3d25abf4e6eb3dc3c60907aa00de9b6acefb0f1c83b388a0e3bfd6e"
+        },
+        {
+          "key": [
+            4,
+            "c",
+            null
+          ],
+          "text": "A solid concrete ground floor abuts a 350 mm concrete block external wall with an insulated cavity. Using notes and freehand sketches, show best practice design detailing which will prevent the formation of a cold bridge at the junction of the floor and the wall. Show the typical design detailing from the bottom of the hardcore to the top of the skirting board.",
+          "sha256": "590c82433ff31ecccdddde6c4c9abea75ecc4948582d4642aa0305419143d18a"
+        }
+      ],
+      "parts": [
+        {
+          "key": [
+            4,
+            "a",
+            null
+          ],
+          "text": "Discuss two advantages and two disadvantages of adopting a step-by-step approach to the refurbishment of the house."
+        },
+        {
+          "key": [
+            4,
+            "b",
+            null
+          ],
+          "text": "A survey of the house reveals: • external random rubble stone walls, 450 mm in thickness, with an internal and external lime render • traditional cut roof with natural slates • suspended timber ground floor. Select any two of the above areas and, using notes and freehand sketches, describe the steps involved in upgrading each area selected. Show how the refurbishment should be carried out in a manner that respects the character of the original house and ensures the reuse of materials."
+        },
+        {
+          "key": [
+            5,
+            "a",
+            null
+          ],
+          "text": "Using the following data, calculate the U-value of the insulated concrete ground floor: Concrete floor slab thickness 125 mm Extruded polystyrene insulation thickness 200 mm Damp proof membrane (DPM) thickness 0.30 mm Sand blinding thickness 30 mm Hardcore thickness 225 mm Thermal data of floor: Resistance of top surface of floor (R) 0.104 m2 °C/W Conductivity of concrete (k) 0.160 W/m °C Conductivity of polystyrene insulation (k) 0.031 W/m °C Conductivity of damp proof membrane (DPM) (k) 0.450 W/m °C Conductivity of sand blinding (k) 0.160 W/m °C Conductivity of hardcore (k) 1.260 W/m °C"
+        },
+        {
+          "key": [
+            5,
+            "b",
+            null
+          ],
+          "text": "Using the U-value of the concrete ground floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the concrete ground floor: Dimensions of floor 13.0 metres × 7.0 metres Average internal temperature 21°C Average external temperature 7°C Heating period 12 hours per day for 39 weeks per annum Cost of oil 95 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second"
+        },
+        {
+          "key": [
+            5,
+            "c",
+            null
+          ],
+          "text": "A solid concrete ground floor abuts a 350 mm concrete block external wall with an insulated cavity. Using notes and freehand sketches, show best practice design detailing which will prevent the formation of a cold bridge at the junction of the floor and the wall. Show the typical design detailing from the bottom of the hardcore to the top of the skirting board."
+        }
+      ]
     }
   ]
 }

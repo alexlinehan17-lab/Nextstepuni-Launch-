@@ -109,16 +109,18 @@ def observed_selections(P):
     return out
 
 
-def region(P, qkey, paper_page, tails=None, alt=False):
+def region(P, qkey, paper_page, tails=None, alt=False, unnumbered=()):
     """The printed text of one question: from its number to the next question's (Q10 splits at OR when an
-    alternative is printed). tails maps a question to a marker after which the text layer places more of it."""
+    alternative is printed). tails maps a question to a marker after which the text layer places more of it.
+    unnumbered names questions printed without the full stop after their number ("5 (a)")."""
     text = printed(page_text(P, paper_page[qkey]))
     if alt and qkey == '10':
         return text[text.index(' 10. '):text.index(' OR ')]
     if qkey == '10-alt':
         return text[text.index(' OR ') + 4:]
-    start = text.index(f' {qkey}. ')
-    nxt = [text.index(f' {n}. ', start) for n in map(str, range(int(qkey) + 1, 11)) if f' {n}. ' in text[start:]]
+    mark = lambda n: f' {n} (a) ' if n in unnumbered else f' {n}. '  # noqa: E731
+    start = text.index(mark(qkey))
+    nxt = [text.index(mark(n), start) for n in map(str, range(int(qkey) + 1, 11)) if mark(n) in text[start:]]
     body = text[start:min(nxt) if nxt else len(text)]
     if tails and qkey in tails:
         body += text[text.index(tails[qkey]) + len(tails[qkey]):]
@@ -324,7 +326,7 @@ def validate(d, m, images=True, figure_dir=FIGURE_DIR, integrated=True):
         assert t['requiredSolutionFigures'] == ([FP + m.SOLUTION[key]] if key in m.SOLUTION else []), key
         assert figures[f'q{qk}-original']['solution'] is False and (key not in m.SOLUTION or figures[m.SOLUTION[key]]['solution'] is True), key
         # Lift, never write: printed wording only; an item named by reference carries the scheme's heading after ' — '.
-        words = tokens(region(P, qk, m.PAPER_PAGE, tails, alt))
+        words = tokens(region(P, qk, m.PAPER_PAGE, tails, alt, _get(m, 'UNNUMBERED', ())))
         heads, labels = [], []
         for para in c['questionText'].split('\n\n'):
             head, _, tail = para.partition(' — ')
@@ -606,7 +608,8 @@ def integrate(m, here, alt_text, anchor_from_sidecar=False):
                 h = page.rect.height
                 lines = [(ln['bbox'][1] / h, ''.join(s['text'] for s in ln['spans']).strip())
                          for b in page.get_text('dict')['blocks'] for ln in b.get('lines', [])]
-                hits = [y for y, text in lines if text.split()[0:1] == [f"{q['n']}."]]
+                marker = q['n'] if q['n'] in getattr(m, 'UNNUMBERED', ()) else f"{q['n']}."  # "5 (a)" printed without a full stop
+                hits = [y for y, text in lines if text.split()[0:1] == [marker]]
                 assert hits and abs(min(hits, key=lambda y: abs(y - q['pY'][0])) - q['pY'][0]) < 0.02, (q['n'], q['pY'], hits)
         anchor = dict(band=[1, 1], component='000', copyright=sidecar['copyright'], paperFileid=sidecar['paperFileid'], paperOnly=1, schemeFileid='', v=1,
                       q=[dict(conf=0.5, mode='pagejump', n=q['n'], pP=q['pP'], pY=q['pY'], region=[{'p': 1}]) for q in sidecar['q']])
