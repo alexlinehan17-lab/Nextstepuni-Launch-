@@ -19,6 +19,7 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { withReviewedCards } from './reviewed';
 
 const base = {
   source: 'sec' as const,
@@ -27,7 +28,7 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = withReviewedCards([
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
@@ -2775,4 +2776,4 @@ export const CARDS: SecCard[] = [
     { id: "am-2025-hl-10-b-r1", kind: "anyN", verbatim: "6u cos 𝜃 = 75 so cos 𝜃 = 12.5/u", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["6u cos 𝜃 = 75 so cos 𝜃 = 12.5/u","6u sin 𝜃 − 176.4 = 30 so sin 𝜃 = 34.4/u","u = 36.6 m s^(–1)"]} },
     ],
   } as SecCard,
-];
+], 'higher');

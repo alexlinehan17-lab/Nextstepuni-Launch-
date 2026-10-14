@@ -68,7 +68,15 @@ import WaysInPanel, {
   type WaysInWork,
 } from './WaysInPanel';
 import SourceMaterialReader from './SourceMaterialReader';
+import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
+import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
+import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
+import AppliedMathematicsRubricPanel, {
+  appliedMathematicsMarks,
+  type AppliedMathematicsScoreId,
+} from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
+import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
@@ -289,7 +297,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -408,9 +416,13 @@ export function geographyMarks(card: SecRubricCard, scores: RubricScores): numbe
 }
 
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
+  if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
+  if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
+  if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
+  if (card.rubric.system === 'politics') return politicsMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -1614,6 +1626,27 @@ const RubricPanel: React.FC<{
   onScore: (id: RubricScoreId, marks: number) => void;
   onRequirement: (index: number) => void;
 }> = props => {
+  if (props.card.rubric.system === 'politics') {
+    return <PoliticsRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'politics' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'physical-education') {
+    return <PhysicalEducationRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'physical-education' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'applied-mathematics') {
+    return <AppliedMathematicsRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'applied-mathematics' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'accounting') {
+    return <AccountingAssessment card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }>;
+    }} score={props.scores[accountingScoreId] ?? 0}
+      onScore={marks => props.onScore(accountingScoreId, marks)} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -2339,7 +2372,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
-      : assessmentCard.rubric.system === 'art' ? 'Art descriptor' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'politics' ? 'Politics and Society'
+      : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
+      : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
+      : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
+      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
@@ -2588,7 +2625,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             // turns that clip into a straight cut through the g's.
             font: `500 13px/1.5 ${SANS}`, color: INK_2,
             overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-            flexShrink: 0,
+            flexShrink: 1, minWidth: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
             {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
@@ -2804,6 +2841,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 <ListeningQuestionSet cards={listeningCards} />
               </>
             ) : <QuestionText text={assessmentCard.questionText} />)}
+
+            {assessmentCard.practiceFocus && <p style={{ marginTop: 12, color: INK, fontWeight: 700 }}>
+              Practise: {assessmentCard.practiceFocus}
+            </p>}
 
             {figure && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing

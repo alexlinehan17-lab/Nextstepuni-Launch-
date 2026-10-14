@@ -1,0 +1,486 @@
+{
+  "complete": true,
+  "note": "All local paper editions visually reviewed; source reconciliation, runtime Atlas parity, preservation and Accounting UI checks passed. See reconciliation.json and verification.json, including the two explicit 2020 Irish scheme fallbacks.",
+  "sourceEditions": 68,
+  "reviewedEditions": 34,
+  "correspondenceReviewedEditions": 34,
+  "reviewedTasks": 1365,
+  "editions": [
+    {
+      "year": 2010,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 43
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 37
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 37
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 39
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 48
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 41
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 44
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 34
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 48
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 38
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 42
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 36
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 37
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 33
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 39
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 41
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 46
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 33
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 42
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 42
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 42
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 34
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 46
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 41
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 40
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 38
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 36
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 40
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 47
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 38
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 41
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 40
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "fileid": "LC032ALP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 43
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "fileid": "LC032ALP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "fileid": "LC032GLP000EV.pdf",
+      "status": "tasks-reviewed",
+      "tasks": 39
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "fileid": "LC032GLP000IV.pdf",
+      "status": "correspondence-reviewed",
+      "tasks": 0
+    }
+  ]
+}

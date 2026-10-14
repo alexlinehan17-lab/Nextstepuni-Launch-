@@ -207,13 +207,18 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration';
+  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
   /** One-based PDF pages, in reading order. */
   pages: number[];
+  /** Additional clockwise rotation for sideways material printed inside a
+   * portrait page. Applied to the PDF viewport, preserving the source bytes. */
+  pageRotations?: Record<number, 90 | 180 | 270>;
+  /** Optional inspected crops, one per page; coordinates are PDF fractions. */
+  regions?: Array<[number, number, number, number] | { p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }>;
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -367,6 +372,8 @@ export interface SecCardBase extends CardBase {
   audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
+  /** Names a separately priced task within a shared printed instruction. */
+  practiceFocus?: string;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
   schemeCitation: string;
@@ -618,7 +625,72 @@ export interface GeographyRubric {
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric;
+/** Politics answers mix exact allocations, quality bands and six essay criteria. */
+export interface PoliticsCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: Array<{ label: string; marks: number[]; guidance: string }>;
+}
+
+export interface PoliticsRubric {
+  system: 'politics';
+  taskRequirements: string[];
+  criteria: PoliticsCriterion[];
+  /** Shared published guidance, shown once even when several criteria apply. */
+  schemeGuidance?: string[];
+  markingGuideNote: string;
+  /** Exact scheme pages remain available after reveal, including grade grids. */
+  schemePages: number[];
+  schemeFileid: string;
+}
+
+/** PE mixes exact allocations, descending tariffs and quality bands. The
+ * original scheme remains available after reveal, including answer diagrams
+ * and tick tables which must not be flattened into a guessed text answer. */
+export interface PhysicalEducationRubric {
+  system: 'physical-education';
+  taskRequirements: string[];
+  criteria: Array<{
+    id: string;
+    label: string;
+    maxMarks: number;
+    permittedMarks: number[];
+    guidance: string[];
+  }>;
+  schemeMaterial: CardSourceMaterial & { kind: 'marking-scheme' };
+  markingGuideNote: string;
+}
+
+/** Mathematical working and drawings remain in their original SEC layout.
+ * Each allocation is one published step or scale, with its actual credit
+ * values. Error deductions apply within that allocation, never to neighbours. */
+export interface AppliedMathematicsRubric {
+  system: 'applied-mathematics';
+  solution: Omit<CardSourceMaterial, 'regions'> & { kind: 'source-scheme'; regions?: Array<[number, number, number, number]> };
+  allocations: Array<{
+    id: string;
+    label: string;
+    credit: number[];
+    guidance?: string;
+  }>;
+  markingGuideNote: string;
+}
+
+/** Accounting awards marks within worked accounts, including transfer and
+ * calculation penalties. Preserve the printed layout and allocation rather
+ * than turning each correct final figure into an all-or-nothing checklist. */
+export interface AccountingRubric {
+  system: 'accounting';
+  solution: Omit<CardSourceMaterial, 'regions'> & { kind: 'marking-scheme'; regions?: Array<{ p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }> };
+  allocationNote: string;
+  /** A separately priced output within a shared printed instruction. */
+  taskFocus?: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -831,6 +903,52 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'politics') {
+      const { criteria, schemePages, schemeFileid } = card.rubric;
+      return Boolean(schemeFileid)
+        && schemePages.length > 0
+        && schemePages.every(page => Number.isInteger(page) && page > 0)
+        && criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const permitted = criterion.permittedMarks;
+          if (!permitted.length || Math.min(...permitted) !== 0
+              || Math.max(...permitted) !== criterion.maxMarks
+              || new Set(permitted).size !== permitted.length
+              || permitted.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+          if (!criterion.bands) return true;
+          const marks = criterion.bands.flatMap(band => band.marks).sort((a, b) => a - b);
+          return marks.length === permitted.length
+            && new Set(marks).size === marks.length
+            && marks.every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
+    if (card.rubric.system === 'applied-mathematics') {
+      const { allocations, solution } = card.rubric;
+      return allocations.length > 0
+        && new Set(allocations.map(item => item.id)).size === allocations.length
+        && allocations.every(item => item.credit.length > 1
+          && item.credit[0] === 0
+          && item.credit.every((mark, index) => Number.isInteger(mark) && mark >= 0
+            && (index === 0 || mark > item.credit[index - 1])))
+        && allocations.reduce((sum, item) => sum + Math.max(...item.credit), 0) === card.totalMarks
+        && solution.kind === 'source-scheme'
+        && solution.pages.length > 0
+        && solution.pages.every(page => Number.isInteger(page) && page > 0)
+        && (!solution.regions || (solution.regions.length === solution.pages.length
+          && solution.regions.every(rect => Array.isArray(rect) && rect.length === 4
+            && rect.every(value => Number.isFinite(value) && value >= 0 && value <= 1)
+            && rect[0] < rect[2] && rect[1] < rect[3])));
+    }
+    if (card.rubric.system === 'accounting') {
+      const { solution, allocationNote } = card.rubric;
+      return Number.isFinite(card.totalMarks) && card.totalMarks > 0
+        && solution.kind === 'marking-scheme'
+        && Boolean(solution.sourceFileid) && Boolean(allocationNote.trim())
+        && solution.pages.length > 0
+        && solution.pages.every(page => Number.isInteger(page) && page > 0);
+    }
     if (card.rubric.system === 'irish') {
       const { criteria } = card.rubric;
       const awardMaximum = criteria
@@ -866,8 +984,8 @@ export function tariffReconciles(card: SecCard): boolean {
               .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
         });
     }
-    if (card.rubric.system === 'geography') {
-      const { criteria } = card.rubric;
+    if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
+      const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
       return criteria.length > 0
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
         && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
@@ -875,6 +993,7 @@ export function tariffReconciles(card: SecCard): boolean {
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0
           && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && criterion.permittedMarks.every(mark => Number.isInteger(mark) && mark >= 0 && mark <= criterion.maxMarks)
           && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
     }
     const { assessment } = card.rubric;

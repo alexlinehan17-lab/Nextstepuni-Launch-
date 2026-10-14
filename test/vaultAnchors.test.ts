@@ -32,6 +32,7 @@ import {
 } from '../components/PaperTrail/vaultResolve';
 import { paperRegionFor, questionsInDisplayOrder, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
+import { PAPER_TRAIL_INDEX } from '../paperTrailData';
 
 const ANCHORS_DIR = path.resolve(__dirname, '../public/paper-anchors');
 const HOSTED_ANSWERS_DIR = path.resolve(__dirname, '../public/paper-answers');
@@ -66,9 +67,10 @@ describe('audited hosted answer maps', () => {
       .toBe(storage);
   });
 
-  it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(23);
-    for (const key of HOSTED_ANSWER_OVERRIDES) {
+  it('keeps the 23 original Art and Physics overrides byte-identical to their reviewed source maps', () => {
+    const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|') || key.startsWith('physics|'));
+    expect(originalOverrides).toHaveLength(23);
+    for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['art', 'physics']).toContain(subjectId);
       const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
@@ -77,6 +79,25 @@ describe('audited hosted answer maps', () => {
       expect(existsSync(source), source).toBe(true);
       expect(readFileSync(hosted, 'utf8')).toBe(readFileSync(source, 'utf8'));
       expect(isAnswerMap(JSON.parse(readFileSync(hosted, 'utf8')))).toBe(true);
+    }
+  });
+
+  it('ships reviewed question and scheme regions for every indexed Applied Mathematics edition', () => {
+    const entries = PAPER_TRAIL_INDEX['applied-mathematics'];
+    const expected = entries.flatMap(entry => entry.papers.map(paper =>
+      `applied-mathematics|${entry.year}|${paper.doc.f}`));
+    const actual = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('applied-mathematics|'));
+    expect(actual).toHaveLength(66);
+    expect(actual.sort()).toEqual(expected.sort());
+    for (const entry of entries) for (const paper of entry.papers) {
+      const map: PaperAnswerMap = JSON.parse(readFileSync(path.join(HOSTED_ANSWERS_DIR, String(entry.year), `${paper.doc.f}.json`), 'utf8'));
+      expect(isAnswerMap(map)).toBe(true);
+      expect(map.paperFileid).toBe(paper.doc.f);
+      expect(map.schemeFileid).toBe(paper.scheme!.f);
+      for (const question of map.q) {
+        expect(paperRegionFor(map.q, question.n, map.maxCropPages ?? 4)).not.toBeNull();
+        expect(schemeRegionFor(question).length).toBeGreaterThan(0);
+      }
     }
   });
 });

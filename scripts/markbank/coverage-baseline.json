@@ -1,4 +1,19 @@
 {
+  "accounting": {
+    "cards": 1365,
+    "contentHash": "318a7e9cc00973a3",
+    "coveragePct": 100.0,
+    "covered": 1365,
+    "excluded": 0,
+    "leaves": 1365,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 68,
+      "hash": "88fb291dee0789bc"
+    },
+    "refsHash": "8606f8982dc6e154"
+  },
   "agricultural-science": {
     "cards": 869,
     "contentHash": "9e8d8bd3223f17cf",
@@ -30,19 +45,22 @@
     "refsHash": "2ecf53681016b22d"
   },
   "applied-maths": {
-    "cards": 383,
-    "contentHash": "8ef95eda7eba25a5",
-    "coveragePct": 92.2,
-    "covered": 408,
-    "excluded": 51,
-    "leaves": 498,
-    "open": 39,
+    "cards": 1486,
+    "contentHash": "bc780565ef245c6e",
+    "coveragePct": 100.0,
+    "covered": 1486,
+    "excluded": 0,
+    "leaves": 1486,
+    "nativeSchemes": 65,
+    "open": 0,
     "orphans": 0,
     "papers": {
-      "count": 10,
-      "hash": "878e72543b3b249c"
+      "count": 66,
+      "hash": "445d863125e8baac"
     },
-    "refsHash": "98c368f7993f1582"
+    "refsHash": "32b700ecc5e47388",
+    "sourceEditions": 66,
+    "sourceTaskLinks": 2972
   },
   "arabic": {
     "cards": 250,
@@ -585,19 +603,19 @@
     "refsHash": "98497719950dbd78"
   },
   "physical-education": {
-    "cards": 221,
-    "contentHash": "e1951977580449f7",
-    "coveragePct": 95.1,
-    "covered": 225,
-    "excluded": 480,
+    "cards": 772,
+    "contentHash": "bf37bb69743b0e63",
+    "coveragePct": 100.0,
+    "covered": 741,
+    "excluded": 0,
     "leaves": 741,
-    "open": 36,
+    "open": 0,
     "orphans": 0,
     "papers": {
       "count": 13,
       "hash": "0dbddd431bb256fe"
     },
-    "refsHash": "36d438b2d44d6126"
+    "refsHash": "95be090e951fe8e2"
   },
   "physics": {
     "cards": 1133,
@@ -628,6 +646,21 @@
       "hash": "593a0709ee51ab08"
     },
     "refsHash": "727a4af11e33aa55"
+  },
+  "politics-and-society": {
+    "cards": 623,
+    "contentHash": "a3a2d3048487e17b",
+    "coveragePct": 100.0,
+    "covered": 623,
+    "excluded": 0,
+    "leaves": 623,
+    "open": 0,
+    "orphans": 0,
+    "papers": {
+      "count": 17,
+      "hash": "6c53167dc5584a52"
+    },
+    "refsHash": "38694d71adeb29ca"
   },
   "portuguese": {
     "cards": 173,

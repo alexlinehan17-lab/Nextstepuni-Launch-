@@ -14,8 +14,12 @@
 import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import { PAPER_TOPIC_TAGS } from '../paperTrail/topicTags';
 import accountingAuditJson from './accounting.json';
+import accountingTaskRuntime from './accounting-task-runtime.json';
 import agriculturalScienceAuditJson from './agricultural-science.json';
 import appliedMathematicsAuditJson from './applied-mathematics.json';
+import appliedMathematicsReviewedQuestions from './applied-mathematics-reviewed-questions.json';
+import appliedMathematicsArchiveTopics from './applied-mathematics-archive-topics.json';
+import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
 import businessRuntimeJson from './business-runtime.json';
@@ -49,6 +53,7 @@ import physicalEducationRuntimeJson from './physical-education-runtime.json';
 import physicsRuntimeJson from './physics-runtime.json';
 import physicsAndChemistryRuntimeJson from './physics-and-chemistry-runtime.json';
 import politicsAndSocietyAuditJson from './politics-and-society.json';
+import politicsTaskJson from './politics-tasks.json';
 import religiousEducationRuntimeJson from './religious-education-runtime.json';
 import spanishRuntimeJson from './spanish-runtime.json';
 import technologyRuntimeJson from './technology-runtime.json';
@@ -106,6 +111,9 @@ export interface ExamQuestionPartReference {
   n: string;
   /** Factual heading only (section/part/roman-numeral range); never question text. */
   subdivision?: string;
+  /** Exact practice task, including finite routes; original n remains the paper jump. */
+  markBankCardId?: string;
+  curriculumNodeId?: string;
   topicId: string;
 }
 
@@ -826,6 +834,21 @@ const appliedMathematicsTopics: ExamTopicDefinition[] = appliedMathematicsLevels
   }),
 );
 
+// The reference menu omits some topics found in the reviewed SEC papers.
+// Resolve each addition through the specification for its examination year.
+// These are SEC review additions, not claimed reference-page data.
+for (const archive of appliedMathematicsArchiveTopics) {
+  const appliedArchiveSpecification = resolveCurriculumSpecification('applied-mathematics', archive.specificationYear)!;
+  const node = findCanonicalTopic(appliedArchiveSpecification, archive.curriculumNodeId);
+  if (!node) throw new Error(`Unknown Applied Mathematics archive node: ${archive.curriculumNodeId}`);
+  appliedMathematicsTopics.push({
+    id: archive.id, label: node.title, level: archive.level as PaperLevel,
+    sourcePath: appliedArchiveSpecification.sources[0].url,
+    officialQuestionKeys: [], mockQuestionCount: 0,
+    curriculumNodeIds: [node.id],
+  });
+}
+
 const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: appliedMathematicsAudit.subjectId,
   capturedAt: appliedMathematicsAudit.capturedAt,
@@ -834,7 +857,7 @@ const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
     id: `applied-mathematics-${level}`,
     label: appliedMathematicsAudit.levels[level].label,
     level,
-    topicIds: appliedMathematicsAudit.levels[level].topics.map((topic) => topic.id),
+    topicIds: appliedMathematicsTopics.filter(topic => topic.level === level).map(topic => topic.id),
   })),
   topics: appliedMathematicsTopics,
 };
@@ -3296,6 +3319,31 @@ const politicsAndSocietyTopics: ExamTopicDefinition[] = politicsAndSocietyLevels
   }),
 );
 
+export interface PoliticsExamTask {
+  id: string; year: number; level: 'higher' | 'ordinary'; n: string;
+  questionRef: string; topicId: string; section: string; fileid: string; thinker: boolean;
+}
+export const POLITICS_EXAM_TASKS = politicsTaskJson as PoliticsExamTask[];
+export const politicsExamTopicIdsForTask = (task: PoliticsExamTask): string[] => {
+  const content = Object.entries(POLITICS_AND_SOCIETY_CONTENT_CROSSWALK)
+    .filter(([, ids]) => ids.includes(task.topicId))
+    .map(([slug]) => `politics-and-society-${task.level}-${slug}`);
+  if (content.length !== 1) throw new Error(`Politics task ${task.id} has no unique content topic`);
+  if (task.section === 'B') content.push(`politics-and-society-${task.level}-data-based-questions`);
+  if (task.thinker) content.push(`politics-and-society-${task.level}-key-thinkers`);
+  return content;
+};
+for (const task of POLITICS_EXAM_TASKS) {
+  for (const topicId of politicsExamTopicIdsForTask(task)) {
+    politicsAndSocietyPartReferences.push({
+      subjectId: 'politics-and-society', level: task.level, year: task.year,
+      sitting: 'main', paperKey: 'single', fileid: task.fileid, n: task.n,
+      subdivision: task.questionRef, topicId, markBankCardId: task.id,
+      curriculumNodeId: task.topicId,
+    });
+  }
+}
+
 const POLITICS_AND_SOCIETY_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: politicsAndSocietyAudit.subjectId,
   capturedAt: politicsAndSocietyAudit.capturedAt,
@@ -3466,6 +3514,21 @@ for (const runtime of directQuestionRuntime.subjects) {
   }
 }
 
+// Separately priced, visually reviewed Accounting tasks use the same identity
+// and topic in Mark Bank and Atlas. Preserve every existing parent question.
+for (const task of accountingTaskRuntime.tasks) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', task.level as PaperLevel,
+    task.year, 'main', task.fileid, task.n, 'single', 'ev'), task.topicIds);
+}
+// This reviewed departmental question is absent from the external reference.
+// Its older fileless association classifies Q4 but cannot create an Atlas row;
+// bind both preserved answer-map anchors explicitly so the parent stays visible.
+for (const lang of ['ev', 'iv'] as const) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', 'higher', 2017, 'main',
+    `LC032ALP000${lang.toUpperCase()}.pdf`, '4', 'single', lang),
+  ['accounting-higher-final-accounts-sole-trader']);
+}
+
 /**
  * Exact question-level evidence for the large browser-audited subjects. The
  * booklet id is part of the key because split and pilot papers can restart at
@@ -3515,6 +3578,24 @@ registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
+
+// Exact SEC-task evidence supplements the preserved historical reference map.
+// Each paper question keeps its original identity, while the Atlas task feed
+// uses markBankCardId to expose only the relevant parts and answer routes.
+const politicsQuestionTopics = new Map<string, Set<string>>();
+for (const task of POLITICS_EXAM_TASKS) {
+  const key = fileQuestionKey('politics-and-society', task.level, task.year, 'main', task.fileid, task.n, 'single', 'ev');
+  const ids = politicsQuestionTopics.get(key) ?? new Set<string>();
+  politicsExamTopicIdsForTask(task).forEach(id => ids.add(id));
+  politicsAndSocietyTopics.filter(topic => topic.level === task.level &&
+    topic.officialQuestionKeys.includes(`${task.year}|main|${task.n}`))
+    .forEach(topic => ids.add(topic.id));
+  politicsQuestionTopics.set(key, ids);
+}
+for (const [key, ids] of politicsQuestionTopics) {
+  FILE_QUESTION_TOPICS.set(key, [...new Set([...(FILE_QUESTION_TOPICS.get(key) ?? []), ...ids])]);
+}
+
 
 /**
  * These browser-audited subjects entered the exam hierarchy after their
@@ -4147,6 +4228,20 @@ for (const paper of PAPER_TOPIC_TAGS) {
       });
     }
   }
+}
+
+// SEC task review takes precedence over coarser reference headings. The
+// printed-question card belongs to the union of its independently reviewed
+// tasks, with each visually verified booklet identity and its hosted answer map.
+for (const question of appliedMathematicsReviewedQuestions) {
+  const level = question.level as PaperLevel;
+  FILE_QUESTION_TOPICS.set(fileQuestionKey(
+    'applied-mathematics', level, question.year, 'main', question.fileid,
+    question.n, 'single', question.lang as PaperLang,
+  ), question.topicIds);
+  QUESTION_TOPICS.set(questionKey(
+    'applied-mathematics', level, question.year, 'main', question.n,
+  ), question.topicIds);
 }
 
 for (const paper of PAPER_TOPIC_TAGS) {
