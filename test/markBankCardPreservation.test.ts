@@ -460,7 +460,7 @@ const reviewedMathematicsAdditions = new Set([
 // Each paper's new tasks are pinned by their own identity hash below.
 const reviewedMathematicsPaperPrefixes = ['maths-2026-hl-p1-', 'maths-2026-hl-p2-', 'maths-2026-ol-p1-', 'maths-2026-ol-p2-',
   // 2020, 2019, 2018, 2017 and 2016 Higher/Ordinary papers had no cards before their 2026-10-12 review.
-  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-', 'maths-2019-hl-p2-', 'maths-2019-ol-p1-', 'maths-2019-ol-p2-', 'maths-2018-hl-p1-', 'maths-2018-hl-p2-', 'maths-2018-ol-p1-', 'maths-2018-ol-p2-', 'maths-2017-hl-p1-', 'maths-2017-hl-p2-', 'maths-2017-ol-p1-', 'maths-2017-ol-p2-', 'maths-2016-hl-p1-'];
+  'maths-2020-hl-p1-', 'maths-2020-hl-p2-', 'maths-2020-ol-p1-', 'maths-2020-ol-p2-', 'maths-2019-hl-p1-', 'maths-2019-hl-p2-', 'maths-2019-ol-p1-', 'maths-2019-ol-p2-', 'maths-2018-hl-p1-', 'maths-2018-hl-p2-', 'maths-2018-ol-p1-', 'maths-2018-ol-p2-', 'maths-2017-hl-p1-', 'maths-2017-hl-p2-', 'maths-2017-ol-p1-', 'maths-2017-ol-p2-', 'maths-2016-hl-p1-', 'maths-2016-hl-p2-'];
 const baselineCards = <T extends { id: string }>(cards: readonly T[]) =>
   cards.filter(card => !reviewedMathematicsAdditions.has(card.id)
     && !reviewedMathematicsPaperPrefixes.some(prefix => card.id.startsWith(prefix)));
@@ -722,6 +722,13 @@ describe('Mark Bank card preservation', () => {
     expect(added).toHaveLength(35);
     expect(added.every(card => card.year === 2016 && card.paperFileid === 'LC003ALP100EV')).toBe(true);
     expect(identityHash(added)).toBe('450f75ebc7bd763e20920a127ea33fa3a5a36b7bb29b8533453d624e781eeafd');
+  });
+
+  it('retains all 2016 Higher Level Paper 2 tasks as reviewed additions', () => {
+    const added = MATHS_HIGHER.filter(card => card.id.startsWith('maths-2016-hl-p2-'));
+    expect(added).toHaveLength(34);
+    expect(added.every(card => card.year === 2016 && card.paperFileid === 'LC003ALP200EV')).toBe(true);
+    expect(identityHash(added)).toBe('b7cf855fdbe61afbccd96a87a1d6f206a6f5ee4f24bee06a62b8bfcfb67eb154');
   });
 
   it('protects the complete current bank', () => {

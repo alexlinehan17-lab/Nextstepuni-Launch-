@@ -10407,5 +10407,243 @@
   "truncated": false,
   "questionRef": "2016 HL Paper 1 Q9(b)(iii)",
   "description": "The question as printed on the paper \u2014 A male bee comes from an unfertilised egg, i.e. he has a female parent but he does not have a male parent.A female bee comes from a fertilised egg, i.e. she has a female parent and a male parent. (iii) The number of ancestors in each generation can also be calculated by using the formula Gn= (1 + \u221a5)n\u2212(1 \u2212\u221a5)n . 2n\u221a5 Use this formula to verify the number of ancestors in G\u2083."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q1-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q1(a)",
+  "description": "The question as printed on the paper \u2014 The points A(6, \u22122), B(5, 3) and C(\u20123, 4) are shown on the diagram. (a) Find the equation of the line through y 6 B which is perpendicular to AC. 5 C 4 B 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 -1 -2 A"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q1-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q1(b)",
+  "description": "The question as printed on the paper \u2014 The points A(6, \u22122), B(5, 3) and C(\u20123, 4) are shown on the diagram. y 6 5 C 4 B 3 2 1 x -3 -2 -1 1 2 3 4 5 6 7 -1 -2 A Use your answer to part (a) above to find the co-ordinates of the orthocentre of the triangle ABC."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q2(a)",
+  "description": "The question as printed on the paper \u2014 A point X has co-ordinates (\u22121, 6) and the slope of the line XC is \u00b9 7. Find the equation of XC. Give your answer in the form ax + by + c = 0, where a, b, c \u2208 \u2124. s (\u22121, 6) C(\u2012g, \u2012f ) X 5 cm l"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q2(b)",
+  "description": "The question as printed on the paper \u2014 A point X has co-ordinates (\u22121, 6) and the slope of the line XC is \u00b9 s (\u22121, 6) C(\u2012g, \u2012f ) X 5 cm l C is the centre of a circle s, of radius 5 cm. The line l: 3x + 4y\u221221 = 0 is a tangent to s and passes through X, as shown. Find the equation of one such circle s."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q3-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q3(a)",
+  "description": "The question as printed on the paper \u2014 (a) Show that (cos 7A + cos A)/(sin 7A\u2212sin A) = cot 3A."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q3-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q3(b)",
+  "description": "The question as printed on the paper \u2014 b, where a, b\u2208\u2115. (b)"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q4-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q4(a)(i)",
+  "description": "The question as printed on the paper \u2014 (a) (i) Prove that the triangles ABD and DBC are similar. D B C A"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q4-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q4(a)(ii)",
+  "description": "The question as printed on the paper \u2014 The diagram shows a semi-circle standing on a diameter [AC], and [BD] \u22a5 [AC]. D B C A If |AB| = x, |BC| = 1, and |BD| = y, write y in terms of x."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q4-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q4(b)",
+  "description": "The question as printed on the paper \u2014 The diagram shows a semi-circle standing on a diameter [AC], and [BD] \u22a5 [AC]. Part (a)(ii): If |AB| = x, |BC| = 1, and |BD| = y, write y in terms of x. Use your result from part (a)(ii) to construct a line segment equal in length (in centimetres) to the square root of the length of the line segment [TU] which is drawn below."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q5-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q5(a)(i)",
+  "description": "The question as printed on the paper \u2014 In an archery competition, the team consisting of John, David, and Mike will win 1st prize if at least two of them hit the bullseye with their last arrows. From past experience, they know that the probability that John, David, and Mike will hit the bullseye on their last arrow is 1/5, 1/6, and 1/4 respectively. Complete the table below to show all the ways in which they could win 1st prize. Table: Way 1, Way 2, Way 3, Way 4. John: \u2713, _, _, _. David: \u2713, _, _, _. Mike: \u00d7, _, _, _. \u2713 = Hit, \u00d7 = Miss."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q5-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q5(a)(ii)",
+  "description": "The question as printed on the paper \u2014 In an archery competition, the team consisting of John, David, and Mike will win 1st prize if at least two of them hit the bullseye with their last arrows. From past experience, they know that the probability that John, David, and Mike will hit the bullseye on their last arrow is 1/5, 1/6, and 1/4 respectively. Part (a)(i): Complete the table below to show all the ways in which they could win 1st prize. Table: Way 1, Way 2, Way 3, Way 4. John: \u2713, _, _, _. David: \u2713, _, _, _. Mike: \u00d7, _, _, _. \u2713 = Hit, \u00d7 = Miss. Hence or otherwise find the probability that they will win the competition."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q5-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q5(b)",
+  "description": "The question as printed on the paper \u2014 Two events, A and B, are represented in the diagram. P(A\u2229B) = 0\u22191, P(B \\ A) = 0\u22193 andP(A \\ B) = x. Write P(A) in terms of x and hence, or otherwise, find the x 0\u00b73 0\u00b71 value of x for which the events A and B are independent."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q6-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q6(a)",
+  "description": "The question as printed on the paper \u2014 A local sports club is planning to run a weekly lotto. To win the Jackpot of \u20ac1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome). Calculate the probability that M, 3, 3 would be the winning outcome in a particular week."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q6-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q6(b)",
+  "description": "The question as printed on the paper \u2014 A local sports club is planning to run a weekly lotto. To win the Jackpot of \u20ac1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome). If a contestant matches the letter only, or the letter and one number (but not both numbers), they will win \u20ac50. Using the table below, or otherwise, find how much the club should expect to make or lose on each play, correct to the nearest cent, if they charge \u20ac2 per play. Payout (x) \u20ac Probability (P(x)) x.P(x) Event Win Jackpot Match letter and first number only Match letter and second number only Match letter and neither number Fail to win"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q6-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q6(c)",
+  "description": "The question as printed on the paper \u2014 A local sports club is planning to run a weekly lotto. To win the Jackpot of \u20ac1000, contestants must match one letter chosen from the 26 letters in the alphabet and two numbers chosen, in the correct order, from the numbers 0 to 9. In this lotto, repetition of numbers is allowed (e.g. M, 3, 3 is an outcome). The club estimates that the average number of plays per week will be 845. If the club wants to make an average profit of \u20ac600 per week from the lotto, how much should the club charge per play, correct to the nearest cent?"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(a)(i)",
+  "description": "The question as printed on the paper \u2014 A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2\u00b75 m and |CF| = 3 m. Show that |AC| = 1\u00b795 m, correct to two decimal places. B E F 3 m A D C 2\u00b75 m"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(a)(ii)",
+  "description": "The question as printed on the paper \u2014 A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2\u00b75 m and |CF| = 3 m. B E F 3 m A D C 2\u00b75 m The angle of elevation of B from C is 50\u00b0 (i.e. |\u2220BCA| = 50\u00b0). Show that |AB| = 2\u00b73 m, correct to one decimal place."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(a)(iii)",
+  "description": "The question as printed on the paper \u2014 A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2\u00b75 m and |CF| = 3 m. B E F 3 m A D C 2\u00b75 m (iii) Find |BC|, correct to the nearest metre."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(a)(iv)",
+  "description": "The question as printed on the paper \u2014 A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2\u00b75 m and |CF| = 3 m. B E F 3 m A D C 2\u00b75 m (iv) Find |\u2220BCD|, correct to the nearest degree."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-a-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(a)(v)",
+  "description": "The question as printed on the paper \u2014 A glass Roof Lantern in the shape of a pyramid has a rectangular base CDEF and its apex is at B as shown. The vertical height of the pyramid is |AB|, where A is the point of intersection of the diagonals of the base as shown in the diagram. Also |CD| = 2\u00b75 m and |CF| = 3 m. B E F 3 m A D C 2\u00b75 m Find the area of glass required to glaze all four triangular sides of the pyramid. Give your answer correct to the nearest m\u00b2."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q7-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q7(b)",
+  "description": "The question as printed on the paper \u2014 B (b) Another Roof Lantern, in the shape of a pyramid, has a square base CDEF. The vertical height |AB| = 3 m, where F E A is the point of intersection of the diagonals of the base as shown. The angle of elevation of B from C is 60\u00b0 (i.e. |\u2220BCA| = 60\u00b0). Find the length of the side of the square base of the lantern. A Give your answer in the form \u221aa m, where a\u2208\u2115. C D"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(a)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. Find the period and range of h(t)."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(b)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. Find the maximum height of the water in the port."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(c)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. Find the rate at which the height of the water is changing when t = 2, correct to two decimal places. Explain your answer in the context of the question."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(d)(i)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. On a particular day the high tide occurred at midnight (i.e. t = 0). Use the function to (d) (i) complete the table and show the height, h(t), of the water between midnight and the following midnight. \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) Midnight 3 a.m. 6 a.m. 9 a.m. 12 noon 3 p.m. 6 p.m. 9 p.m. Midnight Time t 0 3 (hours) h(t) (m)"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(d)(ii)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. (ii) Sketch the graph of h(t) between midnight and the following midnight. 3 2 Height (m) 1 9 a.m. Midday 3 p.m. 6 p.m. 9 p.m. 3 a.m. Midnight 6 a.m. Midnight Time"
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-e.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(e)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. Find, from your sketch, the difference in water height between low tide and high tide."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q8-f.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q8(f)",
+  "description": "The question as printed on the paper \u2014 The height of the water in a port was measured over a period of time. The average height was found to be 1\u00b76 m. The height measured in metres, h(t), was modelled using the function \ud835\udf0b h(t) = 1\u00b76 + 1\u00b75 cos ( 6t) \ud835\udf0b where t represents the number of hours since the last recorded high tide and ( 6t) is expressed in radians. A fully loaded barge enters the port, unloads its cargo and departs some time later. The fully loaded barge requires a minimum water level of 2 m. When the barge is unloaded it only requires 1\u00b75 m. Use your graph to estimate the maximum amount of time that the barge can spend in port, without resting on the sea-bed."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(a)(i)",
+  "description": "The question as printed on the paper \u2014 Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of \u20ac39 400 and a standard deviation of \u20ac12 920. The government intends to impose a new tax on incomes over \u20ac60 000. Find the percentage of full-time workers who will be liable for this tax, correct to one decimal place."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(a)(ii)",
+  "description": "The question as printed on the paper \u2014 Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of \u20ac39 400 and a standard deviation of \u20ac12 920. The government will also provide a subsidy to the lowest 10 % of income earners. Find the level of income at which the government will stop paying the subsidy, correct to the nearest euro."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(a)(iii)",
+  "description": "The question as printed on the paper \u2014 Data on earnings were published for a particular country. The data showed that the annual income of people in full-time employment was normally distributed with a mean of \u20ac39 400 and a standard deviation of \u20ac12 920. (iii) Some time later a research institute surveyed a sample of 1000 full-time workers, randomly selected, and found that the mean annual income of the sample was \u20ac38 280. Test the hypothesis, at the 5 % level of significance, that the mean annual income of full-time workers has changed since the national data were published. State the null hypothesis and the alternative hypothesis. Give your conclusion in the context of the question."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(b)",
+  "description": "The question as printed on the paper \u2014 The research institute surveyed 400 full-time farmers, randomly selected from all the full-time farmers in the country, and found that the mean income for the sample was \u20ac26 974 and the standard deviation was \u20ac5120. Assuming that annual farm income is normally distributed in this country, create a 95 % confidence interval for the mean income of full-time farmers."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(c)",
+  "description": "The question as printed on the paper \u2014 It is known that data on farm size are not normally distributed. The research institute could take many large random samples of farm size and create a sampling distribution of the means of all these samples. Give one reason why they might do this."
+ },
+ {
+  "file": "maths-2016-HL-ask-p2-q9-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 HL Paper 2 Q9(d)",
+  "description": "The question as printed on the paper \u2014 The research institute also carried out a survey into the use of agricultural land. n farmers were surveyed. If the margin of error of the survey was 4\u00b75 %, find the value of n."
  }
 ]

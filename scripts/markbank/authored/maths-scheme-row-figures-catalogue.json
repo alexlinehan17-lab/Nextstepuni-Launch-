@@ -1382,5 +1382,77 @@
   "description": "The marking scheme's printed row for 2016 Higher Level Paper 1 Q9(b)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B (0, 2, 5), listing Partial Credit, Note.",
   "solution": true,
   "questionRef": "2016 HL Paper 1 Q9(b)(iii)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p032-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q3(a), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15C (0, 5, 10, 15), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q3(a)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p032-i1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q3(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10D (0, 3, 5, 8, 10), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q3(b)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p034-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q4(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 4, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q4(a)(ii)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p035-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q4(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C (0, 2, 4, 5), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q4(b)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p036-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q5(a)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B (0, 2, 5), listing Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q5(a)(i)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p037-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q6(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q6(b)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p042-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q8(d)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3, 7, 10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q8(d)(i)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p043-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q8(d)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C (0, 3,7,10), listing Low Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q8(d)(ii)"
+ },
+ {
+  "file": "maths-2016-HL-scheme-p045-i0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's printed row for 2016 Higher Level Paper 2 Q9(a)(iii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 15D (0, 4, 7, 11,15), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+  "solution": true,
+  "questionRef": "2016 HL Paper 2 Q9(a)(iii)"
  }
 ]
