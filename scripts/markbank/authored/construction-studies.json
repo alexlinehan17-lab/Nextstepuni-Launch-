@@ -7528,953 +7528,1288 @@
   },
   {
     "id": "cons-2018-ol-q1-a",
-    "topicId": "cons-2-4",
-    "conceptId": "vertical-section-through-strip-foundation-215",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-through-strip-foundation-215",
     "questionRef": "2018 OL Q1(a)",
+    "stem": "A 215 mm solid concrete block wall separates two rooms on the ground floor of a dwelling house, as shown. A strip foundation supports the wall, which is plastered on both sides. A flush panel door, 60 mm in thickness, is fixed in the wall. The doorframe is 120 mm × 50 mm. The insulated concrete ground floor is finished with a 20 mm tongue and groove floating hardwood floor.",
     "questionText": "To a scale of 1:5 draw a vertical section through the strip foundation, the 215 mm wall, the ground floor and the centre of the door up to a point 500 mm above finished floor level. Show 600 mm width of floor on each side of the wall and include three typical dimensions on your drawing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 35,
+    "totalMarks": 38,
     "rows": [
       {
-        "id": "cons-2018-ol-q1-a-r1",
-        "kind": "anyN",
-        "verbatim": "To a scale of 1:5 draw a vertical section through the strip foundation, the 215 mm wall, the ground floor and the centre",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details ( 5 marks each)",
         "marks": 35,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "15 mm internal plaster with skim coat",
-            "120 × 50 mm doorframe",
-            "60 mm flush panel door",
-            "65 × 15 mm architrave and 100 × 15 mm skirting board",
-            "20 mm tongue and groove floating hardwood floor",
-            "100 mm smooth concrete floor",
-            "250 mm floor insulation with thermal blocks",
-            "200 mm concrete sub-floor",
-            "Radon barrier",
-            "30 mm sand blinding",
-            "200 mm hardcore",
-            "Reinforced concrete foundation",
-            "215 mm concrete block wall",
-            "Any three typical dimensions"
-          ]
-        }
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 15 mm internal plaster with skim coat; 120 × 50 mm doorframe; 60 mm flush panel door; 65 × 15 mm architrave and 100 × 15 mm skirting; 20 mm floating hardwood floor; 100 mm smooth concrete floor; 250 mm floor insulation with thermal blocks; 200 mm concrete sub-floor; radon barrier; 30 mm sand blinding; 200 mm hardcore; reinforced concrete foundation; 215 mm block wall.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Internal wall, door, strip foundation and ground floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the radon detail."
+    }
   },
   {
     "id": "cons-2018-ol-q3-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-3",
     "conceptId": "advantage-wood-burning-stove-heat-water",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2018 OL Q3(b)",
-    "questionText": "Discuss one advantage of using a wood-burning stove to heat water for the house.",
     "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "questionText": "Discuss one advantage of using a wood-burning stove to heat water for the house.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 7",
-      "answer": 1,
-      "ofParts": 9,
-      "perPart": 7
+      "kind": "fixed"
     },
     "totalMarks": 7,
     "rows": [
       {
-        "id": "cons-2018-ol-q3-b-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss one advantage of using a wood-burning stove to heat water for the house",
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
         "marks": 7,
-        "openList": true,
-        "contextNote": "Discuss one advantage of using a wood-burning stove to heat water for the house",
-        "group": {
-          "claimMax": 1,
-          "perOption": 7,
-          "options": [
-            "Wood is renewable and less expensive",
-            "Modern wood burning stoves are highly efficient",
-            "Stoves are designed to heat domestic hot water",
-            "Trees will almost re-absorb as much CO2 released by burning wood",
-            "Wood burning stoves can supplement other forms of central heating",
-            "The world supply of fossil fuels is dwindling making wood burning stoves a viable option",
-            "Wood logs are essentially made from waste wood – inexpensive, recycled, carbon neutral",
-            "Homes with wood burning stoves feel warm and inviting",
-            "Grow your own, fast growing species e.g. willow"
-          ]
-        }
+        "contextNote": "Such as: wood is renewable and less expensive; modern stoves are highly efficient; trees reabsorb the CO₂ released; it supplements other heating as fossil fuels dwindle.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q3-stove",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Hot water to a shower from a stove back boiler",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    }
   },
   {
     "id": "cons-2018-ol-q4-a",
-    "topicId": "cons-2-4",
-    "conceptId": "environmental-reason-why-strip-foundation-considered",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-2-2",
+    "conceptId": "environmental-reason-why-strip-foundation-considered",
     "questionRef": "2018 OL Q4(a)",
+    "stem": "The sketch shows one corner of a strip foundation for the external wall of a dwelling house. The external wall is to be a 400 mm concrete block wall with a full-fill insulated cavity.",
     "questionText": "Discuss one environmental reason why a strip foundation is considered the most suitable foundation for this house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 10,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2018-ol-q4-a-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss one environmental reason why a strip foundation is considered the most suitable foundation for this house.",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "The foundation uses minimum ground area",
-            "Minimum excavation needed",
-            "Less machinery used. Less fuel used",
-            "Minimum amount of concrete, aggregate and steel used",
-            "The strip foundation is widely used",
-            "Easy to set out",
-            "This form of foundation has proved successful over many years",
-            "Relatively easily constructed",
-            "Easily filled and levelled",
-            "This contributes to making strip foundations easy on the environment"
-          ]
-        }
+        "id": "detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 5,
+        "contextNote": "Such as: minimum ground area and excavation; less machinery and fuel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 5,
+        "contextNote": "A second, different detail of the reason. Such as: the least concrete, aggregate and steel; easy to set out, construct, fill and level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q4-environment",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Setting out a strip foundation",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed headings in (b) are required, each separately marked."
+    }
   },
   {
     "id": "cons-2018-ol-q6-c",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-1-8",
     "conceptId": "recommend-other-item-personal-protective-equipment",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2018 OL Q6(c)",
+    "stem": "",
     "questionText": "Recommend one other item of personal protective equipment (PPE) which should be worn by workers on a construction site. Give one reason for your recommendation.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 5",
-      "answer": 1,
-      "ofParts": 4,
-      "perPart": 5
-    },
-    "totalMarks": 5,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q6-c-r1",
-        "kind": "anyN",
-        "verbatim": "Reason",
-        "marks": 5,
-        "openList": true,
-        "contextNote": "Reason",
-        "group": {
-          "claimMax": 1,
-          "perOption": 5,
-          "options": [
-            "This is to protect the eyes from sharp objects",
-            "To protect the eyes from grit and dust",
-            "To protect the eyes when cutting concrete or steel",
-            "Protects the eyes when using an angle grinder or when welding"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q7-c",
-    "topicId": "cons-1-1",
-    "conceptId": "advantage-storing-rainwater-underground-tank",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q7(c)",
-    "questionText": "Discuss one advantage of storing rainwater in an underground tank.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 6",
-      "answer": 1,
-      "ofParts": 6,
-      "perPart": 6
-    },
-    "totalMarks": 6,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q7-c-r1",
-        "kind": "anyN",
-        "verbatim": "Discuss one advantage of storing rainwater in an underground tank.",
-        "marks": 6,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 6,
-          "options": [
-            "Underground tanks take up no space in small sites",
-            "They can be placed under lawns or driveways",
-            "These tanks reduce the risk of algae growth caused by daylight and fluctuations in temperature",
-            "Aboveground rainwater tanks can be look unsightly",
-            "Underground water is at a constant temperature and will not freeze in cold weather",
-            "Underground tanks are usually larger and store more water"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q3-a",
-    "topicId": "cons-5-2",
-    "conceptId": "wood-burning-stove-back-boiler-shown",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q3(a)",
-    "questionText": "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: • wood-burning stove • rising main and cold water storage tank • hot water cylinder and expansion tank • pipework to shower and all necessary valves.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 11,
-      "perPart": 5
-    },
-    "totalMarks": 35,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q3-a-r1",
-        "kind": "anyN",
-        "verbatim": "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label",
-        "marks": 35,
-        "openList": true,
-        "contextNote": "The scheme groups its answer under: Secondary circulation; Primary circulation",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "15 mm rising main",
-            "Water storage tank and overflow 22 mm min",
-            "22 mm cold feed from water storage tank to hot water cylinder",
-            "Hot water cylinder",
-            "22 mm expansion pipe from hot water cylinder",
-            "22 mm hot water supply to shower",
-            "Wood-burning stove",
-            "28 mm primary flow and return to and from wood-burning stove and hot",
-            "22 mm cold feed from expansion tank and 22 mm expansion pipe",
-            "Expansion tank and overflow 22 mm min",
-            "Valves"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q1-b",
-    "topicId": "cons-1-1",
-    "conceptId": "typical-design-detailing-prevent-radon-gas",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q1(b)",
-    "questionText": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 4",
-      "answer": 1,
-      "ofParts": 2,
-      "perPart": 4
-    },
-    "totalMarks": 4,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q1-b-r1",
-        "kind": "anyN",
-        "verbatim": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Specification – typical details",
-            "Show clearly on your drawing how to prevent radon gas from entering into the rooms"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q2-b",
-    "topicId": "cons-4-6",
-    "conceptId": "clearly-steps-followed-applying-surface-finish",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q2(b)",
-    "questionText": "On your sketch show clearly the steps to be followed in applying a surface finish to the insulation. Specify the materials to be used for the surface finish.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 10,
-      "perPart": 4
-    },
-    "totalMarks": 12,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q2-b-r1",
-        "kind": "anyN",
-        "verbatim": "The surface finish is applied as follows",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "The surface finish is applied as follows",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "The heads of the fixings are filled with the base coat",
-            "A base coat of acrylic plaster A is applied to the surface of the insulation S",
-            "This coat is applied in the same way as traditional plaster",
-            "A reinforcing mesh B is applied to the wet plaster",
-            "Base coat and mesh is applied around window and door openings",
-            "The next coat C is applied in preparation for the final coat",
-            "The final acrylic coat D is then applied using a steel trowel",
-            "The finish is available in a range of colours",
-            "The new finish is maintenance free for 10-15 years",
-            "Other proprietary finishes are available such as with a brick effect"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q5-b",
-    "topicId": "cons-3-10",
-    "conceptId": "how-roof-ventilated-eaves",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q5(b)",
-    "questionText": "On your drawing show how the roof is ventilated at the eaves.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 4",
-      "answer": 1,
-      "ofParts": 2,
-      "perPart": 4
-    },
-    "totalMarks": 4,
-    "rows": [
-      {
-        "id": "cons-2018-ol-q5-b-r1",
-        "kind": "anyN",
-        "verbatim": "Show on your drawing how the flat roof is ventilated",
-        "marks": 4,
-        "openList": true,
-        "contextNote": "Show on your drawing how the flat roof is ventilated",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Vents are incorporated in the soffit to allow air flow into flat roof space",
-            "Cross battens allow air to circulate freely between joists"
-          ]
-        }
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "cons-2018-ol-q6-b",
-    "topicId": "cons-1-8",
-    "conceptId": "design-feature-above-safety-items-helps",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
-    "questionRef": "2018 OL Q6(b)",
-    "questionText": "Using notes and freehand sketches, describe one design feature of each of the above safety items that helps to protect the worker from injury.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
-    "tariffModel": {
-      "kind": "fixed",
-      "notation": "1 x 3 + 1 x 3 + 1 x 3",
-      "answer": null,
-      "ofParts": null,
-      "perPart": null
+      "kind": "fixed"
     },
     "totalMarks": 9,
     "rows": [
       {
-        "id": "cons-2018-ol-q6-b-r1",
-        "kind": "anyN",
-        "verbatim": "High-visibility vest",
-        "marks": 3,
-        "openList": true,
-        "contextNote": "High-visibility vest",
-        "group": {
-          "claimMax": 1,
-          "perOption": 3,
-          "options": [
-            "The high visibility vest is made of a bright colour",
-            "The colour gives easy recognition",
-            "Fluorescent/bright orange and fluorescent/bright yellow are the traditional colours for high-visibility vest",
-            "The fluorescent material achieves visibility during the brighter part of the day",
-            "It has vertical and horizontal reflective strips",
-            "The reflective strips are designed to be seen during the darker hours of the day",
-            "To be effective the strips require some form of artificial light",
-            "This creates a retro-reflection"
-          ]
-        }
+        "id": "item",
+        "kind": "criterion",
+        "verbatim": "Other item of personal protection equipment (PPE)",
+        "marks": 4,
+        "contextNote": "Such as: eye protection; ear protection; safety gloves.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       },
       {
-        "id": "cons-2018-ol-q6-b-r2",
-        "kind": "anyN",
-        "verbatim": "Protective footwear",
-        "marks": 3,
-        "openList": true,
-        "contextNote": "Protective footwear",
-        "group": {
-          "claimMax": 1,
-          "perOption": 3,
-          "options": [
-            "The safety boots provide extra safety for workers on the site",
-            "They are of sturdy, durable construction",
-            "This helps protect the foot",
-            "The steel toe cap A protects the toes from falling objects",
-            "Steel, aluminium and plastic toe caps are currently used",
-            "A mid sole plate B is used to protect the sole from punctures below",
-            "The material of the sole protects from corrosive substances",
-            "The heel is further strengthened for added protection",
-            "Heel caps are made from card, bonded leather, thermoplastic foil or thermoplastic rubber",
-            "The heel cap offers protection against turning on the ankle",
-            "The inside of the footwear is padded to give comfort to wearer’s feet"
-          ]
-        }
-      },
-      {
-        "id": "cons-2018-ol-q6-b-r3",
-        "kind": "anyN",
-        "verbatim": "Safety helmet",
-        "marks": 3,
-        "openList": true,
-        "contextNote": "Safety helmet",
-        "group": {
-          "claimMax": 1,
-          "perOption": 3,
-          "options": [
-            "The helmet is made of sturdy material and protects the head from falling objects",
-            "The helmet also protects the head from protruding objects",
-            "The shell S of the helmet is usually made from high density polyethylene, thermoplastic or fibreglass",
-            "The nylon harness H is the assembly that provides a means of maintaining the helmet in position on the user's head",
-            "The harness absorbs the kinetic energy within the shell during impact",
-            "This spreads the force evenly over the head",
-            "Some helmets have a sweatband"
-          ]
-        }
+        "id": "reason",
+        "kind": "criterion",
+        "verbatim": "Reason",
+        "marks": 5,
+        "contextNote": "A reason matching the item. Such as: eyes protected from grit, dust and sharp objects when cutting or welding; ears from continuous noise of 85–90 dB; hands from sharp edges, hot bitumen or vibration.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q6-other",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE safety signs and design features",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed PPE items in (a) and (b) are required, each separately marked."
+    }
   },
   {
-    "id": "cons-2018-ol-q7-a",
-    "topicId": "cons-5-2",
-    "conceptId": "given-pipework-necessary-collect-rainwater-from",
-    "level": "ordinary",
-    "year": 2018,
+    "id": "cons-2018-ol-q7-c",
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
-    "questionRef": "2018 OL Q7(a)",
-    "questionText": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the underground storage tank. Label the main components and give their typical sizes.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
+    "topicId": "cons-5-4",
+    "conceptId": "advantage-storing-rainwater-underground-tank",
+    "questionRef": "2018 OL Q7(c)",
+    "stem": "It is proposed to collect rainwater from the roof of a house and to store it in an underground tank as shown.",
+    "questionText": "Discuss one advantage of storing rainwater in an underground tank.",
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 9,
-      "perPart": 4
+      "kind": "fixed"
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: no space taken in small sites; less algae from daylight and temperature swings; no unsightly tank; water stays cool and does not freeze; larger storage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q7-advantage",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Rainwater harvesting to an underground tank",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The layouts are open responses; the scheme gives model sketches."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q3-a",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-2",
+    "conceptId": "wood-burning-stove-back-boiler-shown",
+    "questionRef": "2018 OL Q3(a)",
+    "stem": "",
+    "questionText": "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: wood-burning stove; rising main and cold water storage tank; hot water cylinder and expansion tank; pipework to shower and all necessary valves.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 43,
+    "rows": [
+      {
+        "id": "items",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details (5 marks each)",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable items at 5 marks each, capped at 35. Secondary circulation: 15 mm rising main; storage tank and 22 mm overflow; 22 mm cold feed to the cylinder; hot water cylinder; 22 mm expansion pipe; 22 mm hot supply to the shower. Primary circulation: wood-burning stove; 28 mm primary flow and return; 22 mm cold feed and expansion pipe from the expansion tank; expansion tank and overflow; valves.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the diagram: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Hot water to a shower from a stove back boiler",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q1-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "typical-design-detailing-prevent-radon-gas",
+    "questionRef": "2018 OL Q1(b)",
+    "stem": "A 215 mm solid concrete block wall separates two rooms on the ground floor of a dwelling house, as shown. A strip foundation supports the wall, which is plastered on both sides. A flush panel door, 60 mm in thickness, is fixed in the wall. The doorframe is 120 mm × 50 mm. The insulated concrete ground floor is finished with a 20 mm tongue and groove floating hardwood floor.",
+    "questionText": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+    "tariffModel": {
+      "kind": "fixed"
     },
     "totalMarks": 12,
     "rows": [
       {
-        "id": "cons-2018-ol-q7-a-r1",
-        "kind": "anyN",
-        "verbatim": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the und",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "125 mm eaves gutter",
-            "65 mm offset bends",
-            "65 mm downpipe",
-            "Gully trap with filter for leaves",
-            "100 mm underground pipe to filter",
-            "Filter with overflow pipe",
-            "100 mm underground pipe from filter to underground tank",
-            "Underground tank",
-            "Overflow pipe"
-          ]
-        }
+        "id": "radon",
+        "kind": "criterion",
+        "verbatim": "Radon barrier overlapped, taped and sealed",
+        "marks": 4,
+        "contextNote": "Show and identify a continuous radon barrier under the floor with every joint overlapped, taped and sealed, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Internal wall, door, strip foundation and ground floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the radon detail."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q2-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "clearly-steps-followed-applying-surface-finish",
+    "questionRef": "2018 OL Q2(b)",
+    "stem": "The external wall of a house built in the 1960s is of 215 mm single-leaf hollow block construction. The wall is plastered on both sides, as shown. It is proposed to improve the insulation properties of the house by fixing an external system of expanded polystyrene to the wall.",
+    "questionText": "On your sketch show clearly the steps to be followed in applying a surface finish to the insulation. Specify the materials to be used for the surface finish.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "step-1",
+        "kind": "criterion",
+        "verbatim": "Valid step one",
+        "marks": 4,
+        "contextNote": "Such as: the fixing heads filled with base coat; a base coat of acrylic plaster applied to the insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "step-2",
+        "kind": "criterion",
+        "verbatim": "Valid step two",
+        "marks": 4,
+        "contextNote": "A second, different step. Such as: reinforcing mesh pressed into the wet plaster, also around openings; a further coat before the finish.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "finish",
+        "kind": "criterion",
+        "verbatim": "Surface finish",
+        "marks": 4,
+        "contextNote": "Such as: a final acrylic coat applied with a steel trowel, in a range of colours; proprietary finishes such as brick effect.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q2-finish",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "External insulation of a hollow block wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, the finish and the advantage and disadvantage are open responses; the scheme lists typical examples."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q5-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-10",
+    "conceptId": "how-roof-ventilated-eaves",
+    "questionRef": "2018 OL Q5(b)",
+    "stem": "The sketch shows portion of the eaves of a flat roof. The roof is covered with layers of bituminous felt, on a 20 mm plywood deck, on battens, on sloping firring pieces, on 200 mm × 50 mm joists. The roof is highly insulated and there is an insulated plasterboard ceiling beneath. The external wall supporting the roof is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
+    "questionText": "On your drawing show how the roof is ventilated at the eaves.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "ventilation",
+        "kind": "criterion",
+        "verbatim": "Vents in soffit and air circulates through battens and counter battens",
+        "marks": 4,
+        "contextNote": "Show and identify vents in the soffit with air circulating through the battens and counter battens, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Flat roof eaves and cavity wall section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q6-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "design-feature-above-safety-items-helps",
+    "questionRef": "2018 OL Q6(b)",
+    "stem": "",
+    "questionText": "Using notes and freehand sketches, describe one design feature of each of the above safety items that helps to protect the worker from injury.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 17,
+    "rows": [
+      {
+        "id": "vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest Design feature",
+        "marks": 3,
+        "contextNote": "Such as: fluorescent orange or yellow for daytime visibility; reflective strips that retro-reflect artificial light at night.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "footwear",
+        "kind": "criterion",
+        "verbatim": "Protective footwear Design feature",
+        "marks": 3,
+        "contextNote": "Such as: a steel toe cap against falling objects; a mid-sole plate against punctures; a strengthened heel against turning the ankle.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet Design feature",
+        "marks": 3,
+        "contextNote": "Such as: a high-density shell against falling and protruding objects; a nylon harness that absorbs the impact and spreads the force.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketches: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q6-features",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE safety signs and design features",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed PPE items in (a) and (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q7-a",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-4",
+    "conceptId": "given-pipework-necessary-collect-rainwater-from",
+    "questionRef": "2018 OL Q7(a)",
+    "stem": "It is proposed to collect rainwater from the roof of a house and to store it in an underground tank as shown.",
+    "questionText": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the underground storage tank. Label the main components and give their typical sizes.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "sketch",
+        "kind": "criterion",
+        "verbatim": "Draw given sketch",
+        "marks": 4,
+        "contextNote": "The given house and underground tank sketched.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "pipework",
+        "kind": "criterion",
+        "verbatim": "Necessary pipework on sketch",
+        "marks": 4,
+        "contextNote": "Pipework from the gutters and downpipes through a gully trap and filter to the tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "labels",
+        "kind": "criterion",
+        "verbatim": "Labels and typical sizes",
+        "marks": 4,
+        "contextNote": "Such as: 125 mm eaves gutter; 65 mm offset bends and downpipe; gully trap with leaf filter; 100 mm underground pipes; filter with overflow; underground tank and overflow pipe.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q7-collection",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Rainwater harvesting to an underground tank",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The layouts are open responses; the scheme gives model sketches."
+    }
   },
   {
     "id": "cons-2018-ol-q7-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
     "topicId": "cons-5-2",
     "conceptId": "stored-rainwater-used-flushing-toilet-pipework",
-    "level": "ordinary",
-    "year": 2018,
-    "subjectId": "construction-studies",
-    "section": "B",
     "questionRef": "2018 OL Q7(b)",
+    "stem": "It is proposed to collect rainwater from the roof of a house and to store it in an underground tank as shown.",
     "questionText": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump necessary to take the water from the underground tank to a storage tank in the attic. Show also how to connect the toilet cistern to the storage tank in the attic. Include the necessary valves.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 4",
-      "answer": 4,
-      "ofParts": 10,
-      "perPart": 4
+      "kind": "fixed"
     },
-    "totalMarks": 16,
+    "totalMarks": 24,
     "rows": [
       {
-        "id": "cons-2018-ol-q7-b-r1",
-        "kind": "anyN",
-        "verbatim": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump neces",
-        "marks": 16,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 4,
-          "perOption": 4,
-          "options": [
-            "12 mm suction pipe with floating filter",
-            "12 mm pipe with rainwater from filter",
-            "Pump, with power supply, to pump to 230 litres minimum tank in the rainwater from underground tank to attic storage tank in the attic",
-            "12 mm pipe to toilet cistern",
-            "12 mm pipe with rainwater to filter",
-            "Control valve",
-            "Stop valve",
-            "Toilet cistern",
-            "Filter",
-            "Typical sizes of components"
-          ]
-        }
+        "id": "detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 4,
+        "contextNote": "Such as: a 12 mm suction pipe with a floating filter; a pump with a power supply raising the water to the attic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 4,
+        "contextNote": "A second, different detail. Such as: a 12 mm pipe through a filter to a tank of at least 230 litres; a 12 mm pipe to the toilet cistern.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "pump",
+        "kind": "criterion",
+        "verbatim": "Pipework and pump on sketch",
+        "marks": 4,
+        "contextNote": "The pipework and pump shown from the underground tank to the attic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "valves",
+        "kind": "criterion",
+        "verbatim": "Valves shown on sketch",
+        "marks": 4,
+        "contextNote": "Such as: a stop valve and a control valve.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q7-pumping",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Rainwater harvesting to an underground tank",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The layouts are open responses; the scheme gives model sketches."
+    }
   },
   {
     "id": "cons-2018-ol-q9-a",
-    "topicId": "cons-3-3",
-    "conceptId": "how-blockwork-over-opening-typically-supported",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "how-blockwork-over-opening-typically-supported",
     "questionRef": "2018 OL Q9(a)",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
     "questionText": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 4",
-      "answer": 2,
-      "ofParts": 9,
-      "perPart": 4
+      "kind": "fixed"
     },
-    "totalMarks": 8,
+    "totalMarks": 14,
     "rows": [
       {
-        "id": "cons-2018-ol-q9-a-r1",
-        "kind": "anyN",
-        "verbatim": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
-        "marks": 8,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 2,
-          "perOption": 4,
-          "options": [
-            "The pre-stressed concrete lintel is a method used to support the blockwork",
-            "The concrete lintel rests on opposite sides of the opening",
-            "The concrete lintel projects inwards over the supporting walls for a distance D of 100mm",
-            "The width of the lintel is 100mm with a thickness of 65mm",
-            "The lintel is set on mortar at both ends",
-            "Blockwork is built in at either end and then on top of the lintel",
-            "Smaller blocks are used to bring the levels in line",
-            "A reinforced concrete lintel may be used",
-            "Steel lintel may be used to support the blockwork"
-          ]
-        }
+        "id": "detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 4,
+        "contextNote": "Such as: a prestressed concrete lintel, 100 mm wide and 65 mm thick, bearing on mortar on both sides of the opening.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 4,
+        "contextNote": "A second, different detail. Such as: a bearing of 100 mm at each end; blockwork built up at the ends and over the lintel, with smaller blocks to bring the courses level; a reinforced concrete or steel lintel instead.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-support",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    }
   },
   {
     "id": "cons-2018-ol-q2-c",
-    "topicId": "cons-1-1",
-    "conceptId": "advantage-disadvantage-applying-external-system-insulation",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "advantage-disadvantage-applying-external-system-insulation",
     "questionRef": "2018 OL Q2(c)",
+    "stem": "The external wall of a house built in the 1960s is of 215 mm single-leaf hollow block construction. The wall is plastered on both sides, as shown. It is proposed to improve the insulation properties of the house by fixing an external system of expanded polystyrene to the wall.",
     "questionText": "Discuss one advantage and one disadvantage of applying an external system of insulation to the walls of a house.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "2 x 5",
-      "answer": 2,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
     "totalMarks": 10,
     "rows": [
       {
-        "id": "cons-2018-ol-q2-c-r1",
-        "kind": "anyN",
-        "verbatim": "Advantage Disadvantage",
-        "marks": 10,
-        "openList": true,
-        "contextNote": "Advantage Disadvantage",
-        "group": {
-          "claimMax": 2,
-          "perOption": 5,
-          "options": [
-            "Energy bills are reduced",
-            "It is an expensive method of adding",
-            "Heat loss through external walls is insulation to a house reduced",
-            "The new finish projects out from",
-            "Improves the BER rating existing walls",
-            "Improves the U-value",
-            "Changes are made to window cills to",
-            "The house will be warmer avoid cold bridge effect",
-            "No loss of internal floor area",
-            "Rainwater downpipes must be",
-            "A range of colours available refitted",
-            "Improves the appearance of the",
-            "Difficult to work with existing soffit house and looks well when complete board",
-            "The internal area of the house is not"
-          ]
-        }
+        "id": "advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 5,
+        "contextNote": "Such as: lower energy bills and heat loss; a better BER and U-value; no loss of internal floor area; an improved appearance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 5,
+        "contextNote": "Such as: expensive; window cills, downpipes, fascia and soffit may need altering; the finish needs maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
       }
     ],
-    "notes": "The scheme lists 17 acceptable points under \"Advantage Disadvantage\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2018-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q2-advantages",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "External insulation of a hollow block wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, the finish and the advantage and disadvantage are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2018-ol-q5-a",
-    "topicId": "cons-3-8",
-    "conceptId": "vertical-section-through-eaves-flat-roof",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "vertical-section-through-eaves-flat-roof",
     "questionRef": "2018 OL Q5(a)",
+    "stem": "The sketch shows portion of the eaves of a flat roof. The roof is covered with layers of bituminous felt, on a 20 mm plywood deck, on battens, on sloping firring pieces, on 200 mm × 50 mm joists. The roof is highly insulated and there is an insulated plasterboard ceiling beneath. The external wall supporting the roof is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
     "questionText": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the typical construction details from 500 mm below the roof joists, through the external wall, wallplate, fascia, soffit, and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include three typical dimensions on your drawing.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "7 x 5",
-      "answer": 7,
-      "ofParts": 14,
-      "perPart": 5
+      "kind": "fixed"
     },
-    "totalMarks": 35,
+    "totalMarks": 38,
     "rows": [
       {
-        "id": "cons-2018-ol-q5-a-r1",
-        "kind": "anyN",
-        "verbatim": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the ty",
+        "id": "details",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details (5 marks each)",
         "marks": 35,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 7,
-          "perOption": 5,
-          "options": [
-            "Weather proofing with 3 layers of",
-            "Wallplate 100 mm × 75 mm tied to bituminous felt blockwork with wallplate straps",
-            "Marine plywood decking 18 - 25 mm",
-            "Cavity closed with fire stopping",
-            "Battens 50 × 50 mm on insulation or proprietary cavity barrier",
-            "Firring piece to 1:40 slope or non-combustible tile or slate",
-            "Breathable roofing membrane",
-            "15 mm internal plaster",
-            "Roof / ceiling joists 200 mm × 50 mm",
-            "Concrete block inner leaf 100 mm",
-            "Roof insulation min 200 mm to",
-            "Full-fill cavity insulation comply with current Building",
-            "Concrete block outer leaf 100 mm Regulations",
-            "19 mm external render"
-          ]
-        }
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; 18–25 mm marine plywood decking; 50 × 50 mm battens/counter battens and firring piece; 200 × 50 mm roof/ceiling joists; at least 200 mm roof insulation; 12.5 mm insulated plasterboard with skim; 100 × 75 mm wallplate and straps; 100 mm block inner leaf; full-fill cavity insulation and cavity closer; 100 mm block outer leaf; 15 mm plaster and 19 mm render; 25 mm fascia, 12 mm soffit and 100 mm gutter.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
       }
     ],
-    "notes": "The scheme lists 26 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2018-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Flat roof eaves and cavity wall section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    }
   },
   {
     "id": "cons-2018-ol-q9-b",
-    "topicId": "cons-1-1",
-    "conceptId": "how-doorframe-held-square-while-being",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-3-7",
+    "conceptId": "how-doorframe-held-square-while-being",
     "questionRef": "2018 OL Q9(b)",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
     "questionText": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method of fixing the doorframe to the wall.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "4 x 4",
-      "answer": 4,
-      "ofParts": 14,
-      "perPart": 4
+      "kind": "fixed"
     },
-    "totalMarks": 16,
+    "totalMarks": 28,
     "rows": [
       {
-        "id": "cons-2018-ol-q9-b-r1",
-        "kind": "anyN",
-        "verbatim": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method o",
-        "marks": 16,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 4,
-          "perOption": 4,
-          "options": [
-            "Temporary wooden strip is fixed diagonally at one or both corners",
-            "The corners are checked for square",
-            "A strip is fixed at the bottom of the frame to keep the uprights parallel and the correct distance apart",
-            "The frame is now ready for fitting",
-            "These temporary fixtures can be removed when the frame is fixed in place",
-            "Suitable screws are used to fix the doorframe to the wall",
-            "The position for the screws is marked on the frame",
-            "A larger hole is drilled",
-            "The hole for the screws is then drilled through the centre",
-            "The exact position for the screws is then marked on the wall",
-            "Holes are drilled in concrete for the plastic plugs B",
-            "Frame is put back in position",
-            "Screws are then inserted",
-            "Metal frame fixings are also used"
-          ]
-        }
+        "id": "square",
+        "kind": "criterion",
+        "verbatim": "How the doorframe is held square while it is being fitted",
+        "marks": 8,
+        "contextNote": "Two valid details, 4 each. Such as: a temporary strip fixed diagonally across one or both corners; a strip across the bottom keeping the jambs parallel and the correct distance apart; the corners checked for square.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "square-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches for squaring the frame: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "fixing",
+        "kind": "criterion",
+        "verbatim": "One method of fixing the doorframe to the wall",
+        "marks": 8,
+        "contextNote": "Two valid details, 4 each. Such as: screw positions marked and drilled through the frame and marked on the wall; holes drilled for plastic plugs; the frame screwed back in place and the heads covered with wooden plugs; or metal frame fixings or steel fixing plates.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "fixing-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches for fixing the frame: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
       }
     ],
-    "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-frame",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    }
   },
   {
     "id": "cons-2018-ol-q2-a",
-    "topicId": "cons-1-1",
-    "conceptId": "method-applying-external-insulation-system-wall",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "method-applying-external-insulation-system-wall",
     "questionRef": "2018 OL Q2(a)",
+    "stem": "The external wall of a house built in the 1960s is of 215 mm single-leaf hollow block construction. The wall is plastered on both sides, as shown. It is proposed to improve the insulation properties of the house by fixing an external system of expanded polystyrene to the wall.",
     "questionText": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specify the typical thickness of the insulation.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "3 x 4",
-      "answer": 3,
-      "ofParts": 3,
-      "perPart": 4
+      "kind": "fixed"
     },
-    "totalMarks": 12,
+    "totalMarks": 20,
     "rows": [
       {
-        "id": "cons-2018-ol-q2-a-r1",
-        "kind": "anyN",
-        "verbatim": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specif",
-        "marks": 12,
-        "openList": true,
-        "contextNote": "",
-        "group": {
-          "claimMax": 3,
-          "perOption": 4,
-          "options": [
-            "Valid description one",
-            "Valid description two",
-            "Thickness of insulation"
-          ]
-        }
+        "id": "description-1",
+        "kind": "criterion",
+        "verbatim": "Valid description one",
+        "marks": 4,
+        "contextNote": "Such as: a stainless-steel track fixed to the wall at DPC level, the first row of boards resting on it, fixed with a proprietary adhesive.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "description-2",
+        "kind": "criterion",
+        "verbatim": "Valid description two",
+        "marks": 4,
+        "contextNote": "A second, different step. Such as: further rows staggered; stainless steel fixings drilled through each board into the wall, about seven per square metre.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "Such as: a minimum of 200 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "External insulation of a hollow block wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, the finish and the advantage and disadvantage are open responses; the scheme lists typical examples."
+    }
   },
   {
     "id": "cons-2018-ol-q9-c-advantage",
-    "topicId": "cons-1-1",
-    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-advantage",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
-    "questionRef": "2018 OL Q9(c) — Advantage",
+    "topicId": "cons-3-7",
+    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-advantage",
+    "questionRef": "2018 OL Q9(c) — advantage",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
     "questionText": "Discuss one advantage of fitting glazed double doors between the sitting room and the dining room.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 4",
-      "answer": 1,
-      "ofParts": 8,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2018-ol-q9-c-advantage-r1",
-        "kind": "anyN",
+        "id": "advantage",
+        "kind": "criterion",
         "verbatim": "Advantage",
         "marks": 4,
-        "openList": true,
-        "contextNote": "Advantage",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "The double doors open up the area",
-            "More space available",
-            "Make the rooms feel bigger",
-            "They create a private area when needed",
-            "They create a quiet area as required",
-            "People arriving into one section will be visible",
-            "Allows sunlight / daylight into the both rooms",
-            "Allows wheelchair accessibility between both rooms"
-          ]
-        }
+        "contextNote": "Such as: the doors open up the area and make the rooms feel bigger; daylight shared between both rooms; a private, quiet area when closed; wheelchair access between the rooms.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-glazed",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    }
   },
   {
     "id": "cons-2018-ol-q9-c-disadvantage",
-    "topicId": "cons-1-1",
-    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-disadvantage",
-    "level": "ordinary",
-    "year": 2018,
     "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
     "section": "B",
-    "questionRef": "2018 OL Q9(c) — Disadvantage",
+    "topicId": "cons-3-7",
+    "conceptId": "advantage-disadvantage-fitting-glazed-double-doors-disadvantage",
+    "questionRef": "2018 OL Q9(c) — disadvantage",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
     "questionText": "Discuss one disadvantage of fitting glazed double doors between the sitting room and the dining room.",
-    "stem": "",
-    "figureKey": "",
-    "labelKey": [],
     "tariffModel": {
-      "kind": "bestNofParts",
-      "notation": "1 x 4",
-      "answer": 1,
-      "ofParts": 6,
-      "perPart": 4
+      "kind": "fixed"
     },
     "totalMarks": 4,
     "rows": [
       {
-        "id": "cons-2018-ol-q9-c-disadvantage-r1",
-        "kind": "anyN",
+        "id": "disadvantage",
+        "kind": "criterion",
         "verbatim": "Disadvantage",
         "marks": 4,
-        "openList": true,
-        "contextNote": "Disadvantage",
-        "group": {
-          "claimMax": 1,
-          "perOption": 4,
-          "options": [
-            "Glazed areas can be dangerous",
-            "It creates a huge area",
-            "Difficult to heat",
-            "Not private",
-            "Reduces space for wall fittings",
-            "Reduces floor space for furniture"
-          ]
-        }
+        "contextNote": "Such as: glazed areas can be dangerous; a larger area is harder to heat; less privacy; less wall space for fittings and furniture.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
       }
     ],
-    "notes": ""
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-glazed",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    }
   },
   {
     "id": "cons-2019-hl-q1-b",
@@ -80452,6 +80787,1623 @@
           "guidelines-guideline-1",
           "guidelines-guideline-2",
           "guidelines-guideline-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q1-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "internal-wall-door-floor-section-complete",
+    "questionRef": "2018 OL Q1 — complete",
+    "stem": "A 215 mm solid concrete block wall separates two rooms on the ground floor of a dwelling house, as shown. A strip foundation supports the wall, which is plastered on both sides. A flush panel door, 60 mm in thickness, is fixed in the wall. The doorframe is 120 mm × 50 mm. The insulated concrete ground floor is finished with a 20 mm tongue and groove floating hardwood floor.",
+    "questionText": "(a) To a scale of 1:5 draw a vertical section through the strip foundation, the 215 mm wall, the ground floor and the centre of the door up to a point 500 mm above finished floor level. Show 600 mm width of floor on each side of the wall and include three typical dimensions on your drawing.\n\n(b) Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details ( 5 marks each)",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: 15 mm internal plaster with skim coat; 120 × 50 mm doorframe; 60 mm flush panel door; 65 × 15 mm architrave and 100 × 15 mm skirting; 20 mm floating hardwood floor; 100 mm smooth concrete floor; 250 mm floor insulation with thermal blocks; 200 mm concrete sub-floor; radon barrier; 30 mm sand blinding; 200 mm hardcore; reinforced concrete foundation; 215 mm block wall.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-radon",
+        "kind": "criterion",
+        "verbatim": "Radon barrier overlapped, taped and sealed",
+        "marks": 4,
+        "contextNote": "Show and identify a continuous radon barrier under the floor with every joint overlapped, taped and sealed, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": "b-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q1-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q1-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 1",
+      "title": "Internal wall, door, strip foundation and ground floor section",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the radon detail."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q1-a",
+        "label": "a",
+        "marks": 38,
+        "rowIds": [
+          "a-details",
+          "a-dimensions"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q1-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-radon",
+          "b-presentation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q2-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-6-2",
+    "conceptId": "external-wall-insulation-complete",
+    "questionRef": "2018 OL Q2 — complete",
+    "stem": "The external wall of a house built in the 1960s is of 215 mm single-leaf hollow block construction. The wall is plastered on both sides, as shown. It is proposed to improve the insulation properties of the house by fixing an external system of expanded polystyrene to the wall.",
+    "questionText": "(a) Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specify the typical thickness of the insulation.\n\n(b) On your sketch show clearly the steps to be followed in applying a surface finish to the insulation. Specify the materials to be used for the surface finish.\n\n(c) Discuss one advantage and one disadvantage of applying an external system of insulation to the walls of a house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-description-1",
+        "kind": "criterion",
+        "verbatim": "Valid description one",
+        "marks": 4,
+        "contextNote": "Such as: a stainless-steel track fixed to the wall at DPC level, the first row of boards resting on it, fixed with a proprietary adhesive.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-description-2",
+        "kind": "criterion",
+        "verbatim": "Valid description two",
+        "marks": 4,
+        "contextNote": "A second, different step. Such as: further rows staggered; stainless steel fixings drilled through each board into the wall, about seven per square metre.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-thickness",
+        "kind": "criterion",
+        "verbatim": "Thickness of insulation",
+        "marks": 4,
+        "contextNote": "Such as: a minimum of 200 mm.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-step-1",
+        "kind": "criterion",
+        "verbatim": "Valid step one",
+        "marks": 4,
+        "contextNote": "Such as: the fixing heads filled with base coat; a base coat of acrylic plaster applied to the insulation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-step-2",
+        "kind": "criterion",
+        "verbatim": "Valid step two",
+        "marks": 4,
+        "contextNote": "A second, different step. Such as: reinforcing mesh pressed into the wet plaster, also around openings; a further coat before the finish.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-finish",
+        "kind": "criterion",
+        "verbatim": "Surface finish",
+        "marks": 4,
+        "contextNote": "Such as: a final acrylic coat applied with a steel trowel, in a range of colours; proprietary finishes such as brick effect.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "c-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 5,
+        "contextNote": "Such as: lower energy bills and heat loss; a better BER and U-value; no loss of internal floor area; an improved appearance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "c-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 5,
+        "contextNote": "Such as: expensive; window cills, downpipes, fascia and soffit may need altering; the finish needs maintenance.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q2-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q2-method",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 2",
+      "title": "External insulation of a hollow block wall",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The method, the finish and the advantage and disadvantage are open responses; the scheme lists typical examples."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q2-a",
+        "label": "a",
+        "marks": 20,
+        "rowIds": [
+          "a-description-1",
+          "a-description-2",
+          "a-thickness",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q2-b",
+        "label": "b",
+        "marks": 20,
+        "rowIds": [
+          "b-step-1",
+          "b-step-2",
+          "b-finish",
+          "b-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q2-c",
+        "label": "c",
+        "marks": 10,
+        "rowIds": [
+          "c-advantage",
+          "c-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q3-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-2",
+    "conceptId": "stove-hot-water-shower-complete",
+    "questionRef": "2018 OL Q3 — complete",
+    "stem": "",
+    "questionText": "(a) A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: wood-burning stove; rising main and cold water storage tank; hot water cylinder and expansion tank; pipework to shower and all necessary valves.\n\n(b) Discuss one advantage of using a wood-burning stove to heat water for the house.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-items",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details (5 marks each)",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable items at 5 marks each, capped at 35. Secondary circulation: 15 mm rising main; storage tank and 22 mm overflow; 22 mm cold feed to the cylinder; hot water cylinder; 22 mm expansion pipe; 22 mm hot supply to the shower. Primary circulation: wood-burning stove; 28 mm primary flow and return; 22 mm cold feed and expansion pipe from the expansion tank; expansion tank and overflow; valves.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the diagram: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 7,
+        "contextNote": "Such as: wood is renewable and less expensive; modern stoves are highly efficient; trees reabsorb the CO₂ released; it supplements other heating as fossil fuels dwindle.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q3-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q3-system",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 3",
+      "title": "Hot water to a shower from a stove back boiler",
+      "pages": [
+        1,
+        2
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The listed components are required content, not a choice; the best-seven list is a marking menu."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q3-a",
+        "label": "a",
+        "marks": 43,
+        "rowIds": [
+          "a-items",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q3-b",
+        "label": "b",
+        "marks": 7,
+        "rowIds": [
+          "b-advantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q4-b",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-2-4",
+    "conceptId": "strip-foundation-setting-out-b",
+    "questionRef": "2018 OL Q4(b)",
+    "stem": "The sketch shows one corner of a strip foundation for the external wall of a dwelling house. The external wall is to be a 400 mm concrete block wall with a full-fill insulated cavity.",
+    "questionText": "Using notes and freehand sketches describe how to set out the foundation trench under the following headings: profiles; width and depth of trench; position of wall on strip foundation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "profiles",
+        "kind": "criterion",
+        "verbatim": "Profiles",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: two upright members with a horizontal cross rail; set out at the formation level from a secured datum, levelled with a laser or optical level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "width-depth",
+        "kind": "criterion",
+        "verbatim": "Width and depth of trench",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: the 1200 mm trench width and 400 mm wall width marked on the profiles; a minimum 500 mm depth below the frost line, depending on the soil.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "wall-position",
+        "kind": "criterion",
+        "verbatim": "Position of wall on strip foundation",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: lines stretched between the profiles and plumbed down; the wall centred with equal projections on both sides.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q4-setting-out",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Setting out a strip foundation",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed headings in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q4-c",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-2-4",
+    "conceptId": "strip-foundation-setting-out-c",
+    "questionRef": "2018 OL Q4(c)",
+    "stem": "The sketch shows one corner of a strip foundation for the external wall of a dwelling house. The external wall is to be a 400 mm concrete block wall with a full-fill insulated cavity.",
+    "questionText": "Using notes and freehand sketches, show how to determine the top surface of the foundation prior to placing the concrete to ensure that the foundation is level throughout.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "level",
+        "kind": "criterion",
+        "verbatim": "Show how to determine the top surface of the foundation prior to placing the concrete",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: pegs driven into the base of the trench, their tops set at the required foundation level with a laser level, with more pegs around the foundation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q4-level",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Setting out a strip foundation",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed headings in (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q4-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-2-2",
+    "conceptId": "strip-foundation-setting-out-complete",
+    "questionRef": "2018 OL Q4 — complete",
+    "stem": "The sketch shows one corner of a strip foundation for the external wall of a dwelling house. The external wall is to be a 400 mm concrete block wall with a full-fill insulated cavity.",
+    "questionText": "(a) Discuss one environmental reason why a strip foundation is considered the most suitable foundation for this house.\n\n(b) Using notes and freehand sketches describe how to set out the foundation trench under the following headings: profiles; width and depth of trench; position of wall on strip foundation.\n\n(c) Using notes and freehand sketches, show how to determine the top surface of the foundation prior to placing the concrete to ensure that the foundation is level throughout.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 5,
+        "contextNote": "Such as: minimum ground area and excavation; less machinery and fuel.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "a-detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 5,
+        "contextNote": "A second, different detail of the reason. Such as: the least concrete, aggregate and steel; easy to set out, construct, fill and level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "b-profiles",
+        "kind": "criterion",
+        "verbatim": "Profiles",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: two upright members with a horizontal cross rail; set out at the formation level from a secured datum, levelled with a laser or optical level.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-width-depth",
+        "kind": "criterion",
+        "verbatim": "Width and depth of trench",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: the 1200 mm trench width and 400 mm wall width marked on the profiles; a minimum 500 mm depth below the frost line, depending on the soil.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "b-wall-position",
+        "kind": "criterion",
+        "verbatim": "Position of wall on strip foundation",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: lines stretched between the profiles and plumbed down; the wall centred with equal projections on both sides.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": "c-level",
+        "kind": "criterion",
+        "verbatim": "Show how to determine the top surface of the foundation prior to placing the concrete",
+        "marks": 10,
+        "contextNote": "Primary communication 6 and other communication 4. Such as: pegs driven into the base of the trench, their tops set at the required foundation level with a laser level, with more pegs around the foundation.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q4-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q4-setting-out",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 4",
+      "title": "Setting out a strip foundation",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed headings in (b) are required, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q4-a",
+        "label": "a",
+        "marks": 10,
+        "rowIds": [
+          "a-detail-1",
+          "a-detail-2"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q4-b",
+        "label": "b",
+        "marks": 30,
+        "rowIds": [
+          "b-profiles",
+          "b-width-depth",
+          "b-wall-position"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q4-c",
+        "label": "c",
+        "marks": 10,
+        "rowIds": [
+          "c-level"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q5-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-5",
+    "conceptId": "flat-roof-eaves-section-complete",
+    "questionRef": "2018 OL Q5 — complete",
+    "stem": "The sketch shows portion of the eaves of a flat roof. The roof is covered with layers of bituminous felt, on a 20 mm plywood deck, on battens, on sloping firring pieces, on 200 mm × 50 mm joists. The roof is highly insulated and there is an insulated plasterboard ceiling beneath. The external wall supporting the roof is a 400 mm concrete block wall with a full-fill insulated cavity. The wall is rendered on both sides.",
+    "questionText": "(a) To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the typical construction details from 500 mm below the roof joists, through the external wall, wallplate, fascia, soffit, and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include three typical dimensions on your drawing.\n\n(b) On your drawing show how the roof is ventilated at the eaves.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-details",
+        "kind": "criterion",
+        "verbatim": "Any 7 of the above details (5 marks each)",
+        "marks": 35,
+        "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: three layers of bituminous felt; 18–25 mm marine plywood decking; 50 × 50 mm battens/counter battens and firring piece; 200 × 50 mm roof/ceiling joists; at least 200 mm roof insulation; 12.5 mm insulated plasterboard with skim; 100 × 75 mm wallplate and straps; 100 mm block inner leaf; full-fill cavity insulation and cavity closer; 100 mm block outer leaf; 15 mm plaster and 19 mm render; 25 mm fascia, 12 mm soffit and 100 mm gutter.",
+        "permittedMarks": [
+          0,
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35
+        ]
+      },
+      {
+        "id": "a-dimensions",
+        "kind": "criterion",
+        "verbatim": "Any three typical dimensions",
+        "marks": 3,
+        "contextNote": "Three appropriate typical dimensions on the section, 1 each.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-ventilation",
+        "kind": "criterion",
+        "verbatim": "Vents in soffit and air circulates through battens and counter battens",
+        "marks": 4,
+        "contextNote": "Show and identify vents in the soffit with air circulating through the battens and counter battens, as in the scheme’s model section.",
+        "permittedMarks": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": "b-presentation",
+        "kind": "criterion",
+        "verbatim": "Draughting, accuracy and scale (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Draughting, accuracy and scale of the whole section: excellent 8, good 6, fair 4. The scheme prints this band after the part (b) row.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q5-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q5-scheme",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 5",
+      "title": "Flat roof eaves and cavity wall section",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch and specification retained. The scheme prints the draughting, accuracy and scale band after the part (b) row, so it is marked with the ventilation detail."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q5-a",
+        "label": "a",
+        "marks": 38,
+        "rowIds": [
+          "a-details",
+          "a-dimensions"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q5-b",
+        "label": "b",
+        "marks": 12,
+        "rowIds": [
+          "b-ventilation",
+          "b-presentation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q6-a",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-signs-features-a",
+    "questionRef": "2018 OL Q6(a)",
+    "stem": "",
+    "questionText": "Draw a large freehand sketch of the safety sign for each of the items of personal protective equipment (PPE) listed below: high-visibility vest; protective footwear; safety helmet.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for a high-visibility vest: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "footwear",
+        "kind": "criterion",
+        "verbatim": "Protective footwear Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for protective footwear: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for a safety helmet: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE safety signs and design features",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed PPE items in (a) and (b) are required, each separately marked."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q6-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-1-8",
+    "conceptId": "ppe-signs-features-complete",
+    "questionRef": "2018 OL Q6 — complete",
+    "stem": "",
+    "questionText": "(a) Draw a large freehand sketch of the safety sign for each of the items of personal protective equipment (PPE) listed below: high-visibility vest; protective footwear; safety helmet.\n\n(b) Using notes and freehand sketches, describe one design feature of each of the above safety items that helps to protect the worker from injury.\n\n(c) Recommend one other item of personal protective equipment (PPE) which should be worn by workers on a construction site. Give one reason for your recommendation.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for a high-visibility vest: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "a-footwear",
+        "kind": "criterion",
+        "verbatim": "Protective footwear Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for protective footwear: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "a-helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "The blue mandatory sign for a safety helmet: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-vest",
+        "kind": "criterion",
+        "verbatim": "High-visibility vest Design feature",
+        "marks": 3,
+        "contextNote": "Such as: fluorescent orange or yellow for daytime visibility; reflective strips that retro-reflect artificial light at night.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-footwear",
+        "kind": "criterion",
+        "verbatim": "Protective footwear Design feature",
+        "marks": 3,
+        "contextNote": "Such as: a steel toe cap against falling objects; a mid-sole plate against punctures; a strengthened heel against turning the ankle.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-helmet",
+        "kind": "criterion",
+        "verbatim": "Safety helmet Design feature",
+        "marks": 3,
+        "contextNote": "Such as: a high-density shell against falling and protruding objects; a nylon harness that absorbs the impact and spreads the force.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "b-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketches: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "c-item",
+        "kind": "criterion",
+        "verbatim": "Other item of personal protection equipment (PPE)",
+        "marks": 4,
+        "contextNote": "Such as: eye protection; ear protection; safety gloves.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-reason",
+        "kind": "criterion",
+        "verbatim": "Reason",
+        "marks": 5,
+        "contextNote": "A reason matching the item. Such as: eyes protected from grit, dust and sharp objects when cutting or welding; ears from continuous noise of 85–90 dB; hands from sharp edges, hot bitumen or vibration.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q6-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q6-signs",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 6",
+      "title": "PPE safety signs and design features",
+      "pages": [
+        1,
+        3
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. All three printed PPE items in (a) and (b) are required, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q6-a",
+        "label": "a",
+        "marks": 24,
+        "rowIds": [
+          "a-vest",
+          "a-footwear",
+          "a-helmet"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q6-b",
+        "label": "b",
+        "marks": 17,
+        "rowIds": [
+          "b-vest",
+          "b-footwear",
+          "b-helmet",
+          "b-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q6-c",
+        "label": "c",
+        "marks": 9,
+        "rowIds": [
+          "c-item",
+          "c-reason"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q7-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-4",
+    "conceptId": "rainwater-harvesting-complete",
+    "questionRef": "2018 OL Q7 — complete",
+    "stem": "It is proposed to collect rainwater from the roof of a house and to store it in an underground tank as shown.",
+    "questionText": "(a) Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the underground storage tank. Label the main components and give their typical sizes.\n\n(b) The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump necessary to take the water from the underground tank to a storage tank in the attic. Show also how to connect the toilet cistern to the storage tank in the attic. Include the necessary valves.\n\n(c) Discuss one advantage of storing rainwater in an underground tank.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-sketch",
+        "kind": "criterion",
+        "verbatim": "Draw given sketch",
+        "marks": 4,
+        "contextNote": "The given house and underground tank sketched.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-pipework",
+        "kind": "criterion",
+        "verbatim": "Necessary pipework on sketch",
+        "marks": 4,
+        "contextNote": "Pipework from the gutters and downpipes through a gully trap and filter to the tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-labels",
+        "kind": "criterion",
+        "verbatim": "Labels and typical sizes",
+        "marks": 4,
+        "contextNote": "Such as: 125 mm eaves gutter; 65 mm offset bends and downpipe; gully trap with leaf filter; 100 mm underground pipes; filter with overflow; underground tank and overflow pipe.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "b-detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 4,
+        "contextNote": "Such as: a 12 mm suction pipe with a floating filter; a pump with a power supply raising the water to the attic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 4,
+        "contextNote": "A second, different detail. Such as: a 12 mm pipe through a filter to a tank of at least 230 litres; a 12 mm pipe to the toilet cistern.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-pump",
+        "kind": "criterion",
+        "verbatim": "Pipework and pump on sketch",
+        "marks": 4,
+        "contextNote": "The pipework and pump shown from the underground tank to the attic tank.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-valves",
+        "kind": "criterion",
+        "verbatim": "Valves shown on sketch",
+        "marks": 4,
+        "contextNote": "Such as: a stop valve and a control valve.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "b-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketch (excellent, good, fair)",
+        "marks": 8,
+        "contextNote": "Quality of the sketch: excellent 8, good 6, fair 4.",
+        "permittedMarks": [
+          0,
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "id": "c-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "contextNote": "Such as: no space taken in small sites; less algae from daylight and temperature swings; no unsightly tank; water stays cool and does not freeze; larger storage.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q7-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q7-collection",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 7",
+      "title": "Rainwater harvesting to an underground tank",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. The layouts are open responses; the scheme gives model sketches."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q7-a",
+        "label": "a",
+        "marks": 20,
+        "rowIds": [
+          "a-sketch",
+          "a-pipework",
+          "a-labels",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q7-b",
+        "label": "b",
+        "marks": 24,
+        "rowIds": [
+          "b-detail-1",
+          "b-detail-2",
+          "b-pump",
+          "b-valves",
+          "b-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q7-c",
+        "label": "c",
+        "marks": 6,
+        "rowIds": [
+          "c-advantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q8-terms",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-5-8",
+    "conceptId": "construction-terms-terms",
+    "questionRef": "2018 OL Q8",
+    "stem": "",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: smart meter; biscuit joint; earth rod; airtightness tape; evacuated tube; magnetic catch; roof-light window; aerated shower; LED lighting.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "terms",
+        "kind": "anyN",
+        "verbatim": "Terms",
+        "marks": 50,
+        "contextNote": "Explain any five of the nine terms. Each term is marked separately: primary communication of relevant information 6 and other communication 4, in notes or sketches (the scheme reserves no fixed split between them). Smart meter: records the electricity used in the home and shows its cost, giving awareness and control of energy use; it can send readings to the supplier and may also record water or gas. Biscuit joint: joins boards of different widths in modern furniture; a biscuit joiner cuts a groove in each edge, and glued pressed-beech biscuits are inserted before the boards are clamped. Earth rod: a copper or steel rod, usually 1200 mm long, driven outside the building and connected to the electrical system; it carries fault current and lightning to earth, preventing shock and fire. Airtightness tape: tape sealing joints in the structure — around windows, doors, floors, ceilings, joists, pipes and ducts — to prevent draughts and reduce heat loss. Evacuated tube: part of a solar panel: a vacuum glass tube around a copper heat pipe whose glycol fluid vaporises, rises to a header and heats the coil in the hot water cylinder. Magnetic catch: a catch for cabinet and wardrobe doors: a base unit with magnetised strips on the frame and a striking plate on the door, carefully aligned so they meet when the door closes. Roof light window: an opening window for sloping, flat or low-pitched roofs, double, triple or quadruple glazed, letting light into rooms in an attic development. Aerated shower: mixes air with the flow of water, cutting use to about 7 litres a minute against 12 for a traditional shower while keeping a comfortable flow; it saves water and energy. LED lighting: light-emitting diodes for domestic and commercial fittings, using about 90% less energy than halogen bulbs and lasting far longer, though dearer to buy.",
+        "group": {
+          "claimMax": 5,
+          "perOption": 10,
+          "options": [
+            "Smart meter",
+            "Biscuit joint",
+            "Earth rod",
+            "Airtightness tape",
+            "Evacuated tube",
+            "Magnetic catch",
+            "Roof light window",
+            "Aerated shower",
+            "LED lighting"
+          ]
+        }
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q8-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q8-terms",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 8",
+      "title": "Construction terms",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Explain any five of the nine printed terms. Each term is marked separately at 10 marks; the scheme illustrations are examples of suitable sketches."
+    }
+  },
+  {
+    "id": "cons-2018-ol-q9-c",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-7",
+    "conceptId": "glazed-double-doors-c",
+    "questionRef": "2018 OL Q9(c)",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
+    "questionText": "Discuss one advantage and one disadvantage of fitting glazed double doors between the sitting room and the dining room.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "c-advantage-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 4,
+        "contextNote": "Such as: the doors open up the area and make the rooms feel bigger; daylight shared between both rooms; a private, quiet area when closed; wheelchair access between the rooms.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-disadvantage-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 4,
+        "contextNote": "Such as: glazed areas can be dangerous; a larger area is harder to heat; less privacy; less wall space for fittings and furniture.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-glazed",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q9-c-advantage",
+        "label": "Advantage",
+        "marks": 4,
+        "rowIds": [
+          "c-advantage-advantage"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q9-c-disadvantage",
+        "label": "Disadvantage",
+        "marks": 4,
+        "rowIds": [
+          "c-disadvantage-disadvantage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cons-2018-ol-q9-complete",
+    "subjectId": "construction-studies",
+    "year": 2018,
+    "level": "ordinary",
+    "section": "B",
+    "topicId": "cons-3-4",
+    "conceptId": "glazed-double-doors-complete",
+    "questionRef": "2018 OL Q9 — complete",
+    "stem": "The sketch shows an existing opening in a 100 mm concrete block wall separating a sitting room and a dining room. It is proposed to fit a doorframe and glazed wooden double doors in this opening.",
+    "questionText": "(a) Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.\n\n(b) Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method of fixing the doorframe to the wall.\n\n(c) Discuss one advantage and one disadvantage of fitting glazed double doors between the sitting room and the dining room.",
+    "tariffModel": {
+      "kind": "fixed"
+    },
+    "totalMarks": 50,
+    "rows": [
+      {
+        "id": "a-detail-1",
+        "kind": "criterion",
+        "verbatim": "Valid detail one",
+        "marks": 4,
+        "contextNote": "Such as: a prestressed concrete lintel, 100 mm wide and 65 mm thick, bearing on mortar on both sides of the opening.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-detail-2",
+        "kind": "criterion",
+        "verbatim": "Valid detail two",
+        "marks": 4,
+        "contextNote": "A second, different detail. Such as: a bearing of 100 mm at each end; blockwork built up at the ends and over the lintel, with smaller blocks to bring the courses level; a reinforced concrete or steel lintel instead.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "a-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "b-square",
+        "kind": "criterion",
+        "verbatim": "How the doorframe is held square while it is being fitted",
+        "marks": 8,
+        "contextNote": "Two valid details, 4 each. Such as: a temporary strip fixed diagonally across one or both corners; a strip across the bottom keeping the jambs parallel and the correct distance apart; the corners checked for square.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-square-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches for squaring the frame: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "b-fixing",
+        "kind": "criterion",
+        "verbatim": "One method of fixing the doorframe to the wall",
+        "marks": 8,
+        "contextNote": "Two valid details, 4 each. Such as: screw positions marked and drilled through the frame and marked on the wall; holes drilled for plastic plugs; the frame screwed back in place and the heads covered with wooden plugs; or metal frame fixings or steel fixing plates.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": "b-fixing-presentation",
+        "kind": "criterion",
+        "verbatim": "Quality of sketches (excellent, good, fair)",
+        "marks": 6,
+        "contextNote": "Quality of the sketches for fixing the frame: excellent 6, good 4, fair 2.",
+        "permittedMarks": [
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "c-c-advantage-advantage",
+        "kind": "criterion",
+        "verbatim": "Advantage",
+        "marks": 4,
+        "contextNote": "Such as: the doors open up the area and make the rooms feel bigger; daylight shared between both rooms; a private, quiet area when closed; wheelchair access between the rooms.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "c-c-disadvantage-disadvantage",
+        "kind": "criterion",
+        "verbatim": "Disadvantage",
+        "marks": 4,
+        "contextNote": "Such as: glazed areas can be dangerous; a larger area is harder to heat; less privacy; less wall space for fittings and furniture.",
+        "permittedMarks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "questionFigureKey": "construction-studies-2018-OL-q9-original",
+    "questionFigureIncludesPrompt": true,
+    "figureKey": "construction-studies-2018-OL-q9-frame",
+    "sourceMaterial": {
+      "kind": "source-illustration",
+      "label": "ORIGINAL QUESTION 9",
+      "title": "Glazed double doors in an internal opening",
+      "pages": [
+        1,
+        4
+      ],
+      "attribution": "SEC Leaving Certificate Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+      "presentationNote": "Original sketch retained. Part (c) requires both one advantage and one disadvantage, each separately marked."
+    },
+    "taskGroups": [
+      {
+        "sourceCardId": "cons-2018-ol-q9-a",
+        "label": "a",
+        "marks": 14,
+        "rowIds": [
+          "a-detail-1",
+          "a-detail-2",
+          "a-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q9-b",
+        "label": "b",
+        "marks": 28,
+        "rowIds": [
+          "b-square",
+          "b-square-presentation",
+          "b-fixing",
+          "b-fixing-presentation"
+        ]
+      },
+      {
+        "sourceCardId": "cons-2018-ol-q9-c",
+        "label": "c",
+        "marks": 8,
+        "rowIds": [
+          "c-c-advantage-advantage",
+          "c-c-disadvantage-disadvantage"
         ]
       }
     ]

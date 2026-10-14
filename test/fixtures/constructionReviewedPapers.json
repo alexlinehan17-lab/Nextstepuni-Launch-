@@ -613,5 +613,63 @@
     "choiceCardIds": [
       "cons-2018-hl-q10-a"
     ]
+  },
+  {
+    "year": 2018,
+    "level": "ordinary",
+    "validator": "scripts/markbank/authoring/construction_2018_ordinary.py",
+    "result": {
+      "tasks": 32,
+      "addedTasks": 13,
+      "correctedTasks": 19,
+      "consolidatedLegacy": 0,
+      "leafTasks": 23,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 29,
+      "paperComplete": true
+    },
+    "priorCount": 873,
+    "addedIds": [
+      "cons-2018-ol-q1-complete",
+      "cons-2018-ol-q2-complete",
+      "cons-2018-ol-q3-complete",
+      "cons-2018-ol-q4-b",
+      "cons-2018-ol-q4-c",
+      "cons-2018-ol-q4-complete",
+      "cons-2018-ol-q5-complete",
+      "cons-2018-ol-q6-a",
+      "cons-2018-ol-q6-complete",
+      "cons-2018-ol-q7-complete",
+      "cons-2018-ol-q8-terms",
+      "cons-2018-ol-q9-c",
+      "cons-2018-ol-q9-complete"
+    ],
+    "correctedIds": [
+      "cons-2018-ol-q1-a",
+      "cons-2018-ol-q1-b",
+      "cons-2018-ol-q2-a",
+      "cons-2018-ol-q2-b",
+      "cons-2018-ol-q2-c",
+      "cons-2018-ol-q3-a",
+      "cons-2018-ol-q3-b",
+      "cons-2018-ol-q4-a",
+      "cons-2018-ol-q5-a",
+      "cons-2018-ol-q5-b",
+      "cons-2018-ol-q6-b",
+      "cons-2018-ol-q6-c",
+      "cons-2018-ol-q7-a",
+      "cons-2018-ol-q7-b",
+      "cons-2018-ol-q7-c",
+      "cons-2018-ol-q9-a",
+      "cons-2018-ol-q9-b",
+      "cons-2018-ol-q9-c-advantage",
+      "cons-2018-ol-q9-c-disadvantage"
+    ],
+    "withdrawnIds": [],
+    "keptChoiceIds": [],
+    "choiceCardIds": [
+      "cons-2018-ol-q8-terms"
+    ]
   }
 ]
