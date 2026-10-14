@@ -2513,9 +2513,77 @@ Q13(d)(v)|3|12|14|28 - 35 days
 Q13(d)(vi)|6|12|14|Ratio of food consumed
 '''
 POOLS_2015_ORDINARY = {'Q4': (1, ['Barley', 'Maize', 'Oats', 'Wheat']), 'Q8(c)': (1, ['Drying in an oven', 'Wringing between hands']), 'Q10(b)(ii)': (1, ['Feel method', 'Sieve method', 'Sedimentation method'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY, (2016,'higher'):POOLS_2016_HIGHER, (2016,'ordinary'):POOLS_2016_ORDINARY, (2015,'higher'):POOLS_2015_HIGHER, (2015,'ordinary'):POOLS_2015_ORDINARY}
+# 2014 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
+HIGHER_2014 = '''
+Q1(a)|10|2|5|find freezing point of sample
+Q1(b)|10|2|5|Antibody production / absorbs lipids
+Q1(c)|10|2|5|Soil temperature increases sooner in south-facing field
+Q1(d)|10|2|5|Scrapie / Aujeszky’s disease
+Q1(e)|10|2|5|Flowers / seeds / fruit / endosperm present
+Q1(f)|10|2|5|Calcium ions (or magnesium ions)
+Q1(g)|10|2|5|nectaries absent (nectaries present)
+Q1(h)|10|2|5|Poor growth / leaching / denitrification
+Q1(i)(i)|8|2|5|Carbon / hydrogen / oxygen / nitrogen
+Q1(i)(ii)|2|2|5|Biuret / sodium hydroxide and copper sulphate
+Q1(j)(i)|4|2|5|Oats
+Q1(j)(ii)|4|2|5|Gramineae
+Q1(j)(iii)|2|2|5|spikelet
+Q2(a)(i)|4|2|6|Heat and pressure.
+Q2(a)(ii)|8|2|6|Marble from limestone
+Q2(a)(iii)|4|2|6|acidic or alkaline / coarse or fine
+Q2(b)(i)|4|2|6|Dung / slurry / seaweed
+Q2(b)(ii)|16|2|6|Structure and aggregation / erosion prevention
+Q2(c)|12|2|6|Soil must be dry at start
+Q3 Option One (a)|16|3|6|low temperatures : poor grass growth rates
+Q3 Option One (b)(i)|4|3|6|Suitable weather / suitable drying conditions
+Q3 Option One (b)(ii)|12|3|6|cut correct stage, not too heavy
+Q3 Option One (c)|16|3|6|High quality ryegrass species or clover
+Q3 Option Two (a)(i)|4|3|7|Glycogen / vitamins A / D / B12
+Q3 Option Two (a)(ii)|12|3|7|skin or adipose tissue : fat
+Q3 Option Two (b)(i)|2|3|7|Platyhelminthes
+Q3 Option Two (b)(ii)|6|3|7|Flat / triploblastic / acoelomate
+Q3 Option Two (b)(iii)|8|3|7|5, 3, 0m
+Q3 Option Two (c)|16|3|7|Adult attached to bile duct
+Q4(a)|24|3|7|Effect of lime on growth of oats
+Q4(b)|24|3|7|Effect of sprouting on the yield of early potatoes
+Q4(c)|24|3|7|Butterfat % of a sample of fresh milk
+Q4(d)|24|3|7|To show that germinating seeds release heat energy
+Q5(a)|18|4|8|Named plant (with tap root)
+Q5(b)(i)|4|4|8|amount of water held in the soil after gravitational
+Q5(b)(ii)|4|4|8|when all the capillary water is used
+Q5(b)(iii)|4|4|8|The portion of water held in soil
+Q5(c)|12|4|8|Poor development / low yield
+Q5(d)(i)|2|4|8|(i) B
+Q5(d)(ii)|4|4|8|most available water
+Q6(a)|12|4|8|Good feet / healthy udder
+Q6(b)(i)|5|4|8|35-45 kg
+Q6(b)(ii)|5|4|8|55-280 kg
+Q6(b)(iii)|5|4|8|280-300 kg
+Q6(b)(iv)|5|4|8|290-340 kg
+Q6(c)(i)|8|4|8|bile : liver or gall bladder
+Q6(c)(ii)|8|4|8|beak / crop / proventiculus / gizzard / cloaca
+Q7(a)(i)|2|5|9|Chromosomes
+Q7(a)(ii)|10|5|9|XX Female
+Q7(b)|12|5|9|exact copy of the cell or organism
+Q7(c)(i)|4|5|9|NnRr
+Q7(c)(ii)|16|5|9|Crinkly leaves 40
+Q7(d)|4|5|9|Health & safety / to stop inbreeding
+Q8(a)|24|5|10|Sow in farrowing house
+Q8(b)|24|5|10|Plough / depth 12-20cm
+Q8(c)|24|5|10|alteration of any part of the earth’s surface
+Q9(a)|12|6|11|Ruminant / rumen developed
+Q9(b)|12|6|11|Break iron pan or hard pan
+Q9(c)|12|6|11|Reduce wind speed
+Q9(d)|12|6|11|Improves condition prior to mating
+Q9(e)|12|6|11|Red water fever / Babesia
+'''
+POOLS_2014_HIGHER = {'Q1(a)': (1, ['Freezing point', 'Density', 'Total solids']), 'Q8(b)': (1, ['Barley', 'Wheat', 'Oats', 'Maize'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER, (2017,'ordinary'):POOLS_2017_ORDINARY, (2016,'higher'):POOLS_2016_HIGHER, (2016,'ordinary'):POOLS_2016_ORDINARY, (2015,'higher'):POOLS_2015_HIGHER, (2015,'ordinary'):POOLS_2015_ORDINARY, (2014,'higher'):POOLS_2014_HIGHER}
 
 SOURCES = [
+    (2014, 'higher', 'A', HIGHER_2014,
+     'c69165b7f74f3a6bd4f5d73343243a1a90ca27c5fa12c9097a0eb11cb8930d85',
+     '555f4e5c9084b028cb3281d987f7c4712f78bc1ce46fb5d83a511351e48d2e09'),
     (2015, 'ordinary', 'G', ORDINARY_2015,
      '9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7',
      'b39d01b60b7f6bfb66d583e5f0f297b49ec018e1860ce7e8d52f5715b638eefa'),
@@ -2644,7 +2712,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71,(2016,'higher'):62,(2016,'ordinary'):69,(2015,'higher'):58,(2015,'ordinary'):63}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58,(2017,'ordinary'):71,(2016,'higher'):62,(2016,'ordinary'):69,(2015,'higher'):58,(2015,'ordinary'):63,(2014,'higher'):61}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2789,7 +2857,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71; 2016 Higher 62; 2016 Ordinary 69; 2015 Higher 58; 2015 Ordinary 63. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58; 2017 Ordinary 71; 2016 Higher 62; 2016 Ordinary 69; 2015 Higher 58; 2015 Ordinary 63; 2014 Higher 61. Remaining editions stay open.')
 
 
 if __name__=='__main__':

@@ -103,6 +103,13 @@ FIGS = {
   'agsci-2016-ol-paper-urinary-system': dict(kind='exampapers', year=2016, fileid='LC024GLP000EV.pdf', page=10, rect=[0.28, 0.5235, 0.79, 0.742], solution=False,
       alt='Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.',
       attribution='SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  # 2014 Higher
+  'agsci-2014-hl-paper-oat-plant': dict(kind='exampapers', year=2014, fileid='LC024ALP000EV.pdf', page=2, rect=[0.606, 0.35, 0.88, 0.572], blank=[[0.606, 0.35, 0.732, 0.397]], solution=False,
+      alt='Original Question 1(j) drawing of a cereal plant with loose, drooping, branched heads of hanging grains; A points to one of the hanging units on a branch, B to the stem where the head branches out.',
+      attribution='SEC Agricultural Science 2014 Higher Level examination paper, PDF page 2 — © State Examinations Commission.'),
+  'agsci-2014-hl-paper-soil-water-table': dict(kind='exampapers', year=2014, fileid='LC024ALP000EV.pdf', page=4, rect=[0.155, 0.252, 0.825, 0.342], solution=False,
+      alt='Original Question 5(d) table of the water content of three soil samples: % water at field capacity and % water at wilting point; A 8 and 3, B 22 and 11, C 28 and 19.',
+      attribution='SEC Agricultural Science 2014 Higher Level examination paper, PDF page 4 — © State Examinations Commission.'),
   # 2015 Ordinary
   'agsci-2015-ol-paper-spring-cereals': dict(kind='exampapers', year=2015, fileid='LC024GLP000EV.pdf', page=4, rect=[0.11, 0.145, 0.83, 0.505], solution=False,
       alt='Original Question 4 photographs of four spring cereals lettered A to D: A a drooping ear with long awns, B a large cob with rows of kernels opening out of its husk, C loose open heads of hanging spikelets against the sky, D a dense stand of upright compact ears.',
@@ -229,6 +236,11 @@ for key, f in FIGS.items():
     with fitz.open(pdf) as d:
         p = d[f['page']-1]; W, H = p.rect.width, p.rect.height; a, b, c, e = f['rect']
         pix = p.get_pixmap(matrix=fitz.Matrix(3, 3), clip=fitz.Rect(a*W, b*H, c*W, e*H))
+        # 'blank': page-fraction rects of neighbouring question text that a rectangular crop
+        # cannot avoid (a drawing set beside the question lines). Painted white; the figure
+        # itself is never touched.
+        for x0, y0, x1, y1 in f.get('blank', []):
+            pix.set_rect(fitz.IRect(round(x0*W*3), round(y0*H*3), round(x1*W*3), round(y1*H*3)) & pix.irect, (255, 255, 255))
     out = ROOT/f'public/exam-figures/agricultural-science/markbank/{key}.png'
     pix.save(out)
     manifest[key] = {'src': f'/exam-figures/agricultural-science/markbank/{key}.png', 'md5': hashlib.md5(out.read_bytes()).hexdigest(),

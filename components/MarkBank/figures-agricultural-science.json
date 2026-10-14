@@ -1443,5 +1443,39 @@
       0.575
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-hl-paper-oat-plant": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-hl-paper-oat-plant.png",
+    "md5": "305306ea6e241354acd4fcfdb49fc935",
+    "alt": "Original Question 1(j) drawing of a cereal plant with loose, drooping, branched heads of hanging grains; A points to one of the hanging units on a branch, B to the stem where the head branches out.",
+    "attribution": "SEC Agricultural Science 2014 Higher Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024ALP000EV.pdf",
+    "sourceSha256": "c69165b7f74f3a6bd4f5d73343243a1a90ca27c5fa12c9097a0eb11cb8930d85",
+    "pdfPage": 2,
+    "cropRect": [
+      0.606,
+      0.35,
+      0.88,
+      0.572
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2014-hl-paper-soil-water-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2014-hl-paper-soil-water-table.png",
+    "md5": "04f15ec9891d65d6af6a5ce730912ebb",
+    "alt": "Original Question 5(d) table of the water content of three soil samples: % water at field capacity and % water at wilting point; A 8 and 3, B 22 and 11, C 28 and 19.",
+    "attribution": "SEC Agricultural Science 2014 Higher Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2014/LC024ALP000EV.pdf",
+    "sourceSha256": "c69165b7f74f3a6bd4f5d73343243a1a90ca27c5fa12c9097a0eb11cb8930d85",
+    "pdfPage": 4,
+    "cropRect": [
+      0.155,
+      0.252,
+      0.825,
+      0.342
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

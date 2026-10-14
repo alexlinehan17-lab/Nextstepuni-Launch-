@@ -1113,79 +1113,89 @@
         "sha256": "555f4e5c9084b028cb3281d987f7c4712f78bc1ce46fb5d83a511351e48d2e09",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 61,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "932a8e52a6283663",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 19 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "7a31b0578e3b8b2b",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) Describe a method for the detection of adulteration of milk by water. (b) Give three functions of the lymphatic system in mammals. (c) Explain how the aspect of a field may affect the temperature of a ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "de28b762bc658a72",
           "page": 3,
           "cue": "any two",
           "context": " Option One (a) During 2013 many farmers in Ireland experienced a fodder crisis. Describe any two circumstances, and their effects, that could contribute to a widespread shortage of fodder. (b) In 2013 a larger number of farmers than in recent years returned to haymaking as a method of conserving grass. (i) Give the main reas",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option One (a): any two circumstances with their effects; the scheme lists six (a marking menu)."
         },
         {
           "id": "04d7be763f6c6bb4",
           "page": 3,
           "cue": "any three",
           "context": "racteristics of members of this phylum. (iii) Draw a diagram of an adult fluke, labelling any three structures. (c) Describe in detail, with the aid of a labelled diagram, the life cycle of the liver fluke. (48 marks) 4. In the case of any two of the following, describe a laboratory or field method: (a) To assess the effect of ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option Two (b)(iii): any three labels on the candidate's own drawing (a marking criterion)."
         },
         {
           "id": "db259620a3660759",
           "page": 3,
           "cue": "any two",
           "context": "id of a labelled diagram, the life cycle of the liver fluke. (48 marks) 4. In the case of any two of the following, describe a laboratory or field method: (a) To assess the effect of liming on the growth of oats. (b) To investigate the effect of sprouting on the yield of early potatoes. (c) To determine the butterfat content ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "d04f2be67c534ade",
           "page": 4,
           "cue": "any three",
           "context": " soil: (i) field capacity (ii) permanent wilting point (iii) available water. (c) Explain any three effects of drought on the development of crop plants. (d) The following table shows the water content of three soil samples. Soil Sample % Water at Field Capacity % Water at Wilting Point A 8 3 B 22 11 C 28 19 (i) In which soil, ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q5(c): any three effects of drought; the scheme lists the pool (a marking menu)."
         },
         {
           "id": "6185e362cc5625cb",
           "page": 4,
           "cue": "any two",
           "context": "wborn calf stage (ii) Weanling stage (iii) Yearling stage (iv) Mating stage. (c) (i) Name any two substances secreted into an animal’s digestive system and in each case name the organ that secretes it. (ii) Draw a diagram of the digestive system of a fowl and label four parts not found in mammals. (48 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(c)(i): any two secretions with their organs; the scheme lists five (a marking menu)."
         },
         {
           "id": "9c45287d7055a59a",
           "page": 5,
           "cue": "any two",
           "context": "eaves? (d) Give two reasons why male animals are castrated on farms. (48 marks) 8. Answer any two of the parts (a), (b), (c). (a) Describe the management of bonhams (piglets) from birth to weaning. (b) Describe in detail the production of a named cereal crop under each of the following headings: (i) Soil suitability (ii) Prep",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "b0a1853c27659dd3",
           "page": 5,
           "cue": "any three",
           "context": "v) Harvesting (vi) Straw yield. (c) Highlight the main differences between the members of any three of the following pairs of terms: (i) Glaciation and Gleisation. (ii) Epidermis and Epididymis. (iii) Antibodies and Antibiotics. (iv) Earthing up and Steaming up. (48 marks) [OVER",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "14b4cf4592c6d202",
           "page": 6,
           "cue": "any four",
           "context": "Page 6 of 8 9. Give scientific explanations for any four of the following: (a) The ability of a young farm animal to digest bulky foods after weaning. (b) Sub-soiling of a podzolic soil. (c) The use of shelter belts on farms. (d) The flushing of lowland ewes prior to mating. (e) The pr",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -1204,7 +1214,7 @@
         "sha256": "bd7654dd382c0636655a3a0f01670bb38ea24ed1044055e2efde95cdf64ae4ff",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 61,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [
