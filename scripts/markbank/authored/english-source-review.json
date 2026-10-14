@@ -4376,6 +4376,114 @@
       "attribution": "The Library Van — Elaine Gaston, as reproduced in the SEC 2022 paper.",
       "questionSha256": "3f042d148cda4b3e7dedc457c6ed51d41367ba4bf9ecc1debeddee3398db1bc9",
       "reason": "Paper PDF14 prints the introduction (Elaine Gaston remembers visits from the mobile library to her home in Antrim), the title, both stanzas (11 + 11 lines), the byline and the two glosses (the Sperrins; the cardboard ticket) above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2021-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Time Pieces",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "6caede37b79a83162df637369e934370112c9f90106eeb519dc563d322e67c3e",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Time Pieces",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "f200ca3982bc3f0ec95d37c2fc7dbb5cc6edaa22b4640ad5e3b6448db06ad2f0",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Time Pieces",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "31dad2005f88941df5aa86721cc2065e62cc15b9bca031979b0b7bfd732ea534",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Daydreaming Back in Time",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "6af642c391364e2dfea5510c278d6ef23ea3154c0f7ac7b077b4e181aee6f479",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Daydreaming Back in Time",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "7f0da5a2de174b2d262f2a02aec985af058e4e8d574715579a9522383b527c25",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Daydreaming Back in Time",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "040232c651800b50575c6e1825ff3321ef4a18ae1f3294cf39d0e63ad8ab2a22",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "This Is Your Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "52cd6542a26ae968946b76e98eb7d99c2bd45a7c3d627f1652f465150618d7fd",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "This Is Your Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "d3450e6bd26012f0faee93af48e9126ab2c9e59a11466276df82b48fbbf729f9",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2021-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "This Is Your Time",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+      "questionSha256": "38afff40de8a7ad5ed0eb53b6bc8ad4e6be13f4a66aad3f99efe5bca7e85d159",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the image checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

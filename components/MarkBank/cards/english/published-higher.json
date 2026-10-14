@@ -114,6 +114,17 @@
    "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001"
   },
   {
+   "paperId": "english-2021-hl-p1",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "27ccbb8626788335a1cd041945ba08271afec7aaca471da68543502954635fe0",
+   "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -954,6 +965,17 @@
     },
     "capRulePage": 3
    },
+   "2021-higher": {
+    "family": "hl-h1-h8-2022",
+    "gridPages": [
+     6,
+     50
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2022-higher": {
     "family": "hl-h1-h8-2022",
     "gridPages": [
@@ -1010,6 +1032,7 @@
  },
  "legacyAdditionalSources": {},
  "bridgedPapers": [
+  "english-2021-hl-p1",
   "english-2022-hl-p1",
   "english-2022-hl-p2",
   "english-2023-hl-p1",
@@ -1020,6 +1043,25 @@
   "english-2025-hl-p2"
  ],
  "bridgedLegacyIds": [
+  "english-2021-hl-p1-composing-1",
+  "english-2021-hl-p1-composing-2",
+  "english-2021-hl-p1-composing-3",
+  "english-2021-hl-p1-composing-4",
+  "english-2021-hl-p1-composing-5",
+  "english-2021-hl-p1-composing-6",
+  "english-2021-hl-p1-composing-7",
+  "english-2021-hl-p1-t1-a-i",
+  "english-2021-hl-p1-t1-a-ii",
+  "english-2021-hl-p1-t1-a-iii",
+  "english-2021-hl-p1-t1-b",
+  "english-2021-hl-p1-t2-a-i",
+  "english-2021-hl-p1-t2-a-ii",
+  "english-2021-hl-p1-t2-a-iii",
+  "english-2021-hl-p1-t2-b",
+  "english-2021-hl-p1-t3-a-i",
+  "english-2021-hl-p1-t3-a-ii",
+  "english-2021-hl-p1-t3-a-iii",
+  "english-2021-hl-p1-t3-b",
   "english-2022-hl-p1-composing-1",
   "english-2022-hl-p1-composing-2",
   "english-2022-hl-p1-composing-3",
@@ -1207,7 +1249,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 543,
+ "cardCount": 562,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -9388,6 +9430,714 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t1-a-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, explain three insights you gained into the impact of time on memories. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Time Pieces",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t1-a-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "In paragraph 5, John Banville observes, “the present is where we live, while the past is where we dream.” Give your personal response to this observation by the writer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Time Pieces",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t1-a-iii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Identify four features of the language of narration, evident in the above text, and discuss how effectively these features are employed by John Banville to tell the story of his childhood trips to Dublin. Support your response with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Time Pieces",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "John Banville — edited extracts from Time Pieces – A Dublin Memoir, reflecting on childhood trips to Dublin, with the book’s cover image (PDF2–3). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t1-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 1 QB",
+   "questionText": "You have been invited to write a feature article, entitled Monumental Matters – The Story of Statues, to appear in the magazine supplement of a weekend newspaper. In your article you should: reflect on the long-established tradition of erecting statues to celebrate or memorialise people, explore some of the reasons why commemorative statues may be controversial, and give your views on continuing this tradition into the future.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t2-a-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, explain three insights you gained into what links the past and the present in the writer’s life. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Daydreaming Back in Time",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t2-a-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "In paragraph 5, Doireann Ní Ghríofa observes, “We may imagine that we can imagine the past, but this is an impossibility.” Give your personal response to this observation by the writer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Daydreaming Back in Time",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t2-a-iii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Identify four features of the aesthetic use of language, evident in the above text, and discuss how effectively these features are employed by Doireann Ní Ghríofa to convey her personal experiences, hopes and dreams. Support your response with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Daydreaming Back in Time",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Doireann Ní Ghríofa — adapted from her prose debut A Ghost in the Throat, on how the past and present meet in her garden, with a photograph of a bee (PDF4–5). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t2-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 2 QB",
+   "questionText": "An assertion that other creatures’ lives are somehow lesser than human life has prompted extensive debate on social media. In order to join in this online debate, write an open letter to be shared on social media, in which you: state your position in relation to animal rights, explore some of the issues associated with our current engagement with animals and outline what you see as the major challenges we face as we share the planet with animals in the future.",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested open letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t3-a-i",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3, explain three insights you gained into how Chadwick Boseman was influenced by his time at Howard University. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "This Is Your Time",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t3-a-ii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "In paragraph 7, Chadwick Boseman observes, “Purpose is an essential element of you.” Give your personal response to this observation by the writer.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "This Is Your Time",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t3-a-iii",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "Identify four features of the language of persuasion evident in the above text, and discuss how effectively these features are employed by Chadwick Boseman to craft an emotional and inspiring speech. Support your response with reference to the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "This Is Your Time",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Chadwick Boseman — edited extracts from the transcript of his 2018 graduation speech at Howard University, with a photograph (PDF6–7). As reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-t3-b",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Text 3 QB",
+   "questionText": "You have decided to apply for the position of editor of your school’s Graduation Yearbook. Each year, the Yearbook has a different theme, chosen by the editor. An article by a celebrity contributor is also included annually. To be considered for the post, you must make a verbal pitch* to the graduation committee members in which you: promote your preferred theme for the 2021 Graduation Yearbook, impress the committee with your ideas for its content, and nominate your ideal celebrity contributor, explaining your choice to the committee members. Write the text for the verbal pitch that you would make. *A spoken promotional presentation",
+   "totalMarks": 40,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-1",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 1, John Banville tells us of the annual childhood trip to Dublin to celebrate his birthday. Write a personal essay in which you reflect on the significance of birthdays, your own and those of others, sharing your thoughts on this annual personal milestone.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-2",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 2",
+   "questionText": "Bees, whose lives depend on the community of the hive, feature prominently in Text 2. Write a discursive essay in which you consider the meaning and importance of community.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-3",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 1, John Banville recalls seeing, “blear-eyed passengers off the overnight ferry from Fishguard in Wales” as he waited at the railway station. Write a short story, set in a railway station, in which a passenger off the overnight ferry from Fishguard in Wales plays an important role. Your short story may be amusing or menacing in tone.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-4",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 4",
+   "questionText": "In TEXT 3, Muhammad Ali’s security personnel play along with a joke between the boxer and Chadwick Boseman. Write a personal essay in which you reflect on the role of humour, fun and laughter in life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-5",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 5",
+   "questionText": "In TEXT 2, Doireann Ní Ghríofa alludes to the importance of bees in medieval Ireland. Write a fable or fairy-tale, set in ancient Ireland, in which a bee or bees feature prominently.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-6",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 2, Doireann Ní Ghríofa celebrates the colours in her garden, the sounds of the past and the “purring” of bees. Write an article, for publication in a popular magazine, about the many and varied colours and sounds that punctuate and surround our daily lives and the impact they have on us.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-hl-p1-composing-7",
+   "year": 2021,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2021 HL Paper 1 Composing 7",
+   "questionText": "In TEXT 3, Chadwick Boseman draws attention to the dangers of stereotyping. You have been asked to speak, as a representative of a national youth organisation, at the launch of a major campaign against stereotyping. Write the speech you would deliver.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {

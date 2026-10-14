@@ -2328,17 +2328,17 @@
     "english-2021-hl-p1-t1-b": {
       "questionSha256": "0da73824fc2ba6013842c6a3141060c93c90274edf13be7058078e7ba84ace78",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: a feature article, Monumental Matters – The Story of Statues — the tradition, why statues may be controversial, and views on continuing it; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
     },
     "english-2021-hl-p1-t2-b": {
       "questionSha256": "759e13049bbd2445be774604cf17806f795792641a013c317a36b3e547c025c6",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: an open letter — the candidate’s position on animal rights, issues in our engagement with animals, and the major challenges ahead; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
     },
     "english-2021-hl-p1-t3-b": {
       "questionSha256": "d515529819d7b531c3ae28430c91775ac2d3560d927d97e203948ae82851d21d",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: a verbal pitch — a preferred Yearbook theme, ideas for its content, and an ideal celebrity contributor; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 40-mark response."
     },
     "english-2021-ol-p1-t2-b": {
       "questionSha256": "22b3ab82f8f7bb7e5577d0d8e86308c8f6d08c189c5b59e705719965ec4240b4",
@@ -2883,7 +2883,7 @@
     "english-2021-hl-p1-composing-5": {
       "questionSha256": "dda98afaac651aed760663d486f7c892cc2d2f1420fba22c916db51b7a34ab7a",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF18 — “a fable or fairy-tale”, “Allow for a broad interpretation of both fables and fairy-tales”; both forms are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3869,32 +3869,32 @@
     "english-2021-hl-p1-composing-1": {
       "questionSha256": "a5cc9a45c34147e574b88eb5f7947e5d6aec2ebd60355cab0bf48bdff27f9f1a",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF14: a personal essay on the significance of birthdays, the candidate’s own and those of others. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-2": {
       "questionSha256": "e9eb69a8351b554dd03a08405cf4f9f5faf916e900591bbe107a0bedfbb4ea4b",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a discursive essay on the meaning and importance of community. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-3": {
       "questionSha256": "11e9e5a49a068396371a2efba13c3a14ac6bd270fbdf6e4055c307ed53514cb0",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF16: a short story set in a railway station featuring a passenger off the Fishguard ferry; “may be amusing and/or menacing in tone” — a free register. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-4": {
       "questionSha256": "c0093e3b954f3d6447bf378b796eef83818833927f2a0ef8fbf62a21c9441a80",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a personal essay on the role of humour, fun and laughter in life. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-6": {
       "questionSha256": "cd55d7d71f420821b97b67c3b762262b158621a0ebc7f40d4063b96d9b75a079",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a popular-magazine article on the colours and sounds of daily life and their impact. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-7": {
       "questionSha256": "6c8af89a1f28ef3bbc66f9939c9293339f188846d1d228077130f863a2f93da8",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF20: a speech launching a national youth campaign against stereotyping. One 100-mark composition."
     },
     "english-2021-ol-p1-composing-2": {
       "questionSha256": "b312a060ba8f562ed10d13a2d7e478bb10824a6654667dd6599f6c818eaea121",
@@ -17193,6 +17193,51 @@
       "questionSha256": "f543dd2c381e697aae85cdba9e772e8cffab84782eadc78f9e25d1232639213f",
       "kind": "open",
       "reason": "Scheme PDF66–67: the candidate’s impression, supported from the poem; a wide range of responses. One 15-mark response."
+    },
+    "english-2021-hl-p1-t1-a-i": {
+      "questionSha256": "6caede37b79a83162df637369e934370112c9f90106eeb519dc563d322e67c3e",
+      "kind": "open",
+      "reason": "Scheme PDF4: three insights of the candidate’s own into the impact of time on memories, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2021-hl-p1-t1-a-ii": {
+      "questionSha256": "f200ca3982bc3f0ec95d37c2fc7dbb5cc6edaa22b4640ad5e3b6448db06ad2f0",
+      "kind": "open",
+      "reason": "Scheme PDF5: a personal response to the writer’s observation; “Allow for a wide variety of responses.” One 10-mark response."
+    },
+    "english-2021-hl-p1-t1-a-iii": {
+      "questionSha256": "31dad2005f88941df5aa86721cc2065e62cc15b9bca031979b0b7bfd732ea534",
+      "kind": "open",
+      "reason": "Scheme PDF5: four features of the language of narration chosen freely from the text, discussed for how effectively they tell the story of the childhood trips to Dublin. One 20-mark response."
+    },
+    "english-2021-hl-p1-t2-a-i": {
+      "questionSha256": "6af642c391364e2dfea5510c278d6ef23ea3154c0f7ac7b077b4e181aee6f479",
+      "kind": "open",
+      "reason": "Scheme PDF7: three insights of the candidate’s own into what links the past and the present in the writer’s life, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2021-hl-p1-t2-a-ii": {
+      "questionSha256": "7f0da5a2de174b2d262f2a02aec985af058e4e8d574715579a9522383b527c25",
+      "kind": "open",
+      "reason": "Scheme PDF7: a personal response to the writer’s observation; “Allow for a wide variety of responses.” One 10-mark response."
+    },
+    "english-2021-hl-p1-t2-a-iii": {
+      "questionSha256": "040232c651800b50575c6e1825ff3321ef4a18ae1f3294cf39d0e63ad8ab2a22",
+      "kind": "open",
+      "reason": "Scheme PDF8: four features of the aesthetic use of language chosen freely from the text, discussed for how effectively they convey her personal experiences, hopes and dreams. One 20-mark response."
+    },
+    "english-2021-hl-p1-t3-a-i": {
+      "questionSha256": "52cd6542a26ae968946b76e98eb7d99c2bd45a7c3d627f1652f465150618d7fd",
+      "kind": "open",
+      "reason": "Scheme PDF10: three insights of the candidate’s own into how Chadwick Boseman was influenced by his time at Howard University, supported from the text; the indicative material is not a pool. One 10-mark response."
+    },
+    "english-2021-hl-p1-t3-a-ii": {
+      "questionSha256": "d3450e6bd26012f0faee93af48e9126ab2c9e59a11466276df82b48fbbf729f9",
+      "kind": "open",
+      "reason": "Scheme PDF10: a personal response to the writer’s observation; “Allow for a wide variety of responses.” One 10-mark response."
+    },
+    "english-2021-hl-p1-t3-a-iii": {
+      "questionSha256": "38afff40de8a7ad5ed0eb53b6bc8ad4e6be13f4a66aad3f99efe5bca7e85d159",
+      "kind": "open",
+      "reason": "Scheme PDF11: four features of the language of persuasion chosen freely from the text, discussed for how effectively they craft an emotional and inspiring speech. One 20-mark response."
     }
   }
 }
