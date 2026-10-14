@@ -103,6 +103,10 @@ FIGS = {
   'agsci-2016-ol-paper-urinary-system': dict(kind='exampapers', year=2016, fileid='LC024GLP000EV.pdf', page=10, rect=[0.28, 0.5235, 0.79, 0.742], solution=False,
       alt='Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.',
       attribution='SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  # 2013 Higher
+  'agsci-2013-hl-paper-soil-test-table': dict(kind='exampapers', year=2013, fileid='LC024ALP000EV.pdf', page=2, rect=[0.11, 0.676, 0.945, 0.752], solution=False,
+      alt='Original Question 2(a) table of soil test results: nitrogen test high, low, medium; phosphorus test high, medium, medium; potassium test low, low, medium; for Results A, B and C.',
+      attribution='SEC Agricultural Science 2013 Higher Level examination paper, PDF page 2 — © State Examinations Commission.'),
   # 2014 Higher
   'agsci-2014-hl-paper-oat-plant': dict(kind='exampapers', year=2014, fileid='LC024ALP000EV.pdf', page=2, rect=[0.606, 0.35, 0.88, 0.572], blank=[[0.606, 0.35, 0.732, 0.397]], solution=False,
       alt='Original Question 1(j) drawing of a cereal plant with loose, drooping, branched heads of hanging grains; A points to one of the hanging units on a branch, B to the stem where the head branches out.',

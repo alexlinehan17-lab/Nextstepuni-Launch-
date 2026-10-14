@@ -1562,5 +1562,22 @@
       0.3
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-hl-paper-soil-test-table": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-hl-paper-soil-test-table.png",
+    "md5": "14b050f38699fe51acac7ceb9d662185",
+    "alt": "Original Question 2(a) table of soil test results: nitrogen test high, low, medium; phosphorus test high, medium, medium; potassium test low, low, medium; for Results A, B and C.",
+    "attribution": "SEC Agricultural Science 2013 Higher Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024ALP000EV.pdf",
+    "sourceSha256": "d238ab2a28d168a1fe5bbf3c6f47d423964d41bd0d88808e0f82d0bb0402c3d5",
+    "pdfPage": 2,
+    "cropRect": [
+      0.11,
+      0.676,
+      0.945,
+      0.752
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

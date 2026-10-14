@@ -798,72 +798,81 @@
         "sha256": "031445761b0665780e95b48adc979647bb79153e77c2b75a061e92de59b4a56b",
         "pages": 12
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 59,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "875ddc8a7be99683",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 20 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "46a76ead60c9e894",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) Name three breeds of pig including at least two breeds suitable for outdoor (non-intensive) rearing. (b) List three advantages of sowing maize under plastic. (c) Describe briefly how you would test a f",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "bf954103f9a4b1db",
           "page": 2,
           "cue": "one of",
           "context": "h each field with its appropriate result and justify your choice in each case. (ii) Which one of the three macronutrients above is not considered a serious pollutant of water? (b) (i) State any two of the standards with which ground limestone must comply before it can be sold. (ii) Mention two consequences of over-liming. (c",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"Which one of the three macronutrients\" asks for a single answer (Q2(a)(ii)), not a choice."
         },
         {
           "id": "f1a6e608613461f7",
           "page": 2,
           "cue": "any two",
           "context": " three macronutrients above is not considered a serious pollutant of water? (b) (i) State any two of the standards with which ground limestone must comply before it can be sold. (ii) Mention two consequences of over-liming. (c) Describe an investigation to determine the pH of a soil. (48 marks) Result A Result B Result C Nitr",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(b)(i): any two of the scheme's four standards for ground limestone; a marking menu."
         },
         {
           "id": "6a899b1e5eae966e",
           "page": 3,
           "cue": "any two",
           "context": "y your selection in each case. (48 marks) 4. Describe laboratory or field experiments for any two of the following: (a) To investigate the effect of structure on total pore space in a soil. (b) To grow a culture of bacteria from the root nodules of clover. (c) To estimate the amount of grass dry matter (DM) in a paddock. (d) ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark experiments; all four are retained."
         },
         {
           "id": "0691017188fd9260",
           "page": 5,
           "cue": "any two",
           "context": "Page 5 of 8 8. Answer any two of the parts (a), (b), (c). (a) Outline the strategies, other than crop rotation, employed by organic farmers and environmentally conscious growers in dealing with: (i) weeds (ii) invertebrate pests (iii) fungal diseases. (b) Pho",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "ec5616bfbbaf171e",
           "page": 5,
           "cue": "any two",
           "context": " carbon cycle. (ii) Write a balanced equation for photosynthesis. (iii) Name and describe any two other stages in the carbon cycle. (c) Distinguish between any three of the following pairs of terms: (i) Blackleg in cattle and Blackleg in potatoes. (ii) Fodder beet and Sugar beet. (iii) Haylage and Hay. (iv) Maggots and Worms ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(b)(iii): any two other stages of the carbon cycle from the scheme's four; a marking menu."
         },
         {
           "id": "61844d336feba9ce",
           "page": 5,
           "cue": "any three",
           "context": "(iii) Name and describe any two other stages in the carbon cycle. (c) Distinguish between any three of the following pairs of terms: (i) Blackleg in cattle and Blackleg in potatoes. (ii) Fodder beet and Sugar beet. (iii) Haylage and Hay. (iv) Maggots and Worms in sheep. (48 marks) 9. Give scientific explanations for any four of",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "e99aef651ec25a14",
           "page": 5,
           "cue": "any four",
           "context": " and Hay. (iv) Maggots and Worms in sheep. (48 marks) 9. Give scientific explanations for any four of the following: (a) The increasing popularity of Holstein-Jersey cross cows in dairying. (b) The predominance of kale over other forms of winter forage crops in recent years. (c) The micropropagation of new potato varieties. (d",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -882,7 +891,7 @@
         "sha256": "027fe89daf5343f276aad331620ae1956c37334087c57c9b4d8b0b88e3cbe5c6",
         "pages": 18
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 59,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [
