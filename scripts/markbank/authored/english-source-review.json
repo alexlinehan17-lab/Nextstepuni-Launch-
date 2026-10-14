@@ -4855,6 +4855,39 @@
       "attribution": "Paul Auster — edited extract from his memoir Report from the Interior, with the book cover (PDF6–7). As reproduced in the SEC 2017 paper.",
       "questionSha256": "0a01a3b2cac6c48d3bae88201eed5e7eed5e6241078d2dd2ecee670bff3de672",
       "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2017-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Bounty",
+      "pages": [
+        6
+      ],
+      "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+      "questionSha256": "1dd6e73d9002581d92aac536487c9d83ab10058c76ee680f632d1373f82dd1e0",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Robyn Sarah and answer either Question 1 or Question 2”), the title, all four stanzas, the byline and the glosses (Glockenspiel, Rads); visually verified."
+    },
+    "english-2017-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Bounty",
+      "pages": [
+        6
+      ],
+      "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+      "questionSha256": "44793e5e29edca7243a0fa14e721119a0a6797f00cc0c186ea25c0594eccbdd7",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Robyn Sarah and answer either Question 1 or Question 2”), the title, all four stanzas, the byline and the glosses (Glockenspiel, Rads); visually verified."
+    },
+    "english-2017-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Bounty",
+      "pages": [
+        6
+      ],
+      "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+      "questionSha256": "8742ed17ccc11555d9b7bd93cf42d81c8cbac8e4a26ebfbac527d15e9e3f5f7e",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Robyn Sarah and answer either Question 1 or Question 2”), the title, all four stanzas, the byline and the glosses (Glockenspiel, Rads); visually verified."
     }
   }
 }

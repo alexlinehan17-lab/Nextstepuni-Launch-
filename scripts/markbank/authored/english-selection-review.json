@@ -7573,42 +7573,42 @@
     "english-2017-hl-p2-single-a-i": {
       "questionSha256": "331978ce34942882132cf39de3b2fc49bd9a3538803ad75208fa4a669b06510e",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF22: “Candidates are free to agree or disagree, wholly or in part” with the description, dealing with all aspects of the statement. One 60-mark response."
     },
     "english-2017-hl-p2-single-a-ii": {
       "questionSha256": "5fdd52b4a68b1cb734ac2e2dceae15e8537dd008950a17ab6761a0be092ec242",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "flexible",
+      "reason": "Scheme PDF23: “Candidates are free to agree or disagree” that the female characters are equally powerless; “at least two female characters”, not necessarily equally. One 60-mark response."
     },
     "english-2017-hl-p2-single-b-i": {
       "questionSha256": "d2593dc4cf612e192fc7a23570439d7eafe18c9d16632875616b90d5c7b58acd",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF24: “Candidates are free to agree or disagree, wholly or in part” with the description, dealing with all aspects of the statement. One 60-mark response."
     },
     "english-2017-hl-p2-single-b-ii": {
       "questionSha256": "e7c26627648296c6520423da38f0ac225659ee43bd1777ae43a4cdf7567459e0",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "flexible",
+      "reason": "Scheme PDF25: “Candidates are free to agree or disagree” that the female characters are equally powerless; “at least two female characters”, not necessarily equally. One 60-mark response."
     },
     "english-2017-hl-p2-single-c-i": {
       "questionSha256": "4757fc50c1c2f398c0c9b964533ec0315ef3254257c177542308e185fdaf699d",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF26: “Candidates are free to agree or disagree, wholly or in part” with the description, dealing with all aspects of the statement. One 60-mark response."
     },
     "english-2017-hl-p2-single-d-i": {
       "questionSha256": "d3d5414bd9822be209b79f5938a80faaa3056d5a92e6a5111a3912207ab346b3",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF28: “Candidates are free to agree or disagree, wholly or in part” with the description, dealing with all aspects of the statement. One 60-mark response."
     },
     "english-2017-hl-p2-single-d-ii": {
       "questionSha256": "15a2ee862f024068e2dc9bfea336f1eec23b97f17538695ac0efea43b1101872",
-      "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "kind": "flexible",
+      "reason": "Scheme PDF29: “Candidates are free to agree or disagree” that the female characters are equally powerless; “at least two female characters”, not necessarily equally. One 60-mark response."
     },
     "english-2017-hl-p2-single-e-i": {
       "questionSha256": "55c5576740ec8e020c3752efd874927ec1b25bac705f98bb6994cb7af6322bad",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF30: “Candidates are free to agree or disagree, wholly or in part” with the description, dealing with all aspects of the statement. One 60-mark response."
     },
     "english-2017-ol-p2-single-a-q1-b": {
       "questionSha256": "6fa684fb9bd5904e8bbd95730491cf8ceeb43a0bbc52d5aeac21d9100ffcefe5",
@@ -11750,24 +11750,24 @@
       "reason": "Scheme PDF49: a letter as the traveller remembering the experience and how it affected them. One 20-mark response."
     },
     "english-2017-hl-p2-prescribed-1": {
-      "questionSha256": "662ad9c689759fe67a17d0ef8fd0de8a09f7c58e5fbdf9bb690cc34de97ba97e",
+      "questionSha256": "fbad1302b103df1b30e3a00650733c4978534d1d8b156c72d2ce7731bb32f088",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF40, 41: freedom of choice of poems studied; “free to agree and/or disagree wholly or in part”, all aspects engaged. One 50-mark response."
     },
     "english-2017-hl-p2-prescribed-2": {
-      "questionSha256": "55a16fd67df3dfd60e050f2c79c7eb3d0e10ad9805c60cd798dce8b51a1ab020",
+      "questionSha256": "5e46671982683c8d9f5121681d3fa344b3f1d47484be8e25ee97d2188e1a3534",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF40, 42: freedom of choice of poems studied; “free to agree and/or disagree wholly or in part”, all aspects engaged. One 50-mark response."
     },
     "english-2017-hl-p2-prescribed-3": {
-      "questionSha256": "a595bd57896efe14bb68df70d1537d600f1084cf02e5974c9685f3c88c0978d4",
+      "questionSha256": "30ed3b3af7089c3d66c85080217d200e57022e3bd3add31357bc13766bd44735",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF40, 43: freedom of choice of poems studied; “free to agree and/or disagree wholly or in part”, all aspects engaged. One 50-mark response."
     },
     "english-2017-hl-p2-prescribed-4": {
-      "questionSha256": "a39d088cdc82337e6f9fe1e3b6f68ed9e5f9485e3db1bf131f0431f1e6ba853c",
+      "questionSha256": "ae1a0882713a29395564c0d52b53bf8f8bac5af03af34eec0ee3ce570e42fd6f",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF40, 44: the candidate’s own selection of Bishop’s poems that best demonstrate skilful use of language and imagery to confront life’s harsh realities, justified. One 50-mark response."
     },
     "english-2017-ol-p2-prescribed-a-q1-b": {
       "questionSha256": "167488330b77d6d1ec4348b4c0613cc86ef50a3d66e35f4fc06f55beaf73c1c3",
@@ -12735,9 +12735,9 @@
       "reason": "Scheme PDF41: whether the words of stanza one make washing dishes seem attractive or unattractive — one judgement. One 10-mark response."
     },
     "english-2017-hl-p2-unseen-q1-b": {
+      "questionSha256": "44793e5e29edca7243a0fa14e721119a0a6797f00cc0c186ea25c0594eccbdd7",
       "kind": "open",
-      "reason": "Images, lines, emotions and examples are freely identified within the poem, without a fixed printed option list. Ordinary literary judgements allow qualified answers; grammatical or, which and his/her do not create closed task routes.",
-      "questionSha256": "44793e5e29edca7243a0fa14e721119a0a6797f00cc0c186ea25c0594eccbdd7"
+      "reason": "Scheme PDF39: a mood or feeling of the candidate’s own and how the poet creates it. One 10-mark response."
     },
     "english-2017-ol-p2-unseen-q2": {
       "kind": "open",
@@ -13353,33 +13353,33 @@
     },
     "english-2017-hl-p2-comparative-a-q1-a": {
       "questionSha256": "e1d7a91ac935506c513277c9b612e701aebb2066f9fd913afec6ea82acc9e9db",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF33: the extent to which the sense of the general vision and viewpoint of one text is influenced by “one (or more) relationship(s)”. One 30-mark response."
     },
     "english-2017-hl-p2-comparative-a-q1-b": {
       "questionSha256": "47d5a47bda1a1fbd5e6ca5da8baa951f08df92031b797f77be883da640d4bb70",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF34: two other texts, “at least one relationship in each”, compared; links with part (a) not required. One 40-mark response."
     },
     "english-2017-hl-p2-comparative-a-q2": {
       "questionSha256": "044d7925796725e0e86cfc85fd26bad5099e50ce033c5e96c8a161f71fd6996f",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "required",
+      "reason": "Paper PDF4 and scheme PDF35: the main factor or factors that changed or reinforced the initial impression in “three texts” — three required. One 70-mark comparison."
     },
     "english-2017-hl-p2-comparative-b-q1-a": {
       "questionSha256": "de3c5dee69b537c96d960241e47d2eada538193ce09371f4093a38c6ed6fbe61",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Scheme PDF36: the aspects of one text (“at least two aspects”) that make the chosen theme appear more or less relevant to life today. One 30-mark response."
     },
     "english-2017-hl-p2-comparative-b-q1-b": {
       "questionSha256": "70d0d6563d8e34572df24c36fd53c2637325b6938249cfe93e5fca35745aa6c6",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "flexible",
+      "reason": "Scheme PDF37: two other texts, the same theme as part (a), “the same or different aspects”, compared. One 40-mark response."
     },
     "english-2017-hl-p2-comparative-b-q2": {
       "questionSha256": "0f881cf24e1d8a1c38d03332ed5efe9d729268f87182f15982ff0e1b66f2b115",
-      "kind": "context",
-      "reason": "These are the mode name or overlapping descriptions of the same literary focus. They are not mutually exclusive printed answer options. Texts, techniques and examples remain student-selected."
+      "kind": "required",
+      "reason": "Paper PDF5 and scheme PDF38: why the exploration of the same theme is more entertaining in some texts than others, with reference to “three texts”; a broad interpretation of ‘entertaining’. One 70-mark comparison."
     },
     "english-2017-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "8a44d64e8745f9239d01bcc63686f4c87108a3d4ad7026286a47dbb647e8991f",
@@ -17875,6 +17875,26 @@
       "questionSha256": "0a01a3b2cac6c48d3bae88201eed5e7eed5e6241078d2dd2ecee670bff3de672",
       "kind": "open",
       "reason": "Scheme PDF11: “Expect candidates to agree or disagree (wholly or in part)” with the statement, discussing how effectively aesthetic language creates a charming and reflective memoir. One 20-mark response."
+    },
+    "english-2017-hl-p2-single-c-ii": {
+      "questionSha256": "2d6f83fe5996752358b206042b7a0ad2de928ebb0cb6820aea541f82a901737f",
+      "kind": "required",
+      "reason": "Scheme PDF27: whether Dr Rank and Nils Krogstad are used effectively to fulfil a variety of dramatic functions — both characters, “although not necessarily equally”, at least one function each. One 60-mark response."
+    },
+    "english-2017-hl-p2-single-e-ii": {
+      "questionSha256": "4c704ecfa2bff3eb57128e2471174036af4e6fa19079942e2fd842a35c5154ad",
+      "kind": "required",
+      "reason": "Scheme PDF31: whether Laertes and Horatio are used effectively to fulfil a variety of dramatic functions — both characters, “although not necessarily equally”, at least one function each. One 60-mark response."
+    },
+    "english-2017-hl-p2-unseen-q1-a": {
+      "questionSha256": "1dd6e73d9002581d92aac536487c9d83ab10058c76ee680f632d1373f82dd1e0",
+      "kind": "open",
+      "reason": "Scheme PDF39: what the candidate learns about the poet’s approach to life, with close reference. One 10-mark response."
+    },
+    "english-2017-hl-p2-unseen-q2": {
+      "questionSha256": "8742ed17ccc11555d9b7bd93cf42d81c8cbac8e4a26ebfbac527d15e9e3f5f7e",
+      "kind": "required",
+      "reason": "Scheme PDF39: the appeal of the poem with reference to its theme, tone and language and imagery — all, “not necessarily equally”. One 20-mark response."
     }
   }
 }

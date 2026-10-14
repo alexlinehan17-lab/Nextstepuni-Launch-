@@ -1566,7 +1566,8 @@
       "observedHeading": "Prescribed Poetry · “Boland Makes Effective Use Of Symbols And Metaphors To Explore Personal Experiences · Q1",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
-      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "Eavan Boland"
     },
     "english-2017-hl-p2-prescribed-2": {
       "topicId": "english-11-3",
@@ -1575,7 +1576,8 @@
       "observedHeading": "Prescribed Poetry · “Donne’S Poetry Can Be Simultaneously Playful And Challenging Both In Style And Content.” · Q2",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
-      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "John Donne"
     },
     "english-2017-hl-p2-prescribed-3": {
       "topicId": "english-11-11",
@@ -1584,7 +1586,8 @@
       "observedHeading": "Prescribed Poetry · “Keats Uses Sensuous Language And Vivid Imagery To Express A Range Of Profound Tensions.” · Q3",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
-      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "John Keats"
     },
     "english-2017-hl-p2-prescribed-4": {
       "topicId": "english-11-0",
@@ -1593,7 +1596,8 @@
       "observedHeading": "Prescribed Poetry · From The Poetry Of Elizabeth Bishop That You Have Studied, Select The Poems That, In Your · Q4",
       "paperPage": 7,
       "source": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
-      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763"
+      "sourceSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+      "promptHeading": "Elizabeth Bishop"
     },
     "english-2017-ol-p2-single-a": {
       "topicId": "english-12-43",

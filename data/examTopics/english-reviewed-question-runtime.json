@@ -50,8 +50,9 @@
   "english-higher-poetry-frost-archive",
   "english-higher-poetry-montague-archive",
   "english-higher-poetry-larkin-archive",
-  "english-higher-text-translations-reviewed-archive",
+  "english-higher-text-emma-reviewed-archive",
   "english-higher-text-death-and-nightingales-reviewed-archive",
+  "english-higher-text-translations-reviewed-archive",
   "english-higher-text-pride-and-prejudice-reviewed-archive",
   "english-higher-text-never-let-me-go-reviewed-archive",
   "english-higher-poetry-hardy-archive",
@@ -59,7 +60,6 @@
   "english-higher-text-the-grass-is-singing-reviewed-archive",
   "english-higher-text-antigone-reviewed-archive",
   "english-higher-poetry-hopkins",
-  "english-higher-text-emma-reviewed-archive",
   "english-higher-text-dancing-at-lughnasa-reviewed-archive",
   "english-higher-poetry-kinsella-reviewed-archive",
   "english-higher-text-a-whistle-in-the-dark-reviewed-archive",
@@ -5491,6 +5491,226 @@
   [
    "h",
    "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "1",
+   [
+    8
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "2",
+   [
+    8
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "3",
+   [
+    39
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "4",
+   [
+    11
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "5",
+   [
+    47
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "6",
+   [
+    47
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "7",
+   [
+    41
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "8",
+   [
+    41
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "9",
+   [
+    30
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "10",
+   [
+    30
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "11",
+   [
+    48
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "12",
+   [
+    48
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "13",
+   [
+    25
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "14",
+   [
+    25
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "15",
+   [
+    19
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "16",
+   [
+    19
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "17",
+   [
+    10
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "18",
+   [
+    10
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "19",
+   [
+    20
+   ]
+  ],
+  [
+   "h",
+   "e",
+   2017,
+   "p2",
+   "LC002ALP200EV.pdf",
+   "20",
+   [
+    15
+   ]
+  ],
+  [
+   "h",
+   "e",
    2016,
    "p1",
    "LC002ALP100EV.pdf",
@@ -5727,7 +5947,7 @@
    "LC002ALP200EV.pdf",
    "9",
    [
-    47
+    49
    ]
   ],
   [
@@ -5738,7 +5958,7 @@
    "LC002ALP200EV.pdf",
    "10",
    [
-    47
+    49
    ]
   ],
   [
@@ -6354,7 +6574,7 @@
    "LC002ALP200EV.pdf",
    "4",
    [
-    51
+    52
    ]
   ],
   [
@@ -6365,7 +6585,7 @@
    "LC002ALP200EV.pdf",
    "5",
    [
-    49
+    50
    ]
   ],
   [
@@ -6376,7 +6596,7 @@
    "LC002ALP200EV.pdf",
    "6",
    [
-    49
+    50
    ]
   ],
   [
@@ -6409,7 +6629,7 @@
    "LC002ALP200EV.pdf",
    "9",
    [
-    50
+    51
    ]
   ],
   [
@@ -6420,7 +6640,7 @@
    "LC002ALP200EV.pdf",
    "10",
    [
-    50
+    51
    ]
   ],
   [
@@ -7047,7 +7267,7 @@
    "LC002ALP200EV.pdf",
    "5",
    [
-    49
+    50
    ]
   ],
   [
@@ -7058,7 +7278,7 @@
    "LC002ALP200EV.pdf",
    "6",
    [
-    49
+    50
    ]
   ],
   [
@@ -7069,7 +7289,7 @@
    "LC002ALP200EV.pdf",
    "7",
    [
-    52
+    53
    ]
   ],
   [
@@ -7080,7 +7300,7 @@
    "LC002ALP200EV.pdf",
    "8",
    [
-    52
+    53
    ]
   ],
   [
@@ -7091,7 +7311,7 @@
    "LC002ALP200EV.pdf",
    "9",
    [
-    47
+    49
    ]
   ],
   [
@@ -7102,7 +7322,7 @@
    "LC002ALP200EV.pdf",
    "10",
    [
-    47
+    49
    ]
   ],
   [
@@ -7113,7 +7333,7 @@
    "LC002ALP200EV.pdf",
    "11",
    [
-    50
+    51
    ]
   ],
   [
@@ -7124,7 +7344,7 @@
    "LC002ALP200EV.pdf",
    "12",
    [
-    50
+    51
    ]
   ],
   [
@@ -7773,7 +7993,7 @@
    "LC002ALP200EV.pdf",
    "9",
    [
-    53
+    54
    ]
   ],
   [
@@ -7784,7 +8004,7 @@
    "LC002ALP200EV.pdf",
    "10",
    [
-    53
+    54
    ]
   ],
   [
@@ -7817,7 +8037,7 @@
    "LC002ALP200EV.pdf",
    "13",
    [
-    54
+    55
    ]
   ],
   [
@@ -7828,7 +8048,7 @@
    "LC002ALP200EV.pdf",
    "14",
    [
-    54
+    55
    ]
   ],
   [
@@ -7894,7 +8114,7 @@
    "LC002ALP200EV.pdf",
    "20",
    [
-    55
+    56
    ]
   ],
   [
@@ -8411,7 +8631,7 @@
    "LC002ALP200EV.pdf",
    "5",
    [
-    56
+    47
    ]
   ],
   [
@@ -8422,7 +8642,7 @@
    "LC002ALP200EV.pdf",
    "6",
    [
-    56
+    47
    ]
   ],
   [
@@ -8433,7 +8653,7 @@
    "LC002ALP200EV.pdf",
    "7",
    [
-    52
+    53
    ]
   ],
   [
@@ -8444,7 +8664,7 @@
    "LC002ALP200EV.pdf",
    "8",
    [
-    52
+    53
    ]
   ],
   [

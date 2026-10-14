@@ -169,6 +169,17 @@
    "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51"
   },
   {
+   "paperId": "english-2017-hl-p2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 23,
+   "cards": 23,
+   "printedDuplicates": 0,
+   "paperSha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+   "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51"
+  },
+  {
    "paperId": "english-2016-hl-p1",
    "year": 2016,
    "level": "higher",
@@ -1320,7 +1331,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 631,
+ "cardCount": 654,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -13306,6 +13317,803 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-a-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text A(i)",
+   "questionText": "Jane Austen’s novel, Emma, has been described as “a frivolous romance of limited appeal.” To what extent do you agree or disagree with this description of the novel? In your response you should deal with all aspects of the statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-a-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text A(ii)",
+   "questionText": "“For a variety of reasons, all the female characters in Jane Austen’s novel, Emma, are equally powerless.” To what extent do you agree or disagree with the above statement? Support your answer with reference to at least two female characters in the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-b-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text B(i)",
+   "questionText": "The Great Gatsby has been described as “a study of selfish individuals which fails to offer a critical examination of society.” To what extent do you agree or disagree with this description of the novel? In your response you should deal with all aspects of the statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-b-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text B(ii)",
+   "questionText": "“For a variety of reasons, all the female characters in Fitzgerald’s novel, The Great Gatsby, are equally powerless.” To what extent do you agree or disagree with the above statement? Support your answer with reference to at least two female characters in the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-c-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text C(i)",
+   "questionText": "Ibsen’s play, A Doll’s House, has been described as “a domestic drama which fails to address significant social issues.” To what extent do you agree or disagree with this description of the play? In your response you should deal with all aspects of the statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-c-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text C(ii)",
+   "questionText": "“Ibsen makes effective use of both Dr Rank and Nils Krogstad to fulfil a variety of dramatic functions in his play, A Doll’s House.” Discuss this statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-d-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text D(i)",
+   "questionText": "Death and Nightingales has been described as “a far‐fetched tale of violence and deceit.” To what extent do you agree or disagree with this description of the novel? In your response you should deal with all aspects of the statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-d-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text D(ii)",
+   "questionText": "“For a variety of reasons, all the female characters in McCabe’s novel, Death and Nightingales, are equally powerless.” To what extent do you agree or disagree with the above statement? Support your answer with reference to at least two female characters in the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-e-i",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text E(i)",
+   "questionText": "Shakespeare’s play Hamlet has been described as “a disturbing psychological thriller.” To what extent do you agree or disagree with this description of the play? In your response you should deal with all aspects of the statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-single-e-ii",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Single Text E(ii)",
+   "questionText": "Shakespeare makes effective use of both Laertes and Horatio to fulfil a variety of dramatic functions in his play, Hamlet.” Discuss this statement, supporting your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-a-q1-a",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "“Relationships between characters can influence our sense of the general vision and viewpoint of texts.” Discuss the extent to which your sense of the general vision and viewpoint of one text on your comparative course is influenced by one (or more) relationship(s) in the text. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The General Vision and Viewpoint · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-a-q1-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "“Relationships between characters can influence our sense of the general vision and viewpoint of texts.” Compare the extent to which your sense of the general vision and viewpoint of two other texts on your comparative course is influenced by at least one relationship in each of these texts. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The General Vision and Viewpoint · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-a-q2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative A Q2",
+   "questionText": "“A variety of factors in texts can change or reinforce our initial impression of the general vision and viewpoint.” Compare the main factor or factors in three texts on your comparative course that changed or reinforced your initial impression of the general vision and viewpoint in these texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · The General Vision and Viewpoint · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-b-q1-a",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "“The same theme or issue can appear more relevant to life today in some texts than in others.” In relation to one text on your comparative course, discuss the aspects of the text that, in your opinion, make your chosen theme or issue appear more or less relevant to life today. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-b-q1-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "“The same theme or issue can appear more relevant to life today in some texts than in others.” In relation to two other texts on your comparative course, compare the aspects of those texts that, in your opinion, make your chosen theme or issue appear more or less relevant to life today. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-comparative-b-q2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Comparative B Q2",
+   "questionText": "“There are many reasons why the exploration of the same theme or issue can be more entertaining in some texts than in others.” Compare the reasons why you found the exploration of the same theme or issue more entertaining in some texts than in others. Support your answer with reference to three texts on your comparative course.",
+   "totalMarks": 70,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme or Issue · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-unseen-q1-a",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "What do you learn about the poet’s approach to life from reading this poem? Explain your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Bounty",
+    "pages": [
+     6
+    ],
+    "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-unseen-q1-b",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Identify a mood or feeling evoked in the above poem and explain how the poet creates this mood or feeling. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Bounty",
+    "pages": [
+     6
+    ],
+    "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-unseen-q2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "Discuss the appeal of this poem with reference to its theme, tone and the poet’s use of language and imagery. Refer closely to the text in support of your answer.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Bounty",
+    "pages": [
+     6
+    ],
+    "attribution": "Bounty — Robyn Sarah, as reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-prescribed-1",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "“Boland makes effective use of symbols and metaphors to explore personal experiences and deliver penetrating truths about society.” To what extent do you agree or disagree with this statement? Support your answer with reference to the poetry of Eavan Boland on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Eavan Boland",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-prescribed-2",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "“Donne’s poetry can be simultaneously playful and challenging both in style and content.” To what extent do you agree or disagree with this statement? Support your answer with reference to the poetry of John Donne on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-3",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "John Donne",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-prescribed-3",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "“Keats uses sensuous language and vivid imagery to express a range of profound tensions.” To what extent do you agree or disagree with this statement? Support your answer with reference to the poetry of John Keats on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-11",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "John Keats",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-hl-p2-prescribed-4",
+   "year": 2017,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2017 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "From the poetry of Elizabeth Bishop that you have studied, select the poems that, in your opinion, best demonstrate her skilful use of language and imagery to confront life’s harsh realities. Justify your selection by demonstrating Bishop’s skilful use of language and imagery to confront life’s harsh realities in the poems you have chosen.",
+   "totalMarks": 50,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Elizabeth Bishop",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
    }
   },
   {
