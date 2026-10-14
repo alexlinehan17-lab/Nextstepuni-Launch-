@@ -356,6 +356,19 @@ describe('Applied Mathematics independently reviewed 2024 tasks', () => {
   });
 
   it('applies only explicitly recorded legacy corrections and retains each shipped identity once', () => {
+    // The ligature repair (scripts/markbank/authoring/patch_deck_ligatures.py)
+    // restored letters the SEC PDFs' "tt" glyph had dropped in five of these
+    // superseded legacy blocks. Undoing exactly that repair must give back the
+    // block each correction recorded, so nothing else in the block has moved.
+    const LIGATURE_REPAIRED: Record<string, [string, string][]> = {
+      'am-2024-hl-2-b-ii': [['is attached to', 'is atached to']],
+      'am-2024-hl-8-b': [['is written in terms', 'is writen in terms']],
+      'am-2024-hl-10-a-ii': [['the letters', 'the leters'], ['The letters', 'The leters']],
+      'am-2024-hl-10-a-iii': [['the letters', 'the leters'], ['The letters', 'The leters']],
+      'am-2024-hl-10-a-iv': [['the letters', 'the leters'], ['The letters', 'The leters']],
+    };
+    const asRecorded = (cardId: string, block: string) => (LIGATURE_REPAIRED[cardId] ?? [])
+      .reduce((text, [printed, misread]) => text.split(printed).join(misread), block);
     for (const paper of review2024.papers) {
       const deck = paper.level === 'higher' ? HIGHER : ORDINARY;
       const source = readFileSync(`components/MarkBank/cards/applied-maths/${paper.level}.ts`, 'utf8');
@@ -363,7 +376,8 @@ describe('Applied Mathematics independently reviewed 2024 tasks', () => {
       expect(paper.cardCorrections).toHaveLength(paper.level === 'higher' ? 37 : 47);
       for (const correction of paper.cardCorrections) {
         const block = blocks.find(value => value.match(/^ {4}id: "([^"]+)"/m)?.[1] === correction.cardId)!;
-        expect(createHash('sha256').update(block).digest('hex')).toBe(correction.originalBlockSha256);
+        expect(createHash('sha256').update(asRecorded(correction.cardId, block)).digest('hex'), correction.cardId)
+          .toBe(correction.originalBlockSha256);
         const matches = deck.filter(item => item.id === correction.cardId);
         expect(matches).toHaveLength(1);
         expect(matches[0]).toBe(card(correction.cardId));

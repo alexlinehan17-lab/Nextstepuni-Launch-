@@ -180,7 +180,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a9-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2021 OL Section A Q9(i)",
-    stem: "Adidas have used 1.8 million recycled plastic botles to build a sustainable high school football field in Miami, Florida. These recycled botles were all gathered from remote islands and beaches.",
+    stem: "Adidas have used 1.8 million recycled plastic bottles to build a sustainable high school football field in Miami, Florida. These recycled bottles were all gathered from remote islands and beaches.",
     questionText: "Explain what is meant by the term sustainable.",
     tariffModel: {"kind":"questionTotal","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
@@ -195,8 +195,8 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-a9-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "A", questionRef: "2021 OL Section A Q9(ii)",
-    stem: "Adidas have used 1.8 million recycled plastic botles to build a sustainable high school football field in Miami, Florida. These recycled botles were all gathered from remote islands and beaches.",
-    questionText: "State two advantages of using recycled botles for this purpose.",
+    stem: "Adidas have used 1.8 million recycled plastic bottles to build a sustainable high school football field in Miami, Florida. These recycled bottles were all gathered from remote islands and beaches.",
+    questionText: "State two advantages of using recycled bottles for this purpose.",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Better for the environment, less exploitation of natural resources, etc.", marks: 4, openList: true },
@@ -210,7 +210,7 @@ export const CARDS: SecCard[] = [
     id: "tech-2021-ol-a10-i", topicId: "tech-core-ict", conceptId: "core-ict",
     section: "A", questionRef: "2021 OL Section A Q10(i)",
     stem: "The image shows a USB stick commonly used for storing photographs, videos and audio files.",
-    questionText: "What do the leters USB stand for?",
+    questionText: "What do the letters USB stand for?",
     tariffModel: {"kind":"fixed","notation":"(4+4 marks)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "USB: Universal Serial Bus.", marks: 4, openList: true },
@@ -265,7 +265,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2b-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q2(b)(i)",
-    questionText: "Outline two benefits of using light emittng diodes (LEDs) for this purpose.",
+    questionText: "Outline two benefits of using light emitting diodes (LEDs) for this purpose.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use less power, brighter, size, etc.", marks: 2, openList: true },
@@ -278,7 +278,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b2b-iii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q2(b)(iii)",
-    questionText: "Using notes and sketches, describe how the LED light source could be atached to the stand.",
+    questionText: "Using notes and sketches, describe how the LED light source could be attached to the stand.",
     tariffModel: {"kind":"fixed","notation":"(8 Marks, 2+4+2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Annotated sketch of a clip assembly or nut and bolt assembly, etc.", marks: 2, openList: true },
@@ -412,7 +412,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3c-i", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q3(c)(i)",
-    questionText: "State two advantages of using an electric bicycle in a urban settng.",
+    questionText: "State two advantages of using an electric bicycle in a urban setting.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Less time waiting in traffic, better for the environment, assisted battery power when pedalling, lower running cost compared to cars, etc.", marks: 4, openList: true },
@@ -425,7 +425,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3c-ii", topicId: "tech-core-energy", conceptId: "core-energy",
     section: "B", questionRef: "2021 OL Section B Q3(c)(ii)",
-    questionText: "It costs a consumer €1.05 to fully recharge the batery of an electric bicycle each week. Calculate the overall cost to the consumer to charge the bicycle for thirty-five days.",
+    questionText: "It costs a consumer €1.05 to fully recharge the battery of an electric bicycle each week. Calculate the overall cost to the consumer to charge the bicycle for thirty-five days.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "€1.05/7 = €0.15 per day Cost for thirty-five days: €0.15 x 35 = €5.25", marks: 2, openList: true },
@@ -438,7 +438,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3d-i", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(d)(i)",
-    stem: "1. Cuttng up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic botles",
+    stem: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
     questionText: "Explain any two of the terms: recycling, upcycling, composting.",
     tariffModel: {"kind":"questionTotal","notation":"(6 Marks, 4+2)"}, totalMarks: 4,
     rows: [
@@ -454,7 +454,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-b3d-ii", topicId: "tech-core-materials", conceptId: "core-materials",
     section: "B", questionRef: "2021 OL Section B Q3(d)(ii)",
-    stem: "1. Cuttng up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic botles",
+    stem: "1. Cutting up old jeans to make a bag 3. Melting old drink cans to make new cans 2. Breaking down vegetable kitchen waste 4. Making handbags from old plastic bottles",
     questionText: "In the case of any two processes below, state whether it is recycling, upcycling or composting.",
     tariffModel: {"kind":"fixed","notation":"(6 Marks, 4+2)"}, totalMarks: 2,
     rows: [
@@ -494,7 +494,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c1c-ii", topicId: "tech-opt-control", conceptId: "opt-control",
     section: "C", questionRef: "2021 OL Section C Q1(c)(ii)",
-    questionText: "Give one practical example of where a shutle valve could be used in industry.",
+    questionText: "Give one practical example of where a shuttle valve could be used in industry.",
     tariffModel: {"kind":"fixed","notation":"(10 Marks, 6 + 4)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "A shuttle valve can allow a machine to be operated using two switches for safety purposes, aircraft landing gear systems, etc.", marks: 4, openList: true },
@@ -589,7 +589,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Technology 2021 Ordinary Level — © State Examinations Commission.",
     id: "tech-2021-ol-c2b-iii", topicId: "tech-opt-electronics", conceptId: "opt-electronics",
     section: "C", questionRef: "2021 OL Section C Q2(b)(iii)",
-    questionText: "Redraw the circuit to include an indicator light emittng diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
+    questionText: "Redraw the circuit to include an indicator light emitting diode (LED) that will light up once the master on/off single pole single throw (SPST) switch is closed.",
     tariffModel: {"kind":"fixed","notation":"(20 Marks, 6 + 8 + 6)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "closed. 0V", marks: 6, openList: true },
