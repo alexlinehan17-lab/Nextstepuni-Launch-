@@ -137,10 +137,13 @@ describe('Business exam-topic registry', () => {
       referenceOfficialAssociations: 3075,
       referenceMockAssociations: 2437,
       referenceProviderSampleAssociations: 196,
-      matchedAssociations: 2008,
+      // 2,008 headings join an SEC paper card; 184 of them name an
+      // outgoing-course topic the directly reviewed question does not carry.
+      matchedAssociations: 1824,
+      referenceAnomalyAssociations: 184,
       sourceBlockedAssociations: 1067,
       matchedLogicalCards: 663,
-      matchedQuestionTopicLinks: 1786,
+      matchedQuestionTopicLinks: 1614,
       retainedLocalLogicalCards: 58,
     });
     expect(
@@ -157,6 +160,34 @@ describe('Business exam-topic registry', () => {
       association.resolution === 'source-blocked'
       && association.sitting === 'main'
     )).every(association => association.year < 2010)).toBe(true);
+  });
+
+  it('records every StudyClix topic the SEC review does not support, with its reason', () => {
+    const anomalies = businessEvidence.associations.filter(association => (
+      association.resolution === 'reference-anomaly'));
+    expect(anomalies).toHaveLength(184);
+    for (const association of anomalies) {
+      const target = 'target' in association ? association.target : undefined;
+      if (!target || (target.level !== 'higher' && target.level !== 'ordinary')) {
+        throw new Error(`${association.heading}: anomaly without an SEC target`);
+      }
+      const paper = topicsForPaper('business', target.year, target.level, 'ev', target.fileid);
+      const question = paper?.q.find(candidate => candidate.n === target.questionNumber);
+      expect(question, association.heading).toBeDefined();
+      const live = browseTopicIdsForQuestion(paper!, question!);
+      const key = `${association.topicId}|${association.heading}`;
+      // StudyClix's topic is not on the reviewed question; the recorded SEC
+      // topics are exactly the outgoing-course topics it does carry.
+      expect(association.course, key).toBe('old');
+      expect(live, key).not.toContain(association.topicId);
+      expect('secTopicIds' in association && association.secTopicIds, key)
+        .toEqual(live.filter(id => id.includes('-old-course-')));
+      expect(sourceReviews.questions.some(review => review.year === target.year
+        && review.level === target.level && review.paperKey === target.paperKey
+        && review.n === target.questionNumber), key).toBe(true);
+      expect('reason' in association && association.reason, key)
+        .toMatch(/^StudyClix files this \d{4} (Higher|Ordinary) heading under .+ The SEC paper and marking scheme support .+ asks “.+” Source review: .+ audited anomaly\.$/);
+    }
   });
 
   it('retains all 3,075 factual headings exactly as part-aware metadata', () => {
