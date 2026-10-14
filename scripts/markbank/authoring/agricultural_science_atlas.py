@@ -29,6 +29,16 @@ NUMBERS = {
 }
 
 
+def new_answer_map(year, fileid, scheme_fileid):
+    """A sitting with no Paper Trail answer map yet gets one in the sidecar contract: the
+    single-component scheme band spans every scheme page, as in the corpus's other maps."""
+    import fitz
+    with fitz.open(ROOT / f'paper-trail-corpus/markingschemes/{year}/{scheme_fileid}') as scheme:
+        pages = len(scheme)
+    return {'v': 1, 'paperFileid': fileid, 'schemeFileid': scheme_fileid, 'component': '000',
+            'band': [1, pages + 1], 'copyright': '© State Examinations Commission', 'q': []}
+
+
 def outputs():
     review = json.loads((ROOT / 'scripts/markbank/authored/agricultural-science-reviewed-tasks.json').read_text())
     cards = {c['id']: c for c in json.loads((ROOT / 'scripts/markbank/authored/agricultural-science.json').read_text())}
@@ -49,10 +59,7 @@ def outputs():
             key = (card['year'], fileid)
             if key not in maps:
                 path = ROOT / f'scripts/paper-trail/answers/{card["year"]}/{fileid}.json'
-                maps[key] = json.loads(path.read_text()) if path.exists() else {
-                    'v': 1, 'paperFileid': fileid, 'schemeFileid': entry['papers'][0]['scheme']['f'],
-                    'component': '', 'copyright': '© State Examinations Commission', 'q': [],
-                }
+                maps[key] = json.loads(path.read_text()) if path.exists() else new_answer_map(card['year'], fileid, entry['papers'][0]['scheme']['f'])
             if 'paperRegions' in task:
                 paper_regions, scheme_regions = task['paperRegions'], task['schemeRegions']
                 n = task['atlasNumbers'][cid]

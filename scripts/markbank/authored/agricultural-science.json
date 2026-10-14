@@ -94553,6 +94553,3899 @@
   }
  },
  {
+  "id": "agsci-2018-hl-q1a",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(a)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "livestock-unit",
+  "questionText": "(i) Explain the term livestock unit. (ii) Give the livestock unit value for: 1. A mature dairy cow 2. A mature sheep.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) Livestock unit — Amount of feed eaten by a (550 kg) mature cow (or correct number of other farm animals) or equivalent to 12 tonnes of dry matter per annum",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3). Three answers.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) For mature dairy cow — 1 LU",
+    "marks": null,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) For mature sheep — 0.14-0.2 LU",
+    "marks": null,
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 3 + 3"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(a)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(b)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0"
+  ],
+  "conceptId": "wind-pollinated-flower-diagram",
+  "questionText": "Draw a labelled diagram to show the main features of a wind pollinated flower.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Drawing to show: feathery stigma and stamens outside flower and no petals (or reduced petals)",
+    "marks": null,
+    "contextNote": "Drawing: 6, 3, 0.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "carpel/ stigma/ style/ ovary/ stamen/ anther/ filament/ bracts (or small petals)",
+    "marks": null,
+    "contextNote": "Labels: any four, 1 mark each (4(1)).",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "D 6, 3, 0 + L 4(1)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(b)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(c)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "thyroid-and-adrenal",
+  "questionText": "(i) State the location in the mammalian body of 1. The thyroid gland 2. The adrenal gland. (ii) Name one hormone secreted by each gland.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) 1. Thyroid location — Near larynx (or trachea) or in neck",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (2(3) + 2(2)). Four answers.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(i) 2. Adrenal location — On top of kidney",
+    "marks": null,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) 1. Thyroid hormone — Thyroxine or calcitonin",
+    "marks": null,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) 2. Adrenal hormone — Adrenaline or cortisone or cortisol",
+    "marks": null,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(3) + 2(2)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(c)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1d",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(d)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "food-conversion-ratio",
+  "questionText": "(i) Explain the term food conversion ratio (FCR). (ii) List any two factors that affect FCR in pigs.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) FCR — Number of kg of feed required to produce 1 kg LWG or ratio of food consumed to liveweight gained",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3). Three answers: (i) and two factors.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Factors affecting FCR in pigs — Diet/ breed/ health/ housing or temperature/ management/ age/ sex",
+    "marks": null,
+    "contextNote": "Any two.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 3 + 3"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(d)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1e",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(e)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0"
+  ],
+  "conceptId": "plant-cell-functions",
+  "questionText": "Plants are made of different cell types. Give the function of each of the following plant cell types: (i) Xylem (ii) Phloem (iii) Epidermis.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "(i) Xylem: Transport of water (or minerals) or strength or support / (ii) Phloem: Transport of (named) food or translocation / (iii) Epidermis: Protection against water loss or against infection or prevents damage or regulates gas exchange or boundary or secretes metabolic compounds or root hairs in the epidermis absorb water and minerals",
+    "marks": 10,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "(i) Xylem: Transport of water (or minerals) or strength or support",
+      "(ii) Phloem: Transport of (named) food or translocation",
+      "(iii) Epidermis: Protection against water loss or against infection or prevents damage or regulates gas exchange or boundary or secretes metabolic compounds or root hairs in the epidermis absorb water and minerals"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(e)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1f",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(f)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "gizzard-and-crop",
+  "questionText": "Describe the functions of the following parts of the avian digestive system: (i) The gizzard (ii) The crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "(i) Gizzard: Uses grit / for physical (or mechanical) digestion or muscular / (ii) Crop: Storage of food / temporarily or for later release for digestion",
+    "marks": 10,
+    "contextNote": "Any three points across the gizzard and the crop. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "(i) Gizzard: Uses grit",
+      "for physical (or mechanical) digestion or muscular",
+      "(ii) Crop: Storage of food",
+      "temporarily or for later release for digestion"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(f)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1g",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(g)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "gestation-days",
+  "questionText": "Give the length of the gestation period, in days, of (i) Pigs (ii) Sheep (iii) Cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Pig: 113 – 117 days / Sheep: 145 – 150 days / Cow: 280 – 288 days",
+    "marks": 10,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Pig: 113 – 117 days",
+      "Sheep: 145 – 150 days",
+      "Cow: 280 – 288 days"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(g)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1h",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(h)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "cow-reproductive-system-diagram",
+  "questionText": "Draw a labelled diagram of the reproductive system of the cow.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Drawing to show: Vagina and uterus and oviduct and ovary",
+    "marks": null,
+    "contextNote": "Drawing: 4, 2, 0.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Vagina/ uterus/ oviduct/ ovary/ cervix",
+    "marks": null,
+    "contextNote": "Labels: any three, 2 marks each (3(2)).",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "D 4, 2, 0 + L 3(2)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(h)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1i",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(i)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "wool-qualities",
+  "questionText": "Wool has many qualities that make it useful as a material. List any three of these qualities.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Hard-wearing / lightweight / dirt resistant / ignition resistant / absorbs moisture / mordant (or holds dye well) / (temperature) insulation / flexible",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Hard-wearing",
+      "lightweight",
+      "dirt resistant",
+      "ignition resistant",
+      "absorbs moisture",
+      "mordant (or holds dye well)",
+      "(temperature) insulation",
+      "flexible"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(i)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q1j",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2018 HL Q1(j)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "hedgerow-conservation-reasons",
+  "questionText": "Give three reasons why hedgerow conservation is encouraged in Irish agriculture.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Shelter or protect buildings / habitat or wildlife corridor / biodiversity / biosecurity / land division / increase soil (or air) temperature / aesthetic",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (4 + 3 + 3).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Shelter or protect buildings",
+      "habitat or wildlife corridor",
+      "biodiversity",
+      "biosecurity",
+      "land division",
+      "increase soil (or air) temperature",
+      "aesthetic"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      3
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q1(j)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q2ai",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q2(a)(i)",
+  "topicId": "agsci-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-0"
+  ],
+  "conceptId": "soil-profile-diagram",
+  "questionText": "Draw a labelled diagram of the soil profile of a named soil type.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Soil type — Name of soil type",
+    "marks": null,
+    "contextNote": "3 marks.",
+    "id": "r-1"
+   },
+   {
+    "kind": "criterion",
+    "verbatim": "At least three horizons which must match the named soil type",
+    "marks": null,
+    "contextNote": "Drawing: 4, 2, 0.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Any three valid labels for named soil type",
+    "marks": null,
+    "contextNote": "Labels: 3(1).",
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "3 + D 4, 2, 0 + L 3(1)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q2(a)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q2aii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q2(a)(ii)",
+  "topicId": "agsci-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-0"
+  ],
+  "conceptId": "horizon-forming-factors",
+  "questionText": "Outline the factors responsible for creating any two of the soil horizons shown.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "O horizon: waterlogging or anaerobic conditions or low pH or build-up of organic material / A horizon: activity of soil animals (or plant roots) or presence of humus (or organic matter) / B horizon: leaching of nutrients or build-up of nutrients from the A (horizon) or less organic matter (or humus) / C horizon: weathering of parent rock",
+    "marks": 6,
+    "contextNote": "Correct factors for two horizons (particular rather than general), 3 marks each (2(3)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "O horizon: waterlogging or anaerobic conditions or low pH or build-up of organic material",
+      "A horizon: activity of soil animals (or plant roots) or presence of humus (or organic matter)",
+      "B horizon: leaching of nutrients or build-up of nutrients from the A (horizon) or less organic matter (or humus)",
+      "C horizon: weathering of parent rock"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q2(a)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Draw a labelled diagram of the soil profile of a named soil type.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q2bi",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q2(b)(i)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agricultural-science-1-3"
+  ],
+  "conceptId": "soil-texture-meaning",
+  "questionText": "Explain the term soil texture.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Relative proportions of different particles in a soil or sand, silt and clay by %",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q2(b)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q2bii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q2(b)(ii)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agricultural-science-1-3"
+  ],
+  "conceptId": "comparing-texture-types",
+  "questionText": "Name any two soil texture types and compare them under the following headings: 1. Fertility 2. Temperature 3. Drainage 4. Ease of tilling.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "1. Fertility (clay / sandy / loam) — High / Low / High",
+    "marks": 4,
+    "contextNote": "Each heading 2 + 2: one mark pair for each of your two types (4(2 + 2)). The scheme tabulates clay, sandy and loam in that order.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "2. Temperature (clay / sandy / loam) — Low / High / High",
+    "marks": 4,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "3. Drainage (clay / sandy / loam) — Poor / Good / Good",
+    "marks": 4,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "4. Ease of tilling (clay / sandy / loam) — Poor / Good / Good",
+    "marks": 4,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q2(b)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q2c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q2(c)",
+  "topicId": "agsci-2-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-4",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "earthworm-activity-experiment",
+  "questionText": "Describe an experiment to show the activity of earthworms in the soil.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Wormery / layers (or sand, chalk, clay) / organic matter on top / add worms / cover / leave in a cool place / keep moist / minimum of a week / control / correct result",
+    "marks": 12,
+    "contextNote": "Any six, 2 marks each (6(2)).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Wormery",
+      "layers (or sand, chalk, clay)",
+      "organic matter on top",
+      "add worms",
+      "cover",
+      "leave in a cool place",
+      "keep moist",
+      "minimum of a week",
+      "control",
+      "correct result"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q2(c)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1ai",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (a)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "body-condition-score",
+  "questionText": "Explain the term body condition score (BCS).",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Assessment of level of fat reserves in an animal’s body or lean-to-fat ratio",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (a)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1aii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (a)(ii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "optimum-bcs",
+  "questionText": "State the optimum BCS of a dairy cow at 1. Calving 2. Mating.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "At calving — BCS 3.0 – 3.5",
+    "marks": 3,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "At mating — BCS 2.5 – 3.0",
+    "marks": 3,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (a)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1aiii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (a)(iii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "off-target-bcs",
+  "questionText": "Explain the possible consequences of an animal not being at the optimum BCS at these times.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "At calving — BCS low: small calf or reduced milk yield or metabolic diseases or BCS high: calving difficulty",
+    "marks": 3,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "At mating — BCS low: irregular heat pattern or poor conception rate or metabolic diseases",
+    "marks": 3,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (a)(iii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "State the optimum BCS of a dairy cow at 1. Calving 2. Mating.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1bi",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (b)(i)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "bacterial-diseases-dairy",
+  "questionText": "Give two examples of bacterial diseases that can affect dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "TB / brucellosis / mastitis / leptospirosis / blackleg / Johne’s disease / anthrax / bacterial pneumonia / foot rot / (bovine) conjunctivitis (or pink eye)",
+    "marks": 4,
+    "contextNote": "Any two, 2 marks each (2(2)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "TB",
+      "brucellosis",
+      "mastitis",
+      "leptospirosis",
+      "blackleg",
+      "Johne’s disease",
+      "anthrax",
+      "bacterial pneumonia",
+      "foot rot",
+      "(bovine) conjunctivitis (or pink eye)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (b)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Dairy cows can be affected by both bacterial diseases and metabolic deficiency disorders.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1bii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (b)(ii)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "deficiency-disorders-dairy",
+  "questionText": "Give two examples of deficiency disorders that can affect dairy cows.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Milk fever / grass tetany",
+    "marks": 4,
+    "contextNote": "Any two, 2 marks each (2(2)); the scheme gives these as examples.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Milk fever",
+      "grass tetany"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (b)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Dairy cows can be affected by both bacterial diseases and metabolic deficiency disorders.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1biii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (b)(iii)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "preventing-dairy-diseases",
+  "questionText": "Describe a preventative measure for each example.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "TB or Brucellosis: Closed herd or biosecurity or fencing or culling or testing / Mastitis: Hygiene or fly control or dry cow treatment or culling / Blackleg or bacterial pneumonia or leptospirosis: Vaccination or hygiene / Foot rot: Foot bath or paring / Johne’s disease: Culling or do not mix colostrum / Anthrax: Culling / Pink eye: Vaccination or fly control / Milk fever: (Dairy) ration or minerals or licks or bolus or adding minerals to water or pasture dressing or correct BCS at calving / Grass tetany: Bolus or licks or (dairy) ration or adding Mg soln. to water or avoid fresh grass and clover",
+    "marks": 8,
+    "contextNote": "Four measures to match the diseases and disorders given in (i) and (ii), 2 marks each (4(2)).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "TB or Brucellosis: Closed herd or biosecurity or fencing or culling or testing",
+      "Mastitis: Hygiene or fly control or dry cow treatment or culling",
+      "Blackleg or bacterial pneumonia or leptospirosis: Vaccination or hygiene",
+      "Foot rot: Foot bath or paring",
+      "Johne’s disease: Culling or do not mix colostrum",
+      "Anthrax: Culling",
+      "Pink eye: Vaccination or fly control",
+      "Milk fever: (Dairy) ration or minerals or licks or bolus or adding minerals to water or pasture dressing or correct BCS at calving",
+      "Grass tetany: Bolus or licks or (dairy) ration or adding Mg soln. to water or avoid fresh grass and clover"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (b)(iii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Dairy cows can be affected by both bacterial diseases and metabolic deficiency disorders.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1ci",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (c)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "beef-calf-diet-changes",
+  "questionText": "Describe the changes in the diet of a beef calf, from birth to weaning.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Colostrum [compulsory]",
+    "marks": 3,
+    "contextNote": "Colostrum plus any other three, all in correct order, 3 marks each (4(3)).",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "milk / milk replacer / concentrates / hay / grass",
+    "marks": 9,
+    "contextNote": "Any other three, in the correct order after colostrum.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "milk",
+      "milk replacer",
+      "concentrates",
+      "hay",
+      "grass"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (c)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o1cii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option One (c)(ii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "rumen-development",
+  "questionText": "Explain how these changes affect the development of the ruminant stomach.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Hay or concentrate",
+    "marks": 2,
+    "contextNote": "2(2).",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "develops rumen flora or scratch factor",
+    "marks": 2,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option One (c)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Describe the changes in the diet of a beef calf, from birth to weaning.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o2a",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option Two (a)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "potato-blight-life-cycle",
+  "questionText": "Describe with the aid of a labelled diagram the life cycle of a named fungus that affects the potato plant.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Name of fungus — Phytophthora infestans or potato blight (fungus)",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Drawing of life cycle to feature: A leaf TS with a sporangiophore emerging from a stoma, and at least one labelled hypha or haustorium or sporangium or zoospore",
+    "marks": 4,
+    "contextNote": "4 or 0.",
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Haustoria absorb food (from cells) / sporangiophores grow out of stomata / sporangia break off / (sporangia become) airborne / onto soil / (sporangia) germinate in humid conditions (or develop into conidium if dry) / produce zoospores / infect tubers or growing plants",
+    "marks": 10,
+    "contextNote": "Description: any five, 2 marks each (5(2)).",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "Haustoria absorb food (from cells)",
+      "sporangiophores grow out of stomata",
+      "sporangia break off",
+      "(sporangia become) airborne",
+      "onto soil",
+      "(sporangia) germinate in humid conditions (or develop into conidium if dry)",
+      "produce zoospores",
+      "infect tubers or growing plants"
+     ]
+    },
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option Two (a)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o2b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option Two (b)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-3",
+   "agricultural-science-2-5"
+  ],
+  "conceptId": "named-cereal-cultivation",
+  "questionText": "Describe the cultivation of a named cereal under the following headings: (i) Soil requirements (ii) Climate (iii) Harvest date (iv) Yield.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Named cereal — Barley",
+    "marks": 2,
+    "contextNote": "Name 2.",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "pH 6 – 6.5 / fertile / sandy loam or free draining / brown earth or grey-brown podzolic",
+    "marks": 4,
+    "contextNote": "(i) Soil requirements, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "pH 6 – 6.5",
+      "fertile",
+      "sandy loam or free draining",
+      "brown earth or grey-brown podzolic"
+     ]
+    },
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Warm / moist / dry or sunshine",
+    "marks": 4,
+    "contextNote": "(ii) Climate, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Warm",
+      "moist",
+      "dry or sunshine"
+     ]
+    },
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(iii) Harvest date — July - September",
+    "marks": 3,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(iv) Yield — 6 – 8 t/ ha for spring or 8 – 9 t/ ha for winter",
+    "marks": 3,
+    "id": "r-5"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option Two (b)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "answerVariants": [
+   {
+    "id": "barley",
+    "label": "Barley",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Named cereal — Barley",
+      "marks": 2,
+      "contextNote": "Name 2.",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "pH 6 – 6.5 / fertile / sandy loam or free draining / brown earth or grey-brown podzolic",
+      "marks": 4,
+      "contextNote": "(i) Soil requirements, 2(2).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "pH 6 – 6.5",
+        "fertile",
+        "sandy loam or free draining",
+        "brown earth or grey-brown podzolic"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "Warm / moist / dry or sunshine",
+      "marks": 4,
+      "contextNote": "(ii) Climate, 2(2).",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "Warm",
+        "moist",
+        "dry or sunshine"
+       ]
+      },
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iii) Harvest date — July - September",
+      "marks": 3,
+      "id": "r-4"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iv) Yield — 6 – 8 t/ ha for spring or 8 – 9 t/ ha for winter",
+      "marks": 3,
+      "id": "r-5"
+     }
+    ]
+   },
+   {
+    "id": "wheat",
+    "label": "Wheat",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Named cereal — Wheat",
+      "marks": 2,
+      "contextNote": "Name 2.",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "pH 5 – 7 / soil as for barley",
+      "marks": 4,
+      "contextNote": "(i) Soil requirements, 2(2). The scheme gives barley's soil as fertile/ sandy loam or free draining/ brown earth or grey-brown podzolic.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "pH 5 – 7",
+        "soil as for barley"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(ii) Climate — As for barley",
+      "marks": 4,
+      "contextNote": "2(2). The scheme gives barley's climate: warm/ moist/ dry or sunshine.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iii) Harvest date — July - Sept.",
+      "marks": 3,
+      "id": "r-4"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iv) Yield — 7 – 8 t/ ha for spring or 9 – 11 t/ ha for winter",
+      "marks": 3,
+      "id": "r-5"
+     }
+    ]
+   },
+   {
+    "id": "oats",
+    "label": "Oats",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Named cereal — Oats",
+      "marks": 2,
+      "contextNote": "Name 2.",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "pH 5.5 / soil as for barley",
+      "marks": 4,
+      "contextNote": "(i) Soil requirements, 2(2). The scheme gives barley's soil as fertile/ sandy loam or free draining/ brown earth or grey-brown podzolic.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "pH 5.5",
+        "soil as for barley"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(ii) Climate — As for barley",
+      "marks": 4,
+      "contextNote": "2(2). The scheme gives barley's climate: warm/ moist/ dry or sunshine.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iii) Harvest date — July - Sept.",
+      "marks": 3,
+      "id": "r-4"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iv) Yield — 6 – 7 t/ ha for spring or 7 – 8 t/ ha for winter",
+      "marks": 3,
+      "id": "r-5"
+     }
+    ]
+   },
+   {
+    "id": "maize",
+    "label": "Maize",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Named cereal — Maize",
+      "marks": 2,
+      "contextNote": "Name 2.",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "pH 6.6 – 7 / soil as for barley",
+      "marks": 4,
+      "contextNote": "(i) Soil requirements, 2(2). The scheme gives barley's soil as fertile/ sandy loam or free draining/ brown earth or grey-brown podzolic.",
+      "group": {
+       "claimMax": 2,
+       "perOption": 2,
+       "options": [
+        "pH 6.6 – 7",
+        "soil as for barley"
+       ]
+      },
+      "id": "r-2"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(ii) Climate — As for barley",
+      "marks": 4,
+      "contextNote": "2(2). The scheme gives barley's climate: warm/ moist/ dry or sunshine.",
+      "id": "r-3"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iii) Harvest date — July - Sept.",
+      "marks": 3,
+      "id": "r-4"
+     },
+     {
+      "kind": "point",
+      "verbatim": "(iv) Yield — 15 – 20 t/ ha of dry matter",
+      "marks": 3,
+      "id": "r-5"
+     }
+    ]
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o2ci",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option Two (c)(i)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "indirect-weed-control",
+  "questionText": "Explain what is meant by indirect control of weeds in crops.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Any method of control that is effective despite not being targeted at the affected species (accept a method that does not use chemicals)",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option Two (c)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q3o2cii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q3 Option Two (c)(ii)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "indirect-weed-control-examples",
+  "questionText": "Give four examples of such indirect control.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Crop rotation / growth encouragement / stubble cleaning / aggressive crop varieties / early harvest / ploughing / use certified seeds / catch crop / earthing up",
+    "marks": 12,
+    "contextNote": "Any four, 3 marks each (4(3)).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Crop rotation",
+      "growth encouragement",
+      "stubble cleaning",
+      "aggressive crop varieties",
+      "early harvest",
+      "ploughing",
+      "use certified seeds",
+      "catch crop",
+      "earthing up"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q3 Option Two (c)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain what is meant by indirect control of weeds in crops.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q4a",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q4(a)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "grass-sugar-percentage",
+  "questionText": "Describe a laboratory or field method to determine the percentage (%) sugar in a sample of grass.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Dry grass sample / chop / freezer bag / roll or remove air / freeze / squeeze or collect sap / refractometer / read % from scale / repeat (to establish statistical significance)",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6(4)).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Dry grass sample",
+      "chop",
+      "freezer bag",
+      "roll or remove air",
+      "freeze",
+      "squeeze or collect sap",
+      "refractometer",
+      "read % from scale",
+      "repeat (to establish statistical significance)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q4(a)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q4b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q4(b)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "shading-and-crop-growth",
+  "questionText": "Describe a laboratory or field method to show the effect of shading on crop growth.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "1 m2 (plots or other measured areas) or transect(s) / one shaded and one unshaded / sow crop seeds or established crop / similar (or named) conditions / leave for a time appropriate for crop / harvest or measure / compare yields (or growth differences) / correct result / repeat (to establish statistical significance)",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6(4)).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "1 m2 (plots or other measured areas) or transect(s)",
+      "one shaded and one unshaded",
+      "sow crop seeds or established crop",
+      "similar (or named) conditions",
+      "leave for a time appropriate for crop",
+      "harvest or measure",
+      "compare yields (or growth differences)",
+      "correct result",
+      "repeat (to establish statistical significance)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q4(b)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q4c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q4(c)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "named-enzyme-action",
+  "questionText": "Describe a laboratory or field method to show the action of a named enzyme.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Amylase [compulsory]",
+    "marks": 4,
+    "contextNote": "Enzyme name plus any other five, 4 marks each (6(4)).",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "two test tubes / add equal amounts of starch solution (to each) / add amylase to one / other is control / waterbath at 37 °C / at least 5 min. / add iodine / negative for starch / Benedict’s or Fehling’s / positive (or brick red) for reducing sugar / repeat (to establish statistical significance)",
+    "marks": 20,
+    "contextNote": "Amylase: any five other points.",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "two test tubes",
+      "add equal amounts of starch solution (to each)",
+      "add amylase to one",
+      "other is control",
+      "waterbath at 37 °C",
+      "at least 5 min.",
+      "add iodine",
+      "negative for starch",
+      "Benedict’s or Fehling’s",
+      "positive (or brick red) for reducing sugar",
+      "repeat (to establish statistical significance)"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q4(c)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method.",
+  "answerVariants": [
+   {
+    "id": "amylase",
+    "label": "Amylase",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Amylase [compulsory]",
+      "marks": 4,
+      "contextNote": "Enzyme name plus any other five, 4 marks each (6(4)).",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "two test tubes / add equal amounts of starch solution (to each) / add amylase to one / other is control / waterbath at 37 °C / at least 5 min. / add iodine / negative for starch / Benedict’s or Fehling’s / positive (or brick red) for reducing sugar / repeat (to establish statistical significance)",
+      "marks": 20,
+      "contextNote": "Amylase: any five other points.",
+      "group": {
+       "claimMax": 5,
+       "perOption": 4,
+       "options": [
+        "two test tubes",
+        "add equal amounts of starch solution (to each)",
+        "add amylase to one",
+        "other is control",
+        "waterbath at 37 °C",
+        "at least 5 min.",
+        "add iodine",
+        "negative for starch",
+        "Benedict’s or Fehling’s",
+        "positive (or brick red) for reducing sugar",
+        "repeat (to establish statistical significance)"
+       ]
+      },
+      "id": "r-2"
+     }
+    ]
+   },
+   {
+    "id": "catalase",
+    "label": "Catalase",
+    "rows": [
+     {
+      "kind": "point",
+      "verbatim": "Catalase [compulsory]",
+      "marks": 4,
+      "contextNote": "Enzyme name plus any other five, 4 marks each (6(4)).",
+      "id": "r-1"
+     },
+     {
+      "kind": "anyN",
+      "verbatim": "fresh liver sample (or celery or potato or other suitable source) / one cubed, one chopped, one boiled / add a few drops of washing-up liquid to each / use buffer solution / add equal amounts of hydrogen peroxide / compare number of bubbles produced (or height of foam) / catalase breaks down hydrogen peroxide / high temperature denatures catalase / repeat (to establish statistical significance)",
+      "marks": 20,
+      "contextNote": "Catalase: any five other points.",
+      "group": {
+       "claimMax": 5,
+       "perOption": 4,
+       "options": [
+        "fresh liver sample (or celery or potato or other suitable source)",
+        "one cubed, one chopped, one boiled",
+        "add a few drops of washing-up liquid to each",
+        "use buffer solution",
+        "add equal amounts of hydrogen peroxide",
+        "compare number of bubbles produced (or height of foam)",
+        "catalase breaks down hydrogen peroxide",
+        "high temperature denatures catalase",
+        "repeat (to establish statistical significance)"
+       ]
+      },
+      "id": "r-2"
+     }
+    ]
+   }
+  ],
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q4d",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q4(d)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "botanical-composition",
+  "questionText": "Describe a laboratory or field method to compare the botanical composition of an old pasture and a newly sown pasture.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Quadrat / random / record plants / repeat (x 10) / repeat for other pasture / identification key / frequency / compare / sample results",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6(4)).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Quadrat",
+      "random",
+      "record plants",
+      "repeat (x 10)",
+      "repeat for other pasture",
+      "identification key",
+      "frequency",
+      "compare",
+      "sample results"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q4(d)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q5a",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q5(a)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "hill-versus-lowland-sheep",
+  "questionText": "Compare mountain/ hill sheep production with lowland sheep production.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Extensive (or low) stocking rate / Intensive (or high) stocking rate / Low production / Higher production / Rough grazing / Better grazing / High mortality / Lower mortality / Single lambs / More than one lamb / Breed example / Breed example / Low labour / High labour",
+    "marks": 16,
+    "contextNote": "Any four comparisons, each 2 + 2: the mountain/ hill point and its lowland counterpart (4(2 + 2)).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Extensive (or low) stocking rate / Intensive (or high) stocking rate",
+      "Low production / Higher production",
+      "Rough grazing / Better grazing",
+      "High mortality / Lower mortality",
+      "Single lambs / More than one lamb",
+      "Breed example / Breed example",
+      "Low labour / High labour"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q5(a)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q5b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q5(b)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "lambing-management",
+  "questionText": "Describe the management practices used by sheep farmers at lambing time.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Housing / feeding concentrates / supervision (or assistance) / lambing pens / colostrum / fostering / infra-red lamp / iodine on navel cord or other point of disease control (or hygiene)",
+    "marks": 16,
+    "contextNote": "Any four, 4 marks each (4(4)).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Housing",
+      "feeding concentrates",
+      "supervision (or assistance)",
+      "lambing pens",
+      "colostrum",
+      "fostering",
+      "infra-red lamp",
+      "iodine on navel cord or other point of disease control (or hygiene)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q5(b)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q5c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q5(c)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5",
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "sheep-welfare-scheme",
+  "questionText": "Many Irish sheep farmers now take part in the Sheep Welfare Scheme. Three of the features of this scheme are lameness control, flystrike control and scanning of in-lamb ewes. For each of the above explain (i) How it is carried out (ii) The benefit to overall production in the flock.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) Methods, lameness control — Regular checking or footbath or antibiotic spray or paring hooves or vaccination",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answers earn the higher award (4(3) + 2(2)). Six answers: a method and a benefit for each feature.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(i) Methods, flystrike control — Dipping or pour-on or shearing or dagging or tail docking",
+    "marks": null,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(i) Methods, scanning in-lamb ewes — Ultrasound scanner or scanner placed on abdomen",
+    "marks": null,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Benefits, lameness control — Increased production levels or more constant grazing",
+    "marks": null,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Benefits, flystrike control — Increased production or more constant grazing or lower mortality rates",
+    "marks": null,
+    "id": "r-5"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Benefits, scanning in-lamb ewes — Identify multiple births or allow for correct feeding levels or helps to prevent twin-lamb disease or identify barren ewes",
+    "marks": null,
+    "id": "r-6"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(3) + 2(2)"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q5(c)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6ai",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(a)(i)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "reseeding-methods",
+  "questionText": "Describe any two commonly used methods of reseeding grassland.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Direct sowing / Stitching in / Undersowing / Direct drilling / Slurry seeding",
+    "marks": 4,
+    "contextNote": "Any two method names, 2 marks each (2(2)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Direct sowing",
+      "Stitching in",
+      "Undersowing",
+      "Direct drilling",
+      "Slurry seeding"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Direct sowing: total herbicide applied/ ploughed/ fine seed bed/ seeds sown by drill or broadcast/ chain harrow/ fertilise / Stitching in: old grassland not killed (or not checked back)/ slit made in land/ grass seeds sown by drill/ fertilise / Undersowing: land is ploughed (or tilled)/ grass seeds sown with tillage crop (or nurse crop)/ nurse crop harvested/ grassland establishes / Direct drilling: grass killed off/ fertiliser and slug pellets drilled in with grass seed/ used in soil subject to poaching (or shallow or stony soils) / Slurry seeding: seeds drilled into ground/ slurry is applied during or after sowing/ successful with adequate rainfall",
+    "marks": 8,
+    "contextNote": "Matching descriptions 2(2 + 2): two points, 2 marks each, describing each of your two methods.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Direct sowing: total herbicide applied/ ploughed/ fine seed bed/ seeds sown by drill or broadcast/ chain harrow/ fertilise",
+      "Stitching in: old grassland not killed (or not checked back)/ slit made in land/ grass seeds sown by drill/ fertilise",
+      "Undersowing: land is ploughed (or tilled)/ grass seeds sown with tillage crop (or nurse crop)/ nurse crop harvested/ grassland establishes",
+      "Direct drilling: grass killed off/ fertiliser and slug pellets drilled in with grass seed/ used in soil subject to poaching (or shallow or stony soils)",
+      "Slurry seeding: seeds drilled into ground/ slurry is applied during or after sowing/ successful with adequate rainfall"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(a)(i)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6aii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(a)(ii)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "grass-establishment",
+  "questionText": "Explain the term establishment in the context of newly-sown grass.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Progression from emerged seedlings to thick grass sward",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(a)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Describe any two commonly used methods of reseeding grassland.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6aiii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(a)(iii)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "successful-establishment",
+  "questionText": "Describe two practices that contribute to successful establishment.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Tillering / grazing with light stock or topping or rolling / manure (or fertiliser) application / weed control / use certified seed / use productive (or named) grass species",
+    "marks": 4,
+    "contextNote": "Any two, 2 marks each (2(2)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Tillering",
+      "grazing with light stock or topping or rolling",
+      "manure (or fertiliser) application",
+      "weed control",
+      "use certified seed",
+      "use productive (or named) grass species"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(a)(iii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Describe any two commonly used methods of reseeding grassland.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6bi",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(b)(i)",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-2-1"
+  ],
+  "conceptId": "prg-versus-irg",
+  "questionText": "Compare features of perennial ryegrass and Italian ryegrass that contribute to their productivity.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Tillers vigorously / Tillers less vigorously / Aggressive / Less aggressive / Persistent / Less persistent / Fast-growing / Faster than PRG / Long growing season / Longer growing season",
+    "marks": 12,
+    "contextNote": "Any three comparisons, each 2 + 2: the PRG feature and the IRG feature (3(2 + 2)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Tillers vigorously / Tillers less vigorously",
+      "Aggressive / Less aggressive",
+      "Persistent / Less persistent",
+      "Fast-growing / Faster than PRG",
+      "Long growing season / Longer growing season"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(b)(i)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Perennial ryegrass (PRG) and Italian ryegrass (IRG) are commonly sown in Irish grassland.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6bii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(b)(ii)",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "hybrid-grasses",
+  "questionText": "Explain the term hybrid grasses and suggest why they might be used.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "What are they — Result of crossing of different species e.g. PRG and IRG",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Why use them — Hybrid vigour or best qualities of crossed species combined",
+    "marks": 2,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(b)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Perennial ryegrass (PRG) and Italian ryegrass (IRG) are commonly sown in Irish grassland.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6ci",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(c)(i)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5",
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "grassland-parasite-control",
+  "questionText": "Explain how improved grassland management may prevent this happening.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Rotational grazing (or mixed grazing or leader-follower grazing) disturbs parasite life cycle / reseeding disturbs parasite lifecycle / scrub removal (or topping) removes parasite habitat / draining (or fencing off) wet land disturbs the life cycle of the liver fluke / liming disturbs life cycle of liver fluke",
+    "marks": 6,
+    "contextNote": "Any two, 3 marks each (2(3)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Rotational grazing (or mixed grazing or leader-follower grazing) disturbs parasite life cycle",
+      "reseeding disturbs parasite lifecycle",
+      "scrub removal (or topping) removes parasite habitat",
+      "draining (or fencing off) wet land disturbs the life cycle of the liver fluke",
+      "liming disturbs life cycle of liver fluke"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(c)(i)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Poor grassland management can contribute to an increase in the number of parasites that affect cattle.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q6cii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q6(c)(ii)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "cattle-parasites",
+  "questionText": "Name two such parasites.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Stomach worms / lung worms / ticks / liver fluke",
+    "marks": 6,
+    "contextNote": "Any two, 3 marks each (2(3)).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Stomach worms",
+      "lung worms",
+      "ticks",
+      "liver fluke"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q6(c)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Poor grassland management can contribute to an increase in the number of parasites that affect cattle.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7ai",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(a)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "polyploidy",
+  "questionText": "Explain the concept and give an appropriate example: Polyploidy.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Explain — (Cells with) more than two sets of chromosomes (or 3n or higher)",
+    "marks": 3,
+    "contextNote": "3 + 2.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Example — Wheat or strawberry plants or grasses (or named grasses) or beet or endosperm (tissue) or 3n (or higher)",
+    "marks": 2,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(a)(i)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7aii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(a)(ii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "freemartin",
+  "questionText": "Explain the concept and give an appropriate example: Freemartin condition.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Explain — Infertility in some female animals with a male twin",
+    "marks": 3,
+    "contextNote": "3 + 2.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Example — Calves",
+    "marks": 2,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(a)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7aiii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(a)(iii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "micropropagation",
+  "questionText": "Explain the concept and give an appropriate example: Micropropagation.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Explain — Plant tissue grown to produce clone(s) (or to produce plants identical to the parent)",
+    "marks": 3,
+    "contextNote": "3 + 2.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Example — Seed potato propagation",
+    "marks": 2,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 5,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(a)(iii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain each of the following agriculturally relevant concepts in genetics and give an appropriate example in each case.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(b)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "drosophila-dihybrid-cross",
+  "questionText": "Outline the details of the cross between two flies, heterozygous for both conditions.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Parental genotype — GgNn",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Gamete genotypes, across and down — GN Gn gN gn",
+    "marks": 4,
+    "contextNote": "2 or 0 across, 2 or 0 down.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Offspring genotypes grid",
+    "marks": 4,
+    "contextNote": "4 or 0: the grid gives GGNN, GGNn, GgNN, GgNn, GGnn, Ggnn, ggNN, ggNn and ggnn across its sixteen boxes.",
+    "id": "r-3"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Grey colour, normal antennae / Grey colour, twisted antennae / Ebony colour, normal antennae / Ebony colour, twisted antennae",
+    "marks": 4,
+    "contextNote": "Offspring phenotypes, 4(1).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Grey colour, normal antennae",
+      "Grey colour, twisted antennae",
+      "Ebony colour, normal antennae",
+      "Ebony colour, twisted antennae"
+     ]
+    },
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Matching ratio [2 = correct ratio not matched to phenotypes] — Grey colour, normal antennae 9; Grey colour, twisted antennae 3; Ebony colour, normal antennae 3; Ebony colour, twisted antennae 1",
+    "marks": 4,
+    "contextNote": "Matching ratio 4, 2, 0: 4 when the ratio is matched to the phenotypes, 2 for a correct ratio not matched to them. The scheme allows correct fractions or decimals or percentages in place of 9, 3, 3, 1.",
+    "id": "r-5"
+   }
+  ],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(b)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Drosophila melanogaster is a species of fruit fly commonly used in genetic research. The normal body colour of such flies is grey (GG). A recessive ebony body (gg) is also possible. The flies’ antennae can be normal (NN), or twisted (nn), which is a recessive condition.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7ci",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(c)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "embryo-transfer",
+  "questionText": "Explain what is meant by embryo transfer in farm animals.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Embryos from one (or donor) animal",
+    "marks": 3,
+    "contextNote": "2(3).",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "implanted into surrogate (or other animal)",
+    "marks": 3,
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(c)(i)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q7cii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q7(c)(ii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "embryo-transfer-benefits",
+  "questionText": "Give three benefits of embryo transfer.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "More offspring from superior (stock) / genetic improvement / produces replacement stock / reduces pregnancy stress on superior animal / allows import and export of embryos / (allows) beef (production) in dairy enterprise / decreases time for genetic improvement",
+    "marks": 9,
+    "contextNote": "Any three, 3 marks each (3(3)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "More offspring from superior (stock)",
+      "genetic improvement",
+      "produces replacement stock",
+      "reduces pregnancy stress on superior animal",
+      "allows import and export of embryos",
+      "(allows) beef (production) in dairy enterprise",
+      "decreases time for genetic improvement"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 9,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q7(c)(ii)",
+   "pages": [
+    6
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain what is meant by embryo transfer in farm animals.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q8ai",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q8(a)(i)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "grass-to-silage-processes",
+  "questionText": "Describe the main processes at work during the conversion of grass to silage.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Anaerobic conditions / Lactobacillus species / fermentation / carbohydrates in grass / converted to (weak) acids / lowers pH / kills bacteria / grass preserved",
+    "marks": 12,
+    "contextNote": "Any four, 3 marks each (4(3)).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Anaerobic conditions",
+      "Lactobacillus species",
+      "fermentation",
+      "carbohydrates in grass",
+      "converted to (weak) acids",
+      "lowers pH",
+      "kills bacteria",
+      "grass preserved"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q8(a)(i)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q8aii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q8(a)(ii)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "silage-steps-and-processes",
+  "questionText": "Relate three practical steps in the making of good quality silage to the processes above.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Cut grass when dry to have increased carbohydrate in grass / cut at correct heading-out stage to encourage lactic acid (or weak acid) production / cut in the afternoon to take advantage of maximum photosynthesis (or to increase carbohydrate) / double (or precision) chopping (of grass) to increase surface area (or for greater bacterial access (or activity) or to release more sugars) / roll well to expel air (or to provide anaerobic conditions) / seal tightly to exclude air (or to provide anaerobic conditions) / additives to increase carbohydrate / wilting to increase carbohydrate concentration",
+    "marks": 12,
+    "contextNote": "Any three, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Cut grass when dry to have increased carbohydrate in grass",
+      "cut at correct heading-out stage to encourage lactic acid (or weak acid) production",
+      "cut in the afternoon to take advantage of maximum photosynthesis (or to increase carbohydrate)",
+      "double (or precision) chopping (of grass) to increase surface area (or for greater bacterial access (or activity) or to release more sugars)",
+      "roll well to expel air (or to provide anaerobic conditions)",
+      "seal tightly to exclude air (or to provide anaerobic conditions)",
+      "additives to increase carbohydrate",
+      "wilting to increase carbohydrate concentration"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q8(a)(ii)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q8bi",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q8(b)(i)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6",
+   "agricultural-science-2-0"
+  ],
+  "conceptId": "npk-functions-and-deficiencies",
+  "questionText": "In the case of each element describe 1. Its function in the plant 2. A deficiency symptom.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "N: Function — Chlorophyll or protein or leafy growth",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "N: Deficiency symptom — Slow growth or low yield or pale green colour or yellowing of leaves",
+    "marks": 2,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "P: Function — Root growth or reproduction or flower or seed formation",
+    "marks": 2,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "P: Deficiency symptom — Stunted growth or low yield or blue colour on leaves or lack of flowers",
+    "marks": 2,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "K: Function — Protein or translocation or disease resistance or seed (or fruit) formation",
+    "marks": 2,
+    "id": "r-5"
+   },
+   {
+    "kind": "point",
+    "verbatim": "K: Deficiency symptom — Reduced yield or poor growth or scorching of leaves or lodging or poor root development",
+    "marks": 2,
+    "id": "r-6"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q8(b)(i)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Three of the major elements needed for good plant growth are nitrogen (N), phosphorus (P), and potassium (K).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q8bii",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q8(b)(ii)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "deficiency-experiment",
+  "questionText": "Describe a laboratory experiment to show the effect of the deficiency of a particular element in a plant.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Sterilise test tubes or containers / seedlings in two tubes / tablet minus nutrient / tablet complete / aeration / similar conditions / cover to prevent algae / leave for a minimum of two weeks / measure or compare / correct result",
+    "marks": 12,
+    "contextNote": "Any six, 2 marks each (6(2)).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 2,
+     "options": [
+      "Sterilise test tubes or containers",
+      "seedlings in two tubes",
+      "tablet minus nutrient",
+      "tablet complete",
+      "aeration",
+      "similar conditions",
+      "cover to prevent algae",
+      "leave for a minimum of two weeks",
+      "measure or compare",
+      "correct result"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q8(b)(ii)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Three of the major elements needed for good plant growth are nitrogen (N), phosphorus (P), and potassium (K).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q8c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q8(c)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-2-4",
+   "agricultural-science-1-0"
+  ],
+  "conceptId": "distinguishing-paired-terms",
+  "questionText": "Distinguish clearly between the members of any three of the following pairs of terms: (i) Zero grazing and strip grazing (ii) Contact fungicides and systemic fungicides (iii) First early potatoes and maincrop potatoes (iv) Abiotic factors and edaphic factors.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "animals are indoors or enclosed / grass is cut to be brought in for feed",
+    "marks": 4,
+    "contextNote": "(i) Zero grazing: two points, 2(2). Any three pairs: both members of each, 2(2) per member.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "animals are indoors or enclosed",
+      "grass is cut to be brought in for feed"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Allowing animals access a fresh strip of grass or forage crop daily / moveable fence",
+    "marks": 4,
+    "contextNote": "(i) Strip grazing: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Allowing animals access a fresh strip of grass or forage crop daily",
+      "moveable fence"
+     ]
+    },
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Kill fungi they touch / fast acting / more coverage needed",
+    "marks": 4,
+    "contextNote": "(ii) Contact fungicides: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Kill fungi they touch",
+      "fast acting",
+      "more coverage needed"
+     ]
+    },
+    "id": "r-3"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Absorbed into plant / translocated to all parts / slow acting / less coverage needed",
+    "marks": 4,
+    "contextNote": "(ii) Systemic fungicides: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Absorbed into plant",
+      "translocated to all parts",
+      "slow acting",
+      "less coverage needed"
+     ]
+    },
+    "id": "r-4"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Harvested immature in June / sown in early spring / low yield / sprouted / grown in coastal regions (or under plastic)",
+    "marks": 4,
+    "contextNote": "(iii) First early potatoes: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Harvested immature in June",
+      "sown in early spring",
+      "low yield",
+      "sprouted",
+      "grown in coastal regions (or under plastic)"
+     ]
+    },
+    "id": "r-5"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Sown in late spring / harvested fully mature in autumn / high yield",
+    "marks": 4,
+    "contextNote": "(iii) Maincrop potatoes: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Sown in late spring",
+      "harvested fully mature in autumn",
+      "high yield"
+     ]
+    },
+    "id": "r-6"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Non- living factors / in a habitat",
+    "marks": 4,
+    "contextNote": "(iv) Abiotic factors: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Non- living factors",
+      "in a habitat"
+     ]
+    },
+    "id": "r-7"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Soil factors / in a habitat",
+    "marks": 4,
+    "contextNote": "(iv) Edaphic factors: two points, 2(2).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Soil factors",
+      "in a habitat"
+     ]
+    },
+    "id": "r-8"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "answer": 6,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q8(c)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q9a",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q9(a)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "trailing-shoe",
+  "questionText": "Give a scientific explanation for: Use of a trailing shoe in slurry spreading.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Slurry in narrow bands on surface / reduces N loss to atmosphere / less smell / environmentally friendly (or complies with farm schemes) / reduces volatilisation / early return to grazing",
+    "marks": 12,
+    "contextNote": "Any three points, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Slurry in narrow bands on surface",
+      "reduces N loss to atmosphere",
+      "less smell",
+      "environmentally friendly (or complies with farm schemes)",
+      "reduces volatilisation",
+      "early return to grazing"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q9(a)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q9b",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q9(b)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "thinning-forest-trees",
+  "questionText": "Give a scientific explanation for: Trees in a forest plantation are thinned at various time intervals.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Poorest (or diseased or damaged) trees removed / reduces competition / remaining trees grow faster / improves tree quality / improves size of trees / income from thinnings",
+    "marks": 12,
+    "contextNote": "Any three points, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Poorest (or diseased or damaged) trees removed",
+      "reduces competition",
+      "remaining trees grow faster",
+      "improves tree quality",
+      "improves size of trees",
+      "income from thinnings"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q9(b)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q9c",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q9(c)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "summer-algal-bloom",
+  "questionText": "Give a scientific explanation for: Algal bloom in waterways following rainfall in summer.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Eutrophication (or nutrient enrichment) / run-off (or leaching) / slurry (or silage effluent or fertiliser) / rivers low / warm water",
+    "marks": 12,
+    "contextNote": "Any three points, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Eutrophication (or nutrient enrichment)",
+      "run-off (or leaching)",
+      "slurry (or silage effluent or fertiliser)",
+      "rivers low",
+      "warm water"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q9(c)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q9d",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q9(d)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "farrowing-crate",
+  "questionText": "Give a scientific explanation for: Use of a farrowing crate in pig production.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Restricts sow movement / prevents crushing of bonhams / ease of suckling / bonhams can access creep area or higher temperature / better survival rates",
+    "marks": 12,
+    "contextNote": "Any three points, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Restricts sow movement",
+      "prevents crushing of bonhams",
+      "ease of suckling",
+      "bonhams can access creep area or higher temperature",
+      "better survival rates"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q9(d)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2018-hl-q9e",
+  "subjectId": "agricultural-science",
+  "year": 2018,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2018 HL Q9(e)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-5",
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "rushes-on-gley",
+  "questionText": "Give a scientific explanation for: Growth of rushes in grassland over gley soils.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Impeded drainage / high water table / rushes grow well in poorly-drained land / temporary inaccessibility of land for spraying (or for topping) / cold soil means less competition from other plants",
+    "marks": 12,
+    "contextNote": "Any three points, 4 marks each (3(4)).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Impeded drainage",
+      "high water table",
+      "rushes grow well in poorly-drained land",
+      "temporary inaccessibility of land for spraying (or for topping)",
+      "cold soil means less competition from other plants"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2018 Higher — Q9(e)",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Agricultural Science 2018 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
   "id": "agsci-2025-hl-q2a",
   "topicId": "agsci-3-2",
   "conceptId": "plant-lifecycles",

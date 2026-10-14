@@ -274,7 +274,7 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2019, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024ALP000IV.pdf", "b": 833247}, "scheme": {"f": "LC024ALP000IV.pdf", "b": 512014}, "answers": 1}]},
     {"year": 2019, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024GLP000EV.pdf", "b": 4314977}, "scheme": {"f": "LC024GLP000EV.pdf", "b": 400705}, "answers": 1}]},
     {"year": 2019, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024GLP000IV.pdf", "b": 4213396}, "scheme": {"f": "LC024GLP000IV.pdf", "b": 502528}, "answers": 1}]},
-    {"year": 2018, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024ALP000EV.pdf", "b": 250686}, "scheme": {"f": "LC024ALP000EV.pdf", "b": 679705}}]},
+    {"year": 2018, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024ALP000EV.pdf", "b": 250686}, "scheme": {"f": "LC024ALP000EV.pdf", "b": 679705}, "answers": 1}]},
     {"year": 2018, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024ALP000IV.pdf", "b": 266355}, "scheme": {"f": "LC024ALP000IV.pdf", "b": 551691}, "answers": 1}]},
     {"year": 2018, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024GLP000EV.pdf", "b": 1101314}, "scheme": {"f": "LC024GLP000EV.pdf", "b": 716451}, "answers": 1}]},
     {"year": 2018, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC024GLP000IV.pdf", "b": 1070203}, "scheme": {"f": "LC024GLP000IV.pdf", "b": 588263}, "answers": 1}]},

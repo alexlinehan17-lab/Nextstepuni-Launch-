@@ -2142,86 +2142,97 @@
         "sha256": "8872670e2cb5e7a56f3894429919359a95db6f9eb34acd36f475418d6c8937de",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 57,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "61c124a2fda83e4f",
           "page": 1,
           "cue": "any six",
           "context": "_________________ MONDAY, 18 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER]",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "07845e871a47f79c",
           "page": 2,
           "cue": "any six",
           "context": "Leaving Certificate Examination 2018 2 Agricultural Science – Higher Level 1. Answer any six of the parts (a) – (j). (a) (i) Explain the term livestock unit. (ii) Give the livestock unit value for: 1. A mature dairy cow 2. A mature sheep. (b) Draw a labelled diagram to show the main features of a wind pollinated flower. ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "507447764647264a",
           "page": 2,
           "cue": "any two",
           "context": "e secreted by each gland. (d) (i) Explain the term food conversion ratio (FCR). (ii) List any two factors that affect FCR in pigs. (e) Plants are made of different cell types. Give the function of each of the following plant cell types. (i) Xylem (ii) Phloem (iii) Epidermis. (f) Describe the functions of the following parts o",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(d)(ii): any two factors affecting FCR from the scheme pool; a marking menu."
         },
         {
           "id": "86376d9f30a5003a",
           "page": 2,
           "cue": "any three",
           "context": "ve system of the cow. (i) Wool has many qualities that make it useful as a material. List any three of these qualities. (j) Give three reasons why hedgerow conservation is encouraged in Irish agriculture. (60 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(i): any three qualities of wool from the scheme pool; a marking menu."
         },
         {
           "id": "d9df8a54ee2641fe",
           "page": 3,
           "cue": "any two",
           "context": " the soil profile of a named soil type. (ii) Outline the factors responsible for creating any two of the soil horizons shown. (b) (i) Explain the term soil texture. (ii) Name any two soil texture types and compare them under the following headings: 1. Fertility 2. Temperature 3. Drainage 4. Ease of tilling. (c) Describe an ex",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(a)(ii): factors for any two horizons of the candidate’s own profile; the scheme gives factors for the O, A, B and C horizons (a marking menu)."
         },
         {
           "id": "df2254f16cc50d0f",
           "page": 3,
           "cue": "any two",
           "context": "ting any two of the soil horizons shown. (b) (i) Explain the term soil texture. (ii) Name any two soil texture types and compare them under the following headings: 1. Fertility 2. Temperature 3. Drainage 4. Ease of tilling. (c) Describe an experiment to show the activity of earthworms in the soil. (48 marks) [OVER]",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(b)(ii): any two of the scheme’s three texture types (clay, sandy, loam), compared heading by heading; each heading lists all three."
         },
         {
           "id": "6b4324667a4d0a6f",
           "page": 5,
           "cue": "any two",
           "context": "ving Certificate Examination 2018 5 Agricultural Science – Higher Level 4. In the case of any two of the following describe a laboratory or field method: (a) To determine the percentage (%) sugar in a sample of grass. (b) To show the effect of shading on crop growth. (c) To show the action of a named enzyme. (d) To compare th",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "f39cd1ef8ac3e423",
           "page": 6,
           "cue": "any two",
           "context": "ng Certificate Examination 2018 6 Agricultural Science – Higher Level 6. (a) (i) Describe any two commonly used methods of reseeding grassland. (ii) Explain the term establishment in the context of newly‐sown grass. (iii) Describe two practices that contribute to successful establishment. (b) Perennial ryegrass (PRG) and Ital",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(a)(i): any two of the scheme’s five reseeding methods with matching descriptions; a marking menu."
         },
         {
           "id": "9c1f3d83307c8571",
           "page": 7,
           "cue": "any two",
           "context": "Leaving Certificate Examination 2018 7 Agricultural Science – Higher Level 8. Answer any two of the parts (a), (b), (c). (a) (i) Describe the main processes at work during the conversion of grass to silage. (ii) Relate three practical steps in the making of good quality silage to the processes above. (b) Three of the maj",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "51ef1330be5f3708",
           "page": 7,
           "cue": "any three",
           "context": "ciency of a particular element in a plant. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Zero grazing and strip grazing (ii) Contact fungicides and systemic fungicides (iii) First early potatoes and maincrop potatoes (iv) Abiotic factors and edaphic factors. (48 marks) 9. Give sci",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "37d52e2b68a48a10",
           "page": 7,
           "cue": "any four",
           "context": " (iv) Abiotic factors and edaphic factors. (48 marks) 9. Give scientific explanations for any four of the following: (a) Use of a trailing shoe in slurry spreading. (b) Trees in a forest plantation are thinned at various time intervals. (c) Algal bloom in waterways following rainfall in summer. (d) Use of a farrowing crate in ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -2240,7 +2251,7 @@
         "sha256": "f4e7309f28b43d1261e0bc8cae29f877ce0f4fde00a2899395edcc4da5757330",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 57,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

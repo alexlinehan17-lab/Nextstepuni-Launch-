@@ -18,11 +18,12 @@ import fitz
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 LETTERS = 'abcdefghijklmnop'
 breaks = []  # (page, y) of each printed OR or section heading; see spans() for when one ends a part
+ors = set()  # the subset of breaks that are printed ORs
 SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b', re.I)
 HEAD = re.compile(r'^(?:Q(?:uestion)?\.?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
 OPTION = re.compile(r'^Option\s+(One|Two)\b\.?\s*', re.I)
-FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material|\[OVER\]$)', re.I)
+FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material|\[OVER\]$|Blank Page$)', re.I)
 
 
 def _lines(pdf):
@@ -57,6 +58,7 @@ def parse(pdf, max_question=20):
     q = opt = letter = roman = None
     bounds = [_content_bounds(rows) for rows in pages]
     breaks.clear()
+    ors.clear()
     # A paper that names its questions ("Question 2.") numbers lists inside them with bare
     # digits ("2. Explain your answer."): there, only a named head opens a question.
     named = any(re.match(r'^Question\s+\d+\s*\.', r[3]) for rows in pages for r in rows)
@@ -64,6 +66,8 @@ def parse(pdf, max_question=20):
         for i, (y0, y1, x, text) in enumerate(rows):
             if re.fullmatch(r'OR|Or', text) or SECTION.match(text):
                 breaks.append((p, y0))
+                if not SECTION.match(text):
+                    ors.add((p, y0))
             if FURNITURE.match(text) or x > 0.30:
                 continue
             s = text
@@ -163,11 +167,13 @@ def spans(pdf):
         first_child = idx + 1 if idx + 1 < len(events) and _descends(events[idx + 1][0], key) else None
         end = _point(events, end_idx, bounds)
         # An OR between two Options (or a section heading) ends a part; an OR inside a part's
-        # answer (two methods of one experiment) does not. The difference is what follows it:
-        # a question or Option head, or just the next lettered part.
+        # answer (two methods of one experiment) does not, even when the part is the last of
+        # its question. The difference is what follows it: an Option head, or anything else.
         def separates(b):
+            if b not in ors:
+                return True
             nxt = next((e for e in events if (e[1], e[2]) > b), None)
-            return nxt is None or nxt[0][2] is None
+            return nxt is not None and nxt[0][1] is not None and nxt[0][2] is None
         stop = next((b for b in sorted(breaks) if (page, y) < b < end and separates(b)), None)
         out[key_label(key)] = dict(key=key, start=(page, y), end=stop or end,
                                    stem_end=_point(events, first_child, bounds) if first_child else None)

@@ -1983,9 +1983,73 @@ Q13(c)(iv)|10|13|13|Beneficial effects of forestry:
 Q13(d)|30|13|14|Transpiration:
 '''
 POOLS_2019_ORDINARY = {'Q8(c)': (1, ['Hill (mountain) sheep production', 'Lowland sheep production']), 'Q11(b)': (1, ['Sandy soil', 'Clay soil']), 'Q12(c)': (1, ['Resazurin test', 'Agar plates']), 'Q13(d)': (1, ['Plastic bag', 'Potometer', 'Coloured dye'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY}
+# 2018 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
+HIGHER_2018 = '''
+Q1(a)|10|2|5|Livestock unit:
+Q1(b)|10|2|5|Diagram of wind pollinated flower
+Q1(c)|10|2|5|Thyroid location:
+Q1(d)|10|2|5|Factors affecting FCR in pigs:
+Q1(e)|10|2|5|Function of plant cell types
+Q1(f)|10|2|5|Functions in avian digestive system
+Q1(g)|10|2|5|Gestation period in days
+Q1(h)|10|2|5|Diagram of cow’s reproductive system:
+Q1(i)|10|2|5|Qualities of wool as a material:
+Q1(j)|10|2|5|Why hedgerow conservation encouraged:
+Q2(a)(i)|10|3|6|Soil type: Name of soil type
+Q2(a)(ii)|6|3|6|Factors responsible for creating soil horizons:
+Q2(b)(i)|4|3|6|Soil texture: Relative proportions
+Q2(b)(ii)|16|3|6|Comparing soil texture types:
+Q2(c)|12|3|6|Experiment to show earthworm activity in soil:
+Q3 Option One (a)(i)|4|4|7|BCS:
+Q3 Option One (a)(ii)|6|4|7|At calving: BCS 3.0
+Q3 Option One (a)(iii)|6|4|7|BCS high: calving difficulty
+Q3 Option One (b)(i)|4|4|7|Bacterial diseases of dairy cows:
+Q3 Option One (b)(ii)|4|4|7|Deficiency disorders of dairy cows:
+Q3 Option One (b)(iii)|8|4|7|Preventative measures:
+Q3 Option One (c)(i)|12|4|7|Changes in beef calf diet, from birth to weaning:
+Q3 Option One (c)(ii)|4|4|7|How changes affect ruminant stomach development:
+Q3 Option Two (a)|16|4|8|Name of fungus: Phytophthora infestans
+Q3 Option Two (b)|16|4|8|Cultivation of a named cereal
+Q3 Option Two (c)(i)|4|4|8|Indirect control of weeds:
+Q3 Option Two (c)(ii)|12|4|8|Examples of indirect control:
+Q4(a)|24|5|9|Percentage sugar in grass:
+Q4(b)|24|5|9|Effect of shading on crop growth:
+Q4(c)|24|5|9|Enzyme action:
+Q4(d)|24|5|9|Botanical composition comparison:
+Q5(a)|16|5|10|Hill v. lowland sheep production:
+Q5(b)|16|5|10|Management practices at lambing:
+Q5(c)|16|5|10|Sheep Welfare Scheme features
+Q6(a)(i)|12|6|11|Reseeding grassland:
+Q6(a)(ii)|4|6|11|Establishment of newly-sown grass:
+Q6(a)(iii)|4|6|11|Practices for successful establishment:
+Q6(b)(i)|12|6|11|Productivity features of PRG v. IRG:
+Q6(b)(ii)|4|6|11|What are they: Result of crossing
+Q6(c)(i)|6|6|11|How better grassland management prevents more cattle parasite infestation:
+Q6(c)(ii)|6|6|11|Examples of cattle parasites:
+Q7(a)(i)|5|6|12|Polyploidy
+Q7(a)(ii)|5|6|12|Freemartin condition
+Q7(a)(iii)|5|6|12|Micropropagation
+Q7(b)|18|6|12|Parental genotype: GgNn
+Q7(c)(i)|6|6|12|Embryo transfer:
+Q7(c)(ii)|9|6|12|Benefits of embryo transfer:
+Q8(a)(i)|12|7|13|Grass to silage
+Q8(a)(ii)|12|7|13|Practical steps related to
+Q8(b)(i)|12|7|13|NPK in plants
+Q8(b)(ii)|12|7|13|Experiment to show effect of a deficiency:
+Q8(c)|24|7|13|Zero grazing: animals are indoors
+Q9(a)|12|7|14|Trailing shoe to spread slurry:
+Q9(b)|12|7|14|Thinning forestry trees:
+Q9(c)|12|7|14|Algal bloom:
+Q9(d)|12|7|14|Farrowing crate:
+Q9(e)|12|7|14|Rushes in gley soils:
+'''
+POOLS_2018_HIGHER = {'Q3 Option Two (b)': (1, ['Barley', 'Wheat', 'Oats', 'Maize']), 'Q4(c)': (1, ['Amylase', 'Catalase'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER}
 
 SOURCES = [
+    (2018, 'higher', 'A', HIGHER_2018,
+     'c3f4587b9485b694119190e30e5cae7d3ca80f7879252ba1de545f4a6b99e785',
+     '8872670e2cb5e7a56f3894429919359a95db6f9eb34acd36f475418d6c8937de'),
     (2019, 'ordinary', 'G', ORDINARY_2019,
      'd5978d8b8f4ce76f7cafcd14c6be9f7072aef3e0335f12ea1ec1e9d76429b3d8',
      '80e7534cdefcbe5d0d7921ed0ffb5041c5628cce01e910b4c75ab55ba8ef9ca0'),
@@ -2090,7 +2154,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2235,7 +2299,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57. Remaining editions stay open.')
 
 
 if __name__=='__main__':
