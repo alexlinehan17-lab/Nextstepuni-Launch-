@@ -2660,114 +2660,129 @@
         "sha256": "a82cef8f5c02ace6ac4049496bb08a65edad60ca08732e0ca01f2b727b2f76da",
         "pages": 14
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 60,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "4911308c64d8f1e9",
           "page": 1,
           "cue": "any six",
           "context": " HIGHER LEVEL ________________________ 2 hours 30 minutes ________________________ Answer any six questions Question 1 carries 60 marks All other questions carry 48 marks each Write all your answers in the answer book Total marks: 300 marks",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "962283b963326a84",
           "page": 2,
           "cue": "any six",
           "context": "Leaving Certificate Examination 2020 2 Agricultural Science – Higher Level 1. Answer any six of the parts (a) ‒ (j). (a) (i) What is meant by the term noxious weed? (ii) Give two examples of noxious weeds. (b) (i) What is meant by the term incomplete metamorphosis? (ii) Give one example of incomplete metamorphosis. (c) O",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "e55782cd87e50f6e",
           "page": 3,
           "cue": "any two",
           "context": "tructure. (i) What is meant by each of the terms cementation and separation? (ii) Outline any two factors that contribute to cementation. (iii) Outline any two factors that contribute to separation. (b) Cation exchange capacity (CEC) is an important chemical property of soil. (i) What is meant by the term cation exchange capa",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(a)(ii): any two cementation factors from the scheme pool; a marking menu, not a printed item choice."
         },
         {
           "id": "0bf9143554c6df30",
           "page": 3,
           "cue": "any two",
           "context": "nd separation? (ii) Outline any two factors that contribute to cementation. (iii) Outline any two factors that contribute to separation. (b) Cation exchange capacity (CEC) is an important chemical property of soil. (i) What is meant by the term cation exchange capacity? (ii) Cation exchange capacity is lower in sandy soils th",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q2(a)(iii): any two separation factors from the scheme pool; a marking menu."
         },
         {
           "id": "76f733ff62fbc13b",
           "page": 4,
           "cue": "any four",
           "context": "(b) Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating. (c) Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep. (48 marks) OR 3. Option Two. (a)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option One (b): any four flock-preparation aspects; the scheme prices selection, health, flushing and one extra point."
         },
         {
           "id": "98d009d050c51805",
           "page": 4,
           "cue": "any four",
           "context": "trol of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep. (48 marks) OR 3. Option Two. (a) (i) Discuss two features that influence the geographical location of cereal crop production in Ireland. (ii) Cereals in Ireland are sown as either wint",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option One (c): any four parasite-control methods with matching parasites; a marking menu."
         },
         {
           "id": "572179c5e3a7d686",
           "page": 4,
           "cue": "either",
           "context": "phical location of cereal crop production in Ireland. (ii) Cereals in Ireland are sown as either winter crops or spring crops. Outline four differences between the growing of winter and spring cereals. (b) Describe the cultivation of potatoes or of a named root crop under the following headings: (i) Soil suitability (ii) Cho",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"sown as either winter crops or spring crops\" in Q3 Option Two (a)(ii) is the lead-in to a comparison, not a response choice."
         },
         {
           "id": "0f331c2e6199d5a8",
           "page": 4,
           "cue": "any two",
           "context": "ds, pests and diseases in crops can be controlled by direct or indirect methods. Describe any two methods of direct control and any two methods of indirect control. (48 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option Two (c): any two direct-control methods; a marking menu."
         },
         {
           "id": "c5d0dce02d2551c8",
           "page": 4,
           "cue": "any two",
           "context": " controlled by direct or indirect methods. Describe any two methods of direct control and any two methods of indirect control. (48 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q3 Option Two (c): any two indirect-control methods; a marking menu."
         },
         {
           "id": "fa700a51b93d4682",
           "page": 5,
           "cue": "any two",
           "context": "ving Certificate Examination 2020 5 Agricultural Science – Higher Level 4. In the case of any two of the following, describe a laboratory or field method: (a) To extract different pigments from a sample of grass. (b) To show the action of a named animal enzyme. (c) To compare capillarity in soil samples. (d) To estimate the y",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "a544d511088b35cb",
           "page": 5,
           "cue": "any two",
           "context": "ion is crucial in the use of artificial insemination (AI) in the dairy herd. (i) Describe any two methods of heat detection. (ii) Give two advantages of the use of AI in the dairy herd. (c) The hygiene quality and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q5(b)(i): any two heat-detection methods; a marking menu."
         },
         {
           "id": "93539704ddfab8e0",
           "page": 5,
           "cue": "any two",
           "context": "y and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on milk to determine hygiene quality or composition. For each test described, state clearly if hygiene quality or composition is being determined. (48 marks)",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q5(c): any two milk tests, each stated as hygiene or composition; a marking menu."
         },
         {
           "id": "1b2a4243a870a40c",
           "page": 7,
           "cue": "any two",
           "context": "Leaving Certificate Examination 2020 7 Agricultural Science – Higher Level 8. Answer any two of the parts (a), (b), (c). (a) It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions. (i) Use a labelled diagram to illustrate the carbon cycle. (ii) With reference to the carbon cycle, ",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "fc34ea1ab76aaf8a",
           "page": 7,
           "cue": "any three",
           "context": "ease control other than using antibiotics. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination. (48 marks)",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "2e2454056135a7d3",
           "page": 7,
           "cue": "any four",
           "context": "ogeal germination and epigeal germination. (48 marks) 9. Give scientific explanations for any four of the following: (a) Sprouting or ‘chitting’ of early potatoes. (b) The presence of grit in the digestive tract of fowl. (c) A high incidence of leatherjackets in cereal crops, following grass. (d) Deep ploughing of a podzol soi",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -2786,7 +2801,7 @@
         "sha256": "0f49eca123c01f25146a011fa4990fd1fd4340c1fb93d8c4b882b08f3169bd47",
         "pages": 14
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 60,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

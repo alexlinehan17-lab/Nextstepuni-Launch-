@@ -34,6 +34,7 @@ from agricultural_science_2022_hl import reviewed_tasks as reviewed_2022_hl, pap
 from agricultural_science_2022_ol import reviewed_tasks as reviewed_2022_ol, paper_review as ordinary_2022_review, RESTORED as RESTORED_2022_OL, WITHDRAWN as WITHDRAWN_2022_OL
 from agricultural_science_2021_hl import reviewed_tasks as reviewed_2021_hl, paper_review as higher_2021_review, RESTORED as RESTORED_2021_HL
 from agricultural_science_2021_ol import reviewed_tasks as reviewed_2021_ol, paper_review as ordinary_2021_review, RESTORED as RESTORED_2021_OL
+from agricultural_science_2020_hl import reviewed_tasks as reviewed_2020_hl, paper_review as higher_2020_review
 
 ROOT = Path(__file__).resolve().parents[3]
 AUTHORED = ROOT / 'scripts/markbank/authored/agricultural-science.json'
@@ -197,12 +198,22 @@ def reviewed_tasks():
     cards.extend(ordinary_2021_cards)
     reviews.extend(ordinary_2021_tasks)
     paper_reviews.append(ordinary_2021_review())
+    # Legacy sittings authored from the SEC sources: every card is new, none corrected.
+    legacy_cards, legacy_dates = [], {}
+    for legacy, legacy_review, reviewed_on in [(reviewed_2020_hl, higher_2020_review, '2026-10-13')]:
+        new_cards, new_tasks = legacy()
+        legacy_cards += new_cards
+        legacy_dates.update({id(card): reviewed_on for card in new_cards})
+        cards.extend(new_cards)
+        reviews.extend(new_tasks)
+        paper_reviews.append(legacy_review())
     corrections_2025 = {**corrections_2021_ol, **corrections_2021, **corrections_2022_ol, **corrections_2025, **corrections_2025_ol, **corrections_2024, **corrections_2024_ol, **corrections_2023, **corrections_2023_ol, **corrections_2022}
     # Batches reviewed after 7 October carry their own review date; earlier
     # reviewed card objects must stay byte-identical.
     batch_dates = {id(card): '2026-10-11' for card in higher_2026_cards + ordinary_2026_cards + higher_2025_cards + ordinary_2025_cards}
     batch_dates.update({id(card): '2026-10-12' for card in higher_2024_cards + ordinary_2024_cards + higher_2023_cards + ordinary_2023_cards + higher_2022_cards + ordinary_2022_cards})
     batch_dates.update({id(card): '2026-10-13' for card in higher_2021_cards + ordinary_2021_cards})
+    batch_dates.update(legacy_dates)
     for reviewed in cards:
         reviewed['qa'] = {'gates':['verbatim','tariff','figure','source-crop'],
                           'humanReviewedBy':'agent-source-reviewed','humanReviewedAt':batch_dates.get(id(reviewed),'2026-10-07')}

@@ -4,6 +4,1053 @@
   "method": "Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.",
   "papers": [
     {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "18ff9aba31b70f50fd65384ab901a9986a39dd43cc2651474263ed752c3016bb",
+        "markingschemes": "a82cef8f5c02ace6ac4049496bb08a65edad60ca08732e0ca01f2b727b2f76da"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2020 HL Q1(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Physical or economic damage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Ragwort/ (creeping) thistle"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Egg-nymph-adult"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Aphid/ dragonfly/ cockroach"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(c)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Poorest trees removed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(d)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Vascular cylinder (stele) and xylem and phloem"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(d)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(e)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Location of humerus"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(e)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(f)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Dagging: Cutting away"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(f)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(g)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Long stamens/ stamens outside flower"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(g)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(h)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "280 ‒ 288 days"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(h)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(i)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Slate: Metamorphic"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q1(j)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 3,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 3,
+            "text": "Hard testa (coat) or rolling breaks coat"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q1(j)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Cementation: (Soil) particles pushed together"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "(Small) root activity"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(a)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Freeze-thaw action"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Measure (allow quantity)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Sand particles chemically inert"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Add organic matter (or example)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q2(c)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 4,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 4,
+            "text": "Matching reagent"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q2(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option One (a)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Mountain sheep production"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option One (a)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option One (b)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "One selection point based on"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option One (b)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option One (c)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Bolus: stomach worms"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option One (c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Climate or rainfall or sunshine or temperature"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Sown in September or October"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Stone free/ pH 5.5"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Maincrop/ first earlies"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "30 ‒ 40 tonne"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (b)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (b)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Animal feed/ human consumption/ seed potatoes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (b)(iv)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q3 Option Two (c)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Herbicide + description"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q3 Option Two (c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q4(a)",
+          "marksPerResponse": 24,
+          "paperPage": 5,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Grind grass/ in alcohol"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q4(a)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q4(b)",
+          "marksPerResponse": 24,
+          "paperPage": 5,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Liver contains catalase"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Catalase",
+              "Amylase"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 HL Q4(b)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q4(c)",
+          "marksPerResponse": 24,
+          "paperPage": 5,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Two dry soil samples"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q4(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q4(d)",
+          "marksPerResponse": 24,
+          "paperPage": 5,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Named root crop"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q4(d)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q5(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Allows repair of udder tissue"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q5(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q5(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Body condition score assessed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q5(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q5(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Tail painting or pressure-sensitive paint tag"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q5(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q5(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Greater choice of breeds"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q5(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q5(c)",
+          "marksPerResponse": 16,
+          "paperPage": 5,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Total bacterial count (TBC)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q5(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Ploughing/ harrowing or rotavating/ rolling"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Seed drill/ seeds and fertiliser"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(a)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Improves structure/ improves aeration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Maximum grass utilisation"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Monoculture or loss of biodiversity"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q6(c)",
+          "marksPerResponse": 16,
+          "paperPage": 6,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Dehydration or drying"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q6(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q7(a)",
+          "marksPerResponse": 14,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Prophase—metaphase—anaphase—telophase"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q7(a)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q7(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Halves (or reduces) diploid number"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q7(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q7(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Homologous chromosomes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q7(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q7(c)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Parental gametes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q7(c)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q7(c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 6,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Hairless leaf with spiral petiole"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q7(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(a)(i)",
+          "marksPerResponse": 16,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Carbon cycle"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Reduction in national cattle herd"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(b)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Mastitis/ blackleg/ footrot"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(b)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Overuse of antibiotics/ mutation"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Milking out or hygiene or vaccination"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q8(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q8(c)",
+          "marksPerResponse": 24,
+          "paperPage": 7,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Four-chambered stomach"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 3,
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2020 HL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q9(a)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Exposing potato tubers to light"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q9(a)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q9(b)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Fowl have no teeth"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q9(c)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Cranefly/ active in autumn"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q9(c)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q9(d)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Iron pan/ hard or impermeable layer"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q9(d)"
+          ]
+        },
+        {
+          "ref": "2020 HL Q9(e)",
+          "marksPerResponse": 12,
+          "paperPage": 7,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Increased concentrates diet"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2020 HL Q9(e)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2021,
       "level": "ordinary",
       "lang": "ev",
@@ -27082,7 +28129,7 @@
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2020,
@@ -27275,6 +28322,174 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 10,
+        "(b)": 10,
+        "(c)": 10,
+        "(d)": 10,
+        "(e)": 10,
+        "(f)": 10,
+        "(g)": 10,
+        "(h)": 10,
+        "(i)": 10,
+        "(j)": 10
+      },
+      "choose": 6,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option One",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option Two",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24,
+        "(d)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 12,
+        "(b)": 12,
+        "(c)": 12,
+        "(d)": 12,
+        "(e)": 12
+      },
+      "choose": 4,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
     {
       "year": 2021,
       "level": "ordinary",

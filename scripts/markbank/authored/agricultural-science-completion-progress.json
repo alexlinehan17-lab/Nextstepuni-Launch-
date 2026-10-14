@@ -12,12 +12,12 @@
       2010,
       2026
     ],
-    "selectionCuesPendingClassification": 503,
-    "fullPaperAndSchemeSweepsCompleted": 21,
-    "distinctEnglishPaperSweepsCompleted": 17,
+    "selectionCuesPendingClassification": 488,
+    "fullPaperAndSchemeSweepsCompleted": 22,
+    "distinctEnglishPaperSweepsCompleted": 18,
     "irishEditionComparisonsCompleted": 4,
-    "independentSourceCensusEditionsCompleted": 18,
-    "independentSourceCensusEditionsOpen": 50
+    "independentSourceCensusEditionsCompleted": 19,
+    "independentSourceCensusEditionsOpen": 49
   },
   "completedBatch": {
     "reviewedPapers": [
@@ -41,7 +41,8 @@
       "2022 Higher English: 44 paper pages and 35 scheme pages",
       "2022 Ordinary English: 40 paper pages and 28 scheme pages",
       "2021 Higher English: 52 paper pages and 39 scheme pages",
-      "2021 Ordinary English: 44 paper pages and 26 scheme pages"
+      "2021 Ordinary English: 44 paper pages and 26 scheme pages",
+      "2020 Higher English: 8 paper pages and 14 scheme pages"
     ],
     "previousReviewedTasks": [
       "2022 OL Q2(b)(ii)",
@@ -49,15 +50,15 @@
       "2023 HL Q18(a)(i)",
       "2025 OL Q8(b)"
     ],
-    "addedMarkBankCards": 587,
-    "addedThisBatch": 309,
+    "addedMarkBankCards": 647,
+    "addedThisBatch": 369,
     "correctedMarkBankCards": 152,
-    "markBankCardsNow": 1447,
-    "higherCards": 731,
+    "markBankCardsNow": 1507,
+    "higherCards": 791,
     "ordinaryCards": 716,
     "originalCardIdsPreserved": 869,
-    "atlasPracticeCardsAdded": 1447,
-    "atlasCardsNow": 1905,
+    "atlasPracticeCardsAdded": 1507,
+    "atlasCardsNow": 1965,
     "priorAnchorsPreservedThisBatch": 9,
     "obsoleteExclusionsResolved": 4,
     "sourceImagesAdded": [
@@ -246,17 +247,17 @@
       "corrections": "Q2(b)(iii) loses a stem of run-together diagram labels; Q14(c)(ii) regains 2 + 2 for name or description; Q14(d) regains 6(2) per cell. Added Q1(a), Q11(a)(ii), Q13(b)(iii), Q14(a)(ii) and Q14(b)(i). The item choices Q5(a), Q6(a)(i), Q6(a)(ii), Q7(a) and Q13(a)(ii) were already one card each."
     },
     "coverageBaseline": {
-      "measuredAt": "2026-10-12",
+      "measuredAt": "2026-10-13",
       "command": "python3 scripts/markbank/authoring/reconcile.py agricultural-science --baseline write (no --accept-regression)",
-      "cards": 1447,
+      "cards": 1507,
       "leaves": 2832,
-      "covered": 1496,
-      "open": 1336,
+      "covered": 1564,
+      "open": 1268,
       "excluded": 0,
       "orphans": 0,
-      "coveragePct": 52.8,
+      "coveragePct": 55.2,
       "papersOnDisk": 34,
-      "openAsksDeclared": "1336 open asks, all in the uncarded 2012 Ordinary and 2013-2020 papers. 2010-2011, 2012 Higher and 2021-2026 have 0 open.",
+      "openAsksDeclared": "1268 open asks, all in the uncarded 2012 Ordinary, 2013-2019 and 2020 Ordinary papers. 2010-2011, 2012 Higher, 2020 Higher and 2021-2026 have 0 open.",
       "orphansDeclared": "0: the 2021 OL Q17(b)(ii)/(iii) pair was a census reader fault (a table cross-reference keyed as part (a)), fixed in paper.py.",
       "readerFix": "paper_census.py reads Agricultural Science papers up to 2020 through census_agri_legacy (gated to this subject): lines rebuilt from glyph positions with duplicated glyphs removed, and every head and part marker keyed against what the numbering allows next. Census output for biology, chemistry, physics, business, home-economics, construction-studies, computer-science and economics is byte-identical before and after.",
       "environmentNote": "24 of the 34 papers are local symlinks into paper-trail-corpus (gitignored); a checkout with only the 10 tracked 2021-2025 papers would measure a smaller denominator."
@@ -309,13 +310,22 @@
       "corrections": "Q18(a)(i) Seedbed preparation regains the scheme's \"Named crop 2\" (9 marks), which is what makes Question 18 total 50; Q4(c) follows the first-correct 3+1 instead of 3 pinned to poor drainage; Q12(b) (four named breeds), Q14(b)(iii) (error with its remedy), Q14(b)(iv) (qualitative resazurin or quantitative TBC) and Q16(c)(v) (implication with its reason) become answer routes; twenty pools that dropped or cut published points list every point; stems and questions built from tick-box, diagram-label, word-list or photograph-letter debris are replaced by the paper's wording (Q1(a), Q4(b), Q10(d), Q12(a), Q18(c)(iii)).",
       "addedCards": "Q11(b)(iv) (slatted-tank position 2 + reason 2, with the plan view) and Q18(b)(iii) (physical trait 2 + reason 2, the scheme's three traits as routes, with the photographs).",
       "readerFix": "paper.py: a letter that runs BACKWARDS inside a question with only figures after it is a table cross-reference, not a part. 2021 OL Q17(b) heads a table column \"Calculated at part\" / \"(a) 80 65 35\"; keying that \"(a)\" filed (b)(ii) and (b)(iii) under (a), so the two printed parts read as orphans. Census output for biology, chemistry, physics, economics, construction-studies, maths, art, geography, business, home-economics and computer-science is byte-identical before and after; Agricultural Science gains exactly Q17(b)(ii) and Q17(b)(iii)."
+    },
+    "authored2020Higher": {
+      "added": 60,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2020_hl.py on the shared legacy builder agricultural_science_legacy.py.",
+      "boundaries": "60 base tasks, one card each. Question 1 parts are whole where one instruction carries a first-correct scale (4 + 3 + 3, 2(3) + 2(2)) or one drawing band; parts asked and priced separately are separate tasks. Q4(b) carries catalase and amylase as answer routes; Q8(c) is one card whose eight members are parts and whose best six (three pairs) count.",
+      "curriculum": "curriculumNodeIds name the pre-2021 specification the sitting was examined on (agricultural-science-*), resolved by exam year; topicId is the current agsci-* topic used by practice filters.",
+      "cropReview": "All 60 distinct paper/scheme crop pairs rendered and inspected. regions.py now cuts in the gap between printed lines (emptiest pixel row nearest the boundary, moved toward the middle of the gap) and a part never runs past a printed OR or section heading."
     }
   },
   "verification": {
-    "targetedTestsPassed": 246,
+    "targetedTestsPassed": 247,
     "sourceReaderOpenCloseTestPassed": true,
-    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected. 2012 Higher: all 56 distinct paper/scheme crop pairs and both solution figures inspected. Clipped lines, the growth-curve time label and shared tariffs corrected and re-rendered. 2026 Higher: all 91 distinct paper/scheme crop pairs and the reproductive-system solution image inspected; the Q18(b)(iii) crop was trimmed to exclude the (c) table and re-rendered. 2026 Ordinary: all 85 distinct crop pairs inspected; Q3(b)(ii), Q12(b)(ii), Q16(a)(ii), Q17(a)(ii)/(iii), Q17(b)(ii) and Q18(a)(ii)–(v) re-cropped and re-inspected; six figures inspected (three re-cropped). 2025 Higher: all 89 distinct crop pairs inspected; ten paper crops widened to include their tables, photographs and stems, then re-inspected. 2025 Ordinary: all 90 distinct crop pairs inspected; Q9(a)(i), Q11(a)(i), Q14(c)(ii) and Q18(a)(iii) re-cropped and re-inspected. 2024 Higher: all 81 distinct crop pairs inspected; Q4, Q14(a)(ii)/(iii), Q14(b)(ii) and Q17(c)(ii)/(iii) re-cropped and re-inspected; five new figures inspected. 2024 Ordinary: all 82 distinct crop pairs inspected; Q5(b), Q7(b), Q9(a)(ii)/(iii), Q11(a)(iii), Q12(a)/(b), Q13(a)(ii), Q14(d), Q15(a)(i), Q16(b), Q16(c)(ii)/(iii), Q17(a)(ii) and Q18(c) re-cropped and re-inspected; five new figures inspected. 2022 Ordinary: all 96 distinct crop pairs inspected; Q9(c)/(d) scheme rows, Q11(a)(ii) (x-bounded clear of the photograph), Q13(a)(iii), Q13(b)(ii)/(iii) (field photograph added), Q15(b)(iii)/(iv), Q17(a)(ii)/(iii), Q17(b)(iii), Q18(a)(i)-(iii) and Q18(c)(ii) re-cropped and re-inspected; one new figure inspected. 2021 Higher: all 106 distinct crop pairs inspected; three new figures inspected (sheep milk pie chart, organic fertiliser DM bar chart, reference soil index). 2021 Ordinary: all 113 distinct crop pairs inspected; Q18(a)(i) Weed control and Q18(c)(iv) scheme crops trimmed and re-inspected.",
-    "cardBuild": "1447 built, zero dropped",
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected. 2012 Higher: all 56 distinct paper/scheme crop pairs and both solution figures inspected. Clipped lines, the growth-curve time label and shared tariffs corrected and re-rendered. 2026 Higher: all 91 distinct paper/scheme crop pairs and the reproductive-system solution image inspected; the Q18(b)(iii) crop was trimmed to exclude the (c) table and re-rendered. 2026 Ordinary: all 85 distinct crop pairs inspected; Q3(b)(ii), Q12(b)(ii), Q16(a)(ii), Q17(a)(ii)/(iii), Q17(b)(ii) and Q18(a)(ii)–(v) re-cropped and re-inspected; six figures inspected (three re-cropped). 2025 Higher: all 89 distinct crop pairs inspected; ten paper crops widened to include their tables, photographs and stems, then re-inspected. 2025 Ordinary: all 90 distinct crop pairs inspected; Q9(a)(i), Q11(a)(i), Q14(c)(ii) and Q18(a)(iii) re-cropped and re-inspected. 2024 Higher: all 81 distinct crop pairs inspected; Q4, Q14(a)(ii)/(iii), Q14(b)(ii) and Q17(c)(ii)/(iii) re-cropped and re-inspected; five new figures inspected. 2024 Ordinary: all 82 distinct crop pairs inspected; Q5(b), Q7(b), Q9(a)(ii)/(iii), Q11(a)(iii), Q12(a)/(b), Q13(a)(ii), Q14(d), Q15(a)(i), Q16(b), Q16(c)(ii)/(iii), Q17(a)(ii) and Q18(c) re-cropped and re-inspected; five new figures inspected. 2022 Ordinary: all 96 distinct crop pairs inspected; Q9(c)/(d) scheme rows, Q11(a)(ii) (x-bounded clear of the photograph), Q13(a)(iii), Q13(b)(ii)/(iii) (field photograph added), Q15(b)(iii)/(iv), Q17(a)(ii)/(iii), Q17(b)(iii), Q18(a)(i)-(iii) and Q18(c)(ii) re-cropped and re-inspected; one new figure inspected. 2021 Higher: all 106 distinct crop pairs inspected; three new figures inspected (sheep milk pie chart, organic fertiliser DM bar chart, reference soil index). 2021 Ordinary: all 113 distinct crop pairs inspected; Q18(a)(i) Weed control and Q18(c)(iv) scheme crops trimmed and re-inspected. 2020 Higher: all 60 distinct crop pairs inspected after the boundary-snapping change; Q3 Option Two (b)(ii) scheme crop re-cut to include its answer line.",
+    "cardBuild": "1507 built, zero dropped",
     "generationChecks": [
       "agricultural_science_completion.py --check",
       "agricultural_science_atlas.py --check",

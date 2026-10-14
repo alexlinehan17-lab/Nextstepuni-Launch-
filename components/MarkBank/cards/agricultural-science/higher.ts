@@ -22897,6 +22897,1609 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1ai", topicId: "agsci-3-2", conceptId: "noxious-weed",
+    section: "A", questionRef: "2020 HL Q1(a)(i)",
+    questionText: "What is meant by the term noxious weed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Physical or economic damage / legally required to control / may be poisonous / difficult to control / highly competitive or may be persistent", marks: 6, contextNote: "Any two points, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Physical or economic damage","legally required to control","may be poisonous","difficult to control","highly competitive or may be persistent"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(a)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1aii", topicId: "agsci-3-2", conceptId: "noxious-weed-examples",
+    section: "A", questionRef: "2020 HL Q1(a)(ii)",
+    questionText: "Give two examples of noxious weeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ragwort / (creeping) thistle / wild oat / dock / (common) barberry / (male) wild hops", marks: 4, contextNote: "Any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Ragwort","(creeping) thistle","wild oat","dock","(common) barberry","(male) wild hops"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(a)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1bi", topicId: "agsci-3-3-2", conceptId: "incomplete-metamorphosis",
+    section: "A", questionRef: "2020 HL Q1(b)(i)",
+    questionText: "What is meant by the term incomplete metamorphosis?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Egg-nymph-adult / grow by moulting / instars / nymph resembles adult / no larval stage", marks: 6, contextNote: "Any two points, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Egg-nymph-adult","grow by moulting","instars","nymph resembles adult","no larval stage"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(b)(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1bii", topicId: "agsci-3-3-2", conceptId: "incomplete-metamorphosis-example",
+    section: "A", questionRef: "2020 HL Q1(b)(ii)",
+    questionText: "Give one example of incomplete metamorphosis.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Aphid / dragonfly / cockroach / or other example", marks: 4, contextNote: "One example, 4 marks.", group: {"claimMax":1,"perOption":4,"options":["Aphid","dragonfly","cockroach","or other example"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(b)(ii)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1c", topicId: "agsci-3-3-2", conceptId: "thinning-forestry-trees",
+    section: "A", questionRef: "2020 HL Q1(c)",
+    questionText: "Outline three reasons for the practice of thinning forestry trees.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Poorest trees removed / diseased or damaged trees removed / reduces competition / remaining trees grows faster / improves size of trees / allows access", marks: 10, contextNote: "Any three: the first correct earns 4 and the next two 3 each (4 + 3 + 3).", group: {"claimMax":3,"perOption":4,"options":["Poorest trees removed","diseased or damaged trees removed","reduces competition","remaining trees grows faster","improves size of trees","allows access"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(c)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1d", topicId: "agsci-3-1", conceptId: "dicot-root-vascular-tissue",
+    section: "A", questionRef: "2020 HL Q1(d)",
+    questionText: "Draw a labelled diagram to show the arrangement of the vascular tissues in a dicotyledonous (dicot) root.",
+    tariffModel: {"kind":"questionTotal","notation":"4, 2, 0 + 2(3)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Vascular cylinder (stele) and xylem and phloem", marks: null, contextNote: "Diagram: 4, 2, 0." },
+    { id: "r-2", kind: "point", verbatim: "Vascular bundle or vascular cylinder or central cylinder or stele/ xylem/ phloem", marks: null, contextNote: "Labels: any two, 3 marks each (2(3))." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(d)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1e", topicId: "agsci-4-1", conceptId: "mammalian-part-locations",
+    section: "A", questionRef: "2020 HL Q1(e)",
+    questionText: "State the location in the mammalian body of each of the following parts: (i) Humerus (ii) Pituitary gland (iii) Bowman’s capsule (iv) Cervix.",
+    tariffModel: {"kind":"fixed","notation":"2(3) + 2(2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(i) Location of humerus: Front leg (or arm) / (ii) Location of pituitary gland: Brain / (iii) Location of Bowman’s capsule: Kidney / (iv) Location of cervix: Uterus (or neck)", marks: 10, contextNote: "All four locations; the first two correct answers earn 3 each and the other two 2 each (2(3) + 2(2)).", group: {"claimMax":4,"perOption":3,"options":["(i) Location of humerus: Front leg (or arm)","(ii) Location of pituitary gland: Brain","(iii) Location of Bowman’s capsule: Kidney","(iv) Location of cervix: Uterus (or neck)"],"perOptionSteps":[3,3,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(e)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1f", topicId: "agsci-4-3-3", conceptId: "dagging-and-tagging",
+    section: "A", questionRef: "2020 HL Q1(f)",
+    questionText: "Explain each of the following terms: (i) Dagging (ii) Tagging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Dagging: Cutting away (dirty or wet) wool from around the tail end of sheep", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "(ii) Tagging: Attaching an ID (object or tag) to a livestock animal (or named animal)", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(f)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-0","agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1g", topicId: "agsci-3-1", conceptId: "wind-pollinated-grass-flower",
+    section: "A", questionRef: "2020 HL Q1(g)",
+    questionText: "Describe how the structure of the grass flower is suited to wind pollination.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Long stamens / stamens outside flower / reduced petals or absent petals / large amount of pollen / light pollen or smooth pollen / feathery stigma", marks: 10, contextNote: "Three features: the first correct earns 4 and the next two 3 each (4 + 3 + 3).", group: {"claimMax":3,"perOption":4,"options":["Long stamens","stamens outside flower","reduced petals or absent petals","large amount of pollen","light pollen or smooth pollen","feathery stigma"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(g)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1h", topicId: "agsci-4-1", conceptId: "gestation-lengths",
+    section: "A", questionRef: "2020 HL Q1(h)",
+    questionText: "State the length of gestation, in days, for each of the following farm animals: (i) Cow (ii) Sheep (iii) Pig.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(i) 280 ‒ 288 days (allow 9½ ‒ 10 months) / (ii) 145 ‒ 150 days (allow 5 months) / (iii) 113 ‒ 117 days (allow 3 months, 3 weeks, 3 days)", marks: 10, contextNote: "Cow, sheep and pig in order; the first correct answer earns 4 and the next two 3 each (4 + 3 + 3).", group: {"claimMax":3,"perOption":4,"options":["(i) 280 ‒ 288 days (allow 9½ ‒ 10 months)","(ii) 145 ‒ 150 days (allow 5 months)","(iii) 113 ‒ 117 days (allow 3 months, 3 weeks, 3 days)"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(h)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1i", topicId: "agsci-2-1", conceptId: "principal-rock-types",
+    section: "A", questionRef: "2020 HL Q1(i)",
+    questionText: "Classify each of the following into a principal rock type: (i) Slate (ii) Granite (iii) Limestone.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(i) Slate: Metamorphic / (ii) Granite: Igneous / (iii) Limestone: Sedimentary", marks: 10, contextNote: "The first correct answer earns 4 and the next two 3 each (4 + 3 + 3).", group: {"claimMax":3,"perOption":4,"options":["(i) Slate: Metamorphic","(ii) Granite: Igneous","(iii) Limestone: Sedimentary"],"perOptionSteps":[4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(i)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q1j", topicId: "agsci-4-3-2", conceptId: "rolling-barley",
+    section: "A", questionRef: "2020 HL Q1(j)",
+    questionText: "Explain the reason for rolling barley grains before feeding to cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hard testa (coat) or rolling breaks coat", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "Otherwise indigestible or allows digestion", marks: 5 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q1(j)",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2ai", topicId: "agsci-2-2-2", conceptId: "cementation-and-separation",
+    section: "B", questionRef: "2020 HL Q2(a)(i)",
+    stem: "Cementation and separation are two processes that affect the development of a soil structure.",
+    questionText: "What is meant by each of the terms cementation and separation?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cementation: (Soil) particles pushed together", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Separation: Break-up of aggregated or large (soil) particles", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(a)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2aii", topicId: "agsci-2-2-2", conceptId: "cementation-factors",
+    section: "B", questionRef: "2020 HL Q2(a)(ii)",
+    stem: "Cementation and separation are two processes that affect the development of a soil structure.",
+    questionText: "Outline any two factors that contribute to cementation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(Small) root activity / bacteria or fungi / drying / ingestion or egestion by earthworms / machinery load or poaching or trampling", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["(Small) root activity","bacteria or fungi","drying","ingestion or egestion by earthworms","machinery load or poaching or trampling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(a)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2aiii", topicId: "agsci-2-2-2", conceptId: "separation-factors",
+    section: "B", questionRef: "2020 HL Q2(a)(iii)",
+    stem: "Cementation and separation are two processes that affect the development of a soil structure.",
+    questionText: "Outline any two factors that contribute to separation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Freeze-thaw action / wetting / (large) root activity / earthworm casts or channels / cultivation practice", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Freeze-thaw action","wetting","(large) root activity","earthworm casts or channels","cultivation practice"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(a)(iii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-2"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2bi", topicId: "agsci-2-2-1", conceptId: "cation-exchange-capacity",
+    section: "B", questionRef: "2020 HL Q2(b)(i)",
+    stem: "Cation exchange capacity (CEC) is an important chemical property of soil.",
+    questionText: "What is meant by the term cation exchange capacity?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Measure (allow quantity) of the ability of a soil to hold or to release", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "positive ions or named example showing positive charges", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(b)(i)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-2"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2bii", topicId: "agsci-2-2-1", conceptId: "cec-sand-and-clay",
+    section: "B", questionRef: "2020 HL Q2(b)(ii)",
+    stem: "Cation exchange capacity (CEC) is an important chemical property of soil.",
+    questionText: "Cation exchange capacity is lower in sandy soils than in clay soils. Give two reasons for this.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Sand particles chemically inert", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "have fewer negative charges or clay has more", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(b)(ii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-2"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2biii", topicId: "agsci-2-2-1", conceptId: "raising-cec",
+    section: "B", questionRef: "2020 HL Q2(b)(iii)",
+    stem: "Cation exchange capacity (CEC) is an important chemical property of soil.",
+    questionText: "Describe a method by which cation exchange capacity may be increased in a soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Add organic matter (or example) or add FYM or add slurry or add lime or add humus or add green manure or add clay", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(b)(iii)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-2","agricultural-science-0-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q2c", topicId: "agsci-2-2-1", conceptId: "soil-mineral-test",
+    section: "B", questionRef: "2020 HL Q2(c)",
+    questionText: "Describe an experiment to test for the presence of a named soil mineral.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named mineral", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "Matching reagent", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Correct result", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Soil sample in test tube or distilled water or shake or filter", marks: 4, contextNote: "The scheme names no list of minerals: the reagent and result must match the mineral you named." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q2(c)",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o1a", topicId: "agsci-4-3-1", conceptId: "mountain-and-lowland-sheep",
+    section: "B", questionRef: "2020 HL Q3 Option One (a)",
+    stem: "Question 3, Option One.",
+    questionText: "Compare two named sheep production enterprises that are commonly practised in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mountain sheep production", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Lowland sheep production", marks: 2 },
+    { id: "r-3", kind: "anyN", verbatim: "Low stocking rate or extensive / low production targets / high mortality / single lambs / less labour / outdoor / no flushing or sponging / later lambing / named breed / rough grazing", marks: 12, contextNote: "Comparisons between the enterprises, any three at 4 marks each (3(4)). Each comparison sets a mountain point against its lowland counterpart; the scheme prints the mountain list above \"vs\" and the lowland list: \"High stocking rate or intensive/ high production targets/ low mortality/ more twins/ more labour/ indoor/ flushing or sponging/ earlier lambing/ named breed/ quality grazing\".", group: {"claimMax":3,"perOption":4,"options":["Low stocking rate or extensive","low production targets","high mortality","single lambs","less labour","outdoor","no flushing or sponging","later lambing","named breed","rough grazing"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option One (a)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o1b", topicId: "agsci-4-3-2", conceptId: "flock-preparation-before-mating",
+    section: "B", questionRef: "2020 HL Q3 Option One (b)",
+    stem: "Question 3, Option One.",
+    questionText: "Preparation at breeding time is an important aspect of good flock management. Discuss any four aspects of flock preparation prior to mating.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "One selection point based on: breed or terminal sire or ewe prolificacy or ram fertility or other valid criterion", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "One health point based on: age or mouth or feet or udder or body condition or other valid criterion", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "One flushing or sponging point", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Any one extra point from any of the three above", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option One (b)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o1c", topicId: "agsci-4-3-3", conceptId: "sheep-parasite-control",
+    section: "B", questionRef: "2020 HL Q3 Option One (c)",
+    stem: "Question 3, Option One.",
+    questionText: "Control of internal and external parasites is a routine feature of sheep husbandry. Describe any four methods to control named parasites in sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Bolus: stomach worms / Dipping: maggots or sheep scab / Dosing: stomach worms or intestinal worms or other correct / Land drainage: liver fluke / Liming: liver fluke / Pour-on: lice or worms or other correct / Rotational grazing: worms or other correct / Shearing or dagging: maggots / Vaccination: lungworm", marks: 16, contextNote: "Any four, 4 marks each (4(4)), with the matching parasite in each case.", group: {"claimMax":4,"perOption":4,"options":["Bolus: stomach worms","Dipping: maggots or sheep scab","Dosing: stomach worms or intestinal worms or other correct","Land drainage: liver fluke","Liming: liver fluke","Pour-on: lice or worms or other correct","Rotational grazing: worms or other correct","Shearing or dagging: maggots","Vaccination: lungworm"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option One (c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-2"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2ai", topicId: "agsci-3-3-2", conceptId: "cereal-location-in-ireland",
+    section: "B", questionRef: "2020 HL Q3 Option Two (a)(i)",
+    stem: "Question 3, Option Two.",
+    questionText: "Discuss two features that influence the geographical location of cereal crop production in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Climate or rainfall or sunshine or temperature", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Statement comparing effect of rainfall or sunshine or temperature", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Statement linking stated geographical feature to cereal growth", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Soil", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Heavier soils in northwest and lighter in southeast (or other similar comparison)", marks: 2 },
+    { id: "r-6", kind: "point", verbatim: "Lighter soils better suited to cereal crops", marks: 1 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (a)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2aii", topicId: "agsci-3-3-1", conceptId: "winter-and-spring-cereals",
+    section: "B", questionRef: "2020 HL Q3 Option Two (a)(ii)",
+    stem: "Question 3, Option Two.",
+    questionText: "Cereals in Ireland are sown as either winter crops or spring crops. Outline four differences between the growing of winter and spring cereals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Sown in September or October / frost resistant / harvested mid-July / higher yield / less N applied", marks: 4, contextNote: "Winter cereals: any four, 1 mark each (4(1)).", group: {"claimMax":4,"perOption":1,"options":["Sown in September or October","frost resistant","harvested mid-July","higher yield","less N applied"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Sown in March or April / not frost resistant / harvested August or Sept. / lower yield / more N applied", marks: 4, contextNote: "Spring cereals: any four, 1 mark each (4(1)).", group: {"claimMax":4,"perOption":1,"options":["Sown in March or April","not frost resistant","harvested August or Sept.","lower yield","more N applied"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (a)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2bi", topicId: "agsci-3-3-1", conceptId: "potato-soil-suitability",
+    section: "B", questionRef: "2020 HL Q3 Option Two (b)(i)",
+    stem: "Describe the cultivation of potatoes or of a named root crop under the following headings. The scheme answers for potatoes and adds \"Apply a similar system for a named root crop\".",
+    questionText: "Describe the cultivation of potatoes or of a named root crop under the heading: Soil suitability.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Stone free / pH 5.5 ‒ 6 / sandy loam or similar soil type / deep / well-drained", marks: 4, contextNote: "Any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Stone free","pH 5.5 ‒ 6","sandy loam or similar soil type","deep","well-drained"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (b)(i)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2bii", topicId: "agsci-3-3-1", conceptId: "potato-variety-choice",
+    section: "B", questionRef: "2020 HL Q3 Option Two (b)(ii)",
+    stem: "Describe the cultivation of potatoes or of a named root crop under the following headings. The scheme answers for potatoes and adds \"Apply a similar system for a named root crop\".",
+    questionText: "Describe the cultivation of potatoes or of a named root crop under the heading: Choice of variety.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Maincrop / first earlies / second earlies or other named varieties", marks: 4, contextNote: "Any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Maincrop","first earlies","second earlies or other named varieties"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (b)(ii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2biii", topicId: "agsci-3-3-3", conceptId: "potato-yield",
+    section: "B", questionRef: "2020 HL Q3 Option Two (b)(iii)",
+    stem: "Describe the cultivation of potatoes or of a named root crop under the following headings. The scheme answers for potatoes and adds \"Apply a similar system for a named root crop\".",
+    questionText: "Describe the cultivation of potatoes or of a named root crop under the heading: Yield.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "30 ‒ 40 tonne", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "per hectare", marks: 2, contextNote: "The scheme adds \"(for maincrop or appropriate tonnage for other varieties)\"." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (b)(iii)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2biv", topicId: "agsci-3-3-3", conceptId: "potato-uses",
+    section: "B", questionRef: "2020 HL Q3 Option Two (b)(iv)",
+    stem: "Describe the cultivation of potatoes or of a named root crop under the following headings. The scheme answers for potatoes and adds \"Apply a similar system for a named root crop\".",
+    questionText: "Describe the cultivation of potatoes or of a named root crop under the heading: Uses.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Animal feed / human consumption / seed potatoes", marks: 4, contextNote: "Any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Animal feed","human consumption","seed potatoes"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (b)(iv)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q3o2c", topicId: "agsci-3-3-2", conceptId: "direct-and-indirect-crop-protection",
+    section: "B", questionRef: "2020 HL Q3 Option Two (c)",
+    stem: "Question 3, Option Two.",
+    questionText: "Weeds, pests and diseases in crops can be controlled by direct or indirect methods. Describe any two methods of direct control and any two methods of indirect control.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Herbicide + description / pesticide + description / fungicide + description", marks: 8, contextNote: "Direct control: any two, 2 for the method and 2 for its description each (2(2 + 2)).", group: {"claimMax":2,"perOption":4,"options":["Herbicide + description","pesticide + description","fungicide + description"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Crop rotation + description / growth encouragement+ description / resistant varieties + description / early harvest + description / stubble cleaning + description / biological control + description", marks: 8, contextNote: "Indirect control: any two, 2 for the method and 2 for its description each (2(2 + 2)).", group: {"claimMax":2,"perOption":4,"options":["Crop rotation + description","growth encouragement+ description","resistant varieties + description","early harvest + description","stubble cleaning + description","biological control + description"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q3 Option Two (c)",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-0","agricultural-science-0-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q4a", topicId: "agsci-3-1", conceptId: "grass-pigment-chromatography",
+    section: "B", questionRef: "2020 HL Q4(a)",
+    stem: "In the case of any two of the following, describe a laboratory or field method.",
+    questionText: "Describe a laboratory or field method to extract different pigments from a sample of grass.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Grind grass / in alcohol / using mortar and pestle / filter (extract) / drop of extract onto / chromatography paper / allow to stand / in solvent (or named) / correct result or pigments named", marks: 24, contextNote: "Any six, 4 marks each (6(4)).", group: {"claimMax":6,"perOption":4,"options":["Grind grass","in alcohol","using mortar and pestle","filter (extract)","drop of extract onto","chromatography paper","allow to stand","in solvent (or named)","correct result or pigments named"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q4(a)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-0","agricultural-science-0-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q4b", topicId: "agsci-4-1", conceptId: "animal-enzyme-action",
+    section: "B", questionRef: "2020 HL Q4(b)",
+    stem: "In the case of any two of the following, describe a laboratory or field method.",
+    questionText: "Describe a laboratory or field method to show the action of a named animal enzyme.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Catalase or amylase or other named animal enzyme", marks: 4, contextNote: "Naming the enzyme, 4 marks." },
+    { id: "r-2", kind: "anyN", verbatim: "Liver contains catalase / grind liver with sand / add hydrogen peroxide / control or described / water bath at 37 °C / washing up liquid / buffer solution or optimum pH or pH 7 / add liver / correct result / correct conclusion / repeat", marks: 20, contextNote: "Catalase: any five points, 4 marks each (5(4)).", group: {"claimMax":5,"perOption":4,"options":["Liver contains catalase","grind liver with sand","add hydrogen peroxide","control or described","water bath at 37 °C","washing up liquid","buffer solution or optimum pH or pH 7","add liver","correct result","correct conclusion","repeat"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "catalase",
+                "label": "Catalase",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Catalase or amylase or other named animal enzyme",
+                            "marks": 4,
+                            "contextNote": "Naming the enzyme, 4 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Liver contains catalase / grind liver with sand / add hydrogen peroxide / control or described / water bath at 37 °C / washing up liquid / buffer solution or optimum pH or pH 7 / add liver / correct result / correct conclusion / repeat",
+                            "marks": 20,
+                            "contextNote": "Catalase: any five points, 4 marks each (5(4)).",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Liver contains catalase",
+                                        "grind liver with sand",
+                                        "add hydrogen peroxide",
+                                        "control or described",
+                                        "water bath at 37 °C",
+                                        "washing up liquid",
+                                        "buffer solution or optimum pH or pH 7",
+                                        "add liver",
+                                        "correct result",
+                                        "correct conclusion",
+                                        "repeat"
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          },
+          {
+                "id": "amylase",
+                "label": "Amylase",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Catalase or amylase or other named animal enzyme",
+                            "marks": 4,
+                            "contextNote": "Naming the enzyme, 4 marks.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Saliva contains amylase / saliva into a test tube / add starch solution / control or described / water bath at 37 °C / leave for 5 minutes / buffer solution or optimum pH or pH 7 / test with Benedict’s solution or Fehling’s solution / positive result or brick red colour / correct conclusion / repeat",
+                            "marks": 20,
+                            "contextNote": "Amylase: any five points, 4 marks each (5(4)).",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 4,
+                                  "options": [
+                                        "Saliva contains amylase",
+                                        "saliva into a test tube",
+                                        "add starch solution",
+                                        "control or described",
+                                        "water bath at 37 °C",
+                                        "leave for 5 minutes",
+                                        "buffer solution or optimum pH or pH 7",
+                                        "test with Benedict’s solution or Fehling’s solution",
+                                        "positive result or brick red colour",
+                                        "correct conclusion",
+                                        "repeat"
+                                  ]
+                            },
+                            "id": "r-2"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q4(b)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-3","agricultural-science-0-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q4c", topicId: "agsci-2-2-2", conceptId: "soil-capillarity-comparison",
+    section: "B", questionRef: "2020 HL Q4(c)",
+    stem: "In the case of any two of the following, describe a laboratory or field method.",
+    questionText: "Describe a laboratory or field method to compare capillarity in soil samples.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Two dry soil samples / different types of soil / two open ended glass tubes / cotton wool plugging one end of each / one soil sample into each tube / cotton wool end of both tubes into water / leave for minimum of one hour / correct result / correct conclusion / repeat", marks: 24, contextNote: "Any six, 4 marks each (6(4)).", group: {"claimMax":6,"perOption":4,"options":["Two dry soil samples","different types of soil","two open ended glass tubes","cotton wool plugging one end of each","one soil sample into each tube","cotton wool end of both tubes into water","leave for minimum of one hour","correct result","correct conclusion","repeat"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q4(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-5","agricultural-science-0-1"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q4d", topicId: "agsci-3-3-3", conceptId: "root-crop-yield-estimate",
+    section: "B", questionRef: "2020 HL Q4(d)",
+    stem: "In the case of any two of the following, describe a laboratory or field method.",
+    questionText: "Describe a laboratory or field method to estimate the yield per hectare of a named root crop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named root crop", marks: 4 },
+    { id: "r-2", kind: "anyN", verbatim: "A measured area / dig at harvest time / wash or clean crop / weigh crop / repeat / calculate / details of calculation", marks: 20, contextNote: "Any five, 4 marks each (5(4)).", group: {"claimMax":5,"perOption":4,"options":["A measured area","dig at harvest time","wash or clean crop","weigh crop","repeat","calculate","details of calculation"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q4(d)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q5ai", topicId: "agsci-4-3-2", conceptId: "dry-period-importance",
+    section: "B", questionRef: "2020 HL Q5(a)(i)",
+    stem: "The dry period is of great importance to the overall performance of the dairy cow.",
+    questionText: "Outline two reasons for the importance of the dry period.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Allows repair of udder tissue / allows development of unborn calf / allows production of colostrum / avoids calving difficulty or cow regains body condition / allows milk reserves to be built up or increased milk yield after calving / allows minerals (or named mineral) to be replenished", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Allows repair of udder tissue","allows development of unborn calf","allows production of colostrum","avoids calving difficulty or cow regains body condition","allows milk reserves to be built up or increased milk yield after calving","allows minerals (or named mineral) to be replenished"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q5(a)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q5aii", topicId: "agsci-4-3-2", conceptId: "dry-cow-management",
+    section: "B", questionRef: "2020 HL Q5(a)(ii)",
+    stem: "The dry period is of great importance to the overall performance of the dairy cow.",
+    questionText: "Describe two features of the management of the dairy cow during the dry period.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Body condition score assessed / appropriate feeding regime / (dry cow) mastitis treatment / dosing or other health point", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Body condition score assessed","appropriate feeding regime","(dry cow) mastitis treatment","dosing or other health point"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q5(a)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4","agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q5bi", topicId: "agsci-4-3-2", conceptId: "heat-detection-methods",
+    section: "B", questionRef: "2020 HL Q5(b)(i)",
+    stem: "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd.",
+    questionText: "Describe any two methods of heat detection.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Tail painting or pressure-sensitive paint tag / teaser bulls / electronic activity indicator / mounting activity / chin ball", marks: 8, contextNote: "Any two, 2 for the method and 2 for its description each (2(2 + 2)).", group: {"claimMax":2,"perOption":4,"options":["Tail painting or pressure-sensitive paint tag","teaser bulls","electronic activity indicator","mounting activity","chin ball"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q5(b)(i)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q5bii", topicId: "agsci-4-3-2", conceptId: "ai-advantages-dairy",
+    section: "B", questionRef: "2020 HL Q5(b)(ii)",
+    stem: "Accurate heat detection is crucial in the use of artificial insemination (AI) in the dairy herd.",
+    questionText: "Give two advantages of the use of AI in the dairy herd.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Greater choice of breeds / access to genetically superior bulls / safety / less expensive for smaller herd / accurate calving dates / sexed semen", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Greater choice of breeds","access to genetically superior bulls","safety","less expensive for smaller herd","accurate calving dates","sexed semen"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q5(b)(ii)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q5c", topicId: "agsci-4-3-1", conceptId: "milk-quality-tests",
+    section: "B", questionRef: "2020 HL Q5(c)",
+    questionText: "The hygiene quality and the composition of milk may affect the price per litre paid to the farmer. Describe any two tests carried out on milk to determine hygiene quality or composition. For each test described, state clearly if hygiene quality or composition is being determined.",
+    tariffModel: {"kind":"fixed","notation":"2(2) + 2(2) + 2(2 + 2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Total bacterial count (TBC) / somatic cell count / sediment / % water or % solids / % butterfat or % protein / % lactose / presence of antibiotics / presence of thermoduric bacteria", marks: 4, contextNote: "Test names: any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Total bacterial count (TBC)","somatic cell count","sediment","% water or % solids","% butterfat or % protein","% lactose","presence of antibiotics","presence of thermoduric bacteria"]} },
+    { id: "r-2", kind: "point", verbatim: "Whether hygiene or composition determined for each test named", marks: 4, contextNote: "2 marks for each test (2(2))." },
+    { id: "r-3", kind: "point", verbatim: "Two points of description for each test named", marks: 8, contextNote: "2 + 2 for each test (2(2 + 2))." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q5(c)",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6ai", topicId: "agsci-3-3-1", conceptId: "grass-seedbed-preparation",
+    section: "B", questionRef: "2020 HL Q6(a)(i)",
+    stem: "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass:",
+    questionText: "Describe the stages involved in seed bed preparation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ploughing / harrowing or rotavating / rolling", marks: 4, contextNote: "Any two, 2 marks each (2(2)).", group: {"claimMax":2,"perOption":2,"options":["Ploughing","harrowing or rotavating","rolling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6aii", topicId: "agsci-3-3-1", conceptId: "sowing-grass-seed",
+    section: "B", questionRef: "2020 HL Q6(a)(ii)",
+    stem: "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass:",
+    questionText: "Describe how the seed is sown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Seed drill / seeds and fertiliser / 10 cm apart / 2 cm deep / one-pass system", marks: 6, contextNote: "Any three, 2 marks each (3(2)).", group: {"claimMax":3,"perOption":2,"options":["Seed drill","seeds and fertiliser","10 cm apart","2 cm deep","one-pass system"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-5","agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6aiii", topicId: "agsci-2-3", conceptId: "direct-sowing-in-loam",
+    section: "B", questionRef: "2020 HL Q6(a)(iii)",
+    stem: "Direct sowing is the traditional method of sowing grass seed in Ireland. In relation to direct sowing of grass:",
+    questionText: "Explain the benefit of this cultivation method in a loam soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Improves structure / improves aeration / improves drainage / exposes pests to predators / better soil-seed contact / better capillarity", marks: 6, contextNote: "Any two, 3 marks each (2(3)).", group: {"claimMax":2,"perOption":3,"options":["Improves structure","improves aeration","improves drainage","exposes pests to predators","better soil-seed contact","better capillarity"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(a)(iii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6bi", topicId: "agsci-3-3-2", conceptId: "paddock-grazing-benefits",
+    section: "B", questionRef: "2020 HL Q6(b)(i)",
+    stem: "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment.",
+    questionText: "Give two benefits of paddock grazing in livestock production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Maximum grass utilisation (no waste) / parasite control / leader-follower system / high quality grazing / less labour-intensive", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Maximum grass utilisation (no waste)","parasite control","leader-follower system","high quality grazing","less labour-intensive"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(b)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-6","agricultural-science-1-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6bii", topicId: "agsci-3-3-2", conceptId: "paddock-grazing-environment",
+    section: "B", questionRef: "2020 HL Q6(b)(ii)",
+    stem: "Paddock grazing may be described as being of great benefit to agriculture but of less benefit to the environment.",
+    questionText: "Explain two ways in which paddock grazing may be harmful to the environment.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Monoculture or loss of biodiversity / hedgerow removal or less shelter / habitat removal or habitat loss / poaching / soil erosion / excess fertiliser use", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Monoculture or loss of biodiversity","hedgerow removal or less shelter","habitat removal or habitat loss","poaching","soil erosion","excess fertiliser use"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(b)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q6c", topicId: "agsci-3-3-3", conceptId: "hay-and-silage",
+    section: "B", questionRef: "2020 HL Q6(c)",
+    questionText: "Compare the contrasting methods of grass conservation in hay making and in silage making.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dehydration or drying / less than 20% moisture / stemmy or less leafy / aerobic or uncovered", marks: 8, contextNote: "Hay: any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Dehydration or drying","less than 20% moisture","stemmy or less leafy","aerobic or uncovered"]} },
+    { id: "r-2", kind: "anyN", verbatim: "(Controlled) fermentation / pH reduction / leafy grass / anaerobic or sealed", marks: 8, contextNote: "Silage: any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["(Controlled) fermentation","pH reduction","leafy grass","anaerobic or sealed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q6(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q7a", topicId: "agsci-4-1", conceptId: "stages-of-mitosis",
+    section: "B", questionRef: "2020 HL Q7(a)",
+    questionText: "Mitosis and meiosis are forms of cell division that occur in all agriculturally important organisms. Describe, with the aid of labelled diagrams, the stages of mitosis.",
+    tariffModel: {"kind":"questionTotal","notation":"4(1) + 4(2) + 2(1)"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Stages named in order: Prophase—metaphase—anaphase—telophase", marks: null, contextNote: "1 mark for each stage named in order (4(1))." },
+    { id: "r-2", kind: "criterion", verbatim: "Diagram of each stage", marks: null, contextNote: "2 marks for each diagram (4(2))." },
+    { id: "r-3", kind: "criterion", verbatim: "Any two correct labels other than the stage names", marks: null, contextNote: "1 mark each (2(1))." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q7(a)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q7bi", topicId: "agsci-4-1", conceptId: "meiosis-in-gametes",
+    section: "B", questionRef: "2020 HL Q7(b)(i)",
+    stem: "Meiosis occurs during the production of male and female gametes.",
+    questionText: "Explain the significance of meiosis in gamete formation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Halves (or reduces) diploid number", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "Allows for fertilisation", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q7(b)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q7bii", topicId: "agsci-4-1", conceptId: "crossing-over",
+    section: "B", questionRef: "2020 HL Q7(b)(ii)",
+    stem: "Meiosis occurs during the production of male and female gametes.",
+    questionText: "Outline the process of crossing-over which occurs during meiosis and explain its significance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Homologous chromosomes", marks: 3, contextNote: "Process." },
+    { id: "r-2", kind: "point", verbatim: "Exchange DNA", marks: 3, contextNote: "Process." },
+    { id: "r-3", kind: "point", verbatim: "Allows variation", marks: 2, contextNote: "Significance." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q7(b)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q7ci", topicId: "agsci-4-1", conceptId: "dihybrid-bean-cross",
+    section: "B", questionRef: "2020 HL Q7(c)(i)",
+    stem: "In the bean plant, hairless leaf (H) is dominant over hairy leaf (h), and straight petiole (S) is dominant over spiral petiole (s). A bean plant, heterozygous for both conditions, was self-fertilised and the seeds were collected and germinated and grown to maturity.",
+    questionText: "Outline the details of this cross.",
+    tariffModel: {"kind":"questionTotal","notation":"2(2) + 6, 0"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "HS Hs hS hs Parental gametes", marks: null, contextNote: "2(2) for the parental gametes." },
+    { id: "r-2", kind: "criterion", verbatim: "All offspring genotypes", marks: null, contextNote: "6 or 0: the scheme's grid lists HHSS, HHSs, HhSS, HhSs, HHss, Hhss, hhSS, hhSs and hhss across the sixteen boxes." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q7(c)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q7cii", topicId: "agsci-4-1", conceptId: "dihybrid-bean-proportions",
+    section: "B", questionRef: "2020 HL Q7(c)(ii)",
+    stem: "In the bean plant, hairless leaf (H) is dominant over hairy leaf (h), and straight petiole (S) is dominant over spiral petiole (s). A bean plant, heterozygous for both conditions, was self-fertilised and the seeds were collected and germinated and grown to maturity.",
+    questionText: "State what proportions of the offspring plants you would expect to see with: 1. Hairless leaf 2. Straight petiole 3. Spiral petiole 4. Hairless leaf together with spiral petiole.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Hairless leaf: 12/16 (75%)", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "2. Straight petiole: 12/16 (75%)", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "3. Spiral petiole: 4/16 (25%)", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "4. Hairless leaf with spiral petiole: 3/16 (18.75%)", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q7(c)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8ai", topicId: "agsci-2-3", conceptId: "carbon-cycle-diagram",
+    section: "B", questionRef: "2020 HL Q8(a)(i)",
+    stem: "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions.",
+    questionText: "Use a labelled diagram to illustrate the carbon cycle.",
+    tariffModel: {"kind":"questionTotal","notation":"D 6, 3, 0 + L 5(2)"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram", marks: null, contextNote: "Diagram: 6, 3, 0." },
+    { id: "r-2", kind: "point", verbatim: "CO2 in air/ plants/ animals/ fossil fuels", marks: null, contextNote: "Labels: five, 2 marks each (5(2))." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(a)(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8aii", topicId: "agsci-2-3", conceptId: "cutting-farm-emissions",
+    section: "B", questionRef: "2020 HL Q8(a)(ii)",
+    stem: "It is said that agriculture is the single largest contributor to Irish greenhouse gas emissions.",
+    questionText: "With reference to the carbon cycle, suggest two ways in which the emissions from agriculture could be reduced to help meet Ireland’s climate change targets.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Reduction in national cattle herd / afforestation / energy crops / carbon sequestration / reduction in fossil fuel use or example of increased efficiency / renewable energy sources", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Reduction in national cattle herd","afforestation","energy crops","carbon sequestration","reduction in fossil fuel use or example of increased efficiency","renewable energy sources"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(a)(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8bi", topicId: "agsci-4-3-3", conceptId: "bacterial-diseases-of-farm-animals",
+    section: "B", questionRef: "2020 HL Q8(b)(i)",
+    stem: "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics.",
+    questionText: "Name two common bacterial diseases of farm animals, which are treated with antibiotics.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Mastitis / blackleg / footrot / bacterial scour / farrowing fever / bacterial pneumonia / joint-ill / other correct", marks: 8, contextNote: "Any two, 4 marks each (2(4)).", group: {"claimMax":2,"perOption":4,"options":["Mastitis","blackleg","footrot","bacterial scour","farrowing fever","bacterial pneumonia","joint-ill","other correct"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(b)(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-5","agricultural-science-3-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8bii", topicId: "agsci-4-3-3", conceptId: "antibiotic-resistance",
+    section: "B", questionRef: "2020 HL Q8(b)(ii)",
+    stem: "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics.",
+    questionText: "Outline how antibiotic resistance develops in bacteria.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Overuse of antibiotics / mutation / evolution / natural selection / uptake of genes from plasmids or from viruses or from other resistant bacteria", marks: 12, contextNote: "Any three, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Overuse of antibiotics","mutation","evolution","natural selection","uptake of genes from plasmids or from viruses or from other resistant bacteria"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(b)(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-5"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8biii", topicId: "agsci-4-3-3", conceptId: "disease-control-without-antibiotics",
+    section: "B", questionRef: "2020 HL Q8(b)(iii)",
+    stem: "The overuse of antibiotics to control bacterial diseases in farm animals can lead to these and other bacteria becoming resistant to antibiotics.",
+    questionText: "Suggest a method of disease control other than using antibiotics.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Milking out or hygiene or vaccination or footbath or biosecurity or culling or isolation", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(b)(iii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-0","agricultural-science-2-0","agricultural-science-1-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q8c", topicId: "agsci-4-1", conceptId: "distinguishing-paired-terms",
+    section: "B", questionRef: "2020 HL Q8(c)",
+    questionText: "Distinguish clearly between the members of any three of the following pairs of terms: (i) Ruminant and monogastric digestive systems (ii) Transpiration and translocation (iii) Saturated flow and unsaturated flow in soils (iv) Hypogeal germination and epigeal germination.",
+    tariffModel: {"kind":"bestNofParts","answer":6,"ofParts":8,"perPart":4}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Four-chambered stomach / allows cellulose digestion", marks: 4, contextNote: "(i) Ruminant stomach: two points. Any three pairs: both members of each, 2 + 2 per member (3 × (2 + 2) vs (2 + 2)).", group: {"claimMax":2,"perOption":2,"options":["Four-chambered stomach","allows cellulose digestion"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Single stomach / does not digest cellulose", marks: 4, contextNote: "(i) Monogastric stomach: two points.", group: {"claimMax":2,"perOption":2,"options":["Single stomach","does not digest cellulose"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Loss of water vapour / from the stomata", marks: 4, contextNote: "(ii) Transpiration: two points.", group: {"claimMax":2,"perOption":2,"options":["Loss of water vapour","from the stomata"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Movement of materials / through the phloem", marks: 4, contextNote: "(ii) Translocation: two points.", group: {"claimMax":2,"perOption":2,"options":["Movement of materials","through the phloem"]} },
+    { id: "r-5", kind: "anyN", verbatim: "Movement of water / below water table", marks: 4, contextNote: "(iii) Saturated flow: two points.", group: {"claimMax":2,"perOption":2,"options":["Movement of water","below water table"]} },
+    { id: "r-6", kind: "anyN", verbatim: "Movement of water / above water table", marks: 4, contextNote: "(iii) Unsaturated flow: two points.", group: {"claimMax":2,"perOption":2,"options":["Movement of water","above water table"]} },
+    { id: "r-7", kind: "anyN", verbatim: "Germination below the soil / cotyledons for energy", marks: 4, contextNote: "(iv) Hypogeal germination: two points.", group: {"claimMax":2,"perOption":2,"options":["Germination below the soil","cotyledons for energy"]} },
+    { id: "r-8", kind: "anyN", verbatim: "Germination above the soil / cotyledons above soil", marks: 4, contextNote: "(iv) Epigeal germination: two points.", group: {"claimMax":2,"perOption":2,"options":["Germination above the soil","cotyledons above soil"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q8(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-3"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q9a", topicId: "agsci-3-3-1", conceptId: "chitting-early-potatoes",
+    section: "B", questionRef: "2020 HL Q9(a)",
+    stem: "Give scientific explanations for any four of the following.",
+    questionText: "Give a scientific explanation for: Sprouting or ‘chitting’ of early potatoes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Exposing potato tubers to light / develops shoots / early crop / early harvest / increased yield / reduces incidence of blight", marks: 12, contextNote: "Any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Exposing potato tubers to light","develops shoots","early crop","early harvest","increased yield","reduces incidence of blight"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q9(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q9b", topicId: "agsci-4-1", conceptId: "grit-in-fowl",
+    section: "B", questionRef: "2020 HL Q9(b)",
+    stem: "Give scientific explanations for any four of the following.",
+    questionText: "Give a scientific explanation for: The presence of grit in the digestive tract of fowl.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Fowl have no teeth / gizzard / muscular / (mechanically) grinds food / breaks hard coat / allows digestion", marks: 12, contextNote: "Any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Fowl have no teeth","gizzard","muscular","(mechanically) grinds food","breaks hard coat","allows digestion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q9(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-2-4"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q9c", topicId: "agsci-3-3-2", conceptId: "leatherjackets-after-grass",
+    section: "B", questionRef: "2020 HL Q9(c)",
+    stem: "Give scientific explanations for any four of the following.",
+    questionText: "Give a scientific explanation for: A high incidence of leatherjackets in cereal crops, following grass.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cranefly / active in autumn / lay eggs in tufts of grass / larval stage is leatherjacket / grass and cereal crops are same plant family", marks: 12, contextNote: "Any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Cranefly","active in autumn","lay eggs in tufts of grass","larval stage is leatherjacket","grass and cereal crops are same plant family"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q9(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-1-5","agricultural-science-1-0"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q9d", topicId: "agsci-2-3", conceptId: "deep-ploughing-podzol",
+    section: "B", questionRef: "2020 HL Q9(d)",
+    stem: "Give scientific explanations for any four of the following.",
+    questionText: "Give a scientific explanation for: Deep ploughing of a podzol soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Iron pan / hard or impermeable layer / between A and B horizon / improves drainage / improves aeration / deep ploughing breaks iron pan", marks: 12, contextNote: "Any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Iron pan","hard or impermeable layer","between A and B horizon","improves drainage","improves aeration","deep ploughing breaks iron pan"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q9(d)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-13"},
+    ...examCardCurriculum("agricultural-science", 2020, ["agricultural-science-3-4","agricultural-science-1-6"]), kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2020 Higher Level — © State Examinations Commission.",
+    id: "agsci-2020-hl-q9e", topicId: "agsci-4-3-2", conceptId: "nitrogen-in-winter-finishing-slurry",
+    section: "B", questionRef: "2020 HL Q9(e)",
+    stem: "Give scientific explanations for any four of the following.",
+    questionText: "Give a scientific explanation for: The increased nitrogen content of slurry produced by winter‐finishing cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Increased concentrates diet / high level of protein / protein digested / amino acids broken down in liver / urea produced / removed from blood by kidneys / excreted in urine", marks: 12, contextNote: "Any three points, 4 marks each (3(4)).", group: {"claimMax":3,"perOption":4,"options":["Increased concentrates diet","high level of protein","protein digested","amino acids broken down in liver","urea produced","removed from blood by kidneys","excreted in urine"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2020 Higher — Q9(e)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2020 Higher Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",

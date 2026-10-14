@@ -17,7 +17,8 @@ import fitz
 
 ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 LETTERS = 'abcdefghijklmnop'
-breaks = []  # (page, y) of each printed OR between alternatives; a part never runs past one
+breaks = []  # (page, y) of each printed OR between alternatives, or a section heading; a part never runs past one
+SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b')
 HEAD = re.compile(r'^(?:Q(?:uestion)?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
 OPTION = re.compile(r'^Option\s+(One|Two)\b\.?\s*', re.I)
@@ -58,7 +59,7 @@ def parse(pdf, max_question=20):
     breaks.clear()
     for p, rows in enumerate(pages, 1):
         for i, (y0, y1, x, text) in enumerate(rows):
-            if re.fullmatch(r'OR|Or', text):
+            if re.fullmatch(r'OR|Or', text) or SECTION.match(text):
                 breaks.append((p, y0))
             if FURNITURE.match(text) or x > 0.30:
                 continue
@@ -103,9 +104,22 @@ def parse(pdf, max_question=20):
                     roman = tok
                 else:
                     break
-                events.append(((q, opt, letter, roman), p, y0))
+                events.append(((q, opt, letter, roman), p, _heading_top(rows, i)))
                 s = s[mk.end():]
     return events, bounds
+
+
+def _heading_top(rows, i):
+    """Where a marked part starts. Some schemes print a part's italic heading half a line
+    ABOVE its (b) marker ("Using footbaths:" sits beside, not below, the marker's top), so the
+    part starts at the highest line that overlaps the marker's own line by 15% of its
+    height or more. A neighbour's line box only touches the marker's by a hair, and the marks
+    column (far right) belongs to whatever row it prices, so only the text column beside the
+    marker counts."""
+    y0, y1, x = rows[i][0], rows[i][1], rows[i][2]
+    height = y1 - y0
+    tops = [r[0] for r in rows if x <= r[2] < x + 0.3 and r[0] < y0 and min(r[1], y1) - max(r[0], y0) >= 0.15 * height]
+    return min([y0] + tops)
 
 
 def key_label(key):
@@ -133,7 +147,7 @@ def spans(pdf):
         stop = next((b for b in sorted(breaks) if (page, y) < b < end), None)
         out[key_label(key)] = dict(key=key, start=(page, y), end=stop or end,
                                    stem_end=_point(events, first_child, bounds) if first_child else None)
-    return out, bounds
+    return out, list(bounds) + [pdf]  # the source pdf rides last, for boundary snapping
 
 
 def _point(events, idx, bounds):
@@ -147,15 +161,60 @@ def _point(events, idx, bounds):
     return (events[idx][1], events[idx][2])
 
 
-def _cut(start, end, bounds):
+_RASTERS = {}
+INK = 220  # a grey this light still shows as a dot in a crop, so it counts as ink
+
+
+def _ink_rows(pdf, page):
+    """Per-row ink counts of a rendered page, cached."""
+    key = (pdf, page)
+    if key not in _RASTERS:
+        with fitz.open(pdf) as doc:
+            pix = doc[page - 1].get_pixmap(matrix=fitz.Matrix(2, 2), colorspace=fitz.csGRAY)
+        w, h, data = pix.width, pix.height, pix.samples
+        _RASTERS[key] = [sum(1 for v in data[r * w:(r + 1) * w] if v < INK) for r in range(h)]
+    return _RASTERS[key]
+
+
+def snap(pdf, page, y, before=0.012, after=0.006):
+    """Move a boundary into the gap between two printed lines near y (line boxes overlap; the
+    gap between the glyphs is where a crop should cut).
+
+    A line box often starts a few pixels above its glyphs, so the window reaches a little past
+    y. Among the rows that are as empty as the window allows (table borders keep a few pixels
+    in every row), the one nearest y wins: an earlier, cleaner gap between two lines of the
+    SAME part must not pull the cut back through that part's last line. The cut then moves
+    toward the middle of that gap (at most 0.004 of the page), so rounding a region to three
+    decimals cannot land it on a neighbouring line's ascenders or descenders."""
+    if pdf is None:
+        return y
+    rows = _ink_rows(pdf, page)
+    h = len(rows)
+    lo, hi = max(0, int((y - before) * h)), min(h - 1, int((y + after) * h))
+    floor = min(rows[lo:hi + 1])
+    empty = lambda r: rows[r] <= floor + 1
+    best = min((r for r in range(lo, hi + 1) if empty(r)), key=lambda r: abs(r - y * h))
+    first, last = best, best
+    while first > 0 and empty(first - 1):
+        first -= 1
+    while last < h - 1 and empty(last + 1):
+        last += 1
+    reach = int(0.004 * h)
+    middle = min(max((first + last) / 2, best - reach), best + reach)
+    return middle / h
+
+
+def _cut(start, end, bounds, pdf=None):
     (p0, y0), (p1, y1) = start, end
     pieces = []
     for p in range(p0, p1 + 1):
         top, bottom = bounds[p - 1]
         if top is None:
             continue
-        a = max(y0 - 0.004, 0.0) if p == p0 else top - 0.004
-        b = (y1 - 0.003) if p == p1 else bottom + 0.004
+        # Line boxes overlap by a hair: start just inside this line's box and stop just
+        # inside the next one's, so neither neighbour's descenders nor ascenders leak in.
+        a = snap(pdf, p, y0, before=0.006, after=0.006) if p == p0 else top - 0.004
+        b = snap(pdf, p, y1) if p == p1 else bottom + 0.004
         if b - a > 0.01:
             pieces.append(dict(p=p, r=[0, round(a, 3), 1, round(b, 3)]))
     return pieces
@@ -163,8 +222,9 @@ def _cut(start, end, bounds):
 
 def task_regions(table, ref, with_stems=True):
     """Crop for a task ref: question lead-in, letter lead-in (for a roman part), then the part."""
-    node = table[0][ref] if isinstance(table, tuple) else table[ref]
-    data, bounds = table if isinstance(table, tuple) else (table, None)
+    data, bounds = table
+    node = data[ref]
+    pdf, bounds = bounds[-1], bounds[:-1]
     key = node['key']
     regions = []
     if with_stems:
@@ -175,8 +235,8 @@ def task_regions(table, ref, with_stems=True):
         for parent in parents:
             label = key_label(parent)
             if label != ref and label in data and data[label]['stem_end']:
-                regions += _cut(data[label]['start'], data[label]['stem_end'], bounds)
-    regions += _cut(node['start'], node['end'], bounds)
+                regions += _cut(data[label]['start'], data[label]['stem_end'], bounds, pdf)
+    regions += _cut(node['start'], node['end'], bounds, pdf)
     return regions
 
 

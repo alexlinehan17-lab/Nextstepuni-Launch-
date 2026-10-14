@@ -1727,9 +1727,79 @@ POOLS_2021_ORDINARY = {
     'Q16(c)(v)': (1, ['Compaction or poaching', 'Late or failed germination or lower yields', 'Higher incidence of disease']),
     'Q18(b)(iii)': (1, ['Good conformation', 'Polled (no horns)', 'Smaller calves']),
 }
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY}
+# 2020 Higher (legacy syllabus): Q1 six of ten parts at 10, Q2-Q9 any five more at 48;
+# Q4 two of four methods, Q8 two of three parts, Q9 four of five explanations.
+HIGHER_2020 = '''
+Q1(a)(i)|6|2|3|Physical or economic damage
+Q1(a)(ii)|4|2|3|Ragwort/ (creeping) thistle
+Q1(b)(i)|6|2|3|Egg-nymph-adult
+Q1(b)(ii)|4|2|3|Aphid/ dragonfly/ cockroach
+Q1(c)|10|2|3|Poorest trees removed
+Q1(d)|10|2|3|Vascular cylinder (stele) and xylem and phloem
+Q1(e)|10|2|3|Location of humerus
+Q1(f)|10|2|3|Dagging: Cutting away
+Q1(g)|10|2|3|Long stamens/ stamens outside flower
+Q1(h)|10|2|3|280 ‒ 288 days
+Q1(i)|10|2|3|Slate: Metamorphic
+Q1(j)|10|2|3|Hard testa (coat) or rolling breaks coat
+Q2(a)(i)|4|3|4|Cementation: (Soil) particles pushed together
+Q2(a)(ii)|8|3|4|(Small) root activity
+Q2(a)(iii)|8|3|4|Freeze-thaw action
+Q2(b)(i)|4|3|4|Measure (allow quantity)
+Q2(b)(ii)|4|3|4|Sand particles chemically inert
+Q2(b)(iii)|4|3|4|Add organic matter (or example)
+Q2(c)|16|3|4|Matching reagent
+Q3 Option One (a)|16|4|5|Mountain sheep production
+Q3 Option One (b)|16|4|5|One selection point based on
+Q3 Option One (c)|16|4|5|Bolus: stomach worms
+Q3 Option Two (a)(i)|8|4|6|Climate or rainfall or sunshine or temperature
+Q3 Option Two (a)(ii)|8|4|6|Sown in September or October
+Q3 Option Two (b)(i)|4|4|6|Stone free/ pH 5.5
+Q3 Option Two (b)(ii)|4|4|6|Maincrop/ first earlies
+Q3 Option Two (b)(iii)|4|4|6|30 ‒ 40 tonne
+Q3 Option Two (b)(iv)|4|4|6|Animal feed/ human consumption/ seed potatoes
+Q3 Option Two (c)|16|4|6|Herbicide + description
+Q4(a)|24|5|7|Grind grass/ in alcohol
+Q4(b)|24|5|7|Liver contains catalase
+Q4(c)|24|5|7|Two dry soil samples
+Q4(d)|24|5|7|Named root crop
+Q5(a)(i)|8|5|8|Allows repair of udder tissue
+Q5(a)(ii)|8|5|8|Body condition score assessed
+Q5(b)(i)|8|5|8|Tail painting or pressure-sensitive paint tag
+Q5(b)(ii)|8|5|8|Greater choice of breeds
+Q5(c)|16|5|8|Total bacterial count (TBC)
+Q6(a)(i)|4|6|9|Ploughing/ harrowing or rotavating/ rolling
+Q6(a)(ii)|6|6|9|Seed drill/ seeds and fertiliser
+Q6(a)(iii)|6|6|9|Improves structure/ improves aeration
+Q6(b)(i)|8|6|9|Maximum grass utilisation
+Q6(b)(ii)|8|6|9|Monoculture or loss of biodiversity
+Q6(c)|16|6|9|Dehydration or drying
+Q7(a)|14|6|10|Prophase—metaphase—anaphase—telophase
+Q7(b)(i)|8|6|10|Halves (or reduces) diploid number
+Q7(b)(ii)|8|6|10|Homologous chromosomes
+Q7(c)(i)|10|6|10|Parental gametes
+Q7(c)(ii)|8|6|10|Hairless leaf with spiral petiole
+Q8(a)(i)|16|7|11|Carbon cycle
+Q8(a)(ii)|8|7|11|Reduction in national cattle herd
+Q8(b)(i)|8|7|11|Mastitis/ blackleg/ footrot
+Q8(b)(ii)|12|7|11|Overuse of antibiotics/ mutation
+Q8(b)(iii)|4|7|11|Milking out or hygiene or vaccination
+Q8(c)|24|7|11|Four-chambered stomach
+Q9(a)|12|7|12|Exposing potato tubers to light
+Q9(b)|12|7|12|Fowl have no teeth
+Q9(c)|12|7|12|Cranefly/ active in autumn
+Q9(d)|12|7|12|Iron pan/ hard or impermeable layer
+Q9(e)|12|7|12|Increased concentrates diet
+'''
+POOLS_2020_HIGHER = {
+    'Q4(b)': (1, ['Catalase', 'Amylase']),
+}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER}
 
 SOURCES = [
+    (2020, 'higher', 'A', HIGHER_2020,
+     '18ff9aba31b70f50fd65384ab901a9986a39dd43cc2651474263ed752c3016bb',
+     'a82cef8f5c02ace6ac4049496bb08a65edad60ca08732e0ca01f2b727b2f76da'),
     (2021, 'ordinary', 'G', ORDINARY_2021,
      'e4cad5e9b9c5a3bd923da963916baebeaa7d49044bfb856434a318bd1755df59',
      'efec540781423841de14dfde99b9c751e7f04c6240e4f8db7fd8db9e0855ee8c'),
@@ -1822,7 +1892,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -1967,7 +2037,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60. Remaining editions stay open.')
 
 
 if __name__=='__main__':

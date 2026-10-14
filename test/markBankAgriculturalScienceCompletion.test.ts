@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(50);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(49);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(21);
+    expect(review.paperReviews).toHaveLength(22);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -933,6 +933,39 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     expect(units.find(check => check.question === 'Q18')!.rule).toBe('both (a) and (b) with either (c) or (d)');
   });
 
+  it('authors every 2020 Higher task from the paper and scheme', () => {
+    const year = higher.filter(card => card.year === 2020);
+    expect(year).toHaveLength(60);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2020 HL'));
+    expect(tasks).toHaveLength(60);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      // Examined on the pre-2021 specification: the nodes resolve by exam year.
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    // Q4(b) names one animal enzyme: the scheme marks catalase and amylase as separate methods.
+    const enzyme = get('agsci-2020-hl-q4b');
+    expect(enzyme.answerVariants?.map(variant => variant.id)).toEqual(['catalase', 'amylase']);
+    for (const variant of enzyme.answerVariants!) expect(tariffReconciles({ ...enzyme, rows: variant.rows }), variant.id).toBe(true);
+    // Q8(c): any three of the four pairs is one card; each member of a chosen pair carries 2 + 2.
+    expect(cards.filter(card => card.questionRef.startsWith('2020 HL Q8(c)'))).toHaveLength(1);
+    const pairs = get('agsci-2020-hl-q8c');
+    expect(pairs.totalMarks).toBe(24);
+    expect(pairs.tariffModel).toEqual({ kind: 'bestNofParts', answer: 6, ofParts: 8, perPart: 4 });
+    expect(review.tasks.find(task => task.cardIds.includes(pairs.id))!.selection).toMatchObject({ kind: 'closed', choose: 3, pooled: true });
+    // Q1(e) prints 2(3) + 2(2): the first two correct locations earn 3, whichever two they are.
+    const locations = get('agsci-2020-hl-q1e');
+    expect(locations.rows[0].group?.perOptionSteps).toEqual([3, 3, 2, 2]);
+    expect(marksClaimed(locations, {}, { 'r-1': [2, 3] })).toBe(6);
+    expect(marksClaimed(locations, {}, { 'r-1': [0, 1, 2, 3] })).toBe(10);
+    const units = census.questionMarkChecks.filter(check => check.year === 2020 && check.level === 'higher');
+    expect(units).toHaveLength(10);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1018,7 +1051,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1447);
+    expect(atlas.markBankCards).toHaveLength(1507);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

@@ -67,9 +67,9 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships every override and keeps it byte-identical to the reviewed source map', () => {
-    // 23 Art/Physics maps plus 21 reviewed Agricultural Science editions
-    // (2010–2012 English and Irish, 2021 HL/OL, 2022 HL/OL, 2023 HL/OL, 2024 HL/OL, 2025 HL/OL, 2026 HL/OL).
-    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(44);
+    // 23 Art/Physics maps plus 22 reviewed Agricultural Science editions
+    // (2010–2012 English and Irish, 2020 HL, 2021 HL/OL, 2022 HL/OL, 2023 HL/OL, 2024 HL/OL, 2025 HL/OL, 2026 HL/OL).
+    expect(HOSTED_ANSWER_OVERRIDES.size).toBe(45);
     for (const key of HOSTED_ANSWER_OVERRIDES) {
       const [subjectId, year, fileid] = key.split('|');
       expect(['agricultural-science', 'art', 'physics']).toContain(subjectId);
