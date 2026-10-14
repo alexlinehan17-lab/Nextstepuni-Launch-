@@ -103,6 +103,16 @@ FIGS = {
   'agsci-2016-ol-paper-urinary-system': dict(kind='exampapers', year=2016, fileid='LC024GLP000EV.pdf', page=10, rect=[0.28, 0.5235, 0.79, 0.742], solution=False,
       alt='Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.',
       attribution='SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  # 2013 Ordinary
+  'agsci-2013-ol-paper-farm-machinery': dict(kind='exampapers', year=2013, fileid='LC024GLP000EV.pdf', page=3, rect=[0.09, 0.13, 0.875, 0.722], solution=False,
+      alt='Original Question 2 photographs lettered A to E: A a tractor-mounted implement with rows of spring tines on rotating arms, B a self-propelled harvester with a wide cutting header, C a frame carrying a few long curved deep tines, D a frame of angled concave steel discs, E a heavy smooth cylinder on a drawbar.',
+      attribution='SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.'),
+  'agsci-2013-ol-paper-plant-cell': dict(kind='exampapers', year=2013, fileid='LC024GLP000EV.pdf', page=10, rect=[0.19, 0.212, 0.62, 0.395], solution=False,
+      alt='Original Question 12(b) diagram of a plant cell with the cell membrane labelled; A points into the cell contents near the membrane, B to the dark round body, C to a small oval body at the edge of the large central space, D to the large central space, E to the outer boundary.',
+      attribution='SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  'agsci-2013-ol-paper-grass-species': dict(kind='exampapers', year=2013, fileid='LC024GLP000EV.pdf', page=11, rect=[0.18, 0.262, 0.83, 0.472], solution=False,
+      alt='Original Question 13(b) photographs of four grass flower heads lettered A to D: A a long zig-zag spike of flattened spikelets set edge-on, B a dense soft cylindrical spike, C a loose spike of awned spikelets, D an open branching head with dense one-sided clusters.',
+      attribution='SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.'),
   # 2013 Higher
   'agsci-2013-hl-paper-soil-test-table': dict(kind='exampapers', year=2013, fileid='LC024ALP000EV.pdf', page=2, rect=[0.11, 0.676, 0.945, 0.752], solution=False,
       alt='Original Question 2(a) table of soil test results: nitrogen test high, low, medium; phosphorus test high, medium, medium; potassium test low, low, medium; for Results A, B and C.',

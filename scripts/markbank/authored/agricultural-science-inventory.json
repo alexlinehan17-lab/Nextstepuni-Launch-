@@ -961,79 +961,89 @@
         "sha256": "35f8630e40044a6434575a758b2e2c26550dedc5dc57020583113b833ab16c79",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 62,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "16d8f869c593305a",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. ______________________________________________________________________________ Question 1. A list of common animal dis",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "bab91ba584e07509",
           "page": 6,
           "cue": "any two",
           "context": " (b) Cows may have to be removed or culled from the herd for a number of reasons. Outline any two reasons for culling cows. Reason 1. ________________________________________________________________ _________________________________________________________________________ Reason 2. ____________________________________________",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(b): any two reasons for culling cows from the scheme pool; a marking menu."
         },
         {
           "id": "25e48480df75745e",
           "page": 8,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. ______________________________________________________________________________________ Question 8. (a) (i) Barley is a cereal crop. Name two other cereal crops grown in Ireland. (ii) Giv",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "31b6c84d76847961",
           "page": 9,
           "cue": "any three",
           "context": "e in the soil. (i) Give two characteristic features of the phylum Annelida. (ii) Describe any three benefits earthworms bring to the soil. (iii) Describe an investigation to estimate the earthworm population in a pasture. (b) (i) Describe any three factors involved in soil formation. (ii) Describe two features of a podzol soil.",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q11(a)(ii): any three benefits of earthworms from the scheme pool; a marking menu."
         },
         {
           "id": "6109958a9fd4bb14",
           "page": 9,
           "cue": "any three",
           "context": "ribe an investigation to estimate the earthworm population in a pasture. (b) (i) Describe any three factors involved in soil formation. (ii) Describe two features of a podzol soil. (c) Regular liming of soil is a very important practice. Explain the importance of liming in relation to the following: (i) Soil pH. (ii) Flocculati",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q11(b)(i): any three soil-forming factors from the scheme's five; a marking menu."
         },
         {
           "id": "2e4f1117c27adc08",
           "page": 11,
           "cue": "any two",
           "context": "Page 11 of 12 Question 13. Answer any two of the parts (a), (b), (c), (d). (30, 30) (a) (i) Name two species of coniferous trees grown in Irish forests. (ii) Describe the main features of tree planting in a commercial forest. (iii) Explain why weeds must be controlled ar",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         },
         {
           "id": "2f14927affc1b079",
           "page": 11,
           "cue": "any two",
           "context": " List: Cocksfoot; Italian ryegrass; Meadow foxtail; Perennial ryegrass. A B C D (ii) List any two species that are commonly used in grass seed mixtures for grazing pastures. (iii) Choose one of the species referred to in part (ii) and give two features that make it suitable for grazing. (c) (i) Flushing and sponging of ewes a",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(b)(ii): any two grass seed species from the scheme pool; a marking menu."
         },
         {
           "id": "9ed086aac0f737b4",
           "page": 11,
           "cue": "Choose",
           "context": "any two species that are commonly used in grass seed mixtures for grazing pastures. (iii) Choose one of the species referred to in part (ii) and give two features that make it suitable for grazing. (c) (i) Flushing and sponging of ewes are common practices in sheep production. Explain the terms flushing and sponging as used ",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(b)(iii): one of the species named in (ii); the scheme gives features for PRG, IRG and clover, kept as answer routes on one card."
         },
         {
           "id": "47a35a7b93299b1e",
           "page": 11,
           "cue": "one of",
           "context": " species that are commonly used in grass seed mixtures for grazing pastures. (iii) Choose one of the species referred to in part (ii) and give two features that make it suitable for grazing. (c) (i) Flushing and sponging of ewes are common practices in sheep production. Explain the terms flushing and sponging as used here. (",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q13(b)(iii): the same choice of one species, kept as answer routes on one card."
         },
         {
           "id": "e7baebbfc96e76ca",
           "page": 11,
           "cue": "any three",
           "context": "ol in sheep management. (d) (i) Draw a diagram of the breathing system of a mammal. Label any three parts. (ii) Viral pneumonia is a common illness during calf housing. How can viral pneumonia be prevented? (iii) Describe briefly the life cycle of lungworms. (iv) Outline one method of control of lungworms in cattle.",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(d)(i): any three labels on the candidate's own drawing (a marking criterion)."
         }
       ]
     },
@@ -1052,7 +1062,7 @@
         "sha256": "084add6687d00b873ef3f3bc141f3f1cea33f6d54b4d4049f564f2497751bb72",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 62,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

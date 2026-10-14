@@ -5,6 +5,1080 @@
   "papers": [
     {
       "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+        "markingschemes": "35f8630e40044a6434575a758b2e2c26550dedc5dc57020583113b833ab16c79"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2013 OL Q1",
+          "marksPerResponse": 20,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Caused by mange mite"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q1"
+          ]
+        },
+        {
+          "ref": "2013 OL Q2",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Breaking large clods"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q2"
+          ]
+        },
+        {
+          "ref": "2013 OL Q3",
+          "marksPerResponse": 20,
+          "paperPage": 4,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Kerr Pink/ Rooster"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q3"
+          ]
+        },
+        {
+          "ref": "2013 OL Q4",
+          "marksPerResponse": 20,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Question 4."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q4"
+          ]
+        },
+        {
+          "ref": "2013 OL Q5",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Castration (of male animals)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q5"
+          ]
+        },
+        {
+          "ref": "2013 OL Q6",
+          "marksPerResponse": 20,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Produces both milk and beef"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q6"
+          ]
+        },
+        {
+          "ref": "2013 OL Q7",
+          "marksPerResponse": 20,
+          "paperPage": 7,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Excludes air/ provides anaerobic conditions"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q7"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Wheat/ Oats/ Maize"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Animal feed/ concentrates/ malting"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "(Sandy) loam/ good drainage"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "February – April"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Spraying/ herbicide/ rotation/ pulling"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(b)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Combine harvester/ one sign of ripeness"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(c)",
+          "marksPerResponse": 12,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "True to type/ (minimum) purity"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q8(d)",
+          "marksPerResponse": 20,
+          "paperPage": 8,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Seeds/ count/ soak (for 24 hours)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q8(d)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Landrace/ Large White/ Duroc"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Good conformation/ long body"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(b)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Teeth clipping/ tail docking"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(c)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "sows fed on (sow) ration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(c)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(c)(ii)",
+          "marksPerResponse": 9,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "grouped by size/ fattener ration"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(d)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Amount of feed needed or eaten"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(d)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(d)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "(Young) female pig that has not yet farrowed"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(d)(iii)",
+          "marksPerResponse": 5,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Holds sow during farrowing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q9(d)(iv)",
+          "marksPerResponse": 5,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Treatment to prevent lice infection"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q9(d)(iv)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Hereford/ Aberdeen Angus"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(a)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Smaller/ hardier/ ease of calving"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(b)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "200 - 230 kg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(b)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(b)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "470 - 490 kg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "550-750 kg"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(c)",
+          "marksPerResponse": 16,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Housed in October-November"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(c)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q10(d)",
+          "marksPerResponse": 12,
+          "paperPage": 9,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Moderate feeding level in winter"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q10(d)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Segmented body/ triploblastic"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(a)(ii)",
+          "marksPerResponse": 9,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Improve drainage/ improve aeration/ mix soil"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(a)(iii)",
+          "marksPerResponse": 15,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Mark out area/ quadrat/ random"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(b)(i)",
+          "marksPerResponse": 9,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Parent material/climate"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(b)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Deep O horizon"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(c)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Raises soil pH/ reduces soil acidity"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(c)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(c)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Causes soil particles to clump together"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q11(d)",
+          "marksPerResponse": 8,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Increases organic matter content"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q11(d)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Recording of the characteristics"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Increased performance/ increased growth rates"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(b)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cytoplasm"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(b)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Nucleus / B"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Contain the genes"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(c)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Gametes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(c)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(c)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Genotype F1:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(c)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Phenotype F1:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(c)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q12(d)",
+          "marksPerResponse": 16,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Genotype of offspring:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q12(d)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "(Sitka) spruce"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Select healthy plants/ fence off land"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(a)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Reduces competition/ improves growth of trees"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(a)(iv)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Removes poorer trees/ increased space"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(a)(iv)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(b)(i)",
+          "marksPerResponse": 16,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Meadow foxtail."
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "(red or white) clover. Any two"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(b)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Persistent/ high productivity"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "PRG",
+              "IRG",
+              "Clover"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2013 OL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(c)(i)",
+          "marksPerResponse": 18,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Ewes on bare pasture"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(c)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(c)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Blow fly or green bottle"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(c)(iii)",
+          "marksPerResponse": 9,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Dipping/ pour-on/ spray"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(c)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(d)(i)",
+          "marksPerResponse": 15,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Award full marks if diagram shows trachea"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(d)(i)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(d)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Good ventilation/ vaccination/ house only when dry"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(d)(iii)",
+          "marksPerResponse": 9,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Adult worm in lungs"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2013 OL Q13(d)(iv)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Dosing/ leader- follower system/ vaccination"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2013 OL Q13(d)(iv)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2013,
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
@@ -42791,7 +43865,7 @@
       "level": "ordinary",
       "lang": "ev",
       "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2013,
@@ -43166,6 +44240,204 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 30,
+        "(b)": 30,
+        "(c)": 30,
+        "(d)": 30
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
     {
       "year": 2013,
       "level": "higher",

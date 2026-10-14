@@ -1579,5 +1579,56 @@
       0.752
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-farm-machinery": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-farm-machinery.png",
+    "md5": "0b71e70ee5ba3c0ec47ad733a3798c53",
+    "alt": "Original Question 2 photographs lettered A to E: A a tractor-mounted implement with rows of spring tines on rotating arms, B a self-propelled harvester with a wide cutting header, C a frame carrying a few long curved deep tines, D a frame of angled concave steel discs, E a heavy smooth cylinder on a drawbar.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 3,
+    "cropRect": [
+      0.09,
+      0.13,
+      0.875,
+      0.722
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-plant-cell": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-plant-cell.png",
+    "md5": "d30864b7c2ab7c67cd0114a4fc87192d",
+    "alt": "Original Question 12(b) diagram of a plant cell with the cell membrane labelled; A points into the cell contents near the membrane, B to the dark round body, C to a small oval body at the edge of the large central space, D to the large central space, E to the outer boundary.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 10,
+    "cropRect": [
+      0.19,
+      0.212,
+      0.62,
+      0.395
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2013-ol-paper-grass-species": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2013-ol-paper-grass-species.png",
+    "md5": "fbd5ca0e6a4ef00651af271f6463bdee",
+    "alt": "Original Question 13(b) photographs of four grass flower heads lettered A to D: A a long zig-zag spike of flattened spikelets set edge-on, B a dense soft cylindrical spike, C a loose spike of awned spikelets, D an open branching head with dense one-sided clusters.",
+    "attribution": "SEC Agricultural Science 2013 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2013/LC024GLP000EV.pdf",
+    "sourceSha256": "4681992b7ebd6dc0340ad28122b85dd60f0caf6642481bb1a0f9a123b257d249",
+    "pdfPage": 11,
+    "cropRect": [
+      0.18,
+      0.262,
+      0.83,
+      0.472
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }
