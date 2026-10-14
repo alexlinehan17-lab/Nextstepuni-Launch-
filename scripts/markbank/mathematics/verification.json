@@ -1,8 +1,8 @@
 {
   "date": "2026-10-14",
-  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, 2017 Ordinary Level Paper 1, 2017 Ordinary Level Paper 2, 2016 Higher Level Paper 1, 2016 Higher Level Paper 2, 2016 Ordinary Level Paper 1, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
-  "runtimeCards": 2265,
-  "reviewedTasks": 2265,
+  "scope": "All five 2025 English-language Mathematics papers, 2026 Higher and Ordinary Papers 1 and 2, 2024 Higher and Ordinary Papers 1 and 2, 2023 Higher Level Papers 1 and 2, 2023 Ordinary Level Papers 1 and 2, 2022 Higher Level Paper 1, 2022 Higher Level Paper 2, 2022 Ordinary Level Paper 1, 2022 Ordinary Level Paper 2, 2021 Higher Level Paper 1, 2021 Higher Level Paper 2, 2021 Ordinary Level Paper 1, 2021 Ordinary Level Paper 2, 2020 Higher Level Paper 1, 2020 Higher Level Paper 2, 2020 Ordinary Level Paper 1, 2020 Ordinary Level Paper 2, 2019 Higher Level Paper 1, 2019 Higher Level Paper 2, 2019 Ordinary Level Paper 1, 2019 Ordinary Level Paper 2, 2018 Higher Level Paper 1, 2018 Higher Level Paper 2, 2018 Ordinary Level Paper 1, 2018 Ordinary Level Paper 2, 2017 Higher Level Paper 1, 2017 Higher Level Paper 2, 2017 Ordinary Level Paper 1, 2017 Ordinary Level Paper 2, 2016 Higher Level Paper 1, 2016 Higher Level Paper 2, 2016 Ordinary Level Paper 1, 2016 Ordinary Level Paper 2, Foundation 2015–2024 and 2026, and 2014 Foundation Project Maths Papers 1 and 2",
+  "runtimeCards": 2304,
+  "reviewedTasks": 2304,
   "previousRuntimeIdsRetained": 833,
   "addedRuntimeCards": [
     "maths-2025-hl-p2-q2-a-ii",
@@ -12,7 +12,7 @@
     "maths-2025-hl-p2-q9-d",
     "maths-2025-ol-p1-q3-c-i"
   ],
-  "targetedRegressionTests": 395,
+  "targetedRegressionTests": 398,
   "browser": {
     "engine": "Chrome via Playwright",
     "viewports": [
@@ -1553,5 +1553,27 @@
     "schemeRowFigures": "7 parts carry the scheme-row crop after the reveal (Q2(b) Argand diagram, Q5(a)(i)+(ii) tables over two labelled rows, Q5(b) whose band names U_n, Q8(b)(i) table, Q8(b)(ii) graph, Q9(a)(i) table, Q9(a)(ii) graphs).",
     "coverageBaseline": "1859/3476 asks covered, 0 orphans, 0 excluded, 1617 open",
     "validation": "Deck generation (2,265 built, 0 dropped), Atlas generation and --check (557 placements), audit --check-reviewed, scheme quote check of all 39 cards against the glyph-repaired scheme, ten regression files (395/395), typecheck and diff whitespace check passed."
+  },
+  "ordinary2016p2": {
+    "paper": "2016 Ordinary Level Paper 2",
+    "paperFileid": "LC003GLP200EV.pdf",
+    "schemeFileid": "LC003GLP000EV.pdf",
+    "reviewedAt": "2026-10-14",
+    "newPaper": true,
+    "independentlyReviewedTasks": 39,
+    "existingRuntimeCardsReviewed": 0,
+    "addedRuntimeCards": 39,
+    "historicalRejectsRemaining": 0,
+    "targetedRegressionTests": 398,
+    "previousRuntimeIdsRetained": 2265,
+    "offeredMarks": 300,
+    "candidateMarks": 300,
+    "paperPagesInspected": 20,
+    "schemePagesInspected": 24,
+    "scaleNote": "2016 Ordinary Paper 2 ladders, printed beside each part: 5A 0,5; 5B 0,1,5; 5C 0,1,2,5; 5D 0,2,3,4,5; 10C 0,2,4,10; 15B 0,4,15; 15C 0,3,5,15; 15D 0,2,4,8,15; 20C 0,5,10,20; 20D 0,5,10,15,20. The scale table on scheme page 22 is misheaded “Paper 1”. Q6(a)(i)+(ii) share one printed scale.",
+    "questionFigures": "All 39 cards carry a crop of the printed question, each opened and checked; 24 use visually verified explicit regions (the Q1(a) Venn diagram whose 64 and 48 every part needs, the Q3 circle definition for (b)-(d), John's own table for Q8(c), the farm grid with the barn B for Q9(b)-(e), work grids beside diagrams erased).",
+    "schemeRowFigures": "17 parts carry the scheme-row crop after the reveal (Venn diagram, tree diagram, circle, line graphs, stem-and-leaf plot, construction, pie chart, tables, the parallelogram plot, and bands with mixed numbers or an italic Q the text layer mangles).",
+    "coverageBaseline": "1899/3476 asks covered, 0 orphans, 0 excluded, 1577 open",
+    "validation": "Deck generation (2,304 built, 0 dropped), Atlas generation and --check (566 placements), audit --check-reviewed, scheme quote check of all 39 cards against the glyph-repaired scheme, ten regression files (398/398), typecheck and diff whitespace check passed."
   }
 }

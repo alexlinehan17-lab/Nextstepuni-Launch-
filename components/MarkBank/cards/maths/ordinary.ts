@@ -37281,4 +37281,1725 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q1-a-i", topicId: "maths-1-2", conceptId: "p2-q1-a-i",
+    section: "A", questionRef: "2016 OL Paper 2 Q1(a)(i)",
+    stem: "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48.",
+    questionText: "Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q1-a-i-solution-1", kind: "point", verbatim: "Low Partial Credit — Any work of merit.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-i-solution-2", kind: "point", verbatim: "High Partial Credit — One correct/consistent entry calculated or inserted in diagram.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-i-solution-3", kind: "point", verbatim: "Full Credit — Correctly filled in diagram without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q1-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q1-a-i.png",
+          "srcHash": "bb4d2a51da59135e37b4ba0f819ed1c9",
+          "alt": "The question as printed on the paper — A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram. Cats Dogs 48 64",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p024-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p024-i0.png",
+          "srcHash": "c0e03c1667eca53cf74d2fffa488dd3b",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q1(a)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q1-a-ii", topicId: "maths-1-2", conceptId: "p2-q1-a-ii",
+    section: "A", questionRef: "2016 OL Paper 2 Q1(a)(ii)",
+    stem: "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48.",
+    questionText: "A person is chosen at random from those surveyed. What is the probability that the person owned both a cat and a dog?",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q1-a-ii-solution-1", kind: "point", verbatim: "Model solution — 64/168 or 8/21", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-ii-solution-2", kind: "point", verbatim: "Low Partial Credit — Works with 64 or 168 ≠#(E), #(S).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q1-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q1-a-ii.png",
+          "srcHash": "7ef0320cc66362ffec8242014029dbd5",
+          "alt": "The question as printed on the paper — A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Cats Dogs 64 48 A person is chosen at random from those surveyed. What is the probability that the person owned both a cat and a dog?",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p024-i1",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p024-i1.png",
+          "srcHash": "e4ab105f443a83c511281829bcd0a1d1",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q1(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q1-a-iii", topicId: "maths-1-2", conceptId: "p2-q1-a-iii",
+    section: "A", questionRef: "2016 OL Paper 2 Q1(a)(iii)",
+    stem: "A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. Diagram labels: U, Cats, Dogs, 64, 48. Part (a)(i): Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram.",
+    questionText: "What percentage of the people surveyed owned one animal only? Give your answer correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q1-a-iii-solution-1", kind: "point", verbatim: "Model solution — (37 + 48)/168 = 50∙59 = 50·6%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-iii-solution-2", kind: "point", verbatim: "Low Partial Credit — Works with 37, 48, 168 (or consistent).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-iii-solution-3", kind: "point", verbatim: "High Partial Credit — Works to 85. (or consistent)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-a-iii-solution-4", kind: "point", verbatim: "High Partial Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[24],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q1-a-iii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q1-a-iii.png",
+          "srcHash": "b7895c40a15370ea360a756be7cc67cd",
+          "alt": "The question as printed on the paper — A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Cats Dogs 64 48 (iii) What percentage of the people surveyed owned one animal only? Give your answer correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q1-b", topicId: "maths-1-1", conceptId: "p2-q1-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q1(b)",
+    questionText: "Mandy wants to buy a ticket to the theatre. She can choose a ticket in the Balcony (B) or the Stalls (S). Mandy can go on Monday (M), Wednesday (W) or Friday (F). For an extra charge she can choose a VIP ticket (V) where she will meet the band or she can choose the show only (O). Complete the tree diagram below, and hence or otherwise, find the probability that Mandy chooses a VIP ticket on a Wednesday. You may assume that all choices are equally likely.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2016-ol-p2-q1-b-solution-1", kind: "point", verbatim: "Model solution — BWV = 1/2 × 1/3 × 1/2 = 1/12", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-2", kind: "point", verbatim: "Model solution — SWV = 1/2 × 1/3 × 1/2 = 1/12", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-3", kind: "point", verbatim: "Model solution — = 2/12 or 1/6", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-4", kind: "point", verbatim: "Low Partial Credit — Any relevant continuation of the tree diagram.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-5", kind: "point", verbatim: "Low Partial Credit — One probability formulated correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-6", kind: "point", verbatim: "High Partial Credit — Tree diagram fully correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q1-b-solution-7", kind: "point", verbatim: "High Partial Credit — Probability worked to 2/12 correct but tree diagram incomplete.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,2,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[25],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                3
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q1-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q1-b.png",
+          "srcHash": "e6d624a055477e0dd13b02cc6699e958",
+          "alt": "The question as printed on the paper — Mandy wants to buy a ticket to the theatre. She can choose a ticket in the Balcony (B) or the Stalls (S). Mandy can go on Monday (M), Wednesday (W) or Friday (F). For an extra charge she can choose a VIP ticket (V) where she will meet the band or she can choose the show only (O). Complete the tree diagram below, and hence or otherwise, find the probability that Mandy chooses a VIP ticket on a Wednesday. You may assume that all choices are equally likely. V O M W B F S",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p025-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p025-i0.png",
+          "srcHash": "61d326687a1b07a214e5cd0a2d458f70",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q1(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 10C(0, 2, 4, 10), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q2-a", topicId: "maths-2-3", conceptId: "p2-q2-a",
+    section: "A", questionRef: "2016 OL Paper 2 Q2(a)",
+    questionText: "Find the area of the given triangle. Diagram labels: 8 cm, 30°, 12 cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q2-a-solution-1", kind: "point", verbatim: "Model solution — 1/2 (8)(12) sin 30° = 24 cm²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-2", kind: "point", verbatim: "Low Partial Credit — Writes correct relevant formula for area of triangle. e.g. (1/2 ab sinC)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-3", kind: "point", verbatim: "Mid Partial Credit — One/Two variables correctly substituted into sine formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-4", kind: "point", verbatim: "High Partial Credit — Full correct substitution without calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-5", kind: "point", verbatim: "High Partial Credit — One incorrect or omitted length substitution with area calculated.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-6", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode but otherwise correct. (once only)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-7", kind: "point", verbatim: "High Partial Credit — Radian = −47·42 , Gradian = 21·79.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-8", kind: "point", verbatim: "High Partial Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-a-solution-9", kind: "point", verbatim: "No Credit — Answer as 1/2 (8)(12) or 1/2 sin(30° ) without formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q2-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q2-a.png",
+          "srcHash": "6c4eb324327c2e3335bb53fed23ffa2f",
+          "alt": "The question as printed on the paper — Find the area of the given triangle. 8 cm 30° 12 cm",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q2-b", topicId: "maths-2-3", conceptId: "p2-q2-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q2(b)",
+    questionText: "A triangle has sides of length 3 cm, 5 cm, and 7 cm. Find the size of the largest angle in the triangle.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2016-ol-p2-q2-b-solution-1", kind: "point", verbatim: "Model solution — 7² = 5² + 3² − 2(3)(5) cos A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-2", kind: "point", verbatim: "Model solution — 49 − 9 − 25 = −30 cos A", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-3", kind: "point", verbatim: "Model solution — cos A = −1/2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-4", kind: "point", verbatim: "Model solution — A = 120°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-5", kind: "point", verbatim: "Low Partial Credit — Any work of merit to identify the correct angle required.(Pilot Diagram)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-6", kind: "point", verbatim: "Low Partial Credit — Writes Cosine Rule correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-7", kind: "point", verbatim: "Mid Partial Credit — Two variables correctly substituted into correct relevant formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-8", kind: "point", verbatim: "High Partial Credit — Fully correct substitution.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-9", kind: "point", verbatim: "High Partial Credit — One incorrect substitution followed by correct calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-10", kind: "point", verbatim: "High Partial Credit — Calculates a different angle correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-11", kind: "point", verbatim: "High Partial Credit — (21·79°, 38·21°)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-12", kind: "point", verbatim: "High Partial Credit — A correct or consistent answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-13", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode but otherwise correct. (only once)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-14", kind: "point", verbatim: "High Partial Credit — Radian = 2·09, Gradian = 133·33", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-15", kind: "point", verbatim: "High Partial Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q2-b-solution-16", kind: "point", verbatim: "No Credit — Treats triangle as right angled.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"20D","marks":[0,5,10,15,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[26],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                4
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q2-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q2-b.png",
+          "srcHash": "80d6176d1110dae3834a13949b2f7729",
+          "alt": "The question as printed on the paper — A triangle has sides of length 3 cm, 5 cm, and 7 cm. Find the size of the largest angle in the triangle.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q3-a", topicId: "maths-2-2", conceptId: "p2-q3-a",
+    section: "A", questionRef: "2016 OL Paper 2 Q3(a)",
+    stem: "The circle c has centre (2, –3) and a radius of 4 cm.",
+    questionText: "Write down the equation of c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q3-a-solution-1", kind: "point", verbatim: "Model solution — (x − 2)² + (y + 3)² = 4²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-a-solution-2", kind: "point", verbatim: "Low Partial Credit — Identifies correct formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-a-solution-3", kind: "point", verbatim: "Low Partial Credit — Labels any one of (2, –3) or 4 correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-a-solution-4", kind: "point", verbatim: "Low Partial Credit — Works to r² = 4².", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-a-solution-5", kind: "point", verbatim: "High Partial Credit — Answer as (x − 2)² + (y − 3)² = 4².", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-a-solution-6", kind: "point", verbatim: "High Partial Credit — Substitutes centre or radius correctly into formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q3-a.png",
+          "srcHash": "9356d4cf0de5ecac21179e25cbb919d4",
+          "alt": "The question as printed on the paper — The circle c has centre (2, −3) and a radius of 4 cm. Write down the equation of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q3-b", topicId: "maths-2-2", conceptId: "p2-q3-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q3(b)",
+    stem: "The circle c has centre (2, –3) and a radius of 4 cm.",
+    questionText: "Draw the circle c on the grid opposite. Each unit on the co-ordinate grid is 1 cm.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q3-b-solution-1", kind: "point", verbatim: "Low Partial Credit — Any work of merit e.g. Marks centre on grid.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-b-solution-2", kind: "point", verbatim: "High Partial Credit — Any TWO of the three components, centre, radius or drawing correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q3-b.png",
+          "srcHash": "5e3901bb95197a18d1a7ebab0e325a03",
+          "alt": "The question as printed on the paper — (b) Draw the circle c on the grid y opposite. Each unit on the 2 co-ordinate grid is 1 cm. 1 x -2 -1 1 2 3 4 5 6 7 -1 -2",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p027-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p027-i0.png",
+          "srcHash": "4051e4babe2e86b1d2f49839496c2694",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q3(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q3-c", topicId: "maths-2-2", conceptId: "p2-q3-c",
+    section: "A", questionRef: "2016 OL Paper 2 Q3(c)",
+    stem: "The circle c has centre (2, –3) and a radius of 4 cm.",
+    questionText: "Verify, using algebra, that the point (3, 1) is outside of c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "maths-2016-ol-p2-q3-c-solution-1", kind: "point", verbatim: "Model solution — (3 − 2)² + (1 + 3)²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-2", kind: "point", verbatim: "Model solution — 1 + 16 > 16", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-3", kind: "point", verbatim: "Model solution (alternative) — √((3 − 2)² + (1 + 3)²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-4", kind: "point", verbatim: "Model solution (alternative) — √17 > 4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-5", kind: "point", verbatim: "Low Partial Credit — Plots (3,1).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-6", kind: "point", verbatim: "Low Partial Credit — Identifies correct relevant formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-7", kind: "point", verbatim: "Low Partial Credit — Substitutes (3, 1) into correct/consistent formula .", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-8", kind: "point", verbatim: "High Partial Credit — (1 + 16) or 17 but no conclusion. (>16)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-c-solution-9", kind: "point", verbatim: "High Partial Credit — √17 but no conclusion. (>4)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"10C","marks":[0,2,4,10],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[27],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q3-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q3-c.png",
+          "srcHash": "81a33bc3ef1e31d2f2943d1617356f09",
+          "alt": "The question as printed on the paper — (c) Verify, using algebra, that the point (3, 1) is outside of c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q3-d", topicId: "maths-2-2", conceptId: "p2-q3-d",
+    section: "A", questionRef: "2016 OL Paper 2 Q3(d)",
+    stem: "The circle c has centre (2, –3) and a radius of 4 cm.",
+    questionText: "Find the area of the smallest four-sided figure that will fit around the circle c.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q3-d-solution-1", kind: "point", verbatim: "Model solution — 8 × 8 = 64 cm²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-d-solution-2", kind: "point", verbatim: "Low Partial Credit — Drawing on grid. (Any one dimension)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-d-solution-3", kind: "point", verbatim: "High Partial Credit — Identifies correct/consistent square.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q3-d-solution-4", kind: "point", verbatim: "High Partial Credit — Scale error in dimensions calculated correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[28],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                5
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q3-d",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q3-d.png",
+          "srcHash": "321a59223a0d9d0314e838a09599b375",
+          "alt": "The question as printed on the paper — Find the area of the smallest four-sided figure that will fit around the circle c.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q4-a", topicId: "maths-2-2", conceptId: "p2-q4-a",
+    section: "A", questionRef: "2016 OL Paper 2 Q4(a)",
+    questionText: "The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c ∈ ℤ.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2016-ol-p2-q4-a-solution-1", kind: "point", verbatim: "Model solution — m = (0 − 5)/(2 − 4) = 5/2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-2", kind: "point", verbatim: "Model solution — y − 5 = 5/2 (x − 4)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-3", kind: "point", verbatim: "Model solution — 2y − 10 = 5x − 20", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-4", kind: "point", verbatim: "Model solution — 5x − 2y − 10 = 0", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-5", kind: "point", verbatim: "Low Partial Credit — Identifies a correct relevant formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-6", kind: "point", verbatim: "Mid Partial Credit — Slope formula with some substitution.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-7", kind: "point", verbatim: "Mid Partial Credit — Equation of line formula with some substitution.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-8", kind: "point", verbatim: "Mid Partial Credit — Slope correct and stops.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-9", kind: "point", verbatim: "High Partial Credit — Equation of line formula fully substituted correctly (consistently).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-a-solution-10", kind: "point", verbatim: "Note — Accept (−5x + 2y + 10 = 0, in any order).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"15D","marks":[0,2,4,8,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q4-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q4-a.png",
+          "srcHash": "c965a012b150dce57691e38d45039b19",
+          "alt": "The question as printed on the paper — The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c∈ℤ.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q4-b", topicId: "maths-2-2", conceptId: "p2-q4-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q4(b)",
+    questionText: "Draw the line k: x + 2y = 8 on the axes below.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q4-b-solution-1", kind: "point", verbatim: "Model solution — x = 0, y = 4 ⇒ (0, 4)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-b-solution-2", kind: "point", verbatim: "Model solution — y = 0, x = 8 ⇒ (8, 0)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-b-solution-3", kind: "point", verbatim: "Low Partial Credit — x = 0 or y = 0 written.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-b-solution-4", kind: "point", verbatim: "Low Partial Credit — Any work of merit working with line k.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-b-solution-5", kind: "point", verbatim: "High Partial Credit — Finds two correct points but no plots or line on graph.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[29],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q4-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q4-b.png",
+          "srcHash": "b6f07e02be31b9c4ec56828171b7491d",
+          "alt": "The question as printed on the paper — Draw the line k: x + 2y = 8 on the axes below. y 6 5 4 3 2 1 x -1 1 2 3 4 5 6 7 8 9 -1 -2 -3 -4",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p029-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p029-i0.png",
+          "srcHash": "b681e5f74bc8b75f51f588c6bfcb4708",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q4(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q4-c", topicId: "maths-2-2", conceptId: "p2-q4-c",
+    section: "A", questionRef: "2016 OL Paper 2 Q4(c)",
+    stem: "Part (a): The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c ∈ ℤ. Part (b): Draw the line k: x + 2y = 8 on the axes below.",
+    questionText: "Use a graphic, numeric or algebraic method to find the co-ordinates of l ∩ k.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q4-c-solution-1", kind: "point", verbatim: "Model solution, algebraic — x + 2y = 8", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-2", kind: "point", verbatim: "Model solution, algebraic — 5x − 2y = 10", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-3", kind: "point", verbatim: "Model solution, algebraic — 6x = 18", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-4", kind: "point", verbatim: "Model solution, algebraic — x = 3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-5", kind: "point", verbatim: "Graphical method, Low Partial Credit — Effort to draw line l.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-6", kind: "point", verbatim: "Graphical method, High Partial Credit — l drawn correctly on grid ( in this part) and point of intersection marked but not written.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-7", kind: "point", verbatim: "Numerical method, Low Partial Credit — Effort at substituting a value of x into equations of one or both lines.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-8", kind: "point", verbatim: "Algebraic method, Low Partial Credit — Effort to solve using simultaneous equations.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-9", kind: "point", verbatim: "Algebraic method, High Partial Credit — x and/ or y calculated correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q4-c-solution-10", kind: "point", verbatim: "Algebraic method, High Partial Credit — Writes l∩k as (y, x).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[30],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                6
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q4-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q4-c.png",
+          "srcHash": "2b5cf2cd455028a21fe8a61c21779773",
+          "alt": "The question as printed on the paper — The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c∈ℤ. Draw the line k: x + 2y = 8 on the axes below. Use a graphic, numeric or algebraic method to find the co-ordinates of l∩k.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p030-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p030-i0.png",
+          "srcHash": "dfcfb183ba6674758b3ab9a5a8fcabea",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q4(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q5-a", topicId: "maths-1-6", conceptId: "p2-q5-a",
+    section: "A", questionRef: "2016 OL Paper 2 Q5(a)",
+    stem: "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+    questionText: "Find the mode and the median of the data.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2016-ol-p2-q5-a-solution-1", kind: "point", verbatim: "Model solution — Mode = 12", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-a-solution-2", kind: "point", verbatim: "Model solution — Median = (24+25)÷2=24·5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-a-solution-3", kind: "point", verbatim: "Low Partial Credit — Any work of merit in finding Mode or Median.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-a-solution-4", kind: "point", verbatim: "High Partial Credit — Mode or Median correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-a-solution-5", kind: "point", verbatim: "Full Credit — Both answers correct without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,3,5,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q5-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q5-a.png",
+          "srcHash": "236083e329d9bea344b9800c4eab3be0",
+          "alt": "The question as printed on the paper — The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes Find the mode and the median of the data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q5-b", topicId: "maths-1-6", conceptId: "p2-q5-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q5(b)",
+    stem: "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+    questionText: "Find the mean waiting time for Week 1, correct to 1 decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q5-b-solution-1", kind: "point", verbatim: "Model solution — =22·6875", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-b-solution-2", kind: "point", verbatim: "Model solution — =22·7", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-b-solution-3", kind: "point", verbatim: "High Partial Credit — Count correct (16), (21).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-b-solution-4", kind: "point", verbatim: "Full Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q5-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q5-b.png",
+          "srcHash": "e6d221512ac6688fabcda6f212fc6587",
+          "alt": "The question as printed on the paper — The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes Find the mean waiting time for Week 1, correct to 1 decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p031-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p031-i0.png",
+          "srcHash": "24cf39cd635ffc594e8dd31f31a24af3",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q5(b), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit, Full Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q5-c", topicId: "maths-1-6", conceptId: "p2-q5-c",
+    section: "A", questionRef: "2016 OL Paper 2 Q5(c)",
+    stem: "The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 1: 0 | 5 8; 1 | 2 2 2 3; 2 | 0 4 5 7; 3 | 0 1 2 4 4; 4 | 4. Key: 1|3 = 13 minutes.",
+    questionText: "The waiting times were recorded again the following week. The results were: 27, 23, 6, 15, 18, 29, 16, 17, 15, 18, 40, 32, 16, 12, 28, 9. Show these results on the plot above (under Week 2), creating a back-to-back stem and leaf plot to display the data.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q5-c-solution-1", kind: "point", verbatim: "Low Partial Credit — Any effort at ordering results.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-c-solution-2", kind: "point", verbatim: "Low Partial Credit — Any correct entry.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q5-c-solution-3", kind: "point", verbatim: "High Partial Credit — Nine correct entries.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[31],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                7
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q5-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q5-c.png",
+          "srcHash": "781591d96e27f7a374d2a621f06ed057",
+          "alt": "The question as printed on the paper — The waiting times, in minutes, for 16 patients at a dentist’s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes The waiting times were recorded again the following week. The results were: 27, 23, 6, 15, 18, 29, 16, 17, 15, 18, 40, 32, 16, 12, 28, 9. Show these results on the plot above (under Week 2), creating a back-to-back stem and leaf plot to display the data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p031-i1",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p031-i1.png",
+          "srcHash": "287138a6a2d1fe716e57234df0275dc6",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q5(c), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q6-a-i", topicId: "maths-2-1", conceptId: "p2-q6-a-i",
+    section: "A", questionRef: "2016 OL Paper 2 Q6(a)(i), (a)(ii)",
+    questionText: "(i) Construct a triangle ABC, where |AB| = 7 cm, |∠BAC| = 50°, and |AC| = 4·5 cm. (ii) Measure the length of [BC] and hence find the sum of the lengths of the sides [AC] and [BC], correct to one decimal place. |AC| = 4·5 cm; |BC| = _; Sum = _.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q6-a-i-solution-1", kind: "point", verbatim: "Model solution — |AC| = 4·5", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-2", kind: "point", verbatim: "Model solution — |BC| = 5·4", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-3", kind: "point", verbatim: "Model solution — Sum = 9∙9 cm", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-4", kind: "point", verbatim: "Low Partial Credit — One correct line or angle drawn.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-5", kind: "point", verbatim: "Low Partial Credit — Any triangle drawn.(Pilot Diagram)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-6", kind: "point", verbatim: "Mid Partial Credit — Two correct elements drawn & stops.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-7", kind: "point", verbatim: "High Partial Credit — Construction correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-8", kind: "point", verbatim: "High Partial Credit — Two correct elements and finished correctly/consistently.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-a-i-solution-9", kind: "point", verbatim: "High Partial Credit — Tolerance : ±0·25 cm , ± 2·5°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q6-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q6-a-i.png",
+          "srcHash": "a9455f8ec375b3c857c43f48ccb52716",
+          "alt": "The question as printed on the paper — Construct a triangle ABC, where |AB| = 7 cm, |∠BAC| = 50°, and |AC| = 4·5 cm. (a) (i) Measure the length of [BC] and hence find the sum of the lengths of the (ii) sides [AC] and [BC], correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p032-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p032-i0.png",
+          "srcHash": "3090aacdc92a0995e661aada34bbf7eb",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q6(a)(i), Q6(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D(0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q6-b", topicId: "maths-2-1", conceptId: "p2-q6-b",
+    section: "A", questionRef: "2016 OL Paper 2 Q6(b)",
+    questionText: "State which one of the following triangles can not be constructed. Give a reason to support your answer. Table: Triangle 1: Sides of lengths (cm) 3·2, 2·9, 5·4. Triangle 2: Sides of lengths (cm) 6, 7, 15.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q6-b-solution-1", kind: "point", verbatim: "Model solution — Answer: Triangle 2", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-b-solution-2", kind: "point", verbatim: "Model solution — Reason: The sides 6 and 7 are not long enough to reach the side of length 15.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-b-solution-3", kind: "point", verbatim: "No Credit — Nominates Triangle 1.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-b-solution-4", kind: "point", verbatim: "Partial Credit — Triangle correct but no reason.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-b-solution-5", kind: "point", verbatim: "Partial Credit — Reason correct but no Triangle.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-b-solution-6", kind: "point", verbatim: "Partial Credit — Any work of merit leading towards correct triangle or reason.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                8
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q6-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q6-b.png",
+          "srcHash": "fd9bfc1ea1a6bb40b1d61cf4c7d35daa",
+          "alt": "The question as printed on the paper — State which one of the following triangles can not be constructed. Give a reason to support your answer. Triangle 1 Triangle 2 Sides of lengths (cm) Sides of lengths (cm) 3·2, 2·9, 5·4 6, 7, 15",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q6-c", topicId: "maths-2-1", conceptId: "p2-q6-c",
+    section: "A", questionRef: "2016 OL Paper 2 Q6(c)",
+    questionText: "The lengths of the sides of a right-angled triangle are 5, x, and x + 1 as shown. Use the Theorem of Pythagoras to find the value of x.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2016-ol-p2-q6-c-solution-1", kind: "point", verbatim: "Model solution — (x + 1)² = 5² + x²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-2", kind: "point", verbatim: "Model solution — x² + 2x + 1 = 25 + x²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-3", kind: "point", verbatim: "Model solution — 2x = 24", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-4", kind: "point", verbatim: "Model solution — x = 12", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-5", kind: "point", verbatim: "Low Partial Credit — Pythagoras with some substitution.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-6", kind: "point", verbatim: "Low Partial Credit — Trial and error to try and find x = 12.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-7", kind: "point", verbatim: "High Partial Credit — Pythagoras fully substituted correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-8", kind: "point", verbatim: "Full Credit — 13² = 12² + 5².", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q6-c-solution-9", kind: "point", verbatim: "Full Credit — (5, 12, 13) identified.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,3,5,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[32],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                9
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q6-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q6-c.png",
+          "srcHash": "1655c00864446b813e00a5b1b9670e3e",
+          "alt": "The question as printed on the paper — The lengths of the sides of a right-angled triangle are 5, x, and x + 1 as shown. Use the Theorem of Pythagoras to find the value of x. x + 1 5 ∟ x",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-a", topicId: "maths-3-1", conceptId: "p2-q7-a",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(a)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes.",
+    questionText: "The Atomium is modelled on an iron atom that has been magnified 165 billion times. Given that a billion is a thousand million, write 165 billion in the form a × 10ⁿ, where n ∈ ℤ, and 1 ≤ a < 10.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-a-solution-1", kind: "point", verbatim: "Model solution — 165 × 10³ × 10⁶", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-2", kind: "point", verbatim: "Model solution — = 165 × 10⁹", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-3", kind: "point", verbatim: "Model solution — = 1·65 × 10¹¹", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-4", kind: "point", verbatim: "Partial Credit, accept any one of the following — 16·5 × 10¹⁰", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-5", kind: "point", verbatim: "Partial Credit, accept any one of the following — 165 × 10⁹", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-6", kind: "point", verbatim: "Partial Credit, accept any one of the following — 10⁹", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-7", kind: "point", verbatim: "Partial Credit, accept any one of the following — 10⁶", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-8", kind: "point", verbatim: "Partial Credit, accept any one of the following — 10³", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-9", kind: "point", verbatim: "Partial Credit, accept any one of the following — 165 000 000 000", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-a-solution-10", kind: "point", verbatim: "Partial Credit, accept any one of the following — 1∙65", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"15B","marks":[0,4,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-a.png",
+          "srcHash": "2cc1724dd40a0acb4d29af7d0a831122",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The Atomium is modelled on an iron atom that has been magnified 165 billion times. Given that a billion is a thousand million, write 165 billion in the form a × 10ⁿ, where n ∈ ℤ, and 1 ≤ a < 10.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-b-i", topicId: "maths-3-4", conceptId: "p2-q7-b-i",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(b)(i)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+    questionText: "Find the radius of each sphere.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-b-i-solution-1", kind: "point", verbatim: "Model solution — r = 9 m", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-i-solution-2", kind: "point", verbatim: "Partial Credit — Writes answer as 18/2 or similar.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-b-i.png",
+          "srcHash": "a9fa18f330b81d818573a690995c7359",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The diameter of each sphere in the Atomium is 18 metres. Find the radius of each sphere.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-b-ii", topicId: "maths-3-4", conceptId: "p2-q7-b-ii",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(b)(ii)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+    questionText: "Find the volume of each sphere, correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-1", kind: "point", verbatim: "Model solution — V = 4/3 πr³", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-2", kind: "point", verbatim: "Model solution — 4/3 π(9)³", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-3", kind: "point", verbatim: "Model solution — = 972π", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-4", kind: "point", verbatim: "Model solution — = 3053·63 m³", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Identifies correct volume formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — Writes answer from part (b)(i) in this section.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-7", kind: "point", verbatim: "High Partial Credit — Formula fully substituted correctly (consistently).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-8", kind: "point", verbatim: "High Partial Credit — One error in substitution followed by correct calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-9", kind: "point", verbatim: "High Partial Credit — Answer as 972π.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-10", kind: "point", verbatim: "Note — π = 3·14, (3052∙08 m³)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-b-ii-solution-11", kind: "point", verbatim: "Note — π = 22/7 , (3054∙86 m³)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-b-ii.png",
+          "srcHash": "2d2196f7a673d98bb33def68e92f90e8",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The diameter of each sphere in the Atomium is 18 metres. Find the volume of each sphere, correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-c", topicId: "maths-3-4", conceptId: "p2-q7-c",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(c)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (b): The diameter of each sphere in the Atomium is 18 metres.",
+    questionText: "Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-c-solution-1", kind: "point", verbatim: "Model solution — A = 9 × 4πr²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-2", kind: "point", verbatim: "Model solution — = 9 × 4 × π × (9)²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-3", kind: "point", verbatim: "Model solution — = 2916π", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-4", kind: "point", verbatim: "Model solution — = 9160·88", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-5", kind: "point", verbatim: "Model solution — = 9161 m²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-6", kind: "point", verbatim: "Low Partial Credit — Identifies correct formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-7", kind: "point", verbatim: "Low Partial Credit — Identifies radius correctly or consistently (in this part).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-8", kind: "point", verbatim: "Low Partial Credit — Indicates multiplication by 9.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-9", kind: "point", verbatim: "High Partial Credit — Expression fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-10", kind: "point", verbatim: "High Partial Credit — S.A. of one sphere correctly calculated.(1018 m²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-11", kind: "point", verbatim: "Note — π = 3·14, (9156 m²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-c-solution-12", kind: "point", verbatim: "Note — π = 22/7 , (9165 m²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[33],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                10
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-c.png",
+          "srcHash": "bf5dcc3c348110d2c6ecf6530cc9cadb",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-d-i", topicId: "maths-3-4", conceptId: "p2-q7-d-i",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(d)(i)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m.",
+    questionText: "Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m².",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-d-i-solution-1", kind: "point", verbatim: "Model solution — CSA = 8 × 2 × π × r × ℎ", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-2", kind: "point", verbatim: "Model solution — = 8 × 2 × π × 1·65 × 23", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-3", kind: "point", verbatim: "Model solution — = 8(75∙9π)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-4", kind: "point", verbatim: "Model solution — = 607·2π", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-5", kind: "point", verbatim: "Model solution — = 1907·57", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-6", kind: "point", verbatim: "Model solution — = 1908 m²", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-7", kind: "point", verbatim: "Low Partial Credit — Identifies correct formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-8", kind: "point", verbatim: "Low Partial Credit — Identifies r = 1·65, or ℎ = 23.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-9", kind: "point", verbatim: "Low Partial Credit — Indicates multiplication by 8.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-10", kind: "point", verbatim: "High Partial Credit — Expression fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-11", kind: "point", verbatim: "High Partial Credit — Area of one pipe correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-12", kind: "point", verbatim: "Note — π = 3·14, (1907 m²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-i-solution-13", kind: "point", verbatim: "Note — π = 22/7 , (1908 m²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-d-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-d-i.png",
+          "srcHash": "3fe742140efc21e8a05dd51d2824fa53",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m. Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m².",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-d-ii", topicId: "maths-3-4", conceptId: "p2-q7-d-ii",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(d)(ii)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m.",
+    questionText: "The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1·45 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m². Find the length of one pipe. Give your answer correct to the nearest metre.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 15,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-1", kind: "point", verbatim: "Model solution — 3170/12 = 264·17", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-2", kind: "point", verbatim: "Model solution — 2 × π × (1·45) × ℎ = 264·17", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-3", kind: "point", verbatim: "Model solution — ℎ = 28·997", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-4", kind: "point", verbatim: "Model solution — ℎ = 29", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — ÷ 12 indicated.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-6", kind: "point", verbatim: "Low Partial Credit — Identifies correct formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-7", kind: "point", verbatim: "Low Partial Credit — Indicates r = 1·45.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-ii-solution-8", kind: "point", verbatim: "High Partial Credit — Equation fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"15C","marks":[0,3,5,15],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-d-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-d-ii.png",
+          "srcHash": "20b7be014a29cc988c87ec56d42c427f",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m. The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1·45 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m². Find the length of one pipe. Give your answer correct to the nearest metre.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q7-d-iii", topicId: "maths-3-3", conceptId: "p2-q7-d-iii",
+    section: "B", questionRef: "2016 OL Paper 2 Q7(d)(iii)",
+    stem: "The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Part (d): Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m. Part (c): Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m². Part (d)(i): Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m². Part (d)(ii): The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1·45 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m². Find the length of one pipe. Give your answer correct to the nearest metre.",
+    questionText: "The curved surfaces of the 20 pipes and 9 spheres are covered in stainless steel. Stainless steel costs €70 per square metre. Use the areas you have calculated or have been given above to find the approximate cost of the stainless steel required to resurface the Atomium.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q7-d-iii-solution-1", kind: "point", verbatim: "Model solution — 1908 + 3170 + 9161 = 14 239", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-iii-solution-2", kind: "point", verbatim: "Model solution — 14 239 × 70 =", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q7-d-iii-solution-3", kind: "point", verbatim: "Model solution — €996 730", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[34],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                11
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q7-d-iii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q7-d-iii.png",
+          "srcHash": "3bb67b60f7e90fcdbf06763337226c36",
+          "alt": "The question as printed on the paper — The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1·65 m and a length of 23 m. (iii) The curved surfaces of the 20 pipes and 9 spheres are covered in stainless steel. Stainless steel costs €70 per square metre. Use the areas you have calculated or have been given above to find the approximate cost of the stainless steel required to resurface the Atomium.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-a", topicId: "maths-1-6", conceptId: "p2-q8-a",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(a)",
+    stem: "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _.",
+    questionText: "Find the percentage used for the ‘Other’ activity, and write it in the table.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-a-solution-1", kind: "point", verbatim: "Model solution — 100 − 76 = 24%", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-a-solution-2", kind: "point", verbatim: "Partial Credit — 100% − (any relevant percentage).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-a-solution-3", kind: "point", verbatim: "Partial Credit — Indicates addition of given percentages.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-a",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-a.png",
+          "srcHash": "8830a4eeb6dbcafb0ca47ef5d7269117",
+          "alt": "The question as printed on the paper — The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing ‒ Baths and 21% Taps Personal Washing ‒ Showers 12% Clothes Washing 13% 46·8° Other Find the percentage used for the ‘Other’ activity, and write it in the table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-b-i", topicId: "maths-1-6", conceptId: "p2-q8-b-i",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(b)(i)",
+    stem: "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _. Part (b): A pie chart representing the data is to be drawn.",
+    questionText: "The size of the angle representing ‘Clothes Washing’ on the pie chart is 46·8°. Complete the table above to show the remaining angles in the pie chart.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-b-i-solution-1", kind: "point", verbatim: "Model solution — 1% = 46∙8/13 = 3∙6°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-2", kind: "point", verbatim: "Model solution (alternative) — 360°/100 = 3∙6°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-3", kind: "point", verbatim: "Low Partial Credit — Works with 3·6 or similar.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-4", kind: "point", verbatim: "Low Partial Credit — One correct angle.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-5", kind: "point", verbatim: "Low Partial Credit — Three incorrect but consistent angles.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-6", kind: "point", verbatim: "Low Partial Credit — Any use of 360°", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-7", kind: "point", verbatim: "High Partial Credit — Three correct angles.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-8", kind: "point", verbatim: "High Partial Credit — All incorrect consistent angles.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-i-solution-9", kind: "point", verbatim: "High Partial Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[35],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                12
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-b-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-b-i.png",
+          "srcHash": "53cf9082693cb2b934855870e5df291a",
+          "alt": "The question as printed on the paper — The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing ‒ Baths and 21% Taps Personal Washing ‒ Showers 12% Clothes Washing 13% 46·8° Other A pie chart representing the data is to be drawn. The size of the angle representing ‘Clothes Washing’ on the pie chart is 46·8°. Complete the table above to show the remaining angles in the pie chart.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p035-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p035-i0.png",
+          "srcHash": "407f63a05117780b016fb3e53fa1abcd",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q8(b)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-b-ii", topicId: "maths-1-6", conceptId: "p2-q8-b-ii",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(b)(ii)",
+    stem: "The following table shows some of the data gathered by a company on average water usage in homes. Table: Activity, Percentage used, Angle (Degrees). WC flushing, 30%, _; Personal Washing – Baths and Taps, 21%, _; Personal Washing – Showers, 12%, _; Clothes Washing, 13%, 46·8°; Other, _, _. Part (b): A pie chart representing the data is to be drawn. Part (b)(i): The size of the angle representing ‘Clothes Washing’ on the pie chart is 46·8°. Complete the table above to show the remaining angles in the pie chart.",
+    questionText: "Draw a pie chart to represent the data. Label the sector corresponding to each activity and write the size of the angle in each sector.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-b-ii-solution-1", kind: "point", verbatim: "Low Partial Credit — Circle with a sector(s) drawn.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-ii-solution-2", kind: "point", verbatim: "High Partial Credit — Any 3 sectors drawn correctly. i.e. (with angle and label indicated).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-b-ii-solution-3", kind: "point", verbatim: "High Partial Credit — All sectors drawn correctly but either angle or label omitted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[36],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                13
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-b-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-b-ii.png",
+          "srcHash": "1e5047c43dd948a953e6ee373b4ed3c2",
+          "alt": "The question as printed on the paper — The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing ‒ Baths and 21% Taps Personal Washing ‒ Showers 12% Clothes Washing 13% 46·8° Other A pie chart representing the data is to be drawn. Draw a pie chart to represent the data. Label the sector corresponding to each activity and write the size of the angle in each sector.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p036-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p036-i0.png",
+          "srcHash": "c8a5732120c9588baa708678755497e6",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q8(b)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-c-i", topicId: "maths-3-3", conceptId: "p2-q8-c-i",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(c)(i)",
+    stem: "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _.",
+    questionText: "Complete the table to show the number of litres used for the various activities and the total number of litres used in the week.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-c-i-solution-1", kind: "point", verbatim: "Model solution — Total = 3937", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-i-solution-2", kind: "point", verbatim: "Low Partial Credit — Indicates one correct water calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-i-solution-3", kind: "point", verbatim: "High Partial Credit — Four correct water calculations.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-c-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-c-i.png",
+          "srcHash": "a3e0ecd89b7ee6a99201a17c2055ad76",
+          "alt": "The question as printed on the paper — (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John’s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used Complete the table to show the number of litres used for the various activities and the total number of litres used in the week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p037-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p037-i0.png",
+          "srcHash": "c7f2e5ef4716b11a092e3e9c83b4fbaa",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q8(c)(i), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-c-ii", topicId: "maths-3-3", conceptId: "p2-q8-c-ii",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(c)(ii)",
+    stem: "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _.",
+    questionText: "If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-c-ii-solution-1", kind: "point", verbatim: "Model solution — 3937 × 52 = 204 724", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-ii-solution-2", kind: "point", verbatim: "Model solution — 204724/1000 = 204·724", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-ii-solution-3", kind: "point", verbatim: "Model solution — 204·724×1·85=378·7394", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-ii-solution-4", kind: "point", verbatim: "Model solution — Cost = €378·74", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-c-ii-solution-5", kind: "point", verbatim: "Low Partial Credit — Any use of answer to (c)(i).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[37],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                14
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-c-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-c-ii.png",
+          "srcHash": "ee302a30aaa835785e34c39bc0f0f402",
+          "alt": "The question as printed on the paper — (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John’s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p037-i1",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p037-i1.png",
+          "srcHash": "30ca1ada7afb625297b16c3fb323da57",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q8(c)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5C(0, 1, 2, 5), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-c-iii", topicId: "maths-3-3", conceptId: "p2-q8-c-iii",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(c)(iii)",
+    stem: "John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. Table: John’s weekly household water usage. Activity, Water Required per activity, Frequency, Number of litres used. One Bath, 80 litres, 3 baths, 240; One Shower, 125 litres, 20 showers, _; Brushing Teeth with Tap Running, 6 litres per minute, 32 minutes, _; One WC Flush, 6 litres, 60 flushes, _; One Use of Washing Machine, 45 litres, 8 uses, _; One Use of Dishwasher, 20 litres, 7 uses, _; Washing One Car with a Bucket, 10 litres, 1 wash, _; Hosepipe, 9 litres per minute, 15 minutes, _. Total number of litres used: _. Part (c)(ii): If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week.",
+    questionText: "Find John’s total bill for this water if VAT were to be included at a rate of 13·5%.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-c-iii-solution-1", kind: "point", verbatim: "Model solution — 378∙74×1·135=€429·87", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5A","marks":[0,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-c-iii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-c-iii.png",
+          "srcHash": "380e52bbd4aa4ad1390d77d2574ddd69",
+          "alt": "The question as printed on the paper — (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John’s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used If water were charged at €1·85 per 1000 litres, find what John’s household would pay for the water used in one year if the household uses the same amount of water each week. (iii) Find John’s total bill for this water if VAT were to be included at a rate of 13·5%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q8-d", topicId: "maths-3-3", conceptId: "p2-q8-d",
+    section: "B", questionRef: "2016 OL Paper 2 Q8(d)",
+    questionText: "John would like to reduce his water bill to €260 per year. If water were charged at €1·85 plus VAT at 13·5% per 1000 litres, find the number of litres of water he could purchase for €260.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2016-ol-p2-q8-d-solution-1", kind: "point", verbatim: "Model solution — 260/((1·85)(1·135)) =123·8242648", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-d-solution-2", kind: "point", verbatim: "Model solution — =123 824∙3", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-d-solution-3", kind: "point", verbatim: "Model solution — or = 123 825", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-d-solution-4", kind: "point", verbatim: "High Partial Credit — Formulates correctly with both divisions.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q8-d-solution-5", kind: "point", verbatim: "High Partial Credit — 123·824 or equivalent and stops.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"20C","marks":[0,5,10,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[38],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                15
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q8-d",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q8-d.png",
+          "srcHash": "423fec751f34713adc332ef935390b0e",
+          "alt": "The question as printed on the paper — John would like to reduce his water bill to €260 per year. If water were charged at €1·85 plus VAT at 13·5% per 1000 litres, find the number of litres of water he could purchase for €260.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p038-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p038-i0.png",
+          "srcHash": "f80e7b6677b6498e4450b333fea79bce",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q8(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 20C(0, 5, 10, 20), listing Low Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-a-i", topicId: "maths-2-2", conceptId: "p2-q9-a-i",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(a)(i)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below.",
+    questionText: "Write down the co-ordinates of the point F. F = ( , )",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-a-i-solution-1", kind: "point", verbatim: "Model solution — F = ( 4, 1 )", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-i-solution-2", kind: "point", verbatim: "Partial Credit — One ordinate correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-i-solution-3", kind: "point", verbatim: "Partial Credit — Answer as (1, 4).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-a-i",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-a-i.png",
+          "srcHash": "f98e9d8e21bc95da2dc3b34c515f6671",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 -1 Write down the co-ordinates of the point F. F ^= ( , )",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-a-ii", topicId: "maths-2-2", conceptId: "p2-q9-a-ii",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(a)(ii)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below.",
+    questionText: "A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-a-ii-solution-1", kind: "point", verbatim: "Partial Credit — Point correct. (No label)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-ii-solution-2", kind: "point", verbatim: "Partial Credit — Point plotted as (B), but not in the correct position.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-ii-solution-3", kind: "point", verbatim: "Partial Credit — Plot and label as (4, 6).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-ii-solution-4", kind: "point", verbatim: "Partial Credit — Any plot North of F.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-a-ii-solution-5", kind: "point", verbatim: "No Credit — All other incorrect points with no labels.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-a-ii",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-a-ii.png",
+          "srcHash": "bebec9306e75955d449d953ebd7062c2",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 -1 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p039-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p039-i0.png",
+          "srcHash": "f823e9140eca3cb4b32532204ec01d35",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q9(a)(ii), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5B(0, 1, 5), listing Partial Credit, No Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-b", topicId: "maths-2-2", conceptId: "p2-q9-b",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(b)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (a)(ii): A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+    questionText: "Joe's quad bike is marked with the point Q on the diagram. Find the distance from the barn (B) to the quad (Q). Give your answer correct to 2 decimal places.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-b-solution-1", kind: "point", verbatim: "Model solution — d = √((−2 − 4)² + (7 − 6)²)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-2", kind: "point", verbatim: "Model solution — = √37", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-3", kind: "point", verbatim: "Model solution — = 6·08", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-4", kind: "point", verbatim: "Low Partial Credit — Writes co-ordinates of B and/or Q.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-5", kind: "point", verbatim: "Low Partial Credit — Any work of merit.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-6", kind: "point", verbatim: "High Partial Credit — Fully correct/consistent substitution without calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-7", kind: "point", verbatim: "High Partial Credit — One incorrect substitution with correct calculation.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-b-solution-8", kind: "point", verbatim: "High Partial Credit — One consistent error throughout.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5C","marks":[0,1,2,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-b",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-b.png",
+          "srcHash": "28300670df3e403f181215d460031ef5",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's quad bike is marked with the point Q on the diagram. Find the distance from the barn (B) to the quad (Q). Give your answer correct to 2 decimal places.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-c", topicId: "maths-2-2", conceptId: "p2-q9-c",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(c)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (a)(ii): A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B.",
+    questionText: "Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-c-solution-1", kind: "point", verbatim: "Model solution — T = (−2, 2)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-c-solution-2", kind: "point", verbatim: "Partial Credit — Any work of merit. (Join F to B)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-c-solution-3", kind: "point", verbatim: "Partial Credit — One ordinate correct.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-c-solution-4", kind: "point", verbatim: "Partial Credit — Answer as ( 2, ‒ 2).", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5B","marks":[0,1,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[39],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                16
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-c",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-c.png",
+          "srcHash": "62cdd5fcb6b67aee221d1136cf222cec",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T ^= ( , )",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-d", topicId: "maths-2-2", conceptId: "p2-q9-d",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(d)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )",
+    questionText: "Joe wants to plough the land enclosed by the parallelogram FBQT. Find the area of this parallelogram in square units.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-d-solution-1", kind: "point", verbatim: "Model solution — Area = 2 × Area ΔTBF", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-2", kind: "point", verbatim: "Model solution — |(6)(−1) − (4)(6)|", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-3", kind: "point", verbatim: "Model solution — = 30", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-4", kind: "point", verbatim: "Low Partial Credit — Correct relevant formula identified.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-5", kind: "point", verbatim: "Low Partial Credit — Triangle co-ordinates identified correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-6", kind: "point", verbatim: "Low Partial Credit — Triangle translated correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-7", kind: "point", verbatim: "Low Partial Credit — Works with 5, 6, or 6·08.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-8", kind: "point", verbatim: "Mid Partial Credit — Triangle formula fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-9", kind: "point", verbatim: "Mid Partial Credit — One error in substitution followed by correct calculation of triangle.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-10", kind: "point", verbatim: "High Partial Credit — Area of triangle calculated correctly.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-11", kind: "point", verbatim: "High Partial Credit — One error in substitution followed by correct calculation of parallelogram.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-12", kind: "point", verbatim: "High Partial Credit — Parallelogram formula fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-d-solution-13", kind: "point", verbatim: "High Partial Credit — A correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"5D","marks":[0,2,3,4,5],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-d",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-d.png",
+          "srcHash": "f197c1ff06c0033f0dcfb2849676a288",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. Joe wants to plough the land enclosed by the parallelogram FBQT. Find the area of this parallelogram in square units.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p040-i0",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p040-i0.png",
+          "srcHash": "abebcc6cbef4ce56a41aac1e804fe518",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q9(d), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 5D( 0, 2, 3, 4, 5), listing Low Partial Credit, Mid Partial Credit, High Partial Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    qa: {"gates":["verbatim","tariff","figure"],"humanReviewedBy":"agent-verified","humanReviewedAt":"2026-10-12"},
+    year: 2016, level: "ordinary",
+    paperFileid: "LC003GLP200EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2016 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2016-ol-p2-q9-e", topicId: "maths-2-3", conceptId: "p2-q9-e",
+    section: "B", questionRef: "2016 OL Paper 2 Q9(e)",
+    stem: "Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , )",
+    questionText: "Given that |∠QFB| = 45°, use trigonometric methods to find |∠BQF|. Give your answer in degrees correct to one decimal place.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
+    rows: [
+    { id: "maths-2016-ol-p2-q9-e-solution-1", kind: "point", verbatim: "Low Partial Credit — Correct relevant formula.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-2", kind: "point", verbatim: "Low Partial Credit — Work of merit on diagram.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-3", kind: "point", verbatim: "High Partial Credit — Sine rule fully substituted.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-4", kind: "point", verbatim: "High Partial Credit — Incorrect calculator mode. (once only)", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-5", kind: "point", verbatim: "High Partial Credit — Radian = 0·8 Gradian = 35·9", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-6", kind: "point", verbatim: "High Partial Credit — Correct answer without work.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    { id: "maths-2016-ol-p2-q9-e-solution-7", kind: "point", verbatim: "No Credit — Treats as right-angled or isosceles Triangle.", marks: null, contextNote: "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs." },
+    ],
+    mathematicsScale: {"code":"20C","marks":[0,5,10,20],"fullCreditMinusOne":true,"schemeFileid":"LC003GLP000EV.pdf","schemePages":[40],"generalNotesPages":[22,23]},
+    sourceMaterial: {
+          "kind": "source-question",
+          "label": "OFFICIAL QUESTION PAGES",
+          "title": "Question, diagrams and working space",
+          "pages": [
+                17
+          ],
+          "sourceFileid": "LC003GLP200EV.pdf",
+          "attribution": "SEC Mathematics 2016 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original question pages to inspect the notation, graphs, diagrams and any earlier parts needed for this task. Zoom in, then close the pages to return to your answer."
+    },
+    questionFigure: {
+          "candId": "maths-2016-OL-ask-p2-q9-e",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-ask-p2-q9-e.png",
+          "srcHash": "7c56aedda74b36b865debfa7cce75879",
+          "alt": "The question as printed on the paper — Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , ) Given that |∠QFB| = 45°, use trigonometric methods to find |∠BQF|. Give your answer in degrees correct to one decimal place.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2016-OL-scheme-p040-i1",
+          "src": "/exam-figures/maths/markbank/maths-2016-OL-scheme-p040-i1.png",
+          "srcHash": "15f0b7165608423acb10d0e04f3e18eb",
+          "alt": "The marking scheme's printed row for 2016 Ordinary Level Paper 2 Q9(e), as the State Examinations Commission set it: the part label, the model solution, and the marking notes for Scale 20C(0, 5, 10, 20), listing Low Partial Credit, High Partial Credit, No Credit.",
+          "attribution": "SEC Leaving Certificate Mathematics 2016 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

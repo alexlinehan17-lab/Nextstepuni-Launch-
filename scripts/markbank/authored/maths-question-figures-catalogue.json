@@ -10913,6 +10913,279 @@
   "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Find the difference in cost for a job that takes 6 hours to complete."
  },
  {
+  "file": "maths-2016-OL-ask-p2-q1-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q1(a)(i)",
+  "description": "The question as printed on the paper \u2014 A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Of those surveyed, 19 people did not own either a cat or a dog. Complete the diagram. Cats Dogs 48 64"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q1-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q1(a)(ii)",
+  "description": "The question as printed on the paper \u2014 A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Cats Dogs 64 48 A person is chosen at random from those surveyed. What is the probability that the person owned both a cat and a dog?"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q1-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q1(a)(iii)",
+  "description": "The question as printed on the paper \u2014 A survey of 168 people was carried out. Participants were asked whether they owned a cat or a dog. Some of the results are recorded in the Venn diagram below. U Cats Dogs 64 48 (iii) What percentage of the people surveyed owned one animal only? Give your answer correct to one decimal place."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q1-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q1(b)",
+  "description": "The question as printed on the paper \u2014 Mandy wants to buy a ticket to the theatre. She can choose a ticket in the Balcony (B) or the Stalls (S). Mandy can go on Monday (M), Wednesday (W) or Friday (F). For an extra charge she can choose a VIP ticket (V) where she will meet the band or she can choose the show only (O). Complete the tree diagram below, and hence or otherwise, find the probability that Mandy chooses a VIP ticket on a Wednesday. You may assume that all choices are equally likely. V O M W B F S"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q2(a)",
+  "description": "The question as printed on the paper \u2014 Find the area of the given triangle. 8 cm 30\u00b0 12 cm"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q2(b)",
+  "description": "The question as printed on the paper \u2014 A triangle has sides of length 3 cm, 5 cm, and 7 cm. Find the size of the largest angle in the triangle."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q3-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q3(a)",
+  "description": "The question as printed on the paper \u2014 The circle c has centre (2, \u22123) and a radius of 4 cm. Write down the equation of c."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q3-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q3(b)",
+  "description": "The question as printed on the paper \u2014 (b) Draw the circle c on the grid y opposite. Each unit on the 2 co-ordinate grid is 1 cm. 1 x -2 -1 1 2 3 4 5 6 7 -1 -2"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q3-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q3(c)",
+  "description": "The question as printed on the paper \u2014 (c) Verify, using algebra, that the point (3, 1) is outside of c."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q3-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q3(d)",
+  "description": "The question as printed on the paper \u2014 Find the area of the smallest four-sided figure that will fit around the circle c."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q4-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q4(a)",
+  "description": "The question as printed on the paper \u2014 The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c\u2208\u2124."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q4-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q4(b)",
+  "description": "The question as printed on the paper \u2014 Draw the line k: x + 2y = 8 on the axes below. y 6 5 4 3 2 1 x -1 1 2 3 4 5 6 7 8 9 -1 -2 -3 -4"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q4-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q4(c)",
+  "description": "The question as printed on the paper \u2014 The line l contains the points A(4, 5) and B(2, 0). Find the equation of l. Give your answer in the form ax + by + c = 0 where a, b, and c\u2208\u2124. Draw the line k: x + 2y = 8 on the axes below. Use a graphic, numeric or algebraic method to find the co-ordinates of l\u2229k."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q5-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q5(a)",
+  "description": "The question as printed on the paper \u2014 The waiting times, in minutes, for 16 patients at a dentist\u2019s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes Find the mode and the median of the data."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q5-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q5(b)",
+  "description": "The question as printed on the paper \u2014 The waiting times, in minutes, for 16 patients at a dentist\u2019s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes Find the mean waiting time for Week 1, correct to 1 decimal place."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q5-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q5(c)",
+  "description": "The question as printed on the paper \u2014 The waiting times, in minutes, for 16 patients at a dentist\u2019s surgery are recorded for a particular week (Week 1) on the following stem and leaf plot. Week 2 Week 1 0 5 8 1 2 2 2 3 2 0 4 5 7 3 0 1 2 4 4 4 4 Key: 1|3 = 13 minutes The waiting times were recorded again the following week. The results were: 27, 23, 6, 15, 18, 29, 16, 17, 15, 18, 40, 32, 16, 12, 28, 9. Show these results on the plot above (under Week 2), creating a back-to-back stem and leaf plot to display the data."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q6-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q6(a)(i), (a)(ii)",
+  "description": "The question as printed on the paper \u2014 Construct a triangle ABC, where |AB| = 7 cm, |\u2220BAC| = 50\u00b0, and |AC| = 4\u00b75 cm. (a) (i) Measure the length of [BC] and hence find the sum of the lengths of the (ii) sides [AC] and [BC], correct to one decimal place."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q6-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q6(b)",
+  "description": "The question as printed on the paper \u2014 State which one of the following triangles can not be constructed. Give a reason to support your answer. Triangle 1 Triangle 2 Sides of lengths (cm) Sides of lengths (cm) 3\u00b72, 2\u00b79, 5\u00b74 6, 7, 15"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q6-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q6(c)",
+  "description": "The question as printed on the paper \u2014 The lengths of the sides of a right-angled triangle are 5, x, and x + 1 as shown. Use the Theorem of Pythagoras to find the value of x. x + 1 5 \u221f x"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(a)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The Atomium is modelled on an iron atom that has been magnified 165 billion times. Given that a billion is a thousand million, write 165 billion in the form a \u00d7 10\u207f, where n \u2208 \u2124, and 1 \u2264 a < 10."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(b)(i)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The diameter of each sphere in the Atomium is 18 metres. Find the radius of each sphere."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(b)(ii)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. The diameter of each sphere in the Atomium is 18 metres. Find the volume of each sphere, correct to 2 decimal places."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(c)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Find the combined surface area of all 9 spheres in the Atomium, correct to the nearest m\u00b2."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(d)(i)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1\u00b765 m and a length of 23 m. Find the sum of the curved surface areas of all 8 pipes, correct to the nearest m\u00b2."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(d)(ii)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1\u00b765 m and a length of 23 m. The other 12 cylindrical pipes connect the outer spheres to each other. Each pipe has a radius of 1\u00b745 m. All 12 pipes are equal in length. The sum of the curved surface areas of the 12 pipes is 3170 m\u00b2. Find the length of one pipe. Give your answer correct to the nearest metre."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q7-d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q7(d)(iii)",
+  "description": "The question as printed on the paper \u2014 The Atomium in Brussels is one of Belgium's most famous landmarks. It consists of 9 identical spheres joined by two types of cylindrical pipes. Each of the 8 cylindrical pipes extending from the centre sphere has a radius of 1\u00b765 m and a length of 23 m. (iii) The curved surfaces of the 20 pipes and 9 spheres are covered in stainless steel. Stainless steel costs \u20ac70 per square metre. Use the areas you have calculated or have been given above to find the approximate cost of the stainless steel required to resurface the Atomium."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(a)",
+  "description": "The question as printed on the paper \u2014 The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing \u2012 Baths and 21% Taps Personal Washing \u2012 Showers 12% Clothes Washing 13% 46\u00b78\u00b0 Other Find the percentage used for the \u2018Other\u2019 activity, and write it in the table."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(b)(i)",
+  "description": "The question as printed on the paper \u2014 The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing \u2012 Baths and 21% Taps Personal Washing \u2012 Showers 12% Clothes Washing 13% 46\u00b78\u00b0 Other A pie chart representing the data is to be drawn. The size of the angle representing \u2018Clothes Washing\u2019 on the pie chart is 46\u00b78\u00b0. Complete the table above to show the remaining angles in the pie chart."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(b)(ii)",
+  "description": "The question as printed on the paper \u2014 The following table shows some of the data gathered by a company on average water usage in homes. Angle Activity Percentage used (Degrees) WC flushing 30% Personal Washing \u2012 Baths and 21% Taps Personal Washing \u2012 Showers 12% Clothes Washing 13% 46\u00b78\u00b0 Other A pie chart representing the data is to be drawn. Draw a pie chart to represent the data. Label the sector corresponding to each activity and write the size of the angle in each sector."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(c)(i)",
+  "description": "The question as printed on the paper \u2014 (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John\u2019s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used Complete the table to show the number of litres used for the various activities and the total number of litres used in the week."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(c)(ii)",
+  "description": "The question as printed on the paper \u2014 (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John\u2019s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used If water were charged at \u20ac1\u00b785 per 1000 litres, find what John\u2019s household would pay for the water used in one year if the household uses the same amount of water each week."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(c)(iii)",
+  "description": "The question as printed on the paper \u2014 (c) John compiled a table showing the amount of water used in his own household over the course of a week. He recorded the number of litres required for each activity and the number of times each activity was undertaken. The data are shown in the table below. John\u2019s weekly household water usage Water Required Number of litres Activity Frequency per activity used One Bath 80 litres 3 baths 240 One Shower 125 litres 20 showers Brushing Teeth with Tap 6 litres per minute 32 minutes One WC Flush 6 litres 60 flushes One Use of Washing 45 litres 8 uses Machine One Use of Dishwasher 20 litres 7 uses Washing One Car with a 10 litres 1 wash Bucket Hosepipe 9 litres per minute 15 minutes Total number of litres used If water were charged at \u20ac1\u00b785 per 1000 litres, find what John\u2019s household would pay for the water used in one year if the household uses the same amount of water each week. (iii) Find John\u2019s total bill for this water if VAT were to be included at a rate of 13\u00b75%."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q8-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q8(d)",
+  "description": "The question as printed on the paper \u2014 John would like to reduce his water bill to \u20ac260 per year. If water were charged at \u20ac1\u00b785 plus VAT at 13\u00b75% per 1000 litres, find the number of litres of water he could purchase for \u20ac260."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(a)(i)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 -1 Write down the co-ordinates of the point F. F ^= ( , )"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(a)(ii)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 -1 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(b)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's quad bike is marked with the point Q on the diagram. Find the distance from the barn (B) to the quad (Q). Give your answer correct to 2 decimal places."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(c)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T ^= ( , )"
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(d)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. y 8 Q 7 N 6 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 A barn is 5 units directly North of the farmhouse. Plot the point representing the position of the barn on the diagram. Label this point B. Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. Joe wants to plough the land enclosed by the parallelogram FBQT. Find the area of this parallelogram in square units."
+ },
+ {
+  "file": "maths-2016-OL-ask-p2-q9-e.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 2 Q9(e)",
+  "description": "The question as printed on the paper \u2014 Joe wants to draw a diagram of his farm. He uses axes and co-ordinates to plot his farmhouse at the point F on the diagram below. Part (c): Joe's tractor is at the point T, where FBQT is a parallelogram. Plot T on the diagram and write the co-ordinates of T in the space below. T = ( , ) Given that |\u2220QFB| = 45\u00b0, use trigonometric methods to find |\u2220BQF|. Give your answer in degrees correct to one decimal place."
+ },
+ {
   "file": "maths-2016-OL-ask-p1-q8-d-i.png",
   "kind": "figure",
   "truncated": false,
