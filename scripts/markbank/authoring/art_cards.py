@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the complete Art Mark Bank corpus, 2015–2026.
+"""Build the complete Art Mark Bank corpus, 2014–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
 published component allocations (to 2022) and descriptor bands (2023–2026).
@@ -19,10 +19,10 @@ files under its own heading.  A choose-N (N >= 2) list is always one card.  The
 four-criterion Section B/C essay remains intact because the SEC applies that
 rubric holistically.
 
-The complete corpus is therefore 1161 cards across twenty-four papers:
+The complete corpus is therefore 1283 cards across twenty-six papers:
 
-  * Higher Level:   601 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
-  * Ordinary Level: 560 cards
+  * Higher Level:   666 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
+  * Ordinary Level: 617 cards
 
 An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
 SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
@@ -62,7 +62,7 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2015, 2027))
+YEARS = tuple(range(2014, 2027))
 
 # A label printed inside an answer box ("Name of artwork:", "Heading 1:")
 # marks where an answer goes for an ask the question already makes, so it is
@@ -98,12 +98,14 @@ ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
 # Years whose SEC-attributed strings are all lifted from the printed page and
 # gated by tests/test_art_sec_wording.py: every year. The factory has no
 # written fallback, so a new year must join this tuple to build at all.
-AUDITED_YEARS = (2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
+AUDITED_YEARS = (2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2014, 'higher'): 20,
+    (2014, 'ordinary'): 21,
     (2015, 'higher'): 20,
     (2015, 'ordinary'): 21,
     (2016, 'higher'): 20,
@@ -131,6 +133,8 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
+    (2014, 'higher'): 65,
+    (2014, 'ordinary'): 57,
     (2015, 'higher'): 63,
     (2015, 'ordinary'): 57,
     (2016, 'higher'): 62,
@@ -164,6 +168,62 @@ EXPECTED_CARDS_BY_YEAR_LEVEL = {
 # label is printed in the question, and the first option's key keeps the
 # card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    # Three Georgian buildings: one heading, one card per part.
+    (2014, 'higher', 4): (
+        ('custom-house-dublin', 'The Custom House, Dublin'),
+        ('strokestown-house', 'Strokestown House, Co. Roscommon'),
+        ('castletown-house', 'Castletown House, Co. Kildare'),
+    ),
+    (2014, 'higher', 7): (
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('eileen-gray', 'Eileen Gray (1878-1976)'),
+        ('evie-hone', 'Evie Hone (1894-1955)'),
+        ('norah-mcguinness', 'Norah McGuinness (1901-1980)'),
+        ('gerard-dillon', 'Gerard Dillon (1916-1971)'),
+        ('john-behan', 'John Behan (b.1938)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('james-hanley', 'James Hanley (b.1965)'),
+    ),
+    (2014, 'higher', 14): (
+        ('gislebertus', 'a sculpture by Gislebertus (b. 12th century)'),
+        ('rembrandt', 'a painting by Rembrandt (1606-1669)'),
+        ('turner', 'a painting by Turner (1775-1851)'),
+        ('renoir', 'a painting by Renoir (1841-1919)'),
+        ('henry-moore', 'a sculpture by Henry Moore (1898-1986)'),
+    ),
+    (2014, 'higher', 15): (
+        ('baroque-art', 'Baroque Art'),
+        ('expressionism', 'Expressionism'),
+        ('the-bauhaus', 'The Bauhaus'),
+        ('surrealism', 'Surrealism'),
+    ),
+    (2014, 'ordinary', 7): (
+        ('jack-b-yeats', 'Jack B. Yeats (1871-1957)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+        ('pauline-bewick', 'Pauline Bewick (b.1935)'),
+        ('brian-bourke', 'Brian Bourke (b.1936)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+    ),
+    (2014, 'ordinary', 14): (
+        ('arnolfini-portrait', '“The Arnolfini Portrait” by Van Eyck (died 1441)'),
+        ('mona-lisa', '“Mona Lisa” by Da Vinci (1452-1519)'),
+        ('girl-with-a-pearl-earring', '“Girl with a Pearl Earring” by Vermeer (1632-1675)'),
+        ('death-of-marat', '“The Death of Marat” by Jacques Louis David (1748-1825)'),
+        ('guernica', '“Guernica” by Picasso (1881-1973)'),
+    ),
+    # Three spaces, and three events: each list one heading, one card per part.
+    (2014, 'ordinary', 19): (
+        ('concert-venue-foyer', 'a foyer or reception area of a concert venue'),
+        ('teenagers-bedroom', 'a teenager’s bedroom'),
+        ('swimming-pool-entrance', 'an entrance hall to a swimming pool'),
+    ),
+    (2014, 'ordinary', 21): (
+        ('charity-walk', 'charity walk'),
+        ('street-festival', 'street festival'),
+        ('farmers-market', 'farmers’ market'),
+    ),
     (2015, 'higher', 7): (
         ('john-hogan', 'John Hogan (1800-1858)'),
         ('william-john-leech', 'William John Leech (1881-1968)'),
@@ -527,6 +587,19 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
 # Irish Q7 artists, the Georgian buildings. A list in this table must span at
 # least two headings; the build fails on one that does not.
 OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2014: Gislebertus is Romanesque; Turner and David have no heading;
+    # Expressionism, the Bauhaus and Surrealism are Modernism.
+    (2014, 'higher', 14): {
+        'gislebertus': 'art-4-0', 'rembrandt': 'art-4-2', 'turner': 'art-4-6',
+        'renoir': 'art-4-3', 'henry-moore': 'art-4-4',
+    },
+    (2014, 'higher', 15): {
+        'baroque-art': 'art-4-2', 'expressionism': 'art-4-4', 'the-bauhaus': 'art-4-4', 'surrealism': 'art-4-4',
+    },
+    (2014, 'ordinary', 14): {
+        'arnolfini-portrait': 'art-4-1', 'mona-lisa': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
+        'death-of-marat': 'art-4-6', 'guernica': 'art-4-4',
+    },
     # 2015: Klimt's major work (from 1900) is Modernism; Rodin with the late
     # 19th century; Goya, Constable and Neoclassicism have no heading.
     (2015, 'higher', 14): {
@@ -667,6 +740,15 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2014, 'higher', 1): (
+        '"two other types of named tombs from either the Mesolithic or Neolithic '
+        'periods": any tombs of either period, one heading; no list to enumerate.'),
+    (2014, 'higher', 20): (
+        '"Choose and name a work of art from your art history course": any work; '
+        'the paper prints no finite list to enumerate.'),
+    (2014, 'ordinary', 12): (
+        '"Choose any work you have studied by Paul Cezanne": any work; the paper '
+        'prints no finite list to enumerate.'),
     (2015, 'ordinary', 13): (
         '"Choose one work you have studied by Pablo Picasso": any work; the '
         'paper prints no finite list to enumerate.'),
@@ -702,6 +784,14 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    (2014, 'higher'): {
+        2: 1, 3: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
+        8: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2014, 'ordinary'): {
+        1: 1, 2: 1, 4: 1, 17: 1, 18: 1,
+        6: 2, 9: 2, 10: 2, 11: 2, 13: 2,
+    },
     # 2015 sheets fetched from Paper Trail storage (not in the local corpus).
     (2015, 'higher'): {
         1: 1, 2: 1, 4: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
@@ -817,6 +907,23 @@ for _year, _level, _topics in (
 # to give the question this heading; where the reference contradicts the
 # paper, the Atlas builder records a reviewed anomaly).
 LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2014, 'higher'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q8 Sluter's Well of Moses (Gothic); Q11 Michelangelo's David; Q12
+        # "the Realist painter Gustave Courbet".
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1',
+    ),
+    (2014, 'ordinary'): (
+        # Q2 the Reask Pillar ("Early Christian") and Q3 the Tara Brooch
+        # ("Early Medieval"): Insular Art.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4',
+        # Q9 Masaccio's 'Holy Trinity': the Renaissance.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
     (2015, 'higher'): (
         # Q3 Early Christian churches "developed into a more complex Irish
         # Romanesque style": Irish Romanesque is Late Medieval (c.1100-1550s).
@@ -1238,41 +1345,62 @@ def nonempty_cells(row: Iterable[Any]) -> list[str]:
     return [compact(str(cell)) for cell in row if cell is not None and compact(str(cell))]
 
 
+LEGACY_HEADING = re.compile(r'Q\.?\s*(\d{1,2})\.?(?:\s+Marks)?(?:\s+Notes)?')
+
+
+def legacy_heading(row: list[Any]) -> tuple[int, dict[str, int]] | None:
+    """The question number and column positions a scheme table's heading row
+    names: "Q.1 | | Marks | Notes" and the shorter forms some years print.
+
+    "Q.1", "Q. 10" (2020), "Q1", "Q 16" and "QN." (2010-2015) head the
+    Marks (and Notes) columns; a practical-component table such as "Q1 -
+    LETTERING AND CALLIGRAPHY" is not a written-paper question. In 2014 the
+    heading row can follow a wrapper row and sit one column in, so columns
+    are read from the heading row itself."""
+    cells = [compact(str(cell or '')) for cell in row]
+    match = LEGACY_HEADING.fullmatch(' '.join(cell for cell in cells if cell))
+    if not match:
+        return None
+    label = next((i for i, cell in enumerate(cells) if re.fullmatch(r'Q\.?\s*\d{1,2}\.?', cell)), None)
+    if label is None:
+        return None  # a wrapper row ("Q20 Marks" in one cell): the next row heads
+    marks = cells.index('Marks') if 'Marks' in cells else label + 2
+    notes = cells.index('Notes') if 'Notes' in cells else marks + 1
+    return int(match.group(1)), {'label': label, 'guidance': label + 1, 'marks': marks, 'notes': notes}
+
+
 def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
     document = fitz.open(scheme_path(year, level))
     found: dict[int, dict[str, Any]] = {}
     for page_number, page in enumerate(document, start=1):
         for table in page.find_tables().tables:
             rows = table.extract()
-            if not rows:
+            heading = next(((index, parsed) for index, row in enumerate(rows[:2])
+                            if (parsed := legacy_heading(row))), None)
+            if heading is None:
                 continue
-            heading = ' '.join(nonempty_cells(rows[0]))
-            # "Q.1", "Q. 10" (2020), "Q1" and "Q 16" (2010-2013), heading the
-            # Marks (and Notes) columns; a practical-component table such as
-            # "Q1 – LETTERING AND CALLIGRAPHY" is not a written-paper question.
-            # Also "QN." and "Q.N Notes" (2011-2015), where a table prints only
-            # one of its column headings.
-            match = re.fullmatch(r'Q\.?\s*(\d{1,2})\.?(?:\s+Marks)?(?:\s+Notes)?', heading)
-            if not match:
-                continue
-            number = int(match.group(1))
+            start, (number, column) = heading
             if number in found:
                 raise AssertionError(f'{year} {level}: two scheme tables for Q{number}')
+            width = max(column.values()) + 1
             criteria: list[dict[str, Any]] = []
             current: dict[str, Any] | None = None
-            for row_index, row in enumerate(rows[1:], start=1):
-                cells = list(row) + [None] * (4 - len(row))
-                boxes = list(table.rows[row_index].cells) + [None] * (4 - len(row))
-                label = compact(str(cells[0] or ''))
-                marks_text = compact(str(cells[2] or ''))
+            for row_index, row in enumerate(rows[start + 1:], start=start + 1):
+                cells = list(row) + [None] * (width - len(row))
+                boxes = list(table.rows[row_index].cells) + [None] * (width - len(row))
+                label = compact(str(cells[column['label']] or ''))
+                marks_text = compact(str(cells[column['marks']] or ''))
                 # Each row's component and its note, read from the visible text
                 # of their own cells; the note stays the scheme's Notes column.
-                guidance = (art_printed.cell_text(page, boxes[1])
-                            if boxes[1] is not None and compact(str(cells[1] or '')) else '')
-                note = (art_printed.cell_text(page, boxes[3])
-                        if boxes[3] is not None and compact(str(cells[3] or '')) else '')
+                g, n = column['guidance'], column['notes']
+                guidance = (art_printed.cell_text(page, boxes[g])
+                            if boxes[g] is not None and compact(str(cells[g] or '')) else '')
+                note = (art_printed.cell_text(page, boxes[n])
+                        if boxes[n] is not None and compact(str(cells[n] or '')) else '')
                 if guidance.lower().startswith('total'):
                     continue
+                # "A" or, in 2014, "(A)".
+                label = re.sub(r'^\(([A-E])\)$', r'\1', label)
                 if label:
                     if not re.fullmatch(r'[A-E]', label):
                         continue
@@ -1304,6 +1432,101 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                     criterion.pop('rowNotes')
             found[number] = {'schemePage': page_number, 'criteria': criteria}
 
+    expected = expected_numbers(year, level)
+    if sorted(found) != expected:
+        raise AssertionError(
+            f'{year} {level}: legacy scheme questions {sorted(found)}, expected {expected}')
+    return found
+
+
+# Two Ordinary Level schemes whose component tables the table finder cannot
+# separate (2010: ruled lines it does not detect; 2012: later tables folded
+# into the previous table's last cell). Their rows are read from the printed
+# word positions instead: the component letter in the left column, its text
+# in the middle column, its marks in the right column.
+WORD_LAYOUT_SCHEMES = {(2010, 'ordinary'), (2012, 'ordinary')}
+WORD_HEADING = re.compile(r'^(?:Q|Question)\s*\.?\s*(\d{1,2})\.?$')
+
+
+def legacy_scheme_by_words(year: int, level: str) -> dict[int, dict[str, Any]]:
+    document = fitz.open(scheme_path(year, level))
+    start = next(i for i, page in enumerate(document)
+                 if re.search(r'History\s+and\s+Appreciation', page.get_text()))
+    found: dict[int, dict[str, Any]] = {}
+    for page_index in range(start, len(document)):
+        page = document[page_index]
+        words = sorted(art_printed.visible_words(page), key=lambda w: (round(w[1]), w[0]))
+        lines: list[list[tuple]] = []
+        for word in words:
+            if lines and abs(word[1] - lines[-1][0][1]) < 4:
+                lines[-1].append(word)
+            else:
+                lines.append([word])
+        lines = [sorted(line, key=lambda w: w[0]) for line in lines]
+        # The marks column: where most of the numbers in the right half start
+        # (a section heading's number, "SECTION 2", is not a mark).
+        numbers = [round(w[0]) for w in words
+                   if w[0] > page.rect.width * 0.5 and re.fullmatch(r'\d+', w[4])]
+        column = max(set(numbers), key=numbers.count) if numbers else None
+        right = (min(x for x in numbers if abs(x - column) <= 5) - 2) if numbers else page.rect.width * 0.8
+        # Each question: its heading line, then lettered component rows.
+        current_number = None
+        rows: list[dict[str, Any]] = []
+        questions: list[tuple[int, list[dict[str, Any]]]] = []
+        for line in lines:
+            first = line[0][4]
+            heading = WORD_HEADING.match(first) or (
+                len(line) > 1 and WORD_HEADING.match(f'{first} {line[1][4]}'))
+            if heading and line[0][0] < page.rect.width * 0.3:
+                current_number = int(heading.group(1))
+                rows = []
+                questions.append((current_number, rows))
+                continue
+            if current_number is None:
+                continue
+            label = re.sub(r'^\(([A-E])\)$', r'\1', first)
+            if re.fullmatch(r'[A-E]', label) and line[0][0] < page.rect.width * 0.3:
+                text_words = [w for w in line[1:] if w[0] < right]
+                marks = [w for w in line[1:] if w[0] >= right and re.fullmatch(r'\d+', w[4])]
+                rows.append({'label': label, 'top': min(w[1] for w in line),
+                             'x0': min((w[0] for w in text_words), default=None),
+                             'marks': [int(w[4]) for w in marks], 'lines': [line]})
+            elif re.match(r'^Total\b', first, re.I) or re.search(
+                    r'\bSection\b', ' '.join(w[4] for w in line), re.I):
+                rows = []  # a total or a section heading ends the question's rows
+                questions.append((current_number, rows))
+            elif rows:
+                rows[-1]['lines'].append(line)
+        merged: dict[int, list[dict[str, Any]]] = {}
+        for number, components in questions:
+            merged.setdefault(number, []).extend(components)
+        for number, components in merged.items():
+            if not components:
+                continue
+            if number in found:
+                raise AssertionError(f'{year} {level}: two scheme tables for Q{number}')
+            criteria = []
+            for index, row in enumerate(components):
+                x0 = row['x0'] or min(w[0] for line in row['lines'][1:] for w in line)
+                bottom = max(w[3] for line in row['lines'] for w in line if w[0] < right)
+                marks = row['marks'] or [int(w[4]) for line in row['lines'][1:] for w in line
+                                         if w[0] >= right and re.fullmatch(r'\d+', w[4])]
+                if len(marks) != 1:
+                    raise AssertionError(f'{year} {level} Q{number}{row["label"]}: marks {marks}')
+                guidance = art_printed.cell_text(
+                    page, fitz.Rect(x0 - 1, row['top'] - 1, right - 1, bottom + 1))
+                criteria.append({
+                    'id': row['label'].lower(),
+                    'label': f'Part {row["label"]}',
+                    'maxMarks': marks[0],
+                    'permittedMarks': list(range(marks[0] + 1)),
+                    'guidance': [guidance],
+                    'rowMarks': [marks[0]],
+                })
+            total = sum(c['maxMarks'] for c in criteria)
+            if total != 50:
+                raise AssertionError(f'{year} {level} Q{number}: legacy scheme totals {total}, not 50')
+            found[number] = {'schemePage': page_index + 1, 'criteria': criteria}
     expected = expected_numbers(year, level)
     if sorted(found) != expected:
         raise AssertionError(
@@ -1992,7 +2215,8 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
         for level in LEVELS:
             questions = extract_questions(year, level)
             audit_closed_choice_directives(year, level, questions)
-            schemes = (legacy_scheme(year, level) if year <= 2022
+            schemes = (legacy_scheme_by_words(year, level) if (year, level) in WORD_LAYOUT_SCHEMES
+                       else legacy_scheme(year, level) if year <= 2022
                        else current_short_scheme(year, level))
             paper_cards: list[dict[str, Any]] = []
             for number in expected_numbers(year, level):
@@ -2029,7 +2253,7 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks, 2015–2026; a printed choice is one card',
+        'corpus': 'All separately marked written-examination tasks, 2014–2026; a printed choice is one card',
         'cardCount': len(cards),
         'auditedYears': list(AUDITED_YEARS),
         # Lifted from each audited year's scheme by art_printed.py; the cards

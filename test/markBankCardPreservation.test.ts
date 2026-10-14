@@ -772,6 +772,7 @@ const ART_ADDED: Record<number, { higher: number; ordinary: number }> = {
   2017: { higher: 62, ordinary: 57 },
   2016: { higher: 62, ordinary: 57 },
   2015: { higher: 63, ordinary: 57 },
+  2014: { higher: 65, ordinary: 57 },
 };
 const isArtAdded = (id: string) => Number(id.slice(4, 8)) in ART_ADDED;
 const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)

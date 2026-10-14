@@ -108,14 +108,14 @@ describe('Art exam-topic registry', () => {
       referenceOfficialAssociations: 690,
       referenceMockAssociations: 609,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 560,
+      matchedAssociations: 556,
       sourceBlockedAssociations: 98,
-      referenceAnomalyAssociations: 32,
-      matchedLogicalCards: 512,
-      reviewedLogicalCards: 29,
-      reviewedOptionTopics: 112,
-      reviewedSpecificTopics: 36,
-      matchedQuestionTopicLinks: 552,
+      referenceAnomalyAssociations: 36,
+      matchedLogicalCards: 508,
+      reviewedLogicalCards: 33,
+      reviewedOptionTopics: 126,
+      reviewedSpecificTopics: 40,
+      matchedQuestionTopicLinks: 548,
       retainedLocalLogicalCards: 536,
       retainedWrittenLogicalCards: 144,
       retainedPracticalLogicalCards: 392,
@@ -123,7 +123,7 @@ describe('Art exam-topic registry', () => {
     // Reference headings that contradict the printed dates or works; each is
     // an audited anomaly with its evidence, filed under the paper's heading.
     const anomalies = artEvidence.associations.filter(item => item.resolution === 'reference-anomaly');
-    expect(anomalies).toHaveLength(32);
+    expect(anomalies).toHaveLength(36);
     for (const item of anomalies) {
       expect(item.reason, item.heading).toMatch(/^StudyClix files .* Decided 2026-10-12 from the SEC paper: /);
       expect('filedUnder' in item && item.filedUnder !== item.topicId, item.heading).toBe(true);
@@ -295,10 +295,10 @@ describe('Art exam-topic registry', () => {
     });
     // 462 before printed choices sharing one Atlas heading became one card;
     // the 68 withdrawn per-option ids are cardAliases.ts keys. The 2026 papers
-    // add 52 (26 Higher, 26 Ordinary) and each further year (2015-2020) its own (ART_ADDED in the preservation test).
-    expect(authoredArt.cardCount).toBe(1161);
-    expect(ART_HIGHER).toHaveLength(601);
-    expect(ART_ORDINARY).toHaveLength(560);
-    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1161);
+    // add 52 (26 Higher, 26 Ordinary) and each further year (2014-2020) its own (ART_ADDED in the preservation test).
+    expect(authoredArt.cardCount).toBe(1283);
+    expect(ART_HIGHER).toHaveLength(666);
+    expect(ART_ORDINARY).toHaveLength(617);
+    expect(new Set([...ART_HIGHER, ...ART_ORDINARY].map(card => card.id)).size).toBe(1283);
   });
 });

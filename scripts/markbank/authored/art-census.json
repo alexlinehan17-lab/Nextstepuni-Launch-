@@ -1,6 +1,7 @@
 {
   "subjectId": "art",
   "years": [
+    2014,
     2015,
     2016,
     2017,
@@ -20,11 +21,1125 @@
   ],
   "selectionUnit": "One card per separately marked printed task. Where the student chooses among printed items, the task is one card showing every option; holistic Section B/C essays remain intact.",
   "expectedCards": {
-    "higher": 601,
-    "ordinary": 560,
-    "total": 1161
+    "higher": 666,
+    "ordinary": 617,
+    "total": 1283
   },
   "papers": [
+    {
+      "year": 2014,
+      "level": "higher",
+      "paperFileid": "LC014ALP013EV",
+      "expectedCards": 65,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2014-hl-q1-task1",
+          "questionRef": "2014 HL Q1 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 35,
+          "hasIllustration": false
+        },
+        {
+          "number": 1,
+          "cardId": "art-2014-hl-q1-task2",
+          "questionRef": "2014 HL Q1 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 15,
+          "hasIllustration": false
+        },
+        {
+          "number": 2,
+          "cardId": "art-2014-hl-q2-task1",
+          "questionRef": "2014 HL Q2 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 35,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2014-hl-q2-task2",
+          "questionRef": "2014 HL Q2 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 15,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2014-hl-q3-task1",
+          "questionRef": "2014 HL Q3 · task 1",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 40,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2014-hl-q3-task2",
+          "questionRef": "2014 HL Q3 · task 2",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-hl-q4-a",
+          "questionRef": "2014 HL Q4(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-hl-q4-b",
+          "questionRef": "2014 HL Q4(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-hl-q4-c",
+          "questionRef": "2014 HL Q4(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2014-hl-q5-task1",
+          "questionRef": "2014 HL Q5 · task 1",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2014-hl-q5-task2",
+          "questionRef": "2014 HL Q5 · task 2",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2014-hl-q6-task1",
+          "questionRef": "2014 HL Q6 · task 1",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2014-hl-q6-task2",
+          "questionRef": "2014 HL Q6 · task 2",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2014-hl-q7",
+          "questionRef": "2014 HL Q7",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 50,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2014-hl-q8-task1",
+          "questionRef": "2014 HL Q8 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 8,
+          "cardId": "art-2014-hl-q8-task2",
+          "questionRef": "2014 HL Q8 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 9,
+          "cardId": "art-2014-hl-q9-task1",
+          "questionRef": "2014 HL Q9 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2014-hl-q9-task2",
+          "questionRef": "2014 HL Q9 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 10,
+          "cardId": "art-2014-hl-q10-task1",
+          "questionRef": "2014 HL Q10 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2014-hl-q10-task2",
+          "questionRef": "2014 HL Q10 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2014-hl-q11-task1",
+          "questionRef": "2014 HL Q11 · task 1",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2014-hl-q11-task2",
+          "questionRef": "2014 HL Q11 · task 2",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 12,
+          "cardId": "art-2014-hl-q12-task1",
+          "questionRef": "2014 HL Q12 · task 1",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 12,
+          "cardId": "art-2014-hl-q12-task2",
+          "questionRef": "2014 HL Q12 · task 2",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 13,
+          "cardId": "art-2014-hl-q13-task1",
+          "questionRef": "2014 HL Q13 · task 1",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2014-hl-q13-task2",
+          "questionRef": "2014 HL Q13 · task 2",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-a-gislebertus",
+          "questionRef": "2014 HL Q14(a) · a sculpture by Gislebertus (b. 12th century)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-b-gislebertus",
+          "questionRef": "2014 HL Q14(b) · a sculpture by Gislebertus (b. 12th century)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-c-gislebertus",
+          "questionRef": "2014 HL Q14(c) · a sculpture by Gislebertus (b. 12th century)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-a-rembrandt",
+          "questionRef": "2014 HL Q14(a) · a painting by Rembrandt (1606-1669)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-b-rembrandt",
+          "questionRef": "2014 HL Q14(b) · a painting by Rembrandt (1606-1669)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-c-rembrandt",
+          "questionRef": "2014 HL Q14(c) · a painting by Rembrandt (1606-1669)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-a-turner",
+          "questionRef": "2014 HL Q14(a) · a painting by Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-b-turner",
+          "questionRef": "2014 HL Q14(b) · a painting by Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-c-turner",
+          "questionRef": "2014 HL Q14(c) · a painting by Turner (1775-1851)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-a-renoir",
+          "questionRef": "2014 HL Q14(a) · a painting by Renoir (1841-1919)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-b-renoir",
+          "questionRef": "2014 HL Q14(b) · a painting by Renoir (1841-1919)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-c-renoir",
+          "questionRef": "2014 HL Q14(c) · a painting by Renoir (1841-1919)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-a-henry-moore",
+          "questionRef": "2014 HL Q14(a) · a sculpture by Henry Moore (1898-1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-b-henry-moore",
+          "questionRef": "2014 HL Q14(b) · a sculpture by Henry Moore (1898-1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-hl-q14-c-henry-moore",
+          "questionRef": "2014 HL Q14(c) · a sculpture by Henry Moore (1898-1986)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-a-baroque-art",
+          "questionRef": "2014 HL Q15(a) · Baroque Art",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-b-baroque-art",
+          "questionRef": "2014 HL Q15(b) · Baroque Art",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-c-baroque-art",
+          "questionRef": "2014 HL Q15(c) · Baroque Art",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-a-expressionism",
+          "questionRef": "2014 HL Q15(a) · Expressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-b-expressionism",
+          "questionRef": "2014 HL Q15(b) · Expressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-c-expressionism",
+          "questionRef": "2014 HL Q15(c) · Expressionism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-a-the-bauhaus",
+          "questionRef": "2014 HL Q15(a) · The Bauhaus",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-b-the-bauhaus",
+          "questionRef": "2014 HL Q15(b) · The Bauhaus",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-c-the-bauhaus",
+          "questionRef": "2014 HL Q15(c) · The Bauhaus",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-a-surrealism",
+          "questionRef": "2014 HL Q15(a) · Surrealism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-b-surrealism",
+          "questionRef": "2014 HL Q15(b) · Surrealism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-hl-q15-c-surrealism",
+          "questionRef": "2014 HL Q15(c) · Surrealism",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2014-hl-q16-a",
+          "questionRef": "2014 HL Q16(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2014-hl-q16-b",
+          "questionRef": "2014 HL Q16(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2014-hl-q16-c",
+          "questionRef": "2014 HL Q16(c)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2014-hl-q17-a",
+          "questionRef": "2014 HL Q17(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 15,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2014-hl-q17-b",
+          "questionRef": "2014 HL Q17(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 15,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2014-hl-q17-c",
+          "questionRef": "2014 HL Q17(c)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 18,
+          "cardId": "art-2014-hl-q18-task1",
+          "questionRef": "2014 HL Q18 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2014-hl-q18-task2",
+          "questionRef": "2014 HL Q18 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2014-hl-q19-task1",
+          "questionRef": "2014 HL Q19 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2014-hl-q19-task2",
+          "questionRef": "2014 HL Q19 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 20,
+          "cardId": "art-2014-hl-q20-task1",
+          "questionRef": "2014 HL Q20 · task 1",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 20,
+          "cardId": "art-2014-hl-q20-task2",
+          "questionRef": "2014 HL Q20 · task 2",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "paperFileid": "LC014GLP013EV",
+      "expectedCards": 57,
+      "cards": [
+        {
+          "number": 1,
+          "cardId": "art-2014-ol-q1-a",
+          "questionRef": "2014 OL Q1(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2014-ol-q1-b",
+          "questionRef": "2014 OL Q1(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 1,
+          "cardId": "art-2014-ol-q1-c",
+          "questionRef": "2014 OL Q1(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2014-ol-q2-a",
+          "questionRef": "2014 OL Q2(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2014-ol-q2-b",
+          "questionRef": "2014 OL Q2(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 2,
+          "cardId": "art-2014-ol-q2-c",
+          "questionRef": "2014 OL Q2(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 3,
+          "cardId": "art-2014-ol-q3-a",
+          "questionRef": "2014 OL Q3(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 3,
+          "cardId": "art-2014-ol-q3-b",
+          "questionRef": "2014 OL Q3(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": false
+        },
+        {
+          "number": 3,
+          "cardId": "art-2014-ol-q3-c",
+          "questionRef": "2014 OL Q3(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-ol-q4-a",
+          "questionRef": "2014 OL Q4(a)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-ol-q4-b",
+          "questionRef": "2014 OL Q4(b)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 4,
+          "cardId": "art-2014-ol-q4-c",
+          "questionRef": "2014 OL Q4(c)",
+          "section": "1",
+          "paperPage": 2,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 5,
+          "cardId": "art-2014-ol-q5-a",
+          "questionRef": "2014 OL Q5(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2014-ol-q5-b",
+          "questionRef": "2014 OL Q5(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 5,
+          "cardId": "art-2014-ol-q5-c",
+          "questionRef": "2014 OL Q5(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 6,
+          "cardId": "art-2014-ol-q6-a",
+          "questionRef": "2014 OL Q6(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2014-ol-q6-b",
+          "questionRef": "2014 OL Q6(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 10,
+          "hasIllustration": true
+        },
+        {
+          "number": 6,
+          "cardId": "art-2014-ol-q6-c",
+          "questionRef": "2014 OL Q6(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 7,
+          "cardId": "art-2014-ol-q7-a",
+          "questionRef": "2014 OL Q7(a)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 5,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2014-ol-q7-b",
+          "questionRef": "2014 OL Q7(b)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 7,
+          "cardId": "art-2014-ol-q7-c",
+          "questionRef": "2014 OL Q7(c)",
+          "section": "1",
+          "paperPage": 3,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2014-ol-q8-a",
+          "questionRef": "2014 OL Q8(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 8,
+          "cardId": "art-2014-ol-q8-b",
+          "questionRef": "2014 OL Q8(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 9,
+          "cardId": "art-2014-ol-q9-a",
+          "questionRef": "2014 OL Q9(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 9,
+          "cardId": "art-2014-ol-q9-b",
+          "questionRef": "2014 OL Q9(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2014-ol-q10-a",
+          "questionRef": "2014 OL Q10(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 10,
+          "cardId": "art-2014-ol-q10-b",
+          "questionRef": "2014 OL Q10(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2014-ol-q11-a",
+          "questionRef": "2014 OL Q11(a)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 11,
+          "cardId": "art-2014-ol-q11-b",
+          "questionRef": "2014 OL Q11(b)",
+          "section": "2",
+          "paperPage": 4,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 12,
+          "cardId": "art-2014-ol-q12-a",
+          "questionRef": "2014 OL Q12(a)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 12,
+          "cardId": "art-2014-ol-q12-b",
+          "questionRef": "2014 OL Q12(b)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 13,
+          "cardId": "art-2014-ol-q13-a",
+          "questionRef": "2014 OL Q13(a)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 13,
+          "cardId": "art-2014-ol-q13-b",
+          "questionRef": "2014 OL Q13(b)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-a-arnolfini-portrait",
+          "questionRef": "2014 OL Q14(a) · “The Arnolfini Portrait” by Van Eyck (died 1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-b-arnolfini-portrait",
+          "questionRef": "2014 OL Q14(b) · “The Arnolfini Portrait” by Van Eyck (died 1441)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-a-mona-lisa",
+          "questionRef": "2014 OL Q14(a) · “Mona Lisa” by Da Vinci (1452-1519)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-b-mona-lisa",
+          "questionRef": "2014 OL Q14(b) · “Mona Lisa” by Da Vinci (1452-1519)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-a-girl-with-a-pearl-earring",
+          "questionRef": "2014 OL Q14(a) · “Girl with a Pearl Earring” by Vermeer (1632-1675)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-b-girl-with-a-pearl-earring",
+          "questionRef": "2014 OL Q14(b) · “Girl with a Pearl Earring” by Vermeer (1632-1675)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-a-death-of-marat",
+          "questionRef": "2014 OL Q14(a) · “The Death of Marat” by Jacques Louis David (1748-1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-b-death-of-marat",
+          "questionRef": "2014 OL Q14(b) · “The Death of Marat” by Jacques Louis David (1748-1825)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-a-guernica",
+          "questionRef": "2014 OL Q14(a) · “Guernica” by Picasso (1881-1973)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 14,
+          "cardId": "art-2014-ol-q14-b-guernica",
+          "questionRef": "2014 OL Q14(b) · “Guernica” by Picasso (1881-1973)",
+          "section": "2",
+          "paperPage": 5,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-ol-q15-a",
+          "questionRef": "2014 OL Q15(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 15,
+          "cardId": "art-2014-ol-q15-b",
+          "questionRef": "2014 OL Q15(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2014-ol-q16-a",
+          "questionRef": "2014 OL Q16(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 16,
+          "cardId": "art-2014-ol-q16-b",
+          "questionRef": "2014 OL Q16(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 25,
+          "hasIllustration": false
+        },
+        {
+          "number": 17,
+          "cardId": "art-2014-ol-q17-a",
+          "questionRef": "2014 OL Q17(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 17,
+          "cardId": "art-2014-ol-q17-b",
+          "questionRef": "2014 OL Q17(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2014-ol-q18-a",
+          "questionRef": "2014 OL Q18(a)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 30,
+          "hasIllustration": true
+        },
+        {
+          "number": 18,
+          "cardId": "art-2014-ol-q18-b",
+          "questionRef": "2014 OL Q18(b)",
+          "section": "3",
+          "paperPage": 6,
+          "totalMarks": 20,
+          "hasIllustration": true
+        },
+        {
+          "number": 19,
+          "cardId": "art-2014-ol-q19-a",
+          "questionRef": "2014 OL Q19(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 19,
+          "cardId": "art-2014-ol-q19-b",
+          "questionRef": "2014 OL Q19(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 20,
+          "cardId": "art-2014-ol-q20-a",
+          "questionRef": "2014 OL Q20(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 20,
+          "hasIllustration": false
+        },
+        {
+          "number": 20,
+          "cardId": "art-2014-ol-q20-b",
+          "questionRef": "2014 OL Q20(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 30,
+          "hasIllustration": false
+        },
+        {
+          "number": 21,
+          "cardId": "art-2014-ol-q21-a",
+          "questionRef": "2014 OL Q21(a)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 15,
+          "hasIllustration": false
+        },
+        {
+          "number": 21,
+          "cardId": "art-2014-ol-q21-b",
+          "questionRef": "2014 OL Q21(b)",
+          "section": "3",
+          "paperPage": 7,
+          "totalMarks": 35,
+          "hasIllustration": false
+        }
+      ]
+    },
     {
       "year": 2015,
       "level": "higher",

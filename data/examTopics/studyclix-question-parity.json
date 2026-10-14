@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T21:35:54.339Z",
+  "generatedAt": "2026-10-14T09:36:14.904Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,9 +11,9 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 27215,
+    "matched": 27211,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 34,
+    "referenceAnomaly": 38,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
     "topicsWithGaps": 1341
@@ -3154,9 +3154,9 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 560,
+        "matched": 556,
         "sourceBlocked": 98,
-        "referenceAnomaly": 32,
+        "referenceAnomaly": 36,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
         "topicsWithGaps": 27
@@ -3347,9 +3347,9 @@
           "label": "Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/modernism-c-1900-1960s",
           "referenceOfficialAssociations": 12,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 2,
-          "referenceAnomaly": 1,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3359,6 +3359,10 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 11",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2022 - Section 2 - Question 13",
@@ -3811,9 +3815,9 @@
           "label": "Europe - Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 21,
+          "matched": 20,
           "sourceBlocked": 2,
-          "referenceAnomaly": 3,
+          "referenceAnomaly": 4,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3823,6 +3827,10 @@
             {
               "heading": "2009 - Paper - Section 2 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2015 - Section 1 - Question 11",
@@ -4046,14 +4054,22 @@
           "label": "Pre-Christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 23,
-          "matched": 21,
+          "matched": 19,
           "sourceBlocked": 1,
-          "referenceAnomaly": 1,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Paper - Section 1 - Question 1",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             },
             {
               "heading": "2015 - Section 1 - Question 3",

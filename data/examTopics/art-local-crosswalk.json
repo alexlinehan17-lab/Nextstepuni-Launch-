@@ -30,14 +30,14 @@
     "referenceOfficialAssociations": 690,
     "referenceMockAssociations": 609,
     "referenceProviderSampleAssociations": 0,
-    "matchedAssociations": 560,
+    "matchedAssociations": 556,
     "sourceBlockedAssociations": 98,
-    "referenceAnomalyAssociations": 32,
-    "matchedLogicalCards": 512,
-    "reviewedLogicalCards": 29,
-    "reviewedOptionTopics": 112,
-    "reviewedSpecificTopics": 36,
-    "matchedQuestionTopicLinks": 552,
+    "referenceAnomalyAssociations": 36,
+    "matchedLogicalCards": 508,
+    "reviewedLogicalCards": 33,
+    "reviewedOptionTopics": 126,
+    "reviewedSpecificTopics": 40,
+    "matchedQuestionTopicLinks": 548,
     "retainedLocalLogicalCards": 536,
     "retainedWrittenLogicalCards": 144,
     "retainedPracticalLogicalCards": 392,
@@ -2497,7 +2497,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "12",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "higher",
         "lang": "ev",
@@ -2505,7 +2505,9 @@
         "paperKey": "single",
         "fileid": "LC014ALP013EV.pdf",
         "questionNumber": "12"
-      }
+      },
+      "filedUnder": "art-higher-realism-impressionism-and-post-impressionism",
+      "reason": "StudyClix files this 2014 higher heading under art-higher-modernism-c-1900-1960s. Decided 2026-10-12 from the SEC paper: Q12 is about \"the Realist painter Gustave Courbet (1819-1877)\" and 'Bonjour, Monsieur Courbet': the paper itself names him a Realist, so Realism, Impressionism and Post-Impressionism, not Modernism (c. 1900-1960s). NextStepUni files the question under art-higher-realism-impressionism-and-post-impressionism, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-higher-post-1960s-art",
@@ -9110,7 +9112,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "9",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -9118,7 +9120,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "9"
-      }
+      },
+      "filedUnder": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "reason": "StudyClix files this 2014 ordinary heading under art-ordinary-europe-realism-impressionism-and-post-impressionism. Decided 2026-10-12 from the SEC paper: Q9 is 'Holy Trinity' by Masaccio (1401-c.1428), illustrated on the accompanying sheet: Masaccio is The Renaissance (c. 1300-1600s), not Realism, Impressionism and Post-Impressionism. NextStepUni files the question under art-ordinary-europe-the-renaissance-c-1300-1600s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-europe-realism-impressionism-and-post-impressionism",
@@ -11896,7 +11900,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "2",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11904,7 +11908,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "2"
-      }
+      },
+      "filedUnder": "art-ordinary-insular-art-c-500-1100s",
+      "reason": "StudyClix files this 2014 ordinary heading under art-ordinary-pre-christian-ireland-c-4000bc-ad500. Decided 2026-10-12 from the SEC paper: Q2 is \"The 'Reask Pillar', Co. Kerry ... an example of an Early Christian stone slab / pillar\": the paper itself calls it Early Christian, so Insular Art (c. 500-1100s), not Pre-Christian Ireland. NextStepUni files the question under art-ordinary-insular-art-c-500-1100s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-pre-christian-ireland-c-4000bc-ad500",
@@ -11914,7 +11920,7 @@
       "sitting": "main",
       "section": "1",
       "questionNumber": "3",
-      "resolution": "matched",
+      "resolution": "reference-anomaly",
       "target": {
         "level": "ordinary",
         "lang": "ev",
@@ -11922,7 +11928,9 @@
         "paperKey": "single",
         "fileid": "LC014GLP013EV.pdf",
         "questionNumber": "3"
-      }
+      },
+      "filedUnder": "art-ordinary-insular-art-c-500-1100s",
+      "reason": "StudyClix files this 2014 ordinary heading under art-ordinary-pre-christian-ireland-c-4000bc-ad500. Decided 2026-10-12 from the SEC paper: Q3 is \"The 'Tara Brooch' is an example of Irish metalwork from the Early Medieval period\": Early Medieval (8th-century) metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland. NextStepUni files the question under art-ordinary-insular-art-c-500-1100s, the heading of its Mark Bank card; the reference association is retained here as an audited anomaly."
     },
     {
       "topicId": "art-ordinary-pre-christian-ireland-c-4000bc-ad500",
@@ -12614,7 +12622,8 @@
       ],
       "topicIds": [
         "art-higher-art-as-social-commentary-or-commentator",
-        "art-higher-artists-processes-and-media"
+        "art-higher-artists-processes-and-media",
+        "art-higher-artists-theory-and-thinking"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -12646,7 +12655,9 @@
       ],
       "topicIds": [
         "art-ordinary-section-b-generic-questions",
-        "art-ordinary-europe-the-renaissance-c-1300-1600s"
+        "art-ordinary-europe-the-renaissance-c-1300-1600s",
+        "art-ordinary-the-baroque-c-1600-1700s",
+        "art-ordinary-europe-modernism-c-1900-1960s"
       ],
       "resolution": "retained-local",
       "reason": "Entitled SEC written-paper card preserved locally although the factual reference snapshot has no association for this top-level question."
@@ -20446,6 +20457,146 @@
   "reviewedOptionTopics": [
     {
       "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Gislebertus (b. 12th century)",
+      "canonicalNodeId": "art-4-0",
+      "topicId": "art-higher-romanesque-and-gothic",
+      "heading": "2014 - Question 14 - a sculpture by Gislebertus (b. 12th century)"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Rembrandt (1606-1669)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2014 - Question 14 - a painting by Rembrandt (1606-1669)"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Turner (1775-1851)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-higher-section-b-generic-questions",
+      "heading": "2014 - Question 14 - a painting by Turner (1775-1851)"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a painting by Renoir (1841-1919)",
+      "canonicalNodeId": "art-4-3",
+      "topicId": "art-higher-realism-impressionism-and-post-impressionism",
+      "heading": "2014 - Question 14 - a painting by Renoir (1841-1919)"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "14",
+      "option": "a sculpture by Henry Moore (1898-1986)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2014 - Question 14 - a sculpture by Henry Moore (1898-1986)"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Baroque Art",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-higher-the-baroque-c-1600-1700s",
+      "heading": "2014 - Question 15 - Baroque Art"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Expressionism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2014 - Question 15 - Expressionism"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "The Bauhaus",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2014 - Question 15 - The Bauhaus"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "15",
+      "option": "Surrealism",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-higher-modernism-c-1900-1960s",
+      "heading": "2014 - Question 15 - Surrealism"
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Arnolfini Portrait” by Van Eyck (died 1441)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2014 - Question 14 - “The Arnolfini Portrait” by Van Eyck (died 1441)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Mona Lisa” by Da Vinci (1452-1519)",
+      "canonicalNodeId": "art-4-1",
+      "topicId": "art-ordinary-europe-the-renaissance-c-1300-1600s",
+      "heading": "2014 - Question 14 - “Mona Lisa” by Da Vinci (1452-1519)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Girl with a Pearl Earring” by Vermeer (1632-1675)",
+      "canonicalNodeId": "art-4-2",
+      "topicId": "art-ordinary-the-baroque-c-1600-1700s",
+      "heading": "2014 - Question 14 - “Girl with a Pearl Earring” by Vermeer (1632-1675)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“The Death of Marat” by Jacques Louis David (1748-1825)",
+      "canonicalNodeId": "art-4-6",
+      "topicId": "art-ordinary-section-b-generic-questions",
+      "heading": "2014 - Question 14 - “The Death of Marat” by Jacques Louis David (1748-1825)"
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "option": "“Guernica” by Picasso (1881-1973)",
+      "canonicalNodeId": "art-4-4",
+      "topicId": "art-ordinary-europe-modernism-c-1900-1960s",
+      "heading": "2014 - Question 14 - “Guernica” by Picasso (1881-1973)"
+    },
+    {
+      "level": "higher",
       "year": 2015,
       "fileid": "LC014ALP013EV.pdf",
       "questionNumber": "14",
@@ -21887,6 +22038,45 @@
       "topicIds": [
         "art-ordinary-europe-the-renaissance-c-1300-1600s",
         "art-ordinary-the-baroque-c-1600-1700s"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "16",
+      "topicIds": [
+        "art-higher-artists-theory-and-thinking"
+      ],
+      "basis": "retained-local"
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "17",
+      "topicIds": [
+        "art-higher-artists-processes-and-media"
+      ]
+    },
+    {
+      "level": "higher",
+      "year": 2014,
+      "fileid": "LC014ALP013EV.pdf",
+      "questionNumber": "19",
+      "topicIds": [
+        "art-higher-art-and-the-environment"
+      ]
+    },
+    {
+      "level": "ordinary",
+      "year": 2014,
+      "fileid": "LC014GLP013EV.pdf",
+      "questionNumber": "14",
+      "topicIds": [
+        "art-ordinary-the-baroque-c-1600-1700s",
+        "art-ordinary-europe-modernism-c-1900-1960s"
       ],
       "basis": "retained-local"
     },

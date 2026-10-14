@@ -401,6 +401,30 @@ const REVIEWED_REFERENCE_ANOMALIES = [
     topicId: 'art-ordinary-the-baroque-c-1600-1700s',
     evidence: "Q11 is the 'Return of the Prodigal Son' by Rembrandt van Rijn (1606-1669), illustrated on the accompanying sheet: Rembrandt is The Baroque (c. 1600-1700s), not Realism, Impressionism and Post-Impressionism.",
   },
+  {
+    level: 'higher', year: 2014, n: '12',
+    referenceTopicId: 'art-higher-modernism-c-1900-1960s',
+    topicId: 'art-higher-realism-impressionism-and-post-impressionism',
+    evidence: "Q12 is about \"the Realist painter Gustave Courbet (1819-1877)\" and 'Bonjour, Monsieur Courbet': the paper itself names him a Realist, so Realism, Impressionism and Post-Impressionism, not Modernism (c. 1900-1960s).",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '2',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q2 is \"The 'Reask Pillar', Co. Kerry ... an example of an Early Christian stone slab / pillar\": the paper itself calls it Early Christian, so Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '3',
+    referenceTopicId: 'art-ordinary-pre-christian-ireland-c-4000bc-ad500',
+    topicId: 'art-ordinary-insular-art-c-500-1100s',
+    evidence: "Q3 is \"The 'Tara Brooch' is an example of Irish metalwork from the Early Medieval period\": Early Medieval (8th-century) metalwork is Insular Art (c. 500-1100s), not Pre-Christian Ireland.",
+  },
+  {
+    level: 'ordinary', year: 2014, n: '9',
+    referenceTopicId: 'art-ordinary-europe-realism-impressionism-and-post-impressionism',
+    topicId: 'art-ordinary-europe-the-renaissance-c-1300-1600s',
+    evidence: "Q9 is 'Holy Trinity' by Masaccio (1401-c.1428), illustrated on the accompanying sheet: Masaccio is The Renaissance (c. 1300-1600s), not Realism, Impressionism and Post-Impressionism.",
+  },
 ];
 const anomalyFor = (level, year, n, topicId) => REVIEWED_REFERENCE_ANOMALIES.find(item => (
   item.level === level && item.year === year && item.n === n && item.referenceTopicId === topicId
@@ -826,15 +850,15 @@ if (
   throw new Error('Every logical Art card must be exactly matched, reviewed, or explicitly retained');
 }
 if (
-  matchedAssociations.length !== 560
+  matchedAssociations.length !== 556
   || sourceBlockedAssociations.length !== 98
-  || referenceAnomalyAssociations.length !== 32
-  || exactTopicsByCard.size !== 512
-  || reviewedTopicsByCard.size !== 31
-  || reviewedOnlyCards.length !== 29
-  || matchedQuestionTopicLinks !== 552
-  || reviewedOptionTopics.length !== 112
-  || reviewedSpecificTopics.length !== 36
+  || referenceAnomalyAssociations.length !== 36
+  || exactTopicsByCard.size !== 508
+  || reviewedTopicsByCard.size !== 35
+  || reviewedOnlyCards.length !== 33
+  || matchedQuestionTopicLinks !== 548
+  || reviewedOptionTopics.length !== 126
+  || reviewedSpecificTopics.length !== 40
   || retainedLocalCards.length !== 536
   || retainedWrittenLogicalCards !== 144
   || retainedPracticalLogicalCards !== 392
