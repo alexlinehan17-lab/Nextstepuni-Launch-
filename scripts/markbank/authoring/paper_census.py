@@ -386,6 +386,18 @@ def census_agri_legacy(year, level):
                               if k2 in ('mark', 'head')), None)
                 if later == _roman_after(_roman_after(roman)):
                     value, as_roman = _roman_after(roman), True
+            if not as_letter and not as_roman and letter and value == letter:
+                # A letter printed twice: 2018 OL Q13 prints (a), then a second
+                # (a) where the scheme has (b), then (c). When the next letter
+                # after the missing one follows (before the missing one or the
+                # next question does), the repeat is the missing letter.
+                missing = _letter_after(letter)
+                for kind2, value2, _ in tokens[i + 1:]:
+                    if kind2 == 'head' or (kind2 == 'mark' and value2 == missing):
+                        break
+                    if kind2 == 'mark' and value2 == _letter_after(missing):
+                        value, as_letter = missing, True
+                        break
             if as_letter and as_roman:
                 # "(i)" after (h): the ninth letter, unless a "(ii)" follows
                 # before "(j)" does — then it opens romans under (h).

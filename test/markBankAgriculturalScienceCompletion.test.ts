@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(45);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(44);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(26);
+    expect(review.paperReviews).toHaveLength(27);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -1089,6 +1089,34 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
   });
 
+  it('authors every 2018 Ordinary task, keeping each Section One scale whole', () => {
+    const year = ordinary.filter(card => card.year === 2018);
+    expect(year).toHaveLength(60);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2018 OL'));
+    expect(tasks).toHaveLength(60);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    // Every Section One question prints one scale across all its parts.
+    for (const [key, notation] of [['q1', '10 + 6 + 4(1)'], ['q2', '10 + 6 + 4(1)'], ['q3', '8 + 7 + 5(1)'], ['q4', '12 + 8(1)'], ['q6', '8 + 6 + 3(2)'], ['q7', '8 + 6 + 3(2)'],
+      ['q11a', '2(4) + 4(2)']] as const)
+      expect(get(`agsci-2018-ol-${key}`).tariffModel, key).toEqual({ kind: 'orderedSplit', notation });
+    expect(get('agsci-2018-ol-q5').rows[0].group?.perOptionSteps).toEqual([3, 3, 3, 3, 3, 1, 1, 1, 1, 1]);
+    // The paper prints a second "(a)" where the scheme has (b): the census reads it as (b).
+    const q13 = census.papers.find(paper => paper.year === 2018 && paper.level === 'ordinary')!.baseTasks.map(task => task.ref);
+    expect(q13).toContain('2018 OL Q13(b)(iv)');
+    expect(get('agsci-2018-ol-q13div').answerVariants?.map(variant => variant.id)).toEqual(['pig', 'sheep', 'sheep-alternative']);
+    // Part (b) of Q8 totals 24: (ii) takes the 4 printed on (iii)'s heading line.
+    expect(['q8bi', 'q8bii', 'q8biii'].map(key => get(`agsci-2018-ol-${key}`).totalMarks)).toEqual([12, 8, 4]);
+    const units = census.questionMarkChecks.filter(check => check.year === 2018 && check.level === 'ordinary');
+    expect(units).toHaveLength(13);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 7 ? 20 : 60]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1174,7 +1202,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1731);
+    expect(atlas.markBankCards).toHaveLength(1791);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

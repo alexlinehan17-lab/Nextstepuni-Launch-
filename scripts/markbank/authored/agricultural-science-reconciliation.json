@@ -1,10 +1,19 @@
 {
   "status": "in-progress",
-  "shippedCardCount": 1731,
-  "reviewedRoutesChecked": 1731,
+  "shippedCardCount": 1791,
+  "reviewedRoutesChecked": 1791,
   "independentlyReviewedTranslatedRoutes": 81,
   "reviewedBatchIssues": [],
   "papers": [
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 60,
+      "shippedRoutes": 60,
+      "missing": [],
+      "unmatched": []
+    },
     {
       "year": 2018,
       "level": "higher",
@@ -401,13 +410,6 @@
       "level": "higher",
       "lang": "iv",
       "paperFileid": "LC024ALP000IV.pdf",
-      "independentCensus": "open"
-    },
-    {
-      "year": 2018,
-      "level": "ordinary",
-      "lang": "ev",
-      "paperFileid": "LC024GLP000EV.pdf",
       "independentCensus": "open"
     },
     {

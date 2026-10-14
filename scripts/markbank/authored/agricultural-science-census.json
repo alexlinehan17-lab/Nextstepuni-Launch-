@@ -5,6 +5,1052 @@
   "papers": [
     {
       "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "paperFileid": "LC024GLP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+        "markingschemes": "026ce005742b5f959b269c48e7339ac770d3c9227d6f01cc741b29d9020bd932"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2018 OL Q1",
+          "marksPerResponse": 20,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Soil component at A:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q1"
+          ]
+        },
+        {
+          "ref": "2018 OL Q2",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Mass of offspring at birth (kg)"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q2"
+          ]
+        },
+        {
+          "ref": "2018 OL Q3",
+          "marksPerResponse": 20,
+          "paperPage": 3,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Liver fluke’s primary host: Sheep"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q3"
+          ]
+        },
+        {
+          "ref": "2018 OL Q4",
+          "marksPerResponse": 20,
+          "paperPage": 4,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Role of A:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q4"
+          ]
+        },
+        {
+          "ref": "2018 OL Q5",
+          "marksPerResponse": 20,
+          "paperPage": 5,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Cotyledons store food in seeds"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q5"
+          ]
+        },
+        {
+          "ref": "2018 OL Q6",
+          "marksPerResponse": 20,
+          "paperPage": 6,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Parts of grass flower:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q6"
+          ]
+        },
+        {
+          "ref": "2018 OL Q7",
+          "marksPerResponse": 20,
+          "paperPage": 7,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Finding soil pH before sowing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q7"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Differences between composition of slurry and FYM:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q8(a)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Steps to reduce water pollution by slurry:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q8(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(b)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Elements in 18-6-12:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(b)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Advantage and disadvantage of artificial fertilisers:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Role of one element in 18-6-12:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Nitrogen",
+              "Phosphorus",
+              "Potassium"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2018 OL Q8(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q8(c)",
+          "marksPerResponse": 20,
+          "paperPage": 8,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Experiment to measure % water content in soil:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Maincrop potato varieties:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(a)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(a)(ii) — soil preparation",
+          "marksPerResponse": 8,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "1. Soil preparation:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(a)(ii) — soil preparation"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(a)(ii) — fertiliser use",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "2. Fertiliser use:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(a)(ii) — fertiliser use"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(a)(ii) — weed control",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "3. Weed control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(a)(ii) — weed control"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(a)(ii) — blight control",
+          "marksPerResponse": 4,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "4. Blight control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(a)(ii) — blight control"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(b)",
+          "marksPerResponse": 12,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Why use certified seed potatoes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q9(c)",
+          "marksPerResponse": 20,
+          "paperPage": 8,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Experiment to estimate yield of potato crop:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q9(c)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Parts of cell during mitosis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(a)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Stage of mitosis shown: Metaphase"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Stage before metaphase: Prophase"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Clone:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(b)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(b)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Crop that may be produced by cloning:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(c)",
+          "marksPerResponse": 18,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Cross 1:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(c)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q10(d)",
+          "marksPerResponse": 24,
+          "paperPage": 9,
+          "schemePage": 10,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 10,
+            "text": "Cross 2:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q10(d)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(a)",
+          "marksPerResponse": 16,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Spring barley v. Winter barley"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(a)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(b)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Differences between cultivation and harvesting of feeding and malting barley:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(b)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(c)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Features that show barley is ready for harvest:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(c)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(d)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Click beetle larva: Wireworm"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(d)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(d)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Crane fly larva: Leatherjacket"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(d)(iii)",
+          "marksPerResponse": 8,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Cereal disease and prevention:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q11(e)",
+          "marksPerResponse": 20,
+          "paperPage": 10,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Experiment to find % germination of barley seeds:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q11(e)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(a)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Paddock grazing system"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(a)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(a)(ii)",
+          "marksPerResponse": 3,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Advantage of paddock grazing system:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(a)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Disadvantage of paddock grazing system:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(a)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(b)",
+          "marksPerResponse": 18,
+          "paperPage": 10,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Making good quality hay"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(b)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(c)",
+          "marksPerResponse": 9,
+          "paperPage": 10,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Good quality silage:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(c)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q12(d)",
+          "marksPerResponse": 15,
+          "paperPage": 10,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Tests to determine silage quality, and their purpose:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q12(d)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Lowland sheep breeds:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — flushing",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "1. Flushing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — flushing"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — scanning",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "2. Scanning"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — scanning"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — steaming up",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "3. Steaming up"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — steaming up"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — vaccination",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "4. Vaccination"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — vaccination"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — creep feeding",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "5. Creep feeding"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — creep feeding"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(a)(ii) — shearing",
+          "marksPerResponse": 4,
+          "paperPage": 11,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "6. Shearing"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(a)(ii) — shearing"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(b)(i)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Gas produced in photosynthesis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(b)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Factors necessary for photosynthesis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(b)(iii)",
+          "marksPerResponse": 3,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "How photosynthesis helps reduce climate change:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(b)(iv)",
+          "marksPerResponse": 18,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Testing a leaf for starch:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(b)(iv)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(c)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Care at birth:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(c)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(c)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Housing: Straw (or dry) bedding"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(c)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Disease prevention:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(c)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(c)(iv)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Introducing hay into their diet:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(c)(iv)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(c)(v)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Use of milk replacer:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(c)(v)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(d)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Molar tooth labelled diagram"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(d)(i)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(d)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Function of incisor:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(d)(ii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(d)(iii)",
+          "marksPerResponse": 6,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Two other teeth:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2018 OL Q13(d)(iii)"
+          ]
+        },
+        {
+          "ref": "2018 OL Q13(d)(iv)",
+          "marksPerResponse": 8,
+          "paperPage": 11,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Dental formula"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Pig",
+              "Sheep"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2018 OL Q13(d)(iv)"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 2018,
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
@@ -32070,7 +33116,7 @@
       "level": "ordinary",
       "lang": "ev",
       "paperFileid": "LC024GLP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2018,
@@ -32305,6 +33351,204 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q3",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 20
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        20
+      ],
+      "printedQuestionMarks": 20,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q10",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q11",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q12",
+      "units": {
+        "all": 60
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "question": "Q13",
+      "units": {
+        "(a)": 30,
+        "(b)": 30,
+        "(c)": 30,
+        "(d)": 30
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
     {
       "year": 2018,
       "level": "higher",

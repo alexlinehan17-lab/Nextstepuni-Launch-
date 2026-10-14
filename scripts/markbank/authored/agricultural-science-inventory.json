@@ -2321,37 +2321,41 @@
         "sha256": "026ce005742b5f959b269c48e7339ac770d3c9227d6f01cc741b29d9020bd932",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 60,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "394fd85ab87bbd37",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. _______________________________________________________________________________________________ Question 1. (a) A soil",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "59f8b0270bbb55ff",
           "page": 8,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. ______________________________________________________________________________________ Question 8. (a) Slurry and farmyard manure are two sources of nutrients for crops. (i) State two di",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "4ee9b623570a63ab",
           "page": 10,
           "cue": "either",
           "context": "xamination 2018 10 Agricultural Science – Ordinary Level Question 11. (a) Farmers can sow either spring barley or winter barley. Copy and complete the following table in your answer book. Spring barley Winter barley Month of sowing Month of harvesting Yield (tonnes/ hectare) (b) State two differences between the cultivation ",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"Farmers can sow either spring barley or winter barley\" is the lead-in to Q11(a), whose table asks for both."
         },
         {
           "id": "4a69fade05b74819",
           "page": 11,
           "cue": "any two",
           "context": "Certificate Examination 2018 11 Agricultural Science – Ordinary Level Question 13. Answer any two of the parts (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) Name two lowland sheep breeds. (ii) Explain each of the following terms and state why each procedure is carried out on sheep farms. 1. Flushing 2. Scanning 3. Steaming",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         }
       ]
     },
@@ -2370,7 +2374,7 @@
         "sha256": "24b246a89d336d4b27b626a4bdb7c5eeb33de5388cc1bb22dd0257265c0f10ff",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 60,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

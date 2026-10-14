@@ -1859,7 +1859,7 @@ POOLS_2020_ORDINARY = {
     'Q13(b)': (1, ['Winter barley', 'Spring barley']),
 }
 # The Ordinary question whose lettered parts are a printed any-two choice.
-OL_PART_CHOICE = {2019: 'Q13', 2020: 'Q13'}
+OL_PART_CHOICE = {2018: 'Q13', 2019: 'Q13', 2020: 'Q13'}
 # 2019 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
 HIGHER_2019 = '''
 Q1(a)|10|2|5|Target yields in tonnes per hectare of
@@ -2044,9 +2044,76 @@ Q9(d)|12|7|14|Farrowing crate:
 Q9(e)|12|7|14|Rushes in gley soils:
 '''
 POOLS_2018_HIGHER = {'Q3 Option Two (b)': (1, ['Barley', 'Wheat', 'Oats', 'Maize']), 'Q4(c)': (1, ['Amylase', 'Catalase'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER}
+# 2018 Ordinary (legacy syllabus), transcribed from the SEC paper and scheme.
+ORDINARY_2018 = '''
+Q1|20|2|5|Soil component at A:
+Q2|20|3|5|Mass of offspring at birth (kg)
+Q3|20|3|5|Liver fluke’s primary host: Sheep
+Q4|20|4|6|Role of A:
+Q5|20|5|6|Cotyledons store food in seeds
+Q6|20|6|6|Parts of grass flower:
+Q7|20|7|7|Finding soil pH before sowing:
+Q8(a)(i)|8|8|8|Differences between composition of slurry and FYM:
+Q8(a)(ii)|8|8|8|Steps to reduce water pollution by slurry:
+Q8(b)(i)|12|8|8|Elements in 18-6-12:
+Q8(b)(ii)|8|8|8|Advantage and disadvantage of artificial fertilisers:
+Q8(b)(iii)|4|8|8|Role of one element in 18-6-12:
+Q8(c)|20|8|8|Experiment to measure % water content in soil:
+Q9(a)(i)|8|8|9|Maincrop potato varieties:
+Q9(a)(ii) — soil preparation|8|8|9|1. Soil preparation:
+Q9(a)(ii) — fertiliser use|4|8|9|2. Fertiliser use:
+Q9(a)(ii) — weed control|4|8|9|3. Weed control:
+Q9(a)(ii) — blight control|4|8|9|4. Blight control:
+Q9(b)|12|8|9|Why use certified seed potatoes:
+Q9(c)|20|8|9|Experiment to estimate yield of potato crop:
+Q10(a)(i)|6|9|10|Parts of cell during mitosis:
+Q10(a)(ii)|3|9|10|Stage of mitosis shown: Metaphase
+Q10(a)(iii)|3|9|10|Stage before metaphase: Prophase
+Q10(b)(i)|3|9|10|Clone:
+Q10(b)(ii)|3|9|10|Crop that may be produced by cloning:
+Q10(c)|18|9|10|Cross 1:
+Q10(d)|24|9|10|Cross 2:
+Q11(a)|16|10|11|Spring barley v. Winter barley
+Q11(b)|4|10|11|Differences between cultivation and harvesting of feeding and malting barley:
+Q11(c)|4|10|11|Features that show barley is ready for harvest:
+Q11(d)(i)|4|10|11|Click beetle larva: Wireworm
+Q11(d)(ii)|4|10|11|Crane fly larva: Leatherjacket
+Q11(d)(iii)|8|10|11|Cereal disease and prevention:
+Q11(e)|20|10|11|Experiment to find % germination of barley seeds:
+Q12(a)(i)|12|10|12|Paddock grazing system
+Q12(a)(ii)|3|10|12|Advantage of paddock grazing system:
+Q12(a)(iii)|3|10|12|Disadvantage of paddock grazing system:
+Q12(b)|18|10|12|Making good quality hay
+Q12(c)|9|10|13|Good quality silage:
+Q12(d)|15|10|13|Tests to determine silage quality, and their purpose:
+Q13(a)(i)|6|11|14|Lowland sheep breeds:
+Q13(a)(ii) — flushing|4|11|14|1. Flushing
+Q13(a)(ii) — scanning|4|11|14|2. Scanning
+Q13(a)(ii) — steaming up|4|11|14|3. Steaming up
+Q13(a)(ii) — vaccination|4|11|14|4. Vaccination
+Q13(a)(ii) — creep feeding|4|11|14|5. Creep feeding
+Q13(a)(ii) — shearing|4|11|14|6. Shearing
+Q13(b)(i)|3|11|15|Gas produced in photosynthesis:
+Q13(b)(ii)|6|11|15|Factors necessary for photosynthesis:
+Q13(b)(iii)|3|11|15|How photosynthesis helps reduce climate change:
+Q13(b)(iv)|18|11|15|Testing a leaf for starch:
+Q13(c)(i)|6|11|15|Care at birth:
+Q13(c)(ii)|6|11|15|Housing: Straw (or dry) bedding
+Q13(c)(iii)|6|11|15|Disease prevention:
+Q13(c)(iv)|6|11|15|Introducing hay into their diet:
+Q13(c)(v)|6|11|15|Use of milk replacer:
+Q13(d)(i)|10|11|16|Molar tooth labelled diagram
+Q13(d)(ii)|6|11|16|Function of incisor:
+Q13(d)(iii)|6|11|16|Two other teeth:
+Q13(d)(iv)|8|11|16|Dental formula
+'''
+POOLS_2018_ORDINARY = {'Q8(b)(iii)': (1, ['Nitrogen', 'Phosphorus', 'Potassium']), 'Q13(d)(iv)': (1, ['Pig', 'Sheep'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY}
 
 SOURCES = [
+    (2018, 'ordinary', 'G', ORDINARY_2018,
+     'e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092',
+     '026ce005742b5f959b269c48e7339ac770d3c9227d6f01cc741b29d9020bd932'),
     (2018, 'higher', 'A', HIGHER_2018,
      'c3f4587b9485b694119190e30e5cae7d3ca80f7879252ba1de545f4a6b99e785',
      '8872670e2cb5e7a56f3894429919359a95db6f9eb34acd36f475418d6c8937de'),
@@ -2154,7 +2221,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2299,7 +2366,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60. Remaining editions stay open.')
 
 
 if __name__=='__main__':

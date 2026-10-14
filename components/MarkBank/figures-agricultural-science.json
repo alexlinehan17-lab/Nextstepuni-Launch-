@@ -950,5 +950,107 @@
       0.475
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-sedimentation-cylinder": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-sedimentation-cylinder.png",
+    "md5": "def4769d3e606a594c1b6830d46045c2",
+    "alt": "Original Question 1(a) diagram: a graduated cylinder of settled soil and water; A points to material floating at the top, B to the cloudy water, and silt, fine sand and coarse sand are labelled from the top of the sediment down.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 2,
+    "cropRect": [
+      0.6088,
+      0.42,
+      0.9,
+      0.72
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-liver-fluke-hosts": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-liver-fluke-hosts.png",
+    "md5": "e3bea927ec4d01ce524d42489b53d2e0",
+    "alt": "Original Question 3 photographs: a water snail, a sheep, and an adult liver fluke.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 3,
+    "cropRect": [
+      0.05,
+      0.38,
+      0.9,
+      0.545
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-ruminant-stomach.png",
+    "md5": "f5b625ad730c7fd25fba1cea70b49599",
+    "alt": "Original Question 4 diagram of the ruminant stomach: A points into the large left chamber, B to the small upper chamber, C to the round central chamber and D to the lower chamber leading to the duodenum.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 4,
+    "cropRect": [
+      0.22,
+      0.14,
+      0.76,
+      0.375
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-grass-flower": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-grass-flower.png",
+    "md5": "50f67f77439e1e171a10fe8afdb73e92",
+    "alt": "Original Question 6 diagram of a grass flower: A points to a stalk holding an anther, B to a feathery structure in the centre, and C to a hanging anther on the right.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 6 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 6,
+    "cropRect": [
+      0.26,
+      0.1,
+      0.74,
+      0.355
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-mitosis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-mitosis.png",
+    "md5": "91d574ebc51f437f5200704a23c8ac58",
+    "alt": "Original Question 10(a) diagram of a dividing cell: chromosomes lined up across the middle with fibres running to each pole; A points to a chromosome on the equator and B to a fibre.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 9,
+    "cropRect": [
+      0.38,
+      0.1,
+      0.66,
+      0.23
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2018-ol-paper-photosynthesis": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2018-ol-paper-photosynthesis.png",
+    "md5": "67c89bc8fcf37efa9c0842e951a0c97c",
+    "alt": "Original Question 13 diagram: pond weed under an inverted funnel in a beaker of water, a test tube collecting gas above it, and light shining from the left.",
+    "attribution": "SEC Agricultural Science 2018 Ordinary Level examination paper, PDF page 11 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2018/LC024GLP000EV.pdf",
+    "sourceSha256": "e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092",
+    "pdfPage": 11,
+    "cropRect": [
+      0.34,
+      0.36,
+      0.74,
+      0.575
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }
