@@ -822,15 +822,18 @@ FIGURES = {
                       'Four arrows numbered 1 to 4 link five pictures: a sample tube labelled "Sample used to create a '
                       'DNA profile", a long DNA strand, DNA cut into short pieces, bands in the lanes of a gel, and a '
                       'pattern of bands labelled "A DNA profile".', False),
-    'q12c-passage': ('040', 4, (108, 418, 540, 481), SEC, [],
+    'q12c-passage': ('040', 4, (80, 418, 540, 509), SEC, [],
                      'The printed passage about Andalusian chickens, with the words allele, incomplete dominance, '
-                     'homozygous and phenotype underlined.', False),
+                     'homozygous and phenotype underlined, and below it part (i): "Explain the terms underlined in '
+                     'the passage above."', False),
     'q13-kidney': ('040', 5, (358, 128, 528, 258), SEC, ['A'],
                    'Drawing of a human kidney cut lengthways: the outer region labelled Cortex, the inner region '
                    'labelled Medulla, the central cavity labelled Pelvis, and the tube leaving it marked A.', False),
-    'q13b-iv-labels': ('040', 5, (140, 346, 540, 392), SEC, [],
-                       'A table of the six parts to label: Bowman\'s capsule, Loop of Henle, Proximal convoluted '
-                       'tubule, Collecting duct, Distal convoluted tubule, Glomerulus.', False),
+    'q13b-iv-labels': ('040', 5, (108, 305, 548, 392), SEC, [],
+                       'Part (iv) as printed: "Draw a large diagram of a nephron and its associated blood supply from '
+                       'a human kidney. Label the following parts:" above a table of the six parts: Bowman\'s capsule, '
+                       'Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, '
+                       'Glomerulus.', False),
     'q13-table': ('040', 5, (168, 466, 512, 532), SEC, [],
                   'Table of composition in grams per 100 cm3 of fluid. Urea: blood plasma 0.03, glomerular filtrate '
                   '0.03, urine 1.8. Glucose: 0.1, 0.1, 0. Proteins: 7, 0, 0.', False),

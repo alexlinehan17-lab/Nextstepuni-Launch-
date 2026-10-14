@@ -129832,6 +129832,6886 @@
     ],
     "excluded": []
    }
+  },
+  "2020-ol": {
+   "status": "reviewed",
+   "reviewedAt": "2026-10-14",
+   "ledger": "scripts/markbank/authoring/bio_review_2020_ol.py",
+   "method": "Biology 2020 Ordinary Level — reviewed task ledger, carded from the papers for the first time.",
+   "sources": {
+    "038": {
+     "path": "examiner-reports/biology/papers/2020-ol-038-paper.pdf",
+     "fileid": "LC025GLP038EV.pdf",
+     "sha256": "7f533d8ea97af0160bc297528779a24d9ba7a22bc6745d7e6406d52d21d4d847",
+     "bytes": 1309978,
+     "pages": 40,
+     "pageRoles": {
+      "1": "cover",
+      "2": "instructions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "answerbook-instructions",
+      "11": "answer-pages",
+      "12": "answer-pages",
+      "13": "answer-pages",
+      "14": "answer-pages",
+      "15": "answer-pages",
+      "16": "answer-pages",
+      "17": "answer-pages",
+      "18": "answer-pages",
+      "19": "answer-pages",
+      "20": "answer-pages",
+      "21": "answer-pages",
+      "22": "answer-pages",
+      "23": "answer-pages",
+      "24": "answer-pages",
+      "25": "answer-pages",
+      "26": "answer-pages",
+      "27": "answer-pages",
+      "28": "answer-pages",
+      "29": "answer-pages",
+      "30": "answer-pages",
+      "31": "answer-pages",
+      "32": "answer-pages",
+      "33": "answer-pages",
+      "34": "answer-pages",
+      "35": "answer-pages",
+      "36": "graph-paper",
+      "37": "graph-paper",
+      "38": "graph-paper",
+      "39": "graph-paper",
+      "40": "back-cover"
+     },
+     "pagesLifted": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "040": {
+     "path": "examiner-reports/biology/papers/2020-ol-040-paper.pdf",
+     "fileid": "LC025GLP040EV.pdf",
+     "sha256": "88f563418ead0813185bf5e88f8e58b48ae57b531c51c57d022da9b434cee6dd",
+     "bytes": 1930699,
+     "pages": 8,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "back-cover"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/biology/schemes/2020-ol.pdf",
+     "fileid": "LC025GLP000EV.pdf",
+     "sha256": "f9882d2413e659b8071ed262d09c18d2054f4b667194edf99a71dd4538b1c219",
+     "bytes": 275176,
+     "pages": 16,
+     "pageRoles": {
+      "1": "cover",
+      "2": "note",
+      "3": "introduction",
+      "4": "marking-examples",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "blank",
+      "16": "back-cover"
+     },
+     "pagesLifted": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+     ]
+    }
+   },
+   "visualSweep": {
+    "038": "all 40 pages rendered and read",
+    "040": "all 8 pages rendered and read",
+    "scheme": "all 16 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 20,
+    "2": 20,
+    "3": 20,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 30,
+    "8": 30,
+    "9": 30,
+    "10": 60,
+    "11": 60,
+    "12": 60,
+    "13": 60
+   },
+   "partTotals": {
+    "10a": 9,
+    "11a": 9,
+    "12a": 9,
+    "13a": 9,
+    "10b": 27,
+    "11b": 27,
+    "12b": 27,
+    "13b": 27,
+    "10c": 24,
+    "11c": 24,
+    "12c": 24,
+    "13c": 24,
+    "14a": 30,
+    "14b": 30,
+    "14c": 30,
+    "15a": 30,
+    "15b": 30,
+    "15c": 30
+   },
+   "tickChecksums": {
+    "1": {
+     "8": 5
+    },
+    "4": {
+     "8": 5
+    },
+    "2": {
+     "7": 7
+    },
+    "3": {
+     "7": 7
+    },
+    "5": {
+     "7": 7
+    },
+    "6": {
+     "7": 7
+    },
+    "7a": {
+     "5": 2
+    },
+    "8a": {
+     "5": 2
+    },
+    "9a": {
+     "5": 2
+    },
+    "7b": {
+     "9": 8
+    },
+    "8b": {
+     "9": 8
+    },
+    "9b": {
+     "9": 8
+    },
+    "10a": {
+     "3": 3
+    },
+    "11a": {
+     "3": 3
+    },
+    "12a": {
+     "3": 3
+    },
+    "13a": {
+     "3": 3
+    },
+    "10b": {
+     "3": 9
+    },
+    "11b": {
+     "3": 9
+    },
+    "12b": {
+     "3": 9
+    },
+    "13b": {
+     "3": 9
+    },
+    "10c": {
+     "3": 8
+    },
+    "11c": {
+     "3": 8
+    },
+    "12c": {
+     "3": 8
+    },
+    "13c": {
+     "3": 8
+    },
+    "14a": {
+     "3": 10
+    },
+    "14b": {
+     "3": 10
+    },
+    "14c": {
+     "3": 9,
+     "1": 3
+    },
+    "15a": {
+     "3": 10
+    },
+    "15b": {
+     "3": 10
+    },
+    "15c": {
+     "3": 10
+    }
+   },
+   "selectionScan": [
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Instructions: \"blue or black pen\", not a question."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any five",
+     "disposition": "Section A rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "any five",
+     "disposition": "Section A rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q1 lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q2 lead-in: every statement asked."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q2 \"true (T) or false (F)\": the answer options."
+    },
+    {
+     "doc": "038",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q2 \"T or F\": the answer options."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "choose",
+     "disposition": "Q4 \"Choose each term\": every description matched, one card per lettered part."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q4 list of terms: the options."
+    },
+    {
+     "doc": "038",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q5 list of cell names: the options; every box asked, one card per letter."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "any two",
+     "disposition": "Section B rubric repeated."
+    },
+    {
+     "doc": "038",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q7(b) lead-in: every part asked."
+    },
+    {
+     "doc": "038",
+     "page": 8,
+     "directive": "or",
+     "disposition": "Q8(b)(ii) \"a plant or producer\": the same ask."
+    },
+    {
+     "doc": "038",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q9(b) \"recorded the following\": a reference to the table."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any four",
+     "disposition": "Section C rubric repeated."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q10(a) lead-in: every term asked, one card per roman."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q10(b) \"the following article\": a reference."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "either",
+     "disposition": "Q10(b) passage \"either killed on the road\": passage text."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q10(b) passage \"hunted or die from disease\": passage text."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q10(c) list of equipment: every piece asked, one card each."
+    },
+    {
+     "doc": "040",
+     "page": 2,
+     "directive": "any one",
+     "disposition": "Q10(c)(iii) \"any one abiotic factor\": one response."
+    },
+    {
+     "doc": "040",
+     "page": 4,
+     "directive": "both",
+     "disposition": "Q12(c)(iii) \"common to both structures\": description."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "either",
+     "disposition": "Q13(c) \"either monocotyledonous or dicotyledonous\": description."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q13(c) same description."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q13(c)(i) \"A or B\": the answer options."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "or",
+     "disposition": "Q13(c)(iii) \"A or B\": the answer options."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q13(c)(vi) tissue types: the options."
+    },
+    {
+     "doc": "040",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q13(c)(vi) functions: every function asked, one card each."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "any two",
+     "disposition": "Q14 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 6,
+     "directive": "the following",
+     "disposition": "Q14(c)(iii) \"the following labels\": all three labels asked."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "any two",
+     "disposition": "Q15 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q15(a)(i) parts list: every part asked, one card each."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "either",
+     "disposition": "Q15(a)(iv) \"either the eye or the ear\": marked on one disorder row and one treatment row; one card."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "or",
+     "disposition": "Q15(a)(iv), same choice."
+    },
+    {
+     "doc": "040",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q15(b)(i) functions list: every function asked, one card each."
+    }
+   ],
+   "routes": {},
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1a",
+     "id": "bio-2020-ol-q1-a",
+     "questionRef": "2020 OL Q1(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-food",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1b",
+     "id": "bio-2020-ol-q1-b",
+     "questionRef": "2020 OL Q1(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-2",
+     "concept": "protein-source",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1c",
+     "id": "bio-2020-ol-q1-c",
+     "questionRef": "2020 OL Q1(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-2",
+     "concept": "carbohydrate-source",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1d",
+     "id": "bio-2020-ol-q1-d",
+     "questionRef": "2020 OL Q1(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-2",
+     "concept": "elements-in-carbohydrates",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1e",
+     "id": "bio-2020-ol-q1-e",
+     "questionRef": "2020 OL Q1(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-1-2",
+     "concept": "function-of-fibre",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2a",
+     "id": "bio-2020-ol-q2-a",
+     "questionRef": "2020 OL Q2(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-1",
+     "concept": "amoeba-kingdom",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2b",
+     "id": "bio-2020-ol-q2-b",
+     "questionRef": "2020 OL Q2(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "fungal-cell-walls",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2c",
+     "id": "bio-2020-ol-q2-c",
+     "questionRef": "2020 OL Q2(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-1",
+     "concept": "monera",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2d",
+     "id": "bio-2020-ol-q2-d",
+     "questionRef": "2020 OL Q2(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-1",
+     "concept": "animal-nutrition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2e",
+     "id": "bio-2020-ol-q2-e",
+     "questionRef": "2020 OL Q2(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-3",
+     "concept": "plant-cell-walls",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2f",
+     "id": "bio-2020-ol-q2-f",
+     "questionRef": "2020 OL Q2(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "fungal-nutrition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2g",
+     "id": "bio-2020-ol-q2-g",
+     "questionRef": "2020 OL Q2(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-1",
+     "concept": "viruses-and-kingdoms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3a",
+     "id": "bio-2020-ol-q3-a",
+     "questionRef": "2020 OL Q3(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "respiration-arrow",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3b",
+     "id": "bio-2020-ol-q3-b",
+     "questionRef": "2020 OL Q3(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "photosynthesis-arrow",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3c",
+     "id": "bio-2020-ol-q3-c",
+     "questionRef": "2020 OL Q3(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "burning-arrow",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3d",
+     "id": "bio-2020-ol-q3-d",
+     "questionRef": "2020 OL Q3(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "carbon-stores",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3e",
+     "id": "bio-2020-ol-q3-e",
+     "questionRef": "2020 OL Q3(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "decomposition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3f",
+     "id": "bio-2020-ol-q3-f",
+     "questionRef": "2020 OL Q3(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "decomposers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3g",
+     "id": "bio-2020-ol-q3-g",
+     "questionRef": "2020 OL Q3(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-2",
+     "concept": "reducing-carbon-dioxide",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q3-carbon",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The carbon cycle the arrows are drawn on is shown as the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4a",
+     "id": "bio-2020-ol-q4-a",
+     "questionRef": "2020 OL Q4(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "immobilised-enzyme-advantage",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-table",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4b",
+     "id": "bio-2020-ol-q4-b",
+     "questionRef": "2020 OL Q4(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "constant-temperature",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-table",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4c",
+     "id": "bio-2020-ol-q4-c",
+     "questionRef": "2020 OL Q4(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "substrate",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-table",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4d",
+     "id": "bio-2020-ol-q4-d",
+     "questionRef": "2020 OL Q4(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "product",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-table",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4e",
+     "id": "bio-2020-ol-q4-e",
+     "questionRef": "2020 OL Q4(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 8,
+     "markUnits": [
+      8
+     ],
+     "topic": "bio-2-1",
+     "concept": "amylase",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q4-table",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5a",
+     "id": "bio-2020-ol-q5-a",
+     "questionRef": "2020 OL Q5(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-3",
+     "concept": "cheek-cell",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5b",
+     "id": "bio-2020-ol-q5-b",
+     "questionRef": "2020 OL Q5(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-1-1",
+     "concept": "amoeba",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5c",
+     "id": "bio-2020-ol-q5-c",
+     "questionRef": "2020 OL Q5(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "root-hair",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5d",
+     "id": "bio-2020-ol-q5-d",
+     "questionRef": "2020 OL Q5(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "red-blood-cell",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5e",
+     "id": "bio-2020-ol-q5-e",
+     "questionRef": "2020 OL Q5(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem-vessel",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5f",
+     "id": "bio-2020-ol-q5-f",
+     "questionRef": "2020 OL Q5(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-5",
+     "concept": "sperm-cell",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5g",
+     "id": "bio-2020-ol-q5-g",
+     "questionRef": "2020 OL Q5(g)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "neuron",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q5-cells",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Each lettered box under a drawing is its own part; the drawing it names is shown in the question's own print.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6a",
+     "id": "bio-2020-ol-q6-a",
+     "questionRef": "2020 OL Q6(a)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "plasma",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6b",
+     "id": "bio-2020-ol-q6-b",
+     "questionRef": "2020 OL Q6(b)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "function-of-plasma",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6c",
+     "id": "bio-2020-ol-q6-c",
+     "questionRef": "2020 OL Q6(c)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "preventing-clotting",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6d",
+     "id": "bio-2020-ol-q6-d",
+     "questionRef": "2020 OL Q6(d)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 14,
+     "markUnits": [
+      7,
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "blood-groups",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6e",
+     "id": "bio-2020-ol-q6-e",
+     "questionRef": "2020 OL Q6(e)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-6",
+     "concept": "red-blood-cells",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6f",
+     "id": "bio-2020-ol-q6-f",
+     "questionRef": "2020 OL Q6(f)",
+     "section": "A",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-2-4",
+     "concept": "white-blood-cells",
+     "route": null,
+     "rows": 1,
+     "figure": "q6-label",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ai",
+     "id": "bio-2020-ol-q7-a-i",
+     "questionRef": "2020 OL Q7(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-cells-need-water",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7aii",
+     "id": "bio-2020-ol-q7-a-ii",
+     "questionRef": "2020 OL Q7(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-1-3",
+     "concept": "selectively-permeable-membranes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bi",
+     "id": "bio-2020-ol-q7-b-i",
+     "questionRef": "2020 OL Q7(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      9,
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-apparatus",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "One piece of apparatus and one solution: two responses on the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bii",
+     "id": "bio-2020-ol-q7-b-ii",
+     "questionRef": "2020 OL Q7(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-control",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7biii",
+     "id": "bio-2020-ol-q7-b-iii",
+     "questionRef": "2020 OL Q7(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "membrane-used",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7biv",
+     "id": "bio-2020-ol-q7-b-iv",
+     "questionRef": "2020 OL Q7(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "starting-record",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bv",
+     "id": "bio-2020-ol-q7-b-v",
+     "questionRef": "2020 OL Q7(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "evidence-of-osmosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bvi",
+     "id": "bio-2020-ol-q7-b-vi",
+     "questionRef": "2020 OL Q7(b)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "direction-of-osmosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bvii",
+     "id": "bio-2020-ol-q7-b-vii",
+     "questionRef": "2020 OL Q7(b)(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-in-preservation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8ai",
+     "id": "bio-2020-ol-q8-a-i",
+     "questionRef": "2020 OL Q8(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "qualitative-survey",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8aii",
+     "id": "bio-2020-ol-q8-a-ii",
+     "questionRef": "2020 OL Q8(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-3-1",
+     "concept": "fauna",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bi",
+     "id": "bio-2020-ol-q8-b-i",
+     "questionRef": "2020 OL Q8(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "naming-an-ecosystem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bii",
+     "id": "bio-2020-ol-q8-b-ii",
+     "questionRef": "2020 OL Q8(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "a-producer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biii",
+     "id": "bio-2020-ol-q8-b-iii",
+     "questionRef": "2020 OL Q8(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "quadrat",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biv",
+     "id": "bio-2020-ol-q8-b-iv",
+     "questionRef": "2020 OL Q8(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "avoiding-bias",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bv",
+     "id": "bio-2020-ol-q8-b-v",
+     "questionRef": "2020 OL Q8(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "counting-hits",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-grid",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bvi",
+     "id": "bio-2020-ol-q8-b-vi",
+     "questionRef": "2020 OL Q8(b)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 18,
+     "markUnits": [
+      9,
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "percentage-cover",
+     "route": null,
+     "rows": 1,
+     "figure": "q8-grid",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bvii",
+     "id": "bio-2020-ol-q8-b-vii",
+     "questionRef": "2020 OL Q8(b)(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-3-1",
+     "concept": "reliable-surveys",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "bio-2020-ol-q9-a-i",
+     "questionRef": "2020 OL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-4",
+     "concept": "tropisms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "bio-2020-ol-q9-a-ii",
+     "questionRef": "2020 OL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 5,
+     "markUnits": [
+      5
+     ],
+     "topic": "bio-2-4",
+     "concept": "tropisms-in-germination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi",
+     "id": "bio-2020-ol-q9-b-i",
+     "questionRef": "2020 OL Q9(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "iaa-control",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "bio-2020-ol-q9-b-ii",
+     "questionRef": "2020 OL Q9(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "seed-for-iaa",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "bio-2020-ol-q9-b-iii",
+     "questionRef": "2020 OL Q9(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "applying-iaa",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv",
+     "id": "bio-2020-ol-q9-b-iv",
+     "questionRef": "2020 OL Q9(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "measuring-growth",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bv",
+     "id": "bio-2020-ol-q9-b-v",
+     "questionRef": "2020 OL Q9(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "same-number-of-seeds",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bvi",
+     "id": "bio-2020-ol-q9-b-vi",
+     "questionRef": "2020 OL Q9(b)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "iaa-stimulates",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bvii",
+     "id": "bio-2020-ol-q9-b-vii",
+     "questionRef": "2020 OL Q9(b)(vii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "iaa-inhibits",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bviii",
+     "id": "bio-2020-ol-q9-b-viii",
+     "questionRef": "2020 OL Q9(b)(viii)",
+     "section": "B",
+     "paper": {
+      "doc": "038",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      9
+     ],
+     "topic": "bio-2-4",
+     "concept": "other-growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": "q9-table",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ai",
+     "id": "bio-2020-ol-q10-a-i",
+     "questionRef": "2020 OL Q10(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "competition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10aii",
+     "id": "bio-2020-ol-q10-a-ii",
+     "questionRef": "2020 OL Q10(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "producer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10aiii",
+     "id": "bio-2020-ol-q10-a-iii",
+     "questionRef": "2020 OL Q10(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "niche",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bi",
+     "id": "bio-2020-ol-q10-b-i",
+     "questionRef": "2020 OL Q10(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "foxes-in-towns",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bii",
+     "id": "bio-2020-ol-q10-b-ii",
+     "questionRef": "2020 OL Q10(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "fox-mortality",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biii",
+     "id": "bio-2020-ol-q10-b-iii",
+     "questionRef": "2020 OL Q10(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "a-producer-in-the-article",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biv",
+     "id": "bio-2020-ol-q10-b-iv",
+     "questionRef": "2020 OL Q10(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "a-primary-consumer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bv",
+     "id": "bio-2020-ol-q10-b-v",
+     "questionRef": "2020 OL Q10(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "fox-food-chain",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bvi",
+     "id": "bio-2020-ol-q10-b-vi",
+     "questionRef": "2020 OL Q10(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "fox-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bvii",
+     "id": "bio-2020-ol-q10-b-vii",
+     "questionRef": "2020 OL Q10(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "minimising-waste",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ci-pooter",
+     "id": "bio-2020-ol-q10-c-i-pooter",
+     "questionRef": "2020 OL Q10(c)(i) — Pooter",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "using-a-pooter",
+     "route": null,
+     "item": "Pooter",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ci-pitfall-trap",
+     "id": "bio-2020-ol-q10-c-i-pitfall-trap",
+     "questionRef": "2020 OL Q10(c)(i) — Pitfall Trap",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "using-a-pitfall-trap",
+     "route": null,
+     "item": "Pitfall Trap",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ci-sweep-net",
+     "id": "bio-2020-ol-q10-c-i-sweep-net",
+     "questionRef": "2020 OL Q10(c)(i) — Sweep Net",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "using-a-sweep-net",
+     "route": null,
+     "item": "Sweep Net",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii",
+     "id": "bio-2020-ol-q10-c-ii",
+     "questionRef": "2020 OL Q10(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "identifying-animals",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ciii",
+     "id": "bio-2020-ol-q10-c-iii",
+     "questionRef": "2020 OL Q10(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "abiotic-factors",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ai-haploid",
+     "id": "bio-2020-ol-q11-a-i-haploid",
+     "questionRef": "2020 OL Q11(a)(i) — Haploid",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "haploid",
+     "route": null,
+     "item": "Haploid",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ai-diploid",
+     "id": "bio-2020-ol-q11-a-i-diploid",
+     "questionRef": "2020 OL Q11(a)(i) — Diploid",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "diploid",
+     "route": null,
+     "item": "Diploid",
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11aii",
+     "id": "bio-2020-ol-q11-a-ii",
+     "questionRef": "2020 OL Q11(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "meiosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bi",
+     "id": "bio-2020-ol-q11-b-i",
+     "questionRef": "2020 OL Q11(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "chromosome-protein",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bii",
+     "id": "bio-2020-ol-q11-b-ii",
+     "questionRef": "2020 OL Q11(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "function-of-a-gene",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biii",
+     "id": "bio-2020-ol-q11-b-iii",
+     "questionRef": "2020 OL Q11(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "double-helix",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biv",
+     "id": "bio-2020-ol-q11-b-iv",
+     "questionRef": "2020 OL Q11(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "adenine-pairs-thymine",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bv",
+     "id": "bio-2020-ol-q11-b-v",
+     "questionRef": "2020 OL Q11(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "guanine-pairs-cytosine",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bvi",
+     "id": "bio-2020-ol-q11-b-vi",
+     "questionRef": "2020 OL Q11(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "order-of-profiling",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bvii",
+     "id": "bio-2020-ol-q11-b-vii",
+     "questionRef": "2020 OL Q11(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "where-dna-is",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bviii",
+     "id": "bio-2020-ol-q11-b-viii",
+     "questionRef": "2020 OL Q11(b)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "restriction-enzymes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bix",
+     "id": "bio-2020-ol-q11-b-ix",
+     "questionRef": "2020 OL Q11(b)(ix)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-3",
+     "concept": "uses-of-profiling",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ci",
+     "id": "bio-2020-ol-q11-c-i",
+     "questionRef": "2020 OL Q11(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "dominant-allele",
+     "route": null,
+     "rows": 1,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cii",
+     "id": "bio-2020-ol-q11-c-ii",
+     "questionRef": "2020 OL Q11(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "recessive-allele",
+     "route": null,
+     "rows": 1,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ciii",
+     "id": "bio-2020-ol-q11-c-iii",
+     "questionRef": "2020 OL Q11(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "alleles-in-a-gamete",
+     "route": null,
+     "rows": 1,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11civ",
+     "id": "bio-2020-ol-q11-c-iv",
+     "questionRef": "2020 OL Q11(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "homozygous",
+     "route": null,
+     "rows": 1,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cv",
+     "id": "bio-2020-ol-q11-c-v",
+     "questionRef": "2020 OL Q11(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "missing-offspring",
+     "route": null,
+     "rows": 2,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cvi",
+     "id": "bio-2020-ol-q11-c-vi",
+     "questionRef": "2020 OL Q11(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "sex-chromosomes",
+     "route": null,
+     "rows": 2,
+     "figure": "q11c-cross",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "bio-2020-ol-q12-a-i",
+     "questionRef": "2020 OL Q12(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "diffusion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "bio-2020-ol-q12-a-ii",
+     "questionRef": "2020 OL Q12(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "pulmonary-vein",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aiii",
+     "id": "bio-2020-ol-q12-a-iii",
+     "questionRef": "2020 OL Q12(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "left-atrium",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi-a",
+     "id": "bio-2020-ol-q12-b-i-a",
+     "questionRef": "2020 OL Q12(b)(i) — A",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-structure-a",
+     "route": null,
+     "item": "A",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi-b",
+     "id": "bio-2020-ol-q12-b-i-b",
+     "questionRef": "2020 OL Q12(b)(i) — B",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-structure-b",
+     "route": null,
+     "item": "B",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi-c",
+     "id": "bio-2020-ol-q12-b-i-c",
+     "questionRef": "2020 OL Q12(b)(i) — C",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-structure-c",
+     "route": null,
+     "item": "C",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi-d",
+     "id": "bio-2020-ol-q12-b-i-d",
+     "questionRef": "2020 OL Q12(b)(i) — D",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-structure-d",
+     "route": null,
+     "item": "D",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii",
+     "id": "bio-2020-ol-q12-b-ii",
+     "questionRef": "2020 OL Q12(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "cartilage-in-the-trachea",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii",
+     "id": "bio-2020-ol-q12-b-iii",
+     "questionRef": "2020 OL Q12(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-muscles",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biv",
+     "id": "bio-2020-ol-q12-b-iv",
+     "questionRef": "2020 OL Q12(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "pressure-in-inhalation",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bv-active",
+     "id": "bio-2020-ol-q12-b-v-active",
+     "questionRef": "2020 OL Q12(b)(v) — Active",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "active-process",
+     "route": null,
+     "item": "Active",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bv-passive",
+     "id": "bio-2020-ol-q12-b-v-passive",
+     "questionRef": "2020 OL Q12(b)(v) — Passive",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "passive-process",
+     "route": null,
+     "item": "Passive",
+     "rows": 1,
+     "figure": "q12-lungs",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-a",
+     "id": "bio-2020-ol-q12-c-i-a",
+     "questionRef": "2020 OL Q12(c)(i) — A",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "exchange-structure-a",
+     "route": null,
+     "item": "A",
+     "rows": 1,
+     "figure": "q12-exchange",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci-b",
+     "id": "bio-2020-ol-q12-c-i-b",
+     "questionRef": "2020 OL Q12(c)(i) — B",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "exchange-structure-b",
+     "route": null,
+     "item": "B",
+     "rows": 1,
+     "figure": "q12-exchange",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii-a",
+     "id": "bio-2020-ol-q12-c-ii-a",
+     "questionRef": "2020 OL Q12(c)(ii) — A",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "location-of-structure-a",
+     "route": null,
+     "item": "A",
+     "rows": 1,
+     "figure": "q12-exchange",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii-b",
+     "id": "bio-2020-ol-q12-c-ii-b",
+     "questionRef": "2020 OL Q12(c)(ii) — B",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "location-of-structure-b",
+     "route": null,
+     "item": "B",
+     "rows": 1,
+     "figure": "q12-exchange",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "bio-2020-ol-q12-c-iii",
+     "questionRef": "2020 OL Q12(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "exchange-surfaces",
+     "route": null,
+     "rows": 1,
+     "figure": "q12-exchange",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12civ",
+     "id": "bio-2020-ol-q12-c-iv",
+     "questionRef": "2020 OL Q12(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "breathing-disorder",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The scheme prints one disorder with its treatments on one 3,3 line: one row for both marks.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ai",
+     "id": "bio-2020-ol-q13-a-i",
+     "questionRef": "2020 OL Q13(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "role-of-chlorophyll",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aii",
+     "id": "bio-2020-ol-q13-a-ii",
+     "questionRef": "2020 OL Q13(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "chloroplast",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aiii",
+     "id": "bio-2020-ol-q13-a-iii",
+     "questionRef": "2020 OL Q13(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "glucose",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bi",
+     "id": "bio-2020-ol-q13-b-i",
+     "questionRef": "2020 OL Q13(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "source-of-energy",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bii",
+     "id": "bio-2020-ol-q13-b-ii",
+     "questionRef": "2020 OL Q13(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "oxygen-released",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biii",
+     "id": "bio-2020-ol-q13-b-iii",
+     "questionRef": "2020 OL Q13(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "stomata",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13biv",
+     "id": "bio-2020-ol-q13-b-iv",
+     "questionRef": "2020 OL Q13(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "water-transport",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bv",
+     "id": "bio-2020-ol-q13-b-v",
+     "questionRef": "2020 OL Q13(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "splitting-water",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bvi",
+     "id": "bio-2020-ol-q13-b-vi",
+     "questionRef": "2020 OL Q13(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "greenhouse-growth",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plant",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ci",
+     "id": "bio-2020-ol-q13-c-i",
+     "questionRef": "2020 OL Q13(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "identifying-a-monocot",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plants",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii",
+     "id": "bio-2020-ol-q13-c-ii",
+     "questionRef": "2020 OL Q13(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "monocot-features",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plants",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ciii",
+     "id": "bio-2020-ol-q13-c-iii",
+     "questionRef": "2020 OL Q13(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "identifying-a-dicot",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plants",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13civ",
+     "id": "bio-2020-ol-q13-c-iv",
+     "questionRef": "2020 OL Q13(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "dicot-features",
+     "route": null,
+     "rows": 1,
+     "figure": "q13-plants",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cv",
+     "id": "bio-2020-ol-q13-c-v",
+     "questionRef": "2020 OL Q13(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "functions-of-roots",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cvi1",
+     "id": "bio-2020-ol-q13-c-vi-1",
+     "questionRef": "2020 OL Q13(c)(vi)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "vascular-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cvi2",
+     "id": "bio-2020-ol-q13-c-vi-2",
+     "questionRef": "2020 OL Q13(c)(vi)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "dermal-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cvi3",
+     "id": "bio-2020-ol-q13-c-vi-3",
+     "questionRef": "2020 OL Q13(c)(vi)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "ground-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ai",
+     "id": "bio-2020-ol-q14-a-i",
+     "questionRef": "2020 OL Q14(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "yeast",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aii",
+     "id": "bio-2020-ol-q14-a-ii",
+     "questionRef": "2020 OL Q14(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "carbon-dioxide-collected",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiii",
+     "id": "bio-2020-ol-q14-a-iii",
+     "questionRef": "2020 OL Q14(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "limewater-test",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiv",
+     "id": "bio-2020-ol-q14-a-iv",
+     "questionRef": "2020 OL Q14(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "alcohol-produced",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14av",
+     "id": "bio-2020-ol-q14-a-v",
+     "questionRef": "2020 OL Q14(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "end-of-fermentation",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avi",
+     "id": "bio-2020-ol-q14-a-vi",
+     "questionRef": "2020 OL Q14(a)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "testing-for-alcohol",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avii",
+     "id": "bio-2020-ol-q14-a-vii",
+     "questionRef": "2020 OL Q14(a)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "positive-iodoform-test",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aviii",
+     "id": "bio-2020-ol-q14-a-viii",
+     "questionRef": "2020 OL Q14(a)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "lactic-acid",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aix",
+     "id": "bio-2020-ol-q14-a-ix",
+     "questionRef": "2020 OL Q14(a)(ix)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "effect-of-lactic-acid",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ax",
+     "id": "bio-2020-ol-q14-a-x",
+     "questionRef": "2020 OL Q14(a)(x)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "bioprocessing",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-fermentation",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bi",
+     "id": "bio-2020-ol-q14-b-i",
+     "questionRef": "2020 OL Q14(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "staining",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii-a",
+     "id": "bio-2020-ol-q14-b-ii-a",
+     "questionRef": "2020 OL Q14(b)(ii) — A",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "plant-cell-part-a",
+     "route": null,
+     "item": "A",
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii-b",
+     "id": "bio-2020-ol-q14-b-ii-b",
+     "questionRef": "2020 OL Q14(b)(ii) — B",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "plant-cell-part-b",
+     "route": null,
+     "item": "B",
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii-c",
+     "id": "bio-2020-ol-q14-b-ii-c",
+     "questionRef": "2020 OL Q14(b)(ii) — C",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "plant-cell-part-c",
+     "route": null,
+     "item": "C",
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii-d",
+     "id": "bio-2020-ol-q14-b-ii-d",
+     "questionRef": "2020 OL Q14(b)(ii) — D",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "plant-cell-part-d",
+     "route": null,
+     "item": "D",
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii",
+     "id": "bio-2020-ol-q14-b-iii",
+     "questionRef": "2020 OL Q14(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "function-of-the-cell-wall",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biv",
+     "id": "bio-2020-ol-q14-b-iv",
+     "questionRef": "2020 OL Q14(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "function-of-mitochondria",
+     "route": null,
+     "rows": 1,
+     "figure": "q14-cell",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bv",
+     "id": "bio-2020-ol-q14-b-v",
+     "questionRef": "2020 OL Q14(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bvi",
+     "id": "bio-2020-ol-q14-b-vi",
+     "questionRef": "2020 OL Q14(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "tissue-culture",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bvii",
+     "id": "bio-2020-ol-q14-b-vii",
+     "questionRef": "2020 OL Q14(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "uses-of-tissue-culture",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ci",
+     "id": "bio-2020-ol-q14-c-i",
+     "questionRef": "2020 OL Q14(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "where-rhizopus-grows",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cii",
+     "id": "bio-2020-ol-q14-c-ii",
+     "questionRef": "2020 OL Q14(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "heterotrophic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The paper prints this part as \"(iii)\" and the next as \"(iii)\" again; the scheme numbers it (ii).",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ciii",
+     "id": "bio-2020-ol-q14-c-iii",
+     "questionRef": "2020 OL Q14(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-3-2",
+     "concept": "drawing-rhizopus",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The scheme prices the drawing at 3 and its three named labels at 1 each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14civ",
+     "id": "bio-2020-ol-q14-c-iv",
+     "questionRef": "2020 OL Q14(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "mitosis-in-rhizopus",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cv",
+     "id": "bio-2020-ol-q14-c-v",
+     "questionRef": "2020 OL Q14(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "zygospores",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cvi",
+     "id": "bio-2020-ol-q14-c-vi",
+     "questionRef": "2020 OL Q14(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "harmful-fungi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cvii",
+     "id": "bio-2020-ol-q14-c-vii",
+     "questionRef": "2020 OL Q14(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "beneficial-fungi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cviii",
+     "id": "bio-2020-ol-q14-c-viii",
+     "questionRef": "2020 OL Q14(c)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "antibiotics",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai1",
+     "id": "bio-2020-ol-q15-a-i-1",
+     "questionRef": "2020 OL Q15(a)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "sclera",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai2",
+     "id": "bio-2020-ol-q15-a-i-2",
+     "questionRef": "2020 OL Q15(a)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "lens",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai3",
+     "id": "bio-2020-ol-q15-a-i-3",
+     "questionRef": "2020 OL Q15(a)(i)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "optic-nerve",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai4",
+     "id": "bio-2020-ol-q15-a-i-4",
+     "questionRef": "2020 OL Q15(a)(i)4",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "retina",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aii",
+     "id": "bio-2020-ol-q15-a-ii",
+     "questionRef": "2020 OL Q15(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "pupil",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiii",
+     "id": "bio-2020-ol-q15-a-iii",
+     "questionRef": "2020 OL Q15(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "rods-and-cones",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiv",
+     "id": "bio-2020-ol-q15-a-iv",
+     "questionRef": "2020 OL Q15(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "eye-and-ear-disorders",
+     "route": null,
+     "rows": 2,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "Eye or ear: one disorder row and one treatment row for either, so one card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15av",
+     "id": "bio-2020-ol-q15-a-v",
+     "questionRef": "2020 OL Q15(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "optic-nerve-to-brain",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-eye",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi1",
+     "id": "bio-2020-ol-q15-b-i-1",
+     "questionRef": "2020 OL Q15(b)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "produces-pollen",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-flower",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi2",
+     "id": "bio-2020-ol-q15-b-i-2",
+     "questionRef": "2020 OL Q15(b)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "attracts-insects",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-flower",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi3",
+     "id": "bio-2020-ol-q15-b-i-3",
+     "questionRef": "2020 OL Q15(b)(i)3",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "protects-the-bud",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-flower",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi4",
+     "id": "bio-2020-ol-q15-b-i-4",
+     "questionRef": "2020 OL Q15(b)(i)4",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "produces-eggs",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-flower",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bii",
+     "id": "bio-2020-ol-q15-b-ii",
+     "questionRef": "2020 OL Q15(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "pollination",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biii",
+     "id": "bio-2020-ol-q15-b-iii",
+     "questionRef": "2020 OL Q15(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "insect-pollination",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-flower",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biv",
+     "id": "bio-2020-ol-q15-b-iv",
+     "questionRef": "2020 OL Q15(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "dormancy",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "The scheme prints both lines of answers under one \"2(3)\": one menu of two responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci-a",
+     "id": "bio-2020-ol-q15-c-i-a",
+     "questionRef": "2020 OL Q15(c)(i) — A",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-part-a",
+     "route": null,
+     "item": "A",
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci-b",
+     "id": "bio-2020-ol-q15-c-i-b",
+     "questionRef": "2020 OL Q15(c)(i) — B",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-part-b",
+     "route": null,
+     "item": "B",
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci-c",
+     "id": "bio-2020-ol-q15-c-i-c",
+     "questionRef": "2020 OL Q15(c)(i) — C",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-part-c",
+     "route": null,
+     "item": "C",
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci-d",
+     "id": "bio-2020-ol-q15-c-i-d",
+     "questionRef": "2020 OL Q15(c)(i) — D",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-part-d",
+     "route": null,
+     "item": "D",
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cii",
+     "id": "bio-2020-ol-q15-c-ii",
+     "questionRef": "2020 OL Q15(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "where-sperm-are-made",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ciii",
+     "id": "bio-2020-ol-q15-c-iii",
+     "questionRef": "2020 OL Q15(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "sperm-duct",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15civ",
+     "id": "bio-2020-ol-q15-c-iv",
+     "questionRef": "2020 OL Q15(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "seminal-fluid",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cv",
+     "id": "bio-2020-ol-q15-c-v",
+     "questionRef": "2020 OL Q15(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "testosterone",
+     "route": null,
+     "rows": 1,
+     "figure": "q15-male",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cvi",
+     "id": "bio-2020-ol-q15-c-vi",
+     "questionRef": "2020 OL Q15(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "secondary-sexual-characteristics",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cvii",
+     "id": "bio-2020-ol-q15-c-vii",
+     "questionRef": "2020 OL Q15(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "040",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-5",
+     "concept": "male-infertility",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on its own part marker.",
+     "decision": null,
+     "notes": null
+    }
+   ],
+   "cardCount": 186,
+   "baseTaskCount": 186,
+   "figures": [
+    "biology-2020-ol-q11c-cross",
+    "biology-2020-ol-q12-exchange",
+    "biology-2020-ol-q12-lungs",
+    "biology-2020-ol-q13-plant",
+    "biology-2020-ol-q13-plants",
+    "biology-2020-ol-q14-cell",
+    "biology-2020-ol-q14-fermentation",
+    "biology-2020-ol-q15-eye",
+    "biology-2020-ol-q15-flower",
+    "biology-2020-ol-q15-male",
+    "biology-2020-ol-q3-carbon",
+    "biology-2020-ol-q4-table",
+    "biology-2020-ol-q5-cells",
+    "biology-2020-ol-q6-label",
+    "biology-2020-ol-q8-grid",
+    "biology-2020-ol-q9-table"
+   ],
+   "checks": {
+    "censusLeaves": 163,
+    "censusLeavesClaimed": 163,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-12-chemicals-of-life-biomolecules",
+       "biology-ordinary-old-course-food-food-tests"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-11-viruses-classification-and-the-domains-of-life",
+       "biology-ordinary-new-course-32-microorganisms",
+       "biology-ordinary-old-course-bacteria-viruses-fungi-protista",
+       "biology-ordinary-new-course-13-unit-of-life-cells"
+      ],
+      "taskTopics": [
+       "bio-1-1",
+       "bio-1-3",
+       "bio-3-2"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-32-nutrient-recycling",
+       "biology-ordinary-old-course-photosynthesis",
+       "biology-ordinary-old-course-respiration"
+      ],
+      "taskTopics": [
+       "bio-3-2"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-21-enzymes",
+       "biology-ordinary-old-course-biochemical-reactions-enzymes"
+      ],
+      "taskTopics": [
+       "bio-2-1"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-old-course-bacteria-viruses-fungi-protista",
+       "biology-ordinary-new-course-11-viruses-classification-and-the-domains-of-life",
+       "biology-ordinary-new-course-26-plant-structure-and-transport",
+       "biology-ordinary-new-course-26-the-circulatory-system-and-blood",
+       "biology-ordinary-new-course-25-reproduction-human",
+       "biology-ordinary-new-course-24-the-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-1-1",
+       "bio-1-3",
+       "bio-2-4",
+       "bio-2-5",
+       "bio-2-6"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-the-circulatory-system-and-blood",
+       "biology-ordinary-old-course-blood-circulatory-system",
+       "biology-ordinary-new-course-24-immunity"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-6"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-transport-across-membranes",
+       "biology-ordinary-old-course-cell-metabolism-osmosis",
+       "biology-ordinary-new-course-12-chemicals-of-life-biomolecules",
+       "biology-ordinary-new-course-13-unit-of-life-cells"
+      ],
+      "taskTopics": [
+       "bio-1-2",
+       "bio-1-3",
+       "bio-2-6"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-31-investigating-an-ecosystem",
+       "biology-ordinary-old-course-ecology-ecosystems"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-24-plant-responses",
+       "biology-ordinary-old-course-plant-responses",
+       "biology-ordinary-old-course-plant-responses-seed-growth"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-ordinary-new-course-31-investigating-an-ecosystem",
+       "biology-ordinary-old-course-ecology-ecosystems"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-12-chemicals-of-life-biomolecules",
+       "biology-ordinary-new-course-14-information-of-life-genetic-inheritance",
+       "biology-ordinary-new-course-33-genetic-engineering",
+       "biology-ordinary-new-course-23-cell-division-and-cancer",
+       "biology-ordinary-new-course-13-unit-of-life-cells"
+      ],
+      "taskTopics": [
+       "bio-1-2",
+       "bio-1-3",
+       "bio-1-4",
+       "bio-2-3",
+       "bio-3-3"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-26-the-digestive-system",
+       "biology-ordinary-old-course-breathing-system"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-22-photosynthesis",
+       "biology-ordinary-new-course-26-plant-structure-and-transport",
+       "biology-ordinary-old-course-photosynthesis",
+       "biology-ordinary-old-course-plant-structure"
+      ],
+      "taskTopics": [
+       "bio-2-2",
+       "bio-2-6"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-13-unit-of-life-cells",
+       "biology-ordinary-new-course-22-respiration",
+       "biology-ordinary-new-course-32-microorganisms",
+       "biology-ordinary-old-course-bacteria-viruses-fungi-protista",
+       "biology-ordinary-old-course-plant-structure",
+       "biology-ordinary-old-course-respiration"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-2-2",
+       "bio-3-2"
+      ]
+     },
+     "15": {
+      "atlasTopics": [
+       "biology-ordinary-new-course-25-reproduction-human",
+       "biology-ordinary-new-course-25-reproduction-plant",
+       "biology-ordinary-old-course-eyeear-nervous-system",
+       "biology-ordinary-old-course-human-reproduction",
+       "biology-ordinary-old-course-plant-reproduction",
+       "biology-ordinary-new-course-24-the-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-5"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 30,
+    "excluded": []
+   }
   }
  }
 }

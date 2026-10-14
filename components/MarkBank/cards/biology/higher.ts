@@ -20455,8 +20455,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "biology-2020-hl-q12c-passage",
           "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
-          "srcHash": "8ee4ed3f8277502a03b83993d51d2610",
-          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+          "srcHash": "72efb886a53f866d4439152ceb0162cc",
+          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined, and below it part (i): \"Explain the terms underlined in the passage above.\"",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission"
     },
@@ -20477,8 +20477,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "biology-2020-hl-q12c-passage",
           "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
-          "srcHash": "8ee4ed3f8277502a03b83993d51d2610",
-          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+          "srcHash": "72efb886a53f866d4439152ceb0162cc",
+          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined, and below it part (i): \"Explain the terms underlined in the passage above.\"",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission"
     },
@@ -20499,8 +20499,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "biology-2020-hl-q12c-passage",
           "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
-          "srcHash": "8ee4ed3f8277502a03b83993d51d2610",
-          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+          "srcHash": "72efb886a53f866d4439152ceb0162cc",
+          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined, and below it part (i): \"Explain the terms underlined in the passage above.\"",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission"
     },
@@ -20521,8 +20521,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "biology-2020-hl-q12c-passage",
           "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
-          "srcHash": "8ee4ed3f8277502a03b83993d51d2610",
-          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+          "srcHash": "72efb886a53f866d4439152ceb0162cc",
+          "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined, and below it part (i): \"Explain the terms underlined in the passage above.\"",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission"
     },
@@ -20708,8 +20708,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "biology-2020-hl-q13b-iv-labels",
           "src": "/exam-figures/biology/markbank/biology-2020-hl-q13b-iv-labels.png",
-          "srcHash": "40df75ae8dbe508684ed7cfc6249e438",
-          "alt": "A table of the six parts to label: Bowman's capsule, Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, Glomerulus.",
+          "srcHash": "0dc2315a6a803960f41489090be921b3",
+          "alt": "Part (iv) as printed: \"Draw a large diagram of a nephron and its associated blood supply from a human kidney. Label the following parts:\" above a table of the six parts: Bowman's capsule, Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, Glomerulus.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Biology 2020 Higher Level examination paper — © State Examinations Commission"
     },

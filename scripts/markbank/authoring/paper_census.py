@@ -63,8 +63,9 @@ SUBJECTS = {
     # markbank-card-text-corrections). The window is a DECISION, like DCG's:
     # widen it when those sittings are audited, never by fetching. 'also'
     # admits one earlier sitting at a time, as each is carded paper by paper
-    # (bio_review_<year>_<level>.py).
-    'biology': {'mode': 'merged', 'from': 2021, 'also': [(2020, 'hl')]},
+    # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
+    # its levels are.
+    'biology': {'mode': 'merged', 'from': 2020},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},

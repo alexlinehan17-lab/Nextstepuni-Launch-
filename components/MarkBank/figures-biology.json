@@ -43,8 +43,8 @@
  },
  "biology-2020-hl-q12c-passage": {
   "src": "/exam-figures/biology/markbank/biology-2020-hl-q12c-passage.png",
-  "md5": "8ee4ed3f8277502a03b83993d51d2610",
-  "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined.",
+  "md5": "72efb886a53f866d4439152ceb0162cc",
+  "alt": "The printed passage about Andalusian chickens, with the words allele, incomplete dominance, homozygous and phenotype underlined, and below it part (i): \"Explain the terms underlined in the passage above.\"",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2020 HL Q12(c)(i) — Allele",
@@ -54,10 +54,10 @@
   "sourceDocument": "LC025ALP040EV.pdf",
   "sourcePage": 4,
   "sourceRect": [
-   108,
+   80,
    418,
    540,
-   481
+   509
   ]
  },
  "biology-2020-hl-q13-kidney": {
@@ -102,8 +102,8 @@
  },
  "biology-2020-hl-q13b-iv-labels": {
   "src": "/exam-figures/biology/markbank/biology-2020-hl-q13b-iv-labels.png",
-  "md5": "40df75ae8dbe508684ed7cfc6249e438",
-  "alt": "A table of the six parts to label: Bowman's capsule, Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, Glomerulus.",
+  "md5": "0dc2315a6a803960f41489090be921b3",
+  "alt": "Part (iv) as printed: \"Draw a large diagram of a nephron and its associated blood supply from a human kidney. Label the following parts:\" above a table of the six parts: Bowman's capsule, Loop of Henle, Proximal convoluted tubule, Collecting duct, Distal convoluted tubule, Glomerulus.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2020 HL Q13(b)(iv)",
@@ -113,9 +113,9 @@
   "sourceDocument": "LC025ALP040EV.pdf",
   "sourcePage": 5,
   "sourceRect": [
-   140,
-   346,
-   540,
+   108,
+   305,
+   548,
    392
   ]
  },
@@ -224,6 +224,357 @@
    72,
    495,
    278
+  ]
+ },
+ "biology-2020-ol-q11c-cross": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q11c-cross.png",
+  "md5": "95cfbd07f08ce95464f23a3e1bc12702",
+  "alt": "The cross printed as: Parents Black Dog X White Dog; Genotypes Bb X bb; Gametes (B), (b) X (b). Below, a grid with gamete b across the top and B and b down the side: the box for B is shaded and the box for b reads bb (white), labelled Offspring. Beside it, a photograph of a black dog and a white dog.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q11(c)(i)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   115,
+   428,
+   565,
+   597
+  ]
+ },
+ "biology-2020-ol-q12-exchange": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q12-exchange.png",
+  "md5": "2b2c89e3e0ea150185cb2cb7b6d84c9f",
+  "alt": "Two drawings: A, a finger-like projection with blood vessels inside it, rising from a folded lining; B, a rounded sac lined with cells and surrounded by small blood vessels.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q12(c)(i) — A",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   165,
+   474,
+   515,
+   625
+  ]
+ },
+ "biology-2020-ol-q12-lungs": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q12-lungs.png",
+  "md5": "394579ee64ff4744ab6c72d41fb120eb",
+  "alt": "Diagram of the human breathing system. Lines point to A, a structure at the top of the central tube; B, the central tube itself; C, a small branch inside the right lung; and D, the place where the central tube divides.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q12(b)(i) — A",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   209,
+   143,
+   404,
+   309
+  ]
+ },
+ "biology-2020-ol-q13-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q13-plant.png",
+  "md5": "1607cac4014d9dbc34827b7f4666e13c",
+  "alt": "Drawing of a flowering plant with an arrow labelled Gas Y leaving a leaf, and an arrow labelled Water in soil at the roots.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q13(b)(i)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   440,
+   124,
+   565,
+   295
+  ]
+ },
+ "biology-2020-ol-q13-plants": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q13-plants.png",
+  "md5": "8c61415bf6bf6296777c6a513216e2f7",
+  "alt": "Two flowering plants, A and B, each drawn with a transverse section of its stem: the dots in stem A's section are scattered throughout, those in stem B's section form a ring.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q13(c)(i)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   80,
+   392,
+   510,
+   560
+  ]
+ },
+ "biology-2020-ol-q14-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q14-cell.png",
+  "md5": "e6579f898260841745fa118f20acf7e8",
+  "alt": "Diagram of a plant cell. A points to a large clear space in the middle, B to the outermost boundary, C to the line just inside it and D to a small oval body with folded inner membranes; the nucleus and cytoplasm are labelled.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q14(b)(ii) — A",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   418,
+   420,
+   574,
+   568
+  ]
+ },
+ "biology-2020-ol-q14-fermentation": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q14-fermentation.png",
+  "md5": "f14b36ec1182aa9293b99e9e2eec4330",
+  "alt": "Two test tubes joined by a delivery tube: test tube A holds glucose and X under a layer of oil; test tube B holds limewater.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q14(a)(i)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   328,
+   126,
+   572,
+   282
+  ]
+ },
+ "biology-2020-ol-q15-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q15-eye.png",
+  "md5": "8b8d51f80392d624a155c1acf7a3d991",
+  "alt": "Section through the human eye. A points at the oval structure behind the pupil, B at the outer coat at the bottom, C at the cord leaving the back of the eye and D at the inner layer lining the back.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q15(a)(i)1",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   355,
+   124,
+   576,
+   298
+  ]
+ },
+ "biology-2020-ol-q15-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q15-flower.png",
+  "md5": "6b081074a6d38db4ab89910c2626b40c",
+  "alt": "Section through a flower. A points at a small leaf-like part below the petals, B at a large outer petal on the left, C at the swollen base of the central structure and D at the head of a stalk on the right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q15(b)(i)1",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   395,
+   372,
+   568,
+   508
+  ]
+ },
+ "biology-2020-ol-q15-male": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q15-male.png",
+  "md5": "6ca7cab143fd7c12906068a903a2eea3",
+  "alt": "Diagram of the human male reproductive system with the seminal vesicle labelled. A points at the outer organ, B at the tube running inside it, C at the tube looping up from the gland below and D at the oval gland at the bottom.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q15(c)(i) — A",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   352,
+   566,
+   552,
+   760
+  ],
+  "maskedFurniture": [
+   [
+    352,
+    566,
+    372,
+    577
+   ],
+   [
+    352,
+    714,
+    361,
+    746
+   ]
+  ]
+ },
+ "biology-2020-ol-q3-carbon": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q3-carbon.png",
+  "md5": "3b61b386d1a10388c9f86468add309f9",
+  "alt": "Question 3 as printed: part of the carbon cycle with boxes for Carbon dioxide in atmosphere, Fossil Fuels, Carbon compounds in plants, Carbon compounds in animals and Carbon compounds in Humus; one arrow, labelled Feeding, runs from plants to animals, and an arrow marked A runs from animals to humus. Below the diagram, parts (a) to (g) with their answer boxes.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q3(a)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   55,
+   54,
+   545,
+   627
+  ]
+ },
+ "biology-2020-ol-q4-table": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q4-table.png",
+  "md5": "680d16abfd410b8939731fd4627ab86c",
+  "alt": "Question 4 as printed: the instruction, then the terms Substrate, Waterbath, Protein (struck through), Reusable, Amylase and Product above a two-column table: Column A lists \"Enzymes are made of this\" (answered Protein) and parts (a) to (e); Column B is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q4(a)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   55,
+   54,
+   541,
+   336
+  ]
+ },
+ "biology-2020-ol-q5-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q5-cells.png",
+  "md5": "78f9db4eec103812be15e3fca760d2a8",
+  "alt": "Question 5 as printed: the instruction, then the cell names Bacteria cell (struck through), Root hair, Amoeba, Cheek cell, Xylem vessel, Sperm cell, Red blood cell and Neuron above eight drawings in boxes: a bacterium labelled Bacteria cell, then (a) a round cell with a dark nucleus, (b) an irregular cell with extensions, (c) a cell with a long outgrowth, (d) a disc-shaped cell with no nucleus, (e) a long tube with spiral thickening, (f) a cell with a head and long tail, (g) a cell with many branches and a long fibre.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q5(a)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   55,
+   357,
+   556,
+   730
+  ]
+ },
+ "biology-2020-ol-q6-label": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q6-label.png",
+  "md5": "6f1f9e29bcd737ef2192e2665697d462",
+  "alt": "A blood bag label with a barcode above large letters AB and the words Rh POSITIVE.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q6(a)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   368,
+   76,
+   540,
+   248
+  ]
+ },
+ "biology-2020-ol-q8-grid": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q8-grid.png",
+  "md5": "edd91ada13590932c715204dbb6fedfc",
+  "alt": "A grid of squares over a round leafy plant, with an arrow marking \"A point of intersection\" where two grid lines cross.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q8(b)(v)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   378,
+   484,
+   545,
+   660
+  ]
+ },
+ "biology-2020-ol-q9-table": {
+  "src": "/exam-figures/biology/markbank/biology-2020-ol-q9-table.png",
+  "md5": "74ea5b1152d9079ab95c35f9f3b335de",
+  "alt": "Table: Petri dish A, 5 seeds + IAA solution: average stem length after 1 week 15 mm, average root length 2 mm. Petri dish B, 5 seeds + water: stem 10 mm, root 8 mm.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2020 OL Q9(b)(i)",
+  "year": 2020,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2020 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   128,
+   218,
+   465,
+   345
   ]
  },
  "biology-2021-hl-q10-table": {

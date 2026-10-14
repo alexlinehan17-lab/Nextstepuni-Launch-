@@ -173,7 +173,11 @@ const decks = [
    * kept (153 corrected, 11 verified) and 32 tasks the old cards bundled or
    * missed ship as new ids. Four authored figure twins the build never
    * shipped are withdrawn without an alias. */
-  ['biology:ordinary', BIO_ORDINARY, 1092, '06eea70671a74271d37751d1a24ab7a9d7ef7e2114a032fc1daa020f314bde44'],
+  /* 2026-10-14: biology ordinary 1092 -> 1278. The 2020 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2020_ol.py): 186 tasks, 186 cards. Every earlier id is
+   * unchanged. */
+  ['biology:ordinary', BIO_ORDINARY, 1278, 'd9c22c35437caa052245e9cabcf377aaac3adca218123983ed0165dcd438c90e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
    *
@@ -862,7 +866,8 @@ describe('Mark Bank card preservation', () => {
     // ...and the 2021 Higher review's 11 new ids: 20,096 + 11.
     // ...and the 2021 Ordinary review's 32 new ids: 20,107 + 32.
     // ...and the 2020 Higher sitting, carded for the first time: 20,139 + 150.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_289);
+    // ...and the 2020 Ordinary sitting, carded for the first time: 20,289 + 186.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(20_475);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -963,7 +968,9 @@ describe('Mark Bank card preservation', () => {
     const earlierHigher = BIO_HIGHER.filter(card => card.year <= 2020);
     expect(earlierHigher).toHaveLength(150);
     expect(earlierHigher.every(card => card.id.startsWith(`bio-${card.year}-hl-`))).toBe(true);
-    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(0);
+    const earlierOrdinary = BIO_ORDINARY.filter(card => card.year <= 2020);
+    expect(earlierOrdinary).toHaveLength(186);
+    expect(earlierOrdinary.every(card => card.id.startsWith(`bio-${card.year}-ol-`))).toBe(true);
     const added = BIO_HIGHER.filter(card => card.year === 2026);
     expect(added).toHaveLength(188);
     expect(added.every(card => card.id.startsWith('bio-2026-hl-'))).toBe(true);

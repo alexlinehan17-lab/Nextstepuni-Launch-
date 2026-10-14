@@ -53,7 +53,7 @@ _LEAD = re.compile(r'^(?:\s*(?:\([a-h]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|
 _AFTER_SENTENCE = re.compile(r'[.?!:]\s+$')
 # What may follow a selection on its line: nothing, a new sentence, or the
 # scheme's own tariff cell glued to the end of a menu ("... / pole Any three 3(1)").
-_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*|\(any\s+\w+\)\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s*$')
+_TARIFF_TAIL = re.compile(r'^\s*(?:Any\s+\w+\s*|\([Aa]ny\s+\w+\)\s*)?(?:\d+\(\d\)|\d\+\d|\d{1,2})?\s*$')
 
 
 def _closes(text_after, end):
@@ -95,6 +95,10 @@ def _decode_symbol(ch, font):
     # looked at: 0x67 in "ADP + P + Energy -> ATP + H2O" (derive_glyphs.py
     # maps it the same way) and 0x8E in "Ash -> Moth -> Robin".
     if 'Wingdings3' in font.replace(' ', '') and o in (0xF067, 0xF08E):
+        return '\u2192'
+    # The Symbol font's arrowright (0xAE), the arrow of the 2019 Higher
+    # scheme's photosynthesis equation.
+    if font.replace(' ', '').startswith('Symbol') and o == 0xF0AE:
         return '\u2192'
     return ch
 

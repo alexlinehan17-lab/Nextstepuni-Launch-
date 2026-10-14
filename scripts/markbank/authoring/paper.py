@@ -149,7 +149,33 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2020 OL prints Q14(c)'s second part as "(iii)" and its third as "(iii)"
+    # again; the scheme numbers them (ii) and (iii).
+    ('biology', 2020, 'ol'): [
+        ('(iii) What is meant by the term heterotrophic?', lambda t: '(ii)' + t[5:]),
+    ],
 }
+# A question head the text layer welds onto the END of the block before it,
+# with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL
+# Biology's Q4 table ends in the cell "(e) Converts starch into maltose" and
+# the block carries on "5. A selection of different cells ...", which filed
+# the whole of Question 5 as the tail of Q4(e). Keyed by sitting, like
+# MISPRINTS: the block is split straight after the named text.
+WELDED_HEADS = {
+    ('biology', 2020, 'ol'): ['(e) Converts starch into maltose'],
+}
+# Subjects where a letter going BACKWARDS inside a question is never a new
+# part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
+# gametes as "(B), (b) X (b)", and the "(b)" opening a line re-opened part
+# (b) and filed all six of (c)'s romans under it.
+BACKWARD_LETTER_IS_TEXT = {'biology'}
+# Subjects whose answer tables set several bare part markers in one block:
+# 2020 OL Biology Q5 labels the boxes under its cell drawings "(a)", "(b) (c)",
+# "(d)", "(e)", "(f) (g)", and a block reading "(b) (c)" was taken as one
+# marker -- the last -- so (b) and (f) vanished and (c) to (g) jumped the run.
+# Each marker in such a block is read on its own.
+BARE_MARKER_RUNS = {'biology'}
+_BARE_RUN = re.compile(r'^\([a-h]\)(?:\s+\([a-h]\))+$')
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
 # text.
@@ -381,6 +407,16 @@ def _join_gutter_markers(blocks):
             continue                 # emitted at its partner's position
         out.append(b)
     return out
+
+
+def _unweld(block, anchors):
+    """A block split straight after each anchor text it contains (WELDED_HEADS)."""
+    for anchor in anchors:
+        at = block.find(anchor + ' ')
+        if at >= 0:
+            cut = at + len(anchor)
+            return [block[:cut]] + _unweld(block[cut:].strip(), anchors)
+    return [block]
 
 
 def _blocks(path, subject=None):
@@ -731,6 +767,14 @@ class Paper:
                 # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
                 # roman when it does not. The blocks ahead decide.
                 found_letter, found_roman = 'i', None
+            if self.subject in BACKWARD_LETTER_IS_TEXT and found_letter and letter is not None \
+                    and found_letter < letter and not or_part:
+                # See BACKWARD_LETTER_IS_TEXT: a bracketed allele, not a part.
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
             if found_letter and letter is not None and found_letter > letter \
                     and ord(found_letter) - ord(letter) > 1 \
                     and found_letter not in ('j', 'k', 'l', 'm'):
@@ -856,9 +900,13 @@ class Paper:
         Agricultural Science lost the parts underneath every ruled answer box.
         """
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
+        welded = WELDED_HEADS.get((self.subject, self.year, self.level), [])
         carry = ''
         for path in self.files:
-            for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
+            blocks = _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None)
+            if welded:
+                blocks = [piece for block in blocks for piece in _unweld(block, welded)]
+            for block in blocks:
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
@@ -883,7 +931,9 @@ class Paper:
                     if t:
                         carry = t.group(1)
                         piece = piece[:t.start(1)].rstrip()
-                    if piece:
+                    if piece and self.subject in BARE_MARKER_RUNS and _BARE_RUN.match(piece):
+                        yield from piece.split()
+                    elif piece:
                         yield piece
         if carry:
             yield carry

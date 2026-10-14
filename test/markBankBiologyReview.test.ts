@@ -1499,3 +1499,86 @@ describe('Biology 2020 Higher — carded from a paper-by-paper review', () => {
     expect(hl20ById.get('bio-2020-hl-q13-b-iv')!.questionFigure).toBeTruthy();
   });
 });
+
+const ol20 = sittings['2020-ol'];
+const ordinary2020 = BIO_ORDINARY.filter(card => card.year === 2020) as unknown as ReviewedCard[];
+const ol20ById = new Map(ordinary2020.map(card => [card.id, card]));
+const ol20Verbatims = (id: string) => (ol20ById.get(id)!.rows as unknown as Array<{ verbatim: string }>)
+  .map(row => row.verbatim);
+
+describe('Biology 2020 Ordinary — carded from a paper-by-paper review', () => {
+  it('ships every reviewed task, and nothing else, for the sitting', () => {
+    expect(ol20.baseTaskCount).toBe(186);
+    expect(ol20.cardCount).toBe(186);
+    expect(ordinary2020).toHaveLength(186);
+    expect(new Set(ol20.tasks.map(task => task.id))).toEqual(new Set(ol20ById.keys()));
+    expect(ol20.review).toBeUndefined();
+    expect(ol20.tasks.every(task => task.status === 'carded')).toBe(true);
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(ol20.sources['038'].sha256)
+      .toBe('7f533d8ea97af0160bc297528779a24d9ba7a22bc6745d7e6406d52d21d4d847');
+    expect(ol20.sources['040'].sha256)
+      .toBe('88f563418ead0813185bf5e88f8e58b48ae57b531c51c57d022da9b434cee6dd');
+    expect(ol20.sources.scheme.sha256)
+      .toBe('f9882d2413e659b8071ed262d09c18d2054f4b667194edf99a71dd4538b1c219');
+    expect([ol20.sources['038'].pages, ol20.sources['040'].pages, ol20.sources.scheme.pages])
+      .toEqual([40, 8, 16]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const task of ol20.tasks) {
+      const card = ol20ById.get(task.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('prices Sections A and B on the scheme\'s ordered splits', () => {
+    const notation = (id: string) =>
+      (ol20ById.get(id) as unknown as { tariffModel: { notation?: string } }).tariffModel.notation;
+    expect(notation('bio-2020-ol-q1-a')).toBe('8+8+2+2(1)');
+    expect(notation('bio-2020-ol-q2-a')).toBe('7+7+2+4(1)');
+    expect(notation('bio-2020-ol-q7-a-i')).toBe('5 + 1');
+    expect(notation('bio-2020-ol-q9-b-viii')).toBe('2(9)+6(1)');
+    const totals = new Map<number, number>();
+    for (const task of ol20.tasks) {
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    // Each response carded at its split's first rate: five at 8, seven at 7, (5 + 1) and 2(9)+6(1).
+    for (const q of [1, 4]) expect(totals.get(q), `Q${q}`).toBe(40);
+    for (const q of [2, 3, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(49);
+    for (const q of [7, 8, 9]) expect(totals.get(q), `Q${q}`).toBe(82);
+    for (const q of [10, 11, 12, 13]) expect(totals.get(q), `Q${q}`).toBe(60);
+    for (const q of [14, 15]) expect(totals.get(q), `Q${q}`).toBe(90);   // any two of three 30s
+  });
+
+  it('anchors every task on its own part marker, the scheme printing no reprints', () => {
+    expect(ol20.tasks.every(task => /no reprint/.test(
+      (task as unknown as { pairedBy?: string }).pairedBy ?? ''))).toBe(true);
+  });
+
+  it('cards each separately priced entry of a printed list on its own', () => {
+    expect(['a', 'b', 'c', 'd'].map(x => ol20Verbatims(`bio-2020-ol-q12-b-i-${x}`)[0]))
+      .toEqual(['A = Larynx', 'B = Trachea', 'C = Bronchiole', 'D = Bronchus']);
+    expect([1, 2, 3, 4].map(n => ol20Verbatims(`bio-2020-ol-q15-a-i-${n}`)[0]))
+      .toEqual(['1=B', '2=A', '3=C', '4=D']);
+    // The paper prints Q14(c)'s second part as "(iii)"; the scheme numbers it (ii).
+    expect(ol20ById.get('bio-2020-ol-q14-c-ii')!.questionText).toBe('What is meant by the term heterotrophic?');
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b/i;
+    for (const card of ordinary2020) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    for (const x of ['a', 'b', 'c', 'd', 'e', 'f', 'g']) {
+      expect(ol20ById.get(`bio-2020-ol-q5-${x}`)!.questionFigure, x).toBeTruthy();
+    }
+  });
+});

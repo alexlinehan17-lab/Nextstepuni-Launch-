@@ -508,7 +508,10 @@ def build(ledger, year, level):
         if stem:
             card['stem'] = stem
         tariff = {'kind': 'fixed'}
-        lspec = getattr(ledger, 'LADDERS', {}).get(lk) if lk is not None else None
+        # A part the scheme prices on its own beside a ladder (a drawing's
+        # "3" and "3" before "4 + 2 + 2 + 2 + 2 + 6") keeps its own marks.
+        exempt = t['key'] in getattr(ledger, 'LADDER_EXEMPT', ())
+        lspec = getattr(ledger, 'LADDERS', {}).get(lk) if lk is not None and not exempt else None
         if isinstance(lspec, dict) and lspec.get('notation'):
             # "2(5) + 5(2)": what a response earns depends on how many came
             # before it, so the rows carry no marks of their own; the card's
@@ -626,8 +629,7 @@ def build(ledger, year, level):
     leaves = set(PC.leaves_of(parts))
     claimed = set()
     for t in ledger.TASKS:
-        if t.get('excluded'):
-            continue
+        # An excluded task is reviewed and accounted for: it claims its leaf.
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
@@ -644,6 +646,28 @@ def build(ledger, year, level):
         problems.append(f'figure {k!r} is named by a task but has no crop in FIGURES')
     for k in sorted(set(ledger.FIGURES) - named):
         problems.append(f'figure {k!r} is cropped but no task shows it')
+
+    # --- question figures carry the printed ask -----------------------------
+    # The app shows a question figure IN PLACE of the card's question text and
+    # stem, so the crop must itself print the ask: every paper selector of the
+    # task's question has to open inside the crop's rectangle on its page.
+    for t in ledger.TASKS:
+        if not t['qfig'] or t['qfig'] not in ledger.FIGURES:
+            continue
+        fdoc, fpage, frect = ledger.FIGURES[t['qfig']][:3]
+        for sel in (t['q'] if isinstance(t['q'], list) else [t['q']]):
+            sdoc = sel.get('doc') or booklet(t['sec'], ledger)
+            if sel.get('src') != 'paper':
+                continue
+            # Searched up to its first symbol glyph ("Tick (✓) ..."), which the
+            # text search cannot match.
+            probe = re.match(r"[\w\s,.;:'’‘()\-]+", sel['start'])
+            probe = (probe.group(0) if probe else sel['start'])[:60].strip()
+            boxes = [] if (sdoc, sel['page']) != (fdoc, fpage) else \
+                lifter.srcs[sdoc].find_box(fpage, probe, fitz.Rect(*frect))
+            if not boxes:
+                problems.append(f'{t["key"]}: question figure {t["qfig"]!r} does not print the ask '
+                                f'{sel["start"][:50]!r} (a question figure replaces the question text)')
 
     # --- Atlas topics -----------------------------------------------------
     atlas = json.load(open(ATLAS_MAP.format(year=year), encoding='utf-8'))
