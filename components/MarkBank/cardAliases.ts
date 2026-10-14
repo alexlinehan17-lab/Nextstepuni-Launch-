@@ -171,4 +171,14 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2020-ol-q8-None-trimmer": "cons-2020-ol-q8-None-stud-partition",
   "cons-2020-ol-q8-None-butt-hinge": "cons-2020-ol-q8-None-stud-partition",
   "cons-2020-ol-q8-None-solar-panel": "cons-2020-ol-q8-None-stud-partition",
+  /* 2026-10-14. Construction Studies 2017 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2017-ol-q8-None-hand-rail and their progress goes to it. */
+  "cons-2017-ol-q8-None-box-dovetail-joint": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-purlin": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-damp-proof-course": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-ball-valve": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-energy-rating": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-wind-turbine": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-joist-hanger": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-service-cavity": "cons-2017-ol-q8-None-hand-rail",
 };
