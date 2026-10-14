@@ -1,0 +1,92 @@
+[
+ {
+  "id": "chem-2025-hl-q1-c-ii",
+  "ask": "Describe how this piece of apparatus was rinsed before use",
+  "answer": "with iron(II) solution"
+ },
+ {
+  "id": "chem-2025-hl-q1-e-iv",
+  "ask": "Calculate the percentage by mass of iron(II) in one tablet",
+  "answer": "0.105 ÷ 0.416 = 0.2524"
+ },
+ {
+  "id": "chem-2025-hl-q2-b-i",
+  "ask": "with the aid of a labelled diagram",
+  "answer": "separating funnel",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q2-c-ii",
+  "ask": "Clove oil is an essential oil",
+  "answer": "notation its text cannot carry",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-hl-q3-c-ii",
+  "ask": "over the second minute",
+  "answer": "22 (cm³ min⁻¹)",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q4-b",
+  "ask": "⁵²₂₄Cr³⁺ ion",
+  "answer": "(ii) 21"
+ },
+ {
+  "id": "chem-2025-hl-q5-b-iv",
+  "ask": "atomic orbitals of equal energy are filled",
+  "answer": "then in pairs",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q7-a-iv",
+  "ask": "HCO₃⁻(aq) + H₂O(l) ⇌ H₂CO₃(aq) + OH⁻(aq)",
+  "answer": "HCO₃⁻ and H₂CO₃"
+ },
+ {
+  "id": "chem-2025-hl-q7-d-ii",
+  "ask": "changes colour in the pH range of 4.2 to 5.4",
+  "answer": "coincides with vertical portion of the curve",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q8-a-i",
+  "ask": "a substitution reaction",
+  "answer": "The scheme prints the answers to (i)-(iii) together",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q8-c-iii",
+  "ask": "the bond that was formed during the formation of ethyl ethanoate",
+  "answer": "notation its text cannot carry",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-hl-q9-b-iii",
+  "ask": "Write an expression for the equilibrium constant",
+  "answer": "[NO]²[Br₂] ÷ [NOBr]²",
+  "solution": true
+ },
+ {
+  "id": "chem-2025-hl-q10-c-i-mr",
+  "ask": "An effervescent tablet contains 0.096 g of citric acid",
+  "answer": "0.0035 × 84 = 0.294"
+ },
+ {
+  "id": "chem-2025-hl-q11-c-vii",
+  "ask": "Identify the number Y",
+  "answer": "89",
+  "figure": true
+ },
+ {
+  "id": "chem-2025-hl-q11-da-ii",
+  "ask": "natural fixation by lightning",
+  "answer": "2NO + O₂ → 2NO₂"
+ },
+ {
+  "id": "chem-2025-hl-q11-db-vi",
+  "ask": "balanced half‐equation for the reaction that occurs at the anode",
+  "answer": "2Br⁻ → Br₂ + 2e⁻",
+  "figure": true
+ }
+]

@@ -241,7 +241,8 @@ for roman, concept in [('i', 'bronsted-lowry-acid'), ('ii', 'ethanoic-acid-as-a-
     C.fixed([('11', 'c', roman, None)], 'chem-3-4', concept, figure=Q11C,
             stem=C.context(('11', 'c', roman, None), heads=False),
             fixes={'pH = –log₁₀[H₃O⁺] / [H⁺] = √KaMacid / [H⁺] = 10^-2.8':
-                   'pH = –log₁₀[H₃O⁺] / [H⁺] = √(KaMacid) / [H⁺] = 10^-2.8'},
+                   'pH = –log₁₀[H₃O⁺] / [H⁺] = √(KaMacid) / [H⁺] = 10^-2.8'}
+            if roman == 'iii' else None,
             row_notes={0: 'The scheme sets Ka and Macid together under one root sign.'}
             if roman == 'iii' else None)
 for roman, concept, how in [('i', 'greenhouse-gas', 'fixed'),

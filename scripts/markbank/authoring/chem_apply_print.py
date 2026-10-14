@@ -1,65 +1,184 @@
 #!/usr/bin/env python3
-"""Write one printed-layout sitting's cards into authored/chemistry.json.
+"""Write one sitting's reviewed Chemistry cards into the deck, with their record.
 
-    python3 scripts/markbank/authoring/chem_apply_print.py 2026 hl          # write
-    python3 scripts/markbank/authoring/chem_apply_print.py 2026 hl --check  # verify
+    python3 scripts/markbank/authoring/chem_apply_print.py 2025 hl          # write
+    python3 scripts/markbank/authoring/chem_apply_print.py 2025 hl --check  # verify
 
-The cards come from scripts/markbank/authoring/chem_<year>_<lvl>.py, which
-lifts every string from the paper and the scheme. This file only places them:
-a card whose id is already in the deck is replaced where it stands, a new one
-is appended, and nothing else in the deck is touched.
+The cards come from the sitting's generator -- chem_audit_<year>_<lvl>.py for
+a sitting carded before the audit, chem_<year>_<lvl>.py for one carded fresh
+(2026) -- which lifts every string from the paper and the scheme. This file
+only places them, and records what it did:
 
-It refuses to drop a card. If the deck holds an id under this sitting's prefix
-that the generator no longer emits, the run stops: a student may have progress
-against that id, and withdrawing it takes a correction record and an alias
-(card-corrections.json, cardAliases.ts), never a silent rewrite.
+  * a card whose id is already in the deck is replaced where it stands
+    (corrected in place: the id, and so every student's progress on it, is
+    kept);
+  * a new card is appended;
+  * a pre-audit card the generator names in WITHDRAWN -- a duplicate, or a
+    piece of a task the scheme prices as one -- stays in the deck untouched
+    and is withdrawn at build time by a card-corrections.json "drop" naming
+    its replacement, with a cardAliases.ts entry so its review history is read
+    by the card that replaces it;
+  * anything else under the sitting's prefix that the generator does not
+    emit stops the run. A student may have progress on it.
 
---check exits non-zero unless the deck already holds exactly what the
-generator emits, byte for byte, which is how a reviewer confirms the committed
-cards are reproducible from the committed scripts.
+The ledger, scripts/markbank/authored/chemistry-audit-ledger.json, records
+every id of the sitting as added, corrected, unchanged or withdrawn, with the
+hash of the card before the audit (read from the audit's base commit, so a
+re-run records the same thing) and after it, and which fields changed. A
+withdrawn card also records whether the base build shipped it; the
+preservation test reads the ledger to rebuild the frozen pre-audit id set.
+
+--check exits non-zero unless the deck, the corrections, the aliases and the
+ledger already hold exactly what this would write: the committed cards are
+reproducible from the committed scripts.
 """
 import argparse
+import hashlib
 import importlib
 import json
 import os
+import re
+import subprocess
 import sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 DECK = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'chemistry.json')
+LEDGER = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'chemistry-audit-ledger.json')
+CORRECTIONS = os.path.join(ROOT, 'scripts', 'markbank', 'card-corrections.json')
+ALIASES = os.path.join(ROOT, 'components', 'MarkBank', 'cardAliases.ts')
 sys.path.insert(0, DIR)
 
 EMPTY = {'stem': '', 'figureKey': '', 'labelKey': [], 'notes': ''}
+FIELDS = ['topicId', 'conceptId', 'section', 'questionRef', 'stem', 'questionText', 'tariffModel',
+          'totalMarks', 'rows', 'notes', 'figureKey', 'questionFigureKey', 'labelKey']
 
 
 def lean(card):
     return {k: v for k, v in card.items() if not (k in EMPTY and v == EMPTY[k])}
 
 
-def merged(year, lvl):
-    mod = importlib.import_module(f'chem_{year}_{lvl}')
+def digest(card):
+    return hashlib.sha256(json.dumps(card, sort_keys=True, ensure_ascii=False)
+                          .encode('utf-8')).hexdigest()[:16]
+
+
+def generator(year, lvl):
+    for name in (f'chem_audit_{year}_{lvl}', f'chem_{year}_{lvl}'):
+        if os.path.exists(os.path.join(DIR, name + '.py')):
+            return importlib.import_module(name)
+    raise SystemExit(f'no generator for {year} {lvl}')
+
+
+def plan(year, lvl):
+    mod = generator(year, lvl)
     problems = mod.make_audit(mod.MAX_OPTIONS)(mod.C.cards)
     if problems:
         raise SystemExit('audit refused:\n  ' + '\n  '.join(problems))
+    from chem_print import prior_deck
     cards = [lean(c) for c in mod.C.finish()]
+    withdrawn = getattr(mod, 'WITHDRAWN', {})
     prefix = f'chem-{year}-{lvl}-'
-    deck = json.load(open(DECK))
     made = {c['id']: c for c in cards}
     if len(made) != len(cards):
         raise SystemExit('the generator emits a duplicate id')
-    held = [c['id'] for c in deck if c['id'].startswith(prefix)]
-    gone = [i for i in held if i not in made]
+    deck = json.load(open(DECK))
+    held = {c['id']: c for c in deck if c['id'].startswith(prefix)}
+    prior = {i: c for i, c in prior_deck().items() if i.startswith(prefix)}
+    for old, (new, _reason) in withdrawn.items():
+        if old not in prior:
+            raise SystemExit(f'{old}: withdrawn but not a pre-audit card')
+        if old in made:
+            raise SystemExit(f'{old}: both emitted and withdrawn')
+        if new not in made:
+            raise SystemExit(f'{old}: its replacement {new} is not emitted')
+    gone = [i for i in held if i not in made and i not in withdrawn]
     if gone:
         raise SystemExit(f'refusing to drop {len(gone)} card(s) already in the deck: {gone}')
+
     out, placed = [], set()
     for c in deck:
         if c['id'] in made:
             out.append(made[c['id']])
             placed.add(c['id'])
+        elif c['id'] in withdrawn:
+            out.append(prior[c['id']])           # untouched; withdrawn at build
         else:
             out.append(c)
     out += [c for c in cards if c['id'] not in placed]
-    return out, len(cards), len(cards) - len(placed)
+
+    record = {}
+    for c in cards:
+        before = prior.get(c['id'])
+        if before is None:
+            record[c['id']] = {'status': 'added', 'after': digest(c)}
+            continue
+        changed = [f for f in FIELDS if lean(before).get(f) != c.get(f)]
+        record[c['id']] = {'status': 'corrected' if changed else 'unchanged',
+                           'before': digest(before), 'after': digest(c),
+                           **({'changed': changed} if changed else {})}
+    shipped = base_built_ids()
+    for old, (new, reason) in withdrawn.items():
+        # "shipped": whether the base build carried this card, so whether any
+        # student can have progress on it. The preservation test restores
+        # exactly the shipped withdrawals when it rebuilds the frozen set.
+        record[old] = {'status': 'withdrawn', 'before': digest(prior[old]),
+                       'replacementId': new, 'reason': reason, 'shipped': old in shipped}
+    return out, record, withdrawn
+
+
+def base_built_ids():
+    """The Chemistry card ids the audit's base commit BUILT (its generated
+    decks), as distinct from the ids its authored file held: the build drops a
+    card it cannot keep, such as the second of two cards with one citation."""
+    from chem_print import AUDIT_BASE
+    ids = set()
+    for level in ('higher', 'ordinary'):
+        ts = subprocess.run(['git', 'show', f'{AUDIT_BASE}:components/MarkBank/cards/chemistry/{level}.ts'],
+                            cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        ids |= set(re.findall(r'\bid: "(chem-[^"]+)"', ts))
+    if not ids:
+        raise SystemExit('could not read the base build')
+    return ids
+
+
+def corrections_text(withdrawn):
+    data = json.load(open(CORRECTIONS))
+    chem = data.setdefault('chemistry', {})
+    for old, (new, reason) in withdrawn.items():
+        chem[old] = {'reason': reason, 'drop': True, 'replacementId': new}
+    return json.dumps(data, ensure_ascii=False, indent=1) + '\n'
+
+
+def aliases_text(withdrawn):
+    text = open(ALIASES).read()
+    have = dict(re.findall(r'^  "([^"]+)": "([^"]+)",$', text, re.M))
+    lines = text.split('\n')
+    for old, (new, _reason) in sorted(withdrawn.items()):
+        if old in have:
+            if have[old] != new:
+                raise SystemExit(f'{old}: already aliased to {have[old]}, not {new}')
+            continue
+        # Chemistry's aliases are kept together, in id order.
+        at = max((i for i, l in enumerate(lines) if l.startswith('  "chem-')),
+                 default=next(i for i, l in enumerate(lines) if l.startswith('export const')))
+        for i, l in enumerate(lines):
+            m = re.match(r'^  "(chem-[^"]+)":', l)
+            if m and m.group(1) > old:
+                at = i - 1
+                break
+        lines.insert(at + 1, f'  "{old}": "{new}",')
+    return '\n'.join(lines)
+
+
+def ledger_text(year, lvl, record):
+    data = json.load(open(LEDGER)) if os.path.exists(LEDGER) else {}
+    from chem_print import AUDIT_BASE
+    data['base'] = AUDIT_BASE
+    papers = data.setdefault('papers', {})
+    papers[f'{year} {lvl.upper()}'] = dict(sorted(record.items()))
+    data['papers'] = dict(sorted(papers.items()))
+    return json.dumps(data, ensure_ascii=False, indent=1) + '\n'
 
 
 def main():
@@ -68,15 +187,24 @@ def main():
     ap.add_argument('lvl', choices=['hl', 'ol'])
     ap.add_argument('--check', action='store_true')
     args = ap.parse_args()
-    out, n, new = merged(args.year, args.lvl)
-    text = json.dumps(out, ensure_ascii=False, indent=1)
+    out, record, withdrawn = plan(args.year, args.lvl)
+    files = {DECK: json.dumps(out, ensure_ascii=False, indent=1),
+             LEDGER: ledger_text(args.year, args.lvl, record)}
+    if withdrawn:
+        files[CORRECTIONS] = corrections_text(withdrawn)
+        files[ALIASES] = aliases_text(withdrawn)
+    counts = {s: sum(r['status'] == s for r in record.values())
+              for s in ('added', 'corrected', 'unchanged', 'withdrawn')}
     if args.check:
-        same = open(DECK).read() == text
-        print(f'{"ok" if same else "DIFFERS"}: {n} {args.year} {args.lvl.upper()} cards')
-        sys.exit(0 if same else 1)
-    with open(DECK, 'w') as f:
-        f.write(text)
-    print(f'{n} {args.year} {args.lvl.upper()} cards written ({new} new); deck holds {len(out)}')
+        bad = [os.path.relpath(p, ROOT) for p, t in files.items()
+               if not os.path.exists(p) or open(p).read() != t]
+        print(('ok' if not bad else 'DIFFERS ' + ', '.join(bad)) + f': {args.year} '
+              f'{args.lvl.upper()} {counts}')
+        sys.exit(1 if bad else 0)
+    for p, t in files.items():
+        with open(p, 'w') as f:
+            f.write(t)
+    print(f'{args.year} {args.lvl.upper()}: {counts}; deck holds {len(out)}')
 
 
 if __name__ == '__main__':

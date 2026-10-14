@@ -120,19 +120,19 @@
     "refsHash": "4ad16765c129d1c4"
   },
   "chemistry": {
-    "cards": 1079,
-    "contentHash": "2ed50c74eee7c571",
-    "coveragePct": 42.6,
-    "covered": 1430,
+    "cards": 1118,
+    "contentHash": "638e68c859f10205",
+    "coveragePct": 43.0,
+    "covered": 1445,
     "excluded": 5,
     "leaves": 3372,
-    "open": 1937,
+    "open": 1922,
     "orphans": 0,
     "papers": {
       "count": 34,
       "hash": "a5df30dd2d14a50b"
     },
-    "refsHash": "37ecb59f8e105857"
+    "refsHash": "ae86f751e6edbdf9"
   },
   "classical-studies": {
     "cards": 516,

@@ -36,6 +36,8 @@ DPI = 150
 PANEL_GAP = 14
 
 # (name suffix, source, page, (x0, y0, x1, y1) in PDF points). A source of
+# 'labels' marks a picture's region whose printed words are its labels (see
+# chem_print.Printed._outside_figures) and is not itself published. A source of
 # 'paper-image' takes the raster the paper embeds at that rectangle as it is,
 # for a picture whose page text runs across it. 2026 HL Q4(i)'s raster was cut
 # from a page and carries the tails of two neighbouring lines ("e", "ound") at
@@ -86,6 +88,61 @@ CROPS = {
         ('scheme-q6c-i', 'scheme', 11, (110, 378.5, 260, 401)),
         ('scheme-q6d-ii', 'scheme', 11, (109, 531.5, 320, 609)),
         ('scheme-q9a-ii', 'scheme', 14, (108, 178.5, 330, 217)),
+    ],
+    # 2025 Higher: corrected in place by chem_audit_2025_hl.py. Its paper
+    # crops also say which printed words are a picture's labels rather than
+    # the question's (Printed(..., figures=True)).
+    (2025, 'hl'): [
+        ('paper-q2', 'paper', 3, (80, 90, 520, 342)),
+        ('paper-q3', 'paper', 4, (88, 227, 508, 291)),
+        ('paper-q4l-b', 'paper', 5, (336, 556, 545, 675)),
+        ('paper-q5b', 'paper', 6, (298, 228, 545, 568)),
+        ('paper-q7d-eq', 'paper', 8, (215, 372, 380, 410)),
+        # Q7(d)(ii) is shown the indicator's equation and the pH curve, the
+        # two things its lead-in points at, stacked; the curve's own rectangle
+        # is listed as 'labels' so its axis numbers stay out of the lead-in.
+        ('q7d-curve', 'labels', 8, (300, 458, 545, 702)),
+        ('paper-q7d-ii', 'paper-panels', 8, ((215, 372, 380, 410), (300, 458, 545, 702))),
+        ('paper-q8', 'paper', 9, (110, 76, 484, 200)),
+        ('paper-q11c-eq', 'paper', 13, (255, 471, 372, 496)),
+        ('paper-q11d-b', 'paper', 14, (384, 380, 545, 603)),
+        ('scheme-q2c-ii', 'scheme', 7, (105, 511.5, 200, 614)),
+        ('scheme-q4g', 'scheme', 10, (80, 351.5, 320, 403.5)),
+        ('scheme-q5b-ii', 'scheme', 11, (105, 365, 145, 396)),
+        ('scheme-q8c-i', 'scheme', 14, (105, 365.5, 200, 408)),
+        ('scheme-q8c-ii', 'scheme', 14, (105, 421, 200, 467)),
+        ('scheme-q8c-iii', 'scheme', 14, (105, 494.5, 205, 551)),
+        ('scheme-q9b-iii', 'scheme', 15, (105, 314, 165, 340)),
+        ('scheme-q9b-iv', 'scheme', 15, (105, 412, 290, 438)),
+        ('scheme-q10a-ii', 'scheme', 16, (105, 121.5, 210, 179)),
+        ('scheme-q10a-iv', 'scheme', 16, (105, 254, 175, 336)),
+        ('scheme-q10b-i', 'scheme', 16, (105, 449.5, 170, 496)),
+        ('scheme-q10b-iv', 'scheme', 16, (105, 618.5, 210, 669)),
+    ],
+    # 2025 Ordinary: corrected in place by chem_audit_2025_ol.py. Q8's reaction
+    # scheme keeps its published crop (chemistry-2025-OL-paper-q8-fig0); its
+    # rectangle is listed here only so its labels stay out of the text.
+    (2025, 'ol'): [
+        ('paper-q1', 'paper', 2, (70, 244, 525, 478)),
+        ('paper-q1e', 'paper', 2, (388, 648, 545, 742)),
+        ('paper-q2', 'paper', 3, (440, 88, 545, 345)),
+        ('q3-flasks', 'labels', 4, (186, 142, 410, 316)),
+        ('q3-table', 'labels', 4, (52, 428, 543, 491)),
+        ('paper-q3', 'paper-panels', 4, ((186, 142, 410, 316), (52, 428, 543, 491))),
+        ('paper-q6c', 'paper', 7, (405, 270, 545, 450)),
+        ('q7b-photo', 'labels', 8, (190, 150, 392, 320)),
+        ('q7c-bottle', 'labels', 8, (444, 498, 543, 658)),
+        ('q8-scheme', 'labels', 9, (92, 82, 510, 256)),
+        ('paper-q9c', 'paper', 10, (424, 303, 544, 478)),
+        ('paper-q10a', 'paper', 11, (76, 102, 516, 216)),
+        ('paper-q11a', 'paper', 12, (88, 137, 540, 172)),
+        ('paper-q11b', 'paper', 12, (80, 430, 544, 522)),
+        ('paper-q11d-a', 'paper', 14, (86, 105, 508, 296)),
+        ('scheme-q2d', 'scheme', 7, (80, 641.5, 545, 713.5)),
+        ('scheme-q6b-iii', 'scheme', 11, (105, 248, 210, 321)),
+        ('scheme-q8a-ii', 'scheme', 13, (105, 298.5, 240, 377)),
+        ('scheme-q11b-vi', 'scheme', 17, (105, 701.5, 390, 744)),
+        ('scheme-q11c-ii', 'scheme', 18, (105, 186, 180, 216)),
     ],
 }
 
@@ -153,6 +210,8 @@ def main():
     os.makedirs(od, exist_ok=True)
     bad = 0
     for suffix, source, page, rect in crops:
+        if source == 'labels':
+            continue                 # a region read as a picture's, never published alone
         png = render(args.year, args.lvl, source, page, rect)
         dest = os.path.join(od, name(args.year, args.lvl, suffix))
         if args.check:

@@ -23,6 +23,16 @@
    "reason": "Duplicate of chem-2023-ol-q10-a-iii-iv after its inspected lattice figure is transferred to the older stable identity.",
    "drop": true,
    "replacementId": "chem-2023-ol-q10-a-iii-iv"
+  },
+  "chem-2025-hl-q10-c-i-total": {
+   "reason": "Q10(c)(i) is one part, priced as nine (2) points; the pre-audit deck split it into two cards with the same citation and the build kept only one. Carded once, as chem-2025-hl-q10-c-i-mr.",
+   "drop": true,
+   "replacementId": "chem-2025-hl-q10-c-i-mr"
+  },
+  "chem-2025-hl-q11-db-i-iii-fig": {
+   "reason": "Duplicated Q11(d)B(i)-(iii) beside chem-2025-hl-q11-db-i-ii and -db-iii. Each part is now its own card; the apparatus figure is on every Q11(d)B card.",
+   "drop": true,
+   "replacementId": "chem-2025-hl-q11-db-i-ii"
   }
  },
  "biology": {

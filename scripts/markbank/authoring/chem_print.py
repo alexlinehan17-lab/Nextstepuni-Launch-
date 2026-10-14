@@ -49,6 +49,8 @@ FOOTER = re.compile(r'^(Leaving Certificate,? 20\d\d|Chemistry\s*[–-]\s*(Highe
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
 _TERM = r'(?:\d{1,2}(?:\s*[×x]\s*\d{1,2})?|\(\s*\d{1,2}\s*[×x]\s*\d{1,2}\s*\))'
 MARK_CELL = re.compile(r'^\[\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\]$')
+ROUND_CELL = re.compile(r'^\(\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\)$')
+TRAILING_ROUND = re.compile(r'\s+(\(\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\))$')
 TRAILING_CELL = re.compile(r'\s*(\[\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\])$')
 # The examiner's aside in brackets: "[any two]", "[do not accept clear]".
 ASIDE = re.compile(r'^\[[^\]]*[a-zA-Z]{3}[^\]]*\]$')
@@ -100,7 +102,7 @@ def _spaced(spans):
     as a super/subscript and strips it, so "cm" + "3 " + "portions" came out
     "cm³portions", and a space set in a smaller size between "HCl" and
     "needed" vanished. A trailing space is split off into a span of the line's
-    own size, and a space-only span is given that size."""
+    own size, and a space-only span is read as one space of that size."""
     if not spans:
         return spans
     base = max(sp['size'] for sp in spans)
@@ -108,7 +110,9 @@ def _spaced(spans):
     for sp in spans:
         t = sp['text']
         if t and not t.strip():
-            out.append(dict(sp, size=base))
+            # A no-break space set as a span of its own ("represented",
+            # "\xa0", "by") is a space: _script_text keeps only " ".
+            out.append(dict(sp, text=' ', size=base))
         elif t != t.rstrip() and sp['size'] < base - 1.0:
             out.append(dict(sp, text=t.rstrip()))
             out.append(dict(sp, text=' ', size=base))
@@ -161,7 +165,8 @@ def read_lines(path, first=1, last=None):
 
 # ── splitting a document into its printed parts ─────────────────────────────
 QNUM = re.compile(r'^(\d{1,2})\.?$')
-HEADER = re.compile(r'^(Section [AB]|See page 1 for instructions.*)$')
+HEADER = re.compile(r'^(Section [AB]|See page 1 for instructions.*'
+                    r'|This question continues( on the next page)?\.?)$')
 LETTER = re.compile(r'^\(([a-l])\)$')
 ROMAN = re.compile(r'^\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)$')
 ALTMARK = re.compile(r'^\(?([AB])\)?$')
@@ -169,14 +174,26 @@ PAPER_MARK = re.compile(r'^\((\d{1,2})\)$|^\(\d\s*×\s*\d{1,2}\)$')
 TRAILING_MARK = re.compile(r'\s\((\d{1,2})\)$')
 # "Answer part A or part B." -- some text layers drop the space ("Aor").
 CHOICE_AB = re.compile(r'Answer part A\s*or part B')
+LETTER_ALT = re.compile(r'^\(([a-l])\)\s*([AB])$')
 LEAD_MARKER = re.compile(r'^(\([a-l]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+(.+)$')
 
 
 def _split_markers(lines):
     """A line the PDF set as one run, "(c) (i) State Le Chatelier's principle.",
     read as its markers and its text, the way the page prints them."""
+    alt_letter = None
     for l in lines:
         t = l.text
+        both = LETTER_ALT.match(t)
+        if both and l.x0 < 100:
+            # The 2025 Higher scheme sets "(d)A" as one run, and "(d)B" again
+            # for the second alternative of the same letter: the letter is
+            # read once, at its first alternative.
+            if both.group(1) != alt_letter:
+                yield Line(l.page, (l.x0, l.y0, l.x1, l.y1), f'({both.group(1)})', l.bold, l.math)
+            alt_letter = both.group(1)
+            yield Line(l.page, (l.x0 + 20, l.y0, l.x1, l.y1), f'({both.group(2)})', l.bold, l.math)
+            continue
         m = LEAD_MARKER.match(t)
         while m and l.x0 < 100:
             yield Line(l.page, (l.x0, l.y0, l.x1, l.y1), m.group(1), l.bold, l.math)
@@ -210,7 +227,7 @@ def joined(lines):
     return tidy(' '.join(l.text for l in lines))
 
 
-def segments(lines, first_q='1', answers=True):
+def segments(lines, first_q='1', answers=True, alt_letters=()):
     """Split printed lines into parts keyed (q, letter, roman, alt).
 
     The PAPER and the SCHEME number parts the same way, so one reader serves
@@ -219,6 +236,9 @@ def segments(lines, first_q='1', answers=True):
     follows (h) only where it sits at the letters' own indent. A bare A or B is
     an alternative only inside a part that says "Answer part A or part B"; the
     scheme brackets its alternatives "(A)".
+    `alt_letters` names the (question, letter) pairs the PAPER sets as
+    alternatives: the 2025 Ordinary scheme heads Q11(d)'s alternatives "A" and
+    "B" without printing "(d)", so an A there opens the next letter.
     Returns (ordered list of Seg, {(q, letter, None, None): printed marks}).
     """
     segs, marks = [], {}
@@ -243,6 +263,8 @@ def segments(lines, first_q='1', answers=True):
         t = l.text
         if HEADER.match(t):
             continue
+        if not answers and t == 'Acknowledgements':
+            break                    # the paper's back page: credits and copyright
         m = QNUM.match(t)
         want = first_q if q is None else str(int(q) + 1)
         if m and l.x0 < 70 and m.group(1) == want \
@@ -254,7 +276,12 @@ def segments(lines, first_q='1', answers=True):
         if q is None:
             continue
         am = ALTMARK.match(t)
-        if am and l.x0 < 150 and (t.startswith('(') or any(
+        nxt_letter = chr(ord(letter or '`') + 1)
+        if am and am.group(1) == 'A' and l.x0 < 100 and (q, letter) not in alt_letters \
+                and (q, nxt_letter) in alt_letters:
+            letter, roman, alt = nxt_letter, None, None
+            segs.append(Seg((q, letter, None, None), f'({letter})'))
+        if am and l.x0 < 150 and (t.startswith('(') or (q, letter) in alt_letters or any(
                 CHOICE_AB.search(joined(sg.text))
                 for sg in segs if sg.key[:2] == (q, letter))):
             alt, roman = am.group(1), None
@@ -269,7 +296,9 @@ def segments(lines, first_q='1', answers=True):
                            and nxt.group(1) == chr(ord(letter or '`') + 1))
         if not (answers and l.bold) or bold_letter:
             pm = PAPER_MARK.match(t)
-            if pm and l.x0 > 400:
+            # A part's mark sits at the right margin, or -- where a diagram
+            # takes the right of the page -- at the end of the text column.
+            if pm and (l.x0 > 400 or (not answers and l.x0 > 250)):
                 if pm.group(1):
                     marks[(q, letter, None, None)] = int(pm.group(1))
                 continue
@@ -302,6 +331,7 @@ def segments(lines, first_q='1', answers=True):
 
 # ── matching the paper's words to the scheme's reprint ──────────────────────
 _FOLD = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉', '01234567890123456789')
+_DASHES = str.maketrans('—–−⁻₋', '-----')
 
 
 def norm(t):
@@ -341,6 +371,42 @@ def cut_to(text, target):
         return None, None, False
     i = best[1]
     return text[:i + 1].strip(), text[i + 1:].strip(), False
+
+
+# What a diagram's label looks like when its text runs into the prose beside
+# it: a number ("14", "(18)"), an orbital ("4p"), one capitalised word
+# ("Energy"), or a letter or two ("X", "pH"). A formula, an arrow or a sign is
+# never one -- dropping "HCl + NaOH → NaCl + H₂O" because the scheme sets the
+# equation apart from its reprint of the lead-in would lose the equation.
+LABEL = re.compile(r'^(\(?\d+(\.\d+)?\)?|\d[spdf]|[A-Z][a-z]{1,7}|[A-Za-z]{1,2})$')
+
+
+def without_labels(text, target):
+    """(ask, rest) when the paper's words, less some diagram labels, are
+    exactly the reprint's; else None."""
+    import difflib
+    pw, want = text.split(), norm(target)
+    sw = target.split()
+    for j in range(1, len(pw) + 1):
+        if len(norm(' '.join(pw[:j]))) < len(want):
+            continue
+        sm = difflib.SequenceMatcher(None, [norm(w) for w in pw[:j]], [norm(w) for w in sw],
+                                     autojunk=False)
+        drop, ok = set(), True
+        for op, a1, a2, b1, b2 in sm.get_opcodes():
+            if op == 'equal':
+                continue
+            if op == 'delete' and all(LABEL.match(w) for w in pw[a1:a2]):
+                drop.update(range(a1, a2))
+                continue
+            ok = False
+            break
+        if not ok:
+            continue
+        kept = [w for i, w in enumerate(pw[:j]) if i not in drop]
+        if norm(' '.join(kept)) == want:
+            return ' '.join(kept), ' '.join(pw[j:])
+    return None
 
 
 def cut_at_tail(text, target, n=12):
@@ -480,7 +546,18 @@ def mark_terms(cell):
 # A state symbol read half as subscript ("H₂O₍g)") is set as the plain
 # bracket it is, and a raised exponent with no Unicode form ("10^(-2.8)") as
 # a caret.
-DISPLAY = [(re.compile(r'_\(([a-zA-Z])\)'), r'\1'), (re.compile(r'\^\(o\)C'), '°C'),
+_SUP = str.maketrans('0123456789', '⁰¹²³⁴⁵⁶⁷⁸⁹')
+_SUB = str.maketrans('0123456789', '₀₁₂₃₄₅₆₇₈₉')
+# Some papers (2025 Higher) set a negative charge or power with a raised em
+# dash, which the text layer reads as "—": "MnO₄—", "A—", "10^(—14)",
+# "mol^—1". It is the minus the page prints raised. A dash between two
+# symbols ("the Cl—Cl bond") is a bond and stays.
+DISPLAY = [(re.compile(r'\^(?:\([—–](\d+)\)|[—–](\d+)(?!\d|\.\d))'),
+            lambda m: '⁻' + (m.group(1) or m.group(2)).translate(_SUP)),
+           (re.compile(r'(?<=[A-Za-z₀-₉⁰-⁹⁺)*])—(?=[\s),.;:(]|$)'), '⁻'),
+           # A subscript with a full stop set in its size: "NF_(3.)".
+           (re.compile(r'_\((\d+)([.,])\)'), lambda m: m.group(1).translate(_SUB) + m.group(2)),
+           (re.compile(r'_\(([a-zA-Z])\)'), r'\1'), (re.compile(r'\^\(o\)C'), '°C'),
            (re.compile(r'₍([a-z]{1,3})\)'), r'(\1)'), (re.compile(r'\^\(([^()\s]+)\)'), r'^\1'),
            # The text layer drops the space after a script run ("C₅H₁₂including",
            # "cm³portions"); the page prints one.
@@ -521,18 +598,76 @@ def display(t):
 class Printed:
     """One sitting in the printed layout: its paper and its scheme, split into parts."""
 
-    def __init__(self, year, lvl):
+    def __init__(self, year, lvl, figures=False):
         self.year, self.lvl = year, lvl
         self.paper_path = os.path.join(PAPERS, f'{year}-{lvl}-paper.pdf')
         self.scheme_path = os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
         self.paper_lines = read_lines(self.paper_path)
+        self.figures = figures
+        if figures:
+            self.paper_lines = self._outside_figures(self.paper_lines)
         self.scheme_lines = read_lines(self.scheme_path)
+        # The 2021-2025 schemes print their mark cells in round brackets,
+        # "(3)", at the same right margin the 2026 schemes print "[3]" at.
+        # Read there, and only there, they are the same cell.
+        lines = []
+        for l in self.scheme_lines:
+            if (l.x0 > 480 or l.bold) and ROUND_CELL.match(l.text):
+                l.text = '[' + l.text.strip()[1:-1] + ']'
+            elif l.bold and l.x0 < 480:
+                # Where a diagram takes the right margin the scheme sets the
+                # cell at the end of the answer itself: "occupy singly (3)".
+                m = TRAILING_ROUND.search(l.text)
+                if m and m.start() > 0:
+                    lines.append(Line(l.page, (l.x0, l.y0, l.x1 - 20, l.y1), l.text[:m.start()],
+                                      l.bold, l.math))
+                    l = Line(l.page, (max(l.x1 - 20, 481), l.y0, l.x1, l.y1),
+                             '[' + m.group(1).strip()[1:-1] + ']', True)
+            lines.append(l)
+        self.scheme_lines = lines
         self.pseg, self.marks = segments(self.paper_lines, answers=False)
-        self.sseg, _ = segments(self.scheme_lines, answers=True)
+        alt_letters = {s.key[:2] for s in self.pseg if s.key[3]}
+        self.sseg, _ = segments(self.scheme_lines, answers=True, alt_letters=alt_letters)
         self.scheme_md = open(os.path.join(SCHEMES, f'{year}-{lvl}.md')).read()
         self.scheme_norm = norm(self.scheme_md)
         learn_repairs(l.text for l in self.paper_lines + self.scheme_lines)
         self.inexact = []
+
+    def _outside_figures(self, lines):
+        """The paper's lines less those printed inside a figure the card shows.
+
+        A diagram's labels ("steam from a steam generator", a graph's axis
+        numbers, "molten PbBr2") are part of its picture, not of the question's
+        words; where the sitting's cropped paper figures cover them
+        (chem_print_figures.CROPS), they are read as the picture's and left
+        out of the asks and lead-ins. A part marker or a mark inside a crop
+        means the rectangle is wrong, and stops the run."""
+        from chem_print_figures import CROPS
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+                 if src in ('paper', 'paper-image', 'labels')]
+        kept = []
+        for l in lines:
+            inside = any(l.page == page and l.x0 >= r[0] - 1 and l.y0 >= r[1] - 1
+                         and l.x1 <= r[2] + 1 and l.y1 <= r[3] + 1 for page, r in boxes)
+            if not inside:
+                kept.append(l)
+            elif LETTER.match(l.text) or ROMAN.match(l.text) or PAPER_MARK.match(l.text) \
+                    or (QNUM.match(l.text) and l.x0 < 70):
+                raise ValueError(f'a figure crop covers the marker {l.text!r} on page {l.page}')
+        return kept
+
+    def rearranged(self, text, old, new):
+        """`text` with `old` set as `new`, where `new` is the same printed
+        characters in the order the page shows them -- a nuclide's mass and
+        atomic numbers the text layer reads after its symbol ("Cr³⁺ 52 ion? 24"
+        for the printed ⁵²₂₄Cr³⁺). Refused unless the characters are the same."""
+        def chars(t):
+            return sorted(re.sub(r'\s+', '', t.translate(_FOLD)).translate(_DASHES))
+        if old not in text:
+            raise ValueError(f'{old!r} is not in {text!r}')
+        if chars(old) != chars(new):
+            raise ValueError(f'{new!r} is not a rearrangement of {old!r}')
+        return text.replace(old, new)
 
     # ── lookup ───────────────────────────────────────────────────────────
     def _one(self, segs, key, what):
@@ -571,6 +706,15 @@ class Printed:
         if not s:
             return p, ''
         ask, rest, exact = cut_to(p, s)
+        if not exact:
+            # A diagram set beside the ask puts its labels into the ask's
+            # lines ("Draw the shape of the atomic 4p orbital ... in a 3d
+            # bromine atom"). Where dropping a few short words from the paper
+            # leaves exactly the scheme's reprint, those words were the
+            # diagram's, and the ask is the paper's own remaining words.
+            got = without_labels(p, s)
+            if got:
+                ask, rest, exact = got[0], got[1], True
         if ask is None:
             # The reprint words the part differently ("Name two" for the
             # paper's "Identify two"): end the ask where the reprint's last
@@ -603,8 +747,28 @@ class Printed:
         return display(text)
 
     def lead(self, key):
-        """What the paper prints after a part's ask and before the next part."""
-        return display(self._split(key)[1])
+        """What the paper prints after a part's ask and before the next part.
+
+        A diagram beside the asks leaves its labels here too ("4s", "Energy",
+        a graph's axis numbers). Where the scheme reprints the lead-in, the
+        paper's words are kept only as far as they are the reprint's (less
+        such labels); where it does not, a run with no sentence in it is a
+        diagram's labels and is no lead-in."""
+        rest = self._split(key)[1]
+        try:
+            tail = joined(self.sseg_of(key).tail)
+        except KeyError:
+            tail = ''
+        if rest and tail:
+            got = without_labels(rest, tail)
+            if got:
+                return display(got[0])
+        if rest and not self.figures and not re.search(r'[A-Za-z]{3,}[^.?:]*\b\w+[.?:]', rest):
+            # Without the sitting's figure rectangles, a run with no sentence
+            # in it is read as a diagram's labels. With them, the labels are
+            # already gone and such a run is an equation the paper prints.
+            return ''
+        return display(rest)
 
     def text(self, key, upto=None, drop=()):
         """A part's own printed text (a question's or a letter's lead-in)."""
@@ -633,6 +797,25 @@ __all__ = ['Printed', 'Item', 'PRow', 'segments', 'items_of', 'prows', 'joined',
 
 
 # ── cards ───────────────────────────────────────────────────────────────────
+# The commit the Chemistry audit started from: origin/main when the worktree
+# was cut. Every pre-audit card is read from here, never from the working
+# deck, so a re-run compares against the same thing every time.
+AUDIT_BASE = 'e7ec7a532de3c03f8511d416cf943354dfe3e74e'
+_PRIOR = None
+
+
+def prior_deck():
+    global _PRIOR
+    if _PRIOR is None:
+        raw = subprocess.run(['git', 'show', f'{AUDIT_BASE}:scripts/markbank/authored/chemistry.json'],
+                             cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        _PRIOR = {c['id']: c for c in json.loads(raw)}
+    return _PRIOR
+
+
+def prior_card(cid):
+    return prior_deck().get(cid)
+
 INLINE_ASIDE = re.compile(r'\s*(\[[^\]]*[a-zA-Z]{3}[^\]]*\])')
 ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 
@@ -655,6 +838,15 @@ class Cards:
         self.level = 'higher' if P.lvl == 'hl' else 'ordinary'
         self.prefix = f'chem-{P.year}-{P.lvl}-'
         self._card = make_card('chemistry')
+        self._fixes_used = set()
+
+    def _fixes_applied(self, keys, fixes):
+        """A fix is keyed by the reader's own text; if the reader changes, a
+        fix that no longer matches would silently stop applying. Refuse it."""
+        unused = set(fixes or {}) - self._fixes_used
+        self._fixes_used = set()
+        if unused:
+            raise Refused(f'{keys}: fixes matched nothing: {sorted(unused)}')
 
     # ── naming ───────────────────────────────────────────────────────────
     @staticmethod
@@ -703,6 +895,13 @@ class Cards:
                 continue
             if t and not t.startswith('Answer '):
                 out.append(t)
+            # What the paper prints after a lead-in and before the first part
+            # under it -- an equation the scheme sets in bold, so its reprint
+            # ends at "the following balanced chemical equation:" -- is the
+            # lead-in's still.
+            lead = P.lead(k) if k != key else ''
+            if lead and lead != 'or':
+                out.append(lead)
         if roman:
             for r in ROMAN_ORDER[:ROMAN_ORDER.index(roman)]:
                 try:
@@ -730,7 +929,11 @@ class Cards:
     def _verbatim(self, text, fixes, where):
         notes = INLINE_ASIDE.findall(text)
         text = tidy(INLINE_ASIDE.sub('', text))
-        text = fixes.get(text, fixes.get(display(text), text))
+        for k in (text, display(text)):
+            if k in fixes:
+                self._fixes_used.add(k)
+                text = fixes[k]
+                break
         shown = display(text)
         if self.P.traceable(shown):
             text = shown
@@ -738,11 +941,16 @@ class Cards:
             raise Refused(f'{where}: "{text}" is not in the {self.P.year} {self.P.lvl} scheme')
         return text, notes
 
-    def points(self, key, fixes=None, notes=None, deep=False):
-        """One fixed row per mark cell, worth what the cell prints."""
+    def points(self, key, fixes=None, notes=None, deep=False, skip=()):
+        """One fixed row per mark cell, worth what the cell prints. An item in
+        `skip` is a line the scheme sets among the answers that answers
+        nothing -- a reprint of the paper's next equation -- and is left out."""
         fixes, notes = fixes or {}, notes or {}
-        rows = []
+        rows, skipped = [], set()
         for it in self.P.items(key, deep=deep):
+            if it.cell is None and display(it.text) in skip:
+                skipped.add(display(it.text))
+                continue
             if it.cell is None and rows and re.fullmatch(r'\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\]', it.text):
                 # A bracketed line under the last cell: the scheme's own
                 # aside, such as the whole balanced equation after its parts.
@@ -759,6 +967,8 @@ class Cards:
                                         if mark_value(it.cell) != mark_terms(it.cell)[0] else '',
                                         notes.get(len(rows), '')] if x)
             rows.append(point(f'r-{len(rows) + 1}', text, mark_value(it.cell), note))
+        if set(skip) - skipped:
+            raise Refused(f'{key}: nothing to skip for {sorted(set(skip) - skipped)}')
         return rows
 
     def split(self, keys, fixes=None, notes=None, drawn=(), drop=(), criteria=()):
@@ -861,7 +1071,16 @@ class Cards:
         q = int(keys[0][0])
         if stem is None:
             stem = self.context(keys[0])
-        c = self._card(self.prefix + (cid or self.cid(keys)), self.P.year, self.level, topic,
+        full = self.prefix + (cid or self.cid(keys))
+        if topic is None or concept is None:
+            # A card corrected in place keeps the syllabus filing and concept
+            # its pre-audit version carried, unless the audit gives new ones.
+            before = prior_card(full)
+            if not before:
+                raise Refused(f'{full}: no pre-audit card to inherit a topic or concept from')
+            topic = topic or before['topicId']
+            concept = concept or before['conceptId']
+        c = self._card(full, self.P.year, self.level, topic,
                        concept, self.ref(keys), qtext or self.qtext(keys, deep=deep),
                        notation or '', total, rows, notes, stem=stem,
                        tariff_kind=kind, section='A' if q <= 3 else 'B', figure_key=figure,
@@ -876,18 +1095,24 @@ class Cards:
 
     def fixed(self, keys, topic, concept, **kw):
         fixes, notes, deep = kw.pop('fixes', None), kw.pop('row_notes', None), kw.get('deep', False)
+        skip = kw.pop('skip', ())
         rows = []
+        self._fixes_used = set()
         for k in keys:
-            rows += self.points(tuple(k), fixes, notes, deep=deep)
+            rows += self.points(tuple(k), fixes, notes, deep=deep, skip=skip)
+        self._fixes_applied(keys, fixes)
         for i, r in enumerate(rows):
             r['id'] = f'r-{i + 1}'
         return self.add(keys, topic, concept, rows, **kw)
 
     def ordered(self, keys, topic, concept, **kw):
         self._criteria = []
-        rows, cell = self.split([tuple(k) for k in keys], kw.pop('fixes', None),
+        self._fixes_used = set()
+        fixes = kw.pop('fixes', None)
+        rows, cell = self.split([tuple(k) for k in keys], fixes,
                                 kw.pop('row_notes', None), drawn=kw.pop('drawn', ()),
                                 drop=kw.pop('drop', ()), criteria=kw.pop('criteria', ()))
+        self._fixes_applied(keys, fixes)
         note = (f'The scheme prices these points together as {cell} without saying which '
                 f'point earns which part, so no per-point value is shown.')
         kw['notes'] = tidy(' '.join([note] + self._criteria + [kw.get('notes', '')]))
@@ -917,7 +1142,10 @@ class Cards:
         return c
 
     def menu(self, keys, topic, concept, claim=None, **kw):
-        rows, total = self.anyn(tuple(keys[0]), claim, kw.pop('fixes', None), kw.pop('note', ''))
+        self._fixes_used = set()
+        fixes = kw.pop('fixes', None)
+        rows, total = self.anyn(tuple(keys[0]), claim, fixes, kw.pop('note', ''))
+        self._fixes_applied(keys, fixes)
         return self.add(keys, topic, concept, rows, total=total, **kw)
 
     def drawn_ask(self, key):

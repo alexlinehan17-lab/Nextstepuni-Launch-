@@ -282,5 +282,164 @@
   "description": "The marking scheme's own answer to 2026 OL Q8(a)(iv), as printed: the same structure of ethanal with a red circle drawn around the C=O carbonyl group.",
   "questionRef": "2026 OL Q8(a)(iv)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Steam distillation apparatus for extracting clove oil: steam from a steam generator enters through a tube reaching to the bottom of a round-bottomed flask holding cloves; the vapour passes from the top of the flask through a sloping water-cooled condenser into a conical flask collecting the distillate. Labels: steam from a steam generator, cloves, distillate.",
+  "questionRef": "2025 HL Q2"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The question's table of results. Time (minutes): 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0. Volume of oxygen (cm3): 0.0, 60.0, 82.0, 92.0, 98.0, 100.0, 100.0.",
+  "questionRef": "2025 HL Q3"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q4l-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The two monomers printed beside the question: X, a benzene ring bonded to a CH that is double-bonded to a CH2 (phenylethene); Y, a CH2 double-bonded to a CH that carries a CH3 group (propene).",
+  "questionRef": "2025 HL Q4(l)B"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Atomic orbital diagram for a bromine atom in its ground state, with Energy increasing up the vertical axis: 1s, 2s, 2p (three boxes), 3s, 3p (three boxes), 4s and 3d (five boxes) each fully paired; 4p with two paired boxes and one box holding a single electron; an empty 5s box at the top.",
+  "questionRef": "2025 HL Q5(b)"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q7d-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The indicator's dissociation as printed: HA + H2O ⇌ H3O+ + A−, with the word yellow under HA and the word blue under A−.",
+  "questionRef": "2025 HL Q7(d)"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q7d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The indicator's dissociation, HA + H2O ⇌ H3O+ + A− with yellow under HA and blue under A−, above the question's pH curve: pH (0 to 14) against volume of strong base added (0 to 60 cm3). The pH rises slowly from about 1 to about 3 by 24 cm3, jumps almost vertically to about 11 at 25 cm3, then levels off at about 12.5 by 50 cm3.",
+  "questionRef": "2025 HL Q7(d)(ii)"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The reaction scheme: ethanal is converted by reaction A to ethanol and by reaction B to ethanoic acid; ethanol and ethanoic acid together are converted by reaction C to ethyl ethanoate.",
+  "questionRef": "2025 HL Q8"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q11c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The nuclear equation as printed: radium-225 (mass number 225, atomic number 88) gives Z, written with mass number X and atomic number Y, plus an electron written with mass number 0 and charge −1.",
+  "questionRef": "2025 HL Q11(c)"
+ },
+ {
+  "file": "chemistry-2025-HL-paper-q11d-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for the electrolysis of molten lead(II) bromide: a crucible of molten PbBr2 heated by a Bunsen burner, with two electrodes dipping into the melt, connected through an ammeter (A) to a battery.",
+  "questionRef": "2025 HL Q11(d)B"
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q2c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q2(c)(ii), as the State Examinations Commission printed it: the structure of eugenol, a benzene ring with an OH group, an O–CH3 group on the next carbon, and on the opposite side a CH2–CH=CH2 chain.",
+  "questionRef": "2025 HL Q2(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q4(g), as the State Examinations Commission printed it: two isomers of C4H10 drawn with every atom and bond, separated by //: butane, a straight chain of four carbons, and methylpropane, a three-carbon chain with a CH3 branch on the middle carbon.",
+  "questionRef": "2025 HL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q5(b)(ii), as the State Examinations Commission printed it: a circle, the spherical shape of the 1s orbital.",
+  "questionRef": "2025 HL Q5(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q8c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q8(c)(i), as the State Examinations Commission printed it: the full structure of ethyl ethanoate, CH3–C(=O)–O–CH2–CH3, with every atom and bond drawn.",
+  "questionRef": "2025 HL Q8(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q8c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q8(c)(ii), as the State Examinations Commission printed it: the same structure of ethyl ethanoate with an asterisk marking the oxygen atom in the C–O–C linkage, between the carbonyl carbon and the ethyl group, as the O* atom.",
+  "questionRef": "2025 HL Q8(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q8c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q8(c)(iii), as the State Examinations Commission printed it: the structure of ethyl ethanoate with the O* atom starred and a bold line drawn across the bond between the carbonyl carbon and the O* atom, marking it as the bond formed.",
+  "questionRef": "2025 HL Q8(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q9b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q9(b)(iii), as the State Examinations Commission printed it: the Kc expression set as a fraction, [NO]2[Br2] over [NOBr]2.",
+  "questionRef": "2025 HL Q9(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q9b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q9(b)(iv), as the State Examinations Commission printed it: Kc = (0.195)2 (0.0975) over (0.055)2 = 1.2 (mol L−1).",
+  "questionRef": "2025 HL Q9(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q10(a)(ii), as the State Examinations Commission printed it: a dot and cross diagram of NF3: nitrogen with a lone pair of crosses and three bonds, each to a fluorine atom, each bond a dot and a cross; each fluorine carries three lone pairs of dots.",
+  "questionRef": "2025 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q10a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q10(a)(iv), as the State Examinations Commission printed it: two NF3 molecules one above the other, a fluorine atom of the upper molecule marked δ− joined by a dotted line to the nitrogen atom of the lower molecule marked δ+, showing a dipole-dipole attraction.",
+  "questionRef": "2025 HL Q10(a)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q10(b)(i), as the State Examinations Commission printed it: the structure of ethene, two carbon atoms joined by a double bond, each bonded to two hydrogen atoms.",
+  "questionRef": "2025 HL Q10(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-HL-scheme-q10b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 HL Q10(b)(iv), as the State Examinations Commission printed it: two acceptable intermediates separated by /: the carbocation CH2Cl–CH2+ with the positive charge on the second carbon, or the bridged chloronium ion, a three-membered ring of two CH2 carbons and a positively charged chlorine.",
+  "questionRef": "2025 HL Q10(b)(iv)",
+  "solution": true
  }
 ]

@@ -6401,7 +6401,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-b-i", topicId: "chem-3-2", conceptId: "what-a-catalyst-is",
     section: "A", questionRef: "2026 OL Q3(b)(i)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂",
     questionText: "What is a catalyst?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -6415,7 +6415,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-b-ii", topicId: "chem-3-2", conceptId: "catalyst-for-hydrogen-peroxide",
     section: "A", questionRef: "2026 OL Q3(b)(ii)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂",
     questionText: "Identify a suitable catalyst for the decomposition of H₂O₂.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -6429,7 +6429,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-b-iii", topicId: "chem-3-2", conceptId: "apparatus-for-measuring-oxygen-produced",
     section: "A", questionRef: "2026 OL Q3(b)(iii)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂",
     questionText: "Draw a labelled diagram of a suitable apparatus for carrying out this experiment.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -6443,7 +6443,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-c-i", topicId: "chem-3-2", conceptId: "plotting-volume-against-time",
     section: "A", questionRef: "2026 OL Q3(c)(i)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂ The results are shown in the table below.",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂ The results are shown in the table below.",
     questionText: "Draw a graph on graph paper to show how the volume of oxygen gas produced varies with time.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
@@ -6468,7 +6468,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-c-ii", topicId: "chem-3-2", conceptId: "reading-a-time-from-the-graph",
     section: "A", questionRef: "2026 OL Q3(c)(ii)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂ The results are shown in the table below.",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂ The results are shown in the table below.",
     questionText: "Use your graph to estimate the time taken for 30 cm³ of oxygen to be produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -6490,7 +6490,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q3-c-iii", topicId: "chem-3-2", conceptId: "average-rate-of-reaction",
     section: "A", questionRef: "2026 OL Q3(c)(iii)",
-    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂→ 2H₂O + O₂ The results are shown in the table below.",
+    stem: "A student measured the rate of production of oxygen gas (O₂) by the decomposition of a dilute solution of hydrogen peroxide (H₂O₂) in the presence of a suitable catalyst. The reaction is described by the following balanced chemical equation: 2H₂O₂ → 2H₂O + O₂ The results are shown in the table below.",
     questionText: "Calculate the average rate of reaction during the first 90 seconds.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -6525,7 +6525,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q4-b", topicId: "chem-3-1", conceptId: "exothermic-combustion",
     section: "B", questionRef: "2026 OL Q4(b)",
-    questionText: "The combustion of octane (C₈H₁₈) is described by the following balanced chemical equation: 2C₈H₁₈ + 25O₂→ 16CO₂ + 18H₂O ΔH = –10 940 kJ mol⁻¹ Is this reaction exothermic or endothermic? Justify your answer.",
+    questionText: "The combustion of octane (C₈H₁₈) is described by the following balanced chemical equation: 2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O ΔH = –10 940 kJ mol⁻¹ Is this reaction exothermic or endothermic? Justify your answer.",
     tariffModel: {"kind":"orderedSplit","notation":"[5+1]"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "exothermic", marks: null, openList: true },
@@ -6806,10 +6806,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q6-c-i", topicId: "chem-2-4", conceptId: "combustion-of-ethyne",
     section: "B", questionRef: "2026 OL Q6(c)(i)",
-    questionText: "When compound B burns completely in oxygen, two other compounds are produced. Copy, complete and balance the following chemical equation for the complete combustion of compound B. C₂H₂ + O₂→",
+    questionText: "When compound B burns completely in oxygen, two other compounds are produced. Copy, complete and balance the following chemical equation for the complete combustion of compound B. C₂H₂ + O₂ →",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "2½O₂→ 2CO₂ + H₂O", marks: 6, contextNote: "The scheme prices this point [3×2]. The scheme completes C₂H₂ + 2½O₂ → 2CO₂ + H₂O, the ½ set as a small fraction; its own print is shown with the answer.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "2½O₂ → 2CO₂ + H₂O", marks: 6, contextNote: "The scheme prices this point [3×2]. The scheme completes C₂H₂ + 2½O₂ → 2CO₂ + H₂O, the ½ set as a small fraction; its own print is shown with the answer.", openList: true },
     ],
     figure: {
           "candId": "chemistry-2026-OL-scheme-q6c-i",
@@ -7143,7 +7143,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q9-a-i", topicId: "chem-3-3", conceptId: "chemical-equilibrium",
     section: "B", questionRef: "2026 OL Q9(a)(i)",
-    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g)⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹",
+    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g) ⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹",
     questionText: "Explain what is meant by the term chemical equilibrium.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -7158,7 +7158,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q9-a-ii", topicId: "chem-3-3", conceptId: "kc-expression-for-the-contact-process",
     section: "B", questionRef: "2026 OL Q9(a)(ii)",
-    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g)⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹",
+    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g) ⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹",
     questionText: "Write an expression for the equilibrium constant Kc for this reaction.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -7181,7 +7181,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q9-a-iii", topicId: "chem-3-3", conceptId: "effect-of-pressure-on-the-contact-process",
     section: "B", questionRef: "2026 OL Q9(a)(iii)",
-    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g)⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
+    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g) ⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
     questionText: "Predict the effect on the concentration of SO₃ if the pressure is increased. Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -7196,7 +7196,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q9-a-iv", topicId: "chem-3-3", conceptId: "effect-of-temperature-on-the-contact-process",
     section: "B", questionRef: "2026 OL Q9(a)(iv)",
-    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g)⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
+    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g) ⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
     questionText: "Predict the effect on the concentration of SO₃ if the temperature is increased. Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -7211,7 +7211,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q9-a-v", topicId: "chem-3-3", conceptId: "effect-of-a-catalyst-on-equilibrium",
     section: "B", questionRef: "2026 OL Q9(a)(v)",
-    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g)⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
+    stem: "In the manufacture of sulfuric acid during the contact process, sulfur dioxide (SO₂) and oxygen (O₂) react in the presence of a catalyst to produce sulfur trioxide (SO₃). An equilibrium is established. The equilibrium is described by the following balanced chemical equation: 2SO2(g) + O2(g) ⇌ 2SO3(g) ΔH = –198 kJ mol⁻¹ According to Le Châtelier’s principle, if certain conditions are changed in an equilibrium system, the system adjusts to relieve the stress applied.",
     questionText: "Predict the effect on the concentration of SO₃ if the catalyst is removed. Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -7301,7 +7301,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2026 Ordinary Level — © State Examinations Commission.",
     id: "chem-2026-ol-q10-a-i-v", topicId: "chem-3-5", conceptId: "oxidation-and-reduction",
     section: "B", questionRef: "2026 OL Q10(a)(i)–(v)",
-    stem: "When chlorine gas is bubbled through a solution of iron(II) sulfate, the reaction that occurs may be described by the following balanced chemical equation: Cl₂ + 2Fe²⁺→ 2Fe³⁺ + 2Cl⁻ Oxidation and reduction occur during this reaction.",
+    stem: "When chlorine gas is bubbled through a solution of iron(II) sulfate, the reaction that occurs may be described by the following balanced chemical equation: Cl₂ + 2Fe²⁺ → 2Fe³⁺ + 2Cl⁻ Oxidation and reduction occur during this reaction.",
     questionText: "(i) In terms of electrons, explain what is meant by oxidation. (ii) In terms of electrons, explain what is meant by reduction. (iii) Identify the substance oxidised in this reaction. (iv) Identify the oxidising agent. (v) How many electrons are transferred when this chemical reaction occurs as described by the balanced equation?",
     tariffModel: {"kind":"orderedSplit","notation":"[12+10+1+1+1]"}, totalMarks: 25,
     rows: [

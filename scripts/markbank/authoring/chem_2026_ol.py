@@ -144,7 +144,7 @@ C.ordered([k('6', 'b', r) for r in ('i', 'ii')], 'chem-2-4', 'homologous-series'
           stem=Q6_STEM, figure=FIG + 'paper-q6')
 C.fixed([k('6', 'c', 'i')], 'chem-2-4', 'combustion-of-ethyne', stem='',
         qtext=P.text(k('6', 'c', 'i')), figure=FIG + 'scheme-q6c-i',
-        fixes={'2O₂→ 2CO₂ + H₂O': '2½O₂→ 2CO₂ + H₂O'},
+        fixes={'2O₂ → 2CO₂ + H₂O': '2½O₂ → 2CO₂ + H₂O'},
         row_notes={0: 'The scheme completes C₂H₂ + 2½O₂ → 2CO₂ + H₂O, the ½ set as a small '
                       'fraction; its own print is shown with the answer.'})
 C.fixed([k('6', 'c', 'ii')], 'chem-2-4', 'appearance-of-an-ethyne-flame', stem=Q6_STEM,
