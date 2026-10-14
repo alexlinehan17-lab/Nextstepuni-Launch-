@@ -1359,5 +1359,58 @@
       "cons-2011-hl-q10-a",
       "cons-2011-hl-q9-a"
     ]
+  },
+  {
+    "year": 2011,
+    "level": "ordinary",
+    "validator": "scripts/markbank/authoring/construction_2011_ordinary.py",
+    "result": {
+      "tasks": 28,
+      "addedTasks": 28,
+      "correctedTasks": 0,
+      "consolidatedLegacy": 0,
+      "leafTasks": 20,
+      "wholeQuestions": 9,
+      "anyNChoiceCards": 1,
+      "sourceFigures": 27,
+      "paperComplete": true
+    },
+    "priorCount": 1166,
+    "addedIds": [
+      "cons-2011-ol-q1-a",
+      "cons-2011-ol-q1-b",
+      "cons-2011-ol-q1-complete",
+      "cons-2011-ol-q2-a",
+      "cons-2011-ol-q2-b",
+      "cons-2011-ol-q2-complete",
+      "cons-2011-ol-q3-a",
+      "cons-2011-ol-q3-b",
+      "cons-2011-ol-q3-complete",
+      "cons-2011-ol-q4-a",
+      "cons-2011-ol-q4-b",
+      "cons-2011-ol-q4-c",
+      "cons-2011-ol-q4-complete",
+      "cons-2011-ol-q5-a",
+      "cons-2011-ol-q5-b",
+      "cons-2011-ol-q5-complete",
+      "cons-2011-ol-q6-a",
+      "cons-2011-ol-q6-b",
+      "cons-2011-ol-q6-complete",
+      "cons-2011-ol-q7-a",
+      "cons-2011-ol-q7-b",
+      "cons-2011-ol-q7-c",
+      "cons-2011-ol-q7-complete",
+      "cons-2011-ol-q8-terms",
+      "cons-2011-ol-q9-a",
+      "cons-2011-ol-q9-b",
+      "cons-2011-ol-q9-c",
+      "cons-2011-ol-q9-complete"
+    ],
+    "correctedIds": [],
+    "withdrawnIds": [],
+    "keptChoiceIds": [],
+    "choiceCardIds": [
+      "cons-2011-ol-q8-terms"
+    ]
   }
 ]
