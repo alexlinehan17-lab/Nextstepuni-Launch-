@@ -4,8 +4,6 @@
  */
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { collection, doc, increment, setDoc, updateDoc } from 'firebase/firestore';
-import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
 import { type StudyConfidenceLabel, type UserProgress } from '../types';
 import { type CourseData } from '../components/Library';
@@ -22,6 +20,7 @@ import {
 import type { StudyTopicAllocation, StudyTopicSelection } from '../types/studyTopics';
 import { equalTopicAllocations, sameStudySubject, validTopicAllocations, sessionTopicAllocations } from '../services/studyTopicHistory';
 import { analyticsDurationBucket, trackProgrammeEvent } from '../utils/programmeAnalytics';
+import { readActiveStudySession, recordStudySession, writeActiveStudySession, type ActiveStudySession } from '../services/studySessionStore';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -41,6 +40,16 @@ export interface SessionReflectionMetadata {
 export const MIN_STUDY_SESSION_MINUTES = 5;
 export const MIN_RECORDABLE_SESSION_SECONDS = MIN_STUDY_SESSION_MINUTES * 60;
 
+/** A session saved by this tab before a reload, brought up to date. */
+function restoreActiveSession(uid: string | undefined): ActiveStudySession | null {
+  const saved = uid ? readActiveStudySession(uid) : null;
+  if (!saved || !saved.startedAt || !saved.plannedMinutes) return null;
+  if (saved.phase !== 'active') return saved;
+  const total = saved.plannedMinutes * 60;
+  const elapsed = Math.min(total, Math.max(0, Math.round((Date.now() - saved.startedAt) / 1000)));
+  return { ...saved, elapsedSeconds: elapsed, phase: elapsed >= total ? 'complete' : 'active' };
+}
+
 // Fisher-Yates shuffle
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -58,28 +67,31 @@ export function useStudySession(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ) {
-  const { studySessions, progressLoaded, updateDemoProgress } = useProgress();
+  const { studySessions, progressLoaded, updateDemoProgress, addStudySession, reloadProgress } = useProgress();
   const isDemo = uid === DEMO_STUDENT_UID;
 
-  const [phase, setPhase] = useState<SessionPhase>('idle');
-  const [subject, setSubject] = useState('');
-  const [topicSelection, setTopicSelection] = useState<StudyTopicSelection | undefined>();
-  const [sessionType, setSessionType] = useState<'new-learning' | 'practice' | 'revision'>('new-learning');
-  const [plannedMinutes, setPlannedMinutes] = useState(25);
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  // A session survives the page reloading underneath it (iPad Safari reloads
+  // a backgrounded tab), and time away in another app still counts.
+  const [restored] = useState(() => restoreActiveSession(uid));
+  const [phase, setPhase] = useState<SessionPhase>(restored?.phase ?? 'idle');
+  const [subject, setSubject] = useState(restored?.subject ?? '');
+  const [topicSelection, setTopicSelection] = useState<StudyTopicSelection | undefined>(restored?.topicSelection);
+  const [sessionType, setSessionType] = useState<'new-learning' | 'practice' | 'revision'>(restored?.sessionType ?? 'new-learning');
+  const [plannedMinutes, setPlannedMinutes] = useState(restored?.plannedMinutes ?? 25);
+  const [elapsedSeconds, setElapsedSeconds] = useState(restored?.elapsedSeconds ?? 0);
   const [currentPrompt, setCurrentPrompt] = useState<StrategyPrompt | null>(null);
   const [todaySessions, setTodaySessions] = useState<StudySessionRecord[]>([]);
 
   const [promptShownAt, setPromptShownAt] = useState<number>(0); // timestamp when current prompt appeared
 
   const intervalRef = useRef<number | null>(null);
-  const startTimeRef = useRef<number>(0);
+  const startTimeRef = useRef<number>(restored?.startedAt ?? 0);
   const expectedEndRef = useRef<number>(0);
   const promptQueueRef = useRef<StrategyPrompt[]>([]);
   const promptIndexRef = useRef<number>(0);
   const nextPromptTimeRef = useRef<number>(0); // elapsed seconds when next prompt should show
   const autoDismissRef = useRef<number | null>(null);
-  const completedPromptsRef = useRef<Set<string>>(new Set()); // moduleIds user marked "Done"
+  const completedPromptsRef = useRef<Set<string>>(new Set(restored?.completedPrompts)); // moduleIds user marked "Done"
 
   const totalDuration = plannedMinutes * 60;
 
@@ -87,7 +99,9 @@ export function useStudySession(
 
   useEffect(() => {
     if (!progressLoaded) return;
-    const today = new Date().toISOString().slice(0, 10);
+    // Local calendar day, the same key saved sessions carry (toISOString is
+    // UTC, which dropped sessions logged just after midnight in Ireland).
+    const today = toDateKey(new Date());
     setTodaySessions(studySessions.filter(s => s.date === today));
   }, [progressLoaded, studySessions]);
 
@@ -138,6 +152,25 @@ export function useStudySession(
     }
   }, [showNextPrompt]);
 
+  // ── Ticking ──
+
+  const startTicking = useCallback((total: number) => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = window.setInterval(() => {
+      const elapsed = Math.round((Date.now() - startTimeRef.current) / 1000);
+      const clamped = Math.min(elapsed, total);
+      setElapsedSeconds(clamped);
+      updatePrompt(clamped);
+
+      if (clamped >= total) {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = null;
+        if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
+        setPhase('complete');
+      }
+    }, 1000);
+  }, [updatePrompt]);
+
   // ── Start ──
 
   const startSession = useCallback((subj: string, type: 'new-learning' | 'practice' | 'revision', minutes: number, topics?: StudyTopicSelection) => {
@@ -164,24 +197,8 @@ export function useStudySession(
 
     // Show first prompt immediately
     showNextPrompt();
-
-    // Start interval
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = window.setInterval(() => {
-      const elapsed = Math.round((Date.now() - startTimeRef.current) / 1000);
-      const total = minutes * 60;
-      const clamped = Math.min(elapsed, total);
-      setElapsedSeconds(clamped);
-      updatePrompt(clamped);
-
-      if (clamped >= total) {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        intervalRef.current = null;
-        if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
-        setPhase('complete');
-      }
-    }, 1000);
-  }, [buildPromptQueue, showNextPrompt, updatePrompt, uid, isDemo]);
+    startTicking(minutes * 60);
+  }, [buildPromptQueue, showNextPrompt, startTicking, uid, isDemo]);
 
   // ── Pause ──
 
@@ -201,22 +218,8 @@ export function useStudySession(
     const remaining = totalDuration - elapsedSeconds;
     startTimeRef.current = Date.now() - elapsedSeconds * 1000;
     expectedEndRef.current = Date.now() + remaining * 1000;
-
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = window.setInterval(() => {
-      const elapsed = Math.round((Date.now() - startTimeRef.current) / 1000);
-      const clamped = Math.min(elapsed, totalDuration);
-      setElapsedSeconds(clamped);
-      updatePrompt(clamped);
-
-      if (clamped >= totalDuration) {
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        intervalRef.current = null;
-        if (autoDismissRef.current) clearTimeout(autoDismissRef.current);
-        setPhase('complete');
-      }
-    }, 1000);
-  }, [totalDuration, elapsedSeconds, updatePrompt]);
+    startTicking(totalDuration);
+  }, [totalDuration, elapsedSeconds, startTicking]);
 
   // ── End Early ──
 
@@ -259,6 +262,8 @@ export function useStudySession(
   const completePrompt = useCallback(() => {
     if (currentPrompt) {
       completedPromptsRef.current.add(currentPrompt.moduleId);
+      const saved = uid ? readActiveStudySession(uid) : null;
+      if (uid && saved) writeActiveStudySession(uid, { ...saved, completedPrompts: [...completedPromptsRef.current] });
       setCurrentPrompt(null);
       setPromptShownAt(0);
       if (autoDismissRef.current) {
@@ -266,7 +271,7 @@ export function useStudySession(
         autoDismissRef.current = null;
       }
     }
-  }, [currentPrompt]);
+  }, [currentPrompt, uid]);
 
   // ── Visibility change correction ──
 
@@ -289,6 +294,33 @@ export function useStudySession(
     document.addEventListener('visibilitychange', handleVisibility);
     return () => document.removeEventListener('visibilitychange', handleVisibility);
   }, [phase, totalDuration, updatePrompt]);
+
+  // ── Keep the running session safe across reloads ──
+
+  useEffect(() => {
+    if (!uid) return;
+    writeActiveStudySession(uid, phase === 'idle' ? null : {
+      subject, sessionType, plannedMinutes, topicSelection,
+      startedAt: startTimeRef.current,
+      phase,
+      elapsedSeconds,
+      completedPrompts: [...completedPromptsRef.current],
+    });
+    // elapsedSeconds is read, not tracked: while active it is derived from
+    // startedAt, and pause/complete each change phase with it already set.
+  }, [uid, phase, subject, sessionType, plannedMinutes, topicSelection]);
+
+  useEffect(() => {
+    if (restored?.phase !== 'active') return;
+    buildPromptQueue();
+    // buildPromptQueue starts a fresh "Done" set; keep the ones already marked.
+    completedPromptsRef.current = new Set(restored.completedPrompts);
+    // Carry on from the next prompt slot rather than replaying the first one.
+    nextPromptTimeRef.current = Math.ceil(restored.elapsedSeconds / PROMPT_INTERVAL_SECONDS) * PROMPT_INTERVAL_SECONDS;
+    expectedEndRef.current = restored.startedAt + restored.plannedMinutes * 60 * 1000;
+    startTicking(restored.plannedMinutes * 60);
+    // Once, for the session this hook was restored with.
+  }, []);
 
   // ── Cleanup on unmount ──
 
@@ -353,6 +385,7 @@ export function useStudySession(
 
     // Update local state immediately (optimistic)
     setTodaySessions(prev => [...prev, record]);
+    writeActiveStudySession(uid, null);
 
     if (isDemo) {
       updateDemoProgress(current => ({
@@ -366,27 +399,17 @@ export function useStudySession(
       return true;
     }
 
-    // Fire-and-forget Firestore writes — queues offline via persistence.
-    // Each session goes in its own subcollection doc so the parent /progress/{uid}
-    // document doesn't grow unboundedly on heavy users.
-    try {
-      const sessionRef = doc(collection(db, 'progress', uid, 'sessions'), record.id);
-      setDoc(sessionRef, record).catch(err => {
-        console.error('Failed to save study session:', err);
-      });
-      if (totalPoints > 0) {
-        const progressDocRef = doc(db, 'progress', uid);
-        updateDoc(progressDocRef, {
-          'pointsData.totalEarned': increment(totalPoints),
-        }).catch(err => {
-          console.error('Failed to award session points:', err);
-        });
-      }
-    } catch (err) {
-      console.error('Failed to save study session:', err);
-    }
+    // Each session is its own subcollection doc so /progress/{uid} doesn't grow
+    // unboundedly. Not awaited: a student on bad wifi still reaches the
+    // completion screen. The Firestore cache is memory-only, so the record
+    // waits in this tab's outbox until the write is acknowledged; a reload
+    // before then retries it (ProgressContext) instead of losing it.
+    addStudySession(record);
+    void recordStudySession(uid, { record, points: totalPoints }).then(saved => {
+      if (saved) reloadProgress();
+    });
     return true;
-  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress, topicSelection]);
+  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress, topicSelection, addStudySession, reloadProgress]);
 
   // ── Reset to idle ──
 
