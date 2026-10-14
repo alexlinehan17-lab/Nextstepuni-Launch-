@@ -811,6 +811,56 @@
     "english-6-0",
     "english-12-4"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-hudgins-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-hudgins",
+   "label": "Poetry - Hudgins",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-48"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-soto-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-soto",
+   "label": "Poetry - Soto",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-49"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-days-without-end-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-days-without-end",
+   "label": "Text - Days Without End",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-10"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-handmaid-s-tale-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-handmaid-s-tale",
+   "label": "Text - The Handmaid's Tale",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-23"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-tempest-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-tempest",
+   "label": "Text - The Tempest",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-4"
+   ]
   }
  ]
 }

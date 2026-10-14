@@ -5014,7 +5014,7 @@
     "english-2021-ol-p2-single-h-q1-c": {
       "questionSha256": "c62bc1bce4b0cb8d62a472312173c6d7d0000c57eed82331833fb481fa854688",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The printed task offers an explicit closed pool of named subjects, prescribed openings or formal positions. Practise every offered route; supporting examples remain open and all other task requirements are retained.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF41 — “living with either one of his daughters, Goneril or Regan”, at least one way; both are marked on one grid. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -8442,168 +8442,330 @@
     },
     "english-2021-ol-p2-single-a-q1-a": {
       "questionSha256": "6d655ccf55fb6e72eae9fba0e99f06a27a1875995afdfdb46e2b39b0f35ee1bc",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF20 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-a-q1-b": {
       "questionSha256": "5e8ad27575f41716818180cc3c9ae26a488e2b397b37b5a90bd478849a77e3bf",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF20–22: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-a-q1-c": {
       "questionSha256": "00ce7b9e088a27e9be123158f55e7599261bccf9df42de9340eca15cb385993c",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF20–22: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-a-q4": {
       "questionSha256": "c04dfe630644eb524fd13d2d9e12a1cbb3312b603c3c8e381d896e206dbf3836",
       "kind": "required",
-      "reason": "All three recommendation prompts are required. Would/would not allows a reasoned judgement within each prompt; the paper does not require a fixed choice of prompts or a prescribed final position."
+      "reason": "Scheme PDF20–22: “Candidates should use each of the prompts provided” (time and place, characters, overall recommendation) to explain why they would or would not recommend the book. One 35-mark response."
     },
     "english-2021-ol-p2-single-b-q1-a": {
       "questionSha256": "195bfcf53ee4585f3d5b66105f0c6e073871dadcbe0308c84d80379bcbf6a5fc",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF23 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-b-q1-b": {
       "questionSha256": "2afa450a2ae3e0fd74d7b597b7033278ce7089833b8ae165efcf8ffc47442d98",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF23–25: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-b-q1-c": {
       "questionSha256": "ff98a7d31f6872e7131aa94059b1d4d7f8fa60a0f8e3c9a1cc2196649f5cb048",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF23–25: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-b-q4": {
       "questionSha256": "61b5a9d93d1ab16727828d644c38951f0fe53b2a1e5b07fb2f3e861c1ce18e64",
       "kind": "required",
-      "reason": "All three recommendation prompts are required. Would/would not allows a reasoned judgement within each prompt; the paper does not require a fixed choice of prompts or a prescribed final position."
+      "reason": "Scheme PDF23–25: “Candidates should use each of the prompts provided” (time and place, characters, overall recommendation) to explain why they would or would not recommend the book. One 35-mark response."
     },
     "english-2021-ol-p2-single-c-q1-a": {
       "questionSha256": "fcdaab61866d5d5979c7f5c54a4b9114f90aefdf6b4894038645aee371214c9e",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF26 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-c-q1-b": {
       "questionSha256": "47aae84b7b7c3b95ef0d65e72ec59887acd8b29f9a9d9241de1458eb7ae283fe",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF26–28: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-c-q1-c": {
       "questionSha256": "51e42ffa558269834321a88ceb3515da2ae860e853b89d9815f10471c944cb94",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF26–28: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-c-q4": {
       "questionSha256": "df78c6d32c7a359bfa2a87ccb78d7bfd0cbeedd6cf52032ea55de4d7beea29b1",
       "kind": "required",
-      "reason": "All three recommendation prompts are required. Would/would not allows a reasoned judgement within each prompt; the paper does not require a fixed choice of prompts or a prescribed final position."
+      "reason": "Scheme PDF26–28: “Candidates should use each of the prompts provided” (time and place, characters, overall recommendation) to explain why they would or would not recommend the book. One 35-mark response."
     },
     "english-2021-ol-p2-single-d-q1-a": {
       "questionSha256": "9eb55c83bd478bda64c1d0dc88de17397a740e9f02e21434e9ef9f0cd600e365",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF29 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-d-q1-b": {
       "questionSha256": "fbade16241f9dee8861208efec5851564fbf37d4cb7c8c58e636845395964d30",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF29–31: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-d-q1-c": {
       "questionSha256": "50d0093057e26c64798cb7dba9e4b582a6743f96dde9a0afc0d99100cc779bd0",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF29–31: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-d-q4": {
       "questionSha256": "a5a0bd2cadd1862424df2d6d60b09a76cbab5af299e3efa5e44c5892729fcfe2",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF29–31: three props of the candidate’s own, “which may or may not be mentioned in the script”, how each would be used and its significance. One 35-mark response."
     },
     "english-2021-ol-p2-single-e-q1-a": {
       "questionSha256": "549c4ea8cdbe79770aaa35a3a887ad4b333b54a034ecfda5f6d5016ce8dd01b8",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF32 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-e-q1-c": {
       "questionSha256": "17760f42fbb6c7d29b90b8ddadf350a7525727fcc1299502b12186ca78071bb6",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF32–34: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-e-q4": {
       "questionSha256": "7609b0911e2ea5e8a0b949c67187365be82c1c0dacffe243a5aa207e767c4bd3",
       "kind": "required",
-      "reason": "All three recommendation prompts are required. Would/would not allows a reasoned judgement within each prompt; the paper does not require a fixed choice of prompts or a prescribed final position."
+      "reason": "Scheme PDF32–34: “Candidates should use each of the prompts provided” (time and place, characters, overall recommendation) to explain why they would or would not recommend the book. One 35-mark response."
     },
     "english-2021-ol-p2-single-f-q1-a": {
       "questionSha256": "6f32b01934df690ec5ddbb8540789f56bd7337dc18ecb560150dcaec1d84871d",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF35 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-f-q1-c": {
       "questionSha256": "b1b4579da9d6819bddfc1f6bea1622624d9b1fe502a9dd4d449b09ac48d5a975",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF35–37: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-f-q4": {
       "questionSha256": "efa02f1d11c2404c14d437f29f1c0a7d32dcd8f3316ad0ca73e16fae2e8f32c9",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF35–37: three props of the candidate’s own, “which may or may not be mentioned in the script”, how each would be used and its significance. One 35-mark response."
     },
     "english-2021-ol-p2-single-g-q1-a": {
       "questionSha256": "b76f2c8324f18f583fc14ba96bf2ec1c7a0d5f9665a81325dac5f7404889455a",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF38 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-g-q1-b": {
       "questionSha256": "4c648580b029ca4d224b4d03fc9cf819ecdb894cb0c1a0ec3736f43c7545894a",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF38–40: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-g-q1-c": {
       "questionSha256": "0b6e236d0ba18995256c5e598ad01c67cbd297e93af4601b1b5e8ce9406b8824",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF38–40: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-g-q4": {
       "questionSha256": "1b67bf42beb4c14499efa0f264274e31876c66e76514dd6a67da96b7746c824a",
       "kind": "required",
-      "reason": "All three recommendation prompts are required. Would/would not allows a reasoned judgement within each prompt; the paper does not require a fixed choice of prompts or a prescribed final position."
+      "reason": "Scheme PDF38–40: “Candidates should use each of the prompts provided” (time and place, characters, overall recommendation) to explain why they would or would not recommend the book. One 35-mark response."
     },
     "english-2021-ol-p2-single-h-q1-a": {
       "questionSha256": "7920f70a68f04a3eaa357bdc3991649a866ac4b11f690d789e0fbdc5197e84d7",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF41 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-h-q1-b": {
       "questionSha256": "f23f73955071245755ade52097348a15806a87266e78d0fee1c6b7f37b31577b",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF41–43: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-h-q4": {
       "questionSha256": "fab0cc8ea04f9825108c08d5f2829a7c96d54ae5ac07b3312d6022c7e5e62759",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF41–43: three props of the candidate’s own, “which may or may not be mentioned in the script”, how each would be used and its significance. One 35-mark response."
     },
     "english-2021-ol-p2-single-i-q1-a": {
       "questionSha256": "cc0d76fd1d264ce5feccb878e399dd49f9dc8ba38624529fb7ac494ad9e05d6a",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "printed-choice",
+      "printedChoices": 2,
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF44 — “the most appealing or the least appealing aspect” of the character; “Aspects … which may/may not appeal” form one indicative list and both directions are marked on one grid. One 10-mark response.",
+      "pools": [
+        {
+          "id": "selection",
+          "label": "Selected direction",
+          "take": 1,
+          "options": [
+            {
+              "id": "1",
+              "text": "The most appealing aspect"
+            },
+            {
+              "id": "2",
+              "text": "The least appealing aspect"
+            }
+          ]
+        }
+      ]
     },
     "english-2021-ol-p2-single-i-q1-b": {
       "questionSha256": "763e8476c2d171ffda3cbc535c4dd227ee344aed225a8c5c1a5d136ee8a25430",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF44–46: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
     },
     "english-2021-ol-p2-single-i-q1-c": {
       "questionSha256": "09fbe6dbd13e641eb92282d43c1feef93d3a85c13eeabaf677d64db5bded1c71",
       "kind": "flexible",
-      "reason": "The paper sets a minimum amount of evidence, not a fixed-size choice from a printed list. The student chooses examples or characters from the studied work."
+      "reason": "Scheme PDF44–46: “at least one way” the printed circumstance affected or showed the character — a flexible minimum. One 15-mark response."
     },
     "english-2021-ol-p2-single-i-q4": {
       "questionSha256": "319aadd36da71242a2852dd34045b7abec653f7c31c350c31704c477a919e7af",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF44–46: three props of the candidate’s own, “which may or may not be mentioned in the script”, how each would be used and its significance. One 35-mark response."
     },
     "english-2022-hl-p2-single-a-i": {
       "questionSha256": "a53790651f0ce0aa6a26af32ebd31a03a6d9b7a88360ce4280cb88f629bedcd6",
@@ -10969,7 +11131,7 @@
     "english-2021-ol-p2-prescribed-b-q2-i": {
       "questionSha256": "8d2d70e79b3dc952eaf42de5ff49c079717f69e68ddab670ed84edd277e357b7",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF57 — why the candidate would or would not choose the poem for “a dramatic scene or short film”; both are marked on one grid. One 20-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -10992,7 +11154,7 @@
     "english-2021-ol-p2-prescribed-c-q2-i": {
       "questionSha256": "a38aa7737600237ab2193a55f89fe5d31b008d2964f9945f816eda3d06e8a6b7",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF59 — why the candidate would or would not choose the poem for “a dramatic scene or short film”; both are marked on one grid. One 20-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -11015,7 +11177,7 @@
     "english-2021-ol-p2-prescribed-d-q2-i": {
       "questionSha256": "8aac42baf498ec85415657576e98ffcedf445adaf90a42bcce61df83991e3401",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF61 — why the candidate would or would not choose the poem for “a dramatic scene or short film”; both are marked on one grid. One 20-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -11864,88 +12026,88 @@
     },
     "english-2021-ol-p2-prescribed-a-q1-a": {
       "questionSha256": "0204092fbd270ead3f52115e6e3745e3fc3dd3a1d4cbb2bb0a14b12eed27eb2f",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF55–56: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
     },
     "english-2021-ol-p2-prescribed-a-q2-i": {
       "questionSha256": "75e759130184f3776b0ecb9416b7dcd7f88ad0dc0bee86cc01c3831160f37710",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF55–56: why the candidate would or would not choose the poem for a picture — one judgement. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-a-q2-ii": {
       "questionSha256": "7485ce4ce0da4ce8b1506cd72607f7a8c21e870d911e6e3e74fb83b2949eacdb",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF55–56: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-a-q2-iii": {
       "questionSha256": "085cb7dda516d14939664d6949961c02124d8b2fadcc059d143f33e08089ed55",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF55–56: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-b-q1-b": {
       "questionSha256": "e68ed022ad4b12f35086646622b3aff4f1c66ccf8759b819d537dc757c142a81",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF57–58: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
     },
     "english-2021-ol-p2-prescribed-b-q2-ii": {
       "questionSha256": "18264e51a4530ffd292d6dc8b8740245fead51ab1df015faea89a96827b692c0",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF57–58: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-b-q2-iii": {
       "questionSha256": "49213e464288420d82bc78845cbd1fd258f8ae021e419fdbb529781427484ccb",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF57–58: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-c-q2-ii": {
       "questionSha256": "0dbb35b1bdc5b097c606488d2b67ddea7c02dc79b3752e8c6a73747712a64cc0",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF59–60: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-c-q2-iii": {
       "questionSha256": "7797f479b520f47a88b4e8e18f0f30ec0f590a142b9d1aec4175d8339224dcc7",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF59–60: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-d-q2-ii": {
       "questionSha256": "5d44a9b645d6efef68d048b9fdadc787182d25fbacb0b6af8953e76992d587f3",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF61–62: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-d-q2-iii": {
       "questionSha256": "c109b2d80ec8c6b9f665d0dd37d45e078812930071f246dd9bc2f4080e2d0c28",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF61–62: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-e-q2-i": {
       "questionSha256": "f2d98fd8cf2f464b98405f5a8df3df2c355f398d422bbce84b6fcacd0597115c",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF63–64: why the candidate would or would not choose the poem for a picture — one judgement. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-e-q2-ii": {
       "questionSha256": "549debb3352be5d094e231c2070c1ce918e8489d393fbcdd7e940f2f6506598c",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF63–64: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-e-q2-iii": {
       "questionSha256": "b51e37a8a3d484535ff9187afc48112f229774f5167405d2e3a11b5b55517ba6",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool. Exact question text repaired after visual verification of the official paper; selection meaning unchanged."
+      "kind": "open",
+      "reason": "Scheme PDF63–64: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-f-q2-i": {
       "questionSha256": "d290c38c350a5aac4077fd9f6ee7635dcfb22ae27cf61bb4f195c124a666dbf5",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF65–66: why the candidate would or would not choose the poem for a picture — one judgement. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-f-q2-ii": {
       "questionSha256": "6be0c7569e60a27975ce12a07b9ecb19e91c3d16d371c23d2f0e59e9286d8d13",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF65–66: whether the poet uses language effectively for the printed purpose — one graded judgement. One 20-mark response."
     },
     "english-2021-ol-p2-prescribed-f-q2-iii": {
       "questionSha256": "0f59df5d0b0a646173c7797176c467d062bd441dcf592fd3926786130060e6ef",
-      "kind": "context",
-      "reason": "The selection-looking wording is a quotation, ordinary relative/temporal prose or synonymous descriptions. It does not introduce a fixed named answer pool."
+      "kind": "open",
+      "reason": "Scheme PDF65–66: why the candidate would or would not include the poem in the printed collection — one judgement. One 20-mark response."
     },
     "english-2022-hl-p2-prescribed-1": {
       "questionSha256": "f6142c49dec4db3b6dc483b31af8196244e3d6e1a39b5d787fb0dcd30575491b",
@@ -13512,82 +13674,82 @@
     "english-2021-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "7c7dee5fa90e588ed4242cf8f6524a67c7063a010b778850bde3b24fab4529ad",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF48: one aspect of the social setting that makes the world of the text more or less appealing than the candidate’s own, and why — one judgement. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-a-q1-a-ii": {
       "questionSha256": "6f3c8c2be30fc9d2754514d91a961ff2b9d5b87f80fae9c3eb00d82dfe732c96",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF48: one aspect of the social setting that makes the world of the text more or less appealing than the candidate’s own, and why — one judgement. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-a-q2-a-i": {
       "questionSha256": "27dca91152193e1b75d11a146abdbb46ed0678630ed28aac8579cba4f21f1e3d",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF49: a character powerful or successful in the world of the text; “at least one key moment” to demonstrate it. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-a-q2-a-ii": {
       "questionSha256": "d4ce1d830fd3450e8e632bb79a0fe0ee31cf4b4efb66e2407d4f3cbd67da577d",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF49: a character powerful or successful in the world of the text; “at least one key moment” to demonstrate it. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-b-q1-a-i": {
       "questionSha256": "6d8ca0f23070118aeba7ccd85df67e38755cb2271a04e746afd9ae51a5e0828d",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF50: whether respect was or was not evident in an important relationship — one judgement. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-b-q1-a-ii": {
       "questionSha256": "9567a138e0acdfc0f4b685e0c3d7528589566df27f6a9f2836cfc7d986972c92",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF50: whether respect was or was not evident in an important relationship — one judgement. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-b-q1-b": {
       "questionSha256": "d0c7f86dcf40affd5965b9445187d3a900cc29511a6af102201eafd20ba85107",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF50–51: one relationship in each of at least two texts; how realistic or unrealistic they were, compared. One 40-mark comparison."
     },
     "english-2021-ol-p2-comparative-b-q2-a-i": {
       "questionSha256": "2494e752307b2d7c0542efa0aacdaa0a927a07da46f4f9abadf8efca7bbfda0a",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF51: “at least one reason” why a relationship improved or deteriorated over the course of the text. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-b-q2-a-ii": {
       "questionSha256": "b28225e2fa7d01ef7039bb505fb1b4ed9880fb18cc627bef58d261b98f33365a",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF51: “at least one reason” why a relationship improved or deteriorated over the course of the text. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-b-q2-b": {
       "questionSha256": "d0c7f86dcf40affd5965b9445187d3a900cc29511a6af102201eafd20ba85107",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF50–51: one relationship in each of at least two texts; how realistic or unrealistic they were, compared. One 40-mark comparison."
     },
     "english-2021-ol-p2-comparative-c-q1-a-i": {
       "questionSha256": "effb0e19dd0cde9ea1ffdec1aa33fe9e5083fc03c809e2324e31c32ff0090e41",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF52: “at least one reason” why the candidate would or would not recommend the text for studying the theme. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-c-q1-a-ii": {
       "questionSha256": "4e54398e7a64b612879b1497301be674c5e9ce678e0604cd5661b1d85b7194f6",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF52: “at least one reason” why the candidate would or would not recommend the text for studying the theme. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-c-q1-b": {
       "questionSha256": "0c82aa545fa3855515f37511490ab13f11a5df429780abaf30ab963d8fdb109c",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF52–53: at least two texts; the lessons learned about the same theme as part (a), compared. One 40-mark comparison."
     },
     "english-2021-ol-p2-comparative-c-q2-a-i": {
       "questionSha256": "dce5b9487ccc61107dc460cd81ec54b876e1f7679652a43e79aafad691a1e2bb",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF53: one central character and “one or more key moments” showing their contribution to the theme. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-c-q2-a-ii": {
       "questionSha256": "d80a28d126b3f12932015822738f2a3d43cb774475c3d06a0a27733c7de85fa3",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF53: one central character and “one or more key moments” showing their contribution to the theme. One 15-mark response."
     },
     "english-2021-ol-p2-comparative-c-q2-b": {
       "questionSha256": "0c82aa545fa3855515f37511490ab13f11a5df429780abaf30ab963d8fdb109c",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF52–53: at least two texts; the lessons learned about the same theme as part (a), compared. One 40-mark comparison."
     },
     "english-2022-hl-p2-comparative-a-q1-b": {
       "questionSha256": "0958c3a4494123bbebcb204f3109f231f1ef3115e75bfc3eb5cf246aeb6991ab",
@@ -17288,6 +17450,176 @@
       "questionSha256": "f75f3f034c3ba7d03623347b164b6da68fede080b89ba049b0bb99be07a6ce66",
       "kind": "open",
       "reason": "Scheme PDF9: the atmosphere among the supporters in IMAGE 3. One 10-mark response."
+    },
+    "english-2021-ol-p2-single-a-q2": {
+      "questionSha256": "211196246357a52f04646d3307882db7da8daf9cfb77b534868bb330518d9062",
+      "kind": "open",
+      "reason": "Scheme PDF20–22: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-a-q3": {
+      "questionSha256": "cafa9d958b063676d261a889eaf1d24afad5f1cdd43035f199e192eee780e11e",
+      "kind": "open",
+      "reason": "Scheme PDF20–22: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-b-q2": {
+      "questionSha256": "4b1d20eda443923176110bbe3e16801a2ed76b6f01a41f9f971973731ae825e7",
+      "kind": "open",
+      "reason": "Scheme PDF23–25: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-b-q3": {
+      "questionSha256": "54bf2afeb81538f85a6a9cf7e6bf92400c10973768b3e97c6fb41e673c3ee18d",
+      "kind": "open",
+      "reason": "Scheme PDF23–25: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-c-q2": {
+      "questionSha256": "9479975593de80987c051de9f8901f040c8394e918dd269a0c41cc2bc6cd4b54",
+      "kind": "open",
+      "reason": "Scheme PDF26–28: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-c-q3": {
+      "questionSha256": "263f5d1949f830e0f24427eb4f71191c9f04acef775707d62e36c793340fc910",
+      "kind": "open",
+      "reason": "Scheme PDF26–28: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-d-q2": {
+      "questionSha256": "3873e50b162ce38bd3a571694ac6b4122caebdaed7b65ef9ca7b620e61098915",
+      "kind": "open",
+      "reason": "Scheme PDF29–31: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-d-q3": {
+      "questionSha256": "31cca3e87e3fa76df3636bc93f465c52c9192f4f143f2002f558c5ddfa9e268c",
+      "kind": "open",
+      "reason": "Scheme PDF29–31: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-e-q1-b": {
+      "questionSha256": "2cb6dc86bef4998712dcc36005f147ed681fa8e796f091814bec8765fb14e1e4",
+      "kind": "open",
+      "reason": "Scheme PDF32–34: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
+    },
+    "english-2021-ol-p2-single-e-q2": {
+      "questionSha256": "9ecfad9f2c8325b80ed78a7ab2574c59ea8ca00ca79aa70ae8c82334a2f7e7fc",
+      "kind": "open",
+      "reason": "Scheme PDF32–34: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-e-q3": {
+      "questionSha256": "a6ba237fd25966e4251b30003a5f39edc0f62324bd4405d49147232137802286",
+      "kind": "open",
+      "reason": "Scheme PDF32–34: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-f-q1-b": {
+      "questionSha256": "960a890c892632e9e44f86f6513b56bb2ba727626d01acc51b96ea48ee7745f6",
+      "kind": "open",
+      "reason": "Scheme PDF35–37: the decision the candidate thinks most important (Room and Philadelphia: most difficult), and why it was a good or bad (difficult) decision — one reasoned judgement. One 10-mark response."
+    },
+    "english-2021-ol-p2-single-f-q2": {
+      "questionSha256": "94775b9b6c99c42119ce9946a9eeb7a851c0e2b7a78238ba7d2bc480de119af5",
+      "kind": "open",
+      "reason": "Scheme PDF35–37: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-f-q3": {
+      "questionSha256": "cdfdb843d9c7d2fc9c3ca0e169028fc4e48940cd9ecbe4236e8f91312104f2b9",
+      "kind": "open",
+      "reason": "Scheme PDF35–37: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-g-q2": {
+      "questionSha256": "58620375bce39e0b6de6997b356895434f2e222ab90a8eb3276ecf65f22eecc3",
+      "kind": "open",
+      "reason": "Scheme PDF38–40: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-g-q3": {
+      "questionSha256": "8f27822572d8ecea23e86c39fd57d38184a6aaed00c5674557f3de176488aed8",
+      "kind": "open",
+      "reason": "Scheme PDF38–40: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-h-q2": {
+      "questionSha256": "354e9f0439cc03042186778a5b2846af9e976758f04192d83c7e880abff329de",
+      "kind": "open",
+      "reason": "Scheme PDF41–43: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-h-q3": {
+      "questionSha256": "095d8842a10dfddbec5fae308ca46e8696d6295a0f1724760a13d6619d0cb286",
+      "kind": "open",
+      "reason": "Scheme PDF41–43: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-i-q2": {
+      "questionSha256": "486c11d7f5a94137aaca0ce3ee2fef57615a4ecb4254d8a523bd9f714076eaf7",
+      "kind": "open",
+      "reason": "Scheme PDF44–46: three points of the candidate’s own on what they learned about the printed theme; the indicative material is not a pool. One 35-mark response."
+    },
+    "english-2021-ol-p2-single-i-q3": {
+      "questionSha256": "96bebf958742af0cc5a45848c643c770b16df30f4d07991fb75db7564e5ea078",
+      "kind": "open",
+      "reason": "Scheme PDF44–46: an account in the printed character’s persona, demonstrating knowledge of the text. One 35-mark response."
+    },
+    "english-2021-ol-p2-comparative-a-q1-b": {
+      "questionSha256": "ca56dc7e37d739457245605718f695641efb18a593662166c150c9859c411e8a",
+      "kind": "flexible",
+      "reason": "Scheme PDF48–49: at least two texts; what the candidate found most fascinating about each social setting, compared. One 40-mark comparison."
+    },
+    "english-2021-ol-p2-comparative-a-q2-b": {
+      "questionSha256": "ca56dc7e37d739457245605718f695641efb18a593662166c150c9859c411e8a",
+      "kind": "flexible",
+      "reason": "Scheme PDF48–49: at least two texts; what the candidate found most fascinating about each social setting, compared. One 40-mark comparison."
+    },
+    "english-2021-ol-p2-unseen-q1": {
+      "questionSha256": "36abc17c028e15be8c0687373aac037cefda64cd0acab3f1188eacecacaa7999",
+      "kind": "open",
+      "reason": "Scheme PDF54: the impression of cats the candidate forms from the poem. One 10-mark response."
+    },
+    "english-2021-ol-p2-unseen-q2": {
+      "questionSha256": "1acd33ee6d5fada7c1bf877f4b5fab8f73f80e34866905aee500a1cdbe546210",
+      "kind": "open",
+      "reason": "Scheme PDF54: the poet’s opinion of dogs in the final stanza. One 10-mark response."
+    },
+    "english-2021-ol-p2-prescribed-a-q1-b": {
+      "questionSha256": "cff20d58e241b6b3891993d8525506523e4585034cbf7ff8701d90ca84b31631",
+      "kind": "open",
+      "reason": "Scheme PDF55–56: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-b-q1-a": {
+      "questionSha256": "586019e43b2bd7322395befbc2719a3e495db05ffbfecc1f569329f2c2995b33",
+      "kind": "open",
+      "reason": "Scheme PDF57–58: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-c-q1-a": {
+      "questionSha256": "586019e43b2bd7322395befbc2719a3e495db05ffbfecc1f569329f2c2995b33",
+      "kind": "open",
+      "reason": "Scheme PDF59–60: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-c-q1-b": {
+      "questionSha256": "cff20d58e241b6b3891993d8525506523e4585034cbf7ff8701d90ca84b31631",
+      "kind": "open",
+      "reason": "Scheme PDF59–60: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-d-q1-a": {
+      "questionSha256": "b3b6e039c01b413320baaa07a5b435639b9a1d39fa7da16d9bd969f48480c455",
+      "kind": "open",
+      "reason": "Scheme PDF61–62: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-d-q1-b": {
+      "questionSha256": "c83f6a54d141d9d925dd2890120b3696f4d583330da3efb19742ad2717452e67",
+      "kind": "open",
+      "reason": "Scheme PDF61–62: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-e-q1-a": {
+      "questionSha256": "70339dd5c824c80261340e917175d5605020784c023d1c260c4b90e25682489b",
+      "kind": "open",
+      "reason": "Scheme PDF63–64: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-e-q1-b": {
+      "questionSha256": "40d0171b335e6b336f8c1852d45290de1e2f4a5df679ff60f25d19b4e559b2f8",
+      "kind": "open",
+      "reason": "Scheme PDF63–64: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-f-q1-a": {
+      "questionSha256": "e3f48a828e0be567bfb9938f98d709902bab928c370c862f92c2dbfc2efd150b",
+      "kind": "open",
+      "reason": "Scheme PDF65–66: the candidate’s impression (Poem A: the message or messages; Poem F: how the final stanza differs), supported from the poem. One 15-mark response."
+    },
+    "english-2021-ol-p2-prescribed-f-q1-b": {
+      "questionSha256": "cff20d58e241b6b3891993d8525506523e4585034cbf7ff8701d90ca84b31631",
+      "kind": "open",
+      "reason": "Scheme PDF65–66: “whether or not” the candidate finds the poem uplifting, amusing or disturbing, as printed — one explained judgement. One 15-mark response."
     }
   }
 }

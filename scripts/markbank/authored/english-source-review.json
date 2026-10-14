@@ -4670,6 +4670,28 @@
       "paperSha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
       "questionSha256": "b02f88f3023c74621168abf2a5ad395ee2fe1459c9b82595ce51d709ee898d2d",
       "reason": "Self-contained: the importance of music in the candidate’s own life. Scheme PDF10 never refers to TEXT 3."
+    },
+    "english-2021-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Language of Cat",
+      "pages": [
+        14
+      ],
+      "attribution": "The Language of Cat — Rachel Rooney, as reproduced in the SEC 2021 paper.",
+      "questionSha256": "36abc17c028e15be8c0687373aac037cefda64cd0acab3f1188eacecacaa7999",
+      "reason": "Paper PDF14 prints the introduction (the poet explores the behaviour and attitude of cats), the instruction to read the poem twice, the title, all four stanzas and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
+    },
+    "english-2021-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Language of Cat",
+      "pages": [
+        14
+      ],
+      "attribution": "The Language of Cat — Rachel Rooney, as reproduced in the SEC 2021 paper.",
+      "questionSha256": "1acd33ee6d5fada7c1bf877f4b5fab8f73f80e34866905aee500a1cdbe546210",
+      "reason": "Paper PDF14 prints the introduction (the poet explores the behaviour and attitude of cats), the instruction to read the poem twice, the title, all four stanzas and the byline above both questions; visually verified. PDF15 begins Prescribed Poem A and is excluded; the generic “Unseen poem” title is replaced."
     }
   }
 }

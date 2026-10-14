@@ -267,7 +267,10 @@ def locate_scheme_cards(cards, paper, scheme, year):
         # so the detector started Comparative B at its Q1(b) on PDF41 and
         # Comparative A's crop swallowed B's Q1(a)(i)/(ii) (viewed 2026-10-11).
         2018: {"Poetry C": (47, 0.0892), "Comparative B": (39, 0.4038)},
-        2021: {"Single Text G": (37, 0.0888)},
+        # 2021: "E JUNGIAN COWS" heads PDF63 (y 0.0893); matching began E at
+        # its Q2(ii) on PDF64, so A Constable Calls swallowed E's Q1 and Q2(i)
+        # (viewed 2026-10-14).
+        2021: {"Single Text G": (37, 0.0888), "Poetry E": (62, 0.0893)},
         # 2025: "F THE COVE" sits at y 0.3074 on PDF38; matching began inside
         # its Q1(a) indicative list, so The Crucible's crop swallowed The
         # Cove's heading and Q1(a) (viewed 2026-10-12).

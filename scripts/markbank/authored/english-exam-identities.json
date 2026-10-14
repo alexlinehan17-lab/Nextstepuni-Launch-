@@ -2496,7 +2496,10 @@
       "observedHeading": "Poetry A · This Moment",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
-      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        15
+      ]
     },
     "english-2021-ol-p2-prescribed-b": {
       "topicId": "english-11-48",
@@ -2505,7 +2508,10 @@
       "observedHeading": "Poetry B · The Glass Hammer",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
-      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2021-ol-p2-prescribed-c": {
       "topicId": "english-11-49",
@@ -2514,7 +2520,10 @@
       "observedHeading": "Poetry C · Oranges",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
-      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2021-ol-p2-prescribed-d": {
       "topicId": "english-11-8",
@@ -2523,7 +2532,10 @@
       "observedHeading": "Poetry D · A Constable Calls",
       "paperPage": 18,
       "source": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
-      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc"
+      "sourceSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+      "sourcePages": [
+        18
+      ]
     },
     "english-2021-ol-p2-prescribed-e": {
       "topicId": "english-11-43",

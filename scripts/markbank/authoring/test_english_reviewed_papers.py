@@ -802,7 +802,11 @@ class EnglishPrintedChoiceCollapseTest(unittest.TestCase):
         kinds = {decision['kind'] for decision in self.decisions.values()}
         self.assertNotIn('finite', kinds)
         printed = [d for d in self.decisions.values() if d['kind'] == 'printed-choice']
-        self.assertEqual(len(printed), 221)
+        # 221 former finite decisions were collapsed; later reviews add their own printed choices
+        # (e.g. 2021 OL P2 Single Text Q1(a) “most or least appealing”, nine).
+        self.assertGreaterEqual(len(printed), 221)
+        self.assertEqual(sum(1 for k, d in self.decisions.items()
+                             if k.startswith('english-2021-ol-p2-single-') and k.endswith('-q1-a') and d['kind'] == 'printed-choice'), 9)
         self.assertTrue(all(d['printedChoices'] >= 2 and 'expectedRoutes' not in d for d in printed))
         self.assertTrue(all(d['reason'].startswith('One card (coordinator rule, 2026-10-12)') for d in printed))
 
@@ -894,6 +898,7 @@ class EnglishPrintedLabelsTest(unittest.TestCase):
         self.assertEqual(scheme(2024, '12'), {'p': 47, 'r': [0.0, 0.2239, 1.0, 1.0]})
         self.assertEqual(scheme(2023, '11'), {'p': 45, 'r': [0.0, 0.2293, 1.0, 1.0]})
         self.assertEqual(scheme(2023, '12'), {'p': 47, 'r': [0.0, 0.2922, 1.0, 1.0]})
+        self.assertEqual(scheme(2021, '12'), {'p': 63, 'r': [0.0, 0.0893, 1.0, 1.0]})
 
 
 if __name__ == '__main__':

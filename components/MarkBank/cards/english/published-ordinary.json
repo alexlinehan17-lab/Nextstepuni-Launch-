@@ -125,6 +125,17 @@
    "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b"
   },
   {
+   "paperId": "english-2021-ol-p2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 104,
+   "cards": 101,
+   "printedDuplicates": 3,
+   "paperSha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+   "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1528,6 +1539,7 @@
  "legacyAdditionalSources": {},
  "bridgedPapers": [
   "english-2021-ol-p1",
+  "english-2021-ol-p2",
   "english-2022-ol-p1",
   "english-2022-ol-p2",
   "english-2023-ol-p1",
@@ -1560,6 +1572,74 @@
   "english-2021-ol-p1-t3-a-iii-a",
   "english-2021-ol-p1-t3-a-iii-b",
   "english-2021-ol-p1-t3-b",
+  "english-2021-ol-p2-comparative-a-q1",
+  "english-2021-ol-p2-comparative-a-q2",
+  "english-2021-ol-p2-comparative-b-q1",
+  "english-2021-ol-p2-comparative-b-q2",
+  "english-2021-ol-p2-comparative-c-q1",
+  "english-2021-ol-p2-comparative-c-q2",
+  "english-2021-ol-p2-prescribed-a-q1",
+  "english-2021-ol-p2-prescribed-a-q2-i",
+  "english-2021-ol-p2-prescribed-a-q2-ii",
+  "english-2021-ol-p2-prescribed-a-q2-iii",
+  "english-2021-ol-p2-prescribed-b-q1",
+  "english-2021-ol-p2-prescribed-b-q2-i",
+  "english-2021-ol-p2-prescribed-b-q2-ii",
+  "english-2021-ol-p2-prescribed-b-q2-iii",
+  "english-2021-ol-p2-prescribed-c-q1",
+  "english-2021-ol-p2-prescribed-c-q2-i",
+  "english-2021-ol-p2-prescribed-c-q2-ii",
+  "english-2021-ol-p2-prescribed-c-q2-iii",
+  "english-2021-ol-p2-prescribed-d-q1",
+  "english-2021-ol-p2-prescribed-d-q2-i",
+  "english-2021-ol-p2-prescribed-d-q2-ii",
+  "english-2021-ol-p2-prescribed-d-q2-iii",
+  "english-2021-ol-p2-prescribed-e-q1",
+  "english-2021-ol-p2-prescribed-e-q2-i",
+  "english-2021-ol-p2-prescribed-e-q2-ii",
+  "english-2021-ol-p2-prescribed-e-q2-iii",
+  "english-2021-ol-p2-prescribed-f-q1",
+  "english-2021-ol-p2-prescribed-f-q2-i",
+  "english-2021-ol-p2-prescribed-f-q2-ii",
+  "english-2021-ol-p2-prescribed-f-q2-iii",
+  "english-2021-ol-p2-single-a-q1",
+  "english-2021-ol-p2-single-a-q2",
+  "english-2021-ol-p2-single-a-q3",
+  "english-2021-ol-p2-single-a-q4",
+  "english-2021-ol-p2-single-b-q1",
+  "english-2021-ol-p2-single-b-q2",
+  "english-2021-ol-p2-single-b-q3",
+  "english-2021-ol-p2-single-b-q4",
+  "english-2021-ol-p2-single-c-q1",
+  "english-2021-ol-p2-single-c-q2",
+  "english-2021-ol-p2-single-c-q3",
+  "english-2021-ol-p2-single-c-q4",
+  "english-2021-ol-p2-single-d-q1",
+  "english-2021-ol-p2-single-d-q2",
+  "english-2021-ol-p2-single-d-q3",
+  "english-2021-ol-p2-single-d-q4",
+  "english-2021-ol-p2-single-e-q1",
+  "english-2021-ol-p2-single-e-q2",
+  "english-2021-ol-p2-single-e-q3",
+  "english-2021-ol-p2-single-e-q4",
+  "english-2021-ol-p2-single-f-q1",
+  "english-2021-ol-p2-single-f-q2",
+  "english-2021-ol-p2-single-f-q3",
+  "english-2021-ol-p2-single-f-q4",
+  "english-2021-ol-p2-single-g-q1",
+  "english-2021-ol-p2-single-g-q2",
+  "english-2021-ol-p2-single-g-q3",
+  "english-2021-ol-p2-single-g-q4",
+  "english-2021-ol-p2-single-h-q1",
+  "english-2021-ol-p2-single-h-q2",
+  "english-2021-ol-p2-single-h-q3",
+  "english-2021-ol-p2-single-h-q4",
+  "english-2021-ol-p2-single-i-q1",
+  "english-2021-ol-p2-single-i-q2",
+  "english-2021-ol-p2-single-i-q3",
+  "english-2021-ol-p2-single-i-q4",
+  "english-2021-ol-p2-unseen-q1",
+  "english-2021-ol-p2-unseen-q2",
   "english-2022-ol-p1-composing-1",
   "english-2022-ol-p1-composing-2",
   "english-2022-ol-p1-composing-3",
@@ -1912,6 +1992,27 @@
   "english-2025-ol-p2-unseen-q2"
  ],
  "bridgeAliases": {
+  "english-2021-ol-p2-comparative-a-q1": "english-2021-ol-p2-comparative-a-q1-a-i",
+  "english-2021-ol-p2-comparative-a-q2": "english-2021-ol-p2-comparative-a-q2-a-i",
+  "english-2021-ol-p2-comparative-b-q1": "english-2021-ol-p2-comparative-b-q1-a-i",
+  "english-2021-ol-p2-comparative-b-q2": "english-2021-ol-p2-comparative-b-q2-a-i",
+  "english-2021-ol-p2-comparative-c-q1": "english-2021-ol-p2-comparative-c-q1-a-i",
+  "english-2021-ol-p2-comparative-c-q2": "english-2021-ol-p2-comparative-c-q2-a-i",
+  "english-2021-ol-p2-prescribed-a-q1": "english-2021-ol-p2-prescribed-a-q1-a",
+  "english-2021-ol-p2-prescribed-b-q1": "english-2021-ol-p2-prescribed-b-q1-a",
+  "english-2021-ol-p2-prescribed-c-q1": "english-2021-ol-p2-prescribed-c-q1-a",
+  "english-2021-ol-p2-prescribed-d-q1": "english-2021-ol-p2-prescribed-d-q1-a",
+  "english-2021-ol-p2-prescribed-e-q1": "english-2021-ol-p2-prescribed-e-q1-a",
+  "english-2021-ol-p2-prescribed-f-q1": "english-2021-ol-p2-prescribed-f-q1-a",
+  "english-2021-ol-p2-single-a-q1": "english-2021-ol-p2-single-a-q1-a",
+  "english-2021-ol-p2-single-b-q1": "english-2021-ol-p2-single-b-q1-a",
+  "english-2021-ol-p2-single-c-q1": "english-2021-ol-p2-single-c-q1-a",
+  "english-2021-ol-p2-single-d-q1": "english-2021-ol-p2-single-d-q1-a",
+  "english-2021-ol-p2-single-e-q1": "english-2021-ol-p2-single-e-q1-a",
+  "english-2021-ol-p2-single-f-q1": "english-2021-ol-p2-single-f-q1-a",
+  "english-2021-ol-p2-single-g-q1": "english-2021-ol-p2-single-g-q1-a",
+  "english-2021-ol-p2-single-h-q1": "english-2021-ol-p2-single-h-q1-a",
+  "english-2021-ol-p2-single-i-q1": "english-2021-ol-p2-single-i-q1-a",
   "english-2022-ol-p1-t2-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
   "english-2022-ol-p1-t2-a-iii-b": "english-2022-ol-p1-t1-a-iii-b",
   "english-2022-ol-p1-t3-a-iii-a": "english-2022-ol-p1-t1-a-iii-a",
@@ -2007,7 +2108,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1426,
+ "cardCount": 1527,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -25422,6 +25523,3749 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Based on your study of Margaret Atwood’s novel, The Handmaid’s Tale, explain what you found to be the most appealing or the least appealing aspect of Offred’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Identify what you think is the most important decision Offred made during the course of the novel. Explain why you think the decision she made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q1(c)",
+   "questionText": "Explain at least one way in which Offred demonstrated her independence while living in the Commander’s house. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q2",
+   "questionText": "Explain what you learned about courage from your study of Margaret Atwood’s novel, The Handmaid’s Tale. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q3",
+   "questionText": "Imagine you are the Commander in Margaret Atwood’s novel, The Handmaid’s Tale. Write an account of what life was like in Gilead from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-a-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text A Q4",
+   "questionText": "A friend of yours is going on a long journey and has asked whether you would or would not recommend Margaret Atwood’s novel, The Handmaid’s Tale, as a fascinating read to pass the time. Using each of the following prompts, explain to your friend why you would or would not recommend this book. - I think you would/would not find the time and place in which this novel is set fascinating because … - I think you would/would not find the characters in the novel fascinating because … - Overall, I do/do not recommend you take this novel with you on your journey because … Support your response with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    21,
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Based on your study of Sebastian Barry’s novel, Days Without End, explain what you found to be the most appealing or the least appealing aspect of Thomas McNulty’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Identify what you think is the most important decision Thomas McNulty made during the course of the novel. Explain why you think the decision he made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q1(c)",
+   "questionText": "Explain at least one way in which joining the army affected Thomas McNulty. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q2",
+   "questionText": "Explain what you learned about courage from your study of Sebastian Barry’s novel, Days Without End. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q3",
+   "questionText": "Imagine you are Winona in Sebastian Barry’s novel, Days Without End. Write an account of what your life with John Cole and Thomas McNulty was like from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-b-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text B Q4",
+   "questionText": "A friend of yours is going on a long journey and has asked whether you would or would not recommend Sebastian Barry’s novel, Days Without End, as a fascinating read to pass the time. Using each of the following prompts, explain to your friend why you would or would not recommend this book. - I think you would/would not find the time and place in which this novel is set fascinating because … - I think you would/would not find the characters in the novel fascinating because … - Overall, I do/do not recommend you take this novel with you on your journey because … Support your response with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    24,
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Based on your study of Emily Brontë’s novel, Wuthering Heights, explain what you found to be the most appealing or the least appealing aspect of Heathcliff’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Identify what you think is the most important decision Heathcliff made during the course of the novel. Explain why you think the decision he made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q1(c)",
+   "questionText": "Explain at least one way in which living in the Earnshaw household as a child affected Heathcliff. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q2",
+   "questionText": "Explain what you learned about love from your study of Emily Brontë’s novel, Wuthering Heights. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q3",
+   "questionText": "Imagine you are Isabella Linton in Emily Brontë’s novel, Wuthering Heights. Write an account of what your life with Heathcliff was like from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-c-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text C Q4",
+   "questionText": "A friend of yours is going on a long journey and has asked whether you would or would not recommend Emily Brontë’s novel, Wuthering Heights as a fascinating read to pass the time. Using each of the following prompts, explain to your friend why you would or would not recommend this book. - I think you would/would not find the time and place in which this novel is set fascinating because … - I think you would/would not find the characters in the novel fascinating because… - Overall, I do/do not recommend you take this novel with you on your journey because … Support your response with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-30",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Wuthering Heights (Emily Brontë)",
+   "schemePages": [
+    27,
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Based on your study of Marina Carr’s play, By the Bog of Cats, explain what you found to be the most appealing or the least appealing aspect of Hester Swane’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Identify what you think is the most important decision Hester made during the course of the play. Explain why you think the decision she made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q1(c)",
+   "questionText": "Explain at least one way in which Carthage’s marriage to Caroline affected Hester. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q2",
+   "questionText": "Explain what you learned about love from your study of Marina Carr’s play, By the Bog of Cats. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q3",
+   "questionText": "Imagine you are Caroline Cassidy in Marina Carr’s play, By the Bog of Cats. Write an account of your relationship with Carthage from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-d-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text D Q4",
+   "questionText": "Props are the objects used on stage during a performance. Identify three props, which may or may not be mentioned in the script, that in your opinion are vital to the staging of Marina Carr’s play, By the Bog of Cats. Outline how each of the props you have identified would be used in a production and explain the significance of each of these props in the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    30,
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Based on your study of Emma Donoghue’s novel, Room, explain what you found to be the most appealing or the least appealing aspect of Ma’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Identify what you think is the most difficult decision Ma made during the course of the novel. Explain why you think this was a difficult decision for Ma to make. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q1(c)",
+   "questionText": "Explain at least one way in which regaining her freedom affected Ma. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q2",
+   "questionText": "Explain what you learned about love from your study of Emma Donoghue’s novel, Room. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q3",
+   "questionText": "Imagine you are Jack in Emma Donoghue’s novel, Room. Write an account, from your point of view, of how you and Ma managed to escape from captivity. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-e-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text E Q4",
+   "questionText": "A friend of yours is going on a long journey and has asked whether you would or would not recommend Emma Donoghue’s novel, Room, as a fascinating read to pass the time. Using each of the following prompts, explain to your friend why you would or would not recommend this book. - I think you would/would not find the time and place in which this novel is set fascinating because … - I think you would/would not find the characters in the novel fascinating because … - Overall, I do/do not recommend you take this novel with you on your journey because … Support your response with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    33,
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Based on your study of Brian Friel’s play, Philadelphia, Here I Come!, explain what you found to be the most appealing or the least appealing aspect of Gar’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Identify what you think is the most difficult decision Gar made during the course of the play. Explain why you think this was a difficult decision for Gar to make. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q1(c)",
+   "questionText": "Explain at least one way in which living in Ballybeg affected Gar. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q2",
+   "questionText": "Explain what you learned about love from your study of Brian Friel‘s play, Philadelphia, Here I Come!. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q3",
+   "questionText": "Imagine you are Madge in Brian Friel’s play, Philadelphia, Here I Come!. Write an account of Gar’s planned departure to America from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-f-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text F Q4",
+   "questionText": "Props are the objects used on stage during a performance. Identify three props, which may or may not be mentioned in the script, that in your opinion are vital to the staging of Brian Friel’s play, Philadelphia, Here I Come!. Outline how each of the props you have identified would be used in a production and explain the significance of each of these props in the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-16",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Philadelphia, Here I Come! (Brian Friel)",
+   "schemePages": [
+    36,
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Based on your study of George Orwell’s novel, 1984, explain what you found to be the most appealing or the least appealing aspect of Winston Smith’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Identify what you think is the most important decision Winston made during the course of the novel. Explain why you think the decision he made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q1(c)",
+   "questionText": "Explain at least one way in which working for the Ministry of Truth affected Winston. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q2",
+   "questionText": "Explain what you learned about courage from your study of George Orwell’s novel, 1984. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q3",
+   "questionText": "Imagine you are Julia in George Orwell’s novel, 1984. Write an account of your relationship with Winston Smith from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-g-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text G Q4",
+   "questionText": "A friend of yours is going on a long journey and has asked whether you would or would not recommend George Orwell’s novel, 1984, as a fascinating read to pass the time. Using each of the following prompts, explain to your friend why you would or would not recommend this book. - I think you would/would not find the time and place in which this novel is set fascinating because … - I think you would/would not find the characters in the novel fascinating because … - Overall, I do/do not recommend you take this novel with you on your journey because … Support your response with reference to the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    39,
+    40
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Based on your study of Shakespeare’s play, King Lear, explain what you found to be the most appealing or the least appealing aspect of Lear’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Identify what you think is the most important decision Lear made during the course of the play. Explain why you think the decision he made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q1(c)",
+   "questionText": "Explain at least one way in which living with either one of his daughters, Goneril or Regan, affected Lear. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q2",
+   "questionText": "Explain what you learned about love from your study of Shakespeare’s play, King Lear. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q3",
+   "questionText": "Imagine you are Kent in Shakespeare’s play, King Lear. Write an account of Lear’s downfall from your point of view. The account you give should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-h-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text H Q4",
+   "questionText": "Props are the objects used on stage during a performance. Identify three props, which may or may not be mentioned in the script, that in your opinion are vital to the staging of Shakespeare’s play, King Lear. Outline how each of the props you have identified would be used in a production and explain the significance of each of these props in the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-1",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "King Lear (Shakespeare)",
+   "schemePages": [
+    42,
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Based on your study of Shakespeare’s play, The Tempest, explain what you found to be the most appealing or the least appealing aspect of Prospero’s character. Support your response with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Identify what you think is the most important decision Prospero made during the course of the play. Explain why you think the decision he made was a good decision or a bad decision. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q1-c",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q1(c)",
+   "questionText": "Explain at least one way in which losing power to his brother, Antonio, affected Prospero. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q2",
+   "questionText": "Explain what you learned about love from your study of Shakespeare’s play, The Tempest. Make three points in your response. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q3",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q3",
+   "questionText": "Imagine you are Prospero’s daughter, Miranda, in Shakespeare’s play, The Tempest. Write an account, from your point of view, of life on the island before Antonio and the others from Milan were shipwrecked there. Your account should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-single-i-q4",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Single Text I Q4",
+   "questionText": "Props are the objects used on stage during a performance. Identify three props, which may or may not be mentioned in the script, that in your opinion are vital to the staging of Shakespeare’s play, The Tempest. Outline how each of the props you have identified would be used in a production and explain the significance of each of these props in the play. Your response should demonstrate your knowledge of the text.",
+   "totalMarks": 35,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    45,
+    46
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 11,
+     "C": 11,
+     "L": 11,
+     "M": 2
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-a-q1-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one of the comparative texts you have studied. Choose one aspect of the social setting that, in your opinion, makes the world of the text more appealing or less appealing than the world in which you live. Explain your choice, supporting your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-a-q1-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another comparative text you have studied. Choose one aspect of the social setting that, in your opinion, makes the world of this text more appealing or less appealing than the world in which you live. Explain your choice, supporting your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-a-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare what you found most fascinating about the social setting in each of at least two texts on your comparative course. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-a-q2-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one of the comparative texts you have studied and identify a character who is powerful or successful in the world of this text. Use at least one key moment to demonstrate that your chosen character is either powerful or successful in this social setting.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-a-q2-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another of your comparative texts and identify a character who is powerful or successful in the world of this text. Use at least one key moment to demonstrate that your chosen character is either powerful or successful in this social setting.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Social Setting",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-b-q1-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the comparative texts you have studied and identify an important relationship in it. Explain whether, in your opinion, respect was or was not evident in this relationship. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-b-q1-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another comparative text you have studied and identify an important relationship in it. Explain whether, in your opinion, respect was or was not evident in this relationship. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-b-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Identify one relationship in each of at least two texts on your comparative course. Compare how realistic or unrealistic you found the relationships that you identified. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-b-q2-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Name one text you studied as part of your comparative course and identify a relationship in it. Explain at least one reason why this relationship either improved or deteriorated over the course of the text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-b-q2-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Name another text you studied as part of your comparative course and identify a relationship in it. Explain at least one reason why this relationship either improved or deteriorated over the course of the text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Relationships",
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-c-q1-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative C Q1(a)(i)",
+   "questionText": "Name one text on your comparative course and identify a theme you studied in it. Explain at least one reason why you would or would not recommend this text as useful to someone who wanted to study this theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-c-q1-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative C Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course. In relation to the same theme discussed above, explain at least one reason why you would or would not recommend this text as useful to someone who wanted to study this theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-c-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative C Q1(b)",
+   "questionText": "We can learn similar or different lessons about the same theme when we study it in different texts. Compare the lessons you learned about the same theme from each of at least two texts on your comparative course. You must discuss the same theme you discussed in Part (a). Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-c-q2-a-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative C Q2(a)(i)",
+   "questionText": "Name one of your comparative texts and identify the theme you studied in it. Identify one central character in the text and use one or more key moments to help you explain how your chosen character made an important contribution to this theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-comparative-c-q2-a-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Comparative C Q2(a)(ii)",
+   "questionText": "Name another of your comparative texts and identify one central character in it. Referring to the same theme you discussed above, use one or more key moments to help you explain how your chosen character made an important contribution to this theme. Support your answer with reference to your chosen text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative C · Theme",
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-unseen-q1",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "From reading the above poem, what impression of cats do you form? Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Language of Cat",
+    "pages": [
+     14
+    ],
+    "attribution": "The Language of Cat — Rachel Rooney, as reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-unseen-q2",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Explain the poet’s opinion of dogs as expressed in the final stanza of the poem. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Language of Cat",
+    "pages": [
+     14
+    ],
+    "attribution": "The Language of Cat — Rachel Rooney, as reproduced in the SEC 2021 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-a-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Based on your reading of this poem, explain the message or messages you think it communicates to us. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "This Moment",
+    "pages": [
+     15
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-a-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "Do you find this poem uplifting? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "This Moment",
+    "pages": [
+     15
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-a-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "You have been asked to paint a picture based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, This Moment, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "This Moment",
+    "pages": [
+     15
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-a-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Do you think the poet uses language effectively to convey a sense of time and place in the above poem? Support your response with reference to the poet’s use of language for this purpose in the poem, This Moment.",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "This Moment",
+    "pages": [
+     15
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-a-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, This Moment, in a collection of poetry about memories. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "This Moment — Eavan Boland",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "This Moment",
+    "pages": [
+     15
+    ],
+    "attribution": "This Moment — Eavan Boland.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-b-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Based on your reading of this poem, what impression do you form of the young boy in the poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Glass Hammer — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "The Glass Hammer",
+    "pages": [
+     16
+    ],
+    "attribution": "The Glass Hammer — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-b-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "Do you find this poem amusing or disturbing? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Glass Hammer — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "The Glass Hammer",
+    "pages": [
+     16
+    ],
+    "attribution": "The Glass Hammer — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-b-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "You have been asked to produce a dramatic scene or short film based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, The Glass Hammer, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Glass Hammer — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "The Glass Hammer",
+    "pages": [
+     16
+    ],
+    "attribution": "The Glass Hammer — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-b-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Do you think the poet uses language effectively to vividly convey the child’s actions in the above poem? Support your response with reference to the poet’s use of language for this purpose in the poem, The Glass Hammer",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Glass Hammer — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "The Glass Hammer",
+    "pages": [
+     16
+    ],
+    "attribution": "The Glass Hammer — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-b-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, The Glass Hammer, in a collection of poetry about growing up. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Glass Hammer — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "The Glass Hammer",
+    "pages": [
+     16
+    ],
+    "attribution": "The Glass Hammer — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-c-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Based on your reading of this poem, what impression do you form of the young boy in the poem? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-49",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Oranges — Gary Soto",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Oranges",
+    "pages": [
+     17
+    ],
+    "attribution": "Oranges — Gary Soto.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-c-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "Do you find this poem uplifting? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-49",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Oranges — Gary Soto",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Oranges",
+    "pages": [
+     17
+    ],
+    "attribution": "Oranges — Gary Soto.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-c-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "You have been asked to produce a dramatic scene or short film based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, Oranges, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-49",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Oranges — Gary Soto",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Oranges",
+    "pages": [
+     17
+    ],
+    "attribution": "Oranges — Gary Soto.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-c-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Do you think the poet uses language effectively to convey a sense of time and place in the above poem? Support your response with reference to the poet’s use of language for this purpose in the poem, Oranges.",
+   "totalMarks": 20,
+   "topicId": "english-11-49",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Oranges — Gary Soto",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Oranges",
+    "pages": [
+     17
+    ],
+    "attribution": "Oranges — Gary Soto.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-c-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, Oranges, in a collection of poetry about growing up. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-49",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Oranges — Gary Soto",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Oranges",
+    "pages": [
+     17
+    ],
+    "attribution": "Oranges — Gary Soto.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    60
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-d-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Based on your reading of this poem, what impression do you form of the constable? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Constable Calls — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "A Constable Calls",
+    "pages": [
+     18
+    ],
+    "attribution": "A Constable Calls — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-d-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "Do you find this poem disturbing? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Constable Calls — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "A Constable Calls",
+    "pages": [
+     18
+    ],
+    "attribution": "A Constable Calls — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-d-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "You have been asked to produce a dramatic scene or short film based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, A Constable Calls, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Constable Calls — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "A Constable Calls",
+    "pages": [
+     18
+    ],
+    "attribution": "A Constable Calls — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    61
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-d-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Do you think the poet makes effective use of language to vividly convey the impact the constable’s visit made on him as a child in the above poem? Support your response with reference to the poet’s use of language for this purpose in the poem, A Constable Calls.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Constable Calls — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "A Constable Calls",
+    "pages": [
+     18
+    ],
+    "attribution": "A Constable Calls — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-d-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, A Constable Calls, in a collection of poetry about memories. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-8",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Constable Calls — Seamus Heaney",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "A Constable Calls",
+    "pages": [
+     18
+    ],
+    "attribution": "A Constable Calls — Seamus Heaney.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    62
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-e-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry E Q1(a)",
+   "questionText": "Based on your reading of this poem, what impression do you form of the cows described in it? Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Jungian Cows — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Jungian Cows",
+    "pages": [
+     19
+    ],
+    "attribution": "Jungian Cows — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-e-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry E Q1(b)",
+   "questionText": "Do you find this poem amusing? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Jungian Cows — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Jungian Cows",
+    "pages": [
+     19
+    ],
+    "attribution": "Jungian Cows — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-e-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry E Q2(i)",
+   "questionText": "You have been asked to paint a picture based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, Jungian Cows, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Jungian Cows — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Jungian Cows",
+    "pages": [
+     19
+    ],
+    "attribution": "Jungian Cows — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    63
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-e-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry E Q2(ii)",
+   "questionText": "Do you think the poet makes effective use of language to convey a vivid impression of the man who works the machine to milk the cows in the above poem? Support your response, with reference to the poet’s use of language for this purpose in the poem, Jungian Cows.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Jungian Cows — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Jungian Cows",
+    "pages": [
+     19
+    ],
+    "attribution": "Jungian Cows — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-e-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry E Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, Jungian Cows, in a collection of poetry about the relationship between humans and the animal world. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-43",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Jungian Cows — Penelope Shuttle",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM E",
+    "title": "Jungian Cows",
+    "pages": [
+     19
+    ],
+    "attribution": "Jungian Cows — Penelope Shuttle.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    64
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-f-q1-a",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry F Q1(a)",
+   "questionText": "Based on your reading of this poem, explain how the final stanza differs from the first three stanzas. Support your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-f-q1-b",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry F Q1(b)",
+   "questionText": "Do you find this poem uplifting? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-f-q2-i",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry F Q2(i)",
+   "questionText": "You have been asked to paint a picture based on one of the poems on your Leaving Certificate English course. Explain why you would or would not choose the poem, Inversnaid, for this purpose. Your answer should demonstrate your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    65
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-f-q2-ii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry F Q2(ii)",
+   "questionText": "Do you think the poet makes effective use of language to convey a vivid impression of the natural world in the above poem? Support your response, with reference to the poet’s use of language for this purpose in the poem, Inversnaid.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2021-ol-p2-prescribed-f-q2-iii",
+   "year": 2021,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2021 OL Paper 2 Prescribed Poetry F Q2(iii)",
+   "questionText": "Explain why you would or would not include the poem, Inversnaid, in a collection of poetry about wild places. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Inversnaid — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM F",
+    "title": "Inversnaid",
+    "pages": [
+     20
+    ],
+    "attribution": "Inversnaid — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    66
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2021-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
    }
   },
   {
