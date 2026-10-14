@@ -1372,79 +1372,89 @@
         "sha256": "59811aee15e026a6bb6013e29d71fc851e71809ae7dc2ef0e96e79fd35cfe5c7",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 58,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "4eb13c9ec23f67ff",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 18 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total marks: 300 marks. [OVER",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "654cd1a5abdc7c4a",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) – (j). (a) Give three reasons for the practice of thinning forest trees. (b) State to which phylum each of the following belongs: (i) Earthworm. (ii) Greenbottle fly. (iii) Liver fluke. (iv) Sheep. (v) Babesia. (",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "6ee76567de52aa5e",
           "page": 2,
           "cue": "any three",
           "context": "ssary to have strict controls in the application of pesticides to farm crops. (d) Mention any three factors that contribute to the formation of a gley soil. (e) List three characteristics that are typical of the family Gramineae. (f) List any two structural characteristics of each of the following: (i) a fern plant. (ii) a pine",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(d): any three factors in gley formation; the scheme lists five (a marking menu)."
         },
         {
           "id": "df3cc27d93a0b330",
           "page": 2,
           "cue": "any two",
           "context": "y soil. (e) List three characteristics that are typical of the family Gramineae. (f) List any two structural characteristics of each of the following: (i) a fern plant. (ii) a pine tree. (g) Explain the importance of critical temperature in the context of a pig rearing enterprise. (h) (i) Explain the term interdependence as u",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q1(f): any two characteristics of each plant; the scheme lists the fern and pine pools (marking menus)."
         },
         {
           "id": "8c34adfa0aeaceba",
           "page": 3,
           "cue": "any two",
           "context": "n why most beef animals are slaughtered at two years of age. (48 marks) 4. In the case of any two of the following describe a laboratory or field method: (a) To determine the percentage mineral ash in a sample of freshly cut grass. (b) To assess the effects of overgrazing on the botanical composition of a pasture sward. (c) T",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "3564518691c7a4ee",
           "page": 4,
           "cue": "any three",
           "context": " of a crop at harvest. (c) (i) What is meant by the term transpiration? (ii) Describe how any three environmental factors affect the rate of transpiration in a plant. (48 marks) 7. (a) (i) State the Law of Independent Assortment. (ii) Explain the following terms: 1. Sex linkage. 2. Clone. 3. Polyploid. (b) In cattle, the allele",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q6(c)(ii): any three environmental factors with their effect; the scheme lists seven (a marking menu)."
         },
         {
           "id": "95b935cc82833748",
           "page": 4,
           "cue": "one of",
           "context": "ted with a cow with a black curly coat, the resulting calf has an equal chance of showing one of four phenotypes. (i) State the genotypes of the bull and cow using the above notation. (ii) State the four possible calf phenotypes. (iii) Which of the possible phenotypes indicate that independent assortment has taken place? (c)",
-          "classification": "pending"
+          "classification": "not-a-selection",
+          "reason": "\"one of four phenotypes\" describes the cross in Q7(b), not a choice."
         },
         {
           "id": "e24c8951d91bdc55",
           "page": 5,
           "cue": "any two",
           "context": "Page 5 of 8 8. Answer any two of the parts (a), (b), (c). (a) Describe with the aid of a diagram the processes involved in the nitrogen cycle. (b) (i) Outline the principal practices required for good grassland management. (ii) Give two benefits of mixed graz",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "8b2202fea71013a9",
           "page": 5,
           "cue": "any three",
           "context": "ow your understanding of the term livestock units. (c) Distinguish between the members of any three of the following pairs of terms: (i) Top dressing and topping. (ii) Hepatic vein and hepatic portal vein. (iii) Raised bog and blanket bog. (iv) Tilling and tillering. (48 marks) 9. Give scientific explanations for any four of th",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "6894d3316651582d",
           "page": 5,
           "cue": "any four",
           "context": "d blanket bog. (iv) Tilling and tillering. (48 marks) 9. Give scientific explanations for any four of the following: (a) The formation of rancid silage. (b) Spreading slurry at least seven weeks before cutting grass for silage. (c) Retention and conservation of hedgerows on a farm. (d) The testing of milk by dairies. (e) Using",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -1463,7 +1473,7 @@
         "sha256": "d9ed9ea7570862708348b3fdcf4ff89438de66198cc19c4aa877985a0c05d542",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 58,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

@@ -119353,6 +119353,3735 @@
   }
  },
  {
+  "id": "agsci-2015-hl-q1a",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(a)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "thinning-forest-trees",
+  "questionText": "Give three reasons for the practice of thinning forest trees.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Disease / damaged trees / harvesting thinnings (income) / reduce competition / provides access / have uniform crop at clear felling or an example in each case",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Disease",
+      "damaged trees",
+      "harvesting thinnings (income)",
+      "reduce competition",
+      "provides access",
+      "have uniform crop at clear felling or an example in each case"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(a)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(b)",
+  "topicId": "agsci-4-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-1",
+   "agricultural-science-2-1"
+  ],
+  "conceptId": "phyla-of-farm-organisms",
+  "questionText": "State to which phylum each of the following belongs: (i) Earthworm. (ii) Greenbottle fly. (iii) Liver fluke. (iv) Sheep. (v) Babesia.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) Earthworm — Annelida",
+    "marks": 2,
+    "contextNote": "5 × 2m, in the scheme's order.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Greenbottle fly — Arthropoda",
+    "marks": 2,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(iii) Liver fluke — Platyhelminthes",
+    "marks": 2,
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(iv) Sheep — Chordata",
+    "marks": 2,
+    "id": "r-4"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(v) Babesia — Protozoa",
+    "marks": 2,
+    "id": "r-5"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(b)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(c)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4",
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "pesticide-controls",
+  "questionText": "Explain why it is necessary to have strict controls in the application of pesticides to farm crops.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Pollution or damage to wildlife / toxicity / accumulation in food chain (biomagnification) / crop residues / health risk to operator / affects pollination",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Pollution or damage to wildlife",
+      "toxicity",
+      "accumulation in food chain (biomagnification)",
+      "crop residues",
+      "health risk to operator",
+      "affects pollination"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(c)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1d",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(d)",
+  "topicId": "agsci-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-0"
+  ],
+  "conceptId": "gley-soil-formation",
+  "questionText": "Mention any three factors that contribute to the formation of a gley soil.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "High rainfall / waterlogging or poor drainage or high water table or impermeable subsoil / anaerobic conditions / oxidation or reduction of iron / formed in lowland or gently sloping hillsides",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "High rainfall",
+      "waterlogging or poor drainage or high water table or impermeable subsoil",
+      "anaerobic conditions",
+      "oxidation or reduction of iron",
+      "formed in lowland or gently sloping hillsides"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(d)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1e",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(e)",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-1",
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "gramineae-characteristics",
+  "questionText": "List three characteristics that are typical of the family Gramineae.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Monocot or named monocot feature / tillers / nodes / ligule / spikelet / green flower parts / wind pollinated or correct flower feature",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Monocot or named monocot feature",
+      "tillers",
+      "nodes",
+      "ligule",
+      "spikelet",
+      "green flower parts",
+      "wind pollinated or correct flower feature"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(e)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1f",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(f)",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-1"
+  ],
+  "conceptId": "fern-and-pine-structure",
+  "questionText": "List any two structural characteristics of each of the following: (i) a fern plant. (ii) a pine tree.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Flowerless / rhizome (underground stem) / frond / pinnae / pinnules / rachis / sorus / sporangia / young fronds crozier-shaped",
+    "marks": 5,
+    "contextNote": "Fern: any two, 3 + 2 (2×(3+2)m).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Flowerless",
+      "rhizome (underground stem)",
+      "frond",
+      "pinnae",
+      "pinnules",
+      "rachis",
+      "sorus",
+      "sporangia",
+      "young fronds crozier-shaped"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Woody / shallow root system / cones / needles / naked seeds",
+    "marks": 5,
+    "contextNote": "Pine: any two, 3 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Woody",
+      "shallow root system",
+      "cones",
+      "needles",
+      "naked seeds"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(f)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1g",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(g)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "pig-critical-temperature",
+  "questionText": "Explain the importance of critical temperature in the context of a pig rearing enterprise.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Environmental temperature at which pigs can maintain body temperature / without weight loss / correct temperature for specified house / if temp too low they eat too much feed / maintains good FCR",
+    "marks": 10,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Environmental temperature at which pigs can maintain body temperature",
+      "without weight loss",
+      "correct temperature for specified house",
+      "if temp too low they eat too much feed",
+      "maintains good FCR"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(g)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1h",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(h)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "interdependence",
+  "questionText": "(i) Explain the term interdependence as used in ecology. (ii) Give two examples of interdependence in agriculture.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) Interdependence — organisms depending on each other",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1). Three answers: the term and two examples.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Examples — Any two correct examples explaining role of both organisms in each relationship",
+    "marks": null,
+    "contextNote": "Two examples, each explaining the role of both organisms.",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+3+1m"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(h)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1i",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "blood-functions",
+  "questionText": "Give three functions of blood in the animal body.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "food or named food / waste products / hormones / oxygen / carbon dioxide / heat / Immunity or fighting infection / clotting",
+    "marks": 10,
+    "contextNote": "Any three, with a maximum of two transport points (food to heat). The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "food or named food",
+      "waste products",
+      "hormones",
+      "oxygen",
+      "carbon dioxide",
+      "heat",
+      "Immunity or fighting infection",
+      "clotting"
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      1
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(i)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q1j",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "A",
+  "questionRef": "2015 HL Q1(j)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-5",
+   "agricultural-science-2-3"
+  ],
+  "conceptId": "field-aspect",
+  "questionText": "(i) Explain what is meant by the aspect of a field. (ii) Outline how aspect affects crop growth.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "(i) Aspect — Direction in which a field is facing",
+    "marks": null,
+    "contextNote": "The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6 + 3 + 1). Three answers: the term and two effects.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "(ii) Effect on crop growth — South facing fields get more sun or heat up faster or crops get more light (for photosynthesis)/ higher yields/ longer season/ earlier germination/ earlier sowing",
+    "marks": null,
+    "contextNote": "[Opposite valid points for north-facing]",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6+3+1m"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q1(j)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any six of the parts (a) – (j).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2ai",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(a)(i)",
+  "topicId": "agsci-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-0"
+  ],
+  "conceptId": "podzol-formation",
+  "questionText": "Describe the conditions which contribute to the formation of a podzol soil.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "High rainfall or low evaporation / acid leaching or leaching of iron or of aluminium or iron pan formed / low pH / cool temperatures / acidic parent materials / hilly mountainous areas",
+    "marks": 6,
+    "contextNote": "Any three, 2 marks each (3×2m).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "High rainfall or low evaporation",
+      "acid leaching or leaching of iron or of aluminium or iron pan formed",
+      "low pH",
+      "cool temperatures",
+      "acidic parent materials",
+      "hilly mountainous areas"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(a)(i)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2aii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(a)(ii)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agricultural-science-1-3"
+  ],
+  "conceptId": "texture-and-soil-temperature",
+  "questionText": "Explain how soil temperature is influenced by soil texture.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Sandy soil has more air (or less water)/ is warmer / Clay soil has less air (or more water)/ is cold / Loam has the optimal air or water content/ for suitable temperature",
+    "marks": 8,
+    "contextNote": "Any two soils: 2(2+2), the cause 2 and its effect 2. [Cause and effect required]",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Sandy soil has more air (or less water)/ is warmer",
+      "Clay soil has less air (or more water)/ is cold",
+      "Loam has the optimal air or water content/ for suitable temperature"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(a)(ii)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2aiii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(a)(iii)",
+  "topicId": "agsci-2-2-2",
+  "curriculumNodeIds": [
+   "agricultural-science-1-3"
+  ],
+  "conceptId": "other-soil-temperature-factor",
+  "questionText": "Name one other characteristic of a soil that could affect its temperature.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Soil colour or organic matter content or soil structure or soil pH",
+    "marks": 2,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(a)(iii)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Explain how soil temperature is influenced by soil texture.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2bi",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(b)(i)",
+  "topicId": "agsci-2-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-2"
+  ],
+  "conceptId": "cations-colloids-and-cec",
+  "questionText": "1. Explain the difference between a cation and a colloid. 2. Explain the terms cation exchange and cation exchange capacity (CEC).",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Cation: positively charged particle (or positively charged ion)",
+    "marks": 2,
+    "contextNote": "1. 2 + 2m: the cation 2 and the colloid 2.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Colloid: small negatively charged particle of clay or humus",
+    "marks": 2,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Cation exchange: swapping of positive ions on the surface of colloid particles or correct example (e.g. H+ exchanged with Ca2+)",
+    "marks": 4,
+    "contextNote": "2. 4 + 4m: each term 4.",
+    "id": "r-3"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Cation exchange capacity (CEC): ability of a soil to carry out cation exchange",
+    "marks": 4,
+    "id": "r-4"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(b)(i)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2bii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(b)(ii)",
+  "topicId": "agsci-2-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-2"
+  ],
+  "conceptId": "raising-cec",
+  "questionText": "How may the CEC of a soil be increased?",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Adding humus or organic matter or FYM or compost or slurry or seaweed or green manure or liming",
+    "marks": 2,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 2,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(b)(ii)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q2c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q2(c)",
+  "topicId": "agsci-2-2-1",
+  "curriculumNodeIds": [
+   "agricultural-science-1-2",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "cation-exchange-experiment",
+  "questionText": "Describe an experiment to investigate cation exchange in a soil.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Sieved soil sample / high pH soil or clay-rich soil or calcium-rich soil / wash with (1%) potassium (chloride) solution / through a filter / test filtrate for Ca2+ / ammonium oxalate reagent / white ppt. indicates calcium / potassium has replaced calcium",
+    "marks": 18,
+    "contextNote": "Any six, 3 marks each (6×3m), or valid details from alternative method.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "Sieved soil sample",
+      "high pH soil or clay-rich soil or calcium-rich soil",
+      "wash with (1%) potassium (chloride) solution",
+      "through a filter",
+      "test filtrate for Ca2+",
+      "ammonium oxalate reagent",
+      "white ppt. indicates calcium",
+      "potassium has replaced calcium"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 18,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q2(c)",
+   "pages": [
+    2
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1ai",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (a)(i)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-3"
+  ],
+  "conceptId": "sprouting-seed-potatoes",
+  "questionText": "Outline the advantages of sprouting seed potatoes.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Start growing immediately or earlier emergence / increased yield or longer growing season / earlier harvest / essential for early varieties / removal of diseased tubers",
+    "marks": 8,
+    "contextNote": "Any two, 4 marks each (2×4m).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Start growing immediately or earlier emergence",
+      "increased yield or longer growing season",
+      "earlier harvest",
+      "essential for early varieties",
+      "removal of diseased tubers"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (a)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1aii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (a)(ii)",
+  "topicId": "agsci-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-1",
+   "agricultural-science-2-3"
+  ],
+  "conceptId": "seed-potatoes-not-true-seeds",
+  "questionText": "Seed potatoes are not true seeds. Discuss the validity of this statement.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "State or imply that the statement is true",
+    "marks": 2,
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Potatoes are tubers or modified stems / asexual reproduction / true seeds form within flowers / as a result of sexual reproduction / seeds are found in fruit",
+    "marks": 6,
+    "contextNote": "Any three, 2 marks each (3×2m). [At least one point to refer to potatoes and one to refer to seeds]",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Potatoes are tubers or modified stems",
+      "asexual reproduction",
+      "true seeds form within flowers",
+      "as a result of sexual reproduction",
+      "seeds are found in fruit"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (a)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1bi",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (b)(i)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "potato-blight-lifecycle",
+  "questionText": "Give an account of the potato blight fungus (Phytophthora infestans) under the heading: Lifecycle.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Spores airborne / germinate in humid conditions / haustoria absorb food (from cells) / sporangiophores grow out of the stomata / break off / produce zoospores (in water) / onto soil / infect tubers",
+    "marks": 8,
+    "contextNote": "Any four, 2 marks each (4×2m).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Spores airborne",
+      "germinate in humid conditions",
+      "haustoria absorb food (from cells)",
+      "sporangiophores grow out of the stomata",
+      "break off",
+      "produce zoospores (in water)",
+      "onto soil",
+      "infect tubers"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (b)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give an account of the potato blight fungus (Phytophthora infestans) under the following headings:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1bii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (b)(ii)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "potato-blight-symptoms",
+  "questionText": "Give an account of the potato blight fungus (Phytophthora infestans) under the heading: Disease symptoms.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Leaf (or stem) has black spots / whitish mould (beard) / necrosis / tuber has brown-purple skin / shrunken areas / rusty brown colour inside / turns black",
+    "marks": 4,
+    "contextNote": "Any two, 2 + 2m.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Leaf (or stem) has black spots",
+      "whitish mould (beard)",
+      "necrosis",
+      "tuber has brown-purple skin",
+      "shrunken areas",
+      "rusty brown colour inside",
+      "turns black"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (b)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give an account of the potato blight fungus (Phytophthora infestans) under the following headings:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1biii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (b)(iii)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "potato-blight-control",
+  "questionText": "Give an account of the potato blight fungus (Phytophthora infestans) under the heading: Prevention and control measures.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Spray fungicide / plant resistant varieties / remove all tubers at harvesting / rotation / use certified seed / burn off haulms / earthing up / destroy volunteer plants in dumps or remove diseased plants",
+    "marks": 4,
+    "contextNote": "Any two, 2 + 2m.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Spray fungicide",
+      "plant resistant varieties",
+      "remove all tubers at harvesting",
+      "rotation",
+      "use certified seed",
+      "burn off haulms",
+      "earthing up",
+      "destroy volunteer plants in dumps or remove diseased plants"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (b)(iii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give an account of the potato blight fungus (Phytophthora infestans) under the following headings:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1ci",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (c)(i)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "other-potato-diseases",
+  "questionText": "It is important to use certified seed potatoes in commercial growing because they are disease-free. Give two possible diseases of potato crops, other than blight, and the causative agent in each case.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Disease: Leaf roll/ leaf mosaic/ virus X or virus Y Cause: Viruses / Disease: Blackleg or soft rot/ common scab Cause: Bacteria / Disease: Silver scurf/ rust/ blotch/ dry rot/ gangrene/ powdery scab/ warts Cause: Fungus",
+    "marks": 8,
+    "contextNote": "Two diseases: 2×(2+2)m, each disease 2 and its cause 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Disease: Leaf roll/ leaf mosaic/ virus X or virus Y Cause: Viruses",
+      "Disease: Blackleg or soft rot/ common scab Cause: Bacteria",
+      "Disease: Silver scurf/ rust/ blotch/ dry rot/ gangrene/ powdery scab/ warts Cause: Fungus"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (c)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o1cii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option One (c)(ii)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-3",
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "donegal-seed-potatoes",
+  "questionText": "Explain why some regions of Ireland, e.g. Co. Donegal, are considered to be particularly suitable for the production of seed potatoes.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Low numbers of aphids / aphids transmit viruses / high wind speed / cooler temperature / Donegal isolated from main potato growing areas",
+    "marks": 8,
+    "contextNote": "Any three. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (3 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Low numbers of aphids",
+      "aphids transmit viruses",
+      "high wind speed",
+      "cooler temperature",
+      "Donegal isolated from main potato growing areas"
+     ],
+     "perOptionSteps": [
+      3,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 8,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option One (c)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2ai",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (a)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "calving-management",
+  "questionText": "Discuss in detail the following point in relation to a dairy enterprise: Management of calving.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Isolate or supervise / assist if required / cut umbilical cord / dip navel in iodine / dry calf / remove mucus / irritate nose if not breathing / stimulate circulation",
+    "marks": 4,
+    "contextNote": "Any two points, 2 + 2 (3×(2+2)m across the three headings).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Isolate or supervise",
+      "assist if required",
+      "cut umbilical cord",
+      "dip navel in iodine",
+      "dry calf",
+      "remove mucus",
+      "irritate nose if not breathing",
+      "stimulate circulation"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (a)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Discuss in detail the following points in relation to a dairy enterprise:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2aii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (a)(ii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "newborn-calf-environment",
+  "questionText": "Discuss in detail the following point in relation to a dairy enterprise: Environmental conditions in the first three days after birth.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "indoors / clean disinfected area / warm / draught free or good ventilation / separate pens / dry bedding",
+    "marks": 4,
+    "contextNote": "Any two points, 2 + 2 (3×(2+2)m across the three headings).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "indoors",
+      "clean disinfected area",
+      "warm",
+      "draught free or good ventilation",
+      "separate pens",
+      "dry bedding"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (a)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Discuss in detail the following points in relation to a dairy enterprise:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2aiii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (a)(iii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "newborn-calf-feeding",
+  "questionText": "Discuss in detail the following point in relation to a dairy enterprise: Feeding principles in the first three days after birth.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "colostrum / from mother or other valid method / 10% of body weight or 3-5 litres of colostrum / 12 hours / whole milk or milk replacer",
+    "marks": 4,
+    "contextNote": "Any two points, 2 + 2 (3×(2+2)m across the three headings).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "colostrum",
+      "from mother or other valid method",
+      "10% of body weight or 3-5 litres of colostrum",
+      "12 hours",
+      "whole milk or milk replacer"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (a)(iii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Discuss in detail the following points in relation to a dairy enterprise:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2bi",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (b)(i)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "calf-rearing-management",
+  "questionText": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the heading: Management.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "disease prevention or example / weaning at 6-8 weeks or when rumen develops / moved to grass / dosing for parasites / early tagging / BVD sample / dehorning / castrate and relevant remark / delousing at housing / group penning / change bedding",
+    "marks": 10,
+    "contextNote": "Any five, 2 marks each (5×2m).",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "disease prevention or example",
+      "weaning at 6-8 weeks or when rumen develops",
+      "moved to grass",
+      "dosing for parasites",
+      "early tagging",
+      "BVD sample",
+      "dehorning",
+      "castrate and relevant remark",
+      "delousing at housing",
+      "group penning",
+      "change bedding"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (b)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2bii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (b)(ii)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "calf-rearing-feeding",
+  "questionText": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the heading: Feeding principles required for optimum growth.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "introduction to milk / feed milk replacer / hay or scratch factor at 7 days / feed concentrates indoors / grass at 8 weeks / feed meals after going on grass / leader-follower system / shortage of grass =>feed meals / fresh water supply (on grass and indoors)",
+    "marks": 10,
+    "contextNote": "Any five, 2 marks each (5×2m).",
+    "group": {
+     "claimMax": 5,
+     "perOption": 2,
+     "options": [
+      "introduction to milk",
+      "feed milk replacer",
+      "hay or scratch factor at 7 days",
+      "feed concentrates indoors",
+      "grass at 8 weeks",
+      "feed meals after going on grass",
+      "leader-follower system",
+      "shortage of grass =>feed meals",
+      "fresh water supply (on grass and indoors)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 10,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (b)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Discuss in detail the rearing of dairy calves, from age three days to first housing, under the following headings:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2ci",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (c)(i)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "calf-weight-at-housing",
+  "questionText": "What is the expected liveweight of dairy calves at first housing?",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "170 – 220 kg",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (c)(i)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q3o2cii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q3 Option Two (c)(ii)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3"
+  ],
+  "conceptId": "slaughter-at-two-years",
+  "questionText": "Explain why most beef animals are slaughtered at two years of age.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Target weight reached / fat laid down instead of muscle after 2 years / better meat quality / older cattle carcasses grade poorly or better kill-out percentage / frees up grass / better stocking rate / FCR disimproves with age or with fat deposition",
+    "marks": 12,
+    "contextNote": "Any three, 4 marks each (3×4m).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Target weight reached",
+      "fat laid down instead of muscle after 2 years",
+      "better meat quality",
+      "older cattle carcasses grade poorly or better kill-out percentage",
+      "frees up grass",
+      "better stocking rate",
+      "FCR disimproves with age or with fat deposition"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q3 Option Two (c)(ii)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q4a",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q4(a)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "grass-mineral-ash",
+  "questionText": "Describe a laboratory or field method to determine the percentage mineral ash in a sample of freshly cut grass.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Start with dry grass / weigh crucible / weigh crucible plus grass sample / calculate mass of sample / (gently) burn the sample / method of burning / to a constant mass / mineral ash left / result calculation",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6×4m).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Start with dry grass",
+      "weigh crucible",
+      "weigh crucible plus grass sample",
+      "calculate mass of sample",
+      "(gently) burn the sample",
+      "method of burning",
+      "to a constant mass",
+      "mineral ash left",
+      "result calculation"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q4(a)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q4b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q4(b)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "overgrazing-botanical-composition",
+  "questionText": "Describe a laboratory or field method to assess the effects of overgrazing on the botanical composition of a pasture sward.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "2 areas of equal size / quadrat / random / record plants present / control is area grazed normally / other area grazed bare / record plants present in both / repeat above / compare both samples for plants present",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6×4m).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "2 areas of equal size",
+      "quadrat",
+      "random",
+      "record plants present",
+      "control is area grazed normally",
+      "other area grazed bare",
+      "record plants present in both",
+      "repeat above",
+      "compare both samples for plants present"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q4(b)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q4c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q4(c)",
+  "topicId": "agsci-3-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-3",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "variety-yield-trial",
+  "questionText": "Describe a laboratory or field method to examine the effect on yield of growing different varieties of a named crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Name crop / minimum 2 varieties / planting / same conditions / same sowing rate / same soil type / same area / same sowing date / same fertiliser treatment / same light levels / same weed or pest or disease control / same growing period / same harvesting date / same harvesting method / compare yields / method of measuring yield",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6×4m). The scheme credits any 3 of the \"same ...\" controls.",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Name crop",
+      "minimum 2 varieties",
+      "planting",
+      "same conditions",
+      "same sowing rate",
+      "same soil type",
+      "same area",
+      "same sowing date",
+      "same fertiliser treatment",
+      "same light levels",
+      "same weed or pest or disease control",
+      "same growing period",
+      "same harvesting date",
+      "same harvesting method",
+      "compare yields",
+      "method of measuring yield"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q4(c)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q4d",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q4(d)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5",
+   "agricultural-science-0-1"
+  ],
+  "conceptId": "microbes-in-foodstuff",
+  "questionText": "Describe a laboratory or field method to show the presence of micro-organisms in an animal foodstuff.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Agar plates / sterile / control not opened / inoculate one plate / with foodstuff / how (e.g. inoculating loop) / one aseptic technique / incubate / upside down / time for growth / colonies of bacteria / furry growth of fungi / control clear",
+    "marks": 24,
+    "contextNote": "Any six, 4 marks each (6×4m).",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Agar plates",
+      "sterile",
+      "control not opened",
+      "inoculate one plate",
+      "with foodstuff",
+      "how (e.g. inoculating loop)",
+      "one aseptic technique",
+      "incubate",
+      "upside down",
+      "time for growth",
+      "colonies of bacteria",
+      "furry growth of fungi",
+      "control clear"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q4(d)",
+   "pages": [
+    3
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In the case of any two of the following describe a laboratory or field method:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5ai",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(a)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "polyoestrous",
+  "questionText": "Sheep are polyoestrous. What does the term polyoestrous mean?",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "Having several oestrous cycles in one year (or breeding season) or to come in heat more than once during a breeding season",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(a)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5aii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(a)(ii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "sheep-oestrous-cycle-length",
+  "questionText": "What is the length of the oestrous cycle in sheep?",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "15-19 days inclusive",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(a)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5aiii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(a)(iii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "day-length-and-breeding",
+  "questionText": "Explain the connection between day length and the breeding season in sheep.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Shorter days = less light / short day breeders or autumn or named autumn month / pineal gland / hormone or melatonin / stimulate ovulation / photo-oestrous / resumption of cycling",
+    "marks": 4,
+    "contextNote": "Any four, 1 mark each (4×1m).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 1,
+     "options": [
+      "Shorter days = less light",
+      "short day breeders or autumn or named autumn month",
+      "pineal gland",
+      "hormone or melatonin",
+      "stimulate ovulation",
+      "photo-oestrous",
+      "resumption of cycling"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(a)(iii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(b)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-0"
+  ],
+  "conceptId": "ewe-reproductive-system",
+  "questionText": "Draw a large labelled diagram of the reproductive system of a ewe and label four parts.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Diagram: Must have ovaries and oviducts and uterus and vagina",
+    "marks": null,
+    "contextNote": "Diagram: 4, 2, 0m.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "ovaries/ oviduct/ uterus/ endometrium/ vagina/ cervix/ vulva",
+    "marks": null,
+    "contextNote": "Labels: any four, 2 marks each (4×2m).",
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "4, 2, 0 + 4×2m"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(b)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(c)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "breeding-out-of-season",
+  "questionText": "Describe the key steps involved in ‘breeding out of season’ to produce lambs for the early spring market.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Insert sponges (in ewes’ vaginas) / progesterone (soaked) / leave for 12-16 days / remove sponges / ewes injected with PMSG / mated 1-2 days later / ram to ewe ratio 1:10",
+    "marks": 12,
+    "contextNote": "Any three, 4 marks each (3×4m).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Insert sponges (in ewes’ vaginas)",
+      "progesterone (soaked)",
+      "leave for 12-16 days",
+      "remove sponges",
+      "ewes injected with PMSG",
+      "mated 1-2 days later",
+      "ram to ewe ratio 1:10"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(c)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q5d",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q5(d)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "culling-ewes",
+  "questionText": "Outline four reasons for culling ewes.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Udders damaged / barren / prolapsed vagina / broken mouth or teeth damaged / poor condition score / lambing problems / poor mothers / bad feet / age / poor prolificacy (single lambs) / disease or injury",
+    "marks": 12,
+    "contextNote": "Any four, 3 marks each (4×3m).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Udders damaged",
+      "barren",
+      "prolapsed vagina",
+      "broken mouth or teeth damaged",
+      "poor condition score",
+      "lambing problems",
+      "poor mothers",
+      "bad feet",
+      "age",
+      "poor prolificacy (single lambs)",
+      "disease or injury"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q5(d)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q6a",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q6(a)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4",
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "fertiliser-rate-factors",
+  "questionText": "List and explain four factors a farmer should take into consideration when deciding how much fertiliser to apply to a crop.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Soil type or sandy or clay or loam [low fertility in sand, high fertility in clay] / previous crop [some remove more than others] / crop being sown [some crops need more] / result of a soil test [high or low] / pH of soil [affects nutrient availability] / number of years since under grass cover [improves fertility] / time of year [affects amount of fertiliser applied] / environmental scheme [limits fertiliser use] / stage of growth [variable requirements]",
+    "marks": 16,
+    "contextNote": "Any four: 4×(2+2)m, each factor 2 and its effect (in square brackets) 2. [Cause and effect required]",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Soil type or sandy or clay or loam [low fertility in sand, high fertility in clay]",
+      "previous crop [some remove more than others]",
+      "crop being sown [some crops need more]",
+      "result of a soil test [high or low]",
+      "pH of soil [affects nutrient availability]",
+      "number of years since under grass cover [improves fertility]",
+      "time of year [affects amount of fertiliser applied]",
+      "environmental scheme [limits fertiliser use]",
+      "stage of growth [variable requirements]"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q6(a)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q6b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q6(b)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-4"
+  ],
+  "conceptId": "crop-yield-factors",
+  "questionText": "Other than fertilisers, list and explain four additional factors that would influence the yield of a crop at harvest.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Variety sown / certified seed / climate too wet or too cold or too dry / disease / pests / competition from weeds / sunshine levels (aspect) [affect photosynthesis] / time of sowing / delay in harvesting / length of growing season / sprouting / named soil type",
+    "marks": 16,
+    "contextNote": "Any four: 4×(2+2)m, each factor 2 and its effect 2. [Cause and effect required]",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Variety sown",
+      "certified seed",
+      "climate too wet or too cold or too dry",
+      "disease",
+      "pests",
+      "competition from weeds",
+      "sunshine levels (aspect) [affect photosynthesis]",
+      "time of sowing",
+      "delay in harvesting",
+      "length of growing season",
+      "sprouting",
+      "named soil type"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q6(b)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q6ci",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q6(c)(i)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0"
+  ],
+  "conceptId": "transpiration",
+  "questionText": "What is meant by the term transpiration?",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Transpiration: the water evaporating from the leaf of a plant / through the stomata",
+    "marks": 4,
+    "contextNote": "2 + 2m.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Transpiration: the water evaporating from the leaf of a plant",
+      "through the stomata"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q6(c)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q6cii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q6(c)(ii)",
+  "topicId": "agsci-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-2-0"
+  ],
+  "conceptId": "transpiration-factors",
+  "questionText": "Describe how any three environmental factors affect the rate of transpiration in a plant.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Light intensity [more light, more transpiration] / (relative) humidity [dry air, more transpiration] / air movement [faster wind, more transpiration] / temperature [hotter, more transpiration] / soil water level [dry soil, less transpiration] / very fast wind [stomata close or less transpiration] / CO2 concentration [stomata close or less transpiration]",
+    "marks": 12,
+    "contextNote": "Any three: 3×(2+2)m, each factor 2 and its effect (in square brackets) 2. [Cause and effect required]",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Light intensity [more light, more transpiration]",
+      "(relative) humidity [dry air, more transpiration]",
+      "air movement [faster wind, more transpiration]",
+      "temperature [hotter, more transpiration]",
+      "soil water level [dry soil, less transpiration]",
+      "very fast wind [stomata close or less transpiration]",
+      "CO2 concentration [stomata close or less transpiration]"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q6(c)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q7ai",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q7(a)(i)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "law-of-independent-assortment",
+  "questionText": "State the Law of Independent Assortment.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "When gametes are formed each member of a pair of alleles may be inherited with any one of another pair",
+    "marks": 4,
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 4,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q7(a)(i)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q7aii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q7(a)(ii)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "sex-linkage-clone-polyploid",
+  "questionText": "Explain the following terms: 1. Sex linkage. 2. Clone. 3. Polyploid.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "1. Gene located on sex chromosomes (or on X or on Y chromosomes) or gene found on the X chromosome but has no copy on the Y chromosome",
+    "marks": 4,
+    "contextNote": "3×4m.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "2. (A group of) cells or organisms that are genetically identical to each other (or have the same DNA) or organism reproduced from a single cell of a donor organism or (a group of) organisms produced by asexual reproduction",
+    "marks": 4,
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "3. More than two copies of each chromosome (in a cell)/ 3N or 4N or similar notation",
+    "marks": 4,
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q7(a)(ii)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q7b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q7(b)",
+  "topicId": "agsci-4-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6"
+  ],
+  "conceptId": "red-straight-coat-cross",
+  "questionText": "(i) State the genotypes of the bull and cow using the above notation. (ii) State the four possible calf phenotypes. (iii) Which of the possible phenotypes indicate that independent assortment has taken place?",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Bull: RrSs / Cow: rrss",
+    "marks": 4,
+    "contextNote": "(i) Genotypes: 2 each. 8×2m across the eight answers.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Bull: RrSs",
+      "Cow: rrss"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Red straight / red curly / black straight / black curly",
+    "marks": 8,
+    "contextNote": "(ii) The four phenotypes: 2 each.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 2,
+     "options": [
+      "Red straight",
+      "red curly",
+      "black straight",
+      "black curly"
+     ]
+    },
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Red curly / black straight",
+    "marks": 4,
+    "contextNote": "(iii) Phenotypes showing independent assortment: 2 each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Red curly",
+      "black straight"
+     ]
+    },
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q7(b)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "In cattle, the allele for red coat (R) is dominant to the allele for black coat (r) and the allele for straight coat (S) is dominant to the allele for curly coat (s). If a bull with a red straight coat is mated with a cow with a black curly coat, the resulting calf has an equal chance of showing one of four phenotypes.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q7c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q7(c)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-6",
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "sexed-semen-advantages",
+  "questionText": "Discuss the advantages of using sexed semen rather than conventional semen to those dairy farmers planning to increase milk production.",
+  "rows": [
+   {
+    "kind": "point",
+    "verbatim": "More heifer calves (or fewer unwanted bull calves)",
+    "marks": 4,
+    "contextNote": "Sexed semen: this point 4, then any three more (3×4m).",
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "Less calving difficulty [females calves smaller] / Herd improvement or more replacements for top milkers or higher milk yield / Males are less valuable / Fewer cows required for breeding or more diverted to beef / Faster rate of herd expansion",
+    "marks": 12,
+    "contextNote": "Any three, 4 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Less calving difficulty [females calves smaller]",
+      "Herd improvement or more replacements for top milkers or higher milk yield",
+      "Males are less valuable",
+      "Fewer cows required for breeding or more diverted to beef",
+      "Faster rate of herd expansion"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 16,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q7(c)",
+   "pages": [
+    4
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "The abolition of milk quotas will give many dairy farmers scope to increase milk production for the first time in more than thirty years.",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q8a",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q8(a)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "nitrogen-cycle",
+  "questionText": "Describe with the aid of a diagram the processes involved in the nitrogen cycle.",
+  "rows": [
+   {
+    "kind": "criterion",
+    "verbatim": "Diagram",
+    "marks": null,
+    "contextNote": "Diag. 4, 0m.",
+    "id": "r-1"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Nitrogen gas to useable compounds or to nitrates/ nitrogen fixation/ plant protein to animal protein/ excretion releasing nitrogenous compounds/ urea to ammonia(um)/ death and decomposition/ dead organic matter to ammonia(um)/ ammonium to nitrite/ nitrite to nitrate/ nitrification/ nitrates to plant protein/ nitrogen compounds to nitrogen gas/ denitrification/ role of lightning",
+    "marks": null,
+    "contextNote": "Any ten points, 2 marks each (10×2m), including these and the terms below.",
+    "id": "r-2"
+   },
+   {
+    "kind": "point",
+    "verbatim": "Any 2 of the following terms correctly placed on diagram: Rhizobium/ Azotobacter/ Nitrosomonas/ Nitrobacter",
+    "marks": null,
+    "id": "r-3"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "questionTotal",
+   "notation": "Diag. 4,0m + 10×2m"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q8(a)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q8bi",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q8(b)(i)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "grassland-management-practices",
+  "questionText": "Outline the principal practices required for good grassland management.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Sowing / seed mixture used / reseeding / weed control / establishment method / fertility or soil pH - liming / grazing methods / recovery time (3 weeks for grazing or 6 weeks for silage) / planning for hay or silage or grass herbage requirements / stocking rate / topping (promotes tillering)",
+    "marks": 12,
+    "contextNote": "Any four, 3 marks each (4×3m).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Sowing",
+      "seed mixture used",
+      "reseeding",
+      "weed control",
+      "establishment method",
+      "fertility or soil pH - liming",
+      "grazing methods",
+      "recovery time (3 weeks for grazing or 6 weeks for silage)",
+      "planning for hay or silage or grass herbage requirements",
+      "stocking rate",
+      "topping (promotes tillering)"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q8(b)(i)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q8bii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q8(b)(ii)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "mixed-grazing-benefits",
+  "questionText": "Give two benefits of mixed grazing.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Sheep grazing close to ground or to base of grass increases tillering (denser sward) / more DM / sheep eat around cattle dung pats or fewer tufts of grass formed or cattle more selective grazers than sheep or more grass utilised / more recycling of nutrients (different dung + urine composition) / fewer parasite problems (in each type of animal) / more productivity (10-15%) / sheep eat ragwort",
+    "marks": 6,
+    "contextNote": "Any two, 3 marks each (2×3m).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Sheep grazing close to ground or to base of grass increases tillering (denser sward)",
+      "more DM",
+      "sheep eat around cattle dung pats or fewer tufts of grass formed or cattle more selective grazers than sheep or more grass utilised",
+      "more recycling of nutrients (different dung + urine composition)",
+      "fewer parasite problems (in each type of animal)",
+      "more productivity (10-15%)",
+      "sheep eat ragwort"
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q8(b)(ii)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q8biii",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q8(b)(iii)",
+  "topicId": "agsci-4-3-1",
+  "curriculumNodeIds": [
+   "agricultural-science-3-3",
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "livestock-units",
+  "questionText": "1. What is meant by the term livestock units? 2. Give two examples to show your understanding of the term livestock units.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Measurement of livestock grazing / equivalent to food consumed by a mature (550 kg) liveweight cow",
+    "marks": 4,
+    "contextNote": "Livestock unit (LU) definition: 2 + 2m.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Measurement of livestock grazing",
+      "equivalent to food consumed by a mature (550 kg) liveweight cow"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "2 year old cattle = 1.0 LU / 1-2 year old cattle = 0.6 LU / Less than a year old = 0.4 LU / Sheep = each ewe or ram = 0.2 LU / Sheep 1 > year = 0.16LU / Sheep < 1 year = 0.1LU / Horse = 1-1.5 LU",
+    "marks": 2,
+    "contextNote": "Examples: any two, 1 mark each (2×1m).",
+    "group": {
+     "claimMax": 2,
+     "perOption": 1,
+     "options": [
+      "2 year old cattle = 1.0 LU",
+      "1-2 year old cattle = 0.6 LU",
+      "Less than a year old = 0.4 LU",
+      "Sheep = each ewe or ram = 0.2 LU",
+      "Sheep 1 > year = 0.16LU",
+      "Sheep < 1 year = 0.1LU",
+      "Horse = 1-1.5 LU"
+     ]
+    },
+    "id": "r-2"
+   }
+  ],
+  "totalMarks": 6,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q8(b)(iii)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q8c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q8(c)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-3-0",
+   "agricultural-science-1-0",
+   "agricultural-science-2-3"
+  ],
+  "conceptId": "distinguishing-paired-terms",
+  "questionText": "Distinguish between the members of any three of the following pairs of terms: (i) Top dressing and topping. (ii) Hepatic vein and hepatic portal vein. (iii) Raised bog and blanket bog. (iv) Tilling and tillering.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "fertilizer (in any form) / added to the surface (of the soil or to the growing crop)",
+    "marks": 4,
+    "contextNote": "(i) Topdressing: two points, 2 + 2. 3×(4+4)m: each term 4, split into 2 + 2, for any three pairs.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "fertilizer (in any form)",
+      "added to the surface (of the soil or to the growing crop)"
+     ]
+    },
+    "id": "r-1"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "mowing grass to a height of 5-7 cm / encourages tillering / removes old grass / aids weed control / adds organic matter",
+    "marks": 4,
+    "contextNote": "(i) Topping: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "mowing grass to a height of 5-7 cm",
+      "encourages tillering",
+      "removes old grass",
+      "aids weed control",
+      "adds organic matter"
+     ]
+    },
+    "id": "r-2"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "brings blood away from the liver / to inferior vena cava or to heart",
+    "marks": 4,
+    "contextNote": "(ii) Hepatic vein: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "brings blood away from the liver",
+      "to inferior vena cava or to heart"
+     ]
+    },
+    "id": "r-3"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "carries blood rich in nutrients / from the small intestine / to the liver",
+    "marks": 4,
+    "contextNote": "(ii) Hepatic portal vein: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "carries blood rich in nutrients",
+      "from the small intestine",
+      "to the liver"
+     ]
+    },
+    "id": "r-4"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "formed in lakes or hollows or river valleys / accumulation of organic matter closes the lake over (rises above surface level) / very deep / more agricultural value",
+    "marks": 4,
+    "contextNote": "(iii) Raised bog: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "formed in lakes or hollows or river valleys",
+      "accumulation of organic matter closes the lake over (rises above surface level)",
+      "very deep",
+      "more agricultural value"
+     ]
+    },
+    "id": "r-5"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "high rainfall / high humidity / mountains / west coast / covers landscape / shallow",
+    "marks": 4,
+    "contextNote": "(iii) Blanket bog: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "high rainfall",
+      "high humidity",
+      "mountains",
+      "west coast",
+      "covers landscape",
+      "shallow"
+     ]
+    },
+    "id": "r-6"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "the process involved in preparing a seed-bed / involves ploughing / harrowing or rotavating / sowing / rolling (single pass or minimum tillage system explained)",
+    "marks": 4,
+    "contextNote": "(iv) Tilling: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "the process involved in preparing a seed-bed",
+      "involves ploughing",
+      "harrowing or rotavating",
+      "sowing",
+      "rolling (single pass or minimum tillage system explained)"
+     ]
+    },
+    "id": "r-7"
+   },
+   {
+    "kind": "anyN",
+    "verbatim": "The ability of plants belonging to family Gramineae / to produce side shoots / from buds / at the base of the plant",
+    "marks": 4,
+    "contextNote": "(iv) Tillering: two points, 2 + 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "The ability of plants belonging to family Gramineae",
+      "to produce side shoots",
+      "from buds",
+      "at the base of the plant"
+     ]
+    },
+    "id": "r-8"
+   }
+  ],
+  "totalMarks": 24,
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "answer": 6,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q8(c)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Answer any two of the parts (a), (b), (c).",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q9a",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q9(a)",
+  "topicId": "agsci-3-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6"
+  ],
+  "conceptId": "rancid-silage",
+  "questionText": "Give a scientific explanation for: The formation of rancid silage.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Fermentation by clostridia / of carbohydrates / into butyric acid / wet harvesting encourages clostridia or dilutes sugar concentration / not enough lactic acid to lower pH or pH too high to prevent clostridial activity / not wilted / no additive used / low carbohydrate levels / lack of anaerobic conditions / contamination from soil or slurry or FYM",
+    "marks": 12,
+    "contextNote": "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 7,
+     "options": [
+      "Fermentation by clostridia",
+      "of carbohydrates",
+      "into butyric acid",
+      "wet harvesting encourages clostridia or dilutes sugar concentration",
+      "not enough lactic acid to lower pH or pH too high to prevent clostridial activity",
+      "not wilted",
+      "no additive used",
+      "low carbohydrate levels",
+      "lack of anaerobic conditions",
+      "contamination from soil or slurry or FYM"
+     ],
+     "perOptionSteps": [
+      7,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q9(a)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q9b",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q9(b)",
+  "topicId": "agsci-3-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-2-6",
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "slurry-before-silage",
+  "questionText": "Give a scientific explanation for: Spreading slurry at least seven weeks before cutting grass for silage.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Allow light in for photosynthetic activity / avoid caking on grass / allow time to act / allow time to decompose / provides nutrients for growth / avoid contamination of silage / grass needs 6 weeks to grow",
+    "marks": 12,
+    "contextNote": "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 7,
+     "options": [
+      "Allow light in for photosynthetic activity",
+      "avoid caking on grass",
+      "allow time to act",
+      "allow time to decompose",
+      "provides nutrients for growth",
+      "avoid contamination of silage",
+      "grass needs 6 weeks to grow"
+     ],
+     "perOptionSteps": [
+      7,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q9(b)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q9c",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q9(c)",
+  "topicId": "agsci-2-3",
+  "curriculumNodeIds": [
+   "agricultural-science-1-6"
+  ],
+  "conceptId": "hedgerow-retention",
+  "questionText": "Give a scientific explanation for: Retention and conservation of hedgerows on a farm.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Protection for flora or fauna or food chain / promote diversity / shelter for crops or animals or buildings or warmer soil / noise reduction or aesthetic / REPS or environmental scheme / wildlife habitat or corridor / boundaries",
+    "marks": 12,
+    "contextNote": "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 7,
+     "options": [
+      "Protection for flora or fauna or food chain",
+      "promote diversity",
+      "shelter for crops or animals or buildings or warmer soil",
+      "noise reduction or aesthetic",
+      "REPS or environmental scheme",
+      "wildlife habitat or corridor",
+      "boundaries"
+     ],
+     "perOptionSteps": [
+      7,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q9(c)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q9d",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q9(d)",
+  "topicId": "agsci-4-3-2",
+  "curriculumNodeIds": [
+   "agricultural-science-3-4"
+  ],
+  "conceptId": "dairy-milk-testing",
+  "questionText": "Give a scientific explanation for: The testing of milk by dairies.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Test for bacteria to show hygiene (TBC) / test for white blood cells to show mastitis levels (SCC) / antibiotic test to show presence or not (Delvo test) / water test to show dilution / sediment test to show particle contamination / thermoduric test counts number of thermo resistant bacteria / test for % milk solids",
+    "marks": 12,
+    "contextNote": "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 7,
+     "options": [
+      "Test for bacteria to show hygiene (TBC)",
+      "test for white blood cells to show mastitis levels (SCC)",
+      "antibiotic test to show presence or not (Delvo test)",
+      "water test to show dilution",
+      "sediment test to show particle contamination",
+      "thermoduric test counts number of thermo resistant bacteria",
+      "test for % milk solids"
+     ],
+     "perOptionSteps": [
+      7,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q9(d)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
+  "id": "agsci-2015-hl-q9e",
+  "subjectId": "agricultural-science",
+  "year": 2015,
+  "level": "higher",
+  "section": "B",
+  "questionRef": "2015 HL Q9(e)",
+  "topicId": "agsci-4-3-3",
+  "curriculumNodeIds": [
+   "agricultural-science-3-5"
+  ],
+  "conceptId": "burdizzo-castration",
+  "questionText": "Give a scientific explanation for: Using a burdizzo in beef rearing enterprises.",
+  "rows": [
+   {
+    "kind": "anyN",
+    "verbatim": "Castration of male animals (bulls) / prevents unwanted breeding / crushes spermatic cord / cuts off blood supply to the testes / safety (easier to manage animals) / produces steers or bullocks for beef (small market for bull beef or tainted meat) / less risk of infection",
+    "marks": 12,
+    "contextNote": "Any three points. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (7 + 3 + 2).",
+    "group": {
+     "claimMax": 3,
+     "perOption": 7,
+     "options": [
+      "Castration of male animals (bulls)",
+      "prevents unwanted breeding",
+      "crushes spermatic cord",
+      "cuts off blood supply to the testes",
+      "safety (easier to manage animals)",
+      "produces steers or bullocks for beef (small market for bull beef or tainted meat)",
+      "less risk of infection"
+     ],
+     "perOptionSteps": [
+      7,
+      3,
+      2
+     ]
+    },
+    "id": "r-1"
+   }
+  ],
+  "totalMarks": 12,
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "sourceMaterial": {
+   "kind": "source-text",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Agricultural Science 2015 Higher — Q9(e)",
+   "pages": [
+    5
+   ],
+   "attribution": "SEC Agricultural Science 2015 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+  },
+  "stem": "Give scientific explanations for any four of the following:",
+  "qa": {
+   "gates": [
+    "verbatim",
+    "tariff",
+    "figure",
+    "source-crop"
+   ],
+   "humanReviewedBy": "agent-source-reviewed",
+   "humanReviewedAt": "2026-10-14"
+  }
+ },
+ {
   "id": "agsci-2025-hl-q2a",
   "topicId": "agsci-3-2",
   "conceptId": "plant-lifecycles",
