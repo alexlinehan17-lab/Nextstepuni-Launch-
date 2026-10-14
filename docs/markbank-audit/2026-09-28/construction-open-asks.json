@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-14T09:39:27.699053+00:00",
+  "measuredAt": "2026-10-14T09:49:05.268443+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 886,
-    "contentHash": "b1d6b20414999b72",
-    "coveragePct": 70.6,
-    "covered": 595,
+    "cards": 902,
+    "contentHash": "dde1990180953e20",
+    "coveragePct": 71.1,
+    "covered": 599,
     "excluded": 0,
     "leaves": 843,
-    "open": 248,
+    "open": 244,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "40bc6a486a3af7a5"
+    "refsHash": "ac8c51da84c7310b"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 248,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2017 Higher, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 244,
   "papers": [
     {
       "year": 2010,
@@ -374,13 +374,8 @@
       "year": 2017,
       "level": "hl",
       "leaves": 29,
-      "covered": 25,
-      "open": [
-        "Q10-alt",
-        "Q1(a)",
-        "Q5(a)",
-        "Q9(b)"
-      ]
+      "covered": 29,
+      "open": []
     },
     {
       "year": 2017,

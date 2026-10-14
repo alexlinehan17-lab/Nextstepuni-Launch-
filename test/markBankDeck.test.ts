@@ -282,11 +282,13 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_higher.py): the three printed requirements, note 4 + sketch 4 each.
     expect(card.totalMarks).toBe(24);
-    expect(card.rows).toHaveLength(1);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 3, perOption: 8 });
-    expect(card.rows[0].group?.options).toHaveLength(16);
-    expect(card.rows[0].group?.options.join(' ')).not.toMatch(/Concrete block wall|Positives|Negatives/);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual(
+      [1, 2, 3].map(i => [`Functional requirement ${i} (Note and Sketch)`, 8]),
+    );
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/Concrete block wall|Positives|Negatives/);
   });
 
   test('2017 OL Q9(c) remains the ten-mark patio question', () => {
