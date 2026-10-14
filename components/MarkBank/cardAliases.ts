@@ -145,4 +145,13 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "cons-2017-ol-q8-None-wind-turbine": "cons-2017-ol-q8-None-hand-rail",
   "cons-2017-ol-q8-None-joist-hanger": "cons-2017-ol-q8-None-hand-rail",
   "cons-2017-ol-q8-None-service-cavity": "cons-2017-ol-q8-None-hand-rail",
+  /* 2026-10-14. Construction Studies 2016 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2016-ol-q8-None-lever-valve and their progress goes to it. */
+  "cons-2016-ol-q8-None-mortice-and-tenon-joint": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-thermal-bridge": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-dual-flush-toilet": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-smart-meter": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-solar-gain": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-low-e-glazing": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-access-ramp": "cons-2016-ol-q8-None-lever-valve",
 };

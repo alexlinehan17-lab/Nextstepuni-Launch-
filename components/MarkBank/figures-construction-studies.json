@@ -4884,5 +4884,201 @@
     "alt": "SEC 2016 Higher marking scheme notes on advantages and disadvantages of the Passive House standard as a planning requirement.",
     "attribution": "SEC Leaving Certificate Construction Studies 2016 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2016-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-original.png",
+    "md5": "1508988b348b7a4b3937f95bea35d0ab",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and timber-finished ground floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-original.png",
+    "md5": "5125bf465a90ef1f7294e4c7c369598b",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 2: the printed question with a sketch of the attic with its rafters, joists and water tank.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-original.png",
+    "md5": "7229923e45683f0ea4b1eadbf6b02738",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 3: the printed question with a section of the house with the stove, cylinder, tanks and solar collector.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-original.png",
+    "md5": "b80806830299db68539245778b41596c",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 4: the printed question with a sketch of a house with a sunspace on its gable.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-original.png",
+    "md5": "d924a73baa427eb43a228fecc665e76f",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 5: the printed question with a sketch of a cut string stairs to a landing.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-original.png",
+    "md5": "f8a66776338047f6d176a105bd89b5f8",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 6: the printed question with a sketch of a bowl being turned on a lathe.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-original.png",
+    "md5": "fc72ca5b61a4792ab39c615870a65771",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 7: the printed question with a sketch of a stud partition with a door between two bedrooms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q8-original.png",
+    "md5": "80dac17369d696d8a4b12f7bca6d7fff",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 8: the printed instruction and the nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-original.png",
+    "md5": "f4e4da754d1a1e38e4b3867bb091d669",
+    "alt": "Original SEC 2016 Ordinary Construction Studies Question 9: the printed question with a sketch of a timber-clad garden room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2016-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q1-scheme.png",
+    "md5": "2467eef206923d6e76ee84441093a832",
+    "alt": "SEC model sections through the strip foundation, cavity wall and ground floor with the thermal-bridge detail marked (b), the specification list and the notes for part (b).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q2-attic": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-attic.png",
+    "md5": "be4f81ba1596f93a5d13e6598b0c32a9",
+    "alt": "SEC model sketches of the insulated attic, the insulated tank on its supports and the lagged pipework.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q2-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q2-reasons.png",
+    "md5": "6992e96616f5ae257a6a94e9c0dec58a",
+    "alt": "SEC 2016 Ordinary marking scheme notes on reasons to insulate the attic first.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-system.png",
+    "md5": "0f34a2bac83bb19ab0a493bd8319441f",
+    "alt": "SEC model sketch of the stove, cylinder, tanks and solar collector pipework, with the secondary and primary circulation details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q3-solar": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-solar.png",
+    "md5": "88337d1d82c7d9128c9e4892d1d84281",
+    "alt": "SEC 2016 Ordinary marking scheme notes on connecting the solar collector to the cylinder.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q3-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q3-advantages.png",
+    "md5": "29d53c7d8f4e7ecf97adfc9ba341da48",
+    "alt": "SEC 2016 Ordinary marking scheme notes on advantages of a solar collector for hot water.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q4-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-reasons.png",
+    "md5": "d49c4e3137f779addd00493aca29cd2d",
+    "alt": "SEC 2016 Ordinary marking scheme notes on why planning permission is needed for the sunspace, with a sketch.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q4-documents": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-documents.png",
+    "md5": "8f64aa5ad6fc4612478cf1c08c3d30bd",
+    "alt": "SEC 2016 Ordinary marking scheme notes on the information on the site layout map and the newspaper planning notice.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q4-public": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q4-public.png",
+    "md5": "362c3e100e7618eb1140b0826a679228",
+    "alt": "SEC 2016 Ordinary marking scheme notes on why the public may view planning documents.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q5-scheme.png",
+    "md5": "dcd619b576138c36093141d96fea13dc",
+    "alt": "SEC model section through the bottom three steps of the cut string stairs with the baluster joint marked (b), and the details.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q6-precautions": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-precautions.png",
+    "md5": "9c36ec7cef7e2c47955596956b87a878",
+    "alt": "SEC 2016 Ordinary marking scheme notes on safety precautions with a scalpel, carrying a chisel and using contact adhesive.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q6-lathe": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q6-lathe.png",
+    "md5": "4c06a7e38a6a6bd09a25a416c438d2e0",
+    "alt": "SEC 2016 Ordinary marking scheme notes and sketches on safety precautions when turning a bowl on a lathe.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q7-partition": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-partition.png",
+    "md5": "9e969c3f4227142256f8a97086cf6ca8",
+    "alt": "SEC model sketches of the stud partition framing around the door opening, with typical sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q7-sound": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-sound.png",
+    "md5": "34776bc8d50b260eabe07d36ee22db61",
+    "alt": "SEC 2016 Ordinary marking scheme plan views and notes on reducing sound through the stud partition (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q7-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q7-finish.png",
+    "md5": "61b164cee6015df902ae2e76ac552521",
+    "alt": "SEC 2016 Ordinary marking scheme notes on two methods of finishing plasterboard before painting.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q8-terms.png",
+    "md5": "e696b1ae75a753bd6429f97aa1d613ed",
+    "alt": "SEC 2016 Ordinary marking scheme notes and sketches for all nine terms: lever valve, thermal bridge, solar gain, mortice and tenon joint, dual flush toilet, low-e glazing, cob wall, smart meter and access ramp (four pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q9-wood": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-wood.png",
+    "md5": "f897c700aad1d43f1b64b3a45dcc085b",
+    "alt": "SEC 2016 Ordinary marking scheme notes on suitable woods for cladding — cedar, larch and Douglas fir — and the reasons (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q9-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-finish.png",
+    "md5": "cba4f5de4d1972d479c0216459c9d667",
+    "alt": "SEC 2016 Ordinary marking scheme notes and sketches on applying a finish to the cladding.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2016-OL-q9-eco": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-OL-q9-eco.png",
+    "md5": "36c4378de77e717f363a5ea962219546",
+    "alt": "SEC 2016 Ordinary marking scheme notes on eco-friendly features of the garden room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
