@@ -4,6 +4,1046 @@
   "method": "Independent English 2010 and 2011 Higher/Ordinary, English 2012 Higher, plus Irish 2011 Ordinary, paper/scheme boundary review with exact option and semantic-subtask addresses. Finite internal choices are expanded mechanically. Authored cards and their review ledger are not inputs.",
   "papers": [
     {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "paperFileid": "LC024ALP000EV.pdf",
+      "sourceHashes": {
+        "exampapers": "f8f371d593303ab2cf6b5ebb216be59009e8b2e90f54e1ddafd85e033efe3fe6",
+        "markingschemes": "b58e95e957390478fb1eb0654b95b8b1cea59c5cbbefd8871ea5b43266c0ad40"
+      },
+      "status": "boundary-reviewed",
+      "baseTasks": [
+        {
+          "ref": "2017 HL Q1(a)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Species:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(b)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Biological control: Control of pests"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(b)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(c)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Structural differences:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(d)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Marble: Metamorphic"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(d)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(e)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "What determines amount of animal ration protein:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(e)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(f)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 5,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 5,
+            "text": "Leaf structure for photosynthesis:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(f)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(g)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "Dental formulae:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(g)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(h)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "N-fixing bacteria: Rhizobia"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(h)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(i)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "BCS for dairy cow:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q1(j)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 6,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 6,
+            "text": "FSH: Promotes follicle development"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q1(j)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(a)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "How water held in soil:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(a)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Benefits of artificial drainage:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(b)(i)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "How soil acidity increases over time:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Matching mechanisms of acid increase:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(b)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "Effects of increased acidity on crops:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q2(c)",
+          "marksPerResponse": 16,
+          "paperPage": 2,
+          "schemePage": 7,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 7,
+            "text": "to show cation exchange in soil:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q2(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (a)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Requirements for winter housing for beef weanlings:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (b)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Winter feeding programmes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Target weights:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (c)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Nutrient value:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (c)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Storage:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (c)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (c)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Spreading method:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (c)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option One (c)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 8,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 8,
+            "text": "Disadvantages of spreading:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option One (c)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (a)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Soil suitability:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (a)(ii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Sowing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (a)(iii)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Weed control:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (a)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (a)(iv)",
+          "marksPerResponse": 4,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Storage:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (a)(iv)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (b)",
+          "marksPerResponse": 16,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Cereal cultivation:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Barley",
+              "Wheat",
+              "Oats",
+              "Maize"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (b)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (c)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Cereal ripening changes:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q3 Option Two (c)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 3,
+          "schemePage": 9,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 9,
+            "text": "Tests on harvested grain:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q3 Option Two (c)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q4(a)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Compare digestibility of whole and rolled cereal grains:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Feeding trial",
+              "Test-tube method"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 HL Q4(a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q4(b)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Determine quality of pit or bale silage:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Leaf to stem ratio",
+              "pH test",
+              "To get DM content",
+              "For good quality silage (poor quality)"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 HL Q4(b)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q4(c)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Compare capillarity in two soils:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q4(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q4(d)",
+          "marksPerResponse": 24,
+          "paperPage": 4,
+          "schemePage": 11,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 11,
+            "text": "Measure rate of transpiration:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q4(d)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Qualitative tests on milk:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q5(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(a)(ii)",
+          "marksPerResponse": 8,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Description of any one quantitative test:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 1,
+            "options": [
+              "Gerber butterfat test",
+              "Adulteration of milk with water (lactometer)",
+              "Adulteration of milk with water (cryoscope)",
+              "% water or % solids",
+              "To find the % ash (or % minerals) in milk",
+              "To find the % lactose in milk",
+              "To find the % protein"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 HL Q5(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(b)(i)",
+          "marksPerResponse": 10,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Lowland sheep breeds:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q5(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(b)(ii)",
+          "marksPerResponse": 6,
+          "paperPage": 4,
+          "schemePage": 12,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 12,
+            "text": "Why crossbred ewes used in lowland enterprise:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q5(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(c)(i)",
+          "marksPerResponse": 4,
+          "paperPage": 4,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Reproductive efficiency:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q5(c)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q5(c)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 4,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Factors affecting reproductive efficiency:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q5(c)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q6(a)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "How DMD changes as grass grows:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q6(a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q6(b)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "Methods to maintain high grass DMD for longer:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q6(b)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q6(c)",
+          "marksPerResponse": 16,
+          "paperPage": 4,
+          "schemePage": 13,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 13,
+            "text": "How ruminant stomach suited to digestion of grassland plants:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q6(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(a)(i)",
+          "marksPerResponse": 8,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Performance testing:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(a)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(a)(ii)",
+          "marksPerResponse": 9,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Characteristics for selection of replacement heifers:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(a)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(b)(i)",
+          "marksPerResponse": 5,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Incomplete dominance:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(b)(ii)",
+          "marksPerResponse": 5,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Alleles:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(b)(iii)",
+          "marksPerResponse": 5,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "Continuous variation:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(b)(iii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q7(c)",
+          "marksPerResponse": 16,
+          "paperPage": 5,
+          "schemePage": 14,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 14,
+            "text": "All gametes correct"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q7(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q8(a)",
+          "marksPerResponse": 24,
+          "paperPage": 6,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Carbon cycle:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q8(a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q8(b)(i)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Principal structural features of insects:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q8(b)(i)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q8(b)(ii)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Insect pests and the damage they do:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q8(b)(ii)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q8(c)",
+          "marksPerResponse": 24,
+          "paperPage": 6,
+          "schemePage": 15,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 15,
+            "text": "Distinguish between terms:"
+          },
+          "selection": {
+            "kind": "closed",
+            "choose": 3,
+            "options": [
+              "i",
+              "ii",
+              "iii",
+              "iv"
+            ],
+            "pooled": true
+          },
+          "routes": [
+            "2017 HL Q8(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q9(a)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Environmental temperature and weight gain in pigs:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q9(a)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q9(b)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Dense conifer planting in forestry:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q9(b)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q9(c)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Low earthworm population in intensely cultivated soils:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q9(c)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q9(d)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Grit in free-range poultry digestive tracts:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q9(d)"
+          ]
+        },
+        {
+          "ref": "2017 HL Q9(e)",
+          "marksPerResponse": 12,
+          "paperPage": 6,
+          "schemePage": 16,
+          "sourceCue": {
+            "kind": "markingschemes",
+            "page": 16,
+            "text": "Deep ploughing podzolic soils:"
+          },
+          "selection": {
+            "kind": "none"
+          },
+          "routes": [
+            "2017 HL Q9(e)"
+          ]
+        }
+      ]
+    },
+    {
       "year": 2018,
       "level": "ordinary",
       "lang": "ev",
@@ -33074,7 +34114,7 @@
       "level": "higher",
       "lang": "ev",
       "paperFileid": "LC024ALP000EV.pdf",
-      "independentCensus": "open"
+      "independentCensus": "boundary-reviewed"
     },
     {
       "year": 2017,
@@ -33351,6 +34391,174 @@
     }
   ],
   "questionMarkChecks": [
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q1",
+      "units": {
+        "(a)": 10,
+        "(b)": 10,
+        "(c)": 10,
+        "(d)": 10,
+        "(e)": 10,
+        "(f)": 10,
+        "(g)": 10,
+        "(h)": 10,
+        "(i)": 10,
+        "(j)": 10
+      },
+      "choose": 6,
+      "candidateTotalsFromScheme": [
+        60
+      ],
+      "printedQuestionMarks": 60,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q2",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option One",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q3 Option Two",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q4",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24,
+        "(d)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q5",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q6",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q7",
+      "units": {
+        "all": 48
+      },
+      "choose": 1,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q8",
+      "units": {
+        "(a)": 24,
+        "(b)": 24,
+        "(c)": 24
+      },
+      "choose": 2,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "question": "Q9",
+      "units": {
+        "(a)": 12,
+        "(b)": 12,
+        "(c)": 12,
+        "(d)": 12,
+        "(e)": 12
+      },
+      "choose": 4,
+      "candidateTotalsFromScheme": [
+        48
+      ],
+      "printedQuestionMarks": 48,
+      "sourceException": null
+    },
     {
       "year": 2018,
       "level": "ordinary",

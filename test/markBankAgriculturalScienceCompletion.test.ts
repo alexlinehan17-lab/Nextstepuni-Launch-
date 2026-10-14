@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(44);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(43);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(27);
+    expect(review.paperReviews).toHaveLength(28);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -1117,6 +1117,29 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 7 ? 20 : 60]);
   });
 
+  it('authors every 2017 Higher task from the paper and scheme', () => {
+    const year = higher.filter(card => card.year === 2017);
+    expect(year).toHaveLength(58);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2017 HL'));
+    expect(tasks).toHaveLength(58);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    for (const [key, notation] of [['q1a', '2(4) + 2(1)'], ['q1b', '2(4) + 2(1)'], ['q1c', '2(4) + 2(1)'], ['q1h', '6 + 3 + 1'], ['q1i', '2(4) + 2(1)']] as const)
+      expect(get(`agsci-2017-hl-${key}`).tariffModel, key).toEqual({ kind: 'orderedSplit', notation });
+    expect(get('agsci-2017-hl-q1g').rows[0].group?.perOptionSteps).toEqual([6, 4]);
+    for (const [key, count] of [['q3o2b', 4], ['q4a', 2], ['q4b', 4], ['q5aii', 7]] as const)
+      expect(get(`agsci-2017-hl-${key}`).answerVariants, key).toHaveLength(count);
+    expect(get('agsci-2017-hl-q8c').tariffModel).toEqual({ kind: 'bestNofParts', answer: 6, ofParts: 8, perPart: 4 });
+    const units = census.questionMarkChecks.filter(check => check.year === 2017 && check.level === 'higher');
+    expect(units).toHaveLength(10);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1202,7 +1225,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(1791);
+    expect(atlas.markBankCards).toHaveLength(1849);
     for (const join of atlas.markBankCards) {
       const card = get(join.cardId);
       const task = review.tasks.find(task => task.cardIds.includes(join.cardId))!;

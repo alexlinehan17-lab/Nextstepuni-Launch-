@@ -2108,9 +2108,74 @@ Q13(d)(iii)|6|11|16|Two other teeth:
 Q13(d)(iv)|8|11|16|Dental formula
 '''
 POOLS_2018_ORDINARY = {'Q8(b)(iii)': (1, ['Nitrogen', 'Phosphorus', 'Potassium']), 'Q13(d)(iv)': (1, ['Pig', 'Sheep'])}
-MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY}
+# 2017 Higher (legacy syllabus), transcribed from the SEC paper and scheme.
+HIGHER_2017 = '''
+Q1(a)|10|2|5|Species:
+Q1(b)|10|2|5|Biological control: Control of pests
+Q1(c)|10|2|5|Structural differences:
+Q1(d)|10|2|5|Marble: Metamorphic
+Q1(e)|10|2|5|What determines amount of animal ration protein:
+Q1(f)|10|2|5|Leaf structure for photosynthesis:
+Q1(g)|10|2|6|Dental formulae:
+Q1(h)|10|2|6|N-fixing bacteria: Rhizobia
+Q1(i)|10|2|6|BCS for dairy cow:
+Q1(j)|10|2|6|FSH: Promotes follicle development
+Q2(a)(i)|10|2|7|How water held in soil:
+Q2(a)(ii)|6|2|7|Benefits of artificial drainage:
+Q2(b)(i)|6|2|7|How soil acidity increases over time:
+Q2(b)(ii)|6|2|7|Matching mechanisms of acid increase:
+Q2(b)(iii)|4|2|7|Effects of increased acidity on crops:
+Q2(c)|16|2|7|to show cation exchange in soil:
+Q3 Option One (a)|16|3|8|Requirements for winter housing for beef weanlings:
+Q3 Option One (b)(i)|10|3|8|Winter feeding programmes:
+Q3 Option One (b)(ii)|6|3|8|Target weights:
+Q3 Option One (c)(i)|4|3|8|Nutrient value:
+Q3 Option One (c)(ii)|4|3|8|Storage:
+Q3 Option One (c)(iii)|4|3|8|Spreading method:
+Q3 Option One (c)(iv)|4|3|8|Disadvantages of spreading:
+Q3 Option Two (a)(i)|4|3|9|Soil suitability:
+Q3 Option Two (a)(ii)|4|3|9|Sowing:
+Q3 Option Two (a)(iii)|4|3|9|Weed control:
+Q3 Option Two (a)(iv)|4|3|9|Storage:
+Q3 Option Two (b)|16|3|9|Cereal cultivation:
+Q3 Option Two (c)(i)|8|3|9|Cereal ripening changes:
+Q3 Option Two (c)(ii)|8|3|9|Tests on harvested grain:
+Q4(a)|24|4|11|Compare digestibility of whole and rolled cereal grains:
+Q4(b)|24|4|11|Determine quality of pit or bale silage:
+Q4(c)|24|4|11|Compare capillarity in two soils:
+Q4(d)|24|4|11|Measure rate of transpiration:
+Q5(a)(i)|8|4|12|Qualitative tests on milk:
+Q5(a)(ii)|8|4|12|Description of any one quantitative test:
+Q5(b)(i)|10|4|12|Lowland sheep breeds:
+Q5(b)(ii)|6|4|12|Why crossbred ewes used in lowland enterprise:
+Q5(c)(i)|4|4|13|Reproductive efficiency:
+Q5(c)(ii)|12|4|13|Factors affecting reproductive efficiency:
+Q6(a)|16|4|13|How DMD changes as grass grows:
+Q6(b)|16|4|13|Methods to maintain high grass DMD for longer:
+Q6(c)|16|4|13|How ruminant stomach suited to digestion of grassland plants:
+Q7(a)(i)|8|5|14|Performance testing:
+Q7(a)(ii)|9|5|14|Characteristics for selection of replacement heifers:
+Q7(b)(i)|5|5|14|Incomplete dominance:
+Q7(b)(ii)|5|5|14|Alleles:
+Q7(b)(iii)|5|5|14|Continuous variation:
+Q7(c)|16|5|14|All gametes correct
+Q8(a)|24|6|15|Carbon cycle:
+Q8(b)(i)|12|6|15|Principal structural features of insects:
+Q8(b)(ii)|12|6|15|Insect pests and the damage they do:
+Q8(c)|24|6|15|Distinguish between terms:
+Q9(a)|12|6|16|Environmental temperature and weight gain in pigs:
+Q9(b)|12|6|16|Dense conifer planting in forestry:
+Q9(c)|12|6|16|Low earthworm population in intensely cultivated soils:
+Q9(d)|12|6|16|Grit in free-range poultry digestive tracts:
+Q9(e)|12|6|16|Deep ploughing podzolic soils:
+'''
+POOLS_2017_HIGHER = {'Q3 Option Two (b)': (1, ['Barley', 'Wheat', 'Oats', 'Maize']), 'Q4(a)': (1, ['Feeding trial', 'Test-tube method']), 'Q4(b)': (1, ['Leaf to stem ratio', 'pH test', 'To get DM content', 'For good quality silage (poor quality)']), 'Q5(a)(ii)': (1, ['Gerber butterfat test', 'Adulteration of milk with water (lactometer)', 'Adulteration of milk with water (cryoscope)', '% water or % solids', 'To find the % ash (or % minerals) in milk', 'To find the % lactose in milk', 'To find the % protein'])}
+MODERN_POOLS = {(2026,'higher'):POOLS_2026_HIGHER, (2026,'ordinary'):POOLS_2026_ORDINARY, (2025,'higher'):POOLS_2025_HIGHER, (2025,'ordinary'):POOLS_2025_ORDINARY, (2024,'higher'):POOLS_2024_HIGHER, (2024,'ordinary'):POOLS_2024_ORDINARY, (2023,'higher'):POOLS_2023_HIGHER, (2023,'ordinary'):POOLS_2023_ORDINARY, (2022,'higher'):POOLS_2022_HIGHER, (2022,'ordinary'):POOLS_2022_ORDINARY, (2021,'higher'):POOLS_2021_HIGHER, (2021,'ordinary'):POOLS_2021_ORDINARY, (2020,'higher'):POOLS_2020_HIGHER, (2020,'ordinary'):POOLS_2020_ORDINARY, (2019,'higher'):POOLS_2019_HIGHER, (2019,'ordinary'):POOLS_2019_ORDINARY, (2018,'higher'):POOLS_2018_HIGHER, (2018,'ordinary'):POOLS_2018_ORDINARY, (2017,'higher'):POOLS_2017_HIGHER}
 
 SOURCES = [
+    (2017, 'higher', 'A', HIGHER_2017,
+     'f8f371d593303ab2cf6b5ebb216be59009e8b2e90f54e1ddafd85e033efe3fe6',
+     'b58e95e957390478fb1eb0654b95b8b1cea59c5cbbefd8871ea5b43266c0ad40'),
     (2018, 'ordinary', 'G', ORDINARY_2018,
      'e5eea810b3bab1e6eaed810445c4bba5c5f82bc82c2ea6749813e9edba0b5092',
      '026ce005742b5f959b269c48e7339ac770d3c9227d6f01cc741b29d9020bd932'),
@@ -2221,7 +2286,7 @@ def source_tasks():
                           'sourceCue':{'kind':kind,'page':page,'text':cue},
                           'selection':selection,
                           'routes':[f'{year} {tag} {route}' for route in routes]})
-        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60}[(year,level)]
+        assert len(tasks)=={(2010,'higher'):55,(2010,'ordinary'):85,(2011,'higher'):67,(2011,'ordinary'):81,(2012,'higher'):56,(2026,'higher'):91,(2026,'ordinary'):85,(2025,'higher'):89,(2025,'ordinary'):91,(2024,'higher'):81,(2024,'ordinary'):82,(2023,'higher'):85,(2023,'ordinary'):81,(2022,'higher'):101,(2022,'ordinary'):98,(2021,'higher'):106,(2021,'ordinary'):113,(2020,'higher'):60,(2020,'ordinary'):52,(2019,'higher'):61,(2019,'ordinary'):54,(2018,'higher'):57,(2018,'ordinary'):60,(2017,'higher'):58}[(year,level)]
         papers.append({'year':year,'level':level,'lang':lang,'paperFileid':fileid,
                        'sourceHashes':{'exampapers':paper_hash,'markingschemes':scheme_hash},
                        'status':'boundary-reviewed','baseTasks':tasks})
@@ -2366,7 +2431,7 @@ def main():
         OUTPUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     elif args.check:
         assert json.loads(OUTPUT.read_text())==data, 'Independent census stale'
-    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60. Remaining editions stay open.')
+    print('Source census (one card per base task; printed item choices are single cards): 2010 Higher 55; 2010 Ordinary 85; 2011 Higher 67; 2011 Ordinary English 81; 2011 Ordinary Irish 81; 2012 Higher 56; 2026 Higher 91; 2026 Ordinary 85; 2025 Higher 89; 2025 Ordinary 91; 2024 Higher 81; 2024 Ordinary 82; 2023 Higher 85; 2023 Ordinary 81; 2022 Higher 101; 2022 Ordinary 98; 2021 Higher 106; 2021 Ordinary 113; 2020 Higher 60; 2020 Ordinary 52; 2019 Higher 61; 2019 Ordinary 54; 2018 Higher 57; 2018 Ordinary 60; 2017 Higher 58. Remaining editions stay open.')
 
 
 if __name__=='__main__':

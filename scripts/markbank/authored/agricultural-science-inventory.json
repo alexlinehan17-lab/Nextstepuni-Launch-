@@ -1925,65 +1925,73 @@
         "sha256": "b58e95e957390478fb1eb0654b95b8b1cea59c5cbbefd8871ea5b43266c0ad40",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 58,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "07c959f16d7f8e85",
           "page": 1,
           "cue": "any six",
           "context": "_______________ THURSDAY, 22 JUNE – MORNING, 9.30 – 12.00 ________________________ Answer any six questions. Question 1 carries 60 marks. All other questions carry 48 marks each. Write all your answers in the answer book. Total Marks: 300 marks [OVER]",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Six of nine independent examination questions; every question is retained."
         },
         {
           "id": "977236632ed1560c",
           "page": 2,
           "cue": "any six",
           "context": "Page 2 of 8 1. Answer any six of the parts (a) to (j). (a) (i) Name two species that might be included in a seed mixture in a short‐term ley for silage. (ii) Give a reason for each choice. (b) (i) Explain the term biological control. (ii) Give two examples of",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q1: six of ten separately priced lettered parts; all ten are retained."
         },
         {
           "id": "eb8d9a835963f21b",
           "page": 4,
           "cue": "any two",
           "context": "Page 4 of 8 4. In the case of any two of the following, describe a laboratory or field method: (a) To compare the digestibility of whole and rolled cereal grains. (b) To determine the quality of silage in a pit or bale. (c) To compare capillarity in two named soil ty",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q4: two of four independently priced 24-mark methods; all four are retained."
         },
         {
           "id": "9f30ad8295679c77",
           "page": 4,
           "cue": "any one",
           "context": "sts normally carried out on milk. (ii) Describe how you would carry out in the laboratory any one of the quantitative tests referred to above. (b) (i) Name two lowland sheep breeds and describe their bodily characteristics. (ii) Explain fully why crossbred ewes are frequently used in a lowland sheep enterprise. (c) Reproducti",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q5(a)(ii): any one quantitative milk test. The scheme describes each test, kept as answer routes on one card."
         },
         {
           "id": "8f043bb6e203c388",
           "page": 6,
           "cue": "any two",
           "context": "Page 6 of 8 8. Answer any two of the parts (a), (b), (c). (a) Describe, with the aid of a labelled diagram, the carbon cycle. (b) Phylum Arthropoda contains millions of species. Class Insecta (insects) is the class from this phylum with the greatest agricultu",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q8: two of three independently priced 24-mark parts; all three are retained."
         },
         {
           "id": "2f64a64ba040b797",
           "page": 6,
           "cue": "any two",
           "context": "icultural importance. (i) Outline the principal structural features of insects. (ii) Name any two insect pests in agriculture and describe the damage they cause to named crops or animals. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Flushing and sponging. (ii) Aspect and topogr",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q8(b)(ii): any two insect pests with their damage; the scheme gives two examples (a marking menu)."
         },
         {
           "id": "ab6b026e92d18fa2",
           "page": 6,
           "cue": "any three",
           "context": "mage they cause to named crops or animals. (c) Distinguish clearly between the members of any three of the following pairs of terms: (i) Flushing and sponging. (ii) Aspect and topography. (iii) Zoonoses and notifiable diseases. (iv) Stem tuber and rhizome. (48 marks) 9. Give scientific explanations for any four of the following",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q8(c): any three of four printed pairs of terms. One card lists the eight members as parts and counts the best six (three pairs)."
         },
         {
           "id": "cdba7f87d55816fd",
           "page": 6,
           "cue": "any four",
           "context": "ble diseases. (iv) Stem tuber and rhizome. (48 marks) 9. Give scientific explanations for any four of the following: (a) The influence of environmental temperature on weight gain in pigs. (b) The dense planting of coniferous trees in a forestry plantation. (c) The low earthworm population in intensively cultivated soils. (d) T",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q9: four of five independently priced 12-mark explanations; all five are retained."
         }
       ]
     },
@@ -2002,7 +2010,7 @@
         "sha256": "0d79312410ff2c3b910ed1a80f3472f6057ba7a1c28f72a27f96695610f49e35",
         "pages": 20
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 58,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [
