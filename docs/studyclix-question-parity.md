@@ -1,6 +1,6 @@
 # StudyClix official-question parity ledger
 
-Generated: 2026-09-05T22:46:33.874Z
+Generated: 2026-10-11T17:45:32.573Z
 
 This is the question-level completion ledger. Mock questions are excluded. A
 topic is complete only when every factual StudyClix State-exam heading points
@@ -11,7 +11,7 @@ paper/marking-scheme boundary has been visually checked.
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | accounting | 43 | 442 | 326 | 116 | 0 | 43 |
 | agricultural-science | 35 | 1,027 | 794 | 233 | 0 | 28 |
-| applied-mathematics | 33 | 369 | 277 | 92 | 0 | 21 |
+| applied-mathematics | 33 | 369 | 271 | 92 | 0 | 22 |
 | art | 32 | 690 | 592 | 98 | 0 | 26 |
 | biology | 122 | 2,419 | 1,561 | 858 | 0 | 110 |
 | business | 105 | 3,075 | 2,008 | 1,067 | 0 | 100 |
@@ -34,7 +34,7 @@ paper/marking-scheme boundary has been visually checked.
 | link-modules | 10 | 181 | 136 | 45 | 0 | 10 |
 | mathematics | 55 | 1,768 | 1,298 | 470 | 0 | 49 |
 | music | 34 | 646 | 459 | 187 | 0 | 31 |
-| physical-education | 88 | 1,265 | 963 | 302 | 0 | 75 |
+| physical-education | 88 | 1,265 | 951 | 302 | 0 | 77 |
 | physics | 113 | 2,482 | 1,703 | 779 | 0 | 110 |
 | physics-and-chemistry | 28 | 706 | 626 | 80 | 0 | 22 |
 | politics-and-society | 20 | 524 | 445 | 79 | 0 | 17 |
@@ -42,8 +42,9 @@ paper/marking-scheme boundary has been visually checked.
 | spanish | 33 | 471 | 397 | 74 | 0 | 27 |
 | technology | 37 | 1,190 | 1,118 | 72 | 0 | 26 |
 
-Total: **1,609 topics**, **37,105 official topic associations**,
-**27,247 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
+Total: **1,609 topics**, **37,105 official topic associations**, 
+**27,229 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
 
 The machine-readable companion contains every non-matched heading under its
 exact subject and topic: `data/examTopics/studyclix-question-parity.json`.
+

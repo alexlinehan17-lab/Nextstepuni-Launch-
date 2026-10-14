@@ -79,8 +79,8 @@
   "ordinary": 150
  },
  "applied-maths": {
-  "higher": 175,
-  "ordinary": 208
+  "higher": 716,
+  "ordinary": 770
  },
  "german": {
   "higher": 111,
@@ -184,10 +184,18 @@
   "ordinary": 238
  },
  "physical-education": {
-  "higher": 125,
-  "ordinary": 96
+  "higher": 382,
+  "ordinary": 390
  },
  "maltese": {
   "higher": 29
+ },
+ "politics-and-society": {
+  "higher": 263,
+  "ordinary": 360
+ },
+ "accounting": {
+  "higher": 721,
+  "ordinary": 644
  }
 }

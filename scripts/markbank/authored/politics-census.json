@@ -1,0 +1,2620 @@
+{
+  "v": 1,
+  "method": "Pinned after the visual 17-paper/17-scheme census in politics_reviewed.py and independently handwritten printed boundary inventory in politics_audit.py. Do not regenerate to make coverage pass. 2026-10-12: choose-N and choose-one tasks are one card each (choice is not a route); the 498 per-option and per-combination entries were folded into their 34 printed tasks in place. 2026-10-12 (later): 2021 OL Q1(f) is one card per syllabus topic of its printed options (civil service; NGOs or statutory bodies).",
+  "expectedCards": {
+    "total": 623
+  },
+  "papers": [
+    {
+      "year": 2018,
+      "level": "higher",
+      "expectedCards": 31,
+      "cards": [
+        {
+          "cardId": "politics-2018-hl-q1-a-thinker",
+          "questionRef": "2018 HL Q1(a) — Thinker"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-a-philosophy",
+          "questionRef": "2018 HL Q1(a) — Political philosophy"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-b-i",
+          "questionRef": "2018 HL Q1(b)(i)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-b-ii",
+          "questionRef": "2018 HL Q1(b)(ii)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-c",
+          "questionRef": "2018 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-d",
+          "questionRef": "2018 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-e",
+          "questionRef": "2018 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-f",
+          "questionRef": "2018 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-g-advantage",
+          "questionRef": "2018 HL Q1(g) — Advantage"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-g-disadvantage",
+          "questionRef": "2018 HL Q1(g) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-h",
+          "questionRef": "2018 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-i-i",
+          "questionRef": "2018 HL Q1(i)(i)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-i-ii",
+          "questionRef": "2018 HL Q1(i)(ii)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-j",
+          "questionRef": "2018 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-k",
+          "questionRef": "2018 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2018-hl-q1-l",
+          "questionRef": "2018 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-a",
+          "questionRef": "2018 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-b",
+          "questionRef": "2018 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-c-developed-country",
+          "questionRef": "2018 HL Q2(c) — Developed country"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-c-developing-country",
+          "questionRef": "2018 HL Q2(c) — Developing country"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-d-authorship",
+          "questionRef": "2018 HL Q2(d) — Authorship"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-d-bias",
+          "questionRef": "2018 HL Q2(d) — Potential bias"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-d-policy-relevance",
+          "questionRef": "2018 HL Q2(d) — Policy relevance"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-e",
+          "questionRef": "2018 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2018-hl-q2-f",
+          "questionRef": "2018 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2018-hl-q3",
+          "questionRef": "2018 HL Q3"
+        },
+        {
+          "cardId": "politics-2018-hl-q4-a",
+          "questionRef": "2018 HL Q4(a)"
+        },
+        {
+          "cardId": "politics-2018-hl-q4-b",
+          "questionRef": "2018 HL Q4(b)"
+        },
+        {
+          "cardId": "politics-2018-hl-q5-a",
+          "questionRef": "2018 HL Q5(a)"
+        },
+        {
+          "cardId": "politics-2018-hl-q5-b",
+          "questionRef": "2018 HL Q5(b)"
+        },
+        {
+          "cardId": "politics-2018-hl-q6",
+          "questionRef": "2018 HL Q6"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "expectedCards": 51,
+      "cards": [
+        {
+          "cardId": "politics-2018-ol-q1-a",
+          "questionRef": "2018 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-b-i",
+          "questionRef": "2018 OL Q1(b)(i)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-b-ii",
+          "questionRef": "2018 OL Q1(b)(ii)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-c",
+          "questionRef": "2018 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-d",
+          "questionRef": "2018 OL Q1(d)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-e-i",
+          "questionRef": "2018 OL Q1(e)(i)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-e-ii-strength",
+          "questionRef": "2018 OL Q1(e)(ii) — Strength"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-e-ii-limitation",
+          "questionRef": "2018 OL Q1(e)(ii) — Limitation"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-f",
+          "questionRef": "2018 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-g-definition",
+          "questionRef": "2018 OL Q1(g) — Definition"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-g-example",
+          "questionRef": "2018 OL Q1(g) — Example"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-h",
+          "questionRef": "2018 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-i-definition",
+          "questionRef": "2018 OL Q1(i) — Definition"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-i-example",
+          "questionRef": "2018 OL Q1(i) — Example"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-j-definition",
+          "questionRef": "2018 OL Q1(j) — Definition"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-j-example",
+          "questionRef": "2018 OL Q1(j) — Example"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-k-role",
+          "questionRef": "2018 OL Q1(k) — Role"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-k-example",
+          "questionRef": "2018 OL Q1(k) — Example"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-l",
+          "questionRef": "2018 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-m",
+          "questionRef": "2018 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-n-definition",
+          "questionRef": "2018 OL Q1(n) — Definition"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-n-example",
+          "questionRef": "2018 OL Q1(n) — Example"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-o-i",
+          "questionRef": "2018 OL Q1(o)(i)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-o-ii",
+          "questionRef": "2018 OL Q1(o)(ii)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-p",
+          "questionRef": "2018 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-q",
+          "questionRef": "2018 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-r",
+          "questionRef": "2018 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-s",
+          "questionRef": "2018 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-t-statement-1",
+          "questionRef": "2018 OL Q1(t) — First statement"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-t-statement-2",
+          "questionRef": "2018 OL Q1(t) — Second statement"
+        },
+        {
+          "cardId": "politics-2018-ol-q1-t-statement-3",
+          "questionRef": "2018 OL Q1(t) — Third statement"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-a",
+          "questionRef": "2018 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-b",
+          "questionRef": "2018 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-c",
+          "questionRef": "2018 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-d",
+          "questionRef": "2018 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-e",
+          "questionRef": "2018 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2018-ol-q2-f",
+          "questionRef": "2018 OL Q2(f)"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-a",
+          "questionRef": "2018 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-b-strengths",
+          "questionRef": "2018 OL Q3(b) — Strengths"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-b-limitations",
+          "questionRef": "2018 OL Q3(b) — Limitations"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-c",
+          "questionRef": "2018 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-d",
+          "questionRef": "2018 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2018-ol-q3-e",
+          "questionRef": "2018 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2018-ol-q4-a",
+          "questionRef": "2018 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2018-ol-q4-b",
+          "questionRef": "2018 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2018-ol-q5",
+          "questionRef": "2018 OL Q5"
+        },
+        {
+          "cardId": "politics-2018-ol-q6",
+          "questionRef": "2018 OL Q6"
+        },
+        {
+          "cardId": "politics-2018-ol-q7",
+          "questionRef": "2018 OL Q7"
+        },
+        {
+          "cardId": "politics-2018-ol-q8",
+          "questionRef": "2018 OL Q8"
+        },
+        {
+          "cardId": "politics-2018-ol-q9",
+          "questionRef": "2018 OL Q9"
+        },
+        {
+          "cardId": "politics-2018-ol-q10",
+          "questionRef": "2018 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "expectedCards": 29,
+      "cards": [
+        {
+          "cardId": "politics-2019-hl-q1-a-definitions",
+          "questionRef": "2019 HL Q1(a) — Definitions"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-a-absolute-example",
+          "questionRef": "2019 HL Q1(a) — Absolute-right example"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-a-qualified-example",
+          "questionRef": "2019 HL Q1(a) — Qualified-right example"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-b",
+          "questionRef": "2019 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-c",
+          "questionRef": "2019 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-d",
+          "questionRef": "2019 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-e",
+          "questionRef": "2019 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-f",
+          "questionRef": "2019 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-g",
+          "questionRef": "2019 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-h-role",
+          "questionRef": "2019 HL Q1(h) — Role"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-h-aspect",
+          "questionRef": "2019 HL Q1(h) — Aspect"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-i",
+          "questionRef": "2019 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-j",
+          "questionRef": "2019 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-k",
+          "questionRef": "2019 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2019-hl-q1-l",
+          "questionRef": "2019 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-a",
+          "questionRef": "2019 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-b",
+          "questionRef": "2019 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-c-positive",
+          "questionRef": "2019 HL Q2(c) — Positive aspect"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-c-negative",
+          "questionRef": "2019 HL Q2(c) — Negative aspect"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-d",
+          "questionRef": "2019 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-e",
+          "questionRef": "2019 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-f",
+          "questionRef": "2019 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2019-hl-q2-g",
+          "questionRef": "2019 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2019-hl-q3-a",
+          "questionRef": "2019 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2019-hl-q3-b",
+          "questionRef": "2019 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2019-hl-q4",
+          "questionRef": "2019 HL Q4"
+        },
+        {
+          "cardId": "politics-2019-hl-q5",
+          "questionRef": "2019 HL Q5"
+        },
+        {
+          "cardId": "politics-2019-hl-q6-a",
+          "questionRef": "2019 HL Q6(a)"
+        },
+        {
+          "cardId": "politics-2019-hl-q6-b",
+          "questionRef": "2019 HL Q6(b)"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "expectedCards": 47,
+      "cards": [
+        {
+          "cardId": "politics-2019-ol-q1-a",
+          "questionRef": "2019 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-b",
+          "questionRef": "2019 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-c",
+          "questionRef": "2019 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-d",
+          "questionRef": "2019 OL Q1(d)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-e",
+          "questionRef": "2019 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-f",
+          "questionRef": "2019 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-g",
+          "questionRef": "2019 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-h",
+          "questionRef": "2019 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-i",
+          "questionRef": "2019 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-j-definition",
+          "questionRef": "2019 OL Q1(j) — Definition"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-j-example",
+          "questionRef": "2019 OL Q1(j) — Example"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-k",
+          "questionRef": "2019 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-l",
+          "questionRef": "2019 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-m",
+          "questionRef": "2019 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-n",
+          "questionRef": "2019 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-o",
+          "questionRef": "2019 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-p",
+          "questionRef": "2019 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-q",
+          "questionRef": "2019 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-r-conclusion",
+          "questionRef": "2019 OL Q1(r) — Conclusion"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-r-advantage",
+          "questionRef": "2019 OL Q1(r) — Advantage"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-r-disadvantage",
+          "questionRef": "2019 OL Q1(r) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-s",
+          "questionRef": "2019 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-t",
+          "questionRef": "2019 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-u-i",
+          "questionRef": "2019 OL Q1(u)(i)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-u-ii",
+          "questionRef": "2019 OL Q1(u)(ii)"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-u-iii-advantage",
+          "questionRef": "2019 OL Q1(u)(iii) — Advantage"
+        },
+        {
+          "cardId": "politics-2019-ol-q1-u-iii-disadvantage",
+          "questionRef": "2019 OL Q1(u)(iii) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2019-ol-q2-a",
+          "questionRef": "2019 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2019-ol-q2-b",
+          "questionRef": "2019 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2019-ol-q2-c",
+          "questionRef": "2019 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2019-ol-q2-d",
+          "questionRef": "2019 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2019-ol-q2-e",
+          "questionRef": "2019 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-a",
+          "questionRef": "2019 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-b",
+          "questionRef": "2019 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-c",
+          "questionRef": "2019 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-d",
+          "questionRef": "2019 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-e-advantages",
+          "questionRef": "2019 OL Q3(e) — Advantages"
+        },
+        {
+          "cardId": "politics-2019-ol-q3-e-disadvantage",
+          "questionRef": "2019 OL Q3(e) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2019-ol-q4-a",
+          "questionRef": "2019 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2019-ol-q4-b",
+          "questionRef": "2019 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2019-ol-q4-c",
+          "questionRef": "2019 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2019-ol-q5",
+          "questionRef": "2019 OL Q5"
+        },
+        {
+          "cardId": "politics-2019-ol-q6",
+          "questionRef": "2019 OL Q6"
+        },
+        {
+          "cardId": "politics-2019-ol-q7",
+          "questionRef": "2019 OL Q7"
+        },
+        {
+          "cardId": "politics-2019-ol-q8",
+          "questionRef": "2019 OL Q8"
+        },
+        {
+          "cardId": "politics-2019-ol-q9",
+          "questionRef": "2019 OL Q9"
+        },
+        {
+          "cardId": "politics-2019-ol-q10",
+          "questionRef": "2019 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "expectedCards": 30,
+      "cards": [
+        {
+          "cardId": "politics-2020-hl-q1-a-role",
+          "questionRef": "2020 HL Q1(a) — Role"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-a-argument",
+          "questionRef": "2020 HL Q1(a) — Argument"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-b",
+          "questionRef": "2020 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-c",
+          "questionRef": "2020 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-d",
+          "questionRef": "2020 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-e",
+          "questionRef": "2020 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-f",
+          "questionRef": "2020 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-g",
+          "questionRef": "2020 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-h-explanation",
+          "questionRef": "2020 HL Q1(h) — Explanation"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-h-example",
+          "questionRef": "2020 HL Q1(h) — Irish example"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-i",
+          "questionRef": "2020 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-j",
+          "questionRef": "2020 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-k",
+          "questionRef": "2020 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2020-hl-q1-l",
+          "questionRef": "2020 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-a-positive",
+          "questionRef": "2020 HL Q2(a) — Positive aspect"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-a-negative",
+          "questionRef": "2020 HL Q2(a) — Negative aspect"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-b",
+          "questionRef": "2020 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-c-positive",
+          "questionRef": "2020 HL Q2(c) — Positive aspect"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-c-negative",
+          "questionRef": "2020 HL Q2(c) — Negative aspect"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-d",
+          "questionRef": "2020 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-e",
+          "questionRef": "2020 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-f-circumstances",
+          "questionRef": "2020 HL Q2(f) — Socio-economic circumstances"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-f-challenges",
+          "questionRef": "2020 HL Q2(f) — Daily challenges"
+        },
+        {
+          "cardId": "politics-2020-hl-q2-g",
+          "questionRef": "2020 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2020-hl-q3-a",
+          "questionRef": "2020 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2020-hl-q3-b",
+          "questionRef": "2020 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2020-hl-q4",
+          "questionRef": "2020 HL Q4"
+        },
+        {
+          "cardId": "politics-2020-hl-q5",
+          "questionRef": "2020 HL Q5"
+        },
+        {
+          "cardId": "politics-2020-hl-q6-a",
+          "questionRef": "2020 HL Q6(a)"
+        },
+        {
+          "cardId": "politics-2020-hl-q6-b",
+          "questionRef": "2020 HL Q6(b)"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "expectedCards": 29,
+      "cards": [
+        {
+          "cardId": "politics-2021-hl-q1-a",
+          "questionRef": "2021 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-b",
+          "questionRef": "2021 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-c",
+          "questionRef": "2021 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-d",
+          "questionRef": "2021 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-e",
+          "questionRef": "2021 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-f",
+          "questionRef": "2021 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-g",
+          "questionRef": "2021 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-h",
+          "questionRef": "2021 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-i",
+          "questionRef": "2021 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-j",
+          "questionRef": "2021 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-k",
+          "questionRef": "2021 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-l",
+          "questionRef": "2021 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-m",
+          "questionRef": "2021 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-n",
+          "questionRef": "2021 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2021-hl-q1-o",
+          "questionRef": "2021 HL Q1(o)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-a",
+          "questionRef": "2021 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-b",
+          "questionRef": "2021 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-c-positive",
+          "questionRef": "2021 HL Q2(c) — Positive aspect"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-c-negative",
+          "questionRef": "2021 HL Q2(c) — Negative aspect"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-d",
+          "questionRef": "2021 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-e",
+          "questionRef": "2021 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-f",
+          "questionRef": "2021 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2021-hl-q2-g",
+          "questionRef": "2021 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2021-hl-q3",
+          "questionRef": "2021 HL Q3"
+        },
+        {
+          "cardId": "politics-2021-hl-q4-a",
+          "questionRef": "2021 HL Q4(a)"
+        },
+        {
+          "cardId": "politics-2021-hl-q4-b",
+          "questionRef": "2021 HL Q4(b)"
+        },
+        {
+          "cardId": "politics-2021-hl-q5",
+          "questionRef": "2021 HL Q5"
+        },
+        {
+          "cardId": "politics-2021-hl-q6",
+          "questionRef": "2021 HL Q6"
+        },
+        {
+          "cardId": "politics-2021-hl-q7",
+          "questionRef": "2021 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "expectedCards": 46,
+      "cards": [
+        {
+          "cardId": "politics-2021-ol-q1-a",
+          "questionRef": "2021 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-b",
+          "questionRef": "2021 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-c",
+          "questionRef": "2021 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-d-theory",
+          "questionRef": "2021 OL Q1(d) — Theory of government"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-d-thinker",
+          "questionRef": "2021 OL Q1(d) — Thinker"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-e",
+          "questionRef": "2021 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-f-civil-service",
+          "questionRef": "2021 OL Q1(f) — Civil service"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-f-ngo-statutory",
+          "questionRef": "2021 OL Q1(f) — Non-governmental organisations or Statutory bodies"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-g",
+          "questionRef": "2021 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-h",
+          "questionRef": "2021 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-i",
+          "questionRef": "2021 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-j",
+          "questionRef": "2021 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-k",
+          "questionRef": "2021 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-l",
+          "questionRef": "2021 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-m",
+          "questionRef": "2021 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-n",
+          "questionRef": "2021 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-o",
+          "questionRef": "2021 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-p",
+          "questionRef": "2021 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-q-i",
+          "questionRef": "2021 OL Q1(q)(i)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-q-ii-advantage",
+          "questionRef": "2021 OL Q1(q)(ii) — Advantage"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-q-ii-disadvantage",
+          "questionRef": "2021 OL Q1(q)(ii) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-q-iii",
+          "questionRef": "2021 OL Q1(q)(iii)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-r",
+          "questionRef": "2021 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-s",
+          "questionRef": "2021 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2021-ol-q1-t",
+          "questionRef": "2021 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2021-ol-q2-a",
+          "questionRef": "2021 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2021-ol-q2-b",
+          "questionRef": "2021 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2021-ol-q2-c",
+          "questionRef": "2021 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2021-ol-q2-d",
+          "questionRef": "2021 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2021-ol-q2-e",
+          "questionRef": "2021 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-a",
+          "questionRef": "2021 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-b",
+          "questionRef": "2021 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-c",
+          "questionRef": "2021 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-d",
+          "questionRef": "2021 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-e-advantage",
+          "questionRef": "2021 OL Q3(e) — Advantage"
+        },
+        {
+          "cardId": "politics-2021-ol-q3-e-disadvantage",
+          "questionRef": "2021 OL Q3(e) — Disadvantage"
+        },
+        {
+          "cardId": "politics-2021-ol-q4-a",
+          "questionRef": "2021 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2021-ol-q4-b",
+          "questionRef": "2021 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2021-ol-q4-c",
+          "questionRef": "2021 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2021-ol-q4-d",
+          "questionRef": "2021 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2021-ol-q5",
+          "questionRef": "2021 OL Q5"
+        },
+        {
+          "cardId": "politics-2021-ol-q6",
+          "questionRef": "2021 OL Q6"
+        },
+        {
+          "cardId": "politics-2021-ol-q7",
+          "questionRef": "2021 OL Q7"
+        },
+        {
+          "cardId": "politics-2021-ol-q8",
+          "questionRef": "2021 OL Q8"
+        },
+        {
+          "cardId": "politics-2021-ol-q9",
+          "questionRef": "2021 OL Q9"
+        },
+        {
+          "cardId": "politics-2021-ol-q10",
+          "questionRef": "2021 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "expectedCards": 30,
+      "cards": [
+        {
+          "cardId": "politics-2022-hl-q1-a",
+          "questionRef": "2022 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-b",
+          "questionRef": "2022 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-c-explanation",
+          "questionRef": "2022 HL Q1(c) — Cartoon message"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-c-thinker",
+          "questionRef": "2022 HL Q1(c) — Key thinker"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-d",
+          "questionRef": "2022 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-e",
+          "questionRef": "2022 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-f",
+          "questionRef": "2022 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-g",
+          "questionRef": "2022 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-h",
+          "questionRef": "2022 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-i",
+          "questionRef": "2022 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-j",
+          "questionRef": "2022 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-k",
+          "questionRef": "2022 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-l",
+          "questionRef": "2022 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-m",
+          "questionRef": "2022 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-n",
+          "questionRef": "2022 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2022-hl-q1-o",
+          "questionRef": "2022 HL Q1(o)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-a",
+          "questionRef": "2022 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-b",
+          "questionRef": "2022 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-c-positive",
+          "questionRef": "2022 HL Q2(c) — Positive aspect"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-c-negative",
+          "questionRef": "2022 HL Q2(c) — Negative aspect"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-d",
+          "questionRef": "2022 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-e",
+          "questionRef": "2022 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-f",
+          "questionRef": "2022 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2022-hl-q2-g",
+          "questionRef": "2022 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2022-hl-q3-a",
+          "questionRef": "2022 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2022-hl-q3-b",
+          "questionRef": "2022 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2022-hl-q4",
+          "questionRef": "2022 HL Q4"
+        },
+        {
+          "cardId": "politics-2022-hl-q5",
+          "questionRef": "2022 HL Q5"
+        },
+        {
+          "cardId": "politics-2022-hl-q6",
+          "questionRef": "2022 HL Q6"
+        },
+        {
+          "cardId": "politics-2022-hl-q7",
+          "questionRef": "2022 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "expectedCards": 42,
+      "cards": [
+        {
+          "cardId": "politics-2022-ol-q1-a",
+          "questionRef": "2022 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-b",
+          "questionRef": "2022 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-c",
+          "questionRef": "2022 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-d-i",
+          "questionRef": "2022 OL Q1(d)(i)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-d-ii",
+          "questionRef": "2022 OL Q1(d)(ii)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-d-iii",
+          "questionRef": "2022 OL Q1(d)(iii)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-e",
+          "questionRef": "2022 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-f",
+          "questionRef": "2022 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-g",
+          "questionRef": "2022 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-h",
+          "questionRef": "2022 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-i",
+          "questionRef": "2022 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-j",
+          "questionRef": "2022 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-k",
+          "questionRef": "2022 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-l",
+          "questionRef": "2022 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-m",
+          "questionRef": "2022 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-n",
+          "questionRef": "2022 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-o",
+          "questionRef": "2022 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-p",
+          "questionRef": "2022 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-q",
+          "questionRef": "2022 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-r",
+          "questionRef": "2022 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-s",
+          "questionRef": "2022 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2022-ol-q1-t",
+          "questionRef": "2022 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2022-ol-q2-a",
+          "questionRef": "2022 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2022-ol-q2-b",
+          "questionRef": "2022 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2022-ol-q2-c",
+          "questionRef": "2022 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2022-ol-q2-d",
+          "questionRef": "2022 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2022-ol-q2-e",
+          "questionRef": "2022 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2022-ol-q3-a",
+          "questionRef": "2022 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2022-ol-q3-b",
+          "questionRef": "2022 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2022-ol-q3-c",
+          "questionRef": "2022 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2022-ol-q3-d",
+          "questionRef": "2022 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2022-ol-q3-e",
+          "questionRef": "2022 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2022-ol-q4-a",
+          "questionRef": "2022 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2022-ol-q4-b",
+          "questionRef": "2022 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2022-ol-q4-c",
+          "questionRef": "2022 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2022-ol-q4-d",
+          "questionRef": "2022 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2022-ol-q5",
+          "questionRef": "2022 OL Q5"
+        },
+        {
+          "cardId": "politics-2022-ol-q6",
+          "questionRef": "2022 OL Q6"
+        },
+        {
+          "cardId": "politics-2022-ol-q7",
+          "questionRef": "2022 OL Q7"
+        },
+        {
+          "cardId": "politics-2022-ol-q8",
+          "questionRef": "2022 OL Q8"
+        },
+        {
+          "cardId": "politics-2022-ol-q9",
+          "questionRef": "2022 OL Q9"
+        },
+        {
+          "cardId": "politics-2022-ol-q10",
+          "questionRef": "2022 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "expectedCards": 28,
+      "cards": [
+        {
+          "cardId": "politics-2023-hl-q1-a",
+          "questionRef": "2023 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-b",
+          "questionRef": "2023 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-c",
+          "questionRef": "2023 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-d",
+          "questionRef": "2023 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-e",
+          "questionRef": "2023 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-f",
+          "questionRef": "2023 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-g",
+          "questionRef": "2023 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-h",
+          "questionRef": "2023 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-i",
+          "questionRef": "2023 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-j",
+          "questionRef": "2023 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-k",
+          "questionRef": "2023 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-l",
+          "questionRef": "2023 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-m",
+          "questionRef": "2023 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-n",
+          "questionRef": "2023 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2023-hl-q1-o",
+          "questionRef": "2023 HL Q1(o)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-a",
+          "questionRef": "2023 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-b",
+          "questionRef": "2023 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-c",
+          "questionRef": "2023 HL Q2(c)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-d",
+          "questionRef": "2023 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-e",
+          "questionRef": "2023 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-f",
+          "questionRef": "2023 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2023-hl-q2-g",
+          "questionRef": "2023 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2023-hl-q3",
+          "questionRef": "2023 HL Q3"
+        },
+        {
+          "cardId": "politics-2023-hl-q4-a",
+          "questionRef": "2023 HL Q4(a)"
+        },
+        {
+          "cardId": "politics-2023-hl-q4-b",
+          "questionRef": "2023 HL Q4(b)"
+        },
+        {
+          "cardId": "politics-2023-hl-q5",
+          "questionRef": "2023 HL Q5"
+        },
+        {
+          "cardId": "politics-2023-hl-q6",
+          "questionRef": "2023 HL Q6"
+        },
+        {
+          "cardId": "politics-2023-hl-q7",
+          "questionRef": "2023 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "expectedCards": 44,
+      "cards": [
+        {
+          "cardId": "politics-2023-ol-q1-a",
+          "questionRef": "2023 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-b-left-wing",
+          "questionRef": "2023 OL Q1(b) — Left wing"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-b-right-wing",
+          "questionRef": "2023 OL Q1(b) — Right wing"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-c",
+          "questionRef": "2023 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-d",
+          "questionRef": "2023 OL Q1(d)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-e",
+          "questionRef": "2023 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-f",
+          "questionRef": "2023 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-g",
+          "questionRef": "2023 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-h-i",
+          "questionRef": "2023 OL Q1(h)(i)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-h-ii",
+          "questionRef": "2023 OL Q1(h)(ii)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-h-iii",
+          "questionRef": "2023 OL Q1(h)(iii)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-i",
+          "questionRef": "2023 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-j",
+          "questionRef": "2023 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-k",
+          "questionRef": "2023 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-l",
+          "questionRef": "2023 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-m",
+          "questionRef": "2023 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-n",
+          "questionRef": "2023 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-o",
+          "questionRef": "2023 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-p",
+          "questionRef": "2023 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-q",
+          "questionRef": "2023 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-r",
+          "questionRef": "2023 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-s",
+          "questionRef": "2023 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2023-ol-q1-t",
+          "questionRef": "2023 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2023-ol-q2-a",
+          "questionRef": "2023 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2023-ol-q2-b",
+          "questionRef": "2023 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2023-ol-q2-c",
+          "questionRef": "2023 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2023-ol-q2-d",
+          "questionRef": "2023 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2023-ol-q2-e",
+          "questionRef": "2023 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-a",
+          "questionRef": "2023 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-b-strength",
+          "questionRef": "2023 OL Q3(b) — Strength"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-b-limitation",
+          "questionRef": "2023 OL Q3(b) — Limitation"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-c",
+          "questionRef": "2023 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-d",
+          "questionRef": "2023 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2023-ol-q3-e",
+          "questionRef": "2023 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2023-ol-q4-a",
+          "questionRef": "2023 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2023-ol-q4-b",
+          "questionRef": "2023 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2023-ol-q4-c",
+          "questionRef": "2023 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2023-ol-q4-d",
+          "questionRef": "2023 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2023-ol-q5",
+          "questionRef": "2023 OL Q5"
+        },
+        {
+          "cardId": "politics-2023-ol-q6",
+          "questionRef": "2023 OL Q6"
+        },
+        {
+          "cardId": "politics-2023-ol-q7",
+          "questionRef": "2023 OL Q7"
+        },
+        {
+          "cardId": "politics-2023-ol-q8",
+          "questionRef": "2023 OL Q8"
+        },
+        {
+          "cardId": "politics-2023-ol-q9",
+          "questionRef": "2023 OL Q9"
+        },
+        {
+          "cardId": "politics-2023-ol-q10",
+          "questionRef": "2023 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "expectedCards": 28,
+      "cards": [
+        {
+          "cardId": "politics-2024-hl-q1-a",
+          "questionRef": "2024 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-b",
+          "questionRef": "2024 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-c",
+          "questionRef": "2024 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-d",
+          "questionRef": "2024 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-e",
+          "questionRef": "2024 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-f",
+          "questionRef": "2024 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-g",
+          "questionRef": "2024 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-h",
+          "questionRef": "2024 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-i",
+          "questionRef": "2024 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-j",
+          "questionRef": "2024 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-k",
+          "questionRef": "2024 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-l",
+          "questionRef": "2024 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-m",
+          "questionRef": "2024 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-n",
+          "questionRef": "2024 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2024-hl-q1-o",
+          "questionRef": "2024 HL Q1(o)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-a",
+          "questionRef": "2024 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-b",
+          "questionRef": "2024 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-c",
+          "questionRef": "2024 HL Q2(c)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-d",
+          "questionRef": "2024 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-e",
+          "questionRef": "2024 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-f",
+          "questionRef": "2024 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2024-hl-q2-g",
+          "questionRef": "2024 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2024-hl-q3-a",
+          "questionRef": "2024 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2024-hl-q3-b",
+          "questionRef": "2024 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2024-hl-q4",
+          "questionRef": "2024 HL Q4"
+        },
+        {
+          "cardId": "politics-2024-hl-q5",
+          "questionRef": "2024 HL Q5"
+        },
+        {
+          "cardId": "politics-2024-hl-q6",
+          "questionRef": "2024 HL Q6"
+        },
+        {
+          "cardId": "politics-2024-hl-q7",
+          "questionRef": "2024 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "expectedCards": 42,
+      "cards": [
+        {
+          "cardId": "politics-2024-ol-q1-a",
+          "questionRef": "2024 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-b",
+          "questionRef": "2024 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-c",
+          "questionRef": "2024 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-d-i",
+          "questionRef": "2024 OL Q1(d)(i)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-d-ii",
+          "questionRef": "2024 OL Q1(d)(ii)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-d-iii",
+          "questionRef": "2024 OL Q1(d)(iii)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-e",
+          "questionRef": "2024 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-f",
+          "questionRef": "2024 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-g",
+          "questionRef": "2024 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-h",
+          "questionRef": "2024 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-i",
+          "questionRef": "2024 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-j",
+          "questionRef": "2024 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-k",
+          "questionRef": "2024 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-l",
+          "questionRef": "2024 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-m",
+          "questionRef": "2024 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-n",
+          "questionRef": "2024 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-o",
+          "questionRef": "2024 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-p",
+          "questionRef": "2024 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-q",
+          "questionRef": "2024 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-r",
+          "questionRef": "2024 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-s",
+          "questionRef": "2024 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2024-ol-q1-t",
+          "questionRef": "2024 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2024-ol-q2-a",
+          "questionRef": "2024 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2024-ol-q2-b",
+          "questionRef": "2024 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2024-ol-q2-c",
+          "questionRef": "2024 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2024-ol-q2-d",
+          "questionRef": "2024 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2024-ol-q2-e",
+          "questionRef": "2024 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2024-ol-q3-a",
+          "questionRef": "2024 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2024-ol-q3-b",
+          "questionRef": "2024 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2024-ol-q3-c",
+          "questionRef": "2024 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2024-ol-q3-d",
+          "questionRef": "2024 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2024-ol-q3-e",
+          "questionRef": "2024 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2024-ol-q4-a",
+          "questionRef": "2024 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2024-ol-q4-b",
+          "questionRef": "2024 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2024-ol-q4-c",
+          "questionRef": "2024 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2024-ol-q4-d",
+          "questionRef": "2024 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2024-ol-q5",
+          "questionRef": "2024 OL Q5"
+        },
+        {
+          "cardId": "politics-2024-ol-q6",
+          "questionRef": "2024 OL Q6"
+        },
+        {
+          "cardId": "politics-2024-ol-q7",
+          "questionRef": "2024 OL Q7"
+        },
+        {
+          "cardId": "politics-2024-ol-q8",
+          "questionRef": "2024 OL Q8"
+        },
+        {
+          "cardId": "politics-2024-ol-q9",
+          "questionRef": "2024 OL Q9"
+        },
+        {
+          "cardId": "politics-2024-ol-q10",
+          "questionRef": "2024 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "expectedCards": 29,
+      "cards": [
+        {
+          "cardId": "politics-2025-hl-q1-a",
+          "questionRef": "2025 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-b",
+          "questionRef": "2025 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-c",
+          "questionRef": "2025 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-d",
+          "questionRef": "2025 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-e",
+          "questionRef": "2025 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-f",
+          "questionRef": "2025 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-g",
+          "questionRef": "2025 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-h",
+          "questionRef": "2025 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-i",
+          "questionRef": "2025 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-j",
+          "questionRef": "2025 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-k",
+          "questionRef": "2025 HL Q1(k)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-l",
+          "questionRef": "2025 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-m",
+          "questionRef": "2025 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-n",
+          "questionRef": "2025 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-o-thinker",
+          "questionRef": "2025 HL Q1(o) — Key thinker"
+        },
+        {
+          "cardId": "politics-2025-hl-q1-o-theory",
+          "questionRef": "2025 HL Q1(o) — Theory"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-a",
+          "questionRef": "2025 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-b",
+          "questionRef": "2025 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-c",
+          "questionRef": "2025 HL Q2(c)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-d",
+          "questionRef": "2025 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-e",
+          "questionRef": "2025 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-f",
+          "questionRef": "2025 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2025-hl-q2-g",
+          "questionRef": "2025 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2025-hl-q3-a",
+          "questionRef": "2025 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2025-hl-q3-b",
+          "questionRef": "2025 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2025-hl-q4",
+          "questionRef": "2025 HL Q4"
+        },
+        {
+          "cardId": "politics-2025-hl-q5",
+          "questionRef": "2025 HL Q5"
+        },
+        {
+          "cardId": "politics-2025-hl-q6",
+          "questionRef": "2025 HL Q6"
+        },
+        {
+          "cardId": "politics-2025-hl-q7",
+          "questionRef": "2025 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "expectedCards": 44,
+      "cards": [
+        {
+          "cardId": "politics-2025-ol-q1-a",
+          "questionRef": "2025 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-b",
+          "questionRef": "2025 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-c",
+          "questionRef": "2025 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-d-i",
+          "questionRef": "2025 OL Q1(d)(i)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-d-ii",
+          "questionRef": "2025 OL Q1(d)(ii)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-d-iii",
+          "questionRef": "2025 OL Q1(d)(iii)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-e",
+          "questionRef": "2025 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-f",
+          "questionRef": "2025 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-g",
+          "questionRef": "2025 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-h",
+          "questionRef": "2025 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-i",
+          "questionRef": "2025 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-j",
+          "questionRef": "2025 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-k",
+          "questionRef": "2025 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-l",
+          "questionRef": "2025 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-m",
+          "questionRef": "2025 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-n",
+          "questionRef": "2025 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-o",
+          "questionRef": "2025 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-p",
+          "questionRef": "2025 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-q",
+          "questionRef": "2025 OL Q1(q)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-r-description",
+          "questionRef": "2025 OL Q1(r) — Description"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-r-example",
+          "questionRef": "2025 OL Q1(r) — Example"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-s",
+          "questionRef": "2025 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2025-ol-q1-t",
+          "questionRef": "2025 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2025-ol-q2-a",
+          "questionRef": "2025 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2025-ol-q2-b",
+          "questionRef": "2025 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2025-ol-q2-c",
+          "questionRef": "2025 OL Q2(c)"
+        },
+        {
+          "cardId": "politics-2025-ol-q2-d",
+          "questionRef": "2025 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2025-ol-q2-e",
+          "questionRef": "2025 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2025-ol-q3-a",
+          "questionRef": "2025 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2025-ol-q3-b",
+          "questionRef": "2025 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2025-ol-q3-c",
+          "questionRef": "2025 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2025-ol-q3-d",
+          "questionRef": "2025 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2025-ol-q3-e",
+          "questionRef": "2025 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2025-ol-q4-a-similarity",
+          "questionRef": "2025 OL Q4(a) — Similarity"
+        },
+        {
+          "cardId": "politics-2025-ol-q4-a-difference",
+          "questionRef": "2025 OL Q4(a) — Difference"
+        },
+        {
+          "cardId": "politics-2025-ol-q4-b",
+          "questionRef": "2025 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2025-ol-q4-c",
+          "questionRef": "2025 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2025-ol-q4-d",
+          "questionRef": "2025 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2025-ol-q5",
+          "questionRef": "2025 OL Q5"
+        },
+        {
+          "cardId": "politics-2025-ol-q6",
+          "questionRef": "2025 OL Q6"
+        },
+        {
+          "cardId": "politics-2025-ol-q7",
+          "questionRef": "2025 OL Q7"
+        },
+        {
+          "cardId": "politics-2025-ol-q8",
+          "questionRef": "2025 OL Q8"
+        },
+        {
+          "cardId": "politics-2025-ol-q9",
+          "questionRef": "2025 OL Q9"
+        },
+        {
+          "cardId": "politics-2025-ol-q10",
+          "questionRef": "2025 OL Q10"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "expectedCards": 29,
+      "cards": [
+        {
+          "cardId": "politics-2026-hl-q1-a",
+          "questionRef": "2026 HL Q1(a)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-b",
+          "questionRef": "2026 HL Q1(b)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-c",
+          "questionRef": "2026 HL Q1(c)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-d",
+          "questionRef": "2026 HL Q1(d)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-e",
+          "questionRef": "2026 HL Q1(e)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-f",
+          "questionRef": "2026 HL Q1(f)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-g",
+          "questionRef": "2026 HL Q1(g)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-h",
+          "questionRef": "2026 HL Q1(h)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-i",
+          "questionRef": "2026 HL Q1(i)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-j",
+          "questionRef": "2026 HL Q1(j)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-k-definition",
+          "questionRef": "2026 HL Q1(k) — Definition"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-k-example",
+          "questionRef": "2026 HL Q1(k) — Example"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-l",
+          "questionRef": "2026 HL Q1(l)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-m",
+          "questionRef": "2026 HL Q1(m)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-n",
+          "questionRef": "2026 HL Q1(n)"
+        },
+        {
+          "cardId": "politics-2026-hl-q1-o",
+          "questionRef": "2026 HL Q1(o)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-a",
+          "questionRef": "2026 HL Q2(a)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-b",
+          "questionRef": "2026 HL Q2(b)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-c",
+          "questionRef": "2026 HL Q2(c)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-d",
+          "questionRef": "2026 HL Q2(d)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-e",
+          "questionRef": "2026 HL Q2(e)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-f",
+          "questionRef": "2026 HL Q2(f)"
+        },
+        {
+          "cardId": "politics-2026-hl-q2-g",
+          "questionRef": "2026 HL Q2(g)"
+        },
+        {
+          "cardId": "politics-2026-hl-q3-a",
+          "questionRef": "2026 HL Q3(a)"
+        },
+        {
+          "cardId": "politics-2026-hl-q3-b",
+          "questionRef": "2026 HL Q3(b)"
+        },
+        {
+          "cardId": "politics-2026-hl-q4",
+          "questionRef": "2026 HL Q4"
+        },
+        {
+          "cardId": "politics-2026-hl-q5",
+          "questionRef": "2026 HL Q5"
+        },
+        {
+          "cardId": "politics-2026-hl-q6",
+          "questionRef": "2026 HL Q6"
+        },
+        {
+          "cardId": "politics-2026-hl-q7",
+          "questionRef": "2026 HL Q7"
+        }
+      ]
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "expectedCards": 44,
+      "cards": [
+        {
+          "cardId": "politics-2026-ol-q1-a",
+          "questionRef": "2026 OL Q1(a)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-b",
+          "questionRef": "2026 OL Q1(b)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-c",
+          "questionRef": "2026 OL Q1(c)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-d-i",
+          "questionRef": "2026 OL Q1(d)(i)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-d-ii",
+          "questionRef": "2026 OL Q1(d)(ii)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-d-iii",
+          "questionRef": "2026 OL Q1(d)(iii)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-e",
+          "questionRef": "2026 OL Q1(e)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-f",
+          "questionRef": "2026 OL Q1(f)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-g",
+          "questionRef": "2026 OL Q1(g)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-h",
+          "questionRef": "2026 OL Q1(h)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-i",
+          "questionRef": "2026 OL Q1(i)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-j",
+          "questionRef": "2026 OL Q1(j)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-k",
+          "questionRef": "2026 OL Q1(k)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-l",
+          "questionRef": "2026 OL Q1(l)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-m",
+          "questionRef": "2026 OL Q1(m)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-n",
+          "questionRef": "2026 OL Q1(n)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-o",
+          "questionRef": "2026 OL Q1(o)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-p",
+          "questionRef": "2026 OL Q1(p)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-q-definition",
+          "questionRef": "2026 OL Q1(q) — Definition"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-q-example",
+          "questionRef": "2026 OL Q1(q) — Example"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-r",
+          "questionRef": "2026 OL Q1(r)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-s",
+          "questionRef": "2026 OL Q1(s)"
+        },
+        {
+          "cardId": "politics-2026-ol-q1-t",
+          "questionRef": "2026 OL Q1(t)"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-a",
+          "questionRef": "2026 OL Q2(a)"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-b",
+          "questionRef": "2026 OL Q2(b)"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-c-2024",
+          "questionRef": "2026 OL Q2(c) — 2024 grade"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-c-2025",
+          "questionRef": "2026 OL Q2(c) — 2025 grade"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-d",
+          "questionRef": "2026 OL Q2(d)"
+        },
+        {
+          "cardId": "politics-2026-ol-q2-e",
+          "questionRef": "2026 OL Q2(e)"
+        },
+        {
+          "cardId": "politics-2026-ol-q3-a",
+          "questionRef": "2026 OL Q3(a)"
+        },
+        {
+          "cardId": "politics-2026-ol-q3-b",
+          "questionRef": "2026 OL Q3(b)"
+        },
+        {
+          "cardId": "politics-2026-ol-q3-c",
+          "questionRef": "2026 OL Q3(c)"
+        },
+        {
+          "cardId": "politics-2026-ol-q3-d",
+          "questionRef": "2026 OL Q3(d)"
+        },
+        {
+          "cardId": "politics-2026-ol-q3-e",
+          "questionRef": "2026 OL Q3(e)"
+        },
+        {
+          "cardId": "politics-2026-ol-q4-a",
+          "questionRef": "2026 OL Q4(a)"
+        },
+        {
+          "cardId": "politics-2026-ol-q4-b",
+          "questionRef": "2026 OL Q4(b)"
+        },
+        {
+          "cardId": "politics-2026-ol-q4-c",
+          "questionRef": "2026 OL Q4(c)"
+        },
+        {
+          "cardId": "politics-2026-ol-q4-d",
+          "questionRef": "2026 OL Q4(d)"
+        },
+        {
+          "cardId": "politics-2026-ol-q5",
+          "questionRef": "2026 OL Q5"
+        },
+        {
+          "cardId": "politics-2026-ol-q6",
+          "questionRef": "2026 OL Q6"
+        },
+        {
+          "cardId": "politics-2026-ol-q7",
+          "questionRef": "2026 OL Q7"
+        },
+        {
+          "cardId": "politics-2026-ol-q8",
+          "questionRef": "2026 OL Q8"
+        },
+        {
+          "cardId": "politics-2026-ol-q9",
+          "questionRef": "2026 OL Q9"
+        },
+        {
+          "cardId": "politics-2026-ol-q10",
+          "questionRef": "2026 OL Q10"
+        }
+      ]
+    }
+  ]
+}

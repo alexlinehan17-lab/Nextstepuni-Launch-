@@ -83,7 +83,12 @@ import { CARDS as LATIN_HIGHER } from '../components/MarkBank/cards/latin/higher
 import { CARDS as LATIN_ORDINARY } from '../components/MarkBank/cards/latin/ordinary';
 import { CARDS as APPLIED_MATHS_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
 import { CARDS as APPLIED_MATHS_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
+import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.json';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
 import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
@@ -102,6 +107,20 @@ import { CARDS as DCG_ORDINARY } from '../components/MarkBank/cards/dcg/ordinary
 import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
 import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
 const decks = [
+  // 2026-10-07: new Politics corpus, 17 paper/scheme pairs visually reviewed.
+  // No prior Politics IDs existed. All prior subject preservation checks and
+  // zero-open/zero-orphan Politics reconciliation passed before this addition.
+  // 2026-10-12: 272/814 -> 263/359, deliberately. Choice is not a route: the
+  // 498 per-option and per-combination cards (286 for 2023 OL Q2(d) alone,
+  // 126 for 2021 OL Q1(l)) rewrote the SEC question and flooded sessions, so
+  // each of their 34 printed tasks is now ONE card. None of the 498 IDs was
+  // ever on main (checked against origin/main 6652f80cc), so they are removed
+  // rather than aliased; every one of the other 588 Politics cards is unchanged.
+  ['politics-and-society:higher', POLITICS_HIGHER, 263, '6a1acd6ec5281c832c38795ba97751babef5c5a93aa7653a0d0d4b44f79a6bfe'],
+  // Then 359 -> 360: 2021 OL Q1(f)'s printed options sit under two syllabus
+  // topics (2.1 civil service; 5.5 NGOs and statutory bodies), so it is one
+  // card per topic (AGENTS.md); the single branch-only q1-f ID is replaced.
+  ['politics-and-society:ordinary', POLITICS_ORDINARY, 360, '0e1168ab9e3d9fcc06012554ce7ed77336e61b6d00d5f197ce331a3b15cf317b'],
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
@@ -578,8 +597,13 @@ const decks = [
    * into their stems by a page-furniture fault, which is what let them past
    * the printed-matter gate; with their own stems they are figure-blocked
    * like the rest of Question 3, and they go back to the open list. */
-  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 175, '0eb618ccbbc6c6b312acbbe23e5f6e15906dc8e6395657ff8ce3fd0837026714'],
-  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 208, '5457fa7f47995a3c74f439a7033728404ef1a719bb30cd4b404954c96174da33'],
+  // 2026-10-07: visually reviewed 2026 papers add 45 HL and 58 OL tasks;
+  // 2010–2025 contain 671 HL and 712 OL reviewed tasks, including 383 explicit
+  // corrections at shipped IDs. The archive review is ongoing.
+  // The old 175/208 ID hashes remain independently pinned in
+  // markBankAppliedMathematics.test.tsx. Older corpus completion is ongoing.
+  ['applied-maths:higher', APPLIED_MATHS_HIGHER, 716, '923aa61e94606e2f17655df1359c9ea8b2f33c037200d7265459efd0e3d414a4'],
+  ['applied-maths:ordinary', APPLIED_MATHS_ORDINARY, 770, '1383838e7fedf7e49fff8eb8570b0a77fa58e5139ee855474785ec46481faf21'],
   /* Spanish is the second modern language carded, and the first subject whose
    * cards bind a source printed in a DIFFERENT booklet: its Higher Section B
    * article is a two-page loose sheet with its own SEC file id, and those 80
@@ -742,21 +766,66 @@ const decks = [
    * components are cards dcg-2022-hl-c5-3 .. -7. Nothing removed. */
   ['dcg:higher', DCG_HIGHER, 307, '0f693f13e6222711fc241d1d1c8c0e00d3dfd765530de8243d5117da0a1729fc'],
   ['dcg:ordinary', DCG_ORDINARY, 238, 'd0398830a5866de46dfbe76ed96ac0f924ee1764f6dad6728bc7260ae8e3e61a'],
-  /* Physical Education, carded from the written paper only: the project and
-   * the performance assessment are marked from work no paper prints. */
+  /* Physical Education: the 221 IDs frozen on main (125 Higher / 96 Ordinary,
+   * main's original hashes) in the additive form: the frozen identity is every
+   * live ID of the frozen manifest plus any Physical Education alias key, and
+   * the reviewed corpus's additions are pinned separately below. 2026-10-12: a
+   * printed choice is one card, so 101 branch-only route cards were withdrawn;
+   * the five live route-family IDs (q15ci, q15cii 2020 HL; q14aii 2025 HL;
+   * q17cii 2021 OL; q16c 2023 OL) are the collapsed cards' own IDs. */
   ['physical-education:higher', PE_HIGHER, 125, '2b937885f9ae0c9d7c2952d43c0c2cb44275bd31414d813dee6c98d20bb8525e'],
   ['physical-education:ordinary', PE_ORDINARY, 96, '9f4fab469becb01ab3ce73e4b6301a270e68ea5310bd0225322b0cb65a1ca23f'],
+  // New Accounting decks, enrolled after the complete paper/scheme sweep,
+  // zero-open reconciliation and legacy Atlas/answer-ID preservation passed.
+  // 2026-10-12: Higher 726 -> 721, deliberately. 2022 HL Q6(c) (explain two of
+  // four printed concepts) is one card, not six per-pair cards; Accounting has
+  // never been on main (checked against origin/main 6652f80cc), so the six
+  // withdrawn IDs are branch-only and are not aliased.
+  ['accounting:higher', ACCOUNTING_HIGHER, 721, 'c602456b31e6f07e77ce952d9724b599d8793622db3f6f80a371c23bed9a3132'],
+  ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
   .update(cards.map((card) => card.id).sort().join('\n'))
   .digest('hex');
 
+const idHash = (ids: readonly string[]) => createHash('sha256')
+  .update([...ids].sort().join('\n'))
+  .digest('hex');
+
+/* Additive, alias-aware decks: the frozen set is pinned with main's own count and
+ * hash, and reviewed additions are pinned separately, so a deliberate change to
+ * the additions can never rewrite or hide a frozen identity. */
+const peFrozen = new Set(PE_FROZEN_MANIFEST.map(card => card.id));
+const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'));
+const frozenIds = (name: string, cards: readonly { id: string }[]) => {
+  const ids = cards.map(card => card.id);
+  if (!name.startsWith('physical-education:')) return ids;
+  const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+  return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
+};
+const peAdditions = {
+  higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
+  ordinary: [PE_ORDINARY, 294, '097f2e5140a024bf28633d1aa17898f041acbdb6ab658a5afd65eb8ba5681ac2'],
+} as const;
+
 describe('Mark Bank card preservation', () => {
   it.each(decks)('%s retains its complete stable card set', (name, cards, count, hash) => {
-    expect(cards.length, `${name}: card count changed`).toBe(count);
-    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(count);
-    expect(identityHash(cards), `${name}: a card ID was removed or replaced`).toBe(hash);
+    const frozen = frozenIds(name, cards);
+    expect(frozen.length, `${name}: card count changed`).toBe(count);
+    expect(new Set(frozen).size, `${name}: duplicate frozen card IDs`).toBe(count);
+    expect(new Set(cards.map((card) => card.id)).size, `${name}: duplicate card IDs`).toBe(cards.length);
+    expect(idHash(frozen), `${name}: a card ID was removed or replaced`).toBe(hash);
+  });
+
+  it.each(Object.entries(peAdditions))('pins the reviewed Physical Education %s additions beside the frozen set', (_, [cards, count, hash]) => {
+    // 2026-10-12: 652 -> 551 additions (443/430 -> 382/390 cards). Each printed
+    // choice is one card; the 101 per-option and per-pair route cards were
+    // branch-only and are withdrawn rather than aliased.
+    const additions = cards.map(card => card.id).filter(id => !peFrozen.has(id));
+    expect(additions).toHaveLength(count);
+    expect(additions.filter(id => peAliasIds.includes(id))).toEqual([]);
+    expect(idHash(additions)).toBe(hash);
   });
 
   it('protects the complete current bank', () => {
@@ -767,10 +836,16 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_328);
+    // Politics adds 1,086 tasks; all previous subjects retain their IDs.
+    // Politics then folds its branch-only choice routes into their printed
+    // tasks, 1,086 -> 622 (2026-10-12): 23,539 - 464.
+    // Physical Education folds its 101 branch-only route cards into their
+    // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
+    // Q6(c)'s six pair cards into one: - 5; Politics 2021 OL Q1(f) becomes one
+    // card per syllabus topic: + 1.
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_970);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
-    // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
-    // its written paper: 18,345 + 232.
+    // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
     // Lithuanian 306, Latvian 20 and Czech 15 in a sixth wave:
     // 16,087 + 306 + 20 + 15.
@@ -824,7 +899,8 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('swedish:')
         && !name.startsWith('ukrainian:')
         && !name.startsWith('dcg:')
-        && !name.startsWith('physical-education:'))
+        && !name.startsWith('physical-education:')
+        && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
