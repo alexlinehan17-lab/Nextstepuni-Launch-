@@ -183,6 +183,17 @@
   inset: 0;
   background: #9abec8;
   overflow: hidden;
+  /* Not a scroll container: focusing a tile in the overscan must never scroll
+     the map out from under the camera. */
+  overflow: clip;
+}
+/* The painted world and the tile layer pan together as one composited layer.
+   It overscans the visible map by 25% on every side (OVERSCAN in
+   MapControls.tsx), so a drag uncovers painted sea rather than the container. */
+.journey-paper .island-pan {
+  position: absolute;
+  inset: -25%;
+  will-change: transform;
 }
 .journey-paper .student-map {
   width: 100%;

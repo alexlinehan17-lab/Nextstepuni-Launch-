@@ -31,6 +31,9 @@ import { crewArt, crewById, type CrewId } from "../visitors/catalogue";
 import { WonderRaster, WonderTileArt } from "../visitors/VisitorArt";
 export const defaultCamera = { x: 0, y: -75, zoom: 1 };
 export type Camera = typeof defaultCamera;
+/** The pan layer is this many times the visible map in each direction (paper.css
+ * `.island-pan`, inset -25%), so a drag uncovers painted sea, not bare container. */
+const OVERSCAN = 1.5;
 const bound = (camera: Camera): Camera => ({
   x: Number.isFinite(camera.x) ? camera.x : 0,
   y: Number.isFinite(camera.y) ? camera.y : 0,
@@ -78,12 +81,23 @@ export function IslandMap({
   }, []);
   const renderZoom = camera.zoom * (narrow ? (building ? 1.2 : 0.8) : 1),
     renderY = camera.y;
-  const drag = useRef<{
+  // A drag moves the whole map as one composited layer and commits the camera
+  // once, on release. Committing it per pointermove re-rendered every tile and
+  // rebuilt the painted world (four full-size canvases) on every finger
+  // movement — the island lag students reported on school iPads (2026-10-12).
+  const panRef = useRef<HTMLDivElement>(null),
+    frame = useRef(0),
+    drag = useRef<{
       x: number;
       y: number;
       px: number;
       py: number;
       scale: number;
+      dx: number;
+      dy: number;
+      /** Furthest the layer may shift before its overscan edge shows (px). */
+      reachX: number;
+      reachY: number;
     } | null>(null),
     movingWonder=chosenWonder?world.placed.find(cell=>cell.wonderId===chosenWonder):undefined,
     slots = frontier(chosenWonder?world.placed.filter(cell=>cell.wonderId!==chosenWonder):world.placed)
@@ -92,193 +106,229 @@ export function IslandMap({
     seen = visibleDiscoveries(world.placed),
     ghost = preview ? piece(preview.q, preview.r, chosen,undefined,chosenWonder??undefined) : null;
   const selectedName=chosenWonder?crewById[chosenWonder].wonder:tileById[chosen].name;
+  // The overscanned layer scales its CSS box and its viewBox by the same
+  // factor, so world units per pixel and the centre are unchanged.
   const view = {
-    x: camera.x - 920 / renderZoom,
-    y: renderY - 620 / renderZoom,
-    width: 1840 / renderZoom,
-    height: 1240 / renderZoom,
+    x: camera.x - (920 * OVERSCAN) / renderZoom,
+    y: renderY - (620 * OVERSCAN) / renderZoom,
+    width: (1840 * OVERSCAN) / renderZoom,
+    height: (1240 * OVERSCAN) / renderZoom,
+  };
+  // The new camera and the cleared offset reach the screen in the same frame:
+  // layout effects run before paint, and PaintedWorld repaints in its own.
+  useLayoutEffect(() => {
+    if (panRef.current) panRef.current.style.transform = "";
+  }, [camera.x, camera.y, renderZoom]);
+  useEffect(() => () => cancelAnimationFrame(frame.current), []);
+  const endDrag = () => {
+    const p = drag.current;
+    drag.current = null;
+    cancelAnimationFrame(frame.current);
+    frame.current = 0;
+    if (!p || (!p.dx && !p.dy)) {
+      if (panRef.current) panRef.current.style.transform = "";
+      return;
+    }
+    setCamera((c) =>
+      bound({ ...c, x: p.px - p.dx * p.scale, y: p.py - p.dy * p.scale }),
+    );
   };
   return (
     <div className="island-map-container">
-      <PaintedWorld placed={world.placed} style="pencilatlas" view={view} />
-      <svg
-        className="student-map"
-        viewBox={`${camera.x - 920 / renderZoom} ${renderY - 620 / renderZoom} ${1840 / renderZoom} ${1240 / renderZoom}`}
-        preserveAspectRatio="xMidYMid slice"
-        role="group"
-        tabIndex={0}
-        aria-label="Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode."
-        onPointerDown={(e) => {
-          if ((e.target as Element).closest("[data-map-control]")) return;
-          const rect = e.currentTarget.getBoundingClientRect();
-          drag.current = {
-            x: e.clientX,
-            y: e.clientY,
-            px: camera.x,
-            py: camera.y,
-            scale: Math.min(
-              1840 / renderZoom / rect.width,
-              1240 / renderZoom / rect.height,
-            ),
-          };
-          e.currentTarget.setPointerCapture(e.pointerId);
-        }}
-        onPointerMove={(e) => {
-          const p = drag.current;
-          if (p)
-            setCamera((c) =>
-              bound({
-                ...c,
-                x: p.px - (e.clientX - p.x) * p.scale,
-                y: p.py - (e.clientY - p.y) * p.scale,
-              }),
-            );
-        }}
-        onPointerUp={() => (drag.current = null)}
-        onPointerCancel={() => (drag.current = null)}
-        onKeyDown={(e) => {
-          if (e.target !== e.currentTarget) return;
-          const moves: Record<string, [number, number]> = {
-            ArrowLeft: [-75, 0],
-            ArrowRight: [75, 0],
-            ArrowUp: [0, -75],
-            ArrowDown: [0, 75],
-          };
-          if (moves[e.key]) {
-            e.preventDefault();
-            const [x, y] = moves[e.key];
-            setCamera((c) => bound({ ...c, x: c.x + x, y: c.y + y }));
-          }
-          if (e.key === "Home") {
-            e.preventDefault();
-            setCamera(defaultCamera);
-          }
-        }}
-      >
-        {building &&
-          slots.map((cell, index) => (
-            <g
-              key={cell.key}
-              data-map-control="slot"
-              data-open-corner={cell.key}
-              role="button"
-              tabIndex={0}
-              aria-label={`Preview ${selectedName} at open corner ${index + 1}`}
-              aria-pressed={candidate === cell.key}
-              transform={`translate(${cell.x} ${cell.y})`}
-              className={`map-placement-slot ${candidate === cell.key ? "selected" : ""}`}
-              onClick={() => onCandidate(cell.key)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  onCandidate(cell.key);
+      <div className="island-pan" ref={panRef}>
+        <PaintedWorld placed={world.placed} style="pencilatlas" view={view} />
+        <svg
+          className="student-map"
+          viewBox={`${view.x} ${view.y} ${view.width} ${view.height}`}
+          preserveAspectRatio="xMidYMid slice"
+          role="group"
+          tabIndex={0}
+          aria-label="Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode."
+          onPointerDown={(e) => {
+            if ((e.target as Element).closest("[data-map-control]")) return;
+            const rect = e.currentTarget.getBoundingClientRect();
+            drag.current = {
+              x: e.clientX,
+              y: e.clientY,
+              px: camera.x,
+              py: camera.y,
+              scale: Math.min(view.width / rect.width, view.height / rect.height),
+              dx: 0,
+              dy: 0,
+              reachX: (rect.width * (OVERSCAN - 1)) / OVERSCAN / 2 * 0.8,
+              reachY: (rect.height * (OVERSCAN - 1)) / OVERSCAN / 2 * 0.8,
+            };
+            e.currentTarget.setPointerCapture(e.pointerId);
+          }}
+          onPointerMove={(e) => {
+            const p = drag.current;
+            if (!p) return;
+            // Whole pixels: a fractional offset can make WebKit re-rasterise the layer.
+            p.dx = Math.round(e.clientX - p.x);
+            p.dy = Math.round(e.clientY - p.y);
+            if (!frame.current)
+              frame.current = requestAnimationFrame(() => {
+                frame.current = 0;
+                const q = drag.current;
+                if (!q || !panRef.current) return;
+                if (Math.abs(q.dx) > q.reachX || Math.abs(q.dy) > q.reachY) {
+                  // A long drag would uncover the edge of the overscan: commit
+                  // the camera here and carry on from the new origin.
+                  const x = q.px - q.dx * q.scale,
+                    y = q.py - q.dy * q.scale;
+                  Object.assign(q, { x: q.x + q.dx, y: q.y + q.dy, px: x, py: y, dx: 0, dy: 0 });
+                  setCamera((c) => bound({ ...c, x, y }));
+                  return;
                 }
-              }}
-            >
-              <polygon points={points()} fill="transparent" />
-              <OpenCorners />
+                panRef.current.style.transform = `translate3d(${q.dx}px, ${q.dy}px, 0)`;
+              });
+          }}
+          onPointerUp={endDrag}
+          onPointerCancel={endDrag}
+          onKeyDown={(e) => {
+            if (e.target !== e.currentTarget) return;
+            const moves: Record<string, [number, number]> = {
+              ArrowLeft: [-75, 0],
+              ArrowRight: [75, 0],
+              ArrowUp: [0, -75],
+              ArrowDown: [0, 75],
+            };
+            if (moves[e.key]) {
+              e.preventDefault();
+              const [x, y] = moves[e.key];
+              setCamera((c) => bound({ ...c, x: c.x + x, y: c.y + y }));
+            }
+            if (e.key === "Home") {
+              e.preventDefault();
+              setCamera(defaultCamera);
+            }
+          }}
+        >
+          {building &&
+            slots.map((cell, index) => (
+              <g
+                key={cell.key}
+                data-map-control="slot"
+                data-open-corner={cell.key}
+                role="button"
+                tabIndex={0}
+                aria-label={`Preview ${selectedName} at open corner ${index + 1}`}
+                aria-pressed={candidate === cell.key}
+                transform={`translate(${cell.x} ${cell.y})`}
+                className={`map-placement-slot ${candidate === cell.key ? "selected" : ""}`}
+                onClick={() => onCandidate(cell.key)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onCandidate(cell.key);
+                  }
+                }}
+              >
+                <polygon points={points()} fill="transparent" />
+                <OpenCorners />
+                <polygon
+                  className="slot-highlight"
+                  points={points()}
+                  pointerEvents="none"
+                />
+              </g>
+            ))}
+          <g pointerEvents="none">
+            <PaperGround cells={world.placed} />
+            {ghost && <PaperGround cells={[ghost]} opacity={0.66} />}
+          </g>
+          {[...world.placed, ...(ghost ? [ghost] : [])]
+            .sort((a, b) => a.y - b.y || a.x - b.x)
+            .map((cell) => (
+              <g
+                key={cell.key}
+                data-island-tile={cell.key === ghost?.key ? undefined : cell.kind}
+                data-cell={cell.key}
+                data-ink-edge={cell.inkEdge.variant}
+                data-wonder-tile={cell.key===ghost?.key?undefined:cell.wonderId}
+                pointerEvents={building ? "none" : undefined}
+                opacity={cell.key === ghost?.key ? 0.68 : 1}
+              >
+                {cell.wonderId?<WonderRaster id={cell.wonderId} x={cell.x} y={cell.y}/>:<Scenery kind={cell.kind} x={cell.x} y={cell.y} />}
+              </g>
+            ))}
+          {!building &&
+            world.placed.map((cell) => (
               <polygon
-                className="slot-highlight"
-                points={points()}
-                pointerEvents="none"
-              />
-            </g>
-          ))}
-        <g pointerEvents="none">
-          <PaperGround cells={world.placed} />
-          {ghost && <PaperGround cells={[ghost]} opacity={0.66} />}
-        </g>
-        {[...world.placed, ...(ghost ? [ghost] : [])]
-          .sort((a, b) => a.y - b.y || a.x - b.x)
-          .map((cell) => (
-            <g
-              key={cell.key}
-              data-island-tile={cell.key === ghost?.key ? undefined : cell.kind}
-              data-cell={cell.key}
-              data-ink-edge={cell.inkEdge.variant}
-              data-wonder-tile={cell.key===ghost?.key?undefined:cell.wonderId}
-              pointerEvents={building ? "none" : undefined}
-              opacity={cell.key === ghost?.key ? 0.68 : 1}
-            >
-              {cell.wonderId?<WonderRaster id={cell.wonderId} x={cell.x} y={cell.y}/>:<Scenery kind={cell.kind} x={cell.x} y={cell.y} />}
-            </g>
-          ))}
-        {!building &&
-          world.placed.map((cell) => (
-            <polygon
-              key={cell.key}
-              data-map-control="tile"
-              className="island-tile-hit"
-              points={points(cell.x, cell.y)}
-              fill="transparent"
-              role="button"
-              tabIndex={0}
-              aria-label={`Inspect ${cell.wonderId?crewById[cell.wonderId].wonder:tileById[cell.kind].name}`}
-              onClick={() => {
-                const cache = PAPER_LANDMARKS.find(
-                  (d) =>
-                    d.q === cell.q && d.r === cell.r && d.kind === "treasure",
-                );
-                if (cache) onTreasure(cache.id);
-                else if (cell.wonderId) onInspectWonder?.(cell.wonderId);
-                else onInspect(cell.kind);
-              }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  if (cell.wonderId) onInspectWonder?.(cell.wonderId);
+                key={cell.key}
+                data-map-control="tile"
+                className="island-tile-hit"
+                points={points(cell.x, cell.y)}
+                fill="transparent"
+                role="button"
+                tabIndex={0}
+                aria-label={`Inspect ${cell.wonderId?crewById[cell.wonderId].wonder:tileById[cell.kind].name}`}
+                onClick={() => {
+                  const cache = PAPER_LANDMARKS.find(
+                    (d) =>
+                      d.q === cell.q && d.r === cell.r && d.kind === "treasure",
+                  );
+                  if (cache) onTreasure(cache.id);
+                  else if (cell.wonderId) onInspectWonder?.(cell.wonderId);
                   else onInspect(cell.kind);
-                }
-              }}
-            />
-          ))}
-        {ghost && (
-          <polygon
-            points={points(ghost.x, ghost.y)}
-            fill="none"
-            stroke="#f87628"
-            strokeWidth="3"
-            pointerEvents="none"
-            data-placement-preview={ghost.key}
-          />
-        )}
-        {seen.map((d) => {
-          const pos = centre(d.q, d.r);
-          return (
-            <g
-              key={d.id}
-              transform={`translate(${pos.x} ${pos.y})`}
-              data-map-control="discovery"
-              data-visible-discovery={d.id}
-              className="student-discovery"
-              role="button"
-              tabIndex={0}
-              aria-label={`Discover ${legendById[d.id].name}`}
-              onClick={() => onDiscover(d.id)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  onDiscover(d.id);
-                }
-              }}
-            >
-              <circle r="100" className="discovery-focus" />
-              <StickerRaster
-                src={stickerSrc(d.id)}
-                x={-80}
-                y={-80}
-                size={160}
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    if (cell.wonderId) onInspectWonder?.(cell.wonderId);
+                    else onInspect(cell.kind);
+                  }
+                }}
               />
-            </g>
-          );
-        })}
-        {!building&&visitor&&onVisit&&<g
-          className="map-visitor" data-map-control="visitor" data-visitor={visitor.id}
-          transform={`translate(${centre(visitor.q,visitor.r).x+70} ${centre(visitor.q,visitor.r).y-190})`}
-          role="button" tabIndex={0} aria-label={`Meet ${crewById[visitor.id].name}`}
-          onClick={()=>onVisit(visitor.id)} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();onVisit(visitor.id);}}}
-        ><image href={crewArt(visitor.id)} x="-52" y="-100" width="104" height="104"/><rect x="-54" y="7" width="108" height="29" rx="5"/><text y="27">{crewById[visitor.id].name}</text></g>}
-      </svg>
+            ))}
+          {ghost && (
+            <polygon
+              points={points(ghost.x, ghost.y)}
+              fill="none"
+              stroke="#f87628"
+              strokeWidth="3"
+              pointerEvents="none"
+              data-placement-preview={ghost.key}
+            />
+          )}
+          {seen.map((d) => {
+            const pos = centre(d.q, d.r);
+            return (
+              <g
+                key={d.id}
+                transform={`translate(${pos.x} ${pos.y})`}
+                data-map-control="discovery"
+                data-visible-discovery={d.id}
+                className="student-discovery"
+                role="button"
+                tabIndex={0}
+                aria-label={`Discover ${legendById[d.id].name}`}
+                onClick={() => onDiscover(d.id)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onDiscover(d.id);
+                  }
+                }}
+              >
+                <circle r="100" className="discovery-focus" />
+                <StickerRaster
+                  src={stickerSrc(d.id)}
+                  x={-80}
+                  y={-80}
+                  size={160}
+                />
+              </g>
+            );
+          })}
+          {!building&&visitor&&onVisit&&<g
+            className="map-visitor" data-map-control="visitor" data-visitor={visitor.id}
+            transform={`translate(${centre(visitor.q,visitor.r).x+70} ${centre(visitor.q,visitor.r).y-190})`}
+            role="button" tabIndex={0} aria-label={`Meet ${crewById[visitor.id].name}`}
+            onClick={()=>onVisit(visitor.id)} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();onVisit(visitor.id);}}}
+          ><image href={crewArt(visitor.id)} x="-52" y="-100" width="104" height="104"/><rect x="-54" y="7" width="108" height="29" rx="5"/><text y="27">{crewById[visitor.id].name}</text></g>}
+        </svg>
+      </div>
       <div className="map-navigation">
         <span>
           <Move size={13} /> Drag to explore
