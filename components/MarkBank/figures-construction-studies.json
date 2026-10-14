@@ -5318,5 +5318,215 @@
     "alt": "SEC 2014 Higher marking scheme notes and sketches on why a Passive House overheats and details that reduce it (two pages).",
     "attribution": "SEC Leaving Certificate Construction Studies 2014 Higher Level — © State Examinations Commission.",
     "solution": true
+  },
+  "construction-studies-2014-OL-q1-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-original.png",
+    "md5": "46f33e6cc12ee230f6ee0ca2d31b762a",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 1: the printed question with a cutaway sketch of the cavity wall and the timber first floor.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q2-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-original.png",
+    "md5": "252411bbb2cc3ec100b7888ddc54158b",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 2: the printed question with a sketch of a house with a single storey extension.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q3-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-original.png",
+    "md5": "5d844ad02208bfd38fda0975be0fed31",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 3: the printed question with a sketch of a modern wood burning stove.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q4-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-original.png",
+    "md5": "f2d4865355d4258b848faebe49b43268",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 4: the printed question with a sketch of the stud partition between the kitchen and living room.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q5-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-original.png",
+    "md5": "ac9e7c16b9324e3f196205a2558ebec7",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 5: the printed question with a sketch of the tiled cut roof at the ridge.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q6-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-original.png",
+    "md5": "38cf0e82c92df0c6ff945378d170bab3",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 6: the printed question with a sketch of a site office in front of houses under construction.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q7-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-original.png",
+    "md5": "445eb7b32450bcad0cda330bb8975c69",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 7: the printed question with a sketch of a two-storey house with a slated roof.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q8-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q8-original.png",
+    "md5": "129e2e96b399e543f2cee6fd7df5ebc3",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 8: the printed list of nine construction terms.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q9-original": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-original.png",
+    "md5": "3ee63fed215441214211a77286ba587a",
+    "alt": "Original SEC 2014 Ordinary Construction Studies Question 9: the printed question with the plan of the small kitchen, the worktop A and the windows.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": false
+  },
+  "construction-studies-2014-OL-q1-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q1-scheme.png",
+    "md5": "ad4d30383af47d55b37939cc14066352",
+    "alt": "SEC model sections through the cavity wall and first floor joists, minimum standard and best practice with service cavities, with the detail list and joist bridging (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q2-fixing": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-fixing.png",
+    "md5": "d82fca3de589d38d57b5b9df13c9a232",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketch on fixing external insulation boards to the solid block wall.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q2-finish": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-finish.png",
+    "md5": "752dfafb5e72cdb3b55740b628822644",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketch on applying the base coat, reinforcing mesh and acrylic finish to the insulation.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q2-advantages": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q2-advantages.png",
+    "md5": "de903778105e883bfec3c05f020a7ead",
+    "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of insulating the external walls.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q3-system": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-system.png",
+    "md5": "b7a45c0f7024ef721815db72d0adc7f3",
+    "alt": "SEC single-line diagram of the hot water supply to the sink from a wood burning stove and indirect cylinder, with the secondary and primary circulation lists.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q3-solar": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q3-solar.png",
+    "md5": "96e51142d0e5110aaac6e232116aa0b4",
+    "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of a solar panel for domestic hot water.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q4-partition": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-partition.png",
+    "md5": "2a6880e71fe46dbe710c8dbbbf0eec44",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketch of the timber stud partition with typical sizes.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q4-socket": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-socket.png",
+    "md5": "aa8d3f9ffc8e85dc732e429d4b79e79b",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketches on fixing a metal socket box or a dry lining back box in the partition.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q4-skim": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q4-skim.png",
+    "md5": "ec9f93520e4d31a632c40cfee549549c",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketches on the steps of applying a plaster skim finish (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q5-scheme": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-scheme.png",
+    "md5": "ffcb437fa4834c7cdc229b5b19c56ea6",
+    "alt": "SEC model sections through the cut roof at the ridge, typical and best practice, with the specification list (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q5-vent": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q5-vent.png",
+    "md5": "83bd26cab9aabd45b493019ebc1f8eae",
+    "alt": "SEC 2014 Ordinary marking scheme notes on ventilating the roof with ridge vents or vent tiles.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q6-signs": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-signs.png",
+    "md5": "82998c2924cacd74a289508aa1e53197",
+    "alt": "SEC safety signs for a safety helmet, a high visibility vest and safety boots.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q6-reasons": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-reasons.png",
+    "md5": "cdbd8ecb0ff89b3b32dfcc8741313165",
+    "alt": "SEC 2014 Ordinary marking scheme notes on why a safety helmet, a high visibility vest and safety boots must be worn (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q6-visitors": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q6-visitors.png",
+    "md5": "5f5e455f18f57f9d5da93c98da58642f",
+    "alt": "SEC 2014 Ordinary marking scheme notes on why visitors must report to the site office.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q7-collection": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-collection.png",
+    "md5": "ce271e1c4aeb97f9a69a99c6d6d59d7c",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketches on collecting rainwater in an underground storage tank or a water butt (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q7-uses": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-uses.png",
+    "md5": "fa40e9b2e36f3fca54be9228bf7a042e",
+    "alt": "SEC 2014 Ordinary marking scheme notes on the advantages of storing rainwater and its uses.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q7-meter": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q7-meter.png",
+    "md5": "d5e309853dc0bf1551b91749b3534ca7",
+    "alt": "SEC 2014 Ordinary marking scheme notes on an advantage and a disadvantage of a water meter.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q8-terms": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q8-terms.png",
+    "md5": "94fce2bf4c272504c771048210e37c36",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketches for all nine terms — strip foundation, thermostatic valve, roof-light window, housing joint, collar tie, smart meter, laser beam, radon sump and external ramp (three pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q9-layout": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-layout.png",
+    "md5": "a72af5c38d3fd43a660b950a1a87b5a7",
+    "alt": "SEC 2014 Ordinary marking scheme kitchen plan with the sink, cooker and fridge located, and the reasons for each.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q9-paint": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-paint.png",
+    "md5": "c5338267c69ec955e3933584fee28518",
+    "alt": "SEC 2014 Ordinary marking scheme notes and sketches on preparing and hand painting a cabinet door.",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
+  },
+  "construction-studies-2014-OL-q9-worktop": {
+    "src": "/exam-figures/construction-studies/markbank/construction-studies-2014-OL-q9-worktop.png",
+    "md5": "b05edbe290ab698061fcff9f81e5be4a",
+    "alt": "SEC 2014 Ordinary marking scheme notes on the advantages and disadvantages of granite and solid wood worktops and the recommendation (two pages).",
+    "attribution": "SEC Leaving Certificate Construction Studies 2014 Ordinary Level — © State Examinations Commission.",
+    "solution": true
   }
 }
