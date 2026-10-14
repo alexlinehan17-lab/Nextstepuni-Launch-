@@ -560,7 +560,9 @@ export type ArtBandLevel = 'low' | 'moderate' | 'high';
 export interface ArtBand {
   level: ArtBandLevel;
   marks: number[];
-  /** SEC descriptor guidance, condensed only to remove repeated boilerplate. */
+  /** The scheme's printed lead-in to the band's bullets, where audited. */
+  lead?: string;
+  /** SEC descriptor guidance: the bullets exactly as the scheme prints them. */
   guidance: string[];
 }
 
@@ -580,6 +582,13 @@ export interface ArtCriterion {
   permittedMarks: number[];
   /** Question-specific allocation or focus printed by the marking scheme. */
   guidance: string[];
+  /**
+   * 2021–2022 schemes: the Marks column printed beside each guidance row
+   * (parallel to `guidance`), and the Notes column where the scheme prints
+   * any note for this component ('' for a row without one).
+   */
+  rowMarks?: number[];
+  rowNotes?: string[];
   /** Absent where the SEC printed an allocation but no descriptor bands. */
   bands?: ArtBand[];
 }
@@ -589,7 +598,10 @@ export interface ArtRubric {
   /** Things the printed task explicitly requires. They carry no marks alone. */
   taskRequirements: string[];
   criteria: ArtCriterion[];
+  /** The scheme's own printed note on applying the descriptors, or ''. */
   markingGuideNote: string;
+  /** NextStepUni's guidance for using the card; not part of the SEC scheme. */
+  practiceNotes?: string[];
 }
 
 export type GeographyGuidanceKind =
