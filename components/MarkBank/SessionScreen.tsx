@@ -71,6 +71,7 @@ import SourceMaterialReader from './SourceMaterialReader';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 import { questionParts } from './questionParts';
+import { stemWithListBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -2732,7 +2733,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {assessmentCard.stem && !questionFigure && (
-              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{assessmentCard.stem}</p>
+              /* A printed bullet list keeps one item to a line; see stemText. */
+              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
+                {stemWithListBreaks(assessmentCard.stem)}
+              </p>
             )}
 
             {questionFigure && (

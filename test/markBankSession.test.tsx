@@ -360,6 +360,21 @@ describe('the question comes first and stays', () => {
     expect(parts[2]).toHaveTextContent('Justify your answer at part (b) above.');
   });
 
+  test('sets a printed bullet list in the stem one item to a line', () => {
+    // Synthetic, shaped like Art 2018 OL Q4.
+    renderSession([card({ stem: 'Choose one of the following and answer (a), (b) and (c):\n• First building\n• Second building.' })]);
+
+    const stem = screen.getByText(/Choose one of the following/);
+    expect(stem).toHaveStyle({ whiteSpace: 'pre-line' });
+    expect(stem.textContent).toBe('Choose one of the following and answer (a), (b) and (c):\n• First building\n• Second building.');
+  });
+
+  test('runs any other line break in the stem on as ordinary prose', () => {
+    renderSession([card({ stem: 'The table shows the results\nof the trial.\n\nStudy it carefully.' })]);
+
+    expect(screen.getByText(/The table shows/).textContent).toBe('The table shows the results of the trial. Study it carefully.');
+  });
+
   test('still splits at a part that follows one the card leaves out', () => {
     renderSession([card({ questionText: '(i) What is meant by the term? (iii) Give one advantage. (b) (ii) Does it rise?' })]);
 
