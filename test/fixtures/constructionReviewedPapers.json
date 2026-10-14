@@ -1061,5 +1061,70 @@
     "choiceCardIds": [
       "cons-2014-ol-q8-terms"
     ]
+  },
+  {
+    "year": 2013,
+    "level": "higher",
+    "validator": "scripts/markbank/authoring/construction_2013_higher.py",
+    "result": {
+      "tasks": 39,
+      "addedTasks": 39,
+      "correctedTasks": 0,
+      "consolidatedLegacy": 0,
+      "leafTasks": 28,
+      "wholeQuestions": 11,
+      "anyNChoiceCards": 2,
+      "sourceFigures": 35,
+      "paperComplete": true
+    },
+    "priorCount": 996,
+    "addedIds": [
+      "cons-2013-hl-q1-a",
+      "cons-2013-hl-q1-b",
+      "cons-2013-hl-q1-complete",
+      "cons-2013-hl-q2-a",
+      "cons-2013-hl-q2-b",
+      "cons-2013-hl-q2-c",
+      "cons-2013-hl-q2-complete",
+      "cons-2013-hl-q3-a",
+      "cons-2013-hl-q3-b",
+      "cons-2013-hl-q3-complete",
+      "cons-2013-hl-q4-a",
+      "cons-2013-hl-q4-b",
+      "cons-2013-hl-q4-c",
+      "cons-2013-hl-q4-complete",
+      "cons-2013-hl-q5-a",
+      "cons-2013-hl-q5-b",
+      "cons-2013-hl-q5-c",
+      "cons-2013-hl-q5-complete",
+      "cons-2013-hl-q6-a",
+      "cons-2013-hl-q6-b",
+      "cons-2013-hl-q6-complete",
+      "cons-2013-hl-q7-a",
+      "cons-2013-hl-q7-b",
+      "cons-2013-hl-q7-complete",
+      "cons-2013-hl-q8-a",
+      "cons-2013-hl-q8-b",
+      "cons-2013-hl-q8-c",
+      "cons-2013-hl-q8-complete",
+      "cons-2013-hl-q9-a",
+      "cons-2013-hl-q9-b",
+      "cons-2013-hl-q9-c",
+      "cons-2013-hl-q9-complete",
+      "cons-2013-hl-q10-a",
+      "cons-2013-hl-q10-b",
+      "cons-2013-hl-q10-c",
+      "cons-2013-hl-q10-complete",
+      "cons-2013-hl-q10-alt-discussion",
+      "cons-2013-hl-q10-alt-guidelines",
+      "cons-2013-hl-q10-alt-complete"
+    ],
+    "correctedIds": [],
+    "withdrawnIds": [],
+    "keptChoiceIds": [],
+    "choiceCardIds": [
+      "cons-2013-hl-q10-a",
+      "cons-2013-hl-q9-a"
+    ]
   }
 ]
