@@ -908,6 +908,27 @@ const SOURCE_BINDINGS = existsSync(SOURCE_BINDINGS_PATH)
 const subjectCorrections = CORRECTIONS[SUBJECT_ID] ?? {};
 const subjectSourceBindings = SOURCE_BINDINGS[SUBJECT_ID] ?? {};
 const rawIds = new Set(rawCards.map(card => card.id));
+// Independently reviewed French reading corrections keep their original IDs.
+// The source ledger must explicitly authorize each replacement; every other
+// authored card continues through the existing validation and rendering path.
+const reviewedFrenchReading = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'components/MarkBank/cards/french/reading.json'), 'utf8'))
+  : [];
+const frenchReadingRepairs = SUBJECT_ID === 'french'
+  ? JSON.parse(readFileSync(resolve(ROOT, 'scripts/markbank/authoring/french-reading-review.json'), 'utf8')).papers
+    .flatMap(paper => Object.values(paper.preservedCardIds ?? {}).map(id => ({ id, reason: paper.correctionReason })))
+  : [];
+const repairedFrenchIds = new Set(frenchReadingRepairs.map(repair => repair.id));
+for (const repair of frenchReadingRepairs) {
+  if (!repair.reason || !rawIds.has(repair.id) || reviewedFrenchReading.filter(card => card.id === repair.id).length !== 1) {
+    throw new Error(`Invalid reviewed French reading correction: ${repair.id}`);
+  }
+}
+for (const card of reviewedFrenchReading) {
+  if (rawIds.has(card.id) && !repairedFrenchIds.has(card.id)) {
+    throw new Error(`Unreviewed French reading replacement: ${card.id}`);
+  }
+}
 for (const id of Object.keys(subjectCorrections)) {
   if (!rawIds.has(id)) {
     console.error(`stale correction for missing ${SUBJECT_ID} card "${id}"`);
@@ -924,6 +945,10 @@ for (const id of Object.keys(subjectSourceBindings)) {
 const appliedCorrections = [];
 const cards = [];
 for (const raw of rawCards) {
+  if (repairedFrenchIds.has(raw.id)) {
+    appliedCorrections.push(`${raw.id}: preserved in the visually reviewed reading deck`);
+    continue;
+  }
   const correction = subjectCorrections[raw.id];
   if (correction) {
     if (!String(correction.reason ?? '').trim()) {
@@ -1590,7 +1615,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';" : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
   : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : ''}
 ${cards.length ? `
 const base = {
@@ -1602,7 +1627,7 @@ const base = {
 ` : ''}
 export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-${businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${SUBJECT_ID === 'french' ? `  ...writingCardsForLevel(${q(level)}),\n  ...readingCardsForLevel(${q(level)}),\n  ...clozeCardsForLevel(${q(level)}),\n  ...listeningCardsForLevel(${q(level)}),\n` : businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1621,7 +1646,10 @@ for (const level of LEVELS) {
   const reviewedIds = SUBJECT_ID === 'applied-maths'
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
-  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + levelRubrics;
+  const additionsCount = SUBJECT_ID === 'french'
+    ? ['writing.json', 'reading.json', 'cloze.json', 'listening.json'].flatMap(name => JSON.parse(readFileSync(resolve(OUT_DIR, name), 'utf8'))).filter(card => card.level === level).length
+    : 0;
+  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + additionsCount + levelRubrics;
   process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 

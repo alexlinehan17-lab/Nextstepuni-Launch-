@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, render, screen, waitFor, fireEvent } from "@testing-library/react";
 import Lenis from "lenis";
 import Viewer from "../components/PaperTrail/Viewer";
+import { topicsForPaper } from "../components/PaperTrail/topics";
 vi.mock("../components/PaperTrail/pdfjsLoader", () => ({
   loadPdfjs: () => new Promise(() => {}),
 }));
@@ -27,6 +28,14 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 describe("Paper Trail previews", () => {
+  it("makes verified French audio available while the aural booklet loads", () => {
+    render(<Viewer title="2026 French listening" paper={paper}
+      topics={topicsForPaper('french', 2026, 'ordinary', 'ev', 'LC010GLPA00BV.pdf')!}
+      onClose={() => {}} />);
+    const player = screen.getByRole('dialog').querySelector('audio');
+    expect(player).toHaveAttribute('src', 'https://www.examinations.ie/archive/exampapers/2026/LC010CLP017EV.mp3');
+    expect(player).toHaveAttribute('controls');
+  });
   it("exempts the portalled viewer from the landing page scroll controller", () => {
     render(<Viewer title="Test paper" paper={paper} onClose={() => {}} />);
     const pageScroll = new Lenis();

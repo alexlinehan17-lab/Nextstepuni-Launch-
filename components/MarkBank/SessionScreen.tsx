@@ -79,7 +79,12 @@ import AudioSourcePlayer from './AudioSourcePlayer';
 import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
 import BusinessRubricPanel from './BusinessRubricPanel';
 import { businessMarks, type BusinessScoreId } from './businessRubric';
+import FrenchRubricPanel from './FrenchRubricPanel';
+import FrenchQuestionChoices from './FrenchQuestionChoices';
+import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
+import { questionParts } from './questionParts';
+import { stemWithListBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -299,7 +304,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | BusinessScoreId | typeof accountingScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId | BusinessScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -422,6 +427,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
   if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
   if (card.rubric.system === 'business') return businessMarks(card, scores);
+  if (card.rubric.system === 'french') return frenchMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
@@ -1655,6 +1661,11 @@ const RubricPanel: React.FC<{
       rubric: Extract<SecRubricCard['rubric'], { system: 'business' }>;
     }} scores={props.scores} onScore={props.onScore} />;
   }
+  if (props.card.rubric.system === 'french') {
+    return <FrenchRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'french' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -1721,24 +1732,6 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
   );
 };
 
-
-/**
- * The question, set the way the paper sets it.
- *
- * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
- * prose of each part starts on a common line, and a student's eye can find "(ii)"
- * without reading. Run inline, as a single paragraph, the labels disappear into
- * the sentence and a two-part question reads as one long instruction.
- *
- * This splits on labels only where the paper actually printed them; a question
- * with no parts renders as one block, unchanged.
- */
-/* Never glued to a letter. "(x)" IS a part label -- Physics 2022 OL Q3 runs
- * to (x) -- but in "h(x) = 2 sin(2x)" it is a function's argument, and
- * splitting there put "(x)" in the part gutter and left the question
- * reading "the tangent line to h". A printed label always follows a space
- * or opens the text. */
-const PART = /\s*(?<![A-Za-z0-9])(\((?:[ivx]+|[a-h])\))\s+/gi;
 
 /**
  * Which emphasis the command clause carries.
@@ -1815,47 +1808,6 @@ const Clause: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-interface QuestionPart {
-  label: string;
-  body: string;
-  children: QuestionPart[];
-}
-
-const isRomanPart = (label: string) => /^\([ivx]+\)$/i.test(label);
-
-/** Parse the paper's one- and two-level part grammar.
- *
- * A flat label/body pairing cannot represent `(i) (a) … (b) …`: the empty
- * body between `(i)` and `(a)` shifts every later token into the wrong column.
- * SEC questions use roman numerals for the parent and letters for its children,
- * so retain that hierarchy and let both levels keep a real prose column.
- */
-const questionParts = (text: string): QuestionPart[] | null => {
-  const matches = [...text.matchAll(new RegExp(PART.source, PART.flags))];
-  if (!matches.length || (matches[0].index ?? 0) !== 0) return null;
-  const tokens = matches.map((match, index) => ({
-    label: match[1],
-    body: text.slice(
-      (match.index ?? 0) + match[0].length,
-      matches[index + 1]?.index ?? text.length,
-    ).trim(),
-    children: [] as QuestionPart[],
-  }));
-  const parts: QuestionPart[] = [];
-  let parent: QuestionPart | null = null;
-  for (const token of tokens) {
-    if (isRomanPart(token.label)) {
-      parts.push(token);
-      parent = token;
-    } else if (parent) {
-      parent.children.push(token);
-    } else {
-      parts.push(token);
-    }
-  }
-  return parts;
-};
-
 const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ children, nested = false }) => (
   <span style={{
     minWidth: 0,
@@ -1866,6 +1818,17 @@ const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ 
   </span>
 );
 
+/**
+ * The question, set the way the paper sets it.
+ *
+ * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
+ * prose of each part starts on a common line, and a student's eye can find "(ii)"
+ * without reading. Run inline, as a single paragraph, the labels disappear into
+ * the sentence and a two-part question reads as one long instruction.
+ *
+ * This splits on labels only where the paper actually printed them (see
+ * ./questionParts); a question with no parts renders as one block, unchanged.
+ */
 const QuestionText: React.FC<{ text: string }> = ({ text }) => {
   const parts = questionParts(text);
   // No label at the head means no hanging: one block, as before.
@@ -2365,9 +2328,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       // Except on a matching or true/false card, where the scheme's whole answer
       // IS the prefix's tail — a letter or a verdict. "e · a · d" and
       // "false · false · false" name nothing; there the label is the content.
+      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
       .map(r => {
         const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return (tail.trim().length <= 6 ? r.verbatim : tail).toLowerCase();
+        return tail.trim().length <= 6 ? r.verbatim : tail;
       });
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
@@ -2385,6 +2349,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
       : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
+      : assessmentCard.rubric.system === 'french' ? 'French marking grid'
       : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
@@ -2825,7 +2790,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             </div>
 
             {assessmentCard.stem && !questionFigure && (
-              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{assessmentCard.stem}</p>
+              /* A printed bullet list keeps one item to a line; see stemText. */
+              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
+                {stemWithListBreaks(assessmentCard.stem)}
+              </p>
             )}
 
             {questionFigure && (
@@ -2844,12 +2812,21 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!questionFigure && (audioMaterial ? (
+            {!questionFigure && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+              <>
+                <AudioSourcePlayer source={audioMaterial} />
+                <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
+                {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
+              </>
+            ) : audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <ListeningQuestionSet cards={listeningCards} />
               </>
-            ) : <QuestionText text={assessmentCard.questionText} />)}
+            ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
+              <QuestionText text={assessmentCard.questionText.split('\n')[0]} />
+              <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />
+            </> : <QuestionText text={assessmentCard.questionText} />)}
 
             {assessmentCard.practiceFocus && <p style={{ marginTop: 12, color: INK, fontWeight: 700 }}>
               Practise: {assessmentCard.practiceFocus}

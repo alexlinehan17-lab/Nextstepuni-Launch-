@@ -73,6 +73,7 @@ android/keystore.properties
 # predate this and stay tracked; gitignore does not untrack them.)
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
+examiner-reports/*/audio/*.mp3
 examiner-reports/*/supplements/
 # Arabic keeps a SECOND corpus, wider than the window it cards, because its
 # broken-font repair map is derived from every sitting the Paper Trail holds

@@ -1,0 +1,3792 @@
+{
+  "status": "reviewed",
+  "reviewedAt": "2026-10-11",
+  "censusFlagCount": 208,
+  "genuineMisses": 0,
+  "classes": {
+    "roman-run-in-letter-slot": "French reading and listening number a question's sub-parts (i), (ii), (iii). The census files them in its letter slot, and the generic continuity check expects a letter run a, b, … there, so every complete roman run reports a letter-gap. The flagged run is complete from (i), every part in it is covered by a card, and reconciliation has no orphan, so no card cites a part the census lacks. Not a missing part.",
+    "joint-tariff-pair": "The scheme prices two printed questions together (a shared tariff), so the census keys the pair under the first number and the second number is absent from the run. The paired leaf text prints both questions (\"Question n: … Question n+1: …\"); the reading ledger reviewed these shared boundaries. Not a missing question.",
+    "stem-of-priced-parts": "The flagged block is question-shaped but is the stem (or the Irish rendering) of an ask whose priced parts are separate census leaves, each covered by a card. Checked on the rendered paper page.",
+    "reviewed-scoring-decision": "The scheme heading prices the ask at one value while it prints a per-answer value for a two-answer ask and the comprehension total only reconciles at the per-answer value. The reading ledger holds a reviewed scoringDecision for exactly this fault (same text), with paper and scheme page evidence, and the card is priced and disclosed accordingly.",
+    "printed-total-differs": "The 2021 and 2022 written booklets print their own smaller totals on the cover (Higher 130 marks, Ordinary 140 marks; listening 80 / 100), so the sitting sums to 210 / 240 rather than the 300 / 320 of other years. Both booklets are present and read, and every printed ask is covered. Not a lost booklet."
+  },
+  "flags": [
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a1-q1-i",
+          "fr-2010-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii', 'iii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)",
+          "(iii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a1-q2-i",
+          "fr-2010-hl-reading-a1-q2-ii",
+          "fr-2010-hl-reading-a1-q2-iii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a1-q3-i",
+          "fr-2010-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a1-q5-i",
+          "fr-2010-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a2-q1-i",
+          "fr-2010-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a2-q2-i",
+          "fr-2010-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a2-q3-i",
+          "fr-2010-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a2-q4-i",
+          "fr-2010-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-reading-a2-q5-i",
+          "fr-2010-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-la-q2i",
+          "fr-2010-hl-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-lb-q4i",
+          "fr-2010-hl-listening-lb-q4ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-lc-q1i",
+          "fr-2010-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-lc-q2i",
+          "fr-2010-hl-listening-lc-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-lc-q3i",
+          "fr-2010-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-ld-q4i",
+          "fr-2010-hl-listening-ld-q4ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-hl-listening-le-q2i",
+          "fr-2010-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "type": "question-gap",
+      "where": "('A1',)",
+      "detail": "questions found: [1, 3, 4, 6, 8]",
+      "class": "joint-tariff-pair",
+      "evidence": {
+        "missingNumbers": [
+          2,
+          5,
+          7
+        ],
+        "pairs": {
+          "Q2": {
+            "pairedWith": "Q1",
+            "coveringCards": [
+              "fr-2010-ol-reading-a1-q1"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          },
+          "Q5": {
+            "pairedWith": "Q4",
+            "coveringCards": [
+              "fr-2010-ol-reading-a1-q4"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          },
+          "Q7": {
+            "pairedWith": "Q6",
+            "coveringCards": [
+              "fr-2010-ol-reading-a1-q6"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          }
+        }
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "type": "question-gap",
+      "where": "('A2',)",
+      "detail": "questions found: [1, 3, 5, 7, 8]",
+      "class": "joint-tariff-pair",
+      "evidence": {
+        "missingNumbers": [
+          2,
+          4,
+          6
+        ],
+        "pairs": {
+          "Q2": {
+            "pairedWith": "Q1",
+            "coveringCards": [
+              "fr-2010-ol-reading-a2-q1"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          },
+          "Q4": {
+            "pairedWith": "Q3",
+            "coveringCards": [
+              "fr-2010-ol-reading-a2-q3"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          },
+          "Q6": {
+            "pairedWith": "Q5",
+            "coveringCards": [
+              "fr-2010-ol-reading-a2-q5"
+            ],
+            "readingLedgerReason": "The scheme combines these numbered questions into one8-mark7+1 boundary; retain both complete prompts."
+          }
+        }
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-ol-listening-la-q2i",
+          "fr-2010-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-ol-listening-lc-q1i",
+          "fr-2010-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2010-ol-listening-le-q2i",
+          "fr-2010-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a1-q1-i",
+          "fr-2011-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a1-q2-i",
+          "fr-2011-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a1-q4-i",
+          "fr-2011-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a1-q5-i",
+          "fr-2011-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a2-q1-i",
+          "fr-2011-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a2-q2-i",
+          "fr-2011-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a2-q3-i",
+          "fr-2011-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a2-q4-i",
+          "fr-2011-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a2-q5-i",
+          "fr-2011-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-lb-q2i",
+          "fr-2011-hl-listening-lb-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-lc-q1i",
+          "fr-2011-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-lc-q3i",
+          "fr-2011-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-ld-q1i",
+          "fr-2011-hl-listening-ld-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-ld-q2i",
+          "fr-2011-hl-listening-ld-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-listening-le-q3i",
+          "fr-2011-hl-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "hl",
+      "type": "unpriced-ask",
+      "where": "Q.1 3",
+      "detail": "the paper prints 'Pour Christine, son hébergement chez Gabrielle a des aspects à la fois', which no scheme ask claims",
+      "class": "stem-of-priced-parts",
+      "evidence": {
+        "note": "Paper p3 prints the stem \"Pour Christine, son hébergement chez Gabrielle a des aspects à la fois positifs et négatifs. Donnez-en un exemple, dans chaque cas. (Section 3)\" over two answer lines, (a) Positif and (b) Négatif; the scheme prices those two lines (5 + 5) and the census keys them as Q3(a) and Q3(b). The stem is not a third ask.",
+        "pricedLeaves": [
+          "Section A1 Q3(a)",
+          "Section A1 Q3(b)"
+        ],
+        "coveringCards": [
+          "fr-2011-hl-reading-a1-q3-a",
+          "fr-2011-hl-reading-a1-q3-b"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-ol-listening-la-q2i",
+          "fr-2011-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-ol-listening-lc-q3i",
+          "fr-2011-ol-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2011-ol-listening-le-q3i",
+          "fr-2011-ol-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a1-q1-i",
+          "fr-2012-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a1-q2-i",
+          "fr-2012-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a1-q3-i",
+          "fr-2012-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a1-q4-i",
+          "fr-2012-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a1-q5-i",
+          "fr-2012-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a2-q1-i",
+          "fr-2012-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a2-q2-i",
+          "fr-2012-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a2-q3-i",
+          "fr-2012-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a2-q4-i",
+          "fr-2012-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-reading-a2-q5-i",
+          "fr-2012-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-lb-q1i",
+          "fr-2012-hl-listening-lb-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-lb-q3i",
+          "fr-2012-hl-listening-lb-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-lc-q1i",
+          "fr-2012-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-ld-q2i",
+          "fr-2012-hl-listening-ld-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-ld-q4i",
+          "fr-2012-hl-listening-ld-q4ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-hl-listening-le-q3i",
+          "fr-2012-hl-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-reading-a1-q1-i",
+          "fr-2012-ol-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A3',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-reading-a3-q1-i",
+          "fr-2012-ol-reading-a3-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-listening-la-q2i",
+          "fr-2012-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('II',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-listening-lb-q3i",
+          "fr-2012-ol-listening-lb-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-listening-le-q3i",
+          "fr-2012-ol-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ol",
+      "type": "unpriced-ask",
+      "where": "Q.3 1",
+      "detail": "the paper prints 'Que font les parents de Clémence dans la vie ? (Section 1)', which no scheme ask claims",
+      "class": "stem-of-priced-parts",
+      "evidence": {
+        "note": "Paper p6 prints \"Que font les parents de Clémence dans la vie ? (Section 1)\" over two answer lines, (i) Mère and (ii) Père; the scheme prices the two lines and the census keys them as Q1(i) and Q1(ii). The question is their stem, not a separate ask.",
+        "pricedLeaves": [
+          "Section A3 Q1(i)",
+          "Section A3 Q1(ii)"
+        ],
+        "coveringCards": [
+          "fr-2012-ol-reading-a3-q1-i",
+          "fr-2012-ol-reading-a3-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a1-q1-i",
+          "fr-2013-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a1-q2-i",
+          "fr-2013-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a1-q3-i",
+          "fr-2013-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a1-q4-i",
+          "fr-2013-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a1-q5-i",
+          "fr-2013-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a2-q1-i",
+          "fr-2013-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a2-q2-i",
+          "fr-2013-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a2-q3-i",
+          "fr-2013-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a2-q4-i",
+          "fr-2013-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-reading-a2-q5-i",
+          "fr-2013-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-lb-q3i",
+          "fr-2013-hl-listening-lb-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-lc-q1i",
+          "fr-2013-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-lc-q2i",
+          "fr-2013-hl-listening-lc-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-ld-q1i",
+          "fr-2013-hl-listening-ld-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-ld-q3i",
+          "fr-2013-hl-listening-ld-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-hl-listening-le-q2i",
+          "fr-2013-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A4',) Q8",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-ol-reading-a4-q8-i",
+          "fr-2013-ol-reading-a4-q8-ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-ol-listening-la-q3i",
+          "fr-2013-ol-listening-la-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-ol-listening-lc-q2i",
+          "fr-2013-ol-listening-lc-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2013-ol-listening-le-q2i",
+          "fr-2013-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a1-q1-i",
+          "fr-2014-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a1-q2-i",
+          "fr-2014-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a1-q3-i",
+          "fr-2014-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a1-q4-i",
+          "fr-2014-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a1-q5-i",
+          "fr-2014-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a2-q1-i",
+          "fr-2014-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a2-q2-i",
+          "fr-2014-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a2-q3-i",
+          "fr-2014-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a2-q4-i",
+          "fr-2014-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-reading-a2-q5-i",
+          "fr-2014-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-lb-q3i",
+          "fr-2014-hl-listening-lb-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-lc-q1i",
+          "fr-2014-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-lc-q3i",
+          "fr-2014-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-ld-q1i",
+          "fr-2014-hl-listening-ld-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-ld-q3i",
+          "fr-2014-hl-listening-ld-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-hl-listening-le-q2i",
+          "fr-2014-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A4',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-ol-reading-a4-q5-i",
+          "fr-2014-ol-reading-a4-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A4',) Q8",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-ol-reading-a4-q8-i",
+          "fr-2014-ol-reading-a4-q8-ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-ol-listening-la-q1i",
+          "fr-2014-ol-listening-la-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-ol-listening-lc-q3i",
+          "fr-2014-ol-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2014-ol-listening-le-q2i",
+          "fr-2014-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a1-q1-i",
+          "fr-2015-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a1-q2-i",
+          "fr-2015-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a1-q3-i",
+          "fr-2015-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a1-q4-i",
+          "fr-2015-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a1-q5-i",
+          "fr-2015-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a2-q1-i",
+          "fr-2015-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a2-q2-i",
+          "fr-2015-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a2-q4-i",
+          "fr-2015-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-reading-a2-q5-i",
+          "fr-2015-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-lb-q1i",
+          "fr-2015-hl-listening-lb-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-lb-q3i",
+          "fr-2015-hl-listening-lb-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-lc-q1i",
+          "fr-2015-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-lc-q3i",
+          "fr-2015-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-ld-q3i",
+          "fr-2015-hl-listening-ld-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-hl-listening-le-q2i",
+          "fr-2015-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "hl",
+      "type": "tariff-disagreement",
+      "where": "2015 HL Section A2 Q4(i)",
+      "detail": "the head prices this ask 5 while the ask demands more than one answer and Q.2 prices its items 55 against its own printed 60; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A2-Q4-i",
+        "schemePage": null,
+        "sourceNote": "Source discrepancy: the heading prints 5 marks, but the paper requires two reasons and the scheme prices each at 5. This practice task uses 10 marks; this is not an official correction.",
+        "pricedAt": 10,
+        "reason": "Paper page5 requires two reasons. Scheme PDF11 prints Two of and prices each at5, while its heading prints5. Ten makes the comprehension total60."
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "question-gap",
+      "where": "('A1',)",
+      "detail": "questions found: [1, 2, 4, 5, 7]",
+      "class": "joint-tariff-pair",
+      "evidence": {
+        "missingNumbers": [
+          3,
+          6
+        ],
+        "pairs": {
+          "Q3": {
+            "pairedWith": "Q2",
+            "coveringCards": [
+              "fr-2015-ol-reading-a1-q2"
+            ],
+            "readingLedgerReason": "The scheme assigns8 marks jointly to these two numbered questions (7+1). Carry both complete paper prompts into one practice task."
+          },
+          "Q6": {
+            "pairedWith": "Q5",
+            "coveringCards": [
+              "fr-2015-ol-reading-a1-q5"
+            ],
+            "readingLedgerReason": "The scheme assigns8 marks jointly to these two numbered questions (7+1). Carry both complete paper prompts into one practice task."
+          }
+        }
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "question-gap",
+      "where": "('A2',)",
+      "detail": "questions found: [1, 2, 4, 6, 8]",
+      "class": "joint-tariff-pair",
+      "evidence": {
+        "missingNumbers": [
+          3,
+          5,
+          7
+        ],
+        "pairs": {
+          "Q3": {
+            "pairedWith": "Q2",
+            "coveringCards": [
+              "fr-2015-ol-reading-a2-q2"
+            ],
+            "readingLedgerReason": "The scheme assigns8 marks jointly to these two numbered questions (7+1). Carry both complete paper prompts into one practice task."
+          },
+          "Q5": {
+            "pairedWith": "Q4",
+            "coveringCards": [
+              "fr-2015-ol-reading-a2-q4"
+            ],
+            "readingLedgerReason": "The scheme assigns8 marks jointly to these two numbered questions (7+1). Carry both complete paper prompts into one practice task."
+          },
+          "Q7": {
+            "pairedWith": "Q6",
+            "coveringCards": [
+              "fr-2015-ol-reading-a2-q6"
+            ],
+            "readingLedgerReason": "The scheme assigns8 marks jointly to these two numbered questions (7+1). Carry both complete paper prompts into one practice task."
+          }
+        }
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-ol-listening-la-q2i",
+          "fr-2015-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-ol-listening-lc-q1i",
+          "fr-2015-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2015-ol-listening-le-q2i",
+          "fr-2015-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ol",
+      "type": "unpriced-ask",
+      "where": "Q.1 1(ii)",
+      "detail": "the paper prints 'míbhuntáiste amháin le La ‘Duckface’. (Roinn 1)', which no scheme ask claims",
+      "class": "stem-of-priced-parts",
+      "evidence": {
+        "note": "Paper p3 prints the ask twice, Irish column then English column; the block is the IRISH rendering (\"Ainmnigh (i) buntáiste amháin agus (ii) míbhuntáiste amháin le La ‘Duckface’. (Roinn 1)\"). The English rendering, \"Name (i) one advantage and (ii) one disadvantage of La ‘Duckface’. (Section 1)\", is the census leaf A1 Q1 that the scheme prices; the Irish copy is the same ask.",
+        "pricedLeaves": [
+          "Section A1 Q1"
+        ],
+        "coveringCards": [
+          "fr-2015-ol-reading-a1-q1"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a1-q1-i",
+          "fr-2016-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a1-q2-i",
+          "fr-2016-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a1-q3-i",
+          "fr-2016-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a1-q4-i",
+          "fr-2016-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a1-q5-i",
+          "fr-2016-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a2-q1-i",
+          "fr-2016-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a2-q2-i",
+          "fr-2016-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a2-q3-i",
+          "fr-2016-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a2-q4-i",
+          "fr-2016-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-reading-a2-q5-i",
+          "fr-2016-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-listening-lb-q4i",
+          "fr-2016-hl-listening-lb-q4ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-listening-lc-q1i",
+          "fr-2016-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-listening-lc-q3i",
+          "fr-2016-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-listening-ld-q2i",
+          "fr-2016-hl-listening-ld-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-hl-listening-le-q3i",
+          "fr-2016-hl-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-ol-listening-la-q2i",
+          "fr-2016-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-ol-listening-lc-q1i",
+          "fr-2016-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2016,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2016-ol-listening-le-q3i",
+          "fr-2016-ol-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a1-q1-i",
+          "fr-2017-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a1-q2-i",
+          "fr-2017-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a1-q3-i",
+          "fr-2017-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a1-q4-i",
+          "fr-2017-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a1-q5-i",
+          "fr-2017-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a2-q1-i",
+          "fr-2017-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a2-q2-i",
+          "fr-2017-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a2-q3-i",
+          "fr-2017-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a2-q4-i",
+          "fr-2017-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-reading-a2-q5-i",
+          "fr-2017-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-listening-lb-q1i",
+          "fr-2017-hl-listening-lb-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-listening-lc-q1i",
+          "fr-2017-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-listening-lc-q3i",
+          "fr-2017-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-listening-ld-q3i",
+          "fr-2017-hl-listening-ld-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-hl-listening-le-q2i",
+          "fr-2017-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-ol-listening-la-q1i",
+          "fr-2017-ol-listening-la-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-ol-listening-lc-q1i",
+          "fr-2017-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2017-ol-listening-le-q2i",
+          "fr-2017-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a1-q1-i",
+          "fr-2018-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a1-q2-i",
+          "fr-2018-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a1-q3-i",
+          "fr-2018-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a1-q4-i",
+          "fr-2018-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a1-q5-i",
+          "fr-2018-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a2-q1-i",
+          "fr-2018-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a2-q2-i",
+          "fr-2018-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a2-q3-i",
+          "fr-2018-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a2-q4-i",
+          "fr-2018-hl-reading-a2-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-reading-a2-q5-i",
+          "fr-2018-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-listening-lb-q2i",
+          "fr-2018-hl-listening-lb-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-listening-lc-q3i",
+          "fr-2018-hl-listening-lc-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-listening-ld-q2i",
+          "fr-2018-hl-listening-ld-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-hl-listening-le-q2i",
+          "fr-2018-hl-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('A3',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-ol-reading-a3-q5-i",
+          "fr-2018-ol-reading-a3-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-ol-listening-la-q2i",
+          "fr-2018-ol-listening-la-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-ol-listening-lc-q1i",
+          "fr-2018-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-ol-listening-le-q1i",
+          "fr-2018-ol-listening-le-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ol",
+      "type": "unpriced-ask",
+      "where": "Q.3 5",
+      "detail": "the paper prints 'D’après Kayane, quelles sont les qualités nécessaires pour jouer à ces', which no scheme ask claims",
+      "class": "stem-of-priced-parts",
+      "evidence": {
+        "note": "Paper p7 prints the stem \"D’après Kayane, quelles sont les qualités nécessaires pour jouer à ces jeux ? (Section 3)\" over two answer lines, (i) Au Japon and (ii) En France; the scheme prices those lines and the census keys them as Q5(i) and Q5(ii). The stem is not a separate ask.",
+        "pricedLeaves": [
+          "Section A3 Q5(i)",
+          "Section A3 Q5(ii)"
+        ],
+        "coveringCards": [
+          "fr-2018-ol-reading-a3-q5-i",
+          "fr-2018-ol-reading-a3-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a1-q1-i",
+          "fr-2019-hl-reading-a1-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a1-q2-i",
+          "fr-2019-hl-reading-a1-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a1-q3-i",
+          "fr-2019-hl-reading-a1-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q4",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a1-q4-i",
+          "fr-2019-hl-reading-a1-q4-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A1',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a1-q5-i",
+          "fr-2019-hl-reading-a1-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a2-q1-i",
+          "fr-2019-hl-reading-a2-q1-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a2-q2-i",
+          "fr-2019-hl-reading-a2-q2-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a2-q3-i",
+          "fr-2019-hl-reading-a2-q3-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('A2',) Q5",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-reading-a2-q5-i",
+          "fr-2019-hl-reading-a2-q5-ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('II',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-listening-lb-q2i",
+          "fr-2019-hl-listening-lb-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-listening-lc-q1i",
+          "fr-2019-hl-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('IV',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-listening-ld-q3i",
+          "fr-2019-hl-listening-ld-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "letter-gap",
+      "where": "('V',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-hl-listening-le-q3i",
+          "fr-2019-hl-listening-le-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "hl",
+      "type": "tariff-disagreement",
+      "where": "2019 HL Section A2 Q3(ii)",
+      "detail": "the head prices this ask 5 while the ask demands more than one answer and Q.2 prices its items 55 against its own printed 60; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A2-Q3-ii",
+        "schemePage": 12,
+        "sourceNote": "Source discrepancy: the heading prints 5 marks, while the question requires two reasons and the scheme awards 5 marks per reason. For practice, use 5 + 5 marks (10 total), which also reconciles the comprehension’s published 60-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 10,
+        "reason": "Paper page 5 explicitly asks for two reasons and provides two answer spaces. Scheme page 12 says Two of and prices each reason at five marks, but the heading prints five. Two five-mark reasons reconcile the printed sixty-mark total. Disclose the practice interpretation."
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('I',) Q3",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-ol-listening-la-q3i",
+          "fr-2019-ol-listening-la-q3ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('III',) Q1",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-ol-listening-lc-q1i",
+          "fr-2019-ol-listening-lc-q1ii"
+        ]
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ol",
+      "type": "letter-gap",
+      "where": "('V',) Q2",
+      "detail": "letters found: ['i', 'ii']",
+      "class": "roman-run-in-letter-slot",
+      "evidence": {
+        "parts": [
+          "(i)",
+          "(ii)"
+        ],
+        "coveringCards": [
+          "fr-2019-ol-listening-le-q2i",
+          "fr-2019-ol-listening-le-q2ii"
+        ]
+      }
+    },
+    {
+      "year": 2020,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2020 OL Section A3 Q5",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.3 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A3-Q5",
+        "schemePage": 8,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 9 explicitly requires two details and provides two numbered answer spaces. Scheme page 8 says accept any two, assigning four marks to each detail but printing a conflicting four-mark heading. Use two four-mark details for practice, reconciling the published forty-mark comprehension; disclose this interpretation rather than asserting an SEC erratum."
+      }
+    },
+    {
+      "year": 2020,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2020 OL Section A4 Q6",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.4 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A4-Q6",
+        "schemePage": 10,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 11 explicitly requires two details and provides two numbered answer spaces. Scheme page 10 says accept any two, assigning four marks to each detail but printing a conflicting four-mark heading. Use two four-mark details for practice, reconciling the published forty-mark comprehension; disclose this interpretation rather than asserting an SEC erratum."
+      }
+    },
+    {
+      "year": 2021,
+      "level": "hl",
+      "type": "marks-checksum",
+      "where": "2021 hl ",
+      "detail": "marks sum 210, other years say 300",
+      "class": "printed-total-differs",
+      "evidence": {
+        "coverMarks": {
+          "writtenBooklet": 130,
+          "listeningBooklet": 80
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2021 OL Section A3 Q5",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.3 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A3-Q5",
+        "schemePage": 8,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 9 explicitly requires two details and provides two numbered answer spaces. Scheme page 8 says accept any two, assigns four marks to each full-credit detail, but gives an inconsistent four-mark heading. Use two four-mark details for practice, which reconciles the published forty-mark comprehension. Disclose this interpretation, not an official SEC correction."
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2021 OL Section A4 Q3",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.4 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A4-Q3",
+        "schemePage": 10,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 11 explicitly requires two details and provides two numbered answer spaces. Scheme page 10 says accept any two, assigns four marks to each full-credit detail, but gives an inconsistent four-mark heading. Use two four-mark details for practice, which reconciles the published forty-mark comprehension. Disclose this interpretation, not an official SEC correction."
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ol",
+      "type": "marks-checksum",
+      "where": "2021 ol ",
+      "detail": "marks sum 240, other years say 320",
+      "class": "printed-total-differs",
+      "evidence": {
+        "coverMarks": {
+          "writtenBooklet": 140,
+          "listeningBooklet": 100
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "level": "hl",
+      "type": "marks-checksum",
+      "where": "2022 hl ",
+      "detail": "marks sum 210, other years say 300",
+      "class": "printed-total-differs",
+      "evidence": {
+        "coverMarks": {
+          "writtenBooklet": 130,
+          "listeningBooklet": 80
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "level": "ol",
+      "type": "marks-checksum",
+      "where": "2022 ol ",
+      "detail": "marks sum 240, other years say 320",
+      "class": "printed-total-differs",
+      "evidence": {
+        "coverMarks": {
+          "writtenBooklet": 140,
+          "listeningBooklet": 100
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2024 OL Section A2 Q2",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.2 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A2-Q2",
+        "schemePage": 7,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 7 explicitly requires two details and has two numbered answer spaces. Scheme page 7 awards 4 marks per accepted detail, while the item heading prints only 4. Two 4-mark details also reconcile this comprehension to its published 40 marks. Use the per-detail allocations for practice and disclose the inconsistent heading; this is a reviewed interpretation, not a claimed SEC erratum."
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2024 OL Section A3 Q7",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.3 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A3-Q7",
+        "schemePage": 10,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 9 explicitly requires two details and has two numbered answer spaces. Scheme page 10 awards 4 marks per accepted detail, while the item heading prints only 4. Two 4-mark details also reconcile this comprehension to its published 40 marks. Use the per-detail allocations for practice and disclose the inconsistent heading; this is a reviewed interpretation, not a claimed SEC erratum."
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ol",
+      "type": "tariff-disagreement",
+      "where": "2024 OL Section A4 Q5",
+      "detail": "the head prices this ask 4 while the ask demands more than one answer and Q.4 prices its items 36 against its own printed 40; the value this ask is really worth is not printed",
+      "class": "reviewed-scoring-decision",
+      "evidence": {
+        "readingLedgerAddress": "A4-Q5",
+        "schemePage": 12,
+        "sourceNote": "Source discrepancy: the heading prints 4 marks, while the question requires two details and the scheme awards 4 marks per detail. For practice, use 4 + 4 marks (8 total), which also reconciles the comprehension’s published 40-mark total. This is an interpretation of the conflicting source, not an official correction.",
+        "pricedAt": 8,
+        "reason": "Paper page 11 explicitly requires two details and has two numbered answer spaces. Scheme page 12 awards 4 marks per accepted detail, while the item heading prints only 4. Two 4-mark details also reconcile this comprehension to its published 40 marks. Use the per-detail allocations for practice and disclose the inconsistent heading; this is a reviewed interpretation, not a claimed SEC erratum."
+      }
+    }
+  ]
+}

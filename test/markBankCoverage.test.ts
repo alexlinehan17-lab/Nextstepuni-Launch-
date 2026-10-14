@@ -44,11 +44,17 @@ import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/account
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  if (subject === 'french') {
+    return [...FRENCH_HIGHER, ...FRENCH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'applied-maths') {
     return [...APPLIED_HIGHER, ...APPLIED_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -239,6 +245,13 @@ describe('Mark Bank paper-coverage ratchet', () => {
     if (subject === 'business') {
       // Same files and order as reconcile.py's content hash.
       for (const name of ['rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'french') {
+      // Same files and order as reconcile.py's content hash, listening included.
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

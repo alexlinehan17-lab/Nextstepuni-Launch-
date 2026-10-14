@@ -35,6 +35,7 @@ import engineeringRuntimeJson from './engineering-runtime.json';
 import englishQuestionRuntimeJson from './english-question-runtime.json';
 import englishRuntimeJson from './english-runtime.json';
 import frenchRuntimeJson from './french-runtime.json';
+import frenchReviewedTasks from './french-reviewed-tasks.json';
 import geographyQuestionRuntimeJson from './geography-question-runtime.json';
 import geographyRuntimeJson from './geography-runtime.json';
 import germanRuntimeJson from './german-runtime.json';
@@ -3950,6 +3951,24 @@ for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of f
       return topicId;
     }),
   );
+}
+
+// Reviewed French task boundaries and finite routes share exact booklet-scoped
+// identities with Mark Bank. They supplement, rather than replace, legacy rows.
+for (const task of frenchReviewedTasks) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey(
+    'french', task.level as PaperLevel, task.year, 'main', task.fileid,
+    task.n, task.paperKey, task.lang as PaperLang,
+  ), task.topicIds);
+  if ('category' in task && task.category === 'reading') {
+    // A source-reviewed passage classification also governs its existing
+    // numbered archive entry; a stale shared reference must not add it back
+    // to the wrong topic when students follow an older question link.
+    FILE_QUESTION_TOPICS.set(fileQuestionKey(
+      'french', task.level as PaperLevel, task.year, 'main', task.fileid,
+      task.parent, task.paperKey, task.lang as PaperLang,
+    ), task.topicIds);
+  }
 }
 
 // German Storage sidecars use several incompatible historic number runs. The

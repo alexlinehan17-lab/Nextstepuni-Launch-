@@ -377,6 +377,8 @@ export interface SecCardBase extends CardBase {
   questionText: string;
   /** Names a separately priced task within a shared printed instruction. */
   practiceFocus?: string;
+  /** Printed MCQ options, in paper order; no answer key is included here. */
+  questionChoices?: string[];
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
   schemeCitation: string;
@@ -718,7 +720,33 @@ export interface BusinessRubric {
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | BusinessRubric;
+/** French writing combines communicative tasks, language quality and format.
+ * A band describes the whole response; it is never a claimable answer. */
+export interface FrenchCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidance: string[];
+  bands?: { label: string; marks: number[]; guidance: string[] }[];
+  /** The SEC withholds language marks if no communicative task is attempted. */
+  requiresAttempt?: boolean;
+}
+
+export interface FrenchRubric {
+  system: 'french';
+  taskRequirements: string[];
+  /** Complete accepted answers, partial-credit ladder and question-specific rules. */
+  answerGuide?: string[];
+  criteria: FrenchCriterion[];
+  markingGuideNote: string;
+  /** NextStepUni's own practice guidance. Never SEC text: rendered apart from
+   *  the scheme under an explicit app label. Every other field of this rubric
+   *  shows the SEC's printed wording. */
+  practiceNotes?: string[];
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric | PoliticsRubric | PhysicalEducationRubric | AppliedMathematicsRubric | AccountingRubric | FrenchRubric | BusinessRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -1028,6 +1056,23 @@ export function tariffReconciles(card: SecCard): boolean {
             && new Set(bandMarks).size === bandMarks.length
             && [...bandMarks].sort((a, b) => a - b)
               .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
+    if (card.rubric.system === 'french') {
+      const { criteria } = card.rubric;
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const allowed = criterion.permittedMarks;
+          if (!allowed.length || Math.min(...allowed) !== 0
+            || Math.max(...allowed) !== criterion.maxMarks
+            || new Set(allowed).size !== allowed.length
+            || allowed.some(mark => !Number.isInteger(mark) || mark < 0)) return false;
+          if (!criterion.bands) return true;
+          const marks = criterion.bands.flatMap(band => band.marks);
+          return marks.length === allowed.length && new Set(marks).size === marks.length
+            && marks.every(mark => allowed.includes(mark));
         });
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {

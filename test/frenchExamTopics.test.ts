@@ -87,11 +87,19 @@ describe('French exam-topic registry', () => {
       referenceOfficialAssociations: 739,
       referenceMockAssociations: 505,
       referenceProviderSampleAssociations: 0,
-      matchedAssociations: 505,
+      // 20 passages were re-typed from their printed SEC source attribution
+      // (french-reading-review.json): 19 headings become audited anomalies and
+      // 2014 HL archive marker 11 (passage 1's opinion question) leaves the
+      // passage-2 heading. 505 → 486 matched, 992 → 922 card links.
+      matchedAssociations: 486,
+      referenceAnomalyAssociations: 19,
       sourceBlockedAssociations: 234,
       sourceBlockedByReason: { preCorpus: 170, deferred: 60, oralMaterial: 4 },
-      matchedLocalCardLinks: 992,
+      matchedLocalCardLinks: 922,
     });
+    const anomalies = frenchCrosswalk.associations.filter(item => item.resolution === 'reference-anomaly');
+    expect(anomalies).toHaveLength(19);
+    expect(anomalies.every(item => 'reason' in item && /^Reviewed SEC source: \S/.test(item.reason as string))).toBe(true);
     expect(frenchCrosswalk.policy.excludedContent).toContain('No commercial mock question');
     const blocked = frenchCrosswalk.associations.filter(item => item.resolution === 'source-blocked');
     expect(blocked).toHaveLength(234);
@@ -106,7 +114,8 @@ describe('French exam-topic registry', () => {
     const actual = [...new Set(references.map(reference => (
       `${reference.topicId}|${reference.subdivision}`
     )))].sort();
-    expect(references).toHaveLength(1226);
+    // Anomalies keep one passage-level reference instead of per-question rows.
+    expect(references).toHaveLength(1175);
     expect(actual).toEqual(expected);
     expect(references.filter(reference => reference.sitting === 'deferred')).toHaveLength(60);
     expect(references.filter(reference => reference.paperKey === 'oral')).toHaveLength(4);
@@ -131,8 +140,8 @@ describe('French exam-topic registry', () => {
       localPaperVariants: 98,
       localPhysicalMappings: 1423,
       distinctStudentFacingQuestions: 1003,
-      referenceMappedLocalQuestions: 982,
-      retainedLocalQuestions: 441,
+      referenceMappedLocalQuestions: 874,
+      retainedLocalQuestions: 549,
       hostedPaperAnchorMaps: 98,
       preservedBaselineVariants: 20,
       preservedBaselineCards: 278,
@@ -146,8 +155,18 @@ describe('French exam-topic registry', () => {
 
     expect(topicsForPaper('french', 2015, 'ordinary', 'ev', 'LC010GLP000EV.pdf')?.q)
       .toContainEqual({ n: 'A4', primary: 'french-5-1' });
-    expect(topicsForPaper('french', 2019, 'ordinary', 'ev', 'LC010GLP000BV.pdf')?.q.map(q => q.n))
+    const ordinary2019 = topicsForPaper('french', 2019, 'ordinary', 'ev', 'LC010GLP000BV.pdf')!.q;
+    expect(ordinary2019).toHaveLength(63);
+    expect(ordinary2019.slice(0, 10).map(question => question.n))
       .toEqual(['A1', 'A2', 'A3', 'A4', 'B1A', 'B1B', 'B2A', 'B2B', 'B3A', 'B3B']);
+    expect(ordinary2019.slice(10).map(question => question.n)).toEqual([
+      ...[1, 2, 3, 4, 5].map(field => `B1B-field-${field}`),
+      'B1B-route-6789', 'B2A-route-123', 'B2B-route-123', 'B3A-route-123', 'B3B-route-123',
+      ...['a', 'b', 'c', 'd'].map(letter => `A1-Q1-${letter}`),
+      ...[2, 3, 4, 5, 6].map(item => `A1-Q${item}`),
+      ...[2, 3, 4].flatMap(rc => Array.from({ length: 8 }, (_, index) => `A${rc}-Q${index + 1}`)),
+      ...Array.from({ length: 10 }, (_, index) => `B1A-gap-${index + 1}`),
+    ]);
   });
 
   it('classifies every physical card into same-level reference buckets', () => {
@@ -186,7 +205,7 @@ describe('French exam-topic registry', () => {
     )).toEqual(['french-higher-written-production-recit']);
   });
 
-  it('ships a finite paper-only fallback for all 1,423 cards', () => {
+  it('ships a finite paper-only fallback for every French archive and reviewed task', () => {
     const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'french');
     for (const paper of papers) {
       const mapPath = path.join(
@@ -197,7 +216,7 @@ describe('French exam-topic registry', () => {
       expect(isAnswerMap(map), mapPath).toBe(true);
       expect(map.paperOnly, mapPath).toBe(1);
       expect(map.q.map((question: { n: string }) => question.n))
-        .toEqual(paper.q.map(question => question.n));
+        .toEqual(topicsForPaper('french', paper.year, paper.level, paper.lang, paper.fileid)!.q.map(question => question.n));
       for (const question of map.q) {
         expect(
           paperRegionFor(map.q, question.n, map.maxCropPages ?? 3),
@@ -207,9 +226,9 @@ describe('French exam-topic registry', () => {
     }
   });
 
-  it('surfaces all 1,003 distinct questions and only leaves oral buckets empty', () => {
+  it('retains 1,003 archive questions and adds the reviewed task boundaries', () => {
     expect(subjectAtlasStats('french')).toMatchObject({
-      questions: 1003,
+      questions: 2959,
       topics: 33,
       yearMin: 2010,
       yearMax: 2026,

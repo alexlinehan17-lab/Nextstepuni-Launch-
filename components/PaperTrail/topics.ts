@@ -195,7 +195,14 @@ for (const [subjectId, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
           secondary: canonicalIds[1],
         });
       }
-      paper.q.sort((a, b) => a.n.localeCompare(b.n, undefined, { numeric: true }));
+      // Order rows by printed question number; reviewed tasks keep their
+      // audited order after their printed question (Accounting 1, 1(a), 1(b),
+      // 2 …). A paper whose rows are not all numbered (French sections A1 …
+      // B3B and their task routes) keeps its audited order. Sort is stable.
+      const printedNumber = (n: string) => n.match(/^\d+/)?.[0];
+      if (paper.q.every(question => printedNumber(question.n) !== undefined)) {
+        paper.q.sort((a, b) => Number(printedNumber(a.n)) - Number(printedNumber(b.n)));
+      }
     }
   }
 }

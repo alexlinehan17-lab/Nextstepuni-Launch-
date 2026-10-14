@@ -52,6 +52,10 @@ import { CARDS as TECHNOLOGY_HIGHER } from '../components/MarkBank/cards/technol
 import { CARDS as TECHNOLOGY_ORDINARY } from '../components/MarkBank/cards/technology/ordinary';
 import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
 import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
+import { FRENCH_WRITING_CARDS } from '../components/MarkBank/cards/french/writing';
+import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
+import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
+import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
 import { CARDS as GERMAN_HIGHER } from '../components/MarkBank/cards/german/higher';
 import { CARDS as GERMAN_ORDINARY } from '../components/MarkBank/cards/german/ordinary';
 import { CARDS as SPANISH_HIGHER } from '../components/MarkBank/cards/spanish/higher';
@@ -811,9 +815,18 @@ const businessAdditionIds = new Set([
   ...businessReviewed.cards,
   ...expandBusinessRoutePools(businessRoutePools.pools),
 ].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
+// Keep the original French count/hash frozen. Reviewed additions have their own
+// source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
+const frenchAdditionIds = new Set([
+  ...FRENCH_WRITING_CARDS,
+  // Reviewed corrections retain legacy IDs and remain in the frozen hash.
+  ...FRENCH_READING_CARDS.filter(card => card.id.includes('-reading-')),
+  ...FRENCH_CLOZE_CARDS, ...FRENCH_LISTENING_CARDS,
+].map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
+  if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   if (!name.startsWith('physical-education:')) return ids;
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   return [...ids.filter(id => peFrozen.has(id)), ...peAliasIds.filter(id => id.includes(level))];
@@ -857,12 +870,15 @@ describe('Mark Bank card preservation', () => {
     // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
     // Q6(c)'s six pair cards into one: - 5; Politics 2021 OL Q1(f) becomes one
     // card per syllabus topic: + 1.
-    // Business keeps its original 606 cards frozen; its source-reviewed
-    // 2010-2026 additions (2026-10-14) are counted on top: 22,970 + 1,382.
+    // Business and French keep their original card sets frozen (checked per
+    // deck above); their reviewed additions are counted on top of the bank.
+    // Business: 2010-2026 source-reviewed additions (2026-10-14), 1,382.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
-    expect(decks.reduce((total, [name, cards]) => total + cards.length - businessAdded(name, cards), 0)).toBe(22_970);
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(22_970 + businessAdditionIds.size);
+    expect(decks.reduce((total, [name, cards]) => total + cards.length - businessAdded(name, cards), 0))
+      .toBe(22_970 + frenchAdditionIds.size);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
+      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
