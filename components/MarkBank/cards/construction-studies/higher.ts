@@ -27147,4 +27147,1756 @@ export const CARDS: SecCard[] = [
           "includesPrompt": true
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q1-a", topicId: "cons-1-5", conceptId: "bay-window-roof-section-a",
+    section: "B", questionRef: "2012 HL Q1(a)",
+    stem: "A triple-glazed bay window projects 1.5 metres from the external wall of a dwelling house, as shown in the accompanying sketch. The external wall is a 350 mm concrete block wall with an insulated cavity. The lean-to roof is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is fixed to the underside of the rafters to form a sloped ceiling.",
+    questionText: "To a scale of 1:5, draw a vertical section through the window, roof and front wall of the house. The section should show the typical construction details from 400 mm below the concrete lintels of the bay window, through the fixed frame of the window, wallplate and rafter to a level 400 mm above the abutment of the lean-to roof and the front wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Any 12 points × 4 marks", marks: 48, contextNote: "Best twelve points, 4 each (drawing 3, annotation 1). Menu: slates; battens; felt or breather membrane; rafter; roof insulation; vapour control layer; ventilation to the roof; wallplate or hanger to the main wall; insulated plasterboard; fascia, soffit and gutter; lead flashing; cavity wall and ties; cavity closer; internal and external plaster; wall insulation; stepped DPC in the cavity; lintels; wallplate; window frame; triple-glazed unit.", permittedMarks: [0,4,8,12,16,20,24,28,32,36,40,44,48] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale and Drafting", marks: 8, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Triple-glazed bay window with a lean-to roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-original.png",
+          "srcHash": "2e80d98a8efd3e9f2b5e17925569b3be",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 1: the printed question with a sketch of the triple-glazed bay window under its lean-to roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-section.png",
+          "srcHash": "4067053ae96315153653c69204b397cf",
+          "alt": "SEC model sections through the bay window and lean-to roof at the abutment with the house wall, with a list of specifications.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q1-b", topicId: "cons-3-10", conceptId: "bay-window-roof-section-b",
+    section: "B", questionRef: "2012 HL Q1(b)",
+    stem: "A triple-glazed bay window projects 1.5 metres from the external wall of a dwelling house, as shown in the accompanying sketch. The external wall is a 350 mm concrete block wall with an insulated cavity. The lean-to roof is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is fixed to the underside of the rafters to form a sloped ceiling.",
+    questionText: "Indicate on your drawing the design detailing that ensures moisture does not penetrate at the abutment of the roof and the wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "abutment", kind: "criterion", verbatim: "Design detail", marks: 4, contextNote: "Show the abutment detail, as in the scheme’s model section: a lead flashing and a stepped DPC in the cavity over the lean-to roof.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Triple-glazed bay window with a lean-to roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-original.png",
+          "srcHash": "2e80d98a8efd3e9f2b5e17925569b3be",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 1: the printed question with a sketch of the triple-glazed bay window under its lean-to roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-section.png",
+          "srcHash": "4067053ae96315153653c69204b397cf",
+          "alt": "SEC model sections through the bay window and lean-to roof at the abutment with the house wall, with a list of specifications.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q1-complete", topicId: "cons-1-5", conceptId: "bay-window-roof-section-complete",
+    section: "B", questionRef: "2012 HL Q1 — complete",
+    stem: "A triple-glazed bay window projects 1.5 metres from the external wall of a dwelling house, as shown in the accompanying sketch. The external wall is a 350 mm concrete block wall with an insulated cavity. The lean-to roof is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is fixed to the underside of the rafters to form a sloped ceiling.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the window, roof and front wall of the house. The section should show the typical construction details from 400 mm below the concrete lintels of the bay window, through the fixed frame of the window, wallplate and rafter to a level 400 mm above the abutment of the lean-to roof and the front wall of the house. (b) Indicate on your drawing the design detailing that ensures moisture does not penetrate at the abutment of the roof and the wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Any 12 points × 4 marks", marks: 48, contextNote: "Best twelve points, 4 each (drawing 3, annotation 1). Menu: slates; battens; felt or breather membrane; rafter; roof insulation; vapour control layer; ventilation to the roof; wallplate or hanger to the main wall; insulated plasterboard; fascia, soffit and gutter; lead flashing; cavity wall and ties; cavity closer; internal and external plaster; wall insulation; stepped DPC in the cavity; lintels; wallplate; window frame; triple-glazed unit.", permittedMarks: [0,4,8,12,16,20,24,28,32,36,40,44,48] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale and Drafting", marks: 8, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-abutment", kind: "criterion", verbatim: "Design detail", marks: 4, contextNote: "Show the abutment detail, as in the scheme’s model section: a lead flashing and a stepped DPC in the cavity over the lean-to roof.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q1-a","label":"a","marks":56,"rowIds":["a-details","a-presentation"]},{"sourceCardId":"cons-2012-hl-q1-b","label":"b","marks":4,"rowIds":["b-abutment"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Triple-glazed bay window with a lean-to roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-original.png",
+          "srcHash": "2e80d98a8efd3e9f2b5e17925569b3be",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 1: the printed question with a sketch of the triple-glazed bay window under its lean-to roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q1-section.png",
+          "srcHash": "4067053ae96315153653c69204b397cf",
+          "alt": "SEC model sections through the bay window and lean-to roof at the abutment with the house wall, with a list of specifications.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q2-a", topicId: "cons-1-2", conceptId: "lifetime-use-bathroom-a",
+    section: "B", questionRef: "2012 HL Q2(a)",
+    questionText: "Discuss in detail, using notes and freehand sketches, two functional requirements of a dwelling house designed for lifetime use. Refer in particular to the: main entrance and internal corridor layout.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 22,
+    rows: [
+    { id: "requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 11, contextNote: "Note 6 and sketch 5. Such as, the main entrance: level access no steeper than 1:50; a 1200 × 1200 mm clear area at the door; an 800 mm clear opening; a flush threshold, at most 15 mm; good lighting and a porch.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    { id: "requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 11, contextNote: "A second requirement: note 6 and sketch 5. Such as, the internal corridors: kept to a minimum; at least 1200 mm wide for wheelchair users; a 1500 mm turning circle; switches and handles at 900–1200 mm; motion-sensor lighting.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use and a wheelchair-accessible bathroom",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Both printed areas in (a) and all five printed bathroom items in (b) and (c) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-original.png",
+          "srcHash": "d8f2228eb3a158f4ac609515795f8ca6",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 2: the printed question with the plan of the bedroom, the 2.3 m × 2.9 m bathroom and the hot press.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q2-requirements",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-requirements.png",
+          "srcHash": "f9cfd7cddbcae375af6a684f6a2036e6",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the main entrance and internal corridors for lifetime use.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q2-b", topicId: "cons-1-2", conceptId: "lifetime-use-bathroom-b",
+    section: "B", questionRef: "2012 HL Q2(b)",
+    questionText: "The layout of a bedroom and an adjoining bathroom, which is 2.3 m × 2.9 m, is shown in the accompanying drawing. The hot press is also shown. Using notes and freehand sketches, show a preferred layout for the bathroom space to ensure that it is suitable for a person in a wheelchair. Indicate in your design sketches the location of the following: window, shower area, toilet, wash hand basin and grab rails. Include three typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 23,
+    rows: [
+    { id: "items", kind: "criterion", verbatim: "Preferred layout for bathroom space (5 × 4 marks)", marks: 20, contextNote: "Window, shower area, toilet, wash hand basin and grab rails each located, 4 each, around a clear 1500 mm turning circle, as in the scheme’s model layouts; alternative layouts are accepted.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "dimensions", kind: "criterion", verbatim: "3 typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use and a wheelchair-accessible bathroom",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Both printed areas in (a) and all five printed bathroom items in (b) and (c) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-original.png",
+          "srcHash": "d8f2228eb3a158f4ac609515795f8ca6",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 2: the printed question with the plan of the bedroom, the 2.3 m × 2.9 m bathroom and the hot press.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q2-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-layout.png",
+          "srcHash": "54090615a7df4b85600bbb50d5d997b6",
+          "alt": "SEC model layouts of the wheelchair-accessible bathroom with a clear turning circle.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q2-c", topicId: "cons-1-2", conceptId: "lifetime-use-bathroom-c",
+    section: "B", questionRef: "2012 HL Q2(c)",
+    questionText: "Discuss your preferred location for the bathroom items listed at 2(b) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "window", kind: "criterion", verbatim: "Window", marks: 3, contextNote: "Such as: a low cill near the toilet for ventilation, with lever handles low on the sash.", permittedMarks: [0,1,2,3] },
+    { id: "shower", kind: "criterion", verbatim: "Shower area", marks: 3, contextNote: "Such as: a flush tray or wet area at least 1000 × 1000 mm; a flip seat; vertical and horizontal 35 mm grab rails; a non-slip floor.", permittedMarks: [0,1,2,3] },
+    { id: "toilet", kind: "criterion", verbatim: "Toilet", marks: 3, contextNote: "Such as: a fold-up rail on the open side and a fixed rail on the wall at 700 mm; a lever flush; an alarm cord.", permittedMarks: [0,1,2,3] },
+    { id: "basin", kind: "criterion", verbatim: "Wash hand basin", marks: 3, contextNote: "Such as: wall-mounted at 800 mm with knee space beneath; close to the toilet; lever or sensor taps; a 1500 mm turning circle.", permittedMarks: [0,1,2,3] },
+    { id: "rails", kind: "criterion", verbatim: "Grab rails", marks: 3, contextNote: "Such as: folding grab rails installed close to all appliances.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use and a wheelchair-accessible bathroom",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Both printed areas in (a) and all five printed bathroom items in (b) and (c) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-original.png",
+          "srcHash": "d8f2228eb3a158f4ac609515795f8ca6",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 2: the printed question with the plan of the bedroom, the 2.3 m × 2.9 m bathroom and the hot press.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q2-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-locations.png",
+          "srcHash": "4f23ec4b05fe1de64addd619de678282",
+          "alt": "SEC 2012 Higher marking scheme notes on locating the window, shower, toilet, basin and grab rails.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q2-complete", topicId: "cons-1-2", conceptId: "lifetime-use-bathroom-complete",
+    section: "B", questionRef: "2012 HL Q2 — complete",
+    questionText: "(a) Discuss in detail, using notes and freehand sketches, two functional requirements of a dwelling house designed for lifetime use. Refer in particular to the: main entrance and internal corridor layout. (b) The layout of a bedroom and an adjoining bathroom, which is 2.3 m × 2.9 m, is shown in the accompanying drawing. The hot press is also shown. Using notes and freehand sketches, show a preferred layout for the bathroom space to ensure that it is suitable for a person in a wheelchair. Indicate in your design sketches the location of the following: window, shower area, toilet, wash hand basin and grab rails. Include three typical dimensions. (c) Discuss your preferred location for the bathroom items listed at 2(b) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 11, contextNote: "Note 6 and sketch 5. Such as, the main entrance: level access no steeper than 1:50; a 1200 × 1200 mm clear area at the door; an 800 mm clear opening; a flush threshold, at most 15 mm; good lighting and a porch.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    { id: "a-requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 11, contextNote: "A second requirement: note 6 and sketch 5. Such as, the internal corridors: kept to a minimum; at least 1200 mm wide for wheelchair users; a 1500 mm turning circle; switches and handles at 900–1200 mm; motion-sensor lighting.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11] },
+    { id: "b-items", kind: "criterion", verbatim: "Preferred layout for bathroom space (5 × 4 marks)", marks: 20, contextNote: "Window, shower area, toilet, wash hand basin and grab rails each located, 4 each, around a clear 1500 mm turning circle, as in the scheme’s model layouts; alternative layouts are accepted.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "3 typical dimensions", marks: 3, contextNote: "Three typical dimensions, 1 each.", permittedMarks: [0,1,2,3] },
+    { id: "c-window", kind: "criterion", verbatim: "Window", marks: 3, contextNote: "Such as: a low cill near the toilet for ventilation, with lever handles low on the sash.", permittedMarks: [0,1,2,3] },
+    { id: "c-shower", kind: "criterion", verbatim: "Shower area", marks: 3, contextNote: "Such as: a flush tray or wet area at least 1000 × 1000 mm; a flip seat; vertical and horizontal 35 mm grab rails; a non-slip floor.", permittedMarks: [0,1,2,3] },
+    { id: "c-toilet", kind: "criterion", verbatim: "Toilet", marks: 3, contextNote: "Such as: a fold-up rail on the open side and a fixed rail on the wall at 700 mm; a lever flush; an alarm cord.", permittedMarks: [0,1,2,3] },
+    { id: "c-basin", kind: "criterion", verbatim: "Wash hand basin", marks: 3, contextNote: "Such as: wall-mounted at 800 mm with knee space beneath; close to the toilet; lever or sensor taps; a 1500 mm turning circle.", permittedMarks: [0,1,2,3] },
+    { id: "c-rails", kind: "criterion", verbatim: "Grab rails", marks: 3, contextNote: "Such as: folding grab rails installed close to all appliances.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q2-a","label":"a","marks":22,"rowIds":["a-requirement-1","a-requirement-2"]},{"sourceCardId":"cons-2012-hl-q2-b","label":"b","marks":23,"rowIds":["b-items","b-dimensions"]},{"sourceCardId":"cons-2012-hl-q2-c","label":"c","marks":15,"rowIds":["c-window","c-shower","c-toilet","c-basin","c-rails"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Designing for lifetime use and a wheelchair-accessible bathroom",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Both printed areas in (a) and all five printed bathroom items in (b) and (c) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-original.png",
+          "srcHash": "d8f2228eb3a158f4ac609515795f8ca6",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 2: the printed question with the plan of the bedroom, the 2.3 m × 2.9 m bathroom and the hot press.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q2-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q2-layout.png",
+          "srcHash": "54090615a7df4b85600bbb50d5d997b6",
+          "alt": "SEC model layouts of the wheelchair-accessible bathroom with a clear turning circle.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q3-a", topicId: "cons-1-2", conceptId: "storeroom-conversion-a",
+    section: "B", questionRef: "2012 HL Q3(a)",
+    stem: "The drawing shows the elevation and plan of a semi-detached house with an adjoining storeroom. All external walls are of single leaf 215 mm hollow block construction and all roofs are slated. All internal walls are of solid block construction and the internal wall A-A is load-bearing. The storeroom wall B-B is south facing. It has been decided to convert the storeroom in order to enlarge the living space. In the conversion, you need to give consideration to: redesigning the ground floor layout to allow increased penetration of sunlight to the interior and upgrading the thermal properties of the external walls.",
+    questionText: "Show, using notes and freehand sketches, a revised design detailing for the dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 40,
+    rows: [
+    { id: "layout", kind: "criterion", verbatim: "Design detailing : Layout / glazing", marks: 20, contextNote: "Notes and sketches, 2 × 10. Such as: high-performance low-e double or triple glazing on the south elevation; roof lights; glazed doors to the storeroom and between it and the dining room; the kitchen wall removed on an RSJ or lintels; bi-fold glazed doors; a draught lobby.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "thermal", kind: "criterion", verbatim: "Design detailing : Upgrade thermal properties", marks: 20, contextNote: "Notes and sketches, 2 × 10. Such as: external insulation on the hollow block, 80–300 mm, fixed with adhesive and bolts, with fibreglass mesh and two coats of acrylic render; windows moved to the outer edge; thermal bridges detailed out; XPS carried below ground to the foundation.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Converting a storeroom: sunlight and thermal upgrade",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Both printed considerations are required; the designs are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-original.png",
+          "srcHash": "762f881657ea9a851b17c4506c436afc",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 3: the printed question with the elevation and plan of the semi-detached house and storeroom, walls A-A and B-B marked.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q3-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-design.png",
+          "srcHash": "6f7d7f98ffe6eea4872ed6f193cc6fd7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on redesigning the layout and glazing and on insulating the external walls (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q3-b", topicId: "cons-6-4", conceptId: "storeroom-conversion-b",
+    section: "B", questionRef: "2012 HL Q3(b)",
+    stem: "The drawing shows the elevation and plan of a semi-detached house with an adjoining storeroom. All external walls are of single leaf 215 mm hollow block construction and all roofs are slated. All internal walls are of solid block construction and the internal wall A-A is load-bearing. The storeroom wall B-B is south facing. It has been decided to convert the storeroom in order to enlarge the living space. In the conversion, you need to give consideration to: redesigning the ground floor layout to allow increased penetration of sunlight to the interior and upgrading the thermal properties of the external walls.",
+    questionText: "For each of the above, discuss in detail the reasons for your proposed design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "layout-reasons", kind: "criterion", verbatim: "Discussion - reasons for revised floor layout", marks: 10, contextNote: "Such as: warm, sunlit, spacious living; the health benefits of natural light; tall windows for winter sun, with shades or brise-soleil against summer overheating.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "wall-reasons", kind: "criterion", verbatim: "Discussion - reasons for external wall upgrade", marks: 10, contextNote: "Such as: external insulation preferred to dry lining, using the thermal mass of the block walls; less condensation with thermal bridges removed; lower costs, fossil fuel use and CO₂.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Converting a storeroom: sunlight and thermal upgrade",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Both printed considerations are required; the designs are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-original.png",
+          "srcHash": "762f881657ea9a851b17c4506c436afc",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 3: the printed question with the elevation and plan of the semi-detached house and storeroom, walls A-A and B-B marked.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q3-reasons",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-reasons.png",
+          "srcHash": "7f5007ad9b8d87ad1b7196f77656894b",
+          "alt": "SEC 2012 Higher marking scheme notes and sketch on the reasons for the design choices.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q3-complete", topicId: "cons-1-2", conceptId: "storeroom-conversion-complete",
+    section: "B", questionRef: "2012 HL Q3 — complete",
+    stem: "The drawing shows the elevation and plan of a semi-detached house with an adjoining storeroom. All external walls are of single leaf 215 mm hollow block construction and all roofs are slated. All internal walls are of solid block construction and the internal wall A-A is load-bearing. The storeroom wall B-B is south facing. It has been decided to convert the storeroom in order to enlarge the living space. In the conversion, you need to give consideration to: redesigning the ground floor layout to allow increased penetration of sunlight to the interior and upgrading the thermal properties of the external walls.",
+    questionText: "(a) Show, using notes and freehand sketches, a revised design detailing for the dwelling house. (b) For each of the above, discuss in detail the reasons for your proposed design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-layout", kind: "criterion", verbatim: "Design detailing : Layout / glazing", marks: 20, contextNote: "Notes and sketches, 2 × 10. Such as: high-performance low-e double or triple glazing on the south elevation; roof lights; glazed doors to the storeroom and between it and the dining room; the kitchen wall removed on an RSJ or lintels; bi-fold glazed doors; a draught lobby.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "a-thermal", kind: "criterion", verbatim: "Design detailing : Upgrade thermal properties", marks: 20, contextNote: "Notes and sketches, 2 × 10. Such as: external insulation on the hollow block, 80–300 mm, fixed with adhesive and bolts, with fibreglass mesh and two coats of acrylic render; windows moved to the outer edge; thermal bridges detailed out; XPS carried below ground to the foundation.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] },
+    { id: "b-layout-reasons", kind: "criterion", verbatim: "Discussion - reasons for revised floor layout", marks: 10, contextNote: "Such as: warm, sunlit, spacious living; the health benefits of natural light; tall windows for winter sun, with shades or brise-soleil against summer overheating.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-wall-reasons", kind: "criterion", verbatim: "Discussion - reasons for external wall upgrade", marks: 10, contextNote: "Such as: external insulation preferred to dry lining, using the thermal mass of the block walls; less condensation with thermal bridges removed; lower costs, fossil fuel use and CO₂.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q3-a","label":"a","marks":40,"rowIds":["a-layout","a-thermal"]},{"sourceCardId":"cons-2012-hl-q3-b","label":"b","marks":20,"rowIds":["b-layout-reasons","b-wall-reasons"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Converting a storeroom: sunlight and thermal upgrade",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Both printed considerations are required; the designs are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-original.png",
+          "srcHash": "762f881657ea9a851b17c4506c436afc",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 3: the printed question with the elevation and plan of the semi-detached house and storeroom, walls A-A and B-B marked.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q3-design",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q3-design.png",
+          "srcHash": "6f7d7f98ffe6eea4872ed6f193cc6fd7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on redesigning the layout and glazing and on insulating the external walls (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q4-a", topicId: "cons-5-5", conceptId: "septic-tank-percolation-a",
+    section: "B", questionRef: "2012 HL Q4(a)",
+    stem: "The typical layout of an on-site wastewater treatment system suitable for a single house is shown in the accompanying drawing.",
+    questionText: "Describe in detail, using notes and freehand sketches, the operating principles of a conventional septic tank system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
+    rows: [
+    { id: "principle-1", kind: "criterion", verbatim: "Operating principle 1", marks: 14, contextNote: "Discussion 7 and sketch 7. Such as: a prefabricated primary settlement tank, at least 7.0 m from the house, sized for at least four persons; solids settle and scum floats in the first chamber, where anaerobic bacteria break the solids down.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "principle-2", kind: "criterion", verbatim: "Operating principle 2", marks: 14, contextNote: "A second principle: discussion 7 and sketch 7. Such as: the liquid passes through openings in the dividing wall to the second chamber for further settlement, then drains to the percolation area, where aerobic bacteria in the gravel break down the remaining impurities; a watertight, ventilated cover.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Septic tank and percolation area",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. The percolation details are a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-original.png",
+          "srcHash": "b5b7f6ad2e9223940e8e43dbb63fbceb",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 4: the printed question with the layout of an on-site septic tank and percolation area.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-scheme.png",
+          "srcHash": "87961e09f0173c9a132cc2165d5ec1f7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the septic tank, the percolation area and unsuitable sites.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q4-b", topicId: "cons-5-5", conceptId: "septic-tank-percolation-b",
+    section: "B", questionRef: "2012 HL Q4(b)",
+    stem: "The typical layout of an on-site wastewater treatment system suitable for a single house is shown in the accompanying drawing.",
+    questionText: "Show, using notes and freehand sketches, the typical design detailing for the percolation area to ensure the safe treatment of waste from the septic tank. Include dimensions as appropriate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Design detailing of percolation area - any 4", marks: 16, contextNote: "Best four details, note 2 and sketch 2 each. Menu: soil; geotextile layer; distribution box; perforated pipes; washed clean gravel (8–32 mm); vents. Such as: a distribution box feeding at least four 100–110 mm perforated pipes with 8 mm holes at 4, 6 and 8 o’clock, runs of at most 18.0 m at 2.0 m spacing, in gravel under a geotextile layer and topsoil.", permittedMarks: [0,2,4,6,8,10,12,14,16] },
+    { id: "dimensions", kind: "criterion", verbatim: "Dimensions - any two", marks: 4, contextNote: "Any two dimensions, 2 each, such as the 18.0 m pipe run and the 2.0 m spacing.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Septic tank and percolation area",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. The percolation details are a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-original.png",
+          "srcHash": "b5b7f6ad2e9223940e8e43dbb63fbceb",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 4: the printed question with the layout of an on-site septic tank and percolation area.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-scheme.png",
+          "srcHash": "87961e09f0173c9a132cc2165d5ec1f7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the septic tank, the percolation area and unsuitable sites.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q4-c", topicId: "cons-5-5", conceptId: "septic-tank-percolation-c",
+    section: "B", questionRef: "2012 HL Q4(c)",
+    stem: "The typical layout of an on-site wastewater treatment system suitable for a single house is shown in the accompanying drawing.",
+    questionText: "Discuss in detail three reasons why a proposed site for a dwelling house may be unsuitable for a conventional septic tank wastewater treatment system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: a site too small for the tank and percolation area; unsuitable or shallow subsoil percolating too quickly or too slowly.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: too close to a stream, river, lake, well, wetland, boundary, house or another percolation area; a site too steep.", permittedMarks: [0,1,2,3,4] },
+    { id: "reason-3", kind: "criterion", verbatim: "Reason 3", marks: 4, contextNote: "A third, different reason. Such as: no access to empty the tank; a water table less than 2.0 m below the original ground surface.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Septic tank and percolation area",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. The percolation details are a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-original.png",
+          "srcHash": "b5b7f6ad2e9223940e8e43dbb63fbceb",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 4: the printed question with the layout of an on-site septic tank and percolation area.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-scheme.png",
+          "srcHash": "87961e09f0173c9a132cc2165d5ec1f7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the septic tank, the percolation area and unsuitable sites.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q4-complete", topicId: "cons-5-5", conceptId: "septic-tank-percolation-complete",
+    section: "B", questionRef: "2012 HL Q4 — complete",
+    stem: "The typical layout of an on-site wastewater treatment system suitable for a single house is shown in the accompanying drawing.",
+    questionText: "(a) Describe in detail, using notes and freehand sketches, the operating principles of a conventional septic tank system. (b) Show, using notes and freehand sketches, the typical design detailing for the percolation area to ensure the safe treatment of waste from the septic tank. Include dimensions as appropriate. (c) Discuss in detail three reasons why a proposed site for a dwelling house may be unsuitable for a conventional septic tank wastewater treatment system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-principle-1", kind: "criterion", verbatim: "Operating principle 1", marks: 14, contextNote: "Discussion 7 and sketch 7. Such as: a prefabricated primary settlement tank, at least 7.0 m from the house, sized for at least four persons; solids settle and scum floats in the first chamber, where anaerobic bacteria break the solids down.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "a-principle-2", kind: "criterion", verbatim: "Operating principle 2", marks: 14, contextNote: "A second principle: discussion 7 and sketch 7. Such as: the liquid passes through openings in the dividing wall to the second chamber for further settlement, then drains to the percolation area, where aerobic bacteria in the gravel break down the remaining impurities; a watertight, ventilated cover.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14] },
+    { id: "b-details", kind: "criterion", verbatim: "Design detailing of percolation area - any 4", marks: 16, contextNote: "Best four details, note 2 and sketch 2 each. Menu: soil; geotextile layer; distribution box; perforated pipes; washed clean gravel (8–32 mm); vents. Such as: a distribution box feeding at least four 100–110 mm perforated pipes with 8 mm holes at 4, 6 and 8 o’clock, runs of at most 18.0 m at 2.0 m spacing, in gravel under a geotextile layer and topsoil.", permittedMarks: [0,2,4,6,8,10,12,14,16] },
+    { id: "b-dimensions", kind: "criterion", verbatim: "Dimensions - any two", marks: 4, contextNote: "Any two dimensions, 2 each, such as the 18.0 m pipe run and the 2.0 m spacing.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-1", kind: "criterion", verbatim: "Reason 1", marks: 4, contextNote: "Such as: a site too small for the tank and percolation area; unsuitable or shallow subsoil percolating too quickly or too slowly.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-2", kind: "criterion", verbatim: "Reason 2", marks: 4, contextNote: "A second, different reason. Such as: too close to a stream, river, lake, well, wetland, boundary, house or another percolation area; a site too steep.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-reason-3", kind: "criterion", verbatim: "Reason 3", marks: 4, contextNote: "A third, different reason. Such as: no access to empty the tank; a water table less than 2.0 m below the original ground surface.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q4-a","label":"a","marks":28,"rowIds":["a-principle-1","a-principle-2"]},{"sourceCardId":"cons-2012-hl-q4-b","label":"b","marks":20,"rowIds":["b-details","b-dimensions"]},{"sourceCardId":"cons-2012-hl-q4-c","label":"c","marks":12,"rowIds":["c-reason-1","c-reason-2","c-reason-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Septic tank and percolation area",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original drawing retained. The percolation details are a marking menu, not a printed choice."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-original.png",
+          "srcHash": "b5b7f6ad2e9223940e8e43dbb63fbceb",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 4: the printed question with the layout of an on-site septic tank and percolation area.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q4-scheme",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q4-scheme.png",
+          "srcHash": "87961e09f0173c9a132cc2165d5ec1f7",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the septic tank, the percolation area and unsuitable sites.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q5-a", topicId: "cons-6-1", conceptId: "uninsulated-floor-u-value-a",
+    section: "B", questionRef: "2012 HL Q5(a)",
+    stem: "A house built in the 1970s has an un-insulated solid concrete ground floor with a sand/cement fine screed finish.",
+    questionText: "Calculate the U-value of the concrete ground floor given the following data: Sand/cement fine screed thickness 60 mm; Concrete floor slab thickness 100 mm; Damp proof membrane (DPM) thickness 0.25 mm; Sand blinding thickness 50 mm; Hardcore thickness 225 mm; Subsoil thickness 300 mm. Thermal data of concrete ground floor: Resistance of internal surface (R) 0.104 m2 °C/W; Resistivity of fine screed (r) 0.710 m °C/W; Conductivity of concrete floor slab (k) 0.160 W/m °C; Conductivity of DPM (k) 0.250 W/m °C; Conductivity of sand blinding (k) 0.160 W/m °C; Conductivity of hardcore (k) 1.330 W/m °C; Conductivity of subsoil (k) 1.800 W/m °C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "tabulation", kind: "criterion", verbatim: "Correct tabulation", marks: 3, contextNote: "The calculation set out in a table of material, conductivity or resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "resistances", kind: "criterion", verbatim: "10 points × 3 marks for each point", marks: 21, contextNote: "Seven resistances, 3 each, by R = T/k (R = T × r for the screed): screed 0.060 × 0.710 = 0.0426; slab 0.100/0.160 = 0.625; DPM 0.00025/0.250 = 0.001; sand blinding 0.050/0.160 = 0.3125; hardcore 0.225/1.330 = 0.1692; subsoil 0.300/1.800 = 0.1667; internal surface 0.104 (given). All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
+    { id: "total-resistance", kind: "criterion", verbatim: "Total Resistance", marks: 3, contextNote: "Total resistance, the sum of R = 1.421 m²°C/W.", permittedMarks: [0,3] },
+    { id: "u-value", kind: "criterion", verbatim: "U-value (1 mark for the formula)", marks: 3, contextNote: "U = 1/Rt = 1 ÷ 1.421 = 0.704 W/m²K (1 mark for the formula).", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Uninsulated ground floor U-value, heat-loss cost and a Passive floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.704 W/m²K and an annual cost of €183.13."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-original.png",
+          "srcHash": "2bc41d7b377431138b26d5bc0d910d18",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 5: the printed question with a sketch of the floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-calculation.png",
+          "srcHash": "01a42e4efe0bd29644aa1a53341ee1da",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 1.421 and U = 0.704 W/m²K, and the annual heat-loss cost of €183.13.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q5-b", topicId: "cons-6-3", conceptId: "uninsulated-floor-u-value-b",
+    section: "B", questionRef: "2012 HL Q5(b)",
+    stem: "A house built in the 1970s has an un-insulated solid concrete ground floor with a sand/cement fine screed finish.",
+    questionText: "Using the U-value of the concrete ground floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the un-insulated concrete floor slab: Dimensions of floor 9.0 metres × 7.0 metres; Average internal temperature 20° C; Average external temperature of subsoil 5° C; Heating period 12 hours per day for 40 weeks per annum; Cost of oil 85 cent per litre; Calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 0.704 × 63 × 15 = 665.28 watts (joules per second).", permittedMarks: [0,1,2,3] },
+    { id: "duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating period = 12 × 7 × 40 = 3,360 hours = 12,096,000 seconds.", permittedMarks: [0,1,2,3] },
+    { id: "energy", kind: "criterion", verbatim: "k/joules calculation for one year", marks: 3, contextNote: "Energy = 12,096,000 × 665.28 ÷ 1000 = 8,047,226 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "oil", kind: "criterion", verbatim: "litres of oil for one year", marks: 3, contextNote: "Oil = 8,047,226 ÷ 37,350 = 215.45 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "cost", kind: "criterion", verbatim: "Annual cost of heat lost", marks: 3, contextNote: "Annual cost = 215.45 × €0.85 = €183.13.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Uninsulated ground floor U-value, heat-loss cost and a Passive floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.704 W/m²K and an annual cost of €183.13."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-original.png",
+          "srcHash": "2bc41d7b377431138b26d5bc0d910d18",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 5: the printed question with a sketch of the floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-calculation.png",
+          "srcHash": "01a42e4efe0bd29644aa1a53341ee1da",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 1.421 and U = 0.704 W/m²K, and the annual heat-loss cost of €183.13.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q5-c", topicId: "cons-4-2", conceptId: "uninsulated-floor-u-value-c",
+    section: "B", questionRef: "2012 HL Q5(c)",
+    stem: "A house built in the 1970s has an un-insulated solid concrete ground floor with a sand/cement fine screed finish.",
+    questionText: "An insulated concrete ground floor is designed to prevent the penetration of radon gas through the floor and to meet the Passive House standard. Using notes and freehand sketches, show the typical design detailing for such a floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "notes", kind: "criterion", verbatim: "Passive insulated ground floor with radon barrier Notes", marks: 5, contextNote: "Such as: 25 mm screed on a 75 mm slab; 250–400 mm expanded polystyrene for U ≤ 0.15 W/m²K; a radon barrier; sand blinding and hardcore; a low-conductivity thermal block in the inner leaf; 300 mm cavity insulation.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "sketches", kind: "criterion", verbatim: "Sketches", marks: 10, contextNote: "A sketch of the floor and its junction with the wall, as in the scheme’s model detail.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Uninsulated ground floor U-value, heat-loss cost and a Passive floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.704 W/m²K and an annual cost of €183.13."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-original.png",
+          "srcHash": "2bc41d7b377431138b26d5bc0d910d18",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 5: the printed question with a sketch of the floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q5-floor",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-floor.png",
+          "srcHash": "9aec9237aebcd99763d6e23f42f42555",
+          "alt": "SEC model detail of a Passive standard insulated ground floor with a radon barrier.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q5-complete", topicId: "cons-6-1", conceptId: "uninsulated-floor-u-value-complete",
+    section: "B", questionRef: "2012 HL Q5 — complete",
+    stem: "A house built in the 1970s has an un-insulated solid concrete ground floor with a sand/cement fine screed finish.",
+    questionText: "(a) Calculate the U-value of the concrete ground floor given the following data: Sand/cement fine screed thickness 60 mm; Concrete floor slab thickness 100 mm; Damp proof membrane (DPM) thickness 0.25 mm; Sand blinding thickness 50 mm; Hardcore thickness 225 mm; Subsoil thickness 300 mm. Thermal data of concrete ground floor: Resistance of internal surface (R) 0.104 m2 °C/W; Resistivity of fine screed (r) 0.710 m °C/W; Conductivity of concrete floor slab (k) 0.160 W/m °C; Conductivity of DPM (k) 0.250 W/m °C; Conductivity of sand blinding (k) 0.160 W/m °C; Conductivity of hardcore (k) 1.330 W/m °C; Conductivity of subsoil (k) 1.800 W/m °C. (b) Using the U-value of the concrete ground floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the un-insulated concrete floor slab: Dimensions of floor 9.0 metres × 7.0 metres; Average internal temperature 20° C; Average external temperature of subsoil 5° C; Heating period 12 hours per day for 40 weeks per annum; Cost of oil 85 cent per litre; Calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second. (c) An insulated concrete ground floor is designed to prevent the penetration of radon gas through the floor and to meet the Passive House standard. Using notes and freehand sketches, show the typical design detailing for such a floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-tabulation", kind: "criterion", verbatim: "Correct tabulation", marks: 3, contextNote: "The calculation set out in a table of material, conductivity or resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "a-resistances", kind: "criterion", verbatim: "10 points × 3 marks for each point", marks: 21, contextNote: "Seven resistances, 3 each, by R = T/k (R = T × r for the screed): screed 0.060 × 0.710 = 0.0426; slab 0.100/0.160 = 0.625; DPM 0.00025/0.250 = 0.001; sand blinding 0.050/0.160 = 0.3125; hardcore 0.225/1.330 = 0.1692; subsoil 0.300/1.800 = 0.1667; internal surface 0.104 (given). All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
+    { id: "a-total-resistance", kind: "criterion", verbatim: "Total Resistance", marks: 3, contextNote: "Total resistance, the sum of R = 1.421 m²°C/W.", permittedMarks: [0,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "U-value (1 mark for the formula)", marks: 3, contextNote: "U = 1/Rt = 1 ÷ 1.421 = 0.704 W/m²K (1 mark for the formula).", permittedMarks: [0,1,2,3] },
+    { id: "b-heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculation", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 0.704 × 63 × 15 = 665.28 watts (joules per second).", permittedMarks: [0,1,2,3] },
+    { id: "b-duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating period = 12 × 7 × 40 = 3,360 hours = 12,096,000 seconds.", permittedMarks: [0,1,2,3] },
+    { id: "b-energy", kind: "criterion", verbatim: "k/joules calculation for one year", marks: 3, contextNote: "Energy = 12,096,000 × 665.28 ÷ 1000 = 8,047,226 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-oil", kind: "criterion", verbatim: "litres of oil for one year", marks: 3, contextNote: "Oil = 8,047,226 ÷ 37,350 = 215.45 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-cost", kind: "criterion", verbatim: "Annual cost of heat lost", marks: 3, contextNote: "Annual cost = 215.45 × €0.85 = €183.13.", permittedMarks: [0,1,2,3] },
+    { id: "c-notes", kind: "criterion", verbatim: "Passive insulated ground floor with radon barrier Notes", marks: 5, contextNote: "Such as: 25 mm screed on a 75 mm slab; 250–400 mm expanded polystyrene for U ≤ 0.15 W/m²K; a radon barrier; sand blinding and hardcore; a low-conductivity thermal block in the inner leaf; 300 mm cavity insulation.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-sketches", kind: "criterion", verbatim: "Sketches", marks: 10, contextNote: "A sketch of the floor and its junction with the wall, as in the scheme’s model detail.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q5-a","label":"a","marks":30,"rowIds":["a-tabulation","a-resistances","a-total-resistance","a-u-value"]},{"sourceCardId":"cons-2012-hl-q5-b","label":"b","marks":15,"rowIds":["b-heat-loss","b-duration","b-energy","b-oil","b-cost"]},{"sourceCardId":"cons-2012-hl-q5-c","label":"c","marks":15,"rowIds":["c-notes","c-sketches"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Uninsulated ground floor U-value, heat-loss cost and a Passive floor",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Part (b) uses the U-value from (a); the scheme’s worked answers are U = 0.704 W/m²K and an annual cost of €183.13."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-original.png",
+          "srcHash": "2bc41d7b377431138b26d5bc0d910d18",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 5: the printed question with a sketch of the floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q5-calculation.png",
+          "srcHash": "01a42e4efe0bd29644aa1a53341ee1da",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 1.421 and U = 0.704 W/m²K, and the annual heat-loss cost of €183.13.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q6-a", topicId: "cons-1-2", conceptId: "more-with-less-house-a",
+    section: "B", questionRef: "2012 HL Q6(a)",
+    stem: "The elevation and ground floor plan of a house are shown. The house has a study / office as shown and also has three bedrooms and a bathroom upstairs. The external wall is of timber frame construction with a concrete block outer leaf. The house is designed to have low environmental impact, reflecting the sustainable ideal of doing more with less for longer.",
+    questionText: "With reference to the design shown, discuss in detail, using notes and freehand sketches, three features of the design that reflect the sustainable ideal of doing more with less for longer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Feature 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: the roof space used for three bedrooms and a bathroom on one compact foundation; roof lights giving three times the daylight of dormers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "feature-2", kind: "criterion", verbatim: "Feature 2", marks: 10, contextNote: "A second, different feature: note 5 and sketch 5. Such as: south-facing high-performance glazing and small north windows; a porch or draught lobby; a wood-burning stove on an internal chimney.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "feature-3", kind: "criterion", verbatim: "Feature 3", marks: 10, contextNote: "A third, different feature: note 5 and sketch 5. Such as: rainwater harvesting in above-ground tanks; solar panels on the south roof at about 45°.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Doing more with less for longer",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open responses; all three printed considerations in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-original.png",
+          "srcHash": "58edf88fe3a55aae2eaa8e24e2feb2ae",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 6: the printed question with the elevation and ground floor plan of the house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-features.png",
+          "srcHash": "4c18d44a68f96441debf2518c795abfd",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the features that do more with less for longer (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q6-b", topicId: "cons-1-2", conceptId: "more-with-less-house-b",
+    section: "B", questionRef: "2012 HL Q6(b)",
+    stem: "The elevation and ground floor plan of a house are shown. The house has a study / office as shown and also has three bedrooms and a bathroom upstairs. The external wall is of timber frame construction with a concrete block outer leaf. The house is designed to have low environmental impact, reflecting the sustainable ideal of doing more with less for longer.",
+    questionText: "Discuss in detail the importance of each of the following when designing an environmentally sustainable dwelling house: orientation of house; flexibility of design; sourcing of materials.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "orientation", kind: "criterion", verbatim: "Orientation of house (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: the longer elevation on an east–west axis with large high-performance south windows for passive solar gain, cutting costs and fossil fuel use.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "flexibility", kind: "criterion", verbatim: "Flexibility of design (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: universal design for all ages and abilities; a ground floor study convertible to a bedroom near an accessible bathroom; open plan; 800 mm doors; no ground floor steps.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "materials", kind: "criterion", verbatim: "Sourcing materials (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: local, renewable, naturally durable timber; low-carbon GGBS concrete; local stone, sand and block with less transport, embodied energy and CO₂.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Doing more with less for longer",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open responses; all three printed considerations in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-original.png",
+          "srcHash": "58edf88fe3a55aae2eaa8e24e2feb2ae",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 6: the printed question with the elevation and ground floor plan of the house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q6-importance",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-importance.png",
+          "srcHash": "dd9545bcf3c8343dbd14acd86c594338",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on orientation, flexibility of design and sourcing materials (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q6-complete", topicId: "cons-1-2", conceptId: "more-with-less-house-complete",
+    section: "B", questionRef: "2012 HL Q6 — complete",
+    stem: "The elevation and ground floor plan of a house are shown. The house has a study / office as shown and also has three bedrooms and a bathroom upstairs. The external wall is of timber frame construction with a concrete block outer leaf. The house is designed to have low environmental impact, reflecting the sustainable ideal of doing more with less for longer.",
+    questionText: "(a) With reference to the design shown, discuss in detail, using notes and freehand sketches, three features of the design that reflect the sustainable ideal of doing more with less for longer. (b) Discuss in detail the importance of each of the following when designing an environmentally sustainable dwelling house: orientation of house; flexibility of design; sourcing of materials.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-feature-1", kind: "criterion", verbatim: "Feature 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: the roof space used for three bedrooms and a bathroom on one compact foundation; roof lights giving three times the daylight of dormers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-feature-2", kind: "criterion", verbatim: "Feature 2", marks: 10, contextNote: "A second, different feature: note 5 and sketch 5. Such as: south-facing high-performance glazing and small north windows; a porch or draught lobby; a wood-burning stove on an internal chimney.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-feature-3", kind: "criterion", verbatim: "Feature 3", marks: 10, contextNote: "A third, different feature: note 5 and sketch 5. Such as: rainwater harvesting in above-ground tanks; solar panels on the south roof at about 45°.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-orientation", kind: "criterion", verbatim: "Orientation of house (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: the longer elevation on an east–west axis with large high-performance south windows for passive solar gain, cutting costs and fossil fuel use.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-flexibility", kind: "criterion", verbatim: "Flexibility of design (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: universal design for all ages and abilities; a ground floor study convertible to a bedroom near an accessible bathroom; open plan; 800 mm doors; no ground floor steps.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-materials", kind: "criterion", verbatim: "Sourcing materials (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: local, renewable, naturally durable timber; low-carbon GGBS concrete; local stone, sand and block with less transport, embodied energy and CO₂.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q6-a","label":"a","marks":30,"rowIds":["a-feature-1","a-feature-2","a-feature-3"]},{"sourceCardId":"cons-2012-hl-q6-b","label":"b","marks":30,"rowIds":["b-orientation","b-flexibility","b-materials"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "Doing more with less for longer",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Features are open responses; all three printed considerations in (b) are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-original.png",
+          "srcHash": "58edf88fe3a55aae2eaa8e24e2feb2ae",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 6: the printed question with the elevation and ground floor plan of the house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q6-features.png",
+          "srcHash": "4c18d44a68f96441debf2518c795abfd",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on the features that do more with less for longer (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q7-a", topicId: "cons-1-5", conceptId: "entrance-door-timber-frame-section-a",
+    section: "B", questionRef: "2012 HL Q7(a)",
+    stem: "The main entrance door to a two storey dwelling house is a four-panel solid wooden door. The external wall in which the door is fitted is of timber frame construction with a rendered concrete block outer leaf. This wall supports the first floor joists, as shown in the accompanying outline drawing.",
+    questionText: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door and first floor joists. The section should show the typical construction details from 400 mm below the top of the door to a level 500 mm above the first floor joists. Include typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 57,
+    rows: [
+    { id: "details", kind: "criterion", verbatim: "Timber frame - 9 points × 5 marks", marks: 45, contextNote: "Best nine points, 5 each (sketch 4, annotation 1). Menu: doorframe; door; render; block outer leaf and lintel; breather membrane; sheathing; timber stud; insulation; airtight membrane, tape and sealant; plaster slab; solid timber lintel; stepped DPC; cavity barrier or fire check; finished floor; acoustic layer; plywood sheeting; first floor joists.", permittedMarks: [0,5,10,15,20,25,30,35,40,45] },
+    { id: "dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions (4 × 1 mark)", marks: 4, contextNote: "Any four typical dimensions, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale & Drafting", marks: 8, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Panelled entrance door in a timber frame wall",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction, dimension and scale/drafting marks belong to part (a); the vapour control layer in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-original.png",
+          "srcHash": "9f1d3f84aca36cfb158ad1b9c2a49e67",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 7: the printed question with an outline drawing of the door, the timber frame wall and the first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-section.png",
+          "srcHash": "cc3bc541ca147a62f8ee9d65688d6fb9",
+          "alt": "SEC model sections through the entrance door head and the timber frame wall carrying the first floor, with a specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q7-b", topicId: "cons-6-6", conceptId: "entrance-door-timber-frame-section-b",
+    section: "B", questionRef: "2012 HL Q7(b)",
+    stem: "The main entrance door to a two storey dwelling house is a four-panel solid wooden door. The external wall in which the door is fitted is of timber frame construction with a rendered concrete block outer leaf. This wall supports the first floor joists, as shown in the accompanying outline drawing.",
+    questionText: "Show clearly on your drawing the position of the vapour control layer to ensure an airtight structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "vapour", kind: "criterion", verbatim: "Position of vapour barrier", marks: 3, contextNote: "Show the vapour control layer on the warm side of the insulation, continuous and taped and sealed at the door and floor junctions, as in the scheme’s model section.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Panelled entrance door in a timber frame wall",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction, dimension and scale/drafting marks belong to part (a); the vapour control layer in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-original.png",
+          "srcHash": "9f1d3f84aca36cfb158ad1b9c2a49e67",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 7: the printed question with an outline drawing of the door, the timber frame wall and the first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-section.png",
+          "srcHash": "cc3bc541ca147a62f8ee9d65688d6fb9",
+          "alt": "SEC model sections through the entrance door head and the timber frame wall carrying the first floor, with a specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q7-complete", topicId: "cons-1-5", conceptId: "entrance-door-timber-frame-section-complete",
+    section: "B", questionRef: "2012 HL Q7 — complete",
+    stem: "The main entrance door to a two storey dwelling house is a four-panel solid wooden door. The external wall in which the door is fitted is of timber frame construction with a rendered concrete block outer leaf. This wall supports the first floor joists, as shown in the accompanying outline drawing.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door and first floor joists. The section should show the typical construction details from 400 mm below the top of the door to a level 500 mm above the first floor joists. Include typical dimensions. (b) Show clearly on your drawing the position of the vapour control layer to ensure an airtight structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-details", kind: "criterion", verbatim: "Timber frame - 9 points × 5 marks", marks: 45, contextNote: "Best nine points, 5 each (sketch 4, annotation 1). Menu: doorframe; door; render; block outer leaf and lintel; breather membrane; sheathing; timber stud; insulation; airtight membrane, tape and sealant; plaster slab; solid timber lintel; stepped DPC; cavity barrier or fire check; finished floor; acoustic layer; plywood sheeting; first floor joists.", permittedMarks: [0,5,10,15,20,25,30,35,40,45] },
+    { id: "a-dimensions", kind: "criterion", verbatim: "Any 4 typical dimensions (4 × 1 mark)", marks: 4, contextNote: "Any four typical dimensions, 1 each.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale & Drafting", marks: 8, contextNote: "Scale and drafting of the section.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-vapour", kind: "criterion", verbatim: "Position of vapour barrier", marks: 3, contextNote: "Show the vapour control layer on the warm side of the insulation, continuous and taped and sealed at the door and floor junctions, as in the scheme’s model section.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q7-a","label":"a","marks":57,"rowIds":["a-details","a-dimensions","a-presentation"]},{"sourceCardId":"cons-2012-hl-q7-b","label":"b","marks":3,"rowIds":["b-vapour"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Panelled entrance door in a timber frame wall",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction, dimension and scale/drafting marks belong to part (a); the vapour control layer in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-original.png",
+          "srcHash": "9f1d3f84aca36cfb158ad1b9c2a49e67",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 7: the printed question with an outline drawing of the door, the timber frame wall and the first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q7-section.png",
+          "srcHash": "cc3bc541ca147a62f8ee9d65688d6fb9",
+          "alt": "SEC model sections through the entrance door head and the timber frame wall carrying the first floor, with a specification list.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q8-a", topicId: "cons-5-8", conceptId: "ring-main-circuit-a",
+    section: "B", questionRef: "2012 HL Q8(a)",
+    questionText: "Show, using notes and freehand sketches, the correct wiring layout for two electrical sockets in a ring mains circuit for a domestic electrical installation. Indicate on your sketch the sizes and the colour coding of all electrical cables used in the circuit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "wiring", kind: "criterion", verbatim: "Correct wiring diagram to include consumer unit", marks: 4, contextNote: "A ring from the consumer unit through both sockets and back, as in the scheme’s model diagram.", permittedMarks: [0,1,2,3,4] },
+    { id: "sockets", kind: "criterion", verbatim: "Sockets – correct connections", marks: 4, contextNote: "Live, neutral and earth correctly connected at each socket.", permittedMarks: [0,1,2,3,4] },
+    { id: "cables", kind: "criterion", verbatim: "Size of cables", marks: 4, contextNote: "2.5 mm² twin core and earth cable.", permittedMarks: [0,1,2,3,4] },
+    { id: "colours", kind: "criterion", verbatim: "Live colour - colour coding Neutral colour - colour coding Earth - colour coding", marks: 12, contextNote: "Live brown, neutral blue and earth green and yellow, 4 each.", permittedMarks: [0,4,8,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Ring main sockets, safety and saving electricity",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed requirements are marked; the safety features and strategies are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-original.png",
+          "srcHash": "5dbe1895198726e6aed6eac5707b140b",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 8: the printed question on a ring mains circuit, its safety and saving electricity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q8-wiring",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-wiring.png",
+          "srcHash": "623759709143cd85d08c74da00ee3740",
+          "alt": "SEC ring main diagram with two sockets and the consumer unit, with the cable size and colour coding.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q8-b", topicId: "cons-5-8", conceptId: "ring-main-circuit-b",
+    section: "B", questionRef: "2012 HL Q8(b)",
+    questionText: "Show, using notes and freehand sketches, two safety features that should be incorporated into the design of the above circuit to ensure that the circuit is safe for all users.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Safety feature 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: the circuit earthed, so a short circuit sends current to ground and trips the fuse or MCB; a fuse or MCB cutting the supply on a fault.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "feature-2", kind: "criterion", verbatim: "Safety feature 2", marks: 12, contextNote: "A second, different feature: notes 6 and sketches 6. Such as: an RCD disconnecting within 25–40 milliseconds when it detects a 5–30 mA leakage; a socket RCD; cables isolated in conduits.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Ring main sockets, safety and saving electricity",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed requirements are marked; the safety features and strategies are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-original.png",
+          "srcHash": "5dbe1895198726e6aed6eac5707b140b",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 8: the printed question on a ring mains circuit, its safety and saving electricity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q8-safety",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-safety.png",
+          "srcHash": "e9a99bc68befe59d2072eb6bdf2b14e5",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on earthing, fuses, MCBs and RCDs.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q8-c", topicId: "cons-5-8", conceptId: "ring-main-circuit-c",
+    section: "B", questionRef: "2012 HL Q8(c)",
+    questionText: "Discuss in detail two strategies that would ensure the economical use of electricity in the home.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "strategy-1", kind: "criterion", verbatim: "Strategy plus elaboration 1", marks: 6, contextNote: "Such as, lighting: smart meters; CFL bulbs using 80% less electricity; task lighting; occupancy sensors; daylight with light-coloured reflective walls.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "strategy-2", kind: "criterion", verbatim: "Strategy plus elaboration 2", marks: 6, contextNote: "A second, different strategy. Such as, heating: timer switches on immersion heaters; zoned, thermostatic controls; lagging the cylinder and pipes; or low-energy appliances switched off rather than on standby.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Ring main sockets, safety and saving electricity",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed requirements are marked; the safety features and strategies are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-original.png",
+          "srcHash": "5dbe1895198726e6aed6eac5707b140b",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 8: the printed question on a ring mains circuit, its safety and saving electricity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q8-economy",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-economy.png",
+          "srcHash": "14388e68239a6f02ec8a280c016277e8",
+          "alt": "SEC 2012 Higher marking scheme notes on economical use of electricity in lighting, heating and appliances (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q8-complete", topicId: "cons-5-8", conceptId: "ring-main-circuit-complete",
+    section: "B", questionRef: "2012 HL Q8 — complete",
+    questionText: "(a) Show, using notes and freehand sketches, the correct wiring layout for two electrical sockets in a ring mains circuit for a domestic electrical installation. Indicate on your sketch the sizes and the colour coding of all electrical cables used in the circuit. (b) Show, using notes and freehand sketches, two safety features that should be incorporated into the design of the above circuit to ensure that the circuit is safe for all users. (c) Discuss in detail two strategies that would ensure the economical use of electricity in the home.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-wiring", kind: "criterion", verbatim: "Correct wiring diagram to include consumer unit", marks: 4, contextNote: "A ring from the consumer unit through both sockets and back, as in the scheme’s model diagram.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-sockets", kind: "criterion", verbatim: "Sockets – correct connections", marks: 4, contextNote: "Live, neutral and earth correctly connected at each socket.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-cables", kind: "criterion", verbatim: "Size of cables", marks: 4, contextNote: "2.5 mm² twin core and earth cable.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-colours", kind: "criterion", verbatim: "Live colour - colour coding Neutral colour - colour coding Earth - colour coding", marks: 12, contextNote: "Live brown, neutral blue and earth green and yellow, 4 each.", permittedMarks: [0,4,8,12] },
+    { id: "b-feature-1", kind: "criterion", verbatim: "Safety feature 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: the circuit earthed, so a short circuit sends current to ground and trips the fuse or MCB; a fuse or MCB cutting the supply on a fault.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-feature-2", kind: "criterion", verbatim: "Safety feature 2", marks: 12, contextNote: "A second, different feature: notes 6 and sketches 6. Such as: an RCD disconnecting within 25–40 milliseconds when it detects a 5–30 mA leakage; a socket RCD; cables isolated in conduits.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "c-strategy-1", kind: "criterion", verbatim: "Strategy plus elaboration 1", marks: 6, contextNote: "Such as, lighting: smart meters; CFL bulbs using 80% less electricity; task lighting; occupancy sensors; daylight with light-coloured reflective walls.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-strategy-2", kind: "criterion", verbatim: "Strategy plus elaboration 2", marks: 6, contextNote: "A second, different strategy. Such as, heating: timer switches on immersion heaters; zoned, thermostatic controls; lagging the cylinder and pipes; or low-energy appliances switched off rather than on standby.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q8-a","label":"a","marks":24,"rowIds":["a-wiring","a-sockets","a-cables","a-colours"]},{"sourceCardId":"cons-2012-hl-q8-b","label":"b","marks":24,"rowIds":["b-feature-1","b-feature-2"]},{"sourceCardId":"cons-2012-hl-q8-c","label":"c","marks":12,"rowIds":["c-strategy-1","c-strategy-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Ring main sockets, safety and saving electricity",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed requirements are marked; the safety features and strategies are open responses."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-original.png",
+          "srcHash": "5dbe1895198726e6aed6eac5707b140b",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 8: the printed question on a ring mains circuit, its safety and saving electricity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q8-wiring",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q8-wiring.png",
+          "srcHash": "623759709143cd85d08c74da00ee3740",
+          "alt": "SEC ring main diagram with two sockets and the consumer unit, with the cable size and colour coding.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q9-a", topicId: "cons-6-5", conceptId: "airtightness-design-a",
+    section: "B", questionRef: "2012 HL Q9(a)",
+    stem: "Designing for airtightness presents one of the most challenging aspects of contemporary house design.",
+    questionText: "Discuss in detail the importance of careful design detailing in improving the airtightness performance of a dwelling house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Discussion – point 1 (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: seal tight and ventilate right — a continuous airtight seal around the envelope removes draughts and heat loss; air leakage also lets dampness into the fabric.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-2", kind: "criterion", verbatim: "Discussion – point 2 (5 for point, 5 for discussion)", marks: 10, contextNote: "A second, different point. Such as: a vapour check barrier cuts interstitial condensation and mould; a small tear can reduce its performance by a factor of up to 1600; laps of 100–150 mm taped, grommets for services, skilled installation and a blower door test.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Designing for airtightness",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (b) is a closed choice of any three of the four: one card holding all four, named by the scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-original.png",
+          "srcHash": "268b8ec2928d14721846ba761ae12143",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 9: the printed question with an outline section of the timber frame house, four locations circled, and a sketch of a service cavity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q9-airtightness",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-airtightness.png",
+          "srcHash": "5b34bc5c68528a8a0b087b478c45ce48",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches on design detailing for airtightness.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q9-b", topicId: "cons-6-5", conceptId: "airtightness-design-b",
+    section: "B", questionRef: "2012 HL Q9(b)",
+    stem: "Designing for airtightness presents one of the most challenging aspects of contemporary house design.",
+    questionText: "The drawing shows an outline section through a portion of a single storey house of timber frame construction. The outer leaf is of rendered concrete block and the ground floor is an insulated solid concrete floor. Select any three locations from those circled on the sketch and show, using notes and freehand sketches, the typical design detailing which will prevent air leakage at each of the locations selected.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "locations", kind: "anyN", verbatim: "Three locations", marks: 30, contextNote: "Any three of the four circled locations, each note 5 and sketch 5 = 10. Ground Floor: an airtightness membrane and butyl tape carried under the timber frame and bonded to the slab; mastic sealant under the skirting; mortar joints pointed and sealed; a service cavity so the barrier is not ruptured. Window Cill: the air barrier bonded to the DPC; joints at the window, window board and cill taped and sealed with mastic; a draught seal between the opening sash and the frame. Light Fittings: grommets around cables piercing the barrier; the barrier resealed with tape and mastic; no recessed lights, or enclosed casings; a service cavity where possible. Trapdoor: a gasket or draught seal along the batten; tape returned along the joist; a bolt compressing the seal; insulation on the back; a proprietary trapdoor with sealed rebates.", group: {"claimMax":3,"perOption":10,"options":["Ground Floor","Window Cill","Light Fittings","Trapdoor"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Designing for airtightness",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (b) is a closed choice of any three of the four: one card holding all four, named by the scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-original.png",
+          "srcHash": "268b8ec2928d14721846ba761ae12143",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 9: the printed question with an outline section of the timber frame house, four locations circled, and a sketch of a service cavity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q9-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-locations.png",
+          "srcHash": "5eb866fb6e5728f583fa99e94e07c4df",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches for all four circled locations — the ground floor, the window cill, light fittings and the trapdoor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q9-c", topicId: "cons-3-3", conceptId: "airtightness-design-c",
+    section: "B", questionRef: "2012 HL Q9(c)",
+    stem: "Designing for airtightness presents one of the most challenging aspects of contemporary house design.",
+    questionText: "Discuss the advantages of including a service cavity in an external wall of timber frame construction, as shown in the accompanying sketch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Discuss advantage 1 - (2 for point, 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: the air continuity barrier is not pierced by services; easier work for plumbers and electricians.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Discuss advantage 2 - (2 for point, 3 for discussion)", marks: 5, contextNote: "A second, different advantage. Such as: room for more insulation, improving the wall’s thermal performance; better acoustic insulation; more taping and sealing for airtightness.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Designing for airtightness",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (b) is a closed choice of any three of the four: one card holding all four, named by the scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-original.png",
+          "srcHash": "268b8ec2928d14721846ba761ae12143",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 9: the printed question with an outline section of the timber frame house, four locations circled, and a sketch of a service cavity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q9-service",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-service.png",
+          "srcHash": "6fe9425971ebe53c7a788d25da5dae30",
+          "alt": "SEC 2012 Higher marking scheme notes on the advantages of a service cavity.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q9-complete", topicId: "cons-6-5", conceptId: "airtightness-design-complete",
+    section: "B", questionRef: "2012 HL Q9 — complete",
+    stem: "Designing for airtightness presents one of the most challenging aspects of contemporary house design.",
+    questionText: "(a) Discuss in detail the importance of careful design detailing in improving the airtightness performance of a dwelling house. (b) The drawing shows an outline section through a portion of a single storey house of timber frame construction. The outer leaf is of rendered concrete block and the ground floor is an insulated solid concrete floor. Select any three locations from those circled on the sketch and show, using notes and freehand sketches, the typical design detailing which will prevent air leakage at each of the locations selected. (c) Discuss the advantages of including a service cavity in an external wall of timber frame construction, as shown in the accompanying sketch.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-point-1", kind: "criterion", verbatim: "Discussion – point 1 (5 for point, 5 for discussion)", marks: 10, contextNote: "Point 5 and discussion 5. Such as: seal tight and ventilate right — a continuous airtight seal around the envelope removes draughts and heat loss; air leakage also lets dampness into the fabric.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "a-point-2", kind: "criterion", verbatim: "Discussion – point 2 (5 for point, 5 for discussion)", marks: 10, contextNote: "A second, different point. Such as: a vapour check barrier cuts interstitial condensation and mould; a small tear can reduce its performance by a factor of up to 1600; laps of 100–150 mm taped, grommets for services, skilled installation and a blower door test.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-locations", kind: "anyN", verbatim: "Three locations", marks: 30, contextNote: "Any three of the four circled locations, each note 5 and sketch 5 = 10. Ground Floor: an airtightness membrane and butyl tape carried under the timber frame and bonded to the slab; mastic sealant under the skirting; mortar joints pointed and sealed; a service cavity so the barrier is not ruptured. Window Cill: the air barrier bonded to the DPC; joints at the window, window board and cill taped and sealed with mastic; a draught seal between the opening sash and the frame. Light Fittings: grommets around cables piercing the barrier; the barrier resealed with tape and mastic; no recessed lights, or enclosed casings; a service cavity where possible. Trapdoor: a gasket or draught seal along the batten; tape returned along the joist; a bolt compressing the seal; insulation on the back; a proprietary trapdoor with sealed rebates.", group: {"claimMax":3,"perOption":10,"options":["Ground Floor","Window Cill","Light Fittings","Trapdoor"]} },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Discuss advantage 1 - (2 for point, 3 for discussion)", marks: 5, contextNote: "Point 2 and discussion 3. Such as: the air continuity barrier is not pierced by services; easier work for plumbers and electricians.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Discuss advantage 2 - (2 for point, 3 for discussion)", marks: 5, contextNote: "A second, different advantage. Such as: room for more insulation, improving the wall’s thermal performance; better acoustic insulation; more taping and sealing for airtightness.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q9-a","label":"a","marks":20,"rowIds":["a-point-1","a-point-2"]},{"sourceCardId":"cons-2012-hl-q9-b","label":"b","marks":30,"rowIds":["b-locations"]},{"sourceCardId":"cons-2012-hl-q9-c","label":"c","marks":10,"rowIds":["c-advantage-1","c-advantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Designing for airtightness",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original section with four circled locations retained. Part (b) is a closed choice of any three of the four: one card holding all four, named by the scheme’s headings."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-original.png",
+          "srcHash": "268b8ec2928d14721846ba761ae12143",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 9: the printed question with an outline section of the timber frame house, four locations circled, and a sketch of a service cavity.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q9-locations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q9-locations.png",
+          "srcHash": "5eb866fb6e5728f583fa99e94e07c4df",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches for all four circled locations — the ground floor, the window cill, light fittings and the trapdoor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-a", topicId: "cons-6-2", conceptId: "passive-house-construction-a",
+    section: "B", questionRef: "2012 HL Q10(a)",
+    questionText: "Using notes and freehand sketches as appropriate, discuss in detail the importance of any two of the following in the design of a Passive House: building form; indoor environment; energy performance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Discussion of 2 design details", marks: 20, contextNote: "Any two of the three printed items, each note 5 and sketch 5 = 10. Building form: a compact form with a minimum of extensions, as heat is lost through the external surfaces; a surface-to-volume ratio of 0.7 or less. Indoor environment: relative humidity of 35–55% against respiratory illness, mould and dust mites; internal surfaces not below 12.6°C, preventing condensation. Energy performance: space heating demand at most 15 kWh/m²a; heating load at most 10 W/m²; primary energy demand at most 120 kWh/m²a, typically 60–70, with a conversion factor of 2.58 for electricity.", group: {"claimMax":2,"perOption":10,"options":["Building form","Indoor environment","Energy performance"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, MHRV and Passive House construction",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-original.png",
+          "srcHash": "ad85f0e9476425fa8216d6febdb9435f",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 10: the printed question with the plan of the Passive House, the MHRV unit M in the utility room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-principles.png",
+          "srcHash": "02d0673ece21e1584f75af6ea1edc01e",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches for all three items — building form, indoor environment and energy performance, with additional Passive House information (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-b", topicId: "cons-6-5", conceptId: "passive-house-construction-b",
+    section: "B", questionRef: "2012 HL Q10(b)",
+    questionText: "It is proposed to install a Mechanical Heat Recovery with Ventilation (MHRV) system for a Passive House, as shown in the drawing. The location of the MHRV unit - M - in the utility room is shown. Draw a single line diagram of the given plan and show a typical design layout for the ducting to such a unit. Indicate clearly the direction of airflow in all the ducts and describe how a Mechanical Heat Recovery with Ventilation (MHRV) system works. Note: While a plan of the room layout is required, it is not necessary to show the furniture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "ducting", kind: "criterion", verbatim: "Design layout for ducting", marks: 10, contextNote: "A single-line plan with supply ducts to the living spaces and bedrooms and extract ducts from the kitchen, bathroom and utility, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "airflow", kind: "criterion", verbatim: "Direction of airflow", marks: 5, contextNote: "The direction of airflow shown in every duct.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "explanation", kind: "criterion", verbatim: "Explanation of how the system works", marks: 5, contextNote: "Moist warm extract air and filtered outdoor air pass through a heat exchanger of thin plates without mixing; the warmed supply air goes to the living spaces; a post heater in cold weather, a summer bypass and a sound attenuator.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, MHRV and Passive House construction",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-original.png",
+          "srcHash": "ad85f0e9476425fa8216d6febdb9435f",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 10: the printed question with the plan of the Passive House, the MHRV unit M in the utility room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q10-mhrv",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-mhrv.png",
+          "srcHash": "9f30b7d6efdb6f91217f1441e316e67c",
+          "alt": "SEC MHRV ducting plan with supply and extract zones, and notes on how the system works and its performance criteria (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-c", topicId: "cons-6-3", conceptId: "passive-house-construction-c",
+    section: "B", questionRef: "2012 HL Q10(c)",
+    questionText: "Discuss in detail two advantages and two disadvantages of Passive House construction.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: about 75% less energy than a house built to the building regulations; a constant comfortable 20°C all year.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: far cheaper to run; a much smaller carbon footprint and less CO₂.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 5, contextNote: "Such as: a very high standard of workmanship needed from every member of the team.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 5, contextNote: "A second, different disadvantage. Such as: tradespersons and designers need training; precise detailing may take longer; reliance on a mechanical system.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, MHRV and Passive House construction",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-original.png",
+          "srcHash": "ad85f0e9476425fa8216d6febdb9435f",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 10: the printed question with the plan of the Passive House, the MHRV unit M in the utility room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q10-passive",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-passive.png",
+          "srcHash": "964ad7b23268bbcf41d713168832bf3b",
+          "alt": "SEC 2012 Higher marking scheme notes on the advantages and disadvantages of Passive House construction.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-complete", topicId: "cons-6-2", conceptId: "passive-house-construction-complete",
+    section: "B", questionRef: "2012 HL Q10 — complete",
+    questionText: "(a) Using notes and freehand sketches as appropriate, discuss in detail the importance of any two of the following in the design of a Passive House: building form; indoor environment; energy performance. (b) It is proposed to install a Mechanical Heat Recovery with Ventilation (MHRV) system for a Passive House, as shown in the drawing. The location of the MHRV unit - M - in the utility room is shown. Draw a single line diagram of the given plan and show a typical design layout for the ducting to such a unit. Indicate clearly the direction of airflow in all the ducts and describe how a Mechanical Heat Recovery with Ventilation (MHRV) system works. Note: While a plan of the room layout is required, it is not necessary to show the furniture. (c) Discuss in detail two advantages and two disadvantages of Passive House construction.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Discussion of 2 design details", marks: 20, contextNote: "Any two of the three printed items, each note 5 and sketch 5 = 10. Building form: a compact form with a minimum of extensions, as heat is lost through the external surfaces; a surface-to-volume ratio of 0.7 or less. Indoor environment: relative humidity of 35–55% against respiratory illness, mould and dust mites; internal surfaces not below 12.6°C, preventing condensation. Energy performance: space heating demand at most 15 kWh/m²a; heating load at most 10 W/m²; primary energy demand at most 120 kWh/m²a, typically 60–70, with a conversion factor of 2.58 for electricity.", group: {"claimMax":2,"perOption":10,"options":["Building form","Indoor environment","Energy performance"]} },
+    { id: "b-ducting", kind: "criterion", verbatim: "Design layout for ducting", marks: 10, contextNote: "A single-line plan with supply ducts to the living spaces and bedrooms and extract ducts from the kitchen, bathroom and utility, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-airflow", kind: "criterion", verbatim: "Direction of airflow", marks: 5, contextNote: "The direction of airflow shown in every duct.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-explanation", kind: "criterion", verbatim: "Explanation of how the system works", marks: 5, contextNote: "Moist warm extract air and filtered outdoor air pass through a heat exchanger of thin plates without mixing; the warmed supply air goes to the living spaces; a post heater in cold weather, a summer bypass and a sound attenuator.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-1", kind: "criterion", verbatim: "Advantage 1", marks: 5, contextNote: "Such as: about 75% less energy than a house built to the building regulations; a constant comfortable 20°C all year.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-advantage-2", kind: "criterion", verbatim: "Advantage 2", marks: 5, contextNote: "A second, different advantage. Such as: far cheaper to run; a much smaller carbon footprint and less CO₂.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1", marks: 5, contextNote: "Such as: a very high standard of workmanship needed from every member of the team.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2", marks: 5, contextNote: "A second, different disadvantage. Such as: tradespersons and designers need training; precise detailing may take longer; reliance on a mechanical system.", permittedMarks: [0,1,2,3,4,5] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q10-a","label":"a","marks":20,"rowIds":["a-items"]},{"sourceCardId":"cons-2012-hl-q10-b","label":"b","marks":20,"rowIds":["b-ducting","b-airflow","b-explanation"]},{"sourceCardId":"cons-2012-hl-q10-c","label":"c","marks":20,"rowIds":["c-advantage-1","c-advantage-2","c-disadvantage-1","c-disadvantage-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, MHRV and Passive House construction",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-original.png",
+          "srcHash": "ad85f0e9476425fa8216d6febdb9435f",
+          "alt": "Original SEC 2012 Higher Construction Studies Question 10: the printed question with the plan of the Passive House, the MHRV unit M in the utility room.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2012-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-principles.png",
+          "srcHash": "02d0673ece21e1584f75af6ea1edc01e",
+          "alt": "SEC 2012 Higher marking scheme notes and sketches for all three items — building form, indoor environment and energy performance, with additional Passive House information (three pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-alt-discussion", topicId: "cons-1-2", conceptId: "building-life-cycle-discussion",
+    section: "B", questionRef: "2012 HL Q10-alt — discussion",
+    stem: "“A sustainable ethos in building will require the consideration of environmental implications associated with design, construction and operation of buildings and neighbourhoods; and greater emphasis on the improvement of existing buildings. Most buildings are used for several decades, and many survive for centuries. As the community’s principal physical asset, getting good value requires that the building’s full life cycle be considered, avoiding short-sighted attempts to merely minimise initial cost.” THE GREEN VITRUVIUS – PRINCIPLES AND PRACTICE OF SUSTAINABLE ARCHITECTURAL DESIGN (2011) by Vivienne Brophy and J Owen Lewis (UCD). - Earthscan Ltd, 14a St Cross Street, London ECIN 8XA, UK",
+    questionText: "Discuss the above statement in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Discussion – point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: a sustainable ethos puts the environment at the heart of every design decision — doing more with less for longer, thinking globally and acting locally, with best practice the only acceptable standard.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-2", kind: "criterion", verbatim: "Discussion – point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: a whole-systems team approach at the design stage, with low embodied energy, renewable materials and life-cycle costing, and each building considered within its neighbourhood.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-3", kind: "criterion", verbatim: "Discussion – point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: buildings as the community’s principal asset — durable, beautiful and flexible; low initial cost brings higher lifetime costs. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "A sustainable ethos and the building’s life cycle (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-alt-original.png",
+          "srcHash": "d2f82d8dbaa8b8ee42561c8db39cea5f",
+          "alt": "Original SEC 2012 Higher Construction Studies alternative Question 10: the printed quotation from The Green Vitruvius on a sustainable ethos in building, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-alt-guidelines", topicId: "cons-1-2", conceptId: "building-life-cycle-guidelines",
+    section: "B", questionRef: "2012 HL Q10-alt — guidelines",
+    stem: "“A sustainable ethos in building will require the consideration of environmental implications associated with design, construction and operation of buildings and neighbourhoods; and greater emphasis on the improvement of existing buildings. Most buildings are used for several decades, and many survive for centuries. As the community’s principal physical asset, getting good value requires that the building’s full life cycle be considered, avoiding short-sighted attempts to merely minimise initial cost.” THE GREEN VITRUVIUS – PRINCIPLES AND PRACTICE OF SUSTAINABLE ARCHITECTURAL DESIGN (2011) by Vivienne Brophy and J Owen Lewis (UCD). - Earthscan Ltd, 14a St Cross Street, London ECIN 8XA, UK",
+    questionText: "Propose three guidelines that would promote the development of environmentally sustainable housing in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: universal design and flexible, lifetime housing as the norm; sustainability a condition of planning.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: urban renewal on sustainable principles; higher densities with cycle and walking routes; consultation with local communities.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-3", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "The third guideline: point 4 and discussion 6 (the scheme prints this row as a second \"Guideline 2\"). Such as: renewable energy on site and A-rated appliances; grants and incentives for sustainable design; eco-villages such as Cloughjordan as models. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "A sustainable ethos and the building’s life cycle (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-alt-original.png",
+          "srcHash": "d2f82d8dbaa8b8ee42561c8db39cea5f",
+          "alt": "Original SEC 2012 Higher Construction Studies alternative Question 10: the printed quotation from The Green Vitruvius on a sustainable ethos in building, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2012, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2012 Higher Level — © State Examinations Commission.",
+    id: "cons-2012-hl-q10-alt-complete", topicId: "cons-1-2", conceptId: "building-life-cycle-complete",
+    section: "B", questionRef: "2012 HL Q10-alt — complete",
+    stem: "“A sustainable ethos in building will require the consideration of environmental implications associated with design, construction and operation of buildings and neighbourhoods; and greater emphasis on the improvement of existing buildings. Most buildings are used for several decades, and many survive for centuries. As the community’s principal physical asset, getting good value requires that the building’s full life cycle be considered, avoiding short-sighted attempts to merely minimise initial cost.” THE GREEN VITRUVIUS – PRINCIPLES AND PRACTICE OF SUSTAINABLE ARCHITECTURAL DESIGN (2011) by Vivienne Brophy and J Owen Lewis (UCD). - Earthscan Ltd, 14a St Cross Street, London ECIN 8XA, UK",
+    questionText: "Discuss the above statement in detail and propose three guidelines that would promote the development of environmentally sustainable housing in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "discussion-point-1", kind: "criterion", verbatim: "Discussion – point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: a sustainable ethos puts the environment at the heart of every design decision — doing more with less for longer, thinking globally and acting locally, with best practice the only acceptable standard.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-2", kind: "criterion", verbatim: "Discussion – point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: a whole-systems team approach at the design stage, with low embodied energy, renewable materials and life-cycle costing, and each building considered within its neighbourhood.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-3", kind: "criterion", verbatim: "Discussion – point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: buildings as the community’s principal asset — durable, beautiful and flexible; low initial cost brings higher lifetime costs. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: universal design and flexible, lifetime housing as the norm; sustainability a condition of planning.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: urban renewal on sustainable principles; higher densities with cycle and walking routes; consultation with local communities.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-3", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "The third guideline: point 4 and discussion 6 (the scheme prints this row as a second \"Guideline 2\"). Such as: renewable energy on site and A-rated appliances; grants and incentives for sustainable design; eco-villages such as Cloughjordan as models. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2012-hl-q10-alt-discussion","label":"Discussion of the statement","marks":30,"rowIds":["discussion-point-1","discussion-point-2","discussion-point-3"]},{"sourceCardId":"cons-2012-hl-q10-alt-guidelines","label":"Three guidelines","marks":30,"rowIds":["guidelines-guideline-1","guidelines-guideline-2","guidelines-guideline-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "A sustainable ethos and the building’s life cycle (alternative Question 10)",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2012-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2012-HL-q10-alt-original.png",
+          "srcHash": "d2f82d8dbaa8b8ee42561c8db39cea5f",
+          "alt": "Original SEC 2012 Higher Construction Studies alternative Question 10: the printed quotation from The Green Vitruvius on a sustainable ethos in building, and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2012 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
 ];
