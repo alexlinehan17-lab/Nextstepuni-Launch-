@@ -103,6 +103,16 @@ FIGS = {
   'agsci-2016-ol-paper-urinary-system': dict(kind='exampapers', year=2016, fileid='LC024GLP000EV.pdf', page=10, rect=[0.28, 0.5235, 0.79, 0.742], solution=False,
       alt='Original Question 9(b) diagram of the urinary system: two bean-shaped organs (one labelled Kidney); X points to a tube running down from one of them, Y to the sac both tubes enter, and Z to the tube leaving the base of the sac.',
       attribution='SEC Agricultural Science 2016 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.'),
+  # 2012 Ordinary
+  'agsci-2012-ol-paper-clover-nodules': dict(kind='exampapers', year=2012, fileid='LC024GLP000EV.pdf', page=2, rect=[0.63, 0.34, 0.99, 0.535], solution=False,
+      alt='Original Question 1 drawing of a clover root labelled clover root, with rounded swellings labelled root nodules along its side roots.',
+      attribution='SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.'),
+  'agsci-2012-ol-paper-soil-animals': dict(kind='exampapers', year=2012, fileid='LC024GLP000EV.pdf', page=3, rect=[0.33, 0.115, 0.9, 0.262], solution=False,
+      alt='Original Question 2 photographs: a fat grey legless larva lying on soil at the base of young plants, and a long segmented worm on soil.',
+      attribution='SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.'),
+  'agsci-2012-ol-paper-ruminant-stomach': dict(kind='exampapers', year=2012, fileid='LC024GLP000EV.pdf', page=8, rect=[0.13, 0.415, 0.76, 0.66], solution=False,
+      alt='Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.',
+      attribution='SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.'),
   # 2013 Ordinary
   'agsci-2013-ol-paper-farm-machinery': dict(kind='exampapers', year=2013, fileid='LC024GLP000EV.pdf', page=3, rect=[0.09, 0.13, 0.875, 0.722], solution=False,
       alt='Original Question 2 photographs lettered A to E: A a tractor-mounted implement with rows of spring tines on rotating arms, B a self-propelled harvester with a wide cutting header, C a frame carrying a few long curved deep tines, D a frame of angled concave steel discs, E a heavy smooth cylinder on a drawbar.',

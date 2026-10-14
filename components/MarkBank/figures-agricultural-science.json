@@ -1630,5 +1630,56 @@
       0.472
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-clover-nodules": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-clover-nodules.png",
+    "md5": "135a51d85c707db695c288af7d8bdb2e",
+    "alt": "Original Question 1 drawing of a clover root labelled clover root, with rounded swellings labelled root nodules along its side roots.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 2,
+    "cropRect": [
+      0.63,
+      0.34,
+      0.99,
+      0.535
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-soil-animals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-soil-animals.png",
+    "md5": "1f44da80c87a4cf625c8c9fb7ce92766",
+    "alt": "Original Question 2 photographs: a fat grey legless larva lying on soil at the base of young plants, and a long segmented worm on soil.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 3,
+    "cropRect": [
+      0.33,
+      0.115,
+      0.9,
+      0.262
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2012-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+    "md5": "8553eb8c28a4f677480a0334c8547db1",
+    "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+    "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2012/LC024GLP000EV.pdf",
+    "sourceSha256": "ca9b4547982ff4a881b82f3930596bccf39345b57e8367461935a729435c12fb",
+    "pdfPage": 8,
+    "cropRect": [
+      0.13,
+      0.415,
+      0.76,
+      0.66
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

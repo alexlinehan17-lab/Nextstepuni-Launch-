@@ -23,6 +23,7 @@ SECTION = re.compile(r'^SECTION\s+(?:ONE|TWO|THREE|A|B|C)\b', re.I)
 HEAD = re.compile(r'^(?:Q(?:uestion)?\.?\s*)?(\d{1,2})(?:\s*\.|(?=\s+(?:\(|Option|Any|Two|Four|Answer|[A-Z]))|\s*$)\s*')
 MARKER = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
 OPTION = re.compile(r'^Option\s+(One|Two)\b\.?\s*', re.I)
+NUMBER_WORDS = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen']
 FURNITURE = re.compile(r'^(Leaving Certificate|Agricultural Science\s*[–-]|Marking scheme Agricultural|Page \d+|\d{1,2}$|There is no examination material|\[OVER\]$|Blank Page$)', re.I)
 
 
@@ -38,6 +39,11 @@ def _lines(pdf):
                     if not text:
                         continue
                     x0, y0, x1, y1 = line['bbox']
+                    # The 2012 Ordinary scheme spells its heads ("Question Eight"); read the word
+                    # as the number so the head opens its question like "Question 8." does.
+                    word = re.match(r'^Question\s+([A-Z][a-z]+)\b\.?', text)
+                    if word and word.group(1).lower() in NUMBER_WORDS:
+                        text = f'Question {NUMBER_WORDS.index(word.group(1).lower()) + 1}.' + text[word.end():]
                     rows.append((y0 / H, y1 / H, x0 / W, text))
             rows.sort(key=lambda r: (round(r[0], 2), r[2]))
             out.append(rows)

@@ -672,51 +672,57 @@
         "sha256": "1a0dcbbdd3eed489d6adc380071d68897599fc0d272f4e7dccd5ef83b61316dd",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 49,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "631dfd57218273ea",
           "page": 1,
           "cue": "any six",
           "context": "e Superintendent only THERE ARE TWO SECTIONS IN THIS EXAMINATION PAPER Section One Answer any six questions from this section. Each question carries 20 marks. Write your answers in the spaces provided on this examination paper. Section Two Answer any three questions from this section. Each question carries 60 marks. Write you",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Cover: Section One, six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "31d9e15392aa6c09",
           "page": 1,
           "cue": "any three",
           "context": ". Write your answers in the spaces provided on this examination paper. Section Two Answer any three questions from this section. Each question carries 60 marks. Write your answers in the answer book. Total Marks: 300 marks. It is recommended that you spend not more than 45 minutes on Section One, leaving 105 minutes for Section",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Cover: Section Two, three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "4681dfa515e653ef",
           "page": 2,
           "cue": "any six",
           "context": "___________________________________________________________________ Instructions  Answer any six questions. Each question carries 20 marks.  Write your answers in the spaces provided.  Keep your answers short.  Write your examination number in the space provided on page 1. _________________________________________________",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "2dbce80433b5780d",
           "page": 6,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. _____________________________________________________________________________________ Question 8. (a) (i) Name three common sheep breeds. (ii) Name two parasites of sheep. (b) (i) State ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "3aa09a461242bf39",
           "page": 7,
           "cue": "any two",
           "context": "elp ensure successful calf rearing or successful replacement heifer rearing. (d) Describe any two ways to ensure good hygiene during milking and milk storage. (60 marks) Question 11. (a) Name two grass species that are commonly used in grass seed mixtures. (b) Tillering of young grass plants is important in establishing a goo",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q10(d): any two hygiene practices from the scheme pool; a marking menu."
         },
         {
           "id": "5eb477bf3da288da",
           "page": 8,
           "cue": "any two",
           "context": "Page 8 of 12 Question 12. Answer any two of the following (a), (b), (c), (d). (30, 30) (a) (i) Describe three features of good winter housing for weanlings. (ii) Give the approximate live weight for cattle at the following stages of the two-year ‘calf-to-beef’ system: 1",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q12: two of four independently priced 30-mark parts; all four are retained."
         }
       ]
     },
@@ -735,7 +741,7 @@
         "sha256": "f59eeca39d5b2d273fe310dc6f7f06a0d3aa40f30ea196ad0c7a6803caa1ec2e",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 49,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

@@ -36102,4 +36102,1464 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-4","agricultural-science-2-6","agricultural-science-0-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q1", topicId: "agsci-2-2-3", conceptId: "clover-nodule-bacteria",
+    section: "A", questionRef: "2012 OL Q1",
+    questionText: "The diagram shows nodules on the roots of a clover plant. (a) What type of organism do these nodules contain? (b) State one function of the organisms referred to in (i). (c) In the spaces below, draw and name the piece of equipment normally used in a laboratory to transfer the organisms referred to in (i) onto an agar plate. (d) Give one reason for using clover in grass seed mixtures.",
+    tariffModel: {"kind":"fixed","notation":"5 x 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Bacteria/ rhizobium", marks: 4, contextNote: "Any one, 4m (5 x 4m across the question)." },
+    { id: "r-2", kind: "point", verbatim: "(b) Decomposition of organic matter (O.M.)/ recycling of nutrients or named nutrient/ silage making/ food manufacturing or named example/ nitrogen fixation", marks: 4, contextNote: "Any one, 4m." },
+    { id: "r-3", kind: "criterion", verbatim: "(c) Drawing of inoculating loop", marks: 4, contextNote: "4m. [accept drawing of forceps or “tweezers” if named]" },
+    { id: "r-4", kind: "point", verbatim: "(c) Name — Inoculating loop", marks: 4, contextNote: "4m. [accept forceps or “tweezers”]" },
+    { id: "r-5", kind: "point", verbatim: "(d) Nitrogen fixation/ rich in protein/ rich in minerals/ improves productivity of grassland/ weed control/ less N fertiliser required/ saves money/palatable/ digestible/ improved silage if red clover stated", marks: 4, contextNote: "Any one, 4m." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-clover-nodules",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-clover-nodules.png",
+          "srcHash": "135a51d85c707db695c288af7d8bdb2e",
+          "alt": "Original Question 1 drawing of a clover root labelled clover root, with rounded swellings labelled root nodules along its side roots.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 2 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1","agricultural-science-2-4","agricultural-science-1-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q2", topicId: "agsci-3-2", conceptId: "soil-animals-table",
+    section: "A", questionRef: "2012 OL Q2",
+    questionText: "Complete the table below in relation to the animals shown in the photographs: (a) Name of animal. (b) Phylum to which animal belongs. (c) One characteristic of a member of the phylum. (d) Importance in agriculture.",
+    tariffModel: {"kind":"fixed","notation":"2(1m) + 2(4m) + 2(4m) + 2(1m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Leatherjacket/ cranefly/ daddy-long-legs / Earthworm/ Lumbricus.", marks: 2, contextNote: "(a) Name of animal: 1m each, Animal 1 (the larva) then Animal 2 (the worm).", group: {"claimMax":2,"perOption":1,"options":["Leatherjacket/ cranefly/ daddy-long-legs","Earthworm/ Lumbricus."]} },
+    { id: "r-2", kind: "anyN", verbatim: "Arthropoda. / Annelida.", marks: 8, contextNote: "(b) Phylum to which animal belongs: 4m each, Animal 1 then Animal 2.", group: {"claimMax":2,"perOption":4,"options":["Arthropoda.","Annelida."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Jointed limbs/ body divided into two or three parts/ exoskeleton/ metamorphosis / Segmented body / cylindrical body or round (in cross –section) / coelomate/ hermaphrodite/ clitellum/ setae", marks: 8, contextNote: "(c) One characteristic of a member of this phylum: 4m each, Animal 1 then Animal 2.", group: {"claimMax":2,"perOption":4,"options":["Jointed limbs/ body divided into two or three parts/ exoskeleton/ metamorphosis","Segmented body / cylindrical body or round (in cross –section) / coelomate/ hermaphrodite/ clitellum/ setae"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Crop pest/ eats or kills roots or stems or plants/ decreases yield/ leads to bare patches / Improves drainage/ improves aeration/ improves soil structure/ mixes soil layers/ creates humus/ increases soil fertility or adds nutrients/ breaks down O.M.", marks: 2, contextNote: "(d) Importance in agriculture: 1m each, Animal 1 then Animal 2.", group: {"claimMax":2,"perOption":1,"options":["Crop pest/ eats or kills roots or stems or plants/ decreases yield/ leads to bare patches","Improves drainage/ improves aeration/ improves soil structure/ mixes soil layers/ creates humus/ increases soil fertility or adds nutrients/ breaks down O.M."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-soil-animals",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-soil-animals.png",
+          "srcHash": "1f44da80c87a4cf625c8c9fb7ce92766",
+          "alt": "Original Question 2 photographs: a fat grey legless larva lying on soil at the base of young plants, and a long segmented worm on soil.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 3 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1","agricultural-science-2-3","agricultural-science-1-0","agricultural-science-2-1","agricultural-science-1-2","agricultural-science-3-5","agricultural-science-0-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q3", topicId: "agsci-4-1", conceptId: "true-or-false-farm-science",
+    section: "A", questionRef: "2012 OL Q3",
+    questionText: "Indicate whether the following statements are true (T) or false (F) by placing a circle around the correct answer in each case, as shown in the example. Example: The lungs are involved in gas exchange — T. (a) Aberdeen Angus cattle are black and white. (b) Sitka spruce is grown in most commercial forests in Ireland. (c) Granite is an igneous rock. (d) Dandelion belongs to the family Gramineae. (e) Soil pH is a measure of the phosphate level in a soil. (f) Liver fluke belongs to the phylum Nematoda. (g) The gestation period in pigs is three months, three weeks and three days. (h) Benedict`s solution is used to test for starch. (i) A line transect is used in ecological studies. (j) Anaemia is a common disease in pigs.",
+    tariffModel: {"kind":"fixed","notation":"(8 x 1m) + (2 x 6m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) F / (b) T / (c) T / (d) F / (e) F / (f) F / (g) T / (h) F / (i) T / (j) T", marks: 20, contextNote: "All ten statements, (8 x 1m) + (2 x 6m). The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6, 6, then 1 each). T = true, F = false; the scheme gives each letter with T or F.", group: {"claimMax":10,"perOption":6,"options":["(a) F","(b) T","(c) T","(d) F","(e) F","(f) F","(g) T","(h) F","(i) T","(j) T"],"perOptionSteps":[6,6,1,1,1,1,1,1,1,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3","agricultural-science-3-4","agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q4", topicId: "agsci-2-3", conceptId: "reasons-for-farm-tasks",
+    section: "A", questionRef: "2012 OL Q4",
+    questionText: "Give one scientific reason why each of the following tasks is carried out on farms. (a) Rolling the seedbed after sowing seed. (b) Male cattle are usually castrated. (c) Housing cattle during the winter. (d) Sheep are sheared in summer. (e) Trees in a forestry plantation are thinned.",
+    tariffModel: {"kind":"fixed","notation":"5 x 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Rolling the seedbed — Compacts soil/ covers seed/ improve germination/ prevent birds eating seed/ buries stones /brings up moisture/ improves seed-soil contact/ levels soil", marks: 4, contextNote: "Any one for each task, 4m each (5 x 4m)." },
+    { id: "r-2", kind: "point", verbatim: "(b) Castrating male cattle — Prevents unwanted breeding/ safer/ less aggressive/ less testosterone/ more easily managed", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(c) Housing cattle in winter — Easier management/ easier feeding/ prevents poaching/ more grass in following spring/ higher stocking rates/ environmental compliance/ reduce death or injury/better FCE/ warmer/ FYM or slurry available", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "(d) Shearing sheep in summer — Prevents maggots or blowfly/ increases mobility of sheep/ facilitates mating/ keeps sheep cooler/ sale of wool/ allows more space for housed sheep.", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "(e) Thinning forestry trees — Reduces competition/ increases space/ poorer trees removed/ improves the trees that are left or named improvement/ thinned trees used to make (useful) products/ provides access/ source of income.", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q5", topicId: "agsci-4-1", conceptId: "mammal-body-part-locations",
+    section: "A", questionRef: "2012 OL Q5",
+    questionText: "State the precise location of each of the following parts in the body of a mammal. The first one has been completed as an example: Atrium — Heart. (a) Trachea (b) Humerus (c) Ureter (d) Duodenum (e) Cerebellum.",
+    tariffModel: {"kind":"fixed","notation":"2(3m) + 2(4m) + 6m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) Trachea: Above lungs/ in the neck/ in the throat. / (b) Humerus: (Upper) arm/ above elbow/ (upper part of) forelimb / (c) Ureter: Between kidney and bladder/ beside kidney / (d) Duodenum: Exit from stomach/ beside stomach/ (first part of) small intestine / (e) Cerebellum: Brain/ head/ skull", marks: 20, contextNote: "All five, 2(3m) + 2(4m) + 6m. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6, 4, 4, 3, 3).", group: {"claimMax":5,"perOption":6,"options":["(a) Trachea: Above lungs/ in the neck/ in the throat.","(b) Humerus: (Upper) arm/ above elbow/ (upper part of) forelimb","(c) Ureter: Between kidney and bladder/ beside kidney","(d) Duodenum: Exit from stomach/ beside stomach/ (first part of) small intestine","(e) Cerebellum: Brain/ head/ skull"],"perOptionSteps":[6,4,4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q5",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-0","agricultural-science-2-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q6", topicId: "agsci-3-1", conceptId: "plant-structures-and-descriptions",
+    section: "A", questionRef: "2012 OL Q6",
+    questionText: "Match each plant structure from the following list with a description in the table. The first one has been completed as an example. List: root hairs; xylem; phloem; carpels; stomata; stamens. Example: Phloem — Carries products of photosynthesis. (a) Male parts of flowers. (b) Carries water from the roots. (c) Allow gas exchange in leaves. (d) Absorb water from the soil. (e) Female parts of flowers.",
+    tariffModel: {"kind":"fixed","notation":"2(3m) + 2(4m) + 6m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) Stamen: Male part of flowers. / (b) Xylem: Carries water from roots. / (c) Stomata: Allows gas exchange in leaves. / (d) Root hairs: Absorb water from the soil. / (e) Carpel: Female part of flowers.", marks: 20, contextNote: "All five, 2(3m) + 2(4m) + 6m. The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6, 4, 4, 3, 3).", group: {"claimMax":5,"perOption":6,"options":["(a) Stamen: Male part of flowers.","(b) Xylem: Carries water from roots.","(c) Stomata: Allows gas exchange in leaves.","(d) Root hairs: Absorb water from the soil.","(e) Carpel: Female part of flowers."],"perOptionSteps":[6,4,4,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q6",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4","agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q7", topicId: "agsci-4-3-2", conceptId: "pig-temperatures-and-weights",
+    section: "A", questionRef: "2012 OL Q7",
+    questionText: "(a) Give the recommended temperature for each of the following in relation to pig housing: (i) Creep area. (ii) Weaner house. (iii) Fattener house. (b) Why do bonhams have their teeth clipped soon after birth? (c) Give the approximate weight at which pigs are finished for slaughter.",
+    tariffModel: {"kind":"orderedSplit","notation":"6m + 2 (4m) + 2 (3m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a)(i) Creep area — 25 - 30° C", marks: null, contextNote: "Shared scale 6m + 2 (4m) + 2 (3m): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Five answers: the three temperatures, (b) and (c)." },
+    { id: "r-2", kind: "point", verbatim: "(a)(ii) Weaner house — 22 - 26° C", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(a)(iii) Fattener house — 20 - 22° C", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(b) Teeth clipping — Prevents damage to sow’s teats/ prevents biting other bonhams", marks: null, contextNote: "Any one." },
+    { id: "r-5", kind: "point", verbatim: "(c) Slaughter weight — 80- 95 kg", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q7",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8ai", topicId: "agsci-4-2", conceptId: "common-sheep-breeds",
+    section: "B", questionRef: "2012 OL Q8(a)(i)",
+    questionText: "Name three common sheep breeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Suffolk / Texel / Galway / (Wicklow) Cheviot / Blackface mountain / Border Leicester / Beltex", marks: 9, contextNote: "Any three, 5m + 2(2m).", group: {"claimMax":3,"perOption":5,"options":["Suffolk","Texel","Galway","(Wicklow) Cheviot","Blackface mountain","Border Leicester","Beltex"],"perOptionSteps":[5,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8aii", topicId: "agsci-4-3-3", conceptId: "sheep-parasites",
+    section: "B", questionRef: "2012 OL Q8(a)(ii)",
+    questionText: "Name two parasites of sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Blowfly or maggots or flystrike / mange mites / (stomach) worms / (lung) worms / liver fluke", marks: 6, contextNote: "Any two, (4m + 2m).", group: {"claimMax":2,"perOption":4,"options":["Blowfly or maggots or flystrike","mange mites","(stomach) worms","(lung) worms","liver fluke"],"perOptionSteps":[4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8bi", topicId: "agsci-4-3-2", conceptId: "housing-at-lambing",
+    section: "B", questionRef: "2012 OL Q8(b)(i)",
+    questionText: "State three advantages of housing sheep at lambing time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Easier supervision or easier management / prevents poaching / shelter / easier feeding / less predation / earlier grazing / lower rate of lamb mortality / more grass in spring / FYM or slurry available", marks: 9, contextNote: "Any three, 5m + 2(2m).", group: {"claimMax":3,"perOption":5,"options":["Easier supervision or easier management","prevents poaching","shelter","easier feeding","less predation","earlier grazing","lower rate of lamb mortality","more grass in spring","FYM or slurry available"],"perOptionSteps":[5,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(b)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8bii", topicId: "agsci-4-3-2", conceptId: "mating-time-management",
+    section: "B", questionRef: "2012 OL Q8(b)(ii)",
+    questionText: "Describe four sheep management practices prior to and at mating time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ewes on bare pasture / moved to good pasture (one month) before mating / flushing / ewes can be sponged / PMSG / sponge removed / rams introduced / 1 ram for 40 - 45 ewes or other suitable ratio / raddle harness on ram(s) / change colour every 14 days / ewes kept on good grazing during mating / mating season lasts six weeks / dagging / shearing", marks: 16, contextNote: "Any four, 7m + 3(3m).", group: {"claimMax":4,"perOption":7,"options":["Ewes on bare pasture","moved to good pasture (one month) before mating","flushing","ewes can be sponged","PMSG","sponge removed","rams introduced","1 ram for 40 - 45 ewes or other suitable ratio","raddle harness on ram(s)","change colour every 14 days","ewes kept on good grazing during mating","mating season lasts six weeks","dagging","shearing"],"perOptionSteps":[7,3,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(b)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8ci", topicId: "agsci-4-3-2", conceptId: "lamb-diet",
+    section: "B", questionRef: "2012 OL Q8(c)(i)",
+    questionText: "Describe the diet of the lamb from birth to slaughter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Colostrum / ewe’s milk / hay / silage / grass / (creep) meal or nuts or rations or Concentrates feeding", marks: 16, contextNote: "Any three, 2(7m) + 2m.", group: {"claimMax":3,"perOption":7,"options":["Colostrum","ewe’s milk","hay","silage","grass","(creep) meal or nuts or rations or Concentrates feeding"],"perOptionSteps":[7,7,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(c)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q8cii", topicId: "agsci-4-3-1", conceptId: "lamb-slaughter-weight",
+    section: "B", questionRef: "2012 OL Q8(c)(ii)",
+    questionText: "What is the normal weight in kilograms at which lambs are slaughtered?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "40-50 kg", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q8(c)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q9ai", topicId: "agsci-3-2", conceptId: "potato-varieties",
+    section: "B", questionRef: "2012 OL Q9(a)(i)",
+    questionText: "Name two common varieties of potato.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Kerrs Pink / Rooster / Home Guard / Golden Wonder / British Queen", marks: 8, contextNote: "Any two (2 x 4m).", group: {"claimMax":2,"perOption":4,"options":["Kerrs Pink","Rooster","Home Guard","Golden Wonder","British Queen"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q9(a)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3","agricultural-science-2-4","agricultural-science-2-5"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q9aii", topicId: "agsci-3-3-1", conceptId: "potato-cultivation-headings",
+    section: "B", questionRef: "2012 OL Q9(a)(ii)",
+    questionText: "Describe the cultivation of potatoes under the following headings: 1. Seed bed preparation. 2. Control of a named disease. 3. Weed control. 4. Harvesting.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Plough / rotavate or harrow / ridger / stone removal", marks: 4, contextNote: "(1) Seed bed preparation: any one (4m).", group: {"claimMax":1,"perOption":4,"options":["Plough","rotavate or harrow","ridger","stone removal"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Potato blight: Fungicide/ spray/rotation/ certified seed/ avoid ground keepers / Blackleg: Certified seed/ good drainage / Scab: Avoid liming/ certified seed/ rotation / Leaf roll: Aphicide/ certified seed/ biological control or detail of / Leaf mosaic: Aphicide/ certified seed/ biological control or detail of", marks: 8, contextNote: "(2) Name of disease (4m) and control measure (4m). [Control measure must match named disease]", group: {"claimMax":1,"perOption":8,"options":["Potato blight: Fungicide/ spray/rotation/ certified seed/ avoid ground keepers","Blackleg: Certified seed/ good drainage","Scab: Avoid liming/ certified seed/ rotation","Leaf roll: Aphicide/ certified seed/ biological control or detail of","Leaf mosaic: Aphicide/ certified seed/ biological control or detail of"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Spraying / scuffling / earthing up / rotation / hand-weeding / hoeing / spade / hand pick", marks: 4, contextNote: "(3) Weed control: any one (4m).", group: {"claimMax":1,"perOption":4,"options":["Spraying","scuffling","earthing up","rotation","hand-weeding","hoeing","spade","hand pick"]} },
+    { id: "r-4", kind: "anyN", verbatim: "Haulms sprayed / elevator digger / complete harvester / harvested in Sept – Nov. for maincrop", marks: 4, contextNote: "(4) Harvesting: any one (4m). [Accept May-June or June-August as harvest time for first earlies or second earlies respectively]", group: {"claimMax":1,"perOption":4,"options":["Haulms sprayed","elevator digger","complete harvester","harvested in Sept – Nov. for maincrop"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q9(a)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q9bi", topicId: "agsci-3-3-1", conceptId: "early-potato-areas",
+    section: "B", questionRef: "2012 OL Q9(b)(i)",
+    questionText: "First early potatoes are usually grown in coastal areas of the east and south of Ireland. Give two reasons why these areas are suitable for early potato production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Reduced frost risk in south and east / earlier growth in spring / light soils / free draining / sandy soils / south facing / warmer weather or warmer soil / soil heats up more quickly", marks: 8, contextNote: "Any two (6m + 2m).", group: {"claimMax":2,"perOption":6,"options":["Reduced frost risk in south and east","earlier growth in spring","light soils","free draining","sandy soils","south facing","warmer weather or warmer soil","soil heats up more quickly"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q9(b)(i)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q9bii", topicId: "agsci-3-3-2", conceptId: "potato-rotation",
+    section: "B", questionRef: "2012 OL Q9(b)(ii)",
+    questionText: "Crop rotation is an important feature of potato cultivation. Give two reasons why crop rotation is important.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Prevents pests / prevents diseases / improves soil structure / prevents nutrient depletion / avoids ground keepers / weed control / prevents plough pan", marks: 8, contextNote: "Any two (6m + 2m).", group: {"claimMax":2,"perOption":6,"options":["Prevents pests","prevents diseases","improves soil structure","prevents nutrient depletion","avoids ground keepers","weed control","prevents plough pan"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q9(b)(ii)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-5","agricultural-science-0-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q9c", topicId: "agsci-3-3-3", conceptId: "potato-dry-matter",
+    section: "B", questionRef: "2012 OL Q9(c)",
+    questionText: "Describe an experiment to find the dry matter (DM) content of potatoes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weigh dish / cut potatoes / weigh dish and potatoes / weight of potatoes / oven / dry to constant weight / reweigh / loss in weight / calculate % water / calculate % DM", marks: 16, contextNote: "Any four, 7m + 3 (3m).", group: {"claimMax":4,"perOption":7,"options":["Weigh dish","cut potatoes","weigh dish and potatoes","weight of potatoes","oven","dry to constant weight","reweigh","loss in weight","calculate % water","calculate % DM"],"perOptionSteps":[7,3,3,3]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q9(c)",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q10ai", topicId: "agsci-4-2", conceptId: "dairy-breeds",
+    section: "B", questionRef: "2012 OL Q10(a)(i)",
+    questionText: "Give the names of two breeds of cattle commonly used in milk production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Holstein / Friesian / Jersey / Ayrshire / Shorthorn / Simmental", marks: 6, contextNote: "Any two (2 x 3m). [ Note: Simmental in either but not in both]", group: {"claimMax":2,"perOption":3,"options":["Holstein","Friesian","Jersey","Ayrshire","Shorthorn","Simmental"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q10(a)(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q10aii", topicId: "agsci-4-2", conceptId: "beef-breeds",
+    section: "B", questionRef: "2012 OL Q10(a)(ii)",
+    questionText: "Give the names of two breeds of cattle commonly used in beef production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Hereford / Aberdeen Angus / Charolais / Simmental / Limousin", marks: 6, contextNote: "Any two (2x 3m). [ Note: Simmental in either but not in both]", group: {"claimMax":2,"perOption":3,"options":["Hereford","Aberdeen Angus","Charolais","Simmental","Limousin"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q10(a)(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4","agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q10b", topicId: "agsci-4-3-2", conceptId: "dairy-cycle-days",
+    section: "B", questionRef: "2012 OL Q10(b)",
+    questionText: "Read the following paragraph on dairy farming and match each capital letter with the correct number of days from the list below. List: 37 days; 21 days; 60 days; 282 days; 4 days; 305 days. Cows are in heat or ‘bulling’ every __A__ days. The cow is pregnant or ‘in-calf’ for __B__ days. After calving the cow produces a special type of milk called colostrum for about __C__ days. The cow produces milk for an average of __D__ days in the year. The cow reaches her peak milk yield about __E__ days after calving. The cow should be ‘dried-off’ about __F__ days before the birth of the next calf.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A 21 days / B 282 days / C 4 days / D 305 days / E 37 days / F 60 days", marks: 24, contextNote: "All six, 2(6m) + 2(4m) + 2(2m). The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6, 6, 4, 4, 2, 2).", group: {"claimMax":6,"perOption":6,"options":["A 21 days","B 282 days","C 4 days","D 305 days","E 37 days","F 60 days"],"perOptionSteps":[6,6,4,4,2,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q10(b)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q10c", topicId: "agsci-4-3-2", conceptId: "calf-or-heifer-rearing",
+    section: "B", questionRef: "2012 OL Q10(c)",
+    questionText: "Calving is a very important event on the dairy farm. List four steps to help ensure successful calf rearing or successful replacement heifer rearing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Remove mucus / iodine on navel / colostrum / good housing or two named examples / hygienic conditions / (whole) milk / milk replacer / meal / hay / silage / disease control / weaning / “let- out” to grass (at 12 weeks) / leader-follower system / parasite control", marks: 16, contextNote: "Calf rearing: any four, 7m + 3(3m).", group: {"claimMax":4,"perOption":7,"options":["Remove mucus","iodine on navel","colostrum","good housing or two named examples","hygienic conditions","(whole) milk","milk replacer","meal","hay","silage","disease control","weaning","“let- out” to grass (at 12 weeks)","leader-follower system","parasite control"],"perOptionSteps":[7,3,3,3]} },
+    ],
+    answerVariants: [
+          {
+                "id": "calf",
+                "label": "Calf rearing",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Remove mucus / iodine on navel / colostrum / good housing or two named examples / hygienic conditions / (whole) milk / milk replacer / meal / hay / silage / disease control / weaning / “let- out” to grass (at 12 weeks) / leader-follower system / parasite control",
+                            "marks": 16,
+                            "contextNote": "Calf rearing: any four, 7m + 3(3m).",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 7,
+                                  "options": [
+                                        "Remove mucus",
+                                        "iodine on navel",
+                                        "colostrum",
+                                        "good housing or two named examples",
+                                        "hygienic conditions",
+                                        "(whole) milk",
+                                        "milk replacer",
+                                        "meal",
+                                        "hay",
+                                        "silage",
+                                        "disease control",
+                                        "weaning",
+                                        "“let- out” to grass (at 12 weeks)",
+                                        "leader-follower system",
+                                        "parasite control"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        3,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "heifer",
+                "label": "Rearing replacement heifer",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "select calf with good dairy characteristics / calf should reach 200 kg at housing / silage / meal / 300kg at 15 months/mated / easy calving bull / 450 kg at housing second winter / 500-525 kg at calving",
+                            "marks": 16,
+                            "contextNote": "Rearing replacement heifer: any four, 7m + 3(3m). [Accept any points from calf rearing above]",
+                            "group": {
+                                  "claimMax": 4,
+                                  "perOption": 7,
+                                  "options": [
+                                        "select calf with good dairy characteristics",
+                                        "calf should reach 200 kg at housing",
+                                        "silage",
+                                        "meal",
+                                        "300kg at 15 months/mated",
+                                        "easy calving bull",
+                                        "450 kg at housing second winter",
+                                        "500-525 kg at calving"
+                                  ],
+                                  "perOptionSteps": [
+                                        7,
+                                        3,
+                                        3,
+                                        3
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q10(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q10d", topicId: "agsci-4-3-2", conceptId: "milking-hygiene",
+    section: "B", questionRef: "2012 OL Q10(d)",
+    questionText: "Describe any two ways to ensure good hygiene during milking and milk storage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clean housing / clean parlour / wash teats and udders / check for mastitis / fly control / teat dips / change filters / wash bulk tank / plate cooling / bulk tank cooling", marks: 8, contextNote: "Any two (2 x 4m).", group: {"claimMax":2,"perOption":4,"options":["Clean housing","clean parlour","wash teats and udders","check for mastitis","fly control","teat dips","change filters","wash bulk tank","plate cooling","bulk tank cooling"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q10(d)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q11a", topicId: "agsci-3-3-1", conceptId: "seed-mixture-grasses",
+    section: "B", questionRef: "2012 OL Q11(a)",
+    questionText: "Name two grass species that are commonly used in grass seed mixtures.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "PRG / IRG / Cocksfoot / Meadow fescue / Timothy / Meadow foxtail", marks: 6, contextNote: "Any two (2 x 3m).", group: {"claimMax":2,"perOption":3,"options":["PRG","IRG","Cocksfoot","Meadow fescue","Timothy","Meadow foxtail"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q11(a)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q11bi", topicId: "agsci-3-1", conceptId: "tillering",
+    section: "B", questionRef: "2012 OL Q11(b)(i)",
+    stem: "Tillering of young grass plants is important in establishing a good grass sward.",
+    questionText: "What is meant by the term tillering?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tillering: Growth of side-shoot (from base of main stem)", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q11(b)(i)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q11bii", topicId: "agsci-3-3-2", conceptId: "encouraging-tillering",
+    section: "B", questionRef: "2012 OL Q11(b)(ii)",
+    stem: "Tillering of young grass plants is important in establishing a good grass sward.",
+    questionText: "Describe two ways by which the farmer can encourage tillering.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Damage to main stem / close grazing / sheep or calves / topping / rolling / (Phosphorus) fertiliser", marks: 8, contextNote: "Encouraged by: any two (2 x 4m).", group: {"claimMax":2,"perOption":4,"options":["Damage to main stem","close grazing","sheep or calves","topping","rolling","(Phosphorus) fertiliser"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q11(b)(ii)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q11c", topicId: "agsci-3-3-2", conceptId: "paddock-and-set-stocking",
+    section: "B", questionRef: "2012 OL Q11(c)",
+    questionText: "Paddock grazing and set stocking are two grazing systems. With the aid of labelled diagrams, explain both of these systems.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagrams", marks: 4, contextNote: "Diagrams (2m +2m). [Full marks may be awarded for each point labelled in each diagram drawn]" },
+    { id: "r-2", kind: "anyN", verbatim: "Land divided / (21) equal sized paddocks / permanent roadway / permanent fencing / water in each / one paddock per day / N fertiliser after grazing / animals return to 1st paddock after 22 days / efficient / expensive", marks: 10, contextNote: "Paddock: any two (2 x 5m).", group: {"claimMax":2,"perOption":5,"options":["Land divided","(21) equal sized paddocks","permanent roadway","permanent fencing","water in each","one paddock per day","N fertiliser after grazing","animals return to 1st paddock after 22 days","efficient","expensive"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Access to all land / no divisions / no roadway / not efficient / patchy grazing / cheaper / topping", marks: 10, contextNote: "Set stocking: any two (2 x 5m).", group: {"claimMax":2,"perOption":5,"options":["Access to all land","no divisions","no roadway","not efficient","patchy grazing","cheaper","topping"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q11(c)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q11d", topicId: "agsci-3-3-3", conceptId: "hay-versus-silage",
+    section: "B", questionRef: "2012 OL Q11(d)",
+    questionText: "Compare hay and silage under the following headings: (i) Method of preservation. (ii) Digestibility.",
+    tariffModel: {"kind":"orderedSplit","notation":"7m + 3(3m)"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Hay — Dehydration or drying or removal of water", marks: null, contextNote: "Shared scale 7m + 3(3m): the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Four answers: hay and silage under each heading. Any one each." },
+    { id: "r-2", kind: "point", verbatim: "(i) Silage — (Controlled) fermentation or anaerobic/ pickling or acid", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(ii) Hay — Less digestible/ more fibre/ stemmy/ low DMD", marks: null },
+    { id: "r-4", kind: "point", verbatim: "(ii) Silage — More digestible/ less fibre/ leafy/ higher DMD", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q11(d)",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12ai", topicId: "agsci-4-3-2", conceptId: "weanling-winter-housing",
+    section: "B", questionRef: "2012 OL Q12(a)(i)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "Describe three features of good winter housing for weanlings.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Well ventilated / free from draughts / clean water / adequate feed space / slats / straw bed / adequate floor space / slurry holding capacity / adequate (cubic) air capacity / hygiene", marks: 12, contextNote: "Any three (6m + 4m + 2m).", group: {"claimMax":3,"perOption":6,"options":["Well ventilated","free from draughts","clean water","adequate feed space","slats","straw bed","adequate floor space","slurry holding capacity","adequate (cubic) air capacity","hygiene"],"perOptionSteps":[6,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12aii", topicId: "agsci-4-3-1", conceptId: "calf-to-beef-weights",
+    section: "B", questionRef: "2012 OL Q12(a)(ii)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "Give the approximate live weight for cattle at the following stages of the two-year ‘calf-to-beef’ system: 1. First winter housing. 2. Slaughter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weight at first winter 200-220 kg / Weight at slaughter 600-700 kg", marks: 8, contextNote: "Both (6m + 2m). The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6m + 2m).", group: {"claimMax":2,"perOption":6,"options":["Weight at first winter 200-220 kg","Weight at slaughter 600-700 kg"],"perOptionSteps":[6,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12aiii", topicId: "agsci-4-3-1", conceptId: "conformation-and-fatness",
+    section: "B", questionRef: "2012 OL Q12(a)(iii)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "At slaughter the beef carcass is graded for conformation and fatness. Explain each underlined term.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Muscle distribution / on back and hindquarters / graded EUROP / Shape of an animal (around the bones)", marks: 5, contextNote: "Conformation: any two (4m + 1m).", group: {"claimMax":2,"perOption":4,"options":["Muscle distribution","on back and hindquarters","graded EUROP","Shape of an animal (around the bones)"],"perOptionSteps":[4,1]} },
+    { id: "r-2", kind: "anyN", verbatim: "Amount of fat on carcass / tail area or hindquarters / graded 1-5", marks: 5, contextNote: "Fatness: any two (4m +1m).", group: {"claimMax":2,"perOption":4,"options":["Amount of fat on carcass","tail area or hindquarters","graded 1-5"],"perOptionSteps":[4,1]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(a)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12bi", topicId: "agsci-2-2-2", conceptId: "texture-and-structure",
+    section: "B", questionRef: "2012 OL Q12(b)(i)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "Explain the terms soil texture and soil structure.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Soil Texture: Amount or percentage of sand, silt and clay in a soil.", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Soil structure: (coming together of soil particles to form) aggregates or crumbs or peds.", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-3"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12bii", topicId: "agsci-2-2-2", conceptId: "soil-texture-types",
+    section: "B", questionRef: "2012 OL Q12(b)(ii)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "Give two characteristics of each of the following soil texture types: 1. Sandy soil. 2. Loam soil. 3. Clay soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good drainage / good aeration / light / low inherent fertility / warm / early / prone to drought / prone to leaching / easy to till / low CEC", marks: 4, contextNote: "Sandy soil: any two (2 x 2m).", group: {"claimMax":2,"perOption":2,"options":["Good drainage","good aeration","light","low inherent fertility","warm","early","prone to drought","prone to leaching","easy to till","low CEC"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Good drainage / good aeration / fertile / light / warm / retains water / not waterlogged / easy to till.", marks: 4, contextNote: "Loam soil: any two (2 x 2m).", group: {"claimMax":2,"perOption":2,"options":["Good drainage","good aeration","fertile","light","warm","retains water","not waterlogged","easy to till."]} },
+    { id: "r-3", kind: "anyN", verbatim: "Poor drainage / poor aeration / heavy / plastic / cold / waterlogged / late / good inherent fertility / difficult to till / retains water.", marks: 4, contextNote: "Clay soil: any two (2 x 2m).", group: {"claimMax":2,"perOption":2,"options":["Poor drainage","poor aeration","heavy","plastic","cold","waterlogged","late","good inherent fertility","difficult to till","retains water."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-3","agricultural-science-0-1"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12biii", topicId: "agsci-2-2-2", conceptId: "percentage-clay-experiment",
+    section: "B", questionRef: "2012 OL Q12(b)(iii)",
+    stem: "Answer any two of the following (a), (b), (c), (d).",
+    questionText: "Describe an experiment to estimate the percentage clay in a soil sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Oven dry sample / crush sample / weigh sample / place in sieves / cover / shake / weigh each sieve contents / calculation / soil triangle", marks: 12, contextNote: "Sieve method: any three (6m + 4m + 2m).", group: {"claimMax":3,"perOption":6,"options":["Oven dry sample","crush sample","weigh sample","place in sieves","cover","shake","weigh each sieve contents","calculation","soil triangle"],"perOptionSteps":[6,4,2]} },
+    ],
+    answerVariants: [
+          {
+                "id": "sieve",
+                "label": "Sieve method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Oven dry sample / crush sample / weigh sample / place in sieves / cover / shake / weigh each sieve contents / calculation / soil triangle",
+                            "marks": 12,
+                            "contextNote": "Sieve method: any three (6m + 4m + 2m).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 6,
+                                  "options": [
+                                        "Oven dry sample",
+                                        "crush sample",
+                                        "weigh sample",
+                                        "place in sieves",
+                                        "cover",
+                                        "shake",
+                                        "weigh each sieve contents",
+                                        "calculation",
+                                        "soil triangle"
+                                  ],
+                                  "perOptionSteps": [
+                                        6,
+                                        4,
+                                        2
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sedimentation",
+                "label": "Sedimentation method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Add sample to water / stir / add mixture to graduated cylinder / stopper / shake / settle overnight / note layers / record amounts / calculation / soil triangle",
+                            "marks": 12,
+                            "contextNote": "Sedimentation method: any three (6m + 4m + 2m).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 6,
+                                  "options": [
+                                        "Add sample to water",
+                                        "stir",
+                                        "add mixture to graduated cylinder",
+                                        "stopper",
+                                        "shake",
+                                        "settle overnight",
+                                        "note layers",
+                                        "record amounts",
+                                        "calculation",
+                                        "soil triangle"
+                                  ],
+                                  "perOptionSteps": [
+                                        6,
+                                        4,
+                                        2
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "feel",
+                "label": "Feel method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Handle dry soil / note feel gritty or non-gritty / moisten the soil / note cohesivness / plasticity / grittiness / knead into ball / can it be rolled into threads / can it be bent into threads",
+                            "marks": 12,
+                            "contextNote": "Feel method: any three (6m + 4m + 2m).",
+                            "group": {
+                                  "claimMax": 3,
+                                  "perOption": 6,
+                                  "options": [
+                                        "Handle dry soil",
+                                        "note feel gritty or non-gritty",
+                                        "moisten the soil",
+                                        "note cohesivness",
+                                        "plasticity",
+                                        "grittiness",
+                                        "knead into ball",
+                                        "can it be rolled into threads",
+                                        "can it be bent into threads"
+                                  ],
+                                  "perOptionSteps": [
+                                        6,
+                                        4,
+                                        2
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(b)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12ci", topicId: "agsci-4-1", conceptId: "ruminant",
+    section: "B", questionRef: "2012 OL Q12(c)(i)",
+    stem: "Answer any two of the following (a), (b), (c), (d). The diagram below shows the ruminant stomach.",
+    questionText: "Explain the term ruminant.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An animal whose stomach consists of 4 compartments / chews the cud.", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["An animal whose stomach consists of 4 compartments","chews the cud."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(c)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+          "srcHash": "8553eb8c28a4f677480a0334c8547db1",
+          "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "diagram",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12cii", topicId: "agsci-4-1", conceptId: "ruminant-stomach-parts",
+    section: "B", questionRef: "2012 OL Q12(c)(ii)",
+    stem: "Answer any two of the following (a), (b), (c), (d). The diagram below shows the ruminant stomach.",
+    questionText: "Name the parts labelled A, B, C from the diagram. (Part D is already labelled).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A – Rumen or paunch (stomach) / B – Reticulum or honeycomb (stomach) / C - Abomasum or true stomach", marks: 14, contextNote: "All three (6m + 4m + 4m). The scheme's convention: the first correct answer encountered earns the first value and each later correct answer the next (6m + 4m + 4m).", group: {"claimMax":3,"perOption":6,"options":["A – Rumen or paunch (stomach)","B – Reticulum or honeycomb (stomach)","C - Abomasum or true stomach"],"perOptionSteps":[6,4,4]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(c)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+          "srcHash": "8553eb8c28a4f677480a0334c8547db1",
+          "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Rumen or paunch (stomach)","askedInThisQuestion":true},{"letter":"B","meaning":"Reticulum or honeycomb (stomach)","askedInThisQuestion":true},{"letter":"C","meaning":"Abomasum or true stomach","askedInThisQuestion":true},{"letter":"D","meaning":"Omasum (labelled on the paper)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12ciii", topicId: "agsci-4-1", conceptId: "rumen-function",
+    section: "B", questionRef: "2012 OL Q12(c)(iii)",
+    stem: "Answer any two of the following (a), (b), (c), (d). The diagram below shows the ruminant stomach.",
+    questionText: "Explain what happens in part A of the stomach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Breakdown of cellulose / digestion of plant material / protein synthesis.", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Breakdown of cellulose","digestion of plant material","protein synthesis."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(c)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+          "srcHash": "8553eb8c28a4f677480a0334c8547db1",
+          "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-0"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12civ", topicId: "agsci-4-1", conceptId: "first-chamber-in-young",
+    section: "B", questionRef: "2012 OL Q12(c)(iv)",
+    stem: "Answer any two of the following (a), (b), (c), (d). The diagram below shows the ruminant stomach.",
+    questionText: "Which chamber of the stomach is used first by calves and lambs?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "C / abomasum / true stomach.", marks: 4, contextNote: "Any one (4m).", group: {"claimMax":1,"perOption":4,"options":["C","abomasum","true stomach."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(c)(iv)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2012-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2012-ol-paper-ruminant-stomach.png",
+          "srcHash": "8553eb8c28a4f677480a0334c8547db1",
+          "alt": "Original Question 12(c) outline of the ruminant stomach with In and Out arrows; A marks the large left chamber, B a small chamber at the upper right, C a chamber at the lower right, and D labelled Omasum.",
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper, PDF page 8 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12di", topicId: "agsci-4-3-2", conceptId: "farrowing-crate",
+    section: "B", questionRef: "2012 OL Q12(d)(i)",
+    stem: "Answer any two of the following (a), (b), (c), (d). Give a scientific explanation for each of the following:",
+    questionText: "Give a scientific explanation for: The use of a farrowing crate for a sow.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Prevents crushing / easy suckling / access to creep area.", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Prevents crushing","easy suckling","access to creep area."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(d)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12dii", topicId: "agsci-4-3-2", conceptId: "creep-feeding-calves",
+    section: "B", questionRef: "2012 OL Q12(d)(ii)",
+    stem: "Answer any two of the following (a), (b), (c), (d). Give a scientific explanation for each of the following:",
+    questionText: "Give a scientific explanation for: Creep feeding of calves.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Calves access to meal only / increased growth rates / earlier weaning / best grass / parasite control / faster development of rumen / gets used to solid food", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Calves access to meal only","increased growth rates","earlier weaning","best grass","parasite control","faster development of rumen","gets used to solid food"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(d)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-1-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12diii", topicId: "agsci-2-3", conceptId: "mixed-shelter-belts",
+    section: "B", questionRef: "2012 OL Q12(d)(iii)",
+    stem: "Answer any two of the following (a), (b), (c), (d). Give a scientific explanation for each of the following:",
+    questionText: "Give a scientific explanation for: Using a mixture of tree species in shelter belts.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Attractive / biodiversity / conifers give shelter in winter.", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Attractive","biodiversity","conifers give shelter in winter."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(d)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-2-4"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12div", topicId: "agsci-3-3-2", conceptId: "white-patches-on-barley",
+    section: "B", questionRef: "2012 OL Q12(d)(iv)",
+    stem: "Answer any two of the following (a), (b), (c), (d). Give a scientific explanation for each of the following:",
+    questionText: "Give a scientific explanation for: White patches on the leaves of barley plants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Powdery mildew / fungus / disease / nutrient deficiency / fertiliser scorch / spray damage.", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Powdery mildew","fungus","disease","nutrient deficiency","fertiliser scorch","spray damage."]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(d)(iv)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-5"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q12dv", topicId: "agsci-4-3-3", conceptId: "fluke-on-wet-land",
+    section: "B", questionRef: "2012 OL Q12(d)(v)",
+    stem: "Answer any two of the following (a), (b), (c), (d). Give a scientific explanation for each of the following:",
+    questionText: "Give a scientific explanation for: Higher numbers of fluke in the livers of sheep grazing on wet land.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Mud snail or secondary host lives in wet area / Life cycle stages or named stages need water", marks: 6, contextNote: "Any one (6m).", group: {"claimMax":1,"perOption":6,"options":["Mud snail or secondary host lives in wet area","Life cycle stages or named stages need water"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q12(d)(v)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13a", topicId: "agsci-4-1", conceptId: "diploid-incomplete-dominance-progeny",
+    section: "B", questionRef: "2012 OL Q13(a)",
+    questionText: "Explain each of the following terms: (i) Diploid. (ii) Incomplete dominance. (iii) Progeny testing.",
+    tariffModel: {"kind":"orderedSplit","notation":"8m + 6m+ 2m"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Diploid — Two sets of chromosomes/ two copies of each chromosome", marks: null, contextNote: "Shared scale 8m + 6m+ 2m: the first correct answers earn the higher award, whichever part they answer, so no part carries a mark of its own. Three answers, one for each term (the scheme numbers the third \"(iv)\"). Any one each." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Incomplete dominance — Two alleles equally dominant/ co-dominance/ phenotype a blend or any detailed example.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(iii) Progeny testing — Testing of bull’s offspring compared to other bull’s offspring (under similar feed and housing conditions)", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(a)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13bi", topicId: "agsci-4-1", conceptId: "pea-gametes",
+    section: "B", questionRef: "2012 OL Q13(b)(i)",
+    stem: "In pea seeds the allele for round seeds (R) is dominant over the allele for wrinkled seeds (r). A pea plant, homozygous for round seeds (RR), was crossed with a pea plant homozygous for wrinkled seeds (rr). The offspring (F1) were heterozygous. Copy the following into your answer book and complete the spaces. Genotypes of parents (RR) × (rr).",
+    questionText: "Complete: (i) Gametes ( ) × ( )",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gametes (R) x (r)", marks: 8, contextNote: "(2 x 4m)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13bii", topicId: "agsci-4-1", conceptId: "pea-f1-genotype",
+    section: "B", questionRef: "2012 OL Q13(b)(ii)",
+    stem: "In pea seeds the allele for round seeds (R) is dominant over the allele for wrinkled seeds (r). A pea plant, homozygous for round seeds (RR), was crossed with a pea plant homozygous for wrinkled seeds (rr). The offspring (F1) were heterozygous. Copy the following into your answer book and complete the spaces. Genotypes of parents (RR) × (rr).",
+    questionText: "Complete: (ii) Genotype of offspring (F1) ( )",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 genotype (Rr)", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13biii", topicId: "agsci-4-1", conceptId: "pea-f1-phenotype",
+    section: "B", questionRef: "2012 OL Q13(b)(iii)",
+    stem: "In pea seeds the allele for round seeds (R) is dominant over the allele for wrinkled seeds (r). A pea plant, homozygous for round seeds (RR), was crossed with a pea plant homozygous for wrinkled seeds (rr). The offspring (F1) were heterozygous. Copy the following into your answer book and complete the spaces. Genotypes of parents (RR) × (rr).",
+    questionText: "Complete: (iii) Phenotype of offspring (F1) ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 phenotype round", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(b)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13c", topicId: "agsci-4-1", conceptId: "wrinkled-test-cross",
+    section: "B", questionRef: "2012 OL Q13(c)",
+    stem: "In pea seeds the allele for round seeds (R) is dominant over the allele for wrinkled seeds (r). A pea plant, homozygous for round seeds (RR), was crossed with a pea plant homozygous for wrinkled seeds (rr). The offspring (F1) were heterozygous.",
+    questionText: "In your answer book show a cross between a wrinkled-seeded plant and an F1 plant from the answer above. Show: (i) Genotypes of parents ( ) × ( ) (ii) Gametes ( ) × ( ) ( ) (iii) Genotypes of offspring ( ) ( ) (iv) Phenotypes of offspring ___ ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Genotypes of parents (rr) x (Rr)", marks: 4, contextNote: "(2 x 2m)." },
+    { id: "r-2", kind: "point", verbatim: "Gametes (r) x (R) (r)", marks: 6, contextNote: "(3 x 2m)." },
+    { id: "r-3", kind: "point", verbatim: "F2 genotype (Rr) x (rr)", marks: 2, contextNote: "(2 x 1m)." },
+    { id: "r-4", kind: "point", verbatim: "F2 phenotypes round wrinkled", marks: 2, contextNote: "(2 x 1m)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(c)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2012, ["agricultural-science-3-6"]), kind: "question",
+    year: 2012, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2012 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2012-ol-q13d", topicId: "agsci-4-1", conceptId: "drosophila-in-genetics",
+    section: "B", questionRef: "2012 OL Q13(d)",
+    questionText: "Fruit flies (Drosophila) are widely used when studying genetics. Give three reasons for this.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Easy to keep / large no of offspring / new generation quickly / few chromosomes / mutations well documented / (larvae) have giant chromosomes / chromosomes easy to identify.", marks: 14, contextNote: "Any three (8m + 4m + 2m).", group: {"claimMax":3,"perOption":8,"options":["Easy to keep","large no of offspring","new generation quickly","few chromosomes","mutations well documented","(larvae) have giant chromosomes","chromosomes easy to identify."],"perOptionSteps":[8,4,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2012 Ordinary — Q13(d)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2012 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
 ];
