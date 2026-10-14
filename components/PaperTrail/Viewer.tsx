@@ -20,7 +20,7 @@
  */
 
 import '../launchpad/launchpad.css';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
@@ -62,8 +62,9 @@ import type { PaperTopicTags } from '../../types/paperTrailTopics';
 import type { PaperAnswerMap, PaperAnswerQuestion } from '../../types/paperTrail';
 import type { PDFDocumentProxy, PDFPageProxy } from 'pdfjs-dist';
 // pdf.js lazy singleton + region renderer — shared with the Topic Vault.
-import { loadPdfjs, type PdfjsModule } from './pdfjsLoader';
+import { loadPdfjs, openPdfDocument, type PdfjsModule } from './pdfjsLoader';
 import CropView from './CropView';
+import { captureZoomAnchor, restoreZoomAnchor, type ZoomAnchor } from './zoomAnchor';
 import MobileQuestionTools from './MobileQuestionTools';
 import { printedQuestionAnchors, questionsInDisplayOrder, schemeRegionFor } from './paperRegion';
 import { isAnswerMap, mergePaperAnchorMetadata } from './vaultResolve';
@@ -436,8 +437,8 @@ const Viewer: React.FC<ViewerProps> = ({
         );
         if (!mountedRef.current) return;
         const task = bytes
-          ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
-          : pdfjs.getDocument({ url: target.url });
+          ? openPdfDocument(pdfjs, { data: new Uint8Array(bytes) })
+          : openPdfDocument(pdfjs, { url: target.url });
         s.task = task;
         const pdf = await withTimeout(task.promise, LOAD_TIMEOUT_MS);
         if (!mountedRef.current) {
@@ -1055,10 +1056,24 @@ const Viewer: React.FC<ViewerProps> = ({
     });
   }, [focusQuestion, answerMap, focusAnchorMap, focusAnchorSettled, focusAnchorsUrl, session.state]);
 
+  // Zoom resizes every page, so note the point being read before it and
+  // scroll back to it once the new widths are laid out, before paint.
+  const zoomAnchor = useRef<ZoomAnchor | null>(null);
   const zoomBy = (dir: 1 | -1) => {
     const i = ZOOM_STEPS.indexOf(zoom);
-    setZoom(ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))]);
+    const next = ZOOM_STEPS[Math.min(ZOOM_STEPS.length - 1, Math.max(0, i + dir))];
+    if (next === zoom) return;
+    zoomAnchor.current = scrollerRef.current ? captureZoomAnchor(scrollerRef.current) : null;
+    setZoom(next);
   };
+  useLayoutEffect(() => {
+    const anchor = zoomAnchor.current;
+    zoomAnchor.current = null;
+    const el = scrollerRef.current;
+    if (!anchor || !el) return;
+    restoreZoomAnchor(el, anchor);
+    onScroll();
+  }, [zoom, onScroll]);
 
   const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || reveal);
   const schemeContent = reveal ? (

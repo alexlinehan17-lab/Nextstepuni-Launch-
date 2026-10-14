@@ -12,7 +12,7 @@
  */
 
 import type { PDFDocumentLoadingTask, PDFDocumentProxy } from 'pdfjs-dist';
-import { loadPdfjs } from './pdfjsLoader';
+import { loadPdfjs, openPdfDocument } from './pdfjsLoader';
 import { fetchPdfCached } from './pdfCache';
 
 // A normal Topic Atlas viewport can begin rendering eight year-cards at once
@@ -54,8 +54,8 @@ export function vaultPdf(url: string): Promise<PDFDocumentProxy> {
     const pdfjs = await loadPdfjs();
     const bytes = await fetchPdfCached(url);
     const task = bytes
-      ? pdfjs.getDocument({ data: new Uint8Array(bytes) })
-      : pdfjs.getDocument({ url });
+      ? openPdfDocument(pdfjs, { data: new Uint8Array(bytes) })
+      : openPdfDocument(pdfjs, { url });
     const doc = await task.promise;
     return { task, doc };
   });
