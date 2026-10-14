@@ -52,6 +52,8 @@ tmp/pdfs/pwc-pilot/
 tmp/pdfs/research-guide/
 tmp/pdfs/workshop-programme/
 tmp/feedback-qa/
+# Business corpus review previews, extracted pages and browser evidence.
+tmp/business-review/
 
 # transient topic-tag pipeline scratch (root)
 /_*.json

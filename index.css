@@ -1261,6 +1261,14 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: #FDEEDF;
 }
 
+/* Scheme links sit between rubric paragraphs, so they cannot use the
+   question-card footer's negative bottom margin. */
+.mb-source-material-trigger-inline {
+  width: 100%;
+  margin: 17px 0 14px;
+  border-bottom: 1px solid var(--mb-border);
+}
+
 .dark .mb-source-material-trigger:hover,
 .dark .mb-source-material-trigger:focus-visible {
   background: #38281F;

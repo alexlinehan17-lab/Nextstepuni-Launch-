@@ -37,6 +37,7 @@ import json
 import os
 import re
 import sys
+import subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paper_census import SUBJECTS, census_subject, key_label  # noqa: E402
@@ -168,6 +169,18 @@ def shipped_cards(subject):
             assert 'reviewed-card-correction' in by_id[cid]['qa']['gates'], f'Unaudited correction: {cid}'
         out = [(cid, by_id[cid]['questionRef'] if cid in by_id else ref) for cid, ref in out]
         out.extend((card['id'], card['questionRef']) for card in reviewed if card['id'] not in originals)
+    if subject == 'business':
+        supplement = os.path.join(DECKS, 'business', 'rubric-authored.json')
+        if os.path.exists(supplement):
+            reviewed = json.load(open(supplement, encoding='utf-8'))['cards']
+            by_id = dict(out)
+            by_id.update((card['id'], card['questionRef']) for card in reviewed)
+            route_path = os.path.join(DECKS, 'business', 'route-pools.json')
+            if os.path.exists(route_path):
+                routes = json.loads(subprocess.check_output(['node', os.path.join(
+                    ROOT, 'scripts/markbank/authoring/business_routes.mjs')], text=True))
+                by_id.update((card['id'], card['questionRef']) for card in routes)
+            out = list(by_id.items())
     return out
 
 
@@ -671,6 +684,10 @@ def content_hash(subject):
     if subject in ('physical-education', 'applied-maths'):
         for name in (('factory.ts', 'reviewed.json') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
+    if subject == 'business':
+        # Reviewed rubric cards and printed routes are data, not literal cards.
+        for name in ('rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 
@@ -711,7 +728,7 @@ def refs_hash(subject):
     cards = shipped_cards(subject)
     # Data-driven language decks may order their runtime cards independently
     # from the manifest. Coverage identity is the stable id/ref pair.
-    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting'):
+    if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'physical-education', 'applied-maths', 'accounting', 'business'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

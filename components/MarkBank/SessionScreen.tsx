@@ -77,6 +77,8 @@ import AppliedMathematicsRubricPanel, {
 } from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
 import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
+import BusinessRubricPanel from './BusinessRubricPanel';
+import { businessMarks, type BusinessScoreId } from './businessRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
@@ -297,7 +299,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | BusinessScoreId | typeof accountingScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -419,6 +421,7 @@ export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
   if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
   if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
+  if (card.rubric.system === 'business') return businessMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
@@ -1647,6 +1650,11 @@ const RubricPanel: React.FC<{
     }} score={props.scores[accountingScoreId] ?? 0}
       onScore={marks => props.onScore(accountingScoreId, marks)} />;
   }
+  if (props.card.rubric.system === 'business') {
+    return <BusinessRubricPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'business' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -2376,7 +2384,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
       : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
       : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
-      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
+      : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 

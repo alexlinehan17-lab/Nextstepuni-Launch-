@@ -13,6 +13,7 @@ import businessReference from '../data/examTopics/business.json';
 import businessEvidence from '../data/examTopics/business-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/business-curriculum-crosswalk.json';
 import reviewedQuestions from '../data/examTopics/business-reviewed-question-topics.json';
+import sourceReviews from '../data/examTopics/business-source-reviewed-topics.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import { SUBJECTS as MARK_BANK_SUBJECTS } from '../components/MarkBank/deck';
 import {
@@ -254,7 +255,7 @@ describe('Business exam-topic registry', () => {
         throw new Error(`Unexpected retained Business card level: ${card.level}`);
       }
       for (const lang of ['ev', 'iv'] as const) {
-        expect(examTopicIdsForQuestion(
+        const actual = examTopicIdsForQuestion(
           'business',
           card.level,
           card.year,
@@ -262,7 +263,25 @@ describe('Business exam-topic registry', () => {
           card.questionNumber,
           card.paperKey,
           lang,
-        )).toEqual(card.topicIds);
+        );
+        const correction = sourceReviews.questions.find(review => review.year === card.year
+          && review.level === card.level && review.paperKey === card.paperKey
+          && review.n === String(card.questionNumber));
+        if (correction) {
+          // Later direct SEC review can correct provider omissions without
+          // rewriting the captured evidence or removing the question itself.
+          // The review covers the examined 1999 syllabus; redeveloped-course
+          // crosswalk joins stay attached and are compared elsewhere.
+          expect([...new Set(actual.flatMap(curriculumNodeIdsForExamTopic))]
+            .filter(id => !id.startsWith('business-2027-')).sort())
+            .toEqual([...new Set([...correction.canonicalNodeIds,
+              // An ABQ review also files the paper under its printed ABQ unit group.
+              ...('abqTopicLabel' in correction
+                ? actual.filter(id => id.includes('-abq-')).flatMap(curriculumNodeIdsForExamTopic) : [])])].sort());
+          expect(correction.reason.length).toBeGreaterThan(0);
+        } else {
+          expect(actual).toEqual(card.topicIds);
+        }
       }
     }
     expect(businessEvidence.retainedLocalCards.every(card => (

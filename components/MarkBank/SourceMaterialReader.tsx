@@ -32,6 +32,8 @@ interface SourceMaterialReaderProps {
   year: number;
   paperFileid: string;
   documentKind?: 'paper' | 'scheme';
+  /** The trigger sits between paragraphs rather than at a card's foot. */
+  inline?: boolean;
 }
 
 const withPdfExtension = (fileid: string) =>
@@ -63,7 +65,7 @@ const CloseIcon = () => (
 );
 
 const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
-  source, subjectId, year, paperFileid, documentKind = 'paper',
+  source, subjectId, year, paperFileid, documentKind = 'paper', inline = false,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
   const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
@@ -377,7 +379,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   return (
     <>
-      <button type="button" ref={triggerRef} className="mb-source-material-trigger" onClick={show}>
+      <button type="button" ref={triggerRef}
+        className={`mb-source-material-trigger${inline ? ' mb-source-material-trigger-inline' : ''}`}
+        onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
           <span>{isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>

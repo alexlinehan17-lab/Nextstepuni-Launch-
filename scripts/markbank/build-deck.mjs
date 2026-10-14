@@ -151,7 +151,7 @@ const SUBJECTS = {
     /* The 1999 syllabus, still examined. Named by year because it is verified:
      * every paper in the corpus (2021-2025) sits on it. */
     specVersion: 'lc-business-1999',
-    specNote: 'Cards are tagged to the units of the REDEVELOPED Business specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
+    specNote: 'Cards are tagged to the 1999 Business syllabus examined in these papers.\n * Source-reviewed rubric cards resolve their specification by examination year.',
     figureDir: 'public/exam-figures/business',
     blocked: new Set(),
   },
@@ -870,6 +870,22 @@ if (SUBJECT_ID === 'physical-education') {
   process.exit(0);
 }
 
+// A normal Business build fails closed while a raw-paper selection remains
+// unclassified. In-progress local authoring is explicit and never a completion
+// certificate; stale reviews and changed source hashes cannot be bypassed.
+if (SUBJECT_ID === 'business') {
+  try {
+    execFileSync('python3', [resolve(ROOT, 'scripts/markbank/authoring/business_corpus_inventory.py'),
+      '--check-selections'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  } catch (error) {
+    const message = String(error.stdout || error.stderr || error.message).trim();
+    if (error.status !== 3 || !process.argv.includes('--allow-incomplete-business-review')) {
+      throw new Error(`Business source review blocks generation: ${message}`);
+    }
+    process.stderr.write(`DRAFT BUSINESS BUILD — source review is incomplete.\n${message}\n`);
+  }
+}
+
 /**
  * Reviewed repairs that must survive regeneration of the authored JSON.
  *
@@ -1472,7 +1488,7 @@ for (const c of cards) {
     corpusSubjectFor(SUBJECT_ID, c.questionRef), year, level, paperSection);
   if (!fileid) unresolvedPapers++;
 
-  out.push({ level, code: `  {
+  out.push({ id: c.id, level, code: `  {
     ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
@@ -1523,6 +1539,38 @@ if (unresolvedPapers) {
 const OUT_DIR = resolve(ROOT, 'components/MarkBank/cards', SUBJECT_ID);
 mkdirSync(OUT_DIR, { recursive: true });
 
+// Business ABQs have independently published Name/Explain/Link allocations.
+// Existing IDs can move to the rubric renderer only with a source-reviewed
+// correction that pins their original wording and tariff. All other point
+// cards remain intact.
+const businessRubrics = SUBJECT_ID === 'business'
+  ? [...JSON.parse(readFileSync(resolve(OUT_DIR, 'rubric-authored.json'), 'utf8')).cards,
+    ...JSON.parse(execFileSync('node', [resolve(ROOT, 'scripts/markbank/authoring/business_routes.mjs')],
+      { cwd: ROOT, encoding: 'utf8' }))]
+  : [];
+if (businessRubrics.length) {
+  const ids = new Set();
+  for (const card of businessRubrics) {
+    if (ids.has(card.id)) throw new Error(`Duplicate Business rubric card ${card.id}`);
+    ids.add(card.id);
+    const original = rawCards.find(item => item.id === card.id);
+    if (original && (!card.correction?.reason
+      || card.correction.originalQuestionText !== original.questionText
+      || card.correction.originalTotalMarks !== original.totalMarks
+      || card.totalMarks !== original.totalMarks)) {
+      throw new Error(`Business rubric ${card.id} needs a verified correction for its existing ID`);
+    }
+    if (!original && card.correction) throw new Error(`Stale Business correction ${card.id}`);
+    if (resolvePaperFileid('business', card.year, card.level, card.section) !== card.paperFileid) {
+      throw new Error(`Business rubric ${card.id} does not resolve to its Paper Trail document`);
+    }
+    // Reviewed rubric cards bypass repairGlyphs, so refuse any glyph a broken
+    // subset font left in them rather than ship "se[U+01AB]ng" for "setting".
+    const residue = mangledText(card);
+    if (residue) throw new Error(`Business rubric ${card.id} carries ${residue}`);
+  }
+}
+
 const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1542,7 +1590,8 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';" : ''}
+${SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
+  : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : ''}
 ${cards.length ? `
 const base = {
   source: 'sec' as const,
@@ -1553,7 +1602,7 @@ const base = {
 ` : ''}
 export const CARDS: SecCard[] = ${SUBJECT_ID === 'applied-maths' ? 'withReviewedCards(' : ''}[
 ${cards.join('\n')}
-]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
+${businessRubrics.length ? `  ...businessRubricCards(${q(level)}),\n` : ''}]${SUBJECT_ID === 'applied-maths' ? `, '${level}')` : ''};
 `;
 
 /* A level gets a module when the subject HAS that level, never as a matter of
@@ -1562,16 +1611,18 @@ ${cards.join('\n')}
  * always rewritten, so a subject that loses every card at a level still ends
  * up with an honestly empty module rather than a stale one. */
 const sizes = {};
+const rubricIds = new Set(businessRubrics.map(card => card.id));
 for (const level of LEVELS) {
-  const levelCards = out.filter(c => c.level === level).map(c => c.code);
+  const levelCards = out.filter(c => c.level === level && !rubricIds.has(c.id)).map(c => c.code);
+  const levelRubrics = businessRubrics.filter(card => card.level === level).length;
   const path = resolve(OUT_DIR, `${level}.ts`);
-  if (!levelCards.length && !existsSync(path)) continue;
+  if (!levelCards.length && !levelRubrics && !existsSync(path)) continue;
   writeFileSync(path, moduleFor(level, levelCards));
   const reviewedIds = SUBJECT_ID === 'applied-maths'
     ? JSON.parse(readFileSync(resolve(OUT_DIR, 'reviewed.json'), 'utf8')).filter(card => card.level === level).map(card => card.id) : [];
   const originalIds = levelCards.map(code => code.match(/^    id: "([^"]+)"/m)?.[1]).filter(Boolean);
-  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length;
-  process.stderr.write(`  ${level}: ${levelCards.length} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
+  sizes[level] = SUBJECT_ID === 'applied-maths' ? new Set([...originalIds, ...reviewedIds]).size : levelCards.length + levelRubrics;
+  process.stderr.write(`  ${level}: ${sizes[level]} cards -> components/MarkBank/cards/${SUBJECT_ID}/${level}.ts\n`);
 }
 
 /**

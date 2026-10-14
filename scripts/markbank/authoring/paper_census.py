@@ -48,6 +48,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import paper as PP  # noqa: E402
+from strip_pages import strip_cut, strip_lines  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -847,6 +848,90 @@ def census_merged(subject, year, level, component=None):
 SECTION_STEMS = {}
 
 
+# A short-question head printed over an empty row, the next head below it in
+# the same PDF block: '2.' then blank lines then '3. Choose ...'. The 2019
+# Ordinary paper sets Q2's ask in a column beside its two phone images, so
+# the ask is a separate block and sorts after Q3's opening line. The second
+# head must open an ask on its own line: two numbered answer rows ('1.' over
+# '2.', 2022 OL Q6) are not heads.
+RUN_IN_HEAD = re.compile(r'^\s*(\d{1,2})\.\s*\n(?:\s*\n)+[^\S\n]*(\d{1,2})\.[^\S\n]*[A-Za-z]')
+
+
+def _business_blocks(path):
+    """paper._blocks for Business, with two repairs: a run-in head, and a
+    page cut into overlapping vertical strips (strip_pages.py), which is read
+    as its rebuilt lines, one block per printed line.
+
+    When a block opens with a bare head 'N.' whose next printed line is the
+    head 'N+1.', the blocks that start between those two lines are N's ask
+    (a column beside a picture). They are moved to sit after 'N.', before
+    'N+1.', so the walker files their parts under N rather than N+1. Every
+    other page reads exactly as paper._blocks reads it.
+    """
+    with PP.pymupdf.open(path) as doc:
+        for page in doc:
+            if strip_cut(page):
+                for line in strip_lines(page):
+                    if line and not PP.PAGE_FURNITURE.match(line):
+                        yield line
+                continue
+            blocks = sorted(page.get_text('blocks'), key=lambda b: (round(b[1], 1), b[0]))
+            i = 0
+            while i < len(blocks):
+                b = blocks[i]
+                m = RUN_IN_HEAD.match(b[4])
+                if not m or int(m.group(2)) != int(m.group(1)) + 1:
+                    i += 1
+                    continue
+                cut = next(line['bbox'][1] for blk in page.get_text('dict')['blocks']
+                           if blk['number'] == b[5] for line in blk.get('lines', [])
+                           if ''.join(s['text'] for s in line['spans']).strip().startswith(m.group(2) + '.'))
+                column = [x for x in blocks if x is not b and b[1] <= x[1] < cut]
+                keep = lambda xs: [x for x in xs if not any(x is c for c in column)]
+                head = (*b[:4], b[4][:m.start(2)], *b[5:])
+                rest = (*b[:4], b[4][m.start(2):], *b[5:])
+                blocks = keep(blocks[:i]) + [head] + column + [rest] + keep(blocks[i + 1:])
+                i = blocks.index(rest)
+            for b in blocks:
+                for chunk in _paragraph_heads(b[4]):
+                    for text in PP._split_own_line_markers(chunk):
+                        if text and not PP.PAGE_FURNITURE.match(text):
+                            yield text
+
+
+# A head that opens its own paragraph inside a block: '...Surplus Deficit' then
+# a blank line then '10. Column 1 is a list...' (2014 OL). Joined into one line
+# the head follows a bare word, so the inline-head splitter (which wants a full
+# stop or bracket before it) never sees it and the question vanished. A head
+# here is a number, a full stop and a capital on a line of its own after a
+# blank line; lone '1.' answer rows carry no text and stay put.
+PARAGRAPH_HEAD = re.compile(r'^[ \t\xa0]*\d{1,2}\.[ \t\xa0]+[A-Z(]')
+
+
+BARE_HEAD = re.compile(r'^[ \t\xa0]*\d{1,2}\.[ \t\xa0]*$')
+
+
+def _paragraph_heads(raw):
+    # The head may also sit alone on its line with the ask on the next one:
+    # 'USC' then blank lines then '2.' then 'Name levels 3, 4, and 5...' (2013
+    # OL). A bare number counts only when the next line with text opens with
+    # a capital or bracket, so a column of '1.' '2.' answer rows does not.
+    lines = raw.split('\n')
+    chunks, cur, blank = [], [], False
+    for k, line in enumerate(lines):
+        bare = False
+        if BARE_HEAD.match(line):
+            ahead = next((x for x in lines[k + 1:] if x.strip()), '')
+            bare = bool(re.match(r'^[ \t\xa0]*[A-Z(]', ahead))
+        if blank and (PARAGRAPH_HEAD.match(line) or bare) and any(x.strip() for x in cur):
+            chunks.append('\n'.join(cur))
+            cur = []
+        cur.append(line)
+        blank = not line.strip()
+    chunks.append('\n'.join(cur))
+    return chunks
+
+
 def census_sections(subject, year, level):
     """The section-restart walker: Business and Home Economics.
 
@@ -882,7 +967,8 @@ def census_sections(subject, year, level):
         # the cover of the Section B and C booklet -- "Coimisiun na Scruduithe
         # Stait ... 136 marks Instructions" -- through the continuation rule.
         blocks.append(FILE_BREAK)
-        for block in PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None):
+        for block in (_business_blocks(path) if subject == 'business' else
+                      PP._blocks(path, subject=subject if subject in PP.MANGLED_PAPERS or subject in PP.GUTTER_MARKERS else None)):
             # The answerbook's own back matter -- its instructions, its ruled
             # pages, the image acknowledgements and the copyright notice --
             # follows the last question in the SAME booklet, and the walker
@@ -893,10 +979,35 @@ def census_sections(subject, year, level):
             # questions come after it.
             if BACK_MATTER.match(block):
                 break
-            for text in PP.INLINE_QHEAD.split(block):
+            if subject == 'business':
+                # A part marker can extract with a stray space, '(C )' in the
+                # 2026 OL Section 2 paper, which hid its (C) under (B).
+                block = re.sub(r'\(([A-H]) \)', r'(\1)', block)
+            # Business short questions can share a PDF block with the previous
+            # question's underscore answer rules. Those rules have no sentence
+            # punctuation, so the ordinary inline-head splitter misses Q2/Q3
+            # and later numbered asks in the 2013 paper. A short question can
+            # also follow the previous one's figures ('... Current Liabilities
+            # €136,000 15. In the following table ...', 2026 OL; likewise
+            # 2015 OL Q15 and 2017 OL Q7), again with no punctuation between.
+            chunks = (re.split(r'(?<=_)\s+(?=\d{1,2}\.\s+)'
+                              r'|\s+(?=\d{1,2}\.\s+\([a-z]\)\s+[A-Z])'
+                              r'|(?<=\d)\s+(?=\d{1,2}\.\s+[A-Z][a-z]+\s)', block)
+                      if subject == 'business' else [block])
+            for text in (part for chunk in chunks for part in PP.INLINE_QHEAD.split(chunk)):
+                if subject == 'business':
+                    # Roman labels beside empty ruled answer slots are not
+                    # independent printed asks. Keep actual roman prose.
+                    text = re.sub(r'\((?:i{1,3}|iv|v)\)\s*(?=_{3,})', '', text)
+                    text = re.sub(r'_{3,}', '', text)
                 # Capital markers mid-block: Business glues "(B) Outline..."
-                # onto the tail of (A)'s prose.
+                # onto the tail of (A)'s prose. For Business, leave lowercase
+                # markers to INLINE_MARKER below, after preserving a leading
+                # "1. (a)"; splitting that early loses Q1 before a question is
+                # active. A capital marker at the end of a block can introduce
+                # a separate source box, and an opening quotation is prose too.
                 for text in re.split(
+                        r'\s(?=\([A-H]\)(?:\s+[A-Z(0-9\u201c\u2018\x27"]|$))' if subject == 'business' else
                         r'\s(?=\((?:[A-H]|[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
                         r'\s+[A-Z(0-9\u201c"])', text):
                     # Home Economics Section C glues its elective sub-heads:
@@ -936,6 +1047,26 @@ def census_sections(subject, year, level):
                             for i, piece in enumerate(pieces):
                                 blocks.append((prefix + piece) if i == 0 else piece)
 
+    # Numbered True/False statements can be complete sentences, so neither
+    # the short-option nor matching-column guards below recognise them.
+    # Keep a consecutive list beginning at 1 after an explicit True/False
+    # instruction as content of its question (2016 HL Q3), not new heads.
+    statement_rows = set()
+    if subject == 'business':
+        for i, text in enumerate(blocks):
+            if not re.search(r'\btrue\s+or\s+false\b', text, re.I):
+                continue
+            rows = []
+            for j in range(i + 1, len(blocks)):
+                # A real next question can continue the numeric sequence
+                # but open with a part marker, e.g. 2026 HL "6. (i)".
+                row = re.match(r'^(\d{1,2})\.\s+[A-Z]', blocks[j])
+                if not row or int(row.group(1)) != len(rows) + 1:
+                    break
+                rows.append(j)
+            if len(rows) >= 2:
+                statement_rows.update(rows)
+
     # A lone number beside other lone numbers is a matching-table row or an
     # answerbook rule, not a head — the same neighbour argument paper.py makes
     # for axis labels. 2022 HL Business lost Q2-Q5 to a matching table.
@@ -955,6 +1086,27 @@ def census_sections(subject, year, level):
     scaffold = {i for i in lone
                 if any(j in lone and abs(_value(i) - _value(j)) <= 1
                        for j in (i - 1, i + 1))}
+    if subject == 'business':
+        # A matching table can extract a numbered term and a lettered
+        # explanation in the same block. Its long prose is not a sequence of
+        # new questions (2014 Section 1 Q2 previously swallowed Q3–Q5).
+        matching_rows = {i for i, t in enumerate(blocks) if re.match(
+            r'^\d{1,2}\.\s+[^.?!]{1,60}\s+[A-Z]\.\s+', t)}
+        scaffold.update(i for i in matching_rows
+                        if i - 1 in matching_rows or i + 1 in matching_rows)
+        # The table's last term can extract alone, its explanation in the
+        # next block: '4. Court of Auditors D. Is responsible...' then
+        # '5. Council of the European Union (Council of Ministers)' then
+        # 'E. Is responsible...' (2010 HL Q4). Read as a head, that row became
+        # Question 5 and the real '5. (a)' lost its part. A bare numbered
+        # term between a matching row (or a lettered explanation) and a
+        # lettered explanation is a row of the table, not a question.
+        lettered = re.compile(r'^[A-Z]\.\s')
+        for i, t in enumerate(blocks):
+            if 0 < i < len(blocks) - 1 and re.fullmatch(r'\d{1,2}\.\s+[^.?!]{1,80}', t.strip()) \
+                    and (i - 1 in matching_rows or lettered.match(blocks[i - 1])) \
+                    and lettered.match(blocks[i + 1]):
+                scaffold.add(i)
     # A run of short numbered lines is an option list inside a question
     # ('1. Merger  2. Strategic alliance  ...'), not a run of question heads —
     # walking it re-keyed four Business sittings' Section 1.
@@ -976,6 +1128,9 @@ def census_sections(subject, year, level):
         if text is FILE_BREAK:
             q, letter, roman = None, None, None
             continue
+        if index in statement_rows and q is not None:
+            stems.setdefault((section, q, letter), []).append(text)
+            continue
         if index in scaffold:
             continue
         # A marker-only block — "(B)" alone, its content following — is a real
@@ -985,9 +1140,13 @@ def census_sections(subject, year, level):
         # every (B).
         # A section header is a heading, not a mention: anchored at the block
         # start, never containing a second "Section" (booklet covers read
-        # "Section B and Section C"), and short or marks-bearing.
+        # "Section B and Section C"), and short or marks-bearing. A real
+        # Business heading can repeat its own section in the answering
+        # instructions, so there only a DIFFERENT section disqualifies it.
         sh = re.match(r'(?:SECTION|Section)\s+([A-C]|\d{1,2})\b(.{0,160})', text)
-        if sh and 'Section' not in sh.group(2) \
+        if sh and (all(other == sh.group(1) for other in re.findall(
+                r'\bSection\s+([A-C]|\d{1,2})\b', sh.group(2), re.I))
+                   if subject == 'business' else 'Section' not in sh.group(2)) \
                 and (len(text) < 200 or 'marks' in sh.group(2).lower()):
             # Two guards, both earned. Sections only move FORWARD — the
             # answerbook repeats earlier sections' names and re-opening one
@@ -1004,12 +1163,14 @@ def census_sections(subject, year, level):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
-            if re.search(r'Applied\s+Business\s+Question', sh.group(2)):
+            if re.search(r'Applied\s+Business\s+Question', sh.group(2),
+                         re.I if subject == 'business' else 0):
                 q = 'ABQ'
             continue
         # The Applied Business Question: compulsory, 80 marks, and headless —
         # it never says "Question N", so it needs its own key.
-        if re.match(r'Applied\s+Business\s+Question', text):
+        if re.match(r'Applied\s+Business\s+Question', text,
+                    re.I if subject == 'business' else 0):
             q, letter, roman = 'ABQ', None, None
             continue
         # Technology: Section C's five options are headed "Option N - Name",
@@ -1044,11 +1205,23 @@ def census_sections(subject, year, level):
             if rest:
                 parts[key].append(rest)
             continue
+        if subject == 'business':
+            # The 2019 Ordinary paper (and its single-booklet predecessors)
+            # sets its long-question heads in capitals: 'QUESTION 1 Read the
+            # information supplied...'. Unread, its whole Section 2 vanished
+            # from the census and every card citing it read as an orphan.
+            text = re.sub(r'^QUESTION\s+(\d{1,2})\b', r'Question \1', text)
         m = PP.QHEAD.match(text)
         if not m:
             un = PP.RUBRIC_HEAD.sub('', text, count=1)
             if un != text:
                 text, m = un, PP.QHEAD.match(un)
+                # The 2015 Ordinary rubric runs into the next heading: '...from
+                # either Part 1 or Part 2. PART 1'. Stripping the rubric leaves
+                # '2. PART 1', which read as Question 2 and filed all of Section 2
+                # Q1 under Q2. A part heading is not a question head.
+                if subject == 'business' and m and re.match(r'\d{1,2}\.\s+PART\s+\d\b', un):
+                    m = None
         if not m and isinstance(q, int):
             # Business Section 1 sets some heads as a bare '6.' in a block of
             # its own, the ask following. Only the next number due, never one
@@ -1059,6 +1232,20 @@ def census_sections(subject, year, level):
             ln = re.match(r'^(\d{1,2})\.?$', text)
             if ln and int(ln.group(1)) == q + 1:
                 ahead = ' '.join(blocks[index + 1:index + 5])
+                # A footer page number after the last question is followed
+                # by the booklet's back matter, not an ask: the 2022 OL
+                # Section 2 page-10 footer opened a phantom Q10 whose 'text'
+                # was the back cover's date line.
+                if subject == 'business' and re.search(
+                        r'There is no examination material|Copyright notice'
+                        r'|\b(?:Mon|Tues|Wednes|Thurs|Fri)day\s+\d{1,2}\s+\w+\s+(?:Morning|Afternoon)', ahead):
+                    continue
+                # A figure label just above the real head: the 2013 OL Maslow
+                # pyramid's '3.' sits directly before '3. Outline three
+                # reasons...', which would then read as stem, not head.
+                if subject == 'business' and index + 1 < len(blocks) \
+                        and re.match(rf'{q + 1}\.\s', blocks[index + 1]):
+                    continue
                 prose = re.sub(
                     r'\b(Question|Part|Start each question on a new page'
                     r'|SECTION|Section)\b', '', ahead)
@@ -1107,6 +1294,16 @@ def census_sections(subject, year, level):
         if PP.FURNITURE.match(text):
             continue
         stems.setdefault((section, q, letter), []).append(text)
+
+    # Business sometimes puts the capital part marker before a source box
+    # in a separate PDF block. Its prose accumulated as a stem, so retain it
+    # at that already-observed part. Do not manufacture parts from stems, or
+    # promote empty roman answer lines into separately marked questions.
+    if subject == 'business':
+        for (section_, q_, letter_), lines in stems.items():
+            key = (section_, q_, letter_, None)
+            if letter_ is not None and key in parts:
+                parts[key].extend(lines)
 
     # Drop keys that never accumulated text (unlabelled blanks), THEN adopt
     # whole questions — the order matters, because a phantom part suppresses

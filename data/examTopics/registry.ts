@@ -23,6 +23,7 @@ import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curric
 import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
 import businessRuntimeJson from './business-runtime.json';
+import businessSourceReviewedTopics from './business-source-reviewed-topics.json';
 import chemistryRuntimeJson from './chemistry-runtime.json';
 import classicalStudiesAuditJson from './classical-studies.json';
 import computerScienceRuntimeJson from './computer-science-runtime.json';
@@ -3794,6 +3795,29 @@ for (const [levelCode, yearOffset, paperKeyCode, n, topicIndexes] of (
     ),
     topicIndexes.map(topicIndex => businessTopicIdentity(topicIndex).id),
   );
+}
+
+// Direct SEC paper/scheme review supersedes ambiguous provider heading joins.
+// Resolve the reviewed canonical IDs through the existing taxonomy; this does
+// not create a separate Business curriculum or alter any question identity.
+for (const review of businessSourceReviewedTopics.questions) {
+  // A canonical node selects the topic that IS that node. The Ordinary
+  // "What do these initials stand for?" format topic spans every node, so a
+  // partial overlap must not file a reviewed question under it.
+  const topics = businessTopics.filter(topic => topic.level === review.level
+    && topic.course === 'old'
+    && (topic.label === review.abqTopicLabel
+      || topic.curriculumNodeIds.every(id => review.canonicalNodeIds.includes(id))));
+  if ((review.abqTopicLabel && !topics.some(topic => topic.label === review.abqTopicLabel))
+    || review.canonicalNodeIds.some(id => !topics.some(topic => topic.curriculumNodeIds.includes(id)))) {
+    throw new Error(`Business source review has an unresolved topic: ${review.year} ${review.n}`);
+  }
+  const key = questionKey('business', review.level as PaperLevel, review.year, 'main', review.n, review.paperKey);
+  // The review covers the examined 1999 syllabus only. Provider joins to the
+  // redeveloped course are a separate crosswalk and stay attached unchanged.
+  const redeveloped = (QUESTION_TOPICS.get(key) ?? []).filter(id =>
+    businessTopics.some(topic => topic.id === id && topic.course !== 'old'));
+  QUESTION_TOPICS.set(key, [...topics.map(topic => topic.id), ...redeveloped]);
 }
 
 // Construction Studies uses the exact audited joins for both official-

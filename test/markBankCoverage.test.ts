@@ -42,6 +42,8 @@ import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-educ
 
 import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -65,6 +67,12 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   }
   if (subject === 'politics-and-society') {
     return [...POLITICS_HIGHER, ...POLITICS_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'business') {
+    // The runtime deck appends source-reviewed rubric cards and expanded
+    // printed routes to the literal cards; reconcile.py counts the same set.
+    return [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
@@ -164,7 +172,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -224,6 +232,13 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'physical-education' || subject === 'applied-maths') {
       for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'business') {
+      // Same files and order as reconcile.py's content hash.
+      for (const name of ['rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

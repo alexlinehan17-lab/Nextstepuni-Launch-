@@ -18,9 +18,12 @@ export function libraryYearsLabel(years: number[]): string {
 /** Source-reviewed cards may contain tasks from several canonical topics. */
 export function libraryTopicIds(card: SecCard, current?: CanonicalCurriculumSpecification): string[] {
   const specification = resolveCurriculumSpecification(card.subjectId, card.year);
-  const original = (specification && findCanonicalTopic(specification, card.topicId)?.id) ?? card.topicId;
-  const cohort = current && (findCanonicalTopic(current, card.topicId) ?? findCanonicalTopic(current, original));
-  return [...new Set([original, ...(cohort ? [cohort.id] : [])])];
+  // A card filed under more than one topic is listed under each, primary first.
+  return [...new Set([card.topicId, ...(card.additionalTopicIds ?? [])].flatMap(topicId => {
+    const original = (specification && findCanonicalTopic(specification, topicId)?.id) ?? topicId;
+    const cohort = current && (findCanonicalTopic(current, topicId) ?? findCanonicalTopic(current, original));
+    return [original, ...(cohort ? [cohort.id] : [])];
+  }))];
 }
 
 /** Compatibility for callers that need one representative topic. */
