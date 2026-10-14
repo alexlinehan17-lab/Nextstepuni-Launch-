@@ -39,7 +39,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     }
     expect(census.status).toBe('in-progress');
     expect(census.editionStatus).toHaveLength(68);
-    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(39);
+    expect(census.editionStatus.filter(edition => edition.independentCensus === 'open')).toHaveLength(38);
     expect(census.questionMarkChecks.filter(check => check.sourceException)).toHaveLength(2);
   });
 
@@ -391,7 +391,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('records edition-specific defects beside the unchanged original schemes', () => {
-    expect(review.paperReviews).toHaveLength(32);
+    expect(review.paperReviews).toHaveLength(33);
     for (const paper of review.paperReviews) {
       expect(paper.wholePaperVisualReview).toBe('reviewed');
       expect(paper.selectionDirectives.every(cue => cue.classification !== 'pending')).toBe(true);
@@ -1242,6 +1242,31 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
     for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([check.question === 'Q1' ? 60 : 48]);
   });
 
+  it('authors every 2015 Ordinary task from the paper and scheme', () => {
+    const year = ordinary.filter(card => card.year === 2015);
+    expect(year).toHaveLength(63);
+    const tasks = review.tasks.filter(task => task.questionRef.startsWith('2015 OL'));
+    expect(tasks).toHaveLength(63);
+    expect(tasks.every(task => (task as { originalCard?: string }).originalCard === 'added')).toBe(true);
+    for (const card of year) {
+      expect(tariffReconciles(card), card.id).toBe(true);
+      const specification = resolveCurriculumSpecification(card.subjectId, card.year)!;
+      expect(card.specificationId).toBe(specification.id);
+      for (const id of card.curriculumNodeIds!) expect(findCanonicalTopic(specification, id), `${card.id} ${id}`).toBeDefined();
+    }
+    // Section One questions carry the scheme's own row marks; Q4's four cereals are answer routes.
+    for (const key of ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7']) expect(get(`agsci-2015-ol-${key}`).totalMarks, key).toBe(20);
+    expect(get('agsci-2015-ol-q4').answerVariants?.map(variant => variant.id)).toEqual(['barley', 'maize', 'oats', 'wheat']);
+    expect(get('agsci-2015-ol-q8c').answerVariants).toHaveLength(2);
+    expect(get('agsci-2015-ol-q10bii').answerVariants).toHaveLength(3);
+    expect(get('agsci-2015-ol-q3').rows[0].group?.options.map(option => option.slice(-1)).join('')).toBe('FTTTFTTFTF');
+    for (const [key, letters] of [['q4', 'ABCD'], ['q5', 'ABCD'], ['q11aii', 'BCD'], ['q13ci', 'AB']] as const)
+      expect((get(`agsci-2015-ol-${key}`) as { labelKey?: Array<{ letter: string }> }).labelKey?.map(label => label.letter).join(''), key).toBe(letters);
+    const units = census.questionMarkChecks.filter(check => check.year === 2015 && check.level === 'ordinary');
+    expect(units).toHaveLength(13);
+    for (const check of units) expect(check.candidateTotalsFromScheme, check.question).toEqual([Number(check.question.slice(1)) <= 7 ? 20 : 60]);
+  });
+
   it('refuses Agricultural Science route siblings that differ only in which printed items were chosen', () => {
     // A printed any-N-of-M choice is ONE practice card (coordinator rule,
     // 2026-10-12). Siblings sharing a question address are allowed only for
@@ -1327,7 +1352,7 @@ describe('Agricultural Science reviewed additions (full audit still in progress)
   });
 
   it('makes each reviewed Mark Bank task directly browsable in Atlas under its reviewed topic', () => {
-    expect(atlas.markBankCards).toHaveLength(2109);
+    expect(atlas.markBankCards).toHaveLength(2172);
     // Indexed once: the join list grows by a paper's worth of cards at a time, and a
     // per-card scan of every task, sibling list and answer map made this test quadratic.
     const taskFor = new Map<string, (typeof review.tasks)[number]>();

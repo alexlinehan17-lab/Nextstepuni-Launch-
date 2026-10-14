@@ -1522,79 +1522,89 @@
         "sha256": "b39d01b60b7f6bfb66d583e5f0f297b49ec018e1860ce7e8d52f5715b638eefa",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
-      "wholePaperVisualReview": "pending",
-      "schemeBoundaryReview": "pending",
+      "authoredEnglishCardsForSitting": 63,
+      "wholePaperVisualReview": "reviewed",
+      "schemeBoundaryReview": "reviewed",
       "selectionDirectives": [
         {
           "id": "3639198ec73bd0a5",
           "page": 2,
           "cue": "Answer six",
           "context": "_____________ Instructions Write your examination number in the space provided on page 1. Answer six questions. Each question carries 20 marks. Write your answers in the spaces provided. Keep your answers short. ________________________________________________________________________________ Question 1. A list of plant parts is ",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section One: six of seven independent 20-mark questions; every question is retained."
         },
         {
           "id": "9886f1326401f117",
           "page": 4,
           "cue": "one of",
           "context": "ng cereal crops commonly grown in Ireland are shown below. A B C D In the table, identify one of the crops shown above and complete the table in relation to the crop you have chosen. Crop A, B, C or D Name of crop Time of sowing Use of crop Seeding rate (kg/ha) Yield of crop (t/ha) (20 marks)",
-          "classification": "pending"
+          "classification": "closed",
+          "reason": "Q4: one of the four pictured cereals, kept as four answer routes on one card."
         },
         {
           "id": "1693adb03d028dd0",
           "page": 8,
           "cue": "any three",
           "context": "____________ Instructions Write your answers to Section Two into your answer book. Answer any three questions. Each question carries 60 marks. ______________________________________________________________________________________ Question 8. The two most common methods of grass conservation used in Ireland are silage production",
-          "classification": "pending"
+          "classification": "exam-selection",
+          "reason": "Section Two: three of six independent 60-mark questions; every question is retained."
         },
         {
           "id": "6a67777492f6d3da",
           "page": 9,
           "cue": "any three",
           "context": "nt particles of weathered rock. (i) State three methods of physical weathering. (ii) Name any three soil particle types. (b) (i) Explain the term soil texture. (ii) Describe an experiment to determine the texture of a soil sample. (c) Organisms such as the one shown below are of great benefit to the soil. (i) Name the organism ",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q10(a)(ii): any three soil particle types from the scheme's four; a marking menu."
         },
         {
           "id": "1c2a4c271a6052fb",
           "page": 11,
           "cue": "any three",
           "context": "12. (a) (i) Draw a simple diagram of a plant cell as seen under a light microscope. Label any three parts, other than chromosomes. (ii) Where in the cell are the chromosomes found? (iii) Name the process by which an animal or plant cell divides into two identical cells. (b) In wheat, the allele for red kernel (R) is dominant ov",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q12(a)(i): any three labels from the scheme's six; a marking menu."
         },
         {
           "id": "d8109798a1f4bb86",
           "page": 12,
           "cue": "any two",
           "context": "Page 12 of 16 Question 13. Answer any two of the parts (a), (b), (c), (d). (30 marks, 30 marks) (a) (i) State the length in days of the gestation period in ewes. (ii) Give any three reasons for housing sheep at lambing time. (iii) List three features of winter housing fo",
-          "classification": "pending"
+          "classification": "independent-task-selection",
+          "reason": "Q13: two of four independently priced 30-mark parts; all four are retained."
         },
         {
           "id": "ba0aed54a045327f",
           "page": 12,
           "cue": "any three",
           "context": "ks, 30 marks) (a) (i) State the length in days of the gestation period in ewes. (ii) Give any three reasons for housing sheep at lambing time. (iii) List three features of winter housing for sheep. (iv) Describe the use of the following at lambing time: 1. The infra-red lamp 2. The fostering crate. (b) (i) Name one variety of e",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(a)(ii): any three reasons from the scheme pool; a marking menu."
         },
         {
           "id": "f439ef126fcd4f57",
           "page": 12,
           "cue": "any three",
           "context": "dentify A and B from the table. (ii) A number of factors affect fat content in milk. List any three of these factors. (iii) To ensure milk is of good quality, it is tested in a number of ways. List any three of these tests, other than tests for fat or protein content. (iv) Explain any two management practices to ensure good hyg",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(c)(ii): any three factors from the scheme pool; a marking menu."
         },
         {
           "id": "dc3da7497d08f33d",
           "page": 12,
           "cue": "any three",
           "context": " factors. (iii) To ensure milk is of good quality, it is tested in a number of ways. List any three of these tests, other than tests for fat or protein content. (iv) Explain any two management practices to ensure good hygiene at milking. (d) In pig production, the sow is moved to the farrowing house to have her bonhams (piglets",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(c)(iii): any three milk tests from the scheme pool; a marking menu."
         },
         {
           "id": "5bdd75c2f9772e3b",
           "page": 12,
           "cue": "any two",
           "context": " List any three of these tests, other than tests for fat or protein content. (iv) Explain any two management practices to ensure good hygiene at milking. (d) In pig production, the sow is moved to the farrowing house to have her bonhams (piglets). (i) What is the temperature in the farrowing house? (ii) Name two other parts o",
-          "classification": "pending"
+          "classification": "open",
+          "reason": "Q13(c)(iv): any two hygiene practices from the scheme pool; a marking menu."
         }
       ]
     },
@@ -1613,7 +1623,7 @@
         "sha256": "192fb4d0dff235302041d1d5675f8d17a13b550155f9818dbff2beca6b1176ae",
         "pages": 16
       },
-      "authoredEnglishCardsForSitting": 0,
+      "authoredEnglishCardsForSitting": 63,
       "wholePaperVisualReview": "pending",
       "schemeBoundaryReview": "pending",
       "selectionDirectives": [

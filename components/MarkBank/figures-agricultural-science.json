@@ -1358,5 +1358,90 @@
       0.742
     ],
     "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-spring-cereals": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-spring-cereals.png",
+    "md5": "725b39cad9711bcf882bf481103953a0",
+    "alt": "Original Question 4 photographs of four spring cereals lettered A to D: A a drooping ear with long awns, B a large cob with rows of kernels opening out of its husk, C loose open heads of hanging spikelets against the sky, D a dense stand of upright compact ears.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 4,
+    "cropRect": [
+      0.11,
+      0.145,
+      0.83,
+      0.505
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-habitat-apparatus": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-habitat-apparatus.png",
+    "md5": "815d67fc74ad831e8e6734c783ac1cd8",
+    "alt": "Original Question 5 photographs lettered A to D: A a square frame divided into a grid lying on grass, B a small capped jar with two flexible tubes, C a cloth bag on a hoop at the end of a handle, D a slim glass instrument with a bulb at the top and a pointed metal tip.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 5,
+    "cropRect": [
+      0.13,
+      0.16,
+      0.8,
+      0.632
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-earthworm": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-earthworm.png",
+    "md5": "7b1e9096b18d093d1cbecb39cdf242ed",
+    "alt": "Original Question 10(c) drawing of a long, segmented, cylindrical organism with a smooth swollen band near one end.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 9,
+    "cropRect": [
+      0.29,
+      0.252,
+      0.6,
+      0.395
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-ruminant-stomach": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+    "md5": "47f11e5917ba28a162f8d86aa780994a",
+    "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 10,
+    "cropRect": [
+      0.22,
+      0.155,
+      0.68,
+      0.312
+    ],
+    "reviewedAt": "2026-10-14"
+  },
+  "agsci-2015-ol-paper-milk-composition": {
+    "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+    "md5": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+    "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+    "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+    "solution": false,
+    "sourcePdf": "paper-trail-corpus/exampapers/2015/LC024GLP000EV.pdf",
+    "sourceSha256": "9b807c836452b0b7fccef5d621b7c808374f284bd4b69236f34ca1a7b5d43ba7",
+    "pdfPage": 12,
+    "cropRect": [
+      0.23,
+      0.448,
+      0.77,
+      0.575
+    ],
+    "reviewedAt": "2026-10-14"
   }
 }

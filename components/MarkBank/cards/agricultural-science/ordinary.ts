@@ -30772,4 +30772,2028 @@ export const CARDS: SecCard[] = [
           "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
     },
   } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q1", topicId: "agsci-3-1", conceptId: "plant-parts-and-functions",
+    section: "A", questionRef: "2015 OL Q1",
+    questionText: "A list of plant parts is given below. Place these in Column A to match the description of each part in Column B. The first one is completed as an example. List: Stamens; Phloem; Petals; Xylem; Carpels; Stomata. Example: Petals — Attract bees and insects. Column B: Male parts of flower; Transports water through plant; Openings on underside of leaf; Female parts of flower; Transports food through plant.",
+    tariffModel: {"kind":"fixed","notation":"5 × 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Male parts of flower — Stamens", marks: 4, contextNote: "One part for each description, 4 marks each (5 × 4m)." },
+    { id: "r-2", kind: "point", verbatim: "Transports water through plant — Xylem", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Openings on underside of leaf — Stomata", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "Female parts of flower — Carpels", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "Transports food through plant — Phloem", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q1",
+          "pages": [
+                2
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-1","agricultural-science-2-1","agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q2", topicId: "agsci-3-2", conceptId: "organism-phyla-and-importance",
+    section: "A", questionRef: "2015 OL Q2",
+    questionText: "Some organisms of importance in agriculture are listed in the table below. In the table, name the phylum to which each organism belongs and state one reason why the organism is important in agriculture: Roundworm; Liver Fluke; Butterfly; Mud Snail.",
+    tariffModel: {"kind":"fixed","notation":"4 × (3m + 2m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Roundworm: Nematoda / Liver Fluke: Platyhelminthes / Butterfly: Arthropoda / Mud Snail: Mollusca", marks: 12, contextNote: "4 × (3m + 2m): the phylum 3 for each organism.", group: {"claimMax":4,"perOption":3,"options":["Roundworm: Nematoda","Liver Fluke: Platyhelminthes","Butterfly: Arthropoda","Mud Snail: Mollusca"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Roundworm (Nematoda): (Animal) parasite or pest/ weight loss or failure to thrive/ diarrhoea/ dehydration/ death/ causes disease or harm / Liver Fluke (Platyhelminthes): (Animal) parasite or pest/ weight loss or failure to thrive/ anaemia/ reduced milk yield/ death/ diarrhoea/ loss of wool or hair/ causes disease or harm / Butterfly (Arthropoda): Pollination/ aids plant reproduction/ caterpillar or larval stage is a plant pest/ caterpillar stage damages plants / Mud Snail (Mollusca): (Secondary) host of liverfluke", marks: 8, contextNote: "One importance (any one) 2 for each organism.", group: {"claimMax":4,"perOption":2,"options":["Roundworm (Nematoda): (Animal) parasite or pest/ weight loss or failure to thrive/ diarrhoea/ dehydration/ death/ causes disease or harm","Liver Fluke (Platyhelminthes): (Animal) parasite or pest/ weight loss or failure to thrive/ anaemia/ reduced milk yield/ death/ diarrhoea/ loss of wool or hair/ causes disease or harm","Butterfly (Arthropoda): Pollination/ aids plant reproduction/ caterpillar or larval stage is a plant pest/ caterpillar stage damages plants","Mud Snail (Mollusca): (Secondary) host of liverfluke"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q2",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-0","agricultural-science-3-5","agricultural-science-0-1","agricultural-science-1-6","agricultural-science-2-4","agricultural-science-3-0","agricultural-science-3-1","agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q3", topicId: "agsci-4-1", conceptId: "true-or-false-farm-science",
+    section: "A", questionRef: "2015 OL Q3",
+    questionText: "Indicate whether the following statements are true (T) or false (F) by placing a circle around the correct answer in each case as shown in the example. Example: Suffolk is a breed of cow — F. (a) Germination is the production of food in the leaf. (b) Pneumonia is a common disease of calves. (c) Biuret reagent is used to test for protein. (d) Urea is a high nitrogen fertiliser. (e) Oak is a coniferous tree. (f) Powdery mildew is a disease of barley. (g) Incisors are teeth used for cutting food. (h) A hogget is a type of pig. (i) Kale is an example of a catch crop. (j) Cows reach their peak milk yield one week after calving.",
+    tariffModel: {"kind":"fixed","notation":"10 × 2m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "(a) F / (b) T / (c) T / (d) T / (e) F / (f) T / (g) T / (h) F / (i) T / (j) F", marks: 20, contextNote: "All ten statements, 2 marks each (10 × 2m). T = true, F = false; the scheme gives each letter with T or F.", group: {"claimMax":10,"perOption":2,"options":["(a) F","(b) T","(c) T","(d) T","(e) F","(f) T","(g) T","(h) F","(i) T","(j) F"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q3",
+          "pages": [
+                3
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-3","agricultural-science-2-5"]), kind: "diagram",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q4", topicId: "agsci-3-3-1", conceptId: "spring-cereal-table",
+    section: "A", questionRef: "2015 OL Q4",
+    questionText: "Four spring cereal crops commonly grown in Ireland are shown below. In the table, identify one of the crops shown above and complete the table in relation to the crop you have chosen: Crop A, B, C or D; Name of crop; Time of sowing; Use of crop; Seeding rate (kg/ha); Yield of crop (t/ha).",
+    tariffModel: {"kind":"fixed","notation":"5 × 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Crop and name — A = Barley", marks: 4, contextNote: "5 × 4m: one row of the table each." },
+    { id: "r-2", kind: "point", verbatim: "Time of sowing — Feb – April", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "Use of crop — Animal feed/ malting/ food or named example/ straw bedding", marks: 4, contextNote: "Any one." },
+    { id: "r-4", kind: "point", verbatim: "Seeding rate (kg/ha) — 150 – 200", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "Yield of crop (t/ha) — 5 – 8", marks: 4 },
+    ],
+    answerVariants: [
+          {
+                "id": "barley",
+                "label": "Barley",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Crop and name — A = Barley",
+                            "marks": 4,
+                            "contextNote": "5 × 4m: one row of the table each.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Time of sowing — Feb – April",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Use of crop — Animal feed/ malting/ food or named example/ straw bedding",
+                            "marks": 4,
+                            "contextNote": "Any one.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Seeding rate (kg/ha) — 150 – 200",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Yield of crop (t/ha) — 5 – 8",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          },
+          {
+                "id": "maize",
+                "label": "Maize",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Crop and name — B = Maize",
+                            "marks": 4,
+                            "contextNote": "5 × 4m: one row of the table each. [accept corn]",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Time of sowing — March – May",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Use of crop — Animal feed/ silage/ food or named example/ straw bedding",
+                            "marks": 4,
+                            "contextNote": "Any one.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Seeding rate (kg/ha) — 20 - 28",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Yield of crop (t/ha) — 13 - 20",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          },
+          {
+                "id": "oats",
+                "label": "Oats",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Crop and name — C = Oats",
+                            "marks": 4,
+                            "contextNote": "5 × 4m: one row of the table each.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Time of sowing — Feb - April",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Use of crop — Animal feed/ food or named example/ straw bedding",
+                            "marks": 4,
+                            "contextNote": "Any one.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Seeding rate (kg/ha) — 140 – 165",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Yield of crop (t/ha) — 4 – 7",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          },
+          {
+                "id": "wheat",
+                "label": "Wheat",
+                "rows": [
+                      {
+                            "kind": "point",
+                            "verbatim": "Crop and name — D = Wheat",
+                            "marks": 4,
+                            "contextNote": "5 × 4m: one row of the table each.",
+                            "id": "r-1"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Time of sowing — Feb - April",
+                            "marks": 4,
+                            "id": "r-2"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Use of crop — Animal feed/ flour production/ food or named example/ straw bedding",
+                            "marks": 4,
+                            "contextNote": "Any one.",
+                            "id": "r-3"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Seeding rate (kg/ha) — 140 – 190",
+                            "marks": 4,
+                            "id": "r-4"
+                      },
+                      {
+                            "kind": "point",
+                            "verbatim": "Yield of crop (t/ha) — 7 – 9",
+                            "marks": 4,
+                            "id": "r-5"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q4",
+          "pages": [
+                4
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-spring-cereals",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-spring-cereals.png",
+          "srcHash": "725b39cad9711bcf882bf481103953a0",
+          "alt": "Original Question 4 photographs of four spring cereals lettered A to D: A a drooping ear with long awns, B a large cob with rows of kernels opening out of its husk, C loose open heads of hanging spikelets against the sky, D a dense stand of upright compact ears.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 4 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Barley","askedInThisQuestion":true},{"letter":"B","meaning":"Maize (the scheme accepts corn)","askedInThisQuestion":false},{"letter":"C","meaning":"Oats","askedInThisQuestion":false},{"letter":"D","meaning":"Wheat","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-0-1","agricultural-science-2-6"]), kind: "diagram",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q5", topicId: "agsci-1-2", conceptId: "habitat-study-apparatus",
+    section: "A", questionRef: "2015 OL Q5",
+    questionText: "Four pieces of apparatus commonly used in habitat study are shown below. In the table, give the name and use for each piece: A; B; C; D.",
+    tariffModel: {"kind":"fixed","notation":"4 × (3m + 2m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A: Quadrat / B: Pooter / C: (Sweep) net / D: (Soil) thermometer", marks: 12, contextNote: "4 × (3m + 2m): the name 3 for each piece.", group: {"claimMax":4,"perOption":3,"options":["A: Quadrat","B: Pooter","C: (Sweep) net","D: (Soil) thermometer"]} },
+    { id: "r-2", kind: "anyN", verbatim: "A Quadrat: Sampling plants/ quantitative analysis/ studying (frequency of) plants / B Pooter: Collecting insects or (small) animals / C (Sweep) net: Collecting insects or (small) animals / D (Soil) thermometer: Measuring (soil) temperature", marks: 8, contextNote: "The use 2 for each piece (A: any one).", group: {"claimMax":4,"perOption":2,"options":["A Quadrat: Sampling plants/ quantitative analysis/ studying (frequency of) plants","B Pooter: Collecting insects or (small) animals","C (Sweep) net: Collecting insects or (small) animals","D (Soil) thermometer: Measuring (soil) temperature"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q5",
+          "pages": [
+                5
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-habitat-apparatus",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-habitat-apparatus.png",
+          "srcHash": "815d67fc74ad831e8e6734c783ac1cd8",
+          "alt": "Original Question 5 photographs lettered A to D: A a square frame divided into a grid lying on grass, B a small capped jar with two flexible tubes, C a cloth bag on a hoop at the end of a handle, D a slim glass instrument with a bulb at the top and a pointed metal tip.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 5 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Quadrat","askedInThisQuestion":true},{"letter":"B","meaning":"Pooter","askedInThisQuestion":true},{"letter":"C","meaning":"(Sweep) net","askedInThisQuestion":true},{"letter":"D","meaning":"(Soil) thermometer","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q6", topicId: "agsci-4-3-3", conceptId: "cattle-disease-microbes",
+    section: "A", questionRef: "2015 OL Q6",
+    questionText: "Four common diseases of cattle that are caused by microorganisms are listed in the table below. In the table, state which type of microorganism is responsible for causing each disease and one method of prevention or treatment of each disease. One example is given in the table: TB — Bacteria — Breeding own replacements. Mastitis; Pneumonia; Ringworm; Blackleg.",
+    tariffModel: {"kind":"fixed","notation":"4 × (3m + 2m)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Mastitis: Bacteria / Pneumonia: Virus / Ringworm: Fungus / Blackleg: Bacteria", marks: 12, contextNote: "4 × (3m + 2m): the microorganism type 3 for each disease.", group: {"claimMax":4,"perOption":3,"options":["Mastitis: Bacteria","Pneumonia: Virus","Ringworm: Fungus","Blackleg: Bacteria"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Mastitis (Bacteria): Parlour hygiene/ milker hygiene/ wash udder/ avoid over-milking/ teat dip/ strip cup/ antibiotic/ dry cow therapy/ clean bedding or cubicle mats or lime/ ensure milking machine in working order/ treat wounds on teats/ fly control/ apply Stockholm tar to teats/ cull chronically infected cows / Pneumonia (Virus): Good ventilation/ draught free/ isolation/ colostrum/ vaccination/ dry housing/ avoid stress / Ringworm (Fungus): Avoid contact with infected animals/ apply fungicide / Blackleg (Bacteria): Vaccination/ colostrum (for lambs)/ antibiotics/ booster injection", marks: 8, contextNote: "One prevention or treatment (any one) 2 for each disease.", group: {"claimMax":4,"perOption":2,"options":["Mastitis (Bacteria): Parlour hygiene/ milker hygiene/ wash udder/ avoid over-milking/ teat dip/ strip cup/ antibiotic/ dry cow therapy/ clean bedding or cubicle mats or lime/ ensure milking machine in working order/ treat wounds on teats/ fly control/ apply Stockholm tar to teats/ cull chronically infected cows","Pneumonia (Virus): Good ventilation/ draught free/ isolation/ colostrum/ vaccination/ dry housing/ avoid stress","Ringworm (Fungus): Avoid contact with infected animals/ apply fungicide","Blackleg (Bacteria): Vaccination/ colostrum (for lambs)/ antibiotics/ booster injection"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q6",
+          "pages": [
+                6
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4","agricultural-science-2-4","agricultural-science-1-2","agricultural-science-1-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q7", topicId: "agsci-2-3", conceptId: "reasons-for-farm-practices",
+    section: "A", questionRef: "2015 OL Q7",
+    questionText: "Give one scientific reason why each of the following practices is carried out on Irish farms. (a) Sheep are culled from the flock. (b) Cows are ‘dried off’ two months before calving. (c) Trees in a forest plantation are thinned after about twenty years. (d) Lime is spread on some soils. (e) Great care is taken when agitating slurry.",
+    tariffModel: {"kind":"fixed","notation":"5 × 4m"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(a) Culling sheep — Lameness/ old age/ infertility/ disease/ mastitis/ broken mouth/ low BCS/ poor conformation/ poor quality wool/ mouth defects / prolapse/ poor previous performance or low number of lambs", marks: 4, contextNote: "One reason for each practice, 4 marks each (5 × 4m)." },
+    { id: "r-2", kind: "point", verbatim: "(b) Drying off cows — Repair or regeneration of udder tissue/ improves BCS for calving/ cow does not lose condition/ allows for rapid development of calf/ gives cow a rest or allows cow to recover/ allows cow to reach milk yield potential (in following lactation) or cow will have more milk after calving", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "(c) Thinning trees — Removes poorer trees/ more space/ less competition or named example/ remaining trees grow straighter or better/ improved access/ thinnings provide source of income/ use of thinnings to make products or named example", marks: 4 },
+    { id: "r-4", kind: "point", verbatim: "(d) Spreading lime — Raises pH/ reduces acidity/ improves soil structure/ provides calcium/ improves aeration or opens up the soil/ flocculation/ improves drainage/ increases availability of nutrients/ improved crop growth/ higher yields/ improved microbial activity/ more earthworm activity/ improves soil fertility", marks: 4 },
+    { id: "r-5", kind: "point", verbatim: "(e) Care when agitating slurry — Avoids toxic gases or named toxic gas/ avoids harm/ prevents deaths/ animal safety", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q7",
+          "pages": [
+                7
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8ai", topicId: "agsci-3-3-1", conceptId: "conservation-grass-species",
+    section: "B", questionRef: "2015 OL Q8(a)(i)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Name two grass species commonly used in silage or hay production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Perennial ryegrass or PRG / Italian ryegrass or IRG / Timothy", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m). [Accept ryegrass]", group: {"claimMax":2,"perOption":3,"options":["Perennial ryegrass or PRG","Italian ryegrass or IRG","Timothy"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8aii", topicId: "agsci-3-3-3", conceptId: "silage-cutting-stage",
+    section: "B", questionRef: "2015 OL Q8(a)(ii)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "At what stage should the grass be cut for good quality silage?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Heading out stage / “in between” stage / 6-8 week after closing off / May- (early) June / 10 -12 weeks after fertiliser applied / when 50% grass showing seed heads", marks: 3, contextNote: "Any one, 3m. [Accept when grass is leafy]", group: {"claimMax":1,"perOption":3,"options":["Heading out stage","“in between” stage","6-8 week after closing off","May- (early) June","10 -12 weeks after fertiliser applied","when 50% grass showing seed heads"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8aiii", topicId: "agsci-3-3-3", conceptId: "dry-weather-for-hay",
+    section: "B", questionRef: "2015 OL Q8(a)(iii)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "A long spell of dry weather is essential for making hay. What is the scientific reason for this?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dehydration / enough time for grass, or hay, to dry / avoid mould infestation / avoid rotting or spoilage or heating", marks: 3, contextNote: "Any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Dehydration","enough time for grass, or hay, to dry","avoid mould infestation","avoid rotting or spoilage or heating"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(a)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8aiv", topicId: "agsci-3-3-3", conceptId: "silage-bacteria",
+    section: "B", questionRef: "2015 OL Q8(a)(iv)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Give the name of a bacterial species needed to make good quality silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Lactobacillus spp./ lactic acid bacteria", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(a)(iv)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8bi", topicId: "agsci-3-3-3", conceptId: "haymaking-steps",
+    section: "B", questionRef: "2015 OL Q8(b)(i)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Describe the steps you would carry out to make good quality hay.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Cut or mow / on dry day / allow to dry or wilt / ted or turn or shake / 2-3 times / reduce degree of roughness of shaking / row or rake or gather / bale / stack in field / store in (leak proof) shed", marks: 12, contextNote: "Any four, 3 marks each (4 × 3m).", group: {"claimMax":4,"perOption":3,"options":["Cut or mow","on dry day","allow to dry or wilt","ted or turn or shake","2-3 times","reduce degree of roughness of shaking","row or rake or gather","bale","stack in field","store in (leak proof) shed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8bii", topicId: "agsci-3-3-3", conceptId: "silage-over-hay",
+    section: "B", questionRef: "2015 OL Q8(b)(ii)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Give three advantages of silage production over hay production.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Less weather dependent / faster / silage more digestible or higher DMD / silage higher in protein / higher feeding value or more nutritious / higher weight gains or milk yields / easier to feed / more palatable / easier to store", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Less weather dependent","faster","silage more digestible or higher DMD","silage higher in protein","higher feeding value or more nutritious","higher weight gains or milk yields","easier to feed","more palatable","easier to store"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8biii", topicId: "agsci-3-3-3", conceptId: "round-bale-over-pit",
+    section: "B", questionRef: "2015 OL Q8(b)(iii)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Give three advantages of round bale silage over pit silage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Easier to make in small fields / lower capital costs or no need for a pit / easy to transport / easy to buy or sell / ease of storage / suitable for small amounts / can be fed outside / lower pollution risk / lower (dry matter) losses during production or storage", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Easier to make in small fields","lower capital costs or no need for a pit","easy to transport","easy to buy or sell","ease of storage","suitable for small amounts","can be fed outside","lower pollution risk","lower (dry matter) losses during production or storage"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(b)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-6","agricultural-science-0-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q8c", topicId: "agsci-3-3-3", conceptId: "silage-dry-matter",
+    section: "B", questionRef: "2015 OL Q8(c)",
+    stem: "The two most common methods of grass conservation used in Ireland are silage production and hay production.",
+    questionText: "Describe a laboratory or field experiment to estimate percentage (%) dry matter in a silage sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Weigh beaker or named suitable container / weigh beaker and silage sample / calculate mass of silage / dry in oven / suitable time / re-weigh beaker and silage / repeat until no further loss in mass / calculate loss in mass / (loss in mass ÷ mass of fresh silage) x 100 / repeat / average", marks: 15, contextNote: "Drying in an oven: any five, 3 marks each (5×3m). [Award marks if points are shown on a labelled diagram] [Award maximum of 12 marks if no attempt at calculation]", group: {"claimMax":5,"perOption":3,"options":["Weigh beaker or named suitable container","weigh beaker and silage sample","calculate mass of silage","dry in oven","suitable time","re-weigh beaker and silage","repeat until no further loss in mass","calculate loss in mass","(loss in mass ÷ mass of fresh silage) x 100","repeat","average"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "oven",
+                "label": "Drying in an oven",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Weigh beaker or named suitable container / weigh beaker and silage sample / calculate mass of silage / dry in oven / suitable time / re-weigh beaker and silage / repeat until no further loss in mass / calculate loss in mass / (loss in mass ÷ mass of fresh silage) x 100 / repeat / average",
+                            "marks": 15,
+                            "contextNote": "Drying in an oven: any five, 3 marks each (5×3m). [Award marks if points are shown on a labelled diagram] [Award maximum of 12 marks if no attempt at calculation]",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Weigh beaker or named suitable container",
+                                        "weigh beaker and silage sample",
+                                        "calculate mass of silage",
+                                        "dry in oven",
+                                        "suitable time",
+                                        "re-weigh beaker and silage",
+                                        "repeat until no further loss in mass",
+                                        "calculate loss in mass",
+                                        "(loss in mass ÷ mass of fresh silage) x 100",
+                                        "repeat",
+                                        "average"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "wring",
+                "label": "Wringing between hands",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Wring silage between hands / note rate at which juice runs out or note the amount of juice that runs out / if juice runs freely ⇒15% dry matter (DM) / if juice drips out ⇒20% DM / if very little juice runs out ⇒25% DM / repeat / average",
+                            "marks": 15,
+                            "contextNote": "Wringing between hands: any five, 3 marks each (5×3m).",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Wring silage between hands",
+                                        "note rate at which juice runs out or note the amount of juice that runs out",
+                                        "if juice runs freely ⇒15% dry matter (DM)",
+                                        "if juice drips out ⇒20% DM",
+                                        "if very little juice runs out ⇒25% DM",
+                                        "repeat",
+                                        "average"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q8(c)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9ai", topicId: "agsci-4-2", conceptId: "beef-and-dairy-breeds",
+    section: "B", questionRef: "2015 OL Q9(a)(i)",
+    stem: "Beef breeds and dairy breeds are commonly found on Irish cattle farms.",
+    questionText: "Name two beef breeds and two dairy breeds.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Charolais / Limousin / Hereford / Aberdeen Angus / Belgian Blue", marks: 6, contextNote: "Beef breeds: any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Charolais","Limousin","Hereford","Aberdeen Angus","Belgian Blue"]} },
+    { id: "r-2", kind: "anyN", verbatim: "Jersey / Holstein / (British) Friesian / Kerry / Montbeliarde", marks: 6, contextNote: "Dairy breeds: any two, 3 marks each (2 × 3m). [Accept Shorthorn]", group: {"claimMax":2,"perOption":3,"options":["Jersey","Holstein","(British) Friesian","Kerry","Montbeliarde"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(a)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9aii", topicId: "agsci-4-2", conceptId: "beef-versus-dairy-conformation",
+    section: "B", questionRef: "2015 OL Q9(a)(ii)",
+    stem: "Beef breeds and dairy breeds are commonly found on Irish cattle farms.",
+    questionText: "Describe three differences between the conformation of beef and dairy breeds.",
+    tariffModel: {"kind":"questionTotal","notation":"3 × 4m"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Beef — Block shaped/ thick neck/ wide shoulders/ well fleshed or more muscle or heavier/ broad back/ wider hindquarters", marks: null, contextNote: "Any three differences, 4 marks each (3 × 4m): a beef feature set against the dairy feature." },
+    { id: "r-2", kind: "point", verbatim: "Dairy — Wedge shaped/ long neck/ narrow shoulders/ not well fleshed/ narrow back/ narrower hindquarters", marks: null },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(a)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9bi", topicId: "agsci-4-3-2", conceptId: "condition-scoring",
+    section: "B", questionRef: "2015 OL Q9(b)(i)",
+    stem: "Condition scoring is an important skill in cattle farming.",
+    questionText: "Explain what is meant by condition scoring in cattle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Hand pressure applied to (specific areas of) backbone / to assess body fatness or thinness / scale of 1-5 in cattle / 1 indicates overly thin / 4 indicates overly fat", marks: 8, contextNote: "Any two, 4 marks each (2×4m).", group: {"claimMax":2,"perOption":4,"options":["Hand pressure applied to (specific areas of) backbone","to assess body fatness or thinness","scale of 1-5 in cattle","1 indicates overly thin","4 indicates overly fat"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(b)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9bii", topicId: "agsci-4-3-2", conceptId: "condition-score-at-mating",
+    section: "B", questionRef: "2015 OL Q9(b)(ii)",
+    stem: "Condition scoring is an important skill in cattle farming.",
+    questionText: "What condition score is recommended for cows at mating?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2.5 to 3", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(b)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9biii", topicId: "agsci-4-3-2", conceptId: "high-condition-at-calving",
+    section: "B", questionRef: "2015 OL Q9(b)(iii)",
+    stem: "Condition scoring is an important skill in cattle farming.",
+    questionText: "Explain why a high condition score in cows can cause problems at calving.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Calf too big or calving difficulties or described / requirement for Caesarean or calving jack or vet / too much fat deposition in birth canal / milk fever", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Calf too big or calving difficulties or described","requirement for Caesarean or calving jack or vet","too much fat deposition in birth canal","milk fever"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(b)(iii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5","agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9ci", topicId: "agsci-4-3-3", conceptId: "buying-replacement-heifers",
+    section: "B", questionRef: "2015 OL Q9(c)(i)",
+    questionText: "State two precautions that should be taken when buying in replacement heifers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Known supplier / quarantine or isolate / vaccinate / good BCS or good quality (or one named physical characteristic indicating good quality / check for diseases or for signs of good health / good temperament / good udder or good teat placement", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Known supplier","quarantine or isolate","vaccinate","good BCS or good quality (or one named physical characteristic indicating good quality","check for diseases or for signs of good health","good temperament","good udder or good teat placement"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(c)(i)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q9cii", topicId: "agsci-4-3-3", conceptId: "keeping-disease-out",
+    section: "B", questionRef: "2015 OL Q9(c)(ii)",
+    questionText: "Describe two common practices aimed at keeping livestock diseases from entering a farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Breed own replacements or closed herd / fencing / hygiene / disinfection points / quarantine / restrict access or visitors", marks: 8, contextNote: "Any two, 4 marks each (2 × 4m).", group: {"claimMax":2,"perOption":4,"options":["Breed own replacements or closed herd","fencing","hygiene","disinfection points","quarantine","restrict access or visitors"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q9(c)(ii)",
+          "pages": [
+                8
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10ai", topicId: "agsci-2-1", conceptId: "physical-weathering",
+    section: "B", questionRef: "2015 OL Q10(a)(i)",
+    stem: "The main mineral component of soil is made up of different particles of weathered rock.",
+    questionText: "State three methods of physical weathering.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Freeze-thaw or frost action / heating and cooling or onion weathering / wind action / ice / water / gravity / roots / animal activity / grinding / erosion", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Freeze-thaw or frost action","heating and cooling or onion weathering","wind action","ice","water","gravity","roots","animal activity","grinding","erosion"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(a)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-3"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10aii", topicId: "agsci-2-2-2", conceptId: "soil-particle-types",
+    section: "B", questionRef: "2015 OL Q10(a)(ii)",
+    stem: "The main mineral component of soil is made up of different particles of weathered rock.",
+    questionText: "Name any three soil particle types.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Gravel / sand / silt / clay", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Gravel","sand","silt","clay"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(a)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-3"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10bi", topicId: "agsci-2-2-2", conceptId: "soil-texture",
+    section: "B", questionRef: "2015 OL Q10(b)(i)",
+    questionText: "Explain the term soil texture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The % sand, silt and clay in a soil", marks: 6 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(b)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-3","agricultural-science-0-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10bii", topicId: "agsci-2-2-2", conceptId: "soil-texture-experiment",
+    section: "B", questionRef: "2015 OL Q10(b)(ii)",
+    questionText: "Describe an experiment to determine the texture of a soil sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Rub or feel (dry) soil (between thumb and fingers) / note grittiness or smoothness / repeat with wet soil / roll into a ball if possible / make threads of it if possible / bend into rings if possible / compare to flow chart for results / if soil feels gritty ⇒sandy soil / if soil rolls into threads ⇒clay soil", marks: 15, contextNote: "Feel method: any five, 3 marks each (5 ×3m). [Award marks if points are shown on a labelled diagram]", group: {"claimMax":5,"perOption":3,"options":["Rub or feel (dry) soil (between thumb and fingers)","note grittiness or smoothness","repeat with wet soil","roll into a ball if possible","make threads of it if possible","bend into rings if possible","compare to flow chart for results","if soil feels gritty ⇒sandy soil","if soil rolls into threads ⇒clay soil"]} },
+    ],
+    answerVariants: [
+          {
+                "id": "feel",
+                "label": "Feel method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Rub or feel (dry) soil (between thumb and fingers) / note grittiness or smoothness / repeat with wet soil / roll into a ball if possible / make threads of it if possible / bend into rings if possible / compare to flow chart for results / if soil feels gritty ⇒sandy soil / if soil rolls into threads ⇒clay soil",
+                            "marks": 15,
+                            "contextNote": "Feel method: any five, 3 marks each (5 ×3m). [Award marks if points are shown on a labelled diagram]",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Rub or feel (dry) soil (between thumb and fingers)",
+                                        "note grittiness or smoothness",
+                                        "repeat with wet soil",
+                                        "roll into a ball if possible",
+                                        "make threads of it if possible",
+                                        "bend into rings if possible",
+                                        "compare to flow chart for results",
+                                        "if soil feels gritty ⇒sandy soil",
+                                        "if soil rolls into threads ⇒clay soil"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sieve",
+                "label": "Sieve method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Dry soil / how dried / crush the soil / weigh an empty weighing boat or named suitable container / place soil in a weighing boat / reweigh / find mass of soil (only) / sieve soil / re-weigh each part / calculate % sand, silt and clay / use soil textural triangle / use % figures to draw three lines / where lines cross over indicates soil textural class",
+                            "marks": 15,
+                            "contextNote": "Sieve method: any five, 3 marks each (5 ×3m). [Award marks if points are shown on a labelled diagram]",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Dry soil",
+                                        "how dried",
+                                        "crush the soil",
+                                        "weigh an empty weighing boat or named suitable container",
+                                        "place soil in a weighing boat",
+                                        "reweigh",
+                                        "find mass of soil (only)",
+                                        "sieve soil",
+                                        "re-weigh each part",
+                                        "calculate % sand, silt and clay",
+                                        "use soil textural triangle",
+                                        "use % figures to draw three lines",
+                                        "where lines cross over indicates soil textural class"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          },
+          {
+                "id": "sedimentation",
+                "label": "Sedimentation method",
+                "rows": [
+                      {
+                            "kind": "anyN",
+                            "verbatim": "Place soil sample into a graduated cylinder or named suitable vessel / add water to vessel / break up large lumps / stopper / shake vigorously / allow to settle / measure total depth of soil / measure each layer of sand silt and clay / calculate % sand, silt and clay / use soil textural triangle / use % figures to draw three lines / where lines cross over indicates soil textural class",
+                            "marks": 15,
+                            "contextNote": "Sedimentation method: any five, 3 marks each (5 ×3m). [Award marks if points are shown on a labelled diagram]",
+                            "group": {
+                                  "claimMax": 5,
+                                  "perOption": 3,
+                                  "options": [
+                                        "Place soil sample into a graduated cylinder or named suitable vessel",
+                                        "add water to vessel",
+                                        "break up large lumps",
+                                        "stopper",
+                                        "shake vigorously",
+                                        "allow to settle",
+                                        "measure total depth of soil",
+                                        "measure each layer of sand silt and clay",
+                                        "calculate % sand, silt and clay",
+                                        "use soil textural triangle",
+                                        "use % figures to draw three lines",
+                                        "where lines cross over indicates soil textural class"
+                                  ]
+                            },
+                            "id": "r-1"
+                      }
+                ]
+          }
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(b)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10ci", topicId: "agsci-2-2-3", conceptId: "earthworm-identified",
+    section: "B", questionRef: "2015 OL Q10(c)(i)",
+    stem: "Organisms such as the one shown below are of great benefit to the soil.",
+    questionText: "Name the organism shown above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Earthworm", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(c)(i)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-earthworm",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-earthworm.png",
+          "srcHash": "7b1e9096b18d093d1cbecb39cdf242ed",
+          "alt": "Original Question 10(c) drawing of a long, segmented, cylindrical organism with a smooth swollen band near one end.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10cii", topicId: "agsci-2-2-3", conceptId: "earthworm-benefits",
+    section: "B", questionRef: "2015 OL Q10(c)(ii)",
+    stem: "Organisms such as the one shown below are of great benefit to the soil.",
+    questionText: "Mention two ways in which the above organism benefits the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Improve drainage / improve aeration / mix soil layers / improve fertility or add nutrients / improve structure / improve texture / decompose organic matter / create humus", marks: 6, contextNote: "Any two, 3 marks each (2 x 3m).", group: {"claimMax":2,"perOption":3,"options":["Improve drainage","improve aeration","mix soil layers","improve fertility or add nutrients","improve structure","improve texture","decompose organic matter","create humus"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(c)(ii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-earthworm",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-earthworm.png",
+          "srcHash": "7b1e9096b18d093d1cbecb39cdf242ed",
+          "alt": "Original Question 10(c) drawing of a long, segmented, cylindrical organism with a smooth swollen band near one end.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-1-4","agricultural-science-0-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q10ciii", topicId: "agsci-2-2-3", conceptId: "earthworm-count",
+    section: "B", questionRef: "2015 OL Q10(c)(iii)",
+    stem: "Organisms such as the one shown below are of great benefit to the soil.",
+    questionText: "Describe an experiment to estimate the number of these organisms in the soil.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Mark out area to be sampled / quadrat / random / how random / remove vegetation / apply potassium permanganate or washing up liquid or soapy solution / suitable time / count worms / repeat / average / multiply (average) no. of earthworms × area sampled", marks: 12, contextNote: "Any four, 3 marks each (4 x 3m). [Award marks if points are shown on a labelled diagram]", group: {"claimMax":4,"perOption":3,"options":["Mark out area to be sampled","quadrat","random","how random","remove vegetation","apply potassium permanganate or washing up liquid or soapy solution","suitable time","count worms","repeat","average","multiply (average) no. of earthworms × area sampled"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q10(c)(iii)",
+          "pages": [
+                9
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-earthworm",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-earthworm.png",
+          "srcHash": "7b1e9096b18d093d1cbecb39cdf242ed",
+          "alt": "Original Question 10(c) drawing of a long, segmented, cylindrical organism with a smooth swollen band near one end.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 9 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11ai", topicId: "agsci-4-1", conceptId: "ruminant-and-monogastric-species",
+    section: "B", questionRef: "2015 OL Q11(a)(i)",
+    questionText: "The cow has a ruminant stomach. Name: 1. one other livestock species that has this type of stomach and 2. one livestock species that does not have this type of stomach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Sheep/ goat/ deer", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "2. Pig/ horse/ poultry", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(a)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "diagram",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11aii", topicId: "agsci-4-1", conceptId: "ruminant-stomach-chambers",
+    section: "B", questionRef: "2015 OL Q11(a)(ii)",
+    stem: "The ruminant stomach is shown in the diagram below.",
+    questionText: "Name the chambers of the stomach labelled B, C and D.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B = Reticulum", marks: 4, contextNote: "3 × 4m." },
+    { id: "r-2", kind: "point", verbatim: "C = Omasum", marks: 4 },
+    { id: "r-3", kind: "point", verbatim: "D = Abomasum", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(a)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+          "srcHash": "47f11e5917ba28a162f8d86aa780994a",
+          "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": [
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"B","meaning":"Reticulum","askedInThisQuestion":true},{"letter":"C","meaning":"Omasum","askedInThisQuestion":true},{"letter":"D","meaning":"Abomasum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11aiii", topicId: "agsci-4-1", conceptId: "true-stomach-chamber",
+    section: "B", questionRef: "2015 OL Q11(a)(iii)",
+    stem: "The ruminant stomach is shown in the diagram below.",
+    questionText: "Which chamber of the ruminant stomach most closely resembles the monogastric stomach?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Abomasum/ D", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(a)(iii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+          "srcHash": "47f11e5917ba28a162f8d86aa780994a",
+          "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11bi", topicId: "agsci-4-1", conceptId: "grass-constituent-digested",
+    section: "B", questionRef: "2015 OL Q11(b)(i)",
+    questionText: "Name the main constituent of grass that is digested in the ruminant stomach.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cellulose or fibre", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(b)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11bii", topicId: "agsci-4-1", conceptId: "regurgitation-benefit",
+    section: "B", questionRef: "2015 OL Q11(b)(ii)",
+    stem: "The ruminant stomach is shown in the diagram below.",
+    questionText: "Food is regurgitated from chamber B. How does this benefit the animal?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Further mechanical digestion / softens food / increases surface area", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Further mechanical digestion","softens food","increases surface area"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(b)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+          "srcHash": "47f11e5917ba28a162f8d86aa780994a",
+          "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11biii", topicId: "agsci-4-1", conceptId: "chamber-c-role",
+    section: "B", questionRef: "2015 OL Q11(b)(iii)",
+    stem: "The ruminant stomach is shown in the diagram below.",
+    questionText: "What happens to the food in chamber C?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Food is squeezed or dried / water removed / water re-absorbed (into rumen)", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Food is squeezed or dried","water removed","water re-absorbed (into rumen)"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(b)(iii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+          "srcHash": "47f11e5917ba28a162f8d86aa780994a",
+          "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11biv", topicId: "agsci-4-1", conceptId: "after-part-d",
+    section: "B", questionRef: "2015 OL Q11(b)(iv)",
+    stem: "The ruminant stomach is shown in the diagram below.",
+    questionText: "Precisely which part of the digestive system does food enter when it leaves part D?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Duodenum / small intestine", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Duodenum","small intestine"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(b)(iv)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-ruminant-stomach",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-ruminant-stomach.png",
+          "srcHash": "47f11e5917ba28a162f8d86aa780994a",
+          "alt": "Original Question 11 diagram of the ruminant stomach: one leader line labelled Rumen points into the large left chamber, B to the small upper chamber beside it, C to the round central chamber and D to the chamber on the lower right.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 10 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11ci", topicId: "agsci-4-3-2", conceptId: "calf-diet-twelve-weeks",
+    section: "B", questionRef: "2015 OL Q11(c)(i)",
+    questionText: "Describe how the diet of the calf is changed over the first twelve weeks of life.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Colostrum / (whole) milk / milk replacer / concentrates or meals / hay / silage / grass", marks: 16, contextNote: "Any four, 4 marks each (4 × 4m).", group: {"claimMax":4,"perOption":4,"options":["Colostrum","(whole) milk","milk replacer","concentrates or meals","hay","silage","grass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(c)(i)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q11cii", topicId: "agsci-4-3-3", conceptId: "bloat-cause",
+    section: "B", questionRef: "2015 OL Q11(c)(ii)",
+    questionText: "Bloat is a common disorder in cattle. What causes bloat?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Build-up of gas / inability to belch / high clover content in sward", marks: 4, contextNote: "Any one, 4m.", group: {"claimMax":1,"perOption":4,"options":["Build-up of gas","inability to belch","high clover content in sward"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q11(c)(ii)",
+          "pages": [
+                10
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12ai", topicId: "agsci-3-1", conceptId: "plant-cell-diagram",
+    section: "B", questionRef: "2015 OL Q12(a)(i)",
+    questionText: "Draw a simple diagram of a plant cell as seen under a light microscope. Label any three parts, other than chromosomes.",
+    tariffModel: {"kind":"questionTotal","notation":"(4m, 2m, 0m) + 3 × 4m"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Diagram", marks: null, contextNote: "Diagram: 4m, 2m, 0m. [Award 4 marks if diagram has the correct shape, a nucleus and two boundaries] [Award 2 marks if diagram has incorrect shape or has one boundary only or has no nucleus]" },
+    { id: "r-2", kind: "point", verbatim: "Cell wall/ cell membrane/ nucleus/ cytoplasm/ (large) vacuole/ chloroplasts", marks: null, contextNote: "Labels: any three, 4 marks each (3 × 4m)." },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(a)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12aii", topicId: "agsci-4-1", conceptId: "chromosome-location",
+    section: "B", questionRef: "2015 OL Q12(a)(ii)",
+    questionText: "Where in the cell are the chromosomes found?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nucleus", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(a)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12aiii", topicId: "agsci-4-1", conceptId: "mitosis",
+    section: "B", questionRef: "2015 OL Q12(a)(iii)",
+    questionText: "Name the process by which an animal or plant cell divides into two identical cells.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Mitosis", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(a)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12bi", topicId: "agsci-4-1", conceptId: "red-kernel-gametes",
+    section: "B", questionRef: "2015 OL Q12(b)(i)",
+    stem: "In wheat, the allele for red kernel (R) is dominant over the allele for white kernel (r). A wheat plant, homozygous for red kernel (RR), is crossed with a plant homozygous for white kernel (rr). Copy the following into your answer book and complete the spaces. Genotypes of original parents (RR) × (rr).",
+    questionText: "Complete: (i) Possible gametes ○ × ○",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gametes — R", marks: 4, contextNote: "2 × 4m." },
+    { id: "r-2", kind: "point", verbatim: "Gametes — r", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(b)(i)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12bii", topicId: "agsci-4-1", conceptId: "red-kernel-f1-genotype",
+    section: "B", questionRef: "2015 OL Q12(b)(ii)",
+    stem: "In wheat, the allele for red kernel (R) is dominant over the allele for white kernel (r). A wheat plant, homozygous for red kernel (RR), is crossed with a plant homozygous for white kernel (rr). Copy the following into your answer book and complete the spaces. Genotypes of original parents (RR) × (rr).",
+    questionText: "Complete: (ii) F1 genotype ( )",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 genotypes — Rr", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(b)(ii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12biii", topicId: "agsci-4-1", conceptId: "red-kernel-f1-phenotype",
+    section: "B", questionRef: "2015 OL Q12(b)(iii)",
+    stem: "In wheat, the allele for red kernel (R) is dominant over the allele for white kernel (r). A wheat plant, homozygous for red kernel (RR), is crossed with a plant homozygous for white kernel (rr). Copy the following into your answer book and complete the spaces. Genotypes of original parents (RR) × (rr).",
+    questionText: "Complete: (iii) F1 phenotype ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "F1 phenotype — Red", marks: 4 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(b)(iii)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-6"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q12c", topicId: "agsci-4-1", conceptId: "red-kernel-test-cross",
+    section: "B", questionRef: "2015 OL Q12(c)",
+    stem: "In wheat, the allele for red kernel (R) is dominant over the allele for white kernel (r). A wheat plant, homozygous for red kernel (RR), is crossed with a plant homozygous for white kernel (rr).",
+    questionText: "In your answer book, show a cross between a homozygous recessive plant and an F1 plant from the above cross. Show the following in your cross (Homozygous recessive; F1 from above): (i) Genotypes of parents ( ) × ( ) (ii) Possible gametes ○ × ○ ○ (iii) Genotypes of offspring ( ) ( ) (iv) Phenotypes of offspring ___ ___",
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "(i) Genotypes of parents (homozygous recessive × F1) — rr × Rr", marks: 4, contextNote: "2 × 2m." },
+    { id: "r-2", kind: "point", verbatim: "(ii) Possible gametes — r × R r", marks: 6, contextNote: "3 × 2m." },
+    { id: "r-3", kind: "point", verbatim: "(iii) Genotypes of offspring — Rr rr", marks: 4, contextNote: "2 × 2m. [Award marks for genotypes only if gametes correct in second line]" },
+    { id: "r-4", kind: "point", verbatim: "(iv) Phenotypes of offspring — Red White", marks: 6, contextNote: "2 × 3m. [Award marks for phenotypes only if they match genotypes in third line]" },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q12(c)",
+          "pages": [
+                11
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-0"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13ai", topicId: "agsci-4-1", conceptId: "ewe-gestation",
+    section: "B", questionRef: "2015 OL Q13(a)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "State the length in days of the gestation period in ewes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "145 -155 days", marks: 2 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(a)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13aii", topicId: "agsci-4-3-2", conceptId: "housing-at-lambing",
+    section: "B", questionRef: "2015 OL Q13(a)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "Give any three reasons for housing sheep at lambing time.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Facilitates supervision / easier feeding / warmer / prevents hypothermia or chill / avoids predation or safer / prevents poaching / reduces mortality / more spring grass", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Facilitates supervision","easier feeding","warmer","prevents hypothermia or chill","avoids predation or safer","prevents poaching","reduces mortality","more spring grass"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(a)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13aiii", topicId: "agsci-4-3-2", conceptId: "sheep-winter-housing",
+    section: "B", questionRef: "2015 OL Q13(a)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "List three features of winter housing for sheep.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good ventilation / no draughts / suitable floor type or named example / hygiene / dry (floor) / fresh water supply / adequate feeding space / suitable feeding system (e.g. barrier) / adequate floor space / adequate space at feeding trough or at barrier / warm", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Good ventilation","no draughts","suitable floor type or named example","hygiene","dry (floor)","fresh water supply","adequate feeding space","suitable feeding system (e.g. barrier)","adequate floor space","adequate space at feeding trough or at barrier","warm"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(a)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13aiv", topicId: "agsci-4-3-3", conceptId: "lamp-and-fostering-crate",
+    section: "B", questionRef: "2015 OL Q13(a)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "Describe the use of the following at lambing time: 1. The infra-red lamp 2. The fostering crate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Warms young lambs / warms weak lambs / prevents hypothermia or chill", marks: 5, contextNote: "Infra- red lamp: any two, 3m + 2m.", group: {"claimMax":2,"perOption":3,"options":["Warms young lambs","warms weak lambs","prevents hypothermia or chill"],"perOptionSteps":[3,2]} },
+    { id: "r-2", kind: "anyN", verbatim: "To foster a lamb (from a multiple birth) / onto ewe with one, or no, lamb / restrains ewe / prevents ewe rejecting adopted lamb", marks: 5, contextNote: "Fostering crate: any two, 3m + 2m.", group: {"claimMax":2,"perOption":3,"options":["To foster a lamb (from a multiple birth)","onto ewe with one, or no, lamb","restrains ewe","prevents ewe rejecting adopted lamb"],"perOptionSteps":[3,2]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(a)(iv)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-1","agricultural-science-2-3"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13bi", topicId: "agsci-3-2", conceptId: "potato-varieties",
+    section: "B", questionRef: "2015 OL Q13(b)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "Name one variety of each of the following categories of potato: 1. First early potatoes 2. Second early potatoes 3. Maincrop potatoes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Home Guard / Epicure", marks: 3, contextNote: "First early: any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Home Guard","Epicure"]} },
+    { id: "r-2", kind: "anyN", verbatim: "British Queen / Maris Piper", marks: 3, contextNote: "Second early: any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["British Queen","Maris Piper"]} },
+    { id: "r-3", kind: "anyN", verbatim: "Kerr Pinks / Rooster / Golden Wonder / Records", marks: 3, contextNote: "Main crop: any one, 3m.", group: {"claimMax":1,"perOption":3,"options":["Kerr Pinks","Rooster","Golden Wonder","Records"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(b)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-3","agricultural-science-2-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13bii", topicId: "agsci-3-3-1", conceptId: "donegal-seed-potatoes",
+    section: "B", questionRef: "2015 OL Q13(b)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "Explain why seed potatoes are mainly grown in Co. Donegal.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Windy weather / aphid free / prevents viral infection / isolation / reduces spread of diseases", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Windy weather","aphid free","prevents viral infection","isolation","reduces spread of diseases"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(b)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13biii", topicId: "agsci-3-3-2", conceptId: "earthing-up-reasons",
+    section: "B", questionRef: "2015 OL Q13(b)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "Give two reasons for earthing-up of potatoes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Prevents exposure to light / prevents greening / controls weeds / prevents blight spores reaching tubers / increases yield / supports plant / reduces frost damage", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Prevents exposure to light","prevents greening","controls weeds","prevents blight spores reaching tubers","increases yield","supports plant","reduces frost damage"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(b)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-2-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13biv", topicId: "agsci-3-3-3", conceptId: "potato-storage-conditions",
+    section: "B", questionRef: "2015 OL Q13(b)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d).",
+    questionText: "State two conditions needed for the storage of harvested potatoes.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Good ventilation / dry / frost-proof / easy access / high humidity / hygiene / free from vermin or diseases / cold / dark / forced ventilation if stacks more than 1.8m", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Good ventilation","dry","frost-proof","easy access","high humidity","hygiene","free from vermin or diseases","cold","dark","forced ventilation if stacks more than 1.8m"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(b)(iv)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "diagram",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13ci", topicId: "agsci-4-3-2", conceptId: "milk-constituents-a-b",
+    section: "B", questionRef: "2015 OL Q13(c)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). The table below shows an average composition of cow’s milk.",
+    questionText: "Identify A and B from the table.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Water", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B = Protein", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(c)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-milk-composition",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+          "srcHash": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+          "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Water","askedInThisQuestion":true},{"letter":"B","meaning":"Protein","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13cii", topicId: "agsci-4-3-2", conceptId: "milk-fat-factors",
+    section: "B", questionRef: "2015 OL Q13(c)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). The table below shows an average composition of cow’s milk.",
+    questionText: "A number of factors affect fat content in milk. List any three of these factors.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Breed / age / feed quantity / feed type / milking interval / stage of milking / stage of lactation / disease / individuality within breed", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Breed","age","feed quantity","feed type","milking interval","stage of milking","stage of lactation","disease","individuality within breed"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(c)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-milk-composition",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+          "srcHash": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+          "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4","agricultural-science-0-1"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13ciii", topicId: "agsci-4-3-2", conceptId: "milk-quality-tests",
+    section: "B", questionRef: "2015 OL Q13(c)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). The table below shows an average composition of cow’s milk.",
+    questionText: "To ensure milk is of good quality, it is tested in a number of ways. List any three of these tests, other than tests for fat or protein content.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Total bacterial count or TBC / somatic cell count or SCC / temperature / water content / antibiotic content / sediment / thermoduric", marks: 9, contextNote: "Any three, 3 marks each (3 × 3m).", group: {"claimMax":3,"perOption":3,"options":["Total bacterial count or TBC","somatic cell count or SCC","temperature","water content","antibiotic content","sediment","thermoduric"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(c)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-milk-composition",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+          "srcHash": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+          "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13civ", topicId: "agsci-4-3-2", conceptId: "milking-hygiene",
+    section: "B", questionRef: "2015 OL Q13(c)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). The table below shows an average composition of cow’s milk.",
+    questionText: "Explain any two management practices to ensure good hygiene at milking.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Clean holding area / milker hygiene / parlour hygiene / wash or wipe udder / strip cup / teat dip / filter / plate cooler / wash equipment regularly / clean bulk tank / cool milk to 4 °C or less in bulk tank / fly screens", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Clean holding area","milker hygiene","parlour hygiene","wash or wipe udder","strip cup","teat dip","filter","plate cooler","wash equipment regularly","clean bulk tank","cool milk to 4 °C or less in bulk tank","fly screens"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(c)(iv)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+    figure: {
+          "candId": "agsci-2015-ol-paper-milk-composition",
+          "src": "/exam-figures/agricultural-science/markbank/agsci-2015-ol-paper-milk-composition.png",
+          "srcHash": "cdc46803c2b26cbfb4dd6a81bb9ef23d",
+          "alt": "Original Question 13(c) table of the average composition of cow’s milk: A 87.5%, Lactose 4.6%, Fats 3.8%, B 3.3%, Minerals and vitamins 0.8%.",
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper, PDF page 12 — © State Examinations Commission.",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13di", topicId: "agsci-4-3-2", conceptId: "farrowing-house-temperature",
+    section: "B", questionRef: "2015 OL Q13(d)(i)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "What is the temperature in the farrowing house?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "20 °C", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(i)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-3"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13dii", topicId: "agsci-4-3-1", conceptId: "pig-unit-parts",
+    section: "B", questionRef: "2015 OL Q13(d)(ii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "Name two other parts of a pig production unit.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Dry sow house / weaner house / fattener house", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Dry sow house","weaner house","fattener house"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(ii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13diii", topicId: "agsci-4-3-2", conceptId: "farrowing-crate-use",
+    section: "B", questionRef: "2015 OL Q13(d)(iii)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "Explain the use of the farrowing crate.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Allows sow to suckle bonhams / prevents crushing or death / prevents sow eating bonhams / allows bonhams access to creep", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Allows sow to suckle bonhams","prevents crushing or death","prevents sow eating bonhams","allows bonhams access to creep"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(iii)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-5"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13div", topicId: "agsci-4-3-3", conceptId: "newborn-bonham-practices",
+    section: "B", questionRef: "2015 OL Q13(d)(iv)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "Describe two practices carried out on newly born bonhams.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Teeth clipping / tail docking / iron injection / ears notched / ensure bonhams suck sow / navel dip", marks: 6, contextNote: "Any two, 3 marks each (2 × 3m).", group: {"claimMax":2,"perOption":3,"options":["Teeth clipping","tail docking","iron injection","ears notched","ensure bonhams suck sow","navel dip"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(iv)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13dv", topicId: "agsci-4-3-2", conceptId: "bonham-weaning-age",
+    section: "B", questionRef: "2015 OL Q13(d)(v)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "At what age are bonhams normally weaned?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "28 - 35 days/ 4 -5 weeks", marks: 3 },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(v)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
+  {
+    ...base, qa: {"gates":["verbatim","tariff","figure","source-crop"],"humanReviewedBy":"agent-source-reviewed","humanReviewedAt":"2026-10-14"},
+    ...examCardCurriculum("agricultural-science", 2015, ["agricultural-science-3-4"]), kind: "question",
+    year: 2015, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2015 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2015-ol-q13dvi", topicId: "agsci-4-3-2", conceptId: "food-conversion-ratio",
+    section: "B", questionRef: "2015 OL Q13(d)(vi)",
+    stem: "Answer any two of the parts (a), (b), (c), (d). In pig production, the sow is moved to the farrowing house to have her bonhams (piglets).",
+    questionText: "Food conversion ratio (FCR) is a very important consideration in pig production. Explain the term FCR.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Ratio of food consumed / to liveweight gained", marks: 6, contextNote: "2 × 3m.", group: {"claimMax":2,"perOption":3,"options":["Ratio of food consumed","to liveweight gained"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-text",
+          "label": "OFFICIAL QUESTION PAGE",
+          "title": "Agricultural Science 2015 Ordinary — Q13(d)(vi)",
+          "pages": [
+                12
+          ],
+          "attribution": "SEC Agricultural Science 2015 Ordinary Level examination paper — © State Examinations Commission.",
+          "presentationNote": "Open the original page for the published wording, photographs, tables and examination context."
+    },
+  } as SecCard,
 ];
