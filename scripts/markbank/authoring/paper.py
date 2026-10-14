@@ -161,6 +161,16 @@ TERMINAL = re.compile(r'[.?!]$')
 INLINE_MARKER = re.compile(
     r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# Mathematics only. The SEC's maths font maps its italic letters onto Syriac
+# and Arabic Supplement code points (U+0700-U+077F: "f(x)" arrives as
+# "\u0742(\u0754)"), so a part that opens with a function -- 2017 HL Paper 1
+# Q3(b) "(b) f(x) = ln(3x\u00b2 + 2) and g(x) = x + 5" -- failed the lookahead
+# above, stayed welded to the tail of (a), and its card shipped as an orphan.
+# Gated to maths so every other subject's census is unchanged by
+# construction: no other subject's papers set their letters in that font.
+MATHS_INLINE_MARKER = re.compile(
+    r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff\u0700-\u077f])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -453,8 +463,24 @@ class Paper:
                 if m.group(1) and found == 1 and q is not None and not self.parts:
                     q, dot_heads = None, 0
                     self.stems = {}
+                rest = text[m.end():].strip()
                 if q is not None and not (q < found <= q + 3) and not variant:
-                    pass
+                    # Mathematics only: the number is the wrapped END of the
+                    # previous line, not a head. 2017 HL Paper 2 Q3 prints
+                    # "|AG| : |GP| = 2 : 1." with the "1." wrapped onto the
+                    # line that opens "(a) Find the co-ordinates of P.", so the
+                    # block reads "1. (a) Find ...". The backwards guard
+                    # rightly refused Question 1, but the whole block then fell
+                    # into the stem and Q3(a) was never keyed. Give the number
+                    # back to the line it ends and read the part. Gated to
+                    # maths, so no other subject's census can move.
+                    if self.subject == 'maths' and m.group(2) and rest \
+                            and _leading(rest)[:2] != (None, None):
+                        tail = (self.parts.get(open_key) if open_key
+                                else self.stems.get((q, letter)))
+                        if tail and re.search(r'[:=]$', tail[-1].rstrip()):
+                            tail[-1] = f'{tail[-1].rstrip()} {m.group(2)}.'
+                            text = rest
                 else:
                     if m.group(2):
                         dot_heads += 1
@@ -462,7 +488,6 @@ class Paper:
                     or_pending = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
-                    rest = text[m.end():].strip()
                     if rest and _leading(rest)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses
@@ -585,6 +610,7 @@ class Paper:
         """
         fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
         carry = ''
+        inline = MATHS_INLINE_MARKER if self.subject == 'maths' else INLINE_MARKER
         for path in self.files:
             for block in _blocks(path):
               # A choice question prints its alternative welded on after a
@@ -599,7 +625,7 @@ class Paper:
                 prefix = ''
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
-                pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
+                pieces = [p.strip() for p in inline.split(text) if p.strip()]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:

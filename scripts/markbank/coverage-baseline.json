@@ -198,11 +198,11 @@
   "cards": 1611,
   "contentHash": "75d976d6bcce28e8",
   "coveragePct": 50.3,
-  "covered": 1746,
+  "covered": 1748,
   "excluded": 0,
-  "leaves": 3474,
+  "leaves": 3476,
   "open": 1728,
-  "orphans": 2,
+  "orphans": 0,
   "papers": {
    "count": 82,
    "hash": "85af10c8f0afdec2"
