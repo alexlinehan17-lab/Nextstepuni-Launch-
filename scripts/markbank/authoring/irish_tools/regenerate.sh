@@ -18,7 +18,7 @@ GENERATORS="irish_foundation_2010.py irish_foundation_2011.py irish_foundation_2
  irish_foundation_2020.py irish_foundation_2021.py irish_foundation_2022.py irish_foundation_2023.py irish_foundation_2024.py
  irish_foundation.py irish_foundation_2026.py irish_higher_2026_p1.py irish_higher_2026_p2.py irish_ordinary_2026_p1.py
  irish_ordinary_2026_p2.py irish_higher_2025_p1.py irish_higher_2025_p2.py irish_ordinary_2025_p1.py irish_ordinary_2025_p2.py
- irish_higher_2024_p1.py irish_ordinary_2024_p1.py irish_ordinary_2024_p2.py irish_higher_2023_p1.py irish_higher_2023_p2.py irish_ordinary_2023_p1.py"
+ irish_higher_2024_p1.py irish_ordinary_2024_p1.py irish_ordinary_2024_p2.py irish_higher_2023_p1.py irish_higher_2023_p2.py irish_ordinary_2023_p1.py irish_ordinary_2023_p2.py"
 OUTPUTS="components/MarkBank/cards/irish data/examTopics data/paperTrail public/paper-anchors public/paper-answers
  scripts/paper-trail/answers scripts/paper-trail/topic-tags/tags/irish.json scripts/markbank/authored"
 

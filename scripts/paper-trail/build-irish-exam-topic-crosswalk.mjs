@@ -30,7 +30,7 @@ const RUNTIME_PATH = path.join(ROOT, 'data/examTopics/irish-runtime.json');
 const CURRICULUM_PATH = path.join(ROOT, 'data/examTopics/irish-curriculum-crosswalk.json');
 
 const readJson = file => JSON.parse(fs.readFileSync(file, 'utf8'));
-const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json']
+const reviewedHigherTasks = ['authored.json', 'higher-2026-p1-authored.json', 'higher-2026-p2-authored.json', 'ordinary-2026-p1-authored.json', 'ordinary-2026-p2-authored.json', 'higher-2025-p2-authored.json', 'ordinary-2025-p2-authored.json', 'ordinary-2024-p2-authored.json', 'higher-2023-p2-authored.json', 'ordinary-2023-p2-authored.json']
   .flatMap(name => readJson(path.join(ROOT, 'components/MarkBank/cards/irish', name)).cards)
   .filter(card => card.reviewedAt && card.atlasQuestionId);
 const reviewedTaskKeys = new Set(reviewedHigherTasks.map(card => card.year + '|' + card.paperFileid + '.pdf|' + card.atlasQuestionId));

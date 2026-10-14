@@ -60,11 +60,13 @@ describe('Irish: choice is not a route', () => {
         /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)( thíos)?\.$/],
       ['2024 OL Paper 2 options and sub-questions', raw.filter(c => /^irish-2024-ol-p2-(prose-2[ab]-[a-c]|prose-2a-c-an-lasair-choille|prose-2a-[ab]-(i{1,3}|iv|v)|poetry-3[ab]-[a-c](-i{1,3}(-[a-d])?)?)$/.test(c.id)),
         /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)( thíos)?\.$/],
+      ['2023 OL Paper 2 options and sub-questions', raw.filter(c => /^irish-2023-ol-p2-(prose-2[ab]-[a-c]|prose-2a-c-an-lasair-choille|prose-2a-a-(i{1,3}|iv|v)|poetry-3[ab]-[a-c](-i{1,3})?)$/.test(c.id)),
+        /^Freagair do rogha dhá cheann as \(a\), \(b\) nó \(c\)( thíos)?\.$/],
       ['Foundation reading parts', raw.filter(c => /^irish-20\d\d-fl-r-[23][a-c]-\d$/.test(c.id)),
         /^Ceist [23] Freagair do rogha dhá cheann de \(a\), \(b\), \(c\) anseo thíos\.$/],
     ];
     expect(governed.map(([name, cards]) => [name, cards.length])).toEqual([
-      ['OL Paper 1 titles', 36], ['2026 OL Paper 2 routes', 13], ['2025 OL Paper 2 options and sub-questions', 24], ['2024 OL Paper 2 options and sub-questions', 36],
+      ['OL Paper 1 titles', 36], ['2026 OL Paper 2 routes', 13], ['2025 OL Paper 2 options and sub-questions', 24], ['2024 OL Paper 2 options and sub-questions', 36], ['2023 OL Paper 2 options and sub-questions', 27],
       ['Foundation reading parts', 510],
     ]);
     for (const [, cards, instruction] of governed) {
