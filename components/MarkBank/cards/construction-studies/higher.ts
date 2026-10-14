@@ -1072,13 +1072,43 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q1-b", topicId: "cons-1-1", conceptId: "typical-design-detailing-prevent-ingress-rainwater",
+    id: "cons-2018-hl-q1-b", topicId: "cons-3-10", conceptId: "typical-design-detailing-prevent-ingress-rainwater",
     section: "B", questionRef: "2018 HL Q1(b)",
-    questionText: "On your drawing, show the typical design detailing to prevent the ingress of rainwater between the roof of the porch and the front wall of the house. Note: Position your drawing carefully to ensure that the answer fits on the drawing sheet.",
-    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    stem: "A front porch projects 1.2 metres from the external wall of a dwelling house, as shown. The insulated wall of the porch is of timber frame construction with a rainscreen of vertical cedar cladding. The studwork is 250 mm × 50 mm. The external wall of the house is a 400 mm rendered concrete block wall with a full-fill insulated cavity. The lean-to roof of the porch is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is also fixed to the underside of the sloping rafters.",
+    questionText: "On your drawing, show the typical design detailing to prevent the ingress of rainwater between the roof of the porch and the front wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2018-hl-q1-b-r1", kind: "point", verbatim: "stepped DPC/ flashing and counter flashing", marks: 4, openList: true },
+    { id: "abutment", kind: "criterion", verbatim: "stepped DPC/ flashing and counter flashing", marks: 4, contextNote: "Show and identify a stepped DPC with lead flashing and counter flashing at the abutment, as in the scheme’s model section.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber-clad porch with a lean-to slated roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-original.png",
+          "srcHash": "bf7cdae87a2698c0a3a4f2371d169fee",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 1: the printed question with a sketch of a cedar-clad front porch with a lean-to slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-section.png",
+          "srcHash": "2e2b6e2b1a2fedb72a32a1eeae0cf4aa",
+          "alt": "SEC model vertical section through the timber-clad porch wall, the lean-to roof and its abutment with the cavity wall, with the detail lists (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1088,133 +1118,75 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q2-c", topicId: "cons-1-8", conceptId: "strategies-would-promote-positive-safety-culture",
     section: "B", questionRef: "2018 HL Q2(c)",
     questionText: "Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2018-hl-q2-c-r1", kind: "anyN", verbatim: "Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["buddy system, a new employee be paired with a more experienced worker","ensure all workers are fully trained to carry out required tasks","regular appraisal by management to ensure safe practice by all workers","safe pass course mandatory for all workers","all workers look out for one another and alert to possible risks","manual handling course mandatory for all workers","operators’ licences for machinery e.g. forklift, telly porter etc","hazardous goods training course","frequent site safety meetings","a safety statement must have an emergency plan outlined in the case of an accident. In the event of an emergency immediate action can be taken to ensure the treatment of the injured party","ensure that all workers and visitors to the site are familiar with the safety statement","provide visitors to the site with appropriate PPE","ensure all signage and directional signs are clearly visible","provide a safer working environment"]} },
+    { id: "strategy-1", kind: "criterion", verbatim: "Strategy 1", marks: 4, contextNote: "Such as: a buddy system pairing new and experienced workers; Safe Pass and manual handling courses for all.", permittedMarks: [0,1,2,3,4] },
+    { id: "strategy-2", kind: "criterion", verbatim: "Strategy 2", marks: 4, contextNote: "A second, different strategy. Such as: frequent site safety meetings; a safety statement and emergency plan all workers know.", permittedMarks: [0,1,2,3,4] },
+    { id: "strategy-3", kind: "criterion", verbatim: "Strategy 3", marks: 4, contextNote: "A third, different strategy. Such as: a safety representative on larger sites; clear multilingual signage and interpreters; everyone alert to risks for one another.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Site risks, guidelines and safety culture",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed tasks in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-original.png",
+          "srcHash": "ff9ae331a1fde26b21750ef6e1a7c83d",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 2: the printed question with a sketch of an excavator digging a trench.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q3-a", topicId: "cons-6-5", conceptId: "considerations-should-taken-into-account-design",
+    id: "cons-2018-hl-q3-a", topicId: "cons-1-2", conceptId: "considerations-should-taken-into-account-design",
     section: "B", questionRef: "2018 HL Q3(a)",
+    stem: "The drawing shows the ground floor plan and the front elevation of a terraced cottage. Also shown is a portion of the rear garden. The walls of the cottage are of random rubble construction and are rendered. The rear wall A-A is south facing. To provide additional living space, and to enhance the health and wellbeing of the occupants, it has been decided to build a single-storey extension, not greater than 18.0 m2 in area, to the rear of the cottage.",
     questionText: "Discuss three considerations that should be taken into account in the design of the extension to ensure that the health and wellbeing of the occupants is enhanced by building the extension.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":10,"perPart":6}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2018-hl-q3-a-r1", kind: "anyN", verbatim: "Discuss three considerations that should be taken into account in the design of the extension to ensure that the health ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["putting the health and well-being of the occupants at the centre of the design process - biophilic design","people have phototropic tendencies, move to the light, sit in light-filled spaces, enjoy sitting and working in a naturally lighted space – enhances health and well-being, so consideration of daylight central to design","purposeful design – to connect with nature - being able to see plants, hear birds, observe change of seasons etc. reduces stress, improves mental health - a positive impact on health and well-being","increased glazing to the south increases natural solar gains, reduces heating costs and improves health and well-being","natural light and shade evoke feelings of drama and intrigue as well as a sense of calm","using materials that have a strong connection with the local ecology creates a distinct sense of place - genius loci - and peace and gives a feeling of connectedness and well-being","decking to extend the inside to outside with seating to enjoy nature and the surroundings, enhances health and wellbeing","a space with good thermal and airflow variabilities is both invigorating and comforting – provide openable windows, skylight windows to provide airflow and purge overheating in hot weather","providing a sense of safety reduces stress and anxiety levels, solid walls give security","providing a multi-sensory experience of nature is both stimulating and calming, flowers, trees and plants"]} },
+    { id: "consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 6, contextNote: "Such as: biophilic design — a connection with nature, seeing plants, hearing birds; daylight central to the design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 6, contextNote: "A second, different consideration. Such as: more south glazing for solar gain and lower heating costs; natural light and shade.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "consideration-3", kind: "criterion", verbatim: "Consideration 3", marks: 6, contextNote: "A third, different consideration. Such as: local, natural materials; decking extending the inside outdoors; good thermal and airflow comfort; a sense of safety.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q3-c", topicId: "cons-1-1", conceptId: "how-proposed-design-meets-consideration-discussed",
-    section: "B", questionRef: "2018 HL Q3(c)",
-    questionText: "Discuss how your proposed design meets each consideration discussed at 3(a) above.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 6","answer":3,"ofParts":12,"perPart":6}, totalMarks: 18,
-    rows: [
-    { id: "cons-2018-hl-q3-c-r1", kind: "anyN", verbatim: "Discuss how your proposed design meets each consideration discussed at 3(a) above.", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["large south facing windows to maximise light, solar gains and create a visual connection with nature","sliding, folding or swing doors to garden to bring outside in and to link garden to extension brings visual delight and fosters the health and wellbeing of the occupants","open plan layout, windows with low cill levels and roof lights all allow sunlight to enter further into the dwelling","bringing the outside in through sliding/swing doors and low level glazing fosters visual delight","flexible open-plan layout allows penetration of light and spaces can be reconfigured to meet changing needs","open-plan layout facilitates ease of movement for all and especially for persons with reduced mobility","high ceilings, cathedral ceilings, increase volume and give a sense of spaciousness in a small extension","opening windows or similar approach to allow natural ventilation","construction of wall and windows to have high thermal performance to maintain thermal comfort","shading added to prevent overheating, increase privacy and facilitate close contact with nature","external materials used that are tactile and connected to the ecology of the country","water feature and planting added to stimulate the senses any other relevant points See: 14 Patterns of Biophilic Design – Improving Health and Well-Being in the Built Environment:"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q4-a", topicId: "cons-1-1", conceptId: "importance-when-identifying-site-new-house",
-    section: "B", questionRef: "2018 HL Q4(a)",
-    questionText: "Using notes and freehand sketches, discuss the importance of each of the following when identifying a suitable site for a new house in a rural landscape: • characteristics of existing dwellings • characteristics of the proposed site.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":8,"perPart":6}, totalMarks: 24,
-    rows: [
-    { id: "cons-2018-hl-q4-a-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 24, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":4,"perOption":6,"options":["the topography of the site should be used as inspiration for the form of a new house","existing mounds, slopes, contours on a site should not be removed to facilitate a new proposal but should be used to their potential as a natural shelter or privacy barrier","sites on top of hills may not get planning permission as a new proposal may break the skyline","the name of an area – often in Irish, may hint towards the previous use of the land and its soil conditions e.g. bog road and may inspire the new house design","the orientation and shape of the site will indicate if the new build will maximise solar gain by having a glazed elevation facing south","the presence of plants which only grow in wet land may be an indication of poor soil percolation","proximity to services such as water, broadband and electricity to the site - the further the distance the greater the costs","the presence of rivers, lakes or streams nearby may cause flooding and will inform the siting of the wastewater treatment plant and percolation area"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q4-c", topicId: "cons-6-4", conceptId: "well-proportioned-selected-site-immediate-boundaries",
-    section: "B", questionRef: "2018 HL Q4(c)",
-    questionText: "Draw a well-proportioned sketch of your selected site and the immediate boundaries. On your sketch, show a preferred: • location and orientation of a house on the site • layout of the road entrance and the driveway to the house. For each of the above, justify your design choices.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":12,"perPart":3}, totalMarks: 15,
-    rows: [
-    { id: "cons-2018-hl-q4-c-r1", kind: "anyN", verbatim: "Draw a well-proportioned sketch of your selected site and the immediate boundaries. On your sketch, show a preferred: • ", marks: 15, contextNote: "The scheme groups its answer under: The house is to be positioned so that; The layout of the entrance and driveway", openList: true, group: {"claimMax":5,"perOption":3,"options":["the side of the house with the greatest surface area is south facing to maximise solar gains which will increase its sustainability and reduce energy costs","it is close to the road where services are located","it is set back from the road to reduce the environmental impact on the landscape","house placed so that greater privacy can be achieved","the form and layout of the proposal is similar to the characteristics of existing vernacular structures","is short to reduce the need for hard paving and surface water disposal facilities which will save money","allows shrubs to be planted to help integrate the house into the landscape and increase privacy","enables the driver to clearly see oncoming traffic from both sides","follows the contours of the site instead of cutting into the landscape","is set back – 5 metres - so that a car waiting to enter closed gates is not obstructing traffic, sidewalls splayed at 45° for clear vision","meets the criteria set out by the local authority – in design and measurements","house is positioned close to the perimeter fence, minimum driveway, reducing hard surfaces and cost and allows maximum garden space to supply house with garden produce – fruit and vegetables"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q5-a", topicId: "cons-6-1", conceptId: "calculate-value-uninsulated-concrete-ground-floor",
-    section: "B", questionRef: "2018 HL Q5(a)",
-    questionText: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickness 50 mm Concrete floor slab thickness 100 mm Radon barrier thickness 0.25 mm Sand blinding thickness 40 mm Hardcore thickness 200 mm Subsoil thickness 300 mm Thermal data of the concrete ground floor: Resistance of internal top surface of floor (R) 0.104 m2 °C/W Resistivity of fine screed (r) 0.710 m °C/W Conductivity of concrete floor slab (k) 1.280 W/m °C Conductivity of radon barrier (k) 0.250 W/m °C Conductivity of sand blinding (k) 0.160 W/m °C Conductivity of hardcore (k) 1.350 W/m °C Conductivity of subsoil (k) 1.600 W/m °C",
-    tariffModel: {"kind":"bestNofParts","notation":"9 x 3","answer":9,"ofParts":9,"perPart":3}, totalMarks: 27,
-    rows: [
-    { id: "cons-2018-hl-q5-a-r1", kind: "anyN", verbatim: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickn", marks: 27, openList: true, group: {"claimMax":9,"perOption":3,"options":["Tabulation","Internal top surface resistance","Fine screed","Concrete floor slab","Radon barrier","Sand blinding","Hardcore","Subsoil","Calculation of U-value of ground floor"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q5-b", topicId: "cons-6-1", conceptId: "value-concrete-floor-obtained-above-data",
-    section: "B", questionRef: "2018 HL Q5(b)",
-    questionText: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the uninsulated concrete floor slab: • dimensions of floor slab 6.0 metres × 12.0 metres • average internal temperature 21 °C • average temperature of subsoil 5 °C • heating period 10 hours daily for 38 weeks per annum • cost of oil 96 cent per litre • calorific value of oil 37350 kJ per litre • 1000 Watts 1 kJ per second.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
-    rows: [
-    { id: "cons-2018-hl-q5-b-r1", kind: "anyN", verbatim: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost a", marks: 15, contextNote: "The scheme groups its answer under: Heat lost through uninsulated floor; 37350", openList: true, group: {"claimMax":5,"perOption":3,"options":["Heat loss formula and calculations","Heating duration for one year","k/Joules calculation for one year","Litres of oil for one year","Annual cost of heat loss"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q5-c", topicId: "cons-6-3", conceptId: "proposed-redesign-above-floor-upgrade-its",
-    section: "B", questionRef: "2018 HL Q5(c)",
-    questionText: "It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by including expanded polystyrene in the design of the floor.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 3","answer":5,"ofParts":5,"perPart":3}, totalMarks: 15,
-    rows: [
-    { id: "cons-2018-hl-q5-c-r1", kind: "anyN", verbatim: "It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by incl", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Resistance for U- value for 0.15Wm2K using R=1/U","Resistance from calculated U-value from part (a)","Difference in resistances (required resistance)","Application of formula R = T/k","Required thickness of insulation"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q6-a", topicId: "cons-1-1", conceptId: "advantages-disadvantages-self-build-method-building",
-    section: "B", questionRef: "2018 HL Q6(a)",
-    questionText: "Discuss two advantages and two disadvantages of self-build as a method of building a house.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 3","answer":4,"ofParts":4,"perPart":3}, totalMarks: 12,
-    rows: [
-    { id: "cons-2018-hl-q6-a-r1", kind: "anyN", verbatim: "Discuss two advantages and two disadvantages of self-build as a method of building a house.", marks: 12, openList: true, group: {"claimMax":4,"perOption":3,"options":["Advantage 1 of self-build","Advantage 2 of self-build","Disadvantage 1 of self-build","Disadvantage 2 of self-build"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q6-b", topicId: "cons-1-1", conceptId: "features-design-shown-make-house-self",
-    section: "B", questionRef: "2018 HL Q6(b)",
-    questionText: "Discuss in detail, using notes and freehand sketches, three features of the design shown that make the house suitable as a self-build project.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 5","answer":6,"ofParts":11,"perPart":5}, totalMarks: 30,
-    rows: [
-    { id: "cons-2018-hl-q6-b-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 30, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":6,"perOption":5,"options":["the house is small and compact, facilitating ease of construction by self-builders","no need for specially designed beams or supports","one and-a-half storey build maximises living space with minimum of materials","narrow width – can be spanned with standard wooden joists without need for structural steel","lighter building simplifies foundation design and earthworks – environmentally friendly","straightforward roof design for ease of marking-out and erection","light timber frame and external rainscreen cladding obviates need for mechanical lifting equipment","framework can be constructed on site, can be easily cut by hand or with chop saw","early closing-in of frame provides a dry workspace at an early stage of construction","indoor trades can commence early in build process – electrical and plumbing","low moisture, short drying out time, house can be lived in more quickly due to design of construction"]} },
-    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Extending a terraced cottage for health and wellbeing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan and elevation retained. Considerations and the layout are open responses; the scheme gives model layouts."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-original.png",
+          "srcHash": "b736af9eaab5fdc11b6c02bc49eac386",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 3: the printed question with the front elevation and ground floor plan of a terraced cottage and its rear garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
     figure: {
-          "candId": "construction-studies-2018-hl-paper-p005-i0",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-hl-paper-p005-i0.png",
-          "srcHash": "ff8e5d18220a496c5db9cc6d7a87128b",
-          "alt": "Two stacked drawings of a narrow eco-friendly house. The upper drawing is a coloured front elevation of a tall two-storey house with a steeply pitched roof, vertical timber board cladding over the whole facade, a metal flue or chimney rising past the left-hand side of the roof, a large square upper-floor window, a glazed front door with a narrow full-height window to its left and a wider horizontal window to its right, and a mature broadleaf tree drawn to the right of the house. The lower drawing is the ground floor plan, dimensioned 10.0 m on the vertical side and 4.0 m across the bottom. The plan shows an open living area at the top with two armchairs, a sofa, a round table and a stove set against the left wall; a dining table with four chairs in the middle; a kitchen run along the right-hand wall with a sink and a hob; a straight staircase against the left wall at the lower end; and a small bathroom in the bottom right corner with a WC and a wash basin, entered through a hallway with two swing doors. Window openings are marked along both long walls.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission",
+          "candId": "construction-studies-2018-HL-q3-considerations",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-considerations.png",
+          "srcHash": "9a302fa80af316033b8ebe27cfd6edfc",
+          "alt": "SEC 2018 Higher marking scheme notes on health and wellbeing considerations for the extension, with a sketch plan.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -1223,39 +1195,491 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q7-b", topicId: "cons-6-2", conceptId: "clearly-best-practice-design-detailing-ensure",
+    id: "cons-2018-hl-q3-c", topicId: "cons-1-2", conceptId: "how-proposed-design-meets-consideration-discussed",
+    section: "B", questionRef: "2018 HL Q3(c)",
+    stem: "The drawing shows the ground floor plan and the front elevation of a terraced cottage. Also shown is a portion of the rear garden. The walls of the cottage are of random rubble construction and are rendered. The rear wall A-A is south facing. To provide additional living space, and to enhance the health and wellbeing of the occupants, it has been decided to build a single-storey extension, not greater than 18.0 m2 in area, to the rear of the cottage.",
+    questionText: "Discuss how your proposed design meets each consideration discussed at 3(a) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "discussion-1", kind: "criterion", verbatim: "Discussion 1", marks: 6, contextNote: "How the design meets the first consideration. Such as: large south windows maximise light and solar gain and connect with nature.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "discussion-2", kind: "criterion", verbatim: "Discussion 2", marks: 6, contextNote: "How the design meets the second consideration. Such as: sliding doors bring the garden in; open plan lets sunlight through.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "discussion-3", kind: "criterion", verbatim: "Discussion 3", marks: 6, contextNote: "How the design meets the third consideration. Such as: high thermal performance and shading; external materials connected to the local ecology; water and planting to stimulate the senses.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Extending a terraced cottage for health and wellbeing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan and elevation retained. Considerations and the layout are open responses; the scheme gives model layouts."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-original.png",
+          "srcHash": "b736af9eaab5fdc11b6c02bc49eac386",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 3: the printed question with the front elevation and ground floor plan of a terraced cottage and its rear garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q3-meets",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-meets.png",
+          "srcHash": "806ea6c058dae929b2b490715584526b",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on how the design meets each consideration.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q4-a", topicId: "cons-1-3", conceptId: "importance-when-identifying-site-new-house",
+    section: "B", questionRef: "2018 HL Q4(a)",
+    questionText: "Using notes and freehand sketches, discuss the importance of each of the following when identifying a suitable site for a new house in a rural landscape: characteristics of existing dwellings; characteristics of the proposed site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
+    rows: [
+    { id: "dwellings", kind: "criterion", verbatim: "Characteristics of existing dwellings (notes and sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: scale, volume, shape and materials informed by the local vernacular; simple regular forms; the direction and position of existing dwellings; not overshadowing or overlooking neighbours.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "site", kind: "criterion", verbatim: "Characteristics of proposed site (notes and sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: road layout and sightlines for a safe entrance; existing stone walls, trees and boundaries kept; topography and natural shelter; orientation for solar gain; soil, percolation, services and flooding.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Choosing a rural site and siting the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original site location map retained. Both printed characteristics in (a) are required; in (b) either site may be chosen and is marked alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-original.png",
+          "srcHash": "66ae89d14336e395468a1c2982cd12fb",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 4: the printed question with the site location map showing sites A and B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q4-characteristics",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-characteristics.png",
+          "srcHash": "980d2e5f9c70fa0bfd6bb82f9021a63c",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on the characteristics of existing dwellings and of the proposed site (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q4-c", topicId: "cons-1-3", conceptId: "well-proportioned-selected-site-immediate-boundaries",
+    section: "B", questionRef: "2018 HL Q4(c)",
+    questionText: "Draw a well-proportioned sketch of your selected site and the immediate boundaries. On your sketch, show a preferred: location and orientation of a house on the site; layout of the road entrance and the driveway to the house. For each of the above, justify your design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 21,
+    rows: [
+    { id: "sketch", kind: "criterion", verbatim: "Sketch showing location, orientation, road entrance and driveway (5 × 3 marks)", marks: 15, contextNote: "Sketch 3, location 3, orientation 3, entrance 3 and driveway 3. Such as: the largest elevation facing south; close to the road where the services are; a short driveway; a splayed entrance set back about 5 m with clear sightlines both ways.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "justification", kind: "criterion", verbatim: "Justification", marks: 6, contextNote: "The location, orientation, entrance and driveway justified, such as for solar gain, privacy, lower cost and safe access.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Choosing a rural site and siting the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original site location map retained. Both printed characteristics in (a) are required; in (b) either site may be chosen and is marked alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-original.png",
+          "srcHash": "66ae89d14336e395468a1c2982cd12fb",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 4: the printed question with the site location map showing sites A and B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q4-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-layout.png",
+          "srcHash": "d2a3ca83ad0a73434ed87b83e5afeeb3",
+          "alt": "SEC model sketches of the house location, orientation, entrance and driveway on sites A and B.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q5-a", topicId: "cons-6-1", conceptId: "calculate-value-uninsulated-concrete-ground-floor",
+    section: "B", questionRef: "2018 HL Q5(a)",
+    stem: "A house built in the 1970s has an uninsulated solid concrete ground floor, as shown, with a sand/cement fine screed finish.",
+    questionText: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickness 50 mm; Concrete floor slab thickness 100 mm; Radon barrier thickness 0.25 mm; Sand blinding thickness 40 mm; Hardcore thickness 200 mm; Subsoil thickness 300 mm. Thermal data of the concrete ground floor: Resistance of internal top surface of floor (R) 0.104 m2 °C/W; Resistivity of fine screed (r) 0.710 m °C/W; Conductivity of concrete floor slab (k) 1.280 W/m °C; Conductivity of radon barrier (k) 0.250 W/m °C; Conductivity of sand blinding (k) 0.160 W/m °C; Conductivity of hardcore (k) 1.350 W/m °C; Conductivity of subsoil (k) 1.600 W/m °C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "tabulation", kind: "criterion", verbatim: "Tabulation", marks: 3, contextNote: "The calculation set out in a table of material, conductivity, resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "resistances", kind: "criterion", verbatim: "Internal top surface resistance Fine screed Concrete floor slab Radon barrier Sand blinding Hardcore Subsoil", marks: 21, contextNote: "Seven resistances, 3 each, by R = T/k (or R = T × r for the screed): internal top surface 0.1040 (given); screed 0.05 × 0.71 = 0.0355; slab 0.1/1.28 = 0.0781; radon barrier 0.00025/0.25 = 0.0010; sand blinding 0.04/0.16 = 0.2500; hardcore 0.2/1.35 = 0.1481; subsoil 0.3/1.6 = 0.1875. All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
+    { id: "total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 0.8042 m²°C/W.", permittedMarks: [0,3] },
+    { id: "u-value", kind: "criterion", verbatim: "Calculation of U-value of ground floor", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 0.8042 = 1.2434 W/m²°C, with units.", permittedMarks: [0,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Ground floor U-value, heat-loss cost and insulation thickness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Parts (b) and (c) use the U-value from (a); the scheme’s worked answers are U = 1.2434 W/m²°C, an annual cost of €352.50 and 216.9 mm of expanded polystyrene."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-original.png",
+          "srcHash": "9ff6ea1f9395cb2f306a81ec466a0cac",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 5: the printed question with a sketch of the uninsulated ground floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-calculation.png",
+          "srcHash": "e478095996b537601d7b965f862ecc35",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.8042 and U = 1.2434 W/m²°C, and the annual heat-loss cost of €352.5 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q5-b", topicId: "cons-6-3", conceptId: "value-concrete-floor-obtained-above-data",
+    section: "B", questionRef: "2018 HL Q5(b)",
+    stem: "A house built in the 1970s has an uninsulated solid concrete ground floor, as shown, with a sand/cement fine screed finish.",
+    questionText: "Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the uninsulated concrete floor slab: dimensions of floor slab 6.0 metres × 12.0 metres; average internal temperature 21 °C; average temperature of subsoil 5 °C; heating period 10 hours daily for 38 weeks per annum; cost of oil 96 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculations", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 1.2434 × 72 × 16 = 1432.3968 watts (joules per second).", permittedMarks: [0,1,2,3] },
+    { id: "duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating period = 60 × 60 × 10 × 7 × 38 = 9,576,000 seconds (2,660 hours).", permittedMarks: [0,1,2,3] },
+    { id: "energy", kind: "criterion", verbatim: "k/Joules calculation for one year", marks: 3, contextNote: "Energy = 9,576,000 × 1432.3968 ÷ 1000 = 13,716,631.18 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "oil", kind: "criterion", verbatim: "Litres of oil for one year", marks: 3, contextNote: "Oil = 13,716,631.18 ÷ 37,350 = 367.24 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "cost", kind: "criterion", verbatim: "Annual cost of heat loss", marks: 3, contextNote: "Annual cost = 367.24 × €0.96 = €352.5. The scheme’s alternative one-line method gives the same €352.5.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Ground floor U-value, heat-loss cost and insulation thickness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Parts (b) and (c) use the U-value from (a); the scheme’s worked answers are U = 1.2434 W/m²°C, an annual cost of €352.50 and 216.9 mm of expanded polystyrene."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-original.png",
+          "srcHash": "9ff6ea1f9395cb2f306a81ec466a0cac",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 5: the printed question with a sketch of the uninsulated ground floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-calculation.png",
+          "srcHash": "e478095996b537601d7b965f862ecc35",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.8042 and U = 1.2434 W/m²°C, and the annual heat-loss cost of €352.5 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q5-c", topicId: "cons-6-1", conceptId: "proposed-redesign-above-floor-upgrade-its",
+    section: "B", questionRef: "2018 HL Q5(c)",
+    stem: "A house built in the 1970s has an uninsulated solid concrete ground floor, as shown, with a sand/cement fine screed finish.",
+    questionText: "It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by including expanded polystyrene in the design of the floor. Given the thermal conductivity (k) of expanded polystyrene as 0.037 W/m °C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "required-resistance", kind: "criterion", verbatim: "Resistance for U- value for 0.15Wm2K using R=1/U", marks: 3, contextNote: "Required resistance = 1 ÷ 0.15 = 6.6666 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "existing-resistance", kind: "criterion", verbatim: "Resistance from calculated U-value from part (a)", marks: 3, contextNote: "Existing resistance = 1 ÷ 1.2434 = 0.8042 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "difference", kind: "criterion", verbatim: "Difference in resistances (required resistance)", marks: 3, contextNote: "Difference = 6.6666 − 0.8042 = 5.8624 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "formula", kind: "criterion", verbatim: "Application of formula R = T/k", marks: 3, contextNote: "R = T/k, so 5.8624 = T/0.037.", permittedMarks: [0,1,2,3] },
+    { id: "thickness", kind: "criterion", verbatim: "Required thickness of insulation", marks: 3, contextNote: "T = 5.8624 × 0.037 = 0.2169088 m: 216.9 mm of expanded polystyrene (216 or 217 mm accepted).", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Ground floor U-value, heat-loss cost and insulation thickness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Parts (b) and (c) use the U-value from (a); the scheme’s worked answers are U = 1.2434 W/m²°C, an annual cost of €352.50 and 216.9 mm of expanded polystyrene."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-original.png",
+          "srcHash": "9ff6ea1f9395cb2f306a81ec466a0cac",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 5: the printed question with a sketch of the uninsulated ground floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q5-thickness",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-thickness.png",
+          "srcHash": "b8677aaf3c2429afdf897a4f4ee14959",
+          "alt": "SEC worked solution for the thickness of expanded polystyrene: 216.9 mm.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q6-a", topicId: "cons-1-2", conceptId: "advantages-disadvantages-self-build-method-building",
+    section: "B", questionRef: "2018 HL Q6(a)",
+    stem: "A young couple have obtained planning permission to build an eco-friendly house, with internal dimensions of 10.0 m × 4.0 m, as shown. There are two bedrooms and a bathroom upstairs. The couple have an interest in house construction and wish to self-build their house with the help of neighbours, family and friends. They have also engaged professional design supervision and an electrician. The house is of timber frame construction throughout, with an external rainscreen of native larch.",
+    questionText: "Discuss two advantages and two disadvantages of self-build as a method of building a house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "advantage-1", kind: "criterion", verbatim: "Advantage 1 of self-build", marks: 3, contextNote: "Such as: reduced costs with help from family, friends and neighbours; a smaller mortgage.", permittedMarks: [0,1,2,3] },
+    { id: "advantage-2", kind: "criterion", verbatim: "Advantage 2 of self-build", marks: 3, contextNote: "A second, different advantage. Such as: control over build quality and finish; personal satisfaction; building over a longer period as budget allows.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1 of self-build", marks: 3, contextNote: "Such as: a skills deficit through inexperience; demanding building contract management.", permittedMarks: [0,1,2,3] },
+    { id: "disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2 of self-build", marks: 3, contextNote: "A second, different disadvantage. Such as: a longer construction period; no building guarantee or contracts with friends; responsibility for health and safety and regulations.", permittedMarks: [0,1,2,3] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A self-build eco-friendly timber house",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) requires both two advantages and two disadvantages, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-original.png",
+          "srcHash": "f4f1d64babec535b04a93ff34d191d09",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 6: the printed question with the elevation and plan of a small larch-clad self-build house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q6-self-build",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-self-build.png",
+          "srcHash": "5cd618d577bcd3e9a9664e1951c079e5",
+          "alt": "SEC 2018 Higher marking scheme notes on advantages and disadvantages of self-build, with sketches of the house.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q6-b", topicId: "cons-1-2", conceptId: "features-design-shown-make-house-self",
+    section: "B", questionRef: "2018 HL Q6(b)",
+    stem: "A young couple have obtained planning permission to build an eco-friendly house, with internal dimensions of 10.0 m × 4.0 m, as shown. There are two bedrooms and a bathroom upstairs. The couple have an interest in house construction and wish to self-build their house with the help of neighbours, family and friends. They have also engaged professional design supervision and an electrician. The house is of timber frame construction throughout, with an external rainscreen of native larch.",
+    questionText: "Discuss in detail, using notes and freehand sketches, three features of the design shown that make the house suitable as a self-build project.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: built mainly of locally sourced, renewable timber, easy to cut and shape with hand tools; a simple form, easy to set out.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 10, contextNote: "A second, different feature. Such as: small and compact with a narrow span for standard joists; a light building simplifying the foundations.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 10, contextNote: "A third, different feature. Such as: a straightforward roof; light frame and rainscreen needing no lifting equipment; early closing-in for dry indoor trades.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A self-build eco-friendly timber house",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) requires both two advantages and two disadvantages, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-original.png",
+          "srcHash": "f4f1d64babec535b04a93ff34d191d09",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 6: the printed question with the elevation and plan of a small larch-clad self-build house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-features.png",
+          "srcHash": "af6ac014976e1bbd89dd664d2c8c8859",
+          "alt": "SEC 2018 Higher marking scheme notes on design features that suit self-build, with sketch plans (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q7-b", topicId: "cons-6-5", conceptId: "clearly-best-practice-design-detailing-ensure",
     section: "B", questionRef: "2018 HL Q7(b)",
+    stem: "The main entrance door to a two-storey dwelling house is a high performance insulated wooden door, with vertical sheeting on both sides. The doorframe is thermally broken and is fitted in a 450 mm external concrete block wall with a full-fill insulated cavity. This external wall supports the first floor joists, as shown in the accompanying outline drawing. The first floor is a 25 mm floating wooden floor, on a 20 mm plywood deck, on 200 mm × 40 mm wooden joists, with a plasterboard ceiling beneath.",
     questionText: "Show clearly on your drawing best-practice design detailing to ensure airtightness at the junction of the external wall and the first floor.",
-    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "cons-2018-hl-q7-b-r1", kind: "point", verbatim: "Design detail", marks: 4, openList: true },
+    { id: "airtightness", kind: "criterion", verbatim: "Design detail", marks: 4, contextNote: "Show and identify the airtightness detail at the wall/floor junction, such as airtightness tape at the junction of wall and ceiling and joists on hangers rather than built into the inner leaf.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Entrance door, cavity wall and first floor section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-original.png",
+          "srcHash": "c5156a7915c51e16eb5e3253a85077a2",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 7: the printed question with the outline drawing of the door head, cavity wall and first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-section.png",
+          "srcHash": "22c1f3e0baab4dfbab05784d837fa9ac",
+          "alt": "SEC model section through the door head, cavity wall and first floor with the typical floor, wall and door details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q8-c", topicId: "cons-5-3", conceptId: "design-considerations-should-taken-into-account",
+    id: "cons-2018-hl-q8-c", topicId: "cons-5-7", conceptId: "design-considerations-should-taken-into-account",
     section: "B", questionRef: "2018 HL Q8(c)",
+    stem: "A wood-burning stove as shown, combined with a solar collector, is used to provide central heating and hot water for a compact three bedroom, two-storey house.",
     questionText: "Using notes and freehand sketches, show two design considerations that should be taken into account when selecting a preferred location of a chimney for the stove. Discuss the importance of each consideration outlined.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 3","answer":4,"ofParts":5,"perPart":3}, totalMarks: 12,
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2018-hl-q8-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show two design considerations that should be taken into account when selecting a pre", marks: 12, openList: true, group: {"claimMax":4,"perOption":3,"options":["stove to be located on internal wall to maximise thermal mass of chimney stack and heat retention and to maximise dispersal of heat","chimney centrally located and near to bathroom to avoid wasting water","stove may use system-built chimney or connect to new build or existing chimney","prefabricated chimney system should be insulated and double-walled","metal chimney system passing through any part of the building should be encased in non- combustible material"]} },
+    { id: "consideration-1", kind: "criterion", verbatim: "Design consideration1 Note & Sketch", marks: 6, contextNote: "Note 3 and sketch 3. Such as: on an internal wall so the chimney’s thermal mass keeps heat in the house.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Design consideration 2 Note & Sketch", marks: 6, contextNote: "A second, different consideration: note 3 and sketch 3. Such as: central and near the bathroom to avoid wasting water; an insulated, double-walled system chimney encased where it passes combustible material.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove and solar collector heating and hot water",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are a marking menu; both safety features and both chimney considerations are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-original.png",
+          "srcHash": "4d134fa9197b26ae889f6335aa8e42a8",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 8: the printed question with a sketch of a wood-burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q8-chimney",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-chimney.png",
+          "srcHash": "c25ce34d9da22de3d9077e942a2f9eda",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on locating the chimney for the stove.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q9-c", topicId: "cons-6-2", conceptId: "design-prevent-air-leakage-junction-stud",
+    id: "cons-2018-hl-q9-c", topicId: "cons-6-5", conceptId: "design-prevent-air-leakage-junction-stud",
     section: "B", questionRef: "2018 HL Q9(c)",
     questionText: "On your sketch, show one design detail to prevent air leakage at the junction of the stud side wall and the sloped ceiling.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":2,"perPart":6}, totalMarks: 6,
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "cons-2018-hl-q9-c-r1", kind: "anyN", verbatim: "On your sketch, show one design detail to prevent air leakage at the junction of the stud side wall and the sloped ceili", marks: 6, openList: true, group: {"claimMax":1,"perOption":6,"options":["the continuous airtight membrane is overlapped and then sealed by taping at the joint with proprietary adhesive tape","the joining is kept clear of the angle formed by the studded wall and the sloping ceiling to make an airtight seal achievable"]} },
+    { id: "air-leakage", kind: "criterion", verbatim: "Air leakage design detail", marks: 6, contextNote: "Such as: the continuous airtight membrane overlapped at the junction and sealed with proprietary adhesive tape, kept clear of the angle between stud wall and sloping ceiling.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Attic bedroom in a cut roof",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements are open responses; (b) requires the roof, the stud side walls and insulation, and labelled dimensions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-original.png",
+          "srcHash": "172918d651568f156e9f6bdc49ca0084",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 9: the printed question with a cutaway sketch of an attic bedroom in a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q9-air-leakage",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-air-leakage.png",
+          "srcHash": "433001baed22c59a04dc1942f67b9e49",
+          "alt": "SEC model detail and notes on preventing air leakage at the junction of the stud wall and the sloped ceiling.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1265,10 +1689,42 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q10-c", topicId: "cons-6-4", conceptId: "preferred-orientation-upgraded-design-include-sun",
     section: "B", questionRef: "2018 HL Q10(c)",
     questionText: "Show, using notes and freehand sketches, a preferred orientation for your upgraded design. Include the sun path in your sketch and discuss how your preferred orientation ensures the optimum thermal performance of the house. Note: It is not necessary to show the furniture.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":5,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "cons-2018-hl-q10-c-r1", kind: "anyN", verbatim: "South but not more than 30° off the East-West axis", marks: 16, contextNote: "South but not more than 30° off the East-West axis", openList: true, group: {"claimMax":4,"perOption":4,"options":["a smaller glazed area to North leads to less thermal energy loss","south-facing roof provides suitably aligned surfaces for solar panels for domestic water heating and photovoltaic panels for energy generation","South-West elevation provides for greater solar gain in the evenings in Ireland","if the ideal orientation not possible, insulation has to be increased","careful positioning of the fenestration to ensure maximum solar gain and minimum heat loss through the building fabric"]} },
+    { id: "sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the upgraded design on its site.", permittedMarks: [0,1,2,3,4] },
+    { id: "orientation", kind: "criterion", verbatim: "Orientation", marks: 4, contextNote: "The long glazed façade facing south, or within 30° of south.", permittedMarks: [0,1,2,3,4] },
+    { id: "sun-path", kind: "criterion", verbatim: "Sunpath", marks: 4, contextNote: "The sun path shown, with its winter and summer heights.", permittedMarks: [0,1,2,3,4] },
+    { id: "thermal-performance", kind: "criterion", verbatim: "Optimum thermal performance", marks: 4, contextNote: "How the orientation gives solar gain and less heat loss: large glazing south or south-west, small glazing north, south roof for solar panels.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, modifications and orientation",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-original.png",
+          "srcHash": "abe0e38c358c02eb0ecbfc4168618a40",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 10: the printed question with the elevation and plan of the preliminary house design.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q10-orientation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-orientation.png",
+          "srcHash": "e7aa7579ad6a91d518bb5d35cbf04a16",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on the preferred orientation and the sun path (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1278,16 +1734,39 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q4-b", topicId: "cons-1-3", conceptId: "extract-from-site-location-map-shown",
     section: "B", questionRef: "2018 HL Q4(b)",
     questionText: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 5","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "cons-2018-hl-q4-b-r1", kind: "anyN", verbatim: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and", marks: 15, contextNote: "The scheme groups its answer under: South; Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":3,"perOption":5,"options":["house is positioned close to the perimeter fence, so maximum garden space is available to supply house with garden produce – fruit and vegetables grown on site Why site B may be considered suitable for a new house - such as","access can be gained from the main or minor road, so little roadworks are required – environmentally sustainable","greater proximity to dwellings with existing connections to services such as waste management facilities, water, electricity and broadband, bin collection - resulting in cost-effective provision of public services","long sightlines can be achieved on the straight road, which increase safety when entering or exiting the site – usually for a 60 km/hour speed limit, 90 metre sightlines are required for safe access","houses adjacent to site B are in clusters, thus cluster developments are a favourable development and reflect the existing development patterns","reduced distance from leisure facilities, schools and employment","sufficient space exists to facilitate waste-water treatment and percolation area on the site","the long southerly aspect of the site increases design possibilities to optimise solar gain"]} },
+    { id: "consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 5, contextNote: "For either site. Such as, site A: away from the main road, less noise and pollution; site B: access from the main or minor road with little roadwork.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 5, contextNote: "A second, different consideration. Such as, site A: not overlooked, more privacy; site B: close to services such as water, electricity and broadband.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "consideration-3", kind: "criterion", verbatim: "Consideration 3", marks: 5, contextNote: "A third, different consideration. Such as, site A: a smaller site needing less land; site B: long sightlines on a straight road; houses nearby in a cluster.", permittedMarks: [0,1,2,3,4,5] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Choosing a rural site and siting the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original site location map retained. Both printed characteristics in (a) are required; in (b) either site may be chosen and is marked alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-original.png",
+          "srcHash": "66ae89d14336e395468a1c2982cd12fb",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 4: the printed question with the site location map showing sites A and B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
     figure: {
-          "candId": "construction-studies-2018-hl-paper-p003-i0",
-          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-hl-paper-p003-i0.png",
-          "srcHash": "9c1a52aadbb8bba3963fe5915b1c4d46",
-          "alt": "A framed extract from a site location map with a north arrow in the top right corner. Two candidate sites are shaded green and lettered: site A is a roughly square plot near the top centre, and site B is a larger plot lower left. A main road with a dashed centre line runs diagonally from the lower right to the upper left across the map, with a second road branching off it towards the top right and narrower lanes and field boundaries dividing the surrounding land. Four existing buildings are drawn as solid dark rectangles, each set back off a lane by a short curved entrance or driveway. Site B fronts directly onto the main road; site A sits back from it behind other fields.",
-          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission",
+          "candId": "construction-studies-2018-HL-q4-sites",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-sites.png",
+          "srcHash": "158a9423cb226deaf4e8f2c29f0fa76f",
+          "alt": "SEC 2018 Higher marking scheme notes on why site A or site B may be chosen, with sketches of each site (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
@@ -1296,13 +1775,46 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q1-a", topicId: "cons-3-8", conceptId: "vertical-section-through-porch-showing-external",
+    id: "cons-2018-hl-q1-a", topicId: "cons-1-5", conceptId: "vertical-section-through-porch-showing-external",
     section: "B", questionRef: "2018 HL Q1(a)",
+    stem: "A front porch projects 1.2 metres from the external wall of a dwelling house, as shown. The insulated wall of the porch is of timber frame construction with a rainscreen of vertical cedar cladding. The studwork is 250 mm × 50 mm. The external wall of the house is a 400 mm rendered concrete block wall with a full-fill insulated cavity. The lean-to roof of the porch is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is also fixed to the underside of the sloping rafters.",
     questionText: "To a scale of 1:5, draw a vertical section through the porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Show the typical construction details of the porch from a point 300 mm below the wallplate, through the sloping rafters to a level 300 mm above and 200 mm below the abutment of the roof and the front wall of the house. Show three courses of slate at eaves. It is not necessary to show window or door details.",
-    tariffModel: {"kind":"bestNofParts","notation":"10 x 4","answer":10,"ofParts":14,"perPart":4}, totalMarks: 40,
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
     rows: [
-    { id: "cons-2018-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the porch showing the external wall of the porch, the sloping roof, a", marks: 40, contextNote: "The scheme groups its answer under: Wall of main house 4; Roof; Wall of porch – timber clad", openList: true, group: {"claimMax":10,"perOption":4,"options":["external & internal renders","cavity wall & wall ties - 100 mm external and internal leaf","full-fill insulated cavity","lintels","thermal blocks beneath roof abutment","timber bearer to wall/ hanger to main wall/metal hanger","any 4 dimensions","slate on 35 × 50 mm counter battens, battens & /ventilation on","breathable roofing membrane,","on 10mm OSB for wind tightness on","250 - 300mm rafters or I-joists","packed with 300mm sheep’s /mineral wool / blown cellulose on","plasterboard with bonded insulation (polystyrene) with integral 4 vapour control layer","tilting fillet and ventilation at eaves and roof head"]} },
+    { id: "house-wall", kind: "criterion", verbatim: "Wall of main house", marks: 16, contextNote: "Best four details, 4 each. Such as: external and internal renders; 100 mm block leaves with wall ties; full-fill insulated cavity; lintels; thermal blocks below the roof abutment; a timber bearer or metal hanger on the main wall; any four dimensions.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "roof", kind: "criterion", verbatim: "Roof", marks: 16, contextNote: "Best four details, 4 each. Such as: slate on 35 × 50 mm counter battens and battens; breathable membrane on 10 mm OSB; 250–300 mm rafters or I-joists packed with 300 mm insulation; insulated plasterboard with vapour control layer; tilting fillet and ventilation at eaves and roof head; fascia, soffit and gutter.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "porch-wall", kind: "criterion", verbatim: "Wall of porch – timber clad", marks: 16, contextNote: "Best four details, 4 each. Such as: double joists at the head; cedar cladding on battens and counter battens; breather membrane on 10 mm OSB; 250 × 50 mm studs with 250 mm breathable insulation; OSB with taped vapour control layer inside; insulated 38 mm service cavity; 12.5 mm plasterboard; airtightness tapes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale 4 marks, Drafting 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, each excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber-clad porch with a lean-to slated roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-original.png",
+          "srcHash": "bf7cdae87a2698c0a3a4f2371d169fee",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 1: the printed question with a sketch of a cedar-clad front porch with a lean-to slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-section.png",
+          "srcHash": "2e2b6e2b1a2fedb72a32a1eeae0cf4aa",
+          "alt": "SEC model vertical section through the timber-clad porch wall, the lean-to roof and its abutment with the cavity wall, with the detail lists (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1311,11 +1823,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
     id: "cons-2018-hl-q2-a", topicId: "cons-1-8", conceptId: "possible-safety-risk-associated-tasks-construction",
     section: "B", questionRef: "2018 HL Q2(a)",
-    questionText: "Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: • excavating where there are underground electrical cables • working in a deep trench • working at height when slating a roof.",
-    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":14,"perPart":4}, totalMarks: 12,
+    questionText: "Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: excavating where there are underground electrical cables; working in a deep trench; working at height when slating a roof.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "cons-2018-hl-q2-a-r1", kind: "anyN", verbatim: "Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: • excavat", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["risk of exposing live electrical cables","safety risk of damaging cables","safety risk of electric shock or electrocution","safety risk of coming into contact with live cables of any voltage - including low voltage","contact with cables of any voltage, even low voltage, can cause fatal injuries and heart damage","risk of explosion, fire or flames if a cable is pierced or crushed causing the outer cable sheath and the inner conductors of the cable to connect","risk of severe, potentially fatal burns to hands, face and body","safety risk of electrical fires due to oil-filled high-voltage cables igniting","safety risk of spread of fire to other nearby services such as gas pipes","damage to cables can cause loss of power supply - risking serious consequences for emergency services such as hospitals","sides of trench collapsing leading to risk of workers being crushed or buried or fatally injured due to instability of trench","risk of neighbouring structures being undermined leading to collapse of structures","risk of injury or death resulting from workers or others falling into unguarded trench","risks from materials falling into trench and injuring or killing workers"]} },
+    { id: "cables", kind: "criterion", verbatim: "Excavating for underground electrical cables", marks: 4, contextNote: "Such as: electric shock or electrocution from a live cable; burns, explosion or fire if a cable is pierced; loss of power to emergency services.", permittedMarks: [0,1,2,3,4] },
+    { id: "trench", kind: "criterion", verbatim: "Working in a deep trench", marks: 4, contextNote: "Such as: the sides collapsing and burying workers; neighbouring structures undermined; materials, plant or people falling in.", permittedMarks: [0,1,2,3,4] },
+    { id: "roof", kind: "criterion", verbatim: "Working at height when slating a roof", marks: 4, contextNote: "Such as: falling from the roof, scaffold or ladder; slipping on the slates; materials or tools falling on people below.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Site risks, guidelines and safety culture",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed tasks in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-original.png",
+          "srcHash": "ff9ae331a1fde26b21750ef6e1a7c83d",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 2: the printed question with a sketch of an excavator digging a trench.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1325,75 +1859,268 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q2-b", topicId: "cons-1-8", conceptId: "risk-discussed-above-best-practice-guidelines",
     section: "B", questionRef: "2018 HL Q2(b)",
     questionText: "For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 6","answer":6,"ofParts":14,"perPart":6}, totalMarks: 36,
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
     rows: [
-    { id: "cons-2018-hl-q2-b-r1", kind: "anyN", verbatim: "For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should", marks: 36, openList: true, group: {"claimMax":6,"perOption":6,"options":["dial before you dig – contact supplier for information regarding cable location","access plans of cable layout from supplier of electrical services, use correctly to help locate power cables","plans may not show cable depths, never assume you know how deep the cables are, always be cautious as cables may be found at shallow depths","always check the area for signs that might suggest the presence of service cables","locate buried cables using cable location devices, such as hum detectors, radio frequency detectors","mark position of all cables on the ground using waterproof paint","treat all cables found anywhere as ‘live’ cables","hand dig carefully near cables, cable position marked with sand, timber and colour tape over a cable as an indicator of depth and position","always use insulated hand tools - with wooden or fibreglass handles","take special care when digging by hand or machine","do not use hand held power tools within 0.5 m of marked position of electrical cables","do not use handheld power tools directly over a marked line of a cable unless:","you have already found the cable by careful hand digging beneath the surface and","it is a safe depth (at least 300mm) below the bottom of the surface to be broken or"]} },
+    { id: "cables", kind: "criterion", verbatim: "Excavating for electrical cables", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: dial before you dig and use the supplier’s cable plans; locate cables with a detector and mark them; hand dig near cables with insulated tools; no excavator within 300 mm of a cable.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "trench", kind: "criterion", verbatim: "Working in a deep trench", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: a trench box or shuttering; battering back the sides; guard and toe boards and an exclusion zone; spoil and plant kept back from the edge.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "roof", kind: "criterion", verbatim: "Working at slating a roof", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: a safe working platform with guard rails and toe boards at the eaves; slating jacks and boards on the slope; a harness or safety netting; properly secured ladders.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Site risks, guidelines and safety culture",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed tasks in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-original.png",
+          "srcHash": "ff9ae331a1fde26b21750ef6e1a7c83d",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 2: the printed question with a sketch of an excavator digging a trench.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q2-guidelines",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-guidelines.png",
+          "srcHash": "4fe29eef3b2500d88ec3ef476ec8081b",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on best practice guidelines for excavating near cables, deep trenches and slating at height (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q3-b", topicId: "cons-1-1", conceptId: "proposed-design-layout-extension-necessary-modifications",
+    id: "cons-2018-hl-q3-b", topicId: "cons-1-2", conceptId: "proposed-design-layout-extension-necessary-modifications",
     section: "B", questionRef: "2018 HL Q3(b)",
+    stem: "The drawing shows the ground floor plan and the front elevation of a terraced cottage. Also shown is a portion of the rear garden. The walls of the cottage are of random rubble construction and are rendered. The rear wall A-A is south facing. To provide additional living space, and to enhance the health and wellbeing of the occupants, it has been decided to build a single-storey extension, not greater than 18.0 m2 in area, to the rear of the cottage.",
     questionText: "Using notes and freehand sketches, show a proposed design layout for the extension and the necessary modifications to the existing layout of the cottage.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":14,"perPart":6}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 24,
     rows: [
-    { id: "cons-2018-hl-q3-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show a proposed design layout for the extension and the necessary modifications to th", marks: 24, openList: true, group: {"claimMax":4,"perOption":6,"options":["glazed openings that allow a visual connection to nature – biophilic design","access to the garden through opening / sliding doors, bi-fold doors, floor to ceiling glazing and provide external decking","glazing to the floor so that the nature can be seen from seated level","creating an internal planted courtyard in buildings with limited views to nature","open-plan layouts so the daylight and sunlight can penetrate into the house","high performance - triple and quadruple low-e glazing - maintains thermal comfort internally and reduces glare","opening windows allowing natural airflow and fresh air inside that mimic the outside environments - occupants in control of temperature and ventilation and can open to purge overheating","construction of high thermal mass so that its regulatory properties can increase the internal comfort levels and reduce overheating","overhangs/brise soleil to the south to reduce glare and overheating during summer","lower cill levels to allow daylight and sunlight to penetrate deeper into the house","glass panels to the side of or in the door itself to brighten hallways or main living areas","bright colours to internal walls and window frames to increase natural light and thus well-being","strategically placed mirrors can reflect light further into the house","high ceiling levels or double height spaces can vary the intensity of light and shade and instil fascination"]} },
+    { id: "extension-note", kind: "criterion", verbatim: "Note for extension", marks: 6, contextNote: "Such as: glazed openings to the garden with sliding or bi-fold doors; glazing to floor level; open plan for daylight; roof lights; overhangs or brise-soleil against summer glare.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "extension-sketch", kind: "criterion", verbatim: "Sketch of extension", marks: 6, contextNote: "A layout sketch of the extension at the rear, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "modification-note", kind: "criterion", verbatim: "Note for modification", marks: 6, contextNote: "Such as: openings through to the existing rooms; bright colours and mirrors to spread light; glass panels in doors.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "modification-sketch", kind: "criterion", verbatim: "Sketch of modification", marks: 6, contextNote: "A sketch of the modified existing layout.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Extending a terraced cottage for health and wellbeing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan and elevation retained. Considerations and the layout are open responses; the scheme gives model layouts."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-original.png",
+          "srcHash": "b736af9eaab5fdc11b6c02bc49eac386",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 3: the printed question with the front elevation and ground floor plan of a terraced cottage and its rear garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q3-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-layout.png",
+          "srcHash": "602e7e537feac326cc5be68284f65d98",
+          "alt": "SEC model extension layouts and modifications to the cottage, with sketches of glazed garden rooms.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q6-c", topicId: "cons-6-3", conceptId: "suggest-modifications-existing-design-would-further",
+    id: "cons-2018-hl-q6-c", topicId: "cons-1-2", conceptId: "suggest-modifications-existing-design-would-further",
     section: "B", questionRef: "2018 HL Q6(c)",
+    stem: "A young couple have obtained planning permission to build an eco-friendly house, with internal dimensions of 10.0 m × 4.0 m, as shown. There are two bedrooms and a bathroom upstairs. The couple have an interest in house construction and wish to self-build their house with the help of neighbours, family and friends. They have also engaged professional design supervision and an electrician. The house is of timber frame construction throughout, with an external rainscreen of native larch.",
     questionText: "Suggest, using notes and freehand sketches, two modifications to the existing design that would further reduce the environmental impact of the house and help meet the nearly Zero Energy Building (nZEB) requirements. Justify your design choices.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 3","answer":6,"ofParts":14,"perPart":3}, totalMarks: 18,
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2018-hl-q6-c-r1", kind: "anyN", verbatim: "Suggest, using notes and freehand sketches, two modifications to the existing design that would further reduce the envir", marks: 18, openList: true, group: {"claimMax":6,"perOption":3,"options":["reduce heat loss when front door is opened","extra insulation at door Increase the thickness of insulation in the external walls –","the insulation can be fixed to the inside of external leaf","the rainscreen can also be fixed outside the insulation","modifications may be needed at the eaves to accommodate the increased wall thickness increase window area in south-facing wall to boost solar gain","a glazed south-facing area attached to the outer wall","increased solar gain and greater thermal comfort","sheltered seating area for all-year use","add on a purpose designed sunroom erect a partition with glazed doors to separate kitchen and dining areas","allows both the living and kitchen areas to be zoned for space heating","reduces demand for heating and improved thermal comfort","increases acoustic comfort and increases privacy","sliding doors or bi-fold doors for ease of access","install air-to-water heat pump and integrate space and hot water heating in conjunction with under-floor space heating"]} },
+    { id: "modification-1", kind: "criterion", verbatim: "Modification 1", marks: 6, contextNote: "Note 3 and sketch 3. Such as: a storm porch or inner hall at the front door; thicker insulation in the external walls.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "modification-2", kind: "criterion", verbatim: "Modification 2", marks: 6, contextNote: "A second, different modification: note 3 and sketch 3. Such as: more south glazing or a sunroom; a glazed partition zoning the kitchen and dining areas; evacuated tubes, PV panels, rainwater harvesting or a wind generator.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "justification-1", kind: "criterion", verbatim: "Justification 1", marks: 3, contextNote: "The first modification justified against nZEB: very low energy demand largely met from renewables.", permittedMarks: [0,1,2,3] },
+    { id: "justification-2", kind: "criterion", verbatim: "Justification 2", marks: 3, contextNote: "The second modification justified.", permittedMarks: [0,1,2,3] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A self-build eco-friendly timber house",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) requires both two advantages and two disadvantages, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-original.png",
+          "srcHash": "f4f1d64babec535b04a93ff34d191d09",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 6: the printed question with the elevation and plan of a small larch-clad self-build house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q6-modifications",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-modifications.png",
+          "srcHash": "dfef410309fcd4d036a77aaece71c842",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on nZEB modifications — storm porch, thicker insulation, south glazing, glazed partition, solar panels, PV, rainwater harvesting and wind (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q7-a", topicId: "cons-4-3", conceptId: "vertical-section-through-portion-external-wall",
+    id: "cons-2018-hl-q7-a", topicId: "cons-1-5", conceptId: "vertical-section-through-portion-external-wall",
     section: "B", questionRef: "2018 HL Q7(a)",
+    stem: "The main entrance door to a two-storey dwelling house is a high performance insulated wooden door, with vertical sheeting on both sides. The doorframe is thermally broken and is fitted in a 450 mm external concrete block wall with a full-fill insulated cavity. This external wall supports the first floor joists, as shown in the accompanying outline drawing. The first floor is a 25 mm floating wooden floor, on a 20 mm plywood deck, on 200 mm × 40 mm wooden joists, with a plasterboard ceiling beneath.",
     questionText: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, and floor. Show the typical construction details from a level 400 mm below the top of the door to a level 300 mm above the first floor joists.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":11,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"fixed"}, totalMarks: 56,
     rows: [
-    { id: "cons-2018-hl-q7-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, ", marks: 16, openList: true, group: {"claimMax":4,"perOption":4,"options":["450 mm concrete block wall","Internal and external plaster/render","Cavity closer","Wall tie – basalt coated low conductivity","Top rail","Airtightness tape - doorframe to wall","Vertical sheeting","Mechanical fixing of joist to wall","Joist","Plywood decking","Plasterboard ceiling"]} },
+    { id: "wall", kind: "criterion", verbatim: "External wall", marks: 16, contextNote: "Best four details, 4 each. Such as: 450 mm block wall; full-fill cavity insulation; internal and external plaster/render; cavity closer; lintels; basalt low-conductivity wall ties; stepped DPC.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "door", kind: "criterion", verbatim: "Door", marks: 16, contextNote: "Best four details, 4 each. Such as: thermally broken frame; top rail; airtightness tape from frame to wall; insulation; vertical sheeting; double rebates with draught-proofing strips.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "floor", kind: "criterion", verbatim: "Floor", marks: 16, contextNote: "Best four details, 4 each. Such as: joist bearer fixed to the wall; mechanical fixing of the joist to the wall; joist hanger; 200 × 40 mm joists; plywood decking; floating wooden floor; plasterboard ceiling.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "presentation", kind: "criterion", verbatim: "Scale and drafting marks (Excellent, Good, Fair)", marks: 8, contextNote: "Scale and drafting, each excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4,5,6,7,8] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Entrance door, cavity wall and first floor section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-original.png",
+          "srcHash": "c5156a7915c51e16eb5e3253a85077a2",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 7: the printed question with the outline drawing of the door head, cavity wall and first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-section.png",
+          "srcHash": "22c1f3e0baab4dfbab05784d837fa9ac",
+          "alt": "SEC model section through the door head, cavity wall and first floor with the typical floor, wall and door details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q8-a", topicId: "cons-5-2", conceptId: "single-line-diagram-typical-design-layout",
+    id: "cons-2018-hl-q8-a", topicId: "cons-5-3", conceptId: "single-line-diagram-typical-design-layout",
     section: "B", questionRef: "2018 HL Q8(a)",
+    stem: "A wood-burning stove as shown, combined with a solar collector, is used to provide central heating and hot water for a compact three bedroom, two-storey house.",
     questionText: "Using notes and a single-line diagram, show a typical design layout for both the central heating and the hot water systems. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
-    tariffModel: {"kind":"bestNofParts","notation":"8 x 3","answer":8,"ofParts":14,"perPart":3}, totalMarks: 24,
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
     rows: [
-    { id: "cons-2018-hl-q8-a-r1", kind: "anyN", verbatim: "Using notes and a single-line diagram, show a typical design layout for both the central heating and the hot water syste", marks: 24, openList: true, group: {"claimMax":8,"perOption":3,"options":["Wood burning stove & radiators","Zone control mechanism & Zone thermostats","Header / expansion / storage tank","Feed to expansion tank","Cold feed from expansion tank","Expansion pipe or expansion vessel","Flow pipes to radiators","Return pipes from radiators","Radiator valves","Pump and valves (pump, 2 isolating valves, drain off - any 2)","Solar panel","Flow & Return - with arrows/colour coding/labels","Solar pump","Cylinder (twin coil)"]} },
+    { id: "items", kind: "criterion", verbatim: "Design layout of zoned plumbing system (8 × 3 marks)", marks: 24, contextNote: "Best eight items, 3 each. Menu: stove and radiators; zone controls and zone thermostats; header/expansion tank; feed and cold feed; expansion pipe or vessel; flow and return pipes to radiators; radiator valves; pump and valves; solar panel; flow and return marked; solar pump; twin-coil cylinder; control panel; expansion vessel; thermal reducing vessel.", permittedMarks: [0,3,6,9,12,15,18,21,24] },
+    { id: "sizes", kind: "criterion", verbatim: "Sizes of pipework (any 2)", marks: 4, contextNote: "Any two typical pipe sizes, 2 each, such as 22 mm flow and return and 15 mm to radiators.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove and solar collector heating and hot water",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are a marking menu; both safety features and both chimney considerations are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-original.png",
+          "srcHash": "4d134fa9197b26ae889f6335aa8e42a8",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 8: the printed question with a sketch of a wood-burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q8-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-layout.png",
+          "srcHash": "0752f1542102c3f7216037e157256fdf",
+          "alt": "SEC model single-line diagram of the stove and solar heating with two zoned radiator circuits and the twin-coil cylinder.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q8-b", topicId: "cons-1-8", conceptId: "features-ensure-system-operates-safely-all",
+    id: "cons-2018-hl-q8-b", topicId: "cons-5-3", conceptId: "features-ensure-system-operates-safely-all",
     section: "B", questionRef: "2018 HL Q8(b)",
+    stem: "A wood-burning stove as shown, combined with a solar collector, is used to provide central heating and hot water for a compact three bedroom, two-storey house.",
     questionText: "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discuss the importance of each safety feature outlined.",
-    tariffModel: {"kind":"bestNofParts","notation":"5 x 4","answer":5,"ofParts":14,"perPart":4}, totalMarks: 20,
+    tariffModel: {"kind":"fixed"}, totalMarks: 20,
     rows: [
-    { id: "cons-2018-hl-q8-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discu", marks: 20, openList: true, group: {"claimMax":5,"perOption":4,"options":["thermostatic control of the burning rate based on temperature of water in the boiler where the appliance uses a boiler","thermostatic radiator valves (TRVs) should be wired electronically to provide boiler interlock hot water cylinder - thermostatic control","fitted about one third of the way up the cylinder","should have clean contact with the metal on the cylinder","avoids overheating thus ensuring safe temperature of water in taps","thermostat should be as accessible as possible","the cylinder thermostat should be wired to provide a boiler interlock vent valve to boiler","a safety feature that stops too much pressure from damaging the plumbing system and causing injury to a person","helps to prevent the risk of an explosion due to build-up of pressure ease of cleaning/maintenance","the opening for this purpose should have a rigid, non-combustible and gastight cover, or a removable section in condensing type appliances carbon monoxide","the heating appliance must be correctly installed and serviced at regular intervals to ensure efficient combustion and removal of products of combustion","a carbon monoxide alarm be fitted in vicinity of burning appliance","detector should have both a visible and audible alarm to alert occupants of the presence of carbon monoxide","expansion pipe provided to allow safe expansion of water (vented system)"]} },
+    { id: "feature-1", kind: "criterion", verbatim: "Feature 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: thermostatic control of the burning rate and TRVs with a boiler interlock; a cylinder thermostat a third of the way up.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "feature-2", kind: "criterion", verbatim: "Feature 2", marks: 8, contextNote: "A second, different feature: note 4 and sketch 4. Such as: a pressure relief or vent valve; an open expansion pipe or sealed expansion vessel; a carbon monoxide alarm.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "discussion", kind: "criterion", verbatim: "Discussion of safety features", marks: 4, contextNote: "The importance of each feature discussed, such as preventing overheating, explosion from pressure build-up, or carbon monoxide poisoning.", permittedMarks: [0,1,2,3,4] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove and solar collector heating and hot water",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are a marking menu; both safety features and both chimney considerations are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-original.png",
+          "srcHash": "4d134fa9197b26ae889f6335aa8e42a8",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 8: the printed question with a sketch of a wood-burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q8-safety",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-safety.png",
+          "srcHash": "ab5fda474fbb562eb1c0f04e4929bb7c",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on safety features of the system (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1403,33 +2130,40 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q9-a", topicId: "cons-3-9", conceptId: "functional-requirements-attic-space-use-bedroom",
     section: "B", questionRef: "2018 HL Q9(a)",
     questionText: "Discuss in detail using notes and freehand sketches, three functional requirements of an attic space suitable for use as a bedroom.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 6","answer":6,"ofParts":14,"perPart":6}, totalMarks: 36,
+    tariffModel: {"kind":"fixed"}, totalMarks: 36,
     rows: [
-    { id: "cons-2018-hl-q9-a-r1", kind: "anyN", verbatim: "Discuss in detail using notes and freehand sketches, three functional requirements of an attic space suitable for use as", marks: 36, openList: true, group: {"claimMax":6,"perOption":6,"options":["ceiling level 2400 mm minimum above floor level","area at 1500 mm above floor level at least 50% of total floor area adequate natural lighting and ventilation","roof lights flush with the roof surface may be fitted","dormer style lighting may require planning permission if on main elevation of house","permanent ventilation/mechanical ventilation with heat recovery in keeping with the rest of the dwelling","use of vapour barrier on warm side of insulation/air continuity barrier","ensure adequate ventilation of the roof structure to avoid condensation","fire grade high density plasterboard with half hour fire resistance taped, jointed and skimmed","smoke detection system and alarm, connected to electrical mains","fire resistant floor construction","high density fireproof doors with min 0.5 hours fire rating and fitted with self-closing mechanism","structural members provided with required level of fire resistance, e.g. steel beams, columns encased","fire retardant thermal insulation","means of escape in case of fire, roof lights may suffice - as shown sound insulation"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2018, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q9-b", topicId: "cons-3-9", conceptId: "traditional-cut-roof-which-slated-has",
-    section: "B", questionRef: "2018 HL Q9(b)",
-    questionText: "A traditional cut roof, which is slated and has a pitch of 45°, is designed to provide a well-insulated bedroom in the attic space, as shown. Using notes and freehand sketches, show the typical design detailing for such a roof. Include the stud side walls and the insulation. Show clearly the design detailing necessary to ensure the structural stability of the roof. Label the main components and give their typical dimensions.",
-    tariffModel: {"kind":"fixed","notation":"3 x 6 + 3 x 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
-    rows: [
-    { id: "cons-2018-hl-q9-b-r1", kind: "anyN", verbatim: "Structural Stability – typical detailing", marks: 18, contextNote: "Structural Stability – typical detailing", openList: true, group: {"claimMax":3,"perOption":6,"options":["floor joists of sufficient size for the full span","purlins need to be strutted from a suitably mounted wall plates","ceiling joists/collar ties to be fitted at a height of 2400 mm above the finished floor level – triangulation of roof structure","backing to rafters to accommodate thickness of thermal insulation and ventilation","doubling of rafters to provide sufficient support for roof lights","slates on battens typically 50 × 35 mm","counter battens 50 × 35 mm to provide ventilation space","breather membrane sealed and taped","hygroscopic layer – wood fibre board, OSB or Smartply or similar for wind tightness","rafters 200 × 40 mm at 400 - 600 mm centres","collar ties 200 × 40 mm to each rafter","ceiling joists 200 × 40 mm to each rafter","vertical struts 200 × 40 mm","runner at foot of strut - 150 × 70 mm"]} },
-    { id: "cons-2018-hl-q9-b-r2", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 6, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":3,"perOption":2,"options":["insulation 200 mm min at slope of roof","insulation 600 mm – two layers to ceiling","2 × 12.5 mm gypsum plasterboard to ceiling with vapour barrier on warm side of insulation","airtightness tape","fascia, soffit and gutter with continuous vent at soffit"]} },
+    { id: "requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: adequate floor area with a 2400 mm ceiling over at least half the floor; natural lighting and ventilation through roof lights or dormers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 12, contextNote: "A second, different requirement. Such as: fire safety — fire-rated plasterboard, smoke detection, fire doors and a means of escape; sound insulation with a floating floor.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 12, contextNote: "A third, different requirement. Such as: safe permanent stair access; thermal insulation to a U-value of 0.16 for the roof, avoiding thermal bridging; electrical work to standard.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
-          "label": "OFFICIAL QUESTION PAGE",
-          "title": "Official question page",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Attic bedroom in a cut roof",
           "pages": [
+                1,
                 6
           ],
-          "attribution": "SEC Construction Studies 2018 Higher Level examination paper — © State Examinations Commission.",
-          "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements are open responses; (b) requires the roof, the stud side walls and insulation, and labelled dimensions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-original.png",
+          "srcHash": "172918d651568f156e9f6bdc49ca0084",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 9: the printed question with a cutaway sketch of an attic bedroom in a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q9-requirements",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-requirements.png",
+          "srcHash": "7c6ee0a294a3070c250ea0b057228e78",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on the functional requirements of an attic bedroom (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
     },
   } as SecCard,
   {
@@ -1437,14 +2171,86 @@ export const CARDS: SecCard[] = [
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
-    id: "cons-2018-hl-q10-a", topicId: "cons-6-3", conceptId: "importance-passive-house-design-space-heating",
-    section: "B", questionRef: "2018 HL Q10(a)",
-    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • space heating energy demand • building form • thermal bridging.",
-    tariffModel: {"kind":"fixed","notation":"2 x 4 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    id: "cons-2018-hl-q9-b", topicId: "cons-3-8", conceptId: "traditional-cut-roof-which-slated-has",
+    section: "B", questionRef: "2018 HL Q9(b)",
+    questionText: "A traditional cut roof, which is slated and has a pitch of 45°, is designed to provide a well-insulated bedroom in the attic space, as shown. Using notes and freehand sketches, show the typical design detailing for such a roof. Include the stud side walls and the insulation. Show clearly the design detailing necessary to ensure the structural stability of the roof. Label the main components and give their typical dimensions.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
-    { id: "cons-2018-hl-q10-a-r1", kind: "anyN", verbatim: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", marks: 8, contextNote: "Scrúdú na hArdteistiméireachta, 2018 Staidéar Foirgníochta, Ardleibhéal", openList: true, group: {"claimMax":2,"perOption":4,"options":["a building with the same U-values, air change rates and orientation as another may have a different heating demand depending on their respective A/V ratios","should take full advantage of site aspect, potential solar energy gain, potential for energy conservation","main windows/elevation South-facing","windows minimised on North facade","providing lobby and porch at entrance to conserve energy","heating appliances kept on inside walls to reduce heat energy loss","steeper 45° roof pitch to accommodate increased living space and roof-mounted photovoltaic and/or passive solar panels, evacuated tubes thermal bridging","a thermal /cold bridge is an area of a building that has a higher conductivity than surrounding materials","and significantly detrimental rate of heat transfer than the surrounding materials, resulting in a significant reduction in the thermal insulation/performance of a building thermal energy flows from a higher to a lower temperature","flow increases with greater temperature difference","materials that are more efficient conductors of heat and penetrate the outer envelope lead to greater thermal energy transfer – increase heat loss overall","local areas of greater energy flow provide cold spots on the inner surfaces and troublesome condensation, including interstitial condensation","more of a risk where Passive House standard is achieved","greater risk surrounding openings and where floors and ceilings abut outer walls"]} },
-    { id: "cons-2018-hl-q10-a-r2", kind: "anyN", verbatim: "Cork, 90° - 55° = 35° in Letterkenny)", marks: 8, contextNote: "Cork, 90° - 55° = 35° in Letterkenny)", openList: true, group: {"claimMax":2,"perOption":4,"options":["increase the window sizes on the front elevation","taller, larger South-facing windows maximises solar gain to living areas","fewer and smaller North-facing windows reduces heat loss","passive heating reduces costs and fossil fuel demand","large eaves overhang or brise-soleil over South-facing windows increase the window area in kitchen and dining room","East-facing windows enable morning solar gain to the sitting room","increases daylighting","reduces artificial lighting requirement","reduces heating requirement provide roof lights","increase daylight","give longer daylighting period","reduce need for artificial light","reduce lighting costs and fossil fuel use provide wood-burning stove","carbon neutral"]} },
+    { id: "stability", kind: "criterion", verbatim: "Structural stability - pitched roof Notes & sketches", marks: 6, contextNote: "Such as: purlins strutted from mounted wallplates; collar ties at 2400 mm forming a triangle; doubled rafters at roof lights; struts, runners and joists of sufficient size for the span.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "stud-wall", kind: "criterion", verbatim: "Stud side wall and insulation Notes & sketches", marks: 6, contextNote: "Such as: vertical studs 200 × 40 mm; insulation between and under the rafters with a vapour barrier; a service cavity at the ceiling.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "labels", kind: "criterion", verbatim: "Labelled components and dimensions (3 × 2 marks)", marks: 6, contextNote: "Three labelled components with dimensions, 2 each, such as rafters 200 × 40 at 400–600 mm, collar ties 200 × 40, purlin 200 × 75 mm.", permittedMarks: [0,1,2,3,4,5,6] },
     ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Attic bedroom in a cut roof",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements are open responses; (b) requires the roof, the stud side walls and insulation, and labelled dimensions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-original.png",
+          "srcHash": "172918d651568f156e9f6bdc49ca0084",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 9: the printed question with a cutaway sketch of an attic bedroom in a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q9-structure",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-structure.png",
+          "srcHash": "7897693eebc6a7d635bdf84847a68ad5",
+          "alt": "SEC model sketches and notes on the structural stability, insulation and stud side walls of the attic roof (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-a", topicId: "cons-6-2", conceptId: "importance-passive-house-design-space-heating",
+    section: "B", questionRef: "2018 HL Q10(a)",
+    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: space heating energy demand; building form; thermal bridging.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "items", kind: "anyN", verbatim: "Design of a passive house - any 2", marks: 16, contextNote: "Any two of the three printed items, each notes 4 and sketches 4 = 8. Space heating energy demand: the energy to keep 20 °C all year, at most 15 kWh/m²/a in a Passive House, set by insulation and airtightness; solar gain from well-placed glazing with shading against overheating. Building form: a simple compact form with fewer junctions, less envelope and lower heat loss; a low surface-to-volume (A/V) ratio, ideally 0.7 or less; avoid complex hips and valleys. Thermal bridging: areas of higher conductivity let heat escape and cause cold spots, condensation and mould; continuity of insulation at openings, floor and eaves junctions, as in the scheme’s details.", group: {"claimMax":2,"perOption":8,"options":["Space heating energy demand","Building form","Thermal bridging"]} },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, modifications and orientation",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-original.png",
+          "srcHash": "abe0e38c358c02eb0ecbfc4168618a40",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 10: the printed question with the elevation and plan of the preliminary house design.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-principles.png",
+          "srcHash": "93f41bb6ab0aedee6bd449e65a421a33",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches for all three Passive House items — space heating energy demand, building form and thermal bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -19474,6 +20280,673 @@ export const CARDS: SecCard[] = [
           "alt": "Original SEC 2019 Higher Construction Studies alternative Question 10: the printed quotation from Henry Skates on global warming and carbon footprints, and the task.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q1-complete", topicId: "cons-1-5", conceptId: "porch-lean-to-section-complete",
+    section: "B", questionRef: "2018 HL Q1 — complete",
+    stem: "A front porch projects 1.2 metres from the external wall of a dwelling house, as shown. The insulated wall of the porch is of timber frame construction with a rainscreen of vertical cedar cladding. The studwork is 250 mm × 50 mm. The external wall of the house is a 400 mm rendered concrete block wall with a full-fill insulated cavity. The lean-to roof of the porch is an insulated slated roof and has a pitch of 30°. Insulated plasterboard is also fixed to the underside of the sloping rafters.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through the porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Show the typical construction details of the porch from a point 300 mm below the wallplate, through the sloping rafters to a level 300 mm above and 200 mm below the abutment of the roof and the front wall of the house. Show three courses of slate at eaves. It is not necessary to show window or door details. (b) On your drawing, show the typical design detailing to prevent the ingress of rainwater between the roof of the porch and the front wall of the house.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-house-wall", kind: "criterion", verbatim: "Wall of main house", marks: 16, contextNote: "Best four details, 4 each. Such as: external and internal renders; 100 mm block leaves with wall ties; full-fill insulated cavity; lintels; thermal blocks below the roof abutment; a timber bearer or metal hanger on the main wall; any four dimensions.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-roof", kind: "criterion", verbatim: "Roof", marks: 16, contextNote: "Best four details, 4 each. Such as: slate on 35 × 50 mm counter battens and battens; breathable membrane on 10 mm OSB; 250–300 mm rafters or I-joists packed with 300 mm insulation; insulated plasterboard with vapour control layer; tilting fillet and ventilation at eaves and roof head; fascia, soffit and gutter.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-porch-wall", kind: "criterion", verbatim: "Wall of porch – timber clad", marks: 16, contextNote: "Best four details, 4 each. Such as: double joists at the head; cedar cladding on battens and counter battens; breather membrane on 10 mm OSB; 250 × 50 mm studs with 250 mm breathable insulation; OSB with taped vapour control layer inside; insulated 38 mm service cavity; 12.5 mm plasterboard; airtightness tapes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale 4 marks, Drafting 4 marks", marks: 8, contextNote: "Scale 4 and drafting 4, each excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4,5,6,7,8] },
+    { id: "b-abutment", kind: "criterion", verbatim: "stepped DPC/ flashing and counter flashing", marks: 4, contextNote: "Show and identify a stepped DPC with lead flashing and counter flashing at the abutment, as in the scheme’s model section.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q1-a","label":"a","marks":56,"rowIds":["a-house-wall","a-roof","a-porch-wall","a-presentation"]},{"sourceCardId":"cons-2018-hl-q1-b","label":"b","marks":4,"rowIds":["b-abutment"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 1",
+          "title": "Timber-clad porch with a lean-to slated roof",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch and specification retained. Construction and scale/drafting marks belong to part (a); the abutment detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q1-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-original.png",
+          "srcHash": "bf7cdae87a2698c0a3a4f2371d169fee",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 1: the printed question with a sketch of a cedar-clad front porch with a lean-to slated roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q1-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q1-section.png",
+          "srcHash": "2e2b6e2b1a2fedb72a32a1eeae0cf4aa",
+          "alt": "SEC model vertical section through the timber-clad porch wall, the lean-to roof and its abutment with the cavity wall, with the detail lists (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q2-complete", topicId: "cons-1-8", conceptId: "site-risks-safety-culture-complete",
+    section: "B", questionRef: "2018 HL Q2 — complete",
+    questionText: "(a) Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: excavating where there are underground electrical cables; working in a deep trench; working at height when slating a roof. (b) For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task. (c) Discuss in detail three strategies that would promote a positive safety culture among workers on a construction site.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-cables", kind: "criterion", verbatim: "Excavating for underground electrical cables", marks: 4, contextNote: "Such as: electric shock or electrocution from a live cable; burns, explosion or fire if a cable is pierced; loss of power to emergency services.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-trench", kind: "criterion", verbatim: "Working in a deep trench", marks: 4, contextNote: "Such as: the sides collapsing and burying workers; neighbouring structures undermined; materials, plant or people falling in.", permittedMarks: [0,1,2,3,4] },
+    { id: "a-roof", kind: "criterion", verbatim: "Working at height when slating a roof", marks: 4, contextNote: "Such as: falling from the roof, scaffold or ladder; slipping on the slates; materials or tools falling on people below.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-cables", kind: "criterion", verbatim: "Excavating for electrical cables", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: dial before you dig and use the supplier’s cable plans; locate cables with a detector and mark them; hand dig near cables with insulated tools; no excavator within 300 mm of a cable.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-trench", kind: "criterion", verbatim: "Working in a deep trench", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: a trench box or shuttering; battering back the sides; guard and toe boards and an exclusion zone; spoil and plant kept back from the edge.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-roof", kind: "criterion", verbatim: "Working at slating a roof", marks: 12, contextNote: "Two guidelines, each note 3 + sketch 3. Such as: a safe working platform with guard rails and toe boards at the eaves; slating jacks and boards on the slope; a harness or safety netting; properly secured ladders.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "c-strategy-1", kind: "criterion", verbatim: "Strategy 1", marks: 4, contextNote: "Such as: a buddy system pairing new and experienced workers; Safe Pass and manual handling courses for all.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-strategy-2", kind: "criterion", verbatim: "Strategy 2", marks: 4, contextNote: "A second, different strategy. Such as: frequent site safety meetings; a safety statement and emergency plan all workers know.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-strategy-3", kind: "criterion", verbatim: "Strategy 3", marks: 4, contextNote: "A third, different strategy. Such as: a safety representative on larger sites; clear multilingual signage and interpreters; everyone alert to risks for one another.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q2-a","label":"a","marks":12,"rowIds":["a-cables","a-trench","a-roof"]},{"sourceCardId":"cons-2018-hl-q2-b","label":"b","marks":36,"rowIds":["b-cables","b-trench","b-roof"]},{"sourceCardId":"cons-2018-hl-q2-c","label":"c","marks":12,"rowIds":["c-strategy-1","c-strategy-2","c-strategy-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 2",
+          "title": "Site risks, guidelines and safety culture",
+          "pages": [
+                1,
+                2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. All three printed tasks in (a) and (b) are required, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q2-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-original.png",
+          "srcHash": "ff9ae331a1fde26b21750ef6e1a7c83d",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 2: the printed question with a sketch of an excavator digging a trench.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q2-guidelines",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q2-guidelines.png",
+          "srcHash": "4fe29eef3b2500d88ec3ef476ec8081b",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on best practice guidelines for excavating near cables, deep trenches and slating at height (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q3-complete", topicId: "cons-1-2", conceptId: "cottage-wellbeing-extension-complete",
+    section: "B", questionRef: "2018 HL Q3 — complete",
+    stem: "The drawing shows the ground floor plan and the front elevation of a terraced cottage. Also shown is a portion of the rear garden. The walls of the cottage are of random rubble construction and are rendered. The rear wall A-A is south facing. To provide additional living space, and to enhance the health and wellbeing of the occupants, it has been decided to build a single-storey extension, not greater than 18.0 m2 in area, to the rear of the cottage.",
+    questionText: "(a) Discuss three considerations that should be taken into account in the design of the extension to ensure that the health and wellbeing of the occupants is enhanced by building the extension. (b) Using notes and freehand sketches, show a proposed design layout for the extension and the necessary modifications to the existing layout of the cottage. (c) Discuss how your proposed design meets each consideration discussed at 3(a) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 6, contextNote: "Such as: biophilic design — a connection with nature, seeing plants, hearing birds; daylight central to the design.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 6, contextNote: "A second, different consideration. Such as: more south glazing for solar gain and lower heating costs; natural light and shade.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "a-consideration-3", kind: "criterion", verbatim: "Consideration 3", marks: 6, contextNote: "A third, different consideration. Such as: local, natural materials; decking extending the inside outdoors; good thermal and airflow comfort; a sense of safety.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-extension-note", kind: "criterion", verbatim: "Note for extension", marks: 6, contextNote: "Such as: glazed openings to the garden with sliding or bi-fold doors; glazing to floor level; open plan for daylight; roof lights; overhangs or brise-soleil against summer glare.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-extension-sketch", kind: "criterion", verbatim: "Sketch of extension", marks: 6, contextNote: "A layout sketch of the extension at the rear, as in the scheme’s model plan.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-modification-note", kind: "criterion", verbatim: "Note for modification", marks: 6, contextNote: "Such as: openings through to the existing rooms; bright colours and mirrors to spread light; glass panels in doors.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-modification-sketch", kind: "criterion", verbatim: "Sketch of modification", marks: 6, contextNote: "A sketch of the modified existing layout.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-discussion-1", kind: "criterion", verbatim: "Discussion 1", marks: 6, contextNote: "How the design meets the first consideration. Such as: large south windows maximise light and solar gain and connect with nature.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-discussion-2", kind: "criterion", verbatim: "Discussion 2", marks: 6, contextNote: "How the design meets the second consideration. Such as: sliding doors bring the garden in; open plan lets sunlight through.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-discussion-3", kind: "criterion", verbatim: "Discussion 3", marks: 6, contextNote: "How the design meets the third consideration. Such as: high thermal performance and shading; external materials connected to the local ecology; water and planting to stimulate the senses.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q3-a","label":"a","marks":18,"rowIds":["a-consideration-1","a-consideration-2","a-consideration-3"]},{"sourceCardId":"cons-2018-hl-q3-b","label":"b","marks":24,"rowIds":["b-extension-note","b-extension-sketch","b-modification-note","b-modification-sketch"]},{"sourceCardId":"cons-2018-hl-q3-c","label":"c","marks":18,"rowIds":["c-discussion-1","c-discussion-2","c-discussion-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Extending a terraced cottage for health and wellbeing",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original plan and elevation retained. Considerations and the layout are open responses; the scheme gives model layouts."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q3-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-original.png",
+          "srcHash": "b736af9eaab5fdc11b6c02bc49eac386",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 3: the printed question with the front elevation and ground floor plan of a terraced cottage and its rear garden.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q3-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q3-layout.png",
+          "srcHash": "602e7e537feac326cc5be68284f65d98",
+          "alt": "SEC model extension layouts and modifications to the cottage, with sketches of glazed garden rooms.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q4-complete", topicId: "cons-1-3", conceptId: "rural-site-selection-complete",
+    section: "B", questionRef: "2018 HL Q4 — complete",
+    questionText: "(a) Using notes and freehand sketches, discuss the importance of each of the following when identifying a suitable site for a new house in a rural landscape: characteristics of existing dwellings; characteristics of the proposed site. (b) An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and discuss three considerations you took into account when selecting your site. (c) Draw a well-proportioned sketch of your selected site and the immediate boundaries. On your sketch, show a preferred: location and orientation of a house on the site; layout of the road entrance and the driveway to the house. For each of the above, justify your design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-dwellings", kind: "criterion", verbatim: "Characteristics of existing dwellings (notes and sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: scale, volume, shape and materials informed by the local vernacular; simple regular forms; the direction and position of existing dwellings; not overshadowing or overlooking neighbours.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-site", kind: "criterion", verbatim: "Characteristics of proposed site (notes and sketches)", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: road layout and sightlines for a safe entrance; existing stone walls, trees and boundaries kept; topography and natural shelter; orientation for solar gain; soil, percolation, services and flooding.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-consideration-1", kind: "criterion", verbatim: "Consideration 1", marks: 5, contextNote: "For either site. Such as, site A: away from the main road, less noise and pollution; site B: access from the main or minor road with little roadwork.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-consideration-2", kind: "criterion", verbatim: "Consideration 2", marks: 5, contextNote: "A second, different consideration. Such as, site A: not overlooked, more privacy; site B: close to services such as water, electricity and broadband.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "b-consideration-3", kind: "criterion", verbatim: "Consideration 3", marks: 5, contextNote: "A third, different consideration. Such as, site A: a smaller site needing less land; site B: long sightlines on a straight road; houses nearby in a cluster.", permittedMarks: [0,1,2,3,4,5] },
+    { id: "c-sketch", kind: "criterion", verbatim: "Sketch showing location, orientation, road entrance and driveway (5 × 3 marks)", marks: 15, contextNote: "Sketch 3, location 3, orientation 3, entrance 3 and driveway 3. Such as: the largest elevation facing south; close to the road where the services are; a short driveway; a splayed entrance set back about 5 m with clear sightlines both ways.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15] },
+    { id: "c-justification", kind: "criterion", verbatim: "Justification", marks: 6, contextNote: "The location, orientation, entrance and driveway justified, such as for solar gain, privacy, lower cost and safe access.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q4-a","label":"a","marks":24,"rowIds":["a-dwellings","a-site"]},{"sourceCardId":"cons-2018-hl-q4-b","label":"b","marks":15,"rowIds":["b-consideration-1","b-consideration-2","b-consideration-3"]},{"sourceCardId":"cons-2018-hl-q4-c","label":"c","marks":21,"rowIds":["c-sketch","c-justification"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 4",
+          "title": "Choosing a rural site and siting the house",
+          "pages": [
+                1,
+                3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original site location map retained. Both printed characteristics in (a) are required; in (b) either site may be chosen and is marked alike."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q4-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-original.png",
+          "srcHash": "66ae89d14336e395468a1c2982cd12fb",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 4: the printed question with the site location map showing sites A and B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q4-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q4-layout.png",
+          "srcHash": "d2a3ca83ad0a73434ed87b83e5afeeb3",
+          "alt": "SEC model sketches of the house location, orientation, entrance and driveway on sites A and B.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q5-complete", topicId: "cons-6-1", conceptId: "ground-floor-u-value-complete",
+    section: "B", questionRef: "2018 HL Q5 — complete",
+    stem: "A house built in the 1970s has an uninsulated solid concrete ground floor, as shown, with a sand/cement fine screed finish.",
+    questionText: "(a) Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickness 50 mm; Concrete floor slab thickness 100 mm; Radon barrier thickness 0.25 mm; Sand blinding thickness 40 mm; Hardcore thickness 200 mm; Subsoil thickness 300 mm. Thermal data of the concrete ground floor: Resistance of internal top surface of floor (R) 0.104 m2 °C/W; Resistivity of fine screed (r) 0.710 m °C/W; Conductivity of concrete floor slab (k) 1.280 W/m °C; Conductivity of radon barrier (k) 0.250 W/m °C; Conductivity of sand blinding (k) 0.160 W/m °C; Conductivity of hardcore (k) 1.350 W/m °C; Conductivity of subsoil (k) 1.600 W/m °C. (b) Using the U-value of the concrete floor obtained at 5(a) above and the following data, calculate the cost of heat lost annually through the uninsulated concrete floor slab: dimensions of floor slab 6.0 metres × 12.0 metres; average internal temperature 21 °C; average temperature of subsoil 5 °C; heating period 10 hours daily for 38 weeks per annum; cost of oil 96 cent per litre; calorific value of oil 37350 kJ per litre; 1000 Watts 1 kJ per second. (c) It is proposed to redesign the above floor and upgrade its thermal properties to meet the Passive House standard by including expanded polystyrene in the design of the floor. Given the thermal conductivity (k) of expanded polystyrene as 0.037 W/m °C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-tabulation", kind: "criterion", verbatim: "Tabulation", marks: 3, contextNote: "The calculation set out in a table of material, conductivity, resistivity, thickness and resistance.", permittedMarks: [0,1,2,3] },
+    { id: "a-resistances", kind: "criterion", verbatim: "Internal top surface resistance Fine screed Concrete floor slab Radon barrier Sand blinding Hardcore Subsoil", marks: 21, contextNote: "Seven resistances, 3 each, by R = T/k (or R = T × r for the screed): internal top surface 0.1040 (given); screed 0.05 × 0.71 = 0.0355; slab 0.1/1.28 = 0.0781; radon barrier 0.00025/0.25 = 0.0010; sand blinding 0.04/0.16 = 0.2500; hardcore 0.2/1.35 = 0.1481; subsoil 0.3/1.6 = 0.1875. All in m²°C/W.", permittedMarks: [0,3,6,9,12,15,18,21] },
+    { id: "a-total-resistance", kind: "criterion", verbatim: "Total resistance", marks: 3, contextNote: "Total resistance Rt = 0.8042 m²°C/W.", permittedMarks: [0,3] },
+    { id: "a-u-value", kind: "criterion", verbatim: "Calculation of U-value of ground floor", marks: 3, contextNote: "U = 1 ÷ Rt = 1 ÷ 0.8042 = 1.2434 W/m²°C, with units.", permittedMarks: [0,3] },
+    { id: "b-heat-loss", kind: "criterion", verbatim: "Heat loss formula and calculations", marks: 3, contextNote: "Heat loss = U-value × area × temperature difference = 1.2434 × 72 × 16 = 1432.3968 watts (joules per second).", permittedMarks: [0,1,2,3] },
+    { id: "b-duration", kind: "criterion", verbatim: "Heating duration for one year", marks: 3, contextNote: "Heating period = 60 × 60 × 10 × 7 × 38 = 9,576,000 seconds (2,660 hours).", permittedMarks: [0,1,2,3] },
+    { id: "b-energy", kind: "criterion", verbatim: "k/Joules calculation for one year", marks: 3, contextNote: "Energy = 9,576,000 × 1432.3968 ÷ 1000 = 13,716,631.18 kJ per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-oil", kind: "criterion", verbatim: "Litres of oil for one year", marks: 3, contextNote: "Oil = 13,716,631.18 ÷ 37,350 = 367.24 litres per year.", permittedMarks: [0,1,2,3] },
+    { id: "b-cost", kind: "criterion", verbatim: "Annual cost of heat loss", marks: 3, contextNote: "Annual cost = 367.24 × €0.96 = €352.5. The scheme’s alternative one-line method gives the same €352.5.", permittedMarks: [0,1,2,3] },
+    { id: "c-required-resistance", kind: "criterion", verbatim: "Resistance for U- value for 0.15Wm2K using R=1/U", marks: 3, contextNote: "Required resistance = 1 ÷ 0.15 = 6.6666 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "c-existing-resistance", kind: "criterion", verbatim: "Resistance from calculated U-value from part (a)", marks: 3, contextNote: "Existing resistance = 1 ÷ 1.2434 = 0.8042 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "c-difference", kind: "criterion", verbatim: "Difference in resistances (required resistance)", marks: 3, contextNote: "Difference = 6.6666 − 0.8042 = 5.8624 m²K/W.", permittedMarks: [0,1,2,3] },
+    { id: "c-formula", kind: "criterion", verbatim: "Application of formula R = T/k", marks: 3, contextNote: "R = T/k, so 5.8624 = T/0.037.", permittedMarks: [0,1,2,3] },
+    { id: "c-thickness", kind: "criterion", verbatim: "Required thickness of insulation", marks: 3, contextNote: "T = 5.8624 × 0.037 = 0.2169088 m: 216.9 mm of expanded polystyrene (216 or 217 mm accepted).", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q5-a","label":"a","marks":30,"rowIds":["a-tabulation","a-resistances","a-total-resistance","a-u-value"]},{"sourceCardId":"cons-2018-hl-q5-b","label":"b","marks":15,"rowIds":["b-heat-loss","b-duration","b-energy","b-oil","b-cost"]},{"sourceCardId":"cons-2018-hl-q5-c","label":"c","marks":15,"rowIds":["c-required-resistance","c-existing-resistance","c-difference","c-formula","c-thickness"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Ground floor U-value, heat-loss cost and insulation thickness",
+          "pages": [
+                1,
+                4
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All printed data are retained in the original question. Parts (b) and (c) use the U-value from (a); the scheme’s worked answers are U = 1.2434 W/m²°C, an annual cost of €352.50 and 216.9 mm of expanded polystyrene."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q5-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-original.png",
+          "srcHash": "9ff6ea1f9395cb2f306a81ec466a0cac",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 5: the printed question with a sketch of the uninsulated ground floor and all the thermal data.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q5-calculation",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q5-calculation.png",
+          "srcHash": "e478095996b537601d7b965f862ecc35",
+          "alt": "SEC worked solution: the U-value table giving a total resistance of 0.8042 and U = 1.2434 W/m²°C, and the annual heat-loss cost of €352.5 by two methods.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q6-complete", topicId: "cons-1-2", conceptId: "self-build-eco-house-complete",
+    section: "B", questionRef: "2018 HL Q6 — complete",
+    stem: "A young couple have obtained planning permission to build an eco-friendly house, with internal dimensions of 10.0 m × 4.0 m, as shown. There are two bedrooms and a bathroom upstairs. The couple have an interest in house construction and wish to self-build their house with the help of neighbours, family and friends. They have also engaged professional design supervision and an electrician. The house is of timber frame construction throughout, with an external rainscreen of native larch.",
+    questionText: "(a) Discuss two advantages and two disadvantages of self-build as a method of building a house. (b) Discuss in detail, using notes and freehand sketches, three features of the design shown that make the house suitable as a self-build project. (c) Suggest, using notes and freehand sketches, two modifications to the existing design that would further reduce the environmental impact of the house and help meet the nearly Zero Energy Building (nZEB) requirements. Justify your design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-advantage-1", kind: "criterion", verbatim: "Advantage 1 of self-build", marks: 3, contextNote: "Such as: reduced costs with help from family, friends and neighbours; a smaller mortgage.", permittedMarks: [0,1,2,3] },
+    { id: "a-advantage-2", kind: "criterion", verbatim: "Advantage 2 of self-build", marks: 3, contextNote: "A second, different advantage. Such as: control over build quality and finish; personal satisfaction; building over a longer period as budget allows.", permittedMarks: [0,1,2,3] },
+    { id: "a-disadvantage-1", kind: "criterion", verbatim: "Disadvantage 1 of self-build", marks: 3, contextNote: "Such as: a skills deficit through inexperience; demanding building contract management.", permittedMarks: [0,1,2,3] },
+    { id: "a-disadvantage-2", kind: "criterion", verbatim: "Disadvantage 2 of self-build", marks: 3, contextNote: "A second, different disadvantage. Such as: a longer construction period; no building guarantee or contracts with friends; responsibility for health and safety and regulations.", permittedMarks: [0,1,2,3] },
+    { id: "b-feature-1", kind: "criterion", verbatim: "Design feature 1", marks: 10, contextNote: "Note 5 and sketch 5. Such as: built mainly of locally sourced, renewable timber, easy to cut and shape with hand tools; a simple form, easy to set out.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-feature-2", kind: "criterion", verbatim: "Design feature 2", marks: 10, contextNote: "A second, different feature. Such as: small and compact with a narrow span for standard joists; a light building simplifying the foundations.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "b-feature-3", kind: "criterion", verbatim: "Design feature 3", marks: 10, contextNote: "A third, different feature. Such as: a straightforward roof; light frame and rainscreen needing no lifting equipment; early closing-in for dry indoor trades.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "c-modification-1", kind: "criterion", verbatim: "Modification 1", marks: 6, contextNote: "Note 3 and sketch 3. Such as: a storm porch or inner hall at the front door; thicker insulation in the external walls.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-modification-2", kind: "criterion", verbatim: "Modification 2", marks: 6, contextNote: "A second, different modification: note 3 and sketch 3. Such as: more south glazing or a sunroom; a glazed partition zoning the kitchen and dining areas; evacuated tubes, PV panels, rainwater harvesting or a wind generator.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-justification-1", kind: "criterion", verbatim: "Justification 1", marks: 3, contextNote: "The first modification justified against nZEB: very low energy demand largely met from renewables.", permittedMarks: [0,1,2,3] },
+    { id: "c-justification-2", kind: "criterion", verbatim: "Justification 2", marks: 3, contextNote: "The second modification justified.", permittedMarks: [0,1,2,3] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q6-a","label":"a","marks":12,"rowIds":["a-advantage-1","a-advantage-2","a-disadvantage-1","a-disadvantage-2"]},{"sourceCardId":"cons-2018-hl-q6-b","label":"b","marks":30,"rowIds":["b-feature-1","b-feature-2","b-feature-3"]},{"sourceCardId":"cons-2018-hl-q6-c","label":"c","marks":18,"rowIds":["c-modification-1","c-modification-2","c-justification-1","c-justification-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 6",
+          "title": "A self-build eco-friendly timber house",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) requires both two advantages and two disadvantages, each separately marked."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q6-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-original.png",
+          "srcHash": "f4f1d64babec535b04a93ff34d191d09",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 6: the printed question with the elevation and plan of a small larch-clad self-build house.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q6-features",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q6-features.png",
+          "srcHash": "af6ac014976e1bbd89dd664d2c8c8859",
+          "alt": "SEC 2018 Higher marking scheme notes on design features that suit self-build, with sketch plans (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q7-complete", topicId: "cons-1-5", conceptId: "door-wall-floor-section-complete",
+    section: "B", questionRef: "2018 HL Q7 — complete",
+    stem: "The main entrance door to a two-storey dwelling house is a high performance insulated wooden door, with vertical sheeting on both sides. The doorframe is thermally broken and is fitted in a 450 mm external concrete block wall with a full-fill insulated cavity. This external wall supports the first floor joists, as shown in the accompanying outline drawing. The first floor is a 25 mm floating wooden floor, on a 20 mm plywood deck, on 200 mm × 40 mm wooden joists, with a plasterboard ceiling beneath.",
+    questionText: "(a) To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, and floor. Show the typical construction details from a level 400 mm below the top of the door to a level 300 mm above the first floor joists. (b) Show clearly on your drawing best-practice design detailing to ensure airtightness at the junction of the external wall and the first floor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-wall", kind: "criterion", verbatim: "External wall", marks: 16, contextNote: "Best four details, 4 each. Such as: 450 mm block wall; full-fill cavity insulation; internal and external plaster/render; cavity closer; lintels; basalt low-conductivity wall ties; stepped DPC.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-door", kind: "criterion", verbatim: "Door", marks: 16, contextNote: "Best four details, 4 each. Such as: thermally broken frame; top rail; airtightness tape from frame to wall; insulation; vertical sheeting; double rebates with draught-proofing strips.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-floor", kind: "criterion", verbatim: "Floor", marks: 16, contextNote: "Best four details, 4 each. Such as: joist bearer fixed to the wall; mechanical fixing of the joist to the wall; joist hanger; 200 × 40 mm joists; plywood decking; floating wooden floor; plasterboard ceiling.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16] },
+    { id: "a-presentation", kind: "criterion", verbatim: "Scale and drafting marks (Excellent, Good, Fair)", marks: 8, contextNote: "Scale and drafting, each excellent 4, good 3, fair 2.", permittedMarks: [0,2,3,4,5,6,7,8] },
+    { id: "b-airtightness", kind: "criterion", verbatim: "Design detail", marks: 4, contextNote: "Show and identify the airtightness detail at the wall/floor junction, such as airtightness tape at the junction of wall and ceiling and joists on hangers rather than built into the inner leaf.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q7-a","label":"a","marks":56,"rowIds":["a-wall","a-door","a-floor","a-presentation"]},{"sourceCardId":"cons-2018-hl-q7-b","label":"b","marks":4,"rowIds":["b-airtightness"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 7",
+          "title": "Entrance door, cavity wall and first floor section",
+          "pages": [
+                1,
+                5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original outline drawing retained. Construction and scale/drafting marks belong to part (a); the airtightness detail in (b) is marked separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q7-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-original.png",
+          "srcHash": "c5156a7915c51e16eb5e3253a85077a2",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 7: the printed question with the outline drawing of the door head, cavity wall and first floor joists.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q7-section",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q7-section.png",
+          "srcHash": "22c1f3e0baab4dfbab05784d837fa9ac",
+          "alt": "SEC model section through the door head, cavity wall and first floor with the typical floor, wall and door details.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q8-complete", topicId: "cons-5-3", conceptId: "stove-solar-heating-system-complete",
+    section: "B", questionRef: "2018 HL Q8 — complete",
+    stem: "A wood-burning stove as shown, combined with a solar collector, is used to provide central heating and hot water for a compact three bedroom, two-storey house.",
+    questionText: "(a) Using notes and a single-line diagram, show a typical design layout for both the central heating and the hot water systems. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework. (b) Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discuss the importance of each safety feature outlined. (c) Using notes and freehand sketches, show two design considerations that should be taken into account when selecting a preferred location of a chimney for the stove. Discuss the importance of each consideration outlined.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "criterion", verbatim: "Design layout of zoned plumbing system (8 × 3 marks)", marks: 24, contextNote: "Best eight items, 3 each. Menu: stove and radiators; zone controls and zone thermostats; header/expansion tank; feed and cold feed; expansion pipe or vessel; flow and return pipes to radiators; radiator valves; pump and valves; solar panel; flow and return marked; solar pump; twin-coil cylinder; control panel; expansion vessel; thermal reducing vessel.", permittedMarks: [0,3,6,9,12,15,18,21,24] },
+    { id: "a-sizes", kind: "criterion", verbatim: "Sizes of pipework (any 2)", marks: 4, contextNote: "Any two typical pipe sizes, 2 each, such as 22 mm flow and return and 15 mm to radiators.", permittedMarks: [0,1,2,3,4] },
+    { id: "b-feature-1", kind: "criterion", verbatim: "Feature 1", marks: 8, contextNote: "Note 4 and sketch 4. Such as: thermostatic control of the burning rate and TRVs with a boiler interlock; a cylinder thermostat a third of the way up.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-feature-2", kind: "criterion", verbatim: "Feature 2", marks: 8, contextNote: "A second, different feature: note 4 and sketch 4. Such as: a pressure relief or vent valve; an open expansion pipe or sealed expansion vessel; a carbon monoxide alarm.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-discussion", kind: "criterion", verbatim: "Discussion of safety features", marks: 4, contextNote: "The importance of each feature discussed, such as preventing overheating, explosion from pressure build-up, or carbon monoxide poisoning.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-consideration-1", kind: "criterion", verbatim: "Design consideration1 Note & Sketch", marks: 6, contextNote: "Note 3 and sketch 3. Such as: on an internal wall so the chimney’s thermal mass keeps heat in the house.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-consideration-2", kind: "criterion", verbatim: "Design consideration 2 Note & Sketch", marks: 6, contextNote: "A second, different consideration: note 3 and sketch 3. Such as: central and near the bathroom to avoid wasting water; an insulated, double-walled system chimney encased where it passes combustible material.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q8-a","label":"a","marks":28,"rowIds":["a-items","a-sizes"]},{"sourceCardId":"cons-2018-hl-q8-b","label":"b","marks":20,"rowIds":["b-feature-1","b-feature-2","b-discussion"]},{"sourceCardId":"cons-2018-hl-q8-c","label":"c","marks":12,"rowIds":["c-consideration-1","c-consideration-2"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 8",
+          "title": "Stove and solar collector heating and hot water",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The listed components are a marking menu; both safety features and both chimney considerations are required."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q8-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-original.png",
+          "srcHash": "4d134fa9197b26ae889f6335aa8e42a8",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 8: the printed question with a sketch of a wood-burning stove.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q8-layout",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q8-layout.png",
+          "srcHash": "0752f1542102c3f7216037e157256fdf",
+          "alt": "SEC model single-line diagram of the stove and solar heating with two zoned radiator circuits and the twin-coil cylinder.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q9-complete", topicId: "cons-3-9", conceptId: "attic-bedroom-roof-complete",
+    section: "B", questionRef: "2018 HL Q9 — complete",
+    questionText: "(a) Discuss in detail using notes and freehand sketches, three functional requirements of an attic space suitable for use as a bedroom. (b) A traditional cut roof, which is slated and has a pitch of 45°, is designed to provide a well-insulated bedroom in the attic space, as shown. Using notes and freehand sketches, show the typical design detailing for such a roof. Include the stud side walls and the insulation. Show clearly the design detailing necessary to ensure the structural stability of the roof. Label the main components and give their typical dimensions. (c) On your sketch, show one design detail to prevent air leakage at the junction of the stud side wall and the sloped ceiling.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-requirement-1", kind: "criterion", verbatim: "Functional requirement 1", marks: 12, contextNote: "Notes 6 and sketches 6. Such as: adequate floor area with a 2400 mm ceiling over at least half the floor; natural lighting and ventilation through roof lights or dormers.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-requirement-2", kind: "criterion", verbatim: "Functional requirement 2", marks: 12, contextNote: "A second, different requirement. Such as: fire safety — fire-rated plasterboard, smoke detection, fire doors and a means of escape; sound insulation with a floating floor.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "a-requirement-3", kind: "criterion", verbatim: "Functional requirement 3", marks: 12, contextNote: "A third, different requirement. Such as: safe permanent stair access; thermal insulation to a U-value of 0.16 for the roof, avoiding thermal bridging; electrical work to standard.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12] },
+    { id: "b-stability", kind: "criterion", verbatim: "Structural stability - pitched roof Notes & sketches", marks: 6, contextNote: "Such as: purlins strutted from mounted wallplates; collar ties at 2400 mm forming a triangle; doubled rafters at roof lights; struts, runners and joists of sufficient size for the span.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-stud-wall", kind: "criterion", verbatim: "Stud side wall and insulation Notes & sketches", marks: 6, contextNote: "Such as: vertical studs 200 × 40 mm; insulation between and under the rafters with a vapour barrier; a service cavity at the ceiling.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "b-labels", kind: "criterion", verbatim: "Labelled components and dimensions (3 × 2 marks)", marks: 6, contextNote: "Three labelled components with dimensions, 2 each, such as rafters 200 × 40 at 400–600 mm, collar ties 200 × 40, purlin 200 × 75 mm.", permittedMarks: [0,1,2,3,4,5,6] },
+    { id: "c-air-leakage", kind: "criterion", verbatim: "Air leakage design detail", marks: 6, contextNote: "Such as: the continuous airtight membrane overlapped at the junction and sealed with proprietary adhesive tape, kept clear of the angle between stud wall and sloping ceiling.", permittedMarks: [0,1,2,3,4,5,6] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q9-a","label":"a","marks":36,"rowIds":["a-requirement-1","a-requirement-2","a-requirement-3"]},{"sourceCardId":"cons-2018-hl-q9-b","label":"b","marks":18,"rowIds":["b-stability","b-stud-wall","b-labels"]},{"sourceCardId":"cons-2018-hl-q9-c","label":"c","marks":6,"rowIds":["c-air-leakage"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Attic bedroom in a cut roof",
+          "pages": [
+                1,
+                6
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original sketch retained. The requirements are open responses; (b) requires the roof, the stud side walls and insulation, and labelled dimensions."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q9-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-original.png",
+          "srcHash": "172918d651568f156e9f6bdc49ca0084",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 9: the printed question with a cutaway sketch of an attic bedroom in a slated cut roof.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q9-structure",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q9-structure.png",
+          "srcHash": "7897693eebc6a7d635bdf84847a68ad5",
+          "alt": "SEC model sketches and notes on the structural stability, insulation and stud side walls of the attic roof (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-b", topicId: "cons-6-2", conceptId: "passive-house-upgrade-b",
+    section: "B", questionRef: "2018 HL Q10(b)",
+    questionText: "The drawing shows a preliminary design of a dwelling house, having two bedrooms and a bathroom upstairs. The clients wish to upgrade this design to meet the Passive House standard. Show, using notes and freehand sketches, three modifications you would make to this design to help meet the Passive House standard. Justify your design choices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 28,
+    rows: [
+    { id: "modification-1", kind: "criterion", verbatim: "Modification 1 (notes and sketches)", marks: 8, contextNote: "Notes and sketches, 8. Such as: a draught lobby at the entrance; the long axis east-west with larger south windows and smaller north windows.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "modification-2", kind: "criterion", verbatim: "Modification 2 (notes and sketches)", marks: 8, contextNote: "A second, different modification. Such as: more window area in the kitchen and dining room; roof lights; large eaves or brise-soleil over south windows.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "modification-3", kind: "criterion", verbatim: "Modification 3 (notes and sketches)", marks: 8, contextNote: "A third, different modification. Such as: the stove and chimney moved to an inner wall, or replaced with MHRV; heat exchange technology; solar PV or evacuated tubes on the south roof.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "justification", kind: "criterion", verbatim: "Justification", marks: 4, contextNote: "The modifications justified against the Passive House standard.", permittedMarks: [0,1,2,3,4] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, modifications and orientation",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-original.png",
+          "srcHash": "abe0e38c358c02eb0ecbfc4168618a40",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 10: the printed question with the elevation and plan of the preliminary house design.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q10-modifications",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-modifications.png",
+          "srcHash": "ab8323a877f567339d808f07240a0abe",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches on Passive House modifications to the design.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-complete", topicId: "cons-6-2", conceptId: "passive-house-upgrade-complete",
+    section: "B", questionRef: "2018 HL Q10 — complete",
+    questionText: "(a) Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: space heating energy demand; building form; thermal bridging. (b) The drawing shows a preliminary design of a dwelling house, having two bedrooms and a bathroom upstairs. The clients wish to upgrade this design to meet the Passive House standard. Show, using notes and freehand sketches, three modifications you would make to this design to help meet the Passive House standard. Justify your design choices. (c) Show, using notes and freehand sketches, a preferred orientation for your upgraded design. Include the sun path in your sketch and discuss how your preferred orientation ensures the optimum thermal performance of the house. Note: It is not necessary to show the furniture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "a-items", kind: "anyN", verbatim: "Design of a passive house - any 2", marks: 16, contextNote: "Any two of the three printed items, each notes 4 and sketches 4 = 8. Space heating energy demand: the energy to keep 20 °C all year, at most 15 kWh/m²/a in a Passive House, set by insulation and airtightness; solar gain from well-placed glazing with shading against overheating. Building form: a simple compact form with fewer junctions, less envelope and lower heat loss; a low surface-to-volume (A/V) ratio, ideally 0.7 or less; avoid complex hips and valleys. Thermal bridging: areas of higher conductivity let heat escape and cause cold spots, condensation and mould; continuity of insulation at openings, floor and eaves junctions, as in the scheme’s details.", group: {"claimMax":2,"perOption":8,"options":["Space heating energy demand","Building form","Thermal bridging"]} },
+    { id: "b-modification-1", kind: "criterion", verbatim: "Modification 1 (notes and sketches)", marks: 8, contextNote: "Notes and sketches, 8. Such as: a draught lobby at the entrance; the long axis east-west with larger south windows and smaller north windows.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-modification-2", kind: "criterion", verbatim: "Modification 2 (notes and sketches)", marks: 8, contextNote: "A second, different modification. Such as: more window area in the kitchen and dining room; roof lights; large eaves or brise-soleil over south windows.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-modification-3", kind: "criterion", verbatim: "Modification 3 (notes and sketches)", marks: 8, contextNote: "A third, different modification. Such as: the stove and chimney moved to an inner wall, or replaced with MHRV; heat exchange technology; solar PV or evacuated tubes on the south roof.", permittedMarks: [0,1,2,3,4,5,6,7,8] },
+    { id: "b-justification", kind: "criterion", verbatim: "Justification", marks: 4, contextNote: "The modifications justified against the Passive House standard.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-sketch", kind: "criterion", verbatim: "Sketch", marks: 4, contextNote: "A sketch of the upgraded design on its site.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-orientation", kind: "criterion", verbatim: "Orientation", marks: 4, contextNote: "The long glazed façade facing south, or within 30° of south.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-sun-path", kind: "criterion", verbatim: "Sunpath", marks: 4, contextNote: "The sun path shown, with its winter and summer heights.", permittedMarks: [0,1,2,3,4] },
+    { id: "c-thermal-performance", kind: "criterion", verbatim: "Optimum thermal performance", marks: 4, contextNote: "How the orientation gives solar gain and less heat loss: large glazing south or south-west, small glazing north, south roof for solar panels.", permittedMarks: [0,1,2,3,4] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q10-a","label":"a","marks":16,"rowIds":["a-items"]},{"sourceCardId":"cons-2018-hl-q10-b","label":"b","marks":28,"rowIds":["b-modification-1","b-modification-2","b-modification-3","b-justification"]},{"sourceCardId":"cons-2018-hl-q10-c","label":"c","marks":16,"rowIds":["c-sketch","c-orientation","c-sun-path","c-thermal-performance"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10",
+          "title": "Passive House principles, modifications and orientation",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original elevation and plan retained. Part (a) is a closed choice of any two of the three printed items: one card holding all three."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-original.png",
+          "srcHash": "abe0e38c358c02eb0ecbfc4168618a40",
+          "alt": "Original SEC 2018 Higher Construction Studies Question 10: the printed question with the elevation and plan of the preliminary house design.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+    figure: {
+          "candId": "construction-studies-2018-HL-q10-principles",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-principles.png",
+          "srcHash": "93f41bb6ab0aedee6bd449e65a421a33",
+          "alt": "SEC 2018 Higher marking scheme notes and sketches for all three Passive House items — space heating energy demand, building form and thermal bridging (two pages).",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-alt-discussion", topicId: "cons-1-2", conceptId: "green-sustainable-housing-discussion",
+    section: "B", questionRef: "2018 HL Q10-alt — discussion",
+    stem: "Green design is about being green, rather than simply appearing to be green. So greening your house is about more than just buying all sorts of expensive ‘eco-bling’ and adding it to your house. Ironically, that could be just another display of consumerism. Rather, greening your house is about making responsible environmental choices based on what you want to do, what you can do and what you can afford. This means that - before we get into the minutiae of sustainable building materials - we should address some fundamentals, chief among which is the need to build modestly and source locally. From: contemporary design secrets: the art of building a house in the countryside Jane Burnside (2013) Published by: BOOKLINK. ISBN 978-1-906886-42-4",
+    questionText: "Discuss the above statement in detail.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "point-1", kind: "criterion", verbatim: "Discussion – point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: building green means responsible choices from the start of the design, not a last resort; avoiding eco-bling gadgets.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-2", kind: "criterion", verbatim: "Discussion – point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: modest, compact buildings with less material and a small ecological footprint; local materials cutting transport and embodied energy.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "point-3", kind: "criterion", verbatim: "Discussion – point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: health and wellbeing at the centre with natural, non-toxic materials and biophilic design; life-cycle thinking about running costs. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Building modestly and sourcing locally (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-alt-original.png",
+          "srcHash": "b8dc1481c372f08e4b0fe0fee74a643a",
+          "alt": "Original SEC 2018 Higher Construction Studies alternative Question 10: the printed quotation from Jane Burnside on green design and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-alt-guidelines", topicId: "cons-1-2", conceptId: "green-sustainable-housing-guidelines",
+    section: "B", questionRef: "2018 HL Q10-alt — guidelines",
+    stem: "Green design is about being green, rather than simply appearing to be green. So greening your house is about more than just buying all sorts of expensive ‘eco-bling’ and adding it to your house. Ironically, that could be just another display of consumerism. Rather, greening your house is about making responsible environmental choices based on what you want to do, what you can do and what you can afford. This means that - before we get into the minutiae of sustainable building materials - we should address some fundamentals, chief among which is the need to build modestly and source locally. From: contemporary design secrets: the art of building a house in the countryside Jane Burnside (2013) Published by: BOOKLINK. ISBN 978-1-906886-42-4",
+    questionText: "Propose three best practice guidelines that would promote green, sustainable housing in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: planning authorities publishing green design guides and clear planning guidelines for sustainable homes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: grants and incentives for renewable energy, on-site generation and energy-saving fittings.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guideline-3", kind: "criterion", verbatim: "Guideline 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: training professionals in green building with materials such as wood, cob, rammed earth and hemp-lime; promoting eco-villages and universal design. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Building modestly and sourcing locally (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-alt-original.png",
+          "srcHash": "b8dc1481c372f08e4b0fe0fee74a643a",
+          "alt": "Original SEC 2018 Higher Construction Studies alternative Question 10: the printed quotation from Jane Burnside on green design and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "includesPrompt": true
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q10-alt-complete", topicId: "cons-1-2", conceptId: "green-sustainable-housing-complete",
+    section: "B", questionRef: "2018 HL Q10-alt — complete",
+    stem: "Green design is about being green, rather than simply appearing to be green. So greening your house is about more than just buying all sorts of expensive ‘eco-bling’ and adding it to your house. Ironically, that could be just another display of consumerism. Rather, greening your house is about making responsible environmental choices based on what you want to do, what you can do and what you can afford. This means that - before we get into the minutiae of sustainable building materials - we should address some fundamentals, chief among which is the need to build modestly and source locally. From: contemporary design secrets: the art of building a house in the countryside Jane Burnside (2013) Published by: BOOKLINK. ISBN 978-1-906886-42-4",
+    questionText: "Discuss the above statement in detail and propose three best practice guidelines that would promote green, sustainable housing in Ireland.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 60,
+    rows: [
+    { id: "discussion-point-1", kind: "criterion", verbatim: "Discussion – point 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: building green means responsible choices from the start of the design, not a last resort; avoiding eco-bling gadgets.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-2", kind: "criterion", verbatim: "Discussion – point 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: modest, compact buildings with less material and a small ecological footprint; local materials cutting transport and embodied energy.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "discussion-point-3", kind: "criterion", verbatim: "Discussion – point 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: health and wellbeing at the centre with natural, non-toxic materials and biophilic design; life-cycle thinking about running costs. Three distinct, well-argued points are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-1", kind: "criterion", verbatim: "Guideline 1 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: planning authorities publishing green design guides and clear planning guidelines for sustainable homes.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-2", kind: "criterion", verbatim: "Guideline 2 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: grants and incentives for renewable energy, on-site generation and energy-saving fittings.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    { id: "guidelines-guideline-3", kind: "criterion", verbatim: "Guideline 3 (4 for point, 6 for discussion)", marks: 10, contextNote: "Point 4 and discussion 6. Such as: training professionals in green building with materials such as wood, cob, rammed earth and hemp-lime; promoting eco-villages and universal design. Three distinct guidelines are needed.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10] },
+    ],
+    taskGroups: [{"sourceCardId":"cons-2018-hl-q10-alt-discussion","label":"Discussion of the statement","marks":30,"rowIds":["discussion-point-1","discussion-point-2","discussion-point-3"]},{"sourceCardId":"cons-2018-hl-q10-alt-guidelines","label":"Three best practice guidelines","marks":30,"rowIds":["guidelines-guideline-1","guidelines-guideline-2","guidelines-guideline-3"]}],
+    sourceMaterial: {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 10 — ALTERNATIVE",
+          "title": "Building modestly and sourcing locally (alternative Question 10)",
+          "pages": [
+                1,
+                7
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
+          "presentationNote": "This is the alternative Question 10 printed after OR. It is a separate 60-mark route under the same Question 10 anchor; its marks are never added to the Passive House question. The printed task is one sentence; the scheme marks its discussion and its guidelines separately."
+    },
+    questionFigure: {
+          "candId": "construction-studies-2018-HL-q10-alt-original",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-HL-q10-alt-original.png",
+          "srcHash": "b8dc1481c372f08e4b0fe0fee74a643a",
+          "alt": "Original SEC 2018 Higher Construction Studies alternative Question 10: the printed quotation from Jane Burnside on green design and the task.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission.",
           "includesPrompt": true
     },
   } as SecCard,
