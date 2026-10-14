@@ -10645,5 +10645,278 @@
   "truncated": false,
   "questionRef": "2016 HL Paper 2 Q9(d)",
   "description": "The question as printed on the paper \u2014 The research institute also carried out a survey into the use of agricultural land. n farmers were surveyed. If the margin of error of the survey was 4\u00b75 %, find the value of n."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q1-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q1(a)",
+  "description": "The question as printed on the paper \u2014 Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives \u20ac2 for each delivery she makes. One day, she works for 2 hours, makes 5 deliveries and is paid a total of \u20ac28. Find her hourly rate of pay."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q1-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q1(b)",
+  "description": "The question as printed on the paper \u2014 Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives \u20ac2 for each delivery she makes. One week, she works for h hours and makes d deliveries. Write a formula in h and d for the wage (w) she receives."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q1-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q1(c)",
+  "description": "The question as printed on the paper \u2014 Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives \u20ac2 for each delivery she makes. Another week, she works for 6 hours and makes 12 deliveries. She also works 5 hours on a Sunday, at time and a half, and makes some deliveries. In total, she receives \u20ac161\u00b750 for that week. Find how many deliveries she makes on the Sunday."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q2(a)",
+  "description": "The question as printed on the paper \u2014 z\u2081 = 1 + 3i and z\u2082 = 2 \u2212i, where i\u00b2 = \u22121, are two complex numbers. (a) Let z\u2083 = z\u2081 + 2z\u2082. Find z\u2083 in the form a + bi where a, b\u2208\u2124. Im"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q2(b)",
+  "description": "The question as printed on the paper \u2014 z\u2081 = 1 + 3i and z\u2082 = 2 \u2212i, where i\u00b2 = \u22121, are two complex numbers. Plot z1, z2, and z3 on the given Argand diagram 5 (b) and label each point clearly. 4 3 2 1 Re -2 -1 1 2 3 4 5 -1 -2"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q2-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q2(c)",
+  "description": "The question as printed on the paper \u2014 z\u2081 = 1 + 3i and z\u2082 = 2 \u2212i, where i\u00b2 = \u22121, are two complex numbers. Investigate if |z\u2082\u2212z\u2083| = |z\u2081 + z\u2082|. (c) z1"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q2-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q2(d)",
+  "description": "The question as printed on the paper \u2014 z\u2081 = 1 + 3i and z\u2082 = 2 \u2212i, where i\u00b2 = \u22121, are two complex numbers. Find the complex number w, such that w = (d) . z2 Give your answer in the form a + bi, where a, b\u2208\u211d."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q3-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q3(a)",
+  "description": "The question as printed on the paper \u2014 Solve for x: 3(x\u22127) + 5(x\u22124) = 15, where x\u2208\u211d."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q3-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q3(b)",
+  "description": "The question as printed on the paper \u2014 (b) Solve the equations below to find the value of a and the value of b: 4a + 3b = \u22123 5a = 25 + 2b."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q3-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q3(c)",
+  "description": "The question as printed on the paper \u2014 (c) List all the values of x that satisfy the inequality 2(2x\u22123) + 6x < 25, where x\u2208\u2115."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q4-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q4(a)",
+  "description": "The question as printed on the paper \u2014 The function f: x\u21a6x\u00b3 + x\u00b2\u22122x + 7 is defined for x\u2208\u211d. Find the coordinates of the point at which the graph of f cuts the y-axis."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q4-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q4(b)",
+  "description": "The question as printed on the paper \u2014 The function f: x\u21a6x\u00b3 + x\u00b2\u22122x + 7 is defined for x\u2208\u211d. Verify, using algebra, that the point A(1, 7) is on the graph of f."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q4-c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q4(c)(i)",
+  "description": "The question as printed on the paper \u2014 The function f: x\u21a6x\u00b3 + x\u00b2\u22122x + 7 is defined for x\u2208\u211d. Find f\u2032(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q4-c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q4(c)(ii)",
+  "description": "The question as printed on the paper \u2014 The function f: x\u21a6x\u00b3 + x\u00b2\u22122x + 7 is defined for x\u2208\u211d. Find f\u2032(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1. (ii) Hence, find the equation of the tangent to the graph of f at the point A(1, 7)."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q5-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q5(a)(i), (a)(ii)",
+  "description": "The question as printed on the paper \u2014 The first five numbers in a pattern of numbers are given in the table below. Term Number U\u2081 13 U\u2082 15 U\u2083 19 U\u2084 25 U\u2085 33 U\u2086 U\u2087 U\u2088 Follow the pattern in the table above to write the next three numbers into the table. (ii) Use the data in the table to show that the pattern is quadratic."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q5-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q5(b)",
+  "description": "The question as printed on the paper \u2014 The first five numbers in a pattern of numbers are given in the table below. Table: Term, Number. U1 13; U2 15; U3 19; U4 25; U5 33; U6 _; U7 _; U8 _. U\u2099 = n\u00b2 + bn + c where b, c \u2208 \u2124. Find the value of b and the value of c."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q5-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q5(c)",
+  "description": "The question as printed on the paper \u2014 The table below shows the first five terms of an arithmetic sequence. Find an expression for T\u2099, the nth term of the sequence. Hence, or otherwise, find the value of T\u2083\u2080, the 30th term. Term Number T\u2081 12 T\u2082 14 T\u2083 16 T\u2084 18 T\u2085 20"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q6-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q6(a)",
+  "description": "The question as printed on the paper \u2014 Fiona earns a gross wage of \u20ac1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage. Each fortnight, Fiona pays income tax at the rate of 20% on the first \u20ac1300 she earns and 40% on the remainder. She has tax credits of \u20ac126 per fortnight. Find how much income tax she pays per fortnight."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q6-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q6(b)",
+  "description": "The question as printed on the paper \u2014 Fiona earns a gross wage of \u20ac1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage. Each fortnight, Fiona also pays USC on her gross wage. The rates are: 1% on the first \u20ac462 she earns, 3% on the next \u20ac214, and 5\u00b75% on the balance. Find the total amount of USC she pays each fortnight."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q6-c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q6(c)(i), (c)(ii)",
+  "description": "The question as printed on the paper \u2014 Fiona earns a gross wage of \u20ac1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage. (c) (i) Fiona pays PRSI amounting to \u20ac18 each fortnight. Find the sum of her fortnightly deductions. (ii) Write the sum of her fortnightly deductions as a percentage of her gross wage. Give your answer correct to one decimal place."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(a)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. (a) Find the value of the investment at the end of 3 years if Paul chooses Option 1 and does not take any money out."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(b)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. Find the value of the investment at the end of 3 years if Paul chooses Option 2."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(c)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. Give one issue, other than the rate of interest earned, that Paul might take into account when deciding between Option 1 and Option 2."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(d)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. Paul would like his investment of \u20ac8000 to amount to \u20ac9000 after 3 years. What annual rate of compound interest would be required for this to happen? Give your answer as a percentage."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-e-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(e)(i)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. Another bank offers to invest his \u20ac8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t\u22121\u00b72t\u00b2 where v is the value of the fund, in euro, and t is the time, in months, since the \u20ac8000 was invested. Find the value of the money in the fund after 12 months."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q7-e-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q7(e)(ii)",
+  "description": "The question as printed on the paper \u2014 Paul has \u20ac8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Option 1 Option 2 2% interest in Year 1 3\u00b77% compound interest per 3% interest in Year 2 year, for 3 years. 5% interest in Year 3 Money can be taken out at the Money may not be taken out end of Year 1 or Year 2 without until the end of Year 3. penalty. Another bank offers to invest his \u20ac8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t\u22121\u00b72t\u00b2 where v is the value of the fund, in euro, and t is the time, in months, since the \u20ac8000 was invested. Find the value of the money in the fund after 12 months. (ii) Mary invests \u20ac8000 for 1 year at r % per annum. After 1 year her investment is worth the same amount as the answer to part (e)(i) above. Find the value of r, correct to 2 decimal places."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(a)",
+  "description": "The question as printed on the paper \u2014 Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. By writing an expression for the perimeter of the y vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10\u00b75 \u2212x. x"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(b)(i)",
+  "description": "The question as printed on the paper \u2014 Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (a): By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10\u00b75 \u2212 x. Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6\u00b75, _, _, _, _, _, _. A (m\u00b2): _, _, _, _, 26, _, _, _, _, _, _."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(b)(ii)",
+  "description": "The question as printed on the paper \u2014 Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (b)(i): Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6\u00b75, _, _, _, _, _, _. A (m\u00b2): _, _, _, _, 26, _, _, _, _, _, _. Use the values of x and A from the table to plot the graph of A on the grid below."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(c)",
+  "description": "The question as printed on the paper \u2014 Use your graph to estimate the maximum value of A and write the corresponding length and width. A: Maximum area (m\u00b2) Length (m) Width (m)"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(d)(ii)",
+  "description": "The question as printed on the paper \u2014 (i) Show that the area of the rectangle can be written as A = 10\u00b75x\u2212x\u00b2. dA (ii) Find dx."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(d)(iii)",
+  "description": "The question as printed on the paper \u2014 (i) Show that the area of the rectangle can be written as A = 10\u00b75x\u2212x\u00b2. dA (ii) Find dx. (iii) Hence, find the value of x which will give the maximum area."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(d)(iv)",
+  "description": "The question as printed on the paper \u2014 (i) Show that the area of the rectangle can be written as A = 10\u00b75x\u2212x\u00b2. (iii) Hence, find the value of x which will give the maximum area. (iv) Find this maximum area."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q9(a)(i)",
+  "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Complete the table below to show what Company A charges and what Company B charges for jobs that take up to 5 hours. Where necessary give the charge correct to the nearest cent. Time 0 1 2 3 4 5 (hours) A(h) (\u20ac) 68 B(h) (\u20ac) 91\u00b766"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q9-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q9(a)(ii)",
+  "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. (ii) On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly. 160 150 140 130 120 110 100 Charge (\u20ac) 90 80 70 60 50 40 30 20 10 Time (hours) 1"
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q9-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q9(b)",
+  "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. 1 Which company would charge least for a job that takes 2 (b) 2 hours to complete? Give a reason for your answer."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q9-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q9(c)",
+  "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Use your graphs to estimate the value of h for which the charge is the same for both companies."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q9-d.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q9(d)",
+  "description": "The question as printed on the paper \u2014 Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9\u00b75h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1\u00b774) ^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Find the difference in cost for a job that takes 6 hours to complete."
+ },
+ {
+  "file": "maths-2016-OL-ask-p1-q8-d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2016 OL Paper 1 Q8(d)(i)",
+  "description": "The question as printed on the paper \u2014 Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. By writing an expression for the perimeter of the y vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10\u00b75 \u2212x. x (i) Show that the area of the rectangle can be written as A = 10\u00b75x\u2212x\u00b2."
  }
 ]

@@ -131,6 +131,18 @@ AFFECTED = {
         'maths-2016-hl-p2-q3-a', 'maths-2016-hl-p2-q3-b', 'maths-2016-hl-p2-q4-a-ii', 'maths-2016-hl-p2-q4-b', 'maths-2016-hl-p2-q5-a-i',
         'maths-2016-hl-p2-q6-b', 'maths-2016-hl-p2-q8-d-i', 'maths-2016-hl-p2-q8-d-ii', 'maths-2016-hl-p2-q9-a-iii',
     ],
+    # 2016 Ordinary: model solutions printed as an Argand diagram, completed
+    # tables, graphs, a construction, a stem-and-leaf plot, a pie chart and a
+    # tree diagram, and bands that cannot be quoted (Q5(b)'s Un, mixed numbers,
+    # an italic Q and h the text layer mangles).
+    (2016, 'ol'): [
+        'maths-2016-ol-p1-q2-b', 'maths-2016-ol-p1-q5-a-i', 'maths-2016-ol-p1-q5-b', 'maths-2016-ol-p1-q8-b-i', 'maths-2016-ol-p1-q8-b-ii',
+        'maths-2016-ol-p1-q9-a-i', 'maths-2016-ol-p1-q9-a-ii',
+        'maths-2016-ol-p2-q1-a-i', 'maths-2016-ol-p2-q1-a-ii', 'maths-2016-ol-p2-q1-b', 'maths-2016-ol-p2-q3-b', 'maths-2016-ol-p2-q4-b',
+        'maths-2016-ol-p2-q4-c', 'maths-2016-ol-p2-q5-b', 'maths-2016-ol-p2-q5-c', 'maths-2016-ol-p2-q6-a-i', 'maths-2016-ol-p2-q8-b-i',
+        'maths-2016-ol-p2-q8-b-ii', 'maths-2016-ol-p2-q8-c-i', 'maths-2016-ol-p2-q8-c-ii', 'maths-2016-ol-p2-q8-d', 'maths-2016-ol-p2-q9-a-ii',
+        'maths-2016-ol-p2-q9-d', 'maths-2016-ol-p2-q9-e',
+    ],
 }
 # Labels the scheme prints differently from the paper's part label.
 PRINTED_LABEL = {
@@ -142,6 +154,7 @@ PRINTED_LABEL = {
 PRINTED_LABEL.update({
     'maths-2016-hl-p1-q3-a-i': '(i)', 'maths-2016-hl-p1-q3-a-ii': '(ii)', 'maths-2016-hl-p1-q3-a-iii': '(iii)',
     'maths-2016-hl-p1-q4-b-ii': '(ii)', 'maths-2016-hl-p1-q8-a-iv': '(iv)', 'maths-2016-hl-p1-q7-b-ii': ('(ii)', 2),
+    'maths-2016-ol-p1-q8-b-i': 'b(i)', 'maths-2016-ol-p2-q6-a-i': '(a)(i)(ii)',
 })
 # Rows the label search cannot place, given as visually verified (page, top,
 # bottom) table rules: 2016 Higher P1 Q9(a)(iii) prints its change-in-x/y
@@ -150,6 +163,8 @@ PRINTED_LABEL.update({
 ROW_SPAN = {
     'maths-2016-hl-p1-q9-a-iii': (24, 99.0, 442.6),
     'maths-2016-hl-p2-q8-d-i': (42, 56.9, 322.0),
+    # 2016 Ordinary P1 Q5(a)(i)+(ii): one 5C scale over two labelled rows.
+    'maths-2016-ol-p1-q5-a-i': (11, 77.2, 571.6),
 }
 BANDS = ['Low Partial Credit', 'Mid Partial Credit', 'High Partial Credit', 'Partial Credit', 'Full Credit',
          'Zero Credit', 'No Credit', 'Note', 'Special Case', 'Misreading']

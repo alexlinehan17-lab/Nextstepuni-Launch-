@@ -109612,5 +109612,2306 @@
   ],
   "notes": "Prompt, grouped parts and context visually checked against the original 2016 Higher Level Paper 2 on 2026-10-12; exact question and scheme pages attached by the independent review.",
   "questionFigureKey": "maths-2016-HL-ask-p2-q9-d"
+ },
+ {
+  "id": "maths-2016-ol-p1-q1-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q1-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q1(a)",
+  "questionText": "One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 5 × 2 = 10",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 28 − 10 = 18",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 18 ÷ 2 = 9",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — €9 per hour",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any use of 2, 5 or 28",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 18 calculated",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q1-a",
+  "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes."
+ },
+ {
+  "id": "maths-2016-ol-p1-q1-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q1-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q1(b)",
+  "questionText": "One week, she works for h hours and makes d deliveries. Write a formula in h and d for the wage (w) she receives.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q1-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — w = 9h+2d",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q1-b",
+  "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes. Part (a): One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay."
+ },
+ {
+  "id": "maths-2016-ol-p1-q1-c",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q1-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q1(c)",
+  "questionText": "Another week, she works for 6 hours and makes 12 deliveries. She also works 5 hours on a Sunday, at time and a half, and makes some deliveries. In total, she receives €161·50 for that week. Find how many deliveries she makes on the Sunday.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 9(6)+12(2)+5(13·5)+2d = 161·50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 145·5 + 2d = 161·50",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 2d = 16",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — d = 8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 9(6) or 12(2) or 78 formulated calculated or used",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 13·5 written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q1-c-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 83·5 and/or 67·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q1-c",
+  "stem": "Emma works part time after school at the local takeaway. She is paid a rate per hour and also receives €2 for each delivery she makes. Part (a): One day, she works for 2 hours, makes 5 deliveries and is paid a total of €28. Find her hourly rate of pay."
+ },
+ {
+  "id": "maths-2016-ol-p1-q2-a",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q2(a)",
+  "questionText": "Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q2-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — z₃ = 1 + 3i + 2(2 − i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — z₃ = 5 + i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-a-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-a-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q2-a",
+  "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers."
+ },
+ {
+  "id": "maths-2016-ol-p1-q2-b",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q2(b)",
+  "questionText": "Plot z₁, z₂, and z₃ on the given Argand diagram and label each point clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q2-b-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One Point correctly plotted",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-b-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 2 points correctly plotted but without labels",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-b-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 2 points correctly plotted and labelled",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-b-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 points correctly plotted without labels",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-b-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Mixes up real and imaginary axes with label of 3 correct points",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q2-b",
+  "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers. Part (a): Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ.",
+  "figureKey": "maths-2016-OL-scheme-p008-i0"
+ },
+ {
+  "id": "maths-2016-ol-p1-q2-c",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q2(c)",
+  "questionText": "Investigate if |z₂ − z₃| = |z₁ + z₂|.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q2-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — |−3 − 2i| = √13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — | 3 + 2i| = √13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q2-c",
+  "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers. Part (a): Let z₃ = z₁ + 2z₂. Find z₃ in the form a + bi where a, b ∈ ℤ."
+ },
+ {
+  "id": "maths-2016-ol-p1-q2-d",
+  "topicId": "maths-4-4",
+  "conceptId": "p1-q2-d",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q2(d)",
+  "questionText": "Find the complex number w, such that w = z₁/z₂. Give your answer in the form a + bi, where a, b ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — w = (1 + 3i)(2 + i)/(2 − i)(2 + i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — (2 + i + 6i + 3i²)/(4 + 2i − 2i − i²)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — w = (−1 + 7i)/5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — w = −1/5 + 7/5 i",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Conjugate identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Some multiplication above and below, even if by wrong conjugate",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q2-d-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — multiply out correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q2-d",
+  "stem": "z₁ = 1 + 3i and z₂ = 2 − i, where i² = −1, are two complex numbers."
+ },
+ {
+  "id": "maths-2016-ol-p1-q3-a",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q3-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q3(a)",
+  "questionText": "Solve for x: 3(x − 7) + 5(x − 4) = 15, where x ∈ ℝ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 3x − 21 + 5x − 20 = 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 8x = 56",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct multiplication",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer no work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Both multiplications done correctly and fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-a-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Error in expanding brackets and finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q3-a"
+ },
+ {
+  "id": "maths-2016-ol-p1-q3-b",
+  "topicId": "maths-4-2",
+  "conceptId": "p1-q3-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q3(b)",
+  "questionText": "Solve the equations below to find the value of a and the value of b: 4a + 3b = −3; 5a = 25 + 2b.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 4a + 3b = −3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 5a − 2b = 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 8a + 6b = −6",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 15a − 6b = 75",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — 23a = 69",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — a = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-7",
+    "kind": "point",
+    "verbatim": "Model solution — b = −5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-b-solution-8",
+    "kind": "point",
+    "verbatim": "Partial Credit — Some correct work in solving",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q3-b"
+ },
+ {
+  "id": "maths-2016-ol-p1-q3-c",
+  "topicId": "maths-4-3",
+  "conceptId": "p1-q3-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q3(c)",
+  "questionText": "List all the values of x that satisfy the inequality 2(2x − 3) + 6x < 25, where x ∈ ℕ.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 4x − 6 + 6x < 25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 10x < 31",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x < 3·1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — {1, 2, 3}",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-5",
+    "kind": "point",
+    "verbatim": "Note — accept {0, 1, 2, 3}",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct step",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer without work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Solves for x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q3-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Error in multiplication but finishes correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q3-c"
+ },
+ {
+  "id": "maths-2016-ol-p1-q4-a",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q4-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q4(a)",
+  "questionText": "Find the coordinates of the point at which the graph of f cuts the y-axis.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q4-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — x = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y = 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-a-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — x = 0, written",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-a-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Zero correctly substituted into equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q4-a",
+  "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ."
+ },
+ {
+  "id": "maths-2016-ol-p1-q4-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q4-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q4(b)",
+  "questionText": "Verify, using algebra, that the point A(1, 7) is on the graph of f.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q4-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + 1 − 2 + 7 = 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 7 = 7",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-b-solution-3",
+    "kind": "point",
+    "verbatim": "Partial Credit — Any correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q4-b",
+  "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ."
+ },
+ {
+  "id": "maths-2016-ol-p1-q4-c-i",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q4-c-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q4(c)(i)",
+  "questionText": "Find f′(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 3x² + 2x − 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — at x = 1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — f′(x) = 3(1)² + 2(1) − 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — m = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Fully correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-i-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct substitution for slope",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q4-c-i",
+  "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ."
+ },
+ {
+  "id": "maths-2016-ol-p1-q4-c-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q4-c-ii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q4(c)(ii)",
+  "questionText": "Hence, find the equation of the tangent to the graph of f at the point A(1, 7).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — y − 7 = 3(x − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — y = 3x + 4",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 3x − y + 4 = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Shows m = 3",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — Correct equation of a line formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q4-c-ii-solution-6",
+    "kind": "point",
+    "verbatim": "Partial Credit — Any correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q4-c-ii",
+  "stem": "The function f : x ↦ x³ + x² − 2x + 7 is defined for x ∈ ℝ. Part (c)(i): Find f′(x), the derivative of f(x). Hence find the slope of the tangent to the graph of f when x = 1."
+ },
+ {
+  "id": "maths-2016-ol-p1-q5-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-a-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q5(a)(i), (a)(ii)",
+  "questionText": "(i) Follow the pattern in the table above to write the next three numbers into the table. (ii) Use the data in the table to show that the pattern is quadratic.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q5-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2nd difference is constant implies quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — One or two correct terms",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 3 terms correct but fails to show quadratic",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q5-a-i",
+  "stem": "The first five numbers in a pattern of numbers are given in the table below. Table: Term, Number. U1 13; U2 15; U3 19; U4 25; U5 33; U6 _; U7 _; U8 _.",
+  "figureKey": "maths-2016-OL-scheme-p011-i0"
+ },
+ {
+  "id": "maths-2016-ol-p1-q5-b",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q5(b)",
+  "questionText": "Uₙ = n² + bn + c where b, c ∈ ℤ. Find the value of b and the value of c.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + b + c = 13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 4 + 2b + c = 15",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — b + c = 12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 2b + c = 11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — b = −1",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-6",
+    "kind": "point",
+    "verbatim": "Model solution — c = 13",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Derives one correct equation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Derives two correct equations",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q5-b",
+  "stem": "The first five numbers in a pattern of numbers are given in the table below. Table: Term, Number. U1 13; U2 15; U3 19; U4 25; U5 33; U6 _; U7 _; U8 _.",
+  "figureKey": "maths-2016-OL-scheme-p011-i1"
+ },
+ {
+  "id": "maths-2016-ol-p1-q5-c",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q5-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q5(c)",
+  "questionText": "The table below shows the first five terms of an arithmetic sequence. Find an expression for Tₙ, the nth term of the sequence. Hence, or otherwise, find the value of T₃₀, the 30th term. Table: Term, Number. T1 12; T2 14; T3 16; T4 18; T5 20.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — a = 12",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — d = 2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 12 + 2(n − 1)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — Tn = 10 + 2n",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution — T30 = 10 + 2(30) = 70",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — a or d identified",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Writes Tn = a + (n − 1)d",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Tn correct and stops",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q5-c-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds T30 correctly using list method, without finding Tn",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q5-c"
+ },
+ {
+  "id": "maths-2016-ol-p1-q6-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q6-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q6(a)",
+  "questionText": "Each fortnight, Fiona pays income tax at the rate of 20% on the first €1300 she earns and 40% on the remainder. She has tax credits of €126 per fortnight. Find how much income tax she pays per fortnight.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 1300 × 0·2 = 260",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 250 × 0·4 = 100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — 260 + 100 = 360",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution — 360 − 126 = 234",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Sets up 20% of 1300",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — calculates €250",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds €260 or €100",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds €260 and €100, or finds €360",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q6-a",
+  "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage."
+ },
+ {
+  "id": "maths-2016-ol-p1-q6-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q6-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q6(b)",
+  "questionText": "Each fortnight, Fiona also pays USC on her gross wage. The rates are: 1% on the first €462 she earns, 3% on the next €214, and 5·5% on the balance. Find the total amount of USC she pays each fortnight.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 462×0·01 + 214×0·03 + 874×0·055",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 4·62 + 6·42 + 48·07",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — = 59·11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds one correct amount",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Formulates a % correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Finds €874 or €676",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-b-solution-7",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds two correct amounts",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q6-b",
+  "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage."
+ },
+ {
+  "id": "maths-2016-ol-p1-q6-c-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q6-c-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "A",
+  "questionRef": "2016 OL Paper 1 Q6(c)(i), (c)(ii)",
+  "questionText": "(i) Fiona pays PRSI amounting to €18 each fortnight. Find the sum of her fortnightly deductions. (ii) Write the sum of her fortnightly deductions as a percentage of her gross wage. Give your answer correct to one decimal place.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 18 + 234 + 59·11 = 311·11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 311·11/1550 × 100/1 = 20·1%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — €234 or €59·11 written in this section",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Some correct addition for (c)(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct deductions found, €311·11",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q6-c-i-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formulates % correctly for (c)(ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q6-c-i",
+  "stem": "Fiona earns a gross wage of €1550 every fortnight. She pays income tax, a Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) on this wage. Part (a): Each fortnight, Fiona pays income tax at the rate of 20% on the first €1300 she earns and 40% on the remainder. She has tax credits of €126 per fortnight. Find how much income tax she pays per fortnight. Part (b): Each fortnight, Fiona also pays USC on her gross wage. The rates are: 1% on the first €462 she earns, 3% on the next €214, and 5·5% on the balance. Find the total amount of USC she pays each fortnight."
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-a",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(a)",
+  "questionText": "Find the value of the investment at the end of 3 years if Paul chooses Option 1 and does not take any money out.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 8000(1·02)(1·03)(1·05) = 8825·04",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8000(1·02) = 8160",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8160(1·03) = 8404·8",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8404·8(1·05) = 8825·04",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any effort at calculation of interest on €8000 at 2% or 3% or 5%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct calculation, €160 or €8160",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Uses simple interest leading to €8800 or €800",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two correct calculations, €244·80 or €8404·80",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds correct interest for each year but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-a-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct formulation of amount",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-a",
+  "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3."
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-b",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(b)",
+  "questionText": "Find the value of the investment at the end of 3 years if Paul chooses Option 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 8000(1·037)³ = 8921·26",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8000(1·037) = 8296",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8296(1·037) = 8602·95",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8602·95(1·037) = 8921·26",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant use of 3·7%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-6",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — One correct calculation, €296 or €8296",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-7",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — Use of simple interest leading to €8888, or €888",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Two correct calculations, €306·95 or €8602·95",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-9",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Finds correct interest for each year but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-b-solution-10",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct formulation of amount",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-b",
+  "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3."
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-c",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(c)",
+  "questionText": "Give one issue, other than the rate of interest earned, that Paul might take into account when deciding between Option 1 and Option 2.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Might want the flexibility of taking money out before the end.",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — Choose the one that gives the most money",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-c",
+  "stem": "Paul has €8000 that he wants to invest for a maximum of 3 years. His local bank is offering him two options, Option 1 and Option 2, as shown in the table below. Table: Option 1: 2% interest in Year 1; 3% interest in Year 2; 5% interest in Year 3; Money can be taken out at the end of Year 1 or Year 2 without penalty. Option 2: 3·7% compound interest per year, for 3 years; Money may not be taken out until the end of Year 3."
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-d",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-d",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(d)",
+  "questionText": "Paul would like his investment of €8000 to amount to €9000 after 3 years. What annual rate of compound interest would be required for this to happen? Give your answer as a percentage.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 8000(1 + x/100)³ = 9000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — 1 + x/100 = ∛(9/8)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — x = 4%",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — At least one correct substitution",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-6",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Correct answer no work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-7",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 9000 ‒ 8000 = 1000",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-d-solution-8",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct substitution into formula but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-d"
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-e-i",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-e-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(e)(i)",
+  "questionText": "Find the value of the money in the fund after 12 months.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-e-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — v = 8000 + 36(12) − 1·2(12)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — v = 8259·20",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-i-solution-3",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any correct substitution into formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Fully correct substitution into formula but fails to finish",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Subs t = 1 giving answer of 8034·80",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-e-i",
+  "stem": "Another bank offers to invest his €8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t − 1·2t² where v is the value of the fund, in euro, and t is the time, in months, since the €8000 was invested."
+ },
+ {
+  "id": "maths-2016-ol-p1-q7-e-ii",
+  "topicId": "maths-3-3",
+  "conceptId": "p1-q7-e-ii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q7(e)(ii)",
+  "questionText": "Mary invests €8000 for 1 year at r % per annum. After 1 year her investment is worth the same amount as the answer to part (e)(i) above. Find the value of r, correct to 2 decimal places.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 259·20/8000 × 100 =3·24",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — Rate = 3·24",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 8259·20/8000 =1·0324",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Brings down interest or amount from e(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-5",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant work",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q7-e-ii-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Formulates correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q7-e-ii",
+  "stem": "Another bank offers to invest his €8000 in a special fund. The bank has found that, in the short term, the amount of money in this fund follows the formula v = 8000 + 36t − 1·2t² where v is the value of the fund, in euro, and t is the time, in months, since the €8000 was invested. Part (e)(i): Find the value of the money in the fund after 12 months."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-a",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-a",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(a)",
+  "questionText": "By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-a-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 2x + 2y = 21",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-a-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x + y = 10·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-a-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y = 10·5 − x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-a-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — Some correct work on perimeter",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-a-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — Relevant work on diagram",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-a",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-b-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-b-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(b)(i)",
+  "questionText": "Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6·5, _, _, _, _, _, _. A (m²): _, _, _, _, 26, _, _, _, _, _, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-b-i-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — relevant calculations without any correct entry",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1, 2, 3 or 4 correct entries to table (y or A)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 5 or 6 correct pairs of entries (y and A) or full y line correct",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 7, 8 or 9 correct pairs of entries (y and A)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-b-i",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (a): By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x.",
+  "figureKey": "maths-2016-OL-scheme-p016-i0"
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-b-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-b-ii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(b)(ii)",
+  "questionText": "Use the values of x and A from the table to plot the graph of A on the grid below.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-b-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1, 2, 3 or 4 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Graphs y only",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-ii-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 5, 6, 7 or 8 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-b-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 9, 10 or 11 correct plots but no joining or incorrect joining",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-b-ii",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (b)(i): Complete the table below to show the values of y and A (the area of the garden) for each given value of x. Table: x (m): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. y (m): _, _, _, _, 6·5, _, _, _, _, _, _. A (m²): _, _, _, _, 26, _, _, _, _, _, _.",
+  "figureKey": "maths-2016-OL-scheme-p016-i1"
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-c",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q8-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(c)",
+  "questionText": "Use your graph to estimate the maximum value of A and write the corresponding length and width. Table: A: Maximum area (m²) _; Length (m) _; Width (m) _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — Maximum area 27·5 ≤ A ≤ 28",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-c-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x value 5 ≤ X ≤ 5·5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-c-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — y value 5·5 ≥ Y ≥ 5",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-c-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Maximum area identified from graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-c-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Area and one corresponding value",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-c",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (b)(ii): Use the values of x and A from the table to plot the graph of A on the grid below."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-d-i",
+  "topicId": "maths-4-1",
+  "conceptId": "p1-q8-d-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(d)(i)",
+  "questionText": "Show that the area of the rectangle can be written as A = 10·5x − x².",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-d-i-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = xy",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-i-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = x(10·5 − x)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-i-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — A = 10·5x − x²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-i-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Relevant area formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-i-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Correct substitution into area formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-d-i",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (a): By writing an expression for the perimeter of the vegetable garden in terms of x (length in metres) and y (width in metres), show that y = 10·5 − x."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-d-ii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d-ii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(d)(ii)",
+  "questionText": "Find dA/dx.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-d-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — dA/dx = 10·5 − 2x",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Any correct differentiation",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-d-ii",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(i): Show that the area of the rectangle can be written as A = 10·5x − x²."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-d-iii",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d-iii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(d)(iii)",
+  "questionText": "Hence, find the value of x which will give the maximum area.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-d-iii-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — 10·5 − 2x = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iii-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — x = 5·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iii-solution-3",
+    "kind": "point",
+    "verbatim": "Note — Must have calculus in (d)(ii) to get any marks in this section",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iii-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — Any use of answer to (d)(ii)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iii-solution-5",
+    "kind": "point",
+    "verbatim": "High Partial Credit — Lets their derivative = 0",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-d-iii",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(ii): Find dA/dx."
+ },
+ {
+  "id": "maths-2016-ol-p1-q8-d-iv",
+  "topicId": "maths-5-2",
+  "conceptId": "p1-q8-d-iv",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q8(d)(iv)",
+  "questionText": "Find this maximum area.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A = xy",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = 5·25×5·25",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — A = 27·56",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-4",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — A = 10·5(5·25) − (5·25)²",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-5",
+    "kind": "point",
+    "verbatim": "Model solution (alternative) — 55·125 − 27·5625",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-6",
+    "kind": "point",
+    "verbatim": "Partial Credit — Any substitution into area formula or equation given in (d)(i)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q8-d-iv-solution-7",
+    "kind": "point",
+    "verbatim": "Partial Credit — Writes area formula",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q8-d-iv",
+  "stem": "Kieran has 21 metres of fencing. He wants to enclose a vegetable garden in a rectangular shape as shown. Part (d)(i): Show that the area of the rectangle can be written as A = 10·5x − x². Part (d)(iii): Hence, find the value of x which will give the maximum area."
+ },
+ {
+  "id": "maths-2016-ol-p1-q9-a-i",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-i",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q9(a)(i)",
+  "questionText": "Complete the table below to show what Company A charges and what Company B charges for jobs that take up to 5 hours. Where necessary give the charge correct to the nearest cent. Table: Time (hours): 0, 1, 2, 3, 4, 5. A(h) (€): _, _, _, _, 68, _. B(h) (€): _, _, _, _, 91·66, _.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q9-a-i-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — relevant calculations",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-i-solution-2",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1, 2, 3 or 4 correct entries into table",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-i-solution-3",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 5 or 6 correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-i-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 7, 8 or 9 correct entries",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q9-a-i",
+  "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours.",
+  "figureKey": "maths-2016-OL-scheme-p018-i0"
+ },
+ {
+  "id": "maths-2016-ol-p1-q9-a-ii",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-a-ii",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q9(a)(ii)",
+  "questionText": "On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q9-a-ii-solution-1",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — 1, 2, 3 or 4 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-ii-solution-2",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — 5 to 11 correct plots",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-ii-solution-3",
+    "kind": "point",
+    "verbatim": "High Partial Credit — All plots correct but no joining or incorrect joining",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-a-ii-solution-4",
+    "kind": "point",
+    "verbatim": "High Partial Credit — 9, 10 or 11 points plotted correct and joined correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q9-a-ii",
+  "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(i): Complete the table below to show what Company A charges and what Company B charges for jobs that take up to 5 hours. Where necessary give the charge correct to the nearest cent. Table: Time (hours): 0, 1, 2, 3, 4, 5. A(h) (€): _, _, _, _, 68, _. B(h) (€): _, _, _, _, 91·66, _.",
+  "figureKey": "maths-2016-OL-scheme-p019-i0"
+ },
+ {
+  "id": "maths-2016-ol-p1-q9-b",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-b",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q9(b)",
+  "questionText": "Which company would charge least for a job that takes 2½ hours to complete? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q9-b-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — B = €40",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-b-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — A = €52",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-b-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — B is cheaper (from graph)",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-b-solution-4",
+    "kind": "point",
+    "verbatim": "Partial Credit — A or B clearly identified on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-b-solution-5",
+    "kind": "point",
+    "verbatim": "Partial Credit — B given as answer but no reason",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q9-b",
+  "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(ii): On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly."
+ },
+ {
+  "id": "maths-2016-ol-p1-q9-c",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-c",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q9(c)",
+  "questionText": "Use your graphs to estimate the value of h for which the charge is the same for both companies.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q9-c-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — ℎ ≈ 3·2",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-c-solution-2",
+    "kind": "point",
+    "verbatim": "Partial Credit — Point clearly indicated on graph",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q9-c",
+  "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours. Part (a)(ii): On the grid below draw separate graphs to show the charge for Company A and the charge for Company B. Label each graph clearly."
+ },
+ {
+  "id": "maths-2016-ol-p1-q9-d",
+  "topicId": "maths-5-1",
+  "conceptId": "p1-q9-d",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2016 OL Paper 1 Q9(d)",
+  "questionText": "Find the difference in cost for a job that takes 6 hours to complete.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-1",
+    "kind": "point",
+    "verbatim": "Model solution — A(6) = 30 + 9·5(6) = 87",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-2",
+    "kind": "point",
+    "verbatim": "Model solution — B(6) = 10(1·74)⁶ = 277·52",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-3",
+    "kind": "point",
+    "verbatim": "Model solution — Difference = 190·52",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-4",
+    "kind": "point",
+    "verbatim": "Low Partial Credit — A(6) or B(6) substituted correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-5",
+    "kind": "point",
+    "verbatim": "Mid Partial Credit — A(6) or B(6) evaluated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   },
+   {
+    "id": "maths-2016-ol-p1-q9-d-solution-6",
+    "kind": "point",
+    "verbatim": "High Partial Credit — A(6) and B(6) evaluated correctly",
+    "marks": null,
+    "contextNote": "Each point is labelled with the part of the printed scheme it comes from. The original scheme reader provides the full solution, including diagrams, tables and graphs."
+   }
+  ],
+  "notes": "Prompt, grouped parts and context visually checked against the original 2016 Ordinary Level Paper 1 on 2026-10-12; exact question and scheme pages attached by the independent review.",
+  "questionFigureKey": "maths-2016-OL-ask-p1-q9-d",
+  "stem": "Company A uses the following formula to charge a customer for a job: A(h) = 30 + 9·5h, where A(h) is the cost of the job, in euro, and h is the length of time that the job takes in hours. Company B uses the following formula to charge a customer for the same job: B(h) = 10(1·74)^h where B(h) is the cost of the job, in euro, and h is again the length of time that the job takes in hours."
  }
 ]
