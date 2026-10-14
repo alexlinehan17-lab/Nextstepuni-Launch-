@@ -554,6 +554,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onTabChange={nav.setDashboardSection}
           darkMode={settings.darkMode}
           onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
+          onEditGrades={() => setChangeSubjectsOpen(true)}
+          onAddMockResult={() => nav.navigateToInnovationZone('points-passport')}
         />
       </Suspense>
     );
