@@ -5037,6 +5037,28 @@
       "paperSha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
       "questionSha256": "8140281c4bcecab97739ac1fec7640fe0589352c193c9f37ae9442c70697b48b",
       "reason": "Self-contained: whether the candidate would or would not like to be taught by a robot teacher; the scheme never refers to the text."
+    },
+    "english-2017-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "For We Shall Stare at Mobile Phones",
+      "pages": [
+        13
+      ],
+      "attribution": "For We Shall Stare at Mobile Phones — Brian Bilston, as reproduced in the SEC 2017 paper.",
+      "questionSha256": "f8d09325263938f006c4d7263293e9dc5990d7e4a84127d80fe860a512a8ad03",
+      "reason": "Paper PDF13 prints the introduction, the title, all six stanzas, the byline and the gloss (*tomes are books) above both questions; visually verified. PDF14 begins Prescribed Poem A and is excluded."
+    },
+    "english-2017-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "For We Shall Stare at Mobile Phones",
+      "pages": [
+        13
+      ],
+      "attribution": "For We Shall Stare at Mobile Phones — Brian Bilston, as reproduced in the SEC 2017 paper.",
+      "questionSha256": "8a3c8f8f7a659784b72a3252d5fa4e566fe87cc8535c50f0df16ceda4f9df70f",
+      "reason": "Paper PDF13 prints the introduction, the title, all six stanzas, the byline and the gloss (*tomes are books) above both questions; visually verified. PDF14 begins Prescribed Poem A and is excluded."
     }
   }
 }

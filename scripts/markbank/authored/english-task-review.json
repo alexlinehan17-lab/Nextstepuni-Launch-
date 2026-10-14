@@ -995,14 +995,22 @@
       "schemePages": [
         35
       ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
     },
     "english-2017-ol-p2-comparative-b-q2-a-ii": {
       "taskSha256": "63dbb930655f64df61d25c4bc2eda421517373b892d8f1e5c699c5409d4320d1",
@@ -1012,14 +1020,22 @@
       "schemePages": [
         35
       ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
       "criteria": {
         "mode": "combined",
         "allocation": {
           "P+C": 9,
           "L+M": 6
-        }
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
     },
     "english-2017-ol-p2-comparative-b-q2-b": {
       "taskSha256": "26b87e9e2039b90398efdfc0083cfb28f86945900d98504e79920a5490d44439",
@@ -1029,6 +1045,13 @@
       "schemePages": [
         35
       ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
       "criteria": {
         "mode": "discrete",
         "allocation": {
@@ -1036,9 +1059,10 @@
           "C": 12,
           "L": 12,
           "M": 4
-        }
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
       },
-      "reason": "Paper and scheme visually inspected. Both (a) roman parts have separate15-mark combined criteria; (b) has its own40-mark discrete grid. Shared opening statement and earlier-part context are retained."
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
     },
     "english-2013-hl-p2-single-a-i": {
       "taskSha256": "4f7411fe4f0dc12715fe75bbbdff86543e5090f2d18552bee4939d16eb83ee5b",
@@ -56535,6 +56559,2292 @@
         "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
       },
       "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–12. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). QA(i)/(ii) “Combined Criteria ex 15, P + C = 9, L + M = 6”; QA(iii) “Combined Criteria ex 10, P+C = 6, L + M = 4”; B “Discrete Criteria ex 50” 15/15/15/5; composing 100 discrete 30/30/30/10. Appendix 2 grid PDF46. No invented splits or submarks."
+    },
+    "english-2017-ol-p2-single-a-q1-a": {
+      "taskSha256": "a8027ddcc5ea13a30020a07c78054488a27a14b0898e13a6d9878cc4f9d804d2",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-a-q1-b": {
+      "taskSha256": "bbcdc598a7246f5acacc8bf489bb0ac76a3dc85aab900211e79e7305d2a885a8",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-a-q2": {
+      "taskSha256": "b88b2e0e7a08bb0dd2ef0025393c972925ca1fc2fc917d78f88820811dec4848",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-a-q3-i": {
+      "taskSha256": "a6074b64515439f0e4363a154cb06786bc2382fb77e6a1e0f9c39131a3432db5",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        13,
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-a-q3-ii": {
+      "taskSha256": "e603781ace8a3a60df18288e1c8072e6d41ec92cf326a43c97862602e667aaa1",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-a-q3-iii": {
+      "taskSha256": "443c26f276f1548fdfbb8a67b0079f312a00e127d7169a3cb1da5fda079ecb71",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        14
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q1-a": {
+      "taskSha256": "0ae7ada450ae9091be5b1ce59322f3c347888affe97b7e8826551b4d77144a73",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q1-b": {
+      "taskSha256": "3f6665e2e28a0bef4228d1867841bbf71a7515df929bc8a8d79f29636975fbf6",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q2": {
+      "taskSha256": "67caf5ef59764e6239561cd6cf83aa17e9e74c19e5f50aa76b1ef71674806ea6",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q3-i": {
+      "taskSha256": "197e3ce1231becda33f3773c3f4d7be0b2c67cff6cefc1e6ed96b1eab8882b52",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q3-ii": {
+      "taskSha256": "76e280b427cf5864a9e8a89a9259c333a44a076bd65598bf812a75484a11633b",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-b-q3-iii": {
+      "taskSha256": "94312617a9158b51c1ce6a6a06b64cf8305e11a6ace2689b40d0e9fdc3e2b4e1",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q1-a": {
+      "taskSha256": "ae1ebff6692c12311048571ce1b2f62e390ebcb5d8b34e9ce9360e845b6b3a79",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q1-b": {
+      "taskSha256": "19fff052760badeb0828da5c09b36c40fdfa224a3d8a43ad28cbe6d0350d8d01",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q2": {
+      "taskSha256": "5fd986667108c6bc852b0d7ae4125403654e5ab94c250d2729843b46e13487f6",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q3-i": {
+      "taskSha256": "46dec676e71ffd1aa8b85f0f9a0518caa0688505864ecbafcb49bbf8f4985497",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q3-ii": {
+      "taskSha256": "7eb4e3c92ea3470b834d5cbfb5e10e627f588cda96f26a3fedfe6b97942f2708",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-c-q3-iii": {
+      "taskSha256": "e7bb3efdeb5c7eab7e5e49f6de50ceeed3e21342d392639e3f8097fddacda08a",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q1-a": {
+      "taskSha256": "4300b0933dccea02bf7b97fbc19e3998c9f94194c6a375f9d953e52c1a67a37f",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q1-b": {
+      "taskSha256": "8af2479f7964024cd5ab7608f8714afdfa43e1a04527382b37041e9d62663b99",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q2": {
+      "taskSha256": "2569e68555ecd18fde61ea27c11e8917582564cf782ce94a8b6c9603f7f11c6f",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q3-i": {
+      "taskSha256": "d46d23fd422b1b5a02c99c27aab71f09ee268802e1db92ce8e2bb6aad2e7d343",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q3-ii": {
+      "taskSha256": "e2ab624a9e445d4fda365660afc623822da0c0bd5c5bf4b500b5ed642131545c",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-d-q3-iii": {
+      "taskSha256": "11c0d22dfae8f7829130392b659946572f1c8c87baad8e6026ce3b11a2038f72",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q1-a": {
+      "taskSha256": "adf399c7a61c4761ddd2c6f7f8ae6d297b7fe1e4973895f23c070bdf62250ac9",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q1-b": {
+      "taskSha256": "e4fc04e4f3d4a0ccce07d76da80a9857de408fbfc5ffde9ab0a0b88c8cae1848",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q2": {
+      "taskSha256": "a9c0da7ff9ba87a4201f1630db1f49b1ce806bdd25e491cfa5f201e4e6e05287",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q3-i": {
+      "taskSha256": "6205242fa4d8ff1a1711ab8ed970a9caefe960772f6c3b8c638876f398443701",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q3-ii": {
+      "taskSha256": "a107fac48fc96307cf60a078441a7511e2eccdecc059ab3b89ff251bad99697f",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-e-q3-iii": {
+      "taskSha256": "82cdcd4c73d31ffe5cc060bb52e2d36b775ffbc9376a47f5efd3964bc1a26fab",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        22
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q1-a": {
+      "taskSha256": "95dc8204d45a661127abcfb803d898752baa42b92d62c62e80465e01caff81ab",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q1-b": {
+      "taskSha256": "2d8b9e2a22f6596f20ccf79d7c45b1125f4d9deedae0b8d925368960e9a3bf90",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q2": {
+      "taskSha256": "63607c94dcf0e12e12b53f7b432966fc85138e0a81a90ca76d03768669003261",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        23
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q3-i": {
+      "taskSha256": "5b7e0e35b3c6d0cfb747c8e7f29fc932735dfc015077dd66cff35a86f06bfd35",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q3-ii": {
+      "taskSha256": "7fb8dece3b201724cb93c7b8032f43a27d455bda83877105b814e9f06c09ef4b",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-f-q3-iii": {
+      "taskSha256": "dfe6aae31776ca2aaa0f30160cb30e0b22d224150cb6ebc434e6e7dc041b5f58",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        24
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q1-a": {
+      "taskSha256": "c2303e2895e66170bed310b9bbcaf229fa6e264861010237259ade93e6d94a27",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q1-b": {
+      "taskSha256": "871cd420db1076a0b0e5ce86ca0ca879955eca485be4965f9d01679e4a575ec7",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q2": {
+      "taskSha256": "4d99acd782cf3b887c9b66c2edc8de38bb608dc5c6cd86f6734eca88ed47f2d7",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        25
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q3-i": {
+      "taskSha256": "72e4810500a88a0766bba46ff775d3e8bc2a76af8f16739b28687843a15fffab",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q3-ii": {
+      "taskSha256": "08175d60d01aaa76291f55f2a445c8ecbd06922ce01e2056349247d289cf82d8",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-g-q3-iii": {
+      "taskSha256": "1cdcdff5562ce6eedf395e89398ecad8600e593090f0aab5afe5b557c9226dd1",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        26
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q1-a": {
+      "taskSha256": "0aa68a80e765b701b6876326c36fa0f0965147a3f3455dcba5f0c0cbe3c8786e",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q1-b": {
+      "taskSha256": "8353181c3d52ffa10aa10b982ebd5f77a3bf88f4b197c3341a65d42d0de41628",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q2": {
+      "taskSha256": "9eb3292719678e35e7aadc3dfe802fc6f7b2425546751477012afc9036cd8058",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        27
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q3-i": {
+      "taskSha256": "03354538bc5664264d16b1ceecb7278f0a2f8266dfb6c8a77bf31f35503a4fe6",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q3-ii": {
+      "taskSha256": "69eb57b43530d335bb8cdfdb26a8951ea07109351800cd4ce3d3b648ddd63823",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-h-q3-iii": {
+      "taskSha256": "f3800e8a893c2c1af32552e818084847719af2f85ca376b65cd9dbf6a5cb0cd4",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        28
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q1-a": {
+      "taskSha256": "d812a9992696f7ff4c706d1fb95643b5ee55d5a7f82f745a4b1e41374c431e88",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q1-b": {
+      "taskSha256": "bf84569e713f5cfdc3defdf4113de0ce6f8679f88d7dfe6061a96b31eb04bca0",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q2": {
+      "taskSha256": "e03cdd83faea95546df620ffa71f5a952b5860b3539a268b864bd042efed5211",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        29
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q3-i": {
+      "taskSha256": "5266311cb9f68d2b77b826f60c82bca2b2698d1e86359b08037fb1ba59459359",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q3-ii": {
+      "taskSha256": "d4f5c67cdfe991ede35a8cbdc64ef23673697bc52b51780a6e2f76daebb74e22",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-single-i-q3-iii": {
+      "taskSha256": "ec26d6aabd4613198745e18629ce0b8a2e42123b5bd990d847eaceac2c45ea5d",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 30,
+      "schemePages": [
+        30
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 9,
+          "C": 9,
+          "L": 9,
+          "M": 3
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q1-a-i": {
+      "taskSha256": "5ef5b55706399c008e03090d99b9502282ca5dd6814374d809094b2cd4d17a76",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q1-a-ii": {
+      "taskSha256": "38b5bfdd7da4ea0b520b40c9aa37cf46530cd1410710ebb33f812a78c7588037",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q1-b": {
+      "taskSha256": "b2ae67d0b71248d600d6cb788dd74fc4d60a6558f0dc097d609f8e56e59bf337",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 40,
+      "schemePages": [
+        32
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q2-a-i": {
+      "taskSha256": "69945f680c1fc838c7290f105e874d717f8f4cd4bf67e5a2a2fc53c4afc73248",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q2-a-ii": {
+      "taskSha256": "17f40405fd4e2a9abdb863c6ba90367f6587001d1489b306ef8684150fdc5f81",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-a-q2-b": {
+      "taskSha256": "44199d0e4cc4ba5004477ea01cb8b0b03b2812bb13e4b54e48e203098c86b7b0",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 40,
+      "schemePages": [
+        33
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-b-q1-a-i": {
+      "taskSha256": "8c12e4f99f844684664ddf52eb8fc23d2f834ef4bc3003ddbda3750d4bae7566",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-b-q1-a-ii": {
+      "taskSha256": "e3c930da20865bcc12b5797a88b2d991bdad9a27a45fd052e8f3eb08d7c4cf9b",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 15,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 9,
+          "L+M": 6
+        },
+        "notes": "One global mark ex 15 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-comparative-b-q1-b": {
+      "taskSha256": "712256efb8def833a3125920b1b3ffa62b9517f1550284f3d73e71b0ef866839",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 40,
+      "schemePages": [
+        34
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 12,
+          "C": 12,
+          "L": 12,
+          "M": 4
+        },
+        "notes": "2017 OL PDF3 prints the weights and mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap. Discrete grid PDF46 (O1–O8)."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-unseen-q1": {
+      "taskSha256": "6804faa114cc29570556989fb65dfff92d6e549a6d02e8dac2a7c9fd7352e4da",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-unseen-q2": {
+      "taskSha256": "dc640bc393a4ae41e0b8a3832a59975be7e0c0d20fcb46a9c2b753d4f0e1e710",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        36
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q1-a": {
+      "taskSha256": "51174e43e71f6a1686690631e82c74ac37b7fd3ee44b0beee83209465a7bcd1f",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q1-b": {
+      "taskSha256": "14ce28d0a2ca22a9f3d27847b96bfc14aebb051dfa2b0ee352037ab3b7250c8e",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q1-c": {
+      "taskSha256": "3881d65383136e98d5dccd1fbc98fb1a806ef55d9b9531e354c586c0ec44adae",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        37
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q2-i": {
+      "taskSha256": "b08667cb0604d3ddb3c1ae4261597cd1d3cf77cf1f6968bc5f9d91b69fb0e290",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q2-ii": {
+      "taskSha256": "e91ce2b14b9ac40e38ba4161153746b671d500fdeb0b21a97a4909d69b18e37d",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-a-q2-iii": {
+      "taskSha256": "efb8325484c99c19db32aa1ad3ba503032dfc3c768834dcd1313e115ee398a8b",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        38
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q1-a": {
+      "taskSha256": "7498c59d3c5b9dad4992210d338266ad91cb8be18d87f0b011d102a67d6086ea",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q1-b": {
+      "taskSha256": "62f1fe30b3855be6dbac6f8e81b5a1856f8557442eeaca48eb99898fa3c0c733",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q1-c": {
+      "taskSha256": "2353862486f811b5ce9ea4d0ba7e38c55212dc6decace613aa4c1aecdef4eedf",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q2-i": {
+      "taskSha256": "2db4cd29650e21d8af8437ed870c69ada64e46330ab5cdd383b682496fe65bb4",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        39
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q2-ii": {
+      "taskSha256": "f72d6fef5f2eafc1464e3a25fa08a209f6c66cd62fb7a8f1564bad94c561dbd1",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-b-q2-iii": {
+      "taskSha256": "14fe2ad8c9082c49068ceaebd0e1644a0f96d32aa011f24ee9c2c6039d96eb8e",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        40
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q1-a": {
+      "taskSha256": "e52ad3793a7aa1940cf9836e325a54b4d6077b50074c0cc8278d33ea0bbc4c6d",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q1-b": {
+      "taskSha256": "d6b000d11fc70d9d75f7c6cb24a1a3055965c7b946985e00a7860c46cd954068",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q1-c": {
+      "taskSha256": "1083fd55ea91add40400087d19a1edcf0d62b5932bb22562bce38801635ee2bc",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q2-i": {
+      "taskSha256": "ea03386ea0f3e1dac59afd8bb7c5e74303140160e01bee44afaf50f53bfe821b",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        41
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q2-ii": {
+      "taskSha256": "9d63852b9fbb8fa71b7ded4c7e4c05c85c02f0dd66afa3b2d1ac87d02aa86d9a",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-c-q2-iii": {
+      "taskSha256": "21a2386770c56c9de824ac83dd6452f773437eb687e394add2f3ca3bd6ee5dc6",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        42
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q1-a": {
+      "taskSha256": "6be28cb9041b61aa4293e0281d5ae8e309724dabba4c51469dfe5a9b634c4097",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q1-b": {
+      "taskSha256": "c6de3f0505e61ca29be4f96267a32766f3a3442d26e5ce1743c48170afa01695",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q1-c": {
+      "taskSha256": "47fa5c8151266efa3cdf08d96562e5a53098f9bde4ed5056d2758babd53011fe",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 10,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 6,
+          "L+M": 4
+        },
+        "notes": "One global mark ex 10 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q2-i": {
+      "taskSha256": "37ae70d339e027e9e90c81c23183df0a25c80529fde4e91b43475b6d67435bfc",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        43
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q2-ii": {
+      "taskSha256": "f514d393303390347bd20fb417a760916068c68951643a2aea81e9e609e594ac",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
+    },
+    "english-2017-ol-p2-prescribed-d-q2-iii": {
+      "taskSha256": "2eb8a3fd658628894a8b543e94588300393b7ced0f8921d260694e96b1130fad",
+      "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "totalMarks": 20,
+      "schemePages": [
+        44
+      ],
+      "generalCriteriaPages": [
+        3,
+        12,
+        31,
+        36,
+        46
+      ],
+      "criteria": {
+        "mode": "combined",
+        "allocation": {
+          "P+C": 12,
+          "L+M": 8
+        },
+        "notes": "One global mark ex 20 from the 2017 OL combined grid (PDF46, O1–O8), P+C and L+M read together."
+      },
+      "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–20. Exact task and award verified against the cited scheme pages, all viewed (printed page n is PDF n + 2). Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1 10 combined 6/4, Q2 “Combined Criteria ex 20” 12/8. Grid PDF46."
     }
   }
 }

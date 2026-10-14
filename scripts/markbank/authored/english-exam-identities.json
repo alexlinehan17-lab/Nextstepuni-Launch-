@@ -1688,7 +1688,10 @@
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
       "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
-      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        14
+      ]
     },
     "english-2017-ol-p2-prescribed-b": {
       "topicId": "english-11-34",
@@ -1697,7 +1700,10 @@
       "observedHeading": "Poetry B · Anseo",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
-      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "sourcePages": [
+        15
+      ]
     },
     "english-2017-ol-p2-prescribed-c": {
       "topicId": "english-11-9",
@@ -1706,7 +1712,10 @@
       "observedHeading": "Poetry C · Spring",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
-      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0"
+      "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2017-ol-p2-prescribed-d": {
       "topicId": "english-11-27",
@@ -1716,7 +1725,10 @@
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
       "sourceSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
-      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case."
+      "titleEvidence": "The paper prints this title only in capitals; title-cased with minor words lower case.",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2018-hl-p2-single-a": {
       "topicId": "english-12-30",
