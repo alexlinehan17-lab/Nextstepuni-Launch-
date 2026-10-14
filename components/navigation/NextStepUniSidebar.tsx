@@ -98,6 +98,7 @@ export default function NextStepUniSidebar(props: Props) {
       { label: 'Paper Trail', icon: 'papers', active: tool('paper-trail'), go: () => nav.navigateToInnovationZone('paper-trail') },
     ] },
     { title: 'Your journey', items: [
+      { label: 'Your setup', icon: 'setup', active: viewState === 'your-setup', go: nav.navigateToYourSetup },
       { label: 'Learning paths', icon: 'paths', active: viewState === 'learning-paths', go: nav.navigateToLearningPaths },
       { label: 'My Progress', icon: 'progress', active: ['dashboard', 'insights'].includes(viewState), go: () => nav.navigateToDashboard() },
       { label: 'My Island', icon: 'island', active: viewState === 'my-journey', go: nav.navigateToJourney },

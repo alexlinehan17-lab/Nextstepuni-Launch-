@@ -65,7 +65,11 @@ trailing parenthetical (`baseName()` → `"Science"` matches `"Science (Junior C
 
 **Mobile nav** = `MobileBottomNav`, defined inline in `App.tsx:50-102`, 6 tabs, `createPortal`'d to `document.body`
 (so a transformed ancestor can't re-anchor it), `md:hidden`, active when `tab.id===viewState`, hidden on
-onboarding/module/admin/gc. There is **no desktop sidebar** — desktop nav is a `fixed top-6 right-6` floating cluster.
+onboarding/module/admin/gc. Desktop nav is the Kobra sidebar, `components/navigation/NextStepUniSidebar.tsx` (grouped
+items; a new destination gets an item there). The **mobile app design** (`useMobileAppDesign`: phones AND iPads, chosen by
+device, not width) mounts no sidebar at any width: account, settings and secondary destinations live in
+`MobileProfileSheet` (`UserProfileMenu.tsx`), opened from Home's avatar. That sheet must work at tablet widths too — iPads
+have no other way in — so a new destination gets a row there as well as a sidebar item.
 
 ---
 
