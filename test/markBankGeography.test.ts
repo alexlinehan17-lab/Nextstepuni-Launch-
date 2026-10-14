@@ -56,22 +56,23 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     // held because its published allocation adds to 27 of its printed 30
     // marks). 2019 Higher, the first single-booklet sitting, adds 113,
     // 2019 Ordinary 127, 2018 Higher 122, 2018 Ordinary 124, 2017 Higher
-    // 110, 2017 Ordinary 122, 2016 Higher 106 and 2016 Ordinary 118: 2,619
-    // base tasks, 2,618 carded.
-    expect(census.paperBaseTasks).toBe(2619);
-    expect(census.includedBaseTasks).toBe(2618);
+    // 110, 2017 Ordinary 122, 2016 Higher 106, 2016 Ordinary 118 and 2015
+    // Higher 105: 2,724 base tasks, 2,723 carded.
+    expect(census.paperBaseTasks).toBe(2724);
+    expect(census.includedBaseTasks).toBe(2723);
     expect(census.excludedBaseTasks).toBe(1);
     expect(census.includedBaseTasks + census.excludedBaseTasks)
       .toBe(census.paperBaseTasks);
-    expect(census.authoredCards).toBe(2805);
-    expect(census.baseTasks).toHaveLength(2619);
-    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(2618);
+    expect(census.authoredCards).toBe(2918);
+    expect(census.baseTasks).toHaveLength(2724);
+    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(2723);
     expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(1);
     expect(EXCLUSIONS.map(row => `${row.year} ${levelRef(row.level)} Part ${row.part} Q${row.questionRef}`))
       .toEqual(['2020 OL Part 2 Q9C']);
-    expect(census.sittings).toHaveLength(22);
+    expect(census.sittings).toHaveLength(23);
 
     const expected = {
+      '2015-higher': 113,
       '2016-higher': 108, '2016-ordinary': 128,
       '2017-higher': 125, '2017-ordinary': 130,
       '2018-higher': 130, '2018-ordinary': 131,
@@ -92,11 +93,11 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('maps the generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(1356);
+    expect(HIGHER).toHaveLength(1469);
     expect(ORDINARY).toHaveLength(1449);
-    expect(ALL).toHaveLength(2805);
-    expect(authored.meta.cardCount).toBe(2805);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(2805);
+    expect(ALL).toHaveLength(2918);
+    expect(authored.meta.cardCount).toBe(2918);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(2918);
     expect(ALL.map(card => card.id).sort())
       .toEqual(authored.cards.map(card => card.id).sort());
 
@@ -114,13 +115,13 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('expands every closed choose-one route and keeps every choose-N pool as one card', () => {
-    // 97 printed choose-one / (i)-or-(ii) routings; 63 choose-N-of-M pools
+    // 101 printed choose-one / (i)-or-(ii) routings; 65 choose-N-of-M pools
     // (N >= 2), each one card (choice is not a route).
-    expect(census.selectionAudit).toHaveLength(160);
+    expect(census.selectionAudit).toHaveLength(166);
     expect(census.selectionAudit.filter(entry => entry.classification === 'finite-expanded'))
-      .toHaveLength(97);
+      .toHaveLength(101);
     expect(census.selectionAudit.filter(entry => entry.classification === 'single-card-choice'))
-      .toHaveLength(63);
+      .toHaveLength(65);
     for (const selection of census.selectionAudit) {
       const variants = ALL.filter(card => card.questionRef === selection.questionRef
         || card.questionRef.startsWith(`${selection.questionRef} ·`));
@@ -367,7 +368,7 @@ describe('independently reviewed Geography sittings', () => {
   });
 
   it('carries the published allocation line by line on every reviewed card', () => {
-    expect(REVIEWED).toHaveLength(2805);
+    expect(REVIEWED).toHaveLength(2918);
     for (const card of REVIEWED) {
       if (card.rubric.system !== 'geography') throw new Error(`${card.id}: wrong rubric`);
       const { criteria } = card.rubric;
@@ -791,6 +792,39 @@ describe('independently reviewed Geography sittings', () => {
     }
   });
 
+  it('pins the 2015 Higher review: one shared booklet, the Kenmare companions, every priced part', () => {
+    const review = sitting(2015, 'higher');
+    expect(review.taskCount).toBe(105);
+    expect(review.cardCount).toBe(113);
+    expect(Object.keys(review.pageReview.paper1)).toHaveLength(32);
+    expect(review.pageReview.paper2).toEqual(review.pageReview.paper1);
+    expect(Object.keys(review.pageReview.scheme)).toHaveLength(48);
+    expect(review.sources.paper1).toMatchObject({ fileid: 'LC005ALP000EV.pdf', bytes: 3601749 });
+    expect(review.sources.scheme).toMatchObject({ fileid: 'LC005ALP000EV.pdf', bytes: 893788 });
+    expect(review.sources.map).toMatchObject({ fileid: 'LC005CLP003EV.pdf', bytes: 6859305 });
+    expect(review.sources.legend).toMatchObject({ fileid: 'LC005CLPC00EV.pdf', bytes: 2156988 });
+    expect(review.sources.aerial).toMatchObject({ fileid: 'LC005CLP004EV.pdf', bytes: 2647375 });
+    expect(review.legacyIds).toEqual([]);
+    expect(review.addedIds).toHaveLength(113);
+    const routed = review.tasks.filter((task: ReviewedTask) => task.routes.length);
+    expect(Object.fromEntries(routed.map((task: ReviewedTask) =>
+      [task.questionRef, task.cards.length]))).toEqual({
+      '2015 HL Part 2 Q1B': 4, '2015 HL Part 2 Q3B': 2, '2015 HL Part 2 Q3C': 4, '2015 HL Part 2 Q4C': 2,
+    });
+    // Part One prices by question in its heading, so every Part One card carries that line.
+    for (const card of ALL.filter(card => card.id.startsWith('geography-2015-hl-p1-'))) {
+      if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+      expect(card.rubric.criteria[0].guidance[0], card.id).toMatch(/^Q\.(1, 2, 6|3, 4, 5, 7, 8, 9, 12|10|11):/);
+    }
+    for (const id of ['geography-2015-hl-p1-q7', 'geography-2015-hl-p1-q8', 'geography-2015-hl-p1-q9',
+      'geography-2015-hl-p2-q2a', 'geography-2015-hl-p2-q8a', 'geography-2015-hl-p2-q9b',
+      'geography-2015-hl-p2-q10a', 'geography-2015-hl-p2-q11b', 'geography-2015-hl-p2-q12c']) {
+      const card = byId.get(id)!;
+      expect([card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]
+        .some(source => source?.sourceFileid), id).toBe(true);
+    }
+  });
+
   it('pins the 2016 Ordinary review: one shared booklet, the Westport companions, every priced roman', () => {
     const review = sitting(2016, 'ordinary');
     expect(review.taskCount).toBe(118);
@@ -1091,7 +1125,7 @@ describe('independently reviewed Geography sittings', () => {
     // 2019-2025 aerial photographs (the 2018-2019 maps and the 2018 and 2022 legends) are
     // published by the SEC only as JPEGs; Paper Trail files the 2018 aerial photograph as a PDF.
     const aerial: Record<number, string> = {
-      2016: 'LC005CLP004EV', 2017: 'LC005CLP004EV', 2018: 'LC005CLP004EV', 2019: 'LC005CLP004EV.jpg', 2020: 'LC005CLP004EV.jpg', 2021: 'LC005CLP004EV.jpg', 2022: 'LC005CLP004EV.jpg', 2023: 'LC005CLP004EV.jpg',
+      2015: 'LC005CLP004EV', 2016: 'LC005CLP004EV', 2017: 'LC005CLP004EV', 2018: 'LC005CLP004EV', 2019: 'LC005CLP004EV.jpg', 2020: 'LC005CLP004EV.jpg', 2021: 'LC005CLP004EV.jpg', 2022: 'LC005CLP004EV.jpg', 2023: 'LC005CLP004EV.jpg',
       2024: 'LC005CLP004EV.jpg', 2025: 'LC005CLP004EV.jpg', 2026: 'LC005CLP004EV',
     };
     const legend: Record<number, string> = { 2018: 'LC005CLPC00EV.jpg', 2022: 'LC005CLPC00EV.jpg' };
@@ -1174,6 +1208,7 @@ describe('independently reviewed Geography sittings', () => {
     [2017, 'ordinary', 12, 'LC005GLP000EV.pdf'],
     [2016, 'higher', 24, 'LC005ALP000EV.pdf'],
     [2016, 'ordinary', 12, 'LC005GLP000EV.pdf'],
+    [2015, 'higher', 24, 'LC005ALP000EV.pdf'],
   ] as const)('files every reviewed %s %s Part Two task of the shared booklet in the Topic Atlas',
     (year, level, questions, fileid) => {
     const review = sitting(year, level);
@@ -1211,7 +1246,7 @@ describe('choice is not a route (bank-wide layout rule, 2026-10-12)', () => {
       .some(label => label.includes(' + '))).map(card => card.id)).toEqual([]);
     // Every choose-N pool is one card showing every printed item.
     const pools = census.selectionAudit.filter(row => row.classification === 'single-card-choice');
-    expect(pools).toHaveLength(63);
+    expect(pools).toHaveLength(65);
     for (const row of pools) {
       const cards = ALL.filter(card => card.questionRef === row.questionRef
         || card.questionRef.startsWith(`${row.questionRef} ·`));
