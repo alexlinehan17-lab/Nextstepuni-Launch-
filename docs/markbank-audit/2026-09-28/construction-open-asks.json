@@ -1,24 +1,24 @@
 {
   "subjectId": "construction-studies",
-  "measuredAt": "2026-10-14T10:19:49.994072+00:00",
+  "measuredAt": "2026-10-14T10:47:19.873064+00:00",
   "command": "python3 scripts/markbank/authoring/reconcile.py construction-studies --baseline write",
   "baseline": {
-    "cards": 927,
-    "contentHash": "0519def8a05134a1",
-    "coveragePct": 72.4,
-    "covered": 610,
+    "cards": 966,
+    "contentHash": "443852169f4806e0",
+    "coveragePct": 75.4,
+    "covered": 637,
     "excluded": 0,
-    "leaves": 843,
-    "open": 233,
+    "leaves": 845,
+    "open": 208,
     "orphans": 0,
     "papers": {
       "count": 63,
       "hash": "7a382fe186c759ea"
     },
-    "refsHash": "fed846a441bd2c57"
+    "refsHash": "6edc785b93883452"
   },
-  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
-  "openTotal": 233,
+  "note": "Legacy census denominator (2010–2026 written papers, English editions). Open asks are declared here, never hidden: they are papers not yet source-reviewed. Fully source-reviewed and reconciled: 2014 Higher, 2015 Higher, 2015 Ordinary, 2016 Higher, 2016 Ordinary, 2017 Higher, 2017 Ordinary, 2018 Higher, 2018 Ordinary, 2019 Higher, 2019 Ordinary, 2020 Higher, 2020 Ordinary, 2021 Higher, 2021 Ordinary, 2022 Higher, 2022 Ordinary, 2023 Higher, 2023 Ordinary, 2024 Higher, 2024 Ordinary, 2025 Higher, 2025 Ordinary, 2026 Higher, 2026 Ordinary theory. Practical components and Irish editions are outside this census.",
+  "openTotal": 208,
   "papers": [
     {
       "year": 2010,
@@ -273,35 +273,9 @@
     {
       "year": 2014,
       "level": "hl",
-      "leaves": 25,
-      "covered": 0,
-      "open": [
-        "Q10-alt",
-        "Q1(a)",
-        "Q1(b)",
-        "Q10(a)",
-        "Q10(b)",
-        "Q10(c)",
-        "Q2(a)",
-        "Q2(b)",
-        "Q3(a)",
-        "Q3(b)",
-        "Q3(c)",
-        "Q4(a)",
-        "Q4(b)",
-        "Q4(c)",
-        "Q6(a)",
-        "Q6(b)",
-        "Q6(c)",
-        "Q7(a)",
-        "Q7(b)",
-        "Q8(a)",
-        "Q8(b)",
-        "Q8(c)",
-        "Q9(a)",
-        "Q9(b)",
-        "Q9(c)"
-      ]
+      "leaves": 27,
+      "covered": 27,
+      "open": []
     },
     {
       "year": 2014,
