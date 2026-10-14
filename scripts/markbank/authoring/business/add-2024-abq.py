@@ -1,0 +1,25 @@
+import json,hashlib
+from pathlib import Path
+p=Path('components/MarkBank/cards/business/rubric-authored.json');d=json.loads(p.read_text())
+original={c['id']:c for c in json.load(open('scripts/markbank/authored/business.json'))}
+# The 2024 Higher ABQ only (written when it was the only 2024 Business source).
+d['cards']=[c for c in d['cards'] if not (c['year']==2024 and c['level']=='higher' and c['section']=='2')]
+d['reviews']=[r for r in d['reviews'] if not (r['year']==2024 and r['level']=='higher' and r['section']=='2')]
+from abq_authoring import linknote, notes as note
+def r(i,label,parts):
+ a=[dict(id=k,label=l,maxMarks=m,permittedMarks=list(range(m+1))) for k,l,m in parts]
+ for x in a:
+  if x['id']=='link':x['requiresAnyOf']=[y['id'] for y in a if y['id'] in ['name','explain']]
+ return dict(id=f'response-{i}',label=label,allocations=a)
+def add(suffix,prompt,total,topic,concept,requirements,responses,pages,guidance=None):
+ cid=f'bus-2024-hl-s2-abq-{suffix}';part=''.join(f'({v.upper() if i==0 else v})' for i,v in enumerate(suffix.split('-')))
+ c=dict(id=cid,year=2024,level='higher',section='2',paperFileid='LC033ALP041EV',paperPages=[2],sourceTitle='New Age Care Ireland Ltd',questionRef=f'2024 HL Section 2 ABQ{part}',questionText=prompt,totalMarks=total,topicId=topic,conceptId=concept,rubric=dict(system='business',taskRequirements=requirements,guidance=guidance if guidance is not None else [linknote],responses=responses,schemeFileid='LC033ALP000EV',schemePages=[5]+pages,markingGuideNote=note))
+ if cid in original:c['correction']=dict(originalQuestionText=original[cid]['questionText'],originalTotalMarks=original[cid]['totalMarks'],reason='Visually verified paper page 2 and scheme pages '+','.join(map(str,[5]+pages))+': restore the complete printed prompt, correct the canonical topic, and replace fixed example ticks with published name/explanation/link/evaluation allocations. Keep the existing card ID and total marks.')
+ d['cards'].append(c)
+add('a','Outline the entrepreneurial skills/characteristics displayed by the owner of New Age Care Ireland Ltd. Refer to the text in your answer.',20,'business-1-5','entrepreneurial-characteristics',['Assess three different skills or characteristics. Apply 10 marks to the stronger response and 5 marks to each of the other two.'],[r(i,f'Skill or characteristic {i} · {sum(m)} marks', [('name','Name',m[0]),('explain','Explain',m[1]),('link','Link',m[2])]) for i,m in enumerate([[4,3,3],[2,2,1],[2,2,1]],1)],[23,24,25])
+add('b-i','Define the term contract.',6,'business-0-12','definition-of-contract',['A contract is a legally binding agreement between two or more parties. The scheme awards 3 + 3 marks.'],[r(1,'Definition',[('agreement','Legally binding agreement',3),('parties','Between two or more parties',3)])],[26],[])
+add('b-ii','Discuss the essential elements of a valid contract that exist for New Age Care Ireland Ltd’s purchase of land. Refer to the text in your answer.',24,'business-0-12','essential-elements-of-contract',['Discuss three different elements. Apply 10 marks to the stronger response and 7 marks to each of the other two.','Only one of offer, acceptance or agreement can earn marks; do not count them as separate elements.'],[r(i,f'Contract element {i} · {sum(m)} marks',[('name','Name',m[0]),('explain','Explain',m[1]),('link','Link',m[2])]) for i,m in enumerate([[4,3,3],[3,2,2],[3,2,2]],1)],[26,27])
+add('c','Evaluate how James’s management skills have contributed to the success of New Age Care Ireland Ltd. Refer to the text in your answer.',30,'business-2-11','management-skills',['The scheme awards 3 responses at 10 marks each. Explain the contribution to the business’s success and give an evaluation.'],[r(i,f'Management skill {i}',[('name','Name',4),('explain','Contribution explained',3),('link','Link',2),('evaluate','Evaluate',1)]) for i in [1,2,3]],[28,29,30])
+d['reviews'].append(dict(status='partial-subject-review',year=2024,level='higher',section='2',question='ABQ',sources={kind:dict(fileid=f,sha256=hashlib.sha256(Path(f'paper-trail-corpus/{kind}/2024/{f}').read_bytes()).hexdigest()) for kind,f in [('exampapers','LC033ALP041EV.pdf'),('markingschemes','LC033ALP000EV.pdf')]},paperPagesReviewed=[2],schemePagesReviewed=[5,23,24,25,26,27,28,29,30],boundaries={'A':20,'B(i)':6,'B(ii)':24,'C':30},selectionAnalysis='No finite answer menu is printed in the four tasks. The support notes contain open examples. The scheme restriction to only one of offer/acceptance/agreement prevents duplicate credit; it is not a printed choose-one task and creates no card variants. B(i) and B(ii) are independently allocated 6 and 24 marks.',sourceClarifications=['The 2024 A and C cards retain their original IDs and tariffs, with independently verified corrections to topic and response scoring.','The contribution and evaluation in C must concern business success, not just generic definitions.']))
+d['cards'].sort(key=lambda c:(c['year'],c['id']));d['reviews'].sort(key=lambda r:r['year'])
+p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')

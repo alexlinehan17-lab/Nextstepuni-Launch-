@@ -93,6 +93,10 @@ import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/account
 import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import PE_FROZEN_MANIFEST from '../scripts/markbank/authored/physical-education.json';
+import businessOriginals from '../scripts/markbank/authored/business.json';
+import businessReviewed from '../components/MarkBank/cards/business/rubric-authored.json';
+import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
+import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
 import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
@@ -829,6 +833,15 @@ const artAdded = (level: 'higher' | 'ordinary') => Object.values(ART_ADDED)
  * the additions can never rewrite or hide a frozen identity. */
 const peFrozen = new Set(PE_FROZEN_MANIFEST.map(card => card.id));
 const peAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('pe-'));
+// Keep the original 606 Business IDs frozen (272 Higher + 334 Ordinary, same
+// count and identity hash). Source-reviewed rubric cards and expanded printed
+// routes that did not exist before are tracked as explicit additions on top;
+// corrected legacy cards keep their IDs and stay inside the frozen hash.
+const businessOriginalIds = new Set(businessOriginals.map(card => card.id));
+const businessAdditionIds = new Set([
+  ...businessReviewed.cards,
+  ...expandBusinessRoutePools(businessRoutePools.pools),
+].map(card => card.id).filter(id => !businessOriginalIds.has(id)));
 // Keep the original French count/hash frozen. Reviewed additions have their own
 // source-and-route audit in frenchWriting.test.ts; never rebaseline missing IDs.
 const frenchAdditionIds = new Set([
@@ -839,6 +852,7 @@ const frenchAdditionIds = new Set([
 ].map(card => card.id));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
+  if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   if (name.startsWith('art:')) {
@@ -920,13 +934,19 @@ describe('Mark Bank card preservation', () => {
     // printed tasks (2026-10-12): 23,075 - 101; Accounting folds 2022 HL
     // Q6(c)'s six pair cards into one: - 5; Politics 2021 OL Q1(f) becomes one
     // card per syllabus topic: + 1.
-    // French keeps its original card set frozen (checked per deck above); its
-    // reviewed additions are counted on top of the bank.
+    // Business and French keep their original card sets frozen (checked per
+    // deck above); their reviewed additions are counted on top of the bank.
+    // Business: 2010-2026 source-reviewed additions (2026-10-14), 1,382.
     // Art (2026-10-14): its 462 frozen 2021-2025 cards become one card per
     // printed task (68 per-option IDs withdrawn onto aliases) and 2010-2020
     // and 2026 are added on top: - 68 + 1,362.
+    const businessAdded = (name: string, cards: readonly { id: string }[]) =>
+      name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+    const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
+    expect(decks.reduce((total, [name, cards]) => total + cards.length - businessAdded(name, cards), 0))
+      .toBe(22_970 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
-      .toBe(22_970 + frenchAdditionIds.size - artAliasIds.length + artAdded('higher') + artAdded('ordinary'));
+      .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size + artNet);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -935,6 +955,33 @@ describe('Mark Bank card preservation', () => {
     // Russian 199, Japanese 600, Classical Studies 516 and Polish 237.
     // Russian 199, Japanese 600, Classical Studies 516 and Arabic 250.
     // Polish 237, Arabic 250, Ancient Greek 383 and Modern Greek 79.
+  });
+
+  it('adds the source-reviewed Business cards on top of the frozen 606 without replacing any', () => {
+    /* 2010-2026 Higher ABQs, full 2010-2026 Higher papers, full 2010-2026 Ordinary
+     * papers, one card per printed choice marked alike (choice is not a route)
+     * and the one differently marked 2013 route pool. Every
+     * addition is a new, unique ID at its own level; none reuses an original
+     * ID. */
+    expect(businessAdditionIds.size).toBe(1382);
+    const higher = BUSINESS_HIGHER.map(card => card.id);
+    const ordinary = BUSINESS_ORDINARY.map(card => card.id);
+    expect(new Set(higher).size).toBe(higher.length);
+    expect(new Set(ordinary).size).toBe(ordinary.length);
+    const higherAdditions = BUSINESS_HIGHER.filter(card => businessAdditionIds.has(card.id));
+    const ordinaryAdditions = BUSINESS_ORDINARY.filter(card => businessAdditionIds.has(card.id));
+    expect(higherAdditions).toHaveLength(605);
+    expect(ordinaryAdditions).toHaveLength(777);
+    expect(higherAdditions.length + ordinaryAdditions.length).toBe(businessAdditionIds.size);
+    for (const id of businessAdditionIds) {
+      expect(businessOriginalIds.has(id), id).toBe(false);
+      expect(id.includes('-hl-') ? higher : ordinary, id).toContain(id);
+    }
+    expect(BUSINESS_HIGHER).toHaveLength(272 + higherAdditions.length);
+    expect(BUSINESS_ORDINARY).toHaveLength(334 + ordinaryAdditions.length);
+    for (const id of businessOriginalIds) {
+      expect([...BUSINESS_HIGHER, ...BUSINESS_ORDINARY].some(card => card.id === id), id).toBe(true);
+    }
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -985,8 +1032,11 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
-      // The added Art years are new cards, not part of this earlier bank.
-      .reduce((total, [, cards]) => total + cards.filter(card => !isArtAdded(card.id)).length, 0);
+      // Business additions and the added Art years are new cards, not part of
+      // this earlier bank.
+      .reduce((total, [name, cards]) => total + (name.startsWith('business:') ? frozenIds(name, cards).length
+        : name.startsWith('art:') ? cards.filter(card => !isArtAdded(card.id)).length
+          : cards.length), 0);
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 

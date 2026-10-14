@@ -1,0 +1,1720 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "business",
+  "sources": [
+    "data/examTopics/business-source-reviewed-topics.json",
+    "components/MarkBank/cards/business/rubric-authored.json"
+  ],
+  "rule": "A StudyClix heading is matched only when its topic is one the reviewed question carries. Every other heading on a directly reviewed Business question is recorded here as a reference-anomaly.",
+  "count": 184,
+  "anomalies": [
+    {
+      "topicId": "business-higher-old-course-11-people-in-business-contract-law",
+      "heading": "2024 - Section 1 - Question 11",
+      "secTopicIds": [
+        "business-higher-old-course-13-conflict-resolution-2-industrial-relations"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations: 2024 HL Section 1 Q11 asks “Illustrate your understanding of a Joint Labour Committee.” Source review: Every part of 2024 Higher Section 1 Question 11 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-11-people-in-business-contract-law",
+      "heading": "2024 - Section 1 - Question 2 - Part 2",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 6.2 Ownership Structures; 6.3 Business, Government & the Economy; 7.1 International Trade; 7.2 The European Union: 2024 HL Section 1 Q2 asks “In the context of business, what do the following letters stand for?” Source review: Every part of 2024 Higher Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-11-people-in-business-contract-law",
+      "heading": "2013 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-higher-old-course-12-conflict-resolution-1-the-consumer"
+      ],
+      "reason": "StudyClix files this 2013 Higher heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer: 2013 HL Section 1 Q2(a) asks “What do the letters NCA stand for?” Source review: 2013 Higher Section 1 Question 2, visually checked against PDF paper page 2 and the scheme. This is the numbered short question; Section 3 uses the distinct S3Q identity. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-11-people-in-business-contract-law",
+      "heading": "2013 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-higher-old-course-12-conflict-resolution-1-the-consumer"
+      ],
+      "reason": "StudyClix files this 2013 Higher heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer: 2013 HL Section 1 Q2(a) asks “What do the letters NCA stand for?” Source review: 2013 Higher Section 1 Question 2, visually checked against PDF paper page 2 and the scheme. This is the numbered short question; Section 3 uses the distinct S3Q identity. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-12-conflict-resolution-1-the-consumer",
+      "heading": "2023 - Paper - Section 1 - Question 11",
+      "secTopicIds": [
+        "business-higher-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 1.2 Conflict Resolution #1: The Consumer. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT): 2023 HL Section 1 Q11 asks “Data Protection Commission Fines WhatsApp Further €5.5m Over GDPR Breach Explain two rights of the data subject (an individual) under data protection law.” Source review: Every part of 2023 Higher Section 1 Question 11 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-12-conflict-resolution-1-the-consumer",
+      "heading": "2012 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-higher-old-course-11-people-in-business-contract-law",
+        "business-higher-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-higher-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2012 Higher heading under 1.2 Conflict Resolution #1: The Consumer. The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 1.3 Conflict Resolution #2: Industrial Relations; 6.2 Ownership Structures: 2012 HL Section 1 Q2 asks “Column 1 is a list of business terms.” Source review: Every part of 2012 Higher Section 1 Question 2 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-21-enterprise",
+      "heading": "2019 - Section 3 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-65-business-ethics-social-responsibility"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under 2.1 Enterprise. The SEC paper and marking scheme support 6.3 Business, Government & the Economy; 6.5 Business Ethics & Social Responsibility: 2019 HL Section 3 Q2(C) asks “Explain the reasons why the Irish Government encourages entrepreneurship in Ireland.” Source review: Every part of 2019 Higher Section 3 Question 2 was visually reviewed against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Source-reading and ratio tasks preserve their independently marked boundaries, required context and shared formula marks. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-31-management-skills-leading-motivating",
+      "heading": "2023 - Paper - Section 3 - Question 6 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-42-insurance",
+        "business-higher-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 4.2 Insurance; 4.5 Human Resource Management: 2023 HL Section 3 Q6(B)(i) asks “New employees will seek flexible working conditions if pay demands are not met.” Source review: Every part of 2023 Higher Section 3 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-31-management-skills-leading-motivating",
+      "heading": "2021 - Section 3 - Question 5 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-32-management-skills-communication-ict",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 2.1 Enterprise; 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling): 2021 HL Section 3 Q5(C)(i) asks “Define the term delegation.” Source review: Every part of 2021 Higher Section 3 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-31-management-skills-leading-motivating",
+      "heading": "2021 - Section 3 - Question 6 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management",
+        "business-higher-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2021 HL Section 3 Q6(C)(i) asks “Businesses offer a range of rewards to attract high calibre staff.” Source review: Every part of 2021 Higher Section 3 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-32-management-skills-communication-ict",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-higher-old-course-31-management-skills-leading-motivating"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 3.2 Management Skills (Communication & ICT). The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating): 2022 HL Section 1 Q4 asks “Circle the correct option in the case of each of the following statements.” Source review: Every part of 2022 Higher Section 1 Question 4 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-32-management-skills-communication-ict",
+      "heading": "2016 - Section 3 - Question 5 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management",
+        "business-higher-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2016 Higher heading under 3.2 Management Skills (Communication & ICT). The SEC paper and marking scheme support 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2016 HL Section 3 Q5(B) asks “Read the SuperSave case in the question paper.” Source review: Every part of 2016 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate; all five stakeholder routes retain their source topic. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-32-management-skills-communication-ict",
+      "heading": "2014 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-higher-old-course-12-conflict-resolution-1-the-consumer"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under 3.2 Management Skills (Communication & ICT). The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer: 2014 HL Section 1 Q4 asks “Outline two rights of a ‘Data Subject’ under the terms of the Data Protection Acts, 1988 and 2003.” Source review: Every part of 2014 Higher Section 1 Question 4 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves the separate short/long question numbering. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-32-management-skills-communication-ict",
+      "heading": "2013 - Section 3 - Question 1 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-11-people-in-business-contract-law",
+        "business-higher-old-course-12-conflict-resolution-1-the-consumer",
+        "business-higher-old-course-13-conflict-resolution-2-industrial-relations"
+      ],
+      "reason": "StudyClix files this 2013 Higher heading under 3.2 Management Skills (Communication & ICT). The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 1.2 Conflict Resolution #1: The Consumer; 1.3 Conflict Resolution #2: Industrial Relations: 2013 HL Section 3 Q1(A)(i) asks “Explain the term ‘data protection’ under the terms of the Data Protection Acts 1988 and 2003.” Source review: All parts of Q1 were visually reviewed: data protection, a finite pool of consumer and industrial-relations redress bodies, and contract elements. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2024 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 4.5 Human Resource Management: 2024 HL Section 1 Q12(i) asks “Explain the term teamwork.” Source review: Every part of 2024 Higher Section 1 Question 12 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 7",
+      "secTopicIds": [
+        "business-higher-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT): 2022 HL Section 1 Q7 asks “Write True or False after each of the following statements.” Source review: Every part of 2022 Higher Section 1 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2017 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 4.1 Household & Business Manager (Sources of Finance & Cashflow Management): 2017 HL Section 1 Q6 asks “Outline two methods a business may use to minimise bad debts.” Source review: Every part of 2017 Higher Section 1 Question 6 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2016 - Section 3 - Question 5 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management",
+        "business-higher-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2016 Higher heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2016 HL Section 3 Q5(C)(i) asks “Explain the term quality assurance as part of Total Quality Management (TQM).” Source review: Every part of 2016 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate; all five stakeholder routes retain their source topic. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+      "heading": "2024 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 4.1 Household & Business Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2024 HL Section 1 Q4 asks “Circle the correct option in the case of each of the following statements.” Source review: Every part of 2024 Higher Section 1 Question 4 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 4.1 Household & Business Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2022 HL Section 1 Q9 asks “The following information is supplied by Fleming Ltd.” Source review: Every part of 2022 Higher Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-higher-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 4.1 Household & Business Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.3 Taxation: 2022 HL Section 1 Q12 asks “Kellie Murphy started a new job.” Source review: Every part of 2022 Higher Section 1 Question 12 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+      "heading": "2018 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2018 Higher heading under 4.1 Household & Business Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2018 HL Section 1 Q6 asks “Study the costs, revenue and profit/loss table in the question paper.” Source review: Every part of 2018 Higher Section 1 Question 6 was visually checked against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Required headings remain whole; separately priced diagram/theory and tax calculations retain their distinct task boundaries. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-44-ratio-analysis-monitoring-the-business",
+      "heading": "2011 - Section 3 - Question 4 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-46-managing-change-tqm",
+        "business-higher-old-course-64-community-development"
+      ],
+      "reason": "StudyClix files this 2011 Higher heading under 4.4 Ratio Analysis (Monitoring the Business). The SEC paper and marking scheme support 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 3.3 Management Activities (Planning, Organising, Controlling); 4.6 Managing Change & TQM; 6.4 Community Development: 2011 HL Section 3 Q4(C) asks “(C) Describe how ‘stock control’ and ‘quality control’ achieve efficiencies in business.” Source review: Every part of 2011 Higher Section 3 Question 4 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-45-human-resource-management",
+      "heading": "2020 - Section 3 - Question 6 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+        "business-higher-old-course-42-insurance",
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation"
+      ],
+      "reason": "StudyClix files this 2020 Higher heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating); 4.1 Household & Business Manager (Sources of Finance & Cashflow Management); 4.2 Insurance; 5.3 Marketing #1: Market Research & Market Segmentation: 2020 HL Section 3 Q6(B)(i) asks “Read the Gym Culture case in the question paper.” Source review: Every part of 2020 Higher Section 3 Question 6 was visually checked against its SEC booklet, allocation summaries and complete support notes. Booklet-specific p1/p2 identities preserve the separate short and long question numbering; the consumer-rights choice pool contributes its canonical topic. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-45-human-resource-management",
+      "heading": "2012 - Section 3 - Question 6 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-46-managing-change-tqm",
+        "business-higher-old-course-51-identifying-opportunities",
+        "business-higher-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2012 Higher heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating); 4.6 Managing Change & TQM; 5.1 Identifying Opportunities; 5.2 Getting Started in Business: 2012 HL Section 3 Q6(A) asks “(A) Discuss the benefits and risks of empowering employees within a business.” Source review: Every part of 2012 Higher Section 3 Question 6 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-46-managing-change-tqm",
+      "heading": "2023 - Paper - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-43-taxation",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.3 Taxation; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 7.3 Global Business: 2023 HL Section 1 Q9 asks “Write TRUE or FALSE after each of the following statements.” Source review: Every part of 2023 Higher Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-46-managing-change-tqm",
+      "heading": "2022 - Paper - Sections 2 & 3 - Section 3 - Question 5 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 3.3 Management Activities (Planning, Organising, Controlling): 2022 HL Section 3 Q5(B) asks “Alan Naughton is an entrepreneur who set up M6 Motors in 2011.” Source review: Every part of 2022 Higher Section 3 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-46-managing-change-tqm",
+      "heading": "2015 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2015 Higher heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 4.5 Human Resource Management: 2015 HL Section 1 Q6 asks “Forming, storming, norming and performing are stages in team development.” Source review: Every part of 2015 Higher Section 1 Question 6 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves separate short/long numbering; graph and stage routes retain the topic of their source task. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-46-managing-change-tqm",
+      "heading": "2011 - Section 3 - Question 5 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-42-insurance",
+        "business-higher-old-course-43-taxation",
+        "business-higher-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2011 Higher heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 4.2 Insurance; 4.3 Taxation; 4.5 Human Resource Management: 2011 HL Section 3 Q5(A) asks “(A) Outline the benefits of teamwork for the employees in a business.” Source review: Every part of 2011 Higher Section 3 Question 5 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2025 - Section 3 - Question 8 - Part (c)",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2025 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.3 Marketing #1: Market Research & Market Segmentation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2025 HL Section 3 Q8(C) asks “Proctor and Gamble’s (P&G) brands include Pampers, Ariel, Gillette and Head & Shoulders.” Source review: Every part of 2025 Higher Section 3 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2023 - Paper - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-43-taxation",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.3 Taxation; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 7.3 Global Business: 2023 HL Section 1 Q9 asks “Write TRUE or FALSE after each of the following statements.” Source review: Every part of 2023 Higher Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2023 - Paper - Section 3 - Question 8 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation",
+        "business-higher-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.3 Marketing #1: Market Research & Market Segmentation; 5.5 Business Expansion: 2023 HL Section 3 Q8(A)(i) asks “EPIK Media produce, shoot and package behind the scenes content for movies, tv series and events.” Source review: Every part of 2023 Higher Section 3 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2023 - Paper - Section 3 - Question 8 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation",
+        "business-higher-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.3 Marketing #1: Market Research & Market Segmentation; 5.5 Business Expansion: 2023 HL Section 3 Q8(C) asks “MJ Sports produce products aimed at Hurling and Camogie players.” Source review: Every part of 2023 Higher Section 3 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2019 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2019 HL Section 1 Q10(i) asks “Read the Eurocon DAC break-even chart in the question paper.” Source review: Every part of 2019 Higher Section 1 Question 10 was visually reviewed against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Source-reading and ratio tasks preserve their independently marked boundaries, required context and shared formula marks. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2019 - Section 3 - Question 6 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-45-human-resource-management",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.5 Human Resource Management; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 5.5 Business Expansion: 2019 HL Section 3 Q6(A)(i) asks “Explain the term unique selling point (USP) and provide an example to support your answer.” Source review: Every part of 2019 Higher Section 3 Question 6 was visually reviewed against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Source-reading and ratio tasks preserve their independently marked boundaries, required context and shared formula marks. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2017 - Section 1 - Question 8",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2017 HL Section 1 Q8(a) asks “Read the Echo Technologies Ltd break-even chart in the question paper and identify the full labels, not abbreviations, for A, B, C and D.” Source review: Every part of 2017 Higher Section 1 Question 8 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2017 - Section 3 - Question 5 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 5.2 Getting Started in Business: 2017 HL Section 3 Q5(A) asks “Read the AeroMobil 3.0 flying-car extract in the question paper.” Source review: Every part of 2017 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2017 - Section 3 - Question 5 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 5.2 Getting Started in Business: 2017 HL Section 3 Q5(B) asks “Explain the factors a business should consider when designing a product.” Source review: Every part of 2017 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2015 - Section 3 - Question 5 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2015 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2015 HL Section 3 Q5(B)(i) asks “Feasibility Study, Test Marketing, Product Screening and Prototype Development are stages in the new Product Development Process.” Source review: Every part of 2015 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves separate short/long numbering; graph and stage routes retain the topic of their source task. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2014 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-higher-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 5.2 Getting Started in Business: 2014 HL Section 1 Q2 asks “Use the question-paper table to match each business term to its correct explanation: 1.” Source review: Every part of 2014 Higher Section 1 Question 2 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves the separate short/long question numbering. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2014 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2014 HL Section 1 Q10(a) asks “Using the figures supplied by Canon Ltd in the question paper, calculate Total Revenue at forecasted output.” Source review: Every part of 2014 Higher Section 1 Question 10 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves the separate short/long question numbering. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2013 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2013 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2013 HL Section 1 Q6 asks “In break-even analysis a distinction is made between ‘Fixed Costs’ and ‘Variable Costs’.” Source review: 2013 Higher Section 1 Question 6, visually checked against PDF paper page 3 and the scheme. This is the numbered short question; Section 3 uses the distinct S3Q identity. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2013 - Section 2 - Question ABQ - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-65-business-ethics-social-responsibility",
+        "business-higher-old-course-73-global-business",
+        "business-higher-old-course-abq-units-5-6-7"
+      ],
+      "reason": "StudyClix files this 2013 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 6.5 Business Ethics & Social Responsibility; 7.3 Global Business; ABQ (Units 5, 6 & 7): 2013 HL Section 2 ABQ(A) asks “Outline the stages involved in the product development process of ‘Knights’ Domain’ for Galaxy Games Ltd.” Source review: The paper assesses product development, social responsibility and the global marketing mix. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2012 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2012 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2012 HL Section 1 Q10(i) asks “Break-even chart (Chart: TR TC € ’000s 700 600 500 400 300 200 100 Costs & Revenues FC 5 10 15 Output in units ’000s; the TR, TC and FC lines are drawn on th…” Source review: Every part of 2012 Higher Section 1 Question 10 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-51-identifying-opportunities",
+      "heading": "2010 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2010 Higher heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2010 HL Section 1 Q6(i) asks “Study the break-even chart below and answer the following questions in the Answer Box provided: (Break-even chart, printed as an image: Revenue/Costs in € ’0…” Source review: Every part of 2010 Higher Section 1 Question 6 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-52-getting-started-in-business",
+      "heading": "2024 - Section 1 - Question 2 - Part 4",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 6.2 Ownership Structures; 6.3 Business, Government & the Economy; 7.1 International Trade; 7.2 The European Union: 2024 HL Section 1 Q2 asks “In the context of business, what do the following letters stand for?” Source review: Every part of 2024 Higher Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-52-getting-started-in-business",
+      "heading": "2012 - Section 2 - Question ABQ - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-64-community-development",
+        "business-higher-old-course-abq-units-4-5-6"
+      ],
+      "reason": "StudyClix files this 2012 Higher heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 4.1 Household & Business Manager (Sources of Finance & Cashflow Management); 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 6.4 Community Development; ABQ (Units 4, 5 & 6): 2012 HL Section 2 ABQ(C) asks “Evaluate the promotional techniques undertaken by RIM Ltd.” Source review: The paper assesses finance, community benefits and promotion. Finance for RIM Ltd and stallholders shares one medium-term allowance. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-52-getting-started-in-business",
+      "heading": "2010 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-higher-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2010 Higher heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 6.2 Ownership Structures: 2010 HL Section 1 Q5(a) asks “(a) Outline the purpose of a company’s ‘Articles of Association’.” Source review: Every part of 2010 Higher Section 1 Question 5 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-53-marketing-1-market-research-market-segmentation",
+      "heading": "2023 - Paper - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-43-taxation",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.3 Marketing #1: Market Research & Market Segmentation. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.3 Taxation; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 7.3 Global Business: 2023 HL Section 1 Q9 asks “Write TRUE or FALSE after each of the following statements.” Source review: Every part of 2023 Higher Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2021 - Section 3 - Question 7 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-higher-old-course-51-identifying-opportunities"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.1 Identifying Opportunities: 2021 HL Section 3 Q7(A) asks “The entrepreneurs behind Moon Moods set up a business that produces soft, comfortable and beautiful bedding for children and babies.” Source review: Every part of 2021 Higher Section 3 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2021 - Section 3 - Question 8 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-51-identifying-opportunities",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.3 Marketing #1: Market Research & Market Segmentation: 2021 HL Section 3 Q8(B) asks “Describe the first four stages involved in the development process of a new product.” Source review: Every part of 2021 Higher Section 3 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2019 - Section 1 - Question 8",
+      "secTopicIds": [
+        "business-higher-old-course-53-marketing-1-market-research-market-segmentation"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 5.3 Marketing #1: Market Research & Market Segmentation: 2019 HL Section 1 Q8 asks “Explain the term niche market and provide an example to support your answer.” Source review: Every part of 2019 Higher Section 1 Question 8 was visually reviewed against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Source-reading and ratio tasks preserve their independently marked boundaries, required context and shared formula marks. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2017 - Section 3 - Question 3 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 7.1 International Trade; 7.2 The European Union; 7.3 Global Business: 2017 HL Section 3 Q3(B) asks “Discuss the different channels of distribution that Irish businesses may consider when introducing their products to international markets.” Source review: Every part of 2017 Higher Section 3 Question 3 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2014 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2014 HL Section 1 Q10(a) asks “Using the figures supplied by Canon Ltd in the question paper, calculate Total Revenue at forecasted output.” Source review: Every part of 2014 Higher Section 1 Question 10 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves the separate short/long question numbering. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-55-business-expansion",
+      "heading": "2023 - Paper - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-43-taxation",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.5 Business Expansion. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.3 Taxation; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 7.3 Global Business: 2023 HL Section 1 Q9 asks “Write TRUE or FALSE after each of the following statements.” Source review: Every part of 2023 Higher Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-55-business-expansion",
+      "heading": "2023 - Paper - Section 2 - Question 1 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-abq-units-5-6-7"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 5.5 Business Expansion. The SEC paper and marking scheme support 4.1 Household & Business Manager (Sources of Finance & Cashflow Management); 6.3 Business, Government & the Economy; 7.1 International Trade; ABQ (Units 5, 6 & 7): 2023 HL Section 2 ABQ(A) asks “Explain the different sources of long-term finance used by Crowley Housebuilders Ltd.” Source review: Part A asks for long-term sources of finance, not methods of expansion; B concerns international markets and C economic variables. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2021 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-higher-old-course-32-management-skills-communication-ict",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling); 7.1 International Trade: 2021 HL Section 1 Q2 asks “In the context of business, what do the following letters stand for?” Source review: Every part of 2021 Higher Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2020 - Section 3 - Question 2 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-65-business-ethics-social-responsibility",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2020 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 6.3 Business, Government & the Economy; 6.5 Business Ethics & Social Responsibility; 7.3 Global Business: 2020 HL Section 3 Q2(B) asks “Illustrate the reasons why multinational companies (MNCs) locate in Ireland.” Source review: Every part of 2020 Higher Section 3 Question 2 was visually checked against its SEC booklet, allocation summaries and complete support notes. Booklet-specific p1/p2 identities preserve the separate short and long question numbering; the consumer-rights choice pool contributes its canonical topic. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2018 - Section 3 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy"
+      ],
+      "reason": "StudyClix files this 2018 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 6.2 Ownership Structures; 6.3 Business, Government & the Economy: 2018 HL Section 3 Q2(C) asks “Evaluate the effectiveness of Enterprise Ireland in assisting indigenous Irish businesses.” Source review: Every part of 2018 Higher Section 3 Question 2 was visually checked against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Required headings remain whole; separately priced diagram/theory and tax calculations retain their distinct task boundaries. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2018 - Section 3 - Question 3 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2018 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 7.1 International Trade; 7.2 The European Union; 7.3 Global Business: 2018 HL Section 3 Q3(A) asks “Read the Apple tax extract in the question paper.” Source review: Every part of 2018 Higher Section 3 Question 3 was visually checked against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Required headings remain whole; separately priced diagram/theory and tax calculations retain their distinct task boundaries. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2015 - Section 3 - Question 3 - Part (A)",
+      "secTopicIds": [
+        "business-higher-old-course-72-the-european-union",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2015 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 7.2 The European Union; 7.3 Global Business: 2015 HL Section 3 Q3(A) asks “Discuss reasons why multinational companies (MNCs) may choose to locate in Ireland.” Source review: Every part of 2015 Higher Section 3 Question 3 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves separate short/long numbering; graph and stage routes retain the topic of their source task. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2011 - Section 3 - Question 3 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2011 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 7.1 International Trade; 7.2 The European Union; 7.3 Global Business: 2011 HL Section 3 Q3(B) asks “A significant improvement in export performance is critical to the recovery of the Irish economy.” Source review: Every part of 2011 Higher Section 3 Question 3 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-61-categories-of-industry",
+      "heading": "2010 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-63-business-government-the-economy"
+      ],
+      "reason": "StudyClix files this 2010 Higher heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 6.3 Business, Government & the Economy: 2010 HL Section 1 Q1(a) asks “(a) Illustrate your understanding of the term ‘Indigenous firm’.” Source review: Every part of 2010 Higher Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-62-ownership-structures",
+      "heading": "2021 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 6.2 Ownership Structures. The SEC paper and marking scheme support 5.5 Business Expansion: 2021 HL Section 1 Q1 asks “Column 1 is a list of business terms.” Source review: Every part of 2021 Higher Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-62-ownership-structures",
+      "heading": "2018 - Section 3 - Question 5 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-32-management-skills-communication-ict",
+        "business-higher-old-course-42-insurance",
+        "business-higher-old-course-52-getting-started-in-business",
+        "business-higher-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2018 Higher heading under 6.2 Ownership Structures. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 4.2 Insurance; 5.2 Getting Started in Business; 5.5 Business Expansion: 2018 HL Section 3 Q5(A) asks “Read the Supermac’s expansion extract in the question paper.” Source review: Every part of 2018 Higher Section 3 Question 5 was visually checked against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Required headings remain whole; separately priced diagram/theory and tax calculations retain their distinct task boundaries. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-62-ownership-structures",
+      "heading": "2012 - Section 2 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+        "business-higher-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-higher-old-course-64-community-development",
+        "business-higher-old-course-abq-units-4-5-6"
+      ],
+      "reason": "StudyClix files this 2012 Higher heading under 6.2 Ownership Structures. The SEC paper and marking scheme support 4.1 Household & Business Manager (Sources of Finance & Cashflow Management); 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 6.4 Community Development; ABQ (Units 4, 5 & 6): 2012 HL Section 2 ABQ(A) asks “Identify and describe the most appropriate sources of finance to meet the needs of (i) RIM Ltd and (ii) individual stallholders.” Source review: The paper assesses finance, community benefits and promotion. Finance for RIM Ltd and stallholders shares one medium-term allowance. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-63-business-government-the-economy",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 8",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2022 Higher heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 7.1 International Trade: 2022 HL Section 1 Q8(i) asks “Explain the term protectionism.” Source review: Every part of 2022 Higher Section 1 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-63-business-government-the-economy",
+      "heading": "2021 - Section 3 - Question 3 - Part B",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union",
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 7.1 International Trade; 7.2 The European Union; 7.3 Global Business: 2021 HL Section 3 Q3(B)(i) asks “Explain the term globalisation.” Source review: Every part of 2021 Higher Section 3 Question 3 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-63-business-government-the-economy",
+      "heading": "2019 - Section 3 - Question 5 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-41-household-business-manager-sources-of-finance-cashflow-management",
+        "business-higher-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 4.1 Household & Business Manager (Sources of Finance & Cashflow Management); 4.4 Ratio Analysis (Monitoring the Business): 2019 HL Section 3 Q5(A) asks “Read the Vodafone Retail Ireland sales-revenue extract in the question paper.” Source review: Every part of 2019 Higher Section 3 Question 5 was visually reviewed against the SEC paper, allocation summaries and complete support notes. Short and long question identities remain separate. Source-reading and ratio tasks preserve their independently marked boundaries, required context and shared formula marks. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-63-business-government-the-economy",
+      "heading": "2017 - Section 3 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-higher-old-course-61-categories-of-industry",
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-65-business-ethics-social-responsibility"
+      ],
+      "reason": "StudyClix files this 2017 Higher heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 6.1 Categories of Industry; 6.2 Ownership Structures; 6.5 Business Ethics & Social Responsibility: 2017 HL Section 3 Q2(C)(i) asks “Define the term privatisation.” Source review: Every part of 2017 Higher Section 3 Question 2 was visually reviewed against the SEC paper, allocation summaries and support notes. Short and long question identities remain separate. Required headings and shared tariffs remain whole; distinct published ratio calculations remain separate. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-63-business-government-the-economy",
+      "heading": "2010 - Section 1 - Question 3",
+      "secTopicIds": [
+        "business-higher-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2010 Higher heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 7.1 International Trade: 2010 HL Section 1 Q3(a) asks “(a) Explain what is meant by the term ‘Exchange rate’.” Source review: Every part of 2010 Higher Section 1 Question 3 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S3Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-64-community-development",
+      "heading": "2014 - Section 3 - Question 2 - Part A",
+      "secTopicIds": [
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under 6.4 Community Development. The SEC paper and marking scheme support 6.2 Ownership Structures; 6.3 Business, Government & the Economy: 2014 HL Section 3 Q2(A) asks “Outline the opportunities and challenges for the Irish economy of the privatisation of state owned enterprises.” Source review: Every part of 2014 Higher Section 3 Question 2 was visually reviewed against the SEC paper, allocation summary and support notes. The section-specific identity preserves the separate short/long question numbering. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-71-international-trade",
+      "heading": "2021 - Section 1 - Question 11",
+      "secTopicIds": [
+        "business-higher-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2021 Higher heading under 7.1 International Trade. The SEC paper and marking scheme support 7.3 Global Business: 2021 HL Section 1 Q11 asks “Many leading global pharmaceutical companies are located in Ireland.” Source review: Every part of 2021 Higher Section 1 Question 11 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-73-global-business",
+      "heading": "2024 - Section 1 - Question 2 - Part 1",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 7.3 Global Business. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 6.2 Ownership Structures; 6.3 Business, Government & the Economy; 7.1 International Trade; 7.2 The European Union: 2024 HL Section 1 Q2 asks “In the context of business, what do the following letters stand for?” Source review: Every part of 2024 Higher Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-73-global-business",
+      "heading": "2024 - Section 1 - Question 2 - Part 5",
+      "secTopicIds": [
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-62-ownership-structures",
+        "business-higher-old-course-63-business-government-the-economy",
+        "business-higher-old-course-71-international-trade",
+        "business-higher-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under 7.3 Global Business. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 6.2 Ownership Structures; 6.3 Business, Government & the Economy; 7.1 International Trade; 7.2 The European Union: 2024 HL Section 1 Q2 asks “In the context of business, what do the following letters stand for?” Source review: Every part of 2024 Higher Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-73-global-business",
+      "heading": "2023 - Paper - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-61-categories-of-industry"
+      ],
+      "reason": "StudyClix files this 2023 Higher heading under 7.3 Global Business. The SEC paper and marking scheme support 6.1 Categories of Industry: 2023 HL Section 1 Q1(a) asks “Sports retail chain InterSport Elverys is an Irish indigenous firm.” Source review: Every part of 2023 Higher Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-abq-units-2-3-4",
+      "heading": "2024 - Section 2 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-11-people-in-business-contract-law",
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-32-management-skills-communication-ict",
+        "business-higher-old-course-abq-units-1-2-3"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under ABQ (Units 2, 3 & 4). The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 3.2 Management Skills (Communication & ICT); ABQ (Units 1, 2 & 3): 2024 HL Section 2 ABQ(A) asks “Outline the entrepreneurial skills/characteristics displayed by the owner of New Age Care Ireland Ltd.” Source review: The paper explicitly identifies Units 1, 2 and 3 and assesses enterprise, contract law, leadership, motivation and communication. The old join incorrectly used the Units 2/3/4 and 5/6/7 ABQ groups. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-abq-units-1-2-3",
+      "heading": "2019 - Section 2 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-12-conflict-resolution-1-the-consumer",
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-abq-2019-units-1-2-3"
+      ],
+      "reason": "StudyClix files this 2019 Higher heading under ABQ (Units 1, 2 & 3). The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer; 2.1 Enterprise; 3.3 Management Activities (Planning, Organising, Controlling); ABQ 2019 (Units 1, 2 & 3): 2019 HL Section 2 ABQ(A)(i) asks “Explain the term entrepreneur.” Source review: The paper assesses enterprise, management activities and service-provider consumer obligations under the named historical Act. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-abq-units-5-6-7",
+      "heading": "2024 - Section 2 - Question 1",
+      "secTopicIds": [
+        "business-higher-old-course-11-people-in-business-contract-law",
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-31-management-skills-leading-motivating",
+        "business-higher-old-course-32-management-skills-communication-ict",
+        "business-higher-old-course-abq-units-1-2-3"
+      ],
+      "reason": "StudyClix files this 2024 Higher heading under ABQ (Units 5, 6 & 7). The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 3.2 Management Skills (Communication & ICT); ABQ (Units 1, 2 & 3): 2024 HL Section 2 ABQ(A) asks “Outline the entrepreneurial skills/characteristics displayed by the owner of New Age Care Ireland Ltd.” Source review: The paper explicitly identifies Units 1, 2 and 3 and assesses enterprise, contract law, leadership, motivation and communication. The old join incorrectly used the Units 2/3/4 and 5/6/7 ABQ groups. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-higher-old-course-abq-2019-units-1-2-3",
+      "heading": "2014 - Section 2 - Question A-C",
+      "secTopicIds": [
+        "business-higher-old-course-11-people-in-business-contract-law",
+        "business-higher-old-course-21-enterprise",
+        "business-higher-old-course-33-management-activities-planning-organising-controlling",
+        "business-higher-old-course-abq-units-1-2-3"
+      ],
+      "reason": "StudyClix files this 2014 Higher heading under ABQ 2019 (Units 1, 2 & 3). The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 2.1 Enterprise; 3.3 Management Activities (Planning, Organising, Controlling); ABQ (Units 1, 2 & 3): 2014 HL Section 2 ABQ(A) asks “Illustrate what it means to be an entrepreneur with reference to Atlantic Surf.” Source review: The paper assesses entrepreneurship, contract elements and management control systems. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2023 - Section 2 - Question 6 - Part A,B",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-42-insurance"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.2 Insurance: 2023 OL Section 2 Q6(A) asks “Greenlawn Golf Club Notice and Agenda The AGM of Greenlawn Golf Club and Restaurant will take place on 21st November 2023 at 8.00pm in the Clubhouse.” Source review: Every part of 2023 Ordinary Section 2 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 8 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-ordinary-old-course-62-ownership-structures",
+        "business-ordinary-old-course-64-community-development"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 6.2 Ownership Structures; 6.4 Community Development: 2022 OL Section 2 Q8(A)(i) asks “Miriam Lloyd set up her business ‘Christening Generations’ in 2016 operating as a sole trader.” Source review: Every part of 2022 Ordinary Section 2 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-61-categories-of-industry"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 2.1 Enterprise; 6.1 Categories of Industry: 2022 OL Section 1 Q4 asks “Indicate by placing a tick (✓) in the correct box, the factor of production to which each statement relates.” Source review: Every part of 2022 Ordinary Section 1 Question 4 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2021 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT): 2021 OL Section 1 Q2 asks “Write the word TRUE or FALSE after each of the following statements.” Source review: Every part of 2021 Ordinary Section 1 Question 2 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2021 - Section 2 - Question 1 - Part D-E",
+      "secTopicIds": [
+        "business-ordinary-old-course-12-conflict-resolution-1-the-consumer",
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer; 1.3 Conflict Resolution #2: Industrial Relations: 2021 OL Section 2 Q1(A)(i) asks “CONSUMER LAW Consumers in Ireland are protected by a number of different laws.” Source review: Every part of 2021 Ordinary Section 2 Question 1 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-11-people-in-business-contract-law",
+      "heading": "2021 - Section 2 - Question 4 - Part A-E",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 1.1 People in Business & Contract Law. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.5 Human Resource Management: 2021 OL Section 2 Q4(A) asks “Debenhams workers participate in a national strike outside 11 stores in Ireland Adapted from the Irish Examiner (A) Explain two benefits to an employee of be…” Source review: Every part of 2021 Ordinary Section 2 Question 4 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-12-conflict-resolution-1-the-consumer",
+      "heading": "2015 - Section 1 - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-11-people-in-business-contract-law",
+        "business-ordinary-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2015 Ordinary heading under 1.2 Conflict Resolution #1: The Consumer. The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 3.2 Management Skills (Communication & ICT): 2015 OL Section 1 Q14 asks “Tick the correct box (✓) to indicate the Act which governs how information is stored about people: Consumer Protection Act 2007 Data Protection Act 1988/2003” Source review: Every part of 2015 Ordinary Section 1 Question 14 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+      "heading": "2022 - Paper - Section 2 - Section 1 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-63-business-government-the-economy",
+        "business-ordinary-old-course-64-community-development",
+        "business-ordinary-old-course-65-business-ethics-social-responsibility"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 1.3 Conflict Resolution #2: Industrial Relations. The SEC paper and marking scheme support 4.3 Taxation; 6.3 Business, Government & the Economy; 6.4 Community Development; 6.5 Business Ethics & Social Responsibility: 2022 OL Section 2 Q2(C) asks “Aldi’s corporate responsibility plan is driven by 5 principles: customers, suppliers, environment, employees and community.” Source review: Every part of 2022 Ordinary Section 2 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-21-enterprise",
+      "heading": "2023 - Section 2 - Question 9 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 2.1 Enterprise. The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.3 Marketing #1: Market Research & Market Segemtation: 2023 OL Section 2 Q9(A) asks “I-SPY is an online sportwear business based in Ireland which sells a range of yoga and fitness wear.” Source review: Every part of 2023 Ordinary Section 2 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-21-enterprise",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 8 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-ordinary-old-course-62-ownership-structures",
+        "business-ordinary-old-course-64-community-development"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 2.1 Enterprise. The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 6.2 Ownership Structures; 6.4 Community Development: 2022 OL Section 2 Q8(A)(i) asks “Miriam Lloyd set up her business ‘Christening Generations’ in 2016 operating as a sole trader.” Source review: Every part of 2022 Ordinary Section 2 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-21-enterprise",
+      "heading": "2018 - Section 2 - Question 3 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-71-international-trade",
+        "business-ordinary-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under 2.1 Enterprise. The SEC paper and marking scheme support 7.1 International Trade; 7.2 The European Union: 2018 OL Section 2 Q3(B) asks “(B) Explain, using an example in each case, the difference between visible exports and visible imports.” Source review: Every part of 2018 Ordinary Section 2 Question 3 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2023 - Section 2 - Question 7 - Part D,E",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 4.3 Taxation; 4.5 Human Resource Management: 2023 OL Section 2 Q7(A) asks “Lucy Kavanagh has just started a new job as a payroll administrator with FastParts Ltd.” Source review: Every part of 2023 Ordinary Section 2 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2021 - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2021 OL Section 1 Q9 asks “Outline two benefits of teamwork to an organisation:” Source review: Every part of 2021 Ordinary Section 1 Question 9 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2021 - Section 2 - Question 6 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-42-insurance",
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 4.2 Insurance; 4.5 Human Resource Management: 2021 OL Section 2 Q6(A) asks “Dunmackey House Hotel Dunmackey House Hotel has struggled to remain open over the past year.” Source review: Every part of 2021 Ordinary Section 2 Question 6 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2018 - Section 1 - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2018 OL Section 1 Q14 asks “Indicate by placing a tick (✓) in the correct box, the type of plan to which each statement for Ben and Jerry’s ice cream relates.” Source review: Every part of 2018 Ordinary Section 1 Question 14 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2014 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2014 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2014 OL Section 1 Q10 asks “Column 1 is a list of business terms.” Source review: Every part of 2014 Ordinary Section 1 Question 10 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2011 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2011 OL Section 1 Q13 asks “Column 1 is a list of business terms.” Source review: Every part of 2011 Ordinary Section 1 Question 13 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-31-management-skills-leading-motivating",
+      "heading": "2011 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 3.1 Management Skills (Leading & Motivating). The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2011 OL Section 1 Q13 asks “Column 1 is a list of business terms.” Source review: Every part of 2011 Ordinary Section 1 Question 13 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-32-management-skills-communication-ict",
+      "heading": "2019 - Section 2 - Question 2 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-63-business-government-the-economy",
+        "business-ordinary-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2019 Ordinary heading under 3.2 Management Skills (Communication & ICT). The SEC paper and marking scheme support 6.3 Business, Government & the Economy; 7.3 Global Business: 2019 OL Section 2 Q2(A) asks “A sample of Government Expenditure Social Protection €20 billion; Health €15 Billion; Education €10 billion; Debt Servicing / EU Payments €11 billion; Transp…” Source review: Every part of 2019 Ordinary Section 2 Question 2 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2023 - Section 1 - Question 2",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating): 2023 OL Section 1 Q2 asks “Indicate whether each of the following actions is an example of a Controller or Facilitator manager by writing Controller or Facilitator after each of the fo…” Source review: Every part of 2023 Ordinary Section 1 Question 2 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2011 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2011 OL Section 1 Q13 asks “Column 1 is a list of business terms.” Source review: Every part of 2011 Ordinary Section 1 Question 13 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+      "heading": "2011 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-46-managing-change-tqm"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 3.3 Management Activities (Planning, Organising, Controlling). The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.5 Human Resource Management; 4.6 Managing Change & TQM: 2011 OL Section 1 Q13 asks “Column 1 is a list of business terms.” Source review: Every part of 2011 Ordinary Section 1 Question 13 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2024 - Section 1 - Question 7",
+      "secTopicIds": [
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2024 OL Section 1 Q7 asks “Write the word TRUE or FALSE after each of the following statements.” Source review: Every part of 2024 Ordinary Section 1 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2024 - Section 1 - Question 8",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.3 Taxation: 2024 OL Section 1 Q8 asks “Calculate Ian Kenny’s net annual take home pay from the following details.” Source review: Every part of 2024 Ordinary Section 1 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 7 - Part C",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.3 Taxation; 4.5 Human Resource Management: 2022 OL Section 2 Q7(C)(i) asks “Value Insurance Ltd Leah Corcoran recently began a new job as an insurance sales agent at Value Insurance Ltd in Limerick city.” Source review: Every part of 2022 Ordinary Section 2 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2021 - Section 1 - Question 8",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 4.3 Taxation: 2021 OL Section 1 Q8 asks “Calculate Alison Chamber’s net annual take home pay from the following details.” Source review: Every part of 2021 Ordinary Section 1 Question 8 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2011 - Section 1 - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-12-conflict-resolution-1-the-consumer"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 1.2 Conflict Resolution #1: The Consumer: 2011 OL Section 1 Q14 asks “Outline two advantages of the Small Claims Court for the consumer.” Source review: Every part of 2011 Ordinary Section 1 Question 14 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2011 - Section 2 - Question 8 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating",
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating); 4.4 Ratio Analysis (Monitoring the Business); 5.5 Business Expansion: 2011 OL Section 2 Q8(D)(i) asks “Brady’s Hotel Brady’s Hotel is a family run business situated in a seaside town.” Source review: Every part of 2011 Ordinary Section 2 Question 8 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+      "heading": "2011 - Section 2 - Question 8 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating",
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management). The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating); 4.4 Ratio Analysis (Monitoring the Business); 5.5 Business Expansion: 2011 OL Section 2 Q8(D)(i) asks “Brady’s Hotel Brady’s Hotel is a family run business situated in a seaside town.” Source review: Every part of 2011 Ordinary Section 2 Question 8 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-42-insurance",
+      "heading": "2019 - Section 1 - Question 7",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2019 Ordinary heading under 4.2 Insurance. The SEC paper and marking scheme support 4.3 Taxation: 2019 OL Section 1 Q7 asks “Explain the following types of taxation.” Source review: Every part of 2019 Ordinary Section 1 Question 7 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+      "heading": "2021 - Section 2 - Question 7 - Part A-B",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 4.4 Ratio Analysis (Monitoring the Business). The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 5.2 Getting Started in Business: 2021 OL Section 2 Q7(A)(i) asks “Eden Hills Golf Club Eden Hills Golf Club is a very popular course in the sunny South East of Ireland.” Source review: Every part of 2021 Ordinary Section 2 Question 7 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-45-human-resource-management",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 5 - Part E",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 2.1 Enterprise; 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling): 2022 OL Section 2 Q5(E) asks “Pure Clothing, based in Mayo, was founded by Peter Timlin and Richard Grimes in May 2020.” Source review: Every part of 2022 Ordinary Section 2 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-45-human-resource-management",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2022 OL Section 1 Q5 asks “Complete the functional departments of a manufacturing company with four departments.” Source review: Every part of 2022 Ordinary Section 1 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-45-human-resource-management",
+      "heading": "2016 - Section A - Question 7",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating"
+      ],
+      "reason": "StudyClix files this 2016 Ordinary heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating): 2016 OL Section 1 Q7 asks “Choose the appropriate words to complete the sentence below.” Source review: Every part of 2016 Ordinary Section 1 Question 7 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-45-human-resource-management",
+      "heading": "2014 - Section 1 - Question 15",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating"
+      ],
+      "reason": "StudyClix files this 2014 Ordinary heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating): 2014 OL Section 1 Q15 asks “Explain two benefits to a business of having highly motivated employees.” Source review: Every part of 2014 Ordinary Section 1 Question 15 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-45-human-resource-management",
+      "heading": "2010 - Section 2 - Question 4 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-31-management-skills-leading-motivating",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management"
+      ],
+      "reason": "StudyClix files this 2010 Ordinary heading under 4.5 Human Resource Management. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management): 2010 OL Section 2 Q4(B) asks “Roisín Murphy worked as a hairdresser in her home town for six years.” Source review: Every part of 2010 Ordinary Section 2 Question 4 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-46-managing-change-tqm",
+      "heading": "2025 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2025 Ordinary heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 4.5 Human Resource Management: 2025 OL Section 1 Q5 asks “Outline two benefits of teamwork to an organisation.” Source review: Every part of 2025 Ordinary Section 1 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-46-managing-change-tqm",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 5 - Part C",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 4.6 Managing Change & TQM. The SEC paper and marking scheme support 2.1 Enterprise; 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling): 2022 OL Section 2 Q5(C) asks “Pure Clothing, based in Mayo, was founded by Peter Timlin and Richard Grimes in May 2020.” Source review: Every part of 2022 Ordinary Section 2 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-51-identifying-opportunities",
+      "heading": "2025 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2025 Ordinary heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2025 OL Section 1 Q4 asks “Complete the break-even chart below by placing the following labels in the correct position on the chart: Fixed Costs (FC) Total Revenue (TR) Break-Even Poin…” Source review: Every part of 2025 Ordinary Section 1 Question 4 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-51-identifying-opportunities",
+      "heading": "2024 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2024 OL Section 1 Q10 asks “Identify the three other elements of a SWOT/SCOT analysis.” Source review: Every part of 2024 Ordinary Section 1 Question 10 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-51-identifying-opportunities",
+      "heading": "2015 - Section 1 - Question 11",
+      "secTopicIds": [
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business"
+      ],
+      "reason": "StudyClix files this 2015 Ordinary heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business): 2015 OL Section 1 Q11 asks “Complete the break-even chart below by placing the following labels in the correct position on the chart: Fixed Costs (FC) Total Revenue (TR) Break-even Poin…” Source review: Every part of 2015 Ordinary Section 1 Question 11 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-51-identifying-opportunities",
+      "heading": "2014 - Section 2 - Question 8 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2014 Ordinary heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.2 Getting Started in Business; 5.3 Marketing #1: Market Research & Market Segemtation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2014 OL Section 2 Q8(B) asks “Madra Mia Madra Mia, located in Cork city since 2000, provides a dog grooming service and products for animal care.” Source review: Every part of 2014 Ordinary Section 2 Question 8 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-51-identifying-opportunities",
+      "heading": "2013 - Section 2 - Question 4 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-31-management-skills-leading-motivating",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-64-community-development"
+      ],
+      "reason": "StudyClix files this 2013 Ordinary heading under 5.1 Identifying Opportunities. The SEC paper and marking scheme support 2.1 Enterprise; 3.1 Management Skills (Leading & Motivating); 4.5 Human Resource Management; 6.4 Community Development: 2013 OL Section 2 Q4(B) asks “SNAPAPPY While completing a degree in Computer Science, Shane Whelan designed and developed an ‘app’ for smartphones, allowing users to change their photogra…” Source review: Every part of 2013 Ordinary Section 2 Question 4 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2025 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2025 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.5 Business Expansion: 2025 OL Section 1 Q13 asks “Explain the term franchising and state one example of a franchise.” Source review: Every part of 2025 Ordinary Section 1 Question 13 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2021 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2021 OL Section 1 Q5 asks “The following steps are involved in the management activity controlling.” Source review: Every part of 2021 Ordinary Section 1 Question 5 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2021 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 2.1 Enterprise: 2021 OL Section 1 Q13 asks “Complete the missing factors of production.” Source review: Every part of 2021 Ordinary Section 1 Question 13 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2020 - Section 1 - Question 7",
+      "secTopicIds": [
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2020 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2020 OL Section 1 Q7 asks “Indicate by placing a tick (✓) in the correct box, the pricing strategy to which each statement relates.” Source review: Every part of 2020 Ordinary Section 1 Question 7 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2020 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2020 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2020 OL Section 1 Q12 asks “Write the word TRUE or FALSE after each of the following statements.” Source review: Every part of 2020 Ordinary Section 1 Question 12 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2020 - Section 1 - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities"
+      ],
+      "reason": "StudyClix files this 2020 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.1 Identifying Opportunities: 2020 OL Section 1 Q14 asks “The development of a new product/service normally involves seven stages.” Source review: Every part of 2020 Ordinary Section 1 Question 14 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2019 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities"
+      ],
+      "reason": "StudyClix files this 2019 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.1 Identifying Opportunities: 2019 OL Section 1 Q13 asks “Write the word TRUE or FALSE after each of the following statements.” Source review: Every part of 2019 Ordinary Section 1 Question 13 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2018 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 2.1 Enterprise: 2018 OL Section 1 Q12 asks “List the three other factors of production: ______ | LABOUR | ______ | ______” Source review: Every part of 2018 Ordinary Section 1 Question 12 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2018 - Section 2 - Question 7 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.3 Marketing #1: Market Research & Market Segemtation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2018 OL Section 2 Q7(D) asks “(D) Illustrate, using a diagram, one channel of distribution a baker could use for freshly baked cakes.” Source review: Every part of 2018 Ordinary Section 2 Question 7 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2016 - Section A - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2016 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2016 OL Section 1 Q14 asks “The diagram of the Product Life Cycle below is incomplete.” Source review: Every part of 2016 Ordinary Section 1 Question 14 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-52-getting-started-in-business",
+      "heading": "2016 - Section 2 - Question 7 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2016 Ordinary heading under 5.2 Getting Started in Business. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 5.1 Identifying Opportunities; 5.3 Marketing #1: Market Research & Market Segemtation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2016 OL Section 2 Q7(B) asks “Theo’s Mexican Street Food Theo had many years of experience working as a chef in Mexican food restaurants.” Source review: Every part of 2016 Ordinary Section 2 Question 7 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2024 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2024 OL Section 1 Q6(i) asks “The diagram below illustrates the product life cycle.” Source review: Every part of 2024 Ordinary Section 1 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2023 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2023 OL Section 1 Q6(i) asks “6. (i) Explain the term USP.” Source review: Every part of 2023 Ordinary Section 1 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2021 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 5.1 Identifying Opportunities: 2021 OL Section 1 Q4 asks “Match the product idea with the correct source of business idea from the list below: Experience Competitors Market trends James Dyson was frustrated with his…” Source review: Every part of 2021 Ordinary Section 1 Question 4 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2021 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT): 2021 OL Section 1 Q12 asks “Column 1 is a list of business terms.” Source review: Every part of 2021 Ordinary Section 1 Question 12 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2021 - Section 2 - Question 9 - Part A-C",
+      "secTopicIds": [
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 5.5 Business Expansion: 2021 OL Section 2 Q9(A) asks “The Ryan family have operated their hardware and DIY store for over 60 years on the outskirts of Limerick city.” Source review: Every part of 2021 Ordinary Section 2 Question 9 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+      "heading": "2012 - Section 1 - Question 10",
+      "secTopicIds": [
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-51-identifying-opportunities"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under 5.3 Marketing #1: Market Research & Market Segemtation. The SEC paper and marking scheme support 4.4 Ratio Analysis (Monitoring the Business); 5.1 Identifying Opportunities: 2012 OL Section 1 Q10 asks “Column 1 is a list of business terms.” Source review: Every part of 2012 Ordinary Section 1 Question 10 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2023 - Section 2 - Question 9 - Part C,D",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.3 Marketing #1: Market Research & Market Segemtation: 2023 OL Section 2 Q9(A) asks “I-SPY is an online sportwear business based in Ireland which sells a range of yoga and fitness wear.” Source review: Every part of 2023 Ordinary Section 2 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 4",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-61-categories-of-industry"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 2.1 Enterprise; 6.1 Categories of Industry: 2022 OL Section 1 Q4 asks “Indicate by placing a tick (✓) in the correct box, the factor of production to which each statement relates.” Source review: Every part of 2022 Ordinary Section 1 Question 4 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 14",
+      "secTopicIds": [
+        "business-ordinary-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 5.2 Getting Started in Business: 2022 OL Section 1 Q14 asks “Identify the method of production used to manufacture the following products: (i) A sliced pan of bread (Irish Pride).” Source review: Every part of 2022 Ordinary Section 1 Question 14 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+      "heading": "2011 - Section 2 - Question 8 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-31-management-skills-leading-motivating",
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion). The SEC paper and marking scheme support 3.1 Management Skills (Leading & Motivating); 4.4 Ratio Analysis (Monitoring the Business); 5.5 Business Expansion: 2011 OL Section 2 Q8(A) asks “Brady’s Hotel Brady’s Hotel is a family run business situated in a seaside town.” Source review: Every part of 2011 Ordinary Section 2 Question 8 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-55-business-expansion",
+      "heading": "2022 - Paper - Section 2 - Section 2 - Question 6 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-42-insurance"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 5.5 Business Expansion. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.2 Insurance: 2022 OL Section 2 Q6(A)(i) asks “Ryan’s Dog Groomers Ryan Murphy runs a successful dog grooming business.” Source review: Every part of 2022 Ordinary Section 2 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-55-business-expansion",
+      "heading": "2021 - Section 2 - Question 7 - Part C-E",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-52-getting-started-in-business"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 5.5 Business Expansion. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 3.3 Management Activities (Planning, Organising, Controlling); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 5.2 Getting Started in Business: 2021 OL Section 2 Q7(A)(i) asks “Eden Hills Golf Club Eden Hills Golf Club is a very popular course in the sunny South East of Ireland.” Source review: Every part of 2021 Ordinary Section 2 Question 7 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-55-business-expansion",
+      "heading": "2018 - Section 2 - Question 6 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-44-ratio-analysis-monitoring-the-business",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under 5.5 Business Expansion. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.4 Ratio Analysis (Monitoring the Business); 5.3 Marketing #1: Market Research & Market Segemtation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2018 OL Section 2 Q6(D) asks “Genoa Italian Restaurant is examining its ability to pay its bills as they fall due.” Source review: Every part of 2018 Ordinary Section 2 Question 6 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-61-categories-of-industry",
+      "heading": "2024 - Section 2 - Question 8 - Part B",
+      "secTopicIds": [
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2024 OL Section 2 Q8(B)(i) asks “(B) Supervalu is part of the Musgrave Group, which is an Irish food wholesaler.” Source review: Every part of 2024 Ordinary Section 2 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-61-categories-of-industry",
+      "heading": "2016 - Section A - Question 4",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise"
+      ],
+      "reason": "StudyClix files this 2016 Ordinary heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 2.1 Enterprise: 2016 OL Section 1 Q4 asks “Complete the missing Factors of Production in the spaces provided.” Source review: Every part of 2016 Ordinary Section 1 Question 4 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-61-categories-of-industry",
+      "heading": "2012 - Section 1 - Question 6",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under 6.1 Categories of Industry. The SEC paper and marking scheme support 2.1 Enterprise: 2012 OL Section 1 Q6 asks “Complete the missing Factors of Production.” Source review: Every part of 2012 Ordinary Section 1 Question 6 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-62-ownership-structures",
+      "heading": "2023 - Section 2 - Question 8 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion",
+        "business-ordinary-old-course-55-business-expansion"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 6.2 Ownership Structures. The SEC paper and marking scheme support 5.2 Getting Started in Business; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion); 5.5 Business Expansion: 2023 OL Section 2 Q8(D) asks “Insomnia operates as a franchise.” Source review: Every part of 2023 Ordinary Section 2 Question 8 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-62-ownership-structures",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 6.2 Ownership Structures. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2022 OL Section 1 Q5 asks “Complete the functional departments of a manufacturing company with four departments.” Source review: Every part of 2022 Ordinary Section 1 Question 5 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2024 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.3 Taxation: 2024 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2024 Ordinary Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2024 - Section 2 - Question 6 - Part A",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-42-insurance"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.2 Insurance: 2024 OL Section 2 Q6(A) asks “Banking and payments app Revolut is launching car insurance in Ireland in partnership with insurer AIG.” Source review: Every part of 2024 Ordinary Section 2 Question 6 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2020 - Section 1 - Question 13",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2020 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 6.2 Ownership Structures: 2020 OL Section 1 Q13 asks “Name a state agency involved in each of the following sectors.” Source review: Every part of 2020 Ordinary Section 1 Question 13 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2012 - Section 2 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-62-ownership-structures",
+        "business-ordinary-old-course-64-community-development",
+        "business-ordinary-old-course-65-business-ethics-social-responsibility"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 6.2 Ownership Structures; 6.4 Community Development; 6.5 Business Ethics & Social Responsibility: 2012 OL Section 2 Q2(C) asks “Kevin Fitzpatrick, MD and his two brothers set up Solar Solutions Ltd in their home town of Kilduff, to produce solar panels for private and commercial build…” Source review: Every part of 2012 Ordinary Section 2 Question 2 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2012 - Section 2 - Question 2 - Part C",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-62-ownership-structures",
+        "business-ordinary-old-course-64-community-development",
+        "business-ordinary-old-course-65-business-ethics-social-responsibility"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 6.2 Ownership Structures; 6.4 Community Development; 6.5 Business Ethics & Social Responsibility: 2012 OL Section 2 Q2(C) asks “Kevin Fitzpatrick, MD and his two brothers set up Solar Solutions Ltd in their home town of Kilduff, to produce solar panels for private and commercial build…” Source review: Every part of 2012 Ordinary Section 2 Question 2 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2011 - Section 1 - Question 15",
+      "secTopicIds": [
+        "business-ordinary-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 7.1 International Trade: 2011 OL Section 1 Q15 asks “If the euro (€) falls in value against the UK (£) Sterling, indicate whether each of the following would be expected to increase or decrease: (i) Number of U…” Source review: Every part of 2011 Ordinary Section 1 Question 15 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-63-business-government-the-economy",
+      "heading": "2011 - Section 1 - Question 15",
+      "secTopicIds": [
+        "business-ordinary-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 6.3 Business, Government & the Economy. The SEC paper and marking scheme support 7.1 International Trade: 2011 OL Section 1 Q15 asks “If the euro (€) falls in value against the UK (£) Sterling, indicate whether each of the following would be expected to increase or decrease: (i) Number of U…” Source review: Every part of 2011 Ordinary Section 1 Question 15 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-64-community-development",
+      "heading": "2023 - Section 1 - Question 12",
+      "secTopicIds": [
+        "business-ordinary-old-course-63-business-government-the-economy"
+      ],
+      "reason": "StudyClix files this 2023 Ordinary heading under 6.4 Community Development. The SEC paper and marking scheme support 6.3 Business, Government & the Economy: 2023 OL Section 1 Q12 asks “Match the explanation with the correct State Agency from the list below.” Source review: Every part of 2023 Ordinary Section 1 Question 12 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-64-community-development",
+      "heading": "2015 - Section 2 - Question 2 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-61-categories-of-industry",
+        "business-ordinary-old-course-63-business-government-the-economy",
+        "business-ordinary-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2015 Ordinary heading under 6.4 Community Development. The SEC paper and marking scheme support 2.1 Enterprise; 6.1 Categories of Industry; 6.3 Business, Government & the Economy; 7.3 Global Business: 2015 OL Section 2 Q2(D) asks “Google, Facebook, Twitter and many other large organisations in the Tertiary (Services) sector have set up European headquarters in Ireland.” Source review: Every part of 2015 Ordinary Section 2 Question 2 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-65-business-ethics-social-responsibility",
+      "heading": "2011 - Section 2 - Question 4 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-11-people-in-business-contract-law",
+        "business-ordinary-old-course-21-enterprise",
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under 6.5 Business Ethics & Social Responsibility. The SEC paper and marking scheme support 1.1 People in Business & Contract Law; 2.1 Enterprise; 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.3 Taxation; 6.2 Ownership Structures: 2011 OL Section 2 Q4(D) asks “Jason saw a business opportunity in January 2010 when snow and bad weather hit the country.” Source review: Every part of 2011 Ordinary Section 2 Question 4 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-71-international-trade",
+      "heading": "2021 - Section 2 - Question 8 - Part D",
+      "secTopicIds": [
+        "business-ordinary-old-course-51-identifying-opportunities",
+        "business-ordinary-old-course-52-getting-started-in-business",
+        "business-ordinary-old-course-53-marketing-1-market-research-market-segemtation",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under 7.1 International Trade. The SEC paper and marking scheme support 5.1 Identifying Opportunities; 5.2 Getting Started in Business; 5.3 Marketing #1: Market Research & Market Segemtation; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2021 OL Section 2 Q8(D) asks “Cadbury bars are manufactured using mass production.” Source review: Every part of 2021 Ordinary Section 2 Question 8 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-71-international-trade",
+      "heading": "2012 - Section 1 - Question 7",
+      "secTopicIds": [
+        "business-ordinary-old-course-73-global-business"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under 7.1 International Trade. The SEC paper and marking scheme support 7.3 Global Business: 2012 OL Section 1 Q7 asks “Outline your understanding of a ‘Global Business’ and give one example.” Source review: Every part of 2012 Ordinary Section 1 Question 7 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-73-global-business",
+      "heading": "2024 - Section 1 - Question 9",
+      "secTopicIds": [
+        "business-ordinary-old-course-63-business-government-the-economy"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under 7.3 Global Business. The SEC paper and marking scheme support 6.3 Business, Government & the Economy: 2024 OL Section 1 Q9 asks “Match the explanation with the relevant State agency/organisation from the list below.” Source review: Every part of 2024 Ordinary Section 1 Question 9 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-73-global-business",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 11",
+      "secTopicIds": [
+        "business-ordinary-old-course-71-international-trade"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under 7.3 Global Business. The SEC paper and marking scheme support 7.1 International Trade: 2022 OL Section 1 Q11 asks “Match the explanation with the relevant Barrier to Trade from the list below.” Source review: Every part of 2022 Ordinary Section 1 Question 11 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2024 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2024 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.3 Taxation: 2024 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2024 Ordinary Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2022 - Paper - Section 1 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2022 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 6.2 Ownership Structures: 2022 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2022 Ordinary Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2021 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management"
+      ],
+      "reason": "StudyClix files this 2021 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management): 2021 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2021 Ordinary Section 1 Question 1 was visually checked against its SEC booklet and the expected responses with their marks. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2020 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2020 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 6.2 Ownership Structures: 2020 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2020 Ordinary Section 1 Question 1 was visually checked against its SEC booklet, allocation summary and support notes. Booklet-specific p1/p2 identities keep the short and long question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2019 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict"
+      ],
+      "reason": "StudyClix files this 2019 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT): 2019 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2019 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2018 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 4.3 Taxation: 2018 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2018 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2018 - Section 1 - Question 5",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling"
+      ],
+      "reason": "StudyClix files this 2018 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling): 2018 OL Section 1 Q5 asks “Fill in the missing elements of a SWOT analysis in the spaces 2, 3 and 4 in the table below.” Source review: Every part of 2018 Ordinary Section 1 Question 5 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2017 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2017 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.3 Taxation: 2017 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2017 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2016 - Section A - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2016 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 4.3 Taxation: 2016 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2016 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2015 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-41-household-busines-manager-sources-of-finance-cashflow-management",
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2015 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 4.1 Household & Busines Manager (Sources of Finance & Cashflow Management); 4.3 Taxation: 2015 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2015 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2014 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-45-human-resource-management"
+      ],
+      "reason": "StudyClix files this 2014 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 4.5 Human Resource Management: 2014 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2014 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and expected responses. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2013 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-43-taxation"
+      ],
+      "reason": "StudyClix files this 2013 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 4.3 Taxation: 2013 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2013 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2012 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.3 Taxation; 7.2 The European Union: 2012 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2012 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2012 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-13-conflict-resolution-2-industrial-relations",
+        "business-ordinary-old-course-43-taxation",
+        "business-ordinary-old-course-72-the-european-union"
+      ],
+      "reason": "StudyClix files this 2012 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 1.3 Conflict Resolution #2: Industrial Relations; 4.3 Taxation; 7.2 The European Union: 2012 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2012 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2011 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 6.2 Ownership Structures: 2011 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2011 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2011 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-32-management-skills-communication-ict",
+        "business-ordinary-old-course-62-ownership-structures"
+      ],
+      "reason": "StudyClix files this 2011 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.2 Management Skills (Communication & ICT); 6.2 Ownership Structures: 2011 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2011 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2010 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2010 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.5 Human Resource Management; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2010 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2010 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    },
+    {
+      "topicId": "business-ordinary-old-course-what-do-these-initials-stand-for",
+      "heading": "2010 - Section 1 - Question 1",
+      "secTopicIds": [
+        "business-ordinary-old-course-33-management-activities-planning-organising-controlling",
+        "business-ordinary-old-course-45-human-resource-management",
+        "business-ordinary-old-course-54-marketing-2-the-4-ps-product-price-place-promotion"
+      ],
+      "reason": "StudyClix files this 2010 Ordinary heading under What do these initials stand for?. The SEC paper and marking scheme support 3.3 Management Activities (Planning, Organising, Controlling); 4.5 Human Resource Management; 5.4 Marketing #2: The 4 P's (Product, Price, Place, Promotion): 2010 OL Section 1 Q1 asks “What do the following letters stand for?” Source review: Every part of 2010 Ordinary Section 1 Question 1 was visually checked against its SEC paper, allocation summary and support notes. The single-booklet identity keeps the short (n) and long (S2Q) question numbering apart. NextStepUni keeps the reviewed tags for this question; the reference association is retained here as an audited anomaly."
+    }
+  ]
+}
