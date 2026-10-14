@@ -26,7 +26,7 @@ FORM='AISTE nó ALT is a writing-form choice inside one response (same Stíl/Áb
 STANCE='Stance for or against the motion is the argument direction inside one speech, marked identically (consistent with English “for or against” tasks); not expanded.'
 rules=[(2,'peann gorm nó','Pen colour instruction, not an answer route.'),(2,'Tá dhá chuid','Paper structure statement: both parts required.'),
  (3,'Freagair gach cuid',REQ),(3,'seo a bheith i nGaeilge',REQ),(3,'dhá cháilíocht',TWO),(3,'dhá rud a chaithfidh',TWO),
- (4,'dhá chomhrá',REQ),(4,'dhá phointe eolais faoin gcalaois',TWO),(4,'Luaigh cúis amháin',ONE),(4,'an dá phointe eolais faoin tsaoire',TWO),
+ (4,'dhá chomhrá',REQ),(3,'dhá fhógra','Required listening section structure.'),(4,'ina dhá mhír','Required listening section structure.'),(6,'dhá phíosa nuachta','Required listening section structure.'),(4,'dhá phointe eolais faoin gcalaois',TWO),(4,'Luaigh cúis amháin',ONE),(4,'an dá phointe eolais faoin tsaoire',TWO),
  (5,'dhá chúis',TWO),(6,'an dá rud a mheallann',TWO),(6,'dhá dheis',TWO),
  (7,'Freagair do rogha CEANN AMHÁIN',COMP),(7,'Treoracha: Ní gá','Length guidance (500–600 words), not a selection.'),(7,'an teideal a roghnaítear','Instruction to keep the chosen title connected; selection itself is classified on the title lines.'),
  (7,'Scríobh AISTE nó ALT NUACHTÁIN/IRISE ar cheann amháin',FORM+' Five titles (a)–(e) are a closed choose-one pool.'),(7,'Ceap SCÉAL',COMP+' Two titles (a)–(b).'),(7,'Freagair do rogha ceann amháin díobh seo.',COMP+' C(a) or C(b).'),

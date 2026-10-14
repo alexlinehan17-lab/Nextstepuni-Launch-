@@ -104,6 +104,11 @@
     },
     {
       "page": 5,
+      "raw": "Éireannach a bhuaigh bonn óir dhá uair",
+      "decision": "Source-text wording inside a reading passage, a quotation or a poem, not a candidate instruction."
+    },
+    {
+      "page": 5,
       "raw": "(a) Scríobh síos an dá phíosa eolais faoi líon na lúthchleasaithe a bhí ar fhoireann",
       "decision": "Two required points inside one printed reading part priced 3 mharc + 2 mharc (first correct 3, second 2): the part stays whole at 0/3/5."
     },

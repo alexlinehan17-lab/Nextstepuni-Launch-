@@ -74,6 +74,11 @@
     },
     {
       "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
       "raw": "2. Scríobh síos dhá rud a bheidh le cloisteáil ar an gclár.",
       "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
     },
@@ -85,6 +90,11 @@
     {
       "page": 4,
       "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
       "decision": "Required listening section structure."
     },
     {
@@ -119,6 +129,11 @@
     },
     {
       "page": 6,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 6,
       "raw": "2. Cá gcuireann an custaiméir an buidéal plaisteach folamh nó an canna alúmanaim",
       "decision": "One required answer; “buidéal … nó canna” names the items in one question, not alternative tasks."
     },
@@ -126,6 +141,11 @@
       "page": 6,
       "raw": "Scríobh síos toradh fiúntach amháin a chreideann an rialtas a bheidh ar an scéim seo.",
       "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 6,
+      "raw": "3. Scríobh síos dhá imeacht ag ar tógadh na grianghraif atá sa chartlann.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
     },
     {
       "page": 7,

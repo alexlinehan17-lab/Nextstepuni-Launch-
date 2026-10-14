@@ -34,6 +34,10 @@ FORM = ('Required form wording inside one composition (giota leanúnach nó blag
 
 
 def decide(p, r):
+    if r.startswith('Cloisfidh tú') or r.startswith('an comhrá ó thosach'):
+        return 'Required listening section structure.'
+    if p == 2 and r.startswith('Tá dhá chuid'):
+        return 'Paper structure statement: both parts required.'
     if p == 2:
         return 'Pen colour instruction, not an answer route.'
     if p == 3 and (r.startswith('Freagair gach cuid') or r.startswith('Caithfidh do chuid')):

@@ -22,7 +22,7 @@ SCHEME_FILE = 'LC001ALP100IV'
 OUT = ROOT / 'components/MarkBank/cards/irish/higher-2026-p2-authored.json'
 SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-higher-2026-p2-source-review.json'
 REVIEWED_AT = '2026-10-11'
-DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Luaigh|Ainmnigh|\bnó\b|dhá phointe|dhá rud|dhá bh|dhá dh|dhá ch|dhá fh|dhá th|ceann amháin|pointe amháin', re.I)
+DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Luaigh|Ainmnigh|\bnó\b|dhá phointe|dhá rud|dhá bh|dhá dh|dhá ch|dhá fh|dhá th|ceann amháin|pointe amháin|\bdhá\b|\ban dá\b', re.I)
 
 
 def clean(text):

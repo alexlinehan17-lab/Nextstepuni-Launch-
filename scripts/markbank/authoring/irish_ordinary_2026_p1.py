@@ -25,7 +25,7 @@ SCHEME_FILE = 'LC001GLP100IV'
 OUT = ROOT / 'components/MarkBank/cards/irish/ordinary-2026-p1-authored.json'
 SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-ordinary-2026-p1-source-review.json'
 REVIEWED_AT = '2026-10-11'
-DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bchoose\b|\beither\b|\bany\b|one of|\bnó\b|dhá phointe|trí phointe|dhá rud|dó/di|Cuir ciorcal|dhá thagairt|dhá ch|dhá dh|an dá|ceann amháin|amháin', re.I)
+DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bchoose\b|\beither\b|\bany\b|one of|\bnó\b|dhá phointe|trí phointe|dhá rud|dó/di|Cuir ciorcal|dhá thagairt|dhá ch|dhá dh|an dá|ceann amháin|amháin|\bdhá\b', re.I)
 AUDIO_URL = 'https://www.examinations.ie/archive/exampapers/2026/LC001ZLP017IV.mp3'
 
 

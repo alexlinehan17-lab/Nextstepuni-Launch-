@@ -72,6 +72,11 @@
     },
     {
       "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
       "raw": "(b) Scríobh síos lá amháin a bheidh an t‐oibrí barista ag obair.",
       "decision": "One required answer; Satharn or Domhnach are both accepted answers to one task."
     },
@@ -83,6 +88,16 @@
     {
       "page": 4,
       "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 5,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos ann",
       "decision": "Required listening section structure."
     },
     {

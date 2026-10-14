@@ -30,7 +30,7 @@ SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-higher-2025-p2-source-re
 REVIEWED_AT = '2026-10-11'
 PAPER_SHA = '156b8550e26eeb1d870fe84538c6fac9d0eb15f65776a54673b4ce05756bfb15'
 SCHEME_SHA = '2b4f503260b2bcb3704a3f428bee88bbcccd8746b2a2b58208142cf7e6ff1550'
-DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Luaigh|Ainmnigh|\bnó\b|dhá phointe|dhá rud|dhá bh|dhá dh|dhá ch|dhá fh|dhá th|ceann amháin|pointe amháin', re.I)
+DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Luaigh|Ainmnigh|\bnó\b|dhá phointe|dhá rud|dhá bh|dhá dh|dhá ch|dhá fh|dhá th|ceann amháin|pointe amháin|\bdhá\b|\ban dá\b', re.I)
 SOURCE_NOTE = 'Shown page-for-page from the official examination paper; swipe to move between pages.'
 
 

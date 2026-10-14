@@ -31,7 +31,7 @@ SOURCE_REVIEW = ROOT / 'scripts/markbank/authored/irish-ordinary-2024-p1-source-
 REVIEWED_AT = '2026-10-12'
 PAPER_SHA = '38e1df71f9ac5e8091174867e45b544fd6715b2052e57cc24b4a756fb962f142'
 SCHEME_SHA = '954e2a1e867a0926326bf5273db46fca631cbd0437a1c62c0da677c0ff39fcbe'
-DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bnó\b|dhá phointe|dhá rud|dó/di|ceann amháin|amháin', re.I)
+DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Cuir tic|Ainmnigh|Luaigh|\bnó\b|dhá phointe|dhá rud|dó/di|ceann amháin|amháin|\bdhá\b', re.I)
 SOURCE_NOTE = 'Shown page-for-page from the official examination paper; swipe to move between pages.'
 LANGUAGE = ('Scheme PDF 3 and 9: “Bainfear ó 0 go 6 ar chaighdeán na Gaeilge.” This 0–6 deduction applies once to the whole '
             'listening section (Tuiscint 60 − Cumas Gaeilge 0–6), never inside a single question.')

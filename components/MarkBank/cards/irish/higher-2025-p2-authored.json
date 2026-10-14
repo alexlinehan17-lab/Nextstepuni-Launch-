@@ -144,6 +144,16 @@
       },
       {
         "page": 5,
+        "raw": "go bhfuil an dá albam bheo dá chuid, Live in",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 5,
+        "raw": "mbliana is dhá scór. Tríocha bliain i ndiaidh",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 5,
         "raw": "1. (a) Tabhair dhá chúis ar mhúscail díolachán uirlisí ceoil Rory Gallagher spéis mhór i measc lucht",
         "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
       },
@@ -194,12 +204,27 @@
       },
       {
         "page": 6,
+        "raw": "an dá chluiche sin agus mar sin, tá sé beartaithe",
+        "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+      },
+      {
+        "page": 6,
         "raw": "beag beann ar aois, ar inscne, ar chumas nó",
         "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
       },
       {
         "page": 7,
         "raw": "2. (a) Luaigh dhá bhuntáiste a bhaineann leis an spórt. (Alt 2)",
+        "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+      },
+      {
+        "page": 7,
+        "raw": "(b) (i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh",
+        "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
+      },
+      {
+        "page": 7,
+        "raw": "(b) (i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní",
         "decision": "Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3."
       },
       {

@@ -65,6 +65,8 @@ def decide(p, r):
         return BOTH
     if p == 4 and r.startswith('do na Cluichí'):
         return PASSAGE
+    if p == 5 and r.startswith('Éireannach a bhuaigh bonn óir dhá uair'):
+        return PASSAGE
     if p in (5, 7):
         return TWO35
     if p == 8:

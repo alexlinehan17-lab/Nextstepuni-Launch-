@@ -119,7 +119,7 @@ class Page:
  def get_text(self): return self.text
 pages=[Page('') for _ in range(20)]
 for d in review['selectionDecisions']: pages[d['page']-1].text+=d['raw']+'\n'
-assert len(selection_decisions(pages))==24
+assert len(selection_decisions(pages))==27
 original=pages[6].text
 for edited in [original+'\nFreagair do rogha dhá cheann díobh seo.\n',original.replace('ar son an rúin','i bhfabhar an rúin')]:
  pages[6].text=edited

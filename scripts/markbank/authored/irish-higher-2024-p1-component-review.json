@@ -74,6 +74,16 @@
     },
     {
       "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 3,
+      "raw": "2. Scríobh síos dhá imeacht a eagrófar do na scoláirí.",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 3,
       "raw": "3. Luaigh rud amháin a dhéanfaidh oifigigh ón scéim Gaelbhratach le linn a gcuairteanna",
       "decision": "One required answer; the accepted list is the answer key for one task."
     },
@@ -94,8 +104,18 @@
     },
     {
       "page": 4,
+      "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
       "raw": "1. Scríobh síos pointe amháin eolais faoin tonn teasa a bhí san Iodáil nuair a bhí Aoife",
       "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 4,
+      "raw": "2. Tabhair dhá shlí ar chuir an tonn teasa isteach go mór ar phleananna Aoife agus",
+      "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
     },
     {
       "page": 4,
@@ -121,6 +141,11 @@
       "page": 5,
       "raw": "2. Tabhair dhá cheacht a d’fhoghlaim Áine ón oíche a chodail sí amuigh.",
       "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+    },
+    {
+      "page": 6,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos",
+      "decision": "Required listening section structure."
     },
     {
       "page": 6,

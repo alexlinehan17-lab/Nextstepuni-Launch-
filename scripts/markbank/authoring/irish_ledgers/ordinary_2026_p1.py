@@ -23,7 +23,7 @@ FORM='Required form wording inside one composition (giota leanúnach nó blag; l
 rules=[(2,'peann gorm nó','Pen colour instruction, not an answer route.'),(2,'Tá dhá chuid','Paper structure statement: both parts required.'),
  (3,'Freagair gach cuid','Required answers; no finite task menu.'),(3,'seo a bheith i nGaeilge','Required answers; no finite task menu.'),
  (3,'lá amháin','One required answer; Satharn or Domhnach are both accepted answers to one task.'),(3,'Cad é an dáta deireanach','One required answer.'),
- (4,'dhá chomhrá','Required listening section structure.'),(6,'an teideal a roghnaítear','Instruction to keep the chosen title connected; selection classified on page 7.'),
+ (4,'dhá chomhrá','Required listening section structure.'),(3,'dhá fhógra','Required listening section structure.'),(4,'ina dhá mhír','Required listening section structure.'),(5,'dhá phíosa nuachta','Required listening section structure.'),(6,'an teideal a roghnaítear','Instruction to keep the chosen title connected; selection classified on page 7.'),
  (7,'Freagair do rogha dhá cheann',COMP),(7,'giota leanúnach nó blag',COMP+' '+FORM),(7,'Ceap scéal',COMP),(7,'nó',COMP),
  (7,'Scríobh an litir/an ríomhphost',FORM),(7,'ag insint dó/di',FORM),(7,'a bhailiú don chlub',FORM),(7,'chuig cara leat ag insint dó/di',FORM),(7,'Scríobh an comhrá',FORM),
  (16,'D’fhéadfadh sé','Copyright statement, not a task.'),(16,'Gaolmhar, 2000','Copyright statement, not a task.'),(16,'chuici. Ní ghlacann','Copyright statement, not a task.')]

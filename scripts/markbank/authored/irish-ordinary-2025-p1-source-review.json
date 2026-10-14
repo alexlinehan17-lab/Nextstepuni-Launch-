@@ -51,6 +51,11 @@
       "decision": "Pen colour instruction, not an answer route."
     },
     {
+      "page": 2,
+      "raw": "Tá dhá chuid sa scrúdú seo.",
+      "decision": "Paper structure statement: both parts required."
+    },
+    {
       "page": 3,
       "raw": "Freagair gach cuid – A, B, C – sa fhreagarleabhar seo.",
       "decision": "Required answers; no finite task menu."
@@ -59,6 +64,31 @@
       "page": 3,
       "raw": "Caithfidh do chuid freagraí uile sa triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.",
       "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "2. Cén t‐am a thosaíonn Seán ag obair dhá mhaidin sa tseachtain?",
+      "decision": "Question wording (“dhá mhaidin” = two mornings a week), one required answer; not a count of answers."
+    },
+    {
+      "page": 5,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
     },
     {
       "page": 5,
@@ -84,6 +114,11 @@
       "page": 7,
       "raw": "Ceap scéal (leathleathanach nó mar sin) a mbeadh ceann amháin de na sleachta seo a leanas",
       "decision": "Closed choose-two of sections A–D, each section offering printed titles (A 3, B 2, C 2, D 2): 9 whole 50-mark title cards, each marked on its own 50. Choice is not a route: no two-section combination cards; the instruction is in each title card’s task requirements."
+    },
+    {
+      "page": 7,
+      "raw": "Bhí sceitimíní áthais orm. D’éirigh liom dhá thicéad a fháil don cheolchoirm …",
+      "decision": "Source wording inside a printed story opening (B), not a candidate instruction."
     },
     {
       "page": 7,

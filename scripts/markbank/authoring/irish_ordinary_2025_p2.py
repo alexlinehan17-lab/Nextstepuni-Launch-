@@ -33,7 +33,7 @@ REVIEWED_AT = '2026-10-12'
 PAPER_SHA = '30241c45f630f7a0c4b35f744d2902ad8ff0a9f59183d109f62521da556d0c63'
 SCHEME_SHA = '709a6ffc8a0c6c700ff4132993a2058363ac028f0dca21ae23eef0fa26f95831'
 DIRECTIVE = re.compile(r'rogha|roghna|Freagair|Luaigh|Ainmnigh|\bnó\b|dhá phointe|dhá rud|dhá bh|dhá dh|dhá ch|dhá fh|dhá th|dhá ph|dhá sh|'
-                       r'\ban dá\b|ceann amháin|pointe amháin|amháin', re.I)
+                       r'\ban dá\b|ceann amháin|pointe amháin|amháin|\bdhá\b', re.I)
 SOURCE_NOTE = 'Shown page-for-page from the official examination paper; swipe to move between pages.'
 ATTRIBUTION = '© State Examinations Commission.'
 # The scheme's text layer splits one printed word (“ceann”, visually checked on PDF 23).

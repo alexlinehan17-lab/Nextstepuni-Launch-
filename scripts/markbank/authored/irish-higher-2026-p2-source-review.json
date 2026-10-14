@@ -154,6 +154,11 @@
       "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
     },
     {
+      "page": 4,
+      "raw": "agus, idir an dá linn, rinne sí céim san Eolaíocht",
+      "decision": "Source-text wording inside a reading passage or poem, not a candidate instruction."
+    },
+    {
       "page": 5,
       "raw": "(b) (i) Cén fáth a ndeachaigh Treasa isteach i Siúracha na Carthanachta nuair a roghnaigh sí",
       "decision": "One required answer; the accepted list is the key for one task."
@@ -412,6 +417,11 @@
       "page": 12,
       "raw": "Freagair do rogha ceann amháin as Ceist 4 (A, B, C, D, E nó F) thíos.",
       "decision": "Closed choose-one of 4A–4F: six whole 40-mark routes."
+    },
+    {
+      "page": 12,
+      "raw": "Déan plé ar an dá thréith is mó, dar leat, a bhaineann le Maidhc Dainín mar a léirítear iad",
+      "decision": "4B asks for the two main traits: required content of one essay, not a pool."
     },
     {
       "page": 12,

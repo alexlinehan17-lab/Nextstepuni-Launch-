@@ -26,6 +26,11 @@ SRC='Source-text wording inside a reading passage or poem, not a candidate instr
 TWO='Two required answers inside one printed part. Where the scheme prices them 1 mharc + 1 mharc, each answer is also a one-mark practice slot; where it prices 2 mharc + 1 mharc (order-dependent) the part stays whole at 0/2/3.'
 ONE='One required answer; the accepted list is the key for one task.'
 dec={
+ 'go bhfuil an dá albam bheo dá chuid, Live in':SRC,
+ 'mbliana is dhá scór. Tríocha bliain i ndiaidh':SRC,
+ 'an dá chluiche sin agus mar sin, tá sé beartaithe':SRC,
+ '(b) (i) Tabhair dhá shampla a léiríonn go bhfuil an bhearna rannpháirtíochta idir na hinscní':TWO,
+ '(b) (i) Tabhair dhá shampla de ghníomhaíochtaí coirp a dhéanann daoine mar chaitheamh':TWO,
  'Freagair gach ceist (Ceist 1, Ceist 2, Ceist 3 agus Ceist 4).':'Required answers; no finite task menu.',
  'Freagair Léamhthuiscint A (50 marc) agus Léamhthuiscint B (50 marc).':BOTH,
  'Tá Ceist 1 ‐ 5 ar aon mharc. Glacfar le freagraí i d’fhocail féin nó':'Equal 7-mark questions 1–5; answer-language rule, not a selection.',

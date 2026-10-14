@@ -77,6 +77,11 @@
       },
       {
         "page": 3,
+        "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+        "decision": "Required listening section structure."
+      },
+      {
+        "page": 3,
         "raw": "2. Scríobh síos dhá cháilíocht atá riachtanach don phost mar oibrí barista.",
         "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
       },
@@ -89,6 +94,11 @@
         "page": 4,
         "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
         "decision": "Required answers; no finite task menu."
+      },
+      {
+        "page": 4,
+        "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
+        "decision": "Required listening section structure."
       },
       {
         "page": 4,
@@ -109,6 +119,11 @@
         "page": 5,
         "raw": "2. Scríobh síos dhá chúis nár éirigh le Sinéad duais a bhuachan i gcraobhchomórtas",
         "decision": "Two required points; the scheme’s list of accepted points is the answer key for one task, not a pool of task routes."
+      },
+      {
+        "page": 6,
+        "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos",
+        "decision": "Required listening section structure."
       },
       {
         "page": 6,

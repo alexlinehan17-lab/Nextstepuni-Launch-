@@ -57,6 +57,11 @@
       "decision": "Pen colour instruction, not an answer route."
     },
     {
+      "page": 2,
+      "raw": "Tá dhá chuid sa scrúdú seo.",
+      "decision": "Paper structure statement: both parts required."
+    },
+    {
       "page": 3,
       "raw": "Freagair gach cuid – A, B, C – sa fhreagarleabhar seo.",
       "decision": "Required answers; no finite task menu."
@@ -65,6 +70,11 @@
       "page": 3,
       "raw": "Caithfidh do chuid freagraí uile sa triail seo a bheith i nGaeilge, ach amháin nuair nach gá sin.",
       "decision": "Required answers; no finite task menu."
+    },
+    {
+      "page": 3,
+      "raw": "Cloisfidh tú dhá fhógra sa chuid seo. Cloisfidh tú gach fógra díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
     },
     {
       "page": 3,
@@ -78,6 +88,16 @@
     },
     {
       "page": 4,
+      "raw": "Cloisfidh tú dhá chomhrá sa chuid seo. Cloisfidh tú gach comhrá díobh faoi dhó. Cloisfidh tú",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
+      "raw": "an comhrá ó thosach deireadh an chéad uair. Ansin cloisfidh tú ina dhá mhír é. Beidh sos ann",
+      "decision": "Required listening section structure."
+    },
+    {
+      "page": 4,
       "raw": "1. Scríobh síos áit amháin inar cuireadh lóistín ar fáil do dhaoine a theith ó dhainséar.",
       "decision": "One required answer; the accepted list is the answer key for one task."
     },
@@ -85,6 +105,11 @@
       "page": 4,
       "raw": "2. Luaigh cineál amháin aimsire a tharlaíonn níos minice sa tír seo anois.",
       "decision": "One required answer; the accepted list is the answer key for one task."
+    },
+    {
+      "page": 5,
+      "raw": "Cloisfidh tú dhá phíosa nuachta sa chuid seo. Cloisfidh tú gach píosa díobh faoi dhó. Beidh sos ann",
+      "decision": "Required listening section structure."
     },
     {
       "page": 6,
