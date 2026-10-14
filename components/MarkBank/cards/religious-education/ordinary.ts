@@ -1416,7 +1416,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Christianity – established at a time when Palestine was ruled by the Romans who held polytheistic beliefs; some first Christian communities were established in places associated with polytheistic practices i.e. Thessalonica, etc.", marks: null, contextNote: "An excellent answer will show knowledge of the concepts of monotheism and polytheism by looking closely at how belief in many gods played a part in the formation of two monotheistic religions listed in the question e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Islam – Muhammad established belief in one God Allah at a time when people in Mecca were worshipping many gods i.e. false idols at the Kaaba, etc.", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Judaism – Abraham established a Covenant with Yahweh/YHWH committng the Jewish people to belief in only one God at a time when belief in many gods was evident i.e. Baal worship, etc.", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Judaism – Abraham established a Covenant with Yahweh/YHWH committing the Jewish people to belief in only one God at a time when belief in many gods was evident i.e. Baal worship, etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -1630,7 +1630,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Founders & Reformers of Religious Orders e.g. Nano Nagle was outraged by the treatment of the poor in Ireland and her life was dedicated to helping the poor of her time through education and founding a religious order, etc.", marks: null, contextNote: "An excellent answer will show knowledge of the contribution of women to the development of religious traditions by setting out accurate information on the key insights/actions of one woman from a category listed in the question e.g." },
     { id: "r-2", kind: "point", verbatim: "Religious Writers e.g. Teresa of Avila’s insight into the benefits of silent prayer helped her to develop contemplation as a form of prayer which she outlined in her religious writings - The Book of Life, The Interior Castle and The Way of Perfection, etc.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Social Reformers e.g. Dorothy Day devoted her life to the poor, the oppressed and to women in need by settng up homes where she lived in solidarity with them, etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Social Reformers e.g. Dorothy Day devoted her life to the poor, the oppressed and to women in need by setting up homes where she lived in solidarity with them, etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Spiritual Thinkers e.g. Hildegard of Bingen corresponded with bishops, popes and kings and spoke openly against corruption, etc.", marks: null },
     ],
   } as SecCard,
@@ -1842,7 +1842,7 @@ export const CARDS: SecCard[] = [
     questionText: "Imagine Socrates was alive and accepted an invitation to talk to your class about finding the true meaning of life. Outline one idea from his philosophical thinking that Socrates might talk about to help people searching for the meaning of life.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Socrates ‘ignorant questioner’ idea would help people to have clarity in their search through questioning what others may tell them until they arrive at the truth etc.", marks: null, contextNote: "An excellent answer will show knowledge of philosophical thought in ancient Greece by settng out accurate information on how one idea put forward by Socrates could help people searching for the meaning of life e.g. Note: Allow implicit reference to the search for meaning.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Socrates ‘ignorant questioner’ idea would help people to have clarity in their search through questioning what others may tell them until they arrive at the truth etc.", marks: null, contextNote: "An excellent answer will show knowledge of philosophical thought in ancient Greece by setting out accurate information on how one idea put forward by Socrates could help people searching for the meaning of life e.g. Note: Allow implicit reference to the search for meaning.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Socrates’ concept of moral good could inspire people to find meaning in seeking to live virtuous lives etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1856,7 +1856,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain how one myth from ancient times that you have studied attempts to answer a question about the meaning of life.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Babylonian ‘Epic of Gilgamesh’ – questions the mystery of death, what humankind has done to deserve death etc.", marks: null, contextNote: "An excellent answer will show knowledge of the search for meaning in ancient times by giving an accurate account of the way in which one ancient myth, associated with the lives of people long past, atempted to answer a question about the meaning of life e.g. Note: Allow implicit reference to a question about the meaning of life.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "The Babylonian ‘Epic of Gilgamesh’ – questions the mystery of death, what humankind has done to deserve death etc.", marks: null, contextNote: "An excellent answer will show knowledge of the search for meaning in ancient times by giving an accurate account of the way in which one ancient myth, associated with the lives of people long past, attempted to answer a question about the meaning of life e.g. Note: Allow implicit reference to a question about the meaning of life.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The myth of Pandora - questions how evil came into the world i.e. human weakness etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1870,7 +1870,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two examples which show that people today have an interest in spirituality.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Atendance at formal worship, prayer, religious ceremonies e.g. participation in a sacrament etc.", marks: null, contextNote: "An excellent answer will show an understanding of spirituality in contemporary society by giving an accurate account of two examples that show people today have an interest in the spiritual/transcendent e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Attendance at formal worship, prayer, religious ceremonies e.g. participation in a sacrament etc.", marks: null, contextNote: "An excellent answer will show an understanding of spirituality in contemporary society by giving an accurate account of two examples that show people today have an interest in the spiritual/transcendent e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Large numbers undertake a spiritual journey/pilgrimage e.g. Camino; Croagh Patrick on Reek Sunday etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1884,7 +1884,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one difference between the response of agnosticism and the response of atheism to a question about the existence of God.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Difference - what people view as truth/fact: Atheism - the belief that God does not exist; agnosticism – the belief that the existence or nature of God is unknown and probably unknowable etc.", marks: null, contextNote: "An excellent answer will show an understanding of the characteristics of non-religious world views by settng out accurate information on one difference between the response of agnosticism and the response of atheism to a question about the existence of God e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Difference - what people view as truth/fact: Atheism - the belief that God does not exist; agnosticism – the belief that the existence or nature of God is unknown and probably unknowable etc.", marks: null, contextNote: "An excellent answer will show an understanding of the characteristics of non-religious world views by setting out accurate information on one difference between the response of agnosticism and the response of atheism to a question about the existence of God e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Difference in philosophical method: Atheism – philosophical approach based on disbelief; agnosticism – philosophical approach leaning towards scepticism etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1912,7 +1912,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the understanding of God/gods that can be seen in one ancient myth that you have studied.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The myth of Prometheus – polytheism: there are different gods who have dominion over different aspects of life; the gods have human-like characteristics etc.", marks: null, contextNote: "An excellent answer will show knowledge of concepts of God by settng out accurate information on the understanding of God/gods that can be found in one ancient myth e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "The myth of Prometheus – polytheism: there are different gods who have dominion over different aspects of life; the gods have human-like characteristics etc.", marks: null, contextNote: "An excellent answer will show knowledge of concepts of God by setting out accurate information on the understanding of God/gods that can be found in one ancient myth e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The myth of Thor – the Gods have powers beyond human ability e.g. superior strength etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1955,9 +1955,9 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the evidence for the existence of Jesus of Nazareth presented in the writings of two of the following: • Josephus • Pliny the Younger • Saint Paul • Tacitus",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Josephus – Jewish historian refers to Jesus as ‘… a wise man, a doer of wonderful works, a teacher…’ etc.", marks: null, contextNote: "An excellent answer will show knowledge of Jesus as a historical figure by settng out accurate information on how two sources listed in the question provide evidence for the existence of Jesus of Nazareth e.g." },
-    { id: "r-2", kind: "point", verbatim: "Pliny the Younger – Roman governor who wrote a leter to Emperor Trajan in 112 CE where he describes Christian practices and beliefs, e.g. worshipped Christ as a god, sang hymns to him and adhered to a moral code etc.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Saint Paul –In his leters to the first Christian communities he outlines the meaning of Jesus’ life, death and resurrection and the way of life that Christians should follow etc.", marks: null },
+    { id: "r-1", kind: "point", verbatim: "Josephus – Jewish historian refers to Jesus as ‘… a wise man, a doer of wonderful works, a teacher…’ etc.", marks: null, contextNote: "An excellent answer will show knowledge of Jesus as a historical figure by setting out accurate information on how two sources listed in the question provide evidence for the existence of Jesus of Nazareth e.g." },
+    { id: "r-2", kind: "point", verbatim: "Pliny the Younger – Roman governor who wrote a letter to Emperor Trajan in 112 CE where he describes Christian practices and beliefs, e.g. worshipped Christ as a god, sang hymns to him and adhered to a moral code etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Saint Paul –In his letters to the first Christian communities he outlines the meaning of Jesus’ life, death and resurrection and the way of life that Christians should follow etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Tacitus –mentions Emperor Nero blaming Christians for Great Fire of Rome in 64 CE. He refers to Jesus as ‘Christus’ and refers to his execution by Pontius Pilate during reign of Tiberius etc.", marks: null },
     ],
   } as SecCard,
@@ -1971,7 +1971,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe one example of Jesus’ teaching about the kingdom of God that upset some of the Jewish religious leaders of his time.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In Mathew 6:1-18, Jesus’ spoke of the three pillars of Jewish morality – giving alms, praying, and fasting. He said these things should be done in secret, not so that they may be seen and praised by others, as is the case with the hypocrites etc.", marks: null, contextNote: "An excellent answer will show knowledge of the religious context in Palestine at the time of Jesus by giving an accurate account of one example of Jesus’ teaching about the Kingdom of God that upset the Jewish religious leaders of his time e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "In Matthew 6:1-18, Jesus’ spoke of the three pillars of Jewish morality – giving alms, praying, and fasting. He said these things should be done in secret, not so that they may be seen and praised by others, as is the case with the hypocrites etc.", marks: null, contextNote: "An excellent answer will show knowledge of the religious context in Palestine at the time of Jesus by giving an accurate account of one example of Jesus’ teaching about the Kingdom of God that upset the Jewish religious leaders of his time e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "In the parable of the Good Samaritan, Jesus told his audience that a priest and a Levite ignored a stricken traveller etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -1985,8 +1985,8 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why the Jewish religious leaders were upset by Jesus’ teaching on the kingdom of God.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 20,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Jesus’ teaching in Mathew 6:1-18, the pillars of morality should be done in secret and not to gain atention, could have made the Jewish religious leaders believe this was an insult directed at them etc.", marks: null, contextNote: "An excellent answer will show knowledge of the religious context in Palestine at the time of Jesus by giving an accurate account of reasons why Jesus’ teaching about the Kingdom of God upset the Jewish religious leaders e.g.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "Jesus’ teaching in the parable of the Good Samaritan could be perceived as an atack on the character of the Jewish religious leaders etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Jesus’ teaching in Matthew 6:1-18, the pillars of morality should be done in secret and not to gain attention, could have made the Jewish religious leaders believe this was an insult directed at them etc.", marks: null, contextNote: "An excellent answer will show knowledge of the religious context in Palestine at the time of Jesus by giving an accurate account of reasons why Jesus’ teaching about the Kingdom of God upset the Jewish religious leaders e.g.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Jesus’ teaching in the parable of the Good Samaritan could be perceived as an attack on the character of the Jewish religious leaders etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2015,7 +2015,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the way in which a key moment in life is marked in a religious rite by members of one of the following religions: • Buddhism • Christianity • Hinduism • Islam • Judaism",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hinduism – birth ceremony, chanting the sacred ‘AUM’ sound etc.", marks: null, contextNote: "An excellent answer will show knowledge of the main features of major world religions by settng out accurate information on how a key moment in life is marked in a religious rite by members of one religion listed in the question e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Hinduism – birth ceremony, chanting the sacred ‘AUM’ sound etc.", marks: null, contextNote: "An excellent answer will show knowledge of the main features of major world religions by setting out accurate information on how a key moment in life is marked in a religious rite by members of one religion listed in the question e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The moment of birth is marked by the Aqiqah ceremony in Islam, whispering the Shahadah into the child’s ear etc.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Baptism in Christianity, pouring water over the child’s head to cleanse them of sin; lighting a candle to signify their new life as a Christian etc.", marks: null, openList: true },
     ],
@@ -2072,7 +2072,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline the understanding of sin and reconciliation found in one Christian denomination you have studied.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "In Roman Catholicism sin is understood as an action, word or desire against God’s law, separating humans from God and others. Reconciliation is a sacrament where Catholics seek forgiveness for their sins and restoration of their relationship with God and the Church etc.", marks: null, contextNote: "An excellent answer will show knowledge of the ethical system of one religious tradition by settng out accurate information on how sin and reconciliation are understood in one Christian denomination e.g. Note: Allow implicit reference to a Christian denomination.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "In Roman Catholicism sin is understood as an action, word or desire against God’s law, separating humans from God and others. Reconciliation is a sacrament where Catholics seek forgiveness for their sins and restoration of their relationship with God and the Church etc.", marks: null, contextNote: "An excellent answer will show knowledge of the ethical system of one religious tradition by setting out accurate information on how sin and reconciliation are understood in one Christian denomination e.g. Note: Allow implicit reference to a Christian denomination.", openList: true },
     { id: "r-2", kind: "point", verbatim: "In the Anglican community sin occurs when people fail to live according to God’s wishes; reconciliation requires not only repentance but a change of heart etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -2104,7 +2104,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the main strength and weakness of the approach to justice that you described in part F (a), (i) above.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Justice as Fair Play: Strength - everyone has a sense of fair play where their needs and feelings mater and that this is the same for everyone else; Weakness - a sense of what is fair play can be subjective; it can be more difficult to take account of circumstances etc.", marks: null, contextNote: "An excellent answer will show an awareness of perspectives on justice by giving an accurate account of the main strength and weakness of the understanding of justice that was described in part F (a), (i) above e.g." },
+    { id: "r-1", kind: "point", verbatim: "Justice as Fair Play: Strength - everyone has a sense of fair play where their needs and feelings matter and that this is the same for everyone else; Weakness - a sense of what is fair play can be subjective; it can be more difficult to take account of circumstances etc.", marks: null, contextNote: "An excellent answer will show an awareness of perspectives on justice by giving an accurate account of the main strength and weakness of the understanding of justice that was described in part F (a), (i) above e.g." },
     { id: "r-2", kind: "point", verbatim: "Justice as Retribution: Strength - the experience of injustice is acknowledged and understood, punishment can also have a deterrent effect; Weakness - this approach may not give as much importance to mercy and compassion, nor to rehabilitation etc.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Justice as Right Relationship: Strength - recognises the responsibilities people have towards each other; Weakness - people may differ on what constitutes a ‘right’ relationship, leading to disputes regarding rights and responsibilities etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Justice as the Upholding Human Rights: Strength - based on equality, the idea that everyone has the same rights, regardless of differences; Weakness - can emphasise entitlements whilst individual responsibilities can be overlooked etc.", marks: null },
@@ -2120,7 +2120,7 @@ export const CARDS: SecCard[] = [
     questionText: "'Structural violence happens when the laws and/or systems of a society are unfair and do harm to people.' Outline one example of structural violence that you have studied.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "World Hunger: Political structures can shape the decision-making process of a nation or group; government policy determines the way in which resources are distributed etc.", marks: null, contextNote: "An excellent answer will show knowledge of different forms of violence by settng out accurate information on one instance where the laws and/or systems of a society cause harm to people e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "World Hunger: Political structures can shape the decision-making process of a nation or group; government policy determines the way in which resources are distributed etc.", marks: null, contextNote: "An excellent answer will show knowledge of different forms of violence by setting out accurate information on one instance where the laws and/or systems of a society cause harm to people e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Poverty: Social structures can limit the contact people have with those whose circumstances are different to their own. People may not be aware of the need for action on poverty etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -2148,9 +2148,9 @@ export const CARDS: SecCard[] = [
     questionText: "Outline how one of the following contemplative traditions has changed over time. • Hermitage • Pilgrimage • Poustinia • Retreat",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Hermitage – was a permanent way of living out faith often associated with members of religious communities; now, lay people often choose solitude and quiet away from modern life for short periods of time etc.", marks: null, contextNote: "An excellent answer will show a knowledge of contemplative traditions by settng out accurate information on the way in which one contemplative tradition listed in the question has changed over time e.g." },
+    { id: "r-1", kind: "point", verbatim: "Hermitage – was a permanent way of living out faith often associated with members of religious communities; now, lay people often choose solitude and quiet away from modern life for short periods of time etc.", marks: null, contextNote: "An excellent answer will show a knowledge of contemplative traditions by setting out accurate information on the way in which one contemplative tradition listed in the question has changed over time e.g." },
     { id: "r-2", kind: "point", verbatim: "Pilgrimage – has developed from being a long and arduous journey that was often penitential in origin, to a popular activity to facilitate personal and spiritual development e.g. the Camino etc", marks: null },
-    { id: "r-3", kind: "point", verbatim: "Poustinia – the practice arose of moving to the desert to lead a contemplative life, living alone and separated from all distractions; a place to seek God and to open one’s heart to God; Catherine de Hueck Doherty developed the tradition in a modern settng by providing simple accommodation for people etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Poustinia – the practice arose of moving to the desert to lead a contemplative life, living alone and separated from all distractions; a place to seek God and to open one’s heart to God; Catherine de Hueck Doherty developed the tradition in a modern setting by providing simple accommodation for people etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Retreat – in the past retreat was linked to repentance and renewal; now it can be seen as providing time for reflection and rest to help people recharge, develop their faith etc.", marks: null },
     ],
   } as SecCard,
@@ -2197,7 +2197,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain why the act of worship, marking a day or season as sacred that you have described in part G (b), (i) above, is important for people who are living by their faith today.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Buddhism – festivals such as Vesak, celebrating the birth, enlightenment and death of Buddha, helps to refocus atention on the centrality of seeking enlightenment etc.", marks: null, contextNote: "An excellent answer will show an understanding of sacredness by giving an accurate account of the reason(s) why the act of worship described in part G (b), (i) is important for people of faith today e.g." },
+    { id: "r-1", kind: "point", verbatim: "Buddhism – festivals such as Vesak, celebrating the birth, enlightenment and death of Buddha, helps to refocus attention on the centrality of seeking enlightenment etc.", marks: null, contextNote: "An excellent answer will show an understanding of sacredness by giving an accurate account of the reason(s) why the act of worship described in part G (b), (i) is important for people of faith today e.g." },
     { id: "r-2", kind: "point", verbatim: "Christianity –Easter celebrates the belief that Jesus rose from the dead and is the path to salvation for Christians, it reminds followers of the key beliefs of Christianity etc.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Hinduism – festivals such as Diwali celebrates the spiritual victory of light over darkness or Holi, the Festival of Colours, celebrating the victory of good over evil etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Islam – festivals such as Eid al-Fitr mark the end of Ramadan and emphasises the goodness of Allah, and the unity of Islam etc.", marks: null },
@@ -2228,7 +2228,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one example of a Pre-Christian practice that was adapted by Christians in Ireland around the time of Saint Patrick.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The Celtic belief that rivers and springs possess supernatural properties was adapted into the Christian symbolism of water – places of pagan ritual became holy wells etc.", marks: null, contextNote: "An excellent answer will show knowledge of Christianity in Ireland by settng out accurate information on one Pre-Christian practice that was adapted by Christians in Ireland around the time of Saint Patrick e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "The Celtic belief that rivers and springs possess supernatural properties was adapted into the Christian symbolism of water – places of pagan ritual became holy wells etc.", marks: null, contextNote: "An excellent answer will show knowledge of Christianity in Ireland by setting out accurate information on one Pre-Christian practice that was adapted by Christians in Ireland around the time of Saint Patrick e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Festivals – pre-Christian festivals such as Samhain repurposed as All Saints’ Day and All Souls’ Day etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -2242,7 +2242,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline one key feature of the pattern of religious practice found in Ireland today.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Decreasing atendance of young people at religious services etc.", marks: null, contextNote: "An excellent answer will show knowledge of paterns of change in religious belief today by settng out acurate information on one key feature of the patern of religious practice found in Ireland today. e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Decreasing attendance of young people at religious services etc.", marks: null, contextNote: "An excellent answer will show knowledge of patterns of change in religious belief today by setting out acurate information on one key feature of the pattern of religious practice found in Ireland today. e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "The percentage rates of practice are higher in more rural areas than in urban areas etc.", marks: null, openList: true },
     ],
   } as SecCard,
@@ -2256,8 +2256,8 @@ export const CARDS: SecCard[] = [
     questionText: "Identify a similarity and a difference between the pattern of religious practice in Ireland today with the pattern of religious practice found elsewhere in Europe today.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Surveys show that in many parts of Europe religion is seen as a private mater e.g. EVS Red C poll, Y2K etc, show the number of active commited Christians has declined, with rural atendances at religious services higher than those in urban areas; however, rates of religious practice are still higher in Ireland than in other parts of Europe etc.", marks: null, contextNote: "An excellent answer will show knowledge of paterns of change in religious belief by accurately identifying a similarity and a difference between the patern of religious practice in Ireland today with the patern of religious practice found elsewhere in Europe today e.g.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "People throughout Europe mark key moments in life with religious rituals; e.g. 60% of initiation rites; 70% of first marriages and 80% of funerals are celebrated in Church; the patern of religious practice in Ireland is similar to other European countries that have been traditionally Roman Catholic e.g. Poland and Malta etc.", marks: null, openList: true },
+    { id: "r-1", kind: "point", verbatim: "Surveys show that in many parts of Europe religion is seen as a private matter e.g. EVS Red C poll, Y2K etc, show the number of active committed Christians has declined, with rural attendances at religious services higher than those in urban areas; however, rates of religious practice are still higher in Ireland than in other parts of Europe etc.", marks: null, contextNote: "An excellent answer will show knowledge of patterns of change in religious belief by accurately identifying a similarity and a difference between the pattern of religious practice in Ireland today with the pattern of religious practice found elsewhere in Europe today e.g.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "People throughout Europe mark key moments in life with religious rituals; e.g. 60% of initiation rites; 70% of first marriages and 80% of funerals are celebrated in Church; the pattern of religious practice in Ireland is similar to other European countries that have been traditionally Roman Catholic e.g. Poland and Malta etc.", marks: null, openList: true },
     ],
   } as SecCard,
   {
@@ -2270,7 +2270,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline a story about the creation of the universe/natural world that is associated with one of the following religions: • Buddhism • Christianity • Hinduism • Islam • Judaism",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Buddhism – no single creation story for the universe or humanity as the universe is undergoing infinite cycles of birth, existence, and destruction etc.", marks: null, contextNote: "An excellent answer will show knowledge of the teaching of major world religions by settng out accurate information on the understanding of creation in one of the religions listed in the question e.g." },
+    { id: "r-1", kind: "point", verbatim: "Buddhism – no single creation story for the universe or humanity as the universe is undergoing infinite cycles of birth, existence, and destruction etc.", marks: null, contextNote: "An excellent answer will show knowledge of the teaching of major world religions by setting out accurate information on the understanding of creation in one of the religions listed in the question e.g." },
     { id: "r-2", kind: "point", verbatim: "Christianity – God created the universe in six days as set out in the book of Genesis etc.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Hinduism – the universe is created many times, through endless cycles of creation, preservation, and destruction, with various gods such as Brahma, Vishnu and Shiva playing a role in this process etc.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Islam – Allah created the universe and everything contained within it as laid out in the Qur’an, humanity began with Allah creating Adam from clay followed by Eve who became the ancestors of all humanity etc.", marks: null },
@@ -2301,7 +2301,7 @@ export const CARDS: SecCard[] = [
     questionText: "Outline how the message in a story about the creation of the universe/natural world from one religion listed below could influence the members of that religion to care for the environment. • Buddhism • Christianity • Hinduism • Islam • Judaism",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 40,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Buddhism – Buddhists are compelled to do what they can to ease suffering and protect the environment etc.", marks: null, contextNote: "An excellent answer will show an understanding of the relationship between religion and science by settng out accurate information on a way that the message in a story about creation in one of the religions listed in the question could influence members to care for the environment e.g.", openList: true },
+    { id: "r-1", kind: "point", verbatim: "Buddhism – Buddhists are compelled to do what they can to ease suffering and protect the environment etc.", marks: null, contextNote: "An excellent answer will show an understanding of the relationship between religion and science by setting out accurate information on a way that the message in a story about creation in one of the religions listed in the question could influence members to care for the environment e.g.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Christianity – Genesis suggests humans are stewards of God’s creation and are entrusted with responsibility for the environment etc.", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "Hinduism – actions that harm the environment disrupt the balance of the universe and affect karma, looking after the universe is seen as maintaining cosmic order and harmony etc.", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Islam – Muslims called to be khalifahs, stewards of the earth. Harming the environment is seen as violating the will of Allah etc.", marks: null, openList: true },

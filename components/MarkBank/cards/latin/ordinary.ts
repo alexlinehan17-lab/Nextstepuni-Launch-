@@ -1255,7 +1255,7 @@ export const CARDS: SecCard[] = [
     { id: "r-12", kind: "point", verbatim: "fell in love with Jason;", marks: null },
     { id: "r-13", kind: "point", verbatim: "was betrayed by him;", marks: null },
     { id: "r-14", kind: "point", verbatim: "in revenge she killed her own children. Sulla: consul twice, war against Jugurtha, Cimbri, reformed constitutional laws;", marks: null },
-    { id: "r-15", kind: "point", verbatim: "Batle of Colline Gate", marks: null },
+    { id: "r-15", kind: "point", verbatim: "Battle of Colline Gate", marks: null },
     ],
   } as SecCard,
   {
@@ -1288,8 +1288,8 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any point referring to Pompey’s powers to complete the task;", marks: null },
     { id: "r-2", kind: "point", verbatim: "the military strategy he employed;", marks: null },
-    { id: "r-3", kind: "point", verbatim: "the batles fought;", marks: null },
-    { id: "r-4", kind: "point", verbatim: "the arrangements made to setle the survivors. Pompey had been a soldier since boyhood;", marks: null },
+    { id: "r-3", kind: "point", verbatim: "the battles fought;", marks: null },
+    { id: "r-4", kind: "point", verbatim: "the arrangements made to settle the survivors. Pompey had been a soldier since boyhood;", marks: null },
     { id: "r-5", kind: "point", verbatim: "he was very experienced;", marks: null },
     { id: "r-6", kind: "point", verbatim: "had tasted success against the pirates;", marks: null },
     { id: "r-7", kind: "point", verbatim: "had courage and integrity;", marks: null },
@@ -1518,8 +1518,8 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "He led legions (from the fortifications)", marks: 4 },
-    { id: "r-2", kind: "point", verbatim: "and drew up a batle line", marks: 3 },
-    { id: "r-3", kind: "point", verbatim: "So that the camp wouldn’t be atacked", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "and drew up a battle line", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "So that the camp wouldn’t be attacked", marks: 3 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1543,7 +1543,7 @@ export const CARDS: SecCard[] = [
     questionText: "How did the cavalry battle then develop?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "The cavalry started the batle and routed all the king’s reinforcements", marks: 7 },
+    { id: "r-1", kind: "point", verbatim: "The cavalry started the battle and routed all the king’s reinforcements", marks: 7 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1764,10 +1764,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "very charming and handsome;", marks: null, openList: true },
     { id: "r-3", kind: "point", verbatim: "made lavish use of resources;", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "completed the Colosseum;", marks: null, openList: true },
-    { id: "r-5", kind: "point", verbatim: "took litle interest in governing;", marks: null, openList: true },
+    { id: "r-5", kind: "point", verbatim: "took little interest in governing;", marks: null, openList: true },
     { id: "r-6", kind: "point", verbatim: "Rome was destroyed by a great fire during his reign;", marks: null, openList: true },
     { id: "r-7", kind: "point", verbatim: "Pompeii was destroyed by the eruption of Mt. Vesuvius;", marks: null, openList: true },
-    { id: "r-8", kind: "point", verbatim: "died at the age of forty-one. Events of 69A.D. Year of Four Emperors—Galba commander of armies in Spain, who proclaimed him Emperor. Legions in Germany with Otho. Galba and Piso killed. Legions on Rhine with Vitellius. Batle near Po, Otho routed. Legions in Syria and Palestine with Vespasian. Mucianus routed forces of Vitellius;", marks: null, openList: true },
+    { id: "r-8", kind: "point", verbatim: "died at the age of forty-one. Events of 69A.D. Year of Four Emperors—Galba commander of armies in Spain, who proclaimed him Emperor. Legions in Germany with Otho. Galba and Piso killed. Legions on Rhine with Vitellius. Battle near Po, Otho routed. Legions in Syria and Palestine with Vespasian. Mucianus routed forces of Vitellius;", marks: null, openList: true },
     { id: "r-9", kind: "point", verbatim: "Vespasian new emperor, etc. Vespasian: Vitellius marched on Rome as the new emperor but the troops in Syria and Palestine, where Vespasian was commander, proclaimed Vespasian as emperor. Mucianus supported him, routed Vitellius and marched on Rome where the senate proclaimed Vespasian as emperor. Main features of Vespasian’s reign: conducted a census of resources, restored finances of the state and cut down on extravagances, restored peace in Palestine, established schools, built baths, began work on the Colosseum. Freedmen of Claudius: He used his freedmen as a civil service", marks: null, openList: true },
     { id: "r-10", kind: "point", verbatim: "Callistus— in charge of petitions", marks: null, openList: true },
     { id: "r-11", kind: "point", verbatim: "Narcissus— chief correspondence", marks: null, openList: true },
@@ -1789,7 +1789,7 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Ovid: Sulmo (43-17A.D)", marks: null, openList: true },
     { id: "r-2", kind: "point", verbatim: "Studied rhetoric and law but dedicated himself to poetry, married three times, banished to Tomi, duo crimina—carmen et error", marks: null, openList: true },
-    { id: "r-3", kind: "point", verbatim: "Amores—49 poems, addressed to Corinna, Heroides— leters addressed by legendary women to absent lovers, Ars Amatoria— 3 books, Metamorphoses— ancient myths/legends, Tristia, etc", marks: null, openList: true },
+    { id: "r-3", kind: "point", verbatim: "Amores—49 poems, addressed to Corinna, Heroides— letters addressed by legendary women to absent lovers, Ars Amatoria— 3 books, Metamorphoses— ancient myths/legends, Tristia, etc", marks: null, openList: true },
     { id: "r-4", kind: "point", verbatim: "Livy: Born in Padua (59B.C. -17A.D).Patronage of Augustus", marks: null, openList: true },
     { id: "r-5", kind: "point", verbatim: "Spent most of his life in Rome", marks: null, openList: true },
     { id: "r-6", kind: "point", verbatim: "Ab Urbe Condita—history of Rome, 142 books, not a scientific historian therefore dates wrong etc, gave life to stories, invented speeches; to restore public morals and pride in the achievements of the past", marks: null, openList: true },
