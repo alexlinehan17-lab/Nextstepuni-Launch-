@@ -15,7 +15,6 @@ import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import type { SessionUser } from '../../utils/authUtils';
 import type { UserSettings } from '../../types';
 import Avatar from '../Avatar';
-import GetPointsButton from '../GetPointsButton';
 import NotificationBell from '../NotificationBell';
 import { toggleNotificationPanel } from '../../utils/notificationPanel';
 import { openShortcutsOverlay } from '../ShortcutsOverlay';
@@ -155,7 +154,6 @@ export default function NextStepUniSidebar(props: Props) {
           </SidebarContent>
         </LayoutGroup>
         <SidebarFooter className="nsu-nav-footer">
-          <div className="nsu-nav-points"><GetPointsButton uid={props.user.uid} expanded={open} icon={<NavigationIcon name="points" />} label="Get points" sound="chirp" /></div>
           <DropdownMenu>
             <DropdownMenuTrigger ref={accountTrigger} className="nsu-nav-account" aria-label="Open account menu" data-coach="help">
               <Avatar seed={props.settings.avatar || props.user.avatar} alt="" className="nsu-nav-avatar" />

@@ -16,7 +16,6 @@ import { NavigationProvider, useNavigation } from '@/contexts/NavigationContext'
 import { createDemoStudentNorthStar, createDemoStudentProfile } from '@/data/devStudent';
 import type { StudentSubjectProfile } from '@/components/subjectData';
 
-vi.mock('@/components/GetPointsButton', () => ({ default: () => null }));
 vi.mock('@/components/NotificationBell', () => ({ default: () => null }));
 
 const TODAY = new Date('2026-10-14T12:00:00');
