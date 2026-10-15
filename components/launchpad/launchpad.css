@@ -1036,6 +1036,18 @@
   flex-direction: column;
   overflow-y: auto;
 }
+/* An open marking scheme takes about half the screen: it reads at panel
+   width, and a 360px panel set the answers at about 7px. */
+.pt-reader-sidebar[data-scheme-open] {
+  width: clamp(520px, 46%, 720px);
+  max-width: none;
+  overflow: hidden;
+}
+/* Phones: the scheme sheet grows with its content up to nearly full height. */
+.pt-reveal-sheet {
+  max-height: calc(100vh - 44px);
+  max-height: calc(100dvh - 44px);
+}
 .pt-reader-sidebar-heading {
   padding: 24px 20px;
   border-bottom: 1px solid var(--outline-soft, #ddd);
