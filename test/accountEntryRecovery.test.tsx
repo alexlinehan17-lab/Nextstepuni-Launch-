@@ -5,10 +5,10 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import LoginPage from '../components/LoginPage';
 
-const { signIn } = vi.hoisted(() => ({ signIn: vi.fn() }));
+const { signIn, report } = vi.hoisted(() => ({ signIn: vi.fn(), report: vi.fn() }));
 vi.mock('firebase/auth', async importOriginal => ({ ...(await importOriginal<typeof FirebaseAuth>()), signInWithEmailAndPassword: signIn }));
 vi.mock('firebase/firestore', async importOriginal => ({ ...(await importOriginal<typeof FirebaseFirestore>()), doc: () => ({}), getDoc: vi.fn(), setDoc: vi.fn() }));
-vi.mock('firebase/functions', () => ({ getFunctions: () => ({}), httpsCallable: () => vi.fn().mockRejectedValue(new Error('not signed in')) }));
+vi.mock('firebase/functions', () => ({ getFunctions: () => ({}), httpsCallable: (_fns: unknown, name: string) => (name === 'reportSignInFailure' ? report : vi.fn().mockRejectedValue(new Error('not signed in'))) }));
 vi.mock('../utils/funnel', () => ({ trackFunnel: vi.fn() }));
 // iPads get the mobile app design, which opens straight on Sign in.
 vi.mock('../hooks/useMobileAppDesign', () => ({ useMobileAppDesign: () => true }));
@@ -18,7 +18,10 @@ beforeEach(() => {
   sessionStorage.clear();
   signIn.mockReset();
   signIn.mockRejectedValue(Object.assign(new Error('bad'), { code: 'auth/invalid-credential' }));
+  report.mockReset();
+  report.mockResolvedValue({ data: { ok: true } });
 });
+const authError = (code: string) => Object.assign(new Error(code), { code });
 
 const startRegistration = async () => {
   render(<LoginPage handleLoginSuccess={vi.fn()} />);
@@ -91,5 +94,52 @@ describe('failed sign-in', () => {
     await failSignIn('new.student@example.com');
     fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'another try here' } });
     expect(screen.queryByText('No account yet?')).not.toBeInTheDocument();
+  });
+});
+
+// Every failure used to read "Invalid email or password." At the Marino
+// workshop (12 Oct 2026) 287 sign-ins failed while 60 accounts were created;
+// a student locked out after a few wrong tries was told the password was
+// wrong, kept trying, and kept the lock on.
+describe('a failed sign-in says why', () => {
+  const tryToSignIn = (email: string) => {
+    render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    fireEvent.change(screen.getByLabelText('Email or username'), { target: { value: email } });
+    fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'correct horse battery' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
+  };
+
+  it('tells a locked-out student to wait, and rests the button instead of letting them extend the lock', async () => {
+    signIn.mockRejectedValue(authError('auth/too-many-requests'));
+    tryToSignIn('aoife@marinocollege.ie');
+    expect(await screen.findByRole('alert')).toHaveTextContent('Too many tries on this account');
+    expect(screen.getByRole('button', { name: /Try again in 60s/ })).toBeDisabled();
+    expect(screen.queryByText('No account yet?')).not.toBeInTheDocument();
+    expect(report).toHaveBeenCalledWith({ kind: 'too-many-requests', input: 'email', platform: 'web' });
+    // A different email is a different account.
+    fireEvent.change(screen.getByLabelText('Email or username'), { target: { value: 'other@marinocollege.ie' } });
+    expect(screen.getByRole('button', { name: 'Sign in' })).toBeEnabled();
+  });
+
+  it('blames the connection, not the password, when Firebase cannot be reached', async () => {
+    signIn.mockRejectedValue(authError('auth/network-request-failed'));
+    tryToSignIn('aoife@marinocollege.ie');
+    expect(await screen.findByRole('alert')).toHaveTextContent('We can’t reach NextStepUni');
+    expect(screen.queryByText(/Invalid email or password/)).not.toBeInTheDocument();
+  });
+
+  it('tries a username once, as its stored address, and reports only the reason', async () => {
+    tryToSignIn('Aoife');
+    expect(await screen.findByRole('alert')).toHaveTextContent('That username and password don’t match.');
+    expect(signIn).toHaveBeenCalledOnce();
+    expect(signIn.mock.calls[0][1]).toBe('aoife@nextstep.app');
+    expect(report).toHaveBeenCalledWith({ kind: 'credentials', input: 'username', platform: 'web' });
+    expect(JSON.stringify(report.mock.calls)).not.toMatch(/aoife|horse/i);
+  });
+
+  it('keeps the wrong-password wording for a wrong password', async () => {
+    tryToSignIn('aoife@marinocollege.ie');
+    expect(await screen.findByRole('alert')).toHaveTextContent('Invalid email or password.');
+    expect(screen.getByText('No account yet?')).toBeInTheDocument();
   });
 });
