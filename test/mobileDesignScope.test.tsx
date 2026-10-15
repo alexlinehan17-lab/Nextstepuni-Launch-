@@ -56,10 +56,10 @@ describe('mobile/tablet-only design boundary', () => {
     expect(login).toBeInTheDocument();
     expect(container.querySelector('.auth-live')).not.toBeNull();
     expect(screen.queryByText('Welcome to NextStepUni')).toBeNull();
-    expect(screen.queryByRole('textbox', { name: 'Email' })).toBeNull();
+    expect(screen.queryByRole('textbox', { name: /^Email/ })).toBeNull();
     fireEvent.click(login);
     expect(await screen.findByRole('heading', { name: 'Good to see you.', level: 1 })).toBeInTheDocument();
-    expect(screen.getByLabelText('Email')).toHaveAttribute('autocomplete', 'username');
+    expect(screen.getByLabelText('Email or username')).toHaveAttribute('autocomplete', 'username');
     expect(screen.getByRole('button', { name: 'Forgot password?' })).toBeInTheDocument();
   });
   it('mounts the approved desktop onboarding and saves its shared draft', () => {
