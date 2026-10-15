@@ -14,33 +14,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import type { PDFDocumentProxy } from 'pdfjs-dist';
 import { type PaperAnswerSeg } from '../../types/paperTrail';
-import { inkBounds, inkRows, TRIM_MARGIN_PT } from './cropTrim';
+import { rotatedCropRect, trimRegion, type TrimRun } from './trimRegion';
 
 // Same clamp the Viewer uses for full pages — keeps low-memory devices safe.
 const MAX_CANVAS_PIXELS = 14_000_000;
+/** Largest on-screen scale for a trimmed crop at 100%: 12pt type at about 21px. */
+const MAX_TRIM_SCALE = 1.75;
 
-/** Keep the same source rectangle when turning a sideways table upright. */
-export function rotatedCropRect(r: [number, number, number, number], rotate: PaperAnswerSeg['rotate']): [number, number, number, number] {
-  const [x0, y0, x1, y1] = r;
-  switch (rotate) {
-    case 90: return [1 - y1, x0, 1 - y0, x1];
-    case 180: return [1 - x1, 1 - y1, 1 - x0, 1 - y0];
-    case 270: return [y0, 1 - x1, y1, 1 - x0];
-    default: return r;
-  }
-}
-
-type Rect = [number, number, number, number];
-
-/** Trimmed rects per document, keyed by segment, so a zoom step or a panel
- *  resize never re-scans the page. null marks a blank segment. */
-const trimCache = new WeakMap<PDFDocumentProxy, Map<string, Rect | null>>();
-/** Width of the low-resolution render the ink scan reads. */
-const PROBE_WIDTH = 600;
-/** Ink shorter than this is checked for words before it is shown. */
-const SLIVER_PT = 20;
-
-const clamp = (v: number, lo: number, hi: number) => Math.min(Math.max(v, lo), hi);
+export { rotatedCropRect } from './trimRegion';
 
 const CropView: React.FC<{
   pdf: PDFDocumentProxy;
@@ -101,100 +82,9 @@ const CropView: React.FC<{
 
     const pageRotationOf = (page: { rotate?: number }, seg: PaperAnswerSeg) =>
       ((page.rotate ?? 0) + rotation + (seg.rotate ?? 0)) % 360;
-
-    // The printed ink inside one segment, as a rect in the same (rotated)
-    // page fractions the renderer clips by.
-    const probe = async (seg: PaperAnswerSeg): Promise<Rect | null | undefined> => {
-      const r = rotatedCropRect(seg.r ?? [0, 0, 1, 1], seg.rotate);
-      const key = `${seg.p}|${r.join(',')}|${seg.rotate ?? 0}|${rotation}`;
-      let cache = trimCache.get(pdf);
-      if (!cache) trimCache.set(pdf, (cache = new Map()));
-      if (cache.has(key)) return cache.get(key);
-      const page = await pdf.getPage(seg.p);
-      if (cancelled) {
-        page.cleanup();
-        return undefined;
-      }
-      const pageRotation = pageRotationOf(page, seg);
-      const base = page.getViewport({ scale: 1, rotation: pageRotation });
-      const clipW = (r[2] - r[0]) * base.width;
-      const clipH = (r[3] - r[1]) * base.height;
-      if (clipW <= 0 || clipH <= 0) {
-        page.cleanup();
-        return null;
-      }
-      const scale = PROBE_WIDTH / clipW;
-      const canvas = document.createElement('canvas');
-      const W = PROBE_WIDTH;
-      const H = Math.max(1, Math.round(clipH * scale));
-      canvas.width = W;
-      canvas.height = H;
-      const ctx = canvas.getContext('2d', { willReadFrequently: true });
-      if (!ctx) {
-        page.cleanup();
-        return r; // no pixels to read: show the segment untrimmed
-      }
-      ctx.fillStyle = '#fff';
-      ctx.fillRect(0, 0, W, H);
-      const vp = page.getViewport({ scale, rotation: pageRotation });
-      task = page.render({ canvas, viewport: vp, transform: [1, 0, 0, 1, -r[0] * base.width * scale, -r[1] * base.height * scale] });
-      await task.promise;
-      task = null;
-      if (cancelled) {
-        page.cleanup();
-        return undefined;
-      }
-      const box = inkBounds(inkRows(ctx.getImageData(0, 0, W, H).data, W, H), {
-        pxPerPt: scale,
-        topPt: r[1] * base.height,
-        pageHeightPt: base.height,
-      });
-      canvas.width = 0;
-      canvas.height = 0;
-      const m = TRIM_MARGIN_PT * scale;
-      const fx = (px: number) => r[0] + (clamp(px, 0, W) / W) * (r[2] - r[0]);
-      const fy = (px: number) => r[1] + (clamp(px, 0, H) / H) * (r[3] - r[1]);
-      let out: Rect | null = box ? [fx(box.x0 - m), fy(box.y0 - m), fx(box.x1 + 1 + m), fy(box.y1 + 1 + m)] : null;
-      // A short strip with no words in it is the edge of a neighbouring table
-      // where the region crosses a page, not part of the answer.
-      if (out && box && (box.y1 - box.y0) / scale < SLIVER_PT) {
-        const words = await page.getTextContent().catch(() => null);
-        if (cancelled) {
-          page.cleanup();
-          return undefined;
-        }
-        const [a, b, c, d] = out;
-        // A word counts only when its baseline sits inside the shown strip;
-        // the next question's heading starts just below the region.
-        const bottom = Math.min(d, r[3]) + 2 / base.height;
-        const inside = words?.items.some(item => {
-          if (!('str' in item) || !item.str.trim()) return false;
-          const [vx, vy] = base.convertToViewportPoint(item.transform[4], item.transform[5]);
-          const fxv = vx / base.width;
-          const fyv = vy / base.height;
-          return fxv >= a && fxv <= c && fyv >= b && fyv <= bottom;
-        });
-        if (words && !inside) out = null;
-      }
-      page.cleanup();
-      cache.set(key, out);
-      return out;
-    };
-
-    const pieces = async (): Promise<{ seg: PaperAnswerSeg; rect: Rect }[] | null> => {
-      const plain = region.map(seg => ({ seg, rect: rotatedCropRect(seg.r ?? [0, 0, 1, 1], seg.rotate) }));
-      if (!trim) return plain;
-      const found: { seg: PaperAnswerSeg; rect: Rect; ink: Rect }[] = [];
-      for (const { seg, rect } of plain) {
-        const ink = await probe(seg);
-        if (ink === undefined) return null; // cancelled
-        if (ink) found.push({ seg, rect, ink });
-      }
-      if (!found.length) return plain;
-      const x0 = Math.min(...found.map(f => f.ink[0]));
-      const x1 = Math.max(...found.map(f => f.ink[2]));
-      return found.map(({ seg, rect, ink }) => ({ seg, rect: [Math.max(x0, rect[0]), ink[1], Math.min(x1, rect[2]), ink[3]] }));
-    };
+    const run: TrimRun = { cancelled: false, task: null };
+    const pieces = async () =>
+      trim ? trimRegion(pdf, region, rotation, run) : region.map(seg => ({ seg, rect: rotatedCropRect(seg.r ?? [0, 0, 1, 1], seg.rotate) }));
 
     (async () => {
       try {
@@ -219,7 +109,9 @@ const CropView: React.FC<{
             page.cleanup();
             continue;
           }
-          let scale = (cssWidth / clipW) * dpr;
+          // A trimmed crop with a narrow printed area would otherwise fill the
+          // panel at an outsized scale; past 1.75x print it stops growing.
+          let scale = Math.min(cssWidth / clipW, trim ? MAX_TRIM_SCALE * zoom : Infinity) * dpr;
           const pixels = clipW * scale * (clipH * scale);
           if (pixels > MAX_CANVAS_PIXELS) scale *= Math.sqrt(MAX_CANVAS_PIXELS / pixels);
           const vp = page.getViewport({ scale, rotation: pageRotation });
@@ -252,7 +144,8 @@ const CropView: React.FC<{
         }
         if (buffered && !cancelled) {
           host.style.maxWidth = zoom > 1 ? 'none' : `${maxWidth}px`;
-          host.style.width = zoom > 1 ? `${cssWidth}px` : '';
+          // As wide as the widest canvas, so a capped crop leaves no empty scroll.
+          host.style.width = zoom > 1 ? `${Math.max(...out.map(c => parseFloat(c.style.maxWidth) || 0), 0)}px` : '';
           host.replaceChildren(...out);
         }
       } catch (e) {
@@ -262,7 +155,9 @@ const CropView: React.FC<{
     })();
     return () => {
       cancelled = true;
+      run.cancelled = true;
       task?.cancel();
+      run.task?.cancel();
     };
   }, [pdf, region, ariaLabel, rotation, maxWidth, trim, zoom, responsive, width]);
 

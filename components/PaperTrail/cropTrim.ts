@@ -20,6 +20,15 @@ export interface InkGeometry {
   pageHeightPt: number;
 }
 
+/** A run of inked rows set apart from its neighbours by a wide blank gap. */
+export interface InkCluster {
+  y0: number;
+  y1: number;
+  /** Shaped like a running header or footer: short, at the page edge, set
+   *  apart. Only words decide whether it is one — see isRunningText. */
+  edge: 'header' | 'footer' | null;
+}
+
 /** A blank gap this tall separates the answer from a running header/footer. */
 const BAND_GAP_PT = 30;
 /** Rules thinner than this, set apart at either end, belong to a neighbour's table. */
@@ -45,24 +54,34 @@ function runs(rows: InkRow[], from: number, to: number, gap: number): Run[] {
   return out;
 }
 
-/**
- * The inked box worth showing, in probe pixels, or null when the band is
- * blank. Drops a page footer (short, in the bottom tenth, set apart by a wide
- * gap), a page header (the same at the top), and a lone rule at either end
- * (the next question's table border).
- */
-export function inkBounds(rows: InkRow[], g: InkGeometry): { x0: number; y0: number; x1: number; y1: number } | null {
+/** The inked clusters of a band, with the ones shaped like a page header or
+ *  footer marked. */
+export function inkClusters(rows: InkRow[], g: InkGeometry): InkCluster[] {
   const pt = (px: number) => px / g.pxPerPt;
-  const clusters = runs(rows, 0, rows.length - 1, BAND_GAP_PT * g.pxPerPt).filter(([a, b]) => {
-    const top = g.topPt + pt(a);
-    const bottom = g.topPt + pt(b);
-    const height = pt(b - a);
-    const footer = top > g.pageHeightPt * 0.9 && height < g.pageHeightPt * 0.07;
-    const header = bottom < g.pageHeightPt * 0.06 && height < g.pageHeightPt * 0.05;
-    return !footer && !header;
+  return runs(rows, 0, rows.length - 1, BAND_GAP_PT * g.pxPerPt).map(([y0, y1]) => {
+    const top = g.topPt + pt(y0);
+    const bottom = g.topPt + pt(y1);
+    const height = pt(y1 - y0);
+    const edge = top > g.pageHeightPt * 0.9 && height < g.pageHeightPt * 0.07
+      ? 'footer'
+      : bottom < g.pageHeightPt * 0.06 && height < g.pageHeightPt * 0.05
+        ? 'header'
+        : null;
+    return { y0, y1, edge };
   });
-  if (!clusters.length) return null;
-  const lines = runs(rows, clusters[0][0], clusters[clusters.length - 1][1], 2);
+}
+
+/**
+ * The inked box spanning the kept clusters, in probe pixels, or null when
+ * nothing is kept. A lone rule at either end (the next question's table
+ * border) is peeled off.
+ */
+export function inkBox(rows: InkRow[], g: InkGeometry, kept: InkCluster[]): { x0: number; y0: number; x1: number; y1: number } | null {
+  if (!kept.length) return null;
+  const pt = (px: number) => px / g.pxPerPt;
+  const lines = runs(rows, kept[0].y0, kept[kept.length - 1].y1, 2)
+    .filter(([a, b]) => kept.some(c => a >= c.y0 && b <= c.y1));
+  if (!lines.length) return null;
   const thin = (r: Run) => pt(r[1] - r[0]) < THIN_RULE_PT;
   while (lines.length > 1 && thin(lines[lines.length - 1]) && pt(lines[lines.length - 1][0] - lines[lines.length - 2][1]) > RULE_GAP_PT) lines.pop();
   while (lines.length > 1 && thin(lines[0]) && pt(lines[1][0] - lines[0][1]) > RULE_GAP_PT) lines.shift();
@@ -70,13 +89,43 @@ export function inkBounds(rows: InkRow[], g: InkGeometry): { x0: number; y0: num
   const y1 = lines[lines.length - 1][1];
   let x0 = Infinity;
   let x1 = -Infinity;
-  for (let y = y0; y <= y1; y++) {
-    const row = rows[y];
-    if (!row) continue;
-    if (row[0] < x0) x0 = row[0];
-    if (row[1] > x1) x1 = row[1];
+  for (const [a, b] of lines) {
+    for (let y = a; y <= b; y++) {
+      const row = rows[y];
+      if (!row) continue;
+      if (row[0] < x0) x0 = row[0];
+      if (row[1] > x1) x1 = row[1];
+    }
   }
   return { x0, y0, x1, y1 };
+}
+
+/** A word on a page, at its baseline's position as page fractions. */
+export interface PlacedWord {
+  s: string;
+  fx: number;
+  fy: number;
+}
+
+// Page numbers change from page to page, in digits or in words ("page three
+// of twenty one" in the LCA schemes), so both read as '#'.
+const NUMBER_WORDS = /\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty)\b/g;
+const normalise = (s: string) =>
+  s.toLowerCase().replace(/\d+/g, '#').replace(NUMBER_WORDS, '#').replace(/#(?:[\s-]*#)+/g, '#').replace(/\s+/g, ' ').trim();
+
+/**
+ * True when every word in a page-edge cluster also appears at about the same
+ * height on another page: a running header or footer. A question line that
+ * happens to sit low on its page (English 2010 OL Q12) is not repeated, so it
+ * stays. A cluster with no words (a rule) counts as running.
+ */
+export function isRunningText(words: PlacedWord[], otherPages: PlacedWord[][]): boolean {
+  if (!otherPages.length) return false;
+  return words.every(w => {
+    const key = normalise(w.s);
+    if (!key) return true;
+    return otherPages.some(page => page.some(o => Math.abs(o.fy - w.fy) < 0.03 && normalise(o.s) === key));
+  });
 }
 
 /** Row extents from RGBA pixels: a pixel is ink when its mean channel is dark. */
