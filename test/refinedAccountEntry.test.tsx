@@ -17,7 +17,7 @@ beforeEach(() => { localStorage.clear(); sessionStorage.clear(); googleSignIn.mo
 describe('account entry refinements', () => {
   it('uses password-manager semantics on the real sign-in form', () => {
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
-    expect(screen.getByLabelText('Email')).toHaveAttribute('autocomplete', 'username');
+    expect(screen.getByLabelText('Email or username')).toHaveAttribute('autocomplete', 'username');
     expect(screen.getByLabelText('Password')).toHaveAttribute('autocomplete', 'current-password');
   });
   it('join-code help preserves the registration details', async () => {
@@ -199,5 +199,27 @@ describe('account entry refinements', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Send Reset Link' }));
     await waitFor(() => expect(resetEmail).toHaveBeenCalledTimes(2));
     expect(resetEmail.mock.calls[1][1]).toBe('right@example.com');
+  });
+  // A second request cancels the first link; students who resent and then
+  // opened the first email got "link invalid" (reproduced 2026-10-15).
+  it('says only the newest reset email works and holds the resend for 90 seconds', async () => {
+    render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Forgot password?' }));
+    await screen.findByRole('button', { name: 'Send Reset Link' });
+    fireEvent.change(screen.getByLabelText('Email'), { target: { value: 'aoife@example.com' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Send Reset Link' }));
+    expect(await screen.findByText(/Only the newest email works/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Resend in 90s/ })).toBeDisabled();
+  });
+  it('explains that a username account cannot get a reset email, instead of sending one', async () => {
+    render(<LoginPage handleLoginSuccess={vi.fn()} />);
+    fireEvent.click(screen.getByRole('button', { name: 'Forgot password?' }));
+    await screen.findByRole('button', { name: 'Send Reset Link' });
+    for (const typed of ['aoife', 'aoife@nextstep.app']) {
+      fireEvent.change(screen.getByLabelText('Email'), { target: { value: typed } });
+      fireEvent.click(screen.getByRole('button', { name: 'Send Reset Link' }));
+      expect(await screen.findByText(/can’t get reset emails/)).toHaveTextContent('nextstepuniinfo@gmail.com');
+    }
+    expect(resetEmail).not.toHaveBeenCalled();
   });
 });

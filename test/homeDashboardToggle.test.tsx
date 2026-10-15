@@ -16,7 +16,6 @@ import NextStepUniSidebar from '@/components/navigation/NextStepUniSidebar';
 import { NavigationProvider, useNavigation } from '@/contexts/NavigationContext';
 
 // Keep the real shared sidebar and navigation; avoid account network services.
-vi.mock('@/components/GetPointsButton', () => ({ default: () => null }));
 vi.mock('@/components/NotificationBell', () => ({ default: () => null }));
 
 const noop = vi.fn();
@@ -85,5 +84,14 @@ describe('home dashboard navigation', () => {
     render(<HomeHarness />);
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'My Progress' })).toBeInTheDocument();
+  });
+
+  // A test helper that added 100 JP per click shipped in the sidebar; Alex
+  // asked for it gone from the live app (2026-10-15).
+  test('the sidebar has no free-points button', () => {
+    render(<HomeHarness />);
+    expect(screen.getByRole('button', { name: 'My Progress' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /get points/i })).not.toBeInTheDocument();
+    expect(screen.queryByTitle(/Add 100 JP/)).not.toBeInTheDocument();
   });
 });

@@ -62,12 +62,12 @@ describe('signup email typo suggestion', () => {
 });
 
 describe('failed sign-in', () => {
-  const failSignIn = async (email: string) => {
+  const failSignIn = async (email: string, message = 'Invalid email or password.') => {
     render(<LoginPage handleLoginSuccess={vi.fn()} />);
-    fireEvent.change(screen.getByLabelText('Email'), { target: { value: email } });
+    fireEvent.change(screen.getByLabelText('Email or username'), { target: { value: email } });
     fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'not the password' } });
     fireEvent.click(screen.getByRole('button', { name: 'Sign in' }));
-    expect(await screen.findByRole('alert')).toHaveTextContent('Invalid email or password.');
+    expect(await screen.findByRole('alert')).toHaveTextContent(message);
   };
 
   it('offers registration and carries the typed email over', async () => {
@@ -78,11 +78,13 @@ describe('failed sign-in', () => {
     expect(screen.getByLabelText('Email')).toHaveValue('new.student@example.com');
   });
 
-  it('does not carry a username into the email field', async () => {
-    await failSignIn('aoife');
-    fireEvent.click(screen.getByRole('button', { name: 'Create an account' }));
-    await screen.findByLabelText('Your Name');
-    expect(screen.getByLabelText('Email')).toHaveValue('');
+  // Accounts made Feb–Apr 2026 signed in with a username, stored at
+  // username@nextstep.app, a mailbox that does not exist (Oct 2026: returning
+  // students could not get back in and could not reset).
+  it('tells a username account how to get its password reset, not to start again', async () => {
+    await failSignIn('aoife', 'That username and password don’t match.');
+    expect(screen.getByText(/can’t get reset emails/)).toHaveTextContent('nextstepuniinfo@gmail.com');
+    expect(screen.queryByText('No account yet?')).not.toBeInTheDocument();
   });
 
   it('withdraws the prompt as soon as the student edits their details', async () => {

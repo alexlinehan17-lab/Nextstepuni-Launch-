@@ -53,7 +53,9 @@ export const AuthActionProgress: React.FC<{ label: string }> = ({ label }) => (
 );
 
 /** A link that could not be used: what happened, and the way back to sign in. */
-export const AuthActionProblem: React.FC<{ title: string; message: string }> = ({ title, message }) => (
+/** A link that did not work. `children` (optional) sits between the message
+ *  and the way back, e.g. a form to send a fresh link. */
+export const AuthActionProblem: React.FC<{ title: string; message: string; children?: React.ReactNode }> = ({ title, message, children }) => (
   <MotionDiv initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={SPRING_GENTLE}>
     <MotionDiv
       initial={{ scale: 0, rotate: -8 }}
@@ -66,6 +68,7 @@ export const AuthActionProblem: React.FC<{ title: string; message: string }> = (
     </MotionDiv>
     <h2 className="text-2xl font-semibold tracking-tight mb-2" style={headingStyle}>{title}</h2>
     <p className="text-sm mb-6" style={bodyStyle}>{message}</p>
+    {children}
     <MotionButton
       onClick={goToSignIn}
       whileHover={btnHover}

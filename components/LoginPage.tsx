@@ -163,6 +163,15 @@ async function writeUserDoc(
 
 // Shown for every failed email sign-in; also the cue for "No account yet?".
 const LOGIN_FAILED_MESSAGE = 'Invalid email or password.';
+/** Accounts made before school email sign-up (Feb–Apr 2026) signed in with a
+ *  username, stored as username@nextstep.app. Those mailboxes do not exist, so
+ *  a reset email can never reach them (98 student accounts, Oct 2026). */
+const USERNAME_FAILED_MESSAGE = 'That username and password don’t match.';
+const USERNAME_RESET_HELP = 'Accounts made with a username can’t get reset emails. Email nextstepuniinfo@gmail.com with your username and school, and we’ll reset it for you.';
+const isUsernameLogin = (value: string) => {
+  const v = value.trim().toLowerCase();
+  return v.length > 0 && (!v.includes('@') || v.endsWith('@nextstep.app'));
+};
 
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const mobileAppDesign = useMobileAppDesign();
@@ -334,7 +343,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         console.error('Login attempt failed:', err);
       }
     }
-    if (!success) setError(LOGIN_FAILED_MESSAGE);
+    if (!success) setError(input.includes('@') ? LOGIN_FAILED_MESSAGE : USERNAME_FAILED_MESSAGE);
     setIsLoading(false);
   };
 
@@ -463,6 +472,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleForgotPassword = async () => {
     if (isLoading || resendCountdown > 0) return;
     if (!email.trim()) { rejectField('reset-email', 'Enter your email address.'); return; }
+    if (isUsernameLogin(email)) { rejectField('reset-email', USERNAME_RESET_HELP); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       rejectField('reset-email', 'Check the email address, for example you@example.com.');
       return;
@@ -471,7 +481,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     try {
       await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       setResetSent(true);
-      setResendCountdown(30);
+      // Each new request cancels the previous link, and school email can take
+      // minutes to arrive, so an early resend leaves a dead link in the inbox.
+      setResendCountdown(90);
     } catch (err) {
       console.error('Failed to send password reset email:', err);
       setError('Could not send reset email. Check your email address.');
@@ -885,7 +897,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   );
   const emailField = (id: string, signingIn = false) => (
     <div className="auth-live-field">
-      <label htmlFor={id}>Email</label>
+      <label htmlFor={id}>{signingIn ? 'Email or username' : 'Email'}</label>
       <input
         id={id}
         {...fieldValidation(id)}
@@ -896,7 +908,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         autoCorrect="off"
         spellCheck={false}
         value={email}
-        placeholder="you@example.com"
+        placeholder={signingIn ? 'Email or username' : 'you@example.com'}
         onChange={(event) => {
           setEmail(event.target.value);
           setError(''); setFieldErrors({});
@@ -1239,6 +1251,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </button>
                 </fieldset>
                 {errorMessage}
+                {error === USERNAME_FAILED_MESSAGE && (
+                  <p className="auth-live-help-note">
+                    Forgotten your password? {USERNAME_RESET_HELP}
+                  </p>
+                )}
                 {error === LOGIN_FAILED_MESSAGE && (
                   <div className="auth-live-no-account">
                     <span>No account yet?</span>
@@ -1290,7 +1307,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </h1>
                 <p>
                   {resetSent
-                    ? `We sent a reset link to ${email.trim()}.`
+                    ? `We sent a reset link to ${email.trim()}. Only the newest email works, so if you ask again, open the latest one.`
                     : 'Enter your email and we’ll send you a reset link.'}
                 </p>
               </div>
@@ -1518,8 +1535,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             ) : (
               <>
                 <p>
-                  Check your spam or junk folder, then confirm the email address
-                  you used for your account.
+                  School email can take a few minutes to arrive. Check your
+                  spam or junk folder, then confirm the email address you used
+                  for your account.
+                </p>
+                <p>
+                  If you asked more than once, only the newest email works.
+                  Earlier links stop working.
                 </p>
                 <p>
                   If you signed in with Apple or Google, go back and use the
