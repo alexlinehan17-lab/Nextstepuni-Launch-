@@ -29,6 +29,8 @@ export { claimStaffAccess } from "./staffAccess";
 export { claimStudentSchool } from "./schoolAccess";
 // Anonymous product feedback — see ./anonymousFeedback.ts.
 export { submitAnonymousFeedback } from "./anonymousFeedback";
+// Why sign-ins fail, as anonymous log lines — see ./signInDiagnostics.ts.
+export { reportSignInFailure } from "./signInDiagnostics";
 // Privacy-preserving programme measurement: server-only raw events and an
 // aggregate-only administrator summary.
 export { recordProgrammeEvents, getProgrammeAnalyticsSummary } from "./programmeAnalytics";

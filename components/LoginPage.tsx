@@ -8,6 +8,7 @@ import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, Eye, EyeOff, GraduationCap, ArrowRight, Check, LockKeyhole, UserRound, BarChart3, ExternalLink, X } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import { classifySignInError, reportSignInFailure, signInFailureMessage, SIGN_IN_LOCKOUT_MS, strongestFailure, type SignInFailureKind } from '../utils/signInFailure';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
 import { shouldReapAccount } from '../utils/registrationRollback';
@@ -217,6 +218,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [schoolRole, setSchoolRole] = useState<'gc' | 'staff'>('gc');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  // Firebase pauses an account after repeated wrong passwords; trying again
+  // during the pause extends it, so the Sign in button rests for a minute.
+  const [signInPausedUntil, setSignInPausedUntil] = useState(0);
+  const [pauseNow, setPauseNow] = useState(() => Date.now());
+  const signInPaused = signInPausedUntil > pauseNow;
+  useEffect(() => {
+    if (signInPausedUntil <= Date.now()) return;
+    const tick = window.setInterval(() => setPauseNow(Date.now()), 1000);
+    return () => window.clearInterval(tick);
+  }, [signInPausedUntil]);
   // A failed registration deletes the account it just created, which signs the
   // student out and can unmount THIS component -- so setError below lands on a
   // dead instance and the replacement renders blank. That silent bounce is the
@@ -309,17 +320,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Login handler ──
   const handleLogin = async () => {
-    if (isLoading) return;
+    if (isLoading || signInPaused) return;
     if (!email.trim()) { rejectField('login-email', 'Enter your email or username.'); return; }
     if (!password.trim()) { rejectField('login-password', 'Enter your password.'); return; }
     setIsLoading(true); setError(''); setFieldErrors({});
     const input = email.trim().toLowerCase();
-    // Try as-is first (real email), then fall back to legacy @nextstep.app format
-    const attempts = input.includes('@') ? [input] : [input, `${input}@nextstep.app`];
+    // A username (accounts from Feb–Apr 2026) lives at username@nextstep.app.
+    // It used to be tried as typed first, which can never succeed: Firebase
+    // has no address without an @, so it only added a failure to every
+    // username sign-in.
+    const usernameInput = !input.includes('@');
+    const attempts = usernameInput ? [`${input}@nextstep.app`] : [input];
     let success = false;
+    const failures: SignInFailureKind[] = [];
     for (const emailToTry of attempts) {
+      let passwordAccepted = false;
       try {
         const cred = await signInWithEmailAndPassword(auth, emailToTry, password);
+        passwordAccepted = true;
         const token = await cred.user.getIdTokenResult();
         const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
         if (userDoc.exists()) {
@@ -341,9 +359,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         break;
       } catch (err) {
         console.error('Login attempt failed:', err);
+        // A right password whose account then failed to load is not a wrong
+        // password, and must not be told it is.
+        failures.push(passwordAccepted ? 'profile-read' : classifySignInError(err));
       }
     }
-    if (!success) setError(input.includes('@') ? LOGIN_FAILED_MESSAGE : USERNAME_FAILED_MESSAGE);
+    if (!success) {
+      let kind = strongestFailure(failures);
+      // A typed username is not an email; a malformed one is just a wrong username.
+      if (usernameInput && kind === 'invalid-email') kind = 'credentials';
+      reportSignInFailure(kind, usernameInput ? 'username' : 'email');
+      if (kind === 'too-many-requests') {
+        setPauseNow(Date.now());
+        setSignInPausedUntil(Date.now() + SIGN_IN_LOCKOUT_MS);
+      }
+      const message = signInFailureMessage(kind);
+      if (kind === 'invalid-email' && message) rejectField('login-email', message);
+      else setError(message ?? (usernameInput ? USERNAME_FAILED_MESSAGE : LOGIN_FAILED_MESSAGE));
+    }
     setIsLoading(false);
   };
 
@@ -912,6 +945,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         onChange={(event) => {
           setEmail(event.target.value);
           setError(''); setFieldErrors({});
+          setSignInPausedUntil(0);
         }}
       />
       {fieldMessage(id)}
@@ -1289,9 +1323,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <button
                     type="submit"
                     className="auth-live-primary"
-                    disabled={isLoading}
+                    disabled={isLoading || signInPaused}
                   >
-                    {isLoading ? 'Signing in…' : 'Sign in'}
+                    {isLoading
+                      ? 'Signing in…'
+                      : signInPaused
+                        ? `Try again in ${Math.ceil((signInPausedUntil - pauseNow) / 1000)}s`
+                        : 'Sign in'}
                     <ArrowRight size={19} aria-hidden="true" />
                   </button>
                 </div>
