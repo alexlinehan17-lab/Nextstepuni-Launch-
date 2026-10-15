@@ -196,3 +196,28 @@
 .ss-navigation button.product-back-button:focus-visible { outline-color: var(--ss-ink); }
 .ss-navigation button.ss-reflections-button { padding: 8px 13px; border: 1px solid var(--ss-rule); border-radius: 12px; background: var(--ss-paper); color: var(--ss-ink); }
 .ss-navigation button.ss-reflections-button:hover { border-color: var(--ss-ink); color: var(--ss-ink); }
+
+/* Minimise (header), open-ended Finish, and the "time's up" choice (2026-10-14). */
+.ss-timer-navigation .ss-minimise { width: auto; gap: 8px; padding: 0 14px; font: 600 13px/1 'DM Sans', sans-serif; }
+.ss-timer-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ss-timer-finish { display: flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; min-width: 124px; padding: 12px 23px; border: 1px solid currentColor; border-radius: 7px; background: transparent; color: var(--ss-ink); font-size: 13px; font-weight: 600; cursor: pointer; }
+.ss-room-ink .ss-timer-finish { border-radius: 4px; margin-top: 5px; }
+.ss-timer-finish:disabled { opacity: .45; cursor: not-allowed; }
+.ss-finish-help { margin: 10px 0 0; color: var(--ss-muted); font-size: 12px; }
+.ss-timeup .ss-timer-main { gap: 0; }
+.ss-timeup-title { margin: 22px 0 0; color: var(--ss-ink); font: 600 clamp(52px, 8vw, 104px)/1.02 'Source Serif 4', Georgia, serif; letter-spacing: -.035em; }
+.ss-timeup-summary { margin: 18px 0 0; color: var(--ss-muted); font-size: 14px; line-height: 1.6; font-variant-numeric: tabular-nums; }
+.ss-timeup-summary strong { color: var(--ss-orange); font-weight: 600; }
+.ss-timeup-choices { margin: 34px 0 0; }
+.ss-timeup-choices .ss-timer-status { margin: 0 0 14px; }
+.ss-timeup-choices > div { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.ss-timeup-extend { min-width: 104px; min-height: 48px; padding: 12px 20px; border: 1px solid currentColor; border-radius: 4px; background: transparent; color: var(--ss-ink); font: 600 15px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums; cursor: pointer; }
+.ss-timeup-extend:hover { background: color-mix(in srgb, var(--ss-ink) 10%, transparent); }
+.ss-timeup-note { max-width: 34ch; margin: 14px auto 0; color: var(--ss-muted); font-size: 12px; line-height: 1.5; }
+.ss-timeup .ss-timeup-finish { margin-top: 30px; }
+.ss-timeup button:focus-visible { outline: 2px solid #ff862c; outline-offset: 4px; }
+@media (max-width: 480px) {
+  .ss-timer-navigation .ss-minimise { width: 44px; padding: 0; }
+  .ss-timer-navigation .ss-minimise span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .ss-timeup-extend { min-width: 88px; }
+}

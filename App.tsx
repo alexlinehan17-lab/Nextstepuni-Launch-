@@ -59,6 +59,8 @@ import FeedbackModal from './components/FeedbackModal';
 import { useMobileAppDesign } from './hooks/useMobileAppDesign';
 import './components/mobile-editorial.css';
 import { trackProgrammeEvent } from './utils/programmeAnalytics';
+import { StudySessionProvider } from './contexts/StudySessionContext';
+import StudyMiniTimer from './components/study/StudyMiniTimer';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -889,8 +891,13 @@ const App: React.FC = () => {
     hasUnreadNotifications: unreadNotificationCount > 0,
   };
 
+  // One study session for the whole app, so the timer keeps counting while a
+  // student uses Mark Bank, Paper Trail or the Topic Atlas (mini timer).
+  const studyUid = user && !user.isAdmin && !isSchoolStaff(user.role) ? user.uid : undefined;
+
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
+    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Achievements remain available while account controls live in the sidebar. */}
@@ -1050,7 +1057,12 @@ const App: React.FC = () => {
           })()}
         />
       )}
+
+      {studyUid && userProgressReady && viewState !== 'study-session' && viewState !== 'onboarding' && (
+        <StudyMiniTimer onOpen={handleGoToStudy} view={viewState} />
+      )}
     </div>
+    </StudySessionProvider>
     </SettingsContext.Provider>
   );
 };

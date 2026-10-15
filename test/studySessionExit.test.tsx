@@ -204,7 +204,7 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     expect(screen.getByRole('button', { name: 'Start Session' })).toBeDisabled();
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '35' } });
     fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
-    expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }));
+    expect(mocks.startSession).toHaveBeenCalledWith('Mathematics', 'practice', 35, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 
   test('keeps a topic launch through StrictMode and clears it when the subject changes', () => {
@@ -221,11 +221,11 @@ describe.each([false, true])('study setup selections (mobile: %s)', mobile => {
     fireEvent.click(screen.getByRole('radio', { name: 'Revision Recall what you know' }));
     fireEvent.change(screen.getByRole('spinbutton', { name: 'Custom study duration in minutes' }), { target: { value: '30' } });
     fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
-    expect(mocks.startSession).toHaveBeenCalledWith('Accounting', 'revision', 30, selection);
+    expect(mocks.startSession).toHaveBeenCalledWith('Accounting', 'revision', 30, selection, { openEnded: false });
     fireEvent.click(screen.getByRole('button', { name: 'Study Mathematics' }));
     expect(screen.queryByRole('button', { name: `Remove ${topic.title}` })).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Start Session' }));
-    expect(mocks.startSession).toHaveBeenLastCalledWith('Mathematics', 'revision', 30, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }));
+    expect(mocks.startSession).toHaveBeenLastCalledWith('Mathematics', 'revision', 30, expect.objectContaining({ subjectId: 'mathematics', topicIds: [] }), { openEnded: false });
   });
 
   test('does not mark a stale Planner block complete when a topic session is saved', async () => {

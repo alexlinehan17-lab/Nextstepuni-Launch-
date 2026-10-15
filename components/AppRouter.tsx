@@ -469,6 +469,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           strategyMastery={strategyMastery.masteryMap}
           onGoToProgress={handleGoToMilestones}
           onSetUpProfile={() => nav.navigateToOnboarding()}
+          onMinimise={handleBackToTree}
+          onGoToIsland={() => nav.navigateToJourney()}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}

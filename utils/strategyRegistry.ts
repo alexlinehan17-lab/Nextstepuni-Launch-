@@ -47,4 +47,10 @@ export interface StudySessionRecord {
   confidenceAfter?: number;
   confidenceLabel?: StudyConfidenceLabel;
   reflectionMode?: 'quick' | 'full';
+  /** Minutes added with "Keep going" after the planned time ran out. */
+  extendedMinutes?: number;
+  /** JP for finishing that added time (0 if it was ended early). */
+  extensionBonus?: number;
+  /** Stopwatch session: no planned end; plannedMinutes records the time studied. */
+  openEnded?: boolean;
 }
