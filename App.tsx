@@ -841,6 +841,28 @@ const App: React.FC = () => {
       });
   };
 
+  // "i cant change my exam date" (feedback, 16 Oct 2026). The date drives the
+  // planner, countdowns and Mark Bank's scheduling, so it saves straight onto
+  // the subject profile, optimistically, exactly like a subjects edit.
+  const handleExamDateSave = (examStartDate: string) => {
+    if (!studentProfile) return;
+    const profile: StudentSubjectProfile = { ...studentProfile, examStartDate, updatedAt: new Date().toISOString() };
+    if (!user) { setStudentProfile(profile); return; }
+    const previousProfile = studentProfile;
+    setStudentProfile(profile);
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, subjectProfile: profile }));
+      showToast('Exam date updated.', 'success');
+      return;
+    }
+    setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true })
+      .catch(err => {
+        console.error('Failed to save exam date:', err);
+        showToast('Couldn\'t save your exam date — please try again', 'error');
+        setStudentProfile(previousProfile);
+      });
+  };
+
   const _handleBackToTree = () => { nav.goBack(); };
 
   const _handleBackToCategory = () => { nav.goBack(); };
@@ -892,6 +914,7 @@ const App: React.FC = () => {
     transitionToSeniorMode, transitionTargetYear: (transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined) as 'TY' | '5th' | undefined,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
