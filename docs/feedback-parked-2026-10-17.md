@@ -37,6 +37,13 @@ Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 
 - iPhone login page: the status-bar clock overlaps the nextstepuni wordmark.
 - Check nextstepuniinfo@gmail.com for reset requests from students with older username accounts. 14 failed sign-ins on 16 Oct used a username.
 
+## Decisions raised by this round's builds
+
+- **Sample papers for the other 2027 specifications.** The SEC publishes sample papers for Biology, Chemistry, Physics, Business, Arabic, Latin and Ancient Greek (first examined 2027), plus Tranche 2 subjects. Paper Trail added them only for the two brand-new subjects (CASD and DFTS). Adding the rest is a data-only change (`scripts/paper-trail/sample-papers.json`).
+- **"New specification from 2027" notice.** It now shows on every Biology, Chemistry, Physics, Business, Arabic, Latin and Ancient Greek paper in Paper Trail, 2026 included. That's accurate for students sitting in 2027 or later, but it's a visible change.
+- **Privacy notice wording for year islands.** It already covers a wider (whole-school) version. Suggested narrower wording is in `compliance/PEER_ISLAND_REFACTOR_PLAN.md` §9. Changing it bumps the policy version and every student re-accepts.
+- **Lock Screen timer card colour.** iOS 26 draws it on the dark card even in Light mode. An always-white version is a one-line change.
+
 ## Decisions still open from the 14 Oct round
 
 - Size of the keep-going bonus, and whether it pays once per session.
