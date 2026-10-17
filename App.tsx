@@ -61,6 +61,7 @@ import './components/mobile-editorial.css';
 import { trackProgrammeEvent } from './utils/programmeAnalytics';
 import { StudySessionProvider } from './contexts/StudySessionContext';
 import StudyMiniTimer from './components/study/StudyMiniTimer';
+import { onNotificationOpen } from './services/notifications';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -454,6 +455,14 @@ const App: React.FC = () => {
     setTimetableBlockContext(null);
     nav.navigateToStudySession();
   };
+
+  // Tapping "Time's up" brings the student back to the study room, including
+  // a tap that launched the app (onNotificationOpen holds it until now).
+  const openStudyFromNotification = useRef(handleGoToStudy);
+  openStudyFromNotification.current = handleGoToStudy;
+  useEffect(() => onNotificationOpen(route => {
+    if (route === 'study-session') openStudyFromNotification.current();
+  }), []);
 
   const handleStudyFromTimetable = useCallback((block: { subject: string; sessionType: 'new-learning' | 'practice' | 'revision'; durationMinutes: number; dateKey: string; blockId: string }) => {
     setTimetableBlockContext(block);
@@ -897,7 +906,7 @@ const App: React.FC = () => {
 
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
-    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses}>
+    <StudySessionProvider uid={studyUid} userProgress={userProgress} allCourses={studentCourses} roomOpen={viewState === 'study-session'}>
     <OfflineBanner />
     <div className="min-h-screen bg-white dark:bg-zinc-950">
       {/* Achievements remain available while account controls live in the sidebar. */}

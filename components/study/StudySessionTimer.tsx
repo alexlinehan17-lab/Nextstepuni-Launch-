@@ -26,6 +26,8 @@ export interface StudySessionTimerProps {
   onLeave: () => void;
   onTogglePause: (event: React.MouseEvent<HTMLButtonElement>) => void;
   soundControl?: React.ReactNode;
+  /** The one-time "Notify me when time's up" offer, under the controls. */
+  notifyOffer?: React.ReactNode;
   prompt: { strategyName: string; prompt: string } | null;
   onCompletePrompt: () => void;
   onSkipPrompt: () => void;
@@ -38,7 +40,7 @@ export const formatTime = (seconds: number) => {
   return whole >= 3600 ? `${Math.floor(whole / 3600)}:${clock}` : `${Math.floor(whole / 60).toString().padStart(2, '0')}:${(whole % 60).toString().padStart(2, '0')}`;
 };
 
-export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, plannedSeconds, extendedMinutes = 0, openEnded = false, canFinish = false, onFinish, onMinimise, paused, onLeave, onTogglePause, soundControl, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
+export default function StudySessionTimer({ appearance = 'ink', subject, subjectColor, type, totalSeconds, elapsedSeconds, plannedSeconds, extendedMinutes = 0, openEnded = false, canFinish = false, onFinish, onMinimise, paused, onLeave, onTogglePause, soundControl, notifyOffer, prompt, onCompletePrompt, onSkipPrompt }: StudySessionTimerProps) {
   useNativeStatusBarAppearance(paused ? 'light' : appearance === 'ink' ? 'dark' : 'light');
   const remaining = Math.max(0, totalSeconds - elapsedSeconds);
   // An open-ended session has no end to measure progress against.
@@ -64,6 +66,7 @@ export default function StudySessionTimer({ appearance = 'ink', subject, subject
           {openEnded && onFinish && <button type="button" className="ss-timer-finish" onClick={onFinish} disabled={!canFinish} aria-describedby={canFinish ? undefined : 'ss-finish-help'}><Check size={18} aria-hidden="true" />Finish</button>}
         </div>
         {openEnded && onFinish && !canFinish && <p id="ss-finish-help" className="ss-finish-help">Finish after 5 minutes</p>}
+        {notifyOffer}
       </main>
       {prompt && <section className="ss-coaching" aria-label="Study strategy prompt" key={prompt.prompt}>
         <div className="ss-coaching-heading"><p className="ss-eyebrow">Put it into practice</p><span>{prompt.strategyName}</span></div>
