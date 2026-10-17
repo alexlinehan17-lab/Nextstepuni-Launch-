@@ -33,6 +33,8 @@ Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 
 - Accounts with misspelled school emails (`marinocollge.ie`, `marincollege.ie`, `marino.ie`) can never receive a reset.
 - Guidance counsellors haven't yet been shown the counsellor reset tool.
 - Dark mode: the Fieldbook and Visitors counts on the island dock render as blank white dots. Spotted 17 Oct while building year islands.
+- **Sign in with Apple has never worked in the iOS app.** Its Capacitor plugin was never registered (1.0.7 registers only App Check and Status Bar). The fix is one line in `ios/App/App/NextStepBridgeViewController.swift` plus enabling the Apple provider in Firebase Auth. It was built on 17 Oct and held back so it can ship deliberately.
+- iPhone login page: the status-bar clock overlaps the nextstepuni wordmark.
 - Check nextstepuniinfo@gmail.com for reset requests from students with older username accounts. 14 failed sign-ins on 16 Oct used a username.
 
 ## Decisions still open from the 14 Oct round
