@@ -212,8 +212,15 @@ describe('Paper Trail sittings', () => {
   it('labels official sample papers as samples, with no scheme or answers, in sample-only entries', () => {
     const samples = all.filter(r => r.item.sitting === 'sample');
     expect(new Set(samples.map(r => r.subjectId))).toEqual(new Set([
+      'ancient-greek',
+      'arabic',
+      'biology',
+      'business',
+      'chemistry',
       'climate-action-and-sustainable-development',
       'drama-film-and-theatre-studies',
+      'latin',
+      'physics',
     ]));
     for (const { subjectId, entry, item } of samples) {
       expect(item.label, subjectId).toMatch(/^Sample Paper \d/);
