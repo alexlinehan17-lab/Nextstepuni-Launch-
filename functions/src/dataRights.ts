@@ -432,6 +432,9 @@ export const exportMyData = onCall(CALLABLE_OPTIONS, async (request) => {
   data.settings = await get1("settings");
   data.responses = await get1("responses");
   data.notifications = await get1("notifications");
+  // The classmate-visible copy of the island (year islands), so the student
+  // can see exactly what their year group sees. Null when it is hidden.
+  data.islandSharedWithYear = await get1("islandPublic");
   data.studySessions = (await db.collection("progress").doc(targetUid).collection("sessions").get()).docs.map((d) => d.data());
   // Mark Bank spaced-repetition memory, one document per deck. Held in a
   // SUBCOLLECTION of progress/{uid}, so data.progress above does not contain
