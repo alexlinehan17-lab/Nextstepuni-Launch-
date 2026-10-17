@@ -126,23 +126,23 @@ The following inventory is taken directly from the application source. It is rep
 - flare: sender UID, school, subject, free-text question up to 500 characters, status, timestamps, response count
 - flare response: responder UID, free-text up to 1000 characters, helpful flag, timestamp
 
-**Public projection of peer-visible island state (`islandPublic/{uid}`):**
+**Classmate-visible island projection (`islandPublic/{uid}`, "year islands"):**
 
-This collection was introduced on 2026-04-29 as part of the R1 remediation (see `DPIA.md` and `PEER_ISLAND_REFACTOR_PLAN.md`). It is a server-maintained projection of a strict subset of `progress/{uid}` that other students at the same school are permitted to read for the Peer Island feature. The collection is written exclusively by Cloud Functions (`onProgressWritten`, `onUserWritten`) using the Admin SDK; client writes are denied by Firestore Security Rules.
+Introduced on 2026-04-29 as part of the R1 remediation (see `DPIA.md` and `PEER_ISLAND_REFACTOR_PLAN.md`). Revised on 2026-10-17 (schema 2, `PEER_ISLAND_REFACTOR_PLAN.md` §9): readers narrowed from the whole school to students at the same school **and** in the same year group, and a student-controlled opt-out added. It is a server-maintained projection of a strict subset of `users/{uid}` and `progress/{uid}.paperIsland`, written exclusively by Cloud Functions (`onProgressWritten`, `onUserWritten`, via `syncYearIsland`) with the Admin SDK; client writes are denied by Firestore Security Rules. No document exists for a student who has switched "Show my island to my year" off (`users/{uid}.islandVisibility = "hidden"`), for staff, disabled accounts, graduates, or students with no school, year group or current island.
 
-Fields:
+Fields (schema 2, exhaustive):
 
-- `name` (string) — duplicated from `users/{uid}.name`
-- `avatar` (string, DiceBear seed) — duplicated from `users/{uid}.avatar`
-- `school` (string) — duplicated from `users/{uid}.school`; used as the same-school query filter
-- `category` (NorthStarCategory enum: `college`, `independence`, `prove-myself`, `creative`, `change-maker`, etc.) — sourced from `progress/{uid}.islandState.category` with fallback to `progress/{uid}.northStar.category`. This is a soft self-chosen aspiration field, not Article 9 data. Inclusion in the projection is a deliberate product decision recorded in `DPIA.md` R1.
-- `placements` (array of `IslandPlacementPublic`) — sourced from `progress/{uid}.islandState.placements`, with the per-placement `purchasedAt` timestamp **stripped** to avoid behavioural inference about user activity windows. All other placement fields (item, position, rotation, scale, starter flag) are preserved because they form the visible island.
-- `placementCount` (number) — pre-computed count of non-starter placements; replaces a client-side filter on the array.
-- `score` (number) — pre-computed leaderboard metric `(placementCount * 2) + (uniqueItems * 3)`. Replaces the raw `purchaseHistory` array, which is **not** in the projection.
-- `schemaVersion` (number, currently `1`) — for future migration safety.
-- `updatedAt` (server timestamp) — set on every projection write.
+- `schemaVersion` (number, `2`)
+- `name` (string) — first name only, from `users/{uid}.name`, max 40 characters
+- `avatar` (string, avatar seed) — from `users/{uid}.avatar`
+- `school` (string) — from `users/{uid}.school`; query filter
+- `yearGroup` (string: 1st, 2nd, 3rd, TY, 5th, 6th, LCA1, LCA2) — from `users/{uid}.yearGroup`, falling back to `progress/{uid}.subjectProfile.yearGroup`; query filter
+- `tiles` (array, max 500, nearest the home tile first) — per tile only: grid position, tile kind, decorative ink-edge stamp, capybara appearance flag, Wonder id
+- `tileCount` (number) — tiles on the island
 
-Fields from `progress/{uid}` that are **not** in this projection (and therefore cannot be read by peers): `pointsData`, `studySessions`, `studyDebriefs`, `topicMastery`, `unifiedMockResults`, `subjectProfile`, `timetableCompletions`, `timetableStreak`, `northStar.statement`, `flareCounts`, `lighthouseLevel`, `rescueCount`, `cosmeticUnlocks`, `strategyMastery`, `sm2States`, `teachBacksSeen`, `dismissedGuides`, `islandState.purchaseHistory` (raw), `islandState.totalSpent`, `islandState.lastPurchaseTimestamp`, `islandState.claimedRewards`, and per-placement `purchasedAt`. None of these are read by the Peer Island feature today, so excluding them does not change the user-visible feature.
+Not in this projection (and therefore not readable by classmates): `pointsData`, each tile's price and id, placement order, island credits, ranks, undo state, revision, kept stickers, visitors met or claimed, treasures opened, `northStar` (category and statement), any timestamp, and every study, mastery, mock, reflection, subject-profile and settings field. Schema 1 fields `category`, `placements`, `placementCount`, `score` and `updatedAt` are retired; the backfill replaces or deletes every schema 1 document.
+
+Account erasure deletes the document; the Article 15 export includes it as `islandSharedWithYear`.
 
 **Guidance Counsellor data (`gcNotes/{schoolId}/students/{studentId}`, `gcSettings/{schoolId}`, `gcEvents/{schoolId}`):**
 

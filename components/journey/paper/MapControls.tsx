@@ -57,6 +57,7 @@ export function IslandMap({
   editable,
   selectedTile,
   onSelectTile,
+  label = "Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode.",
 }: {
   world: IslandState;
   building: boolean;
@@ -76,6 +77,8 @@ export function IslandMap({
   editable?: Map<string, string>;
   selectedTile?: string | null;
   onSelectTile?: (key: string) => void;
+  /** The map's accessible name; a classmate's island names its owner. */
+  label?: string;
 }) {
   const [narrow, setNarrow] = useState(
     () => window.matchMedia("(max-width:700px)").matches,
@@ -150,7 +153,7 @@ export function IslandMap({
           preserveAspectRatio="xMidYMid slice"
           role="group"
           tabIndex={0}
-          aria-label="Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode."
+          aria-label={label}
           onPointerDown={(e) => {
             if ((e.target as Element).closest("[data-map-control]")) return;
             const rect = e.currentTarget.getBoundingClientRect();
