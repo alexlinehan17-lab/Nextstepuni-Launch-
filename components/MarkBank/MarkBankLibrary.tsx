@@ -54,7 +54,7 @@ export default function MarkBankLibrary({examDate,subjectId,level,cards,state,no
  if(!group || !selected)return <p>No topics are available for this subject.</p>;
  return <KobraScope className="mb-live-route"><main className="mb-library" aria-busy={busy || loading}>
       <header className="mb-masthead">
-        <div><p className="mb-kicker">THE PRACTICE LIBRARY</p><h1>The Mark <em>Bank.</em></h1><p className="mb-intro">Real questions. Your own answers. The marks behind them.</p></div>
+        <div><p className="mb-kicker">THE PRACTICE LIBRARY</p><h1>The Mark <em>Bank.</em></h1><p className="mb-intro">Flashcards made from real exam questions. Answer, check the marks, and each one comes back just before you’d forget it.</p></div>
         <div className="mb-masthead-aside"><Artwork src="/assets/tools/mark-bank.png" size={94}/><span>ONE QUESTION<br/>AT A TIME.</span></div>
       </header>
       <div className="mb-toolbar">

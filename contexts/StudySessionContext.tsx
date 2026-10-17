@@ -10,11 +10,14 @@
  *
  * The hook runs in an engine keyed by uid, so a different student signing in
  * on the same tab (sign-out does not reload) starts clean, without remounting
- * the app beneath the provider.
+ * the app beneath the provider. The engine also keeps the device's own alerts
+ * (the "time's up" notification) in step with the session.
  */
 
 import React, { createContext, memo, useContext, useLayoutEffect, useState } from 'react';
 import { useStudySession } from '../hooks/useStudySession';
+import { useStudyTimerAlerts } from '../hooks/useStudyTimerAlerts';
+import { useStudyNotifications } from '../hooks/useStudyNotifications';
 import type { UserProgress } from '../types';
 import type { CourseData } from '../components/Library';
 
@@ -28,26 +31,32 @@ interface EngineProps {
   uid: string | undefined;
   userProgress: UserProgress;
   allCourses: CourseData[];
+  roomOpen: boolean;
+  notify: boolean;
   onSession: (session: StudySessionState) => void;
 }
 
 // Memoised: it re-renders on its own clock ticks, not on every publish.
-const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, onSession }: EngineProps) {
+const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, roomOpen, notify, onSession }: EngineProps) {
   const session = useStudySession(uid, userProgress, allCourses);
+  useStudyTimerAlerts(session, { uid, roomOpen, enabled: notify });
   useLayoutEffect(() => { onSession(session); });
   return null;
 });
 
-export function StudySessionProvider({ uid, userProgress, allCourses, children }: {
+export function StudySessionProvider({ uid, userProgress, allCourses, roomOpen = true, children }: {
   uid: string | undefined;
   userProgress: UserProgress;
   allCourses: CourseData[];
+  /** The study room is on screen (its own "Time's up" needs no banner). */
+  roomOpen?: boolean;
   children: React.ReactNode;
 }) {
   const [session, setSession] = useState<StudySessionState | null>(null);
+  const { enabled: notify } = useStudyNotifications();
   return (
     <StudySessionContext.Provider value={{ session }}>
-      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} onSession={setSession} />
+      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} roomOpen={roomOpen} notify={notify} onSession={setSession} />
       {children}
     </StudySessionContext.Provider>
   );

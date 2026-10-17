@@ -115,9 +115,10 @@ export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjec
     if (!subject) continue;
     // A common-level subject has no Higher/Ordinary to read off the profile,
     // and a profile that says "Higher" for one is saying nothing about it.
+    // The bank has no Foundation decks, so a Foundation student practises Ordinary.
     const levels = levelsFor(subject.id);
     const level: Level = levels.length === 1 ? levels[0]
-      : profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+      : /^(ordinary|foundation)/.test(profileSubject.level?.toLowerCase() ?? '') ? 'ordinary' : 'higher';
     if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
   }
   return null;

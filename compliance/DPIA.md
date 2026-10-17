@@ -65,7 +65,7 @@ release gate for the final Year-2 DPIA.
 - `flareCounts`, `rescueCount`, `lighthouseLevel` (peer-support gamification metrics)
 - `strategyMastery`, `sm2States`, `teachBacksSeen`, `dismissedGuides`
 
-**`settings/{uid}`** — UI preferences only: language, avatar seed, dark mode toggle, accent theme, card style, default work minutes, flares animation toggle, dashboard visibility, essentials mode toggle (firestore.rules `match /settings/{userId}`).
+**`settings/{uid}`** — UI preferences only: language, avatar seed, dark mode toggle, accent theme, card style, default work minutes, flares animation toggle, dashboard visibility, essentials mode toggle, study timer notification choice (on/off only; the "time's up" notification and the iOS Lock Screen timer are scheduled and shown on the device itself, with no server push and nothing sent to a third party) (firestore.rules `match /settings/{userId}`).
 
 **`responses/{userId}`** — `{ [moduleId]: responseData }`. Free-text responses to module exercises. Some prompts elicit reflective writing; see Section 1.4 on special category data.
 
