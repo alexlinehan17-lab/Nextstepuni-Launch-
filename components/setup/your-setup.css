@@ -105,3 +105,4 @@
   .nsu-your-setup .ys-week li small { display: none; }
   .nsu-your-setup .ys-subjects th, .nsu-your-setup .ys-subjects td { padding-inline: 4px; }
 }
+.nsu-your-setup .ys-notify-hint { margin-top: 14px; color: var(--foreground); }
