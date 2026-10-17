@@ -105,3 +105,12 @@
   .nsu-your-setup .ys-week li small { display: none; }
   .nsu-your-setup .ys-subjects th, .nsu-your-setup .ys-subjects td { padding-inline: 4px; }
 }
+
+/* Exam date: a clickable outline button that opens an inline date form. */
+.nsu-your-setup .ys-date { margin-top: 18px; }
+.nsu-your-setup .ys-date-form { display: grid; gap: 10px; max-width: 360px; }
+.nsu-your-setup .ys-date-form label { font-size: 13px; font-weight: 600; }
+.nsu-your-setup .ys-date-form .ys-meta { margin: 0; font-size: 13px; }
+.nsu-your-setup .ys-date-problem { margin: 0; font-size: 13px; font-weight: 600; color: var(--destructive, #b42318); }
+.nsu-your-setup .ys-date-actions { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; margin-top: 4px; }
+.nsu-your-setup .ys-date-actions > [data-slot=button] { min-height: 44px; padding-inline: 18px; }

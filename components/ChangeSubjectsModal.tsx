@@ -10,7 +10,7 @@ import ActionButton from './ui/ActionButton';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, LCA_SUBJECTS, getGradesForLevel, getGradeIndex, type LCSubject,
+  LC_SUBJECTS, LCA_SUBJECTS, defaultGradesForLevel, defaultSubjectConfig, getGradeIndex, type LCSubject,
 } from './subjectData';
 
 // ─── Props ───────────────────────────────────────────────────────────────────
@@ -65,7 +65,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade },
+            [name]: defaultSubjectConfig(name),
           }));
         }
       }
@@ -77,15 +77,13 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
 
   const updateConfig = (subjectName: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => {
     setSubjectConfigs(prev => {
-      const current = prev[subjectName] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
+      const current = prev[subjectName] || defaultSubjectConfig(subjectName);
       const next = { ...current };
 
       if (field === 'level') {
         const newLevel = value as Level;
         next.level = newLevel;
-        const grades = getGradesForLevel(newLevel);
-        next.currentGrade = grades[3];
-        next.targetGrade = grades[1];
+        Object.assign(next, defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
         if (getGradeIndex(next.targetGrade) > getGradeIndex(next.currentGrade)) {
@@ -134,7 +132,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         };
       }
       if (isLca) return { subjectName: name, level: 'common' as Level };
-      const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
+      const config = subjectConfigs[name] || defaultSubjectConfig(name);
       return {
         subjectName: name,
         level: config.level,
