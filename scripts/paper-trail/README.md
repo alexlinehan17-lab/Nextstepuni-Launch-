@@ -52,6 +52,13 @@ and the Senior Cycle *Additional Assessment Component* sample briefs (coursework
 - **Earlier syllabuses.** Which archived years predate a syllabus change lives in
   `data/paperTrail/syllabusChanges.ts` (from the SEC's own syllabus-change tables);
   the UI tags and explains those years — the index carries no flag.
+- **Archive metadata fixes.** Pre-2010 labels come from a subject-blind component
+  table and some Higher/Ordinary documents are swapped (1997 Chemistry; Technical
+  Drawing's Paper II(A) is listed as "Aural Paper: Sight Test Vocal"). Every new
+  document's cover was read (text layer, or macOS Vision OCR for scans) and checked
+  against its index level, kind, year and paper number; each verified correction
+  lives in `archive-row-fixes.json` with the cover evidence. Re-run that audit
+  whenever a scope extension adds old material.
 - **Hand-curated index decisions** (`HOSTED_ANSWER_FLAGS`, `CROSS_LANG_SCHEMES`)
   reproduce edits once made to `paperTrailData.ts` by hand. Never hand-edit the
   generated file: a rebuild must reproduce it.

@@ -85,6 +85,9 @@ LCA_CANCELLED_REASON = ("No 2020 LCA written examinations — COVID-19 calculate
 # SEC renamed subjects mid-archive; merge so one subject spans its full run.
 NAME_MERGES = {
     ("lb", "Intro. to Information & Comm. Technology"): "Information & Communication Tech.",
+    # 2008: the LCA Mathematical Applications paper (cover: "Leaving Certificate
+    # Applied 2008 Mathematical Applications") is listed under "Mathematics".
+    ("lb", "Mathematics"): "Mathematical Applications",
 }
 
 # SEC misfiled these exam papers/answer books in the markingschemes view —
@@ -116,6 +119,13 @@ PAIR_OVERRIDES = {
     ("lc", 2014, "LC003GLP230EV.pdf"): "LC003GLP000EV.pdf",
     ("lc", 2014, "LC003BLP130EV.pdf"): "LC003BLP000EV.pdf",
     ("lc", 2014, "LC003BLP230EV.pdf"): "LC003BLP000EV.pdf",
+    # Autumn 2026: the SEC re-listed the English OL and Irish HL/OL 2026 schemes
+    # under a second, 000 fileid (byte-identical to the 100 file). Keep Paper
+    # Two on the scheme it already ships with — the live answer maps and the
+    # uploaded Storage object both point at the 100 file.
+    ("lc", 2026, "LC002GLP200EV.pdf"): "LC002GLP100EV.pdf",
+    ("lc", 2026, "LC001ALP200IV.pdf"): "LC001ALP100IV.pdf",
+    ("lc", 2026, "LC001GLP200IV.pdf"): "LC001GLP100IV.pdf",
 }
 
 # Hand-curated index decisions first made by editing paperTrailData.ts directly
@@ -136,16 +146,23 @@ CROSS_LANG_SCHEMES = {
                                         "Irish paper with the matching English marking scheme."),
 }
 
-# Per-row corrections for pre-2010 archive rows whose label or fileid is broken
-# (verified against the downloaded PDF's own cover page). (view, year, raw
-# fileid) -> replacement fields.
+# Per-row corrections for archive rows whose label, level or fileid is wrong,
+# each verified against the document's own cover page (archive-row-fixes.json:
+# view, year, fileid, the replacement label/fileid or a skip reason, and the
+# cover evidence). Mostly pre-2010, where the archive derives labels from a
+# subject-blind component table (Technical Drawing's Paper II(A) is listed as
+# "Aural Paper: Sight Test Vocal") and some HL/OL documents are swapped.
+# (view, year, raw fileid) -> replacement fields.
+ROW_FIXES_JSON = os.path.join(HERE, "archive-row-fixes.json")
 ROW_FIXES = {
-    # Deferred 2023: listed under Latin with a mistyped fileid, but its 28 pages
-    # are text-identical to LC067ALP008IV.pdf, the Irish-language Music Higher
-    # Listening paper already listed under Music. A duplicate, not a Latin paper.
-    ("deferredexams", "2023", "LC0067GLP008EV.pdf"): {
-        "skip": "duplicate of Music LC067ALP008IV.pdf misfiled under Latin"},
+    (f["view"], str(f["year"]), f["fileid"]): f
+    for f in (json.load(open(ROW_FIXES_JSON, encoding="utf-8")) if os.path.exists(ROW_FIXES_JSON) else [])
 }
+# A verified row fix may also name the scheme its paper pairs with.
+PAIR_OVERRIDES.update({
+    ("lb" if f["fileid"].startswith("LB") else "lc", int(f["year"]), f.get("fixedFileid", f["fileid"])): f["pairScheme"]
+    for f in ROW_FIXES.values() if f.get("pairScheme")
+})
 MALFORMED_LANG_RE = re.compile(r"\s*\((?:V ?|HJ|00)\)\s*$")
 # Fallback for fileids outside FILEID_RE (one-digit components, odd case):
 # level letter after the subject code, an optional paper digit, language
@@ -727,11 +744,11 @@ def decode_row(row, issues):
     # Pre-2010 uploads with a stray space before the extension
     # ('LC001BLPA00IV .pdf'): the index/Storage name drops it, the corpus keeps
     # the SEC name (rawFileid). Upper-case '.PDF' stays — those names are live.
-    fileid = re.sub(r"\s+(?=\.\w+$)", "", fix.get("fileid", fileid))
+    fileid = re.sub(r"\s+(?=\.\w+$)", "", fix.get("fixedFileid", fileid))
     label = html.unescape(fix.get("label", row["label"])).strip()
     # Malformed archive language tags ('(V )', '(HJ)') — the fileid carries it.
     label = MALFORMED_LANG_RE.sub("", label)
-    name = html.unescape(row["subjectName"]).strip()
+    name = html.unescape(fix.get("subjectName", row["subjectName"])).strip()
     exam = row["exam"]
     exam = EXAM_REHOME.get((exam, name), exam)
     name = NAME_MERGES.get((exam, name), name)
@@ -818,6 +835,7 @@ def decode_row(row, issues):
         return None
 
     kind, sitting = VIEW_KIND[row["view"]]
+    kind = fix.get("kind", kind)  # a paper the archive filed among the schemes
     paper_label = " / ".join(parts_out)
     if kind == "scheme":
         if component and component != "000":
