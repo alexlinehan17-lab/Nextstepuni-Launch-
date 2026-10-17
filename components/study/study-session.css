@@ -234,7 +234,9 @@
 .ss-notify-no { min-height: 46px; padding: 11px 14px; border: 0; background: transparent; color: var(--ss-muted); font: 600 13px/1 'DM Sans', sans-serif; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
 .ss-notify-no:hover { color: var(--ss-ink); }
 .ss-notify-status { display: inline-flex; align-items: center; gap: 8px; margin: 26px 0 0; color: var(--ss-muted); font-size: 13px; }
-.ss-notify-status svg { color: var(--ss-orange); }
+/* Set: a "done" mark, so success green (accent orange means "act here"). */
+.ss-notify-status svg { color: #3a8d5f; }
+.ss-room-ink .ss-notify-status svg { color: #7cc79a; }
 .ss-room-layers .ss-notify { background: #ffffffd9; }
 .ss-room-layers .ss-notify-yes { border-radius: 40px; }
 .ss-room-coaching .ss-notify { margin-top: 18px; }
