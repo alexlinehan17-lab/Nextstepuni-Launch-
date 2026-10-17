@@ -10,7 +10,7 @@
 import { describe, expect, it } from 'vitest';
 import { LC_SUBJECTS, LCA_SUBJECTS, LCVP_GRADES, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, gradeLadder, isValidTarget, lcSubjectLevels, subjectMatchesQuery } from '../components/subjectData';
 import { resolveSubjectId } from '../curriculumRegistry';
-import { PAPER_TRAIL_SUBJECTS } from '../paperTrailData';
+import { PAPER_TRAIL_INDEX, PAPER_TRAIL_SUBJECTS } from '../paperTrailData';
 import { baseName } from '../components/shared/subjectNames';
 import { profileDeckChoice } from '../components/MarkBank/MarkBank';
 import { SUBJECTS as MARK_BANK_SUBJECTS, deckSize, levelsFor } from '../components/MarkBank/deck';
@@ -23,6 +23,12 @@ const paperTrailMatch = (name: string, cycle: 'lc' | 'lca') =>
 
 // First examined in June 2027, so the SEC archive has no papers for them yet.
 const NO_PAPERS_YET = new Set(['Climate Action and Sustainable Development', 'Drama, Film and Theatre Studies']);
+
+// A Paper Trail subject with no sitting since 2022 is no longer a choice
+// (Agricultural Economics, Technical Drawing, archive-only course names).
+const STILL_EXAMINED_FROM = 2022;
+const stillExamined = (id: string) =>
+  (PAPER_TRAIL_INDEX[id] ?? []).some(entry => entry.year >= STILL_EXAMINED_FROM);
 
 describe('Leaving Cert subject catalogue', () => {
   it('has no duplicate names', () => {
@@ -40,11 +46,11 @@ describe('Leaving Cert subject catalogue', () => {
 
   it('offers every Paper Trail Leaving Cert subject that is still examined', () => {
     const offered = new Set(LC_SUBJECTS.map(subject => paperTrailMatch(subject.name, 'lc')?.id).filter(Boolean));
-    // Agricultural Economics was last examined in 2019; History (Early Modern)
-    // is a field of study within History, which students pick as History.
-    const retiredOrFolded = new Set(['agricultural-economics', 'history-early-modern']);
+    // History (Early Modern) is a field of study within History, which
+    // students pick as History.
+    const folded = new Set(['history-early-modern']);
     const missing = PAPER_TRAIL_SUBJECTS
-      .filter(subject => subject.cycle === 'lc' && !offered.has(subject.id) && !retiredOrFolded.has(subject.id))
+      .filter(subject => subject.cycle === 'lc' && stillExamined(subject.id) && !offered.has(subject.id) && !folded.has(subject.id))
       .map(subject => subject.name);
     expect(missing).toEqual([]);
   });
@@ -110,7 +116,7 @@ describe('Leaving Cert Applied catalogue', () => {
 
   it('offers every LCA course the SEC examines', () => {
     const offered = new Set(LCA_SUBJECTS.map(subject => paperTrailMatch(subject.name, 'lca')?.id).filter(Boolean));
-    expect(PAPER_TRAIL_SUBJECTS.filter(subject => subject.cycle === 'lca' && !offered.has(subject.id)).map(subject => subject.name)).toEqual([]);
+    expect(PAPER_TRAIL_SUBJECTS.filter(subject => subject.cycle === 'lca' && stillExamined(subject.id) && !offered.has(subject.id)).map(subject => subject.name)).toEqual([]);
   });
 
   it('offers the programme courses without an exam, and Leaving Cert Maths', () => {
