@@ -7,7 +7,7 @@
  * onboarding", workshop feedback 12 Oct 2026). Pure, so the page stays a view.
  */
 
-import { DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade, type StudentSubjectProfile, type YearGroup } from '../subjectData';
+import { DAYS_OF_WEEK, LC_SUBJECTS, LEVEL_LABELS, getPointsForGrade, type Grade, type StudentSubjectProfile, type YearGroup } from '../subjectData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, VISION_CARD_ART } from '../../northStarData';
 import { isLcaYear, yearGroupLabel, yearGroupToCurriculumLevel } from '../../utils/authUtils';
 import { getSubjectFill } from '../../utils/subjectColors';
@@ -33,7 +33,29 @@ export interface SetupSummary {
   northStar: { title: string; statement: string; vision: { id: string; label: string; art: string | null }[] } | null;
 }
 
-const LEVEL_LABEL = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' } as const;
+
+/** Students with an exam ahead can set its date: everyone except 1st and 2nd
+ *  year Junior Cycle (no state exam yet) and students who have finished. */
+export function canEditExamDate(year: YearGroup | undefined): boolean {
+  return Boolean(year) && year !== '1st' && year !== '2nd' && year !== 'graduated';
+}
+
+const isoDay = (date: Date) =>
+  `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+/** The earliest and latest dates a student can pick: today to three years on. */
+export function examDateBounds(today = new Date()): { min: string; max: string } {
+  return { min: isoDay(today), max: isoDay(new Date(today.getFullYear() + 3, today.getMonth(), today.getDate())) };
+}
+
+/** Why a chosen exam date can't be saved, or null when it can. */
+export function examDateProblem(value: string, today = new Date()): string | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(new Date(`${value}T00:00:00`).getTime())) return 'Choose a date.';
+  const { min, max } = examDateBounds(today);
+  if (value < min) return 'Choose a date that hasn’t passed yet.';
+  if (value > max) return 'Choose a date in the next three years.';
+  return null;
+}
 
 export function setupYearLabel(year: YearGroup | undefined): string {
   if (year === 'LCA1') return 'LCA Year 1';
@@ -63,7 +85,7 @@ export function summariseSetup(
   const year = yearGroup ?? profile?.yearGroup;
   const subjects: SetupSubjectRow[] = (profile?.subjects ?? []).map(subject => ({
     name: subject.subjectName,
-    level: LEVEL_LABEL[subject.level] ?? subject.level,
+    level: LEVEL_LABELS[subject.level] ?? subject.level,
     current: subject.currentGrade ?? subject.currentBand ?? null,
     target: subject.targetGrade ?? subject.targetBand ?? null,
     fill: getSubjectFill(subject.subjectName),

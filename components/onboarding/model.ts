@@ -1,4 +1,4 @@
-import { DAYS_OF_WEEK, JC_BANDS, JC_SUBJECTS, LC_SUBJECTS, LCA_SUBJECTS, getGradesForLevel, getPointsForGrade, type Grade, type JCBand, type Level, type StudentSubject, type StudentSubjectProfile, type YearGroup } from '../subjectData';
+import { DAYS_OF_WEEK, JC_BANDS, JC_SUBJECTS, LC_SUBJECTS, LCA_SUBJECTS, getGradesForLevel, getPointsForGrade, lcSubjectLevels, type Grade, type JCBand, type Level, type StudentSubject, type StudentSubjectProfile, type YearGroup } from '../subjectData';
 import { getActiveCategories, getVisionCardsForLevel } from '../../northStarData';
 import { isLcaYear, yearGroupToCurriculumLevel } from '../../utils/authUtils';
 import { getDefaultExamDate } from '../../utils/examDates';
@@ -30,11 +30,21 @@ export const daysUntil = (value: string, today = new Date()) => {
   const now = new Date(today.getFullYear(), today.getMonth(), today.getDate());
   return Math.ceil((new Date(`${value}T00:00:00`).getTime() - now.getTime()) / 86400000);
 };
-export function emptyChoice(year: YearGroup | null, name: string): SubjectChoice {
-  const common = isLcaYear(year ?? undefined) || (cycleFor(year) === 'junior' && !JC_SUBJECTS.find(s => s.name === name)?.jcHasLevelChoice);
-  return { level: common ? 'common' : null, current: '', target: '', reviewed: false };
+/** The levels a student may choose between for a subject in their programme. */
+export function levelOptions(year: YearGroup | null, name: string): Level[] {
+  if (isLcaYear(year ?? undefined)) return ['common'];
+  if (cycleFor(year) === 'junior') return JC_SUBJECTS.find(s => s.name === name)?.jcHasLevelChoice ? ['higher', 'ordinary'] : ['common'];
+  return lcSubjectLevels(name);
 }
-export const choicesFor = (year: YearGroup | null, level: Level | null): readonly string[] => cycleFor(year) === 'junior' ? JC_BANDS : level && level !== 'common' ? getGradesForLevel(level) : [];
+export function emptyChoice(year: YearGroup | null, name: string): SubjectChoice {
+  // A subject examined at one level only starts on that level.
+  const levels = levelOptions(year, name);
+  return { level: levels.length === 1 ? levels[0] : null, current: '', target: '', reviewed: false };
+}
+/** Grade choices for a level. LCA courses have none here (credits, no CAO
+ *  points); in the established LC the one common-level subject is LCVP Link
+ *  Modules, graded Distinction / Merit / Pass. */
+export const choicesFor = (year: YearGroup | null, level: Level | null): readonly string[] => cycleFor(year) === 'junior' ? JC_BANDS : !level || isLcaYear(year ?? undefined) ? [] : getGradesForLevel(level);
 export function choiceReady(year: YearGroup | null, choice?: SubjectChoice): boolean {
   if (!choice?.level) return false;
   const values = choicesFor(year, choice.level);
@@ -68,7 +78,7 @@ export function readDraft(uid: string, mode: string, targetYear?: 'TY' | '5th', 
       const next = emptyChoice(year, name);
       const config = raw ? saved.configs?.[name] : cycleFor(year) === 'junior' ? saved.subjectBands?.[name] : saved.subjectConfigs?.[name];
       if (config && typeof config === 'object') {
-        if (next.level !== 'common' && ['higher', 'ordinary'].includes(config.level)) next.level = config.level;
+        if (next.level === null && levelOptions(year, name).includes(config.level)) next.level = config.level;
         const values = choicesFor(year, next.level);
         const current = config.current ?? config.currentGrade ?? config.currentBand;
         const target = config.target ?? config.targetGrade ?? config.targetBand;

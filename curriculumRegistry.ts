@@ -2366,7 +2366,7 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'physics-chemistry': 'physics-and-chemistry',
   'home-economics-s-and-s': 'home-economics',
   'link-modules': 'lcvp-link-modules',
-  maths: 'mathematics', math: 'mathematics',
+  maths: 'mathematics', math: 'mathematics', 'leaving cert maths': 'mathematics',
   // Both spellings. Mark Bank's deck id is the hyphenated 'applied-maths' —
   // normalise() only collapses whitespace, so the spaced alias never matched
   // it and every Applied Maths card resolved into no specification at all.
@@ -2379,9 +2379,10 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'design communication graphics': 'design-and-communication-graphics',
   'computer studies': 'computer-science', cs: 'computer-science',
   'home ec': 'home-economics', 'home economics': 'home-economics',
-  lcpe: 'physical-education', pe: 'physical-education',
+  lcpe: 'physical-education', pe: 'physical-education', 'physical education': 'physical-education',
   'construction technology': 'construction-studies',
   'life community and work': 'lcvp-link-modules', lcvp: 'lcvp-link-modules',
+  'lcvp link modules': 'lcvp-link-modules', 'link modules': 'lcvp-link-modules',
 };
 
 export function resolveSubjectId(subject: string): string | undefined {

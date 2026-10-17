@@ -7,14 +7,16 @@
  * it. No new store and no new editing logic.
  */
 
-import { ArrowUpRight, PencilLine } from 'lucide-react';
-import KobraScope, { Button, Tabs, TabsList, TabsTrigger } from '../approved-ui-runtime';
+import { useId, useState } from 'react';
+import { ArrowUpRight, CalendarDays, PencilLine } from 'lucide-react';
+import KobraScope, { Button, Input, Tabs, TabsList, TabsTrigger } from '../approved-ui-runtime';
 import PageHeader from '../ui/PageHeader';
 import ThemeArtwork from '../ThemeArtwork';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import type { StudentSubjectProfile, YearGroup } from '../subjectData';
 import type { NorthStar } from '../../types';
-import { summariseSetup } from './yourSetupModel';
+import { canEditExamDate, examDateBounds, examDateProblem, summariseSetup } from './yourSetupModel';
+import { getDefaultExamDate } from '../../utils/examDates';
 import './your-setup.css';
 
 interface Props {
@@ -25,6 +27,8 @@ interface Props {
   onBack: () => void;
   onFinishSetup: () => void;
   onEditSubjects: () => void;
+  /** Saves a new exam start date (YYYY-MM-DD) onto the subject profile. */
+  onSaveExamDate?: (examStartDate: string) => void;
   onEditNorthStar: () => void;
   onOpenSettings: () => void;
   onOpenPlanner: () => void;
@@ -45,6 +49,56 @@ function Section({ index, title, action, className = '', children }: {
   );
 }
 
+function ExamDateEditor({ current, onSave }: { current: string | null; onSave: (examStartDate: string) => void }) {
+  const [editing, setEditing] = useState(false);
+  const [value, setValue] = useState('');
+  const [problem, setProblem] = useState<string | null>(null);
+  const id = useId();
+  const { min, max } = examDateBounds();
+
+  if (!editing) {
+    return (
+      <Button variant="outline" className="nsu-ink-outline ys-edit ys-date-edit" onClick={() => { setValue(current ?? getDefaultExamDate()); setProblem(null); setEditing(true); }}>
+        {current ? 'Change exam date' : 'Set exam date'}<CalendarDays aria-hidden="true" />
+      </Button>
+    );
+  }
+
+  return (
+    <form
+      className="ys-date-form"
+      aria-label="Exam start date"
+      noValidate
+      onSubmit={event => {
+        event.preventDefault();
+        const reason = examDateProblem(value);
+        if (reason) { setProblem(reason); return; }
+        onSave(value);
+        setEditing(false);
+      }}
+    >
+      <label htmlFor={`${id}-date`}>When do your exams start?</label>
+      <Input
+        id={`${id}-date`}
+        type="date"
+        value={value}
+        min={min}
+        max={max}
+        required
+        aria-invalid={problem ? true : undefined}
+        aria-describedby={`${id}-hint${problem ? ` ${id}-problem` : ''}`}
+        onChange={event => { setValue(event.target.value); setProblem(null); }}
+      />
+      <p id={`${id}-hint`} className="ys-meta">The Leaving Cert and Junior Cycle usually start on the first Wednesday of June.</p>
+      {problem && <p id={`${id}-problem`} className="ys-date-problem" role="alert">{problem}</p>}
+      <div className="ys-date-actions">
+        <Button type="submit" className="ys-primary">Save date</Button>
+        <Button type="button" variant="outline" className="nsu-ink-outline" onClick={() => setEditing(false)}>Cancel</Button>
+      </div>
+    </form>
+  );
+}
+
 function EditButton({ label, onClick, external = false }: { label: string; onClick: () => void; external?: boolean }) {
   return (
     <Button variant="outline" className="nsu-ink-outline ys-edit" onClick={onClick}>
@@ -54,7 +108,7 @@ function EditButton({ label, onClick, external = false }: { label: string; onCli
 }
 
 export default function YourSetupView({
-  profile, northStar, yearGroup, darkMode, onBack, onFinishSetup, onEditSubjects,
+  profile, northStar, yearGroup, darkMode, onBack, onFinishSetup, onEditSubjects, onSaveExamDate,
   onEditNorthStar, onOpenSettings, onOpenPlanner, onSetDarkMode,
 }: Props) {
   const mobileAppDesign = useMobileAppDesign();
@@ -96,6 +150,9 @@ export default function YourSetupView({
                   <div><dt>Exams start</dt><dd>{setup.exam.label}</dd></div>
                   <div><dt>Time to go</dt><dd>{setup.exam.daysAway > 0 ? `${setup.exam.daysAway} days` : 'Underway'}</dd></div>
                 </dl>
+              )}
+              {profile && onSaveExamDate && canEditExamDate(yearGroup ?? profile.yearGroup) && (
+                <div className="ys-date"><ExamDateEditor current={profile.examStartDate} onSave={onSaveExamDate} /></div>
               )}
             </Section>
 
