@@ -146,7 +146,9 @@ def main():
         [GCLOUD, "storage", "ls", "-r", f"{BUCKET}/papers/**"],
         capture_output=True, text=True,
     )
-    listed = [l for l in out.stdout.splitlines() if l.endswith((".pdf", ".jpg"))]
+    # The SEC ships some files as .PDF; object names are case-sensitive, so
+    # match the extension case-insensitively (208 objects were missed otherwise).
+    listed = [l for l in out.stdout.splitlines() if l.lower().endswith((".pdf", ".jpg"))]
     if subset:
         present = {l.split(BUCKET + "/", 1)[-1] for l in listed}
         absent = [r["remote"] for r in rows if r["remote"] not in present]
