@@ -7,7 +7,14 @@
 
 export type Grade =
   | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
-  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8'
+  | LcvpGrade;
+
+/** LCVP Link Modules is one common-level exam graded Distinction / Merit /
+ *  Pass, and CAO counts it among the best six (66 / 46 / 28 points). It is the
+ *  only established Leaving Cert subject on this scale, so 'common' level in
+ *  the LC programme means these grades. */
+export type LcvpGrade = 'Distinction' | 'Merit' | 'Pass';
 
 // LC subjects use 'higher' | 'ordinary'. Junior Cycle subjects without an
 // H/O choice (all JC subjects except English / Irish / Mathematics) carry
@@ -76,6 +83,10 @@ export interface LCSubject {
   name: string;
   group: 'languages' | 'stem' | 'business' | 'humanities' | 'practical' | 'creative';
   isMaths?: boolean;
+  /** Levels the SEC examines. Omitted means Higher and Ordinary. The
+   *  non-curricular EU languages and Ukrainian are Higher only; LCVP Link
+   *  Modules is a single common-level paper. */
+  levels?: Level[];
 }
 
 
@@ -112,6 +123,13 @@ export const LCA_SUBJECTS: LCSubject[] = [
   { name: 'Crafts & Design', group: 'creative' },
 ];
 
+const HIGHER_ONLY: Level[] = ['higher'];
+
+/** Established Leaving Cert subjects a student can sit. Names match the Paper
+ *  Trail archive display names or their aliases (paperTrailData cycle 'lc') and
+ *  resolve through curriculumRegistry's resolveSubjectId, so a chosen subject
+ *  links to its papers, Mark Bank deck and Topic Atlas
+ *  (test/subjectCatalogueLinks.test.ts holds every entry to that). */
 export const LC_SUBJECTS: LCSubject[] = [
   // Languages
   { name: 'English', group: 'languages' },
@@ -121,9 +139,33 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Spanish', group: 'languages' },
   { name: 'Italian', group: 'languages' },
   { name: 'Japanese', group: 'languages' },
+  { name: 'Mandarin Chinese', group: 'languages' },
+  { name: 'Russian', group: 'languages' },
+  { name: 'Arabic', group: 'languages' },
+  { name: 'Lithuanian', group: 'languages' },
+  { name: 'Polish', group: 'languages' },
+  { name: 'Portuguese', group: 'languages' },
   { name: 'Latin', group: 'languages' },
   { name: 'Ancient Greek', group: 'languages' },
-  { name: 'Arabic', group: 'languages' },
+  { name: 'Hebrew Studies', group: 'languages' },
+  // Non-curricular EU languages and Ukrainian: examined at Higher level only,
+  // for students with a home or community connection to the language.
+  { name: 'Bulgarian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Croatian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Czech', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Danish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Dutch', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Estonian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Finnish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Hungarian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Latvian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Maltese', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Modern Greek', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Romanian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Slovakian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Slovenian', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Swedish', group: 'languages', levels: HIGHER_ONLY },
+  { name: 'Ukrainian', group: 'languages', levels: HIGHER_ONLY },
   // STEM
   { name: 'Mathematics', group: 'stem', isMaths: true },
   { name: 'Applied Maths', group: 'stem' },
@@ -137,6 +179,7 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Accounting', group: 'business' },
   { name: 'Business', group: 'business' },
   { name: 'Economics', group: 'business' },
+  { name: 'LCVP Link Modules', group: 'business', levels: ['common'] },
   // Humanities
   { name: 'History', group: 'humanities' },
   { name: 'Geography', group: 'humanities' },
@@ -150,11 +193,30 @@ export const LC_SUBJECTS: LCSubject[] = [
   { name: 'Engineering', group: 'practical' },
   { name: 'DCG', group: 'practical' },
   { name: 'Technology', group: 'practical' },
+  { name: 'Physical Education', group: 'practical' },
   // Creative
   { name: 'Art', group: 'creative' },
   { name: 'Music', group: 'creative' },
   { name: 'Drama, Film and Theatre Studies', group: 'creative' },
 ];
+
+const DEFAULT_LC_LEVELS: Level[] = ['higher', 'ordinary'];
+
+/** The levels a Leaving Cert subject is examined at, in display order. */
+export function lcSubjectLevels(name: string): Level[] {
+  return LC_SUBJECTS.find(subject => subject.name === name)?.levels ?? DEFAULT_LC_LEVELS;
+}
+
+export const LEVEL_LABELS: Record<Level, string> = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' };
+
+/** One line for a subject whose level is fixed, or null when the student chooses. */
+export function fixedLevelNote(name: string): string | null {
+  const levels = lcSubjectLevels(name);
+  if (levels.length !== 1) return null;
+  return levels[0] === 'common'
+    ? `${name} is one common-level exam, graded Distinction, Merit or Pass.`
+    : `${name} is examined at Higher level only.`;
+}
 
 export const SUBJECT_GROUP_LABELS: Record<LCSubject['group'], string> = {
   languages: 'Languages',
@@ -269,6 +331,43 @@ export const ORDINARY_POINTS: Record<string, number> = {
   O1: 56, O2: 46, O3: 37, O4: 28, O5: 20, O6: 12, O7: 0, O8: 0,
 };
 
+export const LCVP_GRADES: Grade[] = ['Distinction', 'Merit', 'Pass'];
+
+export const LCVP_POINTS: Record<string, number> = {
+  Distinction: 66, Merit: 46, Pass: 28,
+};
+
+export type GradeScale = 'higher' | 'ordinary' | 'lcvp';
+
+/** Which scale a grade belongs to, read from the grade itself. */
+export function gradeScale(grade: Grade | undefined | null): GradeScale | null {
+  if (!grade || typeof grade !== 'string') return null;
+  if (Object.prototype.hasOwnProperty.call(LCVP_POINTS, grade)) return 'lcvp';
+  if (grade.startsWith('H')) return 'higher';
+  if (grade.startsWith('O')) return 'ordinary';
+  return null;
+}
+
+/** Every grade on the same scale as `grade`, best first. */
+export function gradeLadder(grade: Grade | undefined | null): Grade[] {
+  const scale = gradeScale(grade);
+  return scale === 'lcvp' ? LCVP_GRADES : scale === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
+}
+
+/** A sensible starting pair (current, target) on a level's scale. */
+export function defaultGradesForLevel(level: Level): { currentGrade: Grade; targetGrade: Grade } {
+  const grades = getGradesForLevel(level);
+  return level === 'common'
+    ? { currentGrade: 'Merit', targetGrade: 'Distinction' }
+    : { currentGrade: grades[3], targetGrade: grades[1] };
+}
+
+/** A new LC subject's starting level and grades, respecting fixed levels. */
+export function defaultSubjectConfig(name: string): { level: Level; currentGrade: Grade; targetGrade: Grade } {
+  const level = lcSubjectLevels(name)[0];
+  return { level, ...defaultGradesForLevel(level) };
+}
+
 export const DAYS_OF_WEEK = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] as const;
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -283,6 +382,7 @@ export function getPointsForGrade(grade: Grade | undefined | null, isMaths: bool
   // getStudentCurrentCAO end up giving JC students a CAO total of 0, which
   // is the correct semantic (no LC points to compute).
   if (!grade || typeof grade !== 'string') return 0;
+  if (gradeScale(grade) === 'lcvp') return LCVP_POINTS[grade];
   let points = grade.startsWith('H')
     ? (HIGHER_POINTS[grade] ?? 0)
     : (ORDINARY_POINTS[grade] ?? 0);
@@ -297,6 +397,7 @@ export function getPointsForGrade(grade: Grade | undefined | null, isMaths: bool
  * Returns the grade options for a given level.
  */
 export function getGradesForLevel(level: Level): Grade[] {
+  if (level === 'common') return LCVP_GRADES;
   return level === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
 }
 
@@ -308,18 +409,15 @@ export function getGradesForLevel(level: Level): Grade[] {
  */
 export function getGradeIndex(grade: Grade | undefined): number {
   if (!grade) return ORDINARY_GRADES.length; // off-scale → lowest priority
-  if (grade.startsWith('H')) {
-    return HIGHER_GRADES.indexOf(grade);
-  }
-  return ORDINARY_GRADES.indexOf(grade);
+  return gradeLadder(grade).indexOf(grade);
 }
 
 /**
  * Check if target grade is at same level or better than current.
  */
 export function isValidTarget(current: Grade, target: Grade): boolean {
-  // Must be same level prefix
-  if (current.charAt(0) !== target.charAt(0)) return false;
+  // Must be on the same scale
+  if (gradeScale(current) !== gradeScale(target)) return false;
   return getGradeIndex(target) <= getGradeIndex(current);
 }
 
@@ -339,7 +437,7 @@ export function computeBargains(profile: StudentSubjectProfile): Bargain[] {
 
   for (const sub of profile.subjects) {
     const isMaths = LC_SUBJECTS.find(lc => lc.name === sub.subjectName)?.isMaths ?? false;
-    const grades = sub.level === 'higher' ? HIGHER_GRADES : ORDINARY_GRADES;
+    const grades = gradeLadder(sub.currentGrade);
     const currentIdx = grades.indexOf(sub.currentGrade);
     if (currentIdx <= 0) continue;
 

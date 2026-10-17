@@ -230,6 +230,7 @@ export interface AppRouterProps {
   setPassportOpen: (open: boolean) => void;
   setChangeSubjectsOpen: (open: boolean) => void;
   setNorthStarEditOpen: (open: boolean) => void;
+  handleExamDateSave: (examStartDate: string) => void;
 
   // Cosmetic unlocks (only setters needed at this layer; values flow through SettingsContext)
   setUnlockedAvatarSeeds: (seeds: string[]) => void;
@@ -311,6 +312,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     transitionToSeniorMode, transitionTargetYear,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
@@ -612,6 +614,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onBack={handleBackToTree}
           onFinishSetup={() => nav.navigateToOnboarding()}
           onEditSubjects={() => setChangeSubjectsOpen(true)}
+          onSaveExamDate={handleExamDateSave}
           onEditNorthStar={() => setNorthStarEditOpen(true)}
           onOpenSettings={() => setSettingsOpen(true)}
           onOpenPlanner={() => nav.navigateToInnovationZone('planner')}

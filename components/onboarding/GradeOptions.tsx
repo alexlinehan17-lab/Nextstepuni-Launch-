@@ -5,12 +5,13 @@ import {
   choiceReady,
   cycleFor,
   emptyChoice,
+  levelOptions,
   pointsFor,
   type GradeChoice,
   type SetupDraft,
   type SubjectChoice,
 } from "./model";
-import type { Level } from "../subjectData";
+import { LEVEL_LABELS, type Level } from "../subjectData";
 import { getSubjectFill } from "../../utils/subjectColors";
 import "./grade-options.css";
 import SetupSelect from "./SetupSelect";
@@ -110,21 +111,24 @@ export default function GradeOptions({
     value === "later" ? "Later" : value || "—";
   const setLevel = (name: string, level: Level) =>
     onUpdate(name, { level, ...(junior ? {} : { current: "", target: "" }) });
-  const levelControl = (name: string, config: SubjectChoice) => (
-    <div className="grade-level">
-      {config.level === "common" ? (
-        <span>Common</span>
-      ) : (
-        <SetupSelect
-          label={`${name} level`}
-          value={config.level || ""}
-          onChange={value => setLevel(name, value as Level)}
-          placeholder="Level"
-          options={[{ value: "higher", label: "Higher" }, { value: "ordinary", label: "Ordinary" }]}
-        />
-      )}
-    </div>
-  );
+  const levelControl = (name: string, config: SubjectChoice) => {
+    const levels = levelOptions(draft.year, name);
+    return (
+      <div className="grade-level">
+        {levels.length === 1 ? (
+          <span>{LEVEL_LABELS[levels[0]]}</span>
+        ) : (
+          <SetupSelect
+            label={`${name} level`}
+            value={config.level || ""}
+            onChange={value => setLevel(name, value as Level)}
+            placeholder="Level"
+            options={levels.map(level => ({ value: level, label: LEVEL_LABELS[level] }))}
+          />
+        )}
+      </div>
+    );
+  };
   const gradeControl = (
     name: string,
     config: SubjectChoice,

@@ -35,6 +35,29 @@ export interface SetupSummary {
 
 const LEVEL_LABEL = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' } as const;
 
+/** Students with an exam ahead can set its date: everyone except 1st and 2nd
+ *  year Junior Cycle (no state exam yet) and students who have finished. */
+export function canEditExamDate(year: YearGroup | undefined): boolean {
+  return Boolean(year) && year !== '1st' && year !== '2nd' && year !== 'graduated';
+}
+
+const isoDay = (date: Date) =>
+  `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+
+/** The earliest and latest dates a student can pick: today to three years on. */
+export function examDateBounds(today = new Date()): { min: string; max: string } {
+  return { min: isoDay(today), max: isoDay(new Date(today.getFullYear() + 3, today.getMonth(), today.getDate())) };
+}
+
+/** Why a chosen exam date can't be saved, or null when it can. */
+export function examDateProblem(value: string, today = new Date()): string | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || Number.isNaN(new Date(`${value}T00:00:00`).getTime())) return 'Choose a date.';
+  const { min, max } = examDateBounds(today);
+  if (value < min) return 'Choose a date that hasn’t passed yet.';
+  if (value > max) return 'Choose a date in the next three years.';
+  return null;
+}
+
 export function setupYearLabel(year: YearGroup | undefined): string {
   if (year === 'LCA1') return 'LCA Year 1';
   if (year === 'LCA2') return 'LCA Year 2';

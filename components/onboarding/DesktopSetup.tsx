@@ -2,7 +2,7 @@ import React from "react";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
-import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
+import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
 import { daysUntil, needsDate, type GradeChoice } from "./model";
@@ -51,6 +51,8 @@ export default function DesktopSetup(props: OnboardingProps) {
     nextSubject,
     config,
     gradeChoices,
+    levelChoices,
+    levelNote,
     points,
     studyDays,
     stage,
@@ -605,11 +607,11 @@ export default function DesktopSetup(props: OnboardingProps) {
                   )}
                   {draft.step === "grades" && (
                     <>
-                      {config.level !== "common" && (
+                      {levelChoices.length > 1 && (
                         <fieldset>
                           <legend className="setup-label">Your level</legend>
                           <div className="setup-levels">
-                            {(["higher", "ordinary"] as Level[]).map(
+                            {levelChoices.map(
                               (level) => (
                                 <button
                                   type="button"
@@ -625,13 +627,14 @@ export default function DesktopSetup(props: OnboardingProps) {
                                     })
                                   }
                                 >
-                                  {level === "higher" ? "Higher" : "Ordinary"}
+                                  {LEVEL_LABELS[level]}
                                 </button>
                               ),
                             )}
                           </div>
                         </fieldset>
                       )}
+                      {levelNote && <p className="setup-description">{levelNote}</p>}
                       <div
                         className={`setup-grade-pickers ${junior ? "setup-stack" : ""}`}
                       >

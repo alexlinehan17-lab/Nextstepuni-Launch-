@@ -2379,9 +2379,10 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'design communication graphics': 'design-and-communication-graphics',
   'computer studies': 'computer-science', cs: 'computer-science',
   'home ec': 'home-economics', 'home economics': 'home-economics',
-  lcpe: 'physical-education', pe: 'physical-education',
+  lcpe: 'physical-education', pe: 'physical-education', 'physical education': 'physical-education',
   'construction technology': 'construction-studies',
   'life community and work': 'lcvp-link-modules', lcvp: 'lcvp-link-modules',
+  'lcvp link modules': 'lcvp-link-modules', 'link modules': 'lcvp-link-modules',
 };
 
 export function resolveSubjectId(subject: string): string | undefined {
