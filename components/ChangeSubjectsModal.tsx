@@ -10,7 +10,7 @@ import ActionButton from './ui/ActionButton';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, LCA_SUBJECTS, defaultGradesForLevel, defaultSubjectConfig, getGradeIndex, type LCSubject,
+  LC_SUBJECTS, LCA_SUBJECTS, defaultGradesForLevel, defaultSubjectConfig, gradeRank, type LCSubject,
 } from './subjectData';
 
 // ─── Props ───────────────────────────────────────────────────────────────────
@@ -86,7 +86,7 @@ const ChangeSubjectsModal: React.FC<ChangeSubjectsModalProps> = ({ isOpen, onClo
         Object.assign(next, defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
-        if (getGradeIndex(next.targetGrade) > getGradeIndex(next.currentGrade)) {
+        if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
           next.targetGrade = next.currentGrade;
         }
       } else {

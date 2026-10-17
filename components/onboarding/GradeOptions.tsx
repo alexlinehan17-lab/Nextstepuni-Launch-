@@ -2,6 +2,7 @@ import React, { type RefObject } from "react";
 import { ArrowRight } from "lucide-react";
 import {
   choicesFor,
+  targetChoicesFor,
   choiceReady,
   cycleFor,
   emptyChoice,
@@ -134,7 +135,9 @@ export default function GradeOptions({
     config: SubjectChoice,
     field: "current" | "target",
   ) => {
-    const grades = choicesFor(draft.year, config.level);
+    const grades = field === "target"
+      ? targetChoicesFor(draft.year, config.level)
+      : choicesFor(draft.year, config.level);
     const accessible = `${name} ${field} ${junior ? "band" : "grade"}`;
     if (layout === "sheet")
       return (

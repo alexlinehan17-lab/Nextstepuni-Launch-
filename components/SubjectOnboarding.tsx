@@ -12,7 +12,7 @@ import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCar
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
   LC_SUBJECTS, LEVEL_LABELS, defaultGradesForLevel, defaultSubjectConfig, getPointsForGrade,
-  getGradeIndex, DAYS_OF_WEEK,
+  gradeRank, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
 import { getDefaultExamDate } from '../utils/examDates';
@@ -113,7 +113,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         Object.assign(next, defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
-        if (getGradeIndex(next.targetGrade) > getGradeIndex(next.currentGrade)) {
+        if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
           next.targetGrade = next.currentGrade;
         }
       } else {
