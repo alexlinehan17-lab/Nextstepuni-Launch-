@@ -2,7 +2,7 @@ import React from "react";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
-import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS } from "../subjectData";
+import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
 import { daysUntil, needsDate, type GradeChoice } from "./model";
@@ -562,9 +562,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                         {subjectList
                           .filter((item) =>
                             query.trim()
-                              ? item.name
-                                  .toLocaleLowerCase()
-                                  .includes(query.trim().toLocaleLowerCase())
+                              ? subjectMatchesQuery(item, query)
                               : item.group === subjectGroup,
                           )
                           .map((item) => (
@@ -586,11 +584,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                           ))}
                       </div>
                       {query.trim() &&
-                        !subjectList.some((s) =>
-                          s.name
-                            .toLocaleLowerCase()
-                            .includes(query.trim().toLocaleLowerCase()),
-                        ) && (
+                        !subjectList.some((s) => subjectMatchesQuery(s, query)) && (
                           <p className="setup-description">
                             No subjects found. Try another name or{" "}
                             <button

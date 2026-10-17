@@ -8,13 +8,14 @@
  * nowhere silently gives the student an empty subject.
  */
 import { describe, expect, it } from 'vitest';
-import { LC_SUBJECTS, LCA_SUBJECTS, LCVP_GRADES, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, gradeLadder, isValidTarget, lcSubjectLevels } from '../components/subjectData';
+import { LC_SUBJECTS, LCA_SUBJECTS, LCVP_GRADES, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, gradeLadder, isValidTarget, lcSubjectLevels, subjectMatchesQuery } from '../components/subjectData';
 import { resolveSubjectId } from '../curriculumRegistry';
 import { PAPER_TRAIL_SUBJECTS } from '../paperTrailData';
 import { baseName } from '../components/shared/subjectNames';
 import { profileDeckChoice } from '../components/MarkBank/MarkBank';
 import { SUBJECTS as MARK_BANK_SUBJECTS, deckSize, levelsFor } from '../components/MarkBank/deck';
 import { choicesFor, emptyChoice, levelOptions } from '../components/onboarding/model';
+import { getSubjectStarCrew } from '../data/subjectStarCrew';
 
 const paperTrailMatch = (name: string, cycle: 'lc' | 'lca') =>
   PAPER_TRAIL_SUBJECTS.find(subject => subject.cycle === cycle
@@ -101,7 +102,56 @@ describe('levels and the LCVP grade scale', () => {
 });
 
 describe('Leaving Cert Applied catalogue', () => {
-  it.each(LCA_SUBJECTS.map(subject => subject.name))('%s links to its Paper Trail papers', name => {
+  // Courses with an SEC exam link to their LCA papers. Courses assessed only by
+  // key assignments have none, and LCA students may sit Leaving Cert Maths.
+  it.each(LCA_SUBJECTS.filter(subject => !subject.noWrittenExam && subject.name !== 'Leaving Cert Maths').map(subject => subject.name))('%s links to its Paper Trail papers', name => {
     expect(paperTrailMatch(name, 'lca')).toBeTruthy();
+  });
+
+  it('offers every LCA course the SEC examines', () => {
+    const offered = new Set(LCA_SUBJECTS.map(subject => paperTrailMatch(subject.name, 'lca')?.id).filter(Boolean));
+    expect(PAPER_TRAIL_SUBJECTS.filter(subject => subject.cycle === 'lca' && !offered.has(subject.id)).map(subject => subject.name)).toEqual([]);
+  });
+
+  it('offers the programme courses without an exam, and Leaving Cert Maths', () => {
+    const names = LCA_SUBJECTS.map(subject => subject.name);
+    for (const name of ['Vocational Preparation & Guidance', 'Introduction to ICT', 'Arts Education', 'Leisure and Recreation', 'Science', 'Religious Education', 'Leaving Cert Maths'])
+      expect(names).toContain(name);
+    expect(resolveSubjectId('Leaving Cert Maths')).toBe('mathematics');
+  });
+});
+
+describe('artwork', () => {
+  it('draws every subject in both pickers instead of falling back to initials', () => {
+    expect([...LC_SUBJECTS, ...LCA_SUBJECTS].filter(subject => !getSubjectStarCrew(subject.name)).map(subject => subject.name)).toEqual([]);
+  });
+});
+
+describe('Foundation level and other names', () => {
+  it('offers Foundation for Mathematics and Irish only', () => {
+    expect(lcSubjectLevels('Mathematics')).toEqual(['higher', 'ordinary', 'foundation']);
+    expect(lcSubjectLevels('Irish')).toEqual(['higher', 'ordinary', 'foundation']);
+    expect(LC_SUBJECTS.filter(subject => subject.levels?.includes('foundation')).map(subject => subject.name)).toEqual(['Irish', 'Mathematics']);
+  });
+
+  it('counts Foundation grades as CAO does', () => {
+    expect(getGradesForLevel('foundation')[0]).toBe('F1');
+    expect(['F1', 'F2', 'F3'].map(grade => getPointsForGrade(grade as never, true))).toEqual([20, 12, 0]);
+    expect(isValidTarget('F3', 'F1')).toBe(true);
+    expect(isValidTarget('F3', 'O6')).toBe(false);
+    expect(choicesFor('6th', 'foundation')).toEqual(['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8']);
+  });
+
+  it('practises Foundation in the Ordinary Mark Bank deck', () => {
+    expect(profileDeckChoice([{ subjectName: 'Mathematics', level: 'foundation' }])).toEqual({ subjectId: 'maths', level: 'ordinary' });
+  });
+
+  it('finds a subject by the name students search for', () => {
+    const find = (query: string) => LC_SUBJECTS.filter(subject => subjectMatchesQuery(subject, query)).map(subject => subject.name);
+    expect(find('construction technology')).toEqual(['Construction Studies']);
+    expect(find('life, community')).toEqual(['LCVP Link Modules']);
+    expect(find('lcpe')).toEqual(['Physical Education']);
+    expect(find('chinese')).toEqual(['Mandarin Chinese']);
+    expect(LCA_SUBJECTS.filter(subject => subjectMatchesQuery(subject, 'vpg')).map(subject => subject.name)).toEqual(['Vocational Preparation & Guidance']);
   });
 });

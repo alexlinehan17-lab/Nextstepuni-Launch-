@@ -2,7 +2,7 @@
 
 Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 32 real messages to that date, plus the Marino 12 Oct, Joeys 15 Oct and O'Connells/Larkin 16 Oct sessions). Everything below was **not** picked up that day. Nothing here is lost. Pick items up from this list.
 
-**Being built (not parked):** missing subjects in onboarding (LCVP, PE, every examined language, the full LCA list); changing your exam date; Mark Bank described as flashcards; notifications, starting with "your study time is up"; the iOS lock-screen timer (Live Activity); Paper Trail completeness (deferred sittings, pre-2010 years, papers for any new subject); classmates' islands for your school year.
+**Being built (not parked):** missing subjects in onboarding (LCVP, PE, every examined language, Foundation level for Maths and Irish, the full LCA list including courses without a written exam); changing your exam date; Mark Bank described as flashcards; notifications, starting with "your study time is up"; the iOS lock-screen timer (Live Activity); Paper Trail completeness (deferred sittings, pre-2010 years, papers for any new subject); classmates' islands for your school year.
 
 ## Parked, in the priority order from the review
 
@@ -19,7 +19,6 @@ Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 
 | 9 | Animal options for the capybara tile | 1 student | Parked by Alex on 14 Oct. |
 | 10 | A section for after school | 1 student | The `graduated` year group already keeps access. Product decision. |
 | 11 | Studying live with others | 1 student (Aug) | Large. Marked Planned in the inbox. |
-| 12 | Foundation level for Maths and Irish | Found 17 Oct | The SEC examines both at Foundation, but onboarding only offers Higher and Ordinary, and the grade model has no F grades. |
 
 ## Quick checks (about five minutes each)
 
@@ -40,3 +39,9 @@ Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 
 - Size of the keep-going bonus, and whether it pays once per session.
 - Where the minimised timer returns to (Home or the previous view).
 - Where Your setup sits in navigation.
+
+## Considered and left out on purpose
+
+- **LCA students taking a Leaving Cert modern language** on top of their LCA language. The programme allows it, but it's rare. The LCA flow records no grades, so it would add nothing but a duplicate-looking list entry. Students can still use Paper Trail and Mark Bank for it.
+- **"Wood technology" for LCA.** It isn't an LCA course: Wood Technology is a Junior Cycle subject. The nearest LCA courses are Craft and Design and Graphics and Construction Studies.
+- **2028 subject names as separate subjects.** Construction Technology and Life, Community and Work replace Construction Studies and LCVP Link Modules for students who started 5th year in Sept 2026. The app treats each pair as one subject, so onboarding search finds the new names and the profile keeps the stable name.

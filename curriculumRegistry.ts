@@ -2366,7 +2366,7 @@ const SUBJECT_ALIASES: Record<string, string> = {
   'physics-chemistry': 'physics-and-chemistry',
   'home-economics-s-and-s': 'home-economics',
   'link-modules': 'lcvp-link-modules',
-  maths: 'mathematics', math: 'mathematics',
+  maths: 'mathematics', math: 'mathematics', 'leaving cert maths': 'mathematics',
   // Both spellings. Mark Bank's deck id is the hyphenated 'applied-maths' —
   // normalise() only collapses whitespace, so the spaced alias never matched
   // it and every Applied Maths card resolved into no specification at all.

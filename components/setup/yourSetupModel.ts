@@ -7,7 +7,7 @@
  * onboarding", workshop feedback 12 Oct 2026). Pure, so the page stays a view.
  */
 
-import { DAYS_OF_WEEK, LC_SUBJECTS, getPointsForGrade, type Grade, type StudentSubjectProfile, type YearGroup } from '../subjectData';
+import { DAYS_OF_WEEK, LC_SUBJECTS, LEVEL_LABELS, getPointsForGrade, type Grade, type StudentSubjectProfile, type YearGroup } from '../subjectData';
 import { NORTH_STAR_CATEGORIES, VISION_CARDS, VISION_CARD_ART } from '../../northStarData';
 import { isLcaYear, yearGroupLabel, yearGroupToCurriculumLevel } from '../../utils/authUtils';
 import { getSubjectFill } from '../../utils/subjectColors';
@@ -33,7 +33,6 @@ export interface SetupSummary {
   northStar: { title: string; statement: string; vision: { id: string; label: string; art: string | null }[] } | null;
 }
 
-const LEVEL_LABEL = { higher: 'Higher', ordinary: 'Ordinary', common: 'Common' } as const;
 
 /** Students with an exam ahead can set its date: everyone except 1st and 2nd
  *  year Junior Cycle (no state exam yet) and students who have finished. */
@@ -86,7 +85,7 @@ export function summariseSetup(
   const year = yearGroup ?? profile?.yearGroup;
   const subjects: SetupSubjectRow[] = (profile?.subjects ?? []).map(subject => ({
     name: subject.subjectName,
-    level: LEVEL_LABEL[subject.level] ?? subject.level,
+    level: LEVEL_LABELS[subject.level] ?? subject.level,
     current: subject.currentGrade ?? subject.currentBand ?? null,
     target: subject.targetGrade ?? subject.targetBand ?? null,
     fill: getSubjectFill(subject.subjectName),
