@@ -2,7 +2,7 @@ import React from "react";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
-import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
+import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
 import { daysUntil, needsDate, type GradeChoice } from "./model";
@@ -47,6 +47,8 @@ export default function SetupFlow(props: OnboardingProps) {
     nextSubject,
     config,
     gradeChoices,
+    levelChoices,
+    levelNote,
     points,
     studyDays,
     stage,
@@ -387,9 +389,7 @@ export default function SetupFlow(props: OnboardingProps) {
                   {subjectList
                     .filter((item) =>
                       query.trim()
-                        ? item.name
-                            .toLocaleLowerCase()
-                            .includes(query.trim().toLocaleLowerCase())
+                        ? subjectMatchesQuery(item, query)
                         : item.group === subjectGroup,
                     )
                     .map((item) => (
@@ -408,11 +408,7 @@ export default function SetupFlow(props: OnboardingProps) {
                     ))}
                 </div>
                 {query.trim() &&
-                  !subjectList.some((s) =>
-                    s.name
-                      .toLocaleLowerCase()
-                      .includes(query.trim().toLocaleLowerCase()),
-                  ) && (
+                  !subjectList.some((s) => subjectMatchesQuery(s, query)) && (
                     <p className="setup-description">
                       No subjects found. Try another name or{" "}
                       <button
@@ -433,11 +429,11 @@ export default function SetupFlow(props: OnboardingProps) {
                   Where you are now, and where you’d like to be. It’s okay if
                   you don’t know yet.
                 </p>
-                {config.level !== "common" && (
+                {levelChoices.length > 1 && (
                   <fieldset>
                     <legend className="setup-label">Your level</legend>
                     <div className="setup-levels">
-                      {(["higher", "ordinary"] as Level[]).map((level) => (
+                      {levelChoices.map((level) => (
                         <button
                           type="button"
                           key={level}
@@ -450,12 +446,13 @@ export default function SetupFlow(props: OnboardingProps) {
                             })
                           }
                         >
-                          {level === "higher" ? "Higher" : "Ordinary"}
+                          {LEVEL_LABELS[level]}
                         </button>
                       ))}
                     </div>
                   </fieldset>
                 )}
+                {levelNote && <p className="setup-description">{levelNote}</p>}
                 <div className="setup-grade-graphic" aria-hidden="true">
                   {(["current", "target"] as const).map((field) => {
                     const index = gradeChoices.indexOf(config[field]);

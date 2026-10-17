@@ -8,7 +8,7 @@
 import React from 'react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
-import { summariseSetup } from '@/components/setup/yourSetupModel';
+import { canEditExamDate, examDateProblem, summariseSetup } from '@/components/setup/yourSetupModel';
 import YourSetupView from '@/components/setup/YourSetupView';
 import NextStepUniSidebar from '@/components/navigation/NextStepUniSidebar';
 import { MobileProfileSheet } from '@/components/UserProfileMenu';
@@ -53,10 +53,61 @@ describe('summariseSetup', () => {
   });
 });
 
+describe('exam date', () => {
+  test('only students with an exam ahead can set one', () => {
+    expect(canEditExamDate('6th')).toBe(true);
+    expect(canEditExamDate('3rd')).toBe(true);
+    expect(canEditExamDate('LCA2')).toBe(true);
+    expect(canEditExamDate('1st')).toBe(false);
+    expect(canEditExamDate('graduated')).toBe(false);
+    expect(canEditExamDate(undefined)).toBe(false);
+  });
+
+  test('accepts a date from today to three years on, and says why otherwise', () => {
+    expect(examDateProblem('2027-06-02', TODAY)).toBeNull();
+    expect(examDateProblem('2026-10-14', TODAY)).toBeNull();
+    expect(examDateProblem('2026-10-13', TODAY)).toBe('Choose a date that hasn’t passed yet.');
+    expect(examDateProblem('2030-01-01', TODAY)).toBe('Choose a date in the next three years.');
+    expect(examDateProblem('', TODAY)).toBe('Choose a date.');
+  });
+});
+
 describe('YourSetupView', () => {
   const handlers = () => ({
     onBack: vi.fn(), onFinishSetup: vi.fn(), onEditSubjects: vi.fn(), onEditNorthStar: vi.fn(),
     onOpenSettings: vi.fn(), onOpenPlanner: vi.fn(), onSetDarkMode: vi.fn(),
+  });
+
+  test('a student can change their exam date from the School year card', () => {
+    const onSaveExamDate = vi.fn();
+    render(<YourSetupView profile={createDemoStudentProfile(TODAY)} northStar={null} yearGroup="6th" darkMode={false} {...handlers()} onSaveExamDate={onSaveExamDate} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Change exam date/ }));
+    const field = screen.getByLabelText('When do your exams start?');
+    expect(field).toHaveValue('2027-06-09');
+    fireEvent.change(field, { target: { value: '2027-06-02' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Save date' }));
+
+    expect(onSaveExamDate).toHaveBeenCalledWith('2027-06-02');
+    expect(screen.queryByLabelText('When do your exams start?')).not.toBeInTheDocument();
+  });
+
+  test('a date that has passed is explained, not saved', () => {
+    const onSaveExamDate = vi.fn();
+    render(<YourSetupView profile={createDemoStudentProfile(TODAY)} northStar={null} yearGroup="6th" darkMode={false} {...handlers()} onSaveExamDate={onSaveExamDate} />);
+
+    fireEvent.click(screen.getByRole('button', { name: /Change exam date/ }));
+    fireEvent.change(screen.getByLabelText('When do your exams start?'), { target: { value: '2020-06-03' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Save date' }));
+
+    expect(onSaveExamDate).not.toHaveBeenCalled();
+    expect(screen.getByRole('alert')).toHaveTextContent('Choose a date that hasn’t passed yet.');
+  });
+
+  test('first and second years have no exam date to change', () => {
+    const profile = { ...createDemoStudentProfile(TODAY), yearGroup: '1st' as const, examStartDate: null };
+    render(<YourSetupView profile={profile} northStar={null} yearGroup="1st" darkMode={false} {...handlers()} onSaveExamDate={vi.fn()} />);
+    expect(screen.queryByRole('button', { name: /exam date/ })).not.toBeInTheDocument();
   });
 
   test('every section opens the editor that already owns it', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import SubjectAvatar from '../SubjectAvatar';
-import { LC_SUBJECTS, SUBJECT_GROUP_LABELS, getGradeIndex, getGradesForLevel, getPointsForGrade, type Grade, type Level, type LCSubject } from '../subjectData';
+import { LC_SUBJECTS, LEVEL_LABELS, SUBJECT_GROUP_LABELS, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, lcSubjectLevels, type Grade, type Level, type LCSubject } from '../subjectData';
 
 export interface GradeConfig { level: Level; currentGrade: Grade; targetGrade: Grade }
 export function SubjectCardPicker({ groups, selected, onToggle }: { groups: Record<string, LCSubject[]>; selected: Set<string>; onToggle: (name: string) => void }) {
@@ -14,15 +14,18 @@ export function SubjectCardPicker({ groups, selected, onToggle }: { groups: Reco
 
 export function SubjectGradeCards({ selected, configs, onUpdate }: { selected: Set<string>; configs: Record<string, GradeConfig>; onUpdate: (name: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => void }) {
   return <>{Array.from(selected).map(name => {
-    const config = configs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
+    const config = configs[name] || defaultSubjectConfig(name);
+    const levels = lcSubjectLevels(name);
+    const levelNote = fixedLevelNote(name);
     const grades = getGradesForLevel(config.level);
     const currentIndex = getGradeIndex(config.currentGrade);
     const isMaths = LC_SUBJECTS.find(subject => subject.name === name)?.isMaths || false;
     const gain = getPointsForGrade(config.targetGrade, isMaths) - getPointsForGrade(config.currentGrade, isMaths);
     return <section key={name} className="sc-grade-card">
-      <header className="sc-grade-header"><h3>{name}</h3><div className="sc-levels" role="group" aria-label={`${name} level`}>
-        {(['higher','ordinary'] as const).map(level => <button key={level} type="button" className="sc-level" aria-pressed={config.level === level} onClick={() => onUpdate(name, 'level', level)}>{level === 'higher' ? 'Higher' : 'Ordinary'}</button>)}
-      </div></header>
+      <header className="sc-grade-header"><h3>{name}</h3>{levels.length > 1 ? <div className="sc-levels" role="group" aria-label={`${name} level`}>
+        {levels.map((level: Level) => <button key={level} type="button" className="sc-level" aria-pressed={config.level === level} onClick={() => onUpdate(name, 'level', level)}>{LEVEL_LABELS[level]}</button>)}
+      </div> : null}</header>
+      {levelNote && <p className="sc-small">{levelNote}</p>}
       {(['currentGrade','targetGrade'] as const).map(field => <div key={field}>
         <p className={`sc-grade-label${field === 'targetGrade' ? ' sc-target-label' : ''}`}>{field === 'currentGrade' ? 'Where I am now' : 'My target'}</p>
         <div className="sc-grade-options" role="group" aria-label={`${name} ${field === 'currentGrade' ? 'current grade' : 'target grade'}`}>

@@ -538,7 +538,12 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "life community and work": "lcvp-link-modules",
   "lcvp": "lcvp-link-modules",
   "link modules": "lcvp-link-modules",
-  "chemical and physical science": "physics-and-chemistry"
+  "chemical and physical science": "physics-and-chemistry",
+  "leaving cert maths": "mathematics",
+  "introduction to ict": "computer-science",
+  "vocational preparation and guidance": "lcvp-link-modules",
+  "leisure and recreation": "active-leisure-studies",
+  "arts education": "art"
 };
 
 function artworkKey(subject: string): string {
