@@ -32,6 +32,7 @@ Alex chose what to build from the feedback review on 17 Oct 2026 (in-app inbox, 
 - The admin feedback inbox still shows 31 of 32 real messages as New. Mark the shipped ones Fixed and archive the 5 tests.
 - Accounts with misspelled school emails (`marinocollge.ie`, `marincollege.ie`, `marino.ie`) can never receive a reset.
 - Guidance counsellors haven't yet been shown the counsellor reset tool.
+- Dark mode: the Fieldbook and Visitors counts on the island dock render as blank white dots. Spotted 17 Oct while building year islands.
 - Check nextstepuniinfo@gmail.com for reset requests from students with older username accounts. 14 failed sign-ins on 16 Oct used a username.
 
 ## Decisions still open from the 14 Oct round
