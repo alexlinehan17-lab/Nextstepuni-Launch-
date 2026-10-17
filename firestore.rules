@@ -89,6 +89,27 @@ service cloud.firestore {
              && spent <= earned;
     }
 
+    // "Show my island to my year" (year islands). Absent means shown; the
+    // student may switch it either way at any time. The projection triggers
+    // read it server-side, so only these two values are meaningful.
+    function validIslandVisibility() {
+      return !('islandVisibility' in request.resource.data)
+             || request.resource.data.islandVisibility in ['year', 'hidden'];
+    }
+
+    // Year islands: a student in a school year may browse that year's islands.
+    // School is server-assigned (claimStudentSchool) and immutable; yearGroup is
+    // the student's own setting. Staff, graduates and students with no school
+    // or year cannot browse.
+    function canBrowseYearIslands() {
+      let caller = get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+      return !(caller.get('role', '') in ['gc', 'staff', 'admin'])
+             && caller.get('isAdmin', false) != true
+             && caller.get('school', null) is string
+             && caller.get('yearGroup', null) is string
+             && caller.yearGroup != 'graduated';
+    }
+
     // Users collection: each user can only read/write their own doc
     match /users/{userId} {
       // Self-read only.
@@ -124,7 +145,8 @@ service cloud.firestore {
                    && request.resource.data.name is string
                    && request.resource.data.name.size() <= 50
                    && request.resource.data.avatar is string
-                   && request.resource.data.avatar.size() <= 100;
+                   && request.resource.data.avatar.size() <= 100
+                   && validIslandVisibility();
       // Update: self-write with immutability guarantees on role/school +
       // length validation on name/avatar.
       //
@@ -154,7 +176,8 @@ service cloud.firestore {
                    && (!('name' in request.resource.data)
                        || (request.resource.data.name is string && request.resource.data.name.size() <= 50))
                    && (!('avatar' in request.resource.data)
-                       || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 100));
+                       || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 100))
+                   && validIslandVisibility();
       // Destructive deletion is callable-only so the complete GDPR cascade and
       // audit record cannot be bypassed by deleting individual documents.
       allow read: if isAdmin();
@@ -391,24 +414,30 @@ service cloud.firestore {
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
     }
 
-    // Island Public: minimal public projection of a student's island
-    // (rebuilt 2026-04-29 to replace the same-school read on /progress
-    // that was the original R1 exposure — see
-    // compliance/PEER_ISLAND_REFACTOR_PLAN.md).
-    // Same-school students may read; only Cloud Functions write
-    // (Admin SDK bypasses Firestore rules).
+    // Year islands: /islandPublic/{uid} is the classmate-visible copy of a
+    // student's island (first name, avatar, school, year group and the island's
+    // tiles; functions/src/islandProjection.ts). Classmates in the SAME school
+    // AND the SAME year group may read it. Only Cloud Functions write it (Admin
+    // SDK bypasses these rules), and no document exists for a student who has
+    // switched "Show my island to my year" off.
     //
-    // Rule compares resource.data.school (the queried projection doc's
-    // own school field) against the requester's school via a single
-    // get() on /users. This shape is required for Firestore queries:
-    // a rule that depends on get() of the *target* /users doc cannot
-    // be verified against the query's potential result set, so the
-    // query is denied even when individual docs would be readable.
+    // History: rebuilt 2026-04-29 as the R1 remediation (same-school, legacy
+    // islandState; compliance/PEER_ISLAND_REFACTOR_PLAN.md); narrowed to school
+    // + year 2026-10-17 (§9 of that plan).
+    //
+    // The rule compares the projection's OWN school and yearGroup with the
+    // requester's users doc. That shape is what lets Firestore verify a query:
+    // the client must filter on both fields with the requester's values, or
+    // the whole query is denied. A schema 1 projection has no yearGroup, so it
+    // can never be read.
     match /islandPublic/{uid} {
       allow read: if request.auth != null
                   && hasActiveSession()
+                  && canBrowseYearIslands()
                   && resource.data.school
-                     == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+                     == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school
+                  && resource.data.yearGroup
+                     == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.yearGroup;
       allow write: if false;
     }
 

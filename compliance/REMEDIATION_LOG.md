@@ -368,3 +368,36 @@ lifecycle; and obtain Irish solicitor review of under-18 contractual capacity
 and the final agreements. This publication does not resolve those by wording
 alone. The supplied address has not been represented as a verified registered
 office; a complete postal address/registered-office record should be retained.
+
+## 17 October 2026 — Year islands: peer island scope narrowed to school + year group, opt-out added
+
+Not a remediation of a finding; recorded here because it changes a DPIA R1
+control. Staged on branch `claude/year-islands-20261017`; **not deployed** when
+written.
+
+- **Change.** `/islandPublic/{uid}` (schema 2) now projects the current
+  `paperIsland` and is readable only by students at the same school AND in the
+  same year group (was: whole school). A "Show my island to my year" switch
+  (default on) removes the projection when off. The North Star `category`,
+  `score` and `updatedAt` timestamp are no longer projected. Fields, exclusions,
+  decisions and residual risks: `PEER_ISLAND_REFACTOR_PLAN.md` §9; data
+  schedule: `DPA_SCHEDULES.md`.
+- **Files.** `functions/src/islandProjection.ts`, `islandProjectionSync.ts`,
+  `index.ts` (triggers), `dataRights.ts` (export); `firestore.rules`;
+  `firestore.indexes.json`; `hooks/useYearIslands.ts`;
+  `components/journey/year/*`; `components/journey/JourneyView.tsx`;
+  `scripts/backfill-year-islands.mjs` (replaces the schema 1
+  `scripts/backfill-island-public.ts`, now removed).
+- **Verification.** Unit tests for the projection allowlist, exclusions, sync
+  and trigger filters (`test/yearIslandProjection.test.ts`) and the client
+  query, sharing switch and look-only visit (`test/yearIslands.test.tsx`).
+  Rules tests in `test/rules/firebaseRules.test.ts` cover same-year access,
+  other-year/other-school/school-only/legacy denials, staff/graduate/no-year
+  denials, client writes and the visibility values; they need the emulator
+  (Java) and run in CI.
+- **Deploy order.** Merging to `main` deploys Firestore rules + indexes,
+  Storage and functions (`deploy-backend`) before hosting. Then run
+  `node scripts/backfill-year-islands.mjs` (dry run) and
+  `node scripts/backfill-year-islands.mjs --apply --allow-production` with
+  admin credentials. Until the backfill runs, students appear to their year as
+  their island next changes.
