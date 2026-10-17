@@ -7,6 +7,7 @@ import {
   Compass,
   Hammer,
   Map,
+  Users,
   X,
 } from "lucide-react";
 import type { NorthStar, UserProgress } from "../../types";
@@ -56,8 +57,15 @@ import { centre } from "./paper/geometry";
 import { crewArt, crewById, journeyCrew, visitorHasAnchor, visitorWishFulfilled, wishText, type CrewId } from "./visitors/catalogue";
 import { VisitorsBook, WondersBook } from "./visitors/VisitorsBook";
 import { VisitorPanel, type VisitorPage } from "./visitors/VisitorPanel";
+import { useYearIslands } from "../../hooks/useYearIslands";
+import { DEMO_STUDENT_UID } from "../../data/devStudent";
+import { getSchoolName } from "../../schoolData";
+import { YearIslandsBook } from "./year/YearIslandsBook";
+import { ClassmateIsland } from "./year/ClassmateIsland";
+import { cohortLabel, type YearIsland } from "./year/yearIslands";
 import "./paper/paper.css";
 import "./visitors/visitors.css";
+import "./year/year.css";
 
 interface JourneyViewProps {
   onBack: () => void;
@@ -71,15 +79,21 @@ interface JourneyViewProps {
   userProgress?: UserProgress;
   allCourses?: CourseInfo[];
   subjects?: string[];
+  /** Your setup, where a student without a school year can add one. */
+  onOpenSetup?: () => void;
 }
 interface JourneyNotice {
   id: string;
   title: string;
   detail: string;
 }
-export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome }: JourneyViewProps) {
+export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome, onOpenSetup }: JourneyViewProps) {
   const { island, balance, busy, error, execute } = usePaperIsland(user.uid);
-  const [building, setBuilding] = useState(false),
+  // Year islands: a classmate's island being visited, look only. Building
+  // always happens on your own island, so every way into build mode (the dock,
+  // the fieldbook, a visitor's wish, a Wonder) ends the visit first.
+  const [classmate, setClassmate] = useState<YearIsland | null>(null);
+  const [building, setBuildingMode] = useState(false),
     [chosen, setChosen] = useState<TileKind>("meadow"),
     [candidate, setCandidate] = useState<string | null>(null),
     // Build mode: the placed tile (cell key) being swapped or removed.
@@ -87,15 +101,24 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     [camera, setCamera] = useState(defaultCamera),
     [group, setGroup] = useState<ShelfGroup>("All tiles"),
     [notice, setNotice] = useState<JourneyNotice | null>(null);
+  const setBuilding = (value: boolean) => {
+    if (value) setClassmate(null);
+    setBuildingMode(value);
+  };
   const [chosenWonder,setChosenWonder]=useState<CrewId|null>(null);
   const [fieldbookSection,setFieldbookSection]=useState<"stories"|"visitors"|"wonders">("stories");
   const [visitor,setVisitor]=useState<CrewId>("luma"),[visitorPage,setVisitorPage]=useState<VisitorPage>("visit");
   const [panel, setPanel] = useState<
-      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | "visitor" | null
+      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | "visitor" | "year" | null
     >(null),
     [inspected, setInspected] = useState<TileKind>("meadow"),
     [discovery, setDiscovery] = useState<LegendId>("lantern-nautilus");
   const [treasure, setTreasure] = useState("");
+  const year = useYearIslands(user.uid, { enabled: panel === "year" });
+  const yearSchool = year.cohort?.school ?? user.school;
+  const cohort = cohortLabel(yearSchool, year.cohort?.yearGroup ?? user.yearGroup);
+  const showYear = Boolean(user.school) || user.uid === DEMO_STUDENT_UID;
+  const visitClassmate = (next: YearIsland) => { setClassmate(next); setPanel(null); setNotice(null); };
   const currentVisitor=useRef(visitor),currentPanel=useRef(panel);
   currentVisitor.current=visitor;currentPanel.current=panel;
   const placed = useMemo(
@@ -351,7 +374,15 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
         </header>
         <div className="coast-world">
           <div className="coast-map-area">
-            {island ? (
+            {classmate ? (
+              <ClassmateIsland
+                key={classmate.uid}
+                classmate={classmate}
+                cohort={cohort}
+                onBack={() => setClassmate(null)}
+                onOpenYear={() => setPanel("year")}
+              />
+            ) : island ? (
               <IslandMap
                 world={world}
                 building={building}
@@ -395,7 +426,22 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 )}
               </div>
             )}
-            {!building && island && (
+            {!building && island && !classmate && showYear && (
+              <button
+                type="button"
+                className="year-entry"
+                aria-label={`Your year: see your classmates' islands${cohort ? ` in ${cohort}` : ""}`}
+                onClick={() => setPanel("year")}
+              >
+                <span className="year-entry-icon" aria-hidden="true"><Users size={18} /></span>
+                <span className="year-entry-copy">
+                  <small>Your year</small>
+                  <strong>{cohort || "See your classmates"}</strong>
+                </span>
+                <ArrowUpRight size={16} aria-hidden="true" />
+              </button>
+            )}
+            {!building && island && !classmate && (
               <div className="island-dock">
                 <button
                   aria-label="Your island"
@@ -434,7 +480,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
             >
               Done <Check size={15} />
             </button>
-            {(notice || error) && (
+            {!classmate && (notice || error) && (
               <div
                 key={error || notice?.id}
                 className="island-notice"
@@ -509,14 +555,32 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 ? tileById[inspected].name
                 : panel === "visitor"
                   ? `${crewById[visitor].name} · ${crewById[visitor].role}`
+                  : panel === "year"
+                  ? "Your year"
                   : panel === "treasure"
                     ? "A treasure, found"
                     : legendById[discovery].name
           }
           onClose={() => setPanel(null)}
-          className={panel==="visitor"?"has-visitor":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
+          className={panel==="visitor"?"has-visitor":panel==="year"?"has-year-book":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
           scrollKey={panel==="visitor"?`${visitor}:${visitorPage}`:panel==="fieldbook"?fieldbookSection:panel}
         >
+          {panel === "year" && (
+            <YearIslandsBook
+              cohort={cohort}
+              school={yearSchool ? getSchoolName(yearSchool) : ""}
+              status={year.status}
+              classmates={year.classmates}
+              visibility={year.visibility}
+              visibilityKnown={year.visibilityKnown}
+              visibilityError={year.visibilityError}
+              onVisibility={year.setVisibility}
+              onVisit={visitClassmate}
+              onRetry={year.reload}
+              onOpenSetup={onOpenSetup ? () => { setPanel(null); onOpenSetup(); } : undefined}
+              sample={year.sample}
+            />
+          )}
           {panel === "fieldbook" && (
             <>
             <nav className="fieldbook-tabs" aria-label="Fieldbook sections">{([['stories','Stories'],['visitors','Visitors'],['wonders','Wonder tiles']] as const).map(([section,label])=><button key={section} aria-pressed={fieldbookSection===section} onClick={()=>setFieldbookSection(section)}>{label}</button>)}</nav>

@@ -674,6 +674,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+          onOpenSetup={() => nav.navigateToYourSetup()}
         />
       </Suspense>
     );
