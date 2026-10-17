@@ -92,6 +92,14 @@ describe('Paper Trail sittings and syllabus eras', () => {
     expect(reader.props?.answersUrl).toBeTruthy();
   });
 
+  it('names the deferred sitting in the paper-and-scheme dialog', async () => {
+    start(); click(/^Accounting/); click('All years'); click('2023, With deferred');
+    fireEvent.click(within(screen.getByRole('article', { name: 'Deferred · Paper 1' }))
+      .getByRole('button', { name: 'Paper & marking scheme' }));
+    const dialog = within(await screen.findByRole('dialog'));
+    expect(dialog.getByText('Accounting · 2023 · Deferred sitting · Higher level · English')).toBeInTheDocument();
+  });
+
   it('saves and reopens a deferred paper as itself, not as the June paper', () => {
     start(); click(/^Accounting/); click('All years'); click('2023, With deferred');
     click('Save Deferred · Paper 1');
