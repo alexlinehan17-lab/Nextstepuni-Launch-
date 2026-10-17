@@ -17,6 +17,7 @@
 import React, { createContext, memo, useContext, useLayoutEffect, useState } from 'react';
 import { useStudySession } from '../hooks/useStudySession';
 import { useStudyTimerAlerts } from '../hooks/useStudyTimerAlerts';
+import { useStudyNotifications } from '../hooks/useStudyNotifications';
 import type { UserProgress } from '../types';
 import type { CourseData } from '../components/Library';
 
@@ -31,13 +32,14 @@ interface EngineProps {
   userProgress: UserProgress;
   allCourses: CourseData[];
   roomOpen: boolean;
+  notify: boolean;
   onSession: (session: StudySessionState) => void;
 }
 
 // Memoised: it re-renders on its own clock ticks, not on every publish.
-const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, roomOpen, onSession }: EngineProps) {
+const StudySessionEngine = memo(function StudySessionEngine({ uid, userProgress, allCourses, roomOpen, notify, onSession }: EngineProps) {
   const session = useStudySession(uid, userProgress, allCourses);
-  useStudyTimerAlerts(session, { uid, roomOpen });
+  useStudyTimerAlerts(session, { uid, roomOpen, enabled: notify });
   useLayoutEffect(() => { onSession(session); });
   return null;
 });
@@ -51,9 +53,10 @@ export function StudySessionProvider({ uid, userProgress, allCourses, roomOpen =
   children: React.ReactNode;
 }) {
   const [session, setSession] = useState<StudySessionState | null>(null);
+  const { enabled: notify } = useStudyNotifications();
   return (
     <StudySessionContext.Provider value={{ session }}>
-      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} roomOpen={roomOpen} onSession={setSession} />
+      <StudySessionEngine key={uid ?? 'signed-out'} uid={uid} userProgress={userProgress} allCourses={allCourses} roomOpen={roomOpen} notify={notify} onSession={setSession} />
       {children}
     </StudySessionContext.Provider>
   );

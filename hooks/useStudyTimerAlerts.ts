@@ -15,7 +15,6 @@
 
 import { useEffect, useRef } from 'react';
 import type { useStudySession } from './useStudySession';
-import { useStudyNotifications } from './useStudyNotifications';
 import { cancelLocalNotice, NOTICE_IDS, scheduleLocalNotice } from '../services/notifications';
 import { syncStudyActivity } from '../services/studyLiveActivity';
 import { activityKey, planStudyNotice, ranOut, studyActivityState, type StudyTimerSnapshot } from '../services/studyTimerAlerts';
@@ -37,8 +36,12 @@ export function studyTimerSnapshot(session: StudySession): StudyTimerSnapshot {
   };
 }
 
-export function useStudyTimerAlerts(session: StudySession, { uid, roomOpen }: { uid: string | undefined; roomOpen: boolean }) {
-  const { enabled } = useStudyNotifications();
+/**
+ * `enabled`: the student chose the notification and this device allows it
+ * (useStudyNotifications().enabled, read by the provider so this memoised
+ * engine does not re-render with every settings change).
+ */
+export function useStudyTimerAlerts(session: StudySession, { uid, roomOpen, enabled }: { uid: string | undefined; roomOpen: boolean; enabled: boolean }) {
   const snapshot = studyTimerSnapshot(session);
   const finished = ranOut(snapshot);
   /** Key of what was last scheduled: undefined unknown, null cancelled. */
