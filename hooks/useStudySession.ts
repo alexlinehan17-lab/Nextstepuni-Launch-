@@ -105,6 +105,11 @@ export function useStudySession(
   const totalDuration = sessionLengthSeconds(plannedMinutes, extendedMinutes, openEnded);
   /** The original plan, before any "Keep going" time. */
   const plannedSeconds = openEnded ? 0 : plannedMinutes * 60;
+  // Wall-clock anchors for the device's own alerts (the "time's up"
+  // notification, the iOS Live Activity). Every change to startTimeRef comes
+  // with a state change in the same handler, so this render already sees it.
+  const startedAt = startTimeRef.current;
+  const endsAt = phase === 'active' && !openEnded && startedAt > 0 ? startedAt + totalDuration * 1000 : null;
 
   // ── Load today's sessions from context ──
 
@@ -496,6 +501,8 @@ export function useStudySession(
     plannedSeconds,
     elapsedSeconds,
     totalDuration,
+    startedAt,
+    endsAt,
     extendedMinutes,
     extensionBonus,
     openEnded,

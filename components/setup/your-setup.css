@@ -105,6 +105,7 @@
   .nsu-your-setup .ys-week li small { display: none; }
   .nsu-your-setup .ys-subjects th, .nsu-your-setup .ys-subjects td { padding-inline: 4px; }
 }
+.nsu-your-setup .ys-notify-hint { margin-top: 14px; color: var(--foreground); }
 
 /* Exam date: a clickable outline button that opens an inline date form. */
 .nsu-your-setup .ys-date { margin-top: 18px; }

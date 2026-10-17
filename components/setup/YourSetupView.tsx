@@ -13,6 +13,7 @@ import KobraScope, { Button, Input, Tabs, TabsList, TabsTrigger } from '../appro
 import PageHeader from '../ui/PageHeader';
 import ThemeArtwork from '../ThemeArtwork';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
+import { useStudyNotifications } from '../../hooks/useStudyNotifications';
 import type { StudentSubjectProfile, YearGroup } from '../subjectData';
 import type { NorthStar } from '../../types';
 import { canEditExamDate, examDateBounds, examDateProblem, summariseSetup } from './yourSetupModel';
@@ -113,6 +114,7 @@ export default function YourSetupView({
 }: Props) {
   const mobileAppDesign = useMobileAppDesign();
   const setup = summariseSetup(profile, northStar, yearGroup);
+  const notify = useStudyNotifications();
 
   return (
     <KobraScope className="nsu-your-setup">
@@ -226,6 +228,21 @@ export default function YourSetupView({
                 </TabsList>
               </Tabs>
             </Section>
+
+            {/* Only where this device can show one (not iPhone or iPad Safari). */}
+            {notify.available && (
+              <Section index="06" title="Notifications">
+                <h2 id="ys-06" className="ys-value">{notify.enabled ? 'On' : 'Off'}</h2>
+                <p className="ys-meta">One notification when your study time is up, so you can work in another app while the timer runs.</p>
+                <Tabs value={notify.enabled ? 'on' : 'off'} onValueChange={value => { if (value === 'on') void notify.turnOn(); else notify.turnOff(); }}>
+                  <TabsList aria-label="Study timer notifications">
+                    <TabsTrigger value="off">Off</TabsTrigger>
+                    <TabsTrigger value="on">On</TabsTrigger>
+                  </TabsList>
+                </Tabs>
+                {notify.blocked && <p className="ys-meta ys-notify-hint" role="status">{notify.hint}</p>}
+              </Section>
+            )}
           </div>
         </main>
       </div>
