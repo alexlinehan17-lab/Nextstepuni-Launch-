@@ -298,7 +298,7 @@ function fireWeb(notice: LocalNotice): void {
     shown.onclick = () => {
       window.focus();
       shown.close();
-      emitOpen(notice.route);
+      openFromDevice(notice.route);
     };
     entry.shown = shown;
   } catch {
@@ -323,7 +323,8 @@ const openListeners = new Set<(route: NotificationRoute) => void>();
 let pendingOpen: NotificationRoute | null = null;
 let listeningForTaps = false;
 
-function emitOpen(route: NotificationRoute): void {
+/** Something on the device (a notification, the Live Activity) was tapped. */
+export function openFromDevice(route: NotificationRoute): void {
   if (openListeners.size === 0) {
     pendingOpen = route;
     return;
@@ -344,7 +345,7 @@ export function onNotificationOpen(listener: (route: NotificationRoute) => void)
     void LocalNotifications.addListener('localNotificationActionPerformed', action => {
       if (action.actionId === 'dismiss') return;
       const route = (action.notification.extra as { route?: unknown } | undefined)?.route;
-      if (isRoute(route)) emitOpen(route);
+      if (isRoute(route)) openFromDevice(route);
     }).catch(error => {
       listeningForTaps = false;
       logError('notifications.listen', error);

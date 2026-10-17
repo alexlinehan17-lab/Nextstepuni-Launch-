@@ -62,6 +62,7 @@ import { trackProgrammeEvent } from './utils/programmeAnalytics';
 import { StudySessionProvider } from './contexts/StudySessionContext';
 import StudyMiniTimer from './components/study/StudyMiniTimer';
 import { onNotificationOpen } from './services/notifications';
+import './services/studyTimerDemo'; // inert unless a DEBUG native build asks (simulator checks)
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {

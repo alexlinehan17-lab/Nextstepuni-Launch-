@@ -118,6 +118,8 @@ export interface StudyActivityState {
   endsAt: number | null;
   /** Frozen display while paused: seconds left (countdown) or studied (count-up). */
   pausedSeconds: number;
+  /** The countdown's full length (0 when open-ended), for the progress bar. */
+  totalSeconds: number;
   /** Shown in the done state. */
   doneLabel: string;
 }
@@ -136,6 +138,7 @@ export function studyActivityState(s: StudyTimerSnapshot): StudyActivityState | 
     startedAt: s.startedAt,
     endsAt: s.phase === 'active' && !s.openEnded ? s.endsAt : null,
     pausedSeconds: s.phase === 'paused' ? (s.openEnded ? s.elapsedSeconds : remaining) : 0,
+    totalSeconds: s.openEnded ? 0 : s.totalDuration,
     doneLabel: ranOut(s) ? 'Time’s up' : 'Ready to log',
   };
 }

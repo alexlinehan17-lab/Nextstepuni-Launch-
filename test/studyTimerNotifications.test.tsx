@@ -24,12 +24,27 @@ import { planStudyNotice, studyActivityState, studyTimerCopy, type StudyTimerSna
 import type { NotificationPreferences, UserSettings } from '@/types';
 import type * as CapacitorCore from '@capacitor/core';
 
-const native = vi.hoisted(() => ({
-  platform: 'ios' as 'ios' | 'android' | 'web',
-  display: 'granted' as 'granted' | 'denied' | 'prompt',
-  exact: 'granted' as 'granted' | 'denied',
-  api: {} as Record<string, ReturnType<typeof vi.fn>>,
-}));
+const native = vi.hoisted(() => {
+  const state = {
+    platform: 'ios' as 'ios' | 'android' | 'web',
+    display: 'granted' as 'granted' | 'denied' | 'prompt',
+    exact: 'granted' as 'granted' | 'denied',
+    api: {} as Record<string, ReturnType<typeof vi.fn>>,
+    /** The app's own Live Activity plugin (ios/App/App/StudyLiveActivityPlugin.swift). */
+    activity: {
+      isAvailable: vi.fn(async () => ({ available: true })),
+      sync: vi.fn(async (_options: { state: unknown }) => ({ active: true })),
+      endAll: vi.fn(async () => undefined),
+      addListener: vi.fn(),
+    },
+    activityOpen: undefined as undefined | ((event: { route?: string }) => void),
+  };
+  state.activity.addListener.mockImplementation(async (_event: string, handler: (event: { route?: string }) => void) => {
+    state.activityOpen = handler;
+    return { remove: async () => undefined };
+  });
+  return state;
+});
 
 vi.mock('@capacitor/core', async original => {
   const actual = await original<typeof CapacitorCore>();
@@ -41,6 +56,7 @@ vi.mock('@capacitor/core', async original => {
       getPlatform: () => native.platform,
       isPluginAvailable: () => native.platform !== 'web',
     },
+    registerPlugin: (name: string) => (name === 'StudyLiveActivity' ? native.activity : actual.registerPlugin(name)),
   };
 });
 vi.mock('@capacitor/local-notifications', () => ({ LocalNotifications: native.api }));
@@ -127,6 +143,7 @@ beforeEach(() => {
   native.display = 'granted';
   native.exact = 'granted';
   resetApi();
+  native.activity.sync.mockClear();
   resetNotificationsForTests();
   window.localStorage.clear();
   window.sessionStorage.clear();
@@ -339,6 +356,94 @@ describe('Native: the session drives one scheduled notification', () => {
     const late: string[] = [];
     onNotificationOpen(route => late.push(route));
     expect(late).toEqual(['study-session']);
+  });
+});
+
+describe('iOS Live Activity follows the same session', () => {
+  const shown = () => native.activity.sync.mock.calls.map(([options]) => options.state as null | Record<string, unknown>);
+
+  test('start, pause, resume, run out, keep going, save', async () => {
+    app();
+    await flush();
+    // Nothing to restore: the first pass ends any activity left from before.
+    expect(shown()).toEqual([null]);
+
+    click('Start 25');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({
+      subject: 'Chemistry', phase: 'running', countsDown: true, detail: '25 min · Practice',
+      startedAt: NOW, endsAt: NOW + 25 * MINUTE, totalSeconds: 1500,
+    });
+    const afterStart = shown().length;
+    act(() => { vi.advanceTimersByTime(2 * MINUTE); });
+    await flush();
+    expect(shown()).toHaveLength(afterStart); // the clock ticking is not an update
+
+    act(() => { vi.advanceTimersByTime(8 * MINUTE); });
+    click('Pause');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'paused', pausedSeconds: 15 * 60, endsAt: null });
+
+    act(() => { vi.advanceTimersByTime(5 * MINUTE); });
+    click('Resume');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'running', endsAt: NOW + 30 * MINUTE });
+
+    act(() => { vi.advanceTimersByTime(15 * MINUTE); });
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'done', doneLabel: 'Time’s up' });
+
+    click('Keep going 10');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'running', detail: '25 + 10 min · Practice', endsAt: NOW + 40 * MINUTE });
+
+    act(() => { vi.advanceTimersByTime(10 * MINUTE); });
+    click('Saved');
+    await flush();
+    expect(shown().at(-1)).toBeNull();
+  });
+
+  test('open-ended counts up; ending early says ready to log', async () => {
+    app();
+    click('Start open-ended');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'running', countsDown: false, endsAt: null, detail: 'Open-ended · Practice' });
+    act(() => { vi.advanceTimersByTime(6 * MINUTE); });
+    click('End early');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'done', doneLabel: 'Ready to log' });
+  });
+
+  test('shown whether or not notifications are on, and ended on sign-out', async () => {
+    const view = app({ preferences: { studyTimer: false } });
+    click('Start 25');
+    await flush();
+    expect(shown().at(-1)).toMatchObject({ phase: 'running' });
+    view.rerenderWith({ uid: undefined });
+    await flush();
+    expect(shown().at(-1)).toBeNull();
+  });
+
+  test('the sign-out wipe ends it too', async () => {
+    window.dispatchEvent(new Event('nextstepuni:session-cleared'));
+    await flush();
+    expect(shown()).toContainEqual(null);
+  });
+
+  test('tapping it opens the study room', () => {
+    const opened: string[] = [];
+    const stop = onNotificationOpen(route => opened.push(route));
+    native.activityOpen?.({ route: 'study-session' });
+    expect(opened).toEqual(['study-session']);
+    stop();
+  });
+
+  test('a no-op on Android and the web', async () => {
+    native.platform = 'android';
+    app();
+    click('Start 25');
+    await flush();
+    expect(native.activity.sync).not.toHaveBeenCalled();
   });
 });
 
