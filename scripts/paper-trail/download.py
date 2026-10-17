@@ -6,8 +6,17 @@ Reads scripts/paper-trail/out/manifest.jsonl (from enumerate.py) and mirrors
 every .pdf into paper-trail-corpus/{view}/{year}/{fileid}, recording actual
 size + sha256 per file in scripts/paper-trail/out/downloads.jsonl.
 
-Non-PDF assets (aural .mp3, .mov video, legacy .tif/.jpg inserts) are skipped
-per the approved v1 scope.
+Image supplements (Geography-family map/photo sheets the SEC ships as
+.jpg/.JPG/.png/.tif) are mirrored too, normalised to a lowercase-.jpg corpus
+name; TIFF and PNG sources are converted to JPEG with macOS `sips` so the
+index, Storage and the in-app ImageViewer only ever see JPEG. Audio/video
+(.mp3/.mov/.mp4/.avi) stay out of scope.
+
+`--only-new` restricts the run to manifest rows with NO record yet in
+downloads.jsonl (a scope extension such as the deferred sitting or pre-2010
+years). Without it, rows whose verified bytes live only in the bucket (records
+marked "reconstructed", no local copy) are re-fetched, and a timeout there
+appends an error record — never needed when extending scope.
 
 Politeness: single-threaded, ~1.6s between requests, exponential backoff on
 429/5xx, identifying User-Agent. Resume-safe: existing complete files skipped.
@@ -16,7 +25,10 @@ Politeness: single-threaded, ~1.6s between requests, exponential backoff on
 import hashlib
 import json
 import os
+import re
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.parse
 import urllib.request
@@ -39,7 +51,30 @@ def log(msg):
     print(f"[{time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
-def fetch(url, dest):
+IMAGE_RE = re.compile(r"\.(jpe?g|png|tiff?)$", re.I)
+
+
+def corpus_name(fileid):
+    """Corpus/index name: images are normalised to lowercase .jpg."""
+    return IMAGE_RE.sub(".jpg", fileid)
+
+
+def to_jpeg(data, src_ext):
+    """Return JPEG bytes for an image payload (sips: TIFF/PNG -> JPEG)."""
+    if data[:2] == b"\xff\xd8":
+        return data
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "in." + src_ext)
+        out = os.path.join(tmp, "out.jpg")
+        with open(src, "wb") as f:
+            f.write(data)
+        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "high",
+                        src, "--out", out], check=True, capture_output=True)
+        with open(out, "rb") as f:
+            return f.read()
+
+
+def fetch(url, dest, image_ext=None):
     delay = DELAY
     for attempt in range(8):
         req = urllib.request.Request(url)
@@ -48,7 +83,12 @@ def fetch(url, dest):
             with urllib.request.urlopen(req, timeout=120, context=SSL_CTX) as r:
                 data = r.read()
             time.sleep(DELAY)
-            if not data.startswith(b"%PDF"):
+            if image_ext:
+                if not (data[:2] == b"\xff\xd8" or data[:8] == b"\x89PNG\r\n\x1a\n"
+                        or data[:4] in (b"II*\x00", b"MM\x00*")):
+                    return None, f"not-an-image ({len(data)} bytes, starts {data[:12]!r})"
+                data = to_jpeg(data, image_ext)
+            elif not data.startswith(b"%PDF"):
                 return None, f"not-a-pdf ({len(data)} bytes, starts {data[:12]!r})"
             with open(dest, "wb") as f:
                 f.write(data)
@@ -81,9 +121,11 @@ def main():
                 continue
             seen.add(key)
             rows.append(r)
-    pdfs = [r for r in rows if r["fileid"].lower().endswith(".pdf")]
+    only_new = "--only-new" in sys.argv[1:]
+    pdfs = [r for r in rows
+            if r["fileid"].lower().endswith(".pdf") or IMAGE_RE.search(r["fileid"])]
     skipped = len(rows) - len(pdfs)
-    log(f"manifest: {len(rows)} files, {len(pdfs)} PDFs in scope, {skipped} non-PDF skipped")
+    log(f"manifest: {len(rows)} files, {len(pdfs)} PDFs/images in scope, {skipped} audio/video skipped")
 
     done = {}
     if os.path.exists(DOWNLOADS):
@@ -95,11 +137,20 @@ def main():
                 except json.JSONDecodeError:
                     pass
         log(f"resume: {len(done)} already recorded")
+    if only_new:
+        # Records are keyed by the corpus name (images normalised to .jpg).
+        pdfs = [r for r in pdfs
+                if (r["view"], r["year"], corpus_name(r["fileid"])) not in done]
+        log(f"--only-new: {len(pdfs)} rows without any download record")
 
     out = open(DOWNLOADS, "a")
     n_ok = n_fail = 0
     total_bytes = sum(d.get("bytes", 0) for d in done.values())
     for i, r in enumerate(pdfs):
+        image_ext = None
+        if IMAGE_RE.search(r["fileid"]):
+            image_ext = r["fileid"].rsplit(".", 1)[-1].lower()
+            r = dict(r, fileid=corpus_name(r["fileid"]), sourceFileid=r["fileid"], image=1)
         key = (r["view"], r["year"], r["fileid"])
         dest_dir = os.path.join(CORPUS, r["view"], r["year"])
         dest = os.path.join(dest_dir, r["fileid"])
@@ -114,7 +165,7 @@ def main():
         if os.path.exists(dest) and os.path.getsize(dest) > 0:
             with open(dest, "rb") as existing_file:
                 existing = existing_file.read()
-            if existing.startswith(b"%PDF"):
+            if existing.startswith(b"%PDF") or (image_ext and existing[:2] == b"\xff\xd8"):
                 rec = dict(r)
                 rec["bytes"] = len(existing)
                 rec["sha256"] = hashlib.sha256(existing).hexdigest()
@@ -126,9 +177,9 @@ def main():
                 n_ok += 1
                 continue
         url = "https://www.examinations.ie/archive/{}/{}/{}".format(
-            r["view"], r["year"], urllib.parse.quote(r["fileid"])
+            r["view"], r["year"], urllib.parse.quote(r.get("sourceFileid", r["fileid"]))
         )
-        data, err = fetch(url, dest)
+        data, err = fetch(url, dest, image_ext)
         rec = dict(r)
         if data:
             rec["bytes"] = len(data)

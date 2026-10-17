@@ -17,6 +17,44 @@ notification sent to the SEC.
 
 All stages are resume-safe and idempotent. Stage 1–2 are polite: single-thread,
 ~1.6s delay, exponential backoff, identifying User-Agent with contact address.
+Never run two stages that fetch from examinations.ie at the same time.
+
+## Scope (since 2026-10-17)
+
+`enumerate.py` `SCOPE` walks four archive views:
+
+| view | exams | years |
+|---|---|---|
+| `exampapers` | LC, LCA | 1995–2026 (the archive's full year list) |
+| `markingschemes` | LC, LCA | 2001–2026 (no schemes are published before 2001) |
+| `exampapers` / `markingschemes` | JC | 2017–2026 minus 2020/2021; new-spec filter at decode |
+| `deferredexams` / `deferredmarkingschemes` | LC (LCA and JC probed: empty) | 2022–2025 |
+
+Deliberately out: **Junior Certificate before 2017** (the old Junior Certificate,
+a different programme from the new Junior Cycle), audio/video (`.mp3/.mov/.mp4/.avi`),
+and the Senior Cycle *Additional Assessment Component* sample briefs (coursework, not papers).
+
+- **Deferred sitting.** The SEC reuses the June fileid for the deferred paper of
+  the same year (`LC032ALP000EV.pdf` is both). The corpus keeps the SEC name under
+  `paper-trail-corpus/deferred{exams,markingschemes}/<year>/`; the INDEX and Storage
+  name is `<fileid stem>-deferred.<ext>` (`build-index.py` `sitting_doc_id`), so
+  every year+fileid identity in the app — Storage path, recents/pins, deep links,
+  answer sidecars, hosted anchors, topic tags — stays distinct. Deferred papers
+  pair only with deferred schemes (the sitting is part of the pairing key), are
+  listed after the June papers in the same year entry with labels
+  `Deferred · …`, and never carry `answers:1`.
+- **Sample papers.** Specifications not yet examined have no archive rows. The SEC
+  publishes their sample papers on `https://www.examinations.ie/scr/` (one fragment
+  per subject code, e.g. `scr/571.php`). `sample-papers.json` is the curated list
+  (source page per row); `download_samples.py` mirrors them into
+  `paper-trail-corpus/samplepapers/<year>/`; `build-index.py` indexes them under the
+  specification's first exam year as `sitting: 'sample'`, with no scheme.
+- **Earlier syllabuses.** Which archived years predate a syllabus change lives in
+  `data/paperTrail/syllabusChanges.ts` (from the SEC's own syllabus-change tables);
+  the UI tags and explains those years — the index carries no flag.
+- **Hand-curated index decisions** (`HOSTED_ANSWER_FLAGS`, `CROSS_LANG_SCHEMES`)
+  reproduce edits once made to `paperTrailData.ts` by hand. Never hand-edit the
+  generated file: a rebuild must reproduce it.
 
 ## "See the answer" — per-question answer maps (Stage 2.5)
 
@@ -45,8 +83,20 @@ merged dark and lit per-profile later.
 
 ## Annual refresh (each autumn, when the new year's papers publish)
 
-1. Add the new year to `YEARS` in `enumerate.py`.
-2. Run stages 1→4 in order (1–2 take a few hours; run overnight). Stage 2.5
+1. Bump `CURRENT_YEAR` in `enumerate.py` (and `DEFERRED_YEARS` once the archive
+   lists that summer's deferred sitting), `LC_YEAR_MAX`/`JC_YEAR_MAX` in
+   `build-index.py` and `CURRENT_YEAR` in `upload.py`. When a new specification is
+   first examined, add its year to `data/paperTrail/syllabusChanges.ts`, and move
+   its sample papers out of `sample-papers.json` once real papers exist (or keep
+   them — they stay labelled as samples).
+2. Run stages 1→4 in order (1–2 take a few hours; run overnight). For a scope
+   extension, `download.py --only-new` fetches only rows with no download record
+   (it never re-fetches bucket-reconstructed files), and `upload.py --manifest
+   <subset.jsonl>` uploads and verifies exactly a list of new objects.
+   `enumerate.py` never re-lists a cached view|exam|year, so material the SEC
+   publishes after a crawl is missed: run `refresh_year.py <year>` for the
+   current year each autumn (the Junior Cycle marking schemes arrive months
+   after the papers — the 2026 JC schemes were only picked up on 2026-10-17). Stage 2.5
    (`anchor-map.py`) runs after download, before index — add the new year to
    `SCOPE_YEARS` if answer maps should cover it.
 3. `npx vitest run` (index integrity + JC guards + answer-sidecar integrity),

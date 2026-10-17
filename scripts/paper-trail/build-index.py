@@ -42,7 +42,40 @@ CYCLE_OF_EXAM = {"lc": "lc", "jc": "jc", "lb": "lca"}
 CYCLE_RANK = {"lc": 0, "jc": 1, "lca": 2}
 CYCLE_PREFIX = {"lc": "", "jc": "jc-", "lca": "lca-"}
 
-LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2026  # also LCA
+LC_YEAR_MIN, LC_YEAR_MAX = 1995, 2026  # also LCA (the archive's year list starts in 1995)
+
+# Archive views → (document kind, sitting). The deferred sitting (2022+) is the
+# SEC's separate set of papers for candidates who could not sit in June; it
+# reuses the June fileids, so its docs get a distinct index/Storage name.
+VIEW_KIND = {
+    "exampapers": ("paper", "main"),
+    "markingschemes": ("scheme", "main"),
+    "deferredexams": ("paper", "deferred"),
+    "deferredmarkingschemes": ("scheme", "deferred"),
+}
+SITTING_RANK = {"main": 0, "deferred": 1, "sample": 2}
+SITTING_LABEL_PREFIX = {"deferred": "Deferred · "}
+SAMPLE_ENTRY_NOTE = ("Official SEC sample papers for the new specification, first examined "
+                     "in {year}. No marking schemes were published with them.")
+
+
+def sitting_doc_id(fileid, sitting):
+    """Index + Storage name of a doc. The SEC reuses the June fileid for the
+    deferred paper of the same year (LC032ALP000EV.pdf is both), and every
+    year+fileid-keyed identity in the app (Storage path, recents, pins, deep
+    links, answer sidecars, hosted anchors, topic tags) would otherwise resolve
+    a deferred paper to the June one. The corpus keeps the SEC name under its
+    own archive directory (paper-trail-corpus/deferredexams/<year>/)."""
+    if sitting != "deferred":
+        return fileid
+    stem, ext = fileid.rsplit(".", 1)
+    return f"{stem}-deferred.{ext}"
+
+
+# Official SEC sample papers for new specifications (not in the archive):
+# curated in sample-papers.json, fetched by download_samples.py.
+SAMPLES_JSON = os.path.join(HERE, "sample-papers.json")
+SAMPLE_DOWNLOADS = os.path.join(OUT_DIR, "sample-downloads.jsonl")
 JC_YEAR_MAX = 2026
 JC_CANCELLED_YEARS = (2020, 2021)
 JC_CANCELLED_REASON = "Junior Cycle exams were cancelled in 2020 and 2021"
@@ -85,6 +118,46 @@ PAIR_OVERRIDES = {
     ("lc", 2014, "LC003BLP230EV.pdf"): "LC003BLP000EV.pdf",
 }
 
+# Hand-curated index decisions first made by editing paperTrailData.ts directly
+# (PRs #232 and #239). Encoded here so a rebuild reproduces them instead of
+# silently reverting them.
+#  - A reviewed answer map served from Hosting (public/paper-answers/ or
+#    public/paper-anchors/, see vaultResolve.ts HOSTED_ANSWER_OVERRIDES) with
+#    no committed scripts/paper-trail/answers/ sidecar: flag answers:1.
+HOSTED_ANSWER_FLAGS = {
+    (2026, "LC020GLP000EV.pdf"),  # Applied Maths 2026 OL EV (PR #232)
+    (2011, "LC020GLP000IV.pdf"),  # Applied Maths 2011 OL IV (PR #232)
+    (2019, "LC010GLP000BV.pdf"),  # French 2019 OL BV (PR #239)
+}
+#  - No Irish-medium scheme in the archive: pair the Irish paper with the
+#    English scheme and say so on the entry. (exam, year, paper) -> (scheme, note)
+CROSS_LANG_SCHEMES = {
+    ("lc", 2011, "LC020GLP000IV.pdf"): ("LC020GLP000EV.pdf",
+                                        "Irish paper with the matching English marking scheme."),
+}
+
+# Per-row corrections for pre-2010 archive rows whose label or fileid is broken
+# (verified against the downloaded PDF's own cover page). (view, year, raw
+# fileid) -> replacement fields.
+ROW_FIXES = {
+    # Deferred 2023: listed under Latin with a mistyped fileid, but its 28 pages
+    # are text-identical to LC067ALP008IV.pdf, the Irish-language Music Higher
+    # Listening paper already listed under Music. A duplicate, not a Latin paper.
+    ("deferredexams", "2023", "LC0067GLP008EV.pdf"): {
+        "skip": "duplicate of Music LC067ALP008IV.pdf misfiled under Latin"},
+}
+MALFORMED_LANG_RE = re.compile(r"\s*\((?:V ?|HJ|00)\)\s*$")
+# Fallback for fileids outside FILEID_RE (one-digit components, odd case):
+# level letter after the subject code, an optional paper digit, language
+# before the extension ('LC032ALP1EV.pdf', 'LB462CLp2ev.pdf', 'LC462CL2ev.pdf').
+LOOSE_FILEID_RE = re.compile(r"^(?:LC|JC|LB)\d{3,4}([A-Z])L?P?([0-9]?)[A-Z0-9]*?(EV|IV|BV)\.(?:pdf|jpg)$", re.I)
+# Pre-2010 archive rows filed under the wrong examination: the 2004 LCVP Link
+# Modules papers sit in the LCA listing (fileids LB462…) while their schemes
+# sit, correctly, under the Leaving Certificate.
+EXAM_REHOME = {
+    ("lb", "Link Modules"): "lc",
+}
+
 # Known archive typos, normalised before decoding (verified by adversarial audit).
 FILEID_FIXES = {
     "LC462CCLP000EV.pdf": "LC462CLP000EV.pdf",  # 2010 LCVP EV scheme: doubled 'C'
@@ -102,6 +175,9 @@ JC_DEFAULT_START = 2022
 # too — the decode loop normalises every image extension to lowercase .jpg
 # first, and the corpus stores TIFF sources converted to JPEG under that name.
 FILEID_RE = re.compile(r"^(LC|JC|LB)(\d{3})([A-Z])L?P([A-Z0-9]{3})(EV|IV|BV)\.(?:pdf|jpg)$", re.I)
+# Pre-2010 archive fileids mostly follow the same grammar; the exceptions (a
+# one-digit component such as LC032ALP1EV.pdf, a stray space before ".pdf")
+# decode from the archive label instead (fileid_fallback in the report).
 LEVEL_BY_CODE = {"A": "higher", "G": "ordinary", "B": "foundation", "C": "common"}
 # Z = aural/other (no level) — only ever seen on non-PDF assets so far.
 
@@ -124,7 +200,9 @@ COMPONENT_ORDER = {
 
 # Per-entry notes for COVID-era LC sittings (exact strings per approved scope).
 ENTRY_NOTES = {
-    ("lc", 2020): "November 2020 deferred-sitting papers",
+    # Not the deferred sitting (2022+): the June 2020 exams were replaced by
+    # calculated grades and the written papers were sat in November.
+    ("lc", 2020): "Sat in November 2020 — the June exams were replaced by calculated grades",
     ("lc", 2021): "adjusted format — COVID years",
 }
 
@@ -640,10 +718,22 @@ class Issues:
 
 def decode_row(row, issues):
     """Decode one PDF manifest row. Returns dict or None (dropped + reported)."""
-    fileid = FILEID_FIXES.get(row["fileid"].strip(), row["fileid"].strip())
-    label = html.unescape(row["label"]).strip()
+    raw_fileid = row["fileid"]
+    fix = ROW_FIXES.get((row["view"], str(row["year"]), raw_fileid), {})
+    if "skip" in fix:
+        issues.artifacts.append(f"{row['exam']} {row['year']} {row['view']} {raw_fileid} ({fix['skip']})")
+        return None
+    fileid = FILEID_FIXES.get(raw_fileid.strip(), raw_fileid.strip())
+    # Pre-2010 uploads with a stray space before the extension
+    # ('LC001BLPA00IV .pdf'): the index/Storage name drops it, the corpus keeps
+    # the SEC name (rawFileid). Upper-case '.PDF' stays — those names are live.
+    fileid = re.sub(r"\s+(?=\.\w+$)", "", fix.get("fileid", fileid))
+    label = html.unescape(fix.get("label", row["label"])).strip()
+    # Malformed archive language tags ('(V )', '(HJ)') — the fileid carries it.
+    label = MALFORMED_LANG_RE.sub("", label)
     name = html.unescape(row["subjectName"]).strip()
     exam = row["exam"]
+    exam = EXAM_REHOME.get((exam, name), exam)
     name = NAME_MERGES.get((exam, name), name)
     if ARTIFACT_RE.search(fileid):
         issues.artifacts.append(f"{exam} {row['year']} {name} {fileid} (duplicate/held upload)")
@@ -653,12 +743,25 @@ def decode_row(row, issues):
 
     m = FILEID_RE.match(fileid)
     code_level = code_lang = component = None
+    level_code = None
+    z_level = False
     if m:
-        code_level = LEVEL_BY_CODE.get(m.group(3).upper())
+        level_code = m.group(3).upper()
+        code_level = LEVEL_BY_CODE.get(level_code)
         component = m.group(4).upper()
         code_lang = m.group(5).lower()
     else:
         issues.fileid_fallback.append(f"{where} | {label}")
+        loose = LOOSE_FILEID_RE.match(fileid)
+        if loose:
+            level_code = loose.group(1).upper()
+            code_level = LEVEL_BY_CODE.get(level_code)
+            # Pre-2010 only: a one-digit paper number reads as that paper's
+            # component ("1" -> "100"), so Paper One/Two pair with their own
+            # schemes. (2010+ rows keep their audited pairing unchanged.)
+            if year < 2010 and loose.group(2):
+                component = f"{loose.group(2)}00"
+            code_lang = loose.group(3).lower()
 
     # Language: label '(EV)' suffix wins; fileid is the fallback.
     lm = LANG_LABEL_RE.search(label)
@@ -700,6 +803,13 @@ def decode_row(row, issues):
     level = label_level or code_level
     if label_level and code_level and label_level != code_level:
         issues.level_disagree.append(f"{where}: label ({label_level}) vs fileid ({code_level})")
+    if level is None and level_code == "Z":
+        # 'Z' = no level: one paper the SEC set for both levels (pre-2010 Map,
+        # Life Sketching, Practical Paper). Modern years label the same papers
+        # "Common Level", so they join the subject's common-level entries.
+        level = "common"
+        z_level = True
+        issues.fileid_fallback.append(f"{where}: level code Z — shared by both levels")
     if level is None and exam == "lb":
         level = "common"  # LCA is a common-level programme
         issues.fileid_fallback.append(f"{where}: no level anywhere — defaulted to common (LCA)")
@@ -707,7 +817,7 @@ def decode_row(row, issues):
         issues.undecodable.append(f"{where}: no level | {label}")
         return None
 
-    kind = "scheme" if row["view"] == "markingschemes" else "paper"
+    kind, sitting = VIEW_KIND[row["view"]]
     paper_label = " / ".join(parts_out)
     if kind == "scheme":
         if component and component != "000":
@@ -738,6 +848,10 @@ def decode_row(row, issues):
         "paperLabel": paper_label,
         "component": component,
         "fileid": fileid,
+        "rawFileid": raw_fileid,
+        "zLevel": z_level,
+        "sitting": sitting,
+        "docId": sitting_doc_id(fileid, sitting),
     }
 
 
@@ -765,7 +879,16 @@ def main():
     downloads_present = os.path.exists(DOWNLOADS)
     dl = {}
     for d in load_jsonl(DOWNLOADS):
-        dl[(d["view"], d["year"], d["fileid"])] = d
+        k = (d["view"], d["year"], d["fileid"])
+        prev = dl.get(k)
+        # A later FAILED re-fetch must never erase an earlier verified record:
+        # bucket-reconstructed files (no local copy) get re-attempted by a
+        # re-run of download.py, and 36 large ones timed out on 2026-09-11 —
+        # last-record-wins silently dropped them from the index although the
+        # verified bytes are in Storage.
+        if "error" in d and prev is not None and "error" not in prev:
+            continue
+        dl[k] = d
 
     # Stage 2.5 answer maps: every COMMITTED per-paper sidecar (cumulative across
     # waves), keyed (year, paperFileid). Scanning the files (not a per-run
@@ -795,6 +918,8 @@ def main():
     schemes_listing = defaultdict(set)  # (exam, year) -> SEC names (markingschemes view)
     for key, subs in subjects_json.items():
         view, exam, year = key.split("|")
+        if view not in ("exampapers", "markingschemes"):
+            continue  # deferred sittings never explain (or fill) a June gap
         target = listing if view == "exampapers" else schemes_listing
         for _, n in subs:
             nm = html.unescape(n).strip()
@@ -812,7 +937,7 @@ def main():
     # corpus and Storage hold TIFF sources converted to JPEG under that name
     # (the annual refresh's image fetch step does the conversion). Audio/video
     # rows stay out of scope.
-    image_re = re.compile(r"\.(jpe?g|tiff?)$", re.I)
+    image_re = re.compile(r"\.(jpe?g|png|tiff?)$", re.I)
     # When the SEC published the same component as BOTH a PDF and an image in
     # one year (2018 Geography Picture/Illustration), the PDF wins — it is the
     # already-live richer format; the image row is a duplicate, not a doc.
@@ -836,6 +961,41 @@ def main():
         d = decode_row(r, issues)
         if d:
             decoded.append(d)
+    # Level-less ('Z') papers the SEC set for both levels: where the subject's
+    # modern years list such papers at Common level (Geography's Map,
+    # Construction Studies' practical) they join that level; otherwise (Art's
+    # 1995-1999 Life Sketching) they are listed under each level that sat them.
+    modern_common = {(d["exam"], d["effName"]) for d in decoded
+                     if d["level"] == "common" and d["year"] >= 2010 and not d.get("zLevel")}
+    spread = []
+    for d in decoded:
+        if not d.get("zLevel") or (d["exam"], d["effName"]) in modern_common:
+            spread.append(d)
+            continue
+        sat = [x for x in decoded
+               if x["exam"] == d["exam"] and x["effName"] == d["effName"] and x["year"] == d["year"]
+               and x["kind"] == d["kind"] and not x.get("zLevel")]
+        # Same-language levels first; an Irish-only Life Sketching follows the
+        # levels its English-language siblings were sat at that year.
+        levels = ({x["level"] for x in sat if x["lang"] == d["lang"]}
+                  or {x["level"] for x in sat})
+        spread.extend([dict(d, level=lv) for lv in sorted(levels, key=LEVEL_RANK.get)] or [d])
+    decoded = spread
+
+    # Official sample papers (sample-papers.json): new specifications have no
+    # archive rows yet, so these join the decoded rows as sitting "sample"
+    # papers — no scheme, no answers, labelled as samples everywhere.
+    samples = json.load(open(SAMPLES_JSON, encoding="utf-8")) if os.path.exists(SAMPLES_JSON) else []
+    for d in load_jsonl(SAMPLE_DOWNLOADS):
+        dl[(d["view"], str(d["year"]), d["fileid"])] = d
+    for sp in samples:
+        decoded.append({
+            "view": "samplepapers", "exam": sp["exam"], "cycle": CYCLE_OF_EXAM[sp["exam"]],
+            "year": int(sp["year"]), "secId": str(sp["secId"]), "secName": sp["subject"],
+            "effName": sp["subject"], "kind": "paper", "level": sp["level"], "lang": sp["lang"],
+            "modified": False, "bilingual": False, "paperLabel": sp["label"], "component": None,
+            "fileid": sp["fileid"], "rawFileid": sp["fileid"], "sitting": "sample", "docId": sp["fileid"],
+        })
     log(f"  decoded: {len(decoded)} PDF rows | non-PDF skipped: {sum(issues.non_pdf.values())}"
         f" | undecodable: {len(issues.undecodable)}")
 
@@ -886,15 +1046,16 @@ def main():
 
     def doc_for(d):
         rec = (dl.get((d["view"], str(d["year"]), d["fileid"]))
-               or dl.get((d["view"], str(d["year"]), RAW_FILEIDS.get(d["fileid"], ""))))
+               or dl.get((d["view"], str(d["year"]), RAW_FILEIDS.get(d["fileid"], "")))
+               or dl.get((d["view"], str(d["year"]), d.get("rawFileid", ""))))
         if rec is None:
             issues.bytes_pending += 1
-            return {"f": d["fileid"], "b": 0}
+            return {"f": d["docId"], "b": 0}
         if "error" in rec:
             issues.download_errors.append(
-                f"{d['exam']} {d['year']} {d['effName']} {d['fileid']}: {rec['error']}")
+                f"{d['exam']} {d['year']} {d['effName']} {d['view']}/{d['fileid']}: {rec['error']}")
             return None
-        return {"f": d["fileid"], "b": int(rec.get("bytes", 0))}
+        return {"f": d["docId"], "b": int(rec.get("bytes", 0))}
 
     # ── Registry from paper rows ─────────────────────────────────────────────
     papers = [d for d in decoded if d["kind"] == "paper"]
@@ -951,11 +1112,13 @@ def main():
 
     # ── Pairing ──────────────────────────────────────────────────────────────
     def pairkey(d):
-        return (d["exam"], d["effName"], d["year"], d["level"], d["lang"])
+        # Sitting is part of the key: a deferred paper pairs ONLY with the
+        # deferred marking scheme, never with the June scheme of its year.
+        return (d["exam"], d["effName"], d["year"], d["level"], d["lang"], d["sitting"])
 
     schemes_by_key = defaultdict(list)
     for s in schemes:
-        if (s["year"], s["fileid"]) in MISFILED_SCHEMES:
+        if s["sitting"] == "main" and (s["year"], s["fileid"]) in MISFILED_SCHEMES:
             issues.scheme_extras.append(
                 f"{s['exam']} {s['year']} {s['effName']}: MISFILED in archive scheme view "
                 f"(actually a paper/answer book) — excluded: {s['fileid']}")
@@ -973,7 +1136,8 @@ def main():
         then same component family (last two digits), then the whole-level 000
         scheme — and a 'Project Maths' label may never cross the boundary.
         Better unpaired than wrong."""
-        forced = PAIR_OVERRIDES.get((p["exam"], p["year"], p["fileid"]))
+        forced = (PAIR_OVERRIDES.get((p["exam"], p["year"], p["fileid"]))
+                  if p["sitting"] == "main" else None)
         if forced:
             for sc in cands:
                 if sc["fileid"] == forced:
@@ -1005,14 +1169,28 @@ def main():
 
     # entries[subject id][(year, level, lang)] = [paper objects]
     entries = defaultdict(lambda: defaultdict(list))
+    entry_notes_extra = {}  # (sid, year, level, lang) -> note placed before papers
     bilingual_counts = defaultdict(lambda: [0, 0])  # (sid,y,lvl,lang) -> [bv, total]
     paired_keys = set()
     pair_counts = defaultdict(lambda: [0, 0])  # (sid, year, level) -> [papers, with-scheme]
     upload_rows = {}  # remote path -> local path (deduped; single source of truth for upload layout)
     answer_upload_rows = {}  # remote sidecar path -> local sidecar path (QA-passed only)
 
-    for key in sorted(papers_by_key):
-        exam, eff_name, year, level, lang = key
+    def corpus_path(d):
+        """Local corpus path. FILEID_FIXES rows are stored under the fixed name
+        when reconstructed from the bucket, under the raw SEC name when
+        downloaded fresh — prefer whichever exists."""
+        fixed = f"paper-trail-corpus/{d['view']}/{d['year']}/{d['fileid']}"
+        if os.path.exists(os.path.join(REPO, fixed)):
+            return fixed
+        for raw in (RAW_FILEIDS.get(d["fileid"]), d.get("rawFileid")):
+            if raw and os.path.exists(os.path.join(REPO, f"paper-trail-corpus/{d['view']}/{d['year']}/{raw}")):
+                return f"paper-trail-corpus/{d['view']}/{d['year']}/{raw}"
+        return fixed
+
+    # June sitting first within each (year, level, lang) entry, then deferred.
+    for key in sorted(papers_by_key, key=lambda k: (k[:5], SITTING_RANK[k[5]])):
+        exam, eff_name, year, level, lang, sitting = key
         sid = registry[(exam, eff_name)]["id"]
         cands = schemes_by_key.get(key, [])
         if cands:
@@ -1028,31 +1206,40 @@ def main():
             doc = doc_for(p)
             if doc is None:
                 continue
-            item = {"label": p["paperLabel"], "doc": doc}
+            item = {"label": SITTING_LABEL_PREFIX.get(sitting, "") + p["paperLabel"], "doc": doc}
+            if sitting != "main":
+                item["sitting"] = sitting
             _cy = registry[(exam, eff_name)]["cycle"]
-            upload_rows[f"papers/{_cy}/{sid}/{year}/paper/{p['fileid']}"] = \
-                f"paper-trail-corpus/{p['view']}/{p['year']}/{p['fileid']}"
+            upload_rows[f"papers/{_cy}/{sid}/{year}/paper/{p['docId']}"] = corpus_path(p)
             # Image supplements never carry a marking scheme — the scheme
             # belongs to the Source Paper item of the same entry, and pairing
             # one here would put a scheme button on a photograph.
             is_image = p["fileid"].lower().endswith(".jpg")
             prim = None if is_image else scheme_for_paper(p, cands)
+            cross = CROSS_LANG_SCHEMES.get((exam, year, p["fileid"])) if sitting == "main" else None
+            if cross and not prim:
+                prim = next((sc for sc in schemes
+                             if sc["exam"] == exam and sc["year"] == year
+                             and sc["sitting"] == "main" and sc["fileid"] == cross[0]), None)
             scheme_doc = doc_for(prim) if prim else None
             if is_image:
                 pass
             elif prim and scheme_doc:
                 used_scheme_ids.add(id(prim))
-                upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['fileid']}"] = \
-                    f"paper-trail-corpus/{prim['view']}/{prim['year']}/{prim['fileid']}"
+                upload_rows[f"papers/{_cy}/{sid}/{year}/scheme/{prim['docId']}"] = corpus_path(prim)
                 item["scheme"] = scheme_doc
+                if cross:
+                    entry_notes_extra[(sid, year, level, lang)] = cross[1]
             else:
                 unscheduled += 1
             if p["modified"]:
                 item["modified"] = True
             # Answer-map flag (Stage 2.5) — only for QA-passed grammar profiles,
             # and only when anchor-map.py actually mapped this paper.
-            _sidecar_local = os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['fileid']}.json")
-            _key = (year, p["fileid"])
+            # Keyed by the INDEX name (docId): a deferred paper reuses its June
+            # fileid, and must never pick up the June paper's sidecar.
+            _sidecar_local = os.path.join("scripts", "paper-trail", "answers", str(year), f"{p['docId']}.json")
+            _key = (year, p["docId"])
             _precise = _key in answer_mapped and (sid, level, lang) in QA_PASSED_ANSWER_PROFILES
             _fallback = _key in answer_fallback
             # A chip is only usable when the viewer can load the scheme the
@@ -1065,9 +1252,13 @@ def main():
                 # exact answer, just a per-question jump near it. File-existence gate:
                 # deleting a sidecar cleanly de-flags it.
                 item["answers"] = 1
-                answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['fileid']}.json"] = _sidecar_local
-            entries[sid][(year, level, lang)].append(item)
-            bc = bilingual_counts[(sid, year, level, lang)]
+                answer_upload_rows[f"papers/{_cy}/{sid}/{year}/answers/{p['docId']}.json"] = _sidecar_local
+            elif _key in HOSTED_ANSWER_FLAGS and item.get("scheme") and sitting == "main":
+                # Reviewed map served from Hosting (public/paper-answers/), no
+                # Storage sidecar to upload — see HOSTED_ANSWER_FLAGS.
+                item["answers"] = 1
+            entries[sid][(year, level, lang, sitting)].append(item)
+            bc = bilingual_counts[(sid, year, level, lang, sitting)]
             bc[0] += 1 if p["bilingual"] else 0
             bc[1] += 1
             pc = pair_counts[(sid, year, level)]
@@ -1076,36 +1267,56 @@ def main():
         for sc in cands:
             if id(sc) not in used_scheme_ids:
                 issues.scheme_extras.append(
-                    f"{exam} {year} {eff_name} {level}/{lang}: unmatched scheme candidate "
-                    f"{sc['fileid']} ({sc['paperLabel']})")
-        if unscheduled and entries[sid].get((year, level, lang)):
-            issues.unpaired_papers.append((sid, year, level, lang, unscheduled))
+                    f"{exam} {year} {eff_name} {level}/{lang}{'' if sitting == 'main' else ' ' + sitting}: "
+                    f"unmatched scheme candidate {sc['fileid']} ({sc['paperLabel']})")
+        if unscheduled and entries[sid].get((year, level, lang, sitting)):
+            issues.unpaired_papers.append((sid, year, level, lang + ("" if sitting == "main" else f" {sitting}"),
+                                           unscheduled))
 
-    for key in sorted(schemes_by_key):
+    for key in sorted(schemes_by_key, key=lambda k: (k[:5], SITTING_RANK[k[5]])):
         if key not in paired_keys:
-            exam, eff_name, year, level, lang = key
-            issues.unpaired_schemes.append((exam, eff_name, year, level, lang, len(schemes_by_key[key])))
+            exam, eff_name, year, level, lang, sitting = key
+            issues.unpaired_schemes.append((exam, eff_name, year, level,
+                                            lang + ("" if sitting == "main" else f" {sitting}"),
+                                            len(schemes_by_key[key])))
 
     # Subject levels = union over surviving entries; drop empty groups.
     index = {}
     for sid in sorted(entries):
         subj = next(s for s in registry.values() if s["id"] == sid)
         out = []
-        for (year, level, lang), items in entries[sid].items():
+        for (year, level, lang, sitting), items in entries[sid].items():
             if not items:
                 continue
             subj["levels"].add(level)
-            entry = {"year": year, "level": level, "lang": lang, "papers": items}
-            notes = []
-            if ENTRY_NOTES.get((subj["cycle"], year)):
+            # One entry per sitting: the deferred sitting (and sample papers)
+            # get their own entry for the same year/level/lang, listed after
+            # the June entry, so any reader that takes the first entry for a
+            # year keeps getting the June papers.
+            entry = {"year": year, "level": level, "lang": lang}
+            if sitting != "main":
+                entry["sitting"] = sitting
+            if (sid, year, level, lang) in entry_notes_extra:
+                entry["note"] = entry_notes_extra[(sid, year, level, lang)]
+            entry["papers"] = items
+            notes = [entry.pop("note")] if "note" in entry else []
+            if sitting == "sample":
+                notes.append(SAMPLE_ENTRY_NOTE.format(year=year))
+            if sitting == "main" and ENTRY_NOTES.get((subj["cycle"], year)):
                 notes.append(ENTRY_NOTES[(subj["cycle"], year)])
-            bv, total = bilingual_counts[(sid, year, level, lang)]
+            bv, total = bilingual_counts[(sid, year, level, lang, sitting)]
             if total and bv == total:  # only when EVERY doc is bilingual
                 notes.append("bilingual English/Irish document")
             if notes:
-                entry["note"] = " · ".join(notes)
+                if (sid, year, level, lang) in entry_notes_extra:
+                    # keep the hand-curated note ahead of `papers` (PR #232 layout)
+                    entry = {"year": year, "level": level, "lang": lang,
+                             "note": " · ".join(notes), "papers": items}
+                else:
+                    entry["note"] = " · ".join(notes)
             out.append(entry)
-        out.sort(key=lambda e: (-e["year"], LEVEL_RANK[e["level"]], LANG_RANK[e["lang"]]))
+        out.sort(key=lambda e: (-e["year"], LEVEL_RANK[e["level"]], LANG_RANK[e["lang"]],
+                                SITTING_RANK[e.get("sitting", "main")]))
         if out:
             index[sid] = out
 
@@ -1115,12 +1326,14 @@ def main():
     # ── Gaps ─────────────────────────────────────────────────────────────────
     decoded_paper_years = defaultdict(set)   # (exam, origName) -> years with decoded papers
     for p in papers:
-        decoded_paper_years[(p["exam"], p["secName"])].add(p["year"])
+        if p["sitting"] == "main":
+            decoded_paper_years[(p["exam"], p["secName"])].add(p["year"])
 
     gaps = []
     for s in subjects:
         exam, cycle = s["exam"], s["cycle"]
-        years_with_entries = {e["year"] for e in index.get(s["id"], [])}
+        # A deferred or sample paper never fills (or hides) a June-sitting gap.
+        years_with_entries = {e["year"] for e in index.get(s["id"], []) if "sitting" not in e}
         listed_years = sorted(y for (ex, y), names in listing.items()
                               if ex == exam and (names & s["origNames"]))
         if cycle == "jc":
@@ -1279,6 +1492,22 @@ def main():
     if missing_views:
         w(f"- **PARTIAL CRAWL**: no `{'`, `'.join(missing_views)}` rows yet — pairing/gap "
           f"results below will change on the full data")
+    w("")
+    w("## Sittings")
+    w("")
+    w("| sitting | cycle | papers | with scheme | years |")
+    w("|---|---|---|---|---|")
+    by_sitting = defaultdict(lambda: [0, 0, set()])
+    for sid_, es in index.items():
+        cy = next(s_["cycle"] for s_ in subjects if s_["id"] == sid_)
+        for e in es:
+            for it in e["papers"]:
+                b = by_sitting[(it.get("sitting", "main"), cy)]
+                b[0] += 1
+                b[1] += 1 if "scheme" in it else 0
+                b[2].add(e["year"])
+    for (st, cy), (n, ns, ys) in sorted(by_sitting.items(), key=lambda kv: (SITTING_RANK[kv[0][0]], CYCLE_RANK[kv[0][1]])):
+        w(f"| {st} | {cy} | {n} | {ns} | {min(ys)}–{max(ys)} |")
     w("")
     w("## Registry")
     w("")
