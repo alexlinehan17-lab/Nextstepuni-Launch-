@@ -8,13 +8,13 @@
  * nowhere silently gives the student an empty subject.
  */
 import { describe, expect, it } from 'vitest';
-import { LC_SUBJECTS, LCA_SUBJECTS, LCVP_GRADES, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, gradeLadder, isValidTarget, lcSubjectLevels, subjectMatchesQuery } from '../components/subjectData';
+import { LC_SUBJECTS, LCA_SUBJECTS, LCVP_GRADES, defaultSubjectConfig, fixedLevelNote, getGradeIndex, getGradesForLevel, getPointsForGrade, gradeLadder, isValidTarget, lcSubjectLevels, subjectMatchesQuery, gradeRank, gradeSteps, targetGradesFor } from '../components/subjectData';
 import { resolveSubjectId } from '../curriculumRegistry';
 import { PAPER_TRAIL_INDEX, PAPER_TRAIL_SUBJECTS } from '../paperTrailData';
 import { baseName } from '../components/shared/subjectNames';
 import { profileDeckChoice } from '../components/MarkBank/MarkBank';
 import { SUBJECTS as MARK_BANK_SUBJECTS, deckSize, levelsFor } from '../components/MarkBank/deck';
-import { choicesFor, emptyChoice, levelOptions } from '../components/onboarding/model';
+import { choiceReady, choicesFor, emptyChoice, levelOptions, readDraft, targetChoicesFor } from '../components/onboarding/model';
 import { getSubjectStarCrew } from '../data/subjectStarCrew';
 
 const paperTrailMatch = (name: string, cycle: 'lc' | 'lca') =>
@@ -144,7 +144,7 @@ describe('Foundation level and other names', () => {
     expect(getGradesForLevel('foundation')[0]).toBe('F1');
     expect(['F1', 'F2', 'F3'].map(grade => getPointsForGrade(grade as never, true))).toEqual([20, 12, 0]);
     expect(isValidTarget('F3', 'F1')).toBe(true);
-    expect(isValidTarget('F3', 'O6')).toBe(false);
+    expect(isValidTarget('F3', 'O6')).toBe(true);
     expect(choicesFor('6th', 'foundation')).toEqual(['F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8']);
   });
 
@@ -159,5 +159,56 @@ describe('Foundation level and other names', () => {
     expect(find('lcpe')).toEqual(['Physical Education']);
     expect(find('chinese')).toEqual(['Mandarin Chinese']);
     expect(LCA_SUBJECTS.filter(subject => subjectMatchesQuery(subject, 'vpg')).map(subject => subject.name)).toEqual(['Vocational Preparation & Guidance']);
+  });
+});
+
+describe('aiming for a higher level', () => {
+  it('lets an Ordinary student aim for Higher, and a Foundation student for either', () => {
+    expect(targetGradesFor('higher')).toHaveLength(8);
+    expect(targetGradesFor('ordinary').slice(0, 2)).toEqual(['H1', 'H2']);
+    expect(targetGradesFor('ordinary')).toHaveLength(16);
+    expect(targetGradesFor('foundation')).toHaveLength(24);
+    expect(targetGradesFor('common')).toEqual(['Distinction', 'Merit', 'Pass']);
+    expect(targetChoicesFor('5th', 'ordinary')).toContain('H3');
+    expect(targetChoicesFor('5th', 'higher')).not.toContain('O1');
+    expect(targetChoicesFor('LCA1', 'common')).toEqual([]);
+  });
+
+  it('accepts an Ordinary current with a Higher target in onboarding, but not the reverse', () => {
+    expect(choiceReady('5th', { level: 'ordinary', current: 'O2', target: 'H4', reviewed: false })).toBe(true);
+    expect(choiceReady('5th', { level: 'higher', current: 'H4', target: 'O1', reviewed: false })).toBe(false);
+    expect(choiceReady('5th', { level: 'ordinary', current: 'H3', target: 'H1', reviewed: false })).toBe(false);
+  });
+
+  it('keeps a saved Ordinary-to-Higher target when onboarding is resumed', () => {
+    const storage = { getItem: () => JSON.stringify({ version: 2, step: 'grades', year: '5th', subjects: ['English'], configs: { English: { level: 'ordinary', current: 'O2', target: 'H5', reviewed: true } } }) };
+    const draft = readDraft('uid', 'fresh', undefined, storage);
+    expect(draft.configs.English).toMatchObject({ level: 'ordinary', current: 'O2', target: 'H5', reviewed: true });
+  });
+
+  it('ranks grades across levels by points, then level', () => {
+    expect(gradeRank('H1')).toBeGreaterThan(gradeRank('H2'));
+    expect(gradeRank('H6')).toBeGreaterThan(gradeRank('O2'));
+    expect(gradeRank('O1')).toBeGreaterThan(gradeRank('H7'));
+    expect(gradeRank('H8')).toBeGreaterThan(gradeRank('O7'));
+    expect(gradeRank('O7')).toBeGreaterThan(gradeRank('O8'));
+    expect(gradeRank('Merit')).toBeGreaterThan(gradeRank('Pass'));
+  });
+
+  it('accepts a Higher target at or above the current points, never below', () => {
+    expect(isValidTarget('O2', 'H3')).toBe(true);
+    expect(isValidTarget('O1', 'H5')).toBe(true);
+    expect(isValidTarget('O1', 'H7')).toBe(false);
+    expect(isValidTarget('H4', 'O1')).toBe(false);
+    expect(isValidTarget('Merit', 'H1')).toBe(false);
+  });
+
+  it('counts a move up a level as harder than the same points on one level', () => {
+    expect(gradeSteps('O3', 'O1')).toBe(2);
+    expect(gradeSteps('O2', 'H6')).toBe(1);
+    expect(gradeSteps('O2', 'H3')).toBe(1 + 3);
+    expect(gradeSteps('H4', 'H4')).toBe(0);
+    expect(gradeSteps('H4', 'O1')).toBe(0);
+    expect(gradeSteps(undefined, 'H1')).toBe(0);
   });
 });
