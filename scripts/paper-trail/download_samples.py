@@ -4,8 +4,9 @@ Paper Trail — official SEC sample papers for new specifications.
 
 The Exam Material Archive only holds papers that have been sat. Sample papers
 for a specification not yet examined (2025 Tranche 1: Climate Action and
-Sustainable Development; Drama, Film and Theatre Studies — first examined in
-2027) live on the SEC's Senior Cycle Redevelopment pages
+Sustainable Development; Drama, Film and Theatre Studies; and the revised
+Biology, Chemistry, Physics, Business, Arabic, Latin and Ancient Greek —
+first examined in 2027) live on the SEC's Senior Cycle Redevelopment pages
 (https://www.examinations.ie/scr/, one fragment per subject code, e.g.
 scr/571.php). sample-papers.json is the curated, committed list (one row per
 subject/level/language/document, with the source page); this script mirrors
