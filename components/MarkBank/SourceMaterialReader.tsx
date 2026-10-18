@@ -11,6 +11,7 @@
  * context cannot drift.
  */
 
+import { lockBodyScroll } from '../../utils/bodyScrollLock';
 import React, {
   useCallback,
   useEffect,
@@ -133,8 +134,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   useEffect(() => {
     if (!open) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const releaseScroll = lockBodyScroll();
     // Advancing to the last page disables the focused Next button. Browsers
     // can then move focus to the body, outside the dialog's key handler.
     const escape = (event: KeyboardEvent) => {
@@ -147,7 +147,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
     requestAnimationFrame(() => closeRef.current?.focus());
     return () => {
       document.removeEventListener('keydown', escape, true);
-      document.body.style.overflow = previousOverflow;
+      releaseScroll();
       if (scrollFrame.current !== null) cancelAnimationFrame(scrollFrame.current);
     };
   }, [open, close]);

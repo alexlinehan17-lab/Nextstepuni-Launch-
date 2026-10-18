@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { lockBodyScroll } from '../utils/bodyScrollLock';
 import { useEffect, useRef, type RefObject } from 'react';
 
 interface ModalOptions {
@@ -10,7 +11,6 @@ interface ModalOptions {
   initialFocus?: 'first' | 'dialog';
 }
 const activeModals: symbol[] = [];
-let savedOverflow = '';
 const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
 /** One focus owner, scroll lock and dismissal contract for every modal. */
@@ -21,10 +21,7 @@ export function useModal(isOpen: boolean, onClose: () => void, dialogRef?: RefOb
     if (!isOpen) return;
     const token = Symbol('modal');
     const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    if (activeModals.length === 0) {
-      savedOverflow = document.body.style.overflow;
-      document.body.style.overflow = 'hidden';
-    }
+    const releaseScroll = lockBodyScroll();
     activeModals.push(token);
     const isTop = () => activeModals.at(-1) === token;
     const getDialog = () => dialogRef?.current ?? Array.from(document.querySelectorAll<HTMLElement>('[role="dialog"][aria-modal="true"]')).at(-1);
@@ -71,7 +68,7 @@ export function useModal(isOpen: boolean, onClose: () => void, dialogRef?: RefOb
       window.removeEventListener('keydown', handleKeyDown);
       cancelAnimationFrame(portalFrame);
       cancelAnimationFrame(focusFrame);
-      if (activeModals.length === 0) document.body.style.overflow = savedOverflow;
+      releaseScroll();
       if (wasTop && previousFocus?.isConnected) previousFocus.focus();
     };
   }, [dialogRef, isOpen]);
