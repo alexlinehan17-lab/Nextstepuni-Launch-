@@ -5,7 +5,7 @@ import { CARDS as HIGHER_CARDS } from '../components/MarkBank/cards/economics/hi
 import { CARDS as ORDINARY_CARDS } from '../components/MarkBank/cards/economics/ordinary';
 import { isPointCard, type SecDiagramCard, type SecPointCard, type SecQuestionCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
-import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
 import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
 import reviews from '../data/examTopics/economics-sec-topic-reviews.json';
 import inventory from '../scripts/markbank/authoring/economics-source-inventory.json';
@@ -310,7 +310,9 @@ describe('Economics SEC source review (completion remains pending)', () => {
   });
 
   it('inventories every indexed paper, including earlier years and Irish editions', () => {
-    const indexed = PAPER_TRAIL_INDEX.economics.flatMap(entry => entry.papers.map(paper =>
+    // The reviewed window: June sittings 2010-2026 (pre-2010 and deferred
+    // papers are archive-only).
+    const indexed = reviewedArchiveEntries('economics').flatMap(entry => entry.papers.map(paper =>
       [entry.year, entry.level, entry.lang, paper.doc.f].join('|'))).sort();
     const inventoried = inventory.papers.map(paper =>
       [paper.year, paper.level, paper.lang, paper.fileid].join('|')).sort();

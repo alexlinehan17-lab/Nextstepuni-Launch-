@@ -103,8 +103,12 @@ describe('Paper Trail index entries', () => {
     for (const [id, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
       const subj = PAPER_TRAIL_SUBJECTS.find(s => s.id === id)!;
       for (const e of entries) {
-        expect(e.year, `${id} year`).toBeGreaterThanOrEqual(2010);
-        expect(e.year, `${id} year`).toBeLessThanOrEqual(2026);
+        // The SEC archive's year list starts in 1995. Only official sample
+        // papers (for a specification not yet examined) sit past the latest
+        // sitting, under the specification's first examination year.
+        expect(e.year, `${id} year`).toBeGreaterThanOrEqual(1995);
+        const sampleOnly = e.papers.every(p => p.sitting === 'sample');
+        expect(e.year, `${id} year`).toBeLessThanOrEqual(sampleOnly ? 2030 : 2026);
         expect(subj.levels.includes(e.level), `${id} ${e.year}: level ${e.level} not declared`).toBe(true);
         expect(['ev', 'iv'].includes(e.lang), `${id} ${e.year} lang`).toBe(true);
         expect(e.papers.length, `${id} ${e.year} ${e.level} ${e.lang} has papers`).toBeGreaterThan(0);
@@ -147,3 +151,84 @@ describe('Paper Trail index entries', () => {
     }
   });
 });
+
+describe('Paper Trail sittings', () => {
+  const all = Object.entries(PAPER_TRAIL_INDEX).flatMap(([subjectId, entries]) =>
+    entries.flatMap(entry => entry.papers.map(item => ({ subjectId, entry, item }))));
+
+  it('indexes the SEC deferred sitting for every year it ran (Leaving Cert, 2022-2025)', () => {
+    const years = new Set(all.filter(r => r.item.sitting === 'deferred').map(r => r.entry.year));
+    expect([...years].sort()).toEqual([2022, 2023, 2024, 2025]);
+    for (const r of all.filter(x => x.item.sitting === 'deferred')) {
+      expect(PAPER_TRAIL_SUBJECTS.find(s => s.id === r.subjectId)?.cycle, r.subjectId).toBe('lc');
+    }
+  });
+
+  it('gives deferred documents their own names, scheme and label — never the June ones', () => {
+    for (const { subjectId, entry, item } of all) {
+      const where = `${subjectId} ${entry.year} ${entry.level}/${entry.lang} ${item.doc.f}`;
+      if (item.sitting === 'deferred') {
+        expect(item.label, where).toMatch(/^Deferred · /);
+        expect(item.doc.f, where).toMatch(/-deferred\.(pdf|jpg)$/);
+        if (item.scheme) expect(item.scheme.f, where).toMatch(/-deferred\.pdf$/);
+        // No answer map has been built for a deferred paper; a June sidecar
+        // keyed by the shared SEC fileid must never light it.
+        expect(item.answers, where).toBeUndefined();
+      } else {
+        expect(item.doc.f, where).not.toMatch(/-deferred\./);
+        if (item.scheme) expect(item.scheme.f, where).not.toMatch(/-deferred\./);
+        expect(item.label, where).not.toMatch(/^Deferred · /);
+      }
+    }
+  });
+
+  it('keeps every document identity unique (recents, pins, deep links, Storage paths)', () => {
+    const keys = new Set<string>();
+    for (const { subjectId, entry, item } of all) {
+      const key = `${subjectId}|${entry.year}|${entry.level}|${entry.lang}|${item.doc.f}`;
+      expect(keys.has(key), `duplicate identity ${key}`).toBe(false);
+      keys.add(key);
+    }
+  });
+
+  it('gives each sitting its own entry, June first, so a first-match reader gets June', () => {
+    for (const [id, entries] of Object.entries(PAPER_TRAIL_INDEX)) {
+      const seen = new Set<string>();
+      entries.forEach((e, i) => {
+        const where = `${id} ${e.year} ${e.level}/${e.lang} ${e.sitting ?? 'june'}`;
+        // Every item mirrors its entry's sitting.
+        for (const p of e.papers) expect(p.sitting, where).toBe(e.sitting);
+        const key = `${e.year}|${e.level}|${e.lang}|${e.sitting ?? ''}`;
+        expect(seen.has(key), `${where}: duplicate entry`).toBe(false);
+        seen.add(key);
+        if (e.sitting === 'deferred') {
+          const june = entries.findIndex(x => x.year === e.year && x.level === e.level && x.lang === e.lang && !x.sitting);
+          if (june >= 0) expect(june, `${where}: June entry must come first`).toBeLessThan(i);
+        }
+      });
+    }
+  });
+
+  it('labels official sample papers as samples, with no scheme or answers, in sample-only entries', () => {
+    const samples = all.filter(r => r.item.sitting === 'sample');
+    expect(new Set(samples.map(r => r.subjectId))).toEqual(new Set([
+      'climate-action-and-sustainable-development',
+      'drama-film-and-theatre-studies',
+    ]));
+    for (const { subjectId, entry, item } of samples) {
+      expect(item.label, subjectId).toMatch(/^Sample Paper \d/);
+      expect(item.scheme, subjectId).toBeUndefined();
+      expect(item.answers, subjectId).toBeUndefined();
+      expect(entry.papers.every(p => p.sitting === 'sample'), `${subjectId} ${entry.year}`).toBe(true);
+      expect(entry.note, subjectId).toMatch(/sample papers/i);
+    }
+  });
+
+  it('reaches back to 1995 for the Leaving Certificate, and no further', () => {
+    const lcYears = Object.entries(PAPER_TRAIL_INDEX)
+      .filter(([id]) => PAPER_TRAIL_SUBJECTS.find(s => s.id === id)?.cycle === 'lc')
+      .flatMap(([, entries]) => entries.map(e => e.year));
+    expect(Math.min(...lcYears)).toBe(1995);
+  });
+});
+
