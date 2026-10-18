@@ -448,13 +448,65 @@ export function getGradeIndex(grade: Grade | undefined): number {
   return gradeLadder(grade).indexOf(grade);
 }
 
+const SCALE_BONUS: Record<GradeScale, number> = { higher: 3, ordinary: 2, foundation: 1, lcvp: 0 };
+
 /**
- * Check if target grade is at same level or better than current.
+ * One number to compare any two Leaving Cert grades, bigger is better: CAO
+ * points first, then the level (H6 and O2 are both 46 points but H6 is the
+ * stronger result), then position on the grade's own scale (so H8, O7 and O8,
+ * all 0 points, still order within a scale).
+ */
+export function gradeRank(grade: Grade | undefined | null): number {
+  const scale = gradeScale(grade);
+  if (!grade || !scale) return -1;
+  return getPointsForGrade(grade) * 100 + SCALE_BONUS[scale] * 10 + (8 - getGradeIndex(grade));
+}
+
+/** The levels a student can aim for from `level`: their own and every level above it. */
+export function targetLevelsFor(level: Level): Level[] {
+  if (level === 'common') return ['common'];
+  if (level === 'foundation') return ['higher', 'ordinary', 'foundation'];
+  if (level === 'ordinary') return ['higher', 'ordinary'];
+  return ['higher'];
+}
+
+/**
+ * Grades a student may set as a target: those of their own level and every
+ * level above, best first. An Ordinary student can aim for Higher, a
+ * Foundation student for Ordinary or Higher. Every subject offered at a level is
+ * also offered at the levels above it, so the level alone decides this.
+ */
+export function targetGradesFor(level: Level): Grade[] {
+  return targetLevelsFor(level).flatMap(getGradesForLevel);
+}
+
+/**
+ * How far a target is from the current grade, for effort estimates. On one
+ * scale it is the number of grade steps; across levels it is the difference in
+ * CAO points steps plus one for the jump in level (moving up a level is harder
+ * than the same points on the level you are on).
+ */
+export function gradeSteps(current: Grade | undefined, target: Grade | undefined): number {
+  const from = gradeScale(current);
+  const to = gradeScale(target);
+  if (!current || !target || !from || !to) return 0;
+  if (from === to) return Math.max(0, getGradeIndex(current) - getGradeIndex(target));
+  const ladder = [100, 88, 77, 66, 56, 46, 37, 28, 20, 12, 0];
+  const position = (grade: Grade) => ladder.indexOf(getPointsForGrade(grade));
+  const jump = SCALE_BONUS[to] > SCALE_BONUS[from] ? 1 : 0;
+  return Math.max(0, position(current) - position(target)) + jump;
+}
+
+/**
+ * A target is valid when it is no worse than the current grade, on the same
+ * scale or a higher one (Ordinary current, Higher target).
  */
 export function isValidTarget(current: Grade, target: Grade): boolean {
-  // Must be on the same scale
-  if (gradeScale(current) !== gradeScale(target)) return false;
-  return getGradeIndex(target) <= getGradeIndex(current);
+  const from = gradeScale(current);
+  const to = gradeScale(target);
+  if (!from || !to) return false;
+  if (from === 'lcvp' || to === 'lcvp') return from === to && getGradeIndex(target) <= getGradeIndex(current);
+  return gradeRank(target) >= gradeRank(current);
 }
 
 // ─── Grade Bargains Calculator ──────────────────────────────────────────────

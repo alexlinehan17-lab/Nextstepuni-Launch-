@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
 import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
-import { daysUntil, needsDate, type GradeChoice } from "./model";
+import { daysUntil, gradeBarHeight, needsDate, type GradeChoice } from "./model";
 import {
   useSetupFlow,
   PointsCount,
@@ -47,6 +47,7 @@ export default function SetupFlow(props: OnboardingProps) {
     nextSubject,
     config,
     gradeChoices,
+    targetChoices,
     levelChoices,
     levelNote,
     points,
@@ -455,16 +456,11 @@ export default function SetupFlow(props: OnboardingProps) {
                 {levelNote && <p className="setup-description">{levelNote}</p>}
                 <div className="setup-grade-graphic" aria-hidden="true">
                   {(["current", "target"] as const).map((field) => {
-                    const index = gradeChoices.indexOf(config[field]);
-                    const height =
-                      index < 0
-                        ? 0
-                        : Math.max(
-                            10,
-                            ((gradeChoices.length - index) /
-                              gradeChoices.length) *
-                              100,
-                          );
+                    const height = gradeBarHeight(
+                      draft.year,
+                      config[field],
+                      field === "target" ? targetChoices : gradeChoices,
+                    );
                     return (
                       <div className="setup-grade-column" key={field}>
                         <div className="setup-grade-rail">
@@ -497,7 +493,7 @@ export default function SetupFlow(props: OnboardingProps) {
                         value={config[field]}
                         onChange={value => updateGrade({ [field]: value as GradeChoice })}
                         placeholder={`Choose ${junior ? "band" : "grade"}`}
-                        options={[...gradeChoices.map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
+                        options={[...(field === "target" ? targetChoices : gradeChoices).map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
                       />
                     </div>
                   ))}
