@@ -315,7 +315,7 @@ describe('the question comes first and stays', () => {
     next.blur();
     fireEvent.keyDown(document.body, { key: 'Escape' });
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
-    expect(document.body.style.overflow).not.toBe('hidden');
+    expect(document.body).not.toHaveAttribute('data-scroll-lock');
   });
 
   test.each(['econ-2022-hl-q12-b-ii', 'econ-2022-hl-q15-a-iii', 'econ-2022-hl-q16-c-i'])(
