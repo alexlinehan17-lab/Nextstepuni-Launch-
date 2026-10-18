@@ -1,57 +1,33 @@
-/* "How your points work": paper-and-ink grid, orange only for the student's own marks. */
-.pg-trigger{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 14px;border:1.5px solid #383838;border-radius:10px;background:#fff;color:#1a1a1a;font:600 13px 'DM Sans',sans-serif;cursor:pointer;box-shadow:2px 2px 0 #383838;transition:transform .12s ease,box-shadow .12s ease}
-.pg-trigger:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 #383838}
-.pg-trigger:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #383838}
-.pg-trigger:focus-visible{outline:2px solid #f26b1f;outline-offset:2px}
-.dark .pg-trigger{background:#27272a;color:#fafafa;border-color:#71717a;box-shadow:2px 2px 0 #71717a}
+/* "How your points work": Kobra Dialog, Tabs and Progress; only layout and the
+   student's own marks live here. */
+.nsu-points-guide{display:inline-block}
+.nsu-points-guide .pg-trigger svg{width:15px;height:15px}
 
-.pg{display:grid;gap:20px;color:#1a1a1a}
-.pg-intro{margin:0;max-width:60ch;font-size:15px;line-height:1.6;color:#4a4540}
-.pg-intro strong{color:#1a1a1a}
+.pg-dialog .pg-eyebrow{margin:0 0 6px;font:500 11px/1.4 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-foreground)}
+.pg-dialog [data-slot=dialog-title]{font-family:'Source Serif 4',Georgia,serif;font-weight:500;letter-spacing:-.02em}
+.pg-dialog .pg-dot{display:inline-block;width:6px;height:6px;margin-left:7px;border-radius:50%;background:var(--nsu-orange,#eb692a);vertical-align:2px}
+.pg-dialog .pg-tabs{margin-top:18px;display:grid;gap:14px}
+.pg-dialog .pg-panel{display:grid;gap:12px}
+.pg-dialog .pg-blurb{margin:0;font-size:13px;color:var(--muted-foreground)}
 
-.pg-grid{display:grid;gap:6px}
-.pg-row{display:grid;grid-template-columns:60px repeat(var(--pg-cols,3),minmax(0,1fr));gap:8px;align-items:stretch}
-.pg-head>span:first-child{text-align:center}
-.pg-head{padding-bottom:6px;border-bottom:1.5px solid #383838;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6b645d}
-.pg-grade{display:grid;place-items:center;font:600 20px/1 'Source Serif 4',Georgia,serif;color:#1a1a1a}
+.pg-dialog .pg-lines{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.pg-dialog .pg-line{display:grid;grid-template-columns:34px minmax(0,1fr) 38px 112px;align-items:center;gap:12px;min-height:40px;padding:0 10px;border-radius:10px;border:1px solid transparent}
+.pg-dialog .pg-code{font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.02em}
+.pg-dialog .pg-points{text-align:right;font:600 15px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums}
+.pg-dialog .pg-bar{width:100%}
+.pg-dialog .pg-mark{display:flex;justify-content:flex-end;gap:6px;min-width:0}
+.pg-dialog .pg-mark em{font:600 11px/1 'DM Sans',sans-serif;font-style:normal;padding:4px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted-foreground);white-space:nowrap}
+.pg-dialog .pg-mark em[data-kind=target]{border-color:var(--nsu-orange,#eb692a);color:var(--nsu-orange,#eb692a)}
+.pg-dialog .pg-line[data-current]{background:var(--muted);border-color:var(--border)}
+.pg-dialog .pg-line[data-target]{background:color-mix(in srgb,var(--nsu-orange,#eb692a) 8%,transparent);border-color:color-mix(in srgb,var(--nsu-orange,#eb692a) 45%,transparent)}
 
-.pg-cell{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:40px;padding:0 12px;border:1px solid #d9d4cd;border-radius:9px;background:#fff;overflow:hidden;isolation:isolate}
-.pg-cell>i{position:absolute;inset:0 auto 0 0;background:#ece8e1;z-index:-1;border-radius:8px 0 0 8px}
-.pg-cell[data-level=higher]>i{background:#e3e3ee}
-.pg-cell[data-level=ordinary]>i{background:#e6ece6}
-.pg-cell[data-level=foundation]>i{background:#f0e9de}
-.pg-cell>b{font:700 17px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.pg-cell>small{font:500 11px/1 'DM Sans',sans-serif;letter-spacing:.06em;color:#6b645d}
-.pg-cell[data-current]{border:2px solid #1a1a1a}
-.pg-cell[data-target]{border:2px solid #f26b1f;box-shadow:0 0 0 2px rgba(242,107,31,.18)}
-.pg-cell[data-current][data-target]{border-color:#f26b1f;box-shadow:inset 0 0 0 2px #1a1a1a}
-
-.pg-legend{display:flex;flex-wrap:wrap;gap:18px;margin:-6px 0 0;font:500 12px 'DM Sans',sans-serif;color:#6b645d}
-.pg-legend>span{display:inline-flex;align-items:center;gap:8px}
-.pg-legend>span::before{content:"";width:16px;height:12px;border-radius:4px;background:#fff;border:2px solid #1a1a1a}
-.pg-legend>span[data-key=target]::before{border-color:#f26b1f}
-
-.pg-notes{display:grid;gap:10px;margin:0;padding:18px 0 0;border-top:1px solid #d9d4cd;list-style:none;font-size:14px;line-height:1.55;color:#4a4540}
-.pg-notes b{color:#1a1a1a}
+.pg-dialog .pg-notes{margin-top:18px;padding:16px 18px;border-radius:14px;background:var(--muted)}
+.pg-dialog .pg-notes-title{margin:0 0 10px;font:600 13px/1 'DM Sans',sans-serif}
+.pg-dialog .pg-notes ul{display:grid;gap:10px;margin:0;padding:0;list-style:none;font-size:13.5px;line-height:1.55;color:var(--muted-foreground)}
+.pg-dialog .pg-notes b{color:var(--foreground);font-weight:600}
 
 @media (max-width:560px){
-  .pg-row{grid-template-columns:40px repeat(var(--pg-cols,3),minmax(0,1fr));gap:6px}
-  .pg-cell{padding:0 8px;min-height:38px}
-  .pg-cell>small{display:none}
-  .pg-head{font-size:9.5px;letter-spacing:.08em}
+  .pg-dialog .pg-line{grid-template-columns:30px minmax(0,1fr) 34px;gap:10px;padding:0 8px}
+  .pg-dialog .pg-mark{grid-column:1 / -1;justify-content:flex-start;padding:0 0 8px 40px}
+  .pg-dialog .pg-mark:empty{display:none}
 }
-
-.dark .pg{color:#fafafa}
-.dark .pg-intro,.dark .pg-notes{color:#d4d4d8}
-.dark .pg-intro strong,.dark .pg-notes b,.dark .pg-grade{color:#fff}
-.dark .pg-head{border-color:#a1a1aa;color:#a1a1aa}
-.dark .pg-cell{background:#1c1c1f;border-color:#3f3f46}
-.dark .pg-cell[data-level=higher]>i{background:#34345a}
-.dark .pg-cell[data-level=ordinary]>i{background:#2c4033}
-.dark .pg-cell[data-level=foundation]>i{background:#4a3d2a}
-.dark .pg-cell>small,.dark .pg-legend{color:#a1a1aa}
-.dark .pg-cell[data-current]{border-color:#fafafa}
-.dark .pg-notes{border-color:#3f3f46}
-.dark .pg-legend>span::before{background:#1c1f1f;border-color:#fafafa}
-.dark .pg-legend>span[data-key=target]::before{border-color:#f26b1f}
-@media (prefers-reduced-motion:reduce){.pg-trigger{transition:none}}
