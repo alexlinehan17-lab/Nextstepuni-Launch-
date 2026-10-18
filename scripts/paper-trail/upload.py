@@ -39,13 +39,22 @@ def main():
     # Annual refresh: `--year 2026` uploads only that year's objects, so the
     # (gitignored, absent) corpus for other years can't abort the run. The
     # remote-count verification is scoped the same way.
+    # Scope extension: `--manifest out/upload-new-<date>.jsonl` uploads exactly
+    # the listed objects (e.g. the deferred sitting + pre-2010 + sample papers
+    # added on 2026-10-17) and verifies each one by path, leaving everything
+    # already in Storage untouched. Sidecars are skipped in this mode.
     only_year = None
+    manifest_path = MANIFEST
     if len(sys.argv) == 3 and sys.argv[1] == "--year":
         only_year = int(sys.argv[2])
-    rows = [json.loads(l) for l in open(MANIFEST)]
+    subset = len(sys.argv) == 3 and sys.argv[1] == "--manifest"
+    if subset:
+        manifest_path = os.path.abspath(sys.argv[2])
+    rows = [json.loads(l) for l in open(manifest_path)]
     if only_year is not None:
         rows = [r for r in rows if r["year"] == only_year]
-    print(f"manifest: {len(rows)} objects" + (f" (year {only_year})" if only_year else ""))
+    print(f"manifest: {len(rows)} objects" + (f" (year {only_year})" if only_year else "")
+          + (f" from {os.path.relpath(manifest_path, REPO)}" if subset else ""))
 
     missing = [r for r in rows if not os.path.exists(os.path.join(REPO, r["local"]))]
     if missing:
@@ -108,7 +117,8 @@ def main():
     # Answer-map sidecars (Stage 2.5) — uploaded as application/json, NOT pdf.
     # Coordinates-only JSON; tiny; may be re-generated, so a 1-day cache. Empty
     # manifest (no QA-passed profiles yet) is a clean no-op.
-    answer_rows = [json.loads(l) for l in open(ANSWERS_MANIFEST)] if os.path.exists(ANSWERS_MANIFEST) else []
+    answer_rows = ([json.loads(l) for l in open(ANSWERS_MANIFEST)]
+                   if os.path.exists(ANSWERS_MANIFEST) and not subset else [])
     if only_year is not None:
         answer_rows = [r for r in answer_rows if f"/{only_year}/" in r["remote"]]
     if answer_rows:
@@ -136,7 +146,21 @@ def main():
         [GCLOUD, "storage", "ls", "-r", f"{BUCKET}/papers/**"],
         capture_output=True, text=True,
     )
-    listed = [l for l in out.stdout.splitlines() if l.endswith((".pdf", ".jpg"))]
+    # The SEC ships some files as .PDF; object names are case-sensitive, so
+    # match the extension case-insensitively (208 objects were missed otherwise).
+    listed = [l for l in out.stdout.splitlines() if l.lower().endswith((".pdf", ".jpg"))]
+    if subset:
+        present = {l.split(BUCKET + "/", 1)[-1] for l in listed}
+        absent = [r["remote"] for r in rows if r["remote"] not in present]
+        print(f"remote: {len(rows) - len(absent)} / {len(rows)} manifest objects present")
+        if absent:
+            for a in absent[:10]:
+                print("  missing:", a)
+            print("WARNING: re-run to fill gaps (cp is resumable).")
+            return 2
+        shutil.rmtree(STAGE)
+        print("DONE — manifest objects live.")
+        return 0
     if only_year is not None:
         listed = [l for l in listed if f"/{only_year}/" in l]
     remote = len(listed)

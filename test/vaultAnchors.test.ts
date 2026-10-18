@@ -32,7 +32,7 @@ import {
 } from '../components/PaperTrail/vaultResolve';
 import { paperRegionFor, questionsInDisplayOrder, schemeRegionFor } from '../components/PaperTrail/paperRegion';
 import type { PaperAnswerMap } from '../types/paperTrail';
-import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
 
 const ANCHORS_DIR = path.resolve(__dirname, '../public/paper-anchors');
 const HOSTED_ANSWERS_DIR = path.resolve(__dirname, '../public/paper-answers');
@@ -83,7 +83,9 @@ describe('audited hosted answer maps', () => {
   });
 
   it('ships reviewed question and scheme regions for every indexed Applied Mathematics edition', () => {
-    const entries = PAPER_TRAIL_INDEX['applied-mathematics'];
+    // The reviewed set covers the June sittings 2010-2026. Pre-2010 papers
+    // (earlier syllabus) and the deferred sitting carry no answer maps.
+    const entries = reviewedArchiveEntries('applied-mathematics');
     const expected = entries.flatMap(entry => entry.papers.map(paper =>
       `applied-mathematics|${entry.year}|${paper.doc.f}`));
     const actual = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('applied-mathematics|'));

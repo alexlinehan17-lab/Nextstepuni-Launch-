@@ -38,6 +38,7 @@ def build():
     review=json.loads(Path(__file__).with_name('french-listening-review.json').read_text())
     audio=json.loads((ROOT/'data/frenchAudio.json').read_text())
     entries=[json.loads(line.strip().rstrip(',')) for line in (ROOT/'paperTrailData.ts').read_text().split('  "french": [',1)[1].split('\n  ],',1)[0].splitlines() if line.strip()]
+    entries=[entry for entry in entries if not entry.get('sitting') and entry['year']>=2010]  # reviewed window: June 2010+
     tags=json.loads((ROOT/'scripts/paper-trail/topic-tags/tags/french.json').read_text())
     runtime=json.loads((ROOT/'data/examTopics/french-runtime.json').read_text())
     cards,tasks=[],[]

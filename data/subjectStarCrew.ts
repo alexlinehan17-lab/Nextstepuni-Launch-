@@ -459,6 +459,9 @@ const ARTWORK_ALIASES: Record<string, string> = {
   "classics": "classical-studies",
   "english and communications": "english",
   "gaeilge chumarsaideach": "irish",
+  // Archive-only subjects from the 1995-2009 Paper Trail papers.
+  "an cursa gaeilge agus chumarsaideach": "irish",
+  "technical drawing": "design-and-communication-graphics",
   "graphics": "design-and-communication-graphics",
   "graphics and construction studies": "construction-studies",
   "history early modern": "history",

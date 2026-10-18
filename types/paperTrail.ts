@@ -29,6 +29,9 @@ export interface PaperItem {
   scheme?: PaperDoc;
   /** Modified version for vision-impaired candidates. */
   modified?: boolean;
+  /** Mirrors the entry's `sitting` so an item read on its own (recents, the
+   *  viewer) still knows it. See PaperEntry.sitting. */
+  sitting?: PaperSitting;
   /** Present (=1) when a verified per-question answer map (PaperAnswerMap) has
    *  shipped for this paper — the viewer shows the "Answers" toggle. Eager
    *  presence flag only; the map itself is a lazily-fetched Storage sidecar.
@@ -118,13 +121,27 @@ export interface PaperAnswerMap {
   q: PaperAnswerQuestion[];
 }
 
+/** 'deferred' = the SEC's deferred sitting (2022+); 'sample' = official SEC
+ *  sample papers for a specification not yet examined. Absent = June. */
+export type PaperSitting = 'deferred' | 'sample';
+
 export interface PaperEntry {
   year: number;
   level: PaperLevel;
   lang: PaperLang;
+  /** Absent for the June sitting. A deferred entry sits right after the June
+   *  entry of the same year/level/lang (first-match readers keep the June
+   *  papers); its doc and scheme fileids carry a "-deferred" suffix because
+   *  the SEC reuses the June fileid, so every year+fileid identity (Storage
+   *  path, recents, pins, deep links, sidecars, topic tags) stays distinct,
+   *  and its labels start "Deferred · ". A sample entry is filed under the
+   *  specification's first examination year and never carries a scheme. */
+  sitting?: PaperSitting;
   papers: PaperItem[];
   /** Context worth a line in the UI, e.g. "November 2020 deferred sitting". */
   note?: string;
+  // Earlier-syllabus years are not flagged here: the UI derives them from
+  // data/paperTrail/syllabusChanges.ts so the wording follows the archive.
 }
 
 export interface PaperTrailSubject {
