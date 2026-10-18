@@ -1,4 +1,5 @@
 import React from "react";
+import PointsGuide from "./PointsGuide";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
@@ -634,6 +635,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                         </fieldset>
                       )}
                       {levelNote && <p className="setup-description">{levelNote}</p>}
+                      {!junior && !lca && <PointsGuide draft={draft} />}
                       <div
                         className={`setup-grade-pickers ${junior ? "setup-stack" : ""}`}
                       >

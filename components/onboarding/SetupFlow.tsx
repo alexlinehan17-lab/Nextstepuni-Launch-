@@ -14,6 +14,7 @@ import {
 export type { OnboardingProps } from "./useSetupFlow";
 import "./onboarding.css";
 import SetupSelect from "./SetupSelect";
+import PointsGuide from "./PointsGuide";
 import SetupSoundToggle from "./SetupSoundToggle";
 
 export default function SetupFlow(props: OnboardingProps) {
@@ -454,6 +455,7 @@ export default function SetupFlow(props: OnboardingProps) {
                   </fieldset>
                 )}
                 {levelNote && <p className="setup-description">{levelNote}</p>}
+                {!junior && !lca && <PointsGuide draft={draft} />}
                 <div className="setup-grade-graphic" aria-hidden="true">
                   {(["current", "target"] as const).map((field) => {
                     const height = gradeBarHeight(

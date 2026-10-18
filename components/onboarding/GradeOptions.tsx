@@ -1,4 +1,5 @@
 import React, { type RefObject } from "react";
+import { isLcaYear } from "../../utils/authUtils";
 import { ArrowRight } from "lucide-react";
 import {
   choicesFor,
@@ -16,6 +17,7 @@ import { LEVEL_LABELS, type Level } from "../subjectData";
 import { getSubjectFill } from "../../utils/subjectColors";
 import "./grade-options.css";
 import SetupSelect from "./SetupSelect";
+import PointsGuide from "./PointsGuide";
 
 export type GradeLayout = "sheet" | "buttons" | "sliders" | "single";
 export const gradeLayouts: {
@@ -95,6 +97,8 @@ export default function GradeOptions({
   onDefer,
 }: Props) {
   const junior = cycleFor(draft.year) === "junior";
+  // CAO points exist for the established Leaving Cert only.
+  const showPointsGuide = !junior && !isLcaYear(draft.year ?? undefined);
   const counted = {
     ...draft,
     configs: Object.fromEntries(
@@ -300,6 +304,7 @@ export default function GradeOptions({
         <div className="grade-workspace-heading">
           <h2>All subjects, one page.</h2>
           <p>Grades can change. This is just a starting point.</p>
+          {showPointsGuide && <div className="grade-points-row"><PointsGuide draft={draft} /></div>}
         </div>
         {layout === "sheet" && (
           <div className="grade-sheet-head" aria-hidden="true">
