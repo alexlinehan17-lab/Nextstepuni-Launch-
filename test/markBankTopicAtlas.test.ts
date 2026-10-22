@@ -26,6 +26,7 @@ function cardsInReviewScope(deck: SecCard[], review: AtlasReview) {
   return deck.filter(c => c.year === review.year);
 }
 const directory = path.resolve('scripts/markbank/atlas-reviews');
+const hasCorpus = fs.existsSync(path.resolve('paper-trail-corpus'));
 const reviews: AtlasReview[] = fs.readdirSync(directory).filter(name => name.endsWith('.json'))
   .map(name => JSON.parse(fs.readFileSync(path.join(directory, name), 'utf8')));
 
@@ -75,11 +76,17 @@ describe('paired Mark Bank / Topic Atlas source reviews', () => {
   });
   for (const review of reviews) {
     describe(`${review.subjectId} ${review.year} ${review.level}`, () => {
-      it('pins original sources and has no duplicate bindings or question identities', () => {
+      // The pinned sources are the SEC PDFs in the local, gitignored
+      // paper-trail-corpus; CI has none. Wherever the corpus is present every
+      // pinned file must exist and match, so a missing paper still fails.
+      it.skipIf(!hasCorpus)('pins its original SEC sources', () => {
         expect(Object.keys(review.sourceHashes).length).toBeGreaterThan(0);
         for (const [file, hash] of Object.entries(review.sourceHashes)) {
           expect(createHash('sha256').update(fs.readFileSync(file)).digest('hex')).toBe(hash);
         }
+      });
+      it('has no duplicate bindings or question identities', () => {
+        expect(Object.keys(review.sourceHashes).length).toBeGreaterThan(0);
         const bindings = [...review.cards, ...(review.unchangedCards ?? [])];
         expect(new Set(bindings.map(c => c.cardId)).size).toBe(bindings.length);
         expect(new Set(review.questions.map(q => q.n)).size).toBe(review.questions.length);
