@@ -1,11 +1,12 @@
 import React from "react";
+import PointsGuide from "./PointsGuide";
 import AppearanceChoice from "./AppearanceChoice";
 import SubjectAvatar from "../SubjectAvatar";
 import { ArrowLeft, ArrowUpRight, X } from "lucide-react";
-import { DAYS_OF_WEEK, SUBJECT_GROUP_LABELS, type Level } from "../subjectData";
+import { DAYS_OF_WEEK, LEVEL_LABELS, SUBJECT_GROUP_LABELS, subjectMatchesQuery } from "../subjectData";
 import { VISION_CARD_ART } from "../../northStarData";
 import { NORTH_STAR_CATEGORY_BLOBS } from "../NorthStarCategoryIcon";
-import { daysUntil, needsDate, type GradeChoice } from "./model";
+import { daysUntil, gradeBarHeight, needsDate, type GradeChoice } from "./model";
 import {
   useSetupFlow,
   PointsCount,
@@ -51,6 +52,9 @@ export default function DesktopSetup(props: OnboardingProps) {
     nextSubject,
     config,
     gradeChoices,
+    targetChoices,
+    levelChoices,
+    levelNote,
     points,
     studyDays,
     stage,
@@ -264,14 +268,18 @@ export default function DesktopSetup(props: OnboardingProps) {
                         aria-label="Current and target grades"
                       >
                         {(["current", "target"] as const).map((field) => {
-                          const index = gradeChoices.indexOf(config[field]);
+                          const height = gradeBarHeight(
+                            draft.year,
+                            config[field],
+                            field === "target" ? targetChoices : gradeChoices,
+                          );
                           return (
                             <div key={field}>
                               <div className="desk-grade-track">
                                 <div
                                   data-target={field === "target"}
                                   style={{
-                                    height: `${index < 0 ? 0 : Math.max(10, ((gradeChoices.length - index) / gradeChoices.length) * 100)}%`,
+                                    height: `${height}%`,
                                   }}
                                 />
                               </div>
@@ -560,9 +568,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                         {subjectList
                           .filter((item) =>
                             query.trim()
-                              ? item.name
-                                  .toLocaleLowerCase()
-                                  .includes(query.trim().toLocaleLowerCase())
+                              ? subjectMatchesQuery(item, query)
                               : item.group === subjectGroup,
                           )
                           .map((item) => (
@@ -584,11 +590,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                           ))}
                       </div>
                       {query.trim() &&
-                        !subjectList.some((s) =>
-                          s.name
-                            .toLocaleLowerCase()
-                            .includes(query.trim().toLocaleLowerCase()),
-                        ) && (
+                        !subjectList.some((s) => subjectMatchesQuery(s, query)) && (
                           <p className="setup-description">
                             No subjects found. Try another name or{" "}
                             <button
@@ -605,11 +607,11 @@ export default function DesktopSetup(props: OnboardingProps) {
                   )}
                   {draft.step === "grades" && (
                     <>
-                      {config.level !== "common" && (
+                      {levelChoices.length > 1 && (
                         <fieldset>
                           <legend className="setup-label">Your level</legend>
                           <div className="setup-levels">
-                            {(["higher", "ordinary"] as Level[]).map(
+                            {levelChoices.map(
                               (level) => (
                                 <button
                                   type="button"
@@ -625,13 +627,15 @@ export default function DesktopSetup(props: OnboardingProps) {
                                     })
                                   }
                                 >
-                                  {level === "higher" ? "Higher" : "Ordinary"}
+                                  {LEVEL_LABELS[level]}
                                 </button>
                               ),
                             )}
                           </div>
                         </fieldset>
                       )}
+                      {levelNote && <p className="setup-description">{levelNote}</p>}
+                      {!junior && !lca && <PointsGuide draft={draft} />}
                       <div
                         className={`setup-grade-pickers ${junior ? "setup-stack" : ""}`}
                       >
@@ -647,7 +651,7 @@ export default function DesktopSetup(props: OnboardingProps) {
                               value={config[field]}
                               onChange={value => updateGrade({ [field]: value as GradeChoice })}
                               placeholder={`Choose ${junior ? "band" : "grade"}`}
-                              options={[...gradeChoices.map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
+                              options={[...(field === "target" ? targetChoices : gradeChoices).map(grade => ({ value: grade, label: grade })), { value: "later", label: "I don’t know yet" }]}
                             />
                           </div>
                         ))}

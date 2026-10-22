@@ -384,3 +384,124 @@ borderline fields were flagged."** Resume by giving me your call on
 Section 4. The simplest reply: "Section 4: option 1" (or 2 or 3).
 
 Once you reply, I'll execute Steps A–H without further confirmation.
+
+---
+
+## 9. Revision 2026-10-17 — year islands (school + year group, opt-out)
+
+**Request (Alex, 17 Oct 2026):** "Allow students to see other students in
+their school year island, i.e. Marino 5th year." Staged on branch
+`claude/year-islands-20261017`; not deployed at the time of writing.
+
+### Why the schema 1 feature had to change
+
+Schema 1 projected the legacy `progress.islandState`. The current island lives
+at `progress.paperIsland`, and the island migration deletes `islandState`, so
+every migrated student lost their projection and the peer view
+(`PeerIslandsList`, never mounted) was effectively dead. Schema 2 projects the
+current island.
+
+### Scope: narrowed from the whole school to school AND year group
+
+| | Schema 1 (2026-04) | Schema 2 (2026-10-17) |
+|---|---|---|
+| Who can read a projection | any signed-in student at the same school | a signed-in student at the same school **and** in the same year group; not staff, graduates, or students with no school or year |
+| Owner control | none | "Show my island to my year" switch, **default on**, in the Your year panel (`users/{uid}.islandVisibility`: absent or `year` = shown, `hidden` = no projection exists) |
+| Source | `progress.islandState` | `progress.paperIsland` |
+
+`firestore.rules` (`match /islandPublic/{uid}`) compares the projection's own
+`school` and `yearGroup` with the requester's `users` doc, so a client query
+must filter on both with the requester's values or Firestore denies the whole
+query. Writes stay `if false`. A schema 1 document has no `yearGroup` and
+becomes unreadable the moment the rules deploy.
+
+### Fields (exhaustive) — `functions/src/islandProjection.ts`
+
+- `schemaVersion` (2)
+- `name` — **first name only**, max 40 characters
+- `avatar` — avatar seed, max 100 characters
+- `school` — school id; the query filter
+- `yearGroup` — one of 1st, 2nd, 3rd, TY, 5th, 6th, LCA1, LCA2; the query filter
+- `tiles` — at most 500, nearest the home tile first; each tile is only its
+  grid position (`q`, `r`), its tile kind, its ink-edge stamp (a decorative
+  variant + random seed), the capybara appearance flag and a Wonder id
+- `tileCount` — the number of tiles on the island
+
+**Not in the projection:** Journey Points (balance, earned, spent), each tile's
+price and id, placement order (tiles are re-sorted by distance from home),
+credits, ranks, undo state, request ids, revision, kept stickers, met/claimed
+visitors, opened treasures, the North Star category and statement (schema 1
+carried `category`), the `score`, and **every timestamp** (schema 1 carried
+`updatedAt`; dropped because it would reveal when a student was last active).
+Nothing from study sessions, mastery, mocks, reflections or the subject profile.
+
+### Who never gets a projection
+
+Staff (`gc`, `staff`, `admin`, legacy `isAdmin`), disabled accounts, students
+who switched sharing off, students with no school, graduates, students with no
+year group (users doc, falling back to the onboarding profile's year), and
+students who have not opened the current island. Test and app-review accounts
+**cannot** be told apart by role or any profile field (they are identifiable
+only by Auth email), so they are treated like any student: they appear to
+their own school + year if they have one.
+
+### Write path
+
+`onProgressWritten` and `onUserWritten` call `syncYearIsland`
+(`functions/src/islandProjectionSync.ts`). It re-reads `users/{uid}` and
+`progress/{uid}` inside a transaction with a field mask (no study data is
+read) and sets or deletes the projection. Working from fresh reads rather than
+the event payload means a "hide my island" write can never be overtaken by an
+older trigger. Progress writes that cannot change the island (points, study
+data) return before any read. Erasure still deletes `islandPublic/{uid}`
+(`dataRights.ts`), and the Article 15 export now includes the student's own
+projection as `islandSharedWithYear`, so a student can see exactly what their
+year sees.
+
+### Backfill
+
+`scripts/backfill-island-public.ts` (schema 1) is **removed**; running it would
+have rewritten whole-school schema 1 documents. Its replacement,
+`scripts/backfill-year-islands.mjs`, runs the same compiled sync as the
+triggers over every `progress` and `islandPublic` id: dry run by default,
+`--apply --allow-production` to write. Run it after the rules, indexes and
+functions are deployed.
+
+### Decisions taken on Alex's behalf (flagged for review)
+
+1. **Default on, with an opt-out** (as briefed): consistent with the schema 1
+   assessment, which shared more widely with no control at all.
+2. **Browsing does not require sharing.** A student who hides their island can
+   still visit their year's islands. Making one conditional on the other would
+   pressure students to share.
+3. **Graduates are excluded** in both directions; they have left school.
+4. **Visits are look only.** No kudos, gifts, building, keeping or claiming on
+   another student's island. Visitors (the wandering crew) are not shown.
+5. **Older accounts with a year only in the onboarding profile** have it copied
+   to their own `users` doc when they first open Your year (a self-write the
+   rules already allow), so the rules can verify their query.
+
+### Residual risks
+
+- **Year group is self-declared.** `school` is server-assigned and immutable,
+  but `yearGroup` is written by the student's own app (onboarding and the
+  year-progression controls) and the rules do not restrict its value. A
+  student who changes it, through the app or directly, can browse, and appears
+  in, that year at **their own school** only. That is bounded by the whole-school scope
+  already assessed for schema 1. Making `yearGroup` server-owned would need a
+  verified class roster.
+- **Copies already on a classmate's device.** A classmate who loaded the list
+  before an owner switched sharing off keeps that copy in memory until they
+  close or reload the panel. Nothing is persisted to device storage.
+- **UIDs are document ids** (unchanged from schema 1). A classmate can see the
+  uid of each visible island. No feature treats a uid as a secret.
+- **Privacy notice wording.** `components/legal/legalContent.ts` says
+  "Classmates at your school can see the limited peer-island view: first name,
+  avatar, school, chosen goal category, island decorations/score and peer
+  interactions." Schema 2 shares less than this, so the notice is not
+  inaccurate, but it does not mention the year-group limit or the opt-out.
+  Suggested wording: "Classmates in your year at your school can see a limited
+  view of your island: your first name, avatar, school, year group and the
+  island's tiles. You can turn this off at any time in Journey > Your year."
+  Changing the notice text bumps `PRIVACY_POLICY_VERSION`, which makes every
+  student accept it again, so this is left to Alex.

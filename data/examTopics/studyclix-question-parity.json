@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-14T18:27:45.354Z",
+  "generatedAt": "2026-10-22T07:49:38.439Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -11,12 +11,12 @@
     "subjectsWithExactCrosswalks": 32,
     "referenceTopics": 1609,
     "referenceOfficialAssociations": 37105,
-    "matched": 26945,
+    "matched": 26906,
     "sourceBlocked": 9856,
-    "referenceAnomaly": 304,
+    "referenceAnomaly": 343,
     "unreviewed": 0,
     "sourceUnavailableTopics": 2,
-    "topicsWithGaps": 1346
+    "topicsWithGaps": 1347
   },
   "subjects": [
     {
@@ -3179,12 +3179,12 @@
       "totals": {
         "referenceTopics": 32,
         "referenceOfficialAssociations": 690,
-        "matched": 592,
+        "matched": 553,
         "sourceBlocked": 98,
-        "referenceAnomaly": 0,
+        "referenceAnomaly": 39,
         "unreviewed": 0,
         "sourceUnavailableTopics": 0,
-        "topicsWithGaps": 26
+        "topicsWithGaps": 27
       },
       "topics": [
         {
@@ -3212,9 +3212,9 @@
           "label": "Art as Social Commentary or Commentator",
           "sourcePath": "/leaving-certificate/art/higher/section-a-todays-world/art-as-social-commentary-or-commentator",
           "referenceOfficialAssociations": 14,
-          "matched": 9,
+          "matched": 8,
           "sourceBlocked": 5,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3236,6 +3236,10 @@
             {
               "heading": "2023 - Deferred Exam Paper - Section A - Question 5 - Part B",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2013 - Section 3 - Question 17",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3372,9 +3376,9 @@
           "label": "Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/modernism-c-1900-1960s",
           "referenceOfficialAssociations": 12,
-          "matched": 10,
+          "matched": 8,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3384,6 +3388,14 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 11",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 2 - Question 13",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3412,9 +3424,9 @@
           "label": "Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3432,6 +3444,14 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 13",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3460,9 +3480,9 @@
           "label": "Section B: Generic Questions",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/section-b-generic-questions",
           "referenceOfficialAssociations": 32,
-          "matched": 25,
+          "matched": 24,
           "sourceBlocked": 7,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3492,6 +3512,10 @@
             {
               "heading": "2009 - Section 2 - Question 15",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 7",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3500,9 +3524,9 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/higher/section-b-europe-and-the-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 8,
-          "matched": 6,
+          "matched": 5,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3512,6 +3536,10 @@
             {
               "heading": "2023 - Sample Paper - Section B - Question 9",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 10",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3576,9 +3604,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 38,
-          "matched": 34,
+          "matched": 28,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3596,6 +3624,30 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 17",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3644,9 +3696,9 @@
           "label": "Pre-christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/higher/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 28,
-          "matched": 22,
+          "matched": 20,
           "sourceBlocked": 6,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 2,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3672,6 +3724,14 @@
             {
               "heading": "2023 - Sample Paper - Section C - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2010 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3708,9 +3768,9 @@
           "label": "Section A: Today's World",
           "sourcePath": "/leaving-certificate/art/ordinary/section-a-todays-world",
           "referenceOfficialAssociations": 118,
-          "matched": 107,
+          "matched": 106,
           "sourceBlocked": 11,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3756,6 +3816,10 @@
             {
               "heading": "2009 - Paper - Section 3 - Question 18",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2018 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3764,14 +3828,18 @@
           "label": "Europe - Modernism (c. 1900-1960s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-modernism-c-1900-1960s",
           "referenceOfficialAssociations": 16,
-          "matched": 15,
+          "matched": 14,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2007 - Section 2 - Question 13",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 12",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3780,9 +3848,9 @@
           "label": "Europe - Realism, Impressionism and Post-Impressionism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-realism-impressionism-and-post-impressionism",
           "referenceOfficialAssociations": 26,
-          "matched": 24,
+          "matched": 19,
           "sourceBlocked": 2,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 5,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3792,6 +3860,26 @@
             {
               "heading": "2009 - Paper - Section 2 - Question 14",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2011 - Section 2 - Question 14",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 9",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 13",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 5",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3820,14 +3908,38 @@
           "label": "Europe - The Renaissance (c. 1300-1600s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/europe-the-renaissance-c-1300-1600s",
           "referenceOfficialAssociations": 28,
-          "matched": 27,
+          "matched": 21,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 6,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2008 - Paper - Section 2 - Question 10",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2018 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 2 - Question 8",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3858,11 +3970,16 @@
           "label": "The Baroque (c. 1600-1700s)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-b-europe-and-the-wider-world/the-baroque-c-1600-1700s",
           "referenceOfficialAssociations": 7,
-          "matched": 7,
+          "matched": 6,
           "sourceBlocked": 0,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 1,
           "unreviewed": 0,
-          "gaps": []
+          "gaps": [
+            {
+              "heading": "2020 - Section 2 - Question 11",
+              "resolution": "reference-anomaly"
+            }
+          ]
         },
         {
           "id": "art-ordinary-insular-art-c-500-1100s",
@@ -3896,9 +4013,9 @@
           "label": "Irish Art and Modernism",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/irish-art-and-modernism",
           "referenceOfficialAssociations": 33,
-          "matched": 29,
+          "matched": 22,
           "sourceBlocked": 4,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 7,
           "unreviewed": 0,
           "gaps": [
             {
@@ -3916,6 +4033,34 @@
             {
               "heading": "2009 - Paper - Section 1 - Question 7",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 12",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2016 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2017 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2019 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2020 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2021 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2022 - Section 1 - Question 6",
+              "resolution": "reference-anomaly"
             }
           ]
         },
@@ -3946,14 +4091,26 @@
           "label": "Pre-Christian Ireland (c 4000BC-AD500)",
           "sourcePath": "/leaving-certificate/art/ordinary/section-c-ireland-and-its-place-in-the-wider-world/pre-christian-ireland-c-4000bc-ad500",
           "referenceOfficialAssociations": 23,
-          "matched": 22,
+          "matched": 19,
           "sourceBlocked": 1,
-          "referenceAnomaly": 0,
+          "referenceAnomaly": 3,
           "unreviewed": 0,
           "gaps": [
             {
               "heading": "2009 - Paper - Section 1 - Question 1",
               "resolution": "source-blocked"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 2",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2014 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
+            },
+            {
+              "heading": "2015 - Section 1 - Question 3",
+              "resolution": "reference-anomaly"
             }
           ]
         }

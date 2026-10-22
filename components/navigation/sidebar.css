@@ -58,9 +58,6 @@
 .nsu-kobra-nav .nsu-nav-badge { right:8px; top:8px; border-radius:20px; padding:0 6px; background:color-mix(in srgb,var(--sidebar-foreground),transparent 92%); color:var(--muted-foreground); font-size:10px; line-height:20px; }
 .nsu-nav-item:has(.nsu-nav-badge) .nsu-nav-label { padding-right:38px; }
 .nsu-kobra-nav .nsu-nav-footer { padding:8px 12px 10px; border-top:1px solid var(--sidebar-border); gap:5px; }
-.nsu-nav-points button { width:100%; height:34px; padding:7px 10px; gap:10px; background:transparent; border-radius:7px; color:var(--muted-foreground); font-size:13px; }
-.nsu-nav-points button:hover { background:var(--sidebar-accent); }
-.nsu-nav-points button span, .nsu-nav-points button svg { color:var(--muted-foreground) !important; }
 .nsu-nav-account { position:relative; display:flex; align-items:center; gap:10px; width:100%; padding:9px 7px; border-radius:8px; text-align:left; color:var(--sidebar-foreground); outline:none; transition:background 150ms,transform 150ms; }
 .nsu-nav-account:hover,.nsu-nav-account[data-popup-open] { background:var(--sidebar-accent); }
 .nsu-nav-account:focus-visible { outline:2px solid var(--sidebar-ring); outline-offset:2px; }
@@ -95,8 +92,6 @@
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-group { padding:6px 12px; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-group-label { margin-top:-28px; margin-bottom:0; opacity:0; pointer-events:none; }
 [data-slot=sidebar][data-state=collapsed] .nsu-nav-button { width:40px !important; height:36px !important; padding:8px 10px !important; gap:0; }
-[data-slot=sidebar][data-state=collapsed] .nsu-nav-points button { justify-content:center; padding:7px 0; }
-[data-slot=sidebar][data-state=collapsed] .nsu-nav-points button > span:last-child { display:none; }
 @media (min-width:768px) {
   .student-sidebar-shell .sh-profile { display:none; }
   .student-sidebar-shell .student-sidebar-page [data-student-page-header] { left:var(--navigation-width); right:8px; top:8px; border-radius:16px 16px 0 0; border-bottom-color:var(--outline-soft); background:var(--surface-paper); transition:left 300ms cubic-bezier(.32,.72,0,1); }

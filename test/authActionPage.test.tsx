@@ -1,13 +1,14 @@
 import React from 'react';
 import type * as FirebaseAuth from 'firebase/auth';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 
-const { checkCode, applyCode, verifyResetCode, confirmReset } = vi.hoisted(() => ({
+const { checkCode, applyCode, verifyResetCode, confirmReset, sendReset } = vi.hoisted(() => ({
   checkCode: vi.fn(),
   applyCode: vi.fn(),
   verifyResetCode: vi.fn(),
   confirmReset: vi.fn(),
+  sendReset: vi.fn(),
 }));
 vi.mock('firebase/auth', async importOriginal => ({
   ...(await importOriginal<typeof FirebaseAuth>()),
@@ -15,6 +16,7 @@ vi.mock('firebase/auth', async importOriginal => ({
   applyActionCode: applyCode,
   verifyPasswordResetCode: verifyResetCode,
   confirmPasswordReset: confirmReset,
+  sendPasswordResetEmail: sendReset,
 }));
 vi.mock('firebase/functions', () => ({ getFunctions: () => ({}), httpsCallable: () => vi.fn() }));
 
@@ -32,6 +34,7 @@ beforeEach(() => {
   applyCode.mockReset();
   verifyResetCode.mockReset();
   confirmReset.mockReset();
+  sendReset.mockReset();
 });
 afterEach(() => window.history.replaceState({}, '', '/'));
 
@@ -72,6 +75,33 @@ describe('AuthActionPage', () => {
     expect(await screen.findByRole('heading', { name: 'Set a new password' })).toBeInTheDocument();
     expect(screen.getByText('aoife@example.com')).toBeInTheDocument();
     expect(applyCode).not.toHaveBeenCalled();
+  });
+
+  // Each new reset request cancels the previous link (reproduced live on
+  // 2026-10-15), so a dead link explains why and sends a fresh one in place.
+  it('explains a replaced reset link and sends a new one from the same page', async () => {
+    checkCode.mockRejectedValue(authError('auth/invalid-action-code'));
+    sendReset.mockResolvedValue(undefined);
+    visit('?mode=resetPassword&oobCode=CODE');
+    expect(await screen.findByText(/A newer reset email replaced this link/)).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText('Send a new link'), { target: { value: ' Aoife@Example.com ' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Send me a new link' }));
+    expect(await screen.findByRole('status')).toHaveTextContent('Open the newest email from NextStepUni');
+    expect(sendReset).toHaveBeenCalledWith(expect.anything(), 'aoife@example.com');
+  });
+
+  it('offers a new link for an expired reset link too', async () => {
+    checkCode.mockRejectedValue(authError('auth/expired-action-code'));
+    visit('?mode=resetPassword&oobCode=CODE');
+    expect(await screen.findByText(/Links last an hour/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Send me a new link' })).toBeInTheDocument();
+  });
+
+  it('does not offer a new link for a link that was never a reset', async () => {
+    checkCode.mockResolvedValue({ operation: 'VERIFY_EMAIL', data: { email: 'aoife@example.com' } });
+    visit('?mode=resetPassword&oobCode=CODE');
+    await screen.findByText(/isn.t a password reset link/);
+    expect(screen.queryByRole('button', { name: 'Send me a new link' })).not.toBeInTheDocument();
   });
 
   it('refuses a non-reset code sent with mode=resetPassword', async () => {

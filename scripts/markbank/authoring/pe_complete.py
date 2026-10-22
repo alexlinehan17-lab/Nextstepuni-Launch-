@@ -66,6 +66,8 @@ def build():
         'node', '--input-type=module', '-e',
         'import {paperIndex} from "./scripts/markbank/paperIndex.mjs"; console.log(JSON.stringify(paperIndex["physical-education"]))',
     ], cwd=ROOT))
+    # Reviewed window only: June sittings (the deferred sitting reuses year and level).
+    entries = [e for e in entries if not e.get('sitting') and e['year'] >= 2010]
     cards, papers, atlas = [], [], []
     crosswalk = json.loads((ROOT / 'data/examTopics/physical-education-curriculum-crosswalk.json').read_text())
     legacy = json.loads((ROOT / 'scripts/markbank/authored/physical-education.json').read_text())

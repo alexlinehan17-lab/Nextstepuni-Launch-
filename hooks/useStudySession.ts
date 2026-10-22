@@ -14,6 +14,8 @@ import {
   type StudySessionRecord,
   STRATEGY_PROMPTS,
   STUDY_SESSION_POINTS,
+  SESSION_EXTENSION_MINUTES,
+  OPEN_ENDED_CAP_MINUTES,
   PROMPT_INTERVAL_SECONDS,
   PROMPT_AUTO_DISMISS_SECONDS,
 } from '../studySessionData';
@@ -40,12 +42,17 @@ export interface SessionReflectionMetadata {
 export const MIN_STUDY_SESSION_MINUTES = 5;
 export const MIN_RECORDABLE_SESSION_SECONDS = MIN_STUDY_SESSION_MINUTES * 60;
 
+/** Seconds the clock runs to: the plan plus any "Keep going" time, or the
+ *  open-ended cap for a stopwatch session. */
+const sessionLengthSeconds = (plannedMinutes: number, extendedMinutes: number, openEnded: boolean) =>
+  (openEnded ? OPEN_ENDED_CAP_MINUTES : plannedMinutes + extendedMinutes) * 60;
+
 /** A session saved by this tab before a reload, brought up to date. */
 function restoreActiveSession(uid: string | undefined): ActiveStudySession | null {
   const saved = uid ? readActiveStudySession(uid) : null;
-  if (!saved || !saved.startedAt || !saved.plannedMinutes) return null;
+  if (!saved || !saved.startedAt || (!saved.plannedMinutes && !saved.openEnded)) return null;
   if (saved.phase !== 'active') return saved;
-  const total = saved.plannedMinutes * 60;
+  const total = sessionLengthSeconds(saved.plannedMinutes, saved.extendedMinutes ?? 0, Boolean(saved.openEnded));
   const elapsed = Math.min(total, Math.max(0, Math.round((Date.now() - saved.startedAt) / 1000)));
   return { ...saved, elapsedSeconds: elapsed, phase: elapsed >= total ? 'complete' : 'active' };
 }
@@ -79,6 +86,8 @@ export function useStudySession(
   const [sessionType, setSessionType] = useState<'new-learning' | 'practice' | 'revision'>(restored?.sessionType ?? 'new-learning');
   const [plannedMinutes, setPlannedMinutes] = useState(restored?.plannedMinutes ?? 25);
   const [elapsedSeconds, setElapsedSeconds] = useState(restored?.elapsedSeconds ?? 0);
+  const [extendedMinutes, setExtendedMinutes] = useState(restored?.extendedMinutes ?? 0);
+  const [openEnded, setOpenEnded] = useState(Boolean(restored?.openEnded));
   const [currentPrompt, setCurrentPrompt] = useState<StrategyPrompt | null>(null);
   const [todaySessions, setTodaySessions] = useState<StudySessionRecord[]>([]);
 
@@ -93,7 +102,14 @@ export function useStudySession(
   const autoDismissRef = useRef<number | null>(null);
   const completedPromptsRef = useRef<Set<string>>(new Set(restored?.completedPrompts)); // moduleIds user marked "Done"
 
-  const totalDuration = plannedMinutes * 60;
+  const totalDuration = sessionLengthSeconds(plannedMinutes, extendedMinutes, openEnded);
+  /** The original plan, before any "Keep going" time. */
+  const plannedSeconds = openEnded ? 0 : plannedMinutes * 60;
+  // Wall-clock anchors for the device's own alerts (the "time's up"
+  // notification, the iOS Live Activity). Every change to startTimeRef comes
+  // with a state change in the same handler, so this render already sees it.
+  const startedAt = startTimeRef.current;
+  const endsAt = phase === 'active' && !openEnded && startedAt > 0 ? startedAt + totalDuration * 1000 : null;
 
   // ── Load today's sessions from context ──
 
@@ -173,14 +189,17 @@ export function useStudySession(
 
   // ── Start ──
 
-  const startSession = useCallback((subj: string, type: 'new-learning' | 'practice' | 'revision', minutes: number, topics?: StudyTopicSelection) => {
+  const startSession = useCallback((subj: string, type: 'new-learning' | 'practice' | 'revision', minutes: number, topics?: StudyTopicSelection, options: { openEnded?: boolean } = {}) => {
     if (topics && (!sameStudySubject(subj, topics.subjectId) || !validTopicAllocations(topics, equalTopicAllocations(topics.topicIds, 0), 0))) {
       throw new Error('Choose topics from the selected subject.');
     }
     setTopicSelection(topics ? { ...topics, topicIds: [...topics.topicIds] } : undefined);
     setSubject(subj);
     setSessionType(type);
-    setPlannedMinutes(minutes);
+    const stopwatch = Boolean(options.openEnded);
+    setOpenEnded(stopwatch);
+    setExtendedMinutes(0);
+    setPlannedMinutes(stopwatch ? 0 : minutes);
     setElapsedSeconds(0);
     setCurrentPrompt(null);
     setPromptShownAt(0);
@@ -189,7 +208,8 @@ export function useStudySession(
 
     const now = Date.now();
     startTimeRef.current = now;
-    expectedEndRef.current = now + minutes * 60 * 1000;
+    const length = sessionLengthSeconds(minutes, 0, stopwatch);
+    expectedEndRef.current = now + length * 1000;
     setPhase('active');
     if (uid && !isDemo) {
       trackProgrammeEvent('study_session_started', { source: 'study', sessionType: type });
@@ -197,7 +217,7 @@ export function useStudySession(
 
     // Show first prompt immediately
     showNextPrompt();
-    startTicking(minutes * 60);
+    startTicking(length);
   }, [buildPromptQueue, showNextPrompt, startTicking, uid, isDemo]);
 
   // ── Pause ──
@@ -220,6 +240,21 @@ export function useStudySession(
     expectedEndRef.current = Date.now() + remaining * 1000;
     startTicking(totalDuration);
   }, [totalDuration, elapsedSeconds, startTicking]);
+
+  // ── Keep going ──
+
+  /** When a countdown has run out, add time to the same session. */
+  const extendSession = useCallback((minutes: number): boolean => {
+    if (phase !== 'complete' || openEnded || elapsedSeconds < totalDuration) return false;
+    if (!(SESSION_EXTENSION_MINUTES as readonly number[]).includes(minutes)) return false;
+    const nextTotal = totalDuration + minutes * 60;
+    setExtendedMinutes(current => current + minutes);
+    startTimeRef.current = Date.now() - elapsedSeconds * 1000;
+    expectedEndRef.current = Date.now() + minutes * 60 * 1000;
+    setPhase('active');
+    startTicking(nextTotal);
+    return true;
+  }, [phase, openEnded, elapsedSeconds, totalDuration, startTicking]);
 
   // ── End Early ──
 
@@ -251,6 +286,8 @@ export function useStudySession(
     startTimeRef.current = 0;
     expectedEndRef.current = 0;
     setElapsedSeconds(0);
+    setExtendedMinutes(0);
+    setOpenEnded(false);
     setCurrentPrompt(null);
     setPromptShownAt(0);
     setPhase('idle');
@@ -305,10 +342,12 @@ export function useStudySession(
       phase,
       elapsedSeconds,
       completedPrompts: [...completedPromptsRef.current],
+      ...(extendedMinutes ? { extendedMinutes } : {}),
+      ...(openEnded ? { openEnded } : {}),
     });
     // elapsedSeconds is read, not tracked: while active it is derived from
     // startedAt, and pause/complete each change phase with it already set.
-  }, [uid, phase, subject, sessionType, plannedMinutes, topicSelection]);
+  }, [uid, phase, subject, sessionType, plannedMinutes, topicSelection, extendedMinutes, openEnded]);
 
   useEffect(() => {
     if (restored?.phase !== 'active') return;
@@ -317,8 +356,9 @@ export function useStudySession(
     completedPromptsRef.current = new Set(restored.completedPrompts);
     // Carry on from the next prompt slot rather than replaying the first one.
     nextPromptTimeRef.current = Math.ceil(restored.elapsedSeconds / PROMPT_INTERVAL_SECONDS) * PROMPT_INTERVAL_SECONDS;
-    expectedEndRef.current = restored.startedAt + restored.plannedMinutes * 60 * 1000;
-    startTicking(restored.plannedMinutes * 60);
+    const length = sessionLengthSeconds(restored.plannedMinutes, restored.extendedMinutes ?? 0, Boolean(restored.openEnded));
+    expectedEndRef.current = restored.startedAt + length * 1000;
+    startTicking(length);
     // Once, for the session this hook was restored with.
   }, []);
 
@@ -334,6 +374,10 @@ export function useStudySession(
   // ── Points calculation ──
 
   const basePointsEarned = Math.floor(elapsedSeconds / 600) * STUDY_SESSION_POINTS.PER_10_MINUTES;
+  /** Earned by finishing the time added with "Keep going"; ending it early forfeits it. */
+  const extensionBonus = !openEnded && extendedMinutes > 0 && elapsedSeconds >= totalDuration
+    ? STUDY_SESSION_POINTS.EXTENSION_COMPLETED
+    : 0;
 
   // ── Save session to Firestore ──
 
@@ -359,18 +403,21 @@ export function useStudySession(
       date: toDateKey(new Date(now)),
       subject,
       sessionType,
-      plannedMinutes,
+      // An open-ended session had no plan, so it records the time it took.
+      plannedMinutes: openEnded ? Math.round(elapsedSeconds / 60) : plannedMinutes,
       actualSeconds: elapsedSeconds,
       startedAt: startTimeRef.current,
       completedAt: now,
-      pointsEarned: basePointsEarned + reflectionPoints,
+      pointsEarned: basePointsEarned + reflectionPoints + extensionBonus,
       hadReflection: reflectionPoints > 0,
       ...(shownModuleIds.length > 0 ? { strategiesShown: shownModuleIds } : {}),
       ...(reflectionMetadata ?? {}),
       ...(topicSelection ? { subjectId: topicSelection.subjectId, specificationId: topicSelection.specificationId, topicAllocations } : {}),
+      ...(extendedMinutes > 0 ? { extendedMinutes, extensionBonus } : {}),
+      ...(openEnded ? { openEnded: true } : {}),
     };
 
-    const totalPoints = basePointsEarned + reflectionPoints;
+    const totalPoints = basePointsEarned + reflectionPoints + extensionBonus;
 
     if (!isDemo) {
       trackProgrammeEvent('study_session_completed', {
@@ -409,7 +456,7 @@ export function useStudySession(
       if (saved) reloadProgress();
     });
     return true;
-  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress, topicSelection, addStudySession, reloadProgress]);
+  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, extensionBonus, extendedMinutes, openEnded, isDemo, updateDemoProgress, topicSelection, addStudySession, reloadProgress]);
 
   // ── Reset to idle ──
 
@@ -417,6 +464,8 @@ export function useStudySession(
     setPhase('idle');
     setTopicSelection(undefined);
     setElapsedSeconds(0);
+    setExtendedMinutes(0);
+    setOpenEnded(false);
     setCurrentPrompt(null);
     setPromptShownAt(0);
     startTimeRef.current = 0;
@@ -449,8 +498,14 @@ export function useStudySession(
     topicSelection,
     sessionType,
     plannedMinutes,
+    plannedSeconds,
     elapsedSeconds,
     totalDuration,
+    startedAt,
+    endsAt,
+    extendedMinutes,
+    extensionBonus,
+    openEnded,
     currentPrompt,
     promptShownAt,
     basePointsEarned,
@@ -461,6 +516,7 @@ export function useStudySession(
     pauseSession,
     resumeSession,
     endSession,
+    extendSession,
     cancelSession,
     saveSession,
     resetSession,

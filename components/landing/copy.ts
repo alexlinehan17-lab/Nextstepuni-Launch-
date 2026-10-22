@@ -92,7 +92,7 @@ export const COPY = {
     eyebrow: 'What’s in it',
     items: [
       { value: MARK_BANK_CARD_COUNT.toLocaleString('en-IE'), label: 'marking-scheme cards', note: `${MARK_BANK_SUBJECT_COUNT} subjects, across the available levels` },
-      { value: '4,621', label: 'past papers', note: '100 subjects across the Leaving Cert, LCA and Junior Cycle, 2010 to 2026. Most have the marking scheme beside them.' },
+      { value: '7,301', label: 'past papers', note: '104 subjects across the Leaving Cert, LCA and Junior Cycle, 1995 to 2026, with the deferred sittings. Most have the marking scheme beside them.' },
       { value: '19,565', label: 'Leaving Cert questions mapped by topic', note: 'across 58 subjects and 1,716 topics' },
       { value: '566', label: 'command-word questions', note: 'real exam questions, with the examiner’s trap explained' },
     ],

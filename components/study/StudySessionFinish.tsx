@@ -14,12 +14,14 @@ import { formatStudyTime } from '../../utils/studyTime';
 interface Props {
   subject: string; elapsedSeconds: number; plannedSeconds: number; practice: string;
   character?: string; strategies: string[]; basePoints: number; isSaving: boolean;
+  /** JP for finishing the time added with "Keep going". */
+  extensionBonus?: number;
   mode: 'quick' | 'full'; onModeChange: (mode: 'quick' | 'full') => void;
   topicSelection?: StudyTopicSelection;
   onSave: (reflection: string, allocations?: StudyTopicAllocation[]) => Promise<void>; onSkip: (allocations?: StudyTopicAllocation[]) => Promise<void>;
 }
 
-export default function StudySessionFinish({ subject, elapsedSeconds, plannedSeconds, practice, character, strategies, basePoints, isSaving, mode, onModeChange, onSave, onSkip, topicSelection }: Props) {
+export default function StudySessionFinish({ subject, elapsedSeconds, plannedSeconds, practice, character, strategies, basePoints, extensionBonus = 0, isSaving, mode, onModeChange, onSave, onSkip, topicSelection }: Props) {
   const [topicTimeOpen, setTopicTimeOpen] = useState(false);
   const [allocations, setAllocations] = useState(() => equalTopicAllocations(topicSelection?.topicIds ?? [], elapsedSeconds));
   const spec = CURRICULUM_SPECIFICATIONS.find(item => item.id === topicSelection?.specificationId);
@@ -66,7 +68,7 @@ export default function StudySessionFinish({ subject, elapsedSeconds, plannedSec
     </div>
     <article className="study-receipt" aria-label="Your study receipt">
       <header><p className="study-crew-eyebrow">Nextstepuni / Your study receipt</p><CrewIllustration character={character} /><h2>A good little session.</h2><p>{date.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</p></header>
-      <dl><div><dt>Subject</dt><dd>{subject}</dd></div><div><dt>Time studied</dt><dd>{formatStudyTime(elapsedSeconds)}</dd></div><div><dt>Practice</dt><dd>{practice}</dd></div>{strategies.length > 0 && <div><dt>Strategies</dt><dd>{strategies.join(', ')}</dd></div>}{confidence && <div><dt>Feeling</dt><dd className="study-receipt-confidence">{confidence}</dd></div>}<div><dt>JP on saving</dt><dd>{basePoints}{valid && <> + {bonus} debrief</>}</dd></div></dl>
+      <dl><div><dt>Subject</dt><dd>{subject}</dd></div><div><dt>Time studied</dt><dd>{formatStudyTime(elapsedSeconds)}</dd></div><div><dt>Practice</dt><dd>{practice}</dd></div>{strategies.length > 0 && <div><dt>Strategies</dt><dd>{strategies.join(', ')}</dd></div>}{confidence && <div><dt>Feeling</dt><dd className="study-receipt-confidence">{confidence}</dd></div>}<div><dt>JP on saving</dt><dd>{basePoints}{extensionBonus > 0 && <> + {extensionBonus} kept going</>}{valid && <> + {bonus} debrief</>}</dd></div></dl>
       <div className="study-receipt-topics">{allocations.length ? <><p className="study-crew-eyebrow">Topic time</p><ul>{allocations.map(item => <li key={item.topicId}><span>{topicNames.get(item.topicId) ?? item.topicId}</span><strong>{formatStudyTime(item.seconds)}</strong></li>)}</ul><button type="button" className="crew-link" disabled={busy} onClick={() => setTopicTimeOpen(true)}>Review topic time</button></> : <p>Topics not recorded · subject time is saved.</p>}</div>
       <div className="study-receipt-next"><span>{mode === 'full' && reflection.trim() ? 'A note to take with you' : 'Next time'}</span><p>{mode === 'full' && reflection.trim() ? reflection.trim() : 'Pick up where you left off. One step at a time.'}</p></div>
       <footer><span>One step taken.</span><span>Your step.</span></footer><p className="study-receipt-signoff">Small steps, on the record.</p>

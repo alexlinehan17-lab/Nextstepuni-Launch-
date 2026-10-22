@@ -28,7 +28,9 @@ export function buildSubjectShowcase(): ShowcaseSubject[] {
     const years = new Set<number>();
     for (const entry of PAPER_TRAIL_INDEX[subject.id] ?? []) for (const paper of entry.papers) {
       if (paper.modified) continue;
-      paperIds.add(`${entry.year}:${paper.doc.f}`); years.add(entry.year);
+      // Sample papers are filed under their specification's first exam year;
+      // they are PDFs in the library but not an exam year that has happened.
+      paperIds.add(`${entry.year}:${paper.doc.f}`); if (paper.sitting !== 'sample') years.add(entry.year);
     }
     return { id: subject.id, name: bank?.name ?? subject.name,
       artworkSubject: canonical.replace(/^(?:jc|lca)-/, ''), cycle: subject.cycle,

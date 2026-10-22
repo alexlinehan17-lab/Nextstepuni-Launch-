@@ -1,19 +1,23 @@
 import React, { type RefObject } from "react";
+import { isLcaYear } from "../../utils/authUtils";
 import { ArrowRight } from "lucide-react";
 import {
   choicesFor,
+  targetChoicesFor,
   choiceReady,
   cycleFor,
   emptyChoice,
+  levelOptions,
   pointsFor,
   type GradeChoice,
   type SetupDraft,
   type SubjectChoice,
 } from "./model";
-import type { Level } from "../subjectData";
+import { LEVEL_LABELS, type Level } from "../subjectData";
 import { getSubjectFill } from "../../utils/subjectColors";
 import "./grade-options.css";
 import SetupSelect from "./SetupSelect";
+import PointsGuide from "./PointsGuide";
 
 export type GradeLayout = "sheet" | "buttons" | "sliders" | "single";
 export const gradeLayouts: {
@@ -93,6 +97,8 @@ export default function GradeOptions({
   onDefer,
 }: Props) {
   const junior = cycleFor(draft.year) === "junior";
+  // CAO points exist for the established Leaving Cert only.
+  const showPointsGuide = !junior && !isLcaYear(draft.year ?? undefined);
   const counted = {
     ...draft,
     configs: Object.fromEntries(
@@ -110,27 +116,32 @@ export default function GradeOptions({
     value === "later" ? "Later" : value || "—";
   const setLevel = (name: string, level: Level) =>
     onUpdate(name, { level, ...(junior ? {} : { current: "", target: "" }) });
-  const levelControl = (name: string, config: SubjectChoice) => (
-    <div className="grade-level">
-      {config.level === "common" ? (
-        <span>Common</span>
-      ) : (
-        <SetupSelect
-          label={`${name} level`}
-          value={config.level || ""}
-          onChange={value => setLevel(name, value as Level)}
-          placeholder="Level"
-          options={[{ value: "higher", label: "Higher" }, { value: "ordinary", label: "Ordinary" }]}
-        />
-      )}
-    </div>
-  );
+  const levelControl = (name: string, config: SubjectChoice) => {
+    const levels = levelOptions(draft.year, name);
+    return (
+      <div className="grade-level">
+        {levels.length === 1 ? (
+          <span>{LEVEL_LABELS[levels[0]]}</span>
+        ) : (
+          <SetupSelect
+            label={`${name} level`}
+            value={config.level || ""}
+            onChange={value => setLevel(name, value as Level)}
+            placeholder="Level"
+            options={levels.map(level => ({ value: level, label: LEVEL_LABELS[level] }))}
+          />
+        )}
+      </div>
+    );
+  };
   const gradeControl = (
     name: string,
     config: SubjectChoice,
     field: "current" | "target",
   ) => {
-    const grades = choicesFor(draft.year, config.level);
+    const grades = field === "target"
+      ? targetChoicesFor(draft.year, config.level)
+      : choicesFor(draft.year, config.level);
     const accessible = `${name} ${field} ${junior ? "band" : "grade"}`;
     if (layout === "sheet")
       return (
@@ -293,6 +304,7 @@ export default function GradeOptions({
         <div className="grade-workspace-heading">
           <h2>All subjects, one page.</h2>
           <p>Grades can change. This is just a starting point.</p>
+          {showPointsGuide && <div className="grade-points-row"><PointsGuide draft={draft} /></div>}
         </div>
         {layout === "sheet" && (
           <div className="grade-sheet-head" aria-hidden="true">

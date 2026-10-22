@@ -22,7 +22,7 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight, Bookmark } from 'lucide-react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import ToolMasthead from '../launchpad/ToolMasthead';
-import PaperSelection, { LEVEL_LABEL, paperLabel } from './PaperSelection';
+import PaperSelection, { LEVEL_LABEL, paperLabel, type YearCell } from './PaperSelection';
 import KobraScope from '../approved-ui-runtime';
 import { PaperSubjects, PaperSubjectArtwork } from './PaperSubjects';
 import './paper-kobra.css';
@@ -35,6 +35,7 @@ import { taggedSubjects, topicsForPaper, type TopicSibling } from './topics';
 import { fullPaperQuestionFor } from './physicalEducationTasks';
 import { attemptNs } from './attemptStore';
 import { examinerInsightsFor } from '../../data/paperTrail/examinerInsights';
+import { earlierSyllabusNote, syllabusBoundary, syllabusGridNote, syllabusTag } from '../../data/paperTrail/syllabusChanges';
 import WeaknessMap from './WeaknessMap';
 import ReviseByTopic from './ReviseByTopic';
 import ReviewSession from './ReviewSession';
@@ -68,6 +69,7 @@ import {
 import { usePaperFinder } from '../../hooks/usePaperFinder';
 import { getBootParam } from '../../utils/bootParams';
 import { resolvePaperDeepLink } from './paperDeepLink';
+import { findIndexedItem, yearEntryView } from './indexLookup';
 import { hasInitialVaultTopic } from './vaultDeepLink';
 import {
   PAPER_TRAIL_GAPS,
@@ -138,6 +140,23 @@ const subjectLabelForId = (id: string) => {
   const subject = subjectById.get(id);
   return subject ? paperTrailSubjectLabel(subject) : displayName(id);
 };
+
+/** The June sitting's entry (not the deferred sitting or sample papers). */
+const hasJuneSitting = (entry: PaperEntry) => !entry.sitting;
+
+/** The subject's newest June sitting in the archive — the reference point for
+ *  syllabus wording (a change up to it is past, a later one is announced). */
+const latestExamYearFor = (subjectId: string) =>
+  Math.max(0, ...(PAPER_TRAIL_INDEX[subjectId] ?? []).filter(hasJuneSitting).map(e => e.year));
+
+/** Viewer heading parts: sample papers are named for the specification's first
+ *  exam year; anything set on an earlier syllabus says so beside the level. */
+const viewerYearText = (year: number, item: PaperItem) =>
+  item.sitting === 'sample' ? `${year} sample` : String(year);
+const syllabusSuffix = (subjectId: string, year: number) =>
+  earlierSyllabusNote(subjectId, subjectLabelForId(subjectId), year, latestExamYearFor(subjectId))
+    ? ` · ${syllabusTag(subjectId)}`
+    : '';
 
 
 // Deep-link params are snapshotted at boot by utils/bootParams (this lazy
@@ -406,10 +425,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   //     so the whole round-trip still ends where it began.
   const openCrossYear = useCallback((t: TopicSibling, from?: VaultOrigin) => {
     if (!subjectById.has(t.subjectId)) return;
-    const entry = (PAPER_TRAIL_INDEX[t.subjectId] ?? []).find(
-      e => e.year === t.year && e.level === t.level && e.lang === t.lang,
-    );
-    const item = entry?.papers.find(p => p.doc.f === t.fileid);
+    const item = findIndexedItem(t.subjectId, t.year, t.level, t.lang, t.fileid)?.item;
     if (!item) return;
     setView(prev => {
       const returnTo: View = from
@@ -479,11 +495,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
   const openStoredRef = useCallback(
     (r: PaperRef) => {
       const subj = subjectById.get(r.subjectId);
-      const entry = (PAPER_TRAIL_INDEX[r.subjectId] ?? []).find(
-        e => e.year === r.year && e.level === r.level && e.lang === r.lang,
-      );
-      const item = entry?.papers.find(p => p.doc.f === r.fileid);
-      if (!subj || !entry || !item) return;
+      const found = findIndexedItem(r.subjectId, r.year, r.level, r.lang, r.fileid);
+      if (!subj || !found) return;
+      const { entry, item } = found;
       openItem(subj, entry, item, r.kind === 'scheme' && item.scheme ? 'scheme' : 'paper');
     },
     [openItem],
@@ -519,8 +533,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     if (/\.jpg$/i.test(view.item.doc.f)) {
       return (
         <ImageViewer
-          title={`${paperTrailSubjectLabel(subj)} · ${view.year}`}
-          subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}`}
+          title={`${paperTrailSubjectLabel(subj)} · ${viewerYearText(view.year, view.item)}`}
+          subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`}
           url={url('paper', view.item.doc.f)}
           onClose={() => {
             setLevel(view.level);
@@ -533,9 +547,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     }
     // The `answers` flag lives on the index, not on the recents snapshot — look
     // the live item up so the toggle appears even when re-opened from Recents.
-    const liveItem = (PAPER_TRAIL_INDEX[subj.id] ?? [])
-      .find(e => e.year === view.year && e.level === view.level && e.lang === view.lang)
-      ?.papers.find(p => p.doc.f === view.item.doc.f);
+    const liveItem = findIndexedItem(subj.id, view.year, view.level, view.lang, view.item.doc.f)?.item;
     const hasAnswers = liveItem?.answers === 1 && !!view.item.scheme;
     // Formulae & Tables quick-jump — only for booklet subjects, and only once
     // the booklet is uploaded + the flag flipped (nothing dead ships).
@@ -556,8 +568,8 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         : null) ?? undefined;
     return (
       <Viewer
-        title={`${paperTrailSubjectLabel(subj)} · ${view.year}`}
-        subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}`}
+        title={`${paperTrailSubjectLabel(subj)} · ${viewerYearText(view.year, view.item)}`}
+        subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}${syllabusSuffix(subj.id, view.year)}`}
         paper={{ url: url('paper', view.item.doc.f), label: paperLabel(view.item.label), bytes: view.item.doc.b }}
         scheme={
           view.item.scheme
@@ -721,16 +733,33 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const slice = levelEntries.filter(e => e.lang === activeLang);
     const availableYears = [...new Set(slice.map(e => e.year))].sort((a, b) => b - a);
     const gapsForSubject = PAPER_TRAIL_GAPS.filter(g => g.subjectId === subj.id);
-    // One chronological grid: real years + explained gaps, newest first.
-    const yearCells: { year: number; gap?: string }[] = [
-      ...availableYears.map(y => ({ year: y })),
+    const subjectLabel = paperTrailSubjectLabel(subj);
+    const latestExamYear = latestExamYearFor(subj.id);
+    const boundary = syllabusBoundary(subj.id, latestExamYear);
+    // One chronological grid: real years + explained gaps, newest first. A
+    // year tile says when it also holds the deferred sitting, holds only
+    // sample papers, or sits before a syllabus change the archive straddles.
+    const yearCells: YearCell[] = [
+      ...availableYears.map((y): YearCell => {
+        const papers = slice.filter(e => e.year === y).flatMap(e => e.papers);
+        return {
+          year: y,
+          ...(papers.some(p => p.sitting === 'deferred') ? { deferred: true } : {}),
+          ...(papers.every(p => p.sitting === 'sample') ? { sample: true } : {}),
+          ...(boundary != null && y < boundary ? { earlier: true } : {}),
+        };
+      }),
       ...gapsForSubject
         .filter(g => !availableYears.includes(g.year))
         .map(g => ({ year: g.year, gap: g.reason })),
     ].sort((a, b) => b.year - a.year);
 
-    const activeYear = year && availableYears.includes(year) ? year : availableYears[0];
-    const entry = slice.find(e => e.year === activeYear);
+    // Default to the newest June sitting: sample papers for a specification not
+    // yet examined never displace the latest real paper.
+    const defaultYear = availableYears.find(y => slice.some(e => e.year === y && hasJuneSitting(e))) ?? availableYears[0];
+    const activeYear = year && availableYears.includes(year) ? year : defaultYear;
+    // June papers, then the deferred sitting's, in one list for the year.
+    const entry = yearEntryView(subj.id, slice.filter(e => e.year === activeYear));
     const requestedMissing = year != null && !availableYears.includes(year) && availableYears.length > 0;
 
     return <KobraScope className="pt-kobra"><section className="pt-archive pt-master-detail">
@@ -749,6 +778,9 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       level={activeLevel} lang={activeLang} langs={langsAtLevel}
       year={activeYear} years={yearCells} entry={entry}
       notice={requestedMissing ? `${year} isn’t available here — showing ${activeYear} instead.` : undefined}
+      syllabusNote={entry ? earlierSyllabusNote(subj.id, subjectLabel, entry.year, latestExamYear) ?? undefined : undefined}
+      gridNote={syllabusGridNote(subj.id, subjectLabel, latestExamYear) ?? undefined}
+      earlierTag={syllabusTag(subj.id)}
       banner={archiveDownBanner}
       onLevel={lv => { setLevel(lv); setFilters({ lastLevel: lv }); setYear(null); }}
       onLang={lg => { setLang(lg); setFilters({ lastLang: lg }); setYear(null); }}

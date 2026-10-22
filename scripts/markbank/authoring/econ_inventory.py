@@ -32,7 +32,9 @@ def indexed_papers() -> list[dict]:
     match = re.search(r'  "economics": (\[[\s\S]*?\n  \]),\n  "engineering":', source)
     if not match:
         raise ValueError("Economics Paper Trail index was not found")
-    entries = json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+    entries = [entry for entry in json.loads(re.sub(r",\s*]$", "]", match.group(1)))
+               # reviewed window only: June sittings from 2010
+               if not entry.get("sitting") and entry["year"] >= 2010]
     return [
         {"year": entry["year"], "level": entry["level"], "lang": entry["lang"],
          "fileid": paper["doc"]["f"], "label": paper["label"],

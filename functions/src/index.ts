@@ -5,7 +5,7 @@ import { initializeApp } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { createHash, randomInt } from "crypto";
-import { buildPublicProjection } from "./islandProjection";
+import { syncAfterProgressWrite, syncAfterUserWrite } from "./islandProjectionSync";
 import { clearAuthorizationClaims, syncAuthorizationClaims } from "./authClaims";
 import { CALLABLE_OPTIONS, assertSensitiveAuth, authTimeSeconds } from "./security";
 import {
@@ -29,6 +29,8 @@ export { claimStaffAccess } from "./staffAccess";
 export { claimStudentSchool } from "./schoolAccess";
 // Anonymous product feedback — see ./anonymousFeedback.ts.
 export { submitAnonymousFeedback } from "./anonymousFeedback";
+// Why sign-ins fail, as anonymous log lines — see ./signInDiagnostics.ts.
+export { reportSignInFailure } from "./signInDiagnostics";
 // Privacy-preserving programme measurement: server-only raw events and an
 // aggregate-only administrator summary.
 export { recordProgrammeEvents, getProgrammeAnalyticsSummary } from "./programmeAnalytics";
@@ -265,53 +267,21 @@ export const finalizeSelfServicePasswordReset = onCall(
 /**
  * onProgressWritten
  *
- * Maintains /islandPublic/{uid} as a minimal public projection of a
- * student's island state. Triggered on any write to /progress/{uid}.
- *
- * The projection contains only what other students at the same school
- * see in the Peer Island feature — no academic data, no behavioural
- * timestamps. See compliance/PEER_ISLAND_REFACTOR_PLAN.md and
- * functions/src/islandProjection.ts for the field rationale.
- *
- * Behaviour:
- *   - If progress was deleted: delete the projection.
- *   - If progress exists but is for staff or has no island: delete any
- *     existing projection.
- *   - Otherwise: write/refresh the projection, joining identity fields
- *     from /users/{uid}.
+ * Keeps /islandPublic/{uid}, the classmate-visible copy of a student's island
+ * (functions/src/islandProjection.ts), in step with progress/{uid}.paperIsland.
+ * Writes that cannot change the island (points, study data) return before
+ * reading anything; see syncAfterProgressWrite.
  */
 export const onProgressWritten = onDocumentWritten(
   "progress/{uid}",
   async (event) => {
-    const uid = event.params.uid;
-    const db = getFirestore();
-    const islandPublicRef = db.collection("islandPublic").doc(uid);
-
-    const progressData = event.data?.after?.data();
-    if (!progressData) {
-      await islandPublicRef.delete().catch((err) => {
-        logger.warn(`onProgressWritten: failed to delete projection for ${uid}`, err);
-      });
-      return;
-    }
-
-    const userSnap = await db.collection("users").doc(uid).get();
-    if (!userSnap.exists) {
-      logger.warn(`onProgressWritten: user ${uid} not found; deleting any projection`);
-      await islandPublicRef.delete().catch(() => {});
-      return;
-    }
-
-    const projection = buildPublicProjection(userSnap.data(), progressData);
-    if (!projection) {
-      // Staff account, no island state, or no category — ensure no projection exists.
-      await islandPublicRef.delete().catch(() => {});
-      return;
-    }
-
-    await islandPublicRef.set({
-      ...projection,
-      updatedAt: FieldValue.serverTimestamp(),
+    await syncAfterProgressWrite(
+      getFirestore(),
+      event.params.uid,
+      event.data?.before?.data(),
+      event.data?.after?.data(),
+    ).catch((err) => {
+      logger.error("onProgressWritten: year island sync failed", err);
     });
   }
 );
@@ -319,26 +289,25 @@ export const onProgressWritten = onDocumentWritten(
 /**
  * onUserWritten
  *
- * Refreshes /islandPublic/{uid} when identity fields (name, avatar,
- * school) or role change on /users/{uid}. Also handles the cases where
- * a user is deleted or becomes staff (projection is deleted).
- *
- * Does NOT create a projection from scratch — that requires progress
- * data. If no projection exists when this trigger fires, it does
- * nothing; the progress trigger will create one when relevant data
- * arrives.
+ * Mirrors authorization claims, revokes stale sessions, and refreshes
+ * /islandPublic/{uid} when a field the projection depends on changes: first
+ * name, avatar, school, year group, role, disablement, or the student's
+ * "Show my island to my year" choice (islandVisibility). A deleted profile, a
+ * staff role, a disabled account or a hidden island removes the projection.
  */
 export const onUserWritten = onDocumentWritten(
   "users/{uid}",
   async (event) => {
     const uid = event.params.uid;
     const db = getFirestore();
-    const islandPublicRef = db.collection("islandPublic").doc(uid);
 
     const beforeData = event.data?.before?.data();
     const userData = event.data?.after?.data();
+    const syncIsland = () => syncAfterUserWrite(db, uid, beforeData, userData).catch((err) => {
+      logger.error("onUserWritten: year island sync failed", err);
+    });
     if (!userData) {
-      await islandPublicRef.delete().catch(() => {});
+      await syncIsland();
       await clearAuthorizationClaims(uid).catch((err) => {
         // Account deletion may already have removed the Auth user.
         if ((err as { code?: string }).code !== "auth/user-not-found") {
@@ -368,42 +337,6 @@ export const onUserWritten = onDocumentWritten(
       }
     }
 
-    if (userData.role === "gc" || userData.role === "staff" || userData.role === "admin" || userData.isAdmin === true) {
-      await islandPublicRef.delete().catch(() => {});
-      return;
-    }
-
-    const islandPublicSnap = await islandPublicRef.get();
-    if (!islandPublicSnap.exists) {
-      // No projection to refresh; the progress trigger will create one
-      // if/when an island appears. Avoid creating an empty/stub doc.
-      return;
-    }
-
-    const progressSnap = await db.collection("progress").doc(uid).get();
-    if (!progressSnap.exists) {
-      // Existing projection but progress now missing — refresh identity
-      // fields only. (Edge case: progress was deleted out-of-band.)
-      const first = typeof userData.name === "string" && userData.name.trim()
-        ? userData.name.trim().split(/\s+/)[0] : "Student";
-      await islandPublicRef.update({
-        name: first,
-        avatar: typeof userData.avatar === "string" ? userData.avatar : "James",
-        school: typeof userData.school === "string" ? userData.school : "",
-        updatedAt: FieldValue.serverTimestamp(),
-      });
-      return;
-    }
-
-    const projection = buildPublicProjection(userData, progressSnap.data());
-    if (!projection) {
-      await islandPublicRef.delete().catch(() => {});
-      return;
-    }
-
-    await islandPublicRef.set({
-      ...projection,
-      updatedAt: FieldValue.serverTimestamp(),
-    });
+    await syncIsland();
   }
 );

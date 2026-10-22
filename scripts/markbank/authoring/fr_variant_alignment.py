@@ -43,6 +43,8 @@ def variants():
     block = text.split('  "french": [', 1)[1].split('\n  ],', 1)[0]
     out = []
     for entry in (json.loads(line.strip().rstrip(',')) for line in block.splitlines() if line.strip()):
+        if entry.get('sitting') or entry['year'] < 2010:
+            continue  # reviewed window only: June sittings from 2010
         for item in entry['papers']:
             out.append(dict(year=entry['year'], level=entry['level'], lang=entry['lang'], label=item['label'],
                             paper=f'exampapers/{entry["year"]}/{item["doc"]["f"]}',

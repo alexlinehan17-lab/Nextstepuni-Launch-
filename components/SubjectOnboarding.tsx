@@ -11,8 +11,8 @@ import { TextField } from './ui/FormControls';
 import { SubjectCardPicker, SubjectGradeCards } from './shared/SubjectProfileCards';
 import {
   type Grade, type Level, type StudentSubject, type StudentSubjectProfile,
-  LC_SUBJECTS, getGradesForLevel, getPointsForGrade,
-  getGradeIndex, DAYS_OF_WEEK,
+  LC_SUBJECTS, LEVEL_LABELS, defaultGradesForLevel, defaultSubjectConfig, getPointsForGrade,
+  gradeRank, DAYS_OF_WEEK,
   type LCSubject,
 } from './subjectData';
 import { getDefaultExamDate } from '../utils/examDates';
@@ -92,7 +92,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         if (!subjectConfigs[name]) {
           setSubjectConfigs(prev => ({
             ...prev,
-            [name]: { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade },
+            [name]: defaultSubjectConfig(name),
           }));
         }
       }
@@ -104,18 +104,16 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
 
   const updateConfig = (subjectName: string, field: 'level' | 'currentGrade' | 'targetGrade', value: string) => {
     setSubjectConfigs(prev => {
-      const current = prev[subjectName] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
+      const current = prev[subjectName] || defaultSubjectConfig(subjectName);
       const next = { ...current };
 
       if (field === 'level') {
         const newLevel = value as Level;
         next.level = newLevel;
-        const grades = getGradesForLevel(newLevel);
-        next.currentGrade = grades[3];
-        next.targetGrade = grades[1];
+        Object.assign(next, defaultGradesForLevel(newLevel));
       } else if (field === 'currentGrade') {
         next.currentGrade = value as Grade;
-        if (getGradeIndex(next.targetGrade) > getGradeIndex(next.currentGrade)) {
+        if (gradeRank(next.targetGrade) < gradeRank(next.currentGrade)) {
           next.targetGrade = next.currentGrade;
         }
       } else {
@@ -156,7 +154,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         };
       }
       if (isLca) return { subjectName: name, level: 'common' as Level };
-      const config = subjectConfigs[name] || { level: 'higher' as Level, currentGrade: 'H4' as Grade, targetGrade: 'H2' as Grade };
+      const config = subjectConfigs[name] || defaultSubjectConfig(name);
       return {
         subjectName: name,
         level: config.level,
@@ -264,7 +262,7 @@ const SubjectOnboarding: React.FC<SubjectOnboardingProps> = ({ user: _user, exis
         const config = subjectConfigs[name]; if (!config) return null;
         const isMaths = LC_SUBJECTS.find(subject => subject.name === name)?.isMaths || false;
         const gain = getPointsForGrade(config.targetGrade, isMaths) - getPointsForGrade(config.currentGrade, isMaths);
-        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{config.level === 'higher' ? 'Higher' : 'Ordinary'} Level</small></div><div className="text-right"><span className="text-sm">{config.currentGrade} → {config.targetGrade}</span>{gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
+        return <div key={name} className="sc-review-row"><div><strong>{name}</strong><small className="sc-small">{LEVEL_LABELS[config.level]} Level</small></div><div className="text-right"><span className="text-sm">{config.currentGrade} → {config.targetGrade}</span>{gain > 0 && <small className="sc-small">+{gain} pts</small>}</div></div>;
       })}
       <div className="sc-review-row"><strong>Exams start</strong><span className="sc-muted text-sm">{new Date(`${examDate}T12:00:00`).toLocaleDateString('en-IE',{ day: 'numeric', month: 'short', year: 'numeric' })}</span></div>
       <div className="sc-review-row"><strong>Rest days</strong><span className="sc-muted text-sm">{restDays.size ? Array.from(restDays).map(day => DAY_SHORTS[day]).join(', ') : 'None selected'}</span></div>

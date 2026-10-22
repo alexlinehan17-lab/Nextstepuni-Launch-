@@ -230,6 +230,8 @@ def build_year(config):
     index_text = (ROOT / 'paperTrailData.ts').read_text()
     block = index_text.split('  "french": [', 1)[1].split('\n  ],', 1)[0]
     entries = [json.loads(line.strip().rstrip(',')) for line in block.splitlines() if line.strip()]
+    # Reviewed window only: June sittings from 2010.
+    entries = [entry for entry in entries if not entry.get('sitting') and entry['year'] >= 2010]
     tags = json.loads((ROOT / 'scripts/paper-trail/topic-tags/tags/french.json').read_text())
     runtime = json.loads((ROOT / 'data/examTopics/french-runtime.json').read_text())
     cards, mappings, audit = [], [], []

@@ -86,7 +86,10 @@ sys.path.insert(0,'scripts/markbank')
 import pymupdf
 from glyph_ids import load_table,page_glyphs,page_unnamed
 table=load_table()
-files=sorted(glob.glob('paper-trail-corpus/markingschemes/*/LC033*EV.pdf')+glob.glob('paper-trail-corpus/exampapers/*/LC033*EV.pdf'))
+pymupdf.TOOLS.mupdf_display_errors(False)
+# The Business card corpus: June sittings from 2010. The shared local corpus
+# also holds the 1995-2009 archive papers, which no card is drawn from.
+files=sorted(f for f in glob.glob('paper-trail-corpus/markingschemes/*/LC033*EV.pdf')+glob.glob('paper-trail-corpus/exampapers/*/LC033*EV.pdf') if int(f.split('/')[2])>=2010)
 seen,missing=0,{}
 for f in files:
     with pymupdf.open(f) as d:
