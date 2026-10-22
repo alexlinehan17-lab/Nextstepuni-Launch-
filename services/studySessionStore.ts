@@ -36,6 +36,10 @@ export interface ActiveStudySession {
   /** Elapsed seconds when paused or completed; derived from startedAt while active. */
   elapsedSeconds: number;
   completedPrompts: string[];
+  /** Minutes added with "Keep going" (older snapshots omit it). */
+  extendedMinutes?: number;
+  /** Stopwatch session with no planned end. */
+  openEnded?: boolean;
 }
 
 export interface PendingStudySession {

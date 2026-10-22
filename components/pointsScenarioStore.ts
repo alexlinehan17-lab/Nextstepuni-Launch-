@@ -14,7 +14,7 @@
 
 import {
   type Grade, type Level,
-  LC_SUBJECTS, getPointsForGrade, getGradesForLevel, getGradeIndex,
+  LC_SUBJECTS, getPointsForGrade, getGradeIndex, gradeLadder, gradeScale,
 } from './subjectData';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -149,10 +149,10 @@ export function bestLeverToward(
   for (const target of scenario) {
     const cur = baseline.find(b => b.subjectName === target.subjectName);
     if (!cur || !cur.grade || !target.grade) continue;
-    if (cur.grade.charAt(0) !== target.grade.charAt(0)) continue;
+    if (gradeScale(cur.grade) !== gradeScale(target.grade)) continue;
     if (getGradeIndex(target.grade) >= getGradeIndex(cur.grade)) continue;
 
-    const ladder = getGradesForLevel(cur.grade.startsWith('H') ? 'higher' : 'ordinary');
+    const ladder = gradeLadder(cur.grade);
     const curIdx = ladder.indexOf(cur.grade);
     if (curIdx <= 0) continue;
 

@@ -19,6 +19,7 @@ describe('security deployment invariants', () => {
       'functions/src/gcPasswordReset.ts',
       'functions/src/peerInteractions.ts',
       'functions/src/schoolAccess.ts',
+      'functions/src/signInDiagnostics.ts',
       'functions/src/staffAccess.ts',
       'functions/src/staffMessage.ts',
     ]) {

@@ -256,6 +256,17 @@
   border-color: var(--foreground);
   box-shadow: inset 0 0 0 1px var(--foreground);
 }
+/* Open-ended sits under the presets as its own full-width choice. */
+.ks-page .ss-durations .ks-open-ended {
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  padding-inline: 14px;
+}
+.ks-page .ss-durations .ks-open-ended > span {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 400;
+}
 .ks-custom-duration {
   display: grid;
   grid-template-columns: 1fr minmax(3ch, 1fr) 1fr;

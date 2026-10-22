@@ -26,13 +26,17 @@ import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import {
   ArrowLeft,
   BookOpen,
+  ChevronLeft,
+  ChevronRight,
   Clock3,
   Download,
   Highlighter,
   Pause,
   Play,
   ListChecks,
+  Minus,
   PenLine,
+  Plus,
   Repeat2,
   RotateCcw,
   SlidersHorizontal,
@@ -75,6 +79,8 @@ import FrenchPaperAudio from './FrenchPaperAudio';
 const E_BUTTON = 'inline-flex items-center gap-1.5 h-[34px] px-3 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold transition-[transform,box-shadow,background-color,color] duration-150 shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
 const E_BUTTON_OFF = 'bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100';
 const E_BUTTON_ON = 'bg-[#F26B1F] text-white';
+/** Compact square sibling of E_BUTTON for the scheme's step and text-size controls. */
+const E_SQUARE = 'inline-flex items-center justify-center h-8 min-w-[32px] px-2 rounded-md border-[1.5px] border-[#1A1A1A] dark:border-zinc-100 bg-white dark:bg-zinc-900 text-[#1A1A1A] dark:text-zinc-100 text-[12.5px] font-bold shadow-[2px_2px_0_#1A1A1A] dark:shadow-[2px_2px_0_#E4E4E7] transition-[transform,box-shadow] duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[3px_3px_0_#1A1A1A] dark:hover:shadow-[3px_3px_0_#E4E4E7] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none disabled:opacity-35 disabled:pointer-events-none';
 
 // Sleek glide shared with the GC dashboard student-view tray.
 const GLIDE = { duration: 0.32, ease: [0.16, 1, 0.3, 1] as const };
@@ -260,6 +266,18 @@ const Viewer: React.FC<ViewerProps> = ({
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 768px)');
     const on = () => setIsWide(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
+  // A scheme opened beside the paper needs room for both. From 1100px the
+  // workspace widens to about half the screen; narrower tablets open the
+  // scheme over the paper instead.
+  const [isRoomy, setIsRoomy] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia('(min-width: 1100px)').matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1100px)');
+    const on = () => setIsRoomy(mq.matches);
     mq.addEventListener('change', on);
     return () => mq.removeEventListener('change', on);
   }, []);
@@ -957,11 +975,15 @@ const Viewer: React.FC<ViewerProps> = ({
   }, []);
 
   // ── scroll → current page + persistence ──
+  // The point being read on the paper, kept current so a change in the
+  // paper column's width (the scheme panel opening) can hold it in place.
+  const layoutAnchor = useRef<ZoomAnchor | null>(null);
   const onScroll = useCallback(() => {
     const el = scrollerRef.current;
     const s = sessions.current[side];
     if (!el || s.state !== 'ready') return;
     s.scrollTop = el.scrollTop;
+    if (side === 'paper') layoutAnchor.current = captureZoomAnchor(el);
     const kids = el.querySelectorAll<HTMLElement>('[data-page]');
     const mid = el.scrollTop + el.clientHeight / 2;
     let current = 1;
@@ -1075,7 +1097,32 @@ const Viewer: React.FC<ViewerProps> = ({
     onScroll();
   }, [zoom, onScroll]);
 
-  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || reveal);
+  const inlineScheme = isWide && side === 'paper' && Boolean(answersOn || topicsOn || (reveal && isRoomy));
+  // The scheme reads at panel width, so beside the paper it gets half the
+  // screen (Oct 2026: a 360px panel set the answers at about 7px).
+  const schemeBeside = inlineScheme && isRoomy && Boolean(reveal);
+  const besideRef = useRef(schemeBeside);
+  useLayoutEffect(() => {
+    if (besideRef.current === schemeBeside) return;
+    besideRef.current = schemeBeside;
+    const el = scrollerRef.current;
+    if (el && layoutAnchor.current) restoreZoomAnchor(el, layoutAnchor.current);
+    setEpoch(n => n + 1); // pages re-render at the column's new width
+  }, [schemeBeside]);
+
+  // Step the open scheme through the paper's questions, bringing each
+  // question into view beside it.
+  const revealIndex = reveal ? loopQuestions.findIndex(x => x.n === reveal.n) : -1;
+  const stepReveal = useCallback((dir: 1 | -1) => {
+    const cur = revealRef.current;
+    const list = loopQuestionsRef.current;
+    const i = cur ? list.findIndex(x => x.n === cur.n) : -1;
+    const next = i < 0 ? undefined : list[i + dir];
+    if (!next) return;
+    onReveal(next);
+    scrollToQuestion(next);
+  }, [onReveal, scrollToQuestion]);
+
   const schemeContent = reveal ? (
               <RevealContent
                 q={reveal}
@@ -1100,6 +1147,9 @@ const Viewer: React.FC<ViewerProps> = ({
                 onRecordMark={m => recordMark(reveal.n, m)}
                 onClose={() => setReveal(null)}
                 onFullScheme={jumpSchemeToPage}
+                onStep={!loop && revealIndex >= 0 ? stepReveal : undefined}
+                canPrev={revealIndex > 0}
+                canNext={revealIndex >= 0 && revealIndex < loopQuestions.length - 1}
               />
   ) : null;
 
@@ -1403,10 +1453,14 @@ const Viewer: React.FC<ViewerProps> = ({
         />
       )}
 
-      {inlineScheme && <aside className="pt-reader-sidebar" aria-label="Question workspace">
-        <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
-        {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
-        {schemeContent}
+      {inlineScheme && <aside className="pt-reader-sidebar" data-scheme-open={schemeBeside || undefined} aria-label="Question workspace">
+        {/* Hidden, not unmounted, while a scheme is open, so the question
+            picker keeps its place for when the scheme closes. */}
+        <div hidden={schemeBeside}>
+          <div className="pt-reader-sidebar-heading"><h2>Question workspace</h2><p>Keep the question in view while you explore its scheme.</p></div>
+          {answerMap && session.state === 'ready' && <MobileQuestionTools page={session.page} initialQuestion={focusQuestion} questions={anchorsByPage.get(session.page) ?? []} topicInfo={topicsOn ? topicInfoByN : undefined} showAnswers={answersOn} onAnswer={onReveal} onTopic={onTopic} />}
+        </div>
+        {schemeBeside && schemeContent}
       </aside>}
       </div>
       {/* Footer: zoom + page scrubber */}
@@ -1563,7 +1617,7 @@ const Viewer: React.FC<ViewerProps> = ({
       {/* Per-question marking-scheme reveal — bottom sheet on phones, right tray
           on tablet+; same sleek glide as the GC dashboard student view. */}
       <AnimatePresence>
-        {reveal && !inlineScheme && (
+        {reveal && !schemeBeside && (
           <>
             <MotionDiv
               key="reveal-backdrop"
@@ -1586,8 +1640,8 @@ const Viewer: React.FC<ViewerProps> = ({
               style={{ paddingBottom: 'var(--sab, 0px)' }}
               className={
                 isWide
-                  ? 'fixed top-0 right-0 z-[111] h-full w-full max-w-md flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
-                  : 'fixed bottom-0 inset-x-0 z-[111] max-h-[85vh] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
+                  ? 'fixed top-0 right-0 z-[111] h-full w-[min(720px,calc(100vw-48px))] flex flex-col bg-white dark:bg-zinc-900 shadow-2xl border-l border-zinc-200 dark:border-zinc-800'
+                  : 'pt-reveal-sheet fixed bottom-0 inset-x-0 z-[111] flex flex-col bg-white dark:bg-zinc-900 rounded-t-2xl shadow-2xl'
               }
             >
               {schemeContent}
@@ -2468,8 +2522,17 @@ const RevealContent: React.FC<{
   onRecordMark?: (mark: SelfMark | null) => void;
   onClose: () => void;
   onFullScheme: (page: number) => void;
-}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme }) => {
+  /** Previous/next question's scheme; absent during the Full Loop, which
+   *  sequences questions itself. */
+  onStep?: (dir: 1 | -1) => void;
+  canPrev?: boolean;
+  canNext?: boolean;
+}> = ({ q, wide, reduced, schemePdf, schemeUrl, schemeErrored, copyright, selfMark, existingMark, licence, siblings, onJumpSibling, onRecordMark, onClose, onFullScheme, onStep, canPrev, canNext }) => {
   const schemeRegion = schemeRegionFor(q);
+  // Text size for the crop; it carries across questions while the panel is open.
+  const [zoom, setZoom] = useState(1);
+  const zoomStep = (dir: 1 | -1) => setZoom(z => Math.min(2, Math.max(1, Math.round((z + dir * 0.25) * 100) / 100)));
+  const showsCrop = q.mode !== 'pagejump' && !schemeErrored;
   const firstPage = schemeRegion[0]?.p;
   const closeRef = useRef<HTMLButtonElement | null>(null);
   useEffect(() => {
@@ -2487,21 +2550,50 @@ const RevealContent: React.FC<{
           <div className="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700" />
         </div>
       )}
-      <div className="shrink-0 flex items-center gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
+      <div className="shrink-0 flex items-start gap-2 px-4 py-3 border-b border-zinc-200 dark:border-zinc-800">
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] font-semibold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
-          <p className="text-[11px] text-zinc-500">How examiners award the marks — not a model answer.</p>
+          <p className="text-[16px] font-bold text-zinc-900 dark:text-white">{q.label ?? `Question ${q.n}`} · marking scheme</p>
+          <p className="mt-0.5 text-[12px] text-zinc-500">How examiners award the marks — not a model answer.</p>
         </div>
+        {onStep && (
+          <div className="shrink-0 flex items-center gap-1.5 pt-0.5">
+            <button type="button" onClick={() => onStep(-1)} disabled={!canPrev} aria-label="Previous question’s marking scheme" className={E_SQUARE}>
+              <ChevronLeft size={16} aria-hidden />
+            </button>
+            <button type="button" onClick={() => onStep(1)} disabled={!canNext} aria-label="Next question’s marking scheme" className={E_SQUARE}>
+              <ChevronRight size={16} aria-hidden />
+            </button>
+          </div>
+        )}
         <button ref={closeRef} onClick={onClose} aria-label="Close" className="p-2 -mr-1 rounded-lg text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
           <X size={18} />
         </button>
       </div>
+      {showsCrop && (
+        <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2 border-b border-zinc-100 dark:border-zinc-800">
+          <span className="text-[12px] text-zinc-500">Text size</span>
+          <div className="flex items-center gap-1.5">
+            <button type="button" onClick={() => zoomStep(-1)} disabled={zoom <= 1} aria-label="Smaller marking scheme text" className={E_SQUARE}>
+              <Minus size={14} aria-hidden />
+            </button>
+            <output aria-live="polite" className="min-w-[44px] text-center text-[12.5px] font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
+              {Math.round(zoom * 100)}%
+            </output>
+            <button type="button" onClick={() => zoomStep(1)} disabled={zoom >= 2} aria-label="Bigger marking scheme text" className={E_SQUARE}>
+              <Plus size={14} aria-hidden />
+            </button>
+            <button type="button" onClick={() => setZoom(1)} disabled={zoom === 1} className={E_SQUARE}>
+              Fit
+            </button>
+          </div>
+        </div>
+      )}
       {/* Content settles a beat after the panel lands (premium stagger). */}
       <MotionDiv
         initial={reduced ? false : { opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: reduced ? 0 : 0.08, duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-        className="flex-1 overflow-auto overscroll-contain px-3 py-3 bg-zinc-100 dark:bg-zinc-950"
+        className="flex-1 min-h-0 overflow-auto overscroll-contain p-4 bg-white dark:bg-zinc-900"
       >
         {q.mode === 'pagejump' ? (
           <p className="text-[13px] text-zinc-600 dark:text-zinc-300 text-center py-8 px-4">
@@ -2512,7 +2604,7 @@ const RevealContent: React.FC<{
             Couldn’t load the marking scheme. Open it in the Scheme tab instead.
           </p>
         ) : schemePdf ? (
-          <CropView pdf={schemePdf} region={schemeRegion} />
+          <CropView pdf={schemePdf} region={schemeRegion} trim zoom={zoom} responsive maxWidth={1200} />
         ) : (
           <div role="status" aria-live="polite" className="flex flex-col items-center justify-center gap-2 py-10 text-zinc-400">
             <div className="w-5 h-5 rounded-full border-2 border-zinc-300 border-t-zinc-500 animate-spin" aria-hidden />
@@ -2598,11 +2690,11 @@ const RevealContent: React.FC<{
         </div>
       )}
       <div className="shrink-0 flex items-center justify-between gap-2 px-4 py-2.5 border-t border-zinc-200 dark:border-zinc-800">
-        <span className="text-[10px] text-zinc-400 truncate">{copyright ?? '© State Examinations Commission'}</span>
+        <span className="text-[11px] text-zinc-500 truncate">{copyright ?? '© State Examinations Commission'}</span>
         <button
           onClick={() => firstPage && onFullScheme(firstPage)}
           disabled={!firstPage}
-          className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-semibold text-[#F26B1F] bg-[#FDEEDF] disabled:opacity-40"
+          className="shrink-0 inline-flex items-center gap-1.5 pb-px border-b-[1.5px] border-[#1A1A1A] dark:border-zinc-100 text-[13px] font-bold text-[#1A1A1A] dark:text-zinc-100 disabled:opacity-40"
         >
           View full scheme →
         </button>

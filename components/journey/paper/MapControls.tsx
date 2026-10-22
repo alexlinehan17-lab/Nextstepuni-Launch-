@@ -54,6 +54,10 @@ export function IslandMap({
   onVisit,
   camera,
   setCamera,
+  editable,
+  selectedTile,
+  onSelectTile,
+  label = "Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode.",
 }: {
   world: IslandState;
   building: boolean;
@@ -69,6 +73,12 @@ export function IslandMap({
   onVisit?: (id:CrewId) => void;
   camera: Camera;
   setCamera: React.Dispatch<React.SetStateAction<Camera>>;
+  /** Build mode: placed tiles that can be swapped or removed, by cell key → name. */
+  editable?: Map<string, string>;
+  selectedTile?: string | null;
+  onSelectTile?: (key: string) => void;
+  /** The map's accessible name; a classmate's island names its owner. */
+  label?: string;
 }) {
   const [narrow, setNarrow] = useState(
     () => window.matchMedia("(max-width:700px)").matches,
@@ -143,7 +153,7 @@ export function IslandMap({
           preserveAspectRatio="xMidYMid slice"
           role="group"
           tabIndex={0}
-          aria-label="Your island. Drag to explore, use arrow keys to pan, or select an open corner in build mode."
+          aria-label={label}
           onPointerDown={(e) => {
             if ((e.target as Element).closest("[data-map-control]")) return;
             const rect = e.currentTarget.getBoundingClientRect();
@@ -236,6 +246,12 @@ export function IslandMap({
           <g pointerEvents="none">
             <PaperGround cells={world.placed} />
             {ghost && <PaperGround cells={[ghost]} opacity={0.66} />}
+            {/* The selected tile's wash sits on the ground, under the scenery,
+                so it never tints a neighbour's tall art; the outline stays on top. */}
+            {building && selectedTile && (() => {
+              const cell = world.placed.find(c => c.key === selectedTile);
+              return cell ? <polygon className="island-tile-edit-wash" points={points(cell.x, cell.y)} /> : null;
+            })()}
           </g>
           {[...world.placed, ...(ghost ? [ghost] : [])]
             .sort((a, b) => a.y - b.y || a.x - b.x)
@@ -281,6 +297,29 @@ export function IslandMap({
                 }}
               />
             ))}
+          {building && editable && world.placed.filter(cell => editable.has(cell.key)).map(cell => {
+            const selected = selectedTile === cell.key, name = editable.get(cell.key)!;
+            return (
+              <polygon
+                key={`edit-${cell.key}`}
+                data-map-control="tile-edit"
+                data-edit-tile={cell.key}
+                className={`island-tile-edit ${selected ? "selected" : ""}`}
+                points={points(cell.x, cell.y)}
+                role="button"
+                tabIndex={0}
+                aria-label={`Swap or remove ${name}`}
+                aria-pressed={selected}
+                onClick={() => onSelectTile?.(cell.key)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onSelectTile?.(cell.key);
+                  }
+                }}
+              />
+            );
+          })}
           {ghost && (
             <polygon
               points={points(ghost.x, ghost.y)}
@@ -551,7 +590,7 @@ export function Placement({
         <span>
           {candidate && canPay
             ? chosenWonder?"Your gift · no Journey Points needed":`${world.balance - t.price} JP left after placing`
-            : ""}
+            : "Tap a tile on your island to swap or remove it"}
         </span>
         <button
           aria-label="Undo last placement"
@@ -561,6 +600,66 @@ export function Placement({
           <Undo2 size={14} /> Undo
         </button>
       </div>
+    </aside>
+  );
+}
+
+/** Build mode, a placed tile selected: swap it for the shelf tile, or take it off. */
+export function TileEditor({
+  name,
+  replaceName,
+  replaceNote,
+  replaceBlock,
+  removeNote,
+  removeBlock,
+  note,
+  busy,
+  onReplace,
+  onRemove,
+  onClose,
+}: {
+  name: string;
+  replaceName: string;
+  replaceNote: string;
+  replaceBlock: string | null;
+  removeNote: string;
+  removeBlock: string | null;
+  /** Why a button is unavailable, when one is. */
+  note: string | null;
+  busy: boolean;
+  onReplace: () => void;
+  onRemove: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <aside className="placement-inspector tile-editor" aria-label={`Change ${name}`}>
+      <div className="placement-title">
+        <h3>{name}</h3>
+        <button className="tile-editor-close" aria-label="Stop changing this tile" onClick={onClose}>
+          <X size={16} />
+        </button>
+      </div>
+      <div className="tile-editor-actions">
+        <button
+          className="primary-action place-action"
+          disabled={busy || !!replaceBlock}
+          onClick={onReplace}
+        >
+          <span>{busy ? "Saving…" : `Swap for ${replaceName}`}</span>
+          <small>{replaceNote}</small>
+        </button>
+        <button
+          className="quiet-action place-action tile-remove-action"
+          disabled={busy || !!removeBlock}
+          onClick={onRemove}
+        >
+          <span>Remove tile</span>
+          <small>{removeNote}</small>
+        </button>
+      </div>
+      <p className="tile-editor-note" role={note ? "status" : undefined}>
+        {note || "Choose a shelf tile to swap in, or tap an open corner to build."}
+      </p>
     </aside>
   );
 }

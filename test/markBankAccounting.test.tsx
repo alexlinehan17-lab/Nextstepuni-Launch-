@@ -18,7 +18,7 @@ import { tariffReconciles } from '../types/markBank';
 import type { PaperAnswerMap } from '../types/paperTrail';
 import { vaultPdf } from '../components/PaperTrail/vaultDocs';
 import { rotatedCropRect } from '../components/PaperTrail/CropView';
-import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
 import inventory from '../scripts/markbank/accounting/inventory.json';
 import progress from '../scripts/markbank/accounting/progress.json';
@@ -33,7 +33,9 @@ const original = json('scripts/paper-trail/answers/2025/LC032ALP000EV.pdf.json')
 
 describe('Accounting corpus reconciliation', () => {
   it('covers the actual Paper Trail index without unreviewed or orphan editions', () => {
-    const indexed = PAPER_TRAIL_INDEX.accounting.flatMap(entry => entry.papers.map(paper => `${entry.year}/${paper.doc.f}`));
+    // The reviewed window: June sittings 2010-2026 (pre-2010 and deferred
+    // papers are archive-only).
+    const indexed = reviewedArchiveEntries('accounting').flatMap(entry => entry.papers.map(paper => `${entry.year}/${paper.doc.f}`));
     expect(new Set(inventory.papers.map(paper => `${paper.year}/${paper.fileid}`))).toEqual(new Set(indexed));
     expect(progress.editions.filter(edition => edition.status === 'pending')).toEqual([]);
     expect(reconciliation.sourceReconciliationPassed).toBe(true);

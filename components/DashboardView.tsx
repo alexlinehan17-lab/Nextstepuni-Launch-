@@ -12,6 +12,8 @@ import KobraScope from './approved-ui-runtime';
 import { Button } from './approved-ui-runtime';
 import { SubjectPicker } from './dashboard/progress/SubjectPicker';
 import { ProgressSummary } from './dashboard/progress/ProgressSummary';
+import { ProgressPointsGoal } from './dashboard/progress/ProgressPointsGoal';
+import { caoGoalStanding } from './dashboard/progress/caoGoal';
 import { ProgressActivity, ProgressConfidence, ProgressSubjects, ProgressMocks } from './dashboard/progress/ProgressCharts';
 import { MethodJournal } from './dashboard/progress/MethodJournal';
 import { ProgressTabs } from './dashboard/progress/shared';
@@ -122,6 +124,10 @@ interface DashboardViewProps extends TopicHistoryActions {
   onTabChange?: (tab: DashboardTab) => void;
   darkMode?: boolean;
   onToggleTheme?: () => void;
+  /** Opens Change subjects, where current and target grades live. */
+  onEditGrades?: () => void;
+  /** Opens the Points Passport, where mock results are recorded. */
+  onAddMockResult?: () => void;
 }
 
 const WORLD_TO_CATEGORY: Record<WorldId, CategoryType> = {
@@ -215,8 +221,11 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   onTabChange,
   darkMode = false,
   onToggleTheme,
+  onEditGrades,
+  onAddMockResult,
 }) => {
   const mobileAppDesign = useMobileAppDesign();
+  const pointsGoal = useMemo(() => caoGoalStanding(studentProfile, mockResults, curriculumLevel), [studentProfile, mockResults, curriculumLevel]);
   const [localTab, setLocalTab] = useState<DashboardTab>('overview');
   const tab = activeTab ?? localTab;
   const [range, setRange] = useState<DashboardRange>('week');
@@ -473,6 +482,10 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               </div>
             )}
           </div>
+
+          {tab === 'overview' && pointsGoal.status !== 'hidden' && <div className="pr-goal-wrap">
+            <ProgressPointsGoal standing={pointsGoal} onEditGrades={onEditGrades} onAddMockResult={onAddMockResult} />
+          </div>}
 
           {tab !== 'milestones' && (!mobileAppDesign || tab === 'overview' || tab === 'study') && <div className="pr-summary-wrap">
             <ProgressSummary period={rangeBounds.label} minutes={totalMinutes} sessions={sessionsInRange.length} activeDays={activeDays}

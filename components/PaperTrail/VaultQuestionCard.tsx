@@ -364,7 +364,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
                         attribution: '© State Examinations Commission' }} />
                   </div>
                 ) : schemePdf && state.s === 'ready' ? (
-                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} />
+                  <CropView pdf={schemePdf} region={schemeRegionFor(state.q)} trim responsive />
                 ) : schemeFailed ? (
                   <p className="text-[12px] py-3 text-center" style={{ color: '#5a5550' }}>
                     Couldn’t load the scheme — open the question in the full paper instead.

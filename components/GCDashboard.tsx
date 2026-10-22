@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import { lockBodyScroll } from '../utils/bodyScrollLock';
 import Avatar from './Avatar';
 import React, { useState, useEffect, useMemo } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -360,12 +361,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
   // Body scroll lock when tray is open
   useEffect(() => {
-    if (selectedStudentUid) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => { document.body.style.overflow = ''; };
+    if (!selectedStudentUid) return;
+    return lockBodyScroll();
   }, [selectedStudentUid]);
 
   // On opening a student's tray, re-pull their progress doc so the GC sees the

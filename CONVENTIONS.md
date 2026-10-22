@@ -65,7 +65,11 @@ trailing parenthetical (`baseName()` → `"Science"` matches `"Science (Junior C
 
 **Mobile nav** = `MobileBottomNav`, defined inline in `App.tsx:50-102`, 6 tabs, `createPortal`'d to `document.body`
 (so a transformed ancestor can't re-anchor it), `md:hidden`, active when `tab.id===viewState`, hidden on
-onboarding/module/admin/gc. There is **no desktop sidebar** — desktop nav is a `fixed top-6 right-6` floating cluster.
+onboarding/module/admin/gc. Desktop nav is the Kobra sidebar, `components/navigation/NextStepUniSidebar.tsx` (grouped
+items; a new destination gets an item there). The **mobile app design** (`useMobileAppDesign`: phones AND iPads, chosen by
+device, not width) mounts no sidebar at any width: account, settings and secondary destinations live in
+`MobileProfileSheet` (`UserProfileMenu.tsx`), opened from Home's avatar. That sheet must work at tablet widths too — iPads
+have no other way in — so a new destination gets a row there as well as a sidebar item.
 
 ---
 
@@ -318,8 +322,10 @@ new validated field/collection needs matching rules.
 | Surface a **citable examiner insight** | `data/paperTrail/examinerInsights.ts` — paraphrased "where marks are lost" + fix + source page, gated to subjects whose SEC Chief Examiner report is in `/examiner-reports/`. Keep verbatim quotes ≤15 words per the content rules; the card cites the page, the dossier holds the full source |
 | Add a **home-level study-loop surface** (revise / review / mock / progress) | These live on the Paper Trail **home** as sibling `View` variants in `index.tsx` (`revise`, `review`, `mock`, `progress`), each a self-contained component reached by a home CTA and handing questions back through `openCrossYear` (the same cross-year jump the viewer uses). `ReviseByTopic.tsx` (browse tags by topic → drill), `ReviewSession.tsx` (SM-2 spaced recall over saved questions), `MockExamBuilder.tsx` (assemble + run a custom set), `ProgressDashboard.tsx` (one-screen aggregate). **Stores are all localStorage, per-uid, `now` injected** (never `Date.now()` inside the pure core): `reviewStore.ts` (deck + unit-tested `schedule` SM-2), `streakStore.ts` (day-log + pure `computeStreak`), `examDateStore.ts` (`daysUntil`), `mockSetStore.ts` (pure seeded `buildSet`), and the read-only aggregator `progressStats.ts` (`computeProgress`). Cross-surface derivations (weakest topic, gap breakdown) all flow from `allMarks(uid)` + `topicsForPaper`. Every pure store core carries a `test/*.test.ts`; the big views carry a `*.smoke.test.tsx`. **No fabricated content** — a "flashcard"/"mock question" is only ever a pointer to a real SEC question, its marking scheme the check. Only ever the token palette (accent/success/ink; never red/amber/blue-as-accent) |
 | **Export** a printable pack (topic revision pack / mock set) | `components/PaperTrail/revisionPack.ts` — pure `buildPackHtml` (self-contained, inline-CSS, print-friendly, escapes untrusted labels) + `packFilename` slug + a thin `downloadPack` Blob wrapper. Lists **question references only** (year/level/paper/Q-number) with the SEC attribution footer — never answer text. Pass `dateIso` in; don't read the clock inside the builder |
+| Add a **local notification** (study timer is the first) | `services/notifications.ts`: add an id to `NOTICE_IDS` and a key to `NotificationPreferences` (`types.ts`, saved in `settings/{uid}`); keep the when-to-schedule rules pure and tested like `services/studyTimerAlerts.ts`; run them from a hook like `hooks/useStudyTimerAlerts.ts`. Never prompt on launch: `scheduleLocalNotice` never asks, the student's tap does (`hooks/useStudyNotifications.ts`). See §11 |
 | Get a **colour / font** token | `design/tokens.ts` (`COLORS`); `tailwind.config.ts` (class names); `index.html` `:root` (CSS vars) |
 | Add/change a **security rule** | `firestore.rules` |
+| Let **classmates see** part of a student's data (year islands) | Never open a peer read on `users`/`progress`. Copy an allowlisted subset into its own server-written collection: pure planner `functions/src/islandProjection.ts` (`planYearIsland`: field allowlist, caps, exclusions, owner opt-out) + `islandProjectionSync.ts` (fresh transactional, field-masked read of both sources, so an opt-out can never be overtaken by an older trigger) called from the `onProgressWritten`/`onUserWritten` triggers, which first skip writes that cannot change the projection. The rule compares the projection's OWN `school` + `yearGroup` with the requester's `users` doc, so the client query (`hooks/useYearIslands.ts`) must filter on both; add the collection to the erasure cascade and the export. Backfill with a script that runs the compiled sync (`scripts/backfill-year-islands.mjs`), never a second copy of the rules. Dev harness: `/year-islands-dev.html` (sample classmates; `?theme=dark`, `?classmates=none\|slow\|error`) |
 
 ---
 
@@ -390,3 +396,25 @@ arithmetic ("Any three of the above or similar 2 marks each" is an `anyN` group,
 rows); a banded whole-answer tariff ("Fully correct 6 / Almost correct 4") is `questionTotal` with
 `marks: null` rows; `orderedSplit`/`questionTotal` rows are menu-class (the scheme's printed candidates,
 capped at `MAX_LONG_OPTION_ROWS`), while the five-row cap is for required-recall `fixed` cards only.
+
+## 11. Device alerts — notifications and the iOS Live Activity
+
+- **Local plugins must be registered by hand.** Capacitor 8 only auto-registers the plugins `cap sync` lists from
+  `node_modules` (`packageClassList`). A plugin that lives in the app target (`StudyLiveActivityPlugin`,
+  `SignInWithApplePlugin`) is registered in `ios/App/App/NextStepBridgeViewController.swift`
+  (`capacitorDidLoad` → `bridge?.registerPluginInstance(...)`); `Main.storyboard` points at that class.
+- **`@capacitor/local-notifications` 8.3+ prompts from `schedule()`** and, on Android 12+, opens the Alarms settings
+  screen for exact alarms. `services/notifications.ts` checks permission first and only asks for exact alarms the
+  student already granted; keep it that way.
+- **The session engine owns device alerts.** `hooks/useStudyTimerAlerts.ts` runs inside the uid-keyed
+  `StudySessionEngine`, so sign-out and a different student signing in cancel the notification and end the Live
+  Activity; `nextstepuni:session-cleared` (fired by `clearLocalSessionData`) does the same without React.
+- **The Live Activity** is the `StudyTimerWidget` extension (`com.nextstepuni.app.StudyTimer`) plus
+  `ios/App/Shared/StudyTimerAttributes.swift`, compiled into both targets. Project changes go through
+  `scripts/ios/add-study-timer-widget.rb` (xcodeproj gem), not hand edits. Its colours are fixed per colour scheme
+  inside the view: asset-catalog colours were resolved in two appearances on the iOS 26 Lock Screen.
+- **Release bumps:** the extension carries its own `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` (Debug and
+  Release). Bump all four with the app's or App Store Connect flags the mismatch.
+- **Simulator check without an account** (Debug builds only): `xcrun simctl launch booted com.nextstepuni.app
+  -NSUStudyTimerDemo '{"notifyIn":45,"remaining":1110,"mode":"running"}'` (`mode`: running, paused, countup, done;
+  `roomOpen: true` suppresses the in-app banner). See `services/studyTimerDemo.ts`.

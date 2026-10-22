@@ -1,0 +1,892 @@
+{
+  "subjectId": "economics",
+  "year": 2022,
+  "level": "ordinary",
+  "lang": "iv",
+  "fileid": "LC034GLP000IV",
+  "reviewedAt": "2026-10-07",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "paperSha256": "b544d0a9eadaba7b2194cd6c4c32b14b320cc3d0ef57335aaef0cbe38f44dc84",
+  "schemeSha256": "24d85a4ec78916f3d8650f886afd553849dbbf116e17098fc436bad5a299ea72",
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-3-5"
+      ],
+      "boundaryReason": "Growth chart and definition; separately priced responses.",
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 9,
+          "cardId": "econ-2022-ol-sa-q1-i",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "ii",
+          "marks": 6,
+          "cardId": "econ-2022-ol-sa-q1-ii",
+          "topicId": "economics-3-5"
+        }
+      ],
+      "equivalenceReason": "Paperp3 growth chart and two tasks match; schemep5 gives chart6+3 and definition6."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        5
+      ],
+      "canonicalNodeIds": [
+        "economics-0-0"
+      ],
+      "boundaryReason": "CSO and use of census evidence for decisions; NCCA 1.1 data and policy, not an intervention in a product market.",
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 9,
+          "cardId": "econ-2022-ol-sa-q2-i",
+          "topicId": "economics-0-0",
+          "answerGuidance": "Irish paper: POS stands for Príomhoifig Staidrimh (the Central Statistics Office)."
+        },
+        {
+          "key": "ii",
+          "marks": 6,
+          "cardId": "econ-2022-ol-sa-q2-ii",
+          "topicId": "economics-0-0"
+        }
+      ],
+      "equivalenceReason": "Paperp4 asks POS rather than CSO. Schemep5 gives Príomhoifig Staidrimh9 and census use6. Same organisation and task; Irish answer retained in guidance."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-1-5"
+      ],
+      "boundaryReason": "Consumer incentives and effects on retailer sales/profits; first/second response tariff 9 and 6.",
+      "tasks": [
+        {
+          "key": "i+ii",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q3-i",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "equivalenceReason": "Paperp4 and schemep6 match online shopping cause9 and retailer disadvantage6 with the same illustrative response pools.",
+      "staleReasonNote": "Mirror collapse; IV reasons not re-reviewed."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        6
+      ],
+      "canonicalNodeIds": [
+        "economics-1-1"
+      ],
+      "boundaryReason": "All four classifications are required: not a choose-two answer pool. Tariff 9+2+2+2.",
+      "tasks": [
+        {
+          "key": "all",
+          "marks": 15,
+          "cardId": "econ-2022-ol-seca-q4-ticks",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "equivalenceReason": "Paperp5 requires all four substitute/complement ticks; schemep6 gives first9 then3x2, same classification table."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        7
+      ],
+      "canonicalNodeIds": [
+        "economics-2-1"
+      ],
+      "boundaryReason": "Finite a/b choice: economy or employee effects. Each requires two examples at 9+6; scheme examples are illustrative.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q5-a",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q5-b",
+          "topicId": "economics-2-1"
+        }
+      ],
+      "equivalenceReason": "Paperp5 and schemep7 have both economy and employee routes; each requires two advantages at9+6. All examples match in meaning."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        8
+      ],
+      "canonicalNodeIds": [
+        "economics-3-2"
+      ],
+      "boundaryReason": "Chart peak months 6+3 and unemployment explanation 6.",
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 9,
+          "cardId": "econ-2022-ol-seca-q6-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "ii",
+          "marks": 6,
+          "cardId": "econ-2022-ol-sa-q6-ii",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "equivalenceReason": "Paperp6 chart and schemep8 match March/April2021 peaks6+3 and lockdown explanation6."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        9
+      ],
+      "canonicalNodeIds": [
+        "economics-1-5"
+      ],
+      "boundaryReason": "Finite a/b choice, with separately priced subtasks within each route. All four cost classifications are required; arithmetic has its own published totals.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 5,
+          "cardId": "econ-2022-ol-sa-q7-a-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 10,
+          "cardId": "econ-2022-ol-seca-q7-a-ii-ticks",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2022-ol-sa-q7-b-i",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/ii",
+          "marks": 5,
+          "cardId": "econ-2022-ol-sa-q7-b-ii",
+          "topicId": "economics-1-5"
+        }
+      ],
+      "equivalenceReason": "Paperp7 and schemep9 match fixed-cost definition5, four classifications10, total cost10 and net profit5; both a/b routes retained."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        10
+      ],
+      "canonicalNodeIds": [
+        "economics-2-2",
+        "economics-0-1"
+      ],
+      "boundaryReason": "Positive externality and government opportunity cost are separate asks.",
+      "tasks": [
+        {
+          "key": "i+ii",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q8-i",
+          "topicId": "economics-2-2"
+        }
+      ],
+      "equivalenceReason": "Paperp8 and schemep10 match positive externality9 and opportunity cost6. The request for one example is open, not a finite route pool.",
+      "staleReasonNote": "Mirror collapse; IV reasons not re-reviewed."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        11
+      ],
+      "canonicalNodeIds": [
+        "economics-1-4"
+      ],
+      "boundaryReason": "PED working is 13; interpretation is separately 2. Elastic/inelastic/unit elastic is objective classification, not three alternative practice routes.",
+      "tasks": [
+        {
+          "key": "i",
+          "marks": 13,
+          "cardId": "econ-2022-ol-seca-q9-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "ii",
+          "marks": 2,
+          "cardId": "econ-2022-ol-sa-q9-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "equivalenceReason": "Paperp8 and schemep11 retain Q/P notation, PED calculation13 giving−1 and unit-elastic classification2."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        12
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1"
+      ],
+      "boundaryReason": "Finite a/b choice: compare interest or define national debt, each 15.",
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q10-a",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b",
+          "marks": 15,
+          "cardId": "econ-2022-ol-sa-q10-b",
+          "topicId": "economics-3-1"
+        }
+      ],
+      "equivalenceReason": "Paperp9 and schemep12 match both fifteen-mark alternatives: interest2018/2024 comparison and national debt definition."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        13,
+        14,
+        15
+      ],
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-3"
+      ],
+      "boundaryReason": "Streaming market and monopoly diagrams; totals 24+30+21=75. All three labels and equilibrium readings are required. Explanations/examples have 5+4; barriers 2x4.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q11-a-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "a/ii",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q11-a-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b/i",
+          "marks": 21,
+          "cardId": "econ-2022-ol-q11-b-i",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish paper labels: 1 Praghas (price); 2 Costas Imeallach / Imeall chostas (marginal cost); 3 Ioncam imeallach (marginal revenue). MCh and MI on its diagram mean average cost and average revenue."
+        },
+        {
+          "key": "b/ii",
+          "marks": 9,
+          "cardId": "econ-2022-ol-q11-b-ii",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish paper: output is C₁, price is P₁ and average cost is Co₁. The solution image uses the English Q₁/P₁/C₁ labels. Use the same three positions, following the labels printed on your question; the Irish scheme repeats the English labels and mistakenly calls both output and cost C₁ in its prose."
+        },
+        {
+          "key": "c/i",
+          "marks": 9,
+          "cardId": "econ-2022-ol-q11-c-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q11-c-ii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 4,
+          "cardId": "econ-2022-ol-q11-c-iii",
+          "topicId": "economics-1-3"
+        }
+      ],
+      "equivalenceReason": "Paperpp10–12 and schemepp13–15 match every ask and tariff24+30+21. Irish question uses MCh/MI, quantityC₁ and costCo₁. Schemep14 repeats English diagram labels and incorrectly calls both readingsC₁ in prose; follow the physical Irish question labels. Guidance records the mapping."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        13,
+        14,
+        15
+      ],
+      "schemePages": [
+        16,
+        17,
+        18
+      ],
+      "canonicalNodeIds": [
+        "economics-1-0",
+        "economics-1-1",
+        "economics-0-2"
+      ],
+      "boundaryReason": "Demand/supply graph including equilibrium jointly 28 (14x2); no invented tariff for part (iii). Celebrity response 8, demand shift 8, new equilibrium 6+6; sustainability 5+14. Total75.",
+      "tasks": [
+        {
+          "key": "a/i-iii",
+          "marks": 28,
+          "cardId": "econ-2022-ol-q12-a-i",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish paper: demand is É, supply is S, equilibrium price is P₁ (€7) and quantity is C₁ (30,000). The Irish scheme graph mislabels the price guide C₁ and quantity Q₁; follow the question paper’s P₁/C₁ labels. The English solution uses D and Q₁."
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q12-b-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q12-b-ii",
+          "topicId": "economics-1-1",
+          "answerGuidance": "Irish paper: shift the demand curve É to the right and label the new curve É₂. The English solution labels these D and D₂."
+        },
+        {
+          "key": "b/iii",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q12-b-iii",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish paper: label the new quantity C₂ and new price P₂ at the shifted demand curve É₂ and supply intersection. The English solution uses Q₂ and D₂."
+        },
+        {
+          "key": "c/i",
+          "marks": 5,
+          "cardId": "econ-2022-ol-q12-c-i",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 14,
+          "cardId": "econ-2022-ol-q12-c-ii",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "equivalenceReason": "Paperpp13–15 and schemepp16–18 match every ask and tariff28+28+19. Irish labels demandÉ and quantityC₁/C₂. Schemep16 graph incorrectly writesC₁ on the price guide andQ₁ on quantity; follow paperP₁/C₁. Schemep17 demand shift and new equilibrium labels are correct."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        16,
+        17,
+        18
+      ],
+      "schemePages": [
+        19,
+        20,
+        21
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-3-0",
+        "economics-1-1"
+      ],
+      "boundaryReason": "Finite current/capital alternatives each require a definition and example at6+3. Percentage16; national income12+12+6; consumer behaviour10+10. Count either expenditure alternative once:75.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 16,
+          "cardId": "econ-2022-ol-q13-a-i-percentage",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii/current",
+          "marks": 9,
+          "cardId": "econ-2022-ol-q13-a-ii-expenditure",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii/capital",
+          "marks": 9,
+          "cardId": "econ-2022-ol-q13-a-ii-capital",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q13-b-i",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/ii",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q13-b-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2022-ol-q13-b-iii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2022-ol-q13-c-i",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2022-ol-q13-c-ii",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "equivalenceReason": "Paperpp16–18 and schemepp19–21 match percentage16; current/capital alternatives each6+3; income formula12, multiplier12, meaning6; consumption10+10. The misleading multiplier-double-income sentence also occurs in Irish; use its accurate alternative, extra€1 raises income€2."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        19,
+        20,
+        21
+      ],
+      "schemePages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-0-2",
+        "economics-1-3",
+        "economics-4-0"
+      ],
+      "boundaryReason": "All four factor rows required at6each; water scarcity3 and sustainable use7. Water-charge arguments use the published first10/second7 tariff. Development16+8. Total75.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 24,
+          "cardId": "econ-2022-ol-q14-a-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 3,
+          "cardId": "econ-2022-ol-q14-a-ii-scarce",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 7,
+          "cardId": "econ-2022-ol-q14-a-iii-water",
+          "topicId": "economics-0-2"
+        },
+        {
+          "key": "b/i+ii",
+          "marks": 17,
+          "cardId": "econ-2022-ol-q14-b-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 16,
+          "cardId": "econ-2022-ol-q13-a-i",
+          "topicId": "economics-4-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q13-a-ii",
+          "topicId": "economics-4-0"
+        }
+      ],
+      "equivalenceReason": "Paperpp19–21 and schemepp22–25 match all four factor rows24, scarcity3, water use7, water-charge arguments10+7, development16+8. Precompleted table cells match.",
+      "staleReasonNote": "Mirror collapse; IV reasons not re-reviewed."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        22,
+        23,
+        24
+      ],
+      "schemePages": [
+        26,
+        27,
+        28
+      ],
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-4-1",
+        "economics-4-2"
+      ],
+      "boundaryReason": "Corporation tax10+9, MNC12+8+8, exports12+16. Benefits response requires linked increased revenue and services (6+3), not arbitrary unconnected examples. Total75. Scheme prose misstates chart units as€4m/€12m; follow millions axis, approximately€3,500m to€12,000m.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 10,
+          "cardId": "econ-2022-ol-q15-a-i-trend",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 9,
+          "cardId": "econ-2022-ol-q15-a-ii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q15-b-i",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q14-a-ii",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "b/iii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q14-a-iii",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q15-c-i",
+          "topicId": "economics-4-2"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2022-ol-q14-b-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "equivalenceReason": "Paperpp22–24 and schemepp26–28 match corporation tax10+9, MNC12+8+8 and exports12+16. Irish repeats the tax-prose€4m/€12m error; the millions axis supports approximately€3500m/€12000m. Linked revenue/services6+3 retained."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        25,
+        26,
+        27
+      ],
+      "schemePages": [
+        29,
+        30,
+        31,
+        32
+      ],
+      "canonicalNodeIds": [
+        "economics-1-3",
+        "economics-2-2",
+        "economics-3-3",
+        "economics-3-1",
+        "economics-3-0"
+      ],
+      "boundaryReason": "Alcohol/cigarettes27 and inflation24. Indirect tax explanation+example8 with no per-row split. Hidden economy definition+example8 and economic effect8: Irish scheme PDFp32 places each eight explicitly beside (i), (ii) and (iii), resolving the displaced English cell. The matching paper tasks and other tariffs were independently checked in both editions. Total75.",
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2022-ol-q15-a-i",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 7,
+          "cardId": "econ-2022-ol-q16-a-ii-smoking",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "a/iii/social",
+          "marks": 4,
+          "cardId": "econ-2022-ol-q15-a-iii-social",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "a/iii/private",
+          "marks": 4,
+          "cardId": "econ-2022-ol-q15-a-iii-private",
+          "topicId": "economics-2-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q16-b-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 16,
+          "cardId": "econ-2022-ol-q16-a-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q16-c-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "c/ii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q16-c-ii",
+          "topicId": "economics-3-0"
+        },
+        {
+          "key": "c/iii",
+          "marks": 8,
+          "cardId": "econ-2022-ol-q16-c-iii",
+          "topicId": "economics-3-0"
+        }
+      ],
+      "equivalenceReason": "Paperpp25–27 and schemepp29–32 match alcohol/cigarette27, inflation24 and taxation/hidden economy24. Irish schemep32 clearly aligns8 with each of(c)(i),(ii),(iii), resolving the displaced English cell and confirming two separate hidden-economy tasks."
+    }
+  ],
+  "selections": [
+    {
+      "page": 2,
+      "text": "Freagair 5 cheist as 10 gceist sa roinn seo",
+      "classification": "exam-question-selection",
+      "reason": "Choose exam questions; every printed question remains represented in the bank."
+    },
+    {
+      "page": 2,
+      "text": "Freagair 3 cheist as 6 cheist.",
+      "classification": "exam-question-selection",
+      "reason": "Choose exam questions; every printed question remains represented in the bank."
+    },
+    {
+      "page": 2,
+      "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh.",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "bhreise i gcúl an leabhráin. Lipéadaigh aon obair bhreise go soiléir le huimhir na ceiste agus",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 2,
+      "text": "i láthair an scrúdaitheora. Is féidir nach bhfeicfidh an scrúdaitheoir aon rud a scríobhfaidh tú taobh",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 3,
+      "text": "Freagair 5 cheist as 10 gceist",
+      "classification": "exam-question-selection",
+      "reason": "Choose exam questions; every printed question remains represented in the bank."
+    },
+    {
+      "page": 5,
+      "text": "Sa tábla thíos, cuir tic ( ) sa tábla chun a shainaithint cé acu de na hearraí ar earraí ionaid iad",
+      "classification": "answer-classification",
+      "reason": "All printed table entries require a correct classification; this is not a choice of entries."
+    },
+    {
+      "page": 5,
+      "text": "agus cé acu ar earraí comhlántacha iad maidir leis an iPhone 13 de.",
+      "classification": "answer-classification",
+      "reason": "All printed table entries require a correct classification; this is not a choice of entries."
+    },
+    {
+      "page": 5,
+      "text": "Freagair (a) nó (b)",
+      "classification": "finite-route",
+      "reason": "Q5 economy and employee alternatives, both represented."
+    },
+    {
+      "page": 5,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q5 economy and employee alternatives, both represented."
+    },
+    {
+      "page": 6,
+      "text": "an tséasúir) ó Shamhain 2020 go Samhain 2021. Agus na sonraí á n-úsáid agat freagair",
+      "classification": "not-a-task-selection",
+      "reason": "Instruction to answer the following chart tasks, not a selection between them."
+    },
+    {
+      "page": 7,
+      "text": "Freagair (a) nó (b)",
+      "classification": "finite-route",
+      "reason": "Q7 fixed-cost/classification and arithmetic alternatives; all four separately marked tasks represented."
+    },
+    {
+      "page": 7,
+      "text": "(ii) Cuir in iúl le tic ( ) cé acu de na costais sa tábla thíos ar costais sheasta iad agus",
+      "classification": "answer-classification",
+      "reason": "All printed table entries require a correct classification; this is not a choice of entries."
+    },
+    {
+      "page": 7,
+      "text": "cé acu de na costais ar costais athraitheacha iad.",
+      "classification": "answer-classification",
+      "reason": "All printed table entries require a correct classification; this is not a choice of entries."
+    },
+    {
+      "page": 7,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q7 fixed-cost/classification and arithmetic alternatives; all four separately marked tasks represented."
+    },
+    {
+      "page": 8,
+      "text": "(Is é atá i gceist le seachtracht ná na costais sheachtracha (nó na sochair sheachtracha) a éiríonn",
+      "classification": "not-a-task-selection",
+      "reason": "Parenthetical definition of an externality, not a task selection."
+    },
+    {
+      "page": 8,
+      "text": "do dhaoine eile nó don tsochaí mar thoradh ar tháirgeadh nó ar thomhaltas.)",
+      "classification": "not-a-task-selection",
+      "reason": "Parenthetical definition of an externality, not a task selection."
+    },
+    {
+      "page": 8,
+      "text": "(i) Luaigh sampla amháin de sheachtracht dhearfach maidir le vacsaíní.",
+      "classification": "not-a-task-selection",
+      "reason": "Q8(i) one open example of a positive externality; no finite list of alternatives."
+    },
+    {
+      "page": 8,
+      "text": "(ii) Cuir in iúl cé acu praghasleaisteach, praghas-neamhleaisteach nó aonadleaisteach atá",
+      "classification": "answer-classification",
+      "reason": "Q9(ii) asks for the one correct PED classification, not three alternative routes."
+    },
+    {
+      "page": 9,
+      "text": "Freagair (a) nó (b)",
+      "classification": "finite-route",
+      "reason": "Q10 interest comparison and debt-definition alternatives, both represented."
+    },
+    {
+      "page": 9,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q10 interest comparison and debt-definition alternatives, both represented."
+    },
+    {
+      "page": 10,
+      "text": "Freagair 3 cheist as 6 cheist",
+      "classification": "exam-question-selection",
+      "reason": "Choose exam questions; every printed question remains represented in the bank."
+    },
+    {
+      "page": 12,
+      "text": "(i) Mínigh an téarma monaplacht agus tabhair sampla amháin de mhonaplacht a bhfuil",
+      "classification": "not-a-task-selection",
+      "reason": "Q11(c)(i) asks for one open example of monopoly; no finite choice pool."
+    },
+    {
+      "page": 16,
+      "text": "(ii) Mínigh caiteachas reatha nó caiteachas caipitiúil an rialtais agus sampla ábhartha",
+      "classification": "finite-route",
+      "reason": "Q13(a)(ii) current or capital expenditure: separate definition+example routes, each9."
+    },
+    {
+      "page": 17,
+      "text": "(i) Luaigh céard dó a seasann gach ceann de na litreacha I, X agus M.",
+      "classification": "required-headings",
+      "reason": "Q13(b)(i) requires all three initials I, X and M; no selection."
+    },
+    {
+      "page": 28,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 29,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 30,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 31,
+      "text": "Leathanach Breise más rogha leat é a úsáid",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 32,
+      "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 32,
+      "text": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    },
+    {
+      "page": 32,
+      "text": "beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh",
+      "classification": "not-a-task-selection",
+      "reason": "Administrative instructions or copyright notice; no practice route."
+    }
+  ],
+  "equivalentTo": {
+    "lang": "ev",
+    "fileid": "LC034GLP000EV"
+  },
+  "reviewNote": "All 32 paper pages and all 36 scheme pages visually inspected. The paper has 65 practicable routes. Scheme pages33–35 concern the separate research project, not examination asks. Equivalent task IDs share progress and have their own Irish question-page attachment. Differences in POS and graph labels are explicitly retained in prompt/answer guidance."
+}

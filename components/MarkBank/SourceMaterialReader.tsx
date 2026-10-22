@@ -11,6 +11,7 @@
  * context cannot drift.
  */
 
+import { lockBodyScroll } from '../../utils/bodyScrollLock';
 import React, {
   useCallback,
   useEffect,
@@ -133,14 +134,23 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   useEffect(() => {
     if (!open) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const releaseScroll = lockBodyScroll();
+    // Advancing to the last page disables the focused Next button. Browsers
+    // can then move focus to the body, outside the dialog's key handler.
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      event.preventDefault();
+      event.stopPropagation();
+      close();
+    };
+    document.addEventListener('keydown', escape, true);
     requestAnimationFrame(() => closeRef.current?.focus());
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', escape, true);
+      releaseScroll();
       if (scrollFrame.current !== null) cancelAnimationFrame(scrollFrame.current);
     };
-  }, [open]);
+  }, [open, close]);
 
   const goTo = useCallback((next: number) => {
     const index = clamp(next, source.pages.length - 1);
@@ -215,12 +225,6 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [completeSwipe]);
 
   const trapDialogKeys = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === 'Escape') {
-      event.preventDefault();
-      event.stopPropagation();
-      close();
-      return;
-    }
     if (event.key !== 'Tab') return;
     const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>(
       'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
@@ -238,7 +242,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       event.preventDefault();
       first.focus();
     }
-  }, [close]);
+  }, []);
 
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">

@@ -1,0 +1,10 @@
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import SessionScreen from '../../../../../components/MarkBank/SessionScreen';
+import { CARDS as HIGHER } from '../../../../../components/MarkBank/cards/economics/higher';
+import { CARDS as ORDINARY } from '../../../../../components/MarkBank/cards/economics/ordinary';
+const CARDS = [...HIGHER, ...ORDINARY];
+import '../../../../../index.css';
+const id = new URLSearchParams(location.search).get('card') ?? 'econ-2022-hl-sa-q1-a';
+const selected = CARDS.find(card => card.id === id)!;
+createRoot(document.getElementById('root')!).render(<SessionScreen cards={[selected]} subjectLabel="Economics" onGrade={() => {}} onFinish={() => {}} onExit={() => {}} />);

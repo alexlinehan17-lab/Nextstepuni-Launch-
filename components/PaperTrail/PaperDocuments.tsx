@@ -28,7 +28,7 @@ export function PaperDocuments({ subject, entry, item, label, initial, onClose, 
     <DialogContent className={`pt-documents-dialog ${mode === 'pair' ? 'pt-documents-pair' : ''}`}>
       <DialogHeader>
         <DialogTitle className="pt-documents-title">{mode === 'files' ? 'The paper. The points.' : mode === 'pair' ? 'Paper & marking scheme' : fileName(mode)}</DialogTitle>
-        <DialogDescription>{label} · {entry.year} · {entry.level[0].toUpperCase() + entry.level.slice(1)} level · {entry.lang === 'ev' ? 'English' : 'Gaeilge'}</DialogDescription>
+        <DialogDescription>{label} · {entry.year}{item.sitting === 'deferred' ? ' · Deferred sitting' : item.sitting === 'sample' ? ' · Sample paper' : ''} · {entry.level[0].toUpperCase() + entry.level.slice(1)} level · {entry.lang === 'ev' ? 'English' : 'Gaeilge'}</DialogDescription>
       </DialogHeader>
       {mode === 'files' ? <>
         <div className="pt-document-attachments">

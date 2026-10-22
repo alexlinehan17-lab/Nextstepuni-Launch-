@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F2C725166C70DE7238C336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3585679FB28DBEC3591828AA /* Assets.xcassets */; };
+		0B1620CF43DF8EB1E56CFE73 /* NextStepBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */; };
+		143C778B08CB4C075DCBC8B3 /* StudyTimerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF514625628C86F7BA8BA77 /* StudyTimerWidgetBundle.swift */; };
 		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		358962C5E9CE9CDE597A144B /* StudyTimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BA937F1699505505CD202F /* StudyTimerLiveActivity.swift */; };
 		4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4D22ABE82AF431CB00220026 /* CapApp-SPM */; };
 		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
 		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
@@ -15,13 +19,47 @@
 		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
 		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+		6392FAEF4B70B163B106D565 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8B2948D88DD4808C8745E10C /* StudyLiveActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */; };
 		A4C43A592E6A3AF70041A9C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4C43A582E6A3AF70041A9C2 /* GoogleService-Info.plist */; };
+		BB01DB7AC89CDA198CFACE09 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE90F5FFD0EE318245977C44 /* SwiftUI.framework */; };
 		BF586B88C7D7D31B0C095C15 /* SignInWithApplePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C8CEFE33101D66FF89C62C /* SignInWithApplePlugin.swift */; };
+		C46C7029CC2E800B17139C36 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43020F5AA93E27D959BECE /* WidgetKit.framework */; };
+		E0BE1BE0964B907250D2F384 /* StudyTimerWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1DCC0BA823D7595AFE3C4DC /* StudyTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */; };
+		F98DBA8855367668C4631AEC /* StudyTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */; };
+		FC8EACE00B96C886C3748904 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D9A05B2F4D0910E9F703DD82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00848F6287F292C432174727;
+			remoteInfo = StudyTimerWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCADBDAB34F84463599A39C2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0BE1BE0964B907250D2F384 /* StudyTimerWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NextStepBridgeViewController.swift; sourceTree = "<group>"; };
 		05C8CEFE33101D66FF89C62C /* SignInWithApplePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApplePlugin.swift; sourceTree = "<group>"; };
 		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		3585679FB28DBEC3591828AA /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
 		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,8 +68,17 @@
 		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		63BA937F1699505505CD202F /* StudyTimerLiveActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerLiveActivity.swift; sourceTree = "<group>"; };
+		6B43020F5AA93E27D959BECE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerAttributes.swift; sourceTree = "<group>"; };
+		9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StudyTimerWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		A4006195A3E8322A9D940158 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C43A582E6A3AF70041A9C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE90F5FFD0EE318245977C44 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyLiveActivityPlugin.swift; sourceTree = "<group>"; };
+		FCF514625628C86F7BA8BA77 /* StudyTimerWidgetBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StudyTimerWidgetBundle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,18 +87,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */,
+				FC8EACE00B96C886C3748904 /* ActivityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A8F81D69FC527EADAFC70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C7029CC2E800B17139C36 /* WidgetKit.framework in Frameworks */,
+				BB01DB7AC89CDA198CFACE09 /* SwiftUI.framework in Frameworks */,
+				6392FAEF4B70B163B106D565 /* ActivityKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1167FF58259FF644DC5E28DD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				989F9607A360C4BB54A262F2 /* StudyTimerAttributes.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		1EAA355D6F3C7989F3C0AFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BACB2B98F15A79871BDA8DA0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2177778ADF065D6270B200DE /* StudyTimerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FCF514625628C86F7BA8BA77 /* StudyTimerWidgetBundle.swift */,
+				63BA937F1699505505CD202F /* StudyTimerLiveActivity.swift */,
+				3585679FB28DBEC3591828AA /* Assets.xcassets */,
+				A4006195A3E8322A9D940158 /* Info.plist */,
+			);
+			name = StudyTimerWidget;
+			path = StudyTimerWidget;
+			sourceTree = "<group>";
+		};
 		504EC2FB1FED79650016851F = {
 			isa = PBXGroup;
 			children = (
 				958DCC722DB07C7200EA8C5F /* debug.xcconfig */,
 				504EC3061FED79650016851F /* App */,
 				504EC3051FED79650016851F /* Products */,
+				1167FF58259FF644DC5E28DD /* Shared */,
+				2177778ADF065D6270B200DE /* StudyTimerWidget */,
+				1EAA355D6F3C7989F3C0AFE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* App.app */,
+				9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,13 +167,42 @@
 				A4C43A582E6A3AF70041A9C2 /* GoogleService-Info.plist */,
 				2FAD9762203C412B000D30F8 /* config.xml */,
 				50B271D01FEDC1A000F3C39B /* public */,
+				003D14C342EAF98CF9E1C80F /* NextStepBridgeViewController.swift */,
+				D23FE3F285D6EE853F7A312C /* StudyLiveActivityPlugin.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		BACB2B98F15A79871BDA8DA0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6B43020F5AA93E27D959BECE /* WidgetKit.framework */,
+				CE90F5FFD0EE318245977C44 /* SwiftUI.framework */,
+				A34D77A6AB20F659B1CDF888 /* ActivityKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00848F6287F292C432174727 /* StudyTimerWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4B2856FBD05D9BF2E123BB /* Build configuration list for PBXNativeTarget "StudyTimerWidget" */;
+			buildPhases = (
+				AF74BD84382BD3A29951D33D /* Sources */,
+				93A8F81D69FC527EADAFC70B /* Frameworks */,
+				A71B15C5CC6DF82AA0D2CA82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StudyTimerWidget;
+			productName = StudyTimerWidget;
+			productReference = 9FBE2648781FCDFD8BD6D8A8 /* StudyTimerWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		504EC3031FED79650016851F /* App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */;
@@ -90,10 +210,12 @@
 				504EC3001FED79650016851F /* Sources */,
 				504EC3011FED79650016851F /* Frameworks */,
 				504EC3021FED79650016851F /* Resources */,
+				FCADBDAB34F84463599A39C2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A3DF7D167402578FEF56093 /* PBXTargetDependency */,
 			);
 			name = App;
 			packageProductDependencies = (
@@ -112,6 +234,10 @@
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				TargetAttributes = {
+					00848F6287F292C432174727 = {
+						CreatedOnToolsVersion = 26.3;
+						ProvisioningStyle = Automatic;
+					};
 					504EC3031FED79650016851F = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 1100;
@@ -136,6 +262,7 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* App */,
+				00848F6287F292C432174727 /* StudyTimerWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +282,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A71B15C5CC6DF82AA0D2CA82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F2C725166C70DE7238C336 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -164,10 +299,32 @@
 			files = (
 				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
 				BF586B88C7D7D31B0C095C15 /* SignInWithApplePlugin.swift in Sources */,
+				0B1620CF43DF8EB1E56CFE73 /* NextStepBridgeViewController.swift in Sources */,
+				8B2948D88DD4808C8745E10C /* StudyLiveActivityPlugin.swift in Sources */,
+				E1DCC0BA823D7595AFE3C4DC /* StudyTimerAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF74BD84382BD3A29951D33D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143C778B08CB4C075DCBC8B3 /* StudyTimerWidgetBundle.swift in Sources */,
+				358962C5E9CE9CDE597A144B /* StudyTimerLiveActivity.swift in Sources */,
+				F98DBA8855367668C4631AEC /* StudyTimerAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A3DF7D167402578FEF56093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StudyTimerWidget;
+			target = 00848F6287F292C432174727 /* StudyTimerWidget */;
+			targetProxy = D9A05B2F4D0910E9F703DD82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		504EC30B1FED79650016851F /* Main.storyboard */ = {
@@ -189,6 +346,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		13C0DB833C2275FCACFF7557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StudyTimerWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app.StudyTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		504EC3141FED79650016851F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
@@ -305,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NextStepUni;
@@ -315,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
 				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = NextStepUni;
@@ -341,12 +524,39 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.6;
+				MARKETING_VERSION = 1.0.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7926942900D797A977471408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = LHTS3Y4JLJ;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StudyTimerWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstepuni.app.StudyTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -367,6 +577,15 @@
 			buildConfigurations = (
 				504EC3171FED79650016851F /* Debug */,
 				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4B2856FBD05D9BF2E123BB /* Build configuration list for PBXNativeTarget "StudyTimerWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7926942900D797A977471408 /* Release */,
+				13C0DB833C2275FCACFF7557 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
