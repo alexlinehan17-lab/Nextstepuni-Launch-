@@ -1,6 +1,6 @@
 # StudyClix official-question parity ledger
 
-Generated: 2026-10-22T07:49:38.439Z
+Generated: 2026-10-22T11:22:16.172Z
 
 This is the question-level completion ledger. Mock questions are excluded. A
 topic is complete only when every factual StudyClix State-exam heading points
@@ -10,7 +10,7 @@ paper/marking-scheme boundary has been visually checked.
 | Subject | Topics | Official associations | Matched | Source blocked | Unreviewed | Topics with gaps |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | accounting | 43 | 442 | 326 | 116 | 0 | 43 |
-| agricultural-science | 35 | 1,027 | 794 | 233 | 0 | 28 |
+| agricultural-science | 37 | 1,027 | 794 | 233 | 0 | 28 |
 | applied-mathematics | 33 | 369 | 271 | 92 | 0 | 22 |
 | art | 32 | 690 | 553 | 98 | 0 | 27 |
 | biology | 122 | 2,419 | 1,561 | 858 | 0 | 110 |
@@ -42,7 +42,7 @@ paper/marking-scheme boundary has been visually checked.
 | spanish | 33 | 471 | 397 | 74 | 0 | 27 |
 | technology | 37 | 1,190 | 1,118 | 72 | 0 | 26 |
 
-Total: **1,609 topics**, **37,105 official topic associations**, 
+Total: **1,611 topics**, **37,105 official topic associations**, 
 **26,906 matched**, **9,856 source blocked**, and **0 awaiting exact crosswalk review**.
 
 The machine-readable companion contains every non-matched heading under its
