@@ -65,6 +65,8 @@ def inventory():
     records = []
     for paper in sorted((ROOT / 'paper-trail-corpus/exampapers').glob('*/LC032*.pdf')):
         year, fileid = int(paper.parent.name), paper.name
+        if year < 2010:  # reviewed window: the shared corpus also holds the 1995-2009 archive (#256)
+            continue
         scheme = ROOT / 'paper-trail-corpus/markingschemes' / str(year) / fileid
         sidecar = ROOT / 'scripts/paper-trail/answers' / str(year) / (fileid + '.json')
         doc = fitz.open(paper)
