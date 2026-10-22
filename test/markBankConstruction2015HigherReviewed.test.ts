@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { describe, expect, it } from 'vitest';
+import { hasConstructionSources } from './fixtures/constructionSources';
 import { loadCards } from '../components/MarkBank/deck';
 import { libraryTopicIds } from '../components/MarkBank/libraryGroups';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
@@ -16,7 +17,7 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 };
 
 describe('Construction Studies 2015 Higher source-reviewed Q1–Q10 and alternative Q10', () => {
-  it('reconciles lifted wording, tariffs, one card per printed choice, figures, selection directives and corrections', () => {
+  it.skipIf(!hasConstructionSources(2015, 'higher'))('reconciles lifted wording, tariffs, one card per printed choice, figures, selection directives and corrections', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2015_higher.py'], { encoding: 'utf8' }));
     expect(result).toEqual({tasks: 48, addedTasks: 11, correctedTasks: 37, withdrawnTasks: 65, leafTasks: 33, wholeQuestions: 11,
       anyNChoiceCards: 5, sourceFigures: 27, paperComplete: true});

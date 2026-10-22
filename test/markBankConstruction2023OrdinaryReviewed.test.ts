@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { describe, expect, it } from 'vitest';
+import { hasConstructionSources } from './fixtures/constructionSources';
 import { loadCards } from '../components/MarkBank/deck';
 import { libraryTopicIds } from '../components/MarkBank/libraryGroups';
 import { resolveCurriculumSpecification, findCanonicalTopic } from '../curriculumRegistry';
@@ -16,7 +17,7 @@ const review = JSON.parse(fs.readFileSync('scripts/markbank/authored/constructio
 };
 
 describe('Construction Studies 2023 Ordinary source-reviewed Q1–Q9', () => {
-  it('reconciles original wording, tariffs, every finite route, figures, selection directives and corrections', () => {
+  it.skipIf(!hasConstructionSources(2023, 'ordinary'))('reconciles original wording, tariffs, every finite route, figures, selection directives and corrections', () => {
     const result = JSON.parse(execFileSync('python3', ['scripts/markbank/authoring/construction_2023_ordinary.py'], { encoding: 'utf8' }));
     expect(result).toEqual({tasks: 30, addedTasks: 11, correctedTasks: 19, consolidatedLegacy: 8, leafTasks: 22, wholeQuestions: 9,
       q8AnyFiveOfNine: true, sourceFigures: 30, paperComplete: true});

@@ -12,6 +12,7 @@ import { topicsForPaper, browseTopicIdsForQuestion } from '../components/PaperTr
 import type { SecCard, SecQuestionCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { CONSTRUCTION_REVIEWED_PAPERS } from './fixtures/constructionReviewedPapers';
+import { hasConstructionSources } from './fixtures/constructionSources';
 
 const FILEID = { higher: 'LC029ALP000EV.pdf', ordinary: 'LC029GLP000EV.pdf' } as const;
 
@@ -31,7 +32,7 @@ for (const paper of CONSTRUCTION_REVIEWED_PAPERS) {
   };
 
   describe(`Construction Studies ${name} source-reviewed theory`, () => {
-    it('reconciles original wording, tariffs, routes, figures, selection directives and corrections', () => {
+    it.skipIf(!hasConstructionSources(paper.year, paper.level))('reconciles original wording, tariffs, routes, figures, selection directives and corrections', () => {
       const result = JSON.parse(execFileSync('python3', [paper.validator], { encoding: 'utf8' }));
       expect(result).toEqual(paper.result);
     });
