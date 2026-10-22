@@ -201,5 +201,80 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "econ-2025-ol-q16-b-i-ind": "econ-2025-ol-q16-b-i-ag",
   "econ-2024-ol-sa-q1-ii": "econ-2024-ol-sa-q1-i",
   "econ-2024-ol-sa-q8-ii": "econ-2024-ol-sa-q8-i",
-  "econ-2024-ol-q16-b-ii-dis": "econ-2024-ol-q16-b-ii-adv"
+  "econ-2024-ol-q16-b-ii-dis": "econ-2024-ol-q16-b-ii-adv",
+  /* 2026-10-12. Construction Studies: a printed choose-N-of-M is one card, not a card per item
+   * (coordinator rule "choice is not a route"). These pre-audit per-item cards are consolidated
+   * into the surviving card for the same printed part; progress goes to it. */
+  "cons-2025-hl-q2-a-health-and-safety-officer": "cons-2025-hl-q2-a-safety-training",
+  "cons-2025-hl-q2-a-risk-assessment-audit": "cons-2025-hl-q2-a-safety-training",
+  "cons-2025-hl-q10-a-foundation-design": "cons-2025-hl-q10-a-building-form",
+  /* 2026-10-12. Construction Studies 2024 Ordinary Q8 is one any-five card (choice is not a route); the other eight
+   * pre-audit per-term cards are consolidated into it and their progress goes to it. */
+  "cons-2024-ol-q8-None-gulley-trap": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-smart-lighting": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-halving-joint": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-cordless-drill": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-cavity-closer": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-faceplate-turning": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-plywood": "cons-2024-ol-q8-None-site-planning-notice",
+  "cons-2024-ol-q8-None-heat-pump": "cons-2024-ol-q8-None-site-planning-notice",
+  /* 2026-10-12. Construction Studies 2023 Ordinary Q8 is one any-five card (choice is not a route); the other eight
+   * pre-audit per-term cards are consolidated into it and their progress goes to it. */
+  "cons-2023-ol-q8-None-smart-radiator-valve": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-ridge-tile": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-triple-glazing": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-balusters": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-cedar-cladding": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-bridle-joint": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-wood-pellet-stove": "cons-2023-ol-q8-None-concrete-mixer",
+  "cons-2023-ol-q8-None-floor-screed": "cons-2023-ol-q8-None-concrete-mixer",
+  /* 2026-10-12. Construction Studies 2022 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2022-ol-q8-None-strip-foundation and their progress goes to it. */
+  "cons-2022-ol-q8-None-fascia-board": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-airtight-tape": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-wind-turbine": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-septic-tank": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-dovetail-joint": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-wall-tie": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-cordless-jigsaw": "cons-2022-ol-q8-None-strip-foundation",
+  "cons-2022-ol-q8-None-underfloor-heating": "cons-2022-ol-q8-None-strip-foundation",
+  /* 2026-10-12. Construction Studies 2021 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2021-ol-q8-None-joist-bridging and their progress goes to it. */
+  "cons-2021-ol-q8-None-steel-reinforcement": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-biscuit-joint": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-working-drawing": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-heat-pump": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-room-thermostat": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-roof-light": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-ridge-board": "cons-2021-ol-q8-None-joist-bridging",
+  "cons-2021-ol-q8-None-building-energy-rating": "cons-2021-ol-q8-None-joist-bridging",
+  /* 2026-10-12. Construction Studies 2020 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2020-ol-q8-None-stud-partition and their progress goes to it. */
+  "cons-2020-ol-q8-None-domino-joint": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-slump-test": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-dynamic-glass": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-pyrite": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-pile-foundation": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-trimmer": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-butt-hinge": "cons-2020-ol-q8-None-stud-partition",
+  "cons-2020-ol-q8-None-solar-panel": "cons-2020-ol-q8-None-stud-partition",
+  /* 2026-10-14. Construction Studies 2017 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2017-ol-q8-None-hand-rail and their progress goes to it. */
+  "cons-2017-ol-q8-None-box-dovetail-joint": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-purlin": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-damp-proof-course": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-ball-valve": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-energy-rating": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-wind-turbine": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-joist-hanger": "cons-2017-ol-q8-None-hand-rail",
+  "cons-2017-ol-q8-None-service-cavity": "cons-2017-ol-q8-None-hand-rail",
+  /* 2026-10-14. Construction Studies 2016 Ordinary: each printed choice is one card (choice is not a route); the
+   * pre-audit per-item cards are consolidated into cons-2016-ol-q8-None-lever-valve and their progress goes to it. */
+  "cons-2016-ol-q8-None-mortice-and-tenon-joint": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-thermal-bridge": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-dual-flush-toilet": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-smart-meter": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-solar-gain": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-low-e-glazing": "cons-2016-ol-q8-None-lever-valve",
+  "cons-2016-ol-q8-None-access-ramp": "cons-2016-ol-q8-None-lever-valve",
 };

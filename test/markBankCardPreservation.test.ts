@@ -1,3 +1,9 @@
+import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
+import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
+import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
+import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
+import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
+import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -958,6 +964,22 @@ const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWit
 const agriAdditionIds = new Set<string>(agriculturalReview.addedCardIds);
 const agriWithdrawn: Record<string, string> = (agriculturalReview as { withdrawnCardIds?: Record<string, string> }).withdrawnCardIds ?? {};
 const agriAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('agsci-'));
+/* Construction Studies keeps its 505 pre-audit IDs frozen (255 Higher + 250
+ * Ordinary, the identity hashes above). Source-reviewed tasks (2010-2026
+ * theory papers, scripts/markbank/authoring/construction_*.py) are explicit
+ * additions on top; pre-audit per-item cards consolidated into one printed
+ * choice ("choice is not a route", 2026-10-12) keep their identity through an
+ * explicit progress alias, so the frozen form is the live non-additions plus
+ * the Construction alias keys. Never rebaseline the frozen count or hash. */
+const constructionAdditionIds = new Set([
+  ...CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS,
+  ...CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, ...CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS,
+  ...CONSTRUCTION_2025_HIGHER_ADDED_IDS, ...CONSTRUCTION_2025_ORDINARY_ADDED_IDS,
+  ...CONSTRUCTION_2024_HIGHER_ADDED_IDS, ...CONSTRUCTION_2024_ORDINARY_ADDED_IDS,
+  ...CONSTRUCTION_2023_HIGHER_ADDED_IDS, ...CONSTRUCTION_2023_ORDINARY_ADDED_IDS,
+  ...CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, ...CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS,
+]);
+const constructionAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cons-'));
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
@@ -973,6 +995,13 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [...ids.filter(id => !agriAdditionIds.has(id)), ...agriAliasIds.filter(id => id.includes(level))];
   }
+  if (name.startsWith('construction-studies:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [
+      ...ids.filter(id => !constructionAdditionIds.has(id)),
+      ...constructionAliasIds.filter(id => id.includes(level)),
+    ];
+  }
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   if (name.startsWith('art:')) {
     return [...ids.filter(id => !isArtAdded(id)), ...artAliasIds.filter(id => id.includes(level))];
@@ -985,6 +1014,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
+    : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
     : cards.length;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1070,8 +1100,10 @@ describe('Mark Bank card preservation', () => {
     // source-reviewed tasks and withdraw 9 per-item cards onto aliases: + 1,595.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
+    // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
+    // live non-additions plus its consolidated per-item cards, each an alias key.
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('economics:') || name.startsWith('agricultural-science:') ? frozenIds(name, cards).length - cards.length : 0;
+      name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:') ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
@@ -1079,7 +1111,8 @@ describe('Mark Bank card preservation', () => {
     ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
-        + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet);
+        + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
+        + constructionAdditionIds.size - constructionAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1355,6 +1388,17 @@ describe('Mark Bank card preservation', () => {
       ['agsci-2021-ol-q4c', 4], ['agsci-2021-ol-q8b-iii', 6]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
   });
 
+  it('adds exactly the reviewed Construction tasks to the frozen pre-audit set', () => {
+    // Frozen pre-audit Construction set: 255 Higher + 250 Ordinary, counted and
+    // hashed above. Every source-reviewed task is an explicit addition on top.
+    const live = [...CONS_HIGHER, ...CONS_ORDINARY];
+    const liveIds = new Set(live.map(card => card.id));
+    for (const id of constructionAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);
+    expect(live.filter(card => !constructionAdditionIds.has(card.id))).toHaveLength(255 + 250 - constructionAliasIds.length);
+    expect(live).toHaveLength(255 + 250 - constructionAliasIds.length + constructionAdditionIds.size);
+    for (const id of constructionAliasIds) expect(liveIds.has(id), `${id} should be withdrawn behind its alias`).toBe(false);
+  });
+
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
     /* 54 earlier aliases + 68 Art per-option cards (2026-10-12) + 36 Economics consolidations from the 2021-2025
@@ -1398,9 +1442,12 @@ describe('Mark Bank card preservation', () => {
    *   econ-2024-ol-q16-b-ii-dis -> q16-b-ii-adv
      */
     // ...plus 9 Agricultural Science per-item cards consolidated into one
-    // printed task (agsci- keys, the review ledger's withdrawnCardIds).
+    // printed task (agsci- keys, the review ledger's withdrawnCardIds), and the
+    // Construction Studies per-item cards consolidated into one printed choice
+    // (cons- keys, counted from the alias file itself).
     expect(agriAliasIds).toHaveLength(9);
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length);
+    expect(constructionAliasIds).toHaveLength(58);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

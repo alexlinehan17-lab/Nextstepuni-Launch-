@@ -1006,6 +1006,9 @@ def census_merged(subject, year, level, component=None):
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    if subject == 'construction-studies':
+        from construction_census_repairs import apply_construction_census_repairs
+        parts, texts = apply_construction_census_repairs(year, level, parts, texts)
     return parts, texts, P.files
 
 

@@ -1,0 +1,2512 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Draft only. Source/figure/canonical checks required before integration; first Q1–Q2 batch is still validating.",
+  "tasks": [
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-A-advantages",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-a-advantages",
+        "questionRef": "2015 HL Q3(a) — option A, advantages",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the attached extension at A.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "conserves space in the rear garden of the house",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-A-disadvantages",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-a-disadvantages",
+        "questionRef": "2015 HL Q3(a) — option A, disadvantages",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two disadvantages of the attached extension at A.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "can reduce the natural lighting and ventilation of the kitchen/dining room",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-A",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-a",
+        "questionRef": "2015 HL Q3(a) — option A",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the attached extension at A.\n\nDiscuss in detail two disadvantages of the attached extension at A.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "a-A-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "conserves space in the rear garden of the house",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-A-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "can reduce the natural lighting and ventilation of the kitchen/dining room",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "taskGroups": [
+          {
+            "label": "a-A-advantages",
+            "sourceCardId": "cons-2015-hl-q3-a-A-advantages",
+            "marks": 6,
+            "rowIds": [
+              "a-A-advantages-response"
+            ]
+          },
+          {
+            "label": "a-A-disadvantages",
+            "sourceCardId": "cons-2015-hl-q3-a-A-disadvantages",
+            "marks": 6,
+            "rowIds": [
+              "a-A-disadvantages-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-B-advantages",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-b-advantages",
+        "questionRef": "2015 HL Q3(a) — option B, advantages",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the detached garden room at B.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "minimises disruption during construction",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-B-disadvantages",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-b-disadvantages",
+        "questionRef": "2015 HL Q3(a) — option B, disadvantages",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two disadvantages of the detached garden room at B.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "larger area of external envelope",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a-B",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a-b",
+        "questionRef": "2015 HL Q3(a) — option B",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the detached garden room at B.\n\nDiscuss in detail two disadvantages of the detached garden room at B.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "a-B-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "minimises disruption during construction",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-B-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "larger area of external envelope",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "taskGroups": [
+          {
+            "label": "a-B-advantages",
+            "sourceCardId": "cons-2015-hl-q3-a-B-advantages",
+            "marks": 6,
+            "rowIds": [
+              "a-B-advantages-response"
+            ]
+          },
+          {
+            "label": "a-B-disadvantages",
+            "sourceCardId": "cons-2015-hl-q3-a-B-disadvantages",
+            "marks": 6,
+            "rowIds": [
+              "a-B-disadvantages-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-a",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-a",
+        "questionRef": "2015 HL Q3(a) — both options",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the attached extension at A.\n\nDiscuss in detail two disadvantages of the attached extension at A.\n\nDiscuss in detail two advantages of the detached garden room at B.\n\nDiscuss in detail two disadvantages of the detached garden room at B.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 24,
+        "rows": [
+          {
+            "id": "a-A-a-A-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "conserves space in the rear garden of the house",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-A-a-A-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "can reduce the natural lighting and ventilation of the kitchen/dining room",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-B-a-B-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "minimises disruption during construction",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-B-a-B-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "larger area of external envelope",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "taskGroups": [
+          {
+            "label": "a-A",
+            "sourceCardId": "cons-2015-hl-q3-a-A",
+            "marks": 12,
+            "rowIds": [
+              "a-A-a-A-advantages-response",
+              "a-A-a-A-disadvantages-response"
+            ]
+          },
+          {
+            "label": "a-B",
+            "sourceCardId": "cons-2015-hl-q3-a-B",
+            "marks": 12,
+            "rowIds": [
+              "a-B-a-B-advantages-response",
+              "a-B-a-B-disadvantages-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-A-external-design",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-a-external-design",
+        "questionRef": "2015 HL Q3(b) — option A, external design",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Select option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-attached-exterior"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-attached-exterior"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-A-internal-layout",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-a-internal-layout",
+        "questionRef": "2015 HL Q3(b) — option A, internal layout",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "For option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-attached-layout"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-attached-layout"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-A-garden-link",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-b-a-garden-link",
+        "questionRef": "2015 HL Q3(b) — option A, garden connection",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "For option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-garden-link"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-garden-link"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-A",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-a",
+        "questionRef": "2015 HL Q3(b) — option A",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Select option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.\n\nFor option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.\n\nFor option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "b-A-external-design-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-A-internal-layout-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-A-garden-link-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-scheme",
+        "taskGroups": [
+          {
+            "label": "b-A-external-design",
+            "sourceCardId": "cons-2015-hl-q3-b-A-external-design",
+            "marks": 12,
+            "rowIds": [
+              "b-A-external-design-response"
+            ]
+          },
+          {
+            "label": "b-A-internal-layout",
+            "sourceCardId": "cons-2015-hl-q3-b-A-internal-layout",
+            "marks": 12,
+            "rowIds": [
+              "b-A-internal-layout-response"
+            ]
+          },
+          {
+            "label": "b-A-garden-link",
+            "sourceCardId": "cons-2015-hl-q3-b-A-garden-link",
+            "marks": 6,
+            "rowIds": [
+              "b-A-garden-link-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-scheme"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-B-external-design",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-b-external-design",
+        "questionRef": "2015 HL Q3(b) — option B, external design",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Select option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-detached-exterior"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-detached-exterior"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-B-internal-layout",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-b-internal-layout",
+        "questionRef": "2015 HL Q3(b) — option B, internal layout",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "For option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-detached-layout"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-detached-layout"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-B-garden-link",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-b-b-garden-link",
+        "questionRef": "2015 HL Q3(b) — option B, garden connection",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "For option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-garden-link"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-garden-link"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-b-B",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-3",
+        "conceptId": "extension-garden-room-b-b",
+        "questionRef": "2015 HL Q3(b) — option B",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Select option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.\n\nFor option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.\n\nFor option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "b-B-external-design-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-B-internal-layout-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-B-garden-link-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-scheme",
+        "taskGroups": [
+          {
+            "label": "b-B-external-design",
+            "sourceCardId": "cons-2015-hl-q3-b-B-external-design",
+            "marks": 12,
+            "rowIds": [
+              "b-B-external-design-response"
+            ]
+          },
+          {
+            "label": "b-B-internal-layout",
+            "sourceCardId": "cons-2015-hl-q3-b-B-internal-layout",
+            "marks": 12,
+            "rowIds": [
+              "b-B-internal-layout-response"
+            ]
+          },
+          {
+            "label": "b-B-garden-link",
+            "sourceCardId": "cons-2015-hl-q3-b-B-garden-link",
+            "marks": 6,
+            "rowIds": [
+              "b-B-garden-link-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-scheme"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-c",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-c",
+        "questionRef": "2015 HL Q3(c)",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss two advantages of designing a space that links with the rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 6,
+        "rows": [
+          {
+            "id": "response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "increases use made of the valuable space outside",
+            "contextNote": "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-complete-A",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-complete-a",
+        "questionRef": "2015 HL Q3 — complete, option A",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the attached extension at A.\n\nDiscuss in detail two disadvantages of the attached extension at A.\n\nDiscuss in detail two advantages of the detached garden room at B.\n\nDiscuss in detail two disadvantages of the detached garden room at B.\n\nSelect option A: an attached single-storey extension at A. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.\n\nFor option A, an attached single-storey extension at A, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.\n\nFor option A, an attached single-storey extension at A, show in your design how the proposed space links with the surrounding rear garden.\n\nDiscuss two advantages of designing a space that links with the rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-a-A-a-A-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "conserves space in the rear garden of the house",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-A-a-A-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "can reduce the natural lighting and ventilation of the kitchen/dining room",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-B-a-B-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "minimises disruption during construction",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-B-a-B-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "larger area of external envelope",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "b-A-b-A-external-design-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-A-b-A-internal-layout-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-A-b-A-garden-link-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Join the extension to the south-facing rear wall M–M at A and keep the specified 5.0 m × 3.0 m internal space. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          },
+          {
+            "id": "c-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "increases use made of the valuable space outside",
+            "contextNote": "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-scheme",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q3-a",
+            "marks": 24,
+            "rowIds": [
+              "a-a-A-a-A-advantages-response",
+              "a-a-A-a-A-disadvantages-response",
+              "a-a-B-a-B-advantages-response",
+              "a-a-B-a-B-disadvantages-response"
+            ]
+          },
+          {
+            "label": "b-A",
+            "sourceCardId": "cons-2015-hl-q3-b-A",
+            "marks": 30,
+            "rowIds": [
+              "b-A-b-A-external-design-response",
+              "b-A-b-A-internal-layout-response",
+              "b-A-b-A-garden-link-response"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q3-c",
+            "marks": 6,
+            "rowIds": [
+              "c-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-scheme"
+      ]
+    },
+    {
+      "questionNumber": "3",
+      "card": {
+        "id": "cons-2015-hl-q3-complete-B",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-1-2",
+        "conceptId": "extension-garden-room-complete-b",
+        "questionRef": "2015 HL Q3 — complete, option B",
+        "stem": "Use the original ground-floor and rear-garden plan of the two-storey semi-detached house. Its external walls are 400 mm concrete block with a full-fill insulated cavity, and rear wall M–M faces south. The owners need an additional study and occasional family space with internal dimensions 5.0 m × 3.0 m. Option A is a single-storey extension attached to the rear of the house at A; option B is a detached, free-standing room in the garden at B. Part (a) compares BOTH options. Part (b) selects ONE option for the external design, internal layout and link to the surrounding rear garden. Part (c) discusses two advantages of linking the room and garden.",
+        "questionText": "Discuss in detail two advantages of the attached extension at A.\n\nDiscuss in detail two disadvantages of the attached extension at A.\n\nDiscuss in detail two advantages of the detached garden room at B.\n\nDiscuss in detail two disadvantages of the detached garden room at B.\n\nSelect option B: a detached, free-standing garden room at B. Using notes and freehand sketches, show a proposed external design for the attractive study/family space.\n\nFor option B, a detached, free-standing garden room at B, use notes and freehand sketches to show the proposed internal layout of the 5.0 m × 3.0 m study/family space.\n\nFor option B, a detached, free-standing garden room at B, show in your design how the proposed space links with the surrounding rear garden.\n\nDiscuss two advantages of designing a space that links with the rear garden.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-a-A-a-A-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "conserves space in the rear garden of the house",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include conserving rear-garden space; reducing external-wall area and associated insulation costs; easier connection to existing services; flexible division of the combined living space; and closer family/social connection. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-A-a-A-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "can reduce the natural lighting and ventilation of the kitchen/dining room",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include reducing existing kitchen/dining light or ventilation; disturbing the original layout or views; losing quieter separate rooms; demanding weatherproof and insulated junctions; and structural support needed for a larger opening in the existing external wall. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-B-a-B-advantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "minimises disruption during construction",
+            "contextNote": "Award two distinct, relevant advantages at 3 marks each (6 total). Source examples include less disruption; retaining light and views from existing rooms; a separate quiet/private study; more freedom in the new room design; and a direct relationship with the garden. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-a-B-a-B-disadvantages-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "larger area of external envelope",
+            "contextNote": "Award two distinct, relevant disadvantages at 3 marks each (6 total). Source examples include a larger exposed envelope and associated insulation/heating costs; moving outdoors to reach the room; loss of garden space to paths; separating family living space; and extra access or service-connection costs. The scheme heading 3(b)(ii) on PDF page 10 is a numbering error: these are the disadvantages for part(a), option B. Discuss each point in relation to this house and location; do not count a repeated point twice. Other relevant, well-argued points remain acceptable. This narrowed practice task retains its own 6 marks; the full comparison requires all four pairs.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "b-B-b-B-external-design-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "Elevation",
+            "contextNote": "External-design notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source suggests a low roof/elevation where appropriate to avoid overshadowing the enclosed garden, south-facing windows for daylight, and an attractive design appropriate to the house. Explain the proposed form and openings and illustrate them in an external sketch. Other thoughtful modern or traditional designs are accepted: a flat roof, a particular material or every feature in the sample is not compulsory. These marks do not include the separately marked internal layout or garden connection.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-B-b-B-internal-layout-response",
+            "kind": "criterion",
+            "marks": 12,
+            "verbatim": "the space is divided to provide some privacy and a sense of seclusion",
+            "contextNote": "Internal-layout notes 6 and sketches 6 (12 total). Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. The source describes a small desk/office area for individual work and a larger communal area, with separation giving privacy; a convertible couch is an optional example, not a required bedroom. Show a workable internal arrangement for the stated study and occasional family uses, with access and circulation related to the original plan. The source plan is illustrative: do not require its exact furniture arrangement or copy it at the expense of the printed dimensions. External form and garden-link marks are awarded in their own tasks.",
+            "permittedMarks": [
+              0,
+              6,
+              12
+            ]
+          },
+          {
+            "id": "b-B-b-B-garden-link-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "Link to rear garden",
+            "contextNote": "Award the published shared 6-mark criterion for showing how the proposed space links to the rear garden. Place the separate room at B in the rear garden and keep the specified 5.0 m × 3.0 m internal space; do not move it into the attached-extension position A. Source examples include double, folding or sliding doors, glazing for garden views, and a patio giving outdoor seating and access. Show a coherent indoor/outdoor relationship appropriate to the selected location; the example doors/windows are alternatives and are not all mandatory. A covered connection to the house can be relevant to option B, but it does not replace the requested link to the garden. No separate notes/sketch split is printed for this 6-mark criterion.",
+            "permittedMarks": [
+              0,
+              6
+            ]
+          },
+          {
+            "id": "c-response",
+            "kind": "criterion",
+            "marks": 6,
+            "verbatim": "increases use made of the valuable space outside",
+            "contextNote": "Award two distinct advantages at 3 marks each (6 total). The source examples include closer contact with nature, awareness of seasonal change, enjoyment of the senses, educational opportunities for children, access to natural light, more use of outside space, and a greater sense of spaciousness. Discuss the relationship between the new room and garden. Merely naming a door type describes a design feature, not its advantage. The menu is open; other relevant, well-argued benefits are accepted.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q3-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 3",
+          "title": "Attached extension or detached garden room",
+          "pages": [
+            1,
+            2
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Original positions A/B, dimensions and south-facing rear wall retained. Both options are compared, then one design option is selected. Scheme drawings are examples, not mandatory designs."
+        },
+        "figureKey": "construction-studies-2015-HL-q3-scheme",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q3-a",
+            "marks": 24,
+            "rowIds": [
+              "a-a-A-a-A-advantages-response",
+              "a-a-A-a-A-disadvantages-response",
+              "a-a-B-a-B-advantages-response",
+              "a-a-B-a-B-disadvantages-response"
+            ]
+          },
+          {
+            "label": "b-B",
+            "sourceCardId": "cons-2015-hl-q3-b-B",
+            "marks": 30,
+            "rowIds": [
+              "b-B-b-B-external-design-response",
+              "b-B-b-B-internal-layout-response",
+              "b-B-b-B-garden-link-response"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q3-c",
+            "marks": 6,
+            "rowIds": [
+              "c-response"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "6dd3750e53d2b20908a5f878e6af0d93fb891f1038ed1e394ac33547093af684"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 9,
+          "textSha256": "495a080da08c3eb70b09e3aff23f26807a1dc24672d3cbb7d9f1684939059a47"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 10,
+          "textSha256": "d07a2fc7a647c48b9ce17b212302d07bb970ac2712ee88642d60fecc182e8f63"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 34,
+          "textSha256": "11bdb6c846cb135d83e743c565e08b14e725d66ac5f9437086fdfaecc53aa734"
+        }
+      ],
+      "boundaryReview": "Q3(a): four required pairs of advantages/disadvantages at 6 each, total 24. Q3(b): ONE design option, external notes/sketch 12, internal notes/sketch 12, garden link 6, total 30. Q3(c): two advantages at 3 each, total 6. Complete option A or B is 60.",
+      "selectionReview": "The introduction lists A or B, but (a)explicitly requires both. Part(b)is the fixed choose-one pool with two routes. Open advantages, design features and garden benefits are not additional finite elections.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q3-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q3-scheme"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q3-a-A-advantages",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-A-disadvantages",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-A",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-B-advantages",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-B-disadvantages",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a-B",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-A-external-design",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-A-internal-layout",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-A-garden-link",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-A",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-B-external-design",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-B-internal-layout",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-B-garden-link",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-b-B",
+      "markBankTopicId": "cons-1-3",
+      "canonicalTopicIds": [
+        "cons-1-3",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-complete-A",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q3-complete-B",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Domestic-extension location and its effect on the built environment are the subject content. The response uses architectural sketches, but this is not the Atlas category specifically labelled Question 1: Drawing Questions. The reviewed Planning, Sustainability & Environment topic covers the original Q3; canonical built-environment/site-planning nodes are retained without adding solar-calculation or new-course outcomes.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q3-original",
+      "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 2,
+      "rect": [
+        58,
+        444,
+        565,
+        780
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "9547895fa83f12960a367869f4581cadb7b0eddc45ea6e26da2ddda1b1813c3a",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-attached-exterior",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 9,
+      "rect": [
+        403,
+        64,
+        568,
+        207
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "9c2087abf75e681144e820a1d3645a46ce3a3cd655cfe6e4b2d595d68271bd4b",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-attached-layout",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 10,
+      "rect": [
+        427,
+        607,
+        566,
+        792
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "ff0f4c5c80c2b80942efaa8529da112c97d33b3b1b5e618a1cecda9717e7062e",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-detached-exterior",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 9,
+      "rect": [
+        388,
+        473,
+        572,
+        589
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "5839b17024ce6ff68dd96a7d49e13189f3d8df27dec9a323edbb7fb231d5253d",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-detached-layout",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 10,
+      "rect": [
+        440,
+        220,
+        543,
+        368
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "aab2cae616a0d6529085ca86d1a684e5de6ea5e217683bb663bd40782d65ad97",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-garden-link",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 10,
+      "rect": [
+        366,
+        416,
+        569,
+        550
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "260136a5ad85bcd998ed87648e8b79637c6803f7f7c8fc4929bf00733579ae65",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q3-scheme",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 10,
+      "rect": [
+        54,
+        52,
+        577,
+        793
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "54e6ceb31f8a656098d19378137a6eb3e590a7443974dea8a7d735258e470eb0",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q3-a-A-advantages",
+    "cons-2015-hl-q3-a-A-disadvantages",
+    "cons-2015-hl-q3-a-A",
+    "cons-2015-hl-q3-a-B-advantages",
+    "cons-2015-hl-q3-a-B-disadvantages",
+    "cons-2015-hl-q3-a-B",
+    "cons-2015-hl-q3-a",
+    "cons-2015-hl-q3-b-A-external-design",
+    "cons-2015-hl-q3-b-A-internal-layout",
+    "cons-2015-hl-q3-b-A-garden-link",
+    "cons-2015-hl-q3-b-A",
+    "cons-2015-hl-q3-b-B-external-design",
+    "cons-2015-hl-q3-b-B-internal-layout",
+    "cons-2015-hl-q3-b-B-garden-link",
+    "cons-2015-hl-q3-b-B",
+    "cons-2015-hl-q3-c",
+    "cons-2015-hl-q3-complete-A",
+    "cons-2015-hl-q3-complete-B"
+  ],
+  "routeLedger": {
+    "aMustInclude": [
+      "A",
+      "B"
+    ],
+    "bChooseOne": [
+      "A",
+      "B"
+    ],
+    "wholeRoutes": [
+      {
+        "option": "A",
+        "parts": [
+          "a",
+          "b-A",
+          "c"
+        ],
+        "marks": 60
+      },
+      {
+        "option": "B",
+        "parts": [
+          "a",
+          "b-B",
+          "c"
+        ],
+        "marks": 60
+      }
+    ],
+    "openPools": [
+      "advantages",
+      "disadvantages",
+      "design features",
+      "garden benefits"
+    ]
+  }
+}

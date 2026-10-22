@@ -1,0 +1,1219 @@
+[
+  {
+    "id": "cons-2016-hl-q2-a",
+    "topicId": "cons-1-8",
+    "conceptId": "importance-developing-positive-safety-culture-among",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q2(a)",
+    "questionText": "Discuss in detail the importance of each of the following in developing a positive safety culture among workers on a construction site: • safety training • collective responsibility.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail the importance of each of the following in developing a positive safety culture among workers on a con",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Safety training",
+            "Initial safety training",
+            "Ongoing safety training",
+            "Collective responsibility"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q2-b-level-of-risk",
+    "topicId": "cons-1-8",
+    "conceptId": "importance-when-deciding-use-ladder-appropriate-level-of-risk",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q2(b) — Level of risk",
+    "questionText": "Discuss in detail the importance of each of the following when deciding if the use of a ladder is appropriate, or not, for a proposed task: • level of risk.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q2-b-level-of-risk-r1",
+        "kind": "anyN",
+        "verbatim": "Level of risk",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Level of risk",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "the use of a ladder on a construction site is always hazardous unless correct procedures are taken to ensure maximum safety",
+            "a risk still remains after all possible procedures are taken to eliminate or minimise hazards",
+            "if the level of risk remains unacceptably high other solutions should be considered such as the use of a lift, mechanical hoist",
+            "careful safety planning aims to eliminate the hazard or where this is not possible, to minimise the remaining risk",
+            "risks involved include: o ladder becomes dislodged due to poor fixing at the top or bottom o falls due to poor arrangements where the ladder reaches the platform o poor positioning of safety handrail within reach at the top of the ladder o the angle of the ladder is too steep or too shallow o over-reaching of the worker o fatigue owing to long time standing on narrow ladder rung",
+            "the level of risk is increased either by increased likelihood of failure",
+            "the potential consequences of failure become more severe as the working height increases and particular attention has to be paid to the minimisation of risk in these cases",
+            "even where the working height is low, due care has to be taken - mindful that even a short fall can lead to serious injury"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q2-b-duration-of-task",
+    "topicId": "cons-1-8",
+    "conceptId": "importance-when-deciding-use-ladder-appropriate-duration-of-task",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q2(b) — Duration of task",
+    "questionText": "Discuss in detail the importance of each of the following when deciding if the use of a ladder is appropriate, or not, for a proposed task: • duration of task.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 8,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q2-b-duration-of-task-r1",
+        "kind": "anyN",
+        "verbatim": "Duration of task",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Duration of task",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "the level of risk is increased when the ladder is to be used over an extended period of time",
+            "working at a high-level may increase the risk levels - in such cases the use of a lift or hoist should be considered",
+            "where the duration of the task is not long, due consideration should still be paid to the issue of safety",
+            "accidents can happen if proper safety practices are not followed even when the duration of the task is short",
+            "where a ladder is in place for long periods, regular checking of the risk control measures should be planned",
+            "checking of the fixings of the ladder at top and bottom should be scheduled as part of regular safety audits of the site",
+            "use a ladder only where the risk is low, the duration of task is short, the work is light and you can maintain three points of contact",
+            "to avoid working for a long period from a ladder, use a mechanical hoist, or a scaffold"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q2-c",
+    "topicId": "cons-1-8",
+    "conceptId": "specific-best-practice-guidelines-should-observed",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q2(c)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three specific best practice guidelines that should be observed when placing a ladder to access a scaffold platform on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 6",
+      "answer": 6,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 36,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Best practice safety guidelines",
+        "marks": 36,
+        "openList": true,
+        "contextNote": "Best practice safety guidelines",
+        "group": {
+          "claimMax": 6,
+          "perOption": 6,
+          "options": [
+            "the ladder must be securely held/tied at both ends, being mindful that there is very little frictional resistance between the ladder and the scaffold",
+            "where there is uneven ground, appropriate measures should be taken to provide a level grounding for the foot of the ladder",
+            "the ladder should extend at least 1.0 metres above the platform surface",
+            "the horizontal distance of the foot of the ladder from the platform should be ¼ the height of the platform - a slope of 74° is recommended",
+            "the ladder should be carefully positioned to allow ease of access to the platform such that users are protected by safety rails, toe boards and safety gates",
+            "where the height of the scaffold platform is more than one storey, use should be made of multiple ladder runs",
+            "the ladder must be structurally sound and designed to carry the required loads"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q3-a",
+    "topicId": "cons-7-4",
+    "conceptId": "revised-design-bungalow-which-will-ensure",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q3(a)",
+    "questionText": "Show, using notes and freehand sketches, a revised design of the bungalow which will ensure a bright, light-filled interior. In your revised design, you should consider: • modifying the external envelope to improve the penetration of natural light and • revising the internal layout to optimise natural light.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 10 + 1 x 10",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Internal Layout",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Internal Layout",
+        "group": {
+          "claimMax": 1,
+          "perOption": 10,
+          "options": [
+            "kitchen and dining area moved to front /south of house to avail of natural sunlight",
+            "infrequently used rooms positioned at the northern end of the dwelling",
+            "bathroom/bedroom moved from front to north/rear of house",
+            "open plan to allow penetration of natural light",
+            "load bearing wall A-A should remain in place",
+            "additional openings may be created if completed to engineer’s specification"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q3-a-r2",
+        "kind": "anyN",
+        "verbatim": "External Envelope",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "External Envelope",
+        "group": {
+          "claimMax": 1,
+          "perOption": 10,
+          "options": [
+            "glazing increased at southern, eastern and western elevations, minimal on northern elevation",
+            "install high performance windows - low-e double and triple glazing",
+            "incorporate sky tunnel into roof for natural light to north facing rooms",
+            "floor to ceiling glazing increases natural light",
+            "follow Local Authority Planning guidelines with reference to remodelling the front elevation of the dwelling",
+            "roof lights will increase natural light"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q3-b",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-proposed-design-choices-redesign-bungalow",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q3(b)",
+    "questionText": "Discuss in detail the reasons for your proposed design choices in the redesign of the bungalow. Note: It is not necessary to show the furniture in your design sketches.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 10 + 1 x 10",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Internal layout",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Internal layout",
+        "group": {
+          "claimMax": 1,
+          "perOption": 10,
+          "options": [
+            "south facing facades should have large windows and openings to maximise natural light - it is advantageous to have living areas to the south",
+            "keeping furniture away from windows will enhance the flow of both space and of light",
+            "painting window frames a light colour internally will increase the amount of reflected light- keep window dressings light in both colour",
+            "adding a roof light to an internal hallway can make it a light filled space and avoid having to artificially light it during the day",
+            "natural light enhances internal space and gives a sense of comfort and well-being",
+            "fitting a glass door from a bright living room to a dark hallway can bring light into the hallway and highlight the entrance to the main room",
+            "balance the flow of light in the house as a whole, where space and other considerations allow, by opening up between the front and rear rooms - this will allow, for example, a north facing rear room benefit from the sun",
+            "use of appropriately placed mirrors to maximise reflective light",
+            "selective use of colour – dark colours absorb light and make a room appear dark and smaller"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q3-b-r2",
+        "kind": "anyN",
+        "verbatim": "External envelope",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "External envelope",
+        "group": {
+          "claimMax": 1,
+          "perOption": 10,
+          "options": [
+            "south facing principal elevation to maximise natural light",
+            "fewer and smaller windows on the north elevation reduces heat loss",
+            "extended roof lights over front door for maximum sunlight to penetrate to the hall area",
+            "tall / full height large south facing windows allow for maximum natural light to the living areas",
+            "east facing window allows morning sunlight to the sitting room",
+            "increase glazing on southern and western elevations of dwelling",
+            "rooflights /sky tunnels/light pipes inserted/integrated into roof – sized proportionate to roof and placed aesthetically",
+            "occupants can engage in activities to take advantage of natural light",
+            "olfactory comfort - fresh air, fresh smells, - indoor plants for air cleanliness, plants for pleasant indoor atmosphere"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q4-a",
+    "topicId": "cons-1-1",
+    "conceptId": "reasons-why-site-may-considered-new",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q4(a)",
+    "questionText": "Discuss in detail three reasons why site A may be considered suitable for a new house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail three reasons why site A may be considered suitable for a new house.",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "the site is sufficiently large to accommodate a house in the countryside",
+            "the proportions of the site are suitable",
+            "there is sufficient space to accommodate waste-water treatment and a percolation area",
+            "the site has public access from the adjoining roads",
+            "there is the possibility of having a southerly aspect to allow for sustainable house design",
+            "the site is close to existing houses and settlements so that services such as water, electricity, phone and broadband are likely to be readily available and cost effective",
+            "roadways are mainly straight and allow sufficient sightlines from entrance to ensure safe access to roadways from site – vehicle driver can see oncoming traffic"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q4-b",
+    "topicId": "cons-6-4",
+    "conceptId": "well-proportioned-redraw-given-site-immediate",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q4(b)",
+    "questionText": "Using a well proportioned freehand sketch, redraw the given site and the immediate surrounding boundaries. On your sketch show a proposed: • location and orientation for a house on site A • entrance gateway and access road to the house. For each of the above, justify your design choices.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 6",
+      "answer": 5,
+      "ofParts": 14,
+      "perPart": 6
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "The house is positioned so that",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "The house is positioned so that",
+        "group": {
+          "claimMax": 5,
+          "perOption": 6,
+          "options": [
+            "front elevation is oriented to south to be sustainable and obtain",
+            "it is close to the public road and services",
+            "the length of driveway is kept short for economy",
+            "house is not overlooked",
+            "it is not visually obtrusive in the surroundings",
+            "there is sufficient area in the remainder of the site to provide for the unobtrusive provision of waste-water treatment and percolation",
+            "design and scale of house to reflect the type and form of surrounding vernacular buildings The entrance gateway and access road:",
+            "provide clear sightlines when entering and exiting",
+            "entry is from a quiet side road to minimise traffic risks",
+            "are sited sufficient distance from the junction with the main road so as to minimise risk from/to fast-moving traffic",
+            "are sited sufficient distance from the bend and entrance to the neighbouring house",
+            "provide perpendicular access for vehicles to the public road improving driver vision",
+            "allow sufficient space for off-road stopping or parking when the gates are being opened",
+            "provide a frontal view of the house as it is approached"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "calculate-cost-heat-lost-annually-through",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q5(b)",
+    "questionText": "Calculate the cost of heat lost annually through this wall, using the following data: Area of external wall 150 m2 Average internal temperature 18 °C Average external temperature 6 °C U-value of wall as calculated above Heating period 8 hours per day, every day for 38 weeks per annum Cost of oil 96 cent per litre Calorific value of oil 37350 kJ per litre 1000 Watts 1 kJ per second.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "Calculate the cost of heat lost annually through this wall, using the following data: Area of external wall 150 m2 Avera",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "The scheme groups its answer under: Wall A; 60 × 60 × 8 × 7 × 38 = 7,660, 800, seconds (2,128 hours); 1000",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Heat loss formula and calculation",
+            "Heating duration for one year",
+            "k/Joules calculation for one year",
+            "Litres of oil for one year",
+            "Annual cost of heat loss"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q5-c",
+    "topicId": "cons-6-1",
+    "conceptId": "proposed-upgrade-thermal-properties-above-wall",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q5(c)",
+    "questionText": "It is proposed to upgrade the thermal properties of the above wall to meet the Passive House standard by fixing expanded polystyrene to the external surface. Given the thermal conductivity (k) of expanded polystyrene as 0.037 W/m °C, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q5-c-r1",
+        "kind": "anyN",
+        "verbatim": "It is proposed to upgrade the thermal properties of the above wall to meet the Passive House standard by fixing expanded",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Resistance for U-value of 0.15 W/m2 °C",
+            "Existing resistance from part (a)",
+            "Difference in resistances (required resistance)",
+            "Application of formula R = T/k",
+            "Required thickness of insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q9-a",
+    "topicId": "cons-5-8",
+    "conceptId": "where-electrical-circuits-are-typically-used",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q9(a)",
+    "questionText": "State where the following electrical circuits are typically used in a domestic dwelling: • ring circuit • radial circuit.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 4",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 4
+    },
+    "totalMarks": 8,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "State where the following electrical circuits are typically used in a domestic dwelling: • ring circuit • radial circuit",
+        "marks": 8,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 4,
+          "options": [
+            "Typical use in a domestic dwelling",
+            "Ring circuit",
+            "Radial circuit"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q10-a",
+    "topicId": "cons-4-2",
+    "conceptId": "minimising-heat-loss-storing-heat-gain",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q10(a)",
+    "questionText": "Minimising heat loss and storing heat gain are important considerations in Passive House design. Using notes and freehand sketches, show best practice design detailing to minimise heat loss and maximise heat storage in a Passive House for any two of the following: • foundations • ground floor • walls.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 6 + 1 x 6 + 1 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "W/m2 K",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "W/m2 K",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "no thermal bridges",
+            "very well insulated to minimise heat loss",
+            "high compressive strength insulation used",
+            "traditional strip foundation with autoclaved aerated concrete blockwork to prevent heat loss",
+            "other approved systems that meet passive standards"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q10-a-r2",
+        "kind": "anyN",
+        "verbatim": "Ground floor",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Ground floor",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "thermal mass - increased thickness of screed and tile finish will improve the capacity of the building to absorb and retain heat",
+            "high levels of insulation",
+            "no thermal bridges",
+            "airtightness",
+            "traditional system is acceptable provided it meets passive standard and incorporates an appropriate heat store",
+            "any other approved system that meets passive standards and incorporates a heat store"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q10-a-r3",
+        "kind": "anyN",
+        "verbatim": "Walls",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Walls",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "passive wall to achieve u-value of between 0.10 - 0.15 w/m2 K",
+            "high level of insulation",
+            "no thermal bridges",
+            "airtightness",
+            "block inner leaf with internal plaster finish will improve thermal mass of the building",
+            "in the case of timber frame passive houses consideration must be given to alternative methods of maximising heat storage such as Trombe wall, high mass floor screeds, internal block walls"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q10-c",
+    "topicId": "cons-1-2",
+    "conceptId": "advantages-disadvantages-making-passive-house-standard",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q10(c)",
+    "questionText": "Discuss two advantages and two disadvantages of making the Passive House standard a planning requirement for all new housing in Ireland.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 3 + 2 x 3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages of passive house construction",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages of passive house construction",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "low energy consumption - a typical passive house uses 75% less energy than a similar house built to building regulations standards,",
+            "comfort - passive house construction provides a consistent level of comfort (a constant comfortable temperature of 20°C is maintained all year round),",
+            "economical - a typical passive house significantly cheaper to run than a similar house built to building regulations standards - 75% energy reduction,",
+            "reduced environmental impact - lower energy consumption means that passive houses have a much smaller carbon footprint than houses built to building regulations standards - reduced CO2 emissions Disadvantages of passive house construction:",
+            "workmanship - a very high level of workmanship is required on site - every member of the construction team must understand what is required to achieve passive house standard and ensure that their work is of the highest possible standard",
+            "training - tradespeople and designers need to be trained to ensure they are competent to achieve passive house standards",
+            "materials - quality materials, expensive",
+            "capital cost - expensive",
+            "longer contract time required to complete passive house",
+            "a private standard, must pay to have house certified as PassivHaus"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q10-c-r2",
+        "kind": "anyN",
+        "verbatim": "When designing a passive house the heat load is calculated on two sample days",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "When designing a passive house the heat load is calculated on two sample days",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "a mild overcast day (high temperature, low solar gain),",
+            "a cold clear day (low temperature, high solar gain)",
+            "in the passive house standard everything is included (e.g. space heating, water heating, ventilation, lighting, appliances such as the dishwasher and the television) whereas in the building regulations only space heating, water heating, ventilation and lighting are included"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q4-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-building-off-houses-irish",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q4(c)",
+    "questionText": "Discuss in detail two advantages and two disadvantages of building one-off houses in the Irish rural landscape.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 3 + 2 x 3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages of one-off houses in the Irish rural landscape – such as",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages of one-off houses in the Irish rural landscape – such as",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "they allow local people to live amongst their neighbours and extended family",
+            "they provide a quality of life enjoyed by rural dwellers",
+            "they allow people to live in healthy surroundings with clean air",
+            "many people value the quietness and solitude of living in this type of house",
+            "they can create a network of rural dwellers who can develop community spirit",
+            "having extra rural dwellers aids the rural economy",
+            "rural dwellers tend the countryside - farmers, ecologists, nature lovers, gardeners etc",
+            "rural dwellings give a welcoming feel to the countryside - an inhabited landscape",
+            "provide a different paradigm to urban dwelling – it is acceptable to live in the countryside",
+            "having more rural dwellers maintains the level of services available"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q4-c-r2",
+        "kind": "anyN",
+        "verbatim": "Disadvantages of one-off houses in the Irish rural landscape",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages of one-off houses in the Irish rural landscape",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "it is unsustainable",
+            "construction costs are higher – long distances, increased transport costs",
+            "rural dwellings is more expensive to maintain",
+            "services such as electricity, water, gas, broadband etc. may not be easily available",
+            "transport costs to access all services are increased – towns, schools, churches, leisure, healthcare",
+            "regular, reliable public transport may be unavailable",
+            "children spend more time travelling to school and may have to use a school bus or be driven",
+            "school-going children may find involvement in extra-curricular activities difficult",
+            "it may destroy the visual amenity for other citizens, both local and passing",
+            "it may become increasingly more unsustainable as fossil fuels become scarce and more expensive",
+            "as the householders age they may find it increasingly difficult to access required supports and to remain active as they become more confined due to the remote location of the house. any other relevant points"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q6-a",
+    "topicId": "cons-6-3",
+    "conceptId": "features-design-contribute-house-having-low",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q6(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three features of the design that contribute to the house having low environmental impact.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Three features of the design that contribute to the house having low environmental impact – such as",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Three features of the design that contribute to the house having low environmental impact – such as",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction",
+            "the tree planting indicated reduces the visual impact of the building and help with carbon sequestration",
+            "the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture",
+            "trees to provide shade, food and shelter for birds and humans and aid biodiversity",
+            "the cedar cladding needs no preservatives, naturally durable",
+            "the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere",
+            "the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating",
+            "the smaller windows to the north-facing elevations reduce heat loss and help conserve energy",
+            "the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house",
+            "wood burning stoves are carbon neutral and stoves are up to 70% efficient",
+            "open-plan, naturally lighted layout",
+            "short circulation areas and corridors",
+            "hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed",
+            "the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 17 acceptable points under \"Three features of the design that contribute to the house having low environmental impact – such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q10-b",
+    "topicId": "cons-6-3",
+    "conceptId": "passive-house-shown-overheats-summer-reasons",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q10(b)",
+    "questionText": "The Passive House shown overheats in summer. Discuss two reasons why overheating occurs and, using notes and freehand sketches, show two design details for the house that would reduce the possibility of overheating.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 6 + 2 x 6 + 3 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 42,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q10-b-r1",
+        "kind": "anyN",
+        "verbatim": "Extended roof overhang",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Extended roof overhang",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "an overhang / extended eaves / to reduce the amount of solar heat gain in summertime",
+            "the angle of the sun is higher during the summer than it is during the winter. By using a correctly designed overhang, the amount of solar heat gained from the summer sun is reduced. due to the lower angle of the winter sun, winter solar heat gain will not be affected",
+            "ensure MHRV unit has summer bypass setting",
+            "the maximum angle of the summer sun can be calculated by using the following formula 90° - latitude + 23.5° = maximum sun angle",
+            "the minimum angle of the winter sun can be calculated by using the following formula 90° - latitude - 23.5° = minimum sun angle",
+            "designed to allow purging of overheated air – through and through ventilation with openable windows at both ends of building to allow through draught and cooling",
+            "using the above information an appropriate overhang can be designed"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q10-b-r2",
+        "kind": "anyN",
+        "verbatim": "Brise Soleil",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Brise Soleil",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building",
+            "adjustable brise soleil can be adjusted to suit the weather conditions at a particular time",
+            "external roller blinds, awnings and sliding screens are the most common types"
+          ]
+        }
+      },
+      {
+        "id": "cons-2016-hl-q10-b-r3",
+        "kind": "anyN",
+        "verbatim": "Dynamic Glass",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "Dynamic Glass",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "standard float glass with an electrochromic coating applied on one of the surfaces",
+            "automatically adjusts its tint in response to environmental conditions",
+            "eliminates the need for blinds or shades",
+            "allows visible light to enter the building while filtering out infra-red and ultraviolet light",
+            "can be used in any situation where excessive solar heat gain is likely to be an issue, for example south facing glazing",
+            "dynamic glass allows control over the amount of infra-red as well as solar gain that enters the building",
+            "occupants can manually control tint of glass by apps on smart phones / tablets or by wall switches",
+            "achieves a reduction of up to 20% in energy consumption",
+            "provides an important advancement in sustainable design"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2016-hl-q6-b",
+    "topicId": "cons-1-1",
+    "conceptId": "meet-nearly-zero-energy-building-nzeb",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q6(b)",
+    "questionText": "To meet the Nearly Zero Energy Building (NZEB) requirements, the production of on-site renewable energy is recommended. Using notes and freehand sketches show one means of generating on-site renewable energy for the dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 10",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 10
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Wind charger/micro generator for electricity generation",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Wind charger/micro generator for electricity generation",
+        "group": {
+          "claimMax": 2,
+          "perOption": 10,
+          "options": [
+            "individual turbines vary in size and power output, ranging from a few hundred watts as used on caravans through 5 or 6 kW turbines, from 1.5 m to 2.0 m in diameter suitable for a single dwelling, to 2-3 megawatts for community-owned turbines or wind farms supplying electricity to the national grid",
+            "wind speed is critical for electricity generation",
+            "height of turbine is also critical: a turbine should be a minimum of 10.0 m above the roof or any other obstruction within 100.0 m - such as buildings or trees, to reduce turbulence, which reduces efficiency and causes undue wear",
+            "a micro turbine between 1.5 m and 2.0 m in diameter will provide about 10% of t he average power use of a house - 4700 kW hr/year",
+            "most small wind turbines generate direct current (DC) electricity",
+            "off-grid systems require battery storage and an inverter to convert DC electricity to AC alternating current, as used for mains electricity",
+            "no battery storage is required if connected to the grid",
+            "a controller is also required to ensure the batteries are not over- or under-charged",
+            "solar panels can also be used for water heating",
+            "evacuated tubes can provide up to 60% of hot water requirements - less electricity used",
+            "the installation of evacuated tubes reduces demand for mains electricity for domestic water heating photovoltaic (PV) panels to generate electricity",
+            "solar energy can also be turned into electricity in a photovoltaic (PV) panel, which converts solar energy into electrical energy using silicon cells",
+            "small photovoltaic panels are often used to power calculators, which require very little power",
+            "photovoltaic panels are used for houses that cannot be supplied from the grid"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 22 acceptable points under \"Wind charger/micro generator for electricity generation\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q6-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-generating-renewable-energy-site",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q6(c)",
+    "questionText": "Discuss in detail two advantages of generating renewable energy on-site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Two advantages of generating renewable energy on-site",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Two advantages of generating renewable energy on-site",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "it can be a sustainable alternative to using mains electricity generated mostly from fossil fuels",
+            "the natural resources harnessed to generate the energy are freely available",
+            "payment of carbon taxes is reduced or avoided",
+            "energy losses encountered in transmission of mains electricity are avoided",
+            "the cost of transporting the replaced fossil fuels to the house - oil, coal, wood etc, are avoided",
+            "the provision and maintenance of an appropriate road system for the transport of reduced amounts of fossil fuels becomes easier",
+            "roof slope is often ideal for photovoltaic cells – 30° to 45° slope with southern orientation",
+            "in rural areas, site may be suitable for the erection of wind turbine to generate on-site electricity",
+            "the householder shares in the steps taken to address climate change and the allied satisfaction",
+            "the household becomes less dependent on mains electricity, with the increasing prospect of the use of battery storage and being able to go off-grid",
+            "advances in the development of lithium-ion batteries for the domestic electrical storage - note the development of Tesla batteries for electrical energy storage",
+            "as a rule of thumb allow 1.0 -1.5m2 solar collector area per person for water heating needs",
+            "all pipework to be insulated to avoid heat losses and UV stable if exposed",
+            "performance of collector may be affected by overheating"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 16 acceptable points under \"Two advantages of generating renewable energy on-site\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q7-a",
+    "topicId": "cons-3-8",
+    "conceptId": "vertical-section-through-chimney-stack-roof",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q7(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the chimney stack and roof structure. Show the typical construction details of the chimney stack, flue, chimney capping and portion of the adjoining roof structure. Include the design details to prevent the penetration of rainwater between the chimney stack and the adjoining roof surface.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "11 x 4",
+      "answer": 11,
+      "ofParts": 14,
+      "perPart": 4
+    },
+    "totalMarks": 44,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Vertical section through chimney stack and roof structure (11 × 4 marks)",
+        "marks": 44,
+        "openList": true,
+        "contextNote": "Vertical section through chimney stack and roof structure (11 × 4 marks)",
+        "group": {
+          "claimMax": 11,
+          "perOption": 4,
+          "options": [
+            "Blockwork",
+            "Render",
+            "Flue Liners",
+            "Fill",
+            "Chimney capping",
+            "Cover flashing × 2",
+            "Under flashing (apron)",
+            "Flashing to rear gutter",
+            "Apron or tray",
+            "Rafter",
+            "Fillet piece",
+            "Breather membrane",
+            "Battens / Counter battens",
+            "Trimmer"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Vertical section through chimney stack and roof structure (11 × 4 marks)\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q8-a",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-disadvantages-refurbishing-storeroom-use-home",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q8(a)",
+    "questionText": "Discuss two advantages and two disadvantages of refurbishing the storeroom for use as a home office.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages – such as",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "Advantages – such as",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "refurbishment usually costs less than new build",
+            "a stone building is refurbished not demolished, maintaining the architectural heritage of the locality",
+            "a value system is maintained – reuse, upcycle but do not demolish",
+            "home office reduces need for daily commute to outside office, saving travel time, saving energy -less energy required to travel – helping save the environment through less CO2",
+            "sustainability principle of reduce and reuse informing the decision to refurbish",
+            "less materials required in refurbishment, foundations, walls, roofing materials already there",
+            "refurbishment as an exemplar of best practice, showing that an old building can be restored for another use",
+            "a building links to heritage of the area",
+            "the existing garden not damaged with large machinery to dig foundations etc",
+            "existing planting enhancing the natural setting of the home office",
+            "an oasis of calm and delight",
+            "separation of office and home – office for work, home for family activities Disadvantages – such as:",
+            "building may be quite derelict, refurbishment may not be advisable or achievable",
+            "slow, costly work to maintain the character and appearance of the existing storeroom"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 19 acceptable points under \"Advantages – such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "features-could-incorporated-into-design-lighting",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q9(c)",
+    "questionText": "Show two features that could be incorporated into the design of a lighting system to ensure the economical use of electricity in the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 14,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Economical use of electricity – such as –",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "Economical use of electricity – such as –",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "separate lighting circuits and lights used only as required",
+            "task lighting - specifically for work/study stations, used only as required",
+            "ambient lighting - general mood lighting in a room",
+            "motion and/or heat sensors fitted to ensure lights are off in uninhabited rooms",
+            "app for switching lights on/off remotely, no wastage",
+            "flexible lighting so lights can be moved about as required, both floor and ceiling",
+            "use the most efficient, low-energy bulbs, normally LED lights",
+            "incandescent bulbs emit 98% of the electricity consumed as heat and are now superseded",
+            "LED lights typically emit 80 to 120 lumens per watt while CFLS emit in the region of 55 lumens per watt - for comparison, incandescent bulbs which were used in the past emitted only 14.3 lumens per watt while the figure for halogen bulbs is 24.6 lumens per watt",
+            "use smart metering to give feedback to occupants encouraging economy by switching off lights when not in use",
+            "use LED desk lamps or reading lamps for tasks when full-room lighting is not required",
+            "use motion sensors to switch off lights in unoccupied rooms",
+            "use automatic light sensors to turn lights on/off as required when the room is unoccupied",
+            "avoid the use of artificial light where possible by maximising natural lighting, roof lights etc"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 16 acceptable points under \"Economical use of electricity – such as –\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2016-hl-q7-b",
+    "topicId": "cons-3-10",
+    "conceptId": "considerations-taken-into-account-design-chimney",
+    "level": "higher",
+    "year": 2016,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2016 HL Q7(b)",
+    "questionText": "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will help prevent a downdraught. Include typical dimensions as appropriate.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 2",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 2
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2016-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will he",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 2,
+          "options": [
+            "Design detail 1 -",
+            "Design detail 2 -"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 8 marks for this part. The 4 on this card are the marks it states answers for; the other 4 go to Typical dimensions (2 × 2 marks) (4) — the drawing itself and anything the scheme prices without saying what earns it."
+  }
+]
