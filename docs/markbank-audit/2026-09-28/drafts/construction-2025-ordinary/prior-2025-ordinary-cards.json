@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "cons-2025-ol-q1-b",
+    "topicId": "cons-3-4",
+    "conceptId": "preventing-rainwater-at-the-window-head",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing that prevents the penetration of rainwater at the window head.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Stepped DPC clearly identified",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q2-a",
+    "topicId": "cons-6-2",
+    "conceptId": "advantages-of-insulating-a-sloped-ceiling",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q2(a)",
+    "questionText": "Discuss two advantages of highly insulating the sloped ceiling of the living area.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of highly insulating the sloped ceiling of the living area.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Insulation will reduce heat loss in the house making it more energy efficient",
+            "To lower energy bills in the house",
+            "Reduces your carbon footprint",
+            "To increase comfort levels in the house",
+            "To reduce further the energy usage of the home and in turn reduce carbon emissions",
+            "Roof insulation can help reduce noise from outside",
+            "Insulation can help reduce the amount of condensation that forms in the roof"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q2-b",
+    "topicId": "cons-3-9",
+    "conceptId": "insulating-a-sloped-ceiling",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q2(b)",
+    "questionText": "Using notes and freehand sketches, show one suitable method of highly insulating the sloped ceiling. Show on your sketch how the ceiling is to be finished internally. Specify the type and thickness of insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 16",
+      "answer": 1,
+      "ofParts": 10,
+      "perPart": 16
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q2-b-r1",
+        "kind": "anyN",
+        "verbatim": "Method of insulating the sloped ceiling note & sketch",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "One suitable method of highly insulating the sloped ceiling",
+        "group": {
+          "claimMax": 1,
+          "perOption": 16,
+          "options": [
+            "Cut the insulation material to required width so it can fit between the rafters",
+            "Ensure adequate ventilation space is allowed between the breather membrane and insulation",
+            "Insulating materials – phenolic foam, wood fibre, sheep’s wool, EPS insulation",
+            "Cover the insulted rafters with an airtight membrane",
+            "Fix plasterboard/insulated plasterboard to the rafters",
+            "Plasterboard skim coated with plaster or taped and filled to provide a finish",
+            "Fix a ventilation card/spacer between the rafters",
+            "Spray foam insulation to the underside of the ventilation card",
+            "When insulation is set, trim flush with the rafters",
+            "Fix the plasterboard sheet to the rafters and skim over"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 24 marks for this part. The 16 on this card are the marks it states answers for; the other 8 go to Preferred insulation type for sloped ceiling (4); Thickness of insulation (4) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2025-ol-q2-c",
+    "topicId": "cons-3-9",
+    "conceptId": "a-feature-for-a-sloped-ceiling",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q2(c)",
+    "questionText": "Using notes and a freehand sketch, suggest one feature which could be included in the sloped ceiling to allow additional natural light into the living area.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, suggest one feature which could be included in the sloped ceiling to allow additional",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "Skylight",
+            "Dormer window",
+            "Ridge roof-light",
+            "Sun tunnel"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q3-a",
+    "topicId": "cons-5-3",
+    "conceptId": "pipework-for-a-heating-system",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q3(a)",
+    "questionText": "Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the radiators and to heat the water in the cylinder.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "15mm rising main",
+            "Stop valve",
+            "Insulated storage tank",
+            "Expansion tank / vessel",
+            "Stove",
+            "Cold feed to stove",
+            "250 l cylinder",
+            "Ø22 mm primary flow to cylinder",
+            "Ø22 mm primary return to stove",
+            "Hot feed from cylinder",
+            "Ø22 mm expansion pipe",
+            "Radiators",
+            "Ø22 mm flow to radiators",
+            "Ø22 mm return from radiators"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 15 acceptable points under \"Typical details\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2025-ol-q3-b",
+    "topicId": "cons-5-3",
+    "conceptId": "advantages-of-a-zoned-heating-system",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q3(b)",
+    "questionText": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 5",
+      "answer": 1,
+      "ofParts": 6,
+      "perPart": 5
+    },
+    "totalMarks": 5,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+        "marks": 5,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 5,
+          "options": [
+            "It is more energy efficient to only heat the zone you need",
+            "Reduced cost to homeowner",
+            "Avoids unnecessary energy use",
+            "More user control over your heating system",
+            "Only heating the water may lead to less wear and tear on the heating system",
+            "A zoned heating system is a more modern system which may increase the value of the home"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q4-a",
+    "topicId": "cons-1-3",
+    "conceptId": "choosing-between-two-sites",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q4(a)",
+    "questionText": "Select your preferred site A or B, and give two reasons for your choice.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 6 + 1 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Site A – Considerations",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Site A – Considerations",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Allows for a south facing façade to the house for maximum solar gain",
+            "Has direct access to the main road for services",
+            "Close to existing houses for access to services",
+            "Existing hedgerow to one side of the site for shelter",
+            "Well-proportioned size and shape of site for home and garden"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-ol-q4-a-r2",
+        "kind": "anyN",
+        "verbatim": "Site B – Considerations",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Site B – Considerations",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Allows for a south facing façade for maximum solar gain",
+            "Reduced risk when entering and exiting site as it is accessed from a secondary road",
+            "Close to existing houses for access to services",
+            "Off the main road for greater privacy",
+            "Less noise and air pollution as the site is away from the main road",
+            "Site is on the same side as other buildings for services, security Any other valid reason will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 14 marks for this part. The 12 on this card are the marks it states answers for; the other 2 go to Select site (2) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2025-ol-q4-b",
+    "topicId": "cons-1-3",
+    "conceptId": "laying-out-a-chosen-site",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q4(b)",
+    "questionText": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred:  house position  entrance to the site  driveway to the house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 6 + 1 x 6 + 1 x 6 + 1 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Draw a large freehand sketch of your chosen site. On your sketch include your preferred",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "house position",
+            "entrance to the site",
+            "driveway to the house"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-ol-q4-b-r2",
+        "kind": "anyN",
+        "verbatim": "House position",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "House position",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "House positioned to allow south facing façade",
+            "House position leaves room for a large front and rear garden",
+            "Existing trees utilised for shelter barrier",
+            "Positioned to allow maximum solar gain",
+            "House positioned for privacy",
+            "House set back from the road to minimise visual impact Site A"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-ol-q4-b-r3",
+        "kind": "anyN",
+        "verbatim": "Entrance to the site",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Entrance to the site",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Entrance off secondary road for safe entry and exit",
+            "Position entry to minimise disturbance to existing trees",
+            "Entrance positioned to give clear line of sight in both directions",
+            "Sidewalls splayed at 45° for clear vision when exiting"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-ol-q4-b-r4",
+        "kind": "anyN",
+        "verbatim": "Driveway to the house",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Driveway to the house",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Shorter driveways save on materials and cost",
+            "Driveway gently curved to minimise visual impact",
+            "Driveway positioned to the north of Site B house to limit obstruction of views",
+            "Driveway positioned to allow parking to the rear"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q4-c",
+    "topicId": "cons-1-3",
+    "conceptId": "building-a-house-in-the-countryside",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q4(c)",
+    "questionText": "Give one advantage and one disadvantage of building a house in the countryside.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 6 + 1 x 6",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q4-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "The countryside is generally much quieter than urban areas, with less noise pollution",
+            "Living in the countryside surrounded by nature can improve mental health",
+            "Sites in the countryside can be more affordable than in towns and cities",
+            "The countryside can provide beautiful views of the landscape",
+            "The air quality in rural areas is usually better due to less industrial activity and fewer vehicles",
+            "Rural areas often have lower housing costs compared to towns",
+            "You can get more space for your money, which may allow you to build a larger home or have a bigger garden",
+            "The countryside is less densely populated allowing for greater privacy"
+          ]
+        }
+      },
+      {
+        "id": "cons-2025-ol-q4-c-r2",
+        "kind": "anyN",
+        "verbatim": "Disadvantages",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantages",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Amenities and services like healthcare, schools, and shopping may be far away",
+            "More dependence on a car in the countryside which increases your carbon footprint",
+            "The infrastructure in rural areas can be less developed, which means limited public transportation",
+            "Internet or phone connections can often be more restricted",
+            "For some, living in the countryside can be quite isolated compared to a town Any other suitable detail will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q5-a",
+    "topicId": "cons-4-4",
+    "conceptId": "vertical-section-top-three-steps",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the top three steps of the stairs and the landing. Show the steps, trimmer joist, and a portion of the landing. Show 600 mm length of the landing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 11,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specification – typical detail",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "Specification – typical detail",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "String 250 mm x 50 mm",
+            "Tread 250 mm x 25 mm",
+            "Riser 170 mm x 20 mm",
+            "Joint between tread and riser",
+            "Nosing – 16 mm minimum",
+            "Vertical & horizontal wedge",
+            "Glue blocks 60 x 60 mm",
+            "Pitch line/ nosing line (max 42⁰)",
+            "Trimmer joist 225 mm x 75 mm",
+            "First floor joist 225 mm x 50 mm",
+            "Tongue & groove floor Note: Any alternative detailing which complies with current Building Regulations is acceptable"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-when-working-at-height",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q6(b)",
+    "questionText": "Describe two potential risks to construction workers when working at height on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Describe two potential risks to construction workers when working at height on a construction site.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Workers may slip and fall from a height when on scaffolding or rooftops",
+            "A ladder or platform could give way causing a worker to fall",
+            "Using power tools can be more challenging at a height leading to an injury",
+            "Tools or materials can fall from height and strike a construction worker below",
+            "Heavy rain or gusts of wind are often more severe at a height and could lead to a worker falling"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-measures-when-working-at-height",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q6(c)",
+    "questionText": "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers can safely access a roof when installing solar panels.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 7",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 7
+    },
+    "totalMarks": 14,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers ca",
+        "marks": 14,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 7,
+          "options": [
+            "Safe and stable scaffolding and ladders should be used to provide access to the roof",
+            "installing guardrails around the perimeter can prevent workers from accidentally falling off the roof",
+            "A safety harness which is attached to secure anchor points can be worn by workers",
+            "Ladders should be placed at the correct angle and extend adequately to provide a secure handhold when workers step onto the roof",
+            "A qualified construction worker should inspect the roof structure to ensure that it can safely support the weight of the workers and equipment",
+            "Proper non-slip boots should be worn to reduce the risk of slipping on the roof’s surface"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q7-a",
+    "topicId": "cons-3-3",
+    "conceptId": "timber-frame-for-a-garden-office",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q7(a)",
+    "questionText": "Discuss two advantages of using timber frame for the construction of the garden office.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of using timber frame for the construction of the garden office.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Timber frame can be quicker to construct than traditional concrete block construction",
+            "Timber is a renewable material",
+            "It is an environmentally friendly option with a low embodied energy",
+            "Timber is generally less expensive than other construction materials like steel or concrete",
+            "The office can be prefabricated in a factory leading to less time on site",
+            "The light weight of timber frame construction reduces the need for large concrete foundations",
+            "Timber can give an attractive aesthetic to the office"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "laying-out-a-garden-office",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q7(b)",
+    "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office:  corner desk  two windows  bookcase unit  seating area.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 5",
+      "answer": 4,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 5,
+          "options": [
+            "corner desk",
+            "two windows",
+            "bookcase unit",
+            "seating area",
+            "Located close to a window for a view",
+            "Located in the brightest area of the office close to a window",
+            "Located away from the door for ease of entry two windows",
+            "Located close to the desk to provide a view while working",
+            "Located at the front to see people as they approach",
+            "Located on two different walls to provide dual aspect bookcase unit",
+            "Located on the back wall to allow adequate space for the desk",
+            "Located near the seating area for convenience when reading",
+            "Located away from the windows to not obstruct the light seating area",
+            "Located away from the desk to create a different zone within the office"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  },
+  {
+    "id": "cons-2025-ol-q7-c-advantage",
+    "topicId": "cons-1-1",
+    "conceptId": "a-garden-office-separate-from-the-home-advantage",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q7(c) — Advantage",
+    "questionText": "Discuss one advantage of constructing a garden office separate from the home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q7-c-advantage-r1",
+        "kind": "anyN",
+        "verbatim": "Advantage",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Advantage",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "Creates a clear boundary between work and home life",
+            "Easier to concentrate when away from household noise and interruptions.",
+            "A garden office can increase the value of your home",
+            "Lessens the impact on the household",
+            "The office does not take up space within the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q7-c-disadvantage",
+    "topicId": "cons-1-1",
+    "conceptId": "a-garden-office-separate-from-the-home-disadvantage",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q7(c) — Disadvantage",
+    "questionText": "Discuss one disadvantage of constructing a garden office separate from the home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q7-c-disadvantage-r1",
+        "kind": "anyN",
+        "verbatim": "Disadvantage",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Disadvantage",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "It can be expensive to create the separate office and provide required services such as electricity, internet",
+            "May also require planning permission depending on size and location",
+            "Can be cold and uncomfortable to work in if not constructed to a high standard",
+            "Reduces the size of your garden",
+            "Will require on-going maintenance to keep it in good condition Any other valid reason will be accepted"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "modifying-the-rear-of-a-house",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q9(b)",
+    "questionText": "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following:  access to the garden from the house  an outdoor dining/living space.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that woul",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Replace windows with a large glazed door",
+            "Install a large sliding door",
+            "Install a bifold door",
+            "Patio area along back wall",
+            "Some grass area changed to decking or slabs",
+            "Create a BBQ area"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "family-uses-of-a-large-garden",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q9(c)",
+    "questionText": "Discuss two other possible family uses of a large garden.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Two other possible family uses of a large garden",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Two other possible family uses of a large garden",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Provide a safe play area for kids",
+            "Space for slides, trampolines etc",
+            "A garden can allow you grow plants and flowers",
+            "Area to grow vegetables and herbs",
+            "You can get closer to nature by using bird feeders",
+            "Space for a garden shed or additional storage",
+            "A garden is ideal for a family pet"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q1-a",
+    "topicId": "cons-3-2",
+    "conceptId": "vertical-section-external-wall",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the concrete lintels, and the top fixed frame of the window. On your drawing, show the typical construction details from a level 400 mm below to a level 400 mm above the concrete lintels. Include three typical dimensions on your drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 12,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the c",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "External render",
+            "Concrete block outer leaf",
+            "Full fill insulated cavity with wall tie",
+            "Concrete block inner leaf",
+            "Internal plaster",
+            "Cavity closer",
+            "Stepped DPC",
+            "Concrete lintels",
+            "Thermally broken window frame",
+            "Triple glazing",
+            "Airtightness",
+            "Any 3 typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q5-b",
+    "topicId": "cons-4-4",
+    "conceptId": "a-design-detail-for-a-safe-stairs",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q5(b)",
+    "questionText": "On your drawing, show one design detail which will ensure that the stairs will not creak when in use.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "Glue blocks",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2025-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-signs-on-a-construction-site",
+    "level": "ordinary",
+    "year": 2025,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2025 OL Q6(a)",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:  high-visibility vest  safety boots  ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 8",
+      "answer": 3,
+      "ofParts": 3,
+      "perPart": 8
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2025-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 8,
+          "options": [
+            "High-visibility vest sign and specific reason",
+            "Safety boots sign and specific reason",
+            "Ear defenders sign and specific reason"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

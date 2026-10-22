@@ -1,3 +1,4 @@
+import { taskGroupsFault } from '../scripts/markbank/taskGroups.mjs';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -281,11 +282,13 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_higher.py): the three printed requirements, note 4 + sketch 4 each.
     expect(card.totalMarks).toBe(24);
-    expect(card.rows).toHaveLength(1);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 3, perOption: 8 });
-    expect(card.rows[0].group?.options).toHaveLength(16);
-    expect(card.rows[0].group?.options.join(' ')).not.toMatch(/Concrete block wall|Positives|Negatives/);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual(
+      [1, 2, 3].map(i => [`Functional requirement ${i} (Note and Sketch)`, 8]),
+    );
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/Concrete block wall|Positives|Negatives/);
   });
 
   test('2017 OL Q9(c) remains the ten-mark patio question', () => {
@@ -294,11 +297,12 @@ describe('reviewed Construction Studies boundaries stay on their printed tasks',
     expect(card && isPointCard(card)).toBe(true);
     if (!card || !isPointCard(card)) return;
 
+    // Source-reviewed (construction_2017_ordinary.py): the two printed advantages, 5 each.
     expect(card.totalMarks).toBe(10);
     expect(card.questionText).toMatch(/external patio/i);
-    expect(card.rows[0].group).toMatchObject({ claimMax: 2, perOption: 5 });
-    expect(card.rows[0].group?.options).toHaveLength(8);
-    expect(card.rows.map(row => row.verbatim).join(' ')).not.toMatch(/practical project|craft skills|portfolio/i);
+    expect(card.rows.map(row => [row.verbatim, row.marks])).toEqual([['Advantage one', 5], ['Advantage two', 5]]);
+    expect(card.rows.map(row => `${row.verbatim} ${row.contextNote ?? ''}`).join(' '))
+      .not.toMatch(/practical project|craft skills|portfolio/i);
   });
 });
 
@@ -335,7 +339,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad = SAMPLE_CARDS.filter(isPointCard)
       .filter(c => !KNOWN_OVER_ROW_CAP.has(c.id))
       .filter(c => !isValidCardId(c.id) || c.rows.length === 0
-        || c.rows.length > rowCapFor(c.tariffModel.kind))
+        || (c.taskGroups ? taskGroupsFault(c) !== null : c.rows.length > rowCapFor(c.tariffModel.kind)))
       .map(c => `${c.questionRef} (${c.id}, ${c.rows.length} rows, ${c.tariffModel.kind})`);
     expect(bad, show(bad)).toEqual([]);
   });

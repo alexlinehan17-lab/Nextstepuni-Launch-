@@ -1,0 +1,137 @@
+{
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "batch": 1,
+  "questions": [
+    "1",
+    "2"
+  ],
+  "reviewMethod": "Source-first visual reconciliation by the same operator, not independent human certification.",
+  "reviewedAt": "2026-10-07T16:53:48.463999+00:00",
+  "newTasks": 7,
+  "preservedPriorCards": 505,
+  "compiledCards": {
+    "higher": 262,
+    "ordinary": 250,
+    "total": 512
+  },
+  "droppedCards": 0,
+  "sourceFigures": 4,
+  "atlasAssociationsAdded": [
+    "Q1 Walls",
+    "Q1 Floors",
+    "Q1 Heat Loss & Insulation"
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "validation": [
+    {
+      "name": "source",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "test_construction_2015_higher_q1_q2"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/source.log",
+      "logSha256": "8b3c10603e951bf48b6e6641f43c026850c0b2246ec05d176fa2326569177b14"
+    },
+    {
+      "name": "regression-final",
+      "command": [
+        "npx",
+        "vitest",
+        "run",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/regression-final.log",
+      "logSha256": "07365f389717375a585f9e8f9552c4f9da268e54a6b014b4c826c40f2d6a3434"
+    },
+    {
+      "name": "atlas",
+      "command": [
+        "npm",
+        "run",
+        "check:markbank-atlas",
+        "--",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/atlas.log",
+      "logSha256": "19d85c2fdb2fea4ac5e4c4b1cdf0a19d8ba3ff47a586c02171b9fb2165e67a83"
+    },
+    {
+      "name": "types-app",
+      "command": [
+        "node",
+        "--max-old-space-size=12288",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit",
+        "-p",
+        "tsconfig.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/types-app.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "types-test",
+      "command": [
+        "node",
+        "--max-old-space-size=12288",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit",
+        "-p",
+        "tsconfig.test.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/types-test.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npx",
+        "eslint",
+        "components/MarkBank/libraryGroups.ts",
+        "scripts/markbank/build-library-topic-index.mjs",
+        "scripts/paper-trail/build-construction-studies-exam-topic-crosswalk.mjs",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/fixtures/construction2015Reviewed.ts"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/lint.log",
+      "logSha256": "4720c23477bb3693763de988266e0c70d330ac4158436fb05b51898e1817c09b"
+    },
+    {
+      "name": "build",
+      "command": [
+        "npm",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction575/build.log",
+      "logSha256": "4784bf3ae2984be36272ab9bf5de4084d4a4588451e5da0f941d9a84beb2be83"
+    }
+  ],
+  "priorRegressionNote": "Original run: curriculumRegistry and markBankDeck passed. Additive count guards and Atlas order were then corrected; final three-suite rerun passed106tests. Preservation baseline hashes unchanged.",
+  "open": [
+    "Q3–Q10 authoring and independent whole-paper reconciliation.",
+    "Other Construction Studies years, levels and components.",
+    "All remaining in-scope subjects; source availability gaps in previously reviewed subjects remain open."
+  ],
+  "publication": "Local only; no commit,push,deploy or preservation-baseline reset."
+}
