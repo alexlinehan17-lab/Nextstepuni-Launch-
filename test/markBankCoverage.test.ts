@@ -100,7 +100,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     } catch {
       continue;
     }
-    for (const chunk of text.split(/\.\.\.base,\s*kind:/).slice(1)) {
+    for (const chunk of text.split(/^\s*\.\.\.base,/m).slice(1)) {
       const id = chunk.match(/\bid: "([^"]+)"/);
       const ref = chunk.match(/questionRef: "([^"]+)"/);
       if (id && ref) out.push({ id: id[1], ref: ref[1] });

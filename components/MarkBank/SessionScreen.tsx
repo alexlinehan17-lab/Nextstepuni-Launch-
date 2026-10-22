@@ -669,7 +669,7 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px 1fr auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
           padding: '11px 12px', borderRadius: 12,
           border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
           background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
@@ -701,7 +701,7 @@ const MarkRowView: React.FC<{
           )}
         </MotionSpan>
 
-        <span>
+        <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
           {wholeResponse && row.contextNote && (
             <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
               {row.contextNote}

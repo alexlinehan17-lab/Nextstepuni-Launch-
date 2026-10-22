@@ -354,6 +354,11 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
                 <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-2 px-1" style={{ color: '#9e9186' }}>
                   Marking scheme — © State Examinations Commission
                 </p>
+                {state.s === 'ready' && state.q.schemeNote && (
+                  <p className="text-[13px] leading-relaxed mb-3 px-1" style={{ color: INK }}>
+                    {state.q.schemeNote}
+                  </p>
+                )}
                 {isAccountingTask ? (
                   <div className="mark-bank-theme">
                     <SourceMaterialReader subjectId={sibling.subjectId} year={sibling.year} paperFileid={sibling.fileid}

@@ -834,6 +834,173 @@ def complete_leading_romans(parts, texts, stem=lambda q, letter: ''):
     return parts
 
 
+# Agricultural Science before the 2019 specification's first sitting (2021)
+# was a different booklet: dense eight- or twelve-page papers where PyMuPDF
+# hands whole questions back as ONE block ("1. Answer any six of the
+# following: (a) ... (j) ..."), so paper.py's block-leading markers never see
+# Question 1 or the Option questions, and several Ordinary pages are set as two
+# overlapping text runs that interleave mid-word. Read those papers as LINES
+# rebuilt from word positions instead, and key every marker against what the
+# numbering allows next. Gated to this subject and these years only: every
+# other subject's census goes through census_merged/census_sections untouched.
+AGRI_LEGACY_LAST_YEAR = 2020
+# "Question n 2.": a run overlapping itself repeats the word's last letter.
+LEG_HEAD = re.compile(r'^(?:Question\s*(?:[A-Za-z]\s+)?)?(\d{1,2})\s*\.(?=\s|$)')
+LEG_MARK = re.compile(r'^\(\s*([a-z]{1,4})\s*\)\s*')
+LEG_MARKS = re.compile(r'\b\d{1,3}\s*marks?\b', re.I)
+LEG_OPTION_TWO = re.compile(r'\bOption\s+Two\b', re.I)
+LEG_LETTERS = 'abcdefghijklmnop'
+
+
+def _agri_legacy_lines(path):
+    """Text lines rebuilt from glyph positions, page by page.
+
+    Some legacy pages print every glyph twice at the same origin, and the
+    word reader then interleaves the copies ("(ii i)" for "(ii)"). A glyph
+    already seen at the same position is the same glyph.
+    """
+    import fitz                                   # noqa: E402  (PyMuPDF)
+    lines = []
+    with fitz.open(path) as pdf:
+        for page in pdf:
+            seen, rows = set(), collections.defaultdict(list)
+            for block in page.get_text('rawdict')['blocks']:
+                for line in block.get('lines', []):
+                    for span in line['spans']:
+                        for ch in span['chars']:
+                            x, y = ch['origin']
+                            glyph = (round(x, 1), round(y, 1), ch['c'])
+                            if glyph not in seen:
+                                seen.add(glyph)
+                                rows[round(y / 3)].append((x, ch['c']))
+            merged = []
+            for key in sorted(rows):
+                if merged and key - merged[-1][0] <= 1:
+                    merged[-1][1].extend(rows[key])
+                else:
+                    merged.append([key, list(rows[key])])
+            lines.extend(
+                re.sub(r'\s+', ' ', ''.join(c for _, c in sorted(cs, key=lambda t: t[0]))).strip()
+                for _, cs in merged)
+    return lines
+
+
+def _agri_legacy_tokens(lines):
+    """[(kind, value, text)] — leading markers peeled off each line in order."""
+    tokens = []
+    for line in lines:
+        s = line.strip()
+        if LEG_OPTION_TWO.search(s):
+            tokens.append(('option2', None, ''))
+        while s:
+            m = LEG_HEAD.match(s)
+            if m:
+                # 'Question 5.' names itself; a bare '5.' needs the marks guard.
+                tokens.append(('head', int(m.group(1)),
+                               'explicit' if s.startswith('Question') else ''))
+                s = s[m.end():].lstrip()
+                continue
+            m = LEG_MARK.match(s)
+            if m:
+                tokens.append(('mark', m.group(1), ''))
+                s = s[m.end():].lstrip()
+                continue
+            break
+        if s:
+            tokens.append(('text', None, s))
+        if LEG_MARKS.search(line):
+            tokens.append(('marks', None, ''))
+    return tokens
+
+
+def _roman_after(roman):
+    return 'i' if roman is None else (
+        ROMANS[ROMANS.index(roman) + 1] if roman in ROMANS[:-1] else None)
+
+
+def _letter_after(letter):
+    return 'a' if letter is None else (
+        LEG_LETTERS[LEG_LETTERS.index(letter) + 1]
+        if letter in LEG_LETTERS[:-1] else None)
+
+
+def census_agri_legacy(year, level):
+    path = os.path.join(PP.papers_dir('agricultural-science'),
+                        f'{year}-{level}-paper.pdf')
+    tokens = _agri_legacy_tokens(_agri_legacy_lines(path))
+    parts, texts = set(), collections.defaultdict(str)
+    q = letter = roman = None
+    marks_seen = restart = False
+    key = None
+    for i, (kind, value, text) in enumerate(tokens):
+        if kind == 'marks':
+            marks_seen = True
+        elif kind == 'option2':
+            restart = True
+        elif kind == 'head':
+            # A question opens only where the numbering allows it: 1 first,
+            # then the next number once the previous question has printed its
+            # marks — "2. The contents of the rumen", a numbered list inside
+            # Question 1, is not Question 2. "Question 3." names itself (the
+            # 2017-2020 Ordinary short questions print no marks line). Option
+            # Two re-opens its number.
+            if (q is None and value == 1) or (q is not None and (
+                    ((marks_seen or text == 'explicit') and value == q + 1)
+                    or (restart and value == q))):
+                q, letter, roman, key = value, None, None, (value, None, None)
+                marks_seen = restart = False
+                parts.add(key)
+        elif kind == 'mark' and q is not None:
+            as_letter = value == _letter_after(letter)
+            as_roman = value == _roman_after(roman)
+            if not as_letter and not as_roman and roman and value == roman:
+                # A numeral printed twice: 2012 HL Q5(b) runs (i), (ii), (ii),
+                # (iv). When the run resumes one further on, the repeat is
+                # the missing numeral, as the scheme and the cards read it.
+                later = next((v for k2, v, _ in tokens[i + 1:]
+                              if k2 in ('mark', 'head')), None)
+                if later == _roman_after(_roman_after(roman)):
+                    value, as_roman = _roman_after(roman), True
+            if not as_letter and not as_roman and letter and value == letter:
+                # A letter printed twice: 2018 OL Q13 prints (a), then a second
+                # (a) where the scheme has (b), then (c). When the next letter
+                # after the missing one follows (before the missing one or the
+                # next question does), the repeat is the missing letter.
+                missing = _letter_after(letter)
+                for kind2, value2, _ in tokens[i + 1:]:
+                    if kind2 == 'head' or (kind2 == 'mark' and value2 == missing):
+                        break
+                    if kind2 == 'mark' and value2 == _letter_after(missing):
+                        value, as_letter = missing, True
+                        break
+            if as_letter and as_roman:
+                # "(i)" after (h): the ninth letter, unless a "(ii)" follows
+                # before "(j)" does — then it opens romans under (h).
+                follow = _roman_after(value)
+                nxt = _letter_after(value)
+                as_roman = False
+                for kind2, value2, _ in tokens[i + 1:]:
+                    if kind2 == 'head':
+                        break
+                    if kind2 == 'mark' and value2 in (follow, nxt):
+                        as_roman = value2 == follow
+                        break
+                as_letter = not as_roman
+            if as_letter:
+                letter, roman, key = value, None, (q, value, None)
+                parts.add(key)
+            elif as_roman:
+                roman, key = value, (q, letter, value)
+                parts.add(key)
+        elif kind == 'text' and key is not None:
+            texts[key] = (texts[key] + ' ' + text).strip()
+    # A question key is a leaf only when the question prints no parts.
+    for k in [k for k in parts if k[1] is None and k[2] is None]:
+        if any(o[0] == k[0] and o != k for o in parts):
+            parts.discard(k)
+    return parts, dict(texts), [path]
+
+
 def census_merged(subject, year, level, component=None):
     P = PP.Paper(subject, year, level, component=component)
     P._adopt_unlettered()
@@ -3190,6 +3357,8 @@ def census_subject(subject):
                         subject, year, level)
                 elif cfg['mode'] == 'sections':
                     parts, texts, files = census_sections(subject, year, level)
+                elif subject == 'agricultural-science' and year <= AGRI_LEGACY_LAST_YEAR:
+                    parts, texts, files = census_agri_legacy(year, level)
                 else:
                     parts, texts, files = census_merged(subject, year, level, comp)
             except Exception as e:                       # noqa: BLE001

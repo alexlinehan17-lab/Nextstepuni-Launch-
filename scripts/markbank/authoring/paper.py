@@ -751,6 +751,20 @@ class Paper:
                     self.stems.setdefault((q, letter), []).append(
                         f'({found_letter}) {rest}')
                 continue
+            if found_letter and letter is not None and found_letter < letter \
+                    and rest and not re.search(r'[A-Za-z]', rest):
+                # Letters never run backwards inside a question. A lower letter
+                # followed only by figures is a cross-reference a table wrapped
+                # onto a new line: 2021 OL Agricultural Science Q17(b) heads a
+                # column "Calculated at part" / "(a) 80 65 35", and keying that
+                # "(a)" filed (b)(ii) and (b)(iii) under (a) -- two printed
+                # parts read as orphans.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
             if found_letter in ('j', 'k', 'l', 'm') and letter != (
                     'i' if found_letter == 'j'
                     else chr(ord(found_letter) - 1)):

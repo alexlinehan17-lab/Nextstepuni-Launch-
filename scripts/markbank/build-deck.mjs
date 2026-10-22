@@ -573,11 +573,10 @@ const SUBJECTS = {
   },
   'agricultural-science': {
     title: 'Agricultural Science',
-    /* The NCCA specification published 2019 and first examined in 2021 — dated
-     * here because it IS verified: every paper in the corpus (2021-2025) sits on
-     * it, with no syllabus change to straddle. */
+    /* Historical additions override this default through the exam-year
+     * curriculum registry; their current practice filter is a separate field. */
     specVersion: 'lc-agricultural-science-2019',
-    specNote: 'Cards are tagged to the strands of the specification the papers were actually sat\n * under: this one has been the examined specification since 2021.',
+    specNote: 'Current practice topics and the examined curriculum are distinct. Reviewed\n * historical cards resolve their specification through the exam-year registry.',
     figureDir: 'public/exam-figures/agricultural-science',
     blocked: new Set(),
   },
@@ -1531,11 +1530,11 @@ for (const c of cards) {
   if (!fileid) unresolvedPapers++;
 
   out.push({ id: c.id, level, code: `  {
-    ...base, kind: ${q(labelKey ? 'diagram' : 'question')},
+    ...base,${c.qa ? ` qa: ${JSON.stringify(c.qa)},` : ''}${c.curriculumNodeIds ? `\n    ...examCardCurriculum(${q(SUBJECT_ID)}, ${year}, ${JSON.stringify(c.curriculumNodeIds)}),` : ''} kind: ${q(labelKey ? 'diagram' : 'question')},
     year: ${year}, level: ${q(level)},
     paperFileid: ${fileid ? q(fileid) : 'null'},
     schemeCitation: ${q(`Marking points quoted from the SEC marking scheme, ${SUBJECT.title} ${year} ${levelWord} Level — © State Examinations Commission.`)},
-    id: ${q(c.id)}, topicId: ${q(c.topicId)}, conceptId: ${q(c.conceptId)},
+    id: ${q(c.id)}, topicId: ${q(c.topicId)},${c.additionalTopicIds?.length ? ` additionalTopicIds: ${JSON.stringify(c.additionalTopicIds)},` : ''} conceptId: ${q(c.conceptId)},
     section: ${q(c.section)}, questionRef: ${q(c.questionRef)},${c.stem ? `\n    stem: ${q(c.stem)},` : ''}
     questionText: ${q(c.questionText)},
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
@@ -1622,6 +1621,11 @@ if (businessRubrics.length) {
 const moduleImports = SUBJECT_ID === 'applied-maths' ? "import { withReviewedCards } from './reviewed';"
   : SUBJECT_ID === 'french' ? "import { writingCardsForLevel } from './writing';\nimport { readingCardsForLevel } from './reading';\nimport { clozeCardsForLevel } from './cloze';\nimport { listeningCardsForLevel } from './listening';\n"
     : businessRubrics.length ? "import { businessRubricCards } from './rubric';\n" : '';
+// Cards carrying exam-year curriculum nodes (Agricultural Science's reviewed
+// historical papers) spread examCardCurriculum into each card, so their level
+// module imports it. Every other module's import line is unchanged.
+const moduleImportsFor = level => `${moduleImports}${rawCards.some(c => (c.level ?? 'higher') === level && c.curriculumNodeIds?.length)
+  ? "import { examCardCurriculum } from '../../cardCurriculum';\n" : ''}`;
 const moduleFor = (level, cards) => `/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -1641,7 +1645,7 @@ const moduleFor = (level, cards) => `/**
  */
 
 import type { SecCard } from '../../../../types/markBank';
-${moduleImports ? `${moduleImports}\n` : ''}${cards.length ? `
+${moduleImportsFor(level) ? `${moduleImportsFor(level)}\n` : ''}${cards.length ? `
 const base = {
   source: 'sec' as const,
   subjectId: ${q(SUBJECT_ID)},
