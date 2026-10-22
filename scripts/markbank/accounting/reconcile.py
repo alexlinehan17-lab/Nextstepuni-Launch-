@@ -32,7 +32,10 @@ def reconcile():
         if not condition:
             issues.append(message)
 
-    papers = {f'{p.parent.name}/{p.name}': p for p in (ROOT / 'paper-trail-corpus/exampapers').glob('*/LC032*.pdf')}
+    # Reviewed window only: June sittings from 2010. The shared corpus also
+    # holds the 1995-2009 archive (#256), which has no reviews or cards.
+    papers = {f'{p.parent.name}/{p.name}': p for p in (ROOT / 'paper-trail-corpus/exampapers').glob('*/LC032*.pdf')
+              if int(p.parent.name) >= 2010}
     inventory = read(HERE / 'inventory.json')['papers']
     check(set(papers) == {f'{i["year"]}/{i["fileid"]}' for i in inventory}, 'Inventory/corpus editions differ')
     reviews = [read(p) for p in sorted((HERE / 'reviewed').glob('*.json'))]

@@ -170,6 +170,9 @@ def inventory():
     ], cwd=ROOT, text=True)
     manifest = []
     for entry in json.loads(data):
+        # Reviewed window only: June sittings (the deferred sitting reuses year and level).
+        if entry.get('sitting') or entry['year'] < 2010:
+            continue
         if entry['lang'] != 'ev':
             continue
         level = 'hl' if entry['level'] == 'higher' else 'ol'

@@ -28,6 +28,10 @@ def census_applied_maths(verify_sources=True):
         "import {paperIndex} from './scripts/markbank/paperIndex.mjs';"
         "console.log(JSON.stringify(paperIndex['applied-mathematics']));",
     ], cwd=ROOT, text=True))
+    # Reviewed window only: June sittings from 2010. Since #256 the index also
+    # carries the 1996-2009 archive and the deferred sitting, which reuses
+    # (year, level, language) and has no review ledger.
+    entries = [e for e in entries if not e.get('sitting') and e['year'] >= 2010]
     indexed = {(e['year'], e['level'], e['lang']): e for e in entries}
     assert len(indexed) == len(entries), 'Duplicate indexed Applied Mathematics edition'
     review_root = ROOT / 'scripts/markbank/authoring'

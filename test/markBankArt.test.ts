@@ -1,6 +1,7 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
 import { describe, expect, it } from 'vitest';
 import census from '../scripts/markbank/authored/art-census.json';
+import authored from '../components/MarkBank/cards/art/authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { ART_STRANDS } from '../components/MarkBank/deck';
@@ -9,31 +10,55 @@ import { artMarks, suggestRubricGrade } from '../components/MarkBank/SessionScre
 
 const CARDS = [...HIGHER, ...ORDINARY];
 
-describe('complete 2021–2025 Art corpus', () => {
-  it('cards every separately marked task and finite printed route on all ten papers', () => {
-    expect(HIGHER).toHaveLength(222);
-    expect(ORDINARY).toHaveLength(240);
-    expect(CARDS).toHaveLength(462);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(462);
+describe('complete Art corpus, 2010–2026', () => {
+  it('cards every separately marked task on all thirty-four papers', () => {
+    expect(HIGHER).toHaveLength(902);
+    expect(ORDINARY).toHaveLength(854);
+    expect(CARDS).toHaveLength(1756);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(1756);
 
     const censusIds = census.papers.flatMap(paper => paper.cards.map(card => card.cardId));
     expect([...CARDS.map(card => card.id)].sort()).toEqual([...censusIds].sort());
-    expect(census.papers).toHaveLength(10);
-    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(462);
+    expect(census.papers).toHaveLength(34);
+    expect(census.papers.reduce((total, paper) => total + paper.expectedCards, 0)).toBe(1756);
   });
 
   it('keeps the audited task census for each paper', () => {
     const expected = {
-      '2021-higher': 72,
-      '2021-ordinary': 78,
-      '2022-higher': 68,
-      '2022-ordinary': 75,
+      '2010-higher': 58,
+      '2010-ordinary': 57,
+      '2011-higher': 59,
+      '2011-ordinary': 57,
+      '2012-higher': 55,
+      '2012-ordinary': 55,
+      '2013-higher': 64,
+      '2013-ordinary': 68,
+      '2014-higher': 65,
+      '2014-ordinary': 57,
+      '2015-higher': 63,
+      '2015-ordinary': 57,
+      '2016-higher': 62,
+      '2016-ordinary': 57,
+      '2017-higher': 62,
+      '2017-ordinary': 57,
+      '2018-higher': 62,
+      '2018-ordinary': 57,
+      '2019-higher': 62,
+      '2019-ordinary': 57,
+      '2020-higher': 62,
+      '2020-ordinary': 57,
+      '2021-higher': 62,
+      '2021-ordinary': 57,
+      '2022-higher': 62,
+      '2022-ordinary': 57,
       '2023-higher': 26,
       '2023-ordinary': 26,
       '2024-higher': 26,
       '2024-ordinary': 26,
-      '2025-higher': 30,
-      '2025-ordinary': 35,
+      '2025-higher': 26,
+      '2025-ordinary': 26,
+      '2026-higher': 26,
+      '2026-ordinary': 26,
     } as const;
     for (const [paper, count] of Object.entries(expected)) {
       const [year, level] = paper.split('-');
@@ -42,7 +67,7 @@ describe('complete 2021–2025 Art corpus', () => {
     }
   });
 
-  it('does not collapse separately practicable parts or printed alternatives', () => {
+  it('splits separately marked parts and keeps a printed choice as one card unless its options span Atlas headings', () => {
     const legacy = HIGHER.filter(card => card.id.startsWith('art-2021-hl-q1-task'));
     expect(legacy.map(card => card.totalMarks)).toEqual([30, 20]);
     expect(legacy.reduce((sum, card) => sum + card.totalMarks, 0)).toBe(50);
@@ -51,30 +76,66 @@ describe('complete 2021–2025 Art corpus', () => {
     expect(sectionA.map(card => card.id)).toEqual(['art-2023-hl-q1-a', 'art-2023-hl-q1-b']);
     expect(sectionA.map(card => card.totalMarks)).toEqual([5, 5]);
 
-    const movements = HIGHER.filter(card => card.id.startsWith('art-2025-hl-q12-'));
-    expect(movements).toHaveLength(5);
-    expect(new Set(movements.map(card => card.questionText)).size).toBe(5);
-    expect(movements.map(card => card.questionText)).toEqual(expect.arrayContaining([
-      expect.stringContaining('development of Fauvism'),
-      expect.stringContaining('development of Surrealism'),
-    ]));
+    // The student chooses one movement, all five under Modernism: one card
+    // with the printed question, keeping the first movement's established id.
+    const movements = HIGHER.filter(card => card.questionRef.startsWith('2025 HL Q12'));
+    expect(movements.map(card => card.id)).toEqual(['art-2025-hl-q12-fauvism']);
+    expect(movements[0].questionRef).toBe('2025 HL Q12');
+    expect(movements[0].questionText).toContain(
+      'Discuss the development of one of the following: Fauvism, Expressionism, Cubism, Bauhaus, Surrealism.');
+    expect(movements[0].topicId).toBe('art-4-4');
 
-    const embroideryHeadings = ORDINARY.filter(card =>
-      card.questionRef.startsWith('2025 OL Q4(a)'));
-    expect(embroideryHeadings).toHaveLength(10);
-    expect(embroideryHeadings.map(card => card.id)).toContain('art-2025-ol-q4-a');
-    expect(new Set(embroideryHeadings.map(card => card.questionText)).size).toBe(10);
-    expect(embroideryHeadings.every(card => card.totalMarks === 6)).toBe(true);
-    expect(embroideryHeadings.map(card => card.questionText)).toEqual(expect.arrayContaining([
-      expect.stringContaining('headings: colour and texture'),
-      expect.stringContaining('headings: pattern and shape'),
-    ]));
+    // Any two of five headings: one card with the printed instruction.
+    const embroidery = ORDINARY.filter(card => card.questionRef.startsWith('2025 OL Q4(a)'));
+    expect(embroidery.map(card => card.id)).toEqual(['art-2025-ol-q4-a']);
+    expect(embroidery[0].questionText).toBe(
+      '(a) Describe this embroidery using any two of the following headings: colour, texture, line, pattern, shape.');
+    expect(embroidery[0].totalMarks).toBe(6);
     expect(ORDINARY.filter(card => card.id === 'art-2025-ol-q4-b')).toHaveLength(1);
+
+    // A named-artist choice under one heading keeps every printed artist on its one card.
+    const artists = HIGHER.find(card => card.questionRef === '2022 HL Q7')!;
+    for (const artist of ['James Barry (1741-1806)', 'Colin Davidson (b.1968)']) {
+      expect(artists.questionText).toContain(artist);
+    }
+
+    // Options under different Atlas headings keep a card each: the printed
+    // question verbatim, the option in the reference, its own heading.
+    const movements2021 = HIGHER.filter(card => card.questionRef.startsWith('2021 HL Q15(a) · '));
+    expect(movements2021.map(card => card.questionRef.split(' · ')[1])).toEqual(['Baroque', 'Rococo', 'Cubism', 'Futurism']);
+    expect(new Set(movements2021.map(card => card.questionText)).size).toBe(1);
+    expect(movements2021[0].questionText).toContain('one of the following art styles or movements');
+    expect(movements2021.map(card => card.topicId)).toEqual(['art-4-2', 'art-4-2', 'art-4-4', 'art-4-4']);
+    for (const ref of ['2021 HL Q14(a)', '2021 HL Q15(a)', '2022 HL Q14(a)', '2022 HL Q15(a)', '2021 OL Q14(a)', '2022 OL Q14(a)']) {
+      const [year, level] = [Number(ref.slice(0, 4)), ref.includes(' HL ') ? 'higher' : 'ordinary'];
+      const family = CARDS.filter(card => card.year === year && card.level === level && card.questionRef.startsWith(`${ref} · `));
+      expect(family.length, ref).toBeGreaterThan(1);
+      expect(new Set(family.map(card => card.topicId)).size, ref).toBeGreaterThan(1);
+      expect(new Set(family.map(card => card.questionText)).size, ref).toBe(1);
+    }
+
+    // 2026 OL Q12: four Modernist artists under one heading, so one card with
+    // the printed list; it was first built as one card, so it has the plain id.
+    const modernists = ORDINARY.filter(card => card.questionRef.startsWith('2026 OL Q12'));
+    expect(modernists.map(card => card.id)).toEqual(['art-2026-ol-q12']);
+    expect(modernists[0].questionText).toContain(
+      'Examine the work of one of the following artists: Pablo Picasso, Salvador Dalí, Edvard Munch, Käthe Kollwitz.');
+    expect(modernists[0].topicId).toBe('art-4-4');
+
+    // Guard: no two cards for one printed task (same paper and question).
+    const seen = new Map<string, string>();
+    for (const card of CARDS) {
+      const key = `${card.year} ${card.level} ${card.questionRef}`;
+      expect(seen.get(key), `${card.id} repeats ${seen.get(key)}`).toBeUndefined();
+      seen.set(key, card.id);
+      expect(card.stem ?? '', card.id).not.toMatch(/^Printed choice:/);
+    }
   });
 
   it('uses real paper prompts without page furniture or fabricated screens', () => {
     const bad = CARDS.filter(card =>
-      card.questionText.length < 20
+      // A lettered part can be short and printed (2019 OL Q1(a) "Name this site.").
+      (card.questionText.length < 20 && !/^\([abc]\) \S/.test(card.questionText))
       || /Leaving Certificate Examination|Optional (?:Planning|Answer) Space|Acknowledgements|Copyright notice|Do not write on this page|There is no examination material/i.test(card.questionText));
     expect(bad.map(card => card.id)).toEqual([]);
     expect(CARDS.every(card => card.questionRef.startsWith(
@@ -125,8 +186,8 @@ describe('complete 2021–2025 Art corpus', () => {
     const requiringIllustration = CARDS.filter(card =>
       /accompanying sheet/i.test(`${card.stem ?? ''} ${card.questionText}`));
     const withIllustration = CARDS.filter(card => card.sourceMaterial);
-    expect(requiringIllustration).toHaveLength(149);
-    expect(withIllustration).toHaveLength(156);
+    expect(requiringIllustration).toHaveLength(641);
+    expect(withIllustration).toHaveLength(673);
     expect(requiringIllustration.filter(card => !card.sourceMaterial).map(card => card.id)).toEqual([]);
 
     for (const card of withIllustration) {
@@ -135,8 +196,12 @@ describe('complete 2021–2025 Art corpus', () => {
         pages: [expect.any(Number)],
       });
       expect(card.sourceMaterial!.pages[0]).toBeGreaterThanOrEqual(1);
-      expect(card.sourceMaterial!.pages[0]).toBeLessThanOrEqual(2);
-      expect(card.sourceMaterial!.sourceFileid).toMatch(/^LC014[AG]LP004BV$/);
+      // Two landscape pages from 2011; the 2010 sheets are four portrait pages.
+      expect(card.sourceMaterial!.pages[0]).toBeLessThanOrEqual(card.year === 2010 ? 4 : 2);
+      // The bilingual sheet from 2021; the English sheet earlier (004 from
+      // 2019, C00 2011-2018, 013 in 2010).
+      expect(card.sourceMaterial!.sourceFileid)
+        .toMatch(card.year >= 2021 ? /^LC014[AG]LP004BV$/ : /^LC014[AG]LP(?:004|C00|013)EV$/);
       expect(card.sourceMaterial!.sourceFileid).not.toBe(card.paperFileid);
     }
   });
@@ -149,5 +214,72 @@ describe('complete 2021–2025 Art corpus', () => {
     expect(displayedTopics).toHaveLength(17);
     expect(displayedTopics).not.toContain('art-6-4');
     expect(new Set(CARDS.map(card => card.topicId))).toEqual(new Set(displayedTopics));
+  });
+
+  it('shows only the scheme\'s printed wording under the SEC\'s name on an audited year', () => {
+    type Printed = {
+      short: { lead: string; bands: Record<string, string[]> };
+      long: Array<{ id: string; label: string; lead: string; bands: Record<string, { marks: number[]; guidance: string[] }> }>;
+      notes: Record<string, { text: string[] }>;
+    };
+    const printed = authored.descriptors as Record<string, Printed>;
+    const audited = new Set<number>(authored.auditedYears);
+    expect([...audited]).toEqual([2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]);
+    // The condensed wording these cards used to show is gone from them.
+    const condensed = 'Limited coherence, focus, visual-art terminology and/or relevant sketches.';
+    const written = 'Understand the demands of the chosen question and build the response around it.';
+
+    const auditedCards = CARDS.filter(card => audited.has(card.year) && card.year >= 2023);
+    expect(auditedCards).toHaveLength(208);
+    for (const card of auditedCards) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      const scheme = printed[`${card.year}-${card.level}`];
+      const raw = authored.cards.find(entry => entry.id === card.id)!;
+      expect(JSON.stringify(card.rubric), card.id).not.toContain(condensed);
+      expect(JSON.stringify(card.rubric), card.id).not.toContain(written);
+      if (card.section === 'A') {
+        const [criterion] = card.rubric.criteria;
+        expect(criterion.guidance).toEqual(raw.criteria![0].guidance);
+        for (const band of criterion.bands!) {
+          expect(band.lead).toBe(scheme.short.lead);
+          expect(band.guidance).toEqual(scheme.short.bands[band.level]);
+        }
+        expect(card.rubric.markingGuideNote).toBe(scheme.notes['current-short-descriptors'].text.join(' '));
+      } else {
+        expect(card.rubric.criteria.map(criterion => criterion.label)).toEqual(scheme.long.map(entry => entry.label));
+        card.rubric.criteria.forEach((criterion, index) => {
+          expect(criterion.guidance).toEqual([]);
+          for (const band of criterion.bands!) {
+            expect(band.lead).toBe(scheme.long[index].lead);
+            expect(band.guidance).toEqual(scheme.long[index].bands[band.level].guidance);
+            expect(band.marks).toEqual(scheme.long[index].bands[band.level].marks);
+          }
+        });
+        expect(card.rubric.markingGuideNote).toBe(scheme.notes['current-long-descriptors'].text.join(' '));
+      }
+    }
+
+    // The 2021-2022 component cards show the scheme's own rows: no written
+    // "SEC note:" prefix, the printed Marks column summing to the part.
+    for (const card of CARDS.filter(entry => entry.year <= 2022)) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      expect(card.rubric.markingGuideNote, card.id).toBe('');
+      for (const criterion of card.rubric.criteria) {
+        expect(criterion.guidance.some(text => text.startsWith('SEC note')), card.id).toBe(false);
+        expect(criterion.rowMarks?.reduce((sum, mark) => sum + mark, 0), card.id).toBe(criterion.maxMarks);
+        if (criterion.rowNotes) expect(criterion.rowNotes).toHaveLength(criterion.guidance.length);
+      }
+    }
+
+    // Our guidance is on every card, apart from the SEC's, and no card shows
+    // the condensed or written wording under the SEC's name.
+    for (const card of CARDS) {
+      if (card.rubric.system !== 'art') throw new Error(`${card.id}: wrong rubric`);
+      expect(card.rubric.practiceNotes?.length, card.id).toBeGreaterThan(0);
+      expect(audited.has(card.year), card.id).toBe(true);
+      const sec = JSON.stringify(card.rubric.criteria) + card.rubric.markingGuideNote;
+      expect(sec, card.id).not.toContain(condensed);
+      expect(sec, card.id).not.toContain(written);
+    }
   });
 });
