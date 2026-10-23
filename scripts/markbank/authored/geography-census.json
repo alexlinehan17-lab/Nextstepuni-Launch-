@@ -19,10 +19,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 2929,
-  "includedBaseTasks": 2928,
+  "paperBaseTasks": 3040,
+  "includedBaseTasks": 3039,
   "excludedBaseTasks": 1,
-  "authoredCards": 3135,
+  "authoredCards": 3260,
   "baseTasks": [
     {
       "id": "geography-2014-hl-p1-q1",
@@ -949,6 +949,1005 @@
       "part": 2,
       "questionRef": "2014 HL Part 2 Q24",
       "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q1",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q1(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q1-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q1(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q2",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q2(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q2-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q2(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q3",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q3(i)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q3-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q3(ii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q4",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q4",
+      "title": "Physical Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q5",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q5(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q5-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q5(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q5-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q5(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q6",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q6(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q6-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q6(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q6-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q6(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q7",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q7(i)",
+      "title": "Irish Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q7-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q7(ii)",
+      "title": "Irish Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q8",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q8(i)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q8-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q8(ii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q8-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q8(iii)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q8-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q8(iv)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q8-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q8(v)",
+      "title": "Weather Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q9",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q9(i)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q9-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q9(ii)",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q10",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q10(i)",
+      "title": "Satellite Image Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q10-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q10(ii)",
+      "title": "Satellite Image Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q11",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q11(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q11-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q11(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q11-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q11(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q11-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q11(iv)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q11-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q11(v)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p1-q12",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2014 OL Part 1 Q12",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1A(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1A(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1A(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1a-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1A(iv)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1a-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1A(v)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1B(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1B(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1B(iii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q1c-quarrying",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q1C",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2A(i)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2A(ii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2A(iii)",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2B(i)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2B(ii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2B(iii)",
+      "title": "Karst Landscapes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q2c-river-processes",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q2C",
+      "title": "Human Interaction",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q3a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q3A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q3b-route-i-coastal-processes",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q3B",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q3c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q3C",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q4a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q4A",
+      "title": "Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q4b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q4B",
+      "title": "Economic Activity in a European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q4c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q4C",
+      "title": "Urban Growth in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5A(i)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5A(ii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5A(iii)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5a-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5A(iv)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5a-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5A(v)",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5B",
+      "title": "Secondary Economic Activity – Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5C(i)",
+      "title": "Tourism in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5c-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5C(ii)",
+      "title": "Tourism in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q5c-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q5C(iii)",
+      "title": "Tourism in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q6a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q6A",
+      "title": "European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q6b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q6B(i)",
+      "title": "Agriculture in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q6b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q6B(ii)",
+      "title": "Agriculture in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q6b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q6B(iii)",
+      "title": "Agriculture in an Irish Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q6c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q6C",
+      "title": "Regions and Culture",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7A(i)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7A(ii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7A(iii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7a-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7A(iv)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7a-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7A(v)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7B(i)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7B(ii)",
+      "title": "Economic Activity and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7C(i)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7c-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7C(ii)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q7c-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q7C(iii)",
+      "title": "Multinational Company",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8A(i)",
+      "title": "Energy Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8A(ii)",
+      "title": "Energy Use",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8b-tourism",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8B(i)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8b-ii-tourism",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8B(ii)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8b-iii-tourism",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8B(iii)",
+      "title": "Economic Development – Developed Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8C(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8c-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8C(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q8c-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q8C(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q9a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q9A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q9b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q9B(i)",
+      "title": "Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q9b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q9B(ii)",
+      "title": "Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q9b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q9B(iii)",
+      "title": "Environmental Pollution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q9c-common-agricultural-policy",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q9C",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10B",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10C(i)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10c-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10C(ii)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10c-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10C(iii)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q10c-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q10C(iv)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11A(i)",
+      "title": "Travel and Work",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11A(ii)",
+      "title": "Travel and Work",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11a-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11A(iii)",
+      "title": "Travel and Work",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11a-iv",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11A(iv)",
+      "title": "Travel and Work",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11a-v",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11A(v)",
+      "title": "Travel and Work",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11B(i)",
+      "title": "Historic Settlement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11B(ii)",
+      "title": "Historic Settlement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11C(i)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11c-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11C(ii)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q11c-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q11C(iii)",
+      "title": "Developing World City",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12a",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12A(i)",
+      "title": "World Cities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12a-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12A(ii)",
+      "title": "World Cities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12b",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12B(i)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12b-ii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12B(ii)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12b-iii",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12B(iii)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2014-ol-p2-q12c",
+      "year": 2014,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2014 OL Part 2 Q12C",
+      "title": "Development of Towns",
       "status": "authored"
     },
     {
@@ -26397,6 +27396,15 @@
       "reviewed": true
     },
     {
+      "year": 2014,
+      "level": "ordinary",
+      "paperBaseTasks": 111,
+      "includedBaseTasks": 111,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 125,
+      "reviewed": true
+    },
+    {
       "year": 2015,
       "level": "higher",
       "paperBaseTasks": 105,
@@ -26660,6 +27668,71 @@
       "questionRef": "2014 HL Part 2 Q12C",
       "classification": "finite-expanded",
       "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q1C",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q2C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q3B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q4B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q8B(i)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q8B(ii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q8B(iii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2014 OL Part 2 Q9C",
+      "classification": "finite-expanded",
+      "variants": 4,
       "kinds": [
         "reviewed-printed-route"
       ]
