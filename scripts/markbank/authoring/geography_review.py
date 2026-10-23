@@ -18,6 +18,7 @@ from __future__ import annotations
 import difflib
 import hashlib
 import itertools
+import json
 import os
 import re
 import unicodedata
@@ -74,6 +75,19 @@ def slug(value: str, limit: int = 72) -> str:
     return value[:limit].rstrip('-') or 'route'
 
 
+# Symbol-font glyphs whose ToUnicode some scheme gets wrong (the 2014 schemes
+# print the Wingdings arrowhead bullet as "¾"), keyed by font family and glyph
+# id. Derived from the corpus by geography_glyphs.py, never typed.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       'glyphmap-geography.json'), encoding='utf-8') as _handle:
+    GLYPH_IDS = {family: {int(gid): row['char'] for gid, row in ids.items()}
+                 for family, ids in json.load(_handle).items()}
+
+
+def _undecoded(code: int) -> bool:
+    return code == 0xFFFD or 0x0100 < code < 0x2000
+
+
 class Document:
     """One SEC PDF read as compacted page text and as printed lines."""
 
@@ -83,6 +97,24 @@ class Document:
         self.path = path
         self.doc = fitz.open(path)
         self._text: dict[int, str] = {}
+        self._repairs: dict[int, dict[tuple[float, float], str]] = {}
+
+    def glyph_repairs(self, page: int) -> dict[tuple[float, float], str]:
+        """Drawing origin -> character for each glyph on the page that the
+        text layer fails to decode and the derived glyph-id map names."""
+        if page not in self._repairs:
+            out: dict[tuple[float, float], str] = {}
+            for trace in self.doc[page - 1].get_texttrace():
+                name = trace['font'].split('+')[-1]
+                ids = next((ids for family, ids in GLYPH_IDS.items()
+                            if name.startswith(family)), None)
+                if not ids:
+                    continue
+                for code, gid, origin, _bbox in trace['chars']:
+                    if gid in ids and _undecoded(code):
+                        out[tuple(origin)] = ids[gid]
+            self._repairs[page] = out
+        return self._repairs[page]
 
     def __len__(self) -> int:
         return len(self.doc)
@@ -133,23 +165,41 @@ class Document:
         if clip is not None:
             w, h = pdf_page.rect.width, pdf_page.rect.height
             rect = fitz.Rect(clip[0] * w, clip[1] * h, clip[2] * w, clip[3] * h)
-        fragments: list[tuple[float, float, float, str]] = []
-        for block in pdf_page.get_text('dict', clip=rect)['blocks']:
+        fragments: list[tuple[float, float, float, str, float]] = []
+        repairs = self.glyph_repairs(page)
+        # A page with an undecoded glyph is read character by character so
+        # each one is replaced at its own drawing origin; every other page
+        # reads exactly as before.
+        mode = 'rawdict' if repairs else 'dict'
+
+        def span_text(span: dict[str, Any]) -> str:
+            if mode == 'dict':
+                return span['text']
+            return ''.join(repairs.get(tuple(char['origin']), char['c']) for char in span['chars'])
+
+        for block in pdf_page.get_text(mode, clip=rect)['blocks']:
             for line in block.get('lines', ()):
-                text = clean(''.join(span['text'] for span in line['spans']))
+                text = clean(''.join(span_text(span) for span in line['spans']))
                 if text.strip():
+                    # The text's own baseline: a raised ordinal ("3rd") lifts
+                    # the line's box but not its baseline.
+                    base = max(span['origin'][1] for span in line['spans'])
                     fragments.append((line['bbox'][1], line['bbox'][0],
-                                      line['bbox'][3], text))
+                                      line['bbox'][3], text, base))
         fragments.sort()
         rows: list[list[Any]] = []
-        for top, left, bottom, text in fragments:
-            if rows and abs(rows[-1][0] - top) <= 2.5:
+        for top, left, bottom, text, base in fragments:
+            # One printed row: tops within 2.5pt, or a lone bullet glyph on the
+            # baseline of the line beside it (whose superscript raised its top).
+            lone = text.strip() == '•' or [c for _, c in rows[-1][2]] == ['•'] if rows else False
+            if rows and (abs(rows[-1][0] - top) <= 2.5
+                         or (lone and abs(rows[-1][4] - base) <= 1.0)):
                 rows[-1][2].append((left, text))
                 rows[-1][3] = max(rows[-1][3], bottom)
             else:
-                rows.append([top, left, [(left, text)], bottom])
+                rows.append([top, left, [(left, text)], bottom, base])
         out: list[tuple[float, float, float, str, bool]] = []
-        for top, _left, cells, bottom in rows:
+        for top, _left, cells, bottom, _base in rows:
             cells.sort()
             # A wrapped line is sometimes set at the bullet's x with leading
             # spaces standing in for the indent.
