@@ -90,6 +90,14 @@ REVIEW_AUDIT_OUT = os.path.join(
 SIZES = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'sizes.json')
 ATLAS_OUT = os.path.join(
     ROOT, 'data', 'examTopics', 'geography-reviewed-question-runtime.json')
+# The StudyClix heading crosswalk (written by
+# scripts/paper-trail/build-browser-question-parity-crosswalks.ts). Its
+# shared-booklet targets are re-keyed here, Part One to 1000 + n; re-run this
+# generator after that builder.
+LOCAL_CROSSWALK = os.path.join(ROOT, 'data', 'examTopics', 'geography-local-crosswalk.json')
+# A shared 2010-2019 booklet's Part One question files in the Atlas as
+# n = 1000 + its printed number (Part Two keeps n): see geography_atlas_anchors.py.
+PART_ONE_ATLAS_OFFSET = 1000
 CROSSWALK = os.path.join(
     ROOT, 'data', 'examTopics', 'geography-curriculum-crosswalk.json')
 # The exact-question join the Atlas already ships. A reviewed question's row
@@ -1335,17 +1343,19 @@ def reviewed_sitting(year: int, level: str, review: Any,
                    for t in review.TASKS if t.legacy and t.sub
                    for card_id in dict.fromkeys(
                        [t.card_id, *(r.card_id for r in t.routes if r.legacy)])]
-    # Before 2020 one booklet printed both parts. Paper Trail and the shipped
-    # join know that booklet's questions only as its Part Two numbers under
-    # the paper key "single"; a Part One question has no question identity
-    # there to file under (its cards still carry their own Atlas topics).
+    # Before 2020 one booklet printed both parts, and Part Two restarts at Q1.
+    # Paper Trail's Viewer numbers that booklet's Part Two 1-12 (Higher options
+    # to 24) under the paper key "single", so Part Two keeps n and Part One
+    # takes its own identity, n = 1000 + its printed number. The hosted anchors
+    # the Atlas reads for both are built by geography_atlas_anchors.py.
     single = fileids[(year, level, 1)] == fileids[(year, level, 2)]
     atlas_rows = [
         {'level': level, 'year': year, 'paperKey': 'single' if single else f'p{part}',
-         'fileid': fileids[(year, level, part)] + '.pdf', 'n': n,
+         'fileid': fileids[(year, level, part)] + '.pdf',
+         'n': str(PART_ONE_ATLAS_OFFSET + int(n)) if single and part == 1 else n,
+         'part': part, 'printed': n,
          'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic))}
-        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))
-        if not (single and part == 1)]
+        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
     audit = {
         'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
         'reviewedAt': '2026-10-11', 'sources': sources,
@@ -1366,6 +1376,36 @@ def reviewed_sitting(year: int, level: str, review: Any,
     return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
             'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows,
             'aliases': aliases, 'excluded': excluded_rows}
+
+
+PART_TWO_HEADING = re.compile(r'Part\s+[ABC]|Question\s+\d+\s*[ABC]\b', re.I)
+
+
+def shared_booklet_n(association: dict[str, Any], target: dict[str, Any],
+                     reviewed_topics: dict[tuple[str, int, int, str], set[str]]) -> str:
+    """The Atlas number of a StudyClix heading on a shared 2010-2019 booklet.
+
+    The crosswalk joined each heading to the booklet's question by its printed
+    number alone, so Part One Q8 and Part Two Q8 met under one identity. The
+    part is decided by evidence first: the topic the reference gives the
+    heading is proven by only one part's review of that number. When neither
+    or both reviews prove it, the heading's own shape decides: Part Two
+    questions print an A/B/C part (or are Higher option essays, Q13-24), and
+    StudyClix files the plain Part One questions under Section 1. Part One
+    takes n = 1000 + its printed number (geography_atlas_anchors.py)."""
+    printed = int(target['n']) % PART_ONE_ATLAS_OFFSET
+    if printed > 12:
+        return str(printed)
+    topic = association['topicId']
+    key = (target['level'], target['year'])
+    in_one = topic in reviewed_topics.get((*key, 1, str(printed)), set())
+    in_two = topic in reviewed_topics.get((*key, 2, str(printed)), set())
+    if in_one != in_two:
+        part_one = in_one
+    else:
+        heading = association['heading']
+        part_one = bool(re.search(r'Section\s+1\b', heading)) and not PART_TWO_HEADING.search(heading)
+    return str(PART_ONE_ATLAS_OFFSET + printed) if part_one else str(printed)
 
 
 def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
@@ -1577,37 +1617,62 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     }
     with open(REFERENCE_ATLAS, encoding='utf-8') as handle:
         reference = json.load(handle)
-    shipped: dict[tuple[str, int, str, str, str], list[str]] = {}
-    for level_code, lang_code, year, paper_key, fileid, n, indexes in reference['questionMappings']:
-        if lang_code != 'e':
+    # The shipped join is the StudyClix crosswalk's matched associations,
+    # aggregated per printed question (geography-question-runtime.json is
+    # exactly that aggregation). Its topics keep the shipped order.
+    shipped_order = {topic: index for index, topic in enumerate(reference['topicIds'])}
+    reviewed_topics = {(row['level'], row['year'], row['part'], row['printed']): set(row['topicIds'])
+                       for row in atlas_rows}
+    with open(LOCAL_CROSSWALK, encoding='utf-8') as handle:
+        crosswalk = json.load(handle)
+    shipped: dict[tuple[str, str, int, str, str, str], set[str]] = {}
+    for association in crosswalk['associations']:
+        if association['resolution'] != 'matched':
             continue
-        key = ('higher' if level_code == 'h' else 'ordinary', year, paper_key, fileid, str(n))
-        shipped.setdefault(key, []).extend(reference['topicIds'][i] for i in indexes)
+        for target in association.get('targets') or [association['target']]:
+            if target['paperKey'] == 'single' and target['year'] < 2020:
+                target['n'] = shared_booklet_n(association, target, reviewed_topics)
+            key = (target['level'], 'e' if target['lang'] == 'ev' else 'i', target['year'],
+                   target['paperKey'], target['fileid'], str(target['n']))
+            shipped.setdefault(key, set()).add(association['topicId'])
+    out_rows: list[dict[str, Any]] = []
     for row in atlas_rows:
-        key = (row['level'], row['year'], row['paperKey'], row['fileid'], row['n'])
-        # The shipped topics first, in the shipped order, then each topic the
-        # review adds by weight: a review adds, never removes or reorders.
-        row['topicIds'] = list(dict.fromkeys([*shipped.get(key, []), *row['topicIds']]))
-    topic_list = sorted({topic for row in atlas_rows for topic in row['topicIds']})
+        langs = ['e']
+        # A shared booklet's Irish edition prints the same questions under the
+        # same numbers: its rows take the same identities and reviewed topics
+        # (a mechanical mirror; no Irish content is re-reviewed). Only the
+        # numbers its shipped join and Paper Trail maps carry (1-12, and Part
+        # One's 1001-1012) are mirrored.
+        if row['paperKey'] == 'single' and int(row['printed']) <= 12:
+            langs.append('i')
+        for lang in langs:
+            fileid = row['fileid'] if lang == 'e' else row['fileid'].replace('EV.pdf', 'IV.pdf')
+            # Shipped topics first, in the shipped order, then each topic the
+            # review adds by weight: a review adds, never removes or reorders.
+            inherited = sorted(shipped.get((row['level'], lang, row['year'], row['paperKey'], fileid, row['n']), ()),
+                               key=lambda topic: shipped_order[topic])
+            out_rows.append({**row, 'lang': lang, 'fileid': fileid,
+                             'topicIds': list(dict.fromkeys([*inherited, *row['topicIds']]))})
+    topic_list = sorted({topic for row in out_rows for topic in row['topicIds']})
     atlas = {
         'schemaVersion': 1,
         'subjectId': 'geography',
         'topicIds': topic_list,
         'questionMappings': [
-            ['h' if row['level'] == 'higher' else 'o', 'e', row['year'], row['paperKey'],
+            ['h' if row['level'] == 'higher' else 'o', row['lang'], row['year'], row['paperKey'],
              row['fileid'], row['n'], [topic_list.index(t) for t in row['topicIds']]]
-            for row in atlas_rows],
+            for row in out_rows],
     }
     audit = {
         'schemaVersion': 1, 'subjectId': 'geography',
         'scope': 'English (EV) editions; Irish editions are deferred.',
         'reviewedSittings': reviewed_audits,
     }
-    return cards, census, audit, atlas
+    return cards, census, audit, atlas, crosswalk
 
 
-def serialised() -> tuple[str, str, str, str]:
-    cards, census, audit, atlas = make_corpus()
+def serialised() -> tuple[str, str, str, str, str]:
+    cards, census, audit, atlas, crosswalk = make_corpus()
     payload = {
         'meta': {
             'subjectId': 'geography',
@@ -1624,7 +1689,8 @@ def serialised() -> tuple[str, str, str, str]:
     return (json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
             json.dumps(census, ensure_ascii=False, indent=2) + '\n',
             json.dumps(audit, ensure_ascii=False, indent=2) + '\n',
-            json.dumps(atlas, ensure_ascii=False, separators=(',', ':')) + '\n')
+            json.dumps(atlas, ensure_ascii=False, separators=(',', ':')) + '\n',
+            json.dumps(crosswalk, ensure_ascii=False, indent=2) + '\n')
 
 
 def main() -> int:
@@ -1638,7 +1704,7 @@ def main() -> int:
             for kind in ('map', 'legend', 'aerial'):
                 if COMPANIONS[year][kind]:
                     companion_path(year, COMPANIONS[year][kind], fetch=True)
-    authored, census, audit, atlas = serialised()
+    authored, census, audit, atlas, crosswalk = serialised()
     # The deck-size manifest is shared by every subject; only the Geography
     # entry is ours to restate.
     with open(SIZES, encoding='utf-8') as handle:
@@ -1647,7 +1713,7 @@ def main() -> int:
     sizes['geography'] = {level: sum(card['level'] == level for card in deck)
                           for level in LEVELS}
     outputs = ((OUT, authored), (CENSUS_OUT, census),
-               (REVIEW_AUDIT_OUT, audit), (ATLAS_OUT, atlas),
+               (REVIEW_AUDIT_OUT, audit), (ATLAS_OUT, atlas), (LOCAL_CROSSWALK, crosswalk),
                (SIZES, json.dumps(sizes, indent=1) + '\n'))
     if args.check:
         failures = []

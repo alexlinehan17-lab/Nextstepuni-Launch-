@@ -20,6 +20,9 @@ import {
 import { isRubricCard, tariffReconciles, type SecRubricCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { waysInSourceFromMarkBank } from '../components/WaysIn/sources';
+import { paperRegionFor, questionsInDisplayOrder } from '../components/PaperTrail/paperRegion';
+import { questionLabel, questionsForTopics } from '../components/PaperTrail/topics';
+import type { PaperAnswerMap } from '../types/paperTrail';
 
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
@@ -1764,8 +1767,10 @@ describe('independently reviewed Geography sittings', () => {
       row[4] === 'LC005ALP042EV.pdf' && row[5] === '5')).toBe(true);
   });
 
-  // Before 2020 both parts share one booklet, and the Topic Atlas files only
-  // the Part Two (long) questions of it, under the 'single' paper key.
+  // Before 2020 both parts share one booklet and Part Two restarts at Q1. Part
+  // Two keeps its printed number under the 'single' paper key (Paper Trail's
+  // Viewer chips number it so); Part One files as its own question, n = 1000 +
+  // its printed number. The booklet's Irish edition mirrors both identities.
   it.each([
     [2019, 'higher', 24, 'LC005ALP000EV.pdf'],
     [2019, 'ordinary', 12, 'LC005GLP000EV.pdf'],
@@ -1787,33 +1792,127 @@ describe('independently reviewed Geography sittings', () => {
     [2011, 'ordinary', 12, 'LC005GLP000EV.pdf'],
     [2010, 'higher', 24, 'LC005ALP000EV.pdf'],
     [2010, 'ordinary', 12, 'LC005GLP000EV.pdf'],
-  ] as const)('files every reviewed %s %s Part Two task of the shared booklet in the Topic Atlas',
+  ] as const)('files every reviewed %s %s task of the shared booklet as its own Atlas question',
     (year, level, questions, fileid) => {
     const review = sitting(year, level);
-    const union = new Map<string, Set<string>>();
+    const unions = { '1': new Map<string, Set<string>>(), '2': new Map<string, Set<string>>() };
     for (const task of review.tasks as ReviewedTask[]) {
       for (const cardId of task.cards) {
         expect(authoredById.get(cardId)?.atlasTopicIds, cardId).toBeDefined();
       }
-      const match = task.questionRef.match(/Part (\d) Q(\d+)/)!;
-      if (match[1] !== '2') continue;
-      const ids = union.get(match[2]) ?? new Set<string>();
+      const [, part, n] = task.questionRef.match(/Part (\d) Q(\d+)/)! as unknown as [string, '1' | '2', string];
+      const ids = unions[part].get(n) ?? new Set<string>();
       for (const id of task.atlasTopicIds) ids.add(id);
-      union.set(match[2], ids);
+      unions[part].set(n, ids);
     }
-    expect(union.size).toBe(questions);
+    expect(unions['2'].size).toBe(questions);
+    expect(unions['1'].size).toBe(12);
+    const ivFileid = fileid.replace('EV.pdf', 'IV.pdf');
     const rows = reviewedRuntime.questionMappings.filter(row =>
       row[0] === levelRef(level)[0].toLowerCase() && row[2] === year);
-    expect(rows).toHaveLength(questions);
-    expect(rows.every(row => row[3] === 'single' && row[4] === fileid)).toBe(true);
-    for (const [n, ids] of union) {
+    expect(rows.filter(row => row[1] === 'e')).toHaveLength(questions + 12);
+    expect(rows.filter(row => row[1] === 'i')).toHaveLength(24);
+    expect(rows.every(row => row[3] === 'single' && row[4] === (row[1] === 'e' ? fileid : ivFileid))).toBe(true);
+    for (const [n, ids] of unions['1']) {
+      const atlasN = String(1000 + Number(n));
+      const shipped = shippedAtlasTopics(level, year, 'single', fileid, n);
+      for (const [lang, file] of [['ev', fileid], ['iv', ivFileid]] as const) {
+        // Part One's row carries its own reviewed topics, plus only the
+        // shipped-join topics the crosswalk attributes to Part One.
+        const filed = examTopicIdsForQuestion('geography', level, year, 'main', atlasN, 'single', lang, file);
+        expect(filed, `${lang} Part One Q${n}`).toEqual(expect.arrayContaining([...ids]));
+        expect(filed.filter(id => !ids.has(id) && !shipped.has(id)), `${lang} Part One Q${n}`).toEqual([]);
+      }
+    }
+    for (const [n, ids] of unions['2']) {
       const filed = examTopicIdsForQuestion('geography', level, year, 'main', n, 'single', 'ev', fileid);
       expect(filed, `Part Two Q${n}`).toEqual(expect.arrayContaining([...ids]));
+      if (Number(n) <= 12) {
+        expect(examTopicIdsForQuestion('geography', level, year, 'main', n, 'single', 'iv', ivFileid),
+          `iv Part Two Q${n}`).toEqual(expect.arrayContaining([...ids]));
+      }
+      // The shipped join filed Part One and Part Two under one number: each of
+      // its current-course topics is still filed, on this row or on Part One's.
+      const partOne = Number(n) <= 12
+        ? examTopicIdsForQuestion('geography', level, year, 'main', String(1000 + Number(n)), 'single', 'ev', fileid)
+        : [];
       const shipped = shippedAtlasTopics(level, year, 'single', fileid, n);
-      expect(filed, `Part Two Q${n} keeps the shipped join`).toEqual(expect.arrayContaining(
-        [...shipped].filter(id => examTopicDefinition(id)?.course !== 'new')));
+      expect([...shipped].filter(id => examTopicDefinition(id)?.course !== 'new'
+        && !filed.includes(id) && !partOne.includes(id)), `Part Two Q${n} keeps the shipped join`).toEqual([]);
       expect(filed.filter(id => !ids.has(id) && !shipped.has(id)), `Part Two Q${n}`).toEqual([]);
     }
+  });
+
+  it('files every card under its own printed question, listed under each of its headings', () => {
+    // 2026-10-23: the 649 cards of 2010-2019 Part One once resolved to the
+    // Part Two question sharing their number; now every card has its own.
+    const listed = new Map<string, Set<string>>();
+    const under = (topic: string) => {
+      if (!listed.has(topic)) {
+        listed.set(topic, new Set(questionsForTopics('geography', [topic])
+          .filter(q => q.lang === 'ev').map(q => `${q.year}|${q.level}|${q.paperKey}|${q.fileid}|${q.n}`)));
+      }
+      return listed.get(topic)!;
+    };
+    let partOne = 0;
+    const missing: string[] = [];
+    for (const card of ALL) {
+      const [, part, printed] = card.questionRef.match(/Part ([12]) Q(\d+)/)!;
+      const shared = card.year < 2020;
+      const paperKey = shared ? 'single' : `p${part}`;
+      const n = shared && part === '1' ? String(1000 + Number(printed)) : printed;
+      if (shared && part === '1') partOne += 1;
+      const fileid = `${card.paperFileid}.pdf`;
+      const filed = examTopicIdsForQuestion('geography', card.level as 'higher' | 'ordinary', card.year, 'main', n,
+        paperKey, 'ev', fileid);
+      for (const topic of authoredById.get(card.id)?.atlasTopicIds ?? []) {
+        if (!filed.includes(topic)) missing.push(`${card.id}: ${topic} not filed for Q${n}`);
+        else if (!under(topic).has(`${card.year}|${card.level}|${paperKey}|${fileid}|${n}`)) {
+          missing.push(`${card.id}: Q${n} not listed under ${topic}`);
+        }
+      }
+    }
+    expect(partOne).toBe(649);
+    expect(missing).toEqual([]);
+  });
+
+  it('anchors both parts of every shared booklet for the Atlas without moving a Viewer chip', () => {
+    const outside: string[] = [];
+    for (let year = 2010; year <= 2019; year++) {
+      for (const fileid of ['LC005ALP000EV.pdf', 'LC005GLP000EV.pdf', 'LC005ALP000IV.pdf', 'LC005GLP000IV.pdf']) {
+        const read = (dir: string) => JSON.parse(readFileSync(
+          resolve(__dirname, '..', dir, String(year), `${fileid}.json`), 'utf-8')) as PaperAnswerMap;
+        const hosted = read('public/paper-anchors');
+        const sidecar = read('scripts/paper-trail/answers');
+        const partTwo = hosted.q.filter(q => Number(q.n) < 1000);
+        const partOneAnchors = hosted.q.filter(q => Number(q.n) > 1000);
+        // Part Two: the Viewer sidecar's own numbers, pages and bands (a merge
+        // from the Atlas into the Viewer's map changes nothing).
+        expect(partTwo.map(q => [q.n, q.pP, q.pY, q.label]), `${year}/${fileid}`)
+          .toEqual(sidecar.q.map(q => [q.n, q.pP, q.pY, q.label]));
+        expect(partOneAnchors.map(q => q.n)).toEqual(Array.from({ length: 12 }, (_, i) => String(1001 + i)));
+        for (const q of partOneAnchors) {
+          expect(q.label, `${year}/${fileid} ${q.n}`).toBe(questionLabel({ subjectId: 'geography', fileid, n: q.n }));
+          expect(q.paperRegion?.length, `${year}/${fileid} ${q.n}`).toBeGreaterThan(0);
+        }
+        // Print order: all of Part One, then Part Two.
+        expect(questionsInDisplayOrder(hosted.q).map(q => q.n))
+          .toEqual([...partOneAnchors, ...partTwo].map(q => q.n));
+        if (fileid.endsWith('IV.pdf')) continue;
+        // Every English card's own page lies inside its question's Atlas crop.
+        const level = fileid.startsWith('LC005A') ? 'higher' : 'ordinary';
+        for (const card of ALL.filter(c => c.year === year && c.level === level)) {
+          const [, part, printed] = card.questionRef.match(/Part ([12]) Q(\d+)/)!;
+          const n = part === '1' ? String(1000 + Number(printed)) : printed;
+          const region = paperRegionFor(hosted.q, n, hosted.maxCropPages ?? 3) ?? [];
+          const page = authoredById.get(card.id)!.paperPage;
+          if (!region.some(segment => segment.p === page)) {
+            outside.push(`${card.id} p${page} not in Q${n} ${region.map(segment => segment.p)}`);
+          }
+        }
+      }
+    }
+    expect(outside).toEqual([]);
   });
 });
 
