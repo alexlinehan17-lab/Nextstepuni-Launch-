@@ -1,4 +1,7 @@
 /** @license SPDX-License-Identifier: Apache-2.0 */
+import { createHash } from 'node:crypto';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import authored from '../components/MarkBank/cards/geography/authored.json';
 import { CARDS as HIGHER } from '../components/MarkBank/cards/geography/higher';
@@ -16,6 +19,7 @@ import {
 } from '../components/MarkBank/SessionScreen';
 import { isRubricCard, tariffReconciles, type SecRubricCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
+import { waysInSourceFromMarkBank } from '../components/WaysIn/sources';
 
 const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
 const byId = new Map(ALL.map(card => [card.id, card]));
@@ -52,35 +56,31 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     // 2021 HL 60 -> 116, 2021 OL 48 -> 126), and every companion-held task is
     // now carded with the official map, legend and aerial: 1,443 base tasks,
     // none held. An earlier sitting joins only with its own review ledger:
-    // 2020 Higher adds 114 tasks and 2020 Ordinary 120 (119 carded; 9C is
-    // held because its published allocation adds to 27 of its printed 30
-    // marks). 2019 Higher, the first single-booklet sitting, adds 113,
+    // 2020 Higher adds 114 tasks and 2020 Ordinary 120. 2019 Higher, the first single-booklet sitting, adds 113,
     // 2019 Ordinary 127, 2018 Higher 122, 2018 Ordinary 124, 2017 Higher
     // 110, 2017 Ordinary 122, 2016 Higher 106, 2016 Ordinary 118, 2015
     // Higher 105, 2015 Ordinary 102, 2014 Higher 103, 2014 Ordinary 111, 2013
     // Higher 104, 2013 Ordinary 95, 2012 Higher 106, 2012 Ordinary 108 and
-    // 2011 Higher 96 (94 carded; 2(i) and 2(iii) need the never-published
-    // legend) and 2011 Ordinary 119 (116 carded; Part One 11(i) and the 1A and
-    // 7A sketches need it), 2010 Higher 99 and 2010 Ordinary 102 (101 carded;
-    // Part One Q4's answer exists only as the scheme's labelled drawing):
-    // 3,869 base tasks, 3,862 carded.
+    // 2011 Higher 96, 2011 Ordinary 119, 2010 Higher 99 and 2010 Ordinary
+    // 102: 3,869 base tasks, every one carded. The seven parts once held (the
+    // 2011 legend was never published; 2010 OL Part One Q4 is answered by the
+    // scheme's labelled drawing; 2020 OL 9C is priced 27 of its printed 30)
+    // are carded with exactly what the paper and scheme print.
     expect(census.paperBaseTasks).toBe(3869);
-    expect(census.includedBaseTasks).toBe(3862);
-    expect(census.excludedBaseTasks).toBe(7);
+    expect(census.includedBaseTasks).toBe(3869);
+    expect(census.excludedBaseTasks).toBe(0);
     expect(census.includedBaseTasks + census.excludedBaseTasks)
       .toBe(census.paperBaseTasks);
-    expect(census.authoredCards).toBe(4146);
+    expect(census.authoredCards).toBe(4153);
     expect(census.baseTasks).toHaveLength(3869);
-    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3862);
-    expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(7);
-    expect(EXCLUSIONS.map(row => `${row.year} ${levelRef(row.level)} Part ${row.part} Q${row.questionRef}`))
-      .toEqual(['2010 OL Part 1 Q4', '2011 HL Part 1 Q2(i)', '2011 HL Part 1 Q2(iii)', '2011 OL Part 1 Q11(i)',
-        '2011 OL Part 2 Q1A', '2011 OL Part 2 Q7A', '2020 OL Part 2 Q9C']);
+    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3869);
+    expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(0);
+    expect(EXCLUSIONS).toEqual([]);
     expect(census.sittings).toHaveLength(34);
 
     const expected = {
-      '2010-higher': 106, '2010-ordinary': 113,
-      '2011-higher': 99, '2011-ordinary': 130,
+      '2010-higher': 106, '2010-ordinary': 114,
+      '2011-higher': 101, '2011-ordinary': 133,
       '2012-higher': 110, '2012-ordinary': 115,
       '2013-higher': 111, '2013-ordinary': 102,
       '2014-higher': 110, '2014-ordinary': 125,
@@ -89,7 +89,7 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
       '2017-higher': 125, '2017-ordinary': 130,
       '2018-higher': 130, '2018-ordinary': 131,
       '2019-higher': 121, '2019-ordinary': 138,
-      '2020-higher': 125, '2020-ordinary': 125,
+      '2020-higher': 125, '2020-ordinary': 126,
       '2021-higher': 121, '2021-ordinary': 134,
       '2022-higher': 130, '2022-ordinary': 134,
       '2023-higher': 132, '2023-ordinary': 128,
@@ -105,11 +105,11 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('maps the generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(2005);
-    expect(ORDINARY).toHaveLength(2141);
-    expect(ALL).toHaveLength(4146);
-    expect(authored.meta.cardCount).toBe(4146);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(4146);
+    expect(HIGHER).toHaveLength(2007);
+    expect(ORDINARY).toHaveLength(2146);
+    expect(ALL).toHaveLength(4153);
+    expect(authored.meta.cardCount).toBe(4153);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(4153);
     expect(ALL.map(card => card.id).sort())
       .toEqual(authored.cards.map(card => card.id).sort());
 
@@ -160,18 +160,8 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('holds no companion task back and ships each with its official map, legend or aerial', () => {
-    // Every published companion is wired; nothing is held for a source Paper Trail has.
-    expect(EXCLUSIONS.filter(exclusion =>
-      /separate Ordnance Survey map or aerial photograph/i.test(exclusion.reason))).toEqual([]);
-    // 2011's legend sheet was never published: only the parts whose answer is a
-    // meaning only the legend gives are held. 2020 OL 9C's published allocation
-    // does not reach its printed tariff; it is never carded short or padded.
-    // 2010 OL Part One Q4 is answered only by the scheme's labelled drawing.
-    expect(EXCLUSIONS.map(exclusion => exclusion.reason)).toEqual([
-      expect.stringMatching(/fill in the blanks on the diagram/),
-      ...Array.from({ length: 5 }, () => expect.stringMatching(/legend sheet .*was not published with the 2011 materials/)),
-      expect.stringMatching(/\(27m\) above "Total 30m"/),
-    ]);
+    // Every task is carded: nothing is held, for a missing source or anything else.
+    expect(EXCLUSIONS).toEqual([]);
 
     for (const exclusion of EXCLUSIONS) {
       const base = `${exclusion.year} ${levelRef(exclusion.level)} Part ${exclusion.part} `
@@ -192,6 +182,103 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
         .filter(Boolean);
       return !sources.some(source => source?.sourceFileid);
     }).map(card => card.id)).toEqual([]);
+  });
+});
+
+describe('parts whose source or allocation the SEC left incomplete', () => {
+  const rubricOf = (id: string) => {
+    const card = byId.get(id)!;
+    if (card.rubric.system !== 'geography') throw new Error(`${id}: wrong rubric`);
+    return card.rubric;
+  };
+  const LEGEND = /^The SEC did not publish a legend for the 2011 Ordnance Survey map/;
+
+  it('cards the 2011 symbol and sketch parts with the scheme answers and a no-legend note', () => {
+    const expectations: Array<[string, string[]]> = [
+      ['geography-2011-hl-p1-q2', ['Q.2 · (i) · Clós, Ráth, Lios, Enclosure, Ringfort.']],
+      ['geography-2011-hl-p1-q2-iii', ['(iii) · Yes']],
+      ['geography-2011-ol-p1-q11', ['(i) · Parking · 2 marks', 'Boating activities · 2 marks']],
+      ['geography-2011-ol-p2-q1a', ['Limits/frame = · 1 mark', 'Showing = · 3 marks graded']],
+      ['geography-2011-ol-p2-q7a', ['Limits/frame = · 1 mark', 'Showing = · 3 marks graded']],
+    ];
+    for (const [id, lines] of expectations) {
+      const rubric = rubricOf(id);
+      expect(rubric.markingGuideNote, id).toMatch(LEGEND);
+      expect(rubric.criteria.flatMap(c => c.guidance), id).toEqual(expect.arrayContaining(lines));
+      const card = byId.get(id)!;
+      // The official map, never a stand-in for the legend that does not exist.
+      expect([card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])].map(s => s?.sourceFileid), id)
+        .toEqual(['LC005CLP003EV']);
+    }
+    // The sketches keep the scheme's itemised allocation, as every other year's do.
+    for (const id of ['geography-2011-ol-p2-q1a', 'geography-2011-ol-p2-q7a']) {
+      expect(rubricOf(id).criteria.map(c => c.maxMarks), id).toEqual([1, 2, 2, 5, 5, 5, 5, 5]);
+    }
+    expect(rubricOf('geography-2011-ol-p2-q1a').criteria.map(c => c.label)).toContain('A lighthouse');
+  });
+
+  it('asks 2010 OL Q4 with the paper\'s own diagram and shows the scheme\'s labelled drawing only after the reveal', () => {
+    const card = byId.get('geography-2010-ol-p1-q4')!;
+    // The question is the paper's print: instruction, the five printed terms, the diagram.
+    expect(card.questionFigure?.src).toBe('/exam-figures/geography/markbank/geography-2010-ol-p1-q4-paper-diagram.png');
+    expect(card.questionFigure?.solution).toBeUndefined();
+    expect(card.questionText).toBe('Examine the diagram below. Use the following terms to fill in the blanks on '
+      + 'the diagram:\nVent · Crater · Magma chamber · Lava flow · Caldera lake');
+    // The answer is the scheme's labelled drawing, held back until the reveal.
+    expect(card.figure?.src).toBe('/exam-figures/geography/markbank/geography-2010-ol-p1-q4-scheme-diagram.png');
+    expect(card.figure?.solution).toBe(true);
+    expect(card.sourceMaterial?.pages).toEqual([4]);
+    // Ways In runs before the reveal: it gets the paper's diagram, never the scheme's.
+    expect(waysInSourceFromMarkBank(card, 'Geography').figure?.src).toMatch(/q4-paper-diagram\.png$/);
+    expect(waysInSourceFromMarkBank(byId.get('geography-2011-hl-p1-q2')!, 'Geography').figure?.alt)
+      .toMatch(/^Crop of the official 2011/);
+    // Each printed term is its own scheme line, as the drawing's boxes print them.
+    expect(rubricOf('geography-2010-ol-p1-q4').criteria.map(c => [c.label, c.maxMarks, c.guidance])).toEqual([
+      ['Vent', 2, ['Five terms @ 2 marks each as follows:', 'Vent']], ['Crater', 2, ['Crater']],
+      ['Magma Chamber', 2, ['Magma Chamber']], ['Lava Flow', 2, ['Lava Flow']], ['Caldera Lake', 2, ['Caldera Lake']],
+    ]);
+  });
+
+  it('cards 2020 OL 9C with its two priced lines against the printed 30, leaving the unpublished 3 unpriced', () => {
+    const card = byId.get('geography-2020-ol-p2-q9c')!;
+    const rubric = rubricOf(card.id);
+    expect(card.totalMarks).toBe(30);
+    expect(rubric.criteria.map(c => [c.label, c.maxMarks, c.permittedMarks, c.guidance])).toEqual([
+      ['Impact identified', 3, [0, 3], ['Impact identified 1 SRP · 3m']],
+      ['Explanation', 24, [0, 3, 6, 9, 12, 15, 18, 21, 24], ['Explanation 8 SRP’s @ 3m each · 24m']],
+    ]);
+    expect(rubric.unpricedMarks).toBe(3);
+    // The printed tariff still reconciles: 3 + 24 priced, 3 declared unpriced.
+    expect(tariffReconciles(card)).toBe(true);
+    expect(tariffReconciles({ ...card, rubric: { ...rubric, unpricedMarks: undefined } })).toBe(false);
+    expect(rubric.markingGuideNote).toMatch(/^The published scheme prices 27 of the printed 30 marks .* at most 27 of the 30\./);
+    // Every SRP awarded: the placement stops at the 27 the scheme prices.
+    const full = Object.fromEntries(rubric.criteria.map(c => [geographyScoreId(c.id), c.maxMarks]));
+    expect(geographyMarks(card, full)).toBe(27);
+  });
+
+  it('binds only real crops of official documents, each on disk with its recorded hash', () => {
+    const crops = ALL.flatMap(card => [card.questionFigure, card.figure]
+      .filter(figure => figure !== undefined).map(figure => ({ id: card.id, figure: figure! })));
+    expect(crops.map(({ figure }) => figure.candId).sort()).toEqual([
+      'geography-2010-ol-p1-q4-paper-diagram', 'geography-2010-ol-p1-q4-scheme-diagram',
+      'geography-2011-hl-p1-q2-i-map-crop', 'geography-2011-hl-p1-q2-iii-map-crop',
+      'geography-2011-ol-p1-q11-i-map-crop',
+    ]);
+    const files = new Set<string>();
+    for (const { id, figure } of crops) {
+      expect(figure.src, id).toMatch(/^\/exam-figures\/geography\/markbank\/[a-z0-9-]+\.png$/);
+      const path = resolve(__dirname, '..', 'public', figure.src.replace(/^\//, ''));
+      expect(existsSync(path), id).toBe(true);
+      expect(createHash('md5').update(readFileSync(path)).digest('hex'), id).toBe(figure.srcHash);
+      expect(figure.attribution, id).toMatch(/State Examinations Commission/);
+      expect(figure.alt.length, id).toBeGreaterThan(80);
+      files.add(figure.src.split('/').pop()!);
+    }
+    // Every crop in the folder is bound to a card (the PNGs are committed, not ignored).
+    const folder = resolve(__dirname, '..', 'public', 'exam-figures', 'geography', 'markbank');
+    expect(readdirSync(folder).filter(name => name.endsWith('.png')).sort()).toEqual([...files].sort());
+    expect(byId.get('geography-2011-hl-p1-q2')!.figure?.solution).toBeUndefined();
   });
 });
 
@@ -386,12 +473,17 @@ describe('independently reviewed Geography sittings', () => {
   });
 
   it('carries the published allocation line by line on every reviewed card', () => {
-    expect(REVIEWED).toHaveLength(4146);
+    expect(REVIEWED).toHaveLength(4153);
+    expect(REVIEWED.filter(card => card.rubric.system === 'geography' && card.rubric.unpricedMarks)
+      .map(card => card.id)).toEqual(['geography-2020-ol-p2-q9c']);
     for (const card of REVIEWED) {
       if (card.rubric.system !== 'geography') throw new Error(`${card.id}: wrong rubric`);
       const { criteria } = card.rubric;
       expect(criteria.length, card.id).toBeGreaterThan(0);
-      expect(criteria.reduce((sum, c) => sum + c.maxMarks, 0), card.id).toBe(card.totalMarks);
+      // Only a printed remainder the scheme allocates to no line stays out of
+      // the criteria (2020 OL 9C, 3 of 30); it is never derived into one.
+      const unpriced = card.rubric.unpricedMarks ?? 0;
+      expect(criteria.reduce((sum, c) => sum + c.maxMarks, 0) + unpriced, card.id).toBe(card.totalMarks);
       for (const criterion of criteria) {
         expect(criterion.permittedMarks[0], card.id).toBe(0);
         expect(criterion.permittedMarks.at(-1), card.id).toBe(criterion.maxMarks);
@@ -802,16 +894,16 @@ describe('independently reviewed Geography sittings', () => {
     }
   });
 
-  it('pins the 2020 Ordinary review: printed tariffs, every priced roman, and 9C held', () => {
+  it('pins the 2020 Ordinary review: printed tariffs, every priced roman, and 9C against its printed total', () => {
     const review = sitting(2020, 'ordinary');
-    expect(review.taskCount).toBe(119);
-    expect(review.cardCount).toBe(125);
+    expect(review.taskCount).toBe(120);
+    expect(review.cardCount).toBe(126);
     expect(Object.keys(review.pageReview.paper1)).toHaveLength(40);
     expect(Object.keys(review.pageReview.paper2)).toHaveLength(20);
     expect(Object.keys(review.pageReview.scheme)).toHaveLength(32);
     expect(review.sources.scheme).toMatchObject({ fileid: 'LC005GLP000EV.pdf' });
     expect(review.legacyIds).toEqual([]);
-    expect(review.addedIds).toHaveLength(125);
+    expect(review.addedIds).toHaveLength(126);
     // In 2020 the paper prints 40 marks on these parts and 30 on the rest.
     const forty = ['1B', '2B', '3B', '4B', '5C', '6B', '7B', '8B', '9B', '10C', '11C', '12C'];
     for (const [question, marks] of Object.entries(review.questionTotals)) {
@@ -819,10 +911,11 @@ describe('independently reviewed Geography sittings', () => {
         : forty.some(part => question.endsWith(`Q${part}`)) ? 40 : 30;
       expect(marks, question).toBe(expected);
     }
-    // 9C keeps its printed 30 marks in the census but ships no card.
+    // 9C is carded against its printed 30 marks (the scheme prices 27 of them).
     expect(review.questionTotals['Part 2 Q9C']).toBe(30);
-    expect(ALL.filter(card => card.questionRef.startsWith('2020 OL Part 2 Q9C'))).toEqual([]);
-    expect((review as { held?: unknown[] }).held).toHaveLength(1);
+    expect(ALL.filter(card => card.questionRef.startsWith('2020 OL Part 2 Q9C')).map(card => card.id))
+      .toEqual(['geography-2020-ol-p2-q9c']);
+    expect('held' in review).toBe(false);
     const routed = review.tasks.filter((task: ReviewedTask) => task.routes.length);
     expect(Object.fromEntries(routed.map((task: ReviewedTask) =>
       [task.questionRef, task.cards.length]))).toEqual({
@@ -912,8 +1005,8 @@ describe('independently reviewed Geography sittings', () => {
 
   it('pins the 2010 Ordinary review: one shared booklet, the Carrick-on-Suir JPEG companions, every priced roman', () => {
     const review = sitting(2010, 'ordinary');
-    expect(review.taskCount).toBe(101);
-    expect(review.cardCount).toBe(113);
+    expect(review.taskCount).toBe(102);
+    expect(review.cardCount).toBe(114);
     expect(Object.keys(review.pageReview.paper1)).toHaveLength(28);
     expect(review.pageReview.paper2).toEqual(review.pageReview.paper1);
     expect(Object.keys(review.pageReview.scheme)).toHaveLength(36);
@@ -922,10 +1015,9 @@ describe('independently reviewed Geography sittings', () => {
     expect(review.sources.map).toMatchObject({ fileid: 'LC005CLP004EV.jpg', bytes: 2806497 });
     expect(review.sources.legend).toMatchObject({ fileid: 'LC005CLP000EV.jpg', bytes: 1636000 });
     expect(review.sources.aerial).toMatchObject({ fileid: 'LC005CLP003EV.jpg', bytes: 4062934 });
-    const held = ('held' in review ? review.held : []) as { questionRef: string }[];
-    expect(held.map(row => row.questionRef)).toEqual(['4']);
+    expect('held' in review).toBe(false);
     expect(review.legacyIds).toEqual([]);
-    expect(review.addedIds).toHaveLength(113);
+    expect(review.addedIds).toHaveLength(114);
     // In 2010 the paper prints 40 marks on these parts and 30 on the rest.
     const forty = ['1C', '2B', '3B', '4B', '5B', '6C', '7C', '8B', '9C', '10C', '11B', '12B'];
     for (const [question, marks] of Object.entries(review.questionTotals)) {
@@ -986,8 +1078,8 @@ describe('independently reviewed Geography sittings', () => {
 
   it('pins the 2011 Ordinary review: one shared booklet, the Dingle map and photograph, no legend published', () => {
     const review = sitting(2011, 'ordinary');
-    expect(review.taskCount).toBe(116);
-    expect(review.cardCount).toBe(130);
+    expect(review.taskCount).toBe(119);
+    expect(review.cardCount).toBe(133);
     expect(Object.keys(review.pageReview.paper1)).toHaveLength(32);
     expect(review.pageReview.paper2).toEqual(review.pageReview.paper1);
     expect(Object.keys(review.pageReview.scheme)).toHaveLength(40);
@@ -996,11 +1088,10 @@ describe('independently reviewed Geography sittings', () => {
     expect(review.sources.map).toMatchObject({ fileid: 'LC005CLP003EV.pdf', bytes: 2360445 });
     expect(review.sources.aerial).toMatchObject({ fileid: 'LC005CLP004EV.pdf', bytes: 726238 });
     expect('legend' in review.sources).toBe(false);
-    const held = ('held' in review ? review.held : []) as { questionRef: string }[];
-    expect(held.map(row => row.questionRef)).toEqual(['11(i)', '1A', '7A']);
+    expect('held' in review).toBe(false);
     expect(review.legacyIds).toEqual([]);
-    expect(review.addedIds).toHaveLength(130);
-    // In 2011 the paper prints 40 marks on these parts and 30 on the rest (held parts included).
+    expect(review.addedIds).toHaveLength(133);
+    // In 2011 the paper prints 40 marks on these parts and 30 on the rest.
     const forty = ['1B', '2B', '3B', '4B', '5C', '6B', '7B', '8C', '9B', '10B', '11B', '12B'];
     for (const [question, marks] of Object.entries(review.questionTotals)) {
       const expected = question.startsWith('Part 1') ? 10
@@ -1024,8 +1115,8 @@ describe('independently reviewed Geography sittings', () => {
 
   it('pins the 2011 Higher review: one shared booklet, the Dingle map and photograph, no legend published', () => {
     const review = sitting(2011, 'higher');
-    expect(review.taskCount).toBe(94);
-    expect(review.cardCount).toBe(99);
+    expect(review.taskCount).toBe(96);
+    expect(review.cardCount).toBe(101);
     expect(Object.keys(review.pageReview.paper1)).toHaveLength(32);
     expect(review.pageReview.paper2).toEqual(review.pageReview.paper1);
     expect(Object.keys(review.pageReview.scheme)).toHaveLength(48);
@@ -1038,10 +1129,9 @@ describe('independently reviewed Geography sittings', () => {
     expect(ALL.filter(card => card.year === 2011)
       .flatMap(card => [card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])])
       .filter(source => source?.sourceFileid?.startsWith('LC005CLPC00'))).toEqual([]);
-    const held = ('held' in review ? review.held : []) as { questionRef: string }[];
-    expect(held.map(row => row.questionRef)).toEqual(['2(i)', '2(iii)']);
+    expect('held' in review).toBe(false);
     expect(review.legacyIds).toEqual([]);
-    expect(review.addedIds).toHaveLength(99);
+    expect(review.addedIds).toHaveLength(101);
     const routed = review.tasks.filter((task: ReviewedTask) => task.routes.length);
     expect(Object.fromEntries(routed.map((task: ReviewedTask) =>
       [task.questionRef, task.cards.length]))).toEqual({

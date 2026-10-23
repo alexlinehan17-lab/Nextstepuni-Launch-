@@ -24,9 +24,9 @@
     "ordinary"
   ],
   "paperBaseTasks": 3869,
-  "includedBaseTasks": 3862,
-  "excludedBaseTasks": 7,
-  "authoredCards": 4146,
+  "includedBaseTasks": 3869,
+  "excludedBaseTasks": 0,
+  "authoredCards": 4153,
   "baseTasks": [
     {
       "id": "geography-2010-hl-p1-q1",
@@ -983,6 +983,15 @@
       "status": "authored"
     },
     {
+      "id": "geography-2010-ol-p1-q4",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q4",
+      "title": "Volcanic Landforms",
+      "status": "authored"
+    },
+    {
       "id": "geography-2010-ol-p1-q5",
       "year": 2010,
       "level": "ordinary",
@@ -1829,15 +1838,6 @@
       "status": "authored"
     },
     {
-      "id": "geography-2010-ol-p1-q4",
-      "year": 2010,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "2010 OL Part 1 Q4",
-      "title": "Volcanic Landforms",
-      "status": "excluded"
-    },
-    {
       "id": "geography-2011-hl-p1-q1",
       "year": 2011,
       "level": "higher",
@@ -1847,11 +1847,29 @@
       "status": "authored"
     },
     {
+      "id": "geography-2011-hl-p1-q2",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
       "id": "geography-2011-hl-p1-q2-ii",
       "year": 2011,
       "level": "higher",
       "part": 1,
       "questionRef": "2011 HL Part 1 Q2(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(iii)",
       "title": "Ordnance Survey Map",
       "status": "authored"
     },
@@ -2684,24 +2702,6 @@
       "status": "authored"
     },
     {
-      "id": "geography-2011-hl-p1-q2-i",
-      "year": 2011,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "2011 HL Part 1 Q2(i)",
-      "title": "Ordnance Survey Map",
-      "status": "excluded"
-    },
-    {
-      "id": "geography-2011-hl-p1-q2-iii",
-      "year": 2011,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "2011 HL Part 1 Q2(iii)",
-      "title": "Ordnance Survey Map",
-      "status": "excluded"
-    },
-    {
       "id": "geography-2011-ol-p1-q1",
       "year": 2011,
       "level": "ordinary",
@@ -2954,6 +2954,15 @@
       "status": "authored"
     },
     {
+      "id": "geography-2011-ol-p1-q11",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2011 OL Part 1 Q11(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
       "id": "geography-2011-ol-p1-q11-ii",
       "year": 2011,
       "level": "ordinary",
@@ -3005,6 +3014,15 @@
       "part": 1,
       "questionRef": "2011 OL Part 1 Q12(iii)",
       "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-ol-p2-q1a",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2011 OL Part 2 Q1A",
+      "title": "Ordnance Survey Map",
       "status": "authored"
     },
     {
@@ -3302,6 +3320,15 @@
       "part": 2,
       "questionRef": "2011 OL Part 2 Q6C",
       "title": "Cultural Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-ol-p2-q7a",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2011 OL Part 2 Q7A",
+      "title": "Ordnance Survey Map",
       "status": "authored"
     },
     {
@@ -3744,33 +3771,6 @@
       "questionRef": "2011 OL Part 2 Q12C",
       "title": "Urban Functions",
       "status": "authored"
-    },
-    {
-      "id": "geography-2011-ol-p1-q11-i",
-      "year": 2011,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "2011 OL Part 1 Q11(i)",
-      "title": "Ordnance Survey Map",
-      "status": "excluded"
-    },
-    {
-      "id": "geography-2011-ol-p2-q1a",
-      "year": 2011,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "2011 OL Part 2 Q1A",
-      "title": "Ordnance Survey Map",
-      "status": "excluded"
-    },
-    {
-      "id": "geography-2011-ol-p2-q7a",
-      "year": 2011,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "2011 OL Part 2 Q7A",
-      "title": "Ordnance Survey Map",
-      "status": "excluded"
     },
     {
       "id": "geography-2012-hl-p1-q1",
@@ -21620,6 +21620,15 @@
       "status": "authored"
     },
     {
+      "id": "geography-2020-ol-p2-q9c",
+      "year": 2020,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2020 OL Part 2 Q9C",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
       "id": "geography-2020-ol-p2-q10a",
       "year": 2020,
       "level": "ordinary",
@@ -21852,15 +21861,6 @@
       "questionRef": "2020 OL Part 2 Q12C(iv)",
       "title": "Settlement Distribution",
       "status": "authored"
-    },
-    {
-      "id": "geography-2020-ol-p2-q9c",
-      "year": 2020,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "2020 OL Part 2 Q9C",
-      "title": "European Union Policy",
-      "status": "excluded"
     },
     {
       "id": "geography-2021-hl-p1-q1",
@@ -34864,27 +34864,27 @@
       "year": 2010,
       "level": "ordinary",
       "paperBaseTasks": 102,
-      "includedBaseTasks": 101,
-      "excludedBaseTasks": 1,
-      "authoredCardsAfterFiniteExpansion": 113,
+      "includedBaseTasks": 102,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 114,
       "reviewed": true
     },
     {
       "year": 2011,
       "level": "higher",
       "paperBaseTasks": 96,
-      "includedBaseTasks": 94,
-      "excludedBaseTasks": 2,
-      "authoredCardsAfterFiniteExpansion": 99,
+      "includedBaseTasks": 96,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 101,
       "reviewed": true
     },
     {
       "year": 2011,
       "level": "ordinary",
       "paperBaseTasks": 119,
-      "includedBaseTasks": 116,
-      "excludedBaseTasks": 3,
-      "authoredCardsAfterFiniteExpansion": 130,
+      "includedBaseTasks": 119,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 133,
       "reviewed": true
     },
     {
@@ -35044,9 +35044,9 @@
       "year": 2020,
       "level": "ordinary",
       "paperBaseTasks": 120,
-      "includedBaseTasks": 119,
-      "excludedBaseTasks": 1,
-      "authoredCardsAfterFiniteExpansion": 125,
+      "includedBaseTasks": 120,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 126,
       "reviewed": true
     },
     {
@@ -37141,64 +37141,7 @@
       ]
     }
   ],
-  "exclusions": [
-    {
-      "year": 2010,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "4",
-      "title": "Volcanic Landforms",
-      "reason": "The paper asks candidates to \"fill in the blanks on the diagram\" with five printed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake). The scheme (page 4, printed \"Page 2 of 31\") prints \"Five terms @ 2 marks each as follows:\" above a copy of the diagram with the terms set in its boxes: Crater and Vent upper left, Caldera Lake right, Magma Chamber lower left, Lava Flow lower right. The answer is which box each term fills, and that exists only as the scheme's drawing; its text layer gives the five terms alone (\"Crater\", \"Vent\", \"Caldera Lake\", \"Magma Chamber · Lava Flow\"), the same words the paper already prints. A card can show the question page but not the scheme's drawing, so its guidance could not tell a correct label from a misplaced one; the question is held rather than carded without its answer."
-    },
-    {
-      "year": 2011,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "2(i)",
-      "title": "Ordnance Survey Map",
-      "reason": "The paper asks \"(i) What type of antiquity is found at grid reference Q 457 015?\" of \"the 1:50000 Ordnance Survey map and legend that accompany this paper\". At Q 457 015 the map prints only an unnamed red open-circle antiquity symbol south of Ballybeg; the scheme's answer \"Clós, Ráth, Lios, Enclosure, Ringfort.\" is the meaning the OS legend gives that symbol. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
-    },
-    {
-      "year": 2011,
-      "level": "higher",
-      "part": 1,
-      "questionRef": "2(iii)",
-      "title": "Ordnance Survey Map",
-      "reason": "The paper asks \"(iii) Has the tourist information centre at Q 444 010 regular opening hours? Tick the correct answer.\" The map prints a green \"i\" tourist-information symbol at Q 444 010 and no opening hours; whether that symbol marks regular opening (the scheme answers \"Yes\") is a distinction only the OS legend draws. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
-    },
-    {
-      "year": 2011,
-      "level": "ordinary",
-      "part": 1,
-      "questionRef": "11(i)",
-      "title": "Ordnance Survey Map",
-      "reason": "The paper asks \"(i) Name the feature/symbol which can be found at each of the following grid references: Q 442 010 ... Q 441 005\" and the scheme prices \"Parking · 2 marks\" and \"Boating activities · 2 marks\". On the map extract (rendered and read 2026-10-23) Q 442 010 is an unlabelled white \"P\" on a blue square at the Dingle quay and Q 441 005 an unlabelled sailing-boat pictogram in Dingle Harbour: neither is named in print, so naming them needs symbol meanings only the Ordnance Survey legend defines. The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so part (i) is held rather than carded against evidence the card cannot show. Parts (ii)-(iv) are carded from the map alone."
-    },
-    {
-      "year": 2011,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "1A",
-      "title": "Ordnance Survey Map",
-      "reason": "The paper asks for a sketch map that shows and names \"• The coastline • The Milltown River • A lighthouse • A named area of land above 400 metres • A corrie lake.\" and the scheme prices each item \"Showing = 3 marks graded\" and \"Naming/identifying = 2 marks\" within one 30-mark allocation. Four items are answerable from the map’s printed names, contours and heights (\"Milltown River\" is printed; the lakes and the 400 m contours are drawn), but the map prints no lighthouse: the only candidate is an unlabelled pictorial symbol on the eastern shore of the harbour mouth at about V 454 990, beside the printed words \"An Scoth Tower\", and only the legend defines that symbol as a lighthouse. The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so the sketch, priced as one part, is held."
-    },
-    {
-      "year": 2011,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "7A",
-      "title": "Ordnance Survey Map",
-      "reason": "The paper asks for a sketch map that shows and names \"• The entire N86 National Secondary Road • The ferry route in Dingle Harbour • An area of Coniferous Plantation • A Tourist Information centre • An Independent Holiday Hostel.\" and the scheme prices each item \"Showing = 3 marks graded\" and \"Naming/identifying = 2 marks\" within one 30-mark allocation. Four of the five items are shown on the map only by symbols the legend defines and are named nowhere in print: the ferry route (an unlabelled black dashed line down Dingle Harbour), the coniferous plantation (unlabelled tree symbols, e.g. north of Dingle around Q 43 05), the tourist information centre (an unlabelled \"i\" on a green square at about Q 443 010) and the independent holiday hostel (one of the map’s unlabelled point symbols). The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so the sketch is held."
-    },
-    {
-      "year": 2020,
-      "level": "ordinary",
-      "part": 2,
-      "questionRef": "9C",
-      "title": "European Union Policy",
-      "reason": "The paper prints [30m]; the published scheme prices \"Impact identified 1 SRP 3m\" and \"Explanation 8 SRP’s @ 3m each 24m\" (27m) above \"Total 30m\". No allocation is published for the other three marks, so the part is held rather than carded short or padded. Re-examined 2026-10-23: the rendered scheme page 25 (printed \"Page 23 of 29\") holds no other priced line, image or drawing, and no Irish-language Ordinary scheme was published for 2020 to compare."
-    }
-  ],
+  "exclusions": [],
   "aliases": [
     {
       "id": "geography-2021-hl-p2-q14-fair-trade-justice-issues-self-reliance",

@@ -42,8 +42,13 @@ Meander A. Q8's five words are priced in the scheme's own completed
 paragraph (LIMESTONE, CARBONATION, GRIKES, CLINTS, PAVEMENT; the last two
 share one printed line).
 
-Q4 (Volcanic Landforms) is held: the scheme answers it only with a copy of
-the diagram carrying the five terms in its boxes (see HELD).
+Q4 (Volcanic Landforms) asks candidates to fill five printed terms into the
+diagram's unlettered boxes; the scheme answers with "Five terms @ 2 marks
+each as follows:" above a copy of the diagram with the terms in its boxes.
+The card shows the paper's own print of the question (instruction, term
+row and diagram) as its question crop, the scheme's five printed term
+lines as guidance, and the scheme's labelled diagram as a crop held back
+until the scheme is revealed (a solution figure).
 
 Part Two tariffs as printed: twelve parts carry 40 marks (1C, 2B, 3B, 4B,
 5B, 6C, 7C, 8B, 9C, 10C, 11B, 12B) and the rest 30. Where the scheme
@@ -58,7 +63,7 @@ labels them correctly.
 """
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums, upto,
+    Criterion, Figure, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums, upto,
 )
 
 YEAR = 2010
@@ -113,7 +118,7 @@ SELECTION_REVIEW = [
     {'scan': [[1, 2, 'attempt ten'], [1, 11, 'attempt three'], [1, 12, 'attempt two'], [1, 13, 'attempt one'],
               [1, 17, 'attempt one'], [1, 20, 'attempt one'], [1, 20, 'either']],
      'kind': 'exam-attempt-rule',
-     'reason': 'Part One ten of twelve and Part Two three questions (one of Q1-3, one of Q4-6, one elective from either elective) are attempt rules; every question is carded or held.'},
+     'reason': 'Part One ten of twelve and Part Two three questions (one of Q1-3, one of Q4-6, one elective from either elective) are attempt rules; every question is carded.'},
     {'scan': [[1, 13, 'answer (i) or (ii)']], 'kind': 'closed-route',
      'reason': '1B: (i) or (ii) -> route (i), and route (ii) splits by its printed choose-one list of three surface processes -> 4 routes, each route\'s scheme allocation its own.'},
     {'scan': [[1, 13, 'any one'], [1, 15, 'one of the following'], [1, 16, 'any one'],
@@ -130,19 +135,7 @@ SELECTION_REVIEW = [
      'reason': '2C "how humans attempt to control" describes human activity, not a candidate choice.'},
 ]
 
-HELD = [
-    {'part': 1, 'question': '4', 'title': 'Volcanic Landforms', 'marks': 10,
-     'reason': ('The paper asks candidates to "fill in the blanks on the diagram" with five printed terms '
-                '(Vent, Crater, Magma chamber, Lava flow, Caldera lake). The scheme (page 4, printed '
-                '"Page 2 of 31") prints "Five terms @ 2 marks each as follows:" above a copy of the '
-                'diagram with the terms set in its boxes: Crater and Vent upper left, Caldera Lake right, '
-                'Magma Chamber lower left, Lava Flow lower right. The answer is which box each term '
-                'fills, and that exists only as the scheme\'s drawing; its text layer gives the five '
-                'terms alone ("Crater", "Vent", "Caldera Lake", "Magma Chamber · Lava Flow"), the same '
-                'words the paper already prints. A card can show the question page but not the '
-                'scheme\'s drawing, so its guidance could not tell a correct label from a misplaced '
-                'one; the question is held rather than carded without its answer.')},
-]
+HELD: list[dict] = []
 
 P1, P2 = 1, 2
 ID = 'geography-2010-ol-'
@@ -256,6 +249,40 @@ PART_ONE += [
       '1-0', IRL + EURO, ID + 'p1-q3', ('page',),
       row_labels=(L(4, 'Cultural'), L(4, 'Urban'), L(4, 'Core Economic'), L(4, 'Geomorphological'),
                   L(4, 'Climatic'))),
+    # The answer is which box each term fills: the scheme's labelled drawing,
+    # shown as a solution crop after the reveal.
+    # The printed terms are a ruled one-row table ("Magma / chamber" wraps in
+    # its cell), lifted cell by cell. The scheme's labels sit in two columns
+    # of its drawing (Crater, Vent, Magma Chamber left; Caldera Lake, Lava
+    # Flow right), sliced apart so each term's line is its own.
+    Task('p1-4', P1, '4', '', 10, 4, L(4, 'Volcanic Landforms'),
+         (L(4, 'Examine the diagram below. Use the following terms to fill in the blanks on the diagram:'),
+          Lift(4, 'Vent', table=True)),
+         (S(4, 'Five terms @ 2 marks each', None, (0.0, 0.66, 0.5, 0.88)),
+          S(4, 'Caldera Lake', None, (0.5, 0.66, 1.0, 0.88))),
+         (fixed('Vent', 2, ('Five terms @ 2 marks each as follows:', '=Vent')),
+          fixed('Crater', 2, '=Crater'), fixed('Magma Chamber', 2, '=Magma Chamber'),
+          fixed('Lava Flow', 2, '=Lava Flow'), fixed('Caldera Lake', 2, '=Caldera Lake')),
+         '0-7', EV, ('page',), ID + 'p1-q4', False,
+         question_figure=Figure(
+             'geography-2010-ol-p1-q4-paper-diagram', 'paper', 4, (20.0, 303.0, 526.0, 744.0),
+             'The question as printed: the heading 4. Volcanic Landforms, the instruction, a row of five '
+             'boxed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake) and a colour diagram of an '
+             'erupting volcano cut away to show the ground beneath it. Five empty boxes have lines into the '
+             'diagram: two at upper left, to the top of the cone and into the cone; one at lower left, to '
+             'below the ground; one at upper right, to a hollow on the far slope; and one at lower right, '
+             'to the slope.',
+             'State Examinations Commission Geography 2010 Ordinary Level question paper, page 4 (the '
+             'diagram is credited on the paper to www.pacificislandtravel.com) — © State Examinations '
+             'Commission.'),
+         figure=Figure('geography-2010-ol-p1-q4-scheme-diagram', 'scheme', 4, (95.0, 583.0, 456.0, 742.0),
+                       'The marking scheme\'s copy of the volcano diagram with the five terms in its boxes. '
+                       'Upper left, Crater points to the top of the cone under the ash cloud and Vent to the '
+                       'pipe rising through the cone; lower left, Magma Chamber points to the molten rock '
+                       'beneath the ground; at the right, Caldera Lake points to the lake in the hollow on the '
+                       'far slope and, lower right, Lava Flow points to the flow running down the slope.',
+                       'State Examinations Commission Geography 2010 Ordinary Level marking scheme, page 2 '
+                       '(the scheme\'s labelled diagram) — © State Examinations Commission.', solution=True)),
 ]
 PART_ONE += romans('5', P1, 5, L(5, 'Ordnance Survey Map', nth=0),
                    (L(5, 'Examine the 1:50,000 Ordnance Survey map and legend accompanying this paper.', nth=0),),

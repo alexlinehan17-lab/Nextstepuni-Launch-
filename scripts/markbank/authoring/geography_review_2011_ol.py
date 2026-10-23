@@ -39,13 +39,16 @@ Visual sweep (every page rendered and read on 2026-10-23):
   Trail (LC005CLPC00EV is absent from paper-trail-corpus/exampapers/2011).
 
 Without a legend, every task that sends the candidate to "the map and
-legend" was decided part by part. Held, because answering needs a symbol
-meaning only the legend defines: Part One Q11(i) (an unlabelled "P" square
-and a sailing-boat pictogram), Part Two 1A (a sketch whose "A lighthouse"
-is shown only by an unlabelled pictogram beside the printed words "An
-Scoth Tower") and 7A (a sketch whose coniferous plantation, tourist
-information centre, independent holiday hostel and ferry route are shown
-only by legend symbols). Carded on the map alone (its printed names, grid,
+legend" was read part by part. Three need a symbol meaning only the legend
+defines: Part One Q11(i) (an unlabelled "P" square and a sailing-boat
+pictogram), Part Two 1A (a sketch whose "A lighthouse" is shown only by an
+unlabelled pictogram beside the printed words "An Scoth Tower") and 7A (a
+sketch whose coniferous plantation, tourist information centre,
+independent holiday hostel and ferry route are shown only by legend
+symbols). Each is carded with the printed question, the official map (and
+for Q11(i) a crop around the two grid references), the scheme's printed
+answers and allocation, and a note that the SEC published no 2011 legend.
+Carded on the map alone (its printed names, grid,
 contours, spot heights and scale): Q10(i)-(ii) (the N86 and the Dingle Way
 are printed, the start and end points are given as grid references),
 Q11(ii) (the strand in V 48 98 is printed "Trá Chathail"), Q11(iii)-(iv)
@@ -82,7 +85,7 @@ their 40-mark part at C, not B.
 """
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums, upto,
+    Criterion, Figure, Lift, Route, SchemeSlice, Task, pool, fixed, slug, srp, steps, sums, upto,
 )
 
 YEAR = 2011
@@ -156,40 +159,20 @@ SELECTION_REVIEW = [
      'reason': '2C "how humans attempt to control" describes human activity, not a candidate choice.'},
 ]
 
-_NO_LEGEND = ('The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail '
-              'holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey '
-              'Ireland’s copyright and publication notes), so')
-HELD = [
-    {'part': 1, 'question': '11', 'sub': '(i)', 'title': 'Ordnance Survey Map', 'marks': 4,
-     'reason': ('The paper asks "(i) Name the feature/symbol which can be found at each of the following grid '
-                'references: Q 442 010 ... Q 441 005" and the scheme prices "Parking · 2 marks" and "Boating '
-                'activities · 2 marks". On the map extract (rendered and read 2026-10-23) Q 442 010 is an '
-                'unlabelled white "P" on a blue square at the Dingle quay and Q 441 005 an unlabelled sailing-'
-                'boat pictogram in Dingle Harbour: neither is named in print, so naming them needs symbol '
-                f'meanings only the Ordnance Survey legend defines. {_NO_LEGEND} part (i) is held rather than '
-                'carded against evidence the card cannot show. Parts (ii)-(iv) are carded from the map alone.')},
-    {'part': 2, 'question': '1A', 'title': 'Ordnance Survey Map', 'marks': 30,
-     'reason': ('The paper asks for a sketch map that shows and names "• The coastline • The Milltown River • '
-                'A lighthouse • A named area of land above 400 metres • A corrie lake." and the scheme prices '
-                'each item "Showing = 3 marks graded" and "Naming/identifying = 2 marks" within one 30-mark '
-                'allocation. Four items are answerable from the map’s printed names, contours and heights '
-                '("Milltown River" is printed; the lakes and the 400 m contours are drawn), but the map prints '
-                'no lighthouse: the only candidate is an unlabelled pictorial symbol on the eastern shore of '
-                'the harbour mouth at about V 454 990, beside the printed words "An Scoth Tower", and only the '
-                f'legend defines that symbol as a lighthouse. {_NO_LEGEND} the sketch, priced as one part, is '
-                'held.')},
-    {'part': 2, 'question': '7A', 'title': 'Ordnance Survey Map', 'marks': 30,
-     'reason': ('The paper asks for a sketch map that shows and names "• The entire N86 National Secondary Road '
-                '• The ferry route in Dingle Harbour • An area of Coniferous Plantation • A Tourist Information '
-                'centre • An Independent Holiday Hostel." and the scheme prices each item "Showing = 3 marks '
-                'graded" and "Naming/identifying = 2 marks" within one 30-mark allocation. Four of the five '
-                'items are shown on the map only by symbols the legend defines and are named nowhere in print: '
-                'the ferry route (an unlabelled black dashed line down Dingle Harbour), the coniferous '
-                'plantation (unlabelled tree symbols, e.g. north of Dingle around Q 43 05), the tourist '
-                'information centre (an unlabelled "i" on a green square at about Q 443 010) and the '
-                f'independent holiday hostel (one of the map’s unlabelled point symbols). {_NO_LEGEND} the '
-                'sketch is held.')},
-]
+# The SEC published no legend sheet for the 2011 map (Paper Trail holds none and
+# the map sheet carries none). The three parts whose answers are symbol
+# meanings carry this note beside the scheme's printed answers.
+_NO_LEGEND = ('The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet '
+              'accompanies the 2011 papers and the map sheet carries none),')
+NOTE_11 = _NO_LEGEND + ' so the meaning of each map symbol asked about here is given in the marking scheme.'
+NOTE_1A = (_NO_LEGEND + ' so the lighthouse is shown on the map only by a symbol that legend would name; '
+           'the marking scheme prices each item as printed.')
+NOTE_7A = (_NO_LEGEND + ' so the ferry route, the coniferous plantation, the tourist information centre and '
+           'the independent holiday hostel are shown on the map only by symbols that legend would name; the '
+           'marking scheme prices each item as printed.')
+MAP_CROP = ('State Examinations Commission Geography 2011 Ordnance Survey map (crop of the official '
+            'extract) — © State Examinations Commission.')
+HELD: list[dict] = []
 
 P1, P2 = 1, 2
 ID = 'geography-2011-ol-'
@@ -395,7 +378,21 @@ PART_ONE += romans('10', P1, 9, L(9, 'Ordnance Survey Map'),
     ('(ii)', 5, L(9, '(ii) Imagine that you are hiking along the Dingle Way', 'Write the correct answer in the box below.'),
      S(7, '(ii) · North East', TOTAL10), (fixed('Direction', 5, '(ii) · North East · 5 marks'),), '2-6', MAP),
 ])
-# Q11(i) (the "P" and sailing-boat symbols) is held: see HELD.
+Q11S = (L(10, 'Examine the 1:50000 Ordnance Survey map and legend accompanying this paper.'),)
+PART_ONE.append(Task(
+    'p1-11-i', P1, '11', '(i)', 4, 10, L(10, 'Ordnance Survey Map', nth=0),
+    (L(10, '(i) Name the feature/symbol which can be found at each of the following grid references:'),
+     L(10, 'Q 442 010'), L(10, 'Q 441 005')),
+    (S(7, '(i) · Parking', '(ii) · Beach'),),
+    (fixed('Q 442 010', 2, '(i) · Parking · 2 marks'), fixed('Q 441 005', 2, 'Boating activities · 2 marks')),
+    '2-6', MAP, ('map',), ID + 'p1-q11', False, stem=Q11S, note=NOTE_11,
+    row_labels=(L(10, 'Q 442 010'), L(10, 'Q 441 005')),
+    figure=Figure('geography-2011-ol-p1-q11-i-map-crop', 'map', 1, (144.4, 339.6, 280.5, 453.0),
+                  'Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid references '
+                  'Q 442 010 and Q 441 005, crossed by blue 1 km grid lines. On the harbour road at the quay a '
+                  'white letter P on a blue square sits beside a white letter i on a green square; in the '
+                  'harbour water below is a small blue boat-shaped symbol, and a black dashed line runs south '
+                  'down the harbour past the printed words Dingle Harbour.', MAP_CROP)))
 PART_ONE += romans('11', P1, 10, L(10, 'Ordnance Survey Map', nth=0),
                    (L(10, 'Examine the 1:50000 Ordnance Survey map and legend accompanying this paper.'),),
                    ID + 'p1-q11-ii', ('map',), [
@@ -478,8 +475,24 @@ ACTIVITIES_4B = ('The reasons why tourists are attracted to this region', 'The t
 FACTORS_5B = ('Transport', 'Raw materials', 'Markets', 'Government and EU policies.')
 URBAN_ISSUES = ('Cities of the future', 'Urban transport', 'Urban problems', 'Heritage issues.')
 
-# 1A (sketch: "A lighthouse") is held: see HELD.
+ITEMS_5 = ('Five items shown and named as follows:', 'Showing = · 3 marks graded', 'Naming/identifying = · 2 marks')
+
+
+def sketch_2011(proportions):
+    """The 2011 Ordinary sketch allocation, as printed for 1A, 7A and 12A."""
+    return (fixed('Limits/frame', 1, ('Sketch Map as follows:', 'Limits/frame = · 1 mark')),
+            fixed(proportions.split(' =')[0], 2, proportions, upto(2)),
+            fixed('Overall impression', 2, 'Overall impression = · 2 marks graded', upto(2)),
+            *(Criterion(f'Item {n}', 5, sums(upto(3), (0, 2)), 'exact', ITEMS_5) for n in range(1, 6)))
+
+
 PART_TWO = [
+    Task('p2-1a', P2, '1A', '', 30, 13, L(13, 'Ordnance Survey Map'),
+         (L(13, 'Examine the 1:50000 Ordnance Survey map and legend accompanying this paper.', 'A corrie lake.'),),
+         (S(10, 'Sketch Map as follows:', 'Total Marks 30'),), sketch_2011('Proportions = · 2 marks graded'),
+         '2-6', MAP + SEA + GLAC, ('map',), ID + 'p2-q1a', False, note=NOTE_1A,
+         row_labels=(None, None, None, L(13, 'The coastline'), L(13, 'The Milltown River'), L(13, 'A lighthouse'),
+                     L(13, 'A named area of land above 400 metres'), L(13, 'A corrie lake.'))),
     T('p2-1b', P2, '1B', '', 40, 13, L(13, 'Surface Processes'),
       (L(13, '(i) Select any one of the following surface processes:', 'Glacial action.'),
        L(13, 'Explain with the aid of a diagram(s) the formation of any two Irish landforms', 'selected process.')),
@@ -690,8 +703,15 @@ PART_TWO += [
       '1-3', IRL + EURO + CONT, ID + 'p2-q6c'),
 ]
 
-# 7A (sketch: ferry route, coniferous plantation, tourist information centre,
-# independent holiday hostel) is held: see HELD.
+PART_TWO.append(Task(
+    'p2-7a', P2, '7A', '', 30, 20, L(20, 'Ordnance Survey Map'),
+    (L(20, 'Examine the 1:50000 Ordnance Survey map and legend accompanying this paper.',
+       'An Independent Holiday Hostel.'),),
+    (S(23, 'Sketch Map as follows:', 'Total Marks 30'),), sketch_2011('Proportions (landscape) = · 2 marks graded'),
+    '2-6', MAP + ECON, ('map',), ID + 'p2-q7a', False, note=NOTE_7A,
+    row_labels=(None, None, None, L(20, 'The entire N86 National Secondary Road'),
+                L(20, 'The ferry route in Dingle Harbour'), L(20, 'An area of Coniferous Plantation'),
+                L(20, 'A Tourist Information centre'), L(20, 'An Independent Holiday Hostel.'))))
 Q7BI = L(20, '(i) Name one developed economy where tourism OR financial services contribute to that', 'economy.')
 PART_TWO += [
     T('p2-7b-i', P2, '7B', '(i)', 4, 20, L(20, 'Developed Economy'), (Q7BI,),

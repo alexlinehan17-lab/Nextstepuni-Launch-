@@ -42,12 +42,15 @@ Visual sweep (every page rendered and read on 2026-10-23):
 Legend decisions. The paper directs the candidate to "the 1:50000
 Ordnance Survey map and legend" in Part One Q2 and Q3 and Part Two 1A, 2B,
 7B, 11C and 12C. Each separately priced part was read against the map
-sheet: a part is held only when its answer is a meaning the legend alone
-defines. Held: Part One Q2(i), whose antiquity at Q 457 015 is an unnamed
-red open circle (the scheme's "Clós, Ráth, Lios, Enclosure, Ringfort." is
-the symbol's legend meaning), and Q2(iii), whose "regular opening hours" is
-the distinction the legend draws between tourist-information symbols.
-Carded with the map alone: Q2(ii) (the antiquity's altitude, read from the
+sheet. Two parts ask what a symbol means, which only the legend defines:
+Part One Q2(i), whose antiquity at Q 457 015 is an unnamed red open circle
+(the scheme's "Clós, Ráth, Lios, Enclosure, Ringfort." is the symbol's
+legend meaning), and Q2(iii), whose "regular opening hours" is the
+distinction the legend draws between tourist-information symbols. Each is
+carded with the printed question, a crop of the official map around the
+grid reference asked about, the scheme's printed answer and marks, and a
+note that the SEC published no 2011 legend, so the symbol's meaning is
+given in the marking scheme. Carded with the map alone: Q2(ii) (the antiquity's altitude, read from the
 printed 50 and 100 m contours at the grid reference (i) prints) and Q2(iv)
 (Sugar Loaf / An Chorr, spot height 217 inside closed contours); Q3(i)-(iv)
 with the photograph (the R560 and N86 are printed road numbers, the
@@ -102,7 +105,7 @@ pool and stay open.
 """
 
 from geography_review import (
-    Criterion, Lift, Route, SchemeSlice, Task, pool, evens, fixed, srp, sums, upto,
+    Criterion, Figure, Lift, Route, SchemeSlice, Task, pool, evens, fixed, srp, sums, upto,
 )
 
 YEAR = 2011
@@ -149,7 +152,7 @@ SELECTION_REVIEW = [
     {'scan': [[1, 2, 'attempt ten'], [1, 13, 'attempt four'], [1, 14, 'attempt two'], [1, 15, 'attempt one'],
               [1, 18, 'attempt one'], [1, 21, 'attempt one'], [1, 28, 'attempt one']],
      'kind': 'exam-attempt-rule',
-     'reason': 'Part One any ten of twelve and Part Two four questions (one of Q1-3, one of Q4-6, one elective, one option) are attempt rules; every question is carded or held.'},
+     'reason': 'Part One any ten of twelve and Part Two four questions (one of Q1-3, one of Q4-6, one elective, one option) are attempt rules; every question is carded.'},
     {'scan': [[1, 16, 'answer (i) or (ii)']], 'kind': 'closed-route',
      'reason': '2B: (i) or (ii); (i) names one landform formed by fluvial or glacial or coastal processes -> 3 routes, (ii) one -> 4 routes, each with its printed allocation.'},
     {'scan': [[1, 15, 'any one']], 'kind': 'closed-choose-one',
@@ -161,21 +164,16 @@ SELECTION_REVIEW = [
      'reason': 'No printed pool: 6A(iv) any two Irish tourist attractions, 9C any one European Union policy, option 16 any three soil processes, option 17 any one biome. Compulsory lists stay whole: 1A, 4A, 8A, 10A each item.'},
 ]
 
-LEGEND_GONE = ('The legend sheet was not published with the 2011 materials Paper Trail holds, and the map '
-               'sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source.')
-HELD = [
-    {'part': 1, 'question': '2', 'sub': '(i)', 'title': 'Ordnance Survey Map', 'marks': 2,
-     'reason': ('The paper asks "(i) What type of antiquity is found at grid reference Q 457 015?" of "the '
-                '1:50000 Ordnance Survey map and legend that accompany this paper". At Q 457 015 the map '
-                'prints only an unnamed red open-circle antiquity symbol south of Ballybeg; the scheme\'s '
-                'answer "Clós, Ráth, Lios, Enclosure, Ringfort." is the meaning the OS legend gives that '
-                'symbol. ' + LEGEND_GONE)},
-    {'part': 1, 'question': '2', 'sub': '(iii)', 'title': 'Ordnance Survey Map', 'marks': 2,
-     'reason': ('The paper asks "(iii) Has the tourist information centre at Q 444 010 regular opening '
-                'hours? Tick the correct answer." The map prints a green "i" tourist-information symbol at '
-                'Q 444 010 and no opening hours; whether that symbol marks regular opening (the scheme '
-                'answers "Yes") is a distinction only the OS legend draws. ' + LEGEND_GONE)},
-]
+# The SEC published no legend sheet for the 2011 map (Paper Trail holds none and
+# the map sheet carries none). Q2(i) and Q2(iii) ask what a map symbol means;
+# each card carries the printed question, a crop of the official map around
+# the grid reference asked about, the scheme's printed answer, and this note.
+LEGEND_NOTE = ('The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet '
+               'accompanies the 2011 papers and the map sheet carries none), so the meaning of the map '
+               'symbol asked about here is given in the marking scheme.')
+MAP_CROP = ('State Examinations Commission Geography 2011 Ordnance Survey map (crop of the official '
+            'extract) — © State Examinations Commission.')
+HELD: list[dict] = []
 
 P1, P2 = 1, 2
 LEFT = (0.0, 0.30, 0.58, 1.0)
@@ -291,14 +289,34 @@ PART_ONE = [
       (L(2, 'Examine the photographs above showing glacial features.'),),
       row_labels=(L(2, 'Boulder clay'), L(2, 'Erratic'), L(2, 'Striations'), L(2, 'Drumlin'))),
 ]
-# Q2(i) and Q2(iii) need the OS legend and are HELD; (ii) and (iv) read the map itself.
 Q2S = (L(3, 'Using the 1:50000 Ordnance Survey map and legend that accompany this paper,', 'in the space provided:'),)
 Q2I = L(3, '(i) What type of antiquity is found at grid reference Q 457 015?')
 PART_ONE += [
+    Task('p1-2-i', P1, '2', '(i)', 2, 3, L(3, 'Ordnance Survey Map', nth=0), (Q2I,),
+         (HEAD2, S(4, 'Q.2 · (i) · Clós', '(ii) · 50m', LEFT)),
+         answer('Type of antiquity', TWO, 'Q.2 · (i) · Clós, Ráth, Lios, Enclosure, Ringfort.'),
+         '2-6', MAP, ('map',), ID + 'p1-q2', False, stem=Q2S, note=LEGEND_NOTE,
+         figure=Figure('geography-2011-hl-p1-q2-i-map-crop', 'map', 1, (232.3, 297.1, 368.4, 410.5),
+                       'Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid reference '
+                       'Q 457 015, crossed by blue 1 km grid lines. Just west of the printed name Ballybeg, '
+                       'above the words An Baile Beag, is a small red open circle; two more red open circles '
+                       'lie to the north and north-east, near the red words Snoíodóireacht Chloiche, and a '
+                       'spot height of 164 lies to the south-east.', MAP_CROP)),
     T('p1-2-ii', P1, '2', '(ii)', 2, 3, L(3, 'Ordnance Survey Map', nth=0),
       (L(3, '(ii) What is the altitude above sea level of the antiquity named in part (i)?'),),
       (HEAD2, S(4, '(ii) · 50m', '(iii) · Yes', LEFT)), answer('Altitude', TWO, '(ii) · 50m'),
       '2-6', MAP, ID + 'p1-q2-ii', ('map',), (*Q2S, Q2I)),
+    Task('p1-2-iii', P1, '2', '(iii)', 2, 3, L(3, 'Ordnance Survey Map', nth=0),
+         (L(3, '(iii) Has the tourist information centre at Q 444 010 regular opening hours?', 'Yes No'),),
+         (HEAD2, S(4, '(iii) · Yes', '(iv) · Conical Hill', LEFT)),
+         answer('Regular opening hours', TWO, '(iii) · Yes'),
+         '2-6', MAP, ('map',), ID + 'p1-q2-iii', False, stem=Q2S, note=LEGEND_NOTE,
+         figure=Figure('geography-2011-hl-p1-q2-iii-map-crop', 'map', 1, (158.6, 325.4, 294.7, 438.9),
+                       'Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid reference '
+                       'Q 444 010, crossed by blue 1 km grid lines. On the harbour road at the quay a white '
+                       'letter P on a blue square sits beside a white letter i on a green square, with a blue '
+                       'star just east of them; the town of An Daingean lies above and Dingle Harbour below.',
+                       MAP_CROP)),
     T('p1-2-iv', P1, '2', '(iv)', 2, 3, L(3, 'Ordnance Survey Map', nth=0),
       (L(3, '(iv) Is the landform in grid square Q 46 02 a plateau or a conical hill?', 'Conical hill'),),
       (HEAD2, S(4, '(iv) · Conical Hill', 'Q.3', LEFT)), answer('Landform', TWO, '(iv) · Conical Hill'),

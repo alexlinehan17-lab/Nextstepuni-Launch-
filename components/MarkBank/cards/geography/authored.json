@@ -24,7 +24,7 @@
       "higher",
       "ordinary"
     ],
-    "cardCount": 4146,
+    "cardCount": 4153,
     "source": "Official SEC Geography question papers and final marking schemes, 2021-2026.",
     "authoredAt": "2026-08-31"
   },
@@ -8982,6 +8982,131 @@
       }
     },
     {
+      "id": "geography-2010-ol-p1-q4",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q4",
+      "stem": "Volcanic Landforms",
+      "questionText": "Examine the diagram below. Use the following terms to fill in the blanks on the diagram:\nVent · Crater · Magma chamber · Lava flow · Caldera lake",
+      "paperPage": 4,
+      "paperFileid": "LC005GLP000EV",
+      "totalMarks": 10,
+      "schemePage": 4,
+      "topicId": "geography-0-7",
+      "conceptId": "geography-0-7-volcanic-landforms",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "Five terms @ 2 marks each as follows:",
+        "Vent",
+        "Crater",
+        "Magma Chamber",
+        "Lava Flow",
+        "Caldera Lake"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Vent",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five terms @ 2 marks each as follows:",
+            "Vent"
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "Crater",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Crater"
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "Magma Chamber",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Magma Chamber"
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "Lava Flow",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Lava Flow"
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "Caldera Lake",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Caldera Lake"
+          ]
+        }
+      ],
+      "directions": [],
+      "atlasTopicIds": [
+        "geography-ordinary-earthquakes-volcanoes"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "PART 1 · Q4",
+        "title": "Official question page",
+        "pages": [
+          4
+        ],
+        "attribution": "State Examinations Commission Geography OL question paper 2010 — © State Examinations Commission.",
+        "presentationNote": "Official examination layout, reproduced page-for-page so every printed map, chart, photograph and source remains in context."
+      },
+      "questionFigure": {
+        "candId": "geography-2010-ol-p1-q4-paper-diagram",
+        "src": "/exam-figures/geography/markbank/geography-2010-ol-p1-q4-paper-diagram.png",
+        "srcHash": "2bf6858e28f0d5c0a14ba6b3922f73ba",
+        "alt": "The question as printed: the heading 4. Volcanic Landforms, the instruction, a row of five boxed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake) and a colour diagram of an erupting volcano cut away to show the ground beneath it. Five empty boxes have lines into the diagram: two at upper left, to the top of the cone and into the cone; one at lower left, to below the ground; one at upper right, to a hollow on the far slope; and one at lower right, to the slope.",
+        "lettersVisible": [],
+        "attribution": "State Examinations Commission Geography 2010 Ordinary Level question paper, page 4 (the diagram is credited on the paper to www.pacificislandtravel.com) — © State Examinations Commission."
+      },
+      "figure": {
+        "candId": "geography-2010-ol-p1-q4-scheme-diagram",
+        "src": "/exam-figures/geography/markbank/geography-2010-ol-p1-q4-scheme-diagram.png",
+        "srcHash": "6648dfab082145cfe1cccd881a1ea61e",
+        "alt": "The marking scheme's copy of the volcano diagram with the five terms in its boxes. Upper left, Crater points to the top of the cone under the ash cloud and Vent to the pipe rising through the cone; lower left, Magma Chamber points to the molten rock beneath the ground; at the right, Caldera Lake points to the lake in the hollow on the far slope and, lower right, Lava Flow points to the flow running down the slope.",
+        "lettersVisible": [],
+        "attribution": "State Examinations Commission Geography 2010 Ordinary Level marking scheme, page 2 (the scheme's labelled diagram) — © State Examinations Commission.",
+        "solution": true
+      }
+    },
+    {
       "id": "geography-2010-ol-p1-q5",
       "year": 2010,
       "level": "ordinary",
@@ -16690,6 +16815,70 @@
       }
     },
     {
+      "id": "geography-2011-hl-p1-q2",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(i)",
+      "stem": "Ordnance Survey Map — Using the 1:50000 Ordnance Survey map and legend that accompany this paper, write the correct answer for each of the following, in the space provided:",
+      "questionText": "(i) What type of antiquity is found at grid reference Q 457 015?",
+      "paperPage": 3,
+      "paperFileid": "LC005ALP000EV",
+      "totalMarks": 2,
+      "schemePage": 4,
+      "topicId": "geography-2-6",
+      "conceptId": "geography-2-6-ordnance-survey-map-i",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "Each question:",
+        "4 parts @ 2 marks each",
+        "Q.2 · (i) · Clós, Ráth, Lios, Enclosure, Ringfort."
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Type of antiquity",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Each question:",
+            "4 parts @ 2 marks each",
+            "Q.2 · (i) · Clós, Ráth, Lios, Enclosure, Ringfort."
+          ]
+        }
+      ],
+      "directions": [],
+      "atlasTopicIds": [
+        "geography-higher-mapwork"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "OS MAP",
+        "title": "Official 1:50 000 map extract",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC005CLP003EV",
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
+        "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
+      },
+      "figure": {
+        "candId": "geography-2011-hl-p1-q2-i-map-crop",
+        "src": "/exam-figures/geography/markbank/geography-2011-hl-p1-q2-i-map-crop.png",
+        "srcHash": "5d82058bdcb999e405a27e0d5e1df658",
+        "alt": "Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid reference Q 457 015, crossed by blue 1 km grid lines. Just west of the printed name Ballybeg, above the words An Baile Beag, is a small red open circle; two more red open circles lie to the north and north-east, near the red words Snoíodóireacht Chloiche, and a spot height of 164 lies to the south-east.",
+        "lettersVisible": [],
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map (crop of the official extract) — © State Examinations Commission."
+      },
+      "note": "The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet accompanies the 2011 papers and the map sheet carries none), so the meaning of the map symbol asked about here is given in the marking scheme."
+    },
+    {
       "id": "geography-2011-hl-p1-q2-ii",
       "year": 2011,
       "level": "higher",
@@ -16743,6 +16932,70 @@
         "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
         "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
       }
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(iii)",
+      "stem": "Ordnance Survey Map — Using the 1:50000 Ordnance Survey map and legend that accompany this paper, write the correct answer for each of the following, in the space provided:",
+      "questionText": "(iii) Has the tourist information centre at Q 444 010 regular opening hours? Tick the correct answer. Yes No",
+      "paperPage": 3,
+      "paperFileid": "LC005ALP000EV",
+      "totalMarks": 2,
+      "schemePage": 4,
+      "topicId": "geography-2-6",
+      "conceptId": "geography-2-6-ordnance-survey-map-iii",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "Each question:",
+        "4 parts @ 2 marks each",
+        "(iii) · Yes"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Regular opening hours",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Each question:",
+            "4 parts @ 2 marks each",
+            "(iii) · Yes"
+          ]
+        }
+      ],
+      "directions": [],
+      "atlasTopicIds": [
+        "geography-higher-mapwork"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "OS MAP",
+        "title": "Official 1:50 000 map extract",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC005CLP003EV",
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
+        "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
+      },
+      "figure": {
+        "candId": "geography-2011-hl-p1-q2-iii-map-crop",
+        "src": "/exam-figures/geography/markbank/geography-2011-hl-p1-q2-iii-map-crop.png",
+        "srcHash": "c1fce27200dca7eb046387a8113f1e77",
+        "alt": "Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid reference Q 444 010, crossed by blue 1 km grid lines. On the harbour road at the quay a white letter P on a blue square sits beside a white letter i on a green square, with a blue star just east of them; the town of An Daingean lies above and Dingle Harbour below.",
+        "lettersVisible": [],
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map (crop of the official extract) — © State Examinations Commission."
+      },
+      "note": "The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet accompanies the 2011 papers and the map sheet carries none), so the meaning of the map symbol asked about here is given in the marking scheme."
     },
     {
       "id": "geography-2011-hl-p1-q2-iv",
@@ -26265,6 +26518,80 @@
       }
     },
     {
+      "id": "geography-2011-ol-p1-q11",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2011 OL Part 1 Q11(i)",
+      "stem": "Ordnance Survey Map — Examine the 1:50000 Ordnance Survey map and legend accompanying this paper.",
+      "questionText": "(i) Name the feature/symbol which can be found at each of the following grid references:\nQ 442 010\nQ 441 005",
+      "paperPage": 10,
+      "paperFileid": "LC005GLP000EV",
+      "totalMarks": 4,
+      "schemePage": 7,
+      "topicId": "geography-2-6",
+      "conceptId": "geography-2-6-ordnance-survey-map-i",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "(i) · Parking · 2 marks",
+        "Boating activities · 2 marks"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Q 442 010",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "(i) · Parking · 2 marks"
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "Q 441 005",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Boating activities · 2 marks"
+          ]
+        }
+      ],
+      "directions": [],
+      "atlasTopicIds": [
+        "geography-ordinary-mapwork"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "OS MAP",
+        "title": "Official 1:50 000 map extract",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC005CLP003EV",
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
+        "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
+      },
+      "figure": {
+        "candId": "geography-2011-ol-p1-q11-i-map-crop",
+        "src": "/exam-figures/geography/markbank/geography-2011-ol-p1-q11-i-map-crop.png",
+        "srcHash": "7b55a1fbbe583688dbbd6c2ad718d890",
+        "alt": "Crop of the official 2011 1:50 000 Ordnance Survey map of Dingle around grid references Q 442 010 and Q 441 005, crossed by blue 1 km grid lines. On the harbour road at the quay a white letter P on a blue square sits beside a white letter i on a green square; in the harbour water below is a small blue boat-shaped symbol, and a black dashed line runs south down the harbour past the printed words Dingle Harbour.",
+        "lettersVisible": [],
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map (crop of the official extract) — © State Examinations Commission."
+      },
+      "note": "The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet accompanies the 2011 papers and the map sheet carries none), so the meaning of each map symbol asked about here is given in the marking scheme."
+    },
+    {
       "id": "geography-2011-ol-p1-q11-ii",
       "year": 2011,
       "level": "ordinary",
@@ -26615,6 +26942,204 @@
           "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
         }
       ]
+    },
+    {
+      "id": "geography-2011-ol-p2-q1a",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2011 OL Part 2 Q1A",
+      "stem": "Ordnance Survey Map",
+      "questionText": "Examine the 1:50000 Ordnance Survey map and legend accompanying this paper. Draw a sketch map of the area shown and on it show and name the following:\n• The coastline\n• The Milltown River\n• A lighthouse\n• A named area of land above 400 metres\n• A corrie lake.",
+      "paperPage": 13,
+      "paperFileid": "LC005GLP000EV",
+      "totalMarks": 30,
+      "schemePage": 10,
+      "topicId": "geography-2-6",
+      "conceptId": "geography-2-6-ordnance-survey-map",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "Sketch Map as follows:",
+        "Limits/frame = · 1 mark",
+        "Proportions = · 2 marks graded",
+        "Overall impression = · 2 marks graded",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Limits/frame",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Sketch Map as follows:",
+            "Limits/frame = · 1 mark"
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "Proportions",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Proportions = · 2 marks graded"
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "Overall impression",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Overall impression = · 2 marks graded"
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "The coastline",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "The Milltown River",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c6",
+          "label": "A lighthouse",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c7",
+          "label": "A named area of land above 400 metres",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c8",
+          "label": "A corrie lake.",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        }
+      ],
+      "directions": [
+        "For an obvious tracing allow 50% of marks obtained for the features BUT 0 marks out of the 5 for sketch map."
+      ],
+      "atlasTopicIds": [
+        "geography-ordinary-mapwork",
+        "geography-ordinary-the-sea",
+        "geography-ordinary-glaciation"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "OS MAP",
+        "title": "Official 1:50 000 map extract",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC005CLP003EV",
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
+        "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
+      },
+      "note": "The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet accompanies the 2011 papers and the map sheet carries none), so the lighthouse is shown on the map only by a symbol that legend would name; the marking scheme prices each item as printed."
     },
     {
       "id": "geography-2011-ol-p2-q1b-route-i-marine-action",
@@ -29344,6 +29869,203 @@
         "geography-ordinary-regions-continental"
       ],
       "reviewed": true
+    },
+    {
+      "id": "geography-2011-ol-p2-q7a",
+      "year": 2011,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2011 OL Part 2 Q7A",
+      "stem": "Ordnance Survey Map",
+      "questionText": "Examine the 1:50000 Ordnance Survey map and legend accompanying this paper. Draw a sketch map of the area shown. On it show and name the following:\n• The entire N86 National Secondary Road\n• The ferry route in Dingle Harbour\n• An area of Coniferous Plantation\n• A Tourist Information centre\n• An Independent Holiday Hostel.",
+      "paperPage": 20,
+      "paperFileid": "LC005GLP000EV",
+      "totalMarks": 30,
+      "schemePage": 23,
+      "topicId": "geography-2-6",
+      "conceptId": "geography-2-6-ordnance-survey-map",
+      "taskRequirements": [],
+      "guidanceKind": "exact",
+      "schemeGuidance": [
+        "Sketch Map as follows:",
+        "Limits/frame = · 1 mark",
+        "Proportions (landscape) = · 2 marks graded",
+        "Overall impression = · 2 marks graded",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks",
+        "Five items shown and named as follows:",
+        "Showing = · 3 marks graded",
+        "Naming/identifying = · 2 marks"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Limits/frame",
+          "maxMarks": 1,
+          "permittedMarks": [
+            0,
+            1
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Sketch Map as follows:",
+            "Limits/frame = · 1 mark"
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "Proportions (landscape)",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Proportions (landscape) = · 2 marks graded"
+          ]
+        },
+        {
+          "id": "c3",
+          "label": "Overall impression",
+          "maxMarks": 2,
+          "permittedMarks": [
+            0,
+            1,
+            2
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Overall impression = · 2 marks graded"
+          ]
+        },
+        {
+          "id": "c4",
+          "label": "The entire N86 National Secondary Road",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c5",
+          "label": "The ferry route in Dingle Harbour",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c6",
+          "label": "An area of Coniferous Plantation",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c7",
+          "label": "A Tourist Information centre",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        },
+        {
+          "id": "c8",
+          "label": "An Independent Holiday Hostel.",
+          "maxMarks": 5,
+          "permittedMarks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "guidanceKind": "exact",
+          "guidance": [
+            "Five items shown and named as follows:",
+            "Showing = · 3 marks graded",
+            "Naming/identifying = · 2 marks"
+          ]
+        }
+      ],
+      "directions": [
+        "For an obvious tracing allow 50% of marks obtained for the features BUT 0 marks out of the 5 for sketch map."
+      ],
+      "atlasTopicIds": [
+        "geography-ordinary-mapwork",
+        "geography-ordinary-elective-economic"
+      ],
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "OS MAP",
+        "title": "Official 1:50 000 map extract",
+        "pages": [
+          1
+        ],
+        "sourceFileid": "LC005CLP003EV",
+        "attribution": "State Examinations Commission Geography 2011 Ordnance Survey map — © State Examinations Commission.",
+        "presentationNote": "The exact official map extract supplied with the examination, reproduced without retyping or alteration."
+      },
+      "note": "The SEC did not publish a legend for the 2011 Ordnance Survey map (no legend sheet accompanies the 2011 papers and the map sheet carries none), so the ferry route, the coniferous plantation, the tourist information centre and the independent holiday hostel are shown on the map only by symbols that legend would name; the marking scheme prices each item as printed."
     },
     {
       "id": "geography-2011-ol-p2-q7b-tourism",
@@ -184455,6 +185177,73 @@
         "geography-ordinary-economic-multinationals-globalisation"
       ],
       "reviewed": true
+    },
+    {
+      "id": "geography-2020-ol-p2-q9c",
+      "year": 2020,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2020 OL Part 2 Q9C",
+      "stem": "European Union Policy",
+      "questionText": "Explain how European Union policy has impacted on the Irish economy.",
+      "paperPage": 13,
+      "paperFileid": "LC005GLP043EV",
+      "totalMarks": 30,
+      "schemePage": 25,
+      "topicId": "geography-3-3",
+      "conceptId": "geography-3-3-european-union-policy",
+      "taskRequirements": [],
+      "guidanceKind": "srp",
+      "schemeGuidance": [
+        "Impact identified 1 SRP · 3m",
+        "Explanation 8 SRP’s @ 3m each · 24m"
+      ],
+      "criteria": [
+        {
+          "id": "c1",
+          "label": "Impact identified",
+          "maxMarks": 3,
+          "permittedMarks": [
+            0,
+            3
+          ],
+          "guidanceKind": "srp",
+          "guidance": [
+            "Impact identified 1 SRP · 3m"
+          ]
+        },
+        {
+          "id": "c2",
+          "label": "Explanation",
+          "maxMarks": 24,
+          "permittedMarks": [
+            0,
+            3,
+            6,
+            9,
+            12,
+            15,
+            18,
+            21,
+            24
+          ],
+          "guidanceKind": "srp",
+          "guidance": [
+            "Explanation 8 SRP’s @ 3m each · 24m"
+          ]
+        }
+      ],
+      "directions": [
+        "Allow a second impact identified for one SRP.",
+        "Allow a named policy (or policy area) for one SRP.",
+        "All further policies named and impacts identified require discussion."
+      ],
+      "atlasTopicIds": [
+        "geography-ordinary-economic-ireland-the-eu"
+      ],
+      "reviewed": true,
+      "unpricedMarks": 3,
+      "note": "The published scheme prices 27 of the printed 30 marks (\"Impact identified 1 SRP 3m\" and \"Explanation 8 SRP’s @ 3m each 24m\" above \"Total 30m\") and publishes no allocation for the other 3, so this card can place at most 27 of the 30."
     },
     {
       "id": "geography-2020-ol-p2-q10a",

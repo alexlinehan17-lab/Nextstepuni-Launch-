@@ -4136,7 +4136,7 @@
             ]
           ],
           "kind": "exam-attempt-rule",
-          "reason": "Part One ten of twelve and Part Two three questions (one of Q1-3, one of Q4-6, one elective from either elective) are attempt rules; every question is carded or held."
+          "reason": "Part One ten of twelve and Part Two three questions (one of Q1-3, one of Q4-6, one elective from either elective) are attempt rules; every question is carded."
         },
         {
           "scan": [
@@ -4294,8 +4294,8 @@
         "Part 2 Q9B": 30,
         "Part 2 Q9C": 40
       },
-      "taskCount": 101,
-      "cardCount": 113,
+      "taskCount": 102,
+      "cardCount": 114,
       "legacyIds": [],
       "addedIds": [
         "geography-2010-ol-p1-q1",
@@ -4314,6 +4314,7 @@
         "geography-2010-ol-p1-q2-iii-b",
         "geography-2010-ol-p1-q2-iii-c",
         "geography-2010-ol-p1-q3",
+        "geography-2010-ol-p1-q4",
         "geography-2010-ol-p1-q5",
         "geography-2010-ol-p1-q5-ii",
         "geography-2010-ol-p1-q6",
@@ -4643,6 +4644,50 @@
           ],
           "cards": [
             "geography-2010-ol-p1-q3"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4",
+          "questionRef": "2010 OL Part 1 Q4",
+          "marks": 10,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Vent",
+              "maxMarks": 2
+            },
+            {
+              "label": "Crater",
+              "maxMarks": 2
+            },
+            {
+              "label": "Magma Chamber",
+              "maxMarks": 2
+            },
+            {
+              "label": "Lava Flow",
+              "maxMarks": 2
+            },
+            {
+              "label": "Caldera Lake",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q4"
           ],
           "routes": []
         },
@@ -7735,17 +7780,7 @@
           "routes": []
         }
       ],
-      "held": [
-        {
-          "year": 2010,
-          "level": "ordinary",
-          "part": 1,
-          "questionRef": "4",
-          "title": "Volcanic Landforms",
-          "reason": "The paper asks candidates to \"fill in the blanks on the diagram\" with five printed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake). The scheme (page 4, printed \"Page 2 of 31\") prints \"Five terms @ 2 marks each as follows:\" above a copy of the diagram with the terms set in its boxes: Crater and Vent upper left, Caldera Lake right, Magma Chamber lower left, Lava Flow lower right. The answer is which box each term fills, and that exists only as the scheme's drawing; its text layer gives the five terms alone (\"Crater\", \"Vent\", \"Caldera Lake\", \"Magma Chamber · Lava Flow\"), the same words the paper already prints. A card can show the question page but not the scheme's drawing, so its guidance could not tell a correct label from a misplaced one; the question is held rather than carded without its answer."
-        }
-      ],
-      "rule": "Independent review ledger: Leaving Certificate Geography 2010 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005GLP000EV (28 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005GLP000EV (36 pages), and the common\nCarrick-on-Suir companions shared with Higher Level, all published only as\nJPEG images. In 2010 the SEC file names are swapped relative to later years:\nLC005CLP004EV.jpg (2409 x 3507) is the 1:50 000 Ordnance Survey map extract\nof Carrick-on-Suir, LC005CLP003EV.jpg (5000 x 3253) is the oblique aerial\nphotograph of the town, and LC005CLP000EV.jpg (2481 x 3508) is the Discovery\nSeries legend sheet. Each was rendered and identified by eye on 2026-10-23.\nPart One is 100 marks (attempt ten of twelve @ 10), Part Two 300 (three\nquestions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p10 Part One Questions 1-12 (p2\n  opens with the Part One instructions; p4 holds Q3 and Q4, p5 Q5 and Q6,\n  p6 Q7 and Q8); p11 Part Two instructions; p12 Section 1 divider; p13-p19\n  Q1-Q6 (p13 and p17 open with their dividers; p13 holds 1A and 1B, p14\n  1C); p20 Section 2 divider; p21-p27 Electives Q7-Q12 (p21 and p25 open\n  with their elective dividers; p23 holds 9A and 9B, p24 9C); p28 printed\n  \"Blank Page\".\n  Scheme p1 cover; p2 blank inside cover; p3 Geographical Investigation\n  (coursework); p4-p6 Part One (Q1-Q4, Q5-Q8, Q9-Q12); p7 Part Two\n  instructions and Section 1 divider; p8-p19 Q1-Q6; p20 Section 2 divider\n  and Q7A; p21-p31 Q7B-Q12C; p32 investigation topics; p33 Irish-language\n  bonus marks; p34-p35 blank; p36 back cover. The scheme reprints every\n  question above its allocation, so every slice starts at the allocation.\n\nThe 2010 layout differs from 2014-2016. Part One questions are priced part\nby part in the scheme (2 marks a part, Q5 5 + 5), so every separately\npriced roman or lettered part is a task (Q2(iii)(a)-(c) each), and a table\nanswered row by row is one card of rows. Matching tables, in the printed\nrow order: Q1 Outer Core B, Mantle convection current C, Inner Core D,\nMid-Ocean Ridge E, Ocean trench A; Q3 A 4, B 5, C 3, D 2, E 1; Q6(i)\nS 415 220 Public Telephone, S 362 235 Enclosure etc., S 432 226 Parking,\nS 402 203 18 Hole Golf Course; Q11 Hurricane F, A retreating glacier A, An\nurban area E, A desert C, An erupting volcano B (Mount Everest D is printed\nand the scheme prices it 0 marks); Q12(i) Waterfall C, Interlocking Spur B,\nMeander A. Q8's five words are priced in the scheme's own completed\nparagraph (LIMESTONE, CARBONATION, GRIKES, CLINTS, PAVEMENT; the last two\nshare one printed line).\n\nQ4 (Volcanic Landforms) is held: the scheme answers it only with a copy of\nthe diagram carrying the five terms in its boxes (see HELD).\n\nPart Two tariffs as printed: twelve parts carry 40 marks (1C, 2B, 3B, 4B,\n5B, 6C, 7C, 8B, 9C, 10C, 11B, 12B) and the rest 30. Where the scheme\nprints \"graded\" with no grades (sketch outline, proportions, showing, graph\naxes and items, Q5(i) distance, 10C(i) locations) any whole mark up to the\nline's maximum is permitted. Scheme anomalies, carded as the components\nprint them: 7A(i) and 11A(i) are headed \"Drawing graph @ 21 marks graded\"\nbut price 2 + 3 + 3 + 16 = 24 and print \"(Sub Total 24)\", which with (ii)'s\n6 makes the paper's [30 marks]; the slices start at the priced lines. 5A's\nreprint labels (iii) and (iv) as \"(i)\" and \"(ii)\"; its allocation table\nlabels them correctly."
+      "rule": "Independent review ledger: Leaving Certificate Geography 2010 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005GLP000EV (28 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005GLP000EV (36 pages), and the common\nCarrick-on-Suir companions shared with Higher Level, all published only as\nJPEG images. In 2010 the SEC file names are swapped relative to later years:\nLC005CLP004EV.jpg (2409 x 3507) is the 1:50 000 Ordnance Survey map extract\nof Carrick-on-Suir, LC005CLP003EV.jpg (5000 x 3253) is the oblique aerial\nphotograph of the town, and LC005CLP000EV.jpg (2481 x 3508) is the Discovery\nSeries legend sheet. Each was rendered and identified by eye on 2026-10-23.\nPart One is 100 marks (attempt ten of twelve @ 10), Part Two 300 (three\nquestions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p10 Part One Questions 1-12 (p2\n  opens with the Part One instructions; p4 holds Q3 and Q4, p5 Q5 and Q6,\n  p6 Q7 and Q8); p11 Part Two instructions; p12 Section 1 divider; p13-p19\n  Q1-Q6 (p13 and p17 open with their dividers; p13 holds 1A and 1B, p14\n  1C); p20 Section 2 divider; p21-p27 Electives Q7-Q12 (p21 and p25 open\n  with their elective dividers; p23 holds 9A and 9B, p24 9C); p28 printed\n  \"Blank Page\".\n  Scheme p1 cover; p2 blank inside cover; p3 Geographical Investigation\n  (coursework); p4-p6 Part One (Q1-Q4, Q5-Q8, Q9-Q12); p7 Part Two\n  instructions and Section 1 divider; p8-p19 Q1-Q6; p20 Section 2 divider\n  and Q7A; p21-p31 Q7B-Q12C; p32 investigation topics; p33 Irish-language\n  bonus marks; p34-p35 blank; p36 back cover. The scheme reprints every\n  question above its allocation, so every slice starts at the allocation.\n\nThe 2010 layout differs from 2014-2016. Part One questions are priced part\nby part in the scheme (2 marks a part, Q5 5 + 5), so every separately\npriced roman or lettered part is a task (Q2(iii)(a)-(c) each), and a table\nanswered row by row is one card of rows. Matching tables, in the printed\nrow order: Q1 Outer Core B, Mantle convection current C, Inner Core D,\nMid-Ocean Ridge E, Ocean trench A; Q3 A 4, B 5, C 3, D 2, E 1; Q6(i)\nS 415 220 Public Telephone, S 362 235 Enclosure etc., S 432 226 Parking,\nS 402 203 18 Hole Golf Course; Q11 Hurricane F, A retreating glacier A, An\nurban area E, A desert C, An erupting volcano B (Mount Everest D is printed\nand the scheme prices it 0 marks); Q12(i) Waterfall C, Interlocking Spur B,\nMeander A. Q8's five words are priced in the scheme's own completed\nparagraph (LIMESTONE, CARBONATION, GRIKES, CLINTS, PAVEMENT; the last two\nshare one printed line).\n\nQ4 (Volcanic Landforms) asks candidates to fill five printed terms into the\ndiagram's unlettered boxes; the scheme answers with \"Five terms @ 2 marks\neach as follows:\" above a copy of the diagram with the terms in its boxes.\nThe card shows the paper's own print of the question (instruction, term\nrow and diagram) as its question crop, the scheme's five printed term\nlines as guidance, and the scheme's labelled diagram as a crop held back\nuntil the scheme is revealed (a solution figure).\n\nPart Two tariffs as printed: twelve parts carry 40 marks (1C, 2B, 3B, 4B,\n5B, 6C, 7C, 8B, 9C, 10C, 11B, 12B) and the rest 30. Where the scheme\nprints \"graded\" with no grades (sketch outline, proportions, showing, graph\naxes and items, Q5(i) distance, 10C(i) locations) any whole mark up to the\nline's maximum is permitted. Scheme anomalies, carded as the components\nprint them: 7A(i) and 11A(i) are headed \"Drawing graph @ 21 marks graded\"\nbut price 2 + 3 + 3 + 16 = 24 and print \"(Sub Total 24)\", which with (ii)'s\n6 makes the paper's [30 marks]; the slices start at the priced lines. 5A's\nreprint labels (iii) and (iv) as \"(i)\" and \"(ii)\"; its allocation table\nlabels them correctly."
     },
     {
       "year": 2011,
@@ -8017,7 +8052,7 @@
             ]
           ],
           "kind": "exam-attempt-rule",
-          "reason": "Part One any ten of twelve and Part Two four questions (one of Q1-3, one of Q4-6, one elective, one option) are attempt rules; every question is carded or held."
+          "reason": "Part One any ten of twelve and Part Two four questions (one of Q1-3, one of Q4-6, one elective, one option) are attempt rules; every question is carded."
         },
         {
           "scan": [
@@ -8141,8 +8176,8 @@
         "Part 2 Q9B": 30,
         "Part 2 Q9C": 30
       },
-      "taskCount": 94,
-      "cardCount": 99,
+      "taskCount": 96,
+      "cardCount": 101,
       "legacyIds": [],
       "addedIds": [
         "geography-2011-hl-p1-q1",
@@ -8155,7 +8190,9 @@
         "geography-2011-hl-p1-q12-ii",
         "geography-2011-hl-p1-q12-iii",
         "geography-2011-hl-p1-q12-iv",
+        "geography-2011-hl-p1-q2",
         "geography-2011-hl-p1-q2-ii",
+        "geography-2011-hl-p1-q2-iii",
         "geography-2011-hl-p1-q2-iv",
         "geography-2011-hl-p1-q3",
         "geography-2011-hl-p1-q3-ii",
@@ -8289,6 +8326,34 @@
           "routes": []
         },
         {
+          "key": "p1-2-i",
+          "questionRef": "2011 HL Part 1 Q2(i)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Type of antiquity",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map"
+          ],
+          "cards": [
+            "geography-2011-hl-p1-q2"
+          ],
+          "routes": []
+        },
+        {
           "key": "p1-2-ii",
           "questionRef": "2011 HL Part 1 Q2(ii)",
           "marks": 2,
@@ -8313,6 +8378,34 @@
           ],
           "cards": [
             "geography-2011-hl-p1-q2-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-iii",
+          "questionRef": "2011 HL Part 1 Q2(iii)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Regular opening hours",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map"
+          ],
+          "cards": [
+            "geography-2011-hl-p1-q2-iii"
           ],
           "routes": []
         },
@@ -11287,25 +11380,7 @@
           "routes": []
         }
       ],
-      "held": [
-        {
-          "year": 2011,
-          "level": "higher",
-          "part": 1,
-          "questionRef": "2(i)",
-          "title": "Ordnance Survey Map",
-          "reason": "The paper asks \"(i) What type of antiquity is found at grid reference Q 457 015?\" of \"the 1:50000 Ordnance Survey map and legend that accompany this paper\". At Q 457 015 the map prints only an unnamed red open-circle antiquity symbol south of Ballybeg; the scheme's answer \"Clós, Ráth, Lios, Enclosure, Ringfort.\" is the meaning the OS legend gives that symbol. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
-        },
-        {
-          "year": 2011,
-          "level": "higher",
-          "part": 1,
-          "questionRef": "2(iii)",
-          "title": "Ordnance Survey Map",
-          "reason": "The paper asks \"(iii) Has the tourist information centre at Q 444 010 regular opening hours? Tick the correct answer.\" The map prints a green \"i\" tourist-information symbol at Q 444 010 and no opening hours; whether that symbol marks regular opening (the scheme answers \"Yes\") is a distinction only the OS legend draws. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
-        }
-      ],
-      "rule": "Independent review ledger: Leaving Certificate Geography 2011 Higher Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005ALP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005ALP000EV (48 pages), and the Dingle / An\nDaingean companions as Paper Trail files them — the 1:50 000 map\nLC005CLP003EV (one landscape page holding one 7016 x 4961 image; it prints\nthe grid, names, contours, spot heights and the copyright margin but NO\nlegend) and the aerial photograph LC005CLP004EV (one page holding two\nimages: a blank backing image and the oblique photograph). The SEC legend\nsheet for 2011 is not in Paper Trail at all. Part One is 80 marks (any ten\nof twelve @ 8), Part Two 320 (four questions @ 80).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p12 Part One Questions 1-12 (p3\n  holds Q2 and Q3; Q1 prints four glacial photographs, Q5 an aerial\n  photograph, Q6 a weather chart, Q7 an OS map extract, Q8 a diagram of\n  the earth, Q9 a geological map of Ireland, Q10 four satellite images,\n  Q11 a table, Q12 a trend graph); p13 Part Two instructions; p14 Section\n  1 divider; p15-p20 Q1-Q6 (p15 and p18 open with their dividers; 2A\n  prints a plate map, 3A a newspaper map and text, 5A a bar chart, 6A a\n  table); p21 Section 2 divider; p22-p27 Electives Q7-Q12 (p22 and p25 open\n  with their elective dividers; 9A prints a world HDI map, 11A a population\n  pyramid); p28 Section 3 divider and option note; p29-p30 Options Q13-Q24;\n  p31 and p32 printed \"Blank Page\".\n  Scheme p1 cover; p2 blank; p3 note on marking schemes; p4 Part One table\n  (a centred tariff heading, then two columns: Q1-Q6, Q7-Q12; the answer\n  lines print no marks); p5 Part Two instructions; p6 Section 1 divider;\n  p7-p13 Q1-Q3; p14-p19 Q4-Q6; p20 Section 2 divider; p21-p25 Q7-Q9;\n  p26-p31 Q10-Q12; p32 Section 3 divider; p33-p40 Q13-Q24; p41\n  Geographical Investigation (coursework); p42 its presentation marks; p43\n  investigation topics; p44 Irish-language bonus marks; p45-p46 blank but\n  for page numbers; p47 blank; p48 back cover. The scheme reprints each\n  Part Two question above its allocation; every slice starts at the\n  allocation.\n  Companions: Dingle map extract (eastings 41-53, northings 98-07: Dingle\n  Harbour / Cuan an Daingin, the Garfinny River, Slievanea and\n  Croaghskearda above 600 m, the R559, R560 and N86); oblique aerial\n  photograph of Dingle town and harbour. No legend sheet.\n\nLegend decisions. The paper directs the candidate to \"the 1:50000\nOrdnance Survey map and legend\" in Part One Q2 and Q3 and Part Two 1A, 2B,\n7B, 11C and 12C. Each separately priced part was read against the map\nsheet: a part is held only when its answer is a meaning the legend alone\ndefines. Held: Part One Q2(i), whose antiquity at Q 457 015 is an unnamed\nred open circle (the scheme's \"Clós, Ráth, Lios, Enclosure, Ringfort.\" is\nthe symbol's legend meaning), and Q2(iii), whose \"regular opening hours\" is\nthe distinction the legend draws between tourist-information symbols.\nCarded with the map alone: Q2(ii) (the antiquity's altitude, read from the\nprinted 50 and 100 m contours at the grid reference (i) prints) and Q2(iv)\n(Sugar Loaf / An Chorr, spot height 217 inside closed contours); Q3(i)-(iv)\nwith the photograph (the R560 and N86 are printed road numbers, the\ncamera points and direction are read from the grid); 1A (the Garfinny\nRiver is named, cliffed coast is read from contours crowding to the shore\nunder Ballymacadoyle Hill, beaches from the printed \"Short Strand\" and\n\"Trá Chathail\", land over 600 m from contours and spot heights 601-670);\n2B (a named or contour-read landform, or steep slopes, with a grid\nreference); 7B (a site by grid reference with harbour, road-number and\ncontour evidence); 11C (the uplands east of easting 44 and north of\nnorthing 03 read from contours, spot heights and printed hill names); 12C\nwith the photograph (harbour, printed road numbers, river and relief).\n\nPart One prices every question in one heading: \"Each question: 4 parts @ 2\nmarks each / 8 parts @ 1 mark each\", so every Part One card carries the\nheading lines that price it with its answer lines. Q1 and Q7 answer each\nprinted row twice (a letter and a process) and are one card of two-mark\nrows; Q4, Q5, Q8, Q9 and Q10 are one matching card each. Matching tables,\nin the printed row order: Q1 Boulder clay B Deposition, Erratic C\nDeposition, Striations A Erosion, Drumlin D Deposition; Q4 Cultural\nBasque, Physical The Alps, Peripheral Mezzogiorno, Urban Paris; Q5 Sea\nstack C, Blowhole A, Bay D, Sea arch B; Q7 V-shaped valley D Fluvial,\nCorrie/Cirque B Glacial, Arête C Glacial, Meander A Fluvial; Q8 Mantle D,\nAsthenosphere C, Core A, Crust B; Q9 Basalt B, Limestone A, Sandstone D,\nGranite C; Q10 Oil slick A, Flooding C, Erupting volcano B, San Andreas\nFault D. Q6's four true/false lines print no roman labels, so each is\nsliced by its own printed row. Q6(iii) is printed \"False/True (accept\neither)\": that line is its guidance. Q11(ii), Q11(iv) and Q12(iv) are\npriced \"1+1\".\n\nPart Two: 2A prices \"5 parts @ 4 marks each\" (four plates, then X), 3A and\n9A \"Four parts @ 5 marks each\" with \"3 + 2 marks\" pairs, 5A, 6A and 11A\n\"Five parts @ 4 marks each\". 2B(i)'s \"Labelled diagram 4 marks graded\"\nprints no steps, so any whole mark to 4 is permitted. 5A(iv) prints \"Name\ntwo major Irish fishing port.\" (the scheme reprints \"ports\").\n\nThe options print no Overall Coherence table: coherence is graded inside\neach aspect (\"Number of aspects: 3 @ 27 + 27 + 26 / 4 @ 20 marks each\",\n\"Identifying aspect: 4 marks / 4 marks\", \"Discussion: 8 x SRPs OR 6 x\nSRPs\", \"Overall coherence: 7/6 marks graded / 4 marks graded\"). Either way\nthe discussion is 24 SRPs (3 x 8 or 4 x 6), 48 marks, and identifying plus\ncoherence is 32 (3 x 4 + 7 + 7 + 6, or 4 x 4 + 4 x 4), so each option card\nprices those two criteria. Options 16 and 17 print only the three-aspect\nscheme and are priced per aspect, 27 + 27 + 26.\n\nPrinted choices: 1C (any one of three surface processes) is one route per\noption; 2B (i) or (ii), with (i)'s landform formed by fluvial or glacial or\ncoastal processes a route each, is four routes; option 17 (three of four\nprinted headings) is a pool, one card. 6A(iv) any two attractions, 9C any\none EU policy, 16 any three soil processes and 17's any one biome print no\npool and stay open."
+      "rule": "Independent review ledger: Leaving Certificate Geography 2011 Higher Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005ALP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005ALP000EV (48 pages), and the Dingle / An\nDaingean companions as Paper Trail files them — the 1:50 000 map\nLC005CLP003EV (one landscape page holding one 7016 x 4961 image; it prints\nthe grid, names, contours, spot heights and the copyright margin but NO\nlegend) and the aerial photograph LC005CLP004EV (one page holding two\nimages: a blank backing image and the oblique photograph). The SEC legend\nsheet for 2011 is not in Paper Trail at all. Part One is 80 marks (any ten\nof twelve @ 8), Part Two 320 (four questions @ 80).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p12 Part One Questions 1-12 (p3\n  holds Q2 and Q3; Q1 prints four glacial photographs, Q5 an aerial\n  photograph, Q6 a weather chart, Q7 an OS map extract, Q8 a diagram of\n  the earth, Q9 a geological map of Ireland, Q10 four satellite images,\n  Q11 a table, Q12 a trend graph); p13 Part Two instructions; p14 Section\n  1 divider; p15-p20 Q1-Q6 (p15 and p18 open with their dividers; 2A\n  prints a plate map, 3A a newspaper map and text, 5A a bar chart, 6A a\n  table); p21 Section 2 divider; p22-p27 Electives Q7-Q12 (p22 and p25 open\n  with their elective dividers; 9A prints a world HDI map, 11A a population\n  pyramid); p28 Section 3 divider and option note; p29-p30 Options Q13-Q24;\n  p31 and p32 printed \"Blank Page\".\n  Scheme p1 cover; p2 blank; p3 note on marking schemes; p4 Part One table\n  (a centred tariff heading, then two columns: Q1-Q6, Q7-Q12; the answer\n  lines print no marks); p5 Part Two instructions; p6 Section 1 divider;\n  p7-p13 Q1-Q3; p14-p19 Q4-Q6; p20 Section 2 divider; p21-p25 Q7-Q9;\n  p26-p31 Q10-Q12; p32 Section 3 divider; p33-p40 Q13-Q24; p41\n  Geographical Investigation (coursework); p42 its presentation marks; p43\n  investigation topics; p44 Irish-language bonus marks; p45-p46 blank but\n  for page numbers; p47 blank; p48 back cover. The scheme reprints each\n  Part Two question above its allocation; every slice starts at the\n  allocation.\n  Companions: Dingle map extract (eastings 41-53, northings 98-07: Dingle\n  Harbour / Cuan an Daingin, the Garfinny River, Slievanea and\n  Croaghskearda above 600 m, the R559, R560 and N86); oblique aerial\n  photograph of Dingle town and harbour. No legend sheet.\n\nLegend decisions. The paper directs the candidate to \"the 1:50000\nOrdnance Survey map and legend\" in Part One Q2 and Q3 and Part Two 1A, 2B,\n7B, 11C and 12C. Each separately priced part was read against the map\nsheet. Two parts ask what a symbol means, which only the legend defines:\nPart One Q2(i), whose antiquity at Q 457 015 is an unnamed red open circle\n(the scheme's \"Clós, Ráth, Lios, Enclosure, Ringfort.\" is the symbol's\nlegend meaning), and Q2(iii), whose \"regular opening hours\" is the\ndistinction the legend draws between tourist-information symbols. Each is\ncarded with the printed question, a crop of the official map around the\ngrid reference asked about, the scheme's printed answer and marks, and a\nnote that the SEC published no 2011 legend, so the symbol's meaning is\ngiven in the marking scheme. Carded with the map alone: Q2(ii) (the antiquity's altitude, read from the\nprinted 50 and 100 m contours at the grid reference (i) prints) and Q2(iv)\n(Sugar Loaf / An Chorr, spot height 217 inside closed contours); Q3(i)-(iv)\nwith the photograph (the R560 and N86 are printed road numbers, the\ncamera points and direction are read from the grid); 1A (the Garfinny\nRiver is named, cliffed coast is read from contours crowding to the shore\nunder Ballymacadoyle Hill, beaches from the printed \"Short Strand\" and\n\"Trá Chathail\", land over 600 m from contours and spot heights 601-670);\n2B (a named or contour-read landform, or steep slopes, with a grid\nreference); 7B (a site by grid reference with harbour, road-number and\ncontour evidence); 11C (the uplands east of easting 44 and north of\nnorthing 03 read from contours, spot heights and printed hill names); 12C\nwith the photograph (harbour, printed road numbers, river and relief).\n\nPart One prices every question in one heading: \"Each question: 4 parts @ 2\nmarks each / 8 parts @ 1 mark each\", so every Part One card carries the\nheading lines that price it with its answer lines. Q1 and Q7 answer each\nprinted row twice (a letter and a process) and are one card of two-mark\nrows; Q4, Q5, Q8, Q9 and Q10 are one matching card each. Matching tables,\nin the printed row order: Q1 Boulder clay B Deposition, Erratic C\nDeposition, Striations A Erosion, Drumlin D Deposition; Q4 Cultural\nBasque, Physical The Alps, Peripheral Mezzogiorno, Urban Paris; Q5 Sea\nstack C, Blowhole A, Bay D, Sea arch B; Q7 V-shaped valley D Fluvial,\nCorrie/Cirque B Glacial, Arête C Glacial, Meander A Fluvial; Q8 Mantle D,\nAsthenosphere C, Core A, Crust B; Q9 Basalt B, Limestone A, Sandstone D,\nGranite C; Q10 Oil slick A, Flooding C, Erupting volcano B, San Andreas\nFault D. Q6's four true/false lines print no roman labels, so each is\nsliced by its own printed row. Q6(iii) is printed \"False/True (accept\neither)\": that line is its guidance. Q11(ii), Q11(iv) and Q12(iv) are\npriced \"1+1\".\n\nPart Two: 2A prices \"5 parts @ 4 marks each\" (four plates, then X), 3A and\n9A \"Four parts @ 5 marks each\" with \"3 + 2 marks\" pairs, 5A, 6A and 11A\n\"Five parts @ 4 marks each\". 2B(i)'s \"Labelled diagram 4 marks graded\"\nprints no steps, so any whole mark to 4 is permitted. 5A(iv) prints \"Name\ntwo major Irish fishing port.\" (the scheme reprints \"ports\").\n\nThe options print no Overall Coherence table: coherence is graded inside\neach aspect (\"Number of aspects: 3 @ 27 + 27 + 26 / 4 @ 20 marks each\",\n\"Identifying aspect: 4 marks / 4 marks\", \"Discussion: 8 x SRPs OR 6 x\nSRPs\", \"Overall coherence: 7/6 marks graded / 4 marks graded\"). Either way\nthe discussion is 24 SRPs (3 x 8 or 4 x 6), 48 marks, and identifying plus\ncoherence is 32 (3 x 4 + 7 + 7 + 6, or 4 x 4 + 4 x 4), so each option card\nprices those two criteria. Options 16 and 17 print only the three-aspect\nscheme and are priced per aspect, 27 + 27 + 26.\n\nPrinted choices: 1C (any one of three surface processes) is one route per\noption; 2B (i) or (ii), with (i)'s landform formed by fluvial or glacial or\ncoastal processes a route each, is four routes; option 17 (three of four\nprinted headings) is a pool, one card. 6A(iv) any two attractions, 9C any\none EU policy, 16 any three soil processes and 17's any one biome print no\npool and stay open."
     },
     {
       "year": 2011,
@@ -11793,14 +11868,15 @@
         "Part 2 Q9B": 40,
         "Part 2 Q9C": 30
       },
-      "taskCount": 116,
-      "cardCount": 130,
+      "taskCount": 119,
+      "cardCount": 133,
       "legacyIds": [],
       "addedIds": [
         "geography-2011-ol-p1-q1",
         "geography-2011-ol-p1-q1-ii",
         "geography-2011-ol-p1-q10",
         "geography-2011-ol-p1-q10-ii",
+        "geography-2011-ol-p1-q11",
         "geography-2011-ol-p1-q11-ii",
         "geography-2011-ol-p1-q11-iii",
         "geography-2011-ol-p1-q11-iv",
@@ -11858,6 +11934,7 @@
         "geography-2011-ol-p2-q12b-iii",
         "geography-2011-ol-p2-q12b-iv",
         "geography-2011-ol-p2-q12c",
+        "geography-2011-ol-p2-q1a",
         "geography-2011-ol-p2-q1b-route-i-glacial-action",
         "geography-2011-ol-p2-q1b-route-i-marine-action",
         "geography-2011-ol-p2-q1b-route-i-river-action",
@@ -11898,6 +11975,7 @@
         "geography-2011-ol-p2-q6a",
         "geography-2011-ol-p2-q6b",
         "geography-2011-ol-p2-q6c",
+        "geography-2011-ol-p2-q7a",
         "geography-2011-ol-p2-q7b-financial-services",
         "geography-2011-ol-p2-q7b-ii-financial-services",
         "geography-2011-ol-p2-q7b-ii-tourism",
@@ -12802,6 +12880,38 @@
           "routes": []
         },
         {
+          "key": "p1-11-i",
+          "questionRef": "2011 OL Part 1 Q11(i)",
+          "marks": 4,
+          "paperPage": 10,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Q 442 010",
+              "maxMarks": 2
+            },
+            {
+              "label": "Q 441 005",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map"
+          ],
+          "cards": [
+            "geography-2011-ol-p1-q11"
+          ],
+          "routes": []
+        },
+        {
           "key": "p1-11-ii",
           "questionRef": "2011 OL Part 1 Q11(ii)",
           "marks": 2,
@@ -12978,6 +13088,64 @@
           ],
           "cards": [
             "geography-2011-ol-p1-q12-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a",
+          "questionRef": "2011 OL Part 2 Q1A",
+          "marks": 30,
+          "paperPage": 13,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The coastline",
+              "maxMarks": 5
+            },
+            {
+              "label": "The Milltown River",
+              "maxMarks": 5
+            },
+            {
+              "label": "A lighthouse",
+              "maxMarks": 5
+            },
+            {
+              "label": "A named area of land above 400 metres",
+              "maxMarks": 5
+            },
+            {
+              "label": "A corrie lake.",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-mapwork",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "map"
+          ],
+          "cards": [
+            "geography-2011-ol-p2-q1a"
           ],
           "routes": []
         },
@@ -14011,6 +14179,63 @@
           "sources": [],
           "cards": [
             "geography-2011-ol-p2-q6c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a",
+          "questionRef": "2011 OL Part 2 Q7A",
+          "marks": 30,
+          "paperPage": 20,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions (landscape)",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The entire N86 National Secondary Road",
+              "maxMarks": 5
+            },
+            {
+              "label": "The ferry route in Dingle Harbour",
+              "maxMarks": 5
+            },
+            {
+              "label": "An area of Coniferous Plantation",
+              "maxMarks": 5
+            },
+            {
+              "label": "A Tourist Information centre",
+              "maxMarks": 5
+            },
+            {
+              "label": "An Independent Holiday Hostel.",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map"
+          ],
+          "cards": [
+            "geography-2011-ol-p2-q7a"
           ],
           "routes": []
         },
@@ -15537,33 +15762,7 @@
           "routes": []
         }
       ],
-      "held": [
-        {
-          "year": 2011,
-          "level": "ordinary",
-          "part": 1,
-          "questionRef": "11(i)",
-          "title": "Ordnance Survey Map",
-          "reason": "The paper asks \"(i) Name the feature/symbol which can be found at each of the following grid references: Q 442 010 ... Q 441 005\" and the scheme prices \"Parking · 2 marks\" and \"Boating activities · 2 marks\". On the map extract (rendered and read 2026-10-23) Q 442 010 is an unlabelled white \"P\" on a blue square at the Dingle quay and Q 441 005 an unlabelled sailing-boat pictogram in Dingle Harbour: neither is named in print, so naming them needs symbol meanings only the Ordnance Survey legend defines. The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so part (i) is held rather than carded against evidence the card cannot show. Parts (ii)-(iv) are carded from the map alone."
-        },
-        {
-          "year": 2011,
-          "level": "ordinary",
-          "part": 2,
-          "questionRef": "1A",
-          "title": "Ordnance Survey Map",
-          "reason": "The paper asks for a sketch map that shows and names \"• The coastline • The Milltown River • A lighthouse • A named area of land above 400 metres • A corrie lake.\" and the scheme prices each item \"Showing = 3 marks graded\" and \"Naming/identifying = 2 marks\" within one 30-mark allocation. Four items are answerable from the map’s printed names, contours and heights (\"Milltown River\" is printed; the lakes and the 400 m contours are drawn), but the map prints no lighthouse: the only candidate is an unlabelled pictorial symbol on the eastern shore of the harbour mouth at about V 454 990, beside the printed words \"An Scoth Tower\", and only the legend defines that symbol as a lighthouse. The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so the sketch, priced as one part, is held."
-        },
-        {
-          "year": 2011,
-          "level": "ordinary",
-          "part": 2,
-          "questionRef": "7A",
-          "title": "Ordnance Survey Map",
-          "reason": "The paper asks for a sketch map that shows and names \"• The entire N86 National Secondary Road • The ferry route in Dingle Harbour • An area of Coniferous Plantation • A Tourist Information centre • An Independent Holiday Hostel.\" and the scheme prices each item \"Showing = 3 marks graded\" and \"Naming/identifying = 2 marks\" within one 30-mark allocation. Four of the five items are shown on the map only by symbols the legend defines and are named nowhere in print: the ferry route (an unlabelled black dashed line down Dingle Harbour), the coniferous plantation (unlabelled tree symbols, e.g. north of Dingle around Q 43 05), the tourist information centre (an unlabelled \"i\" on a green square at about Q 443 010) and the independent holiday hostel (one of the map’s unlabelled point symbols). The SEC legend sheet (LC005CLPC00EV) was not published with the 2011 materials Paper Trail holds, and the map sheet LC005CLP003EV carries none (its margin prints only Ordnance Survey Ireland’s copyright and publication notes), so the sketch is held."
-        }
-      ],
-      "rule": "Independent review ledger: Leaving Certificate Geography 2011 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005GLP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005GLP000EV (40 pages), and the common Dingle\ncompanions shared with Higher Level — the 1:50 000 map LC005CLP003EV (one\nlandscape page holding a 7016 x 4961 pixel image of the Dingle extract,\ngrid squares Q/V 41-53 by 98-07, with no legend on the sheet: its margin\nprints only Ordnance Survey Ireland's copyright and publication notes) and\nthe aerial photograph LC005CLP004EV (one page holding two images: a near-\nwhite backing image and, drawn over it, the oblique photograph of Dingle /\nAn Daingean, harbour in the left foreground). The SEC legend sheet for 2011\nis not in Paper Trail at all, so no task here carries 'legend'. Part One is\n100 marks (any ten of twelve @ 10), Part Two 300 (three questions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p10 Part One Questions 1-12 (p3\n  holds Q2 and Q3, p9 Q9 and Q10, p10 Q11 and Q12; Q1 and Q7 print four\n  photographs, Q5 a weather chart, Q8 a trend graph); p11 Part Two\n  instructions; p12 Section 1 divider; p13-p18 Q1-Q6 (p13 and p16 open\n  with their dividers; 2A prints a plate map, 3A the rock cycle, 5A a pie\n  chart, 6B four transport photographs); p19 Section 2 divider; p20-p28\n  Electives Q7-Q12 (p20 and p24 open with their elective dividers; p22\n  holds 8C and its pollution photographs, p24 10A's world density map, p27\n  11C's four urban photographs); p29-p32 printed \"Blank Page\".\n  Scheme p1 cover; p2 blank inside cover; p3 note on marking schemes; p4\n  Geographical Investigation (coursework); p5-p7 Part One table (Q1-Q4,\n  Q5-Q8, Q9-Q12); p8 Part Two instructions; p9 Section 1 divider; p10-p21\n  Q1-Q6; p22 Section 2 divider; p23-p34 Q7-Q12; p35 investigation topics;\n  p36 Irish-language bonus marks; p37-p38 blank but for their printed page\n  numbers (\"Page 35 of 36\", \"Page 36 of 36\"); p39 blank; p40 back cover.\n  The scheme reprints most Part Two questions above their allocation;\n  every slice starts at the allocation.\n  Companions: the Dingle map extract (Dingle Harbour / Cuan an Daingin, the\n  Milltown River, the Garfinny River, the N86, the Dingle Way / Slí Chorca\n  Dhuibhne, Ballysitteragh, Slievanea, Connor Hill); the oblique aerial\n  photograph of Dingle. No legend sheet exists for this sitting in Paper\n  Trail (LC005CLPC00EV is absent from paper-trail-corpus/exampapers/2011).\n\nWithout a legend, every task that sends the candidate to \"the map and\nlegend\" was decided part by part. Held, because answering needs a symbol\nmeaning only the legend defines: Part One Q11(i) (an unlabelled \"P\" square\nand a sailing-boat pictogram), Part Two 1A (a sketch whose \"A lighthouse\"\nis shown only by an unlabelled pictogram beside the printed words \"An\nScoth Tower\") and 7A (a sketch whose coniferous plantation, tourist\ninformation centre, independent holiday hostel and ferry route are shown\nonly by legend symbols). Carded on the map alone (its printed names, grid,\ncontours, spot heights and scale): Q10(i)-(ii) (the N86 and the Dingle Way\nare printed, the start and end points are given as grid references),\nQ11(ii) (the strand in V 48 98 is printed \"Trá Chathail\"), Q11(iii)-(iv)\n(grid count; the steep high ground of Slievanea at Q 50 04), Q12(iii)\n(Dingle Harbour is printed) and 12B (the town printed DINGLE, its streets,\n\"PO\", \"Sch\" and \"Hosp.\" against the contoured, named uplands). The printed\nstems still read \"map and legend accompanying this paper\"; they are lifted\nverbatim.\n\nPart One prices every answer line itself (\"2 marks\", \"5 marks\"), so no\nheading line is carried. Matching tables, in the printed row order: Q1 Sea\narch B, Blowhole D, Cliff C, Beach A; Q2 Limestone B, Granite E, Sandstone\nA, Basalt C, Marble D; Q3 Freeze thaw B, Soil creep C, Abrasion A,\nAttrition E, Subduction D; Q7 U-Shaped valley D, Pyramidal peak A, Erratic\nB, Corrie lake C; Q9 Paris Basin B, Mediterranean D, South Wales or Sambre\nMeuse C (the paper sets this cell over two lines around the row letter, so\nits label is the scheme's \"South Wales etc.\"), The Burren E, Irish\nGaeltacht A; Part Two 11C(i) Cities of the future B, Urban transport C,\nUrban problems D, Heritage issues A (four matches @ 3).\n\nThe 2011 scheme prints \"graded\" without the steps later schemes print\n(\"2 marks graded\", \"6 marks graded\", \"4 Items @ 4 marks each graded\"), so a\ngraded line permits every whole mark up to its maximum. 12B prints its\ngrid reference and map evidence \"4 marks graded\" in (i)-(ii) but \"4 marks\"\nin (iii)-(iv); each part follows its own line. 11B prices \"* Understanding\nof the concept of migration = 1 mark\" outside the romans; it is carded with\npart (i), the first part that asks about migration (as 2015 4B and 6C carry\n\"Naming a region\"). The 2C scheme reprints \"Coastal Processes\" where the\npaper prints \"Sea processes\"; the routes follow the paper.\n\nTariffs as printed: twelve parts carry 40 marks (1B, 2B, 3B, 4B, 5C, 6B,\n7B, 8C, 9B, 10B, 11B, 12B) and the rest 30. Question 5 and Question 8 put\ntheir 40-mark part at C, not B."
+      "rule": "Independent review ledger: Leaving Certificate Geography 2011 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005GLP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005GLP000EV (40 pages), and the common Dingle\ncompanions shared with Higher Level — the 1:50 000 map LC005CLP003EV (one\nlandscape page holding a 7016 x 4961 pixel image of the Dingle extract,\ngrid squares Q/V 41-53 by 98-07, with no legend on the sheet: its margin\nprints only Ordnance Survey Ireland's copyright and publication notes) and\nthe aerial photograph LC005CLP004EV (one page holding two images: a near-\nwhite backing image and, drawn over it, the oblique photograph of Dingle /\nAn Daingean, harbour in the left foreground). The SEC legend sheet for 2011\nis not in Paper Trail at all, so no task here carries 'legend'. Part One is\n100 marks (any ten of twelve @ 10), Part Two 300 (three questions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p10 Part One Questions 1-12 (p3\n  holds Q2 and Q3, p9 Q9 and Q10, p10 Q11 and Q12; Q1 and Q7 print four\n  photographs, Q5 a weather chart, Q8 a trend graph); p11 Part Two\n  instructions; p12 Section 1 divider; p13-p18 Q1-Q6 (p13 and p16 open\n  with their dividers; 2A prints a plate map, 3A the rock cycle, 5A a pie\n  chart, 6B four transport photographs); p19 Section 2 divider; p20-p28\n  Electives Q7-Q12 (p20 and p24 open with their elective dividers; p22\n  holds 8C and its pollution photographs, p24 10A's world density map, p27\n  11C's four urban photographs); p29-p32 printed \"Blank Page\".\n  Scheme p1 cover; p2 blank inside cover; p3 note on marking schemes; p4\n  Geographical Investigation (coursework); p5-p7 Part One table (Q1-Q4,\n  Q5-Q8, Q9-Q12); p8 Part Two instructions; p9 Section 1 divider; p10-p21\n  Q1-Q6; p22 Section 2 divider; p23-p34 Q7-Q12; p35 investigation topics;\n  p36 Irish-language bonus marks; p37-p38 blank but for their printed page\n  numbers (\"Page 35 of 36\", \"Page 36 of 36\"); p39 blank; p40 back cover.\n  The scheme reprints most Part Two questions above their allocation;\n  every slice starts at the allocation.\n  Companions: the Dingle map extract (Dingle Harbour / Cuan an Daingin, the\n  Milltown River, the Garfinny River, the N86, the Dingle Way / Slí Chorca\n  Dhuibhne, Ballysitteragh, Slievanea, Connor Hill); the oblique aerial\n  photograph of Dingle. No legend sheet exists for this sitting in Paper\n  Trail (LC005CLPC00EV is absent from paper-trail-corpus/exampapers/2011).\n\nWithout a legend, every task that sends the candidate to \"the map and\nlegend\" was read part by part. Three need a symbol meaning only the legend\ndefines: Part One Q11(i) (an unlabelled \"P\" square and a sailing-boat\npictogram), Part Two 1A (a sketch whose \"A lighthouse\" is shown only by an\nunlabelled pictogram beside the printed words \"An Scoth Tower\") and 7A (a\nsketch whose coniferous plantation, tourist information centre,\nindependent holiday hostel and ferry route are shown only by legend\nsymbols). Each is carded with the printed question, the official map (and\nfor Q11(i) a crop around the two grid references), the scheme's printed\nanswers and allocation, and a note that the SEC published no 2011 legend.\nCarded on the map alone (its printed names, grid,\ncontours, spot heights and scale): Q10(i)-(ii) (the N86 and the Dingle Way\nare printed, the start and end points are given as grid references),\nQ11(ii) (the strand in V 48 98 is printed \"Trá Chathail\"), Q11(iii)-(iv)\n(grid count; the steep high ground of Slievanea at Q 50 04), Q12(iii)\n(Dingle Harbour is printed) and 12B (the town printed DINGLE, its streets,\n\"PO\", \"Sch\" and \"Hosp.\" against the contoured, named uplands). The printed\nstems still read \"map and legend accompanying this paper\"; they are lifted\nverbatim.\n\nPart One prices every answer line itself (\"2 marks\", \"5 marks\"), so no\nheading line is carried. Matching tables, in the printed row order: Q1 Sea\narch B, Blowhole D, Cliff C, Beach A; Q2 Limestone B, Granite E, Sandstone\nA, Basalt C, Marble D; Q3 Freeze thaw B, Soil creep C, Abrasion A,\nAttrition E, Subduction D; Q7 U-Shaped valley D, Pyramidal peak A, Erratic\nB, Corrie lake C; Q9 Paris Basin B, Mediterranean D, South Wales or Sambre\nMeuse C (the paper sets this cell over two lines around the row letter, so\nits label is the scheme's \"South Wales etc.\"), The Burren E, Irish\nGaeltacht A; Part Two 11C(i) Cities of the future B, Urban transport C,\nUrban problems D, Heritage issues A (four matches @ 3).\n\nThe 2011 scheme prints \"graded\" without the steps later schemes print\n(\"2 marks graded\", \"6 marks graded\", \"4 Items @ 4 marks each graded\"), so a\ngraded line permits every whole mark up to its maximum. 12B prints its\ngrid reference and map evidence \"4 marks graded\" in (i)-(ii) but \"4 marks\"\nin (iii)-(iv); each part follows its own line. 11B prices \"* Understanding\nof the concept of migration = 1 mark\" outside the romans; it is carded with\npart (i), the first part that asks about migration (as 2015 4B and 6C carry\n\"Naming a region\"). The 2C scheme reprints \"Coastal Processes\" where the\npaper prints \"Sea processes\"; the routes follow the paper.\n\nTariffs as printed: twelve parts carry 40 marks (1B, 2B, 3B, 4B, 5C, 6B,\n7B, 8C, 9B, 10B, 11B, 12B) and the rest 30. Question 5 and Question 8 put\ntheir 40-mark part at C, not B."
     },
     {
       "year": 2012,
@@ -85088,8 +85287,8 @@
         "Part 2 Q9B": 40,
         "Part 2 Q9C": 30
       },
-      "taskCount": 119,
-      "cardCount": 125,
+      "taskCount": 120,
+      "cardCount": 126,
       "legacyIds": [],
       "addedIds": [
         "geography-2020-ol-p1-q1",
@@ -85216,7 +85415,8 @@
         "geography-2020-ol-p2-q9a-vi",
         "geography-2020-ol-p2-q9b",
         "geography-2020-ol-p2-q9b-ii",
-        "geography-2020-ol-p2-q9b-iii"
+        "geography-2020-ol-p2-q9b-iii",
+        "geography-2020-ol-p2-q9c"
       ],
       "idCorrections": [],
       "aliases": [],
@@ -88102,6 +88302,36 @@
           "routes": []
         },
         {
+          "key": "p2-9c",
+          "questionRef": "2020 OL Part 2 Q9C",
+          "marks": 30,
+          "paperPage": 13,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Impact identified",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2020-ol-p2-q9c"
+          ],
+          "routes": []
+        },
+        {
           "key": "p2-10a-i",
           "questionRef": "2020 OL Part 2 Q10A(i)",
           "marks": 24,
@@ -88876,17 +89106,7 @@
           "routes": []
         }
       ],
-      "held": [
-        {
-          "year": 2020,
-          "level": "ordinary",
-          "part": 2,
-          "questionRef": "9C",
-          "title": "European Union Policy",
-          "reason": "The paper prints [30m]; the published scheme prices \"Impact identified 1 SRP 3m\" and \"Explanation 8 SRP’s @ 3m each 24m\" (27m) above \"Total 30m\". No allocation is published for the other three marks, so the part is held rather than carded short or padded. Re-examined 2026-10-23: the rendered scheme page 25 (printed \"Page 23 of 29\") holds no other priced line, image or drawing, and no Irish-language Ordinary scheme was published for 2020 to compare."
-        }
-      ],
-      "rule": "Independent review ledger: Leaving Certificate Geography 2020 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): Part One and Answerbook\nLC005GLP042EV (40 pages), Part Two LC005GLP043EV (20 pages), marking scheme\nLC005GLP000EV (32 pages), and the common companions shared with Higher Level\n— the 1:50 000 Arklow map LC005CLP003EV, its legend LC005CLPC00EV and the\nArklow aerial photograph LC005CLP004EV (published only as a JPEG). Part One\nis 100 marks (any ten of twelve @ 10), Part Two 300 (three questions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-12):\n  Part One booklet p1 cover; p2 instructions (Part One \"Attempt any TEN\";\n  Part Two \"attempt THREE\": one of Q1-3, one of Q4-6, one elective); p3-p12\n  Questions 1-12 (p7 holds Q5 and Q6, p8 Q7 and Q8); p13 Part Two\n  answerbook instructions; p14-p35 lined answer pages; p36-p39 graph\n  paper; p40 copyright/back cover.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3 Section 1\n  divider; p4-p9 Q1-Q6; p10 Section 2 divider; p11-p16 Electives Q7-Q12;\n  p17-p19 \"Do not hand this up\"; p20 back cover.\n  Scheme p1 cover; p2-p3 notes; p4-p5 Part One table; p6 Part Two\n  instructions; p7-p19 Q1-Q6; p20-p25 Q7-Q9; p26-p31 Q10-Q12; p32 back\n  cover.\n  Companions: Arklow map extract; OS legend sheet; oblique aerial\n  photograph of Arklow.\n\nTariffs as printed: twelve parts carry 40 marks (1B, 2B, 3B, 4B, 5C, 6B,\n7B, 8B, 9B, 10C, 11C, 12C) and the rest 30. An SRP is 3 marks; \"a+b\" lines\nare one criterion with partial credit a; graded lines keep their printed\ngrades; sketch items are \"showing 3 (3/1/0) + labelled 2\"; 4A items are\n\"named 2 + shown 4 (4/2/0)\"; 10B reasons are \"aerial photograph evidence 1 +\n3 SRPs\".\n\nBoundaries follow the 2021 Ordinary ledger: every priced roman is a task; a\nmatching table under ONE printed instruction stays one task with a\ncriterion per scheme row, in the printed row order: Q1 Crust=A, Inner\nCore=B, Mantle=D, Outer Core=C; Q2 Focus=B, Epicentre=D, Seismic waves=C,\nFault=A; Q3 prints (i) and (ii) in one part-completed table: (i) V-shaped\nvalley=D, Waterfall=B, Delta=A (Floodplain C is printed), (ii) Waterfall\nErosion, Floodplain Deposition (the other two are printed); Q4 Granite=C,\nBasalt=B, Limestone=A, Sandstone=D; Q7 Right background=D, Right\nmiddleground=A, Left foreground=B, Left background=C; Q8 A Departement=E,\nSambre-Meuse=D, Munster Ridge and Valley=C, Greater Dublin Area=B,\nMediterranean=A; Q9 A Secondary, B Tertiary, C Primary, D Primary; Q12\nByrd Glacier=A, Tombolo=D, Wildfire=B, Mt. Etna=C; Part Two 3A(i) Drumlin\nB, Cliff A, Beach C, 3A(ii) Coastal deposition C, Coastal erosion A,\nGlacial deposition B. 7B's \"tourism or financial services\" runs through\nthree romans and the scheme marks either alike, so each roman is one card\nwith the printed wording. Q2(ii)'s scheme prints \"Richter scale /\" and\n\"Moment magnitude scale\" either side of its allocation line; both are kept.\n\nScheme as printed: 8B(ii) asks for the disadvantages of the hotel site and\nits allocation line repeats \"Description / explanation of the advantages 5\nSRPs\"; the card carries the line as printed.\n\nHeld, not carded: 9C. The paper prints [30m]; the scheme prices \"Impact\nidentified 1 SRP 3m\" and \"Explanation 8 SRP's @ 3m each 24m\" (27m) above\n\"Total 30m\". The missing three marks are not published anywhere, so no\nallocation can be lifted for them and the part is held (HELD) rather than\ncarded short or padded."
+      "rule": "Independent review ledger: Leaving Certificate Geography 2020 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): Part One and Answerbook\nLC005GLP042EV (40 pages), Part Two LC005GLP043EV (20 pages), marking scheme\nLC005GLP000EV (32 pages), and the common companions shared with Higher Level\n— the 1:50 000 Arklow map LC005CLP003EV, its legend LC005CLPC00EV and the\nArklow aerial photograph LC005CLP004EV (published only as a JPEG). Part One\nis 100 marks (any ten of twelve @ 10), Part Two 300 (three questions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-12):\n  Part One booklet p1 cover; p2 instructions (Part One \"Attempt any TEN\";\n  Part Two \"attempt THREE\": one of Q1-3, one of Q4-6, one elective); p3-p12\n  Questions 1-12 (p7 holds Q5 and Q6, p8 Q7 and Q8); p13 Part Two\n  answerbook instructions; p14-p35 lined answer pages; p36-p39 graph\n  paper; p40 copyright/back cover.\n  Part Two booklet p1 cover; p2 Part Two instructions; p3 Section 1\n  divider; p4-p9 Q1-Q6; p10 Section 2 divider; p11-p16 Electives Q7-Q12;\n  p17-p19 \"Do not hand this up\"; p20 back cover.\n  Scheme p1 cover; p2-p3 notes; p4-p5 Part One table; p6 Part Two\n  instructions; p7-p19 Q1-Q6; p20-p25 Q7-Q9; p26-p31 Q10-Q12; p32 back\n  cover.\n  Companions: Arklow map extract; OS legend sheet; oblique aerial\n  photograph of Arklow.\n\nTariffs as printed: twelve parts carry 40 marks (1B, 2B, 3B, 4B, 5C, 6B,\n7B, 8B, 9B, 10C, 11C, 12C) and the rest 30. An SRP is 3 marks; \"a+b\" lines\nare one criterion with partial credit a; graded lines keep their printed\ngrades; sketch items are \"showing 3 (3/1/0) + labelled 2\"; 4A items are\n\"named 2 + shown 4 (4/2/0)\"; 10B reasons are \"aerial photograph evidence 1 +\n3 SRPs\".\n\nBoundaries follow the 2021 Ordinary ledger: every priced roman is a task; a\nmatching table under ONE printed instruction stays one task with a\ncriterion per scheme row, in the printed row order: Q1 Crust=A, Inner\nCore=B, Mantle=D, Outer Core=C; Q2 Focus=B, Epicentre=D, Seismic waves=C,\nFault=A; Q3 prints (i) and (ii) in one part-completed table: (i) V-shaped\nvalley=D, Waterfall=B, Delta=A (Floodplain C is printed), (ii) Waterfall\nErosion, Floodplain Deposition (the other two are printed); Q4 Granite=C,\nBasalt=B, Limestone=A, Sandstone=D; Q7 Right background=D, Right\nmiddleground=A, Left foreground=B, Left background=C; Q8 A Departement=E,\nSambre-Meuse=D, Munster Ridge and Valley=C, Greater Dublin Area=B,\nMediterranean=A; Q9 A Secondary, B Tertiary, C Primary, D Primary; Q12\nByrd Glacier=A, Tombolo=D, Wildfire=B, Mt. Etna=C; Part Two 3A(i) Drumlin\nB, Cliff A, Beach C, 3A(ii) Coastal deposition C, Coastal erosion A,\nGlacial deposition B. 7B's \"tourism or financial services\" runs through\nthree romans and the scheme marks either alike, so each roman is one card\nwith the printed wording. Q2(ii)'s scheme prints \"Richter scale /\" and\n\"Moment magnitude scale\" either side of its allocation line; both are kept.\n\nScheme as printed: 8B(ii) asks for the disadvantages of the hotel site and\nits allocation line repeats \"Description / explanation of the advantages 5\nSRPs\"; the card carries the line as printed.\n\n9C: the paper prints [30m]; the scheme prices \"Impact identified 1 SRP 3m\"\nand \"Explanation 8 SRP's @ 3m each 24m\" (27m) above \"Total 30m\", and\npublishes no allocation for the other three marks (re-examined on the\nrendered page; no Irish-language Ordinary scheme exists for 2020). The\ncard carries those two printed lines as its placements (3m and 24m, in\n3-mark SRPs) against the printed total of 30, with a note saying so; the\nmissing three marks are never derived or redistributed, so the most the\ncard can place is 27."
     },
     {
       "year": 2021,

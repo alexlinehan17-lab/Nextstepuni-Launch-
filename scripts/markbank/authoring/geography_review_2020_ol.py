@@ -52,11 +52,14 @@ Scheme as printed: 8B(ii) asks for the disadvantages of the hotel site and
 its allocation line repeats "Description / explanation of the advantages 5
 SRPs"; the card carries the line as printed.
 
-Held, not carded: 9C. The paper prints [30m]; the scheme prices "Impact
-identified 1 SRP 3m" and "Explanation 8 SRP's @ 3m each 24m" (27m) above
-"Total 30m". The missing three marks are not published anywhere, so no
-allocation can be lifted for them and the part is held (HELD) rather than
-carded short or padded.
+9C: the paper prints [30m]; the scheme prices "Impact identified 1 SRP 3m"
+and "Explanation 8 SRP's @ 3m each 24m" (27m) above "Total 30m", and
+publishes no allocation for the other three marks (re-examined on the
+rendered page; no Irish-language Ordinary scheme exists for 2020). The
+card carries those two printed lines as its placements (3m and 24m, in
+3-mark SRPs) against the printed total of 30, with a note saying so; the
+missing three marks are never derived or redistributed, so the most the
+card can place is 27.
 """
 
 from geography_review import (
@@ -127,15 +130,10 @@ SELECTION_REVIEW = [
      'reason': '12A(v) "authorities in urban areas attempt to reduce" describes the authorities, not a candidate choice.'},
 ]
 
-HELD = [
-    {'part': 2, 'question': '9C', 'title': 'European Union Policy', 'marks': 30,
-     'reason': ('The paper prints [30m]; the published scheme prices "Impact identified 1 SRP 3m" '
-                'and "Explanation 8 SRP’s @ 3m each 24m" (27m) above "Total 30m". No allocation '
-                'is published for the other three marks, so the part is held rather than carded '
-                'short or padded. Re-examined 2026-10-23: the rendered scheme page 25 (printed '
-                '"Page 23 of 29") holds no other priced line, image or drawing, and no Irish-'
-                'language Ordinary scheme was published for 2020 to compare.')},
-]
+HELD: list[dict] = []
+NOTE_9C = ('The published scheme prices 27 of the printed 30 marks ("Impact identified 1 SRP 3m" and '
+           '"Explanation 8 SRP’s @ 3m each 24m" above "Total 30m") and publishes no allocation for the '
+           'other 3, so this card can place at most 27 of the 30.')
 
 P1, P2 = 1, 2
 ID = 'geography-2020-ol-'
@@ -713,6 +711,16 @@ PART_TWO += romans('9B', 13, L(13, 'Multinational Company'), (), ID + 'p2-q9b', 
      (srp3('Explanation', 4, ('Explanation 4 SRP’s @ 3m each · 12m', 'Reason stated for one SRP')),),
      '3-2', MNC, (Q9BI,)),
 ])
+# 9C: the scheme's two priced lines (3m + 24m) as printed, against the
+# printed total of 30; the 3 marks the scheme allocates to no line stay
+# unpriced (never derived or redistributed), so the card places at most 27.
+PART_TWO.append(Task(
+    'p2-9c', 2, '9C', '', 30, 13, L(13, 'European Union Policy'),
+    (L(13, 'Explain how European Union policy has impacted on the Irish economy.'),),
+    (S(25, 'Impact identified 1 SRP', None),),
+    (srp3('Impact identified', 1, 'Impact identified 1 SRP · 3m'),
+     srp3('Explanation', 8, 'Explanation 8 SRP’s @ 3m each · 24m')),
+    '3-3', EU, (), ID + 'p2-q9c', False, note=NOTE_9C, unpriced=3))
 
 GRAPH_10A = GRAPH_OL
 Q10AS = (L(14, 'Examine the table above showing the estimated number of immigrants', 'following questions.'),)
