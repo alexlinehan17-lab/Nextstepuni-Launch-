@@ -24,6 +24,15 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
+# Subjects generated straight into their deck keep no
+# scripts/markbank/authored/<subject>.json: lint the deck's own card file
+# (`{"cards": [...]}`), or the run would print "clean" without reading a card.
+# English has the same shape (components/MarkBank/cards/english/authored.json)
+# and is not wired here yet.
+DECK_CARDS = {
+    'geography': os.path.join(HERE, '..', '..', '..', 'components', 'MarkBank', 'cards',
+                              'geography', 'authored.json'),
+}
 
 SUBJECTS = ['agricultural-science', 'ancient-greek', 'applied-maths',
             'arabic', 'art', 'biology', 'bulgarian', 'business', 'chemistry',
@@ -149,11 +158,16 @@ REVIEWED = (json.load(open(REVIEWED_PATH))
 
 
 def lint(subject):
-    path = os.path.join(AUTHORED, f'{subject}.json')
+    deck = subject in DECK_CARDS
+    path = DECK_CARDS[subject] if deck else os.path.join(AUTHORED, f'{subject}.json')
     if not os.path.exists(path):
+        if deck:
+            raise SystemExit(f'cardlint: {subject} deck file missing: {path}')
         return []
     with open(path) as fh:
         cards = json.load(fh)
+    if deck:
+        cards = cards['cards']
     # The bindings file is where an OFFICIAL SOURCE page is declared; the
     # `sourceMaterial` field only appears once build-deck.mjs has resolved it
     # against the Paper Trail index. Reading the authored JSON alone therefore
@@ -175,7 +189,11 @@ def lint(subject):
         # only crops flagged every LCVP case-study card, each of which already
         # carries the case study's own pages.
         has_fig = bool(c.get('figureKey') or c.get('questionFigureKey')
-                       or c.get('sourceMaterial') or c['id'] in bound)
+                       or c.get('sourceMaterial') or c['id'] in bound
+                       # A deck card binds its crop directly; a solution crop
+                       # is the answer, never the question's artwork.
+                       or (deck and (c.get('questionFigure') or (
+                           c.get('figure') and not c['figure'].get('solution')))))
         leak = SCHEME_LEAK_BY_SUBJECT.get(subject, SCHEME_LEAK)
         for field, text in (('stem', stem), ('questionText', qtext)):
             if leak.search(text):
@@ -195,8 +213,11 @@ def lint(subject):
             flags.append((subject, c['id'], 'label-junk', stem[:90]))
         lettered = (NAMES_LETTERS.search(qtext)
                     and not INVITES_DRAWING.search(qtext))
-        if lettered and c['id'] not in REVIEWED and not (
-                has_fig and c.get('labelKey')):
+        # A rubric card (Geography) decodes its letters in the scheme's own
+        # rows, shown with the marking; it needs the printed page or crop that
+        # shows the student the letters, not a label key over a figure.
+        decoded = c.get('labelKey') or (deck and c.get('criteria'))
+        if lettered and c['id'] not in REVIEWED and not (has_fig and decoded):
             flags.append((subject, c['id'], 'undecoded-letters',
                           qtext.strip()[:90]))
     return flags
