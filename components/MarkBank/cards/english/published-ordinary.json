@@ -169,6 +169,17 @@
    "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e"
   },
   {
+   "paperId": "english-2017-ol-p2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 92,
+   "cards": 92,
+   "printedDuplicates": 0,
+   "paperSha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+   "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e"
+  },
+  {
    "paperId": "english-2016-ol-p1",
    "year": 2016,
    "level": "ordinary",
@@ -2140,7 +2151,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1640,
+ "cardCount": 1732,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -34203,6 +34214,3361 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Describe the relationship between Emma Woodhouse and Harriet Smith. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Explain why you do or do not admire Emma Woodhouse. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q2",
+   "questionText": "Identify one episode or incident in the novel, Emma, which you find amusing or entertaining. Explain why you find this episode or incident amusing or entertaining.",
+   "totalMarks": 10,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q3(i)",
+   "questionText": "Imagine you are a journalist, writing for a popular magazine. You have interviewed Emma Woodhouse. Write an article giving your impression of Emma and telling your readers about her lifestyle and how she spends her time. Your article should demonstrate your knowledge of the novel, Emma.",
+   "totalMarks": 30,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    13,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the novel are more fascinating than the male characters. ‐ The male characters in the novel are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the novel, Emma.",
+   "totalMarks": 30,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-a-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text A Q3(iii)",
+   "questionText": "“Despite being published in 1815, Jane Austen’s novel, Emma, is both interesting and relevant to readers today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-43",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emma (Jane Austen)",
+   "schemePages": [
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Describe the relationship between Nan Mahon and her mother. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Explain why you do or do not admire Nan Mahon. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q2",
+   "questionText": "Identify one episode or incident in the novel, Circle of Friends, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    15
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q3(i)",
+   "questionText": "Imagine you are a journalist, writing for a popular magazine. You have interviewed Benny Hogan after she moves to Dublin. Write an article giving your impression of Benny and telling your readers how she feels about her new life in Dublin. Your article should demonstrate your knowledge of the novel, Circle of Friends.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the novel are more fascinating than the male characters. ‐ The male characters in the novel are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the novel, Circle of Friends.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-b-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text B Q3(iii)",
+   "questionText": "“Despite being set in the 1950s, Maeve Binchy’s novel, Circle of Friends, is both interesting and relevant to readers today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-39",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Circle of Friends (Maeve Binchy)",
+   "schemePages": [
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Describe the relationship between Daisy Buchanan and Nick Carraway. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Explain why you do or do not admire Daisy Buchanan. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q2",
+   "questionText": "Identify one episode or incident in the novel, The Great Gatsby, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    17
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q3(i)",
+   "questionText": "Imagine you are a journalist, writing for a popular magazine. You have interviewed Jay Gatsby soon after he has moved to West Egg. Write an article giving your impression of Gatsby and telling your readers about his lifestyle and how he spends his money. Your article should demonstrate your knowledge of the novel, The Great Gatsby.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the novel are more fascinating than the male characters. ‐ The male characters in the novel are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the novel, The Great Gatsby.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-c-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text C Q3(iii)",
+   "questionText": "“Despite being published in the 1920s, F. Scott Fitzgerald’s novel, The Great Gatsby, is both interesting and relevant to readers today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Describe the relationship between Nora Helmer and Christine Linde. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Explain why you do or do not admire Nora Helmer. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q2",
+   "questionText": "Identify one episode or incident from the play, A Doll’s House, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q3(i)",
+   "questionText": "Imagine your class has decided to stage a production of Ibsen’s play, A Doll’s House, and you are the set designer. Describe, in words, the set you would create for the Helmers’ living room. Your set design should demonstrate your knowledge of the play, A Doll’s House.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the play are more fascinating than the male characters. ‐ The male characters in the play are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the play, A Doll’s House.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-d-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text D Q3(iii)",
+   "questionText": "“Despite being first performed in 1879, Henrik Ibsen’s play, A Doll’s House, is both interesting and relevant to readers and theatre audiences today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-6",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "A Doll's House (Henrik Ibsen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Describe the relationship between Maggie Polpin and her daughter, Katie. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Explain why you do or do not admire Maggie Polpin. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q2",
+   "questionText": "Identify one episode or incident in the play, Big Maggie, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q3(i)",
+   "questionText": "Imagine your class has decided to stage a production of John B. Keane’s play, Big Maggie, and you are the set designer. Describe, in words, the set you would create for the inside of Maggie Polpin’s shop. Your set design should demonstrate your knowledge of the play, Big Maggie.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the play are more fascinating than the male characters. ‐ The male characters in the play are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the play, Big Maggie.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-e-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text E Q3(iii)",
+   "questionText": "“Despite being first performed in 1969, John B. Keane’s play, Big Maggie, is both interesting and relevant to readers and theatre audiences today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-55",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Big Maggie (John B. Keane)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Describe the relationship between Beth Winters and Mercy Boyle. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Explain why you do or do not admire Beth Winters. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q2",
+   "questionText": "Identify one episode or incident in the novel, Death and Nightingales, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q3(i)",
+   "questionText": "Imagine you are a journalist, writing for a popular magazine. You have interviewed Billy Winters. Write an article giving your impression of Billy and telling your readers about the community and countryside in which he lives. Your article should demonstrate your knowledge of the novel, Death and Nightingales.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the novel are more fascinating than the male characters. ‐ The male characters in the novel are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the novel, Death and Nightingales.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-f-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text F Q3(iii)",
+   "questionText": "“Despite being set in the 1880s, Eugene McCabe’s novel, Death and Nightingales, is both interesting and relevant today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-54",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Death and Nightingales (Eugene McCabe)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Describe the relationship between Nora Clitheroe and Bessie Burgess. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Explain why you do or do not admire Nora Clitheroe. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q2",
+   "questionText": "Identify one episode or incident in the play, The Plough and the Stars, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q3(i)",
+   "questionText": "Imagine your class has decided to stage a production of O’Casey’s play, The Plough and the Stars, and you are the set designer. Describe, in words, the set you would create for inside the Clitheroes’ home. Your set design should demonstrate your knowledge of the play, The Plough and the Stars.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the play are more fascinating than the male characters. ‐ The male characters in the play are more fascinating than the female characters. Explain your answer with reference to at least one male character and one female character in the play, The Plough and the Stars.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-g-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text G Q3(iii)",
+   "questionText": "“Despite being set in 1916, O’Casey’s play, The Plough and the Stars, is both interesting and relevant to readers and theatre audiences today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-42",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Plough and the Stars (Sean O'Casey)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Describe the relationship between Bobby Mahon and his father, Frank. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Explain why you do or do not admire Bobby Mahon. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q2",
+   "questionText": "Identify one episode or incident in the novel, The Spinning Heart, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q3(i)",
+   "questionText": "Imagine you are a journalist, writing for a popular magazine. You have interviewed Réaltín. Write an article giving your impression of Réaltín and telling your readers about the difficulties she has experienced in life. Your article should demonstrate your knowledge of the novel, The Spinning Heart.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the novel are more fascinating than the male characters. ‐ The male characters in the novel are more fascinating than the female characters. Support your answer with reference to at least one male character and one female character from the novel, The Spinning Heart.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-h-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text H Q3(iii)",
+   "questionText": "“Due to its setting in modern Ireland, Donal Ryan’s novel, The Spinning Heart, is particularly interesting and relevant to readers today.” Do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Describe the relationship between Claudius and Hamlet. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Explain why you do or do not admire Claudius. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q2",
+   "questionText": "Identify one episode or incident in the play, Hamlet, which you find shocking or surprising. Explain why you find this episode or incident shocking or surprising.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q3-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q3(i)",
+   "questionText": "Imagine your class has decided to stage a production of Shakespeare’s play, Hamlet, and you are the set designer. Describe, in words, the set you would create for the scene when Hamlet confronts Gertrude in her room. Your set design should demonstrate your knowledge of the play, Hamlet.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q3-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q3(ii)",
+   "questionText": "In your opinion, which of the following observations is more accurate? ‐ The female characters in the play are more fascinating than the male characters. ‐ The male characters in the play are more fascinating than the female characters. Support your answer with reference to at least one male character and one female character in the play, Hamlet.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-single-i-q3-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Single Text I Q3(iii)",
+   "questionText": "“Despite being written over four hundred years ago, Shakespeare’s play, Hamlet, is both interesting and relevant to readers and theatre audiences today.” To what extent do you agree or disagree with this statement? Your answer should demonstrate your knowledge of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q1-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one of the three texts that you studied on your comparative course and identify a hero, heroine or villain in it. Describe a key moment which reveals an important aspect of this character and explain what you learn about your chosen character from this moment.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q1-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another text that you studied on your comparative course and identify a hero, heroine or villain in it. Describe a key moment from this text which reveals an important aspect of this character and explain what you learn about your chosen character from this moment.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Readers can either like or dislike the characters they encounter in texts. Identify one character (hero, heroine or villain) from each of at least two texts on your comparative course. Compare the extent to which you like or dislike these characters. Support your answer by reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q2-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "We can learn about heroes, heroines and villains by considering how successful they are at making decisions and taking action when necessary. Identify a hero, heroine or villain from one of the three comparative texts you have studied. Write about how successful this character is at making decisions and taking action when necessary. Support your answer by reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q2-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "We can learn about heroes, heroines and villains by considering how successful they are at making decisions and taking action when necessary. Identify a hero, heroine or villain from another of the three comparative texts you have studied. Write about how successful this character is at making decisions and taking action when necessary. Support your answer by reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-a-q2-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative A Q2(b)",
+   "questionText": "We can learn about heroes, heroines and villains by considering how successful they are at making decisions and taking action when necessary. Readers can either like or dislike the characters they encounter in texts. Identify one character (hero, heroine or villain) from each of at least two texts on your comparative course. Compare the extent to which you like or dislike these characters. Support your answer by reference to the texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q1-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the three texts that you studied on your comparative course and identify a theme in it. Describe a key moment that tells you something important about this theme and explain what you learn about your chosen theme from this key moment.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q1-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another text that you studied on your comparative course. Describe a key moment from this text that tells you something important about the same theme that you wrote about in part (i) of this question. Explain what you learn about your chosen theme from this key moment.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Some texts can contribute more than others to our understanding of a theme. Compare the extent to which at least two texts on your comparative course contributed to your understanding of the theme you discussed in 1. (a) above. Support your answer by reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q2-a-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Readers can find some aspects of a theme either disturbing or reassuring. Identify a theme that you have studied and write about an aspect of this theme that you find either disturbing or reassuring in one text on your comparative course. Support your answer by reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q2-a-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "With reference to the same theme that you wrote about in part (i) of this question, write about an aspect of this theme that you find either disturbing or reassuring in another text on your comparative course. You may refer to the same or a different aspect of the theme as you discussed in part (i). Support your answer by reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-comparative-b-q2-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Comparative B Q2(b)",
+   "questionText": "Some texts can contribute more than others to our understanding of a theme. Compare the extent to which at least two texts on your comparative course contributed to your understanding of the theme you discussed in 2. (a) above. Support your answer by reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-unseen-q1",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "Based on your reading of the above poem, outline the impact the poet claims mobile phones have on our lives today. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "For We Shall Stare at Mobile Phones",
+    "pages": [
+     13
+    ],
+    "attribution": "For We Shall Stare at Mobile Phones — Brian Bilston, as reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-unseen-q2",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Do you like or dislike the above poem? Explain your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "For We Shall Stare at Mobile Phones",
+    "pages": [
+     13
+    ],
+    "attribution": "For We Shall Stare at Mobile Phones — Brian Bilston, as reproduced in the SEC 2017 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Identify an image that you like in the above poem and explain why you like it.",
+   "totalMarks": 10,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "Describe a feeling or emotion expressed by the poet in this poem. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q1-c",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q1(c)",
+   "questionText": "Explain what you think the poet means when she says, “I am not a Caesar”.",
+   "totalMarks": 10,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q2-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "Explain what you think the bees symbolise for Sylvia Plath in the above poem. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q2-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Does the language and imagery used by the poet add to your enjoyment of the above poem? Support your answer with reference to the language and imagery used in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-a-q2-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Imagine that you are Sylvia Plath. Write a letter to a friend in which you describe the arrival of the bee box and explain the impact it had on you. Your letter should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Arrival of the Bee Box — Sylvia Plath",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Arrival of the Bee Box",
+    "pages": [
+     14
+    ],
+    "attribution": "The Arrival of the Bee Box — Sylvia Plath.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Identify an image in the above poem that made an impact on you, and explain why it made an impact on you.",
+   "totalMarks": 10,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "Describe a feeling or emotion that you feel in response to this poem. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q1-c",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q1(c)",
+   "questionText": "Explain what you think the Master means when he says, ‘And where’s our little Ward‐of‐court?’",
+   "totalMarks": 10,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q2-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "Explain what the poet says about discipline and the effects of discipline in the above poem. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q2-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Does the language and imagery used by the poet add to your enjoyment of the above poem? Support your answer with reference to the language and imagery used in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-b-q2-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Imagine that you are the Master in the above poem. Write the letter you would send to your former student, Joe Ward, in which you respond to reports that he is now “fighting for Ireland”. Your letter should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-34",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Anseo — Paul Muldoon",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Anseo",
+    "pages": [
+     15
+    ],
+    "attribution": "Anseo — Paul Muldoon.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Identify an image from the above poem that you like and explain why you like it.",
+   "totalMarks": 10,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "Describe a feeling or emotion expressed by the poet in this poem. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q1-c",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q1(c)",
+   "questionText": "Explain what you think the poet means when he says, “What is all this juice and all this joy?”",
+   "totalMarks": 10,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q2-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "Explain what you learn about Hopkins’ relationship with nature from the above poem. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q2-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Does the language and imagery used by the poet add to your enjoyment of the above poem? Support your answer with reference to the language and imagery used in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-c-q2-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Imagine that you are the poet, Gerard Manley Hopkins. Write a letter to a friend in which you express your thoughts and feelings about spring and what it means to you spiritually. Your letter should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-9",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Spring — Gerard Manley Hopkins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Spring",
+    "pages": [
+     16
+    ],
+    "attribution": "Spring — Gerard Manley Hopkins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q1-a",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Identify an image from the above poem that you like and explain why you like it.",
+   "totalMarks": 10,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q1-b",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "Describe a feeling or emotion you feel in response to this poem. Support your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q1-c",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q1(c)",
+   "questionText": "Explain what you think the poet means when she says, “This is the realm insomniac”.",
+   "totalMarks": 10,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q2-i",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "Explain what you learn about the poet’s reaction to the end of her relationship from reading the above poem. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q2-ii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Does the language and imagery used by the poet add to your enjoyment of the above poem? Support your answer with reference to the language and imagery used in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2017-ol-p2-prescribed-d-q2-iii",
+   "year": 2017,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2017 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Imagine that the poet decided to write a letter to the person she refers to in the poem. Write the letter you think she might compose. Your letter should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-27",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Self‐Portrait in the Dark (with Cigarette)",
+    "pages": [
+     17
+    ],
+    "attribution": "Self‐Portrait in the Dark (with Cigarette) — Colette Bryce.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2017-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
    }
   },
   {
