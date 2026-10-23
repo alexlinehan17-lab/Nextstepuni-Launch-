@@ -1172,7 +1172,11 @@ def reviewed_sitting(year: int, level: str, review: Any,
     for part in (1, 2):
         if fileids[(year, level, part)] + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
             raise AssertionError(f'{year} {level} Part {part}: Paper Trail file id changed')
-    for kind in ('map', 'legend', 'aerial'):
+    # A companion the SEC never published for a sitting is None in COMPANIONS
+    # (2011 has no legend sheet); a task that names it then fails loudly below,
+    # so the ledger must hold, not card, any task that depends on it.
+    published = tuple(kind for kind in ('map', 'legend', 'aerial') if COMPANIONS[year][kind])
+    for kind in published:
         path = companion_path(year, COMPANIONS[year][kind])
         sources[kind] = {'fileid': os.path.basename(path).split(f'{year}-')[-1],
                          'bytes': os.path.getsize(path),
@@ -1188,7 +1192,7 @@ def reviewed_sitting(year: int, level: str, review: Any,
     if sorted(map(tuple, classified)) != sorted(map(tuple, scan)):
         raise AssertionError(f'{year} {level}: selection review does not classify the scan')
 
-    companions = {kind: companion_material(kind, year) for kind in ('map', 'legend', 'aerial')}
+    companions = {kind: companion_material(kind, year) for kind in published}
     cards: list[dict[str, Any]] = []
     tasks_out, base_tasks, selection_rows = [], [], []
     absorbed_pairs: list[tuple[str, str]] = []
@@ -1258,13 +1262,16 @@ def reviewed_sitting(year: int, level: str, review: Any,
     for row in held:
         totals[(row['part'], row['question'])] = (
             totals.get((row['part'], row['question']), 0) + row['marks'])
-        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}"
+        # A held row may name one separately priced part ('sub', e.g. '(iii)').
+        sub = row.get('sub', '')
+        key = sub.strip('()').replace(')(', '-')
+        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}{sub}"
         base_tasks.append({'id': ID_PREFIX.format(year=year, short=LEVEL_SHORT[level])
-                           + f"p{row['part']}-q{row['question'].lower()}",
+                           + f"p{row['part']}-q{row['question'].lower()}" + (f'-{key}' if key else ''),
                            'year': year, 'level': level, 'part': row['part'], 'questionRef': ref,
                            'title': row['title'], 'status': 'excluded'})
         excluded_rows.append({'year': year, 'level': level, 'part': row['part'],
-                              'questionRef': row['question'], 'title': row['title'],
+                              'questionRef': row['question'] + sub, 'title': row['title'],
                               'reason': row['reason']})
     expected_totals = {(part, q): marks for part, row in review.QUESTION_TARIFFS.items()
                        for q, marks in row.items()}
@@ -1596,7 +1603,8 @@ def main() -> int:
     if args.fetch_companions:
         for year in sorted({year for year, _level in REVIEWED}):
             for kind in ('map', 'legend', 'aerial'):
-                companion_path(year, COMPANIONS[year][kind], fetch=True)
+                if COMPANIONS[year][kind]:
+                    companion_path(year, COMPANIONS[year][kind], fetch=True)
     authored, census, audit, atlas = serialised()
     # The deck-size manifest is shared by every subject; only the Geography
     # entry is ours to restate.
