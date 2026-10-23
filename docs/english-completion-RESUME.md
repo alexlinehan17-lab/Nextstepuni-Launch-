@@ -1,4 +1,59 @@
-## Current checkpoint — printed choices collapsed, 2026-10-12
+## Current checkpoint — ALL 68 EV papers published, 2026-10-23
+
+Supersedes every count below. English-language (EV) editions 2010-2026 are
+complete; Irish-version (IV) editions stay deferred (Alex, 2026-10-11).
+
+- Published 68/68 EV papers, 2,685 cards (higher 738, ordinary 1,947);
+  publisher refuses 0. All 650 legacy runtime cards are bridged, so the
+  served English bank is exactly these 2,685 cards. Aliases 159.
+- Denominator: 2,724 printed tasks by independent visual tally (68 papers,
+  every sweep complete) minus 39 declared printed repeats = 2,685 asks.
+  `paper_census.py english`: 2,685 leaf asks, 0 flags, 0 unreadable.
+  `reconcile.py english --baseline check`: 2,685/2,685, 0 excluded, 0 open,
+  0 orphans, 0 unparsed (exit 0). No exclusions exist.
+- This round (oldest first): a1bcd915d 2017 OL P2 (Q1(b) and Q2(b) both
+  published, Alex's decision: Q2(b) carries its printed lead-in),
+  eebbb7858 2019 HL P1, 3a410b2f8 2019 HL P2, c10e77865 2019 OL P1,
+  687f59002 2019 OL P2, e2d250549 2020 HL P1 (+ 2020 HL/OL grid sittings),
+  0c9a25203 2020 HL P2, 4993bc443 2020 OL P1, 4523b270e 2020 OL P2 (+ 2020
+  "F 1984" scheme-crop anchor, asserted), b817b4bc7 scheme .md for 2017/2019/
+  2020 (markBankDeck needs one per sitting the deck draws on), 26b5f42df
+  2011 OL P2 text-repair guard test.
+- Whole-subject audit (scratchpad `audit_english.py`, every published card):
+  all 2,685 resolve to an Atlas heading through their answer-map block (68
+  maps hosted byte-identical and listed in HOSTED_ANSWER_OVERRIDES); every
+  questionRef agrees with year/level/paper and with its cited block's
+  section; every questionText is printed on its cited paper pages (2,663 via
+  the text layer; 2011 OL P2 and the 2022 HL P2 Dickinson fragment via the
+  page's own glyphs; 2013 OL Comparative B joins its printed aspect list to
+  part (a) across the "(a)" marker). cardlint's rules applied to the English
+  decks: 0 scheme-leak, 0 label-junk; 4 ghost-figure regex hits all
+  reviewed (3 are "shown" used as a verb; 2020 HL composing 3 cites the TEXT
+  2 extract as context only, like every composing lead-in). Note
+  `cardlint.py english` alone prints "clean" without reading English: it
+  only reads scripts/markbank/authored/<subject>.json.
+- Checks at 26b5f42df: typecheck clean; typecheck:test only the 3
+  pre-existing errors; lint (--ignore-pattern 'tmp/**') clean; build OK;
+  full vitest 222 files / 5,373 tests pass (an earlier run's musicExamTopics
+  30 s timeout was load only: 21/21 alone); Python English tests 81 pass; browser QA desktop + phone for the
+  2017 (10 cards), 2019 (12) and 2020 (13) groups all ok.
+- Printed misprints carried verbatim (lift rule): 2020 OL P2 Prescribed C
+  Q1(a) "about the the baby" (paper PDF16, viewed); 2020 HL scheme PDF26
+  names The Handmaid's Tale in the Persuasion (ii) note (not quoted on the
+  card).
+- Follow-ups (not done, shared with main): Paper Trail answer-map labels
+  title-case after apostrophes ("Handmaid’S", "Yeats’S", also in main's
+  2024 HL P2 map) and 2019 OL P2 cuts "(Extract: Lines 45 – 76)" at the
+  dash — `title_case()` in scripts/paper-trail/english_p2_complete.py; the
+  labels feed scheme matching in english_p2_ol.py, so re-verify every crop
+  if changed. Mark Bank cards are unaffected.
+- Integration: rebase onto current main as its own ship step; recompute the
+  shared totals (cardAliases.ts, sizes.json, coverage-baseline.json,
+  markBankCardPreservation totals) from the merged decks.
+
+---
+
+## Previous checkpoint — printed choices collapsed, 2026-10-12
 
 Supersedes the card counts below (c1d45e931).
 
