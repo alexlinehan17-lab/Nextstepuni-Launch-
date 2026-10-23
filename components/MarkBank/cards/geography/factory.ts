@@ -15,6 +15,7 @@
  */
 
 import type {
+  CardFigure,
   CardSourceMaterial,
   GeographyCriterion,
   GeographyGuidanceKind,
@@ -57,6 +58,19 @@ interface AuthoredGeographyCard {
   directions?: string[];
   atlasTopicIds?: string[];
   reviewed?: boolean;
+  /** A crop of an official document (a map crop, or the scheme's labelled
+   *  diagram as a solution figure held back until the reveal). */
+  figure?: CardFigure;
+  /** The paper's own print of the question (a diagram whose blanks are the
+   *  ask), shown before the reveal in place of the typeset stem. */
+  questionFigure?: CardFigure;
+  /** A short factual note about the sitting's sources or allocation (no
+   *  published legend; a scheme that prices less than the printed total). */
+  note?: string;
+  /** Printed marks the published scheme allocates to no line (2020 OL 9C:
+   *  3 of 30). They stay in `totalMarks` and are never derived into a
+   *  criterion; the card's `note` says so. */
+  unpricedMarks?: number;
 }
 
 const DATA = authored.cards as AuthoredGeographyCard[];
@@ -87,6 +101,9 @@ const markingGuideNote = (card: AuthoredGeographyCard) =>
     ? 'Compare your response with the published answers and mark allocation. Where the scheme says “valid answer”, other correct responses remain creditable on their merits.'
     : 'The scheme’s suggestions and examples are not exhaustive. Count only valid Significant Relevant Points that emerge from a coherent response, then apply every published cap, named-example rule and diagram condition shown above.';
 
+const guideNote = (card: AuthoredGeographyCard) =>
+  card.note ? `${card.note} ${markingGuideNote(card)}` : markingGuideNote(card);
+
 const makeCard = (card: AuthoredGeographyCard): SecRubricCard => ({
   id: card.id,
   subjectId: 'geography',
@@ -103,6 +120,12 @@ const makeCard = (card: AuthoredGeographyCard): SecRubricCard => ({
   questionText: card.questionText,
   sourceMaterial: card.sourceMaterial,
   additionalSourceMaterials: card.additionalSourceMaterials,
+  ...(card.questionFigure
+    ? { questionFigure: { ...card.questionFigure, lettersVisible: [...card.questionFigure.lettersVisible] } }
+    : {}),
+  ...(card.figure
+    ? { figure: { ...card.figure, lettersVisible: [...card.figure.lettersVisible] } }
+    : {}),
   totalMarks: card.totalMarks,
   schemeCitation:
     `SEC Geography ${card.level === 'higher' ? 'Higher' : 'Ordinary'} Level ` +
@@ -141,7 +164,8 @@ const makeCard = (card: AuthoredGeographyCard): SecRubricCard => ({
     srpMarks: card.guidanceKind === 'srp'
       ? (card.level === 'higher' ? 2 : 3)
       : undefined,
-    markingGuideNote: markingGuideNote(card),
+    ...(card.unpricedMarks ? { unpricedMarks: card.unpricedMarks } : {}),
+    markingGuideNote: guideNote(card),
   },
 });
 
