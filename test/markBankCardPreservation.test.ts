@@ -801,10 +801,6 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
-const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
-  .update(cards.map((card) => card.id).sort().join('\n'))
-  .digest('hex');
-
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
