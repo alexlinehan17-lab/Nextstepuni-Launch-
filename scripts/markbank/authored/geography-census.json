@@ -1,6 +1,7 @@
 {
   "subjectId": "geography",
   "years": [
+    2011,
     2012,
     2013,
     2014,
@@ -21,11 +22,875 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 3453,
-  "includedBaseTasks": 3452,
-  "excludedBaseTasks": 1,
-  "authoredCards": 3698,
+  "paperBaseTasks": 3549,
+  "includedBaseTasks": 3546,
+  "excludedBaseTasks": 3,
+  "authoredCards": 3797,
   "baseTasks": [
+    {
+      "id": "geography-2011-hl-p1-q1",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q1",
+      "title": "Glaciation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q3",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q3(i)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q3-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q3(ii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q3-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q3(iii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q3-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q3(iv)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q4",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q4",
+      "title": "Types of Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q5",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q5",
+      "title": "Coastal Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q6",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q6(i)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q6-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q6(ii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q6-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q6(iii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q6-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q6(iv)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q7",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q7",
+      "title": "Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q8",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q8",
+      "title": "The Structure of the Earth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q9",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q9",
+      "title": "Rock Type",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q10",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q10",
+      "title": "Satellite Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q11",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q11(i)",
+      "title": "Energy capacity in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q11-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q11(ii)",
+      "title": "Energy capacity in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q11-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q11(iii)",
+      "title": "Energy capacity in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q11-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q11(iv)",
+      "title": "Energy capacity in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q12",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q12(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q12-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q12(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q12-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q12(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q12-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q12(iv)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q1a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q1A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q1b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q1B",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q1c-mass-movement-processes",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q1C",
+      "title": "Human Interaction",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q2a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q2A(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q2a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q2A(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q2b-route-i-fluvial",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q2B",
+      "title": "Landform Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q2c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q2C",
+      "title": "Human Interaction",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3A(i)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3A(ii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3a-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3A(iii)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3a-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3A(iv)",
+      "title": "Volcanoes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3B",
+      "title": "Igneous Rock",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q3c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q3C",
+      "title": "Isostatic Changes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q4a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q4b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q4B",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q4c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q4C",
+      "title": "Urban Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5A(i)",
+      "title": "European Fishing",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5A(ii)",
+      "title": "European Fishing",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5a-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5A(iii)",
+      "title": "European Fishing",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5a-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5A(iv)",
+      "title": "European Fishing",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5a-v",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5A(v)",
+      "title": "European Fishing",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5B",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q5c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q5C",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6A(i)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6A(ii)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6a-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6A(iii)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6a-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6A(iv)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6a-v",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6A(v)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6B",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q6c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q6C",
+      "title": "Manufacturing Industry",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q7a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q7A(i)",
+      "title": "Unemployment Rate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q7a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q7A(ii)",
+      "title": "Unemployment Rate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q7b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q7B",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q7c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q7C",
+      "title": "Developing Economies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q8a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q8A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q8b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q8B",
+      "title": "Multinational Companies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q8c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q8C",
+      "title": "Environmental Impact",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9A(i)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9A(ii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9a-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9A(iii)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9a-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9A(iv)",
+      "title": "Human Development Index",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9B",
+      "title": "Developed Economies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q9c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q9C",
+      "title": "European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q10a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q10A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q10b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q10B",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q10c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q10C",
+      "title": "Dynamics of Settlement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11A(i)",
+      "title": "Population Pyramid",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11A(ii)",
+      "title": "Population Pyramid",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11a-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11A(iii)",
+      "title": "Population Pyramid",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11a-iv",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11A(iv)",
+      "title": "Population Pyramid",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11a-v",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11A(v)",
+      "title": "Population Pyramid",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11B",
+      "title": "Urban Expansion",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q11c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q11C",
+      "title": "Population Density",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q12a",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q12A(i)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q12a-ii",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q12A(ii)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q12b",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q12B",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q12c",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q12C",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q13",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q13",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q14",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q14",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q15",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q15",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q16",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q16",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q17",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q17",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q18",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q18",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q19",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q19",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q20",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q20",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q21",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q21",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q22",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q22",
+      "title": "The Atmosphere Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q23",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q23",
+      "title": "The Atmosphere Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p2-q24",
+      "year": 2011,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2011 HL Part 2 Q24",
+      "title": "The Atmosphere Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-i",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(i)",
+      "title": "Ordnance Survey Map",
+      "status": "excluded"
+    },
+    {
+      "id": "geography-2011-hl-p1-q2-iii",
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2011 HL Part 1 Q2(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "excluded"
+    },
     {
       "id": "geography-2012-hl-p1-q1",
       "year": 2012,
@@ -31106,6 +31971,15 @@
   ],
   "sittings": [
     {
+      "year": 2011,
+      "level": "higher",
+      "paperBaseTasks": 96,
+      "includedBaseTasks": 94,
+      "excludedBaseTasks": 2,
+      "authoredCardsAfterFiniteExpansion": 99,
+      "reviewed": true
+    },
+    {
       "year": 2012,
       "level": "higher",
       "paperBaseTasks": 106,
@@ -31377,6 +32251,31 @@
     }
   ],
   "selectionAudit": [
+    {
+      "questionRef": "2011 HL Part 2 Q1C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2011 HL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2011 HL Part 2 Q17",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
+    },
     {
       "questionRef": "2012 HL Part 2 Q2B",
       "classification": "finite-expanded",
@@ -33156,6 +34055,22 @@
     }
   ],
   "exclusions": [
+    {
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2(i)",
+      "title": "Ordnance Survey Map",
+      "reason": "The paper asks \"(i) What type of antiquity is found at grid reference Q 457 015?\" of \"the 1:50000 Ordnance Survey map and legend that accompany this paper\". At Q 457 015 the map prints only an unnamed red open-circle antiquity symbol south of Ballybeg; the scheme's answer \"Clós, Ráth, Lios, Enclosure, Ringfort.\" is the meaning the OS legend gives that symbol. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2(iii)",
+      "title": "Ordnance Survey Map",
+      "reason": "The paper asks \"(iii) Has the tourist information centre at Q 444 010 regular opening hours? Tick the correct answer.\" The map prints a green \"i\" tourist-information symbol at Q 444 010 and no opening hours; whether that symbol marks regular opening (the scheme answers \"Yes\") is a distinction only the OS legend draws. The legend sheet was not published with the 2011 materials Paper Trail holds, and the map sheet (LC005CLP003EV) carries none, so the part is held rather than carded without its source."
+    },
     {
       "year": 2020,
       "level": "ordinary",

@@ -72,6 +72,7 @@ import geography_review_2013_hl as REVIEW_2013_HL
 import geography_review_2013_ol as REVIEW_2013_OL
 import geography_review_2012_hl as REVIEW_2012_HL
 import geography_review_2012_ol as REVIEW_2012_OL
+import geography_review_2011_hl as REVIEW_2011_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -128,6 +129,7 @@ REVIEWED = {
     (2013, 'ordinary'): REVIEW_2013_OL,
     (2012, 'higher'): REVIEW_2012_HL,
     (2012, 'ordinary'): REVIEW_2012_OL,
+    (2011, 'higher'): REVIEW_2011_HL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -965,7 +967,7 @@ def question_page_source(
 # The separate official companions of each sitting (map extract, OS legend,
 # aerial photograph), keyed by year. Identities come from Paper Trail's index;
 # each was rendered and checked by eye before it was listed here.
-COMPANIONS: dict[int, dict[str, str]] = {
+COMPANIONS: dict[int, dict[str, str | None]] = {
     2026: {'place': 'Dundalk', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV'},
     # 2025's aerial photograph is published only as a JPEG image.
@@ -1006,6 +1008,10 @@ COMPANIONS: dict[int, dict[str, str]] = {
     2013: {'place': 'Enniscorthy', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV'},
     2012: {'place': 'Carrick-on-Shannon', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2011: the SEC published no legend sheet with the Dingle map (Paper Trail
+    # holds none and the map sheet carries none); legend-dependent parts are held.
+    2011: {'place': 'Dingle', 'map': 'LC005CLP003EV', 'legend': None,
            'aerial': 'LC005CLP004EV'},
 }
 
