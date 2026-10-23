@@ -280,13 +280,13 @@ PART_ONE += [
        L(7, 'Climatic', nth=0), L(7, 'Cultural', nth=0), L(7, 'Geomorphological', nth=0), L(7, 'Core', nth=0)),
       (S(4, 'Q5. (i)', None, Q5I_COL),),
       rows(['Q5. (i) Geomorphological 1m', 'Climatic 1m', 'Core 1m', 'Cultural · 1m']),
-      '1-0', IRL + EURO, ID + 'p1-q5', (), Q5S, row_labels=Q5_ROWS),
+      '1-0', IRL + EURO, ID + 'p1-q5', ('page',), Q5S, row_labels=Q5_ROWS),
     T('p1-5-ii', P1, '5', '(ii)', 4, 7, L(7, 'Concept of a Region'),
       (L(7, '(ii) Match each of the following examples of regions with the description', 'best matches it:'),
        L(7, 'Basque Country'), L(7, 'The Burren'), L(7, 'Greater Dublin Area'), L(7, 'Mediterranean', nth=0)),
       (S(4, '(ii) The Burren', None, Q5II_COL),),
       rows(['(ii) The Burren 1m', 'Mediterranean 1m', 'GDA 1m', 'Basque · 1m']),
-      '1-0', IRL + EURO, ID + 'p1-q5-ii', (), Q5S, row_labels=Q5_ROWS),
+      '1-0', IRL + EURO, ID + 'p1-q5-ii', ('page',), Q5S, row_labels=Q5_ROWS),
 ]
 
 Q6S = (L(8, 'Examine the 1:50 000 Ordnance Survey map and legend accompanying this paper and answer',

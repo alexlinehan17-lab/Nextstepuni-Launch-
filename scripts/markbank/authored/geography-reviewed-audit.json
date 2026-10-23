@@ -60175,7 +60175,9 @@
           "atlasTopicIds": [
             "geography-ordinary-elective-economic"
           ],
-          "sources": [],
+          "sources": [
+            "page"
+          ],
           "cards": [
             "geography-2017-ol-p1-q9"
           ],
@@ -81637,7 +81639,9 @@
             "geography-higher-regions-european",
             "geography-higher-regions-ireland"
           ],
-          "sources": [],
+          "sources": [
+            "page"
+          ],
           "cards": [
             "geography-2020-hl-p1-q5"
           ],
@@ -81676,7 +81680,9 @@
             "geography-higher-regions-european",
             "geography-higher-regions-ireland"
           ],
-          "sources": [],
+          "sources": [
+            "page"
+          ],
           "cards": [
             "geography-2020-hl-p1-q5-ii"
           ],

@@ -286,7 +286,7 @@ PART_ONE += [
       (S(7, 'Q.9', 'Q.10'),),
       rows(['Q.9 · Primary · 2m', '=Tertiary · 2m', '=Secondary · 2m@0', '=Secondary · 2m@1',
             'Primary · 2m · Total 10m']),
-      '3-0', ECON, ID + 'p1-q9', (),
+      '3-0', ECON, ID + 'p1-q9', ('page',),
       row_labels=(L(8, 'Mining'), L(8, 'Banking'), L(8, 'Construction'), L(8, 'Manufacturing'), L(8, 'Forestry'))),
 ]
 PART_ONE += romans('10', P1, 9, L(9, 'Population', nth=0),

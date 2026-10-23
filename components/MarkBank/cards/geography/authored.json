@@ -126524,7 +126524,17 @@
       "atlasTopicIds": [
         "geography-ordinary-elective-economic"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "PART 1 · Q9",
+        "title": "Official question page",
+        "pages": [
+          8
+        ],
+        "attribution": "State Examinations Commission Geography OL question paper 2017 — © State Examinations Commission.",
+        "presentationNote": "Official examination layout, reproduced page-for-page so every printed map, chart, photograph and source remains in context."
+      }
     },
     {
       "id": "geography-2017-ol-p1-q10",
@@ -170109,7 +170119,17 @@
         "geography-higher-regions-ireland",
         "geography-higher-regions-european"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "PART 1 · Q5",
+        "title": "Official question page",
+        "pages": [
+          7
+        ],
+        "attribution": "State Examinations Commission Geography HL question paper 2020 — © State Examinations Commission.",
+        "presentationNote": "Official examination layout, reproduced page-for-page so every printed map, chart, photograph and source remains in context."
+      }
     },
     {
       "id": "geography-2020-hl-p1-q5-ii",
@@ -170192,7 +170212,17 @@
         "geography-higher-regions-ireland",
         "geography-higher-regions-european"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "sourceMaterial": {
+        "kind": "source-illustration",
+        "label": "PART 1 · Q5",
+        "title": "Official question page",
+        "pages": [
+          7
+        ],
+        "attribution": "State Examinations Commission Geography HL question paper 2020 — © State Examinations Commission.",
+        "presentationNote": "Official examination layout, reproduced page-for-page so every printed map, chart, photograph and source remains in context."
+      }
     },
     {
       "id": "geography-2020-hl-p1-q6",
