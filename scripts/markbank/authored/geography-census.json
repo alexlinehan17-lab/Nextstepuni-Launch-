@@ -1,6 +1,7 @@
 {
   "subjectId": "geography",
   "years": [
+    2012,
     2013,
     2014,
     2015,
@@ -20,11 +21,965 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 3239,
-  "includedBaseTasks": 3238,
+  "paperBaseTasks": 3345,
+  "includedBaseTasks": 3344,
   "excludedBaseTasks": 1,
-  "authoredCards": 3473,
+  "authoredCards": 3583,
   "baseTasks": [
+    {
+      "id": "geography-2012-hl-p1-q1",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q1",
+      "title": "Glacial Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q2",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q2(i)",
+      "title": "Physical Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q2-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q2(ii)",
+      "title": "Physical Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q3",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q3(i)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q3-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q3(ii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q3-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q3(iii)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q3-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q3(iv)",
+      "title": "Weather Chart",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q4",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q4",
+      "title": "Structure of a Volcano",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q5",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q5(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q5-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q5(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q5-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q5(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q5-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q5(iv)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q6",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q6(i)",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q6-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q6(ii)",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q7",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q7",
+      "title": "Physical Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q8",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q8(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q8-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q8(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q8-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q8(iii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q8-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q8(iv)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q9",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q9(i)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q9-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q9(ii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q9-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q9(iii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q9-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q9(iv)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q10",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q10",
+      "title": "Satellite Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q11",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q11(i)",
+      "title": "Population - Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q11-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q11(ii)",
+      "title": "Population - Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q11-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q11(iii)",
+      "title": "Population - Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q11-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q11(iv)",
+      "title": "Population - Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q12",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q12(i)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q12-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q12(ii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q12-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q12(iii)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p1-q12-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 1,
+      "questionRef": "2012 HL Part 1 Q12(iv)",
+      "title": "Graphical Interpretation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q1a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q1A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q1b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q1B",
+      "title": "Sedimentary and Metamorphic Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q1c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q1C",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2A(i)",
+      "title": "Plate Tectonics – Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2A(ii)",
+      "title": "Plate Tectonics – Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2A(iii)",
+      "title": "Plate Tectonics – Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2A(iv)",
+      "title": "Plate Tectonics – Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2A(v)",
+      "title": "Plate Tectonics – Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2b-route-i",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2B",
+      "title": "Landform Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q2c-river-processes",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q2C",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3A(i)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3A(ii)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3A(iii)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3A(iv)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3A(v)",
+      "title": "Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3B",
+      "title": "Limestone Pavement",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q3c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q3C",
+      "title": "Folding",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q4a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q4A",
+      "title": "Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q4b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q4B",
+      "title": "Agriculture in Europe",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q4c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q4C",
+      "title": "Population in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5A(i)",
+      "title": "Irish Agricultural Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5A(ii)",
+      "title": "Irish Agricultural Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5A(iii)",
+      "title": "Irish Agricultural Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5A(iv)",
+      "title": "Irish Agricultural Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5A(v)",
+      "title": "Irish Agricultural Trade",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5B",
+      "title": "Concept of a Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q5c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q5C",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6A(i)",
+      "title": "The European Union (EU) – ‘Euro Crisis’",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6A(ii)",
+      "title": "The European Union (EU) – ‘Euro Crisis’",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6A(iii)",
+      "title": "The European Union (EU) – ‘Euro Crisis’",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6A(iv)",
+      "title": "The European Union (EU) – ‘Euro Crisis’",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6A(v)",
+      "title": "The European Union (EU) – ‘Euro Crisis’",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6B",
+      "title": "Economic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q6c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q6C",
+      "title": "The Dynamics of Regions – Human Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7A(i)",
+      "title": "Greenhouse Effect",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7A(ii)",
+      "title": "Greenhouse Effect",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7A(iii)",
+      "title": "Greenhouse Effect",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7A(iv)",
+      "title": "Greenhouse Effect",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7A(v)",
+      "title": "Greenhouse Effect",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7B",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q7c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q7C",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q8a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q8A(i)",
+      "title": "Energy Sources",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q8a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q8A(ii)",
+      "title": "Energy Sources",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q8b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q8B",
+      "title": "Developing Economies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q8c-footloose-industries",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q8C",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q9a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q9A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q9b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q9B",
+      "title": "Multinational Companies (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q9c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q9C",
+      "title": "Conflict of Interest",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q10a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q10A",
+      "title": "Historical Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q10b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q10B",
+      "title": "Urbanisation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q10c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q10C",
+      "title": "Population Change",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11A(i)",
+      "title": "Transport and Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11A(ii)",
+      "title": "Transport and Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11a-iii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11A(iii)",
+      "title": "Transport and Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11a-iv",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11A(iv)",
+      "title": "Transport and Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11a-v",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11A(v)",
+      "title": "Transport and Traffic",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11B",
+      "title": "Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q11c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q11C",
+      "title": "Demographic Change",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q12a",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q12A(i)",
+      "title": "Life Expectancy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q12a-ii",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q12A(ii)",
+      "title": "Life Expectancy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q12b",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q12B",
+      "title": "Population Distribution",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q12c",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q12C",
+      "title": "Changing Land-Use Patterns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q13",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q13",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q14",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q14",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q15",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q15",
+      "title": "Global Interdependence",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q16",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q16",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q17",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q17",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q18",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q18",
+      "title": "Geoecology",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q19",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q19",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q20",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q20",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q21",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q21",
+      "title": "Culture and Identity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q22",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q22",
+      "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q23",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q23",
+      "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-hl-p2-q24",
+      "year": 2012,
+      "level": "higher",
+      "part": 2,
+      "questionRef": "2012 HL Part 2 Q24",
+      "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
     {
       "id": "geography-2013-hl-p1-q1",
       "year": 2013,
@@ -29179,6 +30134,15 @@
   ],
   "sittings": [
     {
+      "year": 2012,
+      "level": "higher",
+      "paperBaseTasks": 106,
+      "includedBaseTasks": 106,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 110,
+      "reviewed": true
+    },
+    {
       "year": 2013,
       "level": "higher",
       "paperBaseTasks": 104,
@@ -29432,6 +30396,66 @@
     }
   ],
   "selectionAudit": [
+    {
+      "questionRef": "2012 HL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q2C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q4B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q5C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q6C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 9
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q8C",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 HL Part 2 Q18",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 3
+    },
     {
       "questionRef": "2013 HL Part 2 Q2A(ii)",
       "classification": "finite-expanded",

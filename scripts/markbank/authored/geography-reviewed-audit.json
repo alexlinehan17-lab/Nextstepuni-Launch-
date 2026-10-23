@@ -4,6 +4,3946 @@
   "scope": "English (EV) editions; Irish editions are deferred.",
   "reviewedSittings": [
     {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "status": "reviewed",
+      "reviewedAt": "2026-10-11",
+      "sources": {
+        "paper1": {
+          "fileid": "LC005ALP000EV.pdf",
+          "bytes": 2999085,
+          "sha256": "39ef0043695ed03ca64fa1afc2ae27f979fadabb17834ea860f4e59edc2e3bb9",
+          "pages": 32
+        },
+        "paper2": {
+          "fileid": "LC005ALP000EV.pdf",
+          "bytes": 2999085,
+          "sha256": "39ef0043695ed03ca64fa1afc2ae27f979fadabb17834ea860f4e59edc2e3bb9",
+          "pages": 32
+        },
+        "scheme": {
+          "fileid": "LC005ALP000EV.pdf",
+          "bytes": 1089373,
+          "sha256": "1ee501b690150125cbd8d79cf8c2d51bbc031daedf4d391cdadc5a5305fc1ef8",
+          "pages": 48
+        },
+        "map": {
+          "fileid": "LC005CLP003EV.pdf",
+          "bytes": 1738631,
+          "sha256": "b04407beff9c747e267d440edaec7491e7dbf311446a92c550dc23b5700aa4b2",
+          "pages": 1
+        },
+        "legend": {
+          "fileid": "LC005CLPC00EV.pdf",
+          "bytes": 267008,
+          "sha256": "aa031e572a8ed3b04b4778c9edf0690a71518740bbe245437ab7fa1ef3400337",
+          "pages": 1
+        },
+        "aerial": {
+          "fileid": "LC005CLP004EV.pdf",
+          "bytes": 3193770,
+          "sha256": "c72b335409d07f0cfda9284a7a9211e0637e5c9362aae0b6082ad9be832cc35c",
+          "pages": 1
+        }
+      },
+      "pageReview": {
+        "paper1": {
+          "1": "cover and examiner grid",
+          "2": "question",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "question",
+          "12": "Part Two instructions",
+          "13": "section divider",
+          "14": "question",
+          "15": "question",
+          "16": "question",
+          "17": "question",
+          "18": "question",
+          "19": "question",
+          "20": "section divider",
+          "21": "question",
+          "22": "question",
+          "23": "question",
+          "24": "question",
+          "25": "question",
+          "26": "question",
+          "27": "question",
+          "28": "section divider and option note",
+          "29": "question",
+          "30": "question",
+          "31": "blank page",
+          "32": "blank page"
+        },
+        "paper2": {
+          "1": "cover and examiner grid",
+          "2": "question",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "question",
+          "12": "Part Two instructions",
+          "13": "section divider",
+          "14": "question",
+          "15": "question",
+          "16": "question",
+          "17": "question",
+          "18": "question",
+          "19": "question",
+          "20": "section divider",
+          "21": "question",
+          "22": "question",
+          "23": "question",
+          "24": "question",
+          "25": "question",
+          "26": "question",
+          "27": "question",
+          "28": "section divider and option note",
+          "29": "question",
+          "30": "question",
+          "31": "blank page",
+          "32": "blank page"
+        },
+        "scheme": {
+          "1": "cover",
+          "2": "blank",
+          "3": "notes",
+          "4": "Part One table",
+          "5": "Part Two instructions",
+          "6": "section divider",
+          "7": "Part Two allocation",
+          "8": "Part Two allocation",
+          "9": "Part Two allocation",
+          "10": "Part Two allocation",
+          "11": "Part Two allocation",
+          "12": "Part Two allocation",
+          "13": "Part Two allocation",
+          "14": "Part Two allocation",
+          "15": "Part Two allocation",
+          "16": "Part Two allocation",
+          "17": "Part Two allocation",
+          "18": "Part Two allocation",
+          "19": "Part Two allocation",
+          "20": "section divider",
+          "21": "Part Two allocation",
+          "22": "Part Two allocation",
+          "23": "Part Two allocation",
+          "24": "Part Two allocation",
+          "25": "Part Two allocation",
+          "26": "Part Two allocation",
+          "27": "Part Two allocation",
+          "28": "Part Two allocation",
+          "29": "Part Two allocation",
+          "30": "Part Two allocation",
+          "31": "Part Two allocation",
+          "32": "Part Two allocation",
+          "33": "section divider and option note",
+          "34": "option allocation",
+          "35": "option allocation",
+          "36": "option allocation",
+          "37": "option allocation",
+          "38": "option allocation",
+          "39": "option allocation",
+          "40": "option allocation",
+          "41": "option allocation",
+          "42": "geographical investigation (coursework)",
+          "43": "geographical investigation presentation marks",
+          "44": "investigation topics",
+          "45": "Irish-language bonus marks",
+          "46": "blank",
+          "47": "blank",
+          "48": "back cover"
+        }
+      },
+      "selectionScan": [
+        [
+          1,
+          2,
+          "attempt ten"
+        ],
+        [
+          1,
+          12,
+          "attempt four"
+        ],
+        [
+          1,
+          13,
+          "attempt two"
+        ],
+        [
+          1,
+          14,
+          "attempt one"
+        ],
+        [
+          1,
+          15,
+          "answer (i) or (ii)"
+        ],
+        [
+          1,
+          15,
+          "either"
+        ],
+        [
+          1,
+          17,
+          "attempt one"
+        ],
+        [
+          1,
+          17,
+          "any two"
+        ],
+        [
+          1,
+          18,
+          "any two"
+        ],
+        [
+          1,
+          19,
+          "any two"
+        ],
+        [
+          1,
+          20,
+          "attempt one"
+        ],
+        [
+          1,
+          26,
+          "attempt to"
+        ],
+        [
+          1,
+          26,
+          "any three"
+        ],
+        [
+          1,
+          28,
+          "attempt one"
+        ],
+        [
+          1,
+          29,
+          "any three"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "scan": [
+            [
+              1,
+              2,
+              "attempt ten"
+            ],
+            [
+              1,
+              12,
+              "attempt four"
+            ],
+            [
+              1,
+              13,
+              "attempt two"
+            ],
+            [
+              1,
+              14,
+              "attempt one"
+            ],
+            [
+              1,
+              17,
+              "attempt one"
+            ],
+            [
+              1,
+              20,
+              "attempt one"
+            ],
+            [
+              1,
+              28,
+              "attempt one"
+            ]
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "Part One any ten of twelve and Part Two four questions (one of Q1-3, one of Q4-6, one elective, one option) are attempt rules; every question is carded."
+        },
+        {
+          "scan": [
+            [
+              1,
+              15,
+              "answer (i) or (ii)"
+            ]
+          ],
+          "kind": "closed-route",
+          "reason": "2B: (i) or (ii) -> two routes, each with its own scheme allocation."
+        },
+        {
+          "scan": [
+            [
+              1,
+              15,
+              "either"
+            ]
+          ],
+          "kind": "closed-route",
+          "reason": "2C: either river, coastal or mass movement processes -> 3 routes under one allocation."
+        },
+        {
+          "scan": [],
+          "kind": "inline-closed-route",
+          "reason": "8C \"footloose industries or tourism\" -> 2 routes, each with its own printed allocation (no directive word the scan reads; the route text is anchored on the paper)."
+        },
+        {
+          "scan": [
+            [
+              1,
+              17,
+              "any two"
+            ],
+            [
+              1,
+              18,
+              "any two"
+            ],
+            [
+              1,
+              19,
+              "any two"
+            ],
+            [
+              1,
+              29,
+              "any three"
+            ]
+          ],
+          "kind": "choose-n-one-card",
+          "reason": "4B any two of three printed factors, 5C any two of three printed factors, 6C any two of the five human processes printed in a table and option 18 any three of four printed activities -> one card each with every printed item (choice is not a route)."
+        },
+        {
+          "scan": [
+            [
+              1,
+              26,
+              "any three"
+            ]
+          ],
+          "kind": "open-response",
+          "reason": "11B any three different functions of Carrick-on-Shannon prints no pool. Compulsory lists stay whole: 1A, 4A, 9A, 10A each item; 7B three factors; 10C three changes."
+        },
+        {
+          "scan": [
+            [
+              1,
+              26,
+              "attempt to"
+            ]
+          ],
+          "kind": "not-a-selection",
+          "reason": "11A(v) \"authorities attempt to solve\" describes the authorities, not a candidate choice."
+        }
+      ],
+      "questionTotals": {
+        "Part 1 Q1": 8,
+        "Part 1 Q10": 8,
+        "Part 1 Q11": 8,
+        "Part 1 Q12": 8,
+        "Part 1 Q2": 8,
+        "Part 1 Q3": 8,
+        "Part 1 Q4": 8,
+        "Part 1 Q5": 8,
+        "Part 1 Q6": 8,
+        "Part 1 Q7": 8,
+        "Part 1 Q8": 8,
+        "Part 1 Q9": 8,
+        "Part 2 Q10A": 20,
+        "Part 2 Q10B": 30,
+        "Part 2 Q10C": 30,
+        "Part 2 Q11A": 20,
+        "Part 2 Q11B": 30,
+        "Part 2 Q11C": 30,
+        "Part 2 Q12A": 20,
+        "Part 2 Q12B": 30,
+        "Part 2 Q12C": 30,
+        "Part 2 Q13": 80,
+        "Part 2 Q14": 80,
+        "Part 2 Q15": 80,
+        "Part 2 Q16": 80,
+        "Part 2 Q17": 80,
+        "Part 2 Q18": 80,
+        "Part 2 Q19": 80,
+        "Part 2 Q1A": 20,
+        "Part 2 Q1B": 30,
+        "Part 2 Q1C": 30,
+        "Part 2 Q20": 80,
+        "Part 2 Q21": 80,
+        "Part 2 Q22": 80,
+        "Part 2 Q23": 80,
+        "Part 2 Q24": 80,
+        "Part 2 Q2A": 20,
+        "Part 2 Q2B": 30,
+        "Part 2 Q2C": 30,
+        "Part 2 Q3A": 20,
+        "Part 2 Q3B": 30,
+        "Part 2 Q3C": 30,
+        "Part 2 Q4A": 20,
+        "Part 2 Q4B": 30,
+        "Part 2 Q4C": 30,
+        "Part 2 Q5A": 20,
+        "Part 2 Q5B": 30,
+        "Part 2 Q5C": 30,
+        "Part 2 Q6A": 20,
+        "Part 2 Q6B": 30,
+        "Part 2 Q6C": 30,
+        "Part 2 Q7A": 20,
+        "Part 2 Q7B": 30,
+        "Part 2 Q7C": 30,
+        "Part 2 Q8A": 20,
+        "Part 2 Q8B": 30,
+        "Part 2 Q8C": 30,
+        "Part 2 Q9A": 20,
+        "Part 2 Q9B": 30,
+        "Part 2 Q9C": 30
+      },
+      "taskCount": 106,
+      "cardCount": 110,
+      "legacyIds": [],
+      "addedIds": [
+        "geography-2012-hl-p1-q1",
+        "geography-2012-hl-p1-q10",
+        "geography-2012-hl-p1-q11",
+        "geography-2012-hl-p1-q11-ii",
+        "geography-2012-hl-p1-q11-iii",
+        "geography-2012-hl-p1-q11-iv",
+        "geography-2012-hl-p1-q12",
+        "geography-2012-hl-p1-q12-ii",
+        "geography-2012-hl-p1-q12-iii",
+        "geography-2012-hl-p1-q12-iv",
+        "geography-2012-hl-p1-q2",
+        "geography-2012-hl-p1-q2-ii",
+        "geography-2012-hl-p1-q3",
+        "geography-2012-hl-p1-q3-ii",
+        "geography-2012-hl-p1-q3-iii",
+        "geography-2012-hl-p1-q3-iv",
+        "geography-2012-hl-p1-q4",
+        "geography-2012-hl-p1-q5",
+        "geography-2012-hl-p1-q5-ii",
+        "geography-2012-hl-p1-q5-iii",
+        "geography-2012-hl-p1-q5-iv",
+        "geography-2012-hl-p1-q6",
+        "geography-2012-hl-p1-q6-ii",
+        "geography-2012-hl-p1-q7",
+        "geography-2012-hl-p1-q8",
+        "geography-2012-hl-p1-q8-ii",
+        "geography-2012-hl-p1-q8-iii",
+        "geography-2012-hl-p1-q8-iv",
+        "geography-2012-hl-p1-q9",
+        "geography-2012-hl-p1-q9-ii",
+        "geography-2012-hl-p1-q9-iii",
+        "geography-2012-hl-p1-q9-iv",
+        "geography-2012-hl-p2-q10a",
+        "geography-2012-hl-p2-q10b",
+        "geography-2012-hl-p2-q10c",
+        "geography-2012-hl-p2-q11a",
+        "geography-2012-hl-p2-q11a-ii",
+        "geography-2012-hl-p2-q11a-iii",
+        "geography-2012-hl-p2-q11a-iv",
+        "geography-2012-hl-p2-q11a-v",
+        "geography-2012-hl-p2-q11b",
+        "geography-2012-hl-p2-q11c",
+        "geography-2012-hl-p2-q12a",
+        "geography-2012-hl-p2-q12a-ii",
+        "geography-2012-hl-p2-q12b",
+        "geography-2012-hl-p2-q12c",
+        "geography-2012-hl-p2-q13",
+        "geography-2012-hl-p2-q14",
+        "geography-2012-hl-p2-q15",
+        "geography-2012-hl-p2-q16",
+        "geography-2012-hl-p2-q17",
+        "geography-2012-hl-p2-q18",
+        "geography-2012-hl-p2-q19",
+        "geography-2012-hl-p2-q1a",
+        "geography-2012-hl-p2-q1b",
+        "geography-2012-hl-p2-q1c",
+        "geography-2012-hl-p2-q20",
+        "geography-2012-hl-p2-q21",
+        "geography-2012-hl-p2-q22",
+        "geography-2012-hl-p2-q23",
+        "geography-2012-hl-p2-q24",
+        "geography-2012-hl-p2-q2a",
+        "geography-2012-hl-p2-q2a-ii",
+        "geography-2012-hl-p2-q2a-iii",
+        "geography-2012-hl-p2-q2a-iv",
+        "geography-2012-hl-p2-q2a-v",
+        "geography-2012-hl-p2-q2b-route-i",
+        "geography-2012-hl-p2-q2b-route-ii",
+        "geography-2012-hl-p2-q2c-coastal-processes",
+        "geography-2012-hl-p2-q2c-mass-movement-processes",
+        "geography-2012-hl-p2-q2c-river-processes",
+        "geography-2012-hl-p2-q3a",
+        "geography-2012-hl-p2-q3a-ii",
+        "geography-2012-hl-p2-q3a-iii",
+        "geography-2012-hl-p2-q3a-iv",
+        "geography-2012-hl-p2-q3a-v",
+        "geography-2012-hl-p2-q3b",
+        "geography-2012-hl-p2-q3c",
+        "geography-2012-hl-p2-q4a",
+        "geography-2012-hl-p2-q4b",
+        "geography-2012-hl-p2-q4c",
+        "geography-2012-hl-p2-q5a",
+        "geography-2012-hl-p2-q5a-ii",
+        "geography-2012-hl-p2-q5a-iii",
+        "geography-2012-hl-p2-q5a-iv",
+        "geography-2012-hl-p2-q5a-v",
+        "geography-2012-hl-p2-q5b",
+        "geography-2012-hl-p2-q5c",
+        "geography-2012-hl-p2-q6a",
+        "geography-2012-hl-p2-q6a-ii",
+        "geography-2012-hl-p2-q6a-iii",
+        "geography-2012-hl-p2-q6a-iv",
+        "geography-2012-hl-p2-q6a-v",
+        "geography-2012-hl-p2-q6b",
+        "geography-2012-hl-p2-q6c",
+        "geography-2012-hl-p2-q7a",
+        "geography-2012-hl-p2-q7a-ii",
+        "geography-2012-hl-p2-q7a-iii",
+        "geography-2012-hl-p2-q7a-iv",
+        "geography-2012-hl-p2-q7a-v",
+        "geography-2012-hl-p2-q7b",
+        "geography-2012-hl-p2-q7c",
+        "geography-2012-hl-p2-q8a",
+        "geography-2012-hl-p2-q8a-ii",
+        "geography-2012-hl-p2-q8b",
+        "geography-2012-hl-p2-q8c-footloose-industries",
+        "geography-2012-hl-p2-q8c-tourism",
+        "geography-2012-hl-p2-q9a",
+        "geography-2012-hl-p2-q9b",
+        "geography-2012-hl-p2-q9c"
+      ],
+      "idCorrections": [],
+      "aliases": [],
+      "tasks": [
+        {
+          "key": "p1-1",
+          "questionRef": "2012 HL Part 1 Q1",
+          "marks": 8,
+          "paperPage": 2,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Letter A",
+              "maxMarks": 2
+            },
+            {
+              "label": "Letter B",
+              "maxMarks": 2
+            },
+            {
+              "label": "Letter C",
+              "maxMarks": 2
+            },
+            {
+              "label": "Letter D",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-11"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q1"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-i",
+          "questionRef": "2012 HL Part 1 Q2(i)",
+          "marks": 6,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Dry river valley",
+              "maxMarks": 2
+            },
+            {
+              "label": "Dendritic drainage",
+              "maxMarks": 2
+            },
+            {
+              "label": "Swallow hole",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions",
+            "geography-higher-mapwork",
+            "geography-higher-rivers"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q2"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-ii",
+          "questionRef": "2012 HL Part 1 Q2(ii)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Rock",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q2-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-i",
+          "questionRef": "2012 HL Part 1 Q3(i)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q3"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-ii",
+          "questionRef": "2012 HL Part 1 Q3(ii)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q3-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-iii",
+          "questionRef": "2012 HL Part 1 Q3(iii)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q3-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3-iv",
+          "questionRef": "2012 HL Part 1 Q3(iv)",
+          "marks": 2,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q3-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-4",
+          "questionRef": "2012 HL Part 1 Q4",
+          "marks": 8,
+          "paperPage": 5,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Vent",
+              "maxMarks": 1
+            },
+            {
+              "label": "Crater",
+              "maxMarks": 1
+            },
+            {
+              "label": "Ash cloud",
+              "maxMarks": 1
+            },
+            {
+              "label": "Secondary cone / parasitic cone",
+              "maxMarks": 1
+            },
+            {
+              "label": "Lava flow",
+              "maxMarks": 1
+            },
+            {
+              "label": "Magma chamber",
+              "maxMarks": 1
+            },
+            {
+              "label": "Volcanic bombs / lava bombs",
+              "maxMarks": 1
+            },
+            {
+              "label": "Subsidiary vent",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q4"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-i",
+          "questionRef": "2012 HL Part 1 Q5(i)",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Plate boundary",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q5"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-ii",
+          "questionRef": "2012 HL Part 1 Q5(ii)",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Type of plate",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q5-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-iii",
+          "questionRef": "2012 HL Part 1 Q5(iii)",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Process",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q5-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-iv",
+          "questionRef": "2012 HL Part 1 Q5(iv)",
+          "marks": 2,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Part of the mantle",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q5-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-i",
+          "questionRef": "2012 HL Part 1 Q6(i)",
+          "marks": 4,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "The Central Plain of Ireland",
+              "maxMarks": 1
+            },
+            {
+              "label": "Wallonia",
+              "maxMarks": 1
+            },
+            {
+              "label": "Mediterranean",
+              "maxMarks": 1
+            },
+            {
+              "label": "Berlin",
+              "maxMarks": 1
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q6"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-ii",
+          "questionRef": "2012 HL Part 1 Q6(ii)",
+          "marks": 4,
+          "paperPage": 6,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Peripheral region",
+              "maxMarks": 2
+            },
+            {
+              "label": "Administrative region",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q6-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7",
+          "questionRef": "2012 HL Part 1 Q7",
+          "marks": 8,
+          "paperPage": 7,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Incised meander",
+              "maxMarks": 2
+            },
+            {
+              "label": "Landslide",
+              "maxMarks": 2
+            },
+            {
+              "label": "Caldera",
+              "maxMarks": 2
+            },
+            {
+              "label": "Limestone pavement",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes",
+            "geography-higher-karst-regions",
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q7"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-i",
+          "questionRef": "2012 HL Part 1 Q8(i)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Artificial waterway",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q8"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-ii",
+          "questionRef": "2012 HL Part 1 Q8(ii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Two antiquities",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q8-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iii",
+          "questionRef": "2012 HL Part 1 Q8(iii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Feature",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q8-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8-iv",
+          "questionRef": "2012 HL Part 1 Q8(iv)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Direction",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-11"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q8-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-i",
+          "questionRef": "2012 HL Part 1 Q9(i)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "True or false",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q9"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-ii",
+          "questionRef": "2012 HL Part 1 Q9(ii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Direction",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q9-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-iii",
+          "questionRef": "2012 HL Part 1 Q9(iii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "River",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q9-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-iv",
+          "questionRef": "2012 HL Part 1 Q9(iv)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Grid reference",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q9-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10",
+          "questionRef": "2012 HL Part 1 Q10",
+          "marks": 8,
+          "paperPage": 9,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "The Aswan Dam",
+              "maxMarks": 2
+            },
+            {
+              "label": "A Hurricane",
+              "maxMarks": 2
+            },
+            {
+              "label": "A recent lava flow",
+              "maxMarks": 2
+            },
+            {
+              "label": "Coastal sediments",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q10"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-i",
+          "questionRef": "2012 HL Part 1 Q11(i)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Percentage change",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q11"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-ii",
+          "questionRef": "2012 HL Part 1 Q11(ii)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Regional authority area",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q11-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iii",
+          "questionRef": "2012 HL Part 1 Q11(iii)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "X",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q11-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11-iv",
+          "questionRef": "2012 HL Part 1 Q11(iv)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q11-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-i",
+          "questionRef": "2012 HL Part 1 Q12(i)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Country",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q12"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-ii",
+          "questionRef": "2012 HL Part 1 Q12(ii)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Country",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q12-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-iii",
+          "questionRef": "2012 HL Part 1 Q12(iii)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Country",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q12-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-iv",
+          "questionRef": "2012 HL Part 1 Q12(iv)",
+          "marks": 2,
+          "paperPage": 11,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-environmental-impact",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p1-q12-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a",
+          "questionRef": "2012 HL Part 2 Q1A",
+          "marks": 20,
+          "paperPage": 14,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Proportion + frame",
+              "maxMarks": 4
+            },
+            {
+              "label": "The complete course of the largest river",
+              "maxMarks": 4
+            },
+            {
+              "label": "The tributary river in the left background",
+              "maxMarks": 4
+            },
+            {
+              "label": "Locate the confluence and mark it with an X on the sketch map",
+              "maxMarks": 4
+            },
+            {
+              "label": "A drumlin.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-glaciation",
+            "geography-higher-rivers"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q1a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1b",
+          "questionRef": "2012 HL Part 2 Q1B",
+          "marks": 30,
+          "paperPage": 14,
+          "schemePages": [
+            7
+          ],
+          "criteria": [
+            {
+              "label": "Name one sedimentary rock",
+              "maxMarks": 2
+            },
+            {
+              "label": "Name the metamorphic rock",
+              "maxMarks": 2
+            },
+            {
+              "label": "Formation of sedimentary rock",
+              "maxMarks": 22
+            },
+            {
+              "label": "Formation of metamorphic rock",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q1b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1c",
+          "questionRef": "2012 HL Part 2 Q1C",
+          "marks": 30,
+          "paperPage": 14,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Global examples/locations of earthquakes",
+              "maxMarks": 4
+            },
+            {
+              "label": "Discussion",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes",
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q1c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-i",
+          "questionRef": "2012 HL Part 2 Q2A(i)",
+          "marks": 4,
+          "paperPage": 15,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "X",
+              "maxMarks": 2
+            },
+            {
+              "label": "Y",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q2a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-ii",
+          "questionRef": "2012 HL Part 2 Q2A(ii)",
+          "marks": 2,
+          "paperPage": 15,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Average annual movement",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q2a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-iii",
+          "questionRef": "2012 HL Part 2 Q2A(iii)",
+          "marks": 4,
+          "paperPage": 15,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q2a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-iv",
+          "questionRef": "2012 HL Part 2 Q2A(iv)",
+          "marks": 6,
+          "paperPage": 15,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Effect named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q2a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2a-v",
+          "questionRef": "2012 HL Part 2 Q2A(v)",
+          "marks": 4,
+          "paperPage": 15,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Two scales",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q2a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b",
+          "questionRef": "2012 HL Part 2 Q2B",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Named landform",
+              "maxMarks": 2
+            },
+            {
+              "label": "Labelled diagram",
+              "maxMarks": 4
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-0-4",
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-glaciation",
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q2b-route-i",
+            "geography-2012-hl-p2-q2b-route-ii"
+          ],
+          "routes": [
+            "Route (i)",
+            "Route (ii)"
+          ]
+        },
+        {
+          "key": "p2-2c",
+          "questionRef": "2012 HL Part 2 Q2C",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Human activity identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Named example",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rivers",
+            "geography-higher-rocks-weathering-mass-movement",
+            "geography-higher-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q2c-river-processes",
+            "geography-2012-hl-p2-q2c-coastal-processes",
+            "geography-2012-hl-p2-q2c-mass-movement-processes"
+          ],
+          "routes": [
+            "river processes",
+            "coastal processes",
+            "mass movement processes"
+          ]
+        },
+        {
+          "key": "p2-3a-i",
+          "questionRef": "2012 HL Part 2 Q3A(i)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Category of rock at A",
+              "maxMarks": 2
+            },
+            {
+              "label": "Example",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q3a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-ii",
+          "questionRef": "2012 HL Part 2 Q3A(ii)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Category of rock at B",
+              "maxMarks": 2
+            },
+            {
+              "label": "Example",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q3a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iii",
+          "questionRef": "2012 HL Part 2 Q3A(iii)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Example",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q3a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-iv",
+          "questionRef": "2012 HL Part 2 Q3A(iv)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Example",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q3a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-v",
+          "questionRef": "2012 HL Part 2 Q3A(v)",
+          "marks": 4,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q3a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b",
+          "questionRef": "2012 HL Part 2 Q3B",
+          "marks": 30,
+          "paperPage": 16,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Named process",
+              "maxMarks": 2
+            },
+            {
+              "label": "Labelled diagram(s)",
+              "maxMarks": 4
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-karst-regions",
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q3b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3c",
+          "questionRef": "2012 HL Part 2 Q3C",
+          "marks": 30,
+          "paperPage": 16,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Examples",
+              "maxMarks": 4
+            },
+            {
+              "label": "Discussion",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-0-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-plate-tectonics",
+            "geography-higher-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q3c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4a",
+          "questionRef": "2012 HL Part 2 Q4A",
+          "marks": 20,
+          "paperPage": 17,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Map outline",
+              "maxMarks": 4
+            },
+            {
+              "label": "A named feature of relief",
+              "maxMarks": 4
+            },
+            {
+              "label": "A named river",
+              "maxMarks": 4
+            },
+            {
+              "label": "A named urban centre",
+              "maxMarks": 4
+            },
+            {
+              "label": "A major road or rail link.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q4a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b",
+          "questionRef": "2012 HL Part 2 Q4B",
+          "marks": 30,
+          "paperPage": 17,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Discussion of Factor 1",
+              "maxMarks": 16
+            },
+            {
+              "label": "Discussion of Factor 2",
+              "maxMarks": 14
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q4b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4c",
+          "questionRef": "2012 HL Part 2 Q4C",
+          "marks": 30,
+          "paperPage": 17,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Examination",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q4c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-i",
+          "questionRef": "2012 HL Part 2 Q5A(i)",
+          "marks": 4,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "X",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q5a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-ii",
+          "questionRef": "2012 HL Part 2 Q5A(ii)",
+          "marks": 4,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Species",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q5a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iii",
+          "questionRef": "2012 HL Part 2 Q5A(iii)",
+          "marks": 4,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Increase",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q5a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iv",
+          "questionRef": "2012 HL Part 2 Q5A(iv)",
+          "marks": 4,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Advantage",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q5a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-v",
+          "questionRef": "2012 HL Part 2 Q5A(v)",
+          "marks": 4,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Challenge",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q5a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5b",
+          "questionRef": "2012 HL Part 2 Q5B",
+          "marks": 30,
+          "paperPage": 18,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Named specific locations",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental",
+            "geography-higher-regions-european",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q5b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5c",
+          "questionRef": "2012 HL Part 2 Q5C",
+          "marks": 30,
+          "paperPage": 18,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Urban area named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factor 1 examination",
+              "maxMarks": 14
+            },
+            {
+              "label": "Factor 2 examination",
+              "maxMarks": 14
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q5c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-i",
+          "questionRef": "2012 HL Part 2 Q6A(i)",
+          "marks": 4,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Number of countries",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q6a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-ii",
+          "questionRef": "2012 HL Part 2 Q6A(ii)",
+          "marks": 4,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Difference",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-european",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q6a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iii",
+          "questionRef": "2012 HL Part 2 Q6A(iii)",
+          "marks": 4,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Two founding member states",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-european-union",
+            "geography-higher-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q6a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-iv",
+          "questionRef": "2012 HL Part 2 Q6A(iv)",
+          "marks": 4,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Two member states",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-european-union",
+            "geography-higher-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q6a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a-v",
+          "questionRef": "2012 HL Part 2 Q6A(v)",
+          "marks": 4,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-european-union",
+            "geography-higher-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q6a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b",
+          "questionRef": "2012 HL Part 2 Q6B",
+          "marks": 30,
+          "paperPage": 19,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Named tertiary economic activity",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factors",
+              "maxMarks": 4
+            },
+            {
+              "label": "Discussion",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q6b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6c",
+          "questionRef": "2012 HL Part 2 Q6C",
+          "marks": 30,
+          "paperPage": 19,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Factor 1 impact",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factor 1 examination",
+              "maxMarks": 14
+            },
+            {
+              "label": "Factor 2 impact",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factor 2 examination",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q6c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-i",
+          "questionRef": "2012 HL Part 2 Q7A(i)",
+          "marks": 4,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Highest",
+              "maxMarks": 2
+            },
+            {
+              "label": "Lowest",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-ii",
+          "questionRef": "2012 HL Part 2 Q7A(ii)",
+          "marks": 4,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "X",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-iii",
+          "questionRef": "2012 HL Part 2 Q7A(iii)",
+          "marks": 4,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-energy",
+            "geography-higher-economic-environmental-impact"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-iv",
+          "questionRef": "2012 HL Part 2 Q7A(iv)",
+          "marks": 4,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Two greenhouse gases",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-environmental-impact"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-v",
+          "questionRef": "2012 HL Part 2 Q7A(v)",
+          "marks": 4,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Two impacts",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-environmental-impact"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7b",
+          "questionRef": "2012 HL Part 2 Q7B",
+          "marks": 30,
+          "paperPage": 21,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Factor 1",
+              "maxMarks": 10
+            },
+            {
+              "label": "Factor 2",
+              "maxMarks": 10
+            },
+            {
+              "label": "Factor 3",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-elective-economic",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q7b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c",
+          "questionRef": "2012 HL Part 2 Q7C",
+          "marks": 30,
+          "paperPage": 21,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Influence named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-european-union",
+            "geography-higher-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q7c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-i",
+          "questionRef": "2012 HL Part 2 Q8A(i)",
+          "marks": 16,
+          "paperPage": 22,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Title",
+              "maxMarks": 2
+            },
+            {
+              "label": "Axes (bar chart) / circle and centre (pie chart)",
+              "maxMarks": 2
+            },
+            {
+              "label": "6 items illustrated",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q8a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a-ii",
+          "questionRef": "2012 HL Part 2 Q8A(ii)",
+          "marks": 4,
+          "paperPage": 22,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Two other sources",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-energy"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q8a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b",
+          "questionRef": "2012 HL Part 2 Q8B",
+          "marks": 30,
+          "paperPage": 22,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Positive impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Negative impact identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Naming developing economy",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-3-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-developing-economies"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q8b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8c",
+          "questionRef": "2012 HL Part 2 Q8C",
+          "marks": 30,
+          "paperPage": 22,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Footloose industry named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Developed economy named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Factors",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 22
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-elective-economic"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q8c-footloose-industries",
+            "geography-2012-hl-p2-q8c-tourism"
+          ],
+          "routes": [
+            "footloose industries",
+            "tourism"
+          ]
+        },
+        {
+          "key": "p2-9a",
+          "questionRef": "2012 HL Part 2 Q9A",
+          "marks": 20,
+          "paperPage": 23,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Proportion + frame",
+              "maxMarks": 4
+            },
+            {
+              "label": "A large building under construction",
+              "maxMarks": 4
+            },
+            {
+              "label": "The bridge",
+              "maxMarks": 4
+            },
+            {
+              "label": "A large car park in the centre foreground",
+              "maxMarks": 4
+            },
+            {
+              "label": "An industrial area in the background.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-elective-economic"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q9a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b",
+          "questionRef": "2012 HL Part 2 Q9B",
+          "marks": 30,
+          "paperPage": 23,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Named MNC",
+              "maxMarks": 2
+            },
+            {
+              "label": "Corporate strategy named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q9b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9c",
+          "questionRef": "2012 HL Part 2 Q9C",
+          "marks": 30,
+          "paperPage": 23,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Conflict identified",
+              "maxMarks": 2
+            },
+            {
+              "label": "Reference to example",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q9c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a",
+          "questionRef": "2012 HL Part 2 Q10A",
+          "marks": 20,
+          "paperPage": 24,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Proportion + frame",
+              "maxMarks": 4
+            },
+            {
+              "label": "Two connecting roads / streets",
+              "maxMarks": 4
+            },
+            {
+              "label": "The Fair Green",
+              "maxMarks": 4
+            },
+            {
+              "label": "The school",
+              "maxMarks": 4
+            },
+            {
+              "label": "An administrative building.",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q10a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10b",
+          "questionRef": "2012 HL Part 2 Q10B",
+          "marks": 30,
+          "paperPage": 24,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Example named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 28
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q10b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c",
+          "questionRef": "2012 HL Part 2 Q10C",
+          "marks": 30,
+          "paperPage": 25,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Change 1",
+              "maxMarks": 10
+            },
+            {
+              "label": "Change 2",
+              "maxMarks": 10
+            },
+            {
+              "label": "Change 3",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q10c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-i",
+          "questionRef": "2012 HL Part 2 Q11A(i)",
+          "marks": 4,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Number of vehicles",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-ii",
+          "questionRef": "2012 HL Part 2 Q11A(ii)",
+          "marks": 4,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Percentage decrease",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-iii",
+          "questionRef": "2012 HL Part 2 Q11A(iii)",
+          "marks": 4,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography",
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-iv",
+          "questionRef": "2012 HL Part 2 Q11A(iv)",
+          "marks": 4,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Two causes",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-v",
+          "questionRef": "2012 HL Part 2 Q11A(v)",
+          "marks": 4,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b",
+          "questionRef": "2012 HL Part 2 Q11B",
+          "marks": 30,
+          "paperPage": 26,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Function 1",
+              "maxMarks": 10
+            },
+            {
+              "label": "Function 2",
+              "maxMarks": 10
+            },
+            {
+              "label": "Function 3",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-aerial-photos",
+            "geography-higher-human-urban-geography"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q11b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c",
+          "questionRef": "2012 HL Part 2 Q11C",
+          "marks": 30,
+          "paperPage": 26,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Examples of improvements in technology",
+              "maxMarks": 4
+            },
+            {
+              "label": "Impacts named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 22
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q11c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-i",
+          "questionRef": "2012 HL Part 2 Q12A(i)",
+          "marks": 16,
+          "paperPage": 27,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Title",
+              "maxMarks": 2
+            },
+            {
+              "label": "Axes (bar chart) / circle and centre (pie chart)",
+              "maxMarks": 2
+            },
+            {
+              "label": "6 items illustrated",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-tablesgraphs-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q12a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a-ii",
+          "questionRef": "2012 HL Part 2 Q12A(ii)",
+          "marks": 4,
+          "paperPage": 27,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Two reasons",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q12a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b",
+          "questionRef": "2012 HL Part 2 Q12B",
+          "marks": 30,
+          "paperPage": 27,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Map evidence",
+              "maxMarks": 4
+            },
+            {
+              "label": "Features of distribution",
+              "maxMarks": 4
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 22
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-population",
+            "geography-higher-human-urban-geography",
+            "geography-higher-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2012-hl-p2-q12b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12c",
+          "questionRef": "2012 HL Part 2 Q12C",
+          "marks": 30,
+          "paperPage": 27,
+          "schemePages": [
+            32
+          ],
+          "criteria": [
+            {
+              "label": "Land use patterns identified",
+              "maxMarks": 4
+            },
+            {
+              "label": "Named urban area",
+              "maxMarks": 2
+            },
+            {
+              "label": "Examination",
+              "maxMarks": 24
+            }
+          ],
+          "topicIds": [
+            "geography-4-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-human-urban-geography",
+            "geography-higher-urban-land-uses"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q12c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-13",
+          "questionRef": "2012 HL Part 2 Q13",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            34
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-5-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q13"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-14",
+          "questionRef": "2012 HL Part 2 Q14",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            34
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-5-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q14"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-15",
+          "questionRef": "2012 HL Part 2 Q15",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            35
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-5-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-global-interdependence"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q15"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-16",
+          "questionRef": "2012 HL Part 2 Q16",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-6-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q16"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-17",
+          "questionRef": "2012 HL Part 2 Q17",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            36
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-6-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q17"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-18",
+          "questionRef": "2012 HL Part 2 Q18",
+          "marks": 80,
+          "paperPage": 29,
+          "schemePages": [
+            37
+          ],
+          "criteria": [
+            {
+              "label": "Aspect 1 (identifying 4 + discussion 8 x SRPs + coherence 7)",
+              "maxMarks": 27
+            },
+            {
+              "label": "Aspect 2 (identifying 4 + discussion 8 x SRPs + coherence 7)",
+              "maxMarks": 27
+            },
+            {
+              "label": "Aspect 3 (identifying 4 + discussion 8 x SRPs + coherence 6)",
+              "maxMarks": 26
+            }
+          ],
+          "topicIds": [
+            "geography-6-3"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-geoecology"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q18"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-19",
+          "questionRef": "2012 HL Part 2 Q19",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            38
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-7-1"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q19"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-20",
+          "questionRef": "2012 HL Part 2 Q20",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            38
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-7-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q20"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-21",
+          "questionRef": "2012 HL Part 2 Q21",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            39
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-7-0"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-culture-identity"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q21"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-22",
+          "questionRef": "2012 HL Part 2 Q22",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            40
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-8-4"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q22"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-23",
+          "questionRef": "2012 HL Part 2 Q23",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            40
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-8-5"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q23"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-24",
+          "questionRef": "2012 HL Part 2 Q24",
+          "marks": 80,
+          "paperPage": 30,
+          "schemePages": [
+            41
+          ],
+          "criteria": [
+            {
+              "label": "Aspects identified and overall coherence (3 aspects: 4 + 7/6 marks each; 4 aspects: 4 + 4 marks each)",
+              "maxMarks": 32
+            },
+            {
+              "label": "Discussion (3 aspects @ 8 x SRPs or 4 aspects @ 6 x SRPs)",
+              "maxMarks": 48
+            }
+          ],
+          "topicIds": [
+            "geography-8-2"
+          ],
+          "atlasTopicIds": [
+            "geography-higher-option-atmosphere-ocean"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2012-hl-p2-q24"
+          ],
+          "routes": []
+        }
+      ],
+      "rule": "Independent review ledger: Leaving Certificate Geography 2012 Higher Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005ALP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005ALP000EV (48 pages), and the common\nCarrick-on-Shannon companions as Paper Trail files them — the 1:50 000 map\nLC005CLP003EV, its legend LC005CLPC00EV and the aerial photograph\nLC005CLP004EV (each a one-page PDF holding one image). Part One is 80 marks\n(any ten of twelve @ 8), Part Two 320 (four questions @ 80).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p11 Part One Questions 1-12 (p6\n  holds Q5 and Q6, p8 Q8 and Q9; Q2 prints an OS map extract, Q1 and Q7\n  photographs, Q10 satellite images); p12 Part Two instructions; p13\n  Section 1 divider; p14-p19 Q1-Q6 (p14 and p17 open with their dividers);\n  p20 Section 2 divider; p21-p27 Electives Q7-Q12 (p21 and p24 open with\n  their elective dividers; p24 holds 10A, its historical map of\n  Carrick-on-Shannon, and 10B; p25 10C and its population graph); p28\n  Section 3 divider and option note; p29-p30 Options Q13-Q24; p31-p32\n  printed \"Blank Page\".\n  Scheme p1 cover; p2 blank; p3 note on marking schemes; p4 Part One table\n  (a centred tariff heading, then two columns: Q1-Q6, Q7-Q12; the answer\n  lines print no marks); p5 Part Two instructions; p6 Section 1 divider;\n  p7-p13 Q1-Q3 (p7 opens with its divider); p14-p19 Q4-Q6 (p14 opens with\n  its divider); p20 Section 2 divider; p21-p25 Q7-Q9; p26-p32 Q10-Q12 (p21\n  and p26 open with their dividers); p33 Section 3 divider and option note;\n  p34-p41 Q13-Q24; p42 Geographical Investigation (coursework); p43 its\n  presentation marks; p44 investigation topics; p45 Irish-language bonus\n  marks; p46 blank but for its page footer; p47 blank; p48 back cover. The\n  scheme reprints each Part Two question above its allocation; every slice\n  starts at the allocation.\n  Companions: Carrick-on-Shannon map extract (the River Shannon, Lough\n  Eidin, Jamestown Canal, Drumsna, the N4); OS Discovery Series legend\n  sheet; oblique aerial photograph of Carrick-on-Shannon (the Shannon, the\n  bridge and marina, a cleared building site, car parks).\n\nPart One prices every question in one heading, printed as two lines under\n\"Each question:\": \"4 parts @ 2 marks each\" and \"8 parts @ 1 mark each\".\nEvery Part One card carries the heading line that prices it with its answer\nlines: Q4 (eight letters), Q6(i) (four letters) and Q7 (four letters and\nfour processes) are priced at one mark per answer, the rest at two marks a\npart. Q6(ii) prints its own \"Two definitions @ 2marks each\", which leaves\nfour marks for the four letters of Q6(i). Q11(iv) prints \"Valid reason\n1+1\". Q12(iv) prints \"Accept all answers for 2 marks\": that line is its\nguidance. Q8(ii) asks for two antiquities in one two-mark part; the scheme\nprints no split, so it is awarded whole (0 or 2). Q12 prints\nits tariff as \"[8]\". Matching tables, in the printed row order: Q1 A\nLateral moraine, B Arête, C Pyramidal peak, D Corrie/Coom/Cirque; Q2(i) Dry\nriver valley A, Dendritic drainage C, Swallow hole B; Q4 Vent G, Crater C,\nAsh cloud B, Secondary cone H, Lava flow A, Magma chamber E, Volcanic bombs\nD, Subsidiary vent F; Q6(i) The Central Plain of Ireland C, Wallonia D,\nMediterranean A, Berlin B; Q7 Incised meander D Tectonic uplift, Landslide\nB Mass movement, Caldera A Volcanic activity, Limestone pavement C\nChemical weathering; Q10 The Aswan Dam D, A Hurricane C, A recent lava flow\nA, Coastal sediments B. Q7 answers each printed row twice (a letter and a\nprocess) and is one card of two-mark rows.\n\nPart Two prices 2A unevenly but to the printed 20: (ii) \"55 mm 2 marks\" and\n(iv) \"Tsunami 4 marks\" with \"Any valid explanation 2 marks\".\n\nThe options print no Overall Coherence table: coherence is graded inside\neach aspect (\"Number of aspects: 3 @ 27 + 27 + 26 / 4 @ 20 marks each\",\n\"Identifying aspect: 4 marks / 4 marks\", \"Discussion: 8 x SRPs OR 6 x\nSRPs\", \"Overall coherence: 7/6 marks graded / 4 marks graded\"). Either way\nthe discussion is 24 SRPs (3 x 8 or 4 x 6), 48 marks, and identifying plus\ncoherence is 32 (3 x 4 + 7 + 7 + 6, or 4 x 4 + 4 x 4), so each option card\nprices those two criteria. Option 18 prints only the three-aspect scheme\nand is priced per aspect, 27 + 27 + 26.\n\nPrinted choices: 2B (i) or (ii) is two routes; 2C \"either river, coastal or\nmass movement processes\" is three routes; 8C \"footloose industries or\ntourism\" is two routes, each with its own printed allocation. 4B and 5C\n(any two of three listed factors), 6C (any two of five human processes) and\noption 18 (any three of four activities) are pools, one card each. 11B's\n\"any three different functions\" prints no pool and stays open."
+    },
+    {
       "year": 2013,
       "level": "higher",
       "lang": "ev",
