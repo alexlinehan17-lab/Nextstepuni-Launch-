@@ -903,5 +903,60 @@ class EnglishPrintedLabelsTest(unittest.TestCase):
         self.assertEqual(scheme(2020, '6'), {'p': 30, 'r': [0.0, 0.0889, 1.0, 1.0]})
 
 
+class EnglishPaperTextRepairsTest(unittest.TestCase):
+    """A whole-page text repair may only restore the paper's own wording (2026-10-23).
+
+    The 2011 OL Paper 2 text layer prints overlapping duplicate glyph runs
+    ("Selecct", "ffrrom", "(110)"), so its question wording is stored in
+    english-paper-text-repairs.json. Rebuilding each page from its own glyphs
+    (rows by baseline, ordered by x, a glyph dropped only when it repeats the
+    previous character at an overlapping position) must reproduce every stored
+    line, so the stored wording can never drift from what the paper prints.
+    """
+
+    # Composed from the printed title above the poem and the byline below it;
+    # it names the source and is not question wording.
+    SOURCE_HEADINGS = {'A Room in the Past — Ted Kooser'}
+
+    @staticmethod
+    def glyph_text(page):
+        import re
+        import unicodedata
+        rows = {}
+        for block in page.get_text('rawdict')['blocks']:
+            for line in block.get('lines', []):
+                for span in line['spans']:
+                    for char in span['chars']:
+                        rows.setdefault(round(char['origin'][1]), []).append((char['bbox'][0], char['bbox'][2], char['c']))
+        text = []
+        for y in sorted(rows):
+            kept = []
+            for x0, x1, c in sorted(rows[y]):
+                if kept and c == kept[-1][2] and c != ' ' and x0 < kept[-1][0] + (kept[-1][1] - kept[-1][0]) * .45:
+                    continue
+                kept.append((x0, x1, c))
+            text.append(''.join(c for _, _, c in kept))
+        return re.sub(r'\s+', '', unicodedata.normalize('NFKC', ' '.join(text)))
+
+    def test_2011_ordinary_paper_two_repair_is_the_papers_own_glyphs(self):
+        import re
+        import unicodedata
+        import fitz
+        repairs = json.loads((ROOT / 'scripts/markbank/authored/english-paper-text-repairs.json').read_text())
+        repair = next(r for r in repairs if r['source'].endswith('2011/LC002GLP200EV.pdf'))
+        doc = fitz.open(ROOT / repair['source'])
+        checked = 0
+        for page, text in repair['pages'].items():
+            printed = self.glyph_text(doc[int(page) - 1])
+            for line in text.splitlines():
+                if line in self.SOURCE_HEADINGS:
+                    continue
+                self.assertIn(re.sub(r'\s+', '', unicodedata.normalize('NFKC', line)), printed, f'PDF{page}: {line}')
+                checked += 1
+        self.assertEqual(checked, 55)
+        # The rebuild must not pass a line the paper does not print.
+        self.assertNotIn('Selectalineorphrasefromthispoemthatyoufindmoving', self.glyph_text(doc[9]))
+
+
 if __name__ == '__main__':
     unittest.main()
