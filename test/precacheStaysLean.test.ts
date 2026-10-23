@@ -25,10 +25,13 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 
+// The list lives in PRECACHE_IGNORES so bootPrecacheGuard() can check the
+// app shell against the same patterns the worker is given.
 function globIgnores(): string[] {
   const config = readFileSync('vite.config.ts', 'utf8');
-  const block = config.match(/globIgnores:\s*\[([\s\S]*?)\]/);
-  expect(block, 'globIgnores block not found in vite.config.ts').toBeTruthy();
+  expect(config, 'workbox globIgnores no longer reads PRECACHE_IGNORES').toMatch(/globIgnores:\s*PRECACHE_IGNORES\b/);
+  const block = config.match(/const PRECACHE_IGNORES = \[([\s\S]*?)\];/);
+  expect(block, 'PRECACHE_IGNORES not found in vite.config.ts').toBeTruthy();
   return [...block![1].matchAll(/'([^']+)'/g)].map(m => m[1]);
 }
 
