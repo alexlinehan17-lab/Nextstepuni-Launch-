@@ -61,22 +61,24 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
     // Higher 104, 2013 Ordinary 95, 2012 Higher 106, 2012 Ordinary 108 and
     // 2011 Higher 96 (94 carded; 2(i) and 2(iii) need the never-published
     // legend) and 2011 Ordinary 119 (116 carded; Part One 11(i) and the 1A and
-    // 7A sketches need it): 3,668 base tasks, 3,662 carded.
-    expect(census.paperBaseTasks).toBe(3668);
-    expect(census.includedBaseTasks).toBe(3662);
+    // 7A sketches need it), and 2010 Higher 99: 3,767 base tasks, 3,761
+    // carded.
+    expect(census.paperBaseTasks).toBe(3767);
+    expect(census.includedBaseTasks).toBe(3761);
     expect(census.excludedBaseTasks).toBe(6);
     expect(census.includedBaseTasks + census.excludedBaseTasks)
       .toBe(census.paperBaseTasks);
-    expect(census.authoredCards).toBe(3927);
-    expect(census.baseTasks).toHaveLength(3668);
-    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3662);
+    expect(census.authoredCards).toBe(4033);
+    expect(census.baseTasks).toHaveLength(3767);
+    expect(census.baseTasks.filter(task => task.status === 'authored')).toHaveLength(3761);
     expect(census.baseTasks.filter(task => task.status === 'excluded')).toHaveLength(6);
     expect(EXCLUSIONS.map(row => `${row.year} ${levelRef(row.level)} Part ${row.part} Q${row.questionRef}`))
       .toEqual(['2011 HL Part 1 Q2(i)', '2011 HL Part 1 Q2(iii)', '2011 OL Part 1 Q11(i)',
         '2011 OL Part 2 Q1A', '2011 OL Part 2 Q7A', '2020 OL Part 2 Q9C']);
-    expect(census.sittings).toHaveLength(32);
+    expect(census.sittings).toHaveLength(33);
 
     const expected = {
+      '2010-higher': 106,
       '2011-higher': 99, '2011-ordinary': 130,
       '2012-higher': 110, '2012-ordinary': 115,
       '2013-higher': 111, '2013-ordinary': 102,
@@ -102,11 +104,11 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('maps the generated manifest one-to-one to the live decks', () => {
-    expect(HIGHER).toHaveLength(1899);
+    expect(HIGHER).toHaveLength(2005);
     expect(ORDINARY).toHaveLength(2028);
-    expect(ALL).toHaveLength(3927);
-    expect(authored.meta.cardCount).toBe(3927);
-    expect(new Set(ALL.map(card => card.id)).size).toBe(3927);
+    expect(ALL).toHaveLength(4033);
+    expect(authored.meta.cardCount).toBe(4033);
+    expect(new Set(ALL.map(card => card.id)).size).toBe(4033);
     expect(ALL.map(card => card.id).sort())
       .toEqual(authored.cards.map(card => card.id).sort());
 
@@ -124,11 +126,11 @@ describe('complete answerable Geography corpus, 2021–2026 and each reviewed ea
   });
 
   it('expands every closed choose-one route and keeps every choose-N pool as one card', () => {
-    // 142 printed choose-one / (i)-or-(ii) routings; 84 choose-N-of-M pools
+    // 146 printed choose-one / (i)-or-(ii) routings; 84 choose-N-of-M pools
     // (N >= 2), each one card (choice is not a route).
-    expect(census.selectionAudit).toHaveLength(226);
+    expect(census.selectionAudit).toHaveLength(230);
     expect(census.selectionAudit.filter(entry => entry.classification === 'finite-expanded'))
-      .toHaveLength(142);
+      .toHaveLength(146);
     expect(census.selectionAudit.filter(entry => entry.classification === 'single-card-choice'))
       .toHaveLength(84);
     for (const selection of census.selectionAudit) {
@@ -225,8 +227,10 @@ describe('Geography prompt, source and marking integrity', () => {
         .toContain('State Examinations Commission');
       expect(card.sourceMaterial!.presentationNote, card.id)
         .toMatch(/official|exact/i);
+      // Map (003), legend (C00) and aerial (004); 2010's legend sheet is the
+      // common-level JPEG LC005CLP000EV.jpg.
       for (const source of card.additionalSourceMaterials ?? []) {
-        expect(source.sourceFileid, card.id).toMatch(/^LC005CLP(?:C00|003|004)EV(?:\.jpg)?$/);
+        expect(source.sourceFileid, card.id).toMatch(/^LC005CLP(?:C00|000|003|004)EV(?:\.jpg)?$/);
         expect(source.pages, card.id).toEqual([1]);
         expect(source.attribution, card.id).toContain('State Examinations Commission');
       }
@@ -379,7 +383,7 @@ describe('independently reviewed Geography sittings', () => {
   });
 
   it('carries the published allocation line by line on every reviewed card', () => {
-    expect(REVIEWED).toHaveLength(3927);
+    expect(REVIEWED).toHaveLength(4033);
     for (const card of REVIEWED) {
       if (card.rubric.system !== 'geography') throw new Error(`${card.id}: wrong rubric`);
       const { criteria } = card.rubric;
@@ -897,6 +901,42 @@ describe('independently reviewed Geography sittings', () => {
     for (const id of ['geography-2015-hl-p1-q7', 'geography-2015-hl-p1-q8', 'geography-2015-hl-p1-q9',
       'geography-2015-hl-p2-q2a', 'geography-2015-hl-p2-q8a', 'geography-2015-hl-p2-q9b',
       'geography-2015-hl-p2-q10a', 'geography-2015-hl-p2-q11b', 'geography-2015-hl-p2-q12c']) {
+      const card = byId.get(id)!;
+      expect([card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]
+        .some(source => source?.sourceFileid), id).toBe(true);
+    }
+  });
+
+  it('pins the 2010 Higher review: one shared booklet, the Carrick-on-Suir JPEG companions, every priced part', () => {
+    const review = sitting(2010, 'higher');
+    expect(review.taskCount).toBe(99);
+    expect(review.cardCount).toBe(106);
+    expect(Object.keys(review.pageReview.paper1)).toHaveLength(32);
+    expect(review.pageReview.paper2).toEqual(review.pageReview.paper1);
+    expect(Object.keys(review.pageReview.scheme)).toHaveLength(41);
+    expect(review.sources.paper1).toMatchObject({ fileid: 'LC005ALP000EV.pdf', bytes: 3619088 });
+    expect(review.sources.scheme).toMatchObject({ fileid: 'LC005ALP000EV.pdf', bytes: 855544 });
+    // The SEC's 2010 names are swapped relative to later years (checked by eye).
+    expect(review.sources.map).toMatchObject({ fileid: 'LC005CLP004EV.jpg', bytes: 2806497 });
+    expect(review.sources.legend).toMatchObject({ fileid: 'LC005CLP000EV.jpg', bytes: 1636000 });
+    expect(review.sources.aerial).toMatchObject({ fileid: 'LC005CLP003EV.jpg', bytes: 4062934 });
+    expect(review.legacyIds).toEqual([]);
+    expect(review.addedIds).toHaveLength(106);
+    const routed = review.tasks.filter((task: ReviewedTask) => task.routes.length);
+    expect(Object.fromEntries(routed.map((task: ReviewedTask) =>
+      [task.questionRef, task.cards.length]))).toEqual({
+      '2010 HL Part 2 Q1B': 3, '2010 HL Part 2 Q3B': 3, '2010 HL Part 2 Q6B': 3, '2010 HL Part 2 Q20': 2,
+    });
+    // Part One Q9(ii)'s second answer is a lone printed "2", kept by its slice.
+    const q9 = byId.get('geography-2010-hl-p1-q9-ii')!;
+    if (q9.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(q9.rubric.criteria.map(c => c.guidance.at(-1))).toEqual(['(ii) 1', '2']);
+    const option = byId.get('geography-2010-hl-p2-q13')!;
+    if (option.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(option.rubric.criteria.map(c => c.maxMarks)).toEqual([32, 48]);
+    for (const id of ['geography-2010-hl-p1-q2', 'geography-2010-hl-p1-q4', 'geography-2010-hl-p1-q8',
+      'geography-2010-hl-p2-q1a', 'geography-2010-hl-p2-q7b', 'geography-2010-hl-p2-q9a',
+      'geography-2010-hl-p2-q10c', 'geography-2010-hl-p2-q12c']) {
       const card = byId.get(id)!;
       expect([card.sourceMaterial, ...(card.additionalSourceMaterials ?? [])]
         .some(source => source?.sourceFileid), id).toBe(true);
@@ -1516,11 +1556,16 @@ describe('independently reviewed Geography sittings', () => {
     // 2019-2025 aerial photographs (the 2018-2019 maps and the 2018 and 2022 legends) are
     // published by the SEC only as JPEGs; Paper Trail files the 2018 aerial photograph as a PDF.
     const aerial: Record<number, string> = {
-      2011: 'LC005CLP004EV', 2012: 'LC005CLP004EV', 2013: 'LC005CLP004EV', 2014: 'LC005CLP004EV', 2015: 'LC005CLP004EV', 2016: 'LC005CLP004EV', 2017: 'LC005CLP004EV', 2018: 'LC005CLP004EV', 2019: 'LC005CLP004EV.jpg', 2020: 'LC005CLP004EV.jpg', 2021: 'LC005CLP004EV.jpg', 2022: 'LC005CLP004EV.jpg', 2023: 'LC005CLP004EV.jpg',
+      2010: 'LC005CLP003EV.jpg', 2011: 'LC005CLP004EV', 2012: 'LC005CLP004EV', 2013: 'LC005CLP004EV', 2014: 'LC005CLP004EV', 2015: 'LC005CLP004EV', 2016: 'LC005CLP004EV', 2017: 'LC005CLP004EV', 2018: 'LC005CLP004EV', 2019: 'LC005CLP004EV.jpg', 2020: 'LC005CLP004EV.jpg', 2021: 'LC005CLP004EV.jpg', 2022: 'LC005CLP004EV.jpg', 2023: 'LC005CLP004EV.jpg',
       2024: 'LC005CLP004EV.jpg', 2025: 'LC005CLP004EV.jpg', 2026: 'LC005CLP004EV',
     };
-    const legend: Record<number, string> = { 2018: 'LC005CLPC00EV.jpg', 2022: 'LC005CLPC00EV.jpg' };
-    const map: Record<number, string> = { 2018: 'LC005CLP003EV.jpg', 2019: 'LC005CLP003EV.jpg' };
+    // 2010's JPEG names are swapped: CLP004 is the map, CLP003 the photograph, CLP000 the legend.
+    const legend: Record<number, string> = {
+      2010: 'LC005CLP000EV.jpg', 2018: 'LC005CLPC00EV.jpg', 2022: 'LC005CLPC00EV.jpg',
+    };
+    const map: Record<number, string> = {
+      2010: 'LC005CLP004EV.jpg', 2018: 'LC005CLP003EV.jpg', 2019: 'LC005CLP003EV.jpg',
+    };
     for (const review of reviewAudit.reviewedSittings) for (const task of review.tasks as ReviewedTask[]) {
       for (const id of task.cards) {
         const card = byId.get(id)!;
@@ -1609,6 +1654,7 @@ describe('independently reviewed Geography sittings', () => {
     [2012, 'ordinary', 12, 'LC005GLP000EV.pdf'],
     [2011, 'higher', 24, 'LC005ALP000EV.pdf'],
     [2011, 'ordinary', 12, 'LC005GLP000EV.pdf'],
+    [2010, 'higher', 24, 'LC005ALP000EV.pdf'],
   ] as const)('files every reviewed %s %s Part Two task of the shared booklet in the Topic Atlas',
     (year, level, questions, fileid) => {
     const review = sitting(year, level);

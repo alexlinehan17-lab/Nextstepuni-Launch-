@@ -886,13 +886,14 @@ describe('Mark Bank card preservation', () => {
      * Higher (+108), 2016 Ordinary (+128), 2015 Higher (+113), 2015
      * Ordinary (+107), 2014 Higher (+110), 2014 Ordinary (+125), 2013
      * Higher (+111), 2013 Ordinary (+102), 2012 Higher (+110), 2012
-     * Ordinary (+115), 2011 Higher (+99) and 2011 Ordinary (+130; none
-     * shipped before any of these), the 2011-2025 sittings
+     * Ordinary (+115), 2011 Higher (+99), 2011 Ordinary (+130) and 2010
+     * Higher (+106; none shipped before any of these), the 2010-2025
+     * sittings
      * including the tasks whose map/legend/aerial companions are now wired,
      * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
      * original ID; every reviewed sitting's shipped IDs are still present,
      * live or (a choose-N combination card) through a progress alias. */
-    expect(geographyAdditionIds.size).toBe(3266);
+    expect(geographyAdditionIds.size).toBe(3372);
     const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
     const ids = all.map(card => card.id);
     expect(new Set(ids).size).toBe(ids.length);

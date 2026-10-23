@@ -74,6 +74,7 @@ import geography_review_2012_hl as REVIEW_2012_HL
 import geography_review_2012_ol as REVIEW_2012_OL
 import geography_review_2011_hl as REVIEW_2011_HL
 import geography_review_2011_ol as REVIEW_2011_OL
+import geography_review_2010_hl as REVIEW_2010_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -132,6 +133,7 @@ REVIEWED = {
     (2012, 'ordinary'): REVIEW_2012_OL,
     (2011, 'higher'): REVIEW_2011_HL,
     (2011, 'ordinary'): REVIEW_2011_OL,
+    (2010, 'higher'): REVIEW_2010_HL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -1015,6 +1017,11 @@ COMPANIONS: dict[int, dict[str, str | None]] = {
     # holds none and the map sheet carries none); legend-dependent parts are held.
     2011: {'place': 'Dingle', 'map': 'LC005CLP003EV', 'legend': None,
            'aerial': 'LC005CLP004EV'},
+    # 2010's companions are JPEGs, and the SEC names are swapped relative to later
+    # years (checked by eye): CLP004 is the Carrick-on-Suir map extract, CLP003
+    # the aerial photograph and CLP000 the legend sheet.
+    2010: {'place': 'Carrick-on-Suir', 'map': 'LC005CLP004EV.jpg', 'legend': 'LC005CLP000EV.jpg',
+           'aerial': 'LC005CLP003EV.jpg'},
 }
 
 
