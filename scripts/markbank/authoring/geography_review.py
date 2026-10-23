@@ -268,7 +268,7 @@ class Document:
 
     def line_slice(self, page: int, start: str, end: str | None,
                    clip: tuple[float, float, float, float] | None = None,
-                   after: str | None = None) -> list[str]:
+                   after: str | None = None, keep_digits: bool = False) -> list[str]:
         """Printed lines from the one holding ``start`` up to (excluding) the
         first later line holding ``end``; to the page foot when ``end`` is None.
 
@@ -303,10 +303,14 @@ class Document:
         out = lines[first:last]
         # Page furniture: a bare printed page number or the running footer
         # ("Leaving Certificate Examination 2025" / "Geography – Higher level,
-        # Part Two · 31") is never guidance.
-        return [line for line in out if not re.fullmatch(
-            r'\d{1,2}|Leaving Certificate Examination \d{4}|Page \d+ of \d+|'
-            r'Geography\s*[–-]\s*(?:Higher|Ordinary) level,.*', line)]
+        # Part Two · 31") is never guidance. A slice that ends above the page
+        # foot may keep bare numerals ('keep_digits'): 2010 HL Part One Q9(ii)
+        # prints its second answer as a lone "2".
+        furniture = (r'Leaving Certificate Examination \d{4}|Page \d+ of \d+|'
+                     r'Geography\s*[–-]\s*(?:Higher|Ordinary) level,.*')
+        if not keep_digits:
+            furniture = r'\d{1,2}|' + furniture
+        return [line for line in out if not re.fullmatch(furniture, line)]
 
 
 @dataclass(frozen=True)
@@ -332,6 +336,7 @@ class SchemeSlice:
     clip: tuple[float, float, float, float] | None = None
     after: str | None = None
     table: bool = False
+    keep_digits: bool = False
 
 
 @dataclass(frozen=True)
@@ -481,7 +486,7 @@ class Sitting:
         if piece.table:
             return self.scheme.table_lines(piece.page, piece.start)
         return self.scheme.line_slice(
-            piece.page, piece.start, piece.end, piece.clip, piece.after)
+            piece.page, piece.start, piece.end, piece.clip, piece.after, piece.keep_digits)
 
 
 FURNITURE = re.compile(r'\[\d+m\]|(?:Sub\s*[-–]?\s*total|Total)\s+\d+m|\d{1,2}')
