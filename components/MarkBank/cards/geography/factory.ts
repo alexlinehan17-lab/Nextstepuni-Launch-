@@ -15,6 +15,7 @@ import type {
   SecRubricCard,
 } from '../../../../types/markBank';
 import authored from './authored.json';
+import { parseGeographyAllocation } from './allocation';
 
 type GeographyLevel = 'higher' | 'ordinary';
 
@@ -44,16 +45,22 @@ const DATA = authored.cards as AuthoredGeographyCard[];
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
 
-const criterionFor = (card: AuthoredGeographyCard): GeographyCriterion => ({
-  id: 'published-allocation',
-  label: card.guidanceKind === 'exact'
-    ? 'Published answers and allocation'
-    : 'Complete response',
-  maxMarks: card.totalMarks,
-  permittedMarks: range(0, card.totalMarks),
-  guidanceKind: card.guidanceKind,
-  guidance: [...card.schemeGuidance],
-});
+const criterionFor = (card: AuthoredGeographyCard): GeographyCriterion => {
+  const criterion: GeographyCriterion = {
+    id: 'published-allocation',
+    label: card.guidanceKind === 'exact'
+      ? 'Published answers and allocation'
+      : 'Complete response',
+    maxMarks: card.totalMarks,
+    permittedMarks: range(0, card.totalMarks),
+    guidanceKind: card.guidanceKind,
+    guidance: [...card.schemeGuidance],
+  };
+  // The same lines as claimable rows, where they add up to the printed total.
+  const allocation = parseGeographyAllocation(card);
+  if (allocation) criterion.allocation = allocation;
+  return criterion;
+};
 
 const markingGuideNote = (card: AuthoredGeographyCard) =>
   card.guidanceKind === 'exact'
