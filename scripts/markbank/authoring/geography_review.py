@@ -31,6 +31,9 @@ import fitz
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
 PAPER_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'papers')
+# Crops of official documents bound to cards, rendered by geography_figures.py.
+FIGURE_ROOT = os.path.join(ROOT, 'public', 'exam-figures', 'geography', 'markbank')
+FIGURE_URL = '/exam-figures/geography/markbank/'
 SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'schemes')
 CORPUS_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'exampapers')
 MARKING_ROOT = os.path.join(ROOT, 'paper-trail-corpus', 'markingschemes')
@@ -319,13 +322,18 @@ class Lift:
 
     ``row`` lifts the printed table rows from the one holding ``start``
     through the one holding ``end`` as one line, each printed cell kept and
-    divided by " · " (a table pool the paper prints as cells, not bullets)."""
+    divided by " · " (a table pool the paper prints as cells, not bullets).
+
+    ``table`` lifts the ruled table whose first row holds ``start``, read
+    cell by cell (one line per printed row), for a term list whose wrapped
+    cell ("Magma / chamber") the text layer splits across baselines."""
     page: int
     start: str
     end: str | None = None
     booklet: int | None = None
     nth: int | None = None
     row: bool = False
+    table: bool = False
 
 
 @dataclass(frozen=True)
@@ -337,6 +345,37 @@ class SchemeSlice:
     after: str | None = None
     table: bool = False
     keep_digits: bool = False
+
+
+@dataclass(frozen=True)
+class Figure:
+    """A crop of one official SEC document, bound to a card.
+
+    geography_figures.py renders it to FIGURE_ROOT/<name>.png from
+    ``document`` ('paper' for the task's booklet, 'scheme', or a companion
+    kind: 'map', 'legend', 'aerial'), one-based ``page`` and ``rect`` in PDF
+    points (x0, y0, x1, y1). The card records the file's MD5, so a changed
+    crop fails ``geography_cards.py --check``. A ``solution`` crop (the
+    scheme's own answer drawing) is held back until the scheme is revealed.
+    ``alt`` describes what is visible and never names the answer."""
+    name: str
+    document: str
+    page: int
+    rect: tuple[float, float, float, float]
+    alt: str
+    attribution: str
+    solution: bool = False
+
+
+def figure_record(figure: Figure) -> dict[str, Any]:
+    path = os.path.join(FIGURE_ROOT, f'{figure.name}.png')
+    if not os.path.exists(path):
+        raise AssertionError(f'{figure.name}: crop not rendered; run geography_figures.py --write')
+    with open(path, 'rb') as handle:
+        digest = hashlib.md5(handle.read()).hexdigest()
+    return {'candId': figure.name, 'src': FIGURE_URL + f'{figure.name}.png', 'srcHash': digest,
+            'alt': figure.alt, 'lettersVisible': [], 'attribution': figure.attribution,
+            **({'solution': True} if figure.solution else {})}
 
 
 @dataclass(frozen=True)
@@ -389,7 +428,19 @@ class Task:
     stem: tuple[Lift, ...] = ()
     routes: tuple[Route, ...] = ()
     row_labels: tuple[Lift | None, ...] = ()
+    # A short factual note shown with the scheme (how to use this guide), for
+    # a fact about the sitting's sources or allocation the student needs.
     note: str = ''
+    # A crop of an official document shown on the card (see Figure).
+    figure: Figure | None = None
+    # A crop of the question paper's own print of the ask (instruction,
+    # printed terms and diagram), shown before the reveal in place of the
+    # typeset stem; never a solution.
+    question_figure: Figure | None = None
+    # Marks the paper prints that the published scheme allocates to no line
+    # (2020 OL 9C prices 27 of its printed 30). They stay in the printed
+    # total, are never derived into a criterion, and require a note.
+    unpriced: int = 0
     # Card ids absorbed by this task's single card (see Route.absorbs).
     absorbs: tuple[str, ...] = ()
 
@@ -476,6 +527,8 @@ class Sitting:
         return cls(year=year, level=level, papers=papers, scheme=Document(scheme))
 
     def lift(self, part: int, item: Lift) -> str:
+        if item.table:
+            return '\n'.join(self.papers[item.booklet or part].table_lines(item.page, item.start))
         if item.row:
             return self.papers[item.booklet or part].table_rows(
                 item.page, item.start, item.end)
@@ -592,10 +645,13 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
         for piece in scheme_slices:
             lines.extend(sitting.scheme_lines(piece))
         criteria = route.criteria or task.criteria
-        if sum(c.max for c in criteria) != task.marks:
+        if task.unpriced < 0 or (task.unpriced and not task.note):
+            raise AssertionError(f'{task.key}: an unpriced remainder needs a note saying so')
+        if sum(c.max for c in criteria) + task.unpriced != task.marks:
             raise AssertionError(
                 f'{task.key} {route.slug}: criteria total '
-                f'{sum(c.max for c in criteria)} != printed tariff {task.marks}')
+                f'{sum(c.max for c in criteria)} + unpriced {task.unpriced} '
+                f'!= printed tariff {task.marks}')
         used: set[int] = set()
         criteria_out = []
         row_labels = [None if item is None else sitting.lift(task.part, item)
@@ -701,6 +757,16 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
             card['sourceMaterial'] = sources[0]
         if len(sources) > 1:
             card['additionalSourceMaterials'] = sources[1:]
+        if task.question_figure is not None:
+            if task.question_figure.solution:
+                raise AssertionError(f'{task.key}: a question figure is never a solution')
+            card['questionFigure'] = figure_record(task.question_figure)
+        if task.figure is not None:
+            card['figure'] = figure_record(task.figure)
+        if task.unpriced:
+            card['unpricedMarks'] = task.unpriced
+        if task.note:
+            card['note'] = task.note
         cards.append(card)
     return cards
 
