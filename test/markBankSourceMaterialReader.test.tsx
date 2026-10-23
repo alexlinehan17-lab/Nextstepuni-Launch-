@@ -68,7 +68,8 @@ describe('Mark Bank source reader provenance', () => {
     fireEvent.click(screen.getByRole('button', { name: /Read UNSEEN POEM/ }));
     await screen.findByText('Official PDF page');
     expect(vaultPdf).toHaveBeenCalledOnce();
-    expect(screen.getByText('Printed page 10')).toBeTruthy();
+    // Main labels the page by its PDF number since #239 (French).
+    expect(screen.getByText('PDF page 10')).toBeTruthy();
     expect(screen.getByRole('link', { name: 'Open the original paper' }).getAttribute('href')).toContain('#page=10');
   });
 
