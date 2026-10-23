@@ -147,6 +147,17 @@
    "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a"
   },
   {
+   "paperId": "english-2020-ol-p2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 88,
+   "cards": 86,
+   "printedDuplicates": 2,
+   "paperSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+   "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a"
+  },
+  {
    "paperId": "english-2019-ol-p1",
    "year": 2019,
    "level": "ordinary",
@@ -2204,7 +2215,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1861,
+ "cardCount": 1947,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -30197,6 +30208,3132 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Margaret Atwood’s novel, The Handmaid’s Tale, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Margaret Atwood’s novel, The Handmaid’s Tale. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q3(ii)",
+   "questionText": "Identify three moments from the novel, The Handmaid’s Tale, each of which captures a different aspect of Offred’s character. Outline the insights you gained into Offred’s character from each of the moments you have identified and explain how these insights affected your opinion of Offred. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-a-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text A Q3(iii)",
+   "questionText": "A new film based on Margaret Atwood’s novel, The Handmaid’s Tale, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the novel, identify three moments from the story that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Jane Austen’s novel, Persuasion, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Jane Austen’s novel, Persuasion. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    20,
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q3(ii)",
+   "questionText": "Identify three moments from the novel, Persuasion, each of which captures a different aspect of Anne Elliot’s character. Outline the insights you gained into Anne Elliot’s character from each of the moments you have identified and explain how these insights affected your opinion of Anne. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-b-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text B Q3(iii)",
+   "questionText": "A new film based on Jane Austen’s novel, Persuasion, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the novel, identify three moments from the story that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Identify and describe a conflict or tension evident in Sebastian Barry’s novel, Days Without End.",
+   "totalMarks": 10,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this novel, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the novel.",
+   "totalMarks": 10,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension you identified in the novel was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Sebastian Barry’s novel, Days Without End. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    22,
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q3(ii)",
+   "questionText": "Identify three moments from the novel, Days Without End, each of which captures a different aspect of Thomas McNulty’s character. Outline the insights you gained into Thomas McNulty’s character from each of the moments you have identified and explain how these insights affected your opinion of Thomas McNulty. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-c-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text C Q3(iii)",
+   "questionText": "A new film based on Sebastian Barry’s novel, Days Without End, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the novel, identify three moments from the story that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Marina Carr’s play, By the Bog of Cats, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Marina Carr’s play, By the Bog of Cats. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    24,
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q3(ii)",
+   "questionText": "Identify three moments from the play, By the Bog of Cats, each of which captures a different aspect of Hester Swane’s character. Outline the insights you gained into Hester Swane’s character from each of the moments you have identified and explain how these insights affected your opinion of Hester. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-d-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text D Q3(iii)",
+   "questionText": "A new film based on Marina Carr’s play, By the Bog of Cats, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the play, identify three moments from the drama that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Emma Donoghue’s novel, Room, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Emma Donoghue’s novel, Room. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    26,
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q3(ii)",
+   "questionText": "Identify three moments from the novel, Room, each of which captures a different aspect of Ma’s character. Outline the insights you gained into Ma’s character from each of the moments you have identified and explain how these insights affected your opinion of Ma. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-e-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text E Q3(iii)",
+   "questionText": "A new film based on Emma Donoghue’s novel, Room, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the novel, identify three moments from the story that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Identify and describe a conflict or tension evident in George Orwell’s novel, 1984.",
+   "totalMarks": 10,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this novel, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the novel.",
+   "totalMarks": 10,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension you identified in the novel was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of George Orwell’s novel, 1984. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    28,
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q3(ii)",
+   "questionText": "Identify three moments from the novel, 1984, each of which captures a different aspect of Winston Smith’s character. Outline the insights you gained into Winston Smith’s character from each of the moments you have identified and explain how these insights affected your opinion of Winston. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-f-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text F Q3(iii)",
+   "questionText": "A new film based on George Orwell’s novel, 1984, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the novel, identify three moments from the story that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-5",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "1984 (George Orwell)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Shakespeare’s play, Hamlet, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Shakespeare’s play, Hamlet. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30,
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q3(ii)",
+   "questionText": "Identify three moments from the play, Hamlet, each of which captures a different aspect of Ophelia’s character. Outline the insights you gained into Ophelia’s character from each of the moments you have identified and explain how these insights affected your opinion of Ophelia. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-g-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text G Q3(iii)",
+   "questionText": "A new film based on Shakespeare’s play, Hamlet, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the play, identify three moments from the drama that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Shakespeare’s play, The Tempest, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Shakespeare’s play, The Tempest. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    32,
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q3(ii)",
+   "questionText": "Identify three moments from the play, The Tempest, each of which captures a different aspect of Prospero’s character. Outline the insights you gained into Prospero’s character from each of the moments you have identified and explain how these insights affected your opinion of Prospero. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-h-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text H Q3(iii)",
+   "questionText": "A new film based on Shakespeare’s play, The Tempest, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the play, identify three moments from the drama that you think should be included as clips in the trailer, and explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Identify and describe a relationship between two characters in Synge’s play, The Playboy of the Western World, in which conflict or tension is evident.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Identify an episode or incident from the text which demonstrates the conflict or tension that arises in this relationship, and explain why you think this episode or incident is a good choice to demonstrate this aspect of the relationship.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q2",
+   "questionText": "Explain whether, in your opinion, the conflict or tension in the relationship you identified above was or was not successfully resolved. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q3-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q3(i)",
+   "questionText": "Explain three valuable lessons you learned about human nature from your study of Synge’s play, The Playboy of the Western World. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    34,
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q3-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q3(ii)",
+   "questionText": "Identify three moments from the play, The Playboy of the Western World, each of which captures a different aspect of Pegeen Mike’s character. Outline the insights you gained into Pegeen’s character from each of the moments you have identified and explain how these insights affected your opinion of Pegeen. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-single-i-q3-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Single Text I Q3(iii)",
+   "questionText": "A new film based on Synge’s play, The Playboy of the Western World, is about to be released and you have been asked to produce a trailer* to promote it. Using your knowledge of the play, identify three moments from the drama that you think should be included as clips in the trailer. Explain why you decided to include this particular material. Your response should demonstrate your knowledge of the text. * Trailer – a short advertising film",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-a-q1-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Give the title of one of your three comparative texts and identify a hero, heroine or villain in it. Use one or more key moments to help you explain how this character reacted when faced with a difficult situation.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-a-q1-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Give the title of another comparative text you have studied and identify a hero, heroine or villain in it. Use one or more key moments to help you explain how this character reacted when faced with a difficult situation.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-a-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Identify an ambition, hope or dream that was important to one hero, heroine or villain from each of at least two texts on your comparative course. Compare the extent to which these characters achieved, or failed to achieve, their ambition, hope or dream. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-a-q2-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Give the title of one of your three comparative texts and identify a hero, heroine or villain in it. Explain why this character is or is not trusted by other characters in your chosen text. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-a-q2-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Give the title of another of your comparative texts and identify a hero, heroine or villain in it. Explain why this character is or is not trusted by other characters in your chosen text. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-5",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Hero, Heroine, Villain",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-b-q1-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Name one of the three texts you have studied on your comparative course and identify one aspect of the social setting evident in this text. Describe at least one key moment that helped you to understand this aspect of the social setting and explain why your chosen moment or moments helped you in this way.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-b-q1-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "Name another text on your comparative course and identify one aspect of the social setting evident in this text. Describe at least one key moment that helped you to understand this aspect of the social setting and explain why your chosen moment or moments helped you in this way.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-b-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "Identify a central character in each of at least two texts on your comparative course. Compare the extent to which the social settings in these texts contributed to the happiness or unhappiness of the characters you have identified. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-b-q2-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "You have been asked to choose two objects for use in a presentation to your class about the social setting in one text on your comparative course. Identify the text, and explain what you intend your classmates to learn about the social setting in this text from the objects you have chosen.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-comparative-b-q2-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "You have been asked to choose two objects for use in a presentation to your class about the social setting in another text on your comparative course. Identify the text, and explain what you intend your classmates to learn about the social setting in this text from the objects you have chosen.",
+   "totalMarks": 15,
+   "topicId": "english-7-7",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Social Setting",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-unseen-q1",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "Describe, in your own words, the scene witnessed by the speaker in the above poem and his or her reaction to this scene. Explain why you think the speaker reacted in this way. Support your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Murmuration",
+    "pages": [
+     13
+    ],
+    "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-unseen-q2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Do you find the language used by the poet in the above poem appealing? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Murmuration",
+    "pages": [
+     13
+    ],
+    "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-a-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Based on your reading of the above poem, make three observations about the person who built the Cadillac in the attic. Support your observations with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cadillac in the Attic — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Cadillac in the Attic",
+    "pages": [
+     14
+    ],
+    "attribution": "The Cadillac in the Attic — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-a-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "In your opinion, is this an amusing poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cadillac in the Attic — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Cadillac in the Attic",
+    "pages": [
+     14
+    ],
+    "attribution": "The Cadillac in the Attic — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-a-q2-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "You have been asked to write an article about the above poem for the poetry section of your local newspaper. In your article you should explain what the poem is about and share your personal response to it with your readers. Your article should include reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cadillac in the Attic — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Cadillac in the Attic",
+    "pages": [
+     14
+    ],
+    "attribution": "The Cadillac in the Attic — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-a-q2-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Based on the poem, “The Cadillac in the Attic”, write a dialogue between the landlord and a reporter from a local radio station in which they discuss the discovery of the car in the attic. Your dialogue should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cadillac in the Attic — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Cadillac in the Attic",
+    "pages": [
+     14
+    ],
+    "attribution": "The Cadillac in the Attic — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-a-q2-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Explain the reasons why you do or do not enjoy Andrew Hudgins’ use of language in the above poem. Support your response with reference to specific examples of the poet’s use of language in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-48",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Cadillac in the Attic — Andrew Hudgins",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "The Cadillac in the Attic",
+    "pages": [
+     14
+    ],
+    "attribution": "The Cadillac in the Attic — Andrew Hudgins.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-b-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Based on your reading of the above poem, make three observations about Aunt Jennifer. Support your observations with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Aunt Jennifer’s Tigers — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Aunt Jennifer’s Tigers",
+    "pages": [
+     15
+    ],
+    "attribution": "Aunt Jennifer’s Tigers — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-b-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "In your opinion, is this a disturbing poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Aunt Jennifer’s Tigers — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Aunt Jennifer’s Tigers",
+    "pages": [
+     15
+    ],
+    "attribution": "Aunt Jennifer’s Tigers — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-b-q2-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "You have been asked to write an article about the above poem for the poetry section of your local newspaper. In your article you should explain what the poem is about and share your personal response to it with your readers. Your article should include reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Aunt Jennifer’s Tigers — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Aunt Jennifer’s Tigers",
+    "pages": [
+     15
+    ],
+    "attribution": "Aunt Jennifer’s Tigers — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-b-q2-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Based on your reading of the poem, “Aunt Jennifer’s Tigers”, write a dialogue between Aunt Jennifer and her niece or nephew. The discussion should provide insights into Aunt Jennifer’s life. Your dialogue should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Aunt Jennifer’s Tigers — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Aunt Jennifer’s Tigers",
+    "pages": [
+     15
+    ],
+    "attribution": "Aunt Jennifer’s Tigers — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-b-q2-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Explain the reasons why you do or do not enjoy Adrienne Rich’s use of language in the above poem. Support your response with reference to specific examples of the poet’s use of language in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Aunt Jennifer’s Tigers — Adrienne Rich",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "Aunt Jennifer’s Tigers",
+    "pages": [
+     15
+    ],
+    "attribution": "Aunt Jennifer’s Tigers — Adrienne Rich.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-c-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Based on your reading of the above poem, make three observations about the the baby featured in it. Support your observations with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Baby-Movements II, “Trailing Clouds”",
+    "pages": [
+     16
+    ],
+    "attribution": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-c-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "In your opinion, is this an emotional poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Baby-Movements II, “Trailing Clouds”",
+    "pages": [
+     16
+    ],
+    "attribution": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-c-q2-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "You have been asked to write an article about the above poem for the poetry section of your local newspaper. In your article you should explain what the poem is about and share your personal response to it with your readers. Your article should include reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Baby-Movements II, “Trailing Clouds”",
+    "pages": [
+     16
+    ],
+    "attribution": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-c-q2-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Based on your reading of the poem, “Baby-Movements II, Trailing Clouds”, write a dialogue between the parent in the poem and the daughter, now an adult herself, in which they discuss the occasion described in the poem. Your dialogue should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Baby-Movements II, “Trailing Clouds”",
+    "pages": [
+     16
+    ],
+    "attribution": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    46,
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-c-q2-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Explain the reasons why you do or do not enjoy D.H. Lawrence’s use of language in the above poem. Support your response with reference to specific examples of the poet’s use of language in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-14",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "Baby-Movements II, “Trailing Clouds”",
+    "pages": [
+     16
+    ],
+    "attribution": "Baby-Movements II, “Trailing Clouds” — D.H. Lawrence.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-d-q1-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Based on your reading of the above poem, make three observations about the relationship described in it. Support your response with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-65",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Will We Work Together? — Marge Piercy",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Will We Work Together?",
+    "pages": [
+     17
+    ],
+    "attribution": "Will We Work Together? — Marge Piercy.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-d-q1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "In your opinion, is this a joyful poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-65",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Will We Work Together? — Marge Piercy",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Will We Work Together?",
+    "pages": [
+     17
+    ],
+    "attribution": "Will We Work Together? — Marge Piercy.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-d-q2-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "You have been asked to write an article about the above poem for the poetry section of your local newspaper. In your article you should explain what the poem is about and share your personal response to it with the readers. Your article should include reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-65",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Will We Work Together? — Marge Piercy",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Will We Work Together?",
+    "pages": [
+     17
+    ],
+    "attribution": "Will We Work Together? — Marge Piercy.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-d-q2-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Based on your reading of the poem, “Will We Work Together?” write a dialogue between the speaker in the poem and her partner in which they discuss the future of their relationship. Your dialogue should demonstrate your knowledge of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-65",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Will We Work Together? — Marge Piercy",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Will We Work Together?",
+    "pages": [
+     17
+    ],
+    "attribution": "Will We Work Together? — Marge Piercy.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2020-ol-p2-prescribed-d-q2-iii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2020 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Explain the reasons why you do or do not enjoy Marge Piercy’s use of language in the above poem. Support your response with reference to specific examples of the poet’s use of language in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-65",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Will We Work Together? — Marge Piercy",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Will We Work Together?",
+    "pages": [
+     17
+    ],
+    "attribution": "Will We Work Together? — Marge Piercy.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
    }
   },
   {

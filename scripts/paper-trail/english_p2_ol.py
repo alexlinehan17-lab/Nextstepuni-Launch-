@@ -277,6 +277,10 @@ def locate_scheme_cards(cards, paper, scheme, year):
         # its Q1(a) indicative list, so The Crucible's crop swallowed The
         # Cove's heading and Q1(a) (viewed 2026-10-12).
         2025: {"Single Text F": (37, 0.3074)},
+        # 2020: "F 1984" heads PDF30 (y 0.0889); matching began F inside its
+        # Q1(a) indicative list, so Room's crop swallowed 1984's heading and
+        # Q1(a) (viewed 2026-10-23).
+        2020: {"Single Text F": (29, 0.0889)},
         # 2024: "B THEME" sits at y 0.3262 on PDF45 and "C SOCIAL SETTING"
         # at y 0.2239 on PDF47; matching began C at its Q1(b), so Theme's
         # crop swallowed Social Setting's Q1(a)(i)/(ii) (viewed 2026-10-12).

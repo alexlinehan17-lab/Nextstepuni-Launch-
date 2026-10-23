@@ -5655,6 +5655,28 @@
       "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
       "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
       "reason": "Self-contained: one place in Ireland of the candidate’s own, other than the Flaggy Shore, and reasons; scheme PDF10 never refers to TEXT 3."
+    },
+    "english-2020-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Murmuration",
+      "pages": [
+        13
+      ],
+      "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
+      "questionSha256": "97270e918281a07c9ff9453383d4e4580e36dff4e51a9fa3f98dad49a2f554a1",
+      "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
+    },
+    "english-2020-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Murmuration",
+      "pages": [
+        13
+      ],
+      "attribution": "Murmuration — Barbara Crooker, as reproduced in the SEC 2020 paper.",
+      "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
+      "reason": "Paper PDF13 prints the instruction (“Read the following poem by Barbara Crooker”), the title, the whole 13-line poem, the byline and the gloss (*A murmuration occurs when a large flock of birds … fly together in swooping patterns) above both questions; visually verified. PDF14 begins Prescribed Poem A."
     }
   }
 }

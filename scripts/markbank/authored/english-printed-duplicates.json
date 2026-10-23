@@ -29,6 +29,14 @@
       "canonical": "english-2020-ol-p1-t2-a-iii-b",
       "reason": "Printed identically after TEXT 2 and TEXT 3 (paper PDF5, PDF7; TEXT 1’s wording differs), same tariff (10), grid and no reader; one practice identity, keeping both printed placements in the Atlas."
     },
+    "english-2020-ol-p2-comparative-a-q2-b": {
+      "canonical": "english-2020-ol-p2-comparative-a-q1-b",
+      "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode on paper PDF11 and marked from identical scheme text; one practice identity, keeping both printed placements in the Atlas."
+    },
+    "english-2020-ol-p2-comparative-b-q2-b": {
+      "canonical": "english-2020-ol-p2-comparative-b-q1-b",
+      "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode on paper PDF12 and marked from identical scheme text; one practice identity, keeping both printed placements in the Atlas."
+    },
     "english-2021-ol-p2-comparative-a-q2-b": {
       "canonical": "english-2021-ol-p2-comparative-a-q1-b",
       "reason": "Q1(b) and Q2(b) are printed with identical wording and tariff (40) under one mode on paper PDF11 and marked from identical scheme text; one practice identity, keeping both printed placements in the Atlas."

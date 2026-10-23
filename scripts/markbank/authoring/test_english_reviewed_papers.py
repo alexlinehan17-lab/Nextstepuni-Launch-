@@ -900,6 +900,7 @@ class EnglishPrintedLabelsTest(unittest.TestCase):
         self.assertEqual(scheme(2023, '11'), {'p': 45, 'r': [0.0, 0.2293, 1.0, 1.0]})
         self.assertEqual(scheme(2023, '12'), {'p': 47, 'r': [0.0, 0.2922, 1.0, 1.0]})
         self.assertEqual(scheme(2021, '12'), {'p': 63, 'r': [0.0, 0.0893, 1.0, 1.0]})
+        self.assertEqual(scheme(2020, '6'), {'p': 30, 'r': [0.0, 0.0889, 1.0, 1.0]})
 
 
 if __name__ == '__main__':

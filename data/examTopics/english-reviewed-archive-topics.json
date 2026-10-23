@@ -971,6 +971,16 @@
     "english-6-0",
     "english-12-26"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-piercy-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-piercy",
+   "label": "Poetry - Piercy",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-65"
+   ]
   }
  ]
 }

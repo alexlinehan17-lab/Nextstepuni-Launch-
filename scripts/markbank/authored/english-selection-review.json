@@ -8168,227 +8168,227 @@
     "english-2020-ol-p2-single-a-q1-a": {
       "questionSha256": "5fef3702bdf9556731ec36303f0e5ca8cddc81788ccf9929c8ed950c7f552c35",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF19: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-a-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF19: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-a-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF19: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-a-q3-i": {
       "questionSha256": "459a1a90c6e499a37c3bdf4e4c765e6f5b1d2677b2950660e7b9a7a4ae0acccf",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF19: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-a-q3-ii": {
       "questionSha256": "2b9ec4396d6e7e1ef525afc9e222dafb2acba25b68be872228d9fe732789e4b0",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF19: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-b-q1-a": {
       "questionSha256": "066d060859473c67fba94891021c5162216c9c6e807d2d6c64ecb44d61d71fa3",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF20: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-b-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF20: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-b-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF20: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-b-q3-i": {
       "questionSha256": "2f89e20c49800b0a1218b43d07159ec3c122f64ce484120e52accbe23b252ffe",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF20–21: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-b-q3-ii": {
       "questionSha256": "29171cda405dbe9a6c68a121681d35fc3fd81af763a64d102dd38311fc8071a1",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF21: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-c-q1-a": {
       "questionSha256": "d5de4251aa274ad312b9e3ee326d71a96ea8d249b8b24fcf6535bbd990472df9",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF22: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-c-q1-b": {
       "questionSha256": "396ff68fa1cef27d3e65adb075e8bf83371f3c6f1a74af18fc4ccc34495dd7ff",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF22: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-c-q2": {
       "questionSha256": "1a00c38e251ee7532607bf364ce557fdc028fa89bfec3617a541658511090bd7",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF22: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-c-q3-i": {
       "questionSha256": "77fcf23edbd37f00f975d06d95ebb96d423d5cbff3eacc97c879ca3ed6b5499b",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF22–23: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-c-q3-ii": {
       "questionSha256": "f61766d5d2f6cbbf4028a4d35d229cea1f38fb236107295c4508f6c7c2c50af3",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF23: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-d-q1-a": {
       "questionSha256": "4905fa9285b873263972e4deb6b739fac3eb4e1aa44fae4cabe9c0d5b00e7dd1",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF24: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-d-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF24: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-d-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF24: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-d-q3-i": {
       "questionSha256": "65fbc2579b0e16757e400933cf0dc17c059b30c809f26bb2dec8eb1b0f9263b1",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF24–25: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-d-q3-ii": {
       "questionSha256": "8aefc950d1a9daf200623c9e66b09665a957cea0e8c57f17e58d8a511d4d1b82",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF25: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-e-q1-a": {
       "questionSha256": "7ffc9d74b4f24d3d30fe03829f3e0093ba94782e77b2f1477df4ac07474db4bc",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF26: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-e-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF26: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-e-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF26: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-e-q3-i": {
       "questionSha256": "33c7c9b95e66f69ae619df2b66ea5b4684721f766a20fc8858b26616ff33773d",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF26–27: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-e-q3-ii": {
       "questionSha256": "4bf8dd1a21ad27430a5d74d663a93238a2d3936ad01ae72e432b16a506b9349c",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF27: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-f-q1-a": {
       "questionSha256": "5c7d608a414c3a1d7a0714de232c2e4634fb179bbb1e3e397b472385594acc11",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "open",
+      "reason": "Scheme PDF28: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-f-q1-b": {
       "questionSha256": "396ff68fa1cef27d3e65adb075e8bf83371f3c6f1a74af18fc4ccc34495dd7ff",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF28: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-f-q2": {
       "questionSha256": "1a00c38e251ee7532607bf364ce557fdc028fa89bfec3617a541658511090bd7",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF28: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-f-q3-i": {
       "questionSha256": "7dc891606f171149b2ed369d6ff85a2be892431457426c8500aeff6056e725e9",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF28–29: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-f-q3-ii": {
       "questionSha256": "7ed44be63dad3fec2217bb9d39869e6202c177659b90044de61521260c15c5fb",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF29: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-g-q1-a": {
       "questionSha256": "b569b30d9650432ea19e712a99ce21fef113ecc569b849abe00feefe3b1a9190",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF30: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-g-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF30: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-g-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF30: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-g-q3-i": {
       "questionSha256": "3655536b2596654d4c42c869e4d011148ba19d480f869d91a70b70833eaf80a6",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF30–31: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-g-q3-ii": {
       "questionSha256": "60af58746857667701aaac4714617147584b75f2696510f963fbd881475d1c2d",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF31: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-h-q1-a": {
       "questionSha256": "6df4a4b62ac404edae6e0c3a63062ae898f816f0b1228177fb2cdbe3fe611a81",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF32: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-h-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF32: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-h-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF32: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-h-q3-i": {
       "questionSha256": "df9c31b1f5096d2e4a3b5915e7b466f415f66e8fcb349df2377d79330a0b4b51",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF32–33: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-h-q3-ii": {
       "questionSha256": "c640a61bc83905e9d7d0e7ce3c72fa5b76cc82f8be7be676715a49b1733c15da",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF33: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2020-ol-p2-single-i-q1-a": {
       "questionSha256": "45b89889d009799b45c624848ee61f2a12506a64751ffaa6be6d71f729b55bc1",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF34: a relationship (or, for this novel, a conflict or tension) of the candidate’s own in which conflict or tension is evident, identified and described. One 10-mark response."
     },
     "english-2020-ol-p2-single-i-q1-b": {
       "questionSha256": "f9fb7c417236bb7f94d79588eefc5ea580b9041b40c9645538b98d09f413803a",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF34: an episode or incident of the candidate’s own demonstrating that conflict or tension, and why it is a good choice. One 10-mark response."
     },
     "english-2020-ol-p2-single-i-q2": {
       "questionSha256": "ccd749396160de1d2cdb1e048b4a3542831d2b382f847d0ff73830589b76d0b0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF34: whether the conflict or tension was or was not successfully resolved; “Candidates may consider that the conflict or tension was successfully resolved, was not successfully resolved or was partially resolved” — one judgement. One 10-mark response."
     },
     "english-2020-ol-p2-single-i-q3-i": {
       "questionSha256": "326abbfe5b5c0beb5d7385600a48243cbfcd10cc24a4f0136b8e2a0309a3b160",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF34–35: three valuable lessons about human nature; “a broad interpretation of ‘human nature’”. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 30-mark response."
     },
     "english-2020-ol-p2-single-i-q3-ii": {
       "questionSha256": "3ac6e9b844046580fe95f2ce369c9735c2e7abb8711e8611a79cbcdeb8cef5a7",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "required",
+      "reason": "Scheme PDF35: three moments, each capturing a different aspect of the printed character, the insights from each and their effect on the candidate’s opinion. One 30-mark response."
     },
     "english-2021-hl-p2-single-a-i": {
       "questionSha256": "1c1d5092db0a3206a550170b88f0d1b1a918d063e352e3dcebdb20b8fe4074a8",
@@ -11108,7 +11108,7 @@
     "english-2020-ol-p2-prescribed-b-q2-ii": {
       "questionSha256": "00d6e22befb7b160bb0f7859148e2e732f7dd6d312b9ffa452204a562bda8724",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task prints a fixed pool of alternative words, statements, poems, openings or production roles. Each offered alternative remains separately practicable at the original tariff; the combined-tone answer, where listed, is itself an explicit third option.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF45 — a dialogue between Aunt Jennifer and “her niece or nephew”; either interlocutor is marked on one grid. One 20-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -11961,58 +11961,58 @@
     },
     "english-2020-ol-p2-prescribed-a-q2-i": {
       "questionSha256": "d8866a4a6985f7d3b354f046e9c03ac6c91b020343144f8720ce4d1e788e9827",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF42: a local-newspaper article explaining what the poem is about and the candidate’s personal response. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-a-q2-ii": {
       "questionSha256": "b091542d54a8d9c45c51a12d5f72aad63e083b3c45c5e6a6167bbcb983e8f7d6",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF43: a dialogue between the printed speakers demonstrating knowledge of the poem. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-a-q2-iii": {
       "questionSha256": "8c896eea02124c366e7e6e9debf4bb1de76791ddf7299746939fc880cd611dc0",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF43: why the candidate does or does not enjoy the poet’s use of language, with specific examples — one judgement. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-b-q2-i": {
       "questionSha256": "d8866a4a6985f7d3b354f046e9c03ac6c91b020343144f8720ce4d1e788e9827",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF44: a local-newspaper article explaining what the poem is about and the candidate’s personal response. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-b-q2-iii": {
       "questionSha256": "7a415d94b5557307456dce21775751f9b6574f772e89cfe986bc0811a2fb94e1",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF45: why the candidate does or does not enjoy the poet’s use of language, with specific examples — one judgement. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-c-q2-i": {
       "questionSha256": "d8866a4a6985f7d3b354f046e9c03ac6c91b020343144f8720ce4d1e788e9827",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF46: a local-newspaper article explaining what the poem is about and the candidate’s personal response. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-c-q2-ii": {
       "questionSha256": "2e4e7c3b9aee8d64facb1bed89dea565640874bb98eeaa9ef9891536f13d8bf5",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF46–47: a dialogue between the printed speakers demonstrating knowledge of the poem. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-c-q2-iii": {
       "questionSha256": "f962b18117e82068165f3fdd5c8dc7dff44bb3308e6a7fe1d51262f098beae2a",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF47: why the candidate does or does not enjoy the poet’s use of language, with specific examples — one judgement. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-d-q2-i": {
       "questionSha256": "37ebdaa31ec40f213959c26e4ee6c3ed3cf694b9a0bb381d96cc027f58a80027",
-      "kind": "context",
-      "reason": "Standalone OR separates the already extracted numbered poetry alternatives. It does not create another selection within this task."
+      "kind": "open",
+      "reason": "Scheme PDF48: a local-newspaper article explaining what the poem is about and the candidate’s personal response. “Answer ONE of the following” makes (i), (ii), (iii) separate tasks. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-d-q2-ii": {
       "questionSha256": "0cfb74ace5e7711a185a22e8cc6f58c60c5dd1feba83f78b877b225052c6b326",
       "kind": "open",
-      "reason": "The choice concerns freely identified lines, words, images, memories or creative details within the studied poem, or an unnamed character. No fixed named answer pool is printed. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF49: a dialogue between the printed speakers demonstrating knowledge of the poem. One 20-mark response."
     },
     "english-2020-ol-p2-prescribed-d-q2-iii": {
       "questionSha256": "5ba9ebbd086783502c5e5f78e7bbe903e40b28b0805cb835f8c79e987cf0da0f",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF49: why the candidate does or does not enjoy the poet’s use of language, with specific examples — one judgement. One 20-mark response."
     },
     "english-2021-hl-p2-prescribed-2": {
       "questionSha256": "d2fe3114de663e08709e94082563f5e106b566f26e09c1beb298878d9f7ab8ac",
@@ -12755,9 +12755,9 @@
       "reason": "Scheme PDF39: two images of the candidate’s own effective in capturing the horror of war, and why. One 10-mark response."
     },
     "english-2020-ol-p2-unseen-q1": {
+      "questionSha256": "97270e918281a07c9ff9453383d4e4580e36dff4e51a9fa3f98dad49a2f554a1",
       "kind": "open",
-      "reason": "Images, lines, emotions and examples are freely identified within the poem, without a fixed printed option list. Ordinary literary judgements allow qualified answers; grammatical or, which and his/her do not create closed task routes.",
-      "questionSha256": "97270e918281a07c9ff9453383d4e4580e36dff4e51a9fa3f98dad49a2f554a1"
+      "reason": "Scheme PDF41: the scene and the speaker’s reaction, in the candidate’s own words, and why the speaker reacted so. One 10-mark response."
     },
     "english-2021-hl-p2-unseen-q2": {
       "questionSha256": "c29532c5ac2fdc05c351763b271f79b7ba617e891ff40993aafb64734dcd9d5d",
@@ -13568,63 +13568,63 @@
     },
     "english-2020-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "921fd47460bb3e8327e6843f5da43e2020791a2b534a65aa2cbe955f03d4d84f",
-      "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "kind": "flexible",
+      "reason": "Scheme PDF37: “one or more key moments” showing how a hero, heroine or villain reacted when faced with a difficult situation. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-a-q1-a-ii": {
       "questionSha256": "8dec385a42bef15caca30e8bced38b5c49f53464b115f17b420c05066a390bf4",
-      "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "kind": "flexible",
+      "reason": "Scheme PDF37: “one or more key moments” showing how a hero, heroine or villain reacted when faced with a difficult situation. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-a-q1-b": {
       "questionSha256": "e734a9b0932ef424954e281e386c57a887f7fc0be58d3ff90f94658bb7b6faa3",
-      "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "kind": "flexible",
+      "reason": "Scheme PDF37–38: an ambition, hope or dream of one hero, heroine or villain from each of “at least two” texts; the extent achieved, compared. One 40-mark comparison."
     },
     "english-2020-ol-p2-comparative-a-q2-a-i": {
       "questionSha256": "00b40a86e8fa467b315884e5ff2506779013461744f90bf9c6831cfa41fcc725",
       "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "reason": "Scheme PDF38: why the chosen character is or is not trusted by other characters — one judgement. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-a-q2-a-ii": {
       "questionSha256": "bbda1665701d8c4339fe985fc69bab21058109b5e9ac1d2d72e8e756de883faa",
       "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "reason": "Scheme PDF38: why the chosen character is or is not trusted by other characters — one judgement. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-a-q2-b": {
       "questionSha256": "e734a9b0932ef424954e281e386c57a887f7fc0be58d3ff90f94658bb7b6faa3",
-      "kind": "open",
-      "reason": "Hero/heroine/villain identifies the comparative mode and categories of character. Students supply a character from their own studied texts; the paper does not enumerate a named character pool. Evaluative contrasts within the response permit qualified literary judgements."
+      "kind": "flexible",
+      "reason": "Scheme PDF37–38: an ambition, hope or dream of one hero, heroine or villain from each of “at least two” texts; the extent achieved, compared. One 40-mark comparison."
     },
     "english-2020-ol-p2-comparative-b-q1-a-i": {
       "questionSha256": "3a5753a02f2d32cd3ef323574a896b25f0612082c6461838a5cceed1918605d2",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF39: one aspect of the social setting and “at least one key moment” that helped the candidate understand it. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-b-q1-a-ii": {
       "questionSha256": "9f833d0aa9f4eb4aa3d6f09c6500c717e0a1ca28cff77878b09790593f8ddb36",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF39: one aspect of the social setting and “at least one key moment” that helped the candidate understand it. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-b-q1-b": {
       "questionSha256": "e5af28b7a852738a95663d9024ffdbee5144abb962c6b40b298e8f5dbcc5fa33",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF39–40: a central character in each of “at least two” texts; the extent to which the social settings contributed to their happiness or unhappiness, compared. One 40-mark comparison."
     },
     "english-2020-ol-p2-comparative-b-q2-a-i": {
       "questionSha256": "2318e14cd23acc136619f325ba0c8b2ff5e2eb83f9c4f5455e179288347279ef",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF40: two objects of the candidate’s own for a class presentation and what classmates would learn about the social setting from them. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-b-q2-a-ii": {
       "questionSha256": "0a1fa5d163a96e7dba961a0613e7aaf369910a5ac36a5d76d75e07527588c49a",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF40: two objects of the candidate’s own for a class presentation and what classmates would learn about the social setting from them. One 15-mark response."
     },
     "english-2020-ol-p2-comparative-b-q2-b": {
       "questionSha256": "e5af28b7a852738a95663d9024ffdbee5144abb962c6b40b298e8f5dbcc5fa33",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF39–40: a central character in each of “at least two” texts; the extent to which the social settings contributed to their happiness or unhappiness, compared. One 40-mark comparison."
     },
     "english-2021-hl-p2-comparative-a-q1-a": {
       "questionSha256": "950d8c5388e65783789547bcbfa57637a6ae87f769b78a37f859ca8a67a336d2",
@@ -18395,6 +18395,96 @@
       "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
       "kind": "flexible",
       "reason": "Scheme PDF10: one place in Ireland of the candidate’s own, other than the Flaggy Shore, with “at least two reasons”. One 10-mark response."
+    },
+    "english-2020-ol-p2-single-a-q3-iii": {
+      "questionSha256": "6def469cd9561f685632c8348a9bf1e6d7cbd09ac75849389e26e4a1e89433dc",
+      "kind": "required",
+      "reason": "Scheme PDF20: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-b-q3-iii": {
+      "questionSha256": "2a2ad017c3fdc762e6bc5e0a01417b8d8f4b0592b6926ebf88b408646492295f",
+      "kind": "required",
+      "reason": "Scheme PDF21: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-c-q3-iii": {
+      "questionSha256": "414e888e4478388e8bf980245975fea44c9492b5dfeb5a798c36e785692ecfe0",
+      "kind": "required",
+      "reason": "Scheme PDF23: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-d-q3-iii": {
+      "questionSha256": "2d7dbb25452069f0baa6c8acad3a7d36587e482e7e4b0e07336d1a0475c0667d",
+      "kind": "required",
+      "reason": "Scheme PDF25: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-e-q3-iii": {
+      "questionSha256": "9599d4ffa751e4722c15527f40b9be598dfbd35008112cefc85d66c5a67e0dee",
+      "kind": "required",
+      "reason": "Scheme PDF27: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-f-q3-iii": {
+      "questionSha256": "6d7e5d3b439d3745f9a9806a19d8ef1ae3a1001cde5425603dedb711d72b4504",
+      "kind": "required",
+      "reason": "Scheme PDF29: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-g-q3-iii": {
+      "questionSha256": "873cfe9b60b2909e359d9576ea0f2940a99f0f13cfb0eb80e4d404ee2f96f286",
+      "kind": "required",
+      "reason": "Scheme PDF31: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-h-q3-iii": {
+      "questionSha256": "1bd2962fb6417081be5f86434e27a758a223864684f3f6369dda28cb678e1821",
+      "kind": "required",
+      "reason": "Scheme PDF33: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-single-i-q3-iii": {
+      "questionSha256": "e90db39f14d2a5cc68aed6f90ed745f17668e19ed3925bc0dc434552d0d0844e",
+      "kind": "required",
+      "reason": "Scheme PDF35: three moments for clips in a film trailer and why — “a wide range of material … and diverse reasons”. One 30-mark response."
+    },
+    "english-2020-ol-p2-unseen-q2": {
+      "questionSha256": "9815f06906a63ffc079bcd9f12d1fc2717de5288cec27761032f1340fb9c67fe",
+      "kind": "open",
+      "reason": "Scheme PDF41: whether the candidate finds the poet’s language appealing — one judgement. One 10-mark response."
+    },
+    "english-2020-ol-p2-prescribed-a-q1-a": {
+      "questionSha256": "a53a1c3274b85845e1054db09b37a8356c1afa18a4c14d17c1a06daf183d6c06",
+      "kind": "required",
+      "reason": "Scheme PDF42: three observations about the printed subject, supported from the poem. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-a-q1-b": {
+      "questionSha256": "c9cdb80547ce216d6ef9d2e6f67f07504901ae669c5ed1871d9b379f274c11e8",
+      "kind": "open",
+      "reason": "Scheme PDF42: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-b-q1-a": {
+      "questionSha256": "017058e400c89da28ccbcaff59220c870e9cce74118b8bd4c836d5246eba91ac",
+      "kind": "required",
+      "reason": "Scheme PDF44: three observations about the printed subject, supported from the poem. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-b-q1-b": {
+      "questionSha256": "3cfb6a931aff3a79ed53076227e2d991f1002c421ba41b10d0dce09bef872109",
+      "kind": "open",
+      "reason": "Scheme PDF44: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-c-q1-a": {
+      "questionSha256": "23ab194538467fe6b65ff84b8a88d9b6aa362135f5aff24b9ede905a665da282",
+      "kind": "required",
+      "reason": "Scheme PDF46: three observations about the printed subject, supported from the poem. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-c-q1-b": {
+      "questionSha256": "25f1482183724cb0b91b903401398942bcb0d91edd1abdfc9e1589ad74ed69e5",
+      "kind": "open",
+      "reason": "Scheme PDF46: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-d-q1-a": {
+      "questionSha256": "9af76b69e3578a165d115e718b8e16585979ce00300c2faa9a07617a56b3a2d6",
+      "kind": "required",
+      "reason": "Scheme PDF48: three observations about the printed subject, supported from the poem. One 15-mark response."
+    },
+    "english-2020-ol-p2-prescribed-d-q1-b": {
+      "questionSha256": "ef2dc74e19ed0098f837def7133c7b163131ea6a6c7979f0117cf40457760481",
+      "kind": "open",
+      "reason": "Scheme PDF48: whether, in the candidate’s opinion, the poem is (or is not) amusing, disturbing, emotional or joyful as printed — one judgement. One 15-mark response."
     }
   }
 }

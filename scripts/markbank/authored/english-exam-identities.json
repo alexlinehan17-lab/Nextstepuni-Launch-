@@ -2331,7 +2331,10 @@
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
       "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
       "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF14.",
-      "titlePrintedPage": 14
+      "titlePrintedPage": 14,
+      "sourcePages": [
+        14
+      ]
     },
     "english-2020-ol-p2-prescribed-b": {
       "topicId": "english-11-20",
@@ -2342,16 +2345,23 @@
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
       "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
       "titleEvidence": "Mixed-case title printed in the paper’s own question text on PDF15.",
-      "titlePrintedPage": 15
+      "titlePrintedPage": 15,
+      "sourcePages": [
+        15
+      ]
     },
     "english-2020-ol-p2-prescribed-c": {
       "topicId": "english-11-14",
-      "title": "Baby-Movements Ii, “Trailing Clouds”",
+      "title": "Baby-Movements II, “Trailing Clouds”",
       "canonicalLabel": "D.H. Lawrence",
       "observedHeading": "Poetry C · Baby-Movements Ii, “Trailing Clouds”",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
-      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "sourcePages": [
+        16
+      ],
+      "titleEvidence": "The paper prints this title only in capitals (PDF16); title-cased with the numeral kept as II."
     },
     "english-2020-ol-p2-prescribed-d": {
       "topicId": "english-11-65",
@@ -2360,7 +2370,10 @@
       "observedHeading": "Poetry D · Will We Work Together?",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
-      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c"
+      "sourceSha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2021-hl-p2-single-a": {
       "topicId": "english-12-23",
