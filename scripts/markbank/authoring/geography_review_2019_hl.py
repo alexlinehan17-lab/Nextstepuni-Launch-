@@ -199,7 +199,7 @@ PART_ONE = romans('1', P1, 2, L(2, 'Coastal Processes'), Q1S, ID + 'p1-q1', ('pa
      S(4, '(ii) · 2 valid processes', '(iii) · 2 valid landforms', LEFT),
      (one_plus_one('(ii) · 2 valid processes 1m + 1m', 'Two processes'),), '0-10', SEA),
     ('(iii)', 2, L(2, '(iii) Name two landforms formed as a result of coastal erosion.'),
-     S(4, '(iii) · 2 valid landforms', 'Q2', LEFT),
+     S(4, '(iii) · 2 valid landforms', '(iv) · True', LEFT),
      (one_plus_one('(iii) · 2 valid landforms 1m + 1m', 'Two landforms'),), '0-10', SEA),
     ('(iv)', 2, (L(2, '(iv) State whether the following statement is true or false.'),
                  L(2, 'The strength of a destructive wave’s swash is weaker than its backwash.')),

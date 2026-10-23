@@ -401,6 +401,33 @@ describe('independently reviewed Geography sittings', () => {
     expect(option.rubric.criteria[1].permittedMarks).toEqual([0, 6, 10, 14, 17, 20]);
   });
 
+  it('never repeats the question as an examiner direction', () => {
+    // Most 2017-2021 Ordinary schemes reprint each question above its
+    // allocation; 369 cards once listed that reprint as an examiner direction
+    // (and 2019 HL Q1(iii) listed part (iv)'s answer). A direction is the
+    // scheme's guidance, never the question again.
+    const words = (value: string) => value.toLowerCase().replace(/[^\p{L}\p{N}_]+/gu, ' ').trim();
+    const unlabel = (value: string) => value.trim().replace(/^\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*(?:·\s*)?/, '');
+    let directions = 0;
+    for (const card of authored.cards) {
+      const lines = new Set(card.questionText.split('\n').map(line => words(unlabel(line))));
+      const asked = ` ${words(card.questionText)} `;
+      for (const direction of card.directions ?? []) {
+        directions += 1;
+        const said = words(unlabel(direction));
+        expect(lines.has(said), `${card.id}: ${direction}`).toBe(false);
+        if (said.split(' ').length >= 4) expect(asked.includes(` ${said} `), `${card.id}: ${direction}`).toBe(false);
+      }
+    }
+    expect(directions).toBeGreaterThan(0);
+    expect(authoredById.get('geography-2019-hl-p1-q1-iii')?.directions).toEqual([]);
+    expect(authoredById.get('geography-2019-ol-p2-q3b-ii')?.directions).toEqual([
+      'Allow one SRP for relevant annotated diagram.',
+      'Relevant information, additional to the text, given on the diagrams can be awarded SRP’s.',
+      'At least one SRP for explanation.',
+    ]);
+  });
+
   it('pins the 2025 Higher review and its newly wired Oughterard companions', () => {
     const review = sitting(2025, 'higher');
     expect(review.taskCount).toBe(115);

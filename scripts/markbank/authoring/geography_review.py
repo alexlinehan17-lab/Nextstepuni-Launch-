@@ -15,6 +15,7 @@ equal the paper's printed question tariff stops generation.
 
 from __future__ import annotations
 
+import difflib
 import hashlib
 import itertools
 import os
@@ -453,6 +454,40 @@ def clean_directions(lines: list[str]) -> list[str]:
     return out
 
 
+ECHO_LABEL = re.compile(r'^\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*(?:·\s*)?')
+
+
+def _words(value: str) -> list[str]:
+    return re.sub(r'[^\w]+', ' ', value.lower()).split()
+
+
+def repeats_question(direction: str, question: str) -> bool:
+    """Whether a scheme line only reprints the card's own question.
+
+    Several schemes (most 2017-2021 Ordinary) print each question again above
+    its allocation. Shown as an examiner direction that is the question twice.
+    A line repeats the question when, without its part label, it is one of the
+    question's printed lines (a bullet item too), or a run of at least four of
+    its words (the scheme wraps a question line across two of its own), or,
+    labelled with a part the question prints, at least three quarters of its
+    words follow the question's in order (the scheme's reprint words a
+    question slightly differently: "in detail", "expenditure" for "amount")."""
+    said = _words(ECHO_LABEL.sub('', direction.strip()))
+    if not said:
+        return False
+    asked = _words(question)
+    run = ' '.join(said)
+    lines = {' '.join(_words(ECHO_LABEL.sub('', line.strip()))) for line in question.splitlines()}
+    if run in lines or (len(said) >= 4 and f' {run} ' in f" {' '.join(asked)} "):
+        return True
+    label = ECHO_LABEL.match(direction.strip())
+    printed = set(re.findall(r'(?m)^\((i|ii|iii|iv|v|vi|vii|viii|ix|x)\)', question))
+    if label and label.group(1) in printed and len(said) >= 4:
+        matcher = difflib.SequenceMatcher(None, said, asked, autojunk=False)
+        return sum(block.size for block in matcher.get_matching_blocks()) >= 0.75 * len(said)
+    return False
+
+
 def display(text: str) -> str:
     """Restore the paper's line structure for bullets and lettered items."""
     text = re.sub(r'\s*•\s*', '\n• ', text)
@@ -553,8 +588,9 @@ def build_task_cards(sitting: Sitting, task: Task, fileid: str,
                 'guidanceKind': criterion.kind,
                 'guidance': guidance,
             })
-        directions = clean_directions(
+        directions = [line for line in clean_directions(
             [line for i, line in enumerate(lines) if i not in used])
+            if not repeats_question(line, text)]
         topic = route.topic or task.topic
         topic_id = f'geography-{topic}'
         if topic_id not in topic_ids:
