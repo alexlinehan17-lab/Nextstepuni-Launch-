@@ -1982,16 +1982,18 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Mining"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Mining"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 }
 ]
@@ -2220,9 +2222,10 @@
 "units":[
 {
 "action":"Examine",
+"count":"one of the following surface processes",
 "focus":"how humans interact",
-"conditions":[
-"Coastal processes"
+"use":[
+"River processes • Coastal processes • Mass movement processes"
 ]
 }
 ]
@@ -2388,20 +2391,26 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following economic activities",
 "focus":"the development",
 "conditions":[
-"Financial services",
 "with reference to a developed economy",
 "that you have studied"
+],
+"use":[
+"Tourism • Financial services • Service and footloose industries"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following economic activities",
 "focus":"the development",
 "conditions":[
-"Financial services",
 "with reference to a developed economy",
 "that you have studied"
+],
+"use":[
+"Tourism • Financial services • Service and footloose industries"
 ]
 }
 ]
@@ -2411,16 +2420,18 @@
 "units":[
 {
 "action":"Describe",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Oil/Gas exploitation"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 },
 {
 "action":"explain",
+"count":"one of the following",
 "focus":"how humans interact with the rock cycle",
-"conditions":[
-"Oil/Gas exploitation"
+"use":[
+"Quarrying • Mining • Oil/Gas exploitation • Geothermal energy production"
 ]
 }
 ]
@@ -2560,32 +2571,12 @@
 "count":"any two of the following",
 "focus":"the development",
 "conditions":[
-"The reasons why tourists are attracted to the region",
 "with reference to a European region",
 "not in Ireland",
 "that you have studied"
-]
-},
-{
-"action":"Explain",
-"count":"any two of the following",
-"focus":"the development",
-"conditions":[
-"The importance of manufacturing to the region",
-"with reference to a European region",
-"not in Ireland",
-"that you have studied"
-]
-},
-{
-"action":"Explain",
-"count":"any two of the following",
-"focus":"the development",
-"conditions":[
-"The development of transport in the region",
-"with reference to a European region",
-"not in Ireland",
-"that you have studied"
+],
+"use":[
+"The reasons why tourists are attracted to the region • The importance of manufacturing to the region • The development of transport in the region"
 ]
 }
 ]
@@ -2712,6 +2703,9 @@
 "focus":"the highest Human Development Index value",
 "conditions":[
 "in 2018"
+],
+"use":[
+"the table above"
 ]
 }
 ]
@@ -2917,32 +2911,9 @@
 "focus":"tourists visited Ireland",
 "conditions":[
 "In 2023"
-]
-},
-{
-"action":"What was",
-"focus":"the average spend per trip made by tourists"
-},
-{
-"action":"What was",
-"focus":"the average length of stay",
-"conditions":[
-"(in nights)"
-]
-},
-{
-"action":"Where",
-"focus":"most ferry passengers come from",
-"conditions":[
-"in 2023"
-]
-},
-{
-"action":"Name",
-"count":"one",
-"focus":"tourist attraction",
-"conditions":[
-"in Ireland"
+],
+"use":[
+"the information above"
 ]
 }
 ]
@@ -2954,24 +2925,8 @@
 "action":"Discuss",
 "count":"three of the following",
 "focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Resource use"
-]
-},
-{
-"action":"Discuss",
-"count":"three of the following",
-"focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Fair trade"
-]
-},
-{
-"action":"Discuss",
-"count":"three of the following",
-"focus":"Sustainability is a model for future human and economic development",
-"conditions":[
-"Justice issues"
+"use":[
+"Resource use • Fair trade • Justice issues • Self-reliance"
 ]
 }
 ]
@@ -3080,6 +3035,9 @@
 "focus":"the types of fault",
 "conditions":[
 "labelled A and B"
+],
+"use":[
+"the diagram above"
 ]
 }
 ]
