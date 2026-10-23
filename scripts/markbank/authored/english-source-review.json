@@ -167,15 +167,15 @@
       "questionSha256": "a95fdbe16a55864d941b345159f9b3d6e40b46c4d8eeb8abc88570a646d84b08"
     },
     "english-2019-hl-p1-t2-b": {
-      "kind": "source-illustration",
-      "label": "SOURCE MATERIAL",
-      "title": "Earth from space — photograph in Text 2",
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Photographer’s Perspective",
       "pages": [
         5
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The prompt explicitly directs the student to look at this photograph.",
-      "questionSha256": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e"
+      "attribution": "Edited extracts from David Park’s novel Travelling in a Strange Land (PDF4) and the Apollo 17 photograph of Earth, 1972 (PDF5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e",
+      "reason": "The task begins “Look at the photograph on page 5”: the Apollo 17 photograph of Earth, PDF5 (the earlier reader carried an invented title)."
     },
     "english-2020-hl-p1-t1-b": {
       "kind": "source-illustration",
@@ -5059,6 +5059,118 @@
       "attribution": "For We Shall Stare at Mobile Phones — Brian Bilston, as reproduced in the SEC 2017 paper.",
       "questionSha256": "8a3c8f8f7a659784b72a3252d5fa4e566fe87cc8535c50f0df16ceda4f9df70f",
       "reason": "Paper PDF13 prints the introduction, the title, all six stanzas, the byline and the gloss (*tomes are books) above both questions; visually verified. PDF14 begins Prescribed Poem A and is excluded."
+    },
+    "english-2019-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "What Is Art For?",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Jeanette Winterson — edited from her article “What is Art for?” (jeanettewinterson.com), with an image (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "cdb086bef13ba00ea80d2d229bda66b2816af26a6f84fc98c1a369d3ff5a8356",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2019-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "What Is Art For?",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Jeanette Winterson — edited from her article “What is Art for?” (jeanettewinterson.com), with an image (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "3c5474e7a7af83d7239ac8b58b82dc8ee79d2373772c6530f10854745da287bf",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2019-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Libraries: Cathedrals of Our Souls",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Caitlin Moran — adapted from her essay Libraries: Cathedrals of Our Souls (Moranthology), with a photograph of Warstones Library (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "4c6ba04cddf5af5d9147886b0bfffa14008a8f18c29564431e5170b4f2dca7b5",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2019-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Libraries: Cathedrals of Our Souls",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Caitlin Moran — adapted from her essay Libraries: Cathedrals of Our Souls (Moranthology), with a photograph of Warstones Library (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "528682ed592f2e7f9ced71d566cb05ac580fe315c15dfa8c2433fd16cbefff29",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2019-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Photographer’s Perspective",
+      "pages": [
+        4
+      ],
+      "attribution": "Edited extracts from David Park’s novel Travelling in a Strange Land (PDF4) and the Apollo 17 photograph of Earth, 1972 (PDF5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "35ad96efa4a214ed8e36b2c882807e5324dbcac4266781b9a02f172c551c34d1",
+      "reason": "The task reads “page 4 of TEXT 2”: the heading, introduction and Tom’s narrative, all on PDF4."
+    },
+    "english-2019-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "A Photographer’s Perspective",
+      "pages": [
+        4
+      ],
+      "attribution": "Edited extracts from David Park’s novel Travelling in a Strange Land (PDF4) and the Apollo 17 photograph of Earth, 1972 (PDF5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "8df43edd1d17e841ff71bd05c6ef846953a964f130a73ccce1b926b76cb4209b",
+      "reason": "The task reads “evident on page 4 of TEXT 2”: Tom’s narrative on PDF4."
+    },
+    "english-2019-hl-p1-t1-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "WHAT IS ART FOR?",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
+      "questionSha256": "4bf1e4ca0d34379987e2297b5fc20836585eb9cc06d4487c279d36e203d3e7dd",
+      "reason": "The image, moment or episode comes from a Shakespearean play studied (Macbeth or The Tempest); the quotation from TEXT 1 is printed in the task; scheme PDF5 never asks for TEXT 1."
+    },
+    "english-2019-hl-p1-t2-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "A PHOTOGRAPHER’S PERSPECTIVE",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
+      "questionSha256": "36ea5ae0a310a0960a4f98c179b2ec8e7bbee86b3b3d457743f3131441fda296",
+      "reason": "The image, moment or episode comes from any text specified for 2019; the phrase from TEXT 2 is quoted in the task; scheme PDF7 never asks for TEXT 2."
+    },
+    "english-2019-hl-p1-t3-a-ii": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "LIBRARIES: CATHEDRALS OF OUR SOULS",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
+      "questionSha256": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b",
+      "reason": "The image, moment or episode comes from any text specified for 2019; scheme PDF10 never asks for TEXT 3."
     }
   }
 }

@@ -1550,22 +1550,22 @@
     "english-2019-hl-p1-t1-a-ii": {
       "questionSha256": "4bf1e4ca0d34379987e2297b5fc20836585eb9cc06d4487c279d36e203d3e7dd",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF5: an image, moment or episode of the candidate’s own from Macbeth or The Tempest (the Shakespearean play studied), and the insight(s) gained; “Pay particular attention to the focus on insight(s)”. One 15-mark response."
     },
     "english-2019-hl-p1-t1-a-iii": {
       "questionSha256": "3c5474e7a7af83d7239ac8b58b82dc8ee79d2373772c6530f10854745da287bf",
       "kind": "flexible",
-      "reason": "The paper explicitly permits a flexible mixture or number of aspects. These are not mutually exclusive fixed-size answer routes."
+      "reason": "Scheme PDF5: “any combination of four elements of argumentative or persuasive language” and why they encourage agreement. One 20-mark response."
     },
     "english-2019-hl-p1-t2-a-ii": {
       "questionSha256": "36ea5ae0a310a0960a4f98c179b2ec8e7bbee86b3b3d457743f3131441fda296",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF7: an image, moment or episode of the candidate’s own from any text specified for Leaving Certificate English in 2019, and the insight(s) gained; “Pay particular attention to the focus on insight(s)”. One 15-mark response."
     },
     "english-2019-hl-p1-t3-a-ii": {
       "questionSha256": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF10: an image, moment or episode of the candidate’s own from any text specified for Leaving Certificate English in 2019 that opened a door into another world, and the insight(s) gained; “Pay particular attention to the focus on insight(s)”. One 15-mark response."
     },
     "english-2019-ol-p1-t1-a-ii": {
       "questionSha256": "17abaf2e5d441c32f3f8b0f76c9ca488946c19b92c007e1d113ee008d682b576",
@@ -2273,17 +2273,17 @@
     "english-2019-hl-p1-t1-b": {
       "questionSha256": "7da321c70c8b7a77ba828f89146a34dd2139dd1ee95b2a8acdb19e7d0cdd738a",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: an opinion piece extolling the virtues of sport, arguing its benefits, and giving views on sport and money; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2019-hl-p1-t2-b": {
       "questionSha256": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF9: a reflective journal entry criticising humanity’s folly, sharing memories of the planet and celebrating Earth’s former glories; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2019-hl-p1-t3-b": {
       "questionSha256": "0bb553ffda39304589232277e8927bccfeb5a31c88e8765e8d61783f62774f9d",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF12: an introduction to a collection of essays celebrating real shopping, what shops bring to communities, and the implications of online shopping; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2019-ol-p1-t1-b": {
       "questionSha256": "fb744e5d084a4e7f9f7eef3b2cfb03f6557910aba17889489712339204d210e4",
@@ -2814,7 +2814,7 @@
     "english-2019-hl-p1-composing-7": {
       "questionSha256": "90b442b863787456a9012cc41458cb662266bf845519c26a87b655c6f34cfb87",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF20 — a speech “for or against the motion: We are a self-obsessed generation”; both sides are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3744,32 +3744,32 @@
     "english-2019-hl-p1-composing-1": {
       "questionSha256": "d01eb8b1ae7eb0061ed8e055f26b60ce93adf7030905196e6f7be1c3afe23481",
       "kind": "required",
-      "reason": "The stated subjects or perspectives are required together. They do not form optional alternative tasks."
+      "reason": "Scheme PDF14: a descriptive essay capturing the difference between dawn and dusk and celebrating both. One 100-mark composition."
     },
     "english-2019-hl-p1-composing-2": {
       "questionSha256": "d3e71f1eb67c1d207d88c69b33a708b50ab5d27b9ad38660043469fe826720af",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF15: a spy short story in which a librarian, a photograph and a chair are all central. One 100-mark composition."
     },
     "english-2019-hl-p1-composing-3": {
       "questionSha256": "5c03661f2d5376fbfe1b3ccbbad846b9097b162cf5469a098640eaf22bf49a41",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a personal essay reflecting on what feeds the candidate’s imagination. One 100-mark composition."
     },
     "english-2019-hl-p1-composing-4": {
       "questionSha256": "cdb8c06e814376bac30290df383f88c251980be487b684bafb106ce80a6774f6",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF17: a short story capturing the evolving relationship between two characters, one young and one old, travelling in a strange land. One 100-mark composition."
     },
     "english-2019-hl-p1-composing-5": {
       "questionSha256": "f1931ff8a60191237933e5a6407416f05cb00fafcd0a2281c76c634144a0c73a",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF18: a discursive essay on “more than one item” that symbolises the values of the candidate’s generation. One 100-mark composition."
     },
     "english-2019-hl-p1-composing-6": {
       "questionSha256": "34236a93e3201d3d12285d47b8a809973249a1455e7937cfee30deb1b8f17437",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a personal essay on places (literal and/or metaphorical) that shaped and defined the candidate. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-1": {
       "questionSha256": "5152707dea1b2bc82e4ae922a4dc5a3635c3419ecfa30fa8037c7368c2459e21",
@@ -18015,6 +18015,31 @@
       "questionSha256": "6411f20e5af669b65ada6dbe935d3a46c0a8e0ff15249af64e241a2f78055d65",
       "kind": "open",
       "reason": "Scheme PDF44: a letter in the printed persona, “with or without the usual rubrics”, demonstrating knowledge of the poem. One 20-mark response."
+    },
+    "english-2019-hl-p1-t1-a-i": {
+      "questionSha256": "cdb086bef13ba00ea80d2d229bda66b2816af26a6f84fc98c1a369d3ff5a8356",
+      "kind": "open",
+      "reason": "Scheme PDF4: three distinct points Jeanette Winterson makes about the value and importance of the arts, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2019-hl-p1-t2-a-i": {
+      "questionSha256": "35ad96efa4a214ed8e36b2c882807e5324dbcac4266781b9a02f172c551c34d1",
+      "kind": "open",
+      "reason": "Scheme PDF7: three distinct points Tom makes about the value and power of “proper” photographs, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2019-hl-p1-t2-a-iii": {
+      "questionSha256": "8df43edd1d17e841ff71bd05c6ef846953a964f130a73ccce1b926b76cb4209b",
+      "kind": "open",
+      "reason": "Scheme PDF8: four elements of the narrative style that make Tom real and convincing, chosen freely from page 4. One 20-mark response."
+    },
+    "english-2019-hl-p1-t3-a-i": {
+      "questionSha256": "4c6ba04cddf5af5d9147886b0bfffa14008a8f18c29564431e5170b4f2dca7b5",
+      "kind": "open",
+      "reason": "Scheme PDF10: three distinct points Caitlin Moran makes about the social benefits of public libraries, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2019-hl-p1-t3-a-iii": {
+      "questionSha256": "528682ed592f2e7f9ced71d566cb05ac580fe315c15dfa8c2433fd16cbefff29",
+      "kind": "open",
+      "reason": "Scheme PDF11: four elements of the writer’s style, chosen freely, that make this a good personal essay. One 20-mark response."
     }
   }
 }

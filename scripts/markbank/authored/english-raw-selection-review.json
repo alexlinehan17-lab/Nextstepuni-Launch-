@@ -7539,241 +7539,235 @@
       "textSha256": "44325988c8f0f3f8b4fc957c29fd0889e0dc41acf54dfaee69cd6b57f1b3d747",
       "contextSha256": "107393324cf4750684b03b7857a692d06c242a69ca0b99d60eb4600f002c14cb",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t1-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t1-a-ii": "4bf1e4ca0d34379987e2297b5fc20836585eb9cc06d4487c279d36e203d3e7dd"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p3-pdf-51-f509296b93e7": {
       "textSha256": "f509296b93e752d5fa7e23c3d75ebaf34f106a3c8aea16ad17ef6e7f6f3a1742",
       "contextSha256": "7e2da67f518f940edc8c9e77a0e23f5edf2e4a5c1278343e0b37d641db6acd94",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t1-a-iii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t1-a-iii": "3c5474e7a7af83d7239ac8b58b82dc8ee79d2373772c6530f10854745da287bf"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p3-pdf-53-83440c598a50": {
       "textSha256": "83440c598a50e9769f40221dd362aa40c476837c563fd6e8565947c70b8a598b",
       "contextSha256": "4f30dac1358d5d7d6ede05b8b2def42b0f9c64f827ecc7bba1bffdea3b1621a3",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t1-a-iii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t1-a-iii": "3c5474e7a7af83d7239ac8b58b82dc8ee79d2373772c6530f10854745da287bf"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p3-pdf-58-d64df325956e": {
       "textSha256": "d64df325956e9758d863ed9f2c752044b5ff3d434417e6b458cd4ef1abd7167e",
       "contextSha256": "067b41602be953e2b76f0b26c846a665a521b7b16651223ac162f78ab68d5cac",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t1-b"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t1-b": "7da321c70c8b7a77ba828f89146a34dd2139dd1ee95b2a8acdb19e7d0cdd738a"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p5-pdf-9-608ea86665a4": {
       "textSha256": "608ea86665a4af997167cc55d39c1a4345792c9ff738602f631a57941115ebd1",
       "contextSha256": "2a6a32d6119370688c9a7805a7bfc2b296153a36927ee9102771d77b8ea5f2bb",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t2-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t2-a-ii": "36ea5ae0a310a0960a4f98c179b2ec8e7bbee86b3b3d457743f3131441fda296"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p5-pdf-10-68654698ed0f": {
       "textSha256": "68654698ed0fd17b5338961dd983f1ef0393827f724588e0b0919cf24ab9bc3c",
       "contextSha256": "360f04370efade0c3a975fb290d670b784130541f7e891fcdbd0e48675e1f7ae",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t2-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t2-a-ii": "36ea5ae0a310a0960a4f98c179b2ec8e7bbee86b3b3d457743f3131441fda296"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p5-pdf-11-04f908a3c2b0": {
       "textSha256": "04f908a3c2b04a2c4dd822b4f74d160e71bf4df36abd2a142dd4054ee5473c6d",
       "contextSha256": "415e65aaa80b9ed9055bcbc05f7c7d5a467652df3d1a7bac89497440388b1e3d",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t2-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t2-a-ii": "36ea5ae0a310a0960a4f98c179b2ec8e7bbee86b3b3d457743f3131441fda296"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p5-pdf-22-55f5241effa6": {
       "textSha256": "55f5241effa6dfaeab65cd7545a4532fe5559262c52b700d891dcceb33668341",
       "contextSha256": "cc93d0d62fbfad3074d087fc47c5a4e0989c6c44bfeb147512d7819ed1b12f61",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t2-b"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t2-b": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p5-pdf-23-1e58260a9ee3": {
       "textSha256": "1e58260a9ee38c694ab562aa7e3a7bba9851c325be13d4866acf318cc87d75e2",
       "contextSha256": "934ff39c478839aa19ceaf766efd60f893fb4774ffedd4c0599dce55c1592aef",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t2-b"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t2-b": "a3dc7e0f6934a6afc44716d6f4bcb444f4c669897c0e2c260e29790356f8b94e"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p7-pdf-39-831bc4f90f56": {
       "textSha256": "831bc4f90f560516d0df0cff1853699daaa9383412f4dc8fc20f130ff7abede3",
       "contextSha256": "37c9417831456f9dd3c3f1b3d4b085abfd6855b299277063aad522b1bb4e6045",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t3-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t3-a-ii": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p7-pdf-40-96a37d576baa": {
       "textSha256": "96a37d576baa7a94de5ed618bde817c2088a58f99d1f4a47f079584f00d96865",
       "contextSha256": "eb984e970f07b7706cd499eba39ff7ee0fe43f3229b549eabe6394be6b83d75f",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t3-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t3-a-ii": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p7-pdf-42-bac1f796f2ab": {
       "textSha256": "bac1f796f2abdd8aee071a6099b07f728f4a5b69bffd082c9247ffd6415751b7",
       "contextSha256": "bd1701f1c393c8e72f81b027a95e991e082df72c1cb7e48f48e230e118f8a05a",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t3-a-ii"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t3-a-ii": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p7-pdf-52-d0bd8d34a017": {
       "textSha256": "d0bd8d34a017295c4f9a6c8548c598b4314d711e261c64ed6f74cb5ffb02222d",
       "contextSha256": "ce6c15b4e5dc3baf767abea704541b650af3ce6778b8e3787228c547a97c4da8",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-t3-b"
       ],
       "taskSha256": {
         "english-2019-hl-p1-t3-b": "0bb553ffda39304589232277e8927bccfeb5a31c88e8765e8d61783f62774f9d"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-8-e97c63f0d594": {
       "textSha256": "e97c63f0d594d9dc795d257610e5a3c8262a3bc05fcaf4e7a6f25e0470024f7e",
       "contextSha256": "b56d340f49e8b9020ee8defc4736b7e06f2b4db33ce674771f35faf53e2745ce",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-1"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-1": "d01eb8b1ae7eb0061ed8e055f26b60ce93adf7030905196e6f7be1c3afe23481"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-11-5823b3e3ffdf": {
       "textSha256": "5823b3e3ffdfb86e84f9fc5b06db1ca6c3055ffd66ed40bf0fd4e03756f23f74",
       "contextSha256": "18fb2da2fc11d313eabe52f32acf9f57fea19b111e0fd6a112d7c47703abb32e",
-      "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
-      "taskIds": [
-        "english-2019-hl-p1-composing-2"
-      ],
-      "taskSha256": {
-        "english-2019-hl-p1-composing-2": "d3e71f1eb67c1d207d88c69b33a708b50ab5d27b9ad38660043469fe826720af"
-      }
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
     },
     "english-2019-hl-p1-p8-pdf-12-150f51ac3e06": {
       "textSha256": "150f51ac3e06eb95e31d8dcc0f6e0b9a49227beb677027afc889d4c68c85461e",
       "contextSha256": "19b5779583f3b6ac488d1a88ea3eb18893a1981d8dd9ee46eff30666c1933f2d",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-2"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-2": "d3e71f1eb67c1d207d88c69b33a708b50ab5d27b9ad38660043469fe826720af"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-16-893d0a2ee219": {
       "textSha256": "893d0a2ee2197ee16c75a1e6daec0e14c010f00ec38d75bcceefaadac54b42a2",
       "contextSha256": "325e9960ff8a3eb015e4578686a74b7bd642c8d4e7c96f77f7e78ddc27802073",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-3"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-3": "5c03661f2d5376fbfe1b3ccbbad846b9097b162cf5469a098640eaf22bf49a41"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-19-b537a9abba08": {
       "textSha256": "b537a9abba08b4de9df9fe2640087a930fbae312550a38ec1528c363ffba1c12",
       "contextSha256": "f895781eb09327b6f334a033bf554b6cfad150b1ce97f6242bd69f2451f91b3b",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-4"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-4": "cdb8c06e814376bac30290df383f88c251980be487b684bafb106ce80a6774f6"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-27-48366e043233": {
       "textSha256": "48366e04323303d89b61690468a7d0034a19fa87215bdf06282e909e592e65fc",
       "contextSha256": "ffacbfaebabbec8c6f42a687cfd7666e2687794df3877f285dfd002a5429b529",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-6"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-6": "34236a93e3201d3d12285d47b8a809973249a1455e7937cfee30deb1b8f17437"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p1-p8-pdf-31-18a081fdd79d": {
       "textSha256": "18a081fdd79dd90a3ed30d32ba113b3812cd7757a79ad31d3be2060c2967d506",
       "contextSha256": "75b1f12f69a620cd31de2e6e47085651beebd971a2eb2061f00ac873d692150a",
       "kind": "tasks",
-      "reason": "The complete multiword directive line occurs in the linked task wording inside this paper region. Its fixed/open/flexible selection decision is recorded separately for every linked task; the binding fails if either source context or task wording changes.",
       "taskIds": [
         "english-2019-hl-p1-composing-7"
       ],
       "taskSha256": {
         "english-2019-hl-p1-composing-7": "90b442b863787456a9012cc41458cb662266bf845519c26a87b655c6f34cfb87"
-      }
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
     },
     "english-2019-hl-p2-p2-pdf-11-f49297b961dc": {
       "textSha256": "f49297b961dc94807a38299b284de7bcb0c142ae21f0df06de4a744652623643",
@@ -39974,6 +39968,204 @@
       "contextSha256": "5f67ef75e95e302272c4b48bdb07dc7e2ef327e361f88eb856e3efc9151c0b08",
       "kind": "exam-instruction",
       "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2019-hl-p1-p1-pdf-25-7df1b453ee72": {
+      "textSha256": "7df1b453ee72580a895f131468cd7f7ff9308babf9e15c3537d79b3f83a7da9a",
+      "contextSha256": "e5b64938e384545f2788e808632d9b1d797dc447d6e5ae0d0da9b9c541a1aef8",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2019-hl-p1-p2-pdf-20-63d9c1566e2c": {
+      "textSha256": "63d9c1566e2cc23df6b9ba0a5b6f384a4b59611053e0afe5985c0aaa46d8490a",
+      "contextSha256": "238c2c2a0658d10b241398c88eebb396029eeacf2af39b93f77e57479b6e3c2e",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p2-pdf-33-870e92873eec": {
+      "textSha256": "870e92873eecf59df0143615128566b552467214cafcdc58047897e84617f13c",
+      "contextSha256": "ceb68c434a0cf23f506694d11604076906603437760cd974e88e85cde9997bc7",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p2-pdf-37-974f44cd44c1": {
+      "textSha256": "974f44cd44c1e91863898a0e27f7038302a099e41b2a6bb2bbb22e1a31f61897",
+      "contextSha256": "5ca3ed0cc1dbe8cd2b994b07afc87d5b7886b2f7ddab618aaa8ce1f370d7987f",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p2-pdf-42-d63eff61bfcc": {
+      "textSha256": "d63eff61bfcce2a27214fad0dc520197386339a704d6c185e9d5c0154f6881e8",
+      "contextSha256": "a5bd4135b7ed1b110b573d8b2a843a9f7e0dc6d735c1f5bf51b4ab232bf6cbf1",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p2-pdf-44-402b883ba295": {
+      "textSha256": "402b883ba29557475633db0348bbe5077547b2c8f864b9f5046b0fe601dcd951",
+      "contextSha256": "150e3b85fbb96ccc20dee2fec992ce5a695ff8a20c9ae74468b5269ba6a35e7d",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p2-pdf-57-5e4f418f7215": {
+      "textSha256": "5e4f418f72150f2c102d0e7eb6156f9cbcdec233dc7c1f0b50ad2ad2864d56e1",
+      "contextSha256": "384e0d510954cd708514c4114281390e0b7074758d18eec88a0f6d3ca9be0fec",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p3-pdf-4-51c3882b8b43": {
+      "textSha256": "51c3882b8b43b32d3d4fe86e3758f3614894b4850fc88b124ea9af4096d69380",
+      "contextSha256": "327ce8dbc17985bcbca27e0ebf3e687f3cdea13be7035897941d91a096e8f160",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p3-pdf-25-98c60e8e2239": {
+      "textSha256": "98c60e8e2239918b104af2a9aafdffa13cba97f65f430093fb1bda8f068e1b8a",
+      "contextSha256": "54d20b41352f70c7eefd0fe217bc3529390043806a4018ef4322d1d77f1dfe75",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p3-pdf-48-c1d286c9c151": {
+      "textSha256": "c1d286c9c151e6538a959b76d7ece9fffadcf42213433475f768b6193e9ce237",
+      "contextSha256": "5f53583b280132f79891d8d345779cd037276ce1eda7e2fec7d22288ed69afd2",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2019-hl-p1-t1-a-ii"
+      ],
+      "taskSha256": {
+        "english-2019-hl-p1-t1-a-ii": "4bf1e4ca0d34379987e2297b5fc20836585eb9cc06d4487c279d36e203d3e7dd"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2019-hl-p1-p4-pdf-7-646af90ac77d": {
+      "textSha256": "646af90ac77d5c5ef61298ba974127e1a43b73731cca312802c92f33a9c1fbb8",
+      "contextSha256": "cf71a974876cf1c1824b745674d0fbce52b7daa698ecc99c928cc39a4af833aa",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-17-25e2ea0df075": {
+      "textSha256": "25e2ea0df075b6f9807daf91ba2dec828d6d40d06143456c369e62d8e3295f2a",
+      "contextSha256": "dbb7cb369061b747e9ad8c2b1c191ffbc6f94f04c041171e5070fb9548227ecc",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-32-40ad8c9af09d": {
+      "textSha256": "40ad8c9af09d7cfaa87bd263b8ad55471fa9be293f0d37bd767e3c5715b33d81",
+      "contextSha256": "53d22fb027180b52652d54e90399c196b33236121f70e0561c6c964e2a33e4fd",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-38-3e71a09abb3b": {
+      "textSha256": "3e71a09abb3bb9c48353787c2bde84a6d63d5e5cee3618f56559cb4718d51dde",
+      "contextSha256": "f6e11a76c626faba348e8583c98362c991e778c73ef518f372335d1a04a316ab",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-69-917a58cdb53d": {
+      "textSha256": "917a58cdb53db02f192be44421a20b2d356ee5257465aef010294f4be9caf14f",
+      "contextSha256": "4df35a862a0e8d80179ff630666fd8356a88a2d7bbb8b90b4787c3819f8b91c4",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-73-57363b03d2ae": {
+      "textSha256": "57363b03d2aeb7b46e7a8bb2068536f34cbfc9855bab60184293cab9e6373996",
+      "contextSha256": "17e4ff0c60be9492c60d4bf908ef6628d64f4fe8e25621f89ca7cb059cb3cfce",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-74-de0f342e5a71": {
+      "textSha256": "de0f342e5a718288b25978c9861400134a2fe7341c340939e1790cfe46319a4f",
+      "contextSha256": "df7719853e0aa92da0aca74658cf6a6db3aa6ac207b816623c12c8a0f0e7ca50",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p4-pdf-78-4a0ef14ee49a": {
+      "textSha256": "4a0ef14ee49abd8ebf48e1b12dd74e86491f89d3c2670f95dc65f2fefadc703b",
+      "contextSha256": "aebb749b0e7c40d158de9bb9317ae8a4c2c04cb02e9c4a3e66aaaae2b7aed4f6",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p5-pdf-4-f8f68f584c0b": {
+      "textSha256": "f8f68f584c0bc90fc58206a00a251af60da9d1d1cc01689fb30d5ade726f4814",
+      "contextSha256": "60410e0df1d33331afd585f2b5ba17fcbc9c29168eeb257213c920ad37d40e57",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2019-hl-p1-t2-a-i"
+      ],
+      "taskSha256": {
+        "english-2019-hl-p1-t2-a-i": "35ad96efa4a214ed8e36b2c882807e5324dbcac4266781b9a02f172c551c34d1"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2019-hl-p1-p5-pdf-16-95ae1a26e3e6": {
+      "textSha256": "95ae1a26e3e6f7fa2f30912f531669bf393414fc23ca447fe7e6625d972d978b",
+      "contextSha256": "9afe9c06b591eb63c06801954883b143f8fda8614234ac8909d8e44223885dcf",
+      "kind": "tasks",
+      "taskIds": [
+        "english-2019-hl-p1-t2-a-iii"
+      ],
+      "taskSha256": {
+        "english-2019-hl-p1-t2-a-iii": "8df43edd1d17e841ff71bd05c6ef846953a964f130a73ccce1b926b76cb4209b"
+      },
+      "reason": "Visually located inside this task’s printed region on the viewed page. Its own selection decision carries the analysis; the binding fails if the line, its context or the task wording changes."
+    },
+    "english-2019-hl-p1-p6-pdf-2-c7cbddb86e90": {
+      "textSha256": "c7cbddb86e902676eb5d6dde5b32b4795bcf29789f9c257c41ddc9708a2e111b",
+      "contextSha256": "ba85f3b36eb7ee6c8d8dc33657c167f4245dfaddc6c1f59765388ff2f24e20e9",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p6-pdf-40-d99c30671f99": {
+      "textSha256": "d99c30671f99adde419b36bc9f6e57813468d9f37d99598e7a03444080d26fb8",
+      "contextSha256": "c4fd4b39714bc56a4b216e65b2811833fd9e996435fb1d59a7775199bc7ded4b",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p6-pdf-67-344707581c31": {
+      "textSha256": "344707581c31773d1ba087b97d5fafc158b4f49ded02b1e15a3b0c46aa0b8473",
+      "contextSha256": "3684c4ec51cfa7fe91da93b9d0c60d03e5e9f70bbeeb4a90f20cbc85e73943de",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p6-pdf-72-ad7d83e6c0f1": {
+      "textSha256": "ad7d83e6c0f1cfe0a7ba41b938f9652ce8b86ce782ae2ea1932dffe1a6116403",
+      "contextSha256": "a9b398990220d4f8523240dc297770e01d034dc2d1a9c51cc03a4ebef95fdd8c",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p7-pdf-5-d38a93343fe5": {
+      "textSha256": "d38a93343fe5628b14df588bbce69f15f8325c58cc97990c4f3a3e794bac41d0",
+      "contextSha256": "32f3a6f790b2189dfc2fe5fdeb0d30d4422a1229553ef7cdf81cd05a6565c8cd",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p7-pdf-15-6f778da32906": {
+      "textSha256": "6f778da329068f33f92badeb96697a5c157be829f18c8cedf6bd6c7cbc15eb59",
+      "contextSha256": "c806b0113932d72b35dabbc57a65fc17dfd9934a91b173d045c1cf5f0cd88958",
+      "kind": "source-prose",
+      "reason": "A line of a printed passage, poem or introduction, visually verified; the matched word is narrative, argument or poetry, not an answer-choice directive. Includes the TEXT 3 introduction (PDF6) and composing 2’s non-bold lead-in quoting TEXT 3 (PDF8)."
+    },
+    "english-2019-hl-p1-p8-pdf-2-0c93146bfbe3": {
+      "textSha256": "0c93146bfbe336dd32a9c23cd429388bb8436b799153678e03c362454e422bf6",
+      "contextSha256": "a23e73f2173160966a599b88a6ec31fb3c7ce6d7c3597d95ea6c25baa3bc0da9",
+      "kind": "exam-instruction",
+      "reason": "Visually verified rubric: the cover or section instruction, a choice rubric, an OR separating numbered alternatives, or a composing rubric. Every alternative is its own reviewed task."
+    },
+    "english-2019-hl-p1-p12-pdf-10-89bbb8c8d48b": {
+      "textSha256": "89bbb8c8d48b1259f722e2928c832a27f2d219a0ecccab2bcd764429d9e5cfe7",
+      "contextSha256": "f1f707219a065ebed55e0a825d3f206a7e0299a8804be918481733941ddb34a5",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2019-hl-p1-p12-pdf-11-050241a3c10d": {
+      "textSha256": "050241a3c10ded6f55854c7bf3728081fc7970356a7f0569b1910c0cf494785b",
+      "contextSha256": "638ac120a532ec27098a6c051e42559c802a3fc57e6bbd52dcb0530f2124d7b6",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
+    },
+    "english-2019-hl-p1-p12-pdf-12-22919f8d8e98": {
+      "textSha256": "22919f8d8e983d41c5f2c099647ada4cbd55f95e7726230257f1c0ec304b9d36",
+      "contextSha256": "bb02e7cff98414a584d021136ebc255ef5948ae1b498f561a47ffa72aaba6c9f",
+      "kind": "non-selection",
+      "reason": "Copyright, acknowledgement or authorised-use notice; not a candidate task or answer-route selection."
     }
   }
 }
