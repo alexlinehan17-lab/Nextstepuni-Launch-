@@ -3841,6 +3841,3913 @@
       "rule": "Independent review ledger: Leaving Certificate Geography 2010 Higher Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005ALP000EV (32 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005ALP000EV (41 pages), and the common\nCarrick-on-Suir companions, which Paper Trail holds only as JPEG images. In\n2010 the SEC file names are swapped relative to later years (checked by eye):\nLC005CLP004EV.jpg is the 1:50 000 map extract, LC005CLP003EV.jpg the oblique\naerial photograph, and LC005CLP000EV.jpg the OS legend sheet. Part One is 80\nmarks (any ten of twelve @ 8), Part Two 320 (four questions @ 80).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p11 Part One Questions 1-12 (p4\n  holds Q3 and Q4, p7 Q7 and Q8; Q1 prints four landscape photographs, Q3\n  four maps of Irish regions, Q5 an OS map extract of Coomasaharn Lake, Q6\n  an Atlantic weather chart, Q8 a sketch map of the aerial photograph, Q9\n  two rock photographs and a diagram, Q10 satellite images, Q11 a table, Q12\n  a population pyramid); p12 Part Two instructions; p13 Section 1 divider;\n  p14-p19 Q1-Q6 (p14 and p17 open with their dividers); p20 Section 2\n  divider; p21-p26 Electives Q7-Q12 (p21 and p24 open with their elective\n  dividers; p25 prints the 1830's map of Kilrush and a recent aerial\n  photograph beside it); p27 Section 3 divider and option note; p28-p29\n  Options Q13-Q24; p30-p32 printed \"Blank Page\".\n  Scheme p1 cover; p2 blank; p3 Part One table (a centred tariff heading,\n  then two columns: Q1-Q6, Q7-Q12; the answer lines print no marks); p4\n  Part Two instructions; p5 Section 1 divider; p6-p18 Q1-Q6 (p6 and p13\n  open with their dividers); p19 Section 2 divider; p20-p31 Q7-Q12 (p20 and\n  p26 open with their dividers); p32 Section 3 divider and option note;\n  p33-p36 Q13-Q24; p37 Geographical Investigation (coursework); p38 its\n  presentation marks; p39 investigation topics; p40 Irish-language bonus\n  marks; p41 back cover. The scheme reprints each Part Two question above\n  its allocation; every slice starts at the allocation.\n  Companions: Carrick-on-Suir map extract (the River Suir, the Glen River,\n  the Lingaun River, the N24, the R697, the South Leinster Way, the railway\n  and station); OS Discovery Series legend sheet; oblique aerial photograph\n  of Carrick-on-Suir (the River Suir and its two bridges in the left\n  background, the castle, sports fields and housing).\n\nPart One prices every question in one heading, printed as two lines under\n\"Each question:\": \"4 parts @ 2 marks each\" and \"8 parts @ 1 mark each\".\nEvery Part One card carries the heading line that prices it with its answer\nlines: Q2 (eight answers across six romans: (iv) two antiquities and (vi)\ntwo rivers) and Q7 (eight letters; the ninth, B = 1, is printed as the\nworked example and is not carded) are priced at one mark per answer, the\nrest at two marks a part. Matching tables, in the printed row order: Q1\nFreeze-thaw B, Abrasion D, Human activity C, Carbonation A; Q3 Urban region\nD, Cultural region A, Core region B, Political region C; Q7 A = 8, C = 9,\nD = 2, E = 7, F = 3, G = 4, H = 6, I = 5; Q8 Old Bridge Left Background,\nHouse Left Foreground, Wooded Island Right Foreground, Sports Field Centre\nBackground / Centre Middleground / Centre Centre; Q10 Sandstorm C, Icebergs\nA, Island Arc D, Alpine Glacier B.\n\nQ9(ii) prints its two answers as \"(ii) 1\" and, on the next line, a lone \"2\"\n(Rock B forms at 2). The reader treats a bare one- or two-digit line as page\nfurniture, so its slice keeps bare numerals (SchemeSlice.keep_digits) and\nends at \"Q10\", above the page number.\n\nPart Two A parts are priced by a heading over unpriced answer lines (\"Five\nanswers @ 4 marks each\" for 2A and 5A, \"Four answers @ 5 marks each\" for 3A,\n7A and 12A, with \"3 marks + 2 marks\" printed on the explanation lines); each\nroman card carries that heading. 5A(iii) accepts \"59.7 / 12.6 / 2.0 / 7.2\"\n(the question's wording admits several readings): that line is its\nguidance. 8A and 10A price the graph at 16 (title 2, scaled axis 2, six items\n@ 2 graded) and (ii) at 4. 11B prints (i) and (ii) in one [30m] allocation\nand is one card.\n\nThe options print no Overall Coherence table: coherence is graded inside\neach aspect (\"Number of aspects: 3 (27 + 27 + 26) / (4 @ 20 marks each)\",\n\"Identifying aspect: 4 marks / 4 marks\", \"Discussion\" or \"Examination: 8 x\nSRPs OR 6 x SRPs\", \"Overall coherence: 7/6 marks graded / 4 marks graded\").\nEither way the discussion is 24 SRPs (3 x 8 or 4 x 6), 48 marks, and\nidentifying plus coherence is 32 (3 x 4 + 7 + 7 + 6, or 4 x 4 + 4 x 4), so\neach option card prices those two criteria, as the 2012 Higher ledger does.\n\nPrinted choices: 1B (i) or (ii), with (i)'s \"landform of erosion or\ndeposition\" a route each; 3B (one of three printed processes) and 6B (any\none of three printed factors) are one route per printed option; option 20\n\"either language or religion\" is two routes. 8B's \"one or more of the\nfollowing headings\" lets the candidate combine headings and stays one card\nwith every heading printed."
     },
     {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "ev",
+      "status": "reviewed",
+      "reviewedAt": "2026-10-11",
+      "sources": {
+        "paper1": {
+          "fileid": "LC005GLP000EV.pdf",
+          "bytes": 3266667,
+          "sha256": "3085fc358d3531f743dfd052bb582b7da069dbb91fd9ca0737e805bff7ef0020",
+          "pages": 28
+        },
+        "paper2": {
+          "fileid": "LC005GLP000EV.pdf",
+          "bytes": 3266667,
+          "sha256": "3085fc358d3531f743dfd052bb582b7da069dbb91fd9ca0737e805bff7ef0020",
+          "pages": 28
+        },
+        "scheme": {
+          "fileid": "LC005GLP000EV.pdf",
+          "bytes": 503193,
+          "sha256": "e71abbf80bebbd12383e087540b885769bc7a72d988c648e813a431fef6027bf",
+          "pages": 36
+        },
+        "map": {
+          "fileid": "LC005CLP004EV.jpg",
+          "bytes": 2806497,
+          "sha256": "cd560bff82cbf8fce61075b888a93e317b336a2c376234a534a160c433d211da",
+          "pages": 1
+        },
+        "legend": {
+          "fileid": "LC005CLP000EV.jpg",
+          "bytes": 1636000,
+          "sha256": "2401749d58e4d208a35a2f4dd662f570da872121a7c7771c67e3820b62d42d46",
+          "pages": 1
+        },
+        "aerial": {
+          "fileid": "LC005CLP003EV.jpg",
+          "bytes": 4062934,
+          "sha256": "67964ad4b11bcbc09220c3cf9a567a345d0281b6793f0cabdc7b4837ad2919f0",
+          "pages": 1
+        }
+      },
+      "pageReview": {
+        "paper1": {
+          "1": "cover and examiner grid",
+          "2": "question",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "Part Two instructions",
+          "12": "section divider",
+          "13": "question",
+          "14": "question",
+          "15": "question",
+          "16": "question",
+          "17": "question",
+          "18": "question",
+          "19": "question",
+          "20": "section divider",
+          "21": "question",
+          "22": "question",
+          "23": "question",
+          "24": "question",
+          "25": "question",
+          "26": "question",
+          "27": "question",
+          "28": "blank page"
+        },
+        "paper2": {
+          "1": "cover and examiner grid",
+          "2": "question",
+          "3": "question",
+          "4": "question",
+          "5": "question",
+          "6": "question",
+          "7": "question",
+          "8": "question",
+          "9": "question",
+          "10": "question",
+          "11": "Part Two instructions",
+          "12": "section divider",
+          "13": "question",
+          "14": "question",
+          "15": "question",
+          "16": "question",
+          "17": "question",
+          "18": "question",
+          "19": "question",
+          "20": "section divider",
+          "21": "question",
+          "22": "question",
+          "23": "question",
+          "24": "question",
+          "25": "question",
+          "26": "question",
+          "27": "question",
+          "28": "blank page"
+        },
+        "scheme": {
+          "1": "cover",
+          "2": "blank",
+          "3": "geographical investigation (coursework)",
+          "4": "Part One allocation",
+          "5": "Part One allocation",
+          "6": "Part One allocation",
+          "7": "Part Two instructions and section divider",
+          "8": "Part Two allocation",
+          "9": "Part Two allocation",
+          "10": "Part Two allocation",
+          "11": "Part Two allocation",
+          "12": "Part Two allocation",
+          "13": "Part Two allocation",
+          "14": "Part Two allocation",
+          "15": "Part Two allocation",
+          "16": "Part Two allocation",
+          "17": "Part Two allocation",
+          "18": "Part Two allocation",
+          "19": "Part Two allocation",
+          "20": "section divider and Part Two allocation",
+          "21": "Part Two allocation",
+          "22": "Part Two allocation",
+          "23": "Part Two allocation",
+          "24": "Part Two allocation",
+          "25": "Part Two allocation",
+          "26": "Part Two allocation",
+          "27": "Part Two allocation",
+          "28": "Part Two allocation",
+          "29": "Part Two allocation",
+          "30": "Part Two allocation",
+          "31": "Part Two allocation",
+          "32": "investigation topics",
+          "33": "Irish-language bonus marks",
+          "34": "blank",
+          "35": "blank",
+          "36": "back cover"
+        }
+      },
+      "selectionScan": [
+        [
+          1,
+          2,
+          "attempt ten"
+        ],
+        [
+          1,
+          11,
+          "attempt three"
+        ],
+        [
+          1,
+          12,
+          "attempt two"
+        ],
+        [
+          1,
+          13,
+          "attempt one"
+        ],
+        [
+          1,
+          13,
+          "answer (i) or (ii)"
+        ],
+        [
+          1,
+          13,
+          "any one"
+        ],
+        [
+          1,
+          13,
+          "any one"
+        ],
+        [
+          1,
+          13,
+          "any one"
+        ],
+        [
+          1,
+          15,
+          "attempt to"
+        ],
+        [
+          1,
+          15,
+          "one of the following"
+        ],
+        [
+          1,
+          16,
+          "any one"
+        ],
+        [
+          1,
+          16,
+          "any one"
+        ],
+        [
+          1,
+          17,
+          "attempt one"
+        ],
+        [
+          1,
+          17,
+          "any two"
+        ],
+        [
+          1,
+          19,
+          "any one"
+        ],
+        [
+          1,
+          19,
+          "one of the following"
+        ],
+        [
+          1,
+          20,
+          "attempt one"
+        ],
+        [
+          1,
+          20,
+          "either"
+        ],
+        [
+          1,
+          24,
+          "choose"
+        ],
+        [
+          1,
+          24,
+          "any one"
+        ],
+        [
+          1,
+          25,
+          "any two"
+        ],
+        [
+          1,
+          27,
+          "any one"
+        ]
+      ],
+      "selectionReview": [
+        {
+          "scan": [
+            [
+              1,
+              2,
+              "attempt ten"
+            ],
+            [
+              1,
+              11,
+              "attempt three"
+            ],
+            [
+              1,
+              12,
+              "attempt two"
+            ],
+            [
+              1,
+              13,
+              "attempt one"
+            ],
+            [
+              1,
+              17,
+              "attempt one"
+            ],
+            [
+              1,
+              20,
+              "attempt one"
+            ],
+            [
+              1,
+              20,
+              "either"
+            ]
+          ],
+          "kind": "exam-attempt-rule",
+          "reason": "Part One ten of twelve and Part Two three questions (one of Q1-3, one of Q4-6, one elective from either elective) are attempt rules; every question is carded or held."
+        },
+        {
+          "scan": [
+            [
+              1,
+              13,
+              "answer (i) or (ii)"
+            ]
+          ],
+          "kind": "closed-route",
+          "reason": "1B: (i) or (ii) -> route (i), and route (ii) splits by its printed choose-one list of three surface processes -> 4 routes, each route's scheme allocation its own."
+        },
+        {
+          "scan": [
+            [
+              1,
+              13,
+              "any one"
+            ],
+            [
+              1,
+              15,
+              "one of the following"
+            ],
+            [
+              1,
+              16,
+              "any one"
+            ],
+            [
+              1,
+              19,
+              "one of the following"
+            ],
+            [
+              1,
+              24,
+              "choose"
+            ],
+            [
+              1,
+              24,
+              "any one"
+            ]
+          ],
+          "kind": "closed-choose-one",
+          "reason": "1B(ii) any one of three printed surface processes -> 3 routes; 2C one of three printed processes -> 3 routes; 3C any one of two printed weathering processes -> 2 routes; 6B one of two printed activities -> 2 routes; 9C choose any one of three printed EU funds -> 3 routes. 1C \"one of the interactions listed above\" (four printed) -> 4 routes (no directive word the scan reads; the route text is anchored on the paper)."
+        },
+        {
+          "scan": [
+            [
+              1,
+              17,
+              "any two"
+            ]
+          ],
+          "kind": "choose-n-one-card",
+          "reason": "4B any two of four printed influences -> one card with every printed item (choice is not a route)."
+        },
+        {
+          "scan": [
+            [
+              1,
+              13,
+              "any one"
+            ],
+            [
+              1,
+              13,
+              "any one"
+            ],
+            [
+              1,
+              16,
+              "any one"
+            ],
+            [
+              1,
+              19,
+              "any one"
+            ],
+            [
+              1,
+              25,
+              "any two"
+            ],
+            [
+              1,
+              27,
+              "any one"
+            ]
+          ],
+          "kind": "open-response",
+          "reason": "No printed pool: 1B(i) any one process of mass movement; 1B(ii) any one Irish landform; 3B(i) any one type of sedimentary rock; 6B any one Continental / Sub-Continental region; 10C(i) any two rural settlement patterns on the map; 12B(i) any one over-populated region. Compulsory lists stay whole: 1A(i), 2A, 3A(i), 4A, 6A, 8A, 12A each item."
+        },
+        {
+          "scan": [
+            [
+              1,
+              15,
+              "attempt to"
+            ]
+          ],
+          "kind": "not-a-selection",
+          "reason": "2C \"how humans attempt to control\" describes human activity, not a candidate choice."
+        }
+      ],
+      "questionTotals": {
+        "Part 1 Q1": 10,
+        "Part 1 Q10": 10,
+        "Part 1 Q11": 10,
+        "Part 1 Q12": 10,
+        "Part 1 Q2": 10,
+        "Part 1 Q3": 10,
+        "Part 1 Q4": 10,
+        "Part 1 Q5": 10,
+        "Part 1 Q6": 10,
+        "Part 1 Q7": 10,
+        "Part 1 Q8": 10,
+        "Part 1 Q9": 10,
+        "Part 2 Q10A": 30,
+        "Part 2 Q10B": 30,
+        "Part 2 Q10C": 40,
+        "Part 2 Q11A": 30,
+        "Part 2 Q11B": 40,
+        "Part 2 Q11C": 30,
+        "Part 2 Q12A": 30,
+        "Part 2 Q12B": 40,
+        "Part 2 Q12C": 30,
+        "Part 2 Q1A": 30,
+        "Part 2 Q1B": 30,
+        "Part 2 Q1C": 40,
+        "Part 2 Q2A": 30,
+        "Part 2 Q2B": 40,
+        "Part 2 Q2C": 30,
+        "Part 2 Q3A": 30,
+        "Part 2 Q3B": 40,
+        "Part 2 Q3C": 30,
+        "Part 2 Q4A": 30,
+        "Part 2 Q4B": 40,
+        "Part 2 Q4C": 30,
+        "Part 2 Q5A": 30,
+        "Part 2 Q5B": 40,
+        "Part 2 Q5C": 30,
+        "Part 2 Q6A": 30,
+        "Part 2 Q6B": 30,
+        "Part 2 Q6C": 40,
+        "Part 2 Q7A": 30,
+        "Part 2 Q7B": 30,
+        "Part 2 Q7C": 40,
+        "Part 2 Q8A": 30,
+        "Part 2 Q8B": 40,
+        "Part 2 Q8C": 30,
+        "Part 2 Q9A": 30,
+        "Part 2 Q9B": 30,
+        "Part 2 Q9C": 40
+      },
+      "taskCount": 101,
+      "cardCount": 113,
+      "legacyIds": [],
+      "addedIds": [
+        "geography-2010-ol-p1-q1",
+        "geography-2010-ol-p1-q10",
+        "geography-2010-ol-p1-q10-ii",
+        "geography-2010-ol-p1-q10-iii",
+        "geography-2010-ol-p1-q10-iv",
+        "geography-2010-ol-p1-q10-v",
+        "geography-2010-ol-p1-q11",
+        "geography-2010-ol-p1-q12",
+        "geography-2010-ol-p1-q12-ii",
+        "geography-2010-ol-p1-q12-iii",
+        "geography-2010-ol-p1-q2",
+        "geography-2010-ol-p1-q2-ii",
+        "geography-2010-ol-p1-q2-iii-a",
+        "geography-2010-ol-p1-q2-iii-b",
+        "geography-2010-ol-p1-q2-iii-c",
+        "geography-2010-ol-p1-q3",
+        "geography-2010-ol-p1-q5",
+        "geography-2010-ol-p1-q5-ii",
+        "geography-2010-ol-p1-q6",
+        "geography-2010-ol-p1-q6-ii",
+        "geography-2010-ol-p1-q7",
+        "geography-2010-ol-p1-q7-ii",
+        "geography-2010-ol-p1-q8",
+        "geography-2010-ol-p1-q9",
+        "geography-2010-ol-p1-q9-ii",
+        "geography-2010-ol-p1-q9-iii",
+        "geography-2010-ol-p1-q9-iv",
+        "geography-2010-ol-p1-q9-v",
+        "geography-2010-ol-p2-q10a",
+        "geography-2010-ol-p2-q10a-ii",
+        "geography-2010-ol-p2-q10a-iii",
+        "geography-2010-ol-p2-q10a-iv",
+        "geography-2010-ol-p2-q10a-v",
+        "geography-2010-ol-p2-q10b",
+        "geography-2010-ol-p2-q10b-ii",
+        "geography-2010-ol-p2-q10c",
+        "geography-2010-ol-p2-q10c-ii",
+        "geography-2010-ol-p2-q11a",
+        "geography-2010-ol-p2-q11a-ii",
+        "geography-2010-ol-p2-q11b",
+        "geography-2010-ol-p2-q11c",
+        "geography-2010-ol-p2-q11c-ii",
+        "geography-2010-ol-p2-q11c-iii",
+        "geography-2010-ol-p2-q11c-iv",
+        "geography-2010-ol-p2-q12a",
+        "geography-2010-ol-p2-q12b",
+        "geography-2010-ol-p2-q12b-ii",
+        "geography-2010-ol-p2-q12b-iii",
+        "geography-2010-ol-p2-q12b-iv",
+        "geography-2010-ol-p2-q12c",
+        "geography-2010-ol-p2-q1a",
+        "geography-2010-ol-p2-q1a-ii",
+        "geography-2010-ol-p2-q1a-iii",
+        "geography-2010-ol-p2-q1a-iv",
+        "geography-2010-ol-p2-q1b-route-i",
+        "geography-2010-ol-p2-q1b-route-ii-glacial-action",
+        "geography-2010-ol-p2-q1b-route-ii-river-action",
+        "geography-2010-ol-p2-q1b-route-ii-sea-marine-action",
+        "geography-2010-ol-p2-q1c-geothermal-energy-production",
+        "geography-2010-ol-p2-q1c-mining",
+        "geography-2010-ol-p2-q1c-oil-and-gas-exploration",
+        "geography-2010-ol-p2-q1c-quarrying",
+        "geography-2010-ol-p2-q2a",
+        "geography-2010-ol-p2-q2b",
+        "geography-2010-ol-p2-q2b-ii",
+        "geography-2010-ol-p2-q2b-iii",
+        "geography-2010-ol-p2-q2b-iv",
+        "geography-2010-ol-p2-q2c-mass-movement",
+        "geography-2010-ol-p2-q2c-river-processes",
+        "geography-2010-ol-p2-q2c-sea-processes",
+        "geography-2010-ol-p2-q3a",
+        "geography-2010-ol-p2-q3a-ii",
+        "geography-2010-ol-p2-q3b",
+        "geography-2010-ol-p2-q3b-ii",
+        "geography-2010-ol-p2-q3b-iii",
+        "geography-2010-ol-p2-q3c-carbonation",
+        "geography-2010-ol-p2-q3c-freeze-thaw-action",
+        "geography-2010-ol-p2-q4a",
+        "geography-2010-ol-p2-q4b",
+        "geography-2010-ol-p2-q4c",
+        "geography-2010-ol-p2-q5a",
+        "geography-2010-ol-p2-q5a-ii",
+        "geography-2010-ol-p2-q5a-iii",
+        "geography-2010-ol-p2-q5a-iv",
+        "geography-2010-ol-p2-q5b",
+        "geography-2010-ol-p2-q5c",
+        "geography-2010-ol-p2-q6a",
+        "geography-2010-ol-p2-q6b-agriculture",
+        "geography-2010-ol-p2-q6b-tourism",
+        "geography-2010-ol-p2-q6c",
+        "geography-2010-ol-p2-q6c-ii",
+        "geography-2010-ol-p2-q7a",
+        "geography-2010-ol-p2-q7a-ii",
+        "geography-2010-ol-p2-q7b",
+        "geography-2010-ol-p2-q7c",
+        "geography-2010-ol-p2-q7c-ii",
+        "geography-2010-ol-p2-q7c-iii",
+        "geography-2010-ol-p2-q8a",
+        "geography-2010-ol-p2-q8b",
+        "geography-2010-ol-p2-q8b-ii",
+        "geography-2010-ol-p2-q8b-iii",
+        "geography-2010-ol-p2-q8c",
+        "geography-2010-ol-p2-q9a",
+        "geography-2010-ol-p2-q9a-ii",
+        "geography-2010-ol-p2-q9a-iii",
+        "geography-2010-ol-p2-q9a-iv",
+        "geography-2010-ol-p2-q9a-v",
+        "geography-2010-ol-p2-q9b",
+        "geography-2010-ol-p2-q9b-ii",
+        "geography-2010-ol-p2-q9b-iii",
+        "geography-2010-ol-p2-q9c-common-agricultural-policy",
+        "geography-2010-ol-p2-q9c-common-fisheries-policy",
+        "geography-2010-ol-p2-q9c-regional-development-fund"
+      ],
+      "idCorrections": [],
+      "aliases": [],
+      "tasks": [
+        {
+          "key": "p1-1",
+          "questionRef": "2010 OL Part 1 Q1",
+          "marks": 10,
+          "paperPage": 2,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Outer Core",
+              "maxMarks": 2
+            },
+            {
+              "label": "Mantle convection current",
+              "maxMarks": 2
+            },
+            {
+              "label": "Inner Core",
+              "maxMarks": 2
+            },
+            {
+              "label": "Mid-Ocean Ridge",
+              "maxMarks": 2
+            },
+            {
+              "label": "Ocean Trench",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q1"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-i",
+          "questionRef": "2010 OL Part 1 Q2(i)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "East or West",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q2"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-ii",
+          "questionRef": "2010 OL Part 1 Q2(ii)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Weather system",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q2-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-iii-a",
+          "questionRef": "2010 OL Part 1 Q2(iii)(a)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Month",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q2-iii-a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-iii-b",
+          "questionRef": "2010 OL Part 1 Q2(iii)(b)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Month",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions",
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q2-iii-b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-2-iii-c",
+          "questionRef": "2010 OL Part 1 Q2(iii)(c)",
+          "marks": 2,
+          "paperPage": 3,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Consequence",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-weather-climate"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q2-iii-c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-3",
+          "questionRef": "2010 OL Part 1 Q3",
+          "marks": 10,
+          "paperPage": 4,
+          "schemePages": [
+            4
+          ],
+          "criteria": [
+            {
+              "label": "Cultural",
+              "maxMarks": 2
+            },
+            {
+              "label": "Urban",
+              "maxMarks": 2
+            },
+            {
+              "label": "Core Economic",
+              "maxMarks": 2
+            },
+            {
+              "label": "Geomorphological",
+              "maxMarks": 2
+            },
+            {
+              "label": "Climatic",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-1-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q3"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-i",
+          "questionRef": "2010 OL Part 1 Q5(i)",
+          "marks": 5,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Distance",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q5"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-5-ii",
+          "questionRef": "2010 OL Part 1 Q5(ii)",
+          "marks": 5,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Plantation",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q5-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-i",
+          "questionRef": "2010 OL Part 1 Q6(i)",
+          "marks": 8,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "S 415 220",
+              "maxMarks": 2
+            },
+            {
+              "label": "S 362 235",
+              "maxMarks": 2
+            },
+            {
+              "label": "S 432 226",
+              "maxMarks": 2
+            },
+            {
+              "label": "S 402 203",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q6"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-6-ii",
+          "questionRef": "2010 OL Part 1 Q6(ii)",
+          "marks": 2,
+          "paperPage": 5,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Height",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q6-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-i",
+          "questionRef": "2010 OL Part 1 Q7(i)",
+          "marks": 6,
+          "paperPage": 6,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "A castle",
+              "maxMarks": 2
+            },
+            {
+              "label": "A church",
+              "maxMarks": 2
+            },
+            {
+              "label": "A marina with boats",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q7"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-7-ii",
+          "questionRef": "2010 OL Part 1 Q7(ii)",
+          "marks": 4,
+          "paperPage": 6,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Bridge named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Six-figure grid reference",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "aerial",
+            "map"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q7-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-8",
+          "questionRef": "2010 OL Part 1 Q8",
+          "marks": 10,
+          "paperPage": 6,
+          "schemePages": [
+            5
+          ],
+          "criteria": [
+            {
+              "label": "Word 1",
+              "maxMarks": 2
+            },
+            {
+              "label": "Word 2",
+              "maxMarks": 2
+            },
+            {
+              "label": "Word 3",
+              "maxMarks": 2
+            },
+            {
+              "label": "Word 4",
+              "maxMarks": 2
+            },
+            {
+              "label": "Word 5",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-karst-regions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q8"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-i",
+          "questionRef": "2010 OL Part 1 Q9(i)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Feature X",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-11"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q9"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-ii",
+          "questionRef": "2010 OL Part 1 Q9(ii)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Feature Y",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-11"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q9-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-iii",
+          "questionRef": "2010 OL Part 1 Q9(iii)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Erosion or deposition",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-11"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q9-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-iv",
+          "questionRef": "2010 OL Part 1 Q9(iv)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Feature Z",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-10"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q9-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-9-v",
+          "questionRef": "2010 OL Part 1 Q9(v)",
+          "marks": 2,
+          "paperPage": 7,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Erosion or deposition",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-10"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q9-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-i",
+          "questionRef": "2010 OL Part 1 Q10(i)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Largest religion",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q10"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-ii",
+          "questionRef": "2010 OL Part 1 Q10(ii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Smallest religion",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q10-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-iii",
+          "questionRef": "2010 OL Part 1 Q10(iii)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Difference",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q10-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-iv",
+          "questionRef": "2010 OL Part 1 Q10(iv)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Percentage",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q10-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-10-v",
+          "questionRef": "2010 OL Part 1 Q10(v)",
+          "marks": 2,
+          "paperPage": 8,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Graph or chart",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q10-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-11",
+          "questionRef": "2010 OL Part 1 Q11",
+          "marks": 10,
+          "paperPage": 9,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Hurricane",
+              "maxMarks": 2
+            },
+            {
+              "label": "A retreating glacier",
+              "maxMarks": 2
+            },
+            {
+              "label": "An urban area",
+              "maxMarks": 2
+            },
+            {
+              "label": "A desert",
+              "maxMarks": 2
+            },
+            {
+              "label": "An erupting volcano",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q11"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-i",
+          "questionRef": "2010 OL Part 1 Q12(i)",
+          "marks": 6,
+          "paperPage": 10,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Waterfall",
+              "maxMarks": 2
+            },
+            {
+              "label": "Interlocking Spur",
+              "maxMarks": 2
+            },
+            {
+              "label": "Meander",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-9"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q12"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-ii",
+          "questionRef": "2010 OL Part 1 Q12(ii)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q12-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p1-12-iii",
+          "questionRef": "2010 OL Part 1 Q12(iii)",
+          "marks": 2,
+          "paperPage": 10,
+          "schemePages": [
+            6
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p1-q12-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a-i",
+          "questionRef": "2010 OL Part 2 Q1A(i)",
+          "marks": 15,
+          "paperPage": 13,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Plates pushing together",
+              "maxMarks": 5
+            },
+            {
+              "label": "Plates sliding past each other",
+              "maxMarks": 5
+            },
+            {
+              "label": "Plates pulling apart",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q1a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a-ii",
+          "questionRef": "2010 OL Part 2 Q1A(ii)",
+          "marks": 5,
+          "paperPage": 13,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Plate boundary",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q1a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a-iii",
+          "questionRef": "2010 OL Part 2 Q1A(iii)",
+          "marks": 5,
+          "paperPage": 13,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Plate boundary",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q1a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1a-iv",
+          "questionRef": "2010 OL Part 2 Q1A(iv)",
+          "marks": 5,
+          "paperPage": 13,
+          "schemePages": [
+            8
+          ],
+          "criteria": [
+            {
+              "label": "Fold mountains named",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-plate-tectonics",
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q1a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-1b",
+          "questionRef": "2010 OL Part 2 Q1B",
+          "marks": 30,
+          "paperPage": 13,
+          "schemePages": [
+            8,
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Process named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description and explanation",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-0-10",
+            "geography-0-11",
+            "geography-0-8",
+            "geography-0-9"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-glaciation",
+            "geography-ordinary-rivers",
+            "geography-ordinary-rocks-weathering-mass-movement",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q1b-route-i",
+            "geography-2010-ol-p2-q1b-route-ii-sea-marine-action",
+            "geography-2010-ol-p2-q1b-route-ii-river-action",
+            "geography-2010-ol-p2-q1b-route-ii-glacial-action"
+          ],
+          "routes": [
+            "Route (i)",
+            "Route (ii) · Sea / marine action",
+            "Route (ii) · River action",
+            "Route (ii) · Glacial action"
+          ]
+        },
+        {
+          "key": "p2-1c",
+          "questionRef": "2010 OL Part 2 Q1C",
+          "marks": 40,
+          "paperPage": 14,
+          "schemePages": [
+            9
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 36
+            },
+            {
+              "label": "Example",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q1c-oil-and-gas-exploration",
+            "geography-2010-ol-p2-q1c-mining",
+            "geography-2010-ol-p2-q1c-quarrying",
+            "geography-2010-ol-p2-q1c-geothermal-energy-production"
+          ],
+          "routes": [
+            "Oil and gas exploration",
+            "Mining",
+            "Quarrying",
+            "Geothermal energy production"
+          ]
+        },
+        {
+          "key": "p2-2a",
+          "questionRef": "2010 OL Part 2 Q2A",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The River Suir",
+              "maxMarks": 5
+            },
+            {
+              "label": "A named hill",
+              "maxMarks": 5
+            },
+            {
+              "label": "A ‘Waymarked Walk’ called the South Leinster Way",
+              "maxMarks": 5
+            },
+            {
+              "label": "An area of land over 200 metres north of the River Suir",
+              "maxMarks": 5
+            },
+            {
+              "label": "A meander on the River Suir",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-mapwork",
+            "geography-ordinary-rivers"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q2a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-i",
+          "questionRef": "2010 OL Part 2 Q2B(i)",
+          "marks": 2,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Magnitude",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q2b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-ii",
+          "questionRef": "2010 OL Part 2 Q2B(ii)",
+          "marks": 2,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Time",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q2b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-iii",
+          "questionRef": "2010 OL Part 2 Q2B(iii)",
+          "marks": 3,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Number of towns",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q2b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2b-iv",
+          "questionRef": "2010 OL Part 2 Q2B(iv)",
+          "marks": 33,
+          "paperPage": 15,
+          "schemePages": [
+            10
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 33
+            }
+          ],
+          "topicIds": [
+            "geography-0-7"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-earthquakes-volcanoes",
+            "geography-ordinary-plate-tectonics"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q2b-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-2c",
+          "questionRef": "2010 OL Part 2 Q2C",
+          "marks": 30,
+          "paperPage": 15,
+          "schemePages": [
+            11
+          ],
+          "criteria": [
+            {
+              "label": "Control named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way explained/described",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-0-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rivers",
+            "geography-ordinary-rocks-weathering-mass-movement",
+            "geography-ordinary-the-sea"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q2c-river-processes",
+            "geography-2010-ol-p2-q2c-sea-processes",
+            "geography-2010-ol-p2-q2c-mass-movement"
+          ],
+          "routes": [
+            "River processes",
+            "Sea processes",
+            "Mass movement"
+          ]
+        },
+        {
+          "key": "p2-3a-i",
+          "questionRef": "2010 OL Part 2 Q3A(i)",
+          "marks": 15,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Scree",
+              "maxMarks": 5
+            },
+            {
+              "label": "Soil Creep",
+              "maxMarks": 5
+            },
+            {
+              "label": "Avalanche",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q3a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3a-ii",
+          "questionRef": "2010 OL Part 2 Q3A(ii)",
+          "marks": 15,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Scree",
+              "maxMarks": 5
+            },
+            {
+              "label": "Soil Creep",
+              "maxMarks": 5
+            },
+            {
+              "label": "Avalanche",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q3a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-i",
+          "questionRef": "2010 OL Part 2 Q3B(i)",
+          "marks": 2,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Sedimentary rock named",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q3b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-ii",
+          "questionRef": "2010 OL Part 2 Q3B(ii)",
+          "marks": 2,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Irish location",
+              "maxMarks": 2
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland",
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q3b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3b-iii",
+          "questionRef": "2010 OL Part 2 Q3B(iii)",
+          "marks": 36,
+          "paperPage": 16,
+          "schemePages": [
+            12
+          ],
+          "criteria": [
+            {
+              "label": "Description",
+              "maxMarks": 36
+            }
+          ],
+          "topicIds": [
+            "geography-0-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q3b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-3c",
+          "questionRef": "2010 OL Part 2 Q3C",
+          "marks": 30,
+          "paperPage": 16,
+          "schemePages": [
+            13
+          ],
+          "criteria": [
+            {
+              "label": "Description and explanation",
+              "maxMarks": 30
+            }
+          ],
+          "topicIds": [
+            "geography-0-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-rocks-weathering-mass-movement"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q3c-freeze-thaw-action",
+            "geography-2010-ol-p2-q3c-carbonation"
+          ],
+          "routes": [
+            "Freeze Thaw Action",
+            "Carbonation"
+          ]
+        },
+        {
+          "key": "p2-4a",
+          "questionRef": "2010 OL Part 2 Q4A",
+          "marks": 30,
+          "paperPage": 17,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Outline",
+              "maxMarks": 6
+            },
+            {
+              "label": "River",
+              "maxMarks": 6
+            },
+            {
+              "label": "Town/City 1",
+              "maxMarks": 6
+            },
+            {
+              "label": "Town/City 2",
+              "maxMarks": 6
+            },
+            {
+              "label": "Mountain",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q4a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4b",
+          "questionRef": "2010 OL Part 2 Q4B",
+          "marks": 40,
+          "paperPage": 17,
+          "schemePages": [
+            14
+          ],
+          "criteria": [
+            {
+              "label": "Irish region named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Factor 1 explained",
+              "maxMarks": 18
+            },
+            {
+              "label": "Factor 2 explained",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q4b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-4c",
+          "questionRef": "2010 OL Part 2 Q4C",
+          "marks": 30,
+          "paperPage": 17,
+          "schemePages": [
+            15
+          ],
+          "criteria": [
+            {
+              "label": "Region named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Advantage 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Advantage 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Advantage 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Advantage 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q4c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-i",
+          "questionRef": "2010 OL Part 2 Q5A(i)",
+          "marks": 6,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "CAP",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q5a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-ii",
+          "questionRef": "2010 OL Part 2 Q5A(ii)",
+          "marks": 6,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Percentage X",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q5a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iii",
+          "questionRef": "2010 OL Part 2 Q5A(iii)",
+          "marks": 6,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Member state",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q5a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5a-iv",
+          "questionRef": "2010 OL Part 2 Q5A(iv)",
+          "marks": 12,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "Way 1",
+              "maxMarks": 6
+            },
+            {
+              "label": "Way 2",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q5a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5b",
+          "questionRef": "2010 OL Part 2 Q5B",
+          "marks": 40,
+          "paperPage": 18,
+          "schemePages": [
+            16
+          ],
+          "criteria": [
+            {
+              "label": "European region named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Description",
+              "maxMarks": 36
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q5b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-5c",
+          "questionRef": "2010 OL Part 2 Q5C",
+          "marks": 30,
+          "paperPage": 18,
+          "schemePages": [
+            17
+          ],
+          "criteria": [
+            {
+              "label": "Urban area named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Reason 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-1-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-regions-continental",
+            "geography-ordinary-regions-european",
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q5c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6a",
+          "questionRef": "2010 OL Part 2 Q6A",
+          "marks": 30,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Outline",
+              "maxMarks": 6
+            },
+            {
+              "label": "Region",
+              "maxMarks": 6
+            },
+            {
+              "label": "River",
+              "maxMarks": 6
+            },
+            {
+              "label": "Mountain",
+              "maxMarks": 6
+            },
+            {
+              "label": "Airport/Port",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-1-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-ireland"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q6a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6b",
+          "questionRef": "2010 OL Part 2 Q6B",
+          "marks": 30,
+          "paperPage": 19,
+          "schemePages": [
+            18
+          ],
+          "criteria": [
+            {
+              "label": "Region named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-1-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-regions-continental"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q6b-tourism",
+            "geography-2010-ol-p2-q6b-agriculture"
+          ],
+          "routes": [
+            "Tourism",
+            "Agriculture"
+          ]
+        },
+        {
+          "key": "p2-6c-i",
+          "questionRef": "2010 OL Part 2 Q6C(i)",
+          "marks": 20,
+          "paperPage": 19,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Positive effect named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Effect explained",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q6c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-6c-ii",
+          "questionRef": "2010 OL Part 2 Q6C(ii)",
+          "marks": 20,
+          "paperPage": 19,
+          "schemePages": [
+            19
+          ],
+          "criteria": [
+            {
+              "label": "Problem named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Problem explained",
+              "maxMarks": 18
+            }
+          ],
+          "topicIds": [
+            "geography-1-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu",
+            "geography-ordinary-regions-european"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q6c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-i",
+          "questionRef": "2010 OL Part 2 Q7A(i)",
+          "marks": 24,
+          "paperPage": 21,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Overall impression on graph paper",
+              "maxMarks": 2
+            },
+            {
+              "label": "Vertical axis labelled / circle",
+              "maxMarks": 3
+            },
+            {
+              "label": "Horizontal axis labelled / centred",
+              "maxMarks": 3
+            },
+            {
+              "label": "4 items illustrated",
+              "maxMarks": 16
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q7a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7a-ii",
+          "questionRef": "2010 OL Part 2 Q7A(ii)",
+          "marks": 6,
+          "paperPage": 21,
+          "schemePages": [
+            20
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q7a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7b",
+          "questionRef": "2010 OL Part 2 Q7B",
+          "marks": 30,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Country/region named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Way 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q7b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c-i",
+          "questionRef": "2010 OL Part 2 Q7C(i)",
+          "marks": 8,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Company named",
+              "maxMarks": 4
+            },
+            {
+              "label": "Location",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q7c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c-ii",
+          "questionRef": "2010 OL Part 2 Q7C(ii)",
+          "marks": 5,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Product named",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q7c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-7c-iii",
+          "questionRef": "2010 OL Part 2 Q7C(iii)",
+          "marks": 27,
+          "paperPage": 21,
+          "schemePages": [
+            21
+          ],
+          "criteria": [
+            {
+              "label": "Reason 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Reason 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q7c-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8a",
+          "questionRef": "2010 OL Part 2 Q8A",
+          "marks": 30,
+          "paperPage": 22,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "The built up area of Carrick-on-Suir",
+              "maxMarks": 5
+            },
+            {
+              "label": "The railway line",
+              "maxMarks": 5
+            },
+            {
+              "label": "The N24 National Primary Road",
+              "maxMarks": 5
+            },
+            {
+              "label": "An electricity transmission line",
+              "maxMarks": 5
+            },
+            {
+              "label": "A mast in the north of the map.",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-6"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q8a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-i",
+          "questionRef": "2010 OL Part 2 Q8B(i)",
+          "marks": 6,
+          "paperPage": 22,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q8b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-ii",
+          "questionRef": "2010 OL Part 2 Q8B(ii)",
+          "marks": 22,
+          "paperPage": 22,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Effect 1 named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Effect 1 explained",
+              "maxMarks": 9
+            },
+            {
+              "label": "Effect 2 named",
+              "maxMarks": 2
+            },
+            {
+              "label": "Effect 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q8b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8b-iii",
+          "questionRef": "2010 OL Part 2 Q8B(iii)",
+          "marks": 12,
+          "paperPage": 22,
+          "schemePages": [
+            22
+          ],
+          "criteria": [
+            {
+              "label": "Action 1",
+              "maxMarks": 6
+            },
+            {
+              "label": "Action 2",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q8b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-8c",
+          "questionRef": "2010 OL Part 2 Q8C",
+          "marks": 30,
+          "paperPage": 22,
+          "schemePages": [
+            23
+          ],
+          "criteria": [
+            {
+              "label": "Example named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Discussion",
+              "maxMarks": 27
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q8c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-i",
+          "questionRef": "2010 OL Part 2 Q9A(i)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "HDI",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies",
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-ii",
+          "questionRef": "2010 OL Part 2 Q9A(ii)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Three variables",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies",
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-iii",
+          "questionRef": "2010 OL Part 2 Q9A(iii)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Category",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies",
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-iv",
+          "questionRef": "2010 OL Part 2 Q9A(iv)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-developing-economies"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9a-v",
+          "questionRef": "2010 OL Part 2 Q9A(v)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "GDP",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-3-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-i",
+          "questionRef": "2010 OL Part 2 Q9B(i)",
+          "marks": 6,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Location",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-elective-economic"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-ii",
+          "questionRef": "2010 OL Part 2 Q9B(ii)",
+          "marks": 12,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Reason stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-economic-multinationals-globalisation"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9b-iii",
+          "questionRef": "2010 OL Part 2 Q9B(iii)",
+          "marks": 12,
+          "paperPage": 23,
+          "schemePages": [
+            24
+          ],
+          "criteria": [
+            {
+              "label": "Reason stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Reason explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-3-4"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-economic-environmental-impact"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q9b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-9c",
+          "questionRef": "2010 OL Part 2 Q9C",
+          "marks": 40,
+          "paperPage": 24,
+          "schemePages": [
+            25
+          ],
+          "criteria": [
+            {
+              "label": "Policy named",
+              "maxMarks": 1
+            },
+            {
+              "label": "Way 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way 1 explained",
+              "maxMarks": 18
+            },
+            {
+              "label": "Way 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Way 2 explained",
+              "maxMarks": 15
+            }
+          ],
+          "topicIds": [
+            "geography-3-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-economic-ireland-the-eu"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q9c-common-agricultural-policy",
+            "geography-2010-ol-p2-q9c-common-fisheries-policy",
+            "geography-2010-ol-p2-q9c-regional-development-fund"
+          ],
+          "routes": [
+            "Common Agricultural Policy",
+            "Common Fisheries Policy",
+            "Regional Development Fund"
+          ]
+        },
+        {
+          "key": "p2-10a-i",
+          "questionRef": "2010 OL Part 2 Q10A(i)",
+          "marks": 6,
+          "paperPage": 25,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Percentage",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a-ii",
+          "questionRef": "2010 OL Part 2 Q10A(ii)",
+          "marks": 6,
+          "paperPage": 25,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Age group",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a-iii",
+          "questionRef": "2010 OL Part 2 Q10A(iii)",
+          "marks": 6,
+          "paperPage": 25,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Males or females",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10a-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a-iv",
+          "questionRef": "2010 OL Part 2 Q10A(iv)",
+          "marks": 6,
+          "paperPage": 25,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Percentage",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10a-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10a-v",
+          "questionRef": "2010 OL Part 2 Q10A(v)",
+          "marks": 6,
+          "paperPage": 25,
+          "schemePages": [
+            26
+          ],
+          "criteria": [
+            {
+              "label": "Way explained",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10a-v"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10b-i",
+          "questionRef": "2010 OL Part 2 Q10B(i)",
+          "marks": 15,
+          "paperPage": 25,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Positive effect stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description and explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q10b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10b-ii",
+          "questionRef": "2010 OL Part 2 Q10B(ii)",
+          "marks": 15,
+          "paperPage": 25,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Negative effect stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description and explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-2"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q10b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c-i",
+          "questionRef": "2010 OL Part 2 Q10C(i)",
+          "marks": 16,
+          "paperPage": 25,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Two patterns named",
+              "maxMarks": 6
+            },
+            {
+              "label": "Two patterns located",
+              "maxMarks": 10
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-10c-ii",
+          "questionRef": "2010 OL Part 2 Q10C(ii)",
+          "marks": 24,
+          "paperPage": 25,
+          "schemePages": [
+            27
+          ],
+          "criteria": [
+            {
+              "label": "Pattern 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Pattern 2 explained",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q10c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-i",
+          "questionRef": "2010 OL Part 2 Q11A(i)",
+          "marks": 24,
+          "paperPage": 26,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Overall impression on graph paper",
+              "maxMarks": 2
+            },
+            {
+              "label": "Vertical axis labelled / circle",
+              "maxMarks": 3
+            },
+            {
+              "label": "Horizontal axis labelled / centred",
+              "maxMarks": 3
+            },
+            {
+              "label": "4 items illustrated",
+              "maxMarks": 16
+            }
+          ],
+          "topicIds": [
+            "geography-2-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-graph-style-questions"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q11a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11a-ii",
+          "questionRef": "2010 OL Part 2 Q11A(ii)",
+          "marks": 6,
+          "paperPage": 26,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Explanation",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-0"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [
+            "page"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q11a-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11b",
+          "questionRef": "2010 OL Part 2 Q11B",
+          "marks": 40,
+          "paperPage": 26,
+          "schemePages": [
+            28
+          ],
+          "criteria": [
+            {
+              "label": "Reason 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Reason 2 explained",
+              "maxMarks": 9
+            },
+            {
+              "label": "Reason 3 explained",
+              "maxMarks": 9
+            },
+            {
+              "label": "First evidence",
+              "maxMarks": 4
+            },
+            {
+              "label": "Second evidence",
+              "maxMarks": 3
+            },
+            {
+              "label": "Third evidence",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-human-urban-geography",
+            "geography-ordinary-mapwork"
+          ],
+          "sources": [
+            "map",
+            "legend",
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q11b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-i",
+          "questionRef": "2010 OL Part 2 Q11C(i)",
+          "marks": 3,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "City named",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q11c"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-ii",
+          "questionRef": "2010 OL Part 2 Q11C(ii)",
+          "marks": 3,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Reason",
+              "maxMarks": 3
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q11c-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-iii",
+          "questionRef": "2010 OL Part 2 Q11C(iii)",
+          "marks": 12,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Problem stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q11c-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-11c-iv",
+          "questionRef": "2010 OL Part 2 Q11C(iv)",
+          "marks": 12,
+          "paperPage": 26,
+          "schemePages": [
+            29
+          ],
+          "criteria": [
+            {
+              "label": "Solution stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-4-5"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q11c-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12a",
+          "questionRef": "2010 OL Part 2 Q12A",
+          "marks": 30,
+          "paperPage": 27,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Limits/frame",
+              "maxMarks": 1
+            },
+            {
+              "label": "Proportions",
+              "maxMarks": 2
+            },
+            {
+              "label": "Overall impression",
+              "maxMarks": 2
+            },
+            {
+              "label": "A church",
+              "maxMarks": 5
+            },
+            {
+              "label": "A recreational (leisure) area",
+              "maxMarks": 5
+            },
+            {
+              "label": "The main street (Central Business District)",
+              "maxMarks": 5
+            },
+            {
+              "label": "A modern residential (housing) area",
+              "maxMarks": 5
+            },
+            {
+              "label": "A bridge.",
+              "maxMarks": 5
+            }
+          ],
+          "topicIds": [
+            "geography-2-8"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-aerial-photos",
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [
+            "aerial"
+          ],
+          "cards": [
+            "geography-2010-ol-p2-q12a"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-i",
+          "questionRef": "2010 OL Part 2 Q12B(i)",
+          "marks": 4,
+          "paperPage": 27,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Region named",
+              "maxMarks": 4
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q12b"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-ii",
+          "questionRef": "2010 OL Part 2 Q12B(ii)",
+          "marks": 15,
+          "paperPage": 27,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Cause stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Explanation",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q12b-ii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-iii",
+          "questionRef": "2010 OL Part 2 Q12B(iii)",
+          "marks": 15,
+          "paperPage": 27,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Problem stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Description",
+              "maxMarks": 12
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q12b-iii"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12b-iv",
+          "questionRef": "2010 OL Part 2 Q12B(iv)",
+          "marks": 6,
+          "paperPage": 27,
+          "schemePages": [
+            30
+          ],
+          "criteria": [
+            {
+              "label": "Solution suggested",
+              "maxMarks": 6
+            }
+          ],
+          "topicIds": [
+            "geography-4-1"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-population"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q12b-iv"
+          ],
+          "routes": []
+        },
+        {
+          "key": "p2-12c",
+          "questionRef": "2010 OL Part 2 Q12C",
+          "marks": 30,
+          "paperPage": 27,
+          "schemePages": [
+            31
+          ],
+          "criteria": [
+            {
+              "label": "Urban area named",
+              "maxMarks": 3
+            },
+            {
+              "label": "Function 1 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Function 1 explained",
+              "maxMarks": 12
+            },
+            {
+              "label": "Function 2 stated",
+              "maxMarks": 3
+            },
+            {
+              "label": "Function 2 explained",
+              "maxMarks": 9
+            }
+          ],
+          "topicIds": [
+            "geography-4-3"
+          ],
+          "atlasTopicIds": [
+            "geography-ordinary-human-urban-geography"
+          ],
+          "sources": [],
+          "cards": [
+            "geography-2010-ol-p2-q12c"
+          ],
+          "routes": []
+        }
+      ],
+      "held": [
+        {
+          "year": 2010,
+          "level": "ordinary",
+          "part": 1,
+          "questionRef": "4",
+          "title": "Volcanic Landforms",
+          "reason": "The paper asks candidates to \"fill in the blanks on the diagram\" with five printed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake). The scheme (page 4, printed \"Page 2 of 31\") prints \"Five terms @ 2 marks each as follows:\" above a copy of the diagram with the terms set in its boxes: Crater and Vent upper left, Caldera Lake right, Magma Chamber lower left, Lava Flow lower right. The answer is which box each term fills, and that exists only as the scheme's drawing; its text layer gives the five terms alone (\"Crater\", \"Vent\", \"Caldera Lake\", \"Magma Chamber · Lava Flow\"), the same words the paper already prints. A card can show the question page but not the scheme's drawing, so its guidance could not tell a correct label from a misplaced one; the question is held rather than carded without its answer."
+        }
+      ],
+      "rule": "Independent review ledger: Leaving Certificate Geography 2010 Ordinary Level.\n\nSources (English editions, harvested Paper Trail corpus; sizes and SHA-256\npinned in EXPECTED_SOURCES and the generated audit): the examination paper\nLC005GLP000EV (28 pages; one booklet printed Part One, answered in it, and\nPart Two), marking scheme LC005GLP000EV (36 pages), and the common\nCarrick-on-Suir companions shared with Higher Level, all published only as\nJPEG images. In 2010 the SEC file names are swapped relative to later years:\nLC005CLP004EV.jpg (2409 x 3507) is the 1:50 000 Ordnance Survey map extract\nof Carrick-on-Suir, LC005CLP003EV.jpg (5000 x 3253) is the oblique aerial\nphotograph of the town, and LC005CLP000EV.jpg (2481 x 3508) is the Discovery\nSeries legend sheet. Each was rendered and identified by eye on 2026-10-23.\nPart One is 100 marks (attempt ten of twelve @ 10), Part Two 300 (three\nquestions @ 100).\n\nVisual sweep (every page rendered and read on 2026-10-23):\n  Paper p1 cover and examiner's grid; p2-p10 Part One Questions 1-12 (p2\n  opens with the Part One instructions; p4 holds Q3 and Q4, p5 Q5 and Q6,\n  p6 Q7 and Q8); p11 Part Two instructions; p12 Section 1 divider; p13-p19\n  Q1-Q6 (p13 and p17 open with their dividers; p13 holds 1A and 1B, p14\n  1C); p20 Section 2 divider; p21-p27 Electives Q7-Q12 (p21 and p25 open\n  with their elective dividers; p23 holds 9A and 9B, p24 9C); p28 printed\n  \"Blank Page\".\n  Scheme p1 cover; p2 blank inside cover; p3 Geographical Investigation\n  (coursework); p4-p6 Part One (Q1-Q4, Q5-Q8, Q9-Q12); p7 Part Two\n  instructions and Section 1 divider; p8-p19 Q1-Q6; p20 Section 2 divider\n  and Q7A; p21-p31 Q7B-Q12C; p32 investigation topics; p33 Irish-language\n  bonus marks; p34-p35 blank; p36 back cover. The scheme reprints every\n  question above its allocation, so every slice starts at the allocation.\n\nThe 2010 layout differs from 2014-2016. Part One questions are priced part\nby part in the scheme (2 marks a part, Q5 5 + 5), so every separately\npriced roman or lettered part is a task (Q2(iii)(a)-(c) each), and a table\nanswered row by row is one card of rows. Matching tables, in the printed\nrow order: Q1 Outer Core B, Mantle convection current C, Inner Core D,\nMid-Ocean Ridge E, Ocean trench A; Q3 A 4, B 5, C 3, D 2, E 1; Q6(i)\nS 415 220 Public Telephone, S 362 235 Enclosure etc., S 432 226 Parking,\nS 402 203 18 Hole Golf Course; Q11 Hurricane F, A retreating glacier A, An\nurban area E, A desert C, An erupting volcano B (Mount Everest D is printed\nand the scheme prices it 0 marks); Q12(i) Waterfall C, Interlocking Spur B,\nMeander A. Q8's five words are priced in the scheme's own completed\nparagraph (LIMESTONE, CARBONATION, GRIKES, CLINTS, PAVEMENT; the last two\nshare one printed line).\n\nQ4 (Volcanic Landforms) is held: the scheme answers it only with a copy of\nthe diagram carrying the five terms in its boxes (see HELD).\n\nPart Two tariffs as printed: twelve parts carry 40 marks (1C, 2B, 3B, 4B,\n5B, 6C, 7C, 8B, 9C, 10C, 11B, 12B) and the rest 30. Where the scheme\nprints \"graded\" with no grades (sketch outline, proportions, showing, graph\naxes and items, Q5(i) distance, 10C(i) locations) any whole mark up to the\nline's maximum is permitted. Scheme anomalies, carded as the components\nprint them: 7A(i) and 11A(i) are headed \"Drawing graph @ 21 marks graded\"\nbut price 2 + 3 + 3 + 16 = 24 and print \"(Sub Total 24)\", which with (ii)'s\n6 makes the paper's [30 marks]; the slices start at the priced lines. 5A's\nreprint labels (iii) and (iv) as \"(i)\" and \"(ii)\"; its allocation table\nlabels them correctly."
+    },
+    {
       "year": 2011,
       "level": "higher",
       "lang": "ev",

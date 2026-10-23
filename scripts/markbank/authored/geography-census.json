@@ -23,10 +23,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 3767,
-  "includedBaseTasks": 3761,
-  "excludedBaseTasks": 6,
-  "authoredCards": 4033,
+  "paperBaseTasks": 3869,
+  "includedBaseTasks": 3862,
+  "excludedBaseTasks": 7,
+  "authoredCards": 4146,
   "baseTasks": [
     {
       "id": "geography-2010-hl-p1-q1",
@@ -918,6 +918,924 @@
       "questionRef": "2010 HL Part 2 Q24",
       "title": "The Atmosphere-Ocean Environment",
       "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q1",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q1",
+      "title": "Cross-section of the Earth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q2",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q2(i)",
+      "title": "Ireland’s Climate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q2-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q2(ii)",
+      "title": "Ireland’s Climate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q2-iii-a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q2(iii)(a)",
+      "title": "Ireland’s Climate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q2-iii-b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q2(iii)(b)",
+      "title": "Ireland’s Climate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q2-iii-c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q2(iii)(c)",
+      "title": "Ireland’s Climate",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q3",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q3",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q5",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q5(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q5-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q5(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q6",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q6(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q6-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q6(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q7",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q7(i)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q7-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q7(ii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q8",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q8",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q9",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q9(i)",
+      "title": "Coastal and Glacial Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q9-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q9(ii)",
+      "title": "Coastal and Glacial Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q9-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q9(iii)",
+      "title": "Coastal and Glacial Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q9-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q9(iv)",
+      "title": "Coastal and Glacial Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q9-v",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q9(v)",
+      "title": "Coastal and Glacial Features",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q10",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q10(i)",
+      "title": "World’s Religions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q10-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q10(ii)",
+      "title": "World’s Religions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q10-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q10(iii)",
+      "title": "World’s Religions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q10-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q10(iv)",
+      "title": "World’s Religions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q10-v",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q10(v)",
+      "title": "World’s Religions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q11",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q11",
+      "title": "Satellite Images",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q12",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q12(i)",
+      "title": "River Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q12-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q12(ii)",
+      "title": "River Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q12-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q12(iii)",
+      "title": "River Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1A(i)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1A(ii)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1a-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1A(iii)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1a-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1A(iv)",
+      "title": "Plate Boundaries",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1b-route-i",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1B",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q1c-oil-and-gas-exploration",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q1C",
+      "title": "Human Interaction with the Rock Cycle",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2B(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2B(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2b-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2B(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2b-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2B(iv)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q2c-river-processes",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q2C",
+      "title": "Human Interaction",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3A(i)",
+      "title": "Mass Movement and Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3A(ii)",
+      "title": "Mass Movement and Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3B(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3B(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3b-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3B(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q3c-freeze-thaw-action",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q3C",
+      "title": "Weathering",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q4a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q4b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q4B",
+      "title": "Agriculture in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q4c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q4C",
+      "title": "Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5A(i)",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5A(ii)",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5a-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5A(iii)",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5a-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5A(iv)",
+      "title": "European Union Policy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5B",
+      "title": "European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q5c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q5C",
+      "title": "Urban Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q6a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q6A",
+      "title": "Ireland - Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q6b-tourism",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q6B",
+      "title": "Continental / Sub-Continental Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q6c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q6C(i)",
+      "title": "European Expansion and Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q6c-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q6C(ii)",
+      "title": "European Expansion and Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7A(i)",
+      "title": "Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7A(ii)",
+      "title": "Statistics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7B",
+      "title": "Developing Economies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7C(i)",
+      "title": "Multinational Companies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7c-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7C(ii)",
+      "title": "Multinational Companies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q7c-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q7C(iii)",
+      "title": "Multinational Companies",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q8a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q8A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q8b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q8B(i)",
+      "title": "Acid Rain",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q8b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q8B(ii)",
+      "title": "Acid Rain",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q8b-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q8B(iii)",
+      "title": "Acid Rain",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q8c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q8C",
+      "title": "Economic Activities and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9A(i)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9A(ii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9a-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9A(iii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9a-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9A(iv)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9a-v",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9A(v)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9B(i)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9B(ii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9b-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9B(iii)",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q9c-common-agricultural-policy",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q9C",
+      "title": "Ireland and the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10A(i)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10A(ii)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10a-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10A(iii)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10a-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10A(iv)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10a-v",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10A(v)",
+      "title": "Population Structure",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10B(i)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10B(ii)",
+      "title": "Migration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10C(i)",
+      "title": "Settlement Patterns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q10c-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q10C(ii)",
+      "title": "Settlement Patterns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11A(i)",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11a-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11A(ii)",
+      "title": "Population Dynamics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11B",
+      "title": "Development of Towns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11C(i)",
+      "title": "Growth of Cities in the Developing World",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11c-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11C(ii)",
+      "title": "Growth of Cities in the Developing World",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11c-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11C(iii)",
+      "title": "Growth of Cities in the Developing World",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q11c-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q11C(iv)",
+      "title": "Growth of Cities in the Developing World",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12a",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12A",
+      "title": "Land Use in Cities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12b",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12B(i)",
+      "title": "Over-population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12b-ii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12B(ii)",
+      "title": "Over-population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12b-iii",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12B(iii)",
+      "title": "Over-population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12b-iv",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12B(iv)",
+      "title": "Over-population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p2-q12c",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2010 OL Part 2 Q12C",
+      "title": "Changing Urban Functions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2010-ol-p1-q4",
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2010 OL Part 1 Q4",
+      "title": "Volcanic Landforms",
+      "status": "excluded"
     },
     {
       "id": "geography-2011-hl-p1-q1",
@@ -33943,6 +34861,15 @@
       "reviewed": true
     },
     {
+      "year": 2010,
+      "level": "ordinary",
+      "paperBaseTasks": 102,
+      "includedBaseTasks": 101,
+      "excludedBaseTasks": 1,
+      "authoredCardsAfterFiniteExpansion": 113,
+      "reviewed": true
+    },
+    {
       "year": 2011,
       "level": "higher",
       "paperBaseTasks": 96,
@@ -34260,6 +35187,63 @@
       "questionRef": "2010 HL Part 2 Q20",
       "classification": "finite-expanded",
       "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q1B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q1C",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q2C",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q3C",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q4B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q6B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2010 OL Part 2 Q9C",
+      "classification": "finite-expanded",
+      "variants": 3,
       "kinds": [
         "reviewed-printed-route"
       ]
@@ -36158,6 +37142,14 @@
     }
   ],
   "exclusions": [
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "4",
+      "title": "Volcanic Landforms",
+      "reason": "The paper asks candidates to \"fill in the blanks on the diagram\" with five printed terms (Vent, Crater, Magma chamber, Lava flow, Caldera lake). The scheme (page 4, printed \"Page 2 of 31\") prints \"Five terms @ 2 marks each as follows:\" above a copy of the diagram with the terms set in its boxes: Crater and Vent upper left, Caldera Lake right, Magma Chamber lower left, Lava Flow lower right. The answer is which box each term fills, and that exists only as the scheme's drawing; its text layer gives the five terms alone (\"Crater\", \"Vent\", \"Caldera Lake\", \"Magma Chamber · Lava Flow\"), the same words the paper already prints. A card can show the question page but not the scheme's drawing, so its guidance could not tell a correct label from a misplaced one; the question is held rather than carded without its answer."
+    },
     {
       "year": 2011,
       "level": "higher",
