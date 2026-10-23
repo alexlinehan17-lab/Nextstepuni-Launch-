@@ -56,6 +56,10 @@ export interface PaperAnswerQuestion {
    *  Always a sequential integer for ordering + uniqueness; the human-facing
    *  label (when it differs, e.g. section-restarting language papers) is `label`. */
   n: string;
+  /** Additive practice task inside a retained whole-question card. Its anchor
+   * must not truncate that parent (or a preceding question) when deriving
+   * whole-question paper crops. The child supplies its own explicit region. */
+  parentN?: string;
   /** Optional display label shown in the reveal header instead of "Question {n}",
    *  for papers whose questions restart per section (e.g. "Text II · Q1"). */
   label?: string;
@@ -82,6 +86,9 @@ export interface PaperAnswerQuestion {
    *  this additive field lets a later audit remove collision spillover or
    *  point the UI at the card's actual answer without mutating that identity. */
   schemeRegion?: PaperAnswerSeg[];
+  /** Reviewed discrepancy in the original paper/scheme. Display only with the
+   * revealed scheme; never silently repair the source PDF or expose an answer. */
+  schemeNote?: string;
   mode: 'crop' | 'pagejump';
   /** Confidence 0..1 (1 = clean crop; lower = degraded to page-jump). */
   conf: number;

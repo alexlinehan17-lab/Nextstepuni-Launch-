@@ -103,6 +103,7 @@ import businessOriginals from '../scripts/markbank/authored/business.json';
 import businessReviewed from '../components/MarkBank/cards/business/rubric-authored.json';
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
+import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
 import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
@@ -953,6 +954,16 @@ const economicsAdditionIds = new Set([
   'econ-2026-ol-sa-q9',
 ]);
 const economicsAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('econ-'));
+/* Agricultural Science keeps its 869 pre-audit IDs frozen (438 Higher + 431
+ * Ordinary, the identity hashes above). Source-reviewed tasks for 2010-2026
+ * (agricultural-science-reviewed-tasks.json addedCardIds) are explicit
+ * additions on top; cards corrected in place keep their IDs inside the frozen
+ * set; per-item cards consolidated into one printed task are withdrawn onto a
+ * progress alias (withdrawnCardIds), so the frozen form is the live
+ * non-additions plus those alias keys. Never rebaseline the frozen count or hash. */
+const agriAdditionIds = new Set<string>(agriculturalReview.addedCardIds);
+const agriWithdrawn: Record<string, string> = (agriculturalReview as { withdrawnCardIds?: Record<string, string> }).withdrawnCardIds ?? {};
+const agriAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('agsci-'));
 /* Construction Studies keeps its 505 pre-audit IDs frozen (255 Higher + 250
  * Ordinary, the identity hashes above). Source-reviewed tasks (2010-2026
  * theory papers, scripts/markbank/authoring/construction_*.py) are explicit
@@ -980,6 +991,10 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
     ];
   }
   if (name.startsWith('french:')) return ids.filter(id => !frenchAdditionIds.has(id));
+  if (name.startsWith('agricultural-science:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [...ids.filter(id => !agriAdditionIds.has(id)), ...agriAliasIds.filter(id => id.includes(level))];
+  }
   if (name.startsWith('construction-studies:')) {
     const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
     return [
@@ -998,6 +1013,7 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
 };
 const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
+    : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
     : cards.length;
 const peAdditions = {
@@ -1080,19 +1096,22 @@ describe('Mark Bank card preservation', () => {
     // Art (2026-10-14): its 462 frozen 2021-2025 cards become one card per
     // printed task (68 per-option IDs withdrawn onto aliases) and 2010-2020
     // and 2026 are added on top: - 68 + 1,362.
+    // Agricultural Science (2026-10-15): its 869 frozen cards gain 1,604
+    // source-reviewed tasks and withdraw 9 per-item cards onto aliases: + 1,595.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('economics:') || name.startsWith('construction-studies:') ? frozenIds(name, cards).length - cards.length : 0;
+      name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:') ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
+    const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
       total + cards.length - businessAdded(name, cards) + economicsFrozenDelta(name, cards)
     ), 0)).toBe(22_970 + frenchAdditionIds.size + artNet);
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
-        + economicsAdditionIds.size - economicsAliasIds.length + artNet
+        + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
         + constructionAdditionIds.size - constructionAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
@@ -1156,6 +1175,219 @@ describe('Mark Bank card preservation', () => {
     expect(ECON_ORDINARY).toHaveLength(314 - aliased('-ol-') + additions('-ol-'));
   });
 
+  it('adds exactly the reviewed Agricultural Science tasks to the frozen pre-audit set', () => {
+    // Frozen pre-audit set: 438 Higher + 431 Ordinary, counted and hashed above.
+    // Every source-reviewed task is an explicit addition on top; each withdrawn
+    // per-item card resolves through its progress alias.
+    expect(agriAdditionIds.size).toBe(1604);
+    const live = [...AGSCI_HIGHER, ...AGSCI_ORDINARY];
+    const liveIds = new Set(live.map(card => card.id));
+    for (const id of agriAdditionIds) expect(liveIds.has(id), `missing reviewed addition ${id}`).toBe(true);
+    expect(Object.keys(agriWithdrawn).sort()).toEqual([...agriAliasIds].sort());
+    for (const [id, canonical] of Object.entries(agriWithdrawn)) {
+      expect(liveIds.has(id), `${id} must be withdrawn`).toBe(false);
+      expect(CARD_ID_ALIASES[id], `${id} needs a progress alias`).toBe(canonical);
+    }
+    expect(live).toHaveLength(438 + 431 - agriAliasIds.length + agriAdditionIds.size);
+  });
+
+  it('keeps every Agricultural Science card corrected in place, each with its SEC evidence', () => {
+    // Corrected IDs are NOT additions: they stay inside the frozen 869-card
+    // identity hash above. Each is listed here with the reason it changed.
+    const corrected: Record<string, string> = {
+      'agsci-2025-ol-q8b': 'Symbols 2 and 3 marked 3+2 as a two-option group, not an all-or-nothing tick.',
+      'agsci-2025-hl-q12a': 'Q12 is one any-four-of-five 2(4)+2(1) card listing all five prompts, 10 marks; Q12(b)–(e) are withdrawn as its aliases.',
+      'agsci-2025-hl-q14bi': 'Restores the published result mark: 4x4 + 1 = 17, so Question 14 totals 50.',
+      'agsci-2025-hl-q15b': 'Any three of four printed plants on one card, every photograph decoded (3x1).',
+      'agsci-2025-ol-q1ai': 'Any three of four printed cattle breeds on one card, every photograph decoded, word list as printed (3x2).',
+      'agsci-2025-ol-q9bi-ii': 'Keeps part (i) only (3 marks); part (ii) already ships as agsci-2025-ol-q9bii.',
+      'agsci-2025-ol-q9biii-iv': 'Keeps part (iii) only (3 marks); part (iv) already ships as agsci-2025-ol-q9biv.',
+      'agsci-2024-hl-q2ai': 'Any two of three printed breeds on one card, every photograph decoded (2(2)).',
+      'agsci-2024-hl-q2aiii': 'Drops the question wording that had been listed as an accepted answer; any two of four printed characteristics, 2(2).',
+      'agsci-2024-hl-q6a': 'Any two of four printed scheme features on one card: action row 2(3) and benefit row 2(2), ref Q6(a).',
+      'agsci-2024-hl-q16bi': 'Restores the truncated answer ("... with Sample 2 or Sample 3") and the paper\'s results-table lead-in and crop.',
+      'agsci-2024-hl-q16bii': 'Replaces a flattened results table in the stem with the paper\'s lead-in and the table crop.',
+      'agsci-2024-hl-q17a': 'Restores the published 5 (factor) + 1 (description) split instead of all-or-nothing 6.',
+      'agsci-2024-hl-q17cii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
+      'agsci-2024-hl-q17ciii': 'Replaces a flattened results table in the stem with the paper\'s own lead-in.',
+      'agsci-2024-hl-q18aiii': 'Any two of six printed dominant features at 6+2, not black coat and coat pattern only.',
+      'agsci-2024-ol-q2biii': 'Replaces a stem of run-together diagram labels with the paper\'s lead-in and the picture crop.',
+      'agsci-2024-ol-q14cii': 'Restores the published 2 + 2 for name or description: two names and two descriptions at 2 each.',
+      'agsci-2024-ol-q14d': 'Restores the published 6(2): six hay/silage cells at 2 marks each, not three paired rows.',
+      'agsci-2023-hl-q1aii': 'Restores the whole published answer ("... at least 2 kinds of resources (e.g. meat, eggs, milk)").',
+      'agsci-2023-hl-q2a': 'Any two of three printed growth stages on one card, Flowering included (2(3)).',
+      'agsci-2023-hl-q4a': 'Any three of four printed treatments on one card, sorting into pens included (3(2)).',
+      'agsci-2023-hl-q5a': 'One row lists the whole sampling pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q5c': 'Restores the whole published answer sentence.',
+      'agsci-2023-hl-q8c': 'Replaces chart-label soup with the paper\'s wording and accepts both published conclusions.',
+      'agsci-2023-hl-q9aii': 'One row lists the whole Farmdroid benefit pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q9bi': 'One row lists the whole pregnancy-scanning pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q11a': 'One row lists the whole calves-per-cow pool, any two at 3 (2(3)).',
+      'agsci-2023-hl-q11b': 'One row lists the whole calving-rate pool, any two at 2 (2(2)).',
+      'agsci-2023-hl-q13ai': 'Factors and descriptions earn 5+5+2+2 in the order correct, not 7 per pair.',
+      'agsci-2023-hl-q13aii': 'The podzol drawing is banded D = 0,3,6 plus L = 3 x 2, not five ranked rows.',
+      'agsci-2023-hl-q13bii': 'Restores each soil water state\'s whole published implication.',
+      'agsci-2023-hl-q13c': 'Laboratory and field methods are mutually exclusive routes, every point listed (3(4)).',
+      'agsci-2023-hl-q13dii': 'Lists all nine soil moisture functions at 4+2.',
+      'agsci-2023-hl-q14biii': 'Lists all six clover advantages at 5+1.',
+      'agsci-2023-hl-q14biv': 'Names the underlined term the paper prints ("annual plant").',
+      'agsci-2023-hl-q14ci': 'Lists all six plant-count steps, any three at 4 (3(4)).',
+      'agsci-2023-hl-q14cii': 'Lists all five plant-count advantages at 5+1.',
+      'agsci-2023-hl-q15a': 'Hand, sediment and sieve methods are mutually exclusive routes, every point listed (3(4)).',
+      'agsci-2023-hl-q15biii': 'Lists all five liming benefits at 5+2.',
+      'agsci-2023-hl-q15cii': 'Replaces chart-label soup with the paper\'s lead-in and chart; restores both whole answers.',
+      'agsci-2023-hl-q16aii': 'Replaces chart-label soup with the paper\'s lead-in and chart; accepts both published reasons.',
+      'agsci-2023-hl-q18bii': 'Three factors and three descriptions at 3 each (F:3(3) + D:3(3)), not 6 per pair.',
+      'agsci-2023-ol-q1b': 'Replaces drawing-label debris in the stem and the scheme asterisk in the answer (6.5, exact term).',
+      'agsci-2023-ol-q2a': 'Any three of five printed breeds on one card at the published 3+2+1, every photograph decoded.',
+      'agsci-2023-ol-q4': 'Restores the first-correct 6+2+2 instead of 6 pinned to controlled grazing.',
+      'agsci-2023-ol-q6aiii': 'Replaces diagram-label soup with the paper\'s lead-in and the diagram.',
+      'agsci-2023-ol-q8a': 'Four placements at the first-correct 6+2+1+1, not one all-or-nothing 10-mark row.',
+      'agsci-2023-ol-q9ai': 'Adds the paper\'s lead-in and drops the scheme asterisk from the answer (Abomasum, exact term).',
+      'agsci-2023-ol-q9b-iii': 'Restores the first-correct 3+1 instead of 3 pinned to the ruminant column.',
+      'agsci-2023-ol-q10b-i-iii': 'Keeps part (i) only (3 marks); (ii) already ships as agsci-2023-ol-q10bii and (iii) is its own card.',
+      'agsci-2023-ol-q10bii': 'Replaces a run-together results table in the stem with the paper\'s lead-in and the table crop.',
+      'agsci-2023-ol-q13aii': 'Restores the first-correct 6+3+3 instead of 6 pinned to photograph A.',
+      'agsci-2023-ol-q13bii': 'Replaces chart-label soup with the paper\'s lead-in and chart; accepts both published conclusions.',
+      'agsci-2023-ol-q14a-i': 'Restores both whole published definitions.',
+      'agsci-2023-ol-q14bi': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q14bii': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q14b-iii': 'Replaces the stem "W X" with the paper\'s lead-in.',
+      'agsci-2023-ol-q15aii': 'Replaces the diagram key in the stem with the paper\'s lead-in and the soil diagrams.',
+      'agsci-2023-ol-q15b': 'Restores the first-correct 6+4 instead of 6 pinned to label A.',
+      'agsci-2023-ol-q16ai': 'Resazurin and bacterial-count methods as answer routes, every published point listed (3(4)).',
+      'agsci-2023-ol-q18ci': 'Restores the whole first published point.',
+      'agsci-2022-hl-q2b': 'Lists every characteristic in the scheme\'s two-page table, any two at 3 (2(3)).',
+      'agsci-2022-hl-q10b': 'Kale, Miscanthus and OSR planting points as answer routes, not one mixed pool.',
+      'agsci-2022-hl-q10c': 'Kale, Miscanthus and OSR advantages as answer routes, not one mixed pool.',
+      'agsci-2022-hl-q15ai': 'Each synchronisation protocol (ewes, three for heifers or cows, sows) as an answer route, every step listed.',
+      'agsci-2022-hl-q16ci': 'Restores the published 11 marks: named system 2, drawing 6/3/0, labels 3(1).',
+      'agsci-2022-hl-q17ai': 'The earthworm drawing is banded D 6, 3, 0 plus labels 3(1), not one 6-mark row.',
+      'agsci-2022-hl-q17bii': 'Restores the end of the hybrid vigour definition ("to those of both parents").',
+      'agsci-2022-ol-q1a': 'Machine A, its function, machine B and its function at 2 each, as the scheme prints them.',
+      'agsci-2022-ol-q2ai': 'Any three of four printed breeds on one card, every photograph decoded (3(2)).',
+      'agsci-2022-ol-q2aii': 'Replaces the run-together word list in the stem with the paper\'s part (ii) wording.',
+      'agsci-2022-ol-q3a': 'The indicator and pH-meter methods as answer routes, not one mixed step list.',
+      'agsci-2022-ol-q3b': 'Every published implication listed; implication 3 and the lime answer 1, as printed.',
+      'agsci-2022-ol-q4b': 'Statements (i)-(v) on the table card at 5(2); the five per-statement cards are withdrawn as its aliases.',
+      'agsci-2022-ol-q5a': 'Restores the whole published production-diet answer.',
+      'agsci-2022-ol-q7aiii': 'Each of the six nutrients as an answer route with its symptom and treatment.',
+      'agsci-2022-ol-q7bii': 'Every published leaf adaptation listed at the first-correct 3+1; drops diagram labels from the stem.',
+      'agsci-2022-ol-q9c': 'Restores the paper\'s tick-box wording and options.',
+      'agsci-2022-ol-q10c': 'Every published sampling precaution listed at the first-correct 2+1.',
+      'agsci-2022-ol-q11aiii': 'Restores the whole published answer and the paper\'s wording.',
+      'agsci-2022-ol-q14civ': 'Nine ways and nine reasons as published menus, 2(2+2) 1(2+1).',
+      'agsci-2022-ol-q16bii': 'Nine hay-making steps listed one each at 3(4)+3.',
+      'agsci-2022-ol-q17ai': 'Ten advantages listed one each at 4+2, other valid answers open.',
+      'agsci-2022-ol-q17aii': 'Five reasons listed one each, as printed, at 4+2.',
+      'agsci-2022-ol-q17aiii': 'Six disadvantages listed one each at 4+2.',
+      'agsci-2022-ol-q18ai': 'Six traits listed one each at 3(4).',
+      'agsci-2022-ol-q18bi': 'Seven seedbed steps listed one each at 3(2).',
+      'agsci-2021-hl-q1b': 'The first definition earns 2, the other definition and the example 1 each (2 + 1+1); drops the part (a) answers from the stem.',
+      'agsci-2021-hl-q3ai': 'Replaces the sign text run together in the stem with the paper\'s lead-in.',
+      'agsci-2021-hl-q3aii': 'Replaces the sign text run together in the stem with the paper\'s instruction.',
+      'agsci-2021-hl-q3aiii': 'Restores the omitted bloodless-castration advantage; every published advantage listed.',
+      'agsci-2021-hl-q3bii': 'Restores the omitted wet-land advantage; every published advantage listed.',
+      'agsci-2021-hl-q3biii': 'Restores the omitted soil-structure way; every published way listed.',
+      'agsci-2021-hl-q4c': 'Restores the omitted first way (plant more trees or hedges); every published way listed.',
+      'agsci-2021-hl-q5a': 'Kale or stubble turnips, oilseed rape and Miscanthus as answer routes, not one mixed pool.',
+      'agsci-2021-hl-q5b': 'Each crop\'s pests as an answer route, not one mixed pool.',
+      'agsci-2021-hl-q5c': 'Each crop\'s two growth stages as an answer route.',
+      'agsci-2021-hl-q6bii': 'Restores the tillage half of the second comparison.',
+      'agsci-2021-hl-q9a': 'Restores the end of the genomic selection definition.',
+      'agsci-2021-hl-q9c': 'Restores the breeding step after the list of traits.',
+      'agsci-2021-hl-q10a': 'Restores the end of the artisan produce definition.',
+      'agsci-2021-hl-q10c': 'The paper\'s wording with the pie chart cropped from the paper.',
+      'agsci-2021-hl-q11bii': 'Bloat and acidosis as answer routes, each with its own symptom, treatment and prevention.',
+      'agsci-2021-hl-q14bi': 'Drops the next part\'s table debris from the stem.',
+      'agsci-2021-hl-q14bii': 'Pig, poultry and horse as answer routes at 2(2+1); restores "good terminal sires".',
+      'agsci-2021-hl-q14cii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q14ciii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15ai': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15aii': 'Removes a dash the scheme does not print.',
+      'agsci-2021-hl-q15bi': 'Replaces axis and legend debris in the stem with the paper\'s lead-in and the bar chart.',
+      'agsci-2021-hl-q15biii': 'Replaces axis and legend debris in the stem with the paper\'s lead-in and the bar chart.',
+      'agsci-2021-hl-q15biv': 'All five published recommendations at 3(2), with the bar chart.',
+      'agsci-2021-hl-q16aiii': 'Every TBC and SCC recommendation listed at 3(3), not a fixed third row.',
+      'agsci-2021-hl-q16b': 'The resazurin test and the total bacterial count as answer routes, every published step listed.',
+      'agsci-2021-hl-q17bi': 'Field 2 results in the stem and the reference soil index cropped from the paper.',
+      'agsci-2021-hl-q17biv': 'Names 1 each and roles 3 each (3+3+1+1), not 4 per nutrient-and-role.',
+      'agsci-2021-hl-q18a-crop-preservation': 'Grain, potato and grass preservation as answer routes, not one mixed pool.',
+      'agsci-2021-ol-q1a': 'Replaces tick-box debris in the stem with the paper\'s instruction.',
+      'agsci-2021-ol-q3a-i': 'Restores the omitted second explanation; every published explanation listed.',
+      'agsci-2021-ol-q3a-iii': 'Restores the omitted fourth disadvantage; every published disadvantage listed at 3+1.',
+      'agsci-2021-ol-q3b-iii': 'Restores the omitted "less labour required"; every published advantage listed at 3+1.',
+      'agsci-2021-ol-q4b': 'Replaces diagram-label debris in the stem with the paper\'s lead-in.',
+      'agsci-2021-ol-q4c': 'First-correct 3+1 across every published disadvantage, not 3 pinned to poor drainage.',
+      'agsci-2021-ol-q5b': 'Restores the omitted timing step; every published step listed at 3+1.',
+      'agsci-2021-ol-q8a-iii': 'Restores the omitted wellington boots; every published piece listed at 2(2).',
+      'agsci-2021-ol-q8a-iv': 'Restores the whole second precaution ("avoid touching the infected area on the cattle").',
+      'agsci-2021-ol-q8b-ii': 'Restores the omitted "keep all children and dogs away" precaution.',
+      'agsci-2021-ol-q8b-iii': 'Restores the omitted electric-wires precaution; every published precaution listed at 3+2+1.',
+      'agsci-2021-ol-q9b': 'Restores "soils or soil cultivation (ploughing)" and enteric fermentation; every source listed at 3+1.',
+      'agsci-2021-ol-q10b': 'One answer in the scheme\'s words, not split at oestrogen.',
+      'agsci-2021-ol-q10d': 'Drops diagram labels from the stem.',
+      'agsci-2021-ol-q11b-i': 'Restores the whole second reason and the plan view.',
+      'agsci-2021-ol-q11b-iii': 'Restores the omitted "increased milk yield from cows".',
+      'agsci-2021-ol-q12a': 'Drops photograph letters and the word list run into the question; the list is quoted.',
+      'agsci-2021-ol-q12b': 'Landrace, Large White, Rhode Island Red and Irish Sport Horse as answer routes.',
+      'agsci-2021-ol-q13c-iv': 'Restores the omitted "do not share equipment" practice; every practice listed at 2+2+1.',
+      'agsci-2021-ol-q14b-ii': 'Every published resazurin step listed at 3(3); other milk tests open.',
+      'agsci-2021-ol-q14b-iii': 'Each error paired with its own remedy as an answer route.',
+      'agsci-2021-ol-q14b-iv': 'Qualitative (resazurin) and quantitative (TBC) as answer routes with their justifications.',
+      'agsci-2021-ol-q15c-iii': 'Restores the end of the packing point; every published way listed at 4+2.',
+      'agsci-2021-ol-q16b-ii': 'Restores the omitted soil-types step; every published step listed at 4+2.',
+      'agsci-2021-ol-q16c-ii': 'Restores the omitted third piece of advice.',
+      'agsci-2021-ol-q16c-v': 'Each implication paired with its own reason as an answer route.',
+      'agsci-2021-ol-q16d-i': 'Restores the omitted compaction-and-erosion principle; every principle listed at 4+4.',
+      'agsci-2021-ol-q17a-iii': 'Restores the omitted "volume of water"; every factor listed at 4+3.',
+      'agsci-2021-ol-q17a-iv': 'Restores the whole second effect of sowing depth.',
+      'agsci-2021-ol-q17b-ii': 'Restores the omitted second piece of advice.',
+      'agsci-2021-ol-q18a-i-seedbed': 'Restores the 2 marks for naming the crop (9, not 7) and the potato stones point.',
+      'agsci-2021-ol-q18b-i': 'Restores the second published explanation of natural selection.',
+      'agsci-2021-ol-q18c-iii': 'The paper\'s wording with the lamb growth graph; restores the omitted description.',
+      'agsci-2021-ol-q18d-iii': 'Restores the omitted thread-and-ruler method.',
+    };
+    expect([...agriculturalReview.correctedCardIds].sort()).toEqual(Object.keys(corrected).sort());
+    const live = new Map(decks.flatMap(([, cards]) => cards.map(card => [card.id, card] as const)));
+    for (const id of Object.keys(corrected)) {
+      expect(live.has(id), id).toBe(true);
+      expect(agriAdditionIds.has(id), `${id} must stay a baseline identity`).toBe(false);
+    }
+    const records = (agriculturalReview as { corrections: Record<string, { reason: string; originalSha256: string }> }).corrections;
+    expect(Object.keys(records).sort()).toEqual(Object.keys(corrected).filter(id => id !== 'agsci-2025-ol-q8b').sort());
+    for (const record of Object.values(records)) {
+      expect(record.reason).toMatch(/Visually verified paper PDF page \d+/);
+      expect(record.originalSha256).toMatch(/^[0-9a-f]{64}$/);
+    }
+    expect(live.get('agsci-2025-hl-q14bi')?.totalMarks).toBe(17);
+    expect(live.get('agsci-2025-hl-q12a')?.totalMarks).toBe(10);
+    for (const key of ['b', 'c', 'd', 'e']) expect(live.has(`agsci-2025-hl-q12${key}`)).toBe(false);
+    // 2024 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2024-hl-q2ai', 4], ['agsci-2024-hl-q6a', 10], ['agsci-2024-hl-q6bii', 4], ['agsci-2024-hl-q15aiii', 4],
+      ['agsci-2024-hl-q17a', 6], ['agsci-2024-hl-q18aiii', 8]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2023 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2023-hl-q2a', 6], ['agsci-2023-hl-q4a', 6], ['agsci-2023-hl-q13ai', 14], ['agsci-2023-hl-q13aii', 12],
+      ['agsci-2023-hl-q13c', 12], ['agsci-2023-hl-q15a', 12], ['agsci-2023-hl-q18bii', 18]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2023 Ordinary corrections keep each original's ID; the fused Q10(b)(i)-(iii) keeps part (i) at 3.
+    for (const [id, marks] of [['agsci-2023-ol-q2a', 6], ['agsci-2023-ol-q4', 10], ['agsci-2023-ol-q8a', 10], ['agsci-2023-ol-q10b-i-iii', 3],
+      ['agsci-2023-ol-q13aii', 12], ['agsci-2023-ol-q16ai', 12]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2022 Higher Q16(c)(i) regains its published 11 marks; the other corrections keep their totals.
+    for (const [id, marks] of [['agsci-2022-hl-q16ci', 11], ['agsci-2022-hl-q2b', 6], ['agsci-2022-hl-q15ai', 6], ['agsci-2022-hl-q17ai', 9]] as const) {
+      expect(live.get(id)?.totalMarks, id).toBe(marks);
+    }
+    // 2022 Ordinary corrections keep each original's ID and total; Q4(b) absorbs its five statement cards.
+    for (const [id, marks] of [['agsci-2022-ol-q4b', 10], ['agsci-2022-ol-q14civ', 11], ['agsci-2022-ol-q16bii', 15], ['agsci-2022-ol-q18ai', 12],
+      ['agsci-2022-ol-q2ai', 6], ['agsci-2022-ol-q7aiii', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    for (const key of ['i', 'ii', 'iii', 'iv', 'v']) expect(live.has(`agsci-2022-ol-q4b${key}`)).toBe(false);
+    // 2021 Higher corrections keep each original's ID and total.
+    for (const [id, marks] of [['agsci-2021-hl-q1b', 4], ['agsci-2021-hl-q11bii', 6], ['agsci-2021-hl-q14bii', 6], ['agsci-2021-hl-q16b', 12],
+      ['agsci-2021-hl-q17biv', 8], ['agsci-2021-hl-q18a-crop-preservation', 4]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+    // 2021 Ordinary corrections keep each original's ID; Q18(a)(i) Seedbed preparation regains the named-crop 2 marks.
+    for (const [id, marks] of [['agsci-2021-ol-q18a-i-seedbed', 9], ['agsci-2021-ol-q12b', 2], ['agsci-2021-ol-q14b-iii', 3], ['agsci-2021-ol-q16c-v', 4],
+      ['agsci-2021-ol-q4c', 4], ['agsci-2021-ol-q8b-iii', 6]] as const) expect(live.get(id)?.totalMarks, id).toBe(marks);
+  });
+
   it('adds exactly the reviewed Construction tasks to the frozen pre-audit set', () => {
     // Frozen pre-audit Construction set: 255 Higher + 250 Ordinary, counted and
     // hashed above. Every source-reviewed task is an explicit addition on top.
@@ -1209,10 +1441,13 @@ describe('Mark Bank card preservation', () => {
    *   econ-2024-ol-sa-q8-ii -> sa-q8-i
    *   econ-2024-ol-q16-b-ii-dis -> q16-b-ii-adv
      */
-    // ...plus the Construction Studies per-item cards consolidated into one
-    // printed choice (cons- keys, counted from the alias file itself).
+    // ...plus 9 Agricultural Science per-item cards consolidated into one
+    // printed task (agsci- keys, the review ledger's withdrawnCardIds), and the
+    // Construction Studies per-item cards consolidated into one printed choice
+    // (cons- keys, counted from the alias file itself).
+    expect(agriAliasIds).toHaveLength(9);
     expect(constructionAliasIds).toHaveLength(58);
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + constructionAliasIds.length);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);

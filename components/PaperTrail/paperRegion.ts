@@ -33,7 +33,9 @@ const MIN_TAIL = 0.03;
  * an anchor even when it carries `practiceTask` metadata.
  */
 const isPrintedAnchor = (question: PaperAnswerQuestion): boolean =>
-  !question.practiceTask || /^\d+$/.test(question.n);
+  // Agricultural Science's reviewed sub-tasks (parentN) sit inside a retained
+  // whole question with their own audited region, like a practice task.
+  !question.parentN && (!question.practiceTask || /^\d+$/.test(question.n));
 
 /** The printed question anchors in a sidecar. Treating a split task as an
  *  anchor would end the previous question's crop at the top of the task's
@@ -137,7 +139,10 @@ export function paperRegionFor(
     return segs;
   }
 
-  const next = ordered[i + 1];
+  // Reviewed sub-tasks have independent practice identities and explicit
+  // crops. Their starts are inside a whole question, so they cannot become
+  // the next-question boundary and cut its required context off.
+  const next = ordered.slice(i + 1).find(candidate => !candidate.parentN);
 
   // Last anchored question — trust its own band; if the band is degenerate,
   // run to the bottom of the page (the composition/essay tail is rarely

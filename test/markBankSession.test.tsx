@@ -1084,6 +1084,14 @@ describe('grading', () => {
     expect(screen.getByRole('button', { name: 'Shaky' })).toHaveAttribute('data-suggested');
   });
 
+  test('preserves dominant and recessive allele symbols in the unclaimed-points summary', () => {
+    renderSession([card({ totalMarks: 2, rows: [row({ verbatim: 'HhLl', marks: 2 })] })]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    const strip = screen.getByText(/Not claimed yet/i).parentElement!;
+    expect(strip).toHaveTextContent('HhLl');
+    expect(strip).not.toHaveTextContent('hhll');
+  });
+
   test('says the decision is the student\'s', () => {
     renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));

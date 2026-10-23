@@ -66,7 +66,11 @@ describe('Paper Trail answer sidecars — shape', () => {
       // have a separate contract below and never take part in anchor ordering.
       const printed = printedQuestionAnchors(map.q);
       const tasks = map.q.filter(q => !printed.includes(q));
-      expect(printed.length).toBeGreaterThan(0);
+      // A map may add only reviewed sub-tasks to a paper whose whole questions
+      // were never anchored (Agricultural Science 2018 HL): then every entry is
+      // a parentN sub-task with its own audited region.
+      const subTasksOnly = map.q.every(q => Boolean(q.parentN));
+      if (!subTasksOnly) expect(printed.length).toBeGreaterThan(0);
       const nums = printed.map(q => Number(q.n));
       // question numbers strictly increasing (monotonic, no dupes)
       for (let i = 1; i < nums.length; i++) expect(nums[i]).toBeGreaterThan(nums[i - 1]);
@@ -143,6 +147,17 @@ describe('Paper Trail answer sidecars — shape', () => {
         const parents = new Set(printed.map(q => q.n));
         for (const task of tasks) {
           const id = `${file} ${task.n}`;
+          if (task.parentN) {
+            // Agricultural Science reviewed sub-task: rooted in a retained
+            // printed question by parentN, with an explicit audited region the
+            // reader returns as-is. Its prompt and tariff live on the Mark Bank
+            // card, not in the map.
+            expect(subTasksOnly ? /^\d+$/.test(task.parentN) : parents.has(task.parentN), `${id} parent retained`).toBe(true);
+            expect(typeof task.label === 'string' && task.label.trim().length > 0, `${id} label`).toBe(true);
+            expect(task.paperRegion?.length, `${id} explicit paper region`).toBeGreaterThan(0);
+            expect(paperRegionFor(map.q, task.n), `${id} usable paper region`).toEqual(task.paperRegion);
+            continue;
+          }
           // Rooted in a retained printed question, optionally through its
           // printed alternative (2021+ Q1A / Q1B → parent 1).
           expect(parents.has(task.n.match(/^(\d+)[A-Z]?\(/)?.[1] ?? ''), `${id} parent retained`).toBe(true);

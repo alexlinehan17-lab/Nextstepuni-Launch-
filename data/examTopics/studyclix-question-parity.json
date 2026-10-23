@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T07:49:38.439Z",
+  "generatedAt": "2026-10-22T11:22:16.172Z",
   "scope": {
     "included": "Factual State-exam topic associations captured from every current StudyClix Leaving Certificate topic page.",
     "excluded": "Commercial mock questions and all provider-owned question text, solutions, notes, media and PDFs.",
@@ -9,7 +9,7 @@
   "totals": {
     "subjects": 32,
     "subjectsWithExactCrosswalks": 32,
-    "referenceTopics": 1609,
+    "referenceTopics": 1611,
     "referenceOfficialAssociations": 37105,
     "matched": 26906,
     "sourceBlocked": 9856,
@@ -1021,7 +1021,7 @@
       "referenceFile": "data/examTopics/agricultural-science.json",
       "crosswalkFile": "data/examTopics/agricultural-science-local-crosswalk.json",
       "totals": {
-        "referenceTopics": 35,
+        "referenceTopics": 37,
         "referenceOfficialAssociations": 1027,
         "matched": 794,
         "sourceBlocked": 233,
@@ -1074,6 +1074,28 @@
               "resolution": "source-blocked"
             }
           ]
+        },
+        {
+          "id": "agricultural-science-higher-animal-physiology-circulatory-system",
+          "label": "Animal Physiology - Circulatory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2011/LC024ALP000EV.pdf",
+          "referenceOfficialAssociations": 0,
+          "matched": 0,
+          "sourceBlocked": 0,
+          "referenceAnomaly": 0,
+          "unreviewed": 0,
+          "gaps": []
+        },
+        {
+          "id": "agricultural-science-higher-animal-physiology-respiratory-system",
+          "label": "Animal Physiology - Respiratory System",
+          "sourcePath": "https://www.examinations.ie/archive/exampapers/2012/LC024ALP000EV.pdf",
+          "referenceOfficialAssociations": 0,
+          "matched": 0,
+          "sourceBlocked": 0,
+          "referenceAnomaly": 0,
+          "unreviewed": 0,
+          "gaps": []
         },
         {
           "id": "agricultural-science-higher-animal-physiology-digestive-system",

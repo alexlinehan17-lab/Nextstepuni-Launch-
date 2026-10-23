@@ -177,7 +177,7 @@ import {
  * Shrink this list. Do not add to it.
  */
 const KNOWN_OVER_ROW_CAP = new Set([
-  'agsci-2024-hl-q15av', 'agsci-2024-ol-q16b', 'agsci-2024-ol-q17aiii',
+  'agsci-2024-ol-q16b',
 ]);
 
 const ROOT = resolve(__dirname, '..');
@@ -333,7 +333,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
   });
 
   test('every card obeys the structural caps and id rules', () => {
-    // The cap depends on the tariff: five REQUIRED rows, but a best-N-of-M card
+    // The cap depends on the tariff: six REQUIRED rows, but a best-N-of-M card
     // may show up to MAX_OPTION_ROWS, because its surplus rows are a menu the
     // student picks from rather than a list they must recall.
     const bad = SAMPLE_CARDS.filter(isPointCard)
