@@ -533,7 +533,7 @@
     "english-2020-ol-p1-t1-a-ii": {
       "questionSha256": "b236f4c375aed2450b30b1cfe3aa196903ed33b2c29d8d82763bab500198b9a4",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 3 printed choices are one response, not 3 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF5 — “which two of the listed terms” (Descriptive, Informative, Entertaining) the candidate would choose, explained; every pair is marked on one grid. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -560,7 +560,7 @@
     "english-2020-ol-p1-t2-a-ii": {
       "questionSha256": "5bdeb030e2425037d9a38ff69e9763fa071f91459d436d54a839e1527e3028de",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 3 printed choices are one response, not 3 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF7 — “which two of the listed terms” (Descriptive, Informative, Entertaining) the candidate would choose, explained; every pair is marked on one grid. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -587,7 +587,7 @@
     "english-2020-ol-p1-t3-a-ii": {
       "questionSha256": "962c8e878452791100c30a92bb41295b2432a3cfcd3feb64f36d7ffab0688310",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 3 printed choices are one response, not 3 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF9 — “which two of the listed terms” (Descriptive, Informative, Entertaining) the candidate would choose, explained; every pair is marked on one grid. One 15-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -2313,17 +2313,17 @@
     "english-2020-ol-p1-t1-b": {
       "questionSha256": "f16ae7300bd8dc64ac2585e9d470a9f35068c3ac52a697301c354da1e13e3ad8",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF6: a letter to Customer Care — when and how the staff member helped, how much it was appreciated, and how the candidate would like to express it; all aspects. One 50-mark response."
     },
     "english-2020-ol-p1-t2-b": {
       "questionSha256": "2df8f3f8592a72778bdd0f11242c55afe1e7801318528b1de479792a602dd67e",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF8: a radio talk on an inter-railing holiday — feelings the night before, some adventures, and how the candidate benefitted. One 50-mark response."
     },
     "english-2020-ol-p1-t3-b": {
       "questionSha256": "1c9393c32cc0473fab82a42a39ae33c4bbaf0a7e1e3cb0012db875e81aa857a2",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: a promotional leaflet for Arctic Adventures — types of holidays, activities, safety measures and contact details. One 50-mark response."
     },
     "english-2021-hl-p1-t1-b": {
       "questionSha256": "0da73824fc2ba6013842c6a3141060c93c90274edf13be7058078e7ba84ace78",
@@ -3834,37 +3834,37 @@
     "english-2020-ol-p1-composing-1": {
       "questionSha256": "e410aeec70e16fac7003aac2d2c2556a4a2fc8d3aecbf96d0fa0c775630b6c27",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF12: a short story in which a time machine takes a character to an interesting moment in Ireland’s past; “serious or humorous or both” is a free register. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-2": {
       "questionSha256": "fa97867a91236c5f6de5e7beed3c6e3e28a11f30959a00743d44fb13da3c14af",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF13: a personal essay on whether or not travelling to distant stars and planets appeals, and why — one view. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-3": {
       "questionSha256": "60f360b0b919f9db026f279c90135b9a9b8faa02742b126a8db8bfe9c70b516a",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF14: “a series of three diary entries” as A.A. Gill’s companion, recounting adventures and reflecting on experiences. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-4": {
       "questionSha256": "112d9236104e49c35b766c439ef028298e9f4b9c51f37b9bd1c21e5d0f606ee4",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay on the candidate’s experiences of friendliness, generosity and hospitality. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-5": {
       "questionSha256": "cfef3d27aad639a54f57f7bbbe380a5de9d60be6e9e4ba739a4010deb9ed534f",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a short story in which a life-long friendship comes under pressure when one friend becomes rich and famous. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-6": {
       "questionSha256": "d944fd3dc6283acd5c7185f0d8d31c76e3d001fdd70f9bad36c7b80b56d3c8d1",
       "kind": "required",
-      "reason": "The stated subjects or perspectives are required together. They do not form optional alternative tasks."
+      "reason": "Scheme PDF17: a travel-magazine article celebrating travel, considering what we gain from other cultures, and urging consideration for others and the planet — all aspects, not necessarily equally. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-7": {
       "questionSha256": "bbf6727211149631e95e4d554caea1472584fd6a06c10d3ecd3ba4aab0f15e1e",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a talk to Turkish students on normal everyday life for people of the candidate’s age in Ireland. One 100-mark composition."
     },
     "english-2021-hl-p1-composing-1": {
       "questionSha256": "a5cc9a45c34147e574b88eb5f7947e5d6aec2ebd60355cab0bf48bdff27f9f1a",
@@ -18350,6 +18350,51 @@
       "questionSha256": "071a998113df646083a3426fd834600a7c2d5d7aa5764ae2e37eaed1260f14aa",
       "kind": "open",
       "reason": "Scheme PDF41, 45: freedom of choice of poems studied; discuss the question as printed. One 50-mark response."
+    },
+    "english-2020-ol-p1-t1-a-i": {
+      "questionSha256": "5178e9010835136e73802fb4766909deb0f13410ea217f5a19bea4086a6b235b",
+      "kind": "open",
+      "reason": "Scheme PDF5: three points of the candidate’s own on the impression of the writer, John G. O’Dwyer, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-ol-p1-t1-a-iii-a": {
+      "questionSha256": "cbf064ffe67b464ab5bbd62f89a7749de0c48a9ffdcf88db3991130e7243d9ab",
+      "kind": "open",
+      "reason": "Scheme PDF6: whether or not the candidate would like to visit the Flaggy Shore, explained from the text — one judgement. One 10-mark response."
+    },
+    "english-2020-ol-p1-t1-a-iii-b": {
+      "questionSha256": "089fa2d0d4d532c2e44b39899dcc1a61dc19fadd5c12e78efe3a554e2b796fe7",
+      "kind": "flexible",
+      "reason": "Scheme PDF6: one place in Ireland of the candidate’s own, other than the Flaggy Shore, with “at least two reasons”. One 10-mark response."
+    },
+    "english-2020-ol-p1-t2-a-i": {
+      "questionSha256": "c9cc823164689c9867ecde7f5b703ac8bf2cf25ee6006518df4e7314a75a44cc",
+      "kind": "open",
+      "reason": "Scheme PDF7: three points of the candidate’s own on the impression of the writer, Alice, and her travelling companions, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-ol-p1-t2-a-iii-a": {
+      "questionSha256": "c3a4077d40da3d07ba98425544c0d2b86f2ebf3e357bf3c3a32f6f52f6858237",
+      "kind": "open",
+      "reason": "Scheme PDF8: whether or not the candidate would like to visit the places identified in the text, explained from the text — one judgement. One 10-mark response."
+    },
+    "english-2020-ol-p1-t2-a-iii-b": {
+      "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
+      "kind": "flexible",
+      "reason": "Scheme PDF8: one place in Ireland of the candidate’s own, other than the Flaggy Shore, with “at least two reasons”. One 10-mark response."
+    },
+    "english-2020-ol-p1-t3-a-i": {
+      "questionSha256": "a2e6058a2583eb285dd9a367e6f5d81255c6627a764026f12509b9098c0f996b",
+      "kind": "open",
+      "reason": "Scheme PDF9: three points of the candidate’s own on the impression of the writer, A.A. Gill, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-ol-p1-t3-a-iii-a": {
+      "questionSha256": "b1fce730737ec2b874fd2b3f609ca8eb146cfb21a69275aaf7e83d158e043be6",
+      "kind": "open",
+      "reason": "Scheme PDF9: whether or not the candidate would like to visit Svalbard, explained from the text — one judgement. One 10-mark response."
+    },
+    "english-2020-ol-p1-t3-a-iii-b": {
+      "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
+      "kind": "flexible",
+      "reason": "Scheme PDF10: one place in Ireland of the candidate’s own, other than the Flaggy Shore, with “at least two reasons”. One 10-mark response."
     }
   }
 }

@@ -136,6 +136,17 @@
    "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b"
   },
   {
+   "paperId": "english-2020-ol-p1",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 21,
+   "printedDuplicates": 1,
+   "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+   "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a"
+  },
+  {
    "paperId": "english-2019-ol-p1",
    "year": 2019,
    "level": "ordinary",
@@ -1543,6 +1554,16 @@
     },
     "capRulePage": 3
    },
+   "2020-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     53
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2021-ordinary": {
     "family": "ol-o1-o8-2022",
     "gridPages": [
@@ -2183,7 +2204,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1840,
+ "cardCount": 1861,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -29341,6 +29362,841 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t1-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of TEXT 1, what impression do you form of the writer, John G. O’Dwyer? Make three points in your response, supporting your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Travelling in Clare",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t1-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "Which two of the following terms would you choose to describe John G. O’Dwyer’s writing about his trip to the Flaggy Shore? Descriptive Informative Entertaining. Explain your choice, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Travelling in Clare",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t1-a-iii-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "Based on what you have learned from TEXT 1 above, would you like to visit the Flaggy Shore? Explain your answer with reference to Text 1.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Travelling in Clare",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t1-a-iii-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "Recommend one place in Ireland, other than the Flaggy Shore, that you think tourists should visit when they come to Ireland. Give reasons explaining why you think tourists should visit this location.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t1-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 1 QB",
+   "questionText": "You have had a good experience while travelling on public transport in Ireland because a member of staff was particularly helpful. Write a letter to the Customer Care Department of the transport company involved in which you: give a detailed description of when and how the staff member helped you on your journey, explain how much you appreciated this thoughtfulness, and outline how you would like to express your appreciation to the person who helped you.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t2-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of TEXT 2, what impression do you form of the writer, Alice, and her travelling companions? Make three points in your response, supporting your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Travelling in Turkey",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t2-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "Which two of the following terms would you choose to describe Alice Waters’ writing about her travels? Descriptive Informative Entertaining. Explain your choice, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Travelling in Turkey",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t2-a-iii-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 2 QA(iii)(a)",
+   "questionText": "Based on what you have learned from TEXT 2 above, would you like to visit the places identified in the text? Explain your answer with reference to TEXT 2.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Travelling in Turkey",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t2-a-iii-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 2 QA(iii)(b)",
+   "questionText": "Recommend one place in Ireland, (other than the Flaggy Shore, featured in TEXT 1), that you think tourists should visit when they come to Ireland. Give reasons explaining why you think tourists should visit this location.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   },
+   "atlasPlacements": [
+    {
+     "fileid": "LC002GLP100EV.pdf",
+     "n": "12"
+    }
+   ]
+  },
+  {
+   "id": "english-2020-ol-p1-t2-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 2 QB",
+   "questionText": "Imagine you won a competition run by your local radio station. The prize was a ticket for an inter-railing holiday, travelling by train across several European countries of your choice. After you return home you are invited to give a talk about your travels on the radio. Write the text of the talk you would give to the listeners in which you: describe how you felt on the night before you left on your journey, tell listeners about some of your adventures, and explain how you have benefitted from the experience.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t3-a-i",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of TEXT 3, what impression do you form of the writer, A.A. Gill? Make three points in your response, supporting your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Travelling in the Arctic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t3-a-ii",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "Which two of the following terms would you choose to describe A.A. Gill’s writing about his trip to the Arctic? Descriptive Informative Entertaining. Explain your choice, supporting your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 2 of 3). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Travelling in the Arctic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t3-a-iii-a",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 3 QA(iii)(a)",
+   "questionText": "Based on what you have learned from TEXT 3 above, would you like to visit Svalbard? Explain your answer with reference to TEXT 3.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Travelling in the Arctic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9,
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-t3-b",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Text 3 QB",
+   "questionText": "You own a holiday company called Arctic Adventures which offers trips to Svalbard, a location featured in TEXT 3 above. Write the text for a promotional leaflet in which you describe the types of holidays offered by your company, explain the various activities available, and outline the extensive safety measures in place. The leaflet should include various contact details to facilitate bookings.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Travelling in the Arctic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-1",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 1",
+   "questionText": "TEXTS 1, 2 and 3 all deal with the theme of travel. Write a short story in which a character finds a time machine and uses it to travel back to witness, or participate in, an interesting moment in Ireland’s past. Your story may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-2",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 2",
+   "questionText": "All of the places the writers travel to in TEXTS 1, 2 and 3 are located on planet Earth. Write a personal essay in which you discuss whether or not you find the idea of travelling to distant stars and planets appealing and explain why you would or would not be prepared to undertake such a journey.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-3",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 3",
+   "questionText": "In TEXT 3, we learn about A.A. Gill’s trip to Svalbard to look for Polar bears. Imagine you are with A.A. Gill on the trip to the Arctic described in TEXT 3. Inspired by TEXT 3, write three diary entries in which you describe your adventures and reflect on your experiences while on the trip.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Travelling in the Arctic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-4",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 4",
+   "questionText": "In TEXT 2, Alice and her friends are treated with friendliness, generosity and hospitality. Write a personal essay about your own experiences of friendliness, generosity and hospitality.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-5",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 5",
+   "questionText": "In TEXT 1, we read how Lady Gregory was visited by her famous friends, Shaw and Yeats, at her home in County Clare. Write a short story in which the close friendship between two life-long friends comes under pressure when one of the friends becomes rich and famous.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-6",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 6",
+   "questionText": "In TEXTS 1, 2, and 3, we encounter various writers on their travels. Write an article, to be published in a travel magazine, in which you celebrate the joys of travelling, consider what we can gain from experiencing other cultures, and urge people to be considerate both of others and of the planet while on their travels.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-ol-p1-composing-7",
+   "year": 2020,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2020 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 2, we read about Alice Waters’ experiences of meeting other young people while on her travels. Imagine you are part of a school exchange trip to Turkey. You have been asked to give a talk to the students in the Turkish school in which you explain what normal everyday life is like for people of your age in Ireland. Write the text of the talk you would deliver.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

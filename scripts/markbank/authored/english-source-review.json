@@ -190,15 +190,15 @@
     },
     "english-2020-ol-p1-t3-b": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "Svalbard — Arctic Adventures",
+      "label": "TEXT 3",
+      "title": "Travelling in the Arctic",
       "pages": [
         6,
         7
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The leaflet concerns the particular location featured in Text 3.",
-      "questionSha256": "1c9393c32cc0473fab82a42a39ae33c4bbaf0a7e1e3cb0012db875e81aa857a2"
+      "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "1c9393c32cc0473fab82a42a39ae33c4bbaf0a7e1e3cb0012db875e81aa857a2",
+      "reason": "The leaflet promotes trips to Svalbard, “a location featured in TEXT 3 above”; the whole of TEXT 3 is retained (the earlier reader carried an invented title)."
     },
     "english-2022-hl-p1-t3-b": {
       "kind": "source-text",
@@ -237,15 +237,15 @@
     },
     "english-2020-ol-p1-composing-3": {
       "kind": "source-text",
-      "label": "SOURCE MATERIAL",
-      "title": "A.A. Gill in Svalbard",
+      "label": "TEXT 3",
+      "title": "Travelling in the Arctic",
       "pages": [
         6,
         7
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "The diary adopts a place on the particular Arctic trip described in Text 3.",
-      "questionSha256": "60f360b0b919f9db026f279c90135b9a9b8faa02742b126a8db8bfe9c70b516a"
+      "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "60f360b0b919f9db026f279c90135b9a9b8faa02742b126a8db8bfe9c70b516a",
+      "reason": "The diary entries are “Inspired by TEXT 3” on A.A. Gill’s trip; the whole of TEXT 3 is retained (the earlier reader carried an invented title)."
     },
     "english-2021-ol-p1-composing-5": {
       "kind": "source-text",
@@ -5505,6 +5505,156 @@
       "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
       "questionSha256": "096366d24533c21413b846c5a2ea6df133de027acd13362ec4d10f477eddb725",
       "reason": "Paper PDF6 prints the instruction (“Read the following poem by Maurice Riordan and answer either Question 1 or Question 2”), the title, the whole 30-line poem, the byline and the gloss (Badb – the name of a Celtic war goddess); visually verified."
+    },
+    "english-2020-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Travelling in Clare",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "5178e9010835136e73802fb4766909deb0f13410ea217f5a19bea4086a6b235b",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Travelling in Clare",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "b236f4c375aed2450b30b1cfe3aa196903ed33b2c29d8d82763bab500198b9a4",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Travelling in Clare",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Adapted from an article by John G O’Dwyer in the On the Move series in the Irish Times, on a walking trip by the Flaggy Shore, with a photograph (PDF2–3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "cbf064ffe67b464ab5bbd62f89a7749de0c48a9ffdcf88db3991130e7243d9ab",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Travelling in Turkey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "c9cc823164689c9867ecde7f5b703ac8bf2cf25ee6006518df4e7314a75a44cc",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Travelling in Turkey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "5bdeb030e2425037d9a38ff69e9763fa071f91459d436d54a839e1527e3028de",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Travelling in Turkey",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Adapted from an essay by Alice Waters in The Kindness of Strangers, with a photograph of a walking tour in Cappadocia (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "c3a4077d40da3d07ba98425544c0d2b86f2ebf3e357bf3c3a32f6f52f6858237",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Travelling in the Arctic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "a2e6058a2583eb285dd9a367e6f5d81255c6627a764026f12509b9098c0f996b",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Travelling in the Arctic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "962c8e878452791100c30a92bb41295b2432a3cfcd3feb64f36d7ffab0688310",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Travelling in the Arctic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on edited extracts from A.A. Gill is Further Away by A.A. Gill, on his trip to Svalbard, with two photographs (PDF6–7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "b1fce730737ec2b874fd2b3f609ca8eb146cfb21a69275aaf7e83d158e043be6",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and the images checked; the whole printed text is retained."
+    },
+    "english-2020-ol-p1-t1-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 1",
+        "title": "TRAVELLING IN CLARE",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+      "questionSha256": "089fa2d0d4d532c2e44b39899dcc1a61dc19fadd5c12e78efe3a554e2b796fe7",
+      "reason": "Self-contained: one place in Ireland of the candidate’s own, other than the Flaggy Shore, and reasons; scheme PDF6 never refers to TEXT 1."
+    },
+    "english-2020-ol-p1-t2-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 2",
+        "title": "TRAVELLING IN TURKEY",
+        "pages": [
+          4,
+          5
+        ]
+      },
+      "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+      "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
+      "reason": "Self-contained: one place in Ireland of the candidate’s own, other than the Flaggy Shore, and reasons; scheme PDF8 never refers to TEXT 2."
+    },
+    "english-2020-ol-p1-t3-a-iii-b": {
+      "kind": "not-required",
+      "excludedSource": {
+        "label": "TEXT 3",
+        "title": "TRAVELLING IN THE ARCTIC",
+        "pages": [
+          6,
+          7
+        ]
+      },
+      "paperSha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+      "questionSha256": "819ff6e66510dbd60e70552208717afb2a14e55d84c6ca72a2a36b24380301e5",
+      "reason": "Self-contained: one place in Ireland of the candidate’s own, other than the Flaggy Shore, and reasons; scheme PDF10 never refers to TEXT 3."
     }
   }
 }
