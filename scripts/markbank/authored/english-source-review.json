@@ -5346,6 +5346,28 @@
       "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
       "questionSha256": "7378b6e85486835eb519e98db8a1681ee2175e4a6cbb74c7d683cce3ba95021f",
       "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p2-unseen-q1": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Jack",
+      "pages": [
+        13
+      ],
+      "attribution": "Jack — Elaine Feeney, as reproduced in the SEC 2019 paper.",
+      "questionSha256": "4de89ddc5981ed31fea6a7f69473330d08730384a3a0401df07c765b2c9b44aa",
+      "reason": "Paper PDF13 prints the introduction (a mother’s thoughts about her relationship with her son, Jack), the instruction, the title, the whole poem in two columns and the byline above both questions; visually verified. PDF14 begins Prescribed Poem A."
+    },
+    "english-2019-ol-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Jack",
+      "pages": [
+        13
+      ],
+      "attribution": "Jack — Elaine Feeney, as reproduced in the SEC 2019 paper.",
+      "questionSha256": "988c56aabc864b1f8b412fe54b86ac2435b4b1459138e6f0ba4bbe7f6f3955dc",
+      "reason": "Paper PDF13 prints the introduction (a mother’s thoughts about her relationship with her son, Jack), the instruction, the title, the whole poem in two columns and the byline above both questions; visually verified. PDF14 begins Prescribed Poem A."
     }
   }
 }

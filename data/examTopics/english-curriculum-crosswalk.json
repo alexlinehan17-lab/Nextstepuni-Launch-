@@ -738,5 +738,25 @@
   "english-ordinary-text-big-maggie-reviewed-archive": [
     "english-6-0",
     "english-12-55"
+  ],
+  "english-ordinary-poetry-kennelly-reviewed-archive": [
+    "english-8-1",
+    "english-11-12"
+  ],
+  "english-ordinary-poetry-herrick-reviewed-archive": [
+    "english-8-1",
+    "english-11-63"
+  ],
+  "english-ordinary-poetry-hardie-reviewed-archive": [
+    "english-8-1",
+    "english-11-64"
+  ],
+  "english-ordinary-text-persuasion-reviewed-archive": [
+    "english-6-0",
+    "english-12-15"
+  ],
+  "english-ordinary-text-the-playboy-of-the-western-world-reviewed-archive": [
+    "english-6-0",
+    "english-12-26"
   ]
 }

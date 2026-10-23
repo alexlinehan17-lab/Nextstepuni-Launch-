@@ -147,6 +147,17 @@
    "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff"
   },
   {
+   "paperId": "english-2019-ol-p2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "tasks": 88,
+   "cards": 86,
+   "printedDuplicates": 2,
+   "paperSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+   "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -2172,7 +2183,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1754,
+ "cardCount": 1840,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -30199,6 +30210,3116 @@
    "atlas": {
     "fileid": "LC002GLP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q1(a)",
+   "questionText": "Describe Ifemelu’s life in Nigeria before she left to study in America.",
+   "totalMarks": 10,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q1(b)",
+   "questionText": "Identify one challenge Ifemelu faces when she moves to America and explain how she responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    19
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the novel, Americanah.",
+   "totalMarks": 10,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q3(i)",
+   "questionText": "Based on events in the novel, Americanah, write a front‐page newspaper article beginning with the following headline: “IMMIGRATION FRAUD FAILS – FAKE MARRIAGE PLANS EXPOSED” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q3(ii)",
+   "questionText": "Write a piece in which you compare Ifemelu’s experience as an immigrant in America with Obinze’s experience as an immigrant in England. Support your answer with reference to the novel, Americanah.",
+   "totalMarks": 30,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-a-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text A Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Adichie’s novel, Americanah. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q1(a)",
+   "questionText": "Describe Offred’s life before the Republic of Gilead was established.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q1(b)",
+   "questionText": "Identify one challenge Offred faces when she becomes a handmaid and explain how she responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q2",
+   "questionText": "Explain the main reason why you do or do not agree that the “Historical Notes” are an effective way to end the novel, The Handmaid’s Tale.",
+   "totalMarks": 10,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    22,
+    23
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q3(i)",
+   "questionText": "Based on events in the novel, The Handmaid’s Tale, write a front‐page newspaper article beginning with the following headline: “AUNT ASSAULTED AS WOMAN ESCAPES FROM RED CENTRE” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q3(ii)",
+   "questionText": "Write a piece in which you compare how Offred and Moira deal with life in the Republic of Gilead. Support your answer with reference to the novel, The Handmaid’s Tale.",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    23,
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-b-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text B Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Atwood’s novel, The Handmaid’s Tale. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q1(a)",
+   "questionText": "Describe the problems facing Sir Walter Elliot at the beginning of the novel.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q1(b)",
+   "questionText": "Identify one challenge Anne faces when Captain Wentworth re‐enters her life and explain how she responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the novel, Persuasion.",
+   "totalMarks": 10,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q3(i)",
+   "questionText": "Based on events in the novel, Persuasion, write an article suitable for publication in a popular magazine beginning with the following title: “TRUE LOVE TRIUMPHS IN THE END!” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q3(ii)",
+   "questionText": "Write a piece in which you compare Anne’s two suitors, Captain Wentworth and Mr. William Elliot, and the sincerity of each man’s affection for Anne. Support your answer with reference to the novel, Persuasion.",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    26,
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-c-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text C Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Austen’s novel, Persuasion. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q1(a)",
+   "questionText": "Describe Hester’s disturbing experiences in the snow at the beginning of the play.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q1(b)",
+   "questionText": "Identify one challenge Hester faces due to Carthage’s marriage to Caroline and explain how she responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the play, By the Bog of Cats.",
+   "totalMarks": 10,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    28,
+    29
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q3(i)",
+   "questionText": "Based on events in the play, By the Bog of Cats, write a front‐page newspaper article beginning with the following headline: “HOUSE FIRE ON THE BOG OF CATS” Your article should demonstrate your knowledge of this aspect of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q3(ii)",
+   "questionText": "Write a piece in which you compare Carthage’s relationship with Hester and his relationship with Caroline. Support your answer with reference to the play, By the Bog of Cats.",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-d-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text D Q3(iii)",
+   "questionText": "Identify two developments in the plot that add to the drama in Marina Carr’s play, By the Bog of Cats. Explain why you think these developments add to the drama in the play. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q1(a)",
+   "questionText": "Describe how Ma tried to make life normal for Jack while they lived in Room.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q1(b)",
+   "questionText": "Identify one challenge Jack faces when he leaves Room and explain how he responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the novel, Room.",
+   "totalMarks": 10,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q3(i)",
+   "questionText": "Based on events in the novel, Room, write a front‐page newspaper article beginning with the following headline: “BRAVE BOY HELPS POLICE FREE MISSING MOTHER” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q3(ii)",
+   "questionText": "Write a piece in which you compare how well Ma copes with the difficulties she faces while held captive in Room with how well she copes with the difficulties she faces after she escapes. Support your answer with reference to the novel, Room.",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    32,
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-e-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text E Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Emma Donoghue’s novel, Room. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-18",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Room (Emma Donoghue)",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q1(a)",
+   "questionText": "Describe the relationship between Tom Buchanan and his wife, Daisy, at the beginning of the novel.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q1(b)",
+   "questionText": "Identify one challenge Gatsby faces in his relationship with Daisy and explain how he responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the novel, The Great Gatsby.",
+   "totalMarks": 10,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    34,
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q3(i)",
+   "questionText": "Based on events in the novel, The Great Gatsby, write a front‐page newspaper article beginning with the following headline: “SHOCK AS MYSTERIOUS MILLIONAIRE FOUND DEAD” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q3(ii)",
+   "questionText": "Write a piece in which you compare your initial impression of Jay Gatsby, with your view of him by the end of the novel, The Great Gatsby. Support your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    35,
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-f-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text F Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Fitzgerald’s novel, The Great Gatsby. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-22",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Great Gatsby (F. Scott Fitzgerald)",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q1(a)",
+   "questionText": "Describe two effects of the economic crash evident in the novel, The Spinning Heart.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q1(b)",
+   "questionText": "Identify one challenge Bobby Mahon faces after the economic crash and explain how he responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q2",
+   "questionText": "Explain the main reason why you were or were not satisfied with how the novel ended for Bobby Mahon.",
+   "totalMarks": 10,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q3(i)",
+   "questionText": "Based on events in the novel, The Spinning Heart, write a front‐page newspaper article beginning with the following headline: “RELIEF AS MISSING CHILD LOCATED” Your article should demonstrate your knowledge of this aspect of the novel.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q3(ii)",
+   "questionText": "Write a piece in which you compare Bobby’s relationship with his wife, Triona, and Seanie’s relationship with Réaltín. Support your answer with reference to the novel, The Spinning Heart.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    38,
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-g-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text G Q3(iii)",
+   "questionText": "Identify two developments in the plot that contributed to your enjoyment of Donal Ryan’s novel, The Spinning Heart. Explain why these developments contributed to your enjoyment of the novel. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-27",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Spinning Heart (Donal Ryan)",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q1(a)",
+   "questionText": "Describe the effect the witches have on Macbeth when he first encounters them.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q1(b)",
+   "questionText": "Identify one challenge Macbeth faces when he becomes king and explain how he responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the play, Macbeth.",
+   "totalMarks": 10,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    40,
+    41
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q3(i)",
+   "questionText": "Based on events in the play, Macbeth, write a front‐page newspaper article beginning with the following headline: “NATION MOURNS AS KING DUNCAN SLAIN” Your article should demonstrate your knowledge of this aspect of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q3(ii)",
+   "questionText": "Write a piece in which you compare your impression of the relationship between Macbeth and Lady Macbeth at the beginning of the play and your impression of their relationship by the end of the drama. Support your answer with reference to the play, Macbeth.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-h-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text H Q3(iii)",
+   "questionText": "Identify two developments in the plot that add to the drama in Shakespeare’s play, Macbeth. Explain why you think these developments add to the drama in the play. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q1(a)",
+   "questionText": "Describe the relationship between Pegeen Mike and Shawn Keogh at the beginning of the play.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q1(b)",
+   "questionText": "Identify one challenge Shawn Keogh faces following the arrival of Christy Mahon and explain how Shawn responds to this challenge. Support your answer with reference to the text.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q2",
+   "questionText": "Explain the main reason why you did or did not enjoy the ending of the drama, The Playboy of the Western World.",
+   "totalMarks": 10,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q3-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q3(i)",
+   "questionText": "Based on events in the play, The Playboy of the Western World, write a front‐page newspaper article beginning with the following headline: “AMAZEMENT IN MAYO AS FATHER AND SON REUNITED” Your article should demonstrate your knowledge of this aspect of the play.",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q3-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q3(ii)",
+   "questionText": "Write a piece in which you compare your initial impression of Christy Mahon, when he arrives in Mayo, with your view of Christy as he leaves Mayo at the end of the play. Support your answer with reference to the drama, The Playboy of the Western World.",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    44,
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-single-i-q3-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Single Text I Q3(iii)",
+   "questionText": "Identify two developments in the plot that add to the drama in Synge’s play, The Playboy of the Western World. Explain why you think these developments add to the drama in the play. Your answer should demonstrate your knowledge of the text.",
+   "totalMarks": 30,
+   "topicId": "english-12-26",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Playboy of the Western World (J.M. Synge)",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 9,
+     "C": 9,
+     "L": 9,
+     "M": 3
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-a-q1-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative A Q1(a)(i)",
+   "questionText": "Name one of your three comparative texts and identify a relationship in it. Use one or more key moments to explain how the characters in this relationship did or did not support each other when faced with a problem, challenge or crisis in the text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-a-q1-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative A Q1(a)(ii)",
+   "questionText": "Name another comparative text you have studied and identify a relationship in it. Use one or more key moments to explain how the characters in this relationship did or did not support each other when faced with a problem, challenge or crisis in the text. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-a-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative A Q1(b)",
+   "questionText": "Relationships often feature one main emotion (e.g. love, hatred, jealousy, etc.). Choose a relationship from each of at least two comparative texts you have studied, and compare these relationships with reference to the main emotion evident in each. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    47
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-a-q2-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative A Q2(a)(i)",
+   "questionText": "Name one of your three comparative texts and identify a relationship in it. Explain whether this relationship is an equal partnership or is dominated by one character. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-a-q2-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative A Q2(a)(ii)",
+   "questionText": "Name another of your comparative texts and identify a relationship in it. Explain whether this relationship is an equal partnership or is dominated by one character. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-7-6",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Relationships",
+   "schemePages": [
+    48
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-b-q1-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative B Q1(a)(i)",
+   "questionText": "Identify a theme you have studied as part of your comparative studies. You have been asked to give a talk to your class explaining how one or more key moments helped you to understand this theme in one of your three comparative texts. Write the text of the talk that you would give.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-b-q1-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative B Q1(a)(ii)",
+   "questionText": "You have been asked to give a talk to your class explaining how one or more key moments helped you to understand the same theme in another text on your comparative course. Write the text of the talk that you would give.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-b-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative B Q1(b)",
+   "questionText": "“We can find a theme to be more realistic and true‐to‐life in some texts than in others.” In relation to the theme you discussed in part (a) above, compare how realistic and true‐to‐life you found this theme to be in at least two texts on your comparative course. Support your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    49
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 12,
+     "C": 12,
+     "L": 12,
+     "M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-b-q2-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative B Q2(a)(i)",
+   "questionText": "Identify a theme you explored in one of the three comparative texts you have studied, and select a character who reveals something important to you about your chosen theme. Explain the way(s) in which your chosen character reveals something important about your chosen theme to you.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-comparative-b-q2-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Comparative B Q2(a)(ii)",
+   "questionText": "Choose a character from another comparative text you have studied and, with reference to the same theme you discussed in part (i), explain the way(s) in which your chosen character reveals something important about your chosen theme to you.",
+   "totalMarks": 15,
+   "topicId": "english-7-0",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Theme",
+   "schemePages": [
+    50
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-unseen-q1",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Unseen Poetry Q1",
+   "questionText": "What do you learn about Jack from your reading of the above poem? Explain your answer with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Jack",
+    "pages": [
+     13
+    ],
+    "attribution": "Jack — Elaine Feeney, as reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-unseen-q2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Unseen Poetry Q2",
+   "questionText": "Based on what the mother says in the above poem, do you think that she and Jack have a good relationship? Explain your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Jack",
+    "pages": [
+     13
+    ],
+    "attribution": "Jack — Elaine Feeney, as reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    51
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-a-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry A Q1(a)",
+   "questionText": "Identify three images used by the poet in this poem. Which one of your chosen images do you find the most appealing? Explain your answer.",
+   "totalMarks": 15,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Begin — Brendan Kennelly",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Begin",
+    "pages": [
+     14
+    ],
+    "attribution": "Begin — Brendan Kennelly.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-a-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry A Q1(b)",
+   "questionText": "In your opinion, is this an uplifting poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Begin — Brendan Kennelly",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Begin",
+    "pages": [
+     14
+    ],
+    "attribution": "Begin — Brendan Kennelly.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-a-q2-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry A Q2(i)",
+   "questionText": "Imagine you are the poet, Brendan Kennelly. You have been invited to talk to a Leaving Certificate class about your poem, “Begin”. In your talk you should point out the references to everyday life you have included in your poem, and help the class to understand the meaning of the poem. Write the text of the talk you would give, demonstrating your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Begin — Brendan Kennelly",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Begin",
+    "pages": [
+     14
+    ],
+    "attribution": "Begin — Brendan Kennelly.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    52,
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-a-q2-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry A Q2(ii)",
+   "questionText": "Do you find this poem easy or difficult to understand? Explain your response, supporting your answer with reference to both the language and the content of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Begin — Brendan Kennelly",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Begin",
+    "pages": [
+     14
+    ],
+    "attribution": "Begin — Brendan Kennelly.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-a-q2-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry A Q2(iii)",
+   "questionText": "Do you think the poet makes effective use of the natural world to teach readers a valuable lesson or lessons in the above poem? Give reasons for your response. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Begin — Brendan Kennelly",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM A",
+    "title": "Begin",
+    "pages": [
+     14
+    ],
+    "attribution": "Begin — Brendan Kennelly.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    53
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-b-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry B Q1(a)",
+   "questionText": "Identify three images used by the poet in this poem. Which one of your chosen images do you find the most appealing? Explain your answer.",
+   "totalMarks": 15,
+   "topicId": "english-11-63",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "To Daffodils — Robert Herrick",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "To Daffodils",
+    "pages": [
+     15
+    ],
+    "attribution": "To Daffodils — Robert Herrick.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-b-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry B Q1(b)",
+   "questionText": "In your opinion, is this an optimistic or a pessimistic poem? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-63",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "To Daffodils — Robert Herrick",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "To Daffodils",
+    "pages": [
+     15
+    ],
+    "attribution": "To Daffodils — Robert Herrick.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-b-q2-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry B Q2(i)",
+   "questionText": "Imagine you are the poet, Robert Herrick. You have been invited to talk to a Leaving Certificate class about your poem, “To Daffodils”. In your talk you should explain how you suggest the rapid passage of time in the poem, and help the class to understand the meaning of the poem. Write the text of the talk you would give, demonstrating your understanding of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-63",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "To Daffodils — Robert Herrick",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "To Daffodils",
+    "pages": [
+     15
+    ],
+    "attribution": "To Daffodils — Robert Herrick.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    54,
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-b-q2-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry B Q2(ii)",
+   "questionText": "Do you find this poem easy or difficult to understand? Explain your response, supporting your answer with reference to both the language and the content of the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-63",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "To Daffodils — Robert Herrick",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "To Daffodils",
+    "pages": [
+     15
+    ],
+    "attribution": "To Daffodils — Robert Herrick.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-b-q2-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry B Q2(iii)",
+   "questionText": "Do you think the poet makes effective use of the natural world to teach readers a valuable lesson or lessons in the above poem? Give reasons for your response. Support your answer with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-11-63",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "To Daffodils — Robert Herrick",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM B",
+    "title": "To Daffodils",
+    "pages": [
+     15
+    ],
+    "attribution": "To Daffodils — Robert Herrick.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    55
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-c-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry C Q1(a)",
+   "questionText": "Identify three images used by the poet in this extract. Which one of your chosen images do you find the most appealing? Explain your answer.",
+   "totalMarks": 15,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Fish (lines 45–76) — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "The Fish (lines 45–76)",
+    "pages": [
+     16
+    ],
+    "attribution": "The Fish (lines 45–76) — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-c-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry C Q1(b)",
+   "questionText": "Do you find this extract from Bishop’s poem “The Fish” joyful? Explain your answer with reference to the poem.",
+   "totalMarks": 15,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Fish (lines 45–76) — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "The Fish (lines 45–76)",
+    "pages": [
+     16
+    ],
+    "attribution": "The Fish (lines 45–76) — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-c-q2-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry C Q2(i)",
+   "questionText": "Imagine you are the poet, Elizabeth Bishop. You have been invited to talk to a Leaving Certificate class about the above extract from your poem, “The Fish”. In your talk you should explain what takes place in the extract, and help the class to understand the meaning of the extract. Write the text of the talk you would give, demonstrating your understanding of the extract.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Fish (lines 45–76) — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "The Fish (lines 45–76)",
+    "pages": [
+     16
+    ],
+    "attribution": "The Fish (lines 45–76) — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    56,
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-c-q2-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry C Q2(ii)",
+   "questionText": "Do you find the above extract from “The Fish” easy or difficult to understand? Explain your response, supporting your answer with reference to both the language and the content of the extract.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Fish (lines 45–76) — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "The Fish (lines 45–76)",
+    "pages": [
+     16
+    ],
+    "attribution": "The Fish (lines 45–76) — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-c-q2-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry C Q2(iii)",
+   "questionText": "Do you think the poet makes effective use of the natural world to teach readers a valuable lesson or lessons in the above extract? Give reasons for your response. Support your answer with reference to the extract from “The Fish”.",
+   "totalMarks": 20,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Fish (lines 45–76) — Elizabeth Bishop",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM C",
+    "title": "The Fish (lines 45–76)",
+    "pages": [
+     16
+    ],
+    "attribution": "The Fish (lines 45–76) — Elizabeth Bishop.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    57
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-d-q1-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry D Q1(a)",
+   "questionText": "Identify three images used by the poet in this extract. Which one of your chosen images do you find the most appealing? Explain your answer.",
+   "totalMarks": 15,
+   "topicId": "english-11-64",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Daniel’s Duck (lines 7–27) — Kerry Hardie",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Daniel’s Duck (lines 7–27)",
+    "pages": [
+     17
+    ],
+    "attribution": "Daniel’s Duck (lines 7–27) — Kerry Hardie.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-d-q1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry D Q1(b)",
+   "questionText": "Do you find this extract from Hardie’s poem “Daniel’s Duck” disturbing? Explain your answer with reference to the extract.",
+   "totalMarks": 15,
+   "topicId": "english-11-64",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Daniel’s Duck (lines 7–27) — Kerry Hardie",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Daniel’s Duck (lines 7–27)",
+    "pages": [
+     17
+    ],
+    "attribution": "Daniel’s Duck (lines 7–27) — Kerry Hardie.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-d-q2-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry D Q2(i)",
+   "questionText": "Imagine you are the poet, Kerry Hardie. You have been invited to talk to a Leaving Certificate class about the above extract from your poem, “Daniel’s Duck”. In your talk you should explain what takes place in the extract, and help the class to understand the meaning of the extract. Write the text of the talk you would give, demonstrating your understanding of the extract.",
+   "totalMarks": 20,
+   "topicId": "english-11-64",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Daniel’s Duck (lines 7–27) — Kerry Hardie",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Daniel’s Duck (lines 7–27)",
+    "pages": [
+     17
+    ],
+    "attribution": "Daniel’s Duck (lines 7–27) — Kerry Hardie.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    58,
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-d-q2-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry D Q2(ii)",
+   "questionText": "Do you find the above extract from “Daniel’s Duck” easy or difficult to understand? Explain your response, supporting your answer with reference to both the language and the content of the extract.",
+   "totalMarks": 20,
+   "topicId": "english-11-64",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Daniel’s Duck (lines 7–27) — Kerry Hardie",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Daniel’s Duck (lines 7–27)",
+    "pages": [
+     17
+    ],
+    "attribution": "Daniel’s Duck (lines 7–27) — Kerry Hardie.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p2-prescribed-d-q2-iii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 2,
+   "questionRef": "2019 OL Paper 2 Prescribed Poetry D Q2(iii)",
+   "questionText": "Do you think the poet makes effective use of the natural world to teach readers a valuable lesson or lessons in the above extract? Give reasons for your response. Support your answer with reference to the extract from “Daniel’s Duck”.",
+   "totalMarks": 20,
+   "topicId": "english-11-64",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Daniel’s Duck (lines 7–27) — Kerry Hardie",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "PRESCRIBED POEM D",
+    "title": "Daniel’s Duck (lines 7–27)",
+    "pages": [
+     17
+    ],
+    "attribution": "Daniel’s Duck (lines 7–27) — Kerry Hardie.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    59
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 12,
+     "L+M": 8
+    }
+   },
+   "paperFileid": "LC002GLP200EV",
+   "atlas": {
+    "fileid": "LC002GLP200EV.pdf",
+    "n": "12"
    }
   },
   {

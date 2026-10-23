@@ -921,6 +921,56 @@
     "english-6-0",
     "english-12-9"
    ]
+  },
+  {
+   "id": "english-ordinary-poetry-kennelly-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-kennelly",
+   "label": "Poetry - Kennelly",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-12"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-herrick-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-herrick",
+   "label": "Poetry - Herrick",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-63"
+   ]
+  },
+  {
+   "id": "english-ordinary-poetry-hardie-reviewed-archive",
+   "level": "ordinary",
+   "slug": "poetry-hardie",
+   "label": "Poetry - Hardie",
+   "curriculumNodeIds": [
+    "english-8-1",
+    "english-11-64"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-persuasion-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-persuasion",
+   "label": "Text - Persuasion",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-15"
+   ]
+  },
+  {
+   "id": "english-ordinary-text-the-playboy-of-the-western-world-reviewed-archive",
+   "level": "ordinary",
+   "slug": "text-the-playboy-of-the-western-world",
+   "label": "Text - The Playboy of the Western World",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-26"
+   ]
   }
  ]
 }

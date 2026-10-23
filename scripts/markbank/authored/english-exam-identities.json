@@ -2119,7 +2119,10 @@
       "observedHeading": "Poetry A · Begin",
       "paperPage": 14,
       "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
-      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        14
+      ]
     },
     "english-2019-ol-p2-prescribed-b": {
       "topicId": "english-11-63",
@@ -2128,7 +2131,10 @@
       "observedHeading": "Poetry B · To Daffodils",
       "paperPage": 15,
       "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
-      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        15
+      ]
     },
     "english-2019-ol-p2-prescribed-c": {
       "topicId": "english-11-0",
@@ -2137,7 +2143,10 @@
       "observedHeading": "Poetry C · The Fish (Extract: Lines 45",
       "paperPage": 16,
       "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
-      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        16
+      ]
     },
     "english-2019-ol-p2-prescribed-d": {
       "topicId": "english-11-64",
@@ -2146,7 +2155,10 @@
       "observedHeading": "Poetry D · Daniel’S Duck (Extract: Lines 7",
       "paperPage": 17,
       "source": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
-      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be"
+      "sourceSha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+      "sourcePages": [
+        17
+      ]
     },
     "english-2020-hl-p2-single-a": {
       "topicId": "english-12-23",
