@@ -509,6 +509,54 @@
   background: var(--al-line);
   flex: 1;
 }
+/* Likely email typo at signup: a suggestion, never a block. */
+.auth-live-suggestion {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 13px 14px;
+  border: 1px solid var(--al-ink);
+  border-radius: 9px;
+  background: var(--al-paper);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--al-ink);
+}
+.auth-live-suggestion p {
+  margin: 0;
+}
+.auth-live-suggestion strong,
+.auth-live-suggestion .auth-live-secondary span {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+.auth-live-suggestion .auth-live-secondary {
+  border-color: var(--al-ink);
+  text-align: left;
+}
+.auth-live-suggestion small {
+  font-size: 13px;
+  color: var(--al-muted);
+}
+/* After a failed sign-in: the way into registration. */
+.auth-live-no-account {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--al-muted);
+}
+.auth-live-no-account .auth-live-secondary {
+  border-color: var(--al-ink);
+  font-weight: 600;
+}
+/* After a failed username sign-in: how a username account gets reset. */
+.auth-live-help-note {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--al-muted);
+}
 .auth-live-error {
   font-size: 14px;
   line-height: 1.5;

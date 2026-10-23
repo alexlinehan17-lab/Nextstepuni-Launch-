@@ -1261,6 +1261,14 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: #FDEEDF;
 }
 
+/* Scheme links sit between rubric paragraphs, so they cannot use the
+   question-card footer's negative bottom margin. */
+.mb-source-material-trigger-inline {
+  width: 100%;
+  margin: 17px 0 14px;
+  border-bottom: 1px solid var(--mb-border);
+}
+
 .dark .mb-source-material-trigger:hover,
 .dark .mb-source-material-trigger:focus-visible {
   background: #38281F;
@@ -1665,6 +1673,13 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .mb-source-reader-tools {
     display: none;
   }
+  .mb-source-reader-accounting .mb-source-reader-tools {
+    display: grid;
+  }
+}
+
+.mb-source-reader-accounting .mb-source-reader-paper {
+  max-width: none;
 }
 
 @media (max-width: 640px) {
@@ -1822,3 +1837,19 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --surface-paper: #202020;
   --surface-soft: #282828;
 }
+
+/* Select menus from approved-ui-runtime portal into a position:relative
+   wrapper appended to <body>. Until the menu is positioned it sits at the
+   bottom of the page, and Base UI focuses the selected option without
+   preventScroll, so opening a long list (Mark Bank's subject picker) scrolled
+   the whole page to the bottom (2026-10-14). Pinning the wrapper to the
+   viewport keeps that first frame on screen; the menu still positions against
+   its trigger. Move this into the private SelectContent source (wrapper
+   position, or positionMethod="fixed") at the next runtime rebuild. */
+.nsu-kobra:has(> .nsu-floating-layer > [data-slot="select-content"]) {
+  position: fixed !important;
+  inset: 0 auto auto 0;
+}
+
+/* Page scroll lock behind modals, readers and drawers (utils/bodyScrollLock.ts). */
+body[data-scroll-lock] { overflow: hidden; }

@@ -7,8 +7,8 @@
     "markBankCards": 400,
     "atlasQuestions": 979,
     "atlasTopics": 64,
-    "paperCount": 91,
-    "firstYear": 2010,
+    "paperCount": 217,
+    "firstYear": 1995,
     "lastYear": 2026
   },
   {
@@ -19,8 +19,8 @@
     "markBankCards": 1359,
     "atlasQuestions": 534,
     "atlasTopics": 122,
-    "paperCount": 100,
-    "firstYear": 2010,
+    "paperCount": 178,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -31,8 +31,8 @@
     "markBankCards": 0,
     "atlasQuestions": 500,
     "atlasTopics": 43,
-    "paperCount": 178,
-    "firstYear": 2010,
+    "paperCount": 286,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -43,8 +43,8 @@
     "markBankCards": 383,
     "atlasQuestions": 77,
     "atlasTopics": 6,
-    "paperCount": 54,
-    "firstYear": 2010,
+    "paperCount": 90,
+    "firstYear": 2001,
     "lastYear": 2024
   },
   {
@@ -52,11 +52,11 @@
     "name": "Art",
     "artworkSubject": "art",
     "cycle": "lc",
-    "markBankCards": 462,
+    "markBankCards": 1756,
     "atlasQuestions": 1077,
     "atlasTopics": 32,
-    "paperCount": 246,
-    "firstYear": 2010,
+    "paperCount": 459,
+    "firstYear": 1995,
     "lastYear": 2026
   },
   {
@@ -64,11 +64,11 @@
     "name": "Accounting",
     "artworkSubject": "accounting",
     "cycle": "lc",
-    "markBankCards": 0,
-    "atlasQuestions": 305,
+    "markBankCards": 1365,
+    "atlasQuestions": 1656,
     "atlasTopics": 43,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "paperCount": 121,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -79,8 +79,8 @@
     "markBankCards": 0,
     "atlasQuestions": 182,
     "atlasTopics": 6,
-    "paperCount": 46,
-    "firstYear": 2010,
+    "paperCount": 55,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -91,8 +91,8 @@
     "markBankCards": 0,
     "atlasQuestions": 200,
     "atlasTopics": 9,
-    "paperCount": 40,
-    "firstYear": 2010,
+    "paperCount": 88,
+    "firstYear": 1996,
     "lastYear": 2019
   },
   {
@@ -100,11 +100,11 @@
     "name": "Agricultural Science",
     "artworkSubject": "agricultural-science",
     "cycle": "lc",
-    "markBankCards": 869,
-    "atlasQuestions": 458,
-    "atlasTopics": 35,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "markBankCards": 2464,
+    "atlasQuestions": 2922,
+    "atlasTopics": 37,
+    "paperCount": 120,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -115,20 +115,32 @@
     "markBankCards": 0,
     "atlasQuestions": 42,
     "atlasTopics": 7,
-    "paperCount": 19,
-    "firstYear": 2010,
+    "paperCount": 26,
+    "firstYear": 2003,
     "lastYear": 2026
+  },
+  {
+    "id": "lca-an-cursa-gaeilge-agus-chumarsaideach",
+    "name": "An Cursa Gaeilge Agus Chumarsáideach",
+    "artworkSubject": "an-cursa-gaeilge-agus-chumarsaideach",
+    "cycle": "lca",
+    "markBankCards": 0,
+    "atlasQuestions": 0,
+    "atlasTopics": 0,
+    "paperCount": 1,
+    "firstYear": 2003,
+    "lastYear": 2003
   },
   {
     "id": "applied-mathematics",
     "name": "Applied Maths",
     "artworkSubject": "applied-mathematics",
     "cycle": "lc",
-    "markBankCards": 383,
+    "markBankCards": 1486,
     "atlasQuestions": 318,
-    "atlasTopics": 33,
-    "paperCount": 66,
-    "firstYear": 2010,
+    "atlasTopics": 39,
+    "paperCount": 119,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -151,8 +163,8 @@
     "markBankCards": 250,
     "atlasQuestions": 557,
     "atlasTopics": 8,
-    "paperCount": 33,
-    "firstYear": 2010,
+    "paperCount": 69,
+    "firstYear": 1997,
     "lastYear": 2026
   },
   {
@@ -163,8 +175,8 @@
     "markBankCards": 141,
     "atlasQuestions": 96,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 20,
+    "firstYear": 2007,
     "lastYear": 2026
   },
   {
@@ -172,11 +184,11 @@
     "name": "Business",
     "artworkSubject": "business",
     "cycle": "lc",
-    "markBankCards": 606,
+    "markBankCards": 1988,
     "atlasQuestions": 721,
     "atlasTopics": 105,
-    "paperCount": 96,
-    "firstYear": 2010,
+    "paperCount": 162,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -199,8 +211,8 @@
     "markBankCards": 876,
     "atlasQuestions": 374,
     "atlasTopics": 76,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "paperCount": 129,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -211,8 +223,8 @@
     "markBankCards": 0,
     "atlasQuestions": 95,
     "atlasTopics": 5,
-    "paperCount": 18,
-    "firstYear": 2010,
+    "paperCount": 28,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -223,8 +235,8 @@
     "markBankCards": 516,
     "atlasQuestions": 378,
     "atlasTopics": 16,
-    "paperCount": 120,
-    "firstYear": 2010,
+    "paperCount": 198,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -238,6 +250,18 @@
     "paperCount": 10,
     "firstYear": 2022,
     "lastYear": 2026
+  },
+  {
+    "id": "climate-action-and-sustainable-development",
+    "name": "Climate Action and Sustainable Development",
+    "artworkSubject": "climate-action-and-sustainable-development",
+    "cycle": "lc",
+    "markBankCards": 0,
+    "atlasQuestions": 0,
+    "atlasTopics": 0,
+    "paperCount": 8,
+    "firstYear": null,
+    "lastYear": null
   },
   {
     "id": "computer-science",
@@ -256,11 +280,11 @@
     "name": "Construction Studies",
     "artworkSubject": "construction-studies",
     "cycle": "lc",
-    "markBankCards": 505,
+    "markBankCards": 1261,
     "atlasQuestions": 323,
     "atlasTopics": 103,
-    "paperCount": 108,
-    "firstYear": 2010,
+    "paperCount": 171,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -271,8 +295,8 @@
     "markBankCards": 0,
     "atlasQuestions": 104,
     "atlasTopics": 8,
-    "paperCount": 23,
-    "firstYear": 2010,
+    "paperCount": 33,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -295,8 +319,8 @@
     "markBankCards": 15,
     "atlasQuestions": 54,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 22,
+    "firstYear": 2005,
     "lastYear": 2026
   },
   {
@@ -307,8 +331,8 @@
     "markBankCards": 79,
     "atlasQuestions": 62,
     "atlasTopics": 3,
-    "paperCount": 13,
-    "firstYear": 2010,
+    "paperCount": 19,
+    "firstYear": 2004,
     "lastYear": 2025
   },
   {
@@ -319,9 +343,21 @@
     "markBankCards": 545,
     "atlasQuestions": 396,
     "atlasTopics": 29,
-    "paperCount": 132,
-    "firstYear": 2010,
+    "paperCount": 146,
+    "firstYear": 2009,
     "lastYear": 2026
+  },
+  {
+    "id": "drama-film-and-theatre-studies",
+    "name": "Drama, Film and Theatre Studies",
+    "artworkSubject": "drama-film-and-theatre-studies",
+    "cycle": "lc",
+    "markBankCards": 0,
+    "atlasQuestions": 0,
+    "atlasTopics": 0,
+    "paperCount": 12,
+    "firstYear": null,
+    "lastYear": null
   },
   {
     "id": "dutch",
@@ -331,8 +367,8 @@
     "markBankCards": 42,
     "atlasQuestions": 18,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 22,
+    "firstYear": 2005,
     "lastYear": 2026
   },
   {
@@ -340,11 +376,11 @@
     "name": "Economics",
     "artworkSubject": "economics",
     "cycle": "lc",
-    "markBankCards": 697,
+    "markBankCards": 853,
     "atlasQuestions": 549,
     "atlasTopics": 40,
-    "paperCount": 66,
-    "firstYear": 2010,
+    "paperCount": 116,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -355,8 +391,8 @@
     "markBankCards": 554,
     "atlasQuestions": 254,
     "atlasTopics": 74,
-    "paperCount": 102,
-    "firstYear": 2010,
+    "paperCount": 161,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -379,8 +415,8 @@
     "markBankCards": 0,
     "atlasQuestions": 168,
     "atlasTopics": 12,
-    "paperCount": 32,
-    "firstYear": 2010,
+    "paperCount": 42,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -391,8 +427,8 @@
     "markBankCards": 650,
     "atlasQuestions": 771,
     "atlasTopics": 97,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "paperCount": 136,
+    "firstYear": 1995,
     "lastYear": 2026
   },
   {
@@ -415,8 +451,8 @@
     "markBankCards": 0,
     "atlasQuestions": 75,
     "atlasTopics": 5,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 24,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -427,8 +463,8 @@
     "markBankCards": 107,
     "atlasQuestions": 90,
     "atlasTopics": 2,
-    "paperCount": 15,
-    "firstYear": 2010,
+    "paperCount": 19,
+    "firstYear": 2006,
     "lastYear": 2025
   },
   {
@@ -439,8 +475,8 @@
     "markBankCards": 90,
     "atlasQuestions": 36,
     "atlasTopics": 2,
-    "paperCount": 13,
-    "firstYear": 2010,
+    "paperCount": 18,
+    "firstYear": 2005,
     "lastYear": 2025
   },
   {
@@ -448,11 +484,11 @@
     "name": "French",
     "artworkSubject": "french",
     "cycle": "lc",
-    "markBankCards": 260,
-    "atlasQuestions": 1003,
+    "markBankCards": 2120,
+    "atlasQuestions": 2959,
     "atlasTopics": 33,
-    "paperCount": 98,
-    "firstYear": 2010,
+    "paperCount": 182,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -475,8 +511,8 @@
     "markBankCards": 0,
     "atlasQuestions": 130,
     "atlasTopics": 2,
-    "paperCount": 31,
-    "firstYear": 2010,
+    "paperCount": 46,
+    "firstYear": 2001,
     "lastYear": 2026
   },
   {
@@ -487,8 +523,8 @@
     "markBankCards": 0,
     "atlasQuestions": 28,
     "atlasTopics": 1,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 24,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -499,8 +535,8 @@
     "markBankCards": 4153,
     "atlasQuestions": 780,
     "atlasTopics": 96,
-    "paperCount": 146,
-    "firstYear": 2010,
+    "paperCount": 235,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -523,8 +559,8 @@
     "markBankCards": 264,
     "atlasQuestions": 664,
     "atlasTopics": 25,
-    "paperCount": 100,
-    "firstYear": 2010,
+    "paperCount": 186,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -547,8 +583,8 @@
     "markBankCards": 0,
     "atlasQuestions": 117,
     "atlasTopics": 1,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 24,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -571,8 +607,8 @@
     "markBankCards": 0,
     "atlasQuestions": 50,
     "atlasTopics": 6,
-    "paperCount": 31,
-    "firstYear": 2010,
+    "paperCount": 42,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -583,8 +619,8 @@
     "markBankCards": 0,
     "atlasQuestions": 88,
     "atlasTopics": 4,
-    "paperCount": 27,
-    "firstYear": 2010,
+    "paperCount": 36,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -595,8 +631,8 @@
     "markBankCards": 0,
     "atlasQuestions": 0,
     "atlasTopics": 0,
-    "paperCount": 12,
-    "firstYear": 2010,
+    "paperCount": 35,
+    "firstYear": 1996,
     "lastYear": 2019
   },
   {
@@ -607,8 +643,8 @@
     "markBankCards": 749,
     "atlasQuestions": 514,
     "atlasTopics": 24,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "paperCount": 124,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -631,8 +667,8 @@
     "markBankCards": 0,
     "atlasQuestions": 8,
     "atlasTopics": 1,
-    "paperCount": 58,
-    "firstYear": 2010,
+    "paperCount": 78,
+    "firstYear": 2000,
     "lastYear": 2026
   },
   {
@@ -643,8 +679,8 @@
     "markBankCards": 549,
     "atlasQuestions": 586,
     "atlasTopics": 54,
-    "paperCount": 96,
-    "firstYear": 2010,
+    "paperCount": 142,
+    "firstYear": 2000,
     "lastYear": 2026
   },
   {
@@ -667,8 +703,8 @@
     "markBankCards": 0,
     "atlasQuestions": 56,
     "atlasTopics": 4,
-    "paperCount": 31,
-    "firstYear": 2010,
+    "paperCount": 42,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -679,8 +715,8 @@
     "markBankCards": 168,
     "atlasQuestions": 90,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 21,
+    "firstYear": 2006,
     "lastYear": 2026
   },
   {
@@ -691,8 +727,8 @@
     "markBankCards": 0,
     "atlasQuestions": 54,
     "atlasTopics": 7,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 27,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -727,8 +763,8 @@
     "markBankCards": 350,
     "atlasQuestions": 730,
     "atlasTopics": 24,
-    "paperCount": 100,
-    "firstYear": 2010,
+    "paperCount": 187,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -751,8 +787,8 @@
     "markBankCards": 0,
     "atlasQuestions": 38,
     "atlasTopics": 3,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 24,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -763,8 +799,8 @@
     "markBankCards": 600,
     "atlasQuestions": 968,
     "atlasTopics": 14,
-    "paperCount": 101,
-    "firstYear": 2010,
+    "paperCount": 129,
+    "firstYear": 2005,
     "lastYear": 2026
   },
   {
@@ -787,8 +823,8 @@
     "markBankCards": 227,
     "atlasQuestions": 140,
     "atlasTopics": 7,
-    "paperCount": 54,
-    "firstYear": 2010,
+    "paperCount": 112,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -799,8 +835,8 @@
     "markBankCards": 20,
     "atlasQuestions": 30,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 21,
+    "firstYear": 2006,
     "lastYear": 2026
   },
   {
@@ -811,8 +847,8 @@
     "markBankCards": 314,
     "atlasQuestions": 295,
     "atlasTopics": 10,
-    "paperCount": 45,
-    "firstYear": 2010,
+    "paperCount": 66,
+    "firstYear": 2001,
     "lastYear": 2026
   },
   {
@@ -823,8 +859,8 @@
     "markBankCards": 306,
     "atlasQuestions": 93,
     "atlasTopics": 2,
-    "paperCount": 52,
-    "firstYear": 2010,
+    "paperCount": 56,
+    "firstYear": 2006,
     "lastYear": 2026
   },
   {
@@ -859,8 +895,8 @@
     "markBankCards": 0,
     "atlasQuestions": 42,
     "atlasTopics": 4,
-    "paperCount": 32,
-    "firstYear": 2010,
+    "paperCount": 46,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -871,8 +907,8 @@
     "markBankCards": 854,
     "atlasQuestions": 865,
     "atlasTopics": 55,
-    "paperCount": 222,
-    "firstYear": 2010,
+    "paperCount": 392,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -895,8 +931,8 @@
     "markBankCards": 79,
     "atlasQuestions": 30,
     "atlasTopics": 2,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 35,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -919,8 +955,8 @@
     "markBankCards": 0,
     "atlasQuestions": 112,
     "atlasTopics": 4,
-    "paperCount": 19,
-    "firstYear": 2010,
+    "paperCount": 26,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -928,10 +964,10 @@
     "name": "Physical Education",
     "artworkSubject": "physical-education",
     "cycle": "lc",
-    "markBankCards": 221,
-    "atlasQuestions": 232,
+    "markBankCards": 772,
+    "atlasQuestions": 772,
     "atlasTopics": 88,
-    "paperCount": 26,
+    "paperCount": 29,
     "firstYear": 2020,
     "lastYear": 2026
   },
@@ -943,8 +979,8 @@
     "markBankCards": 1133,
     "atlasQuestions": 432,
     "atlasTopics": 113,
-    "paperCount": 68,
-    "firstYear": 2010,
+    "paperCount": 129,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -955,8 +991,8 @@
     "markBankCards": 0,
     "atlasQuestions": 384,
     "atlasTopics": 28,
-    "paperCount": 64,
-    "firstYear": 2010,
+    "paperCount": 114,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -967,8 +1003,8 @@
     "markBankCards": 237,
     "atlasQuestions": 22,
     "atlasTopics": 2,
-    "paperCount": 51,
-    "firstYear": 2010,
+    "paperCount": 56,
+    "firstYear": 2005,
     "lastYear": 2026
   },
   {
@@ -976,10 +1012,10 @@
     "name": "Politics and Society",
     "artworkSubject": "politics-and-society",
     "cycle": "lc",
-    "markBankCards": 0,
+    "markBankCards": 623,
     "atlasQuestions": 140,
     "atlasTopics": 20,
-    "paperCount": 34,
+    "paperCount": 35,
     "firstYear": 2018,
     "lastYear": 2026
   },
@@ -991,8 +1027,8 @@
     "markBankCards": 173,
     "atlasQuestions": 50,
     "atlasTopics": 3,
-    "paperCount": 51,
-    "firstYear": 2010,
+    "paperCount": 57,
+    "firstYear": 2004,
     "lastYear": 2026
   },
   {
@@ -1003,8 +1039,8 @@
     "markBankCards": 288,
     "atlasQuestions": 248,
     "atlasTopics": 20,
-    "paperCount": 58,
-    "firstYear": 2010,
+    "paperCount": 78,
+    "firstYear": 2005,
     "lastYear": 2026
   },
   {
@@ -1027,8 +1063,8 @@
     "markBankCards": 50,
     "atlasQuestions": 90,
     "atlasTopics": 2,
-    "paperCount": 17,
-    "firstYear": 2010,
+    "paperCount": 20,
+    "firstYear": 2007,
     "lastYear": 2026
   },
   {
@@ -1039,8 +1075,8 @@
     "markBankCards": 199,
     "atlasQuestions": 246,
     "atlasTopics": 6,
-    "paperCount": 93,
-    "firstYear": 2010,
+    "paperCount": 115,
+    "firstYear": 2004,
     "lastYear": 2026
   },
   {
@@ -1063,8 +1099,8 @@
     "markBankCards": 0,
     "atlasQuestions": 26,
     "atlasTopics": 1,
-    "paperCount": 15,
-    "firstYear": 2010,
+    "paperCount": 21,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -1075,8 +1111,8 @@
     "markBankCards": 140,
     "atlasQuestions": 90,
     "atlasTopics": 2,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 20,
+    "firstYear": 2006,
     "lastYear": 2026
   },
   {
@@ -1099,8 +1135,8 @@
     "markBankCards": 0,
     "atlasQuestions": 195,
     "atlasTopics": 2,
-    "paperCount": 32,
-    "firstYear": 2010,
+    "paperCount": 46,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {
@@ -1111,8 +1147,8 @@
     "markBankCards": 347,
     "atlasQuestions": 616,
     "atlasTopics": 34,
-    "paperCount": 161,
-    "firstYear": 2010,
+    "paperCount": 270,
+    "firstYear": 1996,
     "lastYear": 2026
   },
   {
@@ -1135,8 +1171,8 @@
     "markBankCards": 0,
     "atlasQuestions": 90,
     "atlasTopics": 2,
-    "paperCount": 32,
-    "firstYear": 2010,
+    "paperCount": 39,
+    "firstYear": 2003,
     "lastYear": 2026
   },
   {
@@ -1147,9 +1183,21 @@
     "markBankCards": 121,
     "atlasQuestions": 48,
     "atlasTopics": 2,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 21,
+    "firstYear": 2005,
     "lastYear": 2026
+  },
+  {
+    "id": "technical-drawing",
+    "name": "Technical Drawing",
+    "artworkSubject": "technical-drawing",
+    "cycle": "lc",
+    "markBankCards": 0,
+    "atlasQuestions": 0,
+    "atlasTopics": 0,
+    "paperCount": 137,
+    "firstYear": 1996,
+    "lastYear": 2008
   },
   {
     "id": "technology",
@@ -1159,8 +1207,8 @@
     "markBankCards": 716,
     "atlasQuestions": 678,
     "atlasTopics": 37,
-    "paperCount": 132,
-    "firstYear": 2010,
+    "paperCount": 140,
+    "firstYear": 2009,
     "lastYear": 2026
   },
   {
@@ -1171,8 +1219,8 @@
     "markBankCards": 0,
     "atlasQuestions": 45,
     "atlasTopics": 5,
-    "paperCount": 16,
-    "firstYear": 2010,
+    "paperCount": 24,
+    "firstYear": 2002,
     "lastYear": 2026
   },
   {

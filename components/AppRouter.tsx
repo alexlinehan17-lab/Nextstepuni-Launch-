@@ -33,12 +33,13 @@ import { LegalAgreementGate } from './legal/LegalAgreementGate';
 import { useMobileAppDesign } from '../hooks/useMobileAppDesign';
 import { toDateKey } from './subjectData';
 const LoginPage = lazy(() => import('./LoginPage'));
-const ResetPasswordPage = lazy(() => import('./ResetPasswordPage'));
+const AuthActionPage = lazy(() => import('./AuthActionPage'));
 const AdminDashboard = lazy(() => import('./AdminDashboard').then(m => ({ default: m.AdminDashboard })));
 const GCDashboard = lazy(() => import('./GCDashboard').then(m => ({ default: m.GCDashboard })));
 const DashboardView = lazy(() => import('./DashboardView'));
 const LearningPathsView = lazy(() => import('./LearningPathsView'));
 const YearPlansView = lazy(() => import('./YearPlansView'));
+const YourSetupView = lazy(() => import('./setup/YourSetupView'));
 const WipTools = lazy(() => import('./WipTools'));
 const ModulesView = lazy(() => import('./ModulesView').then(m => ({ default: m.ModulesView })));
 import { moduleComponents, InnovationZone } from '../moduleRegistry';
@@ -62,6 +63,7 @@ import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { isAuthActionRequest } from '../utils/authActionLink';
 import { isProgressReadyForUser } from '../utils/progressHydration';
 import {
   GUEST_USER_ID,
@@ -228,6 +230,7 @@ export interface AppRouterProps {
   setPassportOpen: (open: boolean) => void;
   setChangeSubjectsOpen: (open: boolean) => void;
   setNorthStarEditOpen: (open: boolean) => void;
+  handleExamDateSave: (examStartDate: string) => void;
 
   // Cosmetic unlocks (only setters needed at this layer; values flow through SettingsContext)
   setUnlockedAvatarSeeds: (seeds: string[]) => void;
@@ -268,13 +271,6 @@ function useRegistrationHold(): boolean {
   return held;
 }
 
-function isPasswordResetRequest(): boolean {
-  if (typeof window === 'undefined') return false;
-  const params = new URLSearchParams(window.location.search);
-  const path = window.location.pathname;
-  return (params.get('mode') === 'resetPassword' && !!params.get('oobCode'))
-    || path === '/reset-password' || path.startsWith('/reset-password/');
-}
 
 const AppRouter: React.FC<AppRouterProps> = (props) => {
   const { user, userResolved, handleLogout } = useAuth();
@@ -283,7 +279,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const avatar = registrationHeld ? getRegistrationLoadingAvatar() : undefined;
   const transitionKey = [user?.uid ?? 'guest', state.viewState, state.currentCategory, state.currentModuleId, state.activeTool].join(':');
   return <LoadingCrewProvider avatar={avatar ?? (userResolved && user ? props.settings.avatar || user.avatar : undefined)} transitionKey={transitionKey}>
-    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isPasswordResetRequest()} onLogout={handleLogout}>
+    <LegalAgreementGate user={user} ready={userResolved && !registrationHeld && !isAuthActionRequest()} onLogout={handleLogout}>
       <AppRouterContent {...props} />
     </LegalAgreementGate>
   </LoadingCrewProvider>;
@@ -316,6 +312,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
     transitionToSeniorMode, transitionTargetYear,
     handleProgressUpdate,
     setSettingsOpen, setPassportOpen, setChangeSubjectsOpen, setNorthStarEditOpen,
+    handleExamDateSave,
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
@@ -356,12 +353,11 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
   const handleGoToCutContent = () => { nav.navigateToCutContent(); };
   const handleGoToAccreditation = () => { nav.navigateToAccreditation(); };
 
-  // Firebase password-reset action URL — handled before any auth gating so the
-  // user can land here whether or not they're signed in. Triggered by either
-  // the path /reset-password or the query params mode=resetPassword + oobCode
-  // (the latter is what Firebase appends to the configured Action URL).
-  if (isPasswordResetRequest()) {
-    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening password reset" />}><ResetPasswordPage /></Suspense>;
+  // Firebase email action links (password reset, email confirmation, email
+  // recovery) — handled before any auth gating so the student can land here
+  // whether or not they're signed in. See utils/authActionLink.ts.
+  if (isAuthActionRequest()) {
+    return <Suspense fallback={<LoadingSpinner selection="random" label="Opening your link" />}><AuthActionPage /></Suspense>;
   }
 
   // Auth gate: show branded loading until userResolved, then decide login vs app.
@@ -475,6 +471,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           strategyMastery={strategyMastery.masteryMap}
           onGoToProgress={handleGoToMilestones}
           onSetUpProfile={() => nav.navigateToOnboarding()}
+          onMinimise={handleBackToTree}
+          onGoToIsland={() => nav.navigateToJourney()}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}
@@ -561,6 +559,8 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onTabChange={nav.setDashboardSection}
           darkMode={settings.darkMode}
           onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
+          onEditGrades={() => setChangeSubjectsOpen(true)}
+          onAddMockResult={() => nav.navigateToInnovationZone('points-passport')}
         />
       </Suspense>
     );
@@ -598,6 +598,27 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           onBack={handleBackToTree}
           isLca={isLcaYear(user?.yearGroup ?? studentProfile?.yearGroup)}
           currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+        />
+      </Suspense>
+    );
+  }
+
+  if (viewState === 'your-setup') {
+    return (
+      <Suspense fallback={<LoadingSpinner variant="compact" calm label="Opening your setup" />}>
+        <YourSetupView
+          profile={studentProfile}
+          northStar={northStar}
+          yearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+          darkMode={settings.darkMode}
+          onBack={handleBackToTree}
+          onFinishSetup={() => nav.navigateToOnboarding()}
+          onEditSubjects={() => setChangeSubjectsOpen(true)}
+          onSaveExamDate={handleExamDateSave}
+          onEditNorthStar={() => setNorthStarEditOpen(true)}
+          onOpenSettings={() => setSettingsOpen(true)}
+          onOpenPlanner={() => nav.navigateToInnovationZone('planner')}
+          onSetDarkMode={dark => updateSetting('darkMode', dark)}
         />
       </Suspense>
     );
@@ -656,6 +677,7 @@ const AppRouterContent: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           allCourses={studentCourses}
           subjects={studentProfile?.subjects?.map((s: any) => s.subjectName) ?? []}
+          onOpenSetup={() => nav.navigateToYourSetup()}
         />
       </Suspense>
     );

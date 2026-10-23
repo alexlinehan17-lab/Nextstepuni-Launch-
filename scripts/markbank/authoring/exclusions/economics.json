@@ -1,37 +1,9 @@
 [
  {
-  "ref": "2021 OL Section A Q3(ii)",
-  "reason": "the scheme attributes no tariff to this part. Question 3 prints three mark cells and they sum to 15, the full value of a Section A question (1(i)+1(ii) and 5 both do the same); read by COORDINATE on scheme page 5 all three sit above the (ii) marker at y=244 — the 6@2 on the substitution row at y=180, the 1@2 at y=215 and the 1@1 on the same row as \"Answer: - 4.71\" at y=229. The scheme does print the response (\"It is elastic\"), but nothing prices it.",
-  "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
- },
- {
-  "ref": "2022 HL Section A Q4(c)",
-  "reason": "the either/or slot prints one tariff ⟨3+2+2⟩, which maps onto (b)'s three justifications; no split is stated across (c)'s two reasons, so carding it would invent a tariff",
-  "evidence": "\"Answer either (b) or (c) ⟨3+2+2⟩ (b) In the box below justify each of your choices… [three bullets] OR (c) Outline two reasons why inflows of foreign direct investment…\" — the scheme PDF's marks column prints 3+2+2 once for the pair and nothing beside (c)."
- },
- {
-  "ref": "2022 HL Section A Q6(b)",
-  "reason": "the scheme prints no tariff for this part. Read at SPAN level, scheme p.10 carries exactly three mark cells — 4, 2 and 2 at y=42, 57 and 71, all stacked at the head of (a) — and nothing at all beside (b) at y=501 or (c) at y=618. (The 1 and 2 further down the column are subscripts from the diagram labels D1=AR1=MR1, not cells.) The scheme does print the response; nothing prices it.",
-  "evidence": "Marks column empty beside (b) in the scheme PDF; the response reads \"• In the short run if AR is greater than AVC • The firm is making a loss but once it covers its average variable costs it will contributes towards its fixed cost then the loss from shutting down would be greater…\""
- },
- {
-  "ref": "2022 HL Section A Q6(c)",
-  "reason": "the scheme prints no tariff for this part — see the note on Q6(b). Scheme p.10 carries three cells, all at the head of (a), and nothing beside (c) at y=618.",
-  "evidence": "Marks column empty beside (c): \"A firm is most efficient when it is producing at the minimum point of AC. … It will not be earning normal profit and so will be forced due to inefficiency to leave the industry.\" — no mark cell anywhere in the part."
- },
- {
-  "ref": "2022 OL Q12(a)(iii)",
-  "reason": "the scheme prints one cell for the whole of Q12(a) — 28, at 14 x 2 — against a single model diagram that answers (i), (ii) and (iii) together. The 14 x 2 maps onto the two curves named in (i) and (ii), which are now carded at 14 each; nothing prices the marking of P1 and Q1 separately, and the paper prints no per-part marks for Section B at Ordinary Level.",
-  "evidence": "(iii) Show on your diagram: ▪ The market equilibrium price for reusable coffee cups (use P1) ▪ The market equilibrium quantity (use Q1) — answered only by the model graph, whose sole cells are ⟨28⟩ ⟨(14 x 2)⟩ over the two curves"
- },
- {
-  "ref": "2023 HL Q16(a)(i)",
-  "reason": "the scheme attributes no tariff to this part. Read at SPAN level on scheme p.35 the marks column is EMPTY beside (i) — its two definitions sit at y=63-141 and the first cell is a 4 at y=180, level with (ii)’s opening line; the four cells 4/4/7/8 all fall inside (ii) (y=170-527) and the 5 belongs to (iii) at y=661. An earlier version of this reason cited \"(a)’s block total 28\"; that 28 is the PAPER PAGE reference the scheme prints in its left margin at x=37, not a mark total, and the arithmetic built on it was wrong.",
-  "evidence": "(i) Distinguish between the economic terms individual demand and market demand. 28 • Individual Demand refers to the quantity of a good or service an individual consumer is willing to purchase at various prices. • Market Demand refers to … [marks column beside this part: none]"
- },
- {
   "ref": "2024 HL Section A Q10(a)(i)",
   "reason": "the paper completes this part for the student. The national-accounts ladder prints the GDP-to-GNP step already worked — 430.00 plus or minus (105.00), Ans: €325bn — as the example that shows how to do (a)(ii). Nothing is asked of the candidate here, so there is no ask to card.",
-  "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
+  "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'.",
+  "visuallyReviewedAt": "2026-10-07",
+  "paperPage": 12
  }
 ]

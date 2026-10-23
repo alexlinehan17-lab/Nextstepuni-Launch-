@@ -1,0 +1,2527 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Q9 draft; source and exact Atlas preflight required before integration.",
+  "tasks": [
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-eaves",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-eaves",
+        "questionRef": "2015 HL Q9(a) — roof/wall junction at eaves",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-upper-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-upper-floor",
+        "questionRef": "2015 HL Q9(a) — upper-floor/external-wall junction",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-cill",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-cill",
+        "questionRef": "2015 HL Q9(a) — window-cill junction",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-ground-floor",
+        "questionRef": "2015 HL Q9(a) — ground-floor/external-wall junction",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 16,
+        "rows": [
+          {
+            "id": "notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-eaves-upper-floor-cill",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-eaves-upper-floor-cill",
+        "questionRef": "2015 HL Q9(a) — eaves, upper-floor, cill",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "For these THREE circled locations — roof/wall junction at eaves, upper-floor/external-wall junction, window-cill junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 48,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-eaves-upper-floor-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-eaves-upper-floor-ground-floor",
+        "questionRef": "2015 HL Q9(a) — eaves, upper-floor, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "For these THREE circled locations — roof/wall junction at eaves, upper-floor/external-wall junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 48,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-eaves-cill-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-eaves-cill-ground-floor",
+        "questionRef": "2015 HL Q9(a) — eaves, cill, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "For these THREE circled locations — roof/wall junction at eaves, window-cill junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 48,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-a-upper-floor-cill-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-a-upper-floor-cill-ground-floor",
+        "questionRef": "2015 HL Q9(a) — upper-floor, cill, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "For these THREE circled locations — upper-floor/external-wall junction, window-cill junction, ground-floor/external-wall junction — use notes and freehand sketches to show best-practice detailing that prevents a thermal bridge at EACH selected location.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 48,
+        "rows": [
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-b",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-b",
+        "questionRef": "2015 HL Q9(b)",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Discuss the importance of designing a building envelope that is thermal bridge free.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 12,
+        "rows": [
+          {
+            "id": "point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 1) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 2) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-complete-eaves-upper-floor-cill",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-complete-eaves-upper-floor-cill",
+        "questionRef": "2015 HL Q9 — complete: eaves, upper-floor, cill",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task.\n\nDiscuss the importance of designing a building envelope that is thermal bridge free.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 1) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "b-point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 2) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q9-b",
+            "marks": 12,
+            "rowIds": [
+              "b-point-1",
+              "b-point-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-complete-eaves-upper-floor-ground-floor",
+        "questionRef": "2015 HL Q9 — complete: eaves, upper-floor, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nDiscuss the importance of designing a building envelope that is thermal bridge free.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 1) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "b-point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 2) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q9-b",
+            "marks": 12,
+            "rowIds": [
+              "b-point-1",
+              "b-point-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-complete-eaves-cill-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-complete-eaves-cill-ground-floor",
+        "questionRef": "2015 HL Q9 — complete: eaves, cill, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the roof/wall junction at eaves. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nDiscuss the importance of designing a building envelope that is thermal bridge free.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-eaves-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue the wall and roof insulation through the eaves junction rather than leaving a conductive gap. The source model includes 250 mm full-fill cavity insulation, a 60 mm cavity closer, AAC block, 60 mm rigid insulation board and 400 mm fibreglass insulation. Coordinate the eaves construction and required ventilation; do not bridge the insulation with a continuous conductive element. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-eaves-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the roof/wall junction at eaves, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 1) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "b-point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 2) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-eaves",
+            "sourceCardId": "cons-2015-hl-q9-a-eaves",
+            "marks": 16,
+            "rowIds": [
+              "a-eaves-notes",
+              "a-eaves-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q9-b",
+            "marks": 12,
+            "rowIds": [
+              "b-point-1",
+              "b-point-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    },
+    {
+      "questionNumber": "9",
+      "card": {
+        "id": "cons-2015-hl-q9-complete-upper-floor-cill-ground-floor",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-2",
+        "conceptId": "thermal-bridge-junctions-complete-upper-floor-cill-ground-floor",
+        "questionRef": "2015 HL Q9 — complete: upper-floor, cill, ground-floor",
+        "stem": "Design the external envelope of the two-storey house to be thermal bridge free. It has a 450 mm concrete-block external wall with a 250 mm full-fill insulated cavity, a traditional cut roof, tongue-and-groove first-floor boards on timber joists, and an insulated solid-concrete ground floor. The original diagram circles FOUR junctions: roof/wall at eaves; upper floor/external wall; window cill; ground floor/external wall. Part (a) selects any THREE of these four. A window head appears in the scheme commentary but is NOT a fifth circled option.",
+        "questionText": "Using notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the upper-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the window-cill junction. This is one 16-mark location from the printed choose-three task.\n\nUsing notes and freehand sketches, show best-practice detailing that prevents a thermal bridge at the ground-floor/external-wall junction. This is one 16-mark location from the printed choose-three task.\n\nDiscuss the importance of designing a building envelope that is thermal bridge free.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-upper-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Keep the insulation continuous past the timber first floor and prevent joists from penetrating the inner leaf into the insulated cavity. The scheme shows joists on metal hangers with resin-anchored support at the inner leaf and plastered wall surfaces. Maintain the specified tongue-and-groove boards on joists and show the uninterrupted insulated cavity. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-upper-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the upper-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Insulate behind the cill and use an appropriate insulated cavity closer, so the cill does not bridge the cavity. Retain 250 mm full-fill cavity insulation and coherent frame/insulation overlap; the source includes a 60 mm closer, airtight tape and high-performance glazing. Distinguish reducing conduction through the junction from controlling air leakage with tape. The selected location is the CILL, not the separate window-head example in the scheme. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-cill-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the window-cill junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-notes",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Continue wall insulation down past the floor edge and connect it with the ground-floor insulation. The source examples include an 80 mm perimeter insulation strip up to finished floor level, wall insulation at least 225 mm below the finished floor, 150–300 mm floor insulation and AAC blocks at the inner leaf below ground. Show the insulated solid-concrete ground floor and avoid a conductive slab-to-wall bypass. Award the published 8-mark notes allowance for this one selected location; the scheme prints no finer breakdown.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "a-ground-floor-sketch",
+            "kind": "criterion",
+            "verbatim": "Thermal bridging details - Three locations",
+            "marks": 8,
+            "contextNote": "Draw and label a coherent section through the ground-floor/external-wall junction, showing how the insulation remains continuous. Use the corresponding model illustration with the original house specification. This is the separate published 8-mark sketch allowance, not another notes allowance.",
+            "permittedMarks": [
+              0,
+              8
+            ]
+          },
+          {
+            "id": "b-point-1",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 1) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          },
+          {
+            "id": "b-point-2",
+            "kind": "criterion",
+            "verbatim": "Discussion (point 2) - 2 marks for point, 4 marks for discussion",
+            "marks": 6,
+            "contextNote": "Give a distinct valid point (2) and develop its importance (4). Source-supported routes include reduced heat loss and heating demand; more even internal surface temperatures and comfort; less risk of cold surfaces reaching dew point, condensation and mould; less material deterioration and associated health effects. Explain the causal relationship, not just a label, and avoid repeating the other point. Thermal bridging is local increased conduction; airtightness alone does not remove every conductive bridge.",
+            "permittedMarks": [
+              0,
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q9-original",
+        "questionFigureIncludesPrompt": true,
+        "figureKey": "construction-studies-2015-HL-q9-scheme",
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 9",
+          "title": "Four circled thermal-bridge junctions",
+          "pages": [
+            1,
+            5
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "Four circled options from the original diagram control the selection. Full scheme illustrations are retained; its additional window-head commentary does not add a fifth option. Each selected location has notes8/sketch8, and part(b) is separate12."
+        },
+        "taskGroups": [
+          {
+            "label": "a-upper-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-upper-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-upper-floor-notes",
+              "a-upper-floor-sketch"
+            ]
+          },
+          {
+            "label": "a-cill",
+            "sourceCardId": "cons-2015-hl-q9-a-cill",
+            "marks": 16,
+            "rowIds": [
+              "a-cill-notes",
+              "a-cill-sketch"
+            ]
+          },
+          {
+            "label": "a-ground-floor",
+            "sourceCardId": "cons-2015-hl-q9-a-ground-floor",
+            "marks": 16,
+            "rowIds": [
+              "a-ground-floor-notes",
+              "a-ground-floor-sketch"
+            ]
+          },
+          {
+            "label": "b",
+            "sourceCardId": "cons-2015-hl-q9-b",
+            "marks": 12,
+            "rowIds": [
+              "b-point-1",
+              "b-point-2"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "textSha256": "745228f79370b7e451f14d45de390cc5bdb153c938d30666691b336bf86067c6"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "textSha256": "7e7aa2ca21e6b0759c4ffd28a8eb21907665e641074a43ef49b4f290288a64ad"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "textSha256": "a12d343ea8a26177c28ba8feaf0fd3419d378d60944ec46df00df7dd06d8ab0a"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 40,
+          "textSha256": "ab8beb2091b486f6dfebbfcdcaabab3aefb8c56bf2e2d47b731dd46bc8ae1fe9"
+        }
+      ],
+      "boundaryReview": "Q9(a): three selected locations, each notes8 plus sketches8 =16; complete part(a)48. Q9(b): two discussion points, each point2 plus discussion4 =6, subtotal12. Whole question60.",
+      "selectionReview": "Original diagram has four circled locations. Expand all C(4,3)=4 triples and four complete60-mark routes. Also preserve the four separately published16-mark location tasks. Window head is not circled and is not an additional selectable location. Detail examples and open discussion points do not create finite routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q9-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q9-scheme"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q9-a-eaves",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-upper-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-4-3",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-cill",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-4-2",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-eaves-upper-floor-cill",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-eaves-upper-floor-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-eaves-cill-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-3-6",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-floors"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-a-upper-floor-cill-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-4-3",
+        "cons-3-3",
+        "cons-3-6",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-b",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-complete-eaves-upper-floor-cill",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-3-6",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-4-3",
+        "cons-4-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-complete-eaves-cill-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-3-9",
+        "cons-3-3",
+        "cons-3-6",
+        "cons-4-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q9-complete-upper-floor-cill-ground-floor",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-4-3",
+        "cons-3-3",
+        "cons-3-6",
+        "cons-4-2",
+        "cons-6-6"
+      ],
+      "canonicalTopicReview": "All junctions use thermal-bridge insulation node6-2. Structural content adds the exact roof/wall, suspended-floor, cill or ground-floor nodes; the discussion includes surface condensation6-6. Composite routes preserve all constituent canonical and Atlas topics.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q9-original",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 5,
+          "rect": [
+            58,
+            49,
+            566,
+            288
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": false,
+      "sha256": "bc68960ead73a1d9b8b642b1fbd46773fb4ae6b4a40c15175c39135945e5dccf",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q9-scheme",
+      "panels": [
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 24,
+          "rect": [
+            54,
+            54,
+            581,
+            765
+          ]
+        },
+        {
+          "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 25,
+          "rect": [
+            54,
+            54,
+            568,
+            262
+          ]
+        }
+      ],
+      "renderScale": 2,
+      "panelGap": 24,
+      "solution": true,
+      "sha256": "ad1dcb3bb39150b01a9828256081fc877ef4bfd200af379ddbc31e77ff1d20ae",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q9-a-eaves",
+    "cons-2015-hl-q9-a-upper-floor",
+    "cons-2015-hl-q9-a-cill",
+    "cons-2015-hl-q9-a-ground-floor",
+    "cons-2015-hl-q9-a-eaves-upper-floor-cill",
+    "cons-2015-hl-q9-a-eaves-upper-floor-ground-floor",
+    "cons-2015-hl-q9-a-eaves-cill-ground-floor",
+    "cons-2015-hl-q9-a-upper-floor-cill-ground-floor",
+    "cons-2015-hl-q9-b",
+    "cons-2015-hl-q9-complete-eaves-upper-floor-cill",
+    "cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor",
+    "cons-2015-hl-q9-complete-eaves-cill-ground-floor",
+    "cons-2015-hl-q9-complete-upper-floor-cill-ground-floor"
+  ],
+  "routeLedger": {
+    "circledLocations": [
+      "eaves",
+      "upper-floor",
+      "cill",
+      "ground-floor"
+    ],
+    "choose": 3,
+    "partARoutes": [
+      [
+        "eaves",
+        "upper-floor",
+        "cill"
+      ],
+      [
+        "eaves",
+        "upper-floor",
+        "ground-floor"
+      ],
+      [
+        "eaves",
+        "cill",
+        "ground-floor"
+      ],
+      [
+        "upper-floor",
+        "cill",
+        "ground-floor"
+      ]
+    ],
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-hl-q9-complete-eaves-upper-floor-cill",
+        "locations": [
+          "eaves",
+          "upper-floor",
+          "cill"
+        ],
+        "parts": [
+          "a-eaves",
+          "a-upper-floor",
+          "a-cill",
+          "b"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q9-complete-eaves-upper-floor-ground-floor",
+        "locations": [
+          "eaves",
+          "upper-floor",
+          "ground-floor"
+        ],
+        "parts": [
+          "a-eaves",
+          "a-upper-floor",
+          "a-ground-floor",
+          "b"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q9-complete-eaves-cill-ground-floor",
+        "locations": [
+          "eaves",
+          "cill",
+          "ground-floor"
+        ],
+        "parts": [
+          "a-eaves",
+          "a-cill",
+          "a-ground-floor",
+          "b"
+        ],
+        "marks": 60
+      },
+      {
+        "id": "cons-2015-hl-q9-complete-upper-floor-cill-ground-floor",
+        "locations": [
+          "upper-floor",
+          "cill",
+          "ground-floor"
+        ],
+        "parts": [
+          "a-upper-floor",
+          "a-cill",
+          "a-ground-floor",
+          "b"
+        ],
+        "marks": 60
+      }
+    ],
+    "nonChoices": [
+      "Window head is not one of the four circled options.",
+      "Open design-detail examples and two open discussion points are not closed option pools."
+    ]
+  }
+}

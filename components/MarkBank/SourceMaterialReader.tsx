@@ -11,6 +11,7 @@
  * context cannot drift.
  */
 
+import { lockBodyScroll } from '../../utils/bodyScrollLock';
 import React, {
   useCallback,
   useEffect,
@@ -24,12 +25,19 @@ import type { CardSourceMaterial } from '../../types/markBank';
 import CropView from '../PaperTrail/CropView';
 import { paperStoragePath, paperUrl } from '../PaperTrail/storage';
 import { vaultPdf } from '../PaperTrail/vaultDocs';
+import { resolveSubjectId } from '../../curriculumRegistry';
 
 interface SourceMaterialReaderProps {
   source: CardSourceMaterial;
   subjectId: string;
   year: number;
   paperFileid: string;
+  documentKind?: 'paper' | 'scheme';
+  /** The trigger sits between paragraphs rather than at a card's foot. */
+  inline?: boolean;
+  /** The label already names the document ("OFFICIAL MARKING SCHEME"), so the
+   *  reader's heading does not repeat the material name after it. */
+  labelNamesMaterial?: boolean;
 }
 
 // Some official companions (an aerial photograph, an older legend) are
@@ -65,11 +73,19 @@ const CloseIcon = () => (
 );
 
 const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
-  source, subjectId, year, paperFileid,
+  source, subjectId, year, paperFileid, documentKind = 'paper', inline = false, labelNamesMaterial = false,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
   const isImage = IMAGE_FILE.test(paperFileid);
-  const materialLabel = isIllustration ? 'illustration sheet' : 'source text';
+  const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
+  const isAccounting = subjectId === 'accounting';
+  const maxZoom = isAccounting ? 3 : 2;
+  const materialLabel = source.kind === 'source-scheme' || (isAccounting && isScheme) ? 'worked solution' : isScheme ? 'marking scheme'
+    : source.kind === 'source-table' ? 'accounting data'
+    : source.kind === 'source-data' ? 'source material'
+    : source.kind === 'exam-material' ? 'exam material'
+    : source.kind === 'source-paper' ? 'question pages'
+    : isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -82,14 +98,20 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId, year, 'paper', withPdfExtension(paperFileid),
-  )), [paperFileid, subjectId, year]);
+    'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, year,
+    isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
+  )), [paperFileid, source.sourceFileid, subjectId, year, isScheme]);
   const regions = useMemo(
-    () => source.pages.map(page => [{ p: page }]),
-    [source.pages],
+    () => source.pages.map((page, index) => {
+      const crop = source.regions?.[index];
+      if (!source.regions?.length) return [{ p: page }];
+      if (Array.isArray(source.regions[0])) return [{ p: page, r: Array.isArray(crop) ? crop : undefined }];
+      return source.regions.filter((region): region is { p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 } => !Array.isArray(region) && region.p === page);
+    }),
+    [source.pages, source.regions],
   );
   const pageAriaLabel = useCallback(
-    (page: number) => `${source.label}, printed examination page ${page}, shown as an image — © State Examinations Commission`,
+    (page: number) => `${source.label}, PDF page ${page}, shown as an image — © State Examinations Commission`,
     [source.label],
   );
 
@@ -118,21 +140,32 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   useEffect(() => {
     if (!open) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+    const releaseScroll = lockBodyScroll();
+    // Advancing to the last page disables the focused Next button. Browsers
+    // can then move focus to the body, outside the dialog's key handler.
+    const escape = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      event.preventDefault();
+      event.stopPropagation();
+      close();
+    };
+    document.addEventListener('keydown', escape, true);
     requestAnimationFrame(() => closeRef.current?.focus());
     return () => {
-      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', escape, true);
+      releaseScroll();
       if (scrollFrame.current !== null) cancelAnimationFrame(scrollFrame.current);
     };
-  }, [open]);
+  }, [open, close]);
 
   const goTo = useCallback((next: number) => {
     const index = clamp(next, source.pages.length - 1);
     setPageIndex(index);
-    const slide = trackRef.current?.children[index] as HTMLElement | undefined;
-    if (slide && typeof slide.scrollIntoView === 'function') {
-      slide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    const track = trackRef.current;
+    if (track && typeof track.scrollTo === 'function') {
+      // Move only the page strip. scrollIntoView also scrolls the review behind
+      // this dialog, leaving the question displaced when the reader closes.
+      track.scrollTo({ left: index * track.clientWidth, behavior: 'smooth' });
     }
   }, [source.pages.length]);
 
@@ -198,12 +231,6 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [completeSwipe]);
 
   const trapDialogKeys = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === 'Escape') {
-      event.preventDefault();
-      event.stopPropagation();
-      close();
-      return;
-    }
     if (event.key !== 'Tab') return;
     const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>(
       'button:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
@@ -221,12 +248,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       event.preventDefault();
       first.focus();
     }
-  }, [close]);
+  }, []);
 
   const modal = open && typeof document !== 'undefined' ? createPortal(
     <div className="mark-bank-theme mb-source-reader-overlay">
       <div
-        className="mb-source-reader-dialog"
+        className={`mb-source-reader-dialog${isAccounting ? ' mb-source-reader-accounting' : ''}`}
         role="dialog"
         aria-modal="true"
         aria-labelledby="mb-source-reader-title"
@@ -234,7 +261,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className="mb-source-reader-header">
           <div className="mb-source-reader-heading">
-            <span>{source.label} · {materialLabel}</span>
+            <span>{labelNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
           <div className="mb-source-reader-tools" aria-label="Page display controls">
@@ -250,8 +277,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <span aria-live="polite">{Math.round(zoom * 100)}%</span>
             <button
               type="button"
-              onClick={() => setZoom(value => Math.min(2, Number((value + 0.25).toFixed(2))))}
-              disabled={zoom >= 2}
+              onClick={() => setZoom(value => Math.min(maxZoom, Number((value + 0.25).toFixed(2))))}
+              disabled={zoom >= maxZoom}
               aria-label="Zoom in"
               title="Zoom in"
             >
@@ -284,7 +311,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               aria-label={`Source page ${index + 1} of ${source.pages.length}`}
             >
               <div className="mb-source-reader-page-meta">
-                <span>Printed page {page}</span>
+                <span>PDF page {page}</span>
                 <span>{index + 1} / {source.pages.length}</span>
               </div>
               <div className="mb-source-reader-page-pan">
@@ -311,7 +338,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                       key={`${page}-${zoom}`}
                       pdf={pdf}
                       region={regions[index]}
+                      rotation={source.pageRotations?.[page] ?? 0}
                       ariaLabel={pageAriaLabel}
+                      maxWidth={isAccounting ? 3300 : 900}
                       failText="This printed page could not be rendered. Open the original paper below."
                     />
                   ) : failed ? (
@@ -341,7 +370,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{source.attribution}</strong>
             <span>{source.presentationNote}</span>
             <a href={isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original {isIllustration ? 'illustration sheet' : 'paper'}
+              Open the original {isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}
             </a>
           </div>
           <div className="mb-source-reader-navigation">
@@ -377,13 +406,15 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
 
   return (
     <>
-      <button type="button" ref={triggerRef} className="mb-source-material-trigger" onClick={show}>
+      <button type="button" ref={triggerRef}
+        className={`mb-source-material-trigger${inline ? ' mb-source-material-trigger-inline' : ''}`}
+        onClick={show}>
         <span className="mb-source-material-icon"><PageStackIcon /></span>
         <span className="mb-source-material-copy">
-          <span>Read {source.label}</span>
+          <span>{isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

@@ -27,6 +27,9 @@ describe('useStudySession', () => {
   beforeEach(() => {
     vi.useRealTimers();
     mocks.updateDemoProgress.mockReset();
+    // A running session is kept in this tab's storage across reloads; start
+    // every test from a clean tab.
+    window.sessionStorage.clear();
   });
 
   test('cancels an unfinished session without recording it or awarding points', () => {

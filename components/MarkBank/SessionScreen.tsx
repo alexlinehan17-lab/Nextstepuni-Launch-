@@ -68,8 +68,23 @@ import WaysInPanel, {
   type WaysInWork,
 } from './WaysInPanel';
 import SourceMaterialReader from './SourceMaterialReader';
+import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
+import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
+import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
+import AppliedMathematicsRubricPanel, {
+  appliedMathematicsMarks,
+  type AppliedMathematicsScoreId,
+} from './AppliedMathematicsRubricPanel';
 import AudioSourcePlayer from './AudioSourcePlayer';
+import AccountingAssessment, { accountingMark, accountingScoreId } from './AccountingAssessment';
+import BusinessRubricPanel from './BusinessRubricPanel';
+import { businessMarks, type BusinessScoreId } from './businessRubric';
+import FrenchRubricPanel from './FrenchRubricPanel';
+import FrenchQuestionChoices from './FrenchQuestionChoices';
+import { frenchMarks, type FrenchScoreId } from './frenchRubric';
 import { listeningExerciseKey, visibleSessionExercises } from './sessionPlanning';
+import { questionParts } from './questionParts';
+import { stemWithListBreaks } from './stemText';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -124,11 +139,21 @@ const SANS = "'DM Sans', system-ui, sans-serif";
 const MONO = "'Roboto Mono', ui-monospace, monospace";
 
 /** How the student answered one row. */
-type RowClaim = 'no' | 'yes' | 'synonym';
+type RowClaim = 'no' | 'yes' | 'synonym' | number;
 
 /** A row absent from the claims map has not been claimed. Defaulting the other
  *  way silently credits every row a caller forgot to mention. */
-const isClaimed = (claims: Record<string, RowClaim>, id: string) => (claims[id] ?? 'no') !== 'no';
+const isClaimed = (claims: Record<string, RowClaim>, id: string) => {
+  const claim = claims[id] ?? 'no';
+  return typeof claim === 'number' ? Number.isFinite(claim) && claim > 0 : claim !== 'no';
+};
+
+/** Numeric claims are accepted only at explicitly published criterion steps. */
+export const criterionMarksClaimed = (row: MarkRow, claim: RowClaim) => {
+  if (!row.permittedMarks) return 0;
+  if (claim === 'yes') return row.marks ?? 0;
+  return typeof claim === 'number' && row.permittedMarks.includes(claim) ? claim : 0;
+};
 
 export interface SessionCardResult {
   cardId: string;
@@ -201,7 +226,7 @@ export function claimableTotal(card: SecCard): number {
     if (!r.route) common += rowMarks(r);
     else byRoute.set(r.route, (byRoute.get(r.route) ?? 0) + rowMarks(r));
   }
-  return common + Math.max(0, ...byRoute.values());
+  return common + Math.max(0, ...byRoute.values()) + (card.questionBonus?.marks ?? 0);
 }
 
 /** Only a `fixed` tariff may show per-row mark chips: for the other conventions
@@ -230,6 +255,7 @@ export function marksClaimed(
   if (!isPointCard(card)) return 0;
   if (!showsRowMarks(card)) return 0;
   const route = committedRoute(card, claims);
+  const bonus = card.questionBonus;
   return card.rows.reduce((n, r, i) => {
     const id = rowId(r, i);
     // Points from an abandoned route earn nothing: the scheme forbids taking a
@@ -241,8 +267,9 @@ export function marksClaimed(
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
       return n + claimedMarks(r.group, chosen);
     }
+    if (r.permittedMarks) return n + criterionMarksClaimed(r, claims[id] ?? 'no');
     return isClaimed(claims, id) ? n + rowMarks(r) : n;
-  }, 0);
+  }, 0) + (bonus ? criterionMarksClaimed(bonus, claims[bonus.id] ?? 'no') : 0);
 }
 
 /**
@@ -289,7 +316,7 @@ export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
 export type GeographyScoreId = `geography:${string}`;
-export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId;
+export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId | BusinessScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
@@ -408,9 +435,15 @@ export function geographyMarks(card: SecRubricCard, scores: RubricScores): numbe
 }
 
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
+  if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
+  if (card.rubric.system === 'applied-mathematics') return appliedMathematicsMarks(card, scores);
+  if (card.rubric.system === 'accounting') return accountingMark(card.totalMarks, scores[accountingScoreId]);
+  if (card.rubric.system === 'business') return businessMarks(card, scores);
+  if (card.rubric.system === 'french') return frenchMarks(card, scores);
   if (card.rubric.system === 'irish') return irishMarks(card, scores);
   if (card.rubric.system === 'art') return artMarks(card, scores);
   if (card.rubric.system === 'geography') return geographyMarks(card, scores);
+  if (card.rubric.system === 'politics') return politicsMarks(card, scores);
   return pclmMarks(card, scores as PclmScores);
 }
 
@@ -495,10 +528,35 @@ const MarkRowView: React.FC<{
   onPick: (id: string, optionIndex: number) => void;
   /** Options already claimed in a SIBLING menu on this card. */
   takenElsewhere?: ReadonlySet<string>;
-}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere }) => {
+  wholeResponse?: boolean;
+}> = ({ row, id, index, claim, showMarks, blocked, blockedReason, reduced, picks, onClaim, onPick, takenElsewhere, wholeResponse }) => {
   const claimed = claim !== 'no';
   const marks = rowMarks(row);
   const canSynonym = !row.exactTermRequired && (row.openList || row.kind === 'alt');
+
+  if (row.permittedMarks) {
+    const selected = criterionMarksClaimed(row, claim);
+    return (
+      <section aria-label={`Marking criterion ${index + 1}`} style={{ padding: '16px 0', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+        <strong style={{ color: INK, font: `600 14px/1.5 ${SANS}` }}>{row.verbatim}</strong>
+        {row.accepts?.length ? <p style={{ color: MUTED }}>{row.accepts.join(' · ')}</p> : null}
+        {row.contextNote ? <p style={{ color: MUTED, font: `400 12px/1.5 ${SANS}` }}>{row.contextNote}</p> : null}
+        <div role="group" aria-label={`Marks for ${row.verbatim}`} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          {row.permittedMarks.map(mark => (
+            <button key={mark} type="button" disabled={blocked} aria-pressed={selected === mark}
+              aria-label={`Award ${mark} marks for ${row.verbatim}`}
+              onClick={() => onClaim(id, mark)}
+              style={{ padding: '8px 12px', borderRadius: 6, border: `1px solid ${MUTED_BORDER}`,
+                background: selected === mark ? INK : 'var(--mb-paper)',
+                color: selected === mark ? 'var(--mb-paper)' : INK, cursor: blocked ? 'default' : 'pointer' }}>
+              {mark}
+            </button>
+          ))}
+        </div>
+        {blocked && blockedReason ? <p>{blockedReason}</p> : null}
+      </section>
+    );
+  }
 
   // A bounded "Any four 4(3)" group. The scheme lets a student bank any four of
   // nine, so each option is claimed on its own: treating the whole group as one
@@ -647,7 +705,7 @@ const MarkRowView: React.FC<{
         aria-pressed={claimed}
         style={{
           width: '100%', textAlign: 'left', display: 'grid',
-          gridTemplateColumns: '20px 1fr auto', gap: 10, alignItems: 'start',
+          gridTemplateColumns: '20px minmax(0, 1fr) auto', gap: 10, alignItems: 'start',
           padding: '11px 12px', borderRadius: 12,
           border: `1.5px solid ${claimed ? SUCCESS : MUTED_BORDER}`,
           background: claimed ? SUCCESS_TINT : 'var(--mb-paper)',
@@ -679,11 +737,16 @@ const MarkRowView: React.FC<{
           )}
         </MotionSpan>
 
-        <span>
+        <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
+          {wholeResponse && row.contextNote && (
+            <span style={{ display: 'block', marginBottom: 10, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
+              {row.contextNote}
+            </span>
+          )}
           {/* A marking point takes its direction from its own text, so an
               Arabic answer reads and aligns the way the scheme printed it. */}
-          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2 }}>
-            {row.verbatim}
+          <span dir="auto" style={{ color: claimed ? SUCCESS_TEXT : INK_2, whiteSpace: wholeResponse ? 'pre-line' : undefined }}>
+            {wholeResponse ? row.verbatim.replace(/ • /g, '\n\n') : row.verbatim}
             {/* The scheme's own alternatives, shown in full: a student who wrote
                 "heterotrophic" earned the mark and must be able to see that. */}
             {row.accepts?.length ? (
@@ -692,7 +755,7 @@ const MarkRowView: React.FC<{
               </span>
             ) : null}
           </span>
-          {row.contextNote && (
+          {!wholeResponse && row.contextNote && (
             <span style={{ display: 'block', marginTop: 3, font: `400 12px/1.4 ${SANS}`, color: MUTED }}>
               {row.contextNote}
             </span>
@@ -1334,7 +1397,10 @@ const ArtRubricPanel: React.FC<{
               </strong>
               <span style={{ font: `700 9.5px/1 ${MONO}`, color: LABEL }}>{rangeLabel} marks</span>
             </div>
-            <ul style={{ margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 11px/1.45 ${SANS}` }}>
+            {band.lead && (
+              <p style={{ margin: '6px 0 0', color: MUTED, font: `400 11px/1.45 ${SANS}` }}>{band.lead}</p>
+            )}
+            <ul style={{ listStyle: 'disc', margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 11px/1.45 ${SANS}` }}>
               {band.guidance.map((note, index) => <li key={`${band.level}-${index}`}>{note}</li>)}
             </ul>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
@@ -1394,11 +1460,8 @@ const ArtRubricPanel: React.FC<{
         <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
           SEC Art marking scheme
         </span>
-        <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+        <p style={{ margin: '5px 0 12px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
           Place your response on the published Art scale.
-        </p>
-        <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-          Score each independently awarded component once. Descriptor guidance is evidence for a band, never a model-answer checklist.
         </p>
 
         <div style={{ display: 'grid', gap: 10 }}>
@@ -1408,8 +1471,33 @@ const ArtRubricPanel: React.FC<{
                 <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>{criterion.label}</strong>
                 <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
               </div>
-              {criterion.guidance.length > 0 && (
-                <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+              {criterion.rowMarks && (criterion.rowMarks.length > 1 || criterion.rowNotes) ? (
+                /* The 2021–2022 schemes' own table: each component row with
+                   the Marks and Notes columns printed beside it. */
+                <table style={{ width: '100%', borderCollapse: 'collapse', margin: '7px 0 10px', color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                  <thead>
+                    <tr>
+                      <th scope="col" style={{ padding: '0 6px 4px 0' }}><span style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)' }}>Component</span></th>
+                      <th scope="col" style={{ padding: '0 6px 4px', width: 42, textAlign: 'right', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Marks</th>
+                      {criterion.rowNotes && (
+                        <th scope="col" style={{ padding: '0 0 4px 6px', width: '30%', textAlign: 'left', font: `700 9.5px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: LABEL }}>Notes</th>
+                      )}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {criterion.guidance.map((row, index) => (
+                      <tr key={`${criterion.id}-${index}`} style={{ borderTop: `1px solid ${HAIRLINE_2}` }}>
+                        <td style={{ padding: '5px 6px 5px 0', verticalAlign: 'top' }}>{row}</td>
+                        <td style={{ padding: '5px 6px', verticalAlign: 'top', textAlign: 'right', font: `700 11px/1.48 ${MONO}`, color: INK_2, fontVariantNumeric: 'tabular-nums' }}>{criterion.rowMarks![index]}</td>
+                        {criterion.rowNotes && (
+                          <td style={{ padding: '5px 0 5px 6px', verticalAlign: 'top' }}>{criterion.rowNotes[index]}</td>
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              ) : criterion.guidance.length > 0 && (
+                <ul style={{ listStyle: 'disc', margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
                   {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
                 </ul>
               )}
@@ -1429,14 +1517,33 @@ const ArtRubricPanel: React.FC<{
         </div>
       </div>
 
-      <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
-        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
-          How to use this guide
-        </strong>
-        <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
-          {rubric.markingGuideNote}
-        </p>
-      </aside>
+      {rubric.markingGuideNote && (
+        <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
+          <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+            From the SEC marking scheme
+          </strong>
+          <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+            {rubric.markingGuideNote}
+          </p>
+        </aside>
+      )}
+
+      {rubric.practiceNotes && rubric.practiceNotes.length > 0 && (
+        <section
+          aria-label="NextStepUni practice notes"
+          style={{ marginTop: 16, paddingTop: 14, borderTop: `1px solid ${HAIRLINE_2}` }}
+        >
+          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+            NextStepUni practice notes
+          </span>
+          <p style={{ margin: '4px 0 8px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+            Our guidance for using this card. Not part of the SEC marking scheme.
+          </p>
+          <ul style={{ listStyle: 'disc', margin: 0, paddingLeft: 17, color: INK_2, font: `400 12px/1.5 ${SANS}` }}>
+            {rubric.practiceNotes.map((note, index) => <li key={`practice-${index}`}>{note}</li>)}
+          </ul>
+        </section>
+      )}
     </div>
   );
 };
@@ -1636,6 +1743,37 @@ const RubricPanel: React.FC<{
   onScore: (id: RubricScoreId, marks: number) => void;
   onRequirement: (index: number) => void;
 }> = props => {
+  if (props.card.rubric.system === 'politics') {
+    return <PoliticsRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'politics' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'physical-education') {
+    return <PhysicalEducationRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'physical-education' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'applied-mathematics') {
+    return <AppliedMathematicsRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'applied-mathematics' }>;
+    }} />;
+  }
+  if (props.card.rubric.system === 'accounting') {
+    return <AccountingAssessment card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'accounting' }>;
+    }} score={props.scores[accountingScoreId] ?? 0}
+      onScore={marks => props.onScore(accountingScoreId, marks)} />;
+  }
+  if (props.card.rubric.system === 'business') {
+    return <BusinessRubricPanel card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'business' }>;
+    }} scores={props.scores} onScore={props.onScore} />;
+  }
+  if (props.card.rubric.system === 'french') {
+    return <FrenchRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'french' }>;
+    }} />;
+  }
   if (props.card.rubric.system === 'irish') {
     return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
       rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
@@ -1702,24 +1840,6 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
   );
 };
 
-
-/**
- * The question, set the way the paper sets it.
- *
- * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
- * prose of each part starts on a common line, and a student's eye can find "(ii)"
- * without reading. Run inline, as a single paragraph, the labels disappear into
- * the sentence and a two-part question reads as one long instruction.
- *
- * This splits on labels only where the paper actually printed them; a question
- * with no parts renders as one block, unchanged.
- */
-/* Never glued to a letter. "(x)" IS a part label -- Physics 2022 OL Q3 runs
- * to (x) -- but in "h(x) = 2 sin(2x)" it is a function's argument, and
- * splitting there put "(x)" in the part gutter and left the question
- * reading "the tangent line to h". A printed label always follows a space
- * or opens the text. */
-const PART = /\s*(?<![A-Za-z0-9])(\((?:[ivx]+|[a-h])\))\s+/gi;
 
 /**
  * Which emphasis the command clause carries.
@@ -1796,47 +1916,6 @@ const Clause: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-interface QuestionPart {
-  label: string;
-  body: string;
-  children: QuestionPart[];
-}
-
-const isRomanPart = (label: string) => /^\([ivx]+\)$/i.test(label);
-
-/** Parse the paper's one- and two-level part grammar.
- *
- * A flat label/body pairing cannot represent `(i) (a) … (b) …`: the empty
- * body between `(i)` and `(a)` shifts every later token into the wrong column.
- * SEC questions use roman numerals for the parent and letters for its children,
- * so retain that hierarchy and let both levels keep a real prose column.
- */
-const questionParts = (text: string): QuestionPart[] | null => {
-  const matches = [...text.matchAll(new RegExp(PART.source, PART.flags))];
-  if (!matches.length || (matches[0].index ?? 0) !== 0) return null;
-  const tokens = matches.map((match, index) => ({
-    label: match[1],
-    body: text.slice(
-      (match.index ?? 0) + match[0].length,
-      matches[index + 1]?.index ?? text.length,
-    ).trim(),
-    children: [] as QuestionPart[],
-  }));
-  const parts: QuestionPart[] = [];
-  let parent: QuestionPart | null = null;
-  for (const token of tokens) {
-    if (isRomanPart(token.label)) {
-      parts.push(token);
-      parent = token;
-    } else if (parent) {
-      parent.children.push(token);
-    } else {
-      parts.push(token);
-    }
-  }
-  return parts;
-};
-
 const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ children, nested = false }) => (
   <span style={{
     minWidth: 0,
@@ -1847,6 +1926,17 @@ const PartLabel: React.FC<{ children: React.ReactNode; nested?: boolean }> = ({ 
   </span>
 );
 
+/**
+ * The question, set the way the paper sets it.
+ *
+ * SEC papers hang their part labels — (i), (ii), (a) — in the left margin so the
+ * prose of each part starts on a common line, and a student's eye can find "(ii)"
+ * without reading. Run inline, as a single paragraph, the labels disappear into
+ * the sentence and a two-part question reads as one long instruction.
+ *
+ * This splits on labels only where the paper actually printed them (see
+ * ./questionParts); a question with no parts renders as one block, unchanged.
+ */
 const QuestionText: React.FC<{ text: string }> = ({ text }) => {
   const parts = questionParts(text);
   // No label at the head means no hanging: one block, as before.
@@ -2301,6 +2391,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     );
     return selected ? { ...baseAssessmentCard, rows: selected.rows } : baseAssessmentCard;
   }, [answerVariantId, baseAssessmentCard]);
+  const wholeResponseAssessment = Boolean(assessmentCard && isPointCard(assessmentCard)
+    && assessmentCard.tariffModel.kind === 'questionTotal');
   useEffect(() => {
     setAnswerVariantId(null);
   }, [baseAssessmentCard?.id]);
@@ -2315,6 +2407,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     if (!assessmentCard || !isPointCard(assessmentCard)) return {};
     const out: Record<string, RowClaim> = {};
     assessmentCard.rows.forEach((r, i) => { out[rowId(r, i)] = claimOf(rowId(r, i)); });
+    if (assessmentCard.questionBonus) out[assessmentCard.questionBonus.id] = claimOf(assessmentCard.questionBonus.id);
     return out;
   }, [assessmentCard, claimOf]);
 
@@ -2346,9 +2439,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       // Except on a matching or true/false card, where the scheme's whole answer
       // IS the prefix's tail — a letter or a verdict. "e · a · d" and
       // "false · false · false" name nothing; there the label is the content.
+      // Case is kept as printed: a gamete "R" is not "r", nor "C H O" "c h o".
       .map(r => {
         const tail = r.verbatim.split(/\s[—-]\s/).pop() ?? r.verbatim;
-        return (tail.trim().length <= 6 ? r.verbatim : tail).toLowerCase();
+        return tail.trim().length <= 6 ? r.verbatim : tail;
       });
   }, [assessmentCard, rowClaims]);
   /* Three names fit the band; beyond that the count carries it. Naming all six
@@ -2361,7 +2455,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const rubricLabel = assessmentCard && isRubricCard(assessmentCard)
     ? assessmentCard.rubric.system === 'pclm' ? 'PCLM'
       : assessmentCard.rubric.system === 'irish' ? 'Irish rubric'
-      : assessmentCard.rubric.system === 'art' ? 'Art descriptor' : 'Geography allocation'
+      : assessmentCard.rubric.system === 'politics' ? 'Politics and Society'
+      : assessmentCard.rubric.system === 'art' ? 'Art descriptor'
+      : assessmentCard.rubric.system === 'physical-education' ? 'Physical Education criteria'
+      : assessmentCard.rubric.system === 'applied-mathematics' ? 'SEC allocation'
+      : assessmentCard.rubric.system === 'accounting' ? 'Accounting allocation'
+      : assessmentCard.rubric.system === 'french' ? 'French marking grid'
+      : assessmentCard.rubric.system === 'business' ? 'Business allocation' : 'Geography allocation'
     : 'rubric';
   const routeTaken = assessmentCard ? committedRoute(assessmentCard, rowClaims) : null;
 
@@ -2437,6 +2537,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         allPicks[id] = Array.from({ length: r.group.claimMax }, (_, k) => k);
       }
     });
+    if (assessmentCard.questionBonus) all[assessmentCard.questionBonus.id] = 'yes';
     setClaims(prev => ({ ...prev, ...all }));
     setPicks(prev => ({ ...prev, ...allPicks }));
   }, [assessmentCard]);
@@ -2543,6 +2644,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     : assessmentCard.level === 'common' ? 'COMMON LEVEL' : 'ORDINARY LEVEL';
   const figure = 'figure' in assessmentCard ? assessmentCard.figure : undefined;
   const questionFigure = 'questionFigure' in assessmentCard ? assessmentCard.questionFigure : undefined;
+  const printedQuestionReplacesText = Boolean(questionFigure && questionFigure.includesPrompt !== false);
   const sourceMaterial = assessmentCard.sourceMaterial;
   const sourceMaterials = [
     ...(sourceMaterial ? [sourceMaterial] : []),
@@ -2610,7 +2712,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             // turns that clip into a straight cut through the g's.
             font: `500 13px/1.5 ${SANS}`, color: INK_2,
             overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-            flexShrink: 0,
+            flexShrink: 1, minWidth: 0,
           }}>
             <span aria-hidden="true" style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: subjectColour, marginRight: 7 }} />
             {subjectLabel} · {assessmentCard.level === 'higher' ? 'HL' : assessmentCard.level === 'common' ? 'CL' : 'OL'}
@@ -2800,8 +2902,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </span>
             </div>
 
-            {assessmentCard.stem && !questionFigure && (
-              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{assessmentCard.stem}</p>
+            {assessmentCard.stem && !printedQuestionReplacesText && (
+              /* A printed bullet list keeps one item to a line; see stemText. */
+              <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2, whiteSpace: 'pre-line' }}>
+                {stemWithListBreaks(assessmentCard.stem)}
+              </p>
             )}
 
             {questionFigure && (
@@ -2820,12 +2925,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </figure>
             )}
 
-            {!questionFigure && (audioMaterial ? (
+            {!printedQuestionReplacesText && (audioMaterial && assessmentCard.subjectId === 'french' ? (
+              <>
+                <AudioSourcePlayer source={audioMaterial} />
+                <QuestionText text={assessmentCard.questionChoices ? assessmentCard.questionText.split('\n')[0] : assessmentCard.questionText} />
+                {assessmentCard.questionChoices && <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />}
+              </>
+            ) : audioMaterial ? (
               <>
                 <AudioSourcePlayer source={audioMaterial} />
                 <ListeningQuestionSet cards={listeningCards} />
               </>
-            ) : <QuestionText text={assessmentCard.questionText} />)}
+            ) : assessmentCard.subjectId === 'french' && assessmentCard.questionChoices ? <>
+              <QuestionText text={assessmentCard.questionText.split('\n')[0]} />
+              <FrenchQuestionChoices key={assessmentCard.id} options={assessmentCard.questionChoices} />
+            </> : <QuestionText text={assessmentCard.questionText} />)}
+
+            {assessmentCard.practiceFocus && <p style={{ marginTop: 12, color: INK, fontWeight: 700 }}>
+              Practise: {assessmentCard.practiceFocus}
+            </p>}
 
             {figure && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing
@@ -2983,7 +3101,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     }}>
                       The scheme
                     </span>
-                    {isPointCard(assessmentCard) && (
+                    {isPointCard(assessmentCard) && !wholeResponseAssessment && (
                       <button
                         type="button" onClick={claimAll}
                         style={{
@@ -3001,19 +3119,29 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     <>
                       <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
                         <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
-                          Select the points you actually got.
+                          {wholeResponseAssessment
+                            ? 'Check your complete response.' : 'Select the points you actually got.'}
                         </p>
                         <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
-                          Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.
+                          {wholeResponseAssessment
+                            ? 'Compare your answer with the guidance and examples below. Tick each part you completed, then choose your grade for the full response.'
+                            : 'Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.'}
                         </p>
                       </div>
 
                       {assessmentCard.rows.map((row, i) => {
                         const id = rowId(row, i);
+                        const taskGroup = assessmentCard.taskGroups?.find(group => group.rowIds[0] === id);
                         return (
+                          <React.Fragment key={id}>
+                          {taskGroup && (
+                            <h3 style={{ margin: '24px 0 8px', paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}`, font: `600 16px/1.4 ${SERIF}`, color: INK }}>
+                              {taskGroup.label} · {taskGroup.marks} marks
+                            </h3>
+                          )}
                           <MarkRowView
-                            key={id}
                             row={row} id={id} index={i}
+                            wholeResponse={wholeResponseAssessment}
                             claim={claimOf(id)}
                             showMarks={showsRowMarks(assessmentCard)}
                             blocked={
@@ -3031,8 +3159,27 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                             onClaim={setClaim}
                             onPick={togglePick}
                           />
+                          </React.Fragment>
                         );
                       })}
+
+                      {assessmentCard.questionBonus && (
+                        <div style={{ marginTop: 18, paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}` }}>
+                          <h3 style={{ margin: '0 0 8px', font: `600 16px/1.4 ${SERIF}`, color: INK }}>Question bonus</h3>
+                          <MarkRowView
+                            row={assessmentCard.questionBonus}
+                            id={assessmentCard.questionBonus.id}
+                            index={assessmentCard.rows.length}
+                            claim={claimOf(assessmentCard.questionBonus.id)}
+                            showMarks={true}
+                            blocked={false}
+                            reduced={reduced}
+                            picks={[]}
+                            onClaim={setClaim}
+                            onPick={togglePick}
+                          />
+                        </div>
+                      )}
 
                       {assessmentCard.tariffModel.kind === 'orderedSplit' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
@@ -3042,9 +3189,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       )}
                       {assessmentCard.tariffModel.kind === 'questionTotal' && (
                         <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
-                          The paper prices this question at {assessmentCard.totalMarks} marks in total,
-                          but the scheme does not divide those marks between its parts — so no invented
-                          per-point values are shown.
+                          Assess your complete answer against the {assessmentCard.totalMarks}-mark total.
+                          Check the required parts above, then choose how securely you answered.
                         </p>
                       )}
                       {assessmentCard.tariffModel.kind === 'bestNofParts' && (
@@ -3159,6 +3305,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 background: left === 0 ? SUCCESS_TINT : 'var(--mb-raised)',
                 color: left === 0 ? SUCCESS_TEXT : INK_2,
                 font: `500 12px/1.5 ${SANS}`,
+                // Whole-response criteria can be paragraphs long. This is a
+                // summary; the full wording remains in the scheme above.
+                display: '-webkit-box', WebkitBoxOrient: 'vertical',
+                WebkitLineClamp: 3, overflow: 'hidden',
               }}>
                 {left === 0 ? (
                   <span style={{

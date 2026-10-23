@@ -32,10 +32,33 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import { CARDS as APPLIED_HIGHER } from '../components/MarkBank/cards/applied-maths/higher';
+import { CARDS as APPLIED_ORDINARY } from '../components/MarkBank/cards/applied-maths/ordinary';
+
+import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
+import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
+import { CARDS as PE_HIGHER } from '../components/MarkBank/cards/physical-education/higher';
+import { CARDS as PE_ORDINARY } from '../components/MarkBank/cards/physical-education/ordinary';
+
+import { CARDS as ACCOUNTING_HIGHER } from '../components/MarkBank/cards/accounting/higher';
+import { CARDS as ACCOUNTING_ORDINARY } from '../components/MarkBank/cards/accounting/ordinary';
+import { CARDS as BUSINESS_HIGHER } from '../components/MarkBank/cards/business/higher';
+import { CARDS as BUSINESS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as FRENCH_HIGHER } from '../components/MarkBank/cards/french/higher';
+import { CARDS as FRENCH_ORDINARY } from '../components/MarkBank/cards/french/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'accounting') return [...ACCOUNTING_HIGHER, ...ACCOUNTING_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  if (subject === 'french') {
+    return [...FRENCH_HIGHER, ...FRENCH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'applied-maths') {
+    return [...APPLIED_HIGHER, ...APPLIED_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'english') {
     return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
@@ -48,8 +71,21 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     return [...ART_HIGHER, ...ART_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
+  if (subject === 'politics-and-society') {
+    return [...POLITICS_HIGHER, ...POLITICS_ORDINARY].map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'business') {
+    // The runtime deck appends source-reviewed rubric cards and expanded
+    // printed routes to the literal cards; reconcile.py counts the same set.
+    return [...BUSINESS_HIGHER, ...BUSINESS_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   if (subject === 'geography') {
     return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'physical-education') {
+    return [...PE_HIGHER, ...PE_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
@@ -64,7 +100,7 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     } catch {
       continue;
     }
-    for (const chunk of text.split(/\.\.\.base,\s*kind:/).slice(1)) {
+    for (const chunk of text.split(/^\s*\.\.\.base,/m).slice(1)) {
       const id = chunk.match(/\bid: "([^"]+)"/);
       const ref = chunk.match(/questionRef: "([^"]+)"/);
       if (id && ref) out.push({ id: id[1], ref: ref[1] });
@@ -142,7 +178,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') identities.sort();
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'physical-education' || subject === 'applied-maths' || subject === 'accounting' || subject === 'business') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -155,6 +191,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
       .filter(({ ref }) => {
+        if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
         }
@@ -195,8 +232,28 @@ describe('Mark Bank paper-coverage ratchet', () => {
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
-      || subject === 'geography') {
+      || subject === 'geography' || subject === 'politics-and-society' || subject === 'accounting') {
       for (const name of ['factory.ts', 'authored.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'physical-education' || subject === 'applied-maths') {
+      for (const name of subject === 'physical-education' ? ['factory.ts', 'reviewed.json'] : ['reviewed.ts', 'reviewed.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'business') {
+      // Same files and order as reconcile.py's content hash.
+      for (const name of ['rubric-authored.json', 'route-pools.json', 'routes.mjs', 'rubric.ts']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
+    }
+    if (subject === 'french') {
+      // Same files and order as reconcile.py's content hash, listening included.
+      for (const name of ['writing.ts', 'writing.json', 'reading.ts', 'reading.json', 'cloze.ts', 'cloze.json', 'listening.ts', 'listening.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

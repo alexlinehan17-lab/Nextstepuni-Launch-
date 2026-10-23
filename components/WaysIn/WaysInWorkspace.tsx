@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { lockBodyScroll } from '../../utils/bodyScrollLock';
 import { createPortal } from 'react-dom';
 import {
   ArrowLeft,
@@ -549,9 +550,8 @@ export const WaysInWorkspace: React.FC<WaysInWorkspaceProps> = ({
   const shellRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const before = document.body.style.overflow;
     const previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    document.body.style.overflow = 'hidden';
+    const releaseScroll = lockBodyScroll();
     closeRef.current?.focus();
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose();
@@ -572,7 +572,7 @@ export const WaysInWorkspace: React.FC<WaysInWorkspaceProps> = ({
     };
     window.addEventListener('keydown', onKey);
     return () => {
-      document.body.style.overflow = before;
+      releaseScroll();
       window.removeEventListener('keydown', onKey);
       previouslyFocused?.focus();
     };

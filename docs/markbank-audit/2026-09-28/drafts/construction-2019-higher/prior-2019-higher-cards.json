@@ -1,0 +1,1084 @@
+[
+  {
+    "id": "cons-2019-hl-q1-b",
+    "topicId": "cons-3-6",
+    "conceptId": "typical-design-detailing-prevent-ingress-rainwater",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q1(b)",
+    "questionText": "On your drawing, show the typical design detailing to prevent the ingress of rainwater at the window cill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Design detail to prevent the ingress of rainwater at window cill",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q3-a",
+    "topicId": "cons-5-6",
+    "conceptId": "design-considerations-proposed-bedroom-suite-bathroom",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q3(a)",
+    "questionText": "Discuss in detail, three design considerations for the proposed bedroom and en suite bathroom.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 9,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, three design considerations for the proposed bedroom and en suite bathroom.",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Furniture Layout",
+            "Access & Escape",
+            "Storage",
+            "Future Flexibility",
+            "Ergonomics",
+            "Visual",
+            "Auditory",
+            "Tactile",
+            "Olfactory"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q3-b",
+    "topicId": "cons-5-6",
+    "conceptId": "proposed-internal-layout-bedroom-suite-bathroom",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q3(b)",
+    "questionText": "Using notes and freehand sketches, show a proposed internal layout for the bedroom and en suite bathroom that incorporates each of the design considerations you outlined at 3(a) above. Justify your choices.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 3",
+      "answer": 3,
+      "ofParts": 9,
+      "perPart": 3
+    },
+    "totalMarks": 9,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, show a proposed internal layout for the bedroom and en suite bathroom that incorporat",
+        "marks": 9,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 3,
+          "options": [
+            "Furniture Layout",
+            "Access & Egress",
+            "Storage",
+            "Future Flexibility",
+            "Ergonomics",
+            "Visual",
+            "Auditory",
+            "Tactile",
+            "Olfactory"
+          ]
+        }
+      }
+    ],
+    "notes": "The scheme awards 26 marks for this part. The 9 on this card are the marks it states answers for; the other 17 go to Internal layout design (Bedroom + en-suite) (14); Justification (3) — the drawing itself and anything the scheme prices without saying what earns it."
+  },
+  {
+    "id": "cons-2019-hl-q4-a",
+    "topicId": "cons-1-1",
+    "conceptId": "benefits-local-community-refurbishing-townhouses-family",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q4(a)",
+    "questionText": "Discuss three benefits to the local community of refurbishing one of the townhouses as a family home.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 8",
+      "answer": 3,
+      "ofParts": 7,
+      "perPart": 8
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss three benefits to the local community of refurbishing one of the townhouses as a family home.",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 8,
+          "options": [
+            "Maintain and develop the local social community – local schools, amities, parks, playgrounds, etc",
+            "Improve the local economy of urban areas – shops, cafes, restaurants, etc",
+            "Maintain and improve the physical structure of the neighbourhood for everyone living there",
+            "Help alleviate the current housing shortage in urban areas",
+            "Engender pride in the local area and encourage neighbouring premises to upgrade",
+            "Maintaining the existing, residential, architectural heritage of the urban area",
+            "Encourage regeneration of the area"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q5-a",
+    "topicId": "cons-6-1",
+    "conceptId": "calculate-value-wall-given-construction-has",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q5(a)",
+    "questionText": "Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness 16 mm Concrete block outer leaf thickness 100 mm Clear cavity width 50 mm Polystyrene insulation thickness 50 mm Concrete block inner leaf thickness 100 mm Internal plaster thickness 12 mm Thermal data of the external wall: Resistance of external surface (R) 0.048 m2 °C/W Resistivity of external render (r) 2.170 m °C/W Conductivity of concrete external blockwork (k) 1.440 W/m °C Resistance of clear cavity (R) 0.170 m2 °C/W Conductivity of insulation (k) 0.037 W/m °C Conductivity of concrete internal blockwork (k) 1.440 W/m °C Resistivity of internal plaster (r) 6.250 m °C/W Resistance of internal surface (R) 0.122 m2 °C/W",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "9 x 3",
+      "answer": 9,
+      "ofParts": 9,
+      "perPart": 3
+    },
+    "totalMarks": 27,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Calculate the U-value of the wall, given the construction has the following sequence and data: External render thickness",
+        "marks": 27,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 9,
+          "perOption": 3,
+          "options": [
+            "External surface resistance",
+            "External render",
+            "External blockwork",
+            "Clear cavity",
+            "Polystyrene insulation",
+            "Internal blockwork",
+            "Internal plaster",
+            "Internal surface resistance",
+            "Calculation of U- value"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q5-b",
+    "topicId": "cons-6-1",
+    "conceptId": "value-wall-obtained-above-data-calculate",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q5(b)",
+    "questionText": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: • area of external wall 135 m2 • average internal temperature 19 °C • average external temperature 5 °C • heating period 9 hours daily for 36 weeks per annum • cost of oil 94 cent per litre • calorific value of oil 37350 kJ per litre • 1000 Watts 1 kJ per second.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q5-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually th",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Heat loss formula and calculations",
+            "Heating duration for one year",
+            "k/Joules calculation for one year",
+            "Litres of oil for one year",
+            "Annual cost of heat loss"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q5-c",
+    "topicId": "cons-6-3",
+    "conceptId": "proposed-upgrade-thermal-properties-above-wall",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q5(c)",
+    "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2019-hl-paper-p004-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "5 x 3",
+      "answer": 5,
+      "ofParts": 5,
+      "perPart": 3
+    },
+    "totalMarks": 15,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q5-c-r1",
+        "kind": "anyN",
+        "verbatim": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expand",
+        "marks": 15,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 5,
+          "perOption": 3,
+          "options": [
+            "Resistance for U- value for 0.15Wm2K (using R=1/U)",
+            "Resistance from calculated U-value from part (a)",
+            "Difference in resistances (required resistance)",
+            "Application of formula R = T/k",
+            "Required thickness of insulation"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q6-a",
+    "topicId": "cons-6-3",
+    "conceptId": "reference-design-shown-features-design-contribute",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q6(a)",
+    "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+    "stem": "",
+    "figureKey": "construction-studies-2019-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 5",
+      "answer": 6,
+      "ofParts": 9,
+      "perPart": 5
+    },
+    "totalMarks": 30,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Three features of the design that contribute to the house having a low environment impact",
+        "marks": 30,
+        "openList": true,
+        "contextNote": "Three features of the design that contribute to the house having a low environment impact",
+        "group": {
+          "claimMax": 6,
+          "perOption": 5,
+          "options": [
+            "Large south facing glazed windows and doors to allow maximum sunlight to enter the house naturally heating the internal space and therefore reducing heating costs and dependency on non-renewable fossil fuels",
+            "Trees on the south side to provide natural solar shading during summer months and reduce overheating internally",
+            "Wood burning stove contributes to the reduction of direct draughts associated with open fireplaces. They are also carbon neutral and more efficient",
+            "High thermal mass chimney stack is central to the design so maximum heat can be retained internally and heat is not lost to an external wall",
+            "High levels of insulation in the walls reducing heat loss",
+            "Small windows on the north elevation reducing heat loss potential and conserving energy",
+            "Photovoltaic cells installed on the roof to generate renewable energy",
+            "Timber frame construction, which has low embodied energy",
+            "Attic space used for additional living quarters without using additional building products and reducing the footprint of the building"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q6-b",
+    "topicId": "cons-1-1",
+    "conceptId": "renewable-energy-technologies-identify-how-contributes",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q6(b)",
+    "questionText": "Using notes and freehand sketches, discuss in detail each of the following renewable energy technologies and identify how each contributes to making a home more eco-friendly: • evacuated tubes • wind turbines • photovoltaic panels.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "2 x 3 + 2 x 3 + 2 x 3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "2. Wind turbine",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "2. Wind turbine",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Wind activates the turning of the blades and rotor. They spin the main shaft and gearbox, which spins the generator resulting in electrical output",
+            "They can be connected to batteries or the national grid",
+            "When the wind flows across the blade, the air pressure on one side of the blade decreases. The difference in air pressure across the two sides of the blade creates both lift and drag. The force of the lift is stronger than the drag and this causes the rotor to spin",
+            "An inverter is needed to convert the direct current (DC) voltage from the turbine to match the alternating current (AC) voltage required for domestic use",
+            "The control box is used to protect the invertor and turbine in strong winds. If the wind becomes too strong the control box will slow the turbine down",
+            "If the turbine sits on a tower, then a concrete foundation is generally required",
+            "Planning permission may however be required if it is thought that the turbine would interfere with the character of the landscape or a special amenity"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q6-b-r2",
+        "kind": "anyN",
+        "verbatim": "3. Photovoltaic cells",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "3. Photovoltaic cells",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "A photovoltaic panel is a collection of photovoltaic (PV) cells. Multiple panels can be wired together to form an array. In general, the larger the area of a module or array, the more electricity that will be produced",
+            "The solar panel system uses particles of light from the sun (photons) to separate electrons from atoms. The process of separating electrons causes the electrons to hit off metal conductor strips on the outside of the PV cells thus generating electricity",
+            "Excess electricity can be stored in batteries or sent back to the grid"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q6-b-r3",
+        "kind": "anyN",
+        "verbatim": "Renewable energy systems contribute to making a house more eco-friendly in a number of ways",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Renewable energy systems contribute to making a house more eco-friendly in a number of ways",
+        "group": {
+          "claimMax": 2,
+          "perOption": 3,
+          "options": [
+            "Reducing its dependency on non-renewable methods of energy production",
+            "producing free and clean energy",
+            "Greenhouse gas emissions are reduced",
+            "They do not require the burning of depleting fossil fuels",
+            "No harmful gases or CO² is produced which has a negative impact on the ozone layer",
+            "No waste product is generated",
+            "No habitats are affected or destroyed Solar Photovoltaic Panels convert solar energy into electricity. The majority of mains electricity is generated by burning fossil fuels or other combustible material that releases CO² into the atmosphere. The generation of electricity from a renewable source such as photovoltaic panels reduces dependency on mains supply therefore reducing carbon emissions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q6-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-local-craft-skills-when-building",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q6(c)",
+    "questionText": "Discuss in detail two advantages of using local craft skills when building the house shown.",
+    "stem": "",
+    "figureKey": "construction-studies-2019-hl-paper-p005-i0",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Advantages",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Advantages",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "It preserves traditional knowledge and skill for future generations to learn from",
+            "It creates a sense of place and pride by availing of skills specific to your locality",
+            "Employment is generated in the locality",
+            "Families remain in the locality and contribute to community life and events",
+            "Local workers will know where to source materials needed locally",
+            "If local workers and local materials are utilised- then it reduces the embodied energy of the house",
+            "It will help prevent the migration of rural labour to urban centres and give them a reason to stay and earn while preventing loss of skills"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q7-a",
+    "topicId": "cons-4-4",
+    "conceptId": "vertical-section-through-centre-stairs-section",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q7(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the centre of the stairs. The section should show the typical construction detail through the bottom three steps of the stairs, showing the newel post, string, balusters and handrail. Include the typical dimensions of three structural members of the stairs.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 5",
+      "answer": 8,
+      "ofParts": 9,
+      "perPart": 5
+    },
+    "totalMarks": 40,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q7-a-r1",
+        "kind": "anyN",
+        "verbatim": "Closed string stairs – typical detailing",
+        "marks": 40,
+        "openList": true,
+        "contextNote": "Closed string stairs – typical detailing",
+        "group": {
+          "claimMax": 8,
+          "perOption": 5,
+          "options": [
+            "String 250 mm × 50 mm (or similar)",
+            "Newel post 120 mm × 120 mm",
+            "Thread 250 mm × 25 mm (or similar)",
+            "Riser 175 mm × 20 mm (or similar)",
+            "Nosing to thread 25mm (or similar)",
+            "Balusters 40 mm × 40 mm (or similar)",
+            "Handrail to stairs 40 mm × 40 mm (or similar)",
+            "Glue block 60 mm × 60 mm (or similar)",
+            "Wedges to threads and risers"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "indicate-design-features-ensure-stairs-safe",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q7(b)",
+    "questionText": "Indicate on your drawing three design features that ensure the stairs is safe for users.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 2",
+      "answer": 3,
+      "ofParts": 8,
+      "perPart": 2
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "Any three indicated on the drawing",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "Any three indicated on the drawing",
+        "group": {
+          "claimMax": 3,
+          "perOption": 2,
+          "options": [
+            "Maximum pitch 420 (Range from 38 – 42 degrees)",
+            "Min. Going 220 mm",
+            "Max. Rise 200 mm",
+            "Sphere Ø 100 mm not to pass between balusters",
+            "Min. handrail height 840 mm",
+            "Max. 16 risers in any one straight/ continuous flight of stairs",
+            "Min. stairs width 800 mm",
+            "Any other relevant features"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q8-a",
+    "topicId": "cons-1-3",
+    "conceptId": "considerations-ensure-proper-treatment-disposal-sewage",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q8(a)",
+    "questionText": "Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in a rural location.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 11,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q8-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss three considerations to ensure the proper treatment and disposal of sewage when selecting a site for a house in ",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Soil type: The soil present on the site will determine how effective the percolation will take place in breaking down and treating the waste",
+            "Topography of the site",
+            "Water table: At what level is the water table present on the site. If there is a high -water table there would be potential for contamination from the system",
+            "Neighbouring buildings, roads, rivers, lakes, water sources",
+            "Number of residences in the house",
+            "Protection: Protect humans from contact with waste - water",
+            "Odours: Minimise the generation of foul odours",
+            "Correct capacity of tank (2725litres minimum)",
+            "Gradient of pipework 1:60",
+            "Soil Vent Pipe open at top to vent gasses",
+            "Long radius bend to base of soil vent pipe"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q8-c",
+    "topicId": "cons-5-5",
+    "conceptId": "alternative-method-other-than-typical-percolation",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q8(c)",
+    "questionText": "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the safe treatment of wastewater from a dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 8",
+      "answer": 2,
+      "ofParts": 2,
+      "perPart": 8
+    },
+    "totalMarks": 16,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q8-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, discuss an alternative method, other than a typical percolation area to ensure the sa",
+        "marks": 16,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 8,
+          "options": [
+            "Notes",
+            "Sketch"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "negative-impacts-thermal-bridging-result-poor",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q9(b)",
+    "questionText": "Discuss two negative impacts of thermal bridging as a result of poor design detailing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two negative impacts of thermal bridging as a result of poor design detailing.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "The negative effects of thermal bridging occur when warm air meets with a colder surface. The warm air is then cooled to its dew point leaving water as moisture on the surface",
+            "Mould can grow on the damp internal surfaces of the dwelling",
+            "Airborne spores from the mould can be inhaled into the respiratory system and be is harmful to human health",
+            "Mould growth in a home is unsightly, it produces odours, causes staining and rapid deterioration of materials and finishes",
+            "Plaster, wood, steel and other building materials can be compromised and fail as a result of thermal bridging over long periods of time",
+            "Heat is lost when thermal bridging occurs which increases the overall energy demand and the use of resources for heating making the building less sustainable"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q10-a",
+    "topicId": "cons-6-3",
+    "conceptId": "design-considerations-necessary-achieve-enerphit-passive",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q10(a)",
+    "questionText": "Using notes and freehand sketches, outline three design considerations necessary to achieve the EnerPHit Passive House design standard.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "6 x 4",
+      "answer": 6,
+      "ofParts": 6,
+      "perPart": 4
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q10-a-r1",
+        "kind": "anyN",
+        "verbatim": "Possible design considerations for deep retrofit",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "Possible design considerations for deep retrofit",
+        "group": {
+          "claimMax": 6,
+          "perOption": 4,
+          "options": [
+            "Thermal efficiency of the external envelope of the building – insulation, windows, doors, porch",
+            "Appropriate ventilation using a heat recovery system",
+            "Airtightness of the building",
+            "Maximise solar gains",
+            "Optimum levels of thermal comfort for occupants",
+            "Renewable energy systems to reduce energy consumption and carbon emissions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q10-b",
+    "topicId": "cons-6-3",
+    "conceptId": "how-you-would-retrofit-given-house",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q10(b)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, how you would retrofit the given house to include each consideration you specified at 10(a) above.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4 + 1 x 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q10-b-r1",
+        "kind": "anyN",
+        "verbatim": "Thermal efficiency of the external envelope of the building",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Thermal efficiency of the external envelope of the building",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Increase the levels of insulation in the walls, roof and floor",
+            "EnerPHit Requirements for roof/top floor Ceiling U ≤ 0.120 W/m2K",
+            "Insulation can be increased in the walls using cavity wall insulation methods, external wall insulation or internally by dry lining - space permitting",
+            "Replace windows with Passive House triple glazed windows",
+            "EnerPHit Requirements for the window as a whole, UW installed ≤ 0.85 W/m2K",
+            "Replace external door with energy efficient doors",
+            "EnerPHit Requirements: UD, installed ≤ 0.80 W/m2K",
+            "The quality of the materials and the workmanship is vital in the above areas so that thermal bridging does not occur"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q10-b-r2",
+        "kind": "anyN",
+        "verbatim": "Appropriate ventilation using a heat recovery system",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Appropriate ventilation using a heat recovery system",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Install a highly efficient heat recovery and ventilation system with an outlet to supply or extract air from all rooms. This will reduce heat loss, moisture content and the energy consumption of the building",
+            "EnerPHit Requirements: Ventilation η HR,eff ≥ 75%,"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q10-b-r3",
+        "kind": "anyN",
+        "verbatim": "Airtightness of the building",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Airtightness of the building",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Seal any holes in the fabric such as pipes penetrating the external walls, joints between wall/ceiling/floor surfaces, openings around electrical services etc",
+            "Adjust the frames of doors and windows so they close tightly",
+            "Install a wood burning stove to reduce heat loss through the open fireplace",
+            "Install a storm porch to the west entrance to prevent direct access and reduce heat loss"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q10-b-r4",
+        "kind": "anyN",
+        "verbatim": "Optimum levels of thermal comfort for occupants",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Optimum levels of thermal comfort for occupants",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "The heating demand requirement should be ≤ 25 kWh/(m2a)",
+            "Upgrade boilers and heating controls with more efficient systems"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q10-b-r5",
+        "kind": "anyN",
+        "verbatim": "Install renewable energy systems such as",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Install renewable energy systems such as",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "solar photovoltaic cells to generate electricity for domestic consumption",
+            "wind turbine to generate electricity",
+            "solar water heating systems such as evacuated tubes to produce hot water for domestic consumption or for space heating"
+          ]
+        }
+      },
+      {
+        "id": "cons-2019-hl-q10-b-r6",
+        "kind": "anyN",
+        "verbatim": "Maximise solar gains",
+        "marks": 4,
+        "openList": true,
+        "contextNote": "Maximise solar gains",
+        "group": {
+          "claimMax": 1,
+          "perOption": 4,
+          "options": [
+            "Install new windows on the south facing wall of the house",
+            "Remove the wall between the dining room and kitchen so both light and heat from the sun can enter further into the house"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q10-c",
+    "topicId": "cons-6-3",
+    "conceptId": "advantages-retrofitting-existing-house-meet-enerphit",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q10(c)",
+    "questionText": "Discuss two advantages of retrofitting an existing house to meet the EnerPHit standard.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 7,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q10-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of retrofitting an existing house to meet the EnerPHit standard.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Reduced heating costs",
+            "Improve energy efficiency of the building",
+            "Reduced carbon emissions",
+            "Increased savings on the overall cost of running the home",
+            "Improved wellbeing and quality of life for the inhabitants",
+            "Reusing existing buildings in the community",
+            "Contributing to your moral responsibility to the natural environment and future generations"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q2-a",
+    "topicId": "cons-1-1",
+    "conceptId": "functional-requirements-roof-domestic-dwelling-house",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q2(a)",
+    "questionText": "Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 6",
+      "answer": 3,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 18,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss in detail, using notes and freehand sketches, three functional requirements of a roof suitable for a domestic dw",
+        "marks": 18,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 6,
+          "options": [
+            "Weather resistant: The roof should be able to protect the building from all external elements (rain, snow, wind and sun)",
+            "Structural stability: The roof structure must be capable of supporting all imposed loads (dead and live) and resist lateral movement of the roof",
+            "Thermal insulation: It should provide a high of thermal comfort for the occupants, keep heat in during the winter and resist excessive heat gain during the summer",
+            "Durability: The roofing members should be long lasting and require little maintenance. Selection of appropriate material for roof members and application of preservatives",
+            "Ventilation: The roof profile must be adequately ventilated in order to prevent condensation build up and possible fungal attack",
+            "Airtightness: The roof structure detailing should contain and maintain the airtightness layer in the building"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q2-c",
+    "topicId": "cons-1-1",
+    "conceptId": "select-different-roofing-material-roof-types",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q2(c)",
+    "questionText": "Select a different roofing material for each of the three roof types you have shown at 2(b). Give one advantage and one disadvantage for each material selected.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 12,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q2-c-r1",
+        "kind": "anyN",
+        "verbatim": "Possible roofing materials for the roof profiles presented",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Possible roofing materials for the roof profiles presented",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Natural Slates",
+            "Thatch",
+            "Fibre cement slates",
+            "Corrugated steel",
+            "Concrete tiles",
+            "Roofing felt",
+            "Clay tiles",
+            "Asphalt",
+            "Zinc sheeting",
+            "Single-Ply Membrane (EPDM Rubber)",
+            "Wood shingle",
+            "Any other appropriate material Appropriate advantage and disadvantage for each material chosen"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2019-hl-q8-b",
+    "topicId": "cons-5-5",
+    "conceptId": "shows-site-layout-map-new-house",
+    "level": "higher",
+    "year": 2019,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2019 HL Q8(b)",
+    "questionText": "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehand sketches, show the design layout necessary for a typical wastewater treatment system and percolation area on this site. Include typical dimensions for the system.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 10",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 10
+    },
+    "totalMarks": 20,
+    "rows": [
+      {
+        "id": "cons-2019-hl-q8-b-r1",
+        "kind": "anyN",
+        "verbatim": "The drawing shows a site layout map. The outline of a new house and driveway is shown on site A. Using notes and freehan",
+        "marks": 20,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 10,
+          "options": [
+            "Diameter of pipes 100 – 110mm",
+            "Minimum distance of percolation to house 10m",
+            "Maximum length of percolation pipe 18m",
+            "Minimum separation distance between percolation trenches 2m",
+            "Minimum distance of systems to site boundary 3m",
+            "Minimum distance of system to a road 4m"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

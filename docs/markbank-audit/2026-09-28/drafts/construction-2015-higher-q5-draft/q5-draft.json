@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "status": "Q5 draft only; source and arithmetic review required before integration.",
+  "tasks": [
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-a",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-1",
+        "conceptId": "wall-heat-loss-a",
+        "questionRef": "2015 HL Q5(a)",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
+        "questionText": "Calculate the U-value of the specified full-fill insulated external wall of the new house, showing the component resistances, total resistance and U-value.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 30,
+        "rows": [
+          {
+            "id": "method",
+            "kind": "criterion",
+            "verbatim": "Tabulation / methodology",
+            "marks": 3,
+            "contextNote": "Use a clear resistance table or equivalent method. Convert layer thicknesses from mm to m; R = thickness/conductivity, add both surface resistances and all five material layers, then U = 1/Rtotal. The rubric heading “Insulated concrete ground floor” is a source error: the paper and the worked solution describe the specified external wall.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "surfaces",
+            "kind": "criterion",
+            "verbatim": "External surface resistance",
+            "marks": 6,
+            "contextNote": "Two separately published checks at 3 marks each. Use the supplied external surface resistance Rse = 0.048 m²·°C/W directly; do not divide it by a thickness or conductivity. Use the supplied internal surface resistance Rsi = 0.122 m²·°C/W directly.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "material-layers",
+            "kind": "criterion",
+            "verbatim": "Polystyrene bead",
+            "marks": 15,
+            "contextNote": "Five separately published material-resistance checks at 3 marks each; retain both concrete-block leaves. Rrender = 0.016/0.720 = 0.02222222 m²·°C/W. Router block = 0.100/1.440 = 0.06944444 m²·°C/W. The outer and inner block leaves each contribute their own resistance. Rbead = 0.250/0.031 = 8.06451613 m²·°C/W. The cavity is fully filled: do not add a separate air-cavity resistance. Rinner block = 0.100/1.440 = 0.06944444 m²·°C/W. Include this second leaf as well as the outer leaf. Rplaster = 0.012/0.220 = 0.05454545 m²·°C/W.",
+            "permittedMarks": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          },
+          {
+            "id": "total-resistance",
+            "kind": "criterion",
+            "verbatim": "Total resistance",
+            "marks": 3,
+            "contextNote": "Rtotal = 0.048 + 0.02222222 + 0.06944444 + 8.06451613 + 0.06944444 + 0.05454545 + 0.122 = 8.45017269 m²·°C/W, subject to sensible intermediate rounding.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "u-value",
+            "kind": "criterion",
+            "verbatim": "U-value",
+            "marks": 3,
+            "contextNote": "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.",
+            "permittedMarks": [
+              0,
+              1,
+              3
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-b-new",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-3",
+        "conceptId": "wall-heat-loss-b-new",
+        "questionRef": "2015 HL Q5(b) — new house",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim. For separate practice of part (b), the reference answer from part (a) is U = 0.11834078 W/(m²·°C).",
+        "questionText": "Calculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss formula and calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 1,753,526.29 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 46.94850 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €44.60107. Using unrounded values gives €44.60 to the nearest cent. The scheme also prints €44.58 using a rounded U = 0.1183 and intermediate truncation; calculating directly with that U gives €44.58570 (normally €44.59). Accept coherent rounding consistent with the working rather than demanding the source’s truncation. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-b-existing",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-3",
+        "conceptId": "wall-heat-loss-b-existing",
+        "questionRef": "2015 HL Q5(b) — existing house",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
+        "questionText": "Calculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.21 × 150 × 14 ≈ 441 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 3,111,696 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 83.31181 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €79.14622. Using unrounded values gives €79.15 to the nearest cent. The scheme uses 83.31 litres, giving €79.1445 and its printed €79.14; it also shows a proportional-method result of €79.13 using previously rounded figures. Keep these published variants distinguishable from the direct unrounded result and accept coherent rounding. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        }
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-b",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-3",
+        "conceptId": "wall-heat-loss-b",
+        "questionRef": "2015 HL Q5(b) — both houses",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim. For separate practice of part (b), the reference answer from part (a) is U = 0.11834078 W/(m²·°C).",
+        "questionText": "Calculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem.\n\nCalculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 20,
+        "rows": [
+          {
+            "id": "b-new-heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss formula and calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 1,753,526.29 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 46.94850 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €44.60107. Using unrounded values gives €44.60 to the nearest cent. The scheme also prints €44.58 using a rounded U = 0.1183 and intermediate truncation; calculating directly with that U gives €44.58570 (normally €44.59). Accept coherent rounding consistent with the working rather than demanding the source’s truncation. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.21 × 150 × 14 ≈ 441 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 3,111,696 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 83.31181 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €79.14622. Using unrounded values gives €79.15 to the nearest cent. The scheme uses 83.31 litres, giving €79.1445 and its printed €79.14; it also shows a proportional-method result of €79.13 using previously rounded figures. Keep these published variants distinguishable from the direct unrounded result and accept coherent rounding. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        },
+        "taskGroups": [
+          {
+            "label": "b-new",
+            "sourceCardId": "cons-2015-hl-q5-b-new",
+            "marks": 10,
+            "rowIds": [
+              "b-new-heat-rate",
+              "b-new-heating-time",
+              "b-new-annual-energy",
+              "b-new-oil",
+              "b-new-annual-cost"
+            ]
+          },
+          {
+            "label": "b-existing",
+            "sourceCardId": "cons-2015-hl-q5-b-existing",
+            "marks": 10,
+            "rowIds": [
+              "b-existing-heat-rate",
+              "b-existing-heating-time",
+              "b-existing-annual-energy",
+              "b-existing-oil",
+              "b-existing-annual-cost"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": []
+    },
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-c",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-3-4",
+        "conceptId": "wall-heat-loss-c",
+        "questionRef": "2015 HL Q5(c)",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
+        "questionText": "Using notes and freehand sketches, show best-practice design detailing to prevent water ingress at the window head in the specified full-fill insulated external wall of the new house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 10,
+        "rows": [
+          {
+            "id": "annotations",
+            "kind": "criterion",
+            "verbatim": "Notes / annotations",
+            "marks": 5,
+            "contextNote": "Annotate a coherent water-excluding head detail for the specified wall. The original model shows the DPC/cavity-tray arrangement above the lintel/head, outer and inner wall leaves, full-fill insulation, lintel support, window-frame junction and a weathered/dripped outer head. Explain how penetrating water is intercepted and directed outward rather than onto the frame or inner leaf. Other relevant detailing is accepted; do not treat both sample drawings as two compulsory answers or split these 5 marks into an invented list of individual one-mark items.",
+            "permittedMarks": [
+              0,
+              5
+            ]
+          },
+          {
+            "id": "sketches",
+            "kind": "criterion",
+            "verbatim": "Sketches",
+            "marks": 5,
+            "contextNote": "Draw the window-head construction so the water-excluding route and its relationship to lintel, wall cavity, insulation and frame are clear. The two source sketches illustrate acceptable head details, not a fixed choose-one question. Preserve the printed wall construction and show the proposed detail rather than a generic unrelated window drawing.",
+            "permittedMarks": [
+              0,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q5-window-head"
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q5-window-head"
+      ]
+    },
+    {
+      "questionNumber": "5",
+      "card": {
+        "id": "cons-2015-hl-q5-complete",
+        "subjectId": "construction-studies",
+        "year": 2015,
+        "level": "higher",
+        "section": "B",
+        "topicId": "cons-6-1",
+        "conceptId": "wall-heat-loss-complete",
+        "questionRef": "2015 HL Q5 — complete",
+        "stem": "The new house has a concrete-block external wall: 16 mm external render, 100 mm outer concrete-block leaf, a 250 mm cavity FULLY filled with polystyrene bead insulation, 100 mm inner concrete-block leaf and 12 mm internal plaster. Rse = 0.048 and Rsi = 0.122 m²·°C/W. Conductivities in W/(m·°C): render 0.720; both concrete-block leaves 1.440; polystyrene bead 0.031; plaster 0.220. For EACH house, external wall area is 150 m², average inside temperature 20 °C and outside 6 °C. Heating runs 8 hours/day, every day, for 35 weeks/year. Oil costs €0.95/litre and provides 37,350 kJ/litre; 1,000 W = 1 kJ/s. Part (a) calculates the new wall U-value; part (b) calculates annual wall heat-loss cost for BOTH the new house using (a) and an existing house with U = 0.21 W/(m²·°C). Part (c) details water exclusion at the new house’s window head. The existing-house compliance statement belongs to the 2015 paper, not a current regulatory claim.",
+        "questionText": "Calculate the U-value of the specified full-fill insulated external wall of the new house, showing the component resistances, total resistance and U-value.\n\nCalculate the annual cost of heat lost through the external walls of the new house, using the U-value obtained in (a). Use the full thermal and heating data in the stem.\n\nCalculate the annual cost of heat lost through the external walls of the existing house, using U = 0.21 W/(m²·°C). Use the full thermal and heating data in the stem.\n\nUsing notes and freehand sketches, show best-practice design detailing to prevent water ingress at the window head in the specified full-fill insulated external wall of the new house.",
+        "tariffModel": {
+          "kind": "fixed"
+        },
+        "totalMarks": 60,
+        "rows": [
+          {
+            "id": "a-method",
+            "kind": "criterion",
+            "verbatim": "Tabulation / methodology",
+            "marks": 3,
+            "contextNote": "Use a clear resistance table or equivalent method. Convert layer thicknesses from mm to m; R = thickness/conductivity, add both surface resistances and all five material layers, then U = 1/Rtotal. The rubric heading “Insulated concrete ground floor” is a source error: the paper and the worked solution describe the specified external wall.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "a-surfaces",
+            "kind": "criterion",
+            "verbatim": "External surface resistance",
+            "marks": 6,
+            "contextNote": "Two separately published checks at 3 marks each. Use the supplied external surface resistance Rse = 0.048 m²·°C/W directly; do not divide it by a thickness or conductivity. Use the supplied internal surface resistance Rsi = 0.122 m²·°C/W directly.",
+            "permittedMarks": [
+              0,
+              3,
+              6
+            ]
+          },
+          {
+            "id": "a-material-layers",
+            "kind": "criterion",
+            "verbatim": "Polystyrene bead",
+            "marks": 15,
+            "contextNote": "Five separately published material-resistance checks at 3 marks each; retain both concrete-block leaves. Rrender = 0.016/0.720 = 0.02222222 m²·°C/W. Router block = 0.100/1.440 = 0.06944444 m²·°C/W. The outer and inner block leaves each contribute their own resistance. Rbead = 0.250/0.031 = 8.06451613 m²·°C/W. The cavity is fully filled: do not add a separate air-cavity resistance. Rinner block = 0.100/1.440 = 0.06944444 m²·°C/W. Include this second leaf as well as the outer leaf. Rplaster = 0.012/0.220 = 0.05454545 m²·°C/W.",
+            "permittedMarks": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15
+            ]
+          },
+          {
+            "id": "a-total-resistance",
+            "kind": "criterion",
+            "verbatim": "Total resistance",
+            "marks": 3,
+            "contextNote": "Rtotal = 0.048 + 0.02222222 + 0.06944444 + 8.06451613 + 0.06944444 + 0.05454545 + 0.122 = 8.45017269 m²·°C/W, subject to sensible intermediate rounding.",
+            "permittedMarks": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "a-u-value",
+            "kind": "criterion",
+            "verbatim": "U-value",
+            "marks": 3,
+            "contextNote": "U = 1/Rtotal = 1/8.45017269 = 0.11834078 W/(m²·°C), approximately 0.1183 W/(m²·°C). The rubric awards 1 mark for the formula alone within this 3-mark criterion, not an additional mark. The remaining criteria stay at their own published 3-mark allocations.",
+            "permittedMarks": [
+              0,
+              1,
+              3
+            ]
+          },
+          {
+            "id": "b-new-heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss formula and calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.11834078 × 150 × 14 ≈ 248.51563 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 1,753,526.29 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 46.94850 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-new-annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €44.60107. Using unrounded values gives €44.60 to the nearest cent. The scheme also prints €44.58 using a rounded U = 0.1183 and intermediate truncation; calculating directly with that U gives €44.58570 (normally €44.59). Accept coherent rounding consistent with the working rather than demanding the source’s truncation. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-heat-rate",
+            "kind": "criterion",
+            "verbatim": "Heat loss calculation",
+            "marks": 2,
+            "contextNote": "Use heat-loss rate = U × A × ΔT, with ΔT = 20 − 6 = 14 °C. For this house, 0.21 × 150 × 14 ≈ 441 W (J/s). Use the U-value appropriate to this house; rate alone is not annual energy or cost.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-heating-time",
+            "kind": "criterion",
+            "verbatim": "Heating duration for one year",
+            "marks": 2,
+            "contextNote": "8 × 7 × 35 = 1,960 hours = 7,056,000 seconds. The worked scheme prints “3,157 hours” beside the correct seconds; that parenthetical hours figure is an error. Follow the paper’s schedule and the correct seconds, not 3,157 hours.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-annual-energy",
+            "kind": "criterion",
+            "verbatim": "kJ calculation for one year",
+            "marks": 2,
+            "contextNote": "Annual wall heat loss = heat-loss rate × 7,056,000 / 1,000 ≈ 3,111,696 kJ. The factor 1,000 converts J to kJ; keep watts, seconds and the oil calorific value in consistent units.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-oil",
+            "kind": "criterion",
+            "verbatim": "Litres of oil for one year",
+            "marks": 2,
+            "contextNote": "Litres = annual energy / 37,350 ≈ 83.31181 litres. This uses the calorific value given in the paper; do not invent an unstated boiler-efficiency factor.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "b-existing-annual-cost",
+            "kind": "criterion",
+            "verbatim": "Annual cost of heat loss",
+            "marks": 2,
+            "contextNote": "Cost = litres × €0.95 ≈ €79.14622. Using unrounded values gives €79.15 to the nearest cent. The scheme uses 83.31 litres, giving €79.1445 and its printed €79.14; it also shows a proportional-method result of €79.13 using previously rounded figures. Keep these published variants distinguishable from the direct unrounded result and accept coherent rounding. Alternative direct or proportional methods may earn the equivalent published criteria; do not award the same calculation twice.",
+            "permittedMarks": [
+              0,
+              2
+            ]
+          },
+          {
+            "id": "c-annotations",
+            "kind": "criterion",
+            "verbatim": "Notes / annotations",
+            "marks": 5,
+            "contextNote": "Annotate a coherent water-excluding head detail for the specified wall. The original model shows the DPC/cavity-tray arrangement above the lintel/head, outer and inner wall leaves, full-fill insulation, lintel support, window-frame junction and a weathered/dripped outer head. Explain how penetrating water is intercepted and directed outward rather than onto the frame or inner leaf. Other relevant detailing is accepted; do not treat both sample drawings as two compulsory answers or split these 5 marks into an invented list of individual one-mark items.",
+            "permittedMarks": [
+              0,
+              5
+            ]
+          },
+          {
+            "id": "c-sketches",
+            "kind": "criterion",
+            "verbatim": "Sketches",
+            "marks": 5,
+            "contextNote": "Draw the window-head construction so the water-excluding route and its relationship to lintel, wall cavity, insulation and frame are clear. The two source sketches illustrate acceptable head details, not a fixed choose-one question. Preserve the printed wall construction and show the proposed detail rather than a generic unrelated window drawing.",
+            "permittedMarks": [
+              0,
+              5
+            ]
+          }
+        ],
+        "questionFigureKey": "construction-studies-2015-HL-q5-original",
+        "questionFigureIncludesPrompt": true,
+        "sourceMaterial": {
+          "kind": "source-illustration",
+          "label": "ORIGINAL QUESTION 5",
+          "title": "Wall U-value, annual heat loss and window-head detail",
+          "pages": [
+            1,
+            3
+          ],
+          "attribution": "SEC Leaving Certificate Construction Studies 2015 Higher Level — © State Examinations Commission.",
+          "presentationNote": "All dimensions, thermal data, heating schedule and both required house calculations are retained. Arithmetic uses the printed data; the scheme’s incorrect hours annotation and its rounded cost variants are explained in the marking notes."
+        },
+        "figureKey": "construction-studies-2015-HL-q5-window-head",
+        "taskGroups": [
+          {
+            "label": "a",
+            "sourceCardId": "cons-2015-hl-q5-a",
+            "marks": 30,
+            "rowIds": [
+              "a-method",
+              "a-surfaces",
+              "a-material-layers",
+              "a-total-resistance",
+              "a-u-value"
+            ]
+          },
+          {
+            "label": "b-new",
+            "sourceCardId": "cons-2015-hl-q5-b-new",
+            "marks": 10,
+            "rowIds": [
+              "b-new-heat-rate",
+              "b-new-heating-time",
+              "b-new-annual-energy",
+              "b-new-oil",
+              "b-new-annual-cost"
+            ]
+          },
+          {
+            "label": "b-existing",
+            "sourceCardId": "cons-2015-hl-q5-b-existing",
+            "marks": 10,
+            "rowIds": [
+              "b-existing-heat-rate",
+              "b-existing-heating-time",
+              "b-existing-annual-energy",
+              "b-existing-oil",
+              "b-existing-annual-cost"
+            ]
+          },
+          {
+            "label": "c",
+            "sourceCardId": "cons-2015-hl-q5-c",
+            "marks": 10,
+            "rowIds": [
+              "c-annotations",
+              "c-sketches"
+            ]
+          }
+        ]
+      },
+      "sourceChecks": [
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 1,
+          "textSha256": "a2ee28dde0bf07d70437f332bf647a1a95fe76320b73a2c38dd909c37de9c5a9"
+        },
+        {
+          "file": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+          "page": 3,
+          "textSha256": "a9a19d86286d787961792a6cc090048e15b4f9827ecde57d3921d926764726db"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 2,
+          "textSha256": "bc581200c6f9b682c1ad0018c0e2646d32ce767569c3928b2f6db07907f65081"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 15,
+          "textSha256": "d0b565e02b8815321532c3242abc9d691819cc362cdab6a9036af16ecaa79de7"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 16,
+          "textSha256": "7317edc51959850290726d49fcf28ead9f12b49e0ec4a9b15073f8e32d7b7c41"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 17,
+          "textSha256": "dc5f2b29bb54efadba56b813918032c3e77638544395226585ce95c1973d55fb"
+        },
+        {
+          "file": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+          "page": 36,
+          "textSha256": "2df61ee76fdc1bf13e997622983e88f00ad69e2887e4a9ac3b496a67618b394b"
+        }
+      ],
+      "boundaryReview": "Q5(a)30: ten 3-mark criteria, with formula-only 1 within the U-value criterion. Q5(b)20: five 2-mark criteria for EACH house, both required. Q5(c)10: notes/annotations 5 plus sketches 5. Complete question 60.",
+      "selectionReview": "No finite printed choice. BOTH new and existing houses must be calculated. Separate practice cards retain each published 10-mark subtotal, and a combined part(b)retains both. The alternative calculation method and two window-head example drawings in the scheme are acceptable methods, not separately selectable printed question routes.",
+      "requiredQuestionFigures": [
+        "construction-studies-2015-HL-q5-original"
+      ],
+      "requiredSolutionFigures": [
+        "construction-studies-2015-HL-q5-window-head"
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "cardId": "cons-2015-hl-q5-a",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b-new",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b-existing",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-b",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-c",
+      "markBankTopicId": "cons-3-4",
+      "canonicalTopicIds": [
+        "cons-3-4",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2015-hl-q5-complete",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1",
+        "cons-6-3",
+        "cons-3-4",
+        "cons-3-6"
+      ],
+      "canonicalTopicReview": "Outgoing 2015 specification: U-value resistance/transmittance is cons-6-1; annual heat-loss and running costs cons-6-3. Window-head water exclusion retains cons-3-4 DPC/lintels and cons-3-6 window-head details. Compound cards retain their full constituent topic union. The rubric heading naming a ground floor is a source typo; this printed question and all numerical layers describe an external wall.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    }
+  ],
+  "questionFigures": [
+    {
+      "key": "construction-studies-2015-HL-q5-original",
+      "source": "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf",
+      "page": 3,
+      "rect": [
+        58,
+        319,
+        568,
+        793
+      ],
+      "renderScale": 2,
+      "solution": false,
+      "sha256": "1b8737d2c0f3cc619340f30b395565f286246703775c76ebe9e8ce3c0027558a",
+      "visuallyInspected": true
+    },
+    {
+      "key": "construction-studies-2015-HL-q5-window-head",
+      "source": "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf",
+      "page": 17,
+      "rect": [
+        54,
+        33,
+        573,
+        315
+      ],
+      "renderScale": 2,
+      "solution": true,
+      "sha256": "e6af375631e51320cee438f74cc9de99c4bf662a8eeb00ecd1fec646a69ff5e3",
+      "visuallyInspected": true
+    }
+  ],
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "selectionLedger": {
+    "pattern": "\\b(?:choose|select|one\\s+of|any\\s+\\w+|either|or|answer\\s+\\w+)\\b",
+    "rows": [
+      {
+        "page": 1,
+        "start": 209,
+        "match": "Answer Question",
+        "context": "er Level (300 marks) Friday, 12 June Afternoon, 2:00 to 5:00 (a) Answer Question 1 and four other questions. (b) All questions carry equal marks. (c) Answers must be written in ink",
+        "classification": "Whole-paper selection: Q1 compulsory plus four others; coverage does not require five-question exam-session combinations."
+      },
+      {
+        "page": 2,
+        "start": 1263,
+        "match": "any two",
+        "context": " used and include typical dimensions. (c) Evaluate the design of any two of the wall types at 2(b) above. Recommend a preferred external wall type for a new house and justi",
+        "classification": "Open dependent selection among three wall types previously chosen by the student; no closed named pool."
+      },
+      {
+        "page": 2,
+        "start": 1926,
+        "match": "or",
+        "context": "lding a single-storey extension onto the rear of the house at A. or (ii) building a detached, free-standing space in the garden at B. (a) Discuss in detail two advanta",
+        "classification": "Two design options, A/B. Part(a)requires BOTH; part(b)chooses ONE, two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2103,
+        "match": "Select",
+        "context": "o disadvantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design an",
+        "classification": "Q3(b)choose one of A/B: two finite routes."
+      },
+      {
+        "page": 2,
+        "start": 2110,
+        "match": "one of",
+        "context": "vantages of each option listed at (i) and (ii) above. (b) Select one of the above options and, using notes and freehand sketches, show a proposed external design and inter",
+        "classification": "Q3(b)same directive, two finite routes."
+      },
+      {
+        "page": 3,
+        "start": 45,
+        "match": "any two",
+        "context": "Page 3 of 5 4. (a) Discuss the importance of any two of the following in the eco-refurbishment of an old house built in the vernacular tradition: • resp",
+        "classification": "Q4(a)choose2of3 principles:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 281,
+        "match": "One of",
+        "context": "als. (b) A row of single-storey cottages is shown in the sketch. One of the cottages is in need of significant refurbishment. A survey of the cottage reveals: • un-insulat",
+        "classification": "Narrative identifies one cottage, not an answer selection."
+      },
+      {
+        "page": 3,
+        "start": 522,
+        "match": "Select",
+        "context": "-glazed with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps invol",
+        "classification": "Q4(b)choose2of3 upgrades:3pairs."
+      },
+      {
+        "page": 3,
+        "start": 529,
+        "match": "any two",
+        "context": " with sliding sash • un-insulated suspended timber floor. Select any two of the areas at 4(b) above and, using notes and freehand sketches, describe the steps involved in u",
+        "classification": "Q4(b)same directive:3pairs; independent of(a),9whole routes."
+      },
+      {
+        "page": 4,
+        "start": 516,
+        "match": "any two",
+        "context": "(b) Using notes and freehand sketches, discuss the importance of any two of the following in designing a house to have low environmental impact: • compact form • flexible d",
+        "classification": "Q6(b)choose2of3 design principles:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 423,
+        "match": "Select",
+        "context": "s and the ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show ",
+        "classification": "Q9(a)choose3of4 circled junctions:4triples."
+      },
+      {
+        "page": 5,
+        "start": 430,
+        "match": "any three",
+        "context": "he ground floor is an insulated solid concrete floor. (a) Select any three locations from those circled on the drawing and, using notes and freehand sketches, show best pract",
+        "classification": "Q9(a)same directive:4triples."
+      },
+      {
+        "page": 5,
+        "start": 807,
+        "match": "any two",
+        "context": "notes and freehand sketches, discuss in detail the importance of any two of the following in the design of a Passive House: • airtight building envelope • space heating dem",
+        "classification": "Q10primary(a)choose2of3:3pairs."
+      },
+      {
+        "page": 5,
+        "start": 1177,
+        "match": "OR",
+        "context": "of carefully designed solar shading for the Passive House shown. OR 10. Light is what architecture is all about. It is as fundamental for the soul as air, fire, earth ",
+        "classification": "Q10 alternative branch: primary3routes OR alternative1route."
+      },
+      {
+        "page": 5,
+        "start": 1305,
+        "match": "one of",
+        "context": "ental for the soul as air, fire, earth and water. Light has been one of the key elements of architecture since the Modern movement began (and glass technology improved) at",
+        "classification": "Quotation narrative, not an answer directive."
+      }
+    ],
+    "unclassified": 0,
+    "sourceHashes": {
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+      "/Users/alexlinehan/Documents/Nextstepuni-Launch-/paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+    }
+  },
+  "corrections": [],
+  "addedIds": [
+    "cons-2015-hl-q5-a",
+    "cons-2015-hl-q5-b-new",
+    "cons-2015-hl-q5-b-existing",
+    "cons-2015-hl-q5-b",
+    "cons-2015-hl-q5-c",
+    "cons-2015-hl-q5-complete"
+  ],
+  "arithmeticReview": {
+    "resistances": [
+      "0.048",
+      "0.02222222222222222222222222222",
+      "0.06944444444444444444444444444",
+      "8.064516129032258064516129032",
+      "0.06944444444444444444444444444",
+      "0.05454545454545454545454545455",
+      "0.122"
+    ],
+    "totalResistance": "8.450172694688823721081785598",
+    "uValue": "0.1183407767072652522328193794",
+    "heatingHours": 1960,
+    "heatingSeconds": 7056000,
+    "houses": {
+      "new": {
+        "u": "0.1183407767072652522328193794",
+        "watts": "248.5156310852570296889206967",
+        "kJ": "1753526.292937573601485024436",
+        "litres": "46.94849512550397862075031957",
+        "cost": "44.60107036922877968971280359"
+      },
+      "existing": {
+        "u": "0.21",
+        "watts": "441.00",
+        "kJ": "3111696.00",
+        "litres": "83.31180722891566265060240964",
+        "cost": "79.14621686746987951807228916"
+      }
+    }
+  },
+  "routeLedger": {
+    "requiredHouseCalculations": [
+      "new",
+      "existing"
+    ],
+    "wholeRoutes": [
+      {
+        "id": "cons-2015-hl-q5-complete",
+        "parts": [
+          "a",
+          "b-new",
+          "b-existing",
+          "c"
+        ],
+        "marks": 60
+      }
+    ],
+    "nonChoices": [
+      "alternative calculation methods",
+      "illustrative window-head designs"
+    ]
+  },
+  "sourceErrata": [
+    "Rubric(a)labels a ground floor; original question, layer data and worked solution are an external wall.",
+    "3,157-hour annotations on scheme PDF15–16 conflict with 8×7×35 =1,960hours;7,056,000seconds is correct.",
+    "Published costs reflect intermediate rounding/truncation; retain exact recalculation and source variants separately."
+  ]
+}

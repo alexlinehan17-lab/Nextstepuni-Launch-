@@ -1,23 +1,34 @@
 #!/usr/bin/env python3
-"""Build the complete 2021–2025 Art Mark Bank corpus.
+"""Build the complete Art Mark Bank corpus, 2010–2026.
 
 The question papers supply the exact prompts.  The marking schemes supply the
-published component allocations (2021–2022) and descriptor bands (2023–2025).
+published component allocations (to 2022) and descriptor bands (2023–2026).
 The separate SEC illustration sheets remain page images from Paper Trail; the
 script records only their official file identity and page number.
 
 One outer question number is not one Mark Bank card.  A card is one separately
 marked printed task that a student can practise on its own.  Lettered parts and
-the two tasks separated by the legacy paper's standalone "and" are split.  A
-fixed list of named works, artists, buildings or movements is expanded so each
-printed choice becomes a real revision card.  A finite "choose N" list is
-expanded into every valid combination.  The four-criterion Section B/C essay
-remains intact because the SEC applies that rubric holistically.
+the two tasks separated by the legacy paper's standalone "and" are split.  When
+the student chooses among printed items (one named artist, work, building or
+movement; any two of five headings), the task is ONE card: its question is the
+printed question with every option, and the scheme marks every option the same
+way.  The exception is a choose-one list whose options sit under different
+Topic Atlas headings (OPTION_TOPICS): it keeps one card per option, each with
+the printed question verbatim and the option named in its reference, so each
+files under its own heading.  A choose-N (N >= 2) list is always one card.  The
+four-criterion Section B/C essay remains intact because the SEC applies that
+rubric holistically.
 
-The complete corpus is therefore 462 cards across ten papers:
+The complete corpus is therefore 1756 cards across thirty-four papers:
 
-  * Higher Level:   72 + 68 + 26 + 26 + 30 = 222 cards
-  * Ordinary Level: 78 + 75 + 26 + 26 + 35 = 240 cards
+  * Higher Level:   902 cards (see EXPECTED_CARDS_BY_YEAR_LEVEL)
+  * Ordinary Level: 854 cards
+
+An audited year (AUDITED_YEARS) shows only the SEC's printed wording under the
+SEC's name: the descriptor bullets, criterion labels, scheme rows and marking
+notes are lifted from the scheme page by art_printed.py, the task check is the
+paper's own lines, and NextStepUni's guidance is kept apart as practice notes.
+tests/test_art_sec_wording.py re-finds every such string on its page.
 
 Run:
 
@@ -31,7 +42,6 @@ are deliberately gitignored.
 from __future__ import annotations
 
 import argparse
-import itertools
 import json
 import os
 import re
@@ -42,6 +52,8 @@ from typing import Any, Iterable
 
 import fitz
 
+import art_printed
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -50,12 +62,70 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'art', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'art', 'authored.json')
 CENSUS_OUT = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
 
-YEARS = tuple(range(2021, 2026))
+YEARS = tuple(range(2010, 2027))
+
+# A label printed inside an answer box ("Name of artwork:", "Heading 1:")
+# marks where an answer goes for an ask the question already makes, so it is
+# not part of the task and is dropped. Only these exact labels are dropped,
+# each pinned to its question: the build fails if one is not printed there as
+# a whole line, and tests/test_art_sec_wording.py pins the same list and
+# checks each sits inside a drawn answer box, so no question wording can be
+# dropped by this rule.
+ANSWER_BOX_LABELS: dict[tuple[int, str, int], tuple[str, ...]] = {
+    # 2023: each labels the answer area for a heading, artwork or hat the
+    # printed part already names ("using the following headings: ...").
+    (2023, 'higher', 2): ('Imagery:', 'Mood:'),
+    (2023, 'higher', 3): ('Artwork:', 'Artist:'),
+    (2023, 'higher', 6): ('Style:', 'Composition and use of surface:'),
+    (2023, 'ordinary', 1): ('Colour, composition:',),
+    (2023, 'ordinary', 3): ('Imagery:', 'Composition:', 'Colour:'),
+    (2023, 'ordinary', 5): ('Lettering:', 'Imagery:', 'Colour:'),
+    (2023, 'ordinary', 6): ('Hat A – form, materials:', 'Hat B – form, materials:', 'Hat A – function:', 'Hat B – function:'),
+    (2023, 'ordinary', 7): ('Scale:', 'Treatment of the human figure:', 'Use of materials:'),
+    # "Identify a contemporary living sculptor that you have studied ..."
+    (2024, 'higher', 3): ('Name of sculptor:',),
+    # "(b) Name an organisation ... Explain how this organisation could ..."
+    (2024, 'ordinary', 2): ('Name of organisation:', 'Explain:'),
+    # "(a) Describe the costume of one character from a film, TV show or ..."
+    (2024, 'ordinary', 6): ('Name of film, TV show or theatrical performance:', 'Name of character:',
+                            'Description of costume:'),
+    # "Name one artwork that you have seen in a gallery, arts centre or museum."
+    (2025, 'ordinary', 3): ('Name of gallery, arts centre or museum:', 'Name of artwork:'),
+    # "(a) Describe this embroidery using any two of the following headings: ..."
+    (2025, 'ordinary', 4): ('Heading 1:', 'Heading 2:'),
+}
+
+# Years whose SEC-attributed strings are all lifted from the printed page and
+# gated by tests/test_art_sec_wording.py: every year. The factory has no
+# written fallback, so a new year must join this tuple to build at all.
+AUDITED_YEARS = (2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026)
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
 
 EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
+    (2010, 'higher'): 20,
+    (2010, 'ordinary'): 21,
+    (2011, 'higher'): 20,
+    (2011, 'ordinary'): 21,
+    (2012, 'higher'): 20,
+    (2012, 'ordinary'): 21,
+    (2013, 'higher'): 20,
+    (2013, 'ordinary'): 21,
+    (2014, 'higher'): 20,
+    (2014, 'ordinary'): 21,
+    (2015, 'higher'): 20,
+    (2015, 'ordinary'): 21,
+    (2016, 'higher'): 20,
+    (2016, 'ordinary'): 21,
+    (2017, 'higher'): 20,
+    (2017, 'ordinary'): 21,
+    (2018, 'higher'): 20,
+    (2018, 'ordinary'): 21,
+    (2019, 'higher'): 20,
+    (2019, 'ordinary'): 21,
+    (2020, 'higher'): 20,
+    (2020, 'ordinary'): 21,
     (2021, 'higher'): 20,
     (2021, 'ordinary'): 21,
     (2022, 'higher'): 20,
@@ -66,26 +136,545 @@ EXPECTED_QUESTIONS_BY_YEAR_LEVEL = {
     (2024, 'ordinary'): 19,
     (2025, 'higher'): 19,
     (2025, 'ordinary'): 19,
+    (2026, 'higher'): 19,
+    (2026, 'ordinary'): 19,
 }
 
 EXPECTED_CARDS_BY_YEAR_LEVEL = {
-    (2021, 'higher'): 72,
-    (2021, 'ordinary'): 78,
-    (2022, 'higher'): 68,
-    (2022, 'ordinary'): 75,
+    (2010, 'higher'): 58,
+    (2010, 'ordinary'): 57,
+    (2011, 'higher'): 59,
+    (2011, 'ordinary'): 57,
+    (2012, 'higher'): 55,
+    (2012, 'ordinary'): 55,
+    (2013, 'higher'): 64,
+    (2013, 'ordinary'): 68,
+    (2014, 'higher'): 65,
+    (2014, 'ordinary'): 57,
+    (2015, 'higher'): 63,
+    (2015, 'ordinary'): 57,
+    (2016, 'higher'): 62,
+    (2016, 'ordinary'): 57,
+    (2017, 'higher'): 62,
+    (2017, 'ordinary'): 57,
+    (2018, 'higher'): 62,
+    (2018, 'ordinary'): 57,
+    (2019, 'higher'): 62,
+    (2019, 'ordinary'): 57,
+    (2020, 'higher'): 62,
+    (2020, 'ordinary'): 57,
+    (2021, 'higher'): 62,
+    (2021, 'ordinary'): 57,
+    (2022, 'higher'): 62,
+    (2022, 'ordinary'): 57,
     (2023, 'higher'): 26,
     (2023, 'ordinary'): 26,
     (2024, 'higher'): 26,
     (2024, 'ordinary'): 26,
-    (2025, 'higher'): 30,
-    (2025, 'ordinary'): 35,
+    (2025, 'higher'): 26,
+    (2025, 'ordinary'): 26,
+    (2026, 'higher'): 26,
+    (2026, 'ordinary'): 26,
 }
 
-# A fixed choice printed by the SEC materially changes the knowledge a student
-# must retrieve, so it gets its own practice card. Open choices such as "one
-# named work" cannot be exhaustively enumerated and remain one card. Labels are
-# kept exactly as printed; the short key exists only to make a stable card id.
+# A fixed choice printed by the SEC (one of these artists, works, buildings or
+# movements). The student chooses which option to answer and the scheme marks
+# every option the same way, so the task is ONE card showing the printed
+# question with every option. The reviewed pool stays: the build checks each
+# label is printed in the question, and the first option's key keeps the
+# card's stable id (the withdrawn per-option ids are aliased in cardAliases.ts).
 PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
+    # Five Georgian architects, one heading: one card per part.
+    (2010, 'higher', 5): (
+        ('richard-cassels', 'Richard Cassels (c.1690-1751)'),
+        ('edward-lovett-pearce', 'Edward Lovett Pearce (1699-1733)'),
+        ('francis-johnston', 'Francis Johnston (1760-1829)'),
+        ('william-chambers', 'William Chambers (c.1723-1796)'),
+        ('thomas-ivory', 'Thomas Ivory (c.1732-1786)'),
+    ),
+    (2010, 'higher', 13): (
+        ('landscape', 'A landscape'),
+        ('animals', 'A painting that includes animals'),
+        ('bernini', 'A work by Bernini'),
+        ('portrait-of-royalty', 'A two-dimensional or three-dimensional portrait of royalty'),
+        ('anthony-gormley', 'A sculpture by Anthony Gormley'),
+        ('francis-bacon', 'A painting by Francis Bacon'),
+    ),
+    (2010, 'higher', 15): (
+        ('mannerism', 'Mannerism'),
+        ('pre-raphaelite-brotherhood', 'the Pre-Raphaelite Brotherhood'),
+        ('cubism', 'Cubism'),
+        ('de-stijl', 'De Stijl'),
+    ),
+    (2010, 'ordinary', 7): (
+        ('walter-osborne', 'Walter Osborne'),
+        ('evie-hone', 'Evie Hone'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('brian-bourke', 'Brian Bourke'),
+        ('charles-harper', 'Charles Harper'),
+        ('jim-fitzpatrick', 'Jim Fitzpatrick'),
+    ),
+    # The five works print one per line with no bullet marker; the space
+    # inside the opening quote of Vermeer's title is the paper's.
+    (2010, 'ordinary', 11): (
+        ('the-kiss-of-judas', '“The Kiss of Judas” by Giotto (c.1266 -1337)'),
+        ('the-birth-of-venus', '“The Birth of Venus” by Botticelli (1444 - 1510)'),
+        ('lady-writing-a-letter', '“ Lady Writing a Letter” by Vermeer (1632 - 1675)'),
+        ('starry-night', '“Starry Night” by Van Gogh (1853 - 1890)'),
+        ('guernica', '“Guernica” by Picasso (1881 - 1973)'),
+    ),
+    (2011, 'higher', 14): (
+        ('dancers', 'a painting that depicts dancers'),
+        ('musical-instrument', 'a painting that includes a musical instrument'),
+        ('ghiberti', 'a work by Ghiberti (1378-1455)'),
+        ('peter-paul-rubens', 'a work by Peter Paul Rubens (1577-1640)'),
+        ('le-corbusier', 'a building by Le Corbusier (1887-1965)'),
+    ),
+    (2011, 'higher', 15): (
+        ('international-gothic', 'The International Gothic style'),
+        ('neoclassicism', 'Neoclassicism'),
+        ('pointillism', 'Pointillism'),
+        ('the-bauhaus', 'The Bauhaus'),
+    ),
+    (2011, 'ordinary', 7): (
+        ('harry-clarke', 'Harry Clarke'),
+        ('jack-b-yeats', 'Jack B. Yeats'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('robert-ballagh', 'Robert Ballagh'),
+        ('pauline-bewick', 'Pauline Bewick'),
+    ),
+    (2011, 'ordinary', 11): (
+        ('mary-magdalene', 'Mary Magdalene by Donatello (1386-1466)'),
+        ('the-tribute-money', 'The Tribute Money by Masaccio (1401-1428)'),
+        ('the-ambassadors', 'The Ambassadors by Hans Holbein (1497/8-1543)'),
+        ('impression-sunrise', 'Impression of Morning Sunrise by Claude Monet (1840-1926)'),
+        ('the-persistence-of-memory', 'The Persistence of Memory by Salvador Dali (1904-1989)'),
+    ),
+    # Three Georgian country houses, one heading: one card per part.
+    # "Wesport House" is the paper's spelling.
+    (2012, 'higher', 4): (
+        ('russborough-house', 'Russborough House, Co. Wicklow'),
+        ('castletown-house', 'Castletown House, Co. Kildare'),
+        ('wesport-house', 'Wesport House, Co. Mayo'),
+    ),
+    (2012, 'higher', 6): (
+        ('roderic-oconor', 'Roderic O’Conor (1860 – 1940)'),
+        ('paul-henry', 'Paul Henry (1876 – 1958)'),
+        ('louis-le-brocquy', 'Louis Le Brocquy (1916 – 2012)'),
+        ('brian-maguire', 'Brian Maguire (b. 1951)'),
+        ('gwen-odowd', 'Gwen O’Dowd (b. 1957)'),
+        ('willie-doherty', 'Willie Doherty (b. 1959)'),
+        ('philip-treacy', 'Philip Treacy (b.1967)'),
+    ),
+    (2012, 'higher', 14): (
+        ('horse', 'a work which includes a horse or horses'),
+        ('filippo-brunelleschi', 'a building by Filippo Brunelleschi (1377-1446)'),
+        ('ghiberti', 'a work by Ghiberti (1378-1455)'),
+        ('auguste-rodin', 'a sculpture by Auguste Rodin (1840-1917)'),
+    ),
+    (2012, 'higher', 15): (
+        ('baroque-sculpture', 'Baroque sculpture'),
+        ('genre-painting', 'Genre painting'),
+        ('rococo-art', 'Rococo art'),
+        ('art-nouveau', 'Art Nouveau'),
+    ),
+    (2012, 'ordinary', 7): (
+        ('evie-hone', 'Evie Hone'),
+        ('louis-le-brocquy', 'Louis le Brocquy'),
+        ('martin-gale', 'Martin Gale'),
+        ('jim-fitzpatrick', 'Jim Fitzpatrick'),
+    ),
+    # The four works print one per line with no bullet marker.
+    (2012, 'ordinary', 11): (
+        ('primavera', '“Primavera” by Botticelli (c.1445-1510)'),
+        ('the-mona-lisa', '“The Mona Lisa” by Leonardo da Vinci (1452-1519)'),
+        ('the-arnolfini-wedding', '“The Arnolfini Wedding” by Jan van Eyck (died 1441)'),
+        ('les-demoiselles-davignon', '“Les Demoiselles d’Avignon” by Pablo Picasso (1881-1973)'),
+    ),
+    # Outlets, shed activities, occasions and clubs: each list one heading,
+    # one card per part.
+    (2012, 'ordinary', 18): (
+        ('chemist-shop', 'a chemist shop'),
+        ('fruit-and-vegetable-shop', 'a fruit and vegetable shop'),
+        ('electrical-shop', 'an electrical shop'),
+    ),
+    (2012, 'ordinary', 19): (
+        ('music', 'music'),
+        ('hobby', 'a hobby of your choice'),
+        ('teenagers-den', 'a teenager’s den'),
+    ),
+    (2012, 'ordinary', 20): (
+        ('job-interview', 'a job interview'),
+        ('fancy-dress-party', 'a fancy dress party'),
+        ('concert', 'a concert'),
+        ('debs-ball', 'a debs’ ball'),
+    ),
+    (2012, 'ordinary', 21): (
+        ('drama-club', 'a drama club'),
+        ('hot-rod-club', 'a hot-rod club'),
+        ('fishing-club', 'a fishing club'),
+        ('gym', 'a gym'),
+    ),
+    (2013, 'higher', 7): (
+        ('harry-clarke', 'Harry Clarke (1889 -1931)'),
+        ('sean-keating', 'Seán Keating (1889 -1977)'),
+        ('tony-omalley', 'Tony O’Malley (1913-2003)'),
+        ('robert-ballagh', 'Robert Ballagh (b.1943)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+        ('colin-davidson', 'Colin Davidson (b.1968)'),
+    ),
+    (2013, 'higher', 14): (
+        ('self-portrait', 'a self-portrait of a named artist'),
+        ('donatello', 'a sculpture by Donatello (1386 -1466)'),
+        ('titian', 'a painting by Titian (c.1488 -1576)'),
+        ('goya', 'a painting by Goya (1746 -1828)'),
+        ('le-corbusier', 'a building by Le Corbusier (1887-1965)'),
+    ),
+    (2013, 'higher', 15): (
+        ('international-gothic', 'The International Gothic style'),
+        ('romanticism', 'Romanticism'),
+        ('pointillism', 'Pointillism'),
+        ('cubism', 'Cubism'),
+    ),
+    (2013, 'ordinary', 7): (
+        ('roderic-oconor', 'Roderic O’Conor (1860 -1940)'),
+        ('paul-henry', 'Paul Henry (1876 -1958)'),
+        ('harry-clarke', 'Harry Clarke (1889 -1931)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+        ('kathy-prendergast', 'Kathy Prendergast (b.1958)'),
+        ('colin-davidson', 'Colin Davidson (b.1968)'),
+    ),
+    (2013, 'ordinary', 11): (
+        ('the-lamentation', '‘The Lamentation’ by Giotto (c.1267-1337)'),
+        ('david', '‘David’ by Michelangelo (1475 -1564)'),
+        ('the-taking-of-christ', '‘The Taking of Christ’ by Caravaggio (1571-1610)'),
+        ('labsinthe', '‘L’Absinthe’ by Edgar Degas (1834 -1917)'),
+        ('sunflowers', '‘Sunflowers’ by Vincent Van Gogh (1853 -1890)'),
+    ),
+    # Three objects to decorate, three objects to design, three posters:
+    # each list one heading, one card per part.
+    (2013, 'ordinary', 18): (
+        ('sports-helmet', 'a sports helmet'),
+        ('surfboard', 'a surfboard'),
+        ('skate-board', 'a skate board'),
+    ),
+    (2013, 'ordinary', 20): (
+        ('table-lamp', 'a table lamp'),
+        ('hand-held-torch', 'a hand-held torch'),
+        ('head-phones', 'a set of head phones'),
+    ),
+    (2013, 'ordinary', 21): (
+        ('rainbow', 'Rainbow - a crèche for 1 to 4 year olds'),
+        ('waves', 'Waves - a music studio'),
+        ('pages', 'Pages - a book store'),
+    ),
+    # Three Georgian buildings: one heading, one card per part.
+    (2014, 'higher', 4): (
+        ('custom-house-dublin', 'The Custom House, Dublin'),
+        ('strokestown-house', 'Strokestown House, Co. Roscommon'),
+        ('castletown-house', 'Castletown House, Co. Kildare'),
+    ),
+    (2014, 'higher', 7): (
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('eileen-gray', 'Eileen Gray (1878-1976)'),
+        ('evie-hone', 'Evie Hone (1894-1955)'),
+        ('norah-mcguinness', 'Norah McGuinness (1901-1980)'),
+        ('gerard-dillon', 'Gerard Dillon (1916-1971)'),
+        ('john-behan', 'John Behan (b.1938)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('james-hanley', 'James Hanley (b.1965)'),
+    ),
+    (2014, 'higher', 14): (
+        ('gislebertus', 'a sculpture by Gislebertus (b. 12th century)'),
+        ('rembrandt', 'a painting by Rembrandt (1606-1669)'),
+        ('turner', 'a painting by Turner (1775-1851)'),
+        ('renoir', 'a painting by Renoir (1841-1919)'),
+        ('henry-moore', 'a sculpture by Henry Moore (1898-1986)'),
+    ),
+    (2014, 'higher', 15): (
+        ('baroque-art', 'Baroque Art'),
+        ('expressionism', 'Expressionism'),
+        ('the-bauhaus', 'The Bauhaus'),
+        ('surrealism', 'Surrealism'),
+    ),
+    (2014, 'ordinary', 7): (
+        ('jack-b-yeats', 'Jack B. Yeats (1871-1957)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+        ('pauline-bewick', 'Pauline Bewick (b.1935)'),
+        ('brian-bourke', 'Brian Bourke (b.1936)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+    ),
+    (2014, 'ordinary', 14): (
+        ('arnolfini-portrait', '“The Arnolfini Portrait” by Van Eyck (died 1441)'),
+        ('mona-lisa', '“Mona Lisa” by Da Vinci (1452-1519)'),
+        ('girl-with-a-pearl-earring', '“Girl with a Pearl Earring” by Vermeer (1632-1675)'),
+        ('death-of-marat', '“The Death of Marat” by Jacques Louis David (1748-1825)'),
+        ('guernica', '“Guernica” by Picasso (1881-1973)'),
+    ),
+    # Three spaces, and three events: each list one heading, one card per part.
+    (2014, 'ordinary', 19): (
+        ('concert-venue-foyer', 'a foyer or reception area of a concert venue'),
+        ('teenagers-bedroom', 'a teenager’s bedroom'),
+        ('swimming-pool-entrance', 'an entrance hall to a swimming pool'),
+    ),
+    (2014, 'ordinary', 21): (
+        ('charity-walk', 'charity walk'),
+        ('street-festival', 'street festival'),
+        ('farmers-market', 'farmers’ market'),
+    ),
+    (2015, 'higher', 7): (
+        ('john-hogan', 'John Hogan (1800-1858)'),
+        ('william-john-leech', 'William John Leech (1881-1968)'),
+        ('mary-swanzy', 'Mary Swanzy (1882-1978)'),
+        ('oisin-kelly', 'Oisín Kelly (1915-1981)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+        ('michael-quane', 'Michael Quane (b.1962)'),
+        ('caroline-mccarthy', 'Caroline McCarthy (b.1971)'),
+    ),
+    (2015, 'higher', 14): (
+        ('hans-holbein-the-younger', 'a painting by Hans Holbein the Younger (c.1497-1543)'),
+        ('gian-lorenzo-bernini', 'a sculpture by Gian Lorenzo Bernini (1598-1680)'),
+        ('francisco-de-goya', 'a painting by Francisco de Goya (1746-1828)'),
+        ('auguste-rodin', 'a sculpture by Auguste Rodin (1840-1917)'),
+        ('gustav-klimt', 'a painting by Gustav Klimt (1862-1918)'),
+    ),
+    (2015, 'higher', 15): (
+        ('rococo', 'Rococo'),
+        ('neoclassicism', 'Neoclassicism'),
+        ('realism', 'Realism'),
+        ('fauvism', 'Fauvism'),
+    ),
+    (2015, 'ordinary', 7): (
+        ('nathaniel-hone-the-elder', 'Nathaniel Hone the Elder (1718-1784)'),
+        ('john-lavery', 'John Lavery (1856-1941)'),
+        ('jack-b-yeats', 'Jack B. Yeats (1871-1957)'),
+        ('william-leech', 'William Leech (1881-1968)'),
+        ('mainie-jellett', 'Mainie Jellett (1897-1944)'),
+        ('john-behan', 'John Behan (b.1938)'),
+        ('kathy-prendergast', 'Kathy Prendergast (b.1958)'),
+    ),
+    (2015, 'ordinary', 14): (
+        ('the-lamentation', '“The Lamentation” by Giotto di Bondone (c.1267-1337)'),
+        ('ecstasy-of-st-teresa', '“The Ecstasy of St Teresa” by Gian Lorenzo Bernini (1598-1680)'),
+        ('lady-writing-a-letter', '“A Lady Writing a Letter, with her Maid” by Johannes Vermeer (1632-1675)'),
+        ('the-hay-wain', '“The Hay Wain” by John Constable (1776-1837)'),
+        ('the-starry-night', '“The Starry Night” by Vincent van Gogh (1853-1890)'),
+    ),
+    # Two Georgian architects: one heading, one card per task.
+    (2016, 'higher', 4): (
+        ('richard-castle', 'Richard Castle (Cassels) (1690 - 1751)'),
+        ('william-chambers', 'William Chambers (1723 - 1796)'),
+    ),
+    (2016, 'higher', 7): (
+        ('john-henry-foley', 'John Henry Foley (1818 - 1874)'),
+        ('paul-henry', 'Paul Henry (1876 - 1958)'),
+        ('william-orpen', 'William Orpen (1878 - 1931)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916 - 2012)'),
+        ('john-burke', 'John Burke (1946 - 2006)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('grace-weir', 'Grace Weir (b.1962)'),
+    ),
+    (2016, 'higher', 14): (
+        ('cimabue', 'a painting by Cimabue (c.1240 - c.1302)'),
+        ('hieronymus-bosch', 'a painting by Hieronymus Bosch (died 1516)'),
+        ('caravaggio', 'a painting by Caravaggio (1571 - 1610)'),
+        ('mondrian', 'a painting by Mondrian (1872 - 1944)'),
+        ('henry-moore', 'a sculpture by Henry Moore (1898 - 1986)'),
+    ),
+    (2016, 'higher', 15): (
+        ('international-gothic', 'International Gothic'),
+        ('romanticism', 'Romanticism'),
+        ('pre-raphaelite-brotherhood', 'The Pre-Raphaelite Brotherhood'),
+        ('die-brucke', 'Die Brücke'),
+    ),
+    (2016, 'ordinary', 7): (
+        ('james-barry', 'James Barry (1741 - 1806)'),
+        ('paul-henry', 'Paul Henry (1876 - 1958)'),
+        ('harry-clarke', 'Harry Clarke (1889 - 1931)'),
+        ('sean-keating', 'Sean Keating (1889 - 1977)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+    ),
+    (2016, 'ordinary', 14): (
+        ('arnolfini-portrait', '“The Arnolfini Portrait” by Jan van Eyck (died 1441)'),
+        ('school-of-athens', '“School of Athens” by Raphael (1483 - 1520)'),
+        ('oath-of-the-horatii', '“Oath of the Horatii” by Jacques-Louis David (1748 - 1825)'),
+        ('vision-after-the-sermon', '“Vision after the Sermon” by Paul Gauguin (1848 - 1903)'),
+        ('persistence-of-memory', '“The Persistence of Memory” by Salvador Dalí (1904 - 1989)'),
+    ),
+    # (b) "Choose one of the amenities above": the three park amenities printed
+    # in (a), all one heading and one grid, so one card per part.
+    (2016, 'ordinary', 20): (
+        ('family-picnic-area', 'family picnic area'),
+        ('toddlers-play-area', 'toddlers play area'),
+        ('dog-walking-trail', 'dog walking trail'),
+    ),
+    (2017, 'higher', 7): (
+        ('nathaniel-hone-the-elder', 'Nathaniel Hone the Elder (1718-1784)'),
+        ('john-henry-foley', 'John Henry Foley (1818-1874)'),
+        ('mary-swanzy', 'Mary Swanzy (1882-1978)'),
+        ('nano-reid', 'Nano Reid (1900-1981)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('edward-delaney', 'Edward Delaney (1930-2009)'),
+        ('jim-fitzpatrick', 'Jim Fitzpatrick (b.1946)'),
+    ),
+    (2017, 'higher', 14): (
+        ('giotto', 'Giotto (c.1267/76-1337)'),
+        ('titian', 'Titian (c.1488-1576)'),
+        ('pieter-bruegel-the-elder', 'Pieter Bruegel the Elder (c.1525-1569)'),
+        ('jean-honore-fragonard', 'Jean-Honoré Fragonard (1732-1806)'),
+        ('vasily-kandinsky', 'Vasily Kandinsky (1866-1944)'),
+    ),
+    (2017, 'higher', 15): (
+        ('baroque', 'Baroque'),
+        ('neoclassicism', 'Neoclassicism'),
+        ('art-nouveau', 'Art Nouveau'),
+        ('dada', 'Dada'),
+    ),
+    (2017, 'ordinary', 7): (
+        ('james-arthur-oconnor', 'James Arthur O’Connor (1792-1841)'),
+        ('jack-b-yeats', 'Jack B. Yeats (1871-1957)'),
+        ('mary-swanzy', 'Mary Swanzy (1882-1978)'),
+        ('oisin-kelly', 'Oisín Kelly (1915-1981)'),
+        ('gerard-dillon', 'Gerard Dillon (1916-1971)'),
+        ('robert-ballagh', 'Robert Ballagh (b.1943)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+    ),
+    (2017, 'ordinary', 14): (
+        ('birth-of-venus', '“Birth of Venus” by Sandro Botticelli (c.1445-1510)'),
+        ('night-watch', '“Night Watch” by Rembrandt van Rijn (1606-1669)'),
+        ('third-of-may-1808', '“The Third of May 1808” by Francisco de Goya (1746-1828)'),
+        ('fighting-temeraire', '“The Fighting Temeraire” by J.M.W. Turner (1775-1851)'),
+        ('starry-night', '“The Starry Night” by Vincent van Gogh (1853-1890)'),
+    ),
+    (2018, 'higher', 7): (
+        ('james-arthur-oconnor', 'James Arthur O’Connor (1792-1841)'),
+        ('frederic-william-burton', 'Frederic William Burton (1816-1900)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('john-behan', 'John Behan (b.1938)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('geraldine-oneill', 'Geraldine O’Neill (b.1971)'),
+    ),
+    (2018, 'higher', 14): (
+        ('brunelleschi', 'Brunelleschi (1377-1446)'),
+        ('peter-paul-rubens', 'Peter Paul Rubens (1577-1640)'),
+        ('caravaggio', 'Caravaggio (1571-1610)'),
+        ('auguste-rodin', 'Auguste Rodin (1840-1917)'),
+        ('lucian-freud', 'Lucian Freud (1922-2011)'),
+    ),
+    (2018, 'higher', 15): (
+        ('impressionism', 'Impressionism'),
+        ('fauvism', 'Fauvism'),
+        ('surrealism', 'Surrealism'),
+        ('de-stijl', 'De Stijl'),
+    ),
+    # Two Georgian buildings: one heading, one card per part.
+    (2018, 'ordinary', 4): (
+        ('russborough-house', 'Russborough House'),
+        ('casino-at-marino', 'Casino at Marino'),
+    ),
+    (2018, 'ordinary', 7): (
+        ('daniel-maclise', 'Daniel Maclise (1806-1870)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('paul-henry', 'Paul Henry (1876-1958)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('nano-reid', 'Nano Reid (1900-1981)'),
+        ('rowan-gillespie', 'Rowan Gillespie (b.1953)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+    ),
+    (2018, 'ordinary', 14): (
+        ('battle-of-san-romano', '“The Battle of San Romano” by Paolo Uccello (1397-1475)'),
+        ('creation-of-adam', '“Creation of Adam” by Michelangelo Buonarroti (1475-1564)'),
+        ('lady-writing-a-letter', '“Lady Writing a Letter with her Maid” by Johannes Vermeer (1632-1675)'),
+        ('the-dance-class', '“The Dance Class” by Edgar Degas (1834-1917)'),
+        ('soft-construction-with-boiled-beans', '“Soft Construction with Boiled Beans” by Salvador Dalí (1904-1989)'),
+    ),
+    # Two Georgian architects: one heading, one card.
+    (2019, 'higher', 4): (
+        ('edward-lovett-pearce', 'Edward Lovett Pearce (1699-1733)'),
+        ('james-gandon', 'James Gandon (1743-1823)'),
+    ),
+    (2019, 'higher', 7): (
+        ('walter-osborne', 'Walter Osborne (1859-1903)'),
+        ('paul-henry', 'Paul Henry (1876-1958)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('evie-hone', 'Evie Hone (1894-1955)'),
+        ('mainie-jellett', 'Mainie Jellett (1897-1944)'),
+        ('gerard-dillon', 'Gerard Dillon (1916-1971)'),
+        ('robert-ballagh', 'Robert Ballagh (b.1943)'),
+    ),
+    (2019, 'higher', 14): (
+        ('giotto', 'Giotto (c.1267-1337)'),
+        ('donatello', 'Donatello (1386-1466)'),
+        ('velazquez', 'Velázquez (1599-1660)'),
+        ('francisco-de-goya', 'Francisco de Goya (1746-1828)'),
+        ('emil-nolde', 'Emil Nolde (1867-1956)'),
+    ),
+    (2019, 'higher', 15): (
+        ('international-gothic', 'International Gothic'),
+        ('baroque', 'Baroque'),
+        ('cubism', 'Cubism'),
+        ('op-art', 'Op art'),
+    ),
+    (2019, 'ordinary', 7): (
+        ('nathaniel-hone-the-elder', 'Nathaniel Hone the Elder (1718-1784)'),
+        ('frederic-william-burton', 'Frederic William Burton (1816-1900)'),
+        ('sean-keating', 'Seán Keating (1889-1977)'),
+        ('oisin-kelly', 'Oisín Kelly (1915-1981)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+        ('alice-maher', 'Alice Maher (b.1956)'),
+        ('kathy-prendergast', 'Kathy Prendergast (b.1958)'),
+    ),
+    (2019, 'ordinary', 14): (
+        ('kiss-of-judas', '‘The Kiss of Judas’ by Giotto (c.1267-1337)'),
+        ('arnolfini-portrait', '‘The Arnolfini Portrait’ by Jan van Eyck (c.1390-1441)'),
+        ('the-ambassadors', '‘The Ambassadors’ by Hans Holbein (c.1497-1543)'),
+        ('the-hay-wain', '‘The Hay Wain’ by John Constable (1776-1837)'),
+        ('the-card-players', '‘The Card Players’ by Paul Cézanne (1839-1906)'),
+    ),
+    (2020, 'higher', 7): (
+        ('nathaniel-hone-the-elder', 'Nathaniel Hone the Elder (1718-1784)'),
+        ('sir-john-lavery', 'Sir John Lavery (1856-1941)'),
+        ('roderic-oconor', 'Roderic O’Conor (1860-1940)'),
+        ('eileen-gray', 'Eileen Gray (1878-1976)'),
+        ('louis-le-brocquy', 'Louis le Brocquy (1916-2012)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('colin-davidson', 'Colin Davidson (b.1968)'),
+    ),
+    (2020, 'higher', 14): (
+        ('gian-lorenzo-bernini', 'Gian Lorenzo Bernini (1598-1680)'),
+        ('canaletto', 'Canaletto (1697-1768)'),
+        ('gustave-courbet', 'Gustave Courbet (1819-1877)'),
+        ('claude-monet', 'Claude Monet (1840-1926)'),
+        ('lucian-freud', 'Lucian Freud (1922-2011)'),
+    ),
+    (2020, 'higher', 15): (
+        ('neoclassicism', 'Neoclassicism'),
+        ('romanticism', 'Romanticism'),
+        ('symbolism', 'Symbolism'),
+        ('the-bauhaus', 'The Bauhaus'),
+    ),
+    (2020, 'ordinary', 7): (
+        ('james-barry', 'James Barry (1741-1806)'),
+        ('frederic-william-burton', 'Frederic William Burton (1816-1900)'),
+        ('sarah-purser', 'Sarah Purser (1848-1943)'),
+        ('harry-clarke', 'Harry Clarke (1889-1931)'),
+        ('norah-mcguinness', 'Norah McGuinness (1901-1980)'),
+        ('dorothy-cross', 'Dorothy Cross (b.1956)'),
+        ('geraldine-oneill', 'Geraldine O’Neill (b.1971)'),
+    ),
+    (2020, 'ordinary', 14): (
+        ('lamentation-of-christ', '‘Lamentation of Christ’ by Giotto (c.1267-1337)'),
+        ('david', '‘David’ by Donatello (c.1386-1466)'),
+        ('raft-of-the-medusa', '‘The Raft of the Medusa’ by Théodore Géricault (1791-1824)'),
+        ('olympia', '‘Olympia’ by Édouard Manet (1832-1883)'),
+        ('persistence-of-memory', '‘The Persistence of Memory’ by Salvador Dalí (1904-1989)'),
+    ),
     (2021, 'higher', 4): (
         ('castletown-house', 'Castletown House'),
         ('casino-at-marino', 'Casino at Marino'),
@@ -178,13 +767,211 @@ PRINTED_CHOICES: dict[tuple[int, str, int], tuple[tuple[str, str], ...]] = {
         ('bauhaus', 'Bauhaus'),
         ('surrealism', 'Surrealism'),
     ),
+    # Four Modernist artists under the one Modernism heading: one card. It was
+    # first built as one card, so it has no earlier per-option id to keep.
+    (2026, 'ordinary', 12): (
+        ('pablo-picasso', 'Pablo Picasso'),
+        ('salvador-dali', 'Salvador Dalí'),
+        ('edvard-munch', 'Edvard Munch'),
+        ('kathe-kollwitz', 'Käthe Kollwitz'),
+    ),
 }
 
-# A closed "choose N" instruction is a different kind of selectable route.
-# The first corpus sweep handled only choose-one lists and therefore collapsed
-# the ten pairs printed for 2025 OL Q4(a) into one card. Keep the pool and N
-# explicit so the expansion is mechanically complete (n choose k), rather than
-# relying on another hand-authored list of combinations.
+# A choose-one list whose options sit under DIFFERENT Topic Atlas headings
+# keeps one card per option, so each files under its own heading. These are
+# the legacy Section II questions the Atlas can only file as "Section B:
+# Generic Questions" because their options span periods. Each option's heading
+# is editorial, from the dates and movements the paper prints; an option no
+# current heading covers (Neoclassicism, Romanticism) stays generic. Lists
+# whose options share one heading remain one card: 2025 HL Q12 and 2026 OL
+# Q12 (all Modernism, the only heading the Atlas gives either question), the
+# Irish Q7 artists, the Georgian buildings. A list in this table must span at
+# least two headings; the build fails on one that does not.
+OPTION_TOPICS: dict[tuple[int, str, int], dict[str, str]] = {
+    # 2010: a landscape, animals and a royal portrait are subjects of every
+    # period; Gormley (b.1950) is Post-1960s; Bacon's painting from 1944 is
+    # Modernism. Mannerism with the Renaissance; the Pre-Raphaelites (1848)
+    # by date, as Art Nouveau in 2017 HL Q15.
+    (2010, 'higher', 13): {
+        'landscape': 'art-4-6', 'animals': 'art-4-6', 'bernini': 'art-4-2',
+        'portrait-of-royalty': 'art-4-6', 'anthony-gormley': 'art-4-5', 'francis-bacon': 'art-4-4',
+    },
+    (2010, 'higher', 15): {
+        'mannerism': 'art-4-1', 'pre-raphaelite-brotherhood': 'art-4-3', 'cubism': 'art-4-4',
+        'de-stijl': 'art-4-4',
+    },
+    (2010, 'ordinary', 11): {
+        'the-kiss-of-judas': 'art-4-1', 'the-birth-of-venus': 'art-4-1', 'lady-writing-a-letter': 'art-4-2',
+        'starry-night': 'art-4-3', 'guernica': 'art-4-4',
+    },
+    # 2011: dancers, a musical instrument and Neoclassicism have no heading;
+    # Rubens is the Baroque; Le Corbusier and the Bauhaus are Modernism.
+    (2011, 'higher', 14): {
+        'dancers': 'art-4-6', 'musical-instrument': 'art-4-6', 'ghiberti': 'art-4-1',
+        'peter-paul-rubens': 'art-4-2', 'le-corbusier': 'art-4-4',
+    },
+    (2011, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'neoclassicism': 'art-4-6', 'pointillism': 'art-4-3',
+        'the-bauhaus': 'art-4-4',
+    },
+    (2011, 'ordinary', 11): {
+        'mary-magdalene': 'art-4-1', 'the-tribute-money': 'art-4-1', 'the-ambassadors': 'art-4-1',
+        'impression-sunrise': 'art-4-3', 'the-persistence-of-memory': 'art-4-4',
+    },
+    # 2012: a work with a horse and genre painting (a subject, painted in
+    # every period) have no heading; Rodin with the late 19th century, Art
+    # Nouveau as in 2017 HL Q15.
+    (2012, 'higher', 14): {
+        'horse': 'art-4-6', 'filippo-brunelleschi': 'art-4-1', 'ghiberti': 'art-4-1',
+        'auguste-rodin': 'art-4-3',
+    },
+    (2012, 'higher', 15): {
+        'baroque-sculpture': 'art-4-2', 'genre-painting': 'art-4-6', 'rococo-art': 'art-4-2',
+        'art-nouveau': 'art-4-3',
+    },
+    (2012, 'ordinary', 11): {
+        'primavera': 'art-4-1', 'the-mona-lisa': 'art-4-1', 'the-arnolfini-wedding': 'art-4-1',
+        'les-demoiselles-davignon': 'art-4-4',
+    },
+    # 2013: a self-portrait, Goya and Romanticism have no heading; Le
+    # Corbusier and Cubism are Modernism; Giotto with the Renaissance (Proto),
+    # as in 2016 and 2018 OL Q9.
+    (2013, 'higher', 14): {
+        'self-portrait': 'art-4-6', 'donatello': 'art-4-1', 'titian': 'art-4-1',
+        'goya': 'art-4-6', 'le-corbusier': 'art-4-4',
+    },
+    (2013, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'romanticism': 'art-4-6', 'pointillism': 'art-4-3', 'cubism': 'art-4-4',
+    },
+    (2013, 'ordinary', 11): {
+        'the-lamentation': 'art-4-1', 'david': 'art-4-1', 'the-taking-of-christ': 'art-4-2',
+        'labsinthe': 'art-4-3', 'sunflowers': 'art-4-3',
+    },
+    # 2014: Gislebertus is Romanesque; Turner and David have no heading;
+    # Expressionism, the Bauhaus and Surrealism are Modernism.
+    (2014, 'higher', 14): {
+        'gislebertus': 'art-4-0', 'rembrandt': 'art-4-2', 'turner': 'art-4-6',
+        'renoir': 'art-4-3', 'henry-moore': 'art-4-4',
+    },
+    (2014, 'higher', 15): {
+        'baroque-art': 'art-4-2', 'expressionism': 'art-4-4', 'the-bauhaus': 'art-4-4', 'surrealism': 'art-4-4',
+    },
+    (2014, 'ordinary', 14): {
+        'arnolfini-portrait': 'art-4-1', 'mona-lisa': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
+        'death-of-marat': 'art-4-6', 'guernica': 'art-4-4',
+    },
+    # 2015: Klimt's major work (from 1900) is Modernism; Rodin with the late
+    # 19th century; Goya, Constable and Neoclassicism have no heading.
+    (2015, 'higher', 14): {
+        'hans-holbein-the-younger': 'art-4-1', 'gian-lorenzo-bernini': 'art-4-2',
+        'francisco-de-goya': 'art-4-6', 'auguste-rodin': 'art-4-3', 'gustav-klimt': 'art-4-4',
+    },
+    (2015, 'higher', 15): {
+        'rococo': 'art-4-2', 'neoclassicism': 'art-4-6', 'realism': 'art-4-3', 'fauvism': 'art-4-4',
+    },
+    (2015, 'ordinary', 14): {
+        'the-lamentation': 'art-4-1', 'ecstasy-of-st-teresa': 'art-4-2', 'lady-writing-a-letter': 'art-4-2',
+        'the-hay-wain': 'art-4-6', 'the-starry-night': 'art-4-3',
+    },
+    # 2016: Cimabue is Proto-Renaissance; Bosch Northern Renaissance; the
+    # Pre-Raphaelite Brotherhood (1848) with the second half of the 19th
+    # century; Romanticism and David's Neoclassicism have no heading.
+    (2016, 'higher', 14): {
+        'cimabue': 'art-4-1', 'hieronymus-bosch': 'art-4-1', 'caravaggio': 'art-4-2',
+        'mondrian': 'art-4-4', 'henry-moore': 'art-4-4',
+    },
+    (2016, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'romanticism': 'art-4-6',
+        'pre-raphaelite-brotherhood': 'art-4-3', 'die-brucke': 'art-4-4',
+    },
+    (2016, 'ordinary', 14): {
+        'arnolfini-portrait': 'art-4-1', 'school-of-athens': 'art-4-1', 'oath-of-the-horatii': 'art-4-6',
+        'vision-after-the-sermon': 'art-4-3', 'persistence-of-memory': 'art-4-4',
+    },
+    # 2017: Fragonard's Rococo under the Baroque heading (as Rococo in 2021
+    # HL Q15); Art Nouveau with the late 19th century; Dada and Kandinsky are
+    # Modernism; Goya and Turner (Romanticism) have no heading of their own.
+    (2017, 'higher', 14): {
+        'giotto': 'art-4-1', 'titian': 'art-4-1', 'pieter-bruegel-the-elder': 'art-4-1',
+        'jean-honore-fragonard': 'art-4-2', 'vasily-kandinsky': 'art-4-4',
+    },
+    (2017, 'higher', 15): {
+        'baroque': 'art-4-2', 'neoclassicism': 'art-4-6', 'art-nouveau': 'art-4-3', 'dada': 'art-4-4',
+    },
+    (2017, 'ordinary', 14): {
+        'birth-of-venus': 'art-4-1', 'night-watch': 'art-4-2', 'third-of-may-1808': 'art-4-6',
+        'fighting-temeraire': 'art-4-6', 'starry-night': 'art-4-3',
+    },
+    # 2018: Rodin (1840-1917) with the late 19th century; Lucian Freud as in
+    # 2020; Fauvism, Surrealism and De Stijl are Modernism.
+    (2018, 'higher', 14): {
+        'brunelleschi': 'art-4-1', 'peter-paul-rubens': 'art-4-2', 'caravaggio': 'art-4-2',
+        'auguste-rodin': 'art-4-3', 'lucian-freud': 'art-4-5',
+    },
+    (2018, 'higher', 15): {
+        'impressionism': 'art-4-3', 'fauvism': 'art-4-4', 'surrealism': 'art-4-4', 'de-stijl': 'art-4-4',
+    },
+    (2018, 'ordinary', 14): {
+        'battle-of-san-romano': 'art-4-1', 'creation-of-adam': 'art-4-1', 'lady-writing-a-letter': 'art-4-2',
+        'the-dance-class': 'art-4-3', 'soft-construction-with-boiled-beans': 'art-4-4',
+    },
+    # 2019: Goya and Constable (Romanticism) have no heading of their own;
+    # Nolde's Expressionism is Modernism; Op art is Post 1960s.
+    (2019, 'higher', 14): {
+        'giotto': 'art-4-1', 'donatello': 'art-4-1', 'velazquez': 'art-4-2',
+        'francisco-de-goya': 'art-4-6', 'emil-nolde': 'art-4-4',
+    },
+    (2019, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'baroque': 'art-4-2', 'cubism': 'art-4-4', 'op-art': 'art-4-5',
+    },
+    (2019, 'ordinary', 14): {
+        'kiss-of-judas': 'art-4-1', 'arnolfini-portrait': 'art-4-1', 'the-ambassadors': 'art-4-1',
+        'the-hay-wain': 'art-4-6', 'the-card-players': 'art-4-3',
+    },
+    # 2020: Canaletto's Venice (18th century) under the Baroque heading
+    # (c. 1600-1700s); Lucian Freud's work largely after 1960; Neoclassicism,
+    # Romanticism and Gericault (Romanticism) have no heading of their own.
+    (2020, 'higher', 14): {
+        'gian-lorenzo-bernini': 'art-4-2', 'canaletto': 'art-4-2', 'gustave-courbet': 'art-4-3',
+        'claude-monet': 'art-4-3', 'lucian-freud': 'art-4-5',
+    },
+    (2020, 'higher', 15): {
+        'neoclassicism': 'art-4-6', 'romanticism': 'art-4-6', 'symbolism': 'art-4-3',
+        'the-bauhaus': 'art-4-4',
+    },
+    (2020, 'ordinary', 14): {
+        'lamentation-of-christ': 'art-4-1', 'david': 'art-4-1', 'raft-of-the-medusa': 'art-4-6',
+        'olympia': 'art-4-3', 'persistence-of-memory': 'art-4-4',
+    },
+    (2021, 'higher', 14): {
+        'jan-van-eyck': 'art-4-1', 'el-greco': 'art-4-1', 'ingres': 'art-4-6',
+        'paul-gauguin': 'art-4-3', 'henry-moore': 'art-4-4',
+    },
+    (2021, 'higher', 15): {
+        'baroque': 'art-4-2', 'rococo': 'art-4-2', 'cubism': 'art-4-4', 'futurism': 'art-4-4',
+    },
+    (2021, 'ordinary', 14): {
+        'arnolfini-portrait': 'art-4-1', 'taking-of-christ': 'art-4-2', 'night-watch': 'art-4-2',
+        'van-goghs-bedroom': 'art-4-3', 'madame-matisse-green-line': 'art-4-4',
+    },
+    (2022, 'higher', 14): {
+        'paolo-uccello': 'art-4-1', 'diego-velazquez': 'art-4-2', 'jmw-turner': 'art-4-6',
+        'edvard-munch': 'art-4-4', 'pablo-picasso': 'art-4-4',
+    },
+    (2022, 'higher', 15): {
+        'international-gothic': 'art-4-0', 'impressionism': 'art-4-3',
+        'die-brucke': 'art-4-4', 'surrealism': 'art-4-4',
+    },
+    (2022, 'ordinary', 14): {
+        'mary-magdalene': 'art-4-1', 'girl-with-a-pearl-earring': 'art-4-2',
+        'death-of-marat': 'art-4-6', 'bar-at-the-folies-bergere': 'art-4-3', 'the-scream': 'art-4-4',
+    },
+}
+
+# A closed "choose N" instruction inside one marked task (any two of five
+# headings in 2025 OL Q4(a)). The student chooses which N to use, so the task
+# is ONE card with the printed instruction and all five headings; the pool is
+# kept so the build checks the paper still prints it.
 TASK_COMBINATION_CHOICES: dict[
     tuple[int, str, int, str], tuple[int, tuple[tuple[str, str], ...]]
 ] = {
@@ -213,6 +1000,69 @@ REVIEWED_NON_ENUMERABLE_POOLS: dict[tuple[int, str, int], str] = {
 # cannot enter silently, while these reviewed open or logistical choices stay
 # faithful to the paper instead of being over-expanded.
 REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
+    (2010, 'higher', 2): (
+        '"either Gallarus Oratory, Co. Kerry or the Church of St. Macdara, Co. '
+        'Galway": two Early Christian buildings, one heading; one card.'),
+    (2010, 'higher', 3): (
+        '"one named page from either book": the Book of Durrow or the Book of '
+        'Kells, one heading; any page, no list to enumerate.'),
+    (2010, 'higher', 18): (
+        '"two historical buildings, either local or national": any buildings; '
+        'no list to enumerate.'),
+    (2011, 'higher', 5): (
+        '"Write a brief account of either artist": one of the two artists the '
+        'question itself compares, Barret and O’Connor, one heading; no list.'),
+    (2011, 'higher', 16): (
+        '"any one of Pixar’s productions, such as Toy Story ...": examples of '
+        'any Pixar production, not a closed list.'),
+    (2011, 'ordinary', 14): (
+        '"Choose any work that you have studied by Henri Matisse": any work; the '
+        'paper prints no finite list to enumerate.'),
+    (2012, 'ordinary', 1): (
+        '"Name another work from this period in either stone or metal": any '
+        'work in either material; no list to enumerate.'),
+    (2012, 'ordinary', 4): (
+        '"Select any townhouse of your choice from the Georgian period": any '
+        'townhouse; the paper prints no finite list to enumerate.'),
+    (2012, 'ordinary', 13): (
+        '"Choose any work you have studied by Edvard Munch": any work; the '
+        'paper prints no finite list to enumerate.'),
+    (2013, 'ordinary', 13): (
+        '"Choose any work you have studied by Pablo Picasso": any work; the '
+        'paper prints no finite list to enumerate.'),
+    (2013, 'ordinary', 19): (
+        '"the types of playground furniture you would choose": the '
+        "candidate's own design choice, not a printed list."),
+    (2014, 'higher', 1): (
+        '"two other types of named tombs from either the Mesolithic or Neolithic '
+        'periods": any tombs of either period, one heading; no list to enumerate.'),
+    (2014, 'higher', 20): (
+        '"Choose and name a work of art from your art history course": any work; '
+        'the paper prints no finite list to enumerate.'),
+    (2014, 'ordinary', 12): (
+        '"Choose any work you have studied by Paul Cezanne": any work; the paper '
+        'prints no finite list to enumerate.'),
+    (2015, 'ordinary', 13): (
+        '"Choose one work you have studied by Pablo Picasso": any work; the '
+        'paper prints no finite list to enumerate.'),
+    (2015, 'ordinary', 20): (
+        '"the types of furniture you would choose for this studio": the '
+        "candidate's own design choice, not a printed list."),
+    (2016, 'ordinary', 12): (
+        '"Choose one work that you have studied by Claude Monet": any work; the '
+        'paper prints no finite list to enumerate.'),
+    (2017, 'ordinary', 4): (
+        '"Choose one Georgian building that you have studied": any building; the '
+        'paper prints no finite list to enumerate.'),
+    (2017, 'ordinary', 13): (
+        '"Choose one work by Pablo Picasso": any work the candidate studied; the '
+        'paper prints no finite list to enumerate.'),
+    (2018, 'ordinary', 9): (
+        '"Choose one work by Giotto": any work the candidate studied; the paper '
+        'prints no finite list to enumerate.'),
+    (2018, 'ordinary', 11): (
+        '"Choose one work by Caravaggio": any work the candidate studied; the '
+        'paper prints no finite list to enumerate.'),
     (2021, 'ordinary', 16): (
         '"Either online or in person" changes how the gallery was visited, '
         'not the knowledge or marked task.'),
@@ -227,6 +1077,102 @@ REVIEWED_OPEN_SELECTIONS: dict[tuple[int, str, int], str] = {
 # Page numbers are one-based within the separate official illustration PDF.
 # Every binding below was checked visually against the rendered sheet.
 ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
+    # 2010 sheets are four portrait pages each.
+    (2010, 'higher'): {
+        1: 1, 4: 1, 7: 1,
+        9: 2, 11: 2,
+        12: 3,
+        14: 4, 16: 4,
+    },
+    (2010, 'ordinary'): {
+        1: 1, 2: 1, 3: 1,
+        5: 2, 6: 2,
+        8: 3, 9: 3,
+        13: 4, 21: 4,
+    },
+    # 2011 sheets embed low-resolution photographs, complete and legible.
+    (2011, 'higher'): {
+        1: 1, 4: 1, 5: 1, 7: 1, 13: 1, 19: 1,
+        9: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2011, 'ordinary'): {
+        1: 1, 3: 1, 5: 1, 6: 1, 13: 1, 19: 1,
+        9: 2, 10: 2, 12: 2,
+    },
+    (2012, 'higher'): {
+        2: 1, 3: 1, 5: 1, 12: 1, 18: 1,
+        7: 2, 8: 2, 9: 2, 11: 2,
+    },
+    (2012, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 5: 1, 14: 1, 17: 1,
+        6: 2, 9: 2, 12: 2,
+    },
+    (2013, 'higher'): {
+        1: 1, 3: 1, 4: 1, 11: 1, 19: 1,
+        5: 2, 6: 2, 9: 2, 10: 2,
+    },
+    (2013, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 14: 1, 20: 1,
+        6: 2, 9: 2, 10: 2, 12: 2,
+    },
+    (2014, 'higher'): {
+        2: 1, 3: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
+        8: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2014, 'ordinary'): {
+        1: 1, 2: 1, 4: 1, 17: 1, 18: 1,
+        6: 2, 9: 2, 10: 2, 11: 2, 13: 2,
+    },
+    # 2015 sheets fetched from Paper Trail storage (not in the local corpus).
+    (2015, 'higher'): {
+        1: 1, 2: 1, 4: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
+        9: 2, 10: 2, 11: 2, 12: 2, 13: 2,
+    },
+    (2015, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 5: 1, 17: 1, 18: 1, 19: 1, 21: 1,
+        8: 2, 10: 2, 11: 2, 12: 2,
+    },
+    # 2016 sheets fetched from Paper Trail storage (not in the local corpus).
+    (2016, 'higher'): {
+        2: 1, 3: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
+        9: 2, 10: 2, 12: 2, 13: 2,
+    },
+    (2016, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 5: 1, 17: 1, 18: 1, 21: 1,
+        8: 2, 9: 2, 10: 2, 11: 2, 13: 2,
+    },
+    (2017, 'higher'): {
+        2: 1, 5: 1, 6: 1, 18: 1, 19: 1, 20: 1,
+        9: 2, 10: 2, 11: 2, 13: 2,
+    },
+    (2017, 'ordinary'): {
+        1: 1, 2: 1, 6: 1, 17: 1, 18: 1, 19: 1, 21: 1,
+        8: 2, 9: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2018, 'higher'): {
+        1: 1, 3: 1, 5: 1, 6: 1, 18: 1, 19: 1,
+        10: 2, 11: 2, 12: 2, 13: 2,
+    },
+    (2018, 'ordinary'): {
+        1: 1, 2: 1, 3: 1, 6: 1, 17: 1, 18: 1, 20: 1, 21: 1,
+        8: 2, 10: 2, 12: 2, 13: 2,
+    },
+    (2019, 'higher'): {
+        2: 1, 3: 1, 5: 1, 17: 1, 19: 1, 20: 1,
+        9: 2, 11: 2, 12: 2, 13: 2,
+    },
+    (2019, 'ordinary'): {
+        1: 1, 5: 1, 6: 1, 17: 1, 18: 1,
+        8: 2, 9: 2, 11: 2, 12: 2, 13: 2,
+    },
+    (2020, 'higher'): {
+        2: 1, 3: 1, 5: 1, 6: 1, 17: 1, 18: 1, 19: 1,
+        9: 2, 10: 2, 11: 2, 12: 2,
+    },
+    (2020, 'ordinary'): {
+        1: 1, 2: 1, 5: 1, 6: 1, 17: 1, 18: 1, 20: 1, 21: 1,
+        9: 2, 10: 2, 11: 2, 13: 2,
+    },
     (2021, 'higher'): {
         2: 1, 5: 1, 6: 1, 17: 1, 20: 1,
         10: 2, 11: 2, 12: 2, 13: 2,
@@ -249,6 +1195,8 @@ ILLUSTRATION_PAGES: dict[tuple[int, str], dict[int, int]] = {
     (2024, 'ordinary'): {1: 1, 7: 1, 3: 2, 4: 2, 5: 2},
     (2025, 'higher'): {1: 1, 7: 1, 2: 2, 4: 2, 6: 2},
     (2025, 'ordinary'): {1: 1, 7: 1, 2: 2, 4: 2, 5: 2},
+    (2026, 'higher'): {1: 1, 7: 1, 2: 2, 4: 2, 6: 2},
+    (2026, 'ordinary'): {1: 1, 7: 1, 2: 2, 4: 2, 5: 2},
 }
 
 LONG_TOPIC = {
@@ -267,13 +1215,239 @@ CURRENT_SHORT_TOPICS: dict[tuple[int, str, int], str] = {}
 for _year, _level, _topics in (
     (2023, 'higher', ('art-6-1', 'art-6-1', 'art-6-2', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-3')),
     (2023, 'ordinary', ('art-6-1', 'art-6-0', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1')),
-    (2024, 'higher', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-2')),
+    # Q3 (a living sculptor: themes, media, scale) and Q7 (Faber-Castell's
+    # advertising poster) take the topic the Atlas gives them, art-6-1.
+    (2024, 'higher', ('art-6-1', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-1')),
     (2024, 'ordinary', ('art-6-1', 'art-6-0', 'art-6-1', 'art-6-2', 'art-6-2', 'art-6-1', 'art-6-3')),
     (2025, 'higher', ('art-6-3', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1')),
     (2025, 'ordinary', ('art-6-2', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-0', 'art-6-1')),
+    # 2026 Higher: Nolan's textile, Beagan en plein air, Basic Income for the
+    # Arts, Banksy, galleries closed for renovation, Chinneck's sculpture,
+    # Grillagh Water House in its landscape.
+    (2026, 'higher', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-2', 'art-6-0', 'art-6-1', 'art-6-3')),
+    # 2026 Ordinary: Cobley's portrait, the IKEA bag, an Arts Section on the
+    # news, Duran's plastic-debris work, the Balor mural in Irish towns,
+    # creative careers, the Fruit Looters wallpaper.
+    (2026, 'ordinary', ('art-6-1', 'art-6-1', 'art-6-0', 'art-6-3', 'art-6-3', 'art-6-0', 'art-6-1')),
 ):
     for _number, _topic in enumerate(_topics, start=1):
         CURRENT_SHORT_TOPICS[(_year, _level, _number)] = _topic
+
+# 2010-2020: one reviewed heading per question, checked against the printed
+# dates and works and against the Topic Atlas (the gate requires the Atlas
+# to give the question this heading; where the reference contradicts the
+# paper, the Atlas builder records a reviewed anomaly).
+LEGACY_QUESTION_TOPICS: dict[tuple[int, str], tuple[str, ...]] = {
+    (2010, 'higher'): (
+        # Q2 early Irish (Early Christian) architecture; Q4 eleventh-century
+        # metalwork; Q7 le Brocquy's 'Image of Bono': Post-1960s Art in Ireland.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3',
+        'art-4-6',  # Q13: per option (OPTION_TOPICS)
+        'art-4-4',
+        'art-4-6',  # Q15: per option (OPTION_TOPICS)
+        # Q16 graffiti's social commentary; Q17 furnishing an open-plan living
+        # space; Q18 preserving historical buildings; Q19 local galleries.
+        'art-6-2', 'art-6-3', 'art-6-3', 'art-6-0', 'art-6-1',
+    ),
+    (2010, 'ordinary'): (
+        # Q6 Edward Delaney's 'Famine Group' (1967): Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q8 the Wilton Diptych, International Gothic; Q13 Munch's 'Girls on a
+        # Jetty' (c.1901).
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        'art-4-3', 'art-4-4', 'art-4-4',
+        # Q19 stadiums in their locality.
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2011, 'higher'): (
+        # Q5 Barret (1741-1806) and O'Connor (c.1792-1841); Q7 Ballagh's
+        # 'Portrait of Noel Browne': Post-1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-3', 'art-5-4', 'art-5-5',
+        # Q11 Metsu, 17th-century Dutch; Q13 Cubism.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        # Q17 bridges in their environment; Q18 a gallery exhibition; Q19
+        # nature as a source for design and craft; Q20 recycled materials.
+        'art-6-1', 'art-6-3', 'art-6-0', 'art-6-1', 'art-6-3',
+    ),
+    (2011, 'ordinary'): (
+        # Q6 'Famine' by Rowan Gillespie (b.1953): Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        # Q13 Gauguin; Q14 Matisse (1869-1954): Modernism.
+        'art-4-3', 'art-4-3', 'art-4-4',
+        # Q16 a teenager's bedroom and Q19 a park: spaces.
+        'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2012, 'higher'): (
+        # Q2 two Bronze Age gold objects (a disc and a dress-fastener); Q5
+        # Oisín Kelly (1915-1981); Q7 a roadside sculpture (the Pikemen):
+        # contemporary public art.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-5',
+        # Q8 Gislebertus's Last Judgement and Sluter's Well of Moses; Q12
+        # Turner, Romanticism: no heading of its own (as 2019 HL Q11).
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-6', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        # Q16 galleries against the internet; Q17 film; Q18 a commemorative
+        # coin; Q19 a home office; Q20 the corner shop in a town's character.
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-3',
+    ),
+    (2012, 'ordinary'): (
+        # Q3 the Ardagh Chalice; Q6 'Women of Belfast' by F.E. McWilliam,
+        # the 1972-73 series: Post 1960s Art in Ireland.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q8 a Romanesque church; Q9 Giotto; Q13 Munch (1863-1944).
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        'art-4-3', 'art-4-3', 'art-4-4',
+        # Q19 converting a garden shed: a space, as the canteen and office.
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2013, 'higher'): (
+        # Q3 the Derrynaflan Paten and the Cross of Cong: Insular metalwork;
+        # Q5 Frederic Burton's 'The Meeting on the Turret Stairs'.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q10 Rogier van der Weyden: Northern Renaissance; Q11 Bernini.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-2', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        # Q17 a curator planning an exhibition, filed with the gallery
+        # questions; Q18 restored buildings in local communities.
+        'art-6-1', 'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2013, 'ordinary'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1',
+        'art-4-6',  # Q11: per option (OPTION_TOPICS)
+        # Q14 Chagall's 'I and the Village' (1911): Modernism.
+        'art-4-3', 'art-4-4', 'art-4-4',
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2014, 'higher'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q8 Sluter's Well of Moses (Gothic); Q11 Michelangelo's David; Q12
+        # "the Realist painter Gustave Courbet".
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1',
+    ),
+    (2014, 'ordinary'): (
+        # Q2 the Reask Pillar ("Early Christian") and Q3 the Tara Brooch
+        # ("Early Medieval"): Insular Art.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4',
+        # Q9 Masaccio's 'Holy Trinity': the Renaissance.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2015, 'higher'): (
+        # Q3 Early Christian churches "developed into a more complex Irish
+        # Romanesque style": Irish Romanesque is Late Medieval (c.1100-1550s).
+        # Q6 'Famine' by Rowan Gillespie (b.1953).
+        'art-5-0', 'art-5-1', 'art-5-2', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q11 Turner (Romanticism, no heading of its own); Q13 Picasso.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-6', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-3', 'art-6-3', 'art-6-1',
+    ),
+    (2015, 'ordinary'): (
+        # Q3 the Cross of the Scriptures, Clonmacnoise: Early Christian.
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q11 Rembrandt (1606-1669): Baroque.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-0', 'art-6-1',
+    ),
+    (2016, 'higher'): (
+        # Q6 Alice Maher (b.1956), 'Berry Dress'.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-3', 'art-6-1',
+    ),
+    (2016, 'ordinary'): (
+        # Q6 Robert Ballagh (b.1943), "one of Ireland's best known
+        # contemporary artists".
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q8 Gislebertus, Romanesque; Q9 Giotto; Q11 Caravaggio, Baroque;
+        # Q12 Monet, Impressionism; Q13 Matisse's 'The Red Room', Modernism.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-3', 'art-6-3',
+    ),
+    (2017, 'higher'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-3',
+    ),
+    (2017, 'ordinary'): (
+        # Q6 'Coffin Ship' by John Behan (b. 1938), the 1997 Famine memorial.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q9 the Wilton Diptych (c.1395-1399), International Gothic; Q11
+        # Bernini (1598-1680), Baroque.
+        'art-4-0', 'art-4-0', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2018, 'higher'): (
+        # Q5 Foley's O'Connell Monument (completed 1882); Q7 the Irish-artist list.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q10 Titian (c.1488-1576), 'Assumption of the Virgin': High Renaissance.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-3',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-3',
+    ),
+    (2018, 'ordinary'): (
+        # Q6 the "Dockers Monument" by Mike Duhan (b.1956), in Section 1.
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q9 Giotto and Q10 Donatello: the Renaissance (Proto, Early); Q11
+        # Caravaggio (1571-1610): Baroque.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-3',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-1', 'art-6-3', 'art-6-1',
+    ),
+    (2019, 'higher'): (
+        # Q3 the 12th-century cross at Dysert O'Dea (Insular, c. 500-1100s);
+        # Q6 works on the Great Famine; Q7 the Irish-artist list (one card).
+        'art-5-0', 'art-5-1', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-4', 'art-5-4',
+        # Q11 Turner (1775-1851), Romanticism: no heading of its own (as his
+        # option in 2022 HL Q14); Q13 Matisse's 'Odalisque Wearing Red
+        # Trousers' is Modernism.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-6', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-1',
+    ),
+    (2019, 'ordinary'): (
+        # Q5 William Leech (1881-1968), an Irish artist in Section 1; Q6
+        # 'Misneach' by John Byrne (b.1959).
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4', 'art-5-5', 'art-5-4',
+        # Q11 Caravaggio's 'Supper at Emmaus', with "(b) ... the Baroque style".
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-2', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-1', 'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1', 'art-6-1',
+    ),
+    (2020, 'higher'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4',
+        # Q6 'Fionn Mac Cumhaill and his Hounds' by Lynn Kirkham, a
+        # contemporary public sculpture; Q7 the Irish-artist list (one card).
+        'art-5-5', 'art-5-4',
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-1', 'art-4-3', 'art-4-4',
+        'art-4-6', 'art-4-6',  # Q14, Q15: per option (OPTION_TOPICS)
+        'art-6-0', 'art-6-1', 'art-6-3', 'art-6-3', 'art-6-1',
+    ),
+    (2020, 'ordinary'): (
+        'art-5-0', 'art-5-0', 'art-5-1', 'art-5-3', 'art-5-4',
+        # Q6 'W. B. Yeats' by Rowan Gillespie (b.1953); Q7 the Irish-artist list.
+        'art-5-5', 'art-5-4',
+        # Q11 David's 'Oath of the Horatii', Neoclassical: no heading of its own.
+        'art-4-0', 'art-4-1', 'art-4-1', 'art-4-6', 'art-4-3', 'art-4-4',
+        'art-4-6',  # Q14: per option (OPTION_TOPICS)
+        'art-6-3', 'art-6-0', 'art-6-3', 'art-6-1', 'art-6-1', 'art-6-1', 'art-6-1',
+    ),
+}
 
 LEGACY_TOPIC_OVERRIDES = {
     (2021, 'higher', 2): 'art-5-0',
@@ -292,6 +1466,22 @@ LEGACY_TOPIC_OVERRIDES = {
     (2022, 'ordinary', 19): 'art-6-1',
     (2022, 'ordinary', 20): 'art-6-3',
     (2022, 'ordinary', 21): 'art-6-1',
+    # Section III opens at Q15 at Ordinary Level: an online/television
+    # advertisement (2021) and an animated character's costume and features
+    # (2022), filed like the current papers' advertising and costume tasks.
+    (2021, 'ordinary', 15): 'art-6-1',
+    (2022, 'ordinary', 15): 'art-6-1',
+    # By the Atlas's own mapping. The Q7 lists of Irish artists are one card
+    # (the Atlas gives each question the one heading Irish Art and Modernism);
+    # the 2022 gallery media-and-technology question and the poster and comic
+    # book adaptation questions take the topic the Atlas gives them.
+    (2021, 'higher', 7): 'art-5-4',
+    (2021, 'ordinary', 7): 'art-5-4',
+    (2022, 'higher', 7): 'art-5-4',
+    (2022, 'ordinary', 7): 'art-5-4',
+    (2022, 'higher', 16): 'art-6-1',
+    (2022, 'higher', 18): 'art-6-1',
+    (2021, 'higher', 18): 'art-6-1',
 }
 
 LEGACY_IRISH_TOPIC_KEYWORDS: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -358,6 +1548,10 @@ SPACE_CHARS = ('\xa0', '\u2007', '\u202f')
 LIGATURES = {
     '\u00ad': '', '\ufb00': 'ff', '\ufb01': 'fi', '\ufb02': 'fl',
     '\ufb03': 'ffi', '\ufb04': 'ffl',
+    # Wingdings 0xFC, stored at 0xF000 + its code: the printed tick in
+    # "Use a tick (✓) to indicate your answer" (2023 OL Q5(b)), checked on the
+    # rendered page; derive_glyphs.py maps the same code point the same way.
+    '\uf0fc': '✓',
 }
 
 
@@ -392,12 +1586,27 @@ def expected_numbers(year: int, level: str) -> list[int]:
     return list(range(1, EXPECTED_QUESTIONS_BY_YEAR_LEVEL[(year, level)] + 1))
 
 
-def paper_fileid(level: str) -> str:
-    return f"LC014{'A' if level == 'higher' else 'G'}LP000EV"
+# The written History and Appreciation paper and its illustration sheet carry
+# different SEC component codes over the years (the practical components took
+# the others until 2018): checked against the corpus and the Paper Trail index.
+def written_component(year: int) -> str:
+    return '000' if year == 2010 or year == 2019 or year >= 2021 else '013'
 
 
-def illustration_fileid(level: str) -> str:
-    return f"LC014{'A' if level == 'higher' else 'G'}LP004BV"
+def illustration_component(year: int) -> str:
+    if year == 2010:
+        return '013'
+    return 'C00' if year <= 2018 else '004'
+
+
+def paper_fileid(year: int, level: str) -> str:
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{written_component(year)}EV"
+
+
+def illustration_fileid(year: int, level: str) -> str:
+    # The 2021+ sheets are bilingual (BV); earlier ones are English editions.
+    suffix = 'BV' if year >= 2021 else 'EV'
+    return f"LC014{'A' if level == 'higher' else 'G'}LP{illustration_component(year)}{suffix}"
 
 
 def is_furniture(line: str, year: int) -> bool:
@@ -408,7 +1617,8 @@ def is_furniture(line: str, year: int) -> bool:
         rf'^Leaving Certificate Examination,?\s*{year}\b',
         r'^Art\s*[-–]\s*(?:Visual Studies|History and Appreciation)',
         r'^Section\s+[ABC]\s+(?:Today.s world|Europe and the wider world|Ireland and its place)',
-        r'^Section\s+(?:I|II|III)\s*[-–]',
+        # "Section 111 – Appreciation of Art" is how 2011 Higher prints III.
+        r'^Section\s+(?:I|II|III|111)\s*[-–]',
         r'^Answer any five questions in this section\.?$',
         r'^Answer one question from this section\.?$',
         r'^Optional (?:Planning|Answer) Space',
@@ -416,10 +1626,15 @@ def is_furniture(line: str, year: int) -> bool:
         r'^Label all work clearly',
         r'^Answer for Question\s*$',
         r'^Do not hand this up\.?$',
+        r'^Page \d+ of \d+$',
+        r'^Blank Page$',
         r'^This document will not be returned',
         r'^State Examinations Commission\.?$',
         r'^Coimisiún na Scrúduithe Stáit$',
         r'^\d{1,2}$',
+        # A stray full stop set on a line of its own under 2010 OL Q18's
+        # closing instruction: layout, not a word of the question.
+        r'^\.$',
     )
     return any(re.search(pattern, value, re.I) for pattern in patterns)
 
@@ -449,9 +1664,6 @@ def paper_text(path: str, year: int) -> PagedPaper:
             line = raw.strip()
             if is_furniture(line, year):
                 continue
-            # Empty answer-space labels add no part of the ask.
-            if re.fullmatch(r'Heading\s+[12]:', compact(line), re.I):
-                continue
             kept.append(line)
         chunk = '\n'.join(kept)
         starts.append((cursor, page_number))
@@ -460,8 +1672,11 @@ def paper_text(path: str, year: int) -> PagedPaper:
     return PagedPaper('\n\n'.join(chunks), starts)
 
 
-def clean_prompt(value: str) -> str:
+def clean_prompt(value: str, sentence_lines: bool = False) -> str:
     value = clean_unicode(value)
+    # A hyphenated word broken over two lines keeps its hyphen and loses the
+    # break ("eye-" / "catching" in 2012 OL Q18(a)), as art_printed reads it.
+    value = re.sub(r'(\w[‐-])[ \t]*\n\s*(?=\w)', r'\1', value)
     # The final question has no following question marker to stop its slice.
     # Cut at the first back-matter heading rather than absorbing credits,
     # copyright notices and blank-page instructions into Q19/Q20/Q21.
@@ -480,11 +1695,41 @@ def clean_prompt(value: str) -> str:
     value = re.sub(r'(?m)^\s*[•]\s*', '\n@@BULLET@@ ', value)
     value = re.sub(r'(?mi)^\s*(\([abc]\))\s+', r'\n@@PART@@\1 ', value)
     value = re.sub(r'(?mi)^\s*and\s*$', '\n@@AND@@\n', value)
+    # Tick-box options printed on their own line ("Yes [ ]  No [ ]") keep it,
+    # so they do not run into the sentences either side (2023 OL Q5(b)).
+    value = re.sub(r'(?m)^[ \t]*Yes[ \t]+No[ \t]*$', '\n@@BOXES@@\n', value)
+    # A choose-one directive whose options print one per line with no bullet
+    # marker (2012 OL Q11 "Choose one of the following works and answer (a)
+    # and (b)", 2010 OL Q11 the same with a colon, then the titled works):
+    # each option keeps its own line, as printed.
+    value = re.sub(
+        r'(?mi)^([^\n]*\bone of\s+the following \w+ and answer \(a\)[^\n]*)\n'
+        r'((?:(?![ \t]*(?:\n|@@PART@@))[^\n]*\n)+)',
+        lambda match: match.group(1) + '\n' + ''.join(
+            f'@@LINE@@{line}\n' for line in match.group(2).split('\n')[:-1]),
+        value)
+    if sentence_lines:
+        # The 2021-2022 papers begin each sentence of a task on its own line
+        # ("Discuss this statement ...", "Illustrate your answer."): a line
+        # that ends a sentence keeps its break; a wrapped line is joined. A
+        # blank line may follow the sentence ("• Colin Davidson (b.1968).",
+        # blank, "Describe and discuss ..." in 2013 HL Q7).
+        value = re.sub(r'([.?!])[ \t]*\n(?=(?:[ \t]*\n)*[ \t]*[A-Z‘“\'(])', r'\1\n@@LINE@@', value)
+        # The closing instruction is its own line even after a bullet printed
+        # without a full stop ("• use of colour/light", then "Use sketches to
+        # illustrate your answer." in 2011 OL Q14), and so is the lead-in to
+        # printed headings after a sentence printed without one ("... of the
+        # film", blank, "Use the following headings ..." in 2010 OL Q20).
+        value = re.sub(r'(?m)^[ \t]*(?=(?:Use sketches to illustrate|Illustrate) your answer'
+                       r'|Use the following headings)',
+                       '@@LINE@@', value)
     value = re.sub(r'[ \t]+', ' ', value)
     value = re.sub(r'\s*\n\s*', ' ', value)
     value = value.replace('@@BULLET@@ ', '\n• ')
     value = value.replace('@@PART@@', '\n')
     value = value.replace('@@AND@@', '\nand')
+    value = re.sub(r'\s*@@BOXES@@\s*', '\nYes No\n', value)
+    value = re.sub(r'\s*@@LINE@@\s*', '\n', value)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'[ \t]+\n', '\n', value)
     value = re.sub(r'\n[ \t]+', '\n', value)
@@ -509,7 +1754,27 @@ def extract_questions(year: int, level: str) -> dict[int, dict[str, Any]]:
     for index, match in enumerate(matches):
         number = int(match.group(1))
         end = matches[index + 1].start() if index + 1 < len(matches) else len(paged.text)
-        prompt = clean_prompt(paged.text[match.end():end])
+        raw = paged.text[match.end():end]
+        labels = ANSWER_BOX_LABELS.get((year, level, number), ())
+        if labels:
+            lines = raw.split('\n')
+            for label in labels:
+                hits = [i for i, line in enumerate(lines) if compact(line) == label]
+                if len(hits) != 1:
+                    raise AssertionError(
+                        f'{year} {level} Q{number}: answer-box label {label!r} printed {len(hits)} times')
+                del lines[hits[0]]
+            raw = '\n'.join(lines)
+        if year >= 2023 and number >= 8:
+            # The period heading is printed on the "Question N" line and the
+            # question begins on the next; keep that break.
+            heading, _, body = raw.partition('\n')
+            heading = compact(heading)
+            if not heading:
+                raise AssertionError(f'{year} {level} Q{number}: no printed period heading')
+            prompt = f'{heading}\n{clean_prompt(body)}'
+        else:
+            prompt = clean_prompt(raw, sentence_lines=year <= 2022)
         if len(prompt) < 20:
             raise AssertionError(f'{year} {level} Q{number}: implausibly short prompt {prompt!r}')
         out[number] = {
@@ -525,29 +1790,62 @@ def nonempty_cells(row: Iterable[Any]) -> list[str]:
     return [compact(str(cell)) for cell in row if cell is not None and compact(str(cell))]
 
 
+LEGACY_HEADING = re.compile(r'Q\.?\s*(\d{1,2})\.?(?:\s+Marks)?(?:\s+Notes)?')
+
+
+def legacy_heading(row: list[Any]) -> tuple[int, dict[str, int]] | None:
+    """The question number and column positions a scheme table's heading row
+    names: "Q.1 | | Marks | Notes" and the shorter forms some years print.
+
+    "Q.1", "Q. 10" (2020), "Q1", "Q 16" and "QN." (2010-2015) head the
+    Marks (and Notes) columns; a practical-component table such as "Q1 -
+    LETTERING AND CALLIGRAPHY" is not a written-paper question. In 2014 the
+    heading row can follow a wrapper row and sit one column in, so columns
+    are read from the heading row itself."""
+    cells = [compact(str(cell or '')) for cell in row]
+    match = LEGACY_HEADING.fullmatch(' '.join(cell for cell in cells if cell))
+    if not match:
+        return None
+    label = next((i for i, cell in enumerate(cells) if re.fullmatch(r'Q\.?\s*\d{1,2}\.?', cell)), None)
+    if label is None:
+        return None  # a wrapper row ("Q20 Marks" in one cell): the next row heads
+    marks = cells.index('Marks') if 'Marks' in cells else label + 2
+    notes = cells.index('Notes') if 'Notes' in cells else marks + 1
+    return int(match.group(1)), {'label': label, 'guidance': label + 1, 'marks': marks, 'notes': notes}
+
+
 def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
     document = fitz.open(scheme_path(year, level))
     found: dict[int, dict[str, Any]] = {}
     for page_number, page in enumerate(document, start=1):
         for table in page.find_tables().tables:
             rows = table.extract()
-            if not rows:
+            heading = next(((index, parsed) for index, row in enumerate(rows[:2])
+                            if (parsed := legacy_heading(row))), None)
+            if heading is None:
                 continue
-            heading = ' '.join(nonempty_cells(rows[0]))
-            match = re.search(r'Q\.(\d{1,2})\b', heading)
-            if not match:
-                continue
-            number = int(match.group(1))
+            start, (number, column) = heading
+            if number in found:
+                raise AssertionError(f'{year} {level}: two scheme tables for Q{number}')
+            width = max(column.values()) + 1
             criteria: list[dict[str, Any]] = []
             current: dict[str, Any] | None = None
-            for row in rows[1:]:
-                cells = list(row) + [None] * (4 - len(row))
-                label = compact(str(cells[0] or ''))
-                guidance = compact(str(cells[1] or ''))
-                marks_text = compact(str(cells[2] or ''))
-                note = compact(str(cells[3] or ''))
+            for row_index, row in enumerate(rows[start + 1:], start=start + 1):
+                cells = list(row) + [None] * (width - len(row))
+                boxes = list(table.rows[row_index].cells) + [None] * (width - len(row))
+                label = compact(str(cells[column['label']] or ''))
+                marks_text = compact(str(cells[column['marks']] or ''))
+                # Each row's component and its note, read from the visible text
+                # of their own cells; the note stays the scheme's Notes column.
+                g, n = column['guidance'], column['notes']
+                guidance = (art_printed.cell_text(page, boxes[g])
+                            if boxes[g] is not None and compact(str(cells[g] or '')) else '')
+                note = (art_printed.cell_text(page, boxes[n])
+                        if boxes[n] is not None and compact(str(cells[n] or '')) else '')
                 if guidance.lower().startswith('total'):
                     continue
+                # "A" or, in 2014, "(A)".
+                label = re.sub(r'^\(([A-E])\)$', r'\1', label)
                 if label:
                     if not re.fullmatch(r'[A-E]', label):
                         continue
@@ -557,6 +1855,8 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                         'maxMarks': 0,
                         'permittedMarks': [],
                         'guidance': [],
+                        'rowMarks': [],
+                        'rowNotes': [],
                     }
                     criteria.append(current)
                 if current is None or not guidance or not re.fullmatch(r'\d+', marks_text):
@@ -564,16 +1864,114 @@ def legacy_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
                 marks = int(marks_text)
                 current['maxMarks'] += marks
                 current['guidance'].append(guidance)
-                if note:
-                    current['guidance'].append(f'SEC note: {note}')
+                current['rowMarks'].append(marks)
+                current['rowNotes'].append(note)
             for criterion in criteria:
                 criterion['permittedMarks'] = list(range(criterion['maxMarks'] + 1))
             total = sum(criterion['maxMarks'] for criterion in criteria)
             if total != 50:
                 raise AssertionError(
                     f'{year} {level} Q{number}: legacy scheme totals {total}, not 50')
+            for criterion in criteria:
+                if not any(criterion['rowNotes']):
+                    criterion.pop('rowNotes')
             found[number] = {'schemePage': page_number, 'criteria': criteria}
 
+    expected = expected_numbers(year, level)
+    if sorted(found) != expected:
+        raise AssertionError(
+            f'{year} {level}: legacy scheme questions {sorted(found)}, expected {expected}')
+    return found
+
+
+# Two Ordinary Level schemes whose component tables the table finder cannot
+# separate (2010: ruled lines it does not detect; 2012: later tables folded
+# into the previous table's last cell). Their rows are read from the printed
+# word positions instead: the component letter in the left column, its text
+# in the middle column, its marks in the right column.
+WORD_LAYOUT_SCHEMES = {(2010, 'ordinary'), (2012, 'ordinary')}
+WORD_HEADING = re.compile(r'^(?:Q|Question)\s*\.?\s*(\d{1,2})\.?$')
+
+
+def legacy_scheme_by_words(year: int, level: str) -> dict[int, dict[str, Any]]:
+    document = fitz.open(scheme_path(year, level))
+    start = next(i for i, page in enumerate(document)
+                 if re.search(r'History\s+and\s+Appreciation', page.get_text()))
+    found: dict[int, dict[str, Any]] = {}
+    for page_index in range(start, len(document)):
+        page = document[page_index]
+        words = sorted(art_printed.visible_words(page), key=lambda w: (round(w[1]), w[0]))
+        lines: list[list[tuple]] = []
+        for word in words:
+            if lines and abs(word[1] - lines[-1][0][1]) < 4:
+                lines[-1].append(word)
+            else:
+                lines.append([word])
+        lines = [sorted(line, key=lambda w: w[0]) for line in lines]
+        # The marks column: where most of the numbers in the right half start
+        # (a section heading's number, "SECTION 2", is not a mark).
+        numbers = [round(w[0]) for w in words
+                   if w[0] > page.rect.width * 0.5 and re.fullmatch(r'\d+', w[4])]
+        column = max(set(numbers), key=numbers.count) if numbers else None
+        right = (min(x for x in numbers if abs(x - column) <= 5) - 2) if numbers else page.rect.width * 0.8
+        # Each question: its heading line, then lettered component rows.
+        current_number = None
+        rows: list[dict[str, Any]] = []
+        questions: list[tuple[int, list[dict[str, Any]]]] = []
+        for line in lines:
+            first = line[0][4]
+            heading = WORD_HEADING.match(first) or (
+                len(line) > 1 and WORD_HEADING.match(f'{first} {line[1][4]}'))
+            if heading and line[0][0] < page.rect.width * 0.3:
+                current_number = int(heading.group(1))
+                rows = []
+                questions.append((current_number, rows))
+                continue
+            if current_number is None:
+                continue
+            label = re.sub(r'^\(([A-E])\)$', r'\1', first)
+            if re.fullmatch(r'[A-E]', label) and line[0][0] < page.rect.width * 0.3:
+                text_words = [w for w in line[1:] if w[0] < right]
+                marks = [w for w in line[1:] if w[0] >= right and re.fullmatch(r'\d+', w[4])]
+                rows.append({'label': label, 'top': min(w[1] for w in line),
+                             'x0': min((w[0] for w in text_words), default=None),
+                             'marks': [int(w[4]) for w in marks], 'lines': [line]})
+            elif re.match(r'^Total\b', first, re.I) or re.search(
+                    r'\bSection\b', ' '.join(w[4] for w in line), re.I):
+                rows = []  # a total or a section heading ends the question's rows
+                questions.append((current_number, rows))
+            elif rows:
+                rows[-1]['lines'].append(line)
+        merged: dict[int, list[dict[str, Any]]] = {}
+        for number, components in questions:
+            merged.setdefault(number, []).extend(components)
+        for number, components in merged.items():
+            if not components:
+                continue
+            if number in found:
+                raise AssertionError(f'{year} {level}: two scheme tables for Q{number}')
+            criteria = []
+            for index, row in enumerate(components):
+                x0 = row['x0'] or min(w[0] for line in row['lines'][1:] for w in line)
+                bottom = max(w[3] for line in row['lines'] for w in line if w[0] < right)
+                marks = row['marks'] or [int(w[4]) for line in row['lines'][1:] for w in line
+                                         if w[0] >= right and re.fullmatch(r'\d+', w[4])]
+                if len(marks) != 1:
+                    raise AssertionError(f'{year} {level} Q{number}{row["label"]}: marks {marks}')
+                guidance = art_printed.cell_text(
+                    page, fitz.Rect(x0 - 1, row['top'] - 1, right - 1, bottom + 1))
+                criteria.append({
+                    'id': row['label'].lower(),
+                    'label': f'Part {row["label"]}',
+                    'maxMarks': marks[0],
+                    'permittedMarks': list(range(marks[0] + 1)),
+                    'guidance': [guidance],
+                    'rowMarks': [marks[0]],
+                })
+            total = sum(c['maxMarks'] for c in criteria)
+            if total != 50:
+                raise AssertionError(f'{year} {level} Q{number}: legacy scheme totals {total}, not 50')
+            found[number] = {'schemePage': page_index + 1, 'criteria': criteria}
     expected = expected_numbers(year, level)
     if sorted(found) != expected:
         raise AssertionError(
@@ -590,14 +1988,20 @@ def parse_range(value: str) -> list[int]:
     raise AssertionError(f'cannot read Art descriptor range {value!r}')
 
 
-def parse_short_table(table: Any) -> list[dict[str, Any]]:
+def parse_short_table(table: Any, page: Any) -> list[dict[str, Any]]:
     rows = table.extract()
     criteria: list[dict[str, Any]] = []
     for index, row in enumerate(rows):
         cells = nonempty_cells(row)
         if len(cells) != 1 or not re.search(r'\([ab]\)', cells[0], re.I):
             continue
-        guidance = cells[0]
+        # The row's visible text, read from its own cell: some schemes hide
+        # white dot leaders inside a row, which the table text would keep.
+        boxes = [box for box, cell in zip(table.rows[index].cells, row)
+                 if box is not None and cell is not None and compact(str(cell))]
+        if len(boxes) != 1:
+            raise AssertionError(f'Art scheme row is not one cell: {cells!r}')
+        guidance = art_printed.cell_text(page, boxes[0])
         band_header = nonempty_cells(rows[index + 1]) if index + 1 < len(rows) else []
         band_ranges = nonempty_cells(rows[index + 2]) if index + 2 < len(rows) else []
         marks_cell = next((cell for cell in band_header if re.search(r'\d+\s*Marks?', cell, re.I)), None)
@@ -643,7 +2047,7 @@ def current_short_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
         for number, table in zip(question_numbers, candidate_tables):
             found[number] = {
                 'schemePage': page_number,
-                'criteria': parse_short_table(table),
+                'criteria': parse_short_table(table, page),
             }
     if sorted(found) != list(range(1, 8)):
         raise AssertionError(
@@ -651,11 +2055,16 @@ def current_short_scheme(year: int, level: str) -> dict[int, dict[str, Any]]:
     return found
 
 
-def section_for(year: int, number: int) -> str:
+# The legacy papers print Section III (Appreciation of Art) from Q16 at Higher
+# Level but from Q15 at Ordinary Level, whose Section II has seven questions.
+LEGACY_SECTION_III_FROM = {'higher': 16, 'ordinary': 15}
+
+
+def section_for(year: int, level: str, number: int) -> str:
     if year <= 2022:
         if number <= 7:
             return '1'
-        if number <= 15:
+        if number < LEGACY_SECTION_III_FROM[level]:
             return '2'
         return '3'
     if number <= 7:
@@ -670,6 +2079,11 @@ def topic_for(year: int, level: str, number: int, prompt: str) -> str:
         return LONG_TOPIC[number]
     if year >= 2023:
         return CURRENT_SHORT_TOPICS[(year, level, number)]
+    if (year, level) in LEGACY_QUESTION_TOPICS:
+        topics = LEGACY_QUESTION_TOPICS[(year, level)]
+        if len(topics) != EXPECTED_QUESTIONS_BY_YEAR_LEVEL[(year, level)]:
+            raise AssertionError(f'{year} {level}: {len(topics)} reviewed topics')
+        return topics[number - 1]
     override = LEGACY_TOPIC_OVERRIDES.get((year, level, number))
     if override:
         return override
@@ -679,7 +2093,7 @@ def topic_for(year: int, level: str, number: int, prompt: str) -> str:
             if any(comparable(keyword) in text for keyword in keywords):
                 return topic
         return 'art-5-4'
-    if year <= 2022 and number <= 15:
+    if year <= 2022 and number < LEGACY_SECTION_III_FROM[level]:
         matches = [topic for topic, keywords in EUROPE_TOPIC_KEYWORDS
                    if any(comparable(keyword) in text for keyword in keywords)]
         return matches[0] if len(set(matches)) == 1 else 'art-4-6'
@@ -728,70 +2142,39 @@ def task_requirements(prompt: str) -> list[str]:
     return [re.sub(r'^and\s+', '', chunk, flags=re.I) for chunk in chunks]
 
 
-def select_printed_choice(prompt: str, choices: tuple[tuple[str, str], ...],
-                          selected: str) -> str:
-    """Keep one fixed SEC bullet choice while preserving its printed task.
-
-    The final bullet often continues straight into the instruction (for example
-    ``Alice Maher ... Describe and discuss``).  Its suffix therefore belongs to
-    every selected variant, not only to the final option in the source list.
-    """
+def verify_printed_choices(prompt: str, choices: tuple[tuple[str, str], ...]) -> None:
+    """Every option of a reviewed choice pool is printed in the question, in
+    order, as a bullet or in an inline list (2025 HL Q12, 2026 OL Q12; 2013
+    OL Q20(b) "one of the following objects to suit your own needs: a table
+    lamp, a hand-held torch or a set of head phones")."""
     labels = [label for _, label in choices]
-    lines = prompt.splitlines()
-    matched: list[tuple[int, str]] = []
-    for index, line in enumerate(lines):
-        if not line.startswith('• '):
-            continue
-        body = line[2:]
-        label = next((candidate for candidate in labels if body.startswith(candidate)), None)
-        if label is not None:
-            matched.append((index, label))
-    # The 2025 HL Modernism alternatives are printed inline rather than as a
-    # bullet list. Turn that one printed choice into an explicit standalone
-    # practice prompt while retaining every following instruction verbatim.
-    if not matched:
-        inline = ', '.join(labels[:-1]) + f', {labels[-1]}'
-        marker = f'one of the following: {inline}'
-        if marker in prompt:
-            return prompt.replace(marker, selected, 1)
-        return prompt
-    if [label for _, label in matched] != labels:
+    # A bulleted option, or one printed on its own line without a marker
+    # (2012 OL Q11).
+    bodies = [line[2:] if line.startswith('• ') else line for line in prompt.splitlines()]
+    printed = [label for label in labels if any(body.startswith(label) for body in bodies)]
+    inline = re.compile(r'one of the following[^:.\n]*: '
+                        + r'(?:,? or |, )'.join(re.escape(label) for label in labels))
+    if printed != labels and not inline.search(prompt):
         raise AssertionError(f'printed Art choices do not match paper text: {labels!r}')
-    first, last = matched[0][0], matched[-1][0]
-    last_body = lines[last][2:]
-    tail = last_body[len(labels[-1]):]
-    selected_line = f'• {selected}{tail}'
-    return '\n'.join([*lines[:first], selected_line, *lines[last + 1:]]).strip()
 
 
-def task_combination_variants(year: int, level: str, number: int,
-                              suffix: str) -> tuple[tuple[str, str], ...]:
-    """Return every printed choose-N combination for one marked task."""
+def verify_task_combination(year: int, level: str, number: int, suffix: str,
+                            prompt: str) -> bool:
+    """A reviewed choose-N pool is printed in this task's own instruction."""
     spec = TASK_COMBINATION_CHOICES.get((year, level, number, suffix))
     if spec is None:
-        return ()
+        return False
     choose, items = spec
     if choose <= 0 or choose > len(items):
         raise AssertionError(
             f'{year} {level} Q{number}({suffix}): invalid choose-{choose} pool')
-    return tuple(
-        ('-'.join(slug for slug, _ in selected),
-         ' and '.join(label for _, label in selected))
-        for selected in itertools.combinations(items, choose)
-    )
-
-
-def select_task_combination(prompt: str, selected: str) -> str:
-    """Make one finite heading combination explicit in the printed task."""
     marker = re.compile(
         r'using any two of the following headings:\s*'
         r'colour,\s*texture,\s*line,\s*pattern,\s*shape', re.I)
-    replacement = f'using the following two printed headings: {selected}'
-    revised, count = marker.subn(replacement, prompt, count=1)
-    if count != 1:
+    if not marker.search(prompt):
         raise AssertionError(
             f'closed Art task combination did not match paper text: {prompt!r}')
-    return revised
+    return True
 
 
 def audit_closed_choice_directives(year: int, level: str,
@@ -809,7 +2192,9 @@ def audit_closed_choice_directives(year: int, level: str,
     for number, question in questions.items():
         prompt = question['questionText']
         outer_key = (year, level, number)
-        choose_one = re.search(r'\bone of the following\b', prompt, re.I)
+        # "one of the following ..." or "one of the amenities above" (2016 OL
+        # Q20(b) choosing from the list printed in (a)).
+        choose_one = re.search(r'\bone of the (?:following|\w+ above)\b', prompt, re.I)
         if choose_one and outer_key not in PRINTED_CHOICES:
             raise AssertionError(
                 f'{year} {level} Q{number}: unreviewed choose-one directive')
@@ -884,14 +2269,21 @@ def audit_closed_choice_directives(year: int, level: str,
 
 
 def meaningful_preamble(value: str) -> str | None:
-    """Retain artwork/context prose but drop a bare ``Answer (a)…`` direction."""
+    """Retain artwork/context prose but drop a bare ``Answer (a)…`` direction,
+    printed after the context or, as in 2013 HL Q17, on its own line before it.
+
+    The direction is its own sentence. Inside a sentence it stays, so the
+    sentence keeps its end: "Choose one Georgian building that you have
+    studied and answer (a), (b) and (c)." (2017 OL Q4; 2012 OL Q4)."""
+    direction = (r'Answer\s+\(a\)'
+                 r'(?:\s*,?\s*(?:and\s*)?\(b\))?'
+                 r'(?:\s*,?\s*(?:and\s*)?\(c\))?'
+                 r'\.?')
     value = value.strip()
-    value = re.sub(
-        r'(?i)(?:^|\s+)Answer\s+\(a\)'
-        r'(?:\s*,?\s*(?:and\s*)?\(b\))?'
-        r'(?:\s*,?\s*(?:and\s*)?\(c\))?'
-        r'\.?\s*$',
-        '', value).strip()
+    value = re.sub(r'(?:^|\s+)' + direction + r'\s*$', '', value).strip()
+    # Before the context: on its own line, or run into the context sentence
+    # ("Answer (a) and (b) Your art class has been asked ..." in 2011 OL Q21).
+    value = re.sub(r'^' + direction + r'(?:[ \t]*\n|[ \t]+(?=[A-Z‘“]))', '', value).strip()
     return value or None
 
 
@@ -909,9 +2301,11 @@ def split_printed_tasks(prompt: str) -> list[dict[str, Any]]:
             'suffix': match.group(1).lower(),
             'reference': f'({match.group(1).lower()})',
             'stem': preamble,
-            'questionText': prompt[
+            # A standalone "and" printed between two lettered parts (2013 HL
+            # Q1 "(b) ... and (c) ...") joins them; each part is its own card.
+            'questionText': re.sub(r'\n[ \t]*and[ \t]*$', '', prompt[
                 match.start():parts[index + 1].start() if index + 1 < len(parts) else len(prompt)
-            ].strip(),
+            ].strip()),
         } for index, match in enumerate(parts)]
 
     linked = re.split(r'(?mi)^\s*and\s+', prompt, maxsplit=1)
@@ -942,30 +2336,167 @@ def split_printed_tasks(prompt: str) -> list[dict[str, Any]]:
     }]
 
 
+GROUPING_STOP = set('''description discussion describe discuss with reference your answer using
+following headings this that these those from have their there which what when where about refer referring
+given illustrated illustration accompanying sheet part parts'''.split())
+
+
+def grouping_words(text: str) -> set[str]:
+    out = set()
+    for word in re.findall(r'[^\W\d_]{4,}', text.lower()):
+        word = {'briefly': 'brief', 'names': 'name', 'named': 'name', 'works': 'work'}.get(word, word)
+        if word not in GROUPING_STOP:
+            out.add(word)
+    return out
+
+
+def is_sketch_component(criterion: dict[str, Any]) -> bool:
+    return bool(re.match(r'(?:Sketches|Illustrations?)\b', ' '.join(criterion['guidance']).strip(), re.I))
+
+
 def legacy_criterion_groups(criteria: list[dict[str, Any]],
-                            unit_count: int) -> list[list[dict[str, Any]]]:
+                            units: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
     """Map the outgoing scheme's named components to printed task boundaries.
 
-    The final component is the sketches allocation and travels with the final
-    printed task, where ``Illustrate your answer`` appears.  Multi-component
-    first tasks (for example statement + two monuments) remain one card because
-    those components mark one continuous printed directive.
+    The components are printed in task order, so each printed task takes a
+    consecutive run of them and every task takes at least one. The run
+    boundaries are chosen to maximise the words each component shares with
+    its own task's printed text ("Brief description and discussion of one
+    other ..." with "Briefly describe and discuss one other ..."); the
+    sketches (or illustrations) allocation travels with the final task, where
+    "Illustrate your answer" is printed. A first task marked by several
+    components (statement + two monuments) remains one card.
     """
-    shape = (unit_count, len(criteria))
-    boundaries = {
-        (1, 4): ((0, 4),),
-        (2, 3): ((0, 1), (1, 3)),
-        (2, 4): ((0, 2), (2, 4)),
-        (2, 5): ((0, 3), (3, 5)),
-        (3, 4): ((0, 1), (1, 2), (2, 4)),
-    }.get(shape)
-    if boundaries is None:
-        raise AssertionError(f'unmapped legacy Art task/criterion shape {shape}')
-    return [criteria[start:end] for start, end in boundaries]
+    n, m = len(units), len(criteria)
+    if m < n:
+        raise AssertionError(f'{m} Art scheme components for {n} printed tasks')
+    texts = [grouping_words(unit['questionText']) for unit in units]
+
+    def score(ci: int, ui: int) -> int:
+        criterion = criteria[ci]
+        if is_sketch_component(criterion):
+            return 100 if ui == n - 1 else -100
+        return len(grouping_words(' '.join(criterion['guidance'])) & texts[ui])
+
+    negative = -10 ** 9
+    best = [[negative] * n for _ in range(m)]
+    back: list[list[int | None]] = [[None] * n for _ in range(m)]
+    best[0][0] = score(0, 0)
+    for ci in range(1, m):
+        for ui in range(n):
+            candidates = [(best[ci - 1][ui], ui)]
+            if ui > 0:
+                candidates.append((best[ci - 1][ui - 1], ui - 1))
+            value, previous = max(candidates)
+            if value > negative:
+                best[ci][ui] = value + score(ci, ui)
+                back[ci][ui] = previous
+    if best[m - 1][n - 1] <= negative:
+        raise AssertionError('Art scheme components cannot cover every printed task')
+    assign = [0] * m
+    ui = n - 1
+    for ci in range(m - 1, -1, -1):
+        assign[ci] = ui
+        if ci:
+            ui = back[ci][ui]
+    return [[criteria[ci] for ci in range(m) if assign[ci] == k] for k in range(n)]
+
+
+# Where the word overlap between a scheme component and the printed tasks
+# ties, the run boundary is reviewed against the paper and pinned here: the
+# number of consecutive scheme components each printed task takes. The build
+# fails on an entry the word overlap would already reproduce.
+REVIEWED_COMPONENT_RUNS: dict[tuple[int, str, int], tuple[tuple[int, ...], str]] = {
+    (2011, 'higher', 5): ((3, 2), (
+        'The first task, "Discuss this statement while comparing the works", takes A and B '
+        '(each painting) and C "Brief comparison of the two works illustrated"; "Write a brief '
+        'account of either artist" takes D "Brief account of either artist" and E "Sketches".')),
+    (2011, 'higher', 16): ((2, 2), (
+        'The first task, "Discuss this statement with reference to any one of Pixar’s '
+        'productions", takes A "Discussion of the given statement" and B "Discussion of the chosen '
+        'Pixar film"; the second, two film-making techniques, takes C and D "Sketches".')),
+    (2011, 'ordinary', 19): ((2, 1), (
+        '(a) "Describe and sketch your ideas for the overall design of this park" takes A and '
+        'B "Sketches", printed second in the scheme; (b) "Discuss the security and safety '
+        'considerations" takes C. The sketches do not travel with the last task here.')),
+    (2012, 'ordinary', 10): ((2, 2), (
+        '(a) "Name, describe and discuss one work of your choice by Michelangelo" takes '
+        'A "Name of work" and B "Describe and discuss one work"; (b) "Give a brief account '
+        'of Michelangelo’s work in general" takes C "Brief account of Michelangelo’s '
+        'work" and D "Sketches". B shares only "work" with either task.')),
+}
+
+
+def reviewed_component_runs(key: tuple[int, str, int], criteria: list[dict[str, Any]],
+                            units: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
+    runs, _reason = REVIEWED_COMPONENT_RUNS[key]
+    if len(runs) != len(units) or sum(runs) != len(criteria) or min(runs) < 1:
+        raise AssertionError(f'{key}: reviewed component runs {runs} do not fit '
+                             f'{len(criteria)} components over {len(units)} tasks')
+    groups, start = [], 0
+    for size in runs:
+        groups.append(criteria[start:start + size])
+        start += size
+    if groups == legacy_criterion_groups(criteria, units):
+        raise AssertionError(f'{key}: stale reviewed component runs; the word overlap agrees')
+    return groups
 
 
 def compact_requirement(question_text: str) -> str:
     return compact(question_text.replace('\n• ', '; '))
+
+
+def printed_requirements(question_text: str, assessment: str, stem: str | None = None,
+                         options: tuple[str, ...] = (), chosen: str | None = None) -> list[str]:
+    """The task check of an audited card: the paper's own lines, one each.
+
+    A Section B/C question's first line is its period heading, a title rather
+    than an ask, so it is left out; a printed bullet loses only its marker. A
+    stem sentence that is itself an instruction to every part ("Name one
+    artwork that you have seen ...") comes first."""
+    lines = [line for line in question_text.split('\n') if line.strip()]
+    if assessment == 'current-long-descriptors':
+        lines = lines[1:]
+    asks = [sentence
+            for stem_line in (stem or '').split('\n') if not stem_line.startswith('• ')
+            # Not after an initial: "Jack B. Yeats" (2011 OL Q7) is one name.
+            for sentence in re.split(r'(?<=[.?!])(?<!\s[A-Z]\.)\s+', stem_line)
+            if re.match(r'^(?:Name|Identify|Choose|Select)\b', sentence)]
+    # The option a per-option card practises, where the stem prints the list.
+    # A per-option card's option is a bullet, or its own unmarked line (2012 OL Q11).
+    asks += [re.sub(r'^• ', '', stem_line) for stem_line in (stem or '').split('\n')
+             if chosen and re.sub(r'^• ', '', stem_line).startswith(chosen)]
+    # A tick-box options line is where the answer goes, not an ask; a printed
+    # option of a choice ("• Paolo Uccello (c.1397-1475)") is not an ask
+    # either, except the option a per-option card practises.
+    # Only where this task prints the choice: in 2016 OL Q20 the amenities are
+    # headings (a) must include, and (b) then chooses one of them.
+    choosing = bool(re.search(r'\bone of the following\b', question_text, re.I))
+
+    def is_other_option(line: str) -> bool:
+        body = line[2:] if line.startswith('• ') else None
+        return (choosing and body is not None and any(body.startswith(label) for label in options)
+                and not (chosen and body.startswith(chosen)))
+    lines = [line for line in lines if line.strip() != 'Yes No' and not is_other_option(line)]
+    out = asks + [re.sub(r'^•\s*', '', line).strip() for line in lines]
+    if not out or any(not line for line in out):
+        raise AssertionError(f'no printed requirement lines in {question_text!r}')
+    return out
+
+
+_PRINTED_SCHEMES: dict[tuple[int, str], dict[str, Any]] = {}
+
+
+def printed_scheme(year: int, level: str) -> dict[str, Any]:
+    """An audited year's descriptors and marking notes, lifted from its scheme."""
+    key = (year, level)
+    if key not in _PRINTED_SCHEMES:
+        _PRINTED_SCHEMES[key] = {
+            'short': art_printed.short_descriptors(year, level),
+            'long': art_printed.long_descriptors(year, level),
+            'notes': art_printed.scheme_notes(year, level),
+        }
+    return _PRINTED_SCHEMES[key]
 
 
 def source_material(year: int, level: str, number: int) -> dict[str, Any] | None:
@@ -977,7 +2508,7 @@ def source_material(year: int, level: str, number: int) -> dict[str, Any] | None
         'label': f'ILLUSTRATION SHEET · Q{number}',
         'title': f'Official illustrations for Question {number}',
         'pages': [page],
-        'sourceFileid': illustration_fileid(level),
+        'sourceFileid': illustration_fileid(year, level),
         'attribution': (
             'Official State Examinations Commission illustration sheet; '
             'individual artwork credits are printed on the sheet.'),
@@ -990,7 +2521,7 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
                     scheme: dict[str, Any] | None) -> dict[str, Any]:
     current_long = year >= 2023 and number >= 8
     total_marks = 10 if year >= 2023 and number <= 7 else 50
-    section = section_for(year, number)
+    section = section_for(year, level, number)
     ref = f'{year} {LEVEL_REF[level]} Q{number}'
     card_id = f'art-{year}-{LEVEL_SHORT[level]}-q{number}'
 
@@ -1002,6 +2533,16 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
             raise AssertionError(f'{ref}: missing question-specific scheme')
         criteria = scheme['criteria']
         scheme_page = scheme['schemePage']
+    if year in AUDITED_YEARS and year >= 2023:
+        # Every page the card quotes: the marking note, the descriptor(s) and,
+        # for Section A, the question's own scheme row.
+        lifted = printed_scheme(year, level)
+        if current_long:
+            scheme_page = [lifted['notes']['current-long-descriptors']['page'],
+                           *(criterion['page'] for criterion in lifted['long'])]
+        else:
+            scheme_page = [lifted['notes']['current-short-descriptors']['page'],
+                           lifted['short']['page'], scheme['schemePage']]
 
     source = source_material(year, level, number)
     card: dict[str, Any] = {
@@ -1012,7 +2553,7 @@ def make_outer_card(year: int, level: str, number: int, prompt: dict[str, Any],
         'questionRef': ref,
         'questionText': prompt['questionText'],
         'paperPage': prompt['paperPage'],
-        'paperFileid': paper_fileid(level),
+        'paperFileid': paper_fileid(year, level),
         'totalMarks': total_marks,
         'schemePage': scheme_page,
         'topicId': topic_for(year, level, number, prompt['questionText']),
@@ -1036,15 +2577,29 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
     level = outer['level']
     number = int(re.search(r'q(\d+)$', outer['id']).group(1))
     choices = PRINTED_CHOICES.get((year, level, number), ())
-    variants: tuple[tuple[str | None, str | None], ...] = (
-        tuple((slug, label) for slug, label in choices)
-        if choices else ((None, None),)
-    )
+    if choices:
+        verify_printed_choices(outer['questionText'], choices)
+    option_topics = OPTION_TOPICS.get((year, level, number))
+    if option_topics is not None:
+        if set(option_topics) != {slug for slug, _ in choices}:
+            raise AssertionError(f"{outer['id']}: option topics do not match the printed choices")
+        if len(set(option_topics.values())) < 2:
+            raise AssertionError(
+                f"{outer['id']}: every option files under one heading, so it is one card")
+        # Options under different Atlas headings: one card per option, each
+        # with the printed question verbatim and the option in its reference.
+        variants: tuple[tuple[str | None, str | None], ...] = tuple(choices)
+    else:
+        # One card per printed task, whatever the student chooses inside it.
+        # The first option's key keeps the established id of a card that was
+        # once built per option (2021–2025); a choice first built as one card
+        # has the plain question id.
+        keep_slug = choices and 2021 <= year <= 2025
+        variants = ((choices[0][0], None),) if keep_slug else ((None, None),)
     expanded: list[dict[str, Any]] = []
 
     for choice_slug, choice_label in variants:
-        prompt = (select_printed_choice(outer['questionText'], choices, choice_label)
-                  if choice_label else outer['questionText'])
+        prompt = outer['questionText']
         units = split_printed_tasks(prompt)
         if outer['assessment'] == 'current-long-descriptors':
             if len(units) != 1:
@@ -1054,8 +2609,11 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
             if len(units) != 2 or len(outer['criteria']) != 2:
                 raise AssertionError(f"{outer['id']}: Section A must split into (a) and (b)")
             criterion_groups = [[criterion] for criterion in outer['criteria']]
+        elif (year, level, number) in REVIEWED_COMPONENT_RUNS:
+            criterion_groups = reviewed_component_runs(
+                (year, level, number), outer['criteria'], units)
         else:
-            criterion_groups = legacy_criterion_groups(outer['criteria'], len(units))
+            criterion_groups = legacy_criterion_groups(outer['criteria'], units)
 
         if len(units) != len(criterion_groups):
             raise AssertionError(
@@ -1079,27 +2637,20 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
         for unit, criteria in zip(units, criterion_groups):
             suffix = unit['suffix']
-            task_choices = task_combination_variants(year, level, number, suffix)
+            combination = verify_task_combination(year, level, number, suffix, unit['questionText'])
+            # The first combination's slug only names the stable concept id.
             task_variants: tuple[tuple[str | None, str | None], ...] = (
-                task_choices if task_choices else ((None, None),)
-            )
+                (('-'.join(slug for slug, _ in TASK_COMBINATION_CHOICES[(year, level, number, suffix)][1][:2]), None),)
+                if combination else ((None, None),))
             for task_slug, task_label in task_variants:
-                task_variant_index = (
-                    next(index for index, (slug, _) in enumerate(task_choices, start=1)
-                         if slug == task_slug)
-                    if task_slug else None
-                )
-                question_text = (
-                    select_task_combination(unit['questionText'], task_label)
-                    if task_label else unit['questionText']
-                )
+                task_variant_index = 1 if task_slug else None
+                question_text = unit['questionText']
                 suffix_parts: list[str] = []
                 # Preserve the established id grammar: an unsplit fixed-choice
-                # card uses the choice slug directly, while an unsplit current
-                # long response keeps the numbered question's base id.
-                if (suffix != 'response'
-                        or (not choice_slug
-                            and outer['assessment'] != 'current-long-descriptors')):
+                # card uses the choice slug directly, and an unsplit response
+                # (a current long question, or a 2010-2020 question printed as
+                # one task) keeps the numbered question's base id.
+                if suffix != 'response':
                     suffix_parts.append(suffix)
                 if choice_slug:
                     suffix_parts.append(choice_slug)
@@ -1115,22 +2666,12 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
                 stem_parts: list[str] = []
                 stem = unit.get('stem')
-                if choice_label and choice_label not in question_text:
-                    # A fixed choice is the only context later parts need. Avoid
-                    # repeating the whole choice list and its obsolete "answer
-                    # (a), (b)…" direction above every standalone card.
-                    stem_parts.append(f'Printed choice: {choice_label}')
-                elif stem:
+                if stem:
                     stem_parts.append(stem)
 
                 reference = f"{outer['questionRef']}{unit['reference']}"
-                if choice_slug:
-                    choice_index = next(
-                        index for index, (slug, _) in enumerate(choices, start=1)
-                        if slug == choice_slug)
-                    reference += f' · option {choice_index}'
-                if task_slug:
-                    reference += f' · heading pair {task_variant_index}'
+                if choice_label:
+                    reference += f' · {choice_label}'
 
                 concept_suffixes = [suffix]
                 if choice_slug:
@@ -1141,9 +2682,16 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
                     **outer,
                     'id': card_id,
                     'questionRef': reference,
+                    'topicId': option_topics[choice_slug] if choice_label else outer['topicId'],
                     'questionText': question_text,
                     'conceptId': f"{outer['conceptId']}-{'-'.join(concept_suffixes)}",
-                    'taskRequirements': [compact_requirement(question_text)],
+                    'taskRequirements': (
+                        printed_requirements(
+                            question_text, outer['assessment'],
+                            unit.get('stem') if suffix in ('a', 'b', 'c') else None,
+                            tuple(label for _, label in choices), choice_label)
+                        if year in AUDITED_YEARS
+                        else [compact_requirement(question_text)]),
                 }
                 if stem_parts:
                     card['stem'] = ' '.join(stem_parts)
@@ -1162,13 +2710,17 @@ def expand_outer_card(outer: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def build() -> tuple[dict[str, Any], dict[str, Any]]:
+    if set(YEARS) - set(AUDITED_YEARS):
+        raise AssertionError(f'unaudited Art years {sorted(set(YEARS) - set(AUDITED_YEARS))}: '
+                             'lift their wording before carding them')
     cards: list[dict[str, Any]] = []
     papers: list[dict[str, Any]] = []
     for year in YEARS:
         for level in LEVELS:
             questions = extract_questions(year, level)
             audit_closed_choice_directives(year, level, questions)
-            schemes = (legacy_scheme(year, level) if year <= 2022
+            schemes = (legacy_scheme_by_words(year, level) if (year, level) in WORD_LAYOUT_SCHEMES
+                       else legacy_scheme(year, level) if year <= 2022
                        else current_short_scheme(year, level))
             paper_cards: list[dict[str, Any]] = []
             for number in expected_numbers(year, level):
@@ -1191,32 +2743,39 @@ def build() -> tuple[dict[str, Any], dict[str, Any]]:
             papers.append({
                 'year': year,
                 'level': level,
-                'paperFileid': paper_fileid(level),
+                'paperFileid': paper_fileid(year, level),
                 'expectedCards': expected,
                 'cards': paper_cards,
             })
 
-    if len(cards) != 462 or len({card['id'] for card in cards}) != 462:
-        raise AssertionError('Art corpus must contain exactly 462 unique cards')
-    if sum(card['level'] == 'higher' for card in cards) != 222:
-        raise AssertionError('Art Higher Level corpus must contain 222 cards')
-    if sum(card['level'] == 'ordinary' for card in cards) != 240:
-        raise AssertionError('Art Ordinary Level corpus must contain 240 cards')
+    total = sum(EXPECTED_CARDS_BY_YEAR_LEVEL.values())
+    higher = sum(n for (_, level), n in EXPECTED_CARDS_BY_YEAR_LEVEL.items() if level == 'higher')
+    if len(cards) != total or len({card['id'] for card in cards}) != total:
+        raise AssertionError(f'Art corpus must contain exactly {total} unique cards')
+    if sum(card['level'] == 'higher' for card in cards) != higher:
+        raise AssertionError(f'Art Higher Level corpus must contain {higher} cards')
 
     runtime = {
         'subjectId': 'art',
-        'corpus': 'All separately marked written-examination tasks and finite printed routes, 2021–2025',
-        'cardCount': 462,
+        'corpus': 'All separately marked written-examination tasks, 2010–2026; a printed choice is one card',
+        'cardCount': len(cards),
+        'auditedYears': list(AUDITED_YEARS),
+        # Lifted from each audited year's scheme by art_printed.py; the cards
+        # of that year and level show these and nothing written by us.
+        'descriptors': {
+            f'{year}-{level}': printed_scheme(year, level)
+            for year in AUDITED_YEARS if year >= 2023 for level in LEVELS
+        },
         'cards': cards,
     }
     census = {
         'subjectId': 'art',
-        'years': [2021, 2022, 2023, 2024, 2025],
+        'years': list(YEARS),
         'levels': ['higher', 'ordinary'],
         'selectionUnit': (
-            'One card per separately marked printed task; every fixed named choice and finite '
-            'choose-N combination is expanded, while holistic Section B/C essays remain intact.'),
-        'expectedCards': {'higher': 222, 'ordinary': 240, 'total': 462},
+            'One card per separately marked printed task. Where the student chooses among printed '
+            'items, the task is one card showing every option; holistic Section B/C essays remain intact.'),
+        'expectedCards': {'higher': higher, 'ordinary': total - higher, 'total': total},
         'papers': papers,
     }
     return runtime, census
@@ -1240,14 +2799,16 @@ def main() -> int:
         if stale:
             print('Art generated files are stale: ' + ', '.join(stale), file=sys.stderr)
             return 1
-        print('Art authoring check: 462/462 cards match the ten-paper task census.')
+        print(f"Art authoring check: {runtime['cardCount']}/{runtime['cardCount']} cards match the "
+              f"{len(census['papers'])}-paper task census.")
         return 0
 
     for path, value in outputs:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8') as handle:
             handle.write(encoded(value))
-    print('Art: authored 462 cards (222 Higher, 240 Ordinary); census 462/462.')
+    higher = sum(card['level'] == 'higher' for card in runtime['cards'])
+    print(f"Art: authored {runtime['cardCount']} cards ({higher} Higher, {runtime['cardCount'] - higher} Ordinary).")
     return 0
 
 

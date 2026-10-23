@@ -1,3 +1,9 @@
+import { CONSTRUCTION_2015_HIGHER_REVIEWED_IDS, CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS } from './fixtures/construction2015Reviewed';
+import { CONSTRUCTION_2026_HIGHER_REVIEWED_IDS, CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS } from './fixtures/construction2026Reviewed';
+import { CONSTRUCTION_2025_HIGHER_ADDED_IDS, CONSTRUCTION_2025_ORDINARY_ADDED_IDS } from './fixtures/construction2025Reviewed';
+import { CONSTRUCTION_2024_HIGHER_ADDED_IDS, CONSTRUCTION_2024_ORDINARY_ADDED_IDS } from './fixtures/construction2024Reviewed';
+import { CONSTRUCTION_2023_HIGHER_ADDED_IDS, CONSTRUCTION_2023_ORDINARY_ADDED_IDS } from './fixtures/construction2023Reviewed';
+import { CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS } from './fixtures/constructionReviewedPapers';
 /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
@@ -293,17 +299,25 @@ describe('Construction Studies exam-topic registry', () => {
     expect({ schemeMaps, paperOnlyMaps }).toEqual({ schemeMaps: 64, paperOnlyMaps: 4 });
   });
 
-  it('surfaces 323 written questions and preserves all 505 Mark Bank cards', () => {
+  it('surfaces 323 written questions, preserves 505 prior cards and adds the source-reviewed 2015 tasks', () => {
     expect(subjectAtlasStats('construction-studies')).toMatchObject({
       questions: 323,
       topics: 103,
       yearMin: 2010,
       yearMax: 2026,
     });
-    expect(CONSTRUCTION_HIGHER).toHaveLength(255);
-    expect(CONSTRUCTION_ORDINARY).toHaveLength(250);
+    // A pre-audit card consolidated into the surviving card for its printed choice (choice is not a route)
+    // leaves the deck through a recorded withdrawal; its ID stays live as a progress alias.
+    const aliased = fs.readdirSync('scripts/markbank/authored').filter(n => /^construction-studies-.*-reviewed\.json$/.test(n))
+      .flatMap(n => (JSON.parse(fs.readFileSync(`scripts/markbank/authored/${n}`, 'utf8')).withdrawn ?? []) as Array<{cardId: string; aliasOf?: string}>)
+      .filter(w => w.aliasOf).map(w => w.cardId);
+    const aliasedHigher = aliased.filter(id => id.includes('-hl-')).length;
+    const aliasedOrdinary = aliased.filter(id => id.includes('-ol-')).length;
+    expect(aliasedHigher + aliasedOrdinary).toBe(aliased.length);
+    expect(CONSTRUCTION_HIGHER).toHaveLength(255 - aliasedHigher + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length + CONSTRUCTION_2024_HIGHER_ADDED_IDS.length + CONSTRUCTION_2023_HIGHER_ADDED_IDS.length + CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS.length);
+    expect(CONSTRUCTION_ORDINARY).toHaveLength(250 - aliasedOrdinary + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length + CONSTRUCTION_2024_ORDINARY_ADDED_IDS.length + CONSTRUCTION_2023_ORDINARY_ADDED_IDS.length + CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS.length);
     expect(new Set(
       [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].map(card => card.id),
-    ).size).toBe(505);
+    ).size).toBe(505 - aliased.length + CONSTRUCTION_2015_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2015_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2026_HIGHER_REVIEWED_IDS.length + CONSTRUCTION_2026_ORDINARY_REVIEWED_IDS.length + CONSTRUCTION_2025_HIGHER_ADDED_IDS.length + CONSTRUCTION_2025_ORDINARY_ADDED_IDS.length + CONSTRUCTION_2024_HIGHER_ADDED_IDS.length + CONSTRUCTION_2024_ORDINARY_ADDED_IDS.length + CONSTRUCTION_2023_HIGHER_ADDED_IDS.length + CONSTRUCTION_2023_ORDINARY_ADDED_IDS.length + CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS.length + CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS.length);
   });
 });

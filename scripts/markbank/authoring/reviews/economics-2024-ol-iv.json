@@ -1,0 +1,1124 @@
+{
+  "subjectId": "economics",
+  "year": 2024,
+  "level": "ordinary",
+  "lang": "iv",
+  "fileid": "LC034GLP000IV",
+  "status": "paper-and-scheme-boundaries-reviewed",
+  "completeSubject": false,
+  "reviewedAt": "2026-10-08",
+  "visuallyInspectedPaperPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "visuallyInspectedSchemePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "unreviewedPaperPages": [],
+  "unreviewedSchemePages": [],
+  "questions": [
+    {
+      "n": "1",
+      "paperPages": [
+        3
+      ],
+      "schemePages": [
+        5,
+        6
+      ],
+      "tasks": [
+        {
+          "key": "i+ii",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q1-i",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "Paper3/scheme5–6: same SDG14 context, both resource reason AND individual action; shared12 first8/second4. Five/eight open examples. No language-specific task.",
+      "canonicalNodeIds": [
+        "economics-0-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Both resource value and individual protection required. One 12-mark response; first 8/second 4 is shared, not fixed by heading. Five/eight open examples, not finite options.",
+      "equivalenceReason": "Paper3/scheme5–6: same SDG14 context, both resource reason AND individual action; shared12 first8/second4. Five/eight open examples. No language-specific task."
+    },
+    {
+      "n": "2",
+      "paperPages": [
+        4
+      ],
+      "schemePages": [
+        6,
+        7
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q2-a",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q2-b",
+          "topicId": "economics-1-1"
+        }
+      ],
+      "boundaryReason": "Paper4/scheme6–7: a OR b12 each. Irish ticks Iomaíocht neamhphraghais, same app interpretation and shared8/4 classification/explanation. Six consumer-benefit examples, open.",
+      "canonicalNodeIds": [
+        "economics-2-0",
+        "economics-1-1"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Printed a OR b: two 12-mark routes. In a, classification and explanation share first 8/second 4; scheme interprets the loyalty app as non-price competition. Six open benefit examples in b.",
+      "equivalenceReason": "Paper4/scheme6–7: a OR b12 each. Irish ticks Iomaíocht neamhphraghais, same app interpretation and shared8/4 classification/explanation. Six consumer-benefit examples, open."
+    },
+    {
+      "n": "3",
+      "paperPages": [
+        5
+      ],
+      "schemePages": [
+        8
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 12,
+          "cardId": "econ-2024-ol-seca-q3-a-ticks",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "b",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q3-b",
+          "topicId": "economics-2-0"
+        }
+      ],
+      "boundaryReason": "Paper5/scheme8: a OR b12 each. Bréagach for barriers and Fíor for downward AR; shared8/4. Two advertising drawbacks8+4, five open examples.",
+      "canonicalNodeIds": [
+        "economics-2-0"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Printed a OR b: two 12-mark routes. a both objective ticks false/true, first 8/second 4; b two open advertising drawbacks with first 8/second 4, five examples.",
+      "equivalenceReason": "Paper5/scheme8: a OR b12 each. Bréagach for barriers and Fíor for downward AR; shared8/4. Two advertising drawbacks8+4, five open examples."
+    },
+    {
+      "n": "4",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        9
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q4-a",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "b",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q4-b",
+          "topicId": "economics-3-4"
+        }
+      ],
+      "boundaryReason": "Paper6/scheme9: a OR b12 each, same47% rainy-day scenario, five saving-reason/four bank-measure examples.",
+      "canonicalNodeIds": [
+        "economics-1-1",
+        "economics-3-4"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Printed a OR b: one saving reason or one financial-institution measure, 12 each. Open five/four example menus.",
+      "equivalenceReason": "Paper6/scheme9: a OR b12 each, same47% rainy-day scenario, five saving-reason/four bank-measure examples."
+    },
+    {
+      "n": "5",
+      "paperPages": [
+        6
+      ],
+      "schemePages": [
+        10
+      ],
+      "tasks": [
+        {
+          "key": "table",
+          "marks": 12,
+          "cardId": "econ-2024-ol-seca-q5-ticks",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Paper6/scheme10: same required beef-to-Germany export and French-hotel import rows6each. Easpórtáil shofheicthe and iompórtáil dhofheicthe; classifications and cash flows match.",
+      "canonicalNodeIds": [
+        "economics-4-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Both table rows required, each tick and reason 6. Beef to Germany visible export; French hotel for Irish tourists invisible import. Classification is objective; no finite answer fanout.",
+      "equivalenceReason": "Paper6/scheme10: same required beef-to-Germany export and French-hotel import rows6each. Easpórtáil shofheicthe and iompórtáil dhofheicthe; classifications and cash flows match."
+    },
+    {
+      "n": "6",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        10
+      ],
+      "tasks": [
+        {
+          "key": "two-effects",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q6",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "Paper7/scheme10: same1February2024 deposit-return scenario, two consumer effects shared8/4 and five open examples.",
+      "canonicalNodeIds": [
+        "economics-0-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Two open consumer effects, first 8/second 4. Five examples, not a closed choose-two pool.",
+      "equivalenceReason": "Paper7/scheme10: same1February2024 deposit-return scenario, two consumer effects shared8/4 and five open examples."
+    },
+    {
+      "n": "7",
+      "paperPages": [
+        7
+      ],
+      "schemePages": [
+        11
+      ],
+      "tasks": [
+        {
+          "key": "table",
+          "marks": 12,
+          "cardId": "econ-2024-ol-seca-q7-ticks",
+          "topicId": "economics-0-0",
+          "answerGuidance": "Irish labels: Dearfach means positive (a testable factual statement); Normatach means normative (a value judgement). Here positive does not mean a beneficial effect."
+        }
+      ],
+      "boundaryReason": "Paper7/scheme11: Dearfach for empirical levy statement, Normatach for pension should statement, shared8/4 whole12. Positive does not mean beneficial here.",
+      "canonicalNodeIds": [
+        "economics-0-0"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Both statements classified, positive levy claim and normative pension opinion. First 8/second 4 shared; positive/normative belongs to economics as a way of thinking.",
+      "equivalenceReason": "Paper7/scheme11: Dearfach for empirical levy statement, Normatach for pension should statement, shared8/4 whole12. Positive does not mean beneficial here."
+    },
+    {
+      "n": "8",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        11
+      ],
+      "tasks": [
+        {
+          "key": "i+ii",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q8-i",
+          "topicId": "economics-3-0",
+          "answerGuidance": "Irish country labels: An tSlóvaic is Slovakia (lowest, 0.22); SAM / Na Stáit Aontaithe is the USA (highest, 0.38)."
+        }
+      ],
+      "boundaryReason": "Paper8/scheme11: An tSlóvaic/Slovakia.22 lowest, SAM/USA.38 highest, Ireland.29/Korea.33; shared12 first8/second4, identical objective reading.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Both lowest Slovakia .22 and highest USA .38 required as one 12-mark response with shared first 8/second 4. Gini is income distribution in national income, not development.",
+      "equivalenceReason": "Paper8/scheme11: An tSlóvaic/Slovakia.22 lowest, SAM/USA.38 highest, Ireland.29/Korea.33; shared12 first8/second4, identical objective reading."
+    },
+    {
+      "n": "9",
+      "paperPages": [
+        8
+      ],
+      "schemePages": [
+        11
+      ],
+      "tasks": [
+        {
+          "key": "four-blanks",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q9",
+          "topicId": "economics-3-0",
+          "answerGuidance": "Irish blanks: OTI = Olltáirge Intíre; enter Oll- and Táirge in its O/T blanks. OIN = Ollioncam Náisiúnta; enter Oll- and Náisiúnta in its O/N blanks. The Irish scheme keeps the English column order, so follow the Irish question’s blank positions. Both Oll- fields must be completed."
+        }
+      ],
+      "boundaryReason": "Paper8/scheme11: same two national-account abbreviations and four blank fields12 shared4/4/2/2. Irish OTI is Olltáirge Intíre (Oll-/Táirge blanks); OIN is Ollioncam Náisiúnta (Oll-/Náisiúnta blanks). Follow Irish paper field positions; scheme retains English column order with already-given words crossed through. Repeated Oll- occupies two fields, like Gross in English.",
+      "canonicalNodeIds": [
+        "economics-3-0"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Four blank fields required: Gross/Product and Gross/National. First 4, second 4, third 2, fourth 2 is shared, not fixed 8 GDP/4 GNI. Repeated Gross remains two distinct fields.",
+      "equivalenceReason": "Paper8/scheme11: same two national-account abbreviations and four blank fields12 shared4/4/2/2. Irish OTI is Olltáirge Intíre (Oll-/Táirge blanks); OIN is Ollioncam Náisiúnta (Oll-/Náisiúnta blanks). Follow Irish paper field positions; scheme retains English column order with already-given words crossed through. Repeated Oll- occupies two fields, like Gross in English."
+    },
+    {
+      "n": "10",
+      "paperPages": [
+        9
+      ],
+      "schemePages": [
+        12
+      ],
+      "tasks": [
+        {
+          "key": "diagram+reason",
+          "marks": 12,
+          "cardId": "econ-2024-ol-sa-q10",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish diagram labels: É1/É2 are demand curves, C1/C2 are equilibrium points; Praghas is price and Cainníocht is quantity. The scheme uses D/E instead. Select Léaráid A: demand shifts right and the new price and quantity are higher."
+        }
+      ],
+      "boundaryReason": "Paper9/scheme12: DiagramA8 and explanation4. Paper labels É1/É2 demand, C1/C2 equilibrium points; scheme retains D/E labels. Same rightward demand shift increases price and quantity, objective A only.",
+      "canonicalNodeIds": [
+        "economics-1-0"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Objective Diagram A tick 8 plus explanation 4: rightward demand shift raises equilibrium price and quantity. No valid B route.",
+      "equivalenceReason": "Paper9/scheme12: DiagramA8 and explanation4. Paper labels É1/É2 demand, C1/C2 equilibrium points; scheme retains D/E labels. Same rightward demand shift increases price and quantity, objective A only."
+    },
+    {
+      "n": "11",
+      "paperPages": [
+        10,
+        11,
+        12
+      ],
+      "schemePages": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2024-ol-q11-a-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "a/ii",
+          "marks": 5,
+          "cardId": "econ-2024-ol-q11-a-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "a/iii",
+          "marks": 5,
+          "cardId": "econ-2024-ol-q11-a-iii",
+          "topicId": "economics-1-3"
+        },
+        {
+          "key": "b/i",
+          "marks": 24,
+          "cardId": "econ-2024-ol-q11-b-i",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish labels: É=MI is Éileamh / Meánioncam (Demand / Average Revenue); CI is Costas Imeallach (Marginal Cost); II is Ioncam Imeallach (Marginal Revenue). Write the names in full."
+        },
+        {
+          "key": "b/ii",
+          "marks": 3,
+          "cardId": "econ-2024-ol-q11-b-ii",
+          "topicId": "economics-2-0",
+          "answerGuidance": "Irish paper asks for output label C1, while its scheme retains Q1. Use C1 for the quantity vertically below E, and P1 for the price on the demand/average-revenue curve. The geometry is identical."
+        },
+        {
+          "key": "b/iii",
+          "marks": 4,
+          "cardId": "econ-2024-ol-q11-b-iii",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2024-ol-q11-c-i",
+          "topicId": "economics-2-0"
+        },
+        {
+          "key": "c/ii",
+          "marks": 16,
+          "cardId": "econ-2024-ol-q12-c-ii",
+          "topicId": "economics-0-2"
+        }
+      ],
+      "boundaryReason": "Paper10–12/scheme13–17: eight tasks75, a12+5+5,b24+3+4,c6+16. É=MI means Éileamh/Meánioncam, CI Costas Imeallach, II Ioncam Imeallach. Paper asks output C1 while Irish scheme retains Q1; price P1 matches. Both output/price together3. OTHER oligopoly example+reason4. Níos lú iomaíochta objectively supported6; two open sustainability points8each.",
+      "canonicalNodeIds": [
+        "economics-3-3",
+        "economics-1-5",
+        "economics-1-3",
+        "economics-2-0",
+        "economics-0-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Eight tasks total 75. Highest Flogas/lowest Electric Ireland share first 8/second 4. Three full curve labels 8 each remain a table. Both Q1/P1 labels together 3. Other oligopoly example AND reason together 4, electricity excluded. Less competitive is the supported objective classification. Two sustainable energy actions 8 each, eleven open examples. Preserve historical q12-c-ii identity for Q11(c)(ii).",
+      "equivalenceReason": "Paper10–12/scheme13–17: eight tasks75, a12+5+5,b24+3+4,c6+16. É=MI means Éileamh/Meánioncam, CI Costas Imeallach, II Ioncam Imeallach. Paper asks output C1 while Irish scheme retains Q1; price P1 matches. Both output/price together3. OTHER oligopoly example+reason4. Níos lú iomaíochta objectively supported6; two open sustainability points8each."
+    },
+    {
+      "n": "12",
+      "paperPages": [
+        13,
+        14,
+        15
+      ],
+      "schemePages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 18,
+          "cardId": "econ-2024-ol-q12-a-i",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "a/ii",
+          "marks": 7,
+          "cardId": "econ-2024-ol-q12-a-ii",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "b/i",
+          "marks": 4,
+          "cardId": "econ-2024-ol-q12-b-i",
+          "topicId": "economics-0-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q12-b-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "b/iii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q12-b-iii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 6,
+          "cardId": "econ-2024-ol-q12-c-i",
+          "topicId": "economics-3-2",
+          "answerGuidance": "Irish month labels: IÚIL-22 is July 2022 and EAN-23 is January 2023. Both editions cover that complete interval; the rise from 4.3% to 4.4% is 0.1 percentage point."
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q12-c-ii-unemployment",
+          "topicId": "economics-3-2"
+        },
+        {
+          "key": "c/iii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q12-c-iii",
+          "topicId": "economics-3-2"
+        }
+      ],
+      "boundaryReason": "Paper13–15/scheme18–21: eight tasks75,18+7+4+10+10+6+10+10. Same employment2506000to2574500,2.73%; chart IÚIL22toEAN23,4.3to4.4 peak4.5. Irish also says0.1% and2022 incorrectly; correct percentage-point and endpoint guidance shared. Six vacancy reasons, five pharmaceutical effects, seven measures.",
+      "canonicalNodeIds": [
+        "economics-3-2",
+        "economics-0-1",
+        "economics-2-1"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Eight tasks total 75. Employment 68500/2506000×100=2.73%, six steps at 3, minus1 missing percent. Chart July2022–January2023 4.3 to4.4%, peak4.5: rise0.1 percentage point, not scheme0.1%. Six open vacancy/unemployment reasons including affordable housing. All other example menus open.",
+      "equivalenceReason": "Paper13–15/scheme18–21: eight tasks75,18+7+4+10+10+6+10+10. Same employment2506000to2574500,2.73%; chart IÚIL22toEAN23,4.3to4.4 peak4.5. Irish also says0.1% and2022 incorrectly; correct percentage-point and endpoint guidance shared. Six vacancy reasons, five pharmaceutical effects, seven measures."
+    },
+    {
+      "n": "13",
+      "paperPages": [
+        16,
+        17,
+        18
+      ],
+      "schemePages": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 12,
+          "cardId": "econ-2024-ol-q13-a-i",
+          "topicId": "economics-1-5",
+          "answerGuidance": "Irish cost labels: Costais Sheasta means fixed costs; Costais Athraitheacha means variable costs; Cainníocht means quantity/output. The Irish scheme’s plotted solution uses English labels but the same values."
+        },
+        {
+          "key": "a/ii",
+          "marks": 16,
+          "cardId": "econ-2024-ol-q13-a-ii",
+          "topicId": "economics-1-5"
+        },
+        {
+          "key": "b/i",
+          "marks": 13,
+          "cardId": "econ-2024-ol-q13-b-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "b/ii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q13-b-ii",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/i",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q13-c-i",
+          "topicId": "economics-3-3"
+        },
+        {
+          "key": "c/ii/yes",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q13-c-ii-yes",
+          "topicId": "economics-0-2",
+          "answerGuidance": "Irish stance: Ba chóir means should / YES. Explain why manufacturers should use the more expensive environmentally friendly materials."
+        },
+        {
+          "key": "c/ii/no",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q13-c-ii-no",
+          "topicId": "economics-0-2",
+          "answerGuidance": "Irish stance: Níor chóir means should not / NO. Explain the case against using the more expensive environmentally friendly materials."
+        },
+        {
+          "key": "c/iii",
+          "marks": 4,
+          "cardId": "econ-2024-ol-q13-c-iii",
+          "topicId": "economics-3-3"
+        }
+      ],
+      "boundaryReason": "Paper16–18/scheme22–26: eight routes, one sustainability stance for75. Diagram12 axes2each FC3 VC5, bothcost definitions/examples8each. Switzerland An Eilvéis/Turkey An Tuirc shared13,8/5. Ba chóir/Níor chóir10each,4/5 open examples. ECB/BCE4 has same six examples and obsolete below2% target. Graph itself in Irish scheme uses English fixed/variable labels.",
+      "canonicalNodeIds": [
+        "economics-1-5",
+        "economics-3-3",
+        "economics-0-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Eight routes, choose one c(ii) stance for75. Diagram both axes2each,FC3,VC5; FC600 and VC500/600/700/800. Both fixed/variable definition-and-example headings8each. Lowest Switzerland/highest Turkey share first8/second5. Yes four/No five open examples. ECB six examples; outdated below-but-close2% phrase corrected by ECB July2021 symmetric2% target.",
+      "equivalenceReason": "Paper16–18/scheme22–26: eight routes, one sustainability stance for75. Diagram12 axes2each FC3 VC5, bothcost definitions/examples8each. Switzerland An Eilvéis/Turkey An Tuirc shared13,8/5. Ba chóir/Níor chóir10each,4/5 open examples. ECB/BCE4 has same six examples and obsolete below2% target. Graph itself in Irish scheme uses English fixed/variable labels."
+    },
+    {
+      "n": "14",
+      "paperPages": [
+        19,
+        20,
+        21
+      ],
+      "schemePages": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "tasks": [
+        {
+          "key": "a/i/total",
+          "marks": 12,
+          "cardId": "econ-2024-ol-q14-a-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/i/education",
+          "marks": 8,
+          "cardId": "econ-2024-ol-q14-a-i-education",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "a/ii",
+          "marks": 4,
+          "cardId": "econ-2024-ol-q14-a-ii-eu",
+          "topicId": "economics-4-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 4,
+          "cardId": "econ-2024-ol-q14-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 7,
+          "cardId": "econ-2024-ol-q14-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii",
+          "marks": 7,
+          "cardId": "econ-2024-ol-q14-b-ii",
+          "topicId": "economics-3-1",
+          "answerGuidance": "Irish tax labels: CBL means VAT; Cáin indíreach is indirect tax. Select it and explain collection by the supplier from the customer."
+        },
+        {
+          "key": "b/iii/agree",
+          "marks": 7,
+          "cardId": "econ-2024-ol-q14-b-iii-agree",
+          "topicId": "economics-3-1",
+          "answerGuidance": "Irish stance: Aontaím means AGREE with restoring the 13.5% rate in the exam’s 2023 scenario."
+        },
+        {
+          "key": "b/iii/disagree",
+          "marks": 7,
+          "cardId": "econ-2024-ol-q14-b-iii-disagree",
+          "topicId": "economics-3-1",
+          "answerGuidance": "Irish stance: Ní aontaím on the paper (Easaontaím in the scheme) means DISAGREE with restoring the 13.5% rate."
+        },
+        {
+          "key": "c/i",
+          "marks": 16,
+          "cardId": "econ-2024-ol-q14-c-i",
+          "topicId": "economics-4-2",
+          "answerGuidance": "Irish trade labels: Easpórtálacha are exports and Iompórtálacha imports. €165.7bn − €103.7bn = €62bn; select Barrachas (surplus), not Easnamh (deficit)."
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q14-a-ii",
+          "topicId": "economics-4-2"
+        }
+      ],
+      "boundaryReason": "Paper19–21/scheme27–32: ten routes, one VAT stance for75. Separate total12 and share8; identical44.22bn/21.78%, total deductions1 for€AND1 forbn. Aontaím/Ní aontaím paper (Easaontaím scheme)7each,4/6 examples. CBL is VAT, indirect classification+reason7. BoT62bn Barrachas surplus12working+4explanation whole16; export-benefits6+4.",
+      "canonicalNodeIds": [
+        "economics-3-1",
+        "economics-4-1",
+        "economics-4-2"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Ten routes, choose one VAT stance for75. Independent total12 and education-share8 calculations:44.22bn and21.78%; full source context on each. Eight EU examples. VAT classification+reason7 remains whole. Agree four/Disagree six open examples. BoT165.7−103.7=62bn surplus: working12+reason4 together; two export benefits shared6+4. Preserve historical q14-a-ii for Q14(c)(ii).",
+      "equivalenceReason": "Paper19–21/scheme27–32: ten routes, one VAT stance for75. Separate total12 and share8; identical44.22bn/21.78%, total deductions1 for€AND1 forbn. Aontaím/Ní aontaím paper (Easaontaím scheme)7each,4/6 examples. CBL is VAT, indirect classification+reason7. BoT62bn Barrachas surplus12working+4explanation whole16; export-benefits6+4."
+    },
+    {
+      "n": "15",
+      "paperPages": [
+        22,
+        23,
+        24
+      ],
+      "schemePages": [
+        33,
+        34,
+        35
+      ],
+      "tasks": [
+        {
+          "key": "a",
+          "marks": 20,
+          "cardId": "econ-2024-ol-q15-a",
+          "topicId": "economics-0-1",
+          "answerGuidance": "Irish factor names: Caipiteal = Capital, Saothar = Labour, Fiontraíocht = Enterprise, Talamh = Land. Fill only the missing names and meanings; the supplied entries remain given."
+        },
+        {
+          "key": "b/i",
+          "marks": 15,
+          "cardId": "econ-2024-ol-q15-b-i",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish graph labels: C is the initial equilibrium, Pc its price and Cc its quantity; É is demand and S supply. Shift supply left: higher new price, lower quantity. The scheme mixes English E/Pe/D with Irish quantity Ce."
+        },
+        {
+          "key": "b/ii",
+          "marks": 9,
+          "cardId": "econ-2024-ol-q15-b-ii",
+          "topicId": "economics-1-0",
+          "answerGuidance": "Irish graph labels: É is demand; C/Pc/Cc correspond to English E/Pe/Qe. Explain the same leftward supply shift and higher price/lower quantity."
+        },
+        {
+          "key": "b/iii",
+          "marks": 6,
+          "cardId": "econ-2024-ol-q15-b-iii",
+          "topicId": "economics-1-1"
+        },
+        {
+          "key": "c/i",
+          "marks": 20,
+          "cardId": "econ-2024-ol-q15-c-i",
+          "topicId": "economics-1-4"
+        },
+        {
+          "key": "c/ii",
+          "marks": 5,
+          "cardId": "econ-2024-ol-q15-c-ii",
+          "topicId": "economics-1-4"
+        }
+      ],
+      "boundaryReason": "Paper22–24/scheme33–35: six tasks75. Same five factor-table blanks20, Capital/Labour/Enterprise names and Enterprise/Land meanings. Supply-left diagram15 separate explanation9, same97.7% fertiliser rise in12months to October2022; paper C/Pc/Cc/É correspond English E/Pe/Qe/D. Scheme mixes E/Pe/Ce/D. Same midpointPED−1.71,20 with minus2 for missing sign, elasticreason5. Shared generic price-fall wording does not match actual100to140c rise.",
+      "canonicalNodeIds": [
+        "economics-0-1",
+        "economics-1-0",
+        "economics-1-1",
+        "economics-1-4"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Six tasks total75. Factor table whole20: three names5each, two definitions shared3/2; given entries excluded. Supply-left drawing15 separate from explanation9, with full97.7% fertiliser-rise context. PED20 midpoint−40/40×240/140=−1.71, minus2 omitted negative sign. Elastic judgement+reason5. Actual price increases100to140c; quantity falls90to50; scheme price-fall example is a generic interpretation, not the data direction.",
+      "equivalenceReason": "Paper22–24/scheme33–35: six tasks75. Same five factor-table blanks20, Capital/Labour/Enterprise names and Enterprise/Land meanings. Supply-left diagram15 separate explanation9, same97.7% fertiliser rise in12months to October2022; paper C/Pc/Cc/É correspond English E/Pe/Qe/D. Scheme mixes E/Pe/Ce/D. Same midpointPED−1.71,20 with minus2 for missing sign, elasticreason5. Shared generic price-fall wording does not match actual100to140c rise."
+    },
+    {
+      "n": "16",
+      "paperPages": [
+        25,
+        26,
+        27
+      ],
+      "schemePages": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "tasks": [
+        {
+          "key": "a/i",
+          "marks": 9,
+          "cardId": "econ-2024-ol-q16-a-i",
+          "topicId": "economics-3-5"
+        },
+        {
+          "key": "a/ii",
+          "marks": 9,
+          "cardId": "econ-2024-ol-q16-a-ii",
+          "topicId": "economics-2-1"
+        },
+        {
+          "key": "a/iii",
+          "marks": 9,
+          "cardId": "econ-2024-ol-q16-a-iii",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/i",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q16-b-i",
+          "topicId": "economics-3-1"
+        },
+        {
+          "key": "b/ii/both",
+          "marks": 18,
+          "cardId": "econ-2024-ol-q16-b-ii-adv",
+          "topicId": "economics-3-1",
+          "answerGuidance": "Irish allocation: the second 9-mark cell is absent beside the disadvantage on scheme p40. The English scheme explicitly gives 9 for each required heading, and the Irish Q16(b) subtotal of 28 includes the 10-mark risk plus this 18-mark response."
+        },
+        {
+          "key": "c/i/positive",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q16-c-i-pos",
+          "topicId": "economics-3-4"
+        },
+        {
+          "key": "c/i/negative",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q16-c-i-neg",
+          "topicId": "economics-3-4",
+          "answerGuidance": "Irish source clarification: the last example is headed “Neamhionannas inscne” (gender inequality), but its paragraph describes higher-income versus lower-income buyers. That argument concerns income/social inequality, matching the English scheme."
+        },
+        {
+          "key": "c/ii",
+          "marks": 10,
+          "cardId": "econ-2024-ol-q16-c-ii",
+          "topicId": "economics-3-4"
+        }
+      ],
+      "boundaryReason": "Paper25–27/scheme36–42: eight routes, one mortgage stance for75. Same9+9+9 demographic tasks, corporation risk10 and required advantage/disadvantage18. Irish omits the disadvantage9 cell onp40, but English39–40 explicitly gives9each and Irish(b) subtotal28 confirms10+18. Shared migration/world-total and age-based-dependency errors identified. Mortgage3.5to4gross2022/2023, Dearfach/Diúltach10each,3/5 examples. Irish last negative heading says gender inequality, but body discusses income/social inequality. Revolut hypothetical entry10, four examples.",
+      "canonicalNodeIds": [
+        "economics-3-5",
+        "economics-2-1",
+        "economics-3-1",
+        "economics-3-4"
+      ],
+      "topicReason": "Canonical NCCA mapping follows the assessed economic concept. Eight routes, choose one mortgage stance for75. Corp-tax advantage AND disadvantage9each together18. Global15%deal applies large in-scope groups, not all firms. Migration redistributes world population, not total; returning over65s can reduce financial dependence without changing age-based dependency ratio. Mortgage limits3.5to4gross from2023; three positive/five negative open examples. Revolut entry hypothetical in paper; four examples.",
+      "equivalenceReason": "Paper25–27/scheme36–42: eight routes, one mortgage stance for75. Same9+9+9 demographic tasks, corporation risk10 and required advantage/disadvantage18. Irish omits the disadvantage9 cell onp40, but English39–40 explicitly gives9each and Irish(b) subtotal28 confirms10+18. Shared migration/world-total and age-based-dependency errors identified. Mortgage3.5to4gross2022/2023, Dearfach/Diúltach10each,3/5 examples. Irish last negative heading says gender inequality, but body discusses income/social inequality. Revolut hypothetical entry10, four examples.",
+      "allocationEvidence": {
+        "lang": "ev",
+        "fileid": "LC034GLP000EV",
+        "schemePages": [
+          39,
+          40
+        ],
+        "reason": "Irish disadvantage tariff cell is absent onp40. English explicit9+9 and Irish(b)subtotal28 minusrisk10 establish required18-mark whole response."
+      }
+    }
+  ],
+  "paperSha256": "70ad6b5de68c62fd4d443e15a45a95ea0dda8dbc971ad278383829ed0b55a1be",
+  "schemeSha256": "677d2ae912de17587982c84d7a059e2d3f03375e40bbc8667d860a92c7cd8321",
+  "selections": [
+    {
+      "page": 2,
+      "text": "Freagair 8 gceist as 10 gceist sa roinn seo.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all practice routes remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Tá rogha inmheánach sna ceisteanna 2, 3 agus 4.",
+      "classification": "finite-route",
+      "reason": "Q2/Q3/Q4 each offer a OR b; two12-mark alternatives per question."
+    },
+    {
+      "page": 2,
+      "text": "Freagair 4 cheist as 6 cheist.",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all practice routes remain in census."
+    },
+    {
+      "page": 2,
+      "text": "Scríobh do chuid freagraí le peann gorm nó le peann dubh.",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 2,
+      "text": "bhreise i gcúl an leabhráin. Lipéadaigh aon obair bhreise go soiléir le huimhir agus le páirt na",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 2,
+      "text": "scrúdaitheora. Is féidir nach bhfeicfidh an scrúdaitheoir aon rud a scríobhfaidh tú taobh amuigh de",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 3,
+      "text": "Freagair 8 gceist as 10 gceist",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all practice routes remain in census."
+    },
+    {
+      "page": 4,
+      "text": "(a) Cuir in iúl le tic (✔) sa tábla thíos cé acu atá an beart thuas ina shampla d’iomaíocht",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 4,
+      "text": "praghsanna nó d’iomaíocht neamhphraghais a bheith in úsáid ag cuideachta. Mínigh do",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 4,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q2/Q3/Q4 each offer a OR b; two12-mark alternatives per question."
+    },
+    {
+      "page": 5,
+      "text": "(a) Feidhmíonn siopaí caife in Éirinn in iomaíocht mhonaplach. Cuir in iúl le tic (✔) cé acu fíor nó",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 5,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q2/Q3/Q4 each offer a OR b; two12-mark alternatives per question."
+    },
+    {
+      "page": 6,
+      "text": "NÓ",
+      "classification": "finite-route",
+      "reason": "Q2/Q3/Q4 each offer a OR b; two12-mark alternatives per question."
+    },
+    {
+      "page": 6,
+      "text": "Cuir in iúl le tic (✔) cé acu an iompórtálacha isteach i ngeilleagar na hÉireann nó easpórtálacha",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 6,
+      "text": "amach ó gheilleagar na hÉireann iad seo thíos. Mínigh an fáth le do rogha i ngach cás.",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 7,
+      "text": "Déan staidéar ar na ráitis thíos agus cuir in iúl le tic (✔) sa bhosca ceart cé acu ráiteas díobh atá",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 7,
+      "text": "ina ráiteas dearfach agus cé acu ráiteas díobh atá ina ráiteas normatach.",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 7,
+      "text": "Ba chóir don rialtas an méid atá sa phinsean seanaoise",
+      "classification": "not-a-task-selection",
+      "reason": "Ba chóir is inside the given pension statement being classified as normative, not an invitation to choose a stance."
+    },
+    {
+      "page": 9,
+      "text": "Cuir in iúl le tic (✔) cibé acu Léaráid A nó Léaráid B a léiríonn a staid nua cothromaíochta",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 10,
+      "text": "Freagair 4 cheist as 6 cheist",
+      "classification": "exam-question-selection",
+      "reason": "Whole-exam selection; all practice routes remain in census."
+    },
+    {
+      "page": 11,
+      "text": "atá le do rogha.",
+      "classification": "not-a-task-selection",
+      "reason": "Open OTHER oligopoly example with reason; no finite printed pool."
+    },
+    {
+      "page": 12,
+      "text": "(i) An bhfuil níos mó nó níos lú iomaíochta i margadh an leictreachais in Éirinn anois dá",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 12,
+      "text": "thoradh sin, dar leat? Cuir do thuairim in iúl le tic (✔) thíos agus mínigh do rogha.",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 18,
+      "text": "(ii) Ar chóir do dhéantúsóirí, mar chuidachtaí a dhéanann páipéar leithris, amhábhair",
+      "classification": "finite-route",
+      "reason": "Ba chóir OR Níor chóir: both10-mark sustainability stances justified."
+    },
+    {
+      "page": 18,
+      "text": "Cuir do thuairim in iúl le tic (✔) thíos agus mínigh do rogha.",
+      "classification": "finite-route",
+      "reason": "Ba chóir OR Níor chóir: both10-mark sustainability stances justified."
+    },
+    {
+      "page": 18,
+      "text": "Ba chóir Níor chóir",
+      "classification": "finite-route",
+      "reason": "Ba chóir OR Níor chóir: both10-mark sustainability stances justified."
+    },
+    {
+      "page": 19,
+      "text": "(a) (i) Úsáid na figiúirí sa chairt thuas agus freagair na ceisteanna seo a leanas.",
+      "classification": "not-a-task-selection",
+      "reason": "Freagair directs completion of both named calculations,12 and8, with no optional selection."
+    },
+    {
+      "page": 20,
+      "text": "(ii) Cuir in iúl le tic (✔) thíos cé acu atá CBL ina shampla de cháin dhíreach nó de cháin",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 20,
+      "text": "indíreach. Mínigh do rogha.",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 20,
+      "text": "An aontaíonn tú gur cheart go mbeadh ráta CBL 13.5% á ghearradh ar thionscal na",
+      "classification": "finite-route",
+      "reason": "Aontaím OR Ní aontaím: both7-mark VAT stances justified."
+    },
+    {
+      "page": 20,
+      "text": "Cuir (✔) tic le do rogha.",
+      "classification": "finite-route",
+      "reason": "Aontaím OR Ní aontaím: both7-mark VAT stances justified."
+    },
+    {
+      "page": 20,
+      "text": "Aontaím Ní aontaím",
+      "classification": "finite-route",
+      "reason": "Aontaím OR Ní aontaím: both7-mark VAT stances justified."
+    },
+    {
+      "page": 21,
+      "text": "in iúl le tic (✔) cé acu an barrachas nó easnamh a bhí ann.",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 21,
+      "text": "Freagra: Barrachas: nó Easnamh:",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 22,
+      "text": "Comhlánaigh an tábla agus ainmnigh nó mínigh gach toisc tháirgeachta.",
+      "classification": "required-headings",
+      "reason": "Name or explain every blank factor-table field as appropriate; not choose one field."
+    },
+    {
+      "page": 22,
+      "text": "Rud ar bith de dhéantús an duine",
+      "classification": "not-a-task-selection",
+      "reason": "Ar bith is inside supplied definition or descriptive scenario; no answer selection."
+    },
+    {
+      "page": 24,
+      "text": "(ii) Cuir in iúl cé acu an praghasleaisteach nó praghas‐neamhleaisteach atá an t‐éileamh",
+      "classification": "answer-classification",
+      "reason": "Objective classification or diagram choice; wrong labels are not valid answer routes."
+    },
+    {
+      "page": 25,
+      "text": "(iii) Tá daonra na hÉireann ag dul in aois níos tapa ná áit ar bith eile san Eoraip. Tabhair",
+      "classification": "not-a-task-selection",
+      "reason": "Ar bith is inside supplied definition or descriptive scenario; no answer selection."
+    },
+    {
+      "page": 27,
+      "text": "(i) Cuir in iúl le tic (✔) thíos cé acu tionchar dearfach nó tionchar diúltach, dar leat, atá",
+      "classification": "finite-route",
+      "reason": "Dearfach OR Diúltach: both10-mark mortgage stances justified."
+    },
+    {
+      "page": 28,
+      "text": "Leathanach Breise más rogha leat é a úsáid.",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 29,
+      "text": "Leathanach Breise más rogha leat é a úsáid.",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 30,
+      "text": "Leathanach Breise más rogha leat é a úsáid.",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 31,
+      "text": "Leathanach Breise más rogha leat é a úsáid.",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 32,
+      "text": "D’fhéadfadh sé go bhfuil téacsanna nó íomhánna sa scrúdpháipéar seo nach é Coimisiún na Scrúduithe Stáit",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 32,
+      "text": "Cearta Gaolmhara, 2000. Ní údaraítear aon úsáid dá éis chun aon chríche ach amháin chun na críche dá bhfuil sé",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    },
+    {
+      "page": 32,
+      "text": "beartaithe. Ní ghlacann an Coimisiún aon dliteanas as sárú ar bith ar chearta tríú páirtí a eascraíonn as dáileadh",
+      "classification": "not-a-task-selection",
+      "reason": "Administration, spare-page or copyright wording; not a response selection."
+    }
+  ],
+  "reviewNote": "All32 Irish paper and46 scheme pages visually inspected.61 routes match English in required asks and tariffs; all46 raw directives classified. Explicit per-question equivalence, Irish blank/label guidance and missing9-mark cell explained with English evidence. Research rubric43–45 and back46 add no written-paper tasks. Irish browser QA pending; full corpus incomplete.",
+  "externalClarifications": [
+    {
+      "question": "13(c)(iii)",
+      "authority": "European Central Bank",
+      "source": "https://www.ecb.europa.eu/press/pr/date/2021/html/ecb.pr210708~dc78cc4b0d.en.html",
+      "reason": "8July2021 strategy sets symmetric2% inflation target over medium term; source below-but-close wording was obsolete in2024."
+    },
+    {
+      "question": "16(a)(ii)",
+      "authority": "Central Statistics Office",
+      "source": "https://www.cso.ie/en/media/csoie/releasespublications/documents/population/2017/Chapter_3_Age_and_sex_composition.pdf",
+      "reason": "Age-based dependency compares ages65+ and0–14 with15–64. Employment status alone does not change this ratio."
+    },
+    {
+      "question": "16(b)(ii)",
+      "authority": "Revenue Commissioners",
+      "source": "https://www.revenue.ie/en/corporate/press-office/budget-information/2024/budget-summary.pdf",
+      "reason": "Budget2024 PillarTwo15%minimum applies multinational and domestic businesses with global turnover at least750m in two of four preceding years; not a universal increase for all Irish businesses."
+    }
+  ],
+  "curriculumSource": "https://www.curriculumonline.ie/getmedia/3342d8a2-1e22-4f17-b82b-a8134fe16eb3/LCEconomics_0219_EN.pdf",
+  "equivalentTo": {
+    "lang": "ev",
+    "fileid": "LC034GLP000EV"
+  }
+}

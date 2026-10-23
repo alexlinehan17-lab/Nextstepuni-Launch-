@@ -1,0 +1,2247 @@
+{
+  "band": [
+    1,
+    25
+  ],
+  "component": "",
+  "copyright": "© State Examinations Commission",
+  "paperFileid": "LC032ALP000EV.pdf",
+  "q": [
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "1",
+      "pP": 2,
+      "pY": [
+        0.0951,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0.0,
+            0.0749,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 5,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0705
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "2",
+      "pP": 3,
+      "pY": [
+        0.0587,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0.0,
+            0.0585,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0705
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "3",
+      "pP": 4,
+      "pY": [
+        0.0308,
+        0.8127
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0.0,
+            0.0585,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0705
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "4",
+      "pP": 4,
+      "pY": [
+        0.8127,
+        0.8275
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0.0,
+            0.0585,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0855
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "5",
+      "pP": 4,
+      "pY": [
+        0.8275,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0.0,
+            0.0735,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.0855
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "6",
+      "pP": 7,
+      "pY": [
+        0.0445,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0.0,
+            0.0735,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 17,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.8977
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "7",
+      "pP": 8,
+      "pY": [
+        0.0308,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 17,
+          "r": [
+            0.0,
+            0.8857,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1289
+          ]
+        }
+      ],
+      "paperRegion": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "schemeRegion": [
+        {
+          "p": 17,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "rotate": 90
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "practiceTask": {
+        "prompt": "Record on a tabular statement the effect each of the above transactions had on the relevant asset, liability and capital accounts and ascertain the total assets and liabilities on 31/12/2010.",
+        "focus": null,
+        "marks": 100
+      }
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "8",
+      "pP": 9,
+      "pY": [
+        0.0965,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0.0,
+            0.1169,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 19,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 20,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            0.1256
+          ]
+        }
+      ]
+    },
+    {
+      "conf": 1.0,
+      "mode": "crop",
+      "n": "9",
+      "pP": 10,
+      "pY": [
+        0.0909,
+        1.0
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0.0,
+            0.1136,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 21,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 22,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 23,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "p": 24,
+          "r": [
+            0.0,
+            0.0,
+            1.0,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "n": "1(a)",
+      "label": "Question 1(a) · Manufacturing, trading and profit and loss account",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Manufacturing, Trading and Profit and Loss Account for the year ended 31/12/2010.",
+        "focus": null,
+        "marks": 75
+      }
+    },
+    {
+      "n": "1(b)",
+      "label": "Question 1(b) · Manufacturing company balance sheet",
+      "pP": 2,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 2,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Balance Sheet as at 31/12/2010.",
+        "focus": null,
+        "marks": 45
+      }
+    },
+    {
+      "n": "2(a)",
+      "label": "Question 2(a) · Adjusted debtors control account",
+      "pP": 3,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the Adjusted Debtors Ledger Control Account.",
+        "focus": null,
+        "marks": 22
+      }
+    },
+    {
+      "n": "2(b)",
+      "label": "Question 2(b) · Adjusted schedule of debtors",
+      "pP": 3,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the Adjusted Schedule (List) of Debtors showing the original balance.",
+        "focus": null,
+        "marks": 30
+      }
+    },
+    {
+      "n": "2(c)",
+      "label": "Question 2(c) · Sources and importance of control accounts",
+      "pP": 3,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Which books of first entry are used in the production of Debtors Control Accounts?\nExplain the importance of Control Accounts.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "3(a)-profit-and-loss",
+      "label": "Question 3(a)-profit-and-loss · Published profit and loss account",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the Published Profit and Loss account for the year 31/12/2010, in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:",
+        "focus": "Prepare the published profit and loss account for the year ended 31/12/2010.",
+        "marks": 34
+      }
+    },
+    {
+      "n": "3(a)-notes",
+      "label": "Question 3(a)-notes · Notes to published accounts",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 8,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare the Published Profit and Loss account for the year 31/12/2010, in accordance with the Companies Acts and appropriate accounting standards, showing the following notes:\nAccounting policy note for tangible fixed assets and stock\nOperating Profit\nFinancial fixed assets\nDividends\nTangible fixed assets.",
+        "focus": "Prepare all five required notes.",
+        "marks": 14
+      }
+    },
+    {
+      "n": "3(b)(i)",
+      "label": "Question 3(b)(i) · Probable contingent liabilities",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "State how a company should deal with a Contingent Liability which is probable.",
+        "focus": null,
+        "marks": 4
+      }
+    },
+    {
+      "n": "3(b)(ii)",
+      "label": "Question 3(b)(ii) · Qualified and unqualified auditor’s reports",
+      "pP": 4,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 4,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the difference between an auditor’s qualified and unqualified report.",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "4(a)",
+      "label": "Question 4(a) · Profit from a net worth statement",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 11,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Statement/Balance Sheet showing O’Hagan’s profit or loss for the year ended 31/12/2010. (Show your workings).",
+        "focus": null,
+        "marks": 52
+      }
+    },
+    {
+      "n": "4(b)",
+      "label": "Question 4(b) · Advice on record keeping",
+      "pP": 5,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 5,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "What advice would you give O’Hagan in relation to record keeping?",
+        "focus": null,
+        "marks": 8
+      }
+    },
+    {
+      "n": "5(a)(i)",
+      "label": "Question 5(a)(i) · Opening stock",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the following for 2010:\nThe Opening Stock if the rate of stock turnover is 10 based on average stock",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(ii)",
+      "label": "Question 5(a)(ii) · Gearing ratio",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the following for 2010:\nThe Gearing ratio",
+        "focus": null,
+        "marks": 9
+      }
+    },
+    {
+      "n": "5(a)(iii)",
+      "label": "Question 5(a)(iii) · Earnings per ordinary share",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the following for 2010:\nThe Earnings per Ordinary Share",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "5(a)(iv)",
+      "label": "Question 5(a)(iv) · Dividend yield",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the following for 2010:\nThe Dividend Yield",
+        "focus": null,
+        "marks": 12
+      }
+    },
+    {
+      "n": "5(a)(v)",
+      "label": "Question 5(a)(v) · Share price recovery period",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the following for 2010:\nHow long it would take one ordinary share to recoup (recover) its 2010 market price based on present dividend payout rate?",
+        "focus": null,
+        "marks": 9
+      }
+    },
+    {
+      "n": "5(b)",
+      "label": "Question 5(b) · Advice on Sully’s expansion loan",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 12,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Advise the bank manager if a loan of €400,000, on which an interest rate of 8% would be charged, should be granted to Sully plc for future expansion. Use relevant ratios, percentages and other information from above to support your answer.",
+        "focus": null,
+        "marks": 40
+      }
+    },
+    {
+      "n": "5(c)",
+      "label": "Question 5(c) · Limitations of ratio analysis",
+      "pP": 6,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 6,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 13,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the limitations of ratio analysis.",
+        "focus": null,
+        "marks": 10
+      }
+    },
+    {
+      "n": "6(a)",
+      "label": "Question 6(a) · Club accumulated fund",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the Club’s Accumulated Fund (Capital) on 1/1/2010.",
+        "focus": null,
+        "marks": 30
+      }
+    },
+    {
+      "n": "6(b)",
+      "label": "Question 6(b) · Club income and expenditure account",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the Income and Expenditure account for the year ended 31/12/2010.",
+        "focus": null,
+        "marks": 35
+      }
+    },
+    {
+      "n": "6(c)",
+      "label": "Question 6(c) · Club balance sheet",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Show the Club’s Balance Sheet on 31/12/2010.",
+        "focus": null,
+        "marks": 20
+      }
+    },
+    {
+      "n": "6(d)(i)",
+      "label": "Question 6(d)(i) · Limitations of receipts and payments accounts",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "State and explain two limitations of a Receipts and Payments Account.",
+        "focus": null,
+        "marks": 6
+      }
+    },
+    {
+      "n": "6(d)(ii)",
+      "label": "Question 6(d)(ii) · Advice on installing floodlights",
+      "pP": 7,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 7,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 16,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 15,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 14,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The club is considering the installation of floodlights at a cost of €70,000. What advice would you give to the Treasurer of the club?",
+        "focus": null,
+        "marks": 9
+      }
+    },
+    {
+      "n": "8(a)-break-even",
+      "label": "Question 8(a)-break-even · Break-even point",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate:\nThe company’s break-even point and margin of safety.",
+        "focus": "Calculate the company’s break-even point, showing the fixed and variable cost workings.",
+        "marks": 9
+      }
+    },
+    {
+      "n": "8(a)-margin-of-safety",
+      "label": "Question 8(a)-margin-of-safety · Margin of safety",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "You are required to calculate:\nThe company’s break-even point and margin of safety.",
+        "focus": "Calculate the company’s margin of safety.",
+        "marks": 5
+      }
+    },
+    {
+      "n": "8(b)",
+      "label": "Question 8(b) · Units for a 20% profit increase",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The number of units that must be sold in 2011 if the company is to increase its net profit by 20% over the 2010 figure, assuming the selling price and cost levels and percentages remain unchanged.",
+        "focus": null,
+        "marks": 12
+      }
+    },
+    {
+      "n": "8(c)",
+      "label": "Question 8(c) · Profit after reducing the selling price",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The profit the company would make in 2011 if it reduced its selling price to €11, increased fixed costs by €15,000 and thereby increased the number of units sold to 110,000, with all other cost levels and percentages remaining unchanged.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "8(d)",
+      "label": "Question 8(d) · Selling price after a fixed-cost increase",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The selling price the company must charge per unit in 2011, if fixed costs increase by 12% but the volume of sales and profit remains the same.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "8(e)",
+      "label": "Question 8(e) · Units for a profit of 10% of sales",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 18,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "The number of units that must be sold at €16 per unit to provide a profit of 10% of the sales revenue received from these same units.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "8(f)(i)",
+      "label": "Question 8(f)(i) · Limitations and assumptions of marginal costing",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "List and explain two limitations/assumptions of marginal costing.",
+        "focus": null,
+        "marks": 7
+      }
+    },
+    {
+      "n": "8(f)(ii)",
+      "label": "Question 8(f)(ii) · Explain and graph step fixed costs",
+      "pP": 9,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 9,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 19,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain what is meant by a step fixed cost.\nRoughly sketch a graph of step fixed costs using the following rental payments:",
+        "focus": null,
+        "marks": 5
+      }
+    },
+    {
+      "n": "9(a)",
+      "label": "Question 9(a) · Production budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Production Budget (in units).",
+        "focus": null,
+        "marks": 16
+      }
+    },
+    {
+      "n": "9(b)",
+      "label": "Question 9(b) · Raw materials purchases budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Raw Materials Purchases Budget (in units and €).",
+        "focus": null,
+        "marks": 20
+      }
+    },
+    {
+      "n": "9(c)",
+      "label": "Question 9(c) · Production cost and manufacturing budget",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Prepare a Production Cost/Manufacturing Budget.",
+        "focus": null,
+        "marks": 23
+      }
+    },
+    {
+      "n": "9(d)",
+      "label": "Question 9(d) · Unit costs of budgeted closing stock",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 20,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Calculate the unit cost of budgeted closing stock of both products.",
+        "focus": null,
+        "marks": 14
+      }
+    },
+    {
+      "n": "9(e)",
+      "label": "Question 9(e) · Master budget and its components",
+      "pP": 10,
+      "pY": [
+        0,
+        1
+      ],
+      "paperRegion": [
+        {
+          "p": 10,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "region": [
+        {
+          "p": 21,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "p": 3,
+          "r": [
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "mode": "crop",
+      "conf": 1,
+      "practiceTask": {
+        "prompt": "Explain the term ‘Master Budget’.\nList the components of a Master Budget for a manufacturing firm.",
+        "focus": null,
+        "marks": 7
+      }
+    }
+  ],
+  "schemeFileid": "LC032ALP000EV.pdf",
+  "v": 1,
+  "maxCropPages": 1
+}

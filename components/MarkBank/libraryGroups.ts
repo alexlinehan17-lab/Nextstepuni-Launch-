@@ -1,6 +1,11 @@
 import { examinationYearFromDate, findCanonicalTopic, resolveCurriculumSpecification, specificationsForSubject, type CanonicalCurriculumGroup, type CanonicalCurriculumSpecification } from '../../curriculumRegistry';
+import constructionLibraryTopics from '../../data/markBank/construction-studies-library-topics.json';
 import type { Level } from './deck';
 import type { SecCard } from '../../types/markBank';
+
+// Widen generated lookup shapes before combining them; their thousands of
+// literal card keys must not become a union of distinct object types.
+const reviewedTopicIndexes: Array<{subjectId: string; specificationId: string; cards: Record<string, string[]>}> = [constructionLibraryTopics];
 
 /** A range only joins consecutive years; gaps must remain visible. */
 export function libraryYearsLabel(years: number[]): string {
@@ -15,12 +20,25 @@ export function libraryYearsLabel(years: number[]): string {
   return runs.join(', ');
 }
 
+/** A reviewed library-topic index (Construction Studies) lists every canonical topic a card's tasks cover. */
+function reviewedTopicIds(card: SecCard, specification?: CanonicalCurriculumSpecification): string[] | undefined {
+  for (const index of reviewedTopicIndexes) {
+    const reviewed = (index.cards as Record<string, string[]>)[card.id];
+    if (card.subjectId === index.subjectId && specification?.id === index.specificationId && reviewed) return reviewed;
+  }
+  return undefined;
+}
+
 /** Source-reviewed cards may contain tasks from several canonical topics. */
 export function libraryTopicIds(card: SecCard, current?: CanonicalCurriculumSpecification): string[] {
   const specification = resolveCurriculumSpecification(card.subjectId, card.year);
-  const original = (specification && findCanonicalTopic(specification, card.topicId)?.id) ?? card.topicId;
-  const cohort = current && (findCanonicalTopic(current, card.topicId) ?? findCanonicalTopic(current, original));
-  return [...new Set([original, ...(cohort ? [cohort.id] : [])])];
+  // A card filed under more than one topic is listed under each, primary first.
+  const filed = reviewedTopicIds(card, specification) ?? [card.topicId, ...(card.additionalTopicIds ?? [])];
+  return [...new Set(filed.flatMap(topicId => {
+    const original = (specification && findCanonicalTopic(specification, topicId)?.id) ?? topicId;
+    const cohort = current && (findCanonicalTopic(current, topicId) ?? findCanonicalTopic(current, original));
+    return [original, ...(cohort ? [cohort.id] : [])];
+  }))];
 }
 
 /** Compatibility for callers that need one representative topic. */

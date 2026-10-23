@@ -149,6 +149,13 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2026 OL Economics page 8 sets Question 8's head in the same block as the
+    # last cell of Question 7's answer table ("Explanation 2", where 2 is the
+    # completed example), so the head is glued behind a bare number and never
+    # read. The cell is the paper's worked example, not an ask; drop it.
+    ('economics', 2026, 'ol'): [
+        ('Explanation 2 Question 8', lambda t: t[len('Explanation 2 '):]),
+    ],
 }
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
@@ -738,6 +745,20 @@ class Paper:
                 # open — is a unit in a table ("Average Daily Gain (ADG) (g)"),
                 # and keying it filed two years' worth of Agricultural Science
                 # asks under a letter the paper never printed.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
+            if found_letter and letter is not None and found_letter < letter \
+                    and rest and not re.search(r'[A-Za-z]', rest):
+                # Letters never run backwards inside a question. A lower letter
+                # followed only by figures is a cross-reference a table wrapped
+                # onto a new line: 2021 OL Agricultural Science Q17(b) heads a
+                # column "Calculated at part" / "(a) 80 65 35", and keying that
+                # "(a)" filed (b)(ii) and (b)(iii) under (a) -- two printed
+                # parts read as orphans.
                 if open_key:
                     self.parts[open_key].append(f'({found_letter}) {rest}')
                 else:

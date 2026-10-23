@@ -1,7 +1,7 @@
 export type PaintedStyle = "pencilatlas";
 export const paintedById = {
   pencilatlas: {
-    src: "/journey-art/atlas-directions/pencilatlas.png",
+    src: "/journey-art/atlas-directions/pencilatlas.webp",
     base: "#faf8ef",
     feather: 0.16,
     paperRepeat: true,

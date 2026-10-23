@@ -254,6 +254,17 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   // null and every reading card lost the passage it quotes. A listening card
   // would need the aural document, and no listening card exists — the ask
   // cannot be answered from print, and the deck excludes it.
+  // Art to 2020 indexes the written History and Appreciation paper beside its
+  // practical-component booklets (Imaginative Composition, Design, Craftwork,
+  // Life Sketching, Coursework) and its illustration sheet. Every Art card
+  // comes from the written paper: labelled "Exam Paper" where the index has
+  // one (2010, 2019, 2021 on; in 2010 the sheet is the one labelled "History
+  // and Appreciation"), otherwise "History and Appreciation" (2011-2018, 2020).
+  if (subjectId === 'art') {
+    const written = entry.papers.find(p => /^Exam Paper$/i.test(p.label))
+      ?? entry.papers.find(p => /^History and Appreciation$/i.test(p.label));
+    if (written) return stripPdf(written.doc?.f);
+  }
   const namedExamPapers = entry.papers.filter(p => /^Exam Paper$/i.test(p.label));
   const companions = entry.papers.filter(p => !/^Exam Paper$/i.test(p.label));
   const textOnly = TEXT_ONLY_COMPANION[subjectId];

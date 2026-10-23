@@ -1,7 +1,8 @@
-import React, { useId } from "react";
+import React from "react";
 import { stickerSrc, legendById, type LegendId } from "./collection";
 
-// Preserve the generated bitmap and its white paper edge; key only the magenta matte at display time.
+// The magenta matte is keyed out offline (scripts/bake-journey-art-alpha.py),
+// keeping the generated bitmap and its white paper edge.
 export function StickerRaster({
   src,
   x = 0,
@@ -13,26 +14,9 @@ export function StickerRaster({
   y?: number;
   size?: number;
 }) {
-  const filterId = useId();
   return (
     <g>
-      <defs>
-        <filter id={filterId} colorInterpolationFilters="sRGB">
-          <feColorMatrix
-            type="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -3 6 -3 0 2"
-          />
-          <feComposite in2="SourceGraphic" operator="in" />
-        </filter>
-      </defs>
-      <image
-        href={src}
-        x={x}
-        y={y}
-        width={size}
-        height={size}
-        filter={`url(#${filterId})`}
-      />
+      <image href={src} x={x} y={y} width={size} height={size} />
     </g>
   );
 }

@@ -1,0 +1,558 @@
+{
+  "status": "in-progress",
+  "shippedCardCount": 2464,
+  "reviewedRoutesChecked": 2464,
+  "independentlyReviewedTranslatedRoutes": 81,
+  "reviewedBatchIssues": [],
+  "papers": [
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 49,
+      "shippedRoutes": 49,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 62,
+      "shippedRoutes": 62,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 59,
+      "shippedRoutes": 59,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 61,
+      "shippedRoutes": 61,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 61,
+      "shippedRoutes": 61,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 63,
+      "shippedRoutes": 63,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 58,
+      "shippedRoutes": 58,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 69,
+      "shippedRoutes": 69,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 62,
+      "shippedRoutes": 62,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 71,
+      "shippedRoutes": 71,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 58,
+      "shippedRoutes": 58,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 60,
+      "shippedRoutes": 60,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 57,
+      "shippedRoutes": 57,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 54,
+      "shippedRoutes": 54,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 61,
+      "shippedRoutes": 61,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 52,
+      "shippedRoutes": 52,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 60,
+      "shippedRoutes": 60,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 113,
+      "shippedRoutes": 113,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 106,
+      "shippedRoutes": 106,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 98,
+      "shippedRoutes": 98,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 101,
+      "shippedRoutes": 101,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 82,
+      "shippedRoutes": 82,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 91,
+      "shippedRoutes": 91,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 89,
+      "shippedRoutes": 89,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 91,
+      "shippedRoutes": 91,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 56,
+      "shippedRoutes": 56,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 55,
+      "shippedRoutes": 55,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 85,
+      "shippedRoutes": 85,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "ev",
+      "expectedRoutes": 67,
+      "shippedRoutes": 67,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "ev",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "iv",
+      "expectedRoutes": 81,
+      "shippedRoutes": 81,
+      "missing": [],
+      "unmatched": []
+    }
+  ],
+  "independentCensusEditionsOpen": [
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "iv",
+      "paperFileid": "LC024ALP000IV.pdf",
+      "independentCensus": "open"
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "iv",
+      "paperFileid": "LC024GLP000IV.pdf",
+      "independentCensus": "open"
+    }
+  ],
+  "limitation": "2010 and 2011 Higher/Ordinary English boundaries and all 298 corresponding Atlas bindings reconciled exactly, plus all 298 translated bindings for those sittings. The Irish 2011 Ordinary independent source denominator also reconciles exactly at 81 routes. Remaining sitting boundaries and the other independent Irish censuses remain open. This partial result cannot establish corpus completeness."
+}

@@ -11,12 +11,12 @@ describe('Journey introduction', () => {
     const view = render(<JourneyWelcome hasSeenWelcome={false} onDismissWelcome={dismiss} />);
     expect(screen.getByRole('dialog')).toHaveTextContent('Journey Points (JP)');
     expect(screen.getByRole('dialog')).toHaveTextContent('Fieldbook');
-    expect(document.body.style.overflow).toBe('hidden');
+    expect(document.body).toHaveAttribute('data-scroll-lock');
     fireEvent.click(screen.getByRole('button', { name: 'Explore my island' }));
     expect(dismiss).toHaveBeenCalledOnce();
     view.rerender(<JourneyWelcome hasSeenWelcome onDismissWelcome={dismiss} />);
     await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
-    expect(document.body.style.overflow).not.toBe('hidden');
+    expect(document.body).not.toHaveAttribute('data-scroll-lock');
     fireEvent.click(screen.getByRole('button', { name: 'How Journey works' }));
     expect(screen.getByRole('dialog')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Close Journey introduction' }));

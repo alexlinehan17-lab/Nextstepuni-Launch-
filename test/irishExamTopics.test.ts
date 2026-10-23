@@ -14,7 +14,7 @@ import irishCrosswalk from '../data/examTopics/irish-local-crosswalk.json';
 import curriculumCrosswalk from '../data/examTopics/irish-curriculum-crosswalk.json';
 import preservationBaseline from './fixtures/irishTopicQuestionBaseline.json';
 import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
-import { PAPER_TRAIL_INDEX } from '../paperTrailData';
+import { reviewedArchiveEntries } from '../components/PaperTrail/indexLookup';
 import {
   browseTopicIdsForQuestion,
   strandsFor,
@@ -171,7 +171,7 @@ describe('Irish exam-topic registry', () => {
     expect(papers.reduce((sum, paper) => sum + paper.q.length, 0)).toBe(979);
     expect(new Set(papers.map(paper => paper.year)))
       .toEqual(new Set(Array.from({ length: 17 }, (_, index) => 2010 + index)));
-    const indexPapers = PAPER_TRAIL_INDEX.irish.flatMap(entry => entry.papers);
+    const indexPapers = reviewedArchiveEntries('irish').flatMap(entry => entry.papers);
     expect(indexPapers).toHaveLength(91);
 
     expect(topicsForPaper('irish', 2026, 'higher', 'iv', 'LC001ALP100IV.pdf')?.q.map(q => q.n))

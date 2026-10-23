@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "construction-studies",
+  "year": 2014,
+  "level": "higher",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "reviewedAt": "2026-10-14T10:47:07.880498+00:00",
+  "authoringReview": "scripts/markbank/authored/construction-studies-2014-higher-reviewed.json",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2014/LC029ALP000EV.pdf": "fa69de01573c5b7504ed8b2cc76ae930be5d815c85febcb1a7c2e7d03d68e2d1",
+    "paper-trail-corpus/markingschemes/2014/LC029ALP000EV.pdf": "9673985bd87e5867668828d4f03244185b7cb75d0dbe70fa4f55ad819214608c"
+  },
+  "expectedRuntimeCards": 39,
+  "reason": "2014 Higher main English theory Q1–Q10 and the alternative Q10: 39 source-reviewed tasks (39 added, 0 pre-audit cards corrected in place under their original IDs); whole theory paper reconciled against the original paper and scheme. Practical component and Irish edition remain separate work.",
+  "questions": [
+    {
+      "n": "1",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "n": "2",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-doors",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "n": "3",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "n": "4",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "n": "5",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "n": "6",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-services-water-gas-electricity",
+        "construction-studies-higher-sustainability-the-environment"
+      ]
+    },
+    {
+      "n": "7",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "n": "8",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-drainage",
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-services-water-gas-electricity"
+      ]
+    },
+    {
+      "n": "9",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-doors",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-sound"
+      ]
+    },
+    {
+      "n": "10",
+      "fileid": "LC029ALP000EV.pdf",
+      "topicIds": [
+        "construction-studies-higher-foundations",
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "cons-2014-hl-q1-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-10",
+        "cons-3-3"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of a trussed rafter roof (3.8) with its covering (3.9) at the eaves (3.10) on a timber frame wall (3.3).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q1-b",
+      "markBankTopicId": "cons-6-5",
+      "canonicalTopicIds": [
+        "cons-6-5",
+        "cons-3-10"
+      ],
+      "canonicalTopicReview": "Airtightness (6.5) at the eaves junction (3.10).",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-condensation-air-tightness",
+        "construction-studies-higher-roofs"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q1-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-8",
+        "cons-3-9",
+        "cons-3-10",
+        "cons-3-3",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "1",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-condensation-air-tightness"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q2-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "Accessible design (1.2) of an entrance door (3.7).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q2-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Lifetime design of the built environment (1.2).",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q2-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-3-7"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "2",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q3-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Layout design of the built environment (1.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q3-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-7-4"
+      ],
+      "canonicalTopicReview": "Layout design (1.2) with good daylighting (7.4).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q3-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "External design in the built environment (1.2).",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q3-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-7-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "3",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-windows-light"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q4-a",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Refurbishing a vernacular building (1.1) in the built environment (1.2).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q4-b",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-3-3",
+        "cons-3-9",
+        "cons-4-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "The union of the three printed areas, upgraded with respect for the original character (1.1): the rubble walls (3.3), the slated roof (3.9) and the suspended timber floor (4.3), with breathable insulation (6.2).",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q4-complete",
+      "markBankTopicId": "cons-1-1",
+      "canonicalTopicIds": [
+        "cons-1-1",
+        "cons-1-2",
+        "cons-3-3",
+        "cons-3-9",
+        "cons-4-3",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "4",
+      "atlasTopicIds": [
+        "construction-studies-higher-conservation-restoration",
+        "construction-studies-higher-walls",
+        "construction-studies-higher-roofs",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-heat-loss-insulation"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q5-a",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1"
+      ],
+      "canonicalTopicReview": "Thermal resistance, conductivity and transmittance (6.1).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q5-b",
+      "markBankTopicId": "cons-6-3",
+      "canonicalTopicIds": [
+        "cons-6-3",
+        "cons-6-1"
+      ],
+      "canonicalTopicReview": "Heat loss calculation and running costs (6.3) from the U-value (6.1).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q5-c",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "A thermal bridge (6.2) at the ground floor junction (4.2).",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q5-complete",
+      "markBankTopicId": "cons-6-1",
+      "canonicalTopicIds": [
+        "cons-6-1",
+        "cons-6-3",
+        "cons-6-2",
+        "cons-4-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "5",
+      "atlasTopicIds": [
+        "construction-studies-higher-heat-u-value-calculations",
+        "construction-studies-higher-heat-loss-insulation",
+        "construction-studies-higher-floors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q6-a",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-4",
+        "cons-6-2"
+      ],
+      "canonicalTopicReview": "Low-impact design of the built environment (1.2), solar gain (6.4) and insulation (6.2).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-sustainability-the-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q6-b",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-4",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Sustainable additions (1.2): solar gain (6.4) and on-site electricity (5.8).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-sustainability-the-environment",
+        "construction-studies-higher-services-water-gas-electricity"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q6-c",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Sustainable design of the built environment (1.2).",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-sustainability-the-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q6-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-6-4",
+        "cons-6-2",
+        "cons-5-8"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "6",
+      "atlasTopicIds": [
+        "construction-studies-higher-sustainability-the-environment",
+        "construction-studies-higher-services-water-gas-electricity"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q7-a",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-6",
+        "cons-3-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "Scaled drawing (1.5) of window head and cill details (3.6) in a cavity wall (3.3) with lintels and DPC (3.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q7-b",
+      "markBankTopicId": "cons-3-6",
+      "canonicalTopicIds": [
+        "cons-3-6",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "Window head and cill details (3.6) with DPCs (3.4).",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q7-complete",
+      "markBankTopicId": "cons-1-5",
+      "canonicalTopicIds": [
+        "cons-1-5",
+        "cons-3-6",
+        "cons-3-3",
+        "cons-3-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "7",
+      "atlasTopicIds": [
+        "construction-studies-higher-question-1-drawing-questions",
+        "construction-studies-higher-windows-light",
+        "construction-studies-higher-walls"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q8-a",
+      "markBankTopicId": "cons-5-6",
+      "canonicalTopicIds": [
+        "cons-5-6",
+        "cons-1-2"
+      ],
+      "canonicalTopicReview": "Sanitary fitments (5.6) in the layout (1.2).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-drainage",
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q8-b",
+      "markBankTopicId": "cons-5-6",
+      "canonicalTopicIds": [
+        "cons-5-6"
+      ],
+      "canonicalTopicReview": "Sanitary fitments and the single stack system (5.6).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-drainage"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q8-c",
+      "markBankTopicId": "cons-5-6",
+      "canonicalTopicIds": [
+        "cons-5-6",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Sanitary fitments (5.6) and water supply (5.2).",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-drainage",
+        "construction-studies-higher-services-water-gas-electricity"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q8-complete",
+      "markBankTopicId": "cons-5-6",
+      "canonicalTopicIds": [
+        "cons-5-6",
+        "cons-1-2",
+        "cons-5-2"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "8",
+      "atlasTopicIds": [
+        "construction-studies-higher-drainage",
+        "construction-studies-higher-planning-sustainability-environment",
+        "construction-studies-higher-services-water-gas-electricity"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q9-a",
+      "markBankTopicId": "cons-8-1",
+      "canonicalTopicIds": [
+        "cons-8-1",
+        "cons-8-2"
+      ],
+      "canonicalTopicReview": "The union of the three printed principles: the nature of sound (8.1), absorption, reflection and reverberation time (8.2).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q9-b",
+      "markBankTopicId": "cons-8-3",
+      "canonicalTopicIds": [
+        "cons-8-3",
+        "cons-4-3",
+        "cons-4-5"
+      ],
+      "canonicalTopicReview": "Sound insulation (8.3) of a timber upper floor (4.3) and stud partition (4.5).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-sound",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q9-c",
+      "markBankTopicId": "cons-8-3",
+      "canonicalTopicIds": [
+        "cons-8-3"
+      ],
+      "canonicalTopicReview": "Airborne and impact sound insulation (8.3).",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-sound"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q9-complete",
+      "markBankTopicId": "cons-8-1",
+      "canonicalTopicIds": [
+        "cons-8-1",
+        "cons-8-2",
+        "cons-8-3",
+        "cons-4-3",
+        "cons-4-5"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "9",
+      "atlasTopicIds": [
+        "construction-studies-higher-sound",
+        "construction-studies-higher-floors",
+        "construction-studies-higher-doors"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-a",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-5",
+        "cons-2-4"
+      ],
+      "canonicalTopicReview": "The union of the three printed items: building form and heat loss (6.2), indoor air quality (6.5) and the insulated foundation (2.4).",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-foundations"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-b",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Solar heat gain and orientation (6.4).",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-c",
+      "markBankTopicId": "cons-6-4",
+      "canonicalTopicIds": [
+        "cons-6-4",
+        "cons-6-5"
+      ],
+      "canonicalTopicReview": "Solar heat gain (6.4) and ventilation (6.5).",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-complete",
+      "markBankTopicId": "cons-6-2",
+      "canonicalTopicIds": [
+        "cons-6-2",
+        "cons-6-5",
+        "cons-2-4",
+        "cons-6-4"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-passive-design",
+        "construction-studies-higher-foundations"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-alt-discussion",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning a sustainable built environment (1.2, 1.3).",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-alt-guidelines",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Planning a sustainable built environment (1.2, 1.3).",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    },
+    {
+      "cardId": "cons-2014-hl-q10-alt-complete",
+      "markBankTopicId": "cons-1-2",
+      "canonicalTopicIds": [
+        "cons-1-2",
+        "cons-1-3"
+      ],
+      "canonicalTopicReview": "Keeps the union of its separately reviewed constituent tasks.",
+      "questionNumber": "10",
+      "atlasTopicIds": [
+        "construction-studies-higher-planning-sustainability-environment"
+      ]
+    }
+  ]
+}
