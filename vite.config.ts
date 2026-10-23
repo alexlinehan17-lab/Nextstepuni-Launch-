@@ -1,6 +1,6 @@
 import path from 'path';
 import type { IncomingMessage, ServerResponse } from 'http';
-import { defineConfig, type Plugin } from 'vite';
+import { createFilter, defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 import { standaloneDocumentRoutes } from './utils/pwaNavigation';
@@ -93,6 +93,87 @@ function pdfjsResources(): Plugin {
   };
 }
 
+// Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
+// rule (NetworkFirst on /assets/*.js) still caches each one the moment a
+// student actually opens the tool, so the only thing given up is having
+// it available offline before first use.
+//
+// Why this matters more than it looks. Every deploy rewrites every asset
+// hash, so the whole precache is re-downloaded by every returning
+// browser. Measured against the live site on 2026-08-28, the precache was
+// 4.4MB compressed and took ~4s to pull on a fast connection with six
+// parallel connections — and it runs in the background exactly while a
+// student is trying to log in or sign up, competing with the auth and
+// callable requests they are waiting on. Half of it, 2.24MB across 21
+// files, was exam corpus and lazy tool data that nobody on the login
+// screen has any use for.
+//
+// The subject corpora (higher-*/ordinary-*), Catch-Up Lane, Command Word
+// and three.js are all behind lazy routes. Precaching them bought
+// offline-before-first-use and cost every user a slow session after
+// every deploy. Bad trade; they are runtime-cached instead.
+//
+// Only lazy chunks may be listed: bootPrecacheGuard() fails the build if
+// the app shell imports one of them.
+const PRECACHE_IGNORES = [
+  '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+  // pdf.js decoders and fonts, fetched by the worker only when a paper
+  // needs them (vite.config.ts pdfjsResources).
+  '**/pdfjs-*/**',
+  '**/higher-*.js', '**/ordinary-*.js',
+  // Subject factories and Atlas registries are fetched with their lazy
+  // tools and cached by app-chunks; keep growing corpora out of install.
+  '**/factory-*.js', '**/reviewed-*.js',
+  // Reviewed Business rubric cards (cards/business/rubric.ts), shared
+  // by both Business level decks and past the 3 MB precache ceiling.
+  '**/rubric-*.js',
+  '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
+  '**/markbank-french-*.js',
+  '**/catchUpLaneData*.js', '**/commandWordData*.js',
+  '**/vendor-three*.js',
+  // PDF export libraries — only pulled in when a student or GC actually
+  // exports something.
+  '**/vendor-jspdf*.js', '**/html2canvas*.js',
+];
+const PRECACHE_MAX_BYTES = 3 * 1024 * 1024;
+
+/**
+ * Everything the app shell imports at boot must be in the service worker
+ * precache. A returning visitor's worker answers the first visit after a
+ * deploy with the previous shell. Any boot import the precache does not
+ * hold is then fetched from the network under its old hash, the hosting
+ * rewrite answers with index.html, the module fails its MIME check, and
+ * the page stays white until the student refreshes. That happened from
+ * #232 (2026-10-14), when the shell started importing exam-topic-data.
+ */
+function bootPrecacheGuard(): Plugin {
+  const ignored = createFilter(PRECACHE_IGNORES, null, { resolve: false });
+  return {
+    name: 'boot-precache-guard',
+    apply: 'build',
+    generateBundle(_options, bundle) {
+      const shell = Object.values(bundle).find((out) => out.type === 'chunk' && out.isEntry && out.name === 'main');
+      if (shell?.type !== 'chunk') return;
+      const boot = new Set<string>();
+      const visit = (fileName: string) => {
+        const chunk = bundle[fileName];
+        if (boot.has(fileName) || chunk?.type !== 'chunk') return;
+        boot.add(fileName);
+        chunk.imports.forEach(visit);
+      };
+      visit(shell.fileName);
+      const uncached = [...boot].filter((fileName) => {
+        const chunk = bundle[fileName];
+        return ignored(fileName) || (chunk.type === 'chunk' && Buffer.byteLength(chunk.code) > PRECACHE_MAX_BYTES);
+      });
+      if (uncached.length) {
+        this.error(`The app shell imports ${uncached.join(', ')} at boot, and the service worker does not precache ${uncached.length === 1 ? 'it' : 'them'}. `
+          + 'The first visit after a deploy would load a white page. Keep those chunks lazy (check manualChunks), or stop excluding them from the precache.');
+      }
+    },
+  };
+}
+
 export default defineConfig(() => {
     return {
       server: {
@@ -104,6 +185,7 @@ export default defineConfig(() => {
         landingRoute(),
         legalStaticPages(),
         pdfjsResources(),
+        bootPrecacheGuard(),
         VitePWA({
           registerType: 'autoUpdate',
           // Don't auto-inject the SW registration. We register manually in
@@ -145,46 +227,8 @@ export default defineConfig(() => {
             // `autoUpdate` client can reload each tab onto the current bundle.
             skipWaiting: true,
             clientsClaim: true,
-        // Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
-        // rule (NetworkFirst on /assets/*.js) still caches each one the moment a
-        // student actually opens the tool, so the only thing given up is having
-        // it available offline before first use.
-        //
-        // Why this matters more than it looks. Every deploy rewrites every asset
-        // hash, so the whole precache is re-downloaded by every returning
-        // browser. Measured against the live site on 2026-08-28, the precache was
-        // 4.4MB compressed and took ~4s to pull on a fast connection with six
-        // parallel connections — and it runs in the background exactly while a
-        // student is trying to log in or sign up, competing with the auth and
-        // callable requests they are waiting on. Half of it, 2.24MB across 21
-        // files, was exam corpus and lazy tool data that nobody on the login
-        // screen has any use for.
-        //
-        // The subject corpora (higher-*/ordinary-*), Catch-Up Lane, Command Word
-        // and three.js are all behind lazy routes. Precaching them bought
-        // offline-before-first-use and cost every user a slow session after
-        // every deploy. Bad trade; they are runtime-cached instead.
-        globIgnores: [
-          '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
-          // pdf.js decoders and fonts, fetched by the worker only when a paper
-          // needs them (vite.config.ts pdfjsResources).
-          '**/pdfjs-*/**',
-          '**/higher-*.js', '**/ordinary-*.js',
-          // Subject factories and Atlas registries are fetched with their lazy
-          // tools and cached by app-chunks; keep growing corpora out of install.
-          '**/factory-*.js', '**/reviewed-*.js',
-          // Reviewed Business rubric cards (cards/business/rubric.ts), shared
-          // by both Business level decks and past the 3 MB precache ceiling.
-          '**/rubric-*.js',
-          '**/exam-topic-data-*.js', '**/paper-topic-data-*.js',
-          '**/markbank-french-*.js',
-          '**/catchUpLaneData*.js', '**/commandWordData*.js',
-          '**/vendor-three*.js',
-          // PDF export libraries — only pulled in when a student or GC actually
-          // exports something.
-          '**/vendor-jspdf*.js', '**/html2canvas*.js',
-        ],
-            maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+            globIgnores: PRECACHE_IGNORES,
+            maximumFileSizeToCacheInBytes: PRECACHE_MAX_BYTES,
             navigateFallback: 'index.html',
             // Legal pages are real static files (privacy.html / terms.html) emitted
             // by legalStaticPages(). Keep them OUT of the SPA navigate-fallback so an
@@ -328,6 +372,14 @@ export default defineConfig(() => {
               if (id.includes('/data/examTopics/french-')) return 'exam-topic-french';
               if (id.includes('/data/examTopics/')) return 'exam-topic-data';
               if (id.includes('/data/paperTrail/')) return 'paper-topic-data';
+              // The exam-topic registry resolves specifications through the
+              // curriculum registry, which the app shell also imports at boot.
+              // Rollup files a manual chunk's unassigned dependencies inside
+              // it, so these modules landed in exam-topic-data and the shell
+              // imported all ~5 MB of static exam data (with paper-topic-data
+              // and exam-topic-french) on every load. Give them their own chunk.
+              if (/\/(curriculumRegistry|curriculum)\.ts$/.test(id) || id.includes('/data/curriculum/')
+                || /\/components\/MarkBank\/(deck\.ts|cards\/sizes\.json)$/.test(id)) return 'curriculum';
               // Vite's __vitePreload helper and Rollup's CJS interop helpers are
               // used by EVERY lazy import()/CJS dep in the eager entry. If they
               // land inside a heavy lazy vendor chunk (they were ending up in
