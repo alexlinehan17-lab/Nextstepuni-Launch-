@@ -66,6 +66,7 @@ import geography_review_2016_hl as REVIEW_2016_HL
 import geography_review_2016_ol as REVIEW_2016_OL
 import geography_review_2015_hl as REVIEW_2015_HL
 import geography_review_2015_ol as REVIEW_2015_OL
+import geography_review_2014_hl as REVIEW_2014_HL
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
@@ -116,6 +117,7 @@ REVIEWED = {
     (2016, 'ordinary'): REVIEW_2016_OL,
     (2015, 'higher'): REVIEW_2015_HL,
     (2015, 'ordinary'): REVIEW_2015_OL,
+    (2014, 'higher'): REVIEW_2014_HL,
 }
 
 # 2021-2026 are carded in full. An earlier sitting joins the corpus only once
@@ -985,6 +987,9 @@ COMPANIONS: dict[int, dict[str, str]] = {
            'aerial': 'LC005CLP004EV'},
     # 2015's legend and aerial photograph are stacked image strips in one-page PDFs.
     2015: {'place': 'Kenmare', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2014's map extract is eight stacked image strips in a one-page PDF.
+    2014: {'place': 'Dungarvan', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
            'aerial': 'LC005CLP004EV'},
 }
 
