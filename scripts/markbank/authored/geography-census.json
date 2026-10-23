@@ -21,10 +21,10 @@
     "higher",
     "ordinary"
   ],
-  "paperBaseTasks": 3345,
-  "includedBaseTasks": 3344,
+  "paperBaseTasks": 3453,
+  "includedBaseTasks": 3452,
   "excludedBaseTasks": 1,
-  "authoredCards": 3583,
+  "authoredCards": 3698,
   "baseTasks": [
     {
       "id": "geography-2012-hl-p1-q1",
@@ -978,6 +978,978 @@
       "part": 2,
       "questionRef": "2012 HL Part 2 Q24",
       "title": "The Atmosphere - Ocean Environment",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q1",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q1(i)",
+      "title": "Volcanic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q1-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q1(ii)",
+      "title": "Volcanic Activity",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q2",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q2",
+      "title": "Economic Activities",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q3",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q3",
+      "title": "Physical Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q4",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q4(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q4-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q4(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q5",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q5(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q5-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q5(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q6",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q6(i)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q6-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q6(ii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q6-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q6(iii)",
+      "title": "Aerial Photograph and Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q7",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q7",
+      "title": "Physical Landforms",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q8",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q8(i)",
+      "title": "Satellite Images",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q8-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q8(ii)",
+      "title": "Satellite Images",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q9",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q9(i)",
+      "title": "Irish Census",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q9-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q9(ii)",
+      "title": "Irish Census",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q9-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q9(iii)",
+      "title": "Irish Census",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q9-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q9(iv)",
+      "title": "Irish Census",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q9-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q9(v)",
+      "title": "Irish Census",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q10",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q10(i)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q10-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q10(ii)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q10-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q10(iii)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q10-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q10(iv)",
+      "title": "Weather Charts",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q11",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q11(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q11-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q11(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q11-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q11(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q11-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q11(iv)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q11-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q11(v)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p1-q12",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 1,
+      "questionRef": "2012 OL Part 1 Q12",
+      "title": "Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1A",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1B(i)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1B(ii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1b-iii-sedimentary-rocks",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1B(iii)",
+      "title": "Rocks",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1C(i)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1C(ii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q1c-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q1C(iii)",
+      "title": "Plate Tectonics",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q2a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q2A(i)",
+      "title": "Internal Structure of the Earth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q2a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q2A(ii)",
+      "title": "Internal Structure of the Earth",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q2b-route-i",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q2B",
+      "title": "Surface Processes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q2c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q2C(i)",
+      "title": "Fold Mountains",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q2c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q2C(ii)",
+      "title": "Fold Mountains",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3A(i)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3A(ii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3a-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3A(iii)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3a-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3A(iv)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3a-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3A(v)",
+      "title": "Earthquakes",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3b-river-processes",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3B",
+      "title": "Human Interaction",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3C(i)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3C(ii)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q3c-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q3C(iii)",
+      "title": "Karst Landscape",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q4a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q4A",
+      "title": "Map Skills",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q4b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q4B",
+      "title": "Agriculture in a Continental / Sub-Continental Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q4c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q4C",
+      "title": "Economic Activities in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5A(i)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5A(ii)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5a-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5A(iii)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5a-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5A(iv)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5a-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5A(v)",
+      "title": "Irish Tourism",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5B(i)",
+      "title": "European Union Expansion and Ireland since 2000",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5B(ii)",
+      "title": "European Union Expansion and Ireland since 2000",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5b-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5B(iii)",
+      "title": "European Union Expansion and Ireland since 2000",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q5c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q5C",
+      "title": "Urban Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q6a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q6A",
+      "title": "Ireland - Regions",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q6b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q6B",
+      "title": "European Region",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q6c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q6C",
+      "title": "Regional Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7A",
+      "title": "Aerial Photograph",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7B(i)",
+      "title": "Multinational Companies (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7B(ii)",
+      "title": "Multinational Companies (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7b-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7B(iii)",
+      "title": "Multinational Companies (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7b-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7B(iv)",
+      "title": "Multinational Companies (MNC)",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7C(i)",
+      "title": "Developing Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q7c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q7C(ii)",
+      "title": "Developing Economy",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8A(i)",
+      "title": "Unemployment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8A(ii)",
+      "title": "Unemployment in Ireland",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8B(i)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8B(ii)",
+      "title": "Ordnance Survey Map",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8C(i)",
+      "title": "Climate Change",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8C(ii)",
+      "title": "Climate Change",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q8c-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q8C(iii)",
+      "title": "Climate Change",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9A(i)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9A(ii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9a-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9A(iii)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9a-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9A(iv)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9a-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9A(v)",
+      "title": "Economic Development",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9b-common-agricultural-policy-cap",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9B",
+      "title": "Ireland and the European Union",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9C(i)",
+      "title": "Economic Activities and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9C(ii)",
+      "title": "Economic Activities and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q9c-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q9C(iii)",
+      "title": "Economic Activities and Conflict",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q10a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q10A(i)",
+      "title": "Irish Emigration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q10a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q10A(ii)",
+      "title": "Irish Emigration",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q10b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q10B",
+      "title": "Development of Towns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q10c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q10C(i)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q10c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q10C(ii)",
+      "title": "Overpopulation",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11A",
+      "title": "Land-Use in Irish towns",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11B(i)",
+      "title": "Traffic Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11B(ii)",
+      "title": "Traffic Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11b-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11B(iii)",
+      "title": "Traffic Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11C(i)",
+      "title": "Urban Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11c-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11C(ii)",
+      "title": "Urban Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q11c-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q11C(iii)",
+      "title": "Urban Problems",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12a",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12A(i)",
+      "title": "Ireland’s Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12a-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12A(ii)",
+      "title": "Ireland’s Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12a-iii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12A(iii)",
+      "title": "Ireland’s Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12a-iv",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12A(iv)",
+      "title": "Ireland’s Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12a-v",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12A(v)",
+      "title": "Ireland’s Population",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12b",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12B(i)",
+      "title": "Urban Sprawl",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12b-ii",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12B(ii)",
+      "title": "Urban Sprawl",
+      "status": "authored"
+    },
+    {
+      "id": "geography-2012-ol-p2-q12c",
+      "year": 2012,
+      "level": "ordinary",
+      "part": 2,
+      "questionRef": "2012 OL Part 2 Q12C",
+      "title": "Population",
       "status": "authored"
     },
     {
@@ -30143,6 +31115,15 @@
       "reviewed": true
     },
     {
+      "year": 2012,
+      "level": "ordinary",
+      "paperBaseTasks": 108,
+      "includedBaseTasks": 108,
+      "excludedBaseTasks": 0,
+      "authoredCardsAfterFiniteExpansion": 115,
+      "reviewed": true
+    },
+    {
       "year": 2013,
       "level": "higher",
       "paperBaseTasks": 104,
@@ -30455,6 +31436,65 @@
         "reviewed-choose-n-of-m"
       ],
       "combinationsAbsorbed": 3
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q1B(iii)",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q2B",
+      "classification": "finite-expanded",
+      "variants": 2,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q3B",
+      "classification": "finite-expanded",
+      "variants": 3,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q4B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q4C",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 2
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q6B",
+      "classification": "single-card-choice",
+      "variants": 1,
+      "kinds": [
+        "reviewed-choose-n-of-m"
+      ],
+      "combinationsAbsorbed": 5
+    },
+    {
+      "questionRef": "2012 OL Part 2 Q9B",
+      "classification": "finite-expanded",
+      "variants": 4,
+      "kinds": [
+        "reviewed-printed-route"
+      ]
     },
     {
       "questionRef": "2013 HL Part 2 Q2A(ii)",
