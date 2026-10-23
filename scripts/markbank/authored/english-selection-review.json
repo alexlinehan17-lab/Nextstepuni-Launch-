@@ -8128,42 +8128,42 @@
     "english-2020-hl-p2-single-a-i": {
       "questionSha256": "2551c3d81113bff7597e1a407c829f91ad5f86310122146262dc1f0b49fd74b4",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF23: the extent to which the candidate agrees or disagrees, “wholly or in part”, with the statement — a graded judgement, not routes. One 60-mark response."
     },
     "english-2020-hl-p2-single-a-ii": {
       "questionSha256": "0197bf891241e158139e4dfaac44902133193018a6eed9fa1e83e29fbe50122f",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Scheme PDF24: “at least two ways” the author develops the character of Offred, with reference to both style and content. One 60-mark response."
     },
     "english-2020-hl-p2-single-b-i": {
       "questionSha256": "090647dade1882ab12446a1003825c9fb7ea9c4a626a41f34b6443ba05459dd5",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF25: the extent to which the candidate agrees or disagrees, “wholly or in part”, with the statement — a graded judgement, not routes. One 60-mark response."
     },
     "english-2020-hl-p2-single-b-ii": {
       "questionSha256": "a1b5f37d627eaa3328a271f1c2bee24e218ccdf201dbbd9a1c749d4a97ca76be",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Scheme PDF26: “at least two ways” the author develops the character of Anne Elliot, with reference to both style and content. One 60-mark response."
     },
     "english-2020-hl-p2-single-c-i": {
       "questionSha256": "3affea8000ea259bd0b3df6adb4c97c4f263ff4f9f4989f053887bcc887847a0",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF27: the extent to which the candidate agrees or disagrees, “wholly or in part”, with the statement — a graded judgement, not routes. One 60-mark response."
     },
     "english-2020-hl-p2-single-c-ii": {
       "questionSha256": "dc5d585bae0f5627eb5cc6b421f37bcc901c2dd1411fcb9af53b50d452383b13",
-      "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "kind": "flexible",
+      "reason": "Scheme PDF28: “at least two ways” the author develops the character of Thomas McNulty, with reference to both style and content. One 60-mark response."
     },
     "english-2020-hl-p2-single-d-i": {
       "questionSha256": "57cc8d9ad04b79dcf2a83f7a6924d58c199231ed0854f0ead4c24fdbdb893420",
       "kind": "open",
-      "reason": "The student chooses their own character, moment, object, interpretation or example from the studied work. The paper does not enumerate a fixed named option pool. Relative clauses using which are not selection instructions."
+      "reason": "Scheme PDF29: discuss the statement that uncertainty adds significantly to the dramatic impact of Hamlet. One 60-mark response."
     },
     "english-2020-hl-p2-single-e-i": {
       "questionSha256": "251d6eab914918e2dc5190cabb52d2361d75b3f71b86a7423671a94e16ee1868",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "open",
+      "reason": "Scheme PDF31: discuss the statement that the magical and fantastical elements add significantly to the dramatic impact of The Tempest. One 60-mark response."
     },
     "english-2020-ol-p2-single-a-q1-a": {
       "questionSha256": "5fef3702bdf9556731ec36303f0e5ca8cddc81788ccf9929c8ed950c7f552c35",
@@ -13538,33 +13538,33 @@
     },
     "english-2020-hl-p2-comparative-a-q1-a": {
       "questionSha256": "1b2928ae0158fd1cac97fa12432fbcc9de0269a0a30a20ccb489c1ba3af3cbfb",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF34: “two aspects of cultural context” contributing to social division or social unity in one text — two required. One 30-mark response."
     },
     "english-2020-hl-p2-comparative-a-q1-b": {
       "questionSha256": "46463baa70afab31d2b299a097875b8ce10a2eb523347a19db0a83e75230f825",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF35: two other texts; the extent of social division and the aspect(s) contributing to it, “the same aspect or different aspects”. One 40-mark response."
     },
     "english-2020-hl-p2-comparative-a-q2": {
       "questionSha256": "d73aa9ee2e3c98f4b49fbb01c41090e49191f673446931b2a89dab1afd520bce",
-      "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "kind": "required",
+      "reason": "Scheme PDF36: one central character from each of three texts; “at least one relevant factor” related to cultural context in each, compared. One 70-mark comparison."
     },
     "english-2020-hl-p2-comparative-b-q1-a": {
       "questionSha256": "983a33775bd7e88f1c01f6943542ccb63c5ed839d5abcd7e95654af579064eff",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF37: how effectively the author employs imagery to convey or enhance the narrative in one text. One 30-mark response."
     },
     "english-2020-hl-p2-comparative-b-q1-b": {
       "questionSha256": "4f693e9f76b390fb641bc2c7913ff1a4f5e69d5f254c8ff2b28ee09a75d55364",
       "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "reason": "Scheme PDF38: the same question compared in two other texts; links with part (a) not required. One 40-mark response."
     },
     "english-2020-hl-p2-comparative-b-q2": {
       "questionSha256": "d9f280ce25e2b56e402b4e33984adbcc1f5c7e03c22b1cabc91ab34019d3a80d",
-      "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "kind": "required",
+      "reason": "Scheme PDF39: setting or aspects of setting defining characters in three texts, “at least one character in each” — three required. One 70-mark comparison."
     },
     "english-2020-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "921fd47460bb3e8327e6843f5da43e2020791a2b534a65aa2cbe955f03d4d84f",
@@ -18305,6 +18305,51 @@
       "questionSha256": "ebdacc696db03671ef0de680d7b050f766d99a8ce23c450f7436ba9c7a9cf5e3",
       "kind": "open",
       "reason": "Scheme PDF11: three points on why science fiction has a wide and enduring appeal; “Allow for a wide range of responses.” One 15-mark response."
+    },
+    "english-2020-hl-p2-single-d-ii": {
+      "questionSha256": "dda90fde75b012471b3ff76cc872d4a8173769d7d2a72a10599c1f7305278cf9",
+      "kind": "flexible",
+      "reason": "Scheme PDF30: how Shakespeare makes effective use, for “at least two purposes”, of the contradictions and inconsistencies in Hamlet’s character. One 60-mark response."
+    },
+    "english-2020-hl-p2-single-e-ii": {
+      "questionSha256": "2285e1bd4d74f3a57fb1f0d18022dea3c1eb36b3f213f54910e8db7ee5b0dd89",
+      "kind": "flexible",
+      "reason": "Scheme PDF32: how Shakespeare makes effective use, for “at least two purposes”, of both Prospero’s less attractive traits and his admirable qualities. One 60-mark response."
+    },
+    "english-2020-hl-p2-unseen-q1-a": {
+      "questionSha256": "1cc669f60e1fc010c2659b867b0bb5e2a57c449975848eea09902bb27c7e48a3",
+      "kind": "open",
+      "reason": "Scheme PDF40: the impact and suitability of the title; “a wide range of responses”. One 10-mark response."
+    },
+    "english-2020-hl-p2-unseen-q1-b": {
+      "questionSha256": "e4be6c2e5a9aff13f8b5c8ba50fe3a2bbdfd2368d6c612f8709bf598f7c2f0e4",
+      "kind": "open",
+      "reason": "Scheme PDF40: how the poet brings the poem to life by appealing to the senses. One 10-mark response."
+    },
+    "english-2020-hl-p2-unseen-q2": {
+      "questionSha256": "096366d24533c21413b846c5a2ea6df133de027acd13362ec4d10f477eddb725",
+      "kind": "open",
+      "reason": "Scheme PDF40: the poet’s use of language to convey aspects of his experience with the crow. One 20-mark response."
+    },
+    "english-2020-hl-p2-prescribed-1": {
+      "questionSha256": "66689d70e191a7d0f224bd57ccf655a15323eb6add56f68160016ada0f86ecd2",
+      "kind": "open",
+      "reason": "Scheme PDF41, 42: freedom of choice of poems studied; discuss the question as printed. One 50-mark response."
+    },
+    "english-2020-hl-p2-prescribed-2": {
+      "questionSha256": "81cd1be083dbf9c5c1060c49b17ef61b18dfd5e0b55e57228dcdfcdcef4b5259",
+      "kind": "open",
+      "reason": "Scheme PDF41, 43: freedom of choice of poems studied; discuss the question as printed. One 50-mark response."
+    },
+    "english-2020-hl-p2-prescribed-3": {
+      "questionSha256": "6a83aa9b4d612c7320e0467170586273816e51a42301efb3e571ff85013ffb56",
+      "kind": "open",
+      "reason": "Scheme PDF41, 44: freedom of choice of poems studied; discuss the question as printed. One 50-mark response."
+    },
+    "english-2020-hl-p2-prescribed-4": {
+      "questionSha256": "071a998113df646083a3426fd834600a7c2d5d7aa5764ae2e37eaed1260f14aa",
+      "kind": "open",
+      "reason": "Scheme PDF41, 45: freedom of choice of poems studied; discuss the question as printed. One 50-mark response."
     }
   }
 }

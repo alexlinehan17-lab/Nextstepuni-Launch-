@@ -147,6 +147,17 @@
    "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b"
   },
   {
+   "paperId": "english-2020-hl-p2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 23,
+   "cards": 23,
+   "printedDuplicates": 0,
+   "paperSha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6",
+   "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b"
+  },
+  {
    "paperId": "english-2019-hl-p1",
    "year": 2019,
    "level": "higher",
@@ -1384,7 +1395,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 715,
+ "cardCount": 738,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -11910,6 +11921,783 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-a-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text A(i)",
+   "questionText": "“Margaret Atwood promotes a feminist message at the expense of constructing a gripping narrative in her novel, The Handmaid’s Tale.” To what extent do you agree or disagree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-a-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text A(ii)",
+   "questionText": "Identify and discuss the various ways in which Margaret Atwood develops the character of Offred throughout her novel, The Handmaid’s Tale. Develop your response with reference to both the style and content of the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-b-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text B(i)",
+   "questionText": "“Jane Austen indulges in trivial social comedy at the expense of exploring substantial social issues in her novel, Persuasion.” To what extent do you agree or disagree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-b-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text B(ii)",
+   "questionText": "Identify and discuss the various ways in which Jane Austen develops the character of Anne Elliot throughout her novel, Persuasion. Develop your response with reference to both the style and content of the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-c-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text C(i)",
+   "questionText": "“Sebastian Barry sacrifices realism for a romanticised view of history in his novel, Days Without End.” To what extent do you agree or disagree with this statement? Develop your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-c-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text C(ii)",
+   "questionText": "Identify and discuss the various ways in which Sebastian Barry develops the character of Thomas McNulty throughout his novel, Days Without End. Develop your response with reference to both the style and content of the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-10",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Days Without End (Sebastian Barry)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-d-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text D(i)",
+   "questionText": "“Uncertainty, which features constantly in Shakespeare’s play, Hamlet, adds significantly to the dramatic impact of the play.” Discuss the above statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-d-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text D(ii)",
+   "questionText": "Discuss how Shakespeare makes effective use, for a variety of purposes, of the contradictions and inconsistencies evident in Hamlet’s character. Develop your discussion with reference to Shakespeare’s play, Hamlet.",
+   "totalMarks": 60,
+   "topicId": "english-12-0",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Hamlet (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-e-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text E(i)",
+   "questionText": "“The various magical and fantastical elements that feature throughout Shakespeare’s play, The Tempest, add significantly to the dramatic impact of the play.” Discuss the above statement, developing your response with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-single-e-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Single Text E(ii)",
+   "questionText": "Discuss how Shakespeare makes effective use, for a variety of purposes, of Prospero’s less attractive traits and also of his admirable qualities. Develop your discussion with reference to Shakespeare’s play, The Tempest.",
+   "totalMarks": 60,
+   "topicId": "english-12-4",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Tempest (Shakespeare)",
+   "schemePages": [
+    32
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-a-q1-a",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "Identify and discuss two aspects of cultural context which you believe make a significant contribution to the level of social division or the level of social unity evident in one text on your comparative course. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Cultural Context · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-a-q1-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "Compare the extent to which social division is evident in each of two other comparative texts you have studied. Develop your response with reference to the aspect or aspects of cultural context that you believe contribute(s) to the level of social division evident in these texts. In your answer you may refer to the same aspect or different aspects of cultural context in each of the texts that you have studied.",
+   "totalMarks": 40,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Cultural Context · Q1",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-a-q2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative A Q2",
+   "questionText": "Choose one central character from each of three texts on your comparative course. Compare the factors, related to cultural context, that affect the extent to which these characters are accepted or rejected as members of their societies. Develop your response with reference to your chosen texts. In your answer you should refer to at least one relevant factor related to cultural context in each of your three comparative texts. You may refer to the same factor or different factors in each of your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-3",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · Cultural Context · Q2",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-b-q1-a",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "Discuss how effectively the author employs imagery to convey or enhance the narrative in one text on your comparative course. Develop your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-b-q1-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "Compare how effectively the authors of two other texts on your comparative course employ imagery to convey or enhance the narrative in these texts. Develop your answer with reference to your chosen texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-comparative-b-q2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Comparative B Q2",
+   "questionText": "Compare the extent to which the authors of three texts on your comparative course use setting or aspects of setting to help define and develop characters. Develop your answer with reference to at least one character in each of your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q2",
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-unseen-q1-a",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "Based on your reading of the above poem, discuss the impact and suitability of its title. Develop your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Badb",
+    "pages": [
+     6
+    ],
+    "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-unseen-q1-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Discuss how the poet brings the above poem to life by appealing to the senses. Develop your response with reference to the poem.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Badb",
+    "pages": [
+     6
+    ],
+    "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-unseen-q2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "Discuss the poet’s use of language in the above poem to convey various aspects of his experience with the crow. Develop your response with reference to the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "Badb",
+    "pages": [
+     6
+    ],
+    "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    40
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-prescribed-1",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "Eavan Boland Based on your reading of Boland’s poetry, to what extent is your emotional response to her work heightened by her use of both provocative and evocative imagery? Develop your response with reference to the poems by Eavan Boland on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-1",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Eavan Boland",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-prescribed-2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "Emily Dickinson Discuss how Dickinson’s unique approach to language, and the balance between beauty and horror in her imagery, help to relieve some of the darker aspects of her poetry. Develop your response with reference to the poems by Emily Dickinson on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-2",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Emily Dickinson",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-prescribed-3",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "Adrienne Rich Discuss how Rich makes effective use of a variety of characters, often in dramatic settings, to probe both personal issues and wider social concerns in her poems. Develop your response with reference to the poetry by Adrienne Rich on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-20",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Adrienne Rich",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-hl-p2-prescribed-4",
+   "year": 2020,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2020 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "William Wordsworth Discuss Wordsworth’s use of natural imagery, often in specific settings, to convey insights into the power of memory and the value of reflection. Develop your response with reference to the poetry by William Wordsworth on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-22",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "William Wordsworth",
+   "schemePages": [
+    45
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
    }
   },
   {

@@ -5472,6 +5472,39 @@
       "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
       "questionSha256": "daafbb6f7c0711e1973b691515af45067d5ba22479b87e1765aba3f663d9be21",
       "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2020-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Badb",
+      "pages": [
+        6
+      ],
+      "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+      "questionSha256": "1cc669f60e1fc010c2659b867b0bb5e2a57c449975848eea09902bb27c7e48a3",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Maurice Riordan and answer either Question 1 or Question 2”), the title, the whole 30-line poem, the byline and the gloss (Badb – the name of a Celtic war goddess); visually verified."
+    },
+    "english-2020-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Badb",
+      "pages": [
+        6
+      ],
+      "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+      "questionSha256": "e4be6c2e5a9aff13f8b5c8ba50fe3a2bbdfd2368d6c612f8709bf598f7c2f0e4",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Maurice Riordan and answer either Question 1 or Question 2”), the title, the whole 30-line poem, the byline and the gloss (Badb – the name of a Celtic war goddess); visually verified."
+    },
+    "english-2020-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "Badb",
+      "pages": [
+        6
+      ],
+      "attribution": "Badb — Maurice Riordan, as reproduced in the SEC 2020 paper.",
+      "questionSha256": "096366d24533c21413b846c5a2ea6df133de027acd13362ec4d10f477eddb725",
+      "reason": "Paper PDF6 prints the instruction (“Read the following poem by Maurice Riordan and answer either Question 1 or Question 2”), the title, the whole 30-line poem, the byline and the gloss (Badb – the name of a Celtic war goddess); visually verified."
     }
   }
 }
