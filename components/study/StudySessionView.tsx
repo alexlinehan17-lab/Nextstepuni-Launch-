@@ -1,6 +1,6 @@
 import { peekTopicStudy, clearTopicStudy } from '../../utils/topicLaunch';
 import { sameStudySubject, sessionTopicAllocations } from '../../services/studyTopicHistory';
-import type { StudyTopicAllocation } from '../../types/studyTopics';
+import type { StudyTopicAllocation, StudyTopicSelection } from '../../types/studyTopics';
 import { studyTopicSelection } from '../../services/studyTopicHistory';
 import { readPlannerTodos } from '../launchpad/plannerTodos';
 /**
@@ -8,7 +8,7 @@ import { readPlannerTodos } from '../launchpad/plannerTodos';
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
 import { useMobileAppDesign } from '../../hooks/useMobileAppDesign';
 import MobileStudySessionView from './StudySessionView.mobile';
 import { AnimatePresence } from 'framer-motion';
@@ -34,6 +34,9 @@ import { MIN_STUDY_SESSION_MINUTES } from '../../hooks/useStudySession';
 import { StudySessionProvider, useSharedStudySession, useStudySessionScope } from '../../contexts/StudySessionContext';
 import StudyTimeUp from './StudyTimeUp';
 import StudySessionSaved from './StudySessionSaved';
+// The quiz pulls in a Mark Bank deck, so it loads only when a session is saved
+// with the quiz on — never as part of the study room itself.
+const StudySessionQuiz = lazy(() => import('./quiz/StudySessionQuiz'));
 import StrategyPickerStep from './StrategyPickerStep';
 import { QUICK_DEBRIEF_POINTS, FULL_REFLECTION_POINTS } from '../ReflectionModal';
 import StudyJournalModal from '../StudyJournalModal';
@@ -45,6 +48,7 @@ import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
 import { logError } from '../../utils/logError';
 import { useProgress } from '../../contexts/ProgressContext';
+import { useSettingsContext } from '../../contexts/SettingsContext';
 import { DEMO_STUDENT_UID } from '../../data/devStudent';
 import { useModal } from '../../hooks/useModal';
 
@@ -130,9 +134,18 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const session = useSharedStudySession()!;
   const [openEndedChoice, setOpenEndedChoice] = useState(false);
   const [finishing, setFinishing] = useState(false);
-  const [savedSummary, setSavedSummary] = useState<{ subject: string; seconds: number; points: number } | null>(null);
+  const [savedSummary, setSavedSummary] = useState<{
+    subject: string; seconds: number; points: number;
+    /** The topics studied, kept for the end-of-session quiz (resetSession clears them). */
+    topicSelection?: StudyTopicSelection;
+    quizDone?: boolean;
+  } | null>(null);
   useEffect(() => { if (session.phase !== 'complete') setFinishing(false); }, [session.phase]);
   const [timerAppearance, setTimerAppearance] = useStudyTimerAppearance(user.uid);
+  // The end-of-session quiz is on unless the student turned it off. Settings
+  // are optional here (tests render the room without a provider).
+  const settingsContext = useSettingsContext();
+  const quizEnabled = settingsContext?.settings.studyQuiz !== false;
   const { rawProgressDoc, updateDemoProgress } = useProgress();
   const isDemo = user.uid === DEMO_STUDENT_UID;
 
@@ -283,7 +296,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
 
   /** JP this session earns on saving, before any debrief bonus. */
   const sessionPoints = session.basePointsEarned + (session.extensionBonus ?? 0);
-  const rememberSaved = (debriefBonus: number) => setSavedSummary({ subject: session.subject, seconds: session.elapsedSeconds, points: sessionPoints + debriefBonus });
+  const rememberSaved = (debriefBonus: number) => setSavedSummary({
+    subject: session.subject, seconds: session.elapsedSeconds, points: sessionPoints + debriefBonus,
+    topicSelection: session.topicSelection ?? undefined,
+  });
 
   // Auto-complete timetable block after saving session
   const completeTimetableBlock = () => {
@@ -441,6 +457,25 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     session.resetSession();
   };
 
+  // ── QUIZ: a quick check on what was studied, once the session is safely saved ──
+  if (session.phase === 'idle' && savedSummary && quizEnabled && !savedSummary.quizDone) {
+    const finishQuiz = () => setSavedSummary(current => current ? { ...current, quizDone: true } : current);
+    return (
+      <Suspense fallback={null}>
+        <StudySessionQuiz
+          uid={user.uid}
+          subject={savedSummary.subject}
+          topicSelection={savedSummary.topicSelection}
+          profileSubjects={studentProfile?.subjects}
+          examDate={studentProfile?.examStartDate}
+          character={user.avatar}
+          onDone={finishQuiz}
+          onSkip={finishQuiz}
+        />
+      </Suspense>
+    );
+  }
+
   // ── SAVED: the points just earned, and where to spend them ──
   if (session.phase === 'idle' && savedSummary) {
     return <StudySessionSaved
@@ -460,6 +495,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           onTodosChange={setSessionTodos}
           colourfulTimer={timerAppearance === 'layers'}
           onColourfulTimerChange={value => setTimerAppearance(value ? 'layers' : 'ink')}
+          quizAtEnd={quizEnabled}
+          onQuizAtEndChange={settingsContext ? value => settingsContext.updateSetting('studyQuiz', value) : undefined}
           subjects={subjects}
           selectedSubject={selectedSubject}
           examDate={studentProfile?.examStartDate}
