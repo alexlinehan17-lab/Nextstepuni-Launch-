@@ -215,22 +215,54 @@ New shared-for-Geography machinery on this branch since the pause:
   This also stops 59 Economics and 2 Chemistry scheme-answer crops (tick tables, a p-orbital drawing) appearing
   before the reveal in Ways In.
 
-**Open finding — Topic Atlas, Part One of 2010–2019 (not changed here; needs a Paper Trail decision).** Before 2020 one
-booklet printed both parts, and Paper Trail and the Atlas know that booklet's questions only by their Part Two numbers
-(paper key `single`). A Part One question therefore has no Atlas identity of its own: its cards resolve to the Part Two
-question that shares its number. Measured over every card: the 3,504 cards with an Atlas question identity (2020–2026
-both parts, 2010–2019 Part Two) all file under every heading their review proves and are listed there; 649 cards from
-240 Part One questions of 2010–2019 (including 2010 OL Q4, 2011 HL Q2(i)/(iii) and 2011 OL Q11(i)) are in Mark Bank
-but not in the Topic Atlas as their own questions. Filing them needs Part One identities in Paper Trail (answer maps
-and question rows keyed apart from Part Two), which is shared infrastructure.
+**Topic Atlas, Part One of 2010–2019 (done 23 October).** Before 2020 one booklet printed Part One (Q1–12) and
+then Part Two, which restarts at Q1. Three things numbered it differently: the Viewer's Storage sidecar anchors Part
+Two 1–12 (live Higher maps stop at Q12; the repo copies add the option essays 13–24), the hosted paper-anchors the Atlas
+reads for these booklets (TV-10) anchored Part One 1–12, and the StudyClix crosswalk joined both parts' headings to one
+number. So `(single, n)` named two questions: a Part Two topic could show a Part One crop, a Part One card resolved to
+the Part Two question of its number, and opening the Viewer from the Atlas moved a Part Two chip onto the Part One
+page. Now:
+- `(single, n)` is Part Two, as the Viewer's chips, Full Loop and Topics tool number it. Part One files as
+  `(single, 1000 + n)`.
+- `geography_atlas_anchors.py` builds the 40 hosted maps (2010–2019, Higher/Ordinary, English/Irish) as section-restart
+  maps (the `printOrder` + `label` mechanism `test/vaultAnchors.test.ts` documents): Part Two copies the sidecar's own
+  n, page and band (identical to live Storage, checked by download), plus the reviewed Higher option regions; Part One
+  takes 1001–1012, the label "Part One · Question N" ("Cuid a hAon · Ceist N" in Irish, as printed) and the exact crop
+  the Atlas showed before, frozen in `scripts/paper-trail/geography-part-one-anchors.json`. 2017 Ordinary Q12 gets
+  an audited end on page 27. No Storage upload: the Viewer's sidecars are untouched, so its chips and Full Loop stops
+  are unchanged; Part One gets no chips.
+- `geography_cards.py` re-keys the StudyClix crosswalk's shared-booklet associations (386 headings, 772 English and
+  Irish targets) evidence first (the topic proven by only one part's review decides; otherwise the heading's shape: a
+  Part Two question prints A/B/C or is an option essay) and files each row's shipped topics on its own part. The Irish
+  edition's rows mirror the English identities (no Irish content re-reviewed). 2020+ rows are byte-identical.
+- `questionLabel` (components/PaperTrail/topics.ts) names a Part One question "Part One · Question 4" wherever the app
+  printed a raw number (Atlas card title before its map loads, Mock Exam list, review deck, Viewer's cross-year chips).
+- Measured: every one of the 4,153 cards now resolves to its own Atlas question and is listed under each of its own
+  headings (before: 3,504; the 649 Part One cards of 240 questions resolved to the same-numbered Part Two question).
+  Atlas questions for Geography: 780 -> 1,020 (English), exam-topic mappings 1,345 -> 1,825 (with the Irish mirror).
+- Re-run order after the StudyClix builder (`build-browser-question-parity-crosswalks.ts`): `geography_cards.py`
+  (re-keys the crosswalk) then `geography_atlas_anchors.py --check`.
+
+Also on 23 October: `origin/main` (through #263) is merged into this branch (conflicts resolved in shared files:
+types, SourceMaterialReader, cardAliases, the preservation test's frozen-identity framework, vite precache, landing
+topics). The merge exposed nine stale Ways In gold entries for reviewed Geography cards (re-annotated by the fixture's
+conventions; no floor changed). `cardlint.py geography` now reads the Geography deck (it used to print "clean" without
+reading a card); it reported the 48 flags of the manual run, resolved as: a rubric card decodes its letters in the
+scheme's rows and needs only its printed page (46), and two cards whose printed table is five headings carried in the
+question text (cardlint-reviewed.json). English has the same missing-file shape and is not wired yet (one entry in
+`DECK_CARDS`). This worktree's `node_modules` now links to the Agri ship worktree's (identical lockfile to main), as
+main added `@capacitor/local-notifications`.
 
 Checks at the final commit (23 October): `geography_cards.py --check` current; `geography_figures.py` 5 crops current;
-cardlint rules over the real Geography cards (see above); `reconcile.py geography` 3,869/3,869, 0 excluded, 0 open,
+`geography_atlas_anchors.py` 40 maps current; `cardlint.py geography` clean; `reconcile.py geography` 3,869/3,869, 0 excluded, 0 open,
 0 orphans, 0 unparsed, baseline written without `--accept-regression`; `geography_refcheck.py` 4,153/4,153; the
-14-file vitest chain 589/589 (includes the preservation test: frozen 754 ids by hash, 3,492 additions); typecheck,
+14-file vitest chain plus paperTrailAnswers, vaultAnchors, markBankTopicAtlas and precacheStaysLean: 18 files,
+4,282/4,282 (includes the preservation test: frozen 754 ids by hash, 3,492 additions); typecheck,
 typecheck:test and `npm run lint` clean; Chrome phone (390) and desktop (1280) runs of 2011 HL Q2(i), 2011 OL Q11(i),
 1A, 2010 OL Q4, 2020 OL 9C and 2017 OL Q9 (no page errors, no horizontal overflow; the Q4 scheme drawing appears only
-after the reveal; 9C places 27 / 30). Full `npm test` and `npm run build` were last run by the previous session before
+after the reveal; 9C places 27 / 30), and of the Atlas (2010 OL Part One Q4 and Part Two Q4, 2011 HL Part One Q2) and
+the Viewer opened from it (`1004` lands on page 4 with no chip; `4` on page 17; the 12 chips on exactly the live
+sidecar's pages). Full `npm test` and `npm run build` were last run by the previous session before
 these final changes (6,229/6,230, the known `musicExamTopics` timeout; build and lint passed).
 Nothing is merged, deployed or opened as a PR; the branch ships later as one step onto current main
 (regenerate `public/assets/landing/ask/topics.json` and `components/landing/subjectShowcase.json` after merging).
