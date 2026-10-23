@@ -4987,7 +4987,7 @@
     "english-2019-hl-p2-single-e-ii": {
       "questionSha256": "94c98069dd0cd0b0aa5d3298ca4c1fd45355d3faf1cfcdb96fd68a8de4ae00eb",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 3 printed choices are one response, not 3 cards. Printed choice as reviewed: The printed task offers an explicit closed pool of named subjects, prescribed openings or formal positions. Practise every offered route; supporting examples remain open and all other task requirements are retained.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF31 — Shakespeare’s use of language in developing “one of the following aspects”: themes (at least two), characterisation (one or more characters), or setting and atmosphere; one grid and one code (L/UA) for every aspect, with the indicative material listed per aspect. One 60-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -7947,43 +7947,43 @@
     },
     "english-2019-hl-p2-single-a-i": {
       "questionSha256": "71bd6de47aae5469c76a9e02928900bfd7ba94befc17fa0c260c091d23b3f1c3",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Scheme PDF22: “at least two distinct insights” into the subject of identity through engagement with the novel. One 60-mark response."
     },
     "english-2019-hl-p2-single-a-ii": {
       "questionSha256": "d5dcf922c8bc27fe8858b3c1d6607f591fa5538c696195d90f70cb70bf71f595",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF23: “Candidates are free to agree or disagree wholly or in part” that the female characters fail each other — a graded judgement, not routes. One 60-mark response."
     },
     "english-2019-hl-p2-single-b-i": {
       "questionSha256": "59b6b9ddbe273fbcd329a34226e5444cce607035565e8ab73cf27a4ebe179dea",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Scheme PDF24: “at least two distinct insights” into the subject of identity through engagement with the novel. One 60-mark response."
     },
     "english-2019-hl-p2-single-b-ii": {
       "questionSha256": "4344ac5e17c7f3d27e31c95813b3178eb8ebe5e78ddb864b248eb37f3ea4c52f",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF25: “Candidates are free to agree or disagree wholly or in part” that the female characters fail each other — a graded judgement, not routes. One 60-mark response."
     },
     "english-2019-hl-p2-single-c-i": {
       "questionSha256": "f473130aaf4785560de918c0fea767b04b980b3bc014510fa4598d4ab3e66649",
-      "kind": "context",
-      "reason": "The selection word is a standalone OR separating already extracted numbered alternatives. It is not an additional choice inside this task."
+      "kind": "flexible",
+      "reason": "Scheme PDF26: “at least two distinct insights” into the subject of identity through engagement with the novel. One 60-mark response."
     },
     "english-2019-hl-p2-single-c-ii": {
       "questionSha256": "24b722810fa42b514739f08bfa50e36994a07fb5a5d5b85cc48c3dbf5939ded2",
       "kind": "open",
-      "reason": "This is a reasoned literary judgement, often about its extent, with freely chosen supporting evidence. Agreement/disagreement or positive/negative wording describes possible conclusions; no fixed named subject pool or mandatory alternative opening is set."
+      "reason": "Scheme PDF27: “Candidates are free to agree or disagree wholly or in part” that the female characters fail each other — a graded judgement, not routes. One 60-mark response."
     },
     "english-2019-hl-p2-single-d-i": {
       "questionSha256": "124c3921737bcd342cd1b42248d60989c673f575e4c6cf53bbc17ec8d84950b0",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "flexible",
+      "reason": "Scheme PDF28: “at least two reasons” why the horrific, bizarre and unbelievable elements (“individually or collectively”) do or do not heighten the tragic intensity — one reasoned judgement. One 60-mark response."
     },
     "english-2019-hl-p2-single-e-i": {
       "questionSha256": "e9c6941154194126da5b42c38ad31f6d204235f5ab5272bfb7085f1707662591",
-      "kind": "context",
-      "reason": "The apparent directive is ordinary prose, a quoted assertion, a temporal use of following, or synonymous descriptions such as scene or moment. There is no fixed selectable pool inside the task."
+      "kind": "flexible",
+      "reason": "Scheme PDF30: “at least two reasons” why the horrific, bizarre and unbelievable elements (“individually or collectively”) do or do not heighten the tragic intensity — one reasoned judgement. One 60-mark response."
     },
     "english-2019-ol-p2-single-a-q2": {
       "questionSha256": "365c0c408d9c14aef6989766e3498a69fe1bac10c28b67dd2387a5003cff1533",
@@ -11867,12 +11867,12 @@
     "english-2019-hl-p2-prescribed-2": {
       "questionSha256": "6584e499ca9fd55c8096d0848f71251f1b73dac1ee55e4787a9ada82ca0e7bc0",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF40, 42: freedom of choice of poems studied; “free to agree or disagree wholly or in part with the statement”. One 50-mark response."
     },
     "english-2019-hl-p2-prescribed-3": {
       "questionSha256": "d3670ae03f011c822bbfd9a5705be74d192b4a0bc71f49f28b7f8adc97f88c10",
       "kind": "open",
-      "reason": "This is an open literary judgement supported by examples, not an instruction to select from separately listed statements or mandatory openings. A qualified or mixed response is not narrowed into artificial exclusive stances."
+      "reason": "Scheme PDF40, 43: freedom of choice of poems studied; “free to agree or disagree wholly or in part with the statement”. One 50-mark response."
     },
     "english-2019-ol-p2-prescribed-a-q1-a": {
       "questionSha256": "401a881db49d16e26f196c1147356ab2529ed6fdcce86112579749a90c0fefa9",
@@ -12750,9 +12750,9 @@
       "questionSha256": "e4109494310dbacc282afe0e33b4870af4d8e235f29ecf0af64d19118c04583b"
     },
     "english-2019-hl-p2-unseen-q1-b": {
+      "questionSha256": "531bd39b1f969846ece25bbb8c8f5f61a430c226cb1efed80d74f6f58876573a",
       "kind": "open",
-      "reason": "Images, lines, emotions and examples are freely identified within the poem, without a fixed printed option list. Ordinary literary judgements allow qualified answers; grammatical or, which and his/her do not create closed task routes.",
-      "questionSha256": "531bd39b1f969846ece25bbb8c8f5f61a430c226cb1efed80d74f6f58876573a"
+      "reason": "Scheme PDF39: two images of the candidate’s own effective in capturing the horror of war, and why. One 10-mark response."
     },
     "english-2020-ol-p2-unseen-q1": {
       "kind": "open",
@@ -13464,27 +13464,27 @@
     "english-2019-hl-p2-comparative-a-q1-a": {
       "questionSha256": "394594dd70210d7b7b33e9fa9ff3a82ce141d15885cbb156d262ffd77923a448",
       "kind": "flexible",
-      "reason": "A minimum number of texts, characters, aspects or examples is required. The paper does not enumerate a finite named list to choose from, so no fixed combinations are invented."
+      "reason": "Scheme PDF33: how the sense of the general vision and viewpoint of one text was influenced by “at least one” personal belief, broadly interpreted. One 30-mark response."
     },
     "english-2019-hl-p2-comparative-a-q1-b": {
       "questionSha256": "dd9fcca3e1b409942464c5a1df8c5bfcc05e47ac3ae357123c86aed9bd5617c7",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF4 and scheme PDF34: two other texts, at least one personal belief each, “the same or different personal belief(s)”. One 40-mark response."
     },
     "english-2019-hl-p2-comparative-a-q2": {
       "questionSha256": "b736fc0fea51992a8b27252db004bff914409f5f2127d8520e394266fd2b8878",
-      "kind": "open",
-      "reason": "The task uses freely selected comparative texts, characters, techniques, moments or aspects. Relative clauses and qualified literary judgements do not constitute an explicit closed answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF35: the personal integrity of one central character “in each of three” texts, compared — three required, not necessarily equally. One 70-mark comparison."
     },
     "english-2019-hl-p2-comparative-b-q1-b": {
       "questionSha256": "36d11c7ed6012ca4358a692eb9fa5814c0496e69ffc388f71e1b696a93952ba4",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Scheme PDF37: “at least one technique” in each of two other texts, the same or different. One 40-mark response."
     },
     "english-2019-hl-p2-comparative-b-q2": {
       "questionSha256": "cbe469fe3618cfd02fd4ef509e742f8eca62306c5d840b6d8fafc3f6ffcd82bc",
       "kind": "flexible",
-      "reason": "The paper explicitly allows combined approaches, repeated or different aspects, and/or alternatives supplied by the student. It does not prescribe a fixed named pool of exclusive answers."
+      "reason": "Paper PDF5 and scheme PDF38: mood or atmosphere in each of three texts, “at least one technique” each, the same or different. One 70-mark comparison."
     },
     "english-2019-ol-p2-comparative-a-q1-a-i": {
       "questionSha256": "1e46d2b5e0b210f4e90bee0f842651963f7464958834f8d438ab5fd0dbe1c946",
@@ -18040,6 +18040,36 @@
       "questionSha256": "528682ed592f2e7f9ced71d566cb05ac580fe315c15dfa8c2433fd16cbefff29",
       "kind": "open",
       "reason": "Scheme PDF11: four elements of the writer’s style, chosen freely, that make this a good personal essay. One 20-mark response."
+    },
+    "english-2019-hl-p2-single-d-ii": {
+      "questionSha256": "b6d0d101e963b93a72016e815218a4ffa3b3a29147c9daca1d855a83f01996b8",
+      "kind": "required",
+      "reason": "Scheme PDF29: how Carr uses language both to create dark comedy (code LC) and to add a poetic quality (code LP). One 60-mark response."
+    },
+    "english-2019-hl-p2-comparative-b-q1-a": {
+      "questionSha256": "ffbb3e2511863aa7a70d8e82d4dffe3388f5f86353ba7e98a105a44e590f526b",
+      "kind": "required",
+      "reason": "Scheme PDF36: how effectively “two techniques” provide insight into a central character’s mindset in one text — two required. One 30-mark response."
+    },
+    "english-2019-hl-p2-unseen-q1-a": {
+      "questionSha256": "1470cb16afc78a334f4fac6728c1b4f967db14ea2461b79740b1a4c0af054859",
+      "kind": "open",
+      "reason": "Scheme PDF39: “Candidates may or may not find the title of the poem appropriate”, with reference to the words chosen. One 10-mark response."
+    },
+    "english-2019-hl-p2-unseen-q2": {
+      "questionSha256": "bb055264bbbbf7c5dba3622878625c63cf4921f6b2d11a65dff2a9476d69be15",
+      "kind": "open",
+      "reason": "Scheme PDF39: how language is used effectively to maximise the emotional impact, with detailed reference. One 20-mark response."
+    },
+    "english-2019-hl-p2-prescribed-1": {
+      "questionSha256": "86bdbe0030c20e82b81ac16efb278727ab6326f9af0595f6844c6c6df0958419",
+      "kind": "required",
+      "reason": "Scheme PDF40, 41: Kennelly’s exploration of a range of emotions (at least two) and his use of a variety of characters (at least two), engaging with all aspects, not necessarily equally. One 50-mark response."
+    },
+    "english-2019-hl-p2-prescribed-4": {
+      "questionSha256": "d2ab12d13673da536de4a365b2c1228f0f1bd74025acae182863ac724ac65fa5",
+      "kind": "open",
+      "reason": "Scheme PDF40, 44: how effectively Plath uses a range of images to develop her themes and add drama, all aspects engaged, not necessarily equally. One 50-mark response."
     }
   }
 }

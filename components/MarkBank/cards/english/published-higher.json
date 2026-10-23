@@ -147,6 +147,17 @@
    "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb"
   },
   {
+   "paperId": "english-2019-hl-p2",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "tasks": 23,
+   "cards": 23,
+   "printedDuplicates": 0,
+   "paperSha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363",
+   "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb"
+  },
+  {
    "paperId": "english-2018-hl-p1",
    "year": 2018,
    "level": "higher",
@@ -1352,7 +1363,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 673,
+ "cardCount": 696,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -11826,6 +11837,784 @@
    "atlas": {
     "fileid": "LC002ALP100EV.pdf",
     "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-a-i",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text A(i)",
+   "questionText": "Identify and discuss a variety of insights you gained into the subject of identity through your engagement with Adichie’s novel, Americanah. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    22
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-a-ii",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text A(ii)",
+   "questionText": "“The female characters in Adichie’s novel, Americanah, fail each other.” Based on your reading of the novel, to what extent do you agree or disagree with the above statement? Explain your answer, giving reasons for your response. Develop your answer with reference to Adichie’s novel, Americanah.",
+   "totalMarks": 60,
+   "topicId": "english-12-56",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Americanah (Chimamanda Ngozi Adichie)",
+   "schemePages": [
+    23
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-b-i",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text B(i)",
+   "questionText": "Identify and discuss a variety of insights you gained into the subject of identity through your engagement with Atwood’s novel, The Handmaid’s Tale. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    24
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "7"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-b-ii",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text B(ii)",
+   "questionText": "“The female characters in Atwood’s novel, The Handmaid’s Tale, fail each other.” Based on your reading of the novel, to what extent do you agree or disagree with the above statement? Explain your answer, giving reasons for your response. Develop your answer with reference to Atwood’s novel, The Handmaid’s Tale.",
+   "totalMarks": 60,
+   "topicId": "english-12-23",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "The Handmaid's Tale (Margaret Atwood)",
+   "schemePages": [
+    25
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-c-i",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text C(i)",
+   "questionText": "Identify and discuss a variety of insights you gained into the subject of identity through your engagement with Austen’s novel, Persuasion. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    26
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-c-ii",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text C(ii)",
+   "questionText": "“The female characters in Austen’s novel, Persuasion, fail each other.” Based on your reading of the novel, to what extent do you agree or disagree with the above statement? Explain your answer, giving reasons for your response. Develop your answer with reference to Austen’s novel, Persuasion.",
+   "totalMarks": 60,
+   "topicId": "english-12-15",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Persuasion (Jane Austen)",
+   "schemePages": [
+    27
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-d-i",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text D(i)",
+   "questionText": "Discuss the reasons why, in your opinion, Marina Carr’s use of a variety of horrific, bizarre and unbelievable elements does or does not heighten the tragic intensity of her play, By the Bog of Cats. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    28
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-d-ii",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text D(ii)",
+   "questionText": "Discuss how Marina Carr uses language to create dark comedy and add a poetic quality to her play, By the Bog of Cats. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-9",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "By the Bog of Cats (Marina Carr)",
+   "schemePages": [
+    29
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-e-i",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text E(i)",
+   "questionText": "Discuss the reasons why, in your opinion, Shakespeare’s use of a variety of horrific, bizarre and unbelievable elements does or does not heighten the tragic intensity of his play, Macbeth. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    30
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-single-e-ii",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Single Text E(ii)",
+   "questionText": "Discuss how Shakespeare’s use of language, including imagery, plays an important part in developing our understanding of one of the following aspects of his play, Macbeth: themes; characterisation; setting and atmosphere. Develop your answer with reference to the text.",
+   "totalMarks": 60,
+   "topicId": "english-12-2",
+   "conceptId": "english-single-text-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected direction: 1 of 3). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Macbeth (Shakespeare)",
+   "schemePages": [
+    31
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 18,
+     "C": 18,
+     "L": 18,
+     "M": 6
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "14"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-a-q1-a",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative A Q1(a)",
+   "questionText": "“Our personal beliefs – our views and values – can influence our sense of the general vision and viewpoint of a text.” With reference to one text on your comparative course, explain how your sense of the general vision and viewpoint was influenced by at least one of your personal beliefs. Develop your response with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    33
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-a-q1-b",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative A Q1(b)",
+   "questionText": "“Our personal beliefs – our views and values – can influence our sense of the general vision and viewpoint of a text.” Compare how your sense of the general vision and viewpoint in each of two other comparative texts was influenced by at least one of your personal beliefs. Develop your response with reference to your chosen texts. In response to 1. (b) you may refer to the same or different personal belief(s) that you referred to in 1. (a) above. You may refer to the same personal belief or different personal beliefs in relation to each of your two other comparative texts.",
+   "totalMarks": 40,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q1",
+   "schemePages": [
+    34
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-a-q2",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative A Q2",
+   "questionText": "“Our view of the personal integrity of a central character can help to shape our impression of the general vision and viewpoint of a text.” Compare the extent to which your view of the personal integrity of one central character, in each of three texts on your comparative course, helped to shape your impression of the general vision and viewpoint of your chosen texts. Develop your answer with reference to the texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-4",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative A · General Vision and Viewpoint · Q2",
+   "schemePages": [
+    35
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-b-q1-a",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative B Q1(a)",
+   "questionText": "Discuss how effectively two techniques are used to provide insight(s) into the mindset of a central character in one text on your comparative course. Develop your answer with reference to the text.",
+   "totalMarks": 30,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    36
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-b-q1-b",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative B Q1(b)",
+   "questionText": "Compare how effectively at least one technique is used to provide insight(s) into the mindset of a central character in each of two other texts on your comparative course. Develop your answer with reference to your chosen texts. In response to 1. (b) you may refer to the same technique or different techniques in relation to each of your chosen texts. You may refer to the same or different techniques to those you referred to in 1. (a) above.",
+   "totalMarks": 40,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q1",
+   "schemePages": [
+    37
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "15"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-comparative-b-q2",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Comparative B Q2",
+   "questionText": "Compare how mood or atmosphere is created in each of three texts on your comparative course. Refer to at least one technique used to create mood or atmosphere in each of your chosen texts. Develop your answer with reference to your chosen texts. You may refer to the same technique or different techniques in each of your chosen texts.",
+   "totalMarks": 70,
+   "topicId": "english-7-2",
+   "conceptId": "english-comparative-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Comparative B · Literary Genre · Q2",
+   "schemePages": [
+    38
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 21,
+     "C": 21,
+     "L": 21,
+     "M": 7
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "16"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-unseen-q1-a",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Unseen Poetry Q1(a)",
+   "questionText": "Discuss the appropriateness of the title, “The Wound in Time”. In your response, make detailed reference to the words chosen by the poet for the title. Develop your answer with reference to the poem as a whole.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Wound in Time",
+    "pages": [
+     6
+    ],
+    "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-unseen-q1-b",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Unseen Poetry Q1(b)",
+   "questionText": "Choose two images from the poem that you find particularly effective in capturing the horror of war and explain why you find these images particularly effective for this purpose.",
+   "totalMarks": 10,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q1",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Wound in Time",
+    "pages": [
+     6
+    ],
+    "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "17"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-unseen-q2",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Unseen Poetry Q2",
+   "questionText": "Explain how language is used effectively to maximise the emotional impact of this poem. Make detailed reference to the use of language for this purpose in the poem.",
+   "totalMarks": 20,
+   "topicId": "english-8-2",
+   "conceptId": "english-unseen-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Unseen Poetry · Q2",
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "UNSEEN POEM",
+    "title": "The Wound in Time",
+    "pages": [
+     6
+    ],
+    "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    39
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-higher"
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "18"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-prescribed-1",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Prescribed Poetry Q1",
+   "questionText": "Brendan Kennelly Discuss how Kennelly’s sensitive exploration of a range of emotions, and his imaginative use of a variety of characters, help to reveal the humanity intrinsic to his work. Develop your response with reference to the poems by Brendan Kennelly on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-12",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Brendan Kennelly",
+   "schemePages": [
+    41
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "19"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-prescribed-2",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Prescribed Poetry Q2",
+   "questionText": "Elizabeth Bishop “Bishop makes skillful use of a variety of poetic techniques to produce poems that are often analytical but rarely emotional.” Discuss the extent to which you agree or disagree with the above statement. Develop your response with reference to the poems by Elizabeth Bishop on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-0",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Elizabeth Bishop",
+   "schemePages": [
+    42
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "20"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-prescribed-3",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Prescribed Poetry Q3",
+   "questionText": "W.B. Yeats “Yeats’s poetry is both intellectually stimulating and emotionally charged.” Discuss the extent to which you agree or disagree with the above statement. Develop your response with reference to the themes and language evident in the poems by W. B. Yeats on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-23",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "W.B. Yeats",
+   "schemePages": [
+    43
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-hl-p2-prescribed-4",
+   "year": 2019,
+   "level": "higher",
+   "paper": 2,
+   "questionRef": "2019 HL Paper 2 Prescribed Poetry Q4",
+   "questionText": "Sylvia Plath Discuss how effectively Plath uses a range of images to develop her themes and add drama to her poetry. Develop your response with reference to the poems by Sylvia Plath on your course.",
+   "totalMarks": 50,
+   "topicId": "english-11-19",
+   "conceptId": "english-prescribed-poetry-response",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "stem": "Sylvia Plath",
+   "schemePages": [
+    44
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP200EV",
+   "atlas": {
+    "fileid": "LC002ALP200EV.pdf",
+    "n": "4"
    }
   },
   {

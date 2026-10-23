@@ -901,6 +901,26 @@
     "english-6-0",
     "english-12-55"
    ]
+  },
+  {
+   "id": "english-higher-text-persuasion-reviewed-archive",
+   "level": "higher",
+   "slug": "text-persuasion",
+   "label": "Text - Persuasion",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-15"
+   ]
+  },
+  {
+   "id": "english-higher-text-by-the-bog-of-cats-reviewed-archive",
+   "level": "higher",
+   "slug": "text-by-the-bog-of-cats",
+   "label": "Text - By the Bog of Cats",
+   "curriculumNodeIds": [
+    "english-6-0",
+    "english-12-9"
+   ]
   }
  ]
 }

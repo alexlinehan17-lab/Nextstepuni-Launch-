@@ -5171,6 +5171,39 @@
       "paperSha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
       "questionSha256": "084cf1e27ea7caafeb42bd7b47d9cbd3b5f2faa52643e6693ca53ce4a21e512b",
       "reason": "The image, moment or episode comes from any text specified for 2019; scheme PDF10 never asks for TEXT 3."
+    },
+    "english-2019-hl-p2-unseen-q1-a": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Wound in Time",
+      "pages": [
+        6
+      ],
+      "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+      "questionSha256": "1470cb16afc78a334f4fac6728c1b4f967db14ea2461b79740b1a4c0af054859",
+      "reason": "Paper PDF6 prints the introduction (written to mark the 100th anniversary of the end of World War One), the instruction to answer either Question 1 or Question 2, the title, the whole 16-line poem, the byline and the gloss (*Cenotaph – war memorial); visually verified."
+    },
+    "english-2019-hl-p2-unseen-q1-b": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Wound in Time",
+      "pages": [
+        6
+      ],
+      "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+      "questionSha256": "531bd39b1f969846ece25bbb8c8f5f61a430c226cb1efed80d74f6f58876573a",
+      "reason": "Paper PDF6 prints the introduction (written to mark the 100th anniversary of the end of World War One), the instruction to answer either Question 1 or Question 2, the title, the whole 16-line poem, the byline and the gloss (*Cenotaph – war memorial); visually verified."
+    },
+    "english-2019-hl-p2-unseen-q2": {
+      "kind": "source-text",
+      "label": "UNSEEN POEM",
+      "title": "The Wound in Time",
+      "pages": [
+        6
+      ],
+      "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
+      "questionSha256": "bb055264bbbbf7c5dba3622878625c63cf4921f6b2d11a65dff2a9476d69be15",
+      "reason": "Paper PDF6 prints the introduction (written to mark the 100th anniversary of the end of World War One), the instruction to answer either Question 1 or Question 2, the title, the whole 16-line poem, the byline and the gloss (*Cenotaph – war memorial); visually verified."
     }
   }
 }
