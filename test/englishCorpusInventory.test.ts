@@ -5,7 +5,11 @@ import inventory from '../scripts/markbank/authored/english-paper-inventory.json
 
 describe('English full-corpus scope', () => {
   it('retains every indexed year, level and paper in the completion inventory', () => {
-    const indexed = PAPER_TRAIL_INDEX.english.flatMap(entry => entry.papers.map(paper => ({
+    // Reviewed window: June sittings from 2010. Since #256 the index also holds
+    // the 1995-2009 archive and the deferred sitting, which have no ledger.
+    const indexed = PAPER_TRAIL_INDEX.english
+      .filter(entry => !entry.sitting && entry.year >= 2010)
+      .flatMap(entry => entry.papers.map(paper => ({
       year: entry.year,
       level: entry.level,
       paperFileid: paper.doc.f,

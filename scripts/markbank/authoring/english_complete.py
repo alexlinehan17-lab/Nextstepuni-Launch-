@@ -43,7 +43,11 @@ def document_record(path):
 def inventory():
     authored = json.loads((ROOT / 'components/MarkBank/cards/english/authored.json').read_text())
     papers = []
-    for entry in sorted(paper_index(), key=lambda e: (e['year'], e['level'])):
+    # Reviewed window only: June sittings from 2010. Since #256 the index also
+    # carries the 1995-2009 archive and the deferred sitting (which reuses
+    # year and level); neither has a review ledger or cards.
+    entries = [e for e in paper_index() if not e.get('sitting') and e['year'] >= 2010]
+    for entry in sorted(entries, key=lambda e: (e['year'], e['level'])):
         if entry['lang'] != 'ev':
             raise ValueError('Unclassified English paper language: ' + entry['lang'])
         for item in entry['papers']:
