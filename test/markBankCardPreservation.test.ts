@@ -402,7 +402,7 @@ const decks = [
    * rule, 2026-10-12); the 778 route cards and 8 repeats that rule removed
    * existed only on the English branch, never on main. These two counts and
    * hashes are refreshed by tmp/english-audit/refresh-pins.py per paper. */
-  ['english:higher', ENGLISH_HIGHER, 696, '0deffe7eb70b79e29822559d472f761419957dd1320bcf458e50cd91dfc3c980'],
+  ['english:higher', ENGLISH_HIGHER, 715, 'cc52da3453360e8096ff2810f5f9e3043d0184a2f22b57a78d83cd4de69ab8a3'],
   ['english:ordinary', ENGLISH_ORDINARY, 1840, '835ad109feb79b4bacb7dac930e897a00626a8986bceb84f45c9307e0338dcf9'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
    * responses across 2021–2025 Higher and Ordinary are present, including
@@ -447,7 +447,7 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_381);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(12_400);
   });
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
@@ -461,13 +461,13 @@ describe('Mark Bank card preservation', () => {
       .filter(([name]) => !name.startsWith('computer-science:')
         && !name.startsWith('engineering:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_738);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(11_757);
   });
 
   it('adds reviewed English papers without replacing any legacy card id or alias', () => {
     const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
-    expect(published.size).toBe(2_536);
+    expect(published.size).toBe(2_555);
     // No route card is published: a printed choice marked identically is one card.
     expect([...published].some(id => id.includes('-route-'))).toBe(false);
     // Legacy ids of bridged papers (2025 HL) are no longer served as legacy

@@ -25,15 +25,15 @@
       "reason": "The newspaper article must be based on both printed diaries, reporting events from 24 to 27 April 1916 (scheme PDF8)."
     },
     "english-2020-hl-p1-composing-5": {
-      "kind": "source-illustration",
-      "label": "MAGAZINE COVER",
-      "title": "The three characters on the magazine cover in Text 3",
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Science Fiction (Sci-Fi)",
       "pages": [
         7
       ],
-      "attribution": "Magazine cover as reproduced on page 7 of the SEC 2020 Higher Level English paper.",
-      "reason": "The short story must feature the three characters pictured on this cover.",
-      "questionSha256": "49c8acce539bb1f9e85cce7776864c0dec79aacdca788c88fa831a352bfc77fe"
+      "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "49c8acce539bb1f9e85cce7776864c0dec79aacdca788c88fa831a352bfc77fe",
+      "reason": "The story features “the three characters that appear on the magazine cover on Page 7” (PDF7)."
     },
     "english-2010-ol-p1-t2-b": {
       "kind": "source-text",
@@ -178,15 +178,15 @@
       "reason": "The task begins “Look at the photograph on page 5”: the Apollo 17 photograph of Earth, PDF5 (the earlier reader carried an invented title)."
     },
     "english-2020-hl-p1-t1-b": {
-      "kind": "source-illustration",
-      "label": "SOURCE MATERIAL",
-      "title": "Rentals for Writers — cartoon",
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "From Genre to Genre",
       "pages": [
         3
       ],
-      "attribution": "Source as reproduced in the official SEC English paper.",
-      "reason": "Visually verified on PDF p.3: Rentals for Writers cartoon by Tom Gauld, with four properties for romance, science-fiction, realist and horror writers. The promotional article uses these pictured properties.",
-      "questionSha256": "1f2a125ed2ded304cc102cd29fe0c7ff99cd6a84125d74ff974061e3acf6e304"
+      "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "1f2a125ed2ded304cc102cd29fe0c7ff99cd6a84125d74ff974061e3acf6e304",
+      "reason": "The article “will be illustrated by the cartoon that appears above” — Tom Gauld’s cartoon, PDF3."
     },
     "english-2020-ol-p1-t3-b": {
       "kind": "source-text",
@@ -5368,6 +5368,110 @@
       "attribution": "Jack — Elaine Feeney, as reproduced in the SEC 2019 paper.",
       "questionSha256": "988c56aabc864b1f8b412fe54b86ac2435b4b1459138e6f0ba4bbe7f6f3955dc",
       "reason": "Paper PDF13 prints the introduction (a mother’s thoughts about her relationship with her son, Jack), the instruction, the title, the whole poem in two columns and the byline above both questions; visually verified. PDF14 begins Prescribed Poem A."
+    },
+    "english-2020-hl-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "From Genre to Genre",
+      "pages": [
+        2
+      ],
+      "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "04bf1559dfd171a66427429dba2661e3830397e9aa973451cae58e92cd500dd4",
+      "reason": "The task reads “the written element of TEXT 1”: McMonagle’s essay, PDF2."
+    },
+    "english-2020-hl-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "From Genre to Genre",
+      "pages": [
+        2
+      ],
+      "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "a1121b1bf78df6950b4abfa6b58631af9ab7f3d1dee010186e2447afba53d9e4",
+      "reason": "The task cites “The edited extract … that appears on Page 2”."
+    },
+    "english-2020-hl-p1-t1-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "From Genre to Genre",
+      "pages": [
+        2
+      ],
+      "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "ff058b9fc0e8fff0b853678b9041a88a9f72c055e916091f87e44fd912dce4eb",
+      "reason": "The task reads “the written element of TEXT 1”: McMonagle’s essay, PDF2."
+    },
+    "english-2020-hl-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Detective Fiction",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "96e28b12e6b3aa1475baab682395e2a87af99ee95dea491d3de5bd95a586a0e1",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2020-hl-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Detective Fiction",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "02f71036f75ce05560ad4bf236087582208f2bf0b697800e9de22f2b9cc89576",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2020-hl-p1-t2-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "Detective Fiction",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "0d5c10896bb251498afbd2368cb77f831d17cc08d751c40dfbf40e7c23fb6f7f",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2020-hl-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Science Fiction (Sci-Fi)",
+      "pages": [
+        6
+      ],
+      "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "83a192758d166e7d6d50c4ccd95e1cd7d279ea02d3ef8468d069660b2f62ea35",
+      "reason": "The task reads “the written element of TEXT 3”: the Becky Chambers extract, PDF6."
+    },
+    "english-2020-hl-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Science Fiction (Sci-Fi)",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "ebdacc696db03671ef0de680d7b050f766d99a8ce23c450f7436ba9c7a9cf5e3",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
+    },
+    "english-2020-hl-p1-t3-a-iii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Science Fiction (Sci-Fi)",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+      "questionSha256": "daafbb6f7c0711e1973b691515af45067d5ba22479b87e1765aba3f663d9be21",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every column and the images checked. Scheme PDF4: introductions and accompanying illustrations are integral parts of the texts, so the whole text is retained."
     }
   }
 }

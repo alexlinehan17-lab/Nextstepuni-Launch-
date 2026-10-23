@@ -136,6 +136,17 @@
    "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa"
   },
   {
+   "paperId": "english-2020-hl-p1",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "tasks": 19,
+   "cards": 19,
+   "printedDuplicates": 0,
+   "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+   "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b"
+  },
+  {
    "paperId": "english-2019-hl-p1",
    "year": 2019,
    "level": "higher",
@@ -1051,6 +1062,16 @@
     },
     "capRulePage": 3
    },
+   "2020-higher": {
+    "family": "hl-h1-h8",
+    "gridPages": [
+     47
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2021-higher": {
     "family": "hl-h1-h8-2022",
     "gridPages": [
@@ -1363,7 +1384,7 @@
   "english-2025-hl-p2-comparative-c-q1": "english-2025-hl-p2-comparative-c-q1-a",
   "english-2025-hl-p2-unseen-q1": "english-2025-hl-p2-unseen-q1-a"
  },
- "cardCount": 696,
+ "cardCount": 715,
  "cards": [
   {
    "id": "english-2026-hl-p1-t1-a-i",
@@ -11157,6 +11178,738 @@
    "atlas": {
     "fileid": "LC002ALP200EV.pdf",
     "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t1-a-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of the written element of TEXT 1, explain three insights you gain into Alan McMonagle’s approach to writing. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "From Genre to Genre",
+    "pages": [
+     2
+    ],
+    "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    4
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t1-a-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 1 QA(ii)",
+   "questionText": "The edited extract from Alan McMonagle’s work that appears on Page 2 is an example of personal writing. Explain why you think genres of personal writing, such as autobiographies, memoirs and diaries, have a wide and enduring appeal. Make three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "From Genre to Genre",
+    "pages": [
+     2
+    ],
+    "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t1-a-iii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 1 QA(iii)",
+   "questionText": "Based on your reading of the written element of TEXT 1, discuss four stylistic features that make the extract from Alan McMonagle’s essay an engaging piece of personal writing. Support your response with reference to four stylistic features evident in the text.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "From Genre to Genre",
+    "pages": [
+     2
+    ],
+    "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5,
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t1-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 1 QB",
+   "questionText": "You have been asked to write the text for a promotional article by the editor of a property magazine called, Rentals for Writers. Your article will be illustrated by the cartoon that appears above. In your promotional article you should: advertise the properties featured in the cartoon as inspirational venues in which to finish novels in particular genres, draw attention to previous literary successes associated with some of these properties, and detail any unique terms and conditions which will apply to particular properties. The article may be humorous or serious or both.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "From Genre to Genre",
+    "pages": [
+     3
+    ],
+    "attribution": "Edited extracts adapted from Alan McMonagle’s essay The Misadventures of a Dithering Writer in Thirteen and A Half Fragments (PDF2), and Tom Gauld’s genre-related cartoon “Finish Writing Your Novel at One of Our Rental Properties” (PDF3). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t2-a-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of the edited extract above, explain three insights you gain into the character of Sherlock Holmes. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Detective Fiction",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t2-a-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 2 QA(ii)",
+   "questionText": "TEXT 2 is an example of writing in the genre, detective fiction. Explain why you think this genre has a wide and enduring appeal. Make three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Detective Fiction",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t2-a-iii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 2 QA(iii)",
+   "questionText": "Identify four features of good storytelling evident in the extract. Discuss how the features you have identified add to your enjoyment of the extract. Support your response with reference to the extract.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "Detective Fiction",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Edited extracts adapted from Sherlock Holmes and the Adventure of the Blue Carbuncle by Arthur Conan Doyle (1892), with an image of a bowler hat (PDF4–5). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t2-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 2 QB",
+   "questionText": "You have been asked to write the introduction to a new collection of contemporary detective fiction. In your introduction you should: outline the reasons why you think detective stories have enduring appeal, discuss some of the personal qualities you believe are essential in a memorable fictional detective, and explain why you recommend this particular collection of stories to readers.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t3-a-i",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of the written element of TEXT 3, explain three insights you gain into the character of Ariadne O’Neill. Support your response with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Science Fiction (Sci-Fi)",
+    "pages": [
+     6
+    ],
+    "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t3-a-ii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 3 QA(ii)",
+   "questionText": "Both elements of TEXT 3 belong to the genre, science fiction. Explain why you think this genre has a wide and enduring appeal. Make three points in your response.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Science Fiction (Sci-Fi)",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    11
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t3-a-iii",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 3 QA(iii)",
+   "questionText": "Based on your engagement with TEXT 3, make four points in which you compare the fictional world presented in the written text with that presented in the visual image. Support your answer with reference to both the written and visual elements of TEXT 3.",
+   "totalMarks": 20,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-style",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Make the comparison explicit across the number of texts requested.",
+    "Develop the required four points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Science Fiction (Sci-Fi)",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    12
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2020-higher"
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-t3-b",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Text 3 QB",
+   "questionText": "Enlightened aliens, horrified by the injustice and inequality evident in human society, have decided to eliminate all human beings and recolonise Earth with more deserving inhabitants. You have been chosen to represent humanity and deliver a speech to the alien powers in which you try to save us from our fate. In your speech you should: acknowledge some of humanity’s failings in relation to justice and inequality, point to evidence of the many admirable qualities of the human race, and explain why the aliens should believe we can be trusted to work together for a better future.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-1",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 1",
+   "questionText": "In TEXT 3, flight engineer, Ariadne O’Neill, explains how she takes pride in her work. Write a personal essay in which you reflect on what you are proud of in your life.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-2",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 2",
+   "questionText": "In TEXT 1, Alan McMonagle writes about allowing room for, among other things, discovery, invention and re-invention in life. Write a feature article, suitable for publication in a popular magazine, offering some ideas for new inventions and discoveries you think would improve your life or make the world a better place. Your article may be serious or humorous or both.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested feature article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-3",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 3",
+   "questionText": "In TEXT 2, the extract from Arthur Conan Doyle’s short story ends with a dramatic arrival. Write a short story, in which a crime or mystery is solved, that begins with a dramatic arrival. You may set your short story in any era and may choose to include or not include the fictional detective Sherlock Holmes.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-4",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 4",
+   "questionText": "In TEXT 3, we read about a range of advanced technology such as TEVA suits and inflatable habitat modules. Write a discursive essay about our changing relationship with machines and the rise of artificial intelligence.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-discursive",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested discursive essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-5",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 5",
+   "questionText": "The theme of TEXTS 1, 2 and 3 is “EXPLORING GENRE”. Write a short story which features the three characters that appear on the magazine cover on Page 7 of this examination paper. You are free to write your story in any genre you choose.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Science Fiction (Sci-Fi)",
+    "pages": [
+     7
+    ],
+    "attribution": "Edited extracts adapted from Becky Chambers’ novella To Be Taught, if Fortunate (PDF6), and a 1950s sci-fi magazine cover, Mystery in Space (PDF7). As reproduced in the SEC 2020 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    14,
+    19
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-6",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, Ariadne O’Neill observes that on Aecor, “… nobody cared about status or money, who was in power, who was kissing or killing whom.” Write a speech in which you argue for or against the motion: Contemporary Irish society is both tolerant and progressive.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    20
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2020-hl-p1-composing-7",
+   "year": 2020,
+   "level": "higher",
+   "paper": 1,
+   "questionRef": "2020 HL Paper 1 Composing 7",
+   "questionText": "In TEXT 2, we see that Sherlock Holmes and his friend, Watson, are very different characters. Write a personal essay in which you celebrate friendship, and reflect on how you have been influenced by the unique and diverse personalities of your friends.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    14,
+    21
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2020-higher",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002ALP100EV",
+   "atlas": {
+    "fileid": "LC002ALP100EV.pdf",
+    "n": "7"
    }
   },
   {

@@ -62726,6 +62726,454 @@
         "notes": "One global mark ex 20 from the 2019 OL combined grid (PDF61, O1–O8), P+C and L+M read together."
       },
       "reason": "All 20 paper pages visually inspected one by one, including the blank PDF18–19. Exact task and award verified against the cited scheme pages, all viewed. Single Text Q1(a)(b), Q2 “Combined Criteria ex 10, P+C = 6, L + M = 4”; Q3 (i)(ii)(iii) “Discrete Criteria ex 30” 9/9/9/3; Comparative (a)(i)/(ii) “Combined Criteria ex 15” 9/6, (b) “Discrete Criteria ex 40” 12/12/12/4; Unseen 10 combined 6/4; Prescribed Q1(a)(b) 15 combined 9/6, Q2 “Combined Criteria ex 20” 12/8. Grid PDF61."
+    },
+    "english-2020-hl-p1-t1-a-i": {
+      "taskSha256": "8e85ec1e9af645ad7df10b45813d52c1993d4bc10dddf9633d175d41ad5c3ea3",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        4
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t1-a-ii": {
+      "taskSha256": "109ae762ca6d97c455080128b5d5d67441bcdd78312b13dc293ceb009451bac2",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        5
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t1-a-iii": {
+      "taskSha256": "68590ad605829cba4af6a3572545c723f104851870d47ab9cce0f564e610cc19",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 20,
+      "schemePages": [
+        5,
+        6
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t1-b": {
+      "taskSha256": "acf6240738d196d26b7a12a6cdfe1680aa52d782e55f2e5f556dc1fb538e3540",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 50,
+      "schemePages": [
+        7
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t2-a-i": {
+      "taskSha256": "274faeaac77be9dde252f7917e5b9074c7c7e1b4e6617a5be26d555abff51ca7",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t2-a-ii": {
+      "taskSha256": "a73a5d1b24761aae8f53537a043b1431eb1da55825d9dd8f2b132853136b5004",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        8
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t2-a-iii": {
+      "taskSha256": "7f9e11e196cc859264b00002e9f46c62b9dd1e963c67c1b37e2b5e3b2e05a2f2",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 20,
+      "schemePages": [
+        9
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t2-b": {
+      "taskSha256": "21b551ced264012afa85719fafb9d0f09aeaa1254daeaf2b1aa2c628abdb68fc",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 50,
+      "schemePages": [
+        10
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t3-a-i": {
+      "taskSha256": "6ba43f4f5385a61eb1e054f0e25b724dfcc7a9c8c1118d0a3b138e9cf0e0e3b9",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t3-a-ii": {
+      "taskSha256": "0d495adc1ec6882e6d9bd8aa8dfc62ca14ba53d3ef3701ce61087e20646bd995",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 15,
+      "schemePages": [
+        11
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 15 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t3-a-iii": {
+      "taskSha256": "2f077ac58b2d9dfac74f9271463bbdf4f21929c966a194d5306916d39ee29ad2",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 20,
+      "schemePages": [
+        12
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "holistic",
+        "notes": "One global mark ex 20 from the H1–H8 band printed with the task (combined criteria grid PDF47); no P/C/L/M submarks."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-t3-b": {
+      "taskSha256": "609f2c1e700e4892455d4d13ade7a180be7882e5b8f02250e08791ac85c367fa",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 50,
+      "schemePages": [
+        13
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 15,
+          "C": 15,
+          "L": 15,
+          "M": 5
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-1": {
+      "taskSha256": "c88c39bbcc06cbf10af3a479ae974cc96fcde65f276add58c28a7b059abd8b3d",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        15
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-2": {
+      "taskSha256": "c0fee8a336cc94aeef4aeebc37a84c5e3a36205686c53ec45d5252f7234b0ceb",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        16
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-3": {
+      "taskSha256": "56f5c907b21d1ccb2ef0e5a30831a63c7b0717402a78edc563f1429058de4111",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        17
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-4": {
+      "taskSha256": "1b3ebdc298dda97829ed1d70fa0d9df8adbfad93d0a235a6b495b80b8286cfb1",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        18
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-5": {
+      "taskSha256": "7b12a4144a3be4b210f3ed56fcb2b602f10b454be1c59106a1e0a2ac6c1422ec",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        19
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-6": {
+      "taskSha256": "56ca94deeb4f9679fe05884df6a3803704b5ddf93340d4cb73f201bed5cb5fba",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        20
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
+    },
+    "english-2020-hl-p1-composing-7": {
+      "taskSha256": "bfb502ee2dba08e32c698feff18ad71431b1aa4f3a92940d496dc4c3c8c7f51b",
+      "paperSha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "totalMarks": 100,
+      "schemePages": [
+        14,
+        21
+      ],
+      "generalCriteriaPages": [
+        3,
+        4,
+        47,
+        49
+      ],
+      "criteria": {
+        "mode": "discrete",
+        "allocation": {
+          "P": 30,
+          "C": 30,
+          "L": 30,
+          "M": 10
+        },
+        "notes": "2020 HL PDF3: marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose. Discrete H1–H8 grid printed with the task and on PDF47."
+      },
+      "reason": "All 12 paper pages visually inspected one by one, including the blank PDF9–11. Exact task and award verified against the cited scheme pages, all viewed. QA 15/15/20 “Mark ex 15/20 by reference to the criteria for assessment” with the H1–H8 row printed with each task (combined grid PDF47); B 50 discrete 15/15/15/5; composing 100 discrete 30/30/30/10 (grid printed per composition, Appendix 2 PDF47). No invented splits or submarks."
     }
   }
 }

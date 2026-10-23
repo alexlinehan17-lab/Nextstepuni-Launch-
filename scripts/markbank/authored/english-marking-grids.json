@@ -1937,6 +1937,32 @@
       "capRulePage": 3,
       "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
     },
+    "2020-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC002ALP000EV.pdf",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "gridPages": [
+        47
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2020-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC002GLP000EV.pdf",
+      "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+      "gridPages": [
+        53
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
     "2021-higher": {
       "family": "hl-h1-h8-2022",
       "scheme": "paper-trail-corpus/markingschemes/2021/LC002ALP000EV.pdf",

@@ -1595,7 +1595,7 @@
     "english-2020-hl-p1-t3-a-iii": {
       "questionSha256": "daafbb6f7c0711e1973b691515af45067d5ba22479b87e1765aba3f663d9be21",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF12: four comparative points between the fictional worlds of the written text and the visual image, with reference to both. One 20-mark response."
     },
     "english-2021-ol-p1-t1-a-iii-a": {
       "questionSha256": "ca22f789854795929e0835a9486ef26616f8ab55f7d37891abfc62b7a46cf2a7",
@@ -2298,17 +2298,17 @@
     "english-2020-hl-p1-t1-b": {
       "questionSha256": "1f2a125ed2ded304cc102cd29fe0c7ff99cd6a84125d74ff974061e3acf6e304",
       "kind": "flexible",
-      "reason": "The register may be serious, humorous, or a mixture; this flexible direction does not prescribe a fixed answer-route selection. The other listed content is required."
+      "reason": "Scheme PDF7: a promotional article advertising the cartoon’s properties, previous literary successes and unique terms; “humorous or serious or both” is a free register; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2020-hl-p1-t2-b": {
       "questionSha256": "72bb6f86a7f4b6b6c4b582a128c383136075b8be5d7e92c455e0b8bf9a094870",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF10: an introduction to a collection of detective fiction — the genre’s appeal, qualities of a memorable detective, and why the collection is recommended; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2020-hl-p1-t3-b": {
       "questionSha256": "b27aecb6f93b2c0154c779d0ca3c7fe759e0725050f7ee9102bbb35bd28fd2e0",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF13: a speech to the aliens acknowledging humanity’s failings, pointing to its admirable qualities, and explaining why it can be trusted; “Candidates should engage with all aspects of the question, although not necessarily equally.” One 50-mark response."
     },
     "english-2020-ol-p1-t1-b": {
       "questionSha256": "f16ae7300bd8dc64ac2585e9d470a9f35068c3ac52a697301c354da1e13e3ad8",
@@ -2837,7 +2837,7 @@
     "english-2020-hl-p1-composing-3": {
       "questionSha256": "51d0be940aa724a829421a286e73818ba74cd03befe5fc2f73ee0f8ad86ba19c",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF17 — a solved crime or mystery beginning with a dramatic arrival, “in any era” and “may include or not include the character, Sherlock Holmes”; both are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -2860,7 +2860,7 @@
     "english-2020-hl-p1-composing-6": {
       "questionSha256": "38e7b7255890495644880a5224430c53ced57bf384be303eecee9c46ad1b28d0",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The composition offers these specific task directions, roles, formats or debate positions. Keep each offered route separately practicable while leaving the actual content open. Optional tone is not narrowed.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF20 — a speech “for or against the motion: Contemporary Irish society is both tolerant and progressive”; both sides are marked on one grid. One 100-mark composition.",
       "pools": [
         {
           "id": "selection",
@@ -3809,27 +3809,27 @@
     "english-2020-hl-p1-composing-1": {
       "questionSha256": "b652c9d2a335a30f67453c6cc7a09b62ba881b9c4b42e2eff19c5a022a38add5",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay reflecting on what the candidate is proud of in their life. One 100-mark composition."
     },
     "english-2020-hl-p1-composing-2": {
       "questionSha256": "f2b5258880374b202d754aee645816c825fa247367a1e0472979feafe158dc4f",
       "kind": "flexible",
-      "reason": "Optional register, perspective or number of examples remains flexible; the paper does not require an exclusive fixed-size selection from named options."
+      "reason": "Scheme PDF16: a feature article with ideas for new inventions and discoveries; “serious or humorous or both” is a free register. One 100-mark composition."
     },
     "english-2020-hl-p1-composing-4": {
       "questionSha256": "cec406e65e18070bedd675c747d08aa26cca0d7b6dac278a6b5907389c9977fb",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF18: a discursive essay on our changing relationship with machines and the rise of artificial intelligence. One 100-mark composition."
     },
     "english-2020-hl-p1-composing-5": {
       "questionSha256": "49c8acce539bb1f9e85cce7776864c0dec79aacdca788c88fa831a352bfc77fe",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF19: a short story featuring the three characters on the magazine cover; “free to write their story in any genre”. One 100-mark composition."
     },
     "english-2020-hl-p1-composing-7": {
       "questionSha256": "5ec72a73ab6e15767bf7d0b7aa0a0d7f5f1199def73162d52004a7fd7e974dd5",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF21: a personal essay celebrating friendship and reflecting on the influence of friends’ diverse personalities. One 100-mark composition."
     },
     "english-2020-ol-p1-composing-1": {
       "questionSha256": "e410aeec70e16fac7003aac2d2c2556a4a2fc8d3aecbf96d0fa0c775630b6c27",
@@ -18265,6 +18265,46 @@
       "questionSha256": "a3ee70275f03d57f8d91e7ae982c761c663708018ce3b94fcae1aadb32aa0a46",
       "kind": "open",
       "reason": "Scheme PDF58: whether, in the candidate’s opinion, the poem is uplifting (optimistic, joyful, disturbing as printed) — one explained judgement. One 15-mark response."
+    },
+    "english-2020-hl-p1-t1-a-i": {
+      "questionSha256": "04bf1559dfd171a66427429dba2661e3830397e9aa973451cae58e92cd500dd4",
+      "kind": "open",
+      "reason": "Scheme PDF4: three insights of the candidate’s own into Alan McMonagle’s approach to writing, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-hl-p1-t1-a-ii": {
+      "questionSha256": "a1121b1bf78df6950b4abfa6b58631af9ab7f3d1dee010186e2447afba53d9e4",
+      "kind": "open",
+      "reason": "Scheme PDF5: three points on why personal writing (autobiographies, memoirs, diaries) has a wide and enduring appeal; “Allow for a wide range of responses.” One 15-mark response."
+    },
+    "english-2020-hl-p1-t1-a-iii": {
+      "questionSha256": "ff058b9fc0e8fff0b853678b9041a88a9f72c055e916091f87e44fd912dce4eb",
+      "kind": "open",
+      "reason": "Scheme PDF5–6: four stylistic features, chosen freely, that make the essay an engaging piece of personal writing. One 20-mark response."
+    },
+    "english-2020-hl-p1-t2-a-i": {
+      "questionSha256": "96e28b12e6b3aa1475baab682395e2a87af99ee95dea491d3de5bd95a586a0e1",
+      "kind": "open",
+      "reason": "Scheme PDF8: three insights of the candidate’s own into the character of Sherlock Holmes, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-hl-p1-t2-a-ii": {
+      "questionSha256": "02f71036f75ce05560ad4bf236087582208f2bf0b697800e9de22f2b9cc89576",
+      "kind": "open",
+      "reason": "Scheme PDF8: three points on why detective fiction has a wide and enduring appeal; “Allow for a wide range of responses.” One 15-mark response."
+    },
+    "english-2020-hl-p1-t2-a-iii": {
+      "questionSha256": "0d5c10896bb251498afbd2368cb77f831d17cc08d751c40dfbf40e7c23fb6f7f",
+      "kind": "open",
+      "reason": "Scheme PDF9: four features of good storytelling, chosen freely, and how they add to the candidate’s enjoyment. One 20-mark response."
+    },
+    "english-2020-hl-p1-t3-a-i": {
+      "questionSha256": "83a192758d166e7d6d50c4ccd95e1cd7d279ea02d3ef8468d069660b2f62ea35",
+      "kind": "open",
+      "reason": "Scheme PDF11: three insights of the candidate’s own into the character of Ariadne O’Neill, supported from the text; the indicative material is not a pool. One 15-mark response."
+    },
+    "english-2020-hl-p1-t3-a-ii": {
+      "questionSha256": "ebdacc696db03671ef0de680d7b050f766d99a8ce23c450f7436ba9c7a9cf5e3",
+      "kind": "open",
+      "reason": "Scheme PDF11: three points on why science fiction has a wide and enduring appeal; “Allow for a wide range of responses.” One 15-mark response."
     }
   }
 }
