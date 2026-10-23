@@ -25,6 +25,7 @@ import { figureUrl } from '../../../utils/figureUrl';
 import { ensureDeck, commitReview, memoryFor, readLocal } from '../../MarkBank/store';
 import { grade as gradeCard, retentionFor } from '../../MarkBank/scheduler';
 import { LEVEL_LABEL } from '../../MarkBank/deck';
+import { useStudyTransitionSound } from '../../../hooks/useStudyTransitionSound';
 import type { MarkRow, SecQuestionCard } from '../../../types/markBank';
 import type { StudyTopicSelection } from '../../../types/studyTopics';
 import type { StudentSubject } from '../../subjectData';
@@ -82,6 +83,9 @@ export default function StudySessionQuiz({
   const [finished, setFinished] = useState(false);
   const deckReady = useRef(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
+  // The study room's approved bloom cue marks the reveal — the one moment the
+  // page changes state on the student's action. It honours the room's mute.
+  const sound = useStudyTransitionSound();
 
   useEffect(() => {
     let live = true;
@@ -134,9 +138,9 @@ export default function StudySessionQuiz({
 
   const primary = useCallback(() => {
     if (finished) { onDone(results); return; }
-    if (!revealed) { setRevealed(true); return; }
+    if (!revealed) { sound.play('return'); setRevealed(true); return; }
     next();
-  }, [finished, onDone, results, revealed, next]);
+  }, [finished, onDone, results, revealed, next, sound]);
 
   // ⌘↵ / Ctrl↵ moves on, as on the Kobra question card.
   useEffect(() => {

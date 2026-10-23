@@ -140,10 +140,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   } | null>(null);
   useEffect(() => { if (session.phase !== 'complete') setFinishing(false); }, [session.phase]);
   const [timerAppearance, setTimerAppearance] = useStudyTimerAppearance(user.uid);
-  // The end-of-session quiz is on unless the student turned it off. Settings
-  // are optional here (tests render the room without a provider).
+  // The end-of-session quiz is on unless the student turned it off. It needs
+  // the settings provider to exist at all (the switch writes there); rendered
+  // without one, as tests do, the room behaves as it did before the quiz.
   const settingsContext = useSettingsContext();
-  const quizEnabled = settingsContext?.settings.studyQuiz !== false;
+  const quizEnabled = Boolean(settingsContext) && settingsContext?.settings.studyQuiz !== false;
   const { rawProgressDoc, updateDemoProgress } = useProgress();
   const isDemo = user.uid === DEMO_STUDENT_UID;
 
