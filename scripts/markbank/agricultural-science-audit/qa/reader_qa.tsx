@@ -15,7 +15,9 @@ window.fetch=async(input,init)=>{
  const decoded=decodeURIComponent(url);
  const match=decoded.match(/(20\d\d)\/(paper|scheme)\/(LC024[AG]LP000[EI]V.pdf)/);
  if(match) return originalFetch('/paper-trail-corpus/'+(match[2]==='paper'?'exampapers':'markingschemes')+'/'+match[1]+'/'+match[3],init);
- if(decoded.includes('firebasestorage.googleapis.com')&&decoded.includes('answers')) return new Response('',{status:404});
+ // Compare the parsed host, never a substring of the URL (CodeQL js/incomplete-url-substring-sanitization).
+ const host=(()=>{try{return new URL(url,location.href).hostname;}catch{return '';}})();
+ if(host==='firebasestorage.googleapis.com'&&decoded.includes('answers')) return new Response('',{status:404});
  return originalFetch(input,init);
 };
 import cases from './qa-cases.json';
