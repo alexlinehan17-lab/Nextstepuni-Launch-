@@ -23,10 +23,10 @@ the criterion instead.
 Q8(a)(iii) and (iv) are drawings of compound Z, which only the paper's
 reaction series names: their question picture is the paper's own print (its
 opening line and the series, then the one ask) and the scheme's drawing is
-the answer. Five parts are excluded (EXCLUDED below, written to
-exclusions/chemistry.json with the scheme's printed evidence): the part the
-SEC voided for a misprint, and four Q11(d)A parts whose only scheme text is a
-criterion ("formula", "location", "explanation").
+the answer. Q3(c)(iv), which the SEC voided for a misprint, is carded with
+the scheme's own note awarding its marks; the four Q11(d)A parts whose only
+scheme text is a criterion ("formula", "location", "explanation") are carded
+with that criterion as the row. Nothing is excluded.
 """
 import json
 import os
@@ -108,6 +108,16 @@ C.fixed([k('3', 'c', 'ii')], 'chem-3-2', 'reading-a-time-from-the-graph', stem=Q
         figure=FIG + 'paper-q3')
 C.fixed([k('3', 'c', 'iii')], 'chem-3-2', 'average-rate-of-reaction', stem=Q3C,
         figure=FIG + 'paper-q3')
+# Q3(c)(iv): the SEC voided the part. The scheme prints its cell [4] with no
+# answer and, beneath it, its own note awarding the 4 marks to everyone who
+# attempted Question 3; that note is the part's one row.
+_q3civ = P.items(k('3', 'c', 'iv'))
+assert [it.cell for it in _q3civ] == ['[4]', None] and not _q3civ[0].text, _q3civ
+C.add([k('3', 'c', 'iv')], 'chem-3-2', 'effect-of-concentration-on-initial-rate', [
+    C.lifted('r-1', _q3civ[1].text, 4,
+             'The scheme prints no answer for this part: because of a typographical error in '
+             'it, the SEC awarded the full 4 marks to every candidate who attempted Question 3.')],
+      stem=Q3C, figure=FIG + 'paper-q3')
 
 # ── Q4 Eight of twelve short items ───────────────────────────────────────────
 C.fixed([k('4', 'a')], 'chem-1-2', 'discovery-of-the-nucleus', notes=Q4_NOTE)
@@ -220,7 +230,20 @@ C.ordered([k('11', 'b', r) for r in ('i', 'ii', 'iii', 'iv')], 'chem-2-4',
           criteria=('Fraction // Fraction', 'Corresponding use // Corresponding use'))
 C.ordered([k('11', 'c')], 'chem-4-3', 'stages-of-sewage-treatment', stem='')
 C.cards[-1]['questionFigureKey'] = FIG + 'paper-q11c'
+# Q11(d)A: the candidate chooses the industry, so for four of its five parts
+# the scheme prints only what the examiner looks for -- "formula",
+# "location", "explanation" -- and that criterion is the row, as printed.
+CHOSEN = ('The scheme prints only the criterion "{}" for this part: the answer depends on '
+          'which of the three industries the candidate chose.')
+for roman, concept, crit in [('i', 'formula-of-a-product-of-a-chosen-industry', 'formula'),
+                             ('ii', 'location-of-a-chosen-industry', 'location')]:
+    C.fixed([ka('11', 'd', roman, 'A')], 'chem-u3', concept,
+            row_notes={0: CHOSEN.format(crit)})
 C.fixed([ka('11', 'd', 'iii', 'A')], 'chem-u3', 'reasons-for-an-industrys-location')
+for roman, concept in [('iv', 'managing-waste-effluent-in-a-chosen-industry'),
+                       ('v', 'promoting-safety-in-a-chosen-industry')]:
+    C.fixed([ka('11', 'd', roman, 'A')], 'chem-u3', concept,
+            row_notes={0: CHOSEN.format('explanation')})
 for roman, concept in [('i', 'properties-of-pvc'), ('ii', 'monomer'), ('iii', 'polymer'),
                        ('iv', 'another-addition-polymer'), ('v', 'importance-of-recycling-plastics')]:
     C.fixed([ka('11', 'd', roman, 'B')], 'chem-4-2', concept)
@@ -230,20 +253,14 @@ C.priced_menu([ka('11', 'd', 'vi', 'B')], 'chem-4-2', 'stages-in-recycling-plast
                    '[6], without a value for each.')
 
 # ── excluded ─────────────────────────────────────────────────────────────────
-# Parts the scheme prints nothing to mark against. Written to
+# None. The five parts once excluded here -- Q3(c)(iv), which the SEC voided,
+# and Q11(d)A(i), (ii), (iv), (v), whose scheme text is a criterion -- are
+# carded above with what the scheme prints. A part the scheme prints nothing
+# to mark against would be written to
 # scripts/markbank/authoring/exclusions/chemistry.json by --exclusions, the
 # evidence lifted from the scheme's own lines for the part (P.sseg_of), so it
 # cannot drift from what the SEC printed.
-EXCLUDED = [
-    (k('3', 'c', 'iv'), 'the SEC voided the part over a misprint (the paper asks about a '
-     'more concentrated HCl solution in a hydrogen peroxide experiment) and awarded full marks '
-     'to every candidate who attempted Question 3; the scheme prints no answer'),
-    (ka('11', 'd', 'i', 'A'), 'the scheme prints only the criterion "formula" for an industry '
-     'the candidate chooses: no answer to learn (the content-free rule)'),
-    (ka('11', 'd', 'ii', 'A'), 'the scheme prints only the criterion "location"'),
-    (ka('11', 'd', 'iv', 'A'), 'the scheme prints only the criterion "explanation"'),
-    (ka('11', 'd', 'v', 'A'), 'the scheme prints only the criterion "explanation"'),
-]
+EXCLUDED = []
 
 
 def exclusions():

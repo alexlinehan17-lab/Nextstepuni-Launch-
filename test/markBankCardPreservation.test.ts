@@ -796,8 +796,8 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_571);
-    // 19,328 + 244 - 1, the Chemistry audit: 125 + 78 new cards for the 2026
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_576);
+    // 19,328 + 249 - 1, the Chemistry audit: 125 + 83 new cards for the 2026
     // Higher and Ordinary papers, 41 for 2025 Higher parts the pre-audit deck
     // had joined or missed (one of them, chem-2025-hl-q10-c-i-total, a
     // pre-audit id the base build never shipped); one shipped 2025 Higher
@@ -861,11 +861,11 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + the Chemistry audit: 244 new ids (2026 Higher 125, 2026
-    // Ordinary 78, 2025 Higher 41, one of them a pre-audit id the base build
+    // 9,768 + the Chemistry audit: 249 new ids (2026 Higher 125, 2026
+    // Ordinary 83, 2025 Higher 41, one of them a pre-audit id the base build
     // never shipped) and one shipped 2025 Higher id moved from the deck to
     // its alias (net 0).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(10_012);
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(10_017);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -887,7 +887,7 @@ describe('Mark Bank card preservation', () => {
     // Every audited sitting's additions and withdrawals, pinned.
     expect(Object.keys(chemistryLedger.papers).sort()).toEqual(['2025 HL', '2026 HL', '2026 OL']);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added')])
-      .toEqual([125, 78, 41]);
+      .toEqual([125, 83, 41]);
     expect([count('2025 HL', 'corrected') + count('2025 HL', 'unchanged'),
       count('2025 HL', 'withdrawn')]).toEqual([103, 1]);
     // Every id the ledger keeps or adds is live, under its sitting's prefix.

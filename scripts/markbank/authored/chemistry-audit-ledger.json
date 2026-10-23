@@ -1859,9 +1859,25 @@
     "status": "added",
     "after": "e11fe974f9d14b58"
    },
+   "chem-2026-ol-q11-d-a-i": {
+    "status": "added",
+    "after": "a841f87914ecc5db"
+   },
+   "chem-2026-ol-q11-d-a-ii": {
+    "status": "added",
+    "after": "6a2a215c559690b3"
+   },
    "chem-2026-ol-q11-d-a-iii": {
     "status": "added",
     "after": "1ee1eab39ae82cca"
+   },
+   "chem-2026-ol-q11-d-a-iv": {
+    "status": "added",
+    "after": "a8cec4386f54fd3a"
+   },
+   "chem-2026-ol-q11-d-a-v": {
+    "status": "added",
+    "after": "1cb3682c22b97a19"
    },
    "chem-2026-ol-q11-d-b-i": {
     "status": "added",
@@ -1938,6 +1954,10 @@
    "chem-2026-ol-q3-c-iii": {
     "status": "added",
     "after": "c2667429be39e18b"
+   },
+   "chem-2026-ol-q3-c-iv": {
+    "status": "added",
+    "after": "92e9d869598f448d"
    },
    "chem-2026-ol-q4-a": {
     "status": "added",
