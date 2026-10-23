@@ -122,6 +122,41 @@ def _spaced(spans):
     return out
 
 
+# Calibri draws "tt" and "tti" as single ligature glyphs, ids 425 and 427
+# (established bank-wide in #233 from 1,585 sightings, each repaired word
+# cropped and read). Some text layers report them as U+01A9 / U+01AB, which
+# the ligature table reads; others report gid 425 as a single "t" -- the 2024
+# Ordinary scheme's "pipete". Read by glyph id, they are what the page draws.
+CALIBRI_LIGATURES = {425: 'tt', 427: 'tti'}
+
+
+def _ligature_origins(page):
+    """{rounded glyph origin: 'tt' | 'tti'} for Calibri's ligature glyphs."""
+    out = {}
+    for tr in page.get_texttrace():
+        if 'Calibri' not in tr.get('font', ''):
+            continue
+        for ch in tr['chars']:
+            rep = CALIBRI_LIGATURES.get(ch[1])
+            if rep:
+                out[(round(ch[2][0], 1), round(ch[2][1], 1))] = rep
+    return out
+
+
+def _span_texts(page):
+    """page.get_text('dict') with each span's text rebuilt from its glyphs,
+    Calibri's ligatures read by glyph id."""
+    ligs = _ligature_origins(page)
+    d = page.get_text('rawdict')
+    for bl in d['blocks']:
+        for ln in bl.get('lines', []):
+            for sp in ln['spans']:
+                sp['text'] = ''.join(
+                    ligs.get((round(c['origin'][0], 1), round(c['origin'][1], 1)), c['c'])
+                    if c['c'] in ('t', '\u01a9', '\u01ab') else c['c'] for c in sp['chars'])
+    return d
+
+
 def read_lines(path, first=1, last=None):
     """Every printed line, page by page, rows clustered then read left to right."""
     lig = ligatures()
@@ -130,7 +165,7 @@ def read_lines(path, first=1, last=None):
     for pno in range(first, (last or doc.page_count) + 1):
         page = doc[pno - 1]
         cells = []
-        for bl in page.get_text('dict')['blocks']:
+        for bl in _span_texts(page)['blocks']:
             for ln in bl.get('lines', []):
                 # The equation font's digits are read as the digits they are
                 # BEFORE the Maths demangler sees them: it collapses a doubled
@@ -212,6 +247,10 @@ def _split_markers(lines):
             yield Line(l.page, (max(split, 460), l.y0, l.x1, l.y1), tc.group(1).strip(), True)
             continue
         yield l if t == l.text else Line(l.page, (l.x0 + 28, l.y0, l.x1, l.y1), t, l.bold, l.math)
+
+
+# Parts the paper numbers wrongly, as (the key read, the marker printed).
+MISPRINTED = []
 
 
 class Seg:
@@ -329,6 +368,17 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
                 segs.append(cur)
                 continue
             if rm:
+                if not answers and rm.group(1) == roman and cur is not None \
+                        and cur.key == (q, letter, roman, alt) and roman in ROMAN_ORDER[:-1]:
+                    # The paper repeating the roman it is in is a misprint for
+                    # the next one: 2024 HL Q2(c) prints "(ii)" twice, and the
+                    # scheme marks the second (iii).
+                    nxt_roman = ROMAN_ORDER[ROMAN_ORDER.index(roman) + 1]
+                    MISPRINTED.append(((q, letter, nxt_roman, alt), t))
+                    roman = nxt_roman
+                    cur = Seg((q, letter, roman, alt), f'({roman})')
+                    segs.append(cur)
+                    continue
                 roman = rm.group(1)
                 again = [sg for sg in segs if sg.key == (q, letter, roman, alt)] if answers else []
                 if again:
@@ -533,6 +583,9 @@ class Item:
         "equally acceptable wording of one answer", since the student is told
         to give two of them."""
         if '//' not in self.text and any(ANY.match(a) for a in self.asides):
+            if ' / ' not in self.text and ', ' in self.text:
+                # "charging, melting, refining, tapping, casting [any three]"
+                return [o.strip() for o in self.text.split(', ') if o.strip()]
             return [o.strip() for o in self.text.split(' / ') if o.strip()]
         return [o.strip() for o in self.text.split('//') if o.strip()]
 
@@ -848,7 +901,15 @@ class Printed:
         return items_of([l for s in segs for l in s.answers])
 
     def traceable(self, claim):
-        return norm(claim) in self.scheme_norm
+        """Found in the scheme by the gate's own rule (schemeText.claimMatches):
+        normalised, then -- for a font that prints the tt ligature as one t
+        ("pipete") -- with tt collapsed on both sides."""
+        c = norm(claim)
+        if c in self.scheme_norm:
+            return True
+        if not hasattr(self, '_collapsed'):
+            self._collapsed = self.scheme_norm.replace('tt', 't')
+        return c.replace('tt', 't') in self._collapsed
 
 
 __all__ = ['Printed', 'Item', 'PRow', 'segments', 'items_of', 'prows', 'joined', 'norm',
@@ -877,6 +938,7 @@ def prior_deck():
 def prior_card(cid):
     return prior_deck().get(cid)
 
+_LETTER_SCRIPTS = str.maketrans('ₙⁿₘᵐₓˣ', 'nnmmxx')
 INLINE_ASIDE = re.compile(r'\s*(\[[^\]]*[a-zA-Z]{3}[^\]]*\])')
 ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 
@@ -900,6 +962,10 @@ class Cards:
         self.prefix = f'chem-{P.year}-{P.lvl}-'
         self._card = make_card('chemistry')
         self._fixes_used = set()
+        # Carry a lead-in printed after one letter into the next letter's
+        # context. Off for the sittings carded before it existed.
+        self.letter_leads = (P.year, P.lvl) not in {(2025, 'hl'), (2025, 'ol'), (2026, 'hl'),
+                                                     (2026, 'ol')}
 
     def _fixes_applied(self, keys, fixes):
         """A fix is keyed by the reader's own text; if the reader changes, a
@@ -949,7 +1015,14 @@ class Cards:
         if alt and roman:
             above.append((q, letter, None, alt))
         out = []
+        prev_lead = self._previous_letter_lead(key) if heads else ''
         for k in (above if heads else []):
+            if k == (q, letter, None, None) and prev_lead:
+                # What the paper prints after the previous letter's last part
+                # and before this letter opens is this letter's lead-in:
+                # 2024 HL Q8 sets "Reaction B takes place in the presence of
+                # chlorine (Cl₂) gas and ultraviolet light." after (a).
+                out.append(prev_lead)
             try:
                 t = P.ask(k)
             except KeyError:
@@ -972,6 +1045,24 @@ class Cards:
                 if lead and lead != 'or':
                     out.append(lead)
         return tidy(' '.join(out))
+
+    def _previous_letter_lead(self, key):
+        q, letter, roman, alt = key
+        if not letter or alt or not self.letter_leads or q == '4':
+            return ''            # Q4's items stand alone: one's sentence is no other's lead
+        letters = [s.key[1] for s in self.P.pseg if s.key[0] == q and s.key[1]]
+        before = [x for x in dict.fromkeys(letters) if x < letter]
+        if not before:
+            return ''
+        prev = before[-1]
+        last = [s.key for s in self.P.pseg if s.key[0] == q and s.key[1] == prev and not s.key[3]]
+        if not last:
+            return ''
+        try:
+            lead = self.P.lead(last[-1])
+        except KeyError:
+            return ''
+        return '' if lead in ('', 'or') else lead
 
     def qtext(self, keys, deep=False):
         """One part's ask, or several parts' asks with their printed markers
@@ -998,14 +1089,20 @@ class Cards:
         shown = display(text)
         if self.P.traceable(shown):
             text = shown
+        elif self.P.traceable(shown.translate(_LETTER_SCRIPTS)):
+            # A letter set as a script ("Eₙ") has no plain form the gate folds;
+            # the scheme's own text carries it on the line ("Em – En = hf").
+            text = shown.translate(_LETTER_SCRIPTS)
         if not self.P.traceable(text):
             raise Refused(f'{where}: "{text}" is not in the {self.P.year} {self.P.lvl} scheme')
         return text, notes
 
-    def points(self, key, fixes=None, notes=None, deep=False, skip=()):
+    def points(self, key, fixes=None, notes=None, deep=False, skip=(), each=False):
         """One fixed row per mark cell, worth what the cell prints. An item in
         `skip` is a line the scheme sets among the answers that answers
-        nothing -- a reprint of the paper's next equation -- and is left out."""
+        nothing -- a reprint of the paper's next equation -- and is left out.
+        With `each`, a cell "[n × m]" closing n separately printed points
+        ("A: 2,2-dichlorobutane", "B: propan-2-ol", ...) is n rows of m."""
         fixes, notes = fixes or {}, notes or {}
         rows, skipped = [], set()
         for it in self.P.items(key, deep=deep):
@@ -1025,6 +1122,17 @@ class Cards:
                 raise Refused(f'{key}: "{it.text}" has no mark cell of its own')
             if '+' in it.cell and not re.search(r'×', it.cell):
                 raise Refused(f'{key}: {it.cell} is a split, not a fixed point')
+            terms = mark_terms(it.cell)
+            pts = it.points()
+            if each and '+' not in it.cell and len(terms) > 1 and len(pts) == len(terms):
+                for j, ptext in enumerate(pts):
+                    text, inline = self._verbatim(ptext, fixes, key)
+                    note = ' '.join(x for x in [
+                        _asides_note(inline + (it.asides if j == len(pts) - 1 else [])),
+                        f'The scheme prices these points {it.cell}, one each.' if j == 0 else '',
+                        notes.get(len(rows), '')] if x)
+                    rows.append(point(f'r-{len(rows) + 1}', text, terms[j], note))
+                continue
             text, inline = self._verbatim(it.text, fixes, key)
             note = ' '.join(x for x in [_asides_note(inline + it.asides),
                                         f'The scheme prices this point {it.cell}.'
@@ -1056,7 +1164,18 @@ class Cards:
                     f'the answer.', ('It adds: ' + ' '.join(said)) if said else '',
                     notes.get(len(rows), '')] if x)))
                 continue
-            for it in self.P.items(key, deep=deep):
+            if deep:
+                # A part whose scheme answers sit under markers of the scheme's
+                # own ("(i) 2 (ii) 1" under 2024 HL Q4(a)): each marker's answer
+                # is read on its own and labelled with it, so two answers set
+                # on one printed line stay two points.
+                lab = []
+                for sg in self.P._below(self.P.sseg, key):
+                    for it in items_of(sg.answers):
+                        lab.append((sg.key[2] if sg.key != key and sg.key[2] else None, it))
+            else:
+                lab = [(None, it) for it in self.P.items(key)]
+            for label, it in lab:
                 if it.cell:
                     cells.append(it.cell)
                 anyk = next((WORDS[ANY.match(a).group(1).lower()] for a in it.asides if ANY.match(a)), None)
@@ -1090,6 +1209,8 @@ class Cards:
                         pts = [x for x in pts if display(x) != display(d)]
                         dropped.add(d)
                 for j, ptext in enumerate(pts):
+                    if label and j == 0 and self.P.traceable(f'({label}) {ptext}'):
+                        ptext = f'({label}) {ptext}'
                     t, inl = self._verbatim(ptext, fixes, key)
                     note = ' '.join(x for x in [_asides_note(inl + (it.asides if j == len(pts) - 1 else [])),
                                                 notes.get(len(rows), '')] if x)
@@ -1166,11 +1287,11 @@ class Cards:
 
     def fixed(self, keys, topic, concept, **kw):
         fixes, notes, deep = kw.pop('fixes', None), kw.pop('row_notes', None), kw.get('deep', False)
-        skip = kw.pop('skip', ())
+        skip, each = kw.pop('skip', ()), kw.pop('each', False)
         rows = []
         self._fixes_used = set()
         for k in keys:
-            rows += self.points(tuple(k), fixes, notes, deep=deep, skip=skip)
+            rows += self.points(tuple(k), fixes, notes, deep=deep, skip=skip, each=each)
         self._fixes_applied(keys, fixes)
         for i, r in enumerate(rows):
             r['id'] = f'r-{i + 1}'

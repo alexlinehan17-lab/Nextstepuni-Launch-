@@ -73,6 +73,26 @@
    "reason": "The scheme prices all seven numbers of Q11(a) with one cell ([9 + 6 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q11-a-1.",
    "drop": true,
    "replacementId": "chem-2025-ol-q11-a-1"
+  },
+  "chem-2024-hl-q6-a-iii": {
+   "reason": "Duplicated chem-2024-hl-q6-a-iii-fig (the same Q6(a)(iii), never built: the build keeps one card per citation).",
+   "drop": true,
+   "replacementId": "chem-2024-hl-q6-a-iii-fig"
+  },
+  "chem-2024-hl-q6-b": {
+   "reason": "Duplicated chem-2024-hl-q6-b-fig (the same Q6(b), never built). Q6(b)(i) is carded as chem-2024-hl-q6-b-fig, (ii) as -q6-b-ii.",
+   "drop": true,
+   "replacementId": "chem-2024-hl-q6-b-fig"
+  },
+  "chem-2024-hl-q10-b-iii-v": {
+   "reason": "The scheme prices Q10(b)(i)-(v) with one cell ([6 + 3 + 2 + 2 + 2]), so they are one task; carded once, as chem-2024-hl-q10-b-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2024-hl-q10-b-i-ii"
+  },
+  "chem-2024-hl-q11-d-b-fig": {
+   "reason": "Duplicated chem-2024-hl-q11-db-i-iii (both cited Q11(d)B(i)-(iii)). Each part is now a card of its own; Q11(d)B(i) is chem-2024-hl-q11-db-i-iii, and the blast furnace figure is on every Q11(d)B card.",
+   "drop": true,
+   "replacementId": "chem-2024-hl-q11-db-i-iii"
   }
  },
  "biology": {

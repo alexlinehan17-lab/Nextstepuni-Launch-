@@ -149,6 +149,11 @@ MISPRINTS = {
     ('biology', 2023, 'hl'): [
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
+    # 2024 HL Chemistry Q2(c) prints "(ii)" twice; the second is the third
+    # part, which the scheme marks (iii) (the co-product of soap-making).
+    ('chemistry', 2024, 'hl'): [
+        ('(ii) Name the co\u2010product formed', lambda t: '(iii) ' + t[5:]),
+    ],
 }
 # Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
 # 'Leaving Certificate, 2021' — the strict form let footers leak into leaf

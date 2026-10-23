@@ -551,5 +551,112 @@
   "truncated": false,
   "description": "Question 11(b) as printed: 'Study the substances below and answer the questions that follow:', a table of three substances with their formula and bonding (sodium chloride, NaCl, ionic; hydrogen chloride, HCl, polar covalent; nitrogen, N₂, covalent), then parts (i) to (vi): identify the substance formed by the complete transfer of electrons, by equal sharing and by unequal sharing of pairs of electrons; the one most soluble in a non-polar solvent such as cyclohexane; the one highly soluble in water; and draw a dot and cross diagram of the valence shell electrons in any one of these substances. The mark (25) is printed at the right.",
   "questionRef": "2025 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of temperatures and times: Temperature (°C) T₁, T₂, T₃ against Time (s) 40, 10, 25.",
+  "questionRef": "2024 HL Q3(d)"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q6c-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 6's print as the paper sets it: 'Hydrocarbon A may be converted to hydrocarbon B, as shown below.', with the full structural formula of A, a straight chain of eight carbon atoms with all hydrogens drawn, an arrow, and B, a five-carbon chain carrying three CH₃ branches (on the second carbon twice and on the fourth); then part (c), 'A molecule of compound A can undergo catalytic cracking to produce a molecule of methylpropane and a molecule of compound C.', and part (ii), 'State the systematic IUPAC name of three of the possible isomers of compound C. In each case, draw the molecular structure of the isomer, including all atoms and bonds.' with the mark (18).",
+  "questionRef": "2024 HL Q6(c)(ii)"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q9d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A titration curve: pH from 0 to 14 on the vertical axis against volume of Na₂CO₃ added on the horizontal axis (marked 10 and 20). The pH starts near 0, rises slowly, climbs almost vertically at 10 to about 10, then levels off just above 11.",
+  "questionRef": "2024 HL Q9(d)"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q10b-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The nuclear equation as printed: polonium-210, mass number 210 and atomic number 84, decays to Z with mass number X and atomic number Y, plus an alpha particle with mass number 4 and atomic number 2.",
+  "questionRef": "2024 HL Q10(b)"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of five structures headed A to E, where R is CH₃ and R′ is C₂H₅: A, a carbon bearing two Cl atoms, R′ and R; B, a carbon bearing H, OH and two R groups; C, a carbon bearing H, OH, R and R′; D, R′ bonded to a C=O carbon carrying an O–H; E, R bonded to a C=O carbon carrying an O–R group.",
+  "questionRef": "2024 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q2c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: the full structural formula of propane-1,2,3-triol (glycerol), a chain of three carbon atoms each bearing an O–H group, with every hydrogen drawn.",
+  "questionRef": "2024 HL Q2(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q6c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: the full structural formula of methylpropane, a central carbon bonded to three CH₃ groups and one hydrogen, every hydrogen drawn.",
+  "questionRef": "2024 HL Q6(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q6c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: three names and structures side by side, separated by //: but-1-ene (CH₂=CH–CH₂–CH₃), but-2-ene (CH₃–CH=CH–CH₃) and methylpropene (CH₂=C(CH₃)₂), every hydrogen drawn.",
+  "questionRef": "2024 HL Q6(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q7a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: the Kc expression set as a fraction, [H₂] [CO₂] over [H₂O][CO].",
+  "questionRef": "2024 HL Q7(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q7b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: a table under the equation H₂O(g) + CO(g) ⇌ H₂(g) + CO₂(g): initially 2.5, 2.5, 0, 0; at equilibrium 2.5 – x, 2.5 – x, x, x.",
+  "questionRef": "2024 HL Q7(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q8c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: the full structural formula of 1,2-dichloroethane, Cl–CH₂–CH₂–Cl, every hydrogen drawn.",
+  "questionRef": "2024 HL Q8(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q8c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: the full structural formula of chloroethene, a C=C double bond with a chlorine and a hydrogen on one carbon and two hydrogens on the other.",
+  "questionRef": "2024 HL Q8(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q8c-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: two repeating units of PVC drawn as a chain of four carbon atoms with a Cl on the first and third and hydrogens elsewhere, then, after a solidus, the alternative of one repeating unit in brackets with the subscript 2.",
+  "questionRef": "2024 HL Q8(c)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-HL-scheme-q11a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: a dot and cross diagram of BF₃: boron in the centre sharing one electron pair with each of three fluorine atoms (one dot and one cross per bond), each fluorine carrying three lone pairs.",
+  "questionRef": "2024 HL Q11(a)(i)",
+  "solution": true
  }
 ]
