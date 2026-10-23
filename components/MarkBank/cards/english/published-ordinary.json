@@ -136,6 +136,17 @@
    "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b"
   },
   {
+   "paperId": "english-2019-ol-p1",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "tasks": 22,
+   "cards": 22,
+   "printedDuplicates": 0,
+   "paperSha256": "2960c8b89d165eaf54a55113c7a57ef172c52646e7dfa42a5e382844c24ed736",
+   "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff"
+  },
+  {
    "paperId": "english-2018-ol-p1",
    "year": 2018,
    "level": "ordinary",
@@ -1511,6 +1522,16 @@
     },
     "capRulePage": 3
    },
+   "2019-ordinary": {
+    "family": "ol-o1-o8-2018",
+    "gridPages": [
+     61
+    ],
+    "capRule": {
+     "kind": "purpose-primacy"
+    },
+    "capRulePage": 3
+   },
    "2021-ordinary": {
     "family": "ol-o1-o8-2022",
     "gridPages": [
@@ -2151,7 +2172,7 @@
   "english-2025-ol-p2-single-h-q1": "english-2025-ol-p2-single-h-q1-a",
   "english-2025-ol-p2-single-i-q1": "english-2025-ol-p2-single-i-q1-a"
  },
- "cardCount": 1732,
+ "cardCount": 1754,
  "cards": [
   {
    "id": "english-2026-ol-p1-t1-a-i",
@@ -29309,6 +29330,875 @@
    "atlas": {
     "fileid": "LC002GLP200EV.pdf",
     "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t1-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 1 QA(i)",
+   "questionText": "Based on your reading of paragraphs four and five, explain three steps Melanie has taken that helped her to develop a healthy relationship with social media. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Melanie’s Social Media Experience",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t1-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 1 QA(ii)",
+   "questionText": "Do you believe that you are fortunate or unfortunate to live in an age when social media is extremely popular? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Melanie’s Social Media Experience",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t1-a-iii-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 1 QA(iii)(a)",
+   "questionText": "In your opinion, what message is conveyed by IMAGE 1? Support your response with reference to IMAGE 1.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-viewpoint",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Melanie’s Social Media Experience",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    5
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t1-a-iii-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 1 QA(iii)(b)",
+   "questionText": "To what extent does IMAGE 2 accurately reflect the impact of mobile devices on your engagement with your friends? Explain your response, supporting your answer with reference to IMAGE 2.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 1",
+    "title": "Melanie’s Social Media Experience",
+    "pages": [
+     2,
+     3
+    ],
+    "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "8"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t1-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 1 QB",
+   "questionText": "You have been asked by a mobile phone company to produce an article for their website, offering guidance on the polite and appropriate use of mobile phones by people of all ages. The article should include a combination of “dos and don’ts” in relation to polite and appropriate mobile phone usage. Write the article you would produce.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    6
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "9"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t2-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 2 QA(i)",
+   "questionText": "Based on your reading of the first three paragraphs on Page 4, explain three ways in which selfies have made an impact on modern life. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Selfie: Social Media’s Own Art Form",
+    "pages": [
+     4
+    ],
+    "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t2-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 2 QA(ii)",
+   "questionText": "Do you believe that the influence of selfies on society is mainly positive or mainly negative? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Selfie: Social Media’s Own Art Form",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t2-a-iii-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 2 QA(iii)(a)",
+   "questionText": "Which of the two images in TEXT 2 do you find more fascinating? Explain your choice, supporting your response with reference to your chosen image.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected option: 1 of 2). Every choice is marked on the same grid.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Selfie: Social Media’s Own Art Form",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t2-a-iii-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 2 QA(iii)(b)",
+   "questionText": "Do you think it is possible that selfies will provide an important historical record in the future, as predicted in paragraph four? Give reasons for your response.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 2",
+    "title": "The Selfie: Social Media’s Own Art Form",
+    "pages": [
+     4,
+     5
+    ],
+    "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    7
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "10"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t2-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 2 QB",
+   "questionText": "Your local newspaper has published a letter condemning fifteen to thirty year olds as a “vain and selfish generation”. The letter writer specifically refers to selfies as an example of the vanity of people in this age group. Write a letter to the newspaper editor, in which you respond to the views expressed in the original letter, and put forward your own views on the subject of selfies.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested letter.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    8
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "11"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t3-a-i",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 3 QA(i)",
+   "questionText": "Based on your reading of Text 3, explain three reasons why people might want to act as volunteers with the organisation, Friends of the Earth, at Electric Picnic. Support your answer with reference to the text.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Support the response with relevant evidence from the named text or source.",
+    "Develop the required three points fully.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Plastic at the Picnic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t3-a-ii",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 3 QA(ii)",
+   "questionText": "Do you believe that a deposit refund scheme for plastic items such as cups and bottles, similar to that organised by Friends of the Earth at Electric Picnic, would be successful if introduced in your school or workplace? Give reasons for your answer.",
+   "totalMarks": 15,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Plastic at the Picnic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 9,
+     "L+M": 6
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t3-a-iii-a",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 3 QA(iii)(a)",
+   "questionText": "Imagine that you recognise your tent from Electric Picnic in IMAGE 1. Write a diary entry in which you reflect on abandoning your tent at the campsite and record your feelings in response to the picture.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Use the conventions and register of the requested diary entry.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Plastic at the Picnic",
+    "pages": [
+     6
+    ],
+    "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    9
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t3-a-iii-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 3 QA(iii)(b)",
+   "questionText": "Would you support banning people who cause trouble at a festival, including littering, from attending that festival again in the future? Give reasons for your response.",
+   "totalMarks": 10,
+   "topicId": "english-10-0",
+   "conceptId": "english-comprehending-insights",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Read and use the official source material supplied with the card.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "sourceMaterial": {
+    "kind": "source-text",
+    "label": "TEXT 3",
+    "title": "Plastic at the Picnic",
+    "pages": [
+     6,
+     7
+    ],
+    "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+    "presentationNote": "Official State Examinations Commission examination layout."
+   },
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "combined",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P+C": 6,
+     "L+M": 4
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "12"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-t3-b",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Text 3 QB",
+   "questionText": "You would like to establish a deposit refund scheme for plastic items such as cups and bottles in your school or workplace. People would be paid 20 cent for each cup and 10 cent for each bottle returned for recycling. Write a post for your school or workplace blog in which you outline your proposed scheme and encourage people to support your proposal.",
+   "totalMarks": 50,
+   "topicId": "english-10-1",
+   "conceptId": "english-functional-writing",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Make the choice the paper prints (Selected task: 1 of 2). Every choice is marked on the same grid.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    10
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 15,
+     "C": 15,
+     "L": 15,
+     "M": 5
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "13"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-1",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 1",
+   "questionText": "In TEXT 1, Melanie Murphy explains how she dislikes people who thrive on drama. Write a short story about a character whose determination to be the centre of attention has unexpected consequences.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    12
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "1"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-2",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 2",
+   "questionText": "In TEXT 2, we are told that in time our selfies will provide a valuable historical record. Write a personal essay in which you discuss at least three aspects of life that are considered unremarkable in 2019 that you think may appear strange or remarkable to people in the future.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    13
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "2"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-3",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 3",
+   "questionText": "According to Melanie Murphy in TEXT 1, perfection does not exist. Write an article, for publication in a music magazine, in which you describe your ideas for the perfect music festival. The article should deal with the venue, the line‐up, and the facilities available to festival‐goers.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    14
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "3"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-4",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 4",
+   "questionText": "TEXTS 1, 2, and 3 all deal with aspects of social media. Write a personal essay in which you discuss what you think your life would be like if you were unable to use any form of social media for a whole year.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-personal-essay",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested personal essay.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    15
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "4"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-5",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 5",
+   "questionText": "TEXT 3 is set against the backdrop of the Electric Picnic music festival. Write a short story in which a group of childhood friends form what becomes a world famous band but live to regret their success.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-short-story",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested short story.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    16
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "5"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-6",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 6",
+   "questionText": "In TEXT 3, members of the public are encouraged to volunteer to help the Friends of the Earth at Electric Picnic. Write an article, to be published in a popular magazine, on the value of volunteering with at least one sporting or charitable organisation. The article should discuss the possible benefits for the people who volunteer their time and energy, and for the organisation(s) involved.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-article",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested article.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    17
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "6"
+   }
+  },
+  {
+   "id": "english-2019-ol-p1-composing-7",
+   "year": 2019,
+   "level": "ordinary",
+   "paper": 1,
+   "questionRef": "2019 OL Paper 1 Composing 7",
+   "questionText": "In TEXT 2, we see an image taken by an astronaut during a space mission. Imagine you are representing Ireland at a United Nations conference on the future. Write a speech, to be delivered at the conference, in which you discuss both the opportunities and responsibilities facing humanity as we explore space and planets beyond the Earth.",
+   "totalMarks": 100,
+   "topicId": "english-9-1",
+   "conceptId": "english-composing-speech",
+   "taskRequirements": [
+    "Address every instruction in the printed task.",
+    "Use the conventions and register of the requested speech.",
+    "Sustain a clear, purposeful response in an appropriate register."
+   ],
+   "schemePages": [
+    11,
+    18
+   ],
+   "assessment": {
+    "mode": "discrete",
+    "grid": "2019-ordinary",
+    "allocation": {
+     "P": 30,
+     "C": 30,
+     "L": 30,
+     "M": 10
+    }
+   },
+   "paperFileid": "LC002GLP100EV",
+   "atlas": {
+    "fileid": "LC002GLP100EV.pdf",
+    "n": "7"
    }
   },
   {

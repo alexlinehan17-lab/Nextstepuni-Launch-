@@ -5204,6 +5204,148 @@
       "attribution": "The Wound in Time — Carol Ann Duffy, as reproduced in the SEC 2019 paper.",
       "questionSha256": "bb055264bbbbf7c5dba3622878625c63cf4921f6b2d11a65dff2a9476d69be15",
       "reason": "Paper PDF6 prints the introduction (written to mark the 100th anniversary of the end of World War One), the instruction to answer either Question 1 or Question 2, the title, the whole 16-line poem, the byline and the gloss (*Cenotaph – war memorial); visually verified."
+    },
+    "english-2019-ol-p1-t1-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Melanie’s Social Media Experience",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "cacb028016080d32b5a1e77f11006d196d7c25d250cce843ff05b93962795331",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t1-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Melanie’s Social Media Experience",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "17abaf2e5d441c32f3f8b0f76c9ca488946c19b92c007e1d113ee008d682b576",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t1-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Melanie’s Social Media Experience",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "ecce9f0464d82da374df238dfade5733b87258e4dce58d8a4a506e25376ac8f3",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t1-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 1",
+      "title": "Melanie’s Social Media Experience",
+      "pages": [
+        2,
+        3
+      ],
+      "attribution": "Based on edited extracts from Fully Functioning Human (Almost) by Melanie Murphy, with IMAGE 1 (a cartoon) and IMAGE 2 (a photograph) (PDF2–3). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "994adbab138ff5805615502e846b4870e49ee1d16c1e33aa7e8a2834e6dcb79f",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t2-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Selfie: Social Media’s Own Art Form",
+      "pages": [
+        4
+      ],
+      "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "b0d9ebfc84de13cebb896e514ec832e570951deff317013b2c158aaf24df3f82",
+      "reason": "The task reads “the first three paragraphs on Page 4” (PDF4)."
+    },
+    "english-2019-ol-p1-t2-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Selfie: Social Media’s Own Art Form",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "a63508eecbeead82e86d49784bad457edc2ddb457bb39efb4bfe77129d7b93bf",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t2-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Selfie: Social Media’s Own Art Form",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "1a8abf501b92c3ee41bc74b2fa1169cb222955aee7420498832a0ed8e4b0c3bf",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t2-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 2",
+      "title": "The Selfie: Social Media’s Own Art Form",
+      "pages": [
+        4,
+        5
+      ],
+      "attribution": "Drawing on Jerry Saltz, Ana Peraica, Charissa Coulthard and Jo Tweedy, with IMAGE 1 (Parmigianino’s self-portrait) and IMAGE 2 (an astronaut selfie) (PDF4–5). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "b41102530255ee63aafba1ac9c11d5942db57e9386b72918d0b09cd10332a9cb",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t3-a-i": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Plastic at the Picnic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "e6a301e1a84b70210003de1689d138f50958c9da0d490eae3ebcb5eff1e4c728",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t3-a-ii": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Plastic at the Picnic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "1d8cd5b96ff9014e5adc7a9a5f52d0fec0d477ee124de6b06212c9b868f1d5c5",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
+    },
+    "english-2019-ol-p1-t3-a-iii-a": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Plastic at the Picnic",
+      "pages": [
+        6
+      ],
+      "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "4708f498bf94b67b99f422cac3f2a750347b807e7976953c3c656f3ed00f4375",
+      "reason": "The task imagines recognising your tent “in IMAGE 1” (PDF6)."
+    },
+    "english-2019-ol-p1-t3-a-iii-b": {
+      "kind": "source-text",
+      "label": "TEXT 3",
+      "title": "Plastic at the Picnic",
+      "pages": [
+        6,
+        7
+      ],
+      "attribution": "Based on blog posts from Friends of the Earth on volunteering at Electric Picnic, with IMAGE 1 (the clean-up after Electric Picnic 2018) and IMAGE 2 (the deposit refund point) (PDF6–7). As reproduced in the SEC 2019 paper.",
+      "questionSha256": "7378b6e85486835eb519e98db8a1681ee2175e4a6cbb74c7d683cce3ba95021f",
+      "reason": "Full 12-page visual sweep: printed heading, introduction, every numbered paragraph and both images checked; the whole printed text is retained."
     }
   }
 }

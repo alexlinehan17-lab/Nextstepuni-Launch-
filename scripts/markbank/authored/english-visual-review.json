@@ -2391,15 +2391,74 @@
       "paperSha256": "2960c8b89d165eaf54a55113c7a57ef172c52646e7dfa42a5e382844c24ed736",
       "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
       "paperPagesInspected": [
+        1,
+        2,
+        3,
         4,
-        5
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
-      "visualSweepComplete": false,
+      "visualSweepComplete": true,
       "notes": [
-        "Selfie images 1/2 on separate pages. QA(iii)(a) selects one at 10 marks; B stimulus self-contained."
+        "Selfie images 1/2 on separate pages. QA(iii)(a) selects one at 10 marks; B stimulus self-contained.",
+        "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 2 A(iii)(a) one of two images and Text 3 B school or workplace blog are printed choices marked on one grid).",
+        "Readers under printed headings: TEXT 1 Melanie’s Social Media Experience PDF2–3, TEXT 2 The Selfie: Social Media’s Own Art Form PDF4–5 (A(i) “Page 4”), TEXT 3 Plastic at the Picnic PDF6–7 (A(iii)(a) IMAGE 1, PDF6). C/L ≤ P (PDF3); grid PDF61 (O1–O8)."
       ],
-      "allTaskBoundariesSchemeChecked": false,
-      "allFiniteRoutesReconciled": false
+      "allTaskBoundariesSchemeChecked": true,
+      "allFiniteRoutesReconciled": true,
+      "schemePagesTextChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        60,
+        61,
+        62
+      ],
+      "schemePagesVisuallyChecked": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        60,
+        61,
+        62
+      ],
+      "independentPaperTally": {
+        "baseTasks": 22,
+        "finiteRoutes": 22,
+        "basis": "Three QA groups of 15/15/10/10 plus three B 50 and seven composing 100 = 22 tasks, one card each (Text 2 A(iii)(a) one of two images and Text 3 B school or workplace blog are printed choices marked on one grid)."
+      }
     },
     {
       "paperId": "english-2019-ol-p2",

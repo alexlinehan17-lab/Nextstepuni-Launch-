@@ -510,7 +510,7 @@
     "english-2019-ol-p1-t2-a-iii-a": {
       "questionSha256": "1a8abf501b92c3ee41bc74b2fa1169cb222955aee7420498832a0ed8e4b0c3bf",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The task requires a fixed selection from the specifically printed options. Every unordered selection is a separate practice route, retaining the complete published tariff.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF7 — which of the two images the candidate finds more fascinating, “supported with reference to the chosen image”; both are marked on one grid. One 10-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -1569,28 +1569,28 @@
     },
     "english-2019-ol-p1-t1-a-ii": {
       "questionSha256": "17abaf2e5d441c32f3f8b0f76c9ca488946c19b92c007e1d113ee008d682b576",
-      "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "kind": "flexible",
+      "reason": "Scheme PDF5: “giving at least two reasons, why they believe that they are fortunate and/or unfortunate” — one view, combination allowed. One 15-mark response."
     },
     "english-2019-ol-p1-t2-a-i": {
       "questionSha256": "b0d9ebfc84de13cebb896e514ec832e570951deff317013b2c158aaf24df3f82",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF7: three ways selfies have made an impact on modern life, from the first three paragraphs on Page 4. One 15-mark response."
     },
     "english-2019-ol-p1-t2-a-ii": {
       "questionSha256": "a63508eecbeead82e86d49784bad457edc2ddb457bb39efb4bfe77129d7b93bf",
-      "kind": "open",
-      "reason": "This is a reasoned evaluation with an open range of justifiable positions, not a prescribed list of answer options. Preserve the judgement and its supporting evidence as one task."
+      "kind": "flexible",
+      "reason": "Scheme PDF7: “giving at least two reasons, whether or not” the influence of selfies is mainly positive or mainly negative — one judgement. One 15-mark response."
     },
     "english-2019-ol-p1-t3-a-ii": {
       "questionSha256": "1d8cd5b96ff9014e5adc7a9a5f52d0fec0d477ee124de6b06212c9b868f1d5c5",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF9: why the candidate does or does not believe a deposit refund scheme would succeed in their school or workplace. One 15-mark response."
     },
     "english-2019-ol-p1-t3-a-iii-a": {
       "questionSha256": "4708f498bf94b67b99f422cac3f2a750347b807e7976953c3c656f3ed00f4375",
       "kind": "open",
-      "reason": "The task requests original interpretation, textual evidence, language features, or a freely chosen personal example. It does not prescribe a fixed named or numbered selection pool. Illustrative examples and grammatical “which/or” do not create routes."
+      "reason": "Scheme PDF9: a diary entry reflecting on abandoning the tent and the feelings in response to IMAGE 1. One 10-mark response."
     },
     "english-2020-hl-p1-t3-a-iii": {
       "questionSha256": "daafbb6f7c0711e1973b691515af45067d5ba22479b87e1765aba3f663d9be21",
@@ -1953,7 +1953,7 @@
     "english-2019-ol-p1-t3-b": {
       "questionSha256": "0ba1b12030e6b64f62bb213e0898c049294b33377dfcbe21ed7993b9e7b53995",
       "kind": "printed-choice",
-      "reason": "One card (coordinator rule, 2026-10-12): the scheme marks every printed choice with the same content, so the 2 printed choices are one response, not 2 cards. Printed choice as reviewed: The proposal gives a school or workplace context and directs the student to its corresponding blog.",
+      "reason": "One card (coordinator rule, 2026-10-12): scheme PDF10 — “a post, suitable for inclusion on a school or workplace blog”, outlining the scheme and encouraging support; both outlets are marked on one grid. One 50-mark response.",
       "pools": [
         {
           "id": "selection",
@@ -2287,13 +2287,13 @@
     },
     "english-2019-ol-p1-t1-b": {
       "questionSha256": "fb744e5d084a4e7f9f7eef3b2cfb03f6557910aba17889489712339204d210e4",
-      "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "kind": "flexible",
+      "reason": "Scheme PDF6: a company-website article on polite mobile phone use with “a combination of ‘dos and don’ts’”; serious or humorous or both. One 50-mark response."
     },
     "english-2019-ol-p1-t2-b": {
       "questionSha256": "1f0fda0a0cb28b5c9cf34a28d7ef877c799bb8a88ce72215aa8f53041de45980",
       "kind": "open",
-      "reason": "This is one writing task with an open choice of material, argument or personal experience. The listed requirements and before/after entries are compulsory parts of its single published tariff, not selectable answer options."
+      "reason": "Scheme PDF8: a letter to the editor responding to the “vain and selfish generation” letter; “free to agree or disagree”. One 50-mark response."
     },
     "english-2020-hl-p1-t1-b": {
       "questionSha256": "1f2a125ed2ded304cc102cd29fe0c7ff99cd6a84125d74ff974061e3acf6e304",
@@ -3774,37 +3774,37 @@
     "english-2019-ol-p1-composing-1": {
       "questionSha256": "5152707dea1b2bc82e4ae922a4dc5a3635c3419ecfa30fa8037c7368c2459e21",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF12: a short story about a character whose determination to be the centre of attention has unexpected consequences. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-2": {
       "questionSha256": "ac5d443918c9131ba493d15857f609a89b56cbe028ac1fd0d9579ae2759b7244",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF13: a personal essay on “at least three aspects of life” unremarkable in 2019 that may seem strange in the future. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-3": {
       "questionSha256": "2b748df5682b2edd60e742aceee9d083a479801d8ae61a04be7b0b7d8f96d782",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "required",
+      "reason": "Scheme PDF14: a music-magazine article on the perfect festival dealing with all of the specified aspects — venue, line-up, facilities — “although not necessarily equally”. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-4": {
       "questionSha256": "c8d2c83fb10f44779437f4665b9fb5253d4ae3d05937fa8d35f4173f1dea3967",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF15: a personal essay on life without any social media for a year. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-5": {
       "questionSha256": "f8ee41fce0ef6eee92503ffab31af7dc1d21a7d6339a360510f5fde1dc9e4447",
       "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "reason": "Scheme PDF16: a short story in which childhood friends form a world-famous band but regret their success. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-6": {
       "questionSha256": "9fb42f5de382a5c4fd477c101c8e8eba1912bf95d75696210d07a489f0e2a9e0",
-      "kind": "open",
-      "reason": "This is one composition with freely chosen characters, events, places, experiences or arguments. Text references supply a theme or a quoted stimulus already in the prompt; illustrative categories and grammatical “or” do not form a fixed named answer pool."
+      "kind": "flexible",
+      "reason": "Scheme PDF17: a magazine article on volunteering with “at least one sporting or charitable organisation”; benefits for volunteers and organisation(s) — both required, not necessarily equally. One 100-mark composition."
     },
     "english-2019-ol-p1-composing-7": {
       "questionSha256": "7b25ba795492237994834848f254a1b9d0624be1b574aaf33ed46584b21a9ace",
       "kind": "required",
-      "reason": "The stated subjects or perspectives are required together. They do not form optional alternative tasks."
+      "reason": "Scheme PDF18: a UN conference speech discussing both the opportunities and the responsibilities of exploring space. One 100-mark composition."
     },
     "english-2020-hl-p1-composing-1": {
       "questionSha256": "b652c9d2a335a30f67453c6cc7a09b62ba881b9c4b42e2eff19c5a022a38add5",
@@ -18070,6 +18070,36 @@
       "questionSha256": "d2ab12d13673da536de4a365b2c1228f0f1bd74025acae182863ac724ac65fa5",
       "kind": "open",
       "reason": "Scheme PDF40, 44: how effectively Plath uses a range of images to develop her themes and add drama, all aspects engaged, not necessarily equally. One 50-mark response."
+    },
+    "english-2019-ol-p1-t1-a-i": {
+      "questionSha256": "cacb028016080d32b5a1e77f11006d196d7c25d250cce843ff05b93962795331",
+      "kind": "open",
+      "reason": "Scheme PDF5: three steps Melanie has taken towards a healthy relationship with social media, from paragraphs four and five. One 15-mark response."
+    },
+    "english-2019-ol-p1-t1-a-iii-a": {
+      "questionSha256": "ecce9f0464d82da374df238dfade5733b87258e4dce58d8a4a506e25376ac8f3",
+      "kind": "open",
+      "reason": "Scheme PDF5: the message conveyed by IMAGE 1 (the cartoon); “a wide variety of responses”. One 10-mark response."
+    },
+    "english-2019-ol-p1-t1-a-iii-b": {
+      "questionSha256": "994adbab138ff5805615502e846b4870e49ee1d16c1e33aa7e8a2834e6dcb79f",
+      "kind": "open",
+      "reason": "Scheme PDF6: whether IMAGE 2 accurately conveys the impact of mobile devices on the candidate’s engagement with friends — a graded judgement. One 10-mark response."
+    },
+    "english-2019-ol-p1-t2-a-iii-b": {
+      "questionSha256": "b41102530255ee63aafba1ac9c11d5942db57e9386b72918d0b09cd10332a9cb",
+      "kind": "open",
+      "reason": "Scheme PDF7: reasons why the candidate does or does not agree that selfies will provide an important historical record. One 10-mark response."
+    },
+    "english-2019-ol-p1-t3-a-i": {
+      "questionSha256": "e6a301e1a84b70210003de1689d138f50958c9da0d490eae3ebcb5eff1e4c728",
+      "kind": "open",
+      "reason": "Scheme PDF9: three reasons people might volunteer with Friends of the Earth at Electric Picnic. One 15-mark response."
+    },
+    "english-2019-ol-p1-t3-a-iii-b": {
+      "questionSha256": "7378b6e85486835eb519e98db8a1681ee2175e4a6cbb74c7d683cce3ba95021f",
+      "kind": "open",
+      "reason": "Scheme PDF10: reasons why the candidate would or would not support banning troublemakers from a festival. One 10-mark response."
     }
   }
 }
