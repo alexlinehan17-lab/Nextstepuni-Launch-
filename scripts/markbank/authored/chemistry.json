@@ -17788,12 +17788,13 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q11(c)",
-  "stem": "Hydrogen (H2) and iodine (I2) form a chemical equilibrium when mixed together in a sealed container. The reaction may be described by the following balanced chemical equation: H2(g) + I2(g) ⇌ 2HI(g)",
-  "questionText": "(i) What is meant by chemical equilibrium? (ii) Write the equilibrium constant (Kc) expression for this reaction. (iii) State Le Châtelier's principle. (iv) Use Le Châtelier's principle to predict the effect on the yield of HI of adding more iodine. Give a reason for your answer.",
+  "questionRef": "2025 OL Q11(c)(i)–(iv)",
+  "questionText": "(i) What is meant by chemical equilibrium? (ii) Write the equilibrium constant (Kc) expression for this reaction. (iii) State Le Châtelier’s principle. (iv) Use Le Châtelier’s principle to predict the effect on the yield of HI of adding more iodine. Give a reason for your answer.",
+  "stem": "Hydrogen (H₂) and iodine (I₂) form a chemical equilibrium when mixed together in a sealed container. The reaction may be described by the following balanced chemical equation: H₂(g) + I₂(g) ⇌ 2HI(g)",
+  "figureKey": "chemistry-2025-OL-scheme-q11c-ii",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 6 + 2 + 2"
+   "notation": "[9 + 6 + 6 + 2 + 2]"
   },
   "totalMarks": 25,
   "rows": [
@@ -17802,35 +17803,43 @@
     "kind": "point",
     "verbatim": "rate of forward reaction equals rate of reverse reaction",
     "marks": null,
-    "contextNote": "Per-element values are not fixed: the five correct elements of part (c) are marked as one 9 + 6 + 6 + 2 + 2 split. Scheme rule 1: only key words are given and they must appear in the correct context to merit the marks."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "(Kc) = [HI]² / [H2][I2]",
+    "verbatim": "Write the equilibrium constant (Kc) expression for this reaction.",
     "marks": null,
-    "contextNote": "Printed in the scheme as a fraction, [HI] squared over [H2][I2]. The scheme adds: [–2 if Kc is inverted but otherwise correct]."
+    "openList": true,
+    "contextNote": "The scheme answers (ii) with a drawing; its own print is shown with the answer. It adds: (Kc) = [ –2 if Kc is inverted but otherwise correct]"
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "systems at equilibrium oppose applied stresses",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "increase",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "reaction moves in forward direction to reduce concentration of iodine",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Whole part carried; all five scoring elements are present and the printed split sums exactly to the part's 25 marks."
+  "notes": "The scheme prices these points together as [9 + 6 + 6 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q11-d-a",
@@ -17840,11 +17849,13 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q11(d)A",
-  "questionText": "(i) Explain how the carbon in fossil fuels becomes CO2 in the atmosphere. (ii) Identify one natural process by which CO2 is removed from the atmosphere. (iii) Name the environmental effect which results in heat from the Sun being trapped in Earth's atmosphere by gases including CO2. (iv) Suggest a reason why the Earth's atmospheric CO2 concentrations have been increasing over the last 200 years. (v) Suggest one way in which humans could change their behaviour to help reduce atmospheric CO2 concentrations.",
+  "questionRef": "2025 OL Q11(d)A(i)–(v)",
+  "questionText": "(i) Explain how the carbon in fossil fuels becomes CO₂ in the atmosphere. (ii) Identify one natural process by which CO₂ is removed from the atmosphere. (iii) Name the environmental effect which results in heat from the Sun being trapped in Earth’s atmosphere by gases including CO₂. (iv) Suggest a reason why the Earth’s atmospheric CO₂ concentrations have been increasing over the last 200 years. (v) Suggest one way in which humans could change their behaviour to help reduce atmospheric CO₂ concentrations.",
+  "stem": "Consider the simplified version of the Earth’s carbon cycle shown in the diagram.",
+  "figureKey": "chemistry-2025-OL-paper-q11d-a",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 9 + 3 + 2 + 2"
+   "notation": "[9 + 9 + 3 + 2 + 2]"
   },
   "totalMarks": 25,
   "rows": [
@@ -17853,50 +17864,43 @@
     "kind": "point",
     "verbatim": "release carbon dioxide when combusted",
     "marks": null,
-    "contextNote": "Per-element values are not fixed: the five correct elements of this part are marked as one 9 + 9 + 3 + 2 + 2 split."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "photosynthesis / dissolving in oceans",
     "marks": null,
-    "accepts": [
-     "photosynthesis",
-     "dissolving in oceans"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "(enhanced) greenhouse effect",
     "marks": null,
-    "contextNote": "Bracketed material was not required in 2025, so \"greenhouse effect\" alone scores."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "burning fossil fuels / deforestation",
     "marks": null,
-    "accepts": [
-     "burning fossil fuels",
-     "deforestation"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "carbon capture / renewable energy sources / reforestation etc.",
     "marks": null,
-    "accepts": [
-     "carbon capture",
-     "renewable energy sources",
-     "reforestation"
-    ],
     "openList": true,
-    "contextNote": "The scheme's list ends in \"etc.\", so other valid behaviour changes also score."
+    "contextNote": ""
    }
   ],
-  "notes": "Q11(d) is \"Answer part A or part B\"; this is part A. The paper prints a carbon-cycle diagram above (i), but none of the five sub-questions depends on reading it, so no figure is carried. All five scoring elements are present and the split sums to the printed 25."
+  "notes": "The scheme prices these points together as [9 + 9 + 3 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q11-d-b",
@@ -17906,68 +17910,57 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q11(d)B",
-  "stem": "Households are encouraged to recycle cans. These cans are usually made either of steel coated with a thin layer of tin, or of aluminium.",
+  "questionRef": "2025 OL Q11(d)B(i)–(v)",
   "questionText": "(i) Aluminium cans resist corrosion. What is corrosion of a metal? (ii) Explain how coating iron with a protective layer of paint (or of another metal) protects the iron from corrosion. (iii) Identify the metal used when iron is galvanised. (iv) State an advantage of recycling aluminium in preference to extracting more of the metal from its ores. (v) Name a process involved in the manufacture of steel.",
+  "stem": "Households are encouraged to recycle cans. These cans are usually made either of steel coated with a thin layer of tin, or of aluminium.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 9 + 3 + 2 + 2"
+   "notation": "[9 + 9 + 3 + 2 + 2]"
   },
   "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "reaction of metal with air / oxygen",
+    "kind": "point",
+    "verbatim": "reaction of metal with air /oxygen",
     "marks": null,
-    "accepts": [
-     "reaction of metal with air",
-     "reaction of metal with oxygen"
-    ],
-    "contextNote": "Per-element values are not fixed: the five correct elements of this part are marked as one 9 + 9 + 3 + 2 + 2 split."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "prevents reaction with oxygen / water",
+    "kind": "point",
+    "verbatim": "prevents reaction with oxygen /water",
     "marks": null,
-    "accepts": [
-     "prevents reaction with oxygen",
-     "prevents reaction with water"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "zinc / Zn",
     "marks": null,
-    "accepts": [
-     "zinc",
-     "Zn"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "extraction is costly / extraction uses a lot of energy",
     "marks": null,
-    "accepts": [
-     "extraction is costly",
-     "extraction uses a lot of energy"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "electric arc process / smelting",
     "marks": null,
-    "accepts": [
-     "electric arc process",
-     "smelting"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q11(d) is \"Answer part A or part B\"; this is part B. The paper prints a photograph of cans, which nothing in the question depends on. All five scoring elements are present and the split sums to the printed 25."
+  "notes": "The scheme prices these points together as [9 + 9 + 3 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-hl-q1-a",
@@ -20822,6 +20815,7 @@
   "section": "B",
   "questionRef": "2025 OL Q6(a)",
   "questionText": "Explain the term hydrocarbon.",
+  "stem": "The chemical formulae of six hydrocarbons are listed below. The list includes three alkanes, one alkene, one alkyne and one aromatic hydrocarbon. CH₄ C₂H₂ C₃H₆ C₄H₁₀ C₅H₁₂ C₆H₆",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -20832,65 +20826,71 @@
     "kind": "point",
     "verbatim": "compound containing carbon and hydrogen (only)",
     "marks": 5,
-    "contextNote": "Scheme convention: material that is bracketed is not required in that year, so \"only\" was not needed in 2025."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried; single printed mark of 5."
+  ]
  },
  {
   "id": "chem-2025-ol-q6-b",
   "topicId": "chem-2-4",
-  "conceptId": "identify-alkanes-and-aromatics",
+  "conceptId": "alkanes-aromatics-and-propene",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q6(b)(i), (ii), (iv)",
-  "stem": "The chemical formulae of six hydrocarbons are listed below. The list includes three alkanes, one alkene, one alkyne and one aromatic hydrocarbon.  CH4   C2H2   C3H6   C4H10   C5H12   C6H6",
-  "questionText": "(i) From the list above identify two alkanes. (ii) From the list above identify one aromatic compound. (iv) What is the systematic IUPAC name for the hydrocarbon C3H6?",
+  "questionRef": "2025 OL Q6(b)(i)–(iv)",
+  "questionText": "(i) From the list above identify two alkanes. (ii) From the list above identify one aromatic compound. (iii) Draw the molecular structure of C₃H₆ including all atoms and bonds. (iv) What is the systematic IUPAC name for the hydrocarbon C₃H₆?",
+  "stem": "The chemical formulae of six hydrocarbons are listed below. The list includes three alkanes, one alkene, one alkyne and one aromatic hydrocarbon. CH₄ C₂H₂ C₃H₆ C₄H₁₀ C₅H₁₂ C₆H₆",
+  "figureKey": "chemistry-2025-OL-scheme-q6b-iii",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 2 + 2 + 2"
+   "notation": "[9 + 6 + 2 + 2 + 2]"
   },
-  "totalMarks": 19,
+  "totalMarks": 21,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "First alkane — CH4 / C4H10 / C5H12",
-    "accepts": [
-     "CH4",
-     "C4H10",
-     "C5H12"
-    ],
+    "kind": "anyN",
+    "verbatim": "CH₄",
     "marks": null,
-    "contextNote": "The scheme prints \"CH4 / C4H10 / C5H12 [any two]\": the two alkanes are two separate scoring elements and any two of the three formulae score. Per-element values are not fixed — the whole of part (b) is marked as one 9 + 6 + 2 + 2 + 2 split, so the first two correct elements anywhere in (b) score 9 and 6 and the remainder score 2 each."
+    "openList": true,
+    "contextNote": "Any 2 of these.",
+    "group": {
+     "claimMax": 2,
+     "options": [
+      "CH₄",
+      "C₄H₁₀",
+      "C₅H₁₂"
+     ]
+    }
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Second alkane — CH4 / C4H10 / C5H12",
-    "accepts": [
-     "CH4",
-     "C4H10",
-     "C5H12"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "C₆H₆",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "C6H6",
-    "marks": null
+    "verbatim": "Draw the molecular structure of C₃H₆ including all atoms and bonds.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme answers (iii) with a drawing; its own print is shown with the answer."
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "propene",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "SKIPPED (b)(iii) \"Draw the molecular structure of C3H6 including all atoms and bonds\" — a drawing task. The printed tariff for (b) is 21 marks over five scoring elements, marked 9 + 6 + 2 + 2 + 2; the four elements carried here can earn at most 9 + 6 + 2 + 2 = 19, which is the totalMarks stated. The two alkanes are two null-mark rows rather than an anyN group, because an anyN group must state a per-option mark value and this part's ordered split defines none."
+  "notes": "The scheme prices these points together as [9 + 6 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q6-c",
@@ -20942,7 +20942,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q6(d)",
-  "questionText": "In your answerbook, copy, complete and balance the following chemical equation: CH4 + O2 → ____ + ____",
+  "questionText": "In your answerbook, copy, complete and balance the following chemical equation: CH₄ + O₂ → ____ + ____",
+  "stem": "The chemical formulae of six hydrocarbons are listed below. The list includes three alkanes, one alkene, one alkyne and one aromatic hydrocarbon. CH₄ C₂H₂ C₃H₆ C₄H₁₀ C₅H₁₂ C₆H₆",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -20951,24 +20952,28 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "CO2",
-    "marks": 5
+    "verbatim": "CO₂",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "H2O",
-    "marks": 5
+    "verbatim": "H₂O",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "balanced correctly",
     "marks": 2,
-    "contextNote": "The scheme's third marking point is the balancing itself. Self-mark it by counting C, H and O atoms on both sides of your completed equation — they must tally."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The third row is the scheme's own words, \"balanced correctly\". It is retained because a student can objectively verify it against their own written equation (atom counts), unlike a content-free criterion such as \"suitable method described\"; without it the fixed rows would not reconcile to the printed 12 marks."
+  ]
  },
  {
   "id": "chem-2025-ol-q7-a",
@@ -20987,98 +20992,122 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "An acid — gives H+ (hydrogen ions) in aqueous solution / H+ donor",
+    "kind": "point",
+    "verbatim": "(i) gives H⁺ (hydrogen ions) in aqueous solution / H⁺ donor",
     "marks": 4,
-    "accepts": [
-     "gives H+ (hydrogen ions) in aqueous solution",
-     "H+ donor"
-    ],
-    "contextNote": "Bracketed material was not required in 2025."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "A base — give OH– (hydroxide ions) in aqueous solution / H+ acceptor",
+    "kind": "point",
+    "verbatim": "(ii) give OH⁻ (hydroxide ions) in aqueous solution / H⁺ acceptor",
     "marks": 4,
-    "accepts": [
-     "gives OH– (hydroxide ions) in aqueous solution",
-     "H+ acceptor"
-    ],
-    "contextNote": "Printed in the scheme as \"give OH—\" for the hydroxide ion, OH–. Bracketed material was not required in 2025."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried; each definition carries its own printed 4 marks."
+  ]
  },
  {
   "id": "chem-2025-ol-q7-b",
-  "topicId": "chem-1-4",
-  "conceptId": "potassium-water-equation-and-balancing",
+  "topicId": "chem-3-4",
+  "conceptId": "formula-equation-for-potassium-and-water",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q7(b)(i)–(ii)",
+  "questionRef": "2025 OL Q7(b)(i)",
+  "questionText": "In your answerbook, replace the words in the word equation above with chemical formulae.",
   "stem": "A tiny piece of potassium metal is added to water. The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
-  "questionText": "(i) In your answerbook, replace the words in the word equation above with chemical formulae. (ii) Balance your equation from (i).",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "K + H2O → KOH + H2",
+    "verbatim": "K + H₂O → KOH + H₂",
     "marks": 4,
-    "contextNote": "The scheme awards 4 × 1 — one mark for each of the four correct formulae."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "2K + 2H2O → 2KOH + H2",
-    "marks": 2
+    "openList": true,
+    "contextNote": "The scheme prices this point [4 × 1]."
    }
-  ],
-  "notes": "SKIPPED (b)(iii) \"Describe how the solution of potassium hydroxide formed could be tested to show that it was basic\" — the scheme gives only \"named indicator / pH meter\" and \"correct matching colour change / pH reading\", which are marking criteria rather than answer content, so a student cannot self-mark against them."
+  ]
  },
  {
   "id": "chem-2025-ol-q7-c-i-ii",
   "topicId": "chem-3-4",
-  "conceptId": "ph-definition-and-neutral-value",
+  "conceptId": "ph-definition-calculation-and-ph-up",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q7(c)(i)–(ii)",
-  "questionText": "(i) Define pH. (ii) State the expected pH of a solution that is described as neutral.",
+  "questionRef": "2025 OL Q7(c)(i)–(iv)",
+  "questionText": "(i) Define pH. (ii) State the expected pH of a solution that is described as neutral. (iii) Calculate the pH of a HCl solution of concentration 0.1 M. The pH of the water in an aquarium was adjusted from 6.3 to 7.0 by adding a suitable quantity of a ‘pH up’ solution. (iv) Is the ‘pH up’ solution acidic or basic? Give a reason for your answer.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "8 + 6 + 2 + 2 + 2 + 2 + 2"
+   "notation": "[8 + 6 + 2 + 2 + 2 + 2 + 2]"
   },
-  "totalMarks": 16,
+  "totalMarks": 24,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "–log10",
+    "verbatim": "–log₁₀",
     "marks": null,
-    "contextNote": "The scheme prints the definition of pH as two separate scoring elements, \"–log10\" and \"[H+]\" — i.e. pH = –log10[H+]. Per-element values are not fixed: the whole of part (c) is marked as one 8 + 6 + 2 + 2 + 2 + 2 + 2 split across its seven correct elements."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "[H+]",
-    "marks": null
+    "verbatim": "[H⁺]",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "7",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "-log₁₀(0.1)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "basic",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "it increases the pH",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Part (c) is worth 24 marks over seven scoring elements marked 8 + 6 + 2 + 2 + 2 + 2 + 2, so it is carved across three cards (five-row cap). The three elements carried here can earn at most 8 + 6 + 2 = 16."
+  "notes": "The scheme prices these points together as [8 + 6 + 2 + 2 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q7-c-iii",
@@ -21155,6 +21184,8 @@
   "section": "B",
   "questionRef": "2025 OL Q8(a)(i)",
   "questionText": "Is the geometry around the carbon atoms in a molecule of ethene planar or tetrahedral?",
+  "stem": "The reaction scheme below shows some of the reactions of ethene.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -21164,86 +21195,65 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "planar",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Only (a)(i) is carried from part (a). SKIPPED (a)(ii) \"Draw the structure of a molecule of ethanol\" — a drawing task. SKIPPED (a)(iii) \"Name polymer P, two repeating units of which are shown in the reaction scheme\" and (a)(iv) \"Identify a carbonyl compound from the reaction scheme\" — both require reading the printed reaction scheme, which this wave does not carry."
+  ]
  },
  {
   "id": "chem-2025-ol-q8-b",
   "topicId": "chem-4-2",
-  "conceptId": "ethanol-dehydration-to-ethene",
+  "conceptId": "catalyst-for-dehydrating-ethanol",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q8(b)",
-  "questionText": "(i) When ethanol vapour is passed over a heated white solid S it is converted to ethene. Identify S. (ii) Classify this conversion of ethanol to ethene as an acid-base reaction, a substitution reaction or an elimination reaction.",
+  "questionRef": "2025 OL Q8(b)(i)",
+  "questionText": "When ethanol vapour is passed over a heated white solid S it is converted to ethene. Identify S.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "S — aluminium oxide / Al2O3",
-    "marks": 6,
-    "accepts": [
-     "aluminium oxide",
-     "Al2O3"
-    ],
-    "contextNote": "Scheme convention: when a candidate is asked to identify a chemical substance, either the name or the formula is accepted."
-   },
-   {
-    "id": "r-2",
     "kind": "point",
-    "verbatim": "elimination",
-    "marks": 6
+    "verbatim": "aluminium oxide / Al₂O₃",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried; each sub-part carries its own printed 6 marks."
+  ]
  },
  {
   "id": "chem-2025-ol-q8-c",
   "topicId": "chem-4-2",
-  "conceptId": "ethene-addition-products-x-and-y",
+  "conceptId": "adding-hcl-to-ethene",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q8(c)",
-  "stem": "Addition reactions may be used to convert ethene to compound X and to compound Y.",
-  "questionText": "(i) Identify compound X, which is produced when HCl is added to ethene. (ii) Identify compound Y, which is produced when Cl2 is added to ethene.",
+  "questionRef": "2025 OL Q8(c)(i)",
+  "questionText": "Identify compound X, which is produced when HCl is added to ethene.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene. Addition reactions may be used to convert ethene to compound X and to compound Y.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "X — chloroethane / C2H5Cl",
+    "kind": "point",
+    "verbatim": "chloroethane / C₂H₅Cl",
     "marks": 6,
-    "accepts": [
-     "chloroethane",
-     "C2H5Cl"
-    ]
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Y — 1,2 dichloroethane / C2H4Cl2",
-    "marks": 6,
-    "accepts": [
-     "1,2 dichloroethane",
-     "C2H4Cl2",
-     "dichloroethane"
-    ],
-    "contextNote": "The scheme adds [allow dichloroethane]."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried; each sub-part carries its own printed 6 marks."
+  ]
  },
  {
   "id": "chem-2025-ol-q8-d",
@@ -21253,12 +21263,13 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q8(d)",
-  "stem": "Ethanol can be converted into ethanal by a redox reaction.",
+  "questionRef": "2025 OL Q8(d)(i)–(ii)",
   "questionText": "(i) Is ethanol oxidised or reduced during this conversion? (ii) Identify a suitable reagent that could be used to carry out this conversion.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene. The reaction scheme shows that ethanol can be converted into ethanal by a redox reaction.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "6 + 2"
+   "notation": "[6 + 2]"
   },
   "totalMarks": 8,
   "rows": [
@@ -21267,22 +21278,19 @@
     "kind": "point",
     "verbatim": "oxidised",
     "marks": null,
-    "contextNote": "No per-part mark exists: the first correct element in (d) scores 6 and the second scores 2."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "acidified potassium manganate(VII) / Fehling's solution",
     "marks": null,
-    "accepts": [
-     "acidified potassium manganate(VII)",
-     "acidified potassium permanganate",
-     "Fehling's solution"
-    ],
-    "contextNote": "Scheme convention: inorganic compounds may be named using oxidation state or the traditional naming convention, e.g. potassium manganate(VII) or potassium permanganate for KMnO4."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The conversion the question asks about (ethanol to ethanal) is stated in the lead-in, so no figure is needed and the paper's reference to the reaction scheme is dropped. Both scoring elements carried."
+  "notes": "The scheme prices these points together as [6 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q9-a",
@@ -21302,172 +21310,108 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Oxidation — loss of electrons",
-    "marks": 4
+    "verbatim": "loss of electrons",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Reduction — gain of electrons",
-    "marks": 4
+    "verbatim": "gain of electrons",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried; each definition carries its own printed 4 marks."
+  ]
  },
  {
   "id": "chem-2025-ol-q9-b",
   "topicId": "chem-3-5",
-  "conceptId": "zinc-copper-displacement-observations",
+  "conceptId": "copper-half-equation-is-reduction",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q9(b)",
-  "stem": "When a piece of zinc metal is placed into a solution of copper(II) sulfate the redox reaction that occurs is described by the following balanced chemical half equations: Cu2+(aq) + 2e– → Cu(s) and Zn(s) → Zn2+(aq) + 2e–. The overall displacement reaction that occurs is described by the following equation: CuSO4(aq) + Zn(s) → Cu(s) + ZnSO4(aq)",
-  "questionText": "(i) Classify the copper half equation as an oxidation or a reduction. (ii) Identify the reducing agent in the overall reaction. (iii) Describe one observation made when zinc reacts with copper(II) sulfate. (iv) Is zinc below or above copper in the electrochemical series? Give a reason for your answer.",
+  "questionRef": "2025 OL Q9(b)(i)",
+  "questionText": "Classify the copper half equation as an oxidation or a reduction.",
+  "stem": "When a piece of zinc metal is placed into a solution of copper(II) sulfate the redox reaction that occurs is described by the following balanced chemical half equations: Cu²⁺(aq) + 2e⁻ → Cu(s) Zn(s) → Zn²⁺(aq) + 2e⁻ The overall displacement reaction that occurs is described by the following equation: CuSO₄(aq) + Zn(s) → Cu(s) + ZnSO₄(aq)",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 21,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "reduction",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Zn / Zinc",
     "marks": 3,
-    "accepts": [
-     "Zn",
-     "Zinc"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "copper / brown / black precipitate forms / blue colour of solution fades",
-    "marks": 6,
-    "accepts": [
-     "copper precipitate forms",
-     "brown precipitate forms",
-     "black precipitate forms",
-     "blue colour of solution fades"
-    ]
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "above",
-    "marks": 3
-   },
-   {
-    "id": "r-5",
-    "kind": "alt",
-    "verbatim": "it displaces / reduces the copper",
-    "marks": 6,
-    "accepts": [
-     "it displaces the copper",
-     "it reduces the copper"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Whole part carried in one card; every sub-part has its own printed mark and the five rows sum exactly to the printed 21. The half equations and overall equation are reproduced in the stem, so no figure is required."
+  ]
  },
  {
   "id": "chem-2025-ol-q9-c-i-iii",
   "topicId": "chem-3-5",
-  "conceptId": "electrolysis-of-water-inert-electrodes",
+  "conceptId": "meaning-of-inert-electrodes",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q9(c)(i)–(iii)",
-  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. In the printed paper the underlined term is 'inert'.",
-  "questionText": "(i) What is meant by the underlined term? (ii) Suggest a suitable material that can be used as inert electrodes. (iii) Why must a few drops of acid be added to the water before starting the electrolysis?",
+  "questionRef": "2025 OL Q9(c)(i)",
+  "questionText": "What is meant by the underlined term?",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
+  "figureKey": "chemistry-2025-OL-paper-q9c",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "chemically inactive / not reactive",
     "marks": 6,
-    "accepts": [
-     "chemically inactive",
-     "not reactive"
-    ],
-    "contextNote": "The underlined term in the paper is \"inert\"."
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "graphite / platinum",
-    "marks": 3,
-    "accepts": [
-     "graphite",
-     "platinum"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "improve conductivity",
-    "marks": 3
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Part (c) is 21 marks over six printed marks, so it is carved into two fixed-tariff cards to respect the five-row cap; these three rows sum exactly to their printed 12. The paper prints an apparatus diagram, but the lead-in text states everything the questions need."
+  ]
  },
  {
   "id": "chem-2025-ol-q9-c-iv-v",
   "topicId": "chem-3-5",
-  "conceptId": "electrolysis-of-water-gas-products",
+  "conceptId": "gases-from-electrolysing-water",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q9(c)(iv)–(v)",
-  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
-  "questionText": "(iv) Identify the two gases collected during the electrolysis of water. (v) Which of these gases is formed by reduction at the negative electrode?",
+  "questionRef": "2025 OL Q9(c)(iv)",
+  "questionText": "Identify the two gases collected during the electrolysis of water.",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
+  "figureKey": "chemistry-2025-OL-paper-q9c",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Gas collected — hydrogen",
+    "kind": "point",
+    "verbatim": "hydrogen",
     "marks": 3,
-    "accepts": [
-     "H2"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Gas collected — oxygen",
+    "kind": "point",
+    "verbatim": "oxygen",
     "marks": 3,
-    "accepts": [
-     "O2"
-    ]
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "Formed by reduction at the negative electrode — hydrogen",
-    "marks": 3,
-    "accepts": [
-     "H2"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Second half of Q9(c); the three rows sum exactly to the printed 9."
+  ]
  },
  {
   "id": "chem-2025-ol-q10-a",
@@ -21477,107 +21421,134 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q10(a)",
-  "questionText": "(i) Settling tanks are used at different stages of sewage treatment. What happens in a settling tank? (ii) At what stage of sewage treatment is the organic biodegradable matter broken down by bacteria? (iii) What is the specific purpose of the tertiary stage of sewage treatment? (iv) Describe a problem that arises when sewage is not treated before discharging it into the sea, a river or a lake.",
+  "questionRef": "2025 OL Q10(a)(i)–(iv)",
+  "questionText": "(i) Settling tanks are used at different stages of sewage treatment. What happens in a settling tank? (ii) At what stage of sewage treatment (primary, secondary or tertiary) is the organic biodegradable matter broken down by bacteria? (iii) What is the specific purpose of the tertiary stage of sewage treatment? (iv) Describe a problem that arises when sewage is not treated before discharging it into the sea, a river or a lake.",
+  "stem": "The flow chart below shows the stages of sewage treatment.",
+  "figureKey": "chemistry-2025-OL-paper-q10a",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 7 + 7 + 2"
+   "notation": "[9 + 7 + 7 + 2]"
   },
   "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "removes insoluble solids / heavier solids to sink to the bottom",
     "marks": null,
-    "accepts": [
-     "removes insoluble solids",
-     "heavier solids to sink to the bottom"
-    ],
-    "contextNote": "No per-part mark exists: the four correct elements of part (a) are marked as one 9 + 7 + 7 + 2 split."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "secondary",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "to remove nitrates / phosphates",
     "marks": null,
-    "accepts": [
-     "to remove nitrates",
-     "to remove phosphates"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
-    "kind": "alt",
-    "verbatim": "eutrophication / death of plants and animals [allow pollution]",
+    "kind": "point",
+    "verbatim": "eutrophication / death of plants and animals",
     "marks": null,
-    "accepts": [
-     "eutrophication",
-     "death of plants and animals",
-     "pollution"
-    ],
-    "contextNote": "The scheme adds [allow pollution]."
+    "openList": true,
+    "contextNote": "The scheme adds: [allow pollution]"
    }
   ],
-  "notes": "The paper prints a flow chart above this part showing the primary, secondary and tertiary stages, but none of the four sub-questions depends on reading it — each names the stage it asks about or asks for one by name — so no figure is carried. All four scoring elements are here and the split sums to the printed 25."
+  "notes": "The scheme prices these points together as [9 + 7 + 7 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q10-b-i-iii",
   "topicId": "chem-1-1",
-  "conceptId": "three-states-of-matter-and-ions",
+  "conceptId": "states-of-matter-and-particles",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q10(b)(i)–(iii)",
+  "questionRef": "2025 OL Q10(b)(i)–(v)",
+  "questionText": "(i) Name the three states of matter. (ii) What is meant by the term ion? (iii) Classify helium (He) as an atom, a molecule or an ion. (iv) Name two states of matter that exist at the melting point of a substance. (v) In which state of matter do the particles vibrate around fixed positions?",
   "stem": "Matter is composed of three different types of tiny particles: atoms, molecules and ions.",
-  "questionText": "(i) Name the three states of matter. (ii) What is meant by the term ion? (iii) Classify helium (He) as an atom, a molecule or an ion.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 3 + 3 + 2 + 2 + 2 + 2 + 2"
+   "notation": "[9 + 3 + 3 + 2 + 2 + 2 + 2 + 2]"
   },
-  "totalMarks": 19,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "solid",
     "marks": null,
-    "contextNote": "Per-element values are not fixed: the whole of part (b) is marked as one 9 + 3 + 3 + 2 + 2 + 2 + 2 + 2 split across its eight correct elements."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "liquid",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "gas",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "charge particle",
     "marks": null,
-    "contextNote": "Printed in the scheme as \"charge particle\", i.e. a charged particle."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "atom",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "solid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "liquid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "solid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Part (b) is 25 marks over eight scoring elements marked 9 + 3 + 3 + 2 + 2 + 2 + 2 + 2, so it is carved into two cards to respect the five-row cap. The five elements carried here can earn at most 9 + 3 + 3 + 2 + 2 = 19."
+  "notes": "The scheme prices these points together as [9 + 3 + 3 + 2 + 2 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q10-b-iv-v",
@@ -21620,47 +21591,70 @@
  {
   "id": "chem-2025-ol-q10-c-i-iii",
   "topicId": "chem-1-4",
-  "conceptId": "moles-and-mass-from-balanced-equation",
+  "conceptId": "moles-mass-and-gas-volume-from-an-equation",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q10(c)(i)–(iii)",
-  "stem": "Boron carbide (B4C) is an extremely hard ceramic used in some padlocks. It is made by heating boron trioxide (B2O3) with carbon (C) in an electric furnace. In a reaction, 140 g of B2O3 was heated in the presence of excess carbon to give B4C and carbon monoxide (CO) according to the following balanced chemical equation: 2B2O3 + 7C → B4C + 6CO. The relative molecular mass (Mr) of B2O3 is 70.",
-  "questionText": "(i) Calculate the number of moles of B2O3 in 140 g. (ii) Calculate the number of moles of B4C produced. (iii) Calculate the mass of B4C produced.",
+  "questionRef": "2025 OL Q10(c)(i)–(v)",
+  "questionText": "(i) Calculate the number of moles of B₂O₃ in 140 g. (ii) Calculate the number of moles of B₄C produced. (iii) Calculate the mass of B₄C produced. (iv) Calculate the number of moles of CO produced. (v) Calculate the volume (in litres) of this quantity of CO gas, measured at s.t.p.",
+  "stem": "Boron carbide (B₄C) is an extremely hard ceramic used in some padlocks. It is made by heating boron trioxide (B₂O₃) with carbon (C) in an electric furnace. In a reaction, 140 g of B₂O₃ was heated in the presence of excess carbon to give B₄C and carbon monoxide (CO) according to the following balanced chemical equation: 2B₂O₃ + 7C → B₄C + 6CO The relative molecular mass (Mr) of B₂O₃ is 70.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 8 + 2 + 2 + 2 + 2"
+   "notation": "[9 + 8 + 2 + 2 + 2 + 2]"
   },
-  "totalMarks": 21,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "140 / 70 = 2 (moles)",
+    "verbatim": "140 ÷ 70 = 2 (moles)",
     "marks": null,
-    "contextNote": "Per-element values are not fixed: the whole of part (c) is marked as one 9 + 8 + 2 + 2 + 2 + 2 split across its six correct elements. Scheme rule 7: each arithmetical error in a calculation costs one mark."
+    "openList": true,
+    "contextNote": "The scheme prints 140 over 70 as a fraction; ÷ stands for its bar."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "2 ÷ 2 = 1 (mole)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "Mr = 56",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "56 × 1 = 56 (g)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "2 × 3 = 6 (moles)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "6 × 22.4 = 134.4 (L)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Carded because the scheme awards discrete, checkable values rather than anonymous working: each row is a stated quantity with its unit or a stated Mr. Part (c) is 25 marks over six such elements marked 9 + 8 + 2 + 2 + 2 + 2, so it is carved into two cards; the four elements here can earn at most 9 + 8 + 2 + 2 = 21."
+  "notes": "The scheme prices these points together as [9 + 8 + 2 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q10-c-iv-v",
@@ -21698,53 +21692,78 @@
  {
   "id": "chem-2025-ol-q11-a-1",
   "topicId": "chem-1-3",
-  "conceptId": "periodic-table-passage-groups-1-2",
+  "conceptId": "elements-of-the-periodic-table-passage",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q11(a) numbers 1–3",
-  "stem": "The names of the following seven elements are omitted from the passage below: beryllium (Be), fluorine (F), gallium (Ga), hydrogen (H), lithium (Li), neon (Ne), selenium (Se). Write in your answerbook the omitted element corresponding to each of the numbers 1 to 7.",
-  "questionText": "The first element of the periodic table of the elements is  1 . The element sodium is in the same group as  2 . The alkaline earth metals make up Group 2 and include the element  3 .",
+  "questionRef": "2025 OL Q11(a)",
+  "questionText": "Refer to the periodic table of the elements on page 79 of the Formulae and Tables booklet when answering this question. The names of the following seven elements are omitted from the passage below. Write in your answerbook the omitted element corresponding to each of the numbers 1 to 7. The first element of the periodic table of the elements is 1 . The element sodium is in the same group as 2 . The alkaline earth metals make up Group 2 and include the element 3 . The existence and properties of the element 4 in the same group as aluminium and the same period as 5 was predicted by Mendeleev before its actual discovery in 1875. Group 18 of the modern table contains the noble gases, including 6 . There were no noble gases in Mendeleev’s original table. The photograph shows Clarice Phelps, recognised as one of the scientists whose work led to the discovery in 2009 of element 117 that is in the same group as 7 .",
+  "figureKey": "chemistry-2025-OL-paper-q11a",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 2 + 2 + 2 + 2 + 2"
+   "notation": "[9 + 6 + 2 + 2 + 2 + 2 + 2]"
   },
-  "totalMarks": 17,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "1 = hydrogen / H",
     "marks": null,
-    "accepts": [
-     "hydrogen",
-     "H"
-    ],
-    "contextNote": "Per-blank values are not fixed: the whole of part (a) is marked as one 9 + 6 + 2 + 2 + 2 + 2 + 2 split across its seven correct blanks."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "2 = lithium / Li",
     "marks": null,
-    "accepts": [
-     "lithium",
-     "Li"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "3 = beryllium / Be",
     "marks": null,
-    "accepts": [
-     "beryllium",
-     "Be"
-    ]
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 = gallium / Ga",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "5 = Selinium / Se",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "6 = neon / Ne",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "7 = fluorine / F",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Part (a) is 25 marks over seven blanks marked 9 + 6 + 2 + 2 + 2 + 2 + 2, so it is carved into three cards to respect the five-row cap. The three blanks here can earn at most 9 + 6 + 2 = 17. The paper's instruction to refer to the periodic table on page 79 of the Formulae and Tables booklet is omitted as it names no figure this wave must carry."
+  "notes": "The scheme prices these points together as [9 + 6 + 2 + 2 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q11-a-2",
@@ -21832,75 +21851,72 @@
  {
   "id": "chem-2025-ol-q11-b",
   "topicId": "chem-2-1",
-  "conceptId": "bonding-type-and-solubility",
+  "conceptId": "bonding-type-solubility-and-dot-and-cross",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q11(b)(i)–(v)",
-  "stem": "Study the substances below and answer the questions that follow. Name / Formula / Bonding: Sodium chloride, NaCl, ionic; Hydrogen chloride, HCl, polar covalent; Nitrogen, N2, covalent.",
-  "questionText": "(i) Which of the substances above is formed by the complete transfer of electrons between atoms? (ii) Identify which of these substances is formed by equal sharing of pairs of electrons by atoms. (iii) Which of these substances is formed by unequal sharing of pairs of electrons by atoms? (iv) Identify the substance you would expect to be the most soluble in a non-polar solvent such as cyclohexane. (v) Identify the substance you would expect to be highly soluble in water.",
+  "questionRef": "2025 OL Q11(b)(i)–(vi)",
+  "questionText": "(i) Identify the substance formed by the complete transfer of electrons between atoms. (ii) Identify the substance formed by equal sharing of pairs of electrons by atoms. (iii) Identify the substance formed by unequal sharing of pairs of electrons by atoms. (iv) Identify the substance you would expect to be the most soluble in a non-polar solvent such as cyclohexane. (v) Identify the substance you would expect to be highly soluble in water. (vi) Draw a dot and cross diagram to show the arrangement of the valence shell electrons in any one of these substances.",
+  "stem": "Study the substances below and answer the questions that follow:",
+  "figureKey": "chemistry-2025-OL-scheme-q11b-vi",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 4 + 2 + 2 + 2"
+   "notation": "[9 + 6 + 4 + 2 + 2 + 2]"
   },
-  "totalMarks": 23,
+  "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Complete transfer of electrons — sodium chloride / NaCl",
+    "kind": "point",
+    "verbatim": "sodium chloride / NaCl",
     "marks": null,
-    "accepts": [
-     "sodium chloride",
-     "NaCl"
-    ],
-    "contextNote": "Per-element values are not fixed: the whole of part (b) is marked as one 9 + 6 + 4 + 2 + 2 + 2 split across its six correct elements."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Equal sharing of pairs of electrons — nitrogen / N2",
+    "kind": "point",
+    "verbatim": "nitrogen / N₂",
     "marks": null,
-    "accepts": [
-     "nitrogen",
-     "N2"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
-    "verbatim": "Unequal sharing of pairs of electrons — hydrogen chloride / HCl",
+    "kind": "point",
+    "verbatim": "hydrogen chloride / HCl",
     "marks": null,
-    "accepts": [
-     "hydrogen chloride",
-     "HCl"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
-    "kind": "alt",
-    "verbatim": "Most soluble in a non-polar solvent — nitrogen / N2",
+    "kind": "point",
+    "verbatim": "nitrogen / N₂",
     "marks": null,
-    "accepts": [
-     "nitrogen",
-     "N2"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
-    "verbatim": "Highly soluble in water — sodium chloride / hydrogen chloride",
+    "kind": "point",
+    "verbatim": "sodium chloride / hydrogen chloride",
     "marks": null,
-    "accepts": [
-     "sodium chloride",
-     "NaCl",
-     "hydrogen chloride",
-     "HCl"
-    ]
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Draw a dot and cross diagram to show the arrangement of the valence shell electrons in any one of these substances.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme answers (vi) with a drawing; its own print is shown with the answer."
    }
   ],
-  "notes": "SKIPPED (b)(vi) \"Draw a dot and cross diagram to show the arrangement of the valence shell electrons in any one of these substances\" — a drawing task, and the sixth scoring element of the part. The table of substances is reproduced in the scheme and is carried in the stem, so no figure is needed. The five elements here can earn at most 9 + 6 + 4 + 2 + 2 = 23 of the part's printed 25."
+  "notes": "The scheme prices these points together as [9 + 6 + 4 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2025-OL-paper-q11b-print"
  },
  {
   "id": "chem-2025-ol-q1-a",
@@ -21911,8 +21927,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q1(a)",
-  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
   "questionText": "Identify substance A.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -21920,83 +21937,67 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "fat",
-    "accepts": [
-     "oil"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "fat / oil",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Answerable from the stem alone; the diagrams referred to elsewhere in Q1 are not needed here."
+  ]
  },
  {
   "id": "chem-2025-ol-q1-b",
   "topicId": "chem-u2",
-  "conceptId": "reflux-and-distillation-techniques",
+  "conceptId": "reflux-to-heat-without-losing-solvent",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q1(b)",
-  "stem": "A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
-  "questionText": "(i) Name the technique shown in Diagram 1, which is used to heat the reaction mixture without loss of solvent. (ii) Name the technique shown in Diagram 2, which is used to separate the ethanol from the reaction mixture.",
+  "questionRef": "2025 OL Q1(b)(i)",
+  "questionText": "Name the technique shown in Diagram 1, which is used to heat the reaction mixture without loss of solvent.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "reflux",
-    "marks": 6
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "distillation",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Both parts name a diagram, but each carries a self-sufficient description of what the technique does ('heat without loss of solvent', 'separate the ethanol'), so neither answer depends on seeing the figure. SKIPPED Q1(c)(i) 'Name the piece of apparatus labelled C in the diagrams' and Q1(c)(ii) 'Identify the change of state that occurs in C' — both depend entirely on a label in a diagram that this wave does not carry.",
-  "figureKey": "chemistry-2025-OL-paper-p02-i0"
+  ]
  },
  {
   "id": "chem-2025-ol-q1-d",
   "topicId": "chem-u2",
-  "conceptId": "brine-and-separating-soap-precipitate",
+  "conceptId": "what-brine-is",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q1(d)",
-  "stem": "Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
-  "questionText": "(i) What is brine? (ii) Describe how the soap precipitate could have been separated from the brine.",
+  "questionRef": "2025 OL Q1(d)(i)",
+  "questionText": "What is brine?",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "(saturated) salt solution",
     "marks": 6,
-    "contextNote": "The bracketed word was not required in 2025."
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "filtration",
-    "accepts": [
-     "labelled diagram"
-    ],
-    "marks": 6,
-    "contextNote": "A labelled diagram of the filtration set-up is accepted in place of the word."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED Q1(e) 'State the chemical hazard indicated by each of these pictograms' (corrosive / flammable) — the two warning pictograms are printed on the paper and are not reproduced, so the question cannot be answered from text."
+  ]
  },
  {
   "id": "chem-2025-ol-q2-a",
@@ -22007,8 +22008,8 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q2(a)",
-  "stem": "A student used a standard solution of sodium carbonate (Na2CO3) to find the concentration of a solution of hydrochloric acid (HCl) by titration.",
   "questionText": "The sodium carbonate solution used was a standard solution. Explain the underlined term.",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22018,7 +22019,9 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "a solution of known concentration",
-    "marks": 5
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
    }
   ]
  },
@@ -22030,12 +22033,20 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q2(b)",
-  "stem": "A student used a standard solution of sodium carbonate (Na2CO3) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm3 portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette.",
-  "questionText": "(i) Identify the piece of apparatus labelled P. (ii) Name a suitable piece of apparatus that can be used to accurately measure out a 25.0 cm3 portion of the sodium carbonate solution. (iii) Describe how the burette was rinsed before use. (iv) State one precaution that could be taken to ensure accuracy when taking a burette reading.",
+  "questionRef": "2025 OL Q2(b)(i)–(iv)",
+  "questionText": "(i) Identify the piece of apparatus labelled P. (ii) Name a suitable piece of apparatus that can be used to accurately measure out a 25.0 cm³ portion of the sodium carbonate solution. (iii) Describe how the burette was rinsed before use. (iv) State one precaution that could be taken to ensure accuracy when taking a burette reading.",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out.",
+  "figureKey": "chemistry-2025-OL-paper-q2",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "volumetric flask",
+    "askedInThisQuestion": true
+   }
+  ],
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 9 + 2 + 2 + 2"
+   "notation": "[9 + 9 + 2 + 2 +2 ]"
   },
   "totalMarks": 24,
   "rows": [
@@ -22044,156 +22055,96 @@
     "kind": "point",
     "verbatim": "volumetric flask",
     "marks": null,
-    "contextNote": "P is the vessel the standard solution was supplied in — identifiable from the stem without the diagram."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "pipette",
-    "accepts": [
-     "burette"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "pipette / burette",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "deionised water",
-    "accepts": [
-     "distilled water",
-     "pure water"
-    ],
     "marks": null,
-    "contextNote": "First rinse. The scheme's preamble accepts distilled water or pure water for deionised water."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "(HCl) solution",
     "marks": null,
-    "contextNote": "Second rinse. The scheme prints '[-1 if reversed]' — one mark is lost if the two rinses are given in the wrong order. The bracketed word was not required in 2025."
+    "openList": true,
+    "contextNote": "The scheme adds: [–1 if reversed]"
    },
    {
     "id": "r-5",
-    "kind": "alt",
-    "verbatim": "read from eye level",
-    "accepts": [
-     "meniscus on mark",
-     "burette clamped vertically"
-    ],
+    "kind": "point",
+    "verbatim": "read from eye level / meniscus on mark / burette clamped vertically",
     "marks": null,
-    "openList": true
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme pools the marks for (i)-(iv) as a single ordered split (9 + 9 + 2 + 2 + 2 = 24), so all four sub-parts must be carded together with marks: null.",
-  "labelKey": [
-   {
-    "letter": "P",
-    "meaning": "volumetric flask",
-    "askedInThisQuestion": true
-   }
-  ],
-  "figureKey": "chemistry-2025-OL-paper-p03-i0"
+  "notes": "The scheme prices these points together as [9 + 9 + 2 + 2 +2 ] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q2-c",
   "topicId": "chem-4-1",
-  "conceptId": "titration-indicator-and-end-point-colour-change",
+  "conceptId": "indicator-for-a-sodium-carbonate-titration",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q2(c)",
-  "stem": "A standard solution of sodium carbonate (Na2CO3) was titrated against hydrochloric acid (HCl) added from a burette. A few drops of an indicator solution were added to the Na2CO3 in the conical flask before carrying out each titration.",
-  "questionText": "(i) Name a suitable indicator. (ii) State the colour change observed in the conical flask at the end point using this indicator. (iii) Why is it helpful to place the conical flask on a white tile during the titration?",
+  "questionRef": "2025 OL Q2(c)(i)",
+  "questionText": "Name a suitable indicator.",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out. A few drops of an indicator solution were added to the Na₂CO₃ in the conical flask before carrying out each titration.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "methyl orange",
-    "accepts": [
-     "methyl red"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "yellow",
-    "accepts": [
-     "orange"
-    ],
-    "marks": 3,
-    "contextNote": "Starting colour in the conical flask."
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "to pink",
-    "accepts": [
-     "peach",
-     "red"
-    ],
-    "marks": 3,
-    "contextNote": "The scheme prints '[3 marks if colours reversed]' — giving the two colours the wrong way round scores 3 of the 6 colour marks."
-   },
-   {
-    "id": "r-4",
     "kind": "point",
-    "verbatim": "to see the colour change more clearly",
-    "marks": 3
+    "verbatim": "methyl orange / methyl red",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED Q2(d) 'Calculate the concentration, in moles per litre, of the HCl solution' — the scheme prints only two parallel columns of worked arithmetic (5 + 2 + 2, '[award 5 marks for formula/implied if no other marks awarded]') with no self-markable prose marking points, so per the calculation rule it is not carded."
+  ]
  },
  {
   "id": "chem-2025-ol-q3-a",
-  "topicId": "chem-u2",
-  "conceptId": "thiosulfate-rate-experiment-setup",
+  "topicId": "chem-3-2",
+  "conceptId": "product-that-obscures-the-cross",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q3(a)",
-  "stem": "10 cm3 of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm3 of sodium thiosulfate (Na2S2O3) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask, to become obscured, when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na2S2O3(aq) + 2HCl(aq) -> 2NaCl(aq) + SO2(g) + S(s) + H2O(aq). The rate of reaction was measured for a number of different concentrations of Na2S2O3, with all other reaction conditions kept constant.",
-  "questionText": "(i) Identify the reaction product that causes the cross to become obscured. (ii) Name a suitable piece of apparatus that could be used to measure out 10 cm3 of HCl. (iii) State one reaction condition which was kept constant.",
+  "questionRef": "2025 OL Q3(a)(i)",
+  "questionText": "Identify the reaction product that causes the cross to become obscured.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 17,
+  "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "sulfur",
-    "accepts": [
-     "S"
-    ],
-    "marks": 5
-   },
-   {
-    "id": "r-2",
     "kind": "point",
-    "verbatim": "graduated cylinder",
-    "marks": 6
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "temperature",
-    "accepts": [
-     "volume",
-     "container"
-    ],
-    "marks": 6,
-    "openList": true
+    "verbatim": "sulfur / S",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED Q3(b)(i) 'Plot a graph, on graph paper, of concentration of Na2S2O3 versus the rate of reaction' — graph-plotting, and its marking points (labelled axis, scaled axes, points plotted, line of best fit) are content-free criteria. SKIPPED Q3(b)(ii) 'Use your graph to estimate the rate of reaction when the concentration of Na2S2O3 was 0.05 M' — the answer is read off a graph the candidate drew."
+  ]
  },
  {
   "id": "chem-2025-ol-q3-b-iii",
@@ -22204,11 +22155,12 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q3(b)(iii)",
-  "stem": "Hydrochloric acid was added to sodium thiosulfate (Na2S2O3) solution and the rate of reaction was measured at a number of different concentrations of Na2S2O3, with all other reaction conditions kept constant.",
-  "questionText": "State whether the rate of reaction increases or decreases as the concentration of Na2S2O3 increases. Give a reason for your answer.",
+  "questionText": "State whether the rate of reaction increases or decreases as the concentration of Na₂S₂O₃ increases. Give a reason for your answer.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -22216,16 +22168,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "increases",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "more collisions",
     "marks": null,
-    "contextNote": "Key words — they score only in the correct context (more collisions between reacting particles in a given time)."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q3-b-iv",
@@ -22236,11 +22192,12 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q3(b)(iv)",
-  "stem": "Hydrochloric acid was added to sodium thiosulfate (Na2S2O3) solution and the rate of reaction was measured.",
   "questionText": "How would you expect the rate of reaction to be affected by cooling the solutions used? Give a reason for your answer.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -22248,19 +22205,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "decrease",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "less energy",
-    "accepts": [
-     "fewer collisions"
-    ],
+    "kind": "point",
+    "verbatim": "less energy / fewer collisions",
     "marks": null,
-    "contextNote": "Key words — they score only in the correct context (the particles have less energy, so fewer successful collisions)."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q4-a",
@@ -22271,7 +22229,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(a)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "Name the metal responsible for the yellow colour of the flame in a flame test.",
   "tariffModel": {
    "kind": "fixed"
@@ -22280,14 +22237,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "sodium",
-    "accepts": [
-     "Na"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "sodium / Na",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-b",
@@ -22298,11 +22255,10 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(b)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "Describe the trend in the size of atomic radii going down Group 1 of the periodic table of elements. Give a reason for your answer.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -22310,16 +22266,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "increases",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "additional shells",
     "marks": null,
-    "contextNote": "Key words — they score only in the correct context (each element down the group has an extra occupied shell / energy level)."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-c",
@@ -22330,8 +22290,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(c)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
-  "questionText": "State the shape of a molecule of ammonia (NH3).",
+  "questionText": "State the shape of a molecule of ammonia (NH₃).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22341,9 +22300,12 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "pyramidal",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-d",
@@ -22354,8 +22316,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(d)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
-  "questionText": "State the relationship between the temperature on the Kelvin scale and the volume of a fixed mass of gas at constant pressure according to Charles' Law.",
+  "questionText": "State the relationship between the temperature (T) on the kelvin scale and the volume (V) of a fixed mass of gas at constant pressure according to Charles’ law.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22366,9 +22327,11 @@
     "kind": "point",
     "verbatim": "(directly) proportional",
     "marks": 6,
-    "contextNote": "The bracketed word was not required in 2025."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-e",
@@ -22379,11 +22342,10 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(e)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "What is meant by electronegativity?",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -22392,16 +22354,19 @@
     "kind": "point",
     "verbatim": "(relative) attraction",
     "marks": null,
-    "contextNote": "Bracketed word not required in 2025. Key word — it scores only inside a correct statement (the attraction an atom in a molecule has...)."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "for a pair of electrons",
     "marks": null,
-    "contextNote": "Key words — the shared pair of electrons in the covalent bond."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-f",
@@ -22412,8 +22377,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(f)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
-  "questionText": "Calculate the percentage of carbon by mass in heptane (C7H16).",
+  "questionText": "Calculate the percentage of carbon by mass in heptane (C₇H₁₆).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22424,23 +22388,27 @@
     "kind": "point",
     "verbatim": "Mtotal = 100",
     "marks": 2,
-    "contextNote": "Relative molecular mass (Mr) of C7H16."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "7 × 12 = 84",
     "marks": 2,
-    "contextNote": "Mass contributed by the carbon atoms."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "84/100 × 100 = 84 %",
-    "marks": 2
+    "verbatim": "84 ÷ 100 × 100 = 84 %",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 84 over 100 as a fraction; ÷ stands for its bar."
    }
   ],
-  "notes": "Carded because the scheme awards three separately printed, self-markable steps (2 + 2 + 2), not just undifferentiated working."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-g",
@@ -22451,7 +22419,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(g)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "Explain why mercaptans are added to natural gas before it is supplied to customers.",
   "tariffModel": {
    "kind": "fixed"
@@ -22460,17 +22427,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "safety",
-    "accepts": [
-     "noticeable smell",
-     "bad smell"
-    ],
+    "kind": "point",
+    "verbatim": "safety / noticeable smell / bad smell",
     "marks": 6,
-    "contextNote": "Key word — 'safety' scores only in the correct context (the added smell makes a gas leak detectable)."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "SKIPPED Q4(h) 'Copy and complete the following sentence:' — the sentence to be completed is printed on the examination paper and is not reproduced in the scheme, so the answers ('speeds', 'stationary') are unusable on their own."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-i",
@@ -22481,7 +22445,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(i)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "State one difference between temporary hardness and permanent hardness in water.",
   "tariffModel": {
    "kind": "fixed"
@@ -22492,9 +22455,12 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "temporary hardness removed by boiling",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-j",
@@ -22505,8 +22471,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(j)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
-  "questionText": "The molecular formula of ethanoic acid is C2H4O2. What is the empirical formula for ethanoic acid?",
+  "questionText": "The molecular formula of ethanoic acid is C₂H₄O₂. What is the empirical formula for ethanoic acid?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22515,10 +22480,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "CH2O",
-    "marks": 6
+    "verbatim": "CH₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-k",
@@ -22529,7 +22497,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(k)",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted.",
   "questionText": "Diffusers are used to perfume a room. The fragrant oils in the solution evaporate and diffuse into the air. What is diffusion?",
   "tariffModel": {
    "kind": "fixed"
@@ -22538,14 +22505,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "movement of a substance",
-    "accepts": [
-     "spreading out of a substance"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "movement of a substance / spreading out of a substance",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-l-a",
@@ -22556,7 +22523,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(l)A",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted. Item (l) offers a choice: answer part A or part B.",
   "questionText": "Write the chemical formula for ozone.",
   "tariffModel": {
    "kind": "fixed"
@@ -22566,11 +22532,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "O3",
-    "marks": 6
+    "verbatim": "O₃",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q4(l) is an either/or item; part A and part B are carded separately so each can be practised on its own."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q4-l-b",
@@ -22581,7 +22549,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q4(l)B",
-  "stem": "Q4 is a set of short items: eight items to be answered, six marks allocated to each item and one additional mark added to each of the first two items attempted. Item (l) offers a choice: answer part A or part B.",
   "questionText": "Name the English scientist who discovered in 1807 that the elements sodium and potassium could be extracted from their salts by electrolysis.",
   "tariffModel": {
    "kind": "fixed"
@@ -22593,9 +22560,11 @@
     "kind": "point",
     "verbatim": "(Humphrey) Davy",
     "marks": 6,
-    "contextNote": "The bracketed first name was not required in 2025. Spelling as printed in the scheme."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q5-a",
@@ -22605,12 +22574,12 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q5(a)",
-  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud.",
-  "questionText": "(i) Name the scientist who discovered that all atoms contain negative particles. (ii) State one property of the nucleus as discovered by Rutherford. (iii) Give the term used for the fixed paths described in Bohr's model of the atom.",
+  "questionRef": "2025 OL Q5(a)(i)–(iii)",
+  "questionText": "(i) Name the scientist who discovered that all atoms contain negative particles. (ii) State one property of the nucleus as discovered by Rutherford. (iii) State the term used for the fixed paths described in Bohr’s model of the atom.",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "8 + 4 + 2"
+   "notation": "[8 + 4 + 2]"
   },
   "totalMarks": 14,
   "rows": [
@@ -22618,30 +22587,28 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Thomson",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "dense",
-    "accepts": [
-     "small",
-     "positively charged"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "dense / small / positively charged",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "energy levels",
-    "accepts": [
-     "shells"
-    ],
     "marks": null,
-    "contextNote": "The scheme prints '[accept shells]'."
+    "openList": true,
+    "contextNote": "The scheme adds: [accept shells]"
    }
   ],
-  "notes": "The scheme pools the marks for (i)-(iii) as one ordered split (8 + 4 + 2 = 14), so the three sub-parts are carded together with marks: null."
+  "notes": "The scheme prices these points together as [8 + 4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q5-b-i",
@@ -22652,8 +22619,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q5(b)(i)",
-  "stem": "Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "questionText": "Name the two different types of subatomic particles found in the nuclei of all carbon atoms.",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud. Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22663,13 +22630,17 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "protons",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "neutrons",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ]
  },
@@ -22682,8 +22653,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q5(b)(ii)",
-  "stem": "Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "questionText": "Explain why all carbon atoms have an atomic number of 6.",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud. Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22691,13 +22662,11 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "same number of protons",
-    "accepts": [
-     "6"
-    ],
+    "kind": "point",
+    "verbatim": "6 / same number of protons",
     "marks": 6,
-    "contextNote": "The scheme prints '6 / same number of protons' — key words that score only in the correct context (every carbon atom has 6 protons in its nucleus)."
+    "openList": true,
+    "contextNote": ""
    }
   ]
  },
@@ -22710,35 +22679,32 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q5(b)(iii)",
-  "stem": "Consider atoms of the element carbon.",
   "questionText": "Show the arrangement of the electrons in a carbon atom.",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud. Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "2",
-    "accepts": [
-     "1s2"
-    ],
+    "kind": "point",
+    "verbatim": "2 / 1s²",
     "marks": null,
-    "contextNote": "Electrons in the first energy level."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "4",
-    "accepts": [
-     "2s2, 2p2"
-    ],
+    "kind": "point",
+    "verbatim": "4 / 2s², 2p²",
     "marks": null,
-    "contextNote": "Electrons in the second energy level — the full arrangement is 2, 4 (or 1s2 2s2 2p2)."
+    "openList": true,
+    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q5-b-iv",
@@ -22749,8 +22715,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2025 OL Q5(b)(iv)",
-  "stem": "Consider atoms of the element carbon.",
   "questionText": "Why are all carbon atoms electrically neutral?",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud. Consider atoms of the element carbon. Not all carbon atoms are identical.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22758,12 +22724,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "equal / same number of protons and electrons",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme prints \"equal / same number of protons and electrons (6)\" -- one point with the two openings as alternatives. Carried as the scheme prints it rather than as one opening with the other in accepts."
+  ]
  },
  {
   "id": "chem-2025-ol-q5-c",
@@ -22773,12 +22740,12 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q5(c)",
-  "stem": "Consider atoms of the element carbon. Not all carbon atoms are identical.",
+  "questionRef": "2025 OL Q5(c)(i)–(ii)",
   "questionText": "(i) What term is used to describe atoms of the same element that have different mass numbers? (ii) In terms of subatomic particles, explain why carbon atoms can have different mass numbers, i.e. 12, 13 or 14.",
+  "stem": "Between 1808 and 1913 scientists gave different descriptions for the structure of the atom. Each description was ‘correct’ when it was first stated, because it was based on the evidence available at the time. Each description was an improvement on the previous one because it accounted for more facts known at the time. In 1808 Dalton described atoms as indivisible. By 1897 it had been discovered that all atoms contain negative particles. From this, it was proposed that the atom is spherical, with small negative particles embedded in positive matter. In 1909 Rutherford discovered that the electrons in an atom occupy an electron cloud surrounding a nucleus. In 1913 Bohr described the arrangement of the electrons in fixed paths in the electron cloud.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 3"
+   "notation": "[9 + 3]"
   },
   "totalMarks": 12,
   "rows": [
@@ -22786,16 +22753,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "isotope",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "different numbers of neutrons in the nucleus",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme pools (i) and (ii) as one ordered split (9 + 3 = 12)."
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q1-b-fig",
@@ -22849,59 +22820,36 @@
  {
   "id": "chem-2025-ol-q1-c-fig",
   "topicId": "chem-u2",
-  "conceptId": "liebig-condenser-and-condensation",
+  "conceptId": "liebig-condenser",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2025 OL Q1(c)",
-  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
-  "questionText": "(i) Name the piece of apparatus labelled C in the diagrams. (ii) Identify the change of state that occurs in C.",
-  "figureKey": "chemistry-2025-OL-paper-p02-i0",
+  "questionRef": "2025 OL Q1(c)(i)",
+  "questionText": "Name the piece of apparatus labelled C in the diagrams.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
   "labelKey": [
    {
     "letter": "C",
     "meaning": "(liebig) condenser",
     "askedInThisQuestion": true
-   },
-   {
-    "letter": "Diagram 1",
-    "meaning": "the set-up in which the mixture was heated gently for about 20 minutes using a hot-water bath",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "Diagram 2",
-    "meaning": "the set-up by which ethanol was removed from the reaction mixture",
-    "askedInThisQuestion": false
    }
   ],
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "C — (liebig) condenser",
+    "verbatim": "(liebig) condenser",
     "marks": 6,
-    "contextNote": "The bracketed word was not required in 2025 — 'condenser' on its own scores."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "gas (vapour)",
-    "marks": 3,
-    "contextNote": "The scheme allows 3 marks for 'condensation' on its own, and awards 3 marks if the two states are given the wrong way round."
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "to liquid",
-    "marks": 3
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Genuinely figure-dependent: 'the apparatus labelled C' cannot be answered without seeing where the two C arrows point. Figure opened and verified — in chemistry-2025-OL-paper-p02-i0, C points at the vertical water-jacketed condenser in Diagram 1 and at the sloping water-jacketed condenser in Diagram 2, both drawn with the two side arms of a Liebig condenser. (c)(i) and (c)(ii) share one card because the paper prints a single (12) tariff over both; the scheme's own 6 / 3 / 3 split gives the per-row marks. Decoding C in the label key does not pre-empt the question: LabelKeyPanel renders inside the post-reveal 'The scheme' block, never alongside the question."
+  ]
  },
  {
   "id": "chem-2025-ol-q1-e-fig",
@@ -22912,21 +22860,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q1(e)",
-  "stem": "Warning pictograms found on containers of NaOH and ethanol are shown on the right.",
   "questionText": "State the chemical hazard indicated by each of these pictograms.",
-  "figureKey": "chemistry-2025-OL-paper-p02-i1",
-  "labelKey": [
-   {
-    "letter": "NaOH",
-    "meaning": "the warning pictogram found on containers of sodium hydroxide (NaOH)",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "Ethanol",
-    "meaning": "the warning pictogram found on containers of ethanol",
-    "askedInThisQuestion": true
-   }
-  ],
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap. Warning pictograms found on containers of NaOH and ethanol are shown on the right.",
+  "figureKey": "chemistry-2025-OL-paper-q1e",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22935,17 +22871,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "NaOH — corrosive",
-    "marks": 4
+    "verbatim": "corrosive",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Ethanol — flammable",
-    "marks": 4
+    "verbatim": "flammable",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The purest figure question on this paper — the words give nothing at all, the whole answer is read off the two GHS diamonds. I opened chemistry-2025-OL-paper-p02-i1 and confirmed the left diamond (headed NaOH) shows liquid poured from a test tube eating into a block and into a hand, and the right diamond (headed Ethanol) shows a single flame. Marks 4 + 4 are the scheme's own."
+  ]
  },
  {
   "id": "chem-2025-ol-q2-b-fig",
@@ -25112,37 +25051,34 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 OL Q6(c)",
-  "stem": "When C2H2 is bubbled through a solution of bromine (Br2), as shown in the diagram, the orange-coloured solution decolourises.",
-  "questionText": "(i) State one major use for the gaseous hydrocarbon C2H2. (ii) What information does this give about the nature of the bonding in a molecule of C2H2?",
-  "figureKey": "chemistry-2025-OL-paper-p07-i0",
+  "questionRef": "2025 OL Q6(c)(i)–(ii)",
+  "questionText": "(i) State one major use for the gaseous hydrocarbon C₂H₂. When C₂H₂ is bubbled through a solution of bromine (Br₂), as shown in the diagram, the orange-coloured solution decolourises. (ii) What information does this give about the nature of the bonding in a molecule of C₂H₂?",
+  "stem": "The chemical formulae of six hydrocarbons are listed below. The list includes three alkanes, one alkene, one alkyne and one aromatic hydrocarbon. CH₄ C₂H₂ C₃H₆ C₄H₁₀ C₅H₁₂ C₆H₆",
+  "figureKey": "chemistry-2025-OL-paper-q6c",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 3"
+   "notation": "[9 + 3]"
   },
   "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "welding",
+    "kind": "point",
+    "verbatim": "welding / cutting",
     "marks": null,
-    "accepts": [
-     "cutting"
-    ],
-    "contextNote": "The scheme gives no per-part mark for (c): the paper prints one (12) tariff and the scheme splits it 9 + 3 over the two answer elements."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "double or triple bond",
+    "kind": "point",
+    "verbatim": "double or triple bond / unsaturated",
     "marks": null,
-    "accepts": [
-     "unsaturated"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Figure opened and verified at 2.6x zoom: chemistry-2025-OL-paper-p07-i0 is the bubbling apparatus the printed sentence points at — an upright test tube half filled with shaded liquid, a delivery tube bent over the rim and reaching almost to the base, a column of bubbles rising through the liquid, an arrow into the delivery tube labelled C2H2 and an arrow into the liquid labelled 'Br2 solution'. Nothing else is labelled and the crop is complete (no cut glassware, no clipped label). Carried because the paper's own words say 'as shown in the diagram' — the same rationale as chem-2025-ol-q1-b-fig: the figure makes the question coherent rather than answerable, since the observation (decolourisation) is stated in print. This restores the five verbatim words the figureless chem-2025-ol-q6-c had to delete, and supersedes it on the shared questionRef '2025 OL Q6(c)' (build-deck.mjs:250-256). labelKey deliberately OMITTED: both labels are self-describing — C2H2 labels the C2H2 being bubbled in and 'Br2 solution' labels the bromine solution, and the question text already names both, so a decode panel would tell a student nothing. Tagged chem-2-4 (Hydrocarbons) to match the sibling Q6 cards; (c)(ii) is about bonding in a hydrocarbon molecule, not an experimental procedure."
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q6-a-i",
@@ -32725,10 +32661,11 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q3(b)(i)",
-  "questionText": "Plot a graph, on graph paper, of concentration of Na2S2O3 versus the rate of reaction.",
+  "questionText": "Plot a graph, on graph paper, of concentration of Na₂S₂O₃ versus the rate of reaction.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 3 + 6 × 1 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 15,
   "rows": [
@@ -32736,30 +32673,35 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "labelled axis",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "scaled axes",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "points ploƩed",
-    "marks": 6
+    "verbatim": "points plotted",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices this point [6 × 1]."
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "line of best ﬁt",
-    "marks": 3
+    "verbatim": "line of best fit",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [maximum of 12 marks if graph paper is not used]"
    }
-  ],
-  "stem": "10 cm3 of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm3 of sodium thiosulfate (Na2S2O3) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. cross visible initially cross obscured after t seconds The reaction observed in the flask is described by the following balanced chemical equation: Na2S2O3(aq) + 2HCl(aq) → 2NaCl(aq) + SO2(g) + S(s) + H2O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na2S2O3 was measured and the data recorded in the table below. All other reaction conditions were kept constant. Concentration of Na2S2O3 (M) 0 0.02 0.04 0.06 0.08 0.1 Rate of reaction (1/minutes) 0 0.4 0.8 1.2 1.6 2.0",
-  "notes": "The six plotting marks are one for each point in the table. The scheme caps the whole part at twelve marks if graph paper is not used. Fifteen of the thirty-three marks the paper prints against Q3(b) are for this plot alone.",
-  "figureKey": "chemistry-2025-ol-paper-p004-i0"
+  ]
  },
  {
   "id": "chem-2025-ol-q3-b-ii",
@@ -32770,7 +32712,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2025 OL Q3(b)(ii)",
-  "questionText": "Use your graph to estimate the rate of reaction when the concentration of Na2S2O3 was 0.05 M.",
+  "questionText": "Use your graph to estimate the rate of reaction when the concentration of Na₂S₂O₃ was 0.05 M.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -32779,13 +32723,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "rate read from graph [≈ 1.0 min–1]",
-    "marks": 6
+    "verbatim": "rate read from graph",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [≈ 1.0 min⁻¹]"
    }
-  ],
-  "stem": "10 cm3 of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm3 of sodium thiosulfate (Na2S2O3) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. cross visible initially cross obscured after t seconds The reaction observed in the flask is described by the following balanced chemical equation: Na2S2O3(aq) + 2HCl(aq) → 2NaCl(aq) + SO2(g) + S(s) + H2O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na2S2O3 was measured and the data recorded in the table below. All other reaction conditions were kept constant. Concentration of Na2S2O3 (M) 0 0.02 0.04 0.06 0.08 0.1 Rate of reaction (1/minutes) 0 0.4 0.8 1.2 1.6 2.0",
-  "notes": "0.05 M is not one of the six concentrations in the table, so the answer has to be interpolated from the line of best fit drawn in part (i). The scheme prints the expected value behind an approximation sign, which is why a reading close to it scores.",
-  "figureKey": "chemistry-2025-ol-paper-p004-i0"
+  ]
  },
  {
   "id": "chem-2025-ol-q4-h",
@@ -32794,12 +32737,12 @@
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2025 OL Q4(h)",
   "questionText": "Copy and complete the following sentence: ‘Chromatography is a separation technique in which the components of a mixture are carried at different __________ by a mobile phase in contact with a __________ phase.’",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 + 2"
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -32807,17 +32750,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "speeds",
-    "marks": 4
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "stationary",
-    "marks": 2
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "Answer eight of the following (a), (b), (c), etc. (50)",
-  "notes": "The two rows fill the paper's two blanks in order: the first is what the components are carried at, the second is the phase the mobile phase is in contact with. The scheme prices them unevenly, 4 then 2."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2025-ol-q7-b-iii",
@@ -32826,36 +32772,34 @@
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2025 OL Q7(b)(iii)",
-  "questionText": "Describe how the solution of potassium hydroxide formed could be tested to show that it was basic. (18)",
+  "questionText": "Describe how the solution of potassium hydroxide formed could be tested to show that it was basic.",
+  "stem": "A tiny piece of potassium metal is added to water. The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "9 + 3"
+   "kind": "orderedSplit",
+   "notation": "[9 + 3]"
   },
   "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "pH meter",
-    "marks": 9,
-    "accepts": [
-     "named indicator"
-    ]
+    "kind": "point",
+    "verbatim": "named indicator / pH meter",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "pH reading",
-    "marks": 3,
-    "accepts": [
-     "correct matching colour change"
-    ]
+    "kind": "point",
+    "verbatim": "correct matching colour change / pH reading",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. potassium water The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
-  "notes": "The two rows are matched, not free choice: a named indicator has to be paired with its own colour change, and a pH meter with a pH reading. Three of the twelve marks are for the second row, which is the half candidates leave out — naming the test without saying what it shows."
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2025-ol-q8-a-iii",
@@ -32864,9 +32808,11 @@
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2025 OL Q8(a)(iii)",
   "questionText": "Name polymer P, two repeating units of which are shown in the reaction scheme.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -32877,11 +32823,10 @@
     "kind": "point",
     "verbatim": "polyethene",
     "marks": 6,
-    "contextNote": "P is the polymer drawn at the foot of the Q8 reaction scheme, shown as two repeating units."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
-  "figureKey": "chemistry-2025-OL-paper-q8-fig0"
+  ]
  },
  {
   "id": "chem-2025-ol-q8-a-iv",
@@ -32890,9 +32835,11 @@
   "level": "ordinary",
   "year": 2025,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2025 OL Q8(a)(iv)",
-  "questionText": "Identify a carbonyl compound from the reaction scheme. (18)",
+  "questionText": "Identify a carbonyl compound from the reaction scheme.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -32902,11 +32849,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "ethanal / CH₃CHO",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
-  "figureKey": "chemistry-2025-OL-paper-q8-fig0"
+  ]
  },
  {
   "id": "chem-2026-hl-q1-a-i",
@@ -41208,6 +41155,527 @@
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme prints only the criterion \"explanation\" for this part: the answer depends on which of the three industries the candidate chose."
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q1-b-ii",
+  "topicId": "chem-u2",
+  "conceptId": "distillation-to-remove-ethanol",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(b)(ii)",
+  "questionText": "Name the technique shown in Diagram 2, which is used to separate the ethanol from the reaction mixture.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "distillation",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q1-c-ii",
+  "topicId": "chem-1-1",
+  "conceptId": "change-of-state-in-a-condenser",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(c)(ii)",
+  "questionText": "Identify the change of state that occurs in C.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "gas (vapour)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to liquid",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [award 3 marks if reversed] [allow 3 marks for condensation]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q1-d-ii",
+  "topicId": "chem-u2",
+  "conceptId": "separating-the-soap-precipitate",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q1(d)(ii)",
+  "questionText": "Describe how the soap precipitate could have been separated from the brine.",
+  "stem": "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2. Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
+  "figureKey": "chemistry-2025-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "filtration / labelled diagram",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q2-c-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "end-point-colour-change-of-methyl-orange",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q2(c)(ii)",
+  "questionText": "State the colour change observed in the conical flask at the end point using this indicator.",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out. A few drops of an indicator solution were added to the Na₂CO₃ in the conical flask before carrying out each titration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yellow / orange",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to pink / peach / red",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [3 marks if colours reversed]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q2-c-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "why-a-white-tile-is-used",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q2(c)(iii)",
+  "questionText": "Why is it helpful to place the conical flask on a white tile during the titration?",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out. A few drops of an indicator solution were added to the Na₂CO₃ in the conical flask before carrying out each titration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to see the colour change more clearly",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q2-d",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hydrochloric-acid-from-a-titration",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q2(d)",
+  "questionText": "Calculate the concentration, in moles per litre, of the HCl solution.",
+  "stem": "A student used a standard solution of sodium carbonate (Na₂CO₃) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm³ portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out. On average, it was found that 25.0 cm³ portions of a 0.05 M Na₂CO₃ solution required 18.4 cm³ of a HCl solution for neutralisation. The titration reaction is described by the following balanced chemical equation: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ ",
+  "figureKey": "chemistry-2025-OL-scheme-q2d",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[5 + 2 + 2]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(0.05)(25) ÷ 1000 = 0.00125 (moles per 25 cm³)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prints (0.05)(25) over 1000 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.00125 × 2 = 0.0025",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(0.0025)(1000) ÷ 18 = 0.13 - 0.14 M",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prints (0.0025)(1000) over 18 as a fraction; ÷ stands for its bar."
+   }
+  ],
+  "notes": "The scheme prices the calculation [5 + 2 + 2] and prints two routes side by side: the one carded here, by moles, and one by the titration formula; its own print of both is shown with the answer. The scheme adds: [award 5 marks for formula/ implied if no other marks awarded]"
+ },
+ {
+  "id": "chem-2025-ol-q3-a-ii",
+  "topicId": "chem-u2",
+  "conceptId": "measuring-out-ten-cubic-centimetres-of-acid",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q3(a)(ii)",
+  "questionText": "Name a suitable piece of apparatus that could be used to measure out 10 cm³ of HCl.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "graduated cylinder",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q3-a-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "a-condition-kept-constant",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q3(a)(iii)",
+  "questionText": "State one reaction condition which was kept constant.",
+  "stem": "10 cm³ of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm³ of sodium thiosulfate (Na₂S₂O₃) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. The reaction observed in the flask is described by the following balanced chemical equation: Na₂S₂O₃(aq) + 2HCl(aq) → 2NaCl(aq) + SO₂(g) + S(s) + H₂O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na₂S₂O₃ was measured and the data recorded in the table below. All other reaction conditions were kept constant.",
+  "figureKey": "chemistry-2025-OL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "temperature / volume / container",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q7-b-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "balancing-the-potassium-water-equation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q7(b)(ii)",
+  "questionText": "Balance your equation from (i).",
+  "stem": "A tiny piece of potassium metal is added to water. The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2K + 2H₂O → 2KOH + H₂",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q8-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "structure-of-ethanol",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q8(a)(ii)",
+  "questionText": "Draw the structure of a molecule of ethanol, showing all the atoms and bonds.",
+  "figureKey": "chemistry-2025-OL-scheme-q8a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the structure of a molecule of ethanol, showing all the atoms and bonds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q8-b-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "ethanol-to-ethene-is-elimination",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q8(b)(ii)",
+  "questionText": "Classify this conversion of ethanol to ethene as an acid-base reaction, a substitution reaction or an elimination reaction.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "elimination",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q8-c-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "adding-chlorine-to-ethene",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q8(c)(ii)",
+  "questionText": "Identify compound Y, which is produced when Cl₂ is added to ethene.",
+  "stem": "The reaction scheme below shows some of the reactions of ethene. Addition reactions may be used to convert ethene to compound X and to compound Y.",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1,2 dichloroethane / C₂H₄Cl₂",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [allow dichloroethane]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-b-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "reducing-agent-in-zinc-and-copper-sulfate",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(b)(ii)",
+  "questionText": "Identify the reducing agent in the overall reaction.",
+  "stem": "When a piece of zinc metal is placed into a solution of copper(II) sulfate the redox reaction that occurs is described by the following balanced chemical half equations: Cu²⁺(aq) + 2e⁻ → Cu(s) Zn(s) → Zn²⁺(aq) + 2e⁻ The overall displacement reaction that occurs is described by the following equation: CuSO₄(aq) + Zn(s) → Cu(s) + ZnSO₄(aq)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Zn / Zinc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-b-iii",
+  "topicId": "chem-3-5",
+  "conceptId": "observation-when-zinc-meets-copper-sulfate",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(b)(iii)",
+  "questionText": "Describe one observation made when zinc reacts with copper(II) sulfate.",
+  "stem": "When a piece of zinc metal is placed into a solution of copper(II) sulfate the redox reaction that occurs is described by the following balanced chemical half equations: Cu²⁺(aq) + 2e⁻ → Cu(s) Zn(s) → Zn²⁺(aq) + 2e⁻ The overall displacement reaction that occurs is described by the following equation: CuSO₄(aq) + Zn(s) → Cu(s) + ZnSO₄(aq)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "copper / brown / black precipitate forms / blue colour of solution fades",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-b-iv",
+  "topicId": "chem-3-5",
+  "conceptId": "zinc-above-copper-in-the-electrochemical-series",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(b)(iv)",
+  "questionText": "Is zinc below or above copper in the electrochemical series? Give a reason for your answer.",
+  "stem": "When a piece of zinc metal is placed into a solution of copper(II) sulfate the redox reaction that occurs is described by the following balanced chemical half equations: Cu²⁺(aq) + 2e⁻ → Cu(s) Zn(s) → Zn²⁺(aq) + 2e⁻ The overall displacement reaction that occurs is described by the following equation: CuSO₄(aq) + Zn(s) → Cu(s) + ZnSO₄(aq)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "above",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "it displaces / reduces the copper",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-c-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "material-for-inert-electrodes",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(c)(ii)",
+  "questionText": "Suggest a suitable material that can be used as inert electrodes.",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
+  "figureKey": "chemistry-2025-OL-paper-q9c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "graphite / platinum",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-c-iii",
+  "topicId": "chem-3-5",
+  "conceptId": "why-acid-is-added-before-electrolysing-water",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(c)(iii)",
+  "questionText": "Why must a few drops of acid be added to the water before starting the electrolysis?",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
+  "figureKey": "chemistry-2025-OL-paper-q9c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "improve conductivity",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2025-ol-q9-c-v",
+  "topicId": "chem-3-5",
+  "conceptId": "gas-formed-at-the-negative-electrode",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2025 OL Q9(c)(v)",
+  "questionText": "Which of these gases is formed by reduction at the negative electrode?",
+  "stem": "Water can be split into its elements by electrolysis using inert electrodes. The electrolyte is water, acidified with a few drops of sulfuric acid. The electrodes are connected to the positive and negative terminals of a direct current power supply. When the circuit is switched on, bubbles of gas form at both electrodes. During the electrolysis the volume of gas collected at the negative electrode is twice the volume of the gas collected at the positive electrode.",
+  "figureKey": "chemistry-2025-OL-paper-q9c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "hydrogen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ]
  }

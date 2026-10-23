@@ -28,6 +28,51 @@
    "reason": "Duplicated Q11(d)B(i)-(iii) beside chem-2025-hl-q11-db-i-ii and -db-iii. Each part is now its own card; the apparatus figure is on every Q11(d)B card.",
    "drop": true,
    "replacementId": "chem-2025-hl-q11-db-i-ii"
+  },
+  "chem-2025-ol-q1-b-fig": {
+   "reason": "Duplicated chem-2025-ol-q1-b (the same Q1(b) parts, never built: the build keeps one card per citation). Q1(b)(i) is carded as chem-2025-ol-q1-b, (ii) as -q1-b-ii.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q1-b"
+  },
+  "chem-2025-ol-q2-b-fig": {
+   "reason": "Duplicated chem-2025-ol-q2-b (the same Q2(b) parts, never built). Q2(b)(i)-(iv) is one task, carded as chem-2025-ol-q2-b.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q2-b"
+  },
+  "chem-2025-ol-q6-c": {
+   "reason": "Duplicated chem-2025-ol-q6-c-fig (the same Q6(c) parts, never built). Q6(c)(i)-(ii) is carded as chem-2025-ol-q6-c-fig.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q6-c-fig"
+  },
+  "chem-2025-ol-q7-c-iii": {
+   "reason": "The scheme prices Q7(c)(i)-(iv) with one cell ([8 + 6 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q7-c-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q7-c-i-ii"
+  },
+  "chem-2025-ol-q7-c-iv": {
+   "reason": "The scheme prices Q7(c)(i)-(iv) with one cell ([8 + 6 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q7-c-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q7-c-i-ii"
+  },
+  "chem-2025-ol-q10-b-iv-v": {
+   "reason": "The scheme prices Q10(b)(i)-(v) with one cell ([9 + 3 + 3 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q10-b-i-iii.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q10-b-i-iii"
+  },
+  "chem-2025-ol-q10-c-iv-v": {
+   "reason": "The scheme prices Q10(c)(i)-(v) with one cell ([9 + 8 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q10-c-i-iii.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q10-c-i-iii"
+  },
+  "chem-2025-ol-q11-a-2": {
+   "reason": "The scheme prices all seven numbers of Q11(a) with one cell ([9 + 6 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q11-a-1.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q11-a-1"
+  },
+  "chem-2025-ol-q11-a-3": {
+   "reason": "The scheme prices all seven numbers of Q11(a) with one cell ([9 + 6 + 2 + 2 + 2 + 2 + 2]), so they are one task; carded once, as chem-2025-ol-q11-a-1.",
+   "drop": true,
+   "replacementId": "chem-2025-ol-q11-a-1"
   }
  },
  "biology": {

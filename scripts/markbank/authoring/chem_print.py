@@ -25,6 +25,7 @@ Nothing here types exam content.
     P.ask(('1', 'a', 'i', None))        # the paper's words for Q1(a)(i)
     P.items(('1', 'a', 'i', None))      # the scheme's answers, with their cells
 """
+import collections
 import json
 import os
 import re
@@ -176,6 +177,8 @@ TRAILING_MARK = re.compile(r'\s\((\d{1,2})\)$')
 CHOICE_AB = re.compile(r'Answer part A\s*or part B')
 LETTER_ALT = re.compile(r'^\(([a-l])\)\s*([AB])$')
 LEAD_MARKER = re.compile(r'^(\([a-l]\)|\((?:i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+(.+)$')
+# An alternative's letter set in the same run as its reprint: "A Identify ...".
+ALT_LEAD = re.compile(r'^([AB])\s+(\S.*)$')
 
 
 def _split_markers(lines):
@@ -259,13 +262,27 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
                      and m.text.strip('/ ')]
             if any(MARK_CELL.match(m.text) for m in row) and not words:
                 math_rows.add(id(l))
-    for l in lines:
+    queue = collections.deque(lines)
+    while queue:
+        l = queue.popleft()
         t = l.text
         if HEADER.match(t):
+            continue
+        ab = ALT_LEAD.match(t)
+        if ab and answers and q is not None and not l.bold and l.x0 < 100 and (
+                (q, letter) in alt_letters
+                or (ab.group(1) == 'A' and (q, chr(ord(letter or '`') + 1)) in alt_letters)):
+            # The 2024 schemes set an alternative's letter in the run of its
+            # reprint: "(l) A Identify three chemical species ...", "B Outline
+            # the contributions ...". Read as the marker, then the reprint.
+            queue.appendleft(Line(l.page, (l.x0 + 14, l.y0, l.x1, l.y1), ab.group(2), l.bold, l.math))
+            queue.appendleft(Line(l.page, (l.x0, l.y0, l.x0 + 10, l.y1), ab.group(1), l.bold, l.math))
             continue
         if not answers and t == 'Acknowledgements':
             break                    # the paper's back page: credits and copyright
         m = QNUM.match(t)
+        if m and q is not None and m.group(1) == q and l.x0 < 40:
+            continue        # the question's number again, heading a continuation page
         want = first_q if q is None else str(int(q) + 1)
         if m and l.x0 < 70 and m.group(1) == want \
                 and (not answers or not l.bold or l.x0 < 40):
@@ -313,6 +330,15 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
                 continue
             if rm:
                 roman = rm.group(1)
+                again = [sg for sg in segs if sg.key == (q, letter, roman, alt)] if answers else []
+                if again:
+                    # The 2024 Higher scheme reprints Q4(h)'s "(i) during water
+                    # treatment, (ii) during the tertiary stage ..." and then
+                    # labels each answer with its roman again: "(i)
+                    # flocculation (ii) to remove phosphates". A roman the
+                    # letter has already opened is that part's answer label.
+                    cur = again[0]
+                    continue
                 cur = Seg((q, letter, roman, alt), t)
                 segs.append(cur)
                 continue
@@ -331,7 +357,7 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
 
 # ── matching the paper's words to the scheme's reprint ──────────────────────
 _FOLD = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉', '01234567890123456789')
-_DASHES = str.maketrans('—–−⁻₋', '-----')
+_DASHES = str.maketrans('—–−⁻₋⁺', '-----+')
 
 
 def norm(t):
@@ -499,7 +525,15 @@ class Item:
         return [p for p in pts if p]
 
     def options(self):
-        """Every answer the scheme separates with //, across all its rows."""
+        """Every answer the scheme separates with //, across all its rows.
+
+        A menu the scheme marks "[any two]" and sets on one line with single
+        solidi and no "//" ("CH₄ / C₄H₁₀ / C₅H₁₂", 2025 OL Q6(b)(i)) lists its
+        options with the single solidus: there the solidus cannot mean
+        "equally acceptable wording of one answer", since the student is told
+        to give two of them."""
+        if '//' not in self.text and any(ANY.match(a) for a in self.asides):
+            return [o.strip() for o in self.text.split(' / ') if o.strip()]
         return [o.strip() for o in self.text.split('//') if o.strip()]
 
     def __repr__(self):
@@ -607,6 +641,8 @@ class Printed:
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
         self.scheme_lines = read_lines(self.scheme_path)
+        if figures:
+            self.scheme_lines = self._outside_scheme_art(self.scheme_lines)
         # The 2021-2025 schemes print their mark cells in round brackets,
         # "(3)", at the same right margin the 2026 schemes print "[3]" at.
         # Read there, and only there, they are the same cell.
@@ -654,6 +690,31 @@ class Printed:
             elif LETTER.match(l.text) or ROMAN.match(l.text) or PAPER_MARK.match(l.text) \
                     or (QNUM.match(l.text) and l.x0 < 70):
                 raise ValueError(f'a figure crop covers the marker {l.text!r} on page {l.page}')
+        return kept
+
+    def _outside_scheme_art(self, lines):
+        """The scheme's lines less those inside a drawing it answers with.
+
+        A drawn structure's atom symbols ("H", "C", "Cl") are text on the page,
+        and read as text they are label soup filed as an answer. Where the
+        sitting crops that drawing as the answer picture ('scheme-art') or marks
+        its region ('scheme-labels', chem_print_figures.CROPS), the lines inside
+        are the picture's. A mark cell or a part marker inside means the
+        rectangle is wrong, and stops the run."""
+        from chem_print_figures import CROPS
+        boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
+                 if src in ('scheme-art', 'scheme-labels')]
+        if not boxes:
+            return lines
+        kept = []
+        for l in lines:
+            inside = any(l.page == page and l.x0 >= r[0] - 1 and l.y0 >= r[1] - 1
+                         and l.x1 <= r[2] + 1 and l.y1 <= r[3] + 1 for page, r in boxes)
+            if not inside:
+                kept.append(l)
+            elif MARK_CELL.match(l.text) or ROUND_CELL.match(l.text) or LETTER.match(l.text) \
+                    or ROMAN.match(l.text) or (QNUM.match(l.text) and l.x0 < 70):
+                raise ValueError(f'a scheme drawing covers {l.text!r} on page {l.page}')
         return kept
 
     def rearranged(self, text, old, new):
@@ -951,9 +1012,12 @@ class Cards:
             if it.cell is None and display(it.text) in skip:
                 skipped.add(display(it.text))
                 continue
-            if it.cell is None and rows and re.fullmatch(r'\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\]', it.text):
+            if it.cell is None and rows and re.fullmatch(
+                    r'(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', it.text):
                 # A bracketed line under the last cell: the scheme's own
-                # aside, such as the whole balanced equation after its parts.
+                # aside, such as the whole balanced equation after its parts,
+                # or two of them on one line ("[award 3 marks if reversed]
+                # [allow 3 marks for condensation]").
                 rows[-1]['contextNote'] = tidy(rows[-1].get('contextNote', '') +
                                                ' The scheme adds: ' + it.text)
                 continue
@@ -971,7 +1035,7 @@ class Cards:
             raise Refused(f'{key}: nothing to skip for {sorted(set(skip) - skipped)}')
         return rows
 
-    def split(self, keys, fixes=None, notes=None, drawn=(), drop=(), criteria=()):
+    def split(self, keys, fixes=None, notes=None, drawn=(), drop=(), criteria=(), deep=False):
         """Points the scheme prices together ("[6+2+2+2]"): one null row each,
         a choice among them as one null anyN group. Returns (rows, cell).
 
@@ -984,14 +1048,15 @@ class Cards:
             if key in drawn:
                 its = self.P.items(key)
                 cells += [it.cell for it in its if it.cell]
-                said = [display(it.text) for it in its if it.text] + [a for it in its for a in it.asides]
+                said = [display(it.text) for it in its if it.text] + [display(a) for it in its
+                                                                      for a in it.asides]
                 ask = self.drawn_ask(key)
                 rows.append(point(f'r-{len(rows) + 1}', ask, None, ' '.join(x for x in [
                     f'The scheme answers ({key[2]}) with a drawing; its own print is shown with '
                     f'the answer.', ('It adds: ' + ' '.join(said)) if said else '',
                     notes.get(len(rows), '')] if x)))
                 continue
-            for it in self.P.items(key):
+            for it in self.P.items(key, deep=deep):
                 if it.cell:
                     cells.append(it.cell)
                 anyk = next((WORDS[ANY.match(a).group(1).lower()] for a in it.asides if ANY.match(a)), None)
@@ -1117,7 +1182,8 @@ class Cards:
         fixes = kw.pop('fixes', None)
         rows, cell = self.split([tuple(k) for k in keys], fixes,
                                 kw.pop('row_notes', None), drawn=kw.pop('drawn', ()),
-                                drop=kw.pop('drop', ()), criteria=kw.pop('criteria', ()))
+                                drop=kw.pop('drop', ()), criteria=kw.pop('criteria', ()),
+                                deep=kw.get('deep', False))
         self._fixes_applied(keys, fixes)
         note = (f'The scheme prices these points together as {cell} without saying which '
                 f'point earns which part, so no per-point value is shown.')
@@ -1188,6 +1254,45 @@ class Cards:
             _asides_note(asides)] if x)
         return self.add([key], topic, concept, [point('r-1', ask, total, note)], total=total,
                         figure=figure, **kw)
+
+    def drawn_with(self, keys, topic, concept, figure, **kw):
+        """A part the scheme answers with a DRAWING priced beside worded points
+        ("[3]" for the structure, "[3]" for "one C–Cl bond indicated ..."). Each
+        cell is a row: a cell with no words is the drawing, whose row is the
+        paper's ask; a cell with words is that point, as printed. The scheme's
+        drawing is the card's solution figure."""
+        key = tuple(keys[0])
+        fixes, notes = kw.pop('fixes', None) or {}, kw.pop('row_notes', None) or {}
+        rows = []
+        for it in self.P.items(key):
+            if it.cell is None:
+                if rows and re.fullmatch(r'(\s*\[[^\[\]]*\])+\s*', it.text):
+                    rows[-1]['contextNote'] = tidy(rows[-1].get('contextNote', '') +
+                                                   ' The scheme adds: ' + display(it.text))
+                    continue
+                if not it.text.strip() and it.asides:
+                    rows[-1]['contextNote'] = tidy(rows[-1].get('contextNote', '') + ' ' +
+                                                   _asides_note(it.asides))
+                    continue
+                raise Refused(f'{key}: "{it.text}" has no mark cell of its own')
+            if '+' in it.cell:
+                raise Refused(f'{key}: {it.cell} is a split, not a fixed point')
+            value = mark_value(it.cell)
+            extra = f'The scheme prices this point {it.cell}.' \
+                if value != mark_terms(it.cell)[0] else ''
+            if not it.text.strip():
+                note = ' '.join(x for x in [
+                    'The scheme answers this with a drawing; its own print is shown with the answer.',
+                    extra, _asides_note(it.asides), notes.get(len(rows), '')] if x)
+                rows.append(point(f'r-{len(rows) + 1}', self.drawn_ask(key), value, note))
+            else:
+                text, inline = self._verbatim(it.text, fixes, key)
+                note = ' '.join(x for x in [_asides_note(inline + it.asides), extra,
+                                            notes.get(len(rows), '')] if x)
+                rows.append(point(f'r-{len(rows) + 1}', text, value, note))
+        if not any(r['verbatim'] == self.drawn_ask(key) for r in rows):
+            raise Refused(f'{key}: no cell prices a drawing')
+        return self.add([key], topic, concept, rows, figure=figure, **kw)
 
     def lifted(self, rid, text, marks, note=''):
         """A row whose text the reader could not assemble on its own (a line

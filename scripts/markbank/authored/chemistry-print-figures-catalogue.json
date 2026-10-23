@@ -441,5 +441,115 @@
   "description": "The marking scheme's own answer to 2025 HL Q10(b)(iv), as the State Examinations Commission printed it: two acceptable intermediates separated by /: the carbocation CH2Cl–CH2+ with the positive charge on the second carbon, or the bridged chloronium ion, a three-membered ring of two CH2 carbons and a positively charged chlorine.",
   "questionRef": "2025 HL Q10(b)(iv)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pieces of apparatus side by side. Diagram 1: a round-bottomed flask holding the reaction mixture, standing in a beaker of hot water, with a long vertical condenser (labelled C) fitted on top. Diagram 2: a round-bottomed flask in a beaker of boiling water with a thermometer in a still head, leading to a sloping condenser (labelled C) that drains into a collecting flask.",
+  "questionRef": "2025 OL Q1(b)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q1e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two diamond-shaped hazard pictograms: the one headed NaOH shows liquid from two test tubes eating into a bar and a hand; the one headed Ethanol shows a flame.",
+  "questionRef": "2025 OL Q1(e)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A piece of glassware labelled P: a flat-bottomed flask with a long narrow neck, a stopper, a single etched mark on the neck, and 250 cm³ printed on its body.",
+  "questionRef": "2025 OL Q2(b)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two conical flasks standing on paper marked with a cross: in the first the cross is visible through the clear solution (cross visible initially); in the second the solution is cloudy and the cross is hidden (cross obscured after t seconds). Below, a table: concentration of Na₂S₂O₃ (M) 0, 0.02, 0.04, 0.06, 0.08, 0.1 against rate of reaction (1/minutes) 0, 0.4, 0.8, 1.2, 1.6, 2.0.",
+  "questionRef": "2025 OL Q3"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A test tube of Br₂ solution with a delivery tube dipping into it; an arrow labels the gas entering the tube as C₂H₂, and bubbles rise through the solution.",
+  "questionRef": "2025 OL Q6(c)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Apparatus for the electrolysis of water: a vessel of liquid with two inverted test tubes collecting gas over two electrodes, the electrodes wired to the positive (+) and negative (−) terminals of a battery. The tube over the positive electrode holds less gas than the tube over the negative one.",
+  "questionRef": "2025 OL Q9(c)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q10a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A flow chart of sewage treatment: sewage, then primary treatment, then secondary treatment, then tertiary treatment, then the sea, a river or a lake. An arrow labelled no sewage treatment runs straight from sewage to the sea, a river or a lake, and another arrow runs from secondary treatment directly to the sea, a river or a lake.",
+  "questionRef": "2025 OL Q10(a)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The list of seven elements printed above the passage: beryllium (Be), fluorine (F), gallium (Ga), hydrogen (H), lithium (Li), neon (Ne), selenium (Se).",
+  "questionRef": "2025 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q11d-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A simplified carbon cycle: boxes for carbon in fossil fuels, carbon in plants, carbon in animals, carbon in oceans and carbon in rock, linked by arrows to atmospheric carbon (CO₂) at the top. Fossil fuels, animals and rock send arrows up to the atmosphere; arrows run both ways between the atmosphere and plants; plants send an arrow to animals; the atmosphere sends an arrow down to the oceans, and the oceans to rock.",
+  "questionRef": "2025 OL Q11(d)A"
+ },
+ {
+  "file": "chemistry-2025-OL-scheme-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Q2(d), as the State Examinations Commission printed it: two routes side by side. Left, by the titration formula: M × 18.4 over 2 equals 25 × 0.05 over 1, giving 0.13 - 0.14 M. Right, by moles: (0.05)(25) over 1000 = 0.00125 (moles per 25 cm³); 0.00125 × 2 = 0.0025; (0.0025)(1000) over 18 = 0.13 - 0.14 M; with the mark (5 + 2 + 2).",
+  "questionRef": "2025 OL Q2(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-scheme-q6b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Q6(b)(iii), as the State Examinations Commission printed it: the full structural formula of propene, C₃H₆, with a CH₃ carbon bonded to a carbon that is double-bonded to a CH₂ carbon, every hydrogen drawn.",
+  "questionRef": "2025 OL Q6(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-scheme-q8a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Q8(a)(ii), as the State Examinations Commission printed it: the full structural formula of ethanol, two carbon atoms each with their hydrogens drawn, the second bonded to an O–H group.",
+  "questionRef": "2025 OL Q8(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-scheme-q11b-vi.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Q11(b)(vi), as the State Examinations Commission printed it: three accepted dot and cross diagrams separated by solidi — H–Cl with three lone pairs on chlorine; N≡N with a lone pair on each nitrogen; and [Na]⁺ beside [Cl]⁻ with eight electrons around the chloride ion.",
+  "questionRef": "2025 OL Q11(b)(vi)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-scheme-q11c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2025 OL Q11(c)(ii), as the State Examinations Commission printed it: (Kc) = [HI]² over [H₂][I₂], set as a fraction.",
+  "questionRef": "2025 OL Q11(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q11b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 11(b) as printed: 'Study the substances below and answer the questions that follow:', a table of three substances with their formula and bonding (sodium chloride, NaCl, ionic; hydrogen chloride, HCl, polar covalent; nitrogen, N₂, covalent), then parts (i) to (vi): identify the substance formed by the complete transfer of electrons, by equal sharing and by unequal sharing of pairs of electrons; the one most soluble in a non-polar solvent such as cyclohexane; the one highly soluble in water; and draw a dot and cross diagram of the valence shell electrons in any one of these substances. The mark (25) is printed at the right.",
+  "questionRef": "2025 OL Q11(b)"
  }
 ]

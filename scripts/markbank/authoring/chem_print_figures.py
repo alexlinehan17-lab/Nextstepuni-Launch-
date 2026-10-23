@@ -23,7 +23,9 @@ cannot slip a different picture under a published name.
 """
 import argparse
 import hashlib
+import json
 import os
+import re
 import sys
 
 import fitz
@@ -136,7 +138,11 @@ CROPS = {
         ('paper-q9c', 'paper', 10, (424, 303, 544, 478)),
         ('paper-q10a', 'paper', 11, (76, 102, 516, 216)),
         ('paper-q11a', 'paper', 12, (88, 137, 540, 172)),
-        ('paper-q11b', 'paper', 12, (80, 430, 544, 522)),
+        ('q11b-table', 'labels', 12, (80, 430, 544, 522)),
+        # Q11(b)(vi) is answered with a drawing, so the card's figure is the
+        # scheme's; the table the asks read from travels with the question's
+        # own print, which is the card's question picture.
+        ('paper-q11b-print', 'paper-panels', 12, ((52, 404, 545, 670),)),
         ('paper-q11d-a', 'paper', 14, (86, 105, 508, 296)),
         ('scheme-q2d', 'scheme', 7, (80, 641.5, 545, 713.5)),
         ('scheme-q6b-iii', 'scheme', 11, (105, 248, 210, 321)),
@@ -145,6 +151,29 @@ CROPS = {
         ('scheme-q11c-ii', 'scheme', 18, (105, 186, 180, 216)),
     ],
 }
+
+
+
+def _load_sitting_crops():
+    """Each sitting carded after 2025 keeps its rectangles in a file of its own,
+    chemistry/crops/<year>-<lvl>.json: a list of [suffix, source, page, rect],
+    where rect is [x0, y0, x1, y1], or a list of those for 'paper-panels'."""
+    folder = os.path.join(DIR, 'chemistry', 'crops')
+    if not os.path.isdir(folder):
+        return
+    for name in sorted(os.listdir(folder)):
+        m = re.match(r'^(\d{4})-(hl|ol)\.json$', name)
+        if not m:
+            continue
+        key = (int(m.group(1)), m.group(2))
+        if key in CROPS:
+            raise SystemExit(f'{name}: {key} is already in CROPS')
+        rows = json.load(open(os.path.join(folder, name)))
+        CROPS[key] = [(suf, src, page, tuple(tuple(r) for r in rect) if src == 'paper-panels'
+                       else tuple(rect)) for suf, src, page, rect in rows]
+
+
+_load_sitting_crops()
 
 
 MASKS = {
@@ -210,7 +239,7 @@ def main():
     os.makedirs(od, exist_ok=True)
     bad = 0
     for suffix, source, page, rect in crops:
-        if source == 'labels':
+        if source in ('labels', 'scheme-labels'):
             continue                 # a region read as a picture's, never published alone
         png = render(args.year, args.lvl, source, page, rect)
         dest = os.path.join(od, name(args.year, args.lvl, suffix))
