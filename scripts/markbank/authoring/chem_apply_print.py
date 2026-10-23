@@ -12,7 +12,8 @@ only places them, and records what it did:
   * a card whose id is already in the deck is replaced where it stands
     (corrected in place: the id, and so every student's progress on it, is
     kept);
-  * a new card is appended;
+  * a new card is appended (so is a pre-audit card the base build never
+    shipped, which the ledger records as added, `shipped: false`);
   * a pre-audit card the generator names in WITHDRAWN -- a duplicate, or a
     piece of a task the scheme prices as one -- stays in the deck untouched
     and is withdrawn at build time by a card-corrections.json "drop" naming
@@ -108,16 +109,23 @@ def plan(year, lvl):
     out += [c for c in cards if c['id'] not in placed]
 
     record = {}
+    shipped = base_built_ids()
     for c in cards:
         before = prior.get(c['id'])
         if before is None:
             record[c['id']] = {'status': 'added', 'after': digest(c)}
             continue
+        if c['id'] not in shipped:
+            # In the base's authored file but never built (the build kept
+            # another card with the same citation): no student can have
+            # progress on it, so to the preservation test it is an addition.
+            record[c['id']] = {'status': 'added', 'before': digest(before), 'after': digest(c),
+                               'shipped': False}
+            continue
         changed = [f for f in FIELDS if lean(before).get(f) != c.get(f)]
         record[c['id']] = {'status': 'corrected' if changed else 'unchanged',
                            'before': digest(before), 'after': digest(c),
                            **({'changed': changed} if changed else {})}
-    shipped = base_built_ids()
     for old, (new, reason) in withdrawn.items():
         # "shipped": whether the base build carried this card, so whether any
         # student can have progress on it. The preservation test restores
@@ -142,18 +150,32 @@ def base_built_ids():
     return ids
 
 
-def corrections_text(withdrawn):
+def no_longer_withdrawn(year, lvl, withdrawn):
+    """Ids this sitting's ledger last recorded as withdrawn that the generator
+    now emits again: their build-time drop and progress alias are stale."""
+    if not os.path.exists(LEDGER):
+        return set()
+    paper = json.load(open(LEDGER)).get('papers', {}).get(f'{year} {lvl.upper()}', {})
+    return {i for i, r in paper.items() if r['status'] == 'withdrawn'} - set(withdrawn)
+
+
+def corrections_text(withdrawn, stale=()):
     data = json.load(open(CORRECTIONS))
     chem = data.setdefault('chemistry', {})
+    for old in stale:
+        if chem.get(old, {}).get('drop'):
+            del chem[old]
     for old, (new, reason) in withdrawn.items():
         chem[old] = {'reason': reason, 'drop': True, 'replacementId': new}
     return json.dumps(data, ensure_ascii=False, indent=1) + '\n'
 
 
-def aliases_text(withdrawn):
+def aliases_text(withdrawn, stale=()):
     text = open(ALIASES).read()
+    lines = [l for l in text.split('\n')
+             if not any(l.startswith(f'  "{old}": ') for old in stale)]
+    text = '\n'.join(lines)
     have = dict(re.findall(r'^  "([^"]+)": "([^"]+)",$', text, re.M))
-    lines = text.split('\n')
     for old, (new, _reason) in sorted(withdrawn.items()):
         if old in have:
             if have[old] != new:
@@ -190,9 +212,10 @@ def main():
     out, record, withdrawn = plan(args.year, args.lvl)
     files = {DECK: json.dumps(out, ensure_ascii=False, indent=1),
              LEDGER: ledger_text(args.year, args.lvl, record)}
-    if withdrawn:
-        files[CORRECTIONS] = corrections_text(withdrawn)
-        files[ALIASES] = aliases_text(withdrawn)
+    stale = no_longer_withdrawn(args.year, args.lvl, withdrawn)
+    if withdrawn or stale:
+        files[CORRECTIONS] = corrections_text(withdrawn, stale)
+        files[ALIASES] = aliases_text(withdrawn, stale)
     counts = {s: sum(r['status'] == s for r in record.values())
               for s in ('added', 'corrected', 'unchanged', 'withdrawn')}
     if args.check:

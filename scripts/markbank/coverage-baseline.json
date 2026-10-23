@@ -120,8 +120,8 @@
     "refsHash": "4ad16765c129d1c4"
   },
   "chemistry": {
-    "cards": 1118,
-    "contentHash": "638e68c859f10205",
+    "cards": 1119,
+    "contentHash": "6d1bc104a97deef4",
     "coveragePct": 43.0,
     "covered": 1445,
     "excluded": 5,
@@ -132,7 +132,7 @@
       "count": 34,
       "hash": "a5df30dd2d14a50b"
     },
-    "refsHash": "ae86f751e6edbdf9"
+    "refsHash": "c7574f492a4bc4d1"
   },
   "classical-studies": {
     "cards": 516,

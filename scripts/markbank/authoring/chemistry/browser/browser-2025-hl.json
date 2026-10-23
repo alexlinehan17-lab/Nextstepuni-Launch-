@@ -70,6 +70,11 @@
  {
   "id": "chem-2025-hl-q10-c-i-mr",
   "ask": "An effervescent tablet contains 0.096 g of citric acid",
+  "answer": "0.0005 × 3 = 0.0015"
+ },
+ {
+  "id": "chem-2025-hl-q10-c-i-total",
+  "ask": "An effervescent tablet contains 0.096 g of citric acid",
   "answer": "0.0035 × 84 = 0.294"
  },
  {

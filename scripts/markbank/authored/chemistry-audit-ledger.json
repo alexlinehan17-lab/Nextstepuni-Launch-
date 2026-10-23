@@ -219,23 +219,22 @@
    "chem-2025-hl-q10-c-i-mr": {
     "status": "corrected",
     "before": "d0a43b8f383c905b",
-    "after": "1625094a6e68ece8",
+    "after": "594d7e81dc96fa39",
     "changed": [
      "conceptId",
      "section",
+     "questionRef",
      "stem",
      "questionText",
      "tariffModel",
-     "totalMarks",
      "rows",
      "notes"
     ]
    },
    "chem-2025-hl-q10-c-i-total": {
-    "status": "withdrawn",
+    "status": "added",
     "before": "3804090dadfc5039",
-    "replacementId": "chem-2025-hl-q10-c-i-mr",
-    "reason": "Q10(c)(i) is one part, priced as nine (2) points; the pre-audit deck split it into two cards with the same citation and the build kept only one. Carded once, as chem-2025-hl-q10-c-i-mr.",
+    "after": "6c28d8ac7d8cd193",
     "shipped": false
    },
    "chem-2025-hl-q10-c-ii": {

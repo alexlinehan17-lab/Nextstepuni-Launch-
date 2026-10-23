@@ -51,11 +51,6 @@ if not P.traceable(Q4_NOTE[13:-1]):
 
 # Pre-audit cards withdrawn, each with the card that now holds its parts.
 WITHDRAWN = {
-    'chem-2025-hl-q10-c-i-total': (
-        'chem-2025-hl-q10-c-i-mr',
-        'Q10(c)(i) is one part, priced as nine (2) points; the pre-audit deck split it into '
-        'two cards with the same citation and the build kept only one. Carded once, as '
-        'chem-2025-hl-q10-c-i-mr.'),
     'chem-2025-hl-q11-db-i-iii-fig': (
         'chem-2025-hl-q11-db-i-ii',
         'Duplicated Q11(d)B(i)-(iii) beside chem-2025-hl-q11-db-i-ii and -db-iii. Each part '
@@ -238,11 +233,27 @@ C.drawn([('10', 'b', 'iv', None)], 'chem-4-2', 'carbocation-intermediate-in-ioni
         S + 'q10b-iv')
 C.fixed([('10', 'b', 'v', None)], None, None)
 C.fixed([('10', 'b', 'vi', None)], None, None)
-C.fixed([('10', 'c', 'i', None)], 'chem-1-4', 'mass-of-sodium-hydrogencarbonate-for-two-acids',
-        cid='q10-c-i-mr',
-        fixes={'192 = 0.0005 (moles of C₆H₈O₇)': '0.096 ÷ 192 = 0.0005 (moles of C₆H₈O₇)',
-               '150 = 0.001 (moles of C₄H₆O₆)': '0.15 ÷ 150 = 0.001 (moles of C₄H₆O₆)'},
-        row_notes={3: FRACTION.format('0.096', '192'), 5: FRACTION.format('0.15', '150')})
+# Q10(c)(i) is one ask the scheme prices as nine (2) steps: more rows than a
+# card holds (five). The steps are carded in order on two cards that cite the
+# part with the steps they hold, keeping both pre-audit ids: -mr the first
+# five (the Mr values and the citric acid), -total the last four (the
+# tartaric acid and the total). The base build never shipped -total (its
+# citation collided with -mr's), so the ledger records it as an addition.
+_q10ci = C.points(('10', 'c', 'i', None),
+                  {'192 = 0.0005 (moles of C₆H₈O₇)': '0.096 ÷ 192 = 0.0005 (moles of C₆H₈O₇)',
+                   '150 = 0.001 (moles of C₄H₆O₆)': '0.15 ÷ 150 = 0.001 (moles of C₄H₆O₆)'},
+                  {3: FRACTION.format('0.096', '192'), 5: FRACTION.format('0.15', '150')})
+assert len(_q10ci) == 9 and all(r['marks'] == 2 for r in _q10ci), _q10ci
+for i, r in enumerate(_q10ci):
+    r['id'] = f'r-{i % 5 + 1}' if i < 5 else f'r-{i - 4}'
+_STEPS = ('The scheme prices Q10(c)(i) as nine steps of (2) marks each, 18 in all. '
+          'This card holds steps {}; steps {} are on the card for Q10(c)(i) — steps {}.')
+C.add([('10', 'c', 'i', None)], 'chem-1-4', 'mass-of-sodium-hydrogencarbonate-for-two-acids',
+      _q10ci[:5], cid='q10-c-i-mr', ref_suffix='steps 1–5',
+      notes=_STEPS.format('1–5', '6–9', '6–9'))
+C.add([('10', 'c', 'i', None)], 'chem-1-4', 'total-mass-of-sodium-hydrogencarbonate-required',
+      _q10ci[5:], cid='q10-c-i-total', ref_suffix='steps 6–9',
+      notes=_STEPS.format('6–9', '1–5', '1–5'))
 C.fixed([('10', 'c', 'ii', None)], None, None)
 C.fixed([('10', 'c', 'iii', None)], 'chem-1-4', 'number-of-water-molecules-produced')
 

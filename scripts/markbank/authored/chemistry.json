@@ -32562,13 +32562,13 @@
   "year": 2025,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2025 HL Q10(c)(i)",
+  "questionRef": "2025 HL Q10(c)(i) — steps 1–5",
   "questionText": "Calculate the total mass of NaHCO₃ required for complete reaction with the two acids in the effervescent tablet.",
   "stem": "Effervescent tablets typically contain a dry mixture of citric acid (C₆H₈O₇), tartaric acid (C₄H₆O₆) and sodium hydrogencarbonate (NaHCO₃). This mixture reacts when the tablet is placed in water, producing carbon dioxide gas, according to the following balanced chemical equations: C₆H₈O₇ + 3NaHCO₃ → Na₃C₆H₅O₇ + 3H₂O + 3CO₂ C₄H₆O₆ + 2NaHCO₃ → Na₂C₄H₄O₆ + 2H₂O + 2CO₂ An effervescent tablet contains 0.096 g of citric acid and 0.15 g of tartaric acid.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 18,
+  "totalMarks": 10,
   "rows": [
    {
     "id": "r-1",
@@ -32609,40 +32609,9 @@
     "marks": 2,
     "openList": true,
     "contextNote": ""
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "0.15 ÷ 150 = 0.001 (moles of C₄H₆O₆)",
-    "marks": 2,
-    "openList": true,
-    "contextNote": "The scheme prints 0.15 over 150 as a fraction; ÷ stands for its bar."
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "0.001 × 2 = 0.002 (moles of NaHCO₃)",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "0.0015 + 0.002 = 0.0035 (total moles of NaHCO₃)",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "0.0035 × 84 = 0.294 (g NaHCO₃)",
-    "marks": 2,
-    "openList": true,
-    "contextNote": ""
    }
-  ]
+  ],
+  "notes": "The scheme prices Q10(c)(i) as nine steps of (2) marks each, 18 in all. This card holds steps 1–5; steps 6–9 are on the card for Q10(c)(i) — steps 6–9."
  },
  {
   "id": "chem-2025-hl-q10-c-i-total",
@@ -32651,41 +32620,49 @@
   "level": "higher",
   "year": 2025,
   "subjectId": "chemistry",
-  "section": "A",
-  "questionRef": "2025 HL Q10(c)(i)",
-  "questionText": "Calculate the total mass of NaHCO3 required for complete reaction with the two acids in the effervescent tablet.",
+  "section": "B",
+  "questionRef": "2025 HL Q10(c)(i) — steps 6–9",
+  "questionText": "Calculate the total mass of NaHCO₃ required for complete reaction with the two acids in the effervescent tablet.",
+  "stem": "Effervescent tablets typically contain a dry mixture of citric acid (C₆H₈O₇), tartaric acid (C₄H₆O₆) and sodium hydrogencarbonate (NaHCO₃). This mixture reacts when the tablet is placed in water, producing carbon dioxide gas, according to the following balanced chemical equations: C₆H₈O₇ + 3NaHCO₃ → Na₃C₆H₅O₇ + 3H₂O + 3CO₂ C₄H₆O₆ + 2NaHCO₃ → Na₂C₄H₄O₆ + 2H₂O + 2CO₂ An effervescent tablet contains 0.096 g of citric acid and 0.15 g of tartaric acid.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "9 × 2 (final four)"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "0.001 (moles of C4H6O6)",
-    "marks": 2
+    "verbatim": "0.15 ÷ 150 = 0.001 (moles of C₄H₆O₆)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 0.15 over 150 as a fraction; ÷ stands for its bar."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "0.001 × 2 = 0.002 (moles of NaHCO3)",
-    "marks": 2
+    "verbatim": "0.001 × 2 = 0.002 (moles of NaHCO₃)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "0.0015 + 0.002 = 0.0035 (total moles of NaHCO3)",
-    "marks": 2
+    "verbatim": "0.0015 + 0.002 = 0.0035 (total moles of NaHCO₃)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "0.0035 × 84 = 0.294 (g NaHCO3)",
-    "marks": 2
+    "verbatim": "0.0035 × 84 = 0.294 (g NaHCO₃)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The paper prints the two balanced equations and the mass of each acid in the tablet in a lead-in above Q10(c)(i) which the block segmentation attaches to no part, so this card carries no stem. The tartaric-acid route and the total, split from the first five of the same nine two-mark steps."
+  "notes": "The scheme prices Q10(c)(i) as nine steps of (2) marks each, 18 in all. This card holds steps 6–9; steps 1–5 are on the card for Q10(c)(i) — steps 1–5."
  },
  {
   "id": "chem-2025-hl-q10-c-ii",

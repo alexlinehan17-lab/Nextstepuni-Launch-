@@ -796,11 +796,12 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_570);
-    // 19,328 + 243 - 1, the Chemistry audit: 125 + 78 new cards for the 2026
-    // Higher and Ordinary papers, 40 for 2025 Higher parts the pre-audit deck
-    // had joined or missed; one shipped 2025 Higher duplicate withdrawn and
-    // aliased (chemistry-audit-ledger.json).
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_571);
+    // 19,328 + 244 - 1, the Chemistry audit: 125 + 78 new cards for the 2026
+    // Higher and Ordinary papers, 41 for 2025 Higher parts the pre-audit deck
+    // had joined or missed (one of them, chem-2025-hl-q10-c-i-total, a
+    // pre-audit id the base build never shipped); one shipped 2025 Higher
+    // duplicate withdrawn and aliased (chemistry-audit-ledger.json).
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // ...and Physical Education 232 (133 Higher, 99 Ordinary), carded from
     // its written paper: 18,345 + 232.
@@ -814,8 +815,8 @@ describe('Mark Bank card preservation', () => {
 
   it('preserves every consolidated card identity through an explicit progress alias', () => {
     const liveIds = new Set(decks.flatMap(([, cards]) => cards.map(card => card.id)));
-    // 54, plus the Chemistry audit's withdrawals: two 2025 Higher duplicates.
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(56);
+    // 54, plus the Chemistry audit's withdrawal: one 2025 Higher duplicate.
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(55);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -860,9 +861,10 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:'))
       .reduce((total, [, cards]) => total + cards.length, 0);
-    // 9,768 + the Chemistry audit: 243 new ids (2026 Higher 125, 2026
-    // Ordinary 78, 2025 Higher 40) and two 2025 Higher ids moved from the deck
-    // to aliases, one of which the base build had never shipped (+1).
+    // 9,768 + the Chemistry audit: 244 new ids (2026 Higher 125, 2026
+    // Ordinary 78, 2025 Higher 41, one of them a pre-audit id the base build
+    // never shipped) and one shipped 2025 Higher id moved from the deck to
+    // its alias (net 0).
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(10_012);
   });
 
@@ -885,9 +887,9 @@ describe('Mark Bank card preservation', () => {
     // Every audited sitting's additions and withdrawals, pinned.
     expect(Object.keys(chemistryLedger.papers).sort()).toEqual(['2025 HL', '2026 HL', '2026 OL']);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added')])
-      .toEqual([125, 78, 40]);
+      .toEqual([125, 78, 41]);
     expect([count('2025 HL', 'corrected') + count('2025 HL', 'unchanged'),
-      count('2025 HL', 'withdrawn')]).toEqual([103, 2]);
+      count('2025 HL', 'withdrawn')]).toEqual([103, 1]);
     // Every id the ledger keeps or adds is live, under its sitting's prefix.
     for (const [paper, records] of Object.entries(chemistryLedger.papers)) {
       const [year, level] = paper.split(' ');

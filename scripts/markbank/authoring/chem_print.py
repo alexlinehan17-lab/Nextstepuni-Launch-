@@ -1061,7 +1061,8 @@ class Cards:
 
     # ── cards ────────────────────────────────────────────────────────────
     def add(self, keys, topic, concept, rows, *, kind='fixed', notation=None, total=None,
-            stem=None, notes='', figure='', deep=False, qtext=None, cid=None, label_key=None):
+            stem=None, notes='', figure='', deep=False, qtext=None, cid=None, label_key=None,
+            ref_suffix=None):
         keys = [tuple(k) for k in keys]
         if total is None:
             total = sum(r['marks'] for r in rows) if kind == 'fixed' and not any(
@@ -1080,8 +1081,13 @@ class Cards:
                 raise Refused(f'{full}: no pre-audit card to inherit a topic or concept from')
             topic = topic or before['topicId']
             concept = concept or before['conceptId']
+        # Two cards on one printed part -- a calculation whose steps outrun a
+        # card's rows -- each name the part and which of its steps they hold
+        # ("2025 HL Q10(c)(i) — steps 1–5"): the build keeps one card per
+        # citation, and the reconciler reads only what precedes the " — ".
+        ref = self.ref(keys) + (f' — {ref_suffix}' if ref_suffix else '')
         c = self._card(full, self.P.year, self.level, topic,
-                       concept, self.ref(keys), qtext or self.qtext(keys, deep=deep),
+                       concept, ref, qtext or self.qtext(keys, deep=deep),
                        notation or '', total, rows, notes, stem=stem,
                        tariff_kind=kind, section='A' if q <= 3 else 'B', figure_key=figure,
                        label_key=label_key)
