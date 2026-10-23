@@ -80,8 +80,10 @@ python3 scripts/markbank/authoring/geography_review_tools.py dump YEAR LEVEL OUT
 python3 scripts/markbank/authoring/geography_review_tools.py draft geography_review_YYYY_xx OUT.json   # from scripts/markbank/authoring
 python3 scripts/markbank/authoring/geography_review_tools.py show OUT.json
 # wire: import the ledger and add (YEAR, LEVEL) to REVIEWED, and the year to COMPANIONS, in geography_cards.py
+python3 scripts/markbank/authoring/geography_figures.py --write  # render bound crops (before the generator)
 python3 scripts/markbank/authoring/geography_cards.py            # write
 python3 scripts/markbank/authoring/geography_cards.py --check    # must say "current"
+python3 scripts/markbank/authoring/geography_refcheck.py         # citations against the printed paper
 (cd scripts/markbank/authoring && python3 cardlint.py geography && python3 reconcile.py geography && python3 reconcile.py geography --baseline write)
 cp paper-trail-corpus/markingschemes/YEAR/LC005{A|G}LP000EV.pdf examiner-reports/geography/schemes/YEAR-xx.pdf
 python3 scripts/markbank/extract-scheme.py examiner-reports/geography/schemes/YEAR-xx.pdf --marks-column -o examiner-reports/geography/schemes/YEAR-xx.md
@@ -143,21 +145,35 @@ selection audit and pool counts, `REVIEWED`, the single-booklet Atlas table, the
 ## Completed 23 October 2026: every English sitting, 2010–2026
 
 All 34 English (EV) sittings, 2010–2026 Higher and Ordinary, are reviewed and wired. Census: 3,869 separately
-priced base tasks, 3,862 carded, 7 held with span-level reasons; 4,146 cards; reconcile 0 orphans; cardlint
-clean; every card files under a Topic Atlas heading that covers its syllabus topic; all 754 shipped ids still
-resolve (preservation test). Irish (IV) editions stay deferred.
+priced base tasks, all 3,869 carded, none held; 4,153 cards; reconcile 3,869/3,869, 0 excluded, 0 open, 0 orphans,
+0 unparsed; every citation agrees with the printed paper (`geography_refcheck.py`, 4,153/4,153); every card files
+under a Topic Atlas heading that covers its syllabus topic; all 754 shipped ids still resolve (preservation test).
+Irish (IV) editions stay deferred.
 
 | Sitting | Tasks | Carded | Held | Cards | Companions |
 | --- | --- | --- | --- | --- | --- |
 | 2014 HL / OL | 103 / 111 | 103 / 111 | 0 / 0 | 110 / 125 | Dungarvan |
 | 2013 HL / OL | 104 / 95 | 104 / 95 | 0 / 0 | 111 / 102 | Enniscorthy (aerial stored on its side) |
 | 2012 HL / OL | 106 / 108 | 106 / 108 | 0 / 0 | 110 / 115 | Carrick-on-Shannon |
-| 2011 HL / OL | 96 / 119 | 94 / 116 | 2 / 3 | 99 / 130 | Dingle (no legend published) |
-| 2010 HL / OL | 99 / 102 | 99 / 101 | 0 / 1 | 106 / 113 | Carrick-on-Suir (JPEGs, names swapped) |
+| 2011 HL / OL | 96 / 119 | 96 / 119 | 0 / 0 | 101 / 133 | Dingle (no legend published) |
+| 2010 HL / OL | 99 / 102 | 99 / 102 | 0 / 0 | 106 / 114 | Carrick-on-Suir (JPEGs, names swapped) |
 
-Holds (7): 2011 HL Part One Q2(i) and Q2(iii), 2011 OL Part One Q11(i) and the 1A and 7A sketch maps (each needs a
-symbol meaning only the never-published 2011 legend gives); 2010 OL Part One Q4 (its answer is only the scheme's
-labelled drawing); 2020 OL 9C (27 of 30 marks published; re-examined, no other priced line).
+The seven parts once held are carded with only what the paper and scheme print (coordinator, 23 October):
+- 2011 HL Part One Q2(i), Q2(iii) and 2011 OL Part One Q11(i): the printed question, the official map plus a crop
+  of it around the grid reference asked about (`geography_figures.py`), the scheme's printed answers and marks, and
+  a note that the SEC published no 2011 legend, so the symbol's meaning is given in the marking scheme.
+- 2011 OL 1A and 7A sketches: the scheme's itemised sketch allocation, as 2011 OL 12A, with a note naming the
+  items the map shows only by symbols.
+- 2010 OL Part One Q4: the question is the paper's own print (a crop of the heading, instruction, the ruled row of
+  five terms and the diagram with its empty boxes, shown before the reveal as `questionFigure`); the question text
+  carries the term row lifted cell by cell (`Lift(table=True)`); each criterion carries its own printed scheme
+  label at 2 marks (the scheme's drawing is sliced into its two label columns); the scheme's labelled diagram is a
+  solution crop shown only after the reveal. Ways In gets the paper's crop, never the scheme's.
+- 2020 OL 9C: the scheme's two priced lines as printed are the criteria ("Impact identified 1 SRP 3m" in a 3-mark
+  SRP, "Explanation 8 SRP’s @ 3m each 24m" in 3-mark steps) against the printed total of 30. The 3 marks the scheme
+  allocates to no line stay unpriced (`Task.unpriced` in the ledger, `rubric.unpricedMarks: 3` on the card): never
+  derived, never redistributed, so the card places at most 27 of 30 and its note says so. (An earlier draft put a single 0-30
+  slider in 1-mark steps over all three lines, which let a student award marks the scheme never gives.)
 
 New shared-for-Geography machinery on this branch since the pause:
 - `geography_review.py`: drops a direction that only reprints the card's question (369 lines on 2017–2021
@@ -170,10 +186,51 @@ New shared-for-Geography machinery on this branch since the pause:
   Coherence table); cards carry identifying + coherence (32) and discussion (24 SRPs, 48), true under either.
 - The 2011 schemes' covers print "HIGHER/ORDINARY LEVEL" in capitals, which the shared `append-scheme-*.py` passes
   do not match (case-sensitive), so `2011-*.md` hold the base extraction only (Geography reads the .md for presence).
-- `coverage-baseline.json` exclusions grew 1 -> 7, each accepted with `--accept-regression` after the evidence
-  was re-read.
+- `coverage-baseline.json` exclusions grew 1 -> 7 during the run and are back to 0; the final baseline was
+  written without `--accept-regression`.
+- Card model (shared): `SecRubricCard` may carry a `figure` (the session screen already renders one and holds a
+  `solution` crop until the reveal) and a `questionFigure` (as `SecQuestionCard`: the paper's print, shown before
+  the reveal in place of the typeset stem); the Geography factory passes both and a factual `note` (shown first in
+  "How to use this guide"). Crops live in `public/exam-figures/geography/markbank/` (5 PNGs, MD5 on the card),
+  rendered by `geography_figures.py --write` and checked by it with no argument.
+- Card model (shared): `GeographyRubric.unpricedMarks` declares a printed remainder the scheme prices on no line;
+  `tariffReconciles` counts it (criteria + unpriced = printed total; unpriced a non-negative integer below the
+  total), so the bank-wide "marks reconcile against the printed tariff" check still catches any undeclared gap.
+  Only 2020 OL 9C uses it (pinned by a test).
+- `geography_review.py`: `Lift(table=True)` lifts a ruled table cell by cell; `Task.question_figure`; `Task.unpriced`
+  (a printed remainder the scheme allocates to no line; the build requires a note with it).
+- Three earlier cards asked about "the table below" with no table on the card (the rows were only criterion labels,
+  which appear after the reveal): 2017 OL Part One Q9 and 2020 HL Part One Q5(i), Q5(ii) now carry the official
+  question page, as their sibling questions do.
+- `cardlint.py geography` prints "clean" without reading a Geography card (it reads
+  `scripts/markbank/authored/geography.json`, which does not exist; the cards are
+  `components/MarkBank/cards/geography/authored.json`) — the same trap as English. Run over the real cards, the rules
+  flag 48: 46 "undecoded-letters" (lettered diagram questions; every one carries the official question page and its
+  scheme rows decode the letters — the rubric model, not a defect) and 2 "ghost-figure" false positives (2015 HL 5C,
+  2021 HL 6C print the table's five items as the card's first line).
+- `geography_refcheck.py` (new): the Geography census is built from the ledgers, so reconcile's zero orphans cannot
+  catch a wrong question number. This gate reads the paper: it finds each card's text on its cited page and checks
+  the nearest printed heading ("Question 7" + "A.", "9C.", "4.") against the citation, and the printed roman.
+- Ways In (shared): `components/WaysIn/sources.ts` no longer offers a `solution` figure as the question's figure.
+  This also stops 59 Economics and 2 Chemistry scheme-answer crops (tick tables, a p-orbital drawing) appearing
+  before the reveal in Ways In.
 
-Whole-branch checks at 99eaa387f (23 October): full `npm test` 6,225/6,226 (the one failure is the known
-`musicExamTopics` 30 s timeout under load; it passes alone, 21/21), `npm run build` and `npm run lint` pass.
+**Open finding — Topic Atlas, Part One of 2010–2019 (not changed here; needs a Paper Trail decision).** Before 2020 one
+booklet printed both parts, and Paper Trail and the Atlas know that booklet's questions only by their Part Two numbers
+(paper key `single`). A Part One question therefore has no Atlas identity of its own: its cards resolve to the Part Two
+question that shares its number. Measured over every card: the 3,504 cards with an Atlas question identity (2020–2026
+both parts, 2010–2019 Part Two) all file under every heading their review proves and are listed there; 649 cards from
+240 Part One questions of 2010–2019 (including 2010 OL Q4, 2011 HL Q2(i)/(iii) and 2011 OL Q11(i)) are in Mark Bank
+but not in the Topic Atlas as their own questions. Filing them needs Part One identities in Paper Trail (answer maps
+and question rows keyed apart from Part Two), which is shared infrastructure.
+
+Checks at the final commit (23 October): `geography_cards.py --check` current; `geography_figures.py` 5 crops current;
+cardlint rules over the real Geography cards (see above); `reconcile.py geography` 3,869/3,869, 0 excluded, 0 open,
+0 orphans, 0 unparsed, baseline written without `--accept-regression`; `geography_refcheck.py` 4,153/4,153; the
+14-file vitest chain 589/589 (includes the preservation test: frozen 754 ids by hash, 3,492 additions); typecheck,
+typecheck:test and `npm run lint` clean; Chrome phone (390) and desktop (1280) runs of 2011 HL Q2(i), 2011 OL Q11(i),
+1A, 2010 OL Q4, 2020 OL 9C and 2017 OL Q9 (no page errors, no horizontal overflow; the Q4 scheme drawing appears only
+after the reveal; 9C places 27 / 30). Full `npm test` and `npm run build` were last run by the previous session before
+these final changes (6,229/6,230, the known `musicExamTopics` timeout; build and lint passed).
 Nothing is merged, deployed or opened as a PR; the branch ships later as one step onto current main
 (regenerate `public/assets/landing/ask/topics.json` and `components/landing/subjectShowcase.json` after merging).
