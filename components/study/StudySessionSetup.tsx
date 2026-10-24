@@ -39,6 +39,9 @@ interface StudySessionSetupProps {
   onTodosChange?: (steps: PlanStep[]) => void;
   colourfulTimer?: boolean;
   onColourfulTimerChange?: (value: boolean) => void;
+  /** Quiz on what was studied once the session is saved (settings.studyQuiz). */
+  quizAtEnd?: boolean;
+  onQuizAtEndChange?: (value: boolean) => void;
   examDate?: string | null;
   topicIds?: string[];
   onTopics?: (ids: string[]) => void;
@@ -313,6 +316,25 @@ const StudySessionSetup: React.FC<StudySessionSetupProps> = (props) => {
                   onCheckedChange={props.onColourfulTimerChange}
                   aria-label="I want my timer to have more colour!"
                   aria-describedby={`${id}-appearance-help`}
+                />
+              </div>
+            )}
+            {props.onQuizAtEndChange && (
+              <div className="ks-appearance-choice">
+                <div>
+                  <label htmlFor={`${id}-quiz`}>Quiz me when I finish</label>
+                  <p id={`${id}-quiz-help`}>
+                    {props.quizAtEnd
+                      ? 'A few real exam questions on what you just studied, marked by you.'
+                      : 'Straight to your points when you log the session.'}
+                  </p>
+                </div>
+                <Switch
+                  id={`${id}-quiz`}
+                  checked={!!props.quizAtEnd}
+                  onCheckedChange={props.onQuizAtEndChange}
+                  aria-label="Quiz me when I finish"
+                  aria-describedby={`${id}-quiz-help`}
                 />
               </div>
             )}
