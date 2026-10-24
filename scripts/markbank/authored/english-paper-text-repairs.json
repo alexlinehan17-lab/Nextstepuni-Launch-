@@ -1,0 +1,29 @@
+[
+  {
+    "source": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+    "sha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+    "reason": "The PDF text layer splits words into overlapping fragments and drops numeric question markers. Question wording transcribed from rendered source pages; poem bodies remain only in the official PDF reader. Titles/bylines above the questions identify the source, not additional question wording.",
+    "reviewedAt": "2026-10-07",
+    "pages": {
+      "10": "UNSEEN POEM (20 marks)\nA Room in the Past — Ted Kooser\nAnswer any two of the following questions.\n1. Select a line or phrase from this poem that you find appealing. Explain why you found it to be so. (10)\nOR\n2. Look at the picture that accompanies this poem. Do you think it is a suitable picture to illustrate this poem? Explain your answer. (10)\nOR\n3. In your opinion, is this mainly a happy poem or mainly a sad poem? Explain your answer by reference to the poem. (10)",
+      "11": "A Lines 17 – 52 from A CHRISTMAS CHILDHOOD\nPatrick Kavanagh\n1. (a) From reading this poem, which one of Kavanagh’s memories did you find most striking? Explain your answer with reference to the poem. (10)",
+      "13": "B ALL DAY LONG\nNoel Monahan\n1. (a) What relationship between pupils and teachers is conveyed in this poem? Explain your answer with reference to the poem. (10)\n(b) What do you think the poet means when he says:\nYou never know\nWhen some disappear...?\nExplain your answer. (10)\n(c) From the phrases below, choose the one which, in your opinion, best captures the experience of school described in this poem;\n- School is a friendly place\n- School is a boring place\n- School is an organized place\n(10)",
+      "15": "C THE NET\nJulie O’Callaghan\n1. (a) Do you think the speaker in this poem is looking forward to her school reunion? Explain your answer with reference to the poem. (10)\n(b) In your opinion, what word or phrase best captures the speaker’s feelings in this poem? Explain your choice with reference to the poem. (10)\n(c) From the three phrases below, choose the one which, in your opinion, best describes this poem.\n- This is mostly a humorous poem\n- This is mostly an unhappy poem\n- This is mostly a serious poem\nExplain your choice with reference to the poem. (10)\n2. Answer ONE of the following: [Each part carries 20 marks]\n(i) Does the language used by the poet in this poem appeal to you? Explain your answer with reference to the poem.\nOR\n(ii) Think about the title of this poem (The Net) and answer the following questions.\n- What do you think the title means?\n- Suggest a different title for this poem. Explain your choice.\nOR\n(iii) Do you think The Net is a poem that appeals to young people? Give reasons for your answer based on your reading of this poem.",
+      "16": "D SPRING\nGerard Manley Hopkins\n1. (a) Choose the image from the first eight lines of the poem that, in your opinion, best captures the beauty of spring. Explain your answer. (10)\n(b) Do you think Hopkins creates a sense of prayer in the last six lines of the poem? Refer to the poem in support of your answer. (10)\n(c) From the phrases below, choose the one which, in your opinion, best describes this poem.\n- It is a joyful poem\n- It is a personal poem\n- It is a spiritual poem\nExplain your answer with reference to the poem. (10)\n2. Answer ONE of the following: [Each part carries 20 marks]\n(i) Write about two differences you notice between the first eight lines (octet) and the final six lines (sestet) of this poem. You should refer to the poem in your answer.\nOR\n(ii) In this poem Hopkins describes the beauty of spring. Write a piece in which you describe the beauty of a different season of the year.\nOR\n(iii) Write a piece explaining why you did, or did not enjoy studying the poetry of Hopkins on your course.\n(The other poem by Hopkins on the Ordinary Level course is Inversnaid)."
+    }
+  },
+  {
+    "source": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+    "sha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e",
+    "reason": "PDF p.7 visually verifies Emily Dickinson’s name; overlapping font runs extract its opening as Emi D ly ickinson. Repair only this exact fragment on this source page.",
+    "reviewedAt": "2026-10-07",
+    "pages": {},
+    "replacements": [
+      {
+        "page": 7,
+        "before": "Emi D ly ickinson",
+        "after": "Emily Dickinson"
+      }
+    ]
+  }
+]

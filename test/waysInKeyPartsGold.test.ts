@@ -17,6 +17,7 @@
 import { describe, expect, test } from 'vitest';
 import { buildKeyParts, type KeyPartsBreakdown } from '@/components/WaysIn/keyParts';
 import { waysInSourceFromMarkBank } from '@/components/WaysIn/sources';
+import { CARD_ID_ALIASES } from '@/components/MarkBank/cardAliases';
 import gold from './fixtures/waysInKeyPartsGold.json';
 
 interface GoldUnit { action?: string; count?: string; focus?: string; conditions?: string[]; use?: string[] }
@@ -63,13 +64,27 @@ function theirs(units: GoldUnit[], slot: Slot): Set<string> {
   return out;
 }
 
-const scored = (gold as GoldCard[]).filter(g => cards.has(g.id));
+/* A gold card may be a legacy card that a subject review split into its
+ * printed parts (English 2021-2025: english-legacy-bridge.json). Its ID is now
+ * a progress alias and its parts are the live cards `${id}-...`, each marked
+ * separately by the scheme. The teacher broke down the whole printed task, so
+ * it is scored against all of its parts together. */
+const partsOf = (id: string) => (id in CARD_ID_ALIASES
+  ? [...cards.entries()].filter(([cardId]) => cardId.startsWith(`${id}-`)).map(([, entry]) => entry)
+  : []);
+const scored = (gold as GoldCard[]).filter(g => cards.has(g.id) || partsOf(g.id).length > 0);
 const found = { tp: {} as Record<Slot, number>, fp: {} as Record<Slot, number>, fn: {} as Record<Slot, number> };
 for (const slot of SLOTS) { found.tp[slot] = 0; found.fp[slot] = 0; found.fn[slot] = 0; }
 let modeAgree = 0;
 for (const g of scored) {
-  const { card, subject } = cards.get(g.id)!;
-  const kp = buildKeyParts(waysInSourceFromMarkBank(card, subject));
+  const sources = cards.has(g.id) ? [cards.get(g.id)!] : partsOf(g.id);
+  const parts = sources.map(({ card, subject }) => buildKeyParts(waysInSourceFromMarkBank(card, subject)));
+  const kp: KeyPartsBreakdown = parts.length === 1 ? parts[0] : {
+    ...parts[0],
+    mode: parts.some(part => part.mode === 'decomposed') ? 'decomposed' : parts[0].mode,
+    units: parts.flatMap(part => part.units),
+    cardRules: parts.flatMap(part => part.cardRules),
+  };
   if (Boolean(g.notDecomposable) === (kp.mode !== 'decomposed')) modeAgree += 1;
   if (g.notDecomposable || !g.units) continue;
   for (const slot of SLOTS) {
