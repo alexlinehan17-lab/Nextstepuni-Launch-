@@ -139,7 +139,6 @@ C.fixed([k('6', 'a', 'ii')], 'chem-2-4', 'why-alkanes-are-saturated')
 # Q6(b): the scheme draws two accepted structures after the condensed formula,
 # separated by solidi; the formula is the row and its print the figure.
 C.fixed([k('6', 'b')], None, None, figure=S + 'q6b',
-        fixes={'CH₃C(CH₃)₂CH₃ / /': 'CH₃C(CH₃)₂CH₃'},
         row_notes={1: 'The scheme also accepts either of the two structures it draws beside the '
                       'formula, separated by solidi; its own print is shown with the answer.'})
 C.fixed([k('6', 'c')], None, None)

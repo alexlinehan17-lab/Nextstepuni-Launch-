@@ -7,6 +7,13 @@
  * read by the surviving canonical card and is never silently discarded.
  */
 export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
+  "chem-2022-hl-q10-b-shapes": "chem-2022-hl-q10-b-def",
+  "chem-2022-hl-q11-c-ii-iv-fig": "chem-2022-hl-q11-c-ii",
+  "chem-2022-hl-q2-b": "chem-2022-hl-q2-b-fig",
+  "chem-2022-hl-q5-c2": "chem-2022-hl-q5-c1",
+  "chem-2022-hl-q5-d": "chem-2022-hl-q5-d-i",
+  "chem-2022-hl-q8-b-iv": "chem-2022-hl-q8-b-ii",
+  "chem-2022-hl-q8-b-vi": "chem-2022-hl-q8-b-ii",
   "chem-2023-hl-q11-b-iv-vi": "chem-2023-hl-q11-b-fig",
   "chem-2023-hl-q11-c-v": "chem-2023-hl-q11-c-fig",
   "chem-2023-hl-q3-c-i": "chem-2023-hl-q3-c-fig",

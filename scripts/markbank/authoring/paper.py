@@ -210,8 +210,10 @@ def _next_marker(tok):
 # ask begins on it in lower case -- 2023 HL Chemistry sets "(vi)" alone and
 # then "(vii) are not involved in bonding?" on one line. A cross-reference
 # never opens a line: it sits inside a sentence ("at part (a) above").
+# The gap after the marker may be set in no-break spaces: 2022 HL Chemistry
+# prints "(iii)\xa0\xa0 sulfur (S)," and [ \t] lost Q10(c)(iii).
 LINE_OPENING_MARKER = re.compile(
-    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
+    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:\s*$|\s+(?=[a-z]))')
 
 
 def _split_own_line_markers(raw):

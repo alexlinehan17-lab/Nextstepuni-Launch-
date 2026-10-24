@@ -173,6 +173,41 @@
    "reason": "The scheme prices Q10(b)(i)-(vi) with one cell ((6 + 4 + [5 × 3])); carded once, as chem-2023-ol-q10-b-i-ii.",
    "drop": true,
    "replacementId": "chem-2023-ol-q10-b-i-ii"
+  },
+  "chem-2022-hl-q2-b": {
+   "reason": "Duplicated chem-2022-hl-q2-b-fig (both cited Q2(b)).",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q2-b-fig"
+  },
+  "chem-2022-hl-q5-c2": {
+   "reason": "Duplicated chem-2022-hl-q5-c1 (both cited parts of Q5(c)). Each part is now a card of its own; Q5(c)(i) is chem-2022-hl-q5-c1.",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q5-c1"
+  },
+  "chem-2022-hl-q5-d": {
+   "reason": "Duplicated chem-2022-hl-q5-d-i (both cited Q5(d)(i)).",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q5-d-i"
+  },
+  "chem-2022-hl-q10-b-shapes": {
+   "reason": "Duplicated chem-2022-hl-q10-b-def (both cited Q10(b)). Each part is now a card of its own; the letter's own asks are chem-2022-hl-q10-b-def.",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q10-b-def"
+  },
+  "chem-2022-hl-q11-c-ii-iv-fig": {
+   "reason": "Held Q11(c)(ii)-(iv), which the scheme prices with a cell each; carded as their own cards, Q11(c)(ii) first.",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q11-c-ii"
+  },
+  "chem-2022-hl-q8-b-iv": {
+   "reason": "The scheme prices Q8(b)(ii)-(vii) with one cell ([(2 × 6) + (4 × 3) + 2]), so they are one task; carded once, as chem-2022-hl-q8-b-ii.",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q8-b-ii"
+  },
+  "chem-2022-hl-q8-b-vi": {
+   "reason": "The scheme prices Q8(b)(ii)-(vii) with one cell ([(2 × 6) + (4 × 3) + 2]); carded once, as chem-2022-hl-q8-b-ii.",
+   "drop": true,
+   "replacementId": "chem-2022-hl-q8-b-ii"
   }
  },
  "biology": {

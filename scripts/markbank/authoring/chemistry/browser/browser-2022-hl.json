@@ -1,0 +1,16 @@
+[
+ {"id": "chem-2022-hl-q1-d", "ask": "Describe the correct procedure for preparing a burette", "answer": "clamp vertically"},
+ {"id": "chem-2022-hl-q1-e-iv", "ask": "the total hardness removed by the deioniser", "answer": "368 – 370 p.p.m.", "solution": true},
+ {"id": "chem-2022-hl-q2-a-draw", "ask": "Draw a labelled diagram of a suitable arrangement", "answer": "collection ethene over water shown", "solution": true},
+ {"id": "chem-2022-hl-q2-c-i-fig", "ask": "Identify the substance(s) collected at locations X, Y and Z.", "answer": "Y: benzoic acid", "figure": true},
+ {"id": "chem-2022-hl-q3-c-iii", "ask": "the instantaneous rate of the reaction at 4.0 minutes", "answer": "good tangent drawn", "solution": true},
+ {"id": "chem-2022-hl-q5-d-ii", "ask": "Copy and complete the following nuclear equation", "answer": "completed nuclear equation", "solution": true},
+ {"id": "chem-2022-hl-q6-b-iii", "ask": "assigned an octane number of 100.", "answer": "2,2,4-trimethylpentane", "solution": true},
+ {"id": "chem-2022-hl-q7-b-ii", "ask": "Calculate the value of Kc under the conditions described above", "answer": "0.148 (4/27)", "solution": true},
+ {"id": "chem-2022-hl-q8-b-ii", "ask": "Give the systematic IUPAC name for E.", "answer": "methyl ethanoate (CH₃COOCH₃)"},
+ {"id": "chem-2022-hl-q9-d-ii", "ask": "Deduce the molar concentrations of solutions A, B, C and D.", "answer": "B: 0.5 M", "figure": true},
+ {"id": "chem-2022-hl-q10-a-i-ii", "ask": "What is meant by the term ideal gas?", "answer": "obeys kinetic theory assumptions perfectly"},
+ {"id": "chem-2022-hl-q10-c-iv", "ask": "what is the empirical formula of X", "answer": "Divide C : H : N : O : S ratio", "solution": true},
+ {"id": "chem-2022-hl-q11-c-iii", "ask": "By how much does catalyst C lower the value of Ea", "answer": "40 kJ mol⁻¹", "figure": true},
+ {"id": "chem-2022-hl-q11-d-b-v-vi", "ask": "Write balanced half‐equations for the reactions", "answer": "Pb²⁺ + 2e⁻ → Pb", "figure": true}
+]

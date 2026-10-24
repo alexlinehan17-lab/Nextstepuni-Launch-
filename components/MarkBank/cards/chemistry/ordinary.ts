@@ -1282,7 +1282,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the relationship between the pressure and volume of a fixed mass of gas at constant temperature according to Boyle’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "product of pressure and volume constant (pV constant, p₁V₁ = p₂V₂) / pressure inversely proportional to volume (p ∝ 1/V) / volume inversely proportional to pressure (V ∝ 1/p) /", marks: 6, contextNote: "The scheme adds: [Accept indirectly proportional]", openList: true },
+    { id: "r-1", kind: "point", verbatim: "product of pressure and volume constant (pV constant, p₁V₁ = p₂V₂) / pressure inversely proportional to volume (p ∝ 1/V) / volume inversely proportional to pressure (V ∝ 1/p)", marks: 6, contextNote: "The scheme adds: [Accept indirectly proportional]", openList: true },
     ],
   } as SecCard,
   {
@@ -8623,7 +8623,7 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "yellow (orange)", marks: 3, contextNote: "The scheme prices these points [2 × 3], one each.", openList: true },
-    { id: "r-2", kind: "point", verbatim: "to pink (red, peach)", marks: 3, contextNote: "The scheme adds: [If there is no response for (i) marks can be awarded for correct colours in (ii).] The scheme adds: [6 Marks may be given for correct colours for a named unsuitable indicator, e.g. litmus, blue to red.] [Allow (3) for correct colours reversed (and matching a named indicator where one is named.)]", openList: true },
+    { id: "r-2", kind: "point", verbatim: "to pink (red, peach)", marks: 3, contextNote: "The scheme adds: [If there is no response for (i) marks can be awarded for correct colours in (ii).] [6 Marks may be given for correct colours for a named unsuitable indicator, e.g. litmus, blue to red.] [Allow (3) for correct colours reversed (and matching a named indicator where one is named.)] [(9) marks only available for correct indicator linked to correct colours in correct order.]", openList: true },
     ],
     figure: {
           "candId": "chemistry-2023-OL-paper-p03-i0",

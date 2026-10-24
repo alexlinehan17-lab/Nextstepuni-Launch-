@@ -200,7 +200,11 @@ def render(year, lvl, source, page, rect):
         # then the one ask the card is for, without the sibling asks between.
         import io
         from PIL import Image
-        ims = [Image.open(io.BytesIO(pg.get_pixmap(dpi=DPI, clip=fitz.Rect(*r)).tobytes('png')))
+        # A region given as five numbers names its own page first: a scheme's
+        # working that runs over a page break (2022 HL Q7(b)(ii)).
+        ims = [Image.open(io.BytesIO(
+            (doc[int(r[0]) - 1] if len(r) == 5 else pg).get_pixmap(
+                dpi=DPI, clip=fitz.Rect(*(r[1:] if len(r) == 5 else r))).tobytes('png')))
                for r in rect]
         out = Image.new('RGB', (max(i.width for i in ims), sum(i.height for i in ims)
                                 + PANEL_GAP * (len(ims) - 1)), 'white')

@@ -44,8 +44,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 PAPERS = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'papers')
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'schemes')
 
+# The 2021-2022 schemes set their footer as three runs: "Higher Level",
+# "Chemistry 2022", "Page 5".
 FOOTER = re.compile(r'^(Leaving Certificate( Examination)?,? 20\d\d|Chemistry\s*[–-]\s*(Higher|Ordinary) Level'
-                    r'|Marking Scheme|\d{1,2})\s*$')
+                    r'|Marking Scheme|\d{1,2}|Page \d{1,2}|(Higher|Ordinary) Level|Chemistry 20\d\d)\s*$')
 # A mark cell at the scheme's right margin: "[2]", "[5+2]", "[6+2+2+2]", "[3×1 + 3]".
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
 # The 2023 Ordinary scheme sets the run in square brackets inside a round cell,
@@ -289,6 +291,12 @@ LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
 FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)\s*BALANCING:\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
+# The rest of a cue the scheme wraps onto the rows below it, in the cue column
+# ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
+CUE_TAIL = re.compile(r"&|(?:&\s*)?[A-Z]{2,}(?:\s+(?:&|[A-Z]{2,}))*")
+# A cell the scheme labels with the number of parts it prices: "TWO PARTS :
+# (2 × 2)" (2022 HL Q11(c)(i)).
+PARTS_CELL = re.compile(r'^(TWO|THREE|FOUR)\s+PARTS\s*:\s*(\(.+\))\s*$')
 # A cell set between two answers on one row: "(3)" followed by more text.
 MID_ROUND = re.compile(r'\s\((\d{1,2}(?:\s*[×x]\s*\d{1,2})?)\)\s+(?=\S)')
 
@@ -330,6 +338,11 @@ def cue_lines(lines):
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
                             '[' + m.group(2).strip()[1:-1] + ']', True))
             continue
+        m = PARTS_CELL.match(t)
+        if m and l.x0 > 350:
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1), as_cell(m.group(2)), True))
+            continue
         m = FORMULAE_CELL.match(t)
         if m and l.x0 > 350:
             # An equation priced in two parts: "FORMULAE: (3) BALANCING: (3)".
@@ -354,6 +367,8 @@ def cue_lines(lines):
             if l.x0 < 350:
                 zones.append((l.page, l.y0, l.x1))     # a cell mid-row: what follows is a new row
             continue
+        if l.x0 < 132 and CUE_TAIL.fullmatch(t.strip()):
+            continue                 # a cue wrapped in its column: "SKETCH: (i)" / "& LABEL" / "ON GRAPH"
         x = l.x0
         y0, y1 = shifted(l)
         while True:
@@ -746,6 +761,12 @@ class Item:
         pts, cur = [], []
         for r in self.rows:
             if not r.text:
+                if r.asides and cur:
+                    # An aside on a row of its own closes the point above it
+                    # ("[Deduct 1 for brackets not square.]" between pH and Kw,
+                    # 2022 HL Q9(a)).
+                    pts.append(tidy(' '.join(cur)).rstrip('/ ').strip())
+                    cur = []
                 continue
             if not cur and pts and re.fullmatch(r'\([^()]*\)', r.text):
                 # "(only)" on a row of its own qualifies the point above it.
@@ -800,8 +821,32 @@ class Item:
         return f'<Item {self.text!r} {self.cell} {self.asides}>'
 
 
+def _wrapped_asides(rows):
+    """An aside the scheme sets on rows of its own and wraps ("[SKETCH marks
+    are available if (d) (i) sketch is not on the graph in part (c) but labels"
+    / "essential.]", 2022 HL Q3(d)(i)) is one aside: its rows are joined and,
+    when the brackets close, carried as the row's aside rather than its words."""
+    out, i = [], 0
+    while i < len(rows):
+        r = rows[i]
+        t = r.text.strip()
+        if t.startswith('[') and t.count('[') > t.count(']') and not r.cell:
+            j, text = i, t
+            while text.count('[') > text.count(']') and j + 1 < len(rows) \
+                    and not rows[j + 1].cell and j - i < 4:
+                j += 1
+                text = tidy(text + ' ' + rows[j].text)
+            if text.count('[') == text.count(']') and re.fullmatch(r'(\s*\[[^\[\]]*\]\.?)+\s*', text):
+                out.append(PRow('', None, r.asides + [text], r.x1, r.page, r.y))
+                i = j + 1
+                continue
+        out.append(r)
+        i += 1
+    return out
+
+
 def items_of(lines):
-    rows, out, cur, asides = prows(lines), [], [], []
+    rows, out, cur, asides = _wrapped_asides(prows(lines)), [], [], []
     # "or" alone on a row between an alternative's last answer and the next
     # alternative is a separator, not an answer. Inside one answer -- two
     # wordings priced by the one cell below them, 2023 OL Q11(d)A(vi) -- it
@@ -889,7 +934,15 @@ def learn_repairs(texts):
         REPAIR[c] = r
 
 
+# Two Symbol-font characters the shared glyph map does not carry, read by the
+# font's own encoding (0xDE arrowdblright, 0xB4 multiply): the 2021-2022
+# schemes print "⇒" in Symbol and the 2022 paper "(2 × 25)" in SymbolMT, and
+# every one of them in the Chemistry corpus comes from those two fonts.
+SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×'}
+
+
 def display(t):
+    t = ''.join(SYMBOL_FONT.get(c, c) for c in t)
     t = ''.join(REPAIR.get(c, c) for c in t)
     t = ''.join(unicodedata.normalize('NFKD', c) if 0x1D400 <= ord(c) <= 0x1D7FF else c for c in t)
     # The equation font spaces a decimal point from its digits: "26. 55".
@@ -1191,8 +1244,10 @@ def prior_card(cid):
 _LETTER_SCRIPTS = str.maketrans('ₙⁿₘᵐₓˣ', 'nnmmxx')
 # An examiner's aside is wording ("[do not accept clear]", "[state/imply]"); a
 # concentration term is not ("[PCl₃]", "[NOBr]"): it has no run of three
-# lower-case letters.
-INLINE_ASIDE = re.compile(r'\s*(\[[^\]]*[a-z]{3}[^\]]*\])')
+# lower-case letters. Nor is a bracket set hard against the symbol before it:
+# "pH = –log√Ka[acid]" (2022 HL Q9(d)(iii)) is a concentration, whatever its
+# letters; an aside follows a space or opens the text.
+INLINE_ASIDE = re.compile(r'(?:(?<=\s)|(?<=^)|(?<=[.;:,)]))\s*(\[[^\]]*[a-z]{3}[^\]]*\])')
 ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 
 
@@ -1350,7 +1405,7 @@ class Cards:
             raise Refused(f'{where}: "{text}" is not in the {self.P.year} {self.P.lvl} scheme')
         return text, notes
 
-    def points(self, key, fixes=None, notes=None, deep=False, skip=(), each=False):
+    def points(self, key, fixes=None, notes=None, deep=False, skip=(), each=False, tail=False):
         """One fixed row per mark cell, worth what the cell prints. An item in
         `skip` is a line the scheme sets among the answers that answers
         nothing -- a reprint of the paper's next equation -- and is left out.
@@ -1363,13 +1418,22 @@ class Cards:
                 skipped.add(display(it.text))
                 continue
             if it.cell is None and rows and re.fullmatch(
-                    r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', it.text):
+                    r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\]\.?)+\s*', it.text):
                 # A bracketed line under the last cell: the scheme's own
                 # aside, such as the whole balanced equation after its parts,
                 # or two of them on one line ("[award 3 marks if reversed]
                 # [allow 3 marks for condensation]").
                 rows[-1]['contextNote'] = tidy(rows[-1].get('contextNote', '') +
                                                ' The scheme adds: ' + it.text)
+                continue
+            if it.cell is None and rows and tail:
+                # An examiner's instruction set as prose after the last cell
+                # ("Where 6 marks not awarded above 5 marks may be awarded any
+                # one of the following. ...", 2022 HL Q4(c)): it rides on the
+                # row above, quoted.
+                rows[-1]['contextNote'] = tidy(' '.join(x for x in [
+                    rows[-1].get('contextNote', ''), _asides_note(it.asides),
+                    'The scheme adds: "' + display(it.text).lstrip('/ ') + '"'] if x))
                 continue
             if it.cell is None:
                 raise Refused(f'{key}: "{it.text}" has no mark cell of its own')
@@ -1392,7 +1456,9 @@ class Cards:
                         notes.get(len(rows), '')] if x)
                     rows.append(point(f'r-{len(rows) + 1}', text, terms[j], note))
                 continue
-            text, inline = self._verbatim(it.text, fixes, key)
+            # A trailing solidus offers an alternative the scheme never printed
+            # ("higher yield methanol / more methanol /", 2022 HL Q7(d)(ii)).
+            text, inline = self._verbatim(re.sub(r'(\s*/)+\s*$', '', it.text), fixes, key)
             note = ' '.join(x for x in [_asides_note(inline + it.asides),
                                         f'The scheme prices this point {it.cell}.'
                                         if mark_value(it.cell) != mark_terms(it.cell)[0] else '',
@@ -1499,7 +1565,7 @@ class Cards:
         fixes = fixes or {}
         its = self.P.items(key)
         trailing = [x for x in its[1:] if x.cell is None and re.fullmatch(
-            r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', x.text)]
+            r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\]\.?)+\s*', x.text)]
         if len(its) - len(trailing) != 1:
             raise Refused(f'{key}: {len(its)} items where one menu was expected')
         it = its[0]
@@ -1566,10 +1632,11 @@ class Cards:
         # In the labelled schemes "[2 × 3]" closes two "//"-separated points, one
         # each: read them as two rows of 3 unless told otherwise.
         skip, each = kw.pop('skip', ()), kw.pop('each', self.P.cue)
+        tail = kw.pop('tail', False)
         rows = []
         self._fixes_used = set()
         for k in keys:
-            rows += self.points(tuple(k), fixes, notes, deep=deep, skip=skip, each=each)
+            rows += self.points(tuple(k), fixes, notes, deep=deep, skip=skip, each=each, tail=tail)
         self._fixes_applied(keys, fixes)
         for i, r in enumerate(rows):
             r['id'] = f'r-{i + 1}'
