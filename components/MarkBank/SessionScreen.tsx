@@ -72,6 +72,8 @@ import WaysInPanel, {
 import SourceMaterialReader from './SourceMaterialReader';
 import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
 import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
+import GeographyAllocationPanel from './GeographyAllocationPanel';
+import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
   appliedMathematicsMarks,
@@ -317,7 +319,7 @@ export type PclmScoreId =
 export type PclmScores = Partial<Record<PclmScoreId, number>>;
 export type IrishScoreId = `irish:${string}`;
 export type ArtScoreId = `art:${string}`;
-export type GeographyScoreId = `geography:${string}`;
+export type { GeographyScoreId } from './geographyScoring';
 export type RubricScoreId = PclmScoreId | IrishScoreId | ArtScoreId | GeographyScoreId | PoliticsScoreId | PhysicalEducationScoreId | AppliedMathematicsScoreId | typeof accountingScoreId | FrenchScoreId | BusinessScoreId;
 export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
@@ -478,17 +480,9 @@ export function artMarks(card: SecRubricCard, scores: RubricScores): number {
   return Math.max(0, Math.min(card.totalMarks, total));
 }
 
-export const geographyScoreId = (criterionId: string) =>
-  `geography:${criterionId}` as const;
-
-/** Geography allocations are placed once; indicative SRPs are never tick rows. */
-export function geographyMarks(card: SecRubricCard, scores: RubricScores): number {
-  if (card.rubric.system !== 'geography') return 0;
-  const total = card.rubric.criteria.reduce(
-    (sum, criterion) => sum + (scores[geographyScoreId(criterion.id)] ?? 0), 0,
-  );
-  return Math.max(0, Math.min(card.totalMarks, total));
-}
+/** Geography: row-by-row where the scheme is cut into rows, one placement
+ *  otherwise. Indicative SRPs are counted, never ticked. */
+export { geographyMarks, geographyScoreId } from './geographyScoring';
 
 export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system === 'physical-education') return physicalEducationMarks(card, scores);
@@ -1624,6 +1618,7 @@ const GeographyRubricPanel: React.FC<{
 }> = ({ card, scores, requirementChecks, onScore, onRequirement }) => {
   const { rubric } = card;
   const total = geographyMarks(card, scores);
+  const structured = rubric.criteria.some(criterion => criterion.allocation);
 
   const scoreControl = (criterion: GeographyCriterion) => {
     const id = geographyScoreId(criterion.id);
@@ -1728,7 +1723,7 @@ const GeographyRubricPanel: React.FC<{
         SEC Geography marking scheme
       </span>
       <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
-        Place your response on the published allocation.
+        {structured ? 'Claim each answer you had, as the scheme prices it.' : 'Place your response on the published allocation.'}
       </p>
       <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
         {rubric.srpMarks
@@ -1745,14 +1740,26 @@ const GeographyRubricPanel: React.FC<{
                 {criterion.guidanceKind === 'srp' ? 'SRP allocation' : 'Exact allocation'} · / {criterion.maxMarks}
               </span>
             </div>
-            <div style={{ display: 'grid', gap: 6, margin: '8px 0 11px' }}>
-              {criterion.guidance.map((note, index) => (
-                <p key={`${criterion.id}-${index}`} style={{ margin: 0, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
-                  {note}
-                </p>
-              ))}
-            </div>
-            {scoreControl(criterion)}
+            {criterion.allocation ? (
+              <div style={{ marginTop: 10 }}>
+                <GeographyAllocationPanel
+                  criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
+                  scores={scores}
+                  onScore={onScore}
+                />
+              </div>
+            ) : (
+              <>
+                <div style={{ display: 'grid', gap: 6, margin: '8px 0 11px' }}>
+                  {criterion.guidance.map((note, index) => (
+                    <p key={`${criterion.id}-${index}`} style={{ margin: 0, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                      {note}
+                    </p>
+                  ))}
+                </div>
+                {scoreControl(criterion)}
+              </>
+            )}
           </section>
         ))}
       </div>

@@ -726,14 +726,77 @@ export type GeographyGuidanceKind =
  * explicit prevents the scheme's non-exhaustive examples becoming a fabricated
  * checklist while still letting a student place their work on the real tariff.
  */
+/**
+ * One claimable answer on a Geography card: a slice of a scheme line and the
+ * marks the scheme prints beside it.
+ */
+export interface GeographyAnswerRow {
+  id: string;
+  /** The printed answer, or the scheme's tariff wording when it prints none. */
+  text: string;
+  marks: number;
+  /** The values a student may claim when the scheme splits the row
+   *  ("2 + 2 marks", "4m graded (4/2/0)"). Omitted means all or nothing. */
+  steps?: number[];
+  /** The scheme prices the answer without printing one ("Tectonic plate
+   *  named 3m"). The row shows the scheme's words and says any correct answer
+   *  scores; it never carries an example the scheme did not print. */
+  tariffOnly?: boolean;
+}
+
+/** A Significant Relevant Point allocation: how many the scheme counts, at
+ *  what value each. Rendered as a counter, never as a list to tick. */
+export interface GeographySrpAllocation {
+  id: string;
+  /** The scheme's label for the part ("Description/Explanation"), or ''. */
+  label: string;
+  /** The most SRPs this part can earn. */
+  count: number;
+  marks: number;
+  /** Set when the scheme prints a range ("6/7 x SRP's"): this part and its
+   *  siblings share `GeographyAllocation.srpPool`, which caps their sum. */
+  min?: number;
+}
+
+/** The rows and SRP counts under one printed sub-question. */
+export interface GeographyAllocationGroup {
+  /** The paper's label, "(i)". */
+  part?: string;
+  /** The sub-question as printed. */
+  prompt?: string;
+  rows: GeographyAnswerRow[];
+  srp: GeographySrpAllocation[];
+  /**
+   * The scheme prices one unit and asks for several ("Formation of any two
+   * landforms @ 20m each. For each landform: …"). The group's rows and SRPs
+   * are claimed once per unit; `unit` is the scheme's own noun for one.
+   */
+  repeat?: { count: number; unit: string; marks: number };
+}
+
+/**
+ * A Geography criterion cut into claimable rows. Present only when the rows
+ * and SRP counts add up to the card's total (cards/geography/allocation.ts);
+ * otherwise the reveal falls back to the guidance lines and a mark control.
+ */
+export interface GeographyAllocation {
+  groups: GeographyAllocationGroup[];
+  /** Examiner directions: caps, named-example rules, diagram conditions. */
+  directions: string[];
+  /** Where parts print SRP ranges, the SRPs they share between them. */
+  srpPool?: { count: number; marks: number };
+}
+
 export interface GeographyCriterion {
   id: string;
   label: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: GeographyGuidanceKind;
-  /** Published allocation and examiner directions for this task. */
+  /** Published allocation and examiner directions for this task, as lifted. */
   guidance: string[];
+  /** The same allocation as claimable rows, where it reconciles. */
+  allocation?: GeographyAllocation;
 }
 
 export interface GeographyRubric {

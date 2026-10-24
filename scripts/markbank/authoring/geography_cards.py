@@ -938,14 +938,21 @@ def selection_directive(question_text: str) -> bool:
 
 
 def scheme_guidance_for_variant(guidance: list[str], variant: Variant) -> list[str]:
-    """Keep only the marking branch belonging to an (i)/(ii) route card."""
+    """Keep only the marking branch belonging to an (i)/(ii) route card.
+
+    The divider is the scheme's standalone "Or" line. A wrapped prompt that
+    happens to start with "or" ("or one coastal landform or one glacial
+    landform that you have studied.") is not one: matching it stripped every
+    allocation line from fifteen Route (i) cards and left both branches on
+    their Route (ii) siblings (2021–2026 HL Q1B/Q2B), found 2026-10-23.
+    """
     if 'answer-i-or-ii' not in variant.selection_kind:
         return list(guidance)
     first = next((index for index, line in enumerate(guidance)
                   if re.match(r'^\(i\)\s+', line, re.I)), None)
     divider = next((index for index, line in enumerate(guidance)
                     if first is not None and index > first
-                    and re.match(r'^Or\b', line, re.I)), None)
+                    and re.match(r'^Or$', line, re.I)), None)
     if first is None or divider is None:
         # Some scheme layouts omit a standalone Or but still print the second
         # branch. Find that second top-level marker after the first allocation.
@@ -957,7 +964,7 @@ def scheme_guidance_for_variant(guidance: list[str], variant: Variant) -> list[s
             f'cannot split scheme guidance for {variant.label}: {guidance[:6]!r}')
     if re.match(r'^route-i(?:-|$)', variant.slug):
         return guidance[first:divider]
-    second = divider + 1 if re.match(r'^Or\b', guidance[divider], re.I) else divider
+    second = divider + 1 if re.match(r'^Or$', guidance[divider], re.I) else divider
     return guidance[second:]
 
 
