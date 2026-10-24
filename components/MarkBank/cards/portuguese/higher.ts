@@ -1348,7 +1348,7 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "1,6 Tons (T) of garbage", marks: 2, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language." },
     { id: "r-2", kind: "point", verbatim: "832 Kilometres (Km) walked", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "30 Cities / Towns", marks: 2 },
-    { id: "r-4", kind: "point", verbatim: "7000 Cigarete buts", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "7000 Cigarette butts", marks: 2 },
     ],
     sourceMaterial: {
           "kind": "source-text",
@@ -1373,7 +1373,7 @@ export const CARDS: SecCard[] = [
     questionText: "What does Andreas do to avoid using more plastic on his journey? (Paragraph 7)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "He brings a reusable botle.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme also pays part marks for a shorter answer: “Reuses plastic.” 2 marks; “Using an old bicycle.” 2 marks." },
+    { id: "r-1", kind: "point", verbatim: "He brings a reusable bottle.", marks: 3, contextNote: "The examination prints this question in English and it is answered in English or in Irish, not in Portuguese. The scheme awards half marks for an answer given in the wrong language. The scheme also pays part marks for a shorter answer: “Reuses plastic.” 2 marks; “Using an old bicycle.” 2 marks." },
     ],
     sourceMaterial: {
           "kind": "source-text",

@@ -5,6 +5,7 @@ on:
   pull_request:
     paths:
       - 'App.tsx'
+      - 'index.css'
       - 'components/**'
       - 'hooks/useModule*.ts'
       - 'hooks/usePrivateDeviceDraft.ts'

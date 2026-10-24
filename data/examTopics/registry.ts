@@ -14,11 +14,17 @@
 import type { PaperLang, PaperLevel } from '../../types/paperTrail';
 import { PAPER_TOPIC_TAGS } from '../paperTrail/topicTags';
 import accountingAuditJson from './accounting.json';
+import accountingTaskRuntime from './accounting-task-runtime.json';
 import agriculturalScienceAuditJson from './agricultural-science.json';
+import agriculturalScienceQuestionRuntimeJson from './agricultural-science-question-runtime.json';
 import appliedMathematicsAuditJson from './applied-mathematics.json';
+import appliedMathematicsReviewedQuestions from './applied-mathematics-reviewed-questions.json';
+import appliedMathematicsArchiveTopics from './applied-mathematics-archive-topics.json';
+import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import artRuntimeJson from './art-runtime.json';
 import biologyRuntimeJson from './biology-runtime.json';
 import businessRuntimeJson from './business-runtime.json';
+import businessSourceReviewedTopics from './business-source-reviewed-topics.json';
 import chemistryRuntimeJson from './chemistry-runtime.json';
 import classicalStudiesAuditJson from './classical-studies.json';
 import computerScienceRuntimeJson from './computer-science-runtime.json';
@@ -28,8 +34,10 @@ import directQuestionRuntimeJson from './direct-question-runtime.json';
 import economicsRuntimeJson from './economics-runtime.json';
 import engineeringRuntimeJson from './engineering-runtime.json';
 import englishQuestionRuntimeJson from './english-question-runtime.json';
+import englishReviewedQuestionRuntimeJson from './english-reviewed-question-runtime.json';
 import englishRuntimeJson from './english-runtime.json';
 import frenchRuntimeJson from './french-runtime.json';
+import frenchReviewedTasks from './french-reviewed-tasks.json';
 import geographyQuestionRuntimeJson from './geography-question-runtime.json';
 import geographyRuntimeJson from './geography-runtime.json';
 import germanRuntimeJson from './german-runtime.json';
@@ -49,6 +57,7 @@ import physicalEducationRuntimeJson from './physical-education-runtime.json';
 import physicsRuntimeJson from './physics-runtime.json';
 import physicsAndChemistryRuntimeJson from './physics-and-chemistry-runtime.json';
 import politicsAndSocietyAuditJson from './politics-and-society.json';
+import politicsTaskJson from './politics-tasks.json';
 import religiousEducationRuntimeJson from './religious-education-runtime.json';
 import spanishRuntimeJson from './spanish-runtime.json';
 import technologyRuntimeJson from './technology-runtime.json';
@@ -106,6 +115,9 @@ export interface ExamQuestionPartReference {
   n: string;
   /** Factual heading only (section/part/roman-numeral range); never question text. */
   subdivision?: string;
+  /** Exact practice task, including finite routes; original n remains the paper jump. */
+  markBankCardId?: string;
+  curriculumNodeId?: string;
   topicId: string;
 }
 
@@ -327,6 +339,8 @@ interface EconomicsRuntime {
   partReferences: Array<[number, number, 'm' | 'd' | 's', string, string]>;
   /** [h/o, e/i, year, local card number, topic indexes] */
   questionMappings: Array<['h' | 'o', 'e' | 'i', number, string, number[]]>;
+  /** Official-paper corrections take precedence over the retained reference snapshot. */
+  secReviewedQuestionMappings: Array<['h' | 'o', 'e' | 'i', number, string, string, number[]]>;
 }
 
 interface ArtRuntime {
@@ -564,6 +578,7 @@ interface DirectQuestionRuntime {
 
 const accountingAudit = accountingAuditJson as AccountingAudit;
 const agriculturalScienceAudit = agriculturalScienceAuditJson as AppliedMathematicsAudit;
+const agriculturalScienceQuestionRuntime = agriculturalScienceQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
 const appliedMathematicsAudit = appliedMathematicsAuditJson as AppliedMathematicsAudit;
 const artRuntime = artRuntimeJson as unknown as ArtRuntime;
 const biologyRuntime = biologyRuntimeJson as unknown as BiologyRuntime;
@@ -577,6 +592,7 @@ const directQuestionRuntime = directQuestionRuntimeJson as unknown as DirectQues
 const economicsRuntime = economicsRuntimeJson as unknown as EconomicsRuntime;
 const engineeringRuntime = engineeringRuntimeJson as unknown as EngineeringRuntime;
 const englishQuestionRuntime = englishQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
+const englishReviewedQuestionRuntime = englishReviewedQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
 const englishRuntime = englishRuntimeJson as unknown as BrowserAuditedRuntime;
 const frenchRuntime = frenchRuntimeJson as unknown as FrenchRuntime;
 const geographyQuestionRuntime = geographyQuestionRuntimeJson as unknown as BrowserQuestionRuntime;
@@ -826,6 +842,21 @@ const appliedMathematicsTopics: ExamTopicDefinition[] = appliedMathematicsLevels
   }),
 );
 
+// The reference menu omits some topics found in the reviewed SEC papers.
+// Resolve each addition through the specification for its examination year.
+// These are SEC review additions, not claimed reference-page data.
+for (const archive of appliedMathematicsArchiveTopics) {
+  const appliedArchiveSpecification = resolveCurriculumSpecification('applied-mathematics', archive.specificationYear)!;
+  const node = findCanonicalTopic(appliedArchiveSpecification, archive.curriculumNodeId);
+  if (!node) throw new Error(`Unknown Applied Mathematics archive node: ${archive.curriculumNodeId}`);
+  appliedMathematicsTopics.push({
+    id: archive.id, label: node.title, level: archive.level as PaperLevel,
+    sourcePath: appliedArchiveSpecification.sources[0].url,
+    officialQuestionKeys: [], mockQuestionCount: 0,
+    curriculumNodeIds: [node.id],
+  });
+}
+
 const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: appliedMathematicsAudit.subjectId,
   capturedAt: appliedMathematicsAudit.capturedAt,
@@ -834,7 +865,7 @@ const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
     id: `applied-mathematics-${level}`,
     label: appliedMathematicsAudit.levels[level].label,
     level,
-    topicIds: appliedMathematicsAudit.levels[level].topics.map((topic) => topic.id),
+    topicIds: appliedMathematicsTopics.filter(topic => topic.level === level).map(topic => topic.id),
   })),
   topics: appliedMathematicsTopics,
 };
@@ -842,6 +873,8 @@ const APPLIED_MATHEMATICS_TAXONOMY: ExamTopicTaxonomy = {
 const AGRICULTURAL_SCIENCE_CURRICULUM_CROSSWALK: Record<string, string[]> = {
   'agricultural-science-higher-animal-diseases': ['agricultural-science-3-5'],
   'agricultural-science-higher-animal-physiology-digestive-system': ['agricultural-science-3-0'],
+  'agricultural-science-higher-animal-physiology-circulatory-system': ['agricultural-science-3-0'],
+  'agricultural-science-higher-animal-physiology-respiratory-system': ['agricultural-science-3-0'],
   'agricultural-science-higher-animal-physiology-reproductive-systems': ['agricultural-science-3-0', 'agricultural-science-3-6'],
   'agricultural-science-higher-beef-cattle': ['agricultural-science-3-2', 'agricultural-science-3-3', 'agricultural-science-3-4', 'agricultural-science-3-5', 'agricultural-science-3-6'],
   'agricultural-science-higher-classification-of-animals-plants': ['agricultural-science-2-1', 'agricultural-science-3-1'],
@@ -3296,6 +3329,31 @@ const politicsAndSocietyTopics: ExamTopicDefinition[] = politicsAndSocietyLevels
   }),
 );
 
+export interface PoliticsExamTask {
+  id: string; year: number; level: 'higher' | 'ordinary'; n: string;
+  questionRef: string; topicId: string; section: string; fileid: string; thinker: boolean;
+}
+export const POLITICS_EXAM_TASKS = politicsTaskJson as PoliticsExamTask[];
+export const politicsExamTopicIdsForTask = (task: PoliticsExamTask): string[] => {
+  const content = Object.entries(POLITICS_AND_SOCIETY_CONTENT_CROSSWALK)
+    .filter(([, ids]) => ids.includes(task.topicId))
+    .map(([slug]) => `politics-and-society-${task.level}-${slug}`);
+  if (content.length !== 1) throw new Error(`Politics task ${task.id} has no unique content topic`);
+  if (task.section === 'B') content.push(`politics-and-society-${task.level}-data-based-questions`);
+  if (task.thinker) content.push(`politics-and-society-${task.level}-key-thinkers`);
+  return content;
+};
+for (const task of POLITICS_EXAM_TASKS) {
+  for (const topicId of politicsExamTopicIdsForTask(task)) {
+    politicsAndSocietyPartReferences.push({
+      subjectId: 'politics-and-society', level: task.level, year: task.year,
+      sitting: 'main', paperKey: 'single', fileid: task.fileid, n: task.n,
+      subdivision: task.questionRef, topicId, markBankCardId: task.id,
+      curriculumNodeId: task.topicId,
+    });
+  }
+}
+
 const POLITICS_AND_SOCIETY_TAXONOMY: ExamTopicTaxonomy = {
   subjectId: politicsAndSocietyAudit.subjectId,
   capturedAt: politicsAndSocietyAudit.capturedAt,
@@ -3347,6 +3405,7 @@ const TAXONOMIES = new Map<string, ExamTopicTaxonomy>([
 const TOPICS_BY_ID = new Map<string, ExamTopicDefinition>();
 const QUESTION_TOPICS = new Map<string, string[]>();
 const FILE_QUESTION_TOPICS = new Map<string, string[]>();
+const SEC_REVIEWED_QUESTION_TOPICS = new Map<string, { fileid: string; topicIds: string[] }>();
 
 // Geography and Physical Education already expose their replacement-course
 // menus, but the local SEC archive currently ends before those courses' first
@@ -3466,6 +3525,21 @@ for (const runtime of directQuestionRuntime.subjects) {
   }
 }
 
+// Separately priced, visually reviewed Accounting tasks use the same identity
+// and topic in Mark Bank and Atlas. Preserve every existing parent question.
+for (const task of accountingTaskRuntime.tasks) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', task.level as PaperLevel,
+    task.year, 'main', task.fileid, task.n, 'single', 'ev'), task.topicIds);
+}
+// This reviewed departmental question is absent from the external reference.
+// Its older fileless association classifies Q4 but cannot create an Atlas row;
+// bind both preserved answer-map anchors explicitly so the parent stays visible.
+for (const lang of ['ev', 'iv'] as const) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey('accounting', 'higher', 2017, 'main',
+    `LC032ALP000${lang.toUpperCase()}.pdf`, '4', 'single', lang),
+  ['accounting-higher-final-accounts-sole-trader']);
+}
+
 /**
  * Exact question-level evidence for the large browser-audited subjects. The
  * booklet id is part of the key because split and pilot papers can restart at
@@ -3510,11 +3584,30 @@ const registerBrowserQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
   }
 };
 
+registerBrowserQuestionRuntime(agriculturalScienceQuestionRuntime);
 registerBrowserQuestionRuntime(englishQuestionRuntime);
 registerBrowserQuestionRuntime(geographyQuestionRuntime);
 registerBrowserQuestionRuntime(homeEconomicsQuestionRuntime);
 registerBrowserQuestionRuntime(mathematicsQuestionRuntime);
 registerBrowserQuestionRuntime(physicalEducationQuestionRuntime);
+
+// Exact SEC-task evidence supplements the preserved historical reference map.
+// Each paper question keeps its original identity, while the Atlas task feed
+// uses markBankCardId to expose only the relevant parts and answer routes.
+const politicsQuestionTopics = new Map<string, Set<string>>();
+for (const task of POLITICS_EXAM_TASKS) {
+  const key = fileQuestionKey('politics-and-society', task.level, task.year, 'main', task.fileid, task.n, 'single', 'ev');
+  const ids = politicsQuestionTopics.get(key) ?? new Set<string>();
+  politicsExamTopicIdsForTask(task).forEach(id => ids.add(id));
+  politicsAndSocietyTopics.filter(topic => topic.level === task.level &&
+    topic.officialQuestionKeys.includes(`${task.year}|main|${task.n}`))
+    .forEach(topic => ids.add(topic.id));
+  politicsQuestionTopics.set(key, ids);
+}
+for (const [key, ids] of politicsQuestionTopics) {
+  FILE_QUESTION_TOPICS.set(key, [...new Set([...(FILE_QUESTION_TOPICS.get(key) ?? []), ...ids])]);
+}
+
 
 /**
  * These browser-audited subjects entered the exam hierarchy after their
@@ -3583,6 +3676,37 @@ registerCanonicalTagBridge(HOME_ECONOMICS_TAXONOMY);
 registerCanonicalTagBridge(MATHEMATICS_TAXONOMY);
 registerCanonicalTagBridge(PHYSICAL_EDUCATION_TAXONOMY);
 
+/**
+ * English papers whose own independent review gate passed are published to
+ * Mark Bank paper by paper (scripts/markbank/authoring/english_publish.py).
+ * Their sidecar blocks gain exact booklet links to every topic carrying a
+ * published card's canonical node. This is strictly additive: a new link is
+ * unioned with whatever the question already resolved to (exact mapping or
+ * canonical tag bridge) and never replaces or removes an existing topic.
+ */
+const registerAdditiveQuestionRuntime = (runtime: BrowserQuestionRuntime) => {
+  for (const [levelCode, langCode, year, paperKey, fileid, n, topicIndexes] of runtime.questionMappings) {
+    const level = browserAuditLevel(levelCode);
+    const lang: PaperLang = langCode === 'e' ? 'ev' : 'iv';
+    const added = topicIndexes.map(topicIndex => {
+      const topicId = runtime.topicIds[topicIndex];
+      if (!topicId || !TOPICS_BY_ID.has(topicId)) {
+        throw new Error(`${runtime.subjectId}: unknown additive topic index ${topicIndex}`);
+      }
+      return topicId;
+    }).filter(topicId => topicAppliesToExamYear(runtime.subjectId, TOPICS_BY_ID.get(topicId)!, year));
+    if (!added.length) continue;
+    const key = fileQuestionKey(runtime.subjectId, level, year, 'main', fileid, n, paperKey, lang);
+    const current = FILE_QUESTION_TOPICS.get(key) ?? [
+      ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey)) ?? []),
+      ...(QUESTION_TOPICS.get(questionKey(runtime.subjectId, level, year, 'main', n, paperKey, lang)) ?? []),
+    ];
+    FILE_QUESTION_TOPICS.set(key, [...new Set([...current, ...added])]);
+  }
+};
+
+registerAdditiveQuestionRuntime(englishReviewedQuestionRuntime);
+
 // History keeps the StudyClix-equivalent Later Modern hierarchy level-aware,
 // while this generated join covers every English and Irish SEC card—including
 // the local cards that the reference menu omits or classifies incorrectly.
@@ -3622,6 +3746,14 @@ for (const [levelCode, langCode, year, n, topicIndexes] of economicsRuntime.ques
       if (!topicId) throw new Error(`Unknown Economics runtime topic index: ${topicIndex}`);
       return topicId;
     }),
+  );
+}
+
+for (const [levelCode, langCode, year, fileid, n, indexes] of economicsRuntime.secReviewedQuestionMappings) {
+  SEC_REVIEWED_QUESTION_TOPICS.set(
+    questionKey('economics', levelCode === 'h' ? 'higher' : 'ordinary', year,
+      'main', n, 'single', langCode === 'e' ? 'ev' : 'iv'),
+    { fileid, topicIds: indexes.map(index => economicsRuntime.topics[index][0]) },
   );
 }
 
@@ -3713,6 +3845,29 @@ for (const [levelCode, yearOffset, paperKeyCode, n, topicIndexes] of (
     ),
     topicIndexes.map(topicIndex => businessTopicIdentity(topicIndex).id),
   );
+}
+
+// Direct SEC paper/scheme review supersedes ambiguous provider heading joins.
+// Resolve the reviewed canonical IDs through the existing taxonomy; this does
+// not create a separate Business curriculum or alter any question identity.
+for (const review of businessSourceReviewedTopics.questions) {
+  // A canonical node selects the topic that IS that node. The Ordinary
+  // "What do these initials stand for?" format topic spans every node, so a
+  // partial overlap must not file a reviewed question under it.
+  const topics = businessTopics.filter(topic => topic.level === review.level
+    && topic.course === 'old'
+    && (topic.label === review.abqTopicLabel
+      || topic.curriculumNodeIds.every(id => review.canonicalNodeIds.includes(id))));
+  if ((review.abqTopicLabel && !topics.some(topic => topic.label === review.abqTopicLabel))
+    || review.canonicalNodeIds.some(id => !topics.some(topic => topic.curriculumNodeIds.includes(id)))) {
+    throw new Error(`Business source review has an unresolved topic: ${review.year} ${review.n}`);
+  }
+  const key = questionKey('business', review.level as PaperLevel, review.year, 'main', review.n, review.paperKey);
+  // The review covers the examined 1999 syllabus only. Provider joins to the
+  // redeveloped course are a separate crosswalk and stay attached unchanged.
+  const redeveloped = (QUESTION_TOPICS.get(key) ?? []).filter(id =>
+    businessTopics.some(topic => topic.id === id && topic.course !== 'old'));
+  QUESTION_TOPICS.set(key, [...topics.map(topic => topic.id), ...redeveloped]);
 }
 
 // Construction Studies uses the exact audited joins for both official-
@@ -3845,6 +4000,24 @@ for (const [levelCode, langCode, yearOffset, paperKeyCode, n, topicIndexes] of f
       return topicId;
     }),
   );
+}
+
+// Reviewed French task boundaries and finite routes share exact booklet-scoped
+// identities with Mark Bank. They supplement, rather than replace, legacy rows.
+for (const task of frenchReviewedTasks) {
+  FILE_QUESTION_TOPICS.set(fileQuestionKey(
+    'french', task.level as PaperLevel, task.year, 'main', task.fileid,
+    task.n, task.paperKey, task.lang as PaperLang,
+  ), task.topicIds);
+  if ('category' in task && task.category === 'reading') {
+    // A source-reviewed passage classification also governs its existing
+    // numbered archive entry; a stale shared reference must not add it back
+    // to the wrong topic when students follow an older question link.
+    FILE_QUESTION_TOPICS.set(fileQuestionKey(
+      'french', task.level as PaperLevel, task.year, 'main', task.fileid,
+      task.parent, task.paperKey, task.lang as PaperLang,
+    ), task.topicIds);
+  }
 }
 
 // German Storage sidecars use several incompatible historic number runs. The
@@ -4147,6 +4320,20 @@ for (const paper of PAPER_TOPIC_TAGS) {
       });
     }
   }
+}
+
+// SEC task review takes precedence over coarser reference headings. The
+// printed-question card belongs to the union of its independently reviewed
+// tasks, with each visually verified booklet identity and its hosted answer map.
+for (const question of appliedMathematicsReviewedQuestions) {
+  const level = question.level as PaperLevel;
+  FILE_QUESTION_TOPICS.set(fileQuestionKey(
+    'applied-mathematics', level, question.year, 'main', question.fileid,
+    question.n, 'single', question.lang as PaperLang,
+  ), question.topicIds);
+  QUESTION_TOPICS.set(questionKey(
+    'applied-mathematics', level, question.year, 'main', question.n,
+  ), question.topicIds);
 }
 
 for (const paper of PAPER_TOPIC_TAGS) {
@@ -4452,6 +4639,16 @@ export function examTopicIdsForQuestion(
   lang?: PaperLang,
   fileid?: string,
 ): string[] {
+  // Do not merge a corrected SEC classification with the erroneous shared
+  // heading that it replaces. The source snapshot remains available for audit.
+  if (lang) {
+    const reviewed = SEC_REVIEWED_QUESTION_TOPICS.get(
+      questionKey(subjectId, level, year, sitting, n, paperKey, lang),
+    );
+    if (reviewed && (!fileid || fileid.replace(/\.pdf$/i, '') === reviewed.fileid.replace(/\.pdf$/i, ''))) {
+      return [...reviewed.topicIds];
+    }
+  }
   if (fileid) {
     const fileShared = FILE_QUESTION_TOPICS.get(fileQuestionKey(
       subjectId,

@@ -16,14 +16,14 @@ describe('Journey Points primer', () => {
     fireEvent.click(trigger);
     const close = screen.getByRole('button', { name: 'Close' });
     await waitFor(() => expect(close).toHaveFocus());
-    expect(document.body.style.overflow).toBe('hidden');
+    expect(document.body).toHaveAttribute('data-scroll-lock');
     fireEvent.keyDown(document, { key: 'Tab', shiftKey: true });
     expect(screen.getByRole('button', { name: 'Got it' })).toHaveFocus();
     fireEvent.keyDown(document, { key: 'Tab' });
     expect(close).toHaveFocus();
     fireEvent.keyDown(document, { key: 'Escape' });
     await waitFor(() => expect(screen.queryByRole('dialog')).not.toBeInTheDocument());
-    expect(document.body.style.overflow).not.toBe('hidden');
+    expect(document.body).not.toHaveAttribute('data-scroll-lock');
     expect(trigger).toHaveFocus();
   });
 });

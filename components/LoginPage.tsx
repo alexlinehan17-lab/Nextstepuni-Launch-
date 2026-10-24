@@ -8,6 +8,7 @@ import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { ArrowLeft, Eye, EyeOff, GraduationCap, ArrowRight, Check, LockKeyhole, UserRound, BarChart3, ExternalLink, X } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import { classifySignInError, reportSignInFailure, signInFailureMessage, SIGN_IN_LOCKOUT_MS, strongestFailure, type SignInFailureKind } from '../utils/signInFailure';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
 import { shouldReapAccount } from '../utils/registrationRollback';
@@ -21,6 +22,7 @@ import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
 import { trackProgrammeEvent } from '../utils/programmeAnalytics';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
+import { suggestEmailCorrection } from '../utils/emailTypo';
 import {
   beginRegistrationProvisioning,
   endRegistrationProvisioning,
@@ -160,6 +162,18 @@ async function writeUserDoc(
   if (outcome === 'failed') throw captured ?? new Error(`${context}: write rejected`);
 }
 
+// Shown for every failed email sign-in; also the cue for "No account yet?".
+const LOGIN_FAILED_MESSAGE = 'Invalid email or password.';
+/** Accounts made before school email sign-up (Feb–Apr 2026) signed in with a
+ *  username, stored as username@nextstep.app. Those mailboxes do not exist, so
+ *  a reset email can never reach them (98 student accounts, Oct 2026). */
+const USERNAME_FAILED_MESSAGE = 'That username and password don’t match.';
+const USERNAME_RESET_HELP = 'Accounts made with a username can’t get reset emails. Email nextstepuniinfo@gmail.com with your username and school, and we’ll reset it for you.';
+const isUsernameLogin = (value: string) => {
+  const v = value.trim().toLowerCase();
+  return v.length > 0 && (!v.includes('@') || v.endsWith('@nextstep.app'));
+};
+
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const mobileAppDesign = useMobileAppDesign();
   const reducedMotion = useReducedMotion();
@@ -204,6 +218,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [schoolRole, setSchoolRole] = useState<'gc' | 'staff'>('gc');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  // Firebase pauses an account after repeated wrong passwords; trying again
+  // during the pause extends it, so the Sign in button rests for a minute.
+  const [signInPausedUntil, setSignInPausedUntil] = useState(0);
+  const [pauseNow, setPauseNow] = useState(() => Date.now());
+  const signInPaused = signInPausedUntil > pauseNow;
+  useEffect(() => {
+    if (signInPausedUntil <= Date.now()) return;
+    const tick = window.setInterval(() => setPauseNow(Date.now()), 1000);
+    return () => window.clearInterval(tick);
+  }, [signInPausedUntil]);
   // A failed registration deletes the account it just created, which signs the
   // student out and can unmount THIS component -- so setError below lands on a
   // dead instance and the replacement renders blank. That silent bounce is the
@@ -226,6 +250,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   });
   const fieldMessage = (id: string) => fieldErrors[id] && <small id={`${id}-error`} className="auth-live-field-error" role="alert">{fieldErrors[id]}</small>;
   const [isLoading, setIsLoading] = useState(false);
+  // The email whose likely-typo suggestion has been shown. Continue pauses
+  // once to show it; pressing Continue again keeps the address as typed.
+  const [typoShownFor, setTypoShownFor] = useState('');
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
   // B4 (audit 2026-06-01): student must accept the Privacy Notice + Terms
@@ -293,17 +320,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
 
   // ── Login handler ──
   const handleLogin = async () => {
-    if (isLoading) return;
+    if (isLoading || signInPaused) return;
     if (!email.trim()) { rejectField('login-email', 'Enter your email or username.'); return; }
     if (!password.trim()) { rejectField('login-password', 'Enter your password.'); return; }
     setIsLoading(true); setError(''); setFieldErrors({});
     const input = email.trim().toLowerCase();
-    // Try as-is first (real email), then fall back to legacy @nextstep.app format
-    const attempts = input.includes('@') ? [input] : [input, `${input}@nextstep.app`];
+    // A username (accounts from Feb–Apr 2026) lives at username@nextstep.app.
+    // It used to be tried as typed first, which can never succeed: Firebase
+    // has no address without an @, so it only added a failure to every
+    // username sign-in.
+    const usernameInput = !input.includes('@');
+    const attempts = usernameInput ? [`${input}@nextstep.app`] : [input];
     let success = false;
+    const failures: SignInFailureKind[] = [];
     for (const emailToTry of attempts) {
+      let passwordAccepted = false;
       try {
         const cred = await signInWithEmailAndPassword(auth, emailToTry, password);
+        passwordAccepted = true;
         const token = await cred.user.getIdTokenResult();
         const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
         if (userDoc.exists()) {
@@ -325,9 +359,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         break;
       } catch (err) {
         console.error('Login attempt failed:', err);
+        // A right password whose account then failed to load is not a wrong
+        // password, and must not be told it is.
+        failures.push(passwordAccepted ? 'profile-read' : classifySignInError(err));
       }
     }
-    if (!success) setError('Invalid email or password.');
+    if (!success) {
+      let kind = strongestFailure(failures);
+      // A typed username is not an email; a malformed one is just a wrong username.
+      if (usernameInput && kind === 'invalid-email') kind = 'credentials';
+      reportSignInFailure(kind, usernameInput ? 'username' : 'email');
+      if (kind === 'too-many-requests') {
+        setPauseNow(Date.now());
+        setSignInPausedUntil(Date.now() + SIGN_IN_LOCKOUT_MS);
+      }
+      const message = signInFailureMessage(kind);
+      if (kind === 'invalid-email' && message) rejectField('login-email', message);
+      else setError(message ?? (usernameInput ? USERNAME_FAILED_MESSAGE : LOGIN_FAILED_MESSAGE));
+    }
     setIsLoading(false);
   };
 
@@ -456,6 +505,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const handleForgotPassword = async () => {
     if (isLoading || resendCountdown > 0) return;
     if (!email.trim()) { rejectField('reset-email', 'Enter your email address.'); return; }
+    if (isUsernameLogin(email)) { rejectField('reset-email', USERNAME_RESET_HELP); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
       rejectField('reset-email', 'Check the email address, for example you@example.com.');
       return;
@@ -464,7 +514,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     try {
       await sendPasswordResetEmail(auth, email.trim().toLowerCase());
       setResetSent(true);
-      setResendCountdown(30);
+      // Each new request cancels the previous link, and school email can take
+      // minutes to arrive, so an early resend leaves a dead link in the inbox.
+      setResendCountdown(90);
     } catch (err) {
       console.error('Failed to send password reset email:', err);
       setError('Could not send reset email. Check your email address.');
@@ -505,6 +557,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { return rejectField('register-email', 'Check the email address, for example you@example.com.'); }
       const normalised = email.trim().toLowerCase();
       if (isReservedEmail(normalised)) { return rejectField('register-email', 'Use a different email address.'); }
+      if (suggestEmailCorrection(email) && typoShownFor !== email) {
+        setTypoShownFor(email);
+        requestAnimationFrame(() => document.getElementById('register-email-suggestion')?.focus());
+        return false;
+      }
       return true;
     }
     if (registerStep === 2) {
@@ -784,6 +841,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (registerStep > 1) setRegisterStep((step) => step - 1);
     else navigate('welcome');
   };
+  const emailSuggestion = view === 'register' && registerStep === 1 ? suggestEmailCorrection(email) : null;
   const selectedSchool = SCHOOLS.find((item) => item.id === school);
   const schoolName = selectedSchool?.name || '';
   const errorMessage = error && (
@@ -872,7 +930,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   );
   const emailField = (id: string, signingIn = false) => (
     <div className="auth-live-field">
-      <label htmlFor={id}>Email</label>
+      <label htmlFor={id}>{signingIn ? 'Email or username' : 'Email'}</label>
       <input
         id={id}
         {...fieldValidation(id)}
@@ -883,10 +941,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         autoCorrect="off"
         spellCheck={false}
         value={email}
-        placeholder="you@example.com"
+        placeholder={signingIn ? 'Email or username' : 'you@example.com'}
         onChange={(event) => {
           setEmail(event.target.value);
           setError(''); setFieldErrors({});
+          setSignInPausedUntil(0);
         }}
       />
       {fieldMessage(id)}
@@ -1058,6 +1117,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         {/* Name remains free-form for all naming conventions. */}
                       </div>
                       {emailField('register-email')}
+                      {emailSuggestion && typoShownFor === email && (
+                        <div className="auth-live-suggestion" role="status">
+                          <p>
+                            Check your email address. Did you mean{' '}
+                            <strong>{emailSuggestion}</strong>?
+                          </p>
+                          <button
+                            id="register-email-suggestion"
+                            type="button"
+                            className="auth-live-secondary"
+                            onClick={() => {
+                              setEmail(emailSuggestion);
+                              setTypoShownFor('');
+                              setError(''); setFieldErrors({});
+                            }}
+                          >
+                            <span>Use {emailSuggestion}</span>
+                            <Check size={17} aria-hidden="true" />
+                          </button>
+                          <small>Or press Continue to keep the address you typed.</small>
+                        </div>
+                      )}
                     </>
                   )}
                   {registerStep === 2 && (
@@ -1204,6 +1285,30 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </button>
                 </fieldset>
                 {errorMessage}
+                {error === USERNAME_FAILED_MESSAGE && (
+                  <p className="auth-live-help-note">
+                    Forgotten your password? {USERNAME_RESET_HELP}
+                  </p>
+                )}
+                {error === LOGIN_FAILED_MESSAGE && (
+                  <div className="auth-live-no-account">
+                    <span>No account yet?</span>
+                    <button
+                      type="button"
+                      className="auth-live-secondary"
+                      disabled={isLoading}
+                      onClick={() => {
+                        // A typed username is not an email address; start clean.
+                        if (!email.includes('@')) setEmail('');
+                        setRegisterStep(1);
+                        navigate('register');
+                      }}
+                    >
+                      Create an account
+                      <ArrowRight size={18} aria-hidden="true" />
+                    </button>
+                  </div>
+                )}
                 <div className="auth-live-actions">
                   <button
                     type="button"
@@ -1218,9 +1323,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <button
                     type="submit"
                     className="auth-live-primary"
-                    disabled={isLoading}
+                    disabled={isLoading || signInPaused}
                   >
-                    {isLoading ? 'Signing in…' : 'Sign in'}
+                    {isLoading
+                      ? 'Signing in…'
+                      : signInPaused
+                        ? `Try again in ${Math.ceil((signInPausedUntil - pauseNow) / 1000)}s`
+                        : 'Sign in'}
                     <ArrowRight size={19} aria-hidden="true" />
                   </button>
                 </div>
@@ -1236,7 +1345,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 </h1>
                 <p>
                   {resetSent
-                    ? `We sent a reset link to ${email.trim()}.`
+                    ? `We sent a reset link to ${email.trim()}. Only the newest email works, so if you ask again, open the latest one.`
                     : 'Enter your email and we’ll send you a reset link.'}
                 </p>
               </div>
@@ -1464,8 +1573,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             ) : (
               <>
                 <p>
-                  Check your spam or junk folder, then confirm the email address
-                  you used for your account.
+                  School email can take a few minutes to arrive. Check your
+                  spam or junk folder, then confirm the email address you used
+                  for your account.
+                </p>
+                <p>
+                  If you asked more than once, only the newest email works.
+                  Earlier links stop working.
                 </p>
                 <p>
                   If you signed in with Apple or Google, go back and use the

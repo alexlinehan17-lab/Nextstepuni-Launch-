@@ -50,7 +50,13 @@ def mangled(u):
 # character -- so they cannot come out of a glyph-id table keyed by character.
 LIGATURE = {
     'Ɵ': 'ti', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬀ': 'ff', 'ﬃ': 'ffi', 'ﬄ': 'ffl',
-    'ƫ': 'tt', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tt]ing", "ou[tf]lows", 25[deg]C
+    # U+01AB and U+01A9 are Calibri's "tti" (gid 427) and "tt" (gid 425)
+    # ligatures: every one of 364 and 1,221 sightings in 4,284 English papers
+    # and schemes is that glyph id, and the rendered pages read "putting",
+    # "setting", "emitting" and "letters", "battle", "bottles". "tt" for U+01AB
+    # shipped "settng"; "t" for U+01A9, derived from text layers that misread
+    # the same glyph as one letter ("batle"), shipped "botles" and "ploted".
+    'ƫ': 'tti', 'Ʃ': 'tt', 'ƞ': 'tf', '\u02da': '\u00b0',   # "se[tti]ng", "bo[tt]les", "ou[tf]lows", 25[deg]C
     '\uf0ae': '\u2192',   # Symbol font: code point 0xAE is its rightwards arrow
     # Symbol and Wingdings characters, which a PDF stores at 0xF000 + the code
     # point. Each was settled by cropping the glyph out of the page and looking

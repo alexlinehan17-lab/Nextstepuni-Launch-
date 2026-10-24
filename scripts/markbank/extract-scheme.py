@@ -100,7 +100,7 @@ def extract_rtl(pdf_path: Path) -> str:
     return "\n".join(out)
 
 
-def extract(pdf_path: Path, marks_column: bool = False) -> str:
+def extract(pdf_path: Path, marks_column: bool = False, glyph_ids: bool = False, unnamed_glyphs: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
     SEC schemes are tables: a marking point and the marks it earns sit in
@@ -110,16 +110,27 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
     """
     doc = fitz.open(pdf_path)
     decoder = _decoder(pdf_path)
+    table = load_glyph_table() if glyph_ids else None
     out = []
     for pno, page in enumerate(doc, 1):
         out.append(f"\n## Page {pno}\n")
         marks_x = page.rect.width * MARKS_COLUMN_FRACTION if marks_column else None
         lines = []
-        for block in doc[pno - 1].get_text("dict")["blocks"]:
+        origin = page_glyphs(page) if table else None
+        # --unnamed-glyphs: also read the glyphs a CID font draws with no Unicode,
+        # which rawdict reports as their glyph ids (control characters, ASCII).
+        unnamed = page_unnamed(page) if table and unnamed_glyphs else None
+        for block in doc[pno - 1].get_text("rawdict" if table else "dict")["blocks"]:
             if block.get("type") != 0:
                 continue
             for line in block["lines"]:
-                text = join_spans(line["spans"])
+                spans = line["spans"]
+                if table:
+                    # Read each glyph by its id, not by the code point a broken
+                    # ToUnicode map reported for it (scripts/markbank/glyph_ids.py).
+                    spans = [dict(sp, text="".join(repair_char(ch, origin, table, unnamed) for ch in sp["chars"]))
+                             for sp in spans]
+                text = join_spans(spans)
                 if decoder:
                     text = decoder.unligature(''.join(
                         decoder.decode(sp["text"])
@@ -188,12 +199,18 @@ MARK_WORDS = re.compile(
     r"[\s\d:;,.()x×+/–—-]*(?:marks?|any\s+\d{1,2}|lines?|"
     r"any\s+two\s+lines)?[\s\d:;,.()x×+/–—-]*\)?$", re.I)
 
+# --digit-mark-cells turns MARK_WORDS off. The 2010-2020 and 2026 Business
+# schemes were extracted before it existed, with "30 marks" left in the prose
+# beside the question it prices, and their reviewed cards are checked against
+# that text; re-extracting them must reproduce it byte for byte.
+MARK_WORD_CELLS = True
+
 
 def is_mark(text: str) -> bool:
     """Whether a cell states marks rather than an answer that happens to be numeric."""
     if MONEY.search(text):
         return False
-    return bool(MARK_CELL.fullmatch(text)) or bool(MARK_WORDS.fullmatch(text))
+    return bool(MARK_CELL.fullmatch(text)) or (MARK_WORD_CELLS and bool(MARK_WORDS.fullmatch(text)))
 
 
 def render_row(row, marks_x=None) -> str:
@@ -249,6 +266,7 @@ def render_row(row, marks_x=None) -> str:
 # source, throws it away. That one file was losing 43% of its cards while every
 # other paper lost under 17%.
 from markbank_text import LIGATURES, unligature  # noqa: E402  (shared with describe-tables.py)
+from glyph_ids import load_table as load_glyph_table, page_glyphs, page_unnamed, repair_char  # noqa: E402
 _ = LIGATURES
 
 
@@ -315,12 +333,19 @@ def check(text: str, words: set) -> list:
 
 
 def main() -> int:
+    global MARK_WORD_CELLS
     ap = argparse.ArgumentParser()
     ap.add_argument("path", type=Path)
     ap.add_argument("-o", "--out", type=Path)
     ap.add_argument("--check", action="store_true", help="report likely splits in an existing .md")
+    ap.add_argument("--glyph-ids", action="store_true",
+                    help="read mangled glyphs by font and glyph id (scripts/markbank/authoring/glyph_ids.json)")
+    ap.add_argument("--unnamed-glyphs", action="store_true",
+                    help="with --glyph-ids, also read glyphs a CID font draws with no Unicode (they reach the text layer as control characters or ASCII)")
     ap.add_argument("--marks-column", action="store_true",
                     help="lift the right-hand marks cells out of the prose into ⟨brackets⟩")
+    ap.add_argument("--digit-mark-cells", action="store_true",
+                    help="with --marks-column, lift only cells written in digits, never in words (MARK_WORDS)")
     args = ap.parse_args()
 
     words = load_dictionary()
@@ -337,8 +362,10 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
+    MARK_WORD_CELLS = not args.digit_mark_cells
     text = (extract_rtl(args.path) if _is_rtl(args.path)
-            else extract(args.path, marks_column=args.marks_column))
+            else extract(args.path, marks_column=args.marks_column,
+                         glyph_ids=args.glyph_ids, unnamed_glyphs=args.unnamed_glyphs))
     table = _glyph_table(args.path)
     if table:
         text = ''.join(table.get(ch, ch) for ch in text)

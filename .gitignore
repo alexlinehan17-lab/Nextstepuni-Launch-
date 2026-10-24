@@ -52,6 +52,8 @@ tmp/pdfs/pwc-pilot/
 tmp/pdfs/research-guide/
 tmp/pdfs/workshop-programme/
 tmp/feedback-qa/
+# Business corpus review previews, extracted pages and browser evidence.
+tmp/business-review/
 
 # transient topic-tag pipeline scratch (root)
 /_*.json
@@ -71,6 +73,7 @@ android/keystore.properties
 # predate this and stay tracked; gitignore does not untrack them.)
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
+examiner-reports/*/audio/*.mp3
 examiner-reports/*/supplements/
 # Arabic keeps a SECOND corpus, wider than the window it cards, because its
 # broken-font repair map is derived from every sitting the Paper Trail holds
@@ -92,3 +95,6 @@ tmp/waysin-audit.json
 
 # Purchased editable Kobra originals stay local; app runtime is compiled.
 components/kobra/
+
+# Reproducible English corpus extraction and PDF review intermediates.
+tmp/english-audit/

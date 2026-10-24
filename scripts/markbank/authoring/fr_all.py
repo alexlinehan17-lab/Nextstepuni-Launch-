@@ -321,10 +321,17 @@ GRID_EVIDENCE = (
 
 def _section_b(P, S, year, level, cards, refuse):
     gap = S.gap_fill() if level == 'ol' else None
+    reviewed_path = os.path.join(ROOT, 'data', 'examTopics', 'french-reviewed-tasks.json')
+    reviewed = json.load(open(reviewed_path, encoding='utf-8')) if os.path.exists(reviewed_path) else []
     for q, letter, text, page in P.section_b_asks():
         ref = question_ref(year, level, 'B', q, letter)
         if level == 'ol' and q == 1 and letter == 'a':
             if gap is None:
+                # The 2022 numbered list omits gap 10, but the separately
+                # reviewed completed letter explicitly supplies its answer.
+                if any(task['year'] == year and task['level'] == 'ordinary'
+                       and '-cloze-' in task['cardId'] for task in reviewed):
+                    continue
                 refuse('the scheme leaves one of the gap-fill answers blank, so the '
                        'set of answers it prints is incomplete', ref,
                        f'{year} {level.upper()} scheme, "(a) Filling Gaps – 30 '
@@ -332,6 +339,12 @@ def _section_b(P, S, year, level, cards, refuse):
                        f'printed as "10." with no word beside it')
                 continue
             cards.append(_gap_card(P, year, level, ref, text, page, gap))
+            continue
+        # Reviewed rubric cards are emitted separately; a published writing
+        # grid is now supported by the French renderer, not an exclusion.
+        parent = f'B{q}{(letter or "").upper()}'
+        if any(task['year'] == year and task['level'] == LEVEL_WORD[level]
+               and task['parent'] == parent for task in reviewed):
             continue
         refuse('the scheme prints a band grid for this ask, not an answer', ref,
                f'{year} {level.upper()} scheme, Section B: {GRID_EVIDENCE}')

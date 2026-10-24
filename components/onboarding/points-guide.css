@@ -1,0 +1,33 @@
+/* "How your points work": Kobra Dialog, Tabs and Progress; only layout and the
+   student's own marks live here. */
+.nsu-points-guide{display:inline-block}
+.nsu-points-guide .pg-trigger svg{width:15px;height:15px}
+
+.pg-dialog .pg-eyebrow{margin:0 0 6px;font:500 11px/1.4 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-foreground)}
+.pg-dialog [data-slot=dialog-title]{font-family:'Source Serif 4',Georgia,serif;font-weight:500;letter-spacing:-.02em}
+.pg-dialog .pg-dot{display:inline-block;width:6px;height:6px;margin-left:7px;border-radius:50%;background:var(--nsu-orange,#eb692a);vertical-align:2px}
+.pg-dialog .pg-tabs{margin-top:18px;display:grid;gap:14px}
+.pg-dialog .pg-panel{display:grid;gap:12px}
+.pg-dialog .pg-blurb{margin:0;font-size:13px;color:var(--muted-foreground)}
+
+.pg-dialog .pg-lines{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.pg-dialog .pg-line{display:grid;grid-template-columns:34px minmax(0,1fr) 38px 112px;align-items:center;gap:12px;min-height:40px;padding:0 10px;border-radius:10px;border:1px solid transparent}
+.pg-dialog .pg-code{font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.02em}
+.pg-dialog .pg-points{text-align:right;font:600 15px/1 'DM Sans',sans-serif;font-variant-numeric:tabular-nums}
+.pg-dialog .pg-bar{width:100%}
+.pg-dialog .pg-mark{display:flex;justify-content:flex-end;gap:6px;min-width:0}
+.pg-dialog .pg-mark em{font:600 11px/1 'DM Sans',sans-serif;font-style:normal;padding:4px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted-foreground);white-space:nowrap}
+.pg-dialog .pg-mark em[data-kind=target]{border-color:var(--nsu-orange,#eb692a);color:var(--nsu-orange,#eb692a)}
+.pg-dialog .pg-line[data-current]{background:var(--muted);border-color:var(--border)}
+.pg-dialog .pg-line[data-target]{background:color-mix(in srgb,var(--nsu-orange,#eb692a) 8%,transparent);border-color:color-mix(in srgb,var(--nsu-orange,#eb692a) 45%,transparent)}
+
+.pg-dialog .pg-notes{margin-top:18px;padding:16px 18px;border-radius:14px;background:var(--muted)}
+.pg-dialog .pg-notes-title{margin:0 0 10px;font:600 13px/1 'DM Sans',sans-serif}
+.pg-dialog .pg-notes ul{display:grid;gap:10px;margin:0;padding:0;list-style:none;font-size:13.5px;line-height:1.55;color:var(--muted-foreground)}
+.pg-dialog .pg-notes b{color:var(--foreground);font-weight:600}
+
+@media (max-width:560px){
+  .pg-dialog .pg-line{grid-template-columns:30px minmax(0,1fr) 34px;gap:10px;padding:0 8px}
+  .pg-dialog .pg-mark{grid-column:1 / -1;justify-content:flex-start;padding:0 0 8px 40px}
+  .pg-dialog .pg-mark:empty{display:none}
+}

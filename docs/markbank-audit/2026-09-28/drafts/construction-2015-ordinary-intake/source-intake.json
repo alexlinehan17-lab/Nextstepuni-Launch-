@@ -1,0 +1,423 @@
+{
+  "checkpoint": 588,
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "ordinary",
+  "lang": "ev",
+  "sitting": "main",
+  "paperKey": "single",
+  "fileid": "LC029GLP000EV.pdf",
+  "component": "theory",
+  "reviewedAt": "2026-10-07T20:27:33.253610+00:00",
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf": "6a5e6c2c39fcfc5d7d3d4eebae139ed927eaaaa16fb429d0eab333c3f0d7e99f",
+    "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf": "ca21a4dccfd47aea12de99758ce82058a9b33138a0ab9742dba1197b47364e07"
+  },
+  "sourcePages": [
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "page": 1,
+      "textSha256": "dac019a1956b8a2a278e0a3cd050c339b310cc1455c97eea93d51e78ddc63c28",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "page": 2,
+      "textSha256": "d0a525e79176612b6b63c86dabd3f45035f2f19b0606c746b8afe004a31d4a8d",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "page": 3,
+      "textSha256": "4ee895588b82c9b7953e4dac28ff8cd3060fc262b684c188646ed8ab0d9c931c",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/exampapers/2015/LC029GLP000EV.pdf",
+      "page": 4,
+      "textSha256": "d118a63313d9052bb22d4b4cc9195b267d9cac17a9ec53a9cfc2198a5ac8cc65",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 1,
+      "textSha256": "78b908c24b58580097852ebc1ac2c229ec81a043acb3f53b60cc044f447140c1",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 2,
+      "textSha256": "a9778132c6043d36628c0984f5447665329eed6c57357bb8f40e743d0d511db6",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 3,
+      "textSha256": "ecadbd57533885c5f7df6cc22aeb39c82b7f0949e69339b8a7c490872dbd25b2",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 4,
+      "textSha256": "931290567289095e71811be29df128c27c547eb652feaf84fe34f853caeabe56",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 5,
+      "textSha256": "4369e38199e1a7e33dcced0c2b5fe806b15ff5810bc503cc0ef5c0db34cff612",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 6,
+      "textSha256": "dd0a1e37c2e39dfff513157636176498874724350f77c7f268ee856a1cf0a076",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 7,
+      "textSha256": "410fb05abf1c0d66e8040712f56fbb554610a8cc311de1b9be378e480a4d98d0",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 8,
+      "textSha256": "c424234c95dae0f97da2d88e497a07d21a4a7ae459dee2422ba3c88fb837acd0",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 9,
+      "textSha256": "d8be26e10b2cbf2960e62325c18672acbe62eaf27fe62860e3f4d174cace2808",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 10,
+      "textSha256": "47c1503fe7d61ead0685ec1e8f3f6581d876755dffb1ba8159b4027a88bc0d27",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 11,
+      "textSha256": "ecdc3834e0255edc81c9751f0a41aababb4b4c81e085eed7992222ede2a58493",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 12,
+      "textSha256": "e1d2c1f920e2969df207a5bf452a404efcaf2c6ab5676ad89385451227eb88c5",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 13,
+      "textSha256": "1f6f44eee6f2a13820a32639ef79224bef5464c7033c369cb28e2846bf13227b",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 14,
+      "textSha256": "323a042601652595de451a722c71458c014b5d7e9246673a62b3f907ce23fc17",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 15,
+      "textSha256": "4eada6efb01d1d5f84e44cbc4f4281f93b4d46e7665e704a5a92176091552563",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 16,
+      "textSha256": "9d3d35679eb299b3e2c964afc0c8759d63001444b42cf1787bc8daec5b2ef892",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 17,
+      "textSha256": "91261b3e122a44f32d4e3fb8a71abcdbb01bc17eb12e6b5ecd3cd9295bb4ab63",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 18,
+      "textSha256": "0147ccdbaf256612278b2e7a6d7c5632efe74ff2edc90dedf68ff46327e3da16",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 19,
+      "textSha256": "f2d95c4971b3c931c52d23cbe88f18e15e2c8dedaa13c74ca9d8ed0dec878bef",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 20,
+      "textSha256": "a1224aec25d85cee8f1eef7a13f392ffaa0734835f74bc2ac7f285160968832a",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 21,
+      "textSha256": "5853ed36a040f5bd0e09d37345afbb5a56163811d5cf3423156bb3d4dd03eaaf",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 22,
+      "textSha256": "ee6fd3e4ba06f1e00232262f1b9df9e268318245ce0e2aeb9224750fbff8b41c",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 23,
+      "textSha256": "77d878cd28dbd636cb71f52cf2f93a2c208c65f031510ba0a3e945f670fb5f41",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 24,
+      "textSha256": "a8c0c676a9835688b7fb70fe7fc203ff23e93c29b947c682d3d44a8c63b807d3",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 25,
+      "textSha256": "c47ebd6849539a664259a6698ba4dc710dba3f23c0898db6dfb0f2e0e699482a",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 26,
+      "textSha256": "2bd70e4d392664f32da7eccc72a66d26e2a800e23fb7ee78c031a7026a12f888",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 27,
+      "textSha256": "af7842fb4a682db156c9d46d9bfd47bbe644b4e93c4c01028a9292d7ac38235c",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 28,
+      "textSha256": "f1bd97c3823e6b177080c33c2ca986936ee310ff3b76b3fbaaee5ee18bf82075",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 29,
+      "textSha256": "fe65d7330b785964d0e1a946254b534988bf4048fe4714ce53bcc6085ca813f3",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 30,
+      "textSha256": "253ef0a54e0b4d55620e33bbe0f5ee276a92ab5fb38bd0418010a33fe03e9050",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 31,
+      "textSha256": "f2a27f64b98551374b73c0c1b5500ca03245bd021962712a920a9bb086e8f07b",
+      "visuallyReviewed": false
+    },
+    {
+      "file": "paper-trail-corpus/markingschemes/2015/LC029GLP000EV.pdf",
+      "page": 32,
+      "textSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "visuallyReviewed": false
+    }
+  ],
+  "reviewMethod": "Same-operator source-first visual review of paper1–3 and all theory model/tariff pages4–25. Front matter, blank pages and practical are inventoried, not claimed as fully reviewed here.",
+  "questions": [
+    {
+      "q": "1",
+      "paper": 2,
+      "scheme": [
+        4,
+        17
+      ],
+      "boundaries": {
+        "drawingDetails": 36,
+        "fourDimensions": 4,
+        "wallplateFixing": 2,
+        "sharedPresentation": 8,
+        "whole": 50
+      },
+      "notes": [
+        "Best nine indicative details at4each, no imported Higher drawing3/annotation1 split.",
+        "Shared draughting/accuracy/scale8 is printed after(b): keep at whole-question scope, band0/4/6/8. Candidate split a40,b2,whole50 withshared8, subject to final source review.",
+        "Scale1:5;2.0m internal width;30°pitch;400mmwall/200mmfull-fillcavity;200×40raftersandjoists;insulatedplasterboardUNDERceilingjoists. Section400mmbelowwallplatetoridge;threeTILEcourses;fourdimensions;no frontdoor."
+      ]
+    },
+    {
+      "q": "2",
+      "paper": 2,
+      "scheme": [
+        5,
+        18
+      ],
+      "boundaries": {
+        "aCavity": 20,
+        "aExternal": 20,
+        "a": 40,
+        "b": 10,
+        "whole": 50
+      },
+      "notes": [
+        "BOTH systems required, not either/or. Each threevalidnotes4each plusqualitysketch8(0/4/6/8). Twoopenadvantages5each. Original300mmblockwall100mmemptycavity,over40yearsold."
+      ]
+    },
+    {
+      "q": "3",
+      "paper": 2,
+      "scheme": [
+        6,
+        19
+      ],
+      "boundaries": {
+        "a": 40,
+        "b": 10,
+        "whole": 50
+      },
+      "notes": [
+        "a best8details4each=32 plus sketchquality8, explicitly before(b). Preserve hotANDcoldmixershower,coldtoilet,risingmain,storage/cylinder,valvesANDtank/pipeinsulation. b twoopenconservationmethods5each;sharednotes/sketchmethod,notinvented2+3."
+      ]
+    },
+    {
+      "q": "4",
+      "paper": 2,
+      "scheme": [
+        7,
+        8,
+        20
+      ],
+      "boundaries": {
+        "a": 20,
+        "bEntrance": 4,
+        "bDriveway": 4,
+        "bSeptic": 4,
+        "b": 12,
+        "c": 18,
+        "whole": 50
+      },
+      "notes": [
+        "a fourdetails3each plusquality8;one integratedsitemap. b three separately specified reasons4each. c twotreetypes2each+placementsketchquality8+twoadvantages3each. Open species/design responses, no finite choice pool.",
+        "Preserve original north/siteA/houseB/roadC–C drawing. Scheme gives alternative models. Old location-distance examples are not current legal guidance; avoid blanketclaim everylistedtreefitsallsoils."
+      ]
+    },
+    {
+      "q": "5",
+      "paper": 3,
+      "scheme": [
+        9,
+        21
+      ],
+      "boundaries": {
+        "aDetails": 35,
+        "aDimensions": 4,
+        "bWallAndFloorInsulation": 3,
+        "sharedPresentation": 8,
+        "whole": 50
+      },
+      "notes": [
+        "Best7details5each, notall14. b wallANDfloor insulation shares3, no separate3each. Presentation0/4/6/8 remainswholequestion scope. Candidate a39,b3,whole50 plusshared8.",
+        "Scale1:5,foundationbottomto400mmabovefloor;100mmouterleaf,50mmcavity,200mmtimberinnerleaf,20mmquarrytiles,radonbarrier,fourdimensions."
+      ]
+    },
+    {
+      "q": "6",
+      "paper": 3,
+      "scheme": [
+        10,
+        11,
+        22
+      ],
+      "boundaries": {
+        "aHand": 8,
+        "aEar": 8,
+        "aEye": 8,
+        "a": 24,
+        "bHand": 4,
+        "bEar": 4,
+        "bEye": 4,
+        "b": 12,
+        "c": 14,
+        "whole": 50
+      },
+      "notes": [
+        "Three required PPE categories; separate8marksketches, eachquality0/4/6/8;three specific siteactivities4each. ctwoopenclassroomactivities7each. Examples not closed routes; retain sign illustrations. Do not broaden a historical example into general machine-safety advice."
+      ]
+    },
+    {
+      "q": "7",
+      "paper": 3,
+      "scheme": [
+        11,
+        12,
+        23
+      ],
+      "boundaries": {
+        "a": 20,
+        "bAdvantages": 10,
+        "bDisadvantages": 10,
+        "b": 20,
+        "c": 10,
+        "whole": 50
+      },
+      "notes": [
+        "a notes6+6 andsketchquality8. bTWOadvantages5eachANDTWOdisadvantages5each. cTWOopenreasons5each. Rainwaterbutt notpotable-supplyclaim; preserve roof/gutter/downpipe/diverter/overflow/storage diagram."
+      ]
+    },
+    {
+      "q": "8",
+      "paper": 3,
+      "scheme": [
+        12,
+        13,
+        14,
+        15,
+        24
+      ],
+      "boundaries": {
+        "eachTerm": 10,
+        "whole": 50
+      },
+      "notes": [
+        "Nine individually practicable10markterms AND all126choose-five50markroutes. Each term primary relevant communication6 +othercommunication4; doNOTinvent fixednotes6/sketch4. Bothnotesandfreehandsketches asked.",
+        "Allsourceillustrations needed, including bothsolarcollectors andbothseasoningmodels. Solarthermal andphotovoltaic differ; generic solar panel permits coherentexplanation ofeither,butPVmakes electricity notheat. Radonbarrier iscontinuoussealedlayer; no claimallDPMisradon-rated."
+      ]
+    },
+    {
+      "q": "9",
+      "paper": 3,
+      "scheme": [
+        15,
+        16,
+        25
+      ],
+      "boundaries": {
+        "a": 16,
+        "b": 16,
+        "cFinish": 4,
+        "cPreparationAndApplication": 14,
+        "c": 18,
+        "whole": 50
+      },
+      "notes": [
+        "a suitablejoint4,reason4,sketchquality8. btwofeatures4each andsharedsketch8. cfinish4,twoapplication/preparationdetails5each,sketchquality4with0/2/3/4. Openjoint/finish/designresponses, no finite menu. Retain original tabletop/rail/leg andcompletejoinery/finishingillustrations."
+      ]
+    }
+  ],
+  "wholeQuestionMarks": 50,
+  "examMarks": 200,
+  "finiteWholeQuestionRoutes": 134,
+  "selectionLedger": "selection-ledger.json",
+  "runtimeAdded": 0,
+  "status": "Source intake ready; no Ordinary2015cards authored or runtime changes yet.",
+  "scratch": "/tmp/construction588",
+  "next": "Author Q1 from original drawing and scheme with shared whole-question presentation allowance, then Q2–Q9. Card and exact Atlas original-question associations together. All original607authoredcards must remain unchanged. Practical pages27–30 andIrishparity are separate work."
+}

@@ -1,0 +1,2024 @@
+{
+  "subject": "french",
+  "paperVariants": 98,
+  "carded": 68,
+  "deferred": 30,
+  "byEdition": {
+    "ev Aural Paper": 34,
+    "ev Exam Paper": 34,
+    "iv Aural Paper": 14,
+    "iv Exam Paper": 16
+  },
+  "rule": "Every Paper Trail variant is carded (English edition: byte-identical source, cards and Atlas tasks citing the file, zero open asks for its sitting) or deferred with a written reason.",
+  "variants": [
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2026/LC010ALP000BV.pdf",
+      "paperSha256": "75ac17b71dd805f7667b389a6d65c89ff3c68bacdf2b10abd07c790f6c87e768",
+      "scheme": "markingschemes/2026/LC010ALP000EV.pdf",
+      "schemeSha256": "13405a67c87128fcf49ff3ce98ba49f3afd77f4e4611f1e020ad5373053926a3",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2026-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2026-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2026,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2026/LC010ALPA00BV.pdf",
+      "paperSha256": "3e770a350b68af6d8acddc6a78c792977480898f9c5139967ae2faf20fa6af44",
+      "scheme": "markingschemes/2026/LC010ALP000EV.pdf",
+      "schemeSha256": "13405a67c87128fcf49ff3ce98ba49f3afd77f4e4611f1e020ad5373053926a3",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2026-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2026-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2026/LC010GLP000BV.pdf",
+      "paperSha256": "ede242e0aa983f8784877602a8a9fa151f165a1d88daa76b15dc98d436a84fb4",
+      "scheme": "markingschemes/2026/LC010GLP000EV.pdf",
+      "schemeSha256": "15fc31a3a83e6e3d614bac20f1813f7462f9cb90b566e7b97e61bcdd6b368f15",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2026-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2026-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2026,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2026/LC010GLPA00BV.pdf",
+      "paperSha256": "6d08136546aec6b0a46166110b2fd37fc24342625ed48cf03bf9f8adee95a9d9",
+      "scheme": "markingschemes/2026/LC010GLP000EV.pdf",
+      "schemeSha256": "15fc31a3a83e6e3d614bac20f1813f7462f9cb90b566e7b97e61bcdd6b368f15",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2026-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2026-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2025/LC010ALP000BV.pdf",
+      "paperSha256": "245769e43a3856acccf5b8aaa06b107ace8bf15085c50cbf2b41c35a0a3aa715",
+      "scheme": "markingschemes/2025/LC010ALP000EV.pdf",
+      "schemeSha256": "6f1920f63f40b3bf2d6c80fc84705193c7050583abd23ec703adaf6ad9fdb535",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2025-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2025-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2025,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2025/LC010ALPA00BV.pdf",
+      "paperSha256": "c6f2256665ad0ef915808e1bb3c9de0c93101e76f25ae7a47c34bbbd52b0e42d",
+      "scheme": "markingschemes/2025/LC010ALP000EV.pdf",
+      "schemeSha256": "6f1920f63f40b3bf2d6c80fc84705193c7050583abd23ec703adaf6ad9fdb535",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2025-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2025-hl.pdf",
+      "cards": {
+        "listening": 21
+      },
+      "atlasTasks": 21,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2025/LC010GLP000BV.pdf",
+      "paperSha256": "382bfb8b67848bcb1c772d245ed99bd9a3a241ffef8b5971c4b3d468b59ea764",
+      "scheme": "markingschemes/2025/LC010GLP000EV.pdf",
+      "schemeSha256": "c09f4c7db1e33b0314f0cf5461b76fde5f7c99df4f04dd3d99776f947d791980",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2025-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2025-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10,
+        "legacyCloze": 1
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2025,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2025/LC010GLPA00BV.pdf",
+      "paperSha256": "30cf348e444cd7063cc0c085331e6e4d65e3728e76ef0757716088e35cfc4904",
+      "scheme": "markingschemes/2025/LC010GLP000EV.pdf",
+      "schemeSha256": "c09f4c7db1e33b0314f0cf5461b76fde5f7c99df4f04dd3d99776f947d791980",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2025-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2025-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2024/LC010ALP000BV.pdf",
+      "paperSha256": "763a3491be6a1b46a50f894f888541aa402a94276b670bd945e5a5c1a507e268",
+      "scheme": "markingschemes/2024/LC010ALP000EV.pdf",
+      "schemeSha256": "219ee8187ba5c764833ab6d6a2734014fc0c6f4f9a5813421d43fbc74e54a6cc",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2024-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2024-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2024,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2024/LC010ALPA00BV.pdf",
+      "paperSha256": "0c3b4b311e54f0785b910435699e7dac289bdfa20c1d40dd86f9fe0e02e6c234",
+      "scheme": "markingschemes/2024/LC010ALP000EV.pdf",
+      "schemeSha256": "219ee8187ba5c764833ab6d6a2734014fc0c6f4f9a5813421d43fbc74e54a6cc",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2024-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2024-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2024/LC010GLP000BV.pdf",
+      "paperSha256": "7f587ddf13dce38cb665504faff42a80e23712db6d9cb40cd7e2050e00914979",
+      "scheme": "markingschemes/2024/LC010GLP000EV.pdf",
+      "schemeSha256": "d390b86fe38978c9a0b72e5bcd9dd0563a29ddd06d6d8842d6f4d5989a827df1",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2024-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2024-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10,
+        "legacyCloze": 1
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2024,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2024/LC010GLPA00BV.pdf",
+      "paperSha256": "338353885cc7ada064cc7088c6646919362bea17cffd4bcedf0058903174951b",
+      "scheme": "markingschemes/2024/LC010GLP000EV.pdf",
+      "schemeSha256": "d390b86fe38978c9a0b72e5bcd9dd0563a29ddd06d6d8842d6f4d5989a827df1",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2024-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2024-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2023/LC010ALP000BV.pdf",
+      "paperSha256": "332bcbdd20d3f8e61f486e15d83a48e2bf0aacea7017f09a01aa31a1348826ad",
+      "scheme": "markingschemes/2023/LC010ALP000EV.pdf",
+      "schemeSha256": "7d968c691a28cc71175d9430d8778fe90359a3a6f16ffe3c238b63346920395c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2023-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2023-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2023,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2023/LC010ALPA00BV.pdf",
+      "paperSha256": "d952a510a25108f5d681927259c29342a38d1b55b534fdc88d58fc18677b818b",
+      "scheme": "markingschemes/2023/LC010ALP000EV.pdf",
+      "schemeSha256": "7d968c691a28cc71175d9430d8778fe90359a3a6f16ffe3c238b63346920395c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2023-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2023-hl.pdf",
+      "cards": {
+        "listening": 21
+      },
+      "atlasTasks": 21,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2023/LC010GLP000BV.pdf",
+      "paperSha256": "2d088317280f63688ea6b408f7af9131dc16b12c99dc9c8097c0938576c3571f",
+      "scheme": "markingschemes/2023/LC010GLP000EV.pdf",
+      "schemeSha256": "87e25b1c07f8b7040ccb0fffb2d21f0f41f54f646f680aeb4a331c5480b9d863",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2023-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2023-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10,
+        "legacyCloze": 1
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2023,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2023/LC010GLPA00BV.pdf",
+      "paperSha256": "8787ed5f560dbdafb0e799fca8e5a6c8a6d3c2e0e388a121273fcc5d5eedc8d5",
+      "scheme": "markingschemes/2023/LC010GLP000EV.pdf",
+      "schemeSha256": "87e25b1c07f8b7040ccb0fffb2d21f0f41f54f646f680aeb4a331c5480b9d863",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2023-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2023-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2022/LC010ALP000BV.pdf",
+      "paperSha256": "ade4bb9b719cebaf63b36942a3d41fcaff240430e1052ac2a9812cb6d44e8a3c",
+      "scheme": "markingschemes/2022/LC010ALP000EV.pdf",
+      "schemeSha256": "0d3d6902d2df698d829aab8e960317584b883f1d3e4e51dc0564bb272c0b8139",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2022-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2022-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2022,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2022/LC010ALPA00BV.pdf",
+      "paperSha256": "3083d01b08bde5e5872b8e24734fd1e313ab8a6a0f896f63921f6d88fb4f93a3",
+      "scheme": "markingschemes/2022/LC010ALP000EV.pdf",
+      "schemeSha256": "0d3d6902d2df698d829aab8e960317584b883f1d3e4e51dc0564bb272c0b8139",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2022-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2022-hl.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2022/LC010GLP000BV.pdf",
+      "paperSha256": "8379e3101de945ce7d061b1e1a76e96cac6c8dbc44c721aed95929f9c2d9d19a",
+      "scheme": "markingschemes/2022/LC010GLP000EV.pdf",
+      "schemeSha256": "beda30ae2b8e6b919afeb960903e5bdbb46982921b12987846f532b0cb126dad",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2022-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2022-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 34,
+        "cloze": 10
+      },
+      "atlasTasks": 54,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2022,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2022/LC010GLPA00BV.pdf",
+      "paperSha256": "c0f9a782b4d8777b3b7599da1f4bfcf4385cf6487c37cab9a210181e3e5fa1fc",
+      "scheme": "markingschemes/2022/LC010GLP000EV.pdf",
+      "schemeSha256": "beda30ae2b8e6b919afeb960903e5bdbb46982921b12987846f532b0cb126dad",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2022-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2022-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2021/LC010ALP000BV.pdf",
+      "paperSha256": "ca63a09a0533dc98d565839024f251cb0ad4b01d78015d11278c149ed9519974",
+      "scheme": "markingschemes/2021/LC010ALP000EV.pdf",
+      "schemeSha256": "f96b4055732d9826aa0af74af4c17f7b2c66e44ed50f036a59d338868ab6c7bc",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2021-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2021-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2021,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2021/LC010ALPA00BV.pdf",
+      "paperSha256": "99d9b7c965b74f7e0001389c95953ad91d7c2dcb8179b53129b7bf6051d8761c",
+      "scheme": "markingschemes/2021/LC010ALP000EV.pdf",
+      "schemeSha256": "f96b4055732d9826aa0af74af4c17f7b2c66e44ed50f036a59d338868ab6c7bc",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2021-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2021-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2021/LC010GLP000BV.pdf",
+      "paperSha256": "32e99cc50a223e19ea01bb6a6662a0e4fa4a5c56ad579df41c52ba6511fa8aaf",
+      "scheme": "markingschemes/2021/LC010GLP000EV.pdf",
+      "schemeSha256": "abaa99c727041369a7f94b06d4258f0f167403ab6131c2daa271cc3a1473c762",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2021-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2021-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10,
+        "legacyCloze": 1
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2021,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2021/LC010GLPA00BV.pdf",
+      "paperSha256": "2b4e88c59706b128d0c949e69fd3e7b69b43046cda6243df5ef9766c68ca7c49",
+      "scheme": "markingschemes/2021/LC010GLP000EV.pdf",
+      "schemeSha256": "abaa99c727041369a7f94b06d4258f0f167403ab6131c2daa271cc3a1473c762",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2021-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2021-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2020/LC010ALP000BV.pdf",
+      "paperSha256": "edd759d70996831aa8a06183bd731bbaab4a6afde3359871b43873d6e2ed2bca",
+      "scheme": "markingschemes/2020/LC010ALP000EV.pdf",
+      "schemeSha256": "2b49a3ffbf024de41ae7c9d4fd0eec83c83ce8899d6b89d42a41afaf90a3a66a",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2020-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2020-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2020,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2020/LC010ALPA00BV.pdf",
+      "paperSha256": "babae5b03a467f405b791cdc886b211fa996ea43f48d2e4ebd508a7575fa8528",
+      "scheme": "markingschemes/2020/LC010ALP000EV.pdf",
+      "schemeSha256": "2b49a3ffbf024de41ae7c9d4fd0eec83c83ce8899d6b89d42a41afaf90a3a66a",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2020-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2020-hl.pdf",
+      "cards": {
+        "listening": 21
+      },
+      "atlasTasks": 21,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2020/LC010GLP000BV.pdf",
+      "paperSha256": "caf1d9c877713de4e89a442f7aad696413089c5b00c9e336385c2c803ef5e71b",
+      "scheme": "markingschemes/2020/LC010GLP000EV.pdf",
+      "schemeSha256": "c74939532c97afcf6b20aba6a2f130684443d9d2eb8c5cbb027f7e789e16a67c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2020-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2020-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2020,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2020/LC010GLPA00BV.pdf",
+      "paperSha256": "3aa3c51bbc46f9d9bbf79b98d9ee6bffbd2b72816a80345aa8c2491da53c9f60",
+      "scheme": "markingschemes/2020/LC010GLP000EV.pdf",
+      "schemeSha256": "c74939532c97afcf6b20aba6a2f130684443d9d2eb8c5cbb027f7e789e16a67c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2020-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2020-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2019/LC010ALP000BV.pdf",
+      "paperSha256": "d0c760ac0e85cbd8926aeac2eb7587ef4f7ee6cd38dbf09a8a42f323c63c6367",
+      "scheme": "markingschemes/2019/LC010ALP000EV.pdf",
+      "schemeSha256": "b691ad1036b61d5da864e2ddf646771ee4d9ef7aeeacbeaf252d6b21d403f5e0",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2019-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2019-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 21
+      },
+      "atlasTasks": 29,
+      "sittingCensus": {
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2019,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2019/LC010ALPA00BV.pdf",
+      "paperSha256": "448fd24e30389ec1b8b08fb8d60e4d70ceabd9255799971f6b523423b41b29c3",
+      "scheme": "markingschemes/2019/LC010ALP000EV.pdf",
+      "schemeSha256": "b691ad1036b61d5da864e2ddf646771ee4d9ef7aeeacbeaf252d6b21d403f5e0",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2019-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2019-hl.pdf",
+      "cards": {
+        "listening": 21
+      },
+      "atlasTasks": 21,
+      "sittingCensus": {
+        "leaves": 50,
+        "covered": 50,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2019/LC010GLP000BV.pdf",
+      "paperSha256": "438a1121ce5e2556ec1af69e927f574527cf4c4789ae29ac5b000c7853326283",
+      "scheme": "markingschemes/2019/LC010GLP000EV.pdf",
+      "schemeSha256": "4f2e9eb006e10cbd8433e0154b693c8d939a190963f55ddb5ae56caa7730a2c1",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2019-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2019-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2019,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2019/LC010GLPA00BV.pdf",
+      "paperSha256": "62aceb420a8184da305cfbefa46ddac86c21d9d0b88d6557f1012c6a571d350b",
+      "scheme": "markingschemes/2019/LC010GLP000EV.pdf",
+      "schemeSha256": "4f2e9eb006e10cbd8433e0154b693c8d939a190963f55ddb5ae56caa7730a2c1",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2019-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2019-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2018/LC010ALP000EV.pdf",
+      "paperSha256": "124bef52eb8f91718bdfe532881d9e8e3d9e6731b0ab69223875c44be99777d3",
+      "scheme": "markingschemes/2018/LC010ALP000EV.pdf",
+      "schemeSha256": "b7e439b693dd3ab593ef96ba83a6ebe493eda611d4d9d26653e8846f9acc6b4d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2018-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2018-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2018/LC010ALPA00EV.pdf",
+      "paperSha256": "5f6ecd47404cb0c8c587cbfb5aa902ca31bebb4b79f3b9a0bae1ba19bc0d060d",
+      "scheme": "markingschemes/2018/LC010ALP000EV.pdf",
+      "schemeSha256": "b7e439b693dd3ab593ef96ba83a6ebe493eda611d4d9d26653e8846f9acc6b4d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2018-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2018-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2018/LC010ALP000IV.pdf",
+      "paperSha256": "124bef52eb8f91718bdfe532881d9e8e3d9e6731b0ab69223875c44be99777d3",
+      "scheme": "markingschemes/2018/LC010ALP000IV.pdf",
+      "schemeSha256": "53be2ffc4e9c00419c3aafc45ce1307b41aecbb378ae38058ca444e99ab4c8d6",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2018/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2018,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2018/LC010ALPA00IV.pdf",
+      "paperSha256": "5f6ecd47404cb0c8c587cbfb5aa902ca31bebb4b79f3b9a0bae1ba19bc0d060d",
+      "scheme": "markingschemes/2018/LC010ALP000IV.pdf",
+      "schemeSha256": "53be2ffc4e9c00419c3aafc45ce1307b41aecbb378ae38058ca444e99ab4c8d6",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2018/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2018/LC010GLP000EV.pdf",
+      "paperSha256": "f71ac58bc1cede7e93b31d1e1b1cad996df3035f834af1e8ee43f376ad17052a",
+      "scheme": "markingschemes/2018/LC010GLP000EV.pdf",
+      "schemeSha256": "79bb9b5d8c7699de280089844564c39771ab331b38d667319e2385aa13f83c52",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2018-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2018-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 34,
+        "cloze": 10
+      },
+      "atlasTasks": 54,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2018/LC010GLPA00EV.pdf",
+      "paperSha256": "11438c5169fd1d239aa9237960010af4d72de194d8e4d864e7dd48eb02fdb2e6",
+      "scheme": "markingschemes/2018/LC010GLP000EV.pdf",
+      "schemeSha256": "79bb9b5d8c7699de280089844564c39771ab331b38d667319e2385aa13f83c52",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2018-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2018-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2018/LC010GLP000IV.pdf",
+      "paperSha256": "f71ac58bc1cede7e93b31d1e1b1cad996df3035f834af1e8ee43f376ad17052a",
+      "scheme": "markingschemes/2018/LC010GLP000IV.pdf",
+      "schemeSha256": "f85b3e5bde2a74e7cea019bb3534a116d28bc57a9ccd539b38883f195c3cf164",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2018/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2018,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2018/LC010GLPA00IV.pdf",
+      "paperSha256": "11438c5169fd1d239aa9237960010af4d72de194d8e4d864e7dd48eb02fdb2e6",
+      "scheme": "markingschemes/2018/LC010GLP000IV.pdf",
+      "schemeSha256": "f85b3e5bde2a74e7cea019bb3534a116d28bc57a9ccd539b38883f195c3cf164",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2018/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2017/LC010ALP000EV.pdf",
+      "paperSha256": "c178d05d68583116e2975d1d34a531727f6574fb7b06da16d68535c8f4133eab",
+      "scheme": "markingschemes/2017/LC010ALP000EV.pdf",
+      "schemeSha256": "1c5540d8f392b1f49ef310f16f79c8180ae3d8ca870a40bc46a6e53d75c68f3f",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2017-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2017-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2017/LC010ALPA00EV.pdf",
+      "paperSha256": "f816044f7d02479db4755322161acd759078d19163a41a6eb8a5549a75fb80ac",
+      "scheme": "markingschemes/2017/LC010ALP000EV.pdf",
+      "schemeSha256": "1c5540d8f392b1f49ef310f16f79c8180ae3d8ca870a40bc46a6e53d75c68f3f",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2017-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2017-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2017/LC010ALP000IV.pdf",
+      "paperSha256": "c178d05d68583116e2975d1d34a531727f6574fb7b06da16d68535c8f4133eab",
+      "scheme": "markingschemes/2017/LC010ALP000IV.pdf",
+      "schemeSha256": "8dfc147f4a0c17a1c73f8e85ea1cb6308526903e5422e32041b0caf6eb39adbe",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2017/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2017,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2017/LC010ALPA00IV.pdf",
+      "paperSha256": "f816044f7d02479db4755322161acd759078d19163a41a6eb8a5549a75fb80ac",
+      "scheme": "markingschemes/2017/LC010ALP000IV.pdf",
+      "schemeSha256": "8dfc147f4a0c17a1c73f8e85ea1cb6308526903e5422e32041b0caf6eb39adbe",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2017/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2017/LC010GLP000EV.pdf",
+      "paperSha256": "6f4dd599b90255647e3f01b2c3b29e525236ce8ca0647921411c9a52ab090e34",
+      "scheme": "markingschemes/2017/LC010GLP000EV.pdf",
+      "schemeSha256": "d6e9f3cd1fe11308693adbed741ecef63216e7e828d7efa9fee12bbf0fcc6c0d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2017-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2017-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2017/LC010GLPA00EV.pdf",
+      "paperSha256": "e5a4a74a89633b25b9cf879e53ccdfe8f517cf5b9583149605857983a329f0bd",
+      "scheme": "markingschemes/2017/LC010GLP000EV.pdf",
+      "schemeSha256": "d6e9f3cd1fe11308693adbed741ecef63216e7e828d7efa9fee12bbf0fcc6c0d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2017-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2017-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2017/LC010GLP000IV.pdf",
+      "paperSha256": "6f4dd599b90255647e3f01b2c3b29e525236ce8ca0647921411c9a52ab090e34",
+      "scheme": "markingschemes/2017/LC010GLP000IV.pdf",
+      "schemeSha256": "96e3c2c0f8a90bc5d3fc48884af8cbcd9b96cb68467fd4a56cf0885d0d7a9695",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2017/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2017,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2017/LC010GLPA00IV.pdf",
+      "paperSha256": "e5a4a74a89633b25b9cf879e53ccdfe8f517cf5b9583149605857983a329f0bd",
+      "scheme": "markingschemes/2017/LC010GLP000IV.pdf",
+      "schemeSha256": "96e3c2c0f8a90bc5d3fc48884af8cbcd9b96cb68467fd4a56cf0885d0d7a9695",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2017/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2016/LC010ALP000EV.pdf",
+      "paperSha256": "0a584d304da1ec9e742365688ad1ac4344e1ceff468e1d830e43d647ed18810f",
+      "scheme": "markingschemes/2016/LC010ALP000EV.pdf",
+      "schemeSha256": "27478d7e3486b1a9cff65a8d95a6c4255b26f31511c53d6b1fb6bcbe0de614b3",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2016-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2016-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2016/LC010ALPA00EV.pdf",
+      "paperSha256": "c44b8fe489375cc2bfc8f12fd89b782309d5fd69f55c326cb4e86f191c0a529f",
+      "scheme": "markingschemes/2016/LC010ALP000EV.pdf",
+      "schemeSha256": "27478d7e3486b1a9cff65a8d95a6c4255b26f31511c53d6b1fb6bcbe0de614b3",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2016-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2016-hl.pdf",
+      "cards": {
+        "listening": 22
+      },
+      "atlasTasks": 22,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2016/LC010ALP000IV.pdf",
+      "paperSha256": "0a584d304da1ec9e742365688ad1ac4344e1ceff468e1d830e43d647ed18810f",
+      "scheme": "markingschemes/2016/LC010ALP000IV.pdf",
+      "schemeSha256": "c3be6d925a4ddd2fc4c106e8b25929aaf8c84a946c21d1ccee877122ede1c283",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2016/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2016,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2016/LC010ALPA00IV.pdf",
+      "paperSha256": "c44b8fe489375cc2bfc8f12fd89b782309d5fd69f55c326cb4e86f191c0a529f",
+      "scheme": "markingschemes/2016/LC010ALP000IV.pdf",
+      "schemeSha256": "c3be6d925a4ddd2fc4c106e8b25929aaf8c84a946c21d1ccee877122ede1c283",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2016/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2016/LC010GLP000EV.pdf",
+      "paperSha256": "712a0d3f9c58b022abde8040f88683eac4f88e7eef6654e3cfa9939059838161",
+      "scheme": "markingschemes/2016/LC010GLP000EV.pdf",
+      "schemeSha256": "619b06c0c1ea0fcdb5c768ed0b102dd2b034c70297f24709ac55b2866f58bb2d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2016-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2016-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 34,
+        "cloze": 10
+      },
+      "atlasTasks": 54,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2016/LC010GLPA00EV.pdf",
+      "paperSha256": "015c1674fc124e5f732b1ed0c68a416d86ed001ceecd4d6e92c32bb952f5f3b4",
+      "scheme": "markingschemes/2016/LC010GLP000EV.pdf",
+      "schemeSha256": "619b06c0c1ea0fcdb5c768ed0b102dd2b034c70297f24709ac55b2866f58bb2d",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2016-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2016-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2016/LC010GLP000IV.pdf",
+      "paperSha256": "712a0d3f9c58b022abde8040f88683eac4f88e7eef6654e3cfa9939059838161",
+      "scheme": "markingschemes/2016/LC010GLP000IV.pdf",
+      "schemeSha256": "d28f433342fa5d5e191f30d94d96aec859034e84fbc7c5091e45d6c3099aabc8",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2016/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2016,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2016/LC010GLPA00IV.pdf",
+      "paperSha256": "015c1674fc124e5f732b1ed0c68a416d86ed001ceecd4d6e92c32bb952f5f3b4",
+      "scheme": "markingschemes/2016/LC010GLP000IV.pdf",
+      "schemeSha256": "d28f433342fa5d5e191f30d94d96aec859034e84fbc7c5091e45d6c3099aabc8",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2016/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2015/LC010ALP000EV.pdf",
+      "paperSha256": "a2442a72d838036951ff48dd96691bcd989a58e41f8fdcd972ead27aaf7b0a4d",
+      "scheme": "markingschemes/2015/LC010ALP000EV.pdf",
+      "schemeSha256": "ea67963a30db12d5d0a2b93ccc1ca6a0559a2583de33ec85f4cdaef6fb297235",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2015-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2015-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 21
+      },
+      "atlasTasks": 29,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2015/LC010ALPA00EV.pdf",
+      "paperSha256": "528734f71195b650d53a8cdd970a85debff38670f35b6e37d10e116f3da18c6c",
+      "scheme": "markingschemes/2015/LC010ALP000EV.pdf",
+      "schemeSha256": "ea67963a30db12d5d0a2b93ccc1ca6a0559a2583de33ec85f4cdaef6fb297235",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2015-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2015-hl.pdf",
+      "cards": {
+        "listening": 23
+      },
+      "atlasTasks": 23,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2015,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2015/LC010ALPA00IV.pdf",
+      "paperSha256": "528734f71195b650d53a8cdd970a85debff38670f35b6e37d10e116f3da18c6c",
+      "scheme": "markingschemes/2015/LC010ALP000IV.pdf",
+      "schemeSha256": "124692a7d60719b53699e9d9f430f030039e24cf4b1b7c897ade9e2538b7aa22",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2015/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2015/LC010GLP000EV.pdf",
+      "paperSha256": "c035611b1f9da0072302fd833e6fb8bc4636de51c053fadabe72ce7521724178",
+      "scheme": "markingschemes/2015/LC010GLP000EV.pdf",
+      "schemeSha256": "ad24f18961500e6c6c36130f4d048e462a58d3b63982637482d34f02efd3a11c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2015-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2015-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 26,
+        "cloze": 10
+      },
+      "atlasTasks": 46,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2015/LC010GLPA00EV.pdf",
+      "paperSha256": "aaae987ef936fded0787ce8d44b7c03c3b72516e8c976f0b1c63e6f443cead04",
+      "scheme": "markingschemes/2015/LC010GLP000EV.pdf",
+      "schemeSha256": "ad24f18961500e6c6c36130f4d048e462a58d3b63982637482d34f02efd3a11c",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2015-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2015-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 52,
+        "covered": 52,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2015,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2015/LC010GLPA00IV.pdf",
+      "paperSha256": "aaae987ef936fded0787ce8d44b7c03c3b72516e8c976f0b1c63e6f443cead04",
+      "scheme": "markingschemes/2015/LC010GLP000IV.pdf",
+      "schemeSha256": "d4647d4084121e00947f53784a729c608e282bd2f4b6548262fbf322ce520381",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2015/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2014/LC010ALP000EV.pdf",
+      "paperSha256": "9036a371aaf93ce8117813556cae00be07e8060d4ea25b38a0441f51b84d573a",
+      "scheme": "markingschemes/2014/LC010ALP000EV.pdf",
+      "schemeSha256": "14d95779cf002d49acd18d809cb7157c48c6a6463ea39ef01cf287739557a59b",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2014-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2014-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2014/LC010ALPA00EV.pdf",
+      "paperSha256": "7a5ed39fd7da48d33ab94fade27f8acb096de553e42f8dad941f003658ec0fd0",
+      "scheme": "markingschemes/2014/LC010ALP000EV.pdf",
+      "schemeSha256": "14d95779cf002d49acd18d809cb7157c48c6a6463ea39ef01cf287739557a59b",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2014-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2014-hl.pdf",
+      "cards": {
+        "listening": 23
+      },
+      "atlasTasks": 23,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2014/LC010ALP000IV.pdf",
+      "paperSha256": "9036a371aaf93ce8117813556cae00be07e8060d4ea25b38a0441f51b84d573a",
+      "scheme": "markingschemes/2014/LC010ALP000IV.pdf",
+      "schemeSha256": "63aab98ee8ff5ef2e4590c6c03f1a37217da040e394bed8445c8beafd7f54346",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2014/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2014,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2014/LC010ALPA00IV.pdf",
+      "paperSha256": "7a5ed39fd7da48d33ab94fade27f8acb096de553e42f8dad941f003658ec0fd0",
+      "scheme": "markingschemes/2014/LC010ALP000IV.pdf",
+      "schemeSha256": "63aab98ee8ff5ef2e4590c6c03f1a37217da040e394bed8445c8beafd7f54346",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2014/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2014/LC010GLP000EV.pdf",
+      "paperSha256": "04aa4a339491eea57c4f38a6685947d2eee8b25873183da14f97783053df09f7",
+      "scheme": "markingschemes/2014/LC010GLP000EV.pdf",
+      "schemeSha256": "1735c57e750914492deed6d4f1c89d8e9c073fe7f4be9364b785d1a422d73676",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2014-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2014-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 34,
+        "cloze": 10
+      },
+      "atlasTasks": 54,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2014/LC010GLPA00EV.pdf",
+      "paperSha256": "2b883a537cbb4f67b679f7680c6ea6525936edc5c45df162869d1868a38945c7",
+      "scheme": "markingschemes/2014/LC010GLP000EV.pdf",
+      "schemeSha256": "1735c57e750914492deed6d4f1c89d8e9c073fe7f4be9364b785d1a422d73676",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2014-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2014-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2014/LC010GLP000IV.pdf",
+      "paperSha256": "04aa4a339491eea57c4f38a6685947d2eee8b25873183da14f97783053df09f7",
+      "scheme": "markingschemes/2014/LC010GLP000IV.pdf",
+      "schemeSha256": "df53939d6575583d1ab00b7e6151820a4e3a39df3c00d60a881deb3ca9c9d2c2",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2014/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2014,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2014/LC010GLPA00IV.pdf",
+      "paperSha256": "2b883a537cbb4f67b679f7680c6ea6525936edc5c45df162869d1868a38945c7",
+      "scheme": "markingschemes/2014/LC010GLP000IV.pdf",
+      "schemeSha256": "df53939d6575583d1ab00b7e6151820a4e3a39df3c00d60a881deb3ca9c9d2c2",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2014/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2013/LC010ALP000EV.pdf",
+      "paperSha256": "d9410f0a888873060853c94725f3738f71c4565e603393146f897901deb2b615",
+      "scheme": "markingschemes/2013/LC010ALP000EV.pdf",
+      "schemeSha256": "fdf4f0688f38aaeb7b1b1995e9f09cb24787822d7aede34270a91df844a9d79e",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2013-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2013-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2013/LC010ALPA00EV.pdf",
+      "paperSha256": "2277614c0ab73bad973a1b628183c3eaa5be47bea4f8ed37318df601584618b1",
+      "scheme": "markingschemes/2013/LC010ALP000EV.pdf",
+      "schemeSha256": "fdf4f0688f38aaeb7b1b1995e9f09cb24787822d7aede34270a91df844a9d79e",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2013-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2013-hl.pdf",
+      "cards": {
+        "listening": 23
+      },
+      "atlasTasks": 23,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2013/LC010ALP000IV.pdf",
+      "paperSha256": "d9410f0a888873060853c94725f3738f71c4565e603393146f897901deb2b615",
+      "scheme": "markingschemes/2013/LC010ALP000IV.pdf",
+      "schemeSha256": "3cf184648469266b127e4974d5bb4dbc36cb112ed6339382b201aa1501aa36c7",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2013/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2013,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2013/LC010ALPA00IV.pdf",
+      "paperSha256": "2277614c0ab73bad973a1b628183c3eaa5be47bea4f8ed37318df601584618b1",
+      "scheme": "markingschemes/2013/LC010ALP000IV.pdf",
+      "schemeSha256": "3cf184648469266b127e4974d5bb4dbc36cb112ed6339382b201aa1501aa36c7",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2013/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2013/LC010GLP000EV.pdf",
+      "paperSha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde",
+      "scheme": "markingschemes/2013/LC010GLP000EV.pdf",
+      "schemeSha256": "46995adf87052146185f3f04186e5038e57cf2ffe69000a0d4b663302d15e075",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2013-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2013-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 33,
+        "cloze": 10
+      },
+      "atlasTasks": 53,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2013/LC010GLPA00EV.pdf",
+      "paperSha256": "70873970f6f4a38502e262ddbb5385c2d66444e7341fa7c00999114f4bec5761",
+      "scheme": "markingschemes/2013/LC010GLP000EV.pdf",
+      "schemeSha256": "46995adf87052146185f3f04186e5038e57cf2ffe69000a0d4b663302d15e075",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2013-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2013-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 59,
+        "covered": 59,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2013/LC010GLP000IV.pdf",
+      "paperSha256": "c611880cbd4802fb58d6a31917e1b45a42a6216c4a7619dc5c67457fe566ffde",
+      "scheme": "markingschemes/2013/LC010GLP000IV.pdf",
+      "schemeSha256": "2fcdc48fc59171d352645f8d72c3f4b17244fb382e3af8779173da294ff0faf4",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2013/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2013,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2013/LC010GLPA00IV.pdf",
+      "paperSha256": "70873970f6f4a38502e262ddbb5385c2d66444e7341fa7c00999114f4bec5761",
+      "scheme": "markingschemes/2013/LC010GLP000IV.pdf",
+      "schemeSha256": "2fcdc48fc59171d352645f8d72c3f4b17244fb382e3af8779173da294ff0faf4",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2013/LC010GLPA00EV.pdf"
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2012/LC010ALP000EV.pdf",
+      "paperSha256": "ad2588a3b72470e19c4b2bcc61b79c882c7b15a0422daccd3b8160185d67bbc0",
+      "scheme": "markingschemes/2012/LC010ALP000EV.pdf",
+      "schemeSha256": "a34ab7035ac1099a0f93b63c0427d78084527fe46dd0ef19ae9b55a138933086",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2012-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2012-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2012/LC010ALPA00EV.pdf",
+      "paperSha256": "04934820c4ae23a135e976aa0d1d19a62773b43dd638ddd263cf1d9254325b17",
+      "scheme": "markingschemes/2012/LC010ALP000EV.pdf",
+      "schemeSha256": "a34ab7035ac1099a0f93b63c0427d78084527fe46dd0ef19ae9b55a138933086",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2012-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2012-hl.pdf",
+      "cards": {
+        "listening": 23
+      },
+      "atlasTasks": 23,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2012,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2012/LC010ALP000IV.pdf",
+      "paperSha256": "ad2588a3b72470e19c4b2bcc61b79c882c7b15a0422daccd3b8160185d67bbc0",
+      "scheme": "markingschemes/2012/LC010ALP000IV.pdf",
+      "schemeSha256": "96cf567ae793c15f45fd77f4fbe8bf604ae6ae994b3016f10a1edf79793545b9",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2012/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2012/LC010GLP000EV.pdf",
+      "paperSha256": "a19c7f11631b14d2d66d61232c7bf67eec54cda21f3ee9db46335b5858c47b79",
+      "scheme": "markingschemes/2012/LC010GLP000EV.pdf",
+      "schemeSha256": "ab376e4206d7ecaf22e2afebd97af05c277ab75dcafff32a925cb636810faf25",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2012-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2012-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 34,
+        "cloze": 10
+      },
+      "atlasTasks": 54,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2012/LC010GLPA00EV.pdf",
+      "paperSha256": "0fef0fe88b6fe5ef2d3fefb7d8d281fcfbf5fd2dff8dde8bee17c0b5f4ac27a4",
+      "scheme": "markingschemes/2012/LC010GLP000EV.pdf",
+      "schemeSha256": "ab376e4206d7ecaf22e2afebd97af05c277ab75dcafff32a925cb636810faf25",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2012-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2012-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 60,
+        "covered": 60,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2012,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2012/LC010GLP000IV.pdf",
+      "paperSha256": "a19c7f11631b14d2d66d61232c7bf67eec54cda21f3ee9db46335b5858c47b79",
+      "scheme": "markingschemes/2012/LC010GLP000IV.pdf",
+      "schemeSha256": "9de43cc090da5316fb535846d2a488ee92d4fd726264e4c1a820d62ed477fe05",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2012/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2011/LC010ALP000EV.pdf",
+      "paperSha256": "f99b30be7f53157a89c3b7645759921c85ca435388d8e45f2f788b185163ab8e",
+      "scheme": "markingschemes/2011/LC010ALP000EV.pdf",
+      "schemeSha256": "a79408001627c4c2f93cb7c6ffd74c028f768a48ee3a63bdbf029af7269e8c73",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2011-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2011-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2011/LC010ALPA00EV.pdf",
+      "paperSha256": "a99b090c16247c4db263f07dd71e9c9a27e7af6da0f9c97537f2fc8b5ae06435",
+      "scheme": "markingschemes/2011/LC010ALP000EV.pdf",
+      "schemeSha256": "a79408001627c4c2f93cb7c6ffd74c028f768a48ee3a63bdbf029af7269e8c73",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2011-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2011-hl.pdf",
+      "cards": {
+        "listening": 23
+      },
+      "atlasTasks": 23,
+      "sittingCensus": {
+        "leaves": 53,
+        "covered": 53,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2011,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2011/LC010ALP000IV.pdf",
+      "paperSha256": "f99b30be7f53157a89c3b7645759921c85ca435388d8e45f2f788b185163ab8e",
+      "scheme": "markingschemes/2011/LC010ALP000IV.pdf",
+      "schemeSha256": "b3392b2abe6ea445d533ad9e4ef912ae8e711820e4cd3813bf130a2cc91c8000",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2011/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2011/LC010GLP000EV.pdf",
+      "paperSha256": "8cfddcac3a8845e5a955fcd193637432e1e0ded174101153250c5c6062b1b03e",
+      "scheme": "markingschemes/2011/LC010GLP000EV.pdf",
+      "schemeSha256": "7e7b09615f35ed3f99418f15b05c063d700925ec4f9060ea57cbdb577d487230",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2011-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2011-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 35,
+        "cloze": 10
+      },
+      "atlasTasks": 55,
+      "sittingCensus": {
+        "leaves": 61,
+        "covered": 61,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2011/LC010GLPA00EV.pdf",
+      "paperSha256": "c3dfa54c68143f7e8d063afea30745d3ce2701688321fd9769c2d0509d1d0c16",
+      "scheme": "markingschemes/2011/LC010GLP000EV.pdf",
+      "schemeSha256": "7e7b09615f35ed3f99418f15b05c063d700925ec4f9060ea57cbdb577d487230",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2011-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2011-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 61,
+        "covered": 61,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2011,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2011/LC010GLP000IV.pdf",
+      "paperSha256": "8cfddcac3a8845e5a955fcd193637432e1e0ded174101153250c5c6062b1b03e",
+      "scheme": "markingschemes/2011/LC010GLP000IV.pdf",
+      "schemeSha256": "c8f0a9e8b0cef5f0e40c0ba9f43f5d19eb62a2fcbf920faf96faba0bf0fb4d19",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2011/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2010/LC010ALP000EV.pdf",
+      "paperSha256": "b1c407a961bc97470c1e23180eaabfbf0b87309475ceb4c24bade6f01ea713c3",
+      "scheme": "markingschemes/2010/LC010ALP000EV.pdf",
+      "schemeSha256": "606fb820a316ddfd893dc4568db892c8b7de35b8c4143e04e4011c8904509666",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2010-hl-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2010-hl.pdf",
+      "cards": {
+        "writing": 8,
+        "reading": 22
+      },
+      "atlasTasks": 30,
+      "sittingCensus": {
+        "leaves": 54,
+        "covered": 54,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2010/LC010ALPA00EV.pdf",
+      "paperSha256": "1d4ca92efc7c577b343324c4fb807f7c68bdc2f2df6f44d64f963daf8db52562",
+      "scheme": "markingschemes/2010/LC010ALP000EV.pdf",
+      "schemeSha256": "606fb820a316ddfd893dc4568db892c8b7de35b8c4143e04e4011c8904509666",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2010-hl-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2010-hl.pdf",
+      "cards": {
+        "listening": 24
+      },
+      "atlasTasks": 24,
+      "sittingCensus": {
+        "leaves": 54,
+        "covered": 54,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2010/LC010ALP000IV.pdf",
+      "paperSha256": "6d86e4b8121539cd9fb2d39aadd7861ac1c5d9cc7137fa067debb18bbafc5a0d",
+      "scheme": "markingschemes/2010/LC010ALP000IV.pdf",
+      "schemeSha256": "b87c98320c6e215b6a3ed18fc433de0fe8a73aac9a6c715e24b86407f6ef469b",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2010/LC010ALP000EV.pdf"
+    },
+    {
+      "year": 2010,
+      "level": "higher",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2010/LC010ALPA00IV.pdf",
+      "paperSha256": "bfbeba81e709d68d93092499058e606a8ac7d199ef4911fcd871f771efd4d3bd",
+      "scheme": "markingschemes/2010/LC010ALP000IV.pdf",
+      "schemeSha256": "b87c98320c6e215b6a3ed18fc433de0fe8a73aac9a6c715e24b86407f6ef469b",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2010/LC010ALPA00EV.pdf"
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Exam Paper",
+      "paper": "exampapers/2010/LC010GLP000EV.pdf",
+      "paperSha256": "117e19a388d3a116dd40db562ca061fb0e94a0e822f94bfc8de276153506c6ba",
+      "scheme": "markingschemes/2010/LC010GLP000EV.pdf",
+      "schemeSha256": "f6b38541886a6ea1fa0fde5898f249ee72da213f11bd16d4995dfb5e566db9ed",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2010-ol-000-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2010-ol.pdf",
+      "cards": {
+        "writing": 10,
+        "reading": 25,
+        "cloze": 10
+      },
+      "atlasTasks": 45,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "ev",
+      "label": "Aural Paper",
+      "paper": "exampapers/2010/LC010GLPA00EV.pdf",
+      "paperSha256": "72e99438e3e2b5ddb151ca28df9fcfaf731852d8344a6322b34b32d7598d9de3",
+      "scheme": "markingschemes/2010/LC010GLP000EV.pdf",
+      "schemeSha256": "f6b38541886a6ea1fa0fde5898f249ee72da213f11bd16d4995dfb5e566db9ed",
+      "status": "carded",
+      "localPaper": "examiner-reports/french/papers/2010-ol-A00-paper.pdf",
+      "localScheme": "examiner-reports/french/schemes/2010-ol.pdf",
+      "cards": {
+        "listening": 20
+      },
+      "atlasTasks": 20,
+      "sittingCensus": {
+        "leaves": 51,
+        "covered": 51,
+        "excluded": 0,
+        "open": 0
+      }
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Exam Paper",
+      "paper": "exampapers/2010/LC010GLP000IV.pdf",
+      "paperSha256": "9be2fc3235938b344578b7695413eafb82fa7a8f09f6e36e855d2f3577b351d6",
+      "scheme": "markingschemes/2010/LC010GLP000IV.pdf",
+      "schemeSha256": "3d2419a0417de69f9ce9f5d11f1fcf8e04f8d050b6d0d7186301b22340225ddd",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2010/LC010GLP000EV.pdf"
+    },
+    {
+      "year": 2010,
+      "level": "ordinary",
+      "lang": "iv",
+      "label": "Aural Paper",
+      "paper": "exampapers/2010/LC010GLPA00IV.pdf",
+      "paperSha256": "faacdaecf1ca428ceffdcd845ef76221a74b27c91d30de85fa8281e751553294",
+      "scheme": "markingschemes/2010/LC010GLP000IV.pdf",
+      "schemeSha256": "3d2419a0417de69f9ce9f5d11f1fcf8e04f8d050b6d0d7186301b22340225ddd",
+      "status": "deferred",
+      "reason": "Irish-language (IV) edition. Irish-language editions of subjects are deferred by decision; this variant is not carded. The English edition of the same sitting is carded (see englishCounterpart).",
+      "englishCounterpart": "exampapers/2010/LC010GLPA00EV.pdf"
+    }
+  ]
+}

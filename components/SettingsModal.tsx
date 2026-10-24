@@ -9,6 +9,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { X, Check, RefreshCw, LogOut, ChevronRight, Compass, GraduationCap, ArrowRight, ShieldCheck, FileText, Trash2 } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
+import { useStudyNotifications } from '../hooks/useStudyNotifications';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
 import { AVATAR_SEEDS, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
@@ -53,6 +54,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, dialogRef);
+  const notify = useStudyNotifications();
 
   useEffect(() => {
     return () => {
@@ -264,6 +266,38 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       }`} />
                     </div>
                   </button>
+
+                  {/* Study timer notification. Hidden where this device cannot
+                      show one (iPhone and iPad Safari tabs). */}
+                  {notify.available && (
+                    <div>
+                      <button
+                        role="switch"
+                        aria-checked={notify.enabled}
+                        aria-label="Notify me when my study time is up"
+                        onClick={() => {
+                          if (notify.enabled) { notify.turnOff(); flash(); }
+                          else void notify.turnOn().then(permission => { if (permission === 'granted') flash(); });
+                        }}
+                        className="w-full flex items-center justify-between p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] transition-all hover:ring-zinc-300 dark:hover:ring-white/[0.15]"
+                      >
+                        <div className="flex-1 text-left">
+                          <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Study timer notifications</p>
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-0.5">One notification when your study time is up</p>
+                        </div>
+                        <div className={`relative w-10 h-6 rounded-full transition-colors ${
+                          notify.enabled ? 'bg-[var(--accent-hex)]' : 'bg-zinc-300 dark:bg-zinc-600'
+                        }`}>
+                          <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow-sm transition-transform ${
+                            notify.enabled ? 'translate-x-[18px]' : 'translate-x-0.5'
+                          }`} />
+                        </div>
+                      </button>
+                      {notify.blocked && (
+                        <p role="status" className="mt-1.5 px-1 text-[11px] leading-snug text-zinc-600 dark:text-zinc-300">{notify.hint}</p>
+                      )}
+                    </div>
+                  )}
 
                 </div>
               </section>

@@ -29,14 +29,25 @@
   a published mark boundary—not necessarily one numbered question. Use the
   scheme's allocation to decide whether printed parts split or remain one
   holistic response.
-- Expand every finite printed answer route. A closed choose-one pool of `n`
-  options yields `n` cards; a closed choose-`k` pool yields `C(n, k)` cards.
-  Derive these variants mechanically and pin their count, unique IDs, wording
-  and tariff in tests.
+- A printed choice is one card, not one card per combination. When the student
+  chooses which `k` of `n` printed items to answer ("any two of five", "three
+  of the following points", "two most and one least valuable"), publish ONE
+  card: the printed question verbatim with all `n` items, `k` answer slots (an
+  `anyN` row group for point-marked cards, "first/second item you chose"
+  criteria for rubric cards), and guidance listing every item's scheme wording.
+  Never rewrite the printed question to name a combination. Sessions do not
+  collapse sibling cards, so `C(n, k)` expansion floods the deck: it produced
+  286 cards for one Politics question and 360 for one English task before this
+  rule (October 2026).
+- A choose-one pool may stay as one card per printed option when the scheme
+  marks the options differently (different rows, allocations or structure) OR
+  the options sit under different syllabus topics (e.g. Geography "rivers /
+  coasts / mass movement"), so each card files under its own Topic Atlas
+  heading. Its question text stays verbatim and the option is named in
+  `questionRef`. Options that share one grid AND one topic are one card.
 - Apply selection analysis inside every split task, not just at the outer
-  numbered-question level. The Art corpus previously handled separately marked
-  parts and choose-one questions but missed the task-internal "any two of five"
-  instruction in 2025 OL Q4(a), collapsing ten valid routes into one.
+  numbered-question level, so a task-internal "any two of five" is recognised
+  and carded as one choice card with the right slots and tariff.
 - Do not fan out required headings, illustrative example lists, open choices
   such as a named artist or work, or flexible wording such as `and/or`. Those
   remain one response unless the paper requires a fixed finite selection. Keep

@@ -771,6 +771,10 @@ for (const lang of LANGUAGE_SUBJECTS) {
 
 export function getGradeBand(grade: string): GradeBand {
   if (!grade) return 'low';
+  // LCVP Link Modules: Distinction / Merit / Pass.
+  if (grade === 'Distinction') return 'high';
+  if (grade === 'Merit') return 'mid';
+  if (grade === 'Pass') return 'low';
   if (grade.startsWith('H')) {
     const num = parseInt(grade.substring(1));
     if (num <= 2) return 'high';

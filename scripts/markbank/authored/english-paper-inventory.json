@@ -1,0 +1,1436 @@
+{
+  "subject": "english",
+  "scope": "Every English question paper in PAPER_TRAIL_INDEX, both levels and both papers.",
+  "evidenceRule": "Inventory and parser counts do not prove task, choice, source-material or topic completeness.",
+  "paperCount": 68,
+  "papers": [
+    {
+      "id": "english-2010-hl-p1",
+      "year": 2010,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2010/LC002ALP100EV.pdf",
+        "sha256": "197fc287a180cc0c7e0fb4b9296bb0cb3fbf11308ce4d25f48b81ce3663cee33",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC002ALP000EV.pdf",
+        "sha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2010-hl-p2",
+      "year": 2010,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2010/LC002ALP200EV.pdf",
+        "sha256": "9555d2e507357e830a8d9e36e8c321cffca7ca44c21e0640193b027542637cac",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC002ALP000EV.pdf",
+        "sha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2010-ol-p1",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2010/LC002GLP100EV.pdf",
+        "sha256": "e27c0e994d43d94a0e886544222e929ef27a6ecf76f065e5dd2051547b5fce72",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC002GLP000EV.pdf",
+        "sha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
+        "pages": 40
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2010-ol-p2",
+      "year": 2010,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2010/LC002GLP200EV.pdf",
+        "sha256": "2b373dece4a120a57eae9878763130dcf8723bea4cdedc924913fa9f358431bc",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2010/LC002GLP000EV.pdf",
+        "sha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
+        "pages": 40
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2011-hl-p1",
+      "year": 2011,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2011/LC002ALP100EV.pdf",
+        "sha256": "f385793c803cd54ff0367395fb10d1230e32413ed99a40328b1ce341b57ace2a",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC002ALP000EV.pdf",
+        "sha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2011-hl-p2",
+      "year": 2011,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2011/LC002ALP200EV.pdf",
+        "sha256": "bd44843d48b09cd867269e85034be8b202db63c3fb12071d4b7b985ea5215fa4",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC002ALP000EV.pdf",
+        "sha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2011-ol-p1",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2011/LC002GLP100EV.pdf",
+        "sha256": "b577de868fcbbe1ee2b6718f0a2d22b153212489bddea777d29d73c97790aaab",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC002GLP000EV.pdf",
+        "sha256": "d4950526ba99257a5423db292a593ad8f22607536d5b0847c493e8d91519ec98",
+        "pages": 40
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2011-ol-p2",
+      "year": 2011,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2011/LC002GLP200EV.pdf",
+        "sha256": "6c1bb36aef23a93b093ff651858efadac4b69cb8340e7cc69aee0387e593e303",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2011/LC002GLP000EV.pdf",
+        "sha256": "d4950526ba99257a5423db292a593ad8f22607536d5b0847c493e8d91519ec98",
+        "pages": 40
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2012-hl-p1",
+      "year": 2012,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2012/LC002ALP100EV.pdf",
+        "sha256": "fa2ee483a139b7a6bb6689d7ef894ef01052b32451a609539aff5b793b4f95ce",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC002ALP000EV.pdf",
+        "sha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2012-hl-p2",
+      "year": 2012,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2012/LC002ALP200EV.pdf",
+        "sha256": "98a560ad7b42bfa5f18ce25d02383ffde18091b1e62ef0c822a7bd8b4b1f2474",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC002ALP000EV.pdf",
+        "sha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2012-ol-p1",
+      "year": 2012,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2012/LC002GLP100EV.pdf",
+        "sha256": "28b776a0d6e7eeeefcff36182dfc359185f088f4feb9fc64a520d11de5ae726b",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC002GLP000EV.pdf",
+        "sha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2012-ol-p2",
+      "year": 2012,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2012/LC002GLP200EV.pdf",
+        "sha256": "67dc908ba658bcc928582757a25d95860c53296a317049932bc206cd57469e35",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2012/LC002GLP000EV.pdf",
+        "sha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2013-hl-p1",
+      "year": 2013,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2013/LC002ALP100EV.pdf",
+        "sha256": "03235bda5290e5627605b78e8d8d5b6fa81a21ff8b605c5016224b85b1073961",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC002ALP000EV.pdf",
+        "sha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2013-hl-p2",
+      "year": 2013,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2013/LC002ALP200EV.pdf",
+        "sha256": "213905377150bfde7b80c2396918346357a53f261ca5f32d5638554c6f5d39b1",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC002ALP000EV.pdf",
+        "sha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2013-ol-p1",
+      "year": 2013,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2013/LC002GLP100EV.pdf",
+        "sha256": "aa623adf5e183f4d7fe49eb3dbe7f403da8f345cf391e8c6e305cf9490d54cc8",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC002GLP000EV.pdf",
+        "sha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2013-ol-p2",
+      "year": 2013,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2013/LC002GLP200EV.pdf",
+        "sha256": "060946416e4175d45a8663bebc53d7beb749328a0442452d6aa3a0f8787c4eab",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2013/LC002GLP000EV.pdf",
+        "sha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2014-hl-p1",
+      "year": 2014,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2014/LC002ALP100EV.pdf",
+        "sha256": "c3d418ab7f8ad20e6315e40322a83e0e994b62c36afde8231206291405f0f941",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC002ALP000EV.pdf",
+        "sha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2014-hl-p2",
+      "year": 2014,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2014/LC002ALP200EV.pdf",
+        "sha256": "59e15cabf0be4dd6127abeb097ba200c03fc66d7d684edab032c9707d60355df",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC002ALP000EV.pdf",
+        "sha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2014-ol-p1",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2014/LC002GLP100EV.pdf",
+        "sha256": "4c5784a4ae046dff3442d545cc8da34142fb3b000c37678d658c76572938b34f",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC002GLP000EV.pdf",
+        "sha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2014-ol-p2",
+      "year": 2014,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2014/LC002GLP200EV.pdf",
+        "sha256": "5606ff1deb26018e58c817c78f0f46ca8069b738fb1b2e199e1dc5945a1e0e9e",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2014/LC002GLP000EV.pdf",
+        "sha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2015-hl-p1",
+      "year": 2015,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2015/LC002ALP100EV.pdf",
+        "sha256": "be5995502b96260d62f6b4daa0b456344fcb71eca68f46f298250f39799d436b",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC002ALP000EV.pdf",
+        "sha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2015-hl-p2",
+      "year": 2015,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2015/LC002ALP200EV.pdf",
+        "sha256": "3b1ad7198f5d79c3403190a0cb409c6b32e55315da73f7249fc4cb674c60b747",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC002ALP000EV.pdf",
+        "sha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2015-ol-p1",
+      "year": 2015,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2015/LC002GLP100EV.pdf",
+        "sha256": "b3aa2647ce64b9eee1b9da0ff45602776eac3343877da6e95f61355b1b9c562e",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC002GLP000EV.pdf",
+        "sha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2015-ol-p2",
+      "year": 2015,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2015/LC002GLP200EV.pdf",
+        "sha256": "5f2149c29a6a151d5074f28434bd9c5f1384591427a7f2cb2fa34e33dfd22037",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2015/LC002GLP000EV.pdf",
+        "sha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2016-hl-p1",
+      "year": 2016,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2016/LC002ALP100EV.pdf",
+        "sha256": "a8736e7ab6a70df1c5082cbe4037013f7b0fe2185432e82d1854ca133962a6af",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2016/LC002ALP000EV.pdf",
+        "sha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2016-hl-p2",
+      "year": 2016,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2016/LC002ALP200EV.pdf",
+        "sha256": "661fce580f891a6a378e858ba82b438e7e1b1f1e3d87d5b10c1f85cc3cfb26e0",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2016/LC002ALP000EV.pdf",
+        "sha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+        "pages": 44
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2016-ol-p1",
+      "year": 2016,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2016/LC002GLP100EV.pdf",
+        "sha256": "64df6660ac6ca3b198a524841aa737e5aba7a8288fa49dfb35362dbab3d49794",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2016/LC002GLP000EV.pdf",
+        "sha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2016-ol-p2",
+      "year": 2016,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2016/LC002GLP200EV.pdf",
+        "sha256": "38604916c7eb36bc648f113ad06ee499e1a4fc9a23e799bbe0043e51e058cfb2",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2016/LC002GLP000EV.pdf",
+        "sha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2017-hl-p1",
+      "year": 2017,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2017/LC002ALP100EV.pdf",
+        "sha256": "e261c6bc026da5aa11bc71ca82005295a4dc2041a02542f7054580974a7937b1",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC002ALP000EV.pdf",
+        "sha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2017-hl-p2",
+      "year": 2017,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2017/LC002ALP200EV.pdf",
+        "sha256": "b0c74a5b016bacf29a071dae8d314725c4c03c22e9b8855364b8d5c374ff6763",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC002ALP000EV.pdf",
+        "sha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2017-ol-p1",
+      "year": 2017,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2017/LC002GLP100EV.pdf",
+        "sha256": "7b059877758f5f35944836bad6e7c93eb3adae1e878ab5e3fea693ad2837ee2c",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC002GLP000EV.pdf",
+        "sha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2017-ol-p2",
+      "year": 2017,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2017/LC002GLP200EV.pdf",
+        "sha256": "3418de8aac2efa70e76765c8945b2d7a76e4bbfd2253c5982cd93e9f8851e7c0",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2017/LC002GLP000EV.pdf",
+        "sha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+        "pages": 48
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2018-hl-p1",
+      "year": 2018,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2018/LC002ALP100EV.pdf",
+        "sha256": "1688f7fbf03ad59b3c712a7c9203e87a05d63df21fe9bc323a6f136ad4b51d17",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2018/LC002ALP000EV.pdf",
+        "sha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2018-hl-p2",
+      "year": 2018,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2018/LC002ALP200EV.pdf",
+        "sha256": "3c05f7a2d5260005edce2f26a3cc42d608f4204e83ba0e44b7a365dc1da46e06",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2018/LC002ALP000EV.pdf",
+        "sha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2018-ol-p1",
+      "year": 2018,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2018/LC002GLP100EV.pdf",
+        "sha256": "c9845f45521246b3c63a72b1e18f9eec1cad1e4e90012fed5fef045e5ac26f79",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2018/LC002GLP000EV.pdf",
+        "sha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2018-ol-p2",
+      "year": 2018,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2018/LC002GLP200EV.pdf",
+        "sha256": "04c45a1eb7dbd3bf2b487d2f501c35819867e40b22b622d96497be7fbe6b5860",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2018/LC002GLP000EV.pdf",
+        "sha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2019-hl-p1",
+      "year": 2019,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2019/LC002ALP100EV.pdf",
+        "sha256": "5b985714c27efb1815b22ba254301a9bcc098bbc93e3ca948458e22d7ff9cb94",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC002ALP000EV.pdf",
+        "sha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2019-hl-p2",
+      "year": 2019,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2019/LC002ALP200EV.pdf",
+        "sha256": "0e369c4e2b912e04ee3e146aa0a3f4505fb385753954e80795748daebd7a3363",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC002ALP000EV.pdf",
+        "sha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2019-ol-p1",
+      "year": 2019,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2019/LC002GLP100EV.pdf",
+        "sha256": "2960c8b89d165eaf54a55113c7a57ef172c52646e7dfa42a5e382844c24ed736",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC002GLP000EV.pdf",
+        "sha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+        "pages": 64
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2019-ol-p2",
+      "year": 2019,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2019/LC002GLP200EV.pdf",
+        "sha256": "cd9f77fd2b427fdbfcf57b3592e3ec615cdc85c62f0ecc260c3c8525ca1621be",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2019/LC002GLP000EV.pdf",
+        "sha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+        "pages": 64
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2020-hl-p1",
+      "year": 2020,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2020/LC002ALP100EV.pdf",
+        "sha256": "9c0d7de438bfae619b4be4e0f22d8d46f454244a82d234ba109f86f1af67f4c6",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC002ALP000EV.pdf",
+        "sha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2020-hl-p2",
+      "year": 2020,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2020/LC002ALP200EV.pdf",
+        "sha256": "6a503257d68ec80373fbd17db737956807deaea14ff4b4a6727c32815aa157a6",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC002ALP000EV.pdf",
+        "sha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+        "pages": 52
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 20,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2020-ol-p1",
+      "year": 2020,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2020/LC002GLP100EV.pdf",
+        "sha256": "ec5f020cddc20d6e89456c09280bd2cbc1070fb113ea9aaa0a163669b3a63b73",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC002GLP000EV.pdf",
+        "sha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2020-ol-p2",
+      "year": 2020,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2020/LC002GLP200EV.pdf",
+        "sha256": "188d4e31442d267bac234592c4f775436eb57579e7d6fba567d460579586090c",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2020/LC002GLP000EV.pdf",
+        "sha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 16,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2021-hl-p1",
+      "year": 2021,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2021/LC002ALP100EV.pdf",
+        "sha256": "27ccbb8626788335a1cd041945ba08271afec7aaca471da68543502954635fe0",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC002ALP000EV.pdf",
+        "sha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 19
+    },
+    {
+      "id": "english-2021-hl-p2",
+      "year": 2021,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2021/LC002ALP200EV.pdf",
+        "sha256": "6ea191c30a24e1e595f3420456a25146b73b63d74ad1f0e32ffa653b30e158e2",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC002ALP000EV.pdf",
+        "sha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 23
+    },
+    {
+      "id": "english-2021-ol-p1",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2021/LC002GLP100EV.pdf",
+        "sha256": "a3542b882bf9bb5e7c4708c1ca16516f43b8649d2ae1ac5bd9b1515763d25b7c",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC002GLP000EV.pdf",
+        "sha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+        "pages": 72
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 22
+    },
+    {
+      "id": "english-2021-ol-p2",
+      "year": 2021,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2021/LC002GLP200EV.pdf",
+        "sha256": "ff890d320b8c0059cc7958db333f145e6a807acbec8e3d2350a6c3f8c2c023dc",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2021/LC002GLP000EV.pdf",
+        "sha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+        "pages": 72
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 68
+    },
+    {
+      "id": "english-2022-hl-p1",
+      "year": 2022,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2022/LC002ALP100EV.pdf",
+        "sha256": "d636df778b32aad6b402d2d16d646b237b1b9a1e68ec23bcdea9dc5a20c02c6d",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC002ALP000EV.pdf",
+        "sha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 19
+    },
+    {
+      "id": "english-2022-hl-p2",
+      "year": 2022,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2022/LC002ALP200EV.pdf",
+        "sha256": "a98ed83498f46e0ffe057914627545cac8f33171bb74571562e6d9efeea89b2e",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC002ALP000EV.pdf",
+        "sha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+        "pages": 56
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 23
+    },
+    {
+      "id": "english-2022-ol-p1",
+      "year": 2022,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2022/LC002GLP100EV.pdf",
+        "sha256": "2f9b85a97eb75a741cee4847b574d3d9702d78f92a3a8658632fb073d989669c",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC002GLP000EV.pdf",
+        "sha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+        "pages": 76
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 18
+    },
+    {
+      "id": "english-2022-ol-p2",
+      "year": 2022,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2022/LC002GLP200EV.pdf",
+        "sha256": "9ce0cf22ba4707bfabe83c16dadac65a8669efd31729953881d16c382ea3860f",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2022/LC002GLP000EV.pdf",
+        "sha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+        "pages": 76
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 68
+    },
+    {
+      "id": "english-2023-hl-p1",
+      "year": 2023,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2023/LC002ALP100EV.pdf",
+        "sha256": "baab746a1a80e6cd21625755136f6b38a4b2f907bb43f6d62e58407a0e66d1d8",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC002ALP000EV.pdf",
+        "sha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2",
+        "pages": 60
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 19
+    },
+    {
+      "id": "english-2023-hl-p2",
+      "year": 2023,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2023/LC002ALP200EV.pdf",
+        "sha256": "87e2759b679859f76285ff27884329536dd1bd73f8f12426fc0f79502f55b2ae",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC002ALP000EV.pdf",
+        "sha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2",
+        "pages": 60
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 23
+    },
+    {
+      "id": "english-2023-ol-p1",
+      "year": 2023,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2023/LC002GLP100EV.pdf",
+        "sha256": "c459d3a910318bec0e61c3f0ec75d1dbc090df56e74c36b4c8902fa6d9c3a3d0",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC002GLP000EV.pdf",
+        "sha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+        "pages": 72
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 20
+    },
+    {
+      "id": "english-2023-ol-p2",
+      "year": 2023,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2023/LC002GLP200EV.pdf",
+        "sha256": "dd9d47d19e30252c3ea1e5457263a50c68b4f00927c79bd9b9127706699da923",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2023/LC002GLP000EV.pdf",
+        "sha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+        "pages": 72
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 68
+    },
+    {
+      "id": "english-2024-hl-p1",
+      "year": 2024,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2024/LC002ALP100EV.pdf",
+        "sha256": "c8899fa9a8009351e60f2d6c28b3a62d9cfa33329fc4e07a06fdd495cf893bf5",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC002ALP000EV.pdf",
+        "sha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+        "pages": 60
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 19
+    },
+    {
+      "id": "english-2024-hl-p2",
+      "year": 2024,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2024/LC002ALP200EV.pdf",
+        "sha256": "c4beb382b844721b3562e1a70ec068c72d83db5c1599ce976321afe021d6f712",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC002ALP000EV.pdf",
+        "sha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+        "pages": 60
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 23
+    },
+    {
+      "id": "english-2024-ol-p1",
+      "year": 2024,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2024/LC002GLP100EV.pdf",
+        "sha256": "fc626a7ffe7ca903ae6deaf143ec14b378c11dc79bd16f244a9b9cc1cf0c65f5",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC002GLP000EV.pdf",
+        "sha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+        "pages": 68
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 20
+    },
+    {
+      "id": "english-2024-ol-p2",
+      "year": 2024,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2024/LC002GLP200EV.pdf",
+        "sha256": "cf545b9963d90ac7a2e4a6fc6e1bd851a754b331c397c2c6894eeb91935ab655",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2024/LC002GLP000EV.pdf",
+        "sha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+        "pages": 68
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 68
+    },
+    {
+      "id": "english-2025-hl-p1",
+      "year": 2025,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2025/LC002ALP100EV.pdf",
+        "sha256": "fe9c5406fbb00dc3746ef6a94424e68eb1109f1197877a85009b90a44a24265f",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC002ALP000EV.pdf",
+        "sha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+        "pages": 59
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 19
+    },
+    {
+      "id": "english-2025-hl-p2",
+      "year": 2025,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2025/LC002ALP200EV.pdf",
+        "sha256": "7f3a374802747f2f8305d8cfade72e7879a1cf602b1807e6aad1687c01879cdf",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC002ALP000EV.pdf",
+        "sha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+        "pages": 59
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 23
+    },
+    {
+      "id": "english-2025-ol-p1",
+      "year": 2025,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2025/LC002GLP100EV.pdf",
+        "sha256": "3ff6b77cf7fb30f3c61cb07c74a16c95ad4e32b4bf8e664d31fb5bf47f0cff91",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC002GLP000EV.pdf",
+        "sha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
+        "pages": 80
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 20
+    },
+    {
+      "id": "english-2025-ol-p2",
+      "year": 2025,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2025/LC002GLP200EV.pdf",
+        "sha256": "5c3957b52691fd73fcd73b79ff6eec2b5bcca6adb649b775145d983585359782",
+        "pages": 24
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2025/LC002GLP000EV.pdf",
+        "sha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
+        "pages": 80
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 68
+    },
+    {
+      "id": "english-2026-hl-p1",
+      "year": 2026,
+      "level": "higher",
+      "paper": 1,
+      "paperFileid": "LC002ALP100EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2026/LC002ALP100EV.pdf",
+        "sha256": "a108374f484d7deda095887052d133756c1f3e59bb9c1362af9cbfe201eef670",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC002ALP000EV.pdf",
+        "sha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+        "pages": 58
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2026-hl-p2",
+      "year": 2026,
+      "level": "higher",
+      "paper": 2,
+      "paperFileid": "LC002ALP200EV.pdf",
+      "schemeFileid": "LC002ALP000EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2026/LC002ALP200EV.pdf",
+        "sha256": "7641ee94370e9e7df43c921b86676c51c7ed1688682ee24829d34663c3d36e95",
+        "pages": 8
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC002ALP000EV.pdf",
+        "sha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+        "pages": 58
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 23,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2026-ol-p1",
+      "year": 2026,
+      "level": "ordinary",
+      "paper": 1,
+      "paperFileid": "LC002GLP100EV.pdf",
+      "schemeFileid": "LC002GLP100EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2026/LC002GLP100EV.pdf",
+        "sha256": "6ea7d3c61a54f96fc42167a093df4fc7142a2558ca1fd18ca9a09ac942b554c3",
+        "pages": 12
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC002GLP100EV.pdf",
+        "sha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+        "pages": 78
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 13,
+      "markBankCards": 0
+    },
+    {
+      "id": "english-2026-ol-p2",
+      "year": 2026,
+      "level": "ordinary",
+      "paper": 2,
+      "paperFileid": "LC002GLP200EV.pdf",
+      "schemeFileid": "LC002GLP100EV.pdf",
+      "questionPaper": {
+        "path": "paper-trail-corpus/exampapers/2026/LC002GLP200EV.pdf",
+        "sha256": "0ac7854cff28e4d151a95117fc14351de16ffe334ad4213dd226c0ea0e6badc6",
+        "pages": 20
+      },
+      "markingScheme": {
+        "path": "paper-trail-corpus/markingschemes/2026/LC002GLP100EV.pdf",
+        "sha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+        "pages": 78
+      },
+      "answerMapPresent": true,
+      "answerMapBlocks": 19,
+      "markBankCards": 0
+    }
+  ]
+}

@@ -60,7 +60,7 @@ describe('ModalFrame focus management', () => {
     expect(innerClose).toHaveBeenCalledOnce();
     expect(outerClose).not.toHaveBeenCalled();
     rerender(<ModalFrame open onClose={outerClose} title="Outer"><button>Open inner</button></ModalFrame>);
-    expect(document.body.style.overflow).toBe('hidden');
+    expect(document.body).toHaveAttribute('data-scroll-lock');
     expect(opener).toHaveFocus();
   });
 

@@ -2,5 +2,5 @@
 import type { SecRubricCard } from '../../../../types/markBank';
 import { generatedCardsForLevel } from './factory';
 
-/** Every separately marked Higher-Level Art task and finite printed route, 2021–2025. */
+/** Every separately marked Higher-Level Art task and finite printed route, 2010–2026. */
 export const CARDS: SecRubricCard[] = generatedCardsForLevel('higher');

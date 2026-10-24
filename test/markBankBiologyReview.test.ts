@@ -1711,3 +1711,20 @@ describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
     }
   });
 });
+
+describe('Biology — every deck', () => {
+  it('never writes a tariff where a criterion row should be', () => {
+    // build-deck refuses a criterion row as tariff prose only when the
+    // content-free test refuses it too (Construction ships the scheme's "Any 7
+    // of the above details (5 marks each)" as one); Biology holds its own to the
+    // tariff test alone, as it was built.
+    const TARIFF_PROSE = /\bmarks? each\b|^\s*any (one|two|three|four|five|\d+)\b[^.]*\bmarks?\b/i;
+    const bad: string[] = [];
+    for (const card of [...BIO_HIGHER, ...BIO_ORDINARY] as unknown as Array<{ id: string; rows?: Array<{ kind?: string; verbatim: string }> }>) {
+      for (const row of card.rows ?? []) {
+        if (row.kind === 'criterion' && (!row.verbatim.trim() || TARIFF_PROSE.test(row.verbatim))) bad.push(`${card.id}: "${row.verbatim}"`);
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+});

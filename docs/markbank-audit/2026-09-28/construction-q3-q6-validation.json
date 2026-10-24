@@ -1,0 +1,157 @@
+{
+  "subjectId": "construction-studies",
+  "year": 2015,
+  "level": "higher",
+  "questions": [
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "reviewMethod": "Same-operator source-first visual review; not independent human certification.",
+  "validatedAt": "2026-10-07T20:01:31.491970+00:00",
+  "newTasks": 56,
+  "reviewed2015Tasks": 63,
+  "preservedPriorCards": 512,
+  "compiledCards": {
+    "higher": 318,
+    "ordinary": 250,
+    "total": 568
+  },
+  "droppedCards": 0,
+  "newSourceFigures": 19,
+  "newWholeQuestionRoutes": 15,
+  "newAtlasAssociations": 9,
+  "sourceHashes": {
+    "paper-trail-corpus/exampapers/2015/LC029ALP000EV.pdf": "08976c01caaf916102e5f9f0aa18a512a5bf6aa2cad2ce5320208a63970fdc13",
+    "paper-trail-corpus/markingschemes/2015/LC029ALP000EV.pdf": "9558f06c3c50cb7c858d0b4fb299b437277c0efcd182e0811c6aff0bb7dab3ef"
+  },
+  "validation": [
+    {
+      "name": "source-q1-q2",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/markbank/authoring",
+        "-p",
+        "test_construction_2015_higher_q1_q2.py"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/source-q1-q2.log",
+      "logSha256": "774e3096919f6e1c96fe569d633fd91661e2e6d239b7fdebd434ba7456b0f499"
+    },
+    {
+      "name": "source-q3-q6",
+      "command": [
+        "python3",
+        "scripts/markbank/authoring/construction_2015_higher_q3_q6.py"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/source-q3-q6.log",
+      "logSha256": "35fb86d23dde44b45843a851209eb83d4bed379a7a6f1bd0ed3d8dc7c0c1010c"
+    },
+    {
+      "name": "atlas-generation",
+      "command": [
+        "node",
+        "scripts/paper-trail/build-construction-studies-exam-topic-crosswalk.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/atlas-generation.log",
+      "logSha256": "75c56fe1da6ad2167b44643fe06e22a41f3a0011377463455463c52cab8f1e1a"
+    },
+    {
+      "name": "library-generation",
+      "command": [
+        "node",
+        "scripts/markbank/build-library-topic-index.mjs"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/library-generation.log",
+      "logSha256": "ae4d9d3820e836276d21ea751774d310310009a8c9ed2dc150089d27c8eafce6"
+    },
+    {
+      "name": "deck-build",
+      "command": [
+        "node",
+        "scripts/markbank/build-deck.mjs",
+        "scripts/markbank/authored/construction-studies.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/deck-build.log",
+      "logSha256": "f3c8cbbb66f6c15cc688a26d6243c44b140bdd5fc37fc1e8e8a9a490c0891ae9"
+    },
+    {
+      "name": "regression",
+      "command": [
+        "npx",
+        "vitest",
+        "run",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/curriculumRegistry.test.ts",
+        "test/markBankDeck.test.ts",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/regression.log",
+      "logSha256": "6884b88cf6ee4696a194acfc8a9d99db609ed326a1e8e573de0ee1ff15ac23f5"
+    },
+    {
+      "name": "atlas",
+      "command": [
+        "npm",
+        "run",
+        "check:markbank-atlas",
+        "--",
+        "--maxWorkers=1",
+        "--testTimeout=600000"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/atlas.log",
+      "logSha256": "a1fcc51110e3f2db3bc93fdd382a9e5fbfdf5bed1b1890dec3c390be06279ed7"
+    },
+    {
+      "name": "types-test",
+      "command": [
+        "node",
+        "--max-old-space-size=12288",
+        "node_modules/typescript/lib/tsc.js",
+        "--noEmit",
+        "-p",
+        "tsconfig.test.json"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/types-test.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lint",
+      "command": [
+        "npx",
+        "eslint",
+        "test/markBankConstruction2015HigherReviewed.test.ts",
+        "test/constructionStudiesExamTopics.test.ts",
+        "test/markBankCardPreservation.test.ts",
+        "test/fixtures/construction2015Reviewed.ts"
+      ],
+      "exitCode": 0,
+      "log": "/tmp/construction580/lint.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "regressionTests": 225,
+  "atlasTests": 274,
+  "sourceAliasCorrection": "Four Q4 routes reuse the identical inspected windows illustration; no duplicate content keys. All card IDs preserved.",
+  "censusCorrection": "2015 Q3 introductory options replaced with actual printed a/b/c task boundaries; zero orphan and unparsed cards.",
+  "open": [
+    "Q7–Q10 integration and final visual whole-paper reconciliation.",
+    "All other Construction papers/components/editions and remaining in-scope subjects."
+  ],
+  "publication": "Local only; no commit, push, deploy or preservation-baseline reset."
+}

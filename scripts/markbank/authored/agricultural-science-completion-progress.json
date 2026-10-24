@@ -1,0 +1,535 @@
+{
+  "status": "in-progress",
+  "previousGoalTurn": "progress",
+  "worktree": "/Users/alexlinehan/Documents/Nextstepuni-Agricultural-Science-Completion-20261007",
+  "branch": "codex/agricultural-science-completion-20261007",
+  "baseCommit": "8deb273f",
+  "scope": "Every separately practicable task and finite printed answer route in all Agricultural Science Paper Trail documents, correctly classified in Mark Bank and Topic Atlas with required original source material.",
+  "inventory": {
+    "indexedEditions": 68,
+    "distinctEnglishPapers": 34,
+    "years": [
+      2010,
+      2026
+    ],
+    "selectionCuesPendingClassification": 361,
+    "fullPaperAndSchemeSweepsCompleted": 38,
+    "distinctEnglishPaperSweepsCompleted": 34,
+    "irishEditionComparisonsCompleted": 4,
+    "independentSourceCensusEditionsCompleted": 35,
+    "independentSourceCensusEditionsOpen": 33
+  },
+  "completedBatch": {
+    "reviewedPapers": [
+      "2010 Higher English: 8 paper pages and 14 scheme pages",
+      "2010 Higher Irish: 8 paper pages and 12 scheme pages",
+      "2010 Ordinary English: 12 paper pages and 14 scheme pages",
+      "2010 Ordinary Irish: 12 paper pages and 13 scheme pages",
+      "2011 Higher English: 8 paper pages and 16 scheme pages",
+      "2011 Higher Irish: 8 paper pages and 12 scheme pages",
+      "2011 Ordinary English: 12 paper pages and 16 scheme pages",
+      "2011 Ordinary Irish: 12 paper pages and 16 scheme pages",
+      "2012 Higher English: 8 paper pages and 16 scheme pages",
+      "2026 Higher English: 44 paper pages and 33 scheme pages",
+      "2026 Ordinary English: 40 paper pages and 24 scheme pages",
+      "2025 Higher English: 44 paper pages and 25 scheme pages",
+      "2025 Ordinary English: 40 paper pages and 25 scheme pages",
+      "2024 Higher English: 44 paper pages and 28 scheme pages",
+      "2024 Ordinary English: 40 paper pages and 26 scheme pages",
+      "2023 Higher English: 44 paper pages and 32 scheme pages",
+      "2023 Ordinary English: 40 paper pages and 28 scheme pages",
+      "2022 Higher English: 44 paper pages and 35 scheme pages",
+      "2022 Ordinary English: 40 paper pages and 28 scheme pages",
+      "2021 Higher English: 52 paper pages and 39 scheme pages",
+      "2021 Ordinary English: 44 paper pages and 26 scheme pages",
+      "2020 Higher English: 8 paper pages and 14 scheme pages",
+      "2020 Ordinary English: 12 paper pages and 17 scheme pages",
+      "2019 Higher English: 8 paper pages and 16 scheme pages",
+      "2019 Ordinary English: 16 paper pages and 16 scheme pages",
+      "2018 Higher English: 8 paper pages and 16 scheme pages",
+      "2018 Ordinary English: 12 paper pages and 20 scheme pages",
+      "2017 Higher English: 8 paper pages and 20 scheme pages",
+      "2017 Ordinary English: 16 paper pages and 16 scheme pages",
+      "2016 Higher English: 8 paper pages and 12 scheme pages",
+      "2016 Ordinary English: 16 paper pages and 20 scheme pages",
+      "2015 Higher English: 8 paper pages and 16 scheme pages",
+      "2015 Ordinary English: 16 paper pages and 16 scheme pages",
+      "2014 Higher English: 8 paper pages and 12 scheme pages",
+      "2014 Ordinary English: 12 paper pages and 16 scheme pages",
+      "2013 Higher English: 8 paper pages and 12 scheme pages",
+      "2013 Ordinary English: 12 paper pages and 16 scheme pages",
+      "2012 Ordinary English: 12 paper pages and 16 scheme pages"
+    ],
+    "previousReviewedTasks": [
+      "2022 OL Q2(b)(ii)",
+      "2022 OL Q13(b)(i)",
+      "2023 HL Q18(a)(i)",
+      "2025 OL Q8(b)"
+    ],
+    "addedMarkBankCards": 1604,
+    "addedThisBatch": 1326,
+    "correctedMarkBankCards": 152,
+    "markBankCardsNow": 2464,
+    "higherCards": 1207,
+    "ordinaryCards": 1257,
+    "originalCardIdsPreserved": 869,
+    "atlasPracticeCardsAdded": 2464,
+    "atlasCardsNow": 2922,
+    "priorAnchorsPreservedThisBatch": 9,
+    "obsoleteExclusionsResolved": 4,
+    "sourceImagesAdded": [
+      "tooth longitudinal section",
+      "Punnett square",
+      "plant cell",
+      "sheep heart",
+      "cow reproductive system",
+      "mitosis metaphase",
+      "2011 mammalian heart",
+      "2011 maize Punnett square",
+      "2011 bean seed",
+      "2011 fertiliser bag",
+      "2011 organisms",
+      "2011 soil triangle and table",
+      "2011 cell division",
+      "2012 calf-to-beef growth curve",
+      "2012 oat hybrid Punnett cross",
+      "2026 cow reproductive system (scheme solution)",
+      "2026 OL farmyard hazard sketch",
+      "2026 OL sedimentation set-up",
+      "2026 OL pig digestive system",
+      "2026 OL udder diagram",
+      "2026 OL root-hair region (scheme solution)",
+      "2026 OL weaning region (scheme solution)",
+      "2024 HL soil-structure plate",
+      "2024 HL indicator plants",
+      "2024 HL liveweight graph",
+      "2024 HL breeds A and B",
+      "2024 HL IPM pyramid",
+      "2024 OL grazing-direction paper crop and scheme tick",
+      "2024 OL chart-choice plate",
+      "2024 OL grass-growth curve and scheme X",
+      "2023 Higher goat and cow comparison table",
+      "2023 Higher udder diagram",
+      "2023 Higher California Mastitis Test steps",
+      "2023 Ordinary ewe mothering diagram and table",
+      "2023 Ordinary compacted soil diagrams",
+      "2022 Higher calf shed airflow diagram (paper and scheme answer)"
+    ],
+    "curriculum": "Reviewed legacy cards resolve the existing registry by examination year. Added the SEC-derived Higher circulatory-system Atlas topic, crosswalked to the registered Animal Physiology node. Mixed tasks retain all assessed topics. Added the SEC-derived Higher respiratory-system browse topic for the alveolus, using the existing Animal Physiology registry node. Soil texture remains under physical properties, also linked to chemical fertility.",
+    "priorAuthoredCardsUnchangedThisBatch": 1236,
+    "editionDiscrepancies": "Irish Higher D/d versus B/b and rolled versus unrolled barley result; Irish Ordinary chloroplast/chlorophyll wording, pasture-method instructions, Q9(f) and Q12 tariffs, and C/c versus E/e. Notes accompany the parent and relevant task schemes. The Irish Q9(f) and Q12(d)(ii) joins retain 20 marks; English cards retain 18. 2011 Irish: calving score 2.5–3 versus English 2.5–3.5; misaligned barley heading numerals and high-versus-low malting protein wording; C/c and F/f maize symbols versus H/h and L/l. Relevant parent/task notes preserve original sources. 2011 Ordinary Irish: all 81 boundaries and tariffs, diagrams and genetic asterisks match English; original Irish wording and answer examples are retained. The same three historical scheme context notes accompany affected parent/task readers.",
+    "translatedAtlasPracticeBindings": 288,
+    "originalWholeQuestionIdentitiesRetained": 458,
+    "independentReconciliation": {
+      "reviewedEnglishRoutes": 863,
+      "translatedBindings": 288,
+      "reviewedBatchIssues": 0,
+      "remainingIndependentCensusEditions": 56,
+      "scope": "2010/2011 Higher and Ordinary, 2012 Higher, 2024, 2025 and 2026 Higher/Ordinary English (863 one-card routes), all 288 existing Irish bindings, and the independently transcribed 2011 Ordinary Irish denominator (81). Remaining editions stay open.",
+      "independentlyReviewedTranslatedRoutes": 81
+    },
+    "readerCorrections": [
+      "Deck census now reads cards with QA/curriculum spreads between base and kind.",
+      "Long scheme text wraps inside phone marking controls.",
+      "Genotype and chemical-symbol case is retained in unclaimed summaries.",
+      "Question-total criteria use student judgement and do not invent automatic numeric grade suggestions."
+    ],
+    "englishSourceNotes": "2011 Ordinary scheme notes preserve the historical fungus classification for potato blight, distinguish digestibility from retention, and explain the Kilkenny marble commercial name. Original scheme text remains unchanged. 2012 Higher: potassium reagent/test-result clarification (WHO), hay moisture versus dry matter (FAO), the duplicated potato and crop-comparison numerals, and the oat-intercross generation label. Original scheme wording and tariffs remain visible. 2026 Higher: the Q11(b)(i) scheme heading adds “feed space” not asked on the paper; the Q17(a)(iv) descriptors print 3 marks each while the mark column prints 4+4+3 = 11. 2026 Ordinary: the scheme labels both parts of Q11 “(b)”, and its Q13(a)(iii) heading refers to part (i) where the paper asks about part (ii). 2025 Higher: Q14(b)(i) prints 4x4 plus 1 for the result (17), which Question 14 needs to total 50. 2024 Higher: the published Q18 allocations total 54, not the printed 50 ((a) 20, (b) 18, (c) 16); preserved and disclosed.",
+    "answerMapRecovery": "2011 Ordinary English lacked a local answer sidecar and the hosted endpoint returned 404. Added 13 reviewed whole-question parents plus 81 practice anchors, registered the hosted override and enabled its reproducible answers flag.",
+    "originalCardsReconciled2025Higher": {
+      "unchanged": 81,
+      "correctedInPlace": 3,
+      "added": 5,
+      "withdrawnAsAliases": 4,
+      "corrections": "Q12(a) becomes the single any-four-of-five 2(4)+2(1) card and Q12(b)-(e) are withdrawn as its progress aliases; Q14(b)(i) regains its published result mark (17); Q15(b) becomes one any-three-of-four card. Q2(a), Q2(b)(ii) and Q6(b) are restored byte-identical (their one-card form already lets any printed choice score)."
+    },
+    "originalCardsReconciled2025Ordinary": {
+      "unchanged": 68,
+      "previouslyReviewed": [
+        "agsci-2025-ol-q8b"
+      ],
+      "correctedInPlace": 3,
+      "added": 19,
+      "corrections": "Q1(a)(i) becomes one any-three-of-four card listing all four breeds; the cards that fused Q9(b)(i)+(ii) and (iii)+(iv) keep only (i) and (iii), because (ii) and (iv) already ship as their own cards."
+    },
+    "originalCardsReconciled2024Higher": {
+      "unchanged": 63,
+      "correctedInPlace": 9,
+      "added": 9,
+      "corrections": "Q2(a)(i) and Q6(a) become one item-choice card each; Q2(a)(iii) drops question wording listed as an answer; Q16(b)(i) regains its truncated answer; Q16(b)(ii), Q17(c)(ii) and Q17(c)(iii) replace a flattened results table with the paper lead-in; Q17(a) regains 5 (factor) + 1 (description); Q18(a)(iii) takes any two of six features at 6+2. Q6(b)(ii) and Q15(a)(iii) are restored byte-identical. Original objects and SHA-256 hashes are kept in agricultural-science-corrected-originals.json."
+    },
+    "itemChoicePooling": {
+      "rule": "Coordinator decision 2026-10-12: a printed any-N-of-M choice whose scheme marks each item the same way is ONE practice card with an anyN row (or one anyN row per marking component) listing every printed item with the scheme wording and marks, claim limit N; no Practice choice stem text. Choose-one items with multi-part marking keep mutually exclusive row routes on one card; legacy three-of-four comparisons with nested two-point groups use bestNofParts over every member.",
+      "cardsBeforeAfter": {
+        "2010 HL": [
+          62,
+          55
+        ],
+        "2011 HL": [
+          70,
+          67
+        ],
+        "2012 HL": [
+          62,
+          56
+        ],
+        "2022 OL": [
+          98,
+          97
+        ],
+        "2023 HL": [
+          85,
+          82
+        ],
+        "2024 HL": [
+          91,
+          81
+        ],
+        "2025 HL": [
+          112,
+          89
+        ],
+        "2025 OL": [
+          99,
+          91
+        ],
+        "2026 HL": [
+          112,
+          91
+        ],
+        "2026 OL": [
+          114,
+          85
+        ],
+        "total": [
+          1532,
+          1421
+        ]
+      },
+      "liveIdsKept": [
+        "agsci-2024-hl-q2ai",
+        "agsci-2024-hl-q6a",
+        "agsci-2025-hl-q12a",
+        "agsci-2025-hl-q15b",
+        "agsci-2025-ol-q1ai"
+      ],
+      "originalsRestoredUnchanged": [
+        "agsci-2024-hl-q6bii",
+        "agsci-2024-hl-q15aiii",
+        "agsci-2025-hl-q2a",
+        "agsci-2025-hl-q2bii",
+        "agsci-2025-hl-q6b"
+      ],
+      "withdrawnAsAliases": {
+        "agsci-2025-hl-q12b": "agsci-2025-hl-q12a",
+        "agsci-2025-hl-q12c": "agsci-2025-hl-q12a",
+        "agsci-2025-hl-q12d": "agsci-2025-hl-q12a",
+        "agsci-2025-hl-q12e": "agsci-2025-hl-q12a"
+      },
+      "branchOnlyRouteIdsRemoved": 132,
+      "guard": "test/markBankAgriculturalScienceCompletion.test.ts refuses route siblings that differ only in item choice, any -route- ID, any Practice choice text, and any census task with more than one route.",
+      "pooledCardIdsAdded": [
+        "agsci-2010-hl-q3o2b",
+        "agsci-2010-hl-q7a",
+        "agsci-2010-hl-q8c",
+        "agsci-2011-hl-q8c",
+        "agsci-2012-hl-q7a",
+        "agsci-2012-hl-q8c",
+        "agsci-2022-ol-q2bii",
+        "agsci-2023-hl-q18ai",
+        "agsci-2025-hl-q7b",
+        "agsci-2025-ol-q14ciii",
+        "agsci-2025-ol-q7a",
+        "agsci-2026-hl-q10a",
+        "agsci-2026-hl-q14ci",
+        "agsci-2026-hl-q18ciii",
+        "agsci-2026-hl-q2b",
+        "agsci-2026-hl-q7",
+        "agsci-2026-ol-q10a",
+        "agsci-2026-ol-q14ai",
+        "agsci-2026-ol-q18bii",
+        "agsci-2026-ol-q1a",
+        "agsci-2026-ol-q4a",
+        "agsci-2026-ol-q4b",
+        "agsci-2026-ol-q5a",
+        "agsci-2026-ol-q9a",
+        "agsci-2026-ol-q9bi"
+      ]
+    },
+    "originalCardsReconciled2024Ordinary": {
+      "unchanged": 74,
+      "correctedInPlace": 3,
+      "added": 5,
+      "corrections": "Q2(b)(iii) loses a stem of run-together diagram labels; Q14(c)(ii) regains 2 + 2 for name or description; Q14(d) regains 6(2) per cell. Added Q1(a), Q11(a)(ii), Q13(b)(iii), Q14(a)(ii) and Q14(b)(i). The item choices Q5(a), Q6(a)(i), Q6(a)(ii), Q7(a) and Q13(a)(ii) were already one card each."
+    },
+    "coverageBaseline": {
+      "measuredAt": "2026-10-14",
+      "command": "python3 scripts/markbank/authoring/reconcile.py agricultural-science --baseline write (no --accept-regression)",
+      "cards": 2464,
+      "leaves": 2842,
+      "covered": 2842,
+      "open": 0,
+      "excluded": 0,
+      "orphans": 0,
+      "coveragePct": 100.0,
+      "papersOnDisk": 34,
+      "openAsksDeclared": "0 open asks, none: every English edition from 2010 to 2026 is carded (the 2012 Higher Irish edition is parked and the other Irish editions are deferred).",
+      "orphansDeclared": "0: the 2021 OL Q17(b)(ii)/(iii) pair was a census reader fault (a table cross-reference keyed as part (a)), fixed in paper.py.",
+      "readerFix": "paper_census.py reads Agricultural Science papers up to 2020 through census_agri_legacy (gated to this subject): lines rebuilt from glyph positions with duplicated glyphs removed, and every head and part marker keyed against what the numbering allows next. Census output for biology, chemistry, physics, business, home-economics, construction-studies, computer-science and economics is byte-identical before and after.",
+      "environmentNote": "24 of the 34 papers are local symlinks into paper-trail-corpus (gitignored); a checkout with only the 10 tracked 2021-2025 papers would measure a smaller denominator."
+    },
+    "originalCardsReconciled2023Higher": {
+      "unchanged": 57,
+      "correctedInPlace": 24,
+      "added": 3,
+      "branchOnlyRebuilt": "Q18(a)(i) (Atlas 1001 kept) now carries the paper diagram and letter key.",
+      "corrections": "Q2(a) and Q4(a) become one card each listing every printed item; Q5(a), Q9(a)(ii), Q9(b)(i), Q11(a) and Q11(b) list the whole answer pool in one row; Q13(c) and Q15(a) carry each published method as an answer route; Q13(d)(ii), Q14(b)(iii), Q14(c)(i), Q14(c)(ii) and Q15(b)(iii) regain points a five-row cap dropped; Q13(a)(i) (5+5+2+2) and Q18(b)(ii) (F:3(3) + D:3(3)) regain per-answer awards; Q13(a)(ii) carries the D = 0,3,6 + L = 3 x 2 criteria; Q1(a)(ii), Q5(c) and Q13(b)(ii) regain answers cut mid-sentence; Q8(c), Q15(c)(ii) and Q16(a)(ii) replace chart label soup with the paper wording and chart; Q14(b)(iv) names \"annual plant\".",
+      "addedCards": "Q7(a) (3+3+2+2 cow column, table crop), Q7(b) (eight scheme actions with descriptions, 3+3+2+2) and Q18(a)(v) (CMT order, 4(2), photo crop)."
+    },
+    "originalCardsReconciled2023Ordinary": {
+      "unchanged": 57,
+      "correctedInPlace": 19,
+      "added": 5,
+      "corrections": "Q2(a) becomes one any-three-of-five card at 3+2+1 with every photograph decoded; Q4, Q8(a), Q9(b)(iii), Q13(a)(ii) and Q15(b) regain the first-correct awards of the scheme's PDF page 4 rule; Q16(a)(i) carries the resazurin and bacterial-count methods as answer routes; Q1(b), Q6(a)(iii), Q9(a)(i), Q10(b)(ii), Q13(b)(ii), Q14(b)(i)-(iii) and Q15(a)(ii) replace label soup or asterisk debris with the paper wording (gaining graph or diagram where missing); Q14(a)(i) and Q18(c)(i) regain answers cut mid-sentence; the fused Q10(b)(i)-(iii) card keeps part (i).",
+      "addedCards": "Q5 (4+4+1+1), Q7(a) (2(3), diagram and table crop), Q10(b)(iii), Q11 (D = 0,2,4 + Labels 3(2)) and Q14(b)(iv) (B, 4 + 2(4))."
+    },
+    "originalCardsReconciled2022Higher": {
+      "unchanged": 89,
+      "correctedInPlace": 7,
+      "added": 5,
+      "corrections": "Q16(c)(i) regains its published 11 marks (named system 2, drawing 6/3/0, labels 3(1)) where the card priced the name alone at 3; Q2(b) lists every characteristic in the scheme table; Q10(b), Q10(c) (kale, Miscanthus, OSR) and Q15(a)(i) (five synchronisation protocols) are answer routes; Q17(a)(i) carries its banded drawing criteria; Q17(b)(ii) regains a truncated definition.",
+      "addedCards": "Q9(a)(i) (D = 3,2,0 + L = 3(1)), Q13(a)(iv), Q13(b)(iii), Q14(c)(ii) (airflow arrows, paper and scheme figures) and Q18(b)(ii) (IMS advice, 3(4))."
+    },
+    "originalCardsReconciled2022Ordinary": {
+      "unchanged": 71,
+      "previouslyReviewed": [
+        "agsci-2022-ol-q2bii",
+        "agsci-2022-ol-q13bi"
+      ],
+      "correctedInPlace": 19,
+      "added": 6,
+      "withdrawnAsAliases": 5,
+      "corrections": "Q4(b) becomes the single true/false table card with statements (i)-(v) at 5(2), and the five per-statement cards are withdrawn as its progress aliases; Q3(a) (indicator or pH meter) and Q7(a)(iii) (six nutrients) are answer routes; Q2(a)(i) is one any-three-of-four breed card; Q1(a) prices machine A, its function, machine B and its function at 2 each; Q3(b), Q5(a), Q11(a)(iii) and Q9(c) regain published wording or whole answers; Q7(b)(ii), Q10(c), Q14(c)(iv), Q16(b)(ii), Q17(a)(i)-(iii), Q18(a)(i) and Q18(b)(i) list every published point one per option; Q2(a)(ii) and Q7(b)(ii) drop run-together labels from the stem.",
+      "addedCards": "Q10(a) (six silage tests, 2+1), Q12(a) (any three soil-forming factors, 2+1+1), Q15(a)(ii) (named grazing system, banded diagram and labels, 19), Q16(a)(ii) (shade the excess grass, with the paper graph), Q17(b)(i) and Q17(b)(iii) (bovine nitrogen calculations, with the paper table)."
+    },
+    "originalCardsReconciled2021Higher": {
+      "unchanged": 71,
+      "correctedInPlace": 30,
+      "added": 5,
+      "corrections": "Named-crop (Q5(a)-(c)), named-disorder (Q11(b)(ii)), named-species (Q14(b)(ii)), named-test (Q16(b)) and named-crop-preservation (Q18(a) Crop preservation) answers become answer routes instead of one mixed pool; Q1(b) becomes the published 2 + 1+1 by first definition; Q17(b)(iv) prices names 1 and roles 3 (3+3+1+1); pools that dropped published points list every point (Q3(a)(iii), Q3(b)(ii), Q3(b)(iii), Q4(c), Q15(b)(iv), Q16(a)(iii)); truncated answers regain the scheme wording (Q6(b)(ii), Q9(a), Q9(c), Q10(a)); four rows lose a dash the scheme never printed (Q14(c)(ii), Q14(c)(iii), Q15(a)(i), Q15(a)(ii)); stems built from sign, axis, legend or table debris are replaced by the paper lead-in with inspected crops (Q3(a)(i)-(ii), Q10(c), Q14(b)(i), Q15(b)(i), Q15(b)(iii), Q17(b)(i)).",
+      "addedCards": "Q14(a) Housing, Nutrition and Production targets (4+2 each, liquid v creamery milk, calf to beef v suckler beef and mid-season v early lamb routes), Q15(b)(ii) (3+2, the scheme's two solutions as routes) and Q16(a)(i) (totals (4,2,0) + higher price 2)."
+    },
+    "originalCardsReconciled2021Ordinary": {
+      "unchanged": 77,
+      "correctedInPlace": 34,
+      "added": 2,
+      "corrections": "Q18(a)(i) Seedbed preparation regains the scheme's \"Named crop 2\" (9 marks), which is what makes Question 18 total 50; Q4(c) follows the first-correct 3+1 instead of 3 pinned to poor drainage; Q12(b) (four named breeds), Q14(b)(iii) (error with its remedy), Q14(b)(iv) (qualitative resazurin or quantitative TBC) and Q16(c)(v) (implication with its reason) become answer routes; twenty pools that dropped or cut published points list every point; stems and questions built from tick-box, diagram-label, word-list or photograph-letter debris are replaced by the paper's wording (Q1(a), Q4(b), Q10(d), Q12(a), Q18(c)(iii)).",
+      "addedCards": "Q11(b)(iv) (slatted-tank position 2 + reason 2, with the plan view) and Q18(b)(iii) (physical trait 2 + reason 2, the scheme's three traits as routes, with the photographs).",
+      "readerFix": "paper.py: a letter that runs BACKWARDS inside a question with only figures after it is a table cross-reference, not a part. 2021 OL Q17(b) heads a table column \"Calculated at part\" / \"(a) 80 65 35\"; keying that \"(a)\" filed (b)(ii) and (b)(iii) under (a), so the two printed parts read as orphans. Census output for biology, chemistry, physics, economics, construction-studies, maths, art, geography, business, home-economics and computer-science is byte-identical before and after; Agricultural Science gains exactly Q17(b)(ii) and Q17(b)(iii)."
+    },
+    "authored2020Higher": {
+      "added": 60,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2020_hl.py on the shared legacy builder agricultural_science_legacy.py.",
+      "boundaries": "60 base tasks, one card each. Question 1 parts are whole where one instruction carries a first-correct scale (4 + 3 + 3, 2(3) + 2(2)) or one drawing band; parts asked and priced separately are separate tasks. Q4(b) carries catalase and amylase as answer routes; Q8(c) is one card whose eight members are parts and whose best six (three pairs) count.",
+      "curriculum": "curriculumNodeIds name the pre-2021 specification the sitting was examined on (agricultural-science-*), resolved by exam year; topicId is the current agsci-* topic used by practice filters.",
+      "cropReview": "All 60 distinct paper/scheme crop pairs rendered and inspected. regions.py now cuts in the gap between printed lines (emptiest pixel row nearest the boundary, moved toward the middle of the gap) and a part never runs past a printed OR or section heading."
+    },
+    "authored2020Ordinary": {
+      "added": 52,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2020_ol.py on the shared legacy builder.",
+      "boundaries": "52 base tasks, one card each. A scale the scheme prints across several parts (Q2 \"4 + 8(2)\", Q5, Q6, Q11(c), Q12(a)-(c), Q13(a)-(c)) is one task stating the scale (orderedSplit), because the first correct answers earn the higher award whichever part they answer. Q1(b) soil-texture methods, Q8(c) silage tests and Q9(a)(iii) pH methods are answer routes; Q13(b) carries winter and spring barley as routes.",
+      "figures": "Five paper figures (soil sieves, farm machinery A-F, ruminant stomach, excretory system, flower), lettered ones with decoded label keys shown with the scheme.",
+      "cropReview": "All 52 distinct crop pairs inspected. regions.py: a part starts at a heading line printed level with its marker, a centred OR inside a part no longer ends it, and Q13 paper crops start inside the page border."
+    },
+    "authored2019Higher": {
+      "added": 61,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2019_hl.py on the shared legacy builder.",
+      "boundaries": "61 base tasks, one card each. Under the scheme's first-correct convention a Question 1 scale printed across (i) and (ii) (Q1(c), (e), (f)) and Q6(c) is one orderedSplit task; a part with one pool keeps its steps (4 + 1 + 5). Q2(b)(ii) causes, Q3 Option One (b)(ii) grazing systems and Q4(a) flask/soil methods are answer routes; Q8(c) is one card with eight member parts, best six count. The scheme's Q4 heading says \"Two of (a), (b), (c)\" while answering (a)-(d); disclosed as a source note.",
+      "cropReview": "All 61 distinct crop pairs inspected; Q7(b)/(c), Q8(b)(ii) and Q9(e) scheme crops hand-set."
+    },
+    "authored2019Ordinary": {
+      "added": 54,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2019_ol.py on the shared legacy builder.",
+      "boundaries": "54 base tasks, one card each. Shared scales across parts (Q1, Q5, Q7, Q9(c), Q10(a), Q13(a), (b), (d)) are orderedSplit tasks. Answer routes: Q8(c) hill or lowland sheep, Q11(b) sandy or clay soil, Q12(c) resazurin or agar plates, and the three Q13(d)(iv) demonstrations as routes on the Q13(d) card. The 5 for Q13(c)(iii) is printed level with the (iv) heading; split by column and disclosed.",
+      "figures": "Eight paper figures (wormery, machinery A-F, cereals A-C, clover nodules, farrowing crate, stubble turnips, milking parlour, sheep heart A-D); lettered ones carry decoded label keys shown with the scheme.",
+      "cropReview": "All 54 distinct crop pairs and eight figures inspected; Q9(c) and Q13(c)(iii)/(iv) scheme crops hand-set."
+    },
+    "authored2018Higher": {
+      "added": 57,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2018_hl.py on the shared legacy builder.",
+      "boundaries": "57 base tasks, one card each. Question 1 scales across (i) and (ii) (Q1(a), (c), (d)) and Q5(c) are orderedSplit tasks; one-pool parts keep their steps. Q3 Option Two (b) cereals and Q4(c) amylase/catalase are answer routes; Q8(c) is one card with eight member parts.",
+      "answerMap": "2018 Higher English had no Paper Trail answer map; the generated sidecar carries the scheme band [1, 17] and the index row now flags answers, as build-index.py would for a committed sidecar. Its anchors are the 57 practice tasks only.",
+      "cropReview": "All 57 distinct crop pairs inspected; Q2(c), Q5(c) and Q9(e) trimmed by hand."
+    },
+    "authored2018Ordinary": {
+      "added": 60,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2018_ol.py on the shared legacy builder.",
+      "boundaries": "60 base tasks, one card each. Every Section One question prints one scale across its parts and is one orderedSplit task; Q5 is one first-correct pool (5(3) + 5(1)). The Q9(a)(ii) potato headings and the six Q13(a)(ii) sheep terms carry their own marks and are separate tasks. Q13(d)(iv) carries the pig formula and both accepted sheep formulas as routes. Q8(b)(ii)'s second 4 is printed level with the (iii) heading; split by column and disclosed.",
+      "censusReader": "The paper prints Question 13(b) as a second \"(a)\". census_agri_legacy now reads a repeated letter as the missing one when the letter after it follows; every other legacy Agricultural Science census (2010-2020, both levels) is unchanged.",
+      "figures": "Six paper figures (sedimentation cylinder, liver fluke hosts, ruminant stomach, grass flower, mitosis, photosynthesis); lettered ones carry decoded label keys.",
+      "cropReview": "All 60 distinct crop pairs and six figures inspected; Q8(b), Q9(a)(ii), Q12(b), Q13(a)(ii) and Q13(d)(iv) scheme crops hand-set."
+    },
+    "authored2017Higher": {
+      "added": 58,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2017_hl.py on the shared legacy builder.",
+      "boundaries": "58 base tasks, one card each. Question 1 scales across (i) and (ii) (Q1(a), (b), (c), (h), (i)) are orderedSplit tasks; one-pool parts keep their steps (6 + 3 + 1, 6 + 4). Answer routes: Q3 Option Two (b) the four cereals, Q4(a) feeding trial or test tubes, Q4(b) the four silage-quality methods, Q5(a)(ii) the seven quantitative milk tests. Q8(c) is one card with eight member parts.",
+      "cropReview": "All 58 distinct crop pairs inspected; regions.py now lets an OR inside a part (the moisture test's two methods) run on, so Q3 Option Two (c)(ii) reaches page 10."
+    },
+    "authored2017Ordinary": {
+      "added": 71,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2017_ol.py on the shared legacy builder.",
+      "boundaries": "71 base tasks, one card each. Section One scales across several parts (Q1, Q5, Q6) are orderedSplit tasks; one-pool questions keep their steps (Q2 10(2), Q3 10(2), Q4 and Q7 2(7) + 3(2)). Section Two parts are priced on their own and the four Q13(c)(ii) pollution situations carry their own 2(3) each. Q11(c) carries the indicator and pH-meter methods as answer routes.",
+      "figures": "Ten paper figures (burning soil, machinery A-F, germination flasks, butterfly life cycle W-Z, cow skull, cow heart A-D, reseeding plants, leaf section, stem section, milk pie chart); lettered ones carry decoded label keys.",
+      "cropReview": "All 71 distinct crop pairs and ten figures inspected; Q8(d) paper crops widened to the whole heart block, Q10(d) scheme crop extended to the table foot, Q13(c)(ii) hand-set per situation."
+    },
+    "authored2016Higher": {
+      "added": 62,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2016_hl.py on the shared legacy builder.",
+      "boundaries": "62 base tasks, one card each. A scale printed across a part's (i) and (ii) (Q1(a), (f), (j)) or across headings (Q2(a), Q3 Option One (b)) is an orderedSplit task; parts priced at (i) and (ii) separately (Q1(b), (d), (h)) are separate tasks; one-pool parts keep their steps (6 + 3 + 1, 3 + 2 + 1, 6 + 6 + 4, 5 + 3 + 1 + 1, 7 + 3 + 2). Q4(b) carries its compulsory named crop. Q8(c) is one card with eight member parts.",
+      "figures": "One paper figure: the Q5(a) milk-composition table, shown on Q5(a)(i) and (ii) in place of a flattened stem.",
+      "cropReview": "All 62 distinct crop pairs and the milk-table figure inspected; drafted regions needed no hand-set crops."
+    },
+    "authored2016Ordinary": {
+      "added": 69,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2016_ol.py on the shared legacy builder.",
+      "boundaries": "69 base tasks, one card each. Section One is one task per question: Q5, Q6 and Q7 print one scale across their parts and are orderedSplit tasks; Q1-Q4 carry their own row marks. Section Two parts are priced on their own; the four Q11(a) headings carry 4 marks each. Answer routes: Q8(a)(iii) the four sowing methods, Q13(a)(ii) the five lowland breeds, Q13(d)(iii) Method A or Method B.",
+      "figures": "Seven paper figures (soil flasks, laboratory equipment A-E, flower and strawberry, invertebrates A-C, barley and tramlines, respiratory system A-D, urinary system X-Z); lettered ones carry decoded label keys.",
+      "cropReview": "All 69 distinct crop pairs and seven figures inspected; the four Q11(a) scheme crops take the whole comparison table with its 4 × 4m."
+    },
+    "authored2015Higher": {
+      "added": 58,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2015_hl.py on the shared legacy builder.",
+      "boundaries": "58 base tasks, one card each. Q1(h) and Q1(j) print one 6+3+1m across (i) and (ii) and are orderedSplit tasks; other Q1 parts keep their steps. Numbered items inside a part (Q2(b)(i), Q7(a)(ii), Q8(b)(iii)) stay on that part's card; the three Q3 Option Two (a) headings carry 2 + 2 each and are separate tasks. Q8(c) is one card with eight member parts.",
+      "cropReview": "All 58 distinct crop pairs inspected; the Q3 Option Two crops are hand-set (the scheme heads it 'Q 3 Option 2'), and shared mark cells on Q3 Option One (c) and Q8(b) are split to their own parts."
+    },
+    "authored2015Ordinary": {
+      "added": 63,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2015_ol.py on the shared legacy builder.",
+      "boundaries": "63 base tasks, one card each. Section One is one task per question with the scheme's own row marks (5 x 4m, 4 x (3m + 2m), 10 x 2m); Q4's four cereals are answer routes. Section Two parts are priced on their own; the Q12(c) cross is one task because its marks are tied line to line. Answer routes: Q8(c) oven or wringing, Q10(b)(ii) feel, sieve or sedimentation.",
+      "figures": "Five paper figures (spring cereals A-D, habitat apparatus A-D, earthworm, ruminant stomach B-D, milk composition table A-B); lettered ones carry decoded label keys.",
+      "cropReview": "All 63 distinct crop pairs and five figures inspected; Q12(b) crops hand-set (the scheme prints the cross without (i)-(iii)); footer-trimmed Q3, Q5, Q7, Q10(c)(iii) and Q12(c)."
+    },
+    "authored2014Higher": {
+      "added": 61,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2014_hl.py on the shared legacy builder.",
+      "boundaries": "61 base tasks, one card each. One-pool parts keep their steps (6 + 3 + 1, 4 + 4 + 1 + 1, 10 + 1 + 1, 3×6m + 3×2m); parts priced separately (Q1(i), Q1(j), Q5(d)) and the four Q6(b) heifer stages (2 + 2 + 1 each, orderedSplit) are separate tasks. Answer routes: Q1(a) freezing point, density or total solids; Q8(b) barley, wheat, oats or maize. Q8(c) is one card with eight member parts.",
+      "figures": "Two paper figures: the Q1(j) oat drawing (A and B decoded on (iii); neighbouring question text painted out) and the Q5(d) soil water table.",
+      "cropReview": "All 61 distinct crop pairs and both figures inspected; Q1 scheme bands, Q1(i)/(j), Q2(a), Q5(b) and Q7(a) regions hand-set (the scheme table centres its part labels), Q4-Q8 scheme crops trimmed off neighbouring heads."
+    },
+    "authored2014Ordinary": {
+      "added": 61,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2014_ol.py on the shared legacy builder.",
+      "boundaries": "61 base tasks, one card each. Section One is one task per question with the scheme's own row marks (5 × 4m, 5 × (2m + 2m), 10 × 2m and the per-part values of Q4 and Q6); table answers are kept as scheme-worded menus. Section Two parts are priced on their own; the Q12(d) cross is one task because its marks are tied line to line.",
+      "figures": "Five paper figures (cereal equipment A-E, cranefly adult and larva, sheep skull, liver fluke, mitosis); the equipment letters carry decoded label keys.",
+      "cropReview": "All 61 distinct crop pairs and five figures inspected; Q10(b) regions hand-set (the scheme heads them Flushing: and Sponging:), Q11(a) scheme crops take the whole comparison block, Q12(a)(ii) takes the mitosis diagram, and eleven crops trimmed above page footers."
+    },
+    "authored2013Higher": {
+      "added": 59,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2013_hl.py on the shared legacy builder.",
+      "boundaries": "59 base tasks, one card each. Question 1 parts keep the printed 4, 5, 1 on their menus, except Q1(e) (one scale across 1., 2. and (ii): orderedSplit), Q1(h), whose (i) and (ii) carry 3 + 2 each and are separate tasks, and the Q1(i) drawing. Section B parts are priced on their own; the three Q8(a) headings carry 4 + 4 each. Q2(c) pH methods are answer routes; Q8(c) is one card with eight member parts.",
+      "figures": "One paper figure: the Q2(a) soil test table, shown on (i) and (ii).",
+      "cropReview": "All 59 distinct crop pairs and the table figure inspected; the shared 3 + 2 and 4+4 mark cells on Q1(h) and Q3 Option Two (c) are split to their own parts."
+    },
+    "authored2013Ordinary": {
+      "added": 62,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2013_ol.py on the shared legacy builder.",
+      "boundaries": "62 base tasks, one card each. Section One is one task per question with the scheme's own row marks (5 x 4m, 5 x (2m + 2m), 10 x 2m and the per-part values of Q3 and Q6). Section Two parts are priced on their own; the Q12(d) cross is one task because its marks are tied line to line. Q13(b)(iii) PRG, IRG or clover are answer routes.",
+      "figures": "Three paper figures (farm machinery A-E, plant cell A-E, grass species A-D), each with a decoded label key.",
+      "cropReview": "All 62 distinct crop pairs and three figures inspected; Q11(a) paper crops take the whole (a) block beside the earthworm photograph, four crops trimmed above page footers."
+    },
+    "authored2012Ordinary": {
+      "added": 49,
+      "corrected": 0,
+      "withdrawn": 0,
+      "source": "Authored from the SEC paper and scheme; no cards existed. Built by agricultural_science_2012_ol.py on the shared legacy builder.",
+      "boundaries": "49 base tasks, one card each. Section One is one task per question: Q7 prints one scale across its parts (orderedSplit); the others carry the scheme's own row marks or one-pool steps (Q3 (8 x 1m) + (2 x 6m), Q5 and Q6 2(3m) + 2(4m) + 6m). Section Two parts are priced on their own; Q11(d) and Q13(a) print one scale across their parts (orderedSplit). Answer routes: Q10(c) calf or replacement heifer rearing, Q12(b)(iii) sieve, sedimentation or feel method.",
+      "figures": "Three paper figures (clover root nodules, the two soil animals, ruminant stomach A-D with D printed as Omasum).",
+      "cropReview": "All 49 distinct crop pairs and three figures inspected; regions.py now reads the scheme's spelled heads (Question Eight) as numbers, leaving every earlier draft byte-identical; Q12(a)(iii) and Q13(b) hand-set, three crops trimmed above page footers."
+    }
+  },
+  "verification": {
+    "targetedTestsPassed": 263,
+    "sourceReaderOpenCloseTestPassed": true,
+    "renderedCropReview": "2010 Ordinary: all 38 distinct paper crops and 61 distinct scheme crops inspected and corrected, plus 4 original diagram images. Prior 2010 Higher 49 crop pairs and 2 solution images retained. Every new Ordinary marking claim matches its specific cropped scheme text. Irish Higher: all 43 distinct paper and 44 scheme crop sets inspected. Irish Ordinary: all 48 paper and 64 scheme crop sets inspected. Final fixes re-rendered and inspected. 2011 Higher: all 55 distinct English paper/scheme pairs and all 53 distinct Irish pairs inspected. Irish bindings comprise 40 paper crop sets and 53 scheme crop sets; final heart and ratio crop corrections re-rendered. Both new source images inspected. 2011 Ordinary English: all 65 distinct paper/scheme pairs and five source diagrams visually inspected; final clipped tariffs and table borders corrected and inspected again. 2011 Ordinary Irish: all 66 distinct crop pairs inspected (31 paper crop sets, 66 scheme sets), corrected missing/clipped lines re-rendered, including the final fertiliser note margin. All 28 original PDF pages inspected. 2012 Higher: all 56 distinct paper/scheme crop pairs and both solution figures inspected. Clipped lines, the growth-curve time label and shared tariffs corrected and re-rendered. 2026 Higher: all 91 distinct paper/scheme crop pairs and the reproductive-system solution image inspected; the Q18(b)(iii) crop was trimmed to exclude the (c) table and re-rendered. 2026 Ordinary: all 85 distinct crop pairs inspected; Q3(b)(ii), Q12(b)(ii), Q16(a)(ii), Q17(a)(ii)/(iii), Q17(b)(ii) and Q18(a)(ii)–(v) re-cropped and re-inspected; six figures inspected (three re-cropped). 2025 Higher: all 89 distinct crop pairs inspected; ten paper crops widened to include their tables, photographs and stems, then re-inspected. 2025 Ordinary: all 90 distinct crop pairs inspected; Q9(a)(i), Q11(a)(i), Q14(c)(ii) and Q18(a)(iii) re-cropped and re-inspected. 2024 Higher: all 81 distinct crop pairs inspected; Q4, Q14(a)(ii)/(iii), Q14(b)(ii) and Q17(c)(ii)/(iii) re-cropped and re-inspected; five new figures inspected. 2024 Ordinary: all 82 distinct crop pairs inspected; Q5(b), Q7(b), Q9(a)(ii)/(iii), Q11(a)(iii), Q12(a)/(b), Q13(a)(ii), Q14(d), Q15(a)(i), Q16(b), Q16(c)(ii)/(iii), Q17(a)(ii) and Q18(c) re-cropped and re-inspected; five new figures inspected. 2022 Ordinary: all 96 distinct crop pairs inspected; Q9(c)/(d) scheme rows, Q11(a)(ii) (x-bounded clear of the photograph), Q13(a)(iii), Q13(b)(ii)/(iii) (field photograph added), Q15(b)(iii)/(iv), Q17(a)(ii)/(iii), Q17(b)(iii), Q18(a)(i)-(iii) and Q18(c)(ii) re-cropped and re-inspected; one new figure inspected. 2021 Higher: all 106 distinct crop pairs inspected; three new figures inspected (sheep milk pie chart, organic fertiliser DM bar chart, reference soil index). 2021 Ordinary: all 113 distinct crop pairs inspected; Q18(a)(i) Weed control and Q18(c)(iv) scheme crops trimmed and re-inspected. 2020 Higher: all 60 distinct crop pairs inspected after the boundary-snapping change; Q3 Option Two (b)(ii) scheme crop re-cut to include its answer line. 2020 Ordinary: all 52 distinct crop pairs and five new figures inspected. 2019 Higher: all 61 distinct crop pairs inspected. 2019 Ordinary: all 54 distinct crop pairs and eight figures inspected. 2018 Higher: all 57 distinct crop pairs inspected. 2018 Ordinary: all 60 distinct crop pairs and six figures inspected. 2017 Higher: all 58 distinct crop pairs inspected. 2017 Ordinary: all 71 distinct crop pairs and ten figures inspected. 2016 Higher: all 62 distinct crop pairs and one figure inspected. 2016 Ordinary: all 69 distinct crop pairs and 7 figures inspected. 2015 Higher: all 58 distinct crop pairs inspected. 2015 Ordinary: all 63 distinct crop pairs and 5 figures inspected. 2014 Higher: all 61 distinct crop pairs and 2 figures inspected. 2014 Ordinary: all 61 distinct crop pairs and 5 figures inspected. 2013 Higher: all 59 distinct crop pairs and one figure inspected. 2013 Ordinary: all 62 distinct crop pairs and 3 figures inspected. 2012 Ordinary: all 49 distinct crop pairs and 3 figures inspected.",
+    "cardBuild": "2464 built, zero dropped",
+    "generationChecks": [
+      "agricultural_science_completion.py --check",
+      "agricultural_science_atlas.py --check",
+      "agricultural_science_inventory.py --check",
+      "agricultural_science_census.py --check",
+      "agricultural_science_reconcile.py --write --check-reviewed"
+    ],
+    "testTypecheck": "Only the same 3 pre-existing programmeAnalytics errors at programmeAnalyticsClient.test.ts:32/56 and programmeAnalytics.ts:50; no new errors.",
+    "applicationTypecheck": "Passed",
+    "targetedSuitesPassed": 8,
+    "schemeNoteRevealHideTestPassed": true,
+    "previousBatchRegression": {
+      "testsPassed": 271,
+      "suitesPassed": 9
+    },
+    "translatedReaderBrowserQA": {
+      "casesPassed": 18,
+      "viewportWidths": [
+        1200,
+        390
+      ],
+      "pageErrors": 0,
+      "scope": "Actual VaultQuestionCard and PDF.js with the original local SEC PDFs. Nine representative tasks at each width: paper and scheme canvas counts, nonblank crops, no canvas overflow, source notes shown only after reveal and hidden again. All nine phone screenshots inspected; desktop genetics and pigment notes also inspected.",
+      "limitation": "Isolated component harness; full application reader navigation and Mark Bank sessions remain to be checked. Phone PDF thumbnails are small; verify full-reader zoom and return before the final corpus sign-off."
+    },
+    "currentBatchRuntimeQA": {
+      "casesPassed": 420,
+      "viewportWidths": [
+        1200,
+        390
+      ],
+      "pageErrors": 0,
+      "scope": "2026 Higher English: 24 representative tasks at each width in actual VaultQuestionCard, Viewer, SessionScreen and PDF.js: source reveal/hide, nonblank crops, full-reader zoom and return, choose-k route selection, manual totals and the solution figure. Phone Q7 route, Q13(c)(i) crop and Q17(a)(iv) graph screenshots inspected. 2025 Higher: 20 representative tasks (corrected legacy routes, added routes, Q12 scale, Q14(b)(i) 17-mark card) at 1200 and 390 px, 40 cases, 0 errors. 2025 Ordinary: 22 representative tasks (corrected Q1(a)(i) and Q9(b) cards, added routes and variants) at 1200 and 390 px, 44 cases, 0 errors. 2024 Higher: 35 tasks (all 30 corrected/added cards plus five unchanged originals) at 1200 and 390 px, 70 cases, 0 errors. Item-choice pooling: 22 pooled or restored cards (2010–2012 legacy pools, 2024–2026 pools, Q12 single card, route-locked Q14(c)(i) and Q3 Option Two (b)) at 1200 and 390 px, 44 cases, 0 errors. 2024 Ordinary: 13 tasks (all eight corrected/added cards plus five unchanged originals) at 1200 and 390 px, 26 cases, 0 errors. 2023 Higher: 18 tasks (corrected, added and answer-route cards) at 1200 and 390 px, 36 cases, 0 errors. 2023 Ordinary: 22 tasks (corrected, added and answer-route cards) at 1200 and 390 px, 44 cases, 0 errors. 2022 Higher: 16 tasks (corrected, added and answer-route cards) at 1200 and 390 px, 32 cases, 0 errors. 2022 Ordinary: 20 tasks (corrected, added, withdrawn-alias table and answer-route cards) at 1200 and 390 px, 40 cases, 0 errors; the harness now waits until the zoomed reader page carries ink, after earlier 1200 px zoom screenshots were found to capture the canvas mid-repaint. 2021 Higher: 20 tasks (corrected, added and answer-route cards, including the Q14(a) heading routes and Q15(b)(ii) solution routes) at 1200 and 390 px, 40 cases, 0 errors. 2021 Ordinary: 20 tasks (corrected, added and answer-route cards, including the former Q17(b)(ii)/(iii) orphans) at 1200 and 390 px, 40 cases, 0 errors.",
+      "limitation": "Each case loads a fresh page: in one shared page, a crop on paper page 17 (CCITTFax image) renders no canvas after the full-paper Viewer has opened (reproduced; component defect reported, not fixed here). Signed-in full-application navigation remains open."
+    },
+    "frozenCoverageRatchets": "The Agricultural Science coverage count/hash assertions remain intentionally frozen at the original 869-card baseline until the entire independent corpus reconciliation is zero-open/zero-orphan. The citation grammar check passes."
+  },
+  "remaining": [
+    "Independently sweep the remaining 29 English papers and matching schemes; compare the remaining 30 Irish editions. Nine complete edition sweeps do not establish corpus-wide completeness.",
+    "Reconcile 2021-2025 against their original cards where not yet done (see the 2025 Higher legacy-boundary decision). Every English sitting from 2010 to 2026 now has authored or reconciled cards and 0 open asks.",
+    "Classify all 599 pending raw selection directives. Expand genuine closed pools mechanically and retain written reasons for non-expansions.",
+    "Extend the independent source census beyond the six reviewed editions, including the other Irish denominators. Resolve the generic parser’s 60 flags and legacy option/shared-award mismatches; do not treat its percentages as completion evidence.",
+    "Extend exact Mark Bank/Topic Atlas reconciliation through every remaining sitting, including modern orphan candidates, while preserving all existing identities and crops.",
+    "Check signed-in full-application navigation as well as the component reader/session QA already completed.",
+    "Keep coverage and original preservation baselines frozen until the whole-corpus zero-open/zero-orphan reconciliation and regression gates pass.",
+    "Review integration with other terminals. Changes remain on the isolated branch; nothing is merged or published."
+  ],
+  "nextAction": "English 2010-2026 is complete at 0 open asks. Irish editions deferred; 2012 Higher Irish parked on park/agri-2012-hl-irish. Awaiting coordinator direction."
+}

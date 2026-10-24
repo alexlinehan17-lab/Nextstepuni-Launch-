@@ -32043,7 +32043,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "delivery (tube from reacƟon container)",
+    "verbatim": "delivery (tube from reaction container)",
     "marks": 4
    },
    {
@@ -32136,7 +32136,7 @@
     "verbatim": "ethanoic acid",
     "marks": 2,
     "accepts": [
-     "aceƟc acid"
+     "acetic acid"
     ]
    }
   ],
@@ -32184,7 +32184,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "addiƟon",
+    "verbatim": "addition",
     "marks": 2
    }
   ],
@@ -32288,13 +32288,13 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "staƟonary phase, e.g. ﬁlter paper",
+    "verbatim": "stationary phase, e.g. filter paper",
     "marks": 3
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "(separated/unseparated) mixture in correct locaƟon",
+    "verbatim": "(separated/unseparated) mixture in correct location",
     "marks": 3
    }
   ],
@@ -32830,13 +32830,13 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "points ploƩed",
+    "verbatim": "points plotted",
     "marks": 6
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "line of best ﬁt",
+    "verbatim": "line of best fit",
     "marks": 3
    }
   ],

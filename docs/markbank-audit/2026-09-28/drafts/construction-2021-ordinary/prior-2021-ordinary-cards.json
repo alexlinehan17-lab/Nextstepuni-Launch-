@@ -1,0 +1,1186 @@
+[
+  {
+    "id": "cons-2021-ol-q1-b",
+    "topicId": "cons-5-4",
+    "conceptId": "rainwater-removal-at-the-eaves",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q1(b)",
+    "questionText": "On your drawing show how rainwater is removed at the eaves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "3",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 3,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q1-b-r1",
+        "kind": "point",
+        "verbatim": "Eaves gutter/ downpipe",
+        "marks": 3,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q2-a",
+    "topicId": "cons-6-2",
+    "conceptId": "advantages-of-an-insulated-ground-floor",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q2(a)",
+    "questionText": "List two advantages of constructing a ground floor with a high level of insulation.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q2-a-r1",
+        "kind": "anyN",
+        "verbatim": "List two advantages of constructing a ground floor with a high level of insulation.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Better for the environment",
+            "Increased thermal comfort for occupants",
+            "Energy bills are reduced",
+            "The overall house will be warmer",
+            "It improves the Building Energy Rating (BER)"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q3-a",
+    "topicId": "cons-5-2",
+    "conceptId": "cold-water-pipework-from-the-tank",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q3(a)",
+    "questionText": "Using a single-line labelled sketch, show the pipework required to supply cold water from the water main to the kitchen sink and to the water storage tank.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "8 x 4",
+      "answer": 8,
+      "ofParts": 12,
+      "perPart": 4
+    },
+    "totalMarks": 32,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q3-a-r1",
+        "kind": "anyN",
+        "verbatim": "Typical details",
+        "marks": 32,
+        "openList": true,
+        "contextNote": "Typical details",
+        "group": {
+          "claimMax": 8,
+          "perOption": 4,
+          "options": [
+            "Mains water supply",
+            "Water meter",
+            "Stop valve",
+            "15 mm rising main",
+            "Kitchen sink",
+            "Connection to kitchen sink",
+            "Ball-valve",
+            "Cold water storage tank",
+            "Insulation around storage tank",
+            "28 mm overflow",
+            "Pipework insulation",
+            "Valves"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q3-b",
+    "topicId": "cons-5-2",
+    "conceptId": "advantages-of-a-water-meter",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q3(b)",
+    "questionText": "Discuss two advantages of installing a water meter.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q3-b-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages of installing a water meter.",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Encourage water conservation",
+            "Reduce the cost of water treatment due to reduced usage",
+            "Show leaks and wastage if water meter reading is high",
+            "Reduce the water usage bill"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q4-a",
+    "topicId": "cons-1-3",
+    "conceptId": "why-planning-permission-is-needed",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q4(a)",
+    "questionText": "Discuss two reasons why it is necessary to apply for planning permission to build a new dwelling house.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 6,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q4-a-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two reasons why it is necessary to apply for planning permission to build a new dwelling house.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "To ensure structures meet all current building regulations",
+            "To ensure no environmental damage is done to localities",
+            "Informs the public about the development",
+            "It controls the design, shape, height and location of developments",
+            "To provide better designed communities",
+            "Legal requirement"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q4-b",
+    "topicId": "cons-1-3",
+    "conceptId": "information-in-a-planning-application",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q4(b)",
+    "questionText": "Using notes and freehand sketches, describe the information that must be contained in each of the following planning documents: • site notice • site location map.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 10,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q4-b-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and freehand sketches, describe the information that must be contained in each of the following planning doc",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Name of applicant",
+            "Reference number of application",
+            "A description of what the development is to consist of",
+            "Where the application and plans can be inspected",
+            "The date when the site notice was erected. site location map",
+            "Identify the location of the dwelling and local areas",
+            "A scale of between 1:10560 and 1:2500",
+            "Boundary of site must be outlined in red colour",
+            "Position of neighbouring buildings",
+            "Position of north"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q5-a",
+    "topicId": "cons-3-6",
+    "conceptId": "vertical-section-external-wall-and-window",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q5(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and bottom portion of the window. Show the typical construction details from a level 400 mm below to a level 300 mm above the concrete window cill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q5-a-r1",
+        "kind": "anyN",
+        "verbatim": "Specifications",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "Specifications",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "19 mm external render",
+            "100 mm concrete block outer leaf",
+            "Full filled insulated cavity",
+            "Wall ties",
+            "100 mm concrete block inner leaf",
+            "13 mm internal plaster",
+            "Cavity closer",
+            "DPC",
+            "Precast concrete window cill",
+            "Throating / drip",
+            "Window board",
+            "Airtight tape",
+            "Window frame 120 × 80 mm",
+            "Triple glazing"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q6-b",
+    "topicId": "cons-1-8",
+    "conceptId": "risks-when-working-in-a-deep-trench",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q6(b)",
+    "questionText": "Describe two potential risks to construction workers when working in a deep trench.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 5",
+      "answer": 2,
+      "ofParts": 5,
+      "perPart": 5
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q6-b-r1",
+        "kind": "anyN",
+        "verbatim": "Possible Risks",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Possible Risks",
+        "group": {
+          "claimMax": 2,
+          "perOption": 5,
+          "options": [
+            "Cave-ins or collapse of trench sides",
+            "Equipment falling in on workers",
+            "Machinery falling in on workers",
+            "Workers falling on entering or exiting the trench",
+            "Coming in contact with underground services"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q6-c",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-precautions-in-a-deep-trench",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q6(c)",
+    "questionText": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep trench on a construction site.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 13",
+      "answer": 1,
+      "ofParts": 4,
+      "perPart": 13
+    },
+    "totalMarks": 13,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q6-c-r1",
+        "kind": "anyN",
+        "verbatim": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep tre",
+        "marks": 13,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 13,
+          "options": [
+            "Slope or battering back the trench sides to a safe angle to stabilise the sides and stop collapse",
+            "Support trench walls with sheeting/trench box when the depth exceeds 1.25 metres to prevent the collapse of the sides",
+            "Ensure guard rails and exclusion zone notices are in place to limit the proximity of machines and workers to the edge of the trench",
+            "Ensure excavated material is stored at a safe distance from the open trench to prevent material falling into the trench"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q7-b",
+    "topicId": "cons-1-1",
+    "conceptId": "laying-out-a-living-room",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q7(b)",
+    "questionText": "On the sketch, show your preferred location for each of the following in the living room: • sofa (3 seater) • stove • sofa (2 seater) • television. Give one reason for selecting each location.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "4 x 6",
+      "answer": 4,
+      "ofParts": 5,
+      "perPart": 6
+    },
+    "totalMarks": 24,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q7-b-r1",
+        "kind": "anyN",
+        "verbatim": "On the sketch, show your preferred location for each of the following in the living room: • sofa (3 seater) • stove • so",
+        "marks": 24,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 4,
+          "perOption": 6,
+          "options": [
+            "Show your preferred locations for each of the following in the living room",
+            "Sofa (3 Seater)",
+            "Sofa (2 Seater)",
+            "Stove",
+            "Television"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q7-c",
+    "topicId": "cons-5-7",
+    "conceptId": "a-wood-burning-stove-in-a-living-room",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q7(c)",
+    "questionText": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "1 x 6",
+      "answer": 1,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 6,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q7-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+        "marks": 6,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 1,
+          "perOption": 6,
+          "options": [
+            "A centre piece for a group to gather around and socialise",
+            "Provides warmth to the family in the main room of the dwelling",
+            "Environmentally friendly if using timber for fuel",
+            "Reduces the use oil and gas to heat the area"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q9-a",
+    "topicId": "cons-4-6",
+    "conceptId": "an-applied-finish-for-decking",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q9(a)",
+    "questionText": "Specify a suitable applied finish to preserve the decking, and give two reasons for your choice.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 4",
+      "answer": 3,
+      "ofParts": 11,
+      "perPart": 4
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q9-a-r1",
+        "kind": "anyN",
+        "verbatim": "Suitable applied finish to preserve the decking",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "Suitable applied finish to preserve the decking",
+        "group": {
+          "claimMax": 3,
+          "perOption": 4,
+          "options": [
+            "Oils (Decking oil, Teak oil, furniture oil)",
+            "Solvent based preservative",
+            "Exterior wood paint",
+            "Varnish",
+            "Decking stain Two reasons for your choice:",
+            "Improve appearance of the decking",
+            "Protects against UV damage and fading",
+            "Extends the life span of the softwood decking",
+            "Prevents against algae growth on the decking boards",
+            "Protects the boards against rot and decay",
+            "Changes the colour of the decking boards"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q9-b",
+    "topicId": "cons-1-1",
+    "conceptId": "using-an-outdoor-space-year-round",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q9(b)",
+    "questionText": "The outdoor space needs to be modified so that the occupants can use the space throughout the year. Using notes and freehand sketches, show two modifications to the outdoor space that would allow its use during the winter months.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 13",
+      "answer": 2,
+      "ofParts": 3,
+      "perPart": 13
+    },
+    "totalMarks": 26,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q9-b-r1",
+        "kind": "anyN",
+        "verbatim": "The outdoor space needs to be modified so that the occupants can use the space throughout the year. Using notes and free",
+        "marks": 26,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 13,
+          "options": [
+            "Install a wind breaker around the decking",
+            "Install a permanent roof",
+            "Install a heat source - fire pit, outdoor patio heater, external fireplace"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q9-c",
+    "topicId": "cons-1-1",
+    "conceptId": "advantages-of-an-outdoor-living-space",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q9(c)",
+    "questionText": "Discuss two advantages for the occupants of creating an outdoor living space.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "2 x 6",
+      "answer": 2,
+      "ofParts": 4,
+      "perPart": 6
+    },
+    "totalMarks": 12,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q9-c-r1",
+        "kind": "anyN",
+        "verbatim": "Discuss two advantages for the occupants of creating an outdoor living space.",
+        "marks": 12,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A Planning of Project",
+            "B Report Writing",
+            "C Manipulative Skills",
+            "D Presentation of Project"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q1-a",
+    "topicId": "cons-3-9",
+    "conceptId": "vertical-section-external-wall-and-pitched-eaves",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q1(a)",
+    "questionText": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves. Include the first three courses of slate at eaves.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "7 x 5",
+      "answer": 7,
+      "ofParts": 14,
+      "perPart": 5
+    },
+    "totalMarks": 35,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q1-a-r1",
+        "kind": "anyN",
+        "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your ",
+        "marks": 35,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 7,
+          "perOption": 5,
+          "options": [
+            "Slates 600 mm × 300 mm on battens 50 mm × 30 mm",
+            "Breather membrane",
+            "Rafters 200 mm × 50 mm",
+            "Ceiling joist with insulation between joists",
+            "Insulated plasterboard with skim coat",
+            "Wallplate 100 mm × 75 mm",
+            "Airtight membrane and tape",
+            "Ventilation",
+            "Tilting fillet, fascia, soffit and eaves gutter",
+            "Concrete block inner leaf",
+            "Full fill cavity insulation 200 mm, wall ties and cavity closer",
+            "Concrete block outer leaf",
+            "13 mm internal plaster and 19 mm render",
+            "Any three typical dimensions"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q5-b",
+    "topicId": "cons-3-6",
+    "conceptId": "preventing-water-entering-at-the-window-cill",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q5(b)",
+    "questionText": "Show on your drawing the typical design detailing to prevent water entering at the window cill.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 4,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q5-b-r1",
+        "kind": "point",
+        "verbatim": "Throating / drip / DPC",
+        "marks": 4,
+        "openList": true,
+        "contextNote": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q6-a",
+    "topicId": "cons-1-8",
+    "conceptId": "safety-signs-on-a-construction-site",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q6(a)",
+    "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items: • high-visibility vest • safety boots • safety helmet. Give one specific reason why each item of personal protective equipment listed above must be worn.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "bestNofParts",
+      "notation": "3 x 9",
+      "answer": 3,
+      "ofParts": 3,
+      "perPart": 9
+    },
+    "totalMarks": 27,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q6-a-r1",
+        "kind": "anyN",
+        "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items:",
+        "marks": 27,
+        "openList": true,
+        "contextNote": "",
+        "group": {
+          "claimMax": 3,
+          "perOption": 9,
+          "options": [
+            "High-visibility vest sign and specific reason",
+            "Safety boots sign and specific reason",
+            "Safety helmet sign and specific reason"
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-joist-bridging",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-joist-bridging",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Joist bridging",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • joist bridging.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-joist-bridging-r1",
+        "kind": "anyN",
+        "verbatim": "Joist bridging",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Joist bridging",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Used to keep joists vertical to prevent twisting",
+            "Stiffens and strengthens the joists by tying then together",
+            "Used to spread the load from one joist to other nearby joists",
+            "Two methods: solid bridging and herringbone bridging"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-working-drawing",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-working-drawing",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Working drawing",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • working drawing.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-working-drawing-r1",
+        "kind": "anyN",
+        "verbatim": "Working drawing",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Working drawing",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "A scaled drawing to use as a guide when constructing furniture or buildings",
+            "Will include an elevation, end elevation, plan, and sectional views",
+            "Will include dimensions and graphical information to aid construction of the building or artefact",
+            "Can be hand drafted or created using"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-roof-light",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-roof-light",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Roof light",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • rooflight.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-roof-light-r1",
+        "kind": "anyN",
+        "verbatim": "Roof light",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Roof light",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Used on roof surfaces for a means of natural light",
+            "Units are fitted with double, triple or quadruple glazing",
+            "Allows attic space to be used as a usable room",
+            "Form an important part of modern house design",
+            "Gives more privacy compared to dormer windows"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-steel-reinforcement",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-steel-reinforcement",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Steel reinforcement",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • steel reinforcement.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-steel-reinforcement-r1",
+        "kind": "anyN",
+        "verbatim": "Steel reinforcement",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Steel reinforcement",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Combined with concrete to create a strong building material called reinforced concrete",
+            "Encased in load-bearing concrete structures to increase strength and hold the concrete in tension",
+            "Placed at a depth of two thirds a foundations thickness",
+            "The steel is usually patterned to improve the bond and grip with the surrounding concrete",
+            "Often referred to as rebar and comes in bars or mesh which can be tied together into cages"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-heat-pump",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-heat-pump",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Heat pump",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • heat pump.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-heat-pump-r1",
+        "kind": "anyN",
+        "verbatim": "Heat pump",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Heat pump",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Used to extract heat from one area to another by means of the refrigeration cycle",
+            "A fan is used to pass air over an evaporator coil which removes the heat energy from the air and passes it to the refrigerant",
+            "The refrigerant is then compressed, which increases the temperature, this heat is transferred to water running through radiators or underfloor heating",
+            "Heat pumps that use the ground for heating are called geothermal heat pumps"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-ridge-board",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-ridge-board",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Ridge board",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridgeboard.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-ridge-board-r1",
+        "kind": "anyN",
+        "verbatim": "Ridge board",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Ridge board",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Horizontal member placed between the top end of the rafters",
+            "Forms the apex of a cut roof",
+            "Supported by the rafters or/and at the gable wall",
+            "Gives rigidity and straightness to the roof",
+            "Rafters are nailed to the ridge board",
+            "Typical sizes - 225 × 32 mm, 225 × 25 mm"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-biscuit-joint",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-biscuit-joint",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Biscuit joint",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • biscuit joint.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-biscuit-joint-r1",
+        "kind": "anyN",
+        "verbatim": "Biscuit joint",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Biscuit joint",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Widely used joint in manufacturing modern furniture to butt joint and edge joint",
+            "Joint used to join board of various width and thickness",
+            "Biscuit manufactured from pressed beech and available in different sizes",
+            "Biscuit joiner used to form a groove in opposing edges to allow biscuit to fit",
+            "Forms a larger surface area for gluing hence strengthens joint"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-room-thermostat",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-room-thermostat",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Room thermostat",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • room thermostat.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-room-thermostat-r1",
+        "kind": "anyN",
+        "verbatim": "Room thermostat",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Room thermostat",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "Senses the air temperature in the room and communicates with the heating system",
+            "Regulates a desirable temperature throughout the house",
+            "Can be digital, dial or touchscreen controlled",
+            "Smart home thermostats are connected to the"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cons-2021-ol-q8-None-building-energy-rating",
+    "topicId": "cons-1-5",
+    "conceptId": "construction-terms-building-energy-rating",
+    "level": "ordinary",
+    "year": 2021,
+    "subjectId": "construction-studies",
+    "section": "B",
+    "questionRef": "2021 OL Q8 — Building Energy Rating",
+    "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • building energy rating.",
+    "stem": "",
+    "figureKey": "",
+    "labelKey": [],
+    "tariffModel": {
+      "kind": "fixed",
+      "notation": "6 + 4",
+      "answer": null,
+      "ofParts": null,
+      "perPart": null
+    },
+    "totalMarks": 10,
+    "rows": [
+      {
+        "id": "cons-2021-ol-q8-None-building-energy-rating-r1",
+        "kind": "anyN",
+        "verbatim": "Building Energy Rating",
+        "marks": 10,
+        "openList": true,
+        "contextNote": "Building Energy Rating",
+        "group": {
+          "claimMax": 2,
+          "perOption": 6,
+          "options": [
+            "BER certificates indicates the homes energy performance",
+            "Rates the energy performance of a house from A - G",
+            "An A-rated house is the most energy efficient and will have the lowest energy bills",
+            "BER is calculated on the energy used to space heat, heat water, ventilate, and light a house",
+            "An A-rated house is the current building standard and can improve its appeal to buyers and renters"
+          ],
+          "perOptionSteps": [
+            6,
+            4
+          ]
+        }
+      }
+    ],
+    "notes": ""
+  }
+]

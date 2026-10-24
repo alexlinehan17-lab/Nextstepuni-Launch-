@@ -92,7 +92,13 @@ export interface PaperIsland {
   revision: number;
   tiles: PaperTile[];
   kept: PaperDiscoveryId[];
-  undo: { tileId: string; cost: number; usedCredit: boolean; previousTile?: PaperTile; previousIndex?: number } | null;
+  /**
+   * One step back. `tileId` is the tile the last action added ("" when it only
+   * removed one); `previousTile` is the tile it took away, put back at
+   * `previousIndex`. `restoreCost`/`restoreCredit` re-charge what removing or
+   * replacing that tile refunded.
+   */
+  undo: { tileId: string; cost: number; usedCredit: boolean; previousTile?: PaperTile; previousIndex?: number; restoreCost?: number; restoreCredit?: boolean } | null;
   claimedCaches?: string[];
   metVisitors?: PaperVisitorId[];
   claimedVisitors?: PaperVisitorId[];
@@ -111,6 +117,8 @@ export type PaperCommand =
       kind: TileKind;
     }
   | { action: "undo"; requestId: string; revision: number }
+  | { action: "remove"; requestId: string; revision: number; tileId: string }
+  | { action: "replace"; requestId: string; revision: number; tileId: string; kind: TileKind }
   | { action: "placeWonder"; id: PaperVisitorId; q:number; r:number; requestId:string; revision:number }
   | { action: "meetVisitor" | "claimVisitor"; id:PaperVisitorId }
   | { action: "keep"; id: PaperDiscoveryId }
@@ -177,6 +185,38 @@ export function paperIslandConnected(tiles: PaperTile[]) {
   }
   return tiles.every(tile=>reached.has(`${tile.q},${tile.r}`));
 }
+/**
+ * What taking a tile off the island gives back: the JP it cost, or the earned
+ * meadow tile it used. Placement records `cost`, so the refund is exactly what
+ * was paid, never the current catalogue price. A meadow placed with a credit is
+ * the only placed tile with cost 0 (starters and Wonder gifts were free).
+ */
+export function paperTileRefund(tile: PaperTile): { jp: number; credit: boolean } {
+  const credit = tile.kind === "meadow" && !tile.wonderId && tile.cost === 0 && !tile.id.startsWith("starter-");
+  return { jp: Math.max(0, Math.trunc(tile.cost)), credit };
+}
+
+/** Why this tile cannot come off the island, or null when it can. */
+export function paperRemovalBlock(tiles: PaperTile[], tileId: string): string | null {
+  const tile = tiles.find(t => t.id === tileId);
+  if (!tile) return "That tile is no longer on your island.";
+  if (tile.kind === "home") return "Your home stays at the heart of your island.";
+  if (!paperIslandConnected(tiles.filter(t => t.id !== tileId)))
+    return "Remove the tiles beyond it first, or replace it.";
+  return null;
+}
+
+/** Replacing pays the new price less the old tile's refund. */
+export function paperReplaceCost(state: Pick<PaperIsland, "tiles" | "credits">, tileId: string, kind: TileKind) {
+  const tile = state.tiles.find(t => t.id === tileId);
+  if (!tile) return null;
+  const refund = paperTileRefund(tile);
+  const credits = state.credits + (refund.credit ? 1 : 0);
+  const usedCredit = kind === "meadow" && credits > 0;
+  const cost = usedCredit ? 0 : tileById[kind].price;
+  return { cost, usedCredit, refund, net: cost - refund.jp };
+}
+
 // Server and demo share this reducer. The caller commits state and JP in one transaction.
 export function applyPaperCommand(
   progress: PaperProgress,
@@ -205,7 +245,7 @@ export function applyPaperCommand(
       credits: state.credits + 3 * (rank - state.rewardedRank),
       rewardedRank: rank,
     };
-  if (command.action === "place" || command.action === "placeWonder" || command.action === "undo") {
+  if (command.action === "place" || command.action === "placeWonder" || command.action === "undo" || command.action === "remove" || command.action === "replace") {
     if (typeof command.requestId!=="string" || !/^[a-zA-Z0-9-]{12,80}$/.test(command.requestId))
       throw new PaperIslandError("Please try that placement again.");
     if (state.lastRequest === command.requestId)
@@ -216,7 +256,57 @@ export function applyPaperCommand(
       );
     if (command.action !== "undo" && state.tiles.some(tile=>tile.id===command.requestId))
       throw new PaperIslandError("That placement was already saved. Please choose a spot again.");
-    if (command.action === "placeWonder") {
+    if (command.action === "remove" || command.action === "replace") {
+      if (typeof command.tileId !== "string")
+        throw new PaperIslandError("Choose a tile on your island.");
+      const index = state.tiles.findIndex(tile => tile.id === command.tileId);
+      const old = state.tiles[index];
+      if (!old) throw new PaperIslandError("That tile is no longer on your island.");
+      if (old.kind === "home") throw new PaperIslandError("Your home stays at the heart of your island.");
+      const refund = paperTileRefund(old);
+      if (command.action === "remove") {
+        const block = paperRemovalBlock(state.tiles, old.id);
+        if (block) throw new PaperIslandError(block);
+        spent = Math.max(0, spent - refund.jp);
+        // Stickers, treasures and visitors already found stay found.
+        state = {
+          ...state,
+          tiles: state.tiles.filter(tile => tile.id !== old.id),
+          credits: state.credits + (refund.credit ? 1 : 0),
+          undo: { tileId: "", cost: 0, usedCredit: false, previousTile: old, previousIndex: index, restoreCost: refund.jp, restoreCredit: refund.credit },
+        };
+      } else {
+        if (
+          !Object.prototype.hasOwnProperty.call(tileById, command.kind) ||
+          command.kind === "home" ||
+          command.kind === "treasure"
+        )
+          throw new PaperIslandError("Choose a tile from your collection.");
+        if (!old.wonderId && paperTileKind(old) === command.kind)
+          throw new PaperIslandError("Choose a different tile to replace it with.");
+        const price = paperReplaceCost(state, old.id, command.kind)!;
+        if (price.net > earned - spent)
+          throw new PaperIslandError("You need a few more Journey Points for this swap.");
+        const tile: PaperTile = {
+          id: command.requestId,
+          q: old.q,
+          r: old.r,
+          kind: command.kind === "capybara" ? "water" : command.kind,
+          ...(command.kind === "capybara" ? { appearance: "capybara" as const } : {}),
+          cost: price.cost,
+          edge: old.edge,
+        };
+        spent = Math.max(0, spent + price.net);
+        const tiles = [...state.tiles];
+        tiles.splice(index, 1, tile);
+        state = {
+          ...state,
+          tiles,
+          credits: state.credits + (refund.credit ? 1 : 0) - (price.usedCredit ? 1 : 0),
+          undo: { tileId: tile.id, cost: price.cost, usedCredit: price.usedCredit, previousTile: old, previousIndex: index, restoreCost: refund.jp, restoreCredit: refund.credit },
+        };
+      }
+    } else if (command.action === "placeWonder") {
       if (!isPaperVisitorId(command.id) || !(state.claimedVisitors??[]).includes(command.id))
         throw new PaperIslandError("Fulfil this visitor’s wish to earn their Wonder Tile first.");
       const previousIndex=state.tiles.findIndex(tile=>tile.wonderId===command.id);
@@ -276,12 +366,15 @@ export function applyPaperCommand(
         undo: { tileId: tile.id, cost, usedCredit },
       };
     } else {
-      if (!state.undo || !state.tiles.some((t) => t.id === state.undo?.tileId))
+      const last = state.undo;
+      if (!last || (last.tileId ? !state.tiles.some((t) => t.id === last.tileId) : !last.previousTile))
         throw new PaperIslandError("There is no placement to undo.");
-      spent = Math.max(0, spent - state.undo.cost);
-      const tiles = state.tiles.filter((t) => t.id !== state.undo?.tileId);
-      if (state.undo.previousTile)
-        tiles.splice(state.undo.previousIndex??tiles.length,0,state.undo.previousTile);
+      if (last.restoreCredit && state.credits < 1)
+        throw new PaperIslandError("There is no placement to undo.");
+      spent = Math.max(0, spent - last.cost + (last.restoreCost ?? 0));
+      const tiles = state.tiles.filter((t) => !last.tileId || t.id !== last.tileId);
+      if (last.previousTile)
+        tiles.splice(last.previousIndex??tiles.length,0,last.previousTile);
       state = {
         ...state,
         tiles,
@@ -294,7 +387,7 @@ export function applyPaperCommand(
             )
           );
         }),
-        credits: state.credits + (state.undo.usedCredit ? 1 : 0),
+        credits: state.credits + (last.usedCredit ? 1 : 0) - (last.restoreCredit ? 1 : 0),
         undo: null,
       };
     }

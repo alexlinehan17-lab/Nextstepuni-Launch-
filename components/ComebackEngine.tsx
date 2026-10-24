@@ -18,8 +18,8 @@ import { COLORS } from '../design/tokens';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import {
   type StudentSubjectProfile, type Grade, type Level, type JCBand,
-  getPointsForGrade, getGradeIndex,
-  HIGHER_GRADES, ORDINARY_GRADES, JC_BANDS,
+  getPointsForGrade, getGradeIndex, gradeLadder,
+  JC_BANDS,
   LC_SUBJECTS,
 } from './subjectData';
 import { getDistinctSubjectHex } from '../studySessionData';
@@ -134,16 +134,14 @@ function getOneGradeUp(grade: Grade | undefined): Grade | null {
   if (!grade) return null;
   const idx = getGradeIndex(grade);
   if (idx <= 0) return null; // already at top
-  if (grade.startsWith('H')) return HIGHER_GRADES[idx - 1];
-  return ORDINARY_GRADES[idx - 1];
+  return gradeLadder(grade)[idx - 1];
 }
 
 function _getTwoGradesUp(grade: Grade | undefined): Grade | null {
   if (!grade) return null;
   const idx = getGradeIndex(grade);
   if (idx <= 1) return getOneGradeUp(grade);
-  if (grade.startsWith('H')) return HIGHER_GRADES[idx - 2];
-  return ORDINARY_GRADES[idx - 2];
+  return gradeLadder(grade)[idx - 2];
 }
 
 // JC band walk — JC_BANDS is ordered best→worst (Distinction=0,

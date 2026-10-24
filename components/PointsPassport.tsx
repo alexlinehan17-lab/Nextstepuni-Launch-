@@ -12,7 +12,7 @@ import { MotionDiv } from './Motion';
 import { TrendingUp, Plus, Trash2, ArrowRight, Star, Calendar, Shield, Target, Pencil } from 'lucide-react';
 import {
   type StudentSubjectProfile, type Grade, type Level,
-  LC_SUBJECTS, getPointsForGrade, getGradesForLevel,
+  LC_SUBJECTS, getPointsForGrade, getGradesForLevel, targetGradesFor,
 
   computeBargains,
 } from './subjectData';
@@ -369,7 +369,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                   const update = (field: 'currentGrade' | 'targetGrade', grade: Grade) => onProfileChange?.({...profile, subjects:profile.subjects.map(s => s.subjectName === sub.subjectName ? {...s,[field]:grade} : s)});
                   return <div className="lp-contribution" key={sub.subjectName}><div><strong>{sub.subjectName}</strong><div className="lp-contribution-bar"><span style={{width:`${currentPts/125*100}%`}} /></div></div>
                     <LaunchpadSelect aria-label={`${sub.subjectName} current grade`} value={sub.currentGrade} disabled={!onProfileChange} onChange={e => update('currentGrade',e.target.value as Grade)}>{getGradesForLevel(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
-                    <LaunchpadSelect aria-label={`${sub.subjectName} target grade`} value={sub.targetGrade} disabled={!onProfileChange} onChange={e => update('targetGrade',e.target.value as Grade)}>{getGradesForLevel(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
+                    <LaunchpadSelect aria-label={`${sub.subjectName} target grade`} value={sub.targetGrade} disabled={!onProfileChange} onChange={e => update('targetGrade',e.target.value as Grade)}>{targetGradesFor(sub.level).map(g => <option key={g}>{g}</option>)}</LaunchpadSelect>
                     <span className="text-right text-sm tabular-nums">{targetPts-currentPts > 0 ? '+' : ''}{targetPts-currentPts}</span>
                   </div>;
                 })}</div><p className="lp-body mt-3 text-xs">Subject gains are before best-six selection. Your total counts only your best six.</p>

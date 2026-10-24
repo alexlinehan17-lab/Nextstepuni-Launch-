@@ -7,6 +7,7 @@ import {
   Compass,
   Hammer,
   Map,
+  Users,
   X,
 } from "lucide-react";
 import type { NorthStar, UserProgress } from "../../types";
@@ -22,13 +23,18 @@ import {
   knownLandmarks,
   axialDistance,
   paperTileKind,
+  paperRemovalBlock,
+  paperReplaceCost,
+  paperTileRefund,
   PAPER_LANDMARKS,
   type PaperDiscoveryId,
+  type PaperTile,
 } from "../../functions/src/paperIslandModel";
 import {
   IslandMap,
   TileShelf,
   Placement,
+  TileEditor,
   Overlay,
   defaultCamera,
 } from "./paper/MapControls";
@@ -51,8 +57,15 @@ import { centre } from "./paper/geometry";
 import { crewArt, crewById, journeyCrew, visitorHasAnchor, visitorWishFulfilled, wishText, type CrewId } from "./visitors/catalogue";
 import { VisitorsBook, WondersBook } from "./visitors/VisitorsBook";
 import { VisitorPanel, type VisitorPage } from "./visitors/VisitorPanel";
+import { useYearIslands } from "../../hooks/useYearIslands";
+import { DEMO_STUDENT_UID } from "../../data/devStudent";
+import { getSchoolName } from "../../schoolData";
+import { YearIslandsBook } from "./year/YearIslandsBook";
+import { ClassmateIsland } from "./year/ClassmateIsland";
+import { cohortLabel, type YearIsland } from "./year/yearIslands";
 import "./paper/paper.css";
 import "./visitors/visitors.css";
+import "./year/year.css";
 
 interface JourneyViewProps {
   onBack: () => void;
@@ -66,29 +79,46 @@ interface JourneyViewProps {
   userProgress?: UserProgress;
   allCourses?: CourseInfo[];
   subjects?: string[];
+  /** Your setup, where a student without a school year can add one. */
+  onOpenSetup?: () => void;
 }
 interface JourneyNotice {
   id: string;
   title: string;
   detail: string;
 }
-export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome }: JourneyViewProps) {
+export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWelcome, onOpenSetup }: JourneyViewProps) {
   const { island, balance, busy, error, execute } = usePaperIsland(user.uid);
-  const [building, setBuilding] = useState(false),
+  // Year islands: a classmate's island being visited, look only. Building
+  // always happens on your own island, so every way into build mode (the dock,
+  // the fieldbook, a visitor's wish, a Wonder) ends the visit first.
+  const [classmate, setClassmate] = useState<YearIsland | null>(null);
+  const [building, setBuildingMode] = useState(false),
     [chosen, setChosen] = useState<TileKind>("meadow"),
     [candidate, setCandidate] = useState<string | null>(null),
+    // Build mode: the placed tile (cell key) being swapped or removed.
+    [editing, setEditing] = useState<string | null>(null),
     [camera, setCamera] = useState(defaultCamera),
     [group, setGroup] = useState<ShelfGroup>("All tiles"),
     [notice, setNotice] = useState<JourneyNotice | null>(null);
+  const setBuilding = (value: boolean) => {
+    if (value) setClassmate(null);
+    setBuildingMode(value);
+  };
   const [chosenWonder,setChosenWonder]=useState<CrewId|null>(null);
   const [fieldbookSection,setFieldbookSection]=useState<"stories"|"visitors"|"wonders">("stories");
   const [visitor,setVisitor]=useState<CrewId>("luma"),[visitorPage,setVisitorPage]=useState<VisitorPage>("visit");
   const [panel, setPanel] = useState<
-      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | "visitor" | null
+      "fieldbook" | "points" | "tile" | "discovery" | "treasure" | "visitor" | "year" | null
     >(null),
     [inspected, setInspected] = useState<TileKind>("meadow"),
     [discovery, setDiscovery] = useState<LegendId>("lantern-nautilus");
   const [treasure, setTreasure] = useState("");
+  const year = useYearIslands(user.uid, { enabled: panel === "year" });
+  const yearSchool = year.cohort?.school ?? user.school;
+  const cohort = cohortLabel(yearSchool, year.cohort?.yearGroup ?? user.yearGroup);
+  const showYear = Boolean(user.school) || user.uid === DEMO_STUDENT_UID;
+  const visitClassmate = (next: YearIsland) => { setClassmate(next); setPanel(null); setNotice(null); };
   const currentVisitor=useRef(visitor),currentPanel=useRef(panel);
   currentVisitor.current=visitor;currentPanel.current=panel;
   const placed = useMemo(
@@ -125,6 +155,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   const changeMode = (value: boolean) => {
     setBuilding(value);
     setCandidate(null);
+    setEditing(null);
     setNotice(null);
     if (!value) { setChosenWonder(null);if(group==="Wonder tiles")setGroup("All tiles"); }
   };
@@ -170,6 +201,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
   };
   const undo = async () => {
     if (!island) return;
+    const last = island.undo;
     if (
       await execute({
         action: "undo",
@@ -178,11 +210,14 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
       })
     ) {
       setCandidate(null);
-      setNotice({
-        id: crypto.randomUUID(),
-        title: "Last tile returned.",
-        detail: "Your points or earned tile have been returned too.",
-      });
+      setEditing(null);
+      setNotice(
+        last?.previousTile && !last.tileId
+          ? { id: crypto.randomUUID(), title: "Tile put back.", detail: "It is back where it was, and its points or earned tile with it." }
+          : last?.previousTile && !last.previousTile.wonderId && last.restoreCost !== undefined
+            ? { id: crypto.randomUUID(), title: "Swap undone.", detail: "Your original tile is back, and your points with it." }
+            : { id: crypto.randomUUID(), title: "Last tile returned.", detail: "Your points or earned tile have been returned too." },
+      );
     }
   };
   const showDiscovery = (id: LegendId) => {
@@ -207,6 +242,80 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
     choose(kind);setGroup(groupFor(kind));setBuilding(true);setPanel(null);setCandidate(spot?.key??null);
     if(spot)setCamera({x:spot.x,y:spot.y-75,zoom:1});
     setNotice({id:crypto.randomUUID(),title:`${crew.name}’s little wish.`,detail:kind===crew.tile?wishText(id):`Add ${crew.anchorLabel.toLowerCase()} to make a little room for ${crew.name}.`});
+  };
+  const tileName = (tile: PaperTile) =>
+    tile.wonderId ? crewById[tile.wonderId].wonder : tileById[paperTileKind(tile)].name;
+  const editable = useMemo(
+    () => new globalThis.Map((island?.tiles ?? []).filter(tile => tile.kind !== "home").map(tile => [`${tile.q},${tile.r}`, tileName(tile)] as const)),
+    [island?.tiles],
+  );
+  const editingTile = editing ? island?.tiles.find(tile => `${tile.q},${tile.r}` === editing) : undefined;
+  const selectTile = (key: string) => {
+    setEditing(current => (current === key ? null : key));
+    setCandidate(null);
+    setNotice(null);
+  };
+  const pickCorner = (key: string) => {
+    setCandidate(key);
+    setEditing(null);
+  };
+  const editor = (() => {
+    if (!island || !editingTile) return null;
+    const refund = paperTileRefund(editingTile);
+    const removeBlock = paperRemovalBlock(island.tiles, editingTile.id);
+    const removeNote = refund.credit
+      ? "Returns 1 earned tile"
+      : refund.jp > 0
+        ? `Returns ${refund.jp} JP`
+        : editingTile.wonderId
+          ? "Back to your Wonder tiles"
+          : "Nothing to return";
+    let replaceBlock: string | null = null, replaceNote = "";
+    const price = chosenWonder ? null : paperReplaceCost(island, editingTile.id, chosen);
+    const sameTile = !editingTile.wonderId && paperTileKind(editingTile) === chosen;
+    if (chosenWonder || !price) replaceBlock = "Choose a tile from the shelf to swap in.";
+    else if (sameTile) replaceBlock = "Choose a different tile from the shelf to swap in.";
+    else if (price.net > balance)
+      replaceBlock = `You need ${price.net - balance} more JP for this swap.`;
+    if (price && !sameTile)
+      replaceNote = price.usedCredit
+        ? "1 earned tile"
+        : price.net > 0
+          ? `${price.net} JP`
+          : price.net < 0
+            ? `${-price.net} JP back`
+            : "Even swap";
+    // One sentence when both are blocked, so neither button is left unexplained.
+    const note = removeBlock && sameTile && removeBlock.endsWith("or replace it.")
+      ? "Remove the tiles beyond it first, or choose a different shelf tile to swap in."
+      : removeBlock ?? replaceBlock;
+    return { tile: editingTile, refund, removeNote, removeBlock, replaceNote, replaceBlock, note };
+  })();
+  const removeTile = async () => {
+    if (!island || !editor) return;
+    const name = tileName(editor.tile);
+    if (await execute({ action: "remove", tileId: editor.tile.id, requestId: crypto.randomUUID(), revision: island.revision })) {
+      setEditing(null);
+      const { refund, tile } = editor;
+      setNotice({
+        id: crypto.randomUUID(),
+        title: `${name} removed.`,
+        detail: refund.credit
+          ? "Your earned meadow tile is back on the shelf. Undo puts it back."
+          : refund.jp > 0
+            ? `${refund.jp} JP returned. Undo puts it back.`
+            : tile.wonderId
+              ? "It is back with your Wonder tiles, ready to place again."
+              : "It was part of your starting island, so there is nothing to return. Undo puts it back.",
+      });
+    }
+  };
+  const replaceTile = async () => {
+    if (!island || !editor) return;
+    const from = tileName(editor.tile);
+    if (await execute({ action: "replace", tileId: editor.tile.id, kind: chosen, requestId: crypto.randomUUID(), revision: island.revision })) {
+      setNotice({ id: crypto.randomUUID(), title: `${from} swapped for ${selected.name}.`, detail: "Undo swaps it back." });
+    }
   };
   const findSticker = (id?: LegendId) => {
     const target = id ? discoveries.find(d => d.id === id) : undefined;
@@ -265,14 +374,25 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
         </header>
         <div className="coast-world">
           <div className="coast-map-area">
-            {island ? (
+            {classmate ? (
+              <ClassmateIsland
+                key={classmate.uid}
+                classmate={classmate}
+                cohort={cohort}
+                onBack={() => setClassmate(null)}
+                onOpenYear={() => setPanel("year")}
+              />
+            ) : island ? (
               <IslandMap
                 world={world}
                 building={building}
                 chosen={chosen}
                 chosenWonder={chosenWonder}
                 candidate={candidate}
-                onCandidate={setCandidate}
+                onCandidate={pickCorner}
+                editable={editable}
+                selectedTile={editing}
+                onSelectTile={selectTile}
                 onInspect={(kind) => {
                   setInspected(kind);
                   setPanel("tile");
@@ -306,7 +426,22 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 )}
               </div>
             )}
-            {!building && island && (
+            {!building && island && !classmate && showYear && (
+              <button
+                type="button"
+                className="year-entry"
+                aria-label={`Your year: see your classmates' islands${cohort ? ` in ${cohort}` : ""}`}
+                onClick={() => setPanel("year")}
+              >
+                <span className="year-entry-icon" aria-hidden="true"><Users size={18} /></span>
+                <span className="year-entry-copy">
+                  <small>Your year</small>
+                  <strong>{cohort || "See your classmates"}</strong>
+                </span>
+                <ArrowUpRight size={16} aria-hidden="true" />
+              </button>
+            )}
+            {!building && island && !classmate && (
               <div className="island-dock">
                 <button
                   aria-label="Your island"
@@ -345,7 +480,7 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
             >
               Done <Check size={15} />
             </button>
-            {(notice || error) && (
+            {!classmate && (notice || error) && (
               <div
                 key={error || notice?.id}
                 className="island-notice"
@@ -381,15 +516,31 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
               setGroup={setGroup}
               orientation="row"
             />
-            <Placement
-              world={world}
-              chosen={chosen}
-              chosenWonder={chosenWonder}
-              candidate={candidate}
-              onPlace={() => void build()}
-              onUndo={() => void undo()}
-              busy={busy}
-            />
+            {editor ? (
+              <TileEditor
+                name={tileName(editor.tile)}
+                replaceName={chosenWonder ? crewById[chosenWonder].wonder : selected.name}
+                replaceNote={editor.replaceNote}
+                replaceBlock={editor.replaceBlock}
+                removeNote={editor.removeNote}
+                removeBlock={editor.removeBlock}
+                note={editor.note}
+                busy={busy}
+                onReplace={() => void replaceTile()}
+                onRemove={() => void removeTile()}
+                onClose={() => setEditing(null)}
+              />
+            ) : (
+              <Placement
+                world={world}
+                chosen={chosen}
+                chosenWonder={chosenWonder}
+                candidate={candidate}
+                onPlace={() => void build()}
+                onUndo={() => void undo()}
+                busy={busy}
+              />
+            )}
           </div>
         </div>
       </main>
@@ -404,14 +555,32 @@ export default function JourneyView({ user, onBack, hasSeenWelcome, onDismissWel
                 ? tileById[inspected].name
                 : panel === "visitor"
                   ? `${crewById[visitor].name} · ${crewById[visitor].role}`
+                  : panel === "year"
+                  ? "Your year"
                   : panel === "treasure"
                     ? "A treasure, found"
                     : legendById[discovery].name
           }
           onClose={() => setPanel(null)}
-          className={panel==="visitor"?"has-visitor":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
+          className={panel==="visitor"?"has-visitor":panel==="year"?"has-year-book":panel==="fieldbook"&&fieldbookSection!=="stories"?"has-visitors-book":""}
           scrollKey={panel==="visitor"?`${visitor}:${visitorPage}`:panel==="fieldbook"?fieldbookSection:panel}
         >
+          {panel === "year" && (
+            <YearIslandsBook
+              cohort={cohort}
+              school={yearSchool ? getSchoolName(yearSchool) : ""}
+              status={year.status}
+              classmates={year.classmates}
+              visibility={year.visibility}
+              visibilityKnown={year.visibilityKnown}
+              visibilityError={year.visibilityError}
+              onVisibility={year.setVisibility}
+              onVisit={visitClassmate}
+              onRetry={year.reload}
+              onOpenSetup={onOpenSetup ? () => { setPanel(null); onOpenSetup(); } : undefined}
+              sample={year.sample}
+            />
+          )}
           {panel === "fieldbook" && (
             <>
             <nav className="fieldbook-tabs" aria-label="Fieldbook sections">{([['stories','Stories'],['visitors','Visitors'],['wonders','Wonder tiles']] as const).map(([section,label])=><button key={section} aria-pressed={fieldbookSection===section} onClick={()=>setFieldbookSection(section)}>{label}</button>)}</nav>

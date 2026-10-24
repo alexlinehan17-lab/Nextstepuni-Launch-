@@ -1,0 +1,2132 @@
+{
+  "evidenceRule": "Exact transcription of each printed SEC grade grid and the cap rule printed on the criteria page. Bound to the scheme PDF sha256; the publisher re-checks every transcribed cell against the bound page text. Never normalise overlapping cells or a printed minimum.",
+  "families": {
+    "hl-a-plus-to-e-minus": {
+      "level": "higher",
+      "labels": [
+        "A+",
+        "B",
+        "C",
+        "D",
+        "E-"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-85",
+            "70",
+            "55",
+            "40",
+            "39-0"
+          ],
+          "thirty": [
+            "30-26",
+            "21",
+            "17",
+            "12",
+            "11-0"
+          ],
+          "ten": [
+            "10-9",
+            "7",
+            "6",
+            "4",
+            "3-0"
+          ]
+        },
+        "70": {
+          "total": [
+            "70-60",
+            "49",
+            "39",
+            "28",
+            "27-0"
+          ],
+          "thirty": [
+            "21-18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "7-6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "60": {
+          "total": [
+            "60-51",
+            "42",
+            "33",
+            "24",
+            "23-0"
+          ],
+          "thirty": [
+            "18-16",
+            "13",
+            "10",
+            "8",
+            "7-0"
+          ],
+          "ten": [
+            "6-5",
+            "4",
+            "3",
+            "3",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-43",
+            "35",
+            "28",
+            "20",
+            "19-0"
+          ],
+          "thirty": [
+            "15-13",
+            "11",
+            "9",
+            "6",
+            "5-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "2",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "A+",
+        "B",
+        "C",
+        "D",
+        "E-"
+      ],
+      "combined": {
+        "40": {
+          "total": [
+            "40-34",
+            "28",
+            "22",
+            "16",
+            "15-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-26",
+            "21",
+            "17",
+            "12",
+            "11-0"
+          ]
+        },
+        "20": {
+          "total": [
+            "20-17",
+            "14",
+            "11",
+            "8",
+            "7-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-13",
+            "11",
+            "9",
+            "6",
+            "5-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "7",
+            "6",
+            "4",
+            "3-0"
+          ]
+        }
+      },
+      "note": "Printed once per tariff as 100% / 30% / 10% rows; the 30% row applies to Purpose, Coherence and Language."
+    },
+    "ol-a-to-ng": {
+      "level": "ordinary",
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "N/G"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "85-100",
+            "70-84",
+            "55-69",
+            "40-54",
+            "25-39",
+            "10-24",
+            "0-9"
+          ],
+          "purpose": [
+            "26-30",
+            "21-25",
+            "17-20",
+            "12-16",
+            "8-11",
+            "3-7",
+            "0-2"
+          ],
+          "coherence": [
+            "26-30",
+            "21-25",
+            "17-20",
+            "12-16",
+            "8-11",
+            "3-7",
+            "0-2"
+          ],
+          "language": [
+            "26-30",
+            "21-25",
+            "17-20",
+            "12-16",
+            "8-11",
+            "3-7",
+            "0-2"
+          ],
+          "mechanics": [
+            "8-10",
+            "7-8",
+            "5-6",
+            "4-5",
+            "3-4",
+            "1-2",
+            "0"
+          ]
+        },
+        "70": {
+          "purpose": [
+            "18-21",
+            "15-17",
+            "12-14",
+            "8-11",
+            "5-7",
+            "2-4",
+            "0-1"
+          ],
+          "coherence": [
+            "18-21",
+            "15-17",
+            "12-14",
+            "8-11",
+            "5-7",
+            "2-4",
+            "0-1"
+          ],
+          "language": [
+            "18-21",
+            "15-17",
+            "12-14",
+            "8-11",
+            "5-7",
+            "2-4",
+            "0-1"
+          ],
+          "mechanics": [
+            "6-7",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"
+          ]
+        },
+        "60": {
+          "purpose": [
+            "15-18",
+            "13-14",
+            "10-12",
+            "7-9",
+            "5-6",
+            "2-4",
+            "0-1"
+          ],
+          "coherence": [
+            "15-18",
+            "13-14",
+            "10-12",
+            "7-9",
+            "5-6",
+            "2-4",
+            "0-1"
+          ],
+          "language": [
+            "15-18",
+            "13-14",
+            "10-12",
+            "7-9",
+            "5-6",
+            "2-4",
+            "0-1"
+          ],
+          "mechanics": [
+            "6",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"
+          ]
+        },
+        "50": {
+          "purpose": [
+            "13-15",
+            "11-12",
+            "9-10",
+            "6-8",
+            "4-5",
+            "2-3",
+            "0-1"
+          ],
+          "coherence": [
+            "13-15",
+            "11-12",
+            "9-10",
+            "6-8",
+            "4-5",
+            "2-3",
+            "0-1"
+          ],
+          "language": [
+            "13-15",
+            "11-12",
+            "9-10",
+            "6-8",
+            "4-5",
+            "2-3",
+            "0-1"
+          ],
+          "mechanics": [
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "40": {
+          "purpose": [
+            "11-12",
+            "9-10",
+            "7-8",
+            "5-6",
+            "3-4",
+            "1-2",
+            "0"
+          ],
+          "coherence": [
+            "11-12",
+            "9-10",
+            "7-8",
+            "5-6",
+            "3-4",
+            "1-2",
+            "0"
+          ],
+          "language": [
+            "11-12",
+            "9-10",
+            "7-8",
+            "5-6",
+            "3-4",
+            "1-2",
+            "0"
+          ],
+          "mechanics": [
+            "4",
+            "3",
+            "2",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "30": {
+          "purpose": [
+            "8-9",
+            "6-7",
+            "5-6",
+            "4-5",
+            "2-3",
+            "1-2",
+            "0"
+          ],
+          "coherence": [
+            "8-9",
+            "6-7",
+            "5-6",
+            "4-5",
+            "2-3",
+            "1-2",
+            "0"
+          ],
+          "language": [
+            "8-9",
+            "6-7",
+            "5-6",
+            "4-5",
+            "2-3",
+            "1-2",
+            "0"
+          ],
+          "mechanics": [
+            "3",
+            "2",
+            "2",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F/NG"
+      ],
+      "combined": {
+        "20": {
+          "total": [
+            "17-20",
+            "14-16",
+            "11-13",
+            "8-10",
+            "5-7",
+            "0-4"
+          ],
+          "split": "Purpose & Coherence 60% (12) · Language & Mechanics 40% (8)"
+        },
+        "15": {
+          "total": [
+            "13-15",
+            "11-12",
+            "8-10",
+            "6-7",
+            "3-5",
+            "0-2"
+          ],
+          "split": "Purpose & Coherence 60% (9) · Language & Mechanics 40% (6)"
+        },
+        "10": {
+          "total": [
+            "8-10",
+            "7-8",
+            "5-6",
+            "4-5",
+            "2-3",
+            "1"
+          ],
+          "split": "Purpose & Coherence 60% (6) · Language & Mechanics 40% (4)"
+        }
+      },
+      "note": "Purpose, Coherence and Language rows are printed separately (identical values). Only the 100-mark tariff prints a total-mark row. Adjacent cells overlap where printed (e.g. Mechanics 8-10 / 7-8; 30-mark 6-7 / 5-6 / 4-5) and the 10-mark combined F/NG cell prints 1, not 0; both are kept exactly."
+    },
+    "hl-h1-h8": {
+      "level": "higher",
+      "labels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "70": {
+          "total": [
+            "70-63",
+            "62-56",
+            "55-49",
+            "48-42",
+            "41-35",
+            "34-28",
+            "27-21",
+            "20-0"
+          ],
+          "thirty": [
+            "21-19",
+            "17",
+            "15",
+            "13",
+            "11",
+            "9",
+            "7",
+            "6-0"
+          ],
+          "ten": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2-0"
+          ]
+        },
+        "60": {
+          "total": [
+            "60-54",
+            "53-48",
+            "47-42",
+            "41-36",
+            "35-30",
+            "29-24",
+            "23-18",
+            "17-0"
+          ],
+          "thirty": [
+            "18-17",
+            "15",
+            "13",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5-0"
+          ],
+          "ten": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "combined": {
+        "40": {
+          "total": [
+            "40-36",
+            "32",
+            "28",
+            "24",
+            "20",
+            "16",
+            "12",
+            "11-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ]
+        },
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        }
+      },
+      "note": "Printed as 100% / 30% / 10% rows per discrete tariff and one row per combined tariff."
+    },
+    "hl-h1-h8-2022": {
+      "level": "higher",
+      "labels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "70": {
+          "total": [
+            "70-63",
+            "62-56",
+            "55-49",
+            "48-42",
+            "41-35",
+            "34-28",
+            "27-21",
+            "20-0"
+          ],
+          "thirty": [
+            "21-19",
+            "17",
+            "15",
+            "13",
+            "11",
+            "9",
+            "7",
+            "6-0"
+          ],
+          "ten": [
+            "7",
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10-10",
+            "9-9",
+            "8-8",
+            "7-6",
+            "5-5",
+            "4-4",
+            "3-0"
+          ],
+          "ten": [
+            "4-4",
+            "4-3",
+            "3-3",
+            "3-2",
+            "2-2",
+            "2-1",
+            "2-1",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8"
+      ],
+      "combined": {
+        "40": {
+          "total": [
+            "40-36",
+            "32",
+            "28",
+            "24",
+            "20",
+            "16",
+            "12",
+            "11-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ]
+        },
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ]
+        },
+        "12": {
+          "total": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "7-6",
+            "5",
+            "4",
+            "3-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        }
+      },
+      "note": "2022 adjusted papers: Appendix 2 prints discrete 100/70/50 and combined 40/30/20/12/10; the 40-mark discrete grid is printed with each Paper 1 Question B."
+    },
+    "ol-o1-o8-2018": {
+      "level": "ordinary",
+      "labels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "ten": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "26-24",
+            "23-21",
+            "20-18",
+            "17-15",
+            "14-12",
+            "11-9",
+            "8-0"
+          ],
+          "thirty": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "ten": [
+            "3",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "combined": {
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ],
+          "pc": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "lm": [
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "pc": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "lm": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "pc": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ],
+          "lm": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        }
+      },
+      "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed."
+    },
+    "ol-o1-o8-2026": {
+      "level": "ordinary",
+      "labels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "ten": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "26-24",
+            "23-21",
+            "20-18",
+            "17-15",
+            "14-12",
+            "11-9",
+            "8-0"
+          ],
+          "thirty": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "ten": [
+            "3",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "combined": {
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ],
+          "pc": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "lm": [
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "pc": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "lm": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "pc": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ],
+          "lm": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "2/1",
+            "1",
+            "1-0"
+          ]
+        }
+      },
+      "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed."
+    },
+    "ol-o1-o8-2022": {
+      "level": "ordinary",
+      "labels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "discrete": {
+        "100": {
+          "total": [
+            "100-90",
+            "89-80",
+            "79-70",
+            "69-60",
+            "59-50",
+            "49-40",
+            "39-30",
+            "29-0"
+          ],
+          "thirty": [
+            "30-27",
+            "24",
+            "21",
+            "18",
+            "15",
+            "12",
+            "9",
+            "8-0"
+          ],
+          "ten": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ]
+        },
+        "50": {
+          "total": [
+            "50-45",
+            "44-40",
+            "39-35",
+            "34-30",
+            "29-25",
+            "24-20",
+            "19-15",
+            "14-0"
+          ],
+          "thirty": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "ten": [
+            "5",
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1-0"
+          ]
+        },
+        "40": {
+          "total": [
+            "40-36",
+            "35-32",
+            "31-28",
+            "27-24",
+            "23-20",
+            "19-16",
+            "15-12",
+            "11-0"
+          ],
+          "thirty": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "ten": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        },
+        "30": {
+          "total": [
+            "30-27",
+            "26-24",
+            "23-21",
+            "20-18",
+            "17-15",
+            "14-12",
+            "11-9",
+            "8-0"
+          ],
+          "thirty": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "ten": [
+            "3",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1",
+            "0"
+          ]
+        },
+        "35": {
+          "total": [
+            "35-32",
+            "32-28",
+            "27-25",
+            "24-21",
+            "20-18",
+            "17-14",
+            "13-11",
+            "10-0"
+          ],
+          "thirty": [
+            "11-10",
+            "9-9",
+            "8-8",
+            "7-7",
+            "6-6",
+            "5-5",
+            "4-4",
+            "3-0"
+          ],
+          "ten": [
+            "2-2",
+            "2-1",
+            "2-1",
+            "2-1",
+            "1-1",
+            "1-0",
+            "1-0",
+            "1-0"
+          ]
+        }
+      },
+      "combinedLabels": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "O6",
+        "O7",
+        "O8"
+      ],
+      "combined": {
+        "20": {
+          "total": [
+            "20-18",
+            "16",
+            "14",
+            "12",
+            "10",
+            "8",
+            "6",
+            "5-0"
+          ],
+          "pc": [
+            "12-11",
+            "10",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4",
+            "3-0"
+          ],
+          "lm": [
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "3",
+            "2-0"
+          ]
+        },
+        "15": {
+          "total": [
+            "15-14",
+            "12",
+            "11",
+            "9",
+            "8",
+            "6",
+            "5",
+            "4-0"
+          ],
+          "pc": [
+            "9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "lm": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ]
+        },
+        "10": {
+          "total": [
+            "10-9",
+            "8",
+            "7",
+            "6",
+            "5",
+            "4",
+            "3",
+            "2-0"
+          ],
+          "pc": [
+            "6",
+            "5",
+            "4",
+            "4",
+            "3",
+            "2",
+            "2",
+            "1-0"
+          ],
+          "lm": [
+            "4",
+            "3",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1-0"
+          ]
+        }
+      },
+      "note": "Grade labels print as O1-O8 (some cells print the digit 0 for the letter O). The combined total row is the selectable global mark; the P&C and L&M rows are recorded as printed. 2022 adds the 35-mark discrete grid (modified weightings P/C/L 11, M 2); its total row prints the overlapping cells 35-32 / 32-28 as printed."
+    }
+  },
+  "sittings": {
+    "2010-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2010/LC002ALP000EV.pdf",
+      "schemeSha256": "74474e375f2d158a1d2bb61a48eb0cc71cc8dc3ddf6d418a89d1d1dcbad54804",
+      "gridPages": [
+        39
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2010-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2010/LC002GLP000EV.pdf",
+      "schemeSha256": "14413d12aed47340519a82589e6cc7be81fc8ab87d424cd908e65000f7522533",
+      "gridPages": [
+        37
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2011-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2011/LC002ALP000EV.pdf",
+      "schemeSha256": "083fb122da5ff788e1005d01cce7aabafc1321fb1250038cbf188c79448e3354",
+      "gridPages": [
+        39
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2011-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2011/LC002GLP000EV.pdf",
+      "schemeSha256": "d4950526ba99257a5423db292a593ad8f22607536d5b0847c493e8d91519ec98",
+      "gridPages": [
+        38
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2012-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2012/LC002ALP000EV.pdf",
+      "schemeSha256": "ea583e9592832ae169f04bae190a0ccdcc52481d807dd44624495e52d22be320",
+      "gridPages": [
+        39
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2012-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2012/LC002GLP000EV.pdf",
+      "schemeSha256": "4b0d6cb08ba20acf8b7d47833b99ced1a2c6c7236c3c766c0b4c0c9adbf07653",
+      "gridPages": [
+        44
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2013-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2013/LC002ALP000EV.pdf",
+      "schemeSha256": "70848054647dc6c9f6f15ac0c4efe2aa41aa3438524f4e2bb2764883087cf225",
+      "gridPages": [
+        40
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2013-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2013/LC002GLP000EV.pdf",
+      "schemeSha256": "e4dd19c06af80a3292e2bd8bb897a32dde1a9d7c7f62f52493488aaf6687b763",
+      "gridPages": [
+        45
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2014-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2014/LC002ALP000EV.pdf",
+      "schemeSha256": "a7970f165e738600e8f3226db66d7f5a4da1f1238c34696830eddc0104efff1f",
+      "gridPages": [
+        39
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2014-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2014/LC002GLP000EV.pdf",
+      "schemeSha256": "1985fe4cf80f46c1f46362b4c654faaec7d1c2b88b3bde858060a2e04ce0c7f5",
+      "gridPages": [
+        42
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2015-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2015/LC002ALP000EV.pdf",
+      "schemeSha256": "e787bb50a66a33be8e13c89e21dad8b981c6e7be805aee61245fbe4b6ab7a0df",
+      "gridPages": [
+        41
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page prints the 30/30/30/10 weights and the order of marks; no Purpose cap or Language rule (viewed: 2013 HL PDF3; 2010-2015 HL text identical)."
+    },
+    "2015-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2015/LC002GLP000EV.pdf",
+      "schemeSha256": "9b5c95022db728ff0049979154e6a6040ffb1816037ad9409d86e88b53f9462b",
+      "gridPages": [
+        47
+      ],
+      "capRule": {
+        "kind": "language-at-d-band"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: where a candidate fails to achieve a D grade mark in both Clarity of Purpose and Coherence of Delivery, award marks for Efficiency of Language Use up to the highest mark within the D band; Mechanics awarded on its own merits (viewed: 2014 OL PDF3)."
+    },
+    "2016-higher": {
+      "family": "hl-a-plus-to-e-minus",
+      "scheme": "paper-trail-corpus/markingschemes/2016/LC002ALP000EV.pdf",
+      "schemeSha256": "5ade4548822a1306065b02c216c505ba7b49e71a469e4c3707f859c0377a8512",
+      "gridPages": [
+        40
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2016-ordinary": {
+      "family": "ol-a-to-ng",
+      "scheme": "paper-trail-corpus/markingschemes/2016/LC002GLP000EV.pdf",
+      "schemeSha256": "1a4016054dd8a8e8b213577e8b4e8fd401ab9981875647dacdaf4556c1961b1b",
+      "gridPages": [
+        52
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2017-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2017/LC002ALP000EV.pdf",
+      "schemeSha256": "b2bcd5afd1e1952d5bcd5ddfe261c0a8e5e6b44ae90b1e0392fee7833f9dfe51",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2017-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2017/LC002GLP000EV.pdf",
+      "schemeSha256": "e633818fa4f768f64a25fd6f6a7b2f23d0e396aa8a3a7578f759f9116096f76e",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "2017 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
+    },
+    "2018-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2018/LC002ALP000EV.pdf",
+      "schemeSha256": "a70bbdafde8f03a842b8b52b2c151894daa86697db73aa83730ef7b00c3e5d49",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2018-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2018/LC002GLP000EV.pdf",
+      "schemeSha256": "f970ce09aa41bc452b0c9c1ceb452b6340c80fe6e402740372455d456e587de7",
+      "gridPages": [
+        53
+      ],
+      "capRule": {
+        "kind": "none"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "2018 OL PDF3 (viewed) prints the weights, the mark order and that Mechanics is awarded on its own merits; it prints no Purpose cap and no Language rule."
+    },
+    "2019-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2019/LC002ALP000EV.pdf",
+      "schemeSha256": "b609f26657d2ccc5fa70fbb6a27de78391dac871bfbe9c8396ec5b806395eceb",
+      "gridPages": [
+        46
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2019-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2019/LC002GLP000EV.pdf",
+      "schemeSha256": "5fb482bf9bb51ef699d4b98d6aac2936b00f418340faa891c7cc3e303fea3dff",
+      "gridPages": [
+        61
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2020-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC002ALP000EV.pdf",
+      "schemeSha256": "970cd465ad3260fe4a4f90b47a9cf201e95c1fa6116aed26532b5c83b3f48b5b",
+      "gridPages": [
+        47
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2020-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2020/LC002GLP000EV.pdf",
+      "schemeSha256": "e60d6c33c55692216015486910f12467a588072f34528935c067de8c32bd578a",
+      "gridPages": [
+        53
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2021-higher": {
+      "family": "hl-h1-h8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2021/LC002ALP000EV.pdf",
+      "schemeSha256": "3703979a0ddd5f8ebee9955c4022f6478d5781502461c362547d38fca685fdfa",
+      "gridPages": [
+        6,
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2021-ordinary": {
+      "family": "ol-o1-o8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2021/LC002GLP000EV.pdf",
+      "schemeSha256": "d134b785b4bbc4dc41514e97b8593301a566b5c0d2452fe23567a62e0540528b",
+      "gridPages": [
+        68,
+        69
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2022-higher": {
+      "family": "hl-h1-h8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2022/LC002ALP000EV.pdf",
+      "schemeSha256": "a9bc842c33564010b021af8c82220ae76eb93218272924b43bba200ce065c001",
+      "gridPages": [
+        6,
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2022-ordinary": {
+      "family": "ol-o1-o8-2022",
+      "scheme": "paper-trail-corpus/markingschemes/2022/LC002GLP000EV.pdf",
+      "schemeSha256": "d3eb474c27b644da5779765503e9634eff5d9ac414e56199e6a00c76073bbd85",
+      "gridPages": [
+        69,
+        70
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2023-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2023/LC002ALP000EV.pdf",
+      "schemeSha256": "1f87d14f685446f36c40b6faa92ed50f043ff9e9a357c408212c4720c1c069c2",
+      "gridPages": [
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2023-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2023/LC002GLP000EV.pdf",
+      "schemeSha256": "af3b1aa08953f6ccb00e4143c3f5ff3f831e7ea6531fc4c40669ae22eed1e5cf",
+      "gridPages": [
+        64,
+        65
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2024-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2024/LC002ALP000EV.pdf",
+      "schemeSha256": "470ddca344cc7b0941cf6e10f4d1e1a13e27db7ca6b58501d6997a8289b5a82b",
+      "gridPages": [
+        50
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2024-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2024/LC002GLP000EV.pdf",
+      "schemeSha256": "34e415e556a1bcf100f7b16398eccf87eeecee7212f324557b76572cdb769fce",
+      "gridPages": [
+        63,
+        64
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2025-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2025/LC002ALP000EV.pdf",
+      "schemeSha256": "194877cafbeeb7428a9e9164f7d4069ab077e6a49e388995f3a4fc47b3ae57e9",
+      "gridPages": [
+        51,
+        52
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2025-ordinary": {
+      "family": "ol-o1-o8-2018",
+      "scheme": "paper-trail-corpus/markingschemes/2025/LC002GLP000EV.pdf",
+      "schemeSha256": "1ffaf4e11d7e4cf6576ac088ed540feb6d19fae29c13aaf4f35ea59b9e1a033b",
+      "gridPages": [
+        73,
+        74
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2026-higher": {
+      "family": "hl-h1-h8",
+      "scheme": "paper-trail-corpus/markingschemes/2026/LC002ALP000EV.pdf",
+      "schemeSha256": "918825f860e2606f9671d296c9c3ede0197f3063848ccfff955812ffc03e7d31",
+      "gridPages": [
+        52
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 4,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    },
+    "2026-ordinary": {
+      "family": "ol-o1-o8-2026",
+      "scheme": "paper-trail-corpus/markingschemes/2026/LC002GLP100EV.pdf",
+      "schemeSha256": "b8c09b2bebf0f748ed039a75a0fa1ce02f798fbf014ad601ed341c5dbd035b9c",
+      "gridPages": [
+        71,
+        72
+      ],
+      "capRule": {
+        "kind": "purpose-primacy"
+      },
+      "capRulePage": 3,
+      "capRuleEvidence": "Criteria page: given the primacy of Clarity of Purpose, marks for Coherence of Delivery or Efficiency of Language Use cannot exceed the marks awarded for Clarity of Purpose."
+    }
+  }
+}

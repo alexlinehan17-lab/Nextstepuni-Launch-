@@ -19,6 +19,7 @@
  */
 
 import type { SecCard } from '../../../../types/markBank';
+import { withReviewedCards } from './reviewed';
 
 const base = {
   source: 'sec' as const,
@@ -27,7 +28,7 @@ const base = {
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
 
-export const CARDS: SecCard[] = [
+export const CARDS: SecCard[] = withReviewedCards([
   {
     ...base, kind: "question",
     year: 2021, level: "higher",
@@ -1624,7 +1625,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-2-b-ii", topicId: "applied-mathematics-2-5", conceptId: "tension-string",
     section: "B", questionRef: "2024 HL Q2(b)(ii)",
-    stem: "A student sets up the pulley arrangement shown in the diagram. A light inextensible string passes over two smooth fixed pulleys and under a smooth movable pulley of mass 6.3 kg. Weight W₁ = 24.5 N is atached to one end of the string and weight W₂ = 44.1 N is atached to the other end. W₁ W₂ 6.3 kg The system is released from rest.",
+    stem: "A student sets up the pulley arrangement shown in the diagram. A light inextensible string passes over two smooth fixed pulleys and under a smooth movable pulley of mass 6.3 kg. Weight W₁ = 24.5 N is attached to one end of the string and weight W₂ = 44.1 N is attached to the other end. W₁ W₂ 6.3 kg The system is released from rest.",
     questionText: "Calculate the tension in the string",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
@@ -1980,7 +1981,7 @@ export const CARDS: SecCard[] = [
     id: "am-2024-hl-8-b", topicId: "applied-mathematics-2-12", conceptId: "algebraic-formula-writen-force-mass-displacement",
     section: "B", questionRef: "2024 HL Q8(b)",
     stem: "4Fs/m𝜔² Use dimensional analysis to show that this formula has the same units as the units for displacement.",
-    questionText: "The algebraic formula below is writen in terms of force F, mass m, displacement s and angular velocity 𝜔",
+    questionText: "The algebraic formula below is written in terms of force F, mass m, displacement s and angular velocity 𝜔",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "am-2024-hl-8-b-r1", kind: "anyN", verbatim: "replacement of physical quantities with correct units and simplification to m", marks: 15, contextNote: "The scheme prices this ask step by step: 15 — 15 marks in all, in the order the scheme sets them out. Marked on a systemic-error scale: the scheme prints (0/6/9/12), which is what the work is worth with one error, two, and so on down to a valid attempt. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":1,"perOption":15,"options":["replacement of physical quantities with correct units and simplification to m"]} },
@@ -2063,7 +2064,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-10-a-ii", topicId: "applied-mathematics-1-5", conceptId: "critical-path-network",
     section: "B", questionRef: "2024 HL Q10(a)(ii)",
-    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the letters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
     questionText: "Write down the critical path(s) for the network",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -2085,7 +2086,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-10-a-iii", topicId: "applied-mathematics-1-5", conceptId: "critical-path",
     section: "B", questionRef: "2024 HL Q10(a)(iii)",
-    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the letters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
     questionText: "What is a critical path?",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -2107,7 +2108,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Applied Maths 2024 Higher Level — © State Examinations Commission.",
     id: "am-2024-hl-10-a-iv", topicId: "applied-mathematics-1-5", conceptId: "activity-takes-weeks-instead-weeks-effect",
     section: "B", questionRef: "2024 HL Q10(a)(iv)",
-    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the leters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The leters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
+    stem: "The diagram below shows the scheduling network for manufacturing a car. The edges of the network represent the activities that have to be completed as part of the overall manufacture of the car and are labelled with the letters A to L. The duration, in weeks, of each activity is represented by the number in brackets. The unlabelled edges (shown with dashed lines) do not represent real activities but they help explain the order in which the activities must happen. The letters used to label the edges should not be taken as representing the order in which the activities happen. The nodes of the network represent events or points in time during the project. The source node is the time when the project begins and the sink node is the time when the project ends. D(1) G(3) A(3) M(2) H(4) L(1) E(7) I(5) B(5) source sink node node J(6) N(4) C(2) K(3) F(4) Calculate the early time and the late time for each event. Complete the diagram below by writing the early time (upper box) and late time (lower box) at the node representing each event.",
     questionText: "If activity K takes 5 weeks instead of 3 weeks, what effect will this have on the critical path(s) and the time it takes to complete the project? Explain your answer",
     tariffModel: {"kind":"fixed","notation":"step marks","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
@@ -2775,4 +2776,4 @@ export const CARDS: SecCard[] = [
     { id: "am-2025-hl-10-b-r1", kind: "anyN", verbatim: "6u cos 𝜃 = 75 so cos 𝜃 = 12.5/u", marks: 15, contextNote: "The scheme prices this ask step by step: 5, 5, 5 — 15 marks in all, in the order the scheme sets them out. Penalties are subtractive: a mathematical error costs 3, a slip or a misreading 1.", openList: true, group: {"claimMax":3,"perOption":5,"options":["6u cos 𝜃 = 75 so cos 𝜃 = 12.5/u","6u sin 𝜃 − 176.4 = 30 so sin 𝜃 = 34.4/u","u = 36.6 m s^(–1)"]} },
     ],
   } as SecCard,
-];
+], 'higher');

@@ -1,5 +1,50 @@
 {
   "agricultural-science": {
+    "agsci-2021-hl-q10b": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2021-hl-q11ai": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11aii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11aiii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2021-hl-q11bi": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2021-hl-q12a": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12b": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12c": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2021-hl-q12d": {
+      "pages": [
+        18
+      ]
+    },
     "agsci-2021-hl-q13ai": {
       "kind": "text",
       "pages": [
@@ -42,6 +87,57 @@
       ],
       "stripStem": true
     },
+    "agsci-2021-hl-q13b": {
+      "pages": [
+        22,
+        25
+      ]
+    },
+    "agsci-2021-hl-q13c": {
+      "pages": [
+        22,
+        25
+      ]
+    },
+    "agsci-2021-hl-q14biii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-hl-q14ci": {
+      "pages": [
+        28,
+        29
+      ]
+    },
+    "agsci-2021-hl-q14civ": {
+      "pages": [
+        28,
+        30
+      ]
+    },
+    "agsci-2021-hl-q15aiii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2021-hl-q15aiv": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2021-hl-q15av": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2021-hl-q16aii": {
+      "pages": [
+        35
+      ]
+    },
     "agsci-2021-hl-q16ci": {
       "kind": "text",
       "pages": [
@@ -49,17 +145,290 @@
       ],
       "stripStem": true
     },
-    "agsci-2021-hl-q17biv": {
+    "agsci-2021-hl-q16cii": {
       "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16ciii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16civ": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-hl-q16di": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16dii": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16diii": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q16div": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2021-hl-q17a": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2021-hl-q17bii": {
+      "pages": [
+        40,
+        41
+      ]
+    },
+    "agsci-2021-hl-q17biii": {
+      "pages": [
+        40,
+        41
+      ]
+    },
+    "agsci-2021-hl-q17bv": {
+      "pages": [
+        40,
         42
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2021-hl-q17bvi": {
+      "pages": [
+        40,
+        42
+      ]
+    },
+    "agsci-2021-hl-q17c": {
+      "pages": [
+        43
+      ]
+    },
+    "agsci-2021-hl-q18a-soil-quality": {
+      "pages": [
+        44
+      ]
+    },
+    "agsci-2021-hl-q18b": {
+      "pages": [
+        44
+      ]
+    },
+    "agsci-2021-hl-q18ci": {
+      "pages": [
+        45
+      ]
+    },
+    "agsci-2021-hl-q18cii": {
+      "pages": [
+        45
+      ]
+    },
+    "agsci-2021-hl-q18ciii": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18civ": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cv": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cvi": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q18cvii": {
+      "pages": [
+        45,
+        46
+      ]
+    },
+    "agsci-2021-hl-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2021-hl-q2ai": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2aii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2aiii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-hl-q2bi": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q2bii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q2biii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-hl-q3bi": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-hl-q3biv": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-hl-q4a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-hl-q4b": {
+      "pages": [
+        8
+      ]
     },
     "agsci-2021-hl-q6ai": {
       "pages": [
         10
       ],
       "stripStem": true
+    },
+    "agsci-2021-hl-q6aii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-hl-q6aiii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-hl-q6bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-hl-q6biii": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-hl-q7a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q7b": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q7c": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-hl-q8a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q8b": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q8c": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-hl-q9b": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-hl-q9d": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q10a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-ol-q10c": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2021-ol-q11a-i": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-ii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-iii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11a-iv": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2021-ol-q11b-ii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2021-ol-q13a-i": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2021-ol-q13a-ii": {
+      "pages": [
+        19
+      ]
     },
     "agsci-2021-ol-q13a-iii": {
       "kind": "text",
@@ -68,11 +437,294 @@
       ],
       "stripStem": true
     },
-    "agsci-2021-ol-q18c-iii": {
+    "agsci-2021-ol-q13b-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13b-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-iii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2021-ol-q13c-v": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2021-ol-q14a-i": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-ii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14a-iv": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2021-ol-q14b-i": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2021-ol-q15a-i": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15a-ii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15a-iii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-fertiliser": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-harvest": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15b-time": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2021-ol-q15c-i": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q15c-ii": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q15c-iv": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2021-ol-q16a": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-ol-q16b-i": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2021-ol-q16c-i": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16c-iii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16c-iv": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2021-ol-q16d-ii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2021-ol-q16d-iii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2021-ol-q17a-i": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2021-ol-q17a-ii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2021-ol-q17a-v": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17a-vi": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17a-vii": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2021-ol-q17b-i": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2021-ol-q17b-iii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2021-ol-q18a-i-weeds": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18a-ii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18a-iii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2021-ol-q18b-ii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2021-ol-q18c-i": {
       "pages": [
         35
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2021-ol-q18c-ii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2021-ol-q18c-iv": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2021-ol-q18d-i": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2021-ol-q18d-ii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2021-ol-q18d-iv": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2021-ol-q1a-iv": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2021-ol-q1b-i": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-ol-q1b-ii": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2021-ol-q2a": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-ol-q2b": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2021-ol-q3a-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q3b-i": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q3b-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2021-ol-q4a": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2021-ol-q5a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q5c": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q5d": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2021-ol-q6": {
+      "pages": [
+        9
+      ]
     },
     "agsci-2021-ol-q7a": {
       "pages": [
@@ -104,6 +756,31 @@
       ],
       "stripStem": true
     },
+    "agsci-2021-ol-q8a-i": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-ol-q8a-ii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2021-ol-q8bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2021-ol-q9a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2021-ol-q9c": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2022-hl-q10a": {
       "pages": [
         14
@@ -115,6 +792,264 @@
         15
       ],
       "stripStem": true
+    },
+    "agsci-2022-hl-q11aii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q11aiii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q11bi": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q11bii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q11biii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q11biv": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-hl-q12ai": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2022-hl-q12aii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2022-hl-q12aiii": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2022-hl-q12bi": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2022-hl-q12bii": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2022-hl-q12biii": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2022-hl-q12biv": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2022-hl-q13ai": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2022-hl-q13aii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2022-hl-q13aiii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2022-hl-q13bi": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2022-hl-q13bii": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2022-hl-q13biv": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2022-hl-q14ai": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-hl-q14aii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-hl-q14aiii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-hl-q14aiv": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-hl-q14av": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-hl-q14bi": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-hl-q14bii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-hl-q14ci": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2022-hl-q14di": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2022-hl-q14dii": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2022-hl-q14diii": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2022-hl-q15aii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2022-hl-q15aiii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2022-hl-q15bi": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2022-hl-q15bii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2022-hl-q15biii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2022-hl-q15biv": {
+      "pages": [
+        28,
+        29
+      ]
+    },
+    "agsci-2022-hl-q15ci": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2022-hl-q15cii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2022-hl-q16ai": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2022-hl-q16aii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2022-hl-q16aiii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2022-hl-q16bi": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2022-hl-q16bii": {
+      "pages": [
+        30,
+        31
+      ]
+    },
+    "agsci-2022-hl-q16biii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2022-hl-q16cii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2022-hl-q17aii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2022-hl-q17aiii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2022-hl-q17aiv": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2022-hl-q17bi": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2022-hl-q17ci": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2022-hl-q17cii": {
+      "pages": [
+        35
+      ]
     },
     "agsci-2022-hl-q17di": {
       "kind": "text",
@@ -130,11 +1065,81 @@
       ],
       "stripStem": true
     },
+    "agsci-2022-hl-q18ai": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2022-hl-q18aii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2022-hl-q18bi": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2022-hl-q18ci": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2022-hl-q18cii": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2022-hl-q1ai": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2022-hl-q1aii": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2022-hl-q1aiii": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2022-hl-q1bi": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2022-hl-q1bii": {
+      "pages": [
+        4
+      ]
+    },
     "agsci-2022-hl-q1biii-iv": {
       "pages": [
         4
       ],
       "stripStem": true
+    },
+    "agsci-2022-hl-q2a": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2022-hl-q3a": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2022-hl-q3b": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2022-hl-q3c": {
+      "pages": [
+        6
+      ]
     },
     "agsci-2022-hl-q4a": {
       "kind": "text",
@@ -143,6 +1148,81 @@
       ],
       "stripStem": true
     },
+    "agsci-2022-hl-q4b": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2022-hl-q4c": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2022-hl-q5a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2022-hl-q5bi": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2022-hl-q5bii": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2022-hl-q6a": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-hl-q6b": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-hl-q6c": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-hl-q7a": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-hl-q7b": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-hl-q7c": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-hl-q8ai": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2022-hl-q8aii": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2022-hl-q8b": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2022-hl-q9aii": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2022-hl-q9bi": {
       "kind": "text",
       "pages": [
@@ -150,17 +1230,154 @@
       ],
       "stripStem": true
     },
+    "agsci-2022-hl-q9bii": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2022-hl-q9biii": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2022-ol-q10b": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2022-ol-q11ai": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2022-ol-q11aii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2022-ol-q11aiv": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2022-ol-q11av": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2022-ol-q11bi": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-ol-q11bii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-ol-q11biii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2022-ol-q11biv": {
+      "pages": [
+        15
+      ]
+    },
     "agsci-2022-ol-q12b": {
       "pages": [
         16
       ],
       "stripStem": true
     },
-    "agsci-2022-ol-q14civ": {
+    "agsci-2022-ol-q13ai": {
       "pages": [
-        25
-      ],
-      "stripStem": true
+        19
+      ]
+    },
+    "agsci-2022-ol-q13aii": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2022-ol-q13aiii": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2022-ol-q13aiv": {
+      "pages": [
+        19,
+        20
+      ]
+    },
+    "agsci-2022-ol-q13av": {
+      "pages": [
+        19,
+        21
+      ]
+    },
+    "agsci-2022-ol-q13avi": {
+      "pages": [
+        19,
+        21
+      ]
+    },
+    "agsci-2022-ol-q13bii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2022-ol-q13biii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2022-ol-q13ci": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2022-ol-q13cii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2022-ol-q14a": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-ol-q14bi": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-ol-q14bii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2022-ol-q14ci": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-ol-q14cii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-ol-q14ciii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2022-ol-q15ai": {
+      "pages": [
+        26
+      ]
     },
     "agsci-2022-ol-q15bi": {
       "pages": [
@@ -174,11 +1391,32 @@
       ],
       "stripStem": true
     },
+    "agsci-2022-ol-q15biii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2022-ol-q15biv": {
+      "pages": [
+        27,
+        28
+      ]
+    },
     "agsci-2022-ol-q15bv": {
       "pages": [
         27
       ],
       "stripStem": true
+    },
+    "agsci-2022-ol-q15bvi": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2022-ol-q16ai": {
+      "pages": [
+        29
+      ]
     },
     "agsci-2022-ol-q16aiii": {
       "pages": [
@@ -186,50 +1424,239 @@
       ],
       "stripStem": true
     },
+    "agsci-2022-ol-q16aiv": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2022-ol-q16bi": {
+      "pages": [
+        30
+      ]
+    },
     "agsci-2022-ol-q16biii": {
       "pages": [
         30
       ],
       "stripStem": true
     },
-    "agsci-2022-ol-q17ai": {
-      "kind": "text",
+    "agsci-2022-ol-q16ci": {
       "pages": [
-        32
-      ],
-      "stripStem": true
+        31
+      ]
     },
-    "agsci-2022-ol-q17aii": {
-      "kind": "text",
+    "agsci-2022-ol-q16cii": {
       "pages": [
-        32
-      ],
-      "stripStem": true
+        31
+      ]
     },
-    "agsci-2022-ol-q17aiii": {
-      "kind": "text",
+    "agsci-2022-ol-q16di": {
       "pages": [
-        32
-      ],
-      "stripStem": true
+        31
+      ]
     },
-    "agsci-2022-ol-q3b": {
+    "agsci-2022-ol-q16dii": {
       "pages": [
-        6
-      ],
-      "stripStem": true
+        31
+      ]
     },
-    "agsci-2022-ol-q4b": {
+    "agsci-2022-ol-q17bii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2022-ol-q17biv": {
+      "pages": [
+        33,
+        34
+      ]
+    },
+    "agsci-2022-ol-q17c": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2022-ol-q18aii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2022-ol-q18aiii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2022-ol-q18bii": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2022-ol-q18ci": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2022-ol-q18cii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2022-ol-q18ciii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2022-ol-q1b": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2022-ol-q2bi": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2022-ol-q2biii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2022-ol-q4ai": {
       "pages": [
         7
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2022-ol-q4aii": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2022-ol-q4aiii": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2022-ol-q5b": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2022-ol-q6a": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-ol-q6b": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-ol-q6c": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2022-ol-q7ai": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-ol-q7aii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-ol-q7bi": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2022-ol-q8a": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2022-ol-q8b": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2022-ol-q8c": {
+      "pages": [
+        11
+      ]
     },
     "agsci-2022-ol-q8d": {
       "pages": [
         11
       ],
       "stripStem": true
+    },
+    "agsci-2022-ol-q9a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2022-ol-q9b": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2022-ol-q9d": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2023-hl-q10ai": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2023-hl-q10aii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2023-hl-q10bi": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2023-hl-q10bii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2023-hl-q10biii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2023-hl-q12a": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-hl-q12b": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-hl-q12c": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-hl-q12d": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-hl-q13bi": {
+      "pages": [
+        21
+      ]
     },
     "agsci-2023-hl-q13di": {
       "kind": "text",
@@ -238,11 +1665,76 @@
       ],
       "stripStem": true
     },
-    "agsci-2023-hl-q15cii": {
+    "agsci-2023-hl-q14a": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2023-hl-q14bi": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2023-hl-q14bii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2023-hl-q14bv": {
+      "pages": [
+        24,
+        25
+      ]
+    },
+    "agsci-2023-hl-q14ciii": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "agsci-2023-hl-q14civ": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "agsci-2023-hl-q15bi": {
+      "pages": [
+        27,
+        28
+      ]
+    },
+    "agsci-2023-hl-q15bii": {
       "pages": [
         28
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2023-hl-q15ci": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2023-hl-q15d": {
+      "pages": [
+        27,
+        29
+      ]
+    },
+    "agsci-2023-hl-q16ai": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2023-hl-q16aiii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2023-hl-q16bi": {
+      "pages": [
+        30,
+        31
+      ]
     },
     "agsci-2023-hl-q16bii": {
       "pages": [
@@ -250,11 +1742,96 @@
       ],
       "stripStem": true
     },
+    "agsci-2023-hl-q16c": {
+      "pages": [
+        30,
+        32
+      ]
+    },
+    "agsci-2023-hl-q16di": {
+      "pages": [
+        30,
+        33
+      ]
+    },
+    "agsci-2023-hl-q16dii": {
+      "pages": [
+        30,
+        33
+      ]
+    },
+    "agsci-2023-hl-q17ai": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2023-hl-q17aii": {
+      "pages": [
+        34,
+        35
+      ]
+    },
+    "agsci-2023-hl-q17bi": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2023-hl-q17bii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2023-hl-q17biii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2023-hl-q17c": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2023-hl-q18aii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2023-hl-q18aiii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2023-hl-q18aiv": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2023-hl-q18bi": {
+      "pages": [
+        37,
+        38
+      ]
+    },
+    "agsci-2023-hl-q1ai": {
+      "pages": [
+        3
+      ]
+    },
     "agsci-2023-hl-q1aii": {
       "pages": [
         3
       ],
       "stripStem": true
+    },
+    "agsci-2023-hl-q1aiii": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2023-hl-q1bi": {
+      "pages": [
+        4
+      ]
     },
     "agsci-2023-hl-q1bii": {
       "kind": "text",
@@ -263,6 +1840,66 @@
       ],
       "stripStem": true
     },
+    "agsci-2023-hl-q2b": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2023-hl-q3a": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2023-hl-q3b": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2023-hl-q3c": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2023-hl-q4b": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2023-hl-q5b": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2023-hl-q6a": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2023-hl-q6b": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2023-hl-q6c": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2023-hl-q6d": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2023-hl-q8a": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2023-hl-q8b": {
+      "pages": [
+        11
+      ]
+    },
     "agsci-2023-hl-q9ai": {
       "kind": "text",
       "pages": [
@@ -270,11 +1907,153 @@
       ],
       "stripStem": true
     },
-    "agsci-2023-ol-q16ai": {
+    "agsci-2023-hl-q9aiii": {
       "pages": [
-        29
-      ],
-      "stripStem": true
+        12
+      ]
+    },
+    "agsci-2023-hl-q9bii": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2023-ol-q10a-i": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2023-ol-q10a-ii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2023-ol-q10b-iv": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2023-ol-q12a": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-ol-q12b": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-ol-q12c": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2023-ol-q13a-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2023-ol-q13a-iii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2023-ol-q13b-i": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2023-ol-q13b-iii": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2023-ol-q13c-i": {
+      "pages": [
+        20,
+        22
+      ]
+    },
+    "agsci-2023-ol-q13c-ii": {
+      "pages": [
+        20,
+        22
+      ]
+    },
+    "agsci-2023-ol-q13d": {
+      "pages": [
+        20,
+        22
+      ]
+    },
+    "agsci-2023-ol-q14a-ii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2023-ol-q14a-iii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2023-ol-q14a-iv": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2023-ol-q15a-i": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2023-ol-q15a-iii": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2023-ol-q15a-iv": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2023-ol-q15a-v": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2023-ol-q15a-vi": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2023-ol-q15c": {
+      "pages": [
+        26,
+        28
+      ]
+    },
+    "agsci-2023-ol-q16aii": {
+      "pages": [
+        29,
+        30
+      ]
+    },
+    "agsci-2023-ol-q16aiii": {
+      "pages": [
+        29,
+        30
+      ]
+    },
+    "agsci-2023-ol-q16bi": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2023-ol-q16bii": {
+      "pages": [
+        30
+      ]
     },
     "agsci-2023-ol-q16ci": {
       "kind": "text",
@@ -283,6 +2062,46 @@
       ],
       "stripStem": true
     },
+    "agsci-2023-ol-q16cii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2023-ol-q17ai": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2023-ol-q17aii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2023-ol-q17aiii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2023-ol-q17bi": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2023-ol-q17bii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2023-ol-q17biii": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2023-ol-q17c": {
+      "pages": [
+        33
+      ]
+    },
     "agsci-2023-ol-q18ai": {
       "kind": "text",
       "pages": [
@@ -290,11 +2109,81 @@
       ],
       "stripStem": true
     },
+    "agsci-2023-ol-q18aii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2023-ol-q18aiii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2023-ol-q18bi": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2023-ol-q18bii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2023-ol-q18biii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2023-ol-q18cii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2023-ol-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2023-ol-q1c": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2023-ol-q2b": {
+      "pages": [
+        4
+      ]
+    },
+    "agsci-2023-ol-q3a": {
+      "pages": [
+        5
+      ]
+    },
     "agsci-2023-ol-q3b": {
       "pages": [
         5
       ],
       "stripStem": true
+    },
+    "agsci-2023-ol-q6a-i": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2023-ol-q6a-ii": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2023-ol-q6b": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2023-ol-q7b": {
+      "pages": [
+        10
+      ]
     },
     "agsci-2023-ol-q8b-i": {
       "pages": [
@@ -302,11 +2191,101 @@
       ],
       "stripStem": true
     },
+    "agsci-2023-ol-q8b-ii": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2023-ol-q9a-ii": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2023-ol-q9a-iii": {
       "pages": [
         12
       ],
       "stripStem": true
+    },
+    "agsci-2023-ol-q9b-i": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2023-ol-q9b-ii": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2024-hl-q10a": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2024-hl-q10b": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2024-hl-q10c": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2024-hl-q11a": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2024-hl-q11b": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2024-hl-q11c": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2024-hl-q12a": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2024-hl-q12b": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2024-hl-q13ai": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2024-hl-q13aiii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2024-hl-q13bi": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2024-hl-q13bii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2024-hl-q13c": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2024-hl-q13d": {
+      "pages": [
+        24
+      ]
     },
     "agsci-2024-hl-q14ai": {
       "pages": [
@@ -314,11 +2293,32 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-hl-q14aii": {
+      "pages": [
+        25
+      ]
+    },
     "agsci-2024-hl-q14aiii": {
       "pages": [
         25
       ],
       "stripStem": true
+    },
+    "agsci-2024-hl-q14bi": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2024-hl-q14bii": {
+      "pages": [
+        25,
+        27
+      ]
+    },
+    "agsci-2024-hl-q14d": {
+      "pages": [
+        27
+      ]
     },
     "agsci-2024-hl-q15ai": {
       "kind": "text",
@@ -327,6 +2327,11 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-hl-q15aii": {
+      "pages": [
+        28
+      ]
+    },
     "agsci-2024-hl-q15aiii": {
       "kind": "text",
       "pages": [
@@ -334,11 +2339,125 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-hl-q15aiv": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2024-hl-q15av": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2024-hl-q15bi": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2024-hl-q15bii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2024-hl-q15cii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2024-hl-q16ai": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2024-hl-q16aii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2024-hl-q16aiii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2024-hl-q16aiv": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2024-hl-q16c": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2024-hl-q16d": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2024-hl-q17bi": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2024-hl-q17bii": {
+      "pages": [
+        34
+      ]
+    },
     "agsci-2024-hl-q17biii": {
       "pages": [
         34
       ],
       "stripStem": true
+    },
+    "agsci-2024-hl-q17biv": {
+      "pages": [
+        34,
+        35
+      ]
+    },
+    "agsci-2024-hl-q17bv": {
+      "pages": [
+        34,
+        35
+      ]
+    },
+    "agsci-2024-hl-q17ci": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2024-hl-q18ai": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2024-hl-q18bi": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2024-hl-q18bii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2024-hl-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2024-hl-q1b": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2024-hl-q2aii": {
+      "pages": [
+        4
+      ]
     },
     "agsci-2024-hl-q2bi": {
       "kind": "text",
@@ -347,6 +2466,11 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-hl-q2bii": {
+      "pages": [
+        5
+      ]
+    },
     "agsci-2024-hl-q2biii": {
       "kind": "text",
       "pages": [
@@ -354,12 +2478,82 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-hl-q3ai": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2024-hl-q3aii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2024-hl-q3aiii": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2024-hl-q3b": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2024-hl-q4": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2024-hl-q5b": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2024-hl-q6bi": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2024-hl-q6bii": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2024-hl-q7a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2024-hl-q7b": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2024-hl-q8a": {
       "kind": "text",
       "pages": [
         13
       ],
       "stripStem": true
+    },
+    "agsci-2024-hl-q8b": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2024-hl-q8c": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2024-hl-q9a": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2024-ol-q10a": {
+      "pages": [
+        13
+      ]
     },
     "agsci-2024-ol-q10b": {
       "pages": [
@@ -373,11 +2567,114 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q10cii": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2024-ol-q11ai": {
+      "pages": [
+        14
+      ]
+    },
     "agsci-2024-ol-q11aiii": {
       "pages": [
         14
       ],
       "stripStem": true
+    },
+    "agsci-2024-ol-q11bi": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2024-ol-q11bii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2024-ol-q12a": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2024-ol-q12b": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2024-ol-q13ai": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2024-ol-q13aii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2024-ol-q13bi": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2024-ol-q13bii": {
+      "pages": [
+        20,
+        21
+      ]
+    },
+    "agsci-2024-ol-q13biv": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2024-ol-q14ai": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2024-ol-q14aiii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2024-ol-q14bii": {
+      "pages": [
+        22,
+        23
+      ]
+    },
+    "agsci-2024-ol-q14biii": {
+      "pages": [
+        22,
+        23
+      ]
+    },
+    "agsci-2024-ol-q14ci": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2024-ol-q15ai": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2024-ol-q15aii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2024-ol-q15bi": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2024-ol-q15bii": {
+      "pages": [
+        26
+      ]
     },
     "agsci-2024-ol-q15biii": {
       "pages": [
@@ -385,17 +2682,62 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q15biv": {
+      "pages": [
+        26
+      ]
+    },
     "agsci-2024-ol-q15ci": {
       "pages": [
         27
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q15cii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2024-ol-q15d": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2024-ol-q16ai": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2024-ol-q16aii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2024-ol-q16aiii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2024-ol-q16aiv": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2024-ol-q16b": {
+      "pages": [
+        29
+      ]
+    },
     "agsci-2024-ol-q16ci": {
       "pages": [
         30
       ],
       "stripStem": true
+    },
+    "agsci-2024-ol-q16cii": {
+      "pages": [
+        30
+      ]
     },
     "agsci-2024-ol-q16ciii": {
       "pages": [
@@ -417,17 +2759,127 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q17aiii": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2024-ol-q17bi": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2024-ol-q17bii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2024-ol-q17biii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2024-ol-q17c": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2024-ol-q18ai": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2024-ol-q18aii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2024-ol-q18aiii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2024-ol-q18b": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2024-ol-q18c": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2024-ol-q18d": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2024-ol-q1b": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2024-ol-q1c": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2024-ol-q1d": {
+      "pages": [
+        3
+      ]
+    },
     "agsci-2024-ol-q2a": {
       "pages": [
         4
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q2bi": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2024-ol-q2bii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2024-ol-q2biv": {
+      "pages": [
+        5
+      ]
+    },
     "agsci-2024-ol-q3": {
       "pages": [
         6
       ],
       "stripStem": true
+    },
+    "agsci-2024-ol-q4": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2024-ol-q5a": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2024-ol-q5b": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2024-ol-q6ai": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2024-ol-q6aii": {
+      "pages": [
+        8
+      ]
     },
     "agsci-2024-ol-q6bi": {
       "kind": "text",
@@ -450,11 +2902,71 @@
       ],
       "stripStem": true
     },
+    "agsci-2024-ol-q7a": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2024-ol-q7b": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2024-ol-q8a": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2024-ol-q8b": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2024-ol-q9ai": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2024-ol-q9aii": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2024-ol-q9aiii": {
+      "pages": [
+        12
+      ]
+    },
     "agsci-2024-ol-q9b": {
       "pages": [
         12
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q10a": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2025-hl-q10b": {
+      "pages": [
+        16
+      ]
+    },
+    "agsci-2025-hl-q11a": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2025-hl-q11b": {
+      "pages": [
+        17
+      ]
+    },
+    "agsci-2025-hl-q13ai": {
+      "pages": [
+        21
+      ]
     },
     "agsci-2025-hl-q13aii": {
       "pages": [
@@ -462,11 +2974,278 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-hl-q13aiii": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-hl-q13aiv": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-hl-q13av": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13avi": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13avii": {
+      "pages": [
+        21,
+        22
+      ]
+    },
+    "agsci-2025-hl-q13bi": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-hl-q13bii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-hl-q13biii": {
+      "pages": [
+        22,
+        23
+      ]
+    },
+    "agsci-2025-hl-q13ci": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2025-hl-q13cii": {
+      "pages": [
+        23
+      ]
+    },
+    "agsci-2025-hl-q13di": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2025-hl-q13dii": {
+      "pages": [
+        24
+      ]
+    },
+    "agsci-2025-hl-q14ai": {
+      "pages": [
+        25
+      ]
+    },
     "agsci-2025-hl-q14aii": {
       "pages": [
         25
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q14aiii": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "agsci-2025-hl-q14bii": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2025-hl-q14biii": {
+      "pages": [
+        26,
+        27
+      ]
+    },
+    "agsci-2025-hl-q14c": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-hl-q14d": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-hl-q15ai": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-hl-q15aii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-hl-q15aiii": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-hl-q15aiv": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-hl-q16ai": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aiii": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16aiv": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-hl-q16av": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16avi": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16b": {
+      "pages": [
+        32,
+        33
+      ]
+    },
+    "agsci-2025-hl-q16ci": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16cii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16ciii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q16civ": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-hl-q17ai": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aiii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-hl-q17aiv": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2025-hl-q17av": {
+      "pages": [
+        35,
+        36
+      ]
+    },
+    "agsci-2025-hl-q17bi": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-hl-q17bii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-hl-q17ci": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2025-hl-q17cii": {
+      "pages": [
+        37
+      ]
+    },
+    "agsci-2025-hl-q18ai": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18aii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18aiii": {
+      "pages": [
+        38
+      ]
+    },
+    "agsci-2025-hl-q18b": {
+      "pages": [
+        39
+      ]
+    },
+    "agsci-2025-hl-q18ci": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2025-hl-q18cii": {
+      "pages": [
+        40
+      ]
+    },
+    "agsci-2025-hl-q1a": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2025-hl-q1c": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2025-hl-q2a": {
+      "pages": [
+        4
+      ]
     },
     "agsci-2025-hl-q2bi": {
       "pages": [
@@ -474,11 +3253,129 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-hl-q2bii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2025-hl-q2biii": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2025-hl-q3ai": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-hl-q3bi": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2025-hl-q3bii": {
+      "pages": [
+        7
+      ]
+    },
+    "agsci-2025-hl-q4ai": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-hl-q4aii": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-hl-q4aiii": {
+      "pages": [
+        8
+      ]
+    },
     "agsci-2025-hl-q4bi": {
       "pages": [
         9
       ],
       "stripStem": true
+    },
+    "agsci-2025-hl-q4bii": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q4biii": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q4biv": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-hl-q5a": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q5b": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q5c": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-hl-q6b": {
+      "pages": [
+        11
+      ]
+    },
+    "agsci-2025-hl-q7a": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2025-hl-q8a": {
+      "pages": [
+        13
+      ]
+    },
+    "agsci-2025-hl-q9a": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-hl-q9bi": {
+      "pages": [
+        14,
+        15
+      ]
+    },
+    "agsci-2025-hl-q9bii": {
+      "pages": [
+        14,
+        15
+      ]
+    },
+    "agsci-2025-hl-q9biii": {
+      "pages": [
+        14,
+        15
+      ]
+    },
+    "agsci-2025-ol-q10b": {
+      "pages": [
+        12
+      ]
+    },
+    "agsci-2025-ol-q10c": {
+      "pages": [
+        12
+      ]
     },
     "agsci-2025-ol-q11ai": {
       "kind": "text",
@@ -501,11 +3398,86 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q11bi": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-ol-q11bii": {
+      "pages": [
+        14
+      ]
+    },
+    "agsci-2025-ol-q12aiii": {
+      "pages": [
+        15
+      ]
+    },
+    "agsci-2025-ol-q12bii": {
+      "pages": [
+        16
+      ]
+    },
     "agsci-2025-ol-q12biv": {
       "pages": [
         16
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q13a-ii": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13a-iii": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13ai": {
+      "pages": [
+        18
+      ]
+    },
+    "agsci-2025-ol-q13b": {
+      "pages": [
+        19
+      ]
+    },
+    "agsci-2025-ol-q13c-i": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-ii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-iii": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q13c-iv": {
+      "pages": [
+        20
+      ]
+    },
+    "agsci-2025-ol-q14a-i": {
+      "pages": [
+        21
+      ]
+    },
+    "agsci-2025-ol-q14a-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-ol-q14b-i": {
+      "pages": [
+        22
+      ]
     },
     "agsci-2025-ol-q14b-ii": {
       "pages": [
@@ -513,11 +3485,27 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q14b-iii": {
+      "pages": [
+        22
+      ]
+    },
+    "agsci-2025-ol-q14b-iv": {
+      "pages": [
+        22,
+        23
+      ]
+    },
     "agsci-2025-ol-q14c-i": {
       "pages": [
         23
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q14c-ii": {
+      "pages": [
+        23
+      ]
     },
     "agsci-2025-ol-q15a-i": {
       "kind": "text",
@@ -526,11 +3514,76 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q15a-ii": {
+      "pages": [
+        24
+      ]
+    },
     "agsci-2025-ol-q15a-iii": {
       "pages": [
         24
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q15b-i": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15b-ii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15b-iii": {
+      "pages": [
+        25
+      ]
+    },
+    "agsci-2025-ol-q15c": {
+      "pages": [
+        26
+      ]
+    },
+    "agsci-2025-ol-q15d-ii": {
+      "pages": [
+        27
+      ]
+    },
+    "agsci-2025-ol-q16aii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-ol-q16aiii": {
+      "pages": [
+        28
+      ]
+    },
+    "agsci-2025-ol-q16b": {
+      "pages": [
+        29
+      ]
+    },
+    "agsci-2025-ol-q16cii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2025-ol-q16ciii": {
+      "pages": [
+        30
+      ]
+    },
+    "agsci-2025-ol-q17ai": {
+      "pages": [
+        31
+      ]
+    },
+    "agsci-2025-ol-q17aii": {
+      "pages": [
+        31
+      ]
     },
     "agsci-2025-ol-q17bi": {
       "pages": [
@@ -538,11 +3591,77 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q17biii": {
+      "pages": [
+        31,
+        32
+      ]
+    },
+    "agsci-2025-ol-q17biv": {
+      "pages": [
+        32
+      ]
+    },
+    "agsci-2025-ol-q17c": {
+      "pages": [
+        33
+      ]
+    },
+    "agsci-2025-ol-q18ai": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18aii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18aiii": {
+      "pages": [
+        34
+      ]
+    },
+    "agsci-2025-ol-q18bi": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18bii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18biii": {
+      "pages": [
+        35
+      ]
+    },
+    "agsci-2025-ol-q18ciii": {
+      "pages": [
+        36
+      ]
+    },
+    "agsci-2025-ol-q1aii": {
+      "pages": [
+        3
+      ]
+    },
+    "agsci-2025-ol-q1bi": {
+      "pages": [
+        4
+      ]
+    },
     "agsci-2025-ol-q1bii": {
       "pages": [
         4
       ],
       "stripStem": true
+    },
+    "agsci-2025-ol-q1biii": {
+      "pages": [
+        4
+      ]
     },
     "agsci-2025-ol-q2": {
       "pages": [
@@ -550,17 +3669,61 @@
       ],
       "stripStem": true
     },
+    "agsci-2025-ol-q3": {
+      "pages": [
+        5
+      ]
+    },
+    "agsci-2025-ol-q4a": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-ol-q4b": {
+      "pages": [
+        6
+      ]
+    },
+    "agsci-2025-ol-q4c": {
+      "pages": [
+        6
+      ]
+    },
     "agsci-2025-ol-q5c": {
       "pages": [
         7
       ],
       "stripStem": true
     },
-    "agsci-2025-ol-q9biii-iv": {
+    "agsci-2025-ol-q6a": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-ol-q6b": {
+      "pages": [
+        8
+      ]
+    },
+    "agsci-2025-ol-q8a": {
+      "pages": [
+        9
+      ]
+    },
+    "agsci-2025-ol-q9aii": {
+      "pages": [
+        10
+      ]
+    },
+    "agsci-2025-ol-q9bii": {
       "pages": [
         11
-      ],
-      "stripStem": true
+      ]
+    },
+    "agsci-2025-ol-q9biv": {
+      "pages": [
+        11
+      ]
     }
   },
   "biology": {},
@@ -784,6 +3947,36 @@
         6
       ],
       "stripStem": true
+    },
+    "bus-2021-hl-s2-abq-a": {
+      "kind": "text",
+      "pages": [
+        2
+      ]
+    },
+    "bus-2021-hl-s2-abq-b-i": {
+      "kind": "text",
+      "pages": [
+        2
+      ]
+    },
+    "bus-2022-hl-s2-abq-b": {
+      "kind": "text",
+      "pages": [
+        2
+      ]
+    },
+    "bus-2024-hl-s2-abq-a": {
+      "kind": "text",
+      "pages": [
+        2
+      ]
+    },
+    "bus-2024-hl-s2-abq-c": {
+      "kind": "text",
+      "pages": [
+        2
+      ]
     }
   },
   "chemistry": {
@@ -863,194 +4056,75 @@
       "stripStem": true
     }
   },
-  "construction-studies": {
-    "cons-2016-hl-q6-a": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2016-hl-q10-b": {
-      "pages": [
-        5
-      ],
-      "stripStem": true
-    },
-    "cons-2016-hl-q7-b": {
-      "pages": [
-        4
-      ],
-      "stripStem": true
-    },
-    "cons-2016-ol-q3-a": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q4-b": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q2-c": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q4-c": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q6-b": {
-      "pages": [
-        4
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q6-c": {
-      "pages": [
-        4
-      ],
-      "stripStem": true
-    },
-    "cons-2017-hl-q9-a": {
-      "pages": [
-        5
-      ],
-      "stripStem": true
-    },
-    "cons-2017-ol-q3-a": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2018-hl-q9-b": {
-      "pages": [
-        6
-      ],
-      "stripStem": true
-    },
-    "cons-2018-ol-q3-a": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2019-hl-q2-c": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2019-hl-q8-b": {
-      "pages": [
-        6
-      ],
-      "stripStem": true
-    },
-    "cons-2019-ol-q3-a": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2019-ol-q3-b": {
-      "pages": [
-        2
-      ],
-      "stripStem": true
-    },
-    "cons-2020-ol-q7-b": {
-      "pages": [
-        4
-      ],
-      "stripStem": true
-    },
-    "cons-2022-hl-q4-b": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2022-hl-q4-c": {
-      "pages": [
-        3
-      ],
-      "stripStem": true
-    },
-    "cons-2024-hl-q8-a": {
-      "pages": [
-        6
-      ],
-      "stripStem": true
-    },
-    "cons-2025-hl-q10-b": {
-      "pages": [
-        7
-      ],
-      "stripStem": true
-    }
-  },
+  "construction-studies": {},
   "economics": {
     "econ-2021-hl-q13-a-ii": {
       "pages": [
-        22
-      ],
-      "stripStem": true
+        22,
+        23,
+        24,
+        25
+      ]
     },
     "econ-2021-ol-q12-a-ii": {
       "pages": [
-        13
-      ],
-      "stripStem": true
+        13,
+        14,
+        15
+      ]
     },
     "econ-2021-ol-sa-q2": {
       "pages": [
         4
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2021-ol-sa-q4": {
       "pages": [
         5
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2022-hl-q14-b-i": {
       "pages": [
-        27
-      ],
-      "stripStem": true
+        26,
+        27,
+        28,
+        29
+      ]
     },
     "econ-2022-hl-q14-b-ii": {
       "pages": [
-        27
-      ],
-      "stripStem": true
+        26,
+        27,
+        28,
+        29
+      ]
     },
     "econ-2022-hl-q15-a-i": {
       "pages": [
-        30
-      ],
-      "stripStem": true
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
     },
     "econ-2022-ol-q11-b-ii": {
+      "kind": "source-illustration",
       "pages": [
-        11
+        10,
+        11,
+        12
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-q12-a-i": {
+      "kind": "source-illustration",
       "pages": [
-        13
+        13,
+        14,
+        15
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-q12-a-ii": {
       "pages": [
@@ -1059,206 +4133,240 @@
       "stripStem": true
     },
     "econ-2022-ol-q13-b-iii": {
+      "kind": "source-illustration",
       "pages": [
-        17
+        16,
+        17,
+        18
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-q14-a-i": {
+      "kind": "source-illustration",
       "pages": [
-        19
+        19,
+        20,
+        21
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-q15-a-i-trend": {
+      "kind": "source-illustration",
       "pages": [
-        22
-      ],
-      "stripStem": true
-    },
-    "econ-2022-ol-q15-c-i": {
-      "pages": [
+        22,
+        23,
         24
       ],
-      "stripStem": true
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-c-i": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
     },
     "econ-2022-ol-sa-q10-a": {
+      "kind": "source-illustration",
       "pages": [
         9
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-sa-q10-b": {
+      "kind": "source-illustration",
       "pages": [
         9
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-sa-q7-a-i": {
+      "kind": "source-illustration",
       "pages": [
         7
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-seca-q4-ticks": {
+      "kind": "source-illustration",
       "pages": [
         5
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2022-ol-seca-q7-a-ii-ticks": {
+      "kind": "source-illustration",
       "pages": [
         7
       ],
-      "stripStem": true
+      "label": "View question and source material"
     },
     "econ-2023-hl-q11-a-i": {
       "pages": [
-        13
-      ],
-      "stripStem": true
+        13,
+        14,
+        15,
+        16
+      ]
     },
     "econ-2023-hl-q12-b-i": {
       "pages": [
-        19
-      ],
-      "stripStem": true
+        17,
+        18,
+        19,
+        20
+      ]
     },
     "econ-2023-hl-q15-a-iii": {
       "pages": [
-        30
-      ],
-      "stripStem": true
+        29,
+        30,
+        31,
+        32
+      ]
     },
     "econ-2023-hl-sa-q3-a": {
       "pages": [
         5
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2023-hl-sa-q4-a": {
       "pages": [
         6
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2023-hl-seca-q6-a": {
       "pages": [
         8
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2023-ol-q11-b-ii": {
       "pages": [
-        11
-      ],
-      "stripStem": true
+        10,
+        11,
+        12
+      ]
     },
     "econ-2024-hl-q12-b-ii": {
       "pages": [
-        18
-      ],
-      "stripStem": true
+        17,
+        18,
+        19,
+        20
+      ]
     },
     "econ-2024-hl-q16-b-ii": {
       "pages": [
-        34
-      ],
-      "stripStem": true
+        33,
+        34,
+        35,
+        36
+      ]
     },
     "econ-2024-hl-sa-q10-a-ii": {
       "pages": [
         12
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-hl-sa-q3-a": {
       "pages": [
         5
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-hl-sa-q6-a": {
       "pages": [
         8
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-hl-seca-q4-a-ticks": {
       "pages": [
         6
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-ol-q11-b-ii": {
       "pages": [
-        11
-      ],
-      "stripStem": true
+        10,
+        11,
+        12
+      ]
     },
     "econ-2024-ol-q13-a-i": {
       "pages": [
-        16
-      ],
-      "stripStem": true
+        16,
+        17,
+        18
+      ]
     },
     "econ-2024-ol-q15-a": {
       "pages": [
-        22
-      ],
-      "stripStem": true
+        22,
+        23,
+        24
+      ]
     },
     "econ-2024-ol-q15-b-i": {
       "pages": [
-        23
-      ],
-      "stripStem": true
+        22,
+        23,
+        24
+      ]
     },
     "econ-2024-ol-sa-q2-a": {
       "pages": [
         4
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-ol-sa-q9": {
       "pages": [
         8
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2024-ol-seca-q7-ticks": {
       "pages": [
         7
-      ],
-      "stripStem": true
+      ]
     },
     "econ-2025-hl-q14-b-i": {
       "pages": [
-        26
+        25,
+        26,
+        27,
+        28
       ],
       "stripStem": true
     },
     "econ-2025-hl-q15-b-i": {
       "pages": [
-        30
+        29,
+        30,
+        31,
+        32
       ],
       "stripStem": true
     },
     "econ-2025-ol-q11-b-ii": {
       "pages": [
-        12
+        11,
+        12,
+        13
       ],
       "stripStem": true
     },
     "econ-2025-ol-q13-b-i": {
       "pages": [
-        18
+        17,
+        18,
+        19
       ],
       "stripStem": true
     },
     "econ-2025-ol-q15-b-i": {
       "pages": [
-        24
+        23,
+        24,
+        25
       ],
       "stripStem": true
     },
@@ -1273,6 +4381,5677 @@
         9
       ],
       "stripStem": true
+    },
+    "econ-2022-hl-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2022-hl-sa-q3-a-agree": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2022-hl-sa-q3-a-disagree": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2022-hl-sa-q5-a": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2022-hl-sa-q5-c": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2022-hl-sa-q7-b": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2022-hl-sa-q8-a": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2022-hl-sa-q8-b": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2022-hl-sa-q5-b": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2022-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2022-hl-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2022-hl-sa-q4-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2022-hl-sa-q9-a": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2022-hl-sa-q9-b": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2022-hl-sa-q10-b": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2022-hl-seca-q4-a-ticks": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2022-hl-seca-q7-a-ii": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2022-hl-seca-q2-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2022-hl-seca-q10-a": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2022-hl-sa-q1-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2022-hl-sa-q6-a-i": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2022-hl-sa-q6-a-ii": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2022-hl-sa-q7-a-i": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2022-hl-sa-q4-c": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2022-hl-sa-q6-a-b": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2022-hl-sa-q6-a-c": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2022-hl-q11-a-ii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q11-b-ii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q11-c-iii-for": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q11-c-iii-against": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q12-a-ii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q12-b-iii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q13-b-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q13-c-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q15-a-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q15-c-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q16-a-i": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q16-a-ii": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q16-c-ii": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q11-a-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q11-c-ii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q12-a-iv": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q12-b-i-monopoly": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q12-b-i-oligopoly": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q12-c-ii-for": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q12-c-ii-against": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q13-b-i-incentive": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q13-b-i-tax": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q13-c-ii-yes": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q13-c-ii-no": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q14-c-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q15-b-iii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q16-b-i": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q16-c-iii": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q15-b-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q11-c-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q12-a-iii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q14-a-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q13-a-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q12-c-i": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q11-b-iii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q14-b-iii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q14-a-ii-ticks": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q12-a-i": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q15-c-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q14-c-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q12-b-ii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2022-hl-q16-c-i": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q15-a-iii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q15-b-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    "econ-2022-hl-q14-c-iii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2022-hl-q11-b-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2022-hl-q13-a-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2022-hl-q16-b-ii": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2022-hl-q16-b-ii-citizens": {
+      "pages": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    "econ-2021-ol-sa-q3-i": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-hl-q16-a-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2022-ol-sa-q1-i": {
+      "kind": "source-illustration",
+      "pages": [
+        3
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q1-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        3
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q2-i": {
+      "kind": "source-illustration",
+      "pages": [
+        4
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q2-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        4
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q3-i": {
+      "kind": "source-illustration",
+      "pages": [
+        4
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q3-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        4
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q5-a": {
+      "kind": "source-illustration",
+      "pages": [
+        5
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q5-b": {
+      "kind": "source-illustration",
+      "pages": [
+        5
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-seca-q6-i": {
+      "kind": "source-illustration",
+      "pages": [
+        6
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q6-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        6
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q7-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        7
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q7-b-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        7
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q8-i": {
+      "kind": "source-illustration",
+      "pages": [
+        8
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q8-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        8
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-seca-q9-i": {
+      "kind": "source-illustration",
+      "pages": [
+        8
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-sa-q9-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        8
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-a-i": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-a-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-c-i": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-c-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q11-c-iii": {
+      "kind": "source-illustration",
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q12-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q12-b-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q12-b-iii": {
+      "kind": "source-illustration",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q12-c-i": {
+      "kind": "source-illustration",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q12-c-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        13,
+        14,
+        15
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-a-i-percentage": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-a-ii-expenditure": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-a-ii-capital": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-b-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-c-i": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-c-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-a-ii-scarce": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-a-iii-water": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-b-ii-water": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-a-i": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q13-a-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        19,
+        20,
+        21
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-a-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-a-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-a-iii": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q14-b-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        22,
+        23,
+        24
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-a-i": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-a-ii-smoking": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-a-iii-social": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q15-a-iii-private": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-b-i": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-a-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-c-i": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-c-ii": {
+      "kind": "source-illustration",
+      "pages": [
+        25,
+        26,
+        27
+      ],
+      "label": "View question and source material"
+    },
+    "econ-2022-ol-q16-c-iii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-hl-sa-q1-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2023-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2023-hl-sa-q2-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-hl-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-hl-sa-q2-c-adv": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-hl-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2023-hl-seca-q3-c": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2023-hl-sa-q4-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2023-hl-sa-q4-c": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2023-hl-sa-q5-a": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2023-hl-sa-q5-b": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2023-hl-sa-q6-b": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2023-hl-sa-q7-a": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2023-hl-sa-q7-b": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2023-hl-sa-q8-a": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2023-hl-sa-q8-b": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2023-hl-sa-q9-a": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2023-hl-sa-q9-b": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2023-hl-sa-q10": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2023-hl-sa-q10-c": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2023-hl-q11-a-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-a-iii-neg": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-b-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-b-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-b-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-c-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-c-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q11-c-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2023-hl-q12-a-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q12-a-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q12-a-iii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q12-b-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q12-b-iii-adv": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q12-c": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2023-hl-q13-a-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-a-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-a-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-b-i-mps": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-b-ii-multiplier": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-b-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-b-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q13-b-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-hl-q14-a-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-a-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-a-iii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-b-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-b-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-b-iii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q14-c-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q15-b-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q15-b-iii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q15-a-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-a-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-b-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-b-ii-depreciation": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-b-iii-euro": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-b-iii-euro-no": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-c-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-c-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q15-c-iii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2023-hl-q16-a-iii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-hl-q16-b-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-hl-q16-b-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-hl-q16-b-iii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-hl-q16-c-i-for": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-hl-q16-c-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2023-ol-sa-q1-i": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2023-ol-seca-q1-ii": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2023-ol-sa-q2-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-ol-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2023-ol-sa-q3-a-i": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2023-ol-sa-q3-a-ii": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2023-ol-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2023-ol-seca-q4-a-i": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2023-ol-sa-q4-a-ii": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2023-ol-sa-q4-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2023-ol-sa-q5": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2023-ol-sa-q6-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2023-ol-sa-q6-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2023-ol-sa-q7": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2023-ol-sa-q8-i": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2023-ol-sa-q8-ii": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2023-ol-sa-q9": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2023-ol-sa-q10-private": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2023-ol-q11-a-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q11-a-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q11-b-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q11-b-iii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q11-c-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q11-c-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2023-ol-q12-a-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-a-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-b-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-b-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-c-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-c-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q12-c-iii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2023-ol-q13-a-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-a-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-b-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-b-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-b-ii-trade": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-c-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-c-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q13-c-iii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2023-ol-q14-a-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-a-ii-reason": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-b-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-b-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-b-iii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-c-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q14-c-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2023-ol-q15-a-i-percentage": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-a-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-b-i": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-b-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-b-iii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-a-i": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q15-c-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2023-ol-q16-a-i-factors": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-a-ii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-a-i": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-b-ii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-c-i": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-c-ii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2023-ol-q16-c-iii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-hl-seca-q1-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2024-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2024-hl-sa-q2-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2024-hl-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2024-hl-sa-q2-c": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2024-hl-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2024-hl-sa-q3-c": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2024-hl-sa-q4-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2024-hl-sa-q4-c": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2024-hl-sa-q5-a": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2024-hl-sa-q5-b": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2024-hl-sa-q6-a-diagram": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2024-hl-sa-q6-b-down": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2024-hl-sa-q7-a": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2024-hl-sa-q7-b": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2024-hl-sa-q8-a": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2024-hl-sa-q8-b": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2024-hl-sa-q9-a-cost": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2024-hl-sa-q9-b": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2024-hl-sa-q10-b": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2024-hl-q11-a-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-a-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-a-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-b-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-b-i-meaning": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-b-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-b-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-i-diagram": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-ii-diagram": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-iii-diagram": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q11-c-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2024-hl-q12-a-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-a-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-a-iii-tax": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-a-iii-gov": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-b-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-b-iii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-c-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-c-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q12-c-iii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2024-hl-q13-a-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-a-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-a-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-b-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-b-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-b-iii-pos": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-c-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-c-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q13-c-iii-pos": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-hl-q14-a-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-a-ii-agree": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-a-ii-disagree": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-b-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-b-i-explanation": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-b-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-c-i-spending": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-c-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q14-c-iii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2024-hl-q15-a-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-a-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-a-iii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-b-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-b-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-b-iii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-c-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-c-ii-economic": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q15-c-iii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2024-hl-q16-a-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-a-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-b-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-b-ii-meaning": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-b-iii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-c-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-c-ii-cost": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-hl-q16-c-iii-advantage": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2024-ol-sa-q1-i": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2024-ol-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2024-ol-seca-q3-a-ticks": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2024-ol-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2024-ol-sa-q4-a": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2024-ol-sa-q4-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2024-ol-seca-q5-ticks": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2024-ol-sa-q6": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2024-ol-sa-q8-i": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2024-ol-sa-q10": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2024-ol-q11-a-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q11-a-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q11-a-iii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q11-b-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q11-b-iii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q11-c-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q12-c-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2024-ol-q12-a-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-a-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-b-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-b-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-b-iii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-c-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-c-ii-unemployment": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q12-c-iii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2024-ol-q13-a-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-b-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-b-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-c-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-c-ii-yes": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-c-ii-no": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q13-c-iii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2024-ol-q14-a-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-a-i-education": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-a-ii-eu": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-a-iii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-b-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-b-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-b-iii-agree": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-b-iii-disagree": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-c-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q14-a-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2024-ol-q15-b-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-ol-q15-b-iii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-ol-q15-c-i": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-ol-q15-c-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2024-ol-q16-a-i": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-a-ii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-a-iii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-b-i": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-b-ii-adv": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-c-i-pos": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-c-i-neg": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2024-ol-q16-c-ii": {
+      "pages": [
+        25,
+        26,
+        27
+      ]
+    },
+    "econ-2026-hl-sa-q1-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2026-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2026-hl-sa-q2-a-events": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-hl-sa-q2-a-streaming": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-hl-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-hl-sa-q2-c": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-hl-sa-q3-a-agree": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2026-hl-sa-q3-a-disagree": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2026-hl-sa-q3-b": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2026-hl-sa-q3-c": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2026-hl-sa-q4-a": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2026-hl-sa-q4-b": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2026-hl-sa-q4-c": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2026-hl-sa-q5-a-rational": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-hl-sa-q5-a-irrational": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-hl-sa-q5-b": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-hl-sa-q6-a": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2026-hl-sa-q6-b": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2026-hl-sa-q7-a-subsidy": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-hl-sa-q7-a-tax": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-hl-sa-q7-b-yes": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-hl-sa-q7-b-no": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-hl-sa-q8-a": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2026-hl-sa-q8-b": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2026-hl-sa-q9-a": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2026-hl-sa-q9-b": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2026-hl-sa-q10-a": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2026-hl-sa-q10-b": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2026-hl-q11-a-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-a-ii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-b-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-b-i-explanation": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-b-ii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-c-i": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-c-i-meaning": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-c-ii-agree": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-c-ii-disagree": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q11-c-iii": {
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "econ-2026-hl-q12-a-i-imports": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-a-i-exports": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-a-ii-benefit": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-a-ii-challenge": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-a-iii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-b-i": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-b-ii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-b-iii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-c-i": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-c-i-influence": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-c-ii-option-a": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-c-ii-option-b": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q12-c-iii": {
+      "pages": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2026-hl-q13-a-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-a-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-b-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-b-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-b-iii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-c-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-c-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-c-iii-agree": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q13-c-iii-disagree": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-hl-q14-a-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-a-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-a-iii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-b-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-b-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-b-iii-agree": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-b-iii-disagree": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-c-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-c-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q14-c-iii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2026-hl-q15-a-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-a-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-a-iii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-b-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-b-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-b-iii-agree": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-b-iii-disagree": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-c-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-c-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-c-iii-narrow": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q15-c-iii-widen": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2026-hl-q16-a-i": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-a-ii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-a-iii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-b-i": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-b-ii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-b-iii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-c-i": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-c-ii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-hl-q16-c-iii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2026-ol-sa-q1-i": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2026-ol-sa-q1-ii": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2026-ol-sa-q2-a-private": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-ol-sa-q2-a-social": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-ol-sa-q2-b-government": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-ol-sa-q2-b-retailers": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2026-ol-sa-q3-a": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2026-ol-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2026-ol-sa-q4-a": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2026-ol-sa-q4-b-advantage": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2026-ol-sa-q4-b-disadvantage": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2026-ol-sa-q5-advantage": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2026-ol-sa-q5-disadvantage": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2026-ol-sa-q6": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2026-ol-sa-q7": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-ol-sa-q8-agree": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-ol-sa-q8-disagree": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2026-ol-sa-q9": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2026-ol-sa-q10-i": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-ol-sa-q10-ii": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2026-ol-q11-a-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-a-ii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-b-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-b-ii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-b-iii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-c-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-c-ii-agree": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q11-c-ii-disagree": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2026-ol-q12-a-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-a-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-b-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-b-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-c-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-c-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q12-c-iii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2026-ol-q13-a-i": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-a-ii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-a-ii-positive": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-a-ii-negative": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-a-iii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-b-i-households": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-b-i-economy": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-b-ii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-b-iii-agree": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-b-iii-disagree": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-c-i": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q13-c-ii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2026-ol-q14-a-i": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-a-ii-yes": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-a-ii-no": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-b-i-employee": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-b-i-employer": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-b-ii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-b-iii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-c-i": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-c-ii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q14-c-iii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2026-ol-q15-a-i": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-a-ii-agree": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-a-ii-disagree": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-b-i": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-b-ii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-b-iii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-c-i": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q15-c-ii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2026-ol-q16-a-i": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-a-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-a-iii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-b-i": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-b-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-b-iii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-c-i": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-c-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2026-ol-q16-c-iii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-sa-q1-a-for": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2025-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2025-hl-seca-q2-a": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-hl-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-hl-sa-q2-c-agree": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-hl-sa-q2-c-disagree": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-hl-sa-q3-a": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-hl-sa-q3-b": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-hl-sa-q3-c": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-hl-sa-q4-a-good": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2025-hl-sa-q4-b-gov": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2025-hl-sa-q4-c": {
+      "pages": [
+        6,
+        7
+      ]
+    },
+    "econ-2025-hl-sa-q5-a": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2025-hl-seca-q5-b": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2025-hl-sa-q6-a": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2025-hl-seca-q6-b": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2025-hl-seca-q7-a": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2025-hl-sa-q7-b": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2025-hl-sa-q8-a": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2025-hl-sa-q8-b": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2025-hl-q9-a": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2025-hl-sa-q9-b": {
+      "pages": [
+        11
+      ]
+    },
+    "econ-2025-hl-seca-q10-a": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2025-hl-sa-q10-b": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2025-hl-q11-a-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-a-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-b-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-b-i-explanation": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-b-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-b-iii-adv": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-c-i": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-c-ii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q11-c-iii": {
+      "pages": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-hl-q12-a-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-a-i-gdp": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-a-ii-tax": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-a-iii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-b-i": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-b-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-b-iii-agree": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-b-iii-disagree": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-c-i-employee": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q12-c-ii": {
+      "pages": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "econ-2025-hl-q13-a-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-a-ii-benefit": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-a-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-b-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-b-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-b-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-c-i": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-c-ii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q13-c-iii": {
+      "pages": [
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2025-hl-q14-a-i": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-a-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-a-iii-agri": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-a-iii-sport": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-b-ii": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-b-ii-meaning": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q15-a-i-agree": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q15-a-i-disagree": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q14-c-ii-positive": {
+      "pages": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-hl-q15-a-i-cash-agree": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-a-i-cash-disagree": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-a-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-a-iii-aib": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-b-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-b-iii-agree": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-b-iii-disagree": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-c-i": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-c-ii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q15-c-iii": {
+      "pages": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "econ-2025-hl-q16-a-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-a-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-a-iii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-b-i-diseconomies": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-b-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-b-ii-explanation": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-b-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-c-ii": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-hl-q16-c": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2025-ol-sa-q1-i": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2025-ol-sa-q1-ii": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2025-ol-sa-q2-a-yes": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-ol-sa-q2-a-no": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-ol-sa-q2-b": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2025-ol-sa-q3-a-private": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-ol-sa-q3-a-social": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-ol-sa-q3-b-agree": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-ol-sa-q3-b-disagree": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2025-ol-sa-q4-a": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2025-ol-sa-q5-i": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2025-ol-sa-q5-ii": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2025-ol-sa-q6-private": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2025-ol-seca-q7-i": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2025-ol-sa-q7-ii": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2025-ol-seca-q8-i-ticks": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2025-ol-sa-q10-i": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2025-ol-sa-q10-ii": {
+      "pages": [
+        10
+      ]
+    },
+    "econ-2025-ol-q11-a-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q11-a-ii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q11-b-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q11-b-iii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q11-c-i": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q11-c-ii": {
+      "pages": [
+        11,
+        12,
+        13
+      ]
+    },
+    "econ-2025-ol-q12-a-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-a-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-b-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-b-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-b-iii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-c-i": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-c-ii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q12-c-iii": {
+      "pages": [
+        14,
+        15,
+        16
+      ]
+    },
+    "econ-2025-ol-q13-a-i": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-a-ii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-a-iii-gov": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-a-iii-emp": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-b-ii": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-b-ii-mr": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-c-i": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q13-c": {
+      "pages": [
+        17,
+        18,
+        19
+      ]
+    },
+    "econ-2025-ol-q14-a-i": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-a-ii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-a-iii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-b-i-positive": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-b-i-negative": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-c": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-c-i": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q14-c-ii": {
+      "pages": [
+        20,
+        21,
+        22
+      ]
+    },
+    "econ-2025-ol-q15-a-i-entrepreneur": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-a-ii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-a-iii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-b-ii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-b-iii-pos": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-b-iii-neg": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-a-i": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q15-c-ii": {
+      "pages": [
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2025-ol-q16-a-i": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-a-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-a-iii-excise": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-b-i": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-b-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-a-iii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-b-i-ag": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2025-ol-q16-c-ii": {
+      "pages": [
+        26,
+        27,
+        28
+      ]
+    },
+    "econ-2023-hl-q16-a-i": {
+      "pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "econ-2021-hl-seca-q1-a": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2021-hl-sa-q1-b": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2021-hl-sa-q2": {
+      "pages": [
+        4
+      ]
+    },
+    "econ-2021-hl-sa-q3-a": {
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "econ-2021-hl-sa-q3-b": {
+      "pages": [
+        4,
+        5
+      ]
+    },
+    "econ-2021-hl-sa-q4-a": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2021-hl-sa-q4-b": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2021-hl-sa-q4-c": {
+      "pages": [
+        5,
+        6
+      ]
+    },
+    "econ-2021-hl-sa-q5-a": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2021-hl-sa-q5-b": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2021-hl-sa-q6-a": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2021-hl-sa-q6-b": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2021-hl-sa-q6-c": {
+      "pages": [
+        8,
+        9
+      ]
+    },
+    "econ-2021-hl-seca-q7-a": {
+      "pages": [
+        10,
+        11
+      ]
+    },
+    "econ-2021-hl-sa-q7-b": {
+      "pages": [
+        10,
+        11
+      ]
+    },
+    "econ-2021-hl-sa-q7-c": {
+      "pages": [
+        10,
+        11
+      ]
+    },
+    "econ-2021-hl-seca-q8-a": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2021-hl-seca-q8-b": {
+      "pages": [
+        12
+      ]
+    },
+    "econ-2021-hl-seca-q9-a": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2021-hl-seca-q9-b": {
+      "pages": [
+        13
+      ]
+    },
+    "econ-2021-hl-sa-q10-a": {
+      "pages": [
+        14
+      ]
+    },
+    "econ-2021-hl-sa-q10-b": {
+      "pages": [
+        14
+      ]
+    },
+    "econ-2021-hl-q11-a-i": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-a-ii": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-b-i": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-b-ii": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-b-iii": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-c-i": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q11-c-ii": {
+      "pages": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-hl-q12-a-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q12-a-ii-pos": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q12-b-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q12-b-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q12-c-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q12-c-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-hl-q13-a-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-b-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-b-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-b-iii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-c-i": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-c-ii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q13-c-iii": {
+      "pages": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    "econ-2021-hl-q14-a-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-a-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-b-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-b-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-c-i": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-c-ii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q14-c-iii": {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "econ-2021-hl-q15-a": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-b-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-b-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-b-iii-percap": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-c-i": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-c-ii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q15-c-iii": {
+      "pages": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    "econ-2021-hl-q16-a-i-trend": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-a-ii-derived": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q15-b-iii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-b-i": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-b-ii-social": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-a-i": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-a-ii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-hl-q16-c-iii": {
+      "pages": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    "econ-2021-ol-sa-q1-i": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2021-ol-sa-q1-ii": {
+      "pages": [
+        3
+      ]
+    },
+    "econ-2021-ol-sa-q5": {
+      "pages": [
+        5
+      ]
+    },
+    "econ-2021-ol-sa-q6-a": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2021-ol-sa-q6-b": {
+      "pages": [
+        6
+      ]
+    },
+    "econ-2021-ol-sa-q7": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2021-ol-sa-q8": {
+      "pages": [
+        7
+      ]
+    },
+    "econ-2021-ol-sa-q9-a": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2021-ol-sa-q9-b": {
+      "pages": [
+        8
+      ]
+    },
+    "econ-2021-ol-sa-q10-a": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2021-ol-sa-q10-b": {
+      "pages": [
+        9
+      ]
+    },
+    "econ-2021-ol-q11-a-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-a-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-b-i-pos": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-b-i-neg": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-b-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-b-iii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-c-i": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q11-c-ii": {
+      "pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "econ-2021-ol-q12-a-i": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2021-ol-q12-b": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2021-ol-q12-c-i-consumer": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2021-ol-q12-c-i-economy": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2021-ol-q12-c-ii": {
+      "pages": [
+        13,
+        14,
+        15
+      ]
+    },
+    "econ-2021-ol-q13-a-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-a-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-a-iii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-b-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-b-ii": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-c-i": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-c-ii-cpi": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q13-c-iii-types": {
+      "pages": [
+        16,
+        17,
+        18
+      ]
+    },
+    "econ-2021-ol-q14-a-i-capital": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q14-a-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q14-b-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q13-c-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q14-b-ii-services": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q14-c-i": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q14-c-ii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q13-c-iii": {
+      "pages": [
+        19,
+        20,
+        21
+      ]
+    },
+    "econ-2021-ol-q15-a-i-supply": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-a-ii-sanitiser": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-b-i": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-b-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-b-iii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-c-i": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-c-ii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q15-c-iii": {
+      "pages": [
+        22,
+        23,
+        24
+      ]
+    },
+    "econ-2021-ol-q16-a": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "econ-2021-ol-q14-a-i": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "econ-2021-ol-q16-b-ii": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "econ-2021-ol-q15-a-i": {
+      "pages": [
+        25,
+        26
+      ]
+    },
+    "econ-2021-ol-q15-a-ii": {
+      "pages": [
+        25,
+        26
+      ]
     }
   },
   "home-economics": {

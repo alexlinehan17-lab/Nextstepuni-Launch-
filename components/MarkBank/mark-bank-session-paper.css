@@ -12,3 +12,15 @@
 .mb-paper-session .mb-session-rail{position:static!important;flex-shrink:0;background:var(--background)!important;box-shadow:none!important}.mb-paper-session .mb-session-rail>div>div{max-width:none!important}.mb-paper-session .mb-session-rail button{box-shadow:none!important;border:1px solid var(--border)!important;background:var(--background)!important;color:var(--foreground)!important;font-weight:500!important}.mb-paper-session .mb-session-rail .mb-grade-button[data-suggested=true]{border-color:var(--foreground)!important}
 @media(min-width:1300px){.mb-live-session-dialog[data-expanded=true] .mb-session-workspace{padding-inline:max(40px,calc((100vw - 1320px)/2))!important;gap:48px!important}.mb-live-session-dialog[data-expanded=true] .mb-paper-session-heading{padding-inline:max(40px,calc((100vw - 1320px)/2))}.mb-live-session-dialog[data-expanded=true] .mb-session-rail{padding-inline:max(24px,calc((100vw - 1350px)/2))}}
 @media(max-width:700px){.nsu-kobra .mb-live-session-dialog{max-width:calc(100vw - 16px);height:94dvh;max-height:94dvh;border-radius:16px}.mb-paper-session-heading{padding:22px 20px 18px;gap:14px;flex-wrap:wrap}.mb-paper-session-heading [data-slot=dialog-title]{font-size:28px}.mb-paper-session-heading>div:last-child{margin-left:auto}.mb-paper-session .mb-session-workspace{padding:24px 20px!important;grid-template-columns:1fr;gap:24px!important}.mb-paper-session .mb-scheme-pane{padding-left:0;border-left:0;border-top:1px solid var(--border);padding-top:24px}.mb-paper-draft textarea{height:160px}}
+
+.mb-applied-scheme { color: var(--mb-ink); font: 400 13px/1.55 'DM Sans', sans-serif; }
+.mb-applied-scheme .mb-source-material-trigger { width: 100%; margin: 16px 0; padding: 12px; border: 1.5px solid var(--mb-ink); border-radius: 10px; }
+.mb-applied-scheme > p { margin: 12px 0; }
+.mb-applied-scheme fieldset { margin: 20px 0; padding: 14px; border: 1.5px solid var(--mb-ink); border-radius: 10px; }
+.mb-applied-scheme legend { padding: 0 5px; font-weight: 700; }
+.mb-applied-credit { display: flex; gap: 7px; flex-wrap: wrap; }
+.mb-applied-credit button { min-width: 42px; min-height: 40px; border: 1.5px solid var(--mb-ink); border-radius: 7px; background: var(--mb-paper); color: var(--mb-ink); font-weight: 700; cursor: pointer; }
+.mb-applied-credit button[aria-pressed="true"] { background: #F26B1F; color: #202020; }
+.mb-applied-deductions { display: grid; gap: 9px; margin-top: 14px; }
+.mb-applied-deductions label { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.mb-applied-deductions input { width: 64px; min-height: 38px; padding: 5px 8px; border: 1px solid var(--mb-ink); border-radius: 5px; background: var(--mb-paper); color: var(--mb-ink); }

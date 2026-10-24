@@ -1261,6 +1261,14 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: #FDEEDF;
 }
 
+/* Scheme links sit between rubric paragraphs, so they cannot use the
+   question-card footer's negative bottom margin. */
+.mb-source-material-trigger-inline {
+  width: 100%;
+  margin: 17px 0 14px;
+  border-bottom: 1px solid var(--mb-border);
+}
+
 .dark .mb-source-material-trigger:hover,
 .dark .mb-source-material-trigger:focus-visible {
   background: #38281F;
@@ -1370,6 +1378,8 @@ html:not(.dark) [class*="text-[#A0978D]"] {
 .mb-source-reader-heading {
   min-width: 0;
 }
+
+.mb-source-reader-header-linked { grid-template-columns: minmax(0, 1fr) auto; }
 
 .mb-source-reader-heading > span {
   display: block;
@@ -1510,6 +1520,73 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   box-shadow: none !important;
   margin-bottom: 0 !important;
 }
+
+.mb-source-reader-poem {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 40px);
+  color: var(--mb-ink);
+  background: var(--mb-paper);
+}
+
+.mb-source-reader-poem h3 {
+  margin: 0 0 8px;
+  font: 600 1.5em/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-poet {
+  margin: 0 0 28px;
+  font: 500 .85em/1.5 'Inter', sans-serif;
+}
+
+.mb-source-reader-stanza {
+  margin: 0 0 1.5em;
+  font: 400 1.1em/1.65 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-stanza > span {
+  display: block;
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+.mb-source-reader-reading-list {
+  min-height: 0;
+  overflow-y: auto;
+  padding: clamp(20px, 4vw, 40px);
+  color: var(--mb-ink);
+  background: var(--mb-paper);
+  font: 400 14px/1.6 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-source-reader-reading-list article {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-reading-list h3 {
+  margin: 0 0 8px;
+  font: 600 25px/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-reading-list p { margin: 0 0 8px; }
+
+.mb-source-reader-reading-list a {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: 2px solid var(--mb-ink);
+  border-radius: 5px;
+  color: var(--mb-paper);
+  background: var(--mb-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mb-source-reader-reading-list a span { font-size: 11px; font-weight: 400; }
+.mb-source-reader-reading-list a:hover { background: var(--mb-ink-2); }
+.mb-source-reader-reading-list a:focus-visible { outline: 3px solid #F26B1F; outline-offset: 3px; }
 
 .mb-source-reader-loading {
   width: 100%;
@@ -1665,6 +1742,13 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   .mb-source-reader-tools {
     display: none;
   }
+  .mb-source-reader-accounting .mb-source-reader-tools {
+    display: grid;
+  }
+}
+
+.mb-source-reader-accounting .mb-source-reader-paper {
+  max-width: none;
 }
 
 @media (max-width: 640px) {
@@ -1822,3 +1906,19 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   --surface-paper: #202020;
   --surface-soft: #282828;
 }
+
+/* Select menus from approved-ui-runtime portal into a position:relative
+   wrapper appended to <body>. Until the menu is positioned it sits at the
+   bottom of the page, and Base UI focuses the selected option without
+   preventScroll, so opening a long list (Mark Bank's subject picker) scrolled
+   the whole page to the bottom (2026-10-14). Pinning the wrapper to the
+   viewport keeps that first frame on screen; the menu still positions against
+   its trigger. Move this into the private SelectContent source (wrapper
+   position, or positionMethod="fixed") at the next runtime rebuild. */
+.nsu-kobra:has(> .nsu-floating-layer > [data-slot="select-content"]) {
+  position: fixed !important;
+  inset: 0 auto auto 0;
+}
+
+/* Page scroll lock behind modals, readers and drawers (utils/bodyScrollLock.ts). */
+body[data-scroll-lock] { overflow: hidden; }

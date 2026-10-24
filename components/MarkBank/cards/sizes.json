@@ -12,40 +12,40 @@
   "ordinary": 563
  },
  "agricultural-science": {
-  "higher": 438,
-  "ordinary": 431
+  "higher": 1207,
+  "ordinary": 1257
  },
  "business": {
-  "higher": 272,
-  "ordinary": 334
+  "higher": 877,
+  "ordinary": 1111
  },
  "home-economics": {
   "higher": 283,
   "ordinary": 266
  },
  "economics": {
-  "higher": 383,
-  "ordinary": 314
+  "higher": 469,
+  "ordinary": 384
  },
  "construction-studies": {
-  "higher": 255,
-  "ordinary": 250
+  "higher": 735,
+  "ordinary": 526
  },
  "maths": {
   "higher": 413,
   "ordinary": 441
  },
  "english": {
-  "higher": 210,
-  "ordinary": 440
+  "higher": 738,
+  "ordinary": 1947
  },
  "irish": {
   "higher": 215,
   "ordinary": 185
  },
  "art": {
-  "higher": 222,
-  "ordinary": 240
+  "higher": 902,
+  "ordinary": 854
  },
  "geography": {
   "higher": 445,
@@ -75,12 +75,12 @@
   "ordinary": 669
  },
  "french": {
-  "higher": 110,
-  "ordinary": 150
+  "higher": 883,
+  "ordinary": 1237
  },
  "applied-maths": {
-  "higher": 175,
-  "ordinary": 208
+  "higher": 716,
+  "ordinary": 770
  },
  "german": {
   "higher": 111,
@@ -184,10 +184,18 @@
   "ordinary": 238
  },
  "physical-education": {
-  "higher": 125,
-  "ordinary": 96
+  "higher": 382,
+  "ordinary": 390
  },
  "maltese": {
   "higher": 29
+ },
+ "politics-and-society": {
+  "higher": 263,
+  "ordinary": 360
+ },
+ "accounting": {
+  "higher": 721,
+  "ordinary": 644
  }
 }

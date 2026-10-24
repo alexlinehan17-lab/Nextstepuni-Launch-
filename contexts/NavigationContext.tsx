@@ -6,6 +6,7 @@
 import React, { createContext, useContext, useReducer, useCallback, useEffect, useRef } from 'react';
 import { type CategoryType } from '../components/KnowledgeTree';
 import { useAuth } from './AuthContext';
+import { isAuthActionRequest } from '../utils/authActionLink';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -13,7 +14,8 @@ export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
   | 'my-journey' | 'my-direction' | 'study-session' | 'insights'
-  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools';
+  | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools'
+  | 'your-setup';
 
 export type DashboardSection = 'overview' | 'study' | 'confidence' | 'practice' | 'milestones';
 
@@ -43,6 +45,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_CUT_CONTENT' }
   | { type: 'NAVIGATE_TO_ACCREDITATION' }
   | { type: 'NAVIGATE_TO_YEAR_PLANS' }
+  | { type: 'NAVIGATE_TO_YOUR_SETUP' }
   | { type: 'NAVIGATE_TO_WIP_TOOLS' }
   | { type: 'SET_DASHBOARD_SECTION'; section: DashboardSection }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
@@ -67,6 +70,7 @@ interface NavigationContextValue {
   navigateToCutContent: () => void;
   navigateToAccreditation: () => void;
   navigateToYearPlans: () => void;
+  navigateToYourSetup: () => void;
   navigateToWipTools: () => void;
   setDashboardSection: (section: DashboardSection) => void;
   setActiveTool: (tool: string | null) => void;
@@ -80,6 +84,7 @@ const VALID_VIEWS = new Set<string>([
   'dashboard', 'learning-paths', 'onboarding',
   'my-journey', 'my-direction', 'study-session', 'insights',
   'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
+  'your-setup',
 ]);
 
 const VALID_DASHBOARD_SECTIONS = new Set<DashboardSection>([
@@ -99,13 +104,6 @@ const isDashboardSection = (value: unknown): value is DashboardSection => (
   typeof value === 'string' && VALID_DASHBOARD_SECTIONS.has(value as DashboardSection)
 );
 
-const isFirebaseAuthActionRoute = () => {
-  const path = window.location.pathname;
-  const search = window.location.search;
-  return path === '/reset-password'
-    || path.startsWith('/reset-password/')
-    || search.includes('mode=resetPassword');
-};
 
 function serializeToURL(state: NavigationState): string {
   const params = new URLSearchParams();
@@ -190,6 +188,8 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'accreditation', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_YEAR_PLANS':
       return { ...state, viewState: 'year-plans', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'NAVIGATE_TO_YOUR_SETUP':
+      return { ...state, viewState: 'your-setup', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_WIP_TOOLS':
       return { ...state, viewState: 'wip-tools', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'SET_DASHBOARD_SECTION':
@@ -244,11 +244,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       isPopstateRef.current = false;
       return;
     }
-    // Skip URL sync entirely when we're on a Firebase auth action route — the
-    // query params (mode=resetPassword, oobCode, apiKey) carry the reset code
-    // and must survive long enough for ResetPasswordPage to read them.
-    // Re-rewriting the URL from navigation state strips those params.
-    if (typeof window !== 'undefined' && isFirebaseAuthActionRoute()) {
+    // Skip URL sync entirely on a Firebase email action link — the query
+    // params (mode, oobCode, apiKey) carry the one-use code and must survive
+    // long enough for AuthActionPage to read them. Re-rewriting the URL from
+    // navigation state strips those params.
+    if (isAuthActionRequest()) {
       return;
     }
     const url = serializeToURL(state);
@@ -312,7 +312,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       // Seed or normalize the entry in place. This keeps browser Back from
       // resurfacing the retired Training Hub URL or creating a duplicate entry.
-      if (!isFirebaseAuthActionRoute()) {
+      if (!isAuthActionRequest()) {
         window.history.replaceState(
           { ...restoredState, __navSynced: true },
           '',
@@ -422,6 +422,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
+  const navigateToYourSetup = useCallback(() => {
+    navigate({ type: 'NAVIGATE_TO_YOUR_SETUP' });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const navigateToWipTools = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_WIP_TOOLS' });
     window.scrollTo(0, 0);
@@ -464,6 +469,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToCutContent,
     navigateToAccreditation,
     navigateToYearPlans,
+    navigateToYourSetup,
     navigateToWipTools,
     setDashboardSection,
     setActiveTool,
