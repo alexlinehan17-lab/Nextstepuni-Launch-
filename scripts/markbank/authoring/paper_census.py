@@ -566,6 +566,38 @@ def _letters_in_order(subject, letters):
     return sorted(letters, key=lambda c: (run.index(c) if c in run else 99, c))
 
 
+# Printed asks the census reads as too short to be a question, each checked on
+# its page and carded: the paper prints the ask once as a lead-in and then each
+# term, table row or answer box on its own ("Explain the following terms used in
+# genetics:" over "Gene"), so the leaf's own text is just that term. Keyed
+# (subject, year, level, census label) -> (the exact text the census extracts,
+# what the page prints). The empty-leaf flag stands down only while the reader
+# extracts exactly that text: a change in what it reads raises the flag again.
+SHORT_ASKS = {
+    **{('biology', 2020, 'ol', f'Q5({x})'): ('', 'p5: an empty answer box under cell drawing; the ask is Q5\'s '
+                                               'lead-in "Select the cell name from the following list and insert '
+                                               'it into the appropriate box underneath each"')
+       for x in 'abcdefg'},
+    ('biology', 2021, 'ol', 'Q3(b)'): ('Eye', 'Column A row "Eye" of the match-a-structure table; the ask is Q3\'s '
+                                              'lead-in "Choose each structure from the following list"'),
+    ('biology', 2021, 'ol', 'Q3(c)'): ('Lungs', 'Column A row "Lungs" of the same table'),
+    ('biology', 2021, 'ol', 'Q12(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2024, 'hl', 'Q7(c)(i)'): ('Plant', 'the organism "Plant" under "Give one application of genetic '
+                                                   'engineering for each of the following:"'),
+    ('biology', 2025, 'hl', 'Q15(a)(ii)'): ('Niche', 'the term "Niche" under "Explain the following three '
+                                                     'ecological terms:"'),
+    ('biology', 2025, 'ol', 'Q8(b)(iv)'): ('Lipid', 'the biomolecule "Lipid" under "Briefly describe how you tested '
+                                                    'for the presence of the following biomolecules:"'),
+}
+
+
+def short_ask_ok(subject, year, level, flag):
+    """An empty-leaf flag on a printed ask recorded in SHORT_ASKS, read as recorded."""
+    entry = SHORT_ASKS.get((subject, year, level, flag.get('where')))
+    return bool(entry) and flag.get('type') == 'empty-leaf' and flag.get('detail') == f'extracted text: {entry[0]!r}'
+
+
 def continuity_flags(parts, texts, subject=None, continuous=False):
     """Every gap in the numbering, which is where keying bugs surface.
 
@@ -3405,6 +3437,7 @@ def census_subject(subject):
             flags = continuity_flags(
                 parts, texts, subject,
                 continuous=cfg.get('numbering') == 'continuous')
+            flags = [f for f in flags if not short_ask_ok(subject, year, level, f)]
             if cfg.get('walker') == 'history':
                 # A History paper is almost entirely CHOICE: eleven topics are
                 # printed and a candidate answers two. Adding up every printed
