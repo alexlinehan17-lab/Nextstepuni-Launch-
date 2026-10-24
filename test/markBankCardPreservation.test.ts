@@ -1602,9 +1602,9 @@ describe('Mark Bank card preservation', () => {
       ...cards.filter(card => !published.has(card.id)),
       ...bridged.filter(id => /^english-\d{4}-(hl|ol)-/.exec(id)?.[1] === level).map(id => ({ id })),
     ];
-    expect(identityHash(legacyIds(ENGLISH_HIGHER, 'hl')))
+    expect(idHash(legacyIds(ENGLISH_HIGHER, 'hl').map(card => card.id)))
       .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');
-    expect(identityHash(legacyIds(ENGLISH_ORDINARY, 'ol')))
+    expect(idHash(legacyIds(ENGLISH_ORDINARY, 'ol').map(card => card.id)))
       .toBe('9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f');
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(published.has(oldId), `${oldId} is a withdrawn alias`).toBe(false);
