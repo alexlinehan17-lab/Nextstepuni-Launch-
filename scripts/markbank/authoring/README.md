@@ -130,7 +130,17 @@ subject-specific generators.
   answer scores; it never carries an example the scheme did not print. A point
   row that is only a tariff ("Phase named") or that welds several priced
   answers into one string is the same defect. `test/markBankAnswerClarity.test.ts`
-  counts these per subject and must only ever fall.
+  counts these per subject and must only ever fall. Geography rows come from
+  `components/MarkBank/cards/geography/allocation.ts`; French listening,
+  reading and cloze rows from `components/MarkBank/cards/french/answers.ts`,
+  which cuts the lifted `answerGuide` lines at load time (the JSON stays the
+  lifted scheme text). A French card the parser cannot reconcile shows its
+  lines as a list, never as paragraphs, over mark buttons. Irish listening
+  and reading rows come from `components/MarkBank/cards/irish/answers.ts`,
+  which cuts the welded exact guidance at its "= 2 mharc" prices into
+  sub-questions and rows; a scheme excerpt that `irish_cards.py` cut short or
+  started mid-question cannot reconcile and stays prose, so fix the excerpt,
+  not the parser.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

@@ -25,10 +25,12 @@
 import { describe, expect, it } from 'vitest';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
-import frenchListening from '../components/MarkBank/cards/french/listening.json';
-import frenchReading from '../components/MarkBank/cards/french/reading.json';
-import frenchCloze from '../components/MarkBank/cards/french/cloze.json';
+import { FRENCH_LISTENING_CARDS } from '../components/MarkBank/cards/french/listening';
+import { FRENCH_READING_CARDS } from '../components/MarkBank/cards/french/reading';
+import { FRENCH_CLOZE_CARDS } from '../components/MarkBank/cards/french/cloze';
 import irish from '../components/MarkBank/cards/irish/authored.json';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 import politics from '../components/MarkBank/cards/politics-and-society/authored.json';
 import physicalEducation from '../components/MarkBank/cards/physical-education/reviewed.json';
 import art from '../components/MarkBank/cards/art/authored.json';
@@ -110,19 +112,110 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     ]);
   });
 
-  it('French: priced answers still sit in answerGuide prose (to convert)', () => {
+  it('French: every structured card reconciles and lifts its words from the scheme; the rest is pinned by shape', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9àâäéèêëîïôöùûüç’'-]+/g, '');
+    const decks = { listening: FRENCH_LISTENING_CARDS, reading: FRENCH_READING_CARDS, cloze: FRENCH_CLOZE_CARDS };
+    const structured: Record<string, number> = {};
+    for (const [name, deck] of Object.entries(decks)) {
+      structured[name] = 0;
+      for (const card of deck) {
+        const allocation = card.rubric.allocation;
+        if (!allocation) continue;
+        structured[name] += 1;
+        const corpus = (card.rubric.answerGuide ?? []).map(normalise);
+        expect(allocation.rows.length, `${card.id}: no rows`).toBeGreaterThan(0);
+        for (const row of allocation.rows) {
+          expect(row.text.length, `${card.id}: empty row`).toBeGreaterThan(0);
+          expect(corpus.some(line => line.includes(normalise(row.text))), `${card.id}: row "${row.text}" is not lifted`).toBe(true);
+          if (row.part) expect(corpus.some(line => line.includes(normalise(row.part!))), `${card.id}: part "${row.part}" is not lifted`).toBe(true);
+          for (const step of row.steps ?? []) expect(step, card.id).toBeLessThanOrEqual(row.marks);
+        }
+        for (const note of allocation.directions) {
+          expect(corpus.some(line => line.includes(normalise(note))), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
+        }
+        const max = Math.max(0, ...allocation.rows.filter(row => row.marks > 0).map(row => row.marks));
+        if (allocation.ladder) expect(allocation.ladder.at(-1), card.id).toBe(card.totalMarks);
+        else if (allocation.scoring === 'higher-segment-both') expect(max * 2, card.id).toBe(card.totalMarks);
+        else expect(max * allocation.count, card.id).toBe(card.totalMarks);
+      }
+    }
+    expect(structured).toEqual({ listening: 715, reading: 876, cloze: 170 });
+
+    // What is still a list, by shape. Fix a shape and lower its number here.
+    const fallback = FRENCH_READING_CARDS.filter(card => !card.rubric.allocation);
+    const shape = (card: typeof fallback[number]) => {
+      if (card.level === 'higher' && /\bQ6\b/.test(card.questionRef)) return 'HL Q6 opinion: points priced in the general scheme, not on the card';
+      if (card.level === 'ordinary' && /\bQ8\b/.test(card.questionRef)) return 'OL Q8 points: priced in the general scheme, not on the card';
+      return 'other';
+    };
+    const byShape: Record<string, string[]> = {};
+    for (const card of fallback) (byShape[shape(card)] ??= []).push(card.id);
+    expect(Object.fromEntries(Object.entries(byShape).map(([key, ids]) => [key, ids.length]))).toEqual({
+      'HL Q6 opinion: points priced in the general scheme, not on the card': 34,
+      'OL Q8 points: priced in the general scheme, not on the card': 14,
+      other: 1,
+    });
+    // A 2013 line whose bracketed note ends in its own price ("… 4 marks (Minus 1 mark …, e.g. je demande = 3 marks)").
+    expect(byShape.other).toEqual(['fr-2013-ol-reading-a4-q3']);
     const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
-    expect(pricedProseLines(frenchListening, pick)).toBeLessThanOrEqual(BASELINE.frenchListening);
-    expect(pricedProseLines(frenchReading, pick)).toBeLessThanOrEqual(BASELINE.frenchReading);
-    // Cloze prints the gap's answer as "3. organisé" and prices the set once.
-    const clozeAnswers = cardsOf(frenchCloze).filter(card => (card.rubric?.answerGuide ?? []).some(line => /^\d+\.\s+\S/.test(line))).length;
-    expect(clozeAnswers).toBeLessThanOrEqual(BASELINE.frenchClozeCards);
+    expect(pricedProseLines(FRENCH_LISTENING_CARDS.filter(card => !card.rubric.allocation), pick)).toBe(0);
+    expect(pricedProseLines(fallback, pick)).toBeLessThanOrEqual(BASELINE.frenchReading);
+    expect(FRENCH_CLOZE_CARDS.filter(card => !card.rubric.allocation)).toHaveLength(0);
   });
 
-  it('Irish: exact criteria still weld their answers into one bullet (to convert)', () => {
-    const exact = cardsOf(irish).reduce((count, card) =>
-      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0);
-    expect(exact).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
+  it('Irish: listening and reading answers are rows; what is still welded prose is pinned by shape', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9áéíóú’'-]+/g, '');
+    const exact = [...IRISH_HIGHER, ...IRISH_ORDINARY].filter(card =>
+      card.rubric.system === 'irish' && /Cluastuiscint|Léamhthuiscint/.test(card.questionRef));
+    const structured = exact.filter(card => card.rubric.system === 'irish' && card.rubric.criteria[0].allocation);
+    for (const card of structured) {
+      if (card.rubric.system !== 'irish') continue;
+      const criterion = card.rubric.criteria[0];
+      const allocation = criterion.allocation!;
+      const corpus = normalise(criterion.guidance.join(' ') + ' ' + card.questionText);
+      let total = 0;
+      for (const part of allocation.parts) {
+        if (part.prompt) expect(corpus.includes(normalise(part.prompt)), `${card.id}: prompt "${part.prompt.slice(0, 40)}" is not lifted`).toBe(true);
+        expect(part.rows.length, `${card.id}: sub-question without rows`).toBeGreaterThan(0);
+        for (const row of part.rows) {
+          expect(row.text.length, `${card.id}: empty row`).toBeGreaterThan(0);
+          expect(corpus.includes(normalise(row.text)), `${card.id}: row "${row.text.slice(0, 40)}" is not lifted`).toBe(true);
+          expect(row.marks, card.id).toBeLessThanOrEqual(part.tariff);
+        }
+        if (part.ladder) expect(part.ladder.at(-1), card.id).toBe(part.tariff);
+        else expect(Math.max(...part.rows.map(row => row.marks)), card.id).toBeGreaterThan(0);
+        total += part.tariff;
+      }
+      expect(total, `${card.id}: parts add to ${total}`).toBe(criterion.maxMarks);
+      for (const note of allocation.directions) {
+        expect(corpus.includes(normalise(note)), `${card.id}: direction "${note.slice(0, 40)}" is not lifted`).toBe(true);
+      }
+    }
+    expect(exact).toHaveLength(180);
+    expect(structured).toHaveLength(136);
+
+    // What is still prose, by shape. A reading excerpt irish_cards.py cut
+    // short or started mid-question cannot reconcile; fix the excerpt and
+    // lower its number here.
+    const fallback = exact.filter(card => card.rubric.system === 'irish' && !card.rubric.criteria[0].allocation);
+    const shape = (card: typeof fallback[number]) => {
+      if (/Ceist 6\b/.test(card.questionRef)) return 'HL Q6 grammar + literary composite tariff';
+      if (/Léamhthuiscint/.test(card.questionRef)) return 'reading excerpt cut short or started mid-question';
+      return 'listening excerpt cut short';
+    };
+    const byShape: Record<string, number> = {};
+    for (const card of fallback) byShape[shape(card)] = (byShape[shape(card)] ?? 0) + 1;
+    expect(byShape).toEqual({
+      'reading excerpt cut short or started mid-question': 31,
+      'HL Q6 grammar + literary composite tariff': 10,
+      'listening excerpt cut short': 3,
+    });
+    // Every other exact criterion (the 45 Ordinary composition "Tasc" 0/2
+    // tariffs) is already a button; the welded ones above are the residue.
+    const welded = cardsOf(irish).reduce((count, card) =>
+      count + (card.criteria ?? []).filter(criterion => criterion.guidanceKind === 'exact').length, 0)
+      - structured.length;
+    expect(welded).toBeLessThanOrEqual(BASELINE.irishExactCriteria);
   });
 
   it('Politics: bullet answers still sit in a closed details box (to convert)', () => {
@@ -145,12 +238,12 @@ describe('answer clarity: priced answers are rows, not prose', () => {
   });
 });
 
-/** Measured 2026-10-23 on the decks as shipped. Only ever lower these. */
+/** Measured 2026-10-23 on the decks as shipped. Only ever lower these.
+ *  French (2026-10-24): listening and cloze are fully structured; the reading
+ *  number is the priced lines left in the 50 opinion cards above. */
 const BASELINE = {
-  frenchListening: 1778,
-  frenchReading: 2742,
-  frenchClozeCards: 170,
-  irishExactCriteria: 225,
+  frenchReading: 1,
+  irishExactCriteria: 89,
   politicsBulletCards: 215,
   physicalEducationLines: 763,
   artTableCards: 1548,
@@ -159,9 +252,7 @@ const BASELINE = {
 if (process.env.CLARITY_PRINT) {
   const pick = (card: Guided) => [card.rubric?.answerGuide ?? []];
   console.log(JSON.stringify({
-    frenchListening: pricedProseLines(frenchListening, pick),
-    frenchReading: pricedProseLines(frenchReading, pick),
-    frenchCloze: pricedProseLines(frenchCloze, pick),
+    frenchReading: pricedProseLines(FRENCH_READING_CARDS.filter(card => !card.rubric.allocation), pick),
     physicalEducationLines: cardsOf(physicalEducation).reduce((count, card) =>
       count + (card.rubric?.criteria ?? []).flatMap(criterion => criterion.guidance ?? []).filter(line => /:\s*\d+(?:\s*[–-]\s*\d+)?\s*[;.]|\b\d+\s*(?:×|x)\s*\d+\s*marks?|\b\d+\s*\+\s*\d+\s*marks?|\b\d+\s*marks?\b/i.test(line)).length, 0),
   }));

@@ -468,12 +468,13 @@ describe('reviewed French listening tasks', () => {
     const { baseElement } = render(<SessionScreen cards={[first, next]} subjectLabel="French" onGrade={onGrade} onFinish={vi.fn()} onExit={vi.fn()} />);
     expect(baseElement.querySelector('audio')).toHaveAttribute('src', audio[0].source.playbackUrl);
     expect(screen.getAllByRole('radio')).toHaveLength(4);
-    expect(screen.queryByText('• Camping (3rd option) — 5 Marks')).not.toBeInTheDocument();
+    expect(screen.queryByText('Camping (3rd option)')).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole('radio', { name: 'camping' }));
     expect(screen.getByRole('radio', { name: 'camping' })).toBeChecked();
     fireEvent.click(screen.getByRole('button', { name: 'Reveal the marking scheme' }));
-    expect(screen.getByText('• Camping (3rd option) — 5 Marks')).toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText('Response mark'), { target: { value: '5' } });
+    // The scheme's "• Camping (3rd option) — 5 Marks" is a row the student claims, not prose.
+    fireEvent.click(screen.getByRole('button', { name: 'Camping (3rd option) · 5m' }));
+    expect(screen.getByRole('button', { name: 'Camping (3rd option) · 5m' })).toHaveAttribute('aria-pressed', 'true');
     fireEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onGrade).toHaveBeenCalledTimes(1);
     expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ cardId: first.id, marksClaimed: 5, marksAvailable: 5 }));
@@ -491,6 +492,6 @@ describe('reviewed French listening tasks', () => {
     expect(player).toHaveAttribute('src', audio[0].source.playbackUrl);
     fireEvent.error(player);
     expect(screen.getByRole('link', { name: 'Open the SEC recording' })).toHaveAttribute('href', audio[0].source.canonicalUrl);
-    expect(within(container).queryByText('• Camping (3rd option) — 5 Marks')).not.toBeInTheDocument();
+    expect(within(container).queryByText('Camping (3rd option)')).not.toBeInTheDocument();
   });
 });

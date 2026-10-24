@@ -14,6 +14,7 @@ import type {
   SecRubricCard,
 } from '../../../../types/markBank';
 import authored from './authored.json';
+import { irishAnswersFor } from './answers';
 
 type IrishLevel = 'higher' | 'ordinary';
 
@@ -39,12 +40,22 @@ interface AuthoredIrishCard {
 
 const DATA = authored.cards as AuthoredIrishCard[];
 
-const cloneCriteria = (criteria: IrishCriterion[]): IrishCriterion[] =>
-  criteria.map(criterion => ({
-    ...criterion,
-    permittedMarks: [...criterion.permittedMarks],
-    guidance: [...criterion.guidance],
-  }));
+/** Listening and reading cards carry the scheme's exact answers; cut them
+ *  into rows where the parts add up to the criterion (cards/irish/answers.ts). */
+const EXACT_ANSWER_CARD = /Cluastuiscint|Léamhthuiscint/;
+
+const cloneCriteria = (card: AuthoredIrishCard): IrishCriterion[] =>
+  card.criteria.map(criterion => {
+    const allocation = criterion.guidanceKind === 'exact' && EXACT_ANSWER_CARD.test(card.questionRef)
+      ? irishAnswersFor({ id: card.id, totalMarks: criterion.maxMarks, questionRef: card.questionRef, questionText: card.questionText, guidance: criterion.guidance })
+      : undefined;
+    return {
+      ...criterion,
+      permittedMarks: [...criterion.permittedMarks],
+      guidance: [...criterion.guidance],
+      ...(allocation ? { allocation } : {}),
+    };
+  });
 
 const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   id: card.id,
@@ -79,7 +90,7 @@ const makeCard = (card: AuthoredIrishCard): SecRubricCard => ({
   rubric: {
     system: 'irish',
     taskRequirements: [...card.taskRequirements],
-    criteria: cloneCriteria(card.criteria),
+    criteria: cloneCriteria(card),
     markingGuideNote: card.markingGuideNote,
   },
 });

@@ -12,7 +12,7 @@
  * says so: the card never carries an example the scheme did not print.
  */
 import React from 'react';
-import type { GeographyAllocationGroup, GeographyAnswerRow, GeographyCriterion, GeographySrpAllocation } from '../../types/markBank';
+import type { GeographyAllocationGroup, GeographyCriterion, GeographySrpAllocation } from '../../types/markBank';
 import {
   geographyPooledSrps,
   geographyRowScoreId,
@@ -20,6 +20,7 @@ import {
   type GeographyScoreId,
   type GeographyScores,
 } from './geographyScoring';
+import { ClaimDirections, ClaimPart, ClaimRow, marksChip } from './ClaimRows';
 import './geography-allocation.css';
 
 interface Props {
@@ -28,61 +29,7 @@ interface Props {
   onScore: (id: GeographyScoreId, marks: number) => void;
 }
 
-const Tick: React.FC = () => (
-  <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-    <path d="M2.5 6.2l2.4 2.4L9.5 3.9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-);
-
 const NO_PRINTED_ANSWER = 'The scheme prints no answer here: any correct one earns the marks.';
-
-const AnswerRow: React.FC<{
-  row: GeographyAnswerRow;
-  claimed: number;
-  onClaim: (marks: number) => void;
-}> = ({ row, claimed, onClaim }) => {
-  const steps = row.steps;
-  const isClaimed = claimed > 0;
-  if (steps) {
-    return (
-      <div className="mb-geo-row mb-geo-row--stepped" data-claimed={isClaimed}>
-        <span className="mb-geo-row-text">
-          <span dir="auto">{row.text}</span>
-          {row.tariffOnly && <small>{NO_PRINTED_ANSWER}</small>}
-        </span>
-        <span className="mb-geo-steps" role="group" aria-label={`Marks for ${row.text}`}>
-          {steps.map(step => (
-            <button
-              key={step}
-              type="button"
-              aria-pressed={claimed === step}
-              aria-label={`${claimed === step ? 'Clear' : 'Claim'} ${step} marks for ${row.text}`}
-              onClick={() => onClaim(claimed === step ? 0 : step)}
-            >
-              {step}m
-            </button>
-          ))}
-        </span>
-      </div>
-    );
-  }
-  return (
-    <button
-      type="button"
-      className="mb-geo-row"
-      data-claimed={isClaimed}
-      aria-pressed={isClaimed}
-      onClick={() => onClaim(isClaimed ? 0 : row.marks)}
-    >
-      <span className="mb-geo-check" aria-hidden="true">{isClaimed && <Tick />}</span>
-      <span className="mb-geo-row-text">
-        <span dir="auto">{row.text}</span>
-        {row.tariffOnly && <small>{NO_PRINTED_ANSWER}</small>}
-      </span>
-      <span className="mb-geo-chip">{row.marks}m</span>
-    </button>
-  );
-};
 
 const SrpCounter: React.FC<{
   srp: GeographySrpAllocation;
@@ -99,7 +46,7 @@ const SrpCounter: React.FC<{
   const label = srp.label || 'Significant Relevant Points';
   return (
     <div className="mb-geo-srp" data-claimed={count > 0}>
-      <span className="mb-geo-row-text">
+      <span className="mb-claim-text">
         <span>{label}</span>
         <small>{caption}. One SRP is one valid point that emerges from a coherent answer.</small>
       </span>
@@ -108,7 +55,7 @@ const SrpCounter: React.FC<{
         <output aria-live="polite">{count}</output>
         <button type="button" aria-label={`One more SRP for ${label}`} disabled={!canAdd} onClick={() => onCount(Math.min(max, count + 1))}>+</button>
       </span>
-      <span className="mb-geo-chip">{count * srp.marks}m</span>
+      <span className="mb-claim-chip">{marksChip(count * srp.marks)}</span>
     </div>
   );
 };
@@ -125,7 +72,20 @@ export default function GeographyAllocationPanel({ criterion, scores, onScore }:
       )}
       {group.rows.map(row => {
         const id = geographyRowScoreId(criterion.id, row.id, unit);
-        return <AnswerRow key={id} row={row} claimed={scores[id] ?? 0} onClaim={marks => onScore(id, marks)} />;
+        const claimed = scores[id] ?? 0;
+        return (
+          <ClaimRow
+            key={id}
+            text={row.text}
+            marks={row.marks}
+            steps={row.steps}
+            claimed={claimed > 0}
+            value={claimed}
+            note={row.tariffOnly ? NO_PRINTED_ANSWER : undefined}
+            onToggle={() => onScore(id, claimed > 0 ? 0 : row.marks)}
+            onStep={step => onScore(id, claimed === step ? 0 : step)}
+          />
+        );
       })}
       {group.srp.map(srp => {
         const id = geographySrpScoreId(criterion.id, srp.id, unit);
@@ -145,25 +105,13 @@ export default function GeographyAllocationPanel({ criterion, scores, onScore }:
       )}
       {allocation.groups.map((group, index) => (
         <section className="mb-geo-group" key={`${group.part ?? ''}-${index}`} aria-label={group.prompt ?? group.part ?? `Part ${index + 1}`}>
-          {(group.part || group.prompt) && (
-            <h4 className="mb-geo-prompt">
-              {group.part && <span className="mb-geo-part">{group.part}</span>}
-              {group.prompt && <span>{group.prompt}</span>}
-            </h4>
-          )}
+          {(group.part || group.prompt) && <ClaimPart label={group.part} prompt={group.prompt} />}
           {group.repeat
             ? Array.from({ length: group.repeat.count }, (_, index) => renderUnit(group, index + 1))
             : renderUnit(group, undefined)}
         </section>
       ))}
-      {allocation.directions.length > 0 && (
-        <aside className="mb-geo-directions">
-          <strong>Examiner directions</strong>
-          <ul>
-            {allocation.directions.map((note, index) => <li key={index}>{note}</li>)}
-          </ul>
-        </aside>
-      )}
+      <ClaimDirections notes={allocation.directions} />
     </div>
   );
 }
