@@ -14,6 +14,8 @@ export const CARD_ID_ALIASES: Readonly<Record<string, string>> = {
   "chem-2022-hl-q5-d": "chem-2022-hl-q5-d-i",
   "chem-2022-hl-q8-b-iv": "chem-2022-hl-q8-b-ii",
   "chem-2022-hl-q8-b-vi": "chem-2022-hl-q8-b-ii",
+  "chem-2022-ol-q1-a-ii-iii": "chem-2022-ol-q1-a",
+  "chem-2022-ol-q7-b-2": "chem-2022-ol-q7-b-1",
   "chem-2023-hl-q11-b-iv-vi": "chem-2023-hl-q11-b-fig",
   "chem-2023-hl-q11-c-v": "chem-2023-hl-q11-c-fig",
   "chem-2023-hl-q3-c-i": "chem-2023-hl-q3-c-fig",

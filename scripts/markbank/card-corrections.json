@@ -208,6 +208,16 @@
    "reason": "The scheme prices Q8(b)(ii)-(vii) with one cell ([(2 × 6) + (4 × 3) + 2]); carded once, as chem-2022-hl-q8-b-ii.",
    "drop": true,
    "replacementId": "chem-2022-hl-q8-b-ii"
+  },
+  "chem-2022-ol-q1-a-ii-iii": {
+   "reason": "The scheme prices Q1(a)(i)-(iii) with one cell ([11 + 6 + 6 + 2 + 2 + 2]), so they are one task; carded once, as chem-2022-ol-q1-a.",
+   "drop": true,
+   "replacementId": "chem-2022-ol-q1-a"
+  },
+  "chem-2022-ol-q7-b-2": {
+   "reason": "Duplicated chem-2022-ol-q7-b-1 (both cited Q7(b), which the scheme prices with one cell, (4 × 6) + (3 × 2)).",
+   "drop": true,
+   "replacementId": "chem-2022-ol-q7-b-1"
   }
  },
  "biology": {

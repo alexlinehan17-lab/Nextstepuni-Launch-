@@ -1,0 +1,16 @@
+[
+ {"id": "chem-2022-ol-q1-a", "ask": "", "answer": "collection over water / collection in gas syringe", "figure": true, "solution": true},
+ {"id": "chem-2022-ol-q1-b", "ask": "was the base added to the conical flask", "answer": "colourless / pale yellow", "figure": true},
+ {"id": "chem-2022-ol-q2-b", "ask": "Describe how all the sodium carbonate solution in the beaker was transferred", "answer": "add rinsings of beaker to flask"},
+ {"id": "chem-2022-ol-q2-f", "ask": "Calculate the concentration, in moles per litre, of the HCl solution used.", "answer": "0.124 moles HCl per litre", "solution": true},
+ {"id": "chem-2022-ol-q3-a", "ask": "Explain how the catalyst could have been added", "answer": "rotate flask so combine catalyst with solution", "solution": true},
+ {"id": "chem-2022-ol-q5-c-i-ii", "ask": "in the main energy levels in an atom of sodium,", "answer": "1 / 3s¹"},
+ {"id": "chem-2022-ol-q6-b", "ask": "Give the IUPAC names for compounds A, C and E.", "answer": "E: methylbenzene", "figure": true},
+ {"id": "chem-2022-ol-q6-f-i", "ask": "Draw the structural formula for the second member", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2022-ol-q7-b-1", "ask": "Write in your answerbook the omitted term", "answer": "F increases"},
+ {"id": "chem-2022-ol-q9-a", "ask": "Describe how you could carry out a flame test", "answer": "confirms sodium salt", "solution": true},
+ {"id": "chem-2022-ol-q10-a-iv-vi", "ask": "Define radioactivity.", "answer": "electron / negative particle with very small mass"},
+ {"id": "chem-2022-ol-q10-b-iii", "ask": "Write the equilibrium constant (Kc) expression for this reaction.", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2022-ol-q11-b-iv", "ask": "Name the law you used to calculate your answer.", "answer": "combined (general) gas law", "solution": true},
+ {"id": "chem-2022-ol-q11-c-iii", "ask": "State what material acts as the stationary phase", "answer": "paper and water", "figure": true}
+]

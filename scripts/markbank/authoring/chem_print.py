@@ -201,7 +201,7 @@ def read_lines(path, first=1, last=None):
                 text = re.sub(r'[_^]\(([^0-9A-Za-z]+)\)', r'\1', text)
                 if not text:
                     continue
-                if ln['bbox'][1] > 770 and FOOTER.match(text):
+                if ln['bbox'][1] > 765 and FOOTER.match(text):
                     continue
                 # The schemes set worked arithmetic in an equation font, not in
                 # bold: it is answer text all the same.
@@ -283,13 +283,23 @@ MISPRINTED = []
 # is not reprinted, so every line under a part that is not a marker is answer.
 QUESTION_HEAD = re.compile(r'^QUESTION\s+(\d{1,2})\b\.?\s*$', re.I)
 CUE_WORD = r"[A-Z]{2,}[A-Z’']*"
-CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)\s*:\s*')
+CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)(?:,\s*etc)?\s*:\s*')
 TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define|Write|Give|Draw|'
                        r'How|Why|What|Find|Show|List|Outline|Deduce|Distinguish)\s*:\s*')
-ANY_CELL = re.compile(r'^ANY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX)\s*:?\s*(\(.+\))\s*$', re.I)
+ANY_CELL = re.compile(r'^ANY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX)(?:\s+POINTS(?:\s+FROM\s+TABLE)?)?'
+                      r'\s*:?\s*([\(\[].+[\)\]])\s*$', re.I)
+# A cell the 2022 Ordinary scheme labels with its count of points: "SIX POINTS:
+# [11 + 6 + 6 + 2 + 2 + 2]", "FOUR POINTS: (9 + 9 + 4 + 4)".
+POINTS_CELL = re.compile(r'^(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT)\s+POINTS\s*:\s*([\(\[].+[\)\]])\s*$')
+
+
+def any_bracket_cell(t):
+    """A cell in round or square brackets, as the square cell the reader keys on."""
+    t = t.strip()
+    return as_cell('(' + t[1:-1].strip() + ')') if t.startswith('[') else as_cell(t)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
-FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)\s*BALANCING:\s*\((\d{1,2})\)$')
+FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\),?\s*BALANCING:\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
@@ -315,6 +325,8 @@ def cue_lines(lines):
     to a row of its own. The scheme's outline pages (the tariffs listed
     question by question) are left out: they are a summary, not the scheme."""
     outline = {l.page for l in lines if OUTLINE_PAGE.match(l.text)}
+    margin = [(m.page, m.y0) for m in lines if m.x0 > 480
+              and (ROUND_CELL.match(m.text.strip()) or MARK_CELL.match(m.text.strip()))]
     out = []
     zones = []                       # (page, y0, x): later text on this row starts a new row
 
@@ -336,7 +348,13 @@ def cue_lines(lines):
             y0, y1 = shifted(l)
             out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[any {m.group(1).lower()}]', False))
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
-                            '[' + m.group(2).strip()[1:-1] + ']', True))
+                            any_bracket_cell(m.group(2)), True))
+            continue
+        m = POINTS_CELL.match(t)
+        if m and l.x0 > 350:
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
+                            any_bracket_cell(m.group(2)), True))
             continue
         m = PARTS_CELL.match(t)
         if m and l.x0 > 350:
@@ -410,6 +428,8 @@ def cue_lines(lines):
             zones.append((l.page, l.y0, l.x0 + 1))
             continue
         m = TRAILING_ROUND.search(t)
+        if m and any(pg == l.page and abs(y - l.y0) <= 5.0 for pg, y in margin):
+            m = None                 # the row's cell is at the margin: "F: 3.98 (4)" is the answer's
         if m and m.start() > 0:
             out.append(Line(l.page, (x, y0, l.x1 - 20, y1), t[:m.start()], l.bold, l.math))
             out.append(Line(l.page, (max(l.x1 - 20, 481), y0, l.x1, y1),
@@ -970,10 +990,15 @@ class Printed:
         # "(3)", at the same right margin the 2026 schemes print "[3]" at.
         # Read there, and only there, they are the same cell.
         lines = []
+        margin = [(m.page, m.y0) for m in self.scheme_lines
+                  if m.x0 > 480 and ROUND_CELL.match(m.text)]
         for l in self.scheme_lines:
             if (l.x0 > 480 or l.bold) and ROUND_CELL.match(l.text):
                 l.text = as_cell(l.text)
-            elif l.bold and l.x0 < 480:
+            elif l.bold and l.x0 < 480 and not any(
+                    pg == l.page and abs(y - l.y0) <= 5.0 for pg, y in margin):
+                # (Not where the row has its cell at the margin: then a bracket
+                # ending the answer is the answer's, "F: 3.98 (4)", 2022 OL.)
                 # Where a diagram takes the right margin the scheme sets the
                 # cell at the end of the answer itself: "occupy singly (3)".
                 m = TRAILING_ROUND.search(l.text)
@@ -1725,6 +1750,10 @@ class Cards:
         if not cells:
             raise Refused(f'{key}: no mark cell for a drawn answer')
         asides = [a for it in its for a in it.asides]
+        # Asides set two to a line ("[n acceptable for 2][Allow end bonds shown
+        # or not shown.]", 2022 OL Q11(d)B(iv)) reach here as the item's words.
+        asides += [it.text for it in its
+                   if re.fullmatch(r'(\s*\[[^\[\]]*\]\.?)+\s*', it.text)]
         ask = self.drawn_ask(key)
         total = sum(mark_value(c) for c in cells)
         note = ' '.join(x for x in [
