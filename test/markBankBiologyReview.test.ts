@@ -16,12 +16,15 @@ import { CARDS as BIO_ORDINARY } from '../components/MarkBank/cards/biology/ordi
 import audit from '../scripts/markbank/authored/biology-review-audit.json';
 import { createHash } from 'node:crypto';
 import { tariffReconciles } from '../types/markBank';
+import { PAPER_TOPIC_TAGS } from '../data/paperTrail/topicTags';
+import { curriculumNodeIdsForExamTopic, examTopicIdsForQuestion } from '../data/examTopics/registry';
+import { questionsForTopics } from '../components/PaperTrail/topics';
 
 type Task = { id: string; questionRef: string; total: number; route: string | null;
   status: 'carded' | 'excluded' | 'verified' | 'corrected' | 'added' };
 type Correction = { id: string; changed: string[]; fieldsBefore: Record<string, unknown> };
 type Sitting = { tasks: Task[]; cardCount: number; baseTaskCount: number;
-  routes: Record<string, string[]>;
+  routes: Record<string, string[]>; questionTotals: Record<string, number>; figures: string[];
   review?: { baselineCommit: string; verified: string[]; corrected: Correction[]; added: string[];
     retained: Array<{ id: string; reason: string }>;
     withdrawn: Record<string, { replacementId: string; reason: string }> };
@@ -1712,7 +1715,136 @@ describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
   });
 });
 
+const hl18 = sittings['2018-hl'];
+const higher2018 = BIO_HIGHER.filter(card => card.year === 2018) as unknown as ReviewedCard[];
+const hl18ById = new Map(higher2018.map(card => [card.id, card]));
+
+describe('Biology 2018 Higher — carded from a paper-by-paper review', () => {
+  it('ships every carded task, and nothing else, for the sitting', () => {
+    expect(hl18.baseTaskCount).toBe(137);
+    expect(hl18.cardCount).toBe(143);
+    expect(higher2018).toHaveLength(143);
+    expect(new Set(hl18.tasks.map(task => task.id))).toEqual(new Set(hl18ById.keys()));
+    expect(hl18.tasks.every(task => task.status === 'carded')).toBe(true);
+    expect(hl18.review).toBeUndefined();
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(hl18.sources.paper.sha256)
+      .toBe('db8bc21dffed971869311c1abf978c023b8a6e2ea4eda5d50ccf183b2a23ffd5');
+    expect(hl18.sources.scheme.sha256)
+      .toBe('61d87b1be7544b7fda5671c4eddf5311c9ef0f3558a901d49591a2eead57c6e5');
+    expect([hl18.sources.paper.pages, hl18.sources.scheme.pages]).toEqual([16, 24]);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const card of higher2018) {
+      const task = hl18.tasks.find(t => t.id === card.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('cards every response of an ordered split at its first rate', () => {
+    // Every tariff in the 2018 scheme is an ordered split ("2(5) + 5(2)"):
+    // each response is carded at the ladder's first rate, so a question's
+    // cards add to more than its printed total, and the ladder makes the total.
+    const first = new Map(Object.entries(hl18.routes).map(([part, options]) => [part, options[0]]));
+    const totals = new Map<number, number>();
+    for (const task of hl18.tasks) {
+      const part = task.questionRef.replace('2018 HL ', '').split(' — ')[0];
+      if (task.route && first.get(part) !== task.route) continue;   // one route per pool
+      const q = Number(/ Q(\d+)/.exec(task.questionRef)![1]);
+      totals.set(q, (totals.get(q) ?? 0) + task.total);
+    }
+    expect(totals.get(1)).toBe(24);   // best five of six parts at 4
+    for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(35);   // seven responses at 5
+    for (const q of [7, 8, 9]) expect(totals.get(q), `Q${q}`).toBe(40);   // (a) two at 4, (b) eight at 4
+    expect([10, 11, 12, 13, 14, 15].map(q => totals.get(q))).toEqual([97, 88, 98, 97, 138, 150]);
+    expect(hl18.questionTotals).toMatchObject({ 1: 20, 2: 20, 7: 30, 10: 60, 14: 90, 15: 90 });
+    expect(higher2018.filter(card => (card as unknown as { tariffModel: { kind: string } }).tariffModel.kind
+      === 'orderedSplit').length).toBeGreaterThan(100);
+  });
+
+  it('links each card to the one booklet of the sitting', () => {
+    for (const card of higher2018) expect(card.paperFileid, card.id).toBe('LC025ALP000EV');
+  });
+
+  it('splits only the choices the scheme marks differently per option', () => {
+    expect(hl18.routes).toEqual({
+      'Q5(c)(i)': ['shoot', 'root'],
+      'Q5(c)(ii)': ['shoot', 'root'],
+      'Q10(c)(i)': ['moving-animals', 'sessile-animals'],
+      'Q13(c)(iii)': ['fossils', 'embryology', 'anatomy', 'biochemistry'],
+    });
+    for (const part of Object.keys(hl18.routes)) {
+      const routes = higher2018.filter(card => card.questionRef.startsWith(`2018 HL ${part} — `));
+      expect(routes, part).toHaveLength(hl18.routes[part].length);
+      expect(new Set(routes.map(card => card.questionText)).size, part).toBe(1);
+    }
+  });
+
+  it('gives a printed term too short to stand its own lead-in', () => {
+    // "Niche." and "2. Axon" are below the build's floor on their own.
+    expect(hl18ById.get('bio-2018-hl-q2-e')!.questionText)
+      .toBe('From your knowledge of ecology, explain the following terms:\nNiche.');
+    expect(hl18ById.get('bio-2018-hl-q11-c-i-2')!.questionText)
+      .toBe('Outline the role of each of the following in the transmission of a nerve impulse:\n2. Axon');
+    expect(hl18ById.get('bio-2018-hl-q2-b')!.questionText).toBe('Habitat.');
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bshown below\b/i;
+    for (const card of higher2018) {
+      const text = `${card.stem ?? ''} ${card.questionText}`;
+      if (pointsAtPrint.test(text)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+    expect(hl18.figures).toHaveLength(6);
+  });
+});
+
 describe('Biology — every deck', () => {
+  it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {
+    // The Atlas audit: a card's question (its year, level, booklet and printed
+    // number) is an Atlas question; one of that question's Atlas topics holds
+    // the card's curriculum node; and the question is listed under each such
+    // topic. The ledgers' ATLAS_UNIT_EQUIV files the outgoing syllabus's
+    // practical-skills node bio-u1 under the Atlas's investigating-in-science
+    // node bio-u2.
+    const EQUIV: Record<string, string> = { 'bio-u1': 'bio-u2' };
+    const papers = PAPER_TOPIC_TAGS.filter(paper => paper.subjectId === 'biology' && paper.lang === 'ev');
+    const listed = new Map<string, Set<string>>();
+    const under = (topic: string) => {
+      if (!listed.has(topic)) {
+        listed.set(topic, new Set(questionsForTopics('biology', [topic]).filter(q => q.lang === 'ev')
+          .map(q => `${q.year}|${q.level}|${q.paperKey}|${q.fileid}|${q.n}`)));
+      }
+      return listed.get(topic)!;
+    };
+    const missing: string[] = [];
+    const cards = [...BIO_HIGHER, ...BIO_ORDINARY];
+    for (const card of cards) {
+      const n = /Q(\d+)/.exec(card.questionRef)![1];
+      const fileid = `${card.paperFileid}.pdf`;
+      const paper = papers.find(p => p.year === card.year && p.level === card.level && p.fileid === fileid);
+      if (!paper) { missing.push(`${card.id}: no Atlas paper ${fileid}`); continue; }
+      const filed = examTopicIdsForQuestion('biology', card.level as 'higher' | 'ordinary', card.year, 'main', n,
+        paper.paperKey, 'ev', fileid);
+      const node = EQUIV[card.topicId] ?? card.topicId;
+      const holding = filed.filter(topic => curriculumNodeIdsForExamTopic(topic).includes(node));
+      if (!holding.length) { missing.push(`${card.id}: ${card.topicId} under none of Q${n}'s ${filed.join(', ')}`); continue; }
+      for (const topic of holding) {
+        if (!under(topic).has(`${card.year}|${card.level}|${paper.paperKey}|${fileid}|${n}`)) {
+          missing.push(`${card.id}: Q${n} not listed under ${topic}`);
+        }
+      }
+    }
+    expect(missing).toEqual([]);
+    expect(cards.length).toBe(BIO_HIGHER.length + BIO_ORDINARY.length);
+  });
+
   it('never writes a tariff where a criterion row should be', () => {
     // build-deck refuses a criterion row as tariff prose only when the
     // content-free test refuses it too (Construction ships the scheme's "Any 7

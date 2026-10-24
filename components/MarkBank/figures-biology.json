@@ -1,4 +1,124 @@
 {
+ "biology-2018-hl-q10a-i-chain": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q10a-i-chain.png",
+  "md5": "a24e569f43f83017dd1c7e7ce30a9bd8",
+  "alt": "Part (a)(i) as printed: \"Draw a pyramid of numbers to represent the information in the food chain below.\" Below it the chain Rose bush, Caterpillars, Blackbirds, Hawk, joined by arrows.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q10(a)(i)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   100,
+   118,
+   545,
+   168
+  ]
+ },
+ "biology-2018-hl-q13-table": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q13-table.png",
+  "md5": "fdfec32e0503200352493776250e492c",
+  "alt": "Table with two columns, Parental Cross and F1 Phenotype: Round x Wrinkled Seeds, All Round; Yellow x Green Seeds, All Yellow; Purple x White Flowers, All Purple; Tall x Dwarf Plants, All Tall.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q13(b)(i) — Law of Independent Assortment",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   148,
+   213,
+   442,
+   314
+  ]
+ },
+ "biology-2018-hl-q14a-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q14a-graph.png",
+  "md5": "1b9b4de24b0d8c886daa350f564405fd",
+  "alt": "Graph of dry mass (g) against time (weeks), 1 to 4: the line falls a little at first to a low point before week 1, then rises steadily to a peak between weeks 3 and 4 and turns down slightly.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q14(a)(v)1",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   225,
+   292,
+   420,
+   446
+  ]
+ },
+ "biology-2018-hl-q3-cell-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q3-cell-cycle.png",
+  "md5": "03051f5b8cd34c467cdb43e0a7358d96",
+  "alt": "Circle divided into two sectors, a large one labelled X and a smaller wedge labelled Y, with a curved arrow at the centre.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q3(a)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   204,
+   86,
+   401,
+   280
+  ]
+ },
+ "biology-2018-hl-q6-nephron": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q6-nephron.png",
+  "md5": "689e99d6067d72ae396b60a40ccf02a6",
+  "alt": "Drawing of a nephron and its blood supply, with label lines X and Y, and an empty box labelled Target area below it.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q6(a) — X",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   160,
+   55,
+   385,
+   332
+  ]
+ },
+ "biology-2018-hl-q8b-iv-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2018-hl-q8b-iv-axes.png",
+  "md5": "ebb714490bba9869ef436e87ae352061",
+  "alt": "Part (iv) as printed: \"Label the axes below, and sketch a graph to show how the rate of photosynthesis would change as your chosen factor varied over a wide range.\" Below it a pair of empty axes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 HL Q8(b)(iv)",
+  "year": 2018,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2018 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   100,
+   444,
+   545,
+   666
+  ]
+ },
  "biology-2019-hl-q11-pedigree": {
   "src": "/exam-figures/biology/markbank/biology-2019-hl-q11-pedigree.png",
   "md5": "05384953069bc259c0c49c072dbee7f0",

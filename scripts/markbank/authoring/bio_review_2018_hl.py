@@ -241,7 +241,11 @@ TASKS = [
          ('Biuret or copper sulfate and sodium hydroxide',), 'test-for-protein',
          'Name of test or chemicals used to demonstrate the presence of protein:')]
 ] + [
-    T(f'2{x}', f'Q2({x})', 'A', term(2, word), [pt(S(*ans), 5)], 'bio-3-1', concept, SQ(6, sq), 5, stem=[Q2])
+    # "Niche." alone is too short a question to stand (the build's floor is
+    # eight characters), so that one card carries the printed lead-in in its
+    # question text instead of its stem.
+    T(f'2{x}', f'Q2({x})', 'A', [Q2, term(2, word, br=True)] if len(word) < 8 else term(2, word),
+      [pt(S(*ans), 5)], 'bio-3-1', concept, SQ(6, sq), 5, stem=[] if len(word) < 8 else [Q2])
     for x, word, ans, concept, sq in [
         ('a', 'Biotic factor.', ('Living (factor)',), 'biotic-factor', 'Biotic factor:'),
         ('b', 'Habitat.', ('Where an organism (or a plant or an animal) lives [allow plurals]',), 'habitat',
@@ -531,8 +535,13 @@ TASKS = [
             'blood in the artery or systolic and diastolic pressures'), 3)], 'bio-2-6', 'blood-pressure',
       SQ(13, 'What is measured when a person’s blood pressure is taken:'), 3),
 ] + [
-    T(f'11ci{n}', f'Q11(c)(i){n}', 'C', item(11, n, end, 'in the transmission of a nerve impulse:'),
-      [pt(S(*ans), 5)], 'bio-2-4', concept, SQ(14, sq), 5, stem=[Q11C, Q11CI], decision=EACH_ITEM)
+    # "2. Axon" alone is too short a question to stand, so that card carries the
+    # printed "Outline the role of each ..." line in its question text.
+    T(f'11ci{n}', f'Q11(c)(i){n}', 'C',
+      [Q11CI, item(11, n, end, 'in the transmission of a nerve impulse:')] if len(end) < 6
+      else item(11, n, end, 'in the transmission of a nerve impulse:'),
+      [pt(S(*ans), 5)], 'bio-2-4', concept, SQ(14, sq), 5,
+      stem=[Q11C] if len(end) < 6 else [Q11C, Q11CI], decision=EACH_ITEM)
     for n, end, ans, concept, sq in [
         (1, 'Dendrites', ('Receive impulses or carry impulses towards cell body',), 'dendrites', 'Role of dendrites:'),
         (2, 'Axon', ('Carries impulses away from cell body or carries impulses to effector (or named', 'example)'),
