@@ -29,21 +29,24 @@ describe('French writing presentation', () => {
     fireEvent.click(within(screen.getByRole('dialog')).getByRole('button', { name: /close/i }));
     fireEvent.click(screen.getByRole('button', { name: /reveal/i }));
     expect(screen.getByText(/Psychology and Law/)).toBeInTheDocument();
-    expect(screen.getByText('Accepted answers and partial credit')).toBeInTheDocument();
-    fireEvent.change(screen.getByLabelText('Response mark'), { target: { value: '2' } });
-    expect(screen.getByLabelText('Response mark')).toHaveValue('2');
+    // The scheme's answers are rows with their marks, not a paragraph over a dropdown.
+    expect(screen.getByRole('button', { name: 'Psychology and Law · 4m' })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Psychology · 2m' }));
+    expect(screen.getByRole('button', { name: 'Psychology · 2m' })).toHaveAttribute('aria-pressed', 'true');
     expect(screen.getAllByText('2 / 4').length).toBeGreaterThan(0);
+    // One answer asked: the other rows wait until this claim is cleared.
+    expect(screen.getByRole('button', { name: 'Law · 2m' })).toBeDisabled();
   });
   it('renders the actual language bands and an explicit attempt control for the form', () => {
     const card = cards.find(c => c.id === 'fr-2026-ol-writing-b1b-route-6789')! as SecRubricCard & { rubric: FrenchRubric };
     const onScore = vi.fn();
     const { rerender } = render(<FrenchRubricPanel card={card} scores={{}} onScore={onScore} />);
-    expect(screen.getByLabelText('Language mark')).toBeDisabled();
+    expect(screen.getByRole('button', { name: 'Set Language to 8 marks' })).toBeDisabled();
     fireEvent.click(screen.getByRole('button', { name: 'Confirm a communicative task was attempted' }));
     expect(onScore).toHaveBeenCalledWith(FRENCH_ATTEMPT_ID, 1);
     rerender(<FrenchRubricPanel card={card} scores={{ [FRENCH_ATTEMPT_ID]: 1 }} onScore={onScore} />);
-    expect(screen.getByLabelText('Language mark')).toBeEnabled();
-    fireEvent.change(screen.getByLabelText('Language mark'), { target: { value: '8' } });
+    expect(screen.getByRole('button', { name: 'Set Language to 8 marks' })).toBeEnabled();
+    fireEvent.click(screen.getByRole('button', { name: 'Set Language to 8 marks' }));
     expect(onScore).toHaveBeenCalledWith('french:language', 8);
     expect(screen.getByText('Top · 6–8 marks')).toBeInTheDocument();
     expect(screen.queryByText(/PCLM/)).not.toBeInTheDocument();

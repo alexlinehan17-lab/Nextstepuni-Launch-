@@ -841,11 +841,49 @@ export interface FrenchCriterion {
   requiresAttempt?: boolean;
 }
 
+/** One answer of a French listening, reading or cloze scheme, cut from a
+ * lifted `answerGuide` line by cards/french/answers.ts. The text is the
+ * scheme's own words without the list marker and the price. */
+export interface FrenchAnswerRow {
+  id: string;
+  text: string;
+  /** Marks the row earns when claimed; negative for a printed deduction
+   * ("➢ Incorrect year = -1 Mark"); 0 for an answer the scheme prices at 0. */
+  marks: number;
+  /** A row the student places at one of several printed values (cloze: 3, or
+   * 2 after the scheme's careless-transcription deduction). */
+  steps?: number[];
+  /** A dash or asterisk line: the scheme's partial-credit alternative. */
+  partial?: boolean;
+  /** The sub-part heading the scheme prints over this row ("(a)", "(ii) Restaurant"). */
+  part?: string;
+}
+
+/** A French card's scheme cut into claimable rows. */
+export interface FrenchAllocation {
+  /** How many answers the task asks for: at most this many positive rows count. */
+  count: number;
+  rows: FrenchAnswerRow[];
+  /** A list the scheme prices by how many are right ("Any two of the following,
+   * award 5 Marks / Any one … 3 Marks"; "Two correct answers needed for 8 marks
+   * (7+1)"): marks for 1..count ticked rows. The rows then carry no price. */
+  ladder?: number[];
+  /** The aural rule printed for named tasks: where less than full marks is
+   * achieved in either segment, the higher mark is awarded to each segment. */
+  scoring?: 'higher-segment-both';
+  /** Lifted scheme lines that are not answers: acceptances, conventions, notes. */
+  directions: string[];
+}
+
 export interface FrenchRubric {
   system: 'french';
   taskRequirements: string[];
   /** Complete accepted answers, partial-credit ladder and question-specific rules. */
   answerGuide?: string[];
+  /** The answerGuide as claimable rows, where cards/french/answers.ts could cut
+   * it so the rows reconcile with the printed total. Absent: the lines show as
+   * a list and the response is placed on the permitted marks. */
+  allocation?: FrenchAllocation;
   criteria: FrenchCriterion[];
   markingGuideNote: string;
   /** NextStepUni's own practice guidance. Never SEC text: rendered apart from
