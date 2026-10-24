@@ -373,6 +373,39 @@ def build_row(lifter, spec, row_id, task_doc, sp, lo):
     return row, units, worth
 
 
+def _unpriced_spec(spec):
+    """A row spec of a whole-part (questionTotal) task, built with placeholder
+    zero marks: the rows of such a card carry none of their own."""
+    s = dict(spec)
+    if s['type'] == 'pt':
+        s['marks'], s['units'] = 0, [0]
+    elif s['type'] == 'anyn':
+        s['per'], s['steps'] = 0, None
+        s['claim'] = s.get('claim') or 1
+    else:
+        s['marks'] = 0
+    return s
+
+
+def _unpriced_rows(row):
+    """The rows a whole-part card shows for one built row: unpriced, and a
+    menu as one row per printed option (never one welded string)."""
+    if row['kind'] != 'anyN':
+        out = {k: v for k, v in row.items() if k != 'marks'}
+        out['marks'] = None
+        return [out]
+    opts = row['group']['options']
+    rows = []
+    for j, o in enumerate(opts):
+        r = {'id': None, 'kind': 'alt' if ' or ' in o else 'point', 'verbatim': o, 'marks': None}
+        if j == 0 and row.get('contextNote'):
+            r['contextNote'] = row['contextNote']
+        if j == len(opts) - 1 and row.get('openList'):
+            r['openList'] = True
+        rows.append(r)
+    return rows
+
+
 def ladder_key(ledger, qn, letter):
     """The LADDERS key a part belongs to: its question, or (question, letters)."""
     for k in getattr(ledger, 'LADDERS', {}):
@@ -457,16 +490,30 @@ def build(ledger, year, level):
             problems.append(f'{t["key"]}: scheme reprint "{sq_text[:60]}" shares {score:.0%} of its '
                             f'words with the paper ask "{qtext[:60]}"')
         rows, task_units, worth = [], [], 0
+        whole = t.get('tariff') == 'questionTotal'
         for i, spec in enumerate(t['rows']):
             try:
-                row, units, w = build_row(lifter, spec, f'r{i + 1}', doc, sq['page'], lo)
+                row, units, w = build_row(lifter, _unpriced_spec(spec) if whole else spec, f'r{i + 1}',
+                                          doc, sq['page'], lo)
             except (LookupError, Refusal) as e:
                 problems.append(f'{t["key"]} row {i + 1}: {e}')
+                continue
+            if whole:
+                rows += _unpriced_rows(row)
                 continue
             rows.append(row)
             task_units += units
             worth += w
-        if worth != t['total']:
+        if whole:
+            for i, r in enumerate(rows):
+                r['id'] = f'r{i + 1}'
+            wq, wl, wr, _ = B.parse_ref(t['ref'])
+            printed = ledger.PART_TOTALS.get((wq, wl)) if wl else ledger.QUESTION_TOTALS.get(wq)
+            if wr is not None or t['route'] or t.get('item'):
+                problems.append(f'{t["key"]}: a questionTotal task cards a whole printed part')
+            if printed != t['total']:
+                problems.append(f'{t["key"]}: questionTotal {t["total"]} is not the printed part total {printed}')
+        elif worth != t['total']:
             problems.append(f'{t["key"]}: rows are worth {worth}, task total is {t["total"]}')
         variants = None
         if t['key'] in getattr(ledger, 'ANSWER_VARIANTS', {}):
@@ -494,8 +541,12 @@ def build(ledger, year, level):
         # (2018 HL Q11(b): the labels' ladder, then "2(3) + 2 + 2(1)" over
         # (ii) and (iii)); every other task finds its ladder by question/letter.
         lk = getattr(ledger, 'LADDER_OF', {}).get(t['key']) or ladder_key(ledger, qn, letter)
+        if whole and lk is not None:
+            problems.append(f'{t["key"]}: a questionTotal part cannot also sit under ladder {lk}')
         if first_route:
             ck = key_part if key_part in ledger.CHECKSUMS else qn
+            if whole and ck in ledger.CHECKSUMS:
+                problems.append(f'{t["key"]}: a questionTotal part has no tick summary to check ({ck})')
             units_by[ck].update(task_units)
             if lk is not None:
                 ladder_units[lk].update(task_units)
@@ -510,7 +561,7 @@ def build(ledger, year, level):
         }
         if stem:
             card['stem'] = stem
-        tariff = {'kind': 'fixed'}
+        tariff = {'kind': 'questionTotal'} if whole else {'kind': 'fixed'}
         # A part the scheme prices on its own beside a ladder (a drawing's
         # "3" and "3" before "4 + 2 + 2 + 2 + 2 + 6") keeps its own marks.
         exempt = t['key'] in getattr(ledger, 'LADDER_EXEMPT', ())
@@ -568,6 +619,7 @@ def build(ledger, year, level):
             'scheme': {'pages': sorted({sq['page']})},
             'total': t['total'], 'markUnits': task_units, 'topic': t['topic'],
             'concept': t['concept'], 'route': t['route'],
+            **({'tariff': 'questionTotal'} if whole else {}),
             **({'item': item[1]} if item else {}), 'rows': len(rows),
             'figure': t['fig'], 'questionFigure': t['qfig'],
             'sourcePages': t['source_pages'], 'pairingScore': round(score, 2),

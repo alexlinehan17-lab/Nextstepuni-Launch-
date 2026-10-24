@@ -89,6 +89,16 @@ def papers_dir(subject):
 # Q1 in the Maths corpus was lost that way, and with it its parts.
 QHEAD_AHEAD = r'(?=\d{1,2}\.\s+[A-Z(]|Question\s+\d{1,2}\b)'
 INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+' + QHEAD_AHEAD)
+# Subjects whose booklets close an ask with its ruled answer line and set the
+# next question's head straight after it in the same text block. Biology's
+# 2010-2018 single booklets do this throughout: 2017 HL page 5 is one block
+# from "4. From your knowledge of microorganisms" to "5. Indicate whether ...",
+# and the "5." follows "____" rather than a closed sentence, so INLINE_QHEAD
+# never split it and Question 5 vanished into Question 4(g). The answer line
+# ends the ask as surely as a full stop does. Every reviewed Biology sitting
+# (2018 HL, 2019-2026) censuses byte-identically with it.
+ANSWER_LINE_HEADS = {'biology'}
+INLINE_QHEAD_AFTER_LINE = re.compile(r'(?:(?<=[.)?:])|(?<=_))\s+' + QHEAD_AHEAD)
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
@@ -937,7 +947,7 @@ class Paper:
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
               for text in re.split('\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])', block):
-               for text in INLINE_QHEAD.split(text):
+               for text in (INLINE_QHEAD_AFTER_LINE if self.subject in ANSWER_LINE_HEADS else INLINE_QHEAD).split(text):
                 text = text.strip()
                 if not text:
                     continue

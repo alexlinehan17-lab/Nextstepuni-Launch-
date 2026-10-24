@@ -312,13 +312,14 @@ def Q(page, start, end=None, doc=None, after=None, before=None, nth=1, br=False,
             **({'piece': piece, 'psep': psep} if piece else {})}
 
 
-def M(marker, page, doc=None):
+def M(marker, page, doc=None, br=False):
     """A printed part marker ("(ii)", "1.") placed before a lifted earlier ask
     in a stem, so the stem reads as the paper sets it. Checked to be a marker
-    and to be printed on that page."""
+    and to be printed on that page. `br` starts it on a new line, as a
+    whole-part card sets each of its printed asks."""
     if not re.fullmatch(r'\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)|\d\.', marker):
         raise ValueError(f'{marker!r} is not a part marker')
-    return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc}
+    return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc, **({'br': True} if br else {})}
 
 
 def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=None):
@@ -388,7 +389,7 @@ def G(kind, page=None, clip=None, expect=None, **kw):
 def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
       qfig=None, labels=None, source_pages=None, route=None, notes='', decision='',
       paper_pages=None, scheme_pages=None, leaf=None, excluded=None, evidence=None,
-      item=None, id=None):
+      item=None, id=None, tariff=None):
     """One reviewed task -> one card, or, with `excluded` (the reason) and
     `evidence` (what the SEC documents print), a reviewed and priced task kept
     out of the bank on purpose and recorded as excluded.
@@ -396,13 +397,20 @@ def T(key, ref, sec, q, rows, topic, concept, sq, total, stem=None, fig=None,
     `route` names one option of a closed choose-one pool: the pool's cards are
     alternatives and its tariff counts once. `item` = (slug, label) names one
     separately priced entry of a printed list carded on its own: every item
-    counts. `id` keeps a pre-existing card's id for the task it is corrected to."""
+    counts. `id` keeps a pre-existing card's id for the task it is corrected to.
+
+    `tariff='questionTotal'` cards a whole printed part whose scheme prints its
+    answers but no per-response tariff that the answers fit (2019 Ordinary
+    Q13(c): 24 marks, no split): the task's total is the part's printed total,
+    every row is unpriced (marks None), a menu is one row per printed option,
+    and the student assesses the whole response against the printed total.
+    No per-answer mark is ever derived."""
     return dict(key=key, ref=ref, sec=sec, q=q, rows=rows, topic=topic, concept=concept,
                 sq=sq, total=total, stem=stem or [], fig=fig, qfig=qfig, labels=labels or [],
                 source_pages=source_pages, route=route, notes=notes, decision=decision,
                 paper_pages=paper_pages, scheme_pages=scheme_pages, leaf=leaf,
                 excluded=excluded, evidence=evidence, id=id,
-                item=item)
+                item=item, tariff=tariff)
 
 
 def L(letter, meaning_sel, asked):
