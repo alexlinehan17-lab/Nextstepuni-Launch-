@@ -25,6 +25,8 @@ import sys
 
 import fitz
 
+from english_p1_comprehending import scheme_for
+
 from english_p2_complete import (
     Card,
     crop_text,
@@ -44,7 +46,7 @@ ANSWERS = os.path.join(HERE, "answers")
 
 PAPER_FILEID = "LC002GLP200EV.pdf"
 SCHEME_FILEID = "LC002GLP000EV.pdf"
-YEARS = list(range(2010, 2026))
+YEARS = list(range(2010, 2027))
 COPYRIGHT = "© State Examinations Commission"
 
 
@@ -183,7 +185,17 @@ def collect_cards(paper, year):
     unseen.min_region_overlap = 0.15 if year == 2011 else 0.33
     cards.append(unseen)
 
-    last_poetry_end = (poetry_headers[-1][2], 1.0)
+    # Older Ordinary papers continue the final poem's questions onto the
+    # following page. Ending at its heading page silently omitted those asks.
+    # Stop before acknowledgements/blank leaves, not at an assumed page count.
+    last_page = poetry_headers[-1][2]
+    for page_index in range(last_page + 1, len(paper)):
+        text = paper[page_index].get_text()
+        if re.search(r'Copyright notice|Acknowledg[em]+ents', text, re.I):
+            break
+        if re.search(r'\(ii?i?\)|\b2\.\s*Answer', text, re.I):
+            last_page = page_index
+    last_poetry_end = (last_page, 1.0)
     prescribed_cards = cards_from_headers(
         paper, "prescribed", "Poetry", poetry_headers, last_poetry_end)
     if year == 2011:
@@ -233,7 +245,52 @@ def locate_scheme_cards(cards, paper, scheme, year):
             "Poetry C": (32, 0.5501),
             "Poetry D": (34, 0.0416),
         },
+        # Visually checked against the official scheme. Lexical matching
+        # selected later response paragraphs and omitted the opening tasks;
+        # centred headings also evade the left-aligned header detector.
+        # 2013 Comparative B: the centred "B ASPECTS OF STORY" heading on PDF33
+        # (y 0.5867) precedes its choose-one list; lexical matching started at
+        # the list's last line (viewed 2026-10-11).
+        2013: {"Comparative A": (30, 0.8106), "Comparative B": (32, 0.5867)},
+        # 2014: "D TRANSLATONS" (sic) opens PDF18 and "A RELATIONSHIPS" sits
+        # low on PDF30; lexical matching started both at their (b) parts, so
+        # the preceding crops swallowed each (a) (viewed 2026-10-11).
+        # 2012: both comparative modes were started at their (b) parts; the
+        # centred "A"/"B" headings sit on PDF30 y 0.5922 and PDF32 y 0.418
+        # (viewed 2026-10-11).
+        2012: {"Comparative A": (29, 0.5922), "Comparative B": (31, 0.418)},
+        2014: {"Single Text D": (17, 0.086), "Comparative A": (29, 0.7079)},
+        # 2016: "A RELATIONSHIPS" sits at y 0.332 on PDF37; matching began at
+        # the (a)(ii) award and dropped (a)(i) (viewed 2026-10-11). "B SOCIAL
+        # SETTING" sits at y 0.1754 on PDF39; matching began B above A's own
+        # Q2(b) "Discrete Criteria ex 40" box (viewed 2026-10-14).
+        2016: {"Comparative A": (36, 0.332), "Comparative B": (38, 0.1754)},
+        # 2018: the centred "B SOCIAL SETTING" heading sits mid-page on PDF40,
+        # so the detector started Comparative B at its Q1(b) on PDF41 and
+        # Comparative A's crop swallowed B's Q1(a)(i)/(ii) (viewed 2026-10-11).
+        2018: {"Poetry C": (47, 0.0892), "Comparative B": (39, 0.4038)},
+        # 2021: "E JUNGIAN COWS" heads PDF63 (y 0.0893); matching began E at
+        # its Q2(ii) on PDF64, so A Constable Calls swallowed E's Q1 and Q2(i)
+        # (viewed 2026-10-14).
+        2021: {"Single Text G": (37, 0.0888), "Poetry E": (62, 0.0893)},
+        # 2025: "F THE COVE" sits at y 0.3074 on PDF38; matching began inside
+        # its Q1(a) indicative list, so The Crucible's crop swallowed The
+        # Cove's heading and Q1(a) (viewed 2026-10-12).
+        2025: {"Single Text F": (37, 0.3074)},
+        # 2020: "F 1984" heads PDF30 (y 0.0889); matching began F inside its
+        # Q1(a) indicative list, so Room's crop swallowed 1984's heading and
+        # Q1(a) (viewed 2026-10-23).
+        2020: {"Single Text F": (29, 0.0889)},
+        # 2024: "B THEME" sits at y 0.3262 on PDF45 and "C SOCIAL SETTING"
+        # at y 0.2239 on PDF47; matching began C at its Q1(b), so Theme's
+        # crop swallowed Social Setting's Q1(a)(i)/(ii) (viewed 2026-10-12).
+        2024: {"Comparative B": (44, 0.3262), "Comparative C": (46, 0.2239)},
+        # 2023: "B HERO, HEROINE, VILLAIN" sits at y 0.2293 on PDF45 and
+        # "C THEME" at y 0.2922 on PDF47; matching began each at the previous
+        # mode's Q2(b) "Discrete Criteria ex 40" box (viewed 2026-10-12).
         2023: {
+            "Comparative B": (44, 0.2293),
+            "Comparative C": (46, 0.2922),
             "Poetry A": (49, 0.5204),
             "Poetry B": (51, 0.5771),
             "Poetry C": (53, 0.6839),
@@ -291,6 +348,9 @@ def locate_scheme_cards(cards, paper, scheme, year):
             ))
         if not candidates:
             raise ValueError(f"{card.label}: no later scheme page")
+        # Reset per card: a manual point `continue`s before this line, and a
+        # stale list from an earlier card must never choose this card's page.
+        titled = []
         if card.kind == "unseen":
             forced = [row for row in candidates if row[5] == unseen_marker[0]]
             if not forced:
@@ -311,7 +371,7 @@ def locate_scheme_cards(cards, paper, scheme, year):
                 if card.kind == "single" else max(titled)
             _, prompt_score, anchor_score, _, _, best_page = selected
             min_prompt, min_anchor = 0.08, 0.03
-        else:
+        elif card.kind != "unseen":
             _, prompt_score, anchor_score, _, _, best_page = max(candidates)
             min_prompt = 0.10 if card.kind == "unseen" else 0.12
             min_anchor = 0.10 if card.kind == "unseen" else 0.25
@@ -402,9 +462,10 @@ def audited_region(cards, index, scheme):
 
 def build_year(year):
     paper_path = os.path.join(CORPUS, "exampapers", str(year), PAPER_FILEID)
-    scheme_path = os.path.join(CORPUS, "markingschemes", str(year), SCHEME_FILEID)
+    # 2026's combined Ordinary scheme is filed as LP100, not LP000.
+    scheme_path = scheme_for(year, 'G')
     sidecar_path = os.path.join(ANSWERS, str(year), f"{PAPER_FILEID}.json")
-    if not os.path.exists(paper_path) or not os.path.exists(scheme_path):
+    if not os.path.exists(paper_path) or not scheme_path or not os.path.exists(scheme_path):
         return None, "official paper or scheme missing"
 
     paper = fitz.open(paper_path)
@@ -419,7 +480,7 @@ def build_year(year):
         sidecar = {
             "v": 1,
             "paperFileid": PAPER_FILEID,
-            "schemeFileid": SCHEME_FILEID,
+            "schemeFileid": os.path.basename(scheme_path),
             "component": "200",
             "copyright": COPYRIGHT,
             "q": [],

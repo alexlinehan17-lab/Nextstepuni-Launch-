@@ -45,6 +45,7 @@ import {
   groupMarks,
   isPointCard,
   isRubricCard,
+  pclmCapRule,
   rowId,
   type ArtCriterion,
   type ArtRubric,
@@ -54,6 +55,7 @@ import {
   type IrishCriterion,
   type LabelKey,
   type MarkRow,
+  type PclmCapRule,
   type PclmCriterionId,
   type PclmRubric,
   type SecCard,
@@ -326,9 +328,31 @@ const componentCriterionId = (componentId: string, criterionId: PclmCriterionId)
   `component:${componentId}:${criterionId}` as const;
 
 /**
- * Apply the SEC's primacy-of-Purpose rule. The UI also prevents an over-cap
- * choice, but scoring enforces it independently so persisted or test data can
- * never award C or L above P.
+ * The highest mark a criterion may take under the year's printed cap rule, or
+ * undefined when nothing caps it. Mechanics is never capped.
+ * - purpose-primacy: C and L cannot exceed P.
+ * - language-at-d-band (2010–2015 OL): only when BOTH P and C are below the D
+ *   band is L limited, to the top of its D band.
+ */
+export function pclmCriterionCap(
+  rule: PclmCapRule,
+  criterionId: PclmCriterionId,
+  purpose: number,
+  coherence: number,
+): number | undefined {
+  if (rule.kind === 'purpose-primacy') {
+    return criterionId === 'coherence' || criterionId === 'language' ? purpose : undefined;
+  }
+  if (rule.kind === 'language-at-d-band' && criterionId === 'language') {
+    return purpose < rule.purposeBelow && coherence < rule.coherenceBelow ? rule.languageMax : undefined;
+  }
+  return undefined;
+}
+
+/**
+ * Apply the cap rule the card's own year prints (by default the modern
+ * primacy of Purpose). The UI also prevents an over-cap choice, but scoring
+ * enforces it independently so persisted or test data can never exceed it.
  */
 export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): PclmScores {
   if (card.rubric.system !== 'pclm') return {};
@@ -336,6 +360,16 @@ export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): Pc
   if (assessment.mode === 'combined') {
     return { combined: scores.combined ?? 0 };
   }
+  const capped = (
+    rule: PclmCapRule,
+    criterionId: PclmCriterionId,
+    value: number,
+    purpose: number,
+    coherence: number,
+  ) => {
+    const cap = pclmCriterionCap(rule, criterionId, purpose, coherence);
+    return cap === undefined ? value : Math.min(value, cap);
+  };
   if (assessment.mode === 'composite') {
     const effective: PclmScores = {};
     for (const component of assessment.components) {
@@ -344,27 +378,49 @@ export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): Pc
         effective[id] = scores[id] ?? 0;
         continue;
       }
+      const rule = pclmCapRule(component);
       const purposeId = componentCriterionId(component.id, 'purpose');
       const purpose = scores[purposeId] ?? 0;
+      const coherence = scores[componentCriterionId(component.id, 'coherence')] ?? 0;
       effective[purposeId] = purpose;
       for (const criterion of component.criteria) {
         if (criterion.id === 'purpose') continue;
         const id = componentCriterionId(component.id, criterion.id);
-        const value = scores[id] ?? 0;
-        effective[id] = criterion.id === 'coherence' || criterion.id === 'language'
-          ? Math.min(value, purpose)
-          : value;
+        effective[id] = capped(rule, criterion.id, scores[id] ?? 0, purpose, coherence);
       }
     }
     return effective;
   }
+  const rule = pclmCapRule(assessment);
   const purpose = scores.purpose ?? 0;
+  const coherence = scores.coherence ?? 0;
   return {
     purpose,
-    coherence: Math.min(scores.coherence ?? 0, purpose),
-    language: Math.min(scores.language ?? 0, purpose),
+    coherence: capped(rule, 'coherence', coherence, purpose, coherence),
+    language: capped(rule, 'language', scores.language ?? 0, purpose, coherence),
     mechanics: scores.mechanics ?? 0,
   };
+}
+
+/** What the panel says and disables for one criterion under the printed rule. */
+export function pclmCriterionControl(
+  rule: PclmCapRule,
+  criterionId: PclmCriterionId,
+  purpose: number | undefined,
+  coherence: number | undefined,
+): { waiting: string | null; maxSelectable?: number; note: string | null } {
+  if (rule.kind === 'purpose-primacy' && (criterionId === 'coherence' || criterionId === 'language')) {
+    return purpose === undefined
+      ? { waiting: 'Set Purpose first — it caps this criterion.', note: null }
+      : { waiting: null, maxSelectable: purpose, note: null };
+  }
+  if (rule.kind === 'language-at-d-band' && criterionId === 'language') {
+    const note = `This year's scheme: if Purpose and Coherence are both below D (under ${rule.purposeBelow} and ${rule.coherenceBelow}), Language can reach at most ${rule.languageMax}, the top of its D band.`;
+    if (purpose === undefined || coherence === undefined) return { waiting: null, note };
+    const cap = pclmCriterionCap(rule, 'language', purpose, coherence);
+    return cap === undefined ? { waiting: null, note } : { waiting: null, maxSelectable: cap, note };
+  }
+  return { waiting: null, note: null };
 }
 
 export function pclmMarks(card: SecRubricCard, scores: PclmScores): number {
@@ -903,6 +959,13 @@ const PclmRubricPanel: React.FC<{
         </p>
         <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
           This is an honest self-assessment, not an automatic examiner mark.
+          {assessment.mode !== 'composite' && assessment.printedGrid && (
+            <> The grid and cap rule are the ones the {assessment.printedGrid.sitting.split('-')[0]} scheme
+            printed (marking scheme {assessment.printedGrid.schemePages.length > 1 ? 'pp.' : 'p.'}
+            {assessment.printedGrid.schemePages
+              .map((page, index, pages) => (index === 0 ? '' : page === pages[index - 1] + 1 ? '–' : ', ') + page)
+              .join('')}).</>
+          )}
         </p>
 
         {assessment.mode === 'combined' ? (
@@ -984,8 +1047,10 @@ const PclmRubricPanel: React.FC<{
                   <div style={{ display: 'grid', gap: 8 }}>
                     {component.criteria.map(criterion => {
                       const scoreId = componentCriterionId(component.id, criterion.id);
-                      const capped = criterion.id === 'coherence' || criterion.id === 'language';
-                      const waitingForPurpose = capped && componentPurpose === undefined;
+                      const control = pclmCriterionControl(
+                        pclmCapRule(component), criterion.id, componentPurpose,
+                        scores[componentCriterionId(component.id, 'coherence')],
+                      );
                       return (
                         <div key={criterion.id} style={{
                           padding: '9px', borderRadius: 9, background: 'var(--mb-raised)',
@@ -999,17 +1064,17 @@ const PclmRubricPanel: React.FC<{
                           <ul style={{ margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 10.5px/1.42 ${SANS}` }}>
                             {criterion.guidance.map(note => <li key={note}>{note}</li>)}
                           </ul>
-                          {waitingForPurpose && (
+                          {(control.waiting ?? control.note) && (
                             <p style={{ margin: '0 0 7px', font: `600 10px/1.4 ${SANS}`, color: LABEL }}>
-                              Set Purpose first — it caps this criterion.
+                              {control.waiting ?? control.note}
                             </p>
                           )}
                           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                             {criterion.permittedMarks.map(mark => scoreButton(
                               scoreId,
                               mark,
-                              waitingForPurpose
-                                || (capped && componentPurpose !== undefined && mark > componentPurpose),
+                              control.waiting !== null
+                                || (control.maxSelectable !== undefined && mark > control.maxSelectable),
                             ))}
                           </div>
                         </div>
@@ -1037,8 +1102,7 @@ const PclmRubricPanel: React.FC<{
         ) : (
           <div style={{ display: 'grid', gap: 10 }}>
             {assessment.criteria.map(criterion => {
-              const capped = criterion.id === 'coherence' || criterion.id === 'language';
-              const waitingForPurpose = capped && purpose === undefined;
+              const control = pclmCriterionControl(pclmCapRule(assessment), criterion.id, purpose, scores.coherence);
               return (
                 <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
                   <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
@@ -1050,16 +1114,17 @@ const PclmRubricPanel: React.FC<{
                   <ul style={{ margin: '7px 0 9px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.45 ${SANS}` }}>
                     {criterion.guidance.map(note => <li key={note}>{note}</li>)}
                   </ul>
-                  {waitingForPurpose && (
+                  {(control.waiting ?? control.note) && (
                     <p style={{ margin: '0 0 7px', font: `600 10.5px/1.4 ${SANS}`, color: LABEL }}>
-                      Set Purpose first — it caps this criterion.
+                      {control.waiting ?? control.note}
                     </p>
                   )}
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
                     {criterion.permittedMarks.map(mark => scoreButton(
                       criterion.id,
                       mark,
-                      waitingForPurpose || (capped && purpose !== undefined && mark > purpose),
+                      control.waiting !== null
+                        || (control.maxSelectable !== undefined && mark > control.maxSelectable),
                     ))}
                   </div>
                 </section>
