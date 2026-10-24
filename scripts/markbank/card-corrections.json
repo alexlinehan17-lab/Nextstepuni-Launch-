@@ -7,7 +7,7 @@
    }
   },
   "chem-2023-ol-q6-b-i-iv": {
-   "reason": "Exact duplicate of chem-2023-ol-q6-b; the stable older identity carries the complete four-part answer.",
+   "reason": "Duplicated chem-2023-ol-q6-b (both cited Q6(b)(i)-(iv)).",
    "drop": true,
    "replacementId": "chem-2023-ol-q6-b"
   },
@@ -20,7 +20,7 @@
    }
   },
   "chem-2023-ol-q10-a-iii-iv-fig": {
-   "reason": "Duplicate of chem-2023-ol-q10-a-iii-iv after its inspected lattice figure is transferred to the older stable identity.",
+   "reason": "Duplicated chem-2023-ol-q10-a-iii-iv (both cited Q10(a)(iii)-(iv)).",
    "drop": true,
    "replacementId": "chem-2023-ol-q10-a-iii-iv"
   },
@@ -113,6 +113,66 @@
    "reason": "Duplicated chem-2023-hl-q11-c-fig (the same Q11(c)(v)).",
    "drop": true,
    "replacementId": "chem-2023-hl-q11-c-fig"
+  },
+  "chem-2023-ol-q1-c-ii": {
+   "reason": "The scheme prices Q1(c)(i)-(iii) with one cell ([6 + 6 + 3 + 3]), so they are one task; carded once, as chem-2023-ol-q1-c-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q1-c-i"
+  },
+  "chem-2023-ol-q1-c-iii": {
+   "reason": "The scheme prices Q1(c)(i)-(iii) with one cell ([6 + 6 + 3 + 3]); carded once, as chem-2023-ol-q1-c-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q1-c-i"
+  },
+  "chem-2023-ol-q1-d-iii": {
+   "reason": "The scheme prices Q1(d)(i)-(iii) with one cell ([7 + 3 + 2]); carded once, as chem-2023-ol-q1-d-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q1-d-i-ii"
+  },
+  "chem-2023-ol-q3-b-ii-iii": {
+   "reason": "The scheme prices Q3(b)(i)-(v) with one cell ((6 + [6 × 3])); carded once, as chem-2023-ol-q3-b-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q3-b-i"
+  },
+  "chem-2023-ol-q3-b-iv-v": {
+   "reason": "The scheme prices Q3(b)(i)-(v) with one cell ((6 + [6 × 3])); carded once, as chem-2023-ol-q3-b-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q3-b-i"
+  },
+  "chem-2023-ol-q5-a-ii-iii": {
+   "reason": "The scheme prices Q5(a)(i)-(iii) with one cell ([9 + 6 + 3]); carded once, as chem-2023-ol-q5-a-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q5-a-i"
+  },
+  "chem-2023-ol-q6-a-ii-iii": {
+   "reason": "The scheme prices Q6(a)(i)-(iii) with one cell ([6 + 4 + 2 + 2]); carded once, as chem-2023-ol-q6-a-i.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q6-a-i"
+  },
+  "chem-2023-ol-q6-c-ii": {
+   "reason": "The scheme prices Q6(c)(i)-(ii) with one cell ([8 + 2 + 2]); carded once, as chem-2023-ol-q6-c.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q6-c"
+  },
+  "chem-2023-ol-q7-d-iv": {
+   "reason": "The scheme prices Q7(d)(iii)-(iv) with one cell ([9 + 3]); carded once, as chem-2023-ol-q7-d-iii.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q7-d-iii"
+  },
+  "chem-2023-ol-q8-b-ii": {
+   "reason": "The scheme prices Q8(b)(i)-(ii) with one cell ([8 + 2 + 2]); carded once, as chem-2023-ol-q8-b.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q8-b"
+  },
+  "chem-2023-ol-q10-b-iii-v": {
+   "reason": "The scheme prices Q10(b)(i)-(vi) with one cell ((6 + 4 + [5 × 3])); carded once, as chem-2023-ol-q10-b-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q10-b-i-ii"
+  },
+  "chem-2023-ol-q10-b-vi": {
+   "reason": "The scheme prices Q10(b)(i)-(vi) with one cell ((6 + 4 + [5 × 3])); carded once, as chem-2023-ol-q10-b-i-ii.",
+   "drop": true,
+   "replacementId": "chem-2023-ol-q10-b-i-ii"
   }
  },
  "biology": {

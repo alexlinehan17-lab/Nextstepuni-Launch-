@@ -1,0 +1,86 @@
+[
+ {
+  "id": "chem-2023-ol-q1-a-fig",
+  "ask": "liquid A",
+  "answer": "calcium dicarbide",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q2-d-iii",
+  "ask": "Calculate the concentration, in moles per litre, of the HCl solution.",
+  "answer": "0.111 mol l⁻¹ HCl",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q3-a-i",
+  "ask": "With the aid of a labelled diagram",
+  "answer": "filtration diagram with at least one label",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q3-b-i",
+  "ask": "Identify which of the ions in the first column of the table above are anions.",
+  "answer": "silver nitrate",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q4-b",
+  "ask": "Draw a dot and cross diagram",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q4-k-fig",
+  "ask": "Name the piece of apparatus labelled X.",
+  "answer": "Liebig (reflux) condenser",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q5-c",
+  "ask": "Give one reason why the atomic radius of sodium",
+  "answer": "effective nuclear charge",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q6-c",
+  "ask": "Name the aromatic compound whose structure is shown on the right.",
+  "answer": "methylbenzene",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q8-b",
+  "ask": "",
+  "answer": "OH circled",
+  "figure": true,
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q9-c",
+  "ask": "the time taken until the reaction was complete",
+  "answer": "5.5 – 6.0 minute",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q10-b-i-ii",
+  "ask": "Which is the reducing agent in the reaction",
+  "answer": "loss of electrons"
+ },
+ {
+  "id": "chem-2023-ol-q11-a-ii",
+  "ask": "through what material is water usually filtered",
+  "answer": "sand (gravel)",
+  "figure": true
+ },
+ {
+  "id": "chem-2023-ol-q11-b-ii",
+  "ask": "Write the equilibrium constant (Kc) expression for this reaction.",
+  "answer": "its own print is shown with the answer",
+  "solution": true
+ },
+ {
+  "id": "chem-2023-ol-q11-c",
+  "ask": "write in your answerbook the omitted term",
+  "answer": "D refinery gas",
+  "figure": true
+ }
+]

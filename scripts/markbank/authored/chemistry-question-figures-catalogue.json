@@ -38,7 +38,7 @@
   "file": "chemistry-2023-OL-paper-q8-fig0.png",
   "kind": "figure",
   "truncated": false,
-  "description": "A reaction scheme in four boxes. X is ethanol (C2H5OH) and converts to ethene (C2H4) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y, which is ethanal (CH3CHO); and Y converts to Z, which is ethanoic acid (CH3COOH).",
+  "description": "A reaction scheme in four boxes. X (C₂H₅OH) converts to ethene (C₂H₄) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y (CH₃CHO), and Y converts to Z (CH₃COOH). The boxes give X, Y and Z by formula only, not by name.",
   "questionRef": "2023 OL Q8"
  },
  {

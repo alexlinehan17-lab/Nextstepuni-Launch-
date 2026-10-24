@@ -48,16 +48,26 @@ FOOTER = re.compile(r'^(Leaving Certificate( Examination)?,? 20\d\d|Chemistry\s*
                     r'|Marking Scheme|\d{1,2})\s*$')
 # A mark cell at the scheme's right margin: "[2]", "[5+2]", "[6+2+2+2]", "[3×1 + 3]".
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
-_TERM = r'(?:\d{1,2}(?:\s*[×x]\s*\d{1,2})?|\(\s*\d{1,2}\s*[×x]\s*\d{1,2}\s*\))'
+# The 2023 Ordinary scheme sets the run in square brackets inside a round cell,
+# "(6 + [6 × 3])"; as_cell() writes it the first way, "[6 + (6 × 3)]".
+_TERM = (r'(?:\d{1,2}(?:\s*[×x]\s*\d{1,2})?|\(\s*\d{1,2}\s*[×x]\s*\d{1,2}\s*\)'
+         r'|\[\s*\d{1,2}\s*[×x]\s*\d{1,2}\s*\])')
 MARK_CELL = re.compile(r'^\[\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\]$')
 ROUND_CELL = re.compile(r'^\(\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\)$')
 TRAILING_ROUND = re.compile(r'\s+(\(\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\))$')
 TRAILING_CELL = re.compile(r'\s*(\[\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\s*\])$')
+
+
+def as_cell(round_cell):
+    """A round cell as the square one the reader keys on: "(2 × 3)" -> "[2 × 3]",
+    "(6 + [6 × 3])" -> "[6 + (6 × 3)]"."""
+    body = round_cell.strip()[1:-1]
+    return '[' + re.sub(r'\[(\s*\d{1,2}\s*[×x]\s*\d{1,2}\s*)\]', r'(\1)', body) + ']'
 # The examiner's aside in brackets: "[any two]", "[do not accept clear]".
 ASIDE = re.compile(r'^\[[^\]]*[a-zA-Z]{3}[^\]]*\]$')
-ANY = re.compile(r'^\[any (two|three|four)\]$', re.I)
+ANY = re.compile(r'^\[any (one|two|three|four|five|six)\]$', re.I)
 EQUATION_ASIDE = re.compile(r'^\[formulae \((\d+)\), balancing \((\d+)\)\]$')
-WORDS = {'two': 2, 'three': 3, 'four': 4}
+WORDS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 MAX_OPTIONS = 14
 
 
@@ -274,7 +284,7 @@ CUE_WORD = r"[A-Z]{2,}[A-Z’']*"
 CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)\s*:\s*')
 TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define|Write|Give|Draw|'
                        r'How|Why|What|Find|Show|List|Outline|Deduce|Distinguish)\s*:\s*')
-ANY_CELL = re.compile(r'^ANY\s+(TWO|THREE|FOUR|FIVE|SIX)\s*:?\s*(\(.+\))\s*$', re.I)
+ANY_CELL = re.compile(r'^ANY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX)\s*:?\s*(\(.+\))\s*$', re.I)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
 FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)\s*BALANCING:\s*\((\d{1,2})\)$')
@@ -340,7 +350,7 @@ def cue_lines(lines):
         if ROUND_CELL.match(t.strip()):
             y0, y1 = shifted(l)
             out.append(Line(l.page, (max(l.x0, 481), y0, max(l.x1, 500), y1),
-                            '[' + t.strip()[1:-1] + ']', True))
+                            as_cell(t), True))
             if l.x0 < 350:
                 zones.append((l.page, l.y0, l.x1))     # a cell mid-row: what follows is a new row
             continue
@@ -367,8 +377,14 @@ def cue_lines(lines):
         if not t:
             continue
         m = MID_ROUND.search(t)
-        if m and t[:m.start()].count('[') > t[:m.start()].count(']'):
-            m = None                 # "[Allow (3) for ...]": a cell quoted inside an aside
+        if m and t[:m.start()].rfind('[') > t[:m.start()].rfind(']'):
+            # "[Allow (3) for ...]": a cell quoted inside an aside, whatever
+            # aside closed before it ("blue to red.] [Allow (3) for", 2023 OL).
+            m = None
+        if m and (re.search(r'[=+\-–×÷*/]\s*$', t[:m.start()])
+                  or re.match(r'\s*[=+\-–×÷*/]', t[m.end():])):
+            # "Mr = (10 × 12) + 16 = 136" (2023 OL Q4(f)): arithmetic, not a cell.
+            m = None
         if m and l.x0 < 350:
             out.append(Line(l.page, (x, y0, x + 100, y1), t[:m.start()].strip(), l.bold, l.math))
             out.append(Line(l.page, (481, y0, 500, y1), '[' + m.group(1) + ']', True))
@@ -382,7 +398,7 @@ def cue_lines(lines):
         if m and m.start() > 0:
             out.append(Line(l.page, (x, y0, l.x1 - 20, y1), t[:m.start()], l.bold, l.math))
             out.append(Line(l.page, (max(l.x1 - 20, 481), y0, l.x1, y1),
-                            '[' + m.group(1).strip()[1:-1] + ']', True))
+                            as_cell(m.group(1)), True))
             if l.x1 < 400:
                 zones.append((l.page, l.y0, l.x1))
             continue
@@ -744,6 +760,13 @@ class Item:
             if t.endswith(','):
                 continue        # a list broken across rows: "..., rough titration,"
 
+            sofar = ' '.join(cur)
+            if sofar.count('[') > sofar.count(']'):
+                # An aside begun at the end of an answer's row wraps onto the
+                # next ("pH meter [Deduct 2 marks if indicator / named
+                # indicator used instead of" / "universal indicator / pH
+                # meter.]", 2023 OL Q7(d)(iii)): one point, its aside inline.
+                continue
             if t.endswith('//') or r.x1 < wrap_x:
                 pts.append(tidy(' '.join(cur)).rstrip('/ ').strip())
                 cur = []
@@ -780,9 +803,16 @@ class Item:
 def items_of(lines):
     rows, out, cur, asides = prows(lines), [], [], []
     # "or" alone on a row between an alternative's last answer and the next
-    # alternative is a separator, not an answer.
-    rows = [r for r in rows if not (r.text.strip().lower() == 'or' and not r.cell and not r.asides)]
+    # alternative is a separator, not an answer. Inside one answer -- two
+    # wordings priced by the one cell below them, 2023 OL Q11(d)A(vi) -- it
+    # stays, so the answer reads as the scheme prints it. Not where the answer
+    # is "//" points, which the cards split on: there the "or" sets two sets of
+    # points side by side (2023 HL Q11(a)(i)) and is the card's to state.
     for r in rows:
+        if r.text.strip().lower() == 'or' and not r.cell and not r.asides:
+            if cur and cur[-1].text and not any('//' in x.text for x in cur):
+                cur.append(r)
+            continue
         if not r.text and r.asides and not r.cell and not cur and out:
             out[-1].asides.extend(r.asides)
             continue
@@ -889,7 +919,7 @@ class Printed:
         lines = []
         for l in self.scheme_lines:
             if (l.x0 > 480 or l.bold) and ROUND_CELL.match(l.text):
-                l.text = '[' + l.text.strip()[1:-1] + ']'
+                l.text = as_cell(l.text)
             elif l.bold and l.x0 < 480:
                 # Where a diagram takes the right margin the scheme sets the
                 # cell at the end of the answer itself: "occupy singly (3)".
@@ -898,7 +928,7 @@ class Printed:
                     lines.append(Line(l.page, (l.x0, l.y0, l.x1 - 20, l.y1), l.text[:m.start()],
                                       l.bold, l.math))
                     l = Line(l.page, (max(l.x1 - 20, 481), l.y0, l.x1, l.y1),
-                             '[' + m.group(1).strip()[1:-1] + ']', True)
+                             as_cell(m.group(1)), True)
             lines.append(l)
         self.scheme_lines = lines
         self.pseg, self.marks = segments(self.paper_lines, answers=False)
@@ -1350,6 +1380,9 @@ class Cards:
             # equation, worth the two together; its aside says how they split.
             terms = mark_terms(it.cell)
             pts = it.points()
+            if each and len(pts) != len(terms) and len(it.text.split('//')) == len(terms):
+                # "protons // two" on one row, priced (2 × 3) (2023 OL Q4(c)).
+                pts = [x.strip() for x in it.text.split('//')]
             if each and '+' not in it.cell and len(terms) > 1 and len(pts) == len(terms):
                 for j, ptext in enumerate(pts):
                     text, inline = self._verbatim(ptext, fixes, key)
@@ -1435,9 +1468,22 @@ class Cards:
                         pts = [x for x in pts if display(x) != display(d)]
                         dropped.add(d)
                 for j, ptext in enumerate(pts):
-                    if label and j == 0 and self.P.traceable(f'({label}) {ptext}'):
+                    if label and j == 0 and not self.P.cue and self.P.traceable(f'({label}) {ptext}'):
                         ptext = f'({label}) {ptext}'
                     t, inl = self._verbatim(ptext, fixes, key)
+                    if not t and inl and rows:
+                        # A point that is wholly the examiner's aside, wrapped
+                        # onto rows of its own (2023 OL Q7(d)(iii)): it rides
+                        # on the point above.
+                        rows[-1]['contextNote'] = tidy(rows[-1].get('contextNote', '') + ' ' +
+                                                       _asides_note(inl + (it.asides if j == len(pts) - 1 else [])))
+                        continue
+                    if label and j == 0 and self.P.cue:
+                        # A labelled scheme sets its cue between the marker and
+                        # the answer ("(iv) WHICH: Mg (magnesium)"), so the
+                        # marker leads the row as a label, which the gate reads
+                        # past: "(iv) — Mg (magnesium)".
+                        t = f'({label}) — {t}'
                     note = ' '.join(x for x in [_asides_note(inl + (it.asides if j == len(pts) - 1 else [])),
                                                 notes.get(len(rows), '')] if x)
                     r = point(f'r-{len(rows) + 1}', t, None, note)

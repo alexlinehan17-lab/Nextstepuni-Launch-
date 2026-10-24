@@ -973,5 +973,104 @@
   "description": "The marking scheme's own print of its answer to 2023 HL Q11(d)A(iii), as the State Examinations Commission set it: the answer, 0.0027 – 0.003 moles guideline or 0.029 – 0.02944 mg present (6), then four routes in boxes, each step with its mark, comparing the moles or milligrams present per m³ (from 3.2 × 10⁻³ moles and Mr NO₂ = 46) with the guideline, each ending 'guideline exceeded'.",
   "questionRef": "2023 HL Q11(d)A(iii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q3b-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of three ions with columns Ion, Formula and Test: chloride ion, Cl⁻, add AgNO₃ solution to a sample of estuary water in a test-tube; nitrate ion, NO₃⁻, add FeSO₄ solution to a sample of estuary water in a test-tube and then add concentrated H₂SO₄ slowly down the side of the test-tube, giving two layers; sodium ion, Na⁺, carry out a flame test on the dissolved solids obtained from the estuary water.",
+  "questionRef": "2023 OL Q3(b)"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A diagram of the relative sizes of atoms drawn as grey circles: H alone and small at the top; Li, Be, B, C, N, O and F in a row whose circles shrink from left to right; below it Na, Mg, Al, Si, P, S and Cl, shrinking the same way, each larger than the atom above it.",
+  "questionRef": "2023 OL Q5(c)"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The structure of an aromatic compound: a benzene ring (a hexagon with a circle inside) with a CH₃ group attached at one corner.",
+  "questionRef": "2023 OL Q6(c)"
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q2d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q2(d)(iii), as the State Examinations Commission set it: the answer, 0.111 mol l⁻¹ HCl (9), then two routes side by side: the titration formula 22.45 × M over 2 = 25.0 × 0.05 over 1 (3 + 3), with a note that 3 marks may be awarded for the formula if no other marks are awarded, and M = 0.111 mol l⁻¹ HCl (3); or 25.0 × 0.05 over 1000 = 1.25 × 10⁻³ moles Na₂CO₃ (3), 1.25 × 10⁻³ × 2 = 2.50 × 10⁻³ moles HCl (3), and M = 2.50 × 10⁻³ × 1000 over 22.45 = 0.111 mol l⁻¹ HCl (3).",
+  "questionRef": "2023 OL Q2(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q3a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q3(a)(i), as the State Examinations Commission set it: filtration diagram with at least one label // known (stated) volume water / find mass dried filter paper / weigh dried filter paper (8 + 3), above a drawing of a filter funnel standing in a beaker, the funnel labelled suspended solids and the liquid in the beaker labelled filtered water.",
+  "questionRef": "2023 OL Q3(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q4(b), as the State Examinations Commission set it: two accepted dot and cross diagrams of a hydrogen molecule: H, a dot and a cross, H in a box; or two overlapping circles, one around each H, with the dot and the cross shared where they overlap.",
+  "questionRef": "2023 OL Q4(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q4(f), as the State Examinations Commission set it: the answer, 0.408 g, then the working in a box: Mr = (10 × 12) + 16 = 136 (3) and 0.003 × 136 = 0.408 g (3).",
+  "questionRef": "2023 OL Q4(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q4j.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q4(j), as the State Examinations Commission set it: the answer, 60%, then the working in a box: Mr = 48 + (2 × 16) = 80 (3) and % Ti = 48 over 80 × 100 = 60% (3).",
+  "questionRef": "2023 OL Q4(j)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q8b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q8(b)(i), as the State Examinations Commission set it: the structure of ethanol with every atom and bond drawn, H–C–C–O–H with three hydrogens on the first carbon and two on the second, and a circle drawn around the O–H group; then [O–H bond not required] and OH circled.",
+  "questionRef": "2023 OL Q8(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q9b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q9(b), as the State Examinations Commission set it: a graph of mass CO₂ (g), 0 to 0.6, against time (minutes), 0 to 8: the points rise from the origin through 0.26 at 1 minute, 0.41 at 2 and 0.50 at 3, level off to 0.59 at 5, and lie at 0.60 from 6 to 8, joined by a smooth curve.",
+  "questionRef": "2023 OL Q9(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 OL Q11(b)(ii), as the State Examinations Commission set it: Kc = [NH₃]² over [N₂][H₂]³, then [numerator correct (3) and denominator correct (3); inverted (3)] and [Accept round brackets.]",
+  "questionRef": "2023 OL Q11(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q11a-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table headed Drinking Water Treatment Process listing nine numbered steps: 1 taking water from source and screening out large solids; 2 storage with some settlement/sedimentation; 3 flocculation; 4 more settlement/sedimentation; 5 filtration; 6 disinfection; 7 fluoridation; 8 pH adjustment; 9 testing, storage and distribution.",
+  "questionRef": "2023 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q8b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2023 OL Q8 and its part (b): \"Study the reaction scheme below and answer the questions that follow\", then the reaction scheme in four boxes (X, C₂H₅OH, converts to ethene, C₂H₄, using solid S, with an arrow back; X converts, using reagent R, to Y, CH₃CHO; Y converts to Z, CH₃COOH), then (b)(i) Draw the structure of a molecule of X showing all of its atoms and all of its bonds. Circle the group of atoms in your structure that makes X very soluble in water. (ii) Explain why X dissolves easily in water. (12)",
+  "questionRef": "2023 OL Q8(b)"
  }
 ]

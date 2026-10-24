@@ -1326,6 +1326,1071 @@
     ]
    }
   },
+  "2023 OL": {
+   "chem-2023-ol-q1-a-fig": {
+    "status": "corrected",
+    "before": "de3413646b14cb0e",
+    "after": "b368e51046df2e41",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2023-ol-q1-b": {
+    "status": "corrected",
+    "before": "0757a78e89fe4bc9",
+    "after": "d09e24bc5446fbbe",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q1-c-i": {
+    "status": "corrected",
+    "before": "1589deb7f0799f10",
+    "after": "506964ce31ddc45c",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q1-c-ii": {
+    "status": "withdrawn",
+    "before": "6121287f34438988",
+    "replacementId": "chem-2023-ol-q1-c-i",
+    "reason": "The scheme prices Q1(c)(i)-(iii) with one cell ([6 + 6 + 3 + 3]), so they are one task; carded once, as chem-2023-ol-q1-c-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q1-c-iii": {
+    "status": "withdrawn",
+    "before": "e6c541207393a6bf",
+    "replacementId": "chem-2023-ol-q1-c-i",
+    "reason": "The scheme prices Q1(c)(i)-(iii) with one cell ([6 + 6 + 3 + 3]); carded once, as chem-2023-ol-q1-c-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q1-d-i-ii": {
+    "status": "corrected",
+    "before": "d5dd1b3237322d41",
+    "after": "a871d220c516ef01",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q1-d-iii": {
+    "status": "withdrawn",
+    "before": "4b77c20974bbebd6",
+    "replacementId": "chem-2023-ol-q1-d-i-ii",
+    "reason": "The scheme prices Q1(d)(i)-(iii) with one cell ([7 + 3 + 2]); carded once, as chem-2023-ol-q1-d-i-ii.",
+    "shipped": true
+   },
+   "chem-2023-ol-q10-a-i-ii": {
+    "status": "corrected",
+    "before": "451befbd10f309b8",
+    "after": "18c5b962d3079401",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q10-a-ii": {
+    "status": "added",
+    "after": "adc727447f264ab2"
+   },
+   "chem-2023-ol-q10-a-iii-iv": {
+    "status": "corrected",
+    "before": "e385fc9d3663c155",
+    "after": "6a57032142b82706",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q10-a-iii-iv-fig": {
+    "status": "withdrawn",
+    "before": "ab59ce780e458f30",
+    "replacementId": "chem-2023-ol-q10-a-iii-iv",
+    "reason": "Duplicated chem-2023-ol-q10-a-iii-iv (both cited Q10(a)(iii)-(iv)).",
+    "shipped": false
+   },
+   "chem-2023-ol-q10-a-iv": {
+    "status": "added",
+    "after": "b3e9f794ac5c11f3"
+   },
+   "chem-2023-ol-q10-a-v": {
+    "status": "corrected",
+    "before": "d0c88868de0f23a6",
+    "after": "432f192e2e035f96",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q10-b-i-ii": {
+    "status": "corrected",
+    "before": "cbe80801cb0860ec",
+    "after": "45c53c4772e437f5",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q10-b-iii-v": {
+    "status": "withdrawn",
+    "before": "31bedd3f7062ab99",
+    "replacementId": "chem-2023-ol-q10-b-i-ii",
+    "reason": "The scheme prices Q10(b)(i)-(vi) with one cell ((6 + 4 + [5 × 3])); carded once, as chem-2023-ol-q10-b-i-ii.",
+    "shipped": true
+   },
+   "chem-2023-ol-q10-b-vi": {
+    "status": "withdrawn",
+    "before": "6a1d8d17e650f4d9",
+    "replacementId": "chem-2023-ol-q10-b-i-ii",
+    "reason": "The scheme prices Q10(b)(i)-(vi) with one cell ((6 + 4 + [5 × 3])); carded once, as chem-2023-ol-q10-b-i-ii.",
+    "shipped": true
+   },
+   "chem-2023-ol-q10-c-i": {
+    "status": "corrected",
+    "before": "5d676722685052d3",
+    "after": "36e18ec846e48cff",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q10-c-ii-v": {
+    "status": "corrected",
+    "before": "434d74d920d04213",
+    "after": "22d45f5d2a77246f",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q10-c-iii": {
+    "status": "added",
+    "after": "e689ca8a8aceba60"
+   },
+   "chem-2023-ol-q10-c-iv": {
+    "status": "added",
+    "after": "677559386de4b914"
+   },
+   "chem-2023-ol-q10-c-v": {
+    "status": "added",
+    "after": "f09cec5f52ca58f2"
+   },
+   "chem-2023-ol-q10-c-vi": {
+    "status": "corrected",
+    "before": "f093a164cb3541e9",
+    "after": "61d90795bfdbd918",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-a-i-ii": {
+    "status": "corrected",
+    "before": "7c171e5877d2ff91",
+    "after": "396a24a8aad39c94",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q11-a-ii": {
+    "status": "added",
+    "after": "ab320a06f27c56a0"
+   },
+   "chem-2023-ol-q11-a-iii-iv": {
+    "status": "corrected",
+    "before": "2bea280fb4a290ab",
+    "after": "4f1174997f17c680",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q11-a-iv": {
+    "status": "added",
+    "after": "e74e38fe65b6bd91"
+   },
+   "chem-2023-ol-q11-a-v-vi": {
+    "status": "corrected",
+    "before": "e0865ece21db5e01",
+    "after": "238643c168d755d6",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q11-a-vi": {
+    "status": "added",
+    "after": "6a46a7a62eb25f65"
+   },
+   "chem-2023-ol-q11-b-i": {
+    "status": "corrected",
+    "before": "562bcf67967c4576",
+    "after": "9d8b4a219bdef0b6",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-b-ii": {
+    "status": "added",
+    "before": "d9ee1545e73c991d",
+    "after": "a32212774f34cff0",
+    "shipped": false
+   },
+   "chem-2023-ol-q11-b-iii": {
+    "status": "corrected",
+    "before": "c8641dd852a5e10f",
+    "after": "edc0911154331da5",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q11-b-iv-v": {
+    "status": "corrected",
+    "before": "45678a514bb98b92",
+    "after": "1ead13b44f3956d9",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-b-v": {
+    "status": "added",
+    "after": "0bc83dd911cfd3b9"
+   },
+   "chem-2023-ol-q11-c": {
+    "status": "added",
+    "after": "c3e546bb7ea1e522"
+   },
+   "chem-2023-ol-q11-d-a-i-ii": {
+    "status": "corrected",
+    "before": "434e2503ed2c2154",
+    "after": "0883cf5ef3aef7ee",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-d-a-ii": {
+    "status": "added",
+    "after": "595f5d9c8996ac80"
+   },
+   "chem-2023-ol-q11-d-a-iii": {
+    "status": "corrected",
+    "before": "941af7d6527f3ab2",
+    "after": "b6f595697c9c67bb",
+    "changed": [
+     "stem",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q11-d-a-iv-v": {
+    "status": "corrected",
+    "before": "ad76d5c58f60a13f",
+    "after": "5b9ea52153019602",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q11-d-a-v": {
+    "status": "added",
+    "after": "0fe3c469d252d796"
+   },
+   "chem-2023-ol-q11-d-a-vi": {
+    "status": "corrected",
+    "before": "c5c080ddd53a402c",
+    "after": "3d133bd8f88e49e8",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-d-b-i": {
+    "status": "corrected",
+    "before": "84749a4077fdfa7c",
+    "after": "52a6c6a71d251f9c",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q11-d-b-ii-iii": {
+    "status": "corrected",
+    "before": "d4a6c38d526fb784",
+    "after": "4fac4c12309228f8",
+    "changed": [
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q11-d-b-iii": {
+    "status": "added",
+    "after": "3d5c96bbb890badf"
+   },
+   "chem-2023-ol-q11-d-b-iv": {
+    "status": "corrected",
+    "before": "c176083e73acde86",
+    "after": "f4d25400ac10cd83",
+    "changed": [
+     "stem",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q11-d-b-v": {
+    "status": "corrected",
+    "before": "600d374a293b3273",
+    "after": "2368f23b223eaea8",
+    "changed": [
+     "stem",
+     "rows"
+    ]
+   },
+   "chem-2023-ol-q2-a": {
+    "status": "corrected",
+    "before": "c313103484b0925c",
+    "after": "4dd9632b0caa82b7",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q2-b-i-fig": {
+    "status": "corrected",
+    "before": "2317aed21aad292a",
+    "after": "c87f02840138c6f3",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2023-ol-q2-b-ii-fig": {
+    "status": "corrected",
+    "before": "561ae1300125e4da",
+    "after": "d7ff8ec7fc957798",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2023-ol-q2-b-iii-fig": {
+    "status": "corrected",
+    "before": "3951d349852e3cfc",
+    "after": "84542e03ef92df68",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2023-ol-q2-b-iv": {
+    "status": "corrected",
+    "before": "2c33a7603cd28ad3",
+    "after": "fd20fe377c6e04ee",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q2-c": {
+    "status": "corrected",
+    "before": "93a4e4ab578e5487",
+    "after": "7cea553816690c45",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q2-c-ii": {
+    "status": "added",
+    "after": "8b957984ed15a0a9"
+   },
+   "chem-2023-ol-q2-d-i": {
+    "status": "corrected",
+    "before": "2fa0f213ea797e59",
+    "after": "5a88be6cf1b65cfd",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q2-d-ii": {
+    "status": "corrected",
+    "before": "849cc572cf36f0a7",
+    "after": "99af492aa95064ad",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q2-d-iii": {
+    "status": "corrected",
+    "before": "1f7dc405d1227fe3",
+    "after": "62200b07f0d7708b",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q3-a-i": {
+    "status": "corrected",
+    "before": "35738ee7ee9843f1",
+    "after": "bc82d07845e56745",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q3-a-ii": {
+    "status": "corrected",
+    "before": "47354ee427681396",
+    "after": "1b16c575067bc8c8",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q3-a-iii-iv": {
+    "status": "corrected",
+    "before": "11e63ea51e0a5087",
+    "after": "cf95873ac1d1ebc7",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q3-a-iv": {
+    "status": "added",
+    "after": "8bb13098316b6260"
+   },
+   "chem-2023-ol-q3-b-i": {
+    "status": "corrected",
+    "before": "30075e3e6904b241",
+    "after": "056fa6ad7d6c6865",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q3-b-ii-iii": {
+    "status": "withdrawn",
+    "before": "6cb1b26a03ad196f",
+    "replacementId": "chem-2023-ol-q3-b-i",
+    "reason": "The scheme prices Q3(b)(i)-(v) with one cell ((6 + [6 × 3])); carded once, as chem-2023-ol-q3-b-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q3-b-iv-v": {
+    "status": "withdrawn",
+    "before": "d25d3d78768b41c8",
+    "replacementId": "chem-2023-ol-q3-b-i",
+    "reason": "The scheme prices Q3(b)(i)-(v) with one cell ((6 + [6 × 3])); carded once, as chem-2023-ol-q3-b-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q4-a": {
+    "status": "corrected",
+    "before": "7e393feb4da57d5f",
+    "after": "54b6c0dbe6789726",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-b": {
+    "status": "added",
+    "after": "16dcd277d0f61710"
+   },
+   "chem-2023-ol-q4-c": {
+    "status": "corrected",
+    "before": "1d5510085b3476ec",
+    "after": "5404e194cd85fea9",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-d": {
+    "status": "corrected",
+    "before": "91e8cb9ad011f967",
+    "after": "75a4b4a77562aecc",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-e": {
+    "status": "corrected",
+    "before": "783eacedecc99d30",
+    "after": "502d86512d014e59",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-f": {
+    "status": "corrected",
+    "before": "95a36c4396023056",
+    "after": "2b86119aab0ee6b8",
+    "changed": [
+     "questionText",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q4-g": {
+    "status": "corrected",
+    "before": "02c8e7ef8243e2fe",
+    "after": "a72c1caaac394062",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-h": {
+    "status": "corrected",
+    "before": "8c72c304ac3c6d19",
+    "after": "2a3d95ef92cc48ea",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-i": {
+    "status": "corrected",
+    "before": "25d7e6c862243b95",
+    "after": "094cbd78abc6bf52",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-j": {
+    "status": "corrected",
+    "before": "596732258cb34a62",
+    "after": "110aff0cecc6f76f",
+    "changed": [
+     "questionText",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q4-k-fig": {
+    "status": "corrected",
+    "before": "3e3d8795902f7950",
+    "after": "52d9e51118ce6556",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2023-ol-q4-l-a": {
+    "status": "corrected",
+    "before": "6705f2d47a30dac5",
+    "after": "37962600eae05141",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q4-l-b": {
+    "status": "corrected",
+    "before": "ed635b52a089b2d3",
+    "after": "e5625c7bf551a506",
+    "changed": [
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q5-a-i": {
+    "status": "corrected",
+    "before": "333684ce03925276",
+    "after": "27a3b716570f7e2d",
+    "changed": [
+     "topicId",
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q5-a-ii-iii": {
+    "status": "withdrawn",
+    "before": "f7c7633484244dfd",
+    "replacementId": "chem-2023-ol-q5-a-i",
+    "reason": "The scheme prices Q5(a)(i)-(iii) with one cell ([9 + 6 + 3]); carded once, as chem-2023-ol-q5-a-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q5-b-i-ii-iii": {
+    "status": "corrected",
+    "before": "31407c90fcb69d85",
+    "after": "a40185f496039f87",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q5-b-ii": {
+    "status": "added",
+    "after": "ffa4b13e5b9c910c"
+   },
+   "chem-2023-ol-q5-b-iii": {
+    "status": "added",
+    "after": "016deda8717adb58"
+   },
+   "chem-2023-ol-q5-b-iv-v-vi": {
+    "status": "corrected",
+    "before": "ac3f22506d27c1f0",
+    "after": "61e80b0b842f274c",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q5-b-v": {
+    "status": "added",
+    "after": "551dd66d5db2f033"
+   },
+   "chem-2023-ol-q5-b-vi": {
+    "status": "added",
+    "after": "fa0c5887980a1213"
+   },
+   "chem-2023-ol-q5-c": {
+    "status": "corrected",
+    "before": "725a432288dfda80",
+    "after": "42dce7e1805bcb50",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q6-a-i": {
+    "status": "corrected",
+    "before": "304aae9d4f565bbb",
+    "after": "04643ec2912a0b5e",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q6-a-ii-iii": {
+    "status": "withdrawn",
+    "before": "cc2a13aa91900a01",
+    "replacementId": "chem-2023-ol-q6-a-i",
+    "reason": "The scheme prices Q6(a)(i)-(iii) with one cell ([6 + 4 + 2 + 2]); carded once, as chem-2023-ol-q6-a-i.",
+    "shipped": true
+   },
+   "chem-2023-ol-q6-b": {
+    "status": "corrected",
+    "before": "4f7457a9c6b054a6",
+    "after": "908c83580916e819",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q6-b-i-iv": {
+    "status": "withdrawn",
+    "before": "95d8a5320b66ebee",
+    "replacementId": "chem-2023-ol-q6-b",
+    "reason": "Duplicated chem-2023-ol-q6-b (both cited Q6(b)(i)-(iv)).",
+    "shipped": false
+   },
+   "chem-2023-ol-q6-b-v": {
+    "status": "corrected",
+    "before": "9874697a7ea96e65",
+    "after": "36a7c6ca21a01eb3",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q6-c": {
+    "status": "added",
+    "after": "9bfb2b5102652eef"
+   },
+   "chem-2023-ol-q6-c-ii": {
+    "status": "withdrawn",
+    "before": "9a03393f51fefa83",
+    "replacementId": "chem-2023-ol-q6-c",
+    "reason": "The scheme prices Q6(c)(i)-(ii) with one cell ([8 + 2 + 2]); carded once, as chem-2023-ol-q6-c.",
+    "shipped": true
+   },
+   "chem-2023-ol-q7-a": {
+    "status": "corrected",
+    "before": "1c000632442cd175",
+    "after": "a36e3ad0c383db5d",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q7-b": {
+    "status": "corrected",
+    "before": "10b42e822c5072d6",
+    "after": "e93686fbb1a66379",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q7-b-ii": {
+    "status": "added",
+    "after": "b3845b2ef0afd471"
+   },
+   "chem-2023-ol-q7-c": {
+    "status": "corrected",
+    "before": "f2354464f5586031",
+    "after": "54ab62b6dc027e2c",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q7-c-ii": {
+    "status": "added",
+    "after": "93c01309505f25cc"
+   },
+   "chem-2023-ol-q7-d-i-ii": {
+    "status": "corrected",
+    "before": "acae7c60319d224f",
+    "after": "66f41e57e92376d1",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q7-d-ii": {
+    "status": "added",
+    "after": "461b26ad56cba53f"
+   },
+   "chem-2023-ol-q7-d-iii": {
+    "status": "corrected",
+    "before": "4aeeb95017087c9a",
+    "after": "81c83a1771706166",
+    "changed": [
+     "questionRef",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2023-ol-q7-d-iv": {
+    "status": "withdrawn",
+    "before": "e90c7e3c658c0b3c",
+    "replacementId": "chem-2023-ol-q7-d-iii",
+    "reason": "The scheme prices Q7(d)(iii)-(iv) with one cell ([9 + 3]); carded once, as chem-2023-ol-q7-d-iii.",
+    "shipped": true
+   },
+   "chem-2023-ol-q8-a-i": {
+    "status": "added",
+    "after": "3459c808327f8cfd"
+   },
+   "chem-2023-ol-q8-a-ii": {
+    "status": "corrected",
+    "before": "d3dfcc653191e760",
+    "after": "f457dff2273a95e2",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q8-b": {
+    "status": "added",
+    "after": "5b7a90ed214827b2"
+   },
+   "chem-2023-ol-q8-b-ii": {
+    "status": "withdrawn",
+    "before": "df896a57d24d3793",
+    "replacementId": "chem-2023-ol-q8-b",
+    "reason": "The scheme prices Q8(b)(i)-(ii) with one cell ([8 + 2 + 2]); carded once, as chem-2023-ol-q8-b.",
+    "shipped": true
+   },
+   "chem-2023-ol-q8-c": {
+    "status": "corrected",
+    "before": "d78342d63737fad2",
+    "after": "12aa74d831aae7d7",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q8-d-i": {
+    "status": "corrected",
+    "before": "172bb40904871b6e",
+    "after": "696befc8cb1c453a",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q9-a": {
+    "status": "corrected",
+    "before": "555d9fb5f40fcefb",
+    "after": "2196a225a49adbd5",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q9-b-i": {
+    "status": "corrected",
+    "before": "3dae8efde3fb4216",
+    "after": "6a1eed3556781bd0",
+    "changed": [
+     "section",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q9-b-ii": {
+    "status": "corrected",
+    "before": "cf5fe4eb4880ba3e",
+    "after": "b91b8234d9112b93",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q9-c": {
+    "status": "corrected",
+    "before": "6e0e5a62ba76b875",
+    "after": "08c03ad40885f1ec",
+    "changed": [
+     "section",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2023-ol-q9-d": {
+    "status": "corrected",
+    "before": "1d358ee67dde8ed4",
+    "after": "6a8a0157da31f14c",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   }
+  },
   "2024 HL": {
    "chem-2024-hl-q1-a-i": {
     "status": "corrected",
