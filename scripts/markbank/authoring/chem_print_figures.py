@@ -169,7 +169,7 @@ def _load_sitting_crops():
         if key in CROPS:
             raise SystemExit(f'{name}: {key} is already in CROPS')
         rows = json.load(open(os.path.join(folder, name)))
-        CROPS[key] = [(suf, src, page, tuple(tuple(r) for r in rect) if src == 'paper-panels'
+        CROPS[key] = [(suf, src, page, tuple(tuple(r) for r in rect) if src.endswith('-panels')
                        else tuple(rect)) for suf, src, page, rect in rows]
 
 
@@ -194,7 +194,7 @@ def render(year, lvl, source, page, rect):
         else os.path.join(SCHEMES, f'{year}-{lvl}.pdf')
     doc = fitz.open(path)
     pg = doc[page - 1]
-    if source == 'paper-panels':
+    if source in ('paper-panels', 'scheme-panels'):
         # Several regions of one page stacked into one picture, the way the
         # page prints them top to bottom: the question's setup and diagram,
         # then the one ask the card is for, without the sibling asks between.

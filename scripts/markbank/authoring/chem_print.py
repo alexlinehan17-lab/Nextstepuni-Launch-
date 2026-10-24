@@ -136,10 +136,18 @@ def _ligature_origins(page):
     for tr in page.get_texttrace():
         if 'Calibri' not in tr.get('font', ''):
             continue
-        for ch in tr['chars']:
+        chars = tr['chars']
+        for i, ch in enumerate(chars):
             rep = CALIBRI_LIGATURES.get(ch[1])
-            if rep:
-                out[(round(ch[2][0], 1), round(ch[2][1], 1))] = rep
+            if not rep:
+                continue
+            # A layer that already spells the ligature out follows the glyph
+            # with its other letters at the same origin, glyph id -1 ("t" 425,
+            # "t" -1 is "tt" as printed): nothing to expand.
+            nxt = chars[i + 1] if i + 1 < len(chars) else None
+            if nxt and nxt[1] == -1 and abs(nxt[2][0] - ch[2][0]) < 0.05:
+                continue
+            out[(round(ch[2][0], 1), round(ch[2][1], 1))] = rep
     return out
 
 
@@ -253,13 +261,102 @@ def _split_markers(lines):
 MISPRINTED = []
 
 
+# ── the labelled ("cue") scheme layout, 2010-2023 ───────────────────────────
+# "QUESTION 2" heads a question; the letter, roman and the examiner's cue in
+# capitals ("IDENTIFY:", "STATE and EXPLAIN:") open a row, then the answer, then
+# the mark cell in the right margin, "(3)" or "ANY THREE: (3 × 3)". The question
+# is not reprinted, so every line under a part that is not a marker is answer.
+QUESTION_HEAD = re.compile(r'^QUESTION\s+(\d{1,2})\b\.?\s*$', re.I)
+CUE_WORD = r"[A-Z]{2,}[A-Z’']*"
+CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)\s*:\s*')
+TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define|Write|Give|Draw|'
+                       r'How|Why|What|Find|Show|List|Outline|Deduce|Distinguish)\s*:\s*')
+ANY_CELL = re.compile(r'^ANY\s+(TWO|THREE|FOUR|FIVE|SIX)\s*:?\s*(\(.+\))\s*$', re.I)
+LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
+OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
+
+
+def is_cue_scheme(lines):
+    return any(QUESTION_HEAD.match(l.text) for l in lines)
+
+
+def cue_lines(lines):
+    """A labelled scheme's lines rewritten into the shape segments() reads:
+    question heads as "N.", markers and cues split off each row's start (the
+    cue dropped: it restates the ask), "ANY THREE: (3 × 3)" as an aside and a
+    cell, and a cell set at the end of an answer line split off as a cell.
+    The scheme's outline pages (the tariffs listed question by question) are
+    left out: they are a summary, not the scheme."""
+    outline = {l.page for l in lines if OUTLINE_PAGE.match(l.text)}
+    out = []
+    for l in lines:
+        if l.page in outline:
+            continue
+        t = l.text
+        m = QUESTION_HEAD.match(t)
+        if m:
+            out.append(Line(l.page, (30, l.y0, 60, l.y1), m.group(1) + '.', True))
+            continue
+        m = ANY_CELL.match(t)
+        if m and l.x0 > 350:
+            out.append(Line(l.page, (l.x0, l.y0, l.x0 + 60, l.y1), f'[any {m.group(1).lower()}]', False))
+            out.append(Line(l.page, (max(l.x1 - 40, 481), l.y0, l.x1, l.y1),
+                            '[' + m.group(2).strip()[1:-1] + ']', True))
+            continue
+        x = l.x0
+        while True:
+            m = LEAD_TOKEN.match(t)
+            if m:
+                out.append(Line(l.page, (x, l.y0, x + 15, l.y1), f'({m.group(1)})', False))
+                t, x = t[m.end():], x + 20
+                continue
+            m = CUE.match(t) or TITLE_CUE.match(t)
+            if m:
+                t, x = t[m.end():], x + 30
+                continue
+            break
+        t = t.strip()
+        if not t:
+            continue
+        if ROUND_CELL.match(t) and l.x0 > 350:
+            out.append(Line(l.page, (max(l.x0, 481), l.y0, l.x1, l.y1), '[' + t[1:-1] + ']', True))
+            continue
+        m = TRAILING_ROUND.search(t)
+        if m and m.start() > 0:
+            out.append(Line(l.page, (x, l.y0, l.x1 - 20, l.y1), t[:m.start()], l.bold, l.math))
+            out.append(Line(l.page, (max(l.x1 - 20, 481), l.y0, l.x1, l.y1),
+                            '[' + m.group(1).strip()[1:-1] + ']', True))
+            continue
+        out.append(Line(l.page, (x, l.y0, l.x1, l.y1), t, l.bold, l.math))
+    return out
+
+
 class Seg:
-    """One printed part: everything from its marker up to the next marker."""
-    __slots__ = ('key', 'marker', 'text', 'answers', 'tail')
+    """One printed part: everything from its marker up to the next marker.
+    `marks_at` records, for a paper part, where in its text each printed mark
+    fell: (number of text lines before it, the mark)."""
+    __slots__ = ('key', 'marker', 'text', 'answers', 'tail', 'marks_at')
 
     def __init__(self, key, marker):
         self.key, self.marker = key, marker
-        self.text, self.answers, self.tail = [], [], []
+        self.text, self.answers, self.tail, self.marks_at = [], [], [], []
+
+    def lead_from(self):
+        """Where the paper's lead-in for the NEXT part starts in this part's
+        text, read from the page when no scheme reprint can say: after the
+        part's last printed mark, or at the first line set back from the
+        part's own indent (a lead-in sits at the letter's or question's
+        indent, the ask at the part's)."""
+        if not self.text:
+            return None
+        if self.marks_at:
+            at = self.marks_at[-1][0]
+            return at if at < len(self.text) else None
+        indent = self.text[0].x0
+        for i, l in enumerate(self.text[1:], 1):
+            if l.x0 < indent - 10:
+                return i
+        return None
 
     def __repr__(self):
         return f'<Seg {self.key} {self.marker!r}>'
@@ -269,7 +366,7 @@ def joined(lines):
     return tidy(' '.join(l.text for l in lines))
 
 
-def segments(lines, first_q='1', answers=True, alt_letters=()):
+def segments(lines, first_q='1', answers=True, alt_letters=(), cue=False):
     """Split printed lines into parts keyed (q, letter, roman, alt).
 
     The PAPER and the SCHEME number parts the same way, so one reader serves
@@ -357,6 +454,8 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
             if pm and (l.x0 > 400 or (not answers and l.x0 > 250)):
                 if pm.group(1):
                     marks[(q, letter, None, None)] = int(pm.group(1))
+                    if not answers and cur is not None:
+                        cur.marks_at.append((len(cur.text), int(pm.group(1))))
                 continue
             lm = LETTER.match(t)
             rm = ROMAN.match(t)
@@ -392,7 +491,7 @@ def segments(lines, first_q='1', answers=True, alt_letters=()):
                 cur = Seg((q, letter, roman, alt), t)
                 segs.append(cur)
                 continue
-        if answers and (l.bold or MARK_CELL.match(t) or (l.math and id(l) in math_rows)):
+        if answers and (cue or l.bold or MARK_CELL.match(t) or (l.math and id(l) in math_rows)):
             cur.answers.append(l)
         elif answers and cur.answers:
             cur.tail.append(l)
@@ -567,6 +666,9 @@ class Item:
             # end of a row offers the next row as an alternative.
             if t.endswith('/') and not t.endswith('//'):
                 continue
+            if t.endswith(','):
+                continue        # a list broken across rows: "..., rough titration,"
+
             if t.endswith('//') or r.x1 < wrap_x:
                 pts.append(tidy(' '.join(cur)).rstrip('/ ').strip())
                 cur = []
@@ -583,6 +685,13 @@ class Item:
         "equally acceptable wording of one answer", since the student is told
         to give two of them."""
         if '//' not in self.text and any(ANY.match(a) for a in self.asides):
+            pts = self.points(wrap_x=500)
+            if len(pts) > 1:
+                # A menu printed one option to a row (2024 OL Q2(a)(ii)): each
+                # row is an option, its single solidi alternative wordings. A
+                # row runs on only when it reaches the text column's edge
+                # (~520) or ends in a comma, not merely past 440.
+                return pts
             if ' / ' not in self.text and ', ' in self.text:
                 # "charging, melting, refining, tapping, casting [any three]"
                 return [o.strip() for o in self.text.split(', ') if o.strip()]
@@ -716,9 +825,16 @@ class Printed:
         self.scheme_lines = lines
         self.pseg, self.marks = segments(self.paper_lines, answers=False)
         alt_letters = {s.key[:2] for s in self.pseg if s.key[3]}
-        self.sseg, _ = segments(self.scheme_lines, answers=True, alt_letters=alt_letters)
+        self.cue = is_cue_scheme(self.scheme_lines)
+        if self.cue:
+            self.scheme_lines = cue_lines(self.scheme_lines)
+        self.sseg, _ = segments(self.scheme_lines, answers=True, alt_letters=alt_letters,
+                                cue=self.cue)
         self.scheme_md = open(os.path.join(SCHEMES, f'{year}-{lvl}.md')).read()
-        self.scheme_norm = norm(self.scheme_md)
+        # The gate folds the SEC's ligature glyphs before it compares ("soŌ"
+        # is "soft"); so does this guide to it.
+        lig = ligatures()
+        self.scheme_norm = norm(''.join(lig.get(c, c) for c in self.scheme_md))
         learn_repairs(l.text for l in self.paper_lines + self.scheme_lines)
         self.inexact = []
 
@@ -741,7 +857,8 @@ class Printed:
             if not inside:
                 kept.append(l)
             elif LETTER.match(l.text) or ROMAN.match(l.text) or PAPER_MARK.match(l.text) \
-                    or (QNUM.match(l.text) and l.x0 < 70):
+                    or (QNUM.match(l.text) and l.x0 < 70 and l.text.endswith('.')):
+                # (A table's plain "1", a group number, is not a question's.)
                 raise ValueError(f'a figure crop covers the marker {l.text!r} on page {l.page}')
         return kept
 
@@ -812,12 +929,16 @@ class Printed:
     # ── the paper ────────────────────────────────────────────────────────
     def _split(self, key):
         """(the paper's ask for this part, the lead-in it prints after it)."""
-        p = joined(self.pseg_of(key).text)
+        seg = self.pseg_of(key)
+        p = joined(seg.text)
         try:
             s = joined(self.sseg_of(key).text)
         except KeyError:
             s = ''
         if not s:
+            at = seg.lead_from() if self.cue else None
+            if at:
+                return joined(seg.text[:at]), joined(seg.text[at:])
             return p, ''
         ask, rest, exact = cut_to(p, s)
         if not exact:

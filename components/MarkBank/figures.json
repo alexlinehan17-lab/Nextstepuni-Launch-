@@ -38300,5 +38300,152 @@
   "year": 2024,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q2a": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q2a.png",
+  "md5": "bc2edd419e232d8649eb66fbcee16abe",
+  "alt": "A long thin glass pipette drawn upright, a bulb in the middle of its stem, labelled A at its tip.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q2(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q2-table": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q2-table.png",
+  "md5": "d967d3ce91f5a1c2b58847193e523b9b",
+  "alt": "The titration results table: approximate titration 20.9 cm³, first accurate titration 20.6 cm³, second accurate titration 20.5 cm³.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q2(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q4f": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q4f.png",
+  "md5": "f12b6882f9b90348aa0a2d7b0dd82b66",
+  "alt": "Two diamond-shaped hazard symbols: A shows a flame over a circle; B shows liquid from two test tubes eating into a bar and a hand.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(f)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q4k": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q4k.png",
+  "md5": "6c606d028f2fa0c9c56625b33a682658",
+  "alt": "Two six-membered rings of carbon atoms drawn as hexagons: X with a circle inside it, Y without.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(k)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q4l-b": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q4l-b.png",
+  "md5": "4377f89b785544d5dca14b9f4b745409",
+  "alt": "A black-and-white photograph of the head and shoulders of a young woman with dark hair, the scientist the question asks about.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q4(l)B",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q7": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q7.png",
+  "md5": "bebf85f04a32ddc692f37564d59eb193",
+  "alt": "Two pieces of Question 7's print stacked. Above, the apparatus: a conical flask holding hydrogen peroxide with manganese dioxide (catalyst) on the bottom, a delivery tube from its stopper into a gas syringe marked from 0 to 100, and a stopwatch beside it. Below, the results table: time (minutes) 0, 2, 4, 6, 8, 10, 12, 14, 16, 18 against volume of O₂ (cm³) 0, 29, 48, 63, 73, 81, 87, 90, 92, 92.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q7",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q5b-print": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q5b-print.png",
+  "md5": "45b8d679693df21611c22ce8ae13643d",
+  "alt": "Question 5's print as the paper sets it: the opening ('The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below.'), the table of the first four periods with each element's atomic number, symbol and electronegativity (N 3.04, F 3.98 among them), 'Electronegativity values increase across a period of the periodic table.', then part (b), 'Nitrogen trifluoride (NF₃) is a greenhouse gas.', with parts (i) to (vii) and the mark (28).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q8b-ii-print": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q8b-ii-print.png",
+  "md5": "a2233eb7717e66ed1968918e9e8600e1",
+  "alt": "Question 8's print as the paper sets it: 'Study the series of reactions shown below and answer the following questions.', the series C₂H₄ (Q) to C₂H₅OH (R) to S, and S down to CH₃COOH (T); then part (b), 'Compound S is an aldehyde. It reacts with Fehling's reagent to produce compound T.', and part (ii), 'Draw the molecular structure of compound S, including all atoms and bonds.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(b)(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-scheme-q5b-iv": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-scheme-q5b-iv.png",
+  "md5": "fc255c05dafbc61452942894647c9d19",
+  "alt": "The marking scheme's own answer to 2024 OL Q5(b)(iv), as the State Examinations Commission printed it: a dot and cross diagram of NF₃: nitrogen in the centre with its own lone pair (two crosses), sharing one electron pair (one dot and one cross) with each of three fluorine atoms, each fluorine carrying three lone pairs.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5(b)(iv)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-scheme-q6a-ii": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-scheme-q6a-ii.png",
+  "md5": "c46dbbc85faea61a6254c84effaba576",
+  "alt": "The marking scheme's own answer to 2024 OL Q6(a)(ii), as the State Examinations Commission printed it: the full structural formulae of the two isomers of C₄H₁₀, stacked: butane, a straight chain of four carbon atoms, and methylpropane, a central carbon bonded to three CH₃ groups and a hydrogen, every hydrogen drawn.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q6(a)(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-scheme-q8b-ii": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-scheme-q8b-ii.png",
+  "md5": "73b1faca3ca1347e57d68d290aea5fdc",
+  "alt": "The marking scheme's own answer to 2024 OL Q8(b)(ii), as the State Examinations Commission printed it: the full structural formula of ethanal, a CH₃ group bonded to a carbon that carries a double-bonded oxygen and a hydrogen.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q8(b)(ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-scheme-q10b-i": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-scheme-q10b-i.png",
+  "md5": "e8a583d6400583507bf7c471075f4a3c",
+  "alt": "The marking scheme's own answer to 2024 OL Q10(b)(i), as the State Examinations Commission printed it: the Kc expression set as a fraction, [N₂O₄] over [NO₂]².",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q10(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q9c-table": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q9c-table.png",
+  "md5": "9bc661674739ba9092688bbcd6976a49",
+  "alt": "The table of water-treatment stages with the stage names left blank: Stage A, water is passed through a wire mesh to remove any floating debris; Stage B, chemicals are added to the water to help small suspended solids clump together; Stage C, suspended solids are allowed to settle to the bottom of large tanks; Stage D, water is passed through beds of sand to remove suspended solids; Stage E, harmful micro-organisms in the water are killed; Stage F, chemicals are added to the water which can help strengthen teeth; Stage G, small amounts of acid or base are added to the water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q9(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
  }
 }

@@ -93,6 +93,11 @@
    "reason": "Duplicated chem-2024-hl-q11-db-i-iii (both cited Q11(d)B(i)-(iii)). Each part is now a card of its own; Q11(d)B(i) is chem-2024-hl-q11-db-i-iii, and the blast furnace figure is on every Q11(d)B card.",
    "drop": true,
    "replacementId": "chem-2024-hl-q11-db-i-iii"
+  },
+  "chem-2024-ol-q8-a-iv": {
+   "reason": "The scheme prices Q8(a)(i)-(iv) with one cell ([8 + 6 + 2 + 2]), so they are one task; carded once, as chem-2024-ol-q8-a-iii (the first pre-audit card on it).",
+   "drop": true,
+   "replacementId": "chem-2024-ol-q8-a-iii"
   }
  },
  "biology": {

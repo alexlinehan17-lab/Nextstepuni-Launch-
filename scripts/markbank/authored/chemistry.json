@@ -24838,11 +24838,11 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q6(a)(i)",
-  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C4H10 are present in LPG.",
   "questionText": "What are isomers?",
+  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C₄H₁₀ are present in LPG.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(4 + 2)"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -24850,16 +24850,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "same molecular formulae",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "different structures",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints one combined tariff (4 + 2) at the end of the part rather than a value beside each line, so the marks are awarded in descending order to however many points are earned and no per-row value exists. Q6(a)(ii) asked candidates to draw the molecular structure of each C4H10 isomer — skipped (drawing question)."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q6-a-iii-v",
@@ -24869,47 +24873,41 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q6(a)(iii)-(v)",
-  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C4H10 are present in LPG. Part (ii) asked for the molecular structure of each of the two isomers with the molecular formula C4H10.",
-  "questionText": "(iii) For each of the structures you drew in (ii), state the systematic IUPAC name of the isomer. (iv) Identify a component of LPG which does not have the molecular formula C4H10. (v) Identify the sulfur-containing compounds which may be added to give LPG an unpleasant smell, warning of leaks.",
+  "questionRef": "2024 OL Q6(a)(iii)–(v)",
+  "questionText": "(iii) For each of the structures you drew in (ii), state the systematic IUPAC name of the isomer. (iv) Identify a component of LPG which does not have the molecular formula C₄H₁₀. (v) Identify the sulfur-containing compounds which may be added to give LPG an unpleasant smell, warning of leaks.",
+  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C₄H₁₀ are present in LPG.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2 + 2 + 2"
+   "notation": "[4 + 2 + 2 + 2]"
   },
   "totalMarks": 10,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "butane",
-    "marks": null
+    "verbatim": "butane methylpropane",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "methylpropane",
-    "marks": null
+    "verbatim": "propane",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "propane",
-    "accepts": [
-     "C3H8"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "mercaptans",
-    "accepts": [
-     "thiols"
-    ],
-    "marks": null
+    "verbatim": "mercaptans / thiols",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "(iii) refers to the candidate's own drawing in (ii), but the two isomers are fully determined by the molecular formula C4H10 given in the stem, so no figure is needed. Four marking points share a combined (4 + 2 + 2 + 2) allocation."
+  "notes": "The scheme prices these points together as [4 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q6-b",
@@ -24919,36 +24917,38 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q6(b)",
-  "stem": "E10 petrol is a fuel containing up to 10% bioethanol. In 2023, E10 petrol replaced E5 petrol in Ireland. E10 petrol and E5 petrol have different octane numbers.",
+  "questionRef": "2024 OL Q6(b)(i)–(iv)",
   "questionText": "(i) What is meant by the term octane number? (ii) State two ways of increasing the octane number of a fuel. (iii) Explain the significance of the compounds heptane and 2,2,4-trimethylpentane in relation to octane number. (iv) Petrol is obtained by the fractional distillation of crude oil. State one property that the molecules in the petrol fraction have in common with each other.",
+  "stem": "E10 petrol is a fuel containing up to 10% bioethanol. In 2023, E10 petrol replaced E5 petrol in Ireland. E10 petrol and E5 petrol have different octane numbers.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 3 + 3 + 2 + 2"
+   "notation": "[9 + 6 + 3 + 3 + 2 + 2]"
   },
   "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "measure of a fuels tendency to resist",
+    "verbatim": "measure of a fuels tendency to resist/cause",
     "marks": null,
-    "contextNote": "The scheme prints \"resist/cause\" — either verb is equally acceptable."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "auto-ignition",
-    "accepts": [
-     "knocking"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "auto-ignition / knocking",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "anyN",
     "verbatim": "isomerisation",
     "marks": null,
+    "openList": true,
+    "contextNote": "Any 2 of these.",
     "group": {
      "claimMax": 2,
      "options": [
@@ -24958,31 +24958,26 @@
       "adding oxygenates",
       "adding lead (compounds)"
      ]
-    },
-    "contextNote": "Any two of the listed ways score. \"dehydrocylisation\" is reproduced exactly as the scheme spells it."
+    }
    },
    {
     "id": "r-4",
-    "kind": "alt",
-    "verbatim": "reference compounds",
-    "accepts": [
-     "octane numbers of 0 and 100"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "reference compounds / octane numbers of 0 and 100",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
-    "verbatim": "boiling point (range)",
-    "accepts": [
-     "mass",
-     "size",
-     "number of atoms"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "boiling point (range) / mass / size / number of atoms",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Six marking points across (i)-(iv) share one combined allocation (9 + 6 + 3 + 3 + 2 + 2 = 25); the anyN row for (ii) absorbs two of those points, keeping the card to the five-row maximum."
+  "notes": "The scheme prices these points together as [9 + 6 + 3 + 3 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q7-a-i",
@@ -24993,8 +24988,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q7(a)(i)",
-  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated. The oxygen (O2) gas produced was collected in a gas syringe.",
   "questionText": "Define rate of reaction.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25005,16 +25001,18 @@
     "kind": "point",
     "verbatim": "change of concentration",
     "marks": 3,
-    "contextNote": "[allow 3 marks for reference to speed]"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "with respect to time",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [allow 3 marks for reference to speed]"
    }
-  ],
-  "notes": "Each marking point carries its own printed (3)."
+  ]
  },
  {
   "id": "chem-2024-ol-q7-b-i",
@@ -25025,35 +25023,33 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q7(b)(i)",
-  "stem": "Hydrogen peroxide (H2O2) is decomposed using manganese dioxide as a catalyst, and the oxygen produced is collected in a gas syringe.",
   "questionText": "Explain why the reaction slows down as it proceeds.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(4 + 2)"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "reactant",
-    "accepts": [
-     "hydrogen peroxide"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "reactant / hydrogen peroxide",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "decreases concentration",
-    "accepts": [
-     "used up"
-    ],
+    "kind": "point",
+    "verbatim": "decreases concentration / used up",
     "marks": null,
-    "contextNote": "key words must appear in the correct context, e.g. the concentration of the hydrogen peroxide decreases as it is used up"
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints one combined tariff (4 + 2) after the second marking line, so the two points do not carry fixed individual values."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q7-b-ii",
@@ -25064,11 +25060,12 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q7(b)(ii)",
-  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) was measured using a fine powder of manganese dioxide as the catalyst.",
-  "questionText": "How might the rate of reaction be different if the same mass of manganese dioxide was used but in the form of large pellets? Explain your answer.",
+  "questionText": "The results in the table above were obtained using a fine powder of manganese dioxide. How might the rate of reaction be different if the same mass of manganese dioxide was used but in the form of large pellets? Explain your answer.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 2)"
+   "notation": "[6 + 2]"
   },
   "totalMarks": 8,
   "rows": [
@@ -25076,96 +25073,89 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "rate decreases",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "smaller surface area (of catalyst)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The question's opening clause referring to 'the table above' is carried in the stem; the table values are not needed to answer. The scheme prints one combined tariff (6 + 2), so no per-row value exists."
+  "notes": "The scheme prices these points together as [6 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q7-c",
   "topicId": "chem-3-2",
-  "conceptId": "enzymes-as-biological-catalysts",
+  "conceptId": "what-an-enzyme-is",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q7(c)",
+  "questionRef": "2024 OL Q7(c)(i)",
+  "questionText": "What is an enzyme?",
   "stem": "Liver contains an enzyme which can decompose hydrogen peroxide.",
-  "questionText": "(i) What is an enzyme? (ii) Name an enzyme.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "biological",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "catalyst",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "catalase",
     "marks": 3,
     "openList": true,
-    "contextNote": "scheme gives this as an example - any correctly named enzyme is acceptable"
+    "contextNote": ""
    }
-  ],
-  "notes": "Each of the three marking points carries its own printed (3)."
+  ]
  },
  {
   "id": "chem-2024-ol-q8-b-iii-iv",
   "topicId": "chem-4-2",
-  "conceptId": "fehlings-test-for-aldehydes",
+  "conceptId": "fehlings-colour-change-with-an-aldehyde",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q8(b)(iii)-(iv)",
-  "stem": "Compound S is an aldehyde. It reacts with Fehling's reagent to produce compound T.",
-  "questionText": "(iii) Describe the colour change that occurs when compound S reacts with Fehling's reagent. (iv) Identify the metal element in Fehling's reagent which is responsible for the colour change observed.",
+  "questionRef": "2024 OL Q8(b)(iii)",
+  "questionText": "Describe the colour change that occurs when compound S reacts with Fehling’s reagent.",
+  "stem": "Study the series of reactions shown below and answer the following questions. Compound S is an aldehyde. It reacts with Fehling’s reagent to produce compound T.",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
     "verbatim": "blue",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "to red",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "copper",
-    "accepts": [
-     "Cu"
-    ],
     "marks": 3,
-    "contextNote": "name or formula/symbol accepted"
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Q8(a) skipped entirely - every part depends on the printed series-of-reactions diagram (compounds Q, R, T), which the scheme does not reproduce, and its parts share one tariff. Q8(b)(i) skipped for the same reason; Q8(b)(ii) skipped as a drawing question."
+  ]
  },
  {
   "id": "chem-2024-ol-q8-c",
@@ -25175,39 +25165,42 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q8(c)",
-  "stem": "Compound T is ethanoic acid. A gas is produced when a clean piece of magnesium (Mg) ribbon is added to a test tube containing a solution of compound T.",
+  "questionRef": "2024 OL Q8(c)(i)–(ii)",
   "questionText": "(i) Name the gas produced. (ii) What is observed when a lighted taper is held at the mouth of the test tube?",
+  "stem": "Study the series of reactions shown below and answer the following questions. A gas is produced when a clean piece of magnesium (Mg) ribbon is added to a test tube containing a solution of compound T.",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 3 + 2)"
+   "notation": "[6 + 3 + 2]"
   },
   "totalMarks": 11,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "hydrogen",
-    "accepts": [
-     "H",
-     "H2"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "hydrogen / H / H₂",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "burns",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "with a pop",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The identity of compound T is stated in the stem using the scheme's own answer to Q8(a)(iii) ('ethanoic acid'), because the reaction-series diagram is not reproduced; without it the part would be unanswerable. Three answer elements share the ordered tariff (6 + 3 + 2)."
+  "notes": "The scheme prices these points together as [6 + 3 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q9-a-i",
@@ -25227,37 +25220,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "good tendency to",
+    "verbatim": "good tendency to // fully dissociates (in water)",
     "marks": 3,
-    "route": "a",
-    "contextNote": "Bronsted-Lowry route"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "accept H+",
+    "verbatim": "accept H⁺ // to produce OH⁻",
     "marks": 3,
-    "route": "a",
-    "contextNote": "Bronsted-Lowry route"
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "fully dissociates (in water)",
-    "marks": 3,
-    "route": "b",
-    "contextNote": "Arrhenius route"
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "to produce OH–",
-    "marks": 3,
-    "route": "b",
-    "contextNote": "Arrhenius route"
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme prints // on both marking lines. A partial answer from one side of the // may not be taken in conjunction with a partial answer from the other side, so each route sums to the 6 marks available."
+  ]
  },
  {
   "id": "chem-2024-ol-q9-a-ii",
@@ -25268,8 +25244,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q9(a)(ii)",
-  "stem": "When a strong base reacts with a strong acid, a neutralisation reaction occurs.",
-  "questionText": "Would you expect heat to be absorbed or released during neutralisation?",
+  "questionText": "When a strong base reacts with a strong acid, a neutralisation reaction occurs. Would you expect heat to be absorbed or released during neutralisation?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25279,10 +25254,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "released",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Single printed (3)."
+  ]
  },
  {
   "id": "chem-2024-ol-q9-b",
@@ -25292,55 +25268,65 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q9(b)",
-  "stem": "A neutralisation reaction occurs between 0.01 M hydrochloric acid (HCl) and a 0.01 M solution of sodium hydroxide (NaOH).",
+  "questionRef": "2024 OL Q9(b)(i)–(iv)",
   "questionText": "(i) Define pH. (ii) Calculate the pH of the HCl. (iii) Calculate the pH of the NaOH solution. (iv) Outline one limitation of the pH scale.",
+  "stem": "A neutralisation reaction occurs between 0.01 M hydrochloric acid (HCl) and a 0.01 M solution of sodium hydroxide (NaOH).",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 4 + 2 + 2 + 2 + 2)"
+   "notation": "[6 + 4 + 2 + 2 + 2 + 2]"
   },
   "totalMarks": 18,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "–log10[H+]",
+    "verbatim": "–log₁₀",
     "marks": null,
-    "contextNote": "(i) definition of pH"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "–log10[0.01]",
+    "verbatim": "[H⁺]",
     "marks": null,
-    "contextNote": "(ii) substitution for the 0.01 M HCl"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "= 2",
+    "verbatim": "–log₁₀[0.01]",
     "marks": null,
-    "contextNote": "(ii) pH of the HCl"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "14 + log10[0.01] = 12",
+    "verbatim": "= 2",
     "marks": null,
-    "contextNote": "(iii) pH of the NaOH solution"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
-    "verbatim": "only works for aqueous solutions",
-    "accepts": [
-     "not useful for very concentrated solutions"
-    ],
+    "kind": "point",
+    "verbatim": "14 + log₁₀[0.01] = 12",
     "marks": null,
-    "contextNote": "(iv)"
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "only works for aqueous solutions / not useful for very concentrated solutions",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Carded because the scheme awards discrete, checkable points (the pH formula and each stated pH value), not just working. The scheme's six mark values are shared across (i)-(iv); to stay within the five-row limit the (iii) substitution and its answer are kept on the single scheme line as printed."
+  "notes": "The scheme prices these points together as [6 + 4 + 2 + 2 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q10-a-i",
@@ -25351,8 +25337,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q10(a)(i)",
-  "stem": "Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food. The underlined term is 'organic'.",
   "questionText": "Explain the underlined term.",
+  "stem": "Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25360,15 +25346,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "carbon-containing",
-    "accepts": [
-     "natural"
-    ],
-    "marks": 4
+    "kind": "point",
+    "verbatim": "carbon-containing / natural",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The underlining is lost in extraction; the underlined word is identified in the stem from the scheme's answer. Single printed (4)."
+  ]
  },
  {
   "id": "chem-2024-ol-q10-a-iv",
@@ -25380,6 +25364,7 @@
   "section": "B",
   "questionRef": "2024 OL Q10(a)(iv)",
   "questionText": "Identify a chemical compound that has the same molecular formula as its empirical formula.",
+  "stem": "Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food. Following analysis, a sample of multistriatin was found to contain 70.59 % carbon, 10.59 % hydrogen and 18.82 % oxygen by mass.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25388,16 +25373,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "H2O",
-    "accepts": [
-     "water"
-    ],
+    "verbatim": "e.g. H₂O",
     "marks": 3,
     "openList": true,
-    "contextNote": "scheme gives this as an example; name or formula accepted"
+    "contextNote": ""
    }
-  ],
-  "notes": "Q10(a)(ii) and (a)(iii) skipped - the scheme shows only worked arithmetic (percentage/atomic-mass divisions and a ratio scale-up), which a student cannot self-mark as discrete content points."
+  ]
  },
  {
   "id": "chem-2024-ol-q10-b-ii",
@@ -25408,11 +25389,11 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q10(b)(ii)",
-  "stem": "Consider the equilibrium described by the following balanced chemical equation: 2NO2(g) = N2O4(g), delta-H = –57.2 kJ mol–1. Nitrogen dioxide (NO2) has a dark brown colour. Dinitrogen tetroxide (N2O4) is colourless. A mixture of NO2 and N2O4 is allowed to reach equilibrium. The mixture has a light brown colour.",
   "questionText": "What would be observed in the equilibrium mixture if the temperature was increased? Justify your answer.",
+  "stem": "Consider the equilibrium described by the following balanced chemical equation: 2NO₂(g) ⇌ N₂O₄(g) ΔH = –57.2 kJ mol⁻¹ Nitrogen dioxide (NO₂) has a dark brown colour. Dinitrogen tetroxide (N₂O₄) is colourless. A mixture of NO₂ and N₂O₄ is allowed to reach equilibrium. The mixture has a light brown colour.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(7 + 2)"
+   "notation": "[7 + 2]"
   },
   "totalMarks": 9,
   "rows": [
@@ -25420,19 +25401,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "darker brown colour",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "endothermic reaction favoured",
-    "accepts": [
-     "reverse reaction favoured"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "endothermic reaction favoured / reverse reaction favoured",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "All the data needed is textual (equation, delta-H, colours). The scheme prints one combined tariff (7 + 2), so no per-row value exists."
+  "notes": "The scheme prices these points together as [7 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q10-b-iii",
@@ -25443,11 +25425,11 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q10(b)(iii)",
-  "stem": "Consider the equilibrium described by the following balanced chemical equation: 2NO2(g) = N2O4(g), delta-H = –57.2 kJ mol–1. Nitrogen dioxide (NO2) has a dark brown colour. Dinitrogen tetroxide (N2O4) is colourless. A mixture of NO2 and N2O4 is allowed to reach equilibrium. The mixture has a light brown colour.",
   "questionText": "What would be observed in the equilibrium mixture if the pressure was increased? Justify your answer.",
+  "stem": "Consider the equilibrium described by the following balanced chemical equation: 2NO₂(g) ⇌ N₂O₄(g) ΔH = –57.2 kJ mol⁻¹ Nitrogen dioxide (NO₂) has a dark brown colour. Dinitrogen tetroxide (N₂O₄) is colourless. A mixture of NO₂ and N₂O₄ is allowed to reach equilibrium. The mixture has a light brown colour.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(7 + 2)"
+   "notation": "[7 + 2]"
   },
   "totalMarks": 9,
   "rows": [
@@ -25455,20 +25437,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "paler brown colour",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "reaction with fewer moles/molecules (of gas) favoured",
-    "accepts": [
-     "reaction with fewer molecules (of gas) favoured"
-    ],
     "marks": null,
-    "contextNote": "scheme wording: reaction with fewer moles/molecules (of gas) favoured - the bracketed '(of gas)' is not required this year"
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints one combined tariff (7 + 2), so no per-row value exists. Q10(b)(i) (the Kc expression) is skipped - the answer is a stacked fraction that cannot be written verbatim without a solidus that would read as an alternatives separator."
+  "notes": "The scheme prices these points together as [7 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q10-c-i",
@@ -25479,11 +25461,11 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q10(c)(i)",
-  "stem": "In Ireland, high levels of radon–222 are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle. The underlined term is 'half-life'.",
   "questionText": "Explain the underlined term.",
+  "stem": "In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(4 + 2)"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -25491,19 +25473,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "time taken",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "for half a sample to decay",
-    "accepts": [
-     "for activity to half"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "for half a sample to decay / for activity to half",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The underlining is lost in extraction; the underlined term is identified in the stem from the scheme's answer. The scheme prints one combined tariff (4 + 2), so no per-row value exists."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q10-c-ii-iv",
@@ -25513,35 +25496,41 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q10(c)(ii)-(iv)",
-  "stem": "In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock.",
+  "questionRef": "2024 OL Q10(c)(ii)–(iv)",
   "questionText": "(ii) How many protons are present in an atom of ²²²₈₆Rn? (iii) How many neutrons are present in an atom of ²²²₈₆Rn? (iv) How many electrons are present in a neutral atom of ²²²₈₆Rn?",
+  "stem": "In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(8 + 2 + 2)"
+   "notation": "[8 + 2 + 2]"
   },
   "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Protons — 86",
-    "marks": null
+    "verbatim": "86",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Neutrons — 222 – 86 = 136",
-    "marks": null
+    "verbatim": "222 – 86 = 136",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Electrons — 86",
-    "marks": null
+    "verbatim": "86",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Three answer elements share the ordered tariff (8 + 2 + 2). Label prefixes added so the three numeric answers are distinguishable; the text after each em dash is the scheme's."
+  "notes": "The scheme prices these points together as [8 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q10-c-v",
@@ -25552,8 +25541,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q10(c)(v)",
-  "stem": "Radon–222 decays by emitting an alpha particle.",
   "questionText": "What is an alpha particle?",
+  "stem": "In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25562,33 +25551,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "helium",
+    "verbatim": "helium // two protons",
     "marks": 2,
-    "route": "a"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "nucleus",
+    "verbatim": "nucleus // two neutrons",
     "marks": 2,
-    "route": "a"
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "two protons",
-    "marks": 2,
-    "route": "b"
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "two neutrons",
-    "marks": 2,
-    "route": "b"
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme prints // on both marking lines: 'helium // two protons' and 'nucleus // two neutrons'. A partial answer from one side may not be combined with a partial answer from the other, so each route sums to the 4 marks available."
+  ]
  },
  {
   "id": "chem-2024-ol-q10-c-vi",
@@ -25600,6 +25576,7 @@
   "section": "B",
   "questionRef": "2024 OL Q10(c)(vi)",
   "questionText": "State one property of an alpha particle.",
+  "stem": "In Ireland, high levels of radon–222 (²²²₈₆Rn) are found in areas such as Galway and Wicklow, which have a lot of granite rock. Radon–222 is the most stable isotope of radon, with a half-life of approximately 3.8 days. It decays by emitting an alpha particle.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -25607,18 +25584,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "(positively) charged",
-    "accepts": [
-     "mass = 4",
-     "low penetrating power",
-     "highly ionising"
-    ],
+    "kind": "point",
+    "verbatim": "(positively) charged, mass = 4, low penetrating power, highly ionising",
     "marks": 3,
-    "contextNote": "any one of the listed properties; bracketed material is not required this year"
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Single printed (3)."
+  ]
  },
  {
   "id": "chem-2024-ol-q11-a-i-iii",
@@ -25628,11 +25600,11 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(a)(i)-(iii)",
+  "questionRef": "2024 OL Q11(a)(i)–(iii)",
   "questionText": "(i) Name the British scientist who proposed a model of the atom as a sphere of positive charge with electrons embedded in it, also known as the plum pudding model. (ii) Name the New Zealand scientist who proposed that an atom is mainly empty space with a dense nucleus at the centre, following his experiments using gold foil. (iii) Name the Russian scientist who proposed the periodic law and produced a periodic table of elements.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(9 + 3 + 3)"
+   "notation": "[9 + 3 + 3]"
   },
   "totalMarks": 15,
   "rows": [
@@ -25641,24 +25613,27 @@
     "kind": "point",
     "verbatim": "Thomson",
     "marks": null,
-    "contextNote": "(i) plum pudding model"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "Rutherford",
     "marks": null,
-    "contextNote": "(ii) gold foil experiment"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "Mendeleev",
     "marks": null,
-    "contextNote": "(iii) periodic law"
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Three answer elements share the ordered tariff (9 + 3 + 3)."
+  "notes": "The scheme prices these points together as [9 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q11-a-iv-vi",
@@ -25668,11 +25643,11 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(a)(iv)-(vi)",
+  "questionRef": "2024 OL Q11(a)(iv)–(vi)",
   "questionText": "(iv) Describe how the elements are ordered in the modern periodic table. (v) The elements of group 1 of the periodic table are called the alkali metals and include lithium (Li), sodium (Na) and potassium (K). State one property that these elements have in common. (vi) The elements of group 18 of the periodic table are called the noble gases and include helium (He), neon (Ne) and argon (Ar). Describe what is common to the electronic structure of these elements.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 2 + 2)"
+   "notation": "[6 + 2 + 2]"
   },
   "totalMarks": 10,
   "rows": [
@@ -25681,33 +25656,27 @@
     "kind": "point",
     "verbatim": "atomic number",
     "marks": null,
-    "contextNote": "(iv)"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "soft",
-    "accepts": [
-     "reactive (with air or water)",
-     "stored under oil",
-     "one outer electron"
-    ],
+    "kind": "point",
+    "verbatim": "soft, reactive (with air or water), stored under oil, one outer electron, etc.",
     "marks": null,
     "openList": true,
-    "contextNote": "(v) scheme list ends with 'etc.'"
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "full outer sublevel",
-    "accepts": [
-     "full outer shell"
-    ],
     "marks": null,
-    "contextNote": "(vi) scheme: [accept full outer shell]"
+    "openList": true,
+    "contextNote": "The scheme adds: [accept full outer shell]"
    }
   ],
-  "notes": "Three answer elements share the ordered tariff (6 + 2 + 2)."
+  "notes": "The scheme prices these points together as [6 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q11-b-i-ii",
@@ -25717,11 +25686,11 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(b)(i)-(ii)",
+  "questionRef": "2024 OL Q11(b)(i)–(ii)",
   "questionText": "(i) Name the Irish scientist who proposed the law describing the relationship between the pressure (P) and volume (V) of a fixed mass of gas at constant temperature (T). (ii) Name the French scientist who proposed the law describing the relationship between the volume (V) and temperature (T) of a fixed mass of gas at constant pressure (P).",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(9 + 3)"
+   "notation": "[9 + 3]"
   },
   "totalMarks": 12,
   "rows": [
@@ -25730,17 +25699,19 @@
     "kind": "point",
     "verbatim": "Boyle",
     "marks": null,
-    "contextNote": "(i) P and V at constant T"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "Charles",
     "marks": null,
-    "contextNote": "(ii) V and T at constant P"
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Two answer elements share the ordered tariff (9 + 3). Q11(b)(iii) skipped - the combined gas law answer is a two-level fraction that cannot be given verbatim without a solidus that would read as an alternatives separator. Q11(b)(iv) skipped - its 5-mark point is that same stacked-fraction substitution, i.e. worked arithmetic."
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q11-c-i",
@@ -25754,7 +25725,7 @@
   "questionText": "Explain what is meant by the term chromatography.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 3)"
+   "notation": "[6 + 3]"
   },
   "totalMarks": 9,
   "rows": [
@@ -25762,95 +25733,70 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "separation (technique)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "using a mobile phase and a stationary phase",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints one combined tariff (6 + 3) after the second marking line, so no per-row value exists."
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q11-c-iii-iv",
   "topicId": "chem-u2",
-  "conceptId": "instrumental-methods-hplc",
+  "conceptId": "meaning-of-hplc",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(c)(iii)-(iv)",
-  "stem": "HPLC is an advanced instrumental method of separation which uses chromatography.",
-  "questionText": "(iii) What is meant by HPLC? (iv) Name one other instrumental method of separation or analysis.",
+  "questionRef": "2024 OL Q11(c)(iii)",
+  "questionText": "HPLC is an advanced instrumental method of separation which uses chromatography. What is meant by HPLC?",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 7,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "high performance/pressure liquid chromatography",
-    "accepts": [
-     "high pressure liquid chromatography"
-    ],
-    "marks": 4,
-    "contextNote": "marked 4 x 1 - one mark per correct word; scheme wording: high performance/pressure liquid chromatography"
-   },
-   {
-    "id": "r-2",
     "kind": "point",
-    "verbatim": "distillation",
-    "marks": 3,
+    "verbatim": "high performance/pressure liquid chromatography",
+    "marks": 4,
     "openList": true,
-    "contextNote": "scheme gives this as an example"
+    "contextNote": "The scheme prices this point [4 × 1]."
    }
-  ],
-  "notes": "Q11(c)(ii) skipped - it is a 'describe how / a labelled diagram may help' part whose third marking point ('mixture in correct location') is a diagram criterion, not an answer, and the 9 marks cannot be split without it."
+  ]
  },
  {
   "id": "chem-2024-ol-q11-d-a-iv-v",
   "topicId": "chem-u3",
-  "conceptId": "chemical-industry-safety-and-location",
+  "conceptId": "a-safety-issue-in-a-chemical-industry",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(d)A(iv)-(v)",
-  "stem": "These parts refer to a chemical industry you have studied.",
-  "questionText": "(iv) Describe any one safety issue for this industry. (v) State one factor taken into account when choosing a location for this industry.",
+  "questionRef": "2024 OL Q11(d)A(iv)",
+  "questionText": "Describe any one safety issue for this industry.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 10,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "high temperature",
-    "accepts": [
-     "high pressure",
-     "hazardous materials"
-    ],
+    "kind": "point",
+    "verbatim": "e.g. high temperature, high pressure, hazardous materials, etc.",
     "marks": 6,
     "openList": true,
-    "contextNote": "scheme list ends with 'etc.'"
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "transport",
-    "accepts": [
-     "workforce"
-    ],
-    "marks": 4,
-    "openList": true,
-    "contextNote": "scheme list ends with 'etc.'"
+    "contextNote": ""
    }
-  ],
-  "notes": "Q11(d)A(i)-(iii) skipped - the scheme gives only content-free criteria ('named industry', 'appropriate raw materials', 'description of quality control'), which are not answers."
+  ]
  },
  {
   "id": "chem-2024-ol-q11-d-b-i",
@@ -25863,31 +25809,35 @@
   "questionRef": "2024 OL Q11(d)B(i)",
   "questionText": "State two differences between metals and non-metals.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "(6 + 2)"
+   "kind": "fixed"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "Metals — conduct heat, conduct electricity, lustrous, malleable, high melting point, high boiling point",
-    "marks": null,
+    "verbatim": "metals: conduct heat",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "",
     "group": {
      "claimMax": 2,
+     "perOption": 6,
      "options": [
-      "conduct heat",
+      "metals: conduct heat",
       "conduct electricity",
       "lustrous",
       "malleable",
       "high melting point",
       "high boiling point"
+     ],
+     "perOptionSteps": [
+      6,
+      2
      ]
-    },
-    "contextNote": "the scheme lists the metals' properties; each difference only scores when stated in contrast with non-metals"
+    }
    }
-  ],
-  "notes": "'Any two' from the scheme list, marked on the order-dependent tariff (6 + 2)."
+  ]
  },
  {
   "id": "chem-2024-ol-q11-d-b-ii",
@@ -25901,7 +25851,7 @@
   "questionText": "What is an alloy?",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(4 + 2)"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -25910,62 +25860,44 @@
     "kind": "point",
     "verbatim": "mixture",
     "marks": null,
-    "contextNote": "Key word — it scores only within a correct statement."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "involving metal(s)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints one combined tariff (4 + 2) after the second marking line, so no per-row value exists."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q11-d-b-iii-iv",
   "topicId": "chem-1-1",
-  "conceptId": "alloy-examples-and-composition",
+  "conceptId": "an-example-of-an-alloy",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q11(d)B(iii)-(iv)",
-  "questionText": "(iii) State one example of an alloy. (iv) State the composition of the alloy you have named.",
+  "questionRef": "2024 OL Q11(d)B(iii)",
+  "questionText": "State one example of an alloy.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 8,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "steel",
-    "accepts": [
-     "nichrome",
-     "brass",
-     "bronze",
-     "alnico"
-    ],
+    "kind": "point",
+    "verbatim": "e.g. steel / nichrome / brass / bronze / alnico, etc.",
     "marks": 4,
     "openList": true,
-    "contextNote": "scheme list ends with 'etc.'"
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Fe + C",
-    "accepts": [
-     "Ni + Cr",
-     "Cu + Zn",
-     "Cu + Sn",
-     "Fe + Al + Ni + Co"
-    ],
-    "marks": 4,
-    "openList": true,
-    "contextNote": "marked 2 + 2 - 2 marks per correct component; the composition must match the alloy named in (iii) (steel Fe + C, nichrome Ni + Cr, brass Cu + Zn, bronze Cu + Sn, alnico Fe + Al + Ni + Co)"
+    "contextNote": ""
    }
-  ],
-  "notes": "(iii) carries (4) and (iv) carries (2 + 2); carded together because (iv) is unanswerable without the alloy named in (iii)."
+  ]
  },
  {
   "id": "chem-2024-ol-q11-d-b-v",
@@ -25984,19 +25916,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "less corrosive",
-    "accepts": [
-     "less reactive",
-     "stronger",
-     "harder"
-    ],
+    "kind": "point",
+    "verbatim": "less corrosive, less reactive, stronger, harder, etc.",
     "marks": 3,
     "openList": true,
-    "contextNote": "scheme list ends with 'etc.'"
+    "contextNote": ""
    }
-  ],
-  "notes": "Single printed (3)."
+  ]
  },
  {
   "id": "chem-2022-ol-q1-a-ii-iii",
@@ -27957,8 +27883,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q1(a)(i)",
-  "stem": "The diagram in the paper shows the apparatus used for the preparation of ethyne (C2H2) gas in the laboratory. Ethyne is an unsaturated hydrocarbon.",
   "questionText": "In organic chemistry, what is meant by unsaturation?",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory. Ethyne is an unsaturated hydrocarbon.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27966,17 +27893,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "double bond",
-    "accepts": [
-     "triple bond",
-     "can undergo addition reaction"
-    ],
-    "marks": 4
+    "kind": "point",
+    "verbatim": "double bond / triple bond / can undergo addition reaction",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme prints the three answers separated by soliduses, i.e. they are equally acceptable alternatives; any one earns the full 4 marks.",
-  "figureKey": "chemistry-2024-OL-paper-p02-i0"
+  ]
  },
  {
   "id": "chem-2024-ol-q1-a-ii",
@@ -27987,8 +27910,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q1(a)(ii)",
-  "stem": "Ethyne is an unsaturated hydrocarbon.",
   "questionText": "What is a hydrocarbon?",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory. Ethyne is an unsaturated hydrocarbon.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27998,17 +27922,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "compound containing carbon",
-    "marks": 4
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "and hydrogen (only)",
     "marks": 4,
-    "contextNote": "Bracketed material is not required in that year, so \"only\" need not appear."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Each marking point carries its own printed mark, (4) and (4), so the tariff is fixed."
+  ]
  },
  {
   "id": "chem-2024-ol-q1-b",
@@ -28018,12 +27944,13 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q1(b)",
-  "stem": "The diagram shows the apparatus used for the laboratory preparation of ethyne (C2H2) gas: water is added dropwise from the dropping funnel onto solid X in the flask, and the ethyne produced is collected over water.",
+  "questionRef": "2024 OL Q1(b)(i)–(iv)",
   "questionText": "(i) Identify solid X. (ii) Why is water added dropwise rather than poured directly onto X? (iii) What is observed when water is added to X? (iv) State one property of ethyne that allows it to be collected above water as shown.",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "8 + 8 + 3 + 3"
+   "notation": "[8 + 8 + 3 + 3]"
   },
   "totalMarks": 22,
   "rows": [
@@ -28031,44 +27958,36 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "(calcium) carbide",
-    "accepts": [
-     "CaC2"
-    ],
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "so that the reaction happens slowly",
-    "accepts": [
-     "safety"
-    ],
+    "kind": "point",
+    "verbatim": "so that the reaction happens slowly / safety",
     "marks": null,
-    "contextNote": "The scheme prints \"safety [state/imply]\" — the safety reason may be stated or implied."
+    "openList": true,
+    "contextNote": "The scheme adds: [state/imply]"
    },
    {
     "id": "r-3",
-    "kind": "alt",
-    "verbatim": "fizzing",
-    "accepts": [
-     "bubbling",
-     "gas produced",
-     "heat produced"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "fizzing / bubbling / gas produced / heat produced",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
-    "kind": "alt",
-    "verbatim": "less dense than water",
-    "accepts": [
-     "sparingly soluble in water"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "less dense than water / sparingly soluble in water",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The four sub-parts share one combined allocation (8 + 8 + 3 + 3 = 22), so no sub-part has its own printed mark — recorded as an ordered split with every row marks: null.",
-  "figureKey": "chemistry-2024-OL-paper-p02-i0"
+  "notes": "The scheme prices these points together as [8 + 8 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q1-c-i",
@@ -28079,33 +27998,33 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q1(c)(i)",
-  "stem": "Ethyne (C2H2) is an unsaturated hydrocarbon.",
   "questionText": "Describe what would be observed when a sample of ethyne is burned in air.",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "sooty",
-    "accepts": [
-     "orange",
-     "yellow"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "sooty / orange / yellow",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "flame",
     "marks": null,
-    "contextNote": "Key word — it must appear in the correct context (a sooty/orange/yellow flame)."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The two marking points share a combined (4 + 2) allocation, so neither has its own printed mark."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q1-c-ii",
@@ -28116,31 +28035,25 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q1(c)(ii)",
-  "stem": "Ethyne (C2H2) burns in air.",
-  "questionText": "Write a balanced chemical equation for the combustion of ethyne in oxygen (O2).",
+  "questionText": "Write a balanced chemical equation for the combustion of ethyne in oxygen (O₂).",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[4 × 1 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "2C2H2 + 5O2 → 4CO2 + 2H2O",
-    "marks": 6,
-    "route": "a",
-    "contextNote": "The 6 marks are built as 4 × 1 (correct species) + 2 (balancing)."
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "C2H2 + 2½O2 → 2CO2 + H2O",
-    "marks": 6,
-    "route": "b",
-    "contextNote": "The 6 marks are built as 4 × 1 (correct species) + 2 (balancing)."
+    "verbatim": "2C₂H₂ + 5O₂ → 4CO₂ + 2H₂O // C₂H₂ + 2½O₂ → 2CO₂ + H₂O",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme separates the two equations with a double solidus //: they are mutually exclusive routes, each worth the full 6 marks, and a partial answer from one may not be combined with a partial answer from the other."
+  "notes": "The scheme prices these points together as [4 × 1 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q1-c-iii",
@@ -28152,6 +28065,8 @@
   "section": "A",
   "questionRef": "2024 OL Q1(c)(iii)",
   "questionText": "State one use for ethyne.",
+  "stem": "The diagram below shows the apparatus used for the preparation of ethyne (C₂H₂) gas in the laboratory.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -28159,17 +28074,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "welding",
-    "accepts": [
-     "ripening fruit"
-    ],
+    "kind": "point",
+    "verbatim": "e.g. welding, ripening fruit etc.",
     "marks": 4,
     "openList": true,
-    "contextNote": "The scheme prints \"e.g. welding, ripening fruit etc.\" — other valid uses are acceptable."
+    "contextNote": ""
    }
-  ],
-  "notes": "Open example list in the scheme, so the row is flagged openList."
+  ]
  },
  {
   "id": "chem-2024-ol-q2-a-i",
@@ -28180,8 +28091,16 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q2(a)(i)",
-  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na2CO3). The piece of apparatus labelled A was used to transfer exactly 25 cm3 of Na2CO3 to a conical flask.",
   "questionText": "Identify A.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). The piece of apparatus labelled A was used to transfer exactly 25 cm³ of Na₂CO₃ to a conical flask.",
+  "figureKey": "chemistry-2024-OL-paper-q2a",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "pipette",
+    "askedInThisQuestion": true
+   }
+  ],
   "tariffModel": {
    "kind": "fixed"
   },
@@ -28191,10 +28110,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "pipette",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The paper labels the apparatus on a diagram, but the question stem states its function in full, so the item is answerable without the figure."
+  ]
  },
  {
   "id": "chem-2024-ol-q2-a-ii",
@@ -28205,23 +28125,25 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q2(a)(ii)",
-  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na2CO3). A (a pipette) was used to transfer exactly 25 cm3 of Na2CO3 to a conical flask.",
-  "questionText": "Describe the procedure used to wash and fill A and to use it to transfer 25 cm3 of Na2CO3 to the conical flask.",
+  "questionText": "Describe the procedure used to wash and fill A and to use it to transfer 25 cm³ of Na₂CO₃ to the conical flask.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). The piece of apparatus labelled A was used to transfer exactly 25 cm³ of Na₂CO₃ to a conical flask.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "8 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 14,
   "rows": [
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "wash with deionised water",
-    "marks": null,
+    "verbatim": "wash with deionised water / use a wash bottle",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "",
     "group": {
      "claimMax": 3,
+     "perOption": 8,
      "options": [
-      "wash with deionised water",
+      "wash with deionised water / use a wash bottle",
       "wash with solution",
       "use a pipette filler",
       "draw solution above mark",
@@ -28229,67 +28151,41 @@
       "allow to fall into flask",
       "tip drop off edge",
       "wash down sides of flask"
+     ],
+     "perOptionSteps": [
+      8,
+      3,
+      3
      ]
-    },
-    "contextNote": "Any three of the listed points score. The scheme also accepts \"use a wash bottle\" in place of \"wash with deionised water\"; deionised water, distilled water and pure water are interchangeable."
+    }
    }
-  ],
-  "notes": "Eight listed points, [any three], under a combined (8 + 3 + 3) allocation — one anyN row with marks: null under an ordered split."
+  ]
  },
  {
   "id": "chem-2024-ol-q2-b",
   "topicId": "chem-4-1",
-  "conceptId": "titration-endpoint-and-indicator",
+  "conceptId": "meaning-of-the-endpoint",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q2(b)(i)-(iii)",
-  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na2CO3). An indicator was used to identify the endpoint of this titration.",
-  "questionText": "(i) What is meant by the term endpoint? (ii) Name an indicator suitable for use in this titration. (iii) State the colour change observed.",
+  "questionRef": "2024 OL Q2(b)(i)",
+  "questionText": "What is meant by the term endpoint?",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). An indicator was used to identify the endpoint of this titration.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "neutralisation has occurred",
-    "accepts": [
-     "reaction has finished",
-     "colour change"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
     "kind": "point",
-    "verbatim": "methyl orange",
+    "verbatim": "neutralisation has occurred / reaction has finished / colour change",
     "marks": 3,
-    "exactTermRequired": true
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "yellow",
-    "accepts": [
-     "orange"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "to pink",
-    "accepts": [
-     "peach",
-     "red"
-    ],
-    "marks": 3
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Each of the four marking points carries its own printed (3), so the tariff is fixed. Rows r-3 and r-4 are the two halves of the colour change in (iii)."
+  ]
  },
  {
   "id": "chem-2024-ol-q2-b-iv",
@@ -28300,11 +28196,10 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q2(b)(iv)",
-  "stem": "Hydrochloric acid (HCl) was titrated against a 0.05 M solution of sodium carbonate (Na2CO3), using an indicator to identify the endpoint.",
   "questionText": "State two precautions that should be taken to ensure an accurate result.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). An indicator was used to identify the endpoint of this titration.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
@@ -28312,21 +28207,26 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "read at eye level",
-    "marks": null,
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
     "group": {
      "claimMax": 2,
+     "perOption": 4,
      "options": [
       "read at eye level",
       "wash down walls of flask",
       "rough titration",
       "only use a few drops of indicator",
       "swirling"
+     ],
+     "perOptionSteps": [
+      4,
+      2
      ]
-    },
-    "contextNote": "Any two of the listed precautions score; cancellation may apply if more than two responses are given."
+    }
    }
-  ],
-  "notes": "Five listed precautions, [any two], under a combined (4 + 2) allocation."
+  ]
  },
  {
   "id": "chem-2024-ol-q3-a-i",
@@ -28337,11 +28237,10 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q3(a)(i)",
-  "stem": "A student was given unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl). To identify the samples, the student carried out flame tests.",
   "questionText": "Describe how the flame tests could have been carried out.",
+  "stem": "A student was given unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl). To identify the samples, the student carried out flame tests.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "9 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 15,
   "rows": [
@@ -28349,21 +28248,27 @@
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "Bunsen burner",
-    "marks": null,
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
     "group": {
      "claimMax": 3,
+     "perOption": 9,
      "options": [
       "Bunsen burner",
-      "(platinum) wire",
-      "put wire in flame (to clean)",
+      "(platinum) wire / wooden splint",
+      "put wire in flame (to clean) / put in water or acid (to clean) / clean",
       "dip into compound",
       "place in flame"
+     ],
+     "perOptionSteps": [
+      9,
+      3,
+      3
      ]
-    },
-    "contextNote": "Any three of the listed points score. The scheme accepts \"wooden splint\" in place of \"(platinum) wire\", and \"put in water or acid (to clean)\" or simply \"clean\" in place of \"put wire in flame (to clean)\"."
+    }
    }
-  ],
-  "notes": "Five listed points, [any three], under a combined (9 + 3 + 3) allocation."
+  ]
  },
  {
   "id": "chem-2024-ol-q3-a-ii",
@@ -28374,43 +28279,24 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q3(a)(ii)",
-  "stem": "A student carried out flame tests on unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl).",
   "questionText": "State the colour of the flame observed for each salt.",
+  "stem": "A student was given unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl). To identify the samples, the student carried out flame tests.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "6 + 2 + 2"
+   "notation": "[6 + 2 + 2]"
   },
   "totalMarks": 10,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "LiCl — crimson",
-    "accepts": [
-     "red"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "NaCl — yellow",
-    "accepts": [
-     "orange"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "KCl — lilac",
-    "accepts": [
-     "purple"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "crimson/red, yellow/orange, lilac/purple",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme prints the three colour pairs in the order the salts are named in the question (LiCl, NaCl, KCl); the salt labels are added as short prefixes only. Combined (6 + 2 + 2) allocation, so no colour has its own printed mark."
+  "notes": "The scheme prices these points together as [6 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q3-b",
@@ -28420,12 +28306,12 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q3(b)(ii)-(v)",
-  "stem": "A student was given samples of three different unknown compounds on clock glasses labelled A, B and C. The compounds were sodium chloride (NaCl), sodium sulfate (Na2SO4) and sodium carbonate (Na2CO3). When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed and the gas produced turned limewater milky. When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl2) a white precipitate was produced.",
-  "questionText": "(ii) Identify the gas produced. (iii) Identify compound A. (iv) Identify compound B. (v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl–) ions.",
+  "questionRef": "2024 OL Q3(b)(ii)–(v)",
+  "questionText": "(ii) Identify the gas produced. (iii) Identify compound A. When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl₂) a white precipitate was produced. (iv) Identify compound B. (v) Identify a reagent which could be used to confirm that compound C contained chloride (Cl⁻) ions.",
+  "stem": "A student was given unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl). The student was given another set of samples of three different unknown compounds. The compounds were on clock glasses labelled A, B and C. The compounds were sodium chloride (NaCl), sodium sulfate (Na₂SO₄) and sodium carbonate (Na₂CO₃). When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed. The gas produced turned limewater milky.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "8 + 4 + 2 + 2"
+   "notation": "[8 + 4 + 2 + 2]"
   },
   "totalMarks": 16,
   "rows": [
@@ -28433,40 +28319,36 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "carbon dioxide",
-    "accepts": [
-     "CO2"
-    ],
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "sodium carbonate",
-    "accepts": [
-     "Na2CO3"
-    ],
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "sodium sulfate",
-    "accepts": [
-     "Na2SO4"
-    ],
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "silver nitrate",
-    "accepts": [
-     "AgNO3"
-    ],
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q3(b)(i) asked for a labelled diagram of the limewater test — skipped (drawing question). Formulae are added to accepts under the scheme's convention that either the name or the formula of a chemical substance is accepted. The four identifications share a combined (8 + 4 + 2 + 2) allocation."
+  "notes": "The scheme prices these points together as [8 + 4 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q4-a",
@@ -28477,11 +28359,10 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(a)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
-  "questionText": "A cup of coffee contains 0.095 g of caffeine (C8H10N4O2). Calculate the number of moles of caffeine in this cup.",
+  "questionText": "A cup of coffee contains 0.095 g of caffeine (C₈H₁₀N₄O₂). Calculate the number of moles of caffeine in this cup.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -28489,17 +28370,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Mr = 194",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "0.00049 (moles)",
     "marks": null,
-    "contextNote": "One mark is deducted for each arithmetical error, and for inappropriate or incorrect rounding."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Carded because the scheme awards two discrete, checkable points — a stated Mr value and a final answer. Skipped elsewhere in Q4: (f) hazard symbols A and B (answers depend on the printed symbols) and (k) which of structures X and Y is aromatic (depends on printed molecular structures) — this wave carries no figures."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-b",
@@ -28510,11 +28394,10 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(b)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "What is an ionic bond?",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
@@ -28522,16 +28405,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "force (of attraction)",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "between (oppositely charged) ions",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Bracketed material is not required in that year but is retained in the verbatim text."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-c",
@@ -28542,36 +28429,23 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(c)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "What are isotopes?",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "notation": "[4 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "same atomic number",
-    "accepts": [
-     "same number of protons",
-     "same nuclear charge",
-     "same element"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "different mass numbers",
-    "accepts": [
-     "different number of neutrons"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "same atomic number / same number of protons / same nuclear charge / same element different mass numbers / different number of neutrons",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Both marking points are printed as solidus-separated alternatives; any one alternative on each line scores."
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-d",
@@ -28582,7 +28456,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(d)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Name a piece of apparatus used to measure the heat of combustion of a compound.",
   "tariffModel": {
    "kind": "fixed"
@@ -28594,10 +28467,11 @@
     "kind": "point",
     "verbatim": "(bomb) calorimeter",
     "marks": 6,
-    "contextNote": "The scheme allows 3 marks for e.g. thermometer."
+    "openList": true,
+    "contextNote": "The scheme adds: [allow 3 marks for e.g. thermometer]"
    }
   ],
-  "notes": "Single 6-mark answer; \"bomb\" is bracketed and so is not required in that year."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-e",
@@ -28608,22 +28482,23 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(e)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
-  "questionText": "Write a balanced chemical equation for the reaction of magnesium hydroxide (Mg(OH)2) with hydrochloric acid to produce magnesium chloride (MgCl2) and water.",
+  "questionText": "Write a balanced chemical equation for the reaction of magnesium hydroxide (Mg(OH)₂) with hydrochloric acid to produce magnesium chloride (MgCl₂) and water.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[4 × 1 + 2]"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Mg(OH)2 + 2HCl → MgCl2 + 2H2O",
-    "marks": 6,
-    "contextNote": "The 6 marks are built as 4 × 1 (correct species) + 2 (balancing)."
+    "verbatim": "Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "A written equation, not worked arithmetic, so it is fully self-markable."
+  "notes": "The scheme prices these points together as [4 × 1 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-g",
@@ -28634,7 +28509,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(g)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Identify the carboxylic acid found in the stings of nettles and ants.",
   "tariffModel": {
    "kind": "fixed"
@@ -28643,17 +28517,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "methanoic acid",
-    "accepts": [
-     "formic acid",
-     "HCOOH"
-    ],
+    "kind": "point",
+    "verbatim": "methanoic acid / formic acid",
     "marks": 6,
-    "contextNote": "The scheme allows 3 marks for an incorrect carboxylic acid. The formula is accepted under the scheme's name-or-formula convention."
+    "openList": true,
+    "contextNote": "The scheme adds: [allow 3 marks for incorrect carboxylic acid]"
    }
   ],
-  "notes": "Traditional and systematic names are both printed by the scheme as equally acceptable alternatives."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-h",
@@ -28664,7 +28535,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(h)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Describe what happens during the primary stage of sewage treatment.",
   "tariffModel": {
    "kind": "fixed"
@@ -28673,17 +28543,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "screening",
-    "accepts": [
-     "sedimentation",
-     "settling"
-    ],
+    "kind": "point",
+    "verbatim": "screening / sedimentation / settling",
     "marks": 6,
-    "contextNote": "The scheme prints \"screening / sedimentation / settling\" — three equally acceptable one-word answers. It allows 3 marks for any other stage of sewage/water treatment."
+    "openList": true,
+    "contextNote": "The scheme adds: [allow 3 marks for any stage of sewage/water treatment]"
    }
   ],
-  "notes": "All three of the scheme's solidus-separated alternatives are carried; the extracted scheme text renders them as 'screening / sedimentaƟon / setling', a ligature artefact of the PDF (the same file prints 'botle' for bottle and 'netles' for nettles)."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-i",
@@ -28694,7 +28561,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(i)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "When a small amount of air freshener is sprayed in a room it is soon detected in all parts of the room. Explain why this occurs.",
   "tariffModel": {
    "kind": "fixed"
@@ -28703,16 +28569,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "diffusion",
-    "accepts": [
-     "gaseous"
-    ],
+    "kind": "point",
+    "verbatim": "diffusion / gaseous",
     "marks": 6,
-    "contextNote": "Key word — it must appear in the correct context to merit the marks."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Both answers are printed as solidus-separated alternatives worth the full 6 marks."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-j",
@@ -28723,7 +28587,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2024 OL Q4(j)",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
   "questionText": "Define oxidation in terms of electron transfer.",
   "tariffModel": {
    "kind": "fixed"
@@ -28735,11 +28598,11 @@
     "kind": "point",
     "verbatim": "loss",
     "marks": 6,
-    "exactTermRequired": true,
-    "contextNote": "Key word — \"loss\" merits the marks only in the correct context, i.e. loss of electrons. Where incorrect terminology is used, or one part of the answer contradicts another, the marks may not be awarded."
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The scheme gives the single key word; the surrounding statement must be correct for it to score."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-l-a",
@@ -28749,9 +28612,8 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q4(l) A",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
-  "questionText": "Explain the term \"continuous process\" in industrial chemistry.",
+  "questionRef": "2024 OL Q4(l)A",
+  "questionText": "Explain the term “continuous process” in industrial chemistry.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -28761,10 +28623,12 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "process never stops",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Item (l) offers a choice of A or B; this card is option A."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q4-l-b",
@@ -28774,9 +28638,9 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q4(l) B",
-  "stem": "eight items to be answered. Six marks are allocated to each item, and one additional mark is added to each of the first two items attempted.",
+  "questionRef": "2024 OL Q4(l)B",
   "questionText": "Name the scientist pictured who used X-ray crystallography to determine the structure of vitamin B12.",
+  "figureKey": "chemistry-2024-OL-paper-q4l-b",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -28787,10 +28651,11 @@
     "kind": "point",
     "verbatim": "Hodgkin",
     "marks": 6,
-    "exactTermRequired": true
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Item (l) offers a choice of A or B; this card is option B. The paper prints a photograph, but the description in the question fully determines the answer, so no figure is needed."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
  },
  {
   "id": "chem-2024-ol-q5-a",
@@ -28800,12 +28665,13 @@
   "year": 2024,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2024 OL Q5(a)",
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Electronegativity values increase across a period of the periodic table.",
+  "questionRef": "2024 OL Q5(a)(i)–(iii)",
   "questionText": "(i) What is meant by the term electronegativity? (ii) Explain why electronegativity values increase across a period. (iii) Describe the trend in electronegativity values down a group. Explain why this trend occurs.",
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. Electronegativity values increase across a period of the periodic table.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "9 + 6 + 3 + 2 + 2"
+   "notation": "[9 + 6 + 3 + 2 + 2]"
   },
   "totalMarks": 22,
   "rows": [
@@ -28813,44 +28679,44 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "(relative) attraction",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "for shared electrons",
-    "accepts": [
-     "for pair of electrons",
-     "for electrons in a bond"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "for shared electrons / for pair of electrons / for electrons in a bond",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
-    "kind": "alt",
-    "verbatim": "increasing nuclear charge",
-    "accepts": [
-     "decreasing atomic radius"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "increasing nuclear charge / decreasing atomic radius",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "decrease",
-    "marks": null
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
-    "kind": "alt",
-    "verbatim": "increasing atomic radius",
-    "accepts": [
-     "screening effect (of inner electrons)"
-    ],
-    "marks": null
+    "kind": "point",
+    "verbatim": "increasing atomic radius / screening effect (of inner electrons)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Five marking points across (i)-(iii) share one combined allocation (9 + 6 + 3 + 2 + 2 = 22). Q5(b) is skipped entirely: its seven sub-parts share a single combined allocation (9 + 6 + 4 + 3 + 2 + 2 + 2 = 28), but one is a dot-and-cross drawing and one requires reading the electronegativity table, so the remaining parts cannot be given real marks without inventing a split."
+  "notes": "The scheme prices these points together as [9 + 6 + 3 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-hl-q6-b-ii",
@@ -31567,10 +31433,11 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2024 OL Q2(c)(i)",
-  "questionText": "Calculate the average volume of HCl needed to neutralise the Na2CO3.",
+  "questionText": "Calculate the average volume of HCl needed to neutralise the Na₂CO₃.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). The titration reaction is described by the following balanced chemical equation: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ One approximate titration and two accurate titrations were carried out. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q2-table",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
@@ -31578,17 +31445,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "adding volumes",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "20.55 (cm3)",
-    "marks": 3
+    "verbatim": "20.55 (cm³)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na2CO3).",
-  "notes": "Only the two accurate titrations are averaged; the approximate one is discarded, which is why the answer is 20.55 and not the mean of all three."
+  ]
  },
  {
   "id": "chem-2024-ol-q3-b-i",
@@ -31600,33 +31469,39 @@
   "section": "A",
   "questionRef": "2024 OL Q3(b)(i)",
   "questionText": "Draw a labelled diagram to show how the gas produced could have been tested with limewater.",
+  "stem": "A student was given unlabelled samples of lithium chloride (LiCl), sodium chloride (NaCl) and potassium chloride (KCl). The student was given another set of samples of three different unknown compounds. The compounds were on clock glasses labelled A, B and C. The compounds were sodium chloride (NaCl), sodium sulfate (Na₂SO₄) and sodium carbonate (Na₂CO₃). When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed. The gas produced turned limewater milky.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 + 4 + 1"
+   "kind": "orderedSplit",
+   "notation": "[4 + 4 + 1]"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "delivery (tube from reacƟon container)",
-    "marks": 4
+    "verbatim": "delivery (tube from reaction container)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "liquid (limewater) in a container",
-    "marks": 4
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "mouth of tube under the surface of the liquid",
-    "marks": 1
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed. The gas produced turned limewater milky. When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl2) a white precipitate was produced.",
-  "notes": "A drawing question the scheme prices by what the diagram must show, so the three things it wants are the card. The single mark is for the detail that is most often dropped: the mouth of the delivery tube has to be below the surface of the limewater."
+  "notes": "The scheme prices these points together as [4 + 4 + 1] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q7-a-iii",
@@ -31635,9 +31510,11 @@
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 OL Q7(a)(iii)",
   "questionText": "Use your graph to estimate the volume of oxygen collected during the first 7 minutes.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -31646,13 +31523,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "volume read from graph [≈ 68 cm3]",
-    "marks": 3
+    "verbatim": "volume read from graph [≈ 68 cm³]",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
-  "notes": "The three marks are for reading the graph, not for the number: the scheme brackets 68 cm3 as the expected value rather than requiring it.",
-  "figureKey": "chemistry-2024-OL-paper-p08-i0"
+  ]
  },
  {
   "id": "chem-2024-ol-q7-a-iv",
@@ -31661,9 +31537,11 @@
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 OL Q7(a)(iv)",
   "questionText": "Calculate the average rate of reaction during the first 4 minutes.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -31672,64 +31550,65 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "48 ÷ 4 = 12 (cm3 minute–1)",
-    "marks": 3
+    "verbatim": "48 ÷ 4 = 12 (cm³ minute⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
-  "notes": "The 48 is the volume of O2 collected by 4 minutes, read from the table in the stem.",
-  "figureKey": "chemistry-2024-OL-paper-p08-i0"
+  ]
  },
  {
   "id": "chem-2024-ol-q8-a-iii",
   "topicId": "chem-4-2",
-  "conceptId": "naming-the-carboxylic-acid-in-the-series",
+  "conceptId": "compounds-of-the-ethene-reaction-series",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
-  "questionRef": "2024 OL Q8(a)(iii)",
-  "questionText": "Name compound T.",
+  "section": "B",
+  "questionRef": "2024 OL Q8(a)(i)–(iv)",
+  "questionText": "(i) Compound Q is ethene. Name the homologous series to which compound Q belongs. (ii) Name compound R. (iii) Name compound T. (iv) Is the conversion of compound Q to compound R classified as an addition reaction, a substitution reaction or an elimination reaction?",
+  "stem": "Study the series of reactions shown below and answer the following questions.",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "8 + 6 + 2 + 2"
+   "kind": "orderedSplit",
+   "notation": "[8 + 6 + 2 + 2]"
   },
-  "totalMarks": 2,
+  "totalMarks": 18,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "ethanoic acid",
-    "marks": 2,
-    "accepts": [
-     "aceƟc acid"
-    ]
+    "kind": "point",
+    "verbatim": "alkene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ethanol / ethyl alcohol",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ethanoic acid / acetic acid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "addition",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
-  "figureKey": "chemistry-2024-ol-paper-p009-i0",
-  "labelKey": [
-   {
-    "askedInThisQuestion": false,
-    "letter": "Q",
-    "meaning": "ethene"
-   },
-   {
-    "askedInThisQuestion": false,
-    "letter": "R",
-    "meaning": "ethanol / ethyl alcohol"
-   },
-   {
-    "askedInThisQuestion": false,
-    "letter": "S",
-    "meaning": "ethanal / acetaldehyde"
-   },
-   {
-    "askedInThisQuestion": true,
-    "letter": "T",
-    "meaning": "ethanoic acid / acetic acid"
-   }
-  ]
+  "notes": "The scheme prices these points together as [8 + 6 + 2 + 2] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2024-ol-q8-a-iv",
@@ -31786,9 +31665,11 @@
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 OL Q8(b)(i)",
   "questionText": "Identify compound S.",
+  "stem": "Study the series of reactions shown below and answer the following questions. Compound S is an aldehyde. It reacts with Fehling’s reagent to produce compound T.",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -31796,36 +31677,11 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "ethanal",
+    "kind": "point",
+    "verbatim": "ethanal / acetaldehyde",
     "marks": 6,
-    "accepts": [
-     "acetaldehyde"
-    ]
-   }
-  ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
-  "figureKey": "chemistry-2024-ol-paper-p009-i0",
-  "labelKey": [
-   {
-    "askedInThisQuestion": false,
-    "letter": "Q",
-    "meaning": "ethene"
-   },
-   {
-    "askedInThisQuestion": false,
-    "letter": "R",
-    "meaning": "ethanol / ethyl alcohol"
-   },
-   {
-    "askedInThisQuestion": true,
-    "letter": "S",
-    "meaning": "ethanal / acetaldehyde"
-   },
-   {
-    "askedInThisQuestion": false,
-    "letter": "T",
-    "meaning": "ethanoic acid / acetic acid"
+    "openList": true,
+    "contextNote": ""
    }
   ]
  },
@@ -31836,12 +31692,11 @@
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 OL Q11(c)(ii)",
   "questionText": "Describe how chromatography could be used to separate a mixture of chemical indicators. (A labelled diagram may help your answer.)",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
@@ -31849,22 +31704,27 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "mobile phase, e.g. water",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "staƟonary phase, e.g. ﬁlter paper",
-    "marks": 3
+    "verbatim": "stationary phase, e.g. filter paper",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "(separated/unseparated) mixture in correct locaƟon",
-    "marks": 3
+    "verbatim": "(separated/unseparated) mixture in correct location",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme numbers this answer under its own Q11(c)(ii) as well; only the PDF parser's key disagrees."
+  ]
  },
  {
   "id": "chem-2024-ol-q10-a-iii",
@@ -31873,9 +31733,10 @@
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2024 OL Q10(a)(iii)",
   "questionText": "Multistriatin has a relative molecular mass of 170. Calculate its molecular formula.",
+  "stem": "Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food. Following analysis, a sample of multistriatin was found to contain 70.59 % carbon, 10.59 % hydrogen and 18.82 % oxygen by mass.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -31885,22 +31746,27 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "5 × 12 + 9 × 1 + 1 × 16 = 85",
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "170 ÷ 85 = 2",
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "10:18:2 / C₁₀H₁₈O₂",
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "Following analysis, a sample of multistriatin was found to contain 70.59 % carbon, 10.59 % hydrogen and 18.82 % oxygen by mass."
+  ]
  },
  {
   "id": "chem-2025-hl-q1-e-iv",
@@ -42330,5 +42196,781 @@
     }
    }
   ]
+ },
+ {
+  "id": "chem-2024-ol-q2-b-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "indicator-for-a-sodium-carbonate-titration",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(ii)",
+  "questionText": "Name an indicator suitable for use in this titration.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). An indicator was used to identify the endpoint of this titration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methyl orange",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q2-b-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "colour-change-of-methyl-orange",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(iii)",
+  "questionText": "State the colour change observed.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). An indicator was used to identify the endpoint of this titration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yellow / orange",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to pink / peach / red",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q2-c-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hydrochloric-acid-from-a-titration",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q2(c)(ii)",
+  "questionText": "Calculate the concentration of HCl in moles per litre.",
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na₂CO₃). The titration reaction is described by the following balanced chemical equation: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂ One approximate titration and two accurate titrations were carried out. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q2-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "20.55 × M ÷ 2",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 20.55 × M over 2 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "25 × 0.05 ÷ 1",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [award 3 marks for (implied) formula if no other marks awarded] The scheme prints 25 × 0.05 over 1 as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.12 M",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q4-f-i-ii",
+  "topicId": "chem-u2",
+  "conceptId": "meaning-of-hazard-symbols",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q4(f)(i)–(ii)",
+  "questionText": "(i) State the chemical hazard indicated by symbol A. (ii) State the chemical hazard indicated by symbol B.",
+  "stem": "A chemical container had the warning symbols labelled A and B on it.",
+  "figureKey": "chemistry-2024-OL-paper-q4f",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 2]"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "oxidising",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "corrosive",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
+ },
+ {
+  "id": "chem-2024-ol-q4-k",
+  "topicId": "chem-2-4",
+  "conceptId": "which-cyclic-hydrocarbon-is-aromatic",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q4(k)",
+  "questionText": "Molecular structures X and Y both represent cyclic hydrocarbons that contain six carbon atoms. Which of these hydrocarbons is an aromatic compound?",
+  "figureKey": "chemistry-2024-OL-paper-q4k",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "aromatic compound",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items attempted.\""
+ },
+ {
+  "id": "chem-2024-ol-q5-b",
+  "topicId": "chem-2-1",
+  "conceptId": "nitrogen-trifluoride-bonding-and-shape",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q5(b)(i)–(vii)",
+  "questionText": "(i) Name another greenhouse gas. (ii) Write the electron configuration for an atom of nitrogen (N). (iii) Write the electron configuration for an atom of fluorine (F). (iv) Draw a dot and cross diagram to show the arrangement of the valence electrons in a molecule of NF₃. (v) Use the table shown above to calculate the electronegativity difference between N and F. (vi) Use your answer to (v) to predict the type of bonding between the fluorine atoms and the nitrogen atom in NF₃. (vii) Suggest a possible shape for a molecule containing 4 atoms, such as NF₃.",
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. Electronegativity values increase across a period of the periodic table. Nitrogen trifluoride (NF₃) is a greenhouse gas.",
+  "figureKey": "chemistry-2024-OL-scheme-q5b-iv",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[9 + 6 + 4 + 3 + 2 + 2 +2]"
+  },
+  "totalMarks": 28,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "carbon dioxide, water, methane, nitrous oxide, ozone, CFCs, HCFCs, etc.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [accept formula]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1s², 2s², 2p³ / 2, 5",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1s², 2s², 2p⁵ / 2, 7",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Draw a dot and cross diagram to show the arrangement of the valence electrons in a molecule of NF₃.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme answers (iv) with a drawing; its own print is shown with the answer."
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "3.98 – 3.04 = 0.94",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "polar / polar covalent",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [accept covalent]"
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "pyramidal",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [accept tetrahedral/triangular/trigonal]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [9 + 6 + 4 + 3 + 2 + 2 +2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2024-OL-paper-q5b-print"
+ },
+ {
+  "id": "chem-2024-ol-q6-a-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "structures-of-the-isomers-of-butane",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q6(a)(ii)",
+  "questionText": "Draw the molecular structure of each of the two isomers with the molecular formula C₄H₁₀, including all atoms and bonds.",
+  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C₄H₁₀ are present in LPG.",
+  "figureKey": "chemistry-2024-OL-scheme-q6a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the molecular structure of each of the two isomers with the molecular formula C₄H₁₀, including all atoms and bonds.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. It prices the part [7 + 2]. The scheme adds: [allow maximum marks of 3 + 3 for expanded molecular formulae]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q7-a-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "graph-of-volume-of-oxygen-against-time",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q7(a)(ii)",
+  "questionText": "Draw a graph on graph paper to show how the volume of O₂ produced varies with time.",
+  "stem": "The rate of decomposition of hydrogen peroxide (H₂O₂) using manganese dioxide as a catalyst was investigated using the apparatus shown below. The oxygen (O₂) gas produced was collected in the gas syringe. The results are shown in the table below.",
+  "figureKey": "chemistry-2024-OL-paper-q7",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "scaled axes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [maximum of 3 × 1 if graph paper not used] The scheme prices this point [6 × 1]."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "curve of best fit",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q7-c-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "naming-an-enzyme",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q7(c)(ii)",
+  "questionText": "Name an enzyme.",
+  "stem": "Liver contains an enzyme which can decompose hydrogen peroxide.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "e.g. catalase",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q8-b-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "structure-of-ethanal",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q8(b)(ii)",
+  "questionText": "Draw the molecular structure of compound S, including all atoms and bonds.",
+  "stem": "Study the series of reactions shown below and answer the following questions. Compound S is an aldehyde. It reacts with Fehling’s reagent to produce compound T.",
+  "figureKey": "chemistry-2024-OL-scheme-q8b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the molecular structure of compound S, including all atoms and bonds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [allow 3 marks for CH₃CHO]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2024-OL-paper-q8b-ii-print"
+ },
+ {
+  "id": "chem-2024-ol-q8-b-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "copper-in-fehlings-reagent",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q8(b)(iv)",
+  "questionText": "Identify the metal element in Fehling’s reagent which is responsible for the colour change observed.",
+  "stem": "Study the series of reactions shown below and answer the following questions. Compound S is an aldehyde. It reacts with Fehling’s reagent to produce compound T.",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "copper",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q9-c",
+  "topicId": "chem-4-3",
+  "conceptId": "stages-of-water-treatment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q9(c)",
+  "questionText": "The following terms are omitted from the table below which describes the stages of water treatment. chlorination filtration flocculation fluoridation pH adjustment sedimentation screening In your answerbook, write the term corresponding to each of the letters A to G.",
+  "figureKey": "chemistry-2024-OL-paper-q9c-table",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[9 + 4 + 5 × 2]"
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: screening",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: flocculation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C sedimentation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D filtration",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "E chlorination",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "F fluoridation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "G pH adjustment",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [9 + 4 + 5 × 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2024-ol-q10-a-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "empirical-formula-of-multistriatin",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q10(a)(ii)",
+  "questionText": "Calculate the empirical formula of multistriatin.",
+  "stem": "Multistriatin is an organic compound released by the female elm bark beetle when she has found a good source of food. Following analysis, a sample of multistriatin was found to contain 70.59 % carbon, 10.59 % hydrogen and 18.82 % oxygen by mass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C: 70.59 ÷ 12 = 5.88",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints each ratio as a fraction (70.59 over 12, 10.59 over 1, 18.82 over 16); ÷ stands for each bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "H: 10.59 ÷ 1 = 10.59",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "O: 18.82 ÷ 16 = 1.18",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "5:9:1 / C₅H₉O",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q10-b-i",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-nitrogen-dioxide-and-dinitrogen-tetroxide",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q10(b)(i)",
+  "questionText": "Write the equilibrium constant (Kc) expression for this equilibrium.",
+  "stem": "Consider the equilibrium described by the following balanced chemical equation: 2NO₂(g) ⇌ N₂O₄(g) ΔH = –57.2 kJ mol⁻¹ Nitrogen dioxide (NO₂) has a dark brown colour. Dinitrogen tetroxide (N₂O₄) is colourless.",
+  "figureKey": "chemistry-2024-OL-scheme-q10b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[N₂O₄] ÷ [NO₂]²",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme adds: [allow 4 marks if order is reversed] The scheme prints [N₂O₄] over [NO₂]² as a fraction; ÷ stands for its bar, and its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-b-iii",
+  "topicId": "chem-2-3",
+  "conceptId": "combined-gas-law-equation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(b)(iii)",
+  "questionText": "Write the equation for the combined gas law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P₁V₁ ÷ T₁ = P₂V₂ ÷ T₂",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [accept PV=nRT] [accept equation for Boyle/Charles law for 3 marks] The scheme prints P₁V₁ over T₁ and P₂V₂ over T₂ as fractions; ÷ stands for each bar."
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-b-iv",
+  "topicId": "chem-2-3",
+  "conceptId": "volume-of-a-gas-from-the-combined-gas-law",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(b)(iv)",
+  "questionText": "A sample of a gas was found to occupy a volume of 253 cm³ at a temperature of 300 K and a pressure of 95 kPa. Calculate the volume that the gas would occupy at a temperature of 350 K and a pressure of 105 kPa.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[5 + 2]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "95 × 253 ÷ 300 = 105 × V₂ ÷ 350",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prints 95 × 253 over 300 and 105 × V₂ over 350 as fractions; ÷ stands for each bar."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "267 (cm³)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [5 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2024-ol-q11-c-iv",
+  "topicId": "chem-u2",
+  "conceptId": "another-instrumental-method-of-separation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(c)(iv)",
+  "questionText": "Name one other instrumental method of separation or analysis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "e.g. distillation",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-d-a-i",
+  "topicId": "chem-u3",
+  "conceptId": "naming-a-chemical-industry-studied",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(d)A(i)",
+  "questionText": "Name a chemical industry which you have studied.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "named industry",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints only the criterion \"named industry\" for this part: the answer depends on the industry the candidate has studied."
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-d-a-ii",
+  "topicId": "chem-u3",
+  "conceptId": "raw-materials-of-a-chemical-industry",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(d)A(ii)",
+  "questionText": "Identify the raw materials used for this industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "appropriate raw materials",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prints only the criterion \"appropriate raw materials\" for this part: the answer depends on the industry the candidate has studied."
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-d-a-iii",
+  "topicId": "chem-u3",
+  "conceptId": "quality-control-in-a-chemical-industry",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(d)A(iii)",
+  "questionText": "Describe the quality control processes for this industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "description of quality control, e.g. analytical technique(s)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prints only the criterion \"description of quality control\" for this part: the answer depends on the industry the candidate has studied."
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-d-a-v",
+  "topicId": "chem-u3",
+  "conceptId": "a-factor-in-locating-a-chemical-industry",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(d)A(v)",
+  "questionText": "State one factor taken into account when choosing a location for this industry.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "e.g. transport, workforce, etc.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2024-ol-q11-d-b-iv",
+  "topicId": "chem-1-1",
+  "conceptId": "composition-of-a-named-alloy",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2024 OL Q11(d)B(iv)",
+  "questionText": "State the composition of the alloy you have named.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[2 + 2]"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fe + C / Ni + Cr / Cu + Zn / Cu + Sn / Fe + Al + Ni + Co, etc.",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [2 + 2] without saying which point earns which part, so no per-point value is shown."
  }
 ]

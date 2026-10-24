@@ -1245,6 +1245,826 @@
     "after": "57eb75fee65e560e"
    }
   },
+  "2024 OL": {
+   "chem-2024-ol-q1-a-i": {
+    "status": "corrected",
+    "before": "bedf9e9e9630c6b0",
+    "after": "a6cd3a3db5d120a1",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q1-a-ii": {
+    "status": "corrected",
+    "before": "cee9a6d1c85d4ea4",
+    "after": "a650277683feef33",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q1-b": {
+    "status": "corrected",
+    "before": "723331b316d498f4",
+    "after": "2772d80143de8bb7",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q1-c-i": {
+    "status": "corrected",
+    "before": "6c46b3378383f32f",
+    "after": "c5c906dc995f49b7",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q1-c-ii": {
+    "status": "corrected",
+    "before": "53ec4887a6b731e3",
+    "after": "128c31de0c4f6414",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q1-c-iii": {
+    "status": "corrected",
+    "before": "3010a872ed89bcf2",
+    "after": "6cbda3231329d1f6",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q10-a-i": {
+    "status": "corrected",
+    "before": "cb7130bf673bf896",
+    "after": "b7e31533fec2c686",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-a-ii": {
+    "status": "added",
+    "after": "50de23569f150339"
+   },
+   "chem-2024-ol-q10-a-iii": {
+    "status": "corrected",
+    "before": "66b6639262ebeb23",
+    "after": "466d5ea0680ba125",
+    "changed": [
+     "section",
+     "stem",
+     "rows"
+    ]
+   },
+   "chem-2024-ol-q10-a-iv": {
+    "status": "corrected",
+    "before": "3dde6bf09914486c",
+    "after": "84db0c3fdf44a181",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-b-i": {
+    "status": "added",
+    "after": "6f8b4e5c3bf92ae3"
+   },
+   "chem-2024-ol-q10-b-ii": {
+    "status": "corrected",
+    "before": "5c7fdec52e0ef6e3",
+    "after": "43f947fb021076e7",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-b-iii": {
+    "status": "corrected",
+    "before": "08e0e94a26e50224",
+    "after": "623207ac07fad74b",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-c-i": {
+    "status": "corrected",
+    "before": "fc83576149c71303",
+    "after": "a49e02f965566d4a",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-c-ii-iv": {
+    "status": "corrected",
+    "before": "676ea7cfd127c674",
+    "after": "15d53e085999378f",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-c-v": {
+    "status": "corrected",
+    "before": "020d6d1a6803862c",
+    "after": "8b5628814a6f09ad",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q10-c-vi": {
+    "status": "corrected",
+    "before": "24267728e301b40f",
+    "after": "4c591ce22a91d23c",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-a-i-iii": {
+    "status": "corrected",
+    "before": "bfae9c697ae872c7",
+    "after": "b55db82034459566",
+    "changed": [
+     "questionRef",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-a-iv-vi": {
+    "status": "corrected",
+    "before": "3025086b8af83cbc",
+    "after": "45676e688fe108f8",
+    "changed": [
+     "questionRef",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-b-i-ii": {
+    "status": "corrected",
+    "before": "45170b4ea381a6f8",
+    "after": "ce420df13618fb20",
+    "changed": [
+     "questionRef",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-b-iii": {
+    "status": "added",
+    "after": "f0d2148dc2dd6171"
+   },
+   "chem-2024-ol-q11-b-iv": {
+    "status": "added",
+    "after": "bce7c253d23df3ad"
+   },
+   "chem-2024-ol-q11-c-i": {
+    "status": "corrected",
+    "before": "cfffa1308c7ab78e",
+    "after": "013b312aaf9a7368",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-c-ii": {
+    "status": "corrected",
+    "before": "051d8922182fc93b",
+    "after": "cb85aa6e8edc197d",
+    "changed": [
+     "section",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-c-iii-iv": {
+    "status": "corrected",
+    "before": "637a8b73c97ae612",
+    "after": "9e8ecc46873c3b1d",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-c-iv": {
+    "status": "added",
+    "after": "68e0f9f282eba31f"
+   },
+   "chem-2024-ol-q11-d-a-i": {
+    "status": "added",
+    "after": "be2170b8d7e959ab"
+   },
+   "chem-2024-ol-q11-d-a-ii": {
+    "status": "added",
+    "after": "b936bba408c03ae8"
+   },
+   "chem-2024-ol-q11-d-a-iii": {
+    "status": "added",
+    "after": "a1dd961472720065"
+   },
+   "chem-2024-ol-q11-d-a-iv-v": {
+    "status": "corrected",
+    "before": "57fe8dfd149b186a",
+    "after": "9cc5dee9d7b1a609",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-d-a-v": {
+    "status": "added",
+    "after": "0abb702688b85506"
+   },
+   "chem-2024-ol-q11-d-b-i": {
+    "status": "corrected",
+    "before": "9defb79bde2d9ae3",
+    "after": "1fcff7445a07b37c",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-d-b-ii": {
+    "status": "corrected",
+    "before": "5ddfea46d4bb595a",
+    "after": "757178a1d4cf211e",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-d-b-iii-iv": {
+    "status": "corrected",
+    "before": "7253579a8649e276",
+    "after": "7e833d9e73643254",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q11-d-b-iv": {
+    "status": "added",
+    "after": "82a677ad952ddb87"
+   },
+   "chem-2024-ol-q11-d-b-v": {
+    "status": "corrected",
+    "before": "daffc2084d6d33d8",
+    "after": "e4da3330a3f9c16d",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q2-a-i": {
+    "status": "corrected",
+    "before": "3bf82d53085d7a77",
+    "after": "8a9f6936dff13623",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey",
+     "labelKey"
+    ]
+   },
+   "chem-2024-ol-q2-a-ii": {
+    "status": "corrected",
+    "before": "2357e20b46b6881a",
+    "after": "3900c1a52cace307",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q2-b": {
+    "status": "corrected",
+    "before": "39a006a86a7c0d62",
+    "after": "d3720c9eae41ae0f",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q2-b-ii": {
+    "status": "added",
+    "after": "443231e94add41b0"
+   },
+   "chem-2024-ol-q2-b-iii": {
+    "status": "added",
+    "after": "e43460d376b6c65f"
+   },
+   "chem-2024-ol-q2-b-iv": {
+    "status": "corrected",
+    "before": "91eda1a38d33b49f",
+    "after": "658b2cf43a488b6a",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q2-c-i": {
+    "status": "corrected",
+    "before": "45ceaa58d7bfce0c",
+    "after": "90914a4bd3534d6b",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q2-c-ii": {
+    "status": "added",
+    "after": "b512e36e867fcd99"
+   },
+   "chem-2024-ol-q3-a-i": {
+    "status": "corrected",
+    "before": "ad4bbef818bc37b3",
+    "after": "bc1b9f5d9b6a8641",
+    "changed": [
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q3-a-ii": {
+    "status": "corrected",
+    "before": "825da36f740c86cb",
+    "after": "789befefb236cd9e",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q3-b": {
+    "status": "corrected",
+    "before": "9026cb52c645116d",
+    "after": "441dceb73e313296",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q3-b-i": {
+    "status": "corrected",
+    "before": "c301e617690f99ee",
+    "after": "181d742307d01bf5",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-a": {
+    "status": "corrected",
+    "before": "cc8c6813301495ac",
+    "after": "82b36df9266cd8fe",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-b": {
+    "status": "corrected",
+    "before": "24fd21d8003aa254",
+    "after": "5cc40d431e75abd1",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-c": {
+    "status": "corrected",
+    "before": "584b774844aa07bc",
+    "after": "fc6678db9fb07a3b",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-d": {
+    "status": "corrected",
+    "before": "1f5306fb0b28fb73",
+    "after": "f28448b89245b786",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-e": {
+    "status": "corrected",
+    "before": "86feb06eb42ab942",
+    "after": "b892187f3962ddb1",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-f-i-ii": {
+    "status": "added",
+    "after": "8b333d8ca833253c"
+   },
+   "chem-2024-ol-q4-g": {
+    "status": "corrected",
+    "before": "67ca13344b2f20e6",
+    "after": "677009a0e431cd3f",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-h": {
+    "status": "corrected",
+    "before": "e694c65bb0fce5f0",
+    "after": "4b8ee92b170c4e20",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-i": {
+    "status": "corrected",
+    "before": "9361ee5d3cf3869b",
+    "after": "bba055727d5b39ee",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-j": {
+    "status": "corrected",
+    "before": "d160d5ea05c2f1fd",
+    "after": "11e45c5d22c36e88",
+    "changed": [
+     "stem",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-k": {
+    "status": "added",
+    "after": "3268de2ec917de5a"
+   },
+   "chem-2024-ol-q4-l-a": {
+    "status": "corrected",
+    "before": "5c12f310d9bde5e3",
+    "after": "e1ca9cbf5508022d",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q4-l-b": {
+    "status": "corrected",
+    "before": "54fa2a94f7599e13",
+    "after": "ac08c41490c39126",
+    "changed": [
+     "questionRef",
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q5-a": {
+    "status": "corrected",
+    "before": "1cd49f8c7b023474",
+    "after": "daf8b9b1737386ed",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q5-b": {
+    "status": "added",
+    "after": "6de8eb73962ca738"
+   },
+   "chem-2024-ol-q6-a-i": {
+    "status": "corrected",
+    "before": "5cc9d654848ce556",
+    "after": "ec0af28b2b4de5fc",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q6-a-ii": {
+    "status": "added",
+    "after": "ac2404ef42c15621"
+   },
+   "chem-2024-ol-q6-a-iii-v": {
+    "status": "corrected",
+    "before": "7c127f9cf76a4390",
+    "after": "454e98f40823e093",
+    "changed": [
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q6-b": {
+    "status": "corrected",
+    "before": "41fa5a28e1ac1740",
+    "after": "5ddab57675fb92dd",
+    "changed": [
+     "questionRef",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q7-a-i": {
+    "status": "corrected",
+    "before": "f064a4ddd1cf890f",
+    "after": "81076b10c4a39987",
+    "changed": [
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q7-a-ii": {
+    "status": "added",
+    "after": "62737f41473fa29d"
+   },
+   "chem-2024-ol-q7-a-iii": {
+    "status": "corrected",
+    "before": "0413204125215d05",
+    "after": "13d27997816b2272",
+    "changed": [
+     "section",
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q7-a-iv": {
+    "status": "corrected",
+    "before": "6b60f09a25650b96",
+    "after": "b9a480abbb4974f3",
+    "changed": [
+     "section",
+     "stem",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q7-b-i": {
+    "status": "corrected",
+    "before": "79dbb454622db029",
+    "after": "bbbcdecaff34102a",
+    "changed": [
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q7-b-ii": {
+    "status": "corrected",
+    "before": "e12e934758a3fb2a",
+    "after": "9b2a9507fc63951d",
+    "changed": [
+     "stem",
+     "questionText",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q7-c": {
+    "status": "corrected",
+    "before": "7ea99ec8e8620ac0",
+    "after": "debb8df2ea196d58",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q7-c-ii": {
+    "status": "added",
+    "after": "01d619fb9849c675"
+   },
+   "chem-2024-ol-q8-a-iii": {
+    "status": "corrected",
+    "before": "8efaa1c8dd95c0cc",
+    "after": "fcb09d880c1fe0f5",
+    "changed": [
+     "conceptId",
+     "section",
+     "questionRef",
+     "stem",
+     "questionText",
+     "tariffModel",
+     "totalMarks",
+     "rows",
+     "notes",
+     "labelKey"
+    ]
+   },
+   "chem-2024-ol-q8-a-iv": {
+    "status": "withdrawn",
+    "before": "478248300e45ef37",
+    "replacementId": "chem-2024-ol-q8-a-iii",
+    "reason": "The scheme prices Q8(a)(i)-(iv) with one cell ([8 + 6 + 2 + 2]), so they are one task; carded once, as chem-2024-ol-q8-a-iii (the first pre-audit card on it).",
+    "shipped": true
+   },
+   "chem-2024-ol-q8-b-i": {
+    "status": "corrected",
+    "before": "dbb49e654d6448c9",
+    "after": "e745029ade89ca33",
+    "changed": [
+     "section",
+     "stem",
+     "rows",
+     "labelKey"
+    ]
+   },
+   "chem-2024-ol-q8-b-ii": {
+    "status": "added",
+    "after": "00cf3d6bdce5244c"
+   },
+   "chem-2024-ol-q8-b-iii-iv": {
+    "status": "corrected",
+    "before": "1d885debee67bc65",
+    "after": "21675f1b6ebadaea",
+    "changed": [
+     "conceptId",
+     "questionRef",
+     "stem",
+     "questionText",
+     "totalMarks",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q8-b-iv": {
+    "status": "added",
+    "after": "fe810571cbe67ece"
+   },
+   "chem-2024-ol-q8-c": {
+    "status": "corrected",
+    "before": "3b2ed935edfdf9db",
+    "after": "c5acaf7d1663215c",
+    "changed": [
+     "questionRef",
+     "stem",
+     "tariffModel",
+     "rows",
+     "notes",
+     "figureKey"
+    ]
+   },
+   "chem-2024-ol-q9-a-i": {
+    "status": "corrected",
+    "before": "ea10215425175871",
+    "after": "fa4c35a32dd9df3b",
+    "changed": [
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q9-a-ii": {
+    "status": "corrected",
+    "before": "3bce339c4e4447b6",
+    "after": "5c328b66df6702f0",
+    "changed": [
+     "stem",
+     "questionText",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q9-b": {
+    "status": "corrected",
+    "before": "852054e156ad0a62",
+    "after": "e4e479e92a50788b",
+    "changed": [
+     "questionRef",
+     "tariffModel",
+     "rows",
+     "notes"
+    ]
+   },
+   "chem-2024-ol-q9-c": {
+    "status": "added",
+    "after": "fb6a09c4877cb34f"
+   }
+  },
   "2025 HL": {
    "chem-2025-hl-q1-a": {
     "status": "corrected",

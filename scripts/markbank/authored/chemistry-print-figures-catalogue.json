@@ -658,5 +658,100 @@
   "description": "The marking scheme's own answer to 2024 HL {ref}, as the State Examinations Commission printed it: a dot and cross diagram of BF₃: boron in the centre sharing one electron pair with each of three fluorine atoms (one dot and one cross per bond), each fluorine carrying three lone pairs.",
   "questionRef": "2024 HL Q11(a)(i)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A long thin glass pipette drawn upright, a bulb in the middle of its stem, labelled A at its tip.",
+  "questionRef": "2024 OL Q2(a)"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q2-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The titration results table: approximate titration 20.9 cm³, first accurate titration 20.6 cm³, second accurate titration 20.5 cm³.",
+  "questionRef": "2024 OL Q2(c)"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two diamond-shaped hazard symbols: A shows a flame over a circle; B shows liquid from two test tubes eating into a bar and a hand.",
+  "questionRef": "2024 OL Q4(f)"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q4k.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two six-membered rings of carbon atoms drawn as hexagons: X with a circle inside it, Y without.",
+  "questionRef": "2024 OL Q4(k)"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q4l-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph of the head and shoulders of a young woman with dark hair, the scientist the question asks about.",
+  "questionRef": "2024 OL Q4(l)B"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Two pieces of Question 7's print stacked. Above, the apparatus: a conical flask holding hydrogen peroxide with manganese dioxide (catalyst) on the bottom, a delivery tube from its stopper into a gas syringe marked from 0 to 100, and a stopwatch beside it. Below, the results table: time (minutes) 0, 2, 4, 6, 8, 10, 12, 14, 16, 18 against volume of O₂ (cm³) 0, 29, 48, 63, 73, 81, 87, 90, 92, 92.",
+  "questionRef": "2024 OL Q7"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q5b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 5's print as the paper sets it: the opening ('The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below.'), the table of the first four periods with each element's atomic number, symbol and electronegativity (N 3.04, F 3.98 among them), 'Electronegativity values increase across a period of the periodic table.', then part (b), 'Nitrogen trifluoride (NF₃) is a greenhouse gas.', with parts (i) to (vii) and the mark (28).",
+  "questionRef": "2024 OL Q5(b)"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q8b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Question 8's print as the paper sets it: 'Study the series of reactions shown below and answer the following questions.', the series C₂H₄ (Q) to C₂H₅OH (R) to S, and S down to CH₃COOH (T); then part (b), 'Compound S is an aldehyde. It reacts with Fehling's reagent to produce compound T.', and part (ii), 'Draw the molecular structure of compound S, including all atoms and bonds.'",
+  "questionRef": "2024 OL Q8(b)(ii)"
+ },
+ {
+  "file": "chemistry-2024-OL-scheme-q5b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 OL Q5(b)(iv), as the State Examinations Commission printed it: a dot and cross diagram of NF₃: nitrogen in the centre with its own lone pair (two crosses), sharing one electron pair (one dot and one cross) with each of three fluorine atoms, each fluorine carrying three lone pairs.",
+  "questionRef": "2024 OL Q5(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-OL-scheme-q6a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 OL Q6(a)(ii), as the State Examinations Commission printed it: the full structural formulae of the two isomers of C₄H₁₀, stacked: butane, a straight chain of four carbon atoms, and methylpropane, a central carbon bonded to three CH₃ groups and a hydrogen, every hydrogen drawn.",
+  "questionRef": "2024 OL Q6(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-OL-scheme-q8b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 OL Q8(b)(ii), as the State Examinations Commission printed it: the full structural formula of ethanal, a CH₃ group bonded to a carbon that carries a double-bonded oxygen and a hydrogen.",
+  "questionRef": "2024 OL Q8(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-OL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own answer to 2024 OL Q10(b)(i), as the State Examinations Commission printed it: the Kc expression set as a fraction, [N₂O₄] over [NO₂]².",
+  "questionRef": "2024 OL Q10(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q9c-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The table of water-treatment stages with the stage names left blank: Stage A, water is passed through a wire mesh to remove any floating debris; Stage B, chemicals are added to the water to help small suspended solids clump together; Stage C, suspended solids are allowed to settle to the bottom of large tanks; Stage D, water is passed through beds of sand to remove suspended solids; Stage E, harmful micro-organisms in the water are killed; Stage F, chemicals are added to the water which can help strengthen teeth; Stage G, small amounts of acid or base are added to the water.",
+  "questionRef": "2024 OL Q9(c)"
  }
 ]
