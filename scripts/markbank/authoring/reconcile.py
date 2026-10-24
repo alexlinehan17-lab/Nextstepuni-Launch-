@@ -144,7 +144,20 @@ def shipped_cards(subject):
         declared_count = payload.get('cardCount', payload.get('meta', {}).get('cardCount'))
         if declared_count != len(cards):
             raise AssertionError(f'{subject} authored manifest count is stale')
-        return [(card['id'], card['questionRef']) for card in cards]
+        shipped = [(card['id'], card['questionRef']) for card in cards]
+        if subject == 'english':
+            # Reviewed papers published paper by paper by english_publish.py.
+            # A bridged legacy paper is served by its published cards only:
+            # its legacy ids are kept by those cards or registered aliases.
+            manifests = [json.load(open(os.path.join(DECKS, subject, f'published-{level}.json'),
+                                        encoding='utf-8')) for level in ('higher', 'ordinary')]
+            bridged = {cid for published in manifests for cid in published.get('bridgedLegacyIds', [])}
+            shipped = [(cid, ref) for cid, ref in shipped if cid not in bridged]
+            for published in manifests:
+                if published['cardCount'] != len(published['cards']):
+                    raise AssertionError(f"english published {published['level']} manifest count is stale")
+                shipped += [(card['id'], card['questionRef']) for card in published['cards']]
+        return shipped
 
     out = []
     for level in ('higher', 'ordinary', 'common'):
@@ -692,7 +705,10 @@ def content_hash(subject):
     if subject in ('english', 'irish', 'art', 'geography', 'politics-and-society', 'accounting'):
         # These corpora are data-driven, so the manifest and factory can
         # materially change a runtime card even when the tiny exports do not.
-        for name in ('factory.ts', 'authored.json'):
+        names = ['factory.ts', 'authored.json']
+        if subject == 'english':
+            names += ['published-higher.json', 'published-ordinary.json']
+        for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):
         for name in (('factory.ts', 'reviewed.json') if subject == 'physical-education' else ('reviewed.ts', 'reviewed.json')):

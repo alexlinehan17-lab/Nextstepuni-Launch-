@@ -95,3 +95,6 @@ tmp/waysin-audit.json
 
 # Purchased editable Kobra originals stay local; app runtime is compiled.
 components/kobra/
+
+# Reproducible English corpus extraction and PDF review intermediates.
+tmp/english-audit/

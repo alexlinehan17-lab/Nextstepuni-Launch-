@@ -1379,6 +1379,8 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   min-width: 0;
 }
 
+.mb-source-reader-header-linked { grid-template-columns: minmax(0, 1fr) auto; }
+
 .mb-source-reader-heading > span {
   display: block;
   color: #A8430E;
@@ -1518,6 +1520,73 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   box-shadow: none !important;
   margin-bottom: 0 !important;
 }
+
+.mb-source-reader-poem {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(16px, 4vw, 40px);
+  color: var(--mb-ink);
+  background: var(--mb-paper);
+}
+
+.mb-source-reader-poem h3 {
+  margin: 0 0 8px;
+  font: 600 1.5em/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-poet {
+  margin: 0 0 28px;
+  font: 500 .85em/1.5 'Inter', sans-serif;
+}
+
+.mb-source-reader-stanza {
+  margin: 0 0 1.5em;
+  font: 400 1.1em/1.65 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-stanza > span {
+  display: block;
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+}
+
+.mb-source-reader-reading-list {
+  min-height: 0;
+  overflow-y: auto;
+  padding: clamp(20px, 4vw, 40px);
+  color: var(--mb-ink);
+  background: var(--mb-paper);
+  font: 400 14px/1.6 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-source-reader-reading-list article {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-reading-list h3 {
+  margin: 0 0 8px;
+  font: 600 25px/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-reading-list p { margin: 0 0 8px; }
+
+.mb-source-reader-reading-list a {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: 2px solid var(--mb-ink);
+  border-radius: 5px;
+  color: var(--mb-paper);
+  background: var(--mb-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.mb-source-reader-reading-list a span { font-size: 11px; font-weight: 400; }
+.mb-source-reader-reading-list a:hover { background: var(--mb-ink-2); }
+.mb-source-reader-reading-list a:focus-visible { outline: 3px solid #F26B1F; outline-offset: 3px; }
 
 .mb-source-reader-loading {
   width: 100%;
