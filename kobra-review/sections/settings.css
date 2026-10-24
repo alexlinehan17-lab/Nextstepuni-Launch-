@@ -1,0 +1,147 @@
+/* Settings on Kobra: one hairline paper card on the white canvas. Sections are
+   divided by rules, rows are 12px hairline boxes, and every control is a Kobra
+   primitive. Orange marks ordinary selection (the crew card, a switch that is
+   on); ink marks the active appearance tab. No shadows, no tints. */
+
+.kr-st {
+  /* The theme's own ink on orange (approved-ui-theme .nsu-success-mark), so a
+     selected face keeps dark text in both appearances. */
+  --kr-st-on-orange: #25241f;
+  min-width: 0;
+  color: var(--foreground);
+  font: 500 15px/1.5 'DM Sans', sans-serif;
+}
+
+.kr-st-toolbar { display: flex; margin-bottom: 14px; }
+
+.kr-st .kr-st-card.nsu-paper-card {
+  max-width: 560px;
+  padding: 24px;
+  border-radius: 20px;
+  border-color: var(--border);
+  box-shadow: none;
+}
+.kr-st-panel { container-type: inline-size; min-width: 0; }
+
+/* Header: serif title, the save confirmation in ink (orange is never success). */
+.kr-st .kr-st-head {
+  display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+  padding-bottom: 18px; border-bottom: 1px solid var(--border);
+}
+.kr-st .kr-st-title {
+  margin: 0;
+  font: 600 28px/1.1 var(--nsu-serif); letter-spacing: -.03em; color: var(--foreground);
+}
+.kr-st .kr-st-saved {
+  display: inline-flex; align-items: center; gap: 6px; width: auto; min-height: 20px; margin: 0;
+  font: 500 13px/1 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.kr-st-saved svg { width: 14px; height: 14px; color: var(--foreground); }
+
+/* Sections. */
+.kr-st-group { padding: 20px 0; border-bottom: 1px solid var(--border); }
+.kr-st-group:last-child { padding-bottom: 0; border-bottom: 0; }
+.kr-st .kr-st-eyebrow {
+  margin: 0 0 12px;
+  font: 500 11px/1.5 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.kr-st-label { display: block; margin: 0; font: 500 15px/1.4 'DM Sans', sans-serif; color: var(--foreground); }
+.kr-st-detail { display: block; margin: 2px 0 0; font: 400 13px/1.45 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-st-row-text { flex: 1; min-width: 0; text-align: left; }
+
+/* Rows. */
+.kr-st-rows { display: grid; gap: 8px; }
+.kr-st-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  min-height: 56px; padding: 12px 14px;
+  border: 1px solid var(--border); border-radius: 12px; background: transparent;
+}
+.kr-st-switch-row { cursor: pointer; transition: border-color 150ms ease; }
+.kr-st-switch-row:hover { border-color: var(--outline-strong); }
+.kr-st-switch-row:has(:focus-visible) { border-color: var(--foreground); }
+
+/* Account identity: the chosen crew character beside the name. */
+.kr-st-identity { display: flex; align-items: center; gap: 14px; }
+.kr-st .kr-st-identity-art.crew-illustration { width: 48px; height: 48px; flex-shrink: 0; }
+
+/* Star Crew: a Kobra RadioGroup of cards. Selected = orange ring, the radio's
+   orange dot, and the name strip filled orange with dark text. */
+.kr-st .kr-st-crew[data-slot=radio-group] {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;
+}
+@container (max-width: 380px) {
+  .kr-st .kr-st-crew[data-slot=radio-group] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.kr-st-crew-option {
+  position: relative; display: flex; flex-direction: column; align-items: center; min-width: 0; overflow: hidden;
+  border: 1px solid var(--border); border-radius: 12px; background: var(--background);
+  cursor: pointer; transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.kr-st-crew-option:hover { border-color: var(--outline-strong); }
+.kr-st .kr-st-crew-art.crew-illustration { width: 64px; height: 64px; margin: 16px 0 10px; }
+.kr-st-crew-name {
+  align-self: stretch; padding: 8px 6px;
+  border-top: 1px solid var(--border);
+  font: 500 13px/1.2 'DM Sans', sans-serif; text-align: center; color: var(--foreground);
+  transition: background 150ms ease, color 150ms ease;
+}
+.kr-st .kr-st-crew-option [data-slot=radio-group-item] { position: absolute; top: 8px; right: 8px; background: var(--background); }
+.kr-st [data-slot=radio-group-indicator] { background: var(--nsu-orange); }
+.kr-st .kr-st-crew-option[data-selected=true] { border-color: var(--nsu-orange); box-shadow: inset 0 0 0 1px var(--nsu-orange); }
+.kr-st .kr-st-crew-option[data-selected=true] [data-slot=radio-group-item] { border-color: var(--nsu-orange); }
+.kr-st .kr-st-crew-option[data-selected=true] .kr-st-crew-name {
+  border-top-color: var(--nsu-orange); background: var(--nsu-orange); color: var(--kr-st-on-orange); font-weight: 600;
+}
+.kr-st-crew-option:has(:focus-visible) { outline: 2px solid var(--foreground); outline-offset: 2px; }
+
+/* Appearance: Kobra Tabs, the active face given an ink edge so it reads at a glance. */
+.kr-st-appearance { flex-wrap: wrap; }
+.kr-st .kr-st-appearance [data-slot=tabs-list] { height: 40px; }
+.kr-st .kr-st-appearance [data-slot=tabs-trigger] { padding-inline: 14px; font: 500 14px/1 'DM Sans', sans-serif; }
+.kr-st .kr-st-appearance [data-slot=tabs-trigger][data-active] { border-color: var(--outline-strong); color: var(--foreground); }
+
+/* A switch that is on wears orange, like the before's accent track. */
+.kr-st [data-slot=switch][data-on=true] { background: var(--nsu-orange); }
+
+/* School year: the forward step as an ink outline button. */
+.kr-st-year { flex-wrap: wrap; }
+.kr-st-year-text { display: inline-flex; align-items: center; gap: 10px; min-width: 0; }
+.kr-st-year-text svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--muted-foreground); }
+.kr-st .kr-st-terminal { margin: 0; font: italic 400 14px/1.5 var(--nsu-serif); color: var(--muted-foreground); }
+
+/* Buttons. */
+.kr-st .kr-st-action { min-height: 44px; padding-inline: 16px; gap: 8px; font: 500 15px/1 'DM Sans', sans-serif; }
+.kr-st .kr-st-action svg { width: 16px; height: 16px; }
+
+.kr-st .kr-st-rowbtn {
+  display: flex; width: 100%; height: auto; min-height: 56px; padding: 12px 14px; gap: 12px;
+  justify-content: flex-start; text-align: left; white-space: normal;
+  border-radius: 12px; font: 500 15px/1.4 'DM Sans', sans-serif;
+}
+.kr-st .kr-st-rowbtn-icon { display: inline-flex; color: var(--muted-foreground); }
+.kr-st .kr-st-rowbtn svg { width: 16px; height: 16px; }
+.kr-st .kr-st-chevron { margin-left: auto; color: var(--muted-foreground); }
+
+.kr-st .kr-st-note { margin: 0 0 12px; font: 400 13px/1.6 'DM Sans', sans-serif; color: var(--muted-foreground); }
+.kr-st .kr-st-inline-link {
+  display: inline; height: auto; padding: 0; vertical-align: baseline;
+  font: inherit; font-weight: 600; color: var(--foreground);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px;
+}
+
+.kr-st .kr-st-quiet {
+  min-height: 44px; margin: 12px 0 0 -10px; padding-inline: 10px; gap: 8px;
+  font: 500 15px/1 'DM Sans', sans-serif;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+.kr-st .kr-st-quiet svg { width: 16px; height: 16px; }
+
+/* The same panel in a Kobra Dialog: a hairline edge instead of a cast shadow. */
+.kr-st-dialog[data-slot=dialog-content] { border: 1px solid var(--border); border-radius: 20px; box-shadow: none; }
+.kr-page.kr-st-portal { width: auto; max-width: none; min-height: 0; margin: 0; padding: 0; background: transparent; }
+.kr-st.kr-st-in-dialog .kr-st-head { padding-right: 44px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-st-switch-row, .kr-st-crew-option, .kr-st-crew-name { transition: none; }
+}

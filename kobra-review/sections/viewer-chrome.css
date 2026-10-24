@@ -1,0 +1,173 @@
+/* Paper Trail viewer chrome on Kobra (review AFTER).
+   Kobra Buttons replace the option-E ink buttons and their offset shadows.
+   The viewer is a hairline frame on the white canvas, the page a white sheet
+   with a hairline. Orange marks the on state of Answers (ordinary selection)
+   and fills the page progress; ink carries everything else. No shadows of our
+   own, no tints, no !important. Widths are measured on the section itself. */
+
+.kr-vc {
+  container: kr-vc / inline-size;
+  --kr-vc-ring: color-mix(in srgb, var(--nsu-orange) 22%, transparent);
+  /* The house ink on an orange face (approved-ui-theme: .nsu-success-mark). */
+  --kr-vc-on-orange: #25241f;
+  min-width: 0;
+  color: var(--foreground);
+  font: 400 15px/1.55 'DM Sans', sans-serif;
+}
+.kr-vc p, .kr-vc h3 { margin: 0; }
+.kr-vc .kr-vc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.kr-vc .kr-vc-viewer {
+  display: flex; flex-direction: column; min-width: 0; overflow: hidden;
+  border: 1px solid var(--outline-soft); border-radius: 20px; background: var(--background);
+}
+
+/* Toolbar. On a narrow viewer the controls take their own row, as live. */
+.kr-vc .kr-vc-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px;
+  padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--background);
+}
+.kr-vc .kr-vc-heading { flex: 1; min-width: 0; }
+.kr-vc .kr-vc-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 15px/1.3 'DM Sans', sans-serif; }
+.kr-vc .kr-vc-subtitle { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; line-height: 1.4; color: var(--muted-foreground); }
+.kr-vc .kr-vc-controls { order: 10; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px; width: 100%; }
+
+/* Every button in the chrome: 44px, radius 12, DM Sans 15/500. */
+.kr-vc .kr-vc-toolbar [data-slot=button],
+.kr-vc .kr-vc-pagebar [data-slot=button],
+.kr-vc .kr-vc-page [data-slot=button] {
+  min-height: 44px; padding-inline: 16px; gap: 8px; border-radius: 12px;
+  font: 500 15px/1 'DM Sans', sans-serif;
+}
+.kr-vc [data-slot=button] svg { width: 18px; height: 18px; }
+.kr-vc .kr-vc-toolbar .kr-vc-icon[data-slot=button],
+.kr-vc .kr-vc-pagebar .kr-vc-icon[data-slot=button] { width: 44px; height: 44px; padding: 0; }
+
+/* Paper / Scheme: Kobra Tabs, house face (soft tray, chosen tab white with an ink edge). */
+.kr-vc [data-slot=tabs] { gap: 0; }
+.kr-vc [data-slot=tabs] > [data-slot=tabs-list] {
+  height: 44px; padding: 4px; gap: 4px;
+  border: 1px solid var(--outline-soft); border-radius: 12px;
+}
+.kr-vc [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger] {
+  min-width: 0; padding: 0 16px;
+  border: 1px solid transparent; border-radius: 9px;
+  font: 500 15px/1 'DM Sans', sans-serif; color: var(--muted-foreground);
+}
+.kr-vc [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger]:hover { color: var(--foreground); }
+.kr-vc [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger][aria-selected=true] {
+  background: var(--background); color: var(--foreground);
+  border-color: var(--outline-strong); box-shadow: none;
+}
+
+/* Answers: the main action, Kobra's default face; on, it turns orange and its marker fills. */
+.kr-vc .kr-vc-answers-mark {
+  width: 14px; height: 14px; flex: none; border-radius: 50%;
+  border: 1.5px solid currentColor; background: transparent;
+  transition: background 150ms ease;
+}
+.kr-vc .kr-vc-toolbar .kr-vc-answers[aria-pressed=true][data-slot=button] { color: var(--kr-vc-on-orange); }
+.kr-vc .kr-vc-toolbar .kr-vc-answers[aria-pressed=true][data-slot=button]::before { background: var(--nsu-orange); }
+.kr-vc .kr-vc-toolbar .kr-vc-answers[aria-pressed=true][data-slot=button]:hover::before {
+  background: color-mix(in srgb, var(--nsu-orange) 88%, var(--kr-vc-on-orange));
+}
+.kr-vc .kr-vc-answers[aria-pressed=true] .kr-vc-answers-mark { background: currentColor; }
+
+/* Tools: an outline button with the count of tools on; ringed while any is on. */
+.kr-vc .kr-vc-count {
+  display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--foreground); color: var(--background);
+  font: 600 12px/1 'DM Sans', sans-serif; font-variant-numeric: tabular-nums;
+}
+.kr-vc .kr-vc-toolbar .kr-vc-tools[data-active][data-slot=button]::before,
+.kr-vc .kr-vc-toolbar .kr-vc-save[aria-pressed=true][data-slot=button]::before {
+  border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground);
+}
+
+/* The page. */
+.kr-vc .kr-vc-canvas { padding: 24px 16px 12px; overflow-x: auto; background: var(--surface-canvas); }
+.kr-vc .kr-vc-page {
+  width: calc(min(100%, 680px) * var(--kr-vc-zoom, 1)); min-height: 340px; margin: 0 auto;
+  padding: clamp(20px, 5cqi, 44px);
+  border: 1px solid var(--outline-soft); border-radius: 12px; background: var(--background);
+  transition: width 200ms ease;
+}
+.kr-vc .kr-vc-page-head {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px;
+  padding-bottom: 14px; border-bottom: 1px solid var(--border);
+  font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground);
+}
+.kr-vc .kr-vc-question { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 24px 0 18px; }
+.kr-vc .kr-vc-question-title { margin: 0; font: 600 clamp(24px, 4cqi, 30px)/1.15 var(--nsu-serif); letter-spacing: -.025em; }
+.kr-vc .kr-vc-page .kr-vc-chip[data-slot=button] { font-size: 14px; padding-inline: 14px; }
+.kr-vc .kr-vc-lines { display: grid; gap: 12px; }
+.kr-vc .kr-vc-lines span { display: block; height: 10px; border-radius: 5px; background: color-mix(in srgb, var(--foreground) 7%, transparent); }
+.kr-vc .kr-vc-lines span:nth-child(2) { width: 94%; }
+.kr-vc .kr-vc-lines span:nth-child(3) { width: 88%; }
+.kr-vc .kr-vc-lines span:nth-child(4) { width: 96%; }
+.kr-vc .kr-vc-lines span:nth-child(5) { width: 58%; }
+.kr-vc .kr-vc-placeholder { margin-top: 26px; font-size: 13px; color: var(--muted-foreground); }
+.kr-vc .kr-vc-copyright { margin-top: 10px; text-align: center; font-size: 12px; color: var(--muted-foreground); }
+
+/* Page bar: zoom, then previous / position / next. */
+.kr-vc .kr-vc-pagebar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px;
+  padding: 12px 16px; border-top: 1px solid var(--border); background: var(--background);
+}
+.kr-vc .kr-vc-zoom { display: flex; gap: 8px; }
+.kr-vc .kr-vc-position { display: flex; align-items: center; gap: 12px; flex: 1 1 260px; max-width: 440px; min-width: 0; }
+/* Slider is purchased but not compiled: the position reads as a serif count over a Kobra Progress. */
+.kr-vc .kr-vc-position .kr-vc-progress[data-slot=progress] { display: grid; gap: 8px; flex: 1; min-width: 0; }
+.kr-vc .kr-vc-progress .kr-vc-page-count {
+  justify-self: center; font: 500 20px/1 var(--nsu-serif); letter-spacing: -.02em; font-variant-numeric: tabular-nums;
+}
+.kr-vc .kr-vc-page-count .kr-vc-of { font-style: italic; font-weight: 400; color: var(--muted-foreground); }
+.kr-vc .kr-vc-progress [data-slot=progress-track] {
+  height: 8px; border: 1px solid var(--outline-strong); border-radius: 999px; background: var(--background);
+}
+.kr-vc .kr-vc-progress [data-slot=progress-indicator] { border-radius: 999px; background: var(--nsu-orange); }
+
+@container kr-vc (min-width: 900px) {
+  .kr-vc .kr-vc-controls { order: 0; width: auto; }
+}
+@container kr-vc (max-width: 480px) {
+  .kr-vc .kr-vc-controls { justify-content: flex-start; }
+  .kr-vc .kr-vc-controls > [data-slot=tabs] { flex-basis: 100%; }
+  .kr-vc .kr-vc-controls > [data-slot=tabs] > [data-slot=tabs-list] { display: flex; width: 100%; }
+  .kr-vc .kr-vc-controls > [data-slot=tabs] > [data-slot=tabs-list] > [data-slot=tabs-trigger] { flex: 1; }
+  .kr-vc .kr-vc-position { flex-basis: 100%; max-width: none; }
+  .kr-vc .kr-vc-canvas { padding-inline: 10px; }
+}
+
+/* The Tools menu renders in a portal, outside .kr-vc, so it is styled by its own class. */
+.kr-vc-menu[data-slot=dropdown-menu-content] {
+  width: min(360px, calc(100vw - 32px)); padding: 6px;
+  border: 1px solid var(--outline-soft); border-radius: 16px; box-shadow: none;
+  font-family: 'DM Sans', sans-serif;
+}
+.kr-vc-menu .kr-vc-menu-label {
+  margin: 0; padding: 8px 10px 6px;
+  font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground);
+}
+.kr-vc-menu .kr-vc-tool[data-slot=dropdown-menu-item] {
+  display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 10px; border-radius: 12px; cursor: pointer;
+}
+.kr-vc-menu .kr-vc-tool-icon {
+  display: grid; place-items: center; width: 34px; height: 34px;
+  border: 1px solid var(--outline-soft); border-radius: 10px; color: var(--foreground);
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+.kr-vc-menu .kr-vc-tool-icon svg { width: 16px; height: 16px; }
+.kr-vc-menu .kr-vc-tool-icon[data-on] { border-color: var(--foreground); background: var(--foreground); color: var(--background); }
+.kr-vc-menu .kr-vc-tool-copy { display: grid; gap: 2px; min-width: 0; }
+.kr-vc-menu .kr-vc-tool-copy strong { font: 500 15px/1.35 'DM Sans', sans-serif; color: var(--foreground); }
+.kr-vc-menu .kr-vc-tool-copy small { font: 400 13px/1.4 'DM Sans', sans-serif; color: var(--muted-foreground); }
+/* The row is the control (menuitemcheckbox); the switch only shows its state. */
+.kr-vc-menu .kr-vc-tool-switch { display: inline-flex; pointer-events: none; }
+.kr-vc-menu .kr-vc-tool-switch [data-slot=switch][data-on=false] { background: var(--outline-soft); }
+.kr-vc-menu .kr-vc-tool-open { width: 16px; height: 16px; color: var(--muted-foreground); }
+
+@media (prefers-reduced-motion: reduce) {
+  .kr-vc .kr-vc-page, .kr-vc .kr-vc-answers-mark, .kr-vc-menu .kr-vc-tool-icon { transition: none; }
+}

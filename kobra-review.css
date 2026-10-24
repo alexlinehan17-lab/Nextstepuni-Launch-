@@ -1,0 +1,45 @@
+/* Kobra review page — the current screen beside its Kobra rebuild. Dev only. */
+.kr-page .kr-shell { min-height: 100vh; background: var(--surface-canvas); color: var(--foreground); }
+.kr-page .kr-topbar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding: 14px 16px; border-bottom: 1px solid var(--outline-soft);
+  background: color-mix(in srgb, var(--surface-canvas) 95%, transparent); backdrop-filter: blur(20px);
+}
+.kr-page .kr-topbar h1 { margin: 0; font: 500 17px/1.2 var(--nsu-serif); letter-spacing: -.01em; }
+.kr-page .kr-topbar h1 em { font-style: italic; color: var(--nsu-orange); }
+.kr-page .kr-nav { display: flex; gap: 6px; flex-wrap: wrap; }
+.kr-page .kr-nav a {
+  font: 500 13px/1 'DM Sans', sans-serif; color: var(--muted-foreground); text-decoration: none;
+  padding: 8px 10px; border-radius: 999px; border: 1px solid transparent;
+}
+.kr-page .kr-nav a:hover { color: var(--foreground); border-color: var(--border); }
+.kr-page .kr-main { max-width: 1480px; margin: 0 auto; padding: 36px 16px 120px; }
+@media (min-width: 768px) { .kr-page .kr-main { padding-inline: 32px; } }
+.kr-page .kr-hero { padding-bottom: 24px; margin-bottom: 8px; border-bottom: 1px solid var(--outline-strong); }
+.kr-page .kr-kicker { margin: 0; font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--nsu-orange); }
+.kr-page .kr-title { margin: 10px 0 0; max-width: 22ch; font: 500 clamp(30px, 3.4vw, 44px)/1.08 var(--nsu-serif); letter-spacing: -.03em; }
+.kr-page .kr-title em { font-style: italic; color: var(--nsu-orange); }
+.kr-page .kr-lede { margin: 14px 0 0; max-width: 66ch; font-size: 15px; line-height: 1.6; color: var(--muted-foreground); }
+
+.kr-page .kr-block { padding: 40px 0 8px; scroll-margin-top: 80px; }
+.kr-page .kr-block + .kr-block { border-top: 1px solid var(--border); }
+.kr-page .kr-block-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+.kr-page .kr-block-head .kr-n { font: 500 13px/1 var(--nsu-serif); color: var(--muted-foreground); }
+.kr-page .kr-block-head h2 { margin: 0; font: 500 26px/1.2 var(--nsu-serif); letter-spacing: -.02em; }
+.kr-page .kr-change { margin: 0 0 18px; max-width: 80ch; font-size: 14px; line-height: 1.6; color: var(--muted-foreground); }
+.kr-page .kr-pair { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+@media (min-width: 1100px) { .kr-page .kr-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.kr-page .kr-pane { min-width: 0; }
+.kr-page .kr-pane-label { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--muted-foreground); }
+.kr-page .kr-pane-label b { font-weight: 500; color: var(--foreground); }
+.kr-page .kr-pane-label span.kr-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
+.kr-page .kr-pane-label.after span.kr-dot { background: var(--nsu-orange); }
+.kr-page .kr-frame { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: var(--background); }
+.kr-page .kr-frame iframe { display: block; width: 100%; height: 780px; border: 0; background: #fff; }
+.kr-page .kr-frame.after { padding: 20px; min-height: 780px; }
+@media (min-width: 768px) { .kr-page .kr-frame.after { padding: 28px; } }
+.kr-page .kr-pending { padding: 40px 0; text-align: center; color: var(--muted-foreground); font-size: 14px; }
+.kr-page .kr-section { min-width: 0; }
+.kr-page .kr-open { font-size: 13px; }
+.kr-page .kr-open a { color: var(--muted-foreground); text-decoration: underline; text-underline-offset: 3px; }
