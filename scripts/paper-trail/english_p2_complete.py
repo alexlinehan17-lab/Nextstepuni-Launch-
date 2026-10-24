@@ -128,13 +128,13 @@ def header_candidates(page, letters):
     lines = lines_of(page)
     found = []
     direct = re.compile(
-        rf"^([{letters}])\s+([A-Za-z][\w’'&.,:()?!‐‑–—\- ]{{2,}}(?:\s+[‐‑–—-]\s+.*)?)$")
+        rf"^([{letters}])\.?\s+([A-Za-z][\w’'&.,:()?!‐‑–—\- ]{{2,}}(?:\s+[‐‑–—-]\s+.*)?)$")
     for index, line in enumerate(lines):
         match = direct.match(line.text)
         if match and line.x < 150:
             found.append((match.group(1), title_case(match.group(2)), line.y))
             continue
-        if not re.fullmatch(rf"[{letters}]", line.text) or line.x > 120:
+        if not re.fullmatch(rf"[{letters}]\.?", line.text) or line.x > 120:
             continue
         neighbours = [candidate for candidate in lines
                       if candidate.x > line.x + 8 and abs(candidate.y - line.y) < 0.018]
@@ -145,7 +145,7 @@ def header_candidates(page, letters):
             continue
         title = min(neighbours, key=lambda candidate: (abs(candidate.y - line.y), candidate.x)).text
         if len(tokens(title)):
-            found.append((line.text, title_case(title), line.y))
+            found.append((line.text.rstrip('.'), title_case(title), line.y))
     deduped = {}
     for letter, title, y in found:
         deduped.setdefault(letter, (letter, title, y))

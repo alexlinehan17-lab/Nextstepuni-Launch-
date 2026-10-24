@@ -17,6 +17,8 @@
  */
 
 import { questionLabel } from '../components/PaperTrail/topics';
+import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import path from 'path';
 import { describe, it, expect } from 'vitest';
@@ -68,15 +70,19 @@ describe('audited hosted answer maps', () => {
       .toBe(storage);
   });
 
-  it('keeps the original Art, Physics and Agricultural Science overrides byte-identical to their reviewed source maps', () => {
-    // 23 Art/Physics maps plus 38 reviewed Agricultural Science editions
-    // (2010–2026 English Higher and Ordinary, plus the reviewed Irish editions).
+  it('keeps the original Art, Physics, Agricultural Science and English overrides byte-identical to their reviewed source maps', () => {
+    // 23 Art/Physics maps, 38 reviewed Agricultural Science editions
+    // (2010–2026 English Higher and Ordinary, plus the reviewed Irish editions),
+    // and one reviewed English map per paper published by english_publish.py
+    // (all 68 English-version papers 2010–2026, legacy papers bridged).
+    const englishPapers = publishedEnglishHigher.papers.length + publishedEnglishOrdinary.papers.length;
+    expect(englishPapers).toBe(68);
     const originalOverrides = [...HOSTED_ANSWER_OVERRIDES].filter(key => key.startsWith('art|')
-      || key.startsWith('physics|') || key.startsWith('agricultural-science|'));
-    expect(originalOverrides).toHaveLength(61);
+      || key.startsWith('physics|') || key.startsWith('agricultural-science|') || key.startsWith('english|'));
+    expect(originalOverrides).toHaveLength(61 + englishPapers);
     for (const key of originalOverrides) {
       const [subjectId, year, fileid] = key.split('|');
-      expect(['agricultural-science', 'art', 'physics']).toContain(subjectId);
+      expect(['agricultural-science', 'art', 'english', 'physics']).toContain(subjectId);
       const hosted = path.join(HOSTED_ANSWERS_DIR, year, `${fileid}.json`);
       const source = path.join(SOURCE_ANSWERS_DIR, year, `${fileid}.json`);
       expect(existsSync(hosted), hosted).toBe(true);

@@ -17,6 +17,7 @@ import {
   geographyScoreId,
   suggestRubricGrade,
 } from '../components/MarkBank/SessionScreen';
+import { geographyRowScoreId, geographySrpScoreId } from '../components/MarkBank/geographyScoring';
 import { isRubricCard, tariffReconciles, type SecRubricCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { waysInSourceFromMarkBank } from '../components/WaysIn/sources';
@@ -365,6 +366,74 @@ describe('Geography prompt, source and marking integrity', () => {
     expect(suggestRubricGrade(reviewed, {
       [geographyScoreId('c1')]: 4, [geographyScoreId('c2')]: 2, [geographyScoreId('c3')]: 16,
     })).toBe('got');
+  });
+
+  it('scores a structured card row by row, SRPs by count, capped at the paper', () => {
+    const card = ORDINARY.find(entry => entry.id === 'geography-2023-ol-p2-q3a')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const criterion = card.rubric.criteria[0];
+    const allocation = criterion.allocation!;
+    const [magnitude, plates, effects, epicentre] = allocation.groups;
+    expect(magnitude.prompt).toBe('What was the magnitude of the earthquake in Afghanistan?');
+    expect(magnitude.rows).toEqual([{ id: 'r1', text: '6.1', marks: 3 }]);
+    expect(plates.rows[0]).toMatchObject({ text: 'Indian plate and Eurasian plate', marks: 6, steps: [3, 6] });
+    expect(effects.rows.map(row => row.text)).toEqual(['People killed', 'People injured', 'Homes destroyed']);
+    expect(epicentre.srp[0]).toMatchObject({ label: 'Brief explanation', count: 2, marks: 3 });
+
+    const scores = {
+      [geographyRowScoreId(criterion.id, 'r1')]: 3,
+      [geographyRowScoreId(criterion.id, plates.rows[0].id)]: 3,
+      [geographySrpScoreId(criterion.id, epicentre.srp[0].id)]: 2,
+    };
+    expect(geographyMarks(card, scores)).toBe(12);
+    expect(suggestRubricGrade(card, scores)).toBe('shaky');
+    // A claim the scheme does not print for the row counts for nothing.
+    expect(geographyMarks(card, { [geographyRowScoreId(criterion.id, plates.rows[0].id)]: 5 })).toBe(0);
+    // Counting more SRPs than the part allows stops at the part.
+    expect(geographyMarks(card, { [geographySrpScoreId(criterion.id, epicentre.srp[0].id)]: 9 })).toBe(6);
+    // The single-placement id is ignored once the card is structured.
+    expect(geographyMarks(card, { [geographyScoreId(criterion.id)]: 30 })).toBe(0);
+  });
+
+  it('shows the scheme\'s own words where it prices an answer it does not print', () => {
+    const card = ORDINARY.find(entry => entry.id === 'geography-2022-ol-p2-q1c')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const allocation = card.rubric.criteria[0].allocation!;
+    expect(allocation.groups[0].rows[0]).toEqual({ id: 'r1', text: 'Tectonic plate named', marks: 3, tariffOnly: true });
+    expect(allocation.groups[1].srp[0]).toMatchObject({ label: 'Description/Explanation', count: 9, marks: 3 });
+    expect(allocation.directions).toEqual([
+      'At least one SRP for explanation',
+      'Allow one SRP for relevant annotated diagram',
+      "Relevant information, additional to the text, given on diagrams can be awarded SRP's",
+    ]);
+  });
+
+  it('shares an SRP pool between parts the scheme prices as a range', () => {
+    const card = HIGHER.find(entry => entry.id === 'geography-2021-hl-p2-q3c')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const criterion = card.rubric.criteria[0];
+    const allocation = criterion.allocation!;
+    expect(allocation.srpPool).toEqual({ count: 13, marks: 2 });
+    const [rock1, rock2] = allocation.groups[0].srp;
+    expect(rock1).toMatchObject({ count: 7, min: 6 });
+    const scores = {
+      [geographySrpScoreId(criterion.id, rock1.id)]: 7,
+      [geographySrpScoreId(criterion.id, rock2.id)]: 7,
+    };
+    // 14 counted, 13 shared: the pool caps the pair.
+    expect(geographyMarks(card, scores)).toBe(26);
+  });
+
+  it('repeats a unit the scheme prices once and asks for several times', () => {
+    const card = HIGHER.find(entry => entry.id === 'geography-2021-hl-p2-q4a')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const criterion = card.rubric.criteria[0];
+    const allocation = criterion.allocation!;
+    const features = allocation.groups.find(group => group.repeat)!;
+    expect(features.repeat).toEqual({ count: 4, unit: '4 features', marks: 4 });
+    expect(features.rows.map(row => [row.text, row.marks])).toEqual([['Shown', 2], ['Named', 2]]);
+    const scores = Object.fromEntries([1, 2, 3, 4].map(unit => [geographyRowScoreId(criterion.id, features.rows[1].id, unit), 2]));
+    expect(geographyMarks(card, scores)).toBe(8);
   });
 
   it('files every card under the canonical Geography syllabus', () => {
