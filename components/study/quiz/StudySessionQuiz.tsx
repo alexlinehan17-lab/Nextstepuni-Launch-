@@ -17,15 +17,15 @@
  * study time (the outbox that saves a session exists because it once did).
  */
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import KobraScope, { Button } from '../../approved-ui-runtime';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
+import KobraScope, { Button, useSoundMuted } from '../../approved-ui-runtime';
 import CrewIllustration from '../../CrewIllustration';
 import { figureUrl } from '../../../utils/figureUrl';
 import { ensureDeck, commitReview, memoryFor, readLocal } from '../../MarkBank/store';
 import { grade as gradeCard, retentionFor } from '../../MarkBank/scheduler';
 import { LEVEL_LABEL } from '../../MarkBank/deck';
-import { useStudyTransitionSound } from '../../../hooks/useStudyTransitionSound';
+import { useDeckSound } from '../../immersiveDeck/useDeckSound';
 import type { MarkRow, SecQuestionCard } from '../../../types/markBank';
 import type { StudyTopicSelection } from '../../../types/studyTopics';
 import type { StudentSubject } from '../../subjectData';
@@ -56,11 +56,9 @@ interface Props {
   now?: () => number;
 }
 
-const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-/** Every tickable item on a card, in order, so letters run A, B, C… down the page. */
-function letterFor(index: number): string {
-  return LETTERS[index] ?? `${index + 1}`;
+/** A round ink marker, empty until the mark is earned (the study room's selection). */
+function Mark() {
+  return <span className="sq-mark" aria-hidden="true"><Check /></span>;
 }
 
 function tariffLine(group: NonNullable<MarkRow['group']>): string {
@@ -83,9 +81,12 @@ export default function StudySessionQuiz({
   const [finished, setFinished] = useState(false);
   const deckReady = useRef(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  // The study room's approved bloom cue marks the reveal — the one moment the
-  // page changes state on the student's action. It honours the room's mute.
-  const sound = useStudyTransitionSound();
+  // The deck's "complete" cue (four rising notes) marks the reveal — the one
+  // moment the page changes state on the student's action. Alex's pick, 24 Oct
+  // 2026, over the room's bloom. It honours the app's mute.
+  const { play: playCue, setEnabled: setCueEnabled } = useDeckSound();
+  const muted = useSoundMuted();
+  useEffect(() => { setCueEnabled(!muted); }, [muted, setCueEnabled]);
 
   useEffect(() => {
     let live = true;
@@ -138,9 +139,9 @@ export default function StudySessionQuiz({
 
   const primary = useCallback(() => {
     if (finished) { onDone(results); return; }
-    if (!revealed) { sound.play('return'); setRevealed(true); return; }
+    if (!revealed) { playCue('complete'); setRevealed(true); return; }
     next();
-  }, [finished, onDone, results, revealed, next, sound]);
+  }, [finished, onDone, results, revealed, next, playCue]);
 
   // ⌘↵ / Ctrl↵ moves on, as on the Kobra question card.
   useEffect(() => {
@@ -170,21 +171,6 @@ export default function StudySessionQuiz({
   const scoreClaimed = results.reduce((sum, item) => sum + item.marksClaimed, 0);
   const scoreAvailable = results.reduce((sum, item) => sum + item.marksAvailable, 0);
   const topicLabel = quiz?.topicLabel ?? subject;
-
-  // Letters run down the whole card, across groups, so "C" means one thing.
-  const lettered = useMemo(() => {
-    if (!card) return [];
-    let n = 0;
-    return card.rows.map((row, i) => {
-      const key = rowKey(row, i);
-      if (row.kind === 'anyN' && row.group) {
-        const letters = row.group.options.map(() => letterFor(n++));
-        return { row, key, letters };
-      }
-      if (row.permittedMarks) return { row, key, letters: [] as string[] };
-      return { row, key, letters: [letterFor(n++)] };
-    });
-  }, [card]);
 
   return (
     <KobraScope className="nsu-study-quiz">
@@ -269,7 +255,8 @@ export default function StudySessionQuiz({
                   <p className="sq-step-label">Step two · mark yourself</p>
                   <p className="sq-step-copy">Tick each point the examiner would have given you.</p>
                   <ul className="sq-rows" aria-label="Marking scheme">
-                    {lettered.map(({ row, key, letters }) => {
+                    {card.rows.map((row, i) => {
+                      const key = rowKey(row, i);
                       if (row.kind === 'anyN' && row.group) {
                         const group = row.group;
                         const chosen = answer.picks[key] ?? [];
@@ -284,7 +271,7 @@ export default function StudySessionQuiz({
                                 return (
                                   <li key={oi}>
                                     <button type="button" className="sq-row" aria-pressed={on} disabled={atCap} onClick={() => togglePick(key, oi, group.claimMax)}>
-                                      <span className="sq-letter" aria-hidden="true">{letters[oi]}</span>
+                                      <Mark />
                                       <span className="sq-row-text">{option}</span>
                                       <span className="sq-row-marks">{group.perOptionSteps ? '' : `${group.perOption} ${group.perOption === 1 ? 'mark' : 'marks'}`}</span>
                                     </button>
@@ -316,7 +303,7 @@ export default function StudySessionQuiz({
                         <li key={key}>
                           <button type="button" className="sq-row" aria-pressed={on} disabled={Boolean(needs)} onClick={() => toggleClaim(key)}
                             title={needs ? 'Needs the point above first' : undefined}>
-                            <span className="sq-letter" aria-hidden="true">{letters[0]}</span>
+                            <Mark />
                             <span className="sq-row-text">
                               {row.verbatim}
                               {row.accepts?.length ? <small>Also accepted: {row.accepts.join(' · ')}</small> : null}
@@ -363,9 +350,9 @@ export default function StudySessionQuiz({
                     : 'A fair read on what stuck. The ones you missed come back in Mark Bank sooner; the ones you had, later.'}
               </p>
               <ul className="sq-results" aria-label="Question by question">
-                {results.map((result, i) => (
+                {results.map(result => (
                   <li key={result.cardId} data-grade={result.grade}>
-                    <span className="sq-letter" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                    <Mark />
                     <span>{result.questionRef}<small>{result.grade === 'got' ? 'Got it' : result.grade === 'shaky' ? 'Partly' : 'Missed'}</small></span>
                     <strong>{result.marksClaimed} / {result.marksAvailable}</strong>
                   </li>

@@ -1,17 +1,11 @@
 /* End-of-session quiz — a Kobra paper card on the white canvas, in the study
    room's idiom: hairline rows, serif numerals, orange only for eyebrows and the
-   score. A mark the student earned is a SUCCESS state (Mark Bank's green), never
-   an orange selection — accent ≠ success. Shares the Your setup page's tokens. */
+   score. A mark the student earned is INK — the room's own selection: an ink
+   ring on the row and a filled ink marker. No green (Alex, 23 Oct 2026: the
+   success green and lettered badges are off-brand here) and no orange, which
+   would read as "selected". Shares the Your setup page's tokens. */
 .nsu-study-quiz {
-  --sq-success: #3A8D5F;
-  --sq-success-tint: #E8F2EC;
-  --sq-success-text: #1F5F3E;
   --sq-ring: color-mix(in srgb, var(--nsu-orange) 22%, transparent);
-}
-.dark .nsu-study-quiz {
-  --sq-success: #76C295;
-  --sq-success-tint: #20372A;
-  --sq-success-text: #AEE1BF;
 }
 .nsu-study-quiz .sq-width { max-width: 760px; margin: 0 auto; }
 .nsu-study-quiz .sq-topbar {
@@ -70,7 +64,7 @@
 .nsu-study-quiz .sq-step-label { margin: 0 0 6px; font: 500 11px/1.6 'DM Sans', sans-serif; letter-spacing: .13em; text-transform: uppercase; color: var(--nsu-orange); }
 .nsu-study-quiz .sq-step-copy { margin: 0 0 16px; font-size: 14px; line-height: 1.6; color: var(--muted-foreground); max-width: 52ch; }
 
-/* Step two: the scheme's points as lettered hairline rows, like the room's choices. */
+/* Step two: the scheme's points as hairline rows with a round marker, like the room's choices. */
 .nsu-study-quiz .sq-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .nsu-study-quiz .sq-row {
   display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 12px; align-items: start;
@@ -82,21 +76,20 @@
 .nsu-study-quiz .sq-row:hover { border-color: var(--foreground); }
 .nsu-study-quiz .sq-row:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--sq-ring); }
 .nsu-study-quiz .sq-row:disabled { cursor: not-allowed; opacity: .45; }
-.nsu-study-quiz .sq-letter {
-  display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px; margin-top: 1px;
-  border: 1px solid var(--foreground); border-radius: 7px;
-  font: 500 12px/1 var(--nsu-serif); color: var(--foreground);
+.nsu-study-quiz .sq-mark {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 22px; height: 22px; margin-top: 1px;
+  border: 1.5px solid var(--foreground); border-radius: 50%; background: transparent; color: transparent;
+  transition: background 150ms ease, border-color 150ms ease;
 }
+.nsu-study-quiz .sq-mark svg { width: 13px; height: 13px; stroke-width: 3; }
 .nsu-study-quiz .sq-row-text { min-width: 0; }
 .nsu-study-quiz .sq-row-text small { display: block; margin-top: 3px; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); font-weight: 400; }
 .nsu-study-quiz .sq-row-marks { font: 500 13px/1 'DM Sans', sans-serif; color: var(--muted-foreground); white-space: nowrap; margin-top: 4px; font-variant-numeric: tabular-nums; }
-/* Earned: the success register, as in Mark Bank. */
-.nsu-study-quiz .sq-row[aria-pressed='true'] { border-color: var(--sq-success); background: var(--sq-success-tint); color: var(--sq-success-text); }
-.nsu-study-quiz .sq-row[aria-pressed='true']:hover { border-color: var(--sq-success); }
-.nsu-study-quiz .sq-row[aria-pressed='true'] .sq-letter { background: var(--sq-success); border-color: var(--sq-success); color: #fff; }
-.dark .nsu-study-quiz .sq-row[aria-pressed='true'] .sq-letter { color: #14241B; }
-.nsu-study-quiz .sq-row[aria-pressed='true'] .sq-row-marks { color: var(--sq-success-text); }
-.nsu-study-quiz .sq-row[aria-pressed='true'] .sq-row-text small { color: var(--sq-success-text); opacity: .8; }
+/* Earned: ink. The row takes the room's selection ring and the marker fills. */
+.nsu-study-quiz .sq-row[aria-pressed='true'] { border-color: var(--foreground); box-shadow: inset 0 0 0 1px var(--foreground); }
+.nsu-study-quiz .sq-row[aria-pressed='true'] .sq-mark { background: var(--foreground); border-color: var(--foreground); color: var(--background); }
+.nsu-study-quiz .sq-row[aria-pressed='true'] .sq-row-marks { color: var(--foreground); }
 
 /* A bounded "any N of these" group, and stepped criterion marks. */
 .nsu-study-quiz .sq-group { padding: 12px 14px; border: 1px dashed var(--border); border-radius: 12px; }
@@ -109,8 +102,7 @@
 .nsu-study-quiz .sq-steps button { min-width: 44px; padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--background); color: var(--foreground); font: 500 14px/1 'DM Sans', sans-serif; cursor: pointer; }
 .nsu-study-quiz .sq-steps button:hover { border-color: var(--foreground); }
 .nsu-study-quiz .sq-steps button:focus-visible { outline: none; box-shadow: 0 0 0 3px var(--sq-ring); }
-.nsu-study-quiz .sq-steps button[aria-pressed='true'] { background: var(--sq-success); color: #fff; border-color: var(--sq-success); }
-.dark .nsu-study-quiz .sq-steps button[aria-pressed='true'] { color: #14241B; }
+.nsu-study-quiz .sq-steps button[aria-pressed='true'] { background: var(--foreground); color: var(--background); border-color: var(--foreground); }
 
 /* Tally and the card's footer. */
 .nsu-study-quiz .sq-tally { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--border); }
@@ -138,10 +130,10 @@
 .nsu-study-quiz .sq-results li > span:nth-child(2) { min-width: 0; font-weight: 500; }
 .nsu-study-quiz .sq-results li small { display: block; color: var(--muted-foreground); font-size: 13px; margin-top: 2px; font-weight: 400; }
 .nsu-study-quiz .sq-results li strong { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 500; }
-.nsu-study-quiz .sq-results li[data-grade='got'] .sq-letter { background: var(--sq-success); border-color: var(--sq-success); color: #fff; }
-.dark .nsu-study-quiz .sq-results li[data-grade='got'] .sq-letter { color: #14241B; }
-.nsu-study-quiz .sq-results li[data-grade='got'] small { color: var(--sq-success-text); }
-.nsu-study-quiz .sq-results li[data-grade='missed'] .sq-letter { border-style: dashed; color: var(--muted-foreground); }
+.nsu-study-quiz .sq-results li .sq-mark { align-self: start; margin-top: 0; }
+.nsu-study-quiz .sq-results li[data-grade='got'] .sq-mark { background: var(--foreground); color: var(--background); }
+.nsu-study-quiz .sq-results li[data-grade='shaky'] .sq-mark { color: var(--foreground); }
+.nsu-study-quiz .sq-results li[data-grade='missed'] .sq-mark { border-color: var(--border); }
 .nsu-study-quiz .sq-next { margin: 16px 0 0; font-size: 13px; color: var(--muted-foreground); }
 
 /* Loading keeps the same card so nothing jumps. */
