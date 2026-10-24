@@ -90,8 +90,8 @@ export const ClaimRow: React.FC<{
 /** A sub-part heading over a run of rows: the scheme's "(a)" or "(ii) Restaurant", the paper's sub-question. */
 export const ClaimPart: React.FC<{ label?: string; prompt?: string }> = ({ label, prompt }) => (
   <h4 className="mb-claim-part">
-    {label && <span>{label}</span>}
-    {prompt && <span>{prompt}</span>}
+    {label && <span className="mb-claim-part-label">{label}</span>}
+    {prompt && <span className="mb-claim-part-prompt">{prompt}</span>}
   </h4>
 );
 

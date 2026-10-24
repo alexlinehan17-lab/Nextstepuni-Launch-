@@ -1,0 +1,9 @@
+/* Irish exact answers as rows: sub-questions in their own frames, each with
+   the scheme's tariff; rows, chips and directions come from claim-rows.css. */
+.mb-irish-alloc { display: grid; gap: 12px; }
+.mb-irish-part { display: grid; gap: 7px; padding: 10px 10px 8px; border-radius: 11px; border: 1px solid var(--mb-border); }
+.mb-irish-part-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mb-irish-part-head .mb-claim-part { margin: 0; flex: 1 1 auto; min-width: 0; }
+.mb-irish-part-chip { flex: none; white-space: normal; text-align: right; max-width: 45%; line-height: 1.5; padding: 2px 6px; }
+.mb-irish-part-total { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-top: 2px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-irish-part-total strong { font: 750 13px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
