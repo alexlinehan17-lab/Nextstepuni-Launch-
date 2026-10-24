@@ -208,7 +208,9 @@ Q3S = (L(4, 'Examine the photographs above and complete the table', 'completed f
 PART_ONE += [
     T('p1-3-i', P1, '3', '(i)', 6, 4, L(4, 'Rivers and Glaciation'),
       (L(4, '(i) Match each of the photographs A, B and C with the landform that best matches', 'table below.'),),
-      (S(6, 'Q.3(i)', 'Q.4(i)'),),
+      # The U-shaped valley row prints D on the paper; its scheme line "D
+      # Glacial · 2m" prices the (ii) answer only, so it is not part of (i).
+      (S(6, 'Q.3(i)', 'D Glacial'), S(6, 'A (Glacial)', 'Q.4(i)')),
       (fixed('Row 1', 2, 'Q.3(i) · C Q.3 (ii) (River) · 2m'), fixed('Row 2', 2, 'A (Glacial) · 2m'),
        fixed('Row 3', 2, 'B River · 2m + 2m · Total 10m')),
       '0-9', RIVERS + GLAC, ID + 'p1-q3', ('page',), Q3S,
