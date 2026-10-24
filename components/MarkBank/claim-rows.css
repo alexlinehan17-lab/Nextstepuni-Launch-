@@ -48,8 +48,9 @@ button.mb-claim-row:disabled { cursor: default; opacity: .55; }
 .mb-claim-marks button[aria-pressed="true"] { border-color: var(--mb-ink); background: var(--mb-ink); color: var(--mb-paper); }
 .mb-claim-marks button:disabled { cursor: default; opacity: .45; }
 
-.mb-claim-part { margin: 6px 0 0; font: 600 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; }
-.mb-claim-part > span:first-child { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+.mb-claim-part { margin: 6px 0 0; font: 600 13px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.mb-claim-part-label { flex: none; font: 700 11px/1.4 'Roboto Mono', ui-monospace, monospace; color: var(--mb-label); }
+.mb-claim-part-prompt { min-width: 0; overflow-wrap: anywhere; }
 
 .mb-claim-directions { padding: 11px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
 .mb-claim-directions strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }

@@ -74,6 +74,8 @@ import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './Poli
 import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
 import GeographyAllocationPanel from './GeographyAllocationPanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
+import IrishAllocationPanel from './IrishAllocationPanel';
+import { irishCriterionMarks } from './irishScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
   appliedMathematicsMarks,
@@ -458,11 +460,13 @@ export function suggestPclmGrade(card: SecRubricCard, scores: PclmScores): MarkB
 export const irishScoreId = (criterionId: string) =>
   `irish:${criterionId}` as const;
 
-/** Awards add to the Irish mark; the scheme's explicit language penalties subtract. */
+/** Awards add to the Irish mark; the scheme's explicit language penalties
+ *  subtract. A criterion cut into rows (cards/irish/answers.ts) is worth its
+ *  claimed rows; any other is worth the mark placed on it. */
 export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
   if (card.rubric.system !== 'irish') return 0;
   const total = card.rubric.criteria.reduce((sum, criterion) => {
-    const value = scores[irishScoreId(criterion.id)] ?? 0;
+    const value = irishCriterionMarks(criterion, scores);
     return criterion.kind === 'deduction' ? sum - value : sum + value;
   }, 0);
   return Math.max(0, Math.min(card.totalMarks, total));
@@ -1326,12 +1330,25 @@ const IrishRubricPanel: React.FC<{
               }}>
                 {guidanceLabel(criterion)}
               </span>
-              {criterion.guidance.length > 0 && (
-                <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
-                  {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
-                </ul>
+              {criterion.allocation ? (
+                <div style={{ marginTop: 10 }}>
+                  <IrishAllocationPanel
+                    criterionId={criterion.id}
+                    allocation={criterion.allocation}
+                    scores={scores}
+                    onScore={(id, marks) => onScore(id as RubricScoreId, marks)}
+                  />
+                </div>
+              ) : (
+                <>
+                  {criterion.guidance.length > 0 && (
+                    <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                      {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
+                    </ul>
+                  )}
+                  {scoreControl(criterion)}
+                </>
               )}
-              {scoreControl(criterion)}
             </section>
           ))}
         </div>
@@ -2319,10 +2336,20 @@ const combinedListeningAssessment = (cards: IrishListeningCard[]): IrishListenin
 const listeningMemberScores = (
   card: IrishListeningCard,
   combinedScores: RubricScores,
-): RubricScores => Object.fromEntries(card.rubric.criteria.map(criterion => [
-  irishScoreId(criterion.id),
-  combinedScores[irishScoreId(listeningCriterionId(card.id, criterion.id))] ?? 0,
-])) as RubricScores;
+): RubricScores => {
+  const scores: Record<string, number> = {};
+  for (const criterion of card.rubric.criteria) {
+    const combined = irishScoreId(listeningCriterionId(card.id, criterion.id));
+    scores[irishScoreId(criterion.id)] = combinedScores[combined] ?? 0;
+    // Row claims nest under the namespaced criterion id: "irish:<card>/<criterion>:<part>:<row>".
+    for (const [key, value] of Object.entries(combinedScores)) {
+      if (key.startsWith(`${combined}:`) && value !== undefined) {
+        scores[`${irishScoreId(criterion.id)}${key.slice(combined.length)}`] = value;
+      }
+    }
+  }
+  return scores as RubricScores;
+};
 
 /* ------------------------------------------------------------ the screen ---- */
 
