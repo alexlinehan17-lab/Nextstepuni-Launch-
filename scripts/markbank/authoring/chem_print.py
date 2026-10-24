@@ -44,7 +44,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 PAPERS = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'papers')
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'schemes')
 
-FOOTER = re.compile(r'^(Leaving Certificate,? 20\d\d|Chemistry\s*[–-]\s*(Higher|Ordinary) Level'
+FOOTER = re.compile(r'^(Leaving Certificate( Examination)?,? 20\d\d|Chemistry\s*[–-]\s*(Higher|Ordinary) Level'
                     r'|Marking Scheme|\d{1,2})\s*$')
 # A mark cell at the scheme's right margin: "[2]", "[5+2]", "[6+2+2+2]", "[3×1 + 3]".
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
@@ -56,6 +56,7 @@ TRAILING_CELL = re.compile(r'\s*(\[\s*' + _TERM + r'(?:\s*\+\s*' + _TERM + r')*\
 # The examiner's aside in brackets: "[any two]", "[do not accept clear]".
 ASIDE = re.compile(r'^\[[^\]]*[a-zA-Z]{3}[^\]]*\]$')
 ANY = re.compile(r'^\[any (two|three|four)\]$', re.I)
+EQUATION_ASIDE = re.compile(r'^\[formulae \((\d+)\), balancing \((\d+)\)\]$')
 WORDS = {'two': 2, 'three': 3, 'four': 4}
 MAX_OPTIONS = 14
 
@@ -241,7 +242,9 @@ def _split_markers(lines):
             yield Line(l.page, (l.x0 + 20, l.y0, l.x1, l.y1), f'({both.group(2)})', l.bold, l.math)
             continue
         m = LEAD_MARKER.match(t)
-        while m and l.x0 < 100:
+        # Romans sit at x 113 in the 2021-2026 papers: "(vii) are not involved
+        # in bonding?" (2023 HL Q10(a)) opens its line with its marker.
+        while m and l.x0 < 125:
             yield Line(l.page, (l.x0, l.y0, l.x1, l.y1), m.group(1), l.bold, l.math)
             t = m.group(2)
             m = LEAD_MARKER.match(t)
@@ -274,6 +277,10 @@ TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define
 ANY_CELL = re.compile(r'^ANY\s+(TWO|THREE|FOUR|FIVE|SIX)\s*:?\s*(\(.+\))\s*$', re.I)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
+FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)\s*BALANCING:\s*\((\d{1,2})\)$')
+ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
+# A cell set between two answers on one row: "(3)" followed by more text.
+MID_ROUND = re.compile(r'\s\((\d{1,2}(?:\s*[×x]\s*\d{1,2})?)\)\s+(?=\S)')
 
 
 def is_cue_scheme(lines):
@@ -285,10 +292,19 @@ def cue_lines(lines):
     question heads as "N.", markers and cues split off each row's start (the
     cue dropped: it restates the ask), "ANY THREE: (3 × 3)" as an aside and a
     cell, and a cell set at the end of an answer line split off as a cell.
-    The scheme's outline pages (the tariffs listed question by question) are
-    left out: they are a summary, not the scheme."""
+    Where a row holds two answers each closed by its own cell ("water (H₂O)
+    (3)   calcium carbide (CaC₂) (3)"), what follows the first cell is moved
+    to a row of its own. The scheme's outline pages (the tariffs listed
+    question by question) are left out: they are a summary, not the scheme."""
     outline = {l.page for l in lines if OUTLINE_PAGE.match(l.text)}
     out = []
+    zones = []                       # (page, y0, x): later text on this row starts a new row
+
+    def shifted(l, x0=None):
+        x = l.x0 if x0 is None else x0
+        bump = sum(6.0 for pg, y, zx in zones if pg == l.page and abs(l.y0 - y) <= 5.0 and x >= zx)
+        return (l.y0 + bump, l.y1 + bump)
+
     for l in lines:
         if l.page in outline:
             continue
@@ -299,35 +315,78 @@ def cue_lines(lines):
             continue
         m = ANY_CELL.match(t)
         if m and l.x0 > 350:
-            out.append(Line(l.page, (l.x0, l.y0, l.x0 + 60, l.y1), f'[any {m.group(1).lower()}]', False))
-            out.append(Line(l.page, (max(l.x1 - 40, 481), l.y0, l.x1, l.y1),
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[any {m.group(1).lower()}]', False))
+            out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
                             '[' + m.group(2).strip()[1:-1] + ']', True))
             continue
+        m = FORMULAE_CELL.match(t)
+        if m and l.x0 > 350:
+            # An equation priced in two parts: "FORMULAE: (3) BALANCING: (3)".
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[formulae ({m.group(1)}), balancing '
+                                                                f'({m.group(2)})]', False))
+            out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
+                            f'[{m.group(1)} + {m.group(2)}]', True))
+            continue
+        if ROUND_CELL.match(t.strip()) and any(
+                o.page == l.page and abs(o.y0 - l.y0) <= 5.0 and o.x1 <= l.x0 + 1
+                and o.text.count('[') > o.text.count(']') for o in out[-3:]):
+            # "[Allow" (3) "for increase concentration ...]": a cell quoted
+            # inside an aside that the text layer splits into pieces.
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (l.x0, y0, l.x1, y1), t.strip(), l.bold, l.math))
+            continue
+        if ROUND_CELL.match(t.strip()):
+            y0, y1 = shifted(l)
+            out.append(Line(l.page, (max(l.x0, 481), y0, max(l.x1, 500), y1),
+                            '[' + t.strip()[1:-1] + ']', True))
+            if l.x0 < 350:
+                zones.append((l.page, l.y0, l.x1))     # a cell mid-row: what follows is a new row
+            continue
         x = l.x0
+        y0, y1 = shifted(l)
         while True:
             m = LEAD_TOKEN.match(t)
             if m:
-                out.append(Line(l.page, (x, l.y0, x + 15, l.y1), f'({m.group(1)})', False))
+                out.append(Line(l.page, (x, y0, x + 15, y1), f'({m.group(1)})', False))
                 t, x = t[m.end():], x + 20
                 continue
             m = CUE.match(t) or TITLE_CUE.match(t)
             if m:
                 t, x = t[m.end():], x + 30
                 continue
+            m = ALT_BEFORE_CUE.match(t)
+            if m:
+                # "A WRITE: CaCO₃ + SO₂ → ...": an alternative's letter, then its cue.
+                out.append(Line(l.page, (x, y0, x + 10, y1), m.group(1), False))
+                t, x = t[m.end():], x + 14
+                continue
             break
         t = t.strip()
         if not t:
             continue
-        if ROUND_CELL.match(t) and l.x0 > 350:
-            out.append(Line(l.page, (max(l.x0, 481), l.y0, l.x1, l.y1), '[' + t[1:-1] + ']', True))
+        m = MID_ROUND.search(t)
+        if m and t[:m.start()].count('[') > t[:m.start()].count(']'):
+            m = None                 # "[Allow (3) for ...]": a cell quoted inside an aside
+        if m and l.x0 < 350:
+            out.append(Line(l.page, (x, y0, x + 100, y1), t[:m.start()].strip(), l.bold, l.math))
+            out.append(Line(l.page, (481, y0, 500, y1), '[' + m.group(1) + ']', True))
+            rest = t[m.end():].strip()
+            if rest:
+                rest_line = Line(l.page, (x + 120, y0 + 6, l.x1, y1 + 6), rest, l.bold, l.math)
+                out.extend(cue_lines([rest_line]))
+            zones.append((l.page, l.y0, l.x0 + 1))
             continue
         m = TRAILING_ROUND.search(t)
         if m and m.start() > 0:
-            out.append(Line(l.page, (x, l.y0, l.x1 - 20, l.y1), t[:m.start()], l.bold, l.math))
-            out.append(Line(l.page, (max(l.x1 - 20, 481), l.y0, l.x1, l.y1),
+            out.append(Line(l.page, (x, y0, l.x1 - 20, y1), t[:m.start()], l.bold, l.math))
+            out.append(Line(l.page, (max(l.x1 - 20, 481), y0, l.x1, y1),
                             '[' + m.group(1).strip()[1:-1] + ']', True))
+            if l.x1 < 400:
+                zones.append((l.page, l.y0, l.x1))
             continue
-        out.append(Line(l.page, (x, l.y0, l.x1, l.y1), t, l.bold, l.math))
+        out.append(Line(l.page, (x, y0, l.x1, y1), t, l.bold, l.math))
     return out
 
 
@@ -500,6 +559,22 @@ def segments(lines, first_q='1', answers=True, alt_letters=(), cue=False):
             if tm and not answers:
                 marks[(q, letter, None, None)] = int(tm.group(1))
                 l = Line(l.page, (l.x0, l.y0, l.x1, l.y1), t[:tm.start()], l.bold)
+            nxt_roman = (ROMAN_ORDER[ROMAN_ORDER.index(roman) + 1]
+                         if not answers and roman in ROMAN_ORDER[:-1] else None)
+            inline = re.search(r'[,;]\s+\((' + nxt_roman + r')\)\s+(?=\S)', l.text) if nxt_roman else None
+            if inline:
+                # The next roman set inside this one's line, continuing the run:
+                # 2023 HL Q10(a) "... carbon to carbon bonding, (vii) are not
+                # involved in bonding?"
+                split = l.x0 + (l.x1 - l.x0) * inline.start() / max(len(l.text), 1)
+                cur.text.append(Line(l.page, (l.x0, l.y0, split, l.y1), l.text[:inline.start() + 1],
+                                     l.bold, l.math))
+                roman = nxt_roman
+                cur = Seg((q, letter, roman, alt), f'({roman})')
+                segs.append(cur)
+                cur.text.append(Line(l.page, (split, l.y0, l.x1, l.y1), l.text[inline.end():],
+                                     l.bold, l.math))
+                continue
             cur.text.append(l)
     return segs, marks
 
@@ -704,6 +779,9 @@ class Item:
 
 def items_of(lines):
     rows, out, cur, asides = prows(lines), [], [], []
+    # "or" alone on a row between an alternative's last answer and the next
+    # alternative is a separator, not an answer.
+    rows = [r for r in rows if not (r.text.strip().lower() == 'or' and not r.cell and not r.asides)]
     for r in rows:
         if not r.text and r.asides and not r.cell and not cur and out:
             out[-1].asides.extend(r.asides)
@@ -936,10 +1014,13 @@ class Printed:
         except KeyError:
             s = ''
         if not s:
+            text = list(seg.text)
+            if self.cue and text and text[-1].text.strip() == 'or':
+                text = text[:-1]          # the "or" between alternatives A and B
             at = seg.lead_from() if self.cue else None
-            if at:
-                return joined(seg.text[:at]), joined(seg.text[at:])
-            return p, ''
+            if at and at < len(text):
+                return joined(text[:at]), joined(text[at:])
+            return joined(text), ''
         ask, rest, exact = cut_to(p, s)
         if not exact:
             # A diagram set beside the ask puts its labels into the ask's
@@ -1030,7 +1111,25 @@ class Printed:
             return True
         if not hasattr(self, '_collapsed'):
             self._collapsed = self.scheme_norm.replace('tt', 't')
-        return c.replace('tt', 't') in self._collapsed
+        if c.replace('tt', 't') in self._collapsed:
+            return True
+        return self._gate(claim)
+
+    def _gate(self, claim):
+        """Ask the build's own rule (schemeText.claimMatches over every form it
+        compares, the equation font's doubled letters among them), for a claim
+        this module's forms miss. Cached."""
+        cache = self.__dict__.setdefault('_gate_cache', {})
+        if claim not in cache:
+            js = ("import fs from 'node:fs'; const m = await import(process.argv[1]);"
+                  " const md = m.comparableScheme(fs.readFileSync(process.argv[2], 'utf8'));"
+                  " console.log(m.claimMatches(md, process.argv[3]) ? 'yes' : 'no');")
+            url = 'file://' + os.path.join(ROOT, 'scripts', 'markbank', 'schemeText.mjs')
+            md = os.path.join(SCHEMES, f'{self.year}-{self.lvl}.md')
+            out = subprocess.run(['node', '--input-type=module', '-e', js, url, md, claim],
+                                 capture_output=True, text=True, check=True).stdout.strip()
+            cache[claim] = out == 'yes'
+        return cache[claim]
 
 
 __all__ = ['Printed', 'Item', 'PRow', 'segments', 'items_of', 'prows', 'joined', 'norm',
@@ -1060,7 +1159,10 @@ def prior_card(cid):
     return prior_deck().get(cid)
 
 _LETTER_SCRIPTS = str.maketrans('ₙⁿₘᵐₓˣ', 'nnmmxx')
-INLINE_ASIDE = re.compile(r'\s*(\[[^\]]*[a-zA-Z]{3}[^\]]*\])')
+# An examiner's aside is wording ("[do not accept clear]", "[state/imply]"); a
+# concentration term is not ("[PCl₃]", "[NOBr]"): it has no run of three
+# lower-case letters.
+INLINE_ASIDE = re.compile(r'\s*(\[[^\]]*[a-z]{3}[^\]]*\])')
 ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
 
 
@@ -1231,7 +1333,7 @@ class Cards:
                 skipped.add(display(it.text))
                 continue
             if it.cell is None and rows and re.fullmatch(
-                    r'(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', it.text):
+                    r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', it.text):
                 # A bracketed line under the last cell: the scheme's own
                 # aside, such as the whole balanced equation after its parts,
                 # or two of them on one line ("[award 3 marks if reversed]
@@ -1241,8 +1343,11 @@ class Cards:
                 continue
             if it.cell is None:
                 raise Refused(f'{key}: "{it.text}" has no mark cell of its own')
-            if '+' in it.cell and not re.search(r'×', it.cell):
+            equation = any(a.startswith('[formulae') for a in it.asides)
+            if '+' in it.cell and not re.search(r'×', it.cell) and not equation:
                 raise Refused(f'{key}: {it.cell} is a split, not a fixed point')
+            # An equation priced "FORMULAE: (2) BALANCING: (2)" is one point, the
+            # equation, worth the two together; its aside says how they split.
             terms = mark_terms(it.cell)
             pts = it.points()
             if each and '+' not in it.cell and len(terms) > 1 and len(pts) == len(terms):
@@ -1280,10 +1385,10 @@ class Cards:
                 said = [display(it.text) for it in its if it.text] + [display(a) for it in its
                                                                       for a in it.asides]
                 ask = self.drawn_ask(key)
-                rows.append(point(f'r-{len(rows) + 1}', ask, None, ' '.join(x for x in [
+                rows.append(self.mark_ask(point(f'r-{len(rows) + 1}', ask, None, ' '.join(x for x in [
                     f'The scheme answers ({key[2]}) with a drawing; its own print is shown with '
                     f'the answer.', ('It adds: ' + ' '.join(said)) if said else '',
-                    notes.get(len(rows), '')] if x)))
+                    notes.get(len(rows), '')] if x))))
                 continue
             if deep:
                 # A part whose scheme answers sit under markers of the scheme's
@@ -1347,9 +1452,13 @@ class Cards:
         """A printed menu the student picks from: one anyN row."""
         fixes = fixes or {}
         its = self.P.items(key)
-        if len(its) != 1:
+        trailing = [x for x in its[1:] if x.cell is None and re.fullmatch(
+            r'(or\s+)?(\s*\[[^\[\]]*(\[[^\]]*\][^\[\]]*)*\])+\s*', x.text)]
+        if len(its) - len(trailing) != 1:
             raise Refused(f'{key}: {len(its)} items where one menu was expected')
         it = its[0]
+        if trailing:
+            note = tidy(note + ' The scheme adds: ' + ' '.join(display(x.text) for x in trailing))
         anyk = next((WORDS[ANY.match(a).group(1).lower()] for a in it.asides if ANY.match(a)), None)
         claim = claim or anyk
         if not claim:
@@ -1408,7 +1517,9 @@ class Cards:
 
     def fixed(self, keys, topic, concept, **kw):
         fixes, notes, deep = kw.pop('fixes', None), kw.pop('row_notes', None), kw.get('deep', False)
-        skip, each = kw.pop('skip', ()), kw.pop('each', False)
+        # In the labelled schemes "[2 × 3]" closes two "//"-separated points, one
+        # each: read them as two rows of 3 unless told otherwise.
+        skip, each = kw.pop('skip', ()), kw.pop('each', self.P.cue)
         rows = []
         self._fixes_used = set()
         for k in keys:
@@ -1464,14 +1575,28 @@ class Cards:
 
     def drawn_ask(self, key):
         """The marking point for a drawn answer: the paper's ask, or -- where
-        the scheme reprints it in other words -- the scheme's own reprint."""
+        the scheme reprints it in other words -- the scheme's own reprint. In
+        a labelled scheme (no reprint) the paper's ask is returned and the row
+        is marked an ask row (see mark_ask): it claims nothing from the scheme."""
         ask = self.P.ask(key)
         if self.P.traceable(ask):
             return ask
-        reprint = display(joined(self.P.sseg_of(key).text))
-        if not self.P.traceable(reprint):
-            raise Refused(f'{key}: neither the ask nor its reprint is in the scheme')
-        return reprint
+        reprint = display(joined(self.P.sseg_of(key).text)) if not self.P.cue else ''
+        if reprint and self.P.traceable(reprint):
+            return reprint
+        if self.P.cue:
+            return ask
+        raise Refused(f'{key}: neither the ask nor its reprint is in the scheme')
+
+    def ask_row(self, key, marks, note):
+        """A row that is the part's own ask (see mark_ask), worth `marks`."""
+        return self.mark_ask(point('r-1', self.drawn_ask(tuple(key)), marks, note))
+
+    def mark_ask(self, row):
+        """Flag a drawn row whose text is the paper's ask and not the scheme's."""
+        if not self.P.traceable(row['verbatim']):
+            row['ask'] = True
+        return row
 
     def drawn(self, keys, topic, concept, figure, **kw):
         """A part the scheme answers with a DRAWING and no words.
@@ -1494,8 +1619,8 @@ class Cards:
             "its own print is shown with the answer.",
             f"It prices the part {' and '.join(cells)}." if len(cells) > 1 or mark_value(cells[0]) != mark_terms(cells[0])[0] else '',
             _asides_note(asides)] if x)
-        return self.add([key], topic, concept, [point('r-1', ask, total, note)], total=total,
-                        figure=figure, **kw)
+        return self.add([key], topic, concept, [self.mark_ask(point('r-1', ask, total, note))],
+                        total=total, figure=figure, **kw)
 
     def drawn_with(self, keys, topic, concept, figure, **kw):
         """A part the scheme answers with a DRAWING priced beside worded points
@@ -1526,7 +1651,8 @@ class Cards:
                 note = ' '.join(x for x in [
                     'The scheme answers this with a drawing; its own print is shown with the answer.',
                     extra, _asides_note(it.asides), notes.get(len(rows), '')] if x)
-                rows.append(point(f'r-{len(rows) + 1}', self.drawn_ask(key), value, note))
+                rows.append(self.mark_ask(point(f'r-{len(rows) + 1}', self.drawn_ask(key), value,
+                                                note)))
             else:
                 text, inline = self._verbatim(it.text, fixes, key)
                 note = ' '.join(x for x in [_asides_note(inline + it.asides), extra,
@@ -1535,6 +1661,73 @@ class Cards:
         if not any(r['verbatim'] == self.drawn_ask(key) for r in rows):
             raise Refused(f'{key}: no cell prices a drawing')
         return self.add([key], topic, concept, rows, figure=figure, **kw)
+
+    def route(self, keys, topic, concept, figure='', fixes=None, row_notes=None, take=None,
+              **kw):
+        """A calculation the scheme prices as an answer and its total ("0.6
+        litres ethyne (9)"), then the working that earns it, step by step,
+        each with its own cell, then other routes after "or". The card's rows
+        are the first route's steps, which add to the total; the scheme's own
+        print of every route is the card's figure.
+
+        `take` names how many items after the answer line are the first
+        route, where "or" does not mark where it ends."""
+        key = tuple(keys[0])
+        fixes, row_notes = fixes or {}, row_notes or {}
+        its = [it for it in self.P.items(key) if it.cell or it.text.strip()]
+        if not its or not its[0].cell:
+            raise Refused(f'{key}: no answer line with a total to start a route')
+        total = mark_value(its[0].cell)
+        steps, got = [], 0
+        for it in its[1:(1 + take) if take else None]:
+            if it.cell is None:
+                break
+            if take is None and steps and re.match(r'^or\b', it.text.strip()):
+                break
+            steps.append(it)
+            got += mark_value(it.cell)
+            if take is None and got >= total:
+                break
+        if got != total:
+            raise Refused(f'{key}: the first route adds to {got}, the answer is priced {total}')
+        self._fixes_used = set()
+        rows = []
+        for it in steps:
+            text, inline = self._verbatim(re.sub(r'^or\s+', '', it.text.strip()), fixes, key)
+            note = ' '.join(x for x in [_asides_note(inline + it.asides),
+                                        f'The scheme prices this step {it.cell}.'
+                                        if mark_value(it.cell) != mark_terms(it.cell)[0] else '',
+                                        row_notes.get(len(rows), '')] if x)
+            rows.append(point(f'r-{len(rows) + 1}', text, mark_value(it.cell), note))
+        self._fixes_applied(keys, fixes)
+        answer, _ = self._verbatim(its[0].text, fixes={}, where=key)
+        extra = kw.pop('notes', '')
+        notes = tidy(f'The scheme gives the answer, {answer}, priced {its[0].cell}, then the working '
+                     f'that earns it, step by step; the steps here are its first route'
+                     + (', and its own print of every route it accepts is shown with the answer.'
+                        if figure else '.') + (' ' + extra if extra else ''))
+        return self.add([key], topic, concept, rows, figure=figure, notes=notes, **kw)
+
+    def answer_only(self, keys, topic, concept, figure, fixes=None, **kw):
+        """A calculation whose working the text layer cannot carry (stacked
+        fractions, routes printed side by side, the 2023 equation font's
+        doubled digits): the row is the scheme's answer line with the cell
+        that prices the whole part, and the scheme's own print of the working,
+        with the marks it gives each step, is the card's figure."""
+        key = tuple(keys[0])
+        its = [it for it in self.P.items(key) if it.cell or it.text.strip()]
+        if not its or not its[0].cell:
+            raise Refused(f'{key}: no answer line priced for the whole part')
+        self._fixes_used = set()
+        text, inline = self._verbatim(its[0].text, fixes or {}, key)
+        self._fixes_applied(keys, fixes)
+        total = mark_value(its[0].cell)
+        note = ' '.join(x for x in [
+            'The scheme prices the answer for the whole part and sets out the working that earns '
+            'it, with the marks for each step, in a form its text cannot carry; its own print is '
+            'shown with the answer.', _asides_note(inline + its[0].asides)] if x)
+        return self.add([key], topic, concept, [point('r-1', text, total, note)], total=total,
+                        figure=figure, **kw)
 
     def lifted(self, rid, text, marks, note=''):
         """A row whose text the reader could not assemble on its own (a line

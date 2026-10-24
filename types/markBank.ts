@@ -121,6 +121,13 @@ export interface MarkRow {
   /** Asterisked: exact term required, so synonym claiming is disabled. */
   exactTermRequired?: boolean;
   /**
+   * The row restates the part's own ask rather than an answer: the scheme
+   * answers this part with a drawing and prints no words to claim. Only on a
+   * card whose figure is the scheme's solution print; the build and the deck
+   * test require the row to be the card's own question text.
+   */
+  ask?: boolean;
+  /**
    * Unclaimable until `dependsOn` is claimed — a "justify" mark is genuinely
    * unreachable if the structure it justifies was named wrongly.
    *

@@ -175,8 +175,16 @@ TERMINAL = re.compile(r'[.?!]$')
 # bracket, a digit ('(vi) 90 g of...'), a quote, or a mathematical-alphanumeric
 # glyph — Chemistry 2022 OL Q10(a) opens '(vi) 𝐇...' and the [A-Z(] class lost
 # the part.
+# A gas or liquid state symbol is not a part either. 2023 HL Chemistry Q9 sets
+# the equilibrium "PCl3 (g) + Cl2 (g) ⇌ PCl5 (g) ΔH = –87.9 kJ mol–1" in its
+# stem, and the Greek capital the lookahead admits read the last "(g)" as Q9(g):
+# an ask the paper never prints, held open by the census against a question
+# whose four parts were all carded. So a "(g)" or "(l)" written straight after
+# a formula and followed by the reaction's ΔH is passed over; no part opens
+# "ΔH =" straight after a formula.
 INLINE_MARKER = re.compile(
-    r'\s(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s+\u0394))'
+    r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.

@@ -753,5 +753,225 @@
   "truncated": false,
   "description": "The table of water-treatment stages with the stage names left blank: Stage A, water is passed through a wire mesh to remove any floating debris; Stage B, chemicals are added to the water to help small suspended solids clump together; Stage C, suspended solids are allowed to settle to the bottom of large tanks; Stage D, water is passed through beds of sand to remove suspended solids; Stage E, harmful micro-organisms in the water are killed; Stage F, chemicals are added to the water which can help strengthen teeth; Stage G, small amounts of acid or base are added to the water.",
   "questionRef": "2024 OL Q9(c)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph of electronegativity (0 to 4) against atomic number (0 to 85). A solid line for Period 2 rises steeply from Li (about 1.0) through Be, B, C, N and O to F (4.0); a dashed line for Group 17 falls from F through Cl (about 3.2), Br (about 3.0) and I (about 2.7) to At (about 2.2).",
+  "questionRef": "2023 HL Q5(b)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph of the number of carbons (1 to 8) against heat of combustion ΔH (kJ mol⁻¹, from 0 to –6000): eight points on a straight line from 1 carbon at about –890 to 8 carbons at about –5470.",
+  "questionRef": "2023 HL Q6(e)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q9d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph of concentration against time for PCl₃, PCl₅ and Cl₂. All three are level until Cl₂ is added, when Cl₂ jumps up and then falls, PCl₃ falls and PCl₅ rises, each by an amount marked Δx, before all three level off again.",
+  "questionRef": "2023 HL Q9(d)"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q11d-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A flow diagram of aluminium production: Al₂O₃·3H₂O from bauxite to NaAlO₂ in solution, to a suspension of pure Al₂O₃·3H₂O, to pure solid Al₂O₃, to Al₂O₃ in cryolite, to molten Al.",
+  "questionRef": "2023 HL Q11(d)B"
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q1d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q1(d)(i), as the State Examinations Commission set it: the answer, 0.095 (9.5 × 10⁻², 19/200) moles (NH₄)₂SO₄·FeSO₄·6H₂O per litre (9), then two routes of working, each of three steps worth (3): via the molar mass 392 and 37.24 g per litre, or via 0.02375 moles in the flask.",
+  "questionRef": "2023 HL Q1(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q1d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q1(d)(ii), as the State Examinations Commission set it: the answer, 0.002375 (2.375 × 10⁻³, 19/8000) moles Fe²⁺ in 25.0 cm³ (3), the working 25.0 × 0.095 over 1000 = 0.002375, and the note [Divide (i) by 40 essential.]",
+  "questionRef": "2023 HL Q1(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q1d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q1(d)(iv), as the State Examinations Commission set it: the answer, 0.02 – 0.022 M KMnO₄ (3), then two routes: 0.000475 = 22.6 × M over 1000, so M = 1000 × 0.000475 over 22.6; or the titration formula 22.6 × M over 1 = 25.0 × 0.095 over 5; with the note [Do not award all 18 marks for correct answer to part (iv) only.]",
+  "questionRef": "2023 HL Q1(d)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q2d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q2(d), as the State Examinations Commission set it: the answer, 0.6 litres ethyne (9), then three routes of working, each step with its mark, from the molar mass of calcium carbide (64) through the moles of pure or impure carbide to the volume at 24.0 litres per mole.",
+  "questionRef": "2023 HL Q2(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q3d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q3(d)(i), as the State Examinations Commission set it: the answer, 0.05 moles (3), with the working M = 50 × 1.0 over 1000 = 0.05 moles (3).",
+  "questionRef": "2023 HL Q3(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q3(d)(ii), as the State Examinations Commission set it: the answer, 2.856 kJ [2.856 to 2.9 kJ] (9), then two routes side by side, each in three steps of (3): the mass of solution (0.1 kg or 100 g), H = mcΔT (mcΔθ), and H = 0.1 × 4.2 × 6.8 or 100 × 0.0042 × 6.8 = 2.856 kJ.",
+  "questionRef": "2023 HL Q3(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q3d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q3(d)(iii), as the State Examinations Commission set it: the answer, –57.1 to –58 kJ mol⁻¹ (6), then 2.856 ÷ 0.05 = 57.12 kJ mol⁻¹ (3) and ΔH = –57.12 kJ mol⁻¹ (3), with notes on rounding and on the negative sign.",
+  "questionRef": "2023 HL Q3(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q4g.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q4(g), as the State Examinations Commission set it: the answer, 0.1 M (6), then four routes, each in two steps of (3): by moles (25.0 × 0.12 over 1000 = 0.003 moles, then 0.003 = 30.0 × M over 1000), by the dilution formula 25.0 × 0.12 = 30.0 × M, or by a dilution factor of 1.2 or 0.8333.",
+  "questionRef": "2023 HL Q4(g)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q4(i), as the State Examinations Commission set it: the structure of propane-1,2,3-triol set out as atoms, H, O and C, three carbons in a row each carrying an O–H group and hydrogens (6), with the notes [Allow OH instead of O–H.] and [CH₂OHCHOHCH₂OH for (3).]",
+  "questionRef": "2023 HL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q4k.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q4(k), as the State Examinations Commission set it: the answer, 1 × 10¹⁸ per jar (6), then three routes, each step with its mark: through moles per kg (0.001 ÷ 152 = 6.6 × 10⁻⁶) and molecules per kg, or through grams per jar (0.00025 g) and moles per jar, with a note deducting 1 for 9.87 × 10¹⁷.",
+  "questionRef": "2023 HL Q4(k)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q6b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q6(b), as the State Examinations Commission set it: the name 2,2-dimethylpropane (3), then the structure (6) as the condensed formula CH₃C(CH₃)₂CH₃, or a central carbon with four CH₃ groups drawn, or the same as a skeletal cross, separated by solidi, with the note [Accept for (6) if Hs not shown explicitly in expanded structure.]",
+  "questionRef": "2023 HL Q6(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q6d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q6(d), as the State Examinations Commission set it: the answer, –10046.5 kJ mol⁻¹ (12), then two routes: from ΔH(reaction) = ΣΔH(formation, products) – ΣΔH(formation, reactants) with (15 × –393.5) + (16 × –285.8) – (–428.8), each term worth (3); or by adding three equations' heats, 428.8, –5902.5 and –4572.8 kJ; with notes on adding the three ΔHs and on a positive final answer.",
+  "questionRef": "2023 HL Q6(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q7b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q7(b)(ii), as the State Examinations Commission set it: the answer, pH = 4.5 (6), with the working pH = –log√(Ka[HA]) = –log√(1.2 × 10⁻⁹) = –log(3.5 × 10⁻⁵) (3) and pH = 4.5 (3).",
+  "questionRef": "2023 HL Q7(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q7c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q7(c)(ii), as the State Examinations Commission set it: the answer, 1550 p.p.m. (6), then three routes, each in two steps of (3): 1.55 × 10⁻³ g per cm³, or 1.55 g per litre, or 1.24 × 1000 over 800, each giving 1550 p.p.m.",
+  "questionRef": "2023 HL Q7(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q8c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q8(c)(i), as the State Examinations Commission set it: four accepted drawings of two repeating units of poly(ethene) (6): a chain of four carbons with their hydrogens and open end bonds, the same as a skeletal grid, a zigzag chain, and one or two units in brackets with the subscript 2, with notes that the carbon skeleton (4 Cs) is essential and that end hydrogens (butane) are not accepted.",
+  "questionRef": "2023 HL Q8(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q9b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q9(b)(i), as the State Examinations Commission set it: Kc = [PCl₅] over [PCl₃][Cl₂] (6), with the notes [Square brackets are essential.] and that marks for (b)(i) may be awarded for this expression given in (b)(ii).",
+  "questionRef": "2023 HL Q9(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q9b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q9(b)(ii), as the State Examinations Commission set it: the answer, [PCl₃] = 2.0 mol/l, [Cl₂] = 0.2 mol/l and [PCl₅] = 1.0 mol/l (12), then a table of initial, change and equilibrium concentrations (3.00 – x, 1.20 – x, x) (3), x over (3.00 – x)(1.20 – x) = 2.5 (3), x = 1.00 or 3.6 (3), and the three equilibrium concentrations (3 × 1).",
+  "questionRef": "2023 HL Q9(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q10(b)(ii), as the State Examinations Commission set it: 1.77 over 14n + 90 moles (CH₂)ₙ(COOH)₂ (3) and 2.43 over 14n + 134 moles (CH₂)ₙ(COONa)₂ (3), with the note [Take order of question unless answers clearly labelled.]",
+  "questionRef": "2023 HL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q10b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q10(b)(iii), as the State Examinations Commission set it: 1.77 over 14n + 90 = 2.43 over 14n + 134, so 24.78n + 237.18 = 34.02n + 218.7, 18.48 = 9.24n (2), n = 2 (2), molar mass 118 g (3); then a trial-and-error route letting n = 2 (2 + 3) and showing both give 0.015 moles (2).",
+  "questionRef": "2023 HL Q10(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q10b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q10(b)(iv), as the State Examinations Commission set it: the answer, 250 cm³ (6), with the working 1.77 over 118 = 0.015 moles (2), so 0.03 moles NaOH (2), and 0.03 = 0.12 × V over 1000, so V = 250 cm³ (2).",
+  "questionRef": "2023 HL Q10(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q10c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q10(c)(iii), as the State Examinations Commission set it: the completed nuclear equation: iodine-131 (atomic number 53) gives xenon-131 (atomic number 54) and an electron (mass number 0, charge –1) (3).",
+  "questionRef": "2023 HL Q10(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q11a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q11(a)(i), as the State Examinations Commission set it: volume (V) of a fixed mass of gas at constant pressure // proportional (∝) to temperature (T) in kelvins, or for a fixed mass of gas at constant pressure // V over T = constant (k) / V₁ over T₁ = V₂ over T₂ (2 × 3).",
+  "questionRef": "2023 HL Q11(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q11a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q11(a)(iv), as the State Examinations Commission set it: the answer, 0.3 – 0.31 m³ / 300 – 310 litres (6), with the working pV = nRT, n = pV over RT, 10000 × V = 1.0 × 8.3 × 373, V = 1.0 × 8.3 × 373 over 10000 (3), and V = 0.31 m³ (3).",
+  "questionRef": "2023 HL Q11(a)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2023-HL-scheme-q11da-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2023 HL Q11(d)A(iii), as the State Examinations Commission set it: the answer, 0.0027 – 0.003 moles guideline or 0.029 – 0.02944 mg present (6), then four routes in boxes, each step with its mark, comparing the moles or milligrams present per m³ (from 3.2 × 10⁻³ moles and Mr NO₂ = 46) with the guideline, each ending 'guideline exceeded'.",
+  "questionRef": "2023 HL Q11(d)A(iii)",
+  "solution": true
  }
 ]
