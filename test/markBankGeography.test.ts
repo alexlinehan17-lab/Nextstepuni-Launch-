@@ -17,7 +17,12 @@ import {
   geographyScoreId,
   suggestRubricGrade,
 } from '../components/MarkBank/SessionScreen';
-import { geographyRowScoreId, geographySrpScoreId } from '../components/MarkBank/geographyScoring';
+import {
+  geographyChoiceScoreId,
+  geographyOptionCriterionId,
+  geographyRowScoreId,
+  geographySrpScoreId,
+} from '../components/MarkBank/geographyScoring';
 import { isRubricCard, tariffReconciles, type SecRubricCard } from '../types/markBank';
 import { CARD_ID_ALIASES } from '../components/MarkBank/cardAliases';
 import { waysInSourceFromMarkBank } from '../components/WaysIn/sources';
@@ -256,8 +261,10 @@ describe('parts whose source or allocation the SEC left incomplete', () => {
     expect(tariffReconciles(card)).toBe(true);
     expect(tariffReconciles({ ...card, rubric: { ...rubric, unpricedMarks: undefined } })).toBe(false);
     expect(rubric.markingGuideNote).toMatch(/^The published scheme prices 27 of the printed 30 marks .* at most 27 of the 30\./);
-    // Every SRP awarded: the placement stops at the 27 the scheme prices.
-    const full = Object.fromEntries(rubric.criteria.map(c => [geographyScoreId(c.id), c.maxMarks]));
+    // Every SRP counted: the claim stops at the 27 the scheme prices.
+    expect(rubric.criteria.map(c => c.allocation!.groups[0].srp[0]))
+      .toEqual([{ id: 's1', label: 'Impact identified', count: 1, marks: 3 }, { id: 's1', label: 'Explanation', count: 8, marks: 3 }]);
+    const full = Object.fromEntries(rubric.criteria.map(c => [geographySrpScoreId(c.id, 's1'), 99]));
     expect(geographyMarks(card, full)).toBe(27);
   });
 
@@ -357,61 +364,76 @@ describe('Geography prompt, source and marking integrity', () => {
       .map(card => card.id)).toEqual([]);
   });
 
-  it('turns the published allocation lines into the scheduler grade', () => {
-    // A reviewed card adds its published allocation lines.
-    const reviewed = HIGHER.find(entry => entry.id === 'geography-2025-hl-p2-q2b-route-ii')!;
-    expect(geographyMarks(reviewed, {
-      [geographyScoreId('c1')]: 4, [geographyScoreId('c2')]: 2, [geographyScoreId('c3')]: 16,
-    })).toBe(22);
-    expect(suggestRubricGrade(reviewed, {
-      [geographyScoreId('c1')]: 4, [geographyScoreId('c2')]: 2, [geographyScoreId('c3')]: 16,
-    })).toBe('got');
+  it('turns the claimed rows into the scheduler grade', () => {
+    // A reviewed card's lines are claimable rows: two factors, the process,
+    // and the description's SRPs counted.
+    const card = HIGHER.find(entry => entry.id === 'geography-2025-hl-p2-q2b-route-ii')!;
+    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const [factors, process, description] = card.rubric.criteria;
+    const row = (criterion: typeof factors) => criterion.allocation!.groups[0].rows[0];
+    expect(row(factors)).toMatchObject({ text: 'Factors identified', marks: 4, steps: [2, 4], tariffOnly: true });
+    expect(description.allocation!.groups[0].srp[0]).toMatchObject({ label: 'Description/explanation', count: 12, marks: 2 });
+    const scores = {
+      [geographyRowScoreId(factors.id, row(factors).id)]: 4,
+      [geographyRowScoreId(process.id, row(process).id)]: 2,
+      [geographySrpScoreId(description.id, 's1')]: 8,
+    };
+    expect(geographyMarks(card, scores)).toBe(22);
+    expect(suggestRubricGrade(card, scores)).toBe('got');
   });
 
   it('scores a structured card row by row, SRPs by count, capped at the paper', () => {
-    const card = ORDINARY.find(entry => entry.id === 'geography-2023-ol-p2-q3a')!;
-    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
-    const criterion = card.rubric.criteria[0];
-    const allocation = criterion.allocation!;
-    const [magnitude, plates, effects, epicentre] = allocation.groups;
-    expect(magnitude.prompt).toBe('What was the magnitude of the earthquake in Afghanistan?');
-    expect(magnitude.rows).toEqual([{ id: 'r1', text: '6.1', marks: 3 }]);
-    expect(plates.rows[0]).toMatchObject({ text: 'Indian plate and Eurasian plate', marks: 6, steps: [3, 6] });
-    expect(effects.rows.map(row => row.text)).toEqual(['People killed', 'People injured', 'Homes destroyed']);
-    expect(epicentre.srp[0]).toMatchObject({ label: 'Brief explanation', count: 2, marks: 3 });
-
-    const scores = {
-      [geographyRowScoreId(criterion.id, 'r1')]: 3,
-      [geographyRowScoreId(criterion.id, plates.rows[0].id)]: 3,
-      [geographySrpScoreId(criterion.id, epicentre.srp[0].id)]: 2,
+    const card = (id: string) => {
+      const found = ORDINARY.find(entry => entry.id === id)!;
+      if (found.rubric.system !== 'geography') throw new Error('wrong rubric');
+      return found as SecRubricCard & { rubric: Extract<SecRubricCard['rubric'], { system: 'geography' }> };
     };
-    expect(geographyMarks(card, scores)).toBe(12);
-    expect(suggestRubricGrade(card, scores)).toBe('shaky');
+    const magnitude = card('geography-2023-ol-p2-q3a');
+    expect(magnitude.rubric.criteria[0].allocation!.groups[0].rows).toEqual([{ id: 'r1', text: '6.1', marks: 3 }]);
+    const plates = card('geography-2023-ol-p2-q3a-ii');
+    const platesRow = plates.rubric.criteria[0].allocation!.groups[0].rows[0];
+    expect(platesRow).toMatchObject({ text: 'Indian plate and Eurasian plate', marks: 6, steps: [3, 6] });
+    expect(geographyMarks(plates, { [geographyRowScoreId('c1', platesRow.id)]: 3 })).toBe(3);
     // A claim the scheme does not print for the row counts for nothing.
-    expect(geographyMarks(card, { [geographyRowScoreId(criterion.id, plates.rows[0].id)]: 5 })).toBe(0);
+    expect(geographyMarks(plates, { [geographyRowScoreId('c1', platesRow.id)]: 5 })).toBe(0);
+    const effects = card('geography-2023-ol-p2-q3a-iii');
+    expect(effects.rubric.criteria.map(c => c.allocation!.groups[0].rows[0].text))
+      .toEqual(['People killed', 'People injured', 'Homes destroyed']);
+    const epicentre = card('geography-2023-ol-p2-q3a-iv');
+    expect(epicentre.rubric.criteria[0].allocation!.groups[0].srp[0]).toMatchObject({ label: 'Brief explanation', count: 2, marks: 3 });
     // Counting more SRPs than the part allows stops at the part.
-    expect(geographyMarks(card, { [geographySrpScoreId(criterion.id, epicentre.srp[0].id)]: 9 })).toBe(6);
-    // The single-placement id is ignored once the card is structured.
-    expect(geographyMarks(card, { [geographyScoreId(criterion.id)]: 30 })).toBe(0);
+    expect(geographyMarks(epicentre, { [geographySrpScoreId('c1', 's1')]: 9 })).toBe(6);
+    expect(suggestRubricGrade(epicentre, { [geographySrpScoreId('c1', 's1')]: 1 })).toBe('shaky');
+    // The single-placement id is ignored once the criterion is structured.
+    expect(geographyMarks(epicentre, { [geographyScoreId('c1')]: 6 })).toBe(0);
   });
 
   it('shows the scheme\'s own words where it prices an answer it does not print', () => {
-    const card = ORDINARY.find(entry => entry.id === 'geography-2022-ol-p2-q1c')!;
-    if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
-    const allocation = card.rubric.criteria[0].allocation!;
-    expect(allocation.groups[0].rows[0]).toEqual({ id: 'r1', text: 'Tectonic plate named', marks: 3, tariffOnly: true });
-    expect(allocation.groups[1].srp[0]).toMatchObject({ label: 'Description/Explanation', count: 9, marks: 3 });
-    expect(allocation.directions).toEqual([
-      'At least one SRP for explanation',
-      'Allow one SRP for relevant annotated diagram',
-      "Relevant information, additional to the text, given on diagrams can be awarded SRP's",
+    const named = ORDINARY.find(entry => entry.id === 'geography-2022-ol-p2-q1c')!;
+    const described = ORDINARY.find(entry => entry.id === 'geography-2022-ol-p2-q1c-ii')!;
+    if (named.rubric.system !== 'geography' || described.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(named.rubric.criteria[0].allocation!.groups[0].rows[0])
+      .toEqual({ id: 'r1', text: 'Tectonic plate named', marks: 3, tariffOnly: true });
+    expect(described.rubric.criteria[0].allocation!.groups[0].srp[0])
+      .toMatchObject({ label: 'Description/Explanation', count: 9, marks: 3 });
+    expect(described.rubric.directions).toEqual([
+      'At least one SRP for explanation.',
+      'Allow one SRP for relevant annotated diagram.',
+      'Relevant information, additional to the text, given on diagrams can be awarded SRP’s.',
     ]);
+    // A heading prices the answers under it: "Five terms @ 2 marks each as follows:" / "Vent".
+    const vent = ORDINARY.find(entry => entry.id === 'geography-2010-ol-p1-q4')!;
+    if (vent.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(vent.rubric.criteria[0].allocation!.groups[0]).toMatchObject({
+      prompt: 'Five terms @ 2 marks each as follows',
+      rows: [{ id: 'r1', text: 'Vent', marks: 2 }],
+    });
   });
 
   it('shares an SRP pool between parts the scheme prices as a range', () => {
     const card = HIGHER.find(entry => entry.id === 'geography-2021-hl-p2-q3c')!;
     if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
-    const criterion = card.rubric.criteria[0];
+    const criterion = card.rubric.criteria[1];
     const allocation = criterion.allocation!;
     expect(allocation.srpPool).toEqual({ count: 13, marks: 2 });
     const [rock1, rock2] = allocation.groups[0].srp;
@@ -424,16 +446,65 @@ describe('Geography prompt, source and marking integrity', () => {
     expect(geographyMarks(card, scores)).toBe(26);
   });
 
-  it('repeats a unit the scheme prices once and asks for several times', () => {
-    const card = HIGHER.find(entry => entry.id === 'geography-2021-hl-p2-q4a')!;
+  it('scores the route the student picks on an 80-mark option, and one band for Overall Coherence', () => {
+    const card = HIGHER.find(entry => entry.id === 'geography-2021-hl-p2-q13')!;
     if (card.rubric.system !== 'geography') throw new Error('wrong rubric');
-    const criterion = card.rubric.criteria[0];
-    const allocation = criterion.allocation!;
-    const features = allocation.groups.find(group => group.repeat)!;
-    expect(features.repeat).toEqual({ count: 4, unit: '4 features', marks: 4 });
-    expect(features.rows.map(row => [row.text, row.marks])).toEqual([['Shown', 2], ['Named', 2]]);
-    const scores = Object.fromEntries([1, 2, 3, 4].map(unit => [geographyRowScoreId(criterion.id, features.rows[1].id, unit), 2]));
-    expect(geographyMarks(card, scores)).toBe(8);
+    const [aspects, coherence] = card.rubric.criteria;
+    const route = aspects.allocation!.choice!;
+    expect(route.kind).toBe('route');
+    expect(route.options.map(option => option.label)).toEqual(['3 @ 20 marks each', '4 @ 15 marks each']);
+    const three = route.options[0].allocation!.groups[0];
+    expect(three.repeat).toEqual({ count: 3, unit: 'aspect', marks: 20 });
+    expect(three.rows.map(row => [row.text, row.marks])).toEqual([['Identifying aspect', 4]]);
+    expect(three.srp[0]).toMatchObject({ label: 'Discussion', count: 8, marks: 2 });
+    const four = route.options[1].allocation!.groups[0];
+    expect(four.repeat).toEqual({ count: 4, unit: 'aspect', marks: 15 });
+    expect(four.srp[0]).toMatchObject({ count: 6, marks: 2 });
+
+    const threeId = geographyOptionCriterionId(aspects.id, 'o1');
+    const claimed = Object.fromEntries([1, 2, 3].flatMap(unit => [
+      [geographyRowScoreId(threeId, three.rows[0].id, unit), 4],
+      [geographySrpScoreId(threeId, three.srp[0].id, unit), 8],
+    ]));
+    // Nothing counts until a route is picked; only the picked route counts.
+    expect(geographyMarks(card, claimed)).toBe(0);
+    expect(geographyMarks(card, { ...claimed, [geographyChoiceScoreId(aspects.id)]: 1 })).toBe(60);
+    expect(geographyMarks(card, { ...claimed, [geographyChoiceScoreId(aspects.id)]: 2 })).toBe(0);
+
+    const bands = coherence.allocation!.choice!;
+    expect(bands.kind).toBe('band');
+    expect(bands.options.map(option => [option.label, option.marks]))
+      .toEqual([['Excellent', 20], ['Very Good', 17], ['Good', 14], ['Fair', 10], ['Weak', 6], ['Poor', 0]]);
+    expect(geographyMarks(card, { [geographyChoiceScoreId(coherence.id)]: 2 })).toBe(17);
+  });
+
+  it('reads the older tables: Bar/Pie columns, one answer or another, Part One letter/process rows', () => {
+    const graph = HIGHER.find(entry => entry.id === 'geography-2019-hl-p2-q7a')!;
+    if (graph.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const axes = graph.rubric.criteria[1].allocation!.choice!;
+    expect(axes.options.map(option => option.label)).toEqual(['Bar Chart', 'Pie Chart']);
+    expect(axes.options[0].allocation!.groups[0].rows.map(row => [row.text, row.marks]))
+      .toEqual([['Vertical axis named', 1], ['Horizontal axis named', 1]]);
+    expect(axes.options[1].allocation!.groups[0].rows).toEqual([
+      { id: 'r1', text: 'Circle & Centred', marks: 2, steps: [1, 2] }]);
+
+    const difference = HIGHER.find(entry => entry.id === 'geography-2017-hl-p2-q9a-ii')!;
+    if (difference.rubric.system !== 'geography') throw new Error('wrong rubric');
+    const either = difference.rubric.criteria[0].allocation!.choice!;
+    expect(either.kind).toBe('alternative');
+    expect(either.options.map(option => [option.label, option.marks])).toEqual([['($) 400 billion', 4], ['($) 400', 2]]);
+    expect(geographyMarks(difference, { [geographyChoiceScoreId('c1')]: 2 })).toBe(2);
+
+    // 2017 OL Part One Q3 prints the letter and the process on one line;
+    // each card takes its own column.
+    const letters = ORDINARY.find(entry => entry.id === 'geography-2017-ol-p1-q3')!;
+    const processes = ORDINARY.find(entry => entry.id === 'geography-2017-ol-p1-q3-ii')!;
+    if (letters.rubric.system !== 'geography' || processes.rubric.system !== 'geography') throw new Error('wrong rubric');
+    expect(letters.rubric.criteria.map(c => c.allocation!.groups[0].rows.map(row => [row.text, row.marks])))
+      .toEqual([[['C', 2]], [['A', 2]], [['B', 2]]]);
+    expect(processes.rubric.criteria.map(c => c.allocation!.groups[0].rows.map(row => [row.text, row.marks])))
+      .toEqual([[['Glacial', 2]], [['River', 2]]]);
+    expect(letters.rubric.directions ?? []).toEqual([]);
   });
 
   it('files every card under the canonical Geography syllabus', () => {

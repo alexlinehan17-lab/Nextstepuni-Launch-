@@ -785,6 +785,32 @@ export interface GeographyAllocation {
   directions: string[];
   /** Where parts print SRP ranges, the SRPs they share between them. */
   srpPool?: { count: number; marks: number };
+  /** The scheme prices this criterion one of several ways and the student
+   *  claims exactly one: a column of a two-route table ("3 @ 20 marks each" /
+   *  "4 @ 15 marks each"), or a quality band ("Very Good · 17"). */
+  choice?: GeographyAllocationChoice;
+}
+
+/** One way the scheme prices a criterion, claimed instead of the others. */
+export interface GeographyChoiceOption {
+  id: string;
+  /** The scheme's words for it: a column heading or a band's name. */
+  label: string;
+  /** A band's marks, earned by choosing it. */
+  marks?: number;
+  /** A band's descriptor, as printed. */
+  note?: string;
+  /** A column's own rows and SRP counts, claimed once the column is chosen. */
+  allocation?: GeographyAllocation;
+}
+
+export interface GeographyAllocationChoice {
+  /** route: a column of a two-route table; band: a quality band; alternative:
+   *  one printed answer or another, each at its own price. */
+  kind: 'route' | 'band' | 'alternative';
+  /** The scheme's heading over the options ("Number of aspects"), or ''. */
+  prompt: string;
+  options: GeographyChoiceOption[];
 }
 
 export interface GeographyCriterion {
@@ -795,7 +821,8 @@ export interface GeographyCriterion {
   guidanceKind: GeographyGuidanceKind;
   /** Published allocation and examiner directions for this task, as lifted. */
   guidance: string[];
-  /** The same allocation as claimable rows, where it reconciles. */
+  /** The same allocation as claimable rows, where it reconciles to
+   *  `maxMarks` and (for a reviewed criterion) to `permittedMarks`. */
   allocation?: GeographyAllocation;
 }
 

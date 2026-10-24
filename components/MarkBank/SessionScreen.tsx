@@ -73,6 +73,7 @@ import SourceMaterialReader from './SourceMaterialReader';
 import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
 import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
 import GeographyAllocationPanel from './GeographyAllocationPanel';
+import GeographyChoicePanel from './GeographyChoicePanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
@@ -1749,11 +1750,19 @@ const GeographyRubricPanel: React.FC<{
             </div>
             {criterion.allocation ? (
               <div style={{ marginTop: 10 }}>
-                <GeographyAllocationPanel
-                  criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
-                  scores={scores}
-                  onScore={onScore}
-                />
+                {criterion.allocation.choice ? (
+                  <GeographyChoicePanel
+                    criterion={criterion as React.ComponentProps<typeof GeographyChoicePanel>['criterion']}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                ) : (
+                  <GeographyAllocationPanel
+                    criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                )}
               </div>
             ) : (
               <>

@@ -11,7 +11,9 @@
  * geography-reviewed-audit.json) carry one criterion per published allocation
  * line — an identification, a named example, an SRP explanation, a sketch
  * feature, an option's aspects and Overall Coherence — each limited to the
- * marks the scheme can award, plus the scheme's examiner directions.
+ * marks the scheme can award, plus the scheme's examiner directions. Each
+ * criterion's lines are also cut into claimable rows (allocation.ts) wherever
+ * they reconcile, so the reveal shows answers with their marks, not prose.
  */
 
 import type {
@@ -22,7 +24,11 @@ import type {
   SecRubricCard,
 } from '../../../../types/markBank';
 import authored from './authored.json';
-import { parseGeographyAllocation } from './allocation';
+import {
+  geographyColumnLabels,
+  parseGeographyAllocation,
+  parseGeographyCriterionAllocation,
+} from './allocation';
 
 type GeographyLevel = 'higher' | 'ordinary';
 
@@ -79,12 +85,30 @@ const DATA = authored.cards as AuthoredGeographyCard[];
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
 
-const reviewedCriteria = (card: AuthoredGeographyCard): GeographyCriterion[] =>
-  (card.criteria ?? []).map(criterion => ({
-    ...criterion,
-    permittedMarks: [...criterion.permittedMarks],
-    guidance: [...criterion.guidance],
-  }));
+/**
+ * Each reviewed allocation line, and the same lines as claimable rows where
+ * they reconcile to the criterion's maximum and its permitted marks
+ * (allocation.ts, tryParseGeographyCriterionAllocation). A criterion they do
+ * not reconcile for keeps its lines and mark control.
+ */
+const reviewedCriteria = (card: AuthoredGeographyCard): GeographyCriterion[] => {
+  const criteria = card.criteria ?? [];
+  const columnLabels = geographyColumnLabels(criteria);
+  let previousRowText: string | undefined;
+  return criteria.map(source => {
+    const criterion: GeographyCriterion = {
+      ...source,
+      permittedMarks: [...source.permittedMarks],
+      guidance: [...source.guidance],
+    };
+    const allocation = parseGeographyCriterionAllocation(
+      { level: card.level, questionText: card.questionText, columnLabels, previousRowText }, criterion);
+    const rows = allocation?.groups.flatMap(group => group.rows) ?? [];
+    previousRowText = rows.length ? rows[rows.length - 1].text : undefined;
+    if (allocation) criterion.allocation = allocation;
+    return criterion;
+  });
+};
 
 const criterionFor = (card: AuthoredGeographyCard): GeographyCriterion => {
   const criterion: GeographyCriterion = {
