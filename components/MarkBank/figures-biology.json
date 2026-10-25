@@ -1,4 +1,152 @@
 {
+ "biology-2011-hl-q11biii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q11biii-question.png",
+  "md5": "4248ad278df5a75c6d984b9c639ed6fd",
+  "alt": "Part (iii) of Question 11(b) as printed, on one line, with the words positively phototropic underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q11(b)(iii)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   104,
+   503.8,
+   462,
+   516.8
+  ]
+ },
+ "biology-2011-hl-q12c-nephron": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q12c-nephron.png",
+  "md5": "77ddc475fd4ab9da24743d1666e098b9",
+  "alt": "Shaded drawing of a nephron and its blood vessels, with nine numbered arrows. On the left a dark and a pale vessel run upward from two curved vessels at the bottom left. A thin vessel leads from the left into a dark tangled knot inside a rounded cup: arrow 3 points to that thin vessel, arrow 2 to the dark knot, and arrow 1, pointing up from below, to the lower edge of the cup. Arrow 4 points to a thin vessel leaving the knot upwards. A tube leaves the cup and coils at the top centre, where arrow 5 points; from there a long hairpin loop runs down to the bottom and back up, with arrow 8 at the bend of the loop and arrow 9 at a vessel of the network of thin vessels wrapped around it. Arrow 6 points to a second coiled tube at the top right, which joins a tall branched tube on the far right, at which arrow 7 points.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q12(c)(i)1",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   150,
+   186,
+   480,
+   450
+  ]
+ },
+ "biology-2011-hl-q14a-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q14a-graph.png",
+  "md5": "61f19442bdda17c2888d0f0f19566ba5",
+  "alt": "Graph with no scale. Vertical axis: rate of photosynthesis, with an arrow pointing up. Horizontal axis: light intensity or carbon dioxide concentration, with an arrow pointing right. A straight line rises from the origin. At a point marked X a horizontal line branches off to the right, labelled 25°C; the rising line continues higher, then turns into a second horizontal line to the right, labelled 35°C.",
+  "lettersVisible": [
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q14(a)(i)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   110,
+   106,
+   480,
+   330
+  ]
+ },
+ "biology-2011-hl-q15a-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q15a-ear.png",
+  "md5": "9da12215e78855fea5d1990636e008da",
+  "alt": "Drawing of the human ear in section: the outer ear on the left and a canal running right into the head. Label B points to a shaded oval closing the inner end of the canal; F to small dark irregular shapes just beyond it; D to the top of a group of loops above them; A to a coiled shape on the right; C to a dark band running off to the upper right from beside the coil; E to a narrow channel running down and to the right below the coil.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q15(a)(i)1",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   160,
+   60,
+   485,
+   260
+  ]
+ },
+ "biology-2011-hl-q15c-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q15c-rhizopus.png",
+  "md5": "c605538aa5dc9e79deb7be4fb42d2a16",
+  "alt": "Line drawing of part of a fungal mycelium: a long double-lined thread runs across the middle. An upright thread rises from it to a round head filled with small oval bodies, labelled B. Below the horizontal thread, branched finger-like outgrowths spread downward; two lines from the label A point to them. On the right a short upright branch with a rounded tip rises from the thread, with smaller branched outgrowths beneath it.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q15(c)(i)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   185,
+   499,
+   445,
+   669
+  ]
+ },
+ "biology-2011-hl-q4b-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q4b-graph.png",
+  "md5": "72d7fe8a3e2db36b0650244ccf49c0d0",
+  "alt": "Line graph on a squared grid. Vertical axis: mouth temperature/°C, from 35 to 38. Horizontal axis: time over three days, labelled DAY 1, DAY 2 and DAY 3, each day marked 4, 8, 12 a.m. then 4, 8, 12 p.m. A dashed horizontal line is drawn at 37. On days 1 and 2 the plotted line follows the same pattern: from about 36.5 at the start it falls to about 36 soon after midnight and stays near 36 until about 8 a.m., rises to a small peak just below 37 before noon, dips a little after noon, climbs above 37 in the afternoon to a flat peak just above 37.5 around 8 p.m., then falls steeply through the night. After the second evening it falls further, to a trough just below 36 around 4 a.m. on day 3, then rises above 37 by about noon and wavers between 37 and about 37.4 for the rest of day 3.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q4(b)(i)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   125,
+   478,
+   465,
+   655
+  ]
+ },
+ "biology-2011-hl-q5b-canal": {
+  "src": "/exam-figures/biology/markbank/biology-2011-hl-q5b-canal.png",
+  "md5": "3e613d338a466aaa27f06ab45add8d59",
+  "alt": "Outline drawing. A large oval at the top is labelled X; a narrow tube runs down from its underside, labelled bile duct. Lower down this tube is joined by a second tube coming from the left end of a long narrow oval at the lower right, labelled pancreas, and the joined tube opens into the inner side of a curved C-shaped tube on the left, labelled W, whose two ends are drawn dotted where the tube continues beyond the drawing.",
+  "lettersVisible": [
+   "W",
+   "X"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2011 HL Q5(b)(i)",
+  "year": 2011,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2011 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   150,
+   178,
+   440,
+   345
+  ]
+ },
  "biology-2012-hl-q12a-organelles": {
   "src": "/exam-figures/biology/markbank/biology-2012-hl-q12a-organelles.png",
   "md5": "f54517ec403ca05b9ec2d6894b1e3166",

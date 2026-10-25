@@ -227835,6 +227835,5776 @@
     "tickChecksumsMatched": 24,
     "excluded": []
    }
+  },
+  "2011-hl": {
+   "status": "reviewed",
+   "reviewedAt": "2026-10-25",
+   "ledger": "scripts/markbank/authoring/bio_review_2011_hl.py",
+   "method": "Biology 2011 Higher Level — reviewed task ledger, carded from the paper for the first time.",
+   "sources": {
+    "paper": {
+     "path": "examiner-reports/biology/papers/2011-hl-paper.pdf",
+     "fileid": "LC025ALP000EV.pdf",
+     "sha256": "46726519ae71e6c5d9cc926a7c59f9c7d9d253c3997ecb68288b5265e83ad8a2",
+     "bytes": 844696,
+     "pages": 16,
+     "pageRoles": {
+      "1": "cover",
+      "2": "questions",
+      "3": "questions",
+      "4": "questions",
+      "5": "questions",
+      "6": "questions",
+      "7": "questions",
+      "8": "questions",
+      "9": "questions",
+      "10": "questions",
+      "11": "questions",
+      "12": "questions",
+      "13": "blank",
+      "14": "blank",
+      "15": "blank",
+      "16": "blank"
+     },
+     "pagesLifted": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "scheme": {
+     "path": "examiner-reports/biology/schemes/2011-hl.pdf",
+     "fileid": "LC025ALP000EV.pdf",
+     "sha256": "63f5cf1e1a6d140d3073fa16ccec33290ed4f12c08117a091de173b327626f93",
+     "bytes": 230424,
+     "pages": 20,
+     "pageRoles": {
+      "1": "cover",
+      "2": "blank",
+      "3": "introduction",
+      "4": "conventions",
+      "5": "marking",
+      "6": "marking",
+      "7": "marking",
+      "8": "marking",
+      "9": "marking",
+      "10": "marking",
+      "11": "marking",
+      "12": "marking",
+      "13": "marking",
+      "14": "marking",
+      "15": "marking",
+      "16": "marking",
+      "17": "marking",
+      "18": "blank",
+      "19": "blank",
+      "20": "back-cover"
+     },
+     "pagesLifted": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ]
+    }
+   },
+   "visualSweep": {
+    "paper": "all 16 pages rendered and read",
+    "scheme": "all 20 pages rendered and read"
+   },
+   "questionTotals": {
+    "1": 20,
+    "2": 20,
+    "3": 20,
+    "4": 20,
+    "5": 20,
+    "6": 20,
+    "7": 30,
+    "8": 30,
+    "9": 30,
+    "10": 60,
+    "11": 60,
+    "12": 60,
+    "13": 60,
+    "14": 90,
+    "15": 90
+   },
+   "partTotals": {
+    "7a": 6,
+    "8a": 6,
+    "9a": 6,
+    "7b": 24,
+    "8b": 24,
+    "9b": 24,
+    "10a": 9,
+    "11a": 9,
+    "12a": 9,
+    "13a": 9,
+    "11b": 27,
+    "12b": 27,
+    "13b": 27,
+    "10c": 24,
+    "11c": 24,
+    "12c": 24,
+    "13c": 24,
+    "14a": 30,
+    "14b": 30,
+    "14c": 30,
+    "15a": 30,
+    "15b": 30,
+    "15c": 30
+   },
+   "tickChecksums": {
+    "1": {
+     "4": 6
+    },
+    "2": {
+     "3": 7
+    },
+    "3": {
+     "3": 7
+    },
+    "4": {
+     "3": 7
+    },
+    "5": {
+     "3": 7
+    },
+    "6": {
+     "3": 7
+    },
+    "7a": {
+     "3": 2
+    },
+    "8a": {
+     "3": 2
+    },
+    "9a": {
+     "3": 2
+    },
+    "7b": {
+     "3": 8
+    },
+    "8b": {
+     "3": 8
+    },
+    "9b": {
+     "3": 8
+    },
+    "10a": {
+     "3": 3
+    },
+    "10b": {
+     "7": 5
+    },
+    "10c": {
+     "3": 8
+    },
+    "11a": {
+     "3": 3
+    },
+    "11b": {
+     "3": 9
+    },
+    "11c": {
+     "3": 8
+    },
+    "12a": {
+     "3": 3
+    },
+    "12b": {
+     "3": 7,
+     "2": 3
+    },
+    "12c": {
+     "1": 6,
+     "3": 6
+    },
+    "13a": {
+     "3": 3
+    },
+    "13b": {
+     "3": 9
+    },
+    "13c": {
+     "3": 8
+    },
+    "14a": {
+     "3": 10
+    },
+    "14b": {
+     "3": 10
+    },
+    "14c": {
+     "3": 9,
+     "1": 3
+    },
+    "15a": {
+     "2": 3,
+     "3": 8
+    },
+    "15b": {
+     "3": 10
+    },
+    "15c": {
+     "3": 10
+    }
+   },
+   "selectionScan": [
+    {
+     "doc": "paper",
+     "page": 1,
+     "directive": "any five",
+     "disposition": "Cover rubric, Section A: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 1,
+     "directive": "any two",
+     "disposition": "Cover rubric, Section B: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 1,
+     "directive": "any four",
+     "disposition": "Cover rubric, Section C: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "any five",
+     "disposition": "Section A rubric repeated."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q1 \"Answer five of the following\": best five of (a)-(f); each part is its own card at 4."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q1(a) \"Sudan III or brown paper\": description."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "or",
+     "disposition": "Q1(c) \"the Fehling's or Benedict's test\": description."
+    },
+    {
+     "doc": "paper",
+     "page": 2,
+     "directive": "the following",
+     "disposition": "Q2 lead-in: every part asked."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "choose",
+     "disposition": "Q3 \"Choose suitable terms from the list below\": the answer options (eight terms for seven descriptions); every description is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "the following",
+     "disposition": "Q3, same lead-in."
+    },
+    {
+     "doc": "paper",
+     "page": 3,
+     "directive": "or",
+     "disposition": "Q3(a) \"lives on or in a second species\": description."
+    },
+    {
+     "doc": "paper",
+     "page": 4,
+     "directive": "or",
+     "disposition": "Q6 \"in one stage or two stages\": description."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "any two",
+     "disposition": "Section B rubric: whole-question choice; every question is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q7(a) \"explain each of the following\": both terms asked, one card each."
+    },
+    {
+     "doc": "paper",
+     "page": 5,
+     "directive": "the following",
+     "disposition": "Q7(b) lead-in: every part asked."
+    },
+    {
+     "doc": "paper",
+     "page": 6,
+     "directive": "the following",
+     "disposition": "Q8(a) \"State a use for each of the following\": both asked, one card each."
+    },
+    {
+     "doc": "paper",
+     "page": 7,
+     "directive": "the following",
+     "disposition": "Q9(b) lead-in: every part asked."
+    },
+    {
+     "doc": "paper",
+     "page": 8,
+     "directive": "the following",
+     "disposition": "Q10(b) \"each of the following observations\": every observation asked, one card each on the \"3(7) + 2(3)\" ladder."
+    },
+    {
+     "doc": "paper",
+     "page": 9,
+     "directive": "the following",
+     "disposition": "Q12(b)(i) \"Label the following parts of your diagram\": every label asked, one row each."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "either",
+     "disposition": "Q13(a)(ii) \"Name either of the scientists\": one response; the alternatives on one row."
+    },
+    {
+     "doc": "paper",
+     "page": 10,
+     "directive": "the following",
+     "disposition": "Q13(c) \"each of the following pairs of terms\": every pair asked, one card each."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "any two",
+     "disposition": "Q14 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "either",
+     "disposition": "Q14(a) \"either light intensity or CO2 concentration\": the candidate addresses one factor; the scheme marks both on the same rows, so no route."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "or",
+     "disposition": "Q14(a), same choice."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "choose",
+     "disposition": "Q14(a) \"indicate clearly which factor you choose to address\": same choice."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "the following",
+     "disposition": "Q14(a) lead-in: every part asked."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "the following",
+     "disposition": "Q14(b)(iii) \"In each of the following cases\": one card per numbered item."
+    },
+    {
+     "doc": "paper",
+     "page": 11,
+     "directive": "or",
+     "disposition": "Q14(b)(iii) \"anabolic or catabolic\": the answer options."
+    },
+    {
+     "doc": "paper",
+     "page": 12,
+     "directive": "any two",
+     "disposition": "Q15 \"any two of (a), (b), (c)\": whole-part choice; every part is carded."
+    },
+    {
+     "doc": "paper",
+     "page": 12,
+     "directive": "or",
+     "disposition": "Q15(a)(iv) \"a named defect of hearing or vision\": the candidate names one; the scheme marks either on the same two rows."
+    }
+   ],
+   "routes": {},
+   "tasks": [
+    {
+     "status": "carded",
+     "key": "1a",
+     "id": "bio-2011-hl-q1-a",
+     "questionRef": "2011 HL Q1(a)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "test-for-fat",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1b",
+     "id": "bio-2011-hl-q1-b",
+     "questionRef": "2011 HL Q1(b)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "minerals-in-plants",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1c",
+     "id": "bio-2011-hl-q1-c",
+     "questionRef": "2011 HL Q1(c)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "reducing-sugar-test",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1d",
+     "id": "bio-2011-hl-q1-d",
+     "questionRef": "2011 HL Q1(d)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "roles-of-lipids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1e",
+     "id": "bio-2011-hl-q1-e",
+     "questionRef": "2011 HL Q1(e)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "roles-of-water",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "1f",
+     "id": "bio-2011-hl-q1-f",
+     "questionRef": "2011 HL Q1(f)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 4,
+     "markUnits": [
+      4
+     ],
+     "topic": "bio-1-2",
+     "concept": "twenty-amino-acids",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q1 as \"5(4) i.e. best FIVE answers from (a) – (f)\": six parts, the best five at 4, each part its own card.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2a",
+     "id": "bio-2011-hl-q2-a",
+     "questionRef": "2011 HL Q2(a)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "mitosis-in-single-celled-organisms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2b",
+     "id": "bio-2011-hl-q2-b",
+     "questionRef": "2011 HL Q2(b)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "cancer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2c",
+     "id": "bio-2011-hl-q2-c",
+     "questionRef": "2011 HL Q2(c)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "causes-of-cancer",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2d",
+     "id": "bio-2011-hl-q2-d",
+     "questionRef": "2011 HL Q2(d)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "metaphase",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2e",
+     "id": "bio-2011-hl-q2-e",
+     "questionRef": "2011 HL Q2(e)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "spindle",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2f",
+     "id": "bio-2011-hl-q2-f",
+     "questionRef": "2011 HL Q2(f)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "cell-plate",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "2g",
+     "id": "bio-2011-hl-q2-g",
+     "questionRef": "2011 HL Q2(g)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       2
+      ]
+     },
+     "scheme": {
+      "pages": [
+       5
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-3",
+     "concept": "mitosis-and-meiosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q2 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3a",
+     "id": "bio-2011-hl-q3-a",
+     "questionRef": "2011 HL Q3(a)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "parasitism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3b",
+     "id": "bio-2011-hl-q3-b",
+     "questionRef": "2011 HL Q3(b)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "producers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3c",
+     "id": "bio-2011-hl-q3-c",
+     "questionRef": "2011 HL Q3(c)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "population",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3d",
+     "id": "bio-2011-hl-q3-d",
+     "questionRef": "2011 HL Q3(d)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "decomposers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3e",
+     "id": "bio-2011-hl-q3-e",
+     "questionRef": "2011 HL Q3(e)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "symbiosis",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3f",
+     "id": "bio-2011-hl-q3-f",
+     "questionRef": "2011 HL Q3(f)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "competition",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "3g",
+     "id": "bio-2011-hl-q3-g",
+     "questionRef": "2011 HL Q3(g)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "predation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q3 as \"6(3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4ai",
+     "id": "bio-2011-hl-q4-a-i",
+     "questionRef": "2011 HL Q4(a)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "endotherm",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4aii",
+     "id": "bio-2011-hl-q4-a-ii",
+     "questionRef": "2011 HL Q4(a)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "ectotherms",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4aiii",
+     "id": "bio-2011-hl-q4-a-iii",
+     "questionRef": "2011 HL Q4(a)(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "advantage-of-endothermy",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4bi",
+     "id": "bio-2011-hl-q4-b-i",
+     "questionRef": "2011 HL Q4(b)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "range-of-body-temperature",
+     "route": null,
+     "rows": 1,
+     "figure": "q4b-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4bii",
+     "id": "bio-2011-hl-q4-b-ii",
+     "questionRef": "2011 HL Q4(b)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "lowest-body-temperature",
+     "route": null,
+     "rows": 1,
+     "figure": "q4b-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4biii",
+     "id": "bio-2011-hl-q4-b-iii",
+     "questionRef": "2011 HL Q4(b)(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "night-time-temperature-drop",
+     "route": null,
+     "rows": 1,
+     "figure": "q4b-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "4biv",
+     "id": "bio-2011-hl-q4-b-iv",
+     "questionRef": "2011 HL Q4(b)(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       3
+      ]
+     },
+     "scheme": {
+      "pages": [
+       6
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "body-temperature-in-children",
+     "route": null,
+     "rows": 1,
+     "figure": "q4b-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q4 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5ai",
+     "id": "bio-2011-hl-q5-a-i",
+     "questionRef": "2011 HL Q5(a)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "digestion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5aii",
+     "id": "bio-2011-hl-q5-a-ii",
+     "questionRef": "2011 HL Q5(a)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "why-digestion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5aiii",
+     "id": "bio-2011-hl-q5-a-iii",
+     "questionRef": "2011 HL Q5(a)(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "mechanical-and-chemical-digestion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Q5 prints seven parts, the seven responses of its notation, so (iii) is one response: the scheme's two answers under it (\"Mechanical:\", \"Chemical:\") are given together, one row. Brought to the coordinator: if each sentence were its own response, Q5 would have eight responses for a seven-step ladder.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5bi",
+     "id": "bio-2011-hl-q5-b-i",
+     "questionRef": "2011 HL Q5(b)(i)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "duodenum",
+     "route": null,
+     "rows": 1,
+     "figure": "q5b-canal",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5bii",
+     "id": "bio-2011-hl-q5-b-ii",
+     "questionRef": "2011 HL Q5(b)(ii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "gall-bladder",
+     "route": null,
+     "rows": 1,
+     "figure": "q5b-canal",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5biii",
+     "id": "bio-2011-hl-q5-b-iii",
+     "questionRef": "2011 HL Q5(b)(iii)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "stomach-to-duodenum",
+     "route": null,
+     "rows": 1,
+     "figure": "q5b-canal",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "5biv",
+     "id": "bio-2011-hl-q5-b-iv",
+     "questionRef": "2011 HL Q5(b)(iv)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "pancreas-in-digestion",
+     "route": null,
+     "rows": 1,
+     "figure": "q5b-canal",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q5 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6a",
+     "id": "bio-2011-hl-q6-a",
+     "questionRef": "2011 HL Q6(a)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "stage-1-and-stage-2",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The two differences, on the paper's answer lines (i) and (ii) and printed by the scheme under \"(i), (ii)\", are two responses on the \"6 (3) + 2\" ladder: one card for both lines.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6b",
+     "id": "bio-2011-hl-q6-b",
+     "questionRef": "2011 HL Q6(b)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "site-of-stage-1",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q6 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6c",
+     "id": "bio-2011-hl-q6-c",
+     "questionRef": "2011 HL Q6(c)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "anaerobic-respiration",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q6 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6d",
+     "id": "bio-2011-hl-q6-d",
+     "questionRef": "2011 HL Q6(d)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "products-of-fermentation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q6 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6e",
+     "id": "bio-2011-hl-q6-e",
+     "questionRef": "2011 HL Q6(e)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "atp",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q6 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "6f",
+     "id": "bio-2011-hl-q6-f",
+     "questionRef": "2011 HL Q6(f)",
+     "section": "A",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       4
+      ]
+     },
+     "scheme": {
+      "pages": [
+       7
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "final-electron-acceptor",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q6 as \"6 (3) + 2\": an ordered split, each response carded at its first rate. Seven responses.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7ai",
+     "id": "bio-2011-hl-q7-a-i",
+     "questionRef": "2011 HL Q7(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "experiment",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7aii",
+     "id": "bio-2011-hl-q7-a-ii",
+     "questionRef": "2011 HL Q7(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "theory",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bi",
+     "id": "bio-2011-hl-q7-b-i",
+     "questionRef": "2011 HL Q7(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "seeds-from-one-parent",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bii1",
+     "id": "bio-2011-hl-q7-b-ii-1",
+     "questionRef": "2011 HL Q7(b)(ii)1",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "sterilising-compost",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bii2",
+     "id": "bio-2011-hl-q7-b-ii-2",
+     "questionRef": "2011 HL Q7(b)(ii)2",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "why-sterilise-compost",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7biii",
+     "id": "bio-2011-hl-q7-b-iii",
+     "questionRef": "2011 HL Q7(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "control-group",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7biv",
+     "id": "bio-2011-hl-q7-b-iv",
+     "questionRef": "2011 HL Q7(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "identical-conditions",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bv",
+     "id": "bio-2011-hl-q7-b-v",
+     "questionRef": "2011 HL Q7(b)(v)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "conditions-kept-constant",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over seven printed conditions: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "7bvi",
+     "id": "bio-2011-hl-q7-b-vi",
+     "questionRef": "2011 HL Q7(b)(vi)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       5
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-u2",
+     "concept": "repeating-for-reliability",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8ai",
+     "id": "bio-2011-hl-q8-a-i",
+     "questionRef": "2011 HL Q8(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "use-of-buffer-solution",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8aii",
+     "id": "bio-2011-hl-q8-a-ii",
+     "questionRef": "2011 HL Q8(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "use-of-biuret-test",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bi",
+     "id": "bio-2011-hl-q8-b-i",
+     "questionRef": "2011 HL Q8(b)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "uses-of-iodine",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The two uses are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8bii",
+     "id": "bio-2011-hl-q8-b-ii",
+     "questionRef": "2011 HL Q8(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "uses-of-a-water-bath",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over four printed uses: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biii",
+     "id": "bio-2011-hl-q8-b-iii",
+     "questionRef": "2011 HL Q8(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "exercise-and-breathing-rate",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over three printed points: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "8biv",
+     "id": "bio-2011-hl-q8-b-iv",
+     "questionRef": "2011 HL Q8(b)(iv)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       6
+      ]
+     },
+     "scheme": {
+      "pages": [
+       8
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "preparing-a-stem-section",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Cutting and mounting are priced \"3\" each, each with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9ai",
+     "id": "bio-2011-hl-q9-a-i",
+     "questionRef": "2011 HL Q9(a)(i)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "hydrogen-bonds-in-dna",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9aii",
+     "id": "bio-2011-hl-q9-a-ii",
+     "questionRef": "2011 HL Q9(a)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "junk-dna",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi1",
+     "id": "bio-2011-hl-q9-b-i-1",
+     "questionRef": "2011 HL Q9(b)(i)1",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "chopping-the-tissue",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bi2",
+     "id": "bio-2011-hl-q9-b-i-2",
+     "questionRef": "2011 HL Q9(b)(i)2",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-chop",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bii",
+     "id": "bio-2011-hl-q9-b-ii",
+     "questionRef": "2011 HL Q9(b)(ii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "washing-up-liquid",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biii",
+     "id": "bio-2011-hl-q9-b-iii",
+     "questionRef": "2011 HL Q9(b)(iii)",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "salt-in-dna-isolation",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv1",
+     "id": "bio-2011-hl-q9-b-iv-1",
+     "questionRef": "2011 HL Q9(b)(iv)1",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "protease",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9biv2",
+     "id": "bio-2011-hl-q9-b-iv-2",
+     "questionRef": "2011 HL Q9(b)(iv)2",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-protease",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bv1",
+     "id": "bio-2011-hl-q9-b-v-1",
+     "questionRef": "2011 HL Q9(b)(v)1",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "adding-cold-ethanol",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "9bv2",
+     "id": "bio-2011-hl-q9-b-v-2",
+     "questionRef": "2011 HL Q9(b)(v)2",
+     "section": "B",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       7
+      ]
+     },
+     "scheme": {
+      "pages": [
+       9
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-2",
+     "concept": "why-cold-ethanol",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ai",
+     "id": "bio-2011-hl-q10-a-i",
+     "questionRef": "2011 HL Q10(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "contest-and-scramble-competition",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row. Each kind of competition is priced \"3\", with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10aii",
+     "id": "bio-2011-hl-q10-a-ii",
+     "questionRef": "2011 HL Q10(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "population-control-factors",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bi",
+     "id": "bio-2011-hl-q10-b-i",
+     "questionRef": "2011 HL Q10(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-1",
+     "concept": "predator-and-prey-numbers",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q10(b) as \"3(7) + 2(3)\": an ordered split, each response carded at its first rate. Five responses, one per observation.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bii",
+     "id": "bio-2011-hl-q10-b-ii",
+     "questionRef": "2011 HL Q10(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-1",
+     "concept": "declining-virus-mortality",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q10(b) as \"3(7) + 2(3)\": an ordered split, each response carded at its first rate. Five responses, one per observation.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biii",
+     "id": "bio-2011-hl-q10-b-iii",
+     "questionRef": "2011 HL Q10(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-1",
+     "concept": "hazards-of-migration",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q10(b) as \"3(7) + 2(3)\": an ordered split, each response carded at its first rate. Five responses, one per observation.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10biv",
+     "id": "bio-2011-hl-q10-b-iv",
+     "questionRef": "2011 HL Q10(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-1",
+     "concept": "grazing-and-plant-variety",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q10(b) as \"3(7) + 2(3)\": an ordered split, each response carded at its first rate. Five responses, one per observation.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10bv",
+     "id": "bio-2011-hl-q10-b-v",
+     "questionRef": "2011 HL Q10(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 7,
+     "markUnits": [
+      7
+     ],
+     "topic": "bio-3-1",
+     "concept": "differential-migration",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints Q10(b) as \"3(7) + 2(3)\": an ordered split, each response carded at its first rate. Five responses, one per observation. The scheme prints only what earns the marks: one criterion row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ci",
+     "id": "bio-2011-hl-q10-c-i",
+     "questionRef": "2011 HL Q10(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "qualitative-and-quantitative-surveys",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10cii",
+     "id": "bio-2011-hl-q10-c-ii",
+     "questionRef": "2011 HL Q10(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "identifying-plants",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10ciii",
+     "id": "bio-2011-hl-q10-c-iii",
+     "questionRef": "2011 HL Q10(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "quantitative-plant-survey",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints a quadrat menu and a transect menu joined by \"OR\", each \"Any 3\", beside one \"3(3)\": answer variants of one task, each a menu, claim three.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "10civ",
+     "id": "bio-2011-hl-q10-c-iv",
+     "questionRef": "2011 HL Q10(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       10
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-1",
+     "concept": "sources-of-error",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over five printed sources: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ai",
+     "id": "bio-2011-hl-q11-a-i",
+     "questionRef": "2011 HL Q11(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "adverse-external-environment",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11aii",
+     "id": "bio-2011-hl-q11-a-ii",
+     "questionRef": "2011 HL Q11(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "plant-protection",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over nine printed ways: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bi",
+     "id": "bio-2011-hl-q11-b-i",
+     "questionRef": "2011 HL Q11(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bii1",
+     "id": "bio-2011-hl-q11-b-ii-1",
+     "questionRef": "2011 HL Q11(b)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "meristems",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bii2",
+     "id": "bio-2011-hl-q11-b-ii-2",
+     "questionRef": "2011 HL Q11(b)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "locations-of-meristems",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"Any 2 2(3)\" over seven printed locations: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biii",
+     "id": "bio-2011-hl-q11-b-iii",
+     "questionRef": "2011 HL Q11(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "positive-phototropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": "q11biii-question",
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The ask points at \"the underlined term\", which the text layer cannot show; the card's question is the printed ask, cropped.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11biv",
+     "id": "bio-2011-hl-q11-b-iv",
+     "questionRef": "2011 HL Q11(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "benefit-of-phototropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11bv",
+     "id": "bio-2011-hl-q11-b-v",
+     "questionRef": "2011 HL Q11(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "mechanism-of-a-tropism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 3 3(3)\" over five printed points: a menu, claim three.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ci",
+     "id": "bio-2011-hl-q11-c-i",
+     "questionRef": "2011 HL Q11(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "hormone",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11cii",
+     "id": "bio-2011-hl-q11-c-ii",
+     "questionRef": "2011 HL Q11(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "hormones-and-growth-regulators",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over three printed points: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ciii1",
+     "id": "bio-2011-hl-q11-c-iii-1",
+     "questionRef": "2011 HL Q11(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "hormone-feedback",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The scheme prices its two lines \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11ciii2",
+     "id": "bio-2011-hl-q11-c-iii-2",
+     "questionRef": "2011 HL Q11(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "feedback-mechanism",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The scheme prices its two lines \"3\" each; the first names no hormone.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "11civ",
+     "id": "bio-2011-hl-q11-c-iv",
+     "questionRef": "2011 HL Q11(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       8
+      ]
+     },
+     "scheme": {
+      "pages": [
+       11
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "hormone-deficiency",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ai",
+     "id": "bio-2011-hl-q12-a-i",
+     "questionRef": "2011 HL Q12(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "excretion",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row. The two points are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12aii",
+     "id": "bio-2011-hl-q12-a-ii",
+     "questionRef": "2011 HL Q12(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "excretion-in-plants",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bi",
+     "id": "bio-2011-hl-q12-b-i",
+     "questionRef": "2011 HL Q12(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-2-6",
+     "concept": "drawing-the-kidney",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The diagram is one priced item (\"3, 0\") with no printed content, and its three labels \"3(2)\", each cut at the scheme's own commas.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bii",
+     "id": "bio-2011-hl-q12-b-ii",
+     "questionRef": "2011 HL Q12(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "site-of-reabsorption",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii1",
+     "id": "bio-2011-hl-q12-b-iii-1",
+     "questionRef": "2011 HL Q12(b)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "renal-artery",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biii2",
+     "id": "bio-2011-hl-q12-b-iii-2",
+     "questionRef": "2011 HL Q12(b)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "aorta",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 1.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12biv",
+     "id": "bio-2011-hl-q12-b-iv",
+     "questionRef": "2011 HL Q12(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "kidneys-in-the-abdomen",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bv",
+     "id": "bio-2011-hl-q12-b-v",
+     "questionRef": "2011 HL Q12(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "substances-in-urine",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12bvi",
+     "id": "bio-2011-hl-q12-b-vi",
+     "questionRef": "2011 HL Q12(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "kidney-as-exocrine-gland",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci1",
+     "id": "bio-2011-hl-q12-c-i-1",
+     "questionRef": "2011 HL Q12(c)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "topic": "bio-2-6",
+     "concept": "parts-of-the-nephron",
+     "route": null,
+     "rows": 6,
+     "figure": "q12c-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"6(1)\": the six parts, each its own row with its printed number, cut at the scheme's own \"=\" and semicolon.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci2",
+     "id": "bio-2011-hl-q12-c-i-2",
+     "questionRef": "2011 HL Q12(c)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "site-of-filtration",
+     "route": null,
+     "rows": 1,
+     "figure": "q12c-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The answer is a number of the diagram.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ci3",
+     "id": "bio-2011-hl-q12-c-i-3",
+     "questionRef": "2011 HL Q12(c)(i)3",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "adh",
+     "route": null,
+     "rows": 1,
+     "figure": "q12c-nephron",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12cii",
+     "id": "bio-2011-hl-q12-c-ii",
+     "questionRef": "2011 HL Q12(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "protein-in-urine",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The answer and its explanation are priced \"3\" each; the scheme's note under them prices a qualified \"Yes\" at 6 for both items together, so the two items are one card, the note on its first row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "12ciii",
+     "id": "bio-2011-hl-q12-c-iii",
+     "questionRef": "2011 HL Q12(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       9
+      ]
+     },
+     "scheme": {
+      "pages": [
+       12
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "glucose-in-urine",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The answer and its explanation are priced \"3\" each: one card for both items, as (ii).",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ai",
+     "id": "bio-2011-hl-q13-a-i",
+     "questionRef": "2011 HL Q13(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "evolution",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any 2 2(3)\" over four printed points: a menu, claim two.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13aii",
+     "id": "bio-2011-hl-q13-a-ii",
+     "questionRef": "2011 HL Q13(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-5",
+     "concept": "darwin-and-wallace",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bi",
+     "id": "bio-2011-hl-q13-b-i",
+     "questionRef": "2011 HL Q13(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "independent-assortment",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bii1",
+     "id": "bio-2011-hl-q13-b-ii-1",
+     "questionRef": "2011 HL Q13(b)(ii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "dihybrid-cross-genotypes",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"4(3)\": the four genotypes, each its own cell of the scheme's table. The scheme prints them in two symbol sets joined by \"OR\": answer variants of one task.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13bii2",
+     "id": "bio-2011-hl-q13-b-ii-2",
+     "questionRef": "2011 HL Q13(b)(ii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 12,
+     "markUnits": [
+      3,
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "dihybrid-cross-phenotypes",
+     "route": null,
+     "rows": 4,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"4(3)\": the four phenotypes, each its own cell of the scheme's table; the scheme's two directions printed under them are the first two rows' notes.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ci",
+     "id": "bio-2011-hl-q13-c-i",
+     "questionRef": "2011 HL Q13(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "gene-and-allele",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Each term of the pair is priced \"3\", with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13cii",
+     "id": "bio-2011-hl-q13-c-ii",
+     "questionRef": "2011 HL Q13(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "homozygous-and-heterozygous",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Each term of the pair is priced \"3\", with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13ciii",
+     "id": "bio-2011-hl-q13-c-iii",
+     "questionRef": "2011 HL Q13(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "genotype-and-phenotype",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Each term of the pair is priced \"3\", with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "13civ",
+     "id": "bio-2011-hl-q13-c-iv",
+     "questionRef": "2011 HL Q13(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       10
+      ]
+     },
+     "scheme": {
+      "pages": [
+       13
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-1-4",
+     "concept": "linkage-and-sex-linkage",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Each term of the pair is priced \"3\", with the scheme's own label.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ai",
+     "id": "bio-2011-hl-q14-a-i",
+     "questionRef": "2011 HL Q14(a)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "plant-for-photosynthesis-investigation",
+     "route": null,
+     "rows": 1,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aii",
+     "id": "bio-2011-hl-q14-a-ii",
+     "questionRef": "2011 HL Q14(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "measuring-photosynthesis-rate",
+     "route": null,
+     "rows": 2,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The scheme prints two ways joined by \"OR\", each two points cut at its own solidus, beside one \"2(3)\": answer variants of one task.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiii",
+     "id": "bio-2011-hl-q14-a-iii",
+     "questionRef": "2011 HL Q14(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "factor-kept-constant",
+     "route": null,
+     "rows": 1,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14aiv",
+     "id": "bio-2011-hl-q14-a-iv",
+     "questionRef": "2011 HL Q14(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "keeping-a-factor-constant",
+     "route": null,
+     "rows": 1,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14av",
+     "id": "bio-2011-hl-q14-a-v",
+     "questionRef": "2011 HL Q14(a)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "why-keep-a-factor-constant",
+     "route": null,
+     "rows": 1,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avi1",
+     "id": "bio-2011-hl-q14-a-vi-1",
+     "questionRef": "2011 HL Q14(a)(vi)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "rate-at-x",
+     "route": null,
+     "rows": 2,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. A and B are priced \"3\" each, each row with the scheme's own letter.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14avi2",
+     "id": "bio-2011-hl-q14-a-vi-2",
+     "questionRef": "2011 HL Q14(a)(vi)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-2",
+     "concept": "temperature-as-a-limiting-factor",
+     "route": null,
+     "rows": 2,
+     "figure": "q14a-graph",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. A's reason and B's are priced \"3\" each, each row with the scheme's own letter.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bi",
+     "id": "bio-2011-hl-q14-b-i",
+     "questionRef": "2011 HL Q14(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "metabolism",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bii",
+     "id": "bio-2011-hl-q14-b-ii",
+     "questionRef": "2011 HL Q14(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "enzymes-and-metabolism",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The two points are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii1",
+     "id": "bio-2011-hl-q14-b-iii-1",
+     "questionRef": "2011 HL Q14(b)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "protein-synthesis-is-anabolic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"3(3)\": one answer per case, the scheme's n-th \"*Anabolic\" for the n-th case.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii2",
+     "id": "bio-2011-hl-q14-b-iii-2",
+     "questionRef": "2011 HL Q14(b)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "atp-formation-is-anabolic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"3(3)\": one answer per case, the scheme's n-th \"*Anabolic\" for the n-th case.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biii3",
+     "id": "bio-2011-hl-q14-b-iii-3",
+     "questionRef": "2011 HL Q14(b)(iii)3",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "larger-products-is-anabolic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. \"3(3)\": one answer per case, the scheme's n-th \"*Anabolic\" for the n-th case.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14biv",
+     "id": "bio-2011-hl-q14-b-iv",
+     "questionRef": "2011 HL Q14(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "denaturing-an-enzyme",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bv",
+     "id": "bio-2011-hl-q14-b-v",
+     "questionRef": "2011 HL Q14(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "denatured-enzyme",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The two features are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14bvi",
+     "id": "bio-2011-hl-q14-b-vi",
+     "questionRef": "2011 HL Q14(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       14
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-1",
+     "concept": "nitrogen-in-enzymes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ci",
+     "id": "bio-2011-hl-q14-c-i",
+     "questionRef": "2011 HL Q14(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "cell-membrane-location",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cii",
+     "id": "bio-2011-hl-q14-c-ii",
+     "questionRef": "2011 HL Q14(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "eukaryotic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14ciii",
+     "id": "bio-2011-hl-q14-c-iii",
+     "questionRef": "2011 HL Q14(c)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "prokaryotic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14civ",
+     "id": "bio-2011-hl-q14-c-iv",
+     "questionRef": "2011 HL Q14(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-1-3",
+     "concept": "selective-permeability",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cv",
+     "id": "bio-2011-hl-q14-c-v",
+     "questionRef": "2011 HL Q14(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "passive-transport",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cvi",
+     "id": "bio-2011-hl-q14-c-vi",
+     "questionRef": "2011 HL Q14(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "osmosis-as-diffusion",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cvii",
+     "id": "bio-2011-hl-q14-c-vii",
+     "questionRef": "2011 HL Q14(c)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      1,
+      1,
+      1,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "demonstrating-osmosis",
+     "route": null,
+     "rows": 5,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The diagram is one priced item (\"3,0\"), its three labels \"3(1)\", cut at the scheme's own solidus, and the result \"3\".",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "14cviii",
+     "id": "bio-2011-hl-q14-c-viii",
+     "questionRef": "2011 HL Q14(c)(viii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       11
+      ]
+     },
+     "scheme": {
+      "pages": [
+       15
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "contractile-vacuole",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai1",
+     "id": "bio-2011-hl-q15-a-i-1",
+     "questionRef": "2011 HL Q15(a)(i)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      2,
+      2,
+      2
+     ],
+     "topic": "bio-2-4",
+     "concept": "parts-of-the-ear",
+     "route": null,
+     "rows": 3,
+     "figure": "q15a-ear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The three parts are priced \"2\" each, each its own row with its letter.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai2",
+     "id": "bio-2011-hl-q15-a-i-2",
+     "questionRef": "2011 HL Q15(a)(i)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "functions-of-ear-parts",
+     "route": null,
+     "rows": 2,
+     "figure": "q15a-ear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. D's and E's functions are priced \"3\" each. The scheme never names D or E, so the card keys the letters it does name, none asked.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ai3",
+     "id": "bio-2011-hl-q15-a-i-3",
+     "questionRef": "2011 HL Q15(a)(i)3",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "where-the-ear-makes-impulses",
+     "route": null,
+     "rows": 2,
+     "figure": "q15a-ear",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry. The two letters are priced \"3\" each; the answers are letters of the diagram.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aii",
+     "id": "bio-2011-hl-q15-a-ii",
+     "questionRef": "2011 HL Q15(a)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "retina",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiii",
+     "id": "bio-2011-hl-q15-a-iii",
+     "questionRef": "2011 HL Q15(a)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "protecting-the-ear",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15aiv",
+     "id": "bio-2011-hl-q15-a-iv",
+     "questionRef": "2011 HL Q15(a)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-4",
+     "concept": "correcting-a-defect",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The defect and its correction are priced \"3\" each; the scheme names neither.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bi",
+     "id": "bio-2011-hl-q15-b-i",
+     "questionRef": "2011 HL Q15(b)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bii",
+     "id": "bio-2011-hl-q15-b-ii",
+     "questionRef": "2011 HL Q15(b)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "xylem-adaptations",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biii",
+     "id": "bio-2011-hl-q15-b-iii",
+     "questionRef": "2011 HL Q15(b)(iii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "location-of-xylem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15biv",
+     "id": "bio-2011-hl-q15-b-iv",
+     "questionRef": "2011 HL Q15(b)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "other-function-of-xylem",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bv",
+     "id": "bio-2011-hl-q15-b-v",
+     "questionRef": "2011 HL Q15(b)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "gravity",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bvi",
+     "id": "bio-2011-hl-q15-b-vi",
+     "questionRef": "2011 HL Q15(b)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 9,
+     "markUnits": [
+      3,
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "cohesion-tension-model",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any three 3(3)\" over five printed features: a menu, claim three.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15bvii",
+     "id": "bio-2011-hl-q15-b-vii",
+     "questionRef": "2011 HL Q15(b)(vii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       16
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-2-6",
+     "concept": "dixon-and-joly",
+     "route": null,
+     "rows": 2,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The two scientists are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ci",
+     "id": "bio-2011-hl-q15-c-i",
+     "questionRef": "2011 HL Q15(c)(i)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "rhizoids",
+     "route": null,
+     "rows": 2,
+     "figure": "q15c-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "Sections B and C print a mark against every row. The name and the function are priced \"3\" each.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cii",
+     "id": "bio-2011-hl-q15-c-ii",
+     "questionRef": "2011 HL Q15(c)(ii)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "sporangium",
+     "route": null,
+     "rows": 2,
+     "figure": "q15c-rhizopus",
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "The name and the reason are priced \"3\" each; the scheme's bracketed lead-in to the reason is that row's note.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ciii1",
+     "id": "bio-2011-hl-q15-c-iii-1",
+     "questionRef": "2011 HL Q15(c)(iii)1",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "saprophytic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15ciii2",
+     "id": "bio-2011-hl-q15-c-iii-2",
+     "questionRef": "2011 HL Q15(c)(iii)2",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "importance-of-saprophytes",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint: a numbered item is anchored on the roman it is printed under.",
+     "decision": "A numbered list the scheme prices entry by entry: one card per entry.",
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15civ",
+     "id": "bio-2011-hl-q15-c-iv",
+     "questionRef": "2011 HL Q15(c)(iv)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "heterotrophic",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cv",
+     "id": "bio-2011-hl-q15-c-v",
+     "questionRef": "2011 HL Q15(c)(v)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 3,
+     "markUnits": [
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "parasitic-fungi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": null,
+     "notes": null
+    },
+    {
+     "status": "carded",
+     "key": "15cvi",
+     "id": "bio-2011-hl-q15-c-vi",
+     "questionRef": "2011 HL Q15(c)(vi)",
+     "section": "C",
+     "paper": {
+      "doc": "paper",
+      "pages": [
+       12
+      ]
+     },
+     "scheme": {
+      "pages": [
+       17
+      ]
+     },
+     "total": 6,
+     "markUnits": [
+      3,
+      3
+     ],
+     "topic": "bio-3-2",
+     "concept": "harmful-fungi",
+     "route": null,
+     "rows": 1,
+     "figure": null,
+     "questionFigure": null,
+     "sourcePages": null,
+     "pairingScore": 0.0,
+     "pairedBy": "The scheme prints no reprint of any question: anchored on the part's own marker.",
+     "decision": "\"Any two correct 2(3)\": the scheme names no fungus; one criterion row worth its two 3s.",
+     "notes": null
+    }
+   ],
+   "cardCount": 155,
+   "baseTaskCount": 155,
+   "figures": [
+    "biology-2011-hl-q11biii-question",
+    "biology-2011-hl-q12c-nephron",
+    "biology-2011-hl-q14a-graph",
+    "biology-2011-hl-q15a-ear",
+    "biology-2011-hl-q15c-rhizopus",
+    "biology-2011-hl-q4b-graph",
+    "biology-2011-hl-q5b-canal"
+   ],
+   "checks": {
+    "censusLeaves": 140,
+    "censusLeavesClaimed": 140,
+    "atlas": {
+     "1": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-chemicals-of-life-biomolecules",
+       "biology-higher-old-course-food-food-tests"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "2": {
+      "atlasTopics": [
+       "biology-higher-new-course-23-cell-division-and-cancer",
+       "biology-higher-old-course-cell-division"
+      ],
+      "taskTopics": [
+       "bio-2-3"
+      ]
+     },
+     "3": {
+      "atlasTopics": [
+       "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-higher-old-course-ecology"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "4": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-homeostasis"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "5": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-the-digestive-system",
+       "biology-higher-old-course-digestive-system"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "6": {
+      "atlasTopics": [
+       "biology-higher-new-course-22-respiration",
+       "biology-higher-old-course-respiration"
+      ],
+      "taskTopics": [
+       "bio-2-2"
+      ]
+     },
+     "7": {
+      "atlasTopics": [
+       "biology-higher-new-course-u2-investigating-in-science",
+       "biology-higher-old-course-the-scientific-method"
+      ],
+      "taskTopics": [
+       "bio-u2"
+      ]
+     },
+     "8": {
+      "atlasTopics": [
+       "biology-higher-new-course-21-enzymes",
+       "biology-higher-new-course-12-chemicals-of-life-biomolecules",
+       "biology-higher-new-course-26-the-breathing-system",
+       "biology-higher-new-course-26-plant-structure-and-transport"
+      ],
+      "taskTopics": [
+       "bio-1-2",
+       "bio-2-1",
+       "bio-2-6"
+      ]
+     },
+     "9": {
+      "atlasTopics": [
+       "biology-higher-new-course-12-dna-rna-and-the-genetic-code",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-2"
+      ]
+     },
+     "10": {
+      "atlasTopics": [
+       "biology-higher-new-course-31-ecology-ecosystems-and-biodiversity",
+       "biology-higher-new-course-31-investigating-an-ecosystem",
+       "biology-higher-old-course-ecology",
+       "biology-higher-old-course-the-study-of-an-ecosystem"
+      ],
+      "taskTopics": [
+       "bio-3-1"
+      ]
+     },
+     "11": {
+      "atlasTopics": [
+       "biology-higher-new-course-24-plant-responses",
+       "biology-higher-new-course-24-the-endocrine-system",
+       "biology-higher-old-course-hormonalendocrine-system",
+       "biology-higher-old-course-plant-responses"
+      ],
+      "taskTopics": [
+       "bio-2-4"
+      ]
+     },
+     "12": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-the-urinary-system",
+       "biology-higher-old-course-excretion-thermoregulation"
+      ],
+      "taskTopics": [
+       "bio-2-6"
+      ]
+     },
+     "13": {
+      "atlasTopics": [
+       "biology-higher-new-course-14-information-of-life-genetic-inheritance",
+       "biology-higher-new-course-15-origins-of-life-evolution",
+       "biology-higher-new-course-26-the-breathing-system",
+       "biology-higher-old-course-genetics-dna-evolution"
+      ],
+      "taskTopics": [
+       "bio-1-4",
+       "bio-1-5"
+      ]
+     },
+     "14": {
+      "atlasTopics": [
+       "biology-higher-new-course-13-unit-of-life-cells",
+       "biology-higher-new-course-21-enzymes",
+       "biology-higher-new-course-22-photosynthesis",
+       "biology-higher-old-course-cell-metabolism-enzymes",
+       "biology-higher-old-course-cell-structure",
+       "biology-higher-old-course-photosynthesis",
+       "biology-higher-new-course-26-transport-across-membranes"
+      ],
+      "taskTopics": [
+       "bio-1-3",
+       "bio-2-1",
+       "bio-2-2",
+       "bio-2-6"
+      ]
+     },
+     "15": {
+      "atlasTopics": [
+       "biology-higher-new-course-26-plant-structure-and-transport",
+       "biology-higher-new-course-32-microorganisms",
+       "biology-higher-old-course-fungi",
+       "biology-higher-old-course-plant-transport",
+       "biology-higher-new-course-24-the-nervous-system"
+      ],
+      "taskTopics": [
+       "bio-2-4",
+       "bio-2-6",
+       "bio-3-2"
+      ]
+     }
+    },
+    "atlasRule": "every task topic is a curriculum node of one of its question's Topic Atlas topics (biology-<year>-exam-topic-map.json via biology-curriculum-crosswalk.json)",
+    "tickChecksumsMatched": 30,
+    "excluded": []
+   }
   }
  }
 }
