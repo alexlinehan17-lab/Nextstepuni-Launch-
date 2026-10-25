@@ -1,4 +1,189 @@
 {
+ "biology-2012-hl-q12a-organelles": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q12a-organelles.png",
+  "md5": "f54517ec403ca05b9ec2d6894b1e3166",
+  "alt": "Two shaded drawings side by side. A: an oval organelle with a smooth outer outline and an inner membrane folded into many finger-like projections reaching into the interior, with a few small round dots. B: a larger, irregular oval organelle with a thick outer border, holding stacks of flat discs joined by thin lines, and two pale rounded patches.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(a)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   165,
+   122,
+   425,
+   232
+  ]
+ },
+ "biology-2012-hl-q12b-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q12b-graph.png",
+  "md5": "64c37944c59867aaddb1b5fbef19e896",
+  "alt": "Line graph: Absorption of light up the vertical axis, an upward arrow and no scale, against Colour of light along the bottom, marked violet, blue, green, yellow, orange and red. A key shows a solid line for chlorophyll a and a dashed line for chlorophyll b. The solid line starts at a moderate height at the left, rises to a peak just right of violet, falls to a low that runs from blue to yellow, rises to a second peak at red and falls again at the right. The dashed line starts at zero at the left, rises to its tallest peak at blue, falls to a low through green and yellow, rises to a small peak near orange and falls again.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q12(b)(i)1",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   125,
+   296,
+   522,
+   470
+  ]
+ },
+ "biology-2012-hl-q15a-intestine": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q15a-intestine.png",
+  "md5": "0000b066b18010cd2f02d993c6be38ec",
+  "alt": "Line drawing of part of a section through the wall of the small intestine. Along the top, three tall finger-like folds, each with a thin outer layer and a dark vessel running up its centre, crossed by a ladder of fine lines; below them, thin horizontal bands of tissue. At the bottom, a separate block of two layers, a streaked layer over a dotted layer, above a dark base line. Label X points to the outer edge of the right-hand fold, label Y to the dark central vessel inside it, and a bracket labelled Z spans the two layers of the bottom block.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q15(a)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   128,
+   84,
+   425,
+   252
+  ]
+ },
+ "biology-2012-hl-q15c-ii-question": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q15c-ii-question.png",
+  "md5": "05219ce12d10c1c4fa976fdcbf1cc116",
+  "alt": "Part (ii) of Question 15(c) as printed: three lines of the question, in which the words diffusion, osmosis and active transport are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q15(c)(ii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   104,
+   632,
+   528,
+   677
+  ]
+ },
+ "biology-2012-hl-q3-bone": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q3-bone.png",
+  "md5": "2d81e784d0ca68f312b316634e3f4c22",
+  "alt": "Shaded drawing of the end of a long bone, cut open lengthways: a broad, rounded, two-lobed head on a narrower shaft running down out of the picture. The cut face of the head is filled with a speckled, spongy texture inside a thin smooth outer layer. Label X points into the speckled interior of the head; label Y points to a pale, smooth area at the top of the shaft, just below the speckled region; label Z points to the smooth outer layer along the left side of the head.",
+  "lettersVisible": [
+   "X",
+   "Y",
+   "Z"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q3(a)(i)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   160,
+   58,
+   360,
+   212
+  ]
+ },
+ "biology-2012-hl-q5-stem": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q5-stem.png",
+  "md5": "381e0644b50a0c05f31f94744a1c5ea0",
+  "alt": "Line drawing of a circular section with a thick outer line, labelled Epidermis by a line to its edge. Dozens of small dark oval spots, each with a small pale patch, are scattered over the whole interior with no ring pattern. Two lines from the label A point to two of the spots near the right-hand edge.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q5(c)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   170,
+   55,
+   432,
+   216
+  ]
+ },
+ "biology-2012-hl-q8bvii-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q8bvii-axes.png",
+  "md5": "5f5fe378d38b4622773dbe8e89908b4e",
+  "alt": "A pair of empty axes: a vertical line and a horizontal line meeting at the bottom left. Beside the vertical axis an arrow points up over the word Number; below the horizontal axis the word Time is followed by an arrow pointing right. No scale and no plot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q8(b)(vii)",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   175,
+   550,
+   440,
+   760
+  ]
+ },
+ "biology-2012-hl-q9bvii-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q9bvii-axes.png",
+  "md5": "8d95b4e9b2c3f3c9e87b3f55f7c83fff",
+  "alt": "A pair of empty axes: a vertical line and a horizontal line meeting at the bottom left, with no labels, no scale and no plot.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(b)(vii)1",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   234,
+   545,
+   472,
+   692
+  ]
+ },
+ "biology-2012-hl-q9bvii2-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2012-hl-q9bvii2-scheme.png",
+  "md5": "eb764cbdf0d9096df0c5a24612e3c8bb",
+  "alt": "The marking scheme's drawing for item 2: a pair of axes with no labels or scale, and one smooth curve that rises from low on the left to a single peak in the middle and falls again towards the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 HL Q9(b)(vii)2",
+  "year": 2012,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2012 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   160,
+   345,
+   420,
+   452
+  ],
+  "solution": true
+ },
  "biology-2013-hl-q11bii-scheme": {
   "src": "/exam-figures/biology/markbank/biology-2013-hl-q11bii-scheme.png",
   "md5": "eed93c456548b5be45e7aec88f6c473f",

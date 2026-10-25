@@ -1825,6 +1825,14 @@ type FirstCarded = {
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2012-hl': {
+    tasks: 149, cards: 149,
+    sources: { "paper": ['382e74c07982e0622627abb59eceea4d18a5fda5dd27d0dd8f8c7b73b670251a', 16], "scheme": ['eb0b3fc9779e41418057f2878f1fe452ed39a28248dc623d67a68d546799ae98', 20] },
+    routes: {  },
+    wholeParts: {  },
+    // Q7(b)(viii) "the image" is the microscope's image of a specimen; page 5 prints no artwork for it.
+    ownDrawing: ['bio-2012-hl-q7-b-viii'],
+  },
   '2013-ol': {
     tasks: 157, cards: 157,
     sources: { "paper": ['ddb1f40e0e70051c92304d159ad607325d592d9ea91d916049b2ca2a7d66e79a', 16], "scheme": ['433c42f4000af3a9d43d04d56e8b93e6973fa0ad8e6c8ca50266db00d5b58900', 16] },

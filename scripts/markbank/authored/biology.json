@@ -141812,5 +141812,4363 @@
   "notes": "Two points (\"2 pts\") from the printed list: one menu, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2013_ol.py.",
   "year": 2013,
   "level": "ordinary"
+ },
+ {
+  "id": "bio-2012-hl-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "monosaccharide",
+  "section": "A",
+  "questionRef": "2012 HL Q1(a)",
+  "stem": "Answer five of the following:",
+  "questionText": "Name a monosaccharide.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Name of monosaccharide e.g. Glucose",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "glucose-formula",
+  "section": "A",
+  "questionRef": "2012 HL Q1(b)",
+  "stem": "Answer five of the following: (a) Name a monosaccharide.",
+  "questionText": "Give the formula of the monosaccharide referred to in (a).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Formula of monosaccharide from (a) e.g. C6H12O6 for glucose",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. The text layer flattens the subscripts of C6H12O6. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "polysaccharide",
+  "section": "A",
+  "questionRef": "2012 HL Q1(c)",
+  "stem": "Answer five of the following: (a) Name a monosaccharide.",
+  "questionText": "Name a polysaccharide that can be formed from the monosaccharide referred to in (a).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Polysaccharide from (a) e.g. starch (from glucose)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "amino-acid-composition",
+  "section": "A",
+  "questionRef": "2012 HL Q1(d)",
+  "stem": "Answer five of the following:",
+  "questionText": "Give one way in which an amino acid differs from a monosaccharide, in terms of chemical composition.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Contains N or contains –NH2 or contains –COOH (group)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. The text layer flattens the subscript of –NH2. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "elements-in-carbohydrates-and-fats",
+  "section": "A",
+  "questionRef": "2012 HL Q1(e)",
+  "stem": "Answer five of the following:",
+  "questionText": "What do carbohydrates and fats have in common, in terms of chemical composition?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(mostly) composed of C, H and O",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q1-f",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "fats-differ",
+  "section": "A",
+  "questionRef": "2012 HL Q1(f)",
+  "stem": "Answer five of the following:",
+  "questionText": "How may one fat differ from another, in terms of chemical composition?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 3(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Different (fatty) acids or some are phosphorylated (or have phosphate)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"2(7) + 3(2) i.e. best FIVE answers from (a) – (f)\": an ordered split, each response carded at its first rate. Six parts, the best five priced. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue",
+  "section": "A",
+  "questionRef": "2012 HL Q2(a)(i)",
+  "questionText": "What is a tissue?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A group of cells with the same function",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q2 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "animal-tissues",
+  "section": "A",
+  "questionRef": "2012 HL Q2(a)(ii)",
+  "questionText": "Give an example of an animal tissue.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "muscle / connective / epithelial / nervous",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "muscle",
+      "connective",
+      "epithelial",
+      "nervous"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Example of animal tissue"
+   }
+  ],
+  "notes": "The scheme prints Q2 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. The scheme prints \"Example of animal tissue\" and four examples after \"e.g.\", cut at its commas: an open menu, claim one. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "role-of-animal-tissue",
+  "section": "A",
+  "questionRef": "2012 HL Q2(a)(iii)",
+  "stem": "(ii) Give an example of an animal tissue.",
+  "questionText": "State a role of the animal tissue referred to in (ii).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching structural or physiological role of given animal tissue",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prints Q2 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue-adaptation",
+  "section": "A",
+  "questionRef": "2012 HL Q2(a)(iv)",
+  "stem": "(ii) Give an example of an animal tissue.",
+  "questionText": "Give one way in which the tissue referred to in (ii) is adapted to carry out its function(s).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching structural or matching physiological adaptation of given animal tissue",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prints Q2 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue-culture",
+  "section": "A",
+  "questionRef": "2012 HL Q2(b)(i)",
+  "questionText": "Explain the term tissue culture.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cells grown on (or in) medium or cells grown outside organism",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q2 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q2-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "uses-of-tissue-culture",
+  "section": "A",
+  "questionRef": "2012 HL Q2(b)(ii)",
+  "questionText": "Give two examples of the use of tissue culture.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "First example",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Second example",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The two examples, numbered 1. and 2. by the scheme, are two responses on the \"8 + 7 + 5(1)\" ladder; the scheme names neither. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q3-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "long-bones",
+  "section": "A",
+  "questionRef": "2012 HL Q3(a)(i)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone.",
+  "questionText": "Name a long bone in the human body.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "femur / tibia / fibula / humerus / radius / ulna",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "femur",
+      "tibia",
+      "fibula",
+      "humerus",
+      "radius",
+      "ulna"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Name of long bone"
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. The scheme prints \"Name of long bone\" and six examples after \"e.g.\", cut at its commas: an open menu, claim one. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone"
+ },
+ {
+  "id": "bio-2012-hl-q3-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "parts-of-a-long-bone",
+  "section": "A",
+  "questionRef": "2012 HL Q3(a)(ii)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone.",
+  "questionText": "Name parts X, Y and Z in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "X = spongy bone or marrow",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Y = medullary cavity or marrow",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Z = compact bone",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. X, Y and Z are three responses, cut at the scheme's own semicolons. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "spongy bone or marrow",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "medullary cavity or marrow",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Z",
+    "meaning": "compact bone",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2012-hl-q3-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "spongy-bone",
+  "section": "A",
+  "questionRef": "2012 HL Q3(a)(iii)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone.",
+  "questionText": "State a function of X.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "X — Strength (or rigidity) or lowers density or makes blood cells (or named) or makes marrow",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone"
+ },
+ {
+  "id": "bio-2012-hl-q3-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "medullary-cavity",
+  "section": "A",
+  "questionRef": "2012 HL Q3(a)(iv)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone.",
+  "questionText": "State a function of Y.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Y — Makes (yellow) marrow or stores fat or makes blood cells (or named)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone"
+ },
+ {
+  "id": "bio-2012-hl-q3-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cartilage-in-bone",
+  "section": "A",
+  "questionRef": "2012 HL Q3(b)(i)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone.",
+  "questionText": "Show clearly on the diagram where you would expect to find cartilage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Indication of cartilage on diagram",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone"
+ },
+ {
+  "id": "bio-2012-hl-q3-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "role-of-cartilage",
+  "section": "A",
+  "questionRef": "2012 HL Q3(b)(ii)",
+  "stem": "The diagram shows the macroscopic structure of part of a long bone. (i) Show clearly on the diagram where you would expect to find cartilage.",
+  "questionText": "State one role of this cartilage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Prevents bone damage or friction free movement or shock absorption",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q3 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q3-bone"
+ },
+ {
+  "id": "bio-2012-hl-q4-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation",
+  "section": "A",
+  "questionRef": "2012 HL Q4(a)(i)",
+  "questionText": "What does an ecologist mean by the term conservation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Management of environment or management of species (or organism(s))",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "nature-reserves",
+  "section": "A",
+  "questionRef": "2012 HL Q4(a)(ii)",
+  "questionText": "Suggest a reason why nature reserves are important for conservation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To allow species to develop or (maintaining) biodiversity or prevent extinction or protection",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollution",
+  "section": "A",
+  "questionRef": "2012 HL Q4(b)(i)",
+  "questionText": "Explain the term pollution.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Harmful addition to the environment (or named part of environment)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollutant-and-effect",
+  "section": "A",
+  "questionRef": "2012 HL Q4(b)(ii)",
+  "questionText": "Pollution may result from domestic, agricultural or industrial sources. Select one of these areas and state an effect that may be produced by a named pollutant.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Pollutant — Any relevant pollutant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Effect — Must match pollutant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The pollutant and its effect, on the paper's two answer lines (\"Pollutant:\", \"Effect:\"), are two responses on the \"2(7) + 6(1)\" ladder; the scheme names neither. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollution-control",
+  "section": "A",
+  "questionRef": "2012 HL Q4(b)(iii)",
+  "stem": "(ii) Pollution may result from domestic, agricultural or industrial sources. Select one of these areas and state an effect that may be produced by a named pollutant.",
+  "questionText": "How may the pollution referred to in (ii) be controlled?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching control measure for pollutant from (ii)",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "incineration-advantage",
+  "section": "A",
+  "questionRef": "2012 HL Q4(c)(i)",
+  "questionText": "In relation to the incineration of domestic waste, suggest:\n(i) an advantage of the process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Amount of waste greatly reduced or useable heat or reduced landfill",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. The ask completes (c)'s printed lead-in, carried in the question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q4-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "incineration-disadvantage",
+  "section": "A",
+  "questionRef": "2012 HL Q4(c)(ii)",
+  "questionText": "In relation to the incineration of domestic waste, suggest:\n(ii) a disadvantage of the process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Harmful products",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q4 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. The ask completes (c)'s printed lead-in, carried in the question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q5-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "monocotyledon",
+  "section": "A",
+  "questionRef": "2012 HL Q5(a)",
+  "questionText": "What is meant by the term monocotyledonous?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "One seed leaf or one embryonic leaf",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "monocot-example",
+  "section": "A",
+  "questionRef": "2012 HL Q5(b)",
+  "questionText": "Give an example of a monocotyledonous plant.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Example of monocot",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q5-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "vascular-bundles",
+  "section": "A",
+  "questionRef": "2012 HL Q5(c)",
+  "stem": "The diagram shows a transverse section through the stem of a monocotyledonous (monocot) plant.",
+  "questionText": "Name the structures labelled A.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vascular bundles",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q5-stem",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vascular bundles",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2012-hl-q5-d-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stem-section",
+  "section": "A",
+  "questionRef": "2012 HL Q5(d)(i)",
+  "stem": "The diagram shows a transverse section through the stem of a monocotyledonous (monocot) plant.",
+  "questionText": "How do you know from the diagram that the section is taken from:\n(i) a stem?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "More than one (vascular) bundle",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. \"a stem?\" alone is below the build's floor for a question, so the card carries (d)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q5-stem"
+ },
+ {
+  "id": "bio-2012-hl-q5-d-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "monocot-stem",
+  "section": "A",
+  "questionRef": "2012 HL Q5(d)(ii)",
+  "stem": "The diagram shows a transverse section through the stem of a monocotyledonous (monocot) plant.",
+  "questionText": "How do you know from the diagram that the section is taken from:\n(ii) a monocot?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Bundles scattered or described",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. \"a monocot?\" alone is below the build's floor for a question, so the card carries (d)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q5-stem"
+ },
+ {
+  "id": "bio-2012-hl-q5-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "parallel-venation",
+  "section": "A",
+  "questionRef": "2012 HL Q5(e)",
+  "questionText": "How are the veins arranged in the leaves of monocots?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Parallel or described",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q5-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "net-venation",
+  "section": "A",
+  "questionRef": "2012 HL Q5(f)",
+  "questionText": "How does the vein arrangement in the leaves of dicot plants differ from that in monocots?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Reticulate or net or branched or described",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q5 as \"8 + 7 + 5(1)\": an ordered split, each response carded at its first rate. Seven responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q6-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "variation",
+  "section": "A",
+  "questionRef": "2012 HL Q6(a)",
+  "questionText": "In genetics, what is meant by the term variation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Differences (within a population or within a species or between individuals)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q6 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "causes-of-variation",
+  "section": "A",
+  "questionRef": "2012 HL Q6(b)",
+  "questionText": "Variation can result from mutation. Name one other cause of variation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Sexual reproduction or meiosis or independent assortment or environmental",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q6 as \"2(7) + 6(1)\": an ordered split, each response carded at its first rate. Eight responses. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q6-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "types-of-mutation",
+  "section": "A",
+  "questionRef": "2012 HL Q6(c)",
+  "questionText": "Name two types of mutation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Gene (mutation)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Chromosome (mutation)",
+    "marks": null
+   }
+  ],
+  "notes": "The two types, (i) and (ii) in the scheme, are two responses on the \"2(7) + 6(1)\" ladder. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q6-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "mutagens",
+  "section": "A",
+  "questionRef": "2012 HL Q6(d)",
+  "questionText": "Name two agents responsible for increased rates of mutation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Example 1",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Example 2",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The two agents, (i) and (ii) in the scheme, are two responses on the \"2(7) + 6(1)\" ladder; the scheme names neither. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q6-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "mutation-and-natural-selection",
+  "section": "A",
+  "questionRef": "2012 HL Q6(e)",
+  "questionText": "Briefly explain the significance of mutation in relation to natural selection.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 6(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "New phenotypes or new types or new features",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Better adapted or survival of the fittest (or advantageous) or less well adapted (or disadvantageous)",
+    "marks": null
+   }
+  ],
+  "notes": "Two points, cut at the scheme's own solidus: two responses on the \"2(7) + 6(1)\" ladder. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "data",
+  "section": "B",
+  "questionRef": "2012 HL Q7(a)(i)",
+  "questionText": "In relation to the scientific method, explain each of the following:\nData.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Observations or results or other",
+    "marks": 3
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. \"Data.\" alone is below the build's floor for a question, so the card carries (a)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "replicates",
+  "section": "B",
+  "questionRef": "2012 HL Q7(a)(ii)",
+  "stem": "In relation to the scientific method, explain each of the following:",
+  "questionText": "Replicates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Repeats (or copies) of experiment",
+    "marks": 3
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "exposing-semilunar-valves",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(i)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "How did you expose the semi-lunar valves when dissecting the sheep’s or ox’s heart?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cut (open) the aorta or cut (open) the pulmonary artery",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "testing-for-alcohol",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(ii)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "How did you show that alcohol was present when investigating the production of alcohol by yeast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named chemicals or named test",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "starch-agar",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(iii)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "What type of agar plates did you use when investigating the digestive activity of seeds?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Milk or starch",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "evidence-of-digestion",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(iv)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies. (iii) What type of agar plates did you use when investigating the digestive activity of seeds?",
+  "questionText": "How did you demonstrate that digestive activity had taken place in the investigation referred to in part (iii)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Does not give a positive result where digestive activity occurred or described",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "oxygen-for-germination",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(v)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "How did you demonstrate the requirement for oxygen when investigating the factors necessary for seed germination?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Anaerobic jar (or described) or boiled water + oil or one with O2 and one without O2 (and compare)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "visking-tubing",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(vi)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "What did you use as the selectively permeable membrane in your investigation of osmosis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Visking tubing or named plant tissue",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "iaa",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(vii)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "What growth regulator did you use when investigating plant growth?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "IAA",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q7-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "total-magnification",
+  "section": "B",
+  "questionRef": "2012 HL Q7(b)(viii)",
+  "stem": "Answer the following by reference to some of the investigations that you carried out in the course of your studies.",
+  "questionText": "A microscope has an eyepiece lens marked ×10 and an objective lens marked ×20. What is the total magnification of the image?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "200",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "fungi-are-eukaryotic",
+  "section": "B",
+  "questionRef": "2012 HL Q8(a)(i)",
+  "questionText": "Are fungi prokaryotic or eukaryotic?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Eukaryotic",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "plant-cells-and-fungi",
+  "section": "B",
+  "questionRef": "2012 HL Q8(a)(ii)",
+  "questionText": "Name one structure in plant cells not found in fungi.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Chloroplast",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "agar",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(i)",
+  "questionText": "What is the purpose of using agar when growing fungi or bacteria in the laboratory?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Source of) nutrients or substrate (for growth) or medium or visibility",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "leaf-yeast-numbers",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(ii)",
+  "questionText": "Suggest one reason why leaf yeasts are more plentiful in July than in March.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "More leaves or more suitable temperature or more reproduction",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "introducing-leaf-yeast",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(iii)",
+  "questionText": "Describe how you introduced the leaf yeasts into agar plates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Description of an aseptic technique in transfer (of leaf) or method of attachment of leaf to lid",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "leaf-yeast-control",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(iv)",
+  "stem": "(iii) Describe how you introduced the leaf yeasts into agar plates.",
+  "questionText": "What was the precise purpose of a control in this investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To show that the yeast came from the leaf (or did not come from agar)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "leaf-yeast-colonies",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(v)",
+  "questionText": "How did you recognise the leaf yeasts when they appeared on the agar?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pink (colonies)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "disposing-of-plates",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(vi)",
+  "stem": "(iii) Describe how you introduced the leaf yeasts into agar plates.",
+  "questionText": "How did you safely dispose of the plates at the end of the investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Immerse in) disinfectant or autoclave",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q8-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "leaf-yeast-growth-curve",
+  "section": "B",
+  "questionRef": "2012 HL Q8(b)(vii)",
+  "questionText": "Using the axes below, draw a graph to show how the number of leaf yeasts varied following their introduction into the plate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lag",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Log + stationary or log + decline",
+    "marks": 3
+   }
+  ],
+  "notes": "The graph's two printed features are priced \"3\" each: two rows. The printed axes are the figure. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q8bvii-axes"
+ },
+ {
+  "id": "bio-2012-hl-q9-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzymes-are-proteins",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a)(i)",
+  "stem": "Answer the following in relation to enzymes.",
+  "questionText": "What is their chemical nature?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": 3
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-shape",
+  "section": "B",
+  "questionRef": "2012 HL Q9(a)(ii)",
+  "stem": "Answer the following in relation to enzymes.",
+  "questionText": "Comment upon their molecular shape.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Folded",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-used",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(i)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "Name the enzyme that you used.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Name of enzyme",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate-used",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(ii)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action. (i) Name the enzyme that you used.",
+  "questionText": "Name the substrate of this enzyme.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching substrate",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "controlling-ph",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(iii)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "Why was it necessary to keep the pH constant in the course of the investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To eliminate it as a possible influence on rate or only one variable",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "buffer",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(iv)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "How did you keep the pH constant?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Buffer",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "varying-temperature",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(v)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "How did you vary the temperature in the course of the investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Water baths or water bath at different temperatures",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "evidence-of-enzyme-action",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(vi)",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "How did you know that the enzyme was working?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Description of visible result matching enzyme (or substrate)",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-vii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "labelling-enzyme-graph-axes",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(vii)1",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "Use the axes below to summarise the results of your investigation.\nDo this by\n1. labelling the axes,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "y-axis = Rate and x-axis = Temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q9bvii-axes"
+ },
+ {
+  "id": "bio-2012-hl-q9-b-vii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "graph-of-enzyme-activity-against-temperature",
+  "section": "B",
+  "questionRef": "2012 HL Q9(b)(vii)2",
+  "stem": "Answer the following in relation to an investigation that you carried out into the effect of temperature on the rate of enzyme action.",
+  "questionText": "Use the axes below to summarise the results of your investigation.\nDo this by\n2. drawing a graph to show how the rate of enzyme action varied with temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "2.",
+    "marks": 3,
+    "contextNote": "The scheme answers item 2 with a drawing only, shown after reveal: a curve that rises to a single peak and then falls."
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The scheme prices item 2 \"3\" and prints no words for it, only its marker \"2.\" beside a drawn curve: the row is that printed marker, the scheme's drawing is the solution figure shown after reveal, and the question page (the printed axes) opens from the card, as 2026 Higher Q4(d) is carded. Coordinator's decision on the item the author brought for it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q9bvii2-scheme",
+  "sourceMaterial": {
+   "kind": "source-illustration",
+   "label": "OFFICIAL QUESTION PAGE",
+   "title": "Official question page",
+   "pages": [
+    7
+   ],
+   "attribution": "SEC Biology 2012 Higher Level examination paper — © State Examinations Commission.",
+   "presentationNote": "Open the exact examination page to use its published chart, table, photograph or diagram."
+  }
+ },
+ {
+  "id": "bio-2012-hl-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "purines-and-pyrimidines",
+  "section": "C",
+  "questionRef": "2012 HL Q10(a)(i)",
+  "stem": "Nucleic acids are composed of subunits called nucleotides. Each nucleotide is formed from a sugar, a phosphate group and a nitrogenous base.",
+  "questionText": "Name the two types of nitrogenous base found in DNA.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Purines",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Pyrimidines",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. The two types are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "base-pairing",
+  "section": "C",
+  "questionRef": "2012 HL Q10(a)(ii)",
+  "questionText": "Give both of the specific base pairs in DNA structure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "A + T and G + C",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Both pairs are one priced item, \"3\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "mendels-laws",
+  "section": "C",
+  "questionRef": "2012 HL Q10(b)(i)",
+  "stem": "In the sweet pea plant the texture and colour of the testa (seed coat) are governed by two pairs of alleles, which are not linked. The allele for smooth (S) is dominant to the allele for wrinkled (s) and the allele for yellow (Y) is dominant to the allele for green (y).",
+  "questionText": "State the Law of Segregation and the Law of Independent Assortment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Segregation — Traits are governed by pairs of factors (or alleles or genes)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Segregation — that separate at gamete formation (each gamete receiving one factor)",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Assortment — Either member of a pair of alleles (or factors or genes or chromosomes) can combine (or transmit) with either member of another pair (in gamete formation)",
+    "marks": 3
+   }
+  ],
+  "notes": "Segregation \"2(3)\", its two points cut at the scheme's own solidus, and Assortment \"3\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "writing-a-genotype",
+  "section": "C",
+  "questionRef": "2012 HL Q10(b)(ii)1",
+  "stem": "In the sweet pea plant the texture and colour of the testa (seed coat) are governed by two pairs of alleles, which are not linked. The allele for smooth (S) is dominant to the allele for wrinkled (s) and the allele for yellow (Y) is dominant to the allele for green (y). Using the above symbols, and taking particular care to differentiate between upper case and lower case letters:",
+  "questionText": "1. give the genotype of a pea plant that is homozygous in respect of seed texture and heterozygous in respect of seed colour.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "SSYy or ssYy",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "genotype-to-phenotype",
+  "section": "C",
+  "questionRef": "2012 HL Q10(b)(ii)2",
+  "stem": "In the sweet pea plant the texture and colour of the testa (seed coat) are governed by two pairs of alleles, which are not linked. The allele for smooth (S) is dominant to the allele for wrinkled (s) and the allele for yellow (Y) is dominant to the allele for green (y). Using the above symbols, and taking particular care to differentiate between upper case and lower case letters: 1. give the genotype of a pea plant that is homozygous in respect of seed texture and heterozygous in respect of seed colour.",
+  "questionText": "2. state the phenotype that will result from the genotype referred to in 1.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(SSYy) → Smooth + yellow or (ssYy) → Wrinkled + yellow",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The phenotype matches whichever genotype item 1 gave; the scheme prints both, joined by \"or\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "dihybrid-phenotypes",
+  "section": "C",
+  "questionRef": "2012 HL Q10(b)(iii)",
+  "stem": "In the sweet pea plant the texture and colour of the testa (seed coat) are governed by two pairs of alleles, which are not linked. The allele for smooth (S) is dominant to the allele for wrinkled (s) and the allele for yellow (Y) is dominant to the allele for green (y).",
+  "questionText": "What phenotype will be produced by the genotype SsYy? Give another genotype that will produce the same phenotype. Do not use a genotype that you have already given in response to part (ii) 1.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Smooth + yellow",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "SSYY or SsYY or SSYy if not used above b(ii) 1.",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "The phenotype and the other genotype are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "linkage-and-gametes",
+  "section": "C",
+  "questionRef": "2012 HL Q10(b)(iv)",
+  "stem": "In the sweet pea plant the texture and colour of the testa (seed coat) are governed by two pairs of alleles, which are not linked. The allele for smooth (S) is dominant to the allele for wrinkled (s) and the allele for yellow (Y) is dominant to the allele for green (y).",
+  "questionText": "If the allele for smooth were linked to the allele for green and the allele for wrinkled were linked to the allele for yellow, give the genotypes of the two gametes that parent SsYy would produce in the greatest numbers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Sy",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "sY",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "The two gametes are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "genetic-engineering",
+  "section": "C",
+  "questionRef": "2012 HL Q10(c)(i)",
+  "questionText": "What is meant by the term genetic engineering?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Manipulation of genes or alteration of genes or alteration of genotypes",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "stages-of-genetic-engineering",
+  "section": "C",
+  "questionRef": "2012 HL Q10(c)(ii)",
+  "questionText": "In genetic engineering all or some of the following procedures may be involved.\nIsolation;\nCutting (restriction);\nTransformation (ligation);\nIntroduction of base sequence changes;\nExpression.\nBriefly explain each of the above terms in the context of genetic engineering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Isolation — Locating or identififying or removal of a gene (or a piece of DNA or a plasmid)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Cutting (restriction) — (Cutting) the DNA (or plasmid) with an (restriction) enzyme",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Transformation : uptake of DNA (or plasmid or gene) OR Ligation: the joining of DNA (or plasmid or gene)",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Introduction of base sequence changes — (the order of bases in) the host DNA is now different",
+    "marks": 3
+   },
+   {
+    "id": "r5",
+    "kind": "alt",
+    "verbatim": "Expression — the activation of the inserted gene (in its new position) or production of product",
+    "marks": 3
+   }
+  ],
+  "notes": "Each of the five terms is priced \"3\": five rows, each under the scheme's own term. Transformation and ligation are printed as alternatives joined by \"OR\", one priced item: one row. The scheme prints \"identififying\"; lifted as printed. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "applications-of-genetic-engineering",
+  "section": "C",
+  "questionRef": "2012 HL Q10(c)(iii)",
+  "questionText": "Give one application of genetic engineering in any two of the following.\n1. An animal.\n2. A plant.\n3. A micro-organism.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Animal example. / Plant example. / Micro-organism example.",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Animal example.",
+      "Plant example.",
+      "Micro-organism example."
+     ]
+    },
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "\"Any two 2(3)\" over the scheme's three printed categories, none with an example: a menu of its criteria, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "food-chain-and-food-web",
+  "section": "C",
+  "questionRef": "2012 HL Q11(a)(i)",
+  "questionText": "Distinguish between a food chain and a food web. Include a clear reference to each in your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Chain — One species at each trophic (or feeding) level or described or diagram",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Web — Interconnected food chains or described or diagram or more than one species at each trophic (or feeding) level",
+    "marks": 3
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. The chain and the web are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pyramid-of-numbers",
+  "section": "C",
+  "questionRef": "2012 HL Q11(a)(ii)",
+  "questionText": "What do ecologists mean by a pyramid of numbers?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Diagram) that shows the number of organisms at each trophic level",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "why-introduce-exotic-species",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(i)",
+  "stem": "Organisms that are introduced into new environments outside their natural ranges are referred to as exotic species. In some cases these introductions have been deliberate and in other cases accidental e.g. when a species kept in captivity in a new country escapes and gives rise to a wild population. Worldwide, the great majority of deliberate attempted introductions have been unsuccessful.",
+  "questionText": "Suggest a reason for attempting to establish an exotic species in a new country.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Food source or biological control or aesthetic or sporting or other",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "failed-introductions",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(ii)",
+  "stem": "Organisms that are introduced into new environments outside their natural ranges are referred to as exotic species. In some cases these introductions have been deliberate and in other cases accidental e.g. when a species kept in captivity in a new country escapes and gives rise to a wild population. Worldwide, the great majority of deliberate attempted introductions have been unsuccessful.",
+  "questionText": "Suggest two reasons why the great majority of attempted introductions have been unsuccessful.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Failure to adapt / example of failure to adapt / preyed upon / insufficient numbers / dispersal / competition",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Failure to adapt",
+      "example of failure to adapt",
+      "preyed upon",
+      "insufficient numbers",
+      "dispersal",
+      "competition"
+     ]
+    }
+   }
+  ],
+  "notes": "\"Any two 2(3)\" over the six printed reasons: a menu, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "seed-dispersal",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(iii)",
+  "stem": "Organisms that are introduced into new environments outside their natural ranges are referred to as exotic species. In some cases these introductions have been deliberate and in other cases accidental e.g. when a species kept in captivity in a new country escapes and gives rise to a wild population. Worldwide, the great majority of deliberate attempted introductions have been unsuccessful.",
+  "questionText": "Use your knowledge of the life cycle of flowering plants to suggest how an exotic plant may escape from captivity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Seed dispersal or fruit",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "negative-impact-of-exotics",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(iv)1",
+  "stem": "Organisms that are introduced into new environments outside their natural ranges are referred to as exotic species. In some cases these introductions have been deliberate and in other cases accidental e.g. when a species kept in captivity in a new country escapes and gives rise to a wild population. Worldwide, the great majority of deliberate attempted introductions have been unsuccessful. Use the knowledge that you have gained in your studies of ecology to suggest how the introduction of an exotic species may:",
+  "questionText": "1. impact negatively on an existing community.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Increased competition or (increased) predation or example of increased competition or example of increased predation",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "positive-impact-of-exotics",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(iv)2",
+  "stem": "Organisms that are introduced into new environments outside their natural ranges are referred to as exotic species. In some cases these introductions have been deliberate and in other cases accidental e.g. when a species kept in captivity in a new country escapes and gives rise to a wild population. Worldwide, the great majority of deliberate attempted introductions have been unsuccessful. Use the knowledge that you have gained in your studies of ecology to suggest how the introduction of an exotic species may:",
+  "questionText": "2. impact positively on an existing community.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Control of nuisance species or food or shelter or other",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "niche",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(v)1",
+  "stem": "It has been stated that an exotic species has a good chance of becoming established in a new environment if there is a vacant niche.",
+  "questionText": "1. Explain the term niche in this context.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Role of organism (in an ecosystem) or explained e.g. „how it fits‟",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The text layer reads the quotation marks around \"how it fits\" as a low and a raised double comma; lifted as read. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-b-v-2-3",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "vacant-niche",
+  "section": "C",
+  "questionRef": "2012 HL Q11(b)(v) — items 2 and 3",
+  "stem": "It has been stated that an exotic species has a good chance of becoming established in a new environment if there is a vacant niche.",
+  "questionText": "2. Do you agree with the above statement?\n3. Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Yes, because it is adapted (or is suited) or explained",
+    "marks": 6,
+    "contextNote": "The scheme marks this answer 6, 0"
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "yes",
+    "label": "Yes",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "alt",
+      "verbatim": "Yes, because it is adapted (or is suited) or explained",
+      "marks": 6,
+      "contextNote": "The scheme marks this answer 6, 0"
+     }
+    ]
+   },
+   {
+    "id": "no",
+    "label": "No",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "alt",
+      "verbatim": "No, because it is not adapted (or is not suited) or explained",
+      "marks": 6,
+      "contextNote": "The scheme marks this answer 6, 0"
+     }
+    ]
+   }
+  ],
+  "notes": "The scheme prints items 2 and 3 as one entry, \"2+3.\", priced \"6, 0\", with two answers joined by \"OR\" (\"Yes, because ...\" or \"No, because ...\"): one card for both items, the answers its variants. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "flora",
+  "section": "C",
+  "questionRef": "2012 HL Q11(c)(i)1",
+  "stem": "Name the ecosystem which you investigated during your study of ecology.",
+  "questionText": "Explain the terms\n1. Flora,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Plants",
+    "marks": 2,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Flora,\" alone is below the build's floor for a question, so the card carries (i)'s printed lead-in in its question text. The scheme prints \"Name of investigated ecosystem:\" under (c) with no mark against it; the paper's ask is the stem of every (c) card. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "fauna",
+  "section": "C",
+  "questionRef": "2012 HL Q11(c)(i)2",
+  "stem": "Name the ecosystem which you investigated during your study of ecology.",
+  "questionText": "Explain the terms\n2. Fauna.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Animals",
+    "marks": 2,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Fauna.\" alone is below the build's floor for a question, so the card carries (i)'s printed lead-in in its question text. The scheme prints \"Name of investigated ecosystem:\" under (c) with no mark against it; the paper's ask is the stem of every (c) card. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-study-of-an-animal",
+  "section": "C",
+  "questionRef": "2012 HL Q11(c)(ii)",
+  "stem": "Name the ecosystem which you investigated during your study of ecology.",
+  "questionText": "Name one animal from your named ecosystem and describe how you carried out a quantitative study of that animal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named animal (must match named ecosystem and method if given)",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Details of method:",
+    "marks": 12,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The named animal \"2\" and the method \"6(2)\"; the scheme prints no method points, so the method is one criterion row worth its six 2s. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "marking-animals",
+  "section": "C",
+  "questionRef": "2012 HL Q11(c)(iii)",
+  "stem": "Name the ecosystem which you investigated during your study of ecology.",
+  "questionText": "Suggest one way in which marking an animal might endanger it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "More conspicuous (to predators) or social outcast or toxic marker",
+    "marks": 2
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q11-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "changes-to-an-ecosystem",
+  "section": "C",
+  "questionRef": "2012 HL Q11(c)(iv)",
+  "stem": "Name the ecosystem which you investigated during your study of ecology.",
+  "questionText": "Ecosystems are subject to changes, both natural and artificial. Mention one of each type of change as it applies to your named ecosystem.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Natural — relevant matching example",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Artificial — relevant matching example",
+    "marks": 2,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The natural and the artificial change are priced \"2\" each; the scheme names neither. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "autotrophic-nutrition",
+  "section": "C",
+  "questionRef": "2012 HL Q12(a)(i)",
+  "questionText": "From the following list, write into your answer book any term that describes the nutrition of a typical plant:\nparasitic; heterotrophic; saprophytic; autotrophic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Autotrophic",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "mitochondrion-and-chloroplast",
+  "section": "C",
+  "questionRef": "2012 HL Q12(a)(ii)",
+  "questionText": "Identify, in your answer book, the cell organelles A and B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "(A =) mitochondrion",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "(B =) chloroplast",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A and B are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12a-organelles",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "mitochondrion",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "chloroplast",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2012-hl-q12-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chlorophyll-a-absorption",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(i)1",
+  "stem": "Chlorophyll is composed of various pigments. Two of these pigments are chlorophyll a and chlorophyll b. The graph below shows the amount of light of different colours absorbed by chlorophyll a and chlorophyll b.",
+  "questionText": "1. What colours of light are absorbed most by chlorophyll a?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Violet",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Red",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The two colours are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12b-graph"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chlorophyll-b-absorption",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(i)2",
+  "stem": "Chlorophyll is composed of various pigments. Two of these pigments are chlorophyll a and chlorophyll b. The graph below shows the amount of light of different colours absorbed by chlorophyll a and chlorophyll b.",
+  "questionText": "2. What colour of light is absorbed most by chlorophyll b?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Blue",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12b-graph"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "yellow-light",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(ii)",
+  "stem": "Chlorophyll is composed of various pigments. Two of these pigments are chlorophyll a and chlorophyll b. The graph below shows the amount of light of different colours absorbed by chlorophyll a and chlorophyll b.",
+  "questionText": "What happens to yellow light when it strikes a leaf?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Not absorbed or little absorption or it is reflected",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12b-graph"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "several-pigments",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(iii)",
+  "stem": "Chlorophyll is composed of various pigments. Two of these pigments are chlorophyll a and chlorophyll b. The graph below shows the amount of light of different colours absorbed by chlorophyll a and chlorophyll b.",
+  "questionText": "Suggest one possible benefit to plants of having more than one chlorophyll pigment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Able to absorb more light (or energy) or able to absorb more (or different) colours (or wavelengths) or increased photosynthesis (or increased food production)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12b-graph"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "lighting-glasshouses",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(iv)",
+  "stem": "Chlorophyll is composed of various pigments. Two of these pigments are chlorophyll a and chlorophyll b. The graph below shows the amount of light of different colours absorbed by chlorophyll a and chlorophyll b.",
+  "questionText": "From the information provided by the graph suggest how a commercial grower might try to increase crop yield in his glasshouses or tunnels.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Use violet (or blue or orange or red) light",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q12b-graph"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "carbon-dioxide-source",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(v)1",
+  "questionText": "1. What is the main source of carbon dioxide used by plants in the dark stage of photosynthesis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Air (or atmosphere) or respiration",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-b-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "nadp-and-atp",
+  "section": "C",
+  "questionRef": "2012 HL Q12(b)(v)2",
+  "questionText": "2. State one role of NADP and one role of ATP in the dark stage of photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "to transport electrons / to transport energy / H-carrier",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "to transport electrons",
+      "to transport energy",
+      "H-carrier"
+     ]
+    },
+    "contextNote": "NADP:"
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "ATP — Energy source or energy store",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. NADP's role and ATP's are priced \"3\" each; NADP's three printed roles, cut at the scheme's own solidus, are a menu, claim one, as the paper asks for one role. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "glycolysis",
+  "section": "C",
+  "questionRef": "2012 HL Q12(c)(i)",
+  "stem": "Write a brief note on each of the following items in relation to respiration.",
+  "questionText": "Glycolysis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "First stage of respiration / in cytoplasm (or in cytosol) / anaerobic / starts with glucose (or indicated) / produces pyruvate / low energy release",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "First stage of respiration",
+      "in cytoplasm (or in cytosol)",
+      "anaerobic",
+      "starts with glucose (or indicated)",
+      "produces pyruvate",
+      "low energy release"
+     ]
+    }
+   }
+  ],
+  "notes": "\"2(3)\": two points from the printed list, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "acetyl-coenzyme-a",
+  "section": "C",
+  "questionRef": "2012 HL Q12(c)(ii)",
+  "stem": "Write a brief note on each of the following items in relation to respiration.",
+  "questionText": "Acetyl Co-enzyme A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Aerobic / formed from pyruvate / 2-carbon (group) / joins Krebs cycle / in mitochondrion",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Aerobic",
+      "formed from pyruvate",
+      "2-carbon (group)",
+      "joins Krebs cycle",
+      "in mitochondrion"
+     ]
+    }
+   }
+  ],
+  "notes": "\"2(3)\": two points from the printed list, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "atp",
+  "section": "C",
+  "questionRef": "2012 HL Q12(c)(iii)",
+  "stem": "Write a brief note on each of the following items in relation to respiration.",
+  "questionText": "Adenosine triphosphate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "High energy bonds (or high energy molecule) / energy store / releases energy / forming ADP (or formed from ADP) / large ATP production in stage 2",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "High energy bonds (or high energy molecule)",
+      "energy store",
+      "releases energy",
+      "forming ADP (or formed from ADP)",
+      "large ATP production in stage 2"
+     ]
+    }
+   }
+  ],
+  "notes": "\"2(3)\": two points from the printed list, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q12-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "electron-transport-chain",
+  "section": "C",
+  "questionRef": "2012 HL Q12(c)(iv)",
+  "stem": "Write a brief note on each of the following items in relation to respiration.",
+  "questionText": "Electron transport chain.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Aerobic / in mitochondrion / carries high-energy electrons / from NADH or from Krebs cycle / to protons / formation of water / ATP produced or high energy release",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Aerobic",
+      "in mitochondrion",
+      "carries high-energy electrons",
+      "from NADH or from Krebs cycle",
+      "to protons",
+      "formation of water",
+      "ATP produced or high energy release"
+     ]
+    }
+   }
+  ],
+  "notes": "\"2(3)\": two points from the printed list, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cns-and-pns",
+  "section": "C",
+  "questionRef": "2012 HL Q13(a)(i)",
+  "questionText": "Distinguish between the central nervous system and the peripheral nervous system. Include a clear reference to each in your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "CNS — brain and spinal cord",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "PNS — nerves leading to and from CNS or nerves not in CNS",
+    "marks": 3
+   }
+  ],
+  "notes": "Sections B and C print a mark against every row. The CNS and the PNS are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "nervous-and-hormonal-responses",
+  "section": "C",
+  "questionRef": "2012 HL Q13(a)(ii)",
+  "questionText": "Give one way in which a nervous response differs from a hormonal response.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Faster or shorter-lived or electrical",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "drawing-a-motor-neuron",
+  "section": "C",
+  "questionRef": "2012 HL Q13(b)(i)",
+  "questionText": "Draw a large labelled diagram of a motor neuron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram — cell body with dendrites + axon + terminal dendrites shown",
+    "marks": 6,
+    "contextNote": "Diagram of a sensory neuron gets 0 marks"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Cell body / dendrites / axon / myelin sheath / Schwann cells / (neurotransmitter) vesicles (or swellings)",
+    "marks": null,
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "Cell body",
+      "dendrites",
+      "axon",
+      "myelin sheath",
+      "Schwann cells",
+      "(neurotransmitter) vesicles (or swellings)"
+     ]
+    },
+    "contextNote": "Labels:"
+   }
+  ],
+  "notes": "The drawing is one priced item (\"6, 3, 0\"): one criterion row naming what it must show, with the scheme's direction on a sensory neuron. Its labels \"6(1)\": all six printed labels. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "parts-of-neurons",
+  "section": "C",
+  "questionRef": "2012 HL Q13(b)(ii)",
+  "questionText": "Give one function each of any two parts found only in neurons.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Function first named part",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Function of second named part",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The two functions are priced \"3\" each; the scheme names no part. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "direction-of-impulse",
+  "section": "C",
+  "questionRef": "2012 HL Q13(b)(iii)",
+  "stem": "(i) Draw a large labelled diagram of a motor neuron.",
+  "questionText": "Place an arrow on or near your diagram to indicate the direction of impulse transmission.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Arrow",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices \"*Arrow\" and does not say which way it points: a criterion row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sensory-neurons-and-interneurons",
+  "section": "C",
+  "questionRef": "2012 HL Q13(b)(iv)",
+  "questionText": "Name and state the role of any two types of neuron, other than the motor neuron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sensory neuron carry impulses to CNS (or to named part of CNS)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Interneuron carry impulses within CNS or Interneuron carry impulses from sensory to motor neuron or connect sensory and motor neurons",
+    "marks": 3
+   }
+  ],
+  "notes": "Each neuron, named with its role, is priced \"3\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "parts-of-the-brain",
+  "section": "C",
+  "questionRef": "2012 HL Q13(c)(i)",
+  "questionText": "State one function for each of the following parts of the human brain.\nCerebrum;\nHypothalamus;\nCerebellum;\nMedulla oblongata.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cerebrum — language or reason or consciousness or senses or memory or intelligence or emotions or other",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Hypothalamus — homeostasis or example of homeostasis or endocrine function or other",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Cerebellum — movement or balance or coordination or example",
+    "marks": 3
+   },
+   {
+    "id": "r4",
+    "kind": "alt",
+    "verbatim": "Medulla oblongata — involuntary muscle control or example",
+    "marks": 3
+   }
+  ],
+  "notes": "Each of the four parts is priced \"3\": four rows, each under the scheme's own name for the part. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "grey-and-white-matter",
+  "section": "C",
+  "questionRef": "2012 HL Q13(c)(ii)",
+  "questionText": "In relation to the nervous system, distinguish between grey matter and white matter. Include a clear reference to each in your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Grey — few axons or little myelin or mostly cell bodies",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "White — many axons or much myelin or few cell bodies",
+    "marks": 3
+   }
+  ],
+  "notes": "Grey and white matter are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "parkinsons-or-paralysis",
+  "section": "C",
+  "questionRef": "2012 HL Q13(c)(iii)",
+  "questionText": "In the case of either paralysis or Parkinson’s disease state:\n1. a possible cause, other than accident;\n2. a method of treatment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cause — Parkinson‟s – lack of dopamine or genetic or toxins",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Treatment — Parkinson‟s - levodopa or drugs that mimic dopamine or physiotherapy or exercise",
+    "marks": 3
+   }
+  ],
+  "answerVariants": [
+   {
+    "id": "parkinsons",
+    "label": "Parkinson’s disease",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "alt",
+      "verbatim": "Cause — Parkinson‟s – lack of dopamine or genetic or toxins",
+      "marks": 3
+     },
+     {
+      "id": "r2",
+      "kind": "alt",
+      "verbatim": "Treatment — Parkinson‟s - levodopa or drugs that mimic dopamine or physiotherapy or exercise",
+      "marks": 3
+     }
+    ]
+   },
+   {
+    "id": "paralysis",
+    "label": "Paralysis",
+    "rows": [
+     {
+      "id": "r1",
+      "kind": "alt",
+      "verbatim": "Cause — Paralysis – damage to spinal cord or other",
+      "marks": 3
+     },
+     {
+      "id": "r2",
+      "kind": "alt",
+      "verbatim": "Treatment — Paralysis – surgery or psysiotherapy",
+      "marks": 3
+     }
+    ]
+   }
+  ],
+  "notes": "The cause (item 1) and the treatment (item 2) are priced \"3\" each, for whichever disorder the candidate chose: the scheme prints Parkinson's disease OR paralysis for each, answer variants of one task. The text layer reads the apostrophe of \"Parkinson‟s\" as a raised double comma; lifted as read. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "petal",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(i)1",
+  "questionText": "Give a brief account of the role of each of the following in flowering plant reproduction.\n1. Petal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Attracts insects (or other pollinators)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Petal.\" alone is below the build's floor for a question, so the card carries (i)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "anther",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(i)2",
+  "questionText": "Give a brief account of the role of each of the following in flowering plant reproduction.\n2. Anther.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Site of) pollen manufacture or (site of) pollen release",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Anther.\" alone is below the build's floor for a question, so the card carries (i)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-i-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "stigma",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(i)3",
+  "questionText": "Give a brief account of the role of each of the following in flowering plant reproduction.\n3. Stigma.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pollen lands on it or pollen sticks to it or pollen germination",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Stigma.\" alone is below the build's floor for a question, so the card carries (i)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "path-of-pollen-tube",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(ii)",
+  "questionText": "Name one structure through which the pollen tube grows in order to reach the embryo sac.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Stigma or style or ovary or micropyle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "division-of-generative-nucleus",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(iii)1",
+  "stem": "Within the pollen tube the generative nucleus divides to form two male gametes.",
+  "questionText": "1. What type of division takes place?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "mitosis",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "double-fertilisation",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(iii)2",
+  "stem": "Within the pollen tube the generative nucleus divides to form two male gametes.",
+  "questionText": "2. With what does each male gamete fuse in the embryo sac?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "egg [allow ovum or female gamete]",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "polar nuclei",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The two answers are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-iii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "zygote-and-endosperm",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(iii)3",
+  "stem": "Within the pollen tube the generative nucleus divides to form two male gametes.",
+  "questionText": "3. Name the product of each fusion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "zygote",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "endosperm (nucleus)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The two answers are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "food-store-in-seeds",
+  "section": "C",
+  "questionRef": "2012 HL Q14(a)(iv)",
+  "questionText": "As the seed forms following fertilisation, a food store develops in one of two structures. Name any one of these structures.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Endosperm or cotyledon (or seed leaf or embryonic leaf)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "germ-layers",
+  "section": "C",
+  "questionRef": "2012 HL Q14(b)(i)1",
+  "stem": "Answer the following questions from your knowledge of early human development in the womb.",
+  "questionText": "1. Name the three germ layers in the early human embryo.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ectoderm",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mesoderm",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "endoderm",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The three layers are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "germ-layer-derivatives",
+  "section": "C",
+  "questionRef": "2012 HL Q14(b)(i)2",
+  "stem": "Answer the following questions from your knowledge of early human development in the womb. 1. Name the three germ layers in the early human embryo.",
+  "questionText": "2. For each germ layer name a structure in the adult body that develops from it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "ectoderm — e.g nervous system",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "mesoderm — e.g skeletal system",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "endoderm — e.g. digestive system",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Each layer's structure is priced \"3\"; the scheme prints one example for each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "placenta-origin",
+  "section": "C",
+  "questionRef": "2012 HL Q14(b)(ii)",
+  "stem": "Answer the following questions from your knowledge of early human development in the womb.",
+  "questionText": "From which tissues does the placenta develop?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Embryonic",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Uterine or endometrium",
+    "marks": 3
+   }
+  ],
+  "notes": "The two tissues are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "amnion",
+  "section": "C",
+  "questionRef": "2012 HL Q14(b)(iii)1",
+  "stem": "Answer the following questions from your knowledge of early human development in the womb.",
+  "questionText": "1. What is the amnion?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A membrane (or sac) that surrounds the embryo (or foetus)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "role-of-amnion",
+  "section": "C",
+  "questionRef": "2012 HL Q14(b)(iii)2",
+  "stem": "Answer the following questions from your knowledge of early human development in the womb. 1. What is the amnion?",
+  "questionText": "2. Explain the importance of the amnion for the foetus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "It contains (or secretes) (amniotic) fluid or protects embryo",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "trigger-for-zygospores",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(i)1",
+  "stem": "Answer the following questions in relation to sexual reproduction in the mould Rhizopus.",
+  "questionText": "1. Sexual reproduction in Rhizopus is normally triggered by an adverse environmental stimulus. Suggest one such stimulus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Dehydration or other named",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "sexual-reproduction-in-rhizopus",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(i)2",
+  "stem": "Answer the following questions in relation to sexual reproduction in the mould Rhizopus.",
+  "questionText": "2. Draw diagrams to show the main events of sexual reproduction in Rhizopus. In your diagrams label three structures other than the zygospore.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagrams:",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "+ and - / progametangia / gametangia / hypha / zygote",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "+ and -",
+      "progametangia",
+      "gametangia",
+      "hypha",
+      "zygote"
+     ]
+    },
+    "contextNote": "Labels:"
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The diagrams are one priced item (\"6, 3, 0\") the scheme does not describe: one criterion row. Its labels \"3(2)\": three from the printed five. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-i-3",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "advantages-of-zygospores",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(i)3",
+  "stem": "Answer the following questions in relation to sexual reproduction in the mould Rhizopus.",
+  "questionText": "3. Give two advantages to Rhizopus of zygospore formation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Can survive drought (or named adverse condition)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "dispersal",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"2(3)\": the two advantages, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "budding",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(ii)1",
+  "stem": "Answer the following questions in relation to asexual reproduction in yeast.",
+  "questionText": "1. What term is used to describe the process of asexual reproduction in yeast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Budding",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "yeast-daughter-cells",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(ii)2",
+  "stem": "Answer the following questions in relation to asexual reproduction in yeast.",
+  "questionText": "2. What happens to the new cells formed in the process?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Forms a colony or break away (from the mother cell)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q14-c-ii-3",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-and-yeast",
+  "section": "C",
+  "questionRef": "2012 HL Q14(c)(ii)3",
+  "stem": "Answer the following questions in relation to asexual reproduction in yeast.",
+  "questionText": "3. How does asexual reproduction in Rhizopus differ from that in yeast?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Rhizopus) produces spores",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "villus-and-lacteal",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(i)",
+  "stem": "The diagram shows part of a transverse section through the small intestine.",
+  "questionText": "Name structures X and Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "(X =) Villus",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "(Y =) Lacteal",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "X and Y are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q15a-intestine",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Villus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "Lacteal",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2012-hl-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peristalsis",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(ii)",
+  "stem": "The diagram shows part of a transverse section through the small intestine.",
+  "questionText": "What process results from the contraction of the two parts of tissue Z?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Peristalsis",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "figureKey": "biology-2012-hl-q15a-intestine"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "ph-in-small-intestine",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(iii)",
+  "questionText": "In your answer book, indicate which of the following most accurately represents the pH of the contents of the small intestine.\nAcidic. Neutral. Alkaline.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Alkaline",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pancreas-and-liver",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(iv)",
+  "questionText": "Name two glands that pass their secretions into the small intestine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Pancreas",
+    "marks": 3,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Liver",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "The two glands are priced \"3\" each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "symbiotic-bacteria",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(v)1",
+  "questionText": "1. What are symbiotic bacteria?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Bacteria) living on or in another organism involving benefit",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "roles-of-gut-bacteria",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(v)2",
+  "questionText": "2. Give two functions of symbiotic bacteria in the human alimentary canal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Vitamin production / compete with pathogens / reference to digestion / inhibits cancer cells",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Vitamin production",
+      "compete with pathogens",
+      "reference to digestion",
+      "inhibits cancer cells"
+     ]
+    }
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"2(3)\" over four printed functions: a menu, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "water-absorption",
+  "section": "C",
+  "questionRef": "2012 HL Q15(a)(vi)",
+  "questionText": "Where in the human alimentary canal is most water absorbed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Colon or large intestine",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "red-and-white-blood-cells",
+  "section": "C",
+  "questionRef": "2012 HL Q15(b)(i)",
+  "questionText": "State two ways, other than colour, in which red blood cells differ from white blood cells.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Smaller / more of them / biconcave / disc (shape) / no nucleus (when mature) / no mitochondria / transport oxygen / contain haemoglobin / transport CO2",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Smaller",
+      "more of them",
+      "biconcave",
+      "disc (shape)",
+      "no nucleus (when mature)",
+      "no mitochondria",
+      "transport oxygen",
+      "contain haemoglobin",
+      "transport CO2"
+     ]
+    }
+   }
+  ],
+  "notes": "\"2(3)\" over the nine printed differences: a menu, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "phagocytes",
+  "section": "C",
+  "questionRef": "2012 HL Q15(b)(ii)",
+  "questionText": "Name a group of white blood cells, other than lymphocytes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Phagocytic (white cells) or monocytes",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "role-of-antibodies",
+  "section": "C",
+  "questionRef": "2012 HL Q15(b)(iii)1",
+  "stem": "Lymphocytes may be divided into B cells and T cells. B cells produce antibodies.",
+  "questionText": "1. What is the role of antibodies in the body?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To inactivate antigens (or described)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "types-of-t-cell",
+  "section": "C",
+  "questionRef": "2012 HL Q15(b)(iii)2",
+  "stem": "Lymphocytes may be divided into B cells and T cells. B cells produce antibodies.",
+  "questionText": "2. Name any three types of T cell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Helper / killer / suppressor / memory",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Helper",
+      "killer",
+      "suppressor",
+      "memory"
+     ]
+    },
+    "contextNote": "Any three"
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Any three 3(3)\" over four printed types: a menu, claim three. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-b-iii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "roles-of-t-cells",
+  "section": "C",
+  "questionRef": "2012 HL Q15(b)(iii)3",
+  "stem": "Lymphocytes may be divided into B cells and T cells. B cells produce antibodies. 2. Name any three types of T cell.",
+  "questionText": "3. State a role of each of the T cell types that you named in part 2.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Helper: recognise antigens or secrete interferon or stimulate B-cell (or antibody production) or activate killer cell / Killer: attack infected cells or secrete perforin / Suppressor: stop immune responses / Memory: long term protection or remember antigens (to which they have been exposed) or explained",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Helper: recognise antigens or secrete interferon or stimulate B-cell (or antibody production) or activate killer cell",
+      "Killer: attack infected cells or secrete perforin",
+      "Suppressor: stop immune responses",
+      "Memory: long term protection or remember antigens (to which they have been exposed) or explained"
+     ]
+    }
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. \"Any three 3(3)\": the role of each of the three types named in item 2, from the four the scheme prints, each under its own type: a menu, claim three. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "homeostasis",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(i)",
+  "questionText": "Explain the term homeostasis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Maintenance of a constant internal environment",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "diffusion-osmosis-active-transport",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(ii)",
+  "questionText": "Homeostasis often requires an organism to exchange materials between different tissues, or between itself and the external environment by diffusion, osmosis, and active transport. Explain each of the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "diffusion — movement of substances with (along) a concentration gradient or explained",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "osmosis — movement of water through a selectively permeable membrane from a high water concentration to a low concentration",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "active transport — movement of molecules against a concentration gradient or movement of molecules using energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Each of the three terms is priced \"3\": three rows, each under the scheme's own term. The paper marks the terms to explain by underlining them: the question is shown as printed. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher",
+  "questionFigureKey": "biology-2012-hl-q15c-ii-question"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "liver-in-homeostasis",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(iii)1",
+  "questionText": "State one way in which each of the following contributes to homeostasis.\n1. Liver.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Absorption of glucose or release of glucose or heat generation",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The organ alone is too short to stand as a question, so the card carries (iii)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "lungs-in-homeostasis",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(iii)2",
+  "questionText": "State one way in which each of the following contributes to homeostasis.\n2. Lungs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Excretion of water or excretion of CO2 or release of heat",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The organ alone is too short to stand as a question, so the card carries (iii)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-iii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "kidneys-in-homeostasis",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(iii)3",
+  "questionText": "State one way in which each of the following contributes to homeostasis.\n3. Nephrons of kidneys.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Excretion of water or reabsorption of water or excretion of salts (or ions) or reabsorbtion of salts (or ions)",
+    "marks": 3
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. The organ alone is too short to stand as a question, so the card carries (iii)'s printed lead-in in its question text. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2012-hl-q15-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "skin-and-temperature",
+  "section": "C",
+  "questionRef": "2012 HL Q15(c)(iv)",
+  "questionText": "Describe the role of the skin in controlling body temperature.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Too hot: Sweat / dilation of blood vessels / hair flat / Too cold: Constriction of of blood vessels / hair stands up / insulation by (subcutaneous) fat",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Too hot: Sweat",
+      "dilation of blood vessels",
+      "hair flat",
+      "Too cold: Constriction of of blood vessels",
+      "hair stands up",
+      "insulation by (subcutaneous) fat"
+     ]
+    }
+   }
+  ],
+  "notes": "\"Any three 3(3)\" over the six printed responses (three when too hot, three when too cold), each cut at the scheme's own solidus: a menu, claim three. The scheme prints \"Constriction of of blood vessels\"; lifted as printed. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2012_hl.py.",
+  "year": 2012,
+  "level": "higher"
  }
 ]

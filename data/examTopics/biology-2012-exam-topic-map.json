@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "biology",
+  "year": 2012,
+  "authority": "State Examinations Commission",
+  "scope": "Top-level question-to-reference-topic mapping reviewed directly from the official English paper booklets and marking schemes, task by task (scripts/markbank/authoring/bio_review_2012_<level>.py). Each question keeps every topic the factual reference snapshot already gave it and gains the topics its reviewed tasks need.",
+  "questions": {
+    "higher|1": ["biology-higher-new-course-12-chemicals-of-life-biomolecules", "biology-higher-old-course-food-food-tests"],
+    "higher|2": ["biology-higher-new-course-13-unit-of-life-cells", "biology-higher-old-course-cell-structure"],
+    "higher|3": ["biology-higher-new-course-24-the-musculoskeletal-system", "biology-higher-old-course-musculoskeletal-system"],
+    "higher|4": ["biology-higher-new-course-31-ecology-ecosystems-and-biodiversity", "biology-higher-old-course-ecology"],
+    "higher|5": ["biology-higher-new-course-26-plant-structure-and-transport", "biology-higher-old-course-plant-structure"],
+    "higher|6": ["biology-higher-new-course-23-dna-replication-protein-synthesis-and-mutations", "biology-higher-old-course-genetics-dna-evolution", "biology-higher-new-course-15-origins-of-life-evolution"],
+    "higher|7": ["biology-higher-new-course-u2-investigating-in-science", "biology-higher-old-course-the-scientific-method", "biology-higher-new-course-26-the-circulatory-system-and-blood", "biology-higher-new-course-22-respiration", "biology-higher-new-course-25-reproduction-plant", "biology-higher-new-course-26-transport-across-membranes", "biology-higher-new-course-24-plant-responses", "biology-higher-new-course-13-unit-of-life-cells"],
+    "higher|8": ["biology-higher-new-course-32-microorganisms", "biology-higher-old-course-fungi"],
+    "higher|9": ["biology-higher-old-course-cell-metabolism-enzymes", "biology-higher-new-course-21-enzymes"],
+    "higher|10": ["biology-higher-new-course-12-dna-rna-and-the-genetic-code", "biology-higher-new-course-14-information-of-life-genetic-inheritance", "biology-higher-new-course-33-genetic-engineering", "biology-higher-old-course-genetics-dna-evolution"],
+    "higher|11": ["biology-higher-new-course-31-ecology-ecosystems-and-biodiversity", "biology-higher-new-course-31-investigating-an-ecosystem", "biology-higher-old-course-ecology", "biology-higher-old-course-the-study-of-an-ecosystem", "biology-higher-new-course-25-reproduction-plant"],
+    "higher|12": ["biology-higher-new-course-22-photosynthesis", "biology-higher-new-course-22-respiration", "biology-higher-old-course-photosynthesis", "biology-higher-old-course-respiration", "biology-higher-new-course-13-unit-of-life-cells"],
+    "higher|13": ["biology-higher-new-course-24-the-nervous-system", "biology-higher-old-course-nervous-system"],
+    "higher|14": ["biology-higher-new-course-25-reproduction-human", "biology-higher-new-course-25-reproduction-plant", "biology-higher-old-course-fungi", "biology-higher-old-course-human-reproduction", "biology-higher-old-course-plant-reproduction", "biology-higher-new-course-32-microorganisms"],
+    "higher|15": ["biology-higher-new-course-24-immunity", "biology-higher-new-course-26-the-circulatory-system-and-blood", "biology-higher-new-course-26-the-digestive-system", "biology-higher-old-course-blood-circulatory-system", "biology-higher-old-course-digestive-system", "biology-higher-new-course-24-homeostasis", "biology-higher-new-course-26-transport-across-membranes"]
+  }
+}
