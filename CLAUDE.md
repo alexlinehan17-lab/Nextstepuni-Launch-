@@ -137,13 +137,18 @@ in phases — see git log for the per-step rollout.
 Rule: orange (`accent`) is for brand accent and selected states. It does
 NOT carry "good/correct/complete" semantics — use `success` for those.
 The old "teal feels positive" coincidence does not carry over to orange.
+
+One orange, 2026-10-25: `accent` moved from #F26B1F to #eb692a, the Kobra
+theme's `--nsu-orange` (components/approved-ui-theme.css), which is now also
+published on `:root` in index.css. New styles use `var(--nsu-orange)`; the
+remaining #F26B1F literals are legacy and get replaced screen by screen.
 -->
 
 ### Core Colours
 
 | Token | Hex | CSS var | Tailwind | Usage |
 |-------|-----|---------|----------|-------|
-| Primary accent | `#F26B1F` | `--accent-hex` | `accent` | Active states, slider thumbs, progress fills, CTA buttons, accent number badges |
+| Primary accent | `#eb692a` | `--accent-hex` / `--nsu-orange` | `accent` | Active states, slider thumbs, progress fills, CTA buttons, accent number badges |
 | Accent dark | `#B54D14` | `--accent-dark-hex` | `accentDark` | Button bottom-border + drop shadow, paired with the chunky-button language |
 | Accent tint | `#FDEEDF` | `--accent-tint-hex` | `accentTint` | Chip backgrounds, active card tints, callout backgrounds |
 | Accent dark text | `#8C3A0E` | `--accent-dark-text-hex` | `accentDarkText` | Italic body text inside accent callouts; readable on accent tint |

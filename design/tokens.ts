@@ -20,10 +20,12 @@
  *  - teal #2A7D6F → orange #F26B1F
  *  - introduced `success` (green) as a distinct semantic — orange does
  *    NOT carry "good/correct/complete" semantics.
+ *  - #F26B1F → #eb692a (Oct 2026): one orange, the Kobra theme's
+ *    --nsu-orange, also on :root in index.css.
  */
 
 export const COLORS = {
-  accent: '#F26B1F',
+  accent: '#eb692a',
   accentDark: '#B54D14',
   accentTint: '#FDEEDF',
   accentDarkText: '#8C3A0E',
