@@ -1,4 +1,296 @@
 {
+ "biology-2015-hl-q10c-birds": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q10c-birds.png",
+  "md5": "a885fb7165e3c85ea30d1a534c7d4122",
+  "alt": "Five ovals labelled A to E, each holding a pair of long chromosomes, each marked at an upper and a lower position, beside a pair of shorter chromosomes. A: G and g at the upper positions, L and l at the lower, the short pair X and X. B: G and G, L and L, X and Y. C: G and G, L and L, X and X. D: g and g, l and l, X and Y. E: G and g, L and l, X and Y.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q10(c)(i)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   90,
+   420,
+   540,
+   518
+  ]
+ },
+ "biology-2015-hl-q11c-i-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q11c-i-scheme.png",
+  "md5": "05eb277c6e1df2bd325222e80a5e39ee",
+  "alt": "The marking scheme's dental formula: I with 2 over 2, C with 1 over 1, PM with 2 over 2 and M with 3 over 3, each pair of numbers set as a fraction after its letters.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q11(c)(i)1",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   160,
+   468,
+   256,
+   509
+  ],
+  "solution": true
+ },
+ "biology-2015-hl-q11c-teeth": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q11c-teeth.png",
+  "md5": "ed0c50f42ab3743bd477f6677e3e2c2e",
+  "alt": "Black-and-white photograph, seen from the front, of a mammal's open mouth against a dark background: a row of small, blunt front teeth along the upper and the lower jaw, with a long, pointed, curved tooth rising well beyond them on each side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q11(c)(i)2",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   195,
+   494,
+   462,
+   639
+  ]
+ },
+ "biology-2015-hl-q12c-ii-table": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q12c-ii-table.png",
+  "md5": "0a91927d9972f43629d7624f7c0335b4",
+  "alt": "The printed question: (ii) Copy the table below into your answer book and complete it by inserting a letter or name, from the diagram above, to identify a compound which has the number of carbon atoms shown. A two-column table headed Number of carbon atoms and Compound, its rows reading 6, 3 and 2, the Compound column empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q12(c)(ii)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   45,
+   615,
+   560,
+   736
+  ]
+ },
+ "biology-2015-hl-q12c-respiration": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q12c-respiration.png",
+  "md5": "ffb9cebd9edb5f3f8ebda2b75de00b3b",
+  "alt": "Flow diagram: Glucose, then an arrow labelled Stage 1 down to Pyruvic acid. From pyruvic acid an arrow labelled Anaerobic pathway runs right to Compound A + Gas X, and a line runs down to Acetyl CoA, branching on the way to give off Gas X to the left and Hydrogen to the right. A curved arrow leads from Acetyl CoA into Compound C; an arc runs from Compound B over to Compound C; beneath them, beside the words Other compounds, arrows give off Gas X near Compound C and near Compound B, and a loop below sends an arrow right to a second Hydrogen. Both Hydrogen arrows lead into a box labelled Electron transport system; beside it, Gas Y enters a curved arrow that ends at Compound D.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q12(c)(i)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   120,
+   340,
+   455,
+   575
+  ]
+ },
+ "biology-2015-hl-q13b-pyramid": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q13b-pyramid.png",
+  "md5": "0356a6e351a5774c0a5e1696a51ab4c7",
+  "alt": "A pyramid of numbers drawn as four stacked boxes: A, a small narrow box, at the bottom; B, a wide box, above it; C, a small narrow box, above B; and D, a wide box, on top.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q13(b)(iii)1",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   432,
+   292,
+   502,
+   370
+  ]
+ },
+ "biology-2015-hl-q14b-spinal": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q14b-spinal.png",
+  "md5": "9bebb8dc1faffea693b6e54c59a76b0c",
+  "alt": "Drawing of a cross section of the spinal cord: a rounded outline with a deep notch at the bottom and a shallow one at the top, two large looped outlines inside it on either side, a shaded grey region shaped like a butterfly in the centre with a small oval opening at its middle, and nerve fibres with small round cell bodies running out from the grey region to the right. Label A points into the shaded region, label B to the unshaded tissue below it and label C to the small central opening.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q14(b)(i) — A",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   140,
+   225,
+   440,
+   368
+  ]
+ },
+ "biology-2015-hl-q14c-sperm": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q14c-sperm.png",
+  "md5": "309df24883d452543d9d346bdaea787c",
+  "alt": "Drawing of a sperm cell: a rounded head on the right, a short, thicker section behind it and a long, thin, curving tail. Label B points to the short section behind the head.",
+  "lettersVisible": [
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q14(c)(iv)1",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   225,
+   628,
+   325,
+   692
+  ]
+ },
+ "biology-2015-hl-q15a-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q15a-graph.png",
+  "md5": "15c6cb64c6b74605ee899a5a419f5cf7",
+  "alt": "Graph of dry mass (g) against time (days) from 0 to 21. A straight line labelled Endosperm falls from high on the left to low on the right. A line labelled Embryo rises gently from low on the left, crosses the endosperm line and, at a point labelled A shortly before day 21, turns sharply upwards.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q15(a)(v)1",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   222,
+   240,
+   420,
+   408
+  ]
+ },
+ "biology-2015-hl-q15c-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q15c-graph.png",
+  "md5": "78b34035dd201ac53dcef225bbf6f22b",
+  "alt": "Graph of bacterial population size against time: a low flat stretch labelled A, a steep rise labelled B, a high flat stretch labelled C and a steep fall labelled D.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q15(c)(v)1 — B",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   165,
+   305,
+   405,
+   445
+  ]
+ },
+ "biology-2015-hl-q3-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q3-virus.png",
+  "md5": "af6e3a74f5fa458f62263777e29ab981",
+  "alt": "Drawing of a round virus particle: a dark, finely speckled circular core holding a single wavy thread, inside a lighter grey outer ring from which about twelve short stalks with rounded knobs project all round. Label A points to the lighter outer ring and label B to the wavy thread in the core.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q3(a)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   200,
+   70,
+   400,
+   205
+  ]
+ },
+ "biology-2015-hl-q5-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q5-graph.png",
+  "md5": "69947b295a659c2a276788fdf0663c15",
+  "alt": "Line graph of change in mass (g), marked from -25 to 25 on the vertical axis, against % sucrose solution, marked 0.2 to 1.0 on the horizontal axis, with a horizontal line drawn across at 0. Six points labelled A to F are joined by a line that falls from left to right: A at about 23 on the vertical axis, B at about 7 at 0.2, C where the line crosses the zero line between 0.2 and 0.4, D at about -13 a little before 0.6, E at about -22 at 0.8 and F at about -24 at 1.0.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q5(a)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   160,
+   118,
+   445,
+   342
+  ]
+ },
+ "biology-2015-hl-q6-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2015-hl-q6-skin.png",
+  "md5": "9699cd4b64b0f4a8bb1cb4cdb5c78f01",
+  "alt": "Line drawing of a vertical section through skin: a dense speckled band along the top over a dotted layer; a hair rising out of the surface from a dark bulb deep in the section, with a rounded sac beside its shaft; a thin slanting band running from beside the hair's root up towards the surface layers; branching vessels, two round bodies with fine threads and a ringed body in the middle layer; a narrow tube running down from the surface to a tight coil; and a bottom layer of rounded cells. Label A points to the slanting band beside the hair and label B to the coiled tube.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 HL Q6(a)",
+  "year": 2015,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2015 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   150,
+   58,
+   480,
+   282
+  ]
+ },
  "biology-2016-hl-q10c-chain": {
   "src": "/exam-figures/biology/markbank/biology-2016-hl-q10c-chain.png",
   "md5": "404cbc2c7c4621970fc69e190ff2dc8a",

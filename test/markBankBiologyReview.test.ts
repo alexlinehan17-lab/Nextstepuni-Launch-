@@ -1825,6 +1825,14 @@ type FirstCarded = {
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2015-hl': {
+    tasks: 150, cards: 154,
+    sources: { "paper": ['46dbe0b5bc176f4d29943597accb73676303c2bacb1617534887ee046639e887', 16], "scheme": ['e9129c41fe6c7fbea992d7d7c4e83c50d379f92e9f972e5452bf8f7daf4b7551', 24] },
+    routes: { "Q7(c)(i)2": ["catalase", "pepsin", "amylase"], "Q7(c)(i)3": ["catalase", "pepsin", "amylase"] },
+    wholeParts: { "2015 HL Q12(b)": 27 },
+    // Q14(c)(ii) puts X on the diagram the student draws in (i); the paper prints none.
+    ownDrawing: ['bio-2015-hl-q14-c-ii'],
+  },
   '2016-ol': {
     tasks: 166, cards: 166,
     sources: { "paper": ['c084bd487b35d861bc45e84cd3a5e03130a3bd8a9ec48842d7d6ef0d4381478c', 16], "scheme": ['236277809b8d5edfcb4c2a65485ce70a6d539b034dc63728173dcd84393e43a8', 12] },
