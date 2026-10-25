@@ -1597,8 +1597,8 @@ const hl19Options = (id: string) => (hl19ById.get(id)!.rows as unknown as Array<
 describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
   it('ships every carded task, and nothing else, for the sitting', () => {
     expect(hl19.baseTaskCount).toBe(147);
-    expect(hl19.cardCount).toBe(148);
-    expect(higher2019).toHaveLength(148);
+    expect(hl19.cardCount).toBe(152);
+    expect(higher2019).toHaveLength(152);
     const carded = hl19.tasks.filter(task => task.status === 'carded');
     expect(new Set(carded.map(task => task.id))).toEqual(new Set(hl19ById.keys()));
     expect(hl19.review).toBeUndefined();
@@ -1615,16 +1615,20 @@ describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
       .toEqual([12, 8, 28]);
   });
 
-  it('keeps out the two parts the SEC withdrew, with the scheme\'s own evidence', () => {
+  it('cards the two parts the SEC withdrew as printed, each with the footnote\'s effect', () => {
     // The scheme's footnote: Q7(b)(iii) and (iv) were outside the syllabus,
     // not examinable, and credited to every candidate who attempted Q7(b).
+    // Kept out at first (2026-10-14); carded since 2026-10-24, because a
+    // printed ask is never left out (Alex): the scheme's printed possible
+    // answer, at its place on the Q7(b) ladder, with the effect as its note.
     const withdrawn = ['iii-1', 'iii-2', 'iv-1', 'iv-2'].map(x => `bio-2019-hl-q7-b-${x}`);
-    expect(hl19.tasks.filter(task => task.status === 'excluded').map(task => task.id)).toEqual(withdrawn);
-    for (const id of withdrawn) expect(hl19ById.has(id), id).toBe(false);
-    for (const exclusion of hl19.checks.excluded) {
-      expect(exclusion.reason).toMatch(/outside the range of the Biology syllabus/);
-      expect(exclusion.evidence).toMatch(/deemed to be outside the range of the Biology Syllabus and not examinable/);
-      expect(exclusion.schemeRows).toHaveLength(1);
+    expect(hl19.tasks.filter(task => task.status === 'excluded')).toEqual([]);
+    expect(hl19.checks.excluded).toEqual([]);
+    for (const id of withdrawn) {
+      const card = hl19ById.get(id)!;
+      expect(card, id).toBeDefined();
+      expect(card.rows).toHaveLength(1);
+      expect(card.rows[0].contextNote, id).toMatch(/^The SEC deemed this part outside the range of the Biology syllabus and not examinable: every candidate who attempted any part of Q7\(b\) was credited with its marks\./);
     }
   });
 
@@ -1648,7 +1652,7 @@ describe('Biology 2019 Higher — carded from a paper-by-paper review', () => {
     expect(totals.get(1)).toBe(24);   // best five of six parts at 4
     // "4 + 2 + 2 + 2 + 2 + 2 + 6": seven responses carded at the first rate, 4.
     for (const q of [2, 3, 4, 5, 6]) expect(totals.get(q), `Q${q}`).toBe(28);
-    expect(totals.get(7)).toBe(40);   // (a) 2 at 4, (b) eight items at 4, four of them withdrawn
+    expect(totals.get(7)).toBe(40);   // (a) 2 at 4, (b) eight items at 4 (four the SEC withdrew, carded)
     for (const q of [8, 9]) expect(totals.get(q), `Q${q}`).toBe(38);   // the drawing priced 3 + 3 beside the ladder
     for (const q of [10, 11, 12, 13]) expect(totals.get(q), `Q${q}`).toBe(60);
     expect(totals.get(14)).toBe(110);   // (a) 30, five notes at 10 (any three), (c) 30

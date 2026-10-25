@@ -14,7 +14,7 @@ Independent visual sweep (2026-10-14), every page rendered and read:
 The paper's shape: any five of Section A's six questions, any two of Section
 B's three, any four of Section C's six; Q14 and Q15 are each any two of (a),
 (b), (c), and Q14(b) is "notes on three of" five topics. Every printed
-question is carded, bar two parts the SEC itself withdrew (below).
+question is carded, including two parts the SEC itself withdrew (below).
 
 Tariffs are the scheme's ordered splits, carded at their first rate: Q1 is
 the best five of six at 4 (its (a) "2 + 2"); Q2-Q6 "4 + 2 + 2 + 2 + 2 + 2 +
@@ -23,10 +23,12 @@ the best five of six at 4 (its (a) "2 + 2"); Q2-Q6 "4 + 2 + 2 + 2 + 2 + 2 +
 beside drawings the scheme prices on their own (3 + 3). Section C prints a
 mark per row; each Q14(b) topic is "4 + 3 + 3".
 
-Q7(b)(iii) and (iv) are reviewed and EXCLUDED: the scheme's footnote says
-they were deemed outside the range of the syllabus and not examinable, and
-their marks were credited to every candidate who attempted Q7(b). Their
-printed "possible answers" are recorded in the audit, never carded.
+Q7(b)(iii) and (iv): the scheme's footnote says they were deemed outside the
+range of the syllabus and not examinable, and their marks were credited to
+every candidate who attempted Q7(b). First kept out of the bank (2026-10-14);
+carded as printed since 2026-10-24 under Alex's rule that a printed ask is
+never left out: each carries the scheme's printed "possible answer" at its
+place on the Q7(b) ladder, with the footnote's effect as the row's note.
 
 Printed choices the scheme marks differently per option are split into
 routes: Q6(c) asthma or bronchitis, Q10(c)(ii) quadrat or transect, Q13(b)(iii)
@@ -174,6 +176,16 @@ WITHDRAWN_EVIDENCE = ('Scheme p11 footnote: "Candidate’s that attempted any pa
                       'marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be '
                       'outside the range of the Biology Syllabus and not examinable. The information presented here '
                       'are possible answers to the questions."')
+
+
+# Alex's rule (2026-10-24): a part the SEC withdrew is still a printed ask, so it
+# is carded as printed, with what the scheme prints for it and a factual note of
+# the footnote's effect -- not kept out of the bank.
+WITHDRAWN_NOTE = ('The SEC deemed this part outside the range of the Biology syllabus and not examinable: '
+                  'every candidate who attempted any part of Q7(b) was credited with its marks. The scheme '
+                  'prints this as a possible answer.')
+WITHDRAWN_DECISION = ('Carded as printed with the scheme\'s possible answer and its place on the Q7(b) ladder; '
+                      'the footnote\'s effect is the row\'s note. ' + WITHDRAWN_EVIDENCE)
 
 
 def _A(page, start, end=None, **kw):
@@ -390,9 +402,9 @@ TASKS = [
       [pt(S('(To test for) reducing sugar'), 4)], 'bio-1-2', 'use-of-benedicts', SQ(11, 'Benedict’s / Fehling’s:'), 4,
       stem=[Q7A]),
 ] + [
-    T(f'7b{r}{n}', f'Q7(b)({r}){n}', 'B', item(9, n, end, anchor, doc='038'), [pt(S(*ans, **sk), 4)], topic, concept,
-      sq, 4, stem=[_A(9, anchor)], decision=EACH_ITEM if not excl else '',
-      **({'excluded': WITHDRAWN, 'evidence': WITHDRAWN_EVIDENCE} if excl else {}))
+    T(f'7b{r}{n}', f'Q7(b)({r}){n}', 'B', item(9, n, end, anchor, doc='038'),
+      [pt(S(*ans, **sk), 4, note=WITHDRAWN_NOTE if excl else None)], topic, concept,
+      sq, 4, stem=[_A(9, anchor)], decision=EACH_ITEM + (' ' + WITHDRAWN_DECISION if excl else ''))
     for r, n, end, anchor, ans, sk, topic, concept, sq, excl in [
         ('i', 1, 'Place a coverslip over the cells?', 'When preparing a sample of cheek cells on a microscope slide',
          ('To prevent (the cells) from drying out or to protect the (objective) lens (from',

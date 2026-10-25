@@ -138492,7 +138492,7 @@
      "notes": null
     },
     {
-     "status": "excluded",
+     "status": "carded",
      "key": "7biii1",
      "id": "bio-2019-hl-q7-b-iii-1",
      "questionRef": "2019 HL Q7(b)(iii)1",
@@ -138521,11 +138521,11 @@
      "sourcePages": null,
      "pairingScore": 0.57,
      "pairedBy": "The scheme heads each answer with a compressed reprint of the ask.",
-     "decision": null,
+     "decision": "A list the scheme prices entry by entry: one card per entry. Carded as printed with the scheme's possible answer and its place on the Q7(b) ladder; the footnote's effect is the row's note. Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
      "notes": null
     },
     {
-     "status": "excluded",
+     "status": "carded",
      "key": "7biii2",
      "id": "bio-2019-hl-q7-b-iii-2",
      "questionRef": "2019 HL Q7(b)(iii)2",
@@ -138554,11 +138554,11 @@
      "sourcePages": null,
      "pairingScore": 0.44,
      "pairedBy": "The scheme heads each answer with a compressed reprint of the ask.",
-     "decision": null,
+     "decision": "A list the scheme prices entry by entry: one card per entry. Carded as printed with the scheme's possible answer and its place on the Q7(b) ladder; the footnote's effect is the row's note. Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
      "notes": null
     },
     {
-     "status": "excluded",
+     "status": "carded",
      "key": "7biv1",
      "id": "bio-2019-hl-q7-b-iv-1",
      "questionRef": "2019 HL Q7(b)(iv)1",
@@ -138586,11 +138586,11 @@
      "questionFigure": null,
      "sourcePages": null,
      "pairingScore": 1.0,
-     "decision": null,
+     "decision": "A list the scheme prices entry by entry: one card per entry. Carded as printed with the scheme's possible answer and its place on the Q7(b) ladder; the footnote's effect is the row's note. Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
      "notes": null
     },
     {
-     "status": "excluded",
+     "status": "carded",
      "key": "7biv2",
      "id": "bio-2019-hl-q7-b-iv-2",
      "questionRef": "2019 HL Q7(b)(iv)2",
@@ -138619,7 +138619,7 @@
      "sourcePages": null,
      "pairingScore": 0.5,
      "pairedBy": "The scheme heads each answer with a compressed reprint of the ask.",
-     "decision": null,
+     "decision": "A list the scheme prices entry by entry: one card per entry. Carded as printed with the scheme's possible answer and its place on the Q7(b) ladder; the footnote's effect is the row's note. Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
      "notes": null
     },
     {
@@ -142226,7 +142226,7 @@
      "notes": null
     }
    ],
-   "cardCount": 148,
+   "cardCount": 152,
    "baseTaskCount": 147,
    "figures": [
     "biology-2019-hl-q11-pedigree",
@@ -142301,7 +142301,8 @@
        "biology-higher-new-course-12-chemicals-of-life-biomolecules",
        "biology-higher-new-course-13-unit-of-life-cells",
        "biology-higher-new-course-26-transport-across-membranes",
-       "biology-higher-old-course-plant-transport"
+       "biology-higher-old-course-plant-transport",
+       "biology-higher-new-course-24-plant-responses"
       ],
       "taskTopics": [
        "bio-1-2",
@@ -142506,52 +142507,7 @@
       "column": "Endometriosis"
      }
     ],
-    "excluded": [
-     {
-      "key": "7biii1",
-      "id": "bio-2019-hl-q7-b-iii-1",
-      "questionRef": "2019 HL Q7(b)(iii)1",
-      "total": 4,
-      "reason": "Not examinable: the SEC deemed Q7(b)(iii) and (iv) outside the range of the Biology syllabus and credited their marks to every candidate who attempted any part of Q7(b).",
-      "evidence": "Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
-      "schemeRows": [
-       "(To make solutions of) different concentrations (of IAA)"
-      ]
-     },
-     {
-      "key": "7biii2",
-      "id": "bio-2019-hl-q7-b-iii-2",
-      "questionRef": "2019 HL Q7(b)(iii)2",
-      "total": 4,
-      "reason": "Not examinable: the SEC deemed Q7(b)(iii) and (iv) outside the range of the Biology syllabus and credited their marks to every candidate who attempted any part of Q7(b).",
-      "evidence": "Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
-      "schemeRows": [
-       "To measure the growth (of root or shoot accurately)"
-      ]
-     },
-     {
-      "key": "7biv1",
-      "id": "bio-2019-hl-q7-b-iv-1",
-      "questionRef": "2019 HL Q7(b)(iv)1",
-      "total": 4,
-      "reason": "Not examinable: the SEC deemed Q7(b)(iii) and (iv) outside the range of the Biology syllabus and credited their marks to every candidate who attempted any part of Q7(b).",
-      "evidence": "Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
-      "schemeRows": [
-       "To act as a selectively permeable membrane or to mimic the plasma membrane"
-      ]
-     },
-     {
-      "key": "7biv2",
-      "id": "bio-2019-hl-q7-b-iv-2",
-      "questionRef": "2019 HL Q7(b)(iv)2",
-      "total": 4,
-      "reason": "Not examinable: the SEC deemed Q7(b)(iii) and (iv) outside the range of the Biology syllabus and credited their marks to every candidate who attempted any part of Q7(b).",
-      "evidence": "Scheme p11 footnote: \"Candidate’s that attempted any part of Q7(b), were credited with the marks assigned for parts (iii) and (iv) for these questions. These questions were deemed to be outside the range of the Biology Syllabus and not examinable. The information presented here are possible answers to the questions.\"",
-      "schemeRows": [
-       "Mass of tubing increased (or decreased) or tubing got fuller (or less full) or increased turgidity"
-      ]
-     }
-    ]
+    "excluded": []
    }
   },
   "2018-hl": {
