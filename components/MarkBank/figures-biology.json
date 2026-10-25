@@ -163,6 +163,333 @@
    327
   ]
  },
+ "biology-2013-ol-q10-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q10-dna.png",
+  "md5": "1a4489382a9d6175f5aa842ae784a411",
+  "alt": "Diagram of a short section of DNA: two backbones of grey pentagons lettered S alternating with black circles lettered P, joined across by three pairs of boxed letters with dashed lines between each pair: A paired with X at the top, G with Y in the middle, and X with A at the bottom.",
+  "lettersVisible": [
+   "A",
+   "G",
+   "P",
+   "S",
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q10(b)(i) — X",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   130,
+   185,
+   340,
+   325
+  ]
+ },
+ "biology-2013-ol-q11-carbon": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q11-carbon.png",
+  "md5": "ee1e8dc1d4891f1f18d54ae249173f5e",
+  "alt": "Diagram of the carbon cycle drawn as broad grey arrows between labelled boxes: CO2 in atmosphere at the top, PLANTS at the right, ANIMALS in the middle, DECOMPOSERS at the left and FOSSIL FUELS at the bottom. Five empty boxes lettered A to E sit on the arrows: B on the arrow curving down from CO2 in atmosphere to PLANTS; D on the arrow from PLANTS to ANIMALS; E beside the arrows rising from ANIMALS and from PLANTS to CO2 in atmosphere; A on the arrow running from PLANTS round under ANIMALS to DECOMPOSERS; C on the broad arc that runs from FOSSIL FUELS round the left-hand side and over the top into CO2 in atmosphere, which an arrow rising from DECOMPOSERS joins. Two boxes are filled in: Death on the arrow from ANIMALS to DECOMPOSERS, and Changed to on the arrow from PLANTS down to FOSSIL FUELS.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q11(b)(v) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   55,
+   360,
+   462,
+   540
+  ]
+ },
+ "biology-2013-ol-q12-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q12-cycle.png",
+  "md5": "3f0bb2bfe38c150030503bc1dc69857d",
+  "alt": "Diagram of the menstrual cycle as a ring of 28 numbered day boxes round a circle labelled MENSTRUAL CYCLE. Days 1 to 5 are dotted and the shaded sector inside them is labelled Menstruation; arrows run clockwise round the inside. Inside the ring the diagram prints \"Lining repairs and builds up again\" after menstruation, a two-headed arrow labelled Fertile period across the lower days and \"Implantation may happen\" on the left; a line from day 14 is labelled Ovulation.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(c)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   165,
+   374,
+   380,
+   588
+  ]
+ },
+ "biology-2013-ol-q12-foetus": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q12-foetus.png",
+  "md5": "b2adc91575161340bc6640f0588d0fab",
+  "alt": "Drawing of a foetus curled up head-down inside the womb, its umbilical cord coiled about it; a thick speckled layer on the inner wall of the womb at the left is labelled Placenta; the narrow neck of the womb is at the bottom.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q12(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   55,
+   95,
+   272,
+   252
+  ]
+ },
+ "biology-2013-ol-q13-membrane": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q13-membrane.png",
+  "md5": "870b786b2d5f1abc2a5e73d0e622d199",
+  "alt": "Diagram of a section of cell membrane: two rows of small units, each a round head with a two-line tail, the heads facing out along the top and the bottom, with three large dotted oval bodies set among them, two of them running right through from top to bottom. B points to the top of the dotted oval body at the left; A points to the tail of one of those units at the upper right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q13(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   145,
+   122,
+   368,
+   246
+  ]
+ },
+ "biology-2013-ol-q14-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q14-ear.png",
+  "md5": "f3b24ad734e639444867ef7c1956719e",
+  "alt": "Drawing of the human ear in section, with printed labels Ear lobe (the outer ear flap at the left), Middle ear (pointing to the small bones in the middle), Eustachian tube (a tube running down from the middle ear) and Auditory nerve (nerve fibres at the right). A points to a set of looped tubes at the upper right; B points to the coiled, snail-shaped structure at the lower right.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q14(c)(i) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   97,
+   460,
+   536,
+   652
+  ]
+ },
+ "biology-2013-ol-q14-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q14-joint.png",
+  "md5": "ebd070db8946ac73e22e9cc56a535af1",
+  "alt": "Section through a joint between the ends of two bones, each filled with a speckled spongy pattern, the joint enclosed on each side by a dotted layer. A points to the dotted layer at the left side of the joint, B to the dark band capping the end of the upper bone, C to the space between the two bone ends.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q14(a)(i) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   100,
+   80,
+   265,
+   203
+  ]
+ },
+ "biology-2013-ol-q15-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q15-flower.png",
+  "md5": "b5dd9a046d271a90788f26fa61d2e9ec",
+  "alt": "Section through a flower: wide petals spreading out from a cup; inside it a long central stalk with a knob at its tip rises from a swollen base holding small round bodies, among several shorter stalks each topped by a small head; small leaf-like parts sit below the petals at the base. A points to the knob at the tip of the long central stalk, B to the head of one of the shorter stalks, C to the swollen base with the round bodies, D to a small leaf-like part at the base.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q15(a)(i) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   145,
+   86,
+   320,
+   245
+  ]
+ },
+ "biology-2013-ol-q15-vascular": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q15-vascular.png",
+  "md5": "dc9db7355cb9867caf1d56c2148c0e1b",
+  "alt": "Two drawings side by side, lettered A and B. A: two long tubes side by side, their walls strengthened with rings and spirals, labelled Lignin. B: a long tube with dotted cross-walls at its ends, labelled Sieve plate and Sieve tube, with a narrow cell beside it labelled Companion cell with dense cytoplasm.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q15(c)(i) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   95,
+   490,
+   450,
+   652
+  ]
+ },
+ "biology-2013-ol-q2-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q2-plant.png",
+  "md5": "3404ded2baf5d83ac1739040a5446462",
+  "alt": "Drawing of a flowering plant: an upright main shoot with leaves and clusters of flowers at its top and on side branches, a dashed horizontal line across the plant near the middle, and a branching system below the line. A points to the upright main shoot above the dashed line, B to a leaf on a side branch at the right, C to the main axis just below the dashed line.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q2(a) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   105,
+   430,
+   300,
+   582
+  ]
+ },
+ "biology-2013-ol-q4-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q4-cycle.png",
+  "md5": "4c237efffb8865deec731d087039e4ba",
+  "alt": "A circle divided by two lines from its centre into a small wedge at the right, lettered A, and the rest of the circle, lettered B; a curved arrow drawn around the centre points clockwise.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q4(a) — Cell division",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   150,
+   340,
+   350,
+   520
+  ]
+ },
+ "biology-2013-ol-q5-table": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q5-table.png",
+  "md5": "a69419873ed862c266dc02bcf803950c",
+  "alt": "Question 5 as printed: the instruction, then the list Amylase (struck through), Temperature, Substrate, Immobilised, Reusable, Protein above a two-column table. Column A lists \"An example of an enzyme.\" (answered Amylase in Column B as the example) and parts (a) to (e); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q5(a)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   25,
+   525,
+   262
+  ]
+ },
+ "biology-2013-ol-q6-kidney": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q6-kidney.png",
+  "md5": "99175eb5c541a695b85c1e3c90b7fdca",
+  "alt": "Vertical section through a kidney, shaded in greys: a pale outer band round the edge, a ring of darker cone-shaped segments inside it, a paler central space, blood vessels entering at the indented side on the left and a tube leaving downwards from there. A points to the pale outer band at the top, B to one of the dark cone-shaped segments, C to the tube leaving at the lower left.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q6(a) — A",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   110,
+   330,
+   350,
+   452
+  ]
+ },
+ "biology-2013-ol-q7-apparatus": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q7-apparatus.png",
+  "md5": "28971a60a63ec5238bdaa1856aa439ce",
+  "alt": "Apparatus as drawn: a bulb in a lamp holder, labelled strong light source, at the left end of a ruler labelled metre stick; near the far end of the ruler a beaker of water (labelled water) holding a thermometer and a test tube; in the test tube, in water, a plant with a cut stem (labels: cut stem, water, plant, thermometer). Beneath it the paper prints \"Tick the factor you will refer to.\" beside a two-row table, Light intensity and CO2 concentration, each with an empty box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q7(b)(i)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   75,
+   188,
+   485,
+   430
+  ]
+ },
+ "biology-2013-ol-q9-quadrat": {
+  "src": "/exam-figures/biology/markbank/biology-2013-ol-q9-quadrat.png",
+  "md5": "fbe8c679486a0d7b9abf60acfffe8724",
+  "alt": "Photograph of a square frame of white strips laid flat on grass, divided by white strings into a grid of smaller squares.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 OL Q9(b)(ii)",
+  "year": 2013,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2013 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   410,
+   518,
+   531,
+   610
+  ]
+ },
  "biology-2014-hl-q10c-genotype": {
   "src": "/exam-figures/biology/markbank/biology-2014-hl-q10c-genotype.png",
   "md5": "4b78798f98c34afd47f536a03457db97",

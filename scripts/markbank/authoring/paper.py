@@ -188,6 +188,15 @@ MISPRINTS = {
         ('3. Animal has three pairs of legs', lambda t: t[3:]),
         ('4. Animal has long cylindrical body', lambda t: t[3:]),
     ],
+    # 2013 OL page 11 prints Question 13's third part as "(b)" again ("(b)
+    # Answer the following questions in relation to an investigation you
+    # carried out into fermentation by yeast cells."), after (a) and the
+    # membrane (b); the scheme (p12) numbers it (c). Read as a second (b), its
+    # five romans merged into the membrane (b)'s first five.
+    ('biology', 2013, 'ol'): [
+        ('(b) Answer the following questions in relation to an investigation you carried out into fermentation',
+         lambda t: '(c)' + t[3:]),
+    ],
 }
 # A question head the text layer welds onto the END of the block before it,
 # with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL
@@ -247,6 +256,12 @@ WELDED_HEADS = {
     # it, the head split before "1." strands it there, and Q9(b)(ii) and its
     # two numbered asks filed as the tail of Q9(b)(i).
     ('biology', 2014, 'hl'): ['Where did you find the semilunar valves during the dissection? ' + '_' * 75],
+    # 2013 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true (T) or false (F)" to "4. The diagram shows the cell
+    # cycle.": Q3(g)'s row ends in its circle options "T F", so the "4." was
+    # never split off, Question 4's head filed as the tail of Q3(g), and its
+    # (a)-(d) (the next block) were read as repeats of Q3's letters and lost.
+    ('biology', 2013, 'ol'): ['(g) Grazing food chains begin with animals. T F'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
