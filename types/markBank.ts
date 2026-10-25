@@ -885,12 +885,59 @@ export interface PoliticsCriterion {
   bands?: Array<{ label: string; marks: number[]; guidance: string }>;
 }
 
+/** One quality band of a Politics ladder as the scheme prints it:
+ * "Very good explanation" at 8–10M, with its descriptor where printed. */
+export interface PoliticsBand {
+  label: string;
+  marks: number[];
+  descriptor?: string;
+}
+
+export interface PoliticsAnswerRow {
+  id: string;
+  text: string;
+  marks: number;
+  /** The scheme prices this answer without printing one: the row shows the
+   * criterion's own words and the reveal says any correct answer scores. */
+  tariffOnly?: boolean;
+}
+
+/** One independently priced part of a Politics answer, cut from the lifted
+ * scheme block by cards/politics-and-society/answers.ts: a quality ladder the
+ * student places themselves on, or exact answers they claim. */
+export interface PoliticsPart {
+  id: string;
+  /** The criterion this part scores. */
+  label: string;
+  /** The scheme's own words for what the part asks ("Two valid actions"). */
+  caption?: string;
+  max: number;
+  bands?: PoliticsBand[];
+  rows?: PoliticsAnswerRow[];
+  /** How many rows count when the part is a list of exact answers. */
+  count?: number;
+  /** "3 marks + 2 marks" over a list of answers: marks for 1..count rows claimed. */
+  ladder?: number[];
+}
+
+export interface PoliticsAllocation {
+  parts: PoliticsPart[];
+  /** The scheme's indicative points ("Responses may make reference to"), shown as a list; never a checklist. */
+  examples: string[];
+  /** Lifted scheme sentences that are rules, not answers. */
+  directions: string[];
+}
+
 export interface PoliticsRubric {
   system: 'politics';
   taskRequirements: string[];
   criteria: PoliticsCriterion[];
   /** Shared published guidance, shown once even when several criteria apply. */
   schemeGuidance?: string[];
+  /** The guidance and bands as placeable ladders and claimable rows, where
+   * cards/politics-and-society/answers.ts could cut them so the parts add up
+   * to the card. Absent: the lines show as a list over mark buttons. */
+  allocation?: PoliticsAllocation;
   markingGuideNote: string;
   /** Exact scheme pages remain available after reveal, including grade grids. */
   schemePages: number[];

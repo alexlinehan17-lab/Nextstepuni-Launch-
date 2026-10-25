@@ -1,15 +1,41 @@
-.mb-politics-rubric { color: var(--mb-ink); font-size: 13px; line-height: 1.6; }
+.mb-politics-rubric { color: var(--mb-ink); font-size: 13px; line-height: 1.5; }
 .mb-politics-rubric .mb-politics-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .mb-politics-rubric h3 { font-family: Georgia, serif; font-size: 21px; line-height: 1.3; margin: 5px 0 12px; }
-.mb-politics-rubric > section { border-top: 1px solid var(--mb-hairline, #a8a49c); margin-top: 18px; padding-top: 16px; }
-.mb-politics-criterion-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.mb-politics-task { margin: 0 0 12px; color: var(--mb-muted); font-size: 12px; }
+.mb-politics-caption { margin: 0 0 8px; color: var(--mb-muted); font-size: 12px; }
+
+/* Parts (claim-rows.css gives the rows, chips and directions). */
+.mb-politics-parts { display: grid; gap: 12px; }
+.mb-politics-part { display: grid; gap: 7px; padding: 10px 10px 8px; border-radius: 11px; border: 1px solid var(--mb-border); }
+.mb-politics-part-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mb-politics-part-head h4 { margin: 0; min-width: 0; display: grid; gap: 2px; font: 650 13px/1.35 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
+.mb-politics-part-head h4 small { font: 400 11.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); overflow-wrap: anywhere; }
+.mb-politics-part-chip { flex: none; white-space: normal; text-align: right; max-width: 45%; line-height: 1.5; padding: 2px 6px; }
+.mb-politics-part-total { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; padding-top: 2px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-politics-part-total strong { font: 750 13px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
+
+/* The scheme's indicative points: a visible list, never a checklist. */
+.mb-politics-examples { padding: 10px 12px; border-radius: 11px; background: var(--mb-raised); border: 1px solid var(--mb-border); }
+.mb-politics-examples strong { display: block; font: 700 10px/1.4 'DM Sans', system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--mb-ink-2); }
+.mb-politics-examples ul { margin: 6px 0; padding-left: 17px; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-ink-2); display: grid; gap: 3px; }
+.mb-politics-examples small { display: block; font: 400 11px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+
+/* The lifted block as a list when it could not be cut. */
+.mb-politics-fallback { margin: 0 0 14px; }
+.mb-politics-guide { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; }
+.mb-politics-guide-point { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 6px; padding: 8px 10px; border: 1px solid var(--mb-border); border-radius: 9px; background: var(--mb-paper); overflow-wrap: anywhere; }
+.mb-politics-guide-point > span:first-child { color: var(--mb-label); font-weight: 700; }
+.mb-politics-guide-note { color: var(--mb-muted); font-size: 12px; padding: 1px 0; overflow-wrap: anywhere; }
+
+.mb-politics-criterion { border-top: 1px solid var(--mb-border); margin-top: 14px; padding-top: 12px; display: grid; gap: 7px; }
+.mb-politics-criterion-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .mb-politics-criterion-heading h4 { font-size: 15px; line-height: 1.4; margin: 0; }
-/* Keep the selected mark distinct from the product shell's important field defaults. */
-.mark-bank-theme .mb-politics-rubric .mb-politics-criterion-heading select { min-height: 42px; min-width: 94px; padding: 8px 12px; border: 2px solid #252525 !important; border-radius: 8px !important; background-color: #f5a04a !important; color: #252525 !important; font-size: 14px; font-weight: 700; cursor: pointer; }
-.mb-politics-guidance { white-space: pre-line; margin: 10px 0; }
-.mb-politics-selected-band { margin: 12px 0; }
-.mb-politics-rubric summary { display: list-item; width: fit-content; border: 1.5px solid currentColor; border-radius: 7px; padding: 8px 12px; font-weight: 600; cursor: pointer; }
-.mb-politics-rubric dt { font-weight: 700; margin-top: 10px; }
-.mb-politics-rubric dd { margin: 2px 0 12px; }
-.mb-politics-total { display: flex; justify-content: space-between; gap: 12px; border-top: 2px solid currentColor; padding-top: 14px; margin-top: 20px; }
-.mb-politics-total strong { font-size: 20px; }
+.mb-politics-guidance { white-space: pre-line; margin: 4px 0; color: var(--mb-muted); }
+.mb-politics-slider > div:first-child { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-politics-slider > div:first-child strong { font: 750 18px/1 'Roboto Mono', ui-monospace, monospace; color: var(--mb-ink); font-variant-numeric: tabular-nums; }
+.mb-politics-slider input { width: 100%; margin: 9px 0 5px; accent-color: var(--mb-ink); }
+.mb-politics-slider-ends { display: flex; justify-content: space-between; color: var(--mb-label); font: 650 9.5px/1 'Roboto Mono', ui-monospace, monospace; }
+
+.mb-politics-total { display: flex; justify-content: space-between; gap: 12px; border-top: 2px solid currentColor; padding-top: 14px; margin-top: 16px; }
+.mb-politics-total strong { font-size: 20px; font-variant-numeric: tabular-nums; }
+.mb-politics-note { color: var(--mb-muted); margin: 12px 0 0; font-size: 12px; }
