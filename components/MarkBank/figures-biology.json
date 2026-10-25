@@ -180,6 +180,269 @@
    165
   ]
  },
+ "biology-2014-ol-q10-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q10-cell.png",
+  "md5": "388edab48524ecc99d088e5be7226228",
+  "alt": "Drawing of a cell undergoing division: a round cell with a small dot at its top and at its bottom, the top one labelled Centriole; curved fibres run between the two dots, one labelled Spindle fibre; four X-shaped bodies are lined up across the middle of the cell on the fibres, the right-hand one labelled Chromosome and the point where its arms cross labelled Centromere.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q10(c)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   185,
+   312,
+   445,
+   442
+  ]
+ },
+ "biology-2014-ol-q11-meerkat": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q11-meerkat.png",
+  "md5": "2703dab649adea0ea1c224607e13e194",
+  "alt": "Black-and-white photograph of a meerkat, its head and upper body in profile facing right, against a dark background.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q11(b)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   205,
+   134,
+   405,
+   293
+  ]
+ },
+ "biology-2014-ol-q12-nervous": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q12-nervous.png",
+  "md5": "3e1d6419350c20a69a18230b2def9f02",
+  "alt": "Outline drawing of a human figure from the front showing the nervous system: a dark mass in the head, a line running from it down the middle of the back, and many fine branching lines spreading from that line through the trunk, arms and legs. A points to the dark mass in the head, B to the line down the middle of the back.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q12(b)(i) — A",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   424,
+   96,
+   592,
+   362
+  ]
+ },
+ "biology-2014-ol-q13-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q13-leaf.png",
+  "md5": "9cc74d33c9403bdc9197815ef86936f1",
+  "alt": "Drawing of a section through a leaf: a row of flat cells along the top surface and another along the bottom, a layer of tall, closely packed, column-shaped cells under the top row, loosely arranged rounded cells with spaces between them below that, and a round bundle of small thick-walled cells in the middle. B points to the layer of tall column-shaped cells; A points to a gap between two cells in the bottom row.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q13(b)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   140,
+   167,
+   410,
+   352
+  ]
+ },
+ "biology-2014-ol-q14-arm": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q14-arm.png",
+  "md5": "17efd57b92068660b293419dc92ee722",
+  "alt": "Drawing of the bones and muscles of a human arm bent at the elbow, the upper arm upright and the forearm level, with a flat bone at the top labelled Shoulder blade and a forearm bone labelled Radius. A points to the muscle on the front of the upper arm (the side the forearm points to), B to the muscle on the back of the upper arm.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q14(a)(i) — A",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   138,
+   76,
+   396,
+   249
+  ]
+ },
+ "biology-2014-ol-q14-male": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q14-male.png",
+  "md5": "c88b71623c890c73c50b422ab2d5cf5c",
+  "alt": "Side-view drawing of the human male reproductive system: a rounded sac at the top; small glands, one lumpy and one coiled, behind and below it; a tube that loops up from a pouch at the bottom, over the sac and down again into a long organ hanging at the front; and an oval body inside the pouch with a coiled structure on its side. A points to the outer edge of the long organ at the front, B to the tube running down inside that organ, C to the tube looping up from the pouch, D to the oval body inside the pouch.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q14(c)(i) — A",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   361,
+   555,
+   580,
+   733
+  ],
+  "maskedFurniture": [
+   [
+    361,
+    552,
+    385,
+    568
+   ]
+  ]
+ },
+ "biology-2014-ol-q15-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q15-eye.png",
+  "md5": "a766a7baf7890092ec7d1ed1bb97ec31",
+  "alt": "Section through the human eye: a round eyeball with layered walls, a clear oval body near the front held between two dark bands, a curved clear bulge at the very front, and a thick stalk leaving the back of the eye at the right. B points to the clear oval body near the front; A points to the inner layer lining the back wall of the eye.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q15(a)(i) — A",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   214,
+   69,
+   402,
+   217
+  ]
+ },
+ "biology-2014-ol-q15-plant": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q15-plant.png",
+  "md5": "690dac65317b2069973fa8b8a6076347",
+  "alt": "A leafy plant with its roots in a test tube of liquid: the shoot above the tube is labelled Stem and leaves, a layer on top of the liquid near the mouth of the tube is labelled Oil, and the liquid round the roots is labelled Red dye in water.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q15(c)(i)1",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   278,
+   452,
+   446,
+   618
+  ]
+ },
+ "biology-2014-ol-q3-female": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q3-female.png",
+  "md5": "c4aba4a87500ebaa5d823a8d097d43e5",
+  "alt": "Drawing of the human female reproductive system seen from the front: a broad central organ with thick shaded walls around a narrow cavity shaped like an upside-down triangle, narrowing below into a neck that opens into a tube running down to the bottom edge; from each upper corner a long curved tube with a white channel arches outwards and down to a fringed open end beside an oval body, one on each side. A points to the tube at the bottom, B to the thick wall of the central organ, C to the oval body on the left, D to the curved tube at the upper right, E to the inner lining of the central cavity.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q3(a) — A",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   184,
+   66,
+   444,
+   259
+  ]
+ },
+ "biology-2014-ol-q4-table": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q4-table.png",
+  "md5": "cd2f4a87489bb77616237838f6315c1e",
+  "alt": "Question 4 as printed: the instruction, then the list Skin graft, Dermal, Organ, Leaf, Tissue (struck through), In vitro growth above a two-column table: Column A lists \"A group of cells with the same function\" (answered Tissue in Column B as the example) and parts (a) to (e); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q4(a)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   40,
+   517,
+   590,
+   776
+  ]
+ },
+ "biology-2014-ol-q5-bacteria": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q5-bacteria.png",
+  "md5": "d4e28f196829697f8c5f769f160526bc",
+  "alt": "Three bacterial shapes: A, a long, thin, wavy strand; B, a single elongated shape with rounded ends; C, a curved chain of small round cells.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q5(a) — Cocci",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   114,
+   57,
+   384,
+   176
+  ]
+ },
+ "biology-2014-ol-q6-chain": {
+  "src": "/exam-figures/biology/markbank/biology-2014-ol-q6-chain.png",
+  "md5": "5f8cc31c54db0aba36773710e1950eb2",
+  "alt": "The food chain as printed: Grass, an arrow, Rabbit, an arrow, Fox.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 OL Q6(b)(i)",
+  "year": 2014,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2014 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   95,
+   503,
+   380,
+   527
+  ]
+ },
  "biology-2015-hl-q10c-birds": {
   "src": "/exam-figures/biology/markbank/biology-2015-hl-q10c-birds.png",
   "md5": "a885fb7165e3c85ea30d1a534c7d4122",

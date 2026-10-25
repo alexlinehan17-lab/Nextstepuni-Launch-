@@ -67,7 +67,7 @@ SUBJECTS = {
     # admits one earlier sitting at a time, as each is carded paper by paper
     # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
     # its levels are.
-    'biology': {'mode': 'merged', 'from': 2015, 'also': [(2014, 'hl')]},
+    'biology': {'mode': 'merged', 'from': 2014, 'also': []},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},

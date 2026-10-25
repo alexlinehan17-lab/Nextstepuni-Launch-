@@ -1825,6 +1825,12 @@ type FirstCarded = {
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2014-ol': {
+    tasks: 161, cards: 161,
+    sources: { "paper": ['276a219dd85252dfcdfc968e12c1e3e009b3a17cf59e6211f925537bfee15142', 16], "scheme": ['05c884d7539d58b5d88ac0897aa4ddbd57a7113598d0afa63d72cf0f14fb8240', 12] },
+    routes: {  },
+    wholeParts: {  },
+  },
   '2014-hl': {
     tasks: 139, cards: 139,
     sources: { "paper": ['94a39630e704fc6acec5ff8e78d44757f9121ceea16ab3ab4d3df87a34e4dbba', 16], "scheme": ['3b597c53e9e2a4570891c681ce06d873d5616124a58f0101505ab2eae9adb576', 20] },
