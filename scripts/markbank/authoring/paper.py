@@ -186,6 +186,20 @@ INLINE_MARKER = re.compile(
     r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s+\u0394))'
     r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
     '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
+# Chemistry goes further: a "(g)" or "(l)" written straight after a formula is
+# that formula's state, whatever follows it. 2019 HL Q9 ends its stem's
+# equation "2A (g) -> B (g) + 3C (g)" and runs straight on with "The graph
+# shows that ...", and 2010 HL Q7 breaks its equilibrium "PCl5 (g) <-> PCl3 (g)
+# + Cl2 (g)" across lines the same way: each read as a part (g) holding the
+# equation, an ask neither paper prints. No Chemistry part from 2010 to 2026
+# opens straight after a letter or digit, so no real part is lost.
+# Subject-gated: across the other subjects the same rule moves the readings of
+# Biology OL 2011-2018 and Physics 2026 HL Q4, which are those audits' to change.
+STATE_SYMBOL_SUBJECTS = {'chemistry'}
+INLINE_MARKER_STATES = re.compile(
+    r'(?:(?<![A-Za-z0-9\u2080-\u2089])\s|\s(?!\([gl]\)\s))'
+    r'(?=\((?:[a-hj-m]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -898,7 +912,9 @@ class Paper:
                 prefix = ''
                 if head:
                     prefix, text = head.group(1) + ' ', text[head.end():]
-                pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
+                marker = (INLINE_MARKER_STATES if self.subject in STATE_SYMBOL_SUBJECTS
+                          else INLINE_MARKER)
+                pieces = [p.strip() for p in marker.split(text) if p.strip()]
                 for i, piece in enumerate(pieces):
                     piece = (prefix + piece) if i == 0 else piece
                     if carry:
