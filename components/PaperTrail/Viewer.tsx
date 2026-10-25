@@ -53,7 +53,7 @@ import { fetchPdfCached } from './pdfCache';
 import { clearLoopPlace, loadLoopPlace, saveLoopPlace } from './loopResume';
 import { composeReceipt, downloadReceipt, type LoopReceiptStats } from './receipt';
 import { scanDocument, type CommandToken, type DocTokens, type MarkToken } from './textOverlay';
-import { frequencyFor, siblingsFor, topicLabel, type TopicSibling } from './topics';
+import { frequencyFor, questionLabel, siblingsFor, topicLabel, type TopicSibling } from './topics';
 import { loadAttempt, setMark, setTriage, type GapKind, type SelfMark, type TriageRating } from './attemptStore';
 import { markerLicence, type MarkerLicence } from './trust';
 import { loadCalibration, paceScale } from './wpmStore';
@@ -2686,7 +2686,7 @@ const RevealContent: React.FC<{
                     className="px-2.5 py-1 rounded-full text-[11.5px] font-semibold border-2 transition-transform active:translate-y-0.5"
                     style={{ backgroundColor: '#fff', borderColor: 'rgba(242,107,31,0.35)', color: '#F26B1F' }}
                   >
-                    {s.year} · Q{s.n} →
+                    {s.year} · {questionLabel(s, { short: true })} →
                   </button>
                 ))}
               </div>

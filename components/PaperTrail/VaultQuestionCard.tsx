@@ -26,7 +26,7 @@ import {
   mergePaperAnchorMetadata,
   resolveSibling,
 } from './vaultResolve';
-import { type TopicSibling } from './topics';
+import { questionLabel, type TopicSibling } from './topics';
 import { lensFor } from '../../data/markingLens';
 import { physicalEducationTask } from './physicalEducationTasks';
 const PhysicalEducationTaskCard = lazy(() => import('./PhysicalEducationTaskCard'));
@@ -209,7 +209,7 @@ const LegacyVaultQuestionCard: React.FC<Props> = ({ sibling, saved, onToggleRevi
           {sibling.year}
         </span>
         <span className="min-w-0 truncate text-[13px]" style={{ color: '#7a7068' }}>
-          {[...meta, (state.s === 'ready' && state.q.label) || `Question ${sibling.n}`].join(' · ')}
+          {[...meta, (state.s === 'ready' && state.q.label) || questionLabel(sibling)].join(' · ')}
         </span>
         <span className="flex-1" />
         <button

@@ -708,6 +708,9 @@ def content_hash(subject):
         names = ['factory.ts', 'authored.json']
         if subject == 'english':
             names += ['published-higher.json', 'published-ordinary.json']
+        if subject == 'geography':
+            # The claimable rows a student sees are cut from the lines at load.
+            names += ['allocation.ts']
         for name in names:
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     if subject in ('physical-education', 'applied-maths'):

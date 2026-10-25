@@ -12,7 +12,9 @@
 }
 button.mb-claim-row { grid-template-columns: 20px minmax(0, 1fr) auto; cursor: pointer; }
 button.mb-claim-row:disabled { cursor: default; opacity: .55; }
-.mb-claim-row--stepped { grid-template-columns: minmax(0, 1fr) auto; }
+/* A stepped row keeps at least 9em for its words, so a row with many mark
+   buttons never squeezes its text to one letter per line (Geography #271). */
+.mb-claim-row--stepped { grid-template-columns: minmax(9em, 1fr) auto; }
 .mb-claim-row[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
 .mb-claim-row[data-tone="partial"] .mb-claim-text > span:first-child { color: var(--mb-ink-2); }
 .mb-claim-row[data-tone="deduction"] { border-style: dashed; }

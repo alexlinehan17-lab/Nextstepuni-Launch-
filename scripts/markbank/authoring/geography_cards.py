@@ -41,6 +41,42 @@ from typing import Any, Iterable
 
 import fitz
 
+import geography_review as GR
+import geography_review_2026_hl as REVIEW_2026_HL
+import geography_review_2026_ol as REVIEW_2026_OL
+import geography_review_2025_hl as REVIEW_2025_HL
+import geography_review_2025_ol as REVIEW_2025_OL
+import geography_review_2024_hl as REVIEW_2024_HL
+import geography_review_2024_ol as REVIEW_2024_OL
+import geography_review_2023_hl as REVIEW_2023_HL
+import geography_review_2023_ol as REVIEW_2023_OL
+import geography_review_2022_hl as REVIEW_2022_HL
+import geography_review_2022_ol as REVIEW_2022_OL
+import geography_review_2021_hl as REVIEW_2021_HL
+import geography_review_2021_ol as REVIEW_2021_OL
+import geography_review_2020_hl as REVIEW_2020_HL
+import geography_review_2020_ol as REVIEW_2020_OL
+import geography_review_2019_hl as REVIEW_2019_HL
+import geography_review_2019_ol as REVIEW_2019_OL
+import geography_review_2018_hl as REVIEW_2018_HL
+import geography_review_2018_ol as REVIEW_2018_OL
+import geography_review_2017_hl as REVIEW_2017_HL
+import geography_review_2017_ol as REVIEW_2017_OL
+import geography_review_2016_hl as REVIEW_2016_HL
+import geography_review_2016_ol as REVIEW_2016_OL
+import geography_review_2015_hl as REVIEW_2015_HL
+import geography_review_2015_ol as REVIEW_2015_OL
+import geography_review_2014_hl as REVIEW_2014_HL
+import geography_review_2014_ol as REVIEW_2014_OL
+import geography_review_2013_hl as REVIEW_2013_HL
+import geography_review_2013_ol as REVIEW_2013_OL
+import geography_review_2012_hl as REVIEW_2012_HL
+import geography_review_2012_ol as REVIEW_2012_OL
+import geography_review_2011_hl as REVIEW_2011_HL
+import geography_review_2011_ol as REVIEW_2011_OL
+import geography_review_2010_hl as REVIEW_2010_HL
+import geography_review_2010_ol as REVIEW_2010_OL
+
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -49,8 +85,72 @@ SCHEME_ROOT = os.path.join(ROOT, 'examiner-reports', 'geography', 'schemes')
 OUT = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'geography', 'authored.json')
 CENSUS_OUT = os.path.join(
     ROOT, 'scripts', 'markbank', 'authored', 'geography-census.json')
+REVIEW_AUDIT_OUT = os.path.join(
+    ROOT, 'scripts', 'markbank', 'authored', 'geography-reviewed-audit.json')
+SIZES = os.path.join(ROOT, 'components', 'MarkBank', 'cards', 'sizes.json')
+ATLAS_OUT = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-reviewed-question-runtime.json')
+# The StudyClix heading crosswalk (written by
+# scripts/paper-trail/build-browser-question-parity-crosswalks.ts). Its
+# shared-booklet targets are re-keyed here, Part One to 1000 + n; re-run this
+# generator after that builder.
+LOCAL_CROSSWALK = os.path.join(ROOT, 'data', 'examTopics', 'geography-local-crosswalk.json')
+# A shared 2010-2019 booklet's Part One question files in the Atlas as
+# n = 1000 + its printed number (Part Two keeps n): see geography_atlas_anchors.py.
+PART_ONE_ATLAS_OFFSET = 1000
+CROSSWALK = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-curriculum-crosswalk.json')
+# The exact-question join the Atlas already ships. A reviewed question's row
+# replaces this one at runtime, so the reviewed row must carry every topic the
+# shipped join gave it: a review adds the topics its tasks prove and never
+# takes a question out of a topic a student already browses it under.
+REFERENCE_ATLAS = os.path.join(
+    ROOT, 'data', 'examTopics', 'geography-question-runtime.json')
 
-YEARS = tuple(range(2021, 2027))
+# Sittings whose every page and scheme allocation was independently reviewed.
+# Their cards come from the review ledger, not from the generic reader below.
+REVIEWED = {
+    (2026, 'higher'): REVIEW_2026_HL,
+    (2026, 'ordinary'): REVIEW_2026_OL,
+    (2025, 'higher'): REVIEW_2025_HL,
+    (2025, 'ordinary'): REVIEW_2025_OL,
+    (2024, 'higher'): REVIEW_2024_HL,
+    (2024, 'ordinary'): REVIEW_2024_OL,
+    (2023, 'higher'): REVIEW_2023_HL,
+    (2023, 'ordinary'): REVIEW_2023_OL,
+    (2022, 'higher'): REVIEW_2022_HL,
+    (2022, 'ordinary'): REVIEW_2022_OL,
+    (2021, 'higher'): REVIEW_2021_HL,
+    (2021, 'ordinary'): REVIEW_2021_OL,
+    (2020, 'higher'): REVIEW_2020_HL,
+    (2020, 'ordinary'): REVIEW_2020_OL,
+    (2019, 'higher'): REVIEW_2019_HL,
+    (2019, 'ordinary'): REVIEW_2019_OL,
+    (2018, 'higher'): REVIEW_2018_HL,
+    (2018, 'ordinary'): REVIEW_2018_OL,
+    (2017, 'higher'): REVIEW_2017_HL,
+    (2017, 'ordinary'): REVIEW_2017_OL,
+    (2016, 'higher'): REVIEW_2016_HL,
+    (2016, 'ordinary'): REVIEW_2016_OL,
+    (2015, 'higher'): REVIEW_2015_HL,
+    (2015, 'ordinary'): REVIEW_2015_OL,
+    (2014, 'higher'): REVIEW_2014_HL,
+    (2014, 'ordinary'): REVIEW_2014_OL,
+    (2013, 'higher'): REVIEW_2013_HL,
+    (2013, 'ordinary'): REVIEW_2013_OL,
+    (2012, 'higher'): REVIEW_2012_HL,
+    (2012, 'ordinary'): REVIEW_2012_OL,
+    (2011, 'higher'): REVIEW_2011_HL,
+    (2011, 'ordinary'): REVIEW_2011_OL,
+    (2010, 'higher'): REVIEW_2010_HL,
+    (2010, 'ordinary'): REVIEW_2010_OL,
+}
+
+# 2021-2026 are carded in full. An earlier sitting joins the corpus only once
+# its own review ledger is in REVIEWED; the generic reader never reads it.
+CORE_YEARS = tuple(range(2021, 2027))
+YEARS = tuple(sorted({*CORE_YEARS, *(year for year, _level in REVIEWED)}))
+ID_PREFIX = 'geography-{year}-{short}-'
 LEVELS = ('higher', 'ordinary')
 LEVEL_SHORT = {'higher': 'hl', 'ordinary': 'ol'}
 LEVEL_REF = {'higher': 'HL', 'ordinary': 'OL'}
@@ -60,17 +160,16 @@ PART_TWO_MARKS = {
     'ordinary': {'A': 30, 'B': 40, 'C': 30},
 }
 
-# Paper Trail identities for the common 2026 companion set. The map extract,
-# its legend and the aerial are separate official documents, so cards retain
-# them separately instead of fabricating one combined page.
-COMPANION_SOURCE_FILEIDS = {
-    'map': 'LC005CLPC00EV',
-    'legend': 'LC005CLP003EV',
-    'aerial': 'LC005CLP004EV',
-}
+# The map extract, its legend and the aerial photograph are separate official
+# documents, so cards retain them separately instead of fabricating one
+# combined page. Their identities per year are in COMPANIONS below (CLP003 is
+# the 1:50 000 extract and CLPC00 the legend; they were once attached the wrong
+# way round). Older sittings without a reviewed ledger still hold their
+# companion tasks.
 COMPANION_SOURCE_YEARS = frozenset({2026})
 
-SPACE_CHARS = ('\xa0', '\u2007', '\u202f')
+# U+F020 is the Symbol-font space some schemes and papers set after a bullet.
+SPACE_CHARS = ('\xa0', '\u2007', '\u202f', '\uf020')
 LIGATURES = {
     '\u00ad': '', '\ufb00': 'ff', '\ufb01': 'fi', '\ufb02': 'fl',
     '\ufb03': 'ffi', '\ufb04': 'ffl',
@@ -134,6 +233,13 @@ INLINE_CHOICES: tuple[tuple[re.Pattern[str], tuple[tuple[str, str], ...]], ...] 
         ),
     ),
 )
+
+
+CHOICE_IS_NOT_A_ROUTE = (
+    'Choice is not a route: the student chooses which N of the M printed items '
+    'to answer and the scheme marks each chosen item with the same allocation, '
+    'so the printed question, with every item, is one card. Saved progress '
+    'moves to the card kept on the first printed combination.')
 
 
 def clean_unicode(value: str) -> str:
@@ -566,7 +672,7 @@ def paper_fileids() -> dict[tuple[int, str, int], str]:
     source = """
 import { resolvePaperFileid } from './scripts/markbank/paperIndex.mjs';
 const out = {};
-for (const year of [2021, 2022, 2023, 2024, 2025, 2026]) {
+for (const year of YEARS_JSON) {
   for (const level of ['higher', 'ordinary']) {
     for (const part of [1, 2]) {
       out[`${year}:${level}:${part}`] = resolvePaperFileid(
@@ -577,7 +683,8 @@ for (const year of [2021, 2022, 2023, 2024, 2025, 2026]) {
 process.stdout.write(JSON.stringify(out));
 """
     result = subprocess.run(
-        ['node', '--input-type=module', '-e', source], cwd=ROOT,
+        ['node', '--input-type=module', '-e', source.replace('YEARS_JSON', json.dumps(list(YEARS)))],
+        cwd=ROOT,
         check=True, capture_output=True, text=True)
     raw = json.loads(result.stdout)
     out: dict[tuple[int, str, int], str] = {}
@@ -629,6 +736,8 @@ class Variant:
     question_text: str
     requirements: list[str]
     selection_kind: str
+    # Slugs of the combination cards this one card absorbs (choose-N pools).
+    absorbs: tuple[str, ...] = ()
 
 
 def split_i_ii(question_text: str) -> list[Variant] | None:
@@ -665,7 +774,9 @@ def apply_inline_choices(variant: Variant) -> list[Variant]:
                 next_variants.append(Variant(
                     slug='-'.join(filter(None, (current.slug, choice_slug))),
                     label=' · '.join(filter(None, (current.label, label))),
-                    question_text=pattern.sub(label, current.question_text, count=1),
+                    # The printed question stays verbatim; the option rides in
+                    # questionRef and the task requirement.
+                    question_text=current.question_text,
                     requirements=[*current.requirements, f'Use the printed route: {label}.'],
                     selection_kind=(current.selection_kind + '+inline-choice').strip('+'),
                 ))
@@ -680,10 +791,23 @@ def apply_bullet_choices(variant: Variant) -> list[Variant]:
     choose, items, (first, last) = pool
     lines = variant.question_text.splitlines()
     out: list[Variant] = []
+    if choose >= 2:
+        # Choice is not a route: one card, the printed question verbatim with
+        # every item. It keeps the first printed combination's id.
+        combos = ['-'.join(slug(item, 34) for item in selected)
+                  for selected in itertools.combinations(items, choose)]
+        return [Variant(
+            slug='-'.join(filter(None, (variant.slug, combos[0]))),
+            label=variant.label,
+            question_text=variant.question_text,
+            requirements=list(variant.requirements),
+            selection_kind=(variant.selection_kind
+                            + f'+choose-{choose}-of-{len(items)}-one-card').strip('+'),
+            absorbs=tuple('-'.join(filter(None, (variant.slug, combo))) for combo in combos[1:]),
+        )]
     for selected in itertools.combinations(items, choose):
         labels = ' + '.join(selected)
-        selected_lines = [f'• {item}' for item in selected]
-        question_text = '\n'.join([*lines[:first], *selected_lines, *lines[last + 1:]])
+        question_text = variant.question_text
         out.append(Variant(
             slug='-'.join(filter(None, (variant.slug, *[slug(item, 34) for item in selected]))),
             label=' · '.join(filter(None, (variant.label, labels))),
@@ -708,23 +832,21 @@ def apply_table_choices(variant: Variant) -> list[Variant]:
         'Population dynamics', 'Language', 'Religion',
         'Urban development', 'Rural development',
     )
-    tail = phrase.sub(
-        'Examine the impact of the following two factors',
-        variant.question_text, count=1)
-    out: list[Variant] = []
-    for selected in itertools.combinations(items, 2):
-        labels = ' + '.join(selected)
-        question_text = f'{tail}\n• {selected[0]}\n• {selected[1]}'
-        out.append(Variant(
-            slug='-'.join(filter(None, (
-                variant.slug, *[slug(item, 34) for item in selected]))),
-            label=' · '.join(filter(None, (variant.label, labels))),
-            question_text=question_text,
-            requirements=[*variant.requirements,
-                          f'Use the selected printed route: {labels}.'],
-            selection_kind=(variant.selection_kind + '+choose-2-of-5-table').strip('+'),
-        ))
-    return out
+    # Choice is not a route: one card with the printed question verbatim,
+    # the table's five printed cells on their own line above the ask.
+    combos = ['-'.join(slug(item, 34) for item in selected)
+              for selected in itertools.combinations(items, 2)]
+    table = ' '.join(items)
+    if not variant.question_text.startswith(table + ' '):
+        raise AssertionError(f'table pool not printed as {table!r}')
+    return [Variant(
+        slug='-'.join(filter(None, (variant.slug, combos[0]))),
+        label=variant.label,
+        question_text=' · '.join(items) + '\n' + variant.question_text[len(table) + 1:],
+        requirements=list(variant.requirements),
+        selection_kind=(variant.selection_kind + '+choose-2-of-5-table-one-card').strip('+'),
+        absorbs=tuple('-'.join(filter(None, (variant.slug, combo))) for combo in combos[1:]),
+    )]
 
 
 def variants_for(question_text: str) -> list[Variant]:
@@ -856,6 +978,135 @@ def question_page_source(
     }
 
 
+# The separate official companions of each sitting (map extract, OS legend,
+# aerial photograph), keyed by year. Identities come from Paper Trail's index;
+# each was rendered and checked by eye before it was listed here.
+COMPANIONS: dict[int, dict[str, str | None]] = {
+    2026: {'place': 'Dundalk', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2025's aerial photograph is published only as a JPEG image.
+    2025: {'place': 'Oughterard', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2024: {'place': 'Bantry', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2023: {'place': 'Cavan', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    # 2022's legend and aerial photograph are both published only as JPEGs.
+    2022: {'place': 'Clonmel', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV.jpg',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2021: {'place': 'Foxford', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    2020: {'place': 'Arklow', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    # 2019's map extract, like its aerial photograph, is published only as a JPEG.
+    2019: {'place': 'Templemore', 'map': 'LC005CLP003EV.jpg', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV.jpg'},
+    # 2018's map and legend are published only as JPEGs; Paper Trail files its
+    # aerial photograph as the one-page PDF.
+    2018: {'place': 'Sligo', 'map': 'LC005CLP003EV.jpg', 'legend': 'LC005CLPC00EV.jpg',
+           'aerial': 'LC005CLP004EV'},
+    # 2017's map extract is a one-page PDF holding a 1136 x 784 pixel image.
+    2017: {'place': 'Macroom', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2016's map extract is a one-page PDF holding a 1135 x 783 pixel image.
+    2016: {'place': 'Westport', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2015's legend and aerial photograph are stacked image strips in one-page PDFs.
+    2015: {'place': 'Kenmare', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2014's map extract is eight stacked image strips in a one-page PDF.
+    2014: {'place': 'Dungarvan', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2013's map extract is a one-page PDF holding a 1379 x 1936 image; Paper Trail
+    # stores the aerial photograph turned on its side.
+    2013: {'place': 'Enniscorthy', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    2012: {'place': 'Carrick-on-Shannon', 'map': 'LC005CLP003EV', 'legend': 'LC005CLPC00EV',
+           'aerial': 'LC005CLP004EV'},
+    # 2011: the SEC published no legend sheet with the Dingle map (Paper Trail
+    # holds none and the map sheet carries none); legend-dependent parts are held.
+    2011: {'place': 'Dingle', 'map': 'LC005CLP003EV', 'legend': None,
+           'aerial': 'LC005CLP004EV'},
+    # 2010's companions are JPEGs, and the SEC names are swapped relative to later
+    # years (checked by eye): CLP004 is the Carrick-on-Suir map extract, CLP003
+    # the aerial photograph and CLP000 the legend sheet.
+    2010: {'place': 'Carrick-on-Suir', 'map': 'LC005CLP004EV.jpg', 'legend': 'LC005CLP000EV.jpg',
+           'aerial': 'LC005CLP003EV.jpg'},
+}
+
+
+COMPANION_CACHE = os.path.join(ROOT, 'tmp', 'geography-audit', 'companions')
+STORAGE = ('https://firebasestorage.googleapis.com/v0/b/nextstepuni-app.firebasestorage.app/o/'
+           'papers%2Flc%2Fgeography%2F{year}%2Fpaper%2F{name}?alt=media')
+
+
+def companion_path(year: int, fileid: str, fetch: bool = False) -> str:
+    """The local copy of a companion: the harvested corpus, else a copy of the
+    same Paper Trail storage object kept in a git-ignored cache. Its bytes are
+    checked against the review ledger by the caller."""
+    name = fileid if '.' in fileid else f'{fileid}.pdf'
+    cached = os.path.join(COMPANION_CACHE, f'{year}-{name}')
+    for path in (os.path.join(GR.CORPUS_ROOT, str(year), name), cached):
+        if os.path.exists(path):
+            return path
+    if fetch:
+        import urllib.request
+        os.makedirs(COMPANION_CACHE, exist_ok=True)
+        urllib.request.urlretrieve(STORAGE.format(year=year, name=name), cached)
+        return cached
+    raise AssertionError(
+        f'{year} companion {name} is not available locally; run '
+        'geography_cards.py --fetch-companions')
+
+
+def companion_material(kind: str, year: int = 2026) -> dict[str, Any]:
+    """One separate official companion document, shown as its own source."""
+    files = COMPANIONS[year]
+    if kind == 'map':
+        return {
+            'kind': 'source-illustration',
+            'label': 'OS MAP',
+            'title': 'Official 1:50 000 map extract',
+            'pages': [1],
+            'sourceFileid': files['map'],
+            'attribution': (
+                f'State Examinations Commission Geography {year} Ordnance '
+                'Survey map — © State Examinations Commission.'),
+            'presentationNote': (
+                'The exact official map extract supplied with the '
+                'examination, reproduced without retyping or alteration.'),
+        }
+    if kind == 'legend':
+        return {
+            'kind': 'source-illustration',
+            'label': 'MAP LEGEND',
+            'title': 'Official Ordnance Survey legend',
+            'pages': [1],
+            'sourceFileid': files['legend'],
+            'attribution': (
+                f'State Examinations Commission Geography {year} Ordnance '
+                'Survey legend — © State Examinations Commission.'),
+            'presentationNote': (
+                'The exact official legend supplied with the examination, '
+                'reproduced without retyping or alteration.'),
+        }
+    if kind == 'aerial':
+        return {
+            'kind': 'source-illustration',
+            'label': 'AERIAL PHOTOGRAPH',
+            'title': f"Official {files['place']} aerial photograph",
+            'pages': [1],
+            'sourceFileid': files['aerial'],
+            'attribution': (
+                f'State Examinations Commission Geography {year} aerial '
+                'photograph — © State Examinations Commission.'),
+            'presentationNote': (
+                'The exact official examination photograph, preserved at its '
+                'published resolution in a single-page reader document.'),
+        }
+    raise AssertionError(f'unknown companion {kind}')
+
+
 def companion_sources(
         question: PaperQuestion, year: int) -> list[dict[str, Any]]:
     if year not in COMPANION_SOURCE_YEARS:
@@ -863,48 +1114,9 @@ def companion_sources(
     text = question.question_text
     out: list[dict[str, Any]] = []
     if re.search(r'\bOrdnance Survey map\b', text, re.I):
-        out.extend((
-            {
-                'kind': 'source-illustration',
-                'label': 'OS MAP',
-                'title': 'Official 1:50 000 map extract',
-                'pages': [1],
-                'sourceFileid': COMPANION_SOURCE_FILEIDS['map'],
-                'attribution': (
-                    'State Examinations Commission Geography 2026 Ordnance '
-                    'Survey map — © State Examinations Commission.'),
-                'presentationNote': (
-                    'The exact official map extract supplied with the '
-                    'examination, reproduced without retyping or alteration.'),
-            },
-            {
-                'kind': 'source-illustration',
-                'label': 'MAP LEGEND',
-                'title': 'Official Ordnance Survey legend',
-                'pages': [1],
-                'sourceFileid': COMPANION_SOURCE_FILEIDS['legend'],
-                'attribution': (
-                    'State Examinations Commission Geography 2026 Ordnance '
-                    'Survey legend — © State Examinations Commission.'),
-                'presentationNote': (
-                    'The exact official legend supplied with the examination, '
-                    'reproduced without retyping or alteration.'),
-            },
-        ))
+        out.extend((companion_material('map'), companion_material('legend')))
     if re.search(r'\baerial photograph\b', text, re.I):
-        out.append({
-            'kind': 'source-illustration',
-            'label': 'AERIAL PHOTOGRAPH',
-            'title': 'Official Dundalk aerial photograph',
-            'pages': [1],
-            'sourceFileid': COMPANION_SOURCE_FILEIDS['aerial'],
-            'attribution': (
-                'State Examinations Commission Geography 2026 aerial '
-                'photograph — © State Examinations Commission.'),
-            'presentationNote': (
-                'The exact official examination photograph, preserved at its '
-                'published resolution in a single-page reader document.'),
-        })
+        out.append(companion_material('aerial'))
     return out
 
 
@@ -968,6 +1180,241 @@ def scheme_guidance_for_variant(guidance: list[str], variant: Variant) -> list[s
     return guidance[second:]
 
 
+def canonical_topic_ids() -> set[str]:
+    """Outgoing-syllabus Geography node ids, read from curriculum.ts."""
+    text = open(os.path.join(ROOT, 'curriculum.ts'), encoding='utf-8').read()
+    start = text.rfind('{', 0, text.index('"id": "geography"'))
+    depth = 0
+    for index in range(start, len(text)):
+        depth += {'{': 1, '}': -1}.get(text[index], 0)
+        if depth == 0:
+            subject = json.loads(text[start:index + 1])
+            return {topic['id'] for strand in subject['strands']
+                    for topic in strand['subtopics']}
+    raise AssertionError('Geography curriculum not found')
+
+
+def reviewed_sitting(year: int, level: str, review: Any,
+                     fileids: dict[tuple[int, str, int], str],
+                     topic_ids: set[str], crosswalk: dict[str, list[str]]) -> dict[str, Any]:
+    """Cards, census rows, audit and Atlas rows for one independently reviewed sitting."""
+    sitting = GR.Sitting.open(year, level)
+    short = LEVEL_SHORT[level]
+    for part, document in sitting.papers.items():
+        if len(document) != review.PAPER_PAGES[part]:
+            raise AssertionError(f'{year} {level} Part {part}: {len(document)} pages, '
+                                 f'review covers {review.PAPER_PAGES[part]}')
+        if sorted(review.PAGE_REVIEW[f'paper{part}']) != list(range(1, len(document) + 1)):
+            raise AssertionError(f'{year} {level} Part {part}: unreviewed paper page')
+    if len(sitting.scheme) != review.SCHEME_PAGES or sorted(
+            review.PAGE_REVIEW['scheme']) != list(range(1, review.SCHEME_PAGES + 1)):
+        raise AssertionError(f'{year} {level}: scheme page review incomplete')
+    sources = {}
+    for key, document in (('paper1', sitting.papers[1]), ('paper2', sitting.papers[2]),
+                          ('scheme', sitting.scheme)):
+        name, size = review.EXPECTED_SOURCES[key]
+        if os.path.getsize(document.path) != size:
+            raise AssertionError(f'{year} {level} {key}: bytes changed from {size}')
+        sources[key] = {'fileid': name, 'bytes': size, 'sha256': GR.sha256(document.path),
+                        'pages': len(document)}
+    for part in (1, 2):
+        if fileids[(year, level, part)] + '.pdf' != review.EXPECTED_SOURCES[f'paper{part}'][0]:
+            raise AssertionError(f'{year} {level} Part {part}: Paper Trail file id changed')
+    # A companion the SEC never published for a sitting is None in COMPANIONS
+    # (2011 has no legend sheet); a task that names it then fails loudly below,
+    # so the ledger must hold, not card, any task that depends on it.
+    published = tuple(kind for kind in ('map', 'legend', 'aerial') if COMPANIONS[year][kind])
+    for kind in published:
+        path = companion_path(year, COMPANIONS[year][kind])
+        sources[kind] = {'fileid': os.path.basename(path).split(f'{year}-')[-1],
+                         'bytes': os.path.getsize(path),
+                         'sha256': GR.sha256(path), 'pages': len(fitz.open(path))}
+        expected = review.EXPECTED_SOURCES.get(kind)
+        if expected and (sources[kind]['fileid'], sources[kind]['bytes']) != expected:
+            raise AssertionError(f'{year} {level} {kind}: {sources[kind]} != {expected}')
+    scan = GR.selection_scan(sitting)
+    if scan != review.EXPECTED_SELECTION_SCAN:
+        raise AssertionError(f'{year} {level}: unclassified or stale selection directives '
+                             f'{scan!r}')
+    classified = [item for entry in review.SELECTION_REVIEW for item in entry['scan']]
+    if sorted(map(tuple, classified)) != sorted(map(tuple, scan)):
+        raise AssertionError(f'{year} {level}: selection review does not classify the scan')
+
+    companions = {kind: companion_material(kind, year) for kind in published}
+    cards: list[dict[str, Any]] = []
+    tasks_out, base_tasks, selection_rows = [], [], []
+    absorbed_pairs: list[tuple[str, str]] = []
+    totals: dict[tuple[int, str], int] = {}
+    # Per printed question, each Atlas topic's share of the marks its reviewed
+    # cards carry (alternative routes split their task's marks). Paper Trail
+    # takes a question's primary and secondary syllabus nodes from the row's
+    # order, so a question the shipped join already filed keeps its shipped
+    # order and a question it omitted lists what it mostly examines first.
+    atlas: dict[tuple[int, str], dict[str, float]] = {}
+    for task in review.TASKS:
+        task_cards = GR.build_task_cards(
+            sitting, task, fileids[(year, level, task.part)], companions, topic_ids)
+        for card in task_cards:
+            card_topic = card['topicId']
+            for atlas_id in card['atlasTopicIds']:
+                if not atlas_id.startswith(f'geography-{level}-') or atlas_id not in crosswalk:
+                    raise AssertionError(f"{card['id']}: {atlas_id} is not a {level} Atlas topic")
+            if not any(card_topic in crosswalk[atlas_id] for atlas_id in card['atlasTopicIds']):
+                raise AssertionError(f"{card['id']}: no Atlas topic covers {card_topic}")
+        cards.extend(task_cards)
+        totals[(task.part, task.question)] = totals.get((task.part, task.question), 0) + task.marks
+        number = re.match(r'\d+', task.question).group()
+        weights = atlas.setdefault((task.part, number), {})
+        for card in task_cards:
+            for atlas_id in card['atlasTopicIds']:
+                weights[atlas_id] = weights.get(atlas_id, 0) + card['totalMarks'] / len(task_cards)
+        ref = GR.ref_label(year, level, task)
+        base_tasks.append({'id': task.card_id, 'year': year, 'level': level,
+                           'part': task.part, 'questionRef': ref,
+                           'title': task_cards[0]['stem'].split(' — ')[0],
+                           'status': 'authored'})
+        if task.routes:
+            selection_rows.append({'questionRef': ref, 'classification': 'finite-expanded',
+                                   'variants': len(task_cards),
+                                   'kinds': ['reviewed-printed-route']})
+        absorbed = [(old, task.card_id) for old in task.absorbs] + [
+            (old, route.card_id) for route in task.routes for old in route.absorbs]
+        if absorbed:
+            selection_rows.append({'questionRef': ref, 'classification': 'single-card-choice',
+                                   'variants': len(task_cards),
+                                   'kinds': ['reviewed-choose-n-of-m'],
+                                   'combinationsAbsorbed': len(absorbed)})
+        absorbed_pairs.extend(absorbed)
+        tasks_out.append({
+            'key': task.key, 'questionRef': ref, 'marks': task.marks,
+            'paperPage': task.page,
+            'schemePages': sorted({piece.page for piece in task.scheme}
+                                  | {piece.page for route in task.routes
+                                     for piece in (route.scheme or ())}),
+            'criteria': [{'label': c['label'], 'maxMarks': c['maxMarks']}
+                         for c in task_cards[0]['criteria']],
+            'topicIds': sorted({card['topicId'] for card in task_cards}),
+            'atlasTopicIds': sorted({a for card in task_cards for a in card['atlasTopicIds']}),
+            'sources': list(task.sources),
+            **({'routeSources': {route.card_id: list(route.sources) for route in task.routes
+                                 if route.sources is not None}}
+               if any(route.sources is not None for route in task.routes) else {}),
+            'cards': [card['id'] for card in task_cards],
+            'routes': [route.label for route in task.routes],
+        })
+    # A printed part the ledger cannot card honestly (its published allocation
+    # does not add up to its printed tariff) is held, never guessed at: it
+    # stays in the census as excluded, with the ledger's reason.
+    held = list(getattr(review, 'HELD', ()))
+    excluded_rows = []
+    for row in held:
+        totals[(row['part'], row['question'])] = (
+            totals.get((row['part'], row['question']), 0) + row['marks'])
+        # A held row may name one separately priced part ('sub', e.g. '(iii)').
+        sub = row.get('sub', '')
+        key = sub.strip('()').replace(')(', '-')
+        ref = f"{year} {LEVEL_REF[level]} Part {row['part']} Q{row['question']}{sub}"
+        base_tasks.append({'id': ID_PREFIX.format(year=year, short=LEVEL_SHORT[level])
+                           + f"p{row['part']}-q{row['question'].lower()}" + (f'-{key}' if key else ''),
+                           'year': year, 'level': level, 'part': row['part'], 'questionRef': ref,
+                           'title': row['title'], 'status': 'excluded'})
+        excluded_rows.append({'year': year, 'level': level, 'part': row['part'],
+                              'questionRef': row['question'] + sub, 'title': row['title'],
+                              'reason': row['reason']})
+    expected_totals = {(part, q): marks for part, row in review.QUESTION_TARIFFS.items()
+                       for q, marks in row.items()}
+    if totals != expected_totals:
+        raise AssertionError(f'{year} {level}: task tariffs {totals} != printed {expected_totals}')
+    ids = [card['id'] for card in cards]
+    if len(ids) != len(set(ids)):
+        raise AssertionError(f'{year} {level}: duplicate reviewed card id')
+    legacy = set(review.LEGACY_IDS)
+    # A shipped combination card that its choose-N question now absorbs keeps
+    # its identity through a progress alias; a branch-only one simply goes.
+    for old, _canonical in absorbed_pairs:
+        if old in ids:
+            raise AssertionError(f'{old}: absorbed by its choose-N card yet still emitted')
+    aliases = {old: canonical for old, canonical in absorbed_pairs if old in legacy}
+    if not legacy <= set(ids) | set(aliases):
+        raise AssertionError(
+            f'{year} {level}: lost legacy ids {sorted(legacy - set(ids) - set(aliases))}')
+    flagged = {t.card_id for t in review.TASKS if t.legacy and not t.routes} | {
+        r.card_id for t in review.TASKS for r in t.routes if r.legacy} | set(aliases)
+    if flagged != legacy:
+        raise AssertionError(f'{year} {level}: legacy flags disagree with LEGACY_IDS: '
+                             f'{sorted(flagged ^ legacy)}')
+    # A shipped id now held by one printed sub-part: the task's own id, and
+    # every shipped route id of a routed sub-part (each is re-scoped alike).
+    corrections = [{'id': card_id, 'nowQuestionRef': GR.ref_label(year, level, t),
+                    'reason': review.ID_CORRECTION_REASON}
+                   for t in review.TASKS if t.legacy and t.sub
+                   for card_id in dict.fromkeys(
+                       [t.card_id, *(r.card_id for r in t.routes if r.legacy)])]
+    # Before 2020 one booklet printed both parts, and Part Two restarts at Q1.
+    # Paper Trail's Viewer numbers that booklet's Part Two 1-12 (Higher options
+    # to 24) under the paper key "single", so Part Two keeps n and Part One
+    # takes its own identity, n = 1000 + its printed number. The hosted anchors
+    # the Atlas reads for both are built by geography_atlas_anchors.py.
+    single = fileids[(year, level, 1)] == fileids[(year, level, 2)]
+    atlas_rows = [
+        {'level': level, 'year': year, 'paperKey': 'single' if single else f'p{part}',
+         'fileid': fileids[(year, level, part)] + '.pdf',
+         'n': str(PART_ONE_ATLAS_OFFSET + int(n)) if single and part == 1 else n,
+         'part': part, 'printed': n,
+         'topicIds': sorted(weights, key=lambda topic: (-weights[topic], topic))}
+        for (part, n), weights in sorted(atlas.items(), key=lambda kv: (kv[0][0], int(kv[0][1])))]
+    audit = {
+        'year': year, 'level': level, 'lang': 'ev', 'status': 'reviewed',
+        'reviewedAt': '2026-10-11', 'sources': sources,
+        'pageReview': review.PAGE_REVIEW, 'selectionScan': scan,
+        'selectionReview': review.SELECTION_REVIEW,
+        'questionTotals': {f'Part {p} Q{q}': m for (p, q), m in sorted(totals.items())},
+        'taskCount': len(review.TASKS), 'cardCount': len(cards),
+        'legacyIds': sorted(legacy), 'addedIds': sorted(set(ids) - legacy),
+        'idCorrections': corrections,
+        'aliases': [{'id': old, 'canonicalId': new} for old, new in sorted(aliases.items())],
+        'tasks': tasks_out,
+        **({'held': excluded_rows} if excluded_rows else {}),
+        'rule': (review.__doc__ or '').strip(),
+    }
+    sitting_row = {'year': year, 'level': level, 'paperBaseTasks': len(review.TASKS) + len(held),
+                   'includedBaseTasks': len(review.TASKS), 'excludedBaseTasks': len(held),
+                   'authoredCardsAfterFiniteExpansion': len(cards), 'reviewed': True}
+    return {'cards': cards, 'baseTasks': base_tasks, 'sitting': sitting_row,
+            'selection': selection_rows, 'audit': audit, 'atlas': atlas_rows,
+            'aliases': aliases, 'excluded': excluded_rows}
+
+
+PART_TWO_HEADING = re.compile(r'Part\s+[ABC]|Question\s+\d+\s*[ABC]\b', re.I)
+
+
+def shared_booklet_n(association: dict[str, Any], target: dict[str, Any],
+                     reviewed_topics: dict[tuple[str, int, int, str], set[str]]) -> str:
+    """The Atlas number of a StudyClix heading on a shared 2010-2019 booklet.
+
+    The crosswalk joined each heading to the booklet's question by its printed
+    number alone, so Part One Q8 and Part Two Q8 met under one identity. The
+    part is decided by evidence first: the topic the reference gives the
+    heading is proven by only one part's review of that number. When neither
+    or both reviews prove it, the heading's own shape decides: Part Two
+    questions print an A/B/C part (or are Higher option essays, Q13-24), and
+    StudyClix files the plain Part One questions under Section 1. Part One
+    takes n = 1000 + its printed number (geography_atlas_anchors.py)."""
+    printed = int(target['n']) % PART_ONE_ATLAS_OFFSET
+    if printed > 12:
+        return str(printed)
+    topic = association['topicId']
+    key = (target['level'], target['year'])
+    in_one = topic in reviewed_topics.get((*key, 1, str(printed)), set())
+    in_two = topic in reviewed_topics.get((*key, 2, str(printed)), set())
+    if in_one != in_two:
+        part_one = in_one
+    else:
+        heading = association['heading']
+        part_one = bool(re.search(r'Section\s+1\b', heading)) and not PART_TWO_HEADING.search(heading)
+    return str(PART_ONE_ATLAS_OFFSET + printed) if part_one else str(printed)
+
+
 def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     fileids = paper_fileids()
     cards: list[dict[str, Any]] = []
@@ -976,8 +1423,28 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
     excluded: list[dict[str, Any]] = []
     selection_audit: list[dict[str, Any]] = []
 
+    reviewed_audits: list[dict[str, Any]] = []
+    atlas_rows: list[dict[str, Any]] = []
+    aliases: dict[str, str] = {}
+    topic_ids = canonical_topic_ids()
+    with open(CROSSWALK, encoding='utf-8') as handle:
+        crosswalk = json.load(handle)
     for year in YEARS:
         for level in LEVELS:
+            if (year, level) in REVIEWED:
+                built = reviewed_sitting(year, level, REVIEWED[(year, level)],
+                                         fileids, topic_ids, crosswalk)
+                cards.extend(built['cards'])
+                base_tasks.extend(built['baseTasks'])
+                sittings.append(built['sitting'])
+                selection_audit.extend(built['selection'])
+                aliases.update(built['aliases'])
+                reviewed_audits.append(built['audit'])
+                atlas_rows.extend(built['atlas'])
+                excluded.extend(built['excluded'])
+                continue
+            if year not in CORE_YEARS:
+                continue
             short_scheme = part_one_scheme(year, level)
             long_scheme = part_two_scheme(year, level)
             questions = [*part_one_questions(year, level),
@@ -1031,7 +1498,7 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                 variants = (variants_for(question.question_text) if selectable_task
                             else [Variant('', '', question.question_text, [], 'none')])
                 if (selectable_task and selection_directive(question.question_text)
-                        and len(variants) == 1):
+                        and len(variants) == 1 and not variants[0].absorbs):
                     raise AssertionError(
                         f'{ref_label}: finite selection directive was not expanded')
                 if len(variants) > 1:
@@ -1040,6 +1507,15 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                         'classification': 'finite-expanded',
                         'variants': len(variants),
                         'kinds': sorted({variant.selection_kind for variant in variants}),
+                    })
+                absorbed = sum(len(variant.absorbs) for variant in variants)
+                if absorbed:
+                    selection_audit.append({
+                        'questionRef': ref_label,
+                        'classification': 'single-card-choice',
+                        'variants': len(variants),
+                        'kinds': sorted({variant.selection_kind for variant in variants}),
+                        'combinationsAbsorbed': absorbed,
                     })
                 for variant_index, variant in enumerate(variants, start=1):
                     # Q6C originally shipped as one unsplit card. Keep that
@@ -1056,6 +1532,9 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     card_id = (
                         f'geography-{year}-{LEVEL_SHORT[level]}-p{question.part}-'
                         f'q{question.ref.lower()}{route_suffix}')
+                    for absorbed_slug in variant.absorbs:
+                        aliases[(f'geography-{year}-{LEVEL_SHORT[level]}-p{question.part}-'
+                                 f'q{question.ref.lower()}-{absorbed_slug}')] = card_id
                     topic_id = topic_for(question)
                     kind = ('exact' if question.part == 1 or question.ref.endswith('A')
                             else 'srp')
@@ -1070,8 +1549,9 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
                     if external_source and not sources:
                         raise AssertionError(
                             f'{ref_label}: published companion source set is incomplete')
+                    # A choose-N card keeps every printed item in its text.
                     display_question = (question_only_text(variant.question_text)
-                                        if sources
+                                        if sources and not variant.absorbs
                                         else variant.question_text)
                     card: dict[str, Any] = {
                         'id': card_id,
@@ -1130,18 +1610,76 @@ def make_corpus() -> tuple[list[dict[str, Any]], dict[str, Any]]:
         'sittings': sittings,
         'selectionAudit': selection_audit,
         'exclusions': excluded,
+        'aliases': [{'id': old, 'canonicalId': new, 'reason': CHOICE_IS_NOT_A_ROUTE}
+                    for old, new in sorted(aliases.items())],
         'rule': (
             'One Part One short question, one separately selectable Part Two '
             'A/B/C task, or one Higher-Level option is a base task. Every finite '
-            'printed route and choose-N combination is expanded. Tasks needing '
+            'printed route is expanded; a choose-N-of-M pool (N >= 2) is one card '
+            'with the printed question verbatim (choice is not a route). Tasks needing '
             'a missing separate OS map/aerial source are census-held, never '
-            'presented as answerable.'),
+            'presented as answerable. Independently reviewed sittings '
+            '(geography-reviewed-audit.json) instead take one base task per '
+            'separately priced printed part, from their review ledgers.'),
     }
-    return cards, census
+    with open(REFERENCE_ATLAS, encoding='utf-8') as handle:
+        reference = json.load(handle)
+    # The shipped join is the StudyClix crosswalk's matched associations,
+    # aggregated per printed question (geography-question-runtime.json is
+    # exactly that aggregation). Its topics keep the shipped order.
+    shipped_order = {topic: index for index, topic in enumerate(reference['topicIds'])}
+    reviewed_topics = {(row['level'], row['year'], row['part'], row['printed']): set(row['topicIds'])
+                       for row in atlas_rows}
+    with open(LOCAL_CROSSWALK, encoding='utf-8') as handle:
+        crosswalk = json.load(handle)
+    shipped: dict[tuple[str, str, int, str, str, str], set[str]] = {}
+    for association in crosswalk['associations']:
+        if association['resolution'] != 'matched':
+            continue
+        for target in association.get('targets') or [association['target']]:
+            if target['paperKey'] == 'single' and target['year'] < 2020:
+                target['n'] = shared_booklet_n(association, target, reviewed_topics)
+            key = (target['level'], 'e' if target['lang'] == 'ev' else 'i', target['year'],
+                   target['paperKey'], target['fileid'], str(target['n']))
+            shipped.setdefault(key, set()).add(association['topicId'])
+    out_rows: list[dict[str, Any]] = []
+    for row in atlas_rows:
+        langs = ['e']
+        # A shared booklet's Irish edition prints the same questions under the
+        # same numbers: its rows take the same identities and reviewed topics
+        # (a mechanical mirror; no Irish content is re-reviewed). Only the
+        # numbers its shipped join and Paper Trail maps carry (1-12, and Part
+        # One's 1001-1012) are mirrored.
+        if row['paperKey'] == 'single' and int(row['printed']) <= 12:
+            langs.append('i')
+        for lang in langs:
+            fileid = row['fileid'] if lang == 'e' else row['fileid'].replace('EV.pdf', 'IV.pdf')
+            # Shipped topics first, in the shipped order, then each topic the
+            # review adds by weight: a review adds, never removes or reorders.
+            inherited = sorted(shipped.get((row['level'], lang, row['year'], row['paperKey'], fileid, row['n']), ()),
+                               key=lambda topic: shipped_order[topic])
+            out_rows.append({**row, 'lang': lang, 'fileid': fileid,
+                             'topicIds': list(dict.fromkeys([*inherited, *row['topicIds']]))})
+    topic_list = sorted({topic for row in out_rows for topic in row['topicIds']})
+    atlas = {
+        'schemaVersion': 1,
+        'subjectId': 'geography',
+        'topicIds': topic_list,
+        'questionMappings': [
+            ['h' if row['level'] == 'higher' else 'o', row['lang'], row['year'], row['paperKey'],
+             row['fileid'], row['n'], [topic_list.index(t) for t in row['topicIds']]]
+            for row in out_rows],
+    }
+    audit = {
+        'schemaVersion': 1, 'subjectId': 'geography',
+        'scope': 'English (EV) editions; Irish editions are deferred.',
+        'reviewedSittings': reviewed_audits,
+    }
+    return cards, census, audit, atlas, crosswalk
 
 
-def serialised() -> tuple[str, str]:
-    cards, census = make_corpus()
+def serialised() -> tuple[str, str, str, str, str]:
+    cards, census, audit, atlas, crosswalk = make_corpus()
     payload = {
         'meta': {
             'subjectId': 'geography',
@@ -1156,17 +1694,37 @@ def serialised() -> tuple[str, str]:
         'cards': cards,
     }
     return (json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
-            json.dumps(census, ensure_ascii=False, indent=2) + '\n')
+            json.dumps(census, ensure_ascii=False, indent=2) + '\n',
+            json.dumps(audit, ensure_ascii=False, indent=2) + '\n',
+            json.dumps(atlas, ensure_ascii=False, separators=(',', ':')) + '\n',
+            json.dumps(crosswalk, ensure_ascii=False, indent=2) + '\n')
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--fetch-companions', action='store_true',
+                        help='download reviewed sittings\' missing companions from Paper Trail storage')
     args = parser.parse_args()
-    authored, census = serialised()
+    if args.fetch_companions:
+        for year in sorted({year for year, _level in REVIEWED}):
+            for kind in ('map', 'legend', 'aerial'):
+                if COMPANIONS[year][kind]:
+                    companion_path(year, COMPANIONS[year][kind], fetch=True)
+    authored, census, audit, atlas, crosswalk = serialised()
+    # The deck-size manifest is shared by every subject; only the Geography
+    # entry is ours to restate.
+    with open(SIZES, encoding='utf-8') as handle:
+        sizes = json.load(handle)
+    deck = json.loads(authored)['cards']
+    sizes['geography'] = {level: sum(card['level'] == level for card in deck)
+                          for level in LEVELS}
+    outputs = ((OUT, authored), (CENSUS_OUT, census),
+               (REVIEW_AUDIT_OUT, audit), (ATLAS_OUT, atlas), (LOCAL_CROSSWALK, crosswalk),
+               (SIZES, json.dumps(sizes, indent=1) + '\n'))
     if args.check:
         failures = []
-        for path, expected in ((OUT, authored), (CENSUS_OUT, census)):
+        for path, expected in outputs:
             actual = ''
             if os.path.exists(path):
                 with open(path, encoding='utf-8') as handle:
@@ -1179,18 +1737,20 @@ def main() -> int:
         print('Geography authored corpus is current.')
         return 0
 
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    os.makedirs(os.path.dirname(CENSUS_OUT), exist_ok=True)
-    with open(OUT, 'w', encoding='utf-8') as handle:
-        handle.write(authored)
-    with open(CENSUS_OUT, 'w', encoding='utf-8') as handle:
-        handle.write(census)
+    for path, text in outputs:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as handle:
+            handle.write(text)
     payload = json.loads(authored)
     summary = json.loads(census)
+    reviewed = json.loads(audit)['reviewedSittings']
     print(
         f"Wrote {len(payload['cards'])} Geography cards from "
         f"{summary['includedBaseTasks']} answerable base tasks; "
-        f"held {summary['excludedBaseTasks']} missing-companion-source tasks.")
+        f"held {summary['excludedBaseTasks']} tasks (see census exclusions); "
+        f"{len(reviewed)} independently reviewed sitting(s): "
+        + ', '.join(f"{r['year']} {r['level']} {r['taskCount']} tasks/{r['cardCount']} cards"
+                    for r in reviewed) + '.')
     return 0
 
 
