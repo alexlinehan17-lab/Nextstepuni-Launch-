@@ -329,6 +329,16 @@ GUTTER_MARKERS = {'technology'}
 # about how this subject's papers are typeset: no other subject's reading
 # may move because of it.
 TRAILING_OR = {'engineering'}
+# Subjects whose older papers close a question with a printed rule and set the
+# next question's head straight after it in the same block: 2010-2012 Higher
+# Chemistry reads "(d) ... (12) ___________ 3. A stopwatch was started ...",
+# and with no closed sentence before the "3." the inline head was invisible,
+# so Questions 3 and 7 of 2010, 2 of 2011 and 2, 5 and 7 of 2012 vanished from
+# the census. The rule is dropped so the head follows the closing "(12)".
+# Subject-gated: Biology, Business and Home Economics papers print the same
+# shape, and their readings must not move because of a Chemistry fix.
+RULED_HEADS = {'chemistry'}
+_RULED_HEAD = re.compile(r'\s*_{3,}\s*(?=\d{1,2}\.\s+[A-Z(])')
 _TRAILING_OR = re.compile(r'\s+OR\s*$')
 _BARE_MARKER = re.compile(r'^\((?:[ivx]{1,4}|[a-m])\)$')
 
@@ -874,6 +884,8 @@ class Paper:
         carry = ''
         for path in self.files:
             for block in _blocks(path, subject=self.subject if self.subject in MANGLED_PAPERS else None):
+              if self.subject in RULED_HEADS:
+                  block = _RULED_HEAD.sub(' ', block)
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.

@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2020-hl-q1-b", "ask": "Describe how the 250 cm³ solution of washing soda was prepared", "answer": "stopper and invert several times"},
+ {"id": "chem-2020-hl-q1-d-ii", "ask": "neutralised in each titration", "answer": "[Divide by 2 essential.]", "solution": true},
+ {"id": "chem-2020-hl-q2-c", "ask": "Describe what is observed during stages D and E.", "answer": "crystallisation (precipitation) of benzoic acid", "figure": true},
+ {"id": "chem-2020-hl-q2-e-i", "ask": "Show by calculation whether there is sufficient", "answer": "3.16 ÷ 158∗∗ = 0.02 moles KMnO₄", "solution": true},
+ {"id": "chem-2020-hl-q3-c", "ask": "fill in the missing rates correct to three decimal places", "answer": "One mark for each of the six rates", "figure": true},
+ {"id": "chem-2020-hl-q3-d-i", "ask": "", "answer": "smooth curve of correct shape", "figure": true, "solution": true},
+ {"id": "chem-2020-hl-q4-c", "ask": "releases an alpha particle?", "answer": "neptunium– / Np", "solution": true},
+ {"id": "chem-2020-hl-q4-f", "ask": "", "answer": "880000 / 8.8 × 10⁵ Pa", "figure": true, "solution": true},
+ {"id": "chem-2020-hl-q6-a", "ask": "", "answer": "octane number: measure of tendency", "figure": true},
+ {"id": "chem-2020-hl-q7-d-ii", "ask": "", "answer": "pOH = 14 – 7.2 = 6.8", "figure": true, "solution": true},
+ {"id": "chem-2020-hl-q8-b-ii", "ask": "", "answer": "either CH bond of carbon to which OH is attached", "figure": true, "solution": true},
+ {"id": "chem-2020-hl-q8-e", "ask": "", "answer": "carbononium ion (carbocation", "figure": true, "solution": true},
+ {"id": "chem-2020-hl-q9-c", "ask": "Calculate the number of moles of carbon monoxide", "answer": "2.097 – 2.1 moles carbon monoxide", "solution": true},
+ {"id": "chem-2020-hl-q10-b-iii", "ask": "Assign oxidation numbers", "answer": "cobalt / Co", "solution": true},
+ {"id": "chem-2020-hl-q11-a-v", "ask": "CH₄ is almost completely insoluble in water", "answer": "methane (CH₄) molecule non-polar", "figure": true},
+ {"id": "chem-2020-hl-q11-c-b-iv", "ask": "What is meant by anodising aluminium?", "answer": "creating (thickening) layer of aluminium oxide", "figure": true}
+]

@@ -187,6 +187,9 @@ MASKS = {
     # the question ("electrolysed", "transfer.", "electrodes.", "place?"), whited out here; the
     # crop is a one-panel print so that those words stay in the question text.
     'chemistry-2021-OL-paper-q10b.png': [(0, 10, 11, 45), (0, 204, 49, 369)],
+    # 2020 HL scheme Q8(d)(i): its drawing of X stands beside (d)(ii)'s answer
+    # and cell, whited out here.
+    'chemistry-2020-HL-scheme-q8d-i.png': [(0, 115, 729, 203), (937, 131, 1041, 183)],
     # 2021 OL Q3(d): the last letter of "provided" prints at the pictogram's corner.
     'chemistry-2021-OL-paper-q3d.png': [(0, 0, 15, 31)],
 }

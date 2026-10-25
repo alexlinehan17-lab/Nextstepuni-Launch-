@@ -842,7 +842,7 @@ def census_merged(subject, year, level, component=None):
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
     parts = complete_leading_romans(P.parts, texts, stem=P.stem)
-    if subject == 'chemistry' and year >= 2021:
+    if subject == 'chemistry':
         parts, texts = chemistry_choice_parts(year, level, parts, texts)
     return parts, texts, P.files
 
@@ -857,8 +857,13 @@ def chemistry_choice_parts(year, level, parts, texts):
     too. The alternatives are read with chem_print's part reader, which tells
     "A" and "B" apart from the instruction above them, and keyed with the
     letter carrying the alternative -- (11, 'dA', 'i') -- printed as
-    "Q11(d)A(i)", the way the cards cite them. Sittings from 2021: the earlier
-    papers are laid out differently and are not yet read this way.
+    "Q11(d)A(i)", the way the cards cite them.
+
+    The 2014-2020 papers set the same choice at Q4(k) and Q11(c), and their
+    alternatives were counted as one leaf (Q4(k)) or as B's romans landing on
+    A's: 2020 HL lost twelve asks that way. A choice is taken only where the
+    paper reader already holds that question's lettered part, so a page the
+    part reader cannot follow (2010-2013) adds nothing that is not there.
     """
     import chem_print
     lvl = 'hl' if level in ('higher', 'hl') else 'ol'
@@ -873,6 +878,8 @@ def chemistry_choice_parts(year, level, parts, texts):
         return parts, texts
     parts, texts = set(parts), dict(texts)
     for (q, letter), sgs in choice.items():
+        if not any(k[-3] == q and k[-2] == letter for k in parts):
+            continue                # not a part the paper reader found
         for k in [k for k in parts if k[-3] == q and k[-2] == letter]:
             parts.discard(k)
             texts.pop(k, None)

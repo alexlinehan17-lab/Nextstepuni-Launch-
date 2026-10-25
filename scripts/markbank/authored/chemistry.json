@@ -45315,5 +45315,3705 @@
     "contextNote": "The scheme adds: [allow sand or silicon or silica]"
    }
   ]
+ },
+ {
+  "id": "chem-2020-hl-q1-a",
+  "topicId": "chem-4-1",
+  "conceptId": "primary-standard-for-hydrochloric-acid",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(a)",
+  "questionText": "Identify a primary standard that could have been used to standardise the hydrochloric acid solution for this analysis.",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "anhydrous sodium carbonate / Na₂CO₃",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Anhydrous omitted (3).]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q1-b",
+  "topicId": "chem-4-1",
+  "conceptId": "making-up-a-standard-solution-of-washing-soda",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(b)",
+  "questionText": "Describe how the 250 cm³ solution of washing soda was prepared starting with 3.46 g of washing soda measured out accurately on a weighing boat.",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "washing soda transferred to a beaker and dissolved in (added to) deionised water / washing soda rinsed into beaker with deionised water",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Any four of these: the scheme sets six points and prices them (4 × 3).",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "washing soda transferred to a beaker and dissolved in (added to) deionised water / washing soda rinsed into beaker with deionised water",
+      "use funnel",
+      "transfer solution (contents of beaker) to correctly prepared volumetric flask",
+      "rinse beaker and glass rod into volumetric flask",
+      "make up (top up, fill, add deionised water) to 250 cm³ with bottom of meniscus on mark",
+      "stopper and invert several times"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q1-c-i",
+  "topicId": "chem-4-1",
+  "conceptId": "indicator-for-a-carbonate-titration",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(c)(i)",
+  "questionText": "Name a suitable indicator for this titration.",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methyl orange / methyl red",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q1-c-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "justifying-the-choice-of-indicator",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(c)(ii)",
+  "questionText": "Justify your choice of indicator.",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "strong acid weak base titration / end point (indicator range) below pH of 7 (at pH < 7, between pH 3 and pH 5) / diagram showing (description of) end point occurring within sharp rise in pH (steep vertical part of pH curve, in acidic range) / indicator (methyl orange) changes colour coinciding with (at) end point (below pH of 7, at pH < 7, between pH 3 and pH 5)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q1-c-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "colour-change-of-methyl-orange-at-end-point",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(c)(iii)",
+  "questionText": "Using this indicator what colour change was observed in the conical flask at the end point?",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "from orange (yellow)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to red (pink, peach)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for colours in reverse]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q1-d-i",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-acid-in-a-titre",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(i)",
+  "questionText": "the average number of moles of HCl used up in a titration,",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "21.5 × 0.12 ÷ 1000 = 0.00258 (2.58 × 10⁻³, 129/50000) moles HCl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 21.5 × 0.12 over 1000 as a fraction; ÷ stands for its bar."
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.00258 (2.58 × 10⁻³, 129/50000) moles HCl, priced [3], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q1-d-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-sodium-carbonate-neutralised",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(ii)",
+  "questionText": "the number of moles of Na₂CO₃ neutralised in each titration,",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "figureKey": "chemistry-2020-HL-scheme-q1d-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Na₂CO₃ : HCl = 1 : 2 ⇒ 0.00258 (2.58 × 10⁻³, 129/50000) ÷ 2 = 0.00129 (1.29 × 10⁻³, 129/100000) moles of Na₂CO₃ in 25.0 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Divide by 2 essential.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.00129 (1.29 × 10⁻³, 129/100000) moles of Na₂CO₃ in 25.0 cm³, priced [3], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer."
+ },
+ {
+  "id": "chem-2020-hl-q1-d-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-sodium-carbonate-in-the-flask",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(iii)",
+  "questionText": "the number of moles of Na₂CO₃ in 250 cm³ of the washing soda solution,",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "figureKey": "chemistry-2020-HL-scheme-q1d-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.00129 (1.29 × 10⁻³, 129/100000) × 10 = 0.0129 (1.29 × 10⁻², 129/10000) moles Na₂CO₃ in 250 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Multiply answer in (ii) by 10 essential.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.0129 (1.29 × 10⁻², 129/10000) moles of Na₂CO₃ in 250 cm³, priced [3], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer."
+ },
+ {
+  "id": "chem-2020-hl-q1-d-iv",
+  "topicId": "chem-4-1",
+  "conceptId": "mass-of-sodium-carbonate-in-the-flask",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(iv)",
+  "questionText": "the mass of Na₂CO₃ in 250 cm³ of the washing soda solution,",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.0129 (1.29 × 10⁻², 129/10000) × 106* = 1.3674 g Na₂CO₃ in 250 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Multiply answer in (iii) by 106 essential.] [*Addition must be shown for error to be treated as slip.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 1.3674 g Na₂CO₃ in 250 cm³, priced [3], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q1-d-v",
+  "topicId": "chem-4-1",
+  "conceptId": "mass-and-moles-of-water-of-crystallisation",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(v)",
+  "questionText": "the mass of water of crystallisation and hence the number of moles of water in 3.46 g of the crystals,",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.46 – 1.3674 = 2.0926 g water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2.0926 ÷ 18** = 0.116256 moles water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Divide by 18 essential.] [**Addition must be shown for error to be treated as slip.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 2.0926 g water and 0.116256 moles water, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q1-d-vi",
+  "topicId": "chem-4-1",
+  "conceptId": "value-of-x-in-washing-soda",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q1(d)(vi)",
+  "questionText": "the ratio of moles of water of crystallisation to moles of Na₂CO₃ in the crystals and hence the value of x to the nearest whole number.",
+  "stem": "Washing soda is a cheap, household chemical used for laundry, removing grease and softening water. Washing soda crystals are hydrated sodium carbonate (Na₂CO₃.xH₂O). The crystals effloresce (lose some water of crystallisation) in dry air becoming powdery in the process. To determine the average value of x in the formula Na₂CO₃.xH₂O for a sample of washing soda, 3.46 g of the crystals were dissolved in deionised water and made up to exactly 250 cm³ of solution. 25.0 cm³ volumes of this solution were pipetted into a conical flask and titrated with a previously standardised hydrochloric acid solution using a suitable indicator. The balanced equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ On average 21.5 cm³ of 0.12 M hydrochloric acid solution were required to completely neutralise 25.0 cm³ of the washing soda solution. Find by calculation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.116256 ÷ 0.0129 = 9 = x",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 0.116256 over 0.0129 as a fraction; ÷ stands for its bar. The scheme adds: [Allow ratio 9:1 for 3 marks] [1 mark to be deducted for incorrect or inappropriate rounding; deduction to be made once only in (d).] [1 mark to be deducted for each of any other mathematical slips, e.g. transposing numbers, addition error in M_(r) where atomic masses shown but added incorrectly, final answer not a whole number, etc."
+   }
+  ],
+  "notes": "The scheme gives the answer, 9, priced [3], then this step, priced [3]."
+ },
+ {
+  "id": "chem-2020-hl-q2-a-i-ii",
+  "topicId": "chem-u2",
+  "conceptId": "phenylmethanol-and-measuring-it",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(a)(i)–(ii)",
+  "questionText": "(i) Describe the appearance of phenylmethanol at room temperature. (ii) Name a suitable piece of apparatus to measure accurately 1.5 cm³ of phenylmethanol.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "colourless / pale yellow / clear / oily / liquid",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "graduated syringe / graduated dropper / graduated (micro) pipette / burette",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow small graduated cylinder]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2020-hl-q2-b",
+  "topicId": "chem-u2",
+  "conceptId": "colour-changes-during-the-oxidation",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(b)",
+  "questionText": "How does the appearance of the reaction mixture change when the phenylmethanol is heated along with potassium manganate(VII) solution to which sodium carbonate has been added?",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "purple (violet) to",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "brown (muddy, black, dark-coloured) mixture",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [correct order essential] [allow colourless (pale yellow) to purple (violet) to brown (muddy, black, dark-coloured) to colourless or white]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q2-c",
+  "topicId": "chem-u2",
+  "conceptId": "observations-at-stages-d-and-e",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(c)",
+  "questionText": "Describe what is observed during stages D and E. Explain these observations.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "brown (black, dark colour, MnO₂) solid disappears (fades, dissolves)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "benzoic acid white crystals form (become visible) / white solid appears / white substance precipitates",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "MnO₂ {Mn(IV)} reduced (reacts) / soluble (colourless) Mn²⁺ {Mn(II)} formed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "crystallisation (precipitation) of benzoic acid",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Each EXPLAIN statement must linked to corresponding DESCRIBE statement but marks can be given for EXPLAIN even if DESCRIBE marks not awarded.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q2-d-i",
+  "topicId": "chem-u2",
+  "conceptId": "purifying-benzoic-acid",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(d)(i)",
+  "questionText": "Name a suitable technique to purify the benzoic acid crystals collected at stage F.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "recrystallisation",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q2-d-ii",
+  "topicId": "chem-u2",
+  "conceptId": "measuring-a-melting-point",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(d)(ii)",
+  "questionText": "Describe how you measured the melting point of a sample of benzoic acid crystals.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sample (crystals) in melting point (m.p.) capillary tube in (on) melting point block (apparatus) shown in diagram / sample (crystals) on aluminium (melting) block shown in diagram",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "heat slowly while observing crystals / heat source shown or mentioned",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "record (note) temperature range at which (when) melting occurs / record (note) the melting point temperature (point) range / thermometer shown or mentioned",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Reference to ‘boiling point’ unacceptable but penalise (–3) once only.] The scheme adds: \"Diagram not essential.\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q2-e-i",
+  "topicId": "chem-1-4",
+  "conceptId": "is-there-enough-permanganate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(e)(i)",
+  "questionText": "Show by calculation whether there is sufficient potassium manganate(VII) to oxidise all the phenylmethanol according to the balanced equation above.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F. A student used a solution containing 3.16 g of potassium manganate(VII) to oxidise 1.5 cm³ phenylmethanol (density 1.04 g cm⁻³) as described above.",
+  "figureKey": "chemistry-2020-HL-scheme-q2e-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.5 × 1.04 = 1.56 g phenylmethanol",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1.56 ÷ 108∗ = 0.0144 moles phenylmethanol",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 1.56 over 108∗ as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3.16 ÷ 158∗∗ = 0.02 moles KMnO₄",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 3.16 over 158∗∗ as a fraction; ÷ stands for its bar."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "⇒ 0.0144 moles phenylmethanol limiting or ⇒ 0.02 moles KMnO₄ sufficient (excess)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme reaches this by any of four comparisons of the moles and the ratio 3 : 4; its own print of them is shown with the answer."
+   }
+  ],
+  "notes": "The scheme prices the part (12) over these four steps, (3) each."
+ },
+ {
+  "id": "chem-2020-hl-q2-e-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "theoretical-yield-of-benzoic-acid",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q2(e)(ii)",
+  "questionText": "Find the theoretical yield in grams of benzoic acid.",
+  "stem": "Benzoic acid is synthesised by the oxidation of phenylmethanol (benzyl alcohol) with KMnO₄ in alkaline conditions. The overall balanced equation for the oxidation reaction is: 3C₆H₅CH₂OH + 4KMnO₄ → 3C₆H₅COOH + 4MnO₂ + H₂O + 4KOH The stages of the synthesis are illustrated in diagrams A to F below. Stages A and B are the oxidation stages. Concentrated HCl is added at stage C and concentrated Na₂SO₃ solution is added at stage D. Benzoic acid crystals are collected at stage F. A student used a solution containing 3.16 g of potassium manganate(VII) to oxidise 1.5 cm³ phenylmethanol (density 1.04 g cm⁻³) as described above.",
+  "figureKey": "chemistry-2020-HL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "⇒ 0.0144 moles phenylmethanol ⇒ 0.0144 moles benzoic acid 0.0144 × 122*** = 1.7568 g benzoic acid [1.7 – 1.8 g]",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [*Addition must be shown for error to be treated as slip.] [**Addition must be shown for error to be treated as slip.] [***Addition must be shown for error to be treated as slip.] [1 mark to be deducted for incorrect rounding off resulting in candidate’s final numerical answer lying outside given values or given range but deduction to be made once only in (e).]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 1.7 – 1.8 g, priced [3], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q3-a",
+  "topicId": "chem-u2",
+  "conceptId": "heating-a-reaction-mixture-to-a-set-temperature",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(a)",
+  "questionText": "With the aid of a labelled diagram describe a method for adjusting and measuring the temperature of the reaction mixture for the runs above room temperature.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "flask with thiosulfate solution only heated in water bath (on hot plate, with Bunsen)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "add HCl (acid) and mix (stir, swirl)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "use thermometer (temperature probe, temperature sensor) in flask shown (mentioned) to record reaction mixture temperature / water bath set to known temperature",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Points may be available from diagram][No diagram –3]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-b-i",
+  "topicId": "chem-3-2",
+  "conceptId": "precipitate-in-the-thiosulfate-reaction",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(b)(i)",
+  "questionText": "What was observed in the reaction flasks during each run?",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "appearance of precipitate (solid, particles, suspension, off-white (pale yellow, cream) colour, cloudiness, etc) / S (sulfur) precipitated",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-b-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "timing-the-reaction-by-the-cross",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(b)(ii)",
+  "questionText": "Describe how this observation was used to obtain the reaction times.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stand (put) flask on cross (print, mark) / cross (print, mark) under flask",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"set up smart-phone lux-meter app next to flask // record (note, measure, take) time for mixture to reach certain opacity using lux-meter\" (2 × 3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "record (note, measure, take) time for cross (print, mark) to become obscured (invisible)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-c",
+  "topicId": "chem-3-2",
+  "conceptId": "rate-as-reciprocal-of-time",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(c)",
+  "questionText": "Copy the last column of the table into your answerbook and fill in the missing rates correct to three decimal places.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "0.005",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One mark for each of the six rates, which the scheme lists for Runs 2 to 7 in order (6 × 1). It adds: \"Apply slip penalty no more than once for not rounding or incorrect rounding in 3(c).\"",
+    "group": {
+     "claimMax": 6,
+     "perOption": 1,
+     "options": [
+      "0.005",
+      "0.009",
+      "0.018",
+      "0.029",
+      "0.063",
+      "0.111"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-d-i",
+  "topicId": "chem-3-2",
+  "conceptId": "graph-of-rate-against-temperature",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(d)(i)",
+  "questionText": "Plot a graph of initial reaction rate (r) versus temperature.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-scheme-q3d-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: axis labelled temperature (T, °C) and axis labelled rate (r, s⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: appropriate correct numeric scales on both axes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: careful plotting of all 7 points from (c)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Deduct 3 if graph not on graph paper.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D: smooth curve of correct shape",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [straight line unacceptable] [Deduct (1) in D for each of the following: poor curve all pairs of points connected with straight lines.] [Temperature versus rate graph acceptable.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2020-HL-paper-q3d-i-print"
+ },
+ {
+  "id": "chem-2020-hl-q3-d-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "temperature-rise-that-doubles-the-rate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(d)(ii)",
+  "questionText": "Use your graph to find an approximate value for x in the following statement: ‘The rate of this reaction doubles for every x °C rise in temperature.’",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "9 – 11",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for answers outside 9 – 11 but in the 8 – 12 range.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-d-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "why-rate-rises-with-temperature",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(d)(iii)",
+  "questionText": "Explain this result.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7.",
+  "figureKey": "chemistry-2020-HL-paper-q3-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "more effective (successful) collisions at higher temperature // activation energy more easily reached in collisions at higher temperature",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-e-i",
+  "topicId": "chem-3-2",
+  "conceptId": "testing-a-point-against-the-curve",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(e)(i)",
+  "questionText": "Show, by plotting it, whether the corresponding data point (40, 0.015) lies on the curve you have plotted.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7. The student then carried out another run (Run 8) at 40 °C but in a conical flask of different shape to those used previously. As before, 10 cm³ of 3.0 M hydrochloric acid were added to 100 cm³ of 0.05 M sodium thiosulfate solution. The reciprocal of t in Run 8 was 0.015 s⁻¹.",
+  "figureKey": "chemistry-2020-HL-paper-q3e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "plotted correctly on graph paper – point not on curve",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q3-e-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "depth-of-liquid-and-apparent-rate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2020 HL Q3(e)(ii)",
+  "questionText": "Was the depth of liquid in the flask used in this Run 8 greater or less than in the original flasks? Justify your answer.",
+  "stem": "The effect of temperature on the rate of the reaction between a sodium thiosulfate solution and a hydrochloric acid solution was investigated. In each run, a stopwatch was started as 10 cm³ of 3.0 M hydrochloric acid solution were added to a reaction flask containing 100 cm³ of a 0.05 M sodium thiosulfate solution. The temperature of the reaction mixture was recorded immediately after the addition of the HCl. In each run, the time (t) taken for the reaction to reach the same observable stage was measured. The reciprocal of this time may be taken as a measure of the initial rate of the reaction (r = 1/t). The table contains the data collected by a student who used a set of identical conical flasks for Runs 1 to 7. The student then carried out another run (Run 8) at 40 °C but in a conical flask of different shape to those used previously. As before, 10 cm³ of 3.0 M hydrochloric acid were added to 100 cm³ of 0.05 M sodium thiosulfate solution. The reciprocal of t in Run 8 was 0.015 s⁻¹.",
+  "figureKey": "chemistry-2020-HL-paper-q3e",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lower",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "takes longer (more difficult, more precipitate needed) to obscure cross / more time taken to reach same observable state (appears to have longer reaction time) / rate appears to be slower / rate appears to be smaller (lower)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The scheme adds: [Mark consequentially in (e)]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q4-a",
+  "topicId": "chem-1-2",
+  "conceptId": "thomson-plum-pudding-model",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(a)",
+  "questionText": "Draw a labelled diagram of Thomson’s plum-pudding model of the atom.",
+  "figureKey": "chemistry-2020-HL-scheme-q4a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "small negative particles (electrons) embedded",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. The scheme also draws the model; its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in positive sphere",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-b",
+  "topicId": "chem-1-2",
+  "conceptId": "element-from-its-4s-and-3d-electrons",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(b)",
+  "questionText": "The diagram represents the 10 electrons in the 4s and 3d sub-levels of a neutral atom of a certain element in its ground state. What is the element?",
+  "figureKey": "chemistry-2020-HL-paper-q4b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nickel (Ni)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-c",
+  "topicId": "chem-1-2",
+  "conceptId": "product-of-alpha-decay",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(c)",
+  "questionText": "What isotope is produced when the nucleus of an ²⁴¹₉₅Am atom releases an alpha particle?",
+  "figureKey": "chemistry-2020-HL-scheme-q4c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "neptunium– / Np",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead (6) for the nuclide written in full with its mass and atomic numbers, ²³⁷₉₃Np; its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "237",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-d-i-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "formulae-of-two-ionic-compounds",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(d)(i)–(ii)",
+  "questionText": "(i) magnesium sulfite, (ii) copper(II) oxide.",
+  "stem": "Write the chemical formulae for:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "magnesium sulfite: MgSO₃",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (i). The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "copper(II) oxide: CuO",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii). The scheme adds: [Any order acceptable.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-e",
+  "topicId": "chem-2-2",
+  "conceptId": "shapes-of-qx3-molecules",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(e)",
+  "questionText": "Give two possible shapes of a covalent molecule with the general formula QX₃.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "trigonal (triangular) planar",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pyramidal",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept T-shaped as an alternative to either answer above.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-f",
+  "topicId": "chem-2-3",
+  "conceptId": "pressure-from-the-gas-law",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(f)",
+  "questionText": "Each of the small metal canisters shown in the photograph contains 0.36 moles of carbon dioxide. The contents of one canister were released into a flat bicycle tube. The gas inflated the tube to a volume of 1.0 × 10⁻³ m³ at a temperature of 293 K. Calculate the pressure of the gas inside the tube correct to two significant figures.",
+  "figureKey": "chemistry-2020-HL-scheme-q4f",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "880000 / 8.8 × 10⁵ Pa",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2020-HL-paper-q4f-print"
+ },
+ {
+  "id": "chem-2020-hl-q4-g",
+  "topicId": "chem-3-2",
+  "conceptId": "how-a-catalyst-lowers-activation-energy",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(g)",
+  "questionText": "How can a catalyst lower the activation energy of a reaction?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "provides alternative pathway (mechanism) for reaction",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-h",
+  "topicId": "chem-2-1",
+  "conceptId": "when-ionic-compounds-conduct",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(h)",
+  "questionText": "Under what circumstances do ionic compounds conduct electricity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "in aqueous solution / dissolved in water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "molten (liquid state, melted)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-i",
+  "topicId": "chem-4-3",
+  "conceptId": "limescale-in-a-kettle",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(i)",
+  "questionText": "Identify the compound that is the main component of the limescale deposit in a kettle used in a hard water area.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "calcium carbonate / CaCO₃",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept magnesium carbonate / MgCO₃ for (6)]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-j-i-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "aldehyde-group-and-formula-of-vanillin",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(j)(i)–(ii)",
+  "questionText": "(i) Circle the aldehyde group. (ii) Write the molecular formula for vanillin.",
+  "stem": "Copy into your answerbook the structure of vanillin, the main component of the extract of the vanilla bean.",
+  "figureKey": "chemistry-2020-HL-paper-q4j",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CHO group circled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (i). The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C₈H₈O₃ / C₆H₃CH₃O(OH)CHO",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-k-a",
+  "topicId": "chem-4-3",
+  "conceptId": "photodissociation-of-ozone",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(k)A",
+  "questionText": "Write a balanced equation for the photo-dissociation of ozone.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "O₃ → O₂ + O•",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)] The scheme prices this point [3 + 3]. The scheme adds: \"[Allow (6) if O given for O•][O⁻ is incorrect]\""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2020-hl-q4-k-b",
+  "topicId": "chem-4-2",
+  "conceptId": "monomer-of-polyphenylethene",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q4(k)B",
+  "questionText": "Draw the structure of the monomer used to make poly(phenylethene).",
+  "figureKey": "chemistry-2020-HL-scheme-q4k-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the structure of the monomer used to make poly(phenylethene).",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Delocalised benzene ring acceptable.]",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\" The scheme adds: \"Allow C₆H₅CH=CH₂ C₆H₅CHCH₂\"."
+ },
+ {
+  "id": "chem-2020-hl-q5-a",
+  "topicId": "chem-1-2",
+  "conceptId": "what-an-electron-is",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(a)",
+  "questionText": "What is an electron?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "subatomic particle / particle orbiting atomic nucleus / particle located in electron cloud of atom / particle located within electron cloud of atom",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "subatomic particle / particle orbiting atomic nucleus / particle located in electron cloud of atom / particle located within electron cloud of atom",
+      "negative (–)",
+      "mass 1/1840 amu / negligible mass / very small mass"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-b-i",
+  "topicId": "chem-1-2",
+  "conceptId": "excited-hydrogen-atom",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(b)(i)",
+  "questionText": "Why might the electron in a hydrogen atom not occupy the n = 1 energy level?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "too much energy / excited / gained energy / gained heat energy (heated) / absorbed a photon / absorbed electrical energy",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-b-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "colour-of-the-n3-to-n2-line",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(b)(ii)",
+  "questionText": "What colour light is associated with the electron in a hydrogen atom moving from n = 3 to n = 2?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "red",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-b-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "balmer-series",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(b)(iii)",
+  "questionText": "Name the series of visible lines in the hydrogen emission spectrum.",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Balmer",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-c-i",
+  "topicId": "chem-1-2",
+  "conceptId": "sub-levels-in-the-third-energy-level",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(c)(i)",
+  "questionText": "How many sub-levels are associated with the n = 3 energy level?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-c-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "definition-of-an-atomic-orbital",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(c)(ii)",
+  "questionText": "What is an atomic orbital?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "space (volume, region) around nucleus of an atom",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead the pair \"approximate solution // to (of) a Schrödinger (wave) equation for an electron in an atom\". It adds: [‘Area’ around nucleus not acceptable.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "where there is a relatively high probability (possibility) of finding an electron / where an electron is likely to be found",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-c-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "orbitals-in-the-second-energy-level",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(c)(iii)",
+  "questionText": "How many orbitals are associated with the n = 2 energy level?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-c-iv",
+  "topicId": "chem-1-2",
+  "conceptId": "electrons-in-the-third-energy-level",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(c)(iv)",
+  "questionText": "What is the maximum number of electrons that can occupy the n = 3 energy level in a multi-electron atom?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "18",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-d",
+  "topicId": "chem-1-2",
+  "conceptId": "s-p-configurations-of-four-elements",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(d)",
+  "questionText": "Write s, p electron configurations for beryllium, neon, magnesium and krypton.",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom.",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Be: 1s² 2s² / [He] 2s²",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ne: 1s² 2s² 2p⁶ /1s² 2s² 2px²2py²2pz² / [He] 2s² 2p⁶",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mg: 1s² 2s² 2p⁶ 3s² / 1s² 2s² 2px²2py²2pz² 3s² / [Ne] 3s²",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Kr: 1s² 2s² 2p⁶ 3s² 3p⁶4s² 3d¹⁰ 4p⁶/ 1s² 2s² 2px²2py²2pz² 3s² 3px²3py²3pz²4s² 3d¹⁰ 4p⁶ / [Ar] 4s² 3d¹⁰ 4p⁶",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow subscripts instead of superscripts.] [Arrows to represent numbers of electrons acceptable but sub-level symbols must be given.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-d-i",
+  "topicId": "chem-1-3",
+  "conceptId": "why-noble-gases-are-inert",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(d)(i)",
+  "questionText": "why the Group 18 elements neon and krypton are chemically inert,",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom. Write s, p electron configurations for beryllium, neon, magnesium and krypton. Refer to these electron configurations to explain",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "have stable full outer octet (ns² np⁶) electrons / 8 electrons in outer shell (energy level) is stable / satisfy octet rule / 6 electrons in outer p-sublevel (p-subshell) is stable / full outer p-sublevel (p-subshell) is stable / closed shell of valence electrons (8 valence electrons, valence sublevels full) is stable",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Set of full sublevels stable’ unacceptable and does not cancel.] [‘Have full outer shells which is stable’ incorrect but does not cancel.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q5-d-ii",
+  "topicId": "chem-1-3",
+  "conceptId": "why-group-2-metals-are-reactive",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q5(d)(ii)",
+  "questionText": "why the Group 2 elements beryllium and magnesium are reactive. Why is magnesium more reactive than beryllium?",
+  "stem": "The reactivity of an element is determined by the number and arrangement of electrons around the nucleus in each of its atoms. Around 1913 Bohr proposed that electrons in an atom occupied energy levels. Later sub-levels and orbitals were introduced into atomic theory to account for certain experimental observations. The diagrams below are two different representations of the first six energy levels in the electron cloud of a hydrogen atom. Write s, p electron configurations for beryllium, neon, magnesium and krypton. Refer to these electron configurations to explain",
+  "figureKey": "chemistry-2020-HL-paper-q5",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "do not have stable full outer octet (ns² np⁶) electrons / do not have 8 electrons in outer shell (energy level) / do not satisfy octet rule / only 2 electrons in an incomplete outer shell (energy level) / would need to lose 2 electrons to achieve Group 18 (noble gas, inert gas, stable) configuration",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Where no marks awarded above for EXPLAIN (i) and EXPLAIN (ii) allow one (3) if both ‘stable electron configuration (arrangement of electrons)’ is given in (i) and ‘unstable electron configuration (arrangement of electrons)’ is given in (ii).]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mg has greater atomic radius / more energy levels (shells) in Mg / more screening (shielding) of nucleus by electrons in inner shells in Mg / Mg has smaller ionisation energy / attraction of Mg nucleus for outer electrons less / outer electrons of Mg farther from nucleus",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: \"Accept opposite statements in terms of Be but Be must be specified.]\""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-a",
+  "topicId": "chem-2-4",
+  "conceptId": "knocking-and-octane-number",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(a)",
+  "questionText": "Explain the underlined terms.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "knocking: results from petrol autoigniting (pre-igniting, igniting too early, igniting before spark) / pinking (pinging, tapping) / etc",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "octane number: measure of tendency (ability) of a fuel to resist knocking (autoigniting, pre-igniting, igniting too early, igniting before spark, knock)* / fuel performance rating based on its equivalence to a certain mixture of heptane and 2,2,4-trimethylpentane",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme adds: [*Opposite acceptable]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2020-HL-paper-q6a-print"
+ },
+ {
+  "id": "chem-2020-hl-q6-b-i",
+  "topicId": "chem-2-4",
+  "conceptId": "naming-oil-refining-reactions",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(b)(i)",
+  "questionText": "Name the type of oil refining reaction in each of the three equations above.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "catalytic cracking",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dehydrocyclisation",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "isomerisation",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow reforming for dehydrocyclisation and for isomerisation; reforming must be mentioned twice for award of 6 marks] [Take order of question unless answers clearly labelled.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-b-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "deducing-a-cracking-product",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(b)(ii)",
+  "questionText": "Deduce the formula of hydrocarbon X.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₃H₆ / CH₃CHCH₂",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-b-iii",
+  "topicId": "chem-2-4",
+  "conceptId": "naming-2-2-4-trimethylpentane",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(b)(iii)",
+  "questionText": "Give the systematic IUPAC name for the product in the third equation.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2,2,4-trimethylpentane",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not accept 2,4,4-trimethylpentane.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "an-oxygenate-in-petrol",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(c)(i)",
+  "questionText": "Give an example of an oxygenate used in petrol.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃ Petrol may contain oxygenates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methanol, ethanol, propanol, butanol, MTBE (methyl tert-butyl ether), etc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "why-oxygenates-are-added",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(c)(ii)",
+  "questionText": "Why are oxygenates added to petrol?",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃ Petrol may contain oxygenates.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reduce pollution (harmful emissions, soot, carbon monoxide) caused (produced) by the fuel / increase octane rating (number) of fuel / reduce knocking in the engine / etc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-d-i",
+  "topicId": "chem-3-1",
+  "conceptId": "definition-of-heat-of-formation",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(d)(i)",
+  "questionText": "Define heat of formation.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heat (energy) change (released, involved) when 1 mole of a substance is formed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "from its elements in their standard (ground) states",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q6-d-ii",
+  "topicId": "chem-3-1",
+  "conceptId": "heat-of-combustion-of-propane",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q6(d)(ii)",
+  "questionText": "The heats of formation of propane, carbon dioxide and water are –104.7, –393.5 and –285.8 kJ mol⁻¹ respectively. Write a balanced equation for the combustion of propane in a plentiful oxygen supply and use the data provided to calculate the heat of combustion of propane.",
+  "stem": "Petrol is mostly a mixture of hydrocarbons, obtained from the fractional distillation of crude oil, and is in high demand as a fuel for cars. To avoid knocking in the engine, petrol must have a suitable octane number. Various oil refining processes, all requiring catalysts, are represented by the balanced equations below and these processes supply petrol suitable for high efficiency car engines. C₁₄H₃₀ → C₂H₄ + 2X + C₆H₁₄ CH₃(CH₂)₅CH₃ → C₆H₅CH₃ + 4H₂ CH₃(CH₂)₆CH₃ → CH₃CH(CH₃)CH₂C(CH₃)₂CH₃",
+  "figureKey": "chemistry-2020-HL-scheme-q6d-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "–2219.0 kJ mol⁻¹",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer (12) and sets out the working that earns it, with the marks for each step, in two boxed routes; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-a",
+  "topicId": "chem-3-4",
+  "conceptId": "bronsted-lowry-acids-strong-and-weak",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(a)",
+  "questionText": "According to Brønsted-Lowry theory, what is an acid? How does this theory distinguish between a strong and a weak acid?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "proton (H⁺) donor",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "greater the tendency of an acid to donate protons (more the acid tends to dissociate into ions) the stronger it is / less the tendency of an acid to donate protons (less the acid tends to dissociate into ions) the weaker it is",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Or instead, (2 × 2), \"strong acid: is a good proton (H⁺) donor / has a weak conjugate base / has large (complete) degree of dissociation into ions / K_(a) value large // weak acid: is a poor proton (H⁺) donor / has a strong conjugate base / dissociated into ions to small extent / slightly (only partly) dissociated / K_(a) value small\"."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-b-i",
+  "topicId": "chem-3-4",
+  "conceptId": "conjugate-acid-of-hydrogensulfate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(b)(i)",
+  "questionText": "What is (i) the conjugate acid, (ii) the conjugate base, of HSO₄⁻?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H₂SO₄",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-b-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "conjugate-base-of-hydrogensulfate",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(b)(ii)",
+  "questionText": "What is (i) the conjugate acid, (ii) the conjugate base, of HSO₄⁻?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "SO₄²⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-c",
+  "topicId": "chem-u2",
+  "conceptId": "test-for-sulfate-ion",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(c)",
+  "questionText": "Describe how you could test a sample of this mineral water for the presence of the sulfate ion.",
+  "figureKey": "chemistry-2020-HL-paper-q7-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "add (mix) barium chloride (BaCl₂) solution dropwise to (with) few cm³ of sample (water) in test-tube",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "white (cloudiness, precipitate, solid) insoluble in HCl (remains after addition of HCl) when sulfate present (positive result)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-d-i",
+  "topicId": "chem-3-4",
+  "conceptId": "hydronium-concentration-from-ph",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(d)(i)",
+  "questionText": "the H₃O⁺ ion concentration of the sparkling water,",
+  "stem": "The pH of the sparkling water is 5.6 while the pH of the source water was 7.2. Calculate",
+  "figureKey": "chemistry-2020-HL-paper-q7-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[H₃O⁺] = inverse log(– 5.6) / [H₃O⁺] = antilog(– 5.6) / [H₃O⁺] = 10^–5.6",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "⇒ [H₃O⁺] = 2.5119 × 10⁻⁶ moles per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, [H₃O⁺] = 2.5 × 10⁻⁶ – 2.512 × 10⁻⁶ moles per litre, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q7-d-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "hydroxide-concentration-from-ph",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(d)(ii)",
+  "questionText": "the OH⁻ ion concentration of the source water.",
+  "stem": "The pH of the sparkling water is 5.6 while the pH of the source water was 7.2. Calculate",
+  "figureKey": "chemistry-2020-HL-scheme-q7d-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pOH = 14 – 7.2 = 6.8",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "[OH⁻] = inverse log (– 6.8) / [OH⁻] = antilog(– 6.8) / [OH⁻] = 10^–6.8 ⇒ [OH⁻] = 1.58 × 10⁻⁷ – 1.6 × 10⁻⁷ moles per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, [OH⁻] = 1.58 × 10⁻⁷ – 1.6 × 10⁻⁷ moles per litre, priced [6], then the working that earns it, step by step; the steps here are its first route, and its own print of every route it accepts is shown with the answer.",
+  "questionFigureKey": "chemistry-2020-HL-paper-q7d-print"
+ },
+ {
+  "id": "chem-2020-hl-q7-e",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-of-a-weak-acid-indicator",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(e)",
+  "questionText": "Calculate the pH of an aqueous 1.5 × 10⁻³ M solution of the indicator which has an acid dissociation constant (Ka) of 4.0 × 10⁻⁴.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pH = –log√Ka[HA] / pH = –log√(4.0 × 10^−4) × (1.5 × 10^−3)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pH = 3.1 – 3.12",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [negative answer is not a slip error here]"
+   }
+  ],
+  "notes": "The scheme gives the answer, pH = 3.1 – 3.12, priced [6], then the working that earns it, step by step; the steps here are its first route. The scheme adds: \"[HA] = [HX] = M = M_(a) = [acid] =[indicator]\""
+ },
+ {
+  "id": "chem-2020-hl-q7-f-i",
+  "topicId": "chem-3-4",
+  "conceptId": "dissociation-of-an-indicator",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(f)(i)",
+  "questionText": "Write an equilibrium equation for the dissociation of the indicator in water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HA + H₂O ⇌ H₃O⁺ + A⁻",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not penalise if equilibrium arrow not used]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q7-f-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "indicator-colour-in-strong-base",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q7(f)(ii)",
+  "questionText": "What is observed when a few drops of the indicator are added to a solution of a strong base? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yellow (orange) colour observed / red changes to yellow (orange) / yellow (orange) colour intensifies / colour of A⁻ observed",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "H₃O⁺ (H⁺) ions removed by OH⁻ ions of base to form water / H₃O⁺ + OH⁻ → 2H₂O / H⁺ + OH⁻ → H₂O / lower [H⁺] / lower [H₃O⁺]",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "equilibrium (reaction) moves to right (products, yellow side) / more A⁻ at new equilibrium",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [WHAT must be correct for EXPLAIN to be awarded marks.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-a-i",
+  "topicId": "chem-4-2",
+  "conceptId": "substitution-in-the-scheme",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(a)(i)",
+  "questionText": "Identify in the scheme (i) a substitution reaction, (ii) an addition reaction,",
+  "stem": "Study the reaction scheme and answer the questions below. Identify in the scheme (i) a substitution reaction, (ii) an addition reaction,",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "additions-in-the-scheme",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(a)(ii)",
+  "questionText": "Identify in the scheme (i) a substitution reaction, (ii) an addition reaction,",
+  "stem": "Study the reaction scheme and answer the questions below. Identify in the scheme (i) a substitution reaction, (ii) an addition reaction,",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 / 3 / 5 / 6 / 8",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-a-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "elimination-in-the-scheme",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(a)(iii)",
+  "questionText": "an elimination reaction.",
+  "stem": "Study the reaction scheme and answer the questions below. Identify in the scheme (i) a substitution reaction, (ii) an addition reaction,",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2 / 7",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-b-i",
+  "topicId": "chem-4-2",
+  "conceptId": "reducing-ethanal",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(b)(i)",
+  "questionText": "What reagent and catalyst can be used in conversion 1?",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "hydrogen (H₂)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next (2 × 3), one each, or instead (6) for \"LiAlH₄ / NaBH₄\". It adds: [Accept any order of answering.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "nickel (Ni) / platinum (Pt) / palladium (Pd) / copper (Cu) / rhodium (Rh) / ruthenium (Ru)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-b-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "bonds-formed-in-reducing-ethanal",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(b)(ii)",
+  "questionText": "Copy the structure of ethanol and identify clearly the bonds formed during conversion 1.",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-scheme-q8b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "OH bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. The scheme draws ethanol with these bonds boxed; its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "either CH bond of carbon to which OH is attached",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Information only acceptable in diagram form.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2020-HL-paper-q8b-ii-print"
+ },
+ {
+  "id": "chem-2020-hl-q8-c",
+  "topicId": "chem-2-2",
+  "conceptId": "an-organic-compound-soluble-in-water",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(c)",
+  "questionText": "Identify an organic substance in the scheme that is highly soluble in water. Justify your answer.",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethanol (C₂H₅OH, CH₃CH₂OH) / ethanal (CH₃CHO)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hydrogen (H) bonding with water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-d-i",
+  "topicId": "chem-4-2",
+  "conceptId": "identify-chloroethene",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(d)(i)",
+  "questionText": "Identify compound X.",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-scheme-q8d-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chloroethene / 1-chloroethene / 1-chloroethylene / monochloroethene / CH₂CHCl / C₂H₃Cl / vinylchloride",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme also draws its structure; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-d-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "geometry-change-on-elimination",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(d)(ii)",
+  "questionText": "How does the geometry around the carbon atoms change during conversion 7?",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "tetrahedral to",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "planar",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [correct order essential]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q8-d-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "repeating-units-of-pvc",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(d)(iii)",
+  "questionText": "Draw the structure of two repeating units of the polymer PVC.",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-scheme-q8d-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the structure of two repeating units of the polymer PVC.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [End bonds need not be shown but terminal Hs not acceptable.]",
+    "ask": true
+   }
+  ],
+  "notes": "The scheme adds: \"Correct carbon skeleton (4 carbons) with chlorines on alternate carbons\"."
+ },
+ {
+  "id": "chem-2020-hl-q8-e",
+  "topicId": "chem-4-2",
+  "conceptId": "ionic-addition-of-chlorine-to-ethene",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q8(e)",
+  "questionText": "Describe a mechanism, that involves ions, for conversion 6.",
+  "stem": "Study the reaction scheme and answer the questions below.",
+  "figureKey": "chemistry-2020-HL-scheme-q8e",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 3 + 3 + 2]"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chlorine (Cl₂) undergoes heterolytic fission / Cl₂ → Cl⁺ + Cl⁻ / Clδ+—Clδ– → Cl⁺ + Cl⁻ or chlorine (Cl₂) polarised approaching double bond / Cl₂ → Clδ+—Clδ–",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [bond (line) essential in Clδ+—Clδ– ][bond (line) must not be shown between Cl⁺ and Cl⁻]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "attraction of Cl⁺ to double bond / interaction of Cl⁺ with double bond / or attraction of positive end of Clδ+—Clδ– (polarised Cl₂ molecule) to double bond / positive end of Clδ+—Clδ– (polarised Cl₂ molecule) interacts with double bond",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Or instead: \"breaking of double bond in ethene and polarised bond in chlorine (Cl₂)\"."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "carbononium ion (carbocation, C⁺, positively-charged intermediate, bridged chloronium ion) formed",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme draws the steps; its own print is shown with the answer."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "addition of Cl⁻ to carbonium ion (carbocation, C⁺, intermediate, bridged chloronium ion) gives product (1,2-dichloroethane)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Hs need not be shown explicitly]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 3 + 3 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2020-HL-paper-q8e-print"
+ },
+ {
+  "id": "chem-2020-hl-q9-a",
+  "topicId": "chem-3-3",
+  "conceptId": "chemical-equilibrium-and-le-chatelier",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(a)",
+  "questionText": "Explain chemical equilibrium. Why is a chemical equilibrium described as dynamic? State Le Châtelier’s principle.",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "state reached at which concentrations of reactants and products are constant / state reached when rates of forward and reverse reactions are equal",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "forward and reverse (both) reaction(s) continue(s) / forward and reverse (both) reaction(s) doesn’t (don’t) stop",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "systems in (at) equilibrium",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "react to oppose (minimise, relieve) applied stress(es) {disturbance(s)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Instead of ‘stress(es){disturbance(s)}’ accept ‘change in temperature, pressure or number of moles (concentrations)’ if all three {temperature, pressure and moles (concentrations)} are given.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q9-b",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-the-water-gas-shift",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(b)",
+  "questionText": "Write the equilibrium constant (Kc) expression for the reaction above.",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹",
+  "figureKey": "chemistry-2020-HL-scheme-q9b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Write the equilibrium constant (Kc) expression for the reaction above.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Square brackets essential.][Marks may be awarded for this formula given in CALCULATE.]",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q9-c",
+  "topicId": "chem-3-3",
+  "conceptId": "moles-at-equilibrium-from-kc",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(c)",
+  "questionText": "The equilibrium constant for this reaction at 800 K is 4.0. Calculate the number of moles of carbon monoxide in the equilibrium mixture at this temperature.",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹",
+  "figureKey": "chemistry-2020-HL-scheme-q9c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2.097 – 2.1 moles carbon monoxide",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q9-d-i",
+  "topicId": "chem-3-3",
+  "conceptId": "adding-steam-and-kc",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(d)(i)",
+  "questionText": "on the value of Kc,",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹ Predict the effect, if any, of adding more steam at 800 K to the equilibrium mixture",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "no effect / none",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "changing concentration at equilibrium does not change Kc / only temperature change affects (changes) Kc / system reacts (adjusts) to use up steam / system reacts (adjusts) to produce more products (carbon dioxide and hydrogen)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [PREDICT must be correct for JUSTIFY to be awarded marks.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q9-d-ii",
+  "topicId": "chem-3-3",
+  "conceptId": "adding-steam-and-the-yield-of-hydrogen",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(d)(ii)",
+  "questionText": "on the equilibrium yield of hydrogen. Justify your prediction in each case.",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹ Predict the effect, if any, of adding more steam at 800 K to the equilibrium mixture",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "larger (increased) yield of hydrogen / more hydrogen",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "equilibrium (reaction) moves (goes) to right (RHS) / Le Châtelier’s predicts additional steam favours right hand (products, forward reaction, exothermic) side of equilibrium",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [PREDICT must be correct for JUSTIFY to be awarded marks.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q9-e",
+  "topicId": "chem-3-3",
+  "conceptId": "temperature-and-kc-for-an-exothermic-reaction",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q9(e)",
+  "questionText": "State and explain the effect on the value of Kc of increasing the equilibrium temperature.",
+  "stem": "When 3.0 moles of carbon monoxide and 1.0 moles of steam were mixed together in a container of fixed volume V, and in the presence of a suitable catalyst, the following chemical equilibrium was established at a temperature of 800 K. CO (g) + H₂O (g) ⇌ CO₂ (g) + H₂ (g) ΔH = – 41.2 kJ mol⁻¹",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Kc smaller (decreases)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "endothermic (reverse) reaction favoured at higher temperature / ` formation reactants favoured at higher temperature / equilibrium pushed left at higher temperature / exothermic (forward) reaction not favoured at higher temperature / formation products not favoured at higher temperature",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [STATE must be correct for EXPLAIN to be awarded marks.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-i",
+  "topicId": "chem-4-3",
+  "conceptId": "definition-of-bod",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(i)",
+  "questionText": "Define BOD.",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "amount of dissolved oxygen in ppm consumed by biochemical (biological) activities (reactions)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "over a five day period in the dark at 20 °C",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 20 ± 1 °C]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-ii",
+  "topicId": "chem-4-3",
+  "conceptId": "primary-sewage-treatment",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(ii)",
+  "questionText": "What happens during the primary stages of sewage treatment?",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "physical removal of suspended solids / settlement suspended solids / screening of suspended solids",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow filtration.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-iii",
+  "topicId": "chem-4-3",
+  "conceptId": "secondary-sewage-treatment",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(iii)",
+  "questionText": "What happens during the secondary stages of sewage treatment?",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "breakdown (oxidation) of organic matter (effluent, sewage) by / aerobic (anaerobic) reaction",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "by biological (biochemical) process / involving microorganisms (bacteria)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Removal of nutrients’ insufficient but does not cancel]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "when-tertiary-treatment-is-needed",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(iv)",
+  "questionText": "Under what circumstances is tertiary treatment considered desirable?",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "high concentrations (amounts, levels) nitrates (phosphates, nutrients) / to reduce levels of certain microorganisms (to disinfect) / where waste water is to be discharged to a lake (river)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-v",
+  "topicId": "chem-4-3",
+  "conceptId": "why-tertiary-treatment-is-not-always-done",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(v)",
+  "questionText": "Why is tertiary treatment not always carried out, even when desirable?",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "costly",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-a-vi",
+  "topicId": "chem-4-3",
+  "conceptId": "impact-of-omitting-tertiary-treatment",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(a)(vi)",
+  "questionText": "What could a negative environmental impact be if tertiary treatment were not carried out where desirable?",
+  "stem": "Biochemical oxygen demand (BOD) of wastewater is lowered in sewage treatment by decreasing the quantities of suspended and dissolved organic matter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "eutrophication / excessive plant growth / algal bloom (growth) / oxygen depletion (hypoxia) / fish kill / shellfish poisoning / impaired water colour (taste, smell, aesthetic value, usefulness as source for drinking, value for leisure) / water unsafe to drink / etc",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-b-i-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "definitions-of-oxidation",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(b)(i)–(ii)",
+  "questionText": "(i) electron transfer, (ii) change in oxidation number.",
+  "stem": "Define oxidation in terms of",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "loss of electrons",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "increase in oxidation number",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2020-hl-q10-b-iii",
+  "topicId": "chem-3-5",
+  "conceptId": "oxidation-numbers-in-a-lithium-ion-cell",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(b)(iii)",
+  "questionText": "Assign oxidation numbers and determine which element is reduced in this reaction.",
+  "stem": "Define oxidation in terms of The 2019 Nobel Prize for Chemistry was awarded to three scientists for their work in developing rechargeable lithium ion batteries for use in modern devices, e.g. smart-phones and electric vehicles. The balanced equation for the reaction that takes place when one type of lithium ion rechargeable battery supplies electricity is as follows: LiC₆ + CoO₂ → C₆ + LiCoO₂",
+  "figureKey": "chemistry-2020-HL-scheme-q10b-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Assign oxidation numbers and determine which element is reduced in this reaction.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme writes the oxidation numbers under the equation, for atoms or for groups of atoms; its own print is shown with the answer.",
+    "ask": true
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cobalt / Co",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-b-iv",
+  "topicId": "chem-3-5",
+  "conceptId": "the-oxidising-agent",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(b)(iv)",
+  "questionText": "Identify which element acts as the oxidising agent.",
+  "stem": "Define oxidation in terms of The 2019 Nobel Prize for Chemistry was awarded to three scientists for their work in developing rechargeable lithium ion batteries for use in modern devices, e.g. smart-phones and electric vehicles. The balanced equation for the reaction that takes place when one type of lithium ion rechargeable battery supplies electricity is as follows: LiC₆ + CoO₂ → C₆ + LiCoO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "cobalt / Co",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-b-v",
+  "topicId": "chem-3-5",
+  "conceptId": "balancing-the-lead-acid-cell-reaction",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(b)(v)",
+  "questionText": "Using oxidation numbers, or otherwise, balance the following redox reaction that occurs when a lead-acid rechargeable battery supplies electricity: Pb + PbO₂ + H⁺ → Pb²⁺ + H₂O",
+  "stem": "Define oxidation in terms of The 2019 Nobel Prize for Chemistry was awarded to three scientists for their work in developing rechargeable lithium ion batteries for use in modern devices, e.g. smart-phones and electric vehicles. The balanced equation for the reaction that takes place when one type of lithium ion rechargeable battery supplies electricity is as follows: LiC₆ + CoO₂ → C₆ + LiCoO₂",
+  "figureKey": "chemistry-2020-HL-scheme-q10b-v",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pb + PbO₂ + 4H⁺ → 2Pb²⁺ + 2H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme gives (3) for correct oxidation numbers if the balancing is not correct; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-b-vi",
+  "topicId": "chem-4-3",
+  "conceptId": "why-recycle-batteries",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(b)(vi)",
+  "questionText": "Why is the recycling of batteries desirable?",
+  "stem": "Define oxidation in terms of The 2019 Nobel Prize for Chemistry was awarded to three scientists for their work in developing rechargeable lithium ion batteries for use in modern devices, e.g. smart-phones and electric vehicles. The balanced equation for the reaction that takes place when one type of lithium ion rechargeable battery supplies electricity is as follows: LiC₆ + CoO₂ → C₆ + LiCoO₂",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "to avoid pollution of waterways by heavy metals / heavy metals (contents) damage health (toxic, poisonous) / recycling better for environment / metals (chemicals) in limited supply / sustainable methods of energy provision / economically desirable /etc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-c-i",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-aluminium-carbide",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(c)(i)",
+  "questionText": "What mass of Al₄C₃ reacted?",
+  "stem": "Aluminium carbide reacts with water forming aluminium hydroxide and methane gas according to the following balanced equation. Al₄C₃ (s) + 12H₂O (l) → 4Al(OH)₃ (s) + 3CH₄ (g) When a certain mass of aluminium carbide had reacted, according to the equation above, there were 3.6 × 10²³ atoms of hydrogen in the aluminium hydroxide produced.",
+  "figureKey": "chemistry-2020-HL-scheme-q10c-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "7.2 g Al₄C₃",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-c-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "volume-of-methane-at-stp",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(c)(ii)",
+  "questionText": "What volume of methane, measured at s.t.p., was produced in the reaction?",
+  "stem": "Aluminium carbide reacts with water forming aluminium hydroxide and methane gas according to the following balanced equation. Al₄C₃ (s) + 12H₂O (l) → 4Al(OH)₃ (s) + 3CH₄ (g) When a certain mass of aluminium carbide had reacted, according to the equation above, there were 3.6 × 10²³ atoms of hydrogen in the aluminium hydroxide produced.",
+  "figureKey": "chemistry-2020-HL-scheme-q10c-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.36 litres CH₄",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q10-c-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "volume-of-water-used-up",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q10(c)(iii)",
+  "questionText": "Find the volume of water (density 1.0 g cm⁻³) used up in the reaction.",
+  "stem": "Aluminium carbide reacts with water forming aluminium hydroxide and methane gas according to the following balanced equation. Al₄C₃ (s) + 12H₂O (l) → 4Al(OH)₃ (s) + 3CH₄ (g) When a certain mass of aluminium carbide had reacted, according to the equation above, there were 3.6 × 10²³ atoms of hydrogen in the aluminium hydroxide produced.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.05 moles Al₄C₃ × 12 / 0.2 moles Al(OH)₃ × 3 ⇒ 0.6 moles water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.6 × 18* × 1.0 = 10.8 cm³ water",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [*Addition must be shown for error to be treated as slip.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 10.8 cm3 water, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2020-hl-q11-a-i",
+  "topicId": "chem-2-1",
+  "conceptId": "definition-of-electronegativity",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(i)",
+  "questionText": "Define electronegativity.",
+  "stem": "Consider the data shown below for a number of simple hydrides.",
+  "figureKey": "chemistry-2020-HL-paper-q11a-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "number expressing the relative (measure of) attraction of an atom",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "for shared pair(s) of electrons / for electrons in a covalent bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-a-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "hydrogen-bonding-in-water",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(ii)",
+  "questionText": "Hydrogen bonding accounts for the significantly higher boiling point of water compared to that of methane despite their similar relative molecular masses. Describe, with the aid of a diagram, how hydrogen bonding arises between water molecules.",
+  "stem": "Consider the data shown below for a number of simple hydrides.",
+  "figureKey": "chemistry-2020-HL-scheme-q11a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "water molecules with δ+ and δ– polarity marked fully and correctly (as in circle)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. The scheme draws the molecules; its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hydrogen bond drawn between H and O atoms of two separate water molecules correctly labelled δ+ and δ– and clearly labelled or indicated by a dotted line (as in triangle)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [no diagram …..(3) max]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-a-iii",
+  "topicId": "chem-2-2",
+  "conceptId": "why-only-water-hydrogen-bonds",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(iii)",
+  "questionText": "Why is water the only hydride in the table that exhibits strong hydrogen bonding?",
+  "stem": "Consider the data shown below for a number of simple hydrides.",
+  "figureKey": "chemistry-2020-HL-paper-q11a-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "small and electronegative atom (element) needed in hydride for H-bonding to occur / hydrogen bonding involves oxygen (O), nitrogen (N) or fluorine (F) / sulfur (S), selenium (Se) and tellurium (Te) much less electronegative than oxygen (O) / others (other hydrides) have less polarity (smaller electronegativity difference) that results in dipole-dipole interactions",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-a-iv",
+  "topicId": "chem-2-2",
+  "conceptId": "boiling-points-of-the-hydrides",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(iv)",
+  "questionText": "Why is the boiling point of hydrogen selenide higher than that of hydrogen sulfide?",
+  "stem": "Consider the data shown below for a number of simple hydrides.",
+  "figureKey": "chemistry-2020-HL-paper-q11a-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H₂Se has more (stronger) intermolecular (van der Waals, dipole-dipole) forces (bonds, interactions) / H₂Se has more (stronger) dipoles / H₂Se electron cloud that produces intermolecular forces bigger / H₂Se has more electrons / H₂Se has higher molecular mass / H₂Se has bigger molecules",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Reference to breaking covalent bonds unacceptable and cancellation applies.] [Opposite statements explaining lower boiling point of hydrogen sulfide acceptable but hydrogen sulfide must be specified.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-a-v",
+  "topicId": "chem-2-2",
+  "conceptId": "solubility-of-methane-and-hydrogen-selenide",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(a)(v)",
+  "questionText": "Explain why, although carbon and selenium have the same electronegativity value, CH₄ is almost completely insoluble in water and H₂Se is slightly soluble in water.",
+  "stem": "Consider the data shown below for a number of simple hydrides.",
+  "figureKey": "chemistry-2020-HL-paper-q11a-table",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methane (CH₄) molecule non-polar / centres of negative and positive charge coincide (cancel) in methane (CH₄) / methane (CH₄) has no overall dipole moment / highly (very) symmetrical distribution (arrangement of) polar bonds around carbon (central atom) in 3d space in methane (CH₄) / valence electron pairs in methane (CH₄) arranged in perfect tetrahedral / no lone pairs in methane (CH₄)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hydrogen selenide (H₂Se) molecule is polar / centres of negative and positive charge do not coincide (cancel) in hydrogen selenide (H₂Se) / hydrogen selenide (H₂Se) has overall dipole moment / distribution (arrangement) of bonds around selenium only symmetrical in 2d space in hydrogen selenide (H₂Se) / lone pairs in hydrogen selenide (H₂Se)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [methane (CH₄) molecule polar unacceptable and cancels] [methane (CH₄) bond(s) polar unacceptable but no cancellation] [Statement about one substance not taken to imply statement about the other.] And: \"Where no other marks awarded: non-polar (with no dipole, with no charge separation, highly symmetric) molecules insoluble in water\" (4)."
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2020-hl-q11-b-i",
+  "topicId": "chem-1-4",
+  "conceptId": "empirical-formula-from-composition",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(i)",
+  "questionText": "Find by calculation the empirical formula of the compound.",
+  "stem": "The percentage composition by mass of a pure, colourless liquid is 40.0% carbon, 6.67% hydrogen and 53.33% oxygen. The mass spectrum of the unknown substance was recorded and indicated that the relative molecular mass of the compound was 60. The infrared spectrum of the unknown substance was also recorded and indicated that there was a carbonyl group in the molecular structure of the compound.",
+  "figureKey": "chemistry-2020-HL-scheme-q11b-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CH₂O",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme prices the answer for the whole part and sets out the working that earns it, with the marks for each step, in a form its text cannot carry; its own print is shown with the answer."
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-b-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "molecular-formula-from-relative-molecular-mass",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(ii)",
+  "questionText": "What molecular formula is suggested by the empirical formula and the mass spectrum result together?",
+  "stem": "The percentage composition by mass of a pure, colourless liquid is 40.0% carbon, 6.67% hydrogen and 53.33% oxygen. The mass spectrum of the unknown substance was recorded and indicated that the relative molecular mass of the compound was 60. The infrared spectrum of the unknown substance was also recorded and indicated that there was a carbonyl group in the molecular structure of the compound.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₂H₄O₂",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-b-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "compounds-of-formula-c2h4o2",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(iii)",
+  "questionText": "Give the systematic IUPAC names or draw the structures for two compounds with this molecular formula that contain a carbonyl group.",
+  "stem": "The percentage composition by mass of a pure, colourless liquid is 40.0% carbon, 6.67% hydrogen and 53.33% oxygen. The mass spectrum of the unknown substance was recorded and indicated that the relative molecular mass of the compound was 60. The infrared spectrum of the unknown substance was also recorded and indicated that there was a carbonyl group in the molecular structure of the compound.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "ethanoic acid / CH₃COOH",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "ethanoic acid / CH₃COOH",
+      "methyl methanoate / HCOOCH₃",
+      "hydroxyethanal / HOCH₂CHO"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-b-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "test-for-a-carboxylic-acid",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(b)(iv)",
+  "questionText": "What conclusion can be reached if there was effervescence when a drop of the unknown liquid was added to a little damp, solid Na₂CO₃ on a clock glass?",
+  "stem": "The percentage composition by mass of a pure, colourless liquid is 40.0% carbon, 6.67% hydrogen and 53.33% oxygen. The mass spectrum of the unknown substance was recorded and indicated that the relative molecular mass of the compound was 60. The infrared spectrum of the unknown substance was also recorded and indicated that there was a carbonyl group in the molecular structure of the compound.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "acidic group present / carboxylic group present / unknown is ethanoic acid (CH₃COOH)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-a-i",
+  "topicId": "chem-u3",
+  "conceptId": "a-use-of-oxygen",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)A(i)",
+  "questionText": "Give one use for oxygen other than as a respiratory gas or to aid breathing.",
+  "stem": "Oxygen gas can be prepared in the school laboratory by the catalytic decomposition of hydrogen peroxide or by the electrolysis of acidified water. However, for large-scale use, oxygen gas is not usually produced by a chemical reaction but is extracted from the other gases in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "steel-making / rocket fuel oxidant / oxyacetylene flame (welding, cutting metals) / supports fuel combustion / combat pollution in water / beauty (skin) treatment / use in bomb calorimeter (measuring heats of combustion) / photosynthesis / etc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-a-ii",
+  "topicId": "chem-u3",
+  "conceptId": "separating-oxygen-from-air",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)A(ii)",
+  "questionText": "Describe the stages of the industrial separation of oxygen from air.",
+  "stem": "Oxygen gas can be prepared in the school laboratory by the catalytic decomposition of hydrogen peroxide or by the electrolysis of acidified water. However, for large-scale use, oxygen gas is not usually produced by a chemical reaction but is extracted from the other gases in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "filter air / remove of dust (non gaseous impurities) / remove carbon dioxide (CO₂) / remove water vapour (H₂O)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [4 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "compress air (refrigerate air, cool air) and allow to expand quickly to liquefy",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "liquid air boils (vaporises, heats up, warms up) in fractionating column / use fractional distillation / allow temperature to rise to distil mixture (air, gases)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "nitrogen (N₂) gas at top of column / liquid oxygen (liquid O₂) at base of column / nitrogen (N₂) collected (boils, distils, vaporises) first / nitrogen (N₂) has lower boiling point / oxygen (O₂) has higher boiling point",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks may be awarded for information given in a clear labelled diagram.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-a-iii",
+  "topicId": "chem-u3",
+  "conceptId": "co-product-of-oxygen-separation",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)A(iii)",
+  "questionText": "Identify the major co-product of this industrial process.",
+  "stem": "Oxygen gas can be prepared in the school laboratory by the catalytic decomposition of hydrogen peroxide or by the electrolysis of acidified water. However, for large-scale use, oxygen gas is not usually produced by a chemical reaction but is extracted from the other gases in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nitrogen (N₂)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-a-iv",
+  "topicId": "chem-u3",
+  "conceptId": "a-use-of-nitrogen",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)A(iv)",
+  "questionText": "Give a use for the co-product.",
+  "stem": "Oxygen gas can be prepared in the school laboratory by the catalytic decomposition of hydrogen peroxide or by the electrolysis of acidified water. However, for large-scale use, oxygen gas is not usually produced by a chemical reaction but is extracted from the other gases in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "packaging food to prevent oxidation / packaging to prevent crushing of food (delicate items) / flushing (purging) tanks of flammable liquids (gases, vapours, oil tank) / inert atmosphere in industry / freezing (preserving) food (biological specimens, sperm, semen) / remove unwanted skin cells / remove skin cancer (warts, verrucae) / feedstock for ammonia industry, etc",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-a-v",
+  "topicId": "chem-u3",
+  "conceptId": "why-nitrogen-is-inert",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)A(v)",
+  "questionText": "Explain why the co-product is chemically inert.",
+  "stem": "Oxygen gas can be prepared in the school laboratory by the catalytic decomposition of hydrogen peroxide or by the electrolysis of acidified water. However, for large-scale use, oxygen gas is not usually produced by a chemical reaction but is extracted from the other gases in air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "very strong (high energy) triple bond / N≡N / non-polar / high degree of symmetry perpendicular bond axis / no dipole moment / no unpaired electrons",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-b-i",
+  "topicId": "chem-3-5",
+  "conceptId": "corrosion-of-a-metal",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)B(i)",
+  "questionText": "What is meant by corrosion of a metal?",
+  "stem": "The photograph shows the Atomium in Brussels. The Atomium represents the crystal structure of iron magnified about 165 billion times. Each of the nine spheres, which represent iron atoms, was originally clad in sheets of anodised aluminium. The aluminium has now been replaced with stainless steel cladding.",
+  "figureKey": "chemistry-2020-HL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "oxidation of surface of metal / reaction of surface of metal when exposed to air (water, dampness, acid, the environment) / return to ore state",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-b-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "corrosion-of-iron-and-aluminium",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)B(ii)",
+  "questionText": "Compare the abilities of pure iron and pure aluminium to resist corrosion.",
+  "stem": "The photograph shows the Atomium in Brussels. The Atomium represents the crystal structure of iron magnified about 165 billion times. Each of the nine spheres, which represent iron atoms, was originally clad in sheets of anodised aluminium. The aluminium has now been replaced with stainless steel cladding.",
+  "figureKey": "chemistry-2020-HL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aluminium resists corrosion better / iron resists corrosion less well",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "oxide of aluminium adheres / oxide of iron (rust) flakes off",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘ iron corrodes (rusts) more easily’]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-b-iii",
+  "topicId": "chem-3-5",
+  "conceptId": "iron-and-steel",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)B(iii)",
+  "questionText": "What is the difference between iron and steel?",
+  "stem": "The photograph shows the Atomium in Brussels. The Atomium represents the crystal structure of iron magnified about 165 billion times. Each of the nine spheres, which represent iron atoms, was originally clad in sheets of anodised aluminium. The aluminium has now been replaced with stainless steel cladding.",
+  "figureKey": "chemistry-2020-HL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "steel contains carbon (other elements, elements other than iron) / steel is an alloy of iron / steel is a mixture of elements",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2020-hl-q11-c-b-iv",
+  "topicId": "chem-3-5",
+  "conceptId": "anodising-aluminium",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)B(iv)",
+  "questionText": "What is meant by anodising aluminium?",
+  "stem": "The photograph shows the Atomium in Brussels. The Atomium represents the crystal structure of iron magnified about 165 billion times. Each of the nine spheres, which represent iron atoms, was originally clad in sheets of anodised aluminium. The aluminium has now been replaced with stainless steel cladding.",
+  "figureKey": "chemistry-2020-HL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "creating (thickening) layer of aluminium oxide (Al₂O₃) on aluminium",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "by electrolysis / aluminium made the anode in electrochemical cell / by generating oxygen gas on (at) aluminium electrode in voltameter",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2020-hl-q11-c-b-v",
+  "topicId": "chem-2-1",
+  "conceptId": "why-metals-conduct",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2020 HL Q11(c)B(v)",
+  "questionText": "Why can metals conduct electricity?",
+  "stem": "The photograph shows the Atomium in Brussels. The Atomium represents the crystal structure of iron magnified about 165 billion times. Each of the nine spheres, which represent iron atoms, was originally clad in sheets of anodised aluminium. The aluminium has now been replaced with stainless steel cladding.",
+  "figureKey": "chemistry-2020-HL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "valence electrons free to move / valence electrons delocalised / valence electrons shared between all atoms (positive ions)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
  }
 ]

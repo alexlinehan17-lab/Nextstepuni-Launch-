@@ -47,7 +47,9 @@ SCHEMES = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'schemes')
 # The 2021-2022 schemes set their footer as three runs: "Higher Level",
 # "Chemistry 2022", "Page 5".
 FOOTER = re.compile(r'^(Leaving Certificate( Examination)?,? 20\d\d|Chemistry\s*[–-]\s*(Higher|Ordinary) Level'
-                    r'|Marking Scheme|\d{1,2}|Page \d{1,2}|(Higher|Ordinary) Level|Chemistry 20\d\d)\s*$')
+                    r'|Marking Scheme|\d{1,2}|Page \d{1,2}|(Higher|Ordinary) Level|Chemistry 20\d\d'
+                    # The 2020 Ordinary scheme: "LC Ordinary Level Chemistry   8   2020".
+                    r'|LC (Higher|Ordinary) Level Chemistry|20\d\d)\s*$')
 # A mark cell at the scheme's right margin: "[2]", "[5+2]", "[6+2+2+2]", "[3×1 + 3]".
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
 # The 2023 Ordinary scheme sets the run in square brackets inside a round cell,
@@ -220,6 +222,41 @@ def read_lines(path, first=1, last=None):
     return out
 
 
+def _recluster(lines, pages):
+    """Read the rows of `pages` across again, as read_lines does.
+
+    read_lines clusters a page's lines into rows within 5 points of a row's
+    first line. A figure's label can be that first line: on 2020 HL page 7 the
+    table cell "pH at source" sits 4.6 points above "the OH- ion concentration
+    of the source water.", drew it into its row, and left the "(ii)" printed
+    beside it 5.6 points down to open the next row -- after its own words, so
+    (d)(i) read both asks and (d)(ii) read the next lead-in. Once a page's
+    figure lines are gone its rows are formed again from what remains; a page
+    that lost nothing keeps its order exactly."""
+    if not pages:
+        return lines
+    out, by_page, order = [], {}, []
+    for l in lines:
+        if l.page not in by_page:
+            by_page[l.page] = []
+            order.append(l.page)
+        by_page[l.page].append(l)
+    for page in order:
+        cells = by_page[page]
+        if page not in pages:
+            out.extend(cells)
+            continue
+        cells = sorted(cells, key=lambda c: (c.y0, c.x0))
+        row = []
+        for c in cells:
+            if row and c.y0 - row[0].y0 > 5.0:
+                out.extend(sorted(row, key=lambda r: r.x0))
+                row = []
+            row.append(c)
+        out.extend(sorted(row, key=lambda r: r.x0))
+    return out
+
+
 # ── splitting a document into its printed parts ─────────────────────────────
 QNUM = re.compile(r'^(\d{1,2})\.?$')
 HEADER = re.compile(r'^(Section [AB]|See page 1 for instructions.*'
@@ -283,7 +320,7 @@ MISPRINTED = []
 # is not reprinted, so every line under a part that is not a marker is answer.
 QUESTION_HEAD = re.compile(r'^QUESTION\s+(\d{1,2})\b\.?\s*$', re.I)
 CUE_WORD = r"[A-Z]{2,}[A-Z’']*"
-CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)(?:,\s*etc)?\s*:\s*')
+CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)(?:,?\s*etc)?\s*:\s*')
 TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define|Write|Give|Draw|'
                        r'How|Why|What|Find|Show|List|Outline|Deduce|Distinguish)\s*:\s*')
 ANY_CELL = re.compile(r'^ANY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX)(?:\s+POINTS(?:\s+FROM\s+TABLE)?)?'
@@ -299,14 +336,17 @@ def any_bracket_cell(t):
     return as_cell('(' + t[1:-1].strip() + ')') if t.startswith('[') else as_cell(t)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
-FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
+FORMULAE_CELL = re.compile(r'^(?:PRODUCT\s+)?FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
 CUE_TAIL = re.compile(r"&|(?:&\s*)?[A-Z]{2,}(?:\s+(?:&|[A-Z]{2,}))*:?")
 # A cell the scheme labels with the number of parts it prices: "TWO PARTS :
 # (2 × 2)" (2022 HL Q11(c)(i)).
-PARTS_CELL = re.compile(r'^(TWO|THREE|FOUR)\s+PARTS\s*:\s*(\(.+\))\s*$')
+PARTS_CELL = re.compile(r'^(TWO|THREE|FOUR)\s+(?:PARTS|BONDS)\s*:\s*(\(.+\))\s*$')
+# A cell the 2020 Higher scheme labels with what it prices: "BALANCED EQUATION:
+# (3)" beside the equation that Q6(d)(ii) asks for before its calculation.
+LABEL_CELL = re.compile(r'^()(?:BALANCED\s+)?EQUATION\s*:\s*(\(\d{1,2}\))\s*$')
 # A cell set between two answers on one row: "(3)" followed by more text.
 MID_ROUND = re.compile(r'\s\((\d{1,2}(?:\s*[×x]\s*\d{1,2})?)\)\s+(?=\S)')
 
@@ -356,7 +396,7 @@ def cue_lines(lines):
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
                             any_bracket_cell(m.group(2)), True))
             continue
-        m = PARTS_CELL.match(t)
+        m = PARTS_CELL.match(t) or LABEL_CELL.match(t)
         if m and l.x0 > 350:
             y0, y1 = shifted(l)
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1), as_cell(m.group(2)), True))
@@ -1038,17 +1078,19 @@ class Printed:
         from chem_print_figures import CROPS
         boxes = [(page, rect) for _n, src, page, rect in CROPS.get((self.year, self.lvl), [])
                  if src in ('paper', 'paper-image', 'labels')]
-        kept = []
+        kept, emptied = [], set()
         for l in lines:
             inside = any(l.page == page and l.x0 >= r[0] - 1 and l.y0 >= r[1] - 1
                          and l.x1 <= r[2] + 1 and l.y1 <= r[3] + 1 for page, r in boxes)
             if not inside:
                 kept.append(l)
-            elif LETTER.match(l.text) or ROMAN.match(l.text) or PAPER_MARK.match(l.text) \
+                continue
+            emptied.add(l.page)
+            if LETTER.match(l.text) or ROMAN.match(l.text) or PAPER_MARK.match(l.text) \
                     or (QNUM.match(l.text) and l.x0 < 70 and l.text.endswith('.')):
                 # (A table's plain "1", a group number, is not a question's.)
                 raise ValueError(f'a figure crop covers the marker {l.text!r} on page {l.page}')
-        return kept
+        return _recluster(kept, emptied)
 
     def _outside_scheme_art(self, lines):
         """The scheme's lines less those inside a drawing it answers with.
