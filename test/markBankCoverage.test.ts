@@ -193,13 +193,18 @@ describe('Mark Bank paper-coverage ratchet', () => {
       .filter(({ ref }) => {
         if (subject === 'accounting') return !/^\d{4} (?:HL|OL) Q[1-9][A-Z]?(?:\([a-z0-9]+\))*(?:-[a-z0-9()-]+)?$/.test(ref);
         if (subject === 'english') {
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
+          // Legacy 2021-2025 cards bundle linked parts; reviewed published
+          // papers are atomic, so a part label may follow the question and a
+          // finite route appends its label after " · ".
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] Q(?:A|B)(?:\((?:i|ii|iii)\)(?:\((?:a|b)\))?)?|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4](?:\((?:a|b|c|i|ii|iii)\))?)|Comparative [A-C] Q[12](?:\((?:a|b)\)(?:\((?:i|ii)\))?)?|Unseen Poetry Q[1-3](?:\((?:a|b)\))?|Prescribed Poetry (?:Q?[1-5]|[A-F] Q[12](?:\((?:a|b|c|i|ii|iii)\))?))(?: · .+)?$/.test(ref);
         }
         if (subject === 'irish') {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
         }
         if (subject === 'geography') {
-          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);
+          // Reviewed sittings cite the printed part: "Q2(ii)(a)", "Q5A(iii)", "Q8A(vii)";
+          // 2017 Ordinary prints four lettered statements under Q4(i), (a)-(d).
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?:\((?:i|ii|iii|iv|v|vi|vii|viii)\))?(?:\([a-d]\))?(?: · .+)?$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -231,7 +236,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
       || subject === 'geography' || subject === 'politics-and-society' || subject === 'accounting') {
-      for (const name of ['factory.ts', 'authored.json']) {
+      // Geography's claimable rows are cut from its lines at load (allocation.ts).
+      const names = subject === 'english'
+        ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
+        : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
+          : ['factory.ts', 'authored.json'];
+      for (const name of names) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
       }

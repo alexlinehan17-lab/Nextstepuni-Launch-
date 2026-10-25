@@ -118,6 +118,19 @@ subject-specific generators.
 - Compact long rubrics by grouping parallel, compulsory checks into bounded
   rows. Do not change their total, optionality or route tariff to meet a visual
   row cap.
+- **An answer the scheme prices is a claimable row, never prose.** The student
+  must see the answer and its marks as a button (`6.1 · 3m`), the way a science
+  card shows its marking points. Scheme prose is only for examiner directions:
+  caps, "accept any valid…", diagram conditions. A rubric criterion whose
+  guidance carries `… 6.1 ⟨3m⟩`, `• German — 5 Marks` or `Oifigeach = 2 mharc`
+  as text over a slider or dropdown is a defect (Alex, 2026-10-23: "the marking
+  scheme answers should always be clear to students, not buried in blocks of
+  text"). Where the scheme prices an answer without printing one ("Tectonic
+  plate named 3m"), the row shows the scheme's own words and says any correct
+  answer scores; it never carries an example the scheme did not print. A point
+  row that is only a tariff ("Phase named") or that welds several priced
+  answers into one string is the same defect. `test/markBankAnswerClarity.test.ts`
+  counts these per subject and must only ever fall.
 - Every newly supported subject must be added to the global deck sample,
   integrity, accessibility, size and preservation guards. A subject-specific
   test alone cannot catch cross-deck duplicates or UI assumptions.

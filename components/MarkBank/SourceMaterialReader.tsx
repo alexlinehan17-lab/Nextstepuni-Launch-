@@ -40,8 +40,12 @@ interface SourceMaterialReaderProps {
   labelNamesMaterial?: boolean;
 }
 
+// Some official companions (an aerial photograph, an older legend) are
+// published as a single image rather than a PDF. Keep their real extension so
+// the exact SEC file is shown, never a re-encoded copy.
+const IMAGE_FILE = /\.(?:jpe?g|png)$/i;
 const withPdfExtension = (fileid: string) =>
-  fileid.toLowerCase().endsWith('.pdf') ? fileid : `${fileid}.pdf`;
+  fileid.toLowerCase().endsWith('.pdf') || IMAGE_FILE.test(fileid) ? fileid : `${fileid}.pdf`;
 
 const clamp = (value: number, max: number) => Math.max(0, Math.min(max, value));
 
@@ -72,10 +76,17 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid, documentKind = 'paper', inline = false, labelNamesMaterial = false,
 }) => {
   const isIllustration = source.kind === 'source-illustration';
+  const isImage = IMAGE_FILE.test(paperFileid);
   const isScheme = documentKind === 'scheme' || source.kind === 'marking-scheme' || source.kind === 'source-scheme';
   const isAccounting = subjectId === 'accounting';
   const maxZoom = isAccounting ? 3 : 2;
-  const materialLabel = source.kind === 'source-scheme' || (isAccounting && isScheme) ? 'worked solution' : isScheme ? 'marking scheme'
+  const isSupplementary = source.kind === 'supplementary-text';
+  const isLinked = source.kind === 'linked-reading';
+  const readings = source.readings ?? [];
+  const texts = source.texts ?? [];
+  const itemCount = isLinked ? readings.length : isSupplementary ? texts.length : source.pages.length;
+  const materialLabel = isSupplementary || isLinked ? 'supplementary reading'
+    : source.kind === 'source-scheme' || (isAccounting && isScheme) ? 'worked solution' : isScheme ? 'marking scheme'
     : source.kind === 'source-table' ? 'accounting data'
     : source.kind === 'source-data' ? 'source material'
     : source.kind === 'exam-material' ? 'exam material'
@@ -93,9 +104,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   const swipeStart = useRef<{ x: number; y: number; pointerId: number } | null>(null);
 
   const url = useMemo(() => paperUrl(paperStoragePath(
-    'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, year,
+    'lc', subjectId === 'applied-maths' ? resolveSubjectId(subjectId)! : subjectId, source.sourceYear ?? year,
     isScheme ? 'scheme' : 'paper', withPdfExtension(source.sourceFileid ?? paperFileid),
-  )), [paperFileid, source.sourceFileid, subjectId, year, isScheme]);
+  )), [paperFileid, source.sourceFileid, source.sourceYear, subjectId, year, isScheme]);
   const regions = useMemo(
     () => source.pages.map((page, index) => {
       const crop = source.regions?.[index];
@@ -116,13 +127,14 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, []);
 
   const show = useCallback(() => {
+    setFailed(false);
     setPageIndex(0);
     setZoom(1);
     setOpen(true);
   }, []);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || isImage || isSupplementary || isLinked) return;
     let cancelled = false;
     setFailed(false);
     setPdf(null);
@@ -130,7 +142,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       .then(document => { if (!cancelled) setPdf(document); })
       .catch(() => { if (!cancelled) setFailed(true); });
     return () => { cancelled = true; };
-  }, [open, url]);
+  }, [open, url, isImage, isSupplementary, isLinked]);
 
   useEffect(() => {
     if (!open) return;
@@ -153,7 +165,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   }, [open, close]);
 
   const goTo = useCallback((next: number) => {
-    const index = clamp(next, source.pages.length - 1);
+    const index = clamp(next, itemCount - 1);
+    const activeControl = document.activeElement;
     setPageIndex(index);
     const track = trackRef.current;
     if (track && typeof track.scrollTo === 'function') {
@@ -161,16 +174,24 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       // this dialog, leaving the question displaced when the reader closes.
       track.scrollTo({ left: index * track.clientWidth, behavior: 'smooth' });
     }
-  }, [source.pages.length]);
+    // Reaching the first/last item disables the arrow that was just pressed.
+    // Keep keyboard focus in the reader when the browser blurs that control.
+    requestAnimationFrame(() => {
+      if (activeControl instanceof HTMLButtonElement && activeControl.disabled) {
+        activeControl.closest('[role="dialog"]')
+          ?.querySelector<HTMLButtonElement>('[aria-current="page"]')?.focus();
+      }
+    });
+  }, [itemCount]);
 
   const trackScrolled = useCallback(() => {
     if (scrollFrame.current !== null) cancelAnimationFrame(scrollFrame.current);
     scrollFrame.current = requestAnimationFrame(() => {
       const track = trackRef.current;
       if (!track || track.clientWidth === 0) return;
-      setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), source.pages.length - 1));
+      setPageIndex(clamp(Math.round(track.scrollLeft / track.clientWidth), itemCount - 1));
     });
-  }, [source.pages.length]);
+  }, [itemCount]);
 
   const swipeStarted = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
     if (zoom !== 1 || event.isPrimary === false) return;
@@ -253,12 +274,12 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         aria-labelledby="mb-source-reader-title"
         onKeyDown={trapDialogKeys}
       >
-        <header className="mb-source-reader-header">
+        <header className={`mb-source-reader-header${isLinked ? ' mb-source-reader-header-linked' : ''}`}>
           <div className="mb-source-reader-heading">
             <span>{labelNamesMaterial ? source.label : `${source.label} · ${materialLabel}`}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
-          <div className="mb-source-reader-tools" aria-label="Page display controls">
+          {!isLinked && <div className="mb-source-reader-tools" aria-label="Page display controls">
             <button
               type="button"
               onClick={() => setZoom(value => Math.max(1, Number((value - 0.25).toFixed(2))))}
@@ -278,13 +299,27 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             >
               <span aria-hidden="true">+</span>
             </button>
-          </div>
+          </div>}
           <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label={`Close ${materialLabel}`}>
             <CloseIcon />
           </button>
         </header>
 
-        <div
+        {isLinked ? (
+          <div className="mb-source-reader-reading-list">
+            <p>{source.presentationNote}</p>
+            {readings.map(reading => (
+              <article key={reading.sourceUrl}>
+                <h3>{reading.title}</h3>
+                <p>{reading.author} · {reading.edition}</p>
+                <p>{reading.location}</p>
+                <a href={reading.sourceUrl} target="_blank" rel="noreferrer">
+                  Read {reading.title}{' '}<span>Opens in a new tab</span>
+                </a>
+              </article>
+            ))}
+          </div>
+        ) : <div
           ref={trackRef}
           className="mb-source-reader-track"
           onScroll={trackScrolled}
@@ -296,9 +331,26 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           onTouchStart={touchSwipeStarted}
           onTouchEnd={touchSwipeFinished}
           style={{ touchAction: zoom === 1 ? 'pan-y' : 'auto' }}
-          aria-label={`${source.label} pages`}
+          aria-label={`${source.label} ${isSupplementary ? 'poems' : 'pages'}`}
         >
-          {source.pages.map((page, index) => (
+          {isSupplementary ? texts.map((text, index) => (
+            <section key={text.title} className="mb-source-reader-slide" aria-label={`Poem ${index + 1} of ${itemCount}`}>
+              <div className="mb-source-reader-page-meta">
+                <span>Supplementary reading</span><span>{index + 1} / {itemCount}</span>
+              </div>
+              <div className="mb-source-reader-page-pan">
+                <article className="mb-source-reader-poem" style={{ fontSize: `${zoom}em` }}>
+                  <h3>{text.title}</h3>
+                  <p className="mb-source-reader-poet">{text.author}</p>
+                  {text.stanzas.map((lines, stanza) => (
+                    <p className="mb-source-reader-stanza" key={stanza}>
+                      {lines.map((line, number) => <span key={number}>{line}</span>)}
+                    </p>
+                  ))}
+                </article>
+              </div>
+            </section>
+          )) : source.pages.map((page, index) => (
             <section
               key={page}
               className="mb-source-reader-slide"
@@ -313,7 +365,21 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                   className="mb-source-reader-paper"
                   style={{ width: `${zoom * 100}%` }}
                 >
-                  {pdf ? (
+                  {isImage ? (
+                    failed ? (
+                      <div className="mb-source-reader-failed">
+                        <strong>That image did not load.</strong>
+                        <span>You can open the original examination image below.</span>
+                      </div>
+                    ) : (
+                      <img
+                        src={url}
+                        alt={pageAriaLabel(page)}
+                        onError={() => setFailed(true)}
+                        style={{ display: 'block', width: '100%', height: 'auto' }}
+                      />
+                    )
+                  ) : pdf ? (
                     <CropView
                       key={`${page}-${zoom}`}
                       pdf={pdf}
@@ -343,41 +409,41 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               </div>
             </section>
           ))}
-        </div>
+        </div>}
 
         <footer className="mb-source-reader-footer">
           <div className="mb-source-reader-provenance">
-            <strong>{source.attribution}</strong>
-            <span>{source.presentationNote}</span>
-            <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original {isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}
-            </a>
+            <strong>{isSupplementary ? texts[pageIndex]?.edition : source.attribution}</strong>
+            {!isLinked && <span>{source.presentationNote}</span>}
+            {!isLinked && <a href={isSupplementary ? texts[pageIndex]?.sourceUrl : isImage ? url : `${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
+              {isSupplementary ? 'View this edition and attribution' : `Open the original ${isScheme ? 'marking scheme' : isIllustration ? 'illustration sheet' : 'paper'}`}
+            </a>}
           </div>
-          <div className="mb-source-reader-navigation">
+          {!isLinked && <div className="mb-source-reader-navigation">
             <button
               type="button" onClick={() => goTo(pageIndex - 1)} disabled={pageIndex === 0}
-              aria-label="Previous source page"
+              aria-label={isSupplementary ? 'Previous poem' : 'Previous source page'}
             >
               <ArrowIcon direction="left" />
             </button>
-            <div className="mb-source-reader-dots" aria-label={`Page ${pageIndex + 1} of ${source.pages.length}`}>
-              {source.pages.map((page, index) => (
+            <div className="mb-source-reader-dots" aria-label={`${isSupplementary ? 'Poem' : 'Page'} ${pageIndex + 1} of ${itemCount}`}>
+              {Array.from({ length: itemCount }, (_, index) => (
                 <button
-                  key={page}
+                  key={index}
                   type="button"
                   onClick={() => goTo(index)}
-                  aria-label={`Go to source page ${index + 1}`}
+                  aria-label={isSupplementary ? `Read ${texts[index].title}` : `Go to source page ${index + 1}`}
                   aria-current={index === pageIndex ? 'page' : undefined}
                 />
               ))}
             </div>
             <button
-              type="button" onClick={() => goTo(pageIndex + 1)} disabled={pageIndex === source.pages.length - 1}
-              aria-label="Next source page"
+              type="button" onClick={() => goTo(pageIndex + 1)} disabled={pageIndex === itemCount - 1}
+              aria-label={isSupplementary ? 'Next poem' : 'Next source page'}
             >
               <ArrowIcon direction="right" />
             </button>
-          </div>
+          </div>}
         </footer>
       </div>
     </div>,
@@ -394,7 +460,8 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
           <span>{isAccounting && isScheme ? 'Open worked solution' : source.kind === 'source-table' ? 'Open accounting data' : `${source.kind === 'marking-scheme' || source.kind === 'exam-material' ? 'Open' : 'Read'} ${source.label}`}</span>
           <strong>{source.title}</strong>
           <small>
-            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}
+            {isLinked ? `${itemCount} poems · published reading copies` : isSupplementary ? `${itemCount} poems · supplementary reading editions` :
+              `${itemCount} printed ${itemCount === 1 ? 'page' : 'pages'} · ${source.kind === 'source-scheme' ? 'official worked solution' : isScheme ? 'official marking guidance' : source.kind === 'source-table' ? 'original tables and figures' : source.kind === 'source-data' ? 'original documents and graphics' : source.kind === 'exam-material' ? 'original examination material' : isIllustration ? 'official examination imagery' : 'exact examination text'}`}
           </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">

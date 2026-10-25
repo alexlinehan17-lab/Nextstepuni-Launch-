@@ -2,6 +2,19 @@ import { PAPER_TRAIL_INDEX } from '../../paperTrailData';
 import { browseTopicIdsForQuestion, topicLabel, topicsForPaper } from '../../components/PaperTrail/topics';
 import { findCanonicalTopic, resolveCurriculumSpecification } from '../../curriculumRegistry';
 import type { AskIndexFile, AskTopicIndexFile } from '../../components/landing/fx-e/ask';
+import { CURRICULUM } from '../../curriculum';
+
+/** Curriculum names for canonical tag ids that the Paper Trail label table
+ * predates (english-12-17 is "Pride and Prejudice (Jane Austen)"). A Topics
+ * search lists each matched label, so it must never fall back to a bare id. */
+const CURRICULUM_NAMES = new Map<string, string>(CURRICULUM.flatMap(subject => subject.strands.flatMap(strand => [
+  [strand.id, strand.name] as const,
+  ...strand.subtopics.map(subtopic => [subtopic.id, subtopic.name] as const),
+])));
+const labelFor = (id: string): string => {
+  const label = topicLabel(id);
+  return label === id ? CURRICULUM_NAMES.get(id) ?? label : label;
+};
 
 /** Exact subject/year/level/language/booklet/question joins. Topic rows do not
  * depend on the separate text parser having found or numbered a question.
@@ -33,7 +46,7 @@ export function buildAskTopicIndex(
         for (const question of tags.q) {
           const ids = new Set<number>();
           for (const id of browseTopicIdsForQuestion(tags, question)) {
-            ids.add(addTopic(id, topicLabel(id)));
+            ids.add(addTopic(id, labelFor(id)));
           }
           // Include the canonical syllabus label as well as the student-facing
           // exam topic. E.g. Trigonometry still finds Sine/Cosine Rule questions.
@@ -42,7 +55,7 @@ export function buildAskTopicIndex(
             // Retain the committed tag too: a newer browse crosswalk can group
             // an older Trigonometry question under the broader Geometry label.
             const sourceKey = `papertrail/${id}`;
-            ids.add(addTopic(sourceKey, topicLabel(id)));
+            ids.add(addTopic(sourceKey, labelFor(id)));
             if (!spec) continue;
             const topic = findCanonicalTopic(spec, id);
             if (!topic) continue;

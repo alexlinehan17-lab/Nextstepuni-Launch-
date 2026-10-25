@@ -45,6 +45,7 @@ import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
 import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
 import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
+import geographyReview from '../scripts/markbank/authored/geography-reviewed-audit.json';
 import { CARDS as COMPUTER_SCIENCE_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
 import { CARDS as COMPUTER_SCIENCE_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as ENGINEERING_HIGHER } from '../components/MarkBank/cards/engineering/higher';
@@ -104,6 +105,8 @@ import businessReviewed from '../components/MarkBank/cards/business/rubric-autho
 import businessRoutePools from '../components/MarkBank/cards/business/route-pools.json';
 import { expandBusinessRoutePools } from '../components/MarkBank/cards/business/routes.mjs';
 import agriculturalReview from '../scripts/markbank/authored/agricultural-science-reviewed-tasks.json';
+import publishedEnglishHigher from '../components/MarkBank/cards/english/published-higher.json';
+import publishedEnglishOrdinary from '../components/MarkBank/cards/english/published-ordinary.json';
 
 import { CARDS as BULGARIAN_HIGHER } from '../components/MarkBank/cards/bulgarian/higher';
 import { CARDS as CROATIAN_HIGHER } from '../components/MarkBank/cards/croatian/higher';
@@ -493,6 +496,27 @@ const decks = [
    * This includes all three OL prescribed-poetry Q2 alternatives per poem;
    * compulsory linked parts remain together but retain separate PCLM grids.
    * 205 cards open the real paper passage or poem in the source reader. */
+  /* 2026-10-11: English 210/440 -> 605/1571. 1,526 cards ADDED, none removed
+   * or renamed: the 33 papers whose own independent review gate passes
+   * (2010-2015 all four, 2016 HL/OL P1, 2018 all four, 2026 OL P2, HL P1,
+   * HL P2) are published by english_publish.py as separately practicable
+   * tasks and finite printed routes, each on its own year's printed grid and
+   * cap rule. Every one of the 650 legacy 2021-2025 ids is unchanged; the
+   * legacy-only hashes below are the previous frozen baselines verbatim. */
+  /* English (2026-10-11/12). Legacy 2021-2025 cards come from authored.json;
+   * independently reviewed papers are published by english_publish.py. A
+   * legacy paper is published only through english-legacy-bridge.json: each
+   * legacy id is kept by its reviewed card or becomes a progress alias, and
+   * the legacy proof below reproduces the frozen 210/440-id hashes from live
+   * plus bridged ids. A printed choice marked identically for every option is
+   * one card, and a task printed twice on a paper is one card (coordinator
+   * rule, 2026-10-12); the 778 route cards and 8 repeats that rule removed
+   * existed only on the English branch, never on main.
+   * 2026-10-23 ship: all 68 English-version papers 2010-2026 published, 2,685
+   * cards (738 Higher, 1,947 Ordinary). These pins stay main's frozen 210/440
+   * identities; the reviewed cards are additions on top (englishAdditionIds)
+   * and the 125 bridged legacy ids withdrawn onto a reviewed card are alias
+   * keys of the frozen form (frozenIds). Never rebaseline these two pins. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 440, '9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f'],
   /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
@@ -800,10 +824,6 @@ const decks = [
   ['accounting:ordinary', ACCOUNTING_ORDINARY, 644, '0a35e37e0360979df909459b44024d1a62b749b268594b214bf620ebaf18db86'],
 ] as const;
 
-const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
-  .update(cards.map((card) => card.id).sort().join('\n'))
-  .digest('hex');
-
 const idHash = (ids: readonly string[]) => createHash('sha256')
   .update([...ids].sort().join('\n'))
   .digest('hex');
@@ -980,6 +1000,31 @@ const constructionAdditionIds = new Set([
   ...CONSTRUCTION_REVIEWED_HIGHER_ADDED_IDS, ...CONSTRUCTION_REVIEWED_ORDINARY_ADDED_IDS,
 ]);
 const constructionAliasIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('cons-'));
+// Keep the original Geography count/hash frozen (445 Higher + 309 Ordinary).
+// Independently reviewed sittings (scripts/markbank/authored/geography-reviewed-audit.json)
+// keep every shipped ID -- an ID that named a whole question now names its first
+// separately priced part -- and add new IDs for the other printed parts and
+// routes, tracked here on top of the frozen set. Choice is not a route
+// (2026-10-12): the 93 shipped choose-N combination cards are withdrawn onto
+// progress aliases, so the frozen identity = live non-additions + Geography alias keys.
+const geographyLegacyIds = new Set(geographyReview.reviewedSittings
+  .flatMap(sitting => sitting.legacyIds));
+const geographyAdditionIds = new Set<string>(geographyReview.reviewedSittings
+  .flatMap(sitting => sitting.addedIds));
+const geographyAliasedIds = Object.keys(CARD_ID_ALIASES).filter(id => id.startsWith('geography-'));
+/* English keeps its 650 pre-review IDs frozen (210 Higher + 440 Ordinary, the
+ * identity hashes above). english_publish.py publishes every reviewed paper;
+ * a 2021-2025 paper publishes only through english-legacy-bridge.json, which
+ * lists the paper's legacy IDs (bridgedLegacyIds): each is kept by its reviewed
+ * card under the same ID or withdrawn onto one through a progress alias
+ * (bridgeAliases). The frozen form is the live bridged IDs plus those alias
+ * keys; every other published card is an explicit addition. */
+const englishPublishedIds = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
+  .map(card => card.id));
+const englishBridgedIds = new Set<string>([
+  ...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds]);
+const englishAdditionIds = new Set([...englishPublishedIds].filter(id => !englishBridgedIds.has(id)));
+const englishAliasIds = [...englishBridgedIds].filter(id => id in CARD_ID_ALIASES);
 const frozenIds = (name: string, cards: readonly { id: string }[]) => {
   const ids = cards.map(card => card.id);
   if (name.startsWith('business:')) return ids.filter(id => !businessAdditionIds.has(id));
@@ -1002,6 +1047,20 @@ const frozenIds = (name: string, cards: readonly { id: string }[]) => {
       ...constructionAliasIds.filter(id => id.includes(level)),
     ];
   }
+  if (name.startsWith('geography:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [
+      ...ids.filter(id => !geographyAdditionIds.has(id)),
+      ...geographyAliasedIds.filter(id => id.includes(level)),
+    ];
+  }
+  if (name.startsWith('english:')) {
+    const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
+    return [
+      ...ids.filter(id => !englishAdditionIds.has(id)),
+      ...englishAliasIds.filter(id => id.includes(level)),
+    ];
+  }
   const level = name.endsWith(':higher') ? '-hl-' : '-ol-';
   if (name.startsWith('art:')) {
     return [...ids.filter(id => !isArtAdded(id)), ...artAliasIds.filter(id => id.includes(level))];
@@ -1015,6 +1074,8 @@ const liveFrozenCount = (name: string, cards: readonly { id: string }[]) =>
   name.startsWith('economics:') ? cards.filter(card => !economicsAdditionIds.has(card.id)).length
     : name.startsWith('agricultural-science:') ? cards.filter(card => !agriAdditionIds.has(card.id)).length
     : name.startsWith('construction-studies:') ? cards.filter(card => !constructionAdditionIds.has(card.id)).length
+    : name.startsWith('geography:') ? cards.filter(card => !geographyAdditionIds.has(card.id)).length
+    : name.startsWith('english:') ? cards.filter(card => !englishAdditionIds.has(card.id)).length
     : cards.length;
 const peAdditions = {
   higher: [PE_HIGHER, 257, 'b66f69f293e90b2913862dbb646bc161bbff8eda4ea41ba78d88fbb66acd23bf'],
@@ -1098,12 +1159,18 @@ describe('Mark Bank card preservation', () => {
     // and 2026 are added on top: - 68 + 1,362.
     // Agricultural Science (2026-10-15): its 869 frozen cards gain 1,604
     // source-reviewed tasks and withdraw 9 per-item cards onto aliases: + 1,595.
+    // English (2026-10-23): its 650 frozen cards gain 2,160 reviewed tasks and
+    // withdraw 125 bridged legacy cards onto aliases: + 2,035.
     const businessAdded = (name: string, cards: readonly { id: string }[]) =>
       name.startsWith('business:') ? cards.filter(card => businessAdditionIds.has(card.id)).length : 0;
     // Construction Studies keeps its 505 pre-audit IDs frozen the same way:
     // live non-additions plus its consolidated per-item cards, each an alias key.
+    // Geography (2026-10-23) keeps its 754 frozen IDs the same way: its 3,492
+    // reviewed 2010-2026 parts are added on top and its 93 choose-N combination
+    // cards are withdrawn onto aliases.
     const economicsFrozenDelta = (name: string, cards: readonly { id: string }[]) =>
-      name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:') ? frozenIds(name, cards).length - cards.length : 0;
+      name.startsWith('economics:') || name.startsWith('agricultural-science:') || name.startsWith('construction-studies:')
+        || name.startsWith('geography:') || name.startsWith('english:') ? frozenIds(name, cards).length - cards.length : 0;
     const artNet = artAdded('higher') + artAdded('ordinary') - artAliasIds.length;
     const agriNet = agriAdditionIds.size - agriAliasIds.length;
     expect(decks.reduce((total, [name, cards]) => (
@@ -1112,7 +1179,9 @@ describe('Mark Bank card preservation', () => {
     expect(decks.reduce((total, [, cards]) => total + cards.length, 0))
       .toBe(22_970 + frenchAdditionIds.size + businessAdditionIds.size
         + economicsAdditionIds.size - economicsAliasIds.length + artNet + agriNet
-        + constructionAdditionIds.size - constructionAliasIds.length);
+        + constructionAdditionIds.size - constructionAliasIds.length
+        + geographyAdditionIds.size - geographyAliasedIds.length
+        + englishAdditionIds.size - englishAliasIds.length);
     // Maths adds 21 net cards; Engineering adds five and withdraws one invalid card.
     // Physical Education completion adds 652 cards to the previous 19,328.
     // Russian 199, Japanese 600, Classical Studies 516 and Latin 227.
@@ -1444,10 +1513,16 @@ describe('Mark Bank card preservation', () => {
     // ...plus 9 Agricultural Science per-item cards consolidated into one
     // printed task (agsci- keys, the review ledger's withdrawnCardIds), and the
     // Construction Studies per-item cards consolidated into one printed choice
-    // (cons- keys, counted from the alias file itself).
+    // (cons- keys, counted from the alias file itself), and the 125 English
+    // legacy cards withdrawn by the bridge onto a reviewed card (english- keys
+    // listed in bridgedLegacyIds; the 10 earlier english- keys are in the 158).
     expect(agriAliasIds).toHaveLength(9);
     expect(constructionAliasIds).toHaveLength(58);
-    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length);
+    // ...and Geography's 93 withdrawn choose-N combination cards (geography- keys).
+    expect(geographyAliasedIds).toHaveLength(93);
+    expect(englishAliasIds).toHaveLength(125);
+    expect(Object.keys(CARD_ID_ALIASES)).toHaveLength(158 + agriAliasIds.length + constructionAliasIds.length
+      + geographyAliasedIds.length + englishAliasIds.length);
     for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
       expect(liveIds.has(oldId), `${oldId} should be withdrawn, not scheduled twice`).toBe(false);
       expect(liveIds.has(canonicalId), `${oldId} aliases missing canonical ${canonicalId}`).toBe(true);
@@ -1492,8 +1567,9 @@ describe('Mark Bank card preservation', () => {
         && !name.startsWith('dcg:')
         && !name.startsWith('physical-education:')
         && !name.startsWith('politics-and-society:') && !name.startsWith('accounting:'))
-      // Business counts its frozen set; Economics its live frozen cards, its
-      // withdrawn halves counted once, as the alias keys below; Art counts
+      // Business counts its frozen set; Economics (and Agricultural Science,
+      // Construction and English) its live frozen cards, its withdrawn halves
+      // counted once, as the alias keys below; Art counts
       // its original cards (its added years are new cards, not part of this
       // earlier bank).
       .reduce((total, [name, cards]) => total + (name.startsWith('business:')
@@ -1503,16 +1579,99 @@ describe('Mark Bank card preservation', () => {
     expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(9_768);
   });
 
-  it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
-    const addedHigherRoutes = new Set(GEOGRAPHY_HIGHER
-      .filter(card => card.id.startsWith('geography-2021-hl-p2-q6c-'))
+  it('adds reviewed English papers without replacing any legacy card id or alias', () => {
+    const published = new Set([...publishedEnglishHigher.cards, ...publishedEnglishOrdinary.cards]
       .map(card => card.id));
+    expect(published.size).toBe(2_685);
+    // No route card is published: a printed choice marked identically is one card.
+    expect([...published].some(id => id.includes('-route-'))).toBe(false);
+    // Legacy ids of bridged papers (2025 HL) are no longer served as legacy
+    // cards: each is kept by its reviewed published card or is a progress alias.
+    const bridged = [...publishedEnglishHigher.bridgedLegacyIds, ...publishedEnglishOrdinary.bridgedLegacyIds];
+    const bridgeAliases: Record<string, string> = {
+      ...publishedEnglishHigher.bridgeAliases, ...publishedEnglishOrdinary.bridgeAliases };
+    expect(bridged).toHaveLength(650);
+    for (const id of bridged) {
+      const kept = published.has(id) && !(id in bridgeAliases);
+      const aliased = CARD_ID_ALIASES[id] === bridgeAliases[id] && published.has(bridgeAliases[id]);
+      expect(kept || aliased, `${id} must be kept or aliased`).toBe(true);
+    }
+    // The legacy 2021-2025 decks keep exactly their previous frozen identities:
+    // the still-legacy cards plus the bridged ids reproduce the frozen hashes.
+    const legacyIds = (cards: readonly { id: string }[], level: 'hl' | 'ol') => [
+      ...cards.filter(card => !published.has(card.id)),
+      ...bridged.filter(id => /^english-\d{4}-(hl|ol)-/.exec(id)?.[1] === level).map(id => ({ id })),
+    ];
+    expect(idHash(legacyIds(ENGLISH_HIGHER, 'hl').map(card => card.id)))
+      .toBe('231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0');
+    expect(idHash(legacyIds(ENGLISH_ORDINARY, 'ol').map(card => card.id)))
+      .toBe('9e667c2b7181e951fcb7b875ab7a0fb009f5db1389d75d89131dacebbc90994f');
+    for (const [oldId, canonicalId] of Object.entries(CARD_ID_ALIASES)) {
+      expect(published.has(oldId), `${oldId} is a withdrawn alias`).toBe(false);
+      if (oldId.startsWith('english-')) expect(published.has(canonicalId)).toBe(bridgeAliases[oldId] === canonicalId);
+    }
+    const papers = [...publishedEnglishHigher.papers, ...publishedEnglishOrdinary.papers].map(paper => paper.paperId);
+    expect([...published].every(id => papers.some(paper => id.startsWith(`${paper}-`)))).toBe(true);
+    // Reviewed additions on top of the frozen 650: 548 Higher + 1,612 Ordinary,
+    // none reusing a frozen ID or an alias key.
+    const added = (level: string) => [...englishAdditionIds].filter(id => id.includes(level)).length;
+    const aliased = (level: string) => englishAliasIds.filter(id => id.includes(level)).length;
+    expect([added('-hl-'), aliased('-hl-'), added('-ol-'), aliased('-ol-')]).toEqual([548, 20, 1612, 105]);
+    for (const id of englishAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
+    expect(ENGLISH_HIGHER).toHaveLength(210 - aliased('-hl-') + added('-hl-'));
+    expect(ENGLISH_ORDINARY).toHaveLength(440 - aliased('-ol-') + added('-ol-'));
+  });
+
+  it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
+    // The nine Q6C combination routes, added on top of the first frozen set,
+    // are now withdrawn into the one Q6C card (choice is not a route).
+    const addedHigherRoutes = new Set(geographyAliasedIds
+      .filter(id => id.startsWith('geography-2021-hl-p2-q6c-')));
     expect(addedHigherRoutes.size).toBe(9);
-    expect(identityHash(GEOGRAPHY_HIGHER.filter(card =>
-      card.year <= 2025 && !addedHigherRoutes.has(card.id))))
+    const yearOf = (id: string) => Number(id.split('-')[1]);
+    expect(idHash(frozenIds('geography:higher', GEOGRAPHY_HIGHER).filter(id =>
+      yearOf(id) <= 2025 && !addedHigherRoutes.has(id))))
       .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
-    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
+    expect(idHash(frozenIds('geography:ordinary', GEOGRAPHY_ORDINARY).filter(id => yearOf(id) <= 2025)))
       .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds the reviewed Geography parts on top of the frozen 754 without replacing any', () => {
+    /* 2026-10-11/12: 2026 Higher (+53), 2026 Ordinary (+78), 2025 Higher
+     * (+63), 2025 Ordinary (+79), 2024 Higher (+61), 2024 Ordinary (+93),
+     * 2023 Higher (+68), 2023 Ordinary (+80), 2022 Higher (+67), 2022
+     * Ordinary (+89), 2021 Higher (+65), 2021 Ordinary (+87), 2020 Higher
+     * (+125), 2020 Ordinary (+126; no 2020 card shipped before), 2019
+     * Higher (+121), 2019 Ordinary (+138), 2018 Higher (+130), 2018
+     * Ordinary (+131), 2017 Higher (+125), 2017 Ordinary (+130), 2016
+     * Higher (+108), 2016 Ordinary (+128), 2015 Higher (+113), 2015
+     * Ordinary (+107), 2014 Higher (+110), 2014 Ordinary (+125), 2013
+     * Higher (+111), 2013 Ordinary (+102), 2012 Higher (+110), 2012
+     * Ordinary (+115), 2011 Higher (+101), 2011 Ordinary (+133), 2010
+     * Higher (+106) and 2010 Ordinary (+114; none shipped before any of
+     * these), the 2010-2025 sittings
+     * including the tasks whose map/legend/aerial companions are now wired,
+     * each reviewed page by page against its scheme. Every addition is a new, unique ID that never reuses an
+     * original ID; every reviewed sitting's shipped IDs are still present,
+     * live or (a choose-N combination card) through a progress alias. */
+    expect(geographyAdditionIds.size).toBe(3492);
+    const all = [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY];
+    const ids = all.map(card => card.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    const flat = geographyReview.reviewedSittings.flatMap(sitting => sitting.addedIds);
+    expect(flat).toHaveLength(geographyAdditionIds.size);
+    for (const id of geographyAdditionIds) {
+      expect(ids, id).toContain(id);
+      expect(geographyLegacyIds.has(id), id).toBe(false);
+    }
+    for (const id of geographyLegacyIds) {
+      expect(ids.includes(id) || ids.includes(CARD_ID_ALIASES[id] ?? ''), id).toBe(true);
+    }
+    const aliasedAt = (level: string) => geographyAliasedIds.filter(id => id.includes(level)).length;
+    expect(GEOGRAPHY_HIGHER).toHaveLength(445 - aliasedAt('-hl-') + GEOGRAPHY_HIGHER
+      .filter(card => geographyAdditionIds.has(card.id)).length);
+    expect(GEOGRAPHY_ORDINARY).toHaveLength(309 - aliasedAt('-ol-') + GEOGRAPHY_ORDINARY
+      .filter(card => geographyAdditionIds.has(card.id)).length);
   });
 
   it('added the Art choose-two routes without replacing an id, and withdrew them onto Q4(a)', () => {

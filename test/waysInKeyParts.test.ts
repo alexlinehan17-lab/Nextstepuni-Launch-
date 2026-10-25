@@ -93,11 +93,14 @@ describe('key parts across every built card', () => {
 
 describe('the parts a student meets most', () => {
   test('Geography 2021 HL: the job, the count, the thing, and the limit that decides it', () => {
-    const entry = byId.get('geography-2021-hl-p1-q2');
-    expect(entry).toBeDefined();
-    const units = entry!.kp.units.map(slots);
+    // Since the 2021 Higher review each priced part of Part One Q2 is its own card.
+    const entries = ['geography-2021-hl-p1-q2', 'geography-2021-hl-p1-q2-ii', 'geography-2021-hl-p1-q2-iii']
+      .map(id => byId.get(id));
+    expect(entries.every(Boolean)).toBe(true);
+    const units = entries.flatMap(entry => entry!.kp.units.map(slots));
     expect(units.map(u => u.do)).toEqual(['Match', 'Name', 'Name']);
-    expect(units[0]).toMatchObject({ n: 'each of the letters A, B, C and D', use: ['the table below'] });
+    // Each part's card carries Q2's printed stem, so (i) also names the diagram it is read from.
+    expect(units[0]).toMatchObject({ n: 'each of the letters A, B, C and D', use: ['the table below', 'the diagram above'] });
     expect(units[1]).toMatchObject({ n: 'one example', about: 'a mountain range formed by folding', if: ['found outside of Ireland'] });
     expect(units[2]).toMatchObject({ about: 'the type of plate boundary', use: ['the diagram above'] });
   });

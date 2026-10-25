@@ -215,19 +215,41 @@ export interface CardFigure {
  * are rendered from the real paper PDF already held by Paper Trail: no retyped
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
+export interface SupplementaryReading {
+  title: string;
+  author: string;
+  /** Preserve the edition's stanza and line breaks. */
+  stanzas: string[][];
+  edition: string;
+  sourceUrl: string;
+}
+
+export interface LinkedReading {
+  title: string;
+  author: string;
+  edition: string;
+  /** Page-aware link to the publisher's reading copy, opened in a new tab. */
+  sourceUrl: string;
+  location: string;
+}
+
 export interface CardSourceMaterial {
-  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table';
+  kind: 'source-text' | 'source-illustration' | 'source-data' | 'exam-material' | 'marking-scheme' | 'source-paper' | 'source-scheme' | 'source-table' | 'supplementary-text' | 'linked-reading';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
-  /** One-based PDF pages, in reading order. */
+  /** One-based PDF pages, in reading order; empty for supplementary texts. */
   pages: number[];
   /** Additional clockwise rotation for sideways material printed inside a
    * portrait page. Applied to the PDF viewport, preserving the source bytes. */
   pageRotations?: Record<number, 90 | 180 | 270>;
   /** Optional inspected crops, one per page; coordinates are PDF fractions. */
   regions?: Array<[number, number, number, number] | { p: number; r: [number, number, number, number]; rotate?: 0 | 90 | 180 | 270 }>;
+  /** Attributed reading editions for named studied works absent from the paper. */
+  texts?: SupplementaryReading[];
+  /** Published reading copies for named studied works absent from this paper. */
+  readings?: LinkedReading[];
   /**
    * A separate official SEC document when the required material is not inside
    * the question paper itself. Art publishes its illustrations as a companion
@@ -235,6 +257,8 @@ export interface CardSourceMaterial {
    * wrong PDF. Omitted for passages that live in the question paper.
    */
   sourceFileid?: string;
+  /** Examination year of a verified reading copy from another paper. */
+  sourceYear?: number;
   /** The author/publication acknowledgement printed by the SEC. */
   attribution: string;
   /** Clarifies that the displayed layout is the official examination version. */
@@ -468,13 +492,54 @@ export interface SecPointCardBase extends SecCardBase {
 
 export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
 
+/**
+ * Grade labels exactly as each year's SEC grid prints them: the modern H1–H8
+ * and O1–O8 scales (2017 onward), the 2010–2016 Higher Level A+/B/C/D/E-
+ * anchors, and the 2010–2016 Ordinary Level A–F and N/G (F/NG on the combined
+ * grid) bands.
+ */
+export type PclmGradeLabel =
+  | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
+  | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8'
+  | 'A+' | 'A' | 'B' | 'C' | 'D' | 'E' | 'E-' | 'F' | 'N/G' | 'F/NG';
+
 /** One score family exactly as the SEC grade grid prints it. */
 export interface PclmGradeBand {
-  grade:
-    | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
-    | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
+  grade: PclmGradeLabel;
   /** Every mark the published grid permits in this band. */
   marks: number[];
+}
+
+/**
+ * How Coherence and Language are limited, exactly as the year's criteria page
+ * prints it. The modern rule (C and L cannot exceed P) must not be projected
+ * onto years that print a different rule or none:
+ * - `purpose-primacy`: C and L cannot exceed P (2016 onward where printed).
+ * - `language-at-d-band`: 2010–2015 Ordinary Level — only when BOTH P and C
+ *   fall below the D band is L limited, to the top of its D band.
+ * - `none`: the scheme prints no cap (2010–2015 Higher, 2018 Ordinary).
+ * Mechanics is always assessed on its own merits.
+ */
+export type PclmCapRule =
+  | { kind: 'purpose-primacy' }
+  | { kind: 'none' }
+  | { kind: 'language-at-d-band'; purposeBelow: number; coherenceBelow: number; languageMax: number };
+
+/** Where a card's grid was transcribed from, when it is a year-specific print. */
+export interface PclmPrintedGrid {
+  /** `<year>-<level>`, e.g. `2015-ordinary`. */
+  sitting: string;
+  /** Marking-scheme PDF pages that print the grid. */
+  schemePages: number[];
+  /** Adjacent printed cells share a mark (2010–2016 Ordinary Level grid). */
+  overlapping?: true;
+  /** Lowest printed mark when it is not 0 (2010–2016 OL 10-mark F/NG prints 1). */
+  lowestMark?: number;
+}
+
+/** The cap a discrete assessment declares, defaulting legacy cards to C/L <= P. */
+export function pclmCapRule(assessment: { primacyOfPurpose?: true; capRule?: PclmCapRule }): PclmCapRule {
+  return assessment.capRule ?? (assessment.primacyOfPurpose ? { kind: 'purpose-primacy' } : { kind: 'none' });
 }
 
 export interface PclmCriterion {
@@ -509,7 +574,9 @@ export interface PclmDiscreteComponent extends PclmComponentBase {
   bands: PclmGradeBand[];
   criteria: PclmCriterion[];
   /** C and L may not exceed P within this component. */
-  primacyOfPurpose: true;
+  primacyOfPurpose?: true;
+  /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+  capRule?: PclmCapRule;
 }
 
 export type PclmComponent = PclmCombinedComponent | PclmDiscreteComponent;
@@ -520,6 +587,7 @@ export type PclmAssessment =
       mode: 'combined';
       bands: PclmGradeBand[];
       criteria: string[];
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /** Longer responses receive separate P, C, L and M marks. */
@@ -527,7 +595,10 @@ export type PclmAssessment =
       bands: PclmGradeBand[];
       criteria: PclmCriterion[];
       /** C and L may not exceed P. */
-      primacyOfPurpose: true;
+      primacyOfPurpose?: true;
+      /** The year's printed cap rule; absent on legacy cards (C/L <= P). */
+      capRule?: PclmCapRule;
+      printedGrid?: PclmPrintedGrid;
     }
   | {
       /**
@@ -655,14 +726,104 @@ export type GeographyGuidanceKind =
  * explicit prevents the scheme's non-exhaustive examples becoming a fabricated
  * checklist while still letting a student place their work on the real tariff.
  */
+/**
+ * One claimable answer on a Geography card: a slice of a scheme line and the
+ * marks the scheme prints beside it.
+ */
+export interface GeographyAnswerRow {
+  id: string;
+  /** The printed answer, or the scheme's tariff wording when it prints none. */
+  text: string;
+  marks: number;
+  /** The values a student may claim when the scheme splits the row
+   *  ("2 + 2 marks", "4m graded (4/2/0)"). Omitted means all or nothing. */
+  steps?: number[];
+  /** The scheme prices the answer without printing one ("Tectonic plate
+   *  named 3m"). The row shows the scheme's words and says any correct answer
+   *  scores; it never carries an example the scheme did not print. */
+  tariffOnly?: boolean;
+}
+
+/** A Significant Relevant Point allocation: how many the scheme counts, at
+ *  what value each. Rendered as a counter, never as a list to tick. */
+export interface GeographySrpAllocation {
+  id: string;
+  /** The scheme's label for the part ("Description/Explanation"), or ''. */
+  label: string;
+  /** The most SRPs this part can earn. */
+  count: number;
+  marks: number;
+  /** Set when the scheme prints a range ("6/7 x SRP's"): this part and its
+   *  siblings share `GeographyAllocation.srpPool`, which caps their sum. */
+  min?: number;
+}
+
+/** The rows and SRP counts under one printed sub-question. */
+export interface GeographyAllocationGroup {
+  /** The paper's label, "(i)". */
+  part?: string;
+  /** The sub-question as printed. */
+  prompt?: string;
+  rows: GeographyAnswerRow[];
+  srp: GeographySrpAllocation[];
+  /**
+   * The scheme prices one unit and asks for several ("Formation of any two
+   * landforms @ 20m each. For each landform: …"). The group's rows and SRPs
+   * are claimed once per unit; `unit` is the scheme's own noun for one.
+   */
+  repeat?: { count: number; unit: string; marks: number };
+}
+
+/**
+ * A Geography criterion cut into claimable rows. Present only when the rows
+ * and SRP counts add up to the card's total (cards/geography/allocation.ts);
+ * otherwise the reveal falls back to the guidance lines and a mark control.
+ */
+export interface GeographyAllocation {
+  groups: GeographyAllocationGroup[];
+  /** Examiner directions: caps, named-example rules, diagram conditions. */
+  directions: string[];
+  /** Where parts print SRP ranges, the SRPs they share between them. */
+  srpPool?: { count: number; marks: number };
+  /** The scheme prices this criterion one of several ways and the student
+   *  claims exactly one: a column of a two-route table ("3 @ 20 marks each" /
+   *  "4 @ 15 marks each"), or a quality band ("Very Good · 17"). */
+  choice?: GeographyAllocationChoice;
+}
+
+/** One way the scheme prices a criterion, claimed instead of the others. */
+export interface GeographyChoiceOption {
+  id: string;
+  /** The scheme's words for it: a column heading or a band's name. */
+  label: string;
+  /** A band's marks, earned by choosing it. */
+  marks?: number;
+  /** A band's descriptor, as printed. */
+  note?: string;
+  /** A column's own rows and SRP counts, claimed once the column is chosen. */
+  allocation?: GeographyAllocation;
+}
+
+export interface GeographyAllocationChoice {
+  /** route: a column of a two-route table; band: a quality band; alternative:
+   *  one printed answer or another, each at its own price. */
+  kind: 'route' | 'band' | 'alternative';
+  /** The scheme's heading over the options ("Number of aspects"), or ''. */
+  prompt: string;
+  options: GeographyChoiceOption[];
+}
+
 export interface GeographyCriterion {
   id: string;
   label: string;
   maxMarks: number;
   permittedMarks: number[];
   guidanceKind: GeographyGuidanceKind;
-  /** Published allocation and examiner directions for this task. */
+  /** Published allocation and examiner directions for this task, as lifted. */
   guidance: string[];
+  /** The same allocation as claimable rows, where it reconciles to
+   *  `maxMarks` and (for a reviewed criterion) to `permittedMarks`. */
+  allocation?: GeographyAllocation;
 }
 
 export interface GeographyRubric {
@@ -672,6 +833,15 @@ export interface GeographyRubric {
   criteria: GeographyCriterion[];
   /** The mark value of one SRP on this paper, where SRPs govern the answer. */
   srpMarks?: number;
+  /** Printed marks the published scheme allocates to no line (2020 OL 9C
+   *  prices 27 of its printed 30). They stay in the card's `totalMarks` and
+   *  are never derived into a criterion, so the criteria reach
+   *  `totalMarks - unpricedMarks`; the marking guide note says so. */
+  unpricedMarks?: number;
+  /** The scheme's own examiner directions (credit rules, caps, deductions)
+   *  for this task, lifted verbatim. They qualify the criteria; they carry
+   *  no marks of their own. */
+  directions?: string[];
   markingGuideNote: string;
 }
 
@@ -824,6 +994,15 @@ export interface SecDiagramCard extends SecPointCardBase {
 export interface SecRubricCard extends SecCardBase {
   kind: 'rubric';
   rubric: SecRubric;
+  /** A crop of an official document shown on the card. A `solution` crop
+   *  (the scheme's own answer drawing) is held back until the reveal. Used by
+   *  Geography for a map crop around the grid reference asked about and for a
+   *  scheme's labelled diagram. */
+  figure?: CardFigure;
+  /** The paper's own print of the ask, as on `SecQuestionCard`: shown before
+   *  the reveal in place of the typeset stem, never a solution. Used by
+   *  Geography for a diagram question whose blanks are the ask. */
+  questionFigure?: CardFigure;
 }
 
 /**
@@ -1124,9 +1303,12 @@ export function tariffReconciles(card: SecCard): boolean {
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
       const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
+      // A printed remainder the scheme prices on no line is declared, never derived.
+      const unpriced = card.rubric.system === 'geography' ? card.rubric.unpricedMarks ?? 0 : 0;
       return criteria.length > 0
+        && Number.isInteger(unpriced) && unpriced >= 0 && unpriced < card.totalMarks
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
-        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) + unpriced === card.totalMarks
         && criteria.every(criterion =>
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0
@@ -1135,15 +1317,17 @@ export function tariffReconciles(card: SecCard): boolean {
           && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
     }
     const { assessment } = card.rubric;
-    const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
+    const bandsReconcile = (bands: PclmGradeBand[], total: number, printed?: PclmPrintedGrid) => {
       const marks = bands.flatMap(band => band.marks);
+      // A year-specific print may share a mark between adjacent cells or start
+      // above 0; only a card that declares that printed grid may do so.
       return marks.length > 0
-        && Math.min(...marks) === 0
+        && Math.min(...marks) === (printed?.lowestMark ?? 0)
         && Math.max(...marks) === total
-        && new Set(marks).size === marks.length;
+        && (printed?.overlapping ? true : new Set(marks).size === marks.length);
     };
     if (assessment.mode === 'combined') {
-      return bandsReconcile(assessment.bands, card.totalMarks);
+      return bandsReconcile(assessment.bands, card.totalMarks, assessment.printedGrid);
     }
     if (assessment.mode === 'composite') {
       const criteriaReconcile = (criteria: PclmCriterion[], total: number) =>

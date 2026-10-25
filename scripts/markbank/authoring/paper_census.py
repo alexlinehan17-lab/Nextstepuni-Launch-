@@ -3264,10 +3264,17 @@ def census_subject(subject):
         # Import lazily so the ordinary census remains independent of PyMuPDF
         # until English is actually requested.
         from english_census import build as build_english  # noqa: E402
+        from english_publish import bridged_published_papers  # noqa: E402
         payload = build_english()
+        # A bridged legacy paper is now counted by its published reviewed
+        # tasks (coverage_census_papers below), not by its legacy asks.
+        bridged = bridged_published_papers()
         papers = []
         for source in payload['papers']:
             paper_number = int(source['component']) // 100
+            level_code = {'higher': 'hl', 'ordinary': 'ol'}.get(source['level'], source['level'])
+            if f"english-{source['year']}-{level_code}-p{paper_number}" in bridged:
+                continue
             asks = [ask for ask in payload['asks']
                     if ask['year'] == source['year']
                     and ask['level'] == source['level']
@@ -3280,6 +3287,20 @@ def census_subject(subject):
                     'key': [ask['id']], 'label': ask['questionRef'],
                     'text': '', 'status': ask['status'],
                 } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        # Reviewed papers published paper by paper (english_publish.py), and
+        # every remaining non-legacy paper declared open with its candidate
+        # tasks, so the ratchet never hides outstanding English work.
+        from english_publish import coverage_census_papers  # noqa: E402
+        for row in coverage_census_papers():
+            papers.append({
+                'year': row['year'], 'level': row['level'],
+                'paper': f"Paper {row['paper']}",
+                'leafCount': len(row['leaves']),
+                'leaves': [{'key': [cid], 'label': label, 'text': '',
+                            'status': 'authored' if row['status'] == 'published' else 'queued'}
+                           for cid, label in row['leaves']],
                 'marksSum': None, 'marksQuestions': 0, 'flags': [],
             })
         return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}

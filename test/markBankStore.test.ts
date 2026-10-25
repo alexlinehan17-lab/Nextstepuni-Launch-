@@ -282,6 +282,22 @@ describe('the review survives, which is the whole point', () => {
     expect(store.memoryFor(deck, canonicalId)).toEqual(memory);
   });
 
+  it('keeps English review memory across every Higher Level legacy bridge', async () => {
+    const published = (await import('../components/MarkBank/cards/english/published-higher.json')).default as unknown as {
+      bridgedLegacyIds: string[]; bridgeAliases: Record<string, string>; cards: Array<{ id: string }>;
+    };
+    expect(published.bridgedLegacyIds.length).toBeGreaterThanOrEqual(42);
+    const live = new Set(published.cards.map(card => card.id));
+    for (const legacyId of published.bridgedLegacyIds) {
+      const memory = { s: 9, d: 4.8, last: NOW, reps: 2, lapses: 0, state: 2 as const };
+      const deck = { v: 1, updatedAt: NOW, cards: { [legacyId]: memory } };
+      // Same-id: the reviewed card reads its own id. Alias: it reads the legacy id.
+      const servedBy = published.bridgeAliases[legacyId] ?? legacyId;
+      expect(live.has(servedBy), servedBy).toBe(true);
+      expect(store.memoryFor(deck, servedBy), legacyId).toEqual(memory);
+    }
+  });
+
   it('survives corrupt localStorage instead of taking the tool down', () => {
     localStorage.setItem(`mb:deck:${UID}:${DECK}`, '{not json');
     expect(store.readLocal(UID, DECK).cards).toEqual({});

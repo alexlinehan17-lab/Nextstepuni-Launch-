@@ -211,8 +211,9 @@ def ol_paper_2(year: int, doc: fitz.Document, text: str, path: str) -> list[dict
             out.append(record(
                 year=year, level='ol', paper=2,
                 key=f'single-{work}-q{number}', ref=f'{year} OL Paper 2 Single Text {work.upper()} Q{number}',
-                section='Single Text', marks=30,
-                parts=['(a) 10 marks', '(b) 10 marks', '(c) 10 marks'] if number == 1 else [],
+                section='Single Text', marks=35 if year in (2021, 2022) else 30,
+                parts=['(a) 10 marks', '(b) 10 marks',
+                       f"(c) {15 if year in (2021, 2022) else 10} marks"] if number == 1 else [],
             ))
     for mode in LETTERS_5[:3]:
         for number in (1, 2):
