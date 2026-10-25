@@ -1,28 +1,7 @@
-.study-finish,.study-break{background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
-.study-finish{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(35px,6vw,90px);align-items:start;max-width:1190px;margin:0 auto;padding:80px 32px 70px;min-height:75vh}
+.study-break{background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
 .study-crew-eyebrow{font:11px/1.5 'Apercu Mono Pro',monospace;text-transform:uppercase;letter-spacing:.15em;color:#6a7164}
-.study-debrief h1{font:800 clamp(36px,4vw,58px)/1.08 'DM Sans',sans-serif;letter-spacing:-.045em;margin:24px 0}
 .study-crew-intro{font-size:16px;line-height:1.7;color:#6a7164;max-width:44ch}
-.study-debrief form{margin-top:30px}
-.study-debrief fieldset{border:0;padding:0;min-width:0}
-.study-debrief legend{font-size:17px;font-weight:700;margin-bottom:17px}
-.study-debrief-modes{display:flex;gap:22px;margin-bottom:25px}
-.study-debrief-modes button{background:transparent;border-bottom:2px solid transparent;font-size:13px;padding:8px 0;text-align:left}
-.study-debrief-modes button[aria-pressed=true]{border-color:#f26b1f;font-weight:700}
-.study-debrief-modes span{display:block;font:10px monospace;color:#747b6f;margin-top:4px}
-.study-debrief #confidence-question{font-size:13px;margin:0 0 12px}
-.study-confidence{display:flex;flex-wrap:wrap;gap:7px}
-.study-confidence button{padding:9px 12px;border:1px solid #bdc4b5;border-radius:7px;background:#fff;font-size:12px}
-.study-confidence button[aria-pressed=true]{border-color:#23251f;background:#ff7913;box-shadow:2px 2px 0 #23251f}
-.study-confidence button:focus-visible,.study-debrief-modes button:focus-visible{outline:3px solid #a64208;outline-offset:3px}
-.study-reflection-label{display:grid;gap:10px;font-size:13px;margin-top:23px}
-.study-reflection-label textarea{padding:13px;border:1px solid #bcc4b2;border-radius:8px;resize:vertical;background:#fff;color:#23251f;line-height:1.6;width:100%}
-.study-reflection-label small{font-size:10px;color:#6a7164}
-.study-keep{margin-top:25px;width:100%;max-width:390px}
-.study-skip{display:block;margin-top:18px}
-.study-save-note{font-size:10px;color:#6a7164;line-height:1.6;max-width:43ch;margin-top:15px}
-.study-save-error{font-size:13px;color:#a83618;margin-top:16px}
-.study-receipt{padding:30px 28px 26px;position:relative;background:#fff;border:1px solid #e7e9e1;box-shadow:0 15px 38px #23251f12;transform:rotate(2deg);animation:study-receipt-arrive .65s cubic-bezier(.16,1,.3,1) both;min-width:0}
+.study-receipt{padding:30px 28px 26px;position:relative;background:#fff;color:#23251f;-webkit-font-smoothing:auto;border:1px solid #e7e9e1;box-shadow:0 15px 38px #23251f12;transform:rotate(2deg);animation:study-receipt-arrive .65s cubic-bezier(.16,1,.3,1) both;min-width:0}
 .study-receipt::before,.study-receipt::after{content:'';position:absolute;left:-1px;right:-1px;height:9px;background:linear-gradient(135deg,#e9ebe5 25%,transparent 25%) -4px 0/14px 14px,linear-gradient(225deg,#e9ebe5 25%,transparent 25%) -4px 0/14px 14px;pointer-events:none}
 .study-receipt::before{top:-1px}
 .study-receipt::after{bottom:-1px;transform:rotate(180deg)}
@@ -60,33 +39,18 @@
 @keyframes study-receipt-arrive{from{opacity:0;translate:0 22px;rotate:-3deg}
 to{opacity:1;translate:0 0;rotate:0deg}
 }
-@media(max-width:800px){.study-finish{gap:30px;padding:65px 18px calc(105px + env(safe-area-inset-bottom));grid-template-columns:minmax(0,1fr)}
-.study-debrief{max-width:540px;margin:0 auto;width:100%}
-.study-receipt{max-width:420px;width:calc(100% - 16px);margin:15px auto 20px;transform:rotate(1deg)}
-.study-debrief h1{font-size:43px}
+@media(max-width:800px){.study-receipt{max-width:420px;width:calc(100% - 16px);margin:15px auto 20px;transform:rotate(1deg)}
 .study-crew-intro{font-size:14px}
-.study-keep{max-width:none}
 .study-break{padding:28px 18px}
 .study-break-art,.study-break-art .crew-illustration{width:190px;height:190px}
 }
 @media(prefers-reduced-motion:reduce){.study-receipt,.study-break-art.is-breathing{animation:none}
 }
 
-/* The break, debrief and receipt follow the timer's appearance. */
-.dark :is(.study-finish, .study-break, .study-receipt) { background: var(--surface-paper); color: var(--ink-primary); }
-.dark :is(.study-crew-eyebrow, .study-crew-intro, .study-debrief-modes span, .study-reflection-label small, .study-save-note, .study-receipt header > p:last-child, .study-receipt-next > span, .study-break > p:not(.study-crew-eyebrow), .study-break-context span, .study-break-leave) { color: var(--ink-muted); }
+/* The break and the receipt follow the timer's appearance. */
+.dark :is(.study-break, .study-receipt) { background: var(--surface-paper); color: var(--ink-primary); }
+.dark :is(.study-crew-eyebrow, .study-crew-intro, .study-receipt header > p:last-child, .study-receipt-next > span, .study-break > p:not(.study-crew-eyebrow), .study-break-context span, .study-break-leave) { color: var(--ink-muted); }
 .dark .study-receipt header > .study-crew-eyebrow { color: var(--ink-primary); }
-.dark :is(.study-confidence button, .study-reflection-label textarea) { background: var(--surface-soft); color: var(--ink-primary); border-color: var(--outline-soft); }
-.dark .study-confidence button[aria-pressed=true] { background: #ff7913; color: var(--ink-on-accent); border-color: var(--outline-strong); }
 .dark :is(.study-receipt, .study-receipt dl, .study-receipt-next, .study-receipt footer) { border-color: var(--outline-soft); }
 .dark .study-receipt::before, .dark .study-receipt::after { background: linear-gradient(135deg,var(--outline-soft) 25%,transparent 25%) -4px 0/14px 14px,linear-gradient(225deg,var(--outline-soft) 25%,transparent 25%) -4px 0/14px 14px; }
 .dark .study-receipt-signoff { color: var(--dashboard-series-1); }
-.dark .study-save-error { color: var(--danger-tint-ink); }
-.dark :is(.study-confidence button, .study-debrief-modes button):focus-visible { outline-color: var(--focus-ring); }
-/* Session saved: the points just earned and where to spend them (2026-10-14). */
-.study-saved{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:560px;margin:0 auto;padding:clamp(48px,10vh,110px) 24px 80px;background:#fff;color:#23251f;font-family:'DM Sans',sans-serif}
-.study-saved h1{font:800 clamp(56px,8vw,88px)/1 'DM Sans',sans-serif;letter-spacing:-.05em;margin:14px 0 16px;font-variant-numeric:tabular-nums}
-.study-saved .study-crew-intro{margin:0 auto}
-.study-saved-actions{display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:30px}
-.study-saved-actions .crew-primary{margin-top:0}
-.dark .study-saved{background:var(--surface-paper);color:var(--ink-primary)}
