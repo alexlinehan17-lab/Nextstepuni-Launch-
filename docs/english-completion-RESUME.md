@@ -29,9 +29,11 @@ complete; Irish-version (IV) editions stay deferred (Alex, 2026-10-11).
   part (a) across the "(a)" marker). cardlint's rules applied to the English
   decks: 0 scheme-leak, 0 label-junk; 4 ghost-figure regex hits all
   reviewed (3 are "shown" used as a verb; 2020 HL composing 3 cites the TEXT
-  2 extract as context only, like every composing lead-in). Note
-  `cardlint.py english` alone prints "clean" without reading English: it
-  only reads scripts/markbank/authored/<subject>.json.
+  2 extract as context only, like every composing lead-in). Since
+  2026-10-25 `cardlint.py english` reads the served deck (all 2,685
+  published cards, via DECK_LOADERS) and prints the count it read; the
+  four hits are resolved in the lint itself (English "shown" rule, one
+  reviewed entry).
 - Checks at 26b5f42df: typecheck clean; typecheck:test only the 3
   pre-existing errors; lint (--ignore-pattern 'tmp/**') clean; build OK;
   full vitest 222 files / 5,373 tests pass (an earlier run's musicExamTopics
@@ -41,12 +43,12 @@ complete; Irish-version (IV) editions stay deferred (Alex, 2026-10-11).
   Q1(a) "about the the baby" (paper PDF16, viewed); 2020 HL scheme PDF26
   names The Handmaid's Tale in the Persuasion (ii) note (not quoted on the
   card).
-- Follow-ups (not done, shared with main): Paper Trail answer-map labels
-  title-case after apostrophes ("Handmaid’S", "Yeats’S", also in main's
-  2024 HL P2 map) and 2019 OL P2 cuts "(Extract: Lines 45 – 76)" at the
-  dash — `title_case()` in scripts/paper-trail/english_p2_complete.py; the
-  labels feed scheme matching in english_p2_ol.py, so re-verify every crop
-  if changed. Mark Bank cards are unaffected.
+- Done 2026-10-25: Paper Trail answer-map labels no longer title-case
+  after apostrophes ("Handmaid’s", "Yeats’s") and 2019 OL P2 keeps
+  "(Extract: Lines 45 – 76)" — `title_case()` in
+  scripts/paper-trail/english_p2_complete.py. Both P2 generators were
+  re-run: 60 labels in 24 maps changed and nothing else (every region,
+  page and band identical); Mark Bank cards unchanged.
 - Integration: rebase onto current main as its own ship step; recompute the
   shared totals (cardAliases.ts, sizes.json, coverage-baseline.json,
   markBankCardPreservation totals) from the merged decks.
