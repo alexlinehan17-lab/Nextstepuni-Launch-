@@ -2,8 +2,10 @@
  * Settings, rebuilt on Kobra (AFTER for the design review).
  *
  * The same sections, order and copy as components/SettingsModal.tsx, drawn as
- * one paper card: hairline section rules, Kobra RadioGroup / Tabs / Switch /
- * Button, and a real Kobra Dialog showing the same panel in its modal form.
+ * one paper card: hairline section rules, Kobra RadioGroup / Switch / Button,
+ * and a real Kobra Dialog showing the same panel in its modal form.
+ * The appearance picker is the CURRENT one, kept on purpose (Alex, 25 Oct):
+ * two miniatures of the app, ink border and a check on the chosen one.
  * Every value is local review state; nothing touches an account or the page
  * theme.
  */
@@ -13,7 +15,7 @@ import {
   AppWindow, ArrowRight, Check, ChevronRight, Compass, FileText, GraduationCap, LogOut, RefreshCw, ShieldCheck, Trash2,
 } from 'lucide-react';
 import KobraScope, {
-  Button, Dialog, DialogContent, DialogHeader, DialogTitle, RadioGroup, RadioGroupItem, Switch, Tabs, TabsList, TabsTrigger,
+  Button, Dialog, DialogContent, DialogHeader, DialogTitle, RadioGroup, RadioGroupItem, Switch,
 } from '../../components/approved-ui-runtime';
 import CrewIllustration from '../../components/CrewIllustration';
 import { PERSONAL_STAR_CREW } from '../../data/personalStarCrew';
@@ -126,14 +128,30 @@ function SettingsPanel({ state, onChange, saved, inDialog = false }: {
       <section className="kr-st-group" aria-labelledby={`${id}-prefs`}>
         <h3 id={`${id}-prefs`} className="kr-st-eyebrow">Preferences</h3>
         <div className="kr-st-rows">
-          <div className="kr-st-row kr-st-appearance">
-            <span id={`${id}-appearance`} className="kr-st-label">Appearance</span>
-            <Tabs value={state.darkMode ? 'dark' : 'light'} onValueChange={value => onChange({ darkMode: value === 'dark' })}>
-              <TabsList aria-labelledby={`${id}-appearance`}>
-                <TabsTrigger value="light">Light</TabsTrigger>
-                <TabsTrigger value="dark">Dark (Beta)</TabsTrigger>
-              </TabsList>
-            </Tabs>
+          {/* Appearance: the current picker, as SettingsModal draws it. Two
+              miniatures of the app itself; a preview says what a label can't. */}
+          <div role="group" aria-label="Appearance" className="kr-st-theme">
+            {[{ dark: false, label: 'Light' }, { dark: true, label: 'Dark (Beta)' }].map(option => {
+              const active = state.darkMode === option.dark;
+              return (
+                <button
+                  key={option.label}
+                  type="button"
+                  aria-pressed={active}
+                  className="kr-st-theme-option"
+                  onClick={() => { if (!active) onChange({ darkMode: option.dark }); }}
+                >
+                  <span className="kr-st-theme-preview" data-dark={option.dark || undefined} aria-hidden="true">
+                    <span className="kr-st-theme-rail" />
+                    <span className="kr-st-theme-lines"><i /><i /><i /><i /></span>
+                  </span>
+                  <span className="kr-st-theme-name">
+                    {option.label}
+                    {active && <Check size={13} strokeWidth={2.6} aria-hidden="true" />}
+                  </span>
+                </button>
+              );
+            })}
           </div>
           <SwitchRow
             id={`${id}-essentials`}

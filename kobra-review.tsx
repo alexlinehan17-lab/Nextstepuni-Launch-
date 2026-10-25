@@ -42,7 +42,7 @@ const SECTIONS = [
   },
   {
     id: 'settings', n: '05', title: 'Settings',
-    change: 'A cream Tailwind modal with seven offset shadows and border-only appearance cards, duplicating Your setup; dark mode is set in four places with three different controls. The rebuild is the same sections on a paper panel with Tabs, Switch rows and a RadioGroup, and it can open as a Kobra Dialog.',
+    change: 'A cream Tailwind modal with seven offset shadows, duplicating Your setup; dark mode is set in four places with three different controls. The rebuild is the same sections on a paper panel with Switch rows and a RadioGroup, and it can open as a Kobra Dialog. The Light / Dark preview cards stay as they are today.',
     before: '/kobra-review-before.html?screen=settings', beforeNote: 'The current modal, mounted on its own.',
     file: 'SettingsAfter',
   },
