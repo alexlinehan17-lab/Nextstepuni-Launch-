@@ -947,6 +947,19 @@ export interface PoliticsRubric {
 /** PE mixes exact allocations, descending tariffs and quality bands. The
  * original scheme remains available after reveal, including answer diagrams
  * and tick tables which must not be flattened into a guessed text answer. */
+/** One PE criterion's reviewed guidance cut into what the scheme prices
+ * (cards/physical-education/answers.ts): quality bands the student places
+ * themselves on ("Good description: 2; fair description: 1."), and rows they
+ * claim ("Vector.", "Phase named: 1", "4 marks + 2 marks" as steps). */
+export interface PhysicalEducationAllocation {
+  /** The guidance's own statement of what is asked, where it has one. */
+  caption?: string;
+  bands?: Array<{ label: string; marks: number[] }>;
+  rows?: Array<{ id: string; text: string; marks: number; steps?: number[] }>;
+  /** The rest of the guidance: accept/do-not-accept rules, scheme examples. */
+  notes: string[];
+}
+
 export interface PhysicalEducationRubric {
   system: 'physical-education';
   taskRequirements: string[];
@@ -956,6 +969,7 @@ export interface PhysicalEducationRubric {
     maxMarks: number;
     permittedMarks: number[];
     guidance: string[];
+    allocation?: PhysicalEducationAllocation;
   }>;
   schemeMaterial: CardSourceMaterial & { kind: 'marking-scheme' };
   markingGuideNote: string;
@@ -1417,7 +1431,7 @@ export function tariffReconciles(card: SecCard): boolean {
         });
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
-      const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
+      const criteria: Array<{ id: string; maxMarks: number; permittedMarks: number[] }> = card.rubric.criteria;
       // A printed remainder the scheme prices on no line is declared, never derived.
       const unpriced = card.rubric.system === 'geography' ? card.rubric.unpricedMarks ?? 0 : 0;
       return criteria.length > 0

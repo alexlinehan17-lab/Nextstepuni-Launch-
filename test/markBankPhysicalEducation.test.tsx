@@ -454,8 +454,9 @@ describe('Physical Education independent paper review', () => {
     expect(open).toHaveBeenCalledOnce();
     fireEvent.click(screen.getByRole('button',{name:'Show marking scheme'}));
     expect(screen.getByRole('button',{name:/published marking guide/i})).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button',{name:'Set Outline to 4 marks'}));
-    expect(screen.getByRole('button',{name:'Set Outline to 4 marks'})).toHaveAttribute('aria-pressed','true');
+    // "Good: 4; fair: 2." is two band rows with their marks as buttons.
+    fireEvent.click(screen.getByRole('button',{name:'Claim 4 marks for Good'}));
+    expect(screen.getByRole('button',{name:'Clear 4 marks for Good'})).toHaveAttribute('aria-pressed','true');
   });
 
   it('never publishes a printed choice as route siblings', () => {
@@ -485,9 +486,13 @@ describe('Physical Education independent paper review', () => {
     if (diagram.rubric.system !== 'physical-education') throw Error('wrong rubric');
     expect(diagram.rubric.schemeMaterial.pages).toEqual([5]);
     expect(diagram.rubric.criteria[0].permittedMarks).toEqual([0,2,4,6]);
+    // "3 × 2 marks. Load: javelin; effort: tricep; fulcrum: elbow." is three claimable rows; a placed mark no longer counts.
     expect(physicalEducationMarks(diagram, {'pe:c1':3})).toBe(0);
-    expect(physicalEducationMarks(diagram, {'pe:c1':6})).toBe(6);
-    expect(suggestRubricGrade(diagram, {'pe:c1':6})).toBe('got');
+    expect(physicalEducationMarks(diagram, {'pe:c1':6})).toBe(0);
+    expect(physicalEducationMarks(diagram, {'pe:c1:row:r1':1})).toBe(2);
+    const allThree = {'pe:c1:row:r1':1, 'pe:c1:row:r2':1, 'pe:c1:row:r3':1} as const;
+    expect(physicalEducationMarks(diagram, allThree)).toBe(6);
+    expect(suggestRubricGrade(diagram, allThree)).toBe('got');
   });
 
   it('opens and closes the paper before reveal and the scheme only after reveal', async () => {
@@ -509,7 +514,9 @@ describe('Physical Education independent paper review', () => {
     expect(decodeURIComponent(schemeLink.getAttribute('href')!)).toContain('/scheme/LC225ALP000EV.pdf');
     expect(vaultPdf).toHaveBeenCalled();
     fireEvent.click(within(schemeDialog).getByRole('button',{name:'Close marking scheme'}));
-    fireEvent.click(screen.getByRole('button',{name:'Set Labels to 6 marks'}));
-    expect(screen.getByRole('button',{name:'Set Labels to 6 marks'})).toHaveAttribute('aria-pressed','true');
+    // "3 × 2 marks. Load: javelin; effort: tricep; fulcrum: elbow." is three claimable rows.
+    for (const name of ['Load: javelin · 2m', 'effort: tricep · 2m', 'fulcrum: elbow · 2m']) fireEvent.click(screen.getByRole('button',{name}));
+    expect(screen.getByRole('button',{name:'fulcrum: elbow · 2m'})).toHaveAttribute('aria-pressed','true');
+    expect(screen.getByText('6 / 6')).toBeInTheDocument();
   });
 });
