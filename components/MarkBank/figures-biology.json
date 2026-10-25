@@ -184,6 +184,246 @@
   ],
   "solution": true
  },
+ "biology-2012-ol-q10a-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q10a-scheme.png",
+  "md5": "cb3fb56f853d05028b61313fc4611a59",
+  "alt": "The marking scheme's example pyramid: a triangle divided into three levels by two horizontal lines, with Fox, Rabbit and Grass written down its left side from top to bottom and Carnivore, Herbivore and Producer down its right side.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10(a)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   150,
+   106,
+   440,
+   186
+  ],
+  "solution": true
+ },
+ "biology-2012-ol-q10b-key": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q10b-key.png",
+  "md5": "80fc9655bea379befe45a03e4f671306",
+  "alt": "Question 10(b)(iii) as printed: the instruction, then five animal drawings in a row, not to scale: a caterpillar-like larva with many legs along its body (labelled legs); A, a small beetle with antennae and six legs (labelled antenna and legs); B, a flat, narrow animal with two dots at its head end; C, a long, rounded worm-like animal twisted into a loop; and a snail with a coiled shell. Below them the printed key, four numbered pairs of statements about a shell, legs, pairs of legs and body shape, each ending in a name or \"Go to\".",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10(b)(iii) — A",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   80,
+   214,
+   545,
+   488
+  ]
+ },
+ "biology-2012-ol-q10bi-ask": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q10bi-ask.png",
+  "md5": "70ce5f18983e790d9fc1af87f7c7ad64",
+  "alt": "Question 10(b)(i) as printed, in two lines; in the first, the words biotic and abiotic are underlined.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q10(b)(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   60,
+   127,
+   452,
+   158
+  ]
+ },
+ "biology-2012-ol-q11-rabbit": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q11-rabbit.png",
+  "md5": "ed41288f4a75ce6dd528e15b4e0e0f69",
+  "alt": "Black-and-white photograph of a white rabbit sitting in grass, seen from the side, its ears upright and its eye dark.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q11(b)(i)",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   405,
+   100,
+   575,
+   248
+  ]
+ },
+ "biology-2012-ol-q12-sperm": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q12-sperm.png",
+  "md5": "5652ade96ef91b533c8758005138cde3",
+  "alt": "Simple drawing of a human sperm cell lying on its side: a long thin strand at the left, a thicker dark oval section bracketed and labelled Midpiece, and at the right a dark oval with a pale oval inside it. A is a bracket over the whole of the right-hand dark oval, B points to the pale oval inside it, C points to the long thin strand.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q12(c)(i) — A",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   95,
+   335,
+   420,
+   470
+  ]
+ },
+ "biology-2012-ol-q13-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q13-rhizopus.png",
+  "md5": "8e7f3f9378b9d4543977c3cc5a73fb6b",
+  "alt": "Drawing of part of the fungus Rhizopus: threads running across horizontally, a cluster of finely branched threads beneath them, and several upright stalks rising from where they meet, two topped by dark round heads. A points to a horizontal thread, B to the branched threads underneath, C to one of the dark round heads.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q13(c)(i) — A",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   165,
+   365,
+   395,
+   520
+  ]
+ },
+ "biology-2012-ol-q15-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q15-digestive.png",
+  "md5": "96ffef0f4c81708837c458e139e60f54",
+  "alt": "Outline drawing of the human digestive system inside the trunk: a large organ at the upper left, a sac at the upper right, a dark gland under the sac labelled Pancreas, a tube leaving the sac and curving down, and coiled tubes below, framed by a wide tube running up the right side, across the top and down the left. D points to the large organ at the upper left, C to the sac, A to the tube curving down from the sac, B to the wide tube on the right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q15(c)(i) — A",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   385,
+   565,
+   580,
+   760
+  ]
+ },
+ "biology-2012-ol-q15-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q15-skin.png",
+  "md5": "5db114c21bb9c1bd81657a4668f34277",
+  "alt": "Drawing of a section through human skin: a dotted surface layer over a deeper layer of rounded cells. A long dark strand rises from a bulb deep in the skin with a small sac beside it; a coiled tube deep in the lower layer has a duct running up to the surface; looped tubes lie under the surface layer. A points to the strand above the surface, B to the coiled tube deep in the skin, C to the looped tubes under the surface layer.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q15(a)(i) — A",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   170,
+   66,
+   410,
+   262
+  ]
+ },
+ "biology-2012-ol-q2-amoeba": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q2-amoeba.png",
+  "md5": "2a57ad66721845a21717ba03bb32401e",
+  "alt": "Drawing of an Amoeba as seen through a microscope: an irregular, lobed cell with a dotted interior and several blunt projections. A points to a clear round body with a frilled edge near the top, B to the dotted interior on the left, D to a dark solid oval right of centre, and C is a bracket under one of the lower projections.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q2",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   140,
+   446,
+   345,
+   578
+  ]
+ },
+ "biology-2012-ol-q4-section": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q4-section.png",
+  "md5": "c90d7e046718565b4db10bd4b0679cf2",
+  "alt": "Transverse section through part of a plant: a circle edged by a thick, rough outer band, with about twelve oval bundles, each part dark and part dotted, scattered through its pale interior. A points to the pale tissue between the bundles, B to two of the bundles, C to the outer band.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q4",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   100,
+   352,
+   360,
+   489
+  ]
+ },
+ "biology-2012-ol-q5-table": {
+  "src": "/exam-figures/biology/markbank/biology-2012-ol-q5-table.png",
+  "md5": "491f0994acd1f3c0a8bca20327cc15fc",
+  "alt": "Question 5 as printed: the instruction, then the list Pollution; Niche (struck through); Recycle; Burning fuel; Conservation; Smell, above a two-column table. Column A gives the worked example \"The role of the organism in the habitat.\" (Niche in Column B) and the descriptions (a) to (e); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2012 OL Q5",
+  "year": 2012,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2012 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   40,
+   50,
+   560,
+   316
+  ]
+ },
  "biology-2013-hl-q11bii-scheme": {
   "src": "/exam-figures/biology/markbank/biology-2013-hl-q11bii-scheme.png",
   "md5": "eed93c456548b5be45e7aec88f6c473f",

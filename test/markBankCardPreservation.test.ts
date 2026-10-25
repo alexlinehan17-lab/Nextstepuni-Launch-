@@ -291,6 +291,10 @@ const decks = [
    * (bio_review_2013_ol.py): 157 tasks, 157 cards; Section B's Q7, Q8 and Q9
    * (a) are each one whole-part card at the rubric's 6. Every earlier id is
    * unchanged. */
+  /* 2026-10-25: biology ordinary 2395 -> 2526. The 2012 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2012_ol.py): 131 tasks, 131 cards; Section A's six questions
+   * are each one whole-question card at 20. Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1798,12 +1802,12 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (their history is beside the frozen pins).
     expect(BIO_HIGHER).toHaveLength(2410);
     expect(identityHash(BIO_HIGHER)).toBe('8dd65c07c5e1d296a1c4fb0a4e46f789f3fdbeab0cb924d7a274798c1ab3c0f2');
-    expect(BIO_ORDINARY).toHaveLength(2395);
-    expect(identityHash(BIO_ORDINARY)).toBe('dfa89a0dd2e483f7eb7fe3cc3472edf1ebb1eaa123670d7ddf715c989a5d6d2e');
-    expect(biologyAdditionIds.size).toBe(2410 + 2395 - (673 - 1) - (686 - 1));
+    expect(BIO_ORDINARY).toHaveLength(2526);
+    expect(identityHash(BIO_ORDINARY)).toBe('ad81e92de20e3f9cf2e57a63060e02e8123ca731ad5a21b4af3db35b90e0fe07');
+    expect(biologyAdditionIds.size).toBe(2410 + 2526 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(1332);
-    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1303);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(1434);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
   });

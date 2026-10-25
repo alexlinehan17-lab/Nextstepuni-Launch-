@@ -262,6 +262,14 @@ WELDED_HEADS = {
     # never split off, Question 4's head filed as the tail of Q3(g), and its
     # (a)-(d) (the next block) were read as repeats of Q3's letters and lost.
     ('biology', 2013, 'ol'): ['(g) Grazing food chains begin with animals. T F'],
+    # 2012 OL page 3 is one block from "3. Indicate whether each of the
+    # following statements is true (T) or false (F)" to Q4(a)'s "Does the
+    # diagram represent a root or a stem?": Q3(g)'s row "An organ is a group of
+    # systems." ends in its circle options "T F", so "4. The diagram below
+    # represents a transverse section through part of a plant." was never
+    # split off, Question 4's head filed as the tail of Q3(g), and its (a)-(d)
+    # were read as repeats of Q3's letters and lost.
+    ('biology', 2012, 'ol'): ['(g) An organ is a group of systems. T F'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
