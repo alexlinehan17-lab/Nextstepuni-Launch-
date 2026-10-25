@@ -796,15 +796,16 @@ describe('Mark Bank card preservation', () => {
     // Portuguese 173, Romanian 50 and Dutch 42.
     // 18,345 before Design & Communication Graphics, plus its 545 (307 Higher
     // and 238 Ordinary). Nothing removed.
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_880);
-    // 19,328 + 586 - 34, the Chemistry audit: 125 + 83 new cards for the 2026
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(19_978);
+    // 19,328 + 684 - 34, the Chemistry audit: 125 + 83 new cards for the 2026
     // Higher and Ordinary papers, 41 for 2025 Higher parts the pre-audit deck
     // had joined or missed (one of them, chem-2025-hl-q10-c-i-total, a
     // pre-audit id the base build never shipped), 18 for 2025 Ordinary, 29
     // for 2024 Higher, 22 for 2024 Ordinary, 23 for 2023 Higher, 27 for 2023
     // Ordinary, 49 for 2022 Higher, 21 for 2022 Ordinary, 21 for 2021
     // Higher (two of them pre-audit ids the base build never shipped), 11
-    // for 2021 Ordinary and 116 for 2020 Higher, carded fresh; 34 shipped ids
+    // for 2021 Ordinary, 116 for 2020 Higher and 98 for 2020 Ordinary, carded
+    // fresh; 34 shipped ids
     // withdrawn and aliased --
     // one 2025 Higher duplicate, six 2025 Ordinary pieces of tasks the scheme
     // prices with one cell, two 2024 Higher (a duplicate and a joined piece),
@@ -885,10 +886,10 @@ describe('Mark Bank card preservation', () => {
     // Ordinary 83, 2025 Higher 41, one of them a pre-audit id the base build
     // never shipped, 2025 Ordinary 18, 2024 Higher 29, 2024 Ordinary 22, 2023
     // Higher 23, 2023 Ordinary 27, 2022 Higher 49, 2022 Ordinary 21, 2021
-    // Higher 21, 2021 Ordinary 11, 2020 Higher 116), 34 shipped ids moved from
-    // the deck to their aliases (net 0) and eighteen never-built pre-audit ids
-    // aliased (+18).
-    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(10_372);
+    // Higher 21, 2021 Ordinary 11, 2020 Higher 116, 2020 Ordinary 98), 34
+    // shipped ids moved from the deck to their aliases (net 0) and eighteen
+    // never-built pre-audit ids aliased (+18).
+    expect(preNewSubjectCards + Object.keys(CARD_ID_ALIASES).length).toBe(10_470);
   });
 
   it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
@@ -909,14 +910,14 @@ describe('Mark Bank card preservation', () => {
       .filter(record => record.status === status).length;
     // Every audited sitting's additions and withdrawals, pinned.
     expect(Object.keys(chemistryLedger.papers).sort())
-      .toEqual(['2020 HL', '2021 HL', '2021 OL', '2022 HL', '2022 OL', '2023 HL', '2023 OL',
-        '2024 HL', '2024 OL', '2025 HL', '2025 OL', '2026 HL', '2026 OL']);
+      .toEqual(['2020 HL', '2020 OL', '2021 HL', '2021 OL', '2022 HL', '2022 OL', '2023 HL',
+        '2023 OL', '2024 HL', '2024 OL', '2025 HL', '2025 OL', '2026 HL', '2026 OL']);
     expect([count('2026 HL', 'added'), count('2026 OL', 'added'), count('2025 HL', 'added'),
       count('2025 OL', 'added'), count('2024 HL', 'added'), count('2024 OL', 'added'),
       count('2023 HL', 'added'), count('2023 OL', 'added'), count('2022 HL', 'added'),
       count('2022 OL', 'added'), count('2021 HL', 'added'), count('2021 OL', 'added'),
-      count('2020 HL', 'added')])
-      .toEqual([125, 83, 41, 18, 29, 22, 23, 27, 49, 21, 21, 11, 116]);
+      count('2020 HL', 'added'), count('2020 OL', 'added')])
+      .toEqual([125, 83, 41, 18, 29, 22, 23, 27, 49, 21, 21, 11, 116, 98]);
     expect([count('2025 HL', 'corrected') + count('2025 HL', 'unchanged'),
       count('2025 HL', 'withdrawn')]).toEqual([103, 1]);
     expect([count('2025 OL', 'corrected') + count('2025 OL', 'unchanged'),
@@ -939,6 +940,8 @@ describe('Mark Bank card preservation', () => {
       count('2021 OL', 'withdrawn')]).toEqual([95, 9]);
     expect([count('2020 HL', 'corrected') + count('2020 HL', 'unchanged'),
       count('2020 HL', 'withdrawn')]).toEqual([0, 0]);
+    expect([count('2020 OL', 'corrected') + count('2020 OL', 'unchanged'),
+      count('2020 OL', 'withdrawn')]).toEqual([0, 0]);
     // Every id the ledger keeps or adds is live, under its sitting's prefix.
     for (const [paper, records] of Object.entries(chemistryLedger.papers)) {
       const [year, level] = paper.split(' ');

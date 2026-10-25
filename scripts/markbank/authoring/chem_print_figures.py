@@ -190,6 +190,9 @@ MASKS = {
     # 2020 HL scheme Q8(d)(i): its drawing of X stands beside (d)(ii)'s answer
     # and cell, whited out here.
     'chemistry-2020-HL-scheme-q8d-i.png': [(0, 115, 729, 203), (937, 131, 1041, 183)],
+    # 2020 OL Q1(a): the test tube stands beside the end of "through", the question's mark "(17)" and
+    # the words "distinctive flame." of (b)'s lead-in.
+    'chemistry-2020-OL-paper-q1a.png': [(0, 249, 28, 278), (104, 323, 149, 351), (0, 385, 132, 413)],
     # 2021 OL Q3(d): the last letter of "provided" prints at the pictogram's corner.
     'chemistry-2021-OL-paper-q3d.png': [(0, 0, 15, 31)],
 }

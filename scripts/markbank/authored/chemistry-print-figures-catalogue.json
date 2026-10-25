@@ -2089,5 +2089,225 @@
   "truncated": false,
   "description": "The paper's own print of 2020 HL Q7(c) and (d) with the table beside them: \"When carbon dioxide is pumped into still mineral water it becomes sparkling water. The information shown in the table was given on the label of a bottle of sparkling mineral water.\" (c) Describe how you could test a sample of this mineral water for the presence of the sulfate ion. (6) (d) The pH of the sparkling water is 5.6 while the pH of the source water was 7.2. Calculate (i) the H₃O⁺ ion concentration of the sparkling water, (ii) the OH⁻ ion concentration of the source water. (12); the table, headed \"Typical Analysis\", gives Ca²⁺ 164 mg/l, Mg²⁺ 50 mg/l, HCO₃⁻ 243 mg/l, NO₃⁻ 3 mg/l, SO₄²⁻ 402 mg/l, Cl⁻ 49 mg/l, pH 5.6, pH at source 7.2.",
   "questionRef": "2020 HL Q7(d)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q1a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A test tube of liquid labelled \"Br₂ solution\" with a delivery tube dipping into it, an arrow at its top labelled \"bubble C₂H₄ in here\", and bubbles rising in the liquid.",
+  "questionRef": "2020 OL Q1(a)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q1c-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Batch against m.p.: X, 117 – 120 °C; Y, 120 – 122 °C.",
+  "questionRef": "2020 OL Q1(c)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q1d-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Test against Result: \"Shake a little of A with water in a test tube\", \"Lather forms\"; \"Shake a little of B with water in a test tube\", \"White emulsion forms\"; \"Add 3 cm freshly-sanded magnesium ribbon to C\", \"Bubbles of gas form\"; \"Warm a little of D gently with Fehling's reagent\", \"A brick-red precipitate appears\".",
+  "questionRef": "2020 OL Q1(d)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a white plastic weighing boat with a little powder in it, labelled \"A\", above a drawing of a stoppered flask with a long narrow neck and a round base, labelled \"B\".",
+  "questionRef": "2020 OL Q2"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q2-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of titration results: Titration 1 (Rough Titration) 28.3 cm³, Titration 2 27.7 cm³, Titration 3 28.1 cm³, Titration 4 27.8 cm³.",
+  "questionRef": "2020 OL Q2(d)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a conical flask lying on its side holding \"H₂O₂ solution\", with the \"catalyst\" held in its neck, joined by \"flexible tubing\" to a tube that dips into a trough of water under an inverted graduated cylinder, beside a digital timer marked MIN, SEC and START / STOP.",
+  "questionRef": "2020 OL Q3"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q3-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7, 8 against Volume O₂ (cm³) 0, 35, 61, 81, 96, 105, 108.5, 109, 109.",
+  "questionRef": "2020 OL Q3"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q3b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A hazard pictogram: a diamond with a thick border, inside it a flame above a circle.",
+  "questionRef": "2020 OL Q3(b)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q3d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q3: \"An arrangement of apparatus similar to that shown below was used to investigate the rate of decomposition of a hydrogen peroxide (H₂O₂) solution, in the presence of a solid catalyst, releasing oxygen gas. The reaction and the timer were started together and the volume of oxygen collected was measured at intervals over an 8 minute period.\", the drawing of the flask, tubing, cylinder and timer, \"A set of results obtained in such an investigation is given in the table.\", the table of Time (minutes) 0 to 8 against Volume O₂ (cm³) 0, 35, 61, 81, 96, 105, 108.5, 109, 109; then (d) Plot a graph (on graph paper) of volume of O₂ versus time (x-axis). (15)",
+  "questionRef": "2020 OL Q3(d)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q5-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table about carbon: Element, carbon; Symbol, C; naturally occurring isotopes carbon–12, carbon–13 and carbon–14, written as C with mass numbers 12, 13 and 14 and atomic number 6; abundance about 99%, about 1% and trace; stability stable, stable and radioactive.",
+  "questionRef": "2020 OL Q5"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q5a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q5(a): \"(a) An element is composed of atoms all of which have the same atomic number. Define the underlined term. (5)\" with the words \"atomic number\" underlined.",
+  "questionRef": "2020 OL Q5(a)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q6a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q6: \"Consider the following chemical fuels: H₂ CH₄ LPG petrol kerosene These fuels burn exothermically in air.\" with the word \"exothermically\" underlined, then (a) Explain the underlined term. (5)",
+  "questionRef": "2020 OL Q6(a)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q7-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table headed \"Information\": pH at source 7.2, calcium 164 mg/l, magnesium 50 mg/l, hydrogencarbonate 243 mg/l, nitrate 3 mg/l, sulfate 410 mg/l, chloride 50 mg/l; the edge of a photograph of a bottle shows at its right.",
+  "questionRef": "2020 OL Q7(d)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of six structures: A, two carbons with H atoms and an OH on the second; B, a CH₃ group bonded to a CHO group; C, a CH₃ group bonded to a COOH group; D, two carbons joined by a double bond, each with two H atoms; E, a benzene ring bonded to a CH₂OH group; F, a benzene ring bonded to a COOH group.",
+  "questionRef": "2020 OL Q8"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q10b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a volcano erupting, its plume of smoke spreading out across the sky over the sea.",
+  "questionRef": "2020 OL Q10(b)(iii)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q10b-iv-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q10(b)(iv): \"The combined gas law states that p₁V₁ over T₁ = p₂V₂ over T₂ = constant for a fixed mass of gas.\" \"A gas has a volume of 120 cm³ at a temperature of 819 K and a pressure of 2 × 10⁵ Pa.\" (iv) Use the combined gas law to calculate the volume of the gas at standard temperature of 273 K and standard pressure of 1 × 10⁵ Pa.",
+  "questionRef": "2020 OL Q10(b)(iv)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q10b-v-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q10(b)(v): \"The combined gas law states that p₁V₁ over T₁ = p₂V₂ over T₂ = constant for a fixed mass of gas.\" (v) The combined gas law is based on other gas laws. Name and state one of these laws. (25)",
+  "questionRef": "2020 OL Q10(b)(v)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q11b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q11(b)(i): \"(b) Hydrogen gas is manufactured industrially when the following chemical equilibrium is set up between CH₄, steam, carbon monoxide and hydrogen.\" with \"chemical equilibrium\" underlined, the equation CH₄ (g) + H₂O (g) ⇌ CO (g) + 3H₂ (g), ΔH = 206 kJ, then (i) Explain the underlined term.",
+  "questionRef": "2020 OL Q11(b)(i)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q11c-a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2020 OL Q11(c)A(i): \"A The process carried out in a particular chemical plant is a continuous process.\" with \"continuous process\" underlined, then (i) Explain the underlined term.",
+  "questionRef": "2020 OL Q11(c)A(i)"
+ },
+ {
+  "file": "chemistry-2020-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of clear cubic sodium chloride crystals above a drawing of a cube built of packed spheres of two sizes, the arrangement of particles in a sodium chloride crystal.",
+  "questionRef": "2020 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q2d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q2(d)(iv), as the State Examinations Commission set it: CALCULATE 0.09 moles per litre (9), in two boxed routes: 25.0 × 0.05 over 1 = (3), 27.75 × M over 2 (3), M = 0.09 mol l⁻¹ (3), with its note \"If first 6 not awarded, formula may be awarded 3.\"; or 25.0 × 0.05 over 1000 = 1.25 × 10⁻³ moles Na₂CO₃ (3), 1.25 × 10⁻³ × 2 = 2.5 × 10⁻³ moles HCl (3), M = 2.5 × 10⁻³ × 1000 over 27.75 = 0.09 mol l⁻¹ (3).",
+  "questionRef": "2020 OL Q2(d)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q3(d), as the State Examinations Commission set it: PLOT axes correctly labelled with unit (cm³ and minute or min) or quantity (volume or vol or V and time or t) (3); axes correctly scaled (3); 6 points correctly plotted (3); 3 further points correctly plotted (3) [Minus 3 if graph not on graph paper.] [Allow axes reversed]; smooth curve correctly drawn through points and (0, 0) (3); then a graph of Volume O₂ (cm³), 0 to 120, against Time (minutes), 0 to 8, a curve rising from the origin and levelling at about 109, with lines drawn to read it at 2.5 minutes.",
+  "questionRef": "2020 OL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q6(c), as the State Examinations Commission set it: GIVE (i) methane; WHAT (ii) tetrahedral (tetrahedron) /, beside a drawing of the tetrahedral methane molecule with C and four H atoms; TO WHICH (iii) alkanes; WHY (iv) to give a smell / to detect leaks / safety, etc (6 + 6 + 3 + 3).",
+  "questionRef": "2020 OL Q6(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q6d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q6(d)(i), as the State Examinations Commission set it: DRAW (6): two drawings of propane, a zig-zag chain of three carbons and a straight chain H–C–C–C–H, each with all eight H atoms; [H's need not be shown explicitly]",
+  "questionRef": "2020 OL Q6(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q8(c)(i), as the State Examinations Commission set it: DRAW: a horizontal test tube with glass wool soaked in A/ethanol at its closed end and Al₂O₃ heated in the middle by a Bunsen burner, its delivery tube leading into a trough of water under an inverted tube collecting ethene/D; then horizontal (slightly slanting upwards) test tube with delivery tube // collection over water // ethanol, Al₂O₃ and Bunsen (heat source) shown correctly.",
+  "questionRef": "2020 OL Q8(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q10b-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q10(b)(iv), as the State Examinations Commission set it: CALCULATE 80.0 cm³ (6): p₁V₁ over T₁ = p₂V₂ over T₂ ⇒ 2 × 10⁵ × 120 over 819 = 1 × 10⁵ × V₂ over 273 (3), V₂ = 80.0 cm³ (3).",
+  "questionRef": "2020 OL Q10(b)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q10b-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q10(b)(v), as the State Examinations Commission set it: NAME Boyle / Charles / Gay-Lussac of pressure / Ideal Gas Law (Equation of State of an Ideal Gas); STATE Boyle: pressure and volume inversely proportional at constant temperature / pV = k / V ∝ 1/p / p₁V₁ = p₂V₂, or Charles: temperature and volume directly proportional at constant pressure / V over T = k / V ∝ T / V₁ over T₁ = V₂ over T₂, or Gay-Lussac: temperature and pressure directly proportional at constant volume / p over T = k / p ∝ T / p₁ over T₁ = p₂ over T₂, or Ideal Gas Law (Equation of State of an Ideal Gas) pV = nRT (6 + 3); [NAME and STATE linked, i.e. STATE must match NAME if given.]",
+  "questionRef": "2020 OL Q10(b)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q10c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q10(c)(i), as the State Examinations Commission set it: WHAT [(6 × 12) + (12 × 1) + (6 × 16)] = 180 g (3); HOW MANY 0.1 moles glucose (6), boxed as n = m over Mr = 18.0 over 180 = 0.1 moles glucose (6).",
+  "questionRef": "2020 OL Q10(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q11a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q11(a)(i), as the State Examinations Commission set it: DRAW: two dot and cross diagrams of ammonia, N with three H atoms each sharing a dot and a cross and a lone pair of dots on N, drawn once as symbols and once as overlapping circles; then three bond pairs in nitrogen valence shell (6), one lone pair (two separate non-bonding electrons) in nitrogen valence shell (3); [Any electron can be represented by a dot or a cross]",
+  "questionRef": "2020 OL Q11(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2020-OL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2020 OL Q11(b)(ii), as the State Examinations Commission set it: WRITE Kc = [H₂]³[CO] over [CH₄][H₂O] (6) [numerator correct (3); denominator correct (3); correct expression inverted (3)][plus signs in expression unacceptable]",
+  "questionRef": "2020 OL Q11(b)(ii)",
+  "solution": true
  }
 ]
