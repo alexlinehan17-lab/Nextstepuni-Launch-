@@ -1,4 +1,168 @@
 {
+ "biology-2013-hl-q11bii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q11bii-scheme.png",
+  "md5": "eed93c456548b5be45e7aec88f6c473f",
+  "alt": "The marking scheme's drawing: under the word Female, the letters XX over two long vertical bars of equal length side by side; under the word Male, the letters XY over one long vertical bar with a much shorter bar beside it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(b)(ii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   140,
+   265,
+   330,
+   350
+  ],
+  "solution": true
+ },
+ "biology-2013-hl-q11biii-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q11biii-scheme.png",
+  "md5": "983dc61622bfb27330767364d0e25032",
+  "alt": "The marking scheme's Punnett square, a grid of three rows and two columns: the top row an empty cell then X, the second row X then XX, the third row Y then XY.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q11(b)(iii)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level marking scheme — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   138,
+   356,
+   248,
+   422
+  ],
+  "solution": true
+ },
+ "biology-2013-hl-q13ai-question": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q13ai-question.png",
+  "md5": "ce6daa10785d2463b7a5ef7fae5530d3",
+  "alt": "Part (i) of Question 13(a) as printed: three lines of the question, in which the phrase from physical changes to reproduction is set in italics.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q13(a)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   90,
+   38,
+   545,
+   82
+  ]
+ },
+ "biology-2013-hl-q13b-system": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q13b-system.png",
+  "md5": "36dd36f1094e8efbbf2b18367ef9db8b",
+  "alt": "Shaded diagram of a reproductive system seen from the front: a central chamber with thick walls, a curved band running out from its top to each side and bending down over a round shape on each side, and a narrow passage leading down from the bottom of the chamber. Label D points to the curved band near its right end; C to the inner edge of the chamber's right wall; B to the thick shaded wall on the right of the chamber; E to the round shape on the left; F to the ring where the chamber narrows at the bottom; A to the narrow passage at the bottom.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q13(b)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   148,
+   181,
+   406,
+   370
+  ]
+ },
+ "biology-2013-hl-q14a-scheme": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q14a-scheme.png",
+  "md5": "7002836c55b552f3a793e74b084853c6",
+  "alt": "The paper's summary on one line: PHOTOSYNTHESIS:, then FIRST STAGE followed by a curly bracket enclosing PATHWAY I above PATHWAY II, then an arrow pointing right to SECOND STAGE.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q14(a)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   50,
+   90,
+   540,
+   156
+  ]
+ },
+ "biology-2013-hl-q15c-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q15c-graph.png",
+  "md5": "b4732fa75336fe1d12e629edea1a883d",
+  "alt": "Graph on a grid: Number of predators and prey up the vertical axis and Years along the horizontal axis, each with an arrow and no scale. One thick line, labelled predator, rises and falls in a regular wave of flat-topped peaks and flat-bottomed troughs, three troughs in all, starting and ending at peak height. No other line is drawn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q15(c)(i)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   104,
+   76,
+   518,
+   325
+  ]
+ },
+ "biology-2013-hl-q3-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q3-graph.png",
+  "md5": "0d83b5146abf35f2ecae8632eee202ce",
+  "alt": "Line graph on a grid: Body temperature (°C), 10 to 40, up the vertical axis against Environmental temperature (°C), 10 to 40, along the horizontal axis. Line X runs almost flat, from about 38 °C body temperature at the left to about 40 °C at the right. Line Y is a straight line rising steeply from about 8 °C body temperature at an environmental temperature of about 6 °C to about 37 °C at an environmental temperature of about 41 °C.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q3(a)",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   70,
+   91,
+   516,
+   398
+  ]
+ },
+ "biology-2013-hl-q4-strawberry": {
+  "src": "/exam-figures/biology/markbank/biology-2013-hl-q4-strawberry.png",
+  "md5": "18a41dfc7178c8d346f937ee3a82bf65",
+  "alt": "Line drawing of strawberry plants on sloping, hatched ground. On the right, a larger plant bracketed and labelled parent plant has toothed leaves, a flower, three strawberries and a tuft of roots. A long thin stem labelled runner arches from its base along the ground to a small plant on the left, bracketed and labelled daughter plant, which has a few leaves and small roots of its own.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2013 HL Q4(a)1",
+  "year": 2013,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2013 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   65,
+   55,
+   520,
+   327
+  ]
+ },
  "biology-2014-hl-q10c-genotype": {
   "src": "/exam-figures/biology/markbank/biology-2014-hl-q10c-genotype.png",
   "md5": "4b78798f98c34afd47f536a03457db97",

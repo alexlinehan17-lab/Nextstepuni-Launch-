@@ -67,7 +67,7 @@ SUBJECTS = {
     # admits one earlier sitting at a time, as each is carded paper by paper
     # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
     # its levels are.
-    'biology': {'mode': 'merged', 'from': 2014, 'also': []},
+    'biology': {'mode': 'merged', 'from': 2014, 'also': [(2013, 'hl')]},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},
@@ -593,6 +593,8 @@ SHORT_ASKS = {
                                                      'ecological terms:"'),
     ('biology', 2025, 'ol', 'Q8(b)(iv)'): ('Lipid', 'the biomolecule "Lipid" under "Briefly describe how you tested '
                                                     'for the presence of the following biomolecules:"'),
+    ('biology', 2013, 'hl', 'Q14(b)(iii)'): ('ADP.', 'p13: the topic "ADP." under "Write notes on each of the '
+                                                     'following topics."'),
 }
 
 
