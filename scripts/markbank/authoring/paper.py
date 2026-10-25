@@ -238,6 +238,15 @@ WELDED_HEADS = {
     # were not taken as letters, and all eighteen romans of (a), (b) and (c)
     # filed as six romans of a letterless Q15.
     ('biology', 2015, 'ol'): ['15. Answer any two of (a), (b), (c). (30, 30)'],
+    # 2014 HL page 8 is one block from "9." to Q9(b)(ii)'s last answer line.
+    # Q9(b)(i)'s third numbered ask, "3. Where did you find the semilunar
+    # valves during the dissection?", closes on its ruled answer line, and the
+    # page sets "(ii)" on its own line under it before "1. When you
+    # investigated the effect of exercise ...". Flattened, the "(ii)" trails
+    # the answer line with no full stop before it for TRAILING_MARKER to carry
+    # it, the head split before "1." strands it there, and Q9(b)(ii) and its
+    # two numbered asks filed as the tail of Q9(b)(i).
+    ('biology', 2014, 'hl'): ['Where did you find the semilunar valves during the dissection? ' + '_' * 75],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'

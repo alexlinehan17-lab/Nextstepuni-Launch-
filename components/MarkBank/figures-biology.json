@@ -1,4 +1,185 @@
 {
+ "biology-2014-hl-q10c-genotype": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q10c-genotype.png",
+  "md5": "4b78798f98c34afd47f536a03457db97",
+  "alt": "A circle holding two pairs of chromosomes. On the left, two long rods side by side, the left one marked P and the right one marked p at the same height near their tops. On the right, a short pair: a longer hooked chromosome marked X and a much shorter one marked Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q10(c)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   418,
+   453.5,
+   522,
+   542
+  ]
+ },
+ "biology-2014-hl-q11a-elbow": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q11a-elbow.png",
+  "md5": "c93b6810338c2cf4dd1a0b9800a151d0",
+  "alt": "Shaded image of a human elbow seen from the side: the upper-arm bone meeting the forearm bones, with muscle running down the upper arm on each side. Label A points to a pale band running from the lower end of the left-hand muscle to a forearm bone.",
+  "lettersVisible": [
+   "A"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q11(a)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   460,
+   25,
+   565,
+   140
+  ]
+ },
+ "biology-2014-hl-q13a-graphs": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q13a-graphs.png",
+  "md5": "08198d07d22e3edaa0e6796db168a03d",
+  "alt": "Two small sketch graphs side by side, each with an arrow up the vertical axis and an arrow along the horizontal axis, and no labels or scales. Graph A: a straight line falling from upper left to lower right. Graph B: a curve rising steeply from low on the left to a single peak, then falling steeply to the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q13(a)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   130,
+   62,
+   445,
+   180
+  ]
+ },
+ "biology-2014-hl-q15a-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q15a-graph.png",
+  "md5": "609a5f631bdee745e2201a780285abd8",
+  "alt": "Line graph over one year, the horizontal axis divided into WINTER, SPRING, SUMMER and AUTUMN, with no vertical scale. Four lines are labelled at the left. The thick solid line, Phytoplankton, falls to a low in winter, rises to a sharp peak in spring, drops and stays low with small rises through summer, rises to a second sharp peak, a little lower, in autumn, then falls. The dashed line, Nutrients, is high through winter, falls steeply in spring, stays low through summer and rises again through autumn. The dotted line, Light, rises from a low in winter to a high in summer and falls in autumn. The dash-dot line, Temperature, is low in winter, rises to a high in summer and falls through autumn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q15(a)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   118,
+   475,
+   276
+  ]
+ },
+ "biology-2014-hl-q15c-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q15c-graph.png",
+  "md5": "49f45e3379d5fa3da20620157d54efd8",
+  "alt": "Line graph titled World Population Growth in Billions: Billions of People, 0 to 10, against Year, 0 to 2500, on a grid. The line runs almost flat, below 1 billion, from year 0 to about 1750, then curves upward ever more steeply, passing about 4 billion near 2000 and ending near 9 billion a little after 2000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q15(c)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   108,
+   55,
+   430,
+   268
+  ]
+ },
+ "biology-2014-hl-q2ai-reaction": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q2ai-reaction.png",
+  "md5": "4a109c528faf159a7cce04b8a165282a",
+  "alt": "The reaction as the paper prints it on one line: the letter A, an arrow pointing right, then B + C + D.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q2(a)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   185,
+   346,
+   350,
+   372
+  ]
+ },
+ "biology-2014-hl-q2aii-reaction": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q2aii-reaction.png",
+  "md5": "5e283e84e131df69558470ba89e4fb4c",
+  "alt": "The reaction as the paper prints it on one line: the word Fat, an arrow pointing right with the letter X written above it, then Fatty Acids + Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q2(a)(ii)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   140,
+   428,
+   390,
+   460
+  ]
+ },
+ "biology-2014-hl-q3-tissue": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q3-tissue.png",
+  "md5": "4ab7f1327039bac13e573c673189c459",
+  "alt": "Line drawing of a cluster of round body cells, each with a dark nucleus, set in stippled tissue and threaded through by a network of fine branching tubes. Two lines labelled Body Cells point to cells at the top. At the top right a wider tube labelled A joins the network, a thick arrow labelled Direction of blood flow pointing down into it. At the bottom left a wider tube labelled B leaves the network, a thick arrow pointing out of its open end. At the right a tube labelled C branches off the network and runs out to the right, drawn with zigzag lines inside it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q3(a)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   110,
+   78,
+   470,
+   262
+  ]
+ },
+ "biology-2014-hl-q8a-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2014-hl-q8a-microscope.png",
+  "md5": "2a2eb5664d7018866eaae898bb0f5542",
+  "alt": "Line drawing of a light microscope: an eyepiece tube on top of a curved arm, two round knobs on the side of the arm, a revolving nosepiece with objective lenses over a stage holding a slide, and a footed base. Label E points to the top of the eyepiece tube, label A to the upper, larger knob, and label O to one of the objective lenses.",
+  "lettersVisible": [
+   "A",
+   "E",
+   "O"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2014 HL Q8(a)(i)",
+  "year": 2014,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2014 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   440,
+   22,
+   555,
+   165
+  ]
+ },
  "biology-2015-hl-q10c-birds": {
   "src": "/exam-figures/biology/markbank/biology-2015-hl-q10c-birds.png",
   "md5": "a885fb7165e3c85ea30d1a534c7d4122",
