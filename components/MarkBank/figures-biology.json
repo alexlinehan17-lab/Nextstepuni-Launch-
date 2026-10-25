@@ -1,4 +1,83 @@
 {
+ "biology-2017-hl-q11b-graph": {
+  "src": "/exam-figures/biology/markbank/biology-2017-hl-q11b-graph.png",
+  "md5": "862d6394c2aabe07a9b3eaefa09aa264",
+  "alt": "Graph of rate against time of day, from midnight through 6am, midday and 6pm to midnight, with two curves: a solid line labelled water uptake and a dashed line labelled transpiration. Overnight the solid line sits a little above the dashed one; they cross in the early morning, both rise to peak just after midday, the dashed transpiration curve peaking higher and slightly earlier, then both fall through the afternoon and evening, the dashed one falling lower. Faint print from the other side of the source page shows through behind the graph.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q11(b)(i)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   148,
+   156,
+   522,
+   373
+  ]
+ },
+ "biology-2017-hl-q13a-photo": {
+  "src": "/exam-figures/biology/markbank/biology-2017-hl-q13a-photo.png",
+  "md5": "f6ce6443d9461e86c0ec300797623110",
+  "alt": "Black and white photograph of an empty football stadium: a large frame of very bright lamps on wheeled stands sits on part of the pitch, cables trailing from it, lighting the grass beneath it while the empty stands around it are in shadow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q13(a)(i)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   115,
+   205,
+   478,
+   443
+  ]
+ },
+ "biology-2017-hl-q3-membrane": {
+  "src": "/exam-figures/biology/markbank/biology-2017-hl-q3-membrane.png",
+  "md5": "2a7eda8d559be30d311aa12b07772c1e",
+  "alt": "Drawing of part of a cell membrane: an upper and a lower row of black dots, each dot on an open rectangular shape pointing in towards the middle, with large stippled oval shapes set among them, some spanning both rows. Label line A points into the first stippled shape; label line B points to one of the rectangular shapes in the lower row.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q3(a) — A",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   80,
+   64,
+   515,
+   274
+  ]
+ },
+ "biology-2017-hl-q8b-v-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2017-hl-q8b-v-axes.png",
+  "md5": "1fb7f801aebf647416dada8932c163a7",
+  "alt": "Part (v) as printed: \"Label the axes and sketch a graph to show the effect of pH on enzyme activity.\" Below it a pair of empty axes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 HL Q8(b)(v)",
+  "year": 2017,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2017 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   100,
+   562,
+   545,
+   770
+  ]
+ },
  "biology-2018-hl-q10a-i-chain": {
   "src": "/exam-figures/biology/markbank/biology-2018-hl-q10a-i-chain.png",
   "md5": "a24e569f43f83017dd1c7e7ce30a9bd8",

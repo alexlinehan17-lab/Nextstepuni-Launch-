@@ -93775,5 +93775,4279 @@
   "year": 2018,
   "level": "ordinary",
   "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2017-hl-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "fibrous-protein",
+  "section": "A",
+  "questionRef": "2017 HL Q1(a)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Name a protein that has a fibrous structure.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Keratin or collagen or other fibrous protein",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "where-fibrous-protein-is-found",
+  "section": "A",
+  "questionRef": "2017 HL Q1(b)",
+  "stem": "Answer any five of the following parts (a) to (f): (a) Name a protein that has a fibrous structure.",
+  "questionText": "Where in the human body would you expect to find the fibrous protein referred to above?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Must match named fibrous protein",
+    "marks": 4,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "mineral-for-plants",
+  "section": "A",
+  "questionRef": "2017 HL Q1(c)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Give a role of a named mineral, other than calcium, which is required by plants.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plant mineral — e.g. Magnesium (or Mg)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Role — Must match named mineral",
+    "contextNote": "The scheme prints no answer here, only what earns the marks.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"5(4) i.e. best five answers from (a) - (f)\": this part is worth 4, and the scheme prints its answers with no split of the 4 between them, so the part is carded whole at its 4, the rows unpriced. The answers: a mineral (the scheme prints Magnesium as its example) and a role that matches it. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "why-water-is-needed",
+  "section": "A",
+  "questionRef": "2017 HL Q1(d)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "State two reasons why water is required by living organisms.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Solvent (or example of solvent)",
+    "marks": null,
+    "contextNote": "Any two"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "reaction medium",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "transport",
+    "marks": null
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "reactant (or example of reaction)",
+    "marks": null
+   },
+   {
+    "id": "r5",
+    "kind": "alt",
+    "verbatim": "reference to temperature maintenance or reference to temperature regulation",
+    "marks": null
+   },
+   {
+    "id": "r6",
+    "kind": "alt",
+    "verbatim": "turgidity in cells or turgor in plants",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints Q1 as \"5(4) i.e. best five answers from (a) - (f)\": this part is worth 4, and the scheme prints its answers with no split of the 4 between them, so the part is carded whole at its 4, the rows unpriced. The answers: any two of the printed reasons. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "iron-in-haemoglobin",
+  "section": "A",
+  "questionRef": "2017 HL Q1(e)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Name the metallic element present in haemoglobin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Iron (or Fe)",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q1-f",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "benedicts-test",
+  "section": "A",
+  "questionRef": "2017 HL Q1(f)",
+  "stem": "Answer any five of the following parts (a) to (f):",
+  "questionText": "Which type of food biomolecule may be identified by the use of Benedict’s or Fehling’s solution?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Reducing sugar",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "why-recycle-nutrients",
+  "section": "A",
+  "questionRef": "2017 HL Q2(a)",
+  "questionText": "Why is it important that nutrients are recycled in nature?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "So can be reused or used by other organisms",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "benefit-of-nitrates",
+  "section": "A",
+  "questionRef": "2017 HL Q2(b)",
+  "questionText": "During the nitrogen cycle, nitrogen from the air is converted to nitrates. Of what benefit is this?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Plants can absorb (or use or avail of) nitrate",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "nitrite",
+  "section": "A",
+  "questionRef": "2017 HL Q2(c)",
+  "questionText": "Nitrates are formed directly from other molecules in the soil. Name one of these molecules.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Nitrite (NO2-) [allow ammonia]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "animals-in-the-nitrogen-cycle",
+  "section": "A",
+  "questionRef": "2017 HL Q2(d)",
+  "questionText": "Mention one role of animals, other than as consumers, in the nitrogen cycle.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Excrete (or egest) nitrogen (compounds) or die (or decay or decompose) and release nitrogen (compounds) or assimilate nitrogen (compounds) or waste contains nitrogen (compounds)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-e",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "legumes",
+  "section": "A",
+  "questionRef": "2017 HL Q2(e)",
+  "questionText": "Name the family of plants which have a symbiotic relationship with nitrogen‐fixing bacteria.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Legumes",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-f",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "denitrification",
+  "section": "A",
+  "questionRef": "2017 HL Q2(f)",
+  "questionText": "The nitrogen in the air is converted to nitrates but the percentage of nitrogen in the air does not change. What process is responsible for this?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Denitrification or described",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q2-g",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "fertilisers-in-the-nitrogen-cycle",
+  "section": "A",
+  "questionRef": "2017 HL Q2(g)",
+  "questionText": "What is the role of modern fertilisers in the nitrogen cycle?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Supply nitrate (or other valid example) (to the soil) or supply fixed (or soluble or usable) nitrogen (to the soil)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q3-a-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "membrane-protein",
+  "section": "A",
+  "questionRef": "2017 HL Q3(a) — A",
+  "stem": "The diagram below shows part of the ultrastructure of a cell membrane.",
+  "questionText": "Name the molecules labelled A and B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": null
+   }
+  ],
+  "notes": "A lettered figure the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q3-membrane",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Protein",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Lipid or phospholipid or fatty acid",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-hl-q3-a-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "membrane-lipid",
+  "section": "A",
+  "questionRef": "2017 HL Q3(a) — B",
+  "stem": "The diagram below shows part of the ultrastructure of a cell membrane.",
+  "questionText": "Name the molecules labelled A and B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Lipid or phospholipid or fatty acid",
+    "marks": null
+   }
+  ],
+  "notes": "A lettered figure the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q3-membrane",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Protein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Lipid or phospholipid or fatty acid",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-hl-q3-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "movement-across-membranes",
+  "section": "A",
+  "questionRef": "2017 HL Q3(b)",
+  "stem": "The diagram below shows part of the ultrastructure of a cell membrane.",
+  "questionText": "Molecules can move through cell membranes by various processes. Name two such processes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Osmosis / diffusion / active transport",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Osmosis",
+      "diffusion",
+      "active transport"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q3-membrane"
+ },
+ {
+  "id": "bio-2017-hl-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "numbers-of-mitochondria",
+  "section": "A",
+  "questionRef": "2017 HL Q3(c)",
+  "questionText": "Suggest a reason why the organelle involved in aerobic respiration is found in different amounts in different cells.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Cells) need different amounts of energy",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q3-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "eukaryotes",
+  "section": "A",
+  "questionRef": "2017 HL Q3(d)",
+  "questionText": "What term is used to describe organisms whose cells contain a nucleus?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Eukaryotes (eukaryotic)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q3-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "prokaryotes",
+  "section": "A",
+  "questionRef": "2017 HL Q3(e)",
+  "questionText": "What term is used to describe organisms that do not have nuclei?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Prokaryotes (prokaryotic) or bacteria (or Monera)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q3-f",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "organelles-with-dna",
+  "section": "A",
+  "questionRef": "2017 HL Q3(f)",
+  "questionText": "Name an organelle other than the nucleus which contains genetic material.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Mitochondrion or chloroplast",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "pathogen",
+  "section": "A",
+  "questionRef": "2017 HL Q4(a)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Pathogen.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Disease-causing (organism or agent)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "saprophyte",
+  "section": "A",
+  "questionRef": "2017 HL Q4(b)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Saprophyte.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(An organism that) feeds on dead (or decaying) matter",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "heterotroph",
+  "section": "A",
+  "questionRef": "2017 HL Q4(c)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Heterotroph.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(An organism that) obtains its food from other organisms or feeds on organic material or cannot make its own food",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "antibiotic",
+  "section": "A",
+  "questionRef": "2017 HL Q4(d)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Antibiotic.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Chemical) produced by microorganisms (or bacteria and fungi) to kill (or stop growth of) other microorganisms (or bacteria or fungi)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-e",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "asepsis",
+  "section": "A",
+  "questionRef": "2017 HL Q4(e)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Asepsis.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Free of pathogens",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-f",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "bioprocessing",
+  "section": "A",
+  "questionRef": "2017 HL Q4(f)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Bioprocessing.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Using microorganisms (or enzymes or cells) to form products",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q4-g",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "bioreactor",
+  "section": "A",
+  "questionRef": "2017 HL Q4(g)",
+  "stem": "From your knowledge of microorganisms, explain what is meant by each of the following terms.",
+  "questionText": "Bioreactor.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Vessel (or described) in which products are made by microorganisms (or enzymes or cells) or vessel in which bioprocessing occurs",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "where-aerobic-respiration-happens",
+  "section": "A",
+  "questionRef": "2017 HL Q5(a)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Aerobic respiration occurs entirely in the cytosol.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter F in its False column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "glycolysis-is-anaerobic",
+  "section": "A",
+  "questionRef": "2017 HL Q5(b)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Glycolysis is an anaerobic process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter T in its True column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "energy-lost-as-heat",
+  "section": "A",
+  "questionRef": "2017 HL Q5(c)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "None of the energy released in respiration is lost as heat.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter F in its False column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "where-atp-is-made",
+  "section": "A",
+  "questionRef": "2017 HL Q5(d)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "In respiration, all of the ATP molecules are produced in the Krebs cycle.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter F in its False column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "making-atp",
+  "section": "A",
+  "questionRef": "2017 HL Q5(e)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "ADP requires an input of energy to produce ATP.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter T in its True column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "products-of-fermentation",
+  "section": "A",
+  "questionRef": "2017 HL Q5(f)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "When glucose is fermented by yeast, ethanol and water are formed.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter F in its False column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q5-g",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "energy-from-fermentation",
+  "section": "A",
+  "questionRef": "2017 HL Q5(g)",
+  "stem": "Indicate whether the following statements are true or false by placing a tick (✓) in the appropriate box in each case.",
+  "questionText": "Fermentation releases more energy than aerobic respiration.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "F",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer as the letter F in its False column, read from that cell. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q6-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "forming-female-gametes",
+  "section": "A",
+  "questionRef": "2017 HL Q6(a)",
+  "stem": "The following questions refer to sexual reproduction in both flowering plants and humans.",
+  "questionText": "Which types of cell division occur during production of the female gametes in flowering plants and in humans? If more than one type occurs in either case, write them in the order in which they occur.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 5(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flowering plants — Meiosis (followed by) mitosis",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "humans — Meiosis",
+    "marks": null
+   }
+  ],
+  "notes": "The plant and the human answers are two responses on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "where-female-gametes-form",
+  "section": "A",
+  "questionRef": "2017 HL Q6(b)",
+  "stem": "The following questions refer to sexual reproduction in both flowering plants and humans.",
+  "questionText": "Give the precise location of the production of the female gametes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 5(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flowering plants — Embryo sac",
+    "marks": null,
+    "contextNote": "[allow ovule]"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "humans — (Graafian) follicle [allow ovary]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q6-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "where-fertilisation-happens",
+  "section": "A",
+  "questionRef": "2017 HL Q6(c)",
+  "stem": "The following questions refer to sexual reproduction in both flowering plants and humans.",
+  "questionText": "Give the precise location of fertilisation under normal circumstances.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 5(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flowering plants — Embryo sac",
+    "marks": null,
+    "contextNote": "[allow ovule]"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "humans — Oviduct (Fallopian tube)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q6-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "after-the-zygote",
+  "section": "A",
+  "questionRef": "2017 HL Q6(d)",
+  "stem": "The following questions refer to sexual reproduction in both flowering plants and humans.",
+  "questionText": "Name the next stage of development following formation of the zygote.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 5(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "flowering plants — Embryo",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "humans — Morula",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q6-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "sexual-reproduction",
+  "section": "A",
+  "questionRef": "2017 HL Q6(e)",
+  "stem": "The following questions refer to sexual reproduction in both flowering plants and humans.",
+  "questionText": "Give an advantage and a disadvantage of sexual reproduction in organisms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 5(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Advantage of sexual reproduction — (Increased) variation (or described)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Disadvantage of sexual reproduction — Requires two parents (or difficulty in finding a mate) or longer (or more complex) life cycle (or to maturity)",
+    "marks": null,
+    "contextNote": "[allow (increased) variation if potential disadvantage is explained]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "surveying-errors",
+  "section": "B",
+  "questionRef": "2017 HL Q7(a)(i)",
+  "stem": "Answer the following questions by reference to a named ecosystem which you have investigated.",
+  "questionText": "Give one example of a possible error in ecological surveying.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Non-random (or biased) or misidentification or miscounting or sample size too small or quadrat size unsuitable",
+    "marks": 3
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "minimising-surveying-errors",
+  "section": "B",
+  "questionRef": "2017 HL Q7(a)(ii)",
+  "stem": "Answer the following questions by reference to a named ecosystem which you have investigated. (i) Give one example of a possible error in ecological surveying.",
+  "questionText": "Suggest how this error might be minimised or eliminated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Method of minimisation must be described and match possible error given above",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "food-web",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)(i)",
+  "stem": "Answer the following questions by reference to a named ecosystem which you have investigated.",
+  "questionText": "As part of your study you constructed a food web. In the space below or in your answer book, draw a food web from the ecosystem you named above, containing:\n1. At least three food chains, and\n2. At least four trophic levels.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 8(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Three interlinked valid food chains",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Four valid trophic levels in at least one of the food chains",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The food web is the student's own: the scheme prints its two criteria, each a response on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "escape-adaptation",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)(ii)",
+  "questionText": "Many animals must be captured for identification and counting in ecological surveying. Some of these animals have adaptive features that may help them escape capture. Give an example of one such adaptive feature.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 8(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Appropriate adaptive feature named",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "how-the-adaptation-helps",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)(iii)",
+  "stem": "(ii) Many animals must be captured for identification and counting in ecological surveying. Some of these animals have adaptive features that may help them escape capture. Give an example of one such adaptive feature.",
+  "questionText": "Explain how this adaptation helps the animal escape capture.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 8(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching benefit",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "why-survey",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)(iv)",
+  "questionText": "Suggest why ecological surveying is important.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 8(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Monitors biodiversity or detects changes or pollution monitoring or to provide baseline (for comparison) or example described",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q7-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-plant-survey",
+  "section": "B",
+  "questionRef": "2017 HL Q7(b)(v)",
+  "questionText": "Describe how you carried out a quantitative survey of a plant species named in your food web above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 8(1)"
+  },
+  "totalMarks": 28,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Quadrat / random / how random / count (or estimate cover) / repeat / several times / record or tabulate / scale up (or described) / how results expressed (or calculate % frequency (or % cover))",
+    "marks": null,
+    "group": {
+     "claimMax": 7,
+     "perOption": 4,
+     "options": [
+      "Quadrat",
+      "random",
+      "how random",
+      "count (or estimate cover)",
+      "repeat",
+      "several times",
+      "record or tabulate",
+      "scale up (or described)",
+      "how results expressed (or calculate % frequency (or % cover))"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "factors-affecting-enzymes",
+  "section": "B",
+  "questionRef": "2017 HL Q8(a)(i)",
+  "stem": "Answer the following in relation to enzymes.",
+  "questionText": "Give a factor, other than pH, which affects enzyme activity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "optimum-activity",
+  "section": "B",
+  "questionRef": "2017 HL Q8(a)(ii)",
+  "stem": "Answer the following in relation to enzymes.",
+  "questionText": "Explain the term optimum activity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Enzyme) working at its most efficient (or best) or best rate",
+    "marks": 3,
+    "contextNote": "[allow fastest (rate)]"
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-for-ph",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(i)",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Name the enzyme that you used in this investigation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Catalase / Amylase",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Catalase",
+      "Amylase"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints two enzymes in boxed columns joined by \"OR\": one menu, claim one. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-ii-1-catalase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "source-of-catalase",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(ii)1 — catalase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity. (i) Name the enzyme that you used in this investigation.",
+  "questionText": "State:\n1. The source of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Celery",
+    "marks": null,
+    "contextNote": "Source must match named enzyme"
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's answers in its own column, joined by \"OR\", so each is a route card. A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-ii-1-amylase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "source-of-amylase",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(ii)1 — amylase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity. (i) Name the enzyme that you used in this investigation.",
+  "questionText": "State:\n1. The source of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Saliva",
+    "marks": null,
+    "contextNote": "Source must match named enzyme"
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's answers in its own column, joined by \"OR\", so each is a route card. A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-ii-2-catalase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate-of-catalase",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(ii)2 — catalase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity. (i) Name the enzyme that you used in this investigation.",
+  "questionText": "State:\n2. The substrate of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hydrogen peroxide (or H2O2)",
+    "marks": null,
+    "contextNote": "Substrate must match either named enzyme or source"
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's answers in its own column, joined by \"OR\", so each is a route card. A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-ii-2-amylase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate-of-amylase",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(ii)2 — amylase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity. (i) Name the enzyme that you used in this investigation.",
+  "questionText": "State:\n2. The substrate of this enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Starch (or amylose)",
+    "marks": null,
+    "contextNote": "Substrate must match either named enzyme or source"
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's answers in its own column, joined by \"OR\", so each is a route card. A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "ph-and-enzymes",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(iii)",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Explain why changing the pH would have an effect on enzyme activity.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Active site shape is altered or (enzyme is) denatured",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-iv-catalase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "measuring-catalase-activity",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(iv) — catalase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity.",
+  "questionText": "How did you measure the rate of enzyme activity?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Catalase — Measure (volume or height of) foam",
+    "marks": null,
+    "contextNote": "Must match named enzyme"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Catalase — Per minute",
+    "marks": null
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's two answers under its own name, joined by \"OR\", so each is a route card. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-iv-amylase",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "measuring-amylase-activity",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(iv) — amylase",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity.",
+  "questionText": "How did you measure the rate of enzyme activity?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Amylase — Measure time",
+    "marks": null,
+    "contextNote": "Must match named enzyme"
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Amylase — For blue-black to disappear",
+    "marks": null
+   }
+  ],
+  "notes": "Catalase or amylase: the scheme prints each enzyme's two answers under its own name, joined by \"OR\", so each is a route card. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "ph-graph",
+  "section": "B",
+  "questionRef": "2017 HL Q8(b)(v)",
+  "stem": "Answer the following in relation to an investigation you carried out into the effect of pH on the rate of enzyme activity.",
+  "questionText": "Label the axes and sketch a graph to show the effect of pH on enzyme activity.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Y-axis = activity (or rate) and X-axis = pH",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Plot — (Sharply) up and down",
+    "marks": null
+   }
+  ],
+  "notes": "The axes and the plot are two responses on the ladder; the printed axes are shown as printed. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "questionFigureKey": "biology-2017-hl-q8b-v-axes"
+ },
+ {
+  "id": "bio-2017-hl-q9-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "replicates",
+  "section": "B",
+  "questionRef": "2017 HL Q9(a)(i)",
+  "questionText": "What is the purpose of replicates in scientific experimentation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To ensure reliability or to verify result or to avoid bias",
+    "marks": 3
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "hypothesis",
+  "section": "B",
+  "questionRef": "2017 HL Q9(a)(ii)",
+  "questionText": "What is meant by the term hypothesis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "An untested explanation (of an observed phenomenon) or described",
+    "marks": 3
+   }
+  ],
+  "notes": "Section B (a) is \"2(3)\": each part 3, priced on its own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "germination-without-oxygen",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(i)1",
+  "stem": "When investigating the conditions necessary for seed germination, describe how you:",
+  "questionText": "1. Provided an oxygen‐free environment.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Anaerobic jar or boiled water which has been cooled (or oil-covered)",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "signs-of-germination",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(i)2",
+  "stem": "When investigating the conditions necessary for seed germination, describe how you:",
+  "questionText": "2. Determined that germination had taken place.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Radicles (roots) observed or plumules (shoots) observed",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "preparing-a-stem-section",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(ii)1",
+  "stem": "In relation to an investigation you carried out to prepare and examine with a microscope a transverse section of a dicotyledonous stem, answer the following.",
+  "questionText": "1. How did you prepare the section?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cut a thin (section) or add water or add stain",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "why-a-coverslip",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(ii)2",
+  "stem": "In relation to an investigation you carried out to prepare and examine with a microscope a transverse section of a dicotyledonous stem, answer the following.",
+  "questionText": "2. Why is a coverslip used?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To prevent (cells) from drying out or to protect the lens or to make it easier to see or to keep sample in place",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "selectively-permeable-membrane",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iii)1",
+  "stem": "When demonstrating osmosis:",
+  "questionText": "1. What did you use as a selectively‐permeable membrane?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Visking tubing or cellophane or plant cell membrane",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "evidence-of-osmosis",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iii)2",
+  "stem": "When demonstrating osmosis:",
+  "questionText": "2. What led you to conclude that osmosis had occurred?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Increase in mass (or volume) of the more concentrated solution (or solution in tubing)",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "salt-in-dna-isolation",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iv)1",
+  "stem": "When isolating DNA from plant tissue:",
+  "questionText": "1. Give a reason for adding salt (NaCl) to the chopped plant tissue.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To clump DNA or to separate protein from DNA or to precipitate proteins (or carbohydrates)",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q9-b-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "heating-in-dna-isolation",
+  "section": "B",
+  "questionRef": "2017 HL Q9(b)(iv)2",
+  "stem": "When isolating DNA from plant tissue:",
+  "questionText": "2. Why was the mixture containing the chopped plant tissue, salt and washing‐up liquid kept at 60 °C for a period of time?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To denature DNases or to denature enzymes that would destroy DNA",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "scramble-competition",
+  "section": "C",
+  "questionRef": "2017 HL Q10(a)(i)",
+  "stem": "Explain the following terms as used in ecology.",
+  "questionText": "Scramble competition.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A struggle for a (scarce) resource and all get some",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q10(a): \"3\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "ecosystem",
+  "section": "C",
+  "questionRef": "2017 HL Q10(a)(ii)",
+  "stem": "Explain the following terms as used in ecology.",
+  "questionText": "Ecosystem.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Organisms (or plants and animals) and (their interactions with) their environment",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q10(a): \"3\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "conservation",
+  "section": "C",
+  "questionRef": "2017 HL Q10(a)(iii)",
+  "stem": "Explain the following terms as used in ecology.",
+  "questionText": "Conservation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Management of the environment or maintenance of biodiversity",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q10(a): \"3\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "siting-an-incinerator",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(i)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled.",
+  "questionText": "Suggest two reasons why this new incinerator is located in Dublin.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Large population so a lot of waste / large population so high energy demand / no space for landfill / energy produced can power nearby buildings / extensive transport links for waste",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Large population so a lot of waste",
+      "large population so high energy demand",
+      "no space for landfill",
+      "energy produced can power nearby buildings",
+      "extensive transport links for waste"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "incineration",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(ii)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled.",
+  "questionText": "Give one advantage and one disadvantage of incineration in waste disposal.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Advantage of incineration — Amount of waste reduced or useable heat (or energy) or reduced landfill or quick waste disposal",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Disadvantage of incineration — Harmful products or named example",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "microorganisms-in-waste-disposal",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(iii)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled.",
+  "questionText": "What is the main role of microorganisms in waste disposal?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Decomposers (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollutant",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(iv)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled.",
+  "questionText": "What is meant by the term pollutant?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Any harmful addition to the environment",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "pollutant-and-effect",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(v)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled.",
+  "questionText": "Give an account of the effect of a named pollutant from one of the following areas: domestic, agriculture, industry.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Any relevant pollutant",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Effect (must match)",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "controlling-pollution",
+  "section": "C",
+  "questionRef": "2017 HL Q10(b)(vi)",
+  "stem": "A new waste‐to‐energy incinerator is currently being built in Poolbeg, Dublin. The facility will generate energy from domestic waste that cannot be reused or recycled. (v) Give an account of the effect of a named pollutant from one of the following areas: domestic, agriculture, industry.",
+  "questionText": "Describe how the pollutant referred to in (v) is controlled.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching control measure for pollutant named in (v)",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-and-prey",
+  "section": "C",
+  "questionRef": "2017 HL Q10(c)(i)",
+  "questionText": "List two species from an ecosystem you have studied, which are involved in a predator‐prey relationship.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Any named predator and matching prey",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices the named pair as one response. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-prey-graph",
+  "section": "C",
+  "questionRef": "2017 HL Q10(c)(ii)",
+  "questionText": "Draw a graph, appropriately labelling axes and curves, to show how population numbers fluctuate in a predator‐prey relationship.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "X-axis = Time and Y-axis = Number or population",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Predator-prey graph — Most prey peaks higher than predator peaks (at least one labelled and at least 2 peaks for each curve)",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "criterion",
+    "verbatim": "Predator-prey graph — Predator and prey curves out of sync",
+    "marks": null
+   }
+  ],
+  "notes": "The axes and the two features of the curves are three responses on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-prey-explanation",
+  "section": "C",
+  "questionRef": "2017 HL Q10(c)(iii)",
+  "stem": "(ii) Draw a graph, appropriately labelling axes and curves, to show how population numbers fluctuate in a predator‐prey relationship.",
+  "questionText": "Explain the fluctuations shown in the graph.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Increased prey (population) allows increased predator (population)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "As prey (numbers) decline, predator (numbers) decline",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Time lag for predator (numbers) to respond (to lower or higher prey numbers) (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "\"The graph\" is the one the student draws in (ii); the paper prints no graph for this part. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q10-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "role-of-predation",
+  "section": "C",
+  "questionRef": "2017 HL Q10(c)(iv)",
+  "questionText": "Outline a role in nature of such a predator‐prey relationship.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Population control (or described) or natural selection in action",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "phloem",
+  "section": "C",
+  "questionRef": "2017 HL Q11(a)(i)",
+  "questionText": "Name the vascular tissue through which the products of photosynthesis are transported in plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Phloem",
+    "marks": 3,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q11(a): \"3\" and \"2(3)\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "structure-of-phloem",
+  "section": "C",
+  "questionRef": "2017 HL Q11(a)(ii)",
+  "stem": "(i) Name the vascular tissue through which the products of photosynthesis are transported in plants.",
+  "questionText": "Give two structural features of the tissue referred to in (i).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Sieve tubes (or sieve tube elements) / companion cells / sieve plates / cytoplasm pushed to edges",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Sieve tubes (or sieve tube elements)",
+      "companion cells",
+      "sieve plates",
+      "cytoplasm pushed to edges"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q11(a): \"3\" and \"2(3)\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "transpiration-and-water-uptake",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(i)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "Describe the relationship between the rate of transpiration and the rate of water uptake during the day. Suggest a reason for this relationship.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Relationship between rates of transpiration and water uptake — As water uptake increases (or decreases) transpiration also increases (or decreases) or both increase (or decrease) at the same time (or together)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Reason for relationship — High water uptake makes more water available for transpiration or high transpiration allows more water to be taken in (to replace water lost)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peak-transpiration",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(ii)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "Under what two conditions does the highest rate of transpiration occur on that day?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Hottest (or warmest or highest temperature)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Brightest or sunniest",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "guard-cells",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(iii)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "Name the cells which control the opening and closing of stomata.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Guard cells",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stomata-underneath",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(iv)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "What is the advantage to plants of having most of their stomata on the underside of the leaves?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Reduces water loss by transpiration or reduces water loss by evaporation",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "wilting",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(v)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "Give a disadvantage to plants of a high rate of transpiration.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Wilting (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "closing-stomata",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(vi)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day. (v) Give a disadvantage to plants of a high rate of transpiration.",
+  "questionText": "What do plants do in response to the disadvantage referred to in (v)?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Close stomata or stomata reduce in size",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dixon-and-joly",
+  "section": "C",
+  "questionRef": "2017 HL Q11(b)(vii)",
+  "stem": "The graph shows the relationship between the rate of transpiration and the rate of water uptake for a particular plant on a fine summer day.",
+  "questionText": "Name both Irish scientists who proposed the theory of water movement in plants.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Dixon and Joly",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints both names as one answer, one response on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q11b-graph"
+ },
+ {
+  "id": "bio-2017-hl-q11-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "vegetative-propagation",
+  "section": "C",
+  "questionRef": "2017 HL Q11(c)(i)",
+  "questionText": "Some plants can reproduce by means of vegetative propagation. Explain the term vegetative propagation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Plant) asexual reproduction or explained",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "features-of-vegetative-propagation",
+  "section": "C",
+  "questionRef": "2017 HL Q11(c)(ii)",
+  "questionText": "Give two features of vegetative propagation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "No gametes (or no seeds) / one parent / no variation (or identical offspring)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "No gametes (or no seeds)",
+      "one parent",
+      "no variation (or identical offspring)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "natural-vegetative-propagation",
+  "section": "C",
+  "questionRef": "2017 HL Q11(c)(iii)",
+  "questionText": "Give one example of natural vegetative propagation from a leaf and one example from a bud.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "leaf — e.g. Begonia or other valid",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "bud — Bulb (or named example)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "artificial-vegetative-propagation",
+  "section": "C",
+  "questionRef": "2017 HL Q11(c)(iv)",
+  "questionText": "Artificial vegetative propagation is widely used in horticulture. Give two examples of artificial vegetative propagation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Tissue culture / cuttings / grafting / layering / budding",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Tissue culture",
+      "cuttings",
+      "grafting",
+      "layering",
+      "budding"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q11-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "benefit-of-artificial-propagation",
+  "section": "C",
+  "questionRef": "2017 HL Q11(c)(v)",
+  "questionText": "Suggest a benefit of artificial vegetative propagation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Rapid or more reliable or desirable characteristics maintained",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "dna-profiling",
+  "section": "C",
+  "questionRef": "2017 HL Q12(a)",
+  "questionText": "Give a brief account of how you would produce a DNA profile.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(DNA) cut with (restriction) enzymes",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Fragments separated",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "According to size or by electrophoresis (or described)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q12(a): \"3\", \"3\", \"3\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "natural-selection",
+  "section": "C",
+  "questionRef": "2017 HL Q12(b)(i)",
+  "questionText": "In the context of natural selection, explain how numbers in a population remain relatively constant despite the production of many offspring.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Competition or struggle for scarce resources",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Best adapted (best suited) survive or non-suited don’t survive",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Death rate equals reproduction rate (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-linkage",
+  "section": "C",
+  "questionRef": "2017 HL Q12(b)(ii)",
+  "questionText": "The son of a haemophiliac father was not haemophiliac. Explain in detail how this situation might have arisen.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Haemophilia gene recessive and sex-linked",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Son — XNY-",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Mother — XNXN or XNXn",
+    "marks": null
+   },
+   {
+    "id": "r4",
+    "kind": "point",
+    "verbatim": "Father — XnY_",
+    "marks": null
+   },
+   {
+    "id": "r5",
+    "kind": "point",
+    "verbatim": "Son gets XN from egg (or from mother)",
+    "marks": null
+   },
+   {
+    "id": "r6",
+    "kind": "point",
+    "verbatim": "Son gets Y_ from sperm (or from father)",
+    "marks": null,
+    "contextNote": "Award a maximum of two unit marks for an otherwise correct cross that has no indication of gender"
+   }
+  ],
+  "notes": "Six printed answers, six responses on the ladder. The scheme sets the Y's dash as a small raised glyph, which the text layer reads as \"_\" (\"XnY_\", \"Y_\"). Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "purines",
+  "section": "C",
+  "questionRef": "2017 HL Q12(c)(i)",
+  "stem": "DNA contains the genetic code for the formation of all proteins.",
+  "questionText": "Name the two purine bases in DNA.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Adenine",
+    "marks": null,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Guanine",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "types-of-rna",
+  "section": "C",
+  "questionRef": "2017 HL Q12(c)(ii)",
+  "stem": "DNA contains the genetic code for the formation of all proteins.",
+  "questionText": "Describe fully the roles played in protein synthesis by the three different types of RNA.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Messenger RNA (mRNA) gets code from DNA",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Messenger RNA (mRNA) carries code to ribosome",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "Ribosomal RNA (rRNA) forms the ribosome (ribosomal subunits) or binds (or holds) mRNA in place",
+    "marks": null
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "Transfer RNA (tRNA) transfers amino acids to mRNA (or to ribosome) / binds to (complementary) mRNA codon / places amino acids in sequence or translates mRNA code to amino acid sequence",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Transfer RNA (tRNA) transfers amino acids to mRNA (or to ribosome)",
+      "binds to (complementary) mRNA codon",
+      "places amino acids in sequence or translates mRNA code to amino acid sequence"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Five responses: the two mRNA lines, the rRNA line and any two of the tRNA menu (the ladder's eight less (i)'s two and (iii)'s one). Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "protein-folding",
+  "section": "C",
+  "questionRef": "2017 HL Q12(c)(iii)",
+  "stem": "DNA contains the genetic code for the formation of all proteins.",
+  "questionText": "Once a protein has been synthesised, a final step is required for it to become fully functional. What is this step?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 2(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Folding (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "speeding-up-photosynthesis",
+  "section": "C",
+  "questionRef": "2017 HL Q13(a)(i)",
+  "stem": "The photograph below shows a system of promoting grass growth on a football pitch by shining very bright light on the pitch when it is not in use, in order to accelerate photosynthesis.",
+  "questionText": "Give two ways, other than the method shown in the photograph, by which photosynthesis could be accelerated in horticulture.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Increase CO2 (concentration)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Increase temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints a mark per row in Q13(a): \"3\", \"3\" and \"3\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q13a-photo"
+ },
+ {
+  "id": "bio-2017-hl-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "how-photosynthesis-is-sped-up",
+  "section": "C",
+  "questionRef": "2017 HL Q13(a)(ii)",
+  "stem": "The photograph below shows a system of promoting grass growth on a football pitch by shining very bright light on the pitch when it is not in use, in order to accelerate photosynthesis. (i) Give two ways, other than the method shown in the photograph, by which photosynthesis could be accelerated in horticulture.",
+  "questionText": "Explain how one of the methods referred to in part (i) could accelerate photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Increased CO2 concentration: Increased supply of C (atoms) (to dark stage) / Increased temperature: Increased enzyme activity",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Increased CO2 concentration: Increased supply of C (atoms) (to dark stage)",
+      "Increased temperature: Increased enzyme activity"
+     ]
+    }
+   }
+  ],
+  "notes": "Either method: the scheme prints one answer per method joined by \"OR\"; one menu, claim one. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher",
+  "figureKey": "biology-2017-hl-q13a-photo"
+ },
+ {
+  "id": "bio-2017-hl-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "light-stage-electrons",
+  "section": "C",
+  "questionRef": "2017 HL Q13(b)(i)",
+  "stem": "Answer the following questions about photosynthesis.",
+  "questionText": "In relation to electrons, describe the main events of each pathway in the light stage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Energised (electrons) leave the chlorophyll (molecule)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Pathway 1 — (The electrons) lose energy",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Pathway 1 — (Same electrons) return to chlorophyll",
+    "marks": null
+   },
+   {
+    "id": "r4",
+    "kind": "anyN",
+    "verbatim": "(The electrons) lose energy / (the electrons) combine with NADP+ / different electrons go to chlorophyll",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(The electrons) lose energy",
+      "(the electrons) combine with NADP+",
+      "different electrons go to chlorophyll"
+     ]
+    },
+    "contextNote": "Pathway 2"
+   }
+  ],
+  "notes": "Five responses: the opening line, Pathway 1's two lines and any two of Pathway 2's menu. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "dark-stage-is-anabolic",
+  "section": "C",
+  "questionRef": "2017 HL Q13(b)(ii)",
+  "stem": "Answer the following questions about photosynthesis.",
+  "questionText": "Is the dark stage of photosynthesis anabolic or catabolic? Explain your answer.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Anabolic; because small molecules (CO2 and H2O) form larger molecules (glucose)",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints the answer and its reason as one line, one response on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fate-of-adp-and-nadp",
+  "section": "C",
+  "questionRef": "2017 HL Q13(b)(iii)",
+  "stem": "Answer the following questions about photosynthesis.",
+  "questionText": "What happens to both ADP and NADP+ at the end of the dark stage?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Both) return to the light stage",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "what-nadph-carries",
+  "section": "C",
+  "questionRef": "2017 HL Q13(b)(iv)",
+  "stem": "Answer the following questions about photosynthesis.",
+  "questionText": "Name the two types of particle transferred from NADPH to CO2 in the dark stage.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 3(3) + 3(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Electrons or e-",
+    "marks": null,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "gate",
+    "verbatim": "Protons or hydrogen ions or H+ (ions)",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "diploid",
+  "section": "C",
+  "questionRef": "2017 HL Q13(c)(i)",
+  "stem": "Answer the following questions in relation to the cell cycle.",
+  "questionText": "Explain the term diploid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Two of each chromosome or chromosomes in pairs [allow two sets of chromosomes]",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices (i) on its own: \"4\". Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "drawing-anaphase",
+  "section": "C",
+  "questionRef": "2017 HL Q13(c)(ii)",
+  "stem": "Answer the following questions in relation to the cell cycle.",
+  "questionText": "Draw a labelled diagram to show the position of the chromosomes during anaphase of mitosis in a diploid nucleus in which 2n = 4.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Showing eight chromosomes, correctly positioned, chromosome label",
+    "marks": 4,
+    "contextNote": "The scheme marks the diagram 4, 2, 0"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Chromosome / spindle / centromere",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Chromosome",
+      "spindle",
+      "centromere"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "The diagram (\"4, 2, 0\") and its labels (\"Any two 2(2)\") are priced on their own. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "cytokinesis",
+  "section": "C",
+  "questionRef": "2017 HL Q13(c)(iii)",
+  "stem": "Answer the following questions in relation to the cell cycle.",
+  "questionText": "After telophase of mitosis, how do 1. animal cells; 2. plant cells, split in two?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Animal cells — Cleavage (or furrow) formation or described",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Plant cells — Cell plate formation or described",
+    "marks": null
+   }
+  ],
+  "notes": "\"4 + 2\" over the two answers, carded at its first rate. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "functions-of-mitosis",
+  "section": "C",
+  "questionRef": "2017 HL Q13(c)(iv)",
+  "stem": "Answer the following questions in relation to the cell cycle.",
+  "questionText": "What is the function of mitosis in 1. single‐celled organisms; 2. multi‐celled organisms?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Single-celled organisms — (Asexual) reproduction",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Multi-celled organisms — Repair (or renewal) of tissue or growth",
+    "marks": null
+   }
+  ],
+  "notes": "\"4 + 2\" over the two answers, carded at its first rate. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "zika-and-pregnancy",
+  "section": "C",
+  "questionRef": "2017 HL Q14(a)(i)",
+  "stem": "Read the passage below and answer the questions that follow. Zika virus is a mosquito‐borne virus. Mosquitoes usually bite during the day, peaking during early morning and late afternoon or evening. Researchers are studying a potential link between Zika virus infection and a surge in microcephaly cases. Microcephaly is a condition in which a baby is born with a small head or the head stops growing after birth. Rio de Janeiro, was an area with ongoing Zika virus transmission during the 2016 summer Olympic Games.",
+  "questionText": "Suggest a reason why the World Health Organisation (WHO) advised women of childbearing age or those who were pregnant not to travel to areas where a Zika virus outbreak was occurring.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To prevent microcephaly or described or from passage",
+    "marks": null,
+    "contextNote": "[allow to minimise Zika transmission]"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "preventing-zika",
+  "section": "C",
+  "questionRef": "2017 HL Q14(a)(ii)",
+  "stem": "Read the passage below and answer the questions that follow. Zika virus is a mosquito‐borne virus. Mosquitoes usually bite during the day, peaking during early morning and late afternoon or evening. Researchers are studying a potential link between Zika virus infection and a surge in microcephaly cases. Microcephaly is a condition in which a baby is born with a small head or the head stops growing after birth. Rio de Janeiro, was an area with ongoing Zika virus transmission during the 2016 summer Olympic Games.",
+  "questionText": "Give two precautions people could take to prevent Zika virus transmission if they did travel to affected areas.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Protect against mosquito bites (nets or repellents or clothing) / reference to time of day / delay conception for the following six months or use condoms for sex (or don’t have sex)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Protect against mosquito bites (nets or repellents or clothing)",
+      "reference to time of day",
+      "delay conception for the following six months or use condoms for sex (or don’t have sex)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "beneficial-viruses",
+  "section": "C",
+  "questionRef": "2017 HL Q14(a)(iii)",
+  "stem": "Read the passage below and answer the questions that follow. Zika virus is a mosquito‐borne virus. Mosquitoes usually bite during the day, peaking during early morning and late afternoon or evening. Researchers are studying a potential link between Zika virus infection and a surge in microcephaly cases. Microcephaly is a condition in which a baby is born with a small head or the head stops growing after birth. Rio de Janeiro, was an area with ongoing Zika virus transmission during the 2016 summer Olympic Games.",
+  "questionText": "Although the Zika virus can cause harm, other viruses can be beneficial. Give one example of a beneficial virus.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. Bacteriophages (which kill bacteria) or used to treat certain tumours or (vectors) in gene therapy or (vectors) in genetic engineering or plant example described or biological control (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "viral-replication",
+  "section": "C",
+  "questionRef": "2017 HL Q14(a)(iv)",
+  "stem": "Read the passage below and answer the questions that follow. Zika virus is a mosquito‐borne virus. Mosquitoes usually bite during the day, peaking during early morning and late afternoon or evening. Researchers are studying a potential link between Zika virus infection and a surge in microcephaly cases. Microcephaly is a condition in which a baby is born with a small head or the head stops growing after birth. Rio de Janeiro, was an area with ongoing Zika virus transmission during the 2016 summer Olympic Games.",
+  "questionText": "Describe how a virus replicates.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Virus attaches to cell (or to host) / (viral) nucleic acid into cell (or into host) / host structures used (or described) or virus (parts) replicated / virus assembly / release (or lysis or cell bursts)",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Virus attaches to cell (or to host)",
+      "(viral) nucleic acid into cell (or into host)",
+      "host structures used (or described) or virus (parts) replicated",
+      "virus assembly",
+      "release (or lysis or cell bursts)"
+     ]
+    },
+    "contextNote": "If ‘cell’ not mentioned at least once award a maximum of three unit marks"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "viruses-not-living",
+  "section": "C",
+  "questionRef": "2017 HL Q14(a)(v)",
+  "stem": "Read the passage below and answer the questions that follow. Zika virus is a mosquito‐borne virus. Mosquitoes usually bite during the day, peaking during early morning and late afternoon or evening. Researchers are studying a potential link between Zika virus infection and a surge in microcephaly cases. Microcephaly is a condition in which a baby is born with a small head or the head stops growing after birth. Rio de Janeiro, was an area with ongoing Zika virus transmission during the 2016 summer Olympic Games.",
+  "questionText": "Discuss the statement “Viruses are not considered to be living organisms”.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cannot reproduce independently (or explained) or obligate parasites",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Non-cellular or no organelles or no metabolism (or no metabolism described) or only one type of nucleic acid",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "at-risk-from-measles",
+  "section": "C",
+  "questionRef": "2017 HL Q14(b)(i)",
+  "questionText": "An outbreak of measles occurred in Ireland during the summer of 2016. Name a group of people who would be most at risk if exposed to such an outbreak.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Non-vaccinated (or example) or those with weakened immune systems (or example) or babies",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "vaccination",
+  "section": "C",
+  "questionRef": "2017 HL Q14(b)(ii)",
+  "questionText": "What is a vaccine and how does it result in immunity?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vaccine — Non-disease-causing dose of pathogen (or antigen)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "How vaccine gives immunity — (Introduces) antigen",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "How vaccine gives immunity — Stimulates antibody production",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "t-lymphocyte-types",
+  "section": "C",
+  "questionRef": "2017 HL Q14(b)(iii)",
+  "questionText": "List any three types of T lymphocyte active in the human immune response.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Helper / killer / suppressor / memory",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Helper",
+      "killer",
+      "suppressor",
+      "memory"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "t-lymphocyte-roles",
+  "section": "C",
+  "questionRef": "2017 HL Q14(b)(iv)",
+  "stem": "(iii) List any three types of T lymphocyte active in the human immune response.",
+  "questionText": "Describe the role of each of the T cells referred to in part (iii) above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Helper T cells: Recognise antigens or activate killer cells or secrete interferon or stimulate B- cells or stimulate antibody production / Killer T cells Recognise (or attack or burst) infected cells (or cancer or antigen) or secrete perforin / Suppressor T cells Stop immune response or inhibit B (or T) cell (production) / Memory T cells Remember antigens or long-term protection",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Helper T cells: Recognise antigens or activate killer cells or secrete interferon or stimulate B- cells or stimulate antibody production",
+      "Killer T cells Recognise (or attack or burst) infected cells (or cancer or antigen) or secrete perforin",
+      "Suppressor T cells Stop immune response or inhibit B (or T) cell (production)",
+      "Memory T cells Remember antigens or long-term protection"
+     ]
+    },
+    "contextNote": "Any one role from each of three types"
+   }
+  ],
+  "notes": "Any one role from each of three types: one menu of the four printed types, each with its roles, cut at the scheme's own solidus. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "lens-adaptations",
+  "section": "C",
+  "questionRef": "2017 HL Q14(c)(i)",
+  "stem": "In each of the following, state two features that show how the named structure is adapted to carry out the named function.",
+  "questionText": "The lens of the eye for focusing light.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Transparent / curved / can change curvature (or shape)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Transparent",
+      "curved",
+      "can change curvature (or shape)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "neuron-adaptations",
+  "section": "C",
+  "questionRef": "2017 HL Q14(c)(ii)",
+  "stem": "In each of the following, state two features that show how the named structure is adapted to carry out the named function.",
+  "questionText": "A neuron for transmitting impulses.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Receptors / insulated (or myelin) / axon / dendrites / neurotransmitters (or named neurotransmitter)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Receptors",
+      "insulated (or myelin)",
+      "axon",
+      "dendrites",
+      "neurotransmitters (or named neurotransmitter)"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "villus-adaptations",
+  "section": "C",
+  "questionRef": "2017 HL Q14(c)(iii)",
+  "stem": "In each of the following, state two features that show how the named structure is adapted to carry out the named function.",
+  "questionText": "An intestinal villus for absorbing soluble food.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Wall one cell thick / large surface area (or microvilli) / lacteal / rich blood supply",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Wall one cell thick",
+      "large surface area (or microvilli)",
+      "lacteal",
+      "rich blood supply"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "glomerulus-adaptations",
+  "section": "C",
+  "questionRef": "2017 HL Q14(c)(iv)",
+  "stem": "In each of the following, state two features that show how the named structure is adapted to carry out the named function.",
+  "questionText": "A glomerulus for filtering blood.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Consists of capillaries / high (blood) pressure / wall one cell thick / large surface area",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Consists of capillaries",
+      "high (blood) pressure",
+      "wall one cell thick",
+      "large surface area"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q14-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "wind-pollinated-flowers",
+  "section": "C",
+  "questionRef": "2017 HL Q14(c)(v)",
+  "stem": "In each of the following, state two features that show how the named structure is adapted to carry out the named function.",
+  "questionText": "A wind‐pollinated flower for pollination.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Small (or absent) petals or not colourful (or no colour) / exposed stamens / long styles / feathery stigmas / light pollen / smooth pollen / vast amount of pollen / no nectar",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Small (or absent) petals or not colourful (or no colour)",
+      "exposed stamens",
+      "long styles",
+      "feathery stigmas",
+      "light pollen",
+      "smooth pollen",
+      "vast amount of pollen",
+      "no nectar"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "homeostasis",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(i)",
+  "questionText": "Explain the term homeostasis.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Maintenance of constant internal environment",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "why-homeostasis",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(ii)",
+  "questionText": "Why is homeostasis important in the human body?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Allows normal (efficient) metabolic activity or keeps temperature (or pH) suitable for enzyme reactions",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "inhalation",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(iii)",
+  "questionText": "Describe in detail the process of inhalation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Increased CO2 / message from brain / diaphragm contracts and flattens / intercostal muscles contract and rib cage moves up (or out) / volume of thoracic cavity (or lungs) increases / pressure in thorax (or lungs) decreases / air in",
+    "marks": null,
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Increased CO2",
+      "message from brain",
+      "diaphragm contracts and flattens",
+      "intercostal muscles contract and rib cage moves up (or out)",
+      "volume of thoracic cavity (or lungs) increases",
+      "pressure in thorax (or lungs) decreases",
+      "air in"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-disorder",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(iv)",
+  "questionText": "Name a human breathing disorder.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Asthma or bronchitis or any valid disorder",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-v-asthma",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "asthma-cause-and-treatment",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(v) — asthma",
+  "stem": "(iv) Name a human breathing disorder.",
+  "questionText": "State a cause and a treatment for the breathing disorder referred to in part (iv).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cause of asthma — Constriction of (lower) bronchioles or by allergens e.g. dust",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Treatment for asthma — Avoid (or minimise exposure) to allergens or use an inhaler or other valid",
+    "marks": null
+   }
+  ],
+  "notes": "Asthma or bronchitis: the scheme prints a cause and a treatment for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-a-v-bronchitis",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "bronchitis-cause-and-treatment",
+  "section": "C",
+  "questionRef": "2017 HL Q15(a)(v) — bronchitis",
+  "stem": "(iv) Name a human breathing disorder.",
+  "questionText": "State a cause and a treatment for the breathing disorder referred to in part (iv).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cause of bronchitis — Infection or caused by irritants e.g. smoke",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Treatment for bronchitis — Antibiotics or other valid",
+    "marks": null
+   }
+  ],
+  "notes": "Asthma or bronchitis: the scheme prints a cause and a treatment for each, joined by \"OR\", so each is a route card. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "regions-of-the-vertebral-column",
+  "section": "C",
+  "questionRef": "2017 HL Q15(b)(i)",
+  "stem": "The vertebral column is part of the human axial skeleton and is composed of bones called vertebrae, with intervertebral discs.",
+  "questionText": "There are five regions in the vertebral column. Name any two of these regions and state how many bones are found in each named region.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "cervical / thoracic / lumbar / sacral / coccygeal",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "cervical",
+      "thoracic",
+      "lumbar",
+      "sacral",
+      "coccygeal"
+     ]
+    }
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "cervical — 7 / thoracic — 12 / lumbar — 5 / sacral — 5 / coccygeal — 4",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "cervical — 7",
+      "thoracic — 12",
+      "lumbar — 5",
+      "sacral — 5",
+      "coccygeal — 4"
+     ]
+    },
+    "contextNote": "Any two names, with their numbers i.e. 4 points"
+   }
+  ],
+  "notes": "\"Any two names, with their numbers i.e. 4 points\": two names and their two numbers are four responses on the ladder. The names are one menu; each region's number is read with its name from its own column of the scheme's table. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "intervertebral-discs",
+  "section": "C",
+  "questionRef": "2017 HL Q15(b)(ii)",
+  "stem": "The vertebral column is part of the human axial skeleton and is composed of bones called vertebrae, with intervertebral discs.",
+  "questionText": "What are the intervertebral discs made of and what is their function?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "What discs made of — Cartilage",
+    "marks": null,
+    "exactTermRequired": true
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Function of cartilage — Shock absorber or to reduce friction (or described)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "osteoclasts",
+  "section": "C",
+  "questionRef": "2017 HL Q15(b)(iii)1",
+  "stem": "The vertebral column is part of the human axial skeleton and is composed of bones called vertebrae, with intervertebral discs. Bone tissue is continually broken down and reformed during life.",
+  "questionText": "1. Name the cells that break down bone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Osteoclasts",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "osteoblasts",
+  "section": "C",
+  "questionRef": "2017 HL Q15(b)(iii)2",
+  "stem": "The vertebral column is part of the human axial skeleton and is composed of bones called vertebrae, with intervertebral discs. Bone tissue is continually broken down and reformed during life.",
+  "questionText": "2. Name the cells that build bone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Osteoblasts",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "bone-renewal",
+  "section": "C",
+  "questionRef": "2017 HL Q15(b)(iv)",
+  "stem": "The vertebral column is part of the human axial skeleton and is composed of bones called vertebrae, with intervertebral discs.",
+  "questionText": "Give two factors on which the continued renewal of bone depends.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Diet (or specific reference to supply of calcium (or phosphate) or supply of vitamin D) / exercise / age / reference to hormones or gender",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Diet (or specific reference to supply of calcium (or phosphate) or supply of vitamin D)",
+      "exercise",
+      "age",
+      "reference to hormones or gender"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "ivf",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(i)1",
+  "stem": "Answer the following questions in relation to human sexual reproduction. During in vitro fertilisation treatment (IVF) several eggs are removed from the woman.",
+  "questionText": "1. Explain the term in vitro fertilisation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Gametes (sperm and egg) fuse",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Outside the body",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "why-several-eggs",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(i)2",
+  "stem": "Answer the following questions in relation to human sexual reproduction. During in vitro fertilisation treatment (IVF) several eggs are removed from the woman.",
+  "questionText": "2. Suggest a reason for the removal of several eggs.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To increase chance of successful implantation (or pregnancy) or in case some of them die or in case some of them are not fertilised or can be stored (for future use)",
+    "marks": null
+   }
+  ],
+  "notes": "A numbered list the scheme prices entry by entry: one card per entry. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "ectoderm",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(ii)",
+  "stem": "Answer the following questions in relation to human sexual reproduction.",
+  "questionText": "Identify the germ layer from which the skin of the developing embryo arises.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "gate",
+    "verbatim": "Ectoderm",
+    "marks": null,
+    "exactTermRequired": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "placenta",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(iii)",
+  "stem": "Answer the following questions in relation to human sexual reproduction.",
+  "questionText": "From which tissues does the placenta form?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Endometrium or uterine lining",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Chorionic (tissue) [allow trophoblastic (or embryonic) tissue]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "separate-blood-supplies",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(iv)",
+  "stem": "Answer the following questions in relation to human sexual reproduction.",
+  "questionText": "One function of the placenta is to stop the blood of the mother and foetus mixing. Give two reasons why such mixing must not occur.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Blood pressure difference / blood group difference / to prevent transfer of certain infections",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Blood pressure difference",
+      "blood group difference",
+      "to prevent transfer of certain infections"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
+ },
+ {
+  "id": "bio-2017-hl-q15-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "placenta-function",
+  "section": "C",
+  "questionRef": "2017 HL Q15(c)(v)",
+  "stem": "Answer the following questions in relation to human sexual reproduction.",
+  "questionText": "State two other functions of the placenta.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(4) + 5(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Produces hormones",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Food (or oxygen or antibodies) to baby (or from mother) or waste to mother (or from baby)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
+  "year": 2017,
+  "level": "higher"
  }
 ]

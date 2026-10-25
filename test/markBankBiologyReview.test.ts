@@ -1819,9 +1819,20 @@ type FirstCarded = {
   /** questionRef -> printed part total, for parts whose scheme prints answers
    *  but no per-response tariff the answers fit. */
   wholeParts: Record<string, number>;
+  /** Cards whose "the graph" is the one the student draws in an earlier part
+   *  (the paper prints none), so no printed figure exists to show. */
+  ownDrawing?: string[];
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2017-hl': {
+    tasks: 137, cards: 141,
+    sources: { "paper": ['d87229756fb90df6dab5d4f7703e9c749f34716fb633d20f76a75614a2a7fa64', 16], "scheme": ['9a1d6777f5a1d9968787013a74698768febcb6af5cb01a4f4a848d335f20aadb', 24] },
+    routes: { "Q8(b)(ii)1": ["catalase", "amylase"], "Q8(b)(ii)2": ["catalase", "amylase"], "Q8(b)(iv)": ["catalase", "amylase"], "Q15(a)(v)": ["asthma", "bronchitis"] },
+    wholeParts: { "2017 HL Q1(c)": 4, "2017 HL Q1(d)": 4 },
+    // Q10(c)(iii) explains the graph the student draws in (ii); the paper prints none.
+    ownDrawing: ['bio-2017-hl-q10-c-iii'],
+  },
   '2018-ol': {
     tasks: 173, cards: 173,
     sources: { "paper": ['414dc21d069b170d4010359a90b3e066fd1d73cd8a0444870008a0f64ff32ad4', 16], "scheme": ['7b130a4f431b363258859c1b56d4d41df1aa44f771c20298de51feddb803c972', 12] },
@@ -1897,7 +1908,7 @@ describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-
   it('shows the printed figure wherever the ask points at one', () => {
     const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bshown below\b/i;
     for (const card of deck) {
-      if (pointsAtPrint.test(`${card.stem ?? ''} ${card.questionText}`)) {
+      if (pointsAtPrint.test(`${card.stem ?? ''} ${card.questionText}`) && !pin.ownDrawing?.includes(card.id)) {
         expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
       }
     }

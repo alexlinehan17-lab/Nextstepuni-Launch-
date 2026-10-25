@@ -195,6 +195,10 @@ const decks = [
    * of the bank, are carded as printed with the footnote's effect as each
    * row's note (a printed ask is never left out). Every earlier id is
    * unchanged. */
+  /* 2026-10-25: biology higher 1523 -> 1664. The 2017 Higher sitting, never
+   * carded before, is carded from a paper-by-paper review
+   * (bio_review_2017_hl.py): 137 tasks, 141 cards once the four printed routes
+   * are split. Every earlier id is unchanged. */
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   /* 2026-10-11: biology ordinary 686 -> 873. The 2026 Ordinary sitting is
    * added from the same review (bio_review_2026_ol.py): 183 tasks, 187 cards
@@ -1748,13 +1752,13 @@ describe('Mark Bank card preservation', () => {
     expect(biologyAliasIds.filter(id => id.includes('-ol-'))).toEqual(['bio-2025-ol-q16-ciii-fig']);
     for (const id of biologyAdditionIds) expect(id in CARD_ID_ALIASES, `${id}: addition reuses an alias key`).toBe(false);
     // The live decks, pinned whole (their history is beside the frozen pins).
-    expect(BIO_HIGHER).toHaveLength(1523);
-    expect(identityHash(BIO_HIGHER)).toBe('a5aeed6ec88b2ae829f9ced3c171440b89a37b93cbf9489f3901c261cd89c631');
+    expect(BIO_HIGHER).toHaveLength(1664);
+    expect(identityHash(BIO_HIGHER)).toBe('c74624bd264cd8596b767e5f1c669b5c5f4ad7ead0ebc6f73d66b890113b809e');
     expect(BIO_ORDINARY).toHaveLength(1577);
     expect(identityHash(BIO_ORDINARY)).toBe('dd68652ee32847ef779c32e39156364fc92d58a8db679722737a67370f8e04d2');
-    expect(biologyAdditionIds.size).toBe(1523 + 1577 - (673 - 1) - (686 - 1));
+    expect(biologyAdditionIds.size).toBe(1664 + 1577 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
-    expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(445);
+    expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(586);
     expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(485);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
