@@ -73,6 +73,7 @@ import SourceMaterialReader from './SourceMaterialReader';
 import PoliticsRubricPanel, { politicsMarks, type PoliticsScoreId } from './PoliticsRubricPanel';
 import PhysicalEducationRubricPanel from './PhysicalEducationRubricPanel';
 import GeographyAllocationPanel from './GeographyAllocationPanel';
+import GeographyChoicePanel from './GeographyChoicePanel';
 import { geographyMarks, geographyScoreId, type GeographyScoreId } from './geographyScoring';
 import { physicalEducationMarks, type PhysicalEducationScoreId } from './physicalEducationScoring';
 import AppliedMathematicsRubricPanel, {
@@ -1651,6 +1652,13 @@ const GeographyRubricPanel: React.FC<{
         </div>
       );
     }
+    // A criterion priced in whole SRPs moves in SRP steps, never to a mark
+    // the scheme cannot award.
+    const marks = criterion.permittedMarks;
+    const step = marks.length > 1 && marks.every((mark, index) =>
+      index === 0 || mark - marks[index - 1] === marks[1] - marks[0])
+      ? marks[1] - marks[0]
+      : 1;
     return (
       <div>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
@@ -1663,7 +1671,7 @@ const GeographyRubricPanel: React.FC<{
           type="range"
           min={0}
           max={criterion.maxMarks}
-          step={1}
+          step={step}
           value={selected}
           aria-label={`${criterion.label} mark`}
           onChange={event => onScore(id, Number(event.currentTarget.value))}
@@ -1742,11 +1750,19 @@ const GeographyRubricPanel: React.FC<{
             </div>
             {criterion.allocation ? (
               <div style={{ marginTop: 10 }}>
-                <GeographyAllocationPanel
-                  criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
-                  scores={scores}
-                  onScore={onScore}
-                />
+                {criterion.allocation.choice ? (
+                  <GeographyChoicePanel
+                    criterion={criterion as React.ComponentProps<typeof GeographyChoicePanel>['criterion']}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                ) : (
+                  <GeographyAllocationPanel
+                    criterion={criterion as GeographyCriterion & { allocation: NonNullable<GeographyCriterion['allocation']> }}
+                    scores={scores}
+                    onScore={onScore}
+                  />
+                )}
               </div>
             ) : (
               <>
@@ -1763,6 +1779,21 @@ const GeographyRubricPanel: React.FC<{
           </section>
         ))}
       </div>
+
+      {rubric.directions && rubric.directions.length > 0 && (
+        <section style={{ marginTop: 14, paddingTop: 12, borderTop: `1px solid ${HAIRLINE_2}` }}>
+          <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+            Examiner directions
+          </span>
+          <ul style={{ margin: '7px 0 0', padding: '0 0 0 16px', display: 'grid', gap: 6 }}>
+            {rubric.directions.map((direction, index) => (
+              <li key={`direction-${index}`} style={{ color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                {direction.replace(/^•\s*/, '')}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <div style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,

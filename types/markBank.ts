@@ -785,6 +785,32 @@ export interface GeographyAllocation {
   directions: string[];
   /** Where parts print SRP ranges, the SRPs they share between them. */
   srpPool?: { count: number; marks: number };
+  /** The scheme prices this criterion one of several ways and the student
+   *  claims exactly one: a column of a two-route table ("3 @ 20 marks each" /
+   *  "4 @ 15 marks each"), or a quality band ("Very Good · 17"). */
+  choice?: GeographyAllocationChoice;
+}
+
+/** One way the scheme prices a criterion, claimed instead of the others. */
+export interface GeographyChoiceOption {
+  id: string;
+  /** The scheme's words for it: a column heading or a band's name. */
+  label: string;
+  /** A band's marks, earned by choosing it. */
+  marks?: number;
+  /** A band's descriptor, as printed. */
+  note?: string;
+  /** A column's own rows and SRP counts, claimed once the column is chosen. */
+  allocation?: GeographyAllocation;
+}
+
+export interface GeographyAllocationChoice {
+  /** route: a column of a two-route table; band: a quality band; alternative:
+   *  one printed answer or another, each at its own price. */
+  kind: 'route' | 'band' | 'alternative';
+  /** The scheme's heading over the options ("Number of aspects"), or ''. */
+  prompt: string;
+  options: GeographyChoiceOption[];
 }
 
 export interface GeographyCriterion {
@@ -795,7 +821,8 @@ export interface GeographyCriterion {
   guidanceKind: GeographyGuidanceKind;
   /** Published allocation and examiner directions for this task, as lifted. */
   guidance: string[];
-  /** The same allocation as claimable rows, where it reconciles. */
+  /** The same allocation as claimable rows, where it reconciles to
+   *  `maxMarks` and (for a reviewed criterion) to `permittedMarks`. */
   allocation?: GeographyAllocation;
 }
 
@@ -806,6 +833,15 @@ export interface GeographyRubric {
   criteria: GeographyCriterion[];
   /** The mark value of one SRP on this paper, where SRPs govern the answer. */
   srpMarks?: number;
+  /** Printed marks the published scheme allocates to no line (2020 OL 9C
+   *  prices 27 of its printed 30). They stay in the card's `totalMarks` and
+   *  are never derived into a criterion, so the criteria reach
+   *  `totalMarks - unpricedMarks`; the marking guide note says so. */
+  unpricedMarks?: number;
+  /** The scheme's own examiner directions (credit rules, caps, deductions)
+   *  for this task, lifted verbatim. They qualify the criteria; they carry
+   *  no marks of their own. */
+  directions?: string[];
   markingGuideNote: string;
 }
 
@@ -958,6 +994,15 @@ export interface SecDiagramCard extends SecPointCardBase {
 export interface SecRubricCard extends SecCardBase {
   kind: 'rubric';
   rubric: SecRubric;
+  /** A crop of an official document shown on the card. A `solution` crop
+   *  (the scheme's own answer drawing) is held back until the reveal. Used by
+   *  Geography for a map crop around the grid reference asked about and for a
+   *  scheme's labelled diagram. */
+  figure?: CardFigure;
+  /** The paper's own print of the ask, as on `SecQuestionCard`: shown before
+   *  the reveal in place of the typeset stem, never a solution. Used by
+   *  Geography for a diagram question whose blanks are the ask. */
+  questionFigure?: CardFigure;
 }
 
 /**
@@ -1258,9 +1303,12 @@ export function tariffReconciles(card: SecCard): boolean {
     }
     if (card.rubric.system === 'geography' || card.rubric.system === 'physical-education') {
       const criteria: PhysicalEducationRubric['criteria'] = card.rubric.criteria;
+      // A printed remainder the scheme prices on no line is declared, never derived.
+      const unpriced = card.rubric.system === 'geography' ? card.rubric.unpricedMarks ?? 0 : 0;
       return criteria.length > 0
+        && Number.isInteger(unpriced) && unpriced >= 0 && unpriced < card.totalMarks
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
-        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) + unpriced === card.totalMarks
         && criteria.every(criterion =>
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0

@@ -1,0 +1,33 @@
+/* Geography choices: a route picked from a two-column table, or one band (or
+   one printed answer) claimed from several. The claim rows follow the
+   allocation rows (geography-allocation.css): a full-width button, a square
+   check, the scheme's words, a marks chip; mint means claimed. */
+.mb-geo-choice { display: grid; gap: 10px; }
+.mb-geo-choice-prompt { margin: 0; font: 600 13.5px/1.4 'DM Sans', system-ui, sans-serif; color: var(--mb-ink); }
+.mb-geo-choice-hint { margin: 0; font: 400 12px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+
+.mb-geo-choice-options { display: grid; gap: 7px; }
+.mb-geo-choice-option {
+  width: 100%; text-align: left; display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; gap: 10px; align-items: start;
+  padding: 11px 12px; border-radius: 12px; cursor: pointer;
+  border: 1.5px solid var(--mb-border); background: var(--mb-paper); color: var(--mb-ink-2);
+  font: 500 13.5px/1.42 'DM Sans', system-ui, sans-serif;
+  transition: background 160ms, border-color 160ms;
+}
+.mb-geo-choice-option[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }
+.mb-geo-choice-check {
+  width: 18px; height: 18px; border-radius: 5px; margin-top: 1px;
+  border: 1.5px solid var(--mb-border); display: inline-flex; align-items: center; justify-content: center; color: #fff;
+}
+.mb-geo-choice-option[data-claimed="true"] .mb-geo-choice-check { border-color: var(--mb-success); background: var(--mb-success); }
+.mb-geo-choice-text { min-width: 0; overflow-wrap: anywhere; display: grid; gap: 3px; }
+.mb-geo-choice-text > span { font-weight: 650; }
+.mb-geo-choice-text small { font: 400 11.5px/1.45 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); }
+.mb-geo-choice-option[data-claimed="true"] .mb-geo-choice-text small { color: var(--mb-success-text); }
+.mb-geo-choice-chip {
+  font: 700 10.5px/1.7 'Roboto Mono', ui-monospace, monospace; border-radius: 6px; padding: 0 6px; white-space: nowrap;
+  font-variant-numeric: tabular-nums; background: var(--mb-raised); color: var(--mb-muted); align-self: start;
+}
+.mb-geo-choice-option[data-claimed="true"] .mb-geo-choice-chip { background: var(--mb-success-tint); color: var(--mb-success-text); }
+
+.mb-geo-choice-notes { margin: 0; padding-left: 17px; font: 400 11.5px/1.5 'DM Sans', system-ui, sans-serif; color: var(--mb-muted); display: grid; gap: 3px; }

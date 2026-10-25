@@ -20,7 +20,8 @@
   transition: background 160ms, border-color 160ms;
 }
 button.mb-geo-row { grid-template-columns: 20px minmax(0, 1fr) auto; cursor: pointer; }
-.mb-geo-row--stepped { grid-template-columns: minmax(0, 1fr) auto; }
+/* A row with many steps ("6 items illustrated", 1m–12m) keeps room for its words. */
+.mb-geo-row--stepped { grid-template-columns: minmax(9em, 1fr) auto; }
 .mb-geo-srp { grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; }
 .mb-geo-row[data-claimed="true"],
 .mb-geo-srp[data-claimed="true"] { border-color: var(--mb-success); background: var(--mb-success-tint); color: var(--mb-success-text); }

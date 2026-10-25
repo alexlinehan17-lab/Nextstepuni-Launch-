@@ -264,6 +264,30 @@ export interface TopicSibling {
   n: string;
 }
 
+/** A 2010-2019 Geography booklet printed Part One (Q1-12) and then Part Two,
+ *  which restarts at Q1. Part Two keeps its printed number as its Atlas and
+ *  Paper Trail identity (the Viewer's chips); Part One files as
+ *  n = 1000 + its printed number (scripts/markbank/authoring/geography_atlas_anchors.py). */
+const GEOGRAPHY_SHARED_BOOKLET = /^LC005[AG]LP000(EV|IV)\.pdf$/;
+const GEOGRAPHY_PART_ONE_OFFSET = 1000;
+
+/** The printed address of a tagged question, for any place that names one
+ *  before (or without) its anchor map's own label. `short` is the compact
+ *  form used in lists ("Q4", "Part One Q4"). */
+export function questionLabel(
+  q: Pick<TopicSibling, 'subjectId' | 'fileid' | 'n'>,
+  { short = false }: { short?: boolean } = {},
+): string {
+  const shared = q.subjectId === 'geography' ? GEOGRAPHY_SHARED_BOOKLET.exec(q.fileid) : null;
+  const printed = Number(q.n) - GEOGRAPHY_PART_ONE_OFFSET;
+  if (shared && Number.isInteger(printed) && printed >= 1) {
+    const part = shared[1] === 'IV' ? 'Cuid a hAon' : 'Part One';
+    if (short) return `${part} Q${printed}`;
+    return shared[1] === 'IV' ? `${part} · Ceist ${printed}` : `${part} · Question ${printed}`;
+  }
+  return short ? `Q${q.n}` : `Question ${q.n}`;
+}
+
 /** Every question tagged with `subtopicId` across the subject's tagged papers —
  *  the "drill this topic across years" set. Newest first. */
 export function siblingsFor(subjectId: string, subtopicId: string): TopicSibling[] {
