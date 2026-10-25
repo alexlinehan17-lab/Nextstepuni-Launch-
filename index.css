@@ -127,6 +127,7 @@
 }
 
 .dark {
+  --nsu-orange: #eb692a; /* the one orange is the same in both themes */
   --surface-canvas: #151515;
   --surface-paper: #202020;
   --surface-soft: #282624;
