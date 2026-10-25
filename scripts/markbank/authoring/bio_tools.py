@@ -374,7 +374,46 @@ def cmd_scheme_md(year, level):
     append(columns, columns.column_runs(columns.Path(pdf)))
     fractions = load(os.path.join(mb, 'append-scheme-fractions.py'), 'scheme_fractions')
     append(fractions, fractions.fractions(fractions.Path(pdf)), drop_empty=True)
+    append(CLIP_READS, _clip_reads(year, level), drop_empty=True)
     print(md)
+
+
+# Answers the sitting's ledger reads by glyph position (G rows of kind 'tokens'
+# or 'tokens-x'), read again from the scheme PDF by the runner's own reader,
+# each in its printed order. The flat extraction reads ACROSS the page, so an
+# answer printed in a box beside another (2015 Higher scheme p6: Q3's answers
+# with Q4's key cells beside them) comes out with the other box's cells inside
+# it, and neither the table, block-order nor column-run passes rejoins a line
+# the PDF sets as two text objects ("(antigen) reaction or" / "size or host
+# species or structure"). Every line here is words the SEC printed, read from
+# one region of one page in the order the runner verified against the
+# reviewer's reading of the rendered page; append-only, like the passes above.
+CLIP_READS = type('ClipReads', (), {'START': '<!-- markbank:clip-reads -->',
+                                     'END': '<!-- /markbank:clip-reads -->'})
+
+
+def _clip_reads(year, level):
+    import bio_review as R
+    L = _ledger(int(year), level)
+    lifter = R.build(L, int(year), level)[0]
+    specs = []
+
+    def walk(x):
+        if isinstance(x, dict):
+            if x.get('type') == 'geo' and x.get('kind') in ('tokens', 'tokens-x'):
+                specs.append(x)
+            for v in x.values():
+                walk(v)
+        elif isinstance(x, (list, tuple)):
+            for v in x:
+                walk(v)
+    walk(L.TASKS)
+    out = []
+    for spec in specs:
+        value = R.read_geo(lifter, spec, spec.get('page'))
+        if len(value) >= 12 and value not in out:
+            out.append(value)
+    return out
 
 
 COMMANDS = {k[4:].replace('_', '-'): v for k, v in globals().items() if k.startswith('cmd_')}
