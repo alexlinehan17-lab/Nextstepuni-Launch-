@@ -10,6 +10,10 @@
  * The steps share state so the flow reads end to end: a ticked strategy
  * reaches the receipt, the debrief sets the points on the saved card, and the
  * saved card's buttons start the flow again (as the BEFORE harness does).
+ *
+ * The study receipt is the CURRENT one, markup and stylesheet untouched
+ * (Alex, 25 Oct: "this is really cool and we can't lose it"). Only its place
+ * on the page is new: beside the debrief when there is room, under it when not.
  */
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react';
 import { ArrowUpRight } from 'lucide-react';
@@ -19,6 +23,8 @@ import { FULL_REFLECTION_POINTS, QUICK_DEBRIEF_POINTS } from '../../components/R
 import { STRATEGY_REGISTRY } from '../../utils/strategyRegistry';
 import { getSubjectFill } from '../../utils/subjectColors';
 import { formatStudyTime } from '../../utils/studyTime';
+import '../../components/study/study-crew.css';
+import '../../components/study/study-kobra.css';
 import './post-session.css';
 
 // ── Demo session: the BEFORE harness's Chemistry session ─────────
@@ -188,7 +194,8 @@ export default function PostSessionAfter() {
           </div>
         </section>
 
-        {/* ── Step 2: the debrief and the study receipt ── */}
+        {/* ── Step 2: the debrief, with the study receipt beside it ── */}
+        <div className="kr-ps-debrief">
         <section className="kr-ps-card nsu-paper-card" aria-labelledby={`${id}-two`}>
           <header className="kr-ps-head">
             <p className="kr-ps-step">Step 2 of 3 · Debrief</p>
@@ -256,33 +263,33 @@ export default function PostSessionAfter() {
               <p className="kr-ps-note">Saved sessions appear in your progress. Your debrief stays in your study journal.</p>
             </div>
           </form>
-
-          <article className="kr-ps-receipt" aria-label="Your study receipt">
-            <header className="kr-ps-receipt-head">
-              <div>
-                <p className="kr-ps-eyebrow">Nextstepuni / Your study receipt</p>
-                <h4 className="kr-ps-receipt-title">A good little session.</h4>
-                <p className="kr-ps-detail">{date.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
-              </div>
-              <span className="kr-ps-art"><CrewIllustration character={CHARACTER} /></span>
-            </header>
-            <dl className="kr-ps-rows">
-              <div><dt>Subject</dt><dd>{SUBJECT}</dd></div>
-              <div><dt>Time studied</dt><dd>{formatStudyTime(ELAPSED_SECONDS)}</dd></div>
-              <div><dt>Practice</dt><dd>{PRACTICE}</dd></div>
-              {strategies.length > 0 && <div><dt>Strategies</dt><dd>{strategies.join(', ')}</dd></div>}
-              {confidence && <div><dt>Feeling</dt><dd className="kr-ps-cap">{confidence}</dd></div>}
-              <div><dt>JP on saving</dt><dd>{BASE_POINTS}{valid && <> + {bonus} debrief</>}</dd></div>
-            </dl>
-            <p className="kr-ps-topics">Topics not recorded · subject time is saved.</p>
-            <div className="kr-ps-next">
-              <span>{note ? 'A note to take with you' : 'Next time'}</span>
-              <p>{note || 'Pick up where you left off. One step at a time.'}</p>
-            </div>
-            <footer className="kr-ps-receipt-foot kr-ps-eyebrow"><span>One step taken.</span><span>Your step.</span></footer>
-            <p className="kr-ps-signoff">Small steps, on the record.</p>
-          </article>
         </section>
+
+        {/* The current receipt, exactly as StudySessionFinish renders it. */}
+        <article className="study-receipt" aria-label="Your study receipt">
+          <header>
+            <p className="study-crew-eyebrow">Nextstepuni / Your study receipt</p>
+            <CrewIllustration character={CHARACTER} />
+            <h2>A good little session.</h2>
+            <p>{date.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+          </header>
+          <dl>
+            <div><dt>Subject</dt><dd>{SUBJECT}</dd></div>
+            <div><dt>Time studied</dt><dd>{formatStudyTime(ELAPSED_SECONDS)}</dd></div>
+            <div><dt>Practice</dt><dd>{PRACTICE}</dd></div>
+            {strategies.length > 0 && <div><dt>Strategies</dt><dd>{strategies.join(', ')}</dd></div>}
+            {confidence && <div><dt>Feeling</dt><dd className="study-receipt-confidence">{confidence}</dd></div>}
+            <div><dt>JP on saving</dt><dd>{BASE_POINTS}{valid && <> + {bonus} debrief</>}</dd></div>
+          </dl>
+          <div className="study-receipt-topics"><p>Topics not recorded · subject time is saved.</p></div>
+          <div className="study-receipt-next">
+            <span>{note ? 'A note to take with you' : 'Next time'}</span>
+            <p>{note || 'Pick up where you left off. One step at a time.'}</p>
+          </div>
+          <footer><span>One step taken.</span><span>Your step.</span></footer>
+          <p className="study-receipt-signoff">Small steps, on the record.</p>
+        </article>
+        </div>
 
         {/* ── Step 3: saved, and the points to spend ── */}
         <section className="kr-ps-card nsu-paper-card" aria-labelledby={`${id}-three`}>

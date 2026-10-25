@@ -18,26 +18,26 @@ import './kobra-review.css';
 const SECTIONS = [
   {
     id: 'post-session', n: '01', title: 'After a study session',
-    change: 'Every session leaves the Kobra setup for a taupe Tailwind flow with offset shadows, a rotated receipt and an underline-only mode toggle. The rebuild keeps every word and puts the three steps on paper cards: Checkbox rows for strategies, Tabs for the debrief mode, a RadioGroup for confidence, Kobra Buttons throughout.',
+    change: 'Every session leaves the Kobra setup for a taupe Tailwind flow with offset shadows and an underline-only mode toggle. The rebuild keeps every word and puts the three steps on paper cards: Checkbox rows for strategies, Tabs for the debrief mode, a RadioGroup for confidence, Kobra Buttons throughout. The study receipt is the current one, untouched.',
     before: '/kobra-review-before.html?screen=post-session', beforeNote: 'Click through the three steps.',
     file: 'PostSessionAfter',
   },
   {
     id: 'home', n: '02', title: 'Home',
     change: 'The hero sits outside the Kobra scope with a hard-coded #ff7915 button, card drop shadows and ghost links that only underline on hover. The rebuild is a primary Kobra Button, hairline cards, quiet bars and outline buttons that read as clickable before hover.',
-    before: '/?view=tree', beforeNote: 'The live app, signed in.',
+    before: '/kobra-review-before.html?screen=home', beforeNote: 'The current Home on a demo week.',
     file: 'HomeHeroAfter',
   },
   {
     id: 'mark-bank', n: '03', title: 'Mark Bank library',
     change: 'A Kobra shell around a hand-rolled level control, a fake Input, a fake checkbox, a private --mb-* palette and 19 !important. The rebuild uses Select, Tabs, Input, Checkbox and ToggleGroup, ink markers for the index, and has real loading and error states.',
-    before: '/?view=innovation-zone&tool=mark-bank', beforeNote: 'The live app.',
+    before: '/kobra-review-before.html?screen=mark-bank', beforeNote: 'The current library on the Politics and Society deck.',
     file: 'MarkBankLibraryAfter',
   },
   {
     id: 'viewer', n: '04', title: 'Paper viewer chrome',
     change: 'The viewer opens on every paper: a grey canvas, ink buttons with offset shadows, a hand-built Tools menu, three hand-rolled toasts and eight dialogs. The rebuild is the toolbar on Kobra: Tabs, outline Buttons, a DropdownMenu with a Switch per tool, Progress for the page position and the runtime toast.',
-    before: '/?view=innovation-zone&tool=paper-trail', beforeNote: 'The live app; open any paper to see the current viewer.',
+    before: '/kobra-review-before.html?screen=viewer', beforeNote: 'The current viewer on Physics 2025 Higher.',
     file: 'ViewerChromeAfter',
   },
   {

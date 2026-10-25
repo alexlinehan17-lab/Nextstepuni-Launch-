@@ -6,12 +6,14 @@
    runtime's utilities sit at (0,2,0), so three-part selectors win without
    !important. */
 
-/* Three steps side by side when there is room, stacked otherwise. */
+/* Three steps side by side when there is room, stacked otherwise. The grid is
+   a container so the debrief row can query the width it actually has. */
 .kr-ps .kr-ps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 20px;
   align-items: start;
+  container-type: inline-size;
 }
 .kr-ps .kr-ps-card {
   container-type: inline-size;
@@ -181,27 +183,18 @@
 .kr-ps .kr-ps-help { margin: 0; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
 .kr-ps .kr-ps-note { margin: 4px 0 0; max-width: 44ch; font-size: 13px; line-height: 1.6; color: var(--muted-foreground); text-align: center; }
 
-/* The study receipt: a dashed group inside the card, flat and upright. */
-.kr-ps .kr-ps-receipt { margin-top: 26px; padding: 18px; border: 1px dashed var(--outline-soft); border-radius: 12px; }
-.kr-ps .kr-ps-receipt-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.kr-ps .kr-ps-receipt-head > div { min-width: 0; }
-.kr-ps .kr-ps-receipt-title { margin: 6px 0 0; font: 500 23px/1.15 var(--nsu-serif); letter-spacing: -.02em; }
-.kr-ps .kr-ps-rows { margin: 16px 0 0; border-top: 1px solid var(--border); }
-.kr-ps .kr-ps-rows > div { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--border); }
-.kr-ps .kr-ps-rows dt { flex: none; font-size: 13px; color: var(--muted-foreground); }
-.kr-ps .kr-ps-rows dd { max-width: 65%; margin: 0; font: 500 14px/1.45 'DM Sans', sans-serif; text-align: right; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
-.kr-ps .kr-ps-cap { text-transform: capitalize; }
-.kr-ps .kr-ps-topics { margin: 12px 0 0; font-size: 13px; line-height: 1.5; color: var(--muted-foreground); }
-.kr-ps .kr-ps-next { margin: 14px 0 0; padding: 14px 0; border-block: 1px solid var(--border); text-align: center; }
-.kr-ps .kr-ps-next > span { font-size: 13px; color: var(--muted-foreground); }
-.kr-ps .kr-ps-next > p { max-height: 240px; margin: 6px 0 0; overflow-y: auto; font: 500 15px/1.5 'DM Sans', sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; }
-.kr-ps .kr-ps-receipt-foot { display: flex; justify-content: space-between; gap: 12px; margin: 12px 0 0; }
-.kr-ps .kr-ps-signoff { margin: 14px 0 0; text-align: center; font: italic 400 17px/1.4 var(--nsu-serif); }
+/* The debrief and the current study receipt (study-crew.css, untouched): side
+   by side as on the live screen when the row is wide enough, stacked otherwise.
+   The receipt keeps its own paper, zigzag edges, shadow and tilt; the slot only
+   caps its width at the live screen's and leaves room for the tilt. */
+.kr-ps .kr-ps-debrief { display: grid; gap: 24px; align-items: start; min-width: 0; color: var(--foreground); font: 400 15px/1.55 'DM Sans', sans-serif; }
+@container (min-width: 760px) {
+  .kr-ps .kr-ps-debrief { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+}
+.kr-ps .kr-ps-debrief .study-receipt { width: calc(100% - 24px); max-width: 440px; margin: 16px auto 12px; }
 
 /* Crew artwork, sized for a card (the global rule draws it at 180px). */
 .kr-ps .kr-ps-art { display: block; flex: none; line-height: 0; }
-.kr-ps .kr-ps-art .crew-illustration,
-.kr-ps .kr-ps-art .crew-original { width: 84px; height: 84px; }
 .kr-ps .kr-ps-art-lg .crew-illustration,
 .kr-ps .kr-ps-art-lg .crew-original { width: 112px; height: 112px; }
 

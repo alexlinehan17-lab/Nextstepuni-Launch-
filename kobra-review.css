@@ -36,7 +36,7 @@
 .kr-page .kr-pane-label span.kr-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); }
 .kr-page .kr-pane-label.after span.kr-dot { background: var(--nsu-orange); }
 .kr-page .kr-frame { border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: var(--background); }
-.kr-page .kr-frame iframe { display: block; width: 100%; height: 780px; border: 0; background: #fff; }
+.kr-page .kr-frame iframe { display: block; width: 100%; height: 780px; border: 0; background: var(--surface-canvas); }
 .kr-page .kr-frame.after { padding: 20px; min-height: 780px; }
 @media (min-width: 768px) { .kr-page .kr-frame.after { padding: 28px; } }
 .kr-page .kr-pending { padding: 40px 0; text-align: center; color: var(--muted-foreground); font-size: 14px; }
