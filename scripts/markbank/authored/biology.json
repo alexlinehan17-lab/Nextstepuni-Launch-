@@ -88310,5 +88310,5362 @@
     "askedInThisQuestion": true
    }
   ]
+ },
+ {
+  "id": "bio-2018-ol-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "elements-in-protein",
+  "section": "A",
+  "questionRef": "2018 OL Q1(a)",
+  "questionText": "All proteins are made of carbon, hydrogen, oxygen, and _____________________________",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Nitrogen",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "monosaccharide",
+  "section": "A",
+  "questionRef": "2018 OL Q1(b)",
+  "questionText": "Give one example of a monosaccharide.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Glucose",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "test-for-reducing-sugar",
+  "section": "A",
+  "questionRef": "2018 OL Q1(c)",
+  "questionText": "A solution used to test for the presence of a reducing sugar is ________________________",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Benedict's or Fehling's",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "minerals-for-bones",
+  "section": "A",
+  "questionRef": "2018 OL Q1(d)",
+  "questionText": "Name one mineral needed for healthy bones.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Calcium or phosphorus",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "glycerol-in-lipids",
+  "section": "A",
+  "questionRef": "2018 OL Q1(e)",
+  "questionText": "Glycerol is part of a biomolecule. Name the biomolecule.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lipid",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q2-a-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "ligament",
+  "section": "A",
+  "questionRef": "2018 OL Q2(a) — A",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Ligament",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ligament",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "(Synovial) fluid",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q2-a-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cartilage",
+  "section": "A",
+  "questionRef": "2018 OL Q2(a) — B",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Cartilage",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ligament",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "(Synovial) fluid",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q2-a-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "synovial-fluid",
+  "section": "A",
+  "questionRef": "2018 OL Q2(a) — C",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = (Synovial) fluid",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Ligament",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cartilage",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "(Synovial) fluid",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q2-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hinge-joint",
+  "section": "A",
+  "questionRef": "2018 OL Q2(b)",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "What type of synovial joint is the elbow?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hinge",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint"
+ },
+ {
+  "id": "bio-2018-ol-q2-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "tendons",
+  "section": "A",
+  "questionRef": "2018 OL Q2(c)",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "Name the structures that attach muscle to bone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Tendons",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint"
+ },
+ {
+  "id": "bio-2018-ol-q2-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "musculoskeletal-disorder",
+  "section": "A",
+  "questionRef": "2018 OL Q2(d)",
+  "stem": "The diagram shows a human synovial joint.",
+  "questionText": "Name one disorder of the musculoskeletal system.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Arthritis or osteoporosis",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint"
+ },
+ {
+  "id": "bio-2018-ol-q2-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "treating-a-musculoskeletal-disorder",
+  "section": "A",
+  "questionRef": "2018 OL Q2(e)",
+  "stem": "The diagram shows a human synovial joint. (d) Name one disorder of the musculoskeletal system.",
+  "questionText": "Suggest one treatment for the disorder mentioned above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching treatment",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q2-joint"
+ },
+ {
+  "id": "bio-2018-ol-q3-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "immobilised-enzymes-reusable",
+  "section": "A",
+  "questionRef": "2018 OL Q3(a)",
+  "stem": "Choose a term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "An advantage of using immobilised enzymes",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Reusable",
+    "marks": null
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2018-ol-q3-table"
+ },
+ {
+  "id": "bio-2018-ol-q3-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "alginate",
+  "section": "A",
+  "questionRef": "2018 OL Q3(b)",
+  "stem": "Choose a term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "A gel in which enzymes are trapped",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Alginate",
+    "marks": null
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2018-ol-q3-table"
+ },
+ {
+  "id": "bio-2018-ol-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "example-of-an-immobilised-enzyme",
+  "section": "A",
+  "questionRef": "2018 OL Q3(c)",
+  "stem": "Choose a term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "An example of an immobilised enzyme",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pectinase",
+    "marks": null
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2018-ol-q3-table"
+ },
+ {
+  "id": "bio-2018-ol-q3-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "calcium-chloride",
+  "section": "A",
+  "questionRef": "2018 OL Q3(d)",
+  "stem": "Choose a term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "The substance that hardens the gel beads containing the trapped enzyme",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Calcium chloride",
+    "marks": null
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2018-ol-q3-table"
+ },
+ {
+  "id": "bio-2018-ol-q3-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "uses-of-immobilised-enzymes",
+  "section": "A",
+  "questionRef": "2018 OL Q3(e)",
+  "stem": "Choose a term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "Immobilised enzymes can also be used in",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "9 + 8 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Washing powder",
+    "marks": null
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2018-ol-q3-table"
+ },
+ {
+  "id": "bio-2018-ol-q4-a-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "penis",
+  "section": "A",
+  "questionRef": "2018 OL Q4(a) — A",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Penis",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Penis",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Urethra [allow sperm duct or vas deferens]",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q4-a-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "testis",
+  "section": "A",
+  "questionRef": "2018 OL Q4(a) — B",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Testis",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Penis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Testis",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Urethra [allow sperm duct or vas deferens]",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q4-a-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "urethra",
+  "section": "A",
+  "questionRef": "2018 OL Q4(a) — C",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "C = Urethra [allow sperm duct or vas deferens]",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Penis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Testis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Urethra [allow sperm duct or vas deferens]",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q4-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "where-sperm-are-made",
+  "section": "A",
+  "questionRef": "2018 OL Q4(b)",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Where are sperm cells produced?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Testis or B",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male"
+ },
+ {
+  "id": "bio-2018-ol-q4-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "testosterone",
+  "section": "A",
+  "questionRef": "2018 OL Q4(c)",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Name one male sex hormone.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Testosterone",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male"
+ },
+ {
+  "id": "bio-2018-ol-q4-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "infertility",
+  "section": "A",
+  "questionRef": "2018 OL Q4(d)",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Explain the term infertility.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Inability to produce offspring",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male"
+ },
+ {
+  "id": "bio-2018-ol-q4-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "male-infertility",
+  "section": "A",
+  "questionRef": "2018 OL Q4(e)",
+  "stem": "The diagram shows the human male reproductive system.",
+  "questionText": "Give one cause of infertility in men.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Low sperm count",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q4-male"
+ },
+ {
+  "id": "bio-2018-ol-q5-a",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "controls",
+  "section": "A",
+  "questionRef": "2018 OL Q5(a)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "A control is used for comparison in experiments",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "data",
+  "section": "A",
+  "questionRef": "2018 OL Q5(b)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "The information collected in an experiment is called data",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-c",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "hypothesis",
+  "section": "A",
+  "questionRef": "2018 OL Q5(c)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "A hypothesis is a proven idea",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-d",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "replication",
+  "section": "A",
+  "questionRef": "2018 OL Q5(d)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Replicating an experiment means repeating it a number of times",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-e",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "theory",
+  "section": "A",
+  "questionRef": "2018 OL Q5(e)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "A theory is a hypothesis that has been disproved",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-f",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "variables",
+  "section": "A",
+  "questionRef": "2018 OL Q5(f)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "A variable never changes during an experiment",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q5-g",
+  "subjectId": "biology",
+  "topicId": "bio-u2",
+  "conceptId": "publishing-results",
+  "section": "A",
+  "questionRef": "2018 OL Q5(g)",
+  "stem": "Indicate whether each of the following statements is true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Scientific discoveries are first published in newspapers",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "8 + 7 + 5(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q6-a-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "vacuole",
+  "section": "A",
+  "questionRef": "2018 OL Q6(a) — D",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "Name the parts labelled D and E.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "D = Vacuole",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell",
+  "labelKey": [
+   {
+    "letter": "D",
+    "meaning": "Vacuole",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Nucleus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q6-a-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "nucleus",
+  "section": "A",
+  "questionRef": "2018 OL Q6(a) — E",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "Name the parts labelled D and E.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = Nucleus",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell",
+  "labelKey": [
+   {
+    "letter": "D",
+    "meaning": "Vacuole",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Nucleus",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "plant-cell-structures",
+  "section": "A",
+  "questionRef": "2018 OL Q6(b)",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "Name any two structures from the diagram that indicate this is a plant cell.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "(Cell) wall / (large) vacuole / chloroplast(s)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(Cell) wall",
+      "(large) vacuole",
+      "chloroplast(s)"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell"
+ },
+ {
+  "id": "bio-2018-ol-q6-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "cell-membrane",
+  "section": "A",
+  "questionRef": "2018 OL Q6(c)",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "The cell membrane is composed of two substances. Name both.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lipid",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "protein",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell"
+ },
+ {
+  "id": "bio-2018-ol-q6-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "cell-wall",
+  "section": "A",
+  "questionRef": "2018 OL Q6(d)",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "Which labelled part is made of cellulose?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Cell) wall or B",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell"
+ },
+ {
+  "id": "bio-2018-ol-q6-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "electron-microscope",
+  "section": "A",
+  "questionRef": "2018 OL Q6(e)",
+  "stem": "The diagram shows a plant cell.",
+  "questionText": "What type of microscope is needed to show the ultrastructure of organelles such as C, above?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "4(4) + 4(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Electron (microscope)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q6-cell"
+ },
+ {
+  "id": "bio-2018-ol-q7-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-muscles",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(i)",
+  "questionText": "Name one muscle involved in breathing.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Intercostal(s) or diaphragm",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q7-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "alveoli",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(ii)",
+  "questionText": "In which structures does gas exchange occur in the lungs?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Alveoli (or air sacs) [allow capillaries]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q7-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "measuring-resting-rate",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)(i)",
+  "stem": "You investigated the effect of exercise on breathing rate or on pulse rate.",
+  "questionText": "How did you measure the resting rate?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Count pulse or count breaths",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "time or rate",
+    "marks": null
+   },
+   {
+    "id": "r3",
+    "kind": "alt",
+    "verbatim": "repeat or average",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices the method at three points (3 pts), each its own row on the ladder. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q7-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "exercise-and-rate",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)(ii)",
+  "stem": "You investigated the effect of exercise on breathing rate or on pulse rate.",
+  "questionText": "After measuring the resting rate, what other steps did you carry out to complete the investigation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Exercise",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "measure rate afterwards",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q7-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "fit-and-unfit-students",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)(iii)",
+  "stem": "You investigated the effect of exercise on breathing rate or on pulse rate.",
+  "questionText": "A fit student and an unfit student measured their breathing rates, then carried out the same amount of exercise, and measured their breathing rates again. These are their results.\nUse the table to identify the:\nUnfit student ____________________ Fit student ___________________________",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Unfit student = B",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Fit student = A",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q7-table"
+ },
+ {
+  "id": "bio-2018-ol-q7-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "fitness-and-breathing-rate",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)(iv)",
+  "stem": "You investigated the effect of exercise on breathing rate or on pulse rate. (iii) A fit student and an unfit student measured their breathing rates, then carried out the same amount of exercise, and measured their breathing rates again. These are their results. Use the table to identify the: Unfit student ____________________ Fit student ___________________________",
+  "questionText": "Give a reason for your choice.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Unfit student's rate increases by much more than fit student's rate or vice versa",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q7-table"
+ },
+ {
+  "id": "bio-2018-ol-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme",
+  "section": "B",
+  "questionRef": "2018 OL Q8(a)(i)",
+  "questionText": "What is an enzyme?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Biological catalyst",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzymes-are-proteins",
+  "section": "B",
+  "questionRef": "2018 OL Q8(a)(ii)",
+  "questionText": "From which biomolecule are enzymes made?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-used",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(i)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "What enzyme did you use?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Named enzyme",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate-used",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(ii)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "What substrate did you use?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Matching substrate",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "varying-temperature",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(iii)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "How did you vary the temperature during the investigation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Water bath(s)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "at different temperatures",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "measuring-enzyme-activity",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(iv)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "How did you measure the rate of enzyme activity?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Relevant change",
+    "marks": null,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "per unit time",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. \"Relevant change\" names what earns the point, not an answer. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "constant-ph",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(v)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "During this investigation pH was kept constant. How did you keep the pH constant?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Buffer (solution)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q8-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "temperature-and-enzyme-activity",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)(vi)",
+  "stem": "You investigated the effect of temperature on the rate of activity of an enzyme.",
+  "questionText": "What was the result of your investigation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. Increased activity as temperature increases or enzyme stops working after a certain temperature",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q9-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "digestion",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(i)",
+  "questionText": "What is meant by the term digestion?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Breakdown of food",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q9-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "seed-food-store",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)(ii)",
+  "questionText": "Name a carbohydrate that is stored in a seed.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Starch",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "agar-for-digestive-activity",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(i)",
+  "stem": "You investigated digestive activity in germinating seeds.",
+  "questionText": "Which type of agar did you use in this investigation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Starch (agar) or (skimmed) milk (agar)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "boiled-seeds",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(ii)",
+  "stem": "You investigated digestive activity in germinating seeds.",
+  "questionText": "The seeds were divided into two batches. Batch A seeds were not treated before use. How did you treat the other batch of seeds (batch B) before using them in the investigation?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Boiled",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "why-boil-the-seeds",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(iii)",
+  "stem": "You investigated digestive activity in germinating seeds. (ii) The seeds were divided into two batches. Batch A seeds were not treated before use. How did you treat the other batch of seeds (batch B) before using them in the investigation?",
+  "questionText": "Why was such treatment necessary?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To kill seeds or to denature enzymes [do not allow to kill enzymes]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "cut-face-down",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(iv)",
+  "stem": "You investigated digestive activity in germinating seeds.",
+  "questionText": "The seeds were cut in half and placed cut‐face‐down on the agar. Why were they placed cut‐face‐down on the agar?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To allow enzymes to diffuse into agar",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "testing-the-agar",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(v)",
+  "stem": "You investigated digestive activity in germinating seeds.",
+  "questionText": "After a few days the seeds were removed from the agar. A solution was then poured over the agar. Name this solution.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Iodine or biuret [must match (b) (i)]",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme sets its reprint on the answer's own line under a marker printed \"(v )\"; the answer is lifted from that line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "substance-revealed",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(vi)",
+  "stem": "You investigated digestive activity in germinating seeds. (v) After a few days the seeds were removed from the agar. A solution was then poured over the agar. Name this solution.",
+  "questionText": "Which substance is shown to be present by the solution named in (v)?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Starch or protein [must match (b) (i)and (b) (v)]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q9-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "results-of-digestive-activity",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(vii)",
+  "stem": "You investigated digestive activity in germinating seeds.",
+  "questionText": "Give the results of your investigation.\nUntreated seeds – Plate A.\nTreated seeds – Plate B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Result for untreated seeds (batch A) — Clear under seeds",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Result for treated seeds (batch B) — Blue-black or violet-purple under seeds [allow no clear patches] [must match (b) (i) and (b) (v)]",
+    "marks": null
+   }
+  ],
+  "notes": "One result per plate, a point each: a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q9-plates"
+ },
+ {
+  "id": "bio-2018-ol-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "niche",
+  "section": "C",
+  "questionRef": "2018 OL Q10(a)(i)",
+  "questionText": "Explain the following terms used in ecology:\nNiche",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Role of organism (in its habitat)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "aquatic",
+  "section": "C",
+  "questionRef": "2018 OL Q10(a)(ii)",
+  "questionText": "Explain the following terms used in ecology:\nAquatic",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Factors) relating to water",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "flora",
+  "section": "C",
+  "questionRef": "2018 OL Q10(a)(iii)",
+  "questionText": "Explain the following terms used in ecology:\nFlora.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plants",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "producer",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(i)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Name one producer from the web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Grass or blackberry",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "omnivore",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(ii)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Name one omnivore from the web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Thrush",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "herbivore",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(iii)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Name one herbivore from the web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Rabbit or mouse or greenfly",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "carnivore",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(iv)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Explain the term carnivore.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Eats (only) animals",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-and-prey",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(v)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "If there was a decline in the number of rabbits, what effect would this have on the number of foxes?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Decrease",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "population-decline",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(vi)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Suggest two reasons why the number of rabbits might decline.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Lack of food / disease",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Lack of food",
+      "disease"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "abiotic-factor",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(vii)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "What is an abiotic factor?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Non-living (factor)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "example-of-an-abiotic-factor",
+  "section": "C",
+  "questionRef": "2018 OL Q10(b)(viii)",
+  "stem": "The food web below shows the feeding relationships between some plants and animals in a woodland. Study the web and answer the questions below.",
+  "questionText": "Give one example of an abiotic factor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Temperature",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q10-web"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-1",
+  "conceptId": "animal-kingdom",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(i)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "To which kingdom do peacock spiders belong?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Animal (kingdom)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "where-peacock-spiders-live",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(ii)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "In what country are the peacock spiders found?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Australia",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "prey",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(iii)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "What is the prey of the peacock spiders?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Small) insects",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-adaptations",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(iv)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "Suggest two ways in which these spiders are adapted to be predators.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Good eyesight / can jump long distances / camouflage",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Good eyesight",
+      "can jump long distances",
+      "camouflage"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "courtship",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(v)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "In what two ways do male peacock spiders attract females?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Brightly-coloured abdominal flaps",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "vibrating their abdomen",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q10-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "camouflage",
+  "section": "C",
+  "questionRef": "2018 OL Q10(c)(vi)",
+  "stem": "Peacock spiders are tiny jumping spiders found in southern Australia. They do not build webs, instead they hunt small insects. They have very good eyesight and they can cover distances of up to fifty times their own length with one jump. They are called peacock spiders because of the brightly‐coloured flaps the males have on their abdomens. During courtship, the male also vibrates his abdomen to attract females. Female peacock spiders are brown or beige in colour and are well camouflaged in their environment.",
+  "questionText": "What advantage is camouflage to organisms?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Hide from predators / hide from prey",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Hide from predators",
+      "hide from prey"
+     ]
+    }
+   }
+  ],
+  "notes": "One point, either printed advantage: a menu of the two, claim one. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "heredity",
+  "section": "C",
+  "questionRef": "2018 OL Q11(a)(i)",
+  "questionText": "Explain the following terms used in genetics:\nHeredity",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Passing on characteristics from generation to generation",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "gene",
+  "section": "C",
+  "questionRef": "2018 OL Q11(a)(ii)",
+  "questionText": "Explain the following terms used in genetics:\nGene",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Piece of DNA that codes for a protein",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "homozygous",
+  "section": "C",
+  "questionRef": "2018 OL Q11(a)(iii)",
+  "questionText": "Explain the following terms used in genetics:\nHomozygous.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Alleles are the same",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints this part's marker as \"(ii)\" a second time: anchored on its reprint \"Homozygous:\", whose answer is on the same line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "base-x",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(i)1",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "1. Which of the above four bases is represented by the letter X in the diagram?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "X = Adenine or A",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Adenine or A",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "Guanine or G",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q11-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "base-y",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(i)2",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "2. Which of the above four bases is represented by the letter Y in the diagram?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Y = Guanine or G",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Adenine or A",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Y",
+    "meaning": "Guanine or G",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "chromosome-protein",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(ii)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "Chromosomes are made of DNA and which other substance?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "human-chromosome-number",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(iii)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "How many chromosomes are in a normal human cheek cell?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "46",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "where-chromosomes-are",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(iv)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "Where are chromosomes located in the cell?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Nucleus",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "rna",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(v)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "Another molecule in the cell also has four bases, one of which is uracil. Name this molecule.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "RNA",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "uracil-replaces-thymine",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(vi)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA. (v) Another molecule in the cell also has four bases, one of which is uracil. Name this molecule.",
+  "questionText": "In this molecule, uracil replaces one of the four DNA bases mentioned above. Which base does uracil replace?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Thymine or T",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "ribosomes",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(vii)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "DNA contains the code for making proteins. Where are proteins made in the cell?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Ribosome",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "mrna",
+  "section": "C",
+  "questionRef": "2018 OL Q11(b)(viii)",
+  "stem": "DNA has four bases: Adenine (A), Guanine (G), Cytosine (C), and Thymine (T). The diagram below outlines part of the structure of DNA.",
+  "questionText": "What molecule carries the DNA code to where proteins are made?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "mRNA",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q11-dna"
+ },
+ {
+  "id": "bio-2018-ol-q11-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "heterozygous-genotype",
+  "section": "C",
+  "questionRef": "2018 OL Q11(c)(i)",
+  "stem": "In plants the allele for tall (T) is dominant to the allele for short (t).",
+  "questionText": "Give the genotype for a heterozygous plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Tt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "gametes-of-a-heterozygote",
+  "section": "C",
+  "questionRef": "2018 OL Q11(c)(ii)",
+  "stem": "In plants the allele for tall (T) is dominant to the allele for short (t). (i) Give the genotype for a heterozygous plant.",
+  "questionText": "Give the genotypes of the gametes of the plant mentioned in (i).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "T",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "t",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "recessive-genotype",
+  "section": "C",
+  "questionRef": "2018 OL Q11(c)(iii)",
+  "stem": "In plants the allele for tall (T) is dominant to the allele for short (t).",
+  "questionText": "Give the genotype for a small plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "tt",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-chromosomes",
+  "section": "C",
+  "questionRef": "2018 OL Q11(c)(iv)",
+  "stem": "In humans, sex is determined by two chromosomes, X and Y.",
+  "questionText": "Give the genotype of a male and the genotype of a female.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Male = XY",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Female = XX",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q11-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "sex-determination",
+  "section": "C",
+  "questionRef": "2018 OL Q11(c)(v)",
+  "stem": "In humans, sex is determined by two chromosomes, X and Y.",
+  "questionText": "It is often said that the male determines the sex of the child. Explain fully why this is the case.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Eggs can only be X",
+    "marks": 3,
+    "contextNote": "If no gametes mentioned, max. 1 pt"
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Sperms can be X or Y",
+    "marks": 3
+   }
+  ],
+  "notes": "Two points, a row each; the scheme's bracketed direction (at most one point without gametes) is the first row's note. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "vascular-tissue",
+  "section": "C",
+  "questionRef": "2018 OL Q12(a)(i)",
+  "stem": "Most animals and plants have vascular systems.",
+  "questionText": "Name the two main types of vascular tissue in flowering plants.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Xylem",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "phloem",
+    "marks": null
+   }
+  ],
+  "notes": "Two points on the ladder (\"7 + 2(1)\"), printed \"Xylem and phloem\": a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "xylem",
+  "section": "C",
+  "questionRef": "2018 OL Q12(a)(ii)",
+  "stem": "Most animals and plants have vascular systems.",
+  "questionText": "Which tissue carries water?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Xylem",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q12-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "aorta",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(i)1",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "In your answer book, state which letter represents each of the following parts:\n1. Aorta",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Aorta = E",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"4(3)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation",
+  "labelKey": [
+   {
+    "letter": "E",
+    "meaning": "Aorta",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "Hepatic portal vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Pulmonary vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "J",
+    "meaning": "Vena cava",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "hepatic-portal-vein",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(i)2",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "In your answer book, state which letter represents each of the following parts:\n2. Hepatic portal vein",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hepatic portal vein = F",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"4(3)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation",
+  "labelKey": [
+   {
+    "letter": "E",
+    "meaning": "Aorta",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hepatic portal vein",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Pulmonary vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "J",
+    "meaning": "Vena cava",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-b-i-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pulmonary-vein",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(i)3",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "In your answer book, state which letter represents each of the following parts:\n3. Pulmonary vein",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pulmonary vein = D",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"4(3)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation",
+  "labelKey": [
+   {
+    "letter": "E",
+    "meaning": "Aorta",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hepatic portal vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Pulmonary vein",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "J",
+    "meaning": "Vena cava",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-b-i-4",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "vena-cava",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(i)4",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "In your answer book, state which letter represents each of the following parts:\n4. Vena cava.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vena cava = J",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"4(3)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation",
+  "labelKey": [
+   {
+    "letter": "E",
+    "meaning": "Aorta",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "F",
+    "meaning": "Hepatic portal vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Pulmonary vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "J",
+    "meaning": "Vena cava",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "blood-through-the-lungs",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(ii)1",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "State what changes occur in the blood as it passes through:\n1. The lungs",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Oxygen gained or carbon dioxide lost or water lost",
+    "marks": null
+   }
+  ],
+  "notes": "\"6 + 3\" over the two numbered items: the first correct answer earns 6, the next 3; each item is carded at the first rate. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation"
+ },
+ {
+  "id": "bio-2018-ol-q12-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "blood-through-the-kidneys",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(ii)2",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "State what changes occur in the blood as it passes through:\n2. The kidneys.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Carbon dioxide gained or oxygen lost or urea lost or water lost (or gained) or salt lost (or gained)",
+    "marks": null
+   }
+  ],
+  "notes": "\"6 + 3\" over the two numbered items: the first correct answer earns 6, the next 3; each item is carded at the first rate. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation"
+ },
+ {
+  "id": "bio-2018-ol-q12-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "oxygenated-blood-vessels",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(iii)",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "Name or give the letter from the diagram of one blood vessel that is rich in oxygen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Pulmonary vein or D or aorta or E or renal artery or G",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation"
+ },
+ {
+  "id": "bio-2018-ol-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "closed-circulation",
+  "section": "C",
+  "questionRef": "2018 OL Q12(b)(iv)",
+  "stem": "The diagram represents the human blood circulatory system.",
+  "questionText": "The human circulatory system is said to be a closed system. What is meant by a closed circulatory system?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Blood circulates (or always) in vessels",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-circulation"
+ },
+ {
+  "id": "bio-2018-ol-q12-c-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hair",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(i) — A",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Hair",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "skin-blood-vessels",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(i) — B",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Blood vessel(s)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sweat-gland",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(i) — C",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Sweat gland",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-ii-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hair-in-cooling",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(ii) — A",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "A function of the skin is to maintain a constant body temperature. Give one role of each of the three parts A, B, C, in cooling the body on a warm day.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hairs lie flat",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme runs its third heading on from the second line (\"... dilate Role of\"). Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-ii-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "vasodilation",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(ii) — B",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "A function of the skin is to maintain a constant body temperature. Give one role of each of the three parts A, B, C, in cooling the body on a warm day.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Blood vessels dilate",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme runs its third heading on from the second line (\"... dilate Role of\"). Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-ii-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sweating",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(ii) — C",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "A function of the skin is to maintain a constant body temperature. Give one role of each of the three parts A, B, C, in cooling the body on a warm day.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sweat glands make sweat",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme runs its third heading on from the second line (\"... dilate Role of\"). Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Blood vessel(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sweat gland",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q12-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-the-skin",
+  "section": "C",
+  "questionRef": "2018 OL Q12(c)(iii)",
+  "stem": "The diagram shows a section through human skin.",
+  "questionText": "Give two other functions of the skin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Prevents water loss / prevents pathogen entry / sense organ / excretory organ / stores fat / makes Vitamin D",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Prevents water loss",
+      "prevents pathogen entry",
+      "sense organ",
+      "excretory organ",
+      "stores fat",
+      "makes Vitamin D"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q12-skin"
+ },
+ {
+  "id": "bio-2018-ol-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "chloroplast",
+  "section": "C",
+  "questionRef": "2018 OL Q13(a)(i)",
+  "questionText": "Name the cell part associated with each of the following:\nPhotosynthesis",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Chloroplast",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "mitochondrion",
+  "section": "C",
+  "questionRef": "2018 OL Q13(a)(ii)",
+  "questionText": "Name the cell part associated with each of the following:\nAerobic respiration",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mitochondrion",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "cytoplasm",
+  "section": "C",
+  "questionRef": "2018 OL Q13(a)(iii)",
+  "questionText": "Name the cell part associated with each of the following:\nAnaerobic respiration.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cytoplasm",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "carbon-dioxide",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(i)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Name the gas X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Gas X = Carbon dioxide",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "glucose",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(ii)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Name substance Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Substance Y = Glucose",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "light-energy",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(iii)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "What is the main source of energy for photosynthesis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Light",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chlorophyll",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(iv)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Chlorophyll is used to trap energy in the plant. What colour is chlorophyll?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Green",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fate-of-oxygen",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(v)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "What happens to the oxygen that is formed in photosynthesis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Respired or enters atmosphere",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "rate-of-photosynthesis",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(vi)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Name two environmental factors that may affect the rate of photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Temperature / wind speed / time of day / weather",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Temperature",
+      "wind speed",
+      "time of day",
+      "weather"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "stomata",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(vii)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Through which part of the plant does gas X enter?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Stoma(ta)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-b-viii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis",
+  "section": "C",
+  "questionRef": "2018 OL Q13(b)(viii)",
+  "stem": "The equation below represents photosynthesis.",
+  "questionText": "Name the process by which water enters the plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Osmosis",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q13-equation"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "respiration",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(i)",
+  "questionText": "Explain the term respiration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Release of energy",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "from food (molecules)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "aerobic-efficiency",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(ii)",
+  "questionText": "Why is aerobic respiration considered to be more efficient than anaerobic respiration?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Releases more energy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "yeast",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(iii)",
+  "questionText": "Fermentation is another name for anaerobic respiration. Name one organism used in the fermentation process that produces beer and wine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Yeast",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "products-of-fermentation",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(iv)",
+  "stem": "(iii) Fermentation is another name for anaerobic respiration. Name one organism used in the fermentation process that produces beer and wine.",
+  "questionText": "Name the two molecules produced by this fermentation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Ethanol",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "carbon dioxide",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "oxygen-and-cramps",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(v)",
+  "questionText": "Cramps may be caused by the absence of gas G in muscle cells. Name gas G.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Oxygen",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q13-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "lactic-acid",
+  "section": "C",
+  "questionRef": "2018 OL Q13(c)(vi)",
+  "questionText": "Cramps may be caused by the presence of substance S in muscle cells. Name substance S.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lactic acid",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "semicircular-canals",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(i)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "Name the part labelled A and give its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Semi-circular canal(s)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "function = balance",
+    "marks": 3
+   }
+  ],
+  "notes": "The part and its function, a point each: a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canal(s)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ear drum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cochlea",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(ii)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "Name the part labelled B and give its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Cochlea",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "function = hearing",
+    "marks": 3
+   }
+  ],
+  "notes": "The part and its function, a point each: a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canal(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ear drum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "eardrum",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(iii)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "Name the part labelled C and give its function.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Ear drum",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "function = hearing",
+    "marks": 3
+   }
+  ],
+  "notes": "The part and its function, a point each: a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Semi-circular canal(s)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ear drum",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "eustachian-tube",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(iv)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "What is connected to the middle ear by the Eustachian tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Throat",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear"
+ },
+ {
+  "id": "bio-2018-ol-q14-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "auditory-nerve",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(v)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "To which organ does the auditory nerve connect the ear?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Brain",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear"
+ },
+ {
+  "id": "bio-2018-ol-q14-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "ear-and-eye-disorders",
+  "section": "C",
+  "questionRef": "2018 OL Q14(a)(vi)",
+  "stem": "The diagram shows the human ear.",
+  "questionText": "State how any named disorder of the ear or of the eye may be corrected.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Disorder of eye or of ear — e.g. Long-sightedness or short-sightedness or hearing loss or glue ear",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "alt",
+    "verbatim": "Disorder correction — e.g. Convex lens for long-sightedness or concave lens for shortsightedness or laser surgery or hearing aids for hearing loss or grommets for glue ear",
+    "marks": 3
+   }
+  ],
+  "notes": "Ear or eye: one disorder row and one correction row for either, so one card. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-ear"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "smallpox",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(i)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "Edward Jenner discovered a vaccination against which disease?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Smallpox",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "vaccination",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(ii)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "Explain what we now understand about how vaccination works.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Non-disease-causing / (dose of a) pathogen / stimulates immune response / detail of immune response",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Non-disease-causing",
+      "(dose of a) pathogen",
+      "stimulates immune response",
+      "detail of immune response"
+     ]
+    },
+    "contextNote": "Any three"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "immunity",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(iii)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "What is meant by the term immunity?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Ability of the body to resist infection",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "active-and-passive-immunity",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(iv)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "Outline the difference between active immunity and passive immunity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Active immunity — Antibodies made by the body",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Passive immunity — Antibodies introduced into the body",
+    "marks": 3
+   }
+  ],
+  "notes": "One point for each kind of immunity: a row each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "pathogen",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(v)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "What is a pathogen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Disease-causing organism",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "colostrum",
+  "section": "C",
+  "questionRef": "2018 OL Q14(b)(vi)",
+  "stem": "In 1796 an English doctor‐scientist called Edward Jenner inserted pus from a cowpox blister into a young boy’s arm. Later, he infected the boy with the much more serious disease of smallpox but the boy never developed smallpox. Jenner concluded that infection with cowpox must protect people from smallpox. This discovery led to the modern practice of vaccination (from the Latin 'vacca' for cow). Following worldwide vaccination in the second half of the 20th century, smallpox was declared eradicated in 1980.",
+  "questionText": "Colostrum is the first milk a baby gets from its mother. How does colostrum help to protect the baby from disease?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Contains antibodies / contains lymphocytes / nutritional boost (improves general health)",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Contains antibodies",
+      "contains lymphocytes",
+      "nutritional boost (improves general health)"
+     ]
+    },
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2018-ol-q14-c-i-canine",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "canine",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(i) — Canine",
+  "stem": "The diagram shows a human mouth.",
+  "questionText": "In your answer book, match each type of tooth from the list below to one of the letters in the diagram above.\nList: Canine, Molar, Incisor, Pre‐molar.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Canine = C",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "Canine",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "A",
+    "meaning": "Molar",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Incisor",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Pre-molar",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-c-i-molar",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "molar",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(i) — Molar",
+  "stem": "The diagram shows a human mouth.",
+  "questionText": "In your answer book, match each type of tooth from the list below to one of the letters in the diagram above.\nList: Canine, Molar, Incisor, Pre‐molar.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Molar = A",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "Canine",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "A",
+    "meaning": "Molar",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Incisor",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Pre-molar",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-c-i-incisor",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "incisor",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(i) — Incisor",
+  "stem": "The diagram shows a human mouth.",
+  "questionText": "In your answer book, match each type of tooth from the list below to one of the letters in the diagram above.\nList: Canine, Molar, Incisor, Pre‐molar.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Incisor = D",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "Canine",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "A",
+    "meaning": "Molar",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Incisor",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Pre-molar",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-c-i-premolar",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "premolar",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(i) — Pre-molar",
+  "stem": "The diagram shows a human mouth.",
+  "questionText": "In your answer book, match each type of tooth from the list below to one of the letters in the diagram above.\nList: Canine, Molar, Incisor, Pre‐molar.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pre-molar = B",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\": 3 for each. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "Canine",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "A",
+    "meaning": "Molar",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Incisor",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Pre-molar",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q14-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dental-formula",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(ii)",
+  "stem": "The diagram shows a human mouth.",
+  "questionText": "Give the full dental formula for an adult human.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "i2. c1. pm2. m3 [Format correct: 1 pt]",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "i2. c1. pm2. m3 [Numbers correct: 1 pt]",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints the formula on two lines, the first underlined (one jaw over the other), and prices its format and its numbers at a point each: a row each, as printed. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth"
+ },
+ {
+  "id": "bio-2018-ol-q14-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "canines-in-dogs",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(iii)",
+  "stem": "The diagram shows a human mouth. List: Canine, Molar, Incisor, Pre‐molar.",
+  "questionText": "Suggest, from the above list, a type of tooth that is much larger in dogs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Canine [allow molar]",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth"
+ },
+ {
+  "id": "bio-2018-ol-q14-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "why-dogs-have-canines",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(iv)",
+  "stem": "The diagram shows a human mouth. (iii) Suggest, from the above list, a type of tooth that is much larger in dogs.",
+  "questionText": "Give a reason for your answer to part (iii).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To tear (flesh or meat) [if molar in (iii), allow to crush bones]",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth"
+ },
+ {
+  "id": "bio-2018-ol-q14-c-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "saliva",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(v)1",
+  "stem": "The diagram shows a human mouth. The mouth has glands that make a liquid. The liquid contains an enzyme.",
+  "questionText": "1. Name the liquid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Saliva",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth"
+ },
+ {
+  "id": "bio-2018-ol-q14-c-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "amylase",
+  "section": "C",
+  "questionRef": "2018 OL Q14(c)(v)2",
+  "stem": "The diagram shows a human mouth. The mouth has glands that make a liquid. The liquid contains an enzyme.",
+  "questionText": "2. Name the enzyme the liquid contains.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Amylase",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme sets item 2's number at the end of item 1's line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q14-mouth"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "stigma",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(i) — A",
+  "stem": "The diagram shows a flower.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Stigma",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Stigma",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Anther",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary (or ovule)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-a-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "anther",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(i) — B",
+  "stem": "The diagram shows a flower.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Anther",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Stigma",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Anther",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary (or ovule)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-a-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "ovary",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(i) — C",
+  "stem": "The diagram shows a flower.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Ovary (or ovule)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Stigma",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Anther",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary (or ovule)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "pollen-and-hay-fever",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(ii)",
+  "stem": "The diagram shows a flower.",
+  "questionText": "What substance produced by flowers causes hay fever in some people?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Pollen",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "where-seeds-form",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(iii)",
+  "stem": "The diagram shows a flower.",
+  "questionText": "Which labelled part will contain the seeds?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "C or ovary (or ovule)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-iv-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "dormancy",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(iv)1",
+  "stem": "The diagram shows a flower. Some seeds undergo a period of dormancy.",
+  "questionText": "1. Explain the term dormancy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Period of no germination or no growth (after dispersal, despite conditions necessary for germination being present)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-iv-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "advantages-of-dormancy",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(iv)2",
+  "stem": "The diagram shows a flower. Some seeds undergo a period of dormancy.",
+  "questionText": "2. Give two advantages of dormancy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "adverse conditions / winter or cold / drought / waterlogging",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "adverse conditions",
+      "winter or cold",
+      "drought",
+      "waterlogging"
+     ]
+    },
+    "contextNote": "Ability to survive:"
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme heads the menu \"Ability to survive:\"; it is the row's note. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "seedless-fruit",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(v)1",
+  "stem": "The diagram shows a flower. It is possible to produce seedless fruits.",
+  "questionText": "1. Give one example of a seedless fruit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Grapes",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-a-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "advantages-of-seedless-fruit",
+  "section": "C",
+  "questionRef": "2018 OL Q15(a)(v)2",
+  "stem": "The diagram shows a flower. It is possible to produce seedless fruits.",
+  "questionText": "2. Suggest one advantage of seedless fruits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Allows artificial control of development / more energy for fruit / easier to eat",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Allows artificial control of development",
+      "more energy for fruit",
+      "easier to eat"
+     ]
+    },
+    "contextNote": "Any one"
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-flower"
+ },
+ {
+  "id": "bio-2018-ol-q15-b-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "root-phloem",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(i) — A",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Phloem",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Phloem",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Root hair",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-b-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "root-xylem",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(i) — B",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Xylem",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Phloem",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Root hair",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-b-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "root-hair",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(i) — C",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Root hair",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Phloem",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Root hair",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2018-ol-q15-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "storage-roots",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(ii)",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Give one example of a root modified for food storage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Carrot",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root"
+ },
+ {
+  "id": "bio-2018-ol-q15-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "functions-of-roots",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(iii)",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Other than food storage, state two functions of roots.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "To absorb water (or minerals) / to anchor plant / asexual reproduction",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "To absorb water (or minerals)",
+      "to anchor plant",
+      "asexual reproduction"
+     ]
+    }
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root"
+ },
+ {
+  "id": "bio-2018-ol-q15-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "radicle",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(iv)",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "What is the first root called that grows from a seed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Radicle",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root"
+ },
+ {
+  "id": "bio-2018-ol-q15-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "monocots-and-dicots",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(v)",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Flowering plants can be monocotyledonous (monocot) or dicotyledonous (dicot). Give any one difference between a monocot plant and a dicot plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Monocot has parallel veins, dicot has network of veins",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root"
+ },
+ {
+  "id": "bio-2018-ol-q15-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "monocot-and-dicot-examples",
+  "section": "C",
+  "questionRef": "2018 OL Q15(b)(vi)",
+  "stem": "The diagram shows a transverse section of a dicotyledonous (dicot) root.",
+  "questionText": "Give one example of a monocot plant and one example of a dicot plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Grass / tulip / daffodil",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Grass",
+      "tulip",
+      "daffodil"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Monocot plant:"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "e.g. Oak / laurel / rose",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Oak",
+      "laurel",
+      "rose"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Dicot plant:"
+   }
+  ],
+  "notes": "One point for each plant, any one of its printed examples: a menu each, its heading the note. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-root"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "tropisms",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(i)",
+  "questionText": "What are tropisms?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Growth responses of plants",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "to stimuli",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "phototropism",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(ii)",
+  "questionText": "Which tropism is shown in the above diagram?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Phototropism",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "plant-stimuli",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(iii)",
+  "questionText": "Name one factor to which plants respond, other than light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Water or gravity or touch or chemicals",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "growth-regulators",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(iv)",
+  "questionText": "Name one growth regulator in plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Auxin",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "uses-of-growth-regulators",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(v)",
+  "questionText": "State two uses in horticulture of artificial growth regulators.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. rooting powder / fruit ripening",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. rooting powder",
+      "fruit ripening"
+     ]
+    },
+    "openList": true,
+    "contextNote": "Any two"
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "thorns",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(vi)",
+  "questionText": "How do thorns protect some plants?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Discourage animals from eating them",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
+ },
+ {
+  "id": "bio-2018-ol-q15-c-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "plant-defences",
+  "section": "C",
+  "questionRef": "2018 OL Q15(c)(vii)",
+  "questionText": "Give two other features that plants use to protect themselves.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Stings / cuticle / poison",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Stings",
+      "cuticle",
+      "poison"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2018_ol.py.",
+  "year": 2018,
+  "level": "ordinary",
+  "figureKey": "biology-2018-ol-q15-tropism"
  }
 ]

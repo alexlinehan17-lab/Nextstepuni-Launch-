@@ -67,7 +67,7 @@ SUBJECTS = {
     # admits one earlier sitting at a time, as each is carded paper by paper
     # (bio_review_<year>_<level>.py); 'from' moves back a year once both of
     # its levels are.
-    'biology': {'mode': 'merged', 'from': 2019, 'also': [(2018, 'hl')]},
+    'biology': {'mode': 'merged', 'from': 2018, 'also': []},
     'chemistry': {'mode': 'merged'},
     'physics': {'mode': 'merged'},
     'agricultural-science': {'mode': 'merged'},
@@ -582,6 +582,10 @@ SHORT_ASKS = {
                                               'lead-in "Choose each structure from the following list"'),
     ('biology', 2021, 'ol', 'Q3(c)'): ('Lungs', 'Column A row "Lungs" of the same table'),
     ('biology', 2021, 'ol', 'Q12(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
+                                                    'genetics:"'),
+    ('biology', 2018, 'ol', 'Q10(a)(i)'): ('Niche', 'the term "Niche" under "Explain the following terms used in '
+                                                    'ecology:"'),
+    ('biology', 2018, 'ol', 'Q11(a)(ii)'): ('Gene', 'the term "Gene" under "Explain the following terms used in '
                                                     'genetics:"'),
     ('biology', 2024, 'hl', 'Q7(c)(i)'): ('Plant', 'the organism "Plant" under "Give one application of genetic '
                                                    'engineering for each of the following:"'),

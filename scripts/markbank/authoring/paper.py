@@ -185,6 +185,13 @@ MISPRINTS = {
 # MISPRINTS: the block is split straight after the named text.
 WELDED_HEADS = {
     ('biology', 2020, 'ol'): ['(e) Converts starch into maltose'],
+    # 2018 OL page 4 is one block from "5. Indicate whether each of the
+    # following statements" to "6. The diagram shows a plant cell.": Q5(g)'s
+    # row ends in its circle options "T F", not a full stop or an answer line,
+    # so the "6." was never split off, Question 6 vanished into Q5(g), and
+    # with no Question 6 read, the reader (due a 6) took no head after it --
+    # Questions 7 to 15 all filed as romans of Q5(g).
+    ('biology', 2018, 'ol'): ['(g) Scientific discoveries are first published in newspapers T F'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'

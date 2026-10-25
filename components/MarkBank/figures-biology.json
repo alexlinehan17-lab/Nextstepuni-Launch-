@@ -119,6 +119,367 @@
    666
   ]
  },
+ "biology-2018-ol-q10-web": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q10-web.png",
+  "md5": "21c98dd559b8c76a221ab22f243d96fd",
+  "alt": "Food web: Grass to Rabbit; Rabbit to Fox and to Owl; Blackberry to Mouse, to Greenfly and to Thrush; Mouse to Owl and to Hawk; Greenfly to Thrush; Thrush to Hawk.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q10(b)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   95,
+   205,
+   470,
+   375
+  ]
+ },
+ "biology-2018-ol-q11-dna": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q11-dna.png",
+  "md5": "9e8496fa779cc64fec688a230edbcf19",
+  "alt": "Part of a DNA molecule: two strands of pentagons marked S and circles marked P, joined across by three pairs of boxes: X with T, Y with C, and T with X.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q11(b)(i)1",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   180,
+   150,
+   415,
+   324
+  ]
+ },
+ "biology-2018-ol-q12-circulation": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q12-circulation.png",
+  "md5": "ad2947b70db58e2eb67a6e16ad119753",
+  "alt": "Diagram of the human circulatory system: the heart in the middle, with vessels to and from the head, lungs, liver, intestine, kidneys and legs. K and D label vessels at the lungs, J and E vessels at the heart, I and F vessels at the liver and intestine, H and G vessels at the kidneys.",
+  "lettersVisible": [
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "I",
+   "J",
+   "K"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(b)(i)1",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   185,
+   146,
+   410,
+   390
+  ]
+ },
+ "biology-2018-ol-q12-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q12-skin.png",
+  "md5": "e82be4e5cf06f7f5055420b41a0b8122",
+  "alt": "Section through human skin. A points to a long dark shaft rising from a bulb deep in the skin, B to a small looped structure just below the surface layer, C to a coiled tube deep in the skin with a duct running up to the surface.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q12(c)(i) — A",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   186,
+   549,
+   409,
+   731
+  ]
+ },
+ "biology-2018-ol-q13-equation": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q13-equation.png",
+  "md5": "8656d1be7209a36bdec01c1ee92e9275",
+  "alt": "The equation as printed: Water + X, an arrow, Y + Oxygen.",
+  "lettersVisible": [
+   "X",
+   "Y"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q13(b)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   172,
+   158,
+   322,
+   180
+  ]
+ },
+ "biology-2018-ol-q14-ear": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q14-ear.png",
+  "md5": "cb69c280c7b7de67c9048b1bf6b18f18",
+  "alt": "Diagram of the human ear with Middle ear, Auditory nerve and Eustachian tube labelled. A points to the looped structures at the top of the inner ear, B to the coiled structure below them, C to the inner end of the ear canal.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q14(a)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   130,
+   98,
+   462,
+   287
+  ]
+ },
+ "biology-2018-ol-q14-mouth": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q14-mouth.png",
+  "md5": "0d53f52d2c70ccaa0ef0297048928d06",
+  "alt": "An open human mouth showing the upper and lower teeth, the tongue and the throat. Gum is labelled; A, B, C and D point to four teeth of the lower jaw, from the back (A) towards the front (D).",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q14(c)(i) — Canine",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   190,
+   66,
+   405,
+   298
+  ]
+ },
+ "biology-2018-ol-q15-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q15-flower.png",
+  "md5": "a9ea945032c61ef42c17fcf5a65294fe",
+  "alt": "Section through a flower. A points to the tip of the long central stalk, B to the head of one of the shorter stalks around it, C to the swollen base of the central structure, which holds small round bodies, D to a small leaf-like part below the petals.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q15(a)(i) — A",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   163,
+   88,
+   362,
+   244
+  ]
+ },
+ "biology-2018-ol-q15-root": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q15-root.png",
+  "md5": "634698322e281c3944aad1eca204d59a",
+  "alt": "Transverse section of a dicot root: a circle with a cross-shaped core and four small round patches between its arms, and thin outgrowths from its outside. A points to one of the round patches, B to the cross-shaped core, C to one of the outgrowths.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q15(b)(i) — A",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   210,
+   462,
+   425,
+   566
+  ]
+ },
+ "biology-2018-ol-q15-tropism": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q15-tropism.png",
+  "md5": "65122c9d1f21a2de794801d96f7fa5f2",
+  "alt": "A plant shoot, labelled, rising from the soil and curving over to the right; arrows labelled Light direction point at it from the right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q15(c)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 15,
+  "sourceRect": [
+   168,
+   60,
+   426,
+   222
+  ]
+ },
+ "biology-2018-ol-q2-joint": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q2-joint.png",
+  "md5": "3585d6788ca8536381df1a4075367ce1",
+  "alt": "Drawing of a synovial joint: the rounded ends of two bones meet inside a covering. A points to the covering on the left, B to the dark layer on the end of the upper bone, C into the space between the two bone ends.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q2(a) — A",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   165,
+   338,
+   345,
+   486
+  ]
+ },
+ "biology-2018-ol-q3-table": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q3-table.png",
+  "md5": "ed241b6e84242d3ab0b502e349509ae4",
+  "alt": "Question 3 as printed: the instruction, then the list Immobilised (struck through), Washing powder, Alginate, Calcium chloride, Reusable, Pectinase above a two-column table: Column A lists \"Enzyme trapped in a gel\" (answered Immobilised) and parts (a) to (e); Column B is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q3(a)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   30,
+   54,
+   552,
+   334
+  ]
+ },
+ "biology-2018-ol-q4-male": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q4-male.png",
+  "md5": "d8cbd32649e9c9d3fcd96be8e649b041",
+  "alt": "Side view of the human male reproductive system. A points to the outer organ at the front, B to the oval body at the bottom, C to a tube running below the bladder.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q4(a) — A",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   155,
+   400,
+   478,
+   552
+  ]
+ },
+ "biology-2018-ol-q6-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q6-cell.png",
+  "md5": "d71d637767a292dd40aa0ad160e736fd",
+  "alt": "Diagram of a plant cell: a rounded rectangle with a grey outer layer, oval bodies around its edge, a large black circle and a large clear space. A and B point to the edge of the cell, at the top left corner and on the right; C points to an oval body beside the clear space, D into the clear space and E to the black circle.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q6(a) — D",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   190,
+   333,
+   350,
+   478
+  ]
+ },
+ "biology-2018-ol-q7-table": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q7-table.png",
+  "md5": "1f60c31d2ccf7fd26a24bbbb5f25ca6e",
+  "alt": "Table of breaths per minute: Student A, 14 before exercise and 17 after; Student B, 15 before exercise and 35 after.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q7(b)(iii)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   148,
+   538,
+   500,
+   640
+  ]
+ },
+ "biology-2018-ol-q9-plates": {
+  "src": "/exam-figures/biology/markbank/biology-2018-ol-q9-plates.png",
+  "md5": "aaa4f8d36621b7aab525bd19d9d5dedf",
+  "alt": "Two Petri dishes, A and B, each holding agar with four seed halves on it; Seed and Agar are labelled on each dish.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2018 OL Q9(b)(i)",
+  "year": 2018,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2018 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   105,
+   156,
+   530,
+   254
+  ]
+ },
  "biology-2019-hl-q11-pedigree": {
   "src": "/exam-figures/biology/markbank/biology-2019-hl-q11-pedigree.png",
   "md5": "05384953069bc259c0c49c072dbee7f0",
