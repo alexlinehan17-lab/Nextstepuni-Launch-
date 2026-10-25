@@ -82,6 +82,172 @@
    625
   ]
  },
+ "biology-2016-ol-q13-apparatus": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q13-apparatus.png",
+  "md5": "1459be211223bb49df73d754fda08e0d",
+  "alt": "Apparatus with printed labels: a Strong light source (a bulb in a reflector) at the left, beside a Metre stick running along the bottom; a Set distance arrow runs from the bulb to a beaker on the right, labelled Water bath at 25°C. In the beaker stands a test tube of NaHCO3 soln. holding a sprig of Pondweed with a Cut stem at its top, and a Thermometer stands in the water bath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q13(c)(ii)1",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   118,
+   425,
+   463,
+   628
+  ]
+ },
+ "biology-2016-ol-q14-urinary": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q14-urinary.png",
+  "md5": "39b4165ef37a3d28f1b8f3b9da06f60a",
+  "alt": "Front view of the human urinary system inside the outline of the lower trunk: two bean-shaped organs, each with a small knobbly body on top, joined by short vessels to the large blood vessels running down the middle; a narrow tube runs down from each bean-shaped organ to a round bag at the bottom, which opens into a short tube below it. A points to the right-hand bean-shaped organ, B to the narrow tube running down from it, C to the round bag.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q14(b)(ii) — A",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   199,
+   301,
+   398,
+   467
+  ]
+ },
+ "biology-2016-ol-q15-seed": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q15-seed.png",
+  "md5": "78d1427b2a1d8fa37a8b2263489da0eb",
+  "alt": "Drawing of a seed cut open lengthways, with four printed labels: Testa points to the thin outer layer, Cotyledon to the large shaded bulk inside it, Plumule to a small leafy tip near the middle, and Radicle to the darker finger-shaped part running down from that tip.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q15(a)(iii)1",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   424,
+   99,
+   595,
+   263
+  ]
+ },
+ "biology-2016-ol-q15-virus": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q15-virus.png",
+  "md5": "c703b4d24886d67fc05afc9a72893604",
+  "alt": "Drawing of a virus particle: a round body with a spiky outer rim and a tangle of thread-like strands inside it. A points to the spiky outer rim; B points to the tangled strands inside.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q15(b)(i) — A",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   390,
+   281,
+   551,
+   386
+  ]
+ },
+ "biology-2016-ol-q2-tissues": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q2-tissues.png",
+  "md5": "214bda3f94228cbe3904795aaef66306",
+  "alt": "Two circular cross-sections of plant parts side by side, numbered 1 and 2 beneath them. Section 1: a circle with a thin dark outer layer and about a dozen small oval patches, each half dark and half dotted, scattered through its inside; one patch is boxed. Section 2: a circle with a thick dark outer layer from which several long hair-like projections stick out, and at its centre a small round core with a four-armed shape inside it. A has leader lines to the inner filling of both circles, B to the boxed patch in 1 and to the central core in 2, and C to the outer layer of both circles.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q2(a) — Dermal tissue",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   156,
+   344,
+   444,
+   468
+  ]
+ },
+ "biology-2016-ol-q4-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q4-skeleton.png",
+  "md5": "4fd92a95d970111844c92e2d276fab60",
+  "alt": "Side view of a section of the human skeleton: a column of small stacked bones with thin discs between them, curving gently from top to bottom and ending in a fused, tapering tip. Brackets on the right divide it into five printed regions, top to bottom: Cervical, Thoracic, Lumbar, Sacrum and Coccyx.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q4(a)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   408,
+   324,
+   566,
+   614
+  ]
+ },
+ "biology-2016-ol-q5-terms": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q5-terms.png",
+  "md5": "becaee5ba83e36143473726f226c3212",
+  "alt": "Question 5 as printed: the instruction, then the list Hypothesis (struck through), Control, Data, Blind test, Theory, Replicate above a two-column table. Column A lists \"An educated guess based on observations\" (answered Hypothesis in Column B as the example) and parts (a) to (e): (a) Repeating an experiment, (b) Information gathered during experiments, (c) Used for comparison in experiments, (d) Where only the investigator knows what treatment the participant is receiving, (e) An idea supported by different experiments. Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q5(a)",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   36,
+   38,
+   535,
+   312
+  ]
+ },
+ "biology-2016-ol-q7-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2016-ol-q7-microscope.png",
+  "md5": "7e56eb41ec730889954b01dd4adf1fd6",
+  "alt": "Line drawing of a light microscope seen from the side: a curved arm, an upright tube with a short, wider cylinder at its top, lenses on a revolving piece beneath the tube, a flat platform with clips under the lenses, more parts below the platform, and a heavy base. A points to the short cylinder at the top of the tube; B points to the flat platform with its clips.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 OL Q7(a) — A",
+  "year": 2016,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2016 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   386,
+   106,
+   560,
+   262
+  ]
+ },
  "biology-2017-hl-q11b-graph": {
   "src": "/exam-figures/biology/markbank/biology-2017-hl-q11b-graph.png",
   "md5": "862d6394c2aabe07a9b3eaefa09aa264",

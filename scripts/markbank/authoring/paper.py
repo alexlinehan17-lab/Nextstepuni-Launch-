@@ -222,6 +222,13 @@ WELDED_HEADS = {
     # "(ii)" trails the last part's name with nothing to split at, so Q13(b)(ii)
     # and its five numbered asks filed as the tail of Q13(b)(i).
     ('biology', 2016, 'hl'): ['stirrup ear drum cochlea Eustachian tube'],
+    # 2016 OL page 3 is one block from "3. Indicate whether the following
+    # statements are true or false" to Q4(e)(ii) "One treatment for the
+    # disorder.": Q3(g)'s row ends in its circle options "T F", so the "4.
+    # The diagram shows a section of the human skeleton." was never split off,
+    # Question 4 vanished into Q3(g), and Q4(e)(i)-(ii) filed as romans of
+    # Q3(g).
+    ('biology', 2016, 'ol'): ['(g) Oxygen passes from our lungs to our blood by osmosis. T F'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
