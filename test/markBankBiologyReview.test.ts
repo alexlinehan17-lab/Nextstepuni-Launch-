@@ -1805,6 +1805,95 @@ describe('Biology 2018 Higher — carded from a paper-by-paper review', () => {
   });
 });
 
+/* Sittings carded for the first time from a paper-by-paper review, pinned by
+ * their counts, source PDFs, routes and whole-part (questionTotal) cards. One
+ * row per sitting; the ledger (bio_review_<year>_<level>.py) holds the why. */
+type FirstCarded = {
+  tasks: number; cards: number;
+  sources: Record<string, [string, number]>;
+  routes: Record<string, string[]>;
+  /** questionRef -> printed part total, for parts whose scheme prints answers
+   *  but no per-response tariff the answers fit. */
+  wholeParts: Record<string, number>;
+};
+const FIRST_CARDED: Record<string, FirstCarded> = {
+  /* @@ROWS@@ */
+  '2019-ol': {
+    tasks: 126, cards: 126,
+    sources: { "038": ['eccab6177a2648fc4f43fe6abfd80ff2e90b9c783bb51e20bb22d7e935367dea', 8], "040": ['cf8883d997fd914ef70eef2e25bb909556ddc776c3fc2b96cfab1cbde3754df8', 12], "scheme": ['99ab1b9e15d04082c23467c2746761a722daf082313da0c4092a78aeb0e3f9b5', 20] },
+    routes: {  },
+    wholeParts: { "2019 OL Q7(b)": 24, "2019 OL Q9(b)": 24, "2019 OL Q11(c)": 24, "2019 OL Q13(c)": 24, "2019 OL Q14(a)": 30, "2019 OL Q14(c)": 30, "2019 OL Q15(c)": 30 },
+  },
+};
+
+describe.each(Object.entries(FIRST_CARDED))('Biology %s — carded from a paper-by-paper review', (key, pin) => {
+  const [y, lv] = key.split('-');
+  const year = Number(y);
+  const token = lv.toUpperCase();
+  const s = sittings[key];
+  const deck = (lv === 'hl' ? BIO_HIGHER : BIO_ORDINARY)
+    .filter(card => card.year === year) as unknown as Array<ReviewedCard & {
+      tariffModel: { kind: string }; rows: Array<{ marks: number | null }> }>;
+  const byCardId = new Map(deck.map(card => [card.id, card]));
+
+  it('ships every carded task, and nothing else, for the sitting', () => {
+    expect(s.baseTaskCount).toBe(pin.tasks);
+    expect(s.cardCount).toBe(pin.cards);
+    expect(deck).toHaveLength(pin.cards);
+    expect(s.tasks.every(task => task.status === 'carded')).toBe(true);
+    expect(new Set(s.tasks.map(task => task.id))).toEqual(new Set(byCardId.keys()));
+    expect(s.review).toBeUndefined();
+  });
+
+  it('pins the reviewed source PDFs', () => {
+    expect(Object.fromEntries(Object.entries(s.sources).map(([doc, src]) => [doc, [src.sha256, src.pages]])))
+      .toEqual(pin.sources);
+  });
+
+  it('carries each task at its published tariff, never a partial one', () => {
+    for (const card of deck) {
+      const task = s.tasks.find(t => t.id === card.id)!;
+      expect(card.totalMarks, task.id).toBe(task.total);
+      expect(tariffReconciles(card as never), task.id).toBe(true);
+    }
+  });
+
+  it('cards a part with no fitting per-response tariff whole, at its printed total, every row unpriced', () => {
+    const whole = deck.filter(card => card.tariffModel.kind === 'questionTotal');
+    expect(Object.fromEntries(whole.map(card => [card.questionRef, card.totalMarks]))).toEqual(pin.wholeParts);
+    for (const card of whole) {
+      expect(card.rows.every(row => (row as { marks?: number | null }).marks === null), card.id).toBe(true);
+      expect(card.rows.length, card.id).toBeGreaterThan(0);
+    }
+  });
+
+  it('links each card to the booklet its question is printed in', () => {
+    const level = lv === 'hl' ? 'A' : 'G';
+    for (const card of deck) {
+      const booklet = year <= 2018 ? '000' : card.section === 'C' ? '040' : '038';
+      expect(card.paperFileid, card.id).toBe(`LC025${level}LP${booklet}EV`);
+    }
+  });
+
+  it('splits only the choices the scheme marks differently per option', () => {
+    expect(s.routes).toEqual(pin.routes);
+    for (const part of Object.keys(pin.routes)) {
+      const routes = deck.filter(card => card.questionRef.startsWith(`${year} ${token} ${part} — `));
+      expect(routes, part).toHaveLength(pin.routes[part].length);
+      expect(new Set(routes.map(card => card.questionText)).size, part).toBe(1);
+    }
+  });
+
+  it('shows the printed figure wherever the ask points at one', () => {
+    const pointsAtPrint = /\b(the|this) (diagram|image|photograph|graph|table)s?\b|\bshown below\b/i;
+    for (const card of deck) {
+      if (pointsAtPrint.test(`${card.stem ?? ''} ${card.questionText}`)) {
+        expect(Boolean(card.figure || card.questionFigure || card.sourceMaterial), card.id).toBe(true);
+      }
+    }
+  });
+});
+
 describe('Biology — every deck', () => {
   it('files every card under its own printed Topic Atlas question, listed under each of its headings', () => {
     // The Atlas audit: a card's question (its year, level, booklet and printed

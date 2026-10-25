@@ -58302,10 +58302,11 @@
         "biology-0-3"
       ],
       "topicIds": [
-        "biology-ordinary-old-course-ecology-ecosystems"
+        "biology-ordinary-new-course-31-ecology-ecosystems-and-biodiversity",
+        "biology-ordinary-new-course-31-investigating-an-ecosystem"
       ],
-      "resolution": "retained-local-canonical-fallback",
-      "reason": "Entitled SEC task preserved although the factual reference snapshot has no association for this independently selectable question."
+      "resolution": "retained-local-reviewed",
+      "reason": "Official SEC 2019 task retained from direct paper review; the factual reference snapshot has no association for this independently selectable question."
     },
     {
       "level": "higher",

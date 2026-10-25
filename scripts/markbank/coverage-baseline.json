@@ -93,19 +93,19 @@
     "refsHash": "4fef6e53e28af5ba"
   },
   "biology": {
-    "cards": 2797,
-    "contentHash": "eb4db9007c1bcab0",
+    "cards": 2923,
+    "contentHash": "c9bab271ccdd2d3e",
     "coveragePct": 100.0,
-    "covered": 2497,
+    "covered": 2634,
     "excluded": 2,
-    "leaves": 2499,
+    "leaves": 2636,
     "open": 0,
     "orphans": 0,
     "papers": {
       "count": 50,
       "hash": "4fd05441da103297"
     },
-    "refsHash": "5f22f392fc47d0d5"
+    "refsHash": "a2b508197cc75d60"
   },
   "bulgarian": {
     "cards": 141,

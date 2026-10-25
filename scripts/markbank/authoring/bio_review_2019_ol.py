@@ -418,7 +418,9 @@ TASKS = [
        M('(iii)', 8, br=True), _A(8, 'Outline a safety step, specific to this task, to be taken before beginning the',
                                   'dissection.'),
        M('(iv)', 8, br=True), _A(8, 'Describe how you carried out the dissection.')],
-      [pt(S(DRAW9, piece=n), 0, kind='criterion', label=S('Drawing to show:')) for n in (1, 2, 3, 4)]
+      # The drawing is one priced item ("Drawing (3)"); its four features are what
+      # it must show, so they stay one criterion row rather than four.
+      [pt(S(DRAW9), 0, kind='criterion', label=S('Drawing to show:'))]
       + [pt(S(LAB9, piece=n), 0, label=S('Labels:')) for n in (1, 2, 3)]
       + [pt(S('Piece of dissection equipment: Any valid piece of dissection equipment, e.g. Scalpel ….'), 0),
          pt(S('Any valid safety procedure, e.g. wash heart.'), 0, label=S('Safety procedure:')),

@@ -240,6 +240,270 @@
    286
   ]
  },
+ "biology-2019-ol-q10-badgers": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q10-badgers.png",
+  "md5": "cf85275f850afc76c159deb6c3ec5984",
+  "alt": "Table of three columns: Badgers caught and marked in session 1, 180; Badgers caught in session 2, 150; Badgers caught in session 2, marked from session 1, 40.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q10(c)(v)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   86,
+   623,
+   512,
+   675
+  ]
+ },
+ "biology-2019-ol-q12c-skeleton": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q12c-skeleton.png",
+  "md5": "ed6af2bc14ba70b7663dd3daa713a735",
+  "alt": "Drawing of part of the human skeleton: a long bone, cut open to show a speckled core, whose rounded upper end fits into a socket in a broad bone above it. Label lines: A to the broad upper bone, C to a circle drawn round the place where the rounded end meets the socket, D to the speckled core inside the long bone, and B to the shaft of the long bone near the bottom.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q12(c)(i)1",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   220,
+   318,
+   378,
+   503
+  ]
+ },
+ "biology-2019-ol-q13b-equation": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q13b-equation.png",
+  "md5": "6fcae36bc0592bb8499d40031a2b66de",
+  "alt": "The equation as printed: Glucose + X, an arrow pointing right, Water + Y + energy.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q13(b)(i)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   140,
+   150,
+   372,
+   172
+  ]
+ },
+ "biology-2019-ol-q13c-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q13c-cells.png",
+  "md5": "d4336bbe19ecbc05e34412f9a3d5805f",
+  "alt": "Four drawings of the same long plant cell, labelled A to D: in A the shaded contents fill the space inside the wall; in B they have shrunk into a rounded block clear of the wall; in C they fill the cell but are drawn in at both ends; in D they have pulled away from the wall in curved bays down both sides.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q13(c)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   200,
+   536,
+   337,
+   655
+  ]
+ },
+ "biology-2019-ol-q14b-glands": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q14b-glands.png",
+  "md5": "98d116e634f5d9ab1d98fe4a73ed20c4",
+  "alt": "Two drawings. Left: a gland wrapped round the front of the windpipe below the larynx, labelled A, with the windpipe below it labelled Trachea. Right: a long lobed gland labelled B lying along the curve of a looped tube labelled Duodenum, with ducts running into the loop.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q14(b)(i)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 7,
+  "sourceRect": [
+   96,
+   206,
+   502,
+   375
+  ]
+ },
+ "biology-2019-ol-q15a-neuron": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q15a-neuron.png",
+  "md5": "e2650ed96e7a97a193cbbe43a4bac070",
+  "alt": "Diagram of a motor neuron. A points to the tip of one of the short branches round the cell's swollen centre, B to the long fibre leaving it, and C to the swollen centre beside its dark oval nucleus; the oval sheaths along the long fibre are labelled Schwann cell, and the fibre ends in branches at the right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q15(a)(i) — A",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   168,
+   76,
+   484,
+   266
+  ]
+ },
+ "biology-2019-ol-q15b-kidney": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q15b-kidney.png",
+  "md5": "ab27042d3933e3bbab65c8203ad757b1",
+  "alt": "Diagram of a human kidney cut lengthways, with three tubes at its inner edge: A, the upper tube, carries an arrow pointing away from the kidney; B, the speckled tube below it, carries an arrow pointing into the kidney; C is the tube running straight down from the kidney.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q15(b)(i) — A",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   180,
+   457,
+   374,
+   643
+  ]
+ },
+ "biology-2019-ol-q15c-cells": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q15c-cells.png",
+  "md5": "40fd871e9a1a33757ac20b6cdc72ba69",
+  "alt": "Two single-celled organisms. Left, labelled Yeast: a large oval cell with a smaller oval cell attached at its top, the smaller one bracketed and labelled A. Right, labelled Amoeba: an irregular cell with a label line to a large clear vacuole, labelled Contractile vacuole, and a label line B to one of the projections from its edge.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q15(c)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP040EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   157,
+   66,
+   441,
+   212
+  ]
+ },
+ "biology-2019-ol-q2-division": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q2-division.png",
+  "md5": "b8e0c988ac018204c1852e70ea169140",
+  "alt": "Four drawings of human cheek cells, labelled A to D below them: A, an oval cell with a dark line across its middle and fine fibres fanning out to either end; B, a round cell with a tangled dark mass at its centre; C, a cell pinched in two at its middle, with a small dark band in each half; D, a round cell with a double dark band at its centre and fibres fanning out to either side.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q2(a)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   85,
+   350,
+   510,
+   485
+  ]
+ },
+ "biology-2019-ol-q3-table": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q3-table.png",
+  "md5": "7fb48e7274f7b1e664fab07599dad10f",
+  "alt": "Question 3 as printed: \"Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.\" The list reads Flower (struck through), Meristem, Dermal, Vascular, Leaf, Lenticel. Below it a two-column table headed Column A and Column B: the example row \"Attracts insects for pollination\" with \"Flower\", then (a) Plant organ for photosynthesis, (b) Tissues for transport in plants, (c) Tissues on outer plant surface, (d) A group of rapidly dividing plant cells and (e) An opening on the stem for gas exchange, each with an empty Column B cell.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q3(a)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   52,
+   50,
+   545,
+   360
+  ]
+ },
+ "biology-2019-ol-q4-cycle": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q4-cycle.png",
+  "md5": "61eed3a810e47cfc01397c8f7efc82dc",
+  "alt": "The human menstrual cycle drawn as a circle with the days 1 to 28 numbered round its rim. A shaded sector labelled A spans days 1 to 5; a darker sector labelled B, with the word OVULATION, spans about days 12 to 16 at the bottom; the rest of the circle is white.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q4(a)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   385,
+   362,
+   565,
+   546
+  ]
+ },
+ "biology-2019-ol-q6-microscope": {
+  "src": "/exam-figures/biology/markbank/biology-2019-ol-q6-microscope.png",
+  "md5": "f2510569a0429f3a4c615b0c702b5ba2",
+  "alt": "Photograph of a laboratory microscope with three label lines: A to the tilted tube at the top, B to the flat black platform at the middle left, and C to a short barrel pointing down above the platform.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2019 OL Q6(a)",
+  "year": 2019,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2019 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP038EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   220,
+   333,
+   375,
+   490
+  ]
+ },
  "biology-2020-hl-q11-leaf": {
   "src": "/exam-figures/biology/markbank/biology-2020-hl-q11-leaf.png",
   "md5": "74a629184b02eb0cdb9e13bf5b178452",
