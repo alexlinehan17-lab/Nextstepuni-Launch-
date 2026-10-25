@@ -1,0 +1,20 @@
+[
+ {"id": "chem-2017-ol-q1-c-i", "ask": "Copy either T or C into your answer book.", "answer": "liquid in beaker labelled mobile", "figure": true},
+ {"id": "chem-2017-ol-q2-e-i", "ask": "in moles per litre", "answer": "0.078 – 0.08 mol l⁻¹", "solution": true},
+ {"id": "chem-2017-ol-q4-a", "ask": "Name the scientist pictured on the right", "answer": "Marie Curie", "figure": true},
+ {"id": "chem-2017-ol-q4-i", "ask": "Express this concentration in parts per million", "answer": "0.16 × 1000 = 160 ppm"},
+ {"id": "chem-2017-ol-q5-c-i", "ask": "how do ¹²₆X and ¹⁴₆X differ?", "answer": "different number of neutrons"},
+ {"id": "chem-2017-ol-q5-d-i-ii", "ask": "Draw diagrams to show the arrangement of electrons", "answer": "Apply penalty of (–1)", "solution": true},
+ {"id": "chem-2017-ol-q6-c-another-alkane", "ask": "Name one other member of this series", "answer": "CH₃CH₃ / CH₃CH₂CH₃", "solution": true},
+ {"id": "chem-2017-ol-q6-e", "ask": "What is meant by the octane number of a fuel?", "answer": "dehydrocyclisation", "figure": true},
+ {"id": "chem-2017-ol-q7-a", "ask": "", "answer": "6 crystal lattice", "figure": true},
+ {"id": "chem-2017-ol-q7-b-i", "ask": "Describe the procedure for carrying out a flame test", "answer": "dip rod in salt and hold salt", "solution": true},
+ {"id": "chem-2017-ol-q8-a", "ask": "Circle its functional group.", "answer": "circle around OH", "solution": true},
+ {"id": "chem-2017-ol-q9-d", "ask": "", "answer": "six points correctly plotted", "figure": true, "solution": true},
+ {"id": "chem-2017-ol-q10-b-i", "ask": "", "answer": "attraction for a shared pair of electrons", "figure": true},
+ {"id": "chem-2017-ol-q10-b-ii", "ask": "Draw a dot and cross diagram", "answer": "two lone pairs in molecule", "solution": true},
+ {"id": "chem-2017-ol-q10-c-i", "ask": "State the law of conservation of mass.", "answer": "have constant mass", "figure": true},
+ {"id": "chem-2017-ol-q11-a-ii", "ask": "", "answer": "numerator only correct", "figure": true, "solution": true},
+ {"id": "chem-2017-ol-q11-b-ph-of-hcl", "ask": "Calculate the pH of 0.3 M hydrochloric acid", "answer": "pH = – log 0.3", "figure": true},
+ {"id": "chem-2017-ol-q11-c-a-greenhouse-effect", "ask": "Give one way that human activities", "answer": "deforestation"}
+]

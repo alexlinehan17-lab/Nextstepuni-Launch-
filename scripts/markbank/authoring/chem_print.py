@@ -49,7 +49,13 @@ SCHEMES = os.path.join(ROOT, 'examiner-reports', 'chemistry', 'schemes')
 FOOTER = re.compile(r'^(Leaving Certificate( Examination)?,? 20\d\d|Chemistry\s*[–-]\s*(Higher|Ordinary) Level'
                     r'|Marking Scheme|\d{1,2}|Page \d{1,2}|(Higher|Ordinary) Level|Chemistry 20\d\d'
                     # The 2020 Ordinary scheme: "LC Ordinary Level Chemistry   8   2020".
-                    r'|LC (Higher|Ordinary) Level Chemistry|20\d\d)\s*$')
+                    r'|LC (Higher|Ordinary) Level Chemistry|20\d\d'
+                    # 2017 OL: the paper's footer "Page 5 of 12" (y 782) and the scheme's
+                    # "Page 3 of 16" (y 790) were read as text, welded onto the asks
+                    # (Q4(k)B "... by mass. Page 5 of 12") and filed as answer items.
+                    # Printed at the foot of the 2010-2017 papers and some of their
+                    # schemes only; no sitting carded so far prints it.
+                    r'|Page \d{1,2} of \d{1,2})\s*$')
 # A mark cell at the scheme's right margin: "[2]", "[5+2]", "[6+2+2+2]", "[3×1 + 3]".
 # The Ordinary scheme brackets a run of equal steps: "[12+10+(8×1)]".
 # The 2023 Ordinary scheme sets the run in square brackets inside a round cell,

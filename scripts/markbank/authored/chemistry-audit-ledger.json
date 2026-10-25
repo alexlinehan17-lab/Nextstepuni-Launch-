@@ -1,6 +1,408 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2017 OL": {
+   "chem-2017-ol-q1-a-i": {
+    "status": "added",
+    "after": "8ea73c9ceb8b2adb"
+   },
+   "chem-2017-ol-q1-a-ii": {
+    "status": "added",
+    "after": "72b313e17504db13"
+   },
+   "chem-2017-ol-q1-b-i": {
+    "status": "added",
+    "after": "a84ddf791e9c2981"
+   },
+   "chem-2017-ol-q1-b-ii": {
+    "status": "added",
+    "after": "114c3364052f0cda"
+   },
+   "chem-2017-ol-q1-b-iii": {
+    "status": "added",
+    "after": "39b910f02ce76e39"
+   },
+   "chem-2017-ol-q1-b-iv": {
+    "status": "added",
+    "after": "5eca5ff6fbdc46c3"
+   },
+   "chem-2017-ol-q1-c-i": {
+    "status": "added",
+    "after": "509e45d9f84e937a"
+   },
+   "chem-2017-ol-q1-c-ii": {
+    "status": "added",
+    "after": "b814cbda0bc7ad34"
+   },
+   "chem-2017-ol-q1-c-iii": {
+    "status": "added",
+    "after": "d81634b962365430"
+   },
+   "chem-2017-ol-q1-c-iv": {
+    "status": "added",
+    "after": "2701e1d77b3adde3"
+   },
+   "chem-2017-ol-q10-a-i": {
+    "status": "added",
+    "after": "21774bf52041fbf0"
+   },
+   "chem-2017-ol-q10-a-ii": {
+    "status": "added",
+    "after": "90e89afff413e25e"
+   },
+   "chem-2017-ol-q10-a-iii": {
+    "status": "added",
+    "after": "0e3577d355a3979a"
+   },
+   "chem-2017-ol-q10-a-iv": {
+    "status": "added",
+    "after": "ca9d6788745ce758"
+   },
+   "chem-2017-ol-q10-b-i": {
+    "status": "added",
+    "after": "9b1de280953477be"
+   },
+   "chem-2017-ol-q10-b-ii": {
+    "status": "added",
+    "after": "34abfce0a73c9304"
+   },
+   "chem-2017-ol-q10-b-iii": {
+    "status": "added",
+    "after": "185feb3416bc2067"
+   },
+   "chem-2017-ol-q10-b-iv": {
+    "status": "added",
+    "after": "fb8177a4ef2a1f33"
+   },
+   "chem-2017-ol-q10-b-v": {
+    "status": "added",
+    "after": "36f071e65f7ddc10"
+   },
+   "chem-2017-ol-q10-c-i": {
+    "status": "added",
+    "after": "51c72e608b745091"
+   },
+   "chem-2017-ol-q10-c-ii": {
+    "status": "added",
+    "after": "ef7c347020137302"
+   },
+   "chem-2017-ol-q10-c-iii": {
+    "status": "added",
+    "after": "4815e7af84e18684"
+   },
+   "chem-2017-ol-q10-c-iv": {
+    "status": "added",
+    "after": "d44b5d5989ac7ca2"
+   },
+   "chem-2017-ol-q10-c-v": {
+    "status": "added",
+    "after": "12e9fd35aec5d344"
+   },
+   "chem-2017-ol-q11-a-i": {
+    "status": "added",
+    "after": "c5222e405116d3b0"
+   },
+   "chem-2017-ol-q11-a-ii": {
+    "status": "added",
+    "after": "97e314dbe700165d"
+   },
+   "chem-2017-ol-q11-a-iii-iv": {
+    "status": "added",
+    "after": "a10b2d5d9f8ffcf9"
+   },
+   "chem-2017-ol-q11-b-i": {
+    "status": "added",
+    "after": "d7e32e25a385261c"
+   },
+   "chem-2017-ol-q11-b-ii": {
+    "status": "added",
+    "after": "dfb7cf0c93e2f9c3"
+   },
+   "chem-2017-ol-q11-b-increasing-acidity": {
+    "status": "added",
+    "after": "c1fa4d052b4f6da5"
+   },
+   "chem-2017-ol-q11-b-ph-and-poh": {
+    "status": "added",
+    "after": "ed9bc64eef1711a0"
+   },
+   "chem-2017-ol-q11-b-ph-of-hcl": {
+    "status": "added",
+    "after": "9e6764d0c3895fa2"
+   },
+   "chem-2017-ol-q11-c-a-greenhouse-effect": {
+    "status": "added",
+    "after": "10ca3913ceb2cee6"
+   },
+   "chem-2017-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "ed94acb1170bc757"
+   },
+   "chem-2017-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "7431814938c30b1a"
+   },
+   "chem-2017-ol-q11-c-a-ozone-depletion": {
+    "status": "added",
+    "after": "f275de79c29196bd"
+   },
+   "chem-2017-ol-q11-c-b-i": {
+    "status": "added",
+    "after": "d882faa9084372b9"
+   },
+   "chem-2017-ol-q11-c-b-ii": {
+    "status": "added",
+    "after": "8dfbad1364ad52c2"
+   },
+   "chem-2017-ol-q11-c-b-iii": {
+    "status": "added",
+    "after": "ce398ec777b72d71"
+   },
+   "chem-2017-ol-q11-c-b-iv": {
+    "status": "added",
+    "after": "f48575f97238e7a3"
+   },
+   "chem-2017-ol-q2-a-i": {
+    "status": "added",
+    "after": "b13bd6e75310c10b"
+   },
+   "chem-2017-ol-q2-a-ii": {
+    "status": "added",
+    "after": "e744db7ba96d4afa"
+   },
+   "chem-2017-ol-q2-b-i": {
+    "status": "added",
+    "after": "022e935ae7e3df03"
+   },
+   "chem-2017-ol-q2-b-ii": {
+    "status": "added",
+    "after": "c1e36aa3d23feb3e"
+   },
+   "chem-2017-ol-q2-c-i": {
+    "status": "added",
+    "after": "40e7946967e9bdbc"
+   },
+   "chem-2017-ol-q2-c-ii": {
+    "status": "added",
+    "after": "c3d4e5aa40f2c5c0"
+   },
+   "chem-2017-ol-q2-d-i": {
+    "status": "added",
+    "after": "61899741fa4361b0"
+   },
+   "chem-2017-ol-q2-d-ii": {
+    "status": "added",
+    "after": "6afbb33a338d5cf8"
+   },
+   "chem-2017-ol-q2-e-i": {
+    "status": "added",
+    "after": "0a00300b0441d6e8"
+   },
+   "chem-2017-ol-q2-e-ii": {
+    "status": "added",
+    "after": "71aea569e07f62f8"
+   },
+   "chem-2017-ol-q3-a": {
+    "status": "added",
+    "after": "2dfe0dd5a6552ef7"
+   },
+   "chem-2017-ol-q3-b": {
+    "status": "added",
+    "after": "c07dad875f799804"
+   },
+   "chem-2017-ol-q3-c": {
+    "status": "added",
+    "after": "4c6cff2e1ffc043f"
+   },
+   "chem-2017-ol-q3-d-i": {
+    "status": "added",
+    "after": "44295bce5e2ea94d"
+   },
+   "chem-2017-ol-q3-d-ii": {
+    "status": "added",
+    "after": "a1d39492c9ab97cc"
+   },
+   "chem-2017-ol-q3-e-i": {
+    "status": "added",
+    "after": "735f6100fbf7495d"
+   },
+   "chem-2017-ol-q3-e-ii": {
+    "status": "added",
+    "after": "7724ec6c9da8e08f"
+   },
+   "chem-2017-ol-q4-a": {
+    "status": "added",
+    "after": "d66d437809f120c1"
+   },
+   "chem-2017-ol-q4-b": {
+    "status": "added",
+    "after": "ecbdfadaabe390a6"
+   },
+   "chem-2017-ol-q4-c": {
+    "status": "added",
+    "after": "d2fb117b0fb4c38e"
+   },
+   "chem-2017-ol-q4-d": {
+    "status": "added",
+    "after": "b78aff3d73a64203"
+   },
+   "chem-2017-ol-q4-e": {
+    "status": "added",
+    "after": "f1f903dc07dafb30"
+   },
+   "chem-2017-ol-q4-f": {
+    "status": "added",
+    "after": "086a38ee08cd20fb"
+   },
+   "chem-2017-ol-q4-g": {
+    "status": "added",
+    "after": "f9151119a7e8242a"
+   },
+   "chem-2017-ol-q4-h": {
+    "status": "added",
+    "after": "7d6007749a6bbcd5"
+   },
+   "chem-2017-ol-q4-i": {
+    "status": "added",
+    "after": "d759f2acb70507fb"
+   },
+   "chem-2017-ol-q4-j": {
+    "status": "added",
+    "after": "28446e08400f379e"
+   },
+   "chem-2017-ol-q4-k-a": {
+    "status": "added",
+    "after": "234464dda0549cbc"
+   },
+   "chem-2017-ol-q4-k-b": {
+    "status": "added",
+    "after": "36aeb83025d681ed"
+   },
+   "chem-2017-ol-q5-a-i": {
+    "status": "added",
+    "after": "3f8dfeeae02ac9c8"
+   },
+   "chem-2017-ol-q5-a-ii": {
+    "status": "added",
+    "after": "bdcb5f435e94bb6b"
+   },
+   "chem-2017-ol-q5-b": {
+    "status": "added",
+    "after": "ed8662af821a9ac5"
+   },
+   "chem-2017-ol-q5-c-i": {
+    "status": "added",
+    "after": "159ee8be81508744"
+   },
+   "chem-2017-ol-q5-c-ii": {
+    "status": "added",
+    "after": "26e27294cf592b77"
+   },
+   "chem-2017-ol-q5-c-iii": {
+    "status": "added",
+    "after": "1dc6668fb919e349"
+   },
+   "chem-2017-ol-q5-c-iv": {
+    "status": "added",
+    "after": "ae20328ce7da9d2a"
+   },
+   "chem-2017-ol-q5-d-i-ii": {
+    "status": "added",
+    "after": "6099b80fb2a6a302"
+   },
+   "chem-2017-ol-q5-d-more-reactive": {
+    "status": "added",
+    "after": "eb2a8a3b35012fc2"
+   },
+   "chem-2017-ol-q6-a": {
+    "status": "added",
+    "after": "1e9be55e040b220e"
+   },
+   "chem-2017-ol-q6-b": {
+    "status": "added",
+    "after": "e7fbe461e18df77f"
+   },
+   "chem-2017-ol-q6-c": {
+    "status": "added",
+    "after": "7a4a4c88c356cad8"
+   },
+   "chem-2017-ol-q6-c-another-alkane": {
+    "status": "added",
+    "after": "71b59d3203e8b98f"
+   },
+   "chem-2017-ol-q6-d": {
+    "status": "added",
+    "after": "ac99770269bef130"
+   },
+   "chem-2017-ol-q6-e": {
+    "status": "added",
+    "after": "d700f32709400c70"
+   },
+   "chem-2017-ol-q7-a": {
+    "status": "added",
+    "after": "4aa68e55f28d4167"
+   },
+   "chem-2017-ol-q7-b-i": {
+    "status": "added",
+    "after": "c0c641f6f0cda9f4"
+   },
+   "chem-2017-ol-q7-b-ii": {
+    "status": "added",
+    "after": "6074f616b2e8b1da"
+   },
+   "chem-2017-ol-q7-c": {
+    "status": "added",
+    "after": "eb42ae7c263a55de"
+   },
+   "chem-2017-ol-q8-a": {
+    "status": "added",
+    "after": "ae88503e96089fdb"
+   },
+   "chem-2017-ol-q8-b": {
+    "status": "added",
+    "after": "5d890e60f3e3c6f9"
+   },
+   "chem-2017-ol-q8-c-i-iii": {
+    "status": "added",
+    "after": "6c75306cf28685f1"
+   },
+   "chem-2017-ol-q8-d": {
+    "status": "added",
+    "after": "78cf2046ec622931"
+   },
+   "chem-2017-ol-q8-e": {
+    "status": "added",
+    "after": "fd13f613fb9f874e"
+   },
+   "chem-2017-ol-q9-a": {
+    "status": "added",
+    "after": "d7fc28a30f19a9ac"
+   },
+   "chem-2017-ol-q9-b-i": {
+    "status": "added",
+    "after": "982ce44569476289"
+   },
+   "chem-2017-ol-q9-b-ii": {
+    "status": "added",
+    "after": "abb684ffb1acf300"
+   },
+   "chem-2017-ol-q9-b-iii": {
+    "status": "added",
+    "after": "2749868cdea982fb"
+   },
+   "chem-2017-ol-q9-c-i-ii": {
+    "status": "added",
+    "after": "0d15262055ff50d2"
+   },
+   "chem-2017-ol-q9-d": {
+    "status": "added",
+    "after": "6a9240a1f027197a"
+   },
+   "chem-2017-ol-q9-e": {
+    "status": "added",
+    "after": "5ea3163c68aed7ef"
+   }
+  },
   "2018 HL": {
    "chem-2018-hl-q1-a": {
     "status": "added",

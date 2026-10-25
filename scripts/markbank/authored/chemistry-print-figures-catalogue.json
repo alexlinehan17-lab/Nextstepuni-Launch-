@@ -3380,5 +3380,211 @@
   "description": "The marking scheme's own print of its answer to 2018 HL Q11(b)(ii), as the State Examinations Commission set it: boxed, pH = –log√(Ka[HA]) / pH = –log√(1.8 × 10⁻⁵ × 0.50) (3); pH = 2.52 (3); \"[–2.52 loses this (3).]\" and \"[acid] = [HA] = [HX] = M = Ma\".",
   "questionRef": "2018 HL Q11(b)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q1c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two chromatography set-ups. \"T\": a beaker holding a strip of paper that stands in a shallow layer of liquid, with a grey spot near the top of the strip, a dark spot in its middle, a smaller dark spot below that and a small dot near its foot. \"C\": a tall glass column with a tap near its foot, liquid being poured in from a small beaker above it, a dark band near its top and two grey bands lower down, and a drop falling from its tip into a small beaker below.",
+  "questionRef": "2017 OL Q1(c)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: \"A\", a conical flask; below it \"B\", a plastic bottle with a screw cap through which a tube runs down into the bottle and bends out into a spout above it.",
+  "questionRef": "2017 OL Q2"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a thermometer, graduated along its length, standing through a flat lid on top of a tapering cup.",
+  "questionRef": "2017 OL Q3"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's warning pictogram: a diamond with a thick black border holding two test tubes pouring drops, one onto a bar and one onto a hand, both shown being eaten away.",
+  "questionRef": "2017 OL Q3(d)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q4a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a woman's head and shoulders, credited \"www.fineartamerica.com\".",
+  "questionRef": "2017 OL Q4(a)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a glass perfume bottle with a faceted glass stopper and a ribbon tied in a bow round its neck.",
+  "questionRef": "2017 OL Q4(h)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q5.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An illustration of a bearded man holding up a block marked \"S 32\" in front of a periodic table with group numbers I to VII along its top and period numbers 1 to 4 down its side, its cells showing symbols such as H, Li, Be, B, Na, Mg, K, Ca, N, P, F, Cl, Cr and Mn with small numbers beside them, credited \"www.google.com/doodles\".",
+  "questionRef": "2017 OL Q5"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's diagram: a Bunsen burner with a tall pointed flame, a gas hose attached at its base, and a hand-held lighter held to the side of the flame.",
+  "questionRef": "2017 OL Q6"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q7a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 OL Q7(a): \"(a) The following words or phrases are omitted from the passage below.\", the words \"ionic\", \"negatively-charged\", \"electrons\", \"crystal lattice\", \"positively-charged\" and \"molecules\" in two rows, \"Write in your answer book the omitted word or phrase corresponding to each of the numbers (1 to 6).\" then \"When sodium and chlorine react together 1 are transferred from the sodium atoms to the chlorine atoms. The sodium atoms are converted into 2 ions and the chlorine atoms are converted into 3 ions. The oppositely-charged ions attract each other forming 4 bonds. The compound formed does not exist in the form of 5 but exists as a network of ions called a 6 .\", each number printed on an underlined blank.",
+  "questionRef": "2017 OL Q7(a)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's scheme, in a box: \"ethanol → ethanal → ethanoic acid → CO₂ + H₂O\".",
+  "questionRef": "2017 OL Q8"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation 2H₂O₂ → 2H₂O + O₂ with \"enzyme\" printed over its arrow, and its table of Time (minutes) 0, 1, 2, 3, 4, 5, 6 against Volume (cm³) 0, 50, 75, 84, 87, 88, 88.",
+  "questionRef": "2017 OL Q9"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q9d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 OL Q9(d): \"9. Raw liver contains an enzyme which catalyses the decomposition of hydrogen peroxide. In an investigation into the rate of decomposition of hydrogen peroxide by minced raw liver, the volume of oxygen gas collected was measured at intervals after the liver was added to the hydrogen peroxide solution and the results in the table were obtained. The reaction that took place was:\", the equation 2H₂O₂ → 2H₂O + O₂ with \"enzyme\" printed over its arrow, and the table of Time (minutes) 0, 1, 2, 3, 4, 5, 6 against Volume (cm³) 0, 50, 75, 84, 87, 88, 88; then \"(d) On graph paper, plot a graph of volume of oxygen (y-axis) versus time.\"",
+  "questionRef": "2017 OL Q9(d)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q10b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 OL Q10(b)(i): \"(b) The atoms in a water molecule are joined by covalent bonds.\" with the words \"covalent bonds\" underlined, then \"(i) Explain the underlined term.\"",
+  "questionRef": "2017 OL Q10(b)(i)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black and white photograph of a crash-test dummy's head pressed into an inflated airbag, with a measuring scale, frame codes and a time stamp printed on it, credited \"www.footage.framepool.com\".",
+  "questionRef": "2017 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q11a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation: 2SO₂ (g) + O₂ (g) ⇌ 2SO₃ (g).",
+  "questionRef": "2017 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q11a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2017 OL Q11(a)(ii): \"(a) When oxygen (O₂) and sulfur dioxide (SO₂) react in a closed vessel, sulfur trioxide (SO₃) is formed and a chemical equilibrium is reached as described by the following balanced equation:\", the equation 2SO₂ (g) + O₂ (g) ⇌ 2SO₃ (g), then \"(ii) Write the equilibrium constant (Kc) expression for this reaction.\", the c of Kc printed as a subscript.",
+  "questionRef": "2017 OL Q11(a)(ii)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of a pH meter whose display reads 3.9, its probe dipped into a tall glass of a bubbling drink with a frothy head.",
+  "questionRef": "2017 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2017-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Photographs of a shiny metal bucket and a shiny metal watering can.",
+  "questionRef": "2017 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q2e-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q2(e)(i), as the State Examinations Commission set it: (i) 0.078 – 0.08 mol l⁻¹ (9); then, in a box: 25 × M over 1 = (3); 19.55 × 0.10 over 1 (3); M = 0.0782 mol l⁻¹ [0.078 – 0.08 mol l⁻¹] (3); then \"[Award (3) for V₁ × M₁ over n₁ = V₂ × M₂ over n₂ if first (6) marks not awarded and last (3) marks can be awarded consequentially. If first (6) not awarded and formula not given, last (3) is still available consequentially.]\"",
+  "questionRef": "2017 OL Q2(e)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q5(d), as the State Examinations Commission set it: (i) a drawing of an atom: a grey nucleus inside two circles, two crosses on the inner circle and eight on the outer, set in pairs; (ii) a drawing of an atom: a grey nucleus inside two circles, two crosses on the inner circle and seven on the outer; then \"[Apply penalty of (–1) if electrons in first shell not shown but once only.]\" (6 + 3).",
+  "questionRef": "2017 OL Q5(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q6(c), as the State Examinations Commission set it: \"any other alkane, e.g. ethane / propane, etc\", \"CH₃CH₃ / CH₃CH₂CH₃ / etc\", then two structures separated by \"/\": two C atoms in a row and three C atoms in a row, each C with an H atom above and below it and an H atom at either end of the chain; (6 + 3); then \"[Hs need not be explicitly shown.][Alkane name must match structure for (9).]\"",
+  "questionRef": "2017 OL Q6(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q7b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q7(b)(i), as the State Examinations Commission set it: a table of three methods, three steps each, each row priced (4). Method 1: \"clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)\", \"dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". Method 2: \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". Method 3: \"prepare a solution of the salt in water and ethanol (propanol)\", \"spray solution onto (into) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". Below: \"*[Allow 'inoculating loop', or 'spatula' for 'platinum wire'.]\", \"[Allow 'record result' for 'observe colour of flame' where clear reference to what kind of observation is made is in response.]\" and \"[Clear labelled diagram for some or all points acceptable.]\"",
+  "questionRef": "2017 OL Q7(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q8a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q8(a), as the State Examinations Commission set it: (5): the structure of ethanol, two C atoms in a row with an H atom above and below each, an H atom on the left end and OH on the right end with a circle round the OH; beside it \"/ CH₃CH₂OH\" with a circle round its OH; then \"[Hs of ethyl group need not be explicitly shown.]\"",
+  "questionRef": "2017 OL Q8(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q9c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q9(c), as the State Examinations Commission set it: (c) DRAW: (i) \"A / B\" \"[Allow C]\" (ii) \"X / Y\" (6 + 3); then five drawings. A: a conical flask with a stopper and delivery tube, a small tube holding the \"liver\" hung inside it and the \"H₂O₂\" in the flask. B: a conical flask lying on its side, the \"H₂O₂\" in its base and the \"liver\" in its neck, a stopper and delivery tube in its mouth. C: a stoppered conical flask with a delivery tube, the \"liver\" lying in the \"H₂O₂\" at its base. X: a delivery tube leading up into an upturned \"graduated cylinder\" standing in a trough of water. Y: a \"gas syringe\". Then \"[Allow collection of oxygen gas as a foam when delivery tube is inserted into a small amount of soapy solution in graduated cylinder.]\"",
+  "questionRef": "2017 OL Q9(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q9d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q9(d), as the State Examinations Commission set it: (d) PLOT: a hand-drawn graph on graph paper of Volume (cm³), 0 to 90, against time (minutes), 0 to 6: crosses at 0, 1, 2, 3, 4, 5 and 6 minutes joined by a smooth curve that rises steeply from the origin and levels off, with a line up from 1.5 minutes to the curve and across to the volume axis; then \"axes correctly labelled with unit or quantity\" (3), \"axes correctly scaled\" (3), \"six points correctly plotted\" (6), \"smooth curve correctly drawn through points and (0, 0)\" (3) and \"[Allow (3) for 5 points correctly plotted.]\"",
+  "questionRef": "2017 OL Q9(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q10(b)(ii), as the State Examinations Commission set it: two drawings of a water molecule: an O atom drawn as two circles, two crosses on the inner and six on the outer, its outer circle overlapping the circles of two H atoms, each H holding a dot beside one of the O atom's crosses; and \"/\" with H, a cross and a dot, then O with two dots above it and two to its right, and a cross and a dot between it and a second H below. Then \"6 valence oxygen electrons //\", \"2 hydrogen electrons //\", \"two lone pairs in molecule //\", \"two bond pairs in molecule\" and \"ANY THREE: (3 × 3)\".",
+  "questionRef": "2017 OL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q10c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q10(c)(iii), as the State Examinations Commission set it: \"2\" (6); then, in a box: n = m over Aᵣ = 130 over 65 = 2 moles (6).",
+  "questionRef": "2017 OL Q10(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2017-OL-scheme-q11a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2017 OL Q11(a)(ii), as the State Examinations Commission set it: Kc = [SO₃]² over [SO₂]²[O₂] (6); then \"[Allow (3) for numerator only correct; allow (3) for denominator only correct; allow (3) for correct numerator and denominator inverted.]\"",
+  "questionRef": "2017 OL Q11(a)(ii)",
+  "solution": true
  }
 ]
