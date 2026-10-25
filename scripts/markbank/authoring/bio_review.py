@@ -437,6 +437,9 @@ def build(ledger, year, level):
     units_by = defaultdict(Counter)
     ladder_units = defaultdict(Counter)
     totals_q, totals_part = defaultdict(int), defaultdict(int)
+    # Tasks of a laddered question that sit under no ladder: a whole-part
+    # (questionTotal) card or a part priced on its own beside the ladders.
+    free_q = defaultdict(int)
     seen_ids = set()
     for t in ledger.TASKS:
         doc = booklet(t['sec'], ledger)
@@ -551,6 +554,8 @@ def build(ledger, year, level):
             if lk is not None:
                 ladder_units[lk].update(task_units)
             totals_q[qn] += t['total']
+            if lk is None:
+                free_q[qn] += t['total']
             if key_part in ledger.PART_TOTALS:
                 totals_part[key_part] += t['total']
         card = {
@@ -646,7 +651,9 @@ def build(ledger, year, level):
             # question may hold two ladders, keyed (qn, 'letters'); and
             # 'responses' allows more carded responses than steps, as in a
             # best-five-of-six question.
-            ladder_total = 0
+            # A part under no ladder (a whole-part card, 2019 Ordinary Q7(b)
+            # beside Q7(a)'s "4 + 2") adds its own total to the ladders'.
+            ladder_total = free_q.get(qn, 0)
             for lk in lkeys:
                 spec = ladders[lk]
                 steps, fixed = (spec['steps'], Counter(spec.get('fixed', {}))) \
@@ -661,7 +668,7 @@ def build(ledger, year, level):
                     problems.append(f'Q{qn} ladder {lk}: {len(units)} responses at {set(units)} (+ '
                                     f'fixed {dict(got_fixed)}) do not fit {steps}')
             if ladder_total != total:
-                problems.append(f'Q{qn}: ladders make {ladder_total}, paper prints {total}')
+                problems.append(f'Q{qn}: ladders (and parts under none) make {ladder_total}, paper prints {total}')
         elif qn in getattr(ledger, 'BEST_OF', {}):
             n, per = ledger.BEST_OF[qn]
             parts = [c for c in cards
