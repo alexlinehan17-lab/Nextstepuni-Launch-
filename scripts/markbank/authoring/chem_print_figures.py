@@ -210,6 +210,10 @@ MASKS = {
     # 903-939 x 338-358).
     'chemistry-2018-OL-paper-q2f-print.png': [(898, 428, 946, 460)],
     'chemistry-2018-OL-paper-q10a-print.png': [(898, 332, 946, 364)],
+    # 2018 HL Q9(d): the part's mark "(15)" prints at the end of its last line, under the end of
+    # the line above ("temperature", dark to x 912, y 280-299); whited out (dark pixels at 917-931
+    # x 310-332, the panel's right edge cutting the mark after "(1").
+    'chemistry-2018-HL-paper-q9d-print.png': [(914, 304, 932, 337)],
 }
 
 

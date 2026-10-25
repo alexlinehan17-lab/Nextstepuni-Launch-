@@ -3056,5 +3056,329 @@
   "description": "The marking scheme's own print of its answer to 2018 OL Q11(b)(ii), as the State Examinations Commission set it: (ii) WRITE: Kc = [Cl₂][SO₂] over [SO₂Cl₂] (6); \"[Allow (3) for expression inverted.]\" \"[Square brackets not essential.]\"",
   "questionRef": "2018 OL Q11(b)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q2a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram A: a round-bottomed flask clamped on a retort stand over a heater, with a vertical condenser fitted in its neck; a line from the condenser is labelled \"X\", an arrow at its lower side arm is labelled \"water\", the heater is labelled \"heater\", and the diagram is lettered \"A\".",
+  "questionRef": "2018 HL Q2(a)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q2b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram B: a separating funnel held in a ring on a retort stand, holding two layers of liquid, its tap above a conical flask; its stopper stands on the bench to the right; lettered \"B\".",
+  "questionRef": "2018 HL Q2(b)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q2c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Diagram C: a funnel set in a black bung in the neck of a conical flask with a side arm; an arrow from the side arm is labelled \"suction\"; lettered \"C\".",
+  "questionRef": "2018 HL Q2(c)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a dark cardboard cup printed with a white steaming-cup design, a white plastic lid on it, and a thermometer standing up through the lid.",
+  "questionRef": "2018 HL Q3"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q4k-a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q4(k)A: \"A Which of the following gases makes the greatest contribution to the greenhouse effect?\", the three gases \"carbon dioxide\", \"water vapour\" and \"methane\" set out in a row, then \"Give the reason for your choice.\"",
+  "questionRef": "2018 HL Q4(k)A"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q5c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph titled \"Mass spectrum of magnesium\": \"% Abundance\", 0 to 90 in steps of 10, against \"Mass number of isotope\", 23 to 27; vertical lines at 24 labelled \"79%\", at 25 labelled \"10%\" and at 26 labelled \"11%\".",
+  "questionRef": "2018 HL Q5(c)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q6a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q6(a): \"6. Refinery gas, naphtha, kerosene and gas oil are products of the fractionation of crude oil.\" with \"fractionation of crude oil\" underlined, then \"(a) Explain the underlined term.\"",
+  "questionRef": "2018 HL Q6(a)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's scheme of processes: CH₃(CH₂)₆CH₃ in a box, with three arrows from it: one labelled \"A\" to a box holding H₃C—C—CH₂—C—CH₃, with CH₃ above and below the second carbon and H above and CH₃ below the fourth; one labelled \"B\" to a box holding CH₃CH₂CHCH₂ + CH₃(CH₂)₂CH₃; and one labelled \"C\" to a box holding a benzene ring carrying C₂H₅, and \"+ 4H₂\".",
+  "questionRef": "2018 HL Q6(c)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q7b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q7(b): \"The decomposition of nitrogen dioxide, described by the equation below, was carried out in a closed vessel at 300 °C. The table shows the molar concentrations of nitrogen dioxide and oxygen at a set of common times during the reaction.\" the equation 2NO₂ (g) → 2NO (g) + O₂ (g) ∆H = 114.4 kJ, and the table: Time (s) 0, 50, 100, 150, 200, 250, 300; Concentration NO₂ (M) 0.0100, 0.0079, 0.0065, 0.0055, 0.0048, 0.0043, 0.0038; Concentration O₂ (M) 0, 0.0011, 0.0018, 0.0023, 0.0026, 0.0029, 0.0031; then \"(b) On the same sheet of graph paper, and using the same axes, draw graphs to show how the concentrations of NO₂ and O₂ vary with time.\"",
+  "questionRef": "2018 HL Q7(b)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q7c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q7(c): \"The decomposition of nitrogen dioxide, described by the equation below, was carried out in a closed vessel at 300 °C. The table shows the molar concentrations of nitrogen dioxide and oxygen at a set of common times during the reaction.\" the equation 2NO₂ (g) → 2NO (g) + O₂ (g) ∆H = 114.4 kJ, and the table: Time (s) 0, 50, 100, 150, 200, 250, 300; Concentration NO₂ (M) 0.0100, 0.0079, 0.0065, 0.0055, 0.0048, 0.0043, 0.0038; Concentration O₂ (M) 0, 0.0011, 0.0018, 0.0023, 0.0026, 0.0029, 0.0031; then \"(c) Find the instantaneous rate of the decomposition (in M s⁻¹) of NO₂ at 100 seconds.\"",
+  "questionRef": "2018 HL Q7(c)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's four boxes: A, butane, Mr = 58, b.p. = –1 to 1 °C; B, propan-1-ol, Mr = 60, b.p. = 97 to 98 °C; C, propanal, Mr = 58, b.p. = 46 to 50 °C; D, ethanoic acid, Mr = 60, b.p. = 118 to 119 °C.",
+  "questionRef": "2018 HL Q8"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q8a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q8(a)(i): \"8. Consider compounds A, B, C and D, all of which have molecules of similar size and mass.\" and its four boxes: A, butane, Mr = 58, b.p. = –1 to 1 °C; B, propan-1-ol, Mr = 60, b.p. = 97 to 98 °C; C, propanal, Mr = 58, b.p. = 46 to 50 °C; D, ethanoic acid, Mr = 60, b.p. = 118 to 119 °C; then \"(a) (i) Draw structures to show all the bonds in molecules of B and C.\"",
+  "questionRef": "2018 HL Q8(a)(i)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q8b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q8(b)(i): \"(b) Propan-2-ol and B are structural isomers. B is a primary alcohol.\" with \"structural isomers\" and \"primary alcohol\" underlined, then \"(i) Explain the underlined terms.\"",
+  "questionRef": "2018 HL Q8(b)(i)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q8b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q8(b)(ii): \"8. Consider compounds A, B, C and D, all of which have molecules of similar size and mass.\" and its four boxes: A, butane, Mr = 58, b.p. = –1 to 1 °C; B, propan-1-ol, Mr = 60, b.p. = 97 to 98 °C; C, propanal, Mr = 58, b.p. = 46 to 50 °C; D, ethanoic acid, Mr = 60, b.p. = 118 to 119 °C; then \"(ii) C and another compound E are structural isomers. Draw a structure for E.\"",
+  "questionRef": "2018 HL Q8(b)(ii)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q8b-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q8(b)(iii): \"8. Consider compounds A, B, C and D, all of which have molecules of similar size and mass.\" and its four boxes: A, butane, Mr = 58, b.p. = –1 to 1 °C; B, propan-1-ol, Mr = 60, b.p. = 97 to 98 °C; C, propanal, Mr = 58, b.p. = 46 to 50 °C; D, ethanoic acid, Mr = 60, b.p. = 118 to 119 °C; then \"(ii) C and another compound E are structural isomers. Draw a structure for E.\" and \"(iii) Give the IUPAC name for E.\"",
+  "questionRef": "2018 HL Q8(b)(iii)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q9-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's the equation CO (g) + Cl₂ (g) ⇋ COCl₂ (g) ∆H = –109.6 kJ mol⁻¹, with \"colourless\" under CO, \"green\" under Cl₂ and \"colourless\" under COCl₂.",
+  "questionRef": "2018 HL Q9"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q9b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q9(b): \"9. Phosgene (COCl₂) is a toxic gas that was used as a chemical weapon in World War 1. It is now used in chemical synthesis. It is formed from carbon monoxide and chlorine using a charcoal catalyst in a reversible reaction given by:\" the equation CO (g) + Cl₂ (g) ⇋ COCl₂ (g) ∆H = –109.6 kJ mol⁻¹, with \"colourless\" under CO, \"green\" under Cl₂ and \"colourless\" under COCl₂; then \"(b) Write the equilibrium constant (Kc) expression for the reaction.\"",
+  "questionRef": "2018 HL Q9(b)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q9d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q9(d): \"9. Phosgene (COCl₂) is a toxic gas that was used as a chemical weapon in World War 1. It is now used in chemical synthesis. It is formed from carbon monoxide and chlorine using a charcoal catalyst in a reversible reaction given by:\" the equation CO (g) + Cl₂ (g) ⇋ COCl₂ (g) ∆H = –109.6 kJ mol⁻¹, with \"colourless\" under CO, \"green\" under Cl₂ and \"colourless\" under COCl₂; then \"(d) A 12.0 litre container was filled with 0.200 moles of chlorine and 0.200 moles of carbon monoxide and heated to a certain temperature, T. Calculate the value of the equilibrium constant for the reaction at this temperature if 85.0% of the chlorine gas had reacted when equilibrium was reached.\"",
+  "questionRef": "2018 HL Q9(d)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q10a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 HL Q10(a): \"(a) Describe how you could demonstrate that ethene readily undergoes an addition reaction with bromine water. Would you expect benzene to readily undergo an addition reaction with bromine water? Explain your reasoning. Some of the electrons in a benzene molecule are delocalised. Explain the underlined term.\" with \"delocalised\" underlined.",
+  "questionRef": "2018 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2018-HL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph of \"pH\", 0 to 14, against \"Volume NaOH (cm³)\", 0 to 100 in steps of 10: a curve through plotted points, starting at about pH 2.5, rising to about pH 4 by 12 cm³, staying near pH 4 to about 40 cm³, rising steeply near 50 cm³ to about pH 12, and levelling off near pH 13 to 100 cm³.",
+  "questionRef": "2018 HL Q11(b)"
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q1e-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q1(e)(iii), as the State Examinations Commission set it: three boxed routes, the first two each followed by \"/\": 0.000093 × 20 = 0.00186 (1.86 × 10⁻³) moles/l (M) (3), 0.00186 × 100* = 0.186 g/l (0.19 g/l) (3); 0.000093 × 100* = 0.0093 (9.3 × 10⁻³) g/50 cm³ (3), 0.0093 × 20 = 0.186 g/l (0.19 g/l) (3); 50.0 × M over 1 = 9.3 × 0.010 over 1, M = 0.00186 (1.86 × 10⁻³) mol/l (M) (3), 0.00186 × 100* = 0.186 g/l (0.19 g/l) (3); then \"[*Addition must be shown for error to be treated as slip.]\"",
+  "questionRef": "2018 HL Q1(e)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q2b-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q2(b)(v), as the State Examinations Commission set it: 3.15 – 3.2 % (6); boxed, density = mass over volume = 1.05 = mass over 0.15; m = 1.05 × 0.15 = 0.1575 g [0.1575 – 0.16 g] (3); 0.1575 over 5.0 × 100 ⇒ 3.15% [3.15 – 3.2%] (3); then \"[1 mark to be deducted for incorrect rounding off resulting in candidate’s answers lying outside given ranges but deduction to be made once only in (v).]\"",
+  "questionRef": "2018 HL Q2(b)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q3c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q3(c)(ii), as the State Examinations Commission set it: the corrosive hazard pictogram, a black-bordered diamond showing liquid pouring from two test tubes, onto a bar and onto a hand, then \"/\" and \"liquid pouring from test-tube(s) // onto hand (object, metal) (2 × 3)\", and \"[No marks for any other pictogram but cancellation does not apply.]\"",
+  "questionRef": "2018 HL Q3(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q3d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q3(d)(ii), as the State Examinations Commission set it: (ii) 8.3328 kJ [8.3 to 8.333 kJ] / = 8332.8 joules [8300 to 8333 J] (9); three boxed routes, the first two each followed by \"/\": m = 0.31 kg (3), H = mcΔT (mcΔθ) / H = 0.31 × 4.2 × 6.4 (3), = 8.3328 kJ [8.3 to 8.333 kJ] (3); c = 0.0042 kJ g⁻¹ K⁻¹ (3), H = mcΔT (mcΔθ) / H = 310 × 0.0042 × 6.4 (3), = 8.3328 kJ [8.3 to 8.333 kJ] (3); c = 4.2 J g⁻¹ K⁻¹ and m = 310 g (3), H = mcΔT (mcΔθ) / H = 310 × 4.2 × 6.4 (3), = 8,332.8 joules (J) [8,300 to 8,333 J] (3), \"Units essential in answer for full marks here.\"; and, boxed beside the third, \"[Allow (6) for 8,300 to 8,333 without work and not labelled joules (J).]\"",
+  "questionRef": "2018 HL Q3(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q3d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q3(d)(iii), as the State Examinations Commission set it: (iii) [–55.6 to –55.55 kJ mol⁻¹] or [–55,600 to –55,550 J mol⁻¹] (6); two boxed routes separated by \"/\": 8.3328 ÷ 0.15 = 55.55 to 55.6 kJ mol⁻¹ (3), ΔH = –55.6 kJ mol⁻¹ [–55.6 to –55.55 kJ mol⁻¹] (3); 8,332.8 ÷ 0.15 = 55,550 to 55,600 J mol⁻¹ (3), ΔH = –55.6 kJ mol⁻¹ [–55,600 to –55,550 J mol⁻¹] (3); then \"[1 mark to be deducted for incorrect rounding off resulting in candidate’s final answer lying outside given range but deduction to be made once only in (d).]\" and \"[Ignore negative signs used in work in (ii) but final answer in (iii) must be negative.]\"",
+  "questionRef": "2018 HL Q3(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q3e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q3(e), as the State Examinations Commission set it: a two-column table headed \"STATE (3)\" and \"EXPLAIN (3)\", line by line: use more insulation / wrap in cotton wool | gives more accurate temperature rise (change) / stops (reduces) heat loss to surroundings / more accurate result for heat produced in cup; use polystyrene (plastic) cup | gives more accurate temperature rise (change) / stops (reduces) heat loss to surroundings / more accurate result for heat produced in cup / better insulation than cardboard; acid and base 3 K below room temperature initially | heat gain from surroundings and heat lost to surroundings cancel / gives more accurate temperature rise (change) / more accurate result for heat produced in cup; use greater volumes of acid and base | smaller error in total mass / gives more accurate temperature rise (change) / greater temperature rise (change) / more accurate result for heat produced in cup; use acid and base with greater concentrations | greater temperature rise (change) / more accurate result for temperature (heat produced) in cup; use specific heat capacity of solution in calculations | more accurate result for heat produced in cup; allow for specific heat capacity of material of container | more accurate result for heat produced in cup; repeat several times and average | result statistically more accurate / more accurate result for heat produced in cup / gives more accurate temperature rise (change); measure volumes with pipette (burette)* assuming the readings given are read correct to 1 cm³ | reduce error in volumes to 0.1 cm³; use thermometer** with low heat capacity / allow for specific heat capacity of material of thermometer | gives more accurate temperature rise (change) / gives more accurate highest temperature / more accurate result for heat produced in cup; use more sensitive (accurate) thermometer | more accurate result for temperature (heat produced) in cup / more accurate result for heat produced in cup; graph temperature fall after mixing versus time and extrapolate to get temperature at time of mixing | gives more accurate temperature rise (highest temperature) / more accurate result for heat produced in cup; then \"[SUGGEST and EXPLAIN are linked.]\", \"[*Do not allow ‘add using pipette (burette)’.]\", \"[**Do not allow ‘use digital thermometer’ as a precaution.]\" and \"[Do not allow ‘use same quantity (number of moles, volume) of acid and base’.]\"",
+  "questionRef": "2018 HL Q3(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q4f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q4(f), as the State Examinations Commission set it: \"or\"; \"(3) marks for oxidation numbers of chlorine and (3) for species reduced available from:\"; boxed, NaOCl + H₂O₂ → NaCl + H₂O + O₂ with \"1\" under the Cl of NaOCl and \"–1\" under the Cl of NaCl, joined by an arrow labelled \"reduced\"; then \"[Second (3) only available if first (3) awarded.]\"",
+  "questionRef": "2018 HL Q4(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q4(i), as the State Examinations Commission set it: boxed, 54.5 over 12 /= 4.54, 9.1 over 1 /= 9.1, 36.4 over 16 /= 2.275 (3); 4.54 over 2.275 = 2, 9.1 over 2.275 = 4, 2.275 over 2.275 = 1 ⇒; C₂H₄O (3).",
+  "questionRef": "2018 HL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q5d-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q5(d)(ii), as the State Examinations Commission set it: \"or\"; n, with 1 above and 0 below, → p, with 1 above and 1 below, / + e⁻ is emitted from nucleus / e, with 0 above and −1 below, is emitted from nucleus (6); then \"[‘Atomic number (number of protons) increases by one’ is allowable for (6).]\", \"[‘Beta-particle emitted’ is not acceptable.]\" and \"[Accept for (6) ‘a positron is emitted when a proton changes into neutron’.]\"",
+  "questionRef": "2018 HL Q5(d)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q5d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q5(d)(iii), as the State Examinations Commission set it: four forms of the equation, separated by \"/\", each nuclide with two numbers set before its symbol: C with 14 above 6 → N with 14 above 7 + e with 0 above −1; C with 14 above 6 → N with 14 above 7 + e⁻; C with 6 above 14 → N with 7 above 14 + e with −1 above 0; C with 6 above 14 → N with 7 above 14 + e⁻; (6); then \"[Accept ‘+ β⁻’ for ‘+ e⁻’.]\"",
+  "questionRef": "2018 HL Q5(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q5d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q5(d)(iv), as the State Examinations Commission set it: 7.0 × 10⁻¹¹ g of carbon–14 originally (6); three boxed routes separated by \"or\": 3.0 × 10¹² ÷ 6.0 × 10²³ = 5.0 × 10⁻¹² moles of carbon–14 originally (3), 5.0 × 10⁻¹² × 14* = 7.0 × 10⁻¹¹ g originally (3); mass of carbon–14 in a.m.u. originally = 3.0 × 10¹² × 14* = 4.2 × 10¹³ (3), 4.2 × 10¹³ ÷ 6.0 × 10²³ = 7.0 × 10⁻¹¹ g originally (3); mass of one carbon–14 isotope = 14* × 1.66 × 10⁻²⁷ = 2.324 × 10⁻²⁶ kg (3), 3.0 × 10¹² × 2.324 × 10⁻²⁶ = 7.0 × 10⁻¹⁴ kg originally / 7.0 × 10⁻¹¹ g originally (3); then \"[*Using 12 instead of 14 here is more than a slip.]\" and \"[Allow more exact mass of carbon-14 taken from Formulae and Tables booklet, page 83.]\"",
+  "questionRef": "2018 HL Q5(d)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q6b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q6(b)(iii), as the State Examinations Commission set it: –1239.1 kJ mol⁻¹ (12); boxed, ΔHcombustion = ΣΔHf(products) – ΣΔHf(reactants); = –571.6 kJ (3) + [(–393.5) + (–296.8)] kJ (3) – (–22.8 kJ) (3); or = –571.6 kJ (3) [–393.5 –296.8] kJ (3) + 22.8 kJ (3); or = –1261.9 kJ (6) + 22.8 kJ (3); and = –1239.1 kJ mol⁻¹ (3); \"[+1239.1 by this method is not a slip and is worth maximum (9).]\" and \"[+1239.1 with no work shown is worth (3).]\"; \"or\"; boxed, 2H₂ + O₂ → 2H₂O ΔH = –571.6 kJ (3); C + O₂ → CO₂ ΔH = –393.5 kJ and S + O₂ → SO₂ ΔH = –296.8 kJ, bracketed together (3); CH₃SH → C + 2H₂ + S ΔH = 22.8 kJ (3); CH₃SH + 3O₂ → CO₂ + 2H₂O + SO₂ ΔH = –1239.1 kJ mol⁻¹ (3); \"Equations not essential, however:\"; \"Final Answer: CO₂ + 2H₂O + SO₂ → CH₃SH + 3O₂ ΔH = +1239.1 kJ is worth (9) marks with this equation\"; \"Final Answer: +1239.1 kJ is worth (3) marks if accompanied by no equation or by an equation other than that for combustion in reverse: (CO₂ + 2H₂O + SO₂ → CH₃SH + 3O₂).\"",
+  "questionRef": "2018 HL Q6(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q7a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q7(a)(i), as the State Examinations Commission set it: change in concentration per unit (over, with) time of one reactant (product) / rate of change of concentration of one reactant (product) / change in concentration over time, as a fraction, of one reactant (product) (5); \"or\"; change in concentration of a reactant (product) over time, as a fraction / d[reactant] over dt / −d[reactant] over dt / d[product] over dt (5).",
+  "questionRef": "2018 HL Q7(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q7b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q7(b), as the State Examinations Commission set it: a graph drawn on graph paper, headed \"Question 7(b) Graphs\": \"Concentration (M)\", 0.000 to 0.010, against \"Time (s)\", 0 to 300, with crosses plotted every 50 s and two smooth curves, one falling from 0.010 at 0 s to about 0.0038 at 300 s, the other rising from the origin to about 0.0031 at 300 s; a straight tangent touches the falling curve at 100 s, with the points \"(0, 0.0087)\" and \"(205, 0.0040)\" marked on it, and the working \"Instantaneous Rate = 0.0040−0.0087 over 205−0\" and \"= – 2.29 × 10⁻⁵ M s⁻¹\".",
+  "questionRef": "2018 HL Q7(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q7c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q7(c), as the State Examinations Commission set it: good tangent drawn at 100 seconds to NO₂ curve (6); \"any two points correctly read from tangent, e.g. (0, 0.0087) and (205, 0.0040) / rise and run read from tangent, e.g. –0.0047, 205.\"; 1.8 × 10⁻⁵ to 2.5 × 10⁻⁵ M s⁻¹ NO₂ (3); boxed, 0.0040−0.0087 over 205−0 = −0.0047 over 205 = –2.3 × 10⁻⁵ [–2.5 × 10⁻⁵ to –1.8 × 10⁻⁵] M s⁻¹ NO₂ (3); below it, a graph drawn on graph paper, headed \"Question 7(b) Graphs\": \"Concentration (M)\", 0.000 to 0.010, against \"Time (s)\", 0 to 300, with crosses plotted every 50 s and two smooth curves, one falling from 0.010 at 0 s to about 0.0038 at 300 s, the other rising from the origin to about 0.0031 at 300 s; a straight tangent touches the falling curve at 100 s, with the points \"(0, 0.0087)\" and \"(205, 0.0040)\" marked on it, and the working \"Instantaneous Rate = 0.0040−0.0087 over 205−0\" and \"= – 2.29 × 10⁻⁵ M s⁻¹\".",
+  "questionRef": "2018 HL Q7(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q7d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q7(d)(iii), as the State Examinations Commission set it: a reaction profile: a vertical axis labelled \"energy\" and an unlabelled horizontal axis; a curve level at a low energy, rising to a tall narrow peak, then falling to level off at an energy higher than where it started.",
+  "questionRef": "2018 HL Q7(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q8a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q8(a)(i), as the State Examinations Commission set it: a table headed \"B\", \"propan-1-ol\" and \"C\", \"propanal\": under B, propan-1-ol drawn with every bond, H—C—C—C—O—H with an H above and below each carbon; under C, propanal drawn with every bond, H—C—C—C with an H above and below each of the first two carbons and the third carbon double-bonded to O and bonded to H; \"(3)\" under each.",
+  "questionRef": "2018 HL Q8(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q8b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q8(b)(ii), as the State Examinations Commission set it: propanone drawn with every bond: H—C—C—C—H, the middle carbon double-bonded to an O above it and each outer carbon carrying an H above and below.",
+  "questionRef": "2018 HL Q8(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q8b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q8(b)(iii), as the State Examinations Commission set it: a table headed \"Structural isomers of propanal\", giving each isomer with its name: \"Ketone\": CH₃COCH₃ / its skeletal drawing, \"propan-2-one (propanone)\"; \"Alcohols (and enols)\": CH₃CH=CH(OH) / its drawing, \"prop-1-en-1-ol / 1-propen-1-ol\"; CH₃C(OH)=CH₂ / its drawing, \"prop-1-en-2-ol / 1-propen-2-ol\"; CH₂=CHCH₂(OH) / its drawing, \"prop-2-en-1-ol / 2-propen-1-ol\"; a three-membered ring of H₂C, CH₂ and CH carrying OH, \"cyclopropanol\"; \"Ethers\": H₃C—O— on a carbon double-bonded to CH₂ and bonded to H, \"methoxyethene\"; a four-membered ring of H₂C, CH₂, CH₂ and O, \"oxetane\"; a three-membered ring of O, CH₂ and CH carrying CH₃, \"2-methyloxirane /methyloxirane\".",
+  "questionRef": "2018 HL Q8(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q9b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q9(b), as the State Examinations Commission set it: Kc = [COCl₂] over [CO][Cl₂], then \"[Square brackets essential.]\"",
+  "questionRef": "2018 HL Q9(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q9d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q9(d), as the State Examinations Commission set it: CALCULATE: Kc = (6800/3) 2266.67 – 2272 l mol⁻¹ (15); boxed, CO (g) + Cl₂ (g) ⇋ COCl₂ (g); Initially: 0.200 mol, 0.200 mol, 0 mol; Change: – x mol, – x mol, + x mol; x = 85% of 0.2 = 17/100 (0.17) mol (3); Equil: 0.2 – x mol, 0.2 – x mol, + x mol; 0.2 – 0.17 mol, 0.2 – 0.17 mol, 0.17 mol; 3/100 (0.03) mol and 3/100 (0.03) mol and 17/100 (0.17) mol (6); Divide by 12.0 before calculating Kc: 1/400 (0.0025) mol/l and 1/400 (0.0025) mol/l and 17/1200 (0.014167) mol/l (3); Kc = [COCl₂] over [CO][Cl₂] = [0.014167] over [0.0025][0.0025] = (6800/3) 2266.67 – 2272 l mol⁻¹ (3); \"[Where (6) not awarded in box above, (3) is available for statement of ratio – x mol : – x mol : + x mol]\"; \"or\"; boxed, the same equation; Initially: 0.200 mol, 0.200 mol, 0 mol; Divide initial quantities by 12.0: 1/60 (0.0167) mol/l and 1/60 (0.0167) mol/l and 0 mol/l (3); Change: – x mol/l, – x mol/l, + x mol/l; x = 85.0% of 0.0167 = 17/1200 (0.014167) (3); Equil: 0.0167 – x mol/ l, 0.0167 – x mol/l, + x mol/l; 0.0167 – 0.014167 mol/l, 0.0167 – 0.014167 mol, 0.014167 mol/l; 3/1200 (0.0025) mol/l and 3/1200 (0.0025) mol/l and 17/1200 (0.014167) mol/l (6); Kc = [COCl₂] over [CO][Cl₂] = [0.014167] over [0.0025][0.0025] = (6800/3) 2266.67 – 2272 l mol⁻¹ (3); \"[Where (6) not awarded in box above, (3) is available for statement of ratio – x mol/l : – x mol/l : + x mol/l]\"; then \"[Do not allow mixing and matching of marks within boxes.]\", \"[1 mark to be deducted for incorrect rounding off resulting in candidate’s final answer lying outside given range.]\" and \"[Allow candidates to use incorrect Kc expression from (b) in last line of calculation without further penalty.]\"",
+  "questionRef": "2018 HL Q9(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q11a-v.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q11(a)(v), as the State Examinations Commission set it: two dot and cross diagrams of CS₂, separated by \"/\": \"S\", \"C\" and \"S\" in large letters, each S with two pairs of dots on its outer side, and between each S and the C two crosses beside two dots; and three overlapping circles labelled \"S\", \"C\" and \"S\", each S circle with a pair of crosses at its outer top and outer bottom, and x, o, x, o set in each overlap.",
+  "questionRef": "2018 HL Q11(a)(v)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-HL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 HL Q11(b)(ii), as the State Examinations Commission set it: boxed, pH = –log√(Ka[HA]) / pH = –log√(1.8 × 10⁻⁵ × 0.50) (3); pH = 2.52 (3); \"[–2.52 loses this (3).]\" and \"[acid] = [HA] = [HX] = M = Ma\".",
+  "questionRef": "2018 HL Q11(b)(ii)",
+  "solution": true
  }
 ]
