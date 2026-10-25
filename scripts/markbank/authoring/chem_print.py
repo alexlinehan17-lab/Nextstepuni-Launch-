@@ -299,7 +299,7 @@ def any_bracket_cell(t):
     return as_cell('(' + t[1:-1].strip() + ')') if t.startswith('[') else as_cell(t)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
-FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\),?\s*BALANCING:\s*\((\d{1,2})\)$')
+FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\),?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).

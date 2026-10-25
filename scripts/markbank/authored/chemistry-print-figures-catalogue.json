@@ -1379,5 +1379,214 @@
   "truncated": false,
   "description": "The paper's own print of 2022 OL Q1(a): \"The diagram on the right shows part of an arrangement of apparatus and chemicals used to prepare ethene (C₂H₄) gas by dehydrating ethanol using a catalyst.\", beside a drawing of a horizontal test tube with glass wool at its closed end, a small heap of solid in the middle, a stopper and a delivery tube leading off, heated by a Bunsen burner; then (i) Copy and complete the diagram by labelling the locations of the ethanol and the catalyst and showing how the ethene gas could have been collected. (ii) Identify the catalyst used in this preparation. (iii) Describe how you could carry out a test for unsaturation on a sample of ethene. (29)",
   "questionRef": "2022 OL Q1(a)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q3b-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A two-column table from the paper headed Solution and Reagent: bromine water, Br₂; sodium sulfite, Na₂SO₃; barium chloride, BaCl₂; hydrochloric acid, HCl.",
+  "questionRef": "2021 HL Q3(b)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme for Q8: CH₃CHCH₂, labelled X, reacts with H₂O (over the arrow) to give CH₃CH(OH)CH₃, labelled Y; an arrow from a box containing Z points to Y, with H₂ above it and Ni below.",
+  "questionRef": "2021 HL Q8"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q8b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2021 HL Q8's lead-in: \"Study the reaction scheme below in which compound Y is produced by the reaction of compound X with water. Y is often called isopropyl alcohol and it is a component in many personal care products. Y can also be produced by the reduction of compound Z.\", then the reaction scheme (CH₃CHCH₂, labelled X, to CH₃CH(OH)CH₃, labelled Y, with H₂O over the arrow; an arrow from a box containing Z to Y, with H₂ above it and Ni below), then (b)(i) Identify Z.",
+  "questionRef": "2021 HL Q8(b)(i)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q8b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2021 HL Q8's lead-in: \"Study the reaction scheme below in which compound Y is produced by the reaction of compound X with water. Y is often called isopropyl alcohol and it is a component in many personal care products. Y can also be produced by the reduction of compound Z.\", then the reaction scheme (CH₃CHCH₂, labelled X, to CH₃CH(OH)CH₃, labelled Y, with H₂O over the arrow; an arrow from a box containing Z to Y, with H₂ above it and Ni below), then (ii) Draw an expanded molecular structure for Y, indicating clearly which of its bonds are formed when Z is reduced.",
+  "questionRef": "2021 HL Q8(b)(ii)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q10a-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table from the paper with columns Formula, Boiling point (°C), Bond angle (°) and Shape: CH₄, −161.5, 109.5; BF₃, −100.3, 120; NH₃, −33.3, 107.0; each with a ball-and-stick model of the molecule in the Shape column; and QX₂, with dashes for boiling point and bond angle and \"??\" for its shape.",
+  "questionRef": "2021 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q10b-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2021 HL Q10(b): \"Chloroethane decomposes when heated according to the balanced equation: C₂H₅Cl (g) → C₂H₄ (g) + HCl (g) The following data were obtained at a certain temperature T for the decomposition of the chloroethane and the formation of the hydrogen chloride during this reaction.\", a table of Time (s) 0, 80, 160, 320 against Concentration C₂H₅Cl (M) 2.00, 1.02, 0.52, 0.13 and Concentration HCl (M) 0, 0.98, 1.48, 1.87, then (ii) Use the data given to plot, on the same sheet of graph paper and using the same set of axes, curves to compare the changes in concentration of the chloroethane and the hydrogen chloride with time.",
+  "questionRef": "2021 HL Q10(b)(ii)"
+ },
+ {
+  "file": "chemistry-2021-HL-paper-q10b-iii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2021 HL Q10(b): \"Chloroethane decomposes when heated according to the balanced equation: C₂H₅Cl (g) → C₂H₄ (g) + HCl (g) The following data were obtained at a certain temperature T for the decomposition of the chloroethane and the formation of the hydrogen chloride during this reaction.\", a table of Time (s) 0, 80, 160, 320 against Concentration C₂H₅Cl (M) 2.00, 1.02, 0.52, 0.13 and Concentration HCl (M) 0, 0.98, 1.48, 1.87, then (iii) Find the instantaneous rate of HCl formation (in M s⁻¹) at 120 s. (25)",
+  "questionRef": "2021 HL Q10(b)(iii)"
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q1e-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q1(e)(ii), as the State Examinations Commission set it: 0.000963 (9.63 × 10⁻⁴) moles of I₂ in 25.0 cm³ in conical flask (3); boxed, Na₂S₂O₃ : I₂ = 2 : 1 ⇒ 0.001926 (1.926 × 10⁻³, 963/500000) ÷ 2 = 0.000963 (9.63 × 10⁻⁴, 963/1000000) moles of I₂ in 25.0 cm³ in conical flask (3) [Divide by 2 essential.]; or, boxed, 25.0 × M over 1 = 21.4 × 0.09 over 2 ⇒ M = 0.03852 (3.852 × 10⁻², 963/25000) moles/l (M) of I₂, then 0.03852 ÷ 40 = 0.000963 moles of I₂ in 25.0 cm³ in conical flask (3) [Divide by 40 essential.]",
+  "questionRef": "2021 HL Q1(e)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q1e-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q1(e)(iii), as the State Examinations Commission set it: 0.7704 (963/1250) moles ClO⁻ per litre original bleach (6), in three boxed routes: 0.000963 moles per 25.0 cm³ × 40 = 0.03852 (3.852 × 10⁻², 963/25000) moles ClO⁻ per litre diluted bleach (3) [Multiply by 40 essential.], then × 20 (dilution factor) = 0.7704 moles ClO⁻ per litre original bleach (3) [Multiply by 20 essential.]; or × 20 = 0.01926 (1.926 × 10⁻², 963/50000) moles ClO⁻ per 25.0 cm³ original bleach (3), then × 40 = 0.7704 (3); or 25.0 × M over 1 = 21.4 × 0.09 over 2 ⇒ M = 0.03852 moles/l (M) of diluted bleach (3), then × 20 (dilution factor) = 0.7704 (3).",
+  "questionRef": "2021 HL Q1(e)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q1e-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q1(e)(iv), as the State Examinations Commission set it: 4 % (w/v) ClO⁻ in original bleach (8): Mr ClO⁻ = 51.5* (3); 0.7704 (963/1250) × 51.5 = 39.9655 – 39.6756 g ClO⁻ per litre original bleach (3) *[Multiply by 51.5 essential.]; 39.6756 ÷ 10 = 3.9655 – 4 g ClO⁻ per 100 cm³ original bleach ⇒ 3.9655 – 4 % (w/v) ClO⁻ in original bleach (2) [Divide by 10 essential.]; or Mr ClO⁻ = 51.5* (3), 0.7704 ÷ 10 = 0.07704 moles per 100 cm³ original bleach (2), 0.07704 (963/12500) × 51.5 = 3.9655 – 4 % (w/v) ClO⁻ original bleach (3); with its notes on addition slips, Ar values from the Formula and Tables booklet, a final answer not a whole number, and rounding.",
+  "questionRef": "2021 HL Q1(e)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q3(a), as the State Examinations Commission set it: DESCRIBE (5 × 3), a table of three methods, five steps each priced (3): clean a platinum (nichrome) wire* (rod, probe) in HCl (concentrated hydrochloric acid) / soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick) / prepare a solution of the given salt; dip wet rod in salt (sample) / dip** splint (stick) in salt (sample) / in water and ethanol (propanol); hold salt in or over hot (blue) part of Bunsen flame / spray salt solution onto (into) hot (blue) part of Bunsen flame; yellow (amber, orange) colour is a positive result for sodium sulfite; yellow-green colour is a positive result for barium chloride; with notes allowing a metal inoculating loop or metal spatula for the wire, a clear labelled diagram, and (6) for soaking a splint in salt solution.",
+  "questionRef": "2021 HL Q3(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q4h.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q4(h), as the State Examinations Commission set it: FIND 3 / KBrO₃ (6): 80 over (39 + 80 + 16x) = 0.479 / 80 over (119 + 16x) × 100 = 47.9 (3), 80 = 57.001 + 7.664x ⇒ x = 3 (3); or 39 over 80 × 47.9 = 23.35% (23.4%) K and 100 − (47.9 + 23.4) = 28.7% (28.8%, 29%) O (3), 47.9 over 80 = 0.598, 23.4 over 39 = 0.6, 28.7 over 16 = 1.794, 0.598 : 0.6 : 1.794 = 1 : 1 : 3 ⇒ x = 3 (3); or 80 = 47.9 % ⇒ 167.01 = 100 = Mr (3), 167.01 − 80 − 39 = 48.01 = 16x ⇒ x = 3 (3); [*Work based on Ar values in Formula and Tables booklet acceptable.]",
+  "questionRef": "2021 HL Q4(h)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q6d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q6(d), as the State Examinations Commission set it: USE −73.7 kJ mol⁻¹ (15): ΔH combustion = ΣΔH formation products − ΣΔH formation reactants; ΔH combustion = (−787.0) (3) + (−857.4) (3) + (−296.8) (3) − ΔH formation, or (−1941.2) (9) − ΔH formation; ΔH formation = (−787.0) + (−857.4) + (−296.8) + 1867.5 (3), = −1941.2 + 1867.5 = −73.7 (3) kJ mol⁻¹; or a boxed cycle of the reversed combustion equation (ΔH = 1867.5 kJ, 3) with the formation equations of CO₂, H₂O and SO₂ (−787.0, −857.4 and −296.8 kJ, 3 each, together −1941.2, 9), summed to 2C + 3H₂ + S → C₂H₅SH, ΔH formation = −73.7 kJ mol⁻¹ (3); mixing and matching from different boxes not acceptable; a final answer of ΔH = +73.7 kJ mol⁻¹ for C₂H₅SH → 2C + 3H₂ + S worth 12 marks only when clearly associated with that equation.",
+  "questionRef": "2021 HL Q6(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q7d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q7(d)(iv), as the State Examinations Commission set it: CALCULATE Ka = 2.25 × 10⁻⁵ – 2.55 × 10⁻⁵ (6): Ka = [H₃O⁺][A⁻] over [HA] / allow Ka = [H⁺][A⁻] over [HA] (3), = (1.5 × 10⁻³)² over 0.10 = 2.25 × 10⁻⁵ (3); or from pH = −log √(Ka[HA]) or [H₃O⁺] = √(Ka[HA]) with the values put in (3), 2.29 × 10⁻⁶ = Ka × 0.10 ⇒ Ka = 2.25 × 10⁻⁵ – 2.51 × 10⁻⁵ (3); accept [HA] after dissociation taken as 0.10 − 1.5 × 10⁻³ = 0.0985 M.",
+  "questionRef": "2021 HL Q7(d)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q8b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q8(b)(i), as the State Examinations Commission set it: IDENTIFY propanone / acetone / CH₃COCH₃ / and, beside it, the full structural formula of propanone: a chain of three carbon atoms, the middle one double-bonded to O and each end one bonded to three H atoms (3).",
+  "questionRef": "2021 HL Q8(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q8b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q8(b)(ii), as the State Examinations Commission set it: DRAW the full structural formula of CH₃CH(OH)CH₃ with every bond shown, a box round the middle carbon's C–H bond and another round its O–H bond (3); INDICATE: OH bond // CH bond of carbon to which OH is attached (2 × 3); [C-O formed unacceptable but cancellation not applied.] [Hs attached to carbon atoms need not be shown explicitly but all CH bonds must be indicated and the H of OH must be shown] [DRAW must be correct for INDICATE to be awarded marks.]",
+  "questionRef": "2021 HL Q8(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q9c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q9(c)(i), as the State Examinations Commission set it: WRITE Kc = [NH₃]² over [N₂][H₂]³ (6); [Square brackets ESSENTIAL.][Award marks for this expression given in part (ii).]",
+  "questionRef": "2021 HL Q9(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q9c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q9(c)(ii), as the State Examinations Commission set it: CALCULATE 25/243 / 0.103 (12), in two boxed routes: letting x be the moles of N₂ that reacted, initial, change and equilibrium moles of N₂, H₂ and NH₃ (9.0 − x, 27.0 − 3x, 2x mol) (3); 2x = 6 ⇒ x = 3, so 6 mol N₂, 18 mol H₂ and 6 mol NH₃ (3); divided by 10.0, 0.6 mol/l N₂, 1.8 mol/l H₂ and 0.6 mol/l NH₃ (3); Kc = 0.6² over 0.6(1.8)³ = 25/243 / 0.103 (3); or the same per litre from 0.9 mol/l N₂ and 2.7 mol/l H₂, with marks at each step; [No mixing and matching of contents of boxes above.]",
+  "questionRef": "2021 HL Q9(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(a)(i), as the State Examinations Commission set it: DRAW 1 lone pair shown // 3 bond pairs shown (4 + 3), beside two dot and cross diagrams of NH₃: overlapping circles for N and three H atoms with a dot and a cross in each overlap and a pair of dots on N, and a formula with H on three sides of N, a dot and a cross between N and each H, and a pair of dots on its fourth side.",
+  "questionRef": "2021 HL Q10(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(b)(i), as the State Examinations Commission set it: DEFINE change in concentration per unit (over) time (rate of change of concentration, change in concentration over time written as a fraction) of one reactant or product; or d[reactant]/dt / −d[reactant]/dt / d[product]/dt (6).",
+  "questionRef": "2021 HL Q10(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(b)(ii), as the State Examinations Commission set it: USE axes labelled time (seconds, s) and concentration (M, moles per litre) // appropriate correct numeric scales on both axes // careful plotting of 7 points excluding origin // two smooth curves of correct shape through 8 points including origin (4 × 3), with its notes on misplotted points, points joined by straight lines, time versus concentration graphs, and the (6) deductions for different scales, no graph paper, separate sheets or separate axes; below them a graph of concentration (M, 0 to 2) against time (s, 0 to 320) with one curve falling from 2 and one rising from 0, crossing near 80 s, and a tangent drawn to each curve.",
+  "questionRef": "2021 HL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(b)(iii), as the State Examinations Commission set it: FIND good tangent drawn to either curve at 120 s (4); any two points from tangent read correctly, e.g. (0, 0.6) and (200, 1.78) / rise and run correctly read from tangent, e.g. 1.4 M, 240 s; slope = 0.0064 M s⁻¹ HCl [0.004 – 0.009] M s⁻¹ HCl (3), boxed as 1.78 − 0.6 over 200 − 0 = 1.28 over 200 = 0.0064 M s⁻¹ HCl (3); with notes on the negative sign, on drawing the tangent, and on the last 3 marks.",
+  "questionRef": "2021 HL Q10(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(c)(i), as the State Examinations Commission set it: FIND 68.58 g Ag (12): Mr Cu(NO₃)₂ = 187.5* (3); 22.50 over 187.5 = 0.12 (3/25) moles copper(II) nitrate ⇒ 0.12 (3/25) moles Cu (3); 0.12 × 63.5 = 7.62 g Cu (3); 76.20 − 7.62 = 68.58 g Ag (3); with its note on addition slips and Ar values; WHAT RATIO: 9 : 1 = Ag : Cu or 9/10 Ag or 1/10 Cu (3), boxed from 68.58 over 7.62, or 7.62 over 76.20, with 1 : 9 = Cu : Ag acceptable and 1 : 9 unlabelled or labelled incorrectly a mathematical slip (−1).",
+  "questionRef": "2021 HL Q10(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q10c-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q10(c)(ii), as the State Examinations Commission set it: WHAT VOLUME 19.6 litres NO₂ / 19,600 cm³ NO₂ (10): 68.58 over 108 = 0.635 moles silver ⇒ 0.635 moles NO₂ from silver (3); 0.12 moles copper ⇒ 0.24 moles NO₂ from copper (3); 0.635 + 0.24 = 0.875 moles NO₂ total (1); 0.875 × 22.4** = 19.6 litres NO₂ / 0.875 × 22,400** = 19,600 cm³ NO₂ (3); with its notes on Ar of 107.9 giving 19.611 litres, and [**24 litres or 24,000 cm³ unacceptable for molar volume here.]",
+  "questionRef": "2021 HL Q10(c)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q11a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q11(a)(ii), as the State Examinations Commission set it: DRAW horizontal (slanting) test tube with delivery tube emerging // ethanol in glass (steel, cotton) wool at end // heat source shown under catalyst (Al₂O₃) in centre of test-tube // collection ethene (gas, bubbles) over water or in gas syringe shown, ANY THREE (3 × 3); a drawing of a horizontal test tube with wool at its closed end, heated in the middle by a Bunsen burner, its delivery tube running down into a trough of water and up into an inverted collecting tube; [Diagram essential; at least one chemical or item of apparatus labelled] [Unlabelled diagram (–3)]",
+  "questionRef": "2021 HL Q11(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q11a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q11(a)(iii), as the State Examinations Commission set it: DRAW, ANY ONE (6): a table giving CH₂BrCH₂Br / BrCH₂CH₂Br drawn as a full structural formula, as a cross-shaped formula and as two skeletal formulae, and CH₂BrCH₂OH drawn as a full structural formula and as a skeletal formula; [1,1-dibromoethane unacceptable and 1-bromoethanol unacceptable.]",
+  "questionRef": "2021 HL Q11(a)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2021-HL-scheme-q11c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2021 HL Q11(c)(iii), as the State Examinations Commission set it: WHAT neutron changes into a proton / ¹₀n → ¹₁p // and an electron which is emitted / + ⁰₋₁e (2 × 3); [Accept ‘proton changes into positron and neutron’ / ¹₁p → ¹₀n + ⁰₁e (6)]",
+  "questionRef": "2021 HL Q11(c)(iii)",
+  "solution": true
  }
 ]

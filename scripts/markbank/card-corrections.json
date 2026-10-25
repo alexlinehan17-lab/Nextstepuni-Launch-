@@ -218,6 +218,26 @@
    "reason": "Duplicated chem-2022-ol-q7-b-1 (both cited Q7(b), which the scheme prices with one cell, (4 × 6) + (3 × 2)).",
    "drop": true,
    "replacementId": "chem-2022-ol-q7-b-1"
+  },
+  "chem-2021-hl-q2-b-i": {
+   "reason": "Duplicated chem-2021-hl-q2-b-i-fig (both cited Q2(b)(i)).",
+   "drop": true,
+   "replacementId": "chem-2021-hl-q2-b-i-fig"
+  },
+  "chem-2021-hl-q2-d": {
+   "reason": "Duplicated chem-2021-hl-q2-d-fig (both cited Q2(d)).",
+   "drop": true,
+   "replacementId": "chem-2021-hl-q2-d-fig"
+  },
+  "chem-2021-hl-q2-e-fig": {
+   "reason": "Duplicated chem-2021-hl-q2-e (both cited Q2(e)).",
+   "drop": true,
+   "replacementId": "chem-2021-hl-q2-e"
+  },
+  "chem-2021-hl-q4-k": {
+   "reason": "Duplicated chem-2021-hl-q4-k-fig (both cited Q4(k)).",
+   "drop": true,
+   "replacementId": "chem-2021-hl-q4-k-fig"
   }
  },
  "biology": {

@@ -178,6 +178,11 @@ _load_sitting_crops()
 
 MASKS = {
     'chemistry-2026-HL-paper-q4i.png': [(0, 350, 20, 386), (0, 489, 92, 515)],
+    # 2021 HL scheme Q8(b): (i)'s drawing of propanone, on the right, prints
+    # level with the top of (ii)'s drawing on the left, so each crop whites out
+    # the other part's corner (pixel boxes at DPI, from the page's drawing boxes).
+    'chemistry-2021-HL-scheme-q8b-i.png': [(62, 93, 448, 146)],
+    'chemistry-2021-HL-scheme-q8b-ii.png': [(614, 0, 823, 50)],
 }
 
 
@@ -225,7 +230,12 @@ def render(year, lvl, source, page, rect):
         for box in MASKS.get(name(year, lvl, suffix_of[(source, page, rect)]), []):
             pix.set_rect(fitz.IRect(*box), (255,) * pix.n)
         return pix.tobytes('png')
-    return pg.get_pixmap(dpi=DPI, clip=fitz.Rect(*rect)).tobytes('png')
+    pix = pg.get_pixmap(dpi=DPI, clip=fitz.Rect(*rect))
+    for box in MASKS.get(name(year, lvl, suffix_of[(source, page, rect)]), []):
+        # A clipped pixmap keeps the page's pixel origin: boxes are crop-relative.
+        x0, y0, x1, y1 = box
+        pix.set_rect(fitz.IRect(x0 + pix.x, y0 + pix.y, x1 + pix.x, y1 + pix.y), (255,) * pix.n)
+    return pix.tobytes('png')
 
 
 def name(year, lvl, suffix):
