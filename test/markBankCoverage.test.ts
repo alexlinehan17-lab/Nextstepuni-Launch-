@@ -236,11 +236,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
     }
     if (subject === 'english' || subject === 'irish' || subject === 'art'
       || subject === 'geography' || subject === 'politics-and-society' || subject === 'accounting') {
-      // Geography's claimable rows are cut from its lines at load (allocation.ts).
+      // Geography's claimable rows are cut from its lines at load (allocation.ts); Art's from its printed table (answers.ts).
       const names = subject === 'english'
         ? ['factory.ts', 'authored.json', 'published-higher.json', 'published-ordinary.json']
         : subject === 'geography' ? ['factory.ts', 'authored.json', 'allocation.ts']
-          : ['factory.ts', 'authored.json'];
+          : subject === 'art' ? ['factory.ts', 'authored.json', 'answers.ts']
+            : ['factory.ts', 'authored.json'];
       for (const name of names) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));

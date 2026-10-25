@@ -37,8 +37,9 @@ import politics from '../components/MarkBank/cards/politics-and-society/authored
 import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-and-society/higher';
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { REVIEWED_CARDS as PE_CARDS } from '../components/MarkBank/cards/physical-education/factory';
-import art from '../components/MarkBank/cards/art/authored.json';
-import { isRubricCard, type GeographyAllocation } from '../types/markBank';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { isRubricCard, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -361,9 +362,66 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     expect(lines).toBeLessThanOrEqual(BASELINE.physicalEducationLines);
   });
 
-  it('Art: scheme tables still render their marks column as text (to convert)', () => {
-    const tables = cardsOf(art).filter(card => (card.criteria ?? []).some(criterion => criterion.rowMarks?.length)).length;
-    expect(tables).toBeLessThanOrEqual(BASELINE.artTableCards);
+  it('Art: every 2010–2022 component is rows the student places marks on, cut from the printed table', () => {
+    const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const cards = [...ART_HIGHER, ...ART_ORDINARY].filter((card): card is SecRubricCard & { rubric: ArtRubric } => card.rubric.system === 'art');
+    const criteria = cards.flatMap(card => card.rubric.criteria.map(criterion => ({ card, criterion })));
+    const legacy = criteria.filter(({ criterion }) => criterion.rowMarks?.length);
+    expect(legacy).toHaveLength(2574);
+    // 2023+ descriptor criteria keep their bands; only a printed table becomes rows.
+    for (const { card, criterion } of criteria.filter(({ criterion }) => !criterion.rowMarks?.length)) {
+      expect(criterion.allocation, card.id).toBeUndefined();
+      expect(criterion.bands?.length, card.id).toBe(3);
+    }
+    expect(legacy.filter(({ criterion }) => !criterion.allocation).map(({ card, criterion }) => `${card.id}/${criterion.id}`)).toEqual([]);
+    let rows = 0;
+    let cut = 0;
+    const kept: string[] = [];
+    for (const { card, criterion } of legacy) {
+      const allocation = criterion.allocation!;
+      const where = `${card.id}/${criterion.id}`;
+      // The rows are the printed rows at the printed marks, and add up to the component.
+      expect(allocation.rows.map(row => row.marks), where).toEqual(criterion.rowMarks);
+      expect(allocation.rows.reduce((sum, row) => sum + row.marks, 0), where).toBe(criterion.maxMarks);
+      allocation.rows.forEach((row, index) => {
+        rows += 1;
+        const note = criterion.rowNotes?.[index] ?? '';
+        const corpus = normalise(`${criterion.guidance[index]} ${note}`);
+        expect(normalise(row.text), `${where}/${row.id}: row text`).toBe(normalise(criterion.guidance[index]));
+        if (row.parts) {
+          cut += 1;
+          expect(row.parts.length, `${where}/${row.id}: a split has at least two parts`).toBeGreaterThan(1);
+          expect(row.parts.reduce((sum, part) => sum + part.marks, 0), `${where}/${row.id}: parts add up`).toBe(row.marks);
+          for (const part of row.parts) {
+            expect(part.marks, `${where}/${row.id}/${part.id}`).toBeGreaterThan(0);
+            expect(corpus.includes(normalise(part.text)), `${where}/${row.id}/${part.id}: "${part.text}" is not lifted`).toBe(true);
+          }
+        } else if (row.note) {
+          kept.push(`${where}/${row.id}`);
+        }
+        // A note is the cell's own words, one rule per sentence.
+        for (const piece of row.note?.split('. ') ?? []) expect(corpus.includes(normalise(piece)), `${where}/${row.id}: note "${piece}" is not lifted`).toBe(true);
+      });
+    }
+    expect([rows, cut]).toEqual([2616, 414]);
+    // Notes cells the parser leaves as a note under a whole row: a rule on the
+    // row ("Max 3 for partially correct name"), a cap ("3 points for 30 marks
+    // and 2 detailed points for 26 marks maximum"), a count without a noun
+    // ("3 x 5", "5/5/5"), one price for the whole row ("5 for named work"),
+    // or a cell that prices alternatives ("2 for Lunula, 3 for …, 2 for Gorget only").
+    expect(kept.sort()).toEqual([
+      'art-2014-hl-q1-task1/b/r1', 'art-2014-hl-q2-task1/a/r1', 'art-2014-hl-q4-c/c/r1', 'art-2014-ol-q10-a/a/r1', 'art-2014-ol-q11-a/a/r1',
+      'art-2014-ol-q13-a/a/r1', 'art-2014-ol-q17-a/a/r1', 'art-2014-ol-q17-b/b/r1', 'art-2014-ol-q18-a/a/r1', 'art-2014-ol-q19-a/a/r1',
+      'art-2014-ol-q21-a/a/r1', 'art-2014-ol-q4-c/c/r1', 'art-2014-ol-q9-a/a/r1', 'art-2015-hl-q16-task1/b/r1', 'art-2016-hl-q1-task2/d/r1',
+      'art-2016-hl-q16-task2/c/r1', 'art-2017-hl-q16-task2/c/r1', 'art-2019-hl-q1-task2/c/r1', 'art-2019-hl-q8-task1/b/r1', 'art-2019-ol-q16-b/b/r1',
+      'art-2019-ol-q17-a/a/r1', 'art-2019-ol-q18-a/a/r1', 'art-2020-hl-q16-task2/c/r1', 'art-2021-hl-q2-task1/a/r1', 'art-2021-hl-q2-task2/d/r1',
+      'art-2021-ol-q16-b/b/r1', 'art-2021-ol-q4-a-castletown-house/a/r1', 'art-2021-ol-q7-a-james-arthur-oconnor/a/r1',
+      'art-2022-hl-q15-c-die-brucke/c/r1', 'art-2022-hl-q15-c-die-brucke/c/r2', 'art-2022-hl-q15-c-impressionism/c/r1', 'art-2022-hl-q15-c-impressionism/c/r2',
+      'art-2022-hl-q15-c-international-gothic/c/r1', 'art-2022-hl-q15-c-international-gothic/c/r2', 'art-2022-hl-q15-c-surrealism/c/r1', 'art-2022-hl-q15-c-surrealism/c/r2',
+      'art-2022-hl-q4-task1/b/r1', 'art-2022-ol-q10-b/b/r1', 'art-2022-ol-q11-b/b/r1', 'art-2022-ol-q12-b/b/r1', 'art-2022-ol-q13-a/a/r1',
+      'art-2022-ol-q16-a/a/r1', 'art-2022-ol-q3-c/c/r1', 'art-2022-ol-q4-a/a/r1', 'art-2022-ol-q5-c/c/r1', 'art-2022-ol-q6-c/c/r1',
+      'art-2022-ol-q7-a-daniel-maclise/a/r1', 'art-2022-ol-q9-b/b/r1',
+    ]);
   });
 });
 
@@ -374,7 +432,6 @@ const BASELINE = {
   frenchReading: 1,
   irishExactCriteria: 89,
   physicalEducationLines: 15,
-  artTableCards: 1548,
 };
 
 if (process.env.CLARITY_PRINT) {
