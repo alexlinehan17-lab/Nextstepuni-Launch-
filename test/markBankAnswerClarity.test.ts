@@ -38,8 +38,10 @@ import { CARDS as POLITICS_HIGHER } from '../components/MarkBank/cards/politics-
 import { CARDS as POLITICS_ORDINARY } from '../components/MarkBank/cards/politics-and-society/ordinary';
 import { REVIEWED_CARDS as PE_CARDS } from '../components/MarkBank/cards/physical-education/factory';
 import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as HISTORY_HIGHER } from '../components/MarkBank/cards/history/higher';
+import { CARDS as HISTORY_ORDINARY } from '../components/MarkBank/cards/history/ordinary';
 import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
-import { isRubricCard, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
+import { isPointCard, isRubricCard, type ArtRubric, type GeographyAllocation, type SecRubricCard } from '../types/markBank';
 import { geographyAchievable, geographyAllocationMax } from '../components/MarkBank/cards/geography/allocation';
 
 type Guided = { rubric?: { answerGuide?: string[]; schemeGuidance?: string[]; criteria?: Array<{ guidance?: string[]; permittedMarks?: number[]; guidanceKind?: string; rowMarks?: number[] }> }; criteria?: Array<{ guidance?: string[]; guidanceKind?: string; rowMarks?: number[] }> };
@@ -423,6 +425,23 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       'art-2022-ol-q7-a-daniel-maclise/a/r1', 'art-2022-ol-q9-b/b/r1',
     ]);
   });
+  it('History: a price the scheme prints inside an answer line is a row, never a second answer behind one claim', () => {
+    const cards = [...HISTORY_HIGHER, ...HISTORY_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    // "Sods (3M) and saplings (3M)" was one six-mark row; hist_rows.py cuts it at the printed prices.
+    const inline = /\(\s*\d+\s*[Mm](?:\s*\+\s*\d+\s*[Mm])?\s*\)/g;
+    expect(rows.filter(({ row }) => row.kind === 'point' && (row.verbatim.match(inline) ?? []).length >= 2).map(({ card }) => card.id)).toEqual([]);
+    // "… 5M + 5M Max =" left on a row by the tariff reader: the printed split is the row's note now.
+    expect(rows.filter(({ row }) => /\d+\s*M\s*\+\s*\d+\s*M\s*Max\s*=\s*$/i.test(row.verbatim)).map(({ card }) => card.id)).toEqual([]);
+    expect(rows.filter(({ row }) => /\bMax = \d+M$/.test(row.contextNote ?? '')).length).toBe(7);
+    // The shapes the pass reads, pinned so a regenerated deck shows any change.
+    const fixed = cards.filter(card => card.tariffModel.kind === 'fixed');
+    expect(fixed.filter(card => card.rows.length === 2 && card.rows.every(row => row.kind === 'point' && row.marks === card.totalMarks / 2)).length).toBe(59);
+    expect(rows.filter(({ row }) => row.kind === 'anyN' && row.group).map(({ row }) => row.group!.options)).toEqual([['Liverpool', 'Manchester', 'Birmingham', 'Leeds']]);
+    expect(rows.filter(({ row }) => row.kind === 'criterion').map(({ row }) => [row.verbatim, row.marks, row.permittedMarks])).toEqual([['Clonmel prison', 6, [0, 3, 6]]]);
+    expect(rows.filter(({ row }) => !row.verbatim.trim()).map(({ card }) => card.id)).toEqual([]);
+  });
+
 });
 
 /** Measured 2026-10-23 on the decks as shipped. Only ever lower these.
