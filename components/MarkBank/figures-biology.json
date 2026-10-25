@@ -1,4 +1,87 @@
 {
+ "biology-2016-hl-q10c-chain": {
+  "src": "/exam-figures/biology/markbank/biology-2016-hl-q10c-chain.png",
+  "md5": "404cbc2c7c4621970fc69e190ff2dc8a",
+  "alt": "The food chain as the paper prints it on one line: the capital letters A, B, C and D in a row, with an arrow pointing from each letter to the next.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q10(c)(i)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   236,
+   497,
+   369,
+   523
+  ]
+ },
+ "biology-2016-hl-q3-yeast": {
+  "src": "/exam-figures/biology/markbank/biology-2016-hl-q3-yeast.png",
+  "md5": "4e513e9c79dc3d61c5031fcba7379850",
+  "alt": "Line drawing of two joined cells: a large round cell, labelled parent cell, with a small round nucleus holding coiled threads near its base, and a much smaller round cell, with a nucleus of its own, attached to the top of the large cell by a narrow neck.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q3(a)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   215,
+   58,
+   390,
+   228
+  ]
+ },
+ "biology-2016-hl-q5-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2016-hl-q5-flower.png",
+  "md5": "f3b107b727d0405297fec2dc57892666",
+  "alt": "Shaded drawing of a flask-shaped structure: a flattened top on a long stalk over a swollen base. Label A points to the flattened top and D to a small dark oval sitting on it. A pale band runs from that oval down through the stalk into the base, B pointing to it in the stalk. In the base a bracket marks out a region, labelled F, around a pale round sac with two small dots and a small ringed dot, labelled C, near its foot, curved lines around it; the pale band ends beside the ringed dot, and two lines labelled E point to two small dark dots inside the band near its end.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q5(a) — A",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   205,
+   68,
+   410,
+   275
+  ]
+ },
+ "biology-2016-hl-q8b-axes": {
+  "src": "/exam-figures/biology/markbank/biology-2016-hl-q8b-axes.png",
+  "md5": "1c2c6afc0017e53cd402f03302fd9147",
+  "alt": "A pair of empty axes: a vertical line and a horizontal line meeting at the bottom left, with no labels, scale or plotted lines.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2016 HL Q8(b)(iii)",
+  "year": 2016,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2016 Higher Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025ALP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   120,
+   385,
+   515,
+   625
+  ]
+ },
  "biology-2017-hl-q11b-graph": {
   "src": "/exam-figures/biology/markbank/biology-2017-hl-q11b-graph.png",
   "md5": "862d6394c2aabe07a9b3eaefa09aa264",

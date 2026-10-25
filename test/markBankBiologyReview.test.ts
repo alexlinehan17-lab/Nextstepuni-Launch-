@@ -1825,6 +1825,12 @@ type FirstCarded = {
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2016-hl': {
+    tasks: 163, cards: 165,
+    sources: { "paper": ['afbf44d46e589cadc5727dceba18531395aac3403b4cca700e17e823cc353e8d', 16], "scheme": ['798683962ed9508d51fd735aba732d7f85ad0336c4fc178e8961b4e5537f81b7', 20] },
+    routes: { "Q13(c)(iv)": ["carnivores", "herbivores"], "Q15(b)(v)": ["oestrogen", "progesterone"] },
+    wholeParts: {  },
+  },
   '2017-ol': {
     tasks: 170, cards: 171,
     sources: { "paper": ['f1f318b509edc95acba5fb11bb687145b4f9658cd71cd47661013b0c74d1cef3', 16], "scheme": ['c4719089bfe04eebdd2100e383820f99c74d1ea994cd88b25aa5a3d278b4c991', 12] },

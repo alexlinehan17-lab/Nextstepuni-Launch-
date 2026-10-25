@@ -215,6 +215,13 @@ WELDED_HEADS = {
     ('biology', 2017, 'ol'): ['(g) An immobilised enzyme is one that has lost its function. T F',
                               'State one reason why you used a herbaceous stem rather than a woody one. '
                               + '_' * 73],
+    # 2016 HL page 13 is one block. Q13(b)(i) ends in its bold row of parts to
+    # label, "pinna semi-circular canals stirrup ear drum cochlea Eustachian
+    # tube", with no full stop, and the page sets "(ii)" on its own line under
+    # it before "1. Briefly outline the function of the pinna." Flattened, the
+    # "(ii)" trails the last part's name with nothing to split at, so Q13(b)(ii)
+    # and its five numbered asks filed as the tail of Q13(b)(i).
+    ('biology', 2016, 'hl'): ['stirrup ear drum cochlea Eustachian tube'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
