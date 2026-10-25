@@ -84,6 +84,11 @@ def sha256(path):
 # 0x50 (the same mapping derive_glyphs.LIGATURE records for the bank).
 def _decode_symbol(ch, font):
     o = ord(ch)
+    # A character the scheme's font has no glyph for reaches the text layer as
+    # NUL and prints as an empty box: 2015 Higher scheme p18 sets "'+' and
+    # '\u25a1' (hyphae)" (rendered and looked at). It reads as the box printed.
+    if o == 0:
+        return '\u25a1'
     if 'Wingdings' in font and 'Wingdings2' not in font.replace(' ', ''):
         if 0xF081 <= o <= 0xF08A:
             return chr(0x2460 + o - 0xF081)
@@ -322,7 +327,7 @@ def M(marker, page, doc=None, br=False):
     return {'src': 'marker', 'text': marker, 'page': page, 'doc': doc, **({'br': True} if br else {})}
 
 
-def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=None):
+def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=None, welded=False):
     """The scheme's reprint of the task's question: the pairing anchor.
     `paired` is the reviewer's reason for a pairing whose reprint rewords the
     paper's ask too far for the wording check (the scheme's "Put steps in
@@ -335,10 +340,12 @@ def SQ(page, start, end=None, after=None, nth=1, paired=None, bare=False, path=N
     entry is a printed line read exactly ("11", "(c)"), and the anchor is the
     first `start` after the last of them -- for a scheme that prints no
     reprints at all (2020 Ordinary) the part's marker is found under its own
-    question and letter, not by counting."""
+    question and letter, not by counting. `welded` (with `bare`) anchors a part
+    whose marker opens its own answer's line ("(a) Protein"): the marker is the
+    anchor and the rows are read from that line on."""
     return {'page': page, 'start': start, 'end': end, 'after': after, 'nth': nth,
             **({'paired': paired} if paired else {}), **({'bare': True} if bare else {}),
-            **({'path': list(path)} if path else {})}
+            **({'path': list(path)} if path else {}), **({'welded': True} if welded else {})}
 
 
 def S(start, end=None, page=None, after=None, before=None, nth=1, skip_marks=False, piece=None, psep=None):

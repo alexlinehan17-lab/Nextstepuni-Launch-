@@ -482,6 +482,18 @@ def build(ledger, year, level):
             continue
         lifter.used['scheme'].add(sq['page'])
         lo = sq_meta['lines'][1] + 1
+        if sq.get('welded'):
+            # A bare anchor on a part marker that opens its own answer's printed
+            # line ("(a) Protein", 2015 Higher Section A, a scheme that prints no
+            # reprints): the marker is the anchor, and the rows are searched from
+            # that same line.
+            mk = re.match(r'(\((?:[a-h]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\))\s+\S', sq_text)
+            if not (sq.get('bare') and mk):
+                problems.append(f'{t["key"]}: a welded anchor is a bare part marker opening its answer\'s line; '
+                                f'got {sq_text!r}')
+                continue
+            sq_text = mk.group(1)
+            lo = sq_meta['lines'][0]
         # Wording check: most of the scheme reprint's content words are in the ask
         # (or its stem: the scheme often reprints the lead-in with the ask).
         score = B.overlap(sq_text, qtext + ' ' + stem)
