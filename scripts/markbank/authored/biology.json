@@ -98049,5 +98049,5304 @@
   "notes": "Reviewed 2026-10-24 against the paper and scheme; ledger bio_review_2017_hl.py.",
   "year": 2017,
   "level": "higher"
+ },
+ {
+  "id": "bio-2017-ol-q1-a",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "elements-in-lipids",
+  "section": "A",
+  "questionRef": "2017 OL Q1(a)",
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "questionText": "Lipids are composed of carbon, hydrogen and _______________________________________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Oxygen or O",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q1-b",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "functions-of-lipids",
+  "section": "A",
+  "questionRef": "2017 OL Q1(b)",
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "questionText": "Give one function of lipids in the human body.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Energy / insulation",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "e.g. Energy",
+      "insulation"
+     ]
+    },
+    "openList": true,
+    "contextNote": "allow cell membrane"
+   }
+  ],
+  "notes": "One point, either printed example: a menu of the two, claim one; the scheme's bracketed \"allow cell membrane\" is the row's note. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q1-c",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "water-soluble-vitamins",
+  "section": "A",
+  "questionRef": "2017 OL Q1(c)",
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "questionText": "Name one water‐soluble vitamin.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "B or C",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q1-d",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "minerals-for-plants",
+  "section": "A",
+  "questionRef": "2017 OL Q1(d)",
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "questionText": "Name one mineral needed by plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Magnesium",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q1-e",
+  "subjectId": "biology",
+  "topicId": "bio-1-2",
+  "conceptId": "amino-acids-make-protein",
+  "section": "A",
+  "questionRef": "2017 OL Q1(e)",
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "questionText": "Amino acids are the smallest unit of which biomolecule?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": 4
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q2-helix",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-helix",
+  "section": "A",
+  "questionRef": "2017 OL Q2 — Helix",
+  "questionText": "Identify the following organisms using the key given below. Write the appropriate letter from the diagram after the identified organism in each case.\nAnimal has a shell Helix __________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Helix — E",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices each organism of the key at a point (\"5(4)\"): one card per organism, anchored on its name, which the scheme prints over its letter. The drawings and the key are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q2-key"
+ },
+ {
+  "id": "bio-2017-ol-q2-musca",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-musca",
+  "section": "A",
+  "questionRef": "2017 OL Q2 — Musca",
+  "questionText": "Identify the following organisms using the key given below. Write the appropriate letter from the diagram after the identified organism in each case.\nAnimal has three pairs of legs Musca __________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Musca — B",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices each organism of the key at a point (\"5(4)\"): one card per organism, anchored on its name, which the scheme prints over its letter. The drawings and the key are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q2-key"
+ },
+ {
+  "id": "bio-2017-ol-q2-chilopod",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-chilopod",
+  "section": "A",
+  "questionRef": "2017 OL Q2 — Chilopod",
+  "questionText": "Identify the following organisms using the key given below. Write the appropriate letter from the diagram after the identified organism in each case.\nAnimal has more than three pairs of legs Chilopod __________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Chilopod — D",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices each organism of the key at a point (\"5(4)\"): one card per organism, anchored on its name, which the scheme prints over its letter. The drawings and the key are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q2-key"
+ },
+ {
+  "id": "bio-2017-ol-q2-nematode",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-nematode",
+  "section": "A",
+  "questionRef": "2017 OL Q2 — Nematode",
+  "questionText": "Identify the following organisms using the key given below. Write the appropriate letter from the diagram after the identified organism in each case.\nAnimal has long cylindrical body Nematode __________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Nematode — A",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices each organism of the key at a point (\"5(4)\"): one card per organism, anchored on its name, which the scheme prints over its letter. The drawings and the key are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q2-key"
+ },
+ {
+  "id": "bio-2017-ol-q2-planarian",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-planarian",
+  "section": "A",
+  "questionRef": "2017 OL Q2 — Planarian",
+  "questionText": "Identify the following organisms using the key given below. Write the appropriate letter from the diagram after the identified organism in each case.\nAnimal has flat body with two eye spots Planarian __________",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Planarian — C",
+    "marks": 4
+   }
+  ],
+  "notes": "The scheme prices each organism of the key at a point (\"5(4)\"): one card per organism, anchored on its name, which the scheme prints over its letter. The drawings and the key are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q2-key"
+ },
+ {
+  "id": "bio-2017-ol-q3-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "restriction-enzymes",
+  "section": "A",
+  "questionRef": "2017 OL Q3(a)",
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "Used to cut the DNA",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Enzyme",
+    "marks": 4
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q3-table"
+ },
+ {
+  "id": "bio-2017-ol-q3-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "isolation",
+  "section": "A",
+  "questionRef": "2017 OL Q3(b)",
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "Removing the required DNA from the cell",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Isolation",
+    "marks": 4
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q3-table"
+ },
+ {
+  "id": "bio-2017-ol-q3-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "plasmid",
+  "section": "A",
+  "questionRef": "2017 OL Q3(c)",
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "A ring of DNA found in bacterial cells",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plasmid",
+    "marks": 4
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q3-table"
+ },
+ {
+  "id": "bio-2017-ol-q3-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "products-of-genetic-engineering",
+  "section": "A",
+  "questionRef": "2017 OL Q3(d)",
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "A substance produced by bacteria using genetic engineering",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Insulin",
+    "marks": 4
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q3-table"
+ },
+ {
+  "id": "bio-2017-ol-q3-e",
+  "subjectId": "biology",
+  "topicId": "bio-3-3",
+  "conceptId": "genetic-engineering-in-plants",
+  "section": "A",
+  "questionRef": "2017 OL Q3(e)",
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example.",
+  "questionText": "An application of genetic engineering in plants",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Weed-killer resistance",
+    "marks": 4
+   }
+  ],
+  "notes": "The list of terms (its first struck through as the worked example) and the table are shown as the question's own print. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "questionFigureKey": "biology-2017-ol-q3-table"
+ },
+ {
+  "id": "bio-2017-ol-q4-a-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "liver",
+  "section": "A",
+  "questionRef": "2017 OL Q4(a) — A",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Liver",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liver",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q4-a-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stomach",
+  "section": "A",
+  "questionRef": "2017 OL Q4(a) — B",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Stomach",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q4-a-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "pancreas",
+  "section": "A",
+  "questionRef": "2017 OL Q4(a) — C",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Pancreas",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q4-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "bile",
+  "section": "A",
+  "questionRef": "2017 OL Q4(b)",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Name the liquid stored in the gallbladder.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Bile [allow gall]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive"
+ },
+ {
+  "id": "bio-2017-ol-q4-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "functions-of-the-liver",
+  "section": "A",
+  "questionRef": "2017 OL Q4(c)",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Give one function of part A.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Stores glycogen / breaks down alcohol",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Stores glycogen",
+      "breaks down alcohol"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One point, either printed example: a menu of the two, claim one. The scheme prints this part's marker \"(c )\", with a space, which the anchor check does not read as a marker; its answer shares its line with what heads it, so it is read from the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q4-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "peristalsis",
+  "section": "A",
+  "questionRef": "2017 OL Q4(d)",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "What term is given to the waves of muscular contraction which push the food through the alimentary canal?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Peristalsis",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive"
+ },
+ {
+  "id": "bio-2017-ol-q4-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stomach-acid",
+  "section": "A",
+  "questionRef": "2017 OL Q4(e)",
+  "stem": "The diagram shows part of the human digestive system.",
+  "questionText": "Suggest a substance, produced in part B, that is responsible for ‘heartburn’.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Acid",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q4-digestive",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q5-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzymes-are-proteins",
+  "section": "A",
+  "questionRef": "2017 OL Q5(a)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Enzymes are made from carbohydrates.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "substrate",
+  "section": "A",
+  "questionRef": "2017 OL Q5(b)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "The substance with which an enzyme reacts is called its substrate.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-specificity",
+  "section": "A",
+  "questionRef": "2017 OL Q5(c)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Enzyme reactions are specific.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "amylase",
+  "section": "A",
+  "questionRef": "2017 OL Q5(d)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Amylases are enzymes that digest lipids in the body.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "ph-and-enzyme-activity",
+  "section": "A",
+  "questionRef": "2017 OL Q5(e)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Changing pH can affect the rate of activity of an enzyme.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-f",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "enzyme-shape",
+  "section": "A",
+  "questionRef": "2017 OL Q5(f)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "Enzyme molecules have a folded shape.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "TRUE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q5-g",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "immobilised-enzymes",
+  "section": "A",
+  "questionRef": "2017 OL Q5(g)",
+  "stem": "Indicate whether the following statements are true (T) or false (F) by drawing a circle around T or F in each case.",
+  "questionText": "An immobilised enzyme is one that has lost its function.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "FALSE",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q6-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-kingdom",
+  "section": "A",
+  "questionRef": "2017 OL Q6(a)",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "To which kingdom does Rhizopus belong?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Fungi",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus"
+ },
+ {
+  "id": "bio-2017-ol-q6-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "other-fungi",
+  "section": "A",
+  "questionRef": "2017 OL Q6(b)",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "Name one other member of this kingdom.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Yeast",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus"
+ },
+ {
+  "id": "bio-2017-ol-q6-c-a",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "hypha",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c) — A",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "Name the parts labelled A, B, C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "A = Hypha or stolon",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints this part's marker \"(c )\", with a space, which the anchor check does not read as a marker; its answer shares its line with what heads it, so it is read from the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hypha or stolon",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Rhizoid",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sporangium",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q6-c-b",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizoid",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c) — B",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "Name the parts labelled A, B, C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Rhizoid",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints this part's marker \"(c )\", with a space, which the anchor check does not read as a marker; its answer shares its line with what heads it, so it is read from the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hypha or stolon",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Rhizoid",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Sporangium",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q6-c-c",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "sporangium",
+  "section": "A",
+  "questionRef": "2017 OL Q6(c) — C",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "Name the parts labelled A, B, C in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Sporangium",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints this part's marker \"(c )\", with a space, which the anchor check does not read as a marker; its answer shares its line with what heads it, so it is read from the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hypha or stolon",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Rhizoid",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Sporangium",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q6-d",
+  "subjectId": "biology",
+  "topicId": "bio-3-2",
+  "conceptId": "economic-importance-of-fungi",
+  "section": "A",
+  "questionRef": "2017 OL Q6(d)",
+  "stem": "The diagram shows part of the organism Rhizopus.",
+  "questionText": "Give two examples of the economic importance of such organisms.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Brewing / baking / disease",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Brewing",
+      "baking",
+      "disease"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Two points (the scheme prints \"(2 pt)\") from its examples: one menu, claim two. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q6-rhizopus"
+ },
+ {
+  "id": "bio-2017-ol-q7-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "functions-of-the-stem",
+  "section": "B",
+  "questionRef": "2017 OL Q7(a)",
+  "questionText": "Give two functions of the stem in plants.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Transport / support",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "e.g. Transport",
+      "support"
+     ]
+    },
+    "openList": true,
+    "contextNote": "allow photosynthesis, food storage"
+   }
+  ],
+  "notes": "\"5 + 1\" over the two functions, carded at its first rate. The scheme sets both answer lines' markers \"(i) / (ii)\" before its examples and brackets two more it allows; the examples are the menu, the bracket the row's note. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "plant-for-a-stem-section",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(i)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "Name the plant that you used.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Begonia",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "why-a-herbaceous-stem",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(ii)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "State one reason why you used a herbaceous stem rather than a woody one.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Easier to cut",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "cutting-a-stem-section",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(iii)1",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "1. What did you use to cut the section of stem?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Backed blade or scalpel",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "a-thin-section",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(iii)2",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "2. What kind of transverse section did you cut?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Thin",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The paper runs this ask straight into its answer line; the ask is cut at the line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "transferring-the-section",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(iv)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "How did you transfer the section to the microscope slide?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g. Paintbrush",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "dicot-stem-section",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(v)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "Which of the following diagrams, A or B, best represents what was seen on your slide?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q7-stems"
+ },
+ {
+  "id": "bio-2017-ol-q7-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "stem-tissues",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)(vi)",
+  "stem": "Answer the following questions in relation to how you prepared and examined with a microscope a transverse section (T.S.) of a dicotyledonous stem.",
+  "questionText": "On your chosen diagram label the following tissues: 1. vascular tissue, 2. dermal tissue.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Vascular",
+    "marks": null,
+    "contextNote": "on either diagram."
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "dermal",
+    "marks": null,
+    "contextNote": "on either diagram."
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. The scheme prints \"Vascular and dermal on either diagram.\" (2 pts): cut at its own \"and\", a row each, its \"on either diagram.\" each row's note. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q7-stems"
+ },
+ {
+  "id": "bio-2017-ol-q8-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "anaerobic-respiration",
+  "section": "B",
+  "questionRef": "2017 OL Q8(a)(i)",
+  "questionText": "What gas must be absent for anaerobic respiration to occur?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Oxygen",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q8-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "energy-from-anaerobic-respiration",
+  "section": "B",
+  "questionRef": "2017 OL Q8(a)(ii)",
+  "questionText": "Does anaerobic respiration release more or less energy than aerobic respiration?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Less",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-i-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "flask-with-yeast",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(i)1",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "1. To which flask was the yeast added?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints item 2's number at the end of item 1's line (\"A 2. (1 pt)\"). Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-i-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "evidence-of-fermentation",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(i)2",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast. 1. To which flask was the yeast added?",
+  "questionText": "2. Give a reason for your choice.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Bubbles (or CO2)",
+    "marks": null
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme sets the reprint \"Reason for choice\" before the answer with no colon; the answer is the line cut after it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "control-flask",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(ii)",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "What is the purpose of the other flask?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Control",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-solution",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(iii)",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "Name the two substances in the original solution in the flasks.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Glucose or sugar",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Water",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "water-bath",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(iv)",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "What is the purpose of the water bath?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To keep temperature constant",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-lock",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(v)",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "What is the purpose of a fermentation lock?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To keep oxygen out or to avoid contamination",
+    "marks": null
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q8-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "test-for-alcohol",
+  "section": "B",
+  "questionRef": "2017 OL Q8(b)(vi)",
+  "stem": "Answer the following questions in relation to the production of alcohol by yeast.",
+  "questionText": "Say what test you performed to show the presence of alcohol and say what colour indicated a positive result.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(4) + 6(2)"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Alcohol test — Iodoform [allow dichromate]",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Positive colour — Yellow [allow green if dichromate used]",
+    "marks": null
+   }
+  ],
+  "notes": "The test and its colour, a point each: a row each, labelled with the scheme's own reprints. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q8-flasks"
+ },
+ {
+  "id": "bio-2017-ol-q9-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis",
+  "section": "B",
+  "questionRef": "2017 OL Q9(a)",
+  "questionText": "Complete the following sentence.\nOsmosis is the movement of water molecules through a selectively‐permeable membrane, from a region of (i) ______________ concentration of water molecules to a region of (ii) ______________ concentration of water molecules.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "From — High(er) (conc. of water molecules)",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "To — Low(er) (conc. of water molecules)",
+    "marks": null
+   }
+  ],
+  "notes": "\"5 + 1\" over the sentence's two blanks, carded at its first rate: a row each, labelled with the scheme's own \"From:\" and \"To:\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q9-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis-apparatus",
+  "section": "B",
+  "questionRef": "2017 OL Q9(b)(i)",
+  "stem": "Answer the following in relation to an activity you carried out to demonstrate osmosis.",
+  "questionText": "In the space below, draw a labelled diagram of the apparatus you used in your demonstration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Diagram of osmosis set-up — Two solutions and a membrane",
+    "marks": 6,
+    "contextNote": "The scheme marks the diagram 6,3,0"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "e.g. Water / salt or sugar soln. / Visking tubing or potato",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "e.g. Water",
+      "salt or sugar soln.",
+      "Visking tubing or potato"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The diagram (\"6,3,0\") and its labels (\"3(2)\") are priced on their own, as the scheme's \"6 + 3(2) + 4(3)\" sets out for (b). Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q9-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis-control",
+  "section": "B",
+  "questionRef": "2017 OL Q9(b)(ii)",
+  "stem": "Answer the following in relation to an activity you carried out to demonstrate osmosis.",
+  "questionText": "Suggest a control that you might use in this activity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. Only water in tubing or boiled potato",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q9-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "osmosis-result",
+  "section": "B",
+  "questionRef": "2017 OL Q9(b)(iii)",
+  "stem": "Answer the following in relation to an activity you carried out to demonstrate osmosis.",
+  "questionText": "State the result(s) of the demonstration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. Tubing heavier or tubing lighter or tubing swollen or more liquid in scooped out potato",
+    "marks": 3
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Its answer shares the reprint's line, so it is read from the line after the page's \"Section B\" footer, the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q9-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "explaining-osmosis",
+  "section": "B",
+  "questionRef": "2017 OL Q9(b)(iv)",
+  "stem": "Answer the following in relation to an activity you carried out to demonstrate osmosis.",
+  "questionText": "Briefly explain the result(s).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Water moved from higher conc. of water molecules or to lower conc. of water molecules",
+    "marks": 3
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q9-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "salt-as-a-preservative",
+  "section": "B",
+  "questionRef": "2017 OL Q9(b)(v)",
+  "stem": "Answer the following in relation to an activity you carried out to demonstrate osmosis.",
+  "questionText": "Suggest how storing food in salty water prevents the growth of bacteria or fungi.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Microorganisms (or named) dehydrated",
+    "marks": 3
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "phenotype",
+  "section": "C",
+  "questionRef": "2017 OL Q10(a)(i)",
+  "questionText": "Explain the term phenotype.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Physical) expression of the genotype [allow (physical) appearance]",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "monohybrid-cross",
+  "section": "C",
+  "questionRef": "2017 OL Q10(a)(ii)",
+  "questionText": "How many characteristics are involved in a monohybrid cross?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "One (characteristic)",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-4",
+  "conceptId": "heterozygous",
+  "section": "C",
+  "questionRef": "2017 OL Q10(a)(iii)",
+  "questionText": "Are heterozygous alleles the same as each other or different?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Alleles) different",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "interphase",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(i)",
+  "questionText": "Cell division is one stage of the cell cycle. Name the other stage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Interphase",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "types-of-cell-division",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(ii)",
+  "questionText": "There are two types of cell division. Name both.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mitosis",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Meiosis",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "chromosome-composition",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(iii)",
+  "stem": "The diagram shows a cell undergoing cell division.",
+  "questionText": "Structure A is a chromosome. From which two substances are chromosomes made?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "DNA",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Protein",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q10-division"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "spindle-fibres",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(iv)",
+  "stem": "The diagram shows a cell undergoing cell division.",
+  "questionText": "What is the function of structure B in the above diagram?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To contract or to separate chromosomes",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q10-division"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "chromosome-number-after-mitosis",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(v)",
+  "stem": "The diagram shows a cell undergoing cell division.",
+  "questionText": "How many chromosomes will be in each new cell formed from the above division?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Four",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q10-division"
+ },
+ {
+  "id": "bio-2017-ol-q10-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "causes-of-cancer",
+  "section": "C",
+  "questionRef": "2017 OL Q10(b)(vi)",
+  "questionText": "Cancer occurs when there is uncontrolled cell division in one or more tissues. Give two possible causes of cancer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Radiation / smoking / viruses / genetics",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Radiation",
+      "smoking",
+      "viruses",
+      "genetics"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "mutation",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(i)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell.",
+  "questionText": "What is a mutation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Change in the genetic material (or named) (of a cell)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "disease-caused-by-mutation",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(ii)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell.",
+  "questionText": "Give an example of a disease caused by mutation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "e.g.Huntington's disease",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "symptoms-of-huntingtons",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(iii)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell. (ii) Give an example of a disease caused by mutation.",
+  "questionText": "Give two symptoms of the disease.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Restlessness / difficulty walking / difficulty thinking / difficulty remembering",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Restlessness",
+      "difficulty walking",
+      "difficulty thinking",
+      "difficulty remembering"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "mutagen",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(iv)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell.",
+  "questionText": "What is a mutagen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Causes mutations",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "examples-of-mutagens",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(v)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell.",
+  "questionText": "Give two examples of mutagens.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Gamma rays / asbestos",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Gamma rays",
+      "asbestos"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q10-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "haploid-gametes",
+  "section": "C",
+  "questionRef": "2017 OL Q10(c)(vi)",
+  "stem": "Mutations are changes in the genetic material of a cell. They can affect chromosomes or genes. A mutagen is something that causes a mutation. Examples of mutagens include gamma rays and asbestos. An example of a disease that results from a gene mutation is Huntington’s disease. Symptoms of this disease include restlessness and difficulty in walking, thinking and remembering. Down syndrome is a condition that is caused by a change in chromosome number. People who have Down syndrome possess three copies of chromosome 21 in every body cell.",
+  "questionText": "How many copies of a chromosome are usually present in a gamete?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "One",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "producers",
+  "section": "C",
+  "questionRef": "2017 OL Q11(a)(i)",
+  "questionText": "Why are plants known as producers?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Make their own food",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "energy-source",
+  "section": "C",
+  "questionRef": "2017 OL Q11(a)(ii)",
+  "questionText": "What is the main source of energy for living things?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sun",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "food-web",
+  "section": "C",
+  "questionRef": "2017 OL Q11(a)(iii)",
+  "questionText": "What term is given to a diagram showing a number of interlinked food chains?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Food web",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "giant-hogweed",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(i)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "What plant is spreading along the river banks?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Giant) hogweed",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "hogweed-blisters",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(ii)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "How does this plant damage our skin?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Blisters",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prints this part's tariff \"(1 tp)\", a point. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-5",
+  "conceptId": "species",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(iii)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "What is meant by the term species?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Organisms that can interbreed",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "to produce fertile offspring",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "zebra-mussels",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(iv)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "Where did zebra mussels come from?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "The Black Sea",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "new-zealand-flatworms",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(v)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "What species is attacking the earthworms?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "New Zealand flatworms",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "earthworms-in-soil",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(vi)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "Mention two ways in which earthworms are important in the soil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Drainage / aeration",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Drainage",
+      "aeration"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "non-native-species",
+  "section": "C",
+  "questionRef": "2017 OL Q11(b)(vii)",
+  "stem": "Over the years many new plant and animal species have spread to Ireland. The giant hogweed is now found growing along the banks of many Irish rivers. Its leaves are toxic and can damage the skin, causing blisters. Zebra mussels, possibly from the Black Sea, have colonised some of our waterways, and are replacing our native mussels in many places. New Zealand flatworms are attacking and killing our native earthworms, which play an important role in soil drainage and aeration. But not all non‐native species are harmful. Our sheep, pigs and potatoes are examples of species not native to Ireland that have proved quite beneficial to us.",
+  "questionText": "Name one resident animal that is not native to Ireland.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Sheep / pigs",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Sheep",
+      "pigs"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One point, any printed example: a menu, claim one. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "ecosystem-studied",
+  "section": "C",
+  "questionRef": "2017 OL Q11(c)(i)",
+  "stem": "Answer the following questions in relation to the ecosystem you have studied.",
+  "questionText": "Name the ecosystem.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Name of ecosystem studied — Name",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "organisms-in-the-ecosystem",
+  "section": "C",
+  "questionRef": "2017 OL Q11(c)(ii)",
+  "stem": "Answer the following questions in relation to the ecosystem you have studied.",
+  "questionText": "Name one plant and one animal from that ecosystem.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "One plant and one animal — Must match (c)(i)",
+    "marks": 6,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "The scheme prices the plant and the animal at two points (2 pts) on one printed line, \"Must match (c)(i)\": one criterion row worth both. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-survey",
+  "section": "C",
+  "questionRef": "2017 OL Q11(c)(iii)",
+  "stem": "Answer the following questions in relation to the ecosystem you have studied.",
+  "questionText": "What is a quantitative survey?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Count or estimate number of organisms",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-c-iv-plant",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-survey-of-a-plant",
+  "section": "C",
+  "questionRef": "2017 OL Q11(c)(iv) — plant",
+  "stem": "Answer the following questions in relation to the ecosystem you have studied. (ii) Name one plant and one animal from that ecosystem.",
+  "questionText": "Describe how you carried out a quantitative survey to estimate the population of either the plant or the animal referred to in part (ii) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Quadrat / random / how random / count plants (or estimate cover) / record / repeat or scale up",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Quadrat",
+      "random",
+      "how random",
+      "count plants (or estimate cover)",
+      "record",
+      "repeat or scale up"
+     ]
+    }
+   }
+  ],
+  "notes": "The plant or the animal: the scheme prints a separate list for each, joined by \"OR\", each worth \"(4 pts)\", so each is a route card, any four of its points. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q11-c-iv-animal",
+  "subjectId": "biology",
+  "topicId": "bio-3-1",
+  "conceptId": "quantitative-survey-of-an-animal",
+  "section": "C",
+  "questionRef": "2017 OL Q11(c)(iv) — animal",
+  "stem": "Answer the following questions in relation to the ecosystem you have studied. (ii) Name one plant and one animal from that ecosystem.",
+  "questionText": "Describe how you carried out a quantitative survey to estimate the population of either the plant or the animal referred to in part (ii) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Capture / mark or how mark / count / release / recapture / count marked / calculation",
+    "marks": null,
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Capture",
+      "mark or how mark",
+      "count",
+      "release",
+      "recapture",
+      "count marked",
+      "calculation"
+     ]
+    }
+   }
+  ],
+  "notes": "The plant or the animal: the scheme prints a separate list for each, joined by \"OR\", each worth \"(4 pts)\", so each is a route card, any four of its points. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "types-of-reproduction",
+  "section": "C",
+  "questionRef": "2017 OL Q12(a)(i)",
+  "questionText": "Name the two main types of reproduction.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Asexual",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "sexual",
+    "marks": null
+   }
+  ],
+  "notes": "Two points on the ladder (\"7 + 2(1)\"), printed \"Asexual and sexual\": a row each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "human-reproduction",
+  "section": "C",
+  "questionRef": "2017 OL Q12(a)(ii)",
+  "questionText": "Which type of reproduction occurs in humans?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Sexual",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-b-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "vagina",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(i) — A",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Name the parts labelled A, B, C, D, E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Vagina",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "uterus",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(i) — B",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Name the parts labelled A, B, C, D, E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Uterus (womb)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "ovary",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(i) — C",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Name the parts labelled A, B, C, D, E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Ovary",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-i-d",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "oviduct",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(i) — D",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Name the parts labelled A, B, C, D, E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "D = Oviduct (Fallopian tube)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-i-e",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "endometrium",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(i) — E",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Name the parts labelled A, B, C, D, E.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "E = Endometrium (womb lining)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "functions-of-the-ovary",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(ii)",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "State one function of the part labelled C in the diagram.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "To produce eggs or to produce hormones (or named hormone)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vagina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Uterus (womb)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Ovary",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "D",
+    "meaning": "Oviduct (Fallopian tube)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "E",
+    "meaning": "Endometrium (womb lining)",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q12-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "site-of-fertilisation",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(iii)",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "In which labelled part does fertilisation usually occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "D or oviduct",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female"
+ },
+ {
+  "id": "bio-2017-ol-q12-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "contraception",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(iv)",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "What is meant by the term contraception?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Prevention of fertilisation or prevention of pregnancy",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female"
+ },
+ {
+  "id": "bio-2017-ol-q12-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "methods-of-contraception",
+  "section": "C",
+  "questionRef": "2017 OL Q12(b)(v)",
+  "stem": "The diagram shows the human female reproductive system.",
+  "questionText": "Give one method of contraception.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. (The) Pill or condom",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q12-female"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "length-of-pregnancy",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(i)",
+  "questionText": "How long does an average human pregnancy last?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Nine months or 38-40 weeks",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "stages-of-birth",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(ii)",
+  "questionText": "Birth takes place in three stages. Describe what happens at each stage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Stage1: Contractions begin or waters break or cervix dilates",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Stage 2: Baby born through vagina",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "Stage 3: Placenta out through vagina",
+    "marks": 3
+   }
+  ],
+  "notes": "One point for each stage, each printed on its own line under its stage: a row each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-iii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "progesterone-at-birth",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(iii)1",
+  "stem": "The hormones oxytocin and progesterone play a role in birth.",
+  "questionText": "1. What happens to the level of progesterone at birth?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Falls",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-iii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "oxytocin",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(iii)2",
+  "stem": "The hormones oxytocin and progesterone play a role in birth.",
+  "questionText": "2. What effect has oxytocin on the muscles of the wall of the womb?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "(Muscles) contract",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "prolactin",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(iv)",
+  "questionText": "What hormone controls the production of milk in humans?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Prolactin",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q12-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-5",
+  "conceptId": "colostrum",
+  "section": "C",
+  "questionRef": "2017 OL Q12(c)(v)",
+  "questionText": "Suggest one reason why colostrum is important for new‐born babies.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Rich in proteins (or fat) or rich in antibodies or rich in minerals",
+    "marks": 3
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q13-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "hormones",
+  "section": "C",
+  "questionRef": "2017 OL Q13(a)(i)",
+  "stem": "The nervous system and the endocrine system both play a role in human responses.",
+  "questionText": "Name the chemicals that act as messengers in the endocrine system.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Hormones",
+    "marks": null
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q13-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "central-nervous-system",
+  "section": "C",
+  "questionRef": "2017 OL Q13(a)(ii)",
+  "stem": "The nervous system and the endocrine system both play a role in human responses.",
+  "questionText": "The central nervous system is made up of two parts. Name both.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "7 + 2(1)"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Brain",
+    "marks": null
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "spinal cord",
+    "marks": null
+   }
+  ],
+  "notes": "Two points on the ladder (\"7 + 2(1)\"), printed \"Brain and spinal cord\": a row each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sensory-neuron",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(i) — A",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Name the neurons labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Sensory",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sensory",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Inter (or relay)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Motor",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-b-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "interneuron",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(i) — B",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Name the neurons labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Inter (or relay)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sensory",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Inter (or relay)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Motor",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-b-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "motor-neuron",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(i) — C",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Name the neurons labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Motor",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sensory",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Inter (or relay)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Motor",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "direction-of-an-impulse",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(ii)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Is the impulse transmitted from A to B to C OR from C to B to A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A to B to C",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "reflex-actions",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(iii)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Give one example of a reflex action in humans.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Blinking / knee jerk",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Blinking",
+      "knee jerk"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One point, either printed example: a menu of the two, claim one. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "why-reflexes-matter",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(iv)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Why are reflex actions important to humans?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protection",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "synapses",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(v)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "What name is given to the gaps between neurons?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Synapses",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "neurotransmitters",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(vi)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "Neurotransmitters are released into the gaps between the neurons. Why does this occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To carry impulse (to next neuron)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "fate-of-neurotransmitters",
+  "section": "C",
+  "questionRef": "2017 OL Q13(b)(vii)",
+  "stem": "The diagram shows the nerve cells (neurons) in a reflex arc.",
+  "questionText": "What happens to neurotransmitters once they have carried out their function?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Broken down or recycled",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-reflex"
+ },
+ {
+  "id": "bio-2017-ol-q13-c-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cerebrum",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(i) — A",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Cerebrum",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints its marker \"(c )\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla (oblongata)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-c-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "medulla",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(i) — B",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Medulla (oblongata)",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints its marker \"(c )\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla (oblongata)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-c-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "cerebellum",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(i) — C",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Cerebellum",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. The scheme prints its marker \"(c )\". Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla (oblongata)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-the-medulla",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(ii)",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "Give one function of the part labelled B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Controls breathing / controls swallowing / controls heart beat / controls involuntary muscles",
+    "marks": null,
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "e.g. Controls breathing",
+      "controls swallowing",
+      "controls heart beat",
+      "controls involuntary muscles"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "One point, any printed example: a menu, claim one. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla (oblongata)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "functions-of-the-cerebellum",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(iii)",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "Give one function of the part labelled C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "(Muscle) co-ordination or balance",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cerebrum",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Medulla (oblongata)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Cerebellum",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q13-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "protecting-the-brain",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(iv)",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "What are the two main structures that protect the brain?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Skull",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "meninges",
+    "marks": 3,
+    "contextNote": "allow membranes"
+   }
+  ],
+  "notes": "The scheme prices this part at two points: each printed point its own row. The scheme's bracketed \"allow membranes\" is the second row's note. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain"
+ },
+ {
+  "id": "bio-2017-ol-q13-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "homeostasis",
+  "section": "C",
+  "questionRef": "2017 OL Q13(c)(v)",
+  "stem": "The diagram shows the structure of the human brain.",
+  "questionText": "The hypothalamus in the brain plays a role in homeostasis. What is meant by the term homeostasis?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Maintaining a constant internal environment (in the body)",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q13-brain"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "metabolism",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(i)",
+  "questionText": "What is meant by the term metabolism?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "All the chemical reactions in a body or in a cell",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "photosynthesis-is-anabolic",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(ii)1",
+  "stem": "Catabolism and anabolism are the two main types of metabolism. State whether each of the following processes is an example of catabolism or anabolism:",
+  "questionText": "1. Photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Photosynthesis — Anabolism",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(2 pts)\" over the two numbered processes. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "respiration-is-catabolic",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(ii)2",
+  "stem": "Catabolism and anabolism are the two main types of metabolism. State whether each of the following processes is an example of catabolism or anabolism:",
+  "questionText": "2. Respiration.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Respiration — Catabolism",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(2 pts)\" over the two numbered processes. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-1",
+  "conceptId": "why-living-things-need-energy",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(iii)",
+  "questionText": "Give two reasons why living things need energy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Movement / heat / growth",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Movement",
+      "heat",
+      "growth"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "site-of-glycolysis",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(iv)",
+  "questionText": "In stage 1 of respiration glucose is partly broken down. Where in the cell does this occur?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Cytoplasm",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "mitochondrion",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(v)",
+  "questionText": "Name the cell structure shown below in which stage 2 of respiration takes place.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mitochondrion",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-mitochondrion"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "anaerobic-respiration-in-muscle",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(vi)",
+  "questionText": "Which type of respiration results in the production of acid in our muscles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Anaerobic",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "lactic-acid",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(vii)",
+  "stem": "(vi) Which type of respiration results in the production of acid in our muscles?",
+  "questionText": "What is the name of the acid produced in the muscles?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Lactic",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-a-viii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "fate-of-lactic-acid",
+  "section": "C",
+  "questionRef": "2017 OL Q14(a)(viii)",
+  "stem": "(vii) What is the name of the acid produced in the muscles?",
+  "questionText": "Suggest what might happen to this acid in the muscles afterwards.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Broken down",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-b-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chlorophyll",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(i)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "Name the green pigment present in leaves that is essential for photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Chlorophyll",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf"
+ },
+ {
+  "id": "bio-2017-ol-q14-b-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "chloroplasts",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(ii)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "Name the cell structures, present in large numbers in the cells labelled A that are needed for photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Chloroplasts",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Stoma",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Guard cells",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q14-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "stomata",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(iii)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "Name the opening labelled B that is used for gas exchange.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Stoma",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Stoma",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Guard cells",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q14-b-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "guard-cells",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(iv)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "Name the cells labelled C that control the opening of B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Guard cells",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Stoma",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Guard cells",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q14-b-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "carbon-dioxide-for-photosynthesis",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(v)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "Name the gas in the air that is needed for photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Carbon dioxide",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf"
+ },
+ {
+  "id": "bio-2017-ol-q14-b-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "splitting-water",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(vi)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "In photosynthesis, water is split into three parts. Name these three parts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Protons (H+)",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "electrons",
+    "marks": 3
+   },
+   {
+    "id": "r3",
+    "kind": "point",
+    "verbatim": "oxygen",
+    "marks": 3
+   }
+  ],
+  "notes": "Three points, all three asked: a row each, cut at the scheme's own solidus. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf"
+ },
+ {
+  "id": "bio-2017-ol-q14-b-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-2",
+  "conceptId": "improving-photosynthesis",
+  "section": "C",
+  "questionRef": "2017 OL Q14(b)(vii)",
+  "stem": "The diagram shows a section through a leaf.",
+  "questionText": "From your knowledge of photosynthesis, suggest two ways of improving the rate of photosynthesis of plants in a greenhouse.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "Brighter light / more carbon dioxide / increased temperature",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Brighter light",
+      "more carbon dioxide",
+      "increased temperature"
+     ]
+    }
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q14-leaf"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "organ",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(i)",
+  "questionText": "What is an organ?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Group of tissues working together",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "examples-of-organs",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(ii)",
+  "questionText": "Name one plant organ and one animal organ.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plant organ — e.g. Leaf",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Animal organ — e.g. Heart",
+    "marks": 3
+   }
+  ],
+  "notes": "One point for each organ, each printed under its own heading: a row each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "tissue",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(iii)",
+  "questionText": "What is a tissue?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Group of similar cells working together",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "examples-of-tissues",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(iv)",
+  "questionText": "Name one plant tissue and one animal tissue.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Plant tissue — e.g. Xylem",
+    "marks": 3
+   },
+   {
+    "id": "r2",
+    "kind": "point",
+    "verbatim": "Animal tissue — e.g. Blood",
+    "marks": 3
+   }
+  ],
+  "notes": "One point for each tissue, each printed under its own heading: a row each. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-v-1",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "gas-for-tissue-culture",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(v)1",
+  "stem": "Tissue culture can be used to grow new tissues in the laboratory.",
+  "questionText": "1. What gas would be needed for the growth of animal tissue in the laboratory?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Oxygen",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\" over the four numbered asks. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after (c)(iv), the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-v-2",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "gas-from-tissue-culture",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(v)2",
+  "stem": "Tissue culture can be used to grow new tissues in the laboratory.",
+  "questionText": "2. What gas would be produced by animal tissue in the laboratory?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Carbon dioxide",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\" over the four numbered asks. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after (c)(iv), the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-v-3",
+  "subjectId": "biology",
+  "topicId": "bio-1-3",
+  "conceptId": "sterile-tissue-culture",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(v)3",
+  "stem": "Tissue culture can be used to grow new tissues in the laboratory.",
+  "questionText": "3. Why are sterile conditions needed to grow tissue in the laboratory?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To prevent growth of microorganisms",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\" over the four numbered asks. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after (c)(iv), the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q14-c-v-4",
+  "subjectId": "biology",
+  "topicId": "bio-2-3",
+  "conceptId": "mitosis-in-tissue-culture",
+  "section": "C",
+  "questionRef": "2017 OL Q14(c)(v)4",
+  "stem": "Tissue culture can be used to grow new tissues in the laboratory.",
+  "questionText": "4. Which type of cell division is involved in tissue culture?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Mitosis",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(4 pts)\" over the four numbered asks. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after (c)(iv), the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-a-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "optic-nerve",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(i) — A",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Optic nerve",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-a-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "retina",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(i) — B",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Retina",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-a-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "lens",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(i) — C",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Name the parts labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Lens",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-a-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "iris",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(ii)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "What is the function of the iris in the eye?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To control the amount of light entering the eye",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye"
+ },
+ {
+  "id": "bio-2017-ol-q15-a-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "rods-and-cones",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(iii)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "In what labelled part would you find the rods and cones?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "B or retina",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye"
+ },
+ {
+  "id": "bio-2017-ol-q15-a-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "rods",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(iv)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Give the precise function of the rods in the eye.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Monochrome vision or work in dim light",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye"
+ },
+ {
+  "id": "bio-2017-ol-q15-a-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "optic-nerve-to-brain",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(v)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "To which organ does part A connect the eye?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Brain",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-a-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "ear-receptors",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(vi)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Name a part of the ear that has a similar function to part B of the eye.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Cochlea or semicircular canals",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Retina",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Lens",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-a-vii",
+  "subjectId": "biology",
+  "topicId": "bio-2-4",
+  "conceptId": "sense-organs",
+  "section": "C",
+  "questionRef": "2017 OL Q15(a)(vii)",
+  "stem": "The human eye is an example of a sense organ.",
+  "questionText": "Name two other sense organs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Tongue / nose / skin",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Tongue",
+      "nose",
+      "skin"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-eye"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-i-a",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "artery",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(i) — A",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body.",
+  "questionText": "Name the blood vessels labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "A = Artery",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Artery",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Capillary",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-b-i-b",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "vein",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(i) — B",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body.",
+  "questionText": "Name the blood vessels labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "B = Vein",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Artery",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Vein",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Capillary",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-b-i-c",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "capillary",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(i) — C",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body.",
+  "questionText": "Name the blood vessels labelled A, B, C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "C = Capillary",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Artery",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Vein",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Capillary",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2017-ol-q15-b-ii-1",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "veins-carry-blood-to-the-heart",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(ii)1",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body. In your answer book, use one of the above letters A, B, C, to match a blood vessel to each of the following statements.",
+  "questionText": "1. Carries blood towards the heart.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Carries blood towards heart — B or vein",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(5 pts)\" over the five numbered statements. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after the lungs labels, the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-ii-2",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "veins-have-valves",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(ii)2",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body. In your answer book, use one of the above letters A, B, C, to match a blood vessel to each of the following statements.",
+  "questionText": "2. Contains valves.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Contains valves — B or vein",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(5 pts)\" over the five numbered statements. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after the lungs labels, the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-ii-3",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "coronary-artery",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(ii)3",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body. In your answer book, use one of the above letters A, B, C, to match a blood vessel to each of the following statements.",
+  "questionText": "3. Brings blood to the heart muscle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Brings blood to heart muscle — A or artery",
+    "marks": 3,
+    "contextNote": "allow C or capillary"
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(5 pts)\" over the five numbered statements. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after the lungs labels, the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-ii-4",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "arteries-have-a-pulse",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(ii)4",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body. In your answer book, use one of the above letters A, B, C, to match a blood vessel to each of the following statements.",
+  "questionText": "4. Has a pulse.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Has a pulse — A or artery",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(5 pts)\" over the five numbered statements. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after the lungs labels, the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-ii-5",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "capillaries-exchange-substances",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(ii)5",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body. In your answer book, use one of the above letters A, B, C, to match a blood vessel to each of the following statements.",
+  "questionText": "5. Delivers substances to cells.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "Delivers substances to cells — C or capillary",
+    "marks": 3
+   }
+  ],
+  "notes": "A list the scheme prices entry by entry: one card per entry, each its own slice of the printed line. \"(5 pts)\" over the five numbered statements. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Each answer shares its reprint's line, so it is read from after the lungs labels, the line printed before them. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-b-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "healthy-circulatory-system",
+  "section": "C",
+  "questionRef": "2017 OL Q15(b)(iii)",
+  "stem": "The diagram below shows three blood vessels that form part of the circulatory system in the human body.",
+  "questionText": "Suggest two ways to keep our circulatory system healthy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "anyN",
+    "verbatim": "e.g. Exercise / do not smoke / low-fat diet",
+    "marks": null,
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "e.g. Exercise",
+      "do not smoke",
+      "low-fat diet"
+     ]
+    },
+    "openList": true
+   }
+  ],
+  "notes": "The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary",
+  "figureKey": "biology-2017-ol-q15-vessels"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-i",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "water-vapour-excreted",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(i)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide.",
+  "questionText": "What other gas is excreted from the lungs with carbon dioxide?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Water",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-ii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-the-lungs",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(ii)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide.",
+  "questionText": "Draw a labelled diagram to show the structure of the human lungs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Trachea, lung outline, bronchus, bronchiole or alveolus",
+    "marks": 6,
+    "contextNote": "The scheme marks the diagram 6, 3, 0"
+   },
+   {
+    "id": "r2",
+    "kind": "anyN",
+    "verbatim": "Lung / trachea / bronchus / bronchiole / alveolus",
+    "marks": null,
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Lung",
+      "trachea",
+      "bronchus",
+      "bronchiole",
+      "alveolus"
+     ]
+    }
+   }
+  ],
+  "notes": "The diagram (\"6, 3, 0\": one criterion row naming what it must show) and its labels (\"3(2)\") are priced on their own, as the scheme's \"3 + 6 + 3(2) + 5(3)\" sets out for (c). The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-iii",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "diaphragm",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(iii)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide.",
+  "questionText": "What is the function of the diaphragm in the human breathing system?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "To help vary the thoracic volume",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-iv",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "intercostals-in-inhalation",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(iv)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide.",
+  "questionText": "Are the intercostal muscles (in the ribcage) relaxing or contracting when a person is inhaling (breathing in)?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "point",
+    "verbatim": "Contracting",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-v",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-disorder",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(v)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide.",
+  "questionText": "Name one disorder associated with the breathing system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "alt",
+    "verbatim": "e.g. Asthma or bronchitis",
+    "marks": 3
+   }
+  ],
+  "notes": "Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
+ },
+ {
+  "id": "bio-2017-ol-q15-c-vi",
+  "subjectId": "biology",
+  "topicId": "bio-2-6",
+  "conceptId": "cause-and-treatment-of-a-breathing-disorder",
+  "section": "C",
+  "questionRef": "2017 OL Q15(c)(vi)",
+  "stem": "Breathing supplies us with oxygen and gets rid of carbon dioxide. (v) Name one disorder associated with the breathing system.",
+  "questionText": "Give one possible cause and one possible treatment of the disorder.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r1",
+    "kind": "criterion",
+    "verbatim": "Possible cause of disorder — Must match disorder",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   },
+   {
+    "id": "r2",
+    "kind": "criterion",
+    "verbatim": "Possible treatment — Must match disorder",
+    "marks": 3,
+    "contextNote": "The scheme prints no answer here, only what earns the marks."
+   }
+  ],
+  "notes": "A cause and a treatment, a point each (2 pts): a criterion row each. The text layer reads this answer out of printed order, at the foot of the scheme page: anchored on its own reprint. The cause shares its reprint's line, so it is read from after the scheme's \"+ 5(3)\", the line printed before it. Reviewed 2026-10-25 against the paper and scheme; ledger bio_review_2017_ol.py.",
+  "year": 2017,
+  "level": "ordinary"
  }
 ]

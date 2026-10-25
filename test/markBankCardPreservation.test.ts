@@ -247,6 +247,10 @@ const decks = [
    * never carded before, is carded from a paper-by-paper review
    * (bio_review_2018_ol.py): 173 tasks, 173 cards. Every earlier id is
    * unchanged. */
+  /* 2026-10-25: biology ordinary 1577 -> 1748. The 2017 Ordinary sitting,
+   * never carded before, is carded from a paper-by-paper review
+   * (bio_review_2017_ol.py): 170 tasks, 171 cards once Q11(c)(iv)'s plant or
+   * animal route is split. Every earlier id is unchanged. */
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
    * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
@@ -1754,12 +1758,12 @@ describe('Mark Bank card preservation', () => {
     // The live decks, pinned whole (their history is beside the frozen pins).
     expect(BIO_HIGHER).toHaveLength(1664);
     expect(identityHash(BIO_HIGHER)).toBe('c74624bd264cd8596b767e5f1c669b5c5f4ad7ead0ebc6f73d66b890113b809e');
-    expect(BIO_ORDINARY).toHaveLength(1577);
-    expect(identityHash(BIO_ORDINARY)).toBe('dd68652ee32847ef779c32e39156364fc92d58a8db679722737a67370f8e04d2');
-    expect(biologyAdditionIds.size).toBe(1664 + 1577 - (673 - 1) - (686 - 1));
+    expect(BIO_ORDINARY).toHaveLength(1748);
+    expect(identityHash(BIO_ORDINARY)).toBe('07a10ab8d0b0e4d1ac4aca319b1b659c56f618598ba16ce7cbd50d0b80df5b5d');
+    expect(biologyAdditionIds.size).toBe(1664 + 1748 - (673 - 1) - (686 - 1));
     // The sittings before 2021 had no Biology cards: everything they carry is new.
     expect(BIO_HIGHER.filter(card => card.year <= 2020)).toHaveLength(586);
-    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(485);
+    expect(BIO_ORDINARY.filter(card => card.year <= 2020)).toHaveLength(656);
     expect(BIO_HIGHER.filter(card => card.year === 2026)).toHaveLength(188);
     expect(BIO_ORDINARY.filter(card => card.year === 2026)).toHaveLength(187);
   });

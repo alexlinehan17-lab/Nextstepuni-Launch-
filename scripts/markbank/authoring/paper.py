@@ -176,6 +176,18 @@ MISPRINTS = {
     ('economics', 2026, 'ol'): [
         ('Explanation 2 Question 8', lambda t: t[len('Explanation 2 '):]),
     ],
+    # 2017 OL page 2 sets Question 2's dichotomous key as one block, its steps
+    # numbered "1." to "4." in the head form ("3. Animal has three pairs of
+    # legs Musca ____", "4. Animal has long cylindrical body Nematode ____").
+    # Steps 3 and 4 follow an answer line, so each split off as a head: a
+    # phantom Question 3 took key step 3, a phantom Question 4 took step 4 and
+    # the real Question 3's (a)-(e), and the real "3." and "4." heads on page 3
+    # were then rejected as repeats -- Question 4's own (a)-(e) filed as the
+    # tail of the phantom Q4(e). The step numbers are the key's, not heads.
+    ('biology', 2017, 'ol'): [
+        ('3. Animal has three pairs of legs', lambda t: t[3:]),
+        ('4. Animal has long cylindrical body', lambda t: t[3:]),
+    ],
 }
 # A question head the text layer welds onto the END of the block before it,
 # with no closed sentence between them for INLINE_QHEAD to split at: 2020 OL
@@ -192,6 +204,17 @@ WELDED_HEADS = {
     # with no Question 6 read, the reader (due a 6) took no head after it --
     # Questions 7 to 15 all filed as romans of Q5(g).
     ('biology', 2018, 'ol'): ['(g) Scientific discoveries are first published in newspapers T F'],
+    # 2017 OL page 4 is one block from "5. Indicate whether the following
+    # statements" to "6. The diagram shows part of the organism Rhizopus.":
+    # Q5(g)'s row ends in its circle options "T F", so the "6." was never
+    # split off and Question 6 vanished into Q5(g). Page 5 is one block from
+    # the Section B rubric to Q7(b)(v): the page sets "(iii)" at the start of
+    # the line "1. What did you use to cut the section of stem?", and the text
+    # layer welds that marker to the end of (ii)'s answer line, so Q7(b)(iii)
+    # and its two numbered asks filed as the tail of Q7(b)(ii).
+    ('biology', 2017, 'ol'): ['(g) An immobilised enzyme is one that has lost its function. T F',
+                              'State one reason why you used a herbaceous stem rather than a woody one. '
+                              + '_' * 73],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'

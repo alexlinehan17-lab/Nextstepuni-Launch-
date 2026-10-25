@@ -78,6 +78,321 @@
    770
   ]
  },
+ "biology-2017-ol-q10-division": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q10-division.png",
+  "md5": "eb8686a3c4e76a99344fce83c0614c2a",
+  "alt": "Drawing of a dividing cell: an oval cell with a small star-shaped body at its top and at its bottom and fine lines running from each to a row of four curved, thread-like bodies, one row in the upper half and one in the lower half. A points to one of the upper thread-like bodies, B to the fine lines in the lower half.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q10(b)(iii)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   198,
+   256,
+   380,
+   380
+  ]
+ },
+ "biology-2017-ol-q12-female": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q12-female.png",
+  "md5": "bd6dffa7e6111495adb34b52215926e6",
+  "alt": "Front view of the human female reproductive system: a central chamber with thick walls narrowing into a canal at the bottom, and from each side of its top a tube curving out and down towards a round body. A points into the canal at the bottom, B to the thick wall of the central chamber, C to the round body on the left, D to the tube on the right, E to the inner lining of the central chamber.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q12(b)(i) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   75,
+   145,
+   312,
+   332
+  ]
+ },
+ "biology-2017-ol-q13-brain": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q13-brain.png",
+  "md5": "c5d4f1dd1f675cad9a43595090ff1402",
+  "alt": "Section through the human brain, cut down the middle: a large, deeply folded upper part, a stalk running down from its base, and a smaller rounded part with fine branching inside it, behind the stalk. A points to the large folded part, B to the stalk, C to the smaller rounded part. An unlabelled leader line also points into the middle of the brain.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q13(c)(i) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   42,
+   606,
+   260,
+   781
+  ]
+ },
+ "biology-2017-ol-q13-reflex": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q13-reflex.png",
+  "md5": "dceb3cbd258a41f6a86d5faa07026fa4",
+  "alt": "Diagram of the nerve cells of a reflex arc beside a cross-section of the spinal cord, whose central region is shaded dark grey: a long fibre runs in from the left, through a swelling holding a small oval, into the grey region; a short nerve cell lies inside the grey region; a second long fibre runs from the grey region back out and down to a block of muscle at the lower left. A points to the fibre coming in from the left, B to the short nerve cell in the grey region, C to the fibre running down to the muscle.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q13(b)(i) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   190,
+   196,
+   408,
+   345
+  ]
+ },
+ "biology-2017-ol-q14-leaf": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q14-leaf.png",
+  "md5": "f01cf2b3d2b19cca391d14927fb5265c",
+  "alt": "Section through a leaf: a row of flat cells along the top and another along the bottom; under the top row a layer of tall cells dotted with small round bodies, then loosely packed rounded cells, also dotted, with air spaces between them. A has two leader lines, to a tall cell and to a rounded cell; B points to a gap in the bottom row; C has two leader lines, to the two small cells on either side of that gap.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q14(b)(i)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   190,
+   416,
+   350,
+   595
+  ]
+ },
+ "biology-2017-ol-q14-mitochondrion": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q14-mitochondrion.png",
+  "md5": "1a4ecf598e9e8fbc6c854fc483df79c2",
+  "alt": "Drawing of a sausage-shaped cell structure cut open lengthways: a smooth outer layer and, inside it, an inner layer folded into many finger-like ridges.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q14(a)(v)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   178,
+   242,
+   318,
+   316
+  ]
+ },
+ "biology-2017-ol-q15-eye": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q15-eye.png",
+  "md5": "71db6e9a39447b1b1393a22253035bc7",
+  "alt": "Section through the human eye, front to the left: a round eyeball with an oval body near the front held between two dark bodies, the iris (labelled) in front of it, a dotted layer lining the inside of the back of the eyeball, and a bundle of fibres leaving at the back right. C points to the oval body at the front, B to the layer lining the back of the eyeball, A to the bundle of fibres leaving the back.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q15(a)(i) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   100,
+   89,
+   400,
+   250
+  ]
+ },
+ "biology-2017-ol-q15-vessels": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q15-vessels.png",
+  "md5": "b96cc995c6b1e4f0415c65c49002b190",
+  "alt": "Three blood vessels, lettered A, B and C, each with its own printed labels. A: a round vessel with a thick, dotted wall and a narrow centre, labelled Thick muscle and elastic fibres, Thick outer wall and Small lumen. B: a round vessel with a thinner wall and a wide centre, labelled Thinner, less muscular, Thin outer wall and Large lumen. C: a narrow tube built of a single layer of flat cells, labelled Very thin wall (one cell thick) and Tiny lumen.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q15(b)(i) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 14,
+  "sourceRect": [
+   96,
+   428,
+   552,
+   608
+  ]
+ },
+ "biology-2017-ol-q2-key": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q2-key.png",
+  "md5": "f6bef73ac58d1c60081e6bd462ad3d69",
+  "alt": "Question 2 as printed: the instruction, then five line drawings lettered A to E (A a long thin body looped over itself; B a winged insect seen from above; C a flat, elongated body with two dots at its front end; D a long segmented body with many legs along it; E a coiled shell with a soft body and tentacles beneath it), and below them the key in three columns, Key, Organism and Letter: 1. Animal has a shell, Helix; Animal does not have a shell, Go to 2. 2. Animal has legs, Go to 3; Animal does not have legs, Go to 4. 3. Animal has three pairs of legs, Musca; Animal has more than three pairs of legs, Chilopod. 4. Animal has long cylindrical body, Nematode; Animal has flat body with two eye spots, Planarian. Each organism has a blank line for its letter.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q2 — Chilopod",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 2,
+  "sourceRect": [
+   36,
+   320,
+   560,
+   780
+  ]
+ },
+ "biology-2017-ol-q3-table": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q3-table.png",
+  "md5": "ddff06aea308d61c97899575a640f80e",
+  "alt": "Question 3 as printed: the instruction, then the list Genetic engineering (struck through), Plasmid, Isolation, Weed-killer resistance, Insulin, Enzyme above a two-column table: Column A lists \"Manipulation of genes\" (answered Genetic engineering in Column B as the example) and parts (a) to (e); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q3(a)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   36,
+   40,
+   560,
+   322
+  ]
+ },
+ "biology-2017-ol-q4-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q4-digestive.png",
+  "md5": "2e7e99e5d55f306fa4fbf55a31cd1c66",
+  "alt": "Drawing of part of the human digestive system: a large lobed organ at the top left with the gall bladder, labelled, tucked beneath it; a J-shaped bag-like organ on the right, joined to a tube at its top and opening into a curved tube at the lower left; and a lumpy organ lying along the curve below the bag. A points to the large lobed organ, B to the bag-like organ, C to the lumpy organ below it.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q4(a) — A",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   108,
+   361,
+   458,
+   516
+  ]
+ },
+ "biology-2017-ol-q6-rhizopus": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q6-rhizopus.png",
+  "md5": "ee3e9b9ba0ae11a95b2269c107ab2d75",
+  "alt": "Line drawing of part of Rhizopus: thread-like strands spread out sideways from one point, branched root-like strands grow down from that point, and upright stalks rise from it, two of them topped by a dark round head. A points to one of the sideways strands, B to the branched strands below, C to one of the dark round heads.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q6(a)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   206,
+   378,
+   392,
+   512
+  ]
+ },
+ "biology-2017-ol-q7-stems": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q7-stems.png",
+  "md5": "3ed26b93cbb9b6e7d5119d9c4a0c952a",
+  "alt": "Two transverse sections, lettered A and B. A: a wide ring of cells around a small central core shaped like a cross, with small round patches between its arms. B: a single circle with about a dozen small dark patches spaced evenly in a ring just inside its edge and an empty centre.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q7(b)(v)",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 5,
+  "sourceRect": [
+   130,
+   545,
+   468,
+   700
+  ]
+ },
+ "biology-2017-ol-q8-flasks": {
+  "src": "/exam-figures/biology/markbank/biology-2017-ol-q8-flasks.png",
+  "md5": "bd04af789468b5b1b765cac5d10db2be",
+  "alt": "Apparatus: two conical flasks, A and B, standing in a labelled water bath, each partly filled with liquid and closed by a stopper carrying a U-shaped tube with two bulbs, the right-hand one labelled Fermentation lock. A thermometer stands in the water bath at the left. A label reading CO2 Bubbles points to bubbles in the liquid of the left-hand lock, above flask A; the lock above flask B shows none.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2017 OL Q8(b)(i)1",
+  "year": 2017,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2017 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   125,
+   420,
+   306
+  ]
+ },
  "biology-2018-hl-q10a-i-chain": {
   "src": "/exam-figures/biology/markbank/biology-2018-hl-q10a-i-chain.png",
   "md5": "a24e569f43f83017dd1c7e7ce30a9bd8",
