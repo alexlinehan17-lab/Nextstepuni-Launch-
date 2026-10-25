@@ -56,6 +56,9 @@ describe('dark mode tokens', () => {
       // equivalent — on a dark ground the authored colours already pass.
       '--accent-text',
       '--warning-text',
+      // The one orange (Kobra's --nsu-orange, also Tailwind's accent) is the
+      // same in both themes, as it is in approved-ui-theme.css.
+      '--nsu-orange',
     ]);
     const missing = [...light.keys()]
       .filter(k => !dark.has(k) && !themeIndependent.has(k));
