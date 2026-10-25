@@ -707,6 +707,11 @@ def build(ledger, year, level):
         qn, letter, roman, _ = B.parse_ref(t['ref'])
         key = (qn, letter, roman)
         hit = [l for l in leaves if l == key or (l[0] == qn and l[1] == letter and roman is None)]
+        if not hit and letter is None and roman is None and t.get('tariff') == 'questionTotal':
+            # A whole QUESTION carded as one task (its scheme prints a tariff the
+            # answers fit no reading of, 2013 Higher Q5 and Q6 "1 + 1 + 8 + 6 +
+            # 4(1)") claims every leaf the census reads under that question.
+            hit = [l for l in leaves if l[0] == qn]
         if not hit:
             problems.append(f'{t["key"]}: {t["ref"]} is no census leaf')
         claimed.update(hit)
