@@ -205,6 +205,11 @@ MASKS = {
     # (b) and the full stop of "catalysis." in (c); their glyphs fall in the panel's first five
     # pixel columns, clear of the axis title, which starts at column 11.
     'chemistry-2019-HL-paper-q9.png': [(0, 305, 8, 330), (0, 470, 8, 495), (0, 520, 4, 528)],
+    # 2018 OL Q2(f) and Q10(a): the part's mark, "(12)" and "(25)", prints at the end of its last
+    # line, under the right end of the line above; whited out (dark pixels at 903-938 x 434-454 and
+    # 903-939 x 338-358).
+    'chemistry-2018-OL-paper-q2f-print.png': [(898, 428, 946, 460)],
+    'chemistry-2018-OL-paper-q10a-print.png': [(898, 332, 946, 364)],
 }
 
 

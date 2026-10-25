@@ -350,6 +350,14 @@ OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
 # "BALANCING OF CORRECT FORMULAE: (3)" is the 2019 Ordinary scheme's Q4(e) (PDF page 8).
 FORMULAE_CELL = re.compile(r'^(?:PRODUCT\s+)?FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED)'
                            r'(?:\s+OF\s+CORRECT\s+FORMULAE)?:?\s*\((\d{1,2})\)$')
+# The 2016-2018 Ordinary schemes label the first part of an equation's price by
+# what it marks: "PRODUCTS: (3), BALANCING: (3)" (2018 OL Q1(e)(iii), PDF page 5),
+# "REACTANTS & PRODUCT: (3), BALANCING: (3)" (2018 OL Q4(d), page 9). Unread, the
+# cue took "PRODUCTS:" off, the trailing "(3)" became the cell and "(3),
+# BALANCING:" was welded onto the equation. Read as FORMULAE_CELL is, the aside
+# quoting the scheme's own label.
+PRODUCTS_CELL = re.compile(r'^((?:REACTANTS\s*&\s*)?PRODUCTS?):\s*\((\d{1,2})\),?\s*BALANCING:\s*'
+                           r'\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
@@ -414,15 +422,19 @@ def cue_lines(lines):
             y0, y1 = shifted(l)
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1), as_cell(m.group(2)), True))
             continue
-        m = FORMULAE_CELL.match(t)
+        m = FORMULAE_CELL.match(t) or PRODUCTS_CELL.match(t)
         # (2019 OL Q4(e)'s longer label opens at x 342; no other scheme sets one left of 350.)
         if m and l.x0 > 300:
             # An equation priced in two parts: "FORMULAE: (3) BALANCING: (3)".
+            # (2018 OL: PRODUCTS_CELL's labels take the same branch, the aside
+            # quoting the label the scheme prints.)
+            label = 'formulae' if m.re is FORMULAE_CELL else m.group(1).lower()
+            first, second = m.groups()[-2:]
             y0, y1 = shifted(l)
-            out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[formulae ({m.group(1)}), balancing '
-                                                                f'({m.group(2)})]', False))
+            out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[{label} ({first}), balancing '
+                                                                f'({second})]', False))
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
-                            f'[{m.group(1)} + {m.group(2)}]', True))
+                            f'[{first} + {second}]', True))
             continue
         if ROUND_CELL.match(t.strip()) and any(
                 o.page == l.page and abs(o.y0 - l.y0) <= 5.0 and o.x1 <= l.x0 + 1
@@ -1532,7 +1544,9 @@ class Cards:
                 continue
             if it.cell is None:
                 raise Refused(f'{key}: "{it.text}" has no mark cell of its own')
-            equation = any(a.startswith('[formulae') for a in it.asides)
+            # (The products / reactants & product asides: 2018 OL, PRODUCTS_CELL.)
+            equation = any(a.startswith(('[formulae', '[products (', '[product (',
+                                         '[reactants & product')) for a in it.asides)
             if '+' in it.cell and not re.search(r'×', it.cell) and not equation:
                 raise Refused(f'{key}: {it.cell} is a split, not a fixed point')
             # An equation priced "FORMULAE: (2) BALANCING: (2)" is one point, the

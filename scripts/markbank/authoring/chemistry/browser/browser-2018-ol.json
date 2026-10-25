@@ -1,0 +1,18 @@
+[
+ {"id": "chem-2018-ol-q1-a", "ask": "Identify the white solid A.", "answer": "aluminium oxide", "figure": true},
+ {"id": "chem-2018-ol-q2-d", "ask": "", "answer": "solution of exactly known concentration", "figure": true},
+ {"id": "chem-2018-ol-q2-f", "ask": "", "answer": "0.11 moles l⁻¹", "figure": true, "solution": true},
+ {"id": "chem-2018-ol-q3-c-i-ii", "ask": "", "answer": "neck of flask", "figure": true, "solution": true},
+ {"id": "chem-2018-ol-q3-d-iv", "ask": "sketch the curve that you would expect to plot", "answer": "less steep as per dotted line on graph", "solution": true},
+ {"id": "chem-2018-ol-q4-i", "ask": "Express this concentration in parts per million", "answer": "0.22 × 1000 = 220 ppm"},
+ {"id": "chem-2018-ol-q4-k-a", "ask": "made up of 60 carbon atoms", "answer": "buckminsterfullerene", "figure": true},
+ {"id": "chem-2018-ol-q5-b", "ask": "Draw dot and cross diagrams to show the covalent bonding", "answer": "All dots or all crosses acceptable", "solution": true},
+ {"id": "chem-2018-ol-q8-b", "ask": "Draw the structure of an ethanol molecule.", "answer": "its own print is shown with the answer", "solution": true},
+ {"id": "chem-2018-ol-q9-a", "ask": "Define (i) oxidation, (ii) reduction", "answer": "loss of electrons"},
+ {"id": "chem-2018-ol-q9-c-i", "ask": "Describe a procedure for carrying out a flame test", "answer": "dip rod in salt and hold salt", "solution": true},
+ {"id": "chem-2018-ol-q10-a", "ask": "", "answer": "HCl (hydrochloric acid)", "figure": true},
+ {"id": "chem-2018-ol-q10-c-iii", "ask": "how many moles of water are formed?", "answer": "4.48 litres N₂O", "solution": true},
+ {"id": "chem-2018-ol-q11-a-boyles-law", "ask": "", "answer": "3: temperature", "figure": true},
+ {"id": "chem-2018-ol-q11-c-a-pvc-in-cable", "ask": "What property of the plastic PVC makes it suitable", "answer": "electrical insulation"},
+ {"id": "chem-2018-ol-q11-c-b-iii", "ask": "two feedstock materials for the industry you studied", "answer": "seawater", "figure": true}
+]

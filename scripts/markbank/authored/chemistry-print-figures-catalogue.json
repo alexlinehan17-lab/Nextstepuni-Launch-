@@ -2844,5 +2844,217 @@
   "description": "The marking scheme's own print of its answer to 2019 HL Q11(b)(ii), as the State Examinations Commission set it: (ii) CALCULATE: 48% First correct tick 6, each other correct tick 2 marks (12); two boxed routes in moles. The first: Let x = number of moles of Br₂ (or Cl₂) produced; 2BrCl (g) ⇋ Br₂ (g) + Cl₂ (g); Initially 0.200 mol, 0 mol, 0 mol; Change – 2x mol, + x mol, + x mol; Equil 0.200 – 2x, x mol, x mol / Equil 0.200–2x over 5, x over 5, x over 5 mol/l, A = (✓); (Kc =) 0.220 = x² over (0.200–2x)², in three forms, / 0.12x² + 0.176x – 0.0088 = 0, B = (✓); square rooting both sides ⇒ 0.469 = x over 0.200–2x ⇒ 0.0938 – 0.938x = x ⇒ x = 0.0484 mol / solving quadratic ⇒ x = 0.0484 mol, C = (✓); 2x over 0.2 × 100 = 0.0968 over 0.2 × 100 = 48.4% ⇒ 48%* or 49%* decomposed / now working in moles per litre: 0.048 × 2 moles of BrCl decomposed ⇒ 0.0192 moles/l of initial 0.04 moles/l BrCl decomposed ⇒ 0.0192 over 0.04 × 100 = 48.4% ⇒ 48%* or 49%* decomposed, D = (✓). The second: Let x = number of moles of BrCl decomposed; Equil 0.200 – x, ½x mol, ½x mol; (Kc =) 0.220 = x² over 4(0.200 – x)², in three forms, / 0.12x² + 0.352x – 0.0352 = 0; x = 0.0968 mol; x over 0.2 × 100 = 48.4% ⇒ 48%* or 49%* decomposed / in moles per litre, 0.0194 over 0.04 × 100 = 48.5% ⇒ 48%* or 49%* decomposed; A to D ticked as before.",
   "questionRef": "2019 HL Q11(b)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a horizontal test tube held over a Bunsen burner, with \"glass wool soaked in ethanol\" at its closed end and \"solid A\" in its middle; a stoppered delivery \"tube\" leads from its mouth down into a trough of \"water\", under an inverted test tube labelled \"ethene\".",
+  "questionRef": "2018 OL Q1"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of titres, Rough titration 23.2 cm³, First accurate titration 22.7 cm³, Second accurate titration 22.6 cm³; below it its glassware, drawn side by side and labelled: a stoppered flask with a long neck, \"A\"; a long graduated tube with a tap, \"B\"; a pipette with a bulb, \"C\"; a \"conical flask\"; and a \"wash bottle\".",
+  "questionRef": "2018 OL Q2"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q2d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q2(d): \"(d) The 0.05 M Na₂CO₃ solution is a standard solution. Explain the underlined term.\" with the words \"standard solution\" underlined.",
+  "questionRef": "2018 OL Q2(d)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q2f-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q2(f): \"2. A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.\", the table of titres, Rough titration 23.2 cm³, First accurate titration 22.7 cm³, Second accurate titration 22.6 cm³; then \"(f) The equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ Using figures from the table above, calculate, in moles per litre, the concentration of the HCl solution that was titrated against 25.0 cm³ portions of the 0.05 M Na₂CO₃ solution.\"",
+  "questionRef": "2018 OL Q2(f)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation for the reaction: 2H₂O₂ → 2H₂O + O₂, with MnO₂ printed over the arrow.",
+  "questionRef": "2018 OL Q3"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q3c-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q3(c): \"3. A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The equation for the reaction is:\" and the equation 2H₂O₂ → 2H₂O + O₂ with MnO₂ printed over its arrow; then \"(c) Copy into your answerbook the diagram of the arrangement of apparatus shown in the box below.\", a box holding a conical flask lying on its side with \"diluted H₂O₂\" in it and a stopper with \"flexible tubing\" in its neck, beside a stopwatch reading 00:00; then \"Complete your diagram and label it to show: (i) the location of the catalyst just before the reaction is started, (ii) how the oxygen gas can be collected and its volume measured at intervals over several minutes.\"",
+  "questionRef": "2018 OL Q3(c)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q3d-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7, 8 against Volume O₂ (cm³) 0, 20, 31, 36.5, 39, 40, 40, 40, 40.",
+  "questionRef": "2018 OL Q3(d)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q3d-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q3(d)(i): \"3. A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The equation for the reaction is:\" and the equation 2H₂O₂ → 2H₂O + O₂ with MnO₂ printed over its arrow; then \"(d) The data obtained are given in the table.\", the table of Time (minutes) 0 to 8 against Volume O₂ (cm³) 0, 20, 31, 36.5, 39, 40, 40, 40, 40; then \"(i) Plot a graph (on graph paper) of volume of O₂ (y-axis) versus time.\"",
+  "questionRef": "2018 OL Q3(d)(i)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q4c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's electrolysis apparatus: two graduated tubes with taps at the top, labelled \"X\" on the left and \"Y\" on the right, joined at the bottom to a central tube with a bulb at its top; an electrode at the foot of each tube, marked \"–\" under X and \"+\" under Y.",
+  "questionRef": "2018 OL Q4(c)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q4k-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A drawing of the soccer-ball shaped molecule: balls joined by rods into pentagons and hexagons forming a sphere, credited \"www.wikipedia.org\".",
+  "questionRef": "2018 OL Q4(k)A"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q5d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table with columns Substance, Melting point (°C), Boiling point (°C) and \"Electronegativity difference between atoms in constituent bonds\": A, –210, –196, 0; B, –114, –85, 0.96; water, 0, 100, cell shaded; C, 730, 1380, cell shaded.",
+  "questionRef": "2018 OL Q5(d)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of five compounds drawn as structures: A, a carbon with four H atoms; B, two carbons joined by a single bond, each with three H atoms; C, three carbons, the last two joined by a double bond, with six H atoms; D, H–C≡C–H; E, a hexagon with a circle inside it.",
+  "questionRef": "2018 OL Q6"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q6f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of five compounds drawn as structures: A, a carbon with four H atoms; B, two carbons joined by a single bond, each with three H atoms; C, three carbons, the last two joined by a double bond, with six H atoms; D, H–C≡C–H; E, a hexagon with a circle inside it. Below it a photograph of a herd of cattle in a field, credited \"www.irishtimes.com\".",
+  "questionRef": "2018 OL Q6(f)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme: four boxes joined by arrows, from W, drawn as H₂C=CH₂ with its four H atoms, to \"ethanol\", to X, drawn as CH₃–C with a double-bonded O and an H, to Y, drawn as CH₃–C with a double-bonded O and an OH.",
+  "questionRef": "2018 OL Q8"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q10a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q10(a): \"(a) An acid is defined as a substance that produces 1 ions in aqueous solution and a base as a substance that produces 2 ions in aqueous solution. An acid and a base react together to produce a 3 and 4 in a process called 5 . Indigestion remedies are often bases that react with excess 6 in the stomach. The base 7 is used in many oven cleaners and drain cleaners to dissolve grease. The following words and formulae are omitted from the passage above. OH⁻ neutralisation water H⁺ HCl salt NaOH Write in your answerbook the omitted word or formula corresponding to each of the numbers (1 to 7).\", each number printed on an underlined blank.",
+  "questionRef": "2018 OL Q10(a)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q10c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a patient lying down with an anaesthetic mask held over her nose and mouth by a gloved hand, credited \"www.istockphoto.com\".",
+  "questionRef": "2018 OL Q10(c)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q11a-boyle-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q11(a): \"Supply the missing words in the following statement of Boyle's law: 'The 1 of a certain mass of gas is inversely proportional to its 2 at constant 3 .'\", each number printed on an underlined blank.",
+  "questionRef": "2018 OL Q11(a)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's container: an open-topped box holding an \"equilibrium mixture\" under a dark sliding lid, with a large arrow pointing down at the lid labelled \"press down the sliding lid\".",
+  "questionRef": "2018 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q11b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2018 OL Q11(b)(i): \"(b) Sulfuryl chloride (SO₂Cl₂) decomposes when heated to form equal volumes of chlorine (Cl₂) gas and sulfur dioxide (SO₂) gas. When some SO₂Cl₂ vapour was heated in a closed container at a certain temperature a chemical equilibrium was reached according to the following balanced equation.\" with \"chemical equilibrium\" underlined, the equation SO₂Cl₂ (g) ⇌ Cl₂ (g) + SO₂ (g) with \"colourless\", \"green\" and \"colourless\" printed under the three gases, then \"(i) Explain the underlined term.\"",
+  "questionRef": "2018 OL Q11(b)(i)"
+ },
+ {
+  "file": "chemistry-2018-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's scheme of a chemical plant: on the left, rounded boxes \"river water\", \"H₂ from natural gas or coal\", \"O₂ in air\", \"sea-water\", \"limestone\", \"ammonia\" and \"N₂ in air\"; in the middle, a factory with chimneys under clouds labelled \"gaseous emissions\", and a pipe from it ending in \"waste effluent\"; on the right, grey ovals \"telecommunications\", \"transport network\", \"power supply\" and \"third-level institute\".",
+  "questionRef": "2018 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q2(f), as the State Examinations Commission set it: (f) CALCULATE: (22.7 + 22.6) ÷ 2 = 22.65 cm³ (3); 0.11 moles l⁻¹ (9); then two boxed routes separated by a solidus: 25 × 0.05 over 1 (3), = 22.65 × M over 2 (3), M = 0.11 moles l⁻¹ (3); or 25 × 0.05 over 1000 = 0.00125 moles Na₂CO₃ (3), ⇒ 0.0025 moles HCl in 22.65 cm³ (3), 0.0025 × 1000 over 22.65 ⇒ M = 0.11 moles l⁻¹ (3); then \"[Treat answer given as 0.1 M as a slip.]\" and \"[Allow (3) for V₁M₁ over n₁ = V₂M₂ over n₂ if last (9) not awarded.]\"",
+  "questionRef": "2018 OL Q2(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q3c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q3(c), as the State Examinations Commission set it: (c) COPY COMPLETE & LABEL: (i) \"neck of flask – B / in small test-tube inside flask – A\", \"[Catalyst must be labelled.]\"; (ii) \"graduated cylinder (burette) inverted over water – X / graduated gas syringe – Y\", \"[Label necessary unless graduations clearly marked.]\" (6 + 3); then four drawings: A, a flask on its side with a small test tube inside it holding the \"catalyst / MnO₂\"; B, a flask on its side with the \"catalyst / MnO₂\" in its neck; X, a \"graduated cylinder\" upside down in a trough of water over the end of a delivery tube; Y, a \"gas syringe\"; and \"[Allow flask upright; allow gas collection proceeding.]\"",
+  "questionRef": "2018 OL Q3(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q3d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q3(d)(i), as the State Examinations Commission set it: (d) (i) PLOT: a graph of Volume O₂ (cm³), 0 to 45, against Time (minutes), 0 to 8: points at (0, 0), (1, 20), (2, 31), (3, 36.5), (4, 39), (5, 40), (6, 40), (7, 40) and (8, 40) joined by a smooth curve; a dotted curve below it rising from the origin to level off at 20; a line up from 2.5 minutes to the curve and across to the volume axis at about 34. Then \"axes correctly labelled with unit or quantity\" (3), \"[Deduct (3) for axes reversed.]\", \"axes correctly scaled\" (3), \"eight points correctly plotted (on candidate's scale)\" (6), \"[Allow (3) for 6 points correctly plotted.]\", \"smooth CURVE correctly drawn through points and (0, 0)\" (3), \"[Straight line(s) unacceptable for curve.]\"",
+  "questionRef": "2018 OL Q3(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q3d-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q3(d)(iv), as the State Examinations Commission set it: the graph of Volume O₂ (cm³), 0 to 45, against Time (minutes), 0 to 8: the plotted points joined by a smooth curve levelling off at 40, a dotted curve below it rising from the origin to level off at 20, and a line up from 2.5 minutes to the curve and across to the volume axis; then \"(iv) SKETCH: less steep as per dotted line on graph // half volume O₂ produced as per dotted line on graph\" (3 + 2).",
+  "questionRef": "2018 OL Q3(d)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q5b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q5(b), as the State Examinations Commission set it: (b) DRAW: two overlapping circle drawings, each atom's inner and outer shells round a grey nucleus: two F atoms sharing one pair, one atom's electrons crosses and the other's dots, \"/\" F •x F; two O atoms sharing two pairs, \"/\" O with two dots and two crosses between it and the other O; (9 + 3). Then \"Fluorine : one shared pair and incorrect lone pairs (–3)]\", \"Oxygen: two shared pairs and incorrect lone pairs (–3)]\", \"[Inner electrons need not be shown.][Lone pairs need not be shown.]\", \"[Take drawings in order of question unless answered in reverse order and both molecules clearly labelled.][All dots or all crosses acceptable.]\"",
+  "questionRef": "2018 OL Q5(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q8b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q8(b), as the State Examinations Commission set it: (b) DRAW: (6): the structure of ethanol, two C atoms in a row with three H atoms on the first, two H atoms on the second and OH on its end, \"/ CH₃CH₂OH / C₂H₅OH\".",
+  "questionRef": "2018 OL Q8(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q9c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q9(c)(i), as the State Examinations Commission set it: (c) (i) DESCRIBE: (6 + 5 + 1): a table of three methods, three steps each. Method 1: \"clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)\", \"dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". Method 2: \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". Method 3: \"prepare a solution of the salt in water and ethanol (propanol)\", \"spray solution onto (into) hot (blue) part of flame (Bunsen)\", \"observe colour of flame\". The steps are priced (6), (5) and (1). Below: \"*[Allow 'inoculating loop', or 'spatula' for 'platinum wire'.]\" and \"[Clear labelled diagram for some or all points acceptable.]\"",
+  "questionRef": "2018 OL Q9(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q10c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q10(c)(iii), as the State Examinations Commission set it: (iii) HOW MANY: 0.4 moles H₂O / 2/5 moles H₂O (6), boxed as n = m over Aᵣ = 16 over 80 = 0.2 moles NH₄NO₃ (3), 0.2 moles ⇒ 0.4 moles H₂O (3); WHAT: 4.48 litres N₂O (7), boxed as 0.2 moles N₂O (3), 0.2 × 22.4 = 4.48 litres N₂O (4).",
+  "questionRef": "2018 OL Q10(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2018-OL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2018 OL Q11(b)(ii), as the State Examinations Commission set it: (ii) WRITE: Kc = [Cl₂][SO₂] over [SO₂Cl₂] (6); \"[Allow (3) for expression inverted.]\" \"[Square brackets not essential.]\"",
+  "questionRef": "2018 OL Q11(b)(ii)",
+  "solution": true
  }
 ]

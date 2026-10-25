@@ -891,7 +891,28 @@ def chemistry_choice_parts(year, level, parts, texts):
             k = (q, letter + alt, roman)
             parts.add(k)
             texts[k] = chem_print.joined(sg.text)
+        if (year, lvl) in CHOICE_LEADING_ROMANS:
+            # 2018 OL Q11(c)A: romans set inside the alternative's lead-in.
+            for sg in sgs:
+                _, _, roman, alt = sg.key
+                if roman is not None:
+                    continue
+                mine = {k for k in parts if k[-3] == q and k[-2] == letter + alt}
+                lead = chem_print.joined(sg.text)
+                parts |= complete_leading_romans(mine, texts, stem=lambda _q, _l, t=lead: t)
     return parts, texts
+
+
+# 2018 OL Q11(c)A (paper page 10) sets its first two romans inside the
+# alternative's opening sentence -- "How do most metals compare to most
+# plastics in terms of (i) hardness, (ii) lustre?" -- and breaks to markers of
+# their own only at (iii) and (iv). chemistry_choice_parts skips that sentence
+# as the alternative's lead-in, so (i) and (ii) went with it (census flag
+# "roman-gap Q11(cA)"); the scheme prices them "(6 + 3)" (PDF page 18). The
+# lead-in supplies them, as complete_leading_romans does for a letter's own
+# text. Applied to every Chemistry sitting the rule adds these two asks and no
+# other; gated so that a future sitting's reading moves only by its own audit.
+CHOICE_LEADING_ROMANS = {(2018, 'ol')}
 
 
 # Stimulus prose from the last census_sections() walk of each sitting, for

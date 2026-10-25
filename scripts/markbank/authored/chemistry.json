@@ -58938,5 +58938,3020 @@
    }
   ],
   "notes": "The scheme labels these \"TWO POINTS: (4 + 2)\". The scheme prices these points together as [4 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q1-a",
+  "topicId": "chem-u2",
+  "conceptId": "catalyst-in-preparing-ethene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(a)",
+  "questionText": "Identify the white solid A.",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "aluminium oxide / Al₂O₃",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q1-b-i-ii",
+  "topicId": "chem-u2",
+  "conceptId": "collecting-ethene-and-discarding-the-first-tubes",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(b)(i)–(ii)",
+  "questionText": "(i) Describe the appearance of the gas collected. (ii) Explain why the first few test‐tubes of gas collected are not then used.",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "colourless",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [‘Clear’ acceptable.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "impure / contain air (impurities) / displaced air (oxygen) / mixture of air (oxygen) and ethene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q1-c-i-iii",
+  "topicId": "chem-u2",
+  "conceptId": "suck-back",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(c)(i)–(iii)",
+  "questionText": "(i) What is suck‐back? (ii) Why is suck‐back hazardous? (iii) What precaution should be taken to avoid suck‐back?",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. There is a risk of suck‐back while carrying out this experiment.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "water from trough goes (sucked) back up delivery tube / vacuum produced / vacuum in apparatus / gas (air) inside contracts / water takes place of gas (air) inside",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cold water could cause test-tube (apparatus, glass) to crack (shatter, explode) releasing flammable gas into flame",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "break vacuum by removing end of delivery tube from water / break vacuum by loosening stopper / remove (reduce) heat from under test-tube only after letting air in (breaking vacuum)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q1-d-i",
+  "topicId": "chem-2-4",
+  "conceptId": "reagent-to-test-for-unsaturation",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(d)(i)",
+  "questionText": "Identify a reagent used to test ethene for unsaturation.",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. In a test for unsaturation a few drops of a coloured solution were added to a test‐tube of ethene gas. The test‐tube was re‐stoppered and shaken.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "bromine (Br₂) solution (water) / acidified potassium permanganate (H⁺/KMnO₄)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q1-d-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "colour-change-in-the-unsaturation-test",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(d)(ii)",
+  "questionText": "What colour change is a positive result in this test using the reagent you identified?",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. In a test for unsaturation a few drops of a coloured solution were added to a test‐tube of ethene gas. The test‐tube was re‐stoppered and shaken.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "red (brown, orange, yellow) /purple (pink)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to colourless / decolourised (colour fades)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Reagent and reagent colour linked.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q1-e-i",
+  "topicId": "chem-2-4",
+  "conceptId": "combustion-test-on-ethene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(e)(i)",
+  "questionText": "How was the combustion test carried out?",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. A combustion test was carried out on another test‐tube of ethene.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "unstopper and quickly insert lighting taper (splint, match) into test tube / bring lighting taper (splint, match) into contact with ethene",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (5) for ‘insert taper (splint, match)’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q1-e-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "flame-of-burning-ethene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(e)(ii)",
+  "questionText": "Describe the flame observed.",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. A combustion test was carried out on another test‐tube of ethene.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "bright {yellow, luminous, fairly clean, slightly (not very) sooty (smoky)}",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q1-e-iii",
+  "topicId": "chem-3-1",
+  "conceptId": "combustion-of-ethene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q1(e)(iii)",
+  "questionText": "Copy, complete and balance the following equation for the complete combustion of ethene in oxygen: C₂H₄ + 3O₂ → _______ + ________",
+  "stem": "A student prepared and collected ethene (C₂H₄) gas using the arrangement of apparatus and chemicals shown below. A few stoppered test‐tubes of the gas were kept to examine the properties of ethene. A combustion test was carried out on another test‐tube of ethene.",
+  "figureKey": "chemistry-2018-OL-paper-q1",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C₂H₄ + 3O₂ → 2CO₂ + 2H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [products (3), balancing (3)] The scheme prices this point [3 + 3]."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q2-a",
+  "topicId": "chem-4-1",
+  "conceptId": "naming-titration-glassware",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(a)",
+  "questionText": "Name the pieces of apparatus A, B and C.",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "figureKey": "chemistry-2018-OL-paper-q2",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[5 + 3 + 3]"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: volumetric flask",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: burette",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: pipette",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [5 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q2-b-i-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "which-glassware-for-each-task",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(b)(i)–(iii)",
+  "questionText": "(i) in making up the 0.05 M solution of Na₂CO₃, (ii) to measure 25.0 cm³ of the Na₂CO₃ solution, (iii) to measure the hydrochloric acid in each titration?",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added. Which piece of apparatus, A, B or C, was used:",
+  "figureKey": "chemistry-2018-OL-paper-q2",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 2 + 1]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A / volumetric flask / first / name given for A in (a)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C / pipette / third / name given for C in (a)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "B / burette / second / name given for B in (a)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 2 + 1] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q2-c",
+  "topicId": "chem-4-1",
+  "conceptId": "glassware-rinsed-with-the-solution-it-holds",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(c)",
+  "questionText": "The wash bottle was used to rinse A, B, C and the conical flask with deionised water. Identify one of these pieces of apparatus that was rinsed again with a second liquid.",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "figureKey": "chemistry-2018-OL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "burette / B / pipette / C / name given for B or C in (a)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q2-d",
+  "topicId": "chem-4-1",
+  "conceptId": "definition-of-a-standard-solution",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(d)",
+  "questionText": "The 0.05 M Na₂CO₃ solution is a standard solution. Explain the underlined term.",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "solution of exactly known concentration (molarity)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "questionFigureKey": "chemistry-2018-OL-paper-q2d-print"
+ },
+ {
+  "id": "chem-2018-ol-q2-e-i",
+  "topicId": "chem-4-1",
+  "conceptId": "indicator-for-a-carbonate-titration",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(e)(i)",
+  "questionText": "Name a suitable indicator for use in the titrations.",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "figureKey": "chemistry-2018-OL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "methyl orange",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q2-e-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "colour-change-of-methyl-orange-at-end-point",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(e)(ii)",
+  "questionText": "What colour change was observed at the end point?",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "figureKey": "chemistry-2018-OL-paper-q2",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yellow (orange) to",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points (2 × 3), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "red (pink, peach)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Marks may be given for correct colours of an incorrect indicator. Allow (3) for correct colours reversed (and matching a named indicator). (9) marks only available for correct indicator and correct colours in correct order.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q2-f",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hydrochloric-acid",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q2(f)",
+  "questionText": "The equation for the titration reaction is: 2HCl + Na₂CO₃ → 2NaCl + H₂O + CO₂ Using figures from the table above, calculate, in moles per litre, the concentration of the HCl solution that was titrated against 25.0 cm³ portions of the 0.05 M Na₂CO₃ solution.",
+  "stem": "A 0.05 M solution of sodium carbonate (Na₂CO₃) was prepared and then used to find the concentration of a hydrochloric acid (HCl) solution by titration. Some pieces of apparatus used in the experiment are shown below. For each titration 25.0 cm³ of the sodium carbonate solution were measured into a conical flask and the table shows the volumes of hydrochloric acid solution added.",
+  "figureKey": "chemistry-2018-OL-scheme-q2f",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(22.7 + 22.6) ÷ 2 = 22.65 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.11 moles l⁻¹",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme sets out the working that earns it in two boxed routes, (3) a step; its own print is shown with the answer. The scheme adds: [Treat answer given as 0.1 M as a slip.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2018-OL-paper-q2f-print"
+ },
+ {
+  "id": "chem-2018-ol-q3-a",
+  "topicId": "chem-u2",
+  "conceptId": "measuring-out-5-cm3-of-solution",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(a)",
+  "questionText": "The student measured out 5 cm³ of hydrogen peroxide solution A, diluted it to 25 cm³ with deionised water and then transferred the diluted solution into a conical flask. Name a suitable piece of apparatus to measure out 5 cm³ of hydrogen peroxide solution A.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The equation for the reaction is:",
+  "figureKey": "chemistry-2018-OL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "graduated cylinder / graduated dropper / pipette / syringe / burette",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q3-b",
+  "topicId": "chem-3-2",
+  "conceptId": "appearance-of-manganese-dioxide",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(b)",
+  "questionText": "Describe the appearance of the MnO₂ catalyst.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The equation for the reaction is:",
+  "figureKey": "chemistry-2018-OL-paper-q3",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "black (brown, dark) / solid (powder)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q3-c-i-ii",
+  "topicId": "chem-u2",
+  "conceptId": "placing-the-catalyst-and-collecting-the-oxygen",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(c)(i)–(ii)",
+  "questionText": "(i) the location of the catalyst just before the reaction is started, (ii) how the oxygen gas can be collected and its volume measured at intervals over several minutes.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. Copy into your answerbook the diagram of the arrangement of apparatus shown in the box below. Complete your diagram and label it to show:",
+  "figureKey": "chemistry-2018-OL-scheme-q3c",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "neck of flask – B / in small test-tube inside flask – A",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (i). The scheme adds: [Catalyst must be labelled.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "graduated cylinder (burette) inverted over water – X",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (ii). Or \"graduated gas syringe – Y\". The scheme adds: [Label necessary unless graduations clearly marked.] [Allow flask upright; allow gas collection proceeding.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown. A, B, X and Y name the scheme's own drawings, shown with the answer.",
+  "questionFigureKey": "chemistry-2018-OL-paper-q3c-print"
+ },
+ {
+  "id": "chem-2018-ol-q3-d-i",
+  "topicId": "chem-3-2",
+  "conceptId": "graph-of-oxygen-volume-against-time",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(d)(i)",
+  "questionText": "Plot a graph (on graph paper) of volume of O₂ (y‐axis) versus time.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The data obtained are given in the table.",
+  "figureKey": "chemistry-2018-OL-scheme-q3d-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes correctly labelled with unit or quantity",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Deduct (3) for axes reversed.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "eight points correctly plotted (on candidate’s scale)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for 6 points correctly plotted.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "smooth CURVE correctly drawn through points and (0, 0)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Straight line(s) unacceptable for curve.]"
+   }
+  ],
+  "questionFigureKey": "chemistry-2018-OL-paper-q3d-i-print"
+ },
+ {
+  "id": "chem-2018-ol-q3-d-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "why-the-rate-falls",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(d)(ii)",
+  "questionText": "Why does the rate of this reaction slow down as the minutes go by?",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The data obtained are given in the table.",
+  "figureKey": "chemistry-2018-OL-paper-q3d-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "hydrogen peroxide (reactant, reagent) used up / less hydrogen peroxide (reactant, reagent) / concentration hydrogen peroxide (reactant, reagent) less / rate proportional to concentration",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q3-d-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "volume-read-from-the-graph",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(d)(iii)",
+  "questionText": "Use your graph to find the volume of gas collected in the first 2.5 minutes.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The data obtained are given in the table.",
+  "figureKey": "chemistry-2018-OL-paper-q3d-table",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "34 cm³ [33 to 35 cm³]",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q3-d-iv",
+  "topicId": "chem-3-2",
+  "conceptId": "curve-for-half-the-hydrogen-peroxide",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2018 OL Q3(d)(iv)",
+  "questionText": "On the same sheet of graph paper sketch the curve that you would expect to plot if the experiment were repeated using 2.5 cm³ of hydrogen peroxide solution A diluted to 25 cm³.",
+  "stem": "A student investigated the rate of decomposition of a hydrogen peroxide (H₂O₂) solution using manganese dioxide (MnO₂) as a catalyst. The data obtained are given in the table.",
+  "figureKey": "chemistry-2018-OL-scheme-q3d-iv",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 2]"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "less steep as per dotted line on graph",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "half volume O₂ produced as per dotted line on graph",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 2] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q4-a",
+  "topicId": "chem-1-3",
+  "conceptId": "mendeleevs-table-and-the-modern-table",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(a)",
+  "questionText": "Give one difference between Mendeleev’s periodic table of the elements and the modern periodic table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "no noble gases / some elements undiscovered / fewer elements / no separate d-block (transition element block) / elements arranged in order of atomic mass (weight) / gaps for undiscovered elements",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-b",
+  "topicId": "chem-3-2",
+  "conceptId": "catalysts-in-a-catalytic-converter",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(b)",
+  "questionText": "Give the symbol of a metallic element used as a catalyst in the catalytic converter of a car.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rh / Pt / Pd",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow names.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-c",
+  "topicId": "chem-3-5",
+  "conceptId": "gases-from-electrolysing-acidified-water",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(c)",
+  "questionText": "The electrolysis of water, acidified with a few drops of sulfuric acid, was carried out in an apparatus like that shown. Inert (platinum) electrodes were used. Identify gas X and gas Y.",
+  "figureKey": "chemistry-2018-OL-paper-q4c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X: hydrogen (H₂)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Y: oxygen (O₂)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for reverse order (unless labelled correctly).][Allow (3) for H and O.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-d",
+  "topicId": "chem-1-4",
+  "conceptId": "equation-for-hydrogen-and-chlorine",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(d)",
+  "questionText": "Write a balanced equation for the reaction that occurs when hydrogen gas reacts with chlorine gas producing hydrogen chloride.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H₂ + Cl₂ → 2HCl / ½ H₂ + ½ Cl₂ → HCl",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for HCl.] [reactants & product (3), balancing (3)] The scheme prices this point [3 + 3]."
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-e",
+  "topicId": "chem-3-4",
+  "conceptId": "ph-of-sulfuric-acid",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(e)",
+  "questionText": "Calculate the pH of 0.15 M sulfuric acid (H₂SO₄) correct to one decimal place.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pH = – log₁₀ [H⁺] / pH = – log₁₀ [H₃O⁺] / pH = – log₁₀ 0.3 / 0.3 moles H⁺",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "pH = – log 0.3 = 0.5",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) max for – log₁₀ 0.15 / 0.8.]"
+   }
+  ],
+  "notes": "The scheme gives the answer, 0.5, priced [6], then the working that earns it, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-f",
+  "topicId": "chem-3-1",
+  "conceptId": "combustion-of-methanol-is-exothermic",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(f)",
+  "questionText": "An equation for the combustion of methanol in oxygen is: 2CH₃OH + 3O₂ → 2CO₂ + 4H₂O ΔH = – 1451 kJ Is this reaction exothermic or endothermic? Give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "exothermic",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ΔH negative / methanol (CH₃OH) is a fuel / combustion reactions exothermic (give out heat)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [IS and GIVE not linked.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-g",
+  "topicId": "chem-1-4",
+  "conceptId": "empirical-formula-of-glucose",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(g)",
+  "questionText": "The molecular formula of glucose is C₆H₁₂O₆. Write the empirical formula for glucose.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "CH₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for ratio 1:2:1.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-h",
+  "topicId": "chem-4-3",
+  "conceptId": "primary-sewage-treatment",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(h)",
+  "questionText": "What happens during the primary stage of sewage treatment?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "settlement / settling / screening / sedimentation / mechanical (physical) separation (purification) / removal of suspended solids / large particles removed by grit channels",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-i",
+  "topicId": "chem-1-4",
+  "conceptId": "concentration-in-parts-per-million",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(i)",
+  "questionText": "A 500 cm³ sample of swimming pool water contained 0.11 g of dissolved solids. Express this concentration in parts per million (p.p.m. or mg per litre).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.11 × 2 = 0.22 g per litre",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or, by the scheme's second route, \"0.11 × 1000 = 110 mg per 500 cm³\" (3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.22 × 1000 = 220 ppm (mg l⁻¹)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or, by the second route, \"110 × 2 = 220 ppm (mg l⁻¹)\" (3)."
+   }
+  ],
+  "notes": "The scheme gives the answer, 220 ppm (mg l⁻¹), priced (6), then the working that earns it in two boxed routes, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-j",
+  "topicId": "chem-1-2",
+  "conceptId": "beta-decay",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(j)",
+  "questionText": "Identify the process defined as ‘emission of an electron by an unstable nucleus’.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "beta-decay (beta-radiation) / β-decay (β-radiation)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for ‘radioactivity’ or ‘beta’.][Allow (3) for ‘beta-particle’ or ‘β-particle’.]"
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-k-a",
+  "topicId": "chem-1-1",
+  "conceptId": "buckminsterfullerene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(k)A",
+  "questionText": "Name the soccer‐ball shaped molecule made up of 60 carbon atoms that was discovered in 1985.",
+  "figureKey": "chemistry-2018-OL-paper-q4k-a",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "buckminsterfullerene / bucky ball / fullerene",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q4-k-b",
+  "topicId": "chem-u3",
+  "conceptId": "why-reaction-vessels-are-made-of-steel",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q4(k)B",
+  "questionText": "Why are industrial reaction vessels often made of steel?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "unreactive (inert, stable) / doesn’t corrode / can be pressurized / minimum maintenance / strong (doesn’t break) / easily cleaned (disinfected) / high performance",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2018-ol-q5-a",
+  "topicId": "chem-1-2",
+  "conceptId": "why-argon-is-unreactive",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(a)",
+  "questionText": "Argon (Ar) is a gaseous unreactive element that exists as single atoms. Why is this element unreactive?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "argon has eight electrons in outer shell / argon has a stable electron arrangement (configuration) / argon is a noble (inert) gas / argon in Group 18 (Group 8, Group VIII, Group 0)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘argon doesn’t need any more electrons’.] [Allow (3) for ‘argon has a full outer shell’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-b",
+  "topicId": "chem-2-1",
+  "conceptId": "dot-and-cross-diagrams-of-fluorine-and-oxygen",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(b)",
+  "questionText": "Draw dot and cross diagrams to show the covalent bonding in F₂ and in O₂.",
+  "stem": "Fluorine and oxygen are gaseous elements that exist as the diatomic molecules F₂ and O₂.",
+  "figureKey": "chemistry-2018-OL-scheme-q5b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw dot and cross diagrams to show the covalent bonding in F₂ and in O₂.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme answers this part with drawings, priced (9 + 3); its own print, with the faults it deducts for, is shown with the answer. The scheme adds: [Take drawings in order of question unless answered in reverse order and both molecules clearly labelled.][All dots or all crosses acceptable.]",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-c",
+  "topicId": "chem-2-1",
+  "conceptId": "definition-of-electronegativity",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(c)",
+  "questionText": "Define electronegativity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "relative (measure of) attraction / number expressing (giving) attraction",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "for shared electrons (pair) / for electrons in a covalent bond",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-d-i",
+  "topicId": "chem-2-1",
+  "conceptId": "identifying-ionic-bonding-from-properties",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(d)(i)",
+  "questionText": "have ionic bonding, Explain your reasoning in each case.",
+  "stem": "The table gives the melting points and boiling points of water and of three simple pure substances A, B and C. Use the properties given in the table to identify which substance, A, B, C or water, is most likely to:",
+  "figureKey": "chemistry-2018-OL-paper-q5d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "high melting (boiling) point / high m.p. (b.p.) / 730 / 1380",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-d-ii",
+  "topicId": "chem-2-1",
+  "conceptId": "identifying-polar-covalent-bonding-from-properties",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(d)(ii)",
+  "questionText": "be gaseous and have polar covalent bonding, Explain your reasoning in each case.",
+  "stem": "The table gives the melting points and boiling points of water and of three simple pure substances A, B and C. Use the properties given in the table to identify which substance, A, B, C or water, is most likely to:",
+  "figureKey": "chemistry-2018-OL-paper-q5d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "boiling point (b.p.) below room temperature (about 20 °C) / –196 / electronegativity difference (e.n.) 0.96 / 0.4 < 0.96 < 1.7",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-d-iii",
+  "topicId": "chem-2-1",
+  "conceptId": "identifying-pure-covalent-bonding-from-properties",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(d)(iii)",
+  "questionText": "have pure covalent bonding. Explain your reasoning in each case.",
+  "stem": "The table gives the melting points and boiling points of water and of three simple pure substances A, B and C. Use the properties given in the table to identify which substance, A, B, C or water, is most likely to:",
+  "figureKey": "chemistry-2018-OL-paper-q5d",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "low melting (boiling) point / low m.p. (b.p.) / –114 / –85 electronegativity difference (e.n.) zero",
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q5-e",
+  "topicId": "chem-2-2",
+  "conceptId": "shape-of-a-water-molecule",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q5(e)",
+  "questionText": "What is the shape of a water molecule?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "v-shaped / v-planar / bent",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow correct shape given in a diagram.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-a",
+  "topicId": "chem-2-4",
+  "conceptId": "hydrocarbons",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(a)",
+  "questionText": "What general term is used for compounds, like those shown in the table, that contain only carbon and hydrogen atoms?",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "hydrocarbon(s)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-b",
+  "topicId": "chem-2-4",
+  "conceptId": "iupac-names-of-three-hydrocarbons",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(b)",
+  "questionText": "Give the IUPAC names for A, C and D.",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: methane",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C: propene",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "D: ethyne",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "homologous-series-of-methane-and-ethane",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(c)(i)",
+  "questionText": "do both A and B belong,",
+  "stem": "To which homologous series:",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alkane(s)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "homologous-series-of-ethyne",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(c)(ii)",
+  "questionText": "does D belong?",
+  "stem": "To which homologous series:",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alkyne(s)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-d-i-iii",
+  "topicId": "chem-2-4",
+  "conceptId": "benzene",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(d)(i)–(iii)",
+  "questionText": "(i) Which compound in the table is aromatic? (ii) Write the molecular formula of this compound. (iii) Why is this compound not in common use?",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E / benzene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "C₆H₆",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "carcinogenic / toxic / harmful / poisonous / dangerous",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not allow ‘benzene expensive’.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q6-e",
+  "topicId": "chem-2-4",
+  "conceptId": "ethyne-for-cutting-and-welding",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(e)",
+  "questionText": "Which compound in the table, when burned in oxygen, produces a very high temperature flame used for cutting and welding metal?",
+  "figureKey": "chemistry-2018-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D / ethyne",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept name given in (b).]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q6-f",
+  "topicId": "chem-2-4",
+  "conceptId": "methane-from-animal-waste",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q6(f)",
+  "questionText": "Which compound in the table is produced by anaerobic bacteria decomposing animal waste? Why is the concentration of this compound in the atmosphere a cause for concern?",
+  "figureKey": "chemistry-2018-OL-paper-q6f",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[9 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A / methane",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "global warming / climate change / greenhouse effect/ greenhouse gas / rising sea levels / etc",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Do not allow ‘damages ozone layer’ or ‘causes acid rain’.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q7-a-i",
+  "topicId": "chem-4-3",
+  "conceptId": "hard-water",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(i)",
+  "questionText": "What is hard water?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "water containing dissolved calcium (magnesium) ions / water containing dissolved Ca²⁺ (Mg²⁺) / water that doesn’t form a lather easily with soap",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q7-a-ii",
+  "topicId": "chem-4-3",
+  "conceptId": "temporary-hardness-and-its-cause",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(ii)",
+  "questionText": "What type of water hardness can be removed by boiling? Name, or give the formula, of a substance that causes this type of water hardness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "temporary",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "calcium hydrogencarbonate / calcium bicarbonate / (Ca(HCO₃)₂",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Or \"magnesium hydrogencarbonate / magnesium bicarbonate / (Mg(HCO₃)₂\"."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q7-a-iii",
+  "topicId": "chem-4-3",
+  "conceptId": "a-problem-caused-by-hard-water",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(iii)",
+  "questionText": "Identify a problem caused by hard water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "pipes blocked / limescale (fur) on (in) pipes (elements, kettles, boilers) / water heating costs higher / boilers less efficient / uses too much soap / makes scum with soap / difficult to make a lather with soap",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q7-a-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "an-advantage-of-hard-water",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)(iv)",
+  "questionText": "Give an advantage of hard water.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "tastes nice (good, better) / contains Ca²⁺ / good for bones (teeth, health) / good for brewing (distilling, tanning) industry",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q7-b-i-v",
+  "topicId": "chem-4-3",
+  "conceptId": "treating-a-drinking-water-supply",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)(i)–(v)",
+  "questionText": "(i) What term is used to describe the use of Al₂(SO₄)₃ causing suspended particles in the water to clump together? (ii) Give the purpose of sand and gravel in water purification. (iii) What is the purpose of adding chlorine to the water supply? (iv) Why is NaF added to the water? (v) Under what circumstance would lime (CaO) be added to the water supply?",
+  "stem": "Consider the following chemicals and materials used in the purification of a drinking water supply. Al₂(SO₄)₃ sand and gravel chlorine NaF lime (CaO)",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[8 + (2 × 6) + (2 × 3)]"
+  },
+  "totalMarks": 26,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "flocculation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "filtration / description of filtration / removal of suspended particles",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "to kill microorganisms (bacteria) that could cause illness / to kill pathogens (germs) / to sterilize / to avoid water becoming re-contaminated after purification",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘to clean water’.]"
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "to prevent tooth decay / NaF good for the teeth /strengthens enamel",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘fluoridation’ or ‘strengths teeth’.]"
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "water too acidic / pH too low / to increase pH / to prevent pipe corrosion",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [8 + (2 × 6) + (2 × 3)] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q8-a",
+  "topicId": "chem-4-2",
+  "conceptId": "naming-ethene-ethanal-and-ethanoic-acid",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(a)",
+  "questionText": "Name the compounds W, X and Y.",
+  "stem": "Study the reaction scheme below and answer the questions that follow.",
+  "figureKey": "chemistry-2018-OL-paper-q8",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[(2 × 6) + 3]"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "W: ethene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "X: ethanal",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Y: ethanoic acid",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Take names in order of question unless names clearly linked to letters W, X and Y.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [(2 × 6) + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q8-b",
+  "topicId": "chem-4-2",
+  "conceptId": "structure-of-ethanol",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(b)",
+  "questionText": "Draw the structure of an ethanol molecule.",
+  "stem": "Study the reaction scheme below and answer the questions that follow.",
+  "figureKey": "chemistry-2018-OL-scheme-q8b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the structure of an ethanol molecule.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ],
+  "notes": "Beside its drawing the scheme accepts \"CH₃CH₂OH / C₂H₅OH\"."
+ },
+ {
+  "id": "chem-2018-ol-q8-c",
+  "topicId": "chem-2-2",
+  "conceptId": "carbon-atoms-in-planar-geometry",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(c)",
+  "questionText": "In which one of the molecules, W, ethanol, X or Y, are all the carbon atoms in planar geometry?",
+  "stem": "Study the reaction scheme below and answer the questions that follow.",
+  "figureKey": "chemistry-2018-OL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "W / ethene",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept name given in (a).]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q8-d-i-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "classifying-the-two-conversions",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(d)(i)–(ii)",
+  "questionText": "(i) the conversion of W to ethanol, (ii) the conversion of X to Y.",
+  "stem": "Study the reaction scheme below and answer the questions that follow. Classify as an addition, as a substitution or as an oxidation reaction:",
+  "figureKey": "chemistry-2018-OL-paper-q8",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "addition / oxidation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "oxidation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q8-e",
+  "topicId": "chem-4-2",
+  "conceptId": "fehlings-test-on-ethanal",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(e)",
+  "questionText": "Describe what is observed when X reacts with Fehling’s reagent.",
+  "stem": "Study the reaction scheme below and answer the questions that follow.",
+  "figureKey": "chemistry-2018-OL-paper-q8",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "blue changes",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next together (6 + 3), or instead, (6 + 3), the pair \"brick red (orange) // precipitate formed\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to brick red (orange) precipitate",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for colours reversed.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q8-f",
+  "topicId": "chem-4-2",
+  "conceptId": "a-use-of-ethanoic-acid-in-food",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q8(f)",
+  "questionText": "Give a common use for Y in the food industry.",
+  "stem": "Study the reaction scheme below and answer the questions that follow.",
+  "figureKey": "chemistry-2018-OL-paper-q8",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "flavouring / preservative /pickling",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘vinegar’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-a",
+  "topicId": "chem-3-5",
+  "conceptId": "oxidation-and-reduction-as-electron-transfer",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)",
+  "questionText": "Define (i) oxidation, (ii) reduction, in terms of electron transfer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "loss of electrons",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "For (i). The scheme prices this point and the next (2 × 6), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "gain of electrons",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-b-i",
+  "topicId": "chem-3-5",
+  "conceptId": "element-oxidised-when-potassium-burns-in-chlorine",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(i)",
+  "questionText": "Which element is oxidised?",
+  "stem": "Potassium metal reacts violently with chlorine gas to form a white salt, potassium chloride, according to the following balanced equation. 2K + Cl₂ → 2KCl",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "potassium (K)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-b-ii",
+  "topicId": "chem-3-5",
+  "conceptId": "the-oxidising-agent",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)(ii)",
+  "questionText": "Which substance is the oxidising reagent?",
+  "stem": "Potassium metal reacts violently with chlorine gas to form a white salt, potassium chloride, according to the following balanced equation. 2K + Cl₂ → 2KCl",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chlorine (Cl₂, Cl)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-c-i",
+  "topicId": "chem-u2",
+  "conceptId": "flame-test-procedure",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(c)(i)",
+  "questionText": "Describe a procedure for carrying out a flame test on the white salt.",
+  "stem": "Potassium metal reacts violently with chlorine gas to form a white salt, potassium chloride, according to the following balanced equation. 2K + Cl₂ → 2KCl",
+  "figureKey": "chemistry-2018-OL-scheme-q9c-i",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Method 1. Or Method 2, \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", or Method 3, \"prepare a solution of the salt in water and ethanol (propanol)\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dip rod in salt and hold salt in (over) hot (blue) part of flame (Bunsen)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Method 1. Or Method 2, \"dip splint (stick) in salt and hold salt in (over) hot (blue) part of flame (Bunsen)\", or Method 3, \"spray solution onto (into) hot (blue) part of flame (Bunsen)\"."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "observe colour of flame",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Method 1. Or Method 2, \"observe colour of flame\", or Method 3, \"observe colour of flame\". The scheme adds: *[Allow ‘inoculating loop’, or ‘spatula’ for ‘platinum wire’.] [Clear labelled diagram for some or all points acceptable.]"
+   }
+  ],
+  "notes": "The scheme sets out three methods in a table, each in three steps priced (6), (5) and (1), (6 + 5 + 1) in all; the rows here are Method 1, and its own print of all three is shown with the answer."
+ },
+ {
+  "id": "chem-2018-ol-q9-c-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "flame-colour-of-potassium",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(c)(ii)",
+  "questionText": "What flame colour confirms the presence of potassium in this salt?",
+  "stem": "Potassium metal reacts violently with chlorine gas to form a white salt, potassium chloride, according to the following balanced equation. 2K + Cl₂ → 2KCl",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lilac (purple, violet)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-d",
+  "topicId": "chem-u2",
+  "conceptId": "test-for-chloride-ion",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(d)",
+  "questionText": "A little of the KCl salt is dissolved in water in a test‐tube and a few drops of silver nitrate (AgNO₃) solution are added to confirm the presence of the chloride ion. What is observed in the test‐tube?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "white / cloudy / milkiness / precipitate",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q9-e",
+  "topicId": "chem-1-3",
+  "conceptId": "why-potassium-is-more-reactive-than-sodium",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q9(e)",
+  "questionText": "Give a reason why potassium metal reacts more violently than sodium metal with chlorine gas.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "potassium has lower electronegativity / potassium has greater atomic radius / potassium is bigger / potassium has lower ionisation energy / potassium loses its outer electron more easily / potassium’s outer electron farther from nucleus / alkali metals more reactive down group / potassium is farther down group",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow equivalent opposite statements specifying sodium.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-a",
+  "topicId": "chem-3-4",
+  "conceptId": "acids-bases-and-neutralisation",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(a)",
+  "questionText": "An acid is defined as a substance that produces 1 ions in aqueous solution and a base as a substance that produces 2 ions in aqueous solution. An acid and a base react together to produce a 3 and 4 in a process called 5 . Indigestion remedies are often bases that react with excess 6 in the stomach. The base 7 is used in many oven cleaners and drain cleaners to dissolve grease. The following words and formulae are omitted from the passage above. OH⁻ neutralisation water H⁺ HCl salt NaOH Write in your answerbook the omitted word or formula corresponding to each of the numbers (1 to 7).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[7 + (6 × 3)]"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 H⁺",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2 OH⁻",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3 salt / water",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 water / salt",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "5 neutralisation",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "6 HCl (hydrochloric acid)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "7 NaOH (sodium hydroxide)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Same answer for 3 and 4 are unacceptable.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [7 + (6 × 3)] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2018-OL-paper-q10a-print"
+ },
+ {
+  "id": "chem-2018-ol-q10-b-i",
+  "topicId": "chem-1-2",
+  "conceptId": "definition-of-atomic-number",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(i)",
+  "questionText": "Define (i) atomic number, (ii) mass number, (iii) isotopes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "number of protons in an atom of an element",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘gives element’s position in periodic table of elements’ or ‘number of electrons in a neutral atom’.] For (i)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "definition-of-mass-number",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(ii)",
+  "questionText": "Define (i) atomic number, (ii) mass number, (iii) isotopes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "number of protons and neutrons in an atom of an element",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "definition-of-isotopes",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(iii)",
+  "questionText": "Define (i) atomic number, (ii) mass number, (iii) isotopes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "atoms of the same element / atoms with the same atomic number / atoms with same number of protons",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. For (iii)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "that have different atomic masses / that have different numbers of neutrons",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Number, quantity, amount protons or neutrons need only be mentioned once.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-iv",
+  "topicId": "chem-1-2",
+  "conceptId": "atomic-number-of-chlorine",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(iv)",
+  "questionText": "What is the atomic number of chlorine?",
+  "stem": "Refer to the periodic table of the elements on page 79 of the Formulae and Tables booklet and answer the following questions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "17",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-v",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-arrangement-of-chlorine",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(v)",
+  "questionText": "How many electrons occupy each of the main energy levels (shells) in a chlorine atom?",
+  "stem": "Refer to the periodic table of the elements on page 79 of the Formulae and Tables booklet and answer the following questions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2, 8, 7",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow correct Bohr diagram for (3); allow s, p configuration (3).]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-vi",
+  "topicId": "chem-1-2",
+  "conceptId": "relative-atomic-mass-of-chlorine",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(vi)",
+  "questionText": "What is the relative atomic mass of chlorine?",
+  "stem": "Refer to the periodic table of the elements on page 79 of the Formulae and Tables booklet and answer the following questions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "35.45 / 35.5",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-b-vii",
+  "topicId": "chem-1-2",
+  "conceptId": "why-chlorines-relative-atomic-mass-is-not-whole",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(b)(vii)",
+  "questionText": "Why is the relative atomic mass of chlorine not a whole number?",
+  "stem": "Refer to the periodic table of the elements on page 79 of the Formulae and Tables booklet and answer the following questions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "weighted average of the mass numbers of the isotopes as they occur naturally / chlorine has isotopes",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-c-i",
+  "topicId": "chem-1-4",
+  "conceptId": "a-mole-of-dinitrogen-oxide",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(c)(i)",
+  "questionText": "Copy and complete in your answerbook the following statement. ‘One mole of N₂O has a mass of …………… grams, contains ………………. N₂O molecules and occupies a volume of ……….. litres at s.t.p.’",
+  "stem": "The gas dinitrogen oxide (N₂O) can be used as an anaesthetic. It can be made by decomposing ammonium nitrate (NH₄NO₃) using heat according to the following balanced equation. NH₄NO₃ → N₂O + 2H₂O",
+  "figureKey": "chemistry-2018-OL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(14 × 2) + 16 = 44",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "6.0 × 10²³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "22.4",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-c-ii",
+  "topicId": "chem-1-4",
+  "conceptId": "molar-mass-of-ammonium-nitrate",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(c)(ii)",
+  "questionText": "What is the mass in grams of one mole of ammonium nitrate (NH₄NO₃)?",
+  "stem": "The gas dinitrogen oxide (N₂O) can be used as an anaesthetic. It can be made by decomposing ammonium nitrate (NH₄NO₃) using heat according to the following balanced equation. NH₄NO₃ → N₂O + 2H₂O",
+  "figureKey": "chemistry-2018-OL-paper-q10c",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "14 + (1 × 4) + 14 + (16 × 3) = 80",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q10-c-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "moles-of-water-and-volume-of-dinitrogen-oxide",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q10(c)(iii)",
+  "questionText": "When 16 g of NH₄NO₃ react according to the equation above, how many moles of water are formed? What volume does the N₂O gas produced occupy at s.t.p.?",
+  "stem": "The gas dinitrogen oxide (N₂O) can be used as an anaesthetic. It can be made by decomposing ammonium nitrate (NH₄NO₃) using heat according to the following balanced equation. NH₄NO₃ → N₂O + 2H₂O",
+  "figureKey": "chemistry-2018-OL-scheme-q10c-iii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.4 moles H₂O / 2/5 moles H₂O",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "For \"how many moles of water are formed?\" The scheme sets out the working that earns it in a box, (3) + (3)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "4.48 litres N₂O",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "For \"What volume does the N₂O gas produced occupy at s.t.p.?\" The scheme sets out the working that earns it in a box, (3) + (4)."
+   }
+  ],
+  "notes": "The scheme prices each answer and boxes the working beneath it; its own print of the working is shown with the answer."
+ },
+ {
+  "id": "chem-2018-ol-q11-a",
+  "topicId": "chem-1-1",
+  "conceptId": "three-states-of-matter",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a)",
+  "questionText": "Name the three states of matter.",
+  "stem": "Matter is composed of tiny particles which may be atoms, molecules or ions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "solid, liquid, gas",
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-a-i",
+  "topicId": "chem-1-2",
+  "conceptId": "difference-between-an-atom-and-an-ion",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a)(i)",
+  "questionText": "between an atom and an ion,",
+  "stem": "Matter is composed of tiny particles which may be atoms, molecules or ions. What is the difference:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ion is a charged atom (group of atoms) / atom has no charge and ion has a charge / atom has an equal numbers of protons and electrons and ion has an unequal numbers of protons and electrons",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-a-ii",
+  "topicId": "chem-1-1",
+  "conceptId": "difference-between-an-atom-and-a-molecule",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a)(ii)",
+  "questionText": "between an atom and a molecule?",
+  "stem": "Matter is composed of tiny particles which may be atoms, molecules or ions. What is the difference:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "molecule is two or more neutral atoms bonded together / atom is the smallest part of an element and molecule is the smallest part of a substance that can exist independently",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-a-diffusion",
+  "topicId": "chem-1-1",
+  "conceptId": "an-example-of-diffusion",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a) — after (ii), diffusion",
+  "questionText": "Diffusion is evidence for the movement of tiny particles in a liquid or in a gas. Give an example of diffusion.",
+  "stem": "Matter is composed of tiny particles which may be atoms, molecules or ions.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ink (dye, coloured crystal) in water (liquid) / smoke in air /scent from opened perfume bottle (gas tap, chemical with an odour, named chemical with strong odour) fills room / HCl and NH₃ at ends of glass tube / etc",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for description of diffusion.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-a-boyles-law",
+  "topicId": "chem-2-3",
+  "conceptId": "boyles-law",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(a) — after (ii), Boyle’s law",
+  "questionText": "Supply the missing words in the following statement of Boyle’s law: ‘The 1 of a certain mass of gas is inversely proportional to its 2 at constant 3 .’",
+  "stem": "Matter is composed of tiny particles which may be atoms, molecules or ions.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[3 + 3 + 2]"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1: pressure (volume)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. volume (pressure)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3: temperature",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Same answer for 1 and 2 are unacceptable.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [3 + 3 + 2] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2018-OL-paper-q11a-boyle-print"
+ },
+ {
+  "id": "chem-2018-ol-q11-b-i",
+  "topicId": "chem-3-3",
+  "conceptId": "definition-of-chemical-equilibrium",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(b)(i)",
+  "questionText": "Explain the underlined term.",
+  "stem": "Sulfuryl chloride (SO₂Cl₂) decomposes when heated to form equal volumes of chlorine (Cl₂) gas and sulfur dioxide (SO₂) gas. When some SO₂Cl₂ vapour was heated in a closed container at a certain temperature a chemical equilibrium was reached according to the following balanced equation. SO₂Cl₂ (g) ⇌ Cl₂ (g) + SO₂ (g) colourless green colourless",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "state where forward and reverse reactions",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "have equal rates",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2018-OL-paper-q11b-i-print"
+ },
+ {
+  "id": "chem-2018-ol-q11-b-ii",
+  "topicId": "chem-3-3",
+  "conceptId": "kc-expression-for-sulfuryl-chloride",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(b)(ii)",
+  "questionText": "Write the equilibrium constant (Kc) expression for this reaction.",
+  "stem": "Sulfuryl chloride (SO₂Cl₂) decomposes when heated to form equal volumes of chlorine (Cl₂) gas and sulfur dioxide (SO₂) gas. When some SO₂Cl₂ vapour was heated in a closed container at a certain temperature a chemical equilibrium was reached according to the following balanced equation. SO₂Cl₂ (g) ⇌ Cl₂ (g) + SO₂ (g) colourless green colourless",
+  "figureKey": "chemistry-2018-OL-scheme-q11b-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Write the equilibrium constant (Kc) expression for this reaction.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [Allow (3) for expression inverted.] [Square brackets not essential.]",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-b-iii-iv",
+  "topicId": "chem-3-3",
+  "conceptId": "changing-the-colour-of-the-equilibrium-mixture",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(b)(iii)–(iv)",
+  "questionText": "(iii) Predict the effect on the colour of this equilibrium mixture of increasing the pressure by compressing the gases as shown. (iv) Give another way to change the colour of this equilibrium mixture – other than by changing its pressure.",
+  "stem": "Sulfuryl chloride (SO₂Cl₂) decomposes when heated to form equal volumes of chlorine (Cl₂) gas and sulfur dioxide (SO₂) gas. When some SO₂Cl₂ vapour was heated in a closed container at a certain temperature a chemical equilibrium was reached according to the following balanced equation. SO₂Cl₂ (g) ⇌ Cl₂ (g) + SO₂ (g) colourless green colourless According to Le Châtelier’s principle, changing certain factors causes stress to a system in equilibrium.",
+  "figureKey": "chemistry-2018-OL-paper-q11b",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[9 + 3]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "loses colour / becomes paler / becomes less green",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept ‘colourless’.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "change temperature / heat (cool)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘add (remove, change concentration of) a chemical in equilibrium mixture’.]"
+   }
+  ],
+  "notes": "The scheme prices these points together as [9 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q11-c-a-i-ii",
+  "topicId": "chem-1-3",
+  "conceptId": "metals-and-plastics-compared",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)A(i)–(ii)",
+  "questionText": "How do most metals compare to most plastics in terms of (i) hardness, (ii) lustre?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "a metal is hard(er) / plastics are soft(er)",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (i)."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a metal is shiny (shinier) / metal has more sheen (lustre) / plastics are often shiny",
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (ii)."
+   }
+  ],
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2018-ol-q11-c-a-pvc-in-cable",
+  "topicId": "chem-4-2",
+  "conceptId": "why-pvc-suits-electrical-cable",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)A — after (ii), PVC in electrical cable",
+  "questionText": "What property of the plastic PVC makes it suitable for use in electrical cable?",
+  "stem": "Copper is used as a building material for roofing, plumbing and wiring. The plastic poly(chloroethene), or PVC, is used for plumbing and in electrical cable.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "electrical insulation / it doesn’t conduct electricity / flexible",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-c-a-pvc-for-plumbing",
+  "topicId": "chem-4-2",
+  "conceptId": "an-advantage-of-pvc-plumbing",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)A — after (ii), PVC for plumbing",
+  "questionText": "Give an advantage of using PVC for plumbing in place of copper pipes.",
+  "stem": "Copper is used as a building material for roofing, plumbing and wiring. The plastic poly(chloroethene), or PVC, is used for plumbing and in electrical cable.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lighter / no corrosion / noise reduction / cheaper / better insulated / no corrosion / more energy efficient",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow ‘flexible’, ‘easier to join’.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-c-a-iii-iv",
+  "topicId": "chem-1-3",
+  "conceptId": "malleability-and-ductility",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)A(iii)–(iv)",
+  "questionText": "(iii) hammered or rolled into sheets for use in roofing, (iv) drawn into long strands for use in wiring?",
+  "stem": "Copper is used as a building material for roofing, plumbing and wiring. The plastic poly(chloroethene), or PVC, is used for plumbing and in electrical cable. What metallic property allows copper to be:",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "malleability (malleable)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "For (iii). The scheme prices this point and the next (2 × 2), one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ductility (ductile)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "For (iv)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-c-b-i",
+  "topicId": "chem-u3",
+  "conceptId": "formula-of-the-main-product",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)B(i)",
+  "questionText": "State the formula of the main product of the industry you studied.",
+  "stem": "Answer the questions below about any one of these three case studies: industrial production of ammonia, industrial production of nitric acid, industrial production of magnesium oxide.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "NH₃ / HNO₃ / MgO",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2018-ol-q11-c-b-ii",
+  "topicId": "chem-u3",
+  "conceptId": "major-use-of-the-main-product",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)B(ii)",
+  "questionText": "What is the major use of this product?",
+  "stem": "Answer the questions below about any one of these three case studies: industrial production of ammonia, industrial production of nitric acid, industrial production of magnesium oxide.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "NH₃: make fertilizer (urea, ammonium nitrate, ammonium sulfate, nitric acid, nylon)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any one of these: the one for the industry studied.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "NH₃: make fertilizer (urea, ammonium nitrate, ammonium sulfate, nitric acid, nylon)",
+      "HNO₃: fertilizer (ammonium nitrate, calcium ammonium nitrate, CAN, explosive) manufacture",
+      "MgO: refractory / fire brick / lining chimneys (furnaces)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme gives the answer for each of the three industries; only the one for the industry the candidate studied, named in (i), earns the marks. The scheme adds: [Response to WHAT is linked to response to STATE.]"
+ },
+ {
+  "id": "chem-2018-ol-q11-c-b-iii",
+  "topicId": "chem-u3",
+  "conceptId": "feedstocks-of-the-industry-studied",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)B(iii)",
+  "questionText": "Select, from the left of the scheme below, two feedstock materials for the industry you studied.",
+  "stem": "Answer the questions below about any one of these three case studies: industrial production of ammonia, industrial production of nitric acid, industrial production of magnesium oxide.",
+  "figureKey": "chemistry-2018-OL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "NH₃: H₂ in natural gas or coal",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any two of these, from the line of the industry studied.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "NH₃: H₂ in natural gas or coal",
+      "N₂ in air",
+      "river water",
+      "HNO₃: ammonia",
+      "O₂ in air",
+      "MgO: seawater",
+      "limestone"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme gives the answer for each of the three industries; only the one for the industry the candidate studied, named in (i), earns the marks. The scheme sets each industry's feedstocks on a line of its own -- NH₃, then HNO₃, then MgO, each line ending \"river water\" -- and prices the part \"ANY TWO FROM ONE LINE: (2 × 3)\". The scheme adds: [Response to SELECT is linked to response to STATE.]"
+ },
+ {
+  "id": "chem-2018-ol-q11-c-b-iv",
+  "topicId": "chem-u3",
+  "conceptId": "infrastructure-an-industry-needs",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)B(iv)",
+  "questionText": "Select an infrastructural feature from the right of the scheme below and explain how it is essential in the industry you studied.",
+  "stem": "Answer the questions below about any one of these three case studies: industrial production of ammonia, industrial production of nitric acid, industrial production of magnesium oxide.",
+  "figureKey": "chemistry-2018-OL-paper-q11c-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "transport network: to transport feedstock (workers, product)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Any one of these.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "transport network: to transport feedstock (workers, product)",
+      "third-level institute: to supply educated workforce",
+      "power supply: to provide energy for furnaces (kilns, pumps)",
+      "telecommunications: to allow communications with suppliers (market, customers, workforce)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme sets out each feature on the right of the paper's picture with the explanation it accepts, and prices the part \"ANY EXPLANATION: (6)\". The scheme adds: [Response to SELECT is linked to response to STATE.]"
+ },
+ {
+  "id": "chem-2018-ol-q11-c-b-v",
+  "topicId": "chem-u3",
+  "conceptId": "dealing-with-emissions-or-waste-effluent",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2018 OL Q11(c)B(v)",
+  "questionText": "How does the industry you studied deal with either emissions or waste effluent?",
+  "stem": "Answer the questions below about any one of these three case studies: industrial production of ammonia, industrial production of nitric acid, industrial production of magnesium oxide.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "NH₃: scrubbers (filters, electrostatic precipitation) to remove dust (ammonia)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Any one of these: the first three are the scheme's answers for emissions, the last three for waste effluent.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "NH₃: scrubbers (filters, electrostatic precipitation) to remove dust (ammonia)",
+      "HNO₃: scrubbers (filters, electrostatic precipitation) to remove oxides of / nitrogen (ammonia)",
+      "MgO: scrubbers (filters, electrostatic precipitation) to remove dust",
+      "NH₃: remove ammonia or nitrates from waste water before release from plant / adjust pH of water",
+      "HNO₃: remove ammonia or nitrates from waste water before release from plant / adjust pH of water",
+      "MgO: remove suspended solids from water / adjust pH of water"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme gives the answer for each of the three industries; only the one for the industry the candidate studied, named in (i), earns the marks. The question asks for either emissions or waste effluent, and the scheme sets out both for each industry. In the HNO₃ emissions answer the scheme prints its solidus between \"oxides of\" and \"nitrogen (ammonia)\", where its line wraps. The scheme adds: [Response to HOW is linked to response to STATE.]"
  }
 ]
