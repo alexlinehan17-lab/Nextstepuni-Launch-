@@ -258,7 +258,13 @@ describe('every card traces to the marking scheme on disk', () => {
           // Rows read "Label — answer"; the answer is what the scheme prints.
           : [row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim];
         for (const claim of claims) {
-          if (!claimMatches(scheme, claim)) bad.push(`${card.questionRef}: "${claim}"`);
+          // As the build: a menu option pairing a label with its value, read
+          // from a scheme table ("thoracic — 12"), traces when each half does.
+          const halves = row.kind === 'anyN' ? claim.split(/\s—\s/) : [];
+          if (!claimMatches(scheme, claim)
+            && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+            bad.push(`${card.questionRef}: "${claim}"`);
+          }
         }
       }
     }

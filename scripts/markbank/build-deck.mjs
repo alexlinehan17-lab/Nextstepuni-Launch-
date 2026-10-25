@@ -1488,7 +1488,16 @@ for (const c of cards) {
   for (const r of [c.rows, ...(c.answerVariants ?? []).map(variant => variant.rows), ...(c.questionBonus ? [[c.questionBonus]] : [])].flat()) {
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
-      if (!claimMatches(scheme, claim)) untraceable.push(claim);
+      // A menu option that pairs a label with its value ("thoracic — 12") was
+      // read from a scheme TABLE, names in one row and numbers in the next
+      // (2017 HL Biology Q15(b)(i)), so the two are never adjacent in the text
+      // layer. It traces when each half does; a whole option still traces as
+      // it always did.
+      const halves = r.kind === 'anyN' ? String(claim).split(/\s—\s/) : [];
+      if (!claimMatches(scheme, claim)
+        && !(halves.length === 2 && halves.every(half => half.trim() && claimMatches(scheme, half)))) {
+        untraceable.push(claim);
+      }
     }
   }
   if (untraceable.length) {
