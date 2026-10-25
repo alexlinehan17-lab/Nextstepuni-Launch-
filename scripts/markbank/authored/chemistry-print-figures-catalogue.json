@@ -2522,5 +2522,327 @@
   "description": "The marking scheme's own print of its answer to 2019 OL Q10(c)(i), as the State Examinations Commission set it: (c) (i) WHAT: 108 g (3); HOW MANY: 0.1 moles Ag (6), boxed as n = m over Aᵣ = 10.8 over 108 = 0.1 moles silver (6).",
   "questionRef": "2019 OL Q10(c)(i)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "Three closed sample bottles with black screw caps, labelled \"Ethanoic Acid\", \"Ethanal\" and \"Ethanol\", each bearing hazard pictograms: a flame and a corrosion pictogram on the ethanoic acid; a health-hazard pictogram, a flame and an exclamation mark on the ethanal; a flame and an exclamation mark on the ethanol. Three plastic dropping pipettes lie in front of them.",
+  "questionRef": "2019 HL Q2"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q2c-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation C₂H₅OH → C₂H₄ + H₂O.",
+  "questionRef": "2019 HL Q2(c)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q2c-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q2(c)(i): \"(c) The student was asked to prepare a small quantity of ethene from ethanol using the reaction shown by the balanced equation below. A suitable catalyst and a heat source were provided.\" and the equation C₂H₅OH → C₂H₄ + H₂O; then \"(i) Draw a diagram of an arrangement of apparatus for the preparation and collection of ethene. Indicate clearly on your diagram the location of the ethanol, the catalyst, the heat source, and the ethene produced.\"",
+  "questionRef": "2019 HL Q2(c)(i)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q2c-iv-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q2(c)(iv): \"(c) The student was asked to prepare a small quantity of ethene from ethanol using the reaction shown by the balanced equation below. A suitable catalyst and a heat source were provided.\" and the equation C₂H₅OH → C₂H₄ + H₂O; then \"(iv) A student prepared ethene, starting with 2.9 cm³ of ethanol (density 0.8 g cm⁻³). Calculate the volume of ethene gas produced in 26% yield when measured at room temperature and pressure. (30)\"",
+  "questionRef": "2019 HL Q2(c)(iv)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A smart phone showing a barometer headed \"Atmospheric Pressure\": a dial marked 850, 900, 950, 1000, 1050 and 1100, \"hPa\", with weather symbols, its needle just past 1000, and below it the reading \"1011 hPa\".",
+  "questionRef": "2019 HL Q3"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q3a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q3(a): \"3. To determine the relative molecular mass (Mr) of compound X, a volatile liquid, a small volume of the pure liquid was vaporised in a suitable container. The atmospheric pressure at the location was obtained using a smart phone barometric sensor, as shown below.\"; then \"(a) Draw a large, labelled diagram of an arrangement of apparatus you used to carry out this experiment.\"; below, a smart phone showing a barometer headed \"Atmospheric Pressure\", its dial marked 850 to 1100 hPa with weather symbols and its needle just past 1000, and the reading \"1011 hPa\".",
+  "questionRef": "2019 HL Q3(a)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q3a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q3(a)(i): \"3. To determine the relative molecular mass (Mr) of compound X, a volatile liquid, a small volume of the pure liquid was vaporised in a suitable container. The atmospheric pressure at the location was obtained using a smart phone barometric sensor, as shown below.\"; then \"(a) Draw a large, labelled diagram of an arrangement of apparatus you used to carry out this experiment. Show in your diagram\" and \"(i) how X was vaporised,\"; below, a smart phone showing a barometer headed \"Atmospheric Pressure\", its dial marked 850 to 1100 hPa with weather symbols and its needle just past 1000, and the reading \"1011 hPa\".",
+  "questionRef": "2019 HL Q3(a)(i)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q3a-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q3(a)(ii): \"3. To determine the relative molecular mass (Mr) of compound X, a volatile liquid, a small volume of the pure liquid was vaporised in a suitable container. The atmospheric pressure at the location was obtained using a smart phone barometric sensor, as shown below.\"; then \"(a) Draw a large, labelled diagram of an arrangement of apparatus you used to carry out this experiment. Show in your diagram\" and \"(ii) how the temperature of the vapour was obtained. (11)\"; below, a smart phone showing a barometer headed \"Atmospheric Pressure\", its dial marked 850 to 1100 hPa with weather symbols and its needle just past 1000, and the reading \"1011 hPa\".",
+  "questionRef": "2019 HL Q3(a)(ii)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q3d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q3(d): \"3. To determine the relative molecular mass (Mr) of compound X, a volatile liquid, a small volume of the pure liquid was vaporised in a suitable container. The atmospheric pressure at the location was obtained using a smart phone barometric sensor, as shown below.\"; then \"(d) Calculate, correct to the nearest whole number, the relative molecular mass of X, given that 0.22 g of X occupied a volume of 76 cm³ at a pressure of 1.011 × 10⁵ Pa and a temperature of 99 °C. (15)\"; below, a smart phone showing a barometer headed \"Atmospheric Pressure\", its dial marked 850 to 1100 hPa with weather symbols and its needle just past 1000, and the reading \"1011 hPa\".",
+  "questionRef": "2019 HL Q3(d)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q4b-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q4(b): \"(b) Bananas contain small quantities of potassium-40, a radioactive isotope. What is the daughter nucleus when K-40 emits an electron in beta decay?\" above a photograph of a bunch of bananas.",
+  "questionRef": "2019 HL Q4(b)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q4f-eq.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's half-equation 2I⁻ (aq) → I₂ (aq) + 2e⁻.",
+  "questionRef": "2019 HL Q4(f)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q4i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q4(i): \"(i) The structure of ibuprofen is shown. Ibuprofen is the active ingredient in many fever and pain-relief suspensions given to children. A single 5 cm³ dose, suitable for children aged 1 to 3 years, contains 4.86 × 10⁻⁴ moles of ibuprofen. How many milligrams of ibuprofen are in this single dose?\" above the structure of ibuprofen: a benzene ring bonded above to a carbon carrying H and CH₃ and joined to a C double-bonded to O and bonded to OH, and below to CH₂, then CH, which carries H₃C and CH₃.",
+  "questionRef": "2019 HL Q4(i)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q5.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph looking up at building columns faced with large periodic-table tiles, among them B, C, Al, Si, Ga, Ge, In, Sn, Tl, Pb, 113 Nh, 114 Fl, N, O, P, S, As, Se, Sb, Te, Bi, Po, 115 Mc, 116 Lv, He, Ne, 67 Ho and 68 Er.",
+  "questionRef": "2019 HL Q5"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q5b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q5(b)(i): \"(b) Modern periodic tables arrange the elements in order of atomic number and not in order of relative atomic mass.\" with \"atomic number\" and \"relative atomic mass\" underlined, then \"(i) Define the underlined terms.\"",
+  "questionRef": "2019 HL Q5(b)(i)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q6a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of three structures: A, H₃C—CH₂—CH₂—CH₂—CH₃; B, H₃C—CH—CH₂—CH₃ with a CH₃ above the CH; C, H₃C—C—CH₃ with a CH₃ above and a CH₃ below the central C.",
+  "questionRef": "2019 HL Q6(a)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q7b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation 2H₂O (l) ⇌ H₃O⁺ (aq) + OH⁻ (aq), above its table of Temperature (°C) against Kw: 0, 0.1 × 10⁻¹⁴; 10, 0.3 × 10⁻¹⁴; 20, 0.7 × 10⁻¹⁴; 30, 1.4 × 10⁻¹⁴; 40, 2.9 × 10⁻¹⁴; 50, 5.3 × 10⁻¹⁴; 60, 9.3 × 10⁻¹⁴.",
+  "questionRef": "2019 HL Q7(b)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Alcohol against Boiling point (°C): methanol 64.7; ethanol 78.4; propan-1-ol 97.2; propan-2-ol 82.4; butan-1-ol 117.5; butan-2-ol 99.1.",
+  "questionRef": "2019 HL Q8"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q9.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's equation 2A (g) → B (g) + 3C (g), with X over the arrow, above its graph of Concentration (M), 0 to 0.004 in steps of 0.0005, against Time (s), 0 to 3000 in steps of 500, with a key to three plotted curves: C rises from 0 through 0.002 at 500 s and 0.003 at 1000 s and levels off near 0.0036; B rises from 0 and levels off near 0.0012; A falls from 0.0024 at 0 s to near 0 by 2000 s.",
+  "questionRef": "2019 HL Q9"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q9d-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q9(d): \"9. A reacts, heterogeneously catalysed by X, to form B and C at temperature T according to the following balanced equation:\" 2A (g) → B (g) + 3C (g), with X over the arrow, \"The graph shows that 0.0024 moles per litre of A decomposes to produce 0.0036 moles per litre of C over 3000 seconds.\"; then \"(d) Without X this reaction has a large activation energy. Explain the underlined term. State and explain two ways of increasing the rate of this reaction, other than by using a catalyst. (18)\" with \"activation energy\" underlined.",
+  "questionRef": "2019 HL Q9(d)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q10a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 HL Q10(a): \"(a) The mechanism for the substitution reaction between methane and chlorine in ultraviolet light involves free radicals.\" with \"free radicals\" underlined, then \"(i) Explain the underlined term. (ii) How are chlorine free radicals formed at the initiation stage of this reaction? (iii) What name is given to the stage of the mechanism where a chain reaction is occurring? Write balanced equations, using dots to label the free radicals, for the two reactions that repeat in the chain reaction to give chloromethane and hydrogen chloride. (iv) Identify a hydrocarbon formed in the process. Explain why only a trace quantity of this product is formed. (25)\"",
+  "questionRef": "2019 HL Q10(a)"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white photograph of two tall industrial chimneys releasing smoke into a cloudy sky, with a bare tree in the foreground and plant buildings below.",
+  "questionRef": "2019 HL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2019-HL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a squeeze bottle with a long nozzle, its label reading \"ELEMENT\", \"6\", \"DRY POWDERED GRAPHITE\", \"LUBRICANT, 50 g\" and \"50 g\", with a key drawn on it.",
+  "questionRef": "2019 HL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q1d-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q1(d)(iii), as the State Examinations Commission set it: (iii) 0.00009375 (9.375 × 10⁻⁵, 3/32000)) moles /l (M) of O₂ (3); boxed, 0.00001875 (1.875 × 10⁻⁵, 3/160000) × 5 = 0.00009375 (9.375 × 10⁻⁵, 3/32000) moles /l (M) of O₂ (3), [Multiply by 5 essential.]; or, boxed, 200 × M over 1 = 6 × 0.0125 over 4 ⇒ M = 0.00009375 (9.375 × 10⁻⁵, 3/32000) moles /l (M) of O₂ (3).",
+  "questionRef": "2019 HL Q1(d)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q2c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q2(c)(i), as the State Examinations Commission set it: DRAW: horizontal (slanting) test tube with delivery tube shown // collection over water shown (2 × 3); LABEL: a drawing of a stoppered horizontal test tube, its closed end labelled \"glass wool soaked in ethanol\", a solid in its middle labelled \"catalyst / Al₂O₃\" heated by a Bunsen burner labelled \"heat\", and its delivery tube leading into a trough of water under an inverted test tube labelled \"ethene\"; then \"[Locations of ethanol, ethene, catalyst (Al₂O₃) must be labelled; location of heat source labelled or Bunsen shown.]\" and \"FOUR CORRECT LOCATIONS: (4 × 1)\".",
+  "questionRef": "2019 HL Q2(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q2c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q2(c)(iv), as the State Examinations Commission set it: (iv) CALCULATE: 300 to 315 cm³ / 0.300 to 0.315 litres (8); boxed, density = mass over volume ⇒ 0.8 = mass over 2.9 ⇒ m = 0.80 × 2.9 = 2.32 g (✓), 2.32 over 46* = 0.0504 moles ethanol used (✓); then either ⇒ 0.0504 × 26 over 100 = 0.013104 actual mol ethene (✓) and 0.013104 × 24,000 = 300 - 315 cm³ ethene / 0.013104 × 24.0 = 0.300 - 0.315 litres ethene (✓), or 0.0504 × 24, 000 = 1200 - 1210 cm³ ethene in theory / 0.0504 × 24.0 = 1.21 litres ethene in theory (✓) and ⇒ 1200 × 26 over 100 = 300 - 315 cm³ ethene / ⇒ 1.21 × 26 over 100 = 0.300 - 0.315 litres ethene (✓); the rounding note; \"Four ticks: mass, moles, percentage, volume or mass, moles, volume, percentage. Award 3 marks for each of the first two correct ticks and 1 mark for each remaining correct tick. (3 + 3 + 1 + 1)\"; or, taking the percentage first, 2.9 × 26 over 100 = 0.754 cm³ ethanol (✓), m = 0.80 × 0.754 = 0.6032 g (✓), 0.6032 over 46* = 0.013104 moles ethanol used (✓) / m = 0.80 × 2.9 = 2.32 g (✓), 2.32 × 26 over 100 = 0.6032 g (✓), 0.6032 over 46* = 0.013104 moles ethanol used (✓); then 0.013104 × 24,000 = 300 - 315 cm³ ethene / 0.013104 × 24.0 = 0.300 - 0.315 litres ethene (✓); \"Do not penalise if volume of 22.4 litres or 22 400 cm³ used.\", the rounding note and the same tick rule.",
+  "questionRef": "2019 HL Q2(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q3a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q3(a), as the State Examinations Commission set it: DRAW: (5) conical flask approximately ¾ immersed (up to neck) in beaker of water // foil (tinfoil, aluminium, Al) lid / bung // pinhole and rubber band / small hole in bung, \"Three items: (2 + 2 + 1)\" [Any one correct label on drawing essential for these marks to be awarded.]; SHOW: (i) hotplate (Bunsen burner, heating mantle, heat source) under beaker (4), (ii) thermometer (temperature probe, temperature sensor) in water (beaker, flask) (2) [Labels not essential on heat source or thermometer provided one other label present.]; a drawing of a conical flask standing in a beaker of water on a hotplate, a thermometer in the water, labelled pinhole, rubber band, aluminium foil, vapour, water, thermometer and hotplate; or DRAW: (5) gas (large) syringe // rubber seal (septum, self-sealing cap) // injected by hypodermic (small) syringe, \"Three items: (2 + 2 + 1)\" [Syringes should be recognisable; injection shown or mentioned.] [Any one correct label on drawing essential for these marks to be awarded.]; SHOW: (i) oven (furnace in box, bulb in box) heats gas syringe / steam flow through box heats gas syringe / water bath heats gas syringe (4), (ii) thermometer (temperature probe, temperature sensor) in oven (box, steam jacket, water bath) (2) [Labels not essential on heat source or thermometer provided one other label present.]; a drawing of a gas syringe in a box, labelled thermometer, gas syringe, oven, vapour, rubber seal, plunger and hypodermic (small) syringe.",
+  "questionRef": "2019 HL Q3(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q3d.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q3(d), as the State Examinations Commission set it: CALCULATE: 88 [88 or 89] (15); boxed, n = pV over RT / pV = nRT (5); n = 1.011 × 10⁵ × 76 × 10⁻⁶ over 8.3 × 372.15 / 1.011 × 10⁵ × 76 × 10⁻⁶ = n × 8.3 × 372.15 (3) [Use of Kelvin essential here] [Apply slip error once to pressure not in Pa and/or volume not in m³.]; n = 2.49 × 10⁻³ moles [2.48 × 10⁻³ – 2.49 × 10⁻³ moles] (3); or, boxed, p₁V₁ over T₁ = p₂V₂ over T₂ / V₁ over T₁ = V₂ over T₂ (5); 101.1×76 over 372.15 = 101.325×V₂ over 273.15 / v₂ = 101.1×76×273.15 over 101.325×372.15 / v₂ = 76×273.15 over 372.15 / V₂ = 55.65 – 55.7 cm³ (3) [Use of Kelvin essential here]; n = 55.66 over 22400 = 2.48 × 10⁻³ moles [2.48 × 10⁻³ – 2.49 × 10⁻³ moles] (3) [Treat a mathematical slip incorrect power of ten in answer.]; and, boxed, n = m over Mr / Mr = m over n / Mr = 0.22 over 2.49 × 10⁻³ (2); Mr = 88.4 = 88 [88 or 89]* (2); \"Allow relative molecular mass of X not rounded to whole number. Do not penalise where relative molecular mass of X is labelled g.\"",
+  "questionRef": "2019 HL Q3(d)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q4b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q4(b), as the State Examinations Commission set it: calcium-40 / Ca-40 / and the symbol Ca written twice with 40 and 20 set before it, once 40 above 20 and once 20 above 40.",
+  "questionRef": "2019 HL Q4(b)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q4e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q4(e), as the State Examinations Commission set it: a two-column table headed \"sigma (σ):\" and \"pi (π):\", line by line: formed from end-on (head-on) overlap* of orbitals | formed from sideways (lateral) overlap* of orbitals; overlap parallel to (along) the bond-axis | overlap perpendicular to (on either side of, above and below) bond axis; involves any type of orbital / involves s or p, etc orbitals / can involve s orbitals | involves p or d etc orbitals / involves p or d etc orbitals / cannot involve s orbitals; an empty line; symmetrical with regard to rotation around bond axis / allows rotation around bond axis | not symmetrical with regard to rotation around bond axis / restricts rotation around bond axis; involves good (more) of overlap* of orbitals | involves poor (less) overlap* of orbitals; stronger / not easily broken | weaker / easily broken; formed first / formed alone / formed alone | only formed after sigma formed / pi cannot exist on its own / always involve (accompany) sigma bond; associated with single (all covalent) bonds | associated with multiple (double, triple) covalent bonds; determine shape of molecule | do not determine shape of molecule. Many of the statements are set in italics.",
+  "questionRef": "2019 HL Q4(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q4i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q4(i), as the State Examinations Commission set it: boxed, Mr = 206*; n = m over Mr ⇒ 4.86 × 10⁻⁴ × 206 = 0.100 g ⇒ 100.116 mg (2 × 3).",
+  "questionRef": "2019 HL Q4(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q4k-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q4(k)B, as the State Examinations Commission set it: a table of ways of drawing two repeating units of poly(propene): —CH—CH₂—CH—CH₂— with a CH₃ above each CH; a chain of four carbons with CH₃, H, CH₃, H above and H below each; a chain of four carbons with CH₃, H, H, H above and H, H, CH₃, H below; one unit, a carbon with CH₃ above and H below bonded to a carbon with H above and below, in square brackets with a subscript 2; and three zig-zag skeletal forms with methyl branches separated by \"/\", two of them in brackets with a subscript 2; then \"Correct carbon skeleton (6 carbons) with methyl groups on alternate carbons\" and \"[Hs need not be shown explicitly; end bonds need not be shown.]\"",
+  "questionRef": "2019 HL Q4(k)B",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q6c-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q6(c)(iii), as the State Examinations Commission set it: CALCULATE: –6,277.7 kJ mol⁻¹ (17), in four boxed routes: ΔH = ΣΔHformation products – ΣΔHformation reactants = –6,296 kJ (3) + (–5,716) (3) + (–438.0) kJ (3) – (105.4) kJ (3), or = –12,450 kJ (9) – 105.4 kJ (3), and = –12,555.4 kJ mol⁻¹ (3), ΔHcombustion = –12 555.4 ÷ 2 = –6,277.7 kJ mol⁻¹ (2); or ΔHcombustion = ΣΔHformation products – ΣΔHformation reactants = –3,148 kJ (3) + (–2,858) kJ (3) + (–219.0) kJ (3) – (52.7) kJ (3), or = –6,225 kJ (9) – 52.7 kJ (3), and ΔHcombustion = –6,277.7 kJ mol⁻¹ (5); or 16C + 16O₂ → 16CO₂ ΔH = –6,296 kJ (3), 20H₂ + 10O₂ → 20H₂O ΔH = –5,716 kJ (3), 2Pb + O₂ → 2PbO ΔH = –438.0 kJ (3), 2(C₂H₅)₄Pb → 16C + 20H₂ + 2Pb ΔH = –105.4 kJ (3), giving 2(C₂H₅)₄Pb + 27O₂ → 16CO₂ + 20H₂O + 2PbO ΔH = –12,555.4 kJ mol⁻¹ (3) and ΔHcombustion = –12,555.4 ÷ 2 = –6,277.7 kJ mol⁻¹ (2); or 8C + 8O₂ → 8CO₂ ΔH = –3,148 kJ (3), 10H₂ + 5O₂ → 10H₂O ΔH = –2,858 kJ (3), Pb + ½ O₂ → PbO ΔH = –219.0 kJ (3), (C₂H₅)₄Pb → 8C + 10H₂ + Pb ΔH = –52.7 kJ (3), giving (C₂H₅)₄Pb + 13½O₂ → 8CO₂ + 10H₂O + PbO ΔHcombustion = –6,277.7 kJ mol⁻¹ (5); then \"Mixing and matching from different boxes not acceptable. Equations not essential, however:\" and two Final Answer rules: \"8CO₂ + 10H₂O + PbO → (C₂H₅)₄Pb + 13½O₂ ΔH = 6,277.7 kJ is worth 14 marks only with this equation / 6,277.7 kJ is worth 5 marks if accompanied by any other equation or by no equation\" and \"16CO₂ + 20H₂O + 2PbO → 2(C₂H₅)₄Pb + 27O₂ ΔH = 12,555.4 kJ is worth 12 marks only with this equation 12,555.4 kJ is worth 3 marks if accompanied by any other equation or by no equation\".",
+  "questionRef": "2019 HL Q6(c)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q8b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q8(b)(ii), as the State Examinations Commission set it: (3); a table of three forms of butanone: four carbons drawn in full, H—C—C—C—C—H, with a C=O on the third carbon and H atoms on the others, and \"[Hs need not be explicitly shown.]\"; H₃C—CH₂—C—CH₃ with a C=O; and CH₃CH₂COCH₃.",
+  "questionRef": "2019 HL Q8(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q8b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q8(b)(iii), as the State Examinations Commission set it: (6) OH bond // CH bond of carbon to which OH (hydroxyl, alcohol group, functional group) is attached / CH bond with OH (hydroxyl, functional group) attached to same C / CH bond of carbon (C) 2, \"TWO BONDS: (4 + 2)\", \"[Information acceptable in diagram form.]\", \"[Allow corresponding bonds in incorrect secondary alcohols.]\"; beside a drawing of butan-2-ol, four carbons with their H atoms and an OH on the third from the left, its O—H bond boxed and the C—H bond of the same carbon boxed.",
+  "questionRef": "2019 HL Q8(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q8c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q8(c)(i), as the State Examinations Commission set it: a table of three forms of the ester: H—C—C—C—O—C—H drawn in full with a C=O on the third carbon and H atoms on the others, and \"[Hs need not be explicitly shown.]\"; H₃C—CH₂—C—O—CH₃ with a C=O; and CH₃CH₂COOCH₃.",
+  "questionRef": "2019 HL Q8(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q9a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q9(a), as the State Examinations Commission set it: change in concentration per unit time (rate of change of concentration, change in concentration over time) of one reactant (product); or d[reactant] over dt / −d[reactant] over dt / d[product] over dt.",
+  "questionRef": "2019 HL Q9(a)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q10a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q10(a)(ii), as the State Examinations Commission set it: Cl₂ → 2Cl• with uv over the arrow / Cl—Cl → 2Cl• with uv over the arrow / Cl—Cl with two curly arrows and uv above them / chlorine molecule (bond) broken to give two chlorine free radicals / homolysis (homolytic fission) of Cl₂ by ultraviolet (uv) light (✓) [uv not essential]",
+  "questionRef": "2019 HL Q10(a)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q10b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q10(b)(ii), as the State Examinations Commission set it: a two-column table headed \"Bohr orbit\" and \"orbital\", line by line: pathway / 2-dimensional | region (space, volume) / 3-dimensional; capacity 2n² electrons / capacity 2, 8, etc electrons | capacity 2 electrons; electron definitely located there | high probability of finding electron there; an empty line; fixed distance from nucleus / circle (circular) | no fixed distance from nucleus / not circular / spheres, dumbbells, etc; definite shape (size) | no absolute (definite) boundary (size); inconsistent with wave properties of electron | electron can have wave properties; uncertainty principle not taken into account | uncertainty principle taken into account; the lines after the empty one in italics; then \"ANY TWO LINES FROM TABLE: (2 × 3)\" and \"[Where line is in italics statement on either side can be taken to infer the other.]\"",
+  "questionRef": "2019 HL Q10(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q10b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q10(b)(iii), as the State Examinations Commission set it: a table headed \"p orbital\" and \"p sub-level (subshell)\": a single dumbbell beside three dumbbells crossing at one point / three separate dumbbells in different orientations, with \"If separate orbitals are not labelled x, y and z they must have different orientations\"; one line with a pair of opposed arrows beside three such lines; one box with a pair of opposed arrows beside three such boxes; then \"ANY LINE: (2 × 3)\" and \"Take order of question unless one diagram labelled to justify reverse order.\"",
+  "questionRef": "2019 HL Q10(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q10c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q10(c)(i), as the State Examinations Commission set it: (c) (i) WHAT MASS: 0.460 g C₃N₄ (12); boxed, Mr mercury thiocyanate = 317*; 3.17 over 317* = 0.010** moles mercury thiocyanate; 0.010 ÷ 2 ⇒ 0.005 moles C₃N₄; Mr C₃N₄ = 92***; 92 × 0.005 = 0.460 g; (6 + 3 + 3); then [*Addition must be shown for error to be treated as slip.] [**See note below part (iv).] [***Addition must be shown for error to be treated as slip.]",
+  "questionRef": "2019 HL Q10(c)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q10c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q10(c)(iv), as the State Examinations Commission set it: WHAT IS: 0.035 moles gaseous product (1); boxed, 0.010 moles SO₂ from burning 0.010 moles HgS ⇒ 0.010 moles; 0.005 moles CO₂ and 0.010 moles SO₂ from burning 0.005 moles CS₂ ⇒ 0.015 moles; 0.0075 moles (CN)₂ and 0.0025 N₂ from decomposition 0.005 moles C₃N₄ ⇒ 0.010 moles; 0.010 + 0.015 + 0.010 ⇒ 0.035** moles gaseous product (1); then [**Must be 3.5 × number moles mercury thiocyanate from first box.]",
+  "questionRef": "2019 HL Q10(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q11b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q11(b)(i), as the State Examinations Commission set it: Kc = [Br₂][Cl₂] over [BrCl]² (6).",
+  "questionRef": "2019 HL Q11(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-HL-scheme-q11b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 HL Q11(b)(ii), as the State Examinations Commission set it: (ii) CALCULATE: 48% First correct tick 6, each other correct tick 2 marks (12); two boxed routes in moles. The first: Let x = number of moles of Br₂ (or Cl₂) produced; 2BrCl (g) ⇋ Br₂ (g) + Cl₂ (g); Initially 0.200 mol, 0 mol, 0 mol; Change – 2x mol, + x mol, + x mol; Equil 0.200 – 2x, x mol, x mol / Equil 0.200–2x over 5, x over 5, x over 5 mol/l, A = (✓); (Kc =) 0.220 = x² over (0.200–2x)², in three forms, / 0.12x² + 0.176x – 0.0088 = 0, B = (✓); square rooting both sides ⇒ 0.469 = x over 0.200–2x ⇒ 0.0938 – 0.938x = x ⇒ x = 0.0484 mol / solving quadratic ⇒ x = 0.0484 mol, C = (✓); 2x over 0.2 × 100 = 0.0968 over 0.2 × 100 = 48.4% ⇒ 48%* or 49%* decomposed / now working in moles per litre: 0.048 × 2 moles of BrCl decomposed ⇒ 0.0192 moles/l of initial 0.04 moles/l BrCl decomposed ⇒ 0.0192 over 0.04 × 100 = 48.4% ⇒ 48%* or 49%* decomposed, D = (✓). The second: Let x = number of moles of BrCl decomposed; Equil 0.200 – x, ½x mol, ½x mol; (Kc =) 0.220 = x² over 4(0.200 – x)², in three forms, / 0.12x² + 0.352x – 0.0352 = 0; x = 0.0968 mol; x over 0.2 × 100 = 48.4% ⇒ 48%* or 49%* decomposed / in moles per litre, 0.0194 over 0.04 × 100 = 48.5% ⇒ 48%* or 49%* decomposed; A to D ticked as before.",
+  "questionRef": "2019 HL Q11(b)(ii)",
+  "solution": true
  }
 ]

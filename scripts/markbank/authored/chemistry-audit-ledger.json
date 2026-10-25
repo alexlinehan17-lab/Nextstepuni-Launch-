@@ -1,6 +1,412 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2019 HL": {
+   "chem-2019-hl-q1-a-i-iii": {
+    "status": "added",
+    "after": "507bbafb1ec7c1af"
+   },
+   "chem-2019-hl-q1-b-i": {
+    "status": "added",
+    "after": "87ee384b43681380"
+   },
+   "chem-2019-hl-q1-b-ii": {
+    "status": "added",
+    "after": "ef7757ebb048064d"
+   },
+   "chem-2019-hl-q1-c-i": {
+    "status": "added",
+    "after": "43d9e0b904243d41"
+   },
+   "chem-2019-hl-q1-c-ii": {
+    "status": "added",
+    "after": "b75ccc758f230cbd"
+   },
+   "chem-2019-hl-q1-d-i": {
+    "status": "added",
+    "after": "3ff39a1061926ee1"
+   },
+   "chem-2019-hl-q1-d-ii": {
+    "status": "added",
+    "after": "86960720b0cb609b"
+   },
+   "chem-2019-hl-q1-d-iii": {
+    "status": "added",
+    "after": "c18a14efacae8a1a"
+   },
+   "chem-2019-hl-q1-d-iv": {
+    "status": "added",
+    "after": "6caf2612714226c0"
+   },
+   "chem-2019-hl-q10-a-i-iv": {
+    "status": "added",
+    "after": "dafd5747e9b1e580"
+   },
+   "chem-2019-hl-q10-b-i": {
+    "status": "added",
+    "after": "0c2ece5a369a5d67"
+   },
+   "chem-2019-hl-q10-b-ii": {
+    "status": "added",
+    "after": "eb73c920f96a7243"
+   },
+   "chem-2019-hl-q10-b-iii": {
+    "status": "added",
+    "after": "1b7e3bfe0df2e59c"
+   },
+   "chem-2019-hl-q10-b-iv": {
+    "status": "added",
+    "after": "dc4f6411207620a7"
+   },
+   "chem-2019-hl-q10-b-v": {
+    "status": "added",
+    "after": "82207fa3a0ac924d"
+   },
+   "chem-2019-hl-q10-c-i": {
+    "status": "added",
+    "after": "3a8fea4d6338681b"
+   },
+   "chem-2019-hl-q10-c-ii": {
+    "status": "added",
+    "after": "d494b186d7a9c8b1"
+   },
+   "chem-2019-hl-q10-c-iii": {
+    "status": "added",
+    "after": "e277f6e7fb857296"
+   },
+   "chem-2019-hl-q10-c-iv": {
+    "status": "added",
+    "after": "6ce0d5d3cda062ad"
+   },
+   "chem-2019-hl-q11-a-i": {
+    "status": "added",
+    "after": "3733eed688dbd91a"
+   },
+   "chem-2019-hl-q11-a-ii": {
+    "status": "added",
+    "after": "cf7fbb21925d0a8f"
+   },
+   "chem-2019-hl-q11-a-iii": {
+    "status": "added",
+    "after": "5f87fa862736e0a2"
+   },
+   "chem-2019-hl-q11-a-iv": {
+    "status": "added",
+    "after": "83c9b4558eaf221d"
+   },
+   "chem-2019-hl-q11-a-v": {
+    "status": "added",
+    "after": "4d310341189bbf37"
+   },
+   "chem-2019-hl-q11-b-i": {
+    "status": "added",
+    "after": "569f1b4ab6ac59b6"
+   },
+   "chem-2019-hl-q11-b-ii": {
+    "status": "added",
+    "after": "f7985fe4bb5dda0f"
+   },
+   "chem-2019-hl-q11-b-iii": {
+    "status": "added",
+    "after": "ae08c3439f518225"
+   },
+   "chem-2019-hl-q11-c-a-i": {
+    "status": "added",
+    "after": "aed9aa93b60e236a"
+   },
+   "chem-2019-hl-q11-c-a-ii": {
+    "status": "added",
+    "after": "db3b344f504679bd"
+   },
+   "chem-2019-hl-q11-c-a-iii": {
+    "status": "added",
+    "after": "f43c7e2f792f281b"
+   },
+   "chem-2019-hl-q11-c-a-iv": {
+    "status": "added",
+    "after": "45d73d8aeea5a48c"
+   },
+   "chem-2019-hl-q11-c-a-v": {
+    "status": "added",
+    "after": "71a7ffb1081a7b7a"
+   },
+   "chem-2019-hl-q11-c-b-i": {
+    "status": "added",
+    "after": "e2333c13ca4dd04e"
+   },
+   "chem-2019-hl-q11-c-b-ii": {
+    "status": "added",
+    "after": "9b5b3ab9362bc8c5"
+   },
+   "chem-2019-hl-q11-c-b-iii": {
+    "status": "added",
+    "after": "e9791ebf8f53d549"
+   },
+   "chem-2019-hl-q11-c-b-iv": {
+    "status": "added",
+    "after": "b89402fd06537be9"
+   },
+   "chem-2019-hl-q11-c-b-v": {
+    "status": "added",
+    "after": "50ce92a0accf31bb"
+   },
+   "chem-2019-hl-q2-a-i": {
+    "status": "added",
+    "after": "b8d575a1e7a1c1bb"
+   },
+   "chem-2019-hl-q2-a-ii": {
+    "status": "added",
+    "after": "a2e09f315e5b0235"
+   },
+   "chem-2019-hl-q2-b": {
+    "status": "added",
+    "after": "c834b661e65920f8"
+   },
+   "chem-2019-hl-q2-c-i": {
+    "status": "added",
+    "after": "7084a0d822dac4ca"
+   },
+   "chem-2019-hl-q2-c-ii": {
+    "status": "added",
+    "after": "1c5f224879bbb91b"
+   },
+   "chem-2019-hl-q2-c-iii": {
+    "status": "added",
+    "after": "d1b9ce8a084b8918"
+   },
+   "chem-2019-hl-q2-c-iv": {
+    "status": "added",
+    "after": "6172a43e30a8bfe3"
+   },
+   "chem-2019-hl-q3-a": {
+    "status": "added",
+    "after": "7a40a57a4b0d13f4"
+   },
+   "chem-2019-hl-q3-a-i": {
+    "status": "added",
+    "after": "b41224c103afccdd"
+   },
+   "chem-2019-hl-q3-a-ii": {
+    "status": "added",
+    "after": "9ef2968c3cc0852f"
+   },
+   "chem-2019-hl-q3-b-i-ii": {
+    "status": "added",
+    "after": "dff4803fd5be4591"
+   },
+   "chem-2019-hl-q3-c": {
+    "status": "added",
+    "after": "88982d54ecd3e7d5"
+   },
+   "chem-2019-hl-q3-d": {
+    "status": "added",
+    "after": "521b79caddb01bf8"
+   },
+   "chem-2019-hl-q3-e": {
+    "status": "added",
+    "after": "da0d80d838445c15"
+   },
+   "chem-2019-hl-q4-a": {
+    "status": "added",
+    "after": "3874b05a07fad4dd"
+   },
+   "chem-2019-hl-q4-b": {
+    "status": "added",
+    "after": "2daa1d3aef428135"
+   },
+   "chem-2019-hl-q4-c": {
+    "status": "added",
+    "after": "22a427ffc55b16f4"
+   },
+   "chem-2019-hl-q4-d-i-ii": {
+    "status": "added",
+    "after": "453cc309f350fa27"
+   },
+   "chem-2019-hl-q4-e": {
+    "status": "added",
+    "after": "a77ed5ad458f4092"
+   },
+   "chem-2019-hl-q4-f": {
+    "status": "added",
+    "after": "6d6146c2333fc099"
+   },
+   "chem-2019-hl-q4-g": {
+    "status": "added",
+    "after": "1445d87be3ff38c9"
+   },
+   "chem-2019-hl-q4-h": {
+    "status": "added",
+    "after": "3569659564897e3a"
+   },
+   "chem-2019-hl-q4-i": {
+    "status": "added",
+    "after": "0cbd90f548b4f3ed"
+   },
+   "chem-2019-hl-q4-j": {
+    "status": "added",
+    "after": "4c392400866cd299"
+   },
+   "chem-2019-hl-q4-k-a": {
+    "status": "added",
+    "after": "efa321639a0d7b23"
+   },
+   "chem-2019-hl-q4-k-b": {
+    "status": "added",
+    "after": "f75d51fdf6ece9bb"
+   },
+   "chem-2019-hl-q5-a-i-iii": {
+    "status": "added",
+    "after": "132ac13043ead918"
+   },
+   "chem-2019-hl-q5-b-i": {
+    "status": "added",
+    "after": "44d1cf05b865b0cd"
+   },
+   "chem-2019-hl-q5-b-ii": {
+    "status": "added",
+    "after": "e6c540d82e5a006a"
+   },
+   "chem-2019-hl-q5-c-i": {
+    "status": "added",
+    "after": "2c443134861be869"
+   },
+   "chem-2019-hl-q5-c-ii": {
+    "status": "added",
+    "after": "6c5252aece5baede"
+   },
+   "chem-2019-hl-q5-d-i": {
+    "status": "added",
+    "after": "1cf261b9e9a2963e"
+   },
+   "chem-2019-hl-q5-d-ii": {
+    "status": "added",
+    "after": "d13fb5d306caf5ef"
+   },
+   "chem-2019-hl-q6-a-i-iv": {
+    "status": "added",
+    "after": "e1c2bf8a7798dd98"
+   },
+   "chem-2019-hl-q6-b-i": {
+    "status": "added",
+    "after": "c8f4f26d488b5e69"
+   },
+   "chem-2019-hl-q6-b-ii": {
+    "status": "added",
+    "after": "3b3f6df70ac0329e"
+   },
+   "chem-2019-hl-q6-c-i": {
+    "status": "added",
+    "after": "878c065a3adbfc05"
+   },
+   "chem-2019-hl-q6-c-ii": {
+    "status": "added",
+    "after": "820d6c7f4291e53a"
+   },
+   "chem-2019-hl-q6-c-iii": {
+    "status": "added",
+    "after": "f08bea745c17c6f2"
+   },
+   "chem-2019-hl-q7-a-i": {
+    "status": "added",
+    "after": "32aa127a94941ae3"
+   },
+   "chem-2019-hl-q7-a-ii": {
+    "status": "added",
+    "after": "a4eea62f2741bc6a"
+   },
+   "chem-2019-hl-q7-a-iii": {
+    "status": "added",
+    "after": "6fdfbea3e5ab887a"
+   },
+   "chem-2019-hl-q7-a-iv": {
+    "status": "added",
+    "after": "fa2e31606ddb7c5b"
+   },
+   "chem-2019-hl-q7-b-i": {
+    "status": "added",
+    "after": "13973b1a6d2bf66b"
+   },
+   "chem-2019-hl-q7-b-ii": {
+    "status": "added",
+    "after": "f248a53650c55c38"
+   },
+   "chem-2019-hl-q7-b-iii": {
+    "status": "added",
+    "after": "66f9f03dbdba90d0"
+   },
+   "chem-2019-hl-q7-b-iv": {
+    "status": "added",
+    "after": "d59455e28359af5b"
+   },
+   "chem-2019-hl-q7-b-v": {
+    "status": "added",
+    "after": "cd2225ac53f31cf3"
+   },
+   "chem-2019-hl-q7-b-vi": {
+    "status": "added",
+    "after": "dfd29c08e77fbabb"
+   },
+   "chem-2019-hl-q8-a-i": {
+    "status": "added",
+    "after": "194dfca7f1771e04"
+   },
+   "chem-2019-hl-q8-a-ii": {
+    "status": "added",
+    "after": "3ce7e7ccc6fc2dce"
+   },
+   "chem-2019-hl-q8-a-iii": {
+    "status": "added",
+    "after": "2212f345280f5338"
+   },
+   "chem-2019-hl-q8-a-iv": {
+    "status": "added",
+    "after": "6bba6e0bdbda8d08"
+   },
+   "chem-2019-hl-q8-b-i": {
+    "status": "added",
+    "after": "9fb77c1a7aa2d14b"
+   },
+   "chem-2019-hl-q8-b-ii": {
+    "status": "added",
+    "after": "0da08a2f454b100f"
+   },
+   "chem-2019-hl-q8-b-iii": {
+    "status": "added",
+    "after": "a978688159151249"
+   },
+   "chem-2019-hl-q8-c-i": {
+    "status": "added",
+    "after": "bbe90149f34275c6"
+   },
+   "chem-2019-hl-q8-c-ii": {
+    "status": "added",
+    "after": "94da9c1a40e2027d"
+   },
+   "chem-2019-hl-q8-c-iii": {
+    "status": "added",
+    "after": "127da3705404e8d3"
+   },
+   "chem-2019-hl-q9-a": {
+    "status": "added",
+    "after": "50b36b50d0094caa"
+   },
+   "chem-2019-hl-q9-b": {
+    "status": "added",
+    "after": "ab25efadb0b988e3"
+   },
+   "chem-2019-hl-q9-c": {
+    "status": "added",
+    "after": "eb7c836e00a60438"
+   },
+   "chem-2019-hl-q9-d": {
+    "status": "added",
+    "after": "24bb9a153d48526c"
+   },
+   "chem-2019-hl-q9-e": {
+    "status": "added",
+    "after": "11aaa58e4e56163c"
+   }
+  },
   "2019 OL": {
    "chem-2019-ol-q1-a-i-iii": {
     "status": "added",

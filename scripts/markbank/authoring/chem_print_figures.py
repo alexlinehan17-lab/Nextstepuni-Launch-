@@ -201,6 +201,10 @@ MASKS = {
     'chemistry-2019-OL-paper-q7.png': [(0, 46, 33, 75), (0, 76, 33, 106), (0, 192, 22, 223)],
     # 2021 OL Q3(d): the last letter of "provided" prints at the pictogram's corner.
     'chemistry-2021-OL-paper-q3d.png': [(0, 0, 15, 31)],
+    # 2019 HL Q9: the graph (second panel) stands beside the ends of the marks "(6)" of (a) and of
+    # (b) and the full stop of "catalysis." in (c); their glyphs fall in the panel's first five
+    # pixel columns, clear of the axis title, which starts at column 11.
+    'chemistry-2019-HL-paper-q9.png': [(0, 305, 8, 330), (0, 470, 8, 495), (0, 520, 4, 528)],
 }
 
 

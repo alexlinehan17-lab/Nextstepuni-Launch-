@@ -1042,6 +1042,16 @@ class Printed:
         if figures:
             self.paper_lines = self._outside_figures(self.paper_lines)
         self.scheme_lines = read_lines(self.scheme_path)
+        if (year, lvl) == (2019, 'hl'):
+            # 2019 HL scheme PDF page 29: a "(c)" at the letters' margin (x 49.6,
+            # y 339.4) lies under the white fill of Q11(b)(ii)'s third working box;
+            # the page prints no (c) there (Q11(c) opens on page 30 with its "A",
+            # unlettered). Read as a marker it opened Q11(c) inside (b)(ii)'s
+            # working and took (b)(iii) with it.
+            hidden = [l for l in self.scheme_lines if l.page == 29 and l.text == '(c)'
+                      and abs(l.x0 - 49.6) < 1 and abs(l.y0 - 339.4) < 1]
+            assert len(hidden) == 1, hidden
+            self.scheme_lines = [l for l in self.scheme_lines if l is not hidden[0]]
         if figures:
             self.scheme_lines = self._outside_scheme_art(self.scheme_lines)
         # The 2021-2025 schemes print their mark cells in round brackets,
