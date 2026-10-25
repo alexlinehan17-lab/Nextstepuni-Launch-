@@ -1825,6 +1825,14 @@ type FirstCarded = {
 };
 const FIRST_CARDED: Record<string, FirstCarded> = {
   /* @@ROWS@@ */
+  '2015-ol': {
+    tasks: 163, cards: 163,
+    sources: { "paper": ['6ac18153d414adddbee7e7add1e5fe2c2c2b51eb288ca86870ed858f18cb3686', 16], "scheme": ['100ba10d216acd682eb151e7be83b7622ded2b1097e9788a7a3a12d133d21080', 12] },
+    routes: {  },
+    wholeParts: {  },
+    // Q14(c)(i) and Q15(c)(i) label the diagram the student draws; the paper prints none.
+    ownDrawing: ['bio-2015-ol-q14-c-i', 'bio-2015-ol-q15-c-i'],
+  },
   '2015-hl': {
     tasks: 150, cards: 154,
     sources: { "paper": ['46dbe0b5bc176f4d29943597accb73676303c2bacb1617534887ee046639e887', 16], "scheme": ['e9129c41fe6c7fbea992d7d7c4e83c50d379f92e9f972e5452bf8f7daf4b7551', 24] },

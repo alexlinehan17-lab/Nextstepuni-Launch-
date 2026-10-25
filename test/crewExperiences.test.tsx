@@ -15,7 +15,7 @@ describe('subject carousel', () => {
     expect(container.querySelectorAll('.lsc-peek')).toHaveLength(2);
     const subject = screen.getByRole('combobox', { name: 'Jump to a subject' });
     fireEvent.change(subject, { target: { value: 'biology' } });
-    expect(screen.getByLabelText('Biology resources')).toHaveTextContent('3,897');
+    expect(screen.getByLabelText('Biology resources')).toHaveTextContent('4,060');
     const lc = catalogue.filter(item => item.cycle === 'lc');
     fireEvent.change(subject, { target: { value: lc[0].id } });
     fireEvent.click(screen.getByRole('button', { name: 'Previous subject' }));

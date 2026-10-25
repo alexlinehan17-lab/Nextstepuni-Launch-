@@ -291,6 +291,275 @@
    282
   ]
  },
+ "biology-2015-ol-q10-cross": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q10-cross.png",
+  "md5": "db4cd565e4d4565b977f923345626496",
+  "alt": "The cross as printed for copying, under the headings Pink and White. Genotypes of parents: an empty bracket under Pink, a multiplication sign, then ( WW ) under White. Possible gametes: two empty brackets, a multiplication sign, one empty bracket. Genotypes of offspring: two empty brackets. Matching phenotypes of offspring: two blank lines.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q10(c) — Genotypes of offspring",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 8,
+  "sourceRect": [
+   36,
+   479,
+   548,
+   596
+  ]
+ },
+ "biology-2015-ol-q11-formula": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q11-formula.png",
+  "md5": "1d82c007b236c91ab42d2a43873ff266",
+  "alt": "The formula as printed: 50 × A over B, equals Number of animals in the population.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q11(b)(iv)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 9,
+  "sourceRect": [
+   120,
+   312,
+   440,
+   352
+  ]
+ },
+ "biology-2015-ol-q12-digestive": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q12-digestive.png",
+  "md5": "05057a6a5ba31297f9dd059cfc4e3680",
+  "alt": "Drawing of the human digestive system inside an outline of the trunk: a large dotted organ at the upper left with a small sac beneath it labelled Gall bladder; a bag-shaped organ at the upper right; a tube running down from under the bag; a ridged organ lying beneath the bag; coiled tubes filling the middle, framed by a wide wrinkled tube running up the left side, across the top and down the right side to a twisted end at the bottom. A points to the tube running down from under the bag, B to the large dotted organ, C to the bag-shaped organ, D to the ridged organ beneath it, E to the wide wrinkled tube on the right side.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q12(b)(i) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 10,
+  "sourceRect": [
+   120,
+   178,
+   425,
+   398
+  ]
+ },
+ "biology-2015-ol-q13-heart": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q13-heart.png",
+  "md5": "1805cf758fb16410da95e7e6ed1cb798",
+  "alt": "Section through the human heart: four chambers with dotted walls, a thick dividing wall down the middle, and vessels rising from the top. The thick wall at the right of the drawing is labelled Left Side. A points to a vessel arching up at the top right, E to a vessel rising just left of the centre, C to the upper chamber at the left, D to the lower chamber at the left, B to the dividing wall in the middle.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q13(b)(i) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   180,
+   133,
+   420,
+   308
+  ]
+ },
+ "biology-2015-ol-q13-lungs": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q13-lungs.png",
+  "md5": "dae9757c611bd90ffd5ea019524565c6",
+  "alt": "Drawing of part of the human breathing system: a tube ringed with bands runs down from a box-like structure at the top and branches at its base into a lung, drawn as an outline packed with clusters of small round sacs on branching tubes. A points to the box-like structure at the top, B to the ringed tube, C to the short tube branching off at its base, D to a cluster of small sacs inside the lung.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q13(c)(i) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 11,
+  "sourceRect": [
+   200,
+   465,
+   400,
+   680
+  ]
+ },
+ "biology-2015-ol-q14-cell": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q14-cell.png",
+  "md5": "2fc6c4342ec3fa14c4f7bac7ef322e12",
+  "alt": "Drawing of a rectangular cell with rounded corners: a grey outer layer with a thin line just inside it, several small oval bodies around the edge, a dark round body at the left and a large irregular clear space in the lower middle. A points to the cell's edge at its top left corner, B to its right-hand edge, C to a small oval body at the right, D to the large clear space, E to the dark round body.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q14(a)(i) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 12,
+  "sourceRect": [
+   210,
+   90,
+   375,
+   246
+  ]
+ },
+ "biology-2015-ol-q15-fruits": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q15-fruits.png",
+  "md5": "16a460f895f065b64cc37c91f86b5b5d",
+  "alt": "Three photographs in a row, captioned Blackberries, Sycamore fruit and Peas: a cluster of dark, knobbly berries with leaves behind them; two fruits on long stalks, each a pair of thin papery wings joined at the seed; an open pod with a row of round peas inside.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q15(a)(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   105,
+   64,
+   495,
+   176
+  ]
+ },
+ "biology-2015-ol-q15-skin": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q15-skin.png",
+  "md5": "24a6c762565b138c259655131e71180b",
+  "alt": "Section through human skin: a dotted surface layer along the top; a hair rising out of the skin from a bulb deep in a lower layer of small round cells; a rounded gland beside the hair near the top; a thin band running at a slant beside the hair; a network of looped vessels under the surface; a long tube running down from the surface to a tightly coiled knot in the lower layer; and small round bodies in between. A points to the hair above the surface, B to the looped vessels under the surface, C to the coiled knot, D to the slanting band beside the hair, E to the rounded gland beside the hair.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q15(b)(i) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 13,
+  "sourceRect": [
+   188,
+   365.5,
+   440,
+   548
+  ]
+ },
+ "biology-2015-ol-q3-flower": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q3-flower.png",
+  "md5": "87bf957fcccf1ebbfd369bcae836708c",
+  "alt": "Drawing of a vertical section through a flower: spreading outer parts with dotted edges form a cup opening upwards; inside it three stalks rise, the two outer ones each topped by a small oval head and the middle one longer, with a small knob at its tip and its base swollen into a large rounded body; the whole sits on a smaller rounded base with small leaf-like parts spreading at the bottom. A points to the large rounded body at the base of the middle stalk, B to the oval head on top of the right-hand stalk, C to the spreading outer part at the upper right.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q3(a) — A",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   200,
+   57,
+   400,
+   198
+  ]
+ },
+ "biology-2015-ol-q4-table": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q4-table.png",
+  "md5": "455af42e059e1e82cdcc027870f576f3",
+  "alt": "Question 4 as printed: the instruction, then the list Homeostasis, Rabbit, Fluid balance (struck through), Lizard, Endotherm, Skin above a two-column table: Column A lists \"A function of the kidney\" (answered Fluid balance in Column B as the example) and parts (a) to (e); Column B is blank beside them.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q4(a)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 3,
+  "sourceRect": [
+   36,
+   452,
+   560,
+   768
+  ]
+ },
+ "biology-2015-ol-q5-foodweb": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q5-foodweb.png",
+  "md5": "bfe404aa88095dfd22e397ce2e6361b6",
+  "alt": "Diagram of names joined by arrows. At the bottom is Green Plants, with arrows from it up to Greenfly, Caterpillar, Snail, Mouse and Rabbit. Arrows also run from Greenfly to Ladybird; from Ladybird, Caterpillar and Snail to Blackbird; from Caterpillar and Snail to Hedgehog; from Blackbird and Mouse to Sparrow hawk; from Rabbit to Stoat; and from Hedgehog, Stoat and Rabbit to Fox.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q5(a)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 4,
+  "sourceRect": [
+   105,
+   50,
+   432,
+   296
+  ]
+ },
+ "biology-2015-ol-q8-tubes": {
+  "src": "/exam-figures/biology/markbank/biology-2015-ol-q8-tubes.png",
+  "md5": "0ddcd65fc738ea486245aff15387f3c6",
+  "alt": "Four test tubes in a row, lettered A, B, C and D. Each has a shaded plug of cotton wool at the bottom (labelled Cotton wool) with a few seeds on it (labelled Seeds). Tubes A, B and C are otherwise empty. In tube D the seeds are covered by a liquid labelled Cool Boiled Water, under a layer labelled Oil at the top of the tube.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2015 OL Q8(b)(i)",
+  "year": 2015,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2015 Ordinary Level examination paper — © State Examinations Commission",
+  "sourceDocument": "LC025GLP000EV.pdf",
+  "sourcePage": 6,
+  "sourceRect": [
+   100,
+   214,
+   500,
+   378
+  ]
+ },
  "biology-2016-hl-q10c-chain": {
   "src": "/exam-figures/biology/markbank/biology-2016-hl-q10c-chain.png",
   "md5": "404cbc2c7c4621970fc69e190ff2dc8a",

@@ -229,6 +229,15 @@ WELDED_HEADS = {
     # Question 4 vanished into Q3(g), and Q4(e)(i)-(ii) filed as romans of
     # Q3(g).
     ('biology', 2016, 'ol'): ['(g) Oxygen passes from our lungs to our blood by osmosis. T F'],
+    # 2015 OL page 13 sets Question 15's head "15. Answer any two of (a), (b),
+    # (c). (30, 30)" and, on a line of its own under it, above the three fruit
+    # photographs, the marker "(a)"; the text layer reads that marker into the
+    # head's block, after "(30, 30)" with no full stop before it for
+    # TRAILING_MARKER to carry it. With no (a) read, the inline "(b) The
+    # diagram shows the human skin." and "(c) (i) Draw a diagram of Rhizopus."
+    # were not taken as letters, and all eighteen romans of (a), (b) and (c)
+    # filed as six romans of a letterless Q15.
+    ('biology', 2015, 'ol'): ['15. Answer any two of (a), (b), (c). (30, 30)'],
 }
 # Subjects where a letter going BACKWARDS inside a question is never a new
 # part. Biology prints genotypes in brackets: 2020 OL Q11(c) sets the dogs'
