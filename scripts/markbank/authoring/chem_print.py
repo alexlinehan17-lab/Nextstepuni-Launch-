@@ -299,11 +299,11 @@ def any_bracket_cell(t):
     return as_cell('(' + t[1:-1].strip() + ')') if t.startswith('[') else as_cell(t)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
-FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\),?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
+FORMULAE_CELL = re.compile(r'^FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
-CUE_TAIL = re.compile(r"&|(?:&\s*)?[A-Z]{2,}(?:\s+(?:&|[A-Z]{2,}))*")
+CUE_TAIL = re.compile(r"&|(?:&\s*)?[A-Z]{2,}(?:\s+(?:&|[A-Z]{2,}))*:?")
 # A cell the scheme labels with the number of parts it prices: "TWO PARTS :
 # (2 × 2)" (2022 HL Q11(c)(i)).
 PARTS_CELL = re.compile(r'^(TWO|THREE|FOUR)\s+PARTS\s*:\s*(\(.+\))\s*$')
@@ -524,7 +524,9 @@ def segments(lines, first_q='1', answers=True, alt_letters=(), cue=False):
             queue.appendleft(Line(l.page, (l.x0 + 14, l.y0, l.x1, l.y1), ab.group(2), l.bold, l.math))
             queue.appendleft(Line(l.page, (l.x0, l.y0, l.x0 + 10, l.y1), ab.group(1), l.bold, l.math))
             continue
-        if not answers and t == 'Acknowledgements':
+        if not answers and t.startswith('There is no examination material on this page'):
+            continue                 # a blank page's notice
+        if not answers and t in ('Acknowledgements', 'Copyright notice'):
             break                    # the paper's back page: credits and copyright
         m = QNUM.match(t)
         if m and q is not None and m.group(1) == q and l.x0 < 40:

@@ -238,6 +238,51 @@
    "reason": "Duplicated chem-2021-hl-q4-k-fig (both cited Q4(k)).",
    "drop": true,
    "replacementId": "chem-2021-hl-q4-k-fig"
+  },
+  "chem-2021-ol-q1-a": {
+   "reason": "Duplicated chem-2021-ol-q1-a-fig (both cited Q1(a)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q1-a-fig"
+  },
+  "chem-2021-ol-q1-b": {
+   "reason": "Duplicated chem-2021-ol-q1-b-fig (both cited Q1(b)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q1-b-fig"
+  },
+  "chem-2021-ol-q1-c-ii": {
+   "reason": "The scheme prices Q1(c)(i)-(ii) with one cell ([6 + 3]), so they are one task; carded once, as chem-2021-ol-q1-c-fig.",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q1-c-fig"
+  },
+  "chem-2021-ol-q2-d-i": {
+   "reason": "Duplicated chem-2021-ol-q2-d-i-fig (both cited Q2(d)(i)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q2-d-i-fig"
+  },
+  "chem-2021-ol-q6-b": {
+   "reason": "Duplicated chem-2021-ol-q6-bc-fig (both cited Q6(b)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q6-bc-fig"
+  },
+  "chem-2021-ol-q9-abd-fig": {
+   "reason": "Joined Q9(a), (b)(ii) and (d), which the scheme prices with separate cells; each is carded on its own, and Q9(a) as chem-2021-ol-q9-a.",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q9-a"
+  },
+  "chem-2021-ol-q10-a-2": {
+   "reason": "Duplicated chem-2021-ol-q10-a-1 (both cited Q10(a)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q10-a-1"
+  },
+  "chem-2021-ol-q11-c-i": {
+   "reason": "Duplicated chem-2021-ol-q11c-fig (both cited Q11(c)(i)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q11c-fig"
+  },
+  "chem-2021-ol-q11-d-b-i": {
+   "reason": "Duplicated chem-2021-ol-q11d-b-fig (both cited Q11(d)B(i)).",
+   "drop": true,
+   "replacementId": "chem-2021-ol-q11d-b-fig"
   }
  },
  "biology": {

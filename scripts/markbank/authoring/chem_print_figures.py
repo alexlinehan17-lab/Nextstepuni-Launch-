@@ -183,6 +183,12 @@ MASKS = {
     # the other part's corner (pixel boxes at DPI, from the page's drawing boxes).
     'chemistry-2021-HL-scheme-q8b-i.png': [(62, 93, 448, 146)],
     'chemistry-2021-HL-scheme-q8b-ii.png': [(614, 0, 823, 50)],
+    # 2021 OL Q10(b): the cell's diagram sits beside the ends of three lines of
+    # the question ("electrolysed", "transfer.", "electrodes.", "place?"), whited out here; the
+    # crop is a one-panel print so that those words stay in the question text.
+    'chemistry-2021-OL-paper-q10b.png': [(0, 10, 11, 45), (0, 204, 49, 369)],
+    # 2021 OL Q3(d): the last letter of "provided" prints at the pictogram's corner.
+    'chemistry-2021-OL-paper-q3d.png': [(0, 0, 15, 31)],
 }
 
 
@@ -217,6 +223,9 @@ def render(year, lvl, source, page, rect):
         for im in ims:
             out.paste(im.convert('RGB'), (0, y))
             y += im.height + PANEL_GAP
+        from PIL import ImageDraw
+        for box in MASKS.get(name(year, lvl, suffix_of[(source, page, rect)]), []):
+            ImageDraw.Draw(out).rectangle((box[0], box[1], box[2] - 1, box[3] - 1), fill='white')
         buf = io.BytesIO()
         out.save(buf, format='PNG')
         return buf.getvalue()

@@ -567,8 +567,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q1(d)(i)",
-  "stem": "Gas B is ethyne. In the printed paper the term underlined is 'unsaturated'.",
-  "questionText": "Gas B is unsaturated. Explain the underlined term.",
+  "questionText": "Explain the underlined term.",
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory. Gas B is unsaturated.",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -576,18 +577,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "contains multiple (triple or double) carbon-carbon bond / can add hydrogen",
-    "accepts": [
-     "contains multiple carbon-carbon bond",
-     "contains triple carbon-carbon bond",
-     "contains double carbon-carbon bond",
-     "can add hydrogen"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Single 6-mark block, alternatives equally acceptable."
+  "questionFigureKey": "chemistry-2021-OL-paper-q1d-i-print"
  },
  {
   "id": "chem-2021-ol-q1-d-ii",
@@ -598,8 +595,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q1(d)(ii)",
-  "stem": "Gas B is ethyne, which is unsaturated.",
   "questionText": "Describe how you could carry out a test for unsaturation on a sample of B.",
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory. Gas B is unsaturated.",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -607,47 +605,29 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "shake (mix, bubble into, add, use) with bromine (Br2) solution (water) / shake (mix, bubble into, add, use) with acidified potassium permanganate solution (H+/KMnO4 or H+/MnO4–)",
-    "accepts": [
-     "shake with bromine solution",
-     "shake with bromine water",
-     "bubble into bromine water",
-     "add Br2 water",
-     "shake with acidified potassium permanganate solution",
-     "add H+/KMnO4",
-     "add H+/MnO4–"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "shake (mix, bubble into, add, use) with bromine (Br₂) solution (water) / shake (mix, bubble into, add, use) with acidified potassium permanganate solution (H⁺/KMnO₄ or H⁺/MnO₄⁻)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "brown (red, orange, yellow, pink, purple) colour",
-    "accepts": [
-     "brown colour",
-     "red colour",
-     "orange colour",
-     "yellow colour",
-     "pink colour",
-     "purple colour"
-    ],
     "marks": 3,
-    "contextNote": "The colour named must match the reagent chosen in the first marking point."
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-3",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "disappears (decolourises, fades)",
-    "accepts": [
-     "disappears",
-     "decolourises",
-     "fades"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme prints '//' between the colour and the change in colour. THIS scheme's own preamble (point 4) states that a double solidus 'separates points for which separate marks are allocated', so these are two separately-marked required rows of 3 — NOT mutually exclusive routes. Reagent (3) + colour (3) + change (3) = 9."
+  ]
  },
  {
   "id": "chem-2021-ol-q1-e",
@@ -658,49 +638,36 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q1(e)",
-  "stem": "When burned in air, B produces a bright, sooty flame but B must be burned in pure oxygen if its flame is to be suitable for welding and cutting metal.",
-  "questionText": "Give two characteristics of the flame when B is burned in pure oxygen.",
+  "questionText": "When burned in air, B produces a bright, sooty flame but B must be burned in pure oxygen if its flame is to be suitable for welding and cutting metal. Give two characteristics of the flame when B is burned in pure oxygen.",
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory.",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "ANY TWO: (6 + 3)"
+   "kind": "fixed"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "very hot / very high temperature",
-    "accepts": [
-     "very hot",
-     "very high temperature"
-    ],
-    "marks": null,
-    "contextNote": "ANY TWO of the three characteristics score. The scheme awards them as an ordered split '(6 + 3)', so no per-characteristic mark value exists."
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "cleaner / clear / no (less) soot",
-    "accepts": [
-     "cleaner",
-     "clear",
-     "no soot",
-     "less soot"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "blue / non-luminous",
-    "accepts": [
-     "blue",
-     "non-luminous"
-    ],
-    "marks": null
+    "marks": 9,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "very hot / very high temperature",
+      "cleaner / clear / no (less) soot",
+      "blue / non-luminous"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
    }
-  ],
-  "notes": "The scheme prints the three characteristics separated by '//' (separate marks, 2021 preamble 4) with 'ANY TWO: (6 + 3)'. Because the tariff is an ordered split, per-row marks are undefined and must not be invented, so every row carries marks: null. Cancellation may apply where a candidate gives a list of correct and incorrect answers (preamble 4)."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-a-iii",
@@ -711,8 +678,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(a)(iii)",
-  "stem": "A student carried out one rough and two accurate titrations of 25.0 cm3 portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. The apparatus selected in (ii) to measure the 25.0 cm3 portions accurately into the conical flask was a pipette.",
   "questionText": "How should the piece of apparatus you selected in (ii) have been rinsed before using it to measure out the NaOH solution?",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
+  "figureKey": "chemistry-2021-OL-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -720,83 +688,47 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "deionised (distilled, pure) water",
-    "accepts": [
-     "deionised water",
-     "distilled water",
-     "pure water"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "NaOH (sodium hydroxide) solution / solution it will contain",
-    "accepts": [
-     "NaOH solution",
-     "sodium hydroxide solution",
-     "solution it will contain"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "'//' here separates two separately-marked points (scheme preamble 4), so BOTH rinses are required for the 6. SKIPPED: Q2(a)(i) 'Identify the pieces of apparatus A and C shown on the right' and Q2(a)(ii) 'Would A or B have been more suitable…' — both turn entirely on reading the labelled apparatus diagram, which this wave does not carry. The stem names the pipette so that (a)(iii) stands alone."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-b",
   "topicId": "chem-4-1",
-  "conceptId": "titration-indicator-and-colour-change",
+  "conceptId": "indicator-for-an-acid-base-titration",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2021 OL Q2(b)(i)-(ii)",
-  "stem": "A burette was used to add 0.3 M hydrochloric acid to 25.0 cm3 portions of sodium hydroxide solution in a conical flask until an indicator showed that the end point had been reached. HCl + NaOH → NaCl + H2O",
-  "questionText": "(i) Name an indicator suitable for use in these titrations. (ii) State the colour change observed at the end point using this indicator.",
+  "questionRef": "2021 OL Q2(b)(i)",
+  "questionText": "Name an indicator suitable for use in these titrations.",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 9,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "methyl orange / methyl red / phenolphthalein",
-    "accepts": [
-     "methyl orange",
-     "methyl red",
-     "phenolphthalein"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "yellow (orange) / pink",
-    "accepts": [
-     "yellow",
-     "orange",
-     "pink"
-    ],
     "marks": 3,
-    "contextNote": "[Colours must be linked to indicator.]"
-   },
-   {
-    "id": "r-3",
-    "kind": "alt",
-    "verbatim": "to pink (red, peach) / to colourless",
-    "accepts": [
-     "to pink",
-     "to red",
-     "to peach",
-     "to colourless"
-    ],
-    "marks": 3,
-    "contextNote": "[Clear unacceptable for colourless.] [(9) marks only available for correct indicator linked to correct colours in correct order.] [Allow (3) for correct colours reversed (and matching a named indicator where one is named.)]"
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The two colour rows are separated by '//' in the scheme, i.e. separately-marked points (preamble 4). The colours must track the indicator named: methyl orange / methyl red run yellow (orange) → pink (red); phenolphthalein runs pink → colourless. The scheme also allows the colour marks where (i) is left blank, and allows correct colours for a named unsuitable indicator such as litmus."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-b-iii",
@@ -807,8 +739,8 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(b)(iii)",
-  "stem": "0.3 M hydrochloric acid was run from a burette into 25.0 cm3 of sodium hydroxide solution containing an indicator. The equation for the titration reaction is HCl + NaOH → NaCl + H2O.",
   "questionText": "What substances are present in the conical flask at the end point of the titration?",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -817,20 +749,21 @@
    {
     "id": "r-1",
     "kind": "anyN",
-    "verbatim": "water (H2O) // sodium chloride (NaCl, salt) // indicator (methyl orange)",
-    "marks": null,
+    "verbatim": "water (H₂O)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
     "group": {
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "water (H2O)",
+      "water (H₂O)",
       "sodium chloride (NaCl, salt)",
       "indicator (methyl orange)"
      ]
     }
    }
-  ],
-  "notes": "Scheme prints 'ANY TWO: (2 × 3)'. Any two of the three substances at 3 marks each; claimMax × perOption = 6 = totalMarks, so the fixed tariff reconciles. Cancellation may apply where a candidate gives a list of correct and incorrect answers (preamble 4)."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-c",
@@ -841,8 +774,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(c)",
-  "stem": "25.0 cm3 portions of a sodium hydroxide solution were titrated with 0.3 M hydrochloric acid. The equation for the titration reaction is HCl + NaOH → NaCl + H2O.",
-  "questionText": "On average 23.0 cm3 of 0.3 M HCl solution were required to neutralise the 25.0 cm3 portions of the NaOH solution. Calculate the concentration, in moles per litre, of the NaOH solution used.",
+  "questionText": "On average 23.0 cm³ of 0.3 M HCl solution were required to neutralise the 25.0 cm³ portions of the NaOH solution. Calculate the concentration, in moles per litre, of the NaOH solution used.",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
+  "figureKey": "chemistry-2021-OL-scheme-q2c",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -851,27 +785,29 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "6.9 × 10⁻³ moles HCl",
-    "marks": 3
+    "verbatim": "23.0 × 0.3 ÷ 1000 = 6.9 × 10⁻³ moles HCl",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 23.0 × 0.3 over 1000 as a fraction; ÷ stands for its bar."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "6.9 × 10⁻³ moles NaOH",
-    "marks": 3
+    "verbatim": "6.9 × 10⁻³ × 1 = 6.9 × 10⁻³ moles NaOH",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "M = 0.276 mol l⁻¹",
-    "accepts": [
-     "0.276 mol l⁻¹",
-     "0.276 moles per litre NaOH"
-    ],
-    "marks": 3
+    "verbatim": "M = 6.9 × 10⁻³ × 1000 ÷ 25.0 = 0.276 mol l⁻¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prints 6.9 × 10⁻³ × 1000 over 25.0 as a fraction; ÷ stands for its bar."
    }
   ],
-  "notes": "Carded because the scheme awards three discrete, self-checkable values (moles of acid, moles of base, final concentration with its unit) rather than only showing worked arithmetic. The scheme adds '[If first 6 not awarded formula may be awarded 3.]' Preamble 6: one mark is deducted for each arithmetical slip."
+  "notes": "The scheme gives the answer, 0.276 moles per litre NaOH, priced [9], then the working that earns it in two routes; the steps here are its second route, and its own print of both, with its note that the formula may be awarded 3 if the first 6 are not, is shown with the answer."
  },
  {
   "id": "chem-2021-ol-q2-d-i",
@@ -915,8 +851,8 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(d)(ii)",
-  "stem": "Relative atomic masses (rounded): Na = 23, Cl = 35.5.",
   "questionText": "Calculate the mass of NaCl produced if 0.0069 moles of NaCl were formed in the neutralisation reaction.",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O The student then added exactly 23.0 cm³ of the 0.3 M HCl to another 25.0 cm³ portion of the NaOH solution in the conical flask, this time without the indicator.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -926,19 +862,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Mr NaCl = 58.5",
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "58.5 × 0.0069 = 0.40365 g",
-    "accepts": [
-     "0.40365 g NaCl"
-    ],
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Two discrete printed marking points: the relative molecular mass, then the mass with its unit. Preamble 6: an incorrect Mr costs only one slip mark if the addition of all the correct atomic masses is shown; if the addition is not shown, all the marks for an incorrect Mr are lost."
+  "notes": "The scheme gives the answer, 0.40365 g NaCl, priced [4], then the working that earns it, step by step; the steps here are its first route."
  },
  {
   "id": "chem-2021-ol-q3-b-ii",
@@ -949,8 +886,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(b)(ii)",
-  "stem": "100 cm3 of 1.0 M hydrochloric acid at 16.0 °C was added quickly to 100 cm3 of 1.0 M sodium hydroxide solution in an insulated cup, the mixture was stirred, and the temperature of the contents was recorded at 0.5-minute intervals. HCl + NaOH → NaCl + H2O. The results are given in the table.",
   "questionText": "Is the neutralisation of sodium hydroxide solution by hydrochloric acid exothermic or endothermic? Justify your answer.",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation.",
+  "figureKey": "chemistry-2021-OL-paper-q3-table",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -961,21 +899,18 @@
     "kind": "point",
     "verbatim": "exothermic",
     "marks": 3,
-    "exactTermRequired": true
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "temperature goes up / heat given out in reaction",
-    "accepts": [
-     "temperature goes up",
-     "heat given out in reaction"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED from Q3: (a) 'Plot a graph (on graph paper) of temperature versus time' — a graph-plotting task; and (b)(i) 'Estimate the maximum temperature change as a result of the reaction' (answer 6.7 – 7.0 °C) — answerable only from the results table / plotted graph, which the scheme does not reproduce.",
-  "figureKey": "chemistry-2021-OL-paper-p04-i0"
+  ]
  },
  {
   "id": "chem-2021-ol-q3-c",
@@ -986,8 +921,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(c)",
-  "stem": "The neutralisation of 100 cm3 of 1.0 M NaOH by 100 cm3 of 1.0 M HCl was carried out in an insulated cup fitted with a plastic lid through which a thermometer was inserted, and the temperature change was used to calculate the heat of reaction.",
-  "questionText": "Why is an insulated cup a suitable container for this experiment?",
+  "questionText": "Why is an insulated cup, like that shown above, a suitable container for this experiment?",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation.",
+  "figureKey": "chemistry-2021-OL-paper-q3-cup",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -995,20 +931,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "reduce (stop) heat loss to surroundings / doesn't absorb heat / low heat capacity / ensure accurate temperature change (result) obtained",
-    "accepts": [
-     "reduce heat loss to surroundings",
-     "stop heat loss to surroundings",
-     "doesn't absorb heat",
-     "low heat capacity",
-     "ensure accurate temperature change obtained",
-     "ensure accurate result obtained"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "reduce (stop) heat loss to surroundings / doesn’t absorb heat / low heat capacity / ensure accurate temperature change (result) obtained",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Single 6-mark block; any one alternative scores in full."
+  ]
  },
  {
   "id": "chem-2021-ol-q3-d-ii",
@@ -1019,8 +948,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(d)(ii)",
-  "stem": "The container in which the 1.0 M sodium hydroxide solution was provided carried a warning pictogram indicating that the solution is corrosive.",
   "questionText": "Describe one precaution that should have been taken when using this solution.",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. The container in which the 1.0 M NaOH solution was provided carried the warning pictogram shown on the right.",
+  "figureKey": "chemistry-2021-OL-paper-q3d",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1028,19 +958,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "wear gloves (PPE) / wear eye protection / mop up spillages, etc",
-    "accepts": [
-     "wear gloves",
-     "wear PPE",
-     "wear eye protection",
-     "mop up spillages"
-    ],
+    "marks": 6,
     "openList": true,
-    "marks": 6
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED: Q3(d)(i) 'What chemical hazard is indicated by this pictogram?' (answer: corrosive) — the pictogram is a figure the scheme does not reproduce. The hazard is stated in the stem here only so that (d)(ii) is answerable on its own."
+  ]
  },
  {
   "id": "chem-2021-ol-q3-e",
@@ -1051,8 +975,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(e)",
-  "stem": "In this experiment 0.1 moles of HCl were neutralised in an insulated cup and the temperature of the mixture rose. The heat change was calculated to be 5.7 kJ.",
-  "questionText": "Find ΔH in kJ mol⁻¹ for the reaction.",
+  "questionText": "In this experiment 0.1 moles of HCl were neutralised. The heat change was calculated to be 5.7 kJ. Find ΔH in kJ mol⁻¹ for the reaction.",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation.",
+  "figureKey": "chemistry-2021-OL-paper-q3-table",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1061,23 +986,29 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "5.7 ÷ 0.1",
-    "marks": 2
+    "verbatim": "5.7 ÷ 0.1 =",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The scheme prints 5.7 over 0.1 as a fraction; ÷ stands for its bar."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "57 kJ mol⁻¹",
-    "marks": 2
+    "marks": 2,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "exothermic → –57.0 kJ mol⁻¹",
-    "marks": 1
+    "verbatim": "exothermic ⇒ –57.0 kJ mol⁻¹",
+    "marks": 1,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Carded because the scheme awards three separate printed marks: the division, the magnitude with its unit, and the negative sign for an exothermic reaction. Row 1 is the scheme's own arithmetic, reproduced rather than restated as prose."
+  "notes": "The scheme gives the answer, –57.0 kJ mol⁻¹, priced [5], then the working that earns it, step by step; the steps here are its first route."
  },
  {
   "id": "chem-2021-ol-q4-a",
@@ -1096,16 +1027,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "isotopes / different numbers of neutrons",
-    "accepts": [
-     "isotopes",
-     "different numbers of neutrons"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q4 requires eight of items (a)–(l). The scheme allocates six marks to each item, plus one additional mark to each of the first two items for which the highest marks are awarded (8 × 6 + 2 = 50). Cards carry the per-item 6; the two bonus marks are a paper-level aggregation, not a marking point."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-b",
@@ -1116,7 +1045,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(b)",
-  "stem": "In the printed paper the term underlined is 'radioactive'.",
   "questionText": "Some elements are radioactive. Explain the underlined term.",
   "tariffModel": {
    "kind": "fixed"
@@ -1125,28 +1053,23 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "spontaneous decay of unstable nucleus / spontaneous decay of unstable atom",
-    "accepts": [
-     "spontaneous decay of unstable nucleus",
-     "spontaneous decay of unstable atom"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "releasing radiation (or named radiation)",
-    "accepts": [
-     "releasing radiation",
-     "releasing alpha radiation",
-     "releasing beta radiation",
-     "releasing gamma radiation"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "'//' separates two separately-marked points in this scheme (preamble 4), so both the decay idea and the release of radiation are required for the full 6. Per-item tariff for Q4 is 6."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\"",
+  "questionFigureKey": "chemistry-2021-OL-paper-q4b-print"
  },
  {
   "id": "chem-2021-ol-q4-c",
@@ -1157,8 +1080,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(c)",
-  "stem": "An aerial distress flare is essentially a type of firework designed to burn bright red, high in the sky, for at least 40 seconds.",
-  "questionText": "Name a metal whose salts have a red flame colour.",
+  "questionText": "An aerial distress flare is essentially a type of firework designed to burn bright red, high in the sky, as shown on the right, for at least 40 seconds. Name a metal whose salts have a red flame colour.",
+  "figureKey": "chemistry-2021-OL-paper-q4c",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1166,18 +1089,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "strontium (Sr) / lithium (Li)",
-    "accepts": [
-     "strontium",
-     "Sr",
-     "lithium",
-     "Li"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6. The paper prints a photograph of a flare alongside this item, but it is decorative — the question is fully answerable from the text."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-d",
@@ -1196,21 +1115,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "fluorine has more protons (greater atomic number, greater effective nuclear charge) / lithium has fewer protons (smaller atomic number, smaller effective nuclear charge) / lithium has 3 protons but fluorine has 9",
-    "accepts": [
-     "fluorine has more protons",
-     "fluorine has greater atomic number",
-     "fluorine has greater effective nuclear charge",
-     "lithium has fewer protons",
-     "lithium has smaller atomic number",
-     "lithium has smaller effective nuclear charge",
-     "lithium has 3 protons but fluorine has 9"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6; any one of the three alternatives scores in full."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-e",
@@ -1232,47 +1144,38 @@
     "kind": "point",
     "verbatim": "directly proportional",
     "marks": 6,
-    "exactTermRequired": true,
-    "contextNote": "[inversely proportional unacceptable] [Allow 3 for 'direct' relationship]"
+    "openList": true,
+    "contextNote": "The scheme adds: [inversely proportional unacceptable] [Allow 3 for ‘direct’ relationship]"
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6. The scheme explicitly rules out 'inversely proportional' and gives only half marks for a bare 'direct' relationship."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-f",
   "topicId": "chem-1-1",
-  "conceptId": "states-of-matter-particle-motion",
+  "conceptId": "state-in-which-molecules-move-fastest",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q4(f)",
-  "questionText": "In which state of matter do the molecules (i) move around fastest, (ii) only vibrate about fixed positions?",
+  "questionRef": "2021 OL Q4(f)(i)",
+  "questionText": "move around fastest,",
+  "stem": "In which state of matter do the molecules",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) gas",
-    "accepts": [
-     "gas"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "(ii) solid",
-    "accepts": [
-     "solid"
-    ],
-    "marks": 3
+    "verbatim": "gas",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6, split 3 + 3 across the two sub-parts."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-g",
@@ -1283,7 +1186,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(g)",
-  "questionText": "'Methanal (HCHO), ethanoic acid (CH3COOH) and glucose (C6H12O6) all have the same empirical formula.' Is the statement above true or false? Explain.",
+  "questionText": "‘Methanal (HCHO), ethanoic acid (CH₃COOH) and glucose (C₆H₁₂O₆) all have the same empirical formula.’ Is the statement above true or false? Explain.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1293,22 +1196,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "true",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "all have empirical formula CH2O / same ratio of number of atoms of elements C, H and O",
-    "accepts": [
-     "all have empirical formula CH2O",
-     "same ratio of number of atoms of elements C, H and O"
-    ],
+    "kind": "point",
+    "verbatim": "all have empirical formula CH₂O / same ratio of number of atoms of elements C, H and O",
     "marks": 3,
-    "dependsOn": "r-1",
-    "contextNote": "[EXPLAIN marks available only when IS marks awarded.]"
+    "openList": true,
+    "contextNote": "The scheme adds: [EXPLAIN marks available only when IS marks awarded.]"
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6, printed as (3) for the true/false judgement and (3) for the explanation. The scheme explicitly makes the explanation marks unreachable unless the 'true' mark is awarded, so r-2 carries dependsOn: r-1."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-h",
@@ -1327,20 +1228,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "to give it an odour (smell) / detection by odour (smell) / for safety / in case of a leak to enable detection",
-    "accepts": [
-     "to give it an odour",
-     "to give it a smell",
-     "detection by odour",
-     "detection by smell",
-     "for safety",
-     "in case of a leak to enable detection"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6; any one alternative scores in full."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-i",
@@ -1351,8 +1246,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(i)",
-  "stem": "Toothpastes containing fluoride ions help protect against tooth decay.",
-  "questionText": "Find the mass of fluoride in 1.0 cm3 of a toothpaste that has a fluoride concentration of 1,360 p.p.m. (mg l⁻¹).",
+  "questionText": "Toothpastes containing fluoride ions help protect against tooth decay. Find the mass of fluoride in 1.0 cm³ of a toothpaste that has a fluoride concentration of 1,360 p.p.m. (mg l⁻¹).",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -1362,21 +1256,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "1360 ÷ 1000",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "1.360 mg per 1 cm3 / 0.00136 g per 1 cm3",
-    "accepts": [
-     "1.36 mg per 1 cm3",
-     "1.360 mg per 1 cm3",
-     "0.00136 g per 1 cm3"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "⇒ 1.360 mg per 1 cm³ / 0.00136 g per 1 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6, printed as two discrete marks: the division by 1000, then the answer with its unit. Row 1 reproduces the scheme's own arithmetic."
+  "notes": "The scheme gives the answer, 1.36 mg per 1 cm³ / 0.00136 g per 1 cm³, priced [2 × 3], then the working that earns it, step by step; the steps here are its first route. The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-j",
@@ -1395,28 +1288,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "causes algal bloom (eutrophication, oxygen depletion, fish-kill, increase BOD) / causes bad smell (unpleasant taste, unsightly appearance) / microorganisms in waste could cause illness / toxins in waste / contaminates (pollutes) drinking water / etc",
-    "accepts": [
-     "causes algal bloom",
-     "causes eutrophication",
-     "causes oxygen depletion",
-     "causes fish-kill",
-     "increase BOD",
-     "causes bad smell",
-     "unpleasant taste",
-     "unsightly appearance",
-     "microorganisms in waste could cause illness",
-     "toxins in waste",
-     "contaminates drinking water",
-     "pollutes drinking water"
-    ],
-    "openList": true,
     "marks": 6,
-    "contextNote": "[causes pollution, contamination or damages environment …3]"
+    "openList": true,
+    "contextNote": "The scheme adds: [causes pollution, contamination or damages environment …3]"
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6. A vague answer ('causes pollution', 'damages the environment') scores only 3."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-hl-q1-a",
@@ -5017,7 +4896,7 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(k)",
-  "questionText": "Supply the missing words in the following statement: 'In organic chemical synthesis specific bonds in the reactant molecules are _________ and specific bonds in the product molecules are __________.'",
+  "questionText": "Supply the missing words in the following statement: ‘In organic chemical synthesis specific bonds in the reactant molecules are _________ and specific bonds in the product molecules are __________.’",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5027,21 +4906,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "broken",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "formed (created, made)",
-    "accepts": [
-     "formed",
-     "created",
-     "made"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6. '//' separates the two separately-marked blanks (preamble 4)."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-l-a",
@@ -5052,7 +4930,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(l)A",
-  "stem": "Q4(l) offers a choice — 'Answer part A or part B.' This card is part A.",
   "questionText": "Give one source of the sulfuric acid that is sometimes contained in acid rain.",
   "tariffModel": {
    "kind": "fixed"
@@ -5061,20 +4938,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "SO2 / burning sulfur (sulfur compounds) etc",
-    "accepts": [
-     "SO2",
-     "sulfur dioxide",
-     "burning sulfur",
-     "burning sulfur compounds"
-    ],
-    "openList": true,
+    "kind": "point",
+    "verbatim": "SO₂ / burning sulfur (sulfur compounds) etc",
     "marks": 6,
-    "contextNote": "[Award 3 for volcanoes, fossil fuels, etc]"
+    "openList": true,
+    "contextNote": "The scheme adds: [Award 3 for volcanoes, fossil fuels, etc]"
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6. Part A and part B are carded separately rather than as routes, because the paper itself offers them as two alternative questions ('Answer part A or part B'), not as a '//' split within one answer."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q4-l-b",
@@ -5085,7 +4956,6 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q4(l)B",
-  "stem": "Q4(l) offers a choice — 'Answer part A or part B.' This card is part B.",
   "questionText": "Why are steel bathroom taps often coated with a layer of chromium metal?",
   "tariffModel": {
    "kind": "fixed"
@@ -5094,17 +4964,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "to prevent corrosion (rust) / to improve appearance",
-    "accepts": [
-     "to prevent corrosion",
-     "to prevent rust",
-     "to improve appearance"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Per-item tariff for Q4 is 6; any one alternative scores in full."
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
  },
  {
   "id": "chem-2021-ol-q5-a-i",
@@ -5116,6 +4983,7 @@
   "section": "B",
   "questionRef": "2021 OL Q5(a)(i)",
   "questionText": "Define electronegativity.",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5123,29 +4991,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "relative (measure of) attraction / number expressing (giving) attraction",
-    "accepts": [
-     "relative attraction",
-     "measure of attraction",
-     "number expressing attraction",
-     "number giving attraction"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "for shared electrons / for shared pair / for electrons in a covalent bond",
-    "accepts": [
-     "for shared electrons",
-     "for shared pair",
-     "for electrons in a covalent bond"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "'//' separates two separately-marked points (preamble 4): the 'attraction' idea (3) and what the attraction is for (3). Preamble 1: only key phrases are given and they must appear in the candidate's answer to merit the marks."
+  ]
  },
  {
   "id": "chem-2021-ol-q5-a-ii",
@@ -5156,8 +5016,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q5(a)(ii)",
+  "questionText": "Write down the electronegativity values of hydrogen, beryllium and oxygen. Use these values to predict the type of bonding expected in BeO and H₂O.",
   "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
-  "questionText": "Write down the electronegativity values of hydrogen, beryllium and oxygen. Use these values to predict the type of bonding expected in BeO and H2O.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5168,38 +5028,42 @@
     "kind": "point",
     "verbatim": "H: 2.20",
     "marks": 1,
-    "contextNote": "[Take order of question unless answers clearly labelled.]"
+    "openList": true,
+    "contextNote": "The scheme prices these points [3 × 1], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Be: 1.57 / 1.6",
-    "accepts": [
-     "1.57",
-     "1.6"
-    ],
-    "marks": 1
+    "marks": 1,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "O: 3.44",
-    "marks": 1
+    "marks": 1,
+    "openList": true,
+    "contextNote": "The scheme adds: [Take order of question unless answers clearly labelled.]"
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "BeO: ionic",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-5",
     "kind": "point",
-    "verbatim": "H2O: polar covalent",
-    "marks": 3
+    "verbatim": "H₂O: polar covalent",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Part (a) is printed (15) on the paper: (i) 6 + (ii) 9. The scheme gives the three values '(3 × 1)' and each bonding prediction 3. The values are reproduced in the scheme itself, so no booklet lookup is needed to self-mark. The 2021 scheme uses no asterisks, so no row may claim exactTermRequired."
+  ]
  },
  {
   "id": "chem-2021-ol-q5-b",
@@ -5210,8 +5074,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q5(b)",
-  "stem": "BeO is solid at room temperature and melts at 2,507 °C.",
-  "questionText": "Would you expect molten BeO to be able to conduct electricity? Explain your answer.",
+  "questionText": "BeO is solid at room temperature and melts at 2,507 °C. Would you expect molten BeO to be able to conduct electricity? Explain your answer.",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5221,62 +5085,45 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "yes",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "ionic bonding (ionic compound) / ions free to move",
-    "accepts": [
-     "ionic bonding",
-     "ionic compound",
-     "ions free to move"
-    ],
     "marks": 3,
-    "dependsOn": "r-1",
-    "contextNote": "[EXPLAIN marks available only when WOULD marks awarded.]"
+    "openList": true,
+    "contextNote": "The scheme adds: [EXPLAIN marks available only when WOULD marks awarded.]"
    }
-  ],
-  "notes": "The scheme gates the explanation on the yes/no answer, which is what dependsOn is for. 'gate' in this deck means an asterisked exact-term row, and the 2021 scheme uses no asterisks."
+  ]
  },
  {
   "id": "chem-2021-ol-q5-c",
   "topicId": "chem-1-2",
-  "conceptId": "electron-arrangement-in-main-energy-levels",
+  "conceptId": "electron-arrangement-of-beryllium",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q5(c)(i)-(ii)",
-  "questionText": "Write down the arrangement of electrons in the main energy levels in an atom of (i) beryllium, (ii) oxygen.",
+  "questionRef": "2021 OL Q5(c)(i)",
+  "questionText": "Write down the arrangement of electrons in the main energy levels in an atom of beryllium,",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 6,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "(i) 2, 2 / 1s2 2s2",
-    "accepts": [
-     "2, 2",
-     "1s2 2s2"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "(ii) 2, 6 / 1s2 2s2 2p4 / 1s2 2s2 2px2 2py1 2pz1",
-    "accepts": [
-     "2, 6",
-     "1s2 2s2 2p4",
-     "1s2 2s2 2px2 2py1 2pz1"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "2, 2 / 1s² 2s²",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "SKIPPED: Q5(c)(iii) 'Using a dot and cross diagram, or otherwise, show how the bonding in BeO arises' — a diagram question, so excluded under the no-drawing rule, even though the scheme adds '[Diagram not essential.]' and allows a verbal route."
+  ]
  },
  {
   "id": "chem-2021-ol-q5-d-i",
@@ -5287,8 +5134,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q5(d)(i)",
-  "stem": "In the printed paper the underlined term is 'single covalent bonding'.",
-  "questionText": "Hydrogen (H2) has non-polar single covalent bonding. Explain the underlined term.",
+  "questionText": "Hydrogen (H₂) has non-polar single covalent bonding. Explain the underlined term.",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5296,18 +5143,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "two shared electrons / one shared pair of electrons / an atom shares one electron with another atom / covalent bond between 2 atoms with each atom contributing one electron",
-    "accepts": [
-     "two shared electrons",
-     "one shared pair of electrons",
-     "an atom shares one electron with another atom",
-     "covalent bond between 2 atoms with each atom contributing one electron"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The underline in the source PDF spans 'single covalent bonding' (not 'non-polar'), which matches the scheme's answer. Single solidi only, so one row with accepts and no route. Part (d) is printed (17): 6 + 6 + 5."
+  "questionFigureKey": "chemistry-2021-OL-paper-q5d-i-print"
  },
  {
   "id": "chem-2021-ol-q5-d-iii",
@@ -5318,7 +5161,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q5(d)(iii)",
-  "questionText": "Why would you expect O2 to have low solubility in water?",
+  "questionText": "Why would you expect O₂ to have low solubility in water?",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5326,21 +5170,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "no attraction between polar water and non-polar oxygen molecules / water polar and oxygen non-polar / molecules (substances) with similar bonding dissolve one another / molecules (substances) with dissimilar bonding do not dissolve one another",
-    "accepts": [
-     "no attraction between polar water and non-polar oxygen molecules",
-     "water polar and oxygen non-polar",
-     "molecules with similar bonding dissolve one another",
-     "substances with similar bonding dissolve one another",
-     "molecules with dissimilar bonding do not dissolve one another",
-     "substances with dissimilar bonding do not dissolve one another"
-    ],
     "marks": 5,
-    "contextNote": "[Allow (3) for 'like dissolves like'.]"
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow (3) for ‘like dissolves like’.]"
    }
-  ],
-  "notes": "SKIPPED: Q5(d)(ii) 'Use a dot and cross diagram to show the arrangement of the electrons in an O2 molecule' — a drawing question."
+  ]
  },
  {
   "id": "chem-2021-ol-q6-a",
@@ -5351,8 +5187,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q6(a)",
-  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. In the printed paper the underlined term is 'hydrocarbons'.",
   "questionText": "Explain the underlined term.",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5360,18 +5196,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "compounds of hydrogen (H) and carbon (C) / contain hydrogen (H) and carbon (C) only",
-    "accepts": [
-     "compounds of hydrogen and carbon",
-     "compounds of H and C",
-     "contain hydrogen and carbon only",
-     "contain H and C only"
-    ],
-    "marks": 5
+    "marks": 5,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Single 5-mark block, matching the (5) printed on the paper. Underline verified from the source PDF: it spans exactly 'hydrocarbons'. Supersedes the duplicate-id copy in this batch."
+  "questionFigureKey": "chemistry-2021-OL-paper-q6a-print"
  },
  {
   "id": "chem-2021-ol-q6-b",
@@ -5406,40 +5238,29 @@
  {
   "id": "chem-2021-ol-q6-c",
   "topicId": "chem-2-4",
-  "conceptId": "fractionating-column-position",
+  "conceptId": "where-the-fewest-carbon-atoms-collect",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q6(c)",
-  "questionText": "As they separate in a fractionating column, where (high up or low down) would you expect to collect the hydrocarbons (i) with the fewest carbon atoms, (ii) with the highest boiling points?",
+  "questionRef": "2021 OL Q6(c)(i)",
+  "questionText": "with the fewest carbon atoms,",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene As they separate in a fractionating column, where (high up or low down) would you expect to collect the hydrocarbons",
+  "figureKey": "chemistry-2021-OL-paper-q6",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) high",
-    "accepts": [
-     "high",
-     "high up"
-    ],
-    "marks": 6
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "(ii) low",
-    "accepts": [
-     "low",
-     "low down"
-    ],
-    "marks": 6
+    "verbatim": "high",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Printed tariff for (c) is 12, split 6 + 6 across the two sub-parts."
+  ]
  },
  {
   "id": "chem-2021-ol-q6-d",
@@ -5449,36 +5270,34 @@
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q6(d)",
-  "stem": "The three fractions named are light gasoline, kerosene and gas oil (diesel oil).",
-  "questionText": "Which of the three fractions named above (i) is used as a fuel for jet aircraft, (ii) is often catalytically cracked to make smaller molecules for use in petrol?",
+  "questionRef": "2021 OL Q6(d)(i)–(ii)",
+  "questionText": "(i) is used as a fuel for jet aircraft, (ii) is often catalytically cracked to make smaller molecules for use in petrol?",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene Which of the three fractions named above",
+  "figureKey": "chemistry-2021-OL-paper-q6",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) kerosene",
-    "accepts": [
-     "kerosene"
-    ],
-    "marks": 6
+    "verbatim": "kerosene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "(ii) gas oil (diesel oil) / kerosene",
-    "accepts": [
-     "gas oil",
-     "diesel oil",
-     "kerosene"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "gas oil (diesel oil) / kerosene",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Printed tariff for (d) is 9, allocated '(6 + 3)' across (i) and (ii)."
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q6-e-i",
@@ -5490,6 +5309,7 @@
   "section": "B",
   "questionRef": "2021 OL Q6(e)(i)",
   "questionText": "What term is used as a measure of the tendency of a fuel to cause knocking in an engine?",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5497,16 +5317,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "octane number (octane rating)",
-    "accepts": [
-     "octane number",
-     "octane rating"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Printed tariff for (e) is 18, split 6 + 6 + 6 across (i), (ii) and (iii). 'tendency ... to cause knocking' is the SEC's own wording — do not rephrase it to 'resistance to knocking'. The 2021 scheme uses no asterisks, so exactTermRequired is not available. Supersedes the duplicate-id copy in this batch."
+  ]
  },
  {
   "id": "chem-2021-ol-q6-e-ii",
@@ -5518,6 +5335,7 @@
   "section": "B",
   "questionRef": "2021 OL Q6(e)(ii)",
   "questionText": "Why were lead compounds previously added to petrol?",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5525,27 +5343,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "to improve (increase) octane number (rating) / to reduce knocking (pinking, pinging, tapping, engine noise) / to stop petrol autoigniting (pre-igniting, igniting too early, igniting before spark)",
-    "accepts": [
-     "to improve octane number",
-     "to increase octane number",
-     "to improve octane rating",
-     "to increase octane rating",
-     "to reduce knocking",
-     "to reduce pinking",
-     "to reduce pinging",
-     "to reduce tapping",
-     "to reduce engine noise",
-     "to stop petrol autoigniting",
-     "to stop petrol pre-igniting",
-     "to stop petrol igniting too early",
-     "to stop petrol igniting before spark"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Any one alternative scores the full 6."
+  ]
  },
  {
   "id": "chem-2021-ol-q6-e-iii",
@@ -5557,6 +5361,7 @@
   "section": "B",
   "questionRef": "2021 OL Q6(e)(iii)",
   "questionText": "Why was the addition of lead compounds to petrol discontinued?",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5564,22 +5369,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "toxic / poisonous / harmful / may cause cancer (brain damage) / damages health / poisons catalytic converter",
-    "accepts": [
-     "toxic",
-     "poisonous",
-     "harmful",
-     "may cause cancer",
-     "may cause brain damage",
-     "damages health",
-     "poisons catalytic converter"
-    ],
     "marks": 6,
-    "contextNote": "[causes pollution (damages environment) …3]"
+    "openList": true,
+    "contextNote": "The scheme adds: [causes pollution (damages environment) …3]"
    }
-  ],
-  "notes": "A vague answer ('causes pollution', 'damages the environment') scores only 3. The scheme's list has no ellipsis, so it is closed and openList must not be set. Supersedes the duplicate-id copy in this batch."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-a-i",
@@ -5591,6 +5387,7 @@
   "section": "B",
   "questionRef": "2021 OL Q7(a)(i)",
   "questionText": "What is an acid?",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5598,15 +5395,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "gives hydrogen (hydronium) ions (H⁺, H₃O⁺) in aqueous solution (water)",
-    "accepts": [
-     "proton (hydrogen ion, H⁺) donor"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "gives hydrogen (hydronium) ions (H⁺, H₃O⁺) in aqueous solution (water) / proton (hydrogen ion, H⁺) donor",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Either the Arrhenius or the Brønsted–Lowry definition earns the full 6."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-a-ii",
@@ -5618,6 +5413,7 @@
   "section": "B",
   "questionRef": "2021 OL Q7(a)(ii)",
   "questionText": "Define pH.",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5627,20 +5423,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "pH = –log",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "[H⁺]",
-    "accepts": [
-     "[H₃O⁺]"
-    ],
+    "kind": "point",
+    "verbatim": "[H⁺] / [H₃O⁺]",
     "marks": 3,
-    "contextNote": "Accept non-square brackets."
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept non-square brackets]"
    }
-  ],
-  "notes": "The scheme splits this with a double solidus, which in this paper means two separately-marked points (3 + 3), not alternatives."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-a-iii",
@@ -5651,8 +5446,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q7(a)(iii)",
-  "stem": "One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "questionText": "Calculate the pH of a 0.02 M HCl solution correct to one decimal place.",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5662,17 +5457,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "log 0.02",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "pH = – log 0.02 = 1.7",
     "marks": 3,
-    "contextNote": "[No rounding or incorrect rounding = slip error.] [Negative answer is not a slip error.]"
+    "openList": true,
+    "contextNote": "The scheme adds: [No rounding or incorrect rounding = slip error.] [Negative answer is not a slip error.]"
    }
   ],
-  "notes": "Both rows are the scheme's own printed working lines, each with its own mark value, so no prose is invented around the arithmetic. 'correct to one decimal place' is part of the question and is what the rounding penalty attaches to."
+  "notes": "The scheme gives the answer, 1.7, priced [6], then the working that earns it, step by step; the steps here are its first route."
  },
  {
   "id": "chem-2021-ol-q7-a-iv",
@@ -5684,6 +5482,7 @@
   "section": "B",
   "questionRef": "2021 OL Q7(a)(iv)",
   "questionText": "Why should a household not be supplied with acidic water?",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5691,22 +5490,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "dissolves (corrodes) pipes / dissolves toxic (harmful, heavy) metals / causes tooth decay / stains sinks and baths",
-    "accepts": [
-     "dissolves pipes",
-     "corrodes pipes",
-     "dissolves toxic metals",
-     "dissolves harmful metals",
-     "dissolves heavy metals",
-     "causes tooth decay",
-     "stains sinks and baths"
-    ],
     "marks": 3,
-    "contextNote": "[damages health or unsafe to drink are unacceptable answers]"
+    "openList": true,
+    "contextNote": "The scheme adds: [damages health or unsafe to drink are unacceptable answers]"
    }
-  ],
-  "notes": "The scheme's list has no ellipsis and it explicitly rejects two plausible answers, so openList must not be set. Q7(a)(v) ('Does the pH of water increase or decrease when base is added to it?' — increase, 3) is skipped here but is cardable; the paper states the change even though the scheme does not."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-b-i",
@@ -5717,8 +5507,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q7(b)(i)",
-  "stem": "Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "questionText": "How could you show, using soap flakes, that a water sample contains hardness?",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5726,26 +5516,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "mix (shake) soap flakes with hard water",
-    "accepts": [
-     "mix soap flakes with hard water",
-     "shake soap flakes with hard water"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "scum formed / no lather",
-    "accepts": [
-     "scum formed",
-     "no lather"
-    ],
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "'using soap flakes' is in the printed question and is what makes the scheme's answer the required one. // is additive in the 2021 scheme (printed 2 × 3): both rows are needed for the 6 and neither carries a route."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-b-ii",
@@ -5757,6 +5542,7 @@
   "section": "B",
   "questionRef": "2021 OL Q7(b)(ii)",
   "questionText": "Name a substance that causes temporary hardness in water.",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5764,20 +5550,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "calcium hydrogencarbonate (calcium bicarbonate, Ca(HCO3)2, magnesium hydrogencarbonate, magnesium bicarbonate, Mg(HCO3)2)",
-    "accepts": [
-     "calcium bicarbonate",
-     "Ca(HCO3)2",
-     "magnesium hydrogencarbonate",
-     "magnesium bicarbonate",
-     "Mg(HCO3)2"
-    ],
+    "kind": "point",
+    "verbatim": "calcium hydrogencarbonate (calcium bicarbonate, Ca(HCO₃)₂, magnesium hydrogencarbonate, magnesium bicarbonate, Mg(HCO₃)₂)",
     "marks": 6,
-    "contextNote": "Name or formula is equally acceptable (scheme preamble 5)."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The question is specifically about TEMPORARY hardness — dropping that word would admit calcium sulfate, which the scheme does not accept."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-b-iii",
@@ -5788,8 +5567,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q7(b)(iii)",
-  "stem": "Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "questionText": "Give one way that a householder could soften this hard water.",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5797,19 +5576,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "boil / add Na2CO3 (sodium carbonate, washing soda) / use ion exchange",
-    "accepts": [
-     "boil",
-     "add Na2CO3",
-     "add sodium carbonate",
-     "add washing soda",
-     "use ion exchange"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "boil / add Na₂CO₃ (sodium carbonate, washing soda) / use ion exchange",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "'this hard water' is the temporary hardness named in the (b) stem, which is why boiling is accepted."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-b-iv",
@@ -5821,6 +5594,7 @@
   "section": "B",
   "questionRef": "2021 OL Q7(b)(iv)",
   "questionText": "Give one advantage and one disadvantage to a household of having a hard water supply.",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. Another water source is a river that contains water with a moderate amount of temporary hardness but this hardness is not removed during water treatment.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5828,33 +5602,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "advantage: tastes nicer / contains calcium / good for teeth and bones",
-    "accepts": [
-     "tastes nicer",
-     "contains calcium",
-     "good for teeth and bones"
-    ],
-    "marks": 4
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "disadvantage: wastes soap / wastes heat / forms fur (scale) on kettles (pipes, boiler)",
-    "accepts": [
-     "wastes soap",
-     "wastes heat",
-     "forms fur on kettles",
-     "forms scale on kettles",
-     "forms fur on pipes",
-     "forms scale on pipes",
-     "forms fur on boiler",
-     "forms scale on boiler"
-    ],
-    "marks": 4
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Neither scheme list ends in an ellipsis, so openList must not be set on either row."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-a-iii",
@@ -5866,6 +5628,8 @@
   "section": "B",
   "questionRef": "2021 OL Q8(a)(iii)",
   "questionText": "Is the geometry around the carbon atoms in ethene planar or tetrahedral?",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5875,10 +5639,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "planar",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Part (a) is printed (15): (i) 3 + (ii) 6 + (iii) 6. The paper's alternatives are 'planar or tetrahedral', not 'planar or non-planar'. The 2021 scheme uses no asterisks, so exactTermRequired is not available. Q8(a)(ii) and Q8(e)(ii) are DRAW parts and Q8(b)(ii) needs the printed reaction scheme, so all are skipped — but Q8(a)(i) (alkenes, 3) is answerable alone and is cardable."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-c",
@@ -5889,7 +5654,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q8(c)",
-  "questionText": "Name the reaction type involved when ethanol is converted to ethene using heated Al2O3.",
+  "questionText": "Name the reaction type involved when ethanol is converted to ethene using heated Al₂O₃.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5897,16 +5664,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "elimination / dehydration",
-    "accepts": [
-     "elimination",
-     "dehydration"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Single solidus, so one row with accepts and no route. Printed tariff (6)."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-d",
@@ -5917,39 +5681,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q8(d)",
-  "stem": "Y is a product labelled in the paper's reaction scheme, but the question itself states how Y is made, so the diagram is not needed.",
   "questionText": "Name Y which is made by polymerising ethene.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "poly(ethene) / polythene / polyethylene",
-    "accepts": [
-     "poly(ethene)",
-     "polythene",
-     "polyethylene"
-    ],
-    "marks": 6
-   }
-  ],
-  "notes": "Printed tariff (6). The verbatim question names Y but defines it in the same sentence, so it is answerable without the reaction scheme.",
-  "figureKey": "chemistry-2021-ol-paper-p009-i0"
- },
- {
-  "id": "chem-2021-ol-q8-e-i",
-  "topicId": "chem-2-4",
-  "conceptId": "aromatic-compound-benzene-ring",
-  "level": "ordinary",
-  "year": 2021,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2021 OL Q8(e)(i)",
-  "stem": "Benzene, an aromatic compound, is unreactive with regard to addition reactions. In the printed paper the underlined term is 'aromatic compound'.",
-  "questionText": "Explain the underlined term.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5958,11 +5692,51 @@
    {
     "id": "r-1",
     "kind": "point",
+    "verbatim": "poly(ethene) / polythene / polyethylene",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q8-e-i",
+  "topicId": "chem-2-4",
+  "conceptId": "aromatic-compound-and-benzene-structure",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q8(e)(i)–(ii)",
+  "questionText": "(i) Explain the underlined term. (ii) Draw the structure of a benzene molecule.",
+  "stem": "Study the reaction scheme and answer the questions that follow. Benzene, an aromatic compound, is unreactive with regard to addition reactions.",
+  "figureKey": "chemistry-2021-OL-scheme-q8e",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[6 + 5]"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
     "verbatim": "contains a benzene ring",
-    "marks": 6
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Draw the structure of a benzene molecule.",
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme answers (ii) with a drawing; its own print is shown with the answer.",
+    "ask": true
    }
   ],
-  "notes": "The scheme prints '(6 + 5)' across (e)(i) and (e)(ii); (i) takes 6 and the DRAW part (ii) takes 5, skipped under the no-drawing rule. Underline verified from the source PDF."
+  "notes": "The scheme prices these points together as [6 + 5] without saying which point earns which part, so no per-point value is shown.",
+  "questionFigureKey": "chemistry-2021-OL-paper-q8e-print"
  },
  {
   "id": "chem-2021-ol-q9-a",
@@ -5974,6 +5748,8 @@
   "section": "B",
   "questionRef": "2021 OL Q9(a)",
   "questionText": "What is meant by the rate of a chemical reaction?",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table.",
+  "figureKey": "chemistry-2021-OL-scheme-q9a",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5981,16 +5757,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "change in concentration per unit time (rate of change of concentration) of one reactant or product",
-    "accepts": [
-     "change in concentration ÷ time"
-    ],
     "marks": 6,
-    "contextNote": "The scheme's second form is written as the fraction: change in concentration over time."
+    "openList": true,
+    "contextNote": "The scheme also accepts the change in concentration over time written as a fraction; its own print is shown with the answer."
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q9-b-ii",
@@ -6001,8 +5774,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q9(b)(ii)",
-  "stem": "The rate of formation of hydrogen gas was investigated according to the balanced equation Zn + 2HCl → ZnCl2 + H2. The volume of hydrogen collected was measured at intervals over a 12-minute period using a gas syringe.",
   "questionText": "Does the rate of this reaction increase or decrease with time? Give a reason for your answer.",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table.",
+  "figureKey": "chemistry-2021-OL-paper-q9",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6012,26 +5786,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "decreases",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "Zn (zinc, HCl, hydrochloric acid, reactants) used up (concentration decreases)",
-    "accepts": [
-     "zinc used up",
-     "HCl used up",
-     "hydrochloric acid used up",
-     "reactants used up",
-     "concentration decreases",
-     "graph becomes less steep",
-     "graph levels off"
-    ],
+    "kind": "point",
+    "verbatim": "Zn (zinc, HCl, hydrochloric acid, reactants) used up (concentration decreases) / graph becomes less steep / graph levels off",
     "marks": 3,
-    "contextNote": "The last two accepted answers ('graph becomes less steep', 'graph levels off') describe the graph the candidate plots in (b)(i); the chemical reason scores on its own."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Part (b) is printed (21): the PLOT in (i) takes 15 and this part 6. Q9(c)(i)–(iii) are read-offs from the candidate's own graph and are skipped. Q9(d) is cardable — the paper names both changes (more concentrated HCl; powdered zinc)."
+  ]
  },
  {
   "id": "chem-2021-ol-q10-b-i-ii",
@@ -6041,11 +5808,13 @@
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q10(b)(i) and (ii)",
-  "stem": "Acidified water is electrolysed using inert electrodes. The overall reaction is H2O (l) → H2 (g) + ½O2 (g). This is a redox reaction.",
+  "questionRef": "2021 OL Q10(b)(i)–(ii)",
   "questionText": "Define (i) oxidation, (ii) reduction, in terms of electron transfer.",
+  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H₂O (l) → H₂ (g) + ½O₂ (g) This is a redox reaction.",
+  "figureKey": "chemistry-2021-OL-paper-q10b",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
   },
   "totalMarks": 7,
   "rows": [
@@ -6053,16 +5822,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "loss of electrons",
-    "marks": 4
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (i)."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "gain of electrons",
-    "marks": 3
+    "marks": null,
+    "openList": true,
+    "contextNote": "For (ii)."
    }
   ],
-  "notes": "Q10 is 'Answer any two of the parts (a), (b) and (c)', each 25 — the three parts sum to 75, not 50. The scheme allocates (4 + 3) to (i) and (ii). Q10(a) is a fill-in-the-blanks passage whose 25 marks the scheme distributes '(2 × 6 + 4 × 3 + 1)' without saying which blank takes which value, so it is not cardable."
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q10-b-iii",
@@ -6073,8 +5846,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q10(b)(iii)",
-  "stem": "Acidified water is electrolysed using inert electrodes. The overall reaction is H2O (l) → H2 (g) + ½O2 (g).",
-  "questionText": "What is the ratio, by volume, of H2 to O2 produced?",
+  "questionText": "What is the ratio, by volume, of H₂ to O₂ produced?",
+  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H₂O (l) → H₂ (g) + ½O₂ (g) This is a redox reaction.",
+  "figureKey": "chemistry-2021-OL-paper-q10b",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6085,10 +5859,10 @@
     "kind": "point",
     "verbatim": "2:1",
     "marks": 6,
-    "contextNote": "[Reverse unacceptable unless clearly labelled oxygen:hydrogen]"
+    "openList": true,
+    "contextNote": "The scheme adds: [Reverse unacceptable unless clearly labelled oxygen:hydrogen]"
    }
-  ],
-  "notes": "The equation is printed in the paper's own stem, so the ratio follows without the apparatus diagram."
+  ]
  },
  {
   "id": "chem-2021-ol-q10-b-iv",
@@ -6099,8 +5873,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q10(b)(iv)",
-  "stem": "Acidified water is electrolysed using inert electrodes.",
   "questionText": "Identify a suitable material for use as the inert electrodes.",
+  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H₂O (l) → H₂ (g) + ½O₂ (g) This is a redox reaction.",
+  "figureKey": "chemistry-2021-OL-paper-q10b",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6108,19 +5883,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "platinum (Pt) / carbon (graphite, C)",
-    "accepts": [
-     "platinum",
-     "Pt",
-     "carbon",
-     "graphite",
-     "C"
-    ],
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "'inert' is the word the answer turns on. Q10(b)(v) ('At which electrode, X or Y, does oxidation take place?') is skipped because X and Y are labels on the printed apparatus diagram."
+  ]
  },
  {
   "id": "chem-2021-ol-q10-c-i",
@@ -6132,6 +5901,7 @@
   "section": "B",
   "questionRef": "2021 OL Q10(c)(i)",
   "questionText": "What is a catalyst?",
+  "stem": "AdBlue, a solution of urea (NH₂CONH₂) in water, is used in the exhaust systems of some diesel-powered vehicles to remove NO₂ from the hot exhaust flow by making use of the following reaction. 4NH₂CONH₂ + 6NO₂ → 7N₂ + 8H₂O + 4CO₂ catalyst 400 ⁰C",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6139,18 +5909,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "speeds up (alters) the rate of a chemical reaction",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "without being used up (but is chemically unchanged) in the reaction",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Both halves are needed for the full 6 — the scheme allocates separate marks to each."
+  ]
  },
  {
   "id": "chem-2021-ol-q10-c-ii",
@@ -6161,8 +5934,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q10(c)(ii)",
-  "stem": "AdBlue is a solution of urea (NH2CONH2) in water, used in the exhaust systems of some diesel-powered vehicles.",
-  "questionText": "What is the mass of one mole of NH2CONH2? There are 1,620 g of urea in a container of AdBlue. How many moles of urea are there in the container?",
+  "questionText": "What is the mass of one mole of NH₂CONH₂? There are 1,620 g of urea in a container of AdBlue. How many moles of urea are there in the container?",
+  "stem": "AdBlue, a solution of urea (NH₂CONH₂) in water, is used in the exhaust systems of some diesel-powered vehicles to remove NO₂ from the hot exhaust flow by making use of the following reaction. 4NH₂CONH₂ + 6NO₂ → 7N₂ + 8H₂O + 4CO₂ catalyst 400 ⁰C",
+  "figureKey": "chemistry-2021-OL-scheme-q10c-ii",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6173,22 +5947,18 @@
     "kind": "point",
     "verbatim": "[14 + (2 × 1) + 12 + 16 + 14 + (2 × 1)] = 60 g",
     "marks": 6,
-    "contextNote": "Preamble 6: the one-mark slip deduction applies to an incorrect value only if the addition of all the correct atomic masses is shown. If the addition is not shown, all these marks are lost."
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "n = m/Ar = 1620/60",
-    "marks": 3
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "= 27 moles urea",
-    "marks": 3
+    "verbatim": "27 moles urea",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme sets out the working, n = m over Ar = 1620 over 60 (3), = 27 moles urea (3); its own print is shown with the answer."
    }
-  ],
-  "notes": "The paper asks for the MASS OF ONE MOLE, not the unitless Mr — which is why the scheme's answer carries the unit 'g'. All three rows are the scheme's own printed lines with their own mark values. Q10(c)(iii) is skipped: its first step reads the mole ratio off the balanced equation printed on the paper."
+  ]
  },
  {
   "id": "chem-2021-ol-q11-a-i-ii",
@@ -6198,10 +5968,12 @@
   "year": 2021,
   "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q11(a)(i) and (ii)",
-  "questionText": "In the periodic table of the elements, what term is used for the elements (i) in the same vertical column, (ii) in the same horizontal row?",
+  "questionRef": "2021 OL Q11(a)(i)–(ii)",
+  "questionText": "(i) in the same vertical column, (ii) in the same horizontal row?",
+  "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question. In the periodic table of the elements, what term is used for the elements",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
   },
   "totalMarks": 7,
   "rows": [
@@ -6209,16 +5981,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "group",
-    "marks": 4
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "period",
-    "marks": 3
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q11 is 'Answer any two of the parts (a), (b), (c) and (d)', each 25; the scheme allocates (4 + 3) to (i) and (ii). The 2021 scheme uses no asterisks, so exactTermRequired is not available. Q11(a)(iii) needs no Mendeleev extract and is cardable."
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q11-a-iv",
@@ -6229,8 +6005,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(a)(iv)",
-  "stem": "When Mendeleev published his first periodic table in 1869 the elements were arranged in order of atomic weight (or relative atomic mass).",
-  "questionText": "How are the elements ordered in the modern periodic table?",
+  "questionText": "When Mendeleev published his first periodic table in 1869 the elements were arranged in order of atomic weight (or relative atomic mass). How are the elements ordered in the modern periodic table?",
+  "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question. In the periodic table of the elements, what term is used for the elements",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6238,15 +6014,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "atomic number",
-    "accepts": [
-     "number of protons"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "atomic number / number of protons",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-a-v",
@@ -6257,8 +6031,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(a)(v)",
-  "stem": "The element germanium (Ge) had not been discovered when Mendeleev published his first periodic table but he was able to predict its existence and its properties.",
-  "questionText": "How did Mendeleev know what properties the undiscovered element germanium could be expected to have?",
+  "questionText": "The element germanium (Ge) had not been discovered when Mendeleev published his first periodic table but he was able to predict its existence and its properties. How did Mendeleev know what properties the undiscovered element germanium could be expected to have?",
+  "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question. In the periodic table of the elements, what term is used for the elements",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6266,16 +6040,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "from properties of elements in same group (column)",
-    "accepts": [
-     "elements in same group (column) have similar properties",
-     "from properties of carbon (C) and silicon (Si)"
-    ],
-    "marks": 6
+    "kind": "point",
+    "verbatim": "from properties of elements in same group (column) / elements in same group (column) have similar properties / from properties of carbon (C) and silicon (Si)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The scheme's carbon/silicon alternative works because germanium sits directly below silicon in the same group."
+  ]
  },
  {
   "id": "chem-2021-ol-q11-b-i",
@@ -6286,10 +6057,11 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(b)(i)",
-  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions: H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq)",
   "questionText": "What is meant by a chemical equilibrium?",
+  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions. H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq)",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[4 + 3]"
   },
   "totalMarks": 7,
   "rows": [
@@ -6297,34 +6069,20 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "state where forward and reverse reactions",
-    "marks": 4,
-    "route": "rates",
-    "contextNote": "The rate-based definition — one of two the scheme prints either side of 'or'. Claiming it locks the concentration route; a part of one definition may not be combined with a part of the other."
+    "marks": null,
+    "openList": true,
+    "contextNote": "The scheme prices this point and the next together (4 + 3), or instead the pair \"state where concentrations of reactants and products // are constant\"."
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "have equal rates",
-    "marks": 3,
-    "route": "rates"
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "state where concentrations of reactants and products",
-    "marks": 4,
-    "route": "concentrations",
-    "contextNote": "The concentration-based definition. Claiming it locks the rate route."
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "are constant",
-    "marks": 3,
-    "route": "concentrations"
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Q11(b)(iii) is not carded — it is a fill-in-the-blanks on a sentence printed only on the paper."
+  "notes": "The scheme prices these points together as [4 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q11-b-ii",
@@ -6335,8 +6093,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(b)(ii)",
-  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions: H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq)",
   "questionText": "Write the equilibrium constant (Kc) expression for this reaction.",
+  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions. H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq)",
+  "figureKey": "chemistry-2021-OL-scheme-q11b-ii",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6345,18 +6104,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Numerator — [HCO₃⁻]²",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Denominator — [H₂CO₃][CO₃²⁻]",
-    "marks": 3,
-    "contextNote": "Round brackets are accepted. An inverted expression (numerator and denominator swapped) scores 3 in total."
+    "verbatim": "Write the equilibrium constant (Kc) expression for this reaction.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer. The scheme adds: [numerator correct (3) and denominator correct (3); inverted (3)] [Accept round brackets.]",
+    "ask": true
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-b-iv",
@@ -6367,8 +6121,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(b)(iv)",
-  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions: H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq). Marine shellfish and coral use carbonate ions (CO₃²⁻) to make calcium carbonate (CaCO₃) shell. Human activity over the past 170 years or so, in particular burning fossil fuels, has resulted in a continuously increasing concentration of carbonic acid in seawater. Part (iii) of the question referred to Le Châtelier's principle.",
   "questionText": "Use the equilibrium equation above and the principle referred to in (iii) to predict the effect of increasing the quantities of carbonic acid in seawater on shell-making by these creatures. Explain your answer.",
+  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions. H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq) Marine shellfish and coral use carbonate ions (CO₃²⁻) to make calcium carbonate (CaCO₃) shell. Human activity over the past 170 years or so, in particular burning fossil fuels, has resulted in a continuously increasing concentration of carbonic acid in seawater.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6376,31 +6130,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "negative effect",
-    "accepts": [
-     "cannot make shell",
-     "shell thinner",
-     "shell has poor quality",
-     "harder to make shell",
-     "takes longer to make shell"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "negative effect / cannot make shell / shell thinner / shell has poor quality / harder to make shell / takes longer to make shell",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "carbonate ion (CO₃²⁻) used up",
-    "accepts": [
-     "equilibrium moves to right",
-     "carbonate ion (CO₃²⁻) converted to hydrogencarbonate",
-     "carbonic acid reacts with (uses up) carbonate ion (CO₃²⁻)",
-     "less carbonate ion available"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "carbonate ion (CO₃²⁻) used up / equilibrium moves to right / carbonate ion (CO₃²⁻) converted to hydrogencarbonate / carbonic acid reacts with (uses up) carbonate ion (CO₃²⁻) / less carbonate ion available",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-c-i",
@@ -6436,8 +6180,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(c)(ii)",
-  "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly. The magnesium ignited as it reacted in air and magnesium oxide was formed.",
   "questionText": "Use the valencies of magnesium and oxygen to write the chemical formula of magnesium oxide.",
+  "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly as shown in the diagram. The lid of the crucible was raised slightly several times during the heating process. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
+  "figureKey": "chemistry-2021-OL-paper-q11c",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6448,10 +6193,10 @@
     "kind": "point",
     "verbatim": "MgO",
     "marks": 9,
-    "contextNote": "Partial credit only: the scheme awards 3 + 3 for correctly stating the valencies alone — Mg: 2 or II; O: 2 or II."
+    "openList": true,
+    "contextNote": "Or instead, (2 × 3), \"Mg: 2 or II // O: 2 or II\"."
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-c-iii",
@@ -6462,8 +6207,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(c)(iii)",
-  "stem": "Magnesium ribbon was heated strongly in a crucible. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
   "questionText": "Replace the words in the word equation above with chemical formulae and balance your equation.",
+  "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly as shown in the diagram. The lid of the crucible was raised slightly several times during the heating process. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
+  "figureKey": "chemistry-2021-OL-paper-q11c",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6471,16 +6217,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Mg + ½ O₂ → MgO",
-    "accepts": [
-     "2Mg + O₂ → 2MgO"
-    ],
+    "kind": "point",
+    "verbatim": "Mg + ½ O₂ → MgO // 2Mg + O₂ → 2MgO",
     "marks": 6,
-    "contextNote": "The scheme splits these 6 marks as FORMULAE (3) and BALANCING (3), so correct formulae with an unbalanced equation still score 3."
+    "openList": true,
+    "contextNote": "The scheme adds: [formulae (3), balancing (3)] The scheme prices this point [3 + 3]."
    }
-  ],
-  "notes": "Not split into two rows because 'formulae correct' / 'balancing correct' are criteria rather than answers."
+  ]
  },
  {
   "id": "chem-2021-ol-q11-c-iv",
@@ -6491,8 +6234,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(c)(iv)",
-  "stem": "A small strip of magnesium ribbon was placed inside a crucible and heated strongly until it was completely converted to magnesium oxide.",
   "questionText": "Would you expect the mass of the crucible and its contents to increase, decrease or remain constant as the reaction proceeded? Explain your answer.",
+  "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly as shown in the diagram. The lid of the crucible was raised slightly several times during the heating process. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
+  "figureKey": "chemistry-2021-OL-paper-q11c",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6502,20 +6246,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "increase",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "oxygen (air) absorbed or reacted",
-    "accepts": [
-     "MgO heavier than Mg"
-    ],
+    "kind": "point",
+    "verbatim": "oxygen (air) absorbed or reacted / MgO heavier than Mg, etc",
     "marks": 3,
-    "openList": true
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-d-a-ii",
@@ -6526,8 +6269,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(d)A(ii)",
-  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
   "questionText": "Argon is used to fill the spaces between the sheets of glass in double and triple glazed windows. Give one major use for each of the other two elements, N₂ and O₂, separated in the fractional distillation of liquid air.",
+  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6535,35 +6278,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "nitrogen: packaging food to prevent oxidation",
-    "accepts": [
-     "packaging to prevent crushing of food (crisps, etc, delicate items)",
-     "flushing (purging) tanks of flammable liquids (gases, vapours)",
-     "freezing (preserving) food (biological specimens, sperm, semen)",
-     "remove unwanted skin cells",
-     "remove skin cancer (warts, verrucae)",
-     "feedstock for ammonia industry"
-    ],
+    "kind": "point",
+    "verbatim": "nitrogen: packaging food to prevent oxidation / packaging to prevent crushing of food (crisps, etc, delicate items) / flushing (purging) tanks of flammable liquids (gases, vapours) / freezing (preserving) food (biological specimens, sperm, semen) / remove unwanted skin cells / remove skin cancer (warts, verrucae) / feedstock for ammonia industry, etc",
     "marks": 3,
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "oxygen: breathing (respiration) gas for patients (divers, firefighters, pilots, etc)",
-    "accepts": [
-     "steelmaking",
-     "to support combustion of ethyne, in rockets etc",
-     "skin (muscle) therapy",
-     "welding",
-     "reduce river pollution"
-    ],
+    "kind": "point",
+    "verbatim": "oxygen: breathing (respiration) gas for patients (divers, firefighters, pilots, etc) / steelmaking / to support combustion of ethyne, in rockets etc / skin (muscle) therapy / welding / reduce river pollution / etc",
     "marks": 3,
-    "openList": true
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-d-a-iii",
@@ -6574,8 +6303,8 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(d)A(iii)",
-  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar.",
   "questionText": "Both N₂ and Ar are chemically inert. Explain the inertness of nitrogen gas.",
+  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6583,17 +6312,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "triple bond",
-    "accepts": [
-     "strong bond",
-     "non-polar"
-    ],
+    "kind": "point",
+    "verbatim": "triple bond / strong bond / non-polar",
     "marks": 6,
-    "contextNote": "A key word only — 'triple bond' must appear in a correct statement about the nitrogen molecule to earn the marks."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-d-a-iv",
@@ -6605,6 +6330,7 @@
   "section": "B",
   "questionRef": "2021 OL Q11(d)A(iv)",
   "questionText": "Nitrogen in air is essential to plants but they cannot make use of the gas itself. What term describes the conversion of N₂ into compounds that can be used by plants?",
+  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6615,10 +6341,10 @@
     "kind": "point",
     "verbatim": "nitrogen fixation",
     "marks": 6,
-    "exactTermRequired": true
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-d-a-v",
@@ -6630,6 +6356,7 @@
   "section": "B",
   "questionRef": "2021 OL Q11(d)A(v)",
   "questionText": "Ozone (O₃), that occurs in the stratosphere, is another form of the element oxygen. Give a beneficial role of ozone in the stratosphere.",
+  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -6639,10 +6366,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "absorb (protect from) uv (ultraviolet) radiation",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": ""
+  ]
  },
  {
   "id": "chem-2021-ol-q11-d-b-i",
@@ -6683,35 +6411,33 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q11(d)B(iii)",
-  "stem": "A blast furnace is used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
   "questionText": "Calcium oxide obtained from the limestone reacts with impurities in the iron ore to make co-product Y that is collected at the base of the furnace. What name is usually given to Y? Give a use for Y.",
+  "stem": "The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
+  "figureKey": "chemistry-2021-OL-paper-q11d-b",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "[6 + 3]"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "slag",
-    "accepts": [
-     "calcium silicate (CaSiO₄)"
-    ],
-    "marks": 6,
-    "contextNote": "The formula CaSiO₄ is reproduced exactly as the scheme prints it."
+    "kind": "point",
+    "verbatim": "slag / calcium silicate (CaSiO₄)",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "roadmaking (hardcore)",
-    "accepts": [
-     "lightweight building blocks",
-     "cement making"
-    ],
-    "marks": 3
+    "kind": "point",
+    "verbatim": "roadmaking (hardcore) / lightweight building blocks / cement making",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "The paper prints a blast-furnace diagram, but Y is defined in the question's own text, so this card needs no figure."
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2022-hl-q1-a",
@@ -22111,49 +21837,34 @@
   "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2021 OL Q1(a)",
-  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory.",
-  "questionText": "Identify (i) liquid A, (ii) gas B.",
-  "figureKey": "chemistry-2021-OL-paper-p02-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "water / H2O",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "ethyne",
-    "askedInThisQuestion": true
-   }
-  ],
+  "questionRef": "2021 OL Q1(a)(i)–(ii)",
+  "questionText": "(i) liquid A, (ii) gas B.",
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory. Identify",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 5)"
+   "notation": "[6 + 5]"
   },
   "totalMarks": 11,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "A — water / H2O",
+    "kind": "point",
+    "verbatim": "A = water / H₂O",
     "marks": null,
-    "accepts": [
-     "H2O"
-    ]
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "B — ethyne",
+    "verbatim": "B = ethyne",
     "marks": null,
-    "accepts": [
-     "C2H2"
-    ],
-    "contextNote": "The scheme prints only \"ethyne\" here. The formula is accepted under the scheme's own Introduction, point 5: \"In general, names and formulas of elements and compounds are equally acceptable except in cases where either the name or the formula is specifically asked for in the question.\""
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "Figure opened and verified: dropping funnel labelled \"liquid A\" over a conical flask of \"calcium carbide\", side-arm \"tube\" running into a trough of \"water\" under an inverted tube of \"gas B\". The letters A and B appear ONLY on the diagram — the printed question text never says liquid A is added to calcium carbide from a funnel, so this part is unanswerable without the figure. Scheme prints the tariff as a combined \"(6 + 5)\" for (i) and (ii) together rather than a mark against each sub-part, so this is modelled as an orderedSplit with marks null rather than guessing which sub-part carries the 6. C2H2 is not printed against Q1(a)(ii); it is licensed by Introduction point 5 of the same scheme, and that provenance is now stated on the row."
+  "notes": "The scheme prices these points together as [6 + 5] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q1-b-fig",
@@ -22164,16 +21875,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q1(b)",
-  "stem": "The apparatus shown in the diagram can be used to make and collect hydrocarbon gas B in the school laboratory.",
   "questionText": "Describe what happens in the reaction flask when liquid A is added slowly to calcium carbide.",
-  "figureKey": "chemistry-2021-OL-paper-p02-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "water / H2O",
-    "askedInThisQuestion": false
-   }
-  ],
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory.",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22181,24 +21885,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "effervescence / fizzing / bubbling (bubbles) / flask gets hot / steam / white smoke (vapour) / solid disappearing / dirty brown liquid produced / carbide reacts / gas formed (evolved) / gas flows along delivery tube",
     "marks": 6,
-    "accepts": [
-     "fizzing",
-     "bubbling (bubbles)",
-     "flask gets hot",
-     "steam",
-     "white smoke (vapour)",
-     "solid disappearing",
-     "dirty brown liquid produced",
-     "carbide reacts",
-     "gas formed (evolved)",
-     "gas flows along delivery tube"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Carded here because the question names lettered part A, which only the diagram places (in the dropping funnel above the flask), and because one of the scheme's accepted observations — \"gas flows along delivery tube\" — is only available to a student who can see the side-arm delivery tube in the figure. A is decoded in the labelKey as the scheme states it; A's identity is not what this part asks for."
+  ]
  },
  {
   "id": "chem-2021-ol-q1-c-fig",
@@ -22208,40 +21901,34 @@
   "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2021 OL Q1(c)",
-  "stem": "The apparatus shown in the diagram can be used to make and collect hydrocarbon gas B in the school laboratory.",
+  "questionRef": "2021 OL Q1(c)(i)–(ii)",
   "questionText": "(i) What does the method of collection of B tell you about its solubility in water? (ii) Why are the first few test-tubes of gas produced not used in tests?",
-  "figureKey": "chemistry-2021-OL-paper-p02-i0",
-  "labelKey": [
-   {
-    "letter": "B",
-    "meaning": "ethyne",
-    "askedInThisQuestion": false
-   }
-  ],
+  "stem": "Before battery-powered lamps became available in the early 1900s, carbide lamps that made use of a chemical reaction to produce a flammable hydrocarbon gas that burned with a bright, sooty flame were commonly used on bicycles and motor cars. The apparatus shown in the diagram can be used to make and collect this hydrocarbon gas B in the school laboratory.",
+  "figureKey": "chemistry-2021-OL-paper-q1",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "(6 + 3)"
+   "notation": "[6 + 3]"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) — insoluble in water",
-    "marks": null
+    "verbatim": "insoluble in water",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
-    "verbatim": "(ii) — impure / contain air (oxygen, nitrogen)",
+    "kind": "point",
+    "verbatim": "impure / contain air (oxygen, nitrogen)",
     "marks": null,
-    "accepts": [
-     "contain air (oxygen, nitrogen)"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "notes": "This is the strongest figure dependency on the paper: \"the method of collection of B\" is nowhere described in words — the student must read off the inverted tube standing over water in the trough to conclude the gas is insoluble in water. Part (ii) is in the same tariff block and is also supported by the figure (the flask and delivery tube are full of air at the start). Scheme prints a combined \"(6 + 3)\" for (i) and (ii) with no per-sub-part mark, hence orderedSplit with marks null. Skipped from Q1: (d)(i)/(ii) unsaturation test and (e) flame characteristics — both answerable from the printed words with no reference to the diagram, so they belong to the text-only wave."
+  "notes": "The scheme prices these points together as [6 + 3] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q2-a-i-fig",
@@ -22252,26 +21939,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(a)(i)",
-  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm3 portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached.",
   "questionText": "Identify the pieces of apparatus A and C shown on the right.",
-  "figureKey": "chemistry-2021-OL-paper-p03-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "pipette",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "graduated cylinder",
-    "askedInThisQuestion": false
-   },
-   {
-    "letter": "C",
-    "meaning": "evaporating basin",
-    "askedInThisQuestion": true
-   }
-  ],
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
+  "figureKey": "chemistry-2021-OL-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22280,17 +21950,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A — pipette",
-    "marks": 3
+    "verbatim": "A: pipette",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "C — evaporating basin",
-    "marks": 3
+    "verbatim": "C: evaporating basin",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Figure opened and verified: three drawn pieces of glassware — a long stem with a central bulb and fine tip labelled A, a tall scaled cylinder printed on the paper as \"B = graduated cylinder\", and a shallow round dish with a pouring spout labelled C. Nothing in the printed text identifies A or C, so the question is pure figure-reading. B is included in the labelKey with askedInThisQuestion false because its meaning is printed on the exam figure itself; A and C are not decoded on the paper. Total is 6 of the 18 marks printed for part (a) — (a)(ii) and (a)(iii) are separate."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-a-ii-fig",
@@ -22301,21 +21974,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(a)(ii)",
-  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm3 portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution.",
-  "questionText": "Would A or B have been more suitable to measure accurately 25.0 cm3 of the NaOH solution into the conical flask? Explain your answer.",
-  "figureKey": "chemistry-2021-OL-paper-p03-i0",
-  "labelKey": [
-   {
-    "letter": "A",
-    "meaning": "pipette",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "B",
-    "meaning": "graduated cylinder",
-    "askedInThisQuestion": false
-   }
-  ],
+  "questionText": "Would A or B have been more suitable to measure accurately 25.0 cm³ of the NaOH solution into the conical flask? Explain your answer.",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
+  "figureKey": "chemistry-2021-OL-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22323,26 +21984,21 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "pipette / A",
     "marks": 3,
-    "accepts": [
-     "A"
-    ],
-    "contextNote": "[Accept opposites in terms of B.]"
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "pipette has narrower neck / pipette designed to deliver fixed volume",
     "marks": 3,
-    "accepts": [
-     "pipette designed to deliver fixed volume"
-    ],
-    "contextNote": "[Accept opposites in terms of B.]"
+    "openList": true,
+    "contextNote": "The scheme adds: [Accept opposites in terms of B.]"
    }
-  ],
-  "notes": "Unanswerable without the figure: the question offers a choice between two letters and only the drawing shows that A is a pipette. B's identity is printed on the exam figure, so it is decoded here with askedInThisQuestion false; A is not decoded on the paper. Skipped: (a)(iii) (\"how should the piece of apparatus you selected in (ii) have been rinsed\") — once the apparatus is known its answer is the standard rinse-with-deionised-water-then-with-the-solution answer, so it needs no figure and belongs to the text-only wave."
+  ]
  },
  {
   "id": "chem-2021-ol-q2-d-i-fig",
@@ -22353,16 +22009,9 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q2(d)(i)",
-  "stem": "The student then added exactly 23.0 cm3 of the 0.3 M HCl to another 25.0 cm3 portion of the NaOH solution in the conical flask, this time without the indicator.",
   "questionText": "How could the student have then obtained a pure, dry sample of sodium chloride using the piece of apparatus C?",
-  "figureKey": "chemistry-2021-OL-paper-p03-i0",
-  "labelKey": [
-   {
-    "letter": "C",
-    "meaning": "evaporating basin",
-    "askedInThisQuestion": false
-   }
-  ],
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O The student then added exactly 23.0 cm³ of the 0.3 M HCl to another 25.0 cm³ portion of the NaOH solution in the conical flask, this time without the indicator.",
+  "figureKey": "chemistry-2021-OL-paper-q2",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22370,59 +22019,40 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "evaporate all water (solvent) / evaporate to dryness / boil away (off) all water (solvent)",
     "marks": 4,
-    "accepts": [
-     "evaporate to dryness",
-     "boil away (off) all water (solvent)"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "The question names apparatus C, which is identified only by the drawing on the right of the page, so the figure and its labelKey are required. C is decoded (askedInThisQuestion false) because this part asks what to DO with it, not what it is. Skipped: (d)(ii), the 4-mark mass calculation (Mr NaCl = 58.5, then 58.5 × 0.0069 = 0.40365 g) — it has discrete checkable points but needs no figure at all."
+  ]
  },
  {
   "id": "chem-2021-ol-q3-d-fig",
   "topicId": "chem-u2",
-  "conceptId": "corrosive-hazard-pictogram",
+  "conceptId": "hazard-shown-by-a-pictogram",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2021 OL Q3(d)",
-  "stem": "The container in which the 1.0 M NaOH solution was provided carried the warning pictogram shown on the right.",
-  "questionText": "(i) What chemical hazard is indicated by this pictogram? (ii) Describe one precaution that should have been taken when using this solution.",
-  "figureKey": "chemistry-2021-OL-paper-p04-i1",
+  "questionRef": "2021 OL Q3(d)(i)",
+  "questionText": "What chemical hazard is indicated by this pictogram?",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. The container in which the 1.0 M NaOH solution was provided carried the warning pictogram shown on the right.",
+  "figureKey": "chemistry-2021-OL-paper-q3d",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) — corrosive",
+    "verbatim": "corrosive",
     "marks": 6,
-    "accepts": [
-     "harmful",
-     "burning",
-     "irritating"
-    ],
-    "contextNote": "[Allow harmful, burning, irritating.]"
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "(ii) — wear gloves (PPE) / wear eye protection / mop up spillages, etc",
-    "marks": 6,
-    "accepts": [
-     "wear eye protection",
-     "mop up spillages"
-    ],
-    "openList": true
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow harmful, burning, irritating.]"
    }
-  ],
-  "notes": "Figure opened and verified: the GHS diamond showing two tilted test tubes pouring liquid, one stream eating into a solid block and the other into an open hand. The paper never names the hazard, so (i) is answerable only by reading the pictogram. No letters on this figure, so no labelKey. Skipped elsewhere on this paper: figure chemistry-2021-OL-paper-p05-i1 (night photograph of a distress flare beside Q4(c)) and chemistry-2021-OL-paper-p05-i0 (photograph of a toothpaste tube beside Q4(i)) — both are decorative stock photographs; the questions (\"name a metal whose salts have a red flame colour\", the p.p.m. calculation) are fully answerable from the printed words and neither photo carries any data."
+  ]
  },
  {
   "id": "chem-2021-ol-q10-b-v-fig",
@@ -22433,21 +22063,9 @@
   "subjectId": "chemistry",
   "section": "B",
   "questionRef": "2021 OL Q10(b)(v)",
-  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H2O (l) → H2 (g) + ½O2 (g). This is a redox reaction.",
   "questionText": "At which electrode, X or Y, does oxidation take place?",
-  "figureKey": "chemistry-2021-OL-paper-p11-i0",
-  "labelKey": [
-   {
-    "letter": "X",
-    "meaning": "anode",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "Y",
-    "meaning": "cathode",
-    "askedInThisQuestion": true
-   }
-  ],
+  "stem": "The diagram shows how acidified water can be electrolysed using inert electrodes. The overall reaction that takes place during the electrolysis is: H₂O (l) → H₂ (g) + ½O₂ (g) This is a redox reaction.",
+  "figureKey": "chemistry-2021-OL-paper-q10b",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -22455,15 +22073,13 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "X / anode",
     "marks": 6,
-    "accepts": [
-     "anode"
-    ]
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Figure opened and verified: beaker of acidified water with two inverted collecting tubes, the left one labelled O2 with \"X (anode)\" printed sideways beside it and the right one labelled H2 with \"Y (cathode)\", the electrodes wired to + (left) and – (right) terminals of a battery. The question offers a choice of two letters that exist only on the diagram, so both figure and labelKey are required; the meanings \"anode\" and \"cathode\" are printed on the exam figure itself, so decoding them matches real exam conditions. Skipped from Q10(b): (i)/(ii) definitions of oxidation and reduction, (iii) the 2:1 volume ratio (from the equation), (iv) inert electrode material — all answerable from the printed text. Remaining unused 2021 OL figures, each opened and rejected with reason: chemistry-2021-OL-paper-p08-i0 (fractionating column, Q6) — carries no letters and Q6(c) high-up/low-down is standard recall the words already support; chemistry-2021-OL-paper-p10-i0 (rate apparatus, Q9) — every part is word-labelled and no Q9 part asks about the apparatus, while Q9(b)(i) is a graph plot and Q9(c) reads off the candidate's own graph, both barred; chemistry-2021-OL-paper-p12-i0 (photograph of a scallop shell, Q11(b)) — decorative; chemistry-2021-OL-paper-p13-i0 (crucible on tripod over a Bunsen, Q11(c)) — the raised lid is described in the printed text, so (c)(i) needs no figure; chemistry-2021-OL-paper-p14-i0 (blast furnace, Q11(d)B) — the paper's own text defines X (\"a third substance, X\" in the charge that reduces the ore and fuels the furnace) and Y (\"co-product Y\" from calcium oxide and the ore impurities) in full prose, so (ii) and (iii) are text-answerable and X does not appear on the drawing at all; chemistry-2021-OL-paper-p14-i1 (cutaway photograph of a triple-glazing unit, Q11(d)A) — decorative."
+  ]
  },
  {
   "id": "chem-2022-hl-q2-c-i-fig",
@@ -22603,42 +22219,30 @@
  },
  {
   "id": "chem-2021-ol-q6-bc-fig",
-  "subjectId": "chemistry",
-  "level": "ordinary",
-  "year": 2021,
   "topicId": "chem-2-4",
   "conceptId": "crude-oil-fractional-distillation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q6(b)–(c)",
-  "figureKey": "chemistry-2021-OL-paper-p08-i0",
-  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil)   light gasoline   kerosene",
-  "questionText": "(b) List the three fractions named above in order of increasing boiling point. (c) As they separate in a fractionating column, where (high up or low down) would you expect to collect the hydrocarbons (i) with the fewest carbon atoms, (ii) with the highest boiling points?",
+  "questionRef": "2021 OL Q6(b)",
+  "questionText": "List the three fractions named above in order of increasing boiling point.",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene",
+  "figureKey": "chemistry-2021-OL-paper-q6",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "r1",
-    "kind": "allOf",
+    "id": "r-1",
+    "kind": "point",
     "verbatim": "light gasoline, kerosene, gas oil (diesel oil)",
     "marks": 6,
-    "contextNote": "All three in increasing boiling-point order; the scheme gives reduced credit for the list in reverse order."
-   },
-   {
-    "id": "r2",
-    "kind": "point",
-    "verbatim": "(i) — high",
-    "marks": 6
-   },
-   {
-    "id": "r3",
-    "kind": "point",
-    "verbatim": "(ii) — low",
-    "marks": 6
+    "openList": true,
+    "contextNote": "The scheme adds: [reversed (3)]"
    }
-  ],
-  "notes": "Figure opened: the crop carries the fractionating-column schematic (crude oil → coiled pipe in the furnace → tall column with four rows of bubble-cap trays, five side draw-offs, dark-to-white shading up the column and a long upward 'cooling' arrow) AND, along its top edge, the printed list of the three fractions the question refers to. The column is exactly what parts (b) and (c) reason over, so the crop is the question's own apparatus, not decoration. All figure captions ('crude oil', 'furnace', 'cooling') are self-describing English words — no letters to decode — so no labelKey. Part (a) (5) and parts (d)–(e) are outside this card, hence totalMarks 18 rather than the printed 50."
+  ]
  },
  {
   "id": "chem-2021-ol-q9-abd-fig",
@@ -22714,157 +22318,57 @@
  },
  {
   "id": "chem-2021-ol-q11c-fig",
-  "subjectId": "chemistry",
+  "topicId": "chem-u2",
+  "conceptId": "why-the-crucible-lid-is-raised",
   "level": "ordinary",
   "year": 2021,
-  "topicId": "chem-u2",
-  "conceptId": "preparation-of-magnesium-oxide",
+  "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q11(c)",
-  "figureKey": "chemistry-2021-OL-paper-p13-i0",
+  "questionRef": "2021 OL Q11(c)(i)",
+  "questionText": "Suggest a reason why the lid of the crucible was raised during the heating process.",
   "stem": "To prepare a sample of magnesium oxide, a small strip of magnesium ribbon was placed inside a crucible and heated strongly as shown in the diagram. The lid of the crucible was raised slightly several times during the heating process. The magnesium ignited as it reacted in air and magnesium oxide was formed according to the word equation: magnesium + oxygen gas → magnesium oxide",
-  "questionText": "(i) Suggest a reason why the lid of the crucible was raised during the heating process. (ii) Use the valencies of magnesium and oxygen to write the chemical formula of magnesium oxide. (iii) Replace the words in the word equation above with chemical formulae and balance your equation. (iv) Would you expect the mass of the crucible and its contents to increase, decrease or remain constant as the reaction proceeded? Explain your answer.",
+  "figureKey": "chemistry-2021-OL-paper-q11c",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 25,
+  "totalMarks": 4,
   "rows": [
    {
-    "id": "r1",
+    "id": "r-1",
     "kind": "point",
-    "verbatim": "(i) — so there is sufficient oxygen (air)",
-    "marks": 4
-   },
-   {
-    "id": "r2",
-    "kind": "point",
-    "verbatim": "(ii) — MgO",
-    "marks": 9,
-    "contextNote": "The scheme's alternative route awards Mg: 2 (II) and O: 2 (II) as 2 × 3, so the valencies alone reach 6 of the 9.",
-    "exactTermRequired": false
-   },
-   {
-    "id": "r3",
-    "kind": "alt",
-    "verbatim": "(iii) — Mg + ½ O2 → MgO // 2Mg + O2 → 2MgO",
-    "marks": 6,
-    "accepts": [
-     "Mg + ½ O2 → MgO",
-     "2Mg + O2 → 2MgO"
-    ],
-    "contextNote": "The scheme separates the two equations with a double solidus — mutually exclusive routes, not a mix. Either one earns the full 6, awarded as FORMULAE (3) and BALANCING (3)."
-   },
-   {
-    "id": "r4",
-    "kind": "point",
-    "verbatim": "(iv) — increase",
-    "marks": 3
-   },
-   {
-    "id": "r5",
-    "kind": "alt",
-    "verbatim": "oxygen (air) absorbed or reacted / MgO heavier than Mg",
-    "marks": 3,
-    "accepts": [
-     "oxygen (air) absorbed or reacted",
-     "MgO heavier than Mg"
-    ],
-    "openList": true
+    "verbatim": "so there is sufficient oxygen (air)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Figure opened: the heating assembly the stem points at — crucible with its lid tilted up and propped on the rim, sitting in a pipe-clay triangle on the top ring of a three-legged tripod, Bunsen burner with gas hose beneath. The stem says 'heated strongly as shown in the diagram' and part (i) asks about the raised lid, which the drawing shows explicitly, so the crop is load-bearing. No letters anywhere on the drawing, so no labelKey. Row (iii) is one 6-mark row because the scheme's two printed equations are mutually exclusive full answers, not separate mark points; the scheme's own double solidus is carried."
+  ]
  },
  {
   "id": "chem-2021-ol-q11d-b-fig",
-  "subjectId": "chemistry",
+  "topicId": "chem-1-3",
+  "conceptId": "general-property-of-transition-elements",
   "level": "ordinary",
   "year": 2021,
-  "topicId": "chem-u3",
-  "conceptId": "blast-furnace-iron-extraction",
+  "subjectId": "chemistry",
   "section": "B",
-  "questionRef": "2021 OL Q11(d) part B",
-  "figureKey": "chemistry-2021-OL-paper-p14-i0",
-  "labelKey": [
-   {
-    "letter": "X",
-    "meaning": "coke (carbon)",
-    "askedInThisQuestion": true
-   },
-   {
-    "letter": "Y",
-    "meaning": "slag (calcium silicate)",
-    "askedInThisQuestion": true
-   }
-  ],
-  "stem": "Answer part A or part B. B — The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
-  "questionText": "(i) Give one general property of transition elements. (ii) Identify X added in the charge to bring about the reduction of the iron ore and to act as a fuel for the furnace. (iii) Calcium oxide obtained from the limestone reacts with impurities in the iron ore to make co-product Y that is collected at the base of the furnace. What name is usually given to Y? Give a use for Y. (iv) Identify the main impurity in the pig iron whose concentration is reduced during steel making.",
+  "questionRef": "2021 OL Q11(d)B(i)",
+  "questionText": "Give one general property of transition elements.",
+  "stem": "The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
+  "figureKey": "chemistry-2021-OL-paper-q11d-b",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 25,
+  "totalMarks": 4,
   "rows": [
    {
-    "id": "r1",
-    "kind": "alt",
-    "verbatim": "metals (metallic) / often good catalysts / variable valency / form coloured compounds",
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "metals (metallic) / often good catalysts / variable valency / form coloured compounds, etc",
     "marks": 4,
-    "accepts": [
-     "metals (metallic)",
-     "often good catalysts",
-     "variable valency",
-     "form coloured compounds"
-    ],
-    "openList": true
-   },
-   {
-    "id": "r2",
-    "kind": "alt",
-    "verbatim": "X — coke (carbon, C)",
-    "marks": 6,
-    "accepts": [
-     "coke",
-     "carbon",
-     "C"
-    ]
-   },
-   {
-    "id": "r3",
-    "kind": "alt",
-    "verbatim": "Y — slag / calcium silicate (CaSiO4)",
-    "marks": 6,
-    "accepts": [
-     "slag",
-     "calcium silicate",
-     "CaSiO4"
-    ]
-   },
-   {
-    "id": "r4",
-    "kind": "alt",
-    "verbatim": "roadmaking (hardcore) / lightweight building blocks / cement making",
-    "marks": 3,
-    "accepts": [
-     "roadmaking (hardcore)",
-     "lightweight building blocks",
-     "cement making"
-    ]
-   },
-   {
-    "id": "r5",
-    "kind": "alt",
-    "verbatim": "carbon (C)",
-    "marks": 6,
-    "accepts": [
-     "carbon",
-     "C",
-     "sand",
-     "silicon",
-     "silica"
-    ],
-    "contextNote": "The scheme also allows sand, silicon or silica."
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "notes": "Figure opened: cutaway blast furnace — skip hoist on a diagonal track tipping the 'charge' in at the top, tall vessel labelled 'furnace' with upward arrows for the rising gases, 'hot air' pipes entering both sides near the base, and two tap-holes feeding small containers labelled 'molten iron' (lower left) and 'molten Y' (upper right). Y is a real letter printed on the diagram; X is printed in the stem. Both are decoded in labelKey from the marking scheme (X = coke/carbon, Y = slag/calcium silicate) and both are flagged askedInThisQuestion so the decode panel does not hand the student the answers to (ii) and (iii). The other captions (charge, furnace, hot air, molten iron) are self-describing and need no entry. SKIPPED on the same page: chemistry-2021-OL-paper-p14-i1 — a greyscale cutaway render of a triple-glazing unit corner with no labels, purely illustrative of the phrase 'double and triple glazed windows' in part A(ii); the question ('give one major use for each of N2 and O2') is pure recall and the picture contributes nothing markable. Also skipped after opening: chemistry-2021-OL-paper-p05-i0 (photograph of a 'GLEAM' toothpaste tube beside Q4(i), a bare p.p.m. arithmetic conversion — decorative), chemistry-2021-OL-paper-p05-i1 (night photograph of an aerial distress flare arcing over a treeline beside Q4(c) 'Name a metal whose salts have a red flame colour' — illustrative only, and Q4's tariff is the eight-items-plus-bonus model rather than a fixed one), and chemistry-2021-OL-paper-p12-i0 (photograph of a single fan-shaped scallop shell beside Q11(b)(iv); the question is answered from the printed equilibrium equation and Le Châtelier's principle, and the crop also slices the top line of the stem)."
+  ]
  },
  {
   "id": "chem-2022-hl-q2-b-fig",
@@ -27059,10 +26563,11 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2021 OL Q3(a)",
-  "questionText": "Plot a graph (on graph paper) of temperature versus time (x-axis). (15)",
+  "questionText": "Plot a graph (on graph paper) of temperature versus time (x-axis).",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation.",
+  "figureKey": "chemistry-2021-OL-scheme-q3a",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "5 x 3"
+   "kind": "fixed"
   },
   "totalMarks": 15,
   "rows": [
@@ -27070,35 +26575,44 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "axes correctly labelled with unit (⁰C and minute or min) or quantity (temperature and time or t)",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "axes correctly scaled",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "8 points correctly plotted",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "3 further points correctly plotted",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Minus 3 if graph not on graph paper.] [Axes reversed acceptable.]"
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "curve correctly drawn through points",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Points joined by straight lines acceptable here.]"
    }
   ],
-  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm3 of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm3 of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H2O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. Time (minutes) 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 Temperature (°C) 16.0 16.0 16.0 16.0 16.0 22.1 22.7 22.6 22.5 22.4 22.3",
-  "notes": "The scheme takes 3 off if the graph is not drawn on graph paper, accepts the axes the other way round, and on this graph allows the points to be joined by straight lines rather than a curve."
+  "questionFigureKey": "chemistry-2021-OL-paper-q3a-print"
  },
  {
   "id": "chem-2021-ol-q3-b-i",
@@ -27110,6 +26624,8 @@
   "section": "A",
   "questionRef": "2021 OL Q3(b)(i)",
   "questionText": "Estimate the maximum temperature change as a result of the reaction.",
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm³ of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm³ of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H₂O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation.",
+  "figureKey": "chemistry-2021-OL-paper-q3-table",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27119,11 +26635,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "6.7 – 7.0 ⁰C",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm3 of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm3 of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H2O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. Time (minutes) 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 Temperature (°C) 16.0 16.0 16.0 16.0 16.0 22.1 22.7 22.6 22.5 22.4 22.3",
-  "notes": "A range, not a single value: the change is read off the graph plotted in part (a), against an initial temperature of 16.0 °C."
+  ]
  },
  {
   "id": "chem-2021-ol-q5-c-iii",
@@ -27132,30 +26648,33 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q5(c)(iii)",
-  "questionText": "Using a dot and cross diagram, or otherwise, show how the bonding in BeO arises. (12)",
+  "questionText": "Using a dot and cross diagram, or otherwise, show how the bonding in BeO arises.",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question. Write down the arrangement of electrons in the main energy levels in an atom of",
+  "figureKey": "chemistry-2021-OL-scheme-q5c-iii",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 3"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "outer two electrons transferred from beryllium atom",
-    "marks": 3
+    "verbatim": "diagram showing beryllium ion with no electrons in outer shell",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme draws the ions with their electron shells, or writes Be²⁺ beside O²⁻ with its eight outer electrons as dots; its own print is shown with the answer. It prices this point and the next (2 × 3), one each, or instead the pair \"outer two electrons transferred from beryllium atom / Be²⁺ // to an (one) oxygen atom / O²⁻\" (2 × 3)."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "to an (one) oxygen atom",
-    "marks": 3
+    "verbatim": "and showing oxygen ion with 8 electrons in outer shell",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Diagram not essential.]"
    }
-  ],
-  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
-  "notes": "The scheme prints \"[Diagram not essential.]\", so describing the transfer in words scores the full six; a dot and cross diagram showing the two ions is the other accepted route."
+  ]
  },
  {
   "id": "chem-2021-ol-q7-a-v",
@@ -27164,9 +26683,10 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q7(a)(v)",
-  "questionText": "Slaked lime (Ca(OH)2) is the base usually added to acidic water to adjust its pH. Does the pH of water increase or decrease when base is added to it? (24)",
+  "questionText": "Slaked lime (Ca(OH)₂) is the base usually added to acidic water to adjust its pH. Does the pH of water increase or decrease when base is added to it?",
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water. One source of water for supply to households is a lake that contains water that is slightly acidic. During water treatment this acidity is neutralised by adding base.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27176,10 +26696,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "increase",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "Water undergoes various treatments to make it safe for supply as drinking water."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-a-i",
@@ -27188,12 +26709,13 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q8(a)(i)",
-  "questionText": "Name the homologous series to which ethene (C2H4) belongs.",
+  "questionText": "Name the homologous series to which ethene (C₂H₄) belongs.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 of the 15 the scheme splits 3 + 6 + 6 across Q8(a)"
+   "kind": "fixed"
   },
   "totalMarks": 3,
   "rows": [
@@ -27201,10 +26723,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "alkenes",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "Study the reaction scheme and answer the questions that follow."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-b-i",
@@ -27213,9 +26736,11 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q8(b)(i)",
-  "questionText": "Name the product X of the addition of H2 to ethene.",
+  "questionText": "Name the product X of the addition of H₂ to ethene.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27225,11 +26750,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "ethane",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "Study the reaction scheme and answer the questions that follow.",
-  "notes": "X is the product of the addition printed on the scheme as \"+ H2\"; the other 6 of the 12 the paper prints for Q8(b) belong to part (ii)."
+  ]
  },
  {
   "id": "chem-2021-ol-q9-b-i",
@@ -27238,88 +26763,85 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q9(b)(i)",
-  "questionText": "Plot a graph (on graph paper) of volume of H2 versus time (x-axis).",
+  "questionText": "Plot a graph (on graph paper) of volume of H₂ versus time (x-axis).",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table.",
+  "figureKey": "chemistry-2021-OL-scheme-q9b-i",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "5 x 3"
+   "kind": "fixed"
   },
   "totalMarks": 15,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "axes correctly labelled with unit (cm3 and minute or min) or quantity (volume or vol or V and time or t)",
-    "marks": 3
+    "verbatim": "axes correctly labelled with unit (cm³ and minute or min) or quantity (volume or vol or V and time or t)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "axes correctly scaled",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
     "verbatim": "4 points correctly plotted",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
     "verbatim": "3 further points correctly plotted",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Minus 3 if graph not on graph paper.] [Axes reversed acceptable.]"
    },
    {
     "id": "r-5",
     "kind": "point",
     "verbatim": "smooth curve correctly drawn through points and (0, 0)",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl2 + H2 The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. Zn pellets gas syringe flexible tubing HCl solution Time (minutes) 0 2 4 6 8 10 12 Volume H2 (cm3) 0 32 50 62 69 72 72",
-  "notes": "The paper prints 21 for Q9(b); 15 of it is this graph and 6 is part (ii). The scheme takes 3 off if the graph is not on graph paper and accepts the axes reversed. Unlike the Question 3 graph, this one has to be a smooth curve and has to pass through the origin.",
-  "figureKey": "chemistry-2021-OL-paper-p10-i0"
+  "questionFigureKey": "chemistry-2021-OL-paper-q9b-i-print"
  },
  {
   "id": "chem-2021-ol-q9-c",
   "topicId": "chem-3-2",
-  "conceptId": "reading-rate-and-volume-from-a-graph",
+  "conceptId": "total-volume-of-gas-from-a-graph",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
-  "questionRef": "2021 OL Q9(c)",
-  "questionText": "From your graph find (i) the total volume of hydrogen gas produced, measured at room temperature, (ii) the time taken to produce half this volume of hydrogen, (iii) the average rate of the reaction over the first 5 minutes (in cm3 of H2 per minute at room temperature). (15)",
+  "section": "B",
+  "questionRef": "2021 OL Q9(c)(i)",
+  "questionText": "the total volume of hydrogen gas produced, measured at room temperature,",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. From your graph find",
+  "figureKey": "chemistry-2021-OL-paper-q9",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 6 + 6"
+   "kind": "fixed"
   },
-  "totalMarks": 15,
+  "totalMarks": 3,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "72 cm3",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "2.2 – 2.6 minutes",
-    "marks": 6
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "11.0 – 11.4 cm3 H2 per minute",
-    "marks": 6
+    "verbatim": "72 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl2 + H2 The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. Zn pellets gas syringe flexible tubing HCl solution Time (minutes) 0 2 4 6 8 10 12 Volume H2 (cm3) 0 32 50 62 69 72 72",
-  "notes": "The rows answer (i), (ii) and (iii) in that order. Two of the three are ranges because they are read off the candidate's own graph. The scheme allows the first 3 of the 6 marks for (ii) to be earned by extrapolating from half the total volume.",
-  "figureKey": "chemistry-2021-OL-paper-p10-i0"
+  ]
  },
  {
   "id": "chem-2021-ol-q10-a-1",
@@ -27328,42 +26850,73 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q10(a)",
-  "questionText": "The following words are omitted from the passage below.",
+  "questionText": "The following words are omitted from the passage below. neutral Rutherford atomic positive Bohr mass negative Write in your answerbook the omitted word corresponding to each of the numbers (1 to 7). The number of protons in an atom is its 1 number and the sum of the protons and neutrons in its nucleus is its 2 number. The number of electrons in the electron cloud of a 3 atom is the same as the number of protons in its nucleus. It was 4 who discovered that an atom has a small dense 5 central nucleus and it was 6 who first described the arrangement of the electrons in energy levels in the electron cloud of an atom. In a chemical reaction an atom becomes charged if it loses one or more of its electrons or gains one or more additional electrons. If the atom gains one or more electrons it becomes a 7 ion.",
   "tariffModel": {
    "kind": "orderedSplit",
-   "notation": "2 x 6 + 4 x 3 + 1 (blanks 1-4)"
+   "notation": "[2 × 6 + 4 × 3 + 1]"
   },
   "totalMarks": 25,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "atomic",
-    "marks": null
+    "verbatim": "1 atomic",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "mass",
-    "marks": null
+    "verbatim": "2 mass",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "neutral",
-    "marks": null
+    "verbatim": "3 neutral",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "Rutherford",
-    "marks": null
+    "verbatim": "4 Rutherford",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "5 positive",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "6 Bohr",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "7 negative",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
    }
   ],
-  "stem": "neutral Rutherford atomic positive Bohr mass negative Write in your answerbook the omitted word corresponding to each of the numbers (1 to 7). The number of protons in an atom is its 1 number and the sum of the protons and neutrons in its nucleus is its 2 number. The number of electrons in the electron cloud of a 3 atom is the same as the number of protons in its nucleus. It was 4 who discovered that an atom has a small dense 5 central nucleus and it was 6 who first described the arrangement of the electrons in energy levels in the electron cloud of an atom. In a chemical reaction an atom becomes charged if it loses one or more of its electrons or gains one or more additional electrons. If the atom gains one or more electrons it becomes a 7 ion. (25)",
-  "notes": "The rows are the words for the blanks, in the order the passage prints them. No row carries a mark of its own: the scheme prices the seven blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is worth which, so the mark sits on the part and not on the rows. Split at blank four because a seven-row card does not fit the deck; each half keeps its blanks in the passage's own order."
+  "notes": "The scheme prices these points together as [2 × 6 + 4 × 3 + 1] without saying which point earns which part, so no per-point value is shown."
  },
  {
   "id": "chem-2021-ol-q10-a-2",
@@ -27410,30 +26963,33 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q10(c)(iii)",
-  "questionText": "How many moles of NO2 gas react with one mole of urea in the reaction above? What volume does this amount of NO2 occupy, measured at s.t.p.? (25)",
+  "questionText": "How many moles of NO₂ gas react with one mole of urea in the reaction above? What volume does this amount of NO₂ occupy, measured at s.t.p.?",
+  "stem": "AdBlue, a solution of urea (NH₂CONH₂) in water, is used in the exhaust systems of some diesel-powered vehicles to remove NO₂ from the hot exhaust flow by making use of the following reaction. 4NH₂CONH₂ + 6NO₂ → 7N₂ + 8H₂O + 4CO₂ catalyst 400 ⁰C",
+  "figureKey": "chemistry-2021-OL-scheme-q10c-iii",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "3 + 4"
+   "kind": "fixed"
   },
   "totalMarks": 7,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "1.5 or 6/4 or 3/2 moles NO2",
-    "marks": 3
+    "verbatim": "1.5 or 6/4 or 3/2 moles NO₂",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme sets out the working, 4 moles urea ⇒ 6 moles NO₂, 1 mole urea ⇒ 1.5 or 6/4 or 3/2 moles NO₂ (3)."
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "33.6 litres NO2",
-    "marks": 4
+    "verbatim": "33.6 litres NO₂",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow 907.2 litres NO₂ from 27 moles urea] It sets out the working, 1.5 × 22.4 (2) = 33.6 litres NO₂ (2); its own print is shown with the answer."
    }
-  ],
-  "stem": "catalyst 4NH2CONH2 + 6NO2 → 7N2 + 8H2O + 4CO2 400 ⁰C",
-  "notes": "The scheme reads the mole ratio straight off the balanced equation printed in the stem, then multiplies by the molar volume at s.t.p.; the four marks for the volume split 2 for the multiplication and 2 for the answer. A candidate who carries forward the 27 moles of urea found in part (ii) is allowed the volume that follows from it."
+  ]
  },
  {
   "id": "chem-2021-ol-q8-b-ii",
@@ -27442,9 +26998,11 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q8(b)(ii)",
-  "questionText": "A and B are two other addition reactions of ethene. Identify the substance added to ethene in each case. (12)",
+  "questionText": "A and B are two other addition reactions of ethene. Identify the substance added to ethene in each case.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-paper-q8",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27454,16 +27012,19 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "A: bromine (Br₂)",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "B: hydrogen chloride (HCl)",
-    "marks": 3
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Allow hydrochloric acid for hydrogen chloride.]"
    }
-  ],
-  "stem": "Study the reaction scheme and answer the questions that follow."
+  ]
  },
  {
   "id": "chem-2021-ol-q11-a-iii",
@@ -27472,9 +27033,10 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q11(a)(iii)",
   "questionText": "Identify a metallic element whose atoms have the same number of main energy levels occupied by electrons as boron (B).",
+  "stem": "Refer to page 79 of the Formulae and Tables booklet when answering this question. In the periodic table of the elements, what term is used for the elements",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27484,10 +27046,11 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "lithium (Li) / beryllium (Be)",
-    "marks": 6
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "In the periodic table of the elements, what term is used for the elements"
+  ]
  },
  {
   "id": "chem-2021-ol-q11-b-iii",
@@ -27496,9 +27059,10 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q11(b)(iii)",
-  "questionText": "Supply the missing words in the following statement: ‘If this equilibrium is disturbed by increasing the concentration of carbonic acid (H2CO3), then according to __________ principle, the concentration of the hydrogencarbonate ion (HCO3–) is observed to __________.’ Marine shellfish and coral use carbonate ions (CO32–) to make calcium carbonate (CaCO3) shell. Human activity over the past 170 years or so, in particular burning fossil fuels, has resulted in a continuously increasing concentration of carbonic acid in seawater.",
+  "questionText": "Supply the missing words in the following statement: ‘If this equilibrium is disturbed by increasing the concentration of carbonic acid (H₂CO₃), then according to __________ principle, the concentration of the hydrogencarbonate ion (HCO₃⁻) is observed to __________.’",
+  "stem": "In seawater carbonic acid and carbonate ions react together according to the following equilibrium equation to form hydrogencarbonate ions. H₂CO₃ (aq) + CO₃²⁻ (aq) ⇌ 2HCO₃⁻ (aq)",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27507,11 +27071,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Le Châtelier’s // increase",
-    "marks": 6
+    "verbatim": "Le Châtelier’s",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "increase",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
-  ],
-  "stem": "H2CO3 (aq) + CO32– (aq) ⇌ 2HCO3– (aq)"
+  ]
  },
  {
   "id": "chem-2021-ol-q5-d-ii",
@@ -27520,9 +27093,11 @@
   "level": "ordinary",
   "year": 2021,
   "subjectId": "chemistry",
-  "section": "A",
+  "section": "B",
   "questionRef": "2021 OL Q5(d)(ii)",
-  "questionText": "Oxygen (O2) also has covalent bonding. Use a dot and cross diagram to show the arrangement of the electrons in an O2 molecule. (Electrons in the first main energy levels need not be shown.)",
+  "questionText": "Oxygen (O₂) also has covalent bonding. Use a dot and cross diagram to show the arrangement of the electrons in an O₂ molecule. (Electrons in the first main energy levels need not be shown.)",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
+  "figureKey": "chemistry-2021-OL-scheme-q5d-ii",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -27531,13 +27106,20 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "two bond pairs shown // two lone pairs in valence shell of each oxygen shown",
-    "marks": 6,
-    "contextNote": "The scheme accepts either a shell diagram or a Lewis structure; both are printed side by side in its own answer."
+    "verbatim": "two bond pairs shown",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each. The scheme draws the dot and cross diagram two ways; its own print is shown with the answer."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "two lone pairs in valence shell of each oxygen shown",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [Electrons in inner shell of oxygen need not be shown.] [Any electron can be represented by a dot or a cross.]"
    }
-  ],
-  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
-  "figureKey": "chemistry-2021-OL-scheme-q5d-ii"
+  ]
  },
  {
   "id": "chem-2022-hl-q3-c-i",
@@ -45409,6 +44991,328 @@
     "marks": 3,
     "openList": true,
     "contextNote": "The scheme adds: [STATE (ii)and EXPLAIN (ii) linked.] [STATE must be correct for EXPLAIN to be awarded marks.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q2-b-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "colour-change-observed-end-point-using",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q2(b)(ii)",
+  "questionText": "State the colour change observed at the end point using this indicator.",
+  "stem": "In order to prepare a pure sample of sodium chloride, a student first carried out one rough and two accurate titrations of 25.0 cm³ portions of a sodium hydroxide solution with 0.3 M hydrochloric acid solution. A burette was used to add the HCl to the NaOH in a conical flask until an indicator showed that the end point had been reached. The equation for the titration reaction is: HCl + NaOH → NaCl + H₂O",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yellow (orange) / pink",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme prices these points [2 × 3], one each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "to pink (red, peach) / to colourless",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The scheme adds: [If there is no response for (i) marks can be awarded for correct colours in (ii).] [Marks may be given for correct colours for a named unsuitable indicator, e.g. litmus.] [Allow (3) for correct colours reversed (and matching a named indicator where one is named.)] [(9) marks only available for correct indicator linked to correct colours in correct order.] The scheme adds: [Colours must be linked to indicator.][Clear unacceptable for colourless.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q4-f-ii",
+  "topicId": "chem-1-1",
+  "conceptId": "only-vibrate-about-fixed-positions",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q4(f)(ii)",
+  "questionText": "only vibrate about fixed positions?",
+  "stem": "In which state of matter do the molecules",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "solid",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme: \"Eight items to be answered. Six marks to be allocated to each item and one additional mark to be added to each of the first two items for which the highest marks are awarded.\""
+ },
+ {
+  "id": "chem-2021-ol-q5-c-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-arrangement-of-oxygen",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q5(c)(ii)",
+  "questionText": "Write down the arrangement of electrons in the main energy levels in an atom of oxygen.",
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2, 6 / 1s² 2s² 2p⁴ / 1s² 2s² 2px² 2py¹ 2pz¹",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q6-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "highest-boiling-points",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q6(c)(ii)",
+  "questionText": "with the highest boiling points?",
+  "stem": "Crude oil is a useful resource which is recovered from sedimentary rock by drilling. Crude oil is a mixture of hydrocarbons and is separated into a number of different fractions during oil refining. Three of the fractions obtained from the fractional distillation of crude oil are: gas oil (diesel oil) light gasoline kerosene As they separate in a fractionating column, where (high up or low down) would you expect to collect the hydrocarbons",
+  "figureKey": "chemistry-2021-OL-paper-q6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "low",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q8-a-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "structure-of-ethene",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q8(a)(ii)",
+  "questionText": "Draw the structure of an ethene molecule showing all of its atoms and bonds.",
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "figureKey": "chemistry-2021-OL-scheme-q8a-ii",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw the structure of an ethene molecule showing all of its atoms and bonds.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme answers this part with a drawing or notation its text cannot carry; its own print is shown with the answer.",
+    "ask": true
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q9-c-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "time-taken-produce-half-volume-hydrogen",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q9(c)(ii)",
+  "questionText": "the time taken to produce half this volume of hydrogen,",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. From your graph find",
+  "figureKey": "chemistry-2021-OL-paper-q9",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2.2 – 2.6 minutes",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [First 3 marks can be awarded for extrapolating from 36 cm³.]"
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q9-c-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "average-rate-reaction-over-first-minutes",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q9(c)(iii)",
+  "questionText": "the average rate of the reaction over the first 5 minutes (in cm³ of H₂ per minute at room temperature).",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. From your graph find",
+  "figureKey": "chemistry-2021-OL-paper-q9",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "55 – 57 cm³",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "volume ÷ 5 = 11.0 – 11.4 cm³ H₂ per minute",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme gives the answer, 11.0 – 11.4 cm³ H₂ per minute, priced [6], then the working that earns it, step by step; the steps here are its first route."
+ },
+ {
+  "id": "chem-2021-ol-q9-d-i-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "factors-affecting-the-initial-rate",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q9(d)(i)–(ii)",
+  "questionText": "(i) using the same volume of a more concentrated HCl solution, (ii) using the same mass of powdered zinc instead of the pellets of zinc?",
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl₂ + H₂ The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. How would you expect the initial rate of this reaction to be affected by",
+  "figureKey": "chemistry-2021-OL-paper-q9",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "[4 + 4]"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increased / greater / speeded up",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "increased / greater / speeded up",
+    "marks": null,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": "The scheme prices these points together as [4 + 4] without saying which point earns which part, so no per-point value is shown."
+ },
+ {
+  "id": "chem-2021-ol-q11-d-a-i",
+  "topicId": "chem-u3",
+  "conceptId": "most-abundant-element-in-air",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q11(d)A(i)",
+  "questionText": "Which of the three elements, nitrogen, oxygen or argon, is the most abundant in air?",
+  "stem": "Air is the source of several industrial gases. The three main products separated from liquid air by fractional distillation are N₂, O₂ and Ar. When the liquid air, at a temperature below –196 °C, is allowed to warm up slowly, the component gases separate according to boiling point.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nitrogen (N₂, N)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q11-d-b-ii",
+  "topicId": "chem-u3",
+  "conceptId": "what-is-added-to-reduce-iron-ore",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q11(d)B(ii)",
+  "questionText": "Identify X added in the charge to bring about the reduction of the iron ore and to act as a fuel for the furnace.",
+  "stem": "The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
+  "figureKey": "chemistry-2021-OL-paper-q11d-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "coke (carbon, C)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": ""
+   }
+  ]
+ },
+ {
+  "id": "chem-2021-ol-q11-d-b-iv",
+  "topicId": "chem-u3",
+  "conceptId": "main-impurity-pig-iron-whose-concentration",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2021 OL Q11(d)B(iv)",
+  "questionText": "Identify the main impurity in the pig iron whose concentration is reduced during steel making.",
+  "stem": "The diagram shows a blast furnace used to extract iron, a transition element, from its ores by chemical reduction. The charge, a mixture of iron ore, limestone and a third substance, X, is added in at the top of the furnace. The molten iron collected at the base of the furnace is called pig iron and it is usually converted to steel.",
+  "figureKey": "chemistry-2021-OL-paper-q11d-b",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "carbon (C)",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The scheme adds: [allow sand or silicon or silica]"
    }
   ]
  }
