@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  /* The one orange, shared with the Kobra theme (approved-ui-theme.css) and
+     Tailwind's `accent`, so non-Kobra stylesheets can use the same token. */
+  --nsu-orange: #eb692a;
   --surface-canvas: #ffffff;
   --surface-paper: #FFFFFF;
   --surface-soft: #F4F4F5; /* neutral, was warm #F6F2EC — we don't do cream */

@@ -31,12 +31,13 @@ const config: Config = {
           950: '#131313',
         },
         // ─── Primary brand accent (orange) ──────────────────────────────
-        // Pivot from teal #F26B1F → orange #F26B1F. Source of truth for
-        // inline-style consumers (SVG fills, dynamic hex strings) is
-        // design/tokens.ts. `accent` is the brand colour for CTAs and
-        // selected states; it does NOT carry "good/correct/complete"
-        // semantics — use `success` for those.
-        accent: '#F26B1F',
+        // One orange across the app: the Kobra theme's --nsu-orange
+        // (components/approved-ui-theme.css), also published as --nsu-orange
+        // on :root in index.css. Source of truth for inline-style consumers
+        // (SVG fills, dynamic hex strings) is design/tokens.ts. `accent` is
+        // the brand colour for CTAs and selected states; it does NOT carry
+        // "good/correct/complete" semantics — use `success` for those.
+        accent: '#eb692a',
         accentDark: '#B54D14',
         accentTint: '#FDEEDF',
         accentDarkText: '#8C3A0E',
