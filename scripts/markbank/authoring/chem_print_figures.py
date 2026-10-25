@@ -193,6 +193,12 @@ MASKS = {
     # 2020 OL Q1(a): the test tube stands beside the end of "through", the question's mark "(17)" and
     # the words "distinctive flame." of (b)'s lead-in.
     'chemistry-2020-OL-paper-q1a.png': [(0, 249, 28, 278), (104, 323, 149, 351), (0, 385, 132, 413)],
+    # 2019 OL Q6(e): the print of (e) starts at the top of its apparatus, level with the foot of
+    # (d)(ii)'s line "(ii) is carcinogenic? (9)", and holds (e)'s mark "(9)"; both whited out.
+    'chemistry-2019-OL-paper-q6e-print.png': [(60, 0, 668, 23), (630, 191, 669, 218)],
+    # 2019 OL Q7: the flask on its balance stands beside the ends of three lines of the question
+    # ("took place", "(CaCO3)", "eggshell"), whited out here.
+    'chemistry-2019-OL-paper-q7.png': [(0, 46, 33, 75), (0, 76, 33, 106), (0, 192, 22, 223)],
     # 2021 OL Q3(d): the last letter of "provided" prints at the pictogram's corner.
     'chemistry-2021-OL-paper-q3d.png': [(0, 0, 15, 31)],
 }

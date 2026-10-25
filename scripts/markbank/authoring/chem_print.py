@@ -319,6 +319,13 @@ MISPRINTED = []
 # the mark cell in the right margin, "(3)" or "ANY THREE: (3 × 3)". The question
 # is not reprinted, so every line under a part that is not a marker is answer.
 QUESTION_HEAD = re.compile(r'^QUESTION\s+(\d{1,2})\b\.?\s*$', re.I)
+# The head of an "any two" question with its rubric set on the same line:
+# "QUESTION 10: Answer any two of the parts (a), (b) and (c)." (2019 Ordinary
+# scheme, PDF pages 14 and 16; the 2011, 2015-2018 Ordinary and 2013 Higher schemes
+# print the same line). Read as the head alone: the rubric is the paper's own
+# instruction, not an answer. Missed, every row of Q10 and Q11 fell into Q9(c).
+QUESTION_HEAD_RUBRIC = re.compile(r'^QUESTION\s+(\d{1,2})\s*:\s*Answer any two of the parts '
+                                  r'\(a\), \(b\) and \(c\)\.?\s*$')
 CUE_WORD = r"[A-Z]{2,}[A-Z’']*"
 CUE = re.compile(r'^(' + CUE_WORD + r'(?:\s+(?:and|or|&|' + CUE_WORD + r'))*)(?:,?\s*etc)?\s*:\s*')
 TITLE_CUE = re.compile(r'^(Calculate|Explain|Name|State|Describe|Identify|Define|Write|Give|Draw|'
@@ -328,6 +335,10 @@ ANY_CELL = re.compile(r'^ANY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX)(?:\s+POINTS(?:\s+FR
 # A cell the 2022 Ordinary scheme labels with its count of points: "SIX POINTS:
 # [11 + 6 + 6 + 2 + 2 + 2]", "FOUR POINTS: (9 + 9 + 4 + 4)".
 POINTS_CELL = re.compile(r'^(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT)\s+POINTS\s*:\s*([\(\[].+[\)\]])\s*$')
+# A cell the Ordinary schemes label with how many answers it counts: "FIRST SIX:
+# (7 + (6 × 3))" beside 2019 Q10(a)'s seven words (PDF page 14), "FIRST FIVE:
+# (5 × 5)" (2016). Read as the cell; the generator quotes the label.
+FIRST_CELL = re.compile(r'^FIRST\s+(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT)\s*:\s*([\(\[].+[\)\]])\s*$')
 
 
 def any_bracket_cell(t):
@@ -336,7 +347,9 @@ def any_bracket_cell(t):
     return as_cell('(' + t[1:-1].strip() + ')') if t.startswith('[') else as_cell(t)
 LEAD_TOKEN = re.compile(r'^\(([a-l]|i|ii|iii|iv|v|vi|vii|viii|ix|x)\)\s*:?\s*')
 OUTLINE_PAGE = re.compile(r'^Outline Marking Scheme', re.I)
-FORMULAE_CELL = re.compile(r'^(?:PRODUCT\s+)?FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED):?\s*\((\d{1,2})\)$')
+# "BALANCING OF CORRECT FORMULAE: (3)" is the 2019 Ordinary scheme's Q4(e) (PDF page 8).
+FORMULAE_CELL = re.compile(r'^(?:PRODUCT\s+)?FORMULAE:\s*\((\d{1,2})\)[,;]?\s*BALANC(?:ING|ED)'
+                           r'(?:\s+OF\s+CORRECT\s+FORMULAE)?:?\s*\((\d{1,2})\)$')
 ALT_BEFORE_CUE = re.compile(r'^([AB])\s+(?=(?:' + CUE_WORD + r')\s*:)')
 # The rest of a cue the scheme wraps onto the rows below it, in the cue column
 # ("SKETCH: (i)" over "& LABEL" over "ON GRAPH", 2022 HL Q3(d)).
@@ -379,7 +392,7 @@ def cue_lines(lines):
         if l.page in outline:
             continue
         t = l.text
-        m = QUESTION_HEAD.match(t)
+        m = QUESTION_HEAD.match(t) or QUESTION_HEAD_RUBRIC.match(t)
         if m:
             out.append(Line(l.page, (30, l.y0, 60, l.y1), m.group(1) + '.', True))
             continue
@@ -390,7 +403,7 @@ def cue_lines(lines):
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
                             any_bracket_cell(m.group(2)), True))
             continue
-        m = POINTS_CELL.match(t)
+        m = POINTS_CELL.match(t) or FIRST_CELL.match(t)
         if m and l.x0 > 350:
             y0, y1 = shifted(l)
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1),
@@ -402,7 +415,8 @@ def cue_lines(lines):
             out.append(Line(l.page, (max(l.x1 - 40, 481), y0, l.x1, y1), as_cell(m.group(2)), True))
             continue
         m = FORMULAE_CELL.match(t)
-        if m and l.x0 > 350:
+        # (2019 OL Q4(e)'s longer label opens at x 342; no other scheme sets one left of 350.)
+        if m and l.x0 > 300:
             # An equation priced in two parts: "FORMULAE: (3) BALANCING: (3)".
             y0, y1 = shifted(l)
             out.append(Line(l.page, (l.x0, y0, l.x0 + 60, y1), f'[formulae ({m.group(1)}), balancing '
@@ -1000,7 +1014,9 @@ def learn_repairs(texts):
 # font's own encoding (0xDE arrowdblright, 0xB4 multiply): the 2021-2022
 # schemes print "⇒" in Symbol and the 2022 paper "(2 × 25)" in SymbolMT, and
 # every one of them in the Chemistry corpus comes from those two fonts.
-SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×'}
+# 0xB5 (proportional) is SymbolMT's ∝ in the 2019 Ordinary scheme's Q4(b),
+# "p ∝ 1/V / V ∝ 1/p" (PDF page 8), which the shared map reads as nothing.
+SYMBOL_FONT = {'\uf0de': '⇒', '\uf0b4': '×', '\uf0b5': '∝'}
 
 
 def display(t):

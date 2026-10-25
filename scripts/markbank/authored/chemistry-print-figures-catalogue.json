@@ -2309,5 +2309,218 @@
   "description": "The marking scheme's own print of its answer to 2020 OL Q11(b)(ii), as the State Examinations Commission set it: WRITE Kc = [H₂]³[CO] over [CH₄][H₂O] (6) [numerator correct (3); denominator correct (3); correct expression inverted (3)][plus signs in expression unacceptable]",
   "questionRef": "2020 OL Q11(b)(ii)",
   "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's apparatus: a tall funnel with a tap, labelled \"X\" and holding \"liquid A\", fitted in the neck of a conical flask with lumps of \"solid B\" at its bottom; a side arm joined to a \"tube\" leads into a trough of \"water\", under an inverted test tube labelled \"ethyne\" with bubbles rising in it.",
+  "questionRef": "2019 OL Q1"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q2.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A retort stand whose clamp holds a burette labelled \"HCl\" above a conical flask labelled \"Na₂CO₃\".",
+  "questionRef": "2019 OL Q2"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q2d-ii-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q2(d)(ii): \"(ii) The 0.05 M solution of sodium carbonate is a standard solution. Explain the underlined term.\" with the words \"standard solution\" underlined.",
+  "questionRef": "2019 OL Q2(d)(ii)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q3.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's two methods: on the left, a basin labelled \"A\" on a gauze on a tripod over a Bunsen burner; on the right, an oven with a beaker labelled \"B\" on a shelf inside.",
+  "questionRef": "2019 OL Q3"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q3d-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q3: \"A student was asked to confirm that a sample of water from the Dead Sea, a lake in Israel, had a very high concentration of dissolved solids including sodium chloride (NaCl). The student first filtered the water. A 200 cm³ portion of the filtered lake water was then measured out accurately and the water was removed by heating, using one of the two methods shown, leaving a solid residue either in container A or B.\", the drawings of basin A on a tripod over a Bunsen burner and of beaker B in an oven; then (d) (i) \"Describe a procedure for carrying out a flame test on the solid residue left in A or in B.\"",
+  "questionRef": "2019 OL Q3(d)(i)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q4a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A black-and-white portrait photograph of a young man in a dark jacket, white collar and tie.",
+  "questionRef": "2019 OL Q4(a)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q6.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's four hydrocarbons, formula above letter: CH₄, A; C₂H₄, B; CH₃CH₂CH₂CH₃, C; C₆H₆, D.",
+  "questionRef": "2019 OL Q6"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q6c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's four hydrocarbons, formula above letter: CH₄, A; C₂H₄, B; CH₃CH₂CH₂CH₃, C; C₆H₆, D; below them a photograph of a forklift truck with a gas cylinder mounted at its back.",
+  "questionRef": "2019 OL Q6(c)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q6e-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q6(e): \"(e) The apparatus shown is used to prepare hydrocarbon B from ethanol and aluminium oxide (Al₂O₃). Copy the diagram into your answerbook. Indicate on your diagram the location of (i) the ethanol, (ii) the Al₂O₃, (iii) the heat source, during the preparation.\", beside a drawing of a horizontal test tube with \"glass wool\" at its closed end, whose delivery tube leads down into a trough of water under an inverted test tube labelled \"B\".",
+  "questionRef": "2019 OL Q6(e)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q7.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A conical flask plugged with \"cotton wool\" and holding \"HCl and eggshell\", standing on an electronic balance whose display reads \"- 86 mg\".",
+  "questionRef": "2019 OL Q7"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q7-table.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's table of Time (minutes) 0, 1, 2, 3, 4, 5, 6, 7 against Mass CO₂ (mg) 0, 45, 70, 86, 94, 99, 101, 101.",
+  "questionRef": "2019 OL Q7"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q7a-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q7: \"A student investigated the rate of the reaction that took place between a solution of HCl and the calcium carbonate (CaCO₃) in broken eggshell. The reaction that took place was: 2HCl + CaCO₃ → CaCl₂ + H₂O + CO₂ The student added 50 cm³ of HCl solution to 2.5 g of eggshell pieces in a flask standing on a mass balance as shown; the CO₂ product escaped from the flask. The mass of CO₂ gas produced was determined at one-minute intervals and these masses are given in the table below.\", the drawing of the flask with \"cotton wool\" and \"HCl and eggshell\" on a balance reading \"- 86 mg\", the table of Time (minutes) 0 to 7 against Mass CO₂ (mg) 0, 45, 70, 86, 94, 99, 101, 101; then (a) (i) \"Plot a graph, on graph paper, of mass (in mg) of CO₂ (y-axis) versus time.\"",
+  "questionRef": "2019 OL Q7(a)(i)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q8.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's reaction scheme: three boxes joined by arrows, \"W CH₃OH b.p. = 65 °C\" to \"X HCHO b.p. = –19 °C\" to \"Y HCOOH b.p. = 101 °C\".",
+  "questionRef": "2019 OL Q8"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q10a-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q10(a): \"(a) The following words are omitted from the passage below. residue smaller hydrocarbon top base crude oil larger Write in your answerbook the omitted word(s) corresponding to each of the numbers (1 to 7). In oil refining 1 is pre-heated in a furnace before being pumped into a fractionating column, like that shown in the diagram, where it separates into different useful 2 fractions. The temperature at the 3 of the column is higher than it is at the 4. Near the top of the column the 5 molecules with lower boiling points separate. Farther down the column the 6 molecules with higher boiling points separate. The 7 that collects at the base of the column can be used for tarring roads. (25)\", each number printed on an underlined blank, beside a drawing of a fractionating column with outlets down its side, fed from a \"furnace\".",
+  "questionRef": "2019 OL Q10(a)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q10b-i-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q10(b)(i): \"(b) In the manufacture of SO₃ a chemical equilibrium is reached according to the following balanced equation.\" with \"chemical equilibrium\" underlined, the equation 2SO₂ (g) + O₂ (g) ⇌ 2SO₃ (g) ΔH = –198 kJ, then \"(i) Explain the underlined term.\"",
+  "questionRef": "2019 OL Q10(b)(i)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q10b-iv-print.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's own print of 2019 OL Q10(b)(iv): \"(iv) Supply the missing words in the following statement of Le Châtelier's principle: 'When a system in equilibrium is disturbed, e.g. by changing the 1 or the 2, reaction will occur to 3 the effect of the disturbance.'\", each number printed on an underlined blank.",
+  "questionRef": "2019 OL Q10(b)(iv)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q11b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of a round foil balloon printed \"HAPPY BIRTHDAY\" with a cat and a dog, on a string.",
+  "questionRef": "2019 OL Q11(b)"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q11c-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The paper's nitrogen cycle: boxes \"atmospheric nitrogen (N₂)\", \"nitrates (NO₃⁻)\", \"nitrogen (N) compounds in plants\", \"nitrogen (N) compounds from plant decay\", \"nitrogen (N) compounds in animals\" and \"nitrogen (N) compounds from animal waste and decay\"; arrows run from atmospheric nitrogen to nitrates and back, from nitrates to compounds in plants, from plants to plant decay and to animals, from animals to animal waste and decay, and from plant decay and from animal waste and decay back to nitrates and to atmospheric nitrogen.",
+  "questionRef": "2019 OL Q11(c)A"
+ },
+ {
+  "file": "chemistry-2019-OL-paper-q11c-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A photograph of the winged statue of Eros drawing a bow, against the sky.",
+  "questionRef": "2019 OL Q11(c)B"
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q2f.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q2(f), as the State Examinations Commission set it: two boxed routes: 25 × 0.05 over 1 = (3), 22.6 × M over 2 (3), M = 0.11 mol l⁻¹ (3); or 25 × 0.05 over 1000 = 1.25 × 10⁻³ moles Na₂CO₃ (3), 1.25 × 10⁻³ × 2 = 2.5 × 10⁻³ moles HCl (3), M = 2.5 × 10⁻³ × 1000 over 22.6 = 0.11 mol l⁻¹ (3); then \"If first 6 not awarded formula may be awarded 3.\"",
+  "questionRef": "2019 OL Q2(f)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q3d-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q3(d)(i), as the State Examinations Commission set it: a table of three methods, three steps each, (3) a step. Method 1: \"clean a platinum (nichrome) wire* (rod, probe) in concentrated hydrochloric acid (HCl) / clean platinum wire\", \"dip rod in salt\", \"hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame\". Method 2: \"soak wood (splint, stick) overnight in water / use damp (wet) wood (splint, stick)\", \"dip splint (stick) in salt\", \"hold salt in (over) hot (blue) part of flame (Bunsen) / observe colour of flame\". Method 3: \"prepare a solution of the salt in water and ethanol (propanol)\", \"spray solution\", \"onto (into) hot (blue) part of flame (Bunsen) / observe colour of flame\". Below: \"*[Allow 'inoculating loop', or 'spatula' for 'platinum wire'.]\" and \"[Clear labelled diagram for some or all points acceptable.]\"",
+  "questionRef": "2019 OL Q3(d)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q5b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q5(b)(i), as the State Examinations Commission set it: (i): a circle round a grey nucleus with one electron, a dot, on the circle; (3).",
+  "questionRef": "2019 OL Q5(b)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q5b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q5(b)(ii), as the State Examinations Commission set it: (ii): a grey nucleus inside two circles, two crosses on the inner circle and six on the outer, in pairs at top and bottom and singly at left and right; \"[Pairs of electrons or single electrons acceptable.]\" (6).",
+  "questionRef": "2019 OL Q5(b)(ii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q5c-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q5(c)(iv), as the State Examinations Commission set it: DRAW: two drawings of a water molecule. One of circles: an oxygen atom with two crosses on its inner circle and, on its outer circle, two pairs of crosses at top and bottom and a cross and a dot where it overlaps each of two hydrogen circles. One of symbols: H, O, H, with a dot and a cross between O and each H and two pairs of dots on O. Then \"Exactly 2 lone pairs or exactly 4 non-bonded electrons in valence shell of oxygen (3)\", \"Exactly 2 bond pairs in valence shell of oxygen (3)\", \"Inner electrons of oxygen need not be shown\".",
+  "questionRef": "2019 OL Q5(c)(iv)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q6e.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q6(e), as the State Examinations Commission set it: (e) INDICATE: (i) ethanol end of test-tube (3); (ii) Al₂O₃ middle of test-tube (3); (iii) heat middle of test-tube (3); then the apparatus drawn with labels: \"ethanol\" at the closed end of a horizontal test tube, \"Al₂O₃\" in its middle, heated from below by a Bunsen burner, \"heat applied here\", its delivery tube leading into a trough of water under an inverted test tube.",
+  "questionRef": "2019 OL Q6(e)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q7a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q7(a)(i), as the State Examinations Commission set it: a graph of Mass CO₂ (mg), 0 to 120, against Time (minutes), 0 to 8: points at (0, 0), (1, 45), (2, 70), (3, 86), (4, 94), (5, 99), (6, 101) and (7, 101) joined by a smooth curve, with a line up from 3.5 minutes to the curve and across to the mass axis just above 90.",
+  "questionRef": "2019 OL Q7(a)(i)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q8c.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q8(c), as the State Examinations Commission set it: (c) DRAW: (6): the structure of X, a C joined to two H atoms by single bonds and to an O by a double bond; \"[Hs need not be shown explicitly.][Allow 3 for a molecule with a carbonyl group.]\"",
+  "questionRef": "2019 OL Q8(c)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q10b-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q10(b)(iii), as the State Examinations Commission set it: (iii) WRITE: Kc = [SO₃]² over [SO₂]²[O₂] (6); \"[numerator correct (3) and denominator correct (3); inverted (3)]\"",
+  "questionRef": "2019 OL Q10(b)(iii)",
+  "solution": true
+ },
+ {
+  "file": "chemistry-2019-OL-scheme-q10c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "The marking scheme's own print of its answer to 2019 OL Q10(c)(i), as the State Examinations Commission set it: (c) (i) WHAT: 108 g (3); HOW MANY: 0.1 moles Ag (6), boxed as n = m over Aᵣ = 10.8 over 108 = 0.1 moles silver (6).",
+  "questionRef": "2019 OL Q10(c)(i)",
+  "solution": true
  }
 ]
