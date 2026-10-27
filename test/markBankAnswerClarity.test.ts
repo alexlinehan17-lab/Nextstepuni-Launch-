@@ -293,20 +293,17 @@ describe('answer clarity: priced answers are rows, not prose', () => {
       }
     }
     expect(cards).toHaveLength(623);
-    expect(structured).toHaveLength(580);
-    // Split cards whose block carries a sibling's ladder or answers, and
-    // theorist/model pairs the scheme prints as bare names. Fix a card's
-    // block and take it off this list.
+    // 580 before the residue shapes were read: a name the scheme prints bare over a one- or two-mark criterion,
+    // a sibling card's ladder on a split question's shared block, tariff rows beside a ladder, a range the text
+    // layer broke over two lines, a band whose descriptor follows its marks.
+    expect(structured).toHaveLength(615);
+    // What is still a list, pinned by id: a two-line answer with "1 mark + 1 mark" inside it, a one-word answer under a
+    // sibling's "2 marks + 2 marks", three "One fact" items over a two-mark ladder on a four-mark response, an essay whose
+    // second criterion's bands the block does not carry, a sibling card's answer row, a bare "Name" the question also
+    // says, and two tariffs the block does not print.
     expect(cards.filter(card => card.rubric.system === 'politics' && !card.rubric.allocation).map(card => card.id).sort()).toEqual([
-      'politics-2018-hl-q1-c', 'politics-2018-hl-q1-e', 'politics-2018-hl-q1-k', 'politics-2018-ol-q1-a', 'politics-2018-ol-q1-b-i',
-      'politics-2018-ol-q1-d', 'politics-2018-ol-q1-e-i', 'politics-2018-ol-q1-e-ii-limitation', 'politics-2018-ol-q1-e-ii-strength',
-      'politics-2018-ol-q1-g-example', 'politics-2018-ol-q1-i-example', 'politics-2018-ol-q1-j-example', 'politics-2018-ol-q1-k-example',
-      'politics-2018-ol-q1-o-i', 'politics-2019-hl-q1-i', 'politics-2019-hl-q1-k', 'politics-2019-ol-q1-e', 'politics-2019-ol-q1-f',
-      'politics-2019-ol-q1-j-example', 'politics-2019-ol-q3-c', 'politics-2020-hl-q1-l', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-d-thinker',
-      'politics-2021-ol-q1-q-iii', 'politics-2022-hl-q1-a', 'politics-2022-hl-q1-c-thinker', 'politics-2022-ol-q1-d-i', 'politics-2022-ol-q1-d-ii',
-      'politics-2022-ol-q1-e', 'politics-2023-hl-q1-h', 'politics-2024-hl-q2-c', 'politics-2024-ol-q1-d-ii', 'politics-2024-ol-q1-d-iii',
-      'politics-2025-hl-q1-o-theory', 'politics-2025-hl-q1-o-thinker', 'politics-2025-ol-q1-d-ii', 'politics-2025-ol-q1-d-iii', 'politics-2025-ol-q3-c',
-      'politics-2026-hl-q1-k-example', 'politics-2026-hl-q2-c', 'politics-2026-ol-q1-d-i', 'politics-2026-ol-q1-k', 'politics-2026-ol-q1-p',
+      'politics-2018-hl-q1-c', 'politics-2018-ol-q1-b-i', 'politics-2018-ol-q1-k-example', 'politics-2018-ol-q1-o-i',
+      'politics-2019-ol-q1-f', 'politics-2019-ol-q3-c', 'politics-2021-hl-q2-g', 'politics-2021-ol-q1-q-iii',
     ]);
     // No card hides its answers in a closed box any more: the bullets are a
     // visible list on every card, structured or not.
