@@ -50,18 +50,20 @@ def r(n):
     return list(range(n + 1))
 
 
+CHOICES = {}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Concrete block outer leaf with external render", "Full fill cavity with wall tie", "Concrete block inner leaf with internal plaster", "Cavity closer", "Wallplate 100 mm x 75 mm", "Prefabricated roof truss", "Insulation and airtight membrane", "Plasterboard with skim coat", "Fascia, soffit & gutter", "Ventilation", "Breather membrane", "Slates and battens"]), 'q3-a': ('details', 8, 5, ["Rising main", "Insulated storage tank", "Overflow", "Cylinder", "Cold feed to cylinder", "Expansion pipe", "Bathroom fixtures", "Cold feed to toilet cistern", "Hot and cold feed to wash basin", "Hot and cold feed to mixer shower", "Valves", "Labels"]), 'q5-a': ('details', 8, 5, ["Concrete block outer leaf with external render", "Full fill insulated cavity with wall tie", "Concrete block inner leaf with internal plaster", "Cavity closer", "Concrete cill", "Drip/throating", "DPC", "Thermal broken window frame", "Triple glazing", "Airtightness", "Window board"])})  # drawing details as option groups (construction_choices.py)
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q1-b': [('strap', 4, [0, 4])],
     'q2-a': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],
     'q2-b': [('method', 16, r(16)), ('type', 4, r(4)), ('thickness', 4, r(4))],
     'q2-c': [('reason-1', 7, r(7)), ('reason-2', 7, r(7))],
-    'q3-a': [('details', 40, list(range(0, 41, 5)))],
+    'q3-a': [('details', 40, None)],
     'q3-b': [('feature-1', 5, r(5)), ('feature-2', 5, r(5))],
     'q4-a': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],
     'q4-b': [(k, 6, r(6)) for k in ['foundation', 'reinforcement', 'position', 'dimensions']],
     'q4-c': [('material', 6, r(6)), ('reason-1', 4, r(4)), ('reason-2', 4, r(4))],
-    'q5-a': [('details', 40, list(range(0, 41, 5))), ('presentation', 6, BAND6)],
+    'q5-a': [('details', 40, None), ('presentation', 6, BAND6)],
     'q5-b': [('dpc-drip', 4, [0, 4])],
     'q6-a': [('precaution-1', 6, r(6)), ('precaution-2', 6, r(6))],
     'q6-b': [(f'ppe-{i}', 8, r(8)) for i in (1, 2, 3)],

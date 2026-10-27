@@ -581,6 +581,42 @@ describe('answer clarity: priced answers are rows, not prose', () => {
     }
   });
 
+  it('Construction: a drawing row priced "Any N of the above details (M marks each)" is a group of the scheme\'s own detail lines', () => {
+    const cards = [...CONSTRUCTION_HIGHER, ...CONSTRUCTION_ORDINARY].filter(isPointCard);
+    const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));
+    const tariff = /^Any (\d+)\s*(?:of the above details|x|×)/i;
+    // Ordinary Level draws to a priced table ("19 mm external render 5 … Any 7 of the above details (5 marks each)")
+    // and Higher Level prices the same way under PERFORMANCE CRITERIA, the part's own tariff line heading its labels.
+    // construction_choices.py reads each table's lines into the row's group: claim N at M each, the row's own marks,
+    // the printed tariff kept as the row's note. A line the table prints twice is a detail drawn twice ("Stop valve 5"
+    // on two valves, "70 x 20 mm architrave 4" each side of a door) and stays twice. 53 tasks and their twins.
+    const groups = rows.filter(({ row }) => row.kind === 'anyN' && row.group && tariff.test(row.contextNote ?? ''));
+    expect(groups).toHaveLength(105);
+    for (const { card, row } of groups) {
+      const n = Number(tariff.exec(row.contextNote!)![1]);
+      expect(row.group!.claimMax, `${card.id}/${row.id}`).toBe(n);
+      expect(row.group!.claimMax * row.group!.perOption, `${card.id}/${row.id}`).toBe(row.marks);
+      expect(row.group!.options.length, `${card.id}/${row.id}`).toBeGreaterThanOrEqual(n);
+      expect(row.group!.options.every(option => option.trim().length > 0), `${card.id}/${row.id}`).toBe(true);
+      expect(/^(?:DETAILS|Details)(?:\s*[-–]\s*typical sizes)?$|^PERFORMANCE CRITERIA$/.test(row.verbatim), `${card.id}/${row.id}: ${row.verbatim}`).toBe(true);
+    }
+    // 2019 HL Q1(a) prices "Any 12 × 4marks" over 25 bulleted details in three menus (scheme p. 32): one pool of
+    // twelve, past the 17 options a question may show, so the row keeps its strip and its note names the menus.
+    const unlifted = rows.filter(({ row }) => row.kind === 'criterion' && tariff.test(row.verbatim.trim()));
+    expect(unlifted.map(({ card, row }) => `${card.id}/${row.id}: ${row.verbatim}`)).toEqual([
+      'cons-2019-hl-q1-a/details: Any 12 × 4marks',
+      'cons-2019-hl-q1-complete/a-details: Any 12 × 4marks',
+    ]);
+    // Complete-question cards mirror their tasks' groups under their own row ids.
+    for (const card of cards.filter(item => item.taskGroups?.length)) {
+      for (const group of card.taskGroups!) {
+        const source = cards.find(item => item.id === group.sourceCardId)!;
+        const twin = group.rowIds.map(id => card.rows.find(row => row.id === id)!);
+        expect(twin.map(row => row.group ?? null), `${card.id} ← ${source.id}`).toEqual(source.rows.map(row => row.group ?? null));
+      }
+    }
+  });
+
   it('Italian: a price the scheme prints inside an answer is a row, and a shorter answer it prices is a printed step', () => {
     const cards = [...ITALIAN_HIGHER, ...ITALIAN_ORDINARY].filter(isPointCard);
     const rows = cards.flatMap(card => card.rows.map(row => ({ card, row })));

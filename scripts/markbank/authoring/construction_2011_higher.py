@@ -17,6 +17,7 @@ PRIOR_COUNT = 1128
 LEGACY = set()
 CHOICES = {'q9-a': ('locations', 3, 16, ['Wall plate and eaves', 'Insulated steel lintel', 'Sill', 'Floor insulation']),
            'q10-a': ('items', 2, 12, ['Foundations suitable for passive house', 'Airtight building envelope', 'Windows and Glazing'])}
+CHOICES.update({'q8-b': ('solar', 4, 4, ["Solar panel", "Flow & Return", "Pump", "Cylinder (twin coil)", "Pipe sizes", "Temperature sensors", "Control panel", "Expansion vessel", "Thermal reducing vessel", "Safety valve", "Mixing valve"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'9a': 'q9-a', '10a': 'q10-a'}
 LEDGER = [(1, 'Answer Question'), (3, 'one of'), (5, 'Select'), (5, 'any three'), (5, 'any two'), (5, 'OR'), (5, 'or'), (5, 'any stage'), (5, 'or'), (5, 'or')]
 LEAF = {
@@ -38,7 +39,7 @@ LEAF = {
     'q7-a': [('chimney', 16, list(range(0, 17, 4))), ('flashing', 12, list(range(0, 13, 4))), ('roof', 16, list(range(0, 17, 4))), ('presentation', 8, r(8))],
     'q7-b': [('detail-1', 4, r(4)), ('detail-2', 4, r(4))],
     'q8-a': [('items', 28, list(range(0, 29, 4))), ('sizes', 4, r(4))],
-    'q8-b': [('solar', 16, list(range(0, 17, 4)))],
+    'q8-b': [('solar', 16, None)],
     'q8-c': [('location', 6, r(6)), ('factor-1', 3, r(3)), ('factor-2', 3, r(3))],
     'q9-a': [('locations', 48, None)],
     'q9-b': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],

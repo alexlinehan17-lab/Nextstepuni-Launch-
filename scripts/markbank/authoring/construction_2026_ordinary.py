@@ -42,18 +42,20 @@ def r(n):
     return list(range(n + 1))
 
 
+CHOICES = {}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Reinforced concrete foundation", "Hardcore max 225mm layers", "Sand blinding", "Radon barrier", "Concrete subfloor", "200 – 300 mm rigid floor insulation", "Screed", "20 mm T&G flooring", "Outer leaf external render", "Concrete fill", "Full-fill insulated cavity", "Inner leaf internal plaster", "Airtightness tape"]), 'q3-a': ('details', 8, 5, ["15mm rising main", "15mm cold water feed to kitchen sink", "Kitchen sink", "Insulated water storage tank", "Ball valve in tank", "Overflow pipe", "Bathroom fixtures", "Cold water feed to wash basin", "Cold water feed to toilet cistern", "Cold water feed to bath"]), 'q5-a': ('details', 7, 5, ["External render", "Concrete block outer leaf", "Full fill insulated cavity with wall tie", "Concrete block inner leaf", "Internal plaster", "Cavity closer", "Stepped DPC", "Concrete lintels", "Thermally broken door frame", "Insulated door", "Airtightness"])})  # drawing details as option groups (construction_choices.py)
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q1-b': [('damp-prevention', 4, [0, 4])],
     'q2-a': [('advantage-1', 6, r(6)), ('advantage-2', 6, r(6))],
     'q2-b': [('method', 16, r(16)), ('type', 4, r(4)), ('thickness', 4, r(4))],
     'q2-c': [('area', 2, r(2)), ('reason-1', 6, r(6)), ('reason-2', 6, r(6))],
-    'q3-a': [('details', 40, list(range(0, 41, 5)))],
+    'q3-a': [('details', 40, None)],
     'q3-b': [('use-1', 5, r(5)), ('use-2', 5, r(5))],
     'q4-a': [('reason-1', 5, r(5)), ('reason-2', 5, r(5))],
     'q4-b': [(k, 6, r(6)) for k in ['site', 'house', 'entrance', 'driveway', 'garage']],
     'q4-c': [('item-1', 5, r(5)), ('item-2', 5, r(5))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q5-b': [('wall-tie', 4, [0, 4])],
     'q6-a-scroll-saw': [('precaution-1', 4, r(4)), ('precaution-2', 4, r(4))],
     'q6-a-spray-finish': [('precaution-1', 4, r(4)), ('precaution-2', 4, r(4))],

@@ -169,6 +169,20 @@ subject-specific generators.
   several placements, so the five-rows-per-task cap and the yearly
   validators' pinned row lists stand; the pass records every changed card in
   its year's review ledger and changes nothing on a second run.
+  Construction Studies drawing rows priced "Any 7 of the above details (5
+  marks each)" become option groups (`construction_choices.py --write`): the
+  options are the scheme table's own priced detail lines (Higher Level's under
+  PERFORMANCE CRITERIA, headed by the part's tariff line), a line the table
+  prints twice is a detail drawn twice and stays twice, and the row claims N
+  at the unit price for its unchanged marks with the printed tariff as its
+  note. The pass mirrors each task's group into its complete-question twin and
+  the 2015 Q1 checkpoint draft, records every changed card in its year's
+  review ledger, and writes the group into the yearly validator
+  (`CHOICES.update`, the LEAF row without steps). A second run finds nothing to
+  convert and changes nothing; to re-lift after changing the reader, check out
+  the data, the validators and the draft first. 2019 HL Q1(a) ("Any 12 ×
+  4marks" over 25 details in three menus) is the one row left as prose: one
+  pool, past the 17 options a question may show.
   Italian answers priced in halves on one line ("Erano stati compagni (1m)
   di scuola (4m)", "By summer [2] 2022 [1]") are cut at the printed prices by
   `it_rows.py`, which `it_all.py` applies to every card it builds and which

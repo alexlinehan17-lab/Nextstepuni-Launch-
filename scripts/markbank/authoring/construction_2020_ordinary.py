@@ -21,6 +21,7 @@ LEGACY = {'q1-a', 'q1-b', 'q2-a', 'q2-b', 'q2-c', 'q3-a', 'q3-b', 'q4-a', 'q4-c'
           'q9-a', 'q9-b', 'q9-c', Q8}
 CONSOLIDATED = {f'q8-None-{t}': Q8 for t in ['domino-joint', 'slump-test', 'dynamic-glass', 'pyrite', 'pile-foundation', 'trimmer', 'butt-hinge', 'solar-panel']}
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 7, 5, ["Reinforced strip foundation 1200 mm x 400 mm", "Concrete fill / foundation blocks", "Hardcore and sand blinding", "1200-gauge damp proof course/radon barrier", "200 - 300 mm Floor insulation", "Floor tiles 20 mm", "Skirting board", "Concrete block inner leaf with 13 mm internal plaster", "200 mm Full fill cavity insulation", "Wall ties", "Concrete block outer leaf with 19 mm render"]), 'q3-a': ('items', 8, 5, ["15 mm cold feed to burner", "22 mm flow to radiators", "22 mm return from radiators", "Radiators", "22 mm primary flow to cylinder", "22 mm primary return to burner", "22 mm overflow pipe", "22 mm expansion pipe from cylinder", "Valves / pumps"]), 'q5-a': ('details', 7, 5, ["Ridge tile", "Ridge vent", "Roofing slates", "Battens 50 mm x 35 mm", "Breather membrane", "Ridge board 275 mm x 32 mm", "Rafter 200 mm x 50 mm", "Collar tie 200 mm x 50 mm", "Insulation between rafters", "Airtight membrane", "Insulated plasterboard", "Plaster skim"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 TAILS = {'8': 'entering the dwelling.'}
@@ -28,17 +29,17 @@ LEDGER = [(1, 'Answer Question'), (4, 'any five')]
 GAPS = {'q9-b': {'cons-7-4'}, 'q9-c': {'cons-7-4'}}
 RETIRED = [('card-source-bindings.json', 'q7-b')]
 LEAF = {
-    'q1-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
+    'q1-a': [('details', 35, None), ('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
     'q1-b': [('membrane', 3, [0, 3])],
     'q2-a': [('method', 16, r(16)), ('type', 5, r(5)), ('thickness', 5, r(5))],
     'q2-b': [('advantage-1', 4, r(4)), ('advantage-2', 4, r(4))],
     'q2-c': [('additional', 16, r(16))],
-    'q3-a': [('items', 40, list(range(0, 41, 5))), ('presentation', 6, [0, 2, 4, 6])],
+    'q3-a': [('items', 40, None), ('presentation', 6, [0, 2, 4, 6])],
     'q3-b': [('advantage', 4, r(4))],
     'q4-a': [('reason-1', 8, r(8)), ('reason-2', 8, r(8))],
     'q4-b': [('material-1', 4, r(4)), ('material-2', 4, r(4)), ('reuse-1', 5, r(5)), ('reuse-2', 5, r(5))],
     'q4-c': [('method', 16, r(16))],
-    'q5-a': [('details', 35, list(range(0, 36, 5))), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
+    'q5-a': [('details', 35, None), ('dimensions', 3, r(3)), ('presentation', 8, BAND8)],
     'q5-b': [('ventilation', 4, [0, 4])],
     'q6-a': [(k, 8, r(8)) for k in ['sign-1', 'sign-2', 'sign-3']],
     'q6-b': [('precaution-1', 9, r(9)), ('precaution-2', 9, r(9))],

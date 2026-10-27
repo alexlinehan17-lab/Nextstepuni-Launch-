@@ -4798,17 +4798,27 @@
         "rows": [
           {
             "id": "solar",
-            "kind": "criterion",
-            "verbatim": "Any 4 × 4marks (Sketch 3 Annotation 1)",
+            "kind": "anyN",
+            "verbatim": "PERFORMANCE CRITERIA",
             "marks": 16,
-            "contextNote": "Best four, 4 each. Menu: solar panel; flow and return; pump; twin-coil cylinder; pipe sizes; temperature sensors; control panel; expansion vessel; thermal reducing vessel; safety valve; mixing valve. Modifications such as a 300 litre twin-coil cylinder, a blending valve and an electronic control system.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16
-            ]
+            "contextNote": "Any 4 × 4marks (Sketch 3 Annotation 1). Best four, 4 each. Menu: solar panel; flow and return; pump; twin-coil cylinder; pipe sizes; temperature sensors; control panel; expansion vessel; thermal reducing vessel; safety valve; mixing valve. Modifications such as a 300 litre twin-coil cylinder, a blending valve and an electronic control system.",
+            "group": {
+              "claimMax": 4,
+              "perOption": 4,
+              "options": [
+                "Solar panel",
+                "Flow & Return",
+                "Pump",
+                "Cylinder (twin coil)",
+                "Pipe sizes",
+                "Temperature sensors",
+                "Control panel",
+                "Expansion vessel",
+                "Thermal reducing vessel",
+                "Safety valve",
+                "Mixing valve"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2011-HL-q8-original",
@@ -5073,17 +5083,27 @@
           },
           {
             "id": "b-solar",
-            "kind": "criterion",
-            "verbatim": "Any 4 × 4marks (Sketch 3 Annotation 1)",
+            "kind": "anyN",
+            "verbatim": "PERFORMANCE CRITERIA",
             "marks": 16,
-            "contextNote": "Best four, 4 each. Menu: solar panel; flow and return; pump; twin-coil cylinder; pipe sizes; temperature sensors; control panel; expansion vessel; thermal reducing vessel; safety valve; mixing valve. Modifications such as a 300 litre twin-coil cylinder, a blending valve and an electronic control system.",
-            "permittedMarks": [
-              0,
-              4,
-              8,
-              12,
-              16
-            ]
+            "contextNote": "Any 4 × 4marks (Sketch 3 Annotation 1). Best four, 4 each. Menu: solar panel; flow and return; pump; twin-coil cylinder; pipe sizes; temperature sensors; control panel; expansion vessel; thermal reducing vessel; safety valve; mixing valve. Modifications such as a 300 litre twin-coil cylinder, a blending valve and an electronic control system.",
+            "group": {
+              "claimMax": 4,
+              "perOption": 4,
+              "options": [
+                "Solar panel",
+                "Flow & Return",
+                "Pump",
+                "Cylinder (twin coil)",
+                "Pipe sizes",
+                "Temperature sensors",
+                "Control panel",
+                "Expansion vessel",
+                "Thermal reducing vessel",
+                "Safety valve",
+                "Mixing valve"
+              ]
+            }
           },
           {
             "id": "c-location",
@@ -8687,8 +8707,11 @@
     {
       "cardId": "cons-2011-hl-q8-complete",
       "priorSha256": "1012c2b8f17933327b980c146830316c99462effbb309f24abdda7dabaa30e91",
-      "correctedSha256": "67b9a74194d0eeadfec7bfe66099722276ed90f4b98b2c3e1db97d36e663a18f",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "c2499ed2fdd04968914be2de40478d680ec0811907e7dd3b40afba8c8239a533",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "67b9a74194d0eeadfec7bfe66099722276ed90f4b98b2c3e1db97d36e663a18f"
+      ]
     },
     {
       "cardId": "cons-2011-hl-q10-alt-discussion",
@@ -8776,6 +8799,12 @@
       "priorSha256": "ed0207c23d3318195ea7293dcbf36ac6b7154c54cdf87e391631a7be9395d6db",
       "correctedSha256": "1e2d0d3b8ba8ecbc33aed656c85bef1d0749bfc7ac572b2359154321da9b5ea7",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2011-hl-q8-b",
+      "priorSha256": "a10dfdc673b897271103f072c7942f2e401d163b9a63ac7452aea9dc1eb38025",
+      "correctedSha256": "ac8395f7303de9de0817078999e448857ae3069762896647f47cc1f7bf0ffec9",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

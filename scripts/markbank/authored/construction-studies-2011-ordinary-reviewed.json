@@ -36,20 +36,26 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (6 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 42,
-            "contextNote": "Credit the best SEVEN acceptable details at 6 marks each, capped at 42. Marked details: 15 mm external plaster; 100 mm outer leaf; 50 mm residual cavity; 100 mm insulation; 100 mm inner leaf; 15 mm internal plaster; 100 × 70 mm pre-stressed concrete lintels; the 150 × 80 mm window head; triple low-e glazing; typical dimensions.",
-            "permittedMarks": [
-              0,
-              6,
-              12,
-              18,
-              24,
-              30,
-              36,
-              42
-            ]
+            "contextNote": "Any 7 of the above details (6 marks each). Credit the best SEVEN acceptable details at 6 marks each, capped at 42. Marked details: 15 mm external plaster; 100 mm outer leaf; 50 mm residual cavity; 100 mm insulation; 100 mm inner leaf; 15 mm internal plaster; 100 × 70 mm pre-stressed concrete lintels; the 150 × 80 mm window head; triple low-e glazing; typical dimensions.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 6,
+              "options": [
+                "External plaster 15 mm",
+                "Concrete block outer leaf 100 mm",
+                "Residual cavity 50 mm",
+                "Thermal insulation 100 mm",
+                "Concrete block inner leaf 100 mm",
+                "Internal plaster 15 mm",
+                "Pre-stressed concrete lintels 100 × 70 mm",
+                "Window head 150 × 80 mm",
+                "Triple glazing low e glass",
+                "Typical dimensions"
+              ]
+            }
           }
         ],
         "questionFigureKey": "construction-studies-2011-OL-q1-original",
@@ -234,20 +240,26 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (6 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 42,
-            "contextNote": "Credit the best SEVEN acceptable details at 6 marks each, capped at 42. Marked details: 15 mm external plaster; 100 mm outer leaf; 50 mm residual cavity; 100 mm insulation; 100 mm inner leaf; 15 mm internal plaster; 100 × 70 mm pre-stressed concrete lintels; the 150 × 80 mm window head; triple low-e glazing; typical dimensions.",
-            "permittedMarks": [
-              0,
-              6,
-              12,
-              18,
-              24,
-              30,
-              36,
-              42
-            ]
+            "contextNote": "Any 7 of the above details (6 marks each). Credit the best SEVEN acceptable details at 6 marks each, capped at 42. Marked details: 15 mm external plaster; 100 mm outer leaf; 50 mm residual cavity; 100 mm insulation; 100 mm inner leaf; 15 mm internal plaster; 100 × 70 mm pre-stressed concrete lintels; the 150 × 80 mm window head; triple low-e glazing; typical dimensions.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 6,
+              "options": [
+                "External plaster 15 mm",
+                "Concrete block outer leaf 100 mm",
+                "Residual cavity 50 mm",
+                "Thermal insulation 100 mm",
+                "Concrete block inner leaf 100 mm",
+                "Internal plaster 15 mm",
+                "Pre-stressed concrete lintels 100 × 70 mm",
+                "Window head 150 × 80 mm",
+                "Triple glazing low e glass",
+                "Typical dimensions"
+              ]
+            }
           },
           {
             "id": "b-flashing",
@@ -974,20 +986,28 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed to the indirect cylinder; indirect cylinder; expansion pipe; hot water supply to the appliances; cold supply from the tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed to the indirect cylinder; indirect cylinder; expansion pipe; hot water supply to the appliances; cold supply from the tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Ballvalve",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from indirect hot water cylinder",
+                "Hot water supply to appliances",
+                "Cold water supply from storage tank to appliances",
+                "Valves",
+                "Insulation to storage tank, cylinder and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -1200,20 +1220,28 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed to the indirect cylinder; indirect cylinder; expansion pipe; hot water supply to the appliances; cold supply from the tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: rising main; ballvalve; cold water storage tank; overflow; cold feed to the indirect cylinder; indirect cylinder; expansion pipe; hot water supply to the appliances; cold supply from the tank to the appliances; valves; insulation to the tank, cylinder and pipework; labelling.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "Rising main",
+                "Ballvalve",
+                "Cold water storage tank",
+                "Overflow",
+                "Cold feed from storage to indirect hot water cylinder",
+                "Indirect hot water cylinder",
+                "Expansion pipe from indirect hot water cylinder",
+                "Hot water supply to appliances",
+                "Cold water supply from storage tank to appliances",
+                "Valves",
+                "Insulation to storage tank, cylinder and pipework",
+                "Labelling"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -2066,20 +2094,24 @@
         "rows": [
           {
             "id": "details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 44 mm; treads with 2R + G between 550 and 700 mm and a going of at least 220 mm; a nosing of at least 16 mm; risers of at most 220 mm; wedges; glue blocks; the joint between tread and riser; the pitch line; the bottom three steps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 44 mm; treads with 2R + G between 550 and 700 mm and a going of at least 220 mm; a nosing of at least 16 mm; risers of at most 220 mm; wedges; glue blocks; the joint between tread and riser; the pitch line; the bottom three steps.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 × 44 mm",
+                "Treads 2R + G between 550 mm and 700 mm. Going minimum 220 mm.",
+                "Nosing 16 mm minimum",
+                "Risers 2R + G between 550 mm and 700 mm. Maximum 220 mm.",
+                "Glue blocks",
+                "Joint between tread and riser",
+                "Pitch line",
+                "Bottom three steps"
+              ]
+            }
           },
           {
             "id": "sizes",
@@ -2282,20 +2314,24 @@
         "rows": [
           {
             "id": "a-details",
-            "kind": "criterion",
-            "verbatim": "Any 7 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 35,
-            "contextNote": "Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 44 mm; treads with 2R + G between 550 and 700 mm and a going of at least 220 mm; a nosing of at least 16 mm; risers of at most 220 mm; wedges; glue blocks; the joint between tread and riser; the pitch line; the bottom three steps.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15,
-              20,
-              25,
-              30,
-              35
-            ]
+            "contextNote": "Any 7 of the above details (5 marks each). Credit the best SEVEN acceptable details at 5 marks each, capped at 35. Marked details: string 250 × 44 mm; treads with 2R + G between 550 and 700 mm and a going of at least 220 mm; a nosing of at least 16 mm; risers of at most 220 mm; wedges; glue blocks; the joint between tread and riser; the pitch line; the bottom three steps.",
+            "group": {
+              "claimMax": 7,
+              "perOption": 5,
+              "options": [
+                "String 250 × 44 mm",
+                "Treads 2R + G between 550 mm and 700 mm. Going minimum 220 mm.",
+                "Nosing 16 mm minimum",
+                "Risers 2R + G between 550 mm and 700 mm. Maximum 220 mm.",
+                "Glue blocks",
+                "Joint between tread and riser",
+                "Pitch line",
+                "Bottom three steps"
+              ]
+            }
           },
           {
             "id": "a-sizes",
@@ -2940,16 +2976,26 @@
           },
           {
             "id": "sketch",
-            "kind": "criterion",
-            "verbatim": "Any 3 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 15,
-            "contextNote": "The best three sketch details, 5 each, capped at 15: an underground tank of 2500–6500 litres; a pump with power supply, 12 mm suction pipe and floating filter; a 12 mm rainwater pipe to the control panel and attic tank; the control panel; a 12 mm mains top-up pipe; an attic tank of at least 230 litres with ball valve and 22 mm overflow; labels; typical sizes.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15
-            ]
+            "contextNote": "Any 3 of the above details (5 marks each). The best three sketch details, 5 each, capped at 15: an underground tank of 2500–6500 litres; a pump with power supply, 12 mm suction pipe and floating filter; a 12 mm rainwater pipe to the control panel and attic tank; the control panel; a 12 mm mains top-up pipe; an attic tank of at least 230 litres with ball valve and 22 mm overflow; labels; typical sizes.",
+            "group": {
+              "claimMax": 3,
+              "perOption": 5,
+              "options": [
+                "Valid detail one",
+                "Valid detail two",
+                "Underground rainwater storage tank, 2500 to 6500 litres",
+                "Pump with power supply, 12 mm suction pipe and floating filter",
+                "Rainwater pipe 12 mm to system control panel and tank in the attic",
+                "System control panel",
+                "Mains water top-up pipe to control panel and to tank in the attic 12 mm",
+                "Tank in the attic 230 litres min, ball valve and overflow pipe 22 mm",
+                "Labels to diagram",
+                "Typical sizes of components"
+              ]
+            }
           },
           {
             "id": "presentation",
@@ -3289,16 +3335,26 @@
           },
           {
             "id": "a-sketch",
-            "kind": "criterion",
-            "verbatim": "Any 3 of the above details (5 marks each)",
+            "kind": "anyN",
+            "verbatim": "Details",
             "marks": 15,
-            "contextNote": "The best three sketch details, 5 each, capped at 15: an underground tank of 2500–6500 litres; a pump with power supply, 12 mm suction pipe and floating filter; a 12 mm rainwater pipe to the control panel and attic tank; the control panel; a 12 mm mains top-up pipe; an attic tank of at least 230 litres with ball valve and 22 mm overflow; labels; typical sizes.",
-            "permittedMarks": [
-              0,
-              5,
-              10,
-              15
-            ]
+            "contextNote": "Any 3 of the above details (5 marks each). The best three sketch details, 5 each, capped at 15: an underground tank of 2500–6500 litres; a pump with power supply, 12 mm suction pipe and floating filter; a 12 mm rainwater pipe to the control panel and attic tank; the control panel; a 12 mm mains top-up pipe; an attic tank of at least 230 litres with ball valve and 22 mm overflow; labels; typical sizes.",
+            "group": {
+              "claimMax": 3,
+              "perOption": 5,
+              "options": [
+                "Valid detail one",
+                "Valid detail two",
+                "Underground rainwater storage tank, 2500 to 6500 litres",
+                "Pump with power supply, 12 mm suction pipe and floating filter",
+                "Rainwater pipe 12 mm to system control panel and tank in the attic",
+                "System control panel",
+                "Mains water top-up pipe to control panel and to tank in the attic 12 mm",
+                "Tank in the attic 230 litres min, ball valve and overflow pipe 22 mm",
+                "Labels to diagram",
+                "Typical sizes of components"
+              ]
+            }
           },
           {
             "id": "a-presentation",
@@ -5386,6 +5442,54 @@
       "priorSha256": "afc4122f3f4238902fb6cd6685ca7f051a26afd25a7012e13901c62ed786a77d",
       "correctedSha256": "97fb91cc95984d9fdcbb94e39472798c94c9626b2a5f476780620cd153975063",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q1-a",
+      "priorSha256": "4ca66b4f19e12bd8c9edd74b7ee825826784ef43db73859a56c541d2f910d15a",
+      "correctedSha256": "b5c9716a1f29ef943eab97b993a25bdf5514315ab8d87521c9577178df54a724",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q1-complete",
+      "priorSha256": "c865ac4d67d8db9f29d866b37511d6b59bf20e089a56405313cd9d7406cc43ea",
+      "correctedSha256": "3137dfaf15ed9e5206db03debb3b9ffab66df9e76de0ca2f993c8be8d11a5978",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q3-a",
+      "priorSha256": "457dd07aac604395ecf94334e973d6a47a74cdeb4aa0dac15f641d0181f08291",
+      "correctedSha256": "4672994829441097a3927462414b53bcf7d27b3dffd09fbce29229f22e69708f",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q3-complete",
+      "priorSha256": "7c6188746754905f3be69b8ff2d2aecb59196d825d54e10813fd273936216678",
+      "correctedSha256": "f60611e4424fa3b2adabf44d50be62bd83c6b91dfac9b9c192d8f58e91e8a83a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q5-a",
+      "priorSha256": "afe672e1be9b1e65ddae77a00689a41b038109b8655ed6c291021e2a4d4f4c8e",
+      "correctedSha256": "dccd92a1dbcaa9f72201eb0c356b1c754cb4a3bfdb2ebc25a738ac8028bee26b",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q5-complete",
+      "priorSha256": "b6f81d3d47f00fbbd23e569a9dbfacc6ca92f2c91ed98f7c397f5ecc8cf2c9f7",
+      "correctedSha256": "5dccb7ede95cee658ea48f33ddf02631f8bb0c5063bb186fc639a4cd446d283e",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q7-a",
+      "priorSha256": "522911854bfcbee2e6f73e259d1655b60886fe9f1c4061f0dee024ee26032d28",
+      "correctedSha256": "070c202a9e7fe6714b95c441fde03d70f1b55f30e4cde06c6638cdc1138aff1b",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
+    },
+    {
+      "cardId": "cons-2011-ol-q7-complete",
+      "priorSha256": "d10e7fd0e693c440f0c1e83fa93ec2de0cf9381809961d8ac0f5411ff2c94c04",
+      "correctedSha256": "ea2a140aceb86cda206bf83b24f7be12c4c01eaac6604204343431075726150a",
+      "reason": "The details the scheme lists for the drawing, each at its printed price, are the options of the row's group; the row itself, its text and its marks are unchanged."
     }
   ]
 }

@@ -18,22 +18,23 @@ Q8 = 'q8-terms'
 TERMS = ['Strip Foundation', 'Housing joint', 'Laser beam', 'Thermostatic Valve', 'Collar tie', 'Radon sump', 'Roof-light window', 'Smart meter', 'External ramp']
 LEGACY = set()
 CHOICES = {Q8: ('terms', 5, 10, TERMS)}
+CHOICES.update({'q1-a': ('details', 9, 4, ["External render – 19 mm", "150 cavity full fill insulation", "Cavity ties", "Internal leaf solid block – 100 mm", "Internal plaster – 15 mm", "Skirting board", "Floating tongued and grooved hardwood floor", "Acoustic layer or adhesive layer for fixing floor boards", "Plywood deck – 20 mm", "Adhesive tape to wall and plywood", "Floor joists 225 × 40 mm", "Plaster skim"]), 'q3-a': ('details', 9, 4, ["Rising main", "Cold water storage tank and ball valve", "Overflow", "Cold feed from storage to indirect hot water cylinder", "Indirect hot water cylinder", "Expansion pipe from cylinder", "Supply to sink", "Supply to expansion tank", "Expansion tank and ball valve", "Overflow", "Cold water feed and primary return", "Wood burning stove / back boiler", "Expansion pipe and primary flow", "Valves", "Insulation to water storage tank and pipework", "Labelling"]), 'q5-a': ('details', 6, 6, ["Ridge tile", "Ridge vent", "Ridge board – 300 mm × 32 mm", "Tiles", "Battens – 50 mm × 30 mm", "Vapour barrier/vapour diffusion membrane", "Rafters – 200 mm × 50 mm", "Collar tie – 150 - 200 mm × 50 mm", "Insulation", "Plasterboard", "Labelling"])})  # drawing details as option groups (construction_choices.py)
 FINITE = {'8': Q8}
 WHOLE_CHOICES = {Q8}
 LEDGER = [(1, 'Answer Question'), (3, 'any five'), (3, 'one of')]
 GAPS = {'q4-c': {'cons-4-1'}, Q8: {'cons-10-1', 'cons-10-4'}}
 LEAF = {
-    'q1-a': [('details', 36, list(range(0, 37, 4))), ('dimensions', 4, r(4))],
+    'q1-a': [('details', 36, None), ('dimensions', 4, r(4))],
     'q1-b': [('bridging', 2, [0, 2]), ('presentation', 8, BAND8)],
     'q2-a': [('description-1', 4, r(4)), ('description-2', 4, r(4)), ('insulation', 4, r(4)), ('presentation', 8, BAND8)],
     'q2-b': [('step-1', 4, r(4)), ('step-2', 4, r(4)), ('finish', 4, r(4)), ('presentation', 8, BAND8)],
     'q2-c': [('advantage-1', 5, r(5)), ('advantage-2', 5, r(5))],
-    'q3-a': [('details', 36, list(range(0, 37, 4))), ('presentation', 8, BAND8)],
+    'q3-a': [('details', 36, None), ('presentation', 8, BAND8)],
     'q3-b': [('advantage-1', 3, r(3)), ('advantage-2', 3, r(3))],
     'q4-a': [(f'detail-{i}', 4, r(4)) for i in (1, 2, 3)] + [('dimensions', 4, r(4)), ('presentation', 8, BAND8)],
     'q4-b': [('detail', 6, r(6))],
     'q4-c': [(f'detail-{i}', 4, r(4)) for i in (1, 2, 3)] + [('presentation', 8, BAND8)],
-    'q5-a': [('details', 36, list(range(0, 37, 6))), ('dimensions', 3, r(3))],
+    'q5-a': [('details', 36, None), ('dimensions', 3, r(3))],
     'q5-b': [('ventilation', 3, r(3)), ('presentation', 8, BAND8)],
     'q6-a': [(k, 8, BAND8) for k in ['helmet', 'vest', 'boots']],
     'q6-b': [(k, 4, r(4)) for k in ['helmet', 'vest', 'boots']],
