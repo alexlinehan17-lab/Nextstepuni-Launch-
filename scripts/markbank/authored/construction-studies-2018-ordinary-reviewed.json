@@ -1528,6 +1528,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1548,6 +1576,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1568,6 +1624,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -1675,6 +1759,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -1812,6 +1924,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1832,6 +1972,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1852,6 +2020,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           },
           {
@@ -1872,6 +2068,34 @@
               8,
               9,
               10
+            ],
+            "parts": [
+              {
+                "id": "primary-communication",
+                "verbatim": "Primary communication",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "other-communication",
+                "verbatim": "other communication",
+                "marks": 4,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
             ]
           }
         ],
@@ -6095,5 +6319,25 @@
     }
   },
   "priorAuthoredCardHashes": "docs/markbank-audit/2026-09-28/drafts/construction-2018-ordinary/prior-authored-card-hashes.json",
-  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2018-ordinary/prior-2018-ordinary-cards.json"
+  "priorCorrectedCards": "docs/markbank-audit/2026-09-28/drafts/construction-2018-ordinary/prior-2018-ordinary-cards.json",
+  "revisions": [
+    {
+      "cardId": "cons-2018-ol-q4-b",
+      "priorSha256": "969f9446477fac87ae8fbc51f7a6f9d13beb97dd04cca65137d243dc72127d7a",
+      "correctedSha256": "6ef708d3754de40c3beaa385000b7315d734a5b8ba62ae4936a52c97baed53d7",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2018-ol-q4-c",
+      "priorSha256": "d1ab19830d4b008855b8503d7932f1e51955409007d5f7bb9402d9b404941b88",
+      "correctedSha256": "1ff7bb5dae448f9649d763e32d018ba70306cd363e2d00741a45a93330e65ee5",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    },
+    {
+      "cardId": "cons-2018-ol-q4-complete",
+      "priorSha256": "37f692f2bf045fa690556d36544f972a09e2730f354411dccb3919bd46d1d5e1",
+      "correctedSha256": "7b064faaa35ad65c5ede02740da03bed3090ed7147c714145c7845868bf8ac75",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+    }
+  ]
 }

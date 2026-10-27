@@ -2635,6 +2635,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "sign",
+                "verbatim": "Sign",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "specific-reason",
+                "verbatim": "specific reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3022,6 +3049,33 @@
               7,
               8,
               9
+            ],
+            "parts": [
+              {
+                "id": "sign",
+                "verbatim": "Sign",
+                "marks": 6,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              {
+                "id": "specific-reason",
+                "verbatim": "specific reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3399,6 +3453,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3415,6 +3493,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3431,6 +3533,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3447,6 +3573,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -3703,6 +3853,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3719,6 +3893,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3735,6 +3933,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3751,6 +3973,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5625,12 +5871,15 @@
     {
       "cardId": "cons-2022-ol-q6-a",
       "priorSha256": "3ea9ef175af0b721f277262e8af4f7726cde89022de16b4ac1f1e46cee1a1bec",
-      "correctedSha256": "2d4e92ac89cea9e5b9db37e92097017fff09241f9064d97491f0acda69142f18",
+      "correctedSha256": "cb7857889edf8d9c3e94c5583dd7cae4cb34e74bfabbc2bbaa65e4ac13538da7",
       "priorTotalMarks": 27,
       "correctedTotalMarks": 27,
       "priorTopicId": "cons-1-8",
       "correctedTopicId": "cons-1-8",
-      "reason": "Question wording lifted from the paper. Split into the three printed signs (sign 6 + specific reason 3 each); tariff unchanged (27)."
+      "reason": "Question wording lifted from the paper. Split into the three printed signs (sign 6 + specific reason 3 each); tariff unchanged (27).",
+      "supersededSha256": [
+        "2d4e92ac89cea9e5b9db37e92097017fff09241f9064d97491f0acda69142f18"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q6-b",
@@ -5668,12 +5917,15 @@
     {
       "cardId": "cons-2022-ol-q7-b",
       "priorSha256": "4206106bc016227a543cd6cf10d5e9e16671e677c442a7d91379ecf6d23dc3ea",
-      "correctedSha256": "08c0f0ef76de79e8a17bc4455a43ecd3bb483467db920b952970cc34aecb262b",
+      "correctedSha256": "02eb12e470759f00030c5aeb747807743cc04b9c611c817db2bf55a439d43225",
       "priorTotalMarks": 30,
       "correctedTotalMarks": 30,
       "priorTopicId": "cons-1-1",
       "correctedTopicId": "cons-1-2",
-      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketch 6 and four location-and-reason rows (3 + 3 each); tariff unchanged (30)."
+      "reason": "Question wording lifted from the paper. Rebuilt to the printed rows — sketch 6 and four location-and-reason rows (3 + 3 each); tariff unchanged (30).",
+      "supersededSha256": [
+        "08c0f0ef76de79e8a17bc4455a43ecd3bb483467db920b952970cc34aecb262b"
+      ]
     },
     {
       "cardId": "cons-2022-ol-q7-c",
@@ -6063,7 +6315,16 @@
     {
       "cardId": "cons-2022-ol-q6-complete",
       "priorSha256": "5a11e905dac4c1947a363e05d1bf18eae315a1226afab982272bf4e816736586",
-      "correctedSha256": "799e4607bf6741d2dd98303b04aa7e80a5d65c46f37e2c192e83fddf160c7827",
+      "correctedSha256": "5d053b35978985b6120d2e58f3411667787972e63e63840b5ffe2d652a7ed090",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "799e4607bf6741d2dd98303b04aa7e80a5d65c46f37e2c192e83fddf160c7827"
+      ]
+    },
+    {
+      "cardId": "cons-2022-ol-q7-complete",
+      "priorSha256": "7b6a7f3ccb9e7e4b6ebcc7b6fa2e087ae7740a2ff003d95ab08c4491ada002aa",
+      "correctedSha256": "bf0ada9cfdd91307155db25c7aa657ccd930fb79b265475723b1b95d7c18cf7a",
       "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
     }
   ]

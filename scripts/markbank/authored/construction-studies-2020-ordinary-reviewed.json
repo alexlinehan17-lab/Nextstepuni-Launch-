@@ -3169,6 +3169,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3185,6 +3209,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3201,6 +3249,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           }
         ],
@@ -3603,6 +3675,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3619,6 +3715,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -3635,6 +3755,30 @@
               4,
               5,
               6
+            ],
+            "parts": [
+              {
+                "id": "location",
+                "verbatim": "Location",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": "reason",
+                "verbatim": "reason",
+                "marks": 3,
+                "permittedMarks": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              }
             ]
           },
           {
@@ -5700,12 +5844,15 @@
     {
       "cardId": "cons-2020-ol-q7-a",
       "priorSha256": "dacdc88e669f0628c267052f91196dff1f3ee7afad4f34b35cb94f567f974455",
-      "correctedSha256": "31222a27ff852f63ed4d2ad8813bf195e00edca76a888c40c12fa2d6933b76e4",
+      "correctedSha256": "42cd36e58055f8e822eee9924f9eb081fc962eda090319f2c38c94e38e372c36",
       "priorTotalMarks": 24,
       "correctedTotalMarks": 24,
       "priorTopicId": "cons-5-6",
       "correctedTopicId": "cons-5-6",
-      "reason": "Question wording lifted from the paper. Split into the printed sketch (6) and the three location-and-reason rows (3 + 3 each); tariff unchanged (24)."
+      "reason": "Question wording lifted from the paper. Split into the printed sketch (6) and the three location-and-reason rows (3 + 3 each); tariff unchanged (24).",
+      "supersededSha256": [
+        "31222a27ff852f63ed4d2ad8813bf195e00edca76a888c40c12fa2d6933b76e4"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q7-b",
@@ -6111,8 +6258,11 @@
     {
       "cardId": "cons-2020-ol-q7-complete",
       "priorSha256": "86c83de5b2c319c450bb767beb1b055d0b0317ae9eb48e055bc4aebc16e06bed",
-      "correctedSha256": "ee38d55d7eed31eeb459e300772d8cc38c74b81972311110f76d4fa627127e2c",
-      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged."
+      "correctedSha256": "e7e06b5d67cfdf10477d6539d266f285e504eac76889785faaab09637eefd4e1",
+      "reason": "Components the row prices by name (\"2 for point, 4 for discussion\") are parts of the row, each placed on its own marks; the row itself, its marks and its steps are unchanged.",
+      "supersededSha256": [
+        "ee38d55d7eed31eeb459e300772d8cc38c74b81972311110f76d4fa627127e2c"
+      ]
     },
     {
       "cardId": "cons-2020-ol-q9-complete",
