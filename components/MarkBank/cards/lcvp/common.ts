@@ -3474,7 +3474,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe what a contract of employment is.",
     tariffModel: {"kind":"fixed","notation":"(1 + 1 + 1)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "(1 + 1 + 1) A legally binding agreement (a written statement) (1) between the employer and the employee (1) detailing the terms and conditions of the employment (1)", marks: 3, contextNote: "3 answers at 1 mark each.", openList: true },
+    { id: "r-1", kind: "criterion", verbatim: "(1 + 1 + 1) A legally binding agreement (a written statement) (1) between the employer and the employee (1) detailing the terms and conditions of the employment (1)", marks: 3, contextNote: "3 answers at 1 mark each.", permittedMarks: [0,1,2,3], parts: [{"id":"p1","verbatim":"A legally binding agreement (a written statement)","marks":1,"permittedMarks":[0,1]},{"id":"p2","verbatim":"between the employer and the employee","marks":1,"permittedMarks":[0,1]},{"id":"p3","verbatim":"detailing the terms and conditions of the employment","marks":1,"permittedMarks":[0,1]}], openList: true },
     ],
   } as SecCard,
   {

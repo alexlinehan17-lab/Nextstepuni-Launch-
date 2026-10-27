@@ -5533,7 +5533,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the figures in the pie chart above, calculate how much the government is expecting to receive in total revenue in € millions. Show your workings.",
     tariffModel: {"kind":"fixed","notation":"6 @ 2 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
     rows: [
-    { id: "r-total", kind: "point", verbatim: "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million", marks: 16, contextNote: "Add all six slices, including the €2m and €7m ones: €27.5m + €14m + €17m + €27.5m + €2m + €7m = €95 million. Six figures at 2 marks and the answer 4. Deduct 1 each for omission of € and million.\n\nIrish source note: the introductory sentence says 2022, but the chart title and matching scheme say Budget 2023. Calculate from the six printed values; the required total is €95 million.", openList: true },
+    { id: "r-total", kind: "criterion", verbatim: "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million", marks: 16, contextNote: "Add all six slices, including the €2m and €7m ones: €27.5m + €14m + €17m + €27.5m + €2m + €7m = €95 million. Six figures at 2 marks and the answer 4. Deduct 1 each for omission of € and million.\n\nIrish source note: the introductory sentence says 2022, but the chart title and matching scheme say Budget 2023. Calculate from the six printed values; the required total is €95 million.", permittedMarks: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], parts: [{"id":"f1","verbatim":"€27.5m","marks":2,"permittedMarks":[0,1,2]},{"id":"f2","verbatim":"€14m","marks":2,"permittedMarks":[0,1,2]},{"id":"f3","verbatim":"€17m","marks":2,"permittedMarks":[0,1,2]},{"id":"f4","verbatim":"€27.5m","marks":2,"permittedMarks":[0,1,2]},{"id":"f5","verbatim":"€2m","marks":2,"permittedMarks":[0,1,2]},{"id":"f6","verbatim":"€7m","marks":2,"permittedMarks":[0,1,2]},{"id":"answer","verbatim":"€ 95 million","marks":4,"permittedMarks":[0,1,2,3,4]}], openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -5967,7 +5967,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the formula in (i) above and the figures below calculate: The level of National Income in 2023 Show your workings",
     tariffModel: {"kind":"fixed","notation":"6 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
     rows: [
-    { id: "r-income", kind: "point", verbatim: "Y = C + I + G + (X-M) Y = €700m+ €200m + €400m + €300m - €200m Y = €1,400m", marks: 18, contextNote: "Y = C + I + G + (X − M) = €700m + €200m + €400m + €300m − €200m = €1,400m. Imports are subtracted. Six steps at 3 marks; deduct 1 each for omission of € and million.\n\nIrish table note: the €700m column is consumption C. It is mislabelled P in the Irish scheme table; use the paper’s C and the published formula Y = C + I + G + (X − M).", openList: true },
+    { id: "r-income", kind: "criterion", verbatim: "Y = C + I + G + (X-M) Y = €700m+ €200m + €400m + €300m - €200m Y = €1,400m", marks: 18, contextNote: "Y = C + I + G + (X − M) = €700m + €200m + €400m + €300m − €200m = €1,400m. Imports are subtracted. Six steps at 3 marks; deduct 1 each for omission of € and million.\n\nIrish table note: the €700m column is consumption C. It is mislabelled P in the Irish scheme table; use the paper’s C and the published formula Y = C + I + G + (X − M).", permittedMarks: [0,3,6,9,12,15,18], openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
@@ -6016,7 +6016,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using the formula in (i) above and the figures below calculate: The Balance of Trade Show your workings",
     tariffModel: {"kind":"fixed","notation":"3 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
     rows: [
-    { id: "r-trade", kind: "point", verbatim: "Balance of Trade: Exports – Imports €300m – €200m = €100m", marks: 9, contextNote: "Balance of trade = exports − imports = €300m − €200m = €100m. Consumption, investment and government spending play no part. Three steps at 3 marks; deduct 1 each for omission of € and million.", openList: true },
+    { id: "r-trade", kind: "criterion", verbatim: "Balance of Trade: Exports – Imports €300m – €200m = €100m", marks: 9, contextNote: "Balance of trade = exports − imports = €300m − €200m = €100m. Consumption, investment and government spending play no part. Three steps at 3 marks; deduct 1 each for omission of € and million.", permittedMarks: [0,3,6,9], openList: true },
     ],
     sourceMaterial: {
           "kind": "source-illustration",
