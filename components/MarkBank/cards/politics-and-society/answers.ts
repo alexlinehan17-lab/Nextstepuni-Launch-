@@ -53,9 +53,14 @@ export type PoliticsAnswerResult =
   | { ok: true; allocation: PoliticsAllocation }
   | { ok: false; reason: string };
 
-const QUALITY = /^(Excellent|Very\s+good|Good|Fair|Weak|Irrelevant)\b(.*)$/i;
+const QUALITY = /^(?:[A-Z][a-z]+:\s*)?(Excellent|Very\s+good|Good|Fair|Weak|Irrelevant)\b(.*)$/i;
+/** "16 - 20M independent, insightful comment": a marks line with its descriptor after it. */
+const MARKS_DESCRIBED = /^(\d+)(?:\s*[-–]\s*(\d+))?\s*M\s+(\S.*)$/;
 const MARKS = /^(\d+)(?:\s*[-–]\s*(\d+))?\s*M$/;
 const INLINE_MARKS = /^(.*?)\s+(\d+)(?:\s*[-–]\s*(\d+))?\s*M$/;
+/** "Very good commentary 16 - 20M independent, insightful comment": a band with its descriptor after the marks. */
+const INLINE_BAND = /^((?:Excellent|Very\s+good|Good|Fair|Weak|Irrelevant)(?:\s+[a-z]+)*)\s+(\d+)(?:\s*[-–]\s*(\d+))?\s*M\s+(\S.*)$/i;
+const SPLIT_RANGE = /^(\d+)\s*[-–]$/;
 const ALLOC_SUM = /(\d+)(?:\s*(?:marks?|M))?(?:\s*\+\s*\d+(?:\s*(?:marks?|M))?)+\s*(?:marks?|M)\b/i;
 const ALLOC_TIMES = /(\d+)\s*(?:x|×|@)\s*(\d+)\s*(?:marks?|M)\b|(\d+)\s*marks?\s*\(\s*x\s*(\d+)\s*\)/i;
 const SUB_ALLOC = /^([A-Za-z][^:]{0,60}):\s*(\d+)\s*(?:M|marks?)$/;
@@ -66,6 +71,17 @@ const NOTE = /^(?:Note:|Alternative answers|Other valid|Each .*? must\b|.*\bmust
 const ANSWER_PREFIX = /^Answer:\s*/i;
 const KEYED = /^([A-Z]{2,8}|\d{4}):\s+(\S.*)$/;
 const ORDINAL: Record<string, number> = { first: 0, second: 1, third: 2, fourth: 3, fifth: 4 };
+/** A criterion whose answer is a name the scheme prints bare: a thinker, theory, model, organisation, term. */
+const NAME_KIND = /\b(?:thinker|theorist|theory|model|organisation|organisations|name|named|group|term|act|law|right|example|concept)\b/i;
+/** "One valid reason", "Two supranational organisations": a count of what is asked, not an answer. */
+const COUNT_PHRASE = /^(?:one|two|three|four|a|an)\b/i;
+/** A caption that asks or describes rather than names: the sibling's prompt or a ladder's heading. */
+const PROMPT_LIKE = /^(?:outline|description|explanation|explain|describe|evaluation|evaluate|identify|the\s|a\s|an\s|how\b|what\b|why\b)/i;
+/** Label words that name the same thing in the scheme's two spellings. */
+const SAME_WORD: Record<string, string[]> = { thinker: ['theorist'], theorist: ['thinker'], organisation: ['body', 'organisations'], information: ['piece'] };
+const labelWords = (label: string) => words(label).flatMap(word => [word, ...(SAME_WORD[word] ?? [])]);
+/** A name the scheme prints bare: two capitalised words ("Paulo Freire"), a keyed name ("Name: Martha Nussbaum") or its tariff words ("Named theorist"). */
+const PRINTED_NAME = /^(?:Named?\b|[^:]{1,30}:\s*\S)|\b[A-Z][a-zé]+\s+(?:[a-z]+\s+)?[A-Z][a-zé]+/;
 
 const normalise = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
 const words = (value: string) => value.toLowerCase().split(/[^a-z]+/).filter(word => word.length > 3);
@@ -99,6 +115,8 @@ function tokenise(lines: string[], labels: string[]): Token[] {
     const line = lines[index];
     const next = lines[index + 1];
     if (/^etc\.?,?(?:\s*etc\.?)?$/i.test(line.replace(BULLET, '$1').trim())) continue; // "Etc" closes a list
+    // A bullet glyph on a line of its own: the answer is the line under it.
+    if (/^[•∗]$/.test(line) && next) { tokens.push({ kind: 'bullet', text: tidy(next) }); index += 1; continue; }
     const bullet = BULLET.exec(line);
     if (bullet) { tokens.push({ kind: 'bullet', text: tidy(bullet[1]) }); continue; }
     if (NOTE.test(line)) { tokens.push({ kind: 'note', text: line }); continue; }
@@ -127,14 +145,27 @@ function tokenise(lines: string[], labels: string[]): Token[] {
     const quality = QUALITY.exec(line);
     if (quality) {
       const inline = INLINE_MARKS.exec(line);
-      let label = line;
+      const inlineWithDescriptor = INLINE_BAND.exec(line);
+      let label = line.replace(/^[A-Z][a-z]+:\s*/, '');
       let marks: number[] | undefined;
+      let inlineDescriptor: string | undefined;
       if (inline) { label = tidy(inline[1]); marks = range(Number(inline[2]), Number(inline[3] ?? inline[2])); }
+      else if (inlineWithDescriptor) { label = tidy(inlineWithDescriptor[1]); marks = range(Number(inlineWithDescriptor[2]), Number(inlineWithDescriptor[3] ?? inlineWithDescriptor[2])); inlineDescriptor = tidy(inlineWithDescriptor[4]); }
       else if (next && MARKS.test(next)) {
         const m = MARKS.exec(next)!;
         marks = range(Number(m[1]), Number(m[2] ?? m[1]));
         index += 1;
+      } else if (next && MARKS_DESCRIBED.test(next)) {
+        const m = MARKS_DESCRIBED.exec(next)!;
+        marks = range(Number(m[1]), Number(m[2] ?? m[1]));
+        inlineDescriptor = tidy(m[3]);
+        index += 1;
+      } else if (next && SPLIT_RANGE.test(next) && lines[index + 2] && MARKS.test(lines[index + 2])) {
+        // "Very good explanation" / "4 -" / "5M": a range the text layer broke over two lines.
+        marks = range(Number(SPLIT_RANGE.exec(next)![1]), Number(MARKS.exec(lines[index + 2])![1]));
+        index += 2;
       }
+      if (marks && inlineDescriptor) { tokens.push({ kind: 'band', label, marks, descriptor: inlineDescriptor }); continue; }
       if (marks) {
         const after = lines[index + 1];
         let descriptor: string | undefined;
@@ -266,7 +297,7 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       case 'band':
         // A ladder after a sub-allocation of a different size ("Identify a
         // relevant right: 2M … Very good description 6 - 8M") scores the next criterion.
-        if (region.max !== undefined && region.bands.length === 0 && (region.rows.length || region.bullets.length) && Math.max(...token.marks) > region.max) {
+        if (region.max !== undefined && region.bands.length === 0 && Math.max(...token.marks) > region.max) {
           region = { labels: [], bands: [], rows: [], bullets: [], captions: [] };
           regions.push(region);
         }
@@ -281,6 +312,7 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       case 'lead': leadOpen = true; break;
       case 'text': {
         // The scheme restating the question is not a caption; a short statement of what is asked is.
+        if (criteria.some(criterion => normalise(criterion.label) === normalise(token.text))) { directions.push(token.text); break; }
         if (question.includes(normalise(token.text))) break;
         if (token.text.endsWith('?')) break;
         if (region.bands.length || region.rows.length) { directions.push(token.text); break; }
@@ -319,6 +351,74 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
     const candidates = () => scoped ? scoped.filter(candidate => pending.includes(candidate)) : pending.filter(candidate => !later.has(normalise(candidate.label)));
     const caption = current.captions[0];
     const sets = ladderSets(current.bands);
+    let foreign = false;
+
+    // Priced rows printed beside a ladder ("First name 2M … Second name 1M" between two "Explanation 1M /
+    // Irrelevant 0M" ladders): each row scores the criterion whose label shares its words and its mark.
+    if (sets.length && current.rows.length) {
+      const tops = sets.flatMap(set => set.ladders.map(ladderMax));
+      for (const row of [...current.rows]) {
+        if (row.marks === undefined) continue;
+        const pool = candidates();
+        const target = pool.find(candidate => candidate.maxMarks === row.marks && words(row.text).some(word => normalise(candidate.label).includes(word)));
+        if (target && tops.includes(row.marks) && !/[a-z]\s[a-z]/i.test(row.text)) {
+          // "Explanation 8M" over "Very good answer 6 - 8M": the ladder's tariff line, and the ladder scores it.
+          directions.push(row.text);
+          current.rows.splice(current.rows.indexOf(row), 1);
+        } else if (target) {
+          push({ label: target.label, max: target.maxMarks, rows: [{ id: 'r1', text: row.text, marks: row.marks, tariffOnly: true }], count: 1 });
+          take(target);
+          current.rows.splice(current.rows.indexOf(row), 1);
+        } else if (!pool.some(candidate => candidate.maxMarks === row.marks) || (tops.includes(row.marks) && !/[a-z]\s[a-z]/i.test(row.text.replace(/^[A-Z][a-z]+$/, '')))) {
+          // A sibling card's priced line on the shared block ("Name: Martha Nussbaum 2M" under the explanation
+          // card), or the ladder's own tariff line ("Explanation 8M" over "Very good answer 6 - 8M"): a direction.
+          directions.push(row.text);
+          current.rows.splice(current.rows.indexOf(row), 1);
+        }
+      }
+    }
+    // "1 + 1 mark" printed under a caption with nothing else: the caption's words are the tariff rows of
+    // the criteria the terms price, in order ("Two supranational organisations" over First / Second organisation).
+    if (current.alloc && !current.rows.length && !current.bullets.length && (sets.length === 0 || current.alloc.length > 1)) {
+      const pool = candidates();
+      const terms = current.alloc;
+      const chosen: PoliticsCriterion[] = [];
+      const targets = terms.map(term => { const found = pool.find(candidate => candidate.maxMarks === term && !chosen.includes(candidate)); if (found) chosen.push(found); return found; });
+      const distinct = new Set(targets);
+      const ordinal = targets.every(target => target && ORDINAL[target.label.toLowerCase().split(/\s+/)[0]] !== undefined);
+      const tariffText = caption && !(sets.length && caption === current.captions[current.captions.length - 1]) ? caption : undefined;
+      if (targets.every(Boolean) && distinct.size === targets.length && targets.every(target => target!.maxMarks <= (ordinal ? 5 : 3)) && (sets.length === 0 || !targets.some(target => sets.flatMap(set => set.ladders.map(ladderMax)).includes(target!.maxMarks)))) {
+        for (const target of targets) {
+          push({ label: target!.label, max: target!.maxMarks, rows: [{ id: 'r1', text: tariffText ?? target!.label, marks: target!.maxMarks, tariffOnly: true }], count: 1 });
+          take(target!);
+        }
+        current.alloc = undefined;
+        if (caption) current.captions.shift();
+      }
+    }
+    // Scheme words printed as a name-kind criterion's answer ("Paulo Freire" over Thinker 1M,
+    // "Kathleen Lynch, Sylvia Walby..." over Thinker 2M): a row at the criterion's mark.
+    if (criteria.length === 1 && criteria[0].maxMarks <= 2 && pending.includes(criteria[0]) && current.captions.length && !current.rows.length && !current.bullets.length) {
+      const answer = current.captions[0];
+      if (answer.split(/\s+/).length <= 4 && !PROMPT_LIKE.test(answer) && !COUNT_PHRASE.test(answer) && !question.includes(normalise(answer)) && !(sets.length && current.captions.length === 1)) {
+        push({ label: criteria[0].label, max: criteria[0].maxMarks, rows: [{ id: 'r1', text: answer, marks: criteria[0].maxMarks }], count: 1 });
+        take(criteria[0]);
+        current.captions.shift();
+      }
+    }
+    if (current.captions.length) {
+      // The caption a ladder sits under is the ladder's, not an answer.
+      const ladderCaption = sets.length ? current.captions[current.captions.length - 1] : undefined;
+      for (const text of [...current.captions]) {
+        const pool = candidates();
+        const target = pool.find(candidate => candidate.maxMarks <= 2 && NAME_KIND.test(candidate.label));
+        const named = PRINTED_NAME.test(text) || words(target?.label ?? '').some(word => normalise(text).includes(word));
+        if (!target || text === ladderCaption || text.split(/\s+/).length > 10 || COUNT_PHRASE.test(text) || PROMPT_LIKE.test(text) || !named || question.includes(normalise(text))) break;
+        push({ label: target.label, max: target.maxMarks, rows: [{ id: 'r1', text, marks: target.maxMarks }], count: 1 });
+        take(target);
+        current.captions.splice(current.captions.indexOf(text), 1);
+      }
+    }
 
     // Bullets before a ladder that scores the next criterion are the first
     // criterion's possible answers ("Name (2M) … • Hart's Ladder … Description 3M").
@@ -326,9 +426,16 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       const pool = candidates();
       const first = pool[0];
       const tops = sets.flatMap(set => set.ladders.map(ladderMax));
+      const nameless = pool.filter(candidate => !tops.includes(candidate.maxMarks));
       if (first && !tops.includes(first.maxMarks) && pool[1] && tops.includes(pool[1].maxMarks) && (current.max === undefined || current.max === first.maxMarks)) {
         push({ label: first.label, max: first.maxMarks, rows: current.bullets.map((text, index) => ({ id: `r${index + 1}`, text, marks: first.maxMarks })), count: 1 });
         take(first);
+        current.bullets = [];
+      } else if (nameless.length > 1 && nameless.length < pool.length && nameless.every(candidate => candidate.maxMarks === nameless[0].maxMarks) && current.bullets.length >= nameless.length) {
+        // "1 + 1 marks" over a list of departments, then the ladder for the work of one: the list answers both names.
+        const each = nameless[0].maxMarks;
+        push({ label: `${nameless[0].label} … ${nameless[nameless.length - 1].label}`, max: each * nameless.length, rows: current.bullets.map((text, index) => ({ id: `r${index + 1}`, text, marks: each })), count: nameless.length });
+        nameless.forEach(take);
         current.bullets = [];
       }
     }
@@ -366,7 +473,9 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       const ladder = set.ladders[0];
       const top = tops[0];
       const equalTerms = current.alloc ? current.alloc.filter(term => term === top).length : 0;
-      const parallel = pool.filter(candidate => candidate.maxMarks === top);
+      // A ladder captioned with a criterion's own words ("One reason" over Reason 2M) scores that criterion first.
+      const captioned = setCaption ? pool.find(candidate => candidate.maxMarks === top && words(setCaption).some(word => normalise(candidate.label).includes(word))) : undefined;
+      const parallel = [...(captioned ? [captioned] : []), ...pool.filter(candidate => candidate.maxMarks === top && candidate !== captioned)];
       if (parallel.length > 0) {
         // One printed ladder for each parallel criterion of its top mark.
         const limit = current.times?.count ?? (equalTerms > 1 ? equalTerms : undefined);
@@ -392,11 +501,42 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
         take(first);
         continue;
       }
+      // "2 marks + 3 marks" over one printed ladder whose top is one of the terms: the other term is the
+      // example or name the scheme prices without a ladder — its bullets, or its own words as a tariff row.
+      if (current.alloc && current.alloc.reduce((a, b) => a + b, 0) === first.maxMarks && current.alloc.includes(top) && !current.alloc.every(term => term === top)) {
+        for (const term of current.alloc.filter(term => term !== top)) {
+          const rows = current.bullets.length
+            ? current.bullets.map((text, index) => ({ id: `r${index + 1}`, text, marks: term }))
+            : [{ id: 'r1', text: setCaption ?? first.label, marks: term, tariffOnly: true as const }];
+          push({ label: first.label, ...cap, max: term, rows, count: 1 });
+        }
+        current.bullets = [];
+        push({ label: first.label, ...cap, max: top, bands: ladder.map(band => ({ ...band, marks: [...band.marks] })) });
+        take(first);
+        continue;
+      }
+      // "22%" then a three-mark ladder on a four-mark response: the short printed answer is the remainder's row.
+      if (pool.length === 1 && first.maxMarks - top >= 1 && first.maxMarks - top <= 2 && !current.alloc && current.captions.length <= 2) {
+        const answer = current.captions.find(text => text !== setCaption && text.split(/\s+/).length <= 4 && /^[A-Z0-9]/.test(text) && !/\.$/.test(text) && !PROMPT_LIKE.test(text) && !COUNT_PHRASE.test(text));
+        if (answer) {
+          push({ label: first.label, ...cap, max: first.maxMarks - top, rows: [{ id: 'r1', text: answer, marks: first.maxMarks - top }], count: 1 });
+          push({ label: first.label, ...cap, max: top, bands: ladder.map(band => ({ ...band, marks: [...band.marks] })) });
+          take(first);
+          continue;
+        }
+      }
+      // A ladder that tops at no criterion of this card is the sibling's, printed on the shared block of a
+      // split question: it stays a direction and the bullets or rows under it are this card's answers.
+      if (!pool.some(candidate => candidate.maxMarks === top) && (current.bullets.length || current.rows.length || pool.every(candidate => candidate.maxMarks < top))) {
+        directions.push(...ladder.flatMap(band => [band.label, ...(band.descriptor ? [band.descriptor] : [])]));
+        foreign = true;
+        continue;
+      }
       return { ok: false, reason: `ladder tops at ${top}, criterion ${first.label} is ${first.maxMarks}` };
     }
-    if (current.bullets.length && sets.length) examples.push(...current.bullets);
-    if (sets.length && current.rows.length) return { ok: false, reason: 'rows beside a ladder' };
-    if (sets.length) continue;
+    if (current.bullets.length && sets.length && !foreign) examples.push(...current.bullets);
+    if (sets.length && current.rows.length && !foreign) return { ok: false, reason: 'rows beside a ladder' };
+    if (sets.length && !foreign) continue;
 
     const items: { text: string; marks?: number }[] = current.rows.length ? current.rows : current.bullets.map(text => ({ text }));
     const pool = candidates();
@@ -447,6 +587,14 @@ export function parsePoliticsAnswers(source: PoliticsAnswerSource): PoliticsAnsw
       push({ label: criterion.label, max: criterion.maxMarks, rows: [{ id: 'r1', text: criterion.label, marks: criterion.maxMarks, tariffOnly: true }], count: 1 });
       take(criterion);
     }
+  }
+  for (const criterion of [...pending]) {
+    if (criterion.maxMarks > 2 || !NAME_KIND.test(criterion.label)) continue;
+    const printed = directions.find(note => !PROMPT_LIKE.test(note) && labelWords(criterion.label).some(word => normalise(note).includes(word)) && note.split(/\s+/).length <= 12);
+    if (!printed) continue;
+    push({ label: criterion.label, max: criterion.maxMarks, rows: [{ id: 'r1', text: printed, marks: criterion.maxMarks, ...(PRINTED_NAME.test(printed) && !/^Named?\b/.test(printed) ? {} : { tariffOnly: true }) }], count: 1 });
+    take(criterion);
+    directions.splice(directions.indexOf(printed), 1);
   }
   if (pending.length > 0) return { ok: false, reason: `no ladder or rows for ${pending.map(criterion => criterion.label).join(', ')}` };
   const sum = parts.reduce((total, part) => total + part.max, 0);
