@@ -71,6 +71,7 @@ sys.path.insert(0, DIR)
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 from it_paper import ItPaper                                  # noqa: E402
+from it_rows import split_priced                              # noqa: E402
 from it_scheme import ItScheme                                # noqa: E402
 from it_topics import (topic_for, concept_for, answer_language,  # noqa: E402
                        language_note, ITALIAN, SEQUENCING)
@@ -183,7 +184,9 @@ def build():
             _essay(P, year, level, refuse)
             _writing(P, year, level, refuse)
             _listening(P, year, level, refuse)
-    return cards, refused, examples, excluded
+    # A price the scheme prints inside an answer is a row of its own, and a
+    # shorter answer it prices a printed step (it_rows.py).
+    return [split_priced(card) for card in cards], refused, examples, excluded
 
 
 # ------------------------------------------------- Sections A and B ---------
