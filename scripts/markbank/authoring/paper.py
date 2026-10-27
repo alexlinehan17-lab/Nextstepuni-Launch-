@@ -210,6 +210,21 @@ INLINE_MARKER_STATES = re.compile(
 # paper and is joined back to the piece before it. Gated to the sitting: no
 # other paper's reading may move because of it.
 INLINE_NOT_MARKERS = {('chemistry', 2016, 'hl'): ['(ii) 2,2,4-trimethylpentane, (iii) ethylbenzene.']}
+# 2010 OL Chemistry Q7(b) (paper page 5, x 70, y 320) prints "Give the systematic (IUPAC)
+# names for (i) C2H2, (ii) CH3COOH." on one line under one mark (6). The capital each formula
+# opens with let the marker lookahead split it: the census counted a leaf "C2H2," (flag
+# empty-leaf) and a leaf "CH3COOH. (6)", where this paper's Q2(b), Q6(a), Q7(a) and Q8(b),
+# their romans in a sentence the same way, are each one ask. Joined back, as 2016 HL's.
+INLINE_NOT_MARKERS[('chemistry', 2010, 'ol')] = ['(i) C2H2,', '(ii) CH3COOH.']
+# A block opening with a marker that is words of the question's lead-in, not a part. 2010 OL
+# Chemistry Q3 (paper page 3, x 70, y 466-481) says what the student was asked, "(i) to
+# identify the salts by means of flame tests, (ii) to confirm the identity of the anion
+# ...", before its parts (a) and (b) (18, 32). Read as a roman it made Q3 a roman-major
+# question, its (a) and (b) were then taken for lines of an ask, and the census counted
+# Q3(i)-(iii) where the paper prints Q3(a) and (b)(i)-(iii). A block opening with a listed
+# text is read as words of what is open (the ask, or else the lead-in), as CROSSREF's are.
+# Gated to the sitting: no other paper's reading may move because of it.
+PROSE_MARKER_BLOCKS = {('chemistry', 2010, 'ol'): ['(i) to identify the salts by means of flame tests,']}
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -786,6 +801,13 @@ class Paper:
                 # "(b) (iii) above." is the tail of the CURRENT ask referring
                 # back, not a marker — reading it as one re-filed the rest of
                 # the sentence into an earlier leaf.
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
+            if any(text.startswith(t) for t in PROSE_MARKER_BLOCKS.get((self.subject, self.year, self.level), ())):
+                # (2010 OL Chemistry Q3's lead-in; see PROSE_MARKER_BLOCKS.)
                 if open_key:
                     self.parts[open_key].append(text)
                 else:

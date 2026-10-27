@@ -286,6 +286,11 @@ MASKS = {
     # 326-346 of the stacked print), whited out; the graph's letters end at row 317 and its
     # "Element" label starts at column 836.
     'chemistry-2013-HL-paper-q11a-iii-print.png': [(0, 320, 545, 347)],
+    # 2010 OL Q9(b): the part's mark "(21)" prints at the end of the passage's last line (paper page
+    # 6, x 507-528, y 302), under the end of the line above ("are", dark to x 517); the crop's right
+    # edge cuts it after "(21" (dark pixels 921-946 x 227-243), whited out; nothing else is dark
+    # right of column 900 below row 210.
+    'chemistry-2010-OL-paper-q9b-print.png': [(916, 222, 947, 249)],
 }
 
 

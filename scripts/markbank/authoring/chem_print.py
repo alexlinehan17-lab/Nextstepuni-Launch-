@@ -398,6 +398,16 @@ OLD_OL_HEADS.add((2013, 'hl'))
 # in the paper (segments' alt_letters). The 2011 Higher paper prints the same words, and
 # joins by its own audit.
 PAPER_ALT_LETTERS = {(2013, 'hl'): {('11', 'c')}}
+# 2010 OL: the paper sets its heads in one run with their words, as 2011 and 2013 OL do:
+# "1. A group of students prepared ethene ..." (page 2, x 52, y 169), "2. Hydrochloric acid
+# ..." and "3. A student was given ..." (page 3), "4. Answer eight ..." and "5. The English
+# scientist ..." (page 4), "6. The alkanes ...", "7. Answer the questions ..." and "8. The
+# volume of oxygen ..." (page 5), "10. Answer any two ..." (page 6) and "11. Answer any two
+# ..." (page 7); "9. (a)" is QNUM_LETTER's. Unread, the paper reader found no question at
+# all. No other line of the 2010 Ordinary paper at x < 70 opens with a number, a full stop
+# and words (page 5's "2,2,4-trimethylpentane, has ...", x 69, has no full stop). The
+# sitting joins split_heads' set.
+OLD_OL_HEADS.add((2010, 'ol'))
 
 
 # ── the labelled ("cue") scheme layout, 2010-2023 ───────────────────────────
@@ -1287,6 +1297,15 @@ class Printed:
                     and abs(l.x0 - 85) < 1 and abs(l.y0 - 477) < 1]
             assert len(find) == 1, find
             find[0].text = '(f) FIND:'
+        if (year, lvl) == (2010, 'ol'):
+            # 2010 OL scheme PDF pages 3-15 print the running footer "page 1 of 13" ...
+            # "page 13 of 13" (x 244-247, y 793) in lower case, which FOOTER ("Page 3 of 16")
+            # does not read; in a labelled scheme every line is answer, so each was filed as
+            # an answer of its page's last part (Q1(e) "page 3 of 13", Q2(f) "page 4 of 13",
+            # ...). Not marking; dropped.
+            foot = [l for l in self.scheme_lines if l.y0 > 785 and re.match(r'^page \d{1,2} of 13$', l.text)]
+            assert [l.text for l in foot] == [f'page {n} of 13' for n in range(1, 14)], foot
+            self.scheme_lines = [l for l in self.scheme_lines if not any(l is f for f in foot)]
         if figures:
             self.scheme_lines = self._outside_scheme_art(self.scheme_lines)
         # The 2021-2025 schemes print their mark cells in round brackets,

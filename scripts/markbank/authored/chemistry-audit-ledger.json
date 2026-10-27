@@ -1,6 +1,316 @@
 {
  "base": "e7ec7a532de3c03f8511d416cf943354dfe3e74e",
  "papers": {
+  "2010 OL": {
+   "chem-2010-ol-q1-a": {
+    "status": "added",
+    "after": "067baad4a9e002c3"
+   },
+   "chem-2010-ol-q1-b": {
+    "status": "added",
+    "after": "9b37423541594789"
+   },
+   "chem-2010-ol-q1-c-i-iii": {
+    "status": "added",
+    "after": "3f46181baf888560"
+   },
+   "chem-2010-ol-q1-d": {
+    "status": "added",
+    "after": "839b55ccd556d87f"
+   },
+   "chem-2010-ol-q1-e": {
+    "status": "added",
+    "after": "224536b7b6f01cfb"
+   },
+   "chem-2010-ol-q10-a-i": {
+    "status": "added",
+    "after": "2a7ba00df8f26426"
+   },
+   "chem-2010-ol-q10-a-ii": {
+    "status": "added",
+    "after": "632df00233d02879"
+   },
+   "chem-2010-ol-q10-a-iii": {
+    "status": "added",
+    "after": "121c70170a3d3bc4"
+   },
+   "chem-2010-ol-q10-b-i": {
+    "status": "added",
+    "after": "59658409b977ba8b"
+   },
+   "chem-2010-ol-q10-b-ii": {
+    "status": "added",
+    "after": "2c224fed25c08e22"
+   },
+   "chem-2010-ol-q10-b-iii": {
+    "status": "added",
+    "after": "90f4962047a38975"
+   },
+   "chem-2010-ol-q10-c-i": {
+    "status": "added",
+    "after": "425b3816ed9318d3"
+   },
+   "chem-2010-ol-q10-c-ii": {
+    "status": "added",
+    "after": "41ef6cff2e2703f7"
+   },
+   "chem-2010-ol-q10-c-iii": {
+    "status": "added",
+    "after": "2743be20782199b6"
+   },
+   "chem-2010-ol-q11-a-i": {
+    "status": "added",
+    "after": "db4faab6658b7f11"
+   },
+   "chem-2010-ol-q11-a-ii": {
+    "status": "added",
+    "after": "ffd5bd01a09b1a9f"
+   },
+   "chem-2010-ol-q11-a-iii": {
+    "status": "added",
+    "after": "b25608e20c042ea3"
+   },
+   "chem-2010-ol-q11-a-iv": {
+    "status": "added",
+    "after": "9a803b7de7f2bb0e"
+   },
+   "chem-2010-ol-q11-b": {
+    "status": "added",
+    "after": "454858210b2a273b"
+   },
+   "chem-2010-ol-q11-c-a-chemistry-and-society": {
+    "status": "added",
+    "after": "5787dcd2d9826aea"
+   },
+   "chem-2010-ol-q11-c-a-i": {
+    "status": "added",
+    "after": "0e6b5bf28eb55f02"
+   },
+   "chem-2010-ol-q11-c-a-ii": {
+    "status": "added",
+    "after": "151197ebf75ee466"
+   },
+   "chem-2010-ol-q11-c-a-iii": {
+    "status": "added",
+    "after": "6f5e975cddd45deb"
+   },
+   "chem-2010-ol-q11-c-b-i": {
+    "status": "added",
+    "after": "6411cf77cd903039"
+   },
+   "chem-2010-ol-q11-c-b-ii": {
+    "status": "added",
+    "after": "46258f8b50fcf012"
+   },
+   "chem-2010-ol-q11-c-b-iii": {
+    "status": "added",
+    "after": "1b02dddbc8bb309e"
+   },
+   "chem-2010-ol-q11-c-b-iv": {
+    "status": "added",
+    "after": "a4b7fd3923b192ac"
+   },
+   "chem-2010-ol-q11-c-b-v": {
+    "status": "added",
+    "after": "744d1049bd8cab8f"
+   },
+   "chem-2010-ol-q2-a": {
+    "status": "added",
+    "after": "e2b3181ccffc9860"
+   },
+   "chem-2010-ol-q2-b-i-ii": {
+    "status": "added",
+    "after": "333eeb74512aaffe"
+   },
+   "chem-2010-ol-q2-c": {
+    "status": "added",
+    "after": "96c9ebfe18bb0ccc"
+   },
+   "chem-2010-ol-q2-d": {
+    "status": "added",
+    "after": "79531fb1812fd61e"
+   },
+   "chem-2010-ol-q2-e": {
+    "status": "added",
+    "after": "42158c197a575b3c"
+   },
+   "chem-2010-ol-q2-f": {
+    "status": "added",
+    "after": "79e1d4e57c588673"
+   },
+   "chem-2010-ol-q3-a": {
+    "status": "added",
+    "after": "422eacf438c3c320"
+   },
+   "chem-2010-ol-q3-a-colours": {
+    "status": "added",
+    "after": "c4a5f175a5da5057"
+   },
+   "chem-2010-ol-q3-b-i-iii": {
+    "status": "added",
+    "after": "7b5f9e3f0989f78b"
+   },
+   "chem-2010-ol-q4-a": {
+    "status": "added",
+    "after": "e728016854bce6b7"
+   },
+   "chem-2010-ol-q4-b": {
+    "status": "added",
+    "after": "680c77926487a002"
+   },
+   "chem-2010-ol-q4-c": {
+    "status": "added",
+    "after": "12ebc282d11f7202"
+   },
+   "chem-2010-ol-q4-d": {
+    "status": "added",
+    "after": "40cc241e951ac1eb"
+   },
+   "chem-2010-ol-q4-e": {
+    "status": "added",
+    "after": "e7684bc4b2d0ccdf"
+   },
+   "chem-2010-ol-q4-f": {
+    "status": "added",
+    "after": "f3fde93e98a05c5a"
+   },
+   "chem-2010-ol-q4-g": {
+    "status": "added",
+    "after": "c894e0c5d9e8c143"
+   },
+   "chem-2010-ol-q4-h": {
+    "status": "added",
+    "after": "1086a6408f75007f"
+   },
+   "chem-2010-ol-q4-i": {
+    "status": "added",
+    "after": "e035309a0a7c727c"
+   },
+   "chem-2010-ol-q4-j": {
+    "status": "added",
+    "after": "c9ac00c0ec0f5360"
+   },
+   "chem-2010-ol-q4-k-a": {
+    "status": "added",
+    "after": "62de5ceac7504cc3"
+   },
+   "chem-2010-ol-q4-k-b": {
+    "status": "added",
+    "after": "73832ea0b47f46fa"
+   },
+   "chem-2010-ol-q5-a": {
+    "status": "added",
+    "after": "e23c9c732c9adc61"
+   },
+   "chem-2010-ol-q5-a-isotopes": {
+    "status": "added",
+    "after": "dcdfd1070565f53d"
+   },
+   "chem-2010-ol-q5-b-i": {
+    "status": "added",
+    "after": "e973ffbe4846feee"
+   },
+   "chem-2010-ol-q5-b-ii": {
+    "status": "added",
+    "after": "044a7b34f586c405"
+   },
+   "chem-2010-ol-q5-b-noble-gases": {
+    "status": "added",
+    "after": "96ac95a5a28d84a3"
+   },
+   "chem-2010-ol-q5-c": {
+    "status": "added",
+    "after": "7ded912f017eaca1"
+   },
+   "chem-2010-ol-q5-d": {
+    "status": "added",
+    "after": "a86941f40c985269"
+   },
+   "chem-2010-ol-q6-a-i": {
+    "status": "added",
+    "after": "1a3f5ec42f05de1d"
+   },
+   "chem-2010-ol-q6-a-ii": {
+    "status": "added",
+    "after": "66e12a2ace95e87d"
+   },
+   "chem-2010-ol-q6-b": {
+    "status": "added",
+    "after": "de06fee7cb3ff103"
+   },
+   "chem-2010-ol-q6-c": {
+    "status": "added",
+    "after": "4c4f7f392a8efd1c"
+   },
+   "chem-2010-ol-q6-d": {
+    "status": "added",
+    "after": "a1e0e7a56707909c"
+   },
+   "chem-2010-ol-q7-a-i-ii": {
+    "status": "added",
+    "after": "a39dff1592201d92"
+   },
+   "chem-2010-ol-q7-b": {
+    "status": "added",
+    "after": "d1a0ee80d08c5cc2"
+   },
+   "chem-2010-ol-q7-c-i-iii": {
+    "status": "added",
+    "after": "f897295f1593cc4a"
+   },
+   "chem-2010-ol-q7-d": {
+    "status": "added",
+    "after": "44a076165926693d"
+   },
+   "chem-2010-ol-q7-e-i-ii": {
+    "status": "added",
+    "after": "7723bb4a3158e69b"
+   },
+   "chem-2010-ol-q8-a": {
+    "status": "added",
+    "after": "77fa63639c70e922"
+   },
+   "chem-2010-ol-q8-b-i-ii": {
+    "status": "added",
+    "after": "8d88fde384c4ba80"
+   },
+   "chem-2010-ol-q8-c": {
+    "status": "added",
+    "after": "e0cd900158df9f12"
+   },
+   "chem-2010-ol-q8-d": {
+    "status": "added",
+    "after": "f88b3f03f5bd34bb"
+   },
+   "chem-2010-ol-q8-e": {
+    "status": "added",
+    "after": "53745d21fb3ade48"
+   },
+   "chem-2010-ol-q8-f": {
+    "status": "added",
+    "after": "00a4653aae2ed008"
+   },
+   "chem-2010-ol-q9-a": {
+    "status": "added",
+    "after": "e52fec3532a4591b"
+   },
+   "chem-2010-ol-q9-a-flocculation-or-fluoridation": {
+    "status": "added",
+    "after": "809fc56941502710"
+   },
+   "chem-2010-ol-q9-a-harm": {
+    "status": "added",
+    "after": "59af53f1d7f4eed7"
+   },
+   "chem-2010-ol-q9-a-i-ii": {
+    "status": "added",
+    "after": "c3d1a5b23b711cf3"
+   },
+   "chem-2010-ol-q9-b": {
+    "status": "added",
+    "after": "b15ee78e15fa9cde"
+   }
+  },
   "2011 OL": {
    "chem-2011-ol-q1-a-i-ii": {
     "status": "added",
